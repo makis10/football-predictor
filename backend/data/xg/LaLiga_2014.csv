@@ -1,0 +1,381 @@
+date,home_team,away_team,home_xg,away_xg,league,season
+2014-08-23,Malaga,Athletic Club,1.32107,1.14151,LaLiga,2014
+2014-08-23,Sevilla,Valencia,1.17197,1.74903,LaLiga,2014
+2014-08-23,Granada,Deportivo La Coruna,0.548351,0.379371,LaLiga,2014
+2014-08-23,Almeria,Espanyol,0.978788,0.399306,LaLiga,2014
+2014-08-24,Eibar,Real Sociedad,0.465398,0.975523,LaLiga,2014
+2014-08-24,Barcelona,Elche,1.54124,0.10804,LaLiga,2014
+2014-08-24,Celta Vigo,Getafe,1.91721,0.673965,LaLiga,2014
+2014-08-24,Levante,Villarreal,0.345435,3.01412,LaLiga,2014
+2014-08-25,Real Madrid,Cordoba,0.612645,0.37841,LaLiga,2014
+2014-08-25,Rayo Vallecano,Atletico Madrid,0.357337,0.901586,LaLiga,2014
+2014-08-29,Getafe,Almeria,1.31774,1.31079,LaLiga,2014
+2014-08-29,Valencia,Malaga,1.96863,1.13196,LaLiga,2014
+2014-08-30,Cordoba,Celta Vigo,0.241504,0.786352,LaLiga,2014
+2014-08-30,Athletic Club,Levante,2.25621,0.331502,LaLiga,2014
+2014-08-30,Atletico Madrid,Eibar,1.37146,0.855113,LaLiga,2014
+2014-08-30,Espanyol,Sevilla,0.945745,1.36011,LaLiga,2014
+2014-08-31,Villarreal,Barcelona,1.10836,3.12545,LaLiga,2014
+2014-08-31,Deportivo La Coruna,Rayo Vallecano,1.89944,2.23586,LaLiga,2014
+2014-08-31,Real Sociedad,Real Madrid,2.74099,2.31574,LaLiga,2014
+2014-08-31,Elche,Granada,1.35652,0.762738,LaLiga,2014
+2014-09-12,Almeria,Cordoba,1.03628,0.763656,LaLiga,2014
+2014-09-13,Barcelona,Athletic Club,2.1772,0.0979707,LaLiga,2014
+2014-09-13,Malaga,Levante,0.819725,0.358265,LaLiga,2014
+2014-09-13,Real Madrid,Atletico Madrid,1.58778,1.11054,LaLiga,2014
+2014-09-13,Celta Vigo,Real Sociedad,2.85395,1.30012,LaLiga,2014
+2014-09-14,Rayo Vallecano,Elche,1.42044,0.570631,LaLiga,2014
+2014-09-14,Valencia,Espanyol,1.86199,1.09215,LaLiga,2014
+2014-09-14,Sevilla,Getafe,2.03978,0.30148,LaLiga,2014
+2014-09-14,Granada,Villarreal,0.421198,0.634854,LaLiga,2014
+2014-09-15,Eibar,Deportivo La Coruna,0.412722,0.672578,LaLiga,2014
+2014-09-19,Elche,Eibar,1.03354,0.903058,LaLiga,2014
+2014-09-20,Deportivo La Coruna,Real Madrid,1.74836,2.05644,LaLiga,2014
+2014-09-20,Athletic Club,Granada,0.452668,0.385966,LaLiga,2014
+2014-09-20,Atletico Madrid,Celta Vigo,2.42868,0.926164,LaLiga,2014
+2014-09-20,Espanyol,Malaga,2.76188,0.446347,LaLiga,2014
+2014-09-21,Real Sociedad,Almeria,1.67935,0.603236,LaLiga,2014
+2014-09-21,Villarreal,Rayo Vallecano,4.38395,1.40506,LaLiga,2014
+2014-09-21,Cordoba,Sevilla,0.901931,2.64146,LaLiga,2014
+2014-09-21,Levante,Barcelona,0.44198,3.8229,LaLiga,2014
+2014-09-22,Getafe,Valencia,0.23474,1.54259,LaLiga,2014
+2014-09-23,Real Madrid,Elche,3.93785,1.07447,LaLiga,2014
+2014-09-23,Celta Vigo,Deportivo La Coruna,1.19299,1.04057,LaLiga,2014
+2014-09-24,Eibar,Villarreal,0.793018,0.662859,LaLiga,2014
+2014-09-24,Rayo Vallecano,Athletic Club,3.17965,1.06179,LaLiga,2014
+2014-09-24,Almeria,Atletico Madrid,0.263228,1.689,LaLiga,2014
+2014-09-24,Sevilla,Real Sociedad,2.02336,0.248733,LaLiga,2014
+2014-09-24,Granada,Levante,0.636719,0.415162,LaLiga,2014
+2014-09-24,Malaga,Barcelona,0.278657,0.646364,LaLiga,2014
+2014-09-25,Espanyol,Getafe,2.09364,0.40196,LaLiga,2014
+2014-09-25,Valencia,Cordoba,1.26428,0.116667,LaLiga,2014
+2014-09-26,Elche,Celta Vigo,0.402099,2.04008,LaLiga,2014
+2014-09-27,Villarreal,Real Madrid,0.951263,0.976346,LaLiga,2014
+2014-09-27,Barcelona,Granada,4.92758,0.445275,LaLiga,2014
+2014-09-27,Atletico Madrid,Sevilla,2.70863,0.178376,LaLiga,2014
+2014-09-27,Athletic Club,Eibar,1.16599,0.518244,LaLiga,2014
+2014-09-27,Levante,Rayo Vallecano,0.637848,1.39355,LaLiga,2014
+2014-09-28,Getafe,Malaga,0.704397,0.619457,LaLiga,2014
+2014-09-28,Deportivo La Coruna,Almeria,0.957268,0.72135,LaLiga,2014
+2014-09-28,Real Sociedad,Valencia,0.762877,0.554817,LaLiga,2014
+2014-09-28,Cordoba,Espanyol,0.137119,0.112527,LaLiga,2014
+2014-10-03,Getafe,Cordoba,1.4608,0.377042,LaLiga,2014
+2014-10-04,Valencia,Atletico Madrid,1.01863,1.68827,LaLiga,2014
+2014-10-04,Rayo Vallecano,Barcelona,0.515599,2.97834,LaLiga,2014
+2014-10-04,Eibar,Levante,1.03989,1.03547,LaLiga,2014
+2014-10-04,Almeria,Elche,2.34067,0.511144,LaLiga,2014
+2014-10-04,Malaga,Granada,2.2003,0.851565,LaLiga,2014
+2014-10-05,Sevilla,Deportivo La Coruna,3.9035,0.227817,LaLiga,2014
+2014-10-05,Celta Vigo,Villarreal,1.17846,2.02409,LaLiga,2014
+2014-10-05,Espanyol,Real Sociedad,1.39473,0.481761,LaLiga,2014
+2014-10-05,Real Madrid,Athletic Club,3.61471,0.744918,LaLiga,2014
+2014-10-17,Granada,Rayo Vallecano,0.432469,0.471785,LaLiga,2014
+2014-10-18,Levante,Real Madrid,0.488171,4.276,LaLiga,2014
+2014-10-18,Athletic Club,Celta Vigo,2.66245,0.221015,LaLiga,2014
+2014-10-18,Barcelona,Eibar,3.09294,0.929153,LaLiga,2014
+2014-10-18,Cordoba,Malaga,0.395949,1.41292,LaLiga,2014
+2014-10-19,Atletico Madrid,Espanyol,4.12804,0.723748,LaLiga,2014
+2014-10-19,Deportivo La Coruna,Valencia,0.994809,0.56407,LaLiga,2014
+2014-10-19,Elche,Sevilla,0.47658,2.52963,LaLiga,2014
+2014-10-19,Villarreal,Almeria,2.75077,0.336251,LaLiga,2014
+2014-10-20,Real Sociedad,Getafe,1.29417,1.19816,LaLiga,2014
+2014-10-24,Celta Vigo,Levante,1.88024,0.207108,LaLiga,2014
+2014-10-25,Almeria,Athletic Club,0.310169,0.921626,LaLiga,2014
+2014-10-25,Real Madrid,Barcelona,1.87887,1.30281,LaLiga,2014
+2014-10-25,Valencia,Elche,1.18501,0.498984,LaLiga,2014
+2014-10-25,Cordoba,Real Sociedad,2.09938,0.967731,LaLiga,2014
+2014-10-25,Eibar,Granada,0.738375,0.542272,LaLiga,2014
+2014-10-26,Malaga,Rayo Vallecano,3.90394,0.395055,LaLiga,2014
+2014-10-26,Espanyol,Deportivo La Coruna,0.410527,0.0932128,LaLiga,2014
+2014-10-26,Sevilla,Villarreal,1.03012,1.3659,LaLiga,2014
+2014-10-26,Getafe,Atletico Madrid,0.42457,1.57745,LaLiga,2014
+2014-10-31,Deportivo La Coruna,Getafe,0.760639,1.5836,LaLiga,2014
+2014-11-01,Granada,Real Madrid,1.07775,2.84686,LaLiga,2014
+2014-11-01,Atletico Madrid,Cordoba,1.77353,0.785648,LaLiga,2014
+2014-11-01,Barcelona,Celta Vigo,2.66159,1.55562,LaLiga,2014
+2014-11-01,Real Sociedad,Malaga,0.112869,1.46771,LaLiga,2014
+2014-11-02,Athletic Club,Sevilla,0.43055,0.151226,LaLiga,2014
+2014-11-02,Villarreal,Valencia,0.95333,0.339474,LaLiga,2014
+2014-11-02,Levante,Almeria,1.46581,1.32208,LaLiga,2014
+2014-11-02,Elche,Espanyol,2.35234,2.01995,LaLiga,2014
+2014-11-03,Rayo Vallecano,Eibar,1.21559,2.50481,LaLiga,2014
+2014-11-07,Cordoba,Deportivo La Coruna,1.22585,0.217729,LaLiga,2014
+2014-11-08,Almeria,Barcelona,0.710826,2.88307,LaLiga,2014
+2014-11-08,Getafe,Elche,0.701376,0.891117,LaLiga,2014
+2014-11-08,Real Madrid,Rayo Vallecano,2.69643,0.843676,LaLiga,2014
+2014-11-08,Malaga,Eibar,2.15625,0.783082,LaLiga,2014
+2014-11-08,Celta Vigo,Granada,1.3927,1.30763,LaLiga,2014
+2014-11-09,Sevilla,Levante,1.53921,1.11455,LaLiga,2014
+2014-11-09,Espanyol,Villarreal,0.926317,2.12387,LaLiga,2014
+2014-11-09,Valencia,Athletic Club,0.766329,0.767828,LaLiga,2014
+2014-11-09,Real Sociedad,Atletico Madrid,0.896143,0.594573,LaLiga,2014
+2014-11-21,Athletic Club,Espanyol,0.829053,0.746307,LaLiga,2014
+2014-11-22,Atletico Madrid,Malaga,2.30452,0.172228,LaLiga,2014
+2014-11-22,Eibar,Real Madrid,0.87358,4.68657,LaLiga,2014
+2014-11-22,Barcelona,Sevilla,3.11963,0.113587,LaLiga,2014
+2014-11-22,Deportivo La Coruna,Real Sociedad,0.431861,0.629175,LaLiga,2014
+2014-11-23,Rayo Vallecano,Celta Vigo,0.865947,0.704494,LaLiga,2014
+2014-11-23,Levante,Valencia,1.0788,1.48232,LaLiga,2014
+2014-11-23,Elche,Cordoba,2.11064,0.941968,LaLiga,2014
+2014-11-23,Villarreal,Getafe,0.655779,0.580139,LaLiga,2014
+2014-11-24,Granada,Almeria,1.26093,0.0493305,LaLiga,2014
+2014-11-28,Real Sociedad,Elche,1.32833,0.749825,LaLiga,2014
+2014-11-29,Getafe,Athletic Club,0.704685,0.518302,LaLiga,2014
+2014-11-29,Espanyol,Levante,1.12491,1.64662,LaLiga,2014
+2014-11-29,Malaga,Real Madrid,1.16042,4.15129,LaLiga,2014
+2014-11-29,Celta Vigo,Eibar,1.42996,1.06888,LaLiga,2014
+2014-11-30,Atletico Madrid,Deportivo La Coruna,1.07451,0.103816,LaLiga,2014
+2014-11-30,Sevilla,Granada,3.80926,1.19502,LaLiga,2014
+2014-11-30,Cordoba,Villarreal,0.541323,0.84254,LaLiga,2014
+2014-11-30,Valencia,Barcelona,1.14991,1.95194,LaLiga,2014
+2014-12-01,Almeria,Rayo Vallecano,0.80016,1.25863,LaLiga,2014
+2014-12-06,Elche,Atletico Madrid,0.424663,0.279031,LaLiga,2014
+2014-12-06,Athletic Club,Cordoba,0.611024,1.1939,LaLiga,2014
+2014-12-06,Real Madrid,Celta Vigo,2.59443,0.552243,LaLiga,2014
+2014-12-06,Deportivo La Coruna,Malaga,2.64447,0.375388,LaLiga,2014
+2014-12-07,Rayo Vallecano,Sevilla,1.41398,1.58437,LaLiga,2014
+2014-12-07,Barcelona,Espanyol,2.11804,0.223494,LaLiga,2014
+2014-12-07,Villarreal,Real Sociedad,1.76594,0.336566,LaLiga,2014
+2014-12-07,Granada,Valencia,1.1801,0.651538,LaLiga,2014
+2014-12-08,Eibar,Almeria,1.57541,1.39683,LaLiga,2014
+2014-12-08,Levante,Getafe,1.1169,0.24465,LaLiga,2014
+2014-12-12,Almeria,Real Madrid,1.33389,1.25169,LaLiga,2014
+2014-12-13,Getafe,Barcelona,0.11349,1.87156,LaLiga,2014
+2014-12-13,Valencia,Rayo Vallecano,3.01549,0.603533,LaLiga,2014
+2014-12-13,Cordoba,Levante,0.806315,0.603413,LaLiga,2014
+2014-12-13,Malaga,Celta Vigo,1.10137,1.10271,LaLiga,2014
+2014-12-14,Espanyol,Granada,1.94193,0.699727,LaLiga,2014
+2014-12-14,Sevilla,Eibar,1.29083,0.132624,LaLiga,2014
+2014-12-14,Atletico Madrid,Villarreal,1.01723,0.561906,LaLiga,2014
+2014-12-14,Real Sociedad,Athletic Club,1.86676,0.932204,LaLiga,2014
+2014-12-15,Deportivo La Coruna,Elche,0.761893,0.909314,LaLiga,2014
+2014-12-19,Celta Vigo,Almeria,1.44921,1.36468,LaLiga,2014
+2014-12-20,Barcelona,Cordoba,2.59358,0.29662,LaLiga,2014
+2014-12-20,Levante,Real Sociedad,1.21074,0.150209,LaLiga,2014
+2014-12-20,Eibar,Valencia,0.321199,1.49491,LaLiga,2014
+2014-12-20,Rayo Vallecano,Espanyol,1.37834,2.25875,LaLiga,2014
+2014-12-21,Villarreal,Deportivo La Coruna,2.74975,0.669743,LaLiga,2014
+2014-12-21,Granada,Getafe,1.52366,0.923894,LaLiga,2014
+2014-12-21,Elche,Malaga,0.508293,1.43511,LaLiga,2014
+2014-12-21,Athletic Club,Atletico Madrid,0.294125,2.16168,LaLiga,2014
+2015-01-03,Atletico Madrid,Levante,2.14869,0.533056,LaLiga,2014
+2015-01-03,Sevilla,Celta Vigo,0.846357,0.947026,LaLiga,2014
+2015-01-03,Elche,Villarreal,1.51945,2.90415,LaLiga,2014
+2015-01-03,Deportivo La Coruna,Athletic Club,0.604346,0.999235,LaLiga,2014
+2015-01-03,Malaga,Almeria,0.574598,1.38062,LaLiga,2014
+2015-01-04,Getafe,Rayo Vallecano,0.518609,2.5901,LaLiga,2014
+2015-01-04,Valencia,Real Madrid,0.708983,2.63452,LaLiga,2014
+2015-01-04,Espanyol,Eibar,1.54932,1.53054,LaLiga,2014
+2015-01-04,Real Sociedad,Barcelona,0.636981,0.900848,LaLiga,2014
+2015-01-05,Cordoba,Granada,0.980041,0.501211,LaLiga,2014
+2015-01-09,Levante,Deportivo La Coruna,0.766293,1.07012,LaLiga,2014
+2015-01-10,Real Madrid,Espanyol,1.73073,0.367803,LaLiga,2014
+2015-01-10,Malaga,Villarreal,0.496312,0.732696,LaLiga,2014
+2015-01-10,Celta Vigo,Valencia,2.22601,0.29812,LaLiga,2014
+2015-01-10,Eibar,Getafe,0.857562,0.273647,LaLiga,2014
+2015-01-11,Almeria,Sevilla,1.13032,1.07199,LaLiga,2014
+2015-01-11,Athletic Club,Elche,1.29276,1.18469,LaLiga,2014
+2015-01-11,Granada,Real Sociedad,2.64609,1.15464,LaLiga,2014
+2015-01-11,Barcelona,Atletico Madrid,3.72806,0.87562,LaLiga,2014
+2015-01-12,Rayo Vallecano,Cordoba,1.78825,0.573866,LaLiga,2014
+2015-01-16,Cordoba,Eibar,1.11225,0.290839,LaLiga,2014
+2015-01-17,Real Sociedad,Rayo Vallecano,0.569536,0.710475,LaLiga,2014
+2015-01-17,Valencia,Almeria,2.23964,0.822402,LaLiga,2014
+2015-01-17,Villarreal,Athletic Club,2.35698,0.646477,LaLiga,2014
+2015-01-17,Espanyol,Celta Vigo,1.11281,0.234731,LaLiga,2014
+2015-01-18,Getafe,Real Madrid,0.544312,2.41204,LaLiga,2014
+2015-01-18,Atletico Madrid,Granada,1.68927,0.129219,LaLiga,2014
+2015-01-18,Deportivo La Coruna,Barcelona,0.582376,2.25001,LaLiga,2014
+2015-01-18,Elche,Levante,1.91784,1.0119,LaLiga,2014
+2015-01-18,Sevilla,Malaga,1.94535,0.364,LaLiga,2014
+2015-01-24,Cordoba,Real Madrid,1.63834,1.99717,LaLiga,2014
+2015-01-24,Elche,Barcelona,0.347795,3.51478,LaLiga,2014
+2015-01-24,Atletico Madrid,Rayo Vallecano,1.4904,0.696507,LaLiga,2014
+2015-01-24,Real Sociedad,Eibar,0.845464,0.511777,LaLiga,2014
+2015-01-24,Villarreal,Levante,1.30052,1.02925,LaLiga,2014
+2015-01-25,Deportivo La Coruna,Granada,1.86738,0.264957,LaLiga,2014
+2015-01-25,Athletic Club,Malaga,0.959466,1.25659,LaLiga,2014
+2015-01-25,Espanyol,Almeria,2.44178,0.300551,LaLiga,2014
+2015-01-25,Valencia,Sevilla,2.66487,1.97883,LaLiga,2014
+2015-01-26,Getafe,Celta Vigo,2.05397,0.47185,LaLiga,2014
+2015-01-30,Rayo Vallecano,Deportivo La Coruna,1.31894,2.38957,LaLiga,2014
+2015-01-31,Real Madrid,Real Sociedad,4.01477,1.0602,LaLiga,2014
+2015-01-31,Eibar,Atletico Madrid,1.16555,0.842025,LaLiga,2014
+2015-01-31,Granada,Elche,1.51392,0.214841,LaLiga,2014
+2015-01-31,Celta Vigo,Cordoba,2.59613,0.402388,LaLiga,2014
+2015-02-01,Levante,Athletic Club,1.0606,1.65235,LaLiga,2014
+2015-02-01,Almeria,Getafe,1.93122,0.822826,LaLiga,2014
+2015-02-01,Sevilla,Espanyol,3.32956,0.904898,LaLiga,2014
+2015-02-01,Barcelona,Villarreal,3.1169,0.958569,LaLiga,2014
+2015-02-02,Malaga,Valencia,1.68775,0.656199,LaLiga,2014
+2015-02-04,Real Madrid,Sevilla,2.44168,2.47777,LaLiga,2014
+2015-02-06,Deportivo La Coruna,Eibar,2.24001,0.0956199,LaLiga,2014
+2015-02-07,Atletico Madrid,Real Madrid,2.27475,0.102273,LaLiga,2014
+2015-02-07,Villarreal,Granada,1.54408,0.377127,LaLiga,2014
+2015-02-07,Levante,Malaga,3.08668,0.44907,LaLiga,2014
+2015-02-07,Real Sociedad,Celta Vigo,0.981892,0.574985,LaLiga,2014
+2015-02-08,Cordoba,Almeria,1.02973,1.37273,LaLiga,2014
+2015-02-08,Getafe,Sevilla,3.04719,0.401739,LaLiga,2014
+2015-02-08,Espanyol,Valencia,1.57927,1.49482,LaLiga,2014
+2015-02-08,Athletic Club,Barcelona,1.8275,4.6084,LaLiga,2014
+2015-02-09,Elche,Rayo Vallecano,2.96514,0.406262,LaLiga,2014
+2015-02-13,Almeria,Real Sociedad,1.1247,0.912368,LaLiga,2014
+2015-02-14,Sevilla,Cordoba,2.40554,0.320386,LaLiga,2014
+2015-02-14,Real Madrid,Deportivo La Coruna,1.47812,0.618923,LaLiga,2014
+2015-02-14,Granada,Athletic Club,0.476819,0.732856,LaLiga,2014
+2015-02-14,Malaga,Espanyol,1.56057,0.6984,LaLiga,2014
+2015-02-15,Valencia,Getafe,2.14598,0.649505,LaLiga,2014
+2015-02-15,Barcelona,Levante,3.66014,0.247088,LaLiga,2014
+2015-02-15,Rayo Vallecano,Villarreal,1.25027,2.06078,LaLiga,2014
+2015-02-15,Celta Vigo,Atletico Madrid,2.0703,0.549303,LaLiga,2014
+2015-02-16,Eibar,Elche,0.932447,0.434956,LaLiga,2014
+2015-02-20,Getafe,Espanyol,1.43242,0.705886,LaLiga,2014
+2015-02-21,Barcelona,Malaga,1.22195,1.63942,LaLiga,2014
+2015-02-21,Cordoba,Valencia,1.08496,1.89163,LaLiga,2014
+2015-02-21,Atletico Madrid,Almeria,1.7792,0.331948,LaLiga,2014
+2015-02-21,Deportivo La Coruna,Celta Vigo,1.08256,1.92739,LaLiga,2014
+2015-02-22,Real Sociedad,Sevilla,2.13723,2.49215,LaLiga,2014
+2015-02-22,Athletic Club,Rayo Vallecano,1.93713,0.144942,LaLiga,2014
+2015-02-22,Villarreal,Eibar,1.86055,0.231931,LaLiga,2014
+2015-02-22,Elche,Real Madrid,0.113848,1.93223,LaLiga,2014
+2015-02-23,Levante,Granada,0.925939,1.58381,LaLiga,2014
+2015-02-27,Espanyol,Cordoba,0.579128,1.14225,LaLiga,2014
+2015-02-28,Granada,Barcelona,1.05422,3.76412,LaLiga,2014
+2015-02-28,Rayo Vallecano,Levante,2.10446,1.5619,LaLiga,2014
+2015-02-28,Almeria,Deportivo La Coruna,0.385643,1.93328,LaLiga,2014
+2015-02-28,Malaga,Getafe,1.61726,2.02132,LaLiga,2014
+2015-03-01,Valencia,Real Sociedad,1.34535,0.377908,LaLiga,2014
+2015-03-01,Eibar,Athletic Club,0.282177,1.81458,LaLiga,2014
+2015-03-01,Sevilla,Atletico Madrid,0.864001,0.387528,LaLiga,2014
+2015-03-01,Real Madrid,Villarreal,2.94269,0.830645,LaLiga,2014
+2015-03-02,Celta Vigo,Elche,1.3045,0.913534,LaLiga,2014
+2015-03-06,Levante,Eibar,0.968252,1.1246,LaLiga,2014
+2015-03-07,Deportivo La Coruna,Sevilla,2.49167,3.0458,LaLiga,2014
+2015-03-07,Athletic Club,Real Madrid,0.351052,0.880869,LaLiga,2014
+2015-03-07,Elche,Almeria,1.87874,0.509389,LaLiga,2014
+2015-03-07,Granada,Malaga,1.48614,0.108569,LaLiga,2014
+2015-03-08,Barcelona,Rayo Vallecano,5.199,0.955753,LaLiga,2014
+2015-03-08,Real Sociedad,Espanyol,0.740356,0.445724,LaLiga,2014
+2015-03-08,Villarreal,Celta Vigo,1.56688,0.979286,LaLiga,2014
+2015-03-08,Atletico Madrid,Valencia,0.985146,0.555779,LaLiga,2014
+2015-03-09,Cordoba,Getafe,1.134,0.757081,LaLiga,2014
+2015-03-13,Valencia,Deportivo La Coruna,2.87108,0.181554,LaLiga,2014
+2015-03-14,Espanyol,Atletico Madrid,0.197774,1.49831,LaLiga,2014
+2015-03-14,Eibar,Barcelona,0.714941,1.89195,LaLiga,2014
+2015-03-14,Rayo Vallecano,Granada,3.07872,1.13426,LaLiga,2014
+2015-03-14,Celta Vigo,Athletic Club,1.93556,2.77225,LaLiga,2014
+2015-03-15,Almeria,Villarreal,1.3378,1.39493,LaLiga,2014
+2015-03-15,Malaga,Cordoba,1.64345,0.926039,LaLiga,2014
+2015-03-15,Sevilla,Elche,3.005,0.67376,LaLiga,2014
+2015-03-15,Real Madrid,Levante,2.53951,0.58311,LaLiga,2014
+2015-03-16,Getafe,Real Sociedad,1.18559,0.440657,LaLiga,2014
+2015-03-20,Elche,Valencia,0.247285,2.37545,LaLiga,2014
+2015-03-21,Atletico Madrid,Getafe,2.09938,0.255093,LaLiga,2014
+2015-03-21,Rayo Vallecano,Malaga,0.578125,0.787002,LaLiga,2014
+2015-03-21,Levante,Celta Vigo,0.434826,2.92074,LaLiga,2014
+2015-03-21,Athletic Club,Almeria,1.43356,0.341584,LaLiga,2014
+2015-03-21,Granada,Eibar,0.706268,0.288646,LaLiga,2014
+2015-03-22,Deportivo La Coruna,Espanyol,0.89593,1.551,LaLiga,2014
+2015-03-22,Villarreal,Sevilla,1.9763,0.561801,LaLiga,2014
+2015-03-22,Real Sociedad,Cordoba,1.48367,0.6619,LaLiga,2014
+2015-03-22,Barcelona,Real Madrid,2.29612,1.69907,LaLiga,2014
+2015-04-03,Eibar,Rayo Vallecano,1.32137,1.33096,LaLiga,2014
+2015-04-04,Sevilla,Athletic Club,1.36462,0.480128,LaLiga,2014
+2015-04-04,Cordoba,Atletico Madrid,0.477035,1.18641,LaLiga,2014
+2015-04-04,Almeria,Levante,1.34021,2.45536,LaLiga,2014
+2015-04-04,Malaga,Real Sociedad,1.94239,0.432609,LaLiga,2014
+2015-04-05,Real Madrid,Granada,6.61091,0.602945,LaLiga,2014
+2015-04-05,Valencia,Villarreal,1.26916,0.278552,LaLiga,2014
+2015-04-05,Getafe,Deportivo La Coruna,1.29359,1.16571,LaLiga,2014
+2015-04-05,Celta Vigo,Barcelona,0.653911,1.93453,LaLiga,2014
+2015-04-06,Espanyol,Elche,0.536142,0.496354,LaLiga,2014
+2015-04-07,Atletico Madrid,Real Sociedad,1.31813,0.436442,LaLiga,2014
+2015-04-07,Levante,Sevilla,1.66884,1.49345,LaLiga,2014
+2015-04-07,Eibar,Malaga,0.790085,0.428638,LaLiga,2014
+2015-04-08,Barcelona,Almeria,1.71657,0.267948,LaLiga,2014
+2015-04-08,Deportivo La Coruna,Cordoba,0.469966,1.36851,LaLiga,2014
+2015-04-08,Granada,Celta Vigo,1.66481,1.04873,LaLiga,2014
+2015-04-08,Rayo Vallecano,Real Madrid,1.19622,1.94497,LaLiga,2014
+2015-04-09,Athletic Club,Valencia,1.30831,1.12945,LaLiga,2014
+2015-04-09,Elche,Getafe,0.552753,1.01048,LaLiga,2014
+2015-04-09,Villarreal,Espanyol,0.259097,1.95758,LaLiga,2014
+2015-04-11,Real Madrid,Eibar,2.99344,0.143497,LaLiga,2014
+2015-04-11,Malaga,Atletico Madrid,0.670229,2.52542,LaLiga,2014
+2015-04-11,Sevilla,Barcelona,1.26597,1.76203,LaLiga,2014
+2015-04-11,Almeria,Granada,2.26761,1.66924,LaLiga,2014
+2015-04-11,Celta Vigo,Rayo Vallecano,6.56908,0.962212,LaLiga,2014
+2015-04-12,Getafe,Villarreal,1.41544,1.11289,LaLiga,2014
+2015-04-12,Espanyol,Athletic Club,0.512811,0.269712,LaLiga,2014
+2015-04-12,Real Sociedad,Deportivo La Coruna,1.01446,1.50991,LaLiga,2014
+2015-04-12,Cordoba,Elche,1.00055,1.18169,LaLiga,2014
+2015-04-13,Valencia,Levante,0.822921,0.341912,LaLiga,2014
+2015-04-17,Levante,Espanyol,1.05378,1.71351,LaLiga,2014
+2015-04-18,Barcelona,Valencia,2.05137,1.3841,LaLiga,2014
+2015-04-18,Deportivo La Coruna,Atletico Madrid,0.838632,1.51593,LaLiga,2014
+2015-04-18,Real Madrid,Malaga,3.03655,1.04346,LaLiga,2014
+2015-04-18,Athletic Club,Getafe,4.04338,0.0426725,LaLiga,2014
+2015-04-19,Rayo Vallecano,Almeria,2.62824,0.372844,LaLiga,2014
+2015-04-19,Granada,Sevilla,0.31456,0.750507,LaLiga,2014
+2015-04-19,Villarreal,Cordoba,2.31812,0.270253,LaLiga,2014
+2015-04-19,Eibar,Celta Vigo,0.496233,2.19944,LaLiga,2014
+2015-04-20,Elche,Real Sociedad,0.635837,0.240527,LaLiga,2014
+2015-04-24,Cordoba,Athletic Club,2.18715,1.4308,LaLiga,2014
+2015-04-25,Espanyol,Barcelona,1.00138,3.49523,LaLiga,2014
+2015-04-25,Atletico Madrid,Elche,2.30439,1.10245,LaLiga,2014
+2015-04-25,Getafe,Levante,0.827697,0.371997,LaLiga,2014
+2015-04-25,Real Sociedad,Villarreal,0.648718,1.91558,LaLiga,2014
+2015-04-26,Malaga,Deportivo La Coruna,1.32081,1.16186,LaLiga,2014
+2015-04-26,Almeria,Eibar,1.6408,0.325557,LaLiga,2014
+2015-04-26,Sevilla,Rayo Vallecano,3.21575,1.37722,LaLiga,2014
+2015-04-26,Celta Vigo,Real Madrid,2.11816,2.11441,LaLiga,2014
+2015-04-27,Valencia,Granada,1.9701,0.209664,LaLiga,2014
+2015-04-28,Barcelona,Getafe,2.78449,0.576588,LaLiga,2014
+2015-04-28,Athletic Club,Real Sociedad,1.32188,0.41352,LaLiga,2014
+2015-04-28,Levante,Cordoba,1.16982,0.223601,LaLiga,2014
+2015-04-29,Eibar,Sevilla,1.16322,2.00481,LaLiga,2014
+2015-04-29,Real Madrid,Almeria,2.72518,0.248127,LaLiga,2014
+2015-04-29,Celta Vigo,Malaga,2.42446,1.16202,LaLiga,2014
+2015-04-29,Elche,Deportivo La Coruna,3.21848,0.734613,LaLiga,2014
+2015-04-29,Villarreal,Atletico Madrid,0.75045,1.64341,LaLiga,2014
+2015-04-30,Rayo Vallecano,Valencia,0.486759,1.25767,LaLiga,2014
+2015-04-30,Granada,Espanyol,1.23315,0.862324,LaLiga,2014
+2015-05-01,Real Sociedad,Levante,1.12737,0.469938,LaLiga,2014
+2015-05-02,Cordoba,Barcelona,0.433609,6.18696,LaLiga,2014
+2015-05-02,Atletico Madrid,Athletic Club,0.962339,0.887369,LaLiga,2014
+2015-05-02,Sevilla,Real Madrid,2.92695,1.7552,LaLiga,2014
+2015-05-02,Deportivo La Coruna,Villarreal,0.610146,0.418168,LaLiga,2014
+2015-05-03,Espanyol,Rayo Vallecano,0.760792,0.614259,LaLiga,2014
+2015-05-03,Getafe,Granada,0.783329,1.73377,LaLiga,2014
+2015-05-03,Valencia,Eibar,1.40783,0.996269,LaLiga,2014
+2015-05-03,Malaga,Elche,3.77025,1.57961,LaLiga,2014
+2015-05-04,Almeria,Celta Vigo,2.25388,0.998686,LaLiga,2014
+2015-05-08,Eibar,Espanyol,0.243878,1.46248,LaLiga,2014
+2015-05-09,Granada,Cordoba,3.14933,0.0979845,LaLiga,2014
+2015-05-09,Barcelona,Real Sociedad,2.17671,0.231803,LaLiga,2014
+2015-05-09,Real Madrid,Valencia,2.73249,1.59908,LaLiga,2014
+2015-05-09,Athletic Club,Deportivo La Coruna,0.764287,0.443144,LaLiga,2014
+2015-05-10,Levante,Atletico Madrid,2.15407,1.57159,LaLiga,2014
+2015-05-10,Villarreal,Elche,1.53839,1.06985,LaLiga,2014
+2015-05-10,Almeria,Malaga,1.84645,2.14355,LaLiga,2014
+2015-05-10,Celta Vigo,Sevilla,1.62726,1.67727,LaLiga,2014
+2015-05-11,Rayo Vallecano,Getafe,1.40202,0.866413,LaLiga,2014
+2015-05-17,Villarreal,Malaga,1.15862,0.853222,LaLiga,2014
+2015-05-17,Elche,Athletic Club,1.28526,1.27624,LaLiga,2014
+2015-05-17,Deportivo La Coruna,Levante,0.77058,0.0802943,LaLiga,2014
+2015-05-17,Atletico Madrid,Barcelona,0.516818,1.46846,LaLiga,2014
+2015-05-17,Real Sociedad,Granada,0.276179,1.58346,LaLiga,2014
+2015-05-17,Cordoba,Rayo Vallecano,1.05152,2.20767,LaLiga,2014
+2015-05-17,Getafe,Eibar,1.04185,0.454082,LaLiga,2014
+2015-05-17,Espanyol,Real Madrid,1.5021,2.42924,LaLiga,2014
+2015-05-17,Valencia,Celta Vigo,2.1914,0.594569,LaLiga,2014
+2015-05-17,Sevilla,Almeria,2.3833,1.19623,LaLiga,2014
+2015-05-23,Levante,Elche,0.829026,2.09849,LaLiga,2014
+2015-05-23,Barcelona,Deportivo La Coruna,2.43729,0.605381,LaLiga,2014
+2015-05-23,Granada,Atletico Madrid,0.0809351,0.074881,LaLiga,2014
+2015-05-23,Athletic Club,Villarreal,2.45261,0.981771,LaLiga,2014
+2015-05-23,Malaga,Sevilla,0.698996,2.65132,LaLiga,2014
+2015-05-23,Almeria,Valencia,1.38838,2.17387,LaLiga,2014
+2015-05-23,Rayo Vallecano,Real Sociedad,1.0083,1.55136,LaLiga,2014
+2015-05-23,Eibar,Cordoba,1.68473,0.44487,LaLiga,2014
+2015-05-23,Celta Vigo,Espanyol,1.28113,2.36037,LaLiga,2014
+2015-05-23,Real Madrid,Getafe,3.13453,0.979312,LaLiga,2014

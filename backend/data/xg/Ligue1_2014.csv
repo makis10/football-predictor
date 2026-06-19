@@ -1,0 +1,381 @@
+date,home_team,away_team,home_xg,away_xg,league,season
+2014-08-08,Reims,Paris Saint Germain,1.36787,2.65538,Ligue1,2014
+2014-08-09,SC Bastia,Marseille,1.39689,1.31751,Ligue1,2014
+2014-08-09,Evian Thonon Gaillard,Caen,0.813737,1.23869,Ligue1,2014
+2014-08-09,Guingamp,Saint-Etienne,0.63294,1.49532,Ligue1,2014
+2014-08-09,Lille,Metz,1.54468,0.0571371,Ligue1,2014
+2014-08-09,Montpellier,Bordeaux,1.01756,0.750184,Ligue1,2014
+2014-08-09,Nantes,Lens,1.025,0.167128,Ligue1,2014
+2014-08-09,Nice,Toulouse,2.21481,1.56361,Ligue1,2014
+2014-08-10,Lyon,Rennes,2.064,0.375946,Ligue1,2014
+2014-08-10,Monaco,Lorient,2.09333,1.6254,Ligue1,2014
+2014-08-15,Caen,Lille,0.273799,0.945961,Ligue1,2014
+2014-08-16,Paris Saint Germain,SC Bastia,1.50758,0.164539,Ligue1,2014
+2014-08-16,Rennes,Evian Thonon Gaillard,1.81988,1.06246,Ligue1,2014
+2014-08-16,Toulouse,Lyon,1.43956,1.28964,Ligue1,2014
+2014-08-16,Lens,Guingamp,0.908766,1.00409,Ligue1,2014
+2014-08-16,Lorient,Nice,1.03357,0.326763,Ligue1,2014
+2014-08-16,Metz,Nantes,1.21778,0.623268,Ligue1,2014
+2014-08-17,Marseille,Montpellier,1.10223,1.55953,Ligue1,2014
+2014-08-17,Saint-Etienne,Reims,2.42892,0.285467,Ligue1,2014
+2014-08-17,Bordeaux,Monaco,3.76512,0.575148,Ligue1,2014
+2014-08-22,Evian Thonon Gaillard,Paris Saint Germain,0.632883,0.388902,Ligue1,2014
+2014-08-23,Guingamp,Marseille,0.452052,0.708459,Ligue1,2014
+2014-08-23,Lille,Lorient,0.782421,0.335937,Ligue1,2014
+2014-08-23,Nice,Bordeaux,0.830133,1.39097,Ligue1,2014
+2014-08-23,Reims,Caen,1.8721,1.80265,Ligue1,2014
+2014-08-23,Montpellier,Metz,1.59321,1.5187,Ligue1,2014
+2014-08-23,SC Bastia,Toulouse,1.14876,0.714399,Ligue1,2014
+2014-08-24,Lyon,Lens,0.907071,1.83188,Ligue1,2014
+2014-08-24,Saint-Etienne,Rennes,1.16489,0.364811,Ligue1,2014
+2014-08-24,Nantes,Monaco,2.58841,0.835173,Ligue1,2014
+2014-08-29,Marseille,Nice,4.68663,0.699986,Ligue1,2014
+2014-08-30,Monaco,Lille,1.74105,0.209403,Ligue1,2014
+2014-08-30,Nantes,Montpellier,1.27017,0.127161,Ligue1,2014
+2014-08-30,Toulouse,Evian Thonon Gaillard,0.851431,0.710663,Ligue1,2014
+2014-08-30,Caen,Rennes,0.419379,1.17366,Ligue1,2014
+2014-08-30,Lens,Reims,2.67759,1.28585,Ligue1,2014
+2014-08-30,Lorient,Guingamp,2.04974,0.607468,Ligue1,2014
+2014-08-31,Bordeaux,SC Bastia,1.35871,1.03398,Ligue1,2014
+2014-08-31,Metz,Lyon,1.50793,2.14951,Ligue1,2014
+2014-08-31,Paris Saint Germain,Saint-Etienne,1.60888,0.384577,Ligue1,2014
+2014-09-12,Lyon,Monaco,1.78993,0.920354,Ligue1,2014
+2014-09-13,Rennes,Paris Saint Germain,0.28586,1.49453,Ligue1,2014
+2014-09-13,Saint-Etienne,Caen,1.40877,0.54212,Ligue1,2014
+2014-09-13,Reims,Toulouse,0.295284,1.54377,Ligue1,2014
+2014-09-13,Montpellier,Lorient,1.48717,0.37765,Ligue1,2014
+2014-09-13,Nice,Metz,0.787783,0.509534,Ligue1,2014
+2014-09-13,SC Bastia,Lens,0.689205,0.302581,Ligue1,2014
+2014-09-14,Lille,Nantes,1.46293,0.987708,Ligue1,2014
+2014-09-14,Guingamp,Bordeaux,1.68757,0.289488,Ligue1,2014
+2014-09-14,Evian Thonon Gaillard,Marseille,0.912171,1.12115,Ligue1,2014
+2014-09-19,Bordeaux,Evian Thonon Gaillard,0.539429,0.365111,Ligue1,2014
+2014-09-20,Marseille,Rennes,1.4979,1.37752,Ligue1,2014
+2014-09-20,Lorient,Reims,0.236254,0.826222,Ligue1,2014
+2014-09-20,Metz,SC Bastia,1.75071,0.445841,Ligue1,2014
+2014-09-20,Nantes,Nice,1.9684,0.0802175,Ligue1,2014
+2014-09-20,Toulouse,Caen,3.64275,0.664786,Ligue1,2014
+2014-09-21,Lille,Montpellier,0.816887,0.349895,Ligue1,2014
+2014-09-21,Lens,Saint-Etienne,0.880858,1.03801,Ligue1,2014
+2014-09-21,Monaco,Guingamp,1.44179,0.0833917,Ligue1,2014
+2014-09-21,Paris Saint Germain,Lyon,1.71499,0.538028,Ligue1,2014
+2014-09-23,Reims,Marseille,0.383029,3.62665,Ligue1,2014
+2014-09-23,Rennes,Toulouse,0.642791,0.479571,Ligue1,2014
+2014-09-24,Evian Thonon Gaillard,Lens,0.96835,0.860457,Ligue1,2014
+2014-09-24,Guingamp,Metz,0.74288,0.329026,Ligue1,2014
+2014-09-24,Lyon,Lorient,2.15635,0.450279,Ligue1,2014
+2014-09-24,Montpellier,Monaco,0.381379,0.821933,Ligue1,2014
+2014-09-24,Nice,Lille,0.86697,0.220894,Ligue1,2014
+2014-09-24,SC Bastia,Nantes,0.328904,1.6641,Ligue1,2014
+2014-09-24,Caen,Paris Saint Germain,0.943355,2.14743,Ligue1,2014
+2014-09-25,Saint-Etienne,Bordeaux,2.12624,1.03818,Ligue1,2014
+2014-09-27,Monaco,Nice,0.582276,0.392234,Ligue1,2014
+2014-09-27,Toulouse,Paris Saint Germain,0.661996,0.504659,Ligue1,2014
+2014-09-27,Montpellier,Guingamp,0.958,0.440641,Ligue1,2014
+2014-09-27,Metz,Reims,1.57463,0.119753,Ligue1,2014
+2014-09-27,Lille,SC Bastia,0.668915,0.464606,Ligue1,2014
+2014-09-27,Lorient,Evian Thonon Gaillard,0.791519,0.834365,Ligue1,2014
+2014-09-28,Bordeaux,Rennes,1.73816,2.28274,Ligue1,2014
+2014-09-28,Lens,Caen,0.518773,0.375391,Ligue1,2014
+2014-09-28,Nantes,Lyon,1.90868,0.693743,Ligue1,2014
+2014-09-28,Marseille,Saint-Etienne,1.12373,0.348437,Ligue1,2014
+2014-10-03,Reims,Bordeaux,0.457543,0.617068,Ligue1,2014
+2014-10-04,Caen,Marseille,0.496129,2.73148,Ligue1,2014
+2014-10-04,Nice,Montpellier,1.13335,0.520645,Ligue1,2014
+2014-10-04,SC Bastia,Lorient,0.307003,0.692365,Ligue1,2014
+2014-10-04,Rennes,Lens,2.26447,0.191323,Ligue1,2014
+2014-10-04,Evian Thonon Gaillard,Metz,1.25083,0.334334,Ligue1,2014
+2014-10-05,Saint-Etienne,Toulouse,1.29929,0.821394,Ligue1,2014
+2014-10-05,Guingamp,Nantes,0.909291,0.720094,Ligue1,2014
+2014-10-05,Lyon,Lille,2.33678,0.368029,Ligue1,2014
+2014-10-05,Paris Saint Germain,Monaco,1.23205,1.28795,Ligue1,2014
+2014-10-17,Lens,Paris Saint Germain,0.887858,2.32314,Ligue1,2014
+2014-10-18,Lorient,Saint-Etienne,0.179886,1.46047,Ligue1,2014
+2014-10-18,Lille,Guingamp,1.90889,1.14653,Ligue1,2014
+2014-10-18,Metz,Rennes,0.343316,0.676471,Ligue1,2014
+2014-10-18,Monaco,Evian Thonon Gaillard,2.44399,1.3361,Ligue1,2014
+2014-10-18,Nantes,Reims,0.36688,1.07275,Ligue1,2014
+2014-10-18,Nice,SC Bastia,0.814842,0.15312,Ligue1,2014
+2014-10-19,Marseille,Toulouse,1.15665,0.242119,Ligue1,2014
+2014-10-19,Bordeaux,Caen,1.38912,0.602559,Ligue1,2014
+2014-10-19,Lyon,Montpellier,2.47834,1.23199,Ligue1,2014
+2014-10-24,Toulouse,Lens,0.868458,1.22242,Ligue1,2014
+2014-10-25,Paris Saint Germain,Bordeaux,2.26339,0.451124,Ligue1,2014
+2014-10-25,Reims,Montpellier,0.716961,0.705528,Ligue1,2014
+2014-10-25,SC Bastia,Monaco,0.983475,2.2563,Ligue1,2014
+2014-10-25,Caen,Lorient,2.02942,1.13471,Ligue1,2014
+2014-10-25,Evian Thonon Gaillard,Nantes,0.258938,2.12732,Ligue1,2014
+2014-10-26,Rennes,Lille,2.16826,0.387805,Ligue1,2014
+2014-10-26,Saint-Etienne,Metz,1.08553,0.3693,Ligue1,2014
+2014-10-26,Guingamp,Nice,2.11355,3.68156,Ligue1,2014
+2014-10-26,Lyon,Marseille,0.780099,1.13587,Ligue1,2014
+2014-10-31,Monaco,Reims,1.32581,0.861794,Ligue1,2014
+2014-11-01,Lorient,Paris Saint Germain,1.17192,1.72464,Ligue1,2014
+2014-11-01,Metz,Caen,2.32422,0.791375,Ligue1,2014
+2014-11-01,Guingamp,SC Bastia,0.67025,0.427032,Ligue1,2014
+2014-11-01,Lille,Saint-Etienne,1.57174,1.51419,Ligue1,2014
+2014-11-01,Montpellier,Evian Thonon Gaillard,2.13023,0.196777,Ligue1,2014
+2014-11-01,Nice,Lyon,1.39284,1.8591,Ligue1,2014
+2014-11-02,Nantes,Rennes,0.993801,0.476723,Ligue1,2014
+2014-11-02,Bordeaux,Toulouse,1.6268,0.983897,Ligue1,2014
+2014-11-02,Marseille,Lens,1.5579,1.10067,Ligue1,2014
+2014-11-07,Rennes,Lorient,1.68988,0.152455,Ligue1,2014
+2014-11-08,Lens,Bordeaux,1.04227,1.51927,Ligue1,2014
+2014-11-08,Toulouse,Metz,1.21269,0.416847,Ligue1,2014
+2014-11-08,SC Bastia,Montpellier,1.50095,0.550295,Ligue1,2014
+2014-11-08,Caen,Nantes,0.549958,0.719069,Ligue1,2014
+2014-11-08,Evian Thonon Gaillard,Nice,1.37071,1.13378,Ligue1,2014
+2014-11-09,Lyon,Guingamp,0.7915,1.13393,Ligue1,2014
+2014-11-09,Reims,Lille,2.3767,0.580936,Ligue1,2014
+2014-11-09,Saint-Etienne,Monaco,0.805668,0.589202,Ligue1,2014
+2014-11-09,Paris Saint Germain,Marseille,2.92373,0.757773,Ligue1,2014
+2014-11-21,Metz,Paris Saint Germain,2.04314,2.21682,Ligue1,2014
+2014-11-22,SC Bastia,Lyon,0.449604,0.345597,Ligue1,2014
+2014-11-22,Guingamp,Rennes,0.86725,1.07493,Ligue1,2014
+2014-11-22,Lorient,Lens,2.00993,0.382214,Ligue1,2014
+2014-11-22,Nice,Reims,1.3235,0.813343,Ligue1,2014
+2014-11-22,Monaco,Caen,3.04804,0.456666,Ligue1,2014
+2014-11-23,Nantes,Saint-Etienne,1.0617,1.47305,Ligue1,2014
+2014-11-23,Montpellier,Toulouse,1.56753,0.796531,Ligue1,2014
+2014-11-23,Marseille,Bordeaux,3.01008,0.961541,Ligue1,2014
+2014-11-28,Marseille,Nantes,0.769279,0.749454,Ligue1,2014
+2014-11-29,Paris Saint Germain,Nice,1.77541,0.367226,Ligue1,2014
+2014-11-29,Reims,SC Bastia,1.08343,1.13102,Ligue1,2014
+2014-11-29,Rennes,Monaco,1.17457,0.764203,Ligue1,2014
+2014-11-29,Toulouse,Lorient,2.68262,2.60595,Ligue1,2014
+2014-11-29,Lens,Metz,1.52799,0.819458,Ligue1,2014
+2014-11-29,Caen,Montpellier,2.34821,0.618174,Ligue1,2014
+2014-11-30,Bordeaux,Lille,1.24129,0.281944,Ligue1,2014
+2014-11-30,Evian Thonon Gaillard,Guingamp,0.910803,0.583473,Ligue1,2014
+2014-11-30,Saint-Etienne,Lyon,2.12258,1.85216,Ligue1,2014
+2014-12-02,Lorient,Marseille,1.01955,1.93231,Ligue1,2014
+2014-12-02,Nantes,Toulouse,1.48238,0.872311,Ligue1,2014
+2014-12-02,Monaco,Lens,1.07556,1.29348,Ligue1,2014
+2014-12-03,Montpellier,Saint-Etienne,0.402363,1.36398,Ligue1,2014
+2014-12-03,Nice,Rennes,0.8181,0.596867,Ligue1,2014
+2014-12-03,Metz,Bordeaux,1.49865,0.537624,Ligue1,2014
+2014-12-03,SC Bastia,Evian Thonon Gaillard,1.69568,1.15876,Ligue1,2014
+2014-12-03,Guingamp,Caen,2.5562,0.585605,Ligue1,2014
+2014-12-03,Lille,Paris Saint Germain,1.32825,3.24668,Ligue1,2014
+2014-12-04,Lyon,Reims,2.08293,0.972753,Ligue1,2014
+2014-12-05,Toulouse,Monaco,0.342817,1.72686,Ligue1,2014
+2014-12-06,Paris Saint Germain,Nantes,1.86018,0.152992,Ligue1,2014
+2014-12-06,Rennes,Montpellier,1.46084,4.23067,Ligue1,2014
+2014-12-06,Saint-Etienne,SC Bastia,0.855599,1.38223,Ligue1,2014
+2014-12-06,Bordeaux,Lorient,2.72882,1.50451,Ligue1,2014
+2014-12-06,Caen,Nice,1.73894,2.42286,Ligue1,2014
+2014-12-07,Evian Thonon Gaillard,Lyon,0.973267,2.92037,Ligue1,2014
+2014-12-07,Lens,Lille,1.18959,0.723394,Ligue1,2014
+2014-12-07,Reims,Guingamp,0.714267,0.777862,Ligue1,2014
+2014-12-07,Marseille,Metz,1.84578,0.938293,Ligue1,2014
+2014-12-12,Lyon,Caen,4.08802,0.374308,Ligue1,2014
+2014-12-13,Nantes,Bordeaux,0.164604,1.03315,Ligue1,2014
+2014-12-13,Montpellier,Lens,2.02229,1.3397,Ligue1,2014
+2014-12-13,Reims,Evian Thonon Gaillard,1.86473,0.810448,Ligue1,2014
+2014-12-13,SC Bastia,Rennes,1.10213,0.311319,Ligue1,2014
+2014-12-13,Lorient,Metz,2.22037,0.370375,Ligue1,2014
+2014-12-14,Nice,Saint-Etienne,0.190566,0.297555,Ligue1,2014
+2014-12-14,Guingamp,Paris Saint Germain,0.67697,1.24333,Ligue1,2014
+2014-12-14,Lille,Toulouse,2.32341,0.0757702,Ligue1,2014
+2014-12-14,Monaco,Marseille,1.03529,1.47031,Ligue1,2014
+2014-12-19,Lens,Nice,1.45073,0.639666,Ligue1,2014
+2014-12-20,Paris Saint Germain,Montpellier,0.514465,0.0415991,Ligue1,2014
+2014-12-20,Metz,Monaco,0.742352,1.1,Ligue1,2014
+2014-12-20,Lorient,Nantes,2.85551,1.06757,Ligue1,2014
+2014-12-20,Caen,SC Bastia,0.446779,1.17583,Ligue1,2014
+2014-12-20,Toulouse,Guingamp,1.20718,1.22899,Ligue1,2014
+2014-12-20,Rennes,Reims,0.343718,0.695359,Ligue1,2014
+2014-12-21,Marseille,Lille,1.30672,0.743826,Ligue1,2014
+2014-12-21,Saint-Etienne,Evian Thonon Gaillard,1.3033,0.321493,Ligue1,2014
+2014-12-21,Bordeaux,Lyon,1.24417,3.16703,Ligue1,2014
+2015-01-07,Lille,Evian Thonon Gaillard,0.437156,0.749129,Ligue1,2014
+2015-01-09,Montpellier,Marseille,0.160071,0.221183,Ligue1,2014
+2015-01-10,SC Bastia,Paris Saint Germain,1.4467,1.31274,Ligue1,2014
+2015-01-10,Evian Thonon Gaillard,Rennes,1.16628,2.1526,Ligue1,2014
+2015-01-10,Guingamp,Lens,2.27563,0.493296,Ligue1,2014
+2015-01-10,Lille,Caen,1.18586,0.194979,Ligue1,2014
+2015-01-10,Nice,Lorient,2.64247,0.198224,Ligue1,2014
+2015-01-10,Reims,Saint-Etienne,1.23747,1.25903,Ligue1,2014
+2015-01-11,Lyon,Toulouse,1.51779,0.508209,Ligue1,2014
+2015-01-11,Nantes,Metz,0.67776,0.850045,Ligue1,2014
+2015-01-11,Monaco,Bordeaux,0.934172,0.73411,Ligue1,2014
+2015-01-16,Bordeaux,Nice,1.19574,0.940781,Ligue1,2014
+2015-01-17,Lens,Lyon,0.971433,1.1716,Ligue1,2014
+2015-01-17,Lorient,Lille,1.54815,0.686454,Ligue1,2014
+2015-01-17,Toulouse,SC Bastia,0.267063,0.760438,Ligue1,2014
+2015-01-17,Caen,Reims,3.058,1.56623,Ligue1,2014
+2015-01-17,Metz,Montpellier,1.47552,2.64971,Ligue1,2014
+2015-01-17,Monaco,Nantes,2.21733,1.23269,Ligue1,2014
+2015-01-18,Paris Saint Germain,Evian Thonon Gaillard,3.42779,0.39894,Ligue1,2014
+2015-01-18,Rennes,Saint-Etienne,0.604093,0.533585,Ligue1,2014
+2015-01-18,Marseille,Guingamp,1.12799,1.32457,Ligue1,2014
+2015-01-23,Nice,Marseille,2.00165,1.59013,Ligue1,2014
+2015-01-24,Lille,Monaco,0.744491,0.910793,Ligue1,2014
+2015-01-24,Guingamp,Lorient,2.31354,1.8591,Ligue1,2014
+2015-01-24,Montpellier,Nantes,1.40846,0.557405,Ligue1,2014
+2015-01-24,SC Bastia,Bordeaux,1.38665,0.961446,Ligue1,2014
+2015-01-25,Evian Thonon Gaillard,Toulouse,0.438885,1.3373,Ligue1,2014
+2015-01-25,Lyon,Metz,1.49602,0.186266,Ligue1,2014
+2015-01-25,Rennes,Caen,0.821031,1.21021,Ligue1,2014
+2015-01-25,Reims,Lens,0.962133,2.56238,Ligue1,2014
+2015-01-25,Saint-Etienne,Paris Saint Germain,0.351107,2.36079,Ligue1,2014
+2015-01-30,Paris Saint Germain,Rennes,1.84905,0.464159,Ligue1,2014
+2015-01-31,Marseille,Evian Thonon Gaillard,2.36677,0.0877751,Ligue1,2014
+2015-01-31,Lens,SC Bastia,2.08817,0.854747,Ligue1,2014
+2015-01-31,Lorient,Montpellier,0.746701,0.135585,Ligue1,2014
+2015-01-31,Toulouse,Reims,1.07089,0.27492,Ligue1,2014
+2015-01-31,Metz,Nice,0.763854,0.11521,Ligue1,2014
+2015-01-31,Nantes,Lille,1.38049,0.630169,Ligue1,2014
+2015-02-01,Caen,Saint-Etienne,2.22468,1.00315,Ligue1,2014
+2015-02-01,Bordeaux,Guingamp,0.767491,0.71638,Ligue1,2014
+2015-02-01,Monaco,Lyon,0.83513,0.554624,Ligue1,2014
+2015-02-06,Saint-Etienne,Lens,1.53111,1.66725,Ligue1,2014
+2015-02-07,Rennes,Marseille,0.533668,0.347751,Ligue1,2014
+2015-02-07,Reims,Lorient,1.71173,1.0102,Ligue1,2014
+2015-02-07,SC Bastia,Metz,1.56279,0.595647,Ligue1,2014
+2015-02-07,Caen,Toulouse,1.75465,0.440619,Ligue1,2014
+2015-02-07,Evian Thonon Gaillard,Bordeaux,0.363124,0.188163,Ligue1,2014
+2015-02-07,Montpellier,Lille,0.586876,2.22525,Ligue1,2014
+2015-02-08,Guingamp,Monaco,1.14607,1.739,Ligue1,2014
+2015-02-08,Nice,Nantes,1.22982,0.18589,Ligue1,2014
+2015-02-08,Lyon,Paris Saint Germain,0.719121,2.59822,Ligue1,2014
+2015-02-13,Marseille,Reims,2.10567,1.42842,Ligue1,2014
+2015-02-14,Paris Saint Germain,Caen,1.58468,0.674238,Ligue1,2014
+2015-02-14,Nantes,SC Bastia,0.250159,0.639578,Ligue1,2014
+2015-02-14,Toulouse,Rennes,1.0594,0.801069,Ligue1,2014
+2015-02-14,Lens,Evian Thonon Gaillard,1.38094,0.81777,Ligue1,2014
+2015-02-14,Lille,Nice,0.366899,0.144349,Ligue1,2014
+2015-02-15,Bordeaux,Saint-Etienne,1.07309,0.943341,Ligue1,2014
+2015-02-15,Metz,Guingamp,0.487235,1.73901,Ligue1,2014
+2015-02-15,Lorient,Lyon,1.23844,0.709499,Ligue1,2014
+2015-02-20,Nice,Monaco,0.541836,0.852581,Ligue1,2014
+2015-02-21,Paris Saint Germain,Toulouse,1.89117,1.00428,Ligue1,2014
+2015-02-21,Rennes,Bordeaux,0.872582,1.56069,Ligue1,2014
+2015-02-21,SC Bastia,Lille,0.442604,0.368923,Ligue1,2014
+2015-02-21,Caen,Lens,1.84709,1.37945,Ligue1,2014
+2015-02-22,Guingamp,Montpellier,0.311905,2.26494,Ligue1,2014
+2015-02-22,Reims,Metz,0.730481,0.772318,Ligue1,2014
+2015-02-22,Lyon,Nantes,2.35303,0.2487,Ligue1,2014
+2015-02-22,Saint-Etienne,Marseille,1.7567,1.5275,Ligue1,2014
+2015-02-27,Marseille,Caen,3.28904,1.91638,Ligue1,2014
+2015-02-28,Lille,Lyon,1.04431,0.387306,Ligue1,2014
+2015-02-28,Lorient,SC Bastia,1.19939,0.408568,Ligue1,2014
+2015-02-28,Bordeaux,Reims,0.951469,0.791814,Ligue1,2014
+2015-02-28,Lens,Rennes,0.982123,1.3562,Ligue1,2014
+2015-02-28,Metz,Evian Thonon Gaillard,0.769832,0.917162,Ligue1,2014
+2015-02-28,Toulouse,Saint-Etienne,0.400404,1.01274,Ligue1,2014
+2015-03-01,Nantes,Guingamp,0.313418,0.194371,Ligue1,2014
+2015-03-01,Montpellier,Nice,1.80655,1.22264,Ligue1,2014
+2015-03-01,Monaco,Paris Saint Germain,0.269429,1.25139,Ligue1,2014
+2015-03-04,Evian Thonon Gaillard,Lorient,0.550926,0.561594,Ligue1,2014
+2015-03-06,Toulouse,Marseille,1.46982,1.8118,Ligue1,2014
+2015-03-07,Paris Saint Germain,Lens,4.74794,0.623449,Ligue1,2014
+2015-03-07,Reims,Nantes,2.72502,0.912317,Ligue1,2014
+2015-03-07,Evian Thonon Gaillard,Monaco,1.24794,1.68478,Ligue1,2014
+2015-03-07,SC Bastia,Nice,1.12393,0.711578,Ligue1,2014
+2015-03-07,Rennes,Metz,0.370071,0.603088,Ligue1,2014
+2015-03-07,Caen,Bordeaux,0.491188,1.56487,Ligue1,2014
+2015-03-08,Saint-Etienne,Lorient,1.79838,0.42515,Ligue1,2014
+2015-03-08,Guingamp,Lille,0.209842,0.546828,Ligue1,2014
+2015-03-08,Montpellier,Lyon,1.55979,3.47495,Ligue1,2014
+2015-03-13,Monaco,SC Bastia,4.78539,0.127961,Ligue1,2014
+2015-03-13,Nice,Guingamp,0.932215,1.18537,Ligue1,2014
+2015-03-14,Metz,Saint-Etienne,1.85037,1.48298,Ligue1,2014
+2015-03-14,Lorient,Caen,1.41533,1.32089,Ligue1,2014
+2015-03-14,Montpellier,Reims,3.27913,1.43438,Ligue1,2014
+2015-03-14,Nantes,Evian Thonon Gaillard,1.36711,0.788056,Ligue1,2014
+2015-03-14,Lens,Toulouse,0.674633,0.61914,Ligue1,2014
+2015-03-15,Lille,Rennes,1.86602,0.426289,Ligue1,2014
+2015-03-15,Bordeaux,Paris Saint Germain,2.38445,2.24977,Ligue1,2014
+2015-03-15,Marseille,Lyon,0.315525,0.573691,Ligue1,2014
+2015-03-20,Paris Saint Germain,Lorient,3.60171,0.385115,Ligue1,2014
+2015-03-21,Lyon,Nice,1.41208,1.79842,Ligue1,2014
+2015-03-21,Rennes,Nantes,0.21106,0.282065,Ligue1,2014
+2015-03-21,SC Bastia,Guingamp,0.698853,1.08129,Ligue1,2014
+2015-03-21,Toulouse,Bordeaux,0.915381,1.29075,Ligue1,2014
+2015-03-21,Caen,Metz,0.666206,0.278793,Ligue1,2014
+2015-03-21,Evian Thonon Gaillard,Montpellier,1.34575,0.230609,Ligue1,2014
+2015-03-22,Saint-Etienne,Lille,1.21521,0.234061,Ligue1,2014
+2015-03-22,Reims,Monaco,1.14195,1.79552,Ligue1,2014
+2015-03-22,Lens,Marseille,0.345633,0.383233,Ligue1,2014
+2015-04-03,Monaco,Saint-Etienne,0.824897,0.651043,Ligue1,2014
+2015-04-04,Guingamp,Lyon,0.444604,1.70947,Ligue1,2014
+2015-04-04,Lille,Reims,2.82156,0.943203,Ligue1,2014
+2015-04-04,Lorient,Rennes,1.17439,0.406495,Ligue1,2014
+2015-04-04,Montpellier,SC Bastia,2.6221,0.227001,Ligue1,2014
+2015-04-04,Metz,Toulouse,1.18188,1.02796,Ligue1,2014
+2015-04-04,Nice,Evian Thonon Gaillard,1.28484,1.60029,Ligue1,2014
+2015-04-05,Bordeaux,Lens,1.84297,1.43634,Ligue1,2014
+2015-04-05,Nantes,Caen,1.22924,1.82125,Ligue1,2014
+2015-04-05,Marseille,Paris Saint Germain,0.634944,0.396874,Ligue1,2014
+2015-04-07,Monaco,Montpellier,0.758015,1.24109,Ligue1,2014
+2015-04-10,Caen,Monaco,0.388163,1.64324,Ligue1,2014
+2015-04-12,Saint-Etienne,Nantes,0.359586,0.44705,Ligue1,2014
+2015-04-12,Toulouse,Montpellier,1.13569,0.768385,Ligue1,2014
+2015-04-12,Rennes,Guingamp,0.944457,0.156916,Ligue1,2014
+2015-04-12,Reims,Nice,1.31503,1.67264,Ligue1,2014
+2015-04-12,Evian Thonon Gaillard,Lille,1.17213,1.77445,Ligue1,2014
+2015-04-12,Lens,Lorient,0.711634,0.487375,Ligue1,2014
+2015-04-12,Bordeaux,Marseille,0.441498,0.804363,Ligue1,2014
+2015-04-15,Lyon,SC Bastia,1.52986,0.293852,Ligue1,2014
+2015-04-17,Nantes,Marseille,0.78163,1.03163,Ligue1,2014
+2015-04-18,Nice,Paris Saint Germain,1.35219,2.84076,Ligue1,2014
+2015-04-18,Lorient,Toulouse,0.66899,1.65061,Ligue1,2014
+2015-04-18,Metz,Lens,3.00002,0.263045,Ligue1,2014
+2015-04-18,Monaco,Rennes,0.88234,2.02085,Ligue1,2014
+2015-04-18,Guingamp,Evian Thonon Gaillard,1.42866,0.997207,Ligue1,2014
+2015-04-18,SC Bastia,Reims,0.590394,1.89032,Ligue1,2014
+2015-04-19,Lille,Bordeaux,1.28762,1.39606,Ligue1,2014
+2015-04-19,Montpellier,Caen,0.784383,0.272891,Ligue1,2014
+2015-04-19,Lyon,Saint-Etienne,2.17269,1.93102,Ligue1,2014
+2015-04-24,Marseille,Lorient,3.1251,1.72403,Ligue1,2014
+2015-04-25,Paris Saint Germain,Lille,2.94967,0.30206,Ligue1,2014
+2015-04-25,Rennes,Nice,0.606512,1.21371,Ligue1,2014
+2015-04-25,Bordeaux,Metz,1.258,1.09106,Ligue1,2014
+2015-04-25,Caen,Guingamp,0.694684,0.737686,Ligue1,2014
+2015-04-25,Evian Thonon Gaillard,SC Bastia,1.49347,1.35755,Ligue1,2014
+2015-04-25,Toulouse,Nantes,0.830878,0.531381,Ligue1,2014
+2015-04-26,Saint-Etienne,Montpellier,0.664788,1.05147,Ligue1,2014
+2015-04-26,Lens,Monaco,0.484653,2.34357,Ligue1,2014
+2015-04-26,Reims,Lyon,1.20949,3.1736,Ligue1,2014
+2015-04-28,Paris Saint Germain,Metz,1.0084,0.447795,Ligue1,2014
+2015-05-01,Metz,Marseille,0.716553,1.33877,Ligue1,2014
+2015-05-02,Lyon,Evian Thonon Gaillard,2.65856,0.657208,Ligue1,2014
+2015-05-02,Lorient,Bordeaux,0.32339,0.98639,Ligue1,2014
+2015-05-02,Guingamp,Reims,1.49746,0.306909,Ligue1,2014
+2015-05-02,Montpellier,Rennes,0.458981,0.157906,Ligue1,2014
+2015-05-02,SC Bastia,Saint-Etienne,1.46257,0.301232,Ligue1,2014
+2015-05-02,Nice,Caen,1.93969,1.07766,Ligue1,2014
+2015-05-03,Lille,Lens,2.55504,0.378157,Ligue1,2014
+2015-05-03,Monaco,Toulouse,1.7647,0.400624,Ligue1,2014
+2015-05-03,Nantes,Paris Saint Germain,0.51294,2.21276,Ligue1,2014
+2015-05-08,Paris Saint Germain,Guingamp,4.38112,0.23496,Ligue1,2014
+2015-05-09,Caen,Lyon,2.53929,1.22641,Ligue1,2014
+2015-05-09,Evian Thonon Gaillard,Reims,1.13016,2.18633,Ligue1,2014
+2015-05-09,Rennes,SC Bastia,3.09687,0.265662,Ligue1,2014
+2015-05-09,Toulouse,Lille,1.73819,1.42546,Ligue1,2014
+2015-05-09,Bordeaux,Nantes,1.75746,0.970478,Ligue1,2014
+2015-05-09,Metz,Lorient,0.834694,2.94476,Ligue1,2014
+2015-05-10,Lens,Montpellier,0.264804,1.72574,Ligue1,2014
+2015-05-10,Saint-Etienne,Nice,2.78089,0.866729,Ligue1,2014
+2015-05-10,Marseille,Monaco,1.24252,1.32282,Ligue1,2014
+2015-05-16,Nice,Lens,2.68396,0.971766,Ligue1,2014
+2015-05-16,SC Bastia,Caen,0.406616,0.53817,Ligue1,2014
+2015-05-16,Evian Thonon Gaillard,Saint-Etienne,1.24292,1.84086,Ligue1,2014
+2015-05-16,Guingamp,Toulouse,1.18547,2.3098,Ligue1,2014
+2015-05-16,Lille,Marseille,1.08859,3.43302,Ligue1,2014
+2015-05-16,Lyon,Bordeaux,0.859619,0.968181,Ligue1,2014
+2015-05-16,Monaco,Metz,3.51571,0.619008,Ligue1,2014
+2015-05-16,Montpellier,Paris Saint Germain,0.344417,2.33917,Ligue1,2014
+2015-05-16,Nantes,Lorient,1.55602,0.364488,Ligue1,2014
+2015-05-16,Reims,Rennes,1.98359,0.224434,Ligue1,2014
+2015-05-23,Bordeaux,Montpellier,2.67021,0.815618,Ligue1,2014
+2015-05-23,Caen,Evian Thonon Gaillard,2.02955,1.84486,Ligue1,2014
+2015-05-23,Lens,Nantes,0.955303,1.00195,Ligue1,2014
+2015-05-23,Paris Saint Germain,Reims,2.06974,1.54416,Ligue1,2014
+2015-05-23,Metz,Lille,2.32939,2.45554,Ligue1,2014
+2015-05-23,Marseille,SC Bastia,1.07865,0.216127,Ligue1,2014
+2015-05-23,Lorient,Monaco,0.313189,1.8645,Ligue1,2014
+2015-05-23,Saint-Etienne,Guingamp,1.10029,1.35229,Ligue1,2014
+2015-05-23,Toulouse,Nice,1.4838,1.78298,Ligue1,2014
+2015-05-23,Rennes,Lyon,0.81154,0.861711,Ligue1,2014

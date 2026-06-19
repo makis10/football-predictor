@@ -1,0 +1,558 @@
+date,home_team,away_team,home_xg,away_xg,league,season
+2024-08-09,Preston,Sheffield Utd,0.64,1.02,Championship,2024
+2024-08-09,Blackburn,Derby,2.05,1.08,Championship,2024
+2024-08-10,Cardiff,Sunderland,1.02,1.8,Championship,2024
+2024-08-10,Millwall,Watford,2.0,1.12,Championship,2024
+2024-08-10,Leeds,Portsmouth,3.39,0.94,Championship,2024
+2024-08-10,Hull City,Bristol City,1.67,1.25,Championship,2024
+2024-08-10,Middlesbrough,Swansea,2.86,0.47,Championship,2024
+2024-08-10,QPR,West Brom,0.85,1.49,Championship,2024
+2024-08-10,Stoke City,Coventry,0.95,0.74,Championship,2024
+2024-08-10,Oxford United,Norwich,0.91,0.83,Championship,2024
+2024-08-11,Sheffield Wednesday,Plymouth,4.68,0.23,Championship,2024
+2024-08-12,Luton,Burnley,1.43,1.46,Championship,2024
+2024-08-16,Coventry,Oxford United,2.95,0.96,Championship,2024
+2024-08-17,West Brom,Leeds,0.7,0.7,Championship,2024
+2024-08-17,Derby,Middlesbrough,1.05,1.55,Championship,2024
+2024-08-17,Portsmouth,Luton,0.93,0.95,Championship,2024
+2024-08-17,Watford,Stoke City,2.27,0.85,Championship,2024
+2024-08-17,Burnley,Cardiff,0.81,0.62,Championship,2024
+2024-08-17,Bristol City,Millwall,2.74,2.22,Championship,2024
+2024-08-17,Sheffield Utd,QPR,1.71,0.69,Championship,2024
+2024-08-17,Norwich,Blackburn,2.06,0.89,Championship,2024
+2024-08-17,Swansea,Preston,2.42,0.76,Championship,2024
+2024-08-17,Plymouth,Hull City,0.69,0.8,Championship,2024
+2024-08-18,Sunderland,Sheffield Wednesday,1.67,0.38,Championship,2024
+2024-08-23,Sheffield Wednesday,Leeds,0.39,1.21,Championship,2024
+2024-08-24,Bristol City,Coventry,0.66,0.64,Championship,2024
+2024-08-24,Hull City,Millwall,0.82,0.8,Championship,2024
+2024-08-24,QPR,Plymouth,2.17,0.14,Championship,2024
+2024-08-24,Watford,Derby,1.13,0.74,Championship,2024
+2024-08-24,Preston,Luton,0.26,1.64,Championship,2024
+2024-08-24,Blackburn,Oxford United,0.82,0.89,Championship,2024
+2024-08-24,Middlesbrough,Portsmouth,2.9,1.05,Championship,2024
+2024-08-24,Norwich,Sheffield Utd,0.95,0.8,Championship,2024
+2024-08-24,Stoke City,West Brom,1.79,1.53,Championship,2024
+2024-08-24,Sunderland,Burnley,0.73,0.13,Championship,2024
+2024-08-25,Swansea,Cardiff,1.4,0.68,Championship,2024
+2024-08-30,Luton,QPR,1.42,0.85,Championship,2024
+2024-08-31,Cardiff,Middlesbrough,0.55,0.81,Championship,2024
+2024-08-31,Burnley,Blackburn,0.85,0.31,Championship,2024
+2024-08-31,Coventry,Norwich,0.98,0.35,Championship,2024
+2024-08-31,Millwall,Sheffield Wednesday,2.78,0.16,Championship,2024
+2024-08-31,West Brom,Swansea,2.4,0.46,Championship,2024
+2024-08-31,Leeds,Hull City,1.46,0.49,Championship,2024
+2024-08-31,Derby,Bristol City,1.67,1.07,Championship,2024
+2024-08-31,Oxford United,Preston,1.82,1.05,Championship,2024
+2024-08-31,Portsmouth,Sunderland,0.37,1.99,Championship,2024
+2024-08-31,Plymouth,Stoke City,0.77,1.6,Championship,2024
+2024-09-01,Sheffield Utd,Watford,2.24,0.78,Championship,2024
+2024-09-13,Hull City,Sheffield Utd,1.03,0.61,Championship,2024
+2024-09-14,Millwall,Luton,0.97,0.58,Championship,2024
+2024-09-14,Leeds,Burnley,1.24,0.66,Championship,2024
+2024-09-14,Oxford United,Stoke City,1.27,0.53,Championship,2024
+2024-09-14,Watford,Coventry,1.76,2.26,Championship,2024
+2024-09-14,Blackburn,Bristol City,0.98,0.74,Championship,2024
+2024-09-14,Derby,Cardiff,1.41,0.34,Championship,2024
+2024-09-14,Middlesbrough,Preston,1.64,0.44,Championship,2024
+2024-09-14,Sheffield Wednesday,QPR,0.82,1.29,Championship,2024
+2024-09-14,Swansea,Norwich,0.71,1.13,Championship,2024
+2024-09-14,Plymouth,Sunderland,1.73,1.64,Championship,2024
+2024-09-15,Portsmouth,West Brom,0.7,2.27,Championship,2024
+2024-09-20,Stoke City,Hull City,0.9,1.43,Championship,2024
+2024-09-21,Norwich,Watford,2.72,1.67,Championship,2024
+2024-09-21,QPR,Millwall,0.85,1.87,Championship,2024
+2024-09-21,Sunderland,Middlesbrough,1.17,1.28,Championship,2024
+2024-09-21,Cardiff,Leeds,0.12,2.74,Championship,2024
+2024-09-21,Burnley,Portsmouth,1.04,1.38,Championship,2024
+2024-09-21,Bristol City,Oxford United,2.32,1.74,Championship,2024
+2024-09-21,West Brom,Plymouth,2.33,0.78,Championship,2024
+2024-09-21,Sheffield Utd,Derby,1.1,0.05,Championship,2024
+2024-09-21,Coventry,Swansea,1.65,0.73,Championship,2024
+2024-09-21,Luton,Sheffield Wednesday,2.12,0.87,Championship,2024
+2024-09-22,Preston,Blackburn,0.36,0.8,Championship,2024
+2024-09-27,Plymouth,Luton,1.36,1.07,Championship,2024
+2024-09-28,Blackburn,QPR,2.19,0.55,Championship,2024
+2024-09-28,Derby,Norwich,1.42,1.96,Championship,2024
+2024-09-28,Sheffield Wednesday,West Brom,1.19,1.02,Championship,2024
+2024-09-28,Watford,Sunderland,1.89,1.01,Championship,2024
+2024-09-28,Millwall,Preston,2.58,0.94,Championship,2024
+2024-09-28,Leeds,Coventry,1.5,0.28,Championship,2024
+2024-09-28,Hull City,Cardiff,2.26,1.87,Championship,2024
+2024-09-28,Middlesbrough,Stoke City,2.45,0.76,Championship,2024
+2024-09-28,Oxford United,Burnley,0.08,1.83,Championship,2024
+2024-09-28,Portsmouth,Sheffield Utd,0.5,0.55,Championship,2024
+2024-09-29,Swansea,Bristol City,1.03,1.83,Championship,2024
+2024-10-01,Cardiff,Millwall,0.81,1.27,Championship,2024
+2024-10-01,Burnley,Plymouth,1.38,0.56,Championship,2024
+2024-10-01,Norwich,Leeds,1.38,1.1,Championship,2024
+2024-10-01,QPR,Hull City,2.56,1.87,Championship,2024
+2024-10-01,Sunderland,Derby,1.0,0.95,Championship,2024
+2024-10-01,Coventry,Blackburn,1.03,0.45,Championship,2024
+2024-10-01,Luton,Oxford United,1.24,1.73,Championship,2024
+2024-10-01,West Brom,Middlesbrough,1.37,1.32,Championship,2024
+2024-10-02,Preston,Watford,3.04,0.93,Championship,2024
+2024-10-02,Sheffield Utd,Swansea,1.23,0.94,Championship,2024
+2024-10-02,Stoke City,Portsmouth,2.52,1.29,Championship,2024
+2024-10-02,Bristol City,Sheffield Wednesday,0.88,0.37,Championship,2024
+2024-10-04,Sunderland,Leeds,1.77,2.18,Championship,2024
+2024-10-05,Burnley,Preston,0.48,0.81,Championship,2024
+2024-10-05,Norwich,Hull City,3.83,0.99,Championship,2024
+2024-10-05,Portsmouth,Oxford United,1.76,1.37,Championship,2024
+2024-10-05,Watford,Middlesbrough,1.1,1.86,Championship,2024
+2024-10-05,West Brom,Millwall,0.73,0.55,Championship,2024
+2024-10-05,Sheffield Utd,Luton,1.45,0.36,Championship,2024
+2024-10-05,Derby,QPR,1.01,0.52,Championship,2024
+2024-10-05,Swansea,Stoke City,2.04,0.87,Championship,2024
+2024-10-05,Coventry,Sheffield Wednesday,0.77,1.55,Championship,2024
+2024-10-05,Plymouth,Blackburn,1.52,0.69,Championship,2024
+2024-10-06,Bristol City,Cardiff,0.99,1.77,Championship,2024
+2024-10-18,Leeds,Sheffield Utd,1.39,0.2,Championship,2024
+2024-10-19,Cardiff,Plymouth,2.49,0.47,Championship,2024
+2024-10-19,Preston,Coventry,2.02,0.94,Championship,2024
+2024-10-19,Oxford United,West Brom,0.87,0.73,Championship,2024
+2024-10-19,Luton,Watford,1.3,0.45,Championship,2024
+2024-10-19,Millwall,Derby,1.94,0.68,Championship,2024
+2024-10-19,Blackburn,Swansea,0.54,1.14,Championship,2024
+2024-10-19,Middlesbrough,Bristol City,1.6,0.68,Championship,2024
+2024-10-19,QPR,Portsmouth,0.86,1.43,Championship,2024
+2024-10-19,Sheffield Wednesday,Burnley,1.5,1.71,Championship,2024
+2024-10-19,Stoke City,Norwich,1.25,1.52,Championship,2024
+2024-10-20,Hull City,Sunderland,0.49,1.05,Championship,2024
+2024-10-22,Cardiff,Portsmouth,2.31,0.68,Championship,2024
+2024-10-22,Preston,Norwich,1.62,0.59,Championship,2024
+2024-10-22,Leeds,Watford,1.36,0.69,Championship,2024
+2024-10-22,Sheffield Wednesday,Swansea,0.58,0.83,Championship,2024
+2024-10-22,Stoke City,Bristol City,0.77,2.51,Championship,2024
+2024-10-22,Oxford United,Derby,0.46,1.15,Championship,2024
+2024-10-22,QPR,Coventry,0.72,0.76,Championship,2024
+2024-10-23,Millwall,Plymouth,1.19,0.63,Championship,2024
+2024-10-23,Hull City,Burnley,0.89,0.65,Championship,2024
+2024-10-23,Blackburn,West Brom,0.89,0.44,Championship,2024
+2024-10-23,Luton,Sunderland,1.8,0.7,Championship,2024
+2024-10-23,Middlesbrough,Sheffield Utd,1.42,0.41,Championship,2024
+2024-10-25,Portsmouth,Sheffield Wednesday,0.72,0.86,Championship,2024
+2024-10-26,Watford,Blackburn,2.03,1.44,Championship,2024
+2024-10-26,Bristol City,Leeds,0.16,1.38,Championship,2024
+2024-10-26,Coventry,Luton,3.34,1.71,Championship,2024
+2024-10-26,Burnley,QPR,1.2,0.08,Championship,2024
+2024-10-26,West Brom,Cardiff,1.66,0.57,Championship,2024
+2024-10-26,Sheffield Utd,Stoke City,1.36,0.42,Championship,2024
+2024-10-26,Derby,Hull City,0.63,1.08,Championship,2024
+2024-10-26,Swansea,Millwall,1.93,0.37,Championship,2024
+2024-10-26,Sunderland,Oxford United,1.22,0.15,Championship,2024
+2024-10-26,Plymouth,Preston,1.17,2.08,Championship,2024
+2024-10-27,Norwich,Middlesbrough,1.1,3.86,Championship,2024
+2024-11-01,Luton,West Brom,0.95,0.72,Championship,2024
+2024-11-02,Blackburn,Sheffield Utd,0.61,2.19,Championship,2024
+2024-11-02,Stoke City,Derby,2.25,0.64,Championship,2024
+2024-11-02,Oxford United,Swansea,1.41,2.57,Championship,2024
+2024-11-02,Cardiff,Norwich,0.64,1.73,Championship,2024
+2024-11-02,Preston,Bristol City,0.6,1.02,Championship,2024
+2024-11-02,Leeds,Plymouth,1.86,0.0,Championship,2024
+2024-11-02,Hull City,Portsmouth,1.4,1.01,Championship,2024
+2024-11-02,Middlesbrough,Coventry,0.92,2.46,Championship,2024
+2024-11-02,QPR,Sunderland,1.4,0.83,Championship,2024
+2024-11-02,Sheffield Wednesday,Watford,1.51,4.1,Championship,2024
+2024-11-03,Millwall,Burnley,0.99,0.2,Championship,2024
+2024-11-05,Bristol City,Sheffield Utd,1.52,0.96,Championship,2024
+2024-11-05,QPR,Middlesbrough,0.45,1.93,Championship,2024
+2024-11-05,Sheffield Wednesday,Norwich,1.83,0.31,Championship,2024
+2024-11-05,Oxford United,Hull City,0.8,1.02,Championship,2024
+2024-11-05,Swansea,Watford,2.0,0.35,Championship,2024
+2024-11-05,Plymouth,Portsmouth,0.79,0.8,Championship,2024
+2024-11-06,Millwall,Leeds,0.36,0.87,Championship,2024
+2024-11-06,Blackburn,Stoke City,2.56,2.04,Championship,2024
+2024-11-06,Coventry,Derby,0.87,0.4,Championship,2024
+2024-11-06,Preston,Sunderland,1.5,0.72,Championship,2024
+2024-11-06,Luton,Cardiff,0.99,0.59,Championship,2024
+2024-11-07,West Brom,Burnley,0.72,0.86,Championship,2024
+2024-11-08,Watford,Oxford United,1.51,1.46,Championship,2024
+2024-11-09,Cardiff,Blackburn,1.6,2.27,Championship,2024
+2024-11-09,Middlesbrough,Luton,1.32,0.32,Championship,2024
+2024-11-09,Stoke City,Millwall,0.74,1.93,Championship,2024
+2024-11-09,Leeds,QPR,2.16,0.34,Championship,2024
+2024-11-09,Derby,Plymouth,1.09,0.14,Championship,2024
+2024-11-09,Norwich,Bristol City,0.28,0.88,Championship,2024
+2024-11-09,Sunderland,Coventry,0.66,0.66,Championship,2024
+2024-11-09,Portsmouth,Preston,2.21,0.51,Championship,2024
+2024-11-10,Sheffield Utd,Sheffield Wednesday,0.5,0.39,Championship,2024
+2024-11-10,Hull City,West Brom,1.16,1.17,Championship,2024
+2024-11-10,Burnley,Swansea,1.85,0.64,Championship,2024
+2024-11-22,Plymouth,Watford,0.42,2.25,Championship,2024
+2024-11-23,Bristol City,Burnley,0.73,1.47,Championship,2024
+2024-11-23,Sheffield Wednesday,Cardiff,2.77,1.25,Championship,2024
+2024-11-23,Coventry,Sheffield Utd,2.32,1.32,Championship,2024
+2024-11-23,Millwall,Sunderland,1.43,0.97,Championship,2024
+2024-11-23,Preston,Derby,0.35,0.56,Championship,2024
+2024-11-23,West Brom,Norwich,1.78,1.86,Championship,2024
+2024-11-23,QPR,Stoke City,2.27,1.19,Championship,2024
+2024-11-23,Oxford United,Middlesbrough,0.58,2.89,Championship,2024
+2024-11-23,Luton,Hull City,0.83,1.55,Championship,2024
+2024-11-24,Swansea,Leeds,1.57,2.63,Championship,2024
+2024-11-26,Watford,Bristol City,0.3,0.52,Championship,2024
+2024-11-26,Burnley,Coventry,0.97,0.11,Championship,2024
+2024-11-26,Sheffield Utd,Oxford United,3.56,0.26,Championship,2024
+2024-11-26,Hull City,Sheffield Wednesday,1.0,2.16,Championship,2024
+2024-11-26,Norwich,Plymouth,3.15,0.62,Championship,2024
+2024-11-26,Stoke City,Preston,0.71,0.69,Championship,2024
+2024-11-26,Sunderland,West Brom,0.91,0.46,Championship,2024
+2024-11-27,Cardiff,QPR,1.11,0.91,Championship,2024
+2024-11-27,Leeds,Luton,2.5,0.8,Championship,2024
+2024-11-27,Middlesbrough,Blackburn,0.73,1.43,Championship,2024
+2024-11-27,Derby,Swansea,3.58,0.24,Championship,2024
+2024-11-29,Sheffield Utd,Sunderland,0.84,1.69,Championship,2024
+2024-11-30,Watford,QPR,0.79,1.25,Championship,2024
+2024-11-30,Middlesbrough,Hull City,1.84,1.21,Championship,2024
+2024-11-30,Oxford United,Millwall,0.9,0.88,Championship,2024
+2024-11-30,Blackburn,Leeds,2.17,1.28,Championship,2024
+2024-11-30,Bristol City,Plymouth,3.2,0.14,Championship,2024
+2024-11-30,Preston,West Brom,0.93,0.51,Championship,2024
+2024-11-30,Norwich,Luton,1.85,1.51,Championship,2024
+2024-11-30,Stoke City,Burnley,0.82,2.95,Championship,2024
+2024-11-30,Swansea,Portsmouth,2.69,0.92,Championship,2024
+2024-11-30,Coventry,Cardiff,2.56,0.69,Championship,2024
+2024-12-01,Derby,Sheffield Wednesday,1.83,0.94,Championship,2024
+2024-12-06,Burnley,Middlesbrough,0.67,0.88,Championship,2024
+2024-12-07,Leeds,Derby,1.24,0.08,Championship,2024
+2024-12-07,Sheffield Wednesday,Preston,1.46,3.34,Championship,2024
+2024-12-07,Sunderland,Stoke City,2.47,0.79,Championship,2024
+2024-12-07,Millwall,Coventry,0.48,1.77,Championship,2024
+2024-12-07,Hull City,Blackburn,0.96,0.3,Championship,2024
+2024-12-07,QPR,Norwich,0.84,0.36,Championship,2024
+2024-12-07,Portsmouth,Bristol City,2.44,1.22,Championship,2024
+2024-12-07,Luton,Swansea,0.87,2.16,Championship,2024
+2024-12-08,West Brom,Sheffield Utd,0.77,1.09,Championship,2024
+2024-12-10,Burnley,Derby,0.97,0.58,Championship,2024
+2024-12-10,Sheffield Wednesday,Blackburn,0.69,0.68,Championship,2024
+2024-12-10,Sunderland,Bristol City,1.68,0.48,Championship,2024
+2024-12-10,Portsmouth,Norwich,0.83,0.28,Championship,2024
+2024-12-10,Plymouth,Swansea,1.4,1.96,Championship,2024
+2024-12-10,Luton,Stoke City,2.13,1.25,Championship,2024
+2024-12-10,Leeds,Middlesbrough,1.64,0.36,Championship,2024
+2024-12-11,Cardiff,Preston,0.6,1.06,Championship,2024
+2024-12-11,Millwall,Sheffield Utd,0.98,1.46,Championship,2024
+2024-12-11,Hull City,Watford,1.51,1.11,Championship,2024
+2024-12-11,QPR,Oxford United,0.68,0.09,Championship,2024
+2024-12-11,West Brom,Coventry,0.47,2.19,Championship,2024
+2024-12-13,Derby,Portsmouth,1.14,0.6,Championship,2024
+2024-12-14,Bristol City,QPR,1.99,0.16,Championship,2024
+2024-12-14,Preston,Leeds,0.67,2.22,Championship,2024
+2024-12-14,Coventry,Hull City,3.18,0.94,Championship,2024
+2024-12-14,Sheffield Utd,Plymouth,1.29,1.08,Championship,2024
+2024-12-14,Blackburn,Luton,1.68,0.89,Championship,2024
+2024-12-14,Middlesbrough,Millwall,1.05,1.29,Championship,2024
+2024-12-14,Stoke City,Cardiff,1.79,1.89,Championship,2024
+2024-12-14,Swansea,Sunderland,0.9,0.96,Championship,2024
+2024-12-14,Oxford United,Sheffield Wednesday,1.42,1.87,Championship,2024
+2024-12-15,Watford,West Brom,1.4,1.39,Championship,2024
+2024-12-15,Norwich,Burnley,1.07,0.46,Championship,2024
+2024-12-20,Luton,Derby,0.94,0.46,Championship,2024
+2024-12-21,Hull City,Swansea,1.4,0.84,Championship,2024
+2024-12-21,Sheffield Wednesday,Stoke City,1.74,2.31,Championship,2024
+2024-12-21,Portsmouth,Coventry,2.06,1.71,Championship,2024
+2024-12-21,Cardiff,Sheffield Utd,0.24,0.78,Championship,2024
+2024-12-21,Burnley,Watford,1.21,0.46,Championship,2024
+2024-12-21,Millwall,Blackburn,1.06,0.36,Championship,2024
+2024-12-21,Leeds,Oxford United,2.92,0.88,Championship,2024
+2024-12-21,QPR,Preston,1.95,0.23,Championship,2024
+2024-12-21,Sunderland,Norwich,0.61,0.62,Championship,2024
+2024-12-21,Plymouth,Middlesbrough,3.56,1.91,Championship,2024
+2024-12-22,West Brom,Bristol City,1.86,0.52,Championship,2024
+2024-12-26,Watford,Portsmouth,1.54,0.22,Championship,2024
+2024-12-26,Bristol City,Luton,0.33,0.57,Championship,2024
+2024-12-26,Preston,Hull City,0.66,0.74,Championship,2024
+2024-12-26,Sheffield Utd,Burnley,0.73,0.73,Championship,2024
+2024-12-26,Blackburn,Sunderland,1.89,1.2,Championship,2024
+2024-12-26,Middlesbrough,Sheffield Wednesday,1.29,1.8,Championship,2024
+2024-12-26,Norwich,Millwall,1.94,0.45,Championship,2024
+2024-12-26,Swansea,QPR,1.57,0.43,Championship,2024
+2024-12-26,Oxford United,Cardiff,1.49,0.52,Championship,2024
+2024-12-26,Coventry,Plymouth,2.0,0.25,Championship,2024
+2024-12-26,Derby,West Brom,0.84,1.33,Championship,2024
+2024-12-26,Stoke City,Leeds,0.46,1.18,Championship,2024
+2024-12-29,Preston,Sheffield Wednesday,3.03,1.08,Championship,2024
+2024-12-29,Sheffield Utd,West Brom,1.42,0.96,Championship,2024
+2024-12-29,Norwich,QPR,2.01,0.21,Championship,2024
+2024-12-29,Watford,Cardiff,0.66,1.49,Championship,2024
+2024-12-29,Bristol City,Portsmouth,3.06,0.2,Championship,2024
+2024-12-29,Blackburn,Hull City,1.25,1.33,Championship,2024
+2024-12-29,Stoke City,Sunderland,0.9,2.08,Championship,2024
+2024-12-29,Swansea,Luton,2.49,0.69,Championship,2024
+2024-12-29,Oxford United,Plymouth,1.08,0.42,Championship,2024
+2024-12-29,Coventry,Millwall,0.41,0.6,Championship,2024
+2024-12-29,Derby,Leeds,0.18,2.67,Championship,2024
+2024-12-29,Middlesbrough,Burnley,0.41,0.66,Championship,2024
+2025-01-01,QPR,Watford,1.28,0.67,Championship,2024
+2025-01-01,Plymouth,Bristol City,1.64,1.68,Championship,2024
+2025-01-01,Millwall,Oxford United,0.86,0.65,Championship,2024
+2025-01-01,Cardiff,Coventry,0.69,2.29,Championship,2024
+2025-01-01,Burnley,Stoke City,1.46,1.26,Championship,2024
+2025-01-01,West Brom,Preston,1.14,0.9,Championship,2024
+2025-01-01,Leeds,Blackburn,1.25,0.41,Championship,2024
+2025-01-01,Sheffield Wednesday,Derby,2.13,2.56,Championship,2024
+2025-01-01,Portsmouth,Swansea,1.7,1.1,Championship,2024
+2025-01-01,Luton,Norwich,0.99,0.44,Championship,2024
+2025-01-01,Hull City,Middlesbrough,0.31,0.89,Championship,2024
+2025-01-01,Sunderland,Sheffield Utd,0.96,1.61,Championship,2024
+2025-01-04,Blackburn,Burnley,1.04,0.24,Championship,2024
+2025-01-04,Stoke City,Plymouth,0.9,0.08,Championship,2024
+2025-01-04,Swansea,West Brom,0.91,1.01,Championship,2024
+2025-01-04,Watford,Sheffield Utd,1.47,1.15,Championship,2024
+2025-01-04,Bristol City,Derby,1.36,0.37,Championship,2024
+2025-01-04,Preston,Oxford United,2.15,0.42,Championship,2024
+2025-01-04,Hull City,Leeds,2.35,2.15,Championship,2024
+2025-01-04,Middlesbrough,Cardiff,0.77,0.55,Championship,2024
+2025-01-04,Norwich,Coventry,2.04,1.14,Championship,2024
+2025-01-04,Sheffield Wednesday,Millwall,1.92,1.29,Championship,2024
+2025-01-05,Sunderland,Portsmouth,2.3,0.36,Championship,2024
+2025-01-06,QPR,Luton,2.18,2.21,Championship,2024
+2025-01-14,Cardiff,Watford,0.79,0.8,Championship,2024
+2025-01-14,Plymouth,Oxford United,0.52,0.42,Championship,2024
+2025-01-15,Blackburn,Portsmouth,1.45,1.1,Championship,2024
+2025-01-17,Burnley,Sunderland,0.69,2.85,Championship,2024
+2025-01-18,Cardiff,Swansea,0.85,0.36,Championship,2024
+2025-01-18,Millwall,Hull City,0.71,0.61,Championship,2024
+2025-01-18,Plymouth,QPR,0.18,2.9,Championship,2024
+2025-01-18,West Brom,Stoke City,1.74,1.15,Championship,2024
+2025-01-18,Sheffield Utd,Norwich,2.09,0.35,Championship,2024
+2025-01-18,Derby,Watford,1.25,1.82,Championship,2024
+2025-01-18,Oxford United,Blackburn,1.3,0.91,Championship,2024
+2025-01-18,Coventry,Bristol City,0.91,0.76,Championship,2024
+2025-01-18,Portsmouth,Middlesbrough,0.85,1.63,Championship,2024
+2025-01-18,Luton,Preston,0.48,0.01,Championship,2024
+2025-01-19,Leeds,Sheffield Wednesday,1.91,0.39,Championship,2024
+2025-01-21,Watford,Preston,0.38,2.44,Championship,2024
+2025-01-21,Hull City,QPR,1.15,1.34,Championship,2024
+2025-01-21,Blackburn,Coventry,0.95,2.73,Championship,2024
+2025-01-21,Derby,Sunderland,0.52,0.93,Championship,2024
+2025-01-21,Middlesbrough,West Brom,0.9,0.98,Championship,2024
+2025-01-21,Swansea,Sheffield Utd,1.51,1.77,Championship,2024
+2025-01-21,Oxford United,Luton,0.86,0.69,Championship,2024
+2025-01-21,Millwall,Cardiff,0.52,1.11,Championship,2024
+2025-01-22,Leeds,Norwich,1.22,0.12,Championship,2024
+2025-01-22,Sheffield Wednesday,Bristol City,0.97,0.92,Championship,2024
+2025-01-22,Portsmouth,Stoke City,2.02,0.67,Championship,2024
+2025-01-22,Plymouth,Burnley,0.38,2.69,Championship,2024
+2025-01-24,Sheffield Utd,Hull City,1.19,0.46,Championship,2024
+2025-01-25,Norwich,Swansea,3.02,1.33,Championship,2024
+2025-01-25,Stoke City,Oxford United,0.39,1.17,Championship,2024
+2025-01-25,Luton,Millwall,1.45,1.6,Championship,2024
+2025-01-25,Cardiff,Derby,2.78,1.23,Championship,2024
+2025-01-25,Bristol City,Blackburn,1.93,1.89,Championship,2024
+2025-01-25,Preston,Middlesbrough,0.41,1.33,Championship,2024
+2025-01-25,West Brom,Portsmouth,2.99,1.7,Championship,2024
+2025-01-25,QPR,Sheffield Wednesday,0.38,0.91,Championship,2024
+2025-01-25,Sunderland,Plymouth,0.58,0.96,Championship,2024
+2025-01-25,Coventry,Watford,1.44,0.6,Championship,2024
+2025-01-27,Burnley,Leeds,0.19,0.39,Championship,2024
+2025-01-28,Portsmouth,Millwall,1.18,1.4,Championship,2024
+2025-01-31,Blackburn,Preston,1.67,0.93,Championship,2024
+2025-02-01,Watford,Norwich,0.71,2.57,Championship,2024
+2025-02-01,Oxford United,Bristol City,1.01,0.58,Championship,2024
+2025-02-01,Plymouth,West Brom,1.68,1.97,Championship,2024
+2025-02-01,Millwall,QPR,0.61,0.79,Championship,2024
+2025-02-01,Leeds,Cardiff,5.73,0.05,Championship,2024
+2025-02-01,Hull City,Stoke City,1.73,1.14,Championship,2024
+2025-02-01,Derby,Sheffield Utd,0.86,0.91,Championship,2024
+2025-02-01,Sheffield Wednesday,Luton,2.78,0.43,Championship,2024
+2025-02-01,Swansea,Coventry,0.27,2.38,Championship,2024
+2025-02-01,Portsmouth,Burnley,1.25,0.78,Championship,2024
+2025-02-03,Middlesbrough,Sunderland,1.32,2.05,Championship,2024
+2025-02-04,Burnley,Oxford United,1.6,0.25,Championship,2024
+2025-02-04,QPR,Blackburn,1.28,1.6,Championship,2024
+2025-02-05,Coventry,Leeds,0.5,3.64,Championship,2024
+2025-02-08,West Brom,Sheffield Wednesday,1.59,1.38,Championship,2024
+2025-02-08,Sunderland,Watford,2.97,1.54,Championship,2024
+2025-02-08,Sheffield Utd,Portsmouth,1.12,3.06,Championship,2024
+2025-02-08,Norwich,Derby,0.69,1.1,Championship,2024
+2025-02-09,Bristol City,Swansea,1.04,1.75,Championship,2024
+2025-02-11,Watford,Leeds,0.59,2.15,Championship,2024
+2025-02-11,Derby,Oxford United,0.85,0.25,Championship,2024
+2025-02-11,Coventry,QPR,1.43,0.84,Championship,2024
+2025-02-11,Portsmouth,Cardiff,1.52,0.96,Championship,2024
+2025-02-11,Norwich,Preston,0.72,0.99,Championship,2024
+2025-02-12,Burnley,Hull City,1.46,0.35,Championship,2024
+2025-02-12,Bristol City,Stoke City,1.44,0.36,Championship,2024
+2025-02-12,Swansea,Sheffield Wednesday,0.18,0.9,Championship,2024
+2025-02-12,Sunderland,Luton,1.24,0.31,Championship,2024
+2025-02-12,Plymouth,Millwall,2.56,0.84,Championship,2024
+2025-02-12,West Brom,Blackburn,0.54,0.67,Championship,2024
+2025-02-12,Sheffield Utd,Middlesbrough,2.42,1.25,Championship,2024
+2025-02-14,QPR,Derby,0.88,0.56,Championship,2024
+2025-02-15,Cardiff,Bristol City,1.69,1.1,Championship,2024
+2025-02-15,Preston,Burnley,0.24,1.0,Championship,2024
+2025-02-15,Oxford United,Portsmouth,1.42,1.99,Championship,2024
+2025-02-15,Millwall,West Brom,0.72,0.45,Championship,2024
+2025-02-15,Hull City,Norwich,0.65,1.42,Championship,2024
+2025-02-15,Blackburn,Plymouth,2.21,0.92,Championship,2024
+2025-02-15,Middlesbrough,Watford,0.91,1.57,Championship,2024
+2025-02-15,Sheffield Wednesday,Coventry,1.56,1.51,Championship,2024
+2025-02-15,Stoke City,Swansea,0.9,0.87,Championship,2024
+2025-02-15,Luton,Sheffield Utd,1.63,2.14,Championship,2024
+2025-02-17,Leeds,Sunderland,1.95,0.5,Championship,2024
+2025-02-18,Preston,Millwall,1.42,0.33,Championship,2024
+2025-02-19,Luton,Plymouth,1.74,0.26,Championship,2024
+2025-02-21,Bristol City,Middlesbrough,2.33,1.35,Championship,2024
+2025-02-21,Burnley,Sheffield Wednesday,1.46,1.16,Championship,2024
+2025-02-22,Derby,Millwall,0.4,2.4,Championship,2024
+2025-02-22,Sunderland,Hull City,1.13,0.92,Championship,2024
+2025-02-22,Plymouth,Cardiff,0.98,1.43,Championship,2024
+2025-02-22,West Brom,Oxford United,2.72,0.27,Championship,2024
+2025-02-22,Norwich,Stoke City,2.87,1.65,Championship,2024
+2025-02-22,Swansea,Blackburn,2.11,0.23,Championship,2024
+2025-02-22,Coventry,Preston,1.78,0.97,Championship,2024
+2025-02-22,Portsmouth,QPR,1.73,0.69,Championship,2024
+2025-02-23,Watford,Luton,2.42,0.69,Championship,2024
+2025-02-24,Sheffield Utd,Leeds,1.22,1.28,Championship,2024
+2025-02-25,Cardiff,Hull City,0.47,0.22,Championship,2024
+2025-02-25,Stoke City,Middlesbrough,1.24,2.19,Championship,2024
+2025-02-28,Sheffield Wednesday,Sunderland,1.13,1.05,Championship,2024
+2025-03-01,Leeds,West Brom,1.29,0.77,Championship,2024
+2025-03-01,Blackburn,Norwich,1.06,0.56,Championship,2024
+2025-03-01,Oxford United,Coventry,1.09,2.64,Championship,2024
+2025-03-01,Middlesbrough,Derby,1.0,0.2,Championship,2024
+2025-03-01,QPR,Sheffield Utd,1.4,0.91,Championship,2024
+2025-03-01,Stoke City,Watford,0.61,0.51,Championship,2024
+2025-03-01,Luton,Portsmouth,0.74,0.46,Championship,2024
+2025-03-04,Cardiff,Burnley,1.26,1.43,Championship,2024
+2025-03-04,Millwall,Bristol City,0.83,1.83,Championship,2024
+2025-03-04,Preston,Swansea,1.54,0.47,Championship,2024
+2025-03-04,Hull City,Plymouth,2.52,0.23,Championship,2024
+2025-03-07,Norwich,Oxford United,1.51,0.4,Championship,2024
+2025-03-08,Watford,Millwall,1.53,0.7,Championship,2024
+2025-03-08,Coventry,Stoke City,0.91,2.16,Championship,2024
+2025-03-08,Burnley,Luton,2.74,0.24,Championship,2024
+2025-03-08,Bristol City,Hull City,2.41,1.02,Championship,2024
+2025-03-08,West Brom,QPR,0.86,1.07,Championship,2024
+2025-03-08,Sheffield Utd,Preston,1.44,0.3,Championship,2024
+2025-03-08,Derby,Blackburn,2.23,1.61,Championship,2024
+2025-03-08,Swansea,Middlesbrough,1.05,0.38,Championship,2024
+2025-03-08,Sunderland,Cardiff,2.45,0.5,Championship,2024
+2025-03-08,Plymouth,Sheffield Wednesday,0.26,1.59,Championship,2024
+2025-03-09,Portsmouth,Leeds,0.66,2.36,Championship,2024
+2025-03-11,Cardiff,Luton,0.77,0.99,Championship,2024
+2025-03-11,Burnley,West Brom,1.43,0.58,Championship,2024
+2025-03-11,Derby,Coventry,0.79,0.74,Championship,2024
+2025-03-11,Middlesbrough,QPR,1.16,1.04,Championship,2024
+2025-03-11,Norwich,Sheffield Wednesday,1.49,1.93,Championship,2024
+2025-03-11,Sunderland,Preston,2.11,0.79,Championship,2024
+2025-03-11,Sheffield Utd,Bristol City,1.37,1.44,Championship,2024
+2025-03-12,Watford,Swansea,0.58,0.67,Championship,2024
+2025-03-12,Leeds,Millwall,0.83,0.2,Championship,2024
+2025-03-12,Hull City,Oxford United,1.64,0.49,Championship,2024
+2025-03-12,Portsmouth,Plymouth,1.4,0.25,Championship,2024
+2025-03-12,Stoke City,Blackburn,1.41,0.54,Championship,2024
+2025-03-14,Bristol City,Norwich,1.03,2.66,Championship,2024
+2025-03-15,Millwall,Stoke City,1.16,0.7,Championship,2024
+2025-03-15,QPR,Leeds,0.78,1.37,Championship,2024
+2025-03-15,Preston,Portsmouth,2.51,0.58,Championship,2024
+2025-03-15,West Brom,Hull City,0.99,0.25,Championship,2024
+2025-03-15,Blackburn,Cardiff,0.48,0.74,Championship,2024
+2025-03-15,Swansea,Burnley,0.44,1.9,Championship,2024
+2025-03-15,Oxford United,Watford,0.49,1.33,Championship,2024
+2025-03-15,Coventry,Sunderland,2.86,0.44,Championship,2024
+2025-03-15,Plymouth,Derby,0.96,0.93,Championship,2024
+2025-03-15,Luton,Middlesbrough,2.46,0.24,Championship,2024
+2025-03-16,Sheffield Wednesday,Sheffield Utd,1.29,1.14,Championship,2024
+2025-03-28,Sheffield Utd,Coventry,1.64,1.18,Championship,2024
+2025-03-29,Watford,Plymouth,1.93,0.6,Championship,2024
+2025-03-29,Hull City,Luton,0.68,0.69,Championship,2024
+2025-03-29,Cardiff,Sheffield Wednesday,1.72,0.43,Championship,2024
+2025-03-29,Burnley,Bristol City,1.9,0.29,Championship,2024
+2025-03-29,Leeds,Swansea,1.78,1.99,Championship,2024
+2025-03-29,Middlesbrough,Oxford United,2.4,1.45,Championship,2024
+2025-03-29,Norwich,West Brom,0.97,1.22,Championship,2024
+2025-03-29,Stoke City,QPR,1.53,0.54,Championship,2024
+2025-03-29,Sunderland,Millwall,2.2,0.82,Championship,2024
+2025-03-29,Portsmouth,Blackburn,0.31,0.45,Championship,2024
+2025-04-02,Derby,Preston,0.66,0.3,Championship,2024
+2025-04-04,Blackburn,Middlesbrough,0.42,0.92,Championship,2024
+2025-04-05,West Brom,Sunderland,1.71,0.23,Championship,2024
+2025-04-05,Coventry,Burnley,1.5,1.63,Championship,2024
+2025-04-05,Luton,Leeds,0.9,1.57,Championship,2024
+2025-04-05,Bristol City,Watford,0.67,0.28,Championship,2024
+2025-04-05,Millwall,Portsmouth,1.3,0.63,Championship,2024
+2025-04-05,Preston,Stoke City,0.53,2.42,Championship,2024
+2025-04-05,QPR,Cardiff,0.54,0.59,Championship,2024
+2025-04-05,Sheffield Wednesday,Hull City,1.05,0.63,Championship,2024
+2025-04-05,Swansea,Derby,0.25,0.65,Championship,2024
+2025-04-05,Oxford United,Sheffield Utd,1.09,1.26,Championship,2024
+2025-04-05,Plymouth,Norwich,1.75,1.14,Championship,2024
+2025-04-08,Watford,Hull City,0.63,0.63,Championship,2024
+2025-04-08,Bristol City,West Brom,0.65,1.89,Championship,2024
+2025-04-08,Preston,Cardiff,1.85,0.9,Championship,2024
+2025-04-08,Sheffield Utd,Millwall,1.76,0.52,Championship,2024
+2025-04-08,Blackburn,Sheffield Wednesday,1.6,0.93,Championship,2024
+2025-04-08,Derby,Burnley,0.92,0.78,Championship,2024
+2025-04-08,Norwich,Sunderland,0.82,0.71,Championship,2024
+2025-04-08,Stoke City,Luton,0.37,1.0,Championship,2024
+2025-04-08,Middlesbrough,Leeds,1.13,1.01,Championship,2024
+2025-04-09,Swansea,Plymouth,2.77,0.56,Championship,2024
+2025-04-09,Oxford United,QPR,0.6,1.38,Championship,2024
+2025-04-09,Coventry,Portsmouth,1.48,0.99,Championship,2024
+2025-04-11,Burnley,Norwich,0.94,1.39,Championship,2024
+2025-04-12,Leeds,Preston,3.53,0.33,Championship,2024
+2025-04-12,Plymouth,Sheffield Utd,0.83,0.63,Championship,2024
+2025-04-12,Cardiff,Stoke City,1.52,1.04,Championship,2024
+2025-04-12,Millwall,Middlesbrough,1.63,0.69,Championship,2024
+2025-04-12,West Brom,Watford,1.12,0.94,Championship,2024
+2025-04-12,QPR,Bristol City,1.81,0.93,Championship,2024
+2025-04-12,Sheffield Wednesday,Oxford United,0.98,1.11,Championship,2024
+2025-04-12,Sunderland,Swansea,0.67,0.9,Championship,2024
+2025-04-12,Portsmouth,Derby,1.82,1.43,Championship,2024
+2025-04-12,Luton,Blackburn,0.74,0.4,Championship,2024
+2025-04-14,Hull City,Coventry,0.94,1.12,Championship,2024
+2025-04-18,Derby,Luton,1.75,0.52,Championship,2024
+2025-04-18,Watford,Burnley,1.05,1.96,Championship,2024
+2025-04-18,Bristol City,Sunderland,2.0,0.37,Championship,2024
+2025-04-18,Preston,QPR,0.77,1.4,Championship,2024
+2025-04-18,Blackburn,Millwall,1.78,1.37,Championship,2024
+2025-04-18,Middlesbrough,Plymouth,2.98,2.09,Championship,2024
+2025-04-18,Norwich,Portsmouth,1.17,2.71,Championship,2024
+2025-04-18,Stoke City,Sheffield Wednesday,1.05,1.05,Championship,2024
+2025-04-18,Swansea,Hull City,1.39,0.56,Championship,2024
+2025-04-18,Coventry,West Brom,1.16,0.87,Championship,2024
+2025-04-18,Sheffield Utd,Cardiff,1.5,0.83,Championship,2024
+2025-04-18,Oxford United,Leeds,0.44,1.83,Championship,2024
+2025-04-21,Cardiff,Oxford United,0.99,0.07,Championship,2024
+2025-04-21,Millwall,Norwich,1.8,0.35,Championship,2024
+2025-04-21,West Brom,Derby,0.9,0.88,Championship,2024
+2025-04-21,Leeds,Stoke City,3.43,0.59,Championship,2024
+2025-04-21,Hull City,Preston,2.32,1.04,Championship,2024
+2025-04-21,QPR,Swansea,0.3,2.11,Championship,2024
+2025-04-21,Sheffield Wednesday,Middlesbrough,3.56,2.12,Championship,2024
+2025-04-21,Sunderland,Blackburn,0.81,0.29,Championship,2024
+2025-04-21,Portsmouth,Watford,3.19,0.65,Championship,2024
+2025-04-21,Plymouth,Coventry,2.48,1.91,Championship,2024
+2025-04-21,Luton,Bristol City,1.37,0.7,Championship,2024
+2025-04-21,Burnley,Sheffield Utd,2.04,0.8,Championship,2024
+2025-04-25,Stoke City,Sheffield Utd,0.73,2.08,Championship,2024
+2025-04-26,QPR,Burnley,0.47,2.47,Championship,2024
+2025-04-26,Luton,Coventry,2.31,0.14,Championship,2024
+2025-04-26,Cardiff,West Brom,1.42,1.47,Championship,2024
+2025-04-26,Millwall,Swansea,1.6,0.97,Championship,2024
+2025-04-26,Preston,Plymouth,2.42,0.8,Championship,2024
+2025-04-26,Hull City,Derby,0.4,0.29,Championship,2024
+2025-04-26,Blackburn,Watford,1.02,0.35,Championship,2024
+2025-04-26,Middlesbrough,Norwich,0.67,0.64,Championship,2024
+2025-04-26,Sheffield Wednesday,Portsmouth,1.54,0.46,Championship,2024
+2025-04-26,Oxford United,Sunderland,1.61,0.59,Championship,2024
+2025-04-28,Leeds,Bristol City,3.39,0.07,Championship,2024
+2025-05-03,Watford,Sheffield Wednesday,1.56,1.52,Championship,2024
+2025-05-03,Burnley,Millwall,2.26,1.51,Championship,2024
+2025-05-03,Bristol City,Preston,1.89,1.46,Championship,2024
+2025-05-03,West Brom,Luton,2.18,0.54,Championship,2024
+2025-05-03,Sheffield Utd,Blackburn,2.51,0.6,Championship,2024
+2025-05-03,Derby,Stoke City,1.49,0.25,Championship,2024
+2025-05-03,Norwich,Cardiff,2.97,1.77,Championship,2024
+2025-05-03,Swansea,Oxford United,1.17,1.92,Championship,2024
+2025-05-03,Sunderland,QPR,0.57,0.36,Championship,2024
+2025-05-03,Coventry,Middlesbrough,1.98,1.47,Championship,2024
+2025-05-03,Portsmouth,Hull City,0.78,2.28,Championship,2024
+2025-05-03,Plymouth,Leeds,0.49,3.08,Championship,2024
+2025-05-08,Bristol City,Sheffield Utd,0.23,2.77,Championship,2024
+2025-05-09,Coventry,Sunderland,1.52,1.46,Championship,2024
+2025-05-12,Sheffield Utd,Bristol City,1.33,0.47,Championship,2024
+2025-05-13,Sunderland,Coventry,1.06,1.63,Championship,2024
+2025-05-24,Sheffield Utd,Sunderland,1.46,0.71,Championship,2024

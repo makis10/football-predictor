@@ -1,0 +1,46 @@
+date,home_team,away_team,home_xg,away_xg,league,season
+2023-02-16,SC Braga,Fiorentina,0.3,1.54,ECL,2022
+2023-02-16,Bodo/Glimt,Lech Poznan,0.64,0.78,ECL,2022
+2023-02-16,Qarabag,Gent,1.85,0.71,ECL,2022
+2023-02-16,Trabzonspor,FC Basel 1893,2.26,0.65,ECL,2022
+2023-02-16,Lazio,CFR 1907 Cluj,0.99,0.77,ECL,2022
+2023-02-16,Ludogorets,Anderlecht,0.49,1.44,ECL,2022
+2023-02-16,Sheriff Tiraspol,FK Partizan,1.38,0.42,ECL,2022
+2023-02-16,AEK Larnaca,Dnipro-1,1.54,0.31,ECL,2022
+2023-02-23,Anderlecht,Ludogorets,1.97,1.29,ECL,2022
+2023-02-23,FK Partizan,Sheriff Tiraspol,0.91,0.96,ECL,2022
+2023-02-23,CFR 1907 Cluj,Lazio,1.2,1.85,ECL,2022
+2023-02-23,Dnipro-1,AEK Larnaca,0.66,0.28,ECL,2022
+2023-02-23,Lech Poznan,Bodo/Glimt,0.54,1.28,ECL,2022
+2023-02-23,Fiorentina,SC Braga,1.81,0.81,ECL,2022
+2023-02-23,FC Basel 1893,Trabzonspor,0.91,2.18,ECL,2022
+2023-02-23,Gent,Qarabag,0.68,0.49,ECL,2022
+2023-03-07,Lazio,AZ Alkmaar,1.32,0.69,ECL,2022
+2023-03-09,Anderlecht,Villarreal,0.52,0.66,ECL,2022
+2023-03-09,Sheriff Tiraspol,Nice,1.03,0.22,ECL,2022
+2023-03-09,AEK Larnaca,West Ham,0.78,1.01,ECL,2022
+2023-03-09,Lech Poznan,Djurgardens IF,0.85,0.71,ECL,2022
+2023-03-09,Fiorentina,Sivasspor,2.22,0.72,ECL,2022
+2023-03-09,FC Basel 1893,Slovan Bratislava,2.28,1.33,ECL,2022
+2023-03-09,Gent,Başakşehir,2.49,0.37,ECL,2022
+2023-03-15,Başakşehir,Gent,0.69,1.79,ECL,2022
+2023-03-16,Djurgardens IF,Lech Poznan,0.79,2.5,ECL,2022
+2023-03-16,Slovan Bratislava,FC Basel 1893,1.88,1.12,ECL,2022
+2023-03-16,Sivasspor,Fiorentina,0.2,1.64,ECL,2022
+2023-03-16,West Ham,AEK Larnaca,1.77,0.27,ECL,2022
+2023-03-16,Nice,Sheriff Tiraspol,1.73,0.38,ECL,2022
+2023-03-16,AZ Alkmaar,Lazio,1.34,0.21,ECL,2022
+2023-03-16,Villarreal,Anderlecht,2.92,2.08,ECL,2022
+2023-04-13,Gent,West Ham,1.32,1.19,ECL,2022
+2023-04-13,Lech Poznan,Fiorentina,0.54,2.21,ECL,2022
+2023-04-13,FC Basel 1893,Nice,1.47,1.15,ECL,2022
+2023-04-13,Anderlecht,AZ Alkmaar,0.75,0.7,ECL,2022
+2023-04-20,AZ Alkmaar,Anderlecht,3.6,0.66,ECL,2022
+2023-04-20,Fiorentina,Lech Poznan,1.65,2.2,ECL,2022
+2023-04-20,West Ham,Gent,2.82,0.99,ECL,2022
+2023-04-20,Nice,FC Basel 1893,1.18,0.54,ECL,2022
+2023-05-11,West Ham,AZ Alkmaar,2.89,0.28,ECL,2022
+2023-05-11,Fiorentina,FC Basel 1893,1.42,1.21,ECL,2022
+2023-05-18,AZ Alkmaar,West Ham,0.48,0.77,ECL,2022
+2023-05-18,FC Basel 1893,Fiorentina,0.55,4.3,ECL,2022
+2023-06-07,Fiorentina,West Ham,1.3,1.39,ECL,2022

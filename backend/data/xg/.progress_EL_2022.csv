@@ -1,0 +1,46 @@
+fixture_id,date,home_team,away_team,home_xg,away_xg,league,season
+971765,2023-02-16,Ajax,Union Berlin,0.46,0.84,EL,2022
+971761,2023-02-16,Barcelona,Manchester United,1.05,2.18,EL,2022
+971763,2023-02-16,Shakhtar Donetsk,Rennes,1.95,1.72,EL,2022
+971767,2023-02-16,Red Bull Salzburg,AS Roma,0.83,1.76,EL,2022
+971773,2023-02-16,Bayer Leverkusen,Monaco,1.84,0.73,EL,2022
+971771,2023-02-16,Sporting CP,FC Midtjylland,2.65,0.22,EL,2022
+971769,2023-02-16,Juventus,Nantes,1.37,0.5,EL,2022
+971775,2023-02-16,Sevilla,PSV Eindhoven,0.83,0.92,EL,2022
+971770,2023-02-23,Nantes,Juventus,0.58,3.4,EL,2022
+971774,2023-02-23,Monaco,Bayer Leverkusen,1.93,2.3,EL,2022
+971776,2023-02-23,PSV Eindhoven,Sevilla,1.66,0.66,EL,2022
+971772,2023-02-23,FC Midtjylland,Sporting CP,0.42,1.92,EL,2022
+971762,2023-02-23,Manchester United,Barcelona,1.14,1.19,EL,2022
+971764,2023-02-23,Rennes,Shakhtar Donetsk,2.46,0.46,EL,2022
+971766,2023-02-23,Union Berlin,Ajax,1.75,1.88,EL,2022
+971768,2023-02-23,AS Roma,Red Bull Salzburg,1.77,1.25,EL,2022
+1010824,2023-03-09,Bayer Leverkusen,Ferencvarosi TC,0.73,0.59,EL,2022
+1010822,2023-03-09,Union Berlin,Union St. Gilloise,2.76,1.32,EL,2022
+1010826,2023-03-09,Sporting CP,Arsenal,2.21,1.99,EL,2022
+1010828,2023-03-09,AS Roma,Real Sociedad,1.97,0.81,EL,2022
+1010834,2023-03-09,Manchester United,Real Betis,3.19,0.51,EL,2022
+1010830,2023-03-09,Juventus,SC Freiburg,2.02,0.04,EL,2022
+1010832,2023-03-09,Sevilla,Fenerbahçe,0.66,1.13,EL,2022
+1010836,2023-03-09,Shakhtar Donetsk,Feyenoord,0.25,2.03,EL,2022
+1010831,2023-03-16,SC Freiburg,Juventus,0.78,1.96,EL,2022
+1010837,2023-03-16,Feyenoord,Shakhtar Donetsk,1.57,0.55,EL,2022
+1010835,2023-03-16,Real Betis,Manchester United,1.25,1.88,EL,2022
+1010833,2023-03-16,Fenerbahçe,Sevilla,1.75,0.11,EL,2022
+1010827,2023-03-16,Arsenal,Sporting CP,1.65,1.26,EL,2022
+1010829,2023-03-16,Real Sociedad,AS Roma,1.84,0.09,EL,2022
+1010825,2023-03-16,Ferencvarosi TC,Bayer Leverkusen,0.95,2.88,EL,2022
+1010823,2023-03-16,Union St. Gilloise,Union Berlin,1.73,0.43,EL,2022
+1016039,2023-04-13,Feyenoord,AS Roma,0.6,2.24,EL,2022
+1016041,2023-04-13,Manchester United,Sevilla,1.8,0.64,EL,2022
+1016045,2023-04-13,Bayer Leverkusen,Union St. Gilloise,1.45,0.58,EL,2022
+1016043,2023-04-13,Juventus,Sporting CP,0.86,1.66,EL,2022
+1016044,2023-04-20,Sporting CP,Juventus,1.99,1.48,EL,2022
+1016040,2023-04-20,AS Roma,Feyenoord,5.44,1.13,EL,2022
+1016042,2023-04-20,Sevilla,Manchester United,2.0,0.98,EL,2022
+1016046,2023-04-20,Union St. Gilloise,Bayer Leverkusen,1.3,2.38,EL,2022
+1022970,2023-05-11,Juventus,Sevilla,2.12,1.7,EL,2022
+1022972,2023-05-11,AS Roma,Bayer Leverkusen,1.31,0.97,EL,2022
+1022973,2023-05-18,Bayer Leverkusen,AS Roma,1.14,0.04,EL,2022
+1022971,2023-05-18,Sevilla,Juventus,1.45,1.78,EL,2022
+1027580,2023-05-31,Sevilla,AS Roma,1.0,1.92,EL,2022

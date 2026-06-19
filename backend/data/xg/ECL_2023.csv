@@ -1,0 +1,141 @@
+date,home_team,away_team,home_xg,away_xg,league,season
+2023-09-20,Lille,Olimpija Ljubljana,2.87,0.37,ECL,2023
+2023-09-21,Eintracht Frankfurt,Aberdeen,1.16,0.81,ECL,2023
+2023-09-21,Legia Warszawa,Aston Villa,1.67,1.56,ECL,2023
+2023-09-21,Ludogorets,Spartak Trnava,2.02,0.48,ECL,2023
+2023-09-21,Zrinjski,AZ Alkmaar,0.81,1.54,ECL,2023
+2023-09-21,Fenerbahçe,FC Nordsjaelland,1.46,0.37,ECL,2023
+2023-09-21,HJK Helsinki,PAOK,1.35,2.2,ECL,2023
+2023-09-21,Ferencvarosi TC,Cukaricki,2.04,0.37,ECL,2023
+2023-09-21,Genk,Fiorentina,1.69,1.47,ECL,2023
+2023-09-21,Plzen,Ballkani,0.57,0.19,ECL,2023
+2023-09-21,Club Brugge KV,Beşiktaş,3.53,1.04,ECL,2023
+2023-09-21,Zorya Luhansk,Gent,0.0,0.12,ECL,2023
+2023-09-21,Maccabi Tel Aviv,Breidablik,1.06,0.71,ECL,2023
+2023-09-21,FC Lugano,Bodo/Glimt,1.06,0.84,ECL,2023
+2023-09-21,Dinamo Zagreb,FC Astana,2.3,1.03,ECL,2023
+2023-09-21,Slovan Bratislava,KI Klaksvik,0.82,1.48,ECL,2023
+2023-10-05,FC Astana,Plzen,0.37,1.01,ECL,2023
+2023-10-05,Breidablik,Zorya Luhansk,1.44,1.61,ECL,2023
+2023-10-05,Bodo/Glimt,Club Brugge KV,0.96,0.54,ECL,2023
+2023-10-05,Beşiktaş,FC Lugano,0.33,1.93,ECL,2023
+2023-10-05,Gent,Maccabi Tel Aviv,2.82,0.9,ECL,2023
+2023-10-05,Olimpija Ljubljana,Slovan Bratislava,0.39,2.85,ECL,2023
+2023-10-05,KI Klaksvik,Lille,0.05,0.7,ECL,2023
+2023-10-05,Ballkani,Dinamo Zagreb,0.35,0.43,ECL,2023
+2023-10-05,Aston Villa,Zrinjski,1.68,0.48,ECL,2023
+2023-10-05,AZ Alkmaar,Legia Warszawa,0.61,0.45,ECL,2023
+2023-10-05,Aberdeen,HJK Helsinki,1.27,0.78,ECL,2023
+2023-10-05,FC Nordsjaelland,Ludogorets,4.21,1.62,ECL,2023
+2023-10-05,Fiorentina,Ferencvarosi TC,2.22,1.5,ECL,2023
+2023-10-05,PAOK,Eintracht Frankfurt,0.54,1.52,ECL,2023
+2023-10-05,Spartak Trnava,Fenerbahçe,0.79,2.67,ECL,2023
+2023-10-05,Cukaricki,Genk,0.61,2.73,ECL,2023
+2023-10-26,Lille,Slovan Bratislava,2.45,1.28,ECL,2023
+2023-10-26,AZ Alkmaar,Aston Villa,0.4,1.48,ECL,2023
+2023-10-26,FC Lugano,Club Brugge KV,0.0,0.21,ECL,2023
+2023-10-26,Fenerbahçe,Ludogorets,1.39,0.57,ECL,2023
+2023-10-26,Gent,Breidablik,2.57,1.3,ECL,2023
+2023-10-26,KI Klaksvik,Olimpija Ljubljana,1.79,0.84,ECL,2023
+2023-10-26,Ballkani,FC Astana,1.7,0.96,ECL,2023
+2023-10-26,Eintracht Frankfurt,HJK Helsinki,3.36,0.44,ECL,2023
+2023-10-26,Aberdeen,PAOK,1.36,2.75,ECL,2023
+2023-10-26,Bodo/Glimt,Beşiktaş,2.77,0.98,ECL,2023
+2023-10-26,Fiorentina,Cukaricki,2.27,0.22,ECL,2023
+2023-10-26,Zrinjski,Legia Warszawa,0.86,0.86,ECL,2023
+2023-10-26,Dinamo Zagreb,Plzen,0.69,1.3,ECL,2023
+2023-10-26,Genk,Ferencvarosi TC,1.07,0.71,ECL,2023
+2023-10-26,Spartak Trnava,FC Nordsjaelland,0.95,1.17,ECL,2023
+2023-11-09,FC Astana,Ballkani,0.33,0.64,ECL,2023
+2023-11-09,Legia Warszawa,Zrinjski,1.71,0.27,ECL,2023
+2023-11-09,FC Nordsjaelland,Spartak Trnava,1.86,0.81,ECL,2023
+2023-11-09,Beşiktaş,Bodo/Glimt,0.93,2.22,ECL,2023
+2023-11-09,Plzen,Dinamo Zagreb,2.48,0.57,ECL,2023
+2023-11-09,PAOK,Aberdeen,2.1,0.17,ECL,2023
+2023-11-09,HJK Helsinki,Eintracht Frankfurt,0.81,2.44,ECL,2023
+2023-11-09,Ferencvarosi TC,Genk,2.03,1.53,ECL,2023
+2023-11-09,Cukaricki,Fiorentina,0.68,1.32,ECL,2023
+2023-11-09,Aston Villa,AZ Alkmaar,1.44,0.73,ECL,2023
+2023-11-09,Breidablik,Gent,1.97,2.37,ECL,2023
+2023-11-09,Ludogorets,Fenerbahçe,0.98,0.14,ECL,2023
+2023-11-09,Club Brugge KV,FC Lugano,2.56,0.28,ECL,2023
+2023-11-09,Zorya Luhansk,Maccabi Tel Aviv,1.59,1.8,ECL,2023
+2023-11-09,Slovan Bratislava,Lille,1.2,1.1,ECL,2023
+2023-11-25,Maccabi Tel Aviv,Zorya Luhansk,1.35,1.08,ECL,2023
+2023-11-30,Breidablik,Maccabi Tel Aviv,2.0,0.62,ECL,2023
+2023-11-30,FC Astana,Dinamo Zagreb,1.24,1.64,ECL,2023
+2023-11-30,AZ Alkmaar,Zrinjski,2.26,0.15,ECL,2023
+2023-11-30,Bodo/Glimt,FC Lugano,1.27,1.38,ECL,2023
+2023-11-30,Beşiktaş,Club Brugge KV,0.53,2.78,ECL,2023
+2023-11-30,Gent,Zorya Luhansk,1.8,0.32,ECL,2023
+2023-11-30,HJK Helsinki,Aberdeen,1.3,1.29,ECL,2023
+2023-11-30,Olimpija Ljubljana,Lille,0.77,2.16,ECL,2023
+2023-11-30,KI Klaksvik,Slovan Bratislava,1.29,0.97,ECL,2023
+2023-11-30,Ballkani,Plzen,0.65,1.16,ECL,2023
+2023-11-30,Aston Villa,Legia Warszawa,1.65,0.25,ECL,2023
+2023-11-30,Eintracht Frankfurt,PAOK,1.69,1.45,ECL,2023
+2023-11-30,FC Nordsjaelland,Fenerbahçe,3.32,0.83,ECL,2023
+2023-11-30,Fiorentina,Genk,2.48,0.58,ECL,2023
+2023-11-30,Spartak Trnava,Ludogorets,0.2,3.56,ECL,2023
+2023-11-30,Cukaricki,Ferencvarosi TC,0.47,2.11,ECL,2023
+2023-12-14,Aberdeen,Eintracht Frankfurt,1.17,0.88,ECL,2023
+2023-12-14,Legia Warszawa,AZ Alkmaar,1.11,0.14,ECL,2023
+2023-12-14,Ludogorets,FC Nordsjaelland,1.26,1.12,ECL,2023
+2023-12-14,Zrinjski,Aston Villa,1.15,1.07,ECL,2023
+2023-12-14,Fenerbahçe,Spartak Trnava,4.14,0.37,ECL,2023
+2023-12-14,PAOK,HJK Helsinki,3.54,1.19,ECL,2023
+2023-12-14,Ferencvarosi TC,Fiorentina,0.77,1.28,ECL,2023
+2023-12-14,Genk,Cukaricki,2.64,0.43,ECL,2023
+2023-12-14,Lille,KI Klaksvik,3.59,0.81,ECL,2023
+2023-12-14,Plzen,FC Astana,3.76,0.33,ECL,2023
+2023-12-14,Club Brugge KV,Bodo/Glimt,1.21,1.15,ECL,2023
+2023-12-14,Zorya Luhansk,Breidablik,2.46,1.51,ECL,2023
+2023-12-14,Maccabi Tel Aviv,Gent,1.71,0.4,ECL,2023
+2023-12-14,FC Lugano,Beşiktaş,1.27,1.04,ECL,2023
+2023-12-14,Dinamo Zagreb,Ballkani,2.83,0.56,ECL,2023
+2023-12-14,Slovan Bratislava,Olimpija Ljubljana,1.01,0.56,ECL,2023
+2024-02-15,Molde,Legia Warszawa,1.85,1.1,ECL,2023
+2024-02-15,Olympiakos Piraeus,Ferencvarosi TC,1.56,0.31,ECL,2023
+2024-02-15,Sturm Graz,Slovan Bratislava,2.48,1.1,ECL,2023
+2024-02-15,Union St. Gilloise,Eintracht Frankfurt,1.74,1.76,ECL,2023
+2024-02-15,Ajax,Bodo/Glimt,2.22,0.51,ECL,2023
+2024-02-15,Real Betis,Dinamo Zagreb,1.07,0.91,ECL,2023
+2024-02-15,Servette FC,Ludogorets,1.18,0.18,ECL,2023
+2024-02-15,Maccabi Haifa,Gent,0.51,1.72,ECL,2023
+2024-02-21,Gent,Maccabi Haifa,1.7,0.68,ECL,2023
+2024-02-22,Bodo/Glimt,Ajax,2.7,1.9,ECL,2023
+2024-02-22,Ludogorets,Servette FC,1.25,0.87,ECL,2023
+2024-02-22,Dinamo Zagreb,Real Betis,1.47,0.78,ECL,2023
+2024-02-22,Eintracht Frankfurt,Union St. Gilloise,1.12,0.6,ECL,2023
+2024-02-22,Legia Warszawa,Molde,0.97,1.48,ECL,2023
+2024-02-22,Ferencvarosi TC,Olympiakos Piraeus,0.56,1.83,ECL,2023
+2024-02-22,Slovan Bratislava,Sturm Graz,1.47,1.62,ECL,2023
+2024-03-07,Ajax,Aston Villa,0.79,0.23,ECL,2023
+2024-03-07,Molde,Club Brugge KV,0.9,1.47,ECL,2023
+2024-03-07,Olympiakos Piraeus,Maccabi Tel Aviv,1.2,2.04,ECL,2023
+2024-03-07,Sturm Graz,Lille,0.98,2.88,ECL,2023
+2024-03-07,Dinamo Zagreb,PAOK,1.64,0.4,ECL,2023
+2024-03-07,Union St. Gilloise,Fenerbahçe,0.75,1.63,ECL,2023
+2024-03-07,Servette FC,Plzen,0.62,0.22,ECL,2023
+2024-03-07,Maccabi Haifa,Fiorentina,0.72,1.77,ECL,2023
+2024-03-14,Fiorentina,Maccabi Haifa,1.21,0.14,ECL,2023
+2024-03-14,Plzen,Servette FC,1.27,1.52,ECL,2023
+2024-03-14,Fenerbahçe,Union St. Gilloise,0.66,1.73,ECL,2023
+2024-03-14,PAOK,Dinamo Zagreb,3.03,0.96,ECL,2023
+2024-03-14,Aston Villa,Ajax,1.18,0.31,ECL,2023
+2024-03-14,Lille,Sturm Graz,1.84,1.59,ECL,2023
+2024-03-14,Club Brugge KV,Molde,1.09,0.29,ECL,2023
+2024-03-14,Maccabi Tel Aviv,Olympiakos Piraeus,1.27,2.6,ECL,2023
+2024-04-11,Olympiakos Piraeus,Fenerbahçe,0.78,1.95,ECL,2023
+2024-04-11,Plzen,Fiorentina,0.15,0.36,ECL,2023
+2024-04-11,Aston Villa,Lille,1.15,1.51,ECL,2023
+2024-04-11,Club Brugge KV,PAOK,1.36,0.18,ECL,2023
+2024-04-18,Lille,Aston Villa,1.47,0.66,ECL,2023
+2024-04-18,Fiorentina,Plzen,3.74,0.11,ECL,2023
+2024-04-18,Fenerbahçe,Olympiakos Piraeus,0.69,0.61,ECL,2023
+2024-04-18,PAOK,Club Brugge KV,0.21,2.75,ECL,2023
+2024-05-02,Aston Villa,Olympiakos Piraeus,1.43,1.26,ECL,2023
+2024-05-02,Fiorentina,Club Brugge KV,2.23,1.24,ECL,2023
+2024-05-08,Club Brugge KV,Fiorentina,0.21,2.52,ECL,2023
+2024-05-09,Olympiakos Piraeus,Aston Villa,1.2,1.14,ECL,2023
+2024-05-29,Olympiakos Piraeus,Fiorentina,0.65,1.13,ECL,2023

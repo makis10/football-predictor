@@ -1,0 +1,381 @@
+date,home_team,away_team,home_xg,away_xg,league,season
+2020-09-12,Eibar,Celta Vigo,0.344008,0.783653,LaLiga,2020
+2020-09-12,Granada,Athletic Club,0.545144,0.483337,LaLiga,2020
+2020-09-12,Cadiz,Osasuna,0.600934,0.633286,LaLiga,2020
+2020-09-13,Alaves,Real Betis,1.17642,0.341233,LaLiga,2020
+2020-09-13,Real Valladolid,Real Sociedad,0.858211,0.31178,LaLiga,2020
+2020-09-13,Villarreal,SD Huesca,2.01913,0.556003,LaLiga,2020
+2020-09-13,Valencia,Levante,1.72531,2.37179,LaLiga,2020
+2020-09-19,Villarreal,Eibar,2.99286,1.112,LaLiga,2020
+2020-09-19,Getafe,Osasuna,0.702715,0.486466,LaLiga,2020
+2020-09-19,Celta Vigo,Valencia,2.33534,0.456643,LaLiga,2020
+2020-09-20,SD Huesca,Cadiz,0.223846,1.50522,LaLiga,2020
+2020-09-20,Granada,Alaves,2.45453,0.77021,LaLiga,2020
+2020-09-20,Real Betis,Real Valladolid,1.76775,0.290702,LaLiga,2020
+2020-09-20,Real Sociedad,Real Madrid,0.718119,0.769069,LaLiga,2020
+2020-09-26,Alaves,Getafe,0.867165,1.31111,LaLiga,2020
+2020-09-26,Valencia,SD Huesca,0.306092,1.10618,LaLiga,2020
+2020-09-26,Elche,Real Sociedad,1.23661,3.3738,LaLiga,2020
+2020-09-26,Real Betis,Real Madrid,1.41465,3.86499,LaLiga,2020
+2020-09-27,Osasuna,Levante,0.724471,2.99435,LaLiga,2020
+2020-09-27,Eibar,Athletic Club,0.325316,0.505645,LaLiga,2020
+2020-09-27,Atletico Madrid,Granada,3.60448,1.30515,LaLiga,2020
+2020-09-27,Real Valladolid,Celta Vigo,1.52483,1.08307,LaLiga,2020
+2020-09-27,Barcelona,Villarreal,3.50735,0.244835,LaLiga,2020
+2020-09-27,Cadiz,Sevilla,1.0983,2.2102,LaLiga,2020
+2020-09-29,Real Sociedad,Valencia,0.589249,0.836796,LaLiga,2020
+2020-09-29,Getafe,Real Betis,0.908069,0.442837,LaLiga,2020
+2020-09-30,SD Huesca,Atletico Madrid,0.631932,1.79241,LaLiga,2020
+2020-09-30,Villarreal,Alaves,2.65908,0.618672,LaLiga,2020
+2020-09-30,Eibar,Elche,1.06052,0.378171,LaLiga,2020
+2020-09-30,Real Madrid,Real Valladolid,2.64599,0.540187,LaLiga,2020
+2020-10-01,Athletic Club,Cadiz,0.545027,0.263675,LaLiga,2020
+2020-10-01,Sevilla,Levante,1.04729,0.375244,LaLiga,2020
+2020-10-01,Celta Vigo,Barcelona,0.568201,0.931689,LaLiga,2020
+2020-10-03,Real Valladolid,Eibar,1.09473,1.6913,LaLiga,2020
+2020-10-03,Atletico Madrid,Villarreal,0.610002,0.201508,LaLiga,2020
+2020-10-03,Real Sociedad,Getafe,2.19684,0.315862,LaLiga,2020
+2020-10-03,Elche,SD Huesca,0.188885,1.70374,LaLiga,2020
+2020-10-03,Valencia,Real Betis,0.475219,1.87508,LaLiga,2020
+2020-10-04,Osasuna,Celta Vigo,1.12188,0.360866,LaLiga,2020
+2020-10-04,Alaves,Athletic Club,0.520642,0.487749,LaLiga,2020
+2020-10-04,Levante,Real Madrid,0.577329,1.87714,LaLiga,2020
+2020-10-04,Cadiz,Granada,1.09095,0.820558,LaLiga,2020
+2020-10-04,Barcelona,Sevilla,1.05717,1.25522,LaLiga,2020
+2020-10-17,Granada,Sevilla,1.08721,0.699011,LaLiga,2020
+2020-10-17,Celta Vigo,Atletico Madrid,1.89737,1.51399,LaLiga,2020
+2020-10-17,Real Madrid,Cadiz,1.1359,1.768,LaLiga,2020
+2020-10-17,Getafe,Barcelona,1.70992,0.62541,LaLiga,2020
+2020-10-18,Eibar,Osasuna,0.371361,1.2646,LaLiga,2020
+2020-10-18,Athletic Club,Levante,2.07013,0.281482,LaLiga,2020
+2020-10-18,Villarreal,Valencia,1.59975,0.677588,LaLiga,2020
+2020-10-18,Alaves,Elche,0.90822,0.902261,LaLiga,2020
+2020-10-18,SD Huesca,Real Valladolid,1.25439,0.907963,LaLiga,2020
+2020-10-18,Real Betis,Real Sociedad,0.304528,1.58336,LaLiga,2020
+2020-10-23,Elche,Valencia,0.165573,1.23519,LaLiga,2020
+2020-10-24,Barcelona,Real Madrid,1.57351,3.20848,LaLiga,2020
+2020-10-24,Osasuna,Athletic Club,0.989319,0.5791,LaLiga,2020
+2020-10-24,Sevilla,Eibar,1.98558,0.198368,LaLiga,2020
+2020-10-24,Atletico Madrid,Real Betis,1.24304,1.01541,LaLiga,2020
+2020-10-25,Real Valladolid,Alaves,0.305213,2.3128,LaLiga,2020
+2020-10-25,Cadiz,Villarreal,0.20914,0.752296,LaLiga,2020
+2020-10-25,Getafe,Granada,1.33438,0.949811,LaLiga,2020
+2020-10-25,Real Sociedad,SD Huesca,1.79773,0.591473,LaLiga,2020
+2020-10-26,Levante,Celta Vigo,1.19249,0.818389,LaLiga,2020
+2020-10-30,Eibar,Cadiz,0.466935,0.932416,LaLiga,2020
+2020-10-31,Real Madrid,SD Huesca,2.23898,0.79915,LaLiga,2020
+2020-10-31,Athletic Club,Sevilla,1.32876,1.15091,LaLiga,2020
+2020-10-31,Osasuna,Atletico Madrid,1.42768,3.06286,LaLiga,2020
+2020-10-31,Alaves,Barcelona,1.11324,2.07747,LaLiga,2020
+2020-11-01,Real Betis,Elche,3.06462,0.478252,LaLiga,2020
+2020-11-01,Celta Vigo,Real Sociedad,2.12312,2.27628,LaLiga,2020
+2020-11-01,Granada,Levante,0.230886,0.813588,LaLiga,2020
+2020-11-01,Valencia,Getafe,1.75934,2.35774,LaLiga,2020
+2020-11-02,Villarreal,Real Valladolid,1.85014,0.793913,LaLiga,2020
+2020-11-06,Elche,Celta Vigo,1.6055,2.15551,LaLiga,2020
+2020-11-07,SD Huesca,Eibar,2.23211,0.839508,LaLiga,2020
+2020-11-07,Barcelona,Real Betis,4.44487,0.86991,LaLiga,2020
+2020-11-07,Sevilla,Osasuna,1.151,0.499107,LaLiga,2020
+2020-11-07,Atletico Madrid,Cadiz,2.62556,0.395983,LaLiga,2020
+2020-11-08,Getafe,Villarreal,0.55465,2.32114,LaLiga,2020
+2020-11-08,Real Sociedad,Granada,3.72416,0.780649,LaLiga,2020
+2020-11-08,Levante,Alaves,1.99148,1.01595,LaLiga,2020
+2020-11-08,Real Valladolid,Athletic Club,2.28498,1.57936,LaLiga,2020
+2020-11-08,Valencia,Real Madrid,2.34693,1.05824,LaLiga,2020
+2020-11-20,Osasuna,SD Huesca,0.878778,0.807899,LaLiga,2020
+2020-11-21,Levante,Elche,0.902091,0.832435,LaLiga,2020
+2020-11-21,Villarreal,Real Madrid,1.72712,0.652049,LaLiga,2020
+2020-11-21,Sevilla,Celta Vigo,2.22603,2.08172,LaLiga,2020
+2020-11-21,Atletico Madrid,Barcelona,0.812108,1.29964,LaLiga,2020
+2020-11-22,Eibar,Getafe,1.45225,0.352628,LaLiga,2020
+2020-11-22,Cadiz,Real Sociedad,0.0824748,1.90588,LaLiga,2020
+2020-11-22,Granada,Real Valladolid,1.40253,1.45546,LaLiga,2020
+2020-11-22,Alaves,Valencia,1.82668,1.79824,LaLiga,2020
+2020-11-23,Athletic Club,Real Betis,2.75202,0.385631,LaLiga,2020
+2020-11-27,Real Valladolid,Levante,1.25969,1.11009,LaLiga,2020
+2020-11-28,Elche,Cadiz,0.0867292,0.678171,LaLiga,2020
+2020-11-28,Valencia,Atletico Madrid,0.181436,1.10533,LaLiga,2020
+2020-11-28,SD Huesca,Sevilla,0.167609,1.69981,LaLiga,2020
+2020-11-28,Real Madrid,Alaves,1.66068,2.35024,LaLiga,2020
+2020-11-29,Barcelona,Osasuna,3.91416,1.56118,LaLiga,2020
+2020-11-29,Getafe,Athletic Club,0.536725,0.277502,LaLiga,2020
+2020-11-29,Celta Vigo,Granada,4.64116,1.49416,LaLiga,2020
+2020-11-29,Real Sociedad,Villarreal,1.91705,1.10165,LaLiga,2020
+2020-11-30,Real Betis,Eibar,0.51761,3.24869,LaLiga,2020
+2020-12-04,Athletic Club,Celta Vigo,0.454057,1.20044,LaLiga,2020
+2020-12-05,Levante,Getafe,2.56696,0.49433,LaLiga,2020
+2020-12-05,Sevilla,Real Madrid,0.533909,1.69653,LaLiga,2020
+2020-12-05,Atletico Madrid,Real Valladolid,1.2755,0.440427,LaLiga,2020
+2020-12-05,Cadiz,Barcelona,2.61118,1.71026,LaLiga,2020
+2020-12-06,Granada,SD Huesca,1.82994,1.68663,LaLiga,2020
+2020-12-06,Osasuna,Real Betis,0.366687,1.52162,LaLiga,2020
+2020-12-06,Villarreal,Elche,0.520422,0.0544723,LaLiga,2020
+2020-12-06,Alaves,Real Sociedad,0.249462,1.39953,LaLiga,2020
+2020-12-07,Eibar,Valencia,1.09317,0.648196,LaLiga,2020
+2020-12-11,Real Valladolid,Osasuna,1.87748,1.33403,LaLiga,2020
+2020-12-12,Valencia,Athletic Club,2.17259,1.73307,LaLiga,2020
+2020-12-12,Getafe,Sevilla,0.374252,0.507527,LaLiga,2020
+2020-12-12,SD Huesca,Alaves,0.380766,0.171439,LaLiga,2020
+2020-12-12,Real Madrid,Atletico Madrid,0.6517,0.784775,LaLiga,2020
+2020-12-13,Real Sociedad,Eibar,1.33912,1.55401,LaLiga,2020
+2020-12-13,Real Betis,Villarreal,0.475008,1.10577,LaLiga,2020
+2020-12-13,Elche,Granada,0.534289,1.40539,LaLiga,2020
+2020-12-13,Barcelona,Levante,2.62077,0.97888,LaLiga,2020
+2020-12-14,Celta Vigo,Cadiz,1.51712,0.906249,LaLiga,2020
+2020-12-15,Real Madrid,Athletic Club,2.58032,0.728304,LaLiga,2020
+2020-12-16,Barcelona,Real Sociedad,2.58133,1.82452,LaLiga,2020
+2020-12-18,Athletic Club,SD Huesca,1.51945,0.182818,LaLiga,2020
+2020-12-19,Atletico Madrid,Elche,2.10005,0.522281,LaLiga,2020
+2020-12-19,Barcelona,Valencia,3.2847,1.97181,LaLiga,2020
+2020-12-19,Levante,Real Sociedad,1.52776,2.1027,LaLiga,2020
+2020-12-19,Osasuna,Villarreal,0.925068,2.79417,LaLiga,2020
+2020-12-19,Sevilla,Real Valladolid,1.73966,0.878614,LaLiga,2020
+2020-12-20,Celta Vigo,Alaves,1.62567,0.404844,LaLiga,2020
+2020-12-20,Granada,Real Betis,1.38241,1.04957,LaLiga,2020
+2020-12-20,Cadiz,Getafe,0.356498,1.10435,LaLiga,2020
+2020-12-20,Eibar,Real Madrid,0.642099,2.35916,LaLiga,2020
+2020-12-22,Elche,Osasuna,1.25398,1.69506,LaLiga,2020
+2020-12-22,Valencia,Sevilla,0.559111,1.85011,LaLiga,2020
+2020-12-22,SD Huesca,Levante,1.36969,0.581363,LaLiga,2020
+2020-12-22,Real Sociedad,Atletico Madrid,0.230082,0.546595,LaLiga,2020
+2020-12-22,Villarreal,Athletic Club,1.32193,0.910796,LaLiga,2020
+2020-12-22,Real Valladolid,Barcelona,0.499141,3.23865,LaLiga,2020
+2020-12-23,Getafe,Celta Vigo,0.265652,0.767168,LaLiga,2020
+2020-12-23,Real Madrid,Granada,2.04414,0.79963,LaLiga,2020
+2020-12-23,Alaves,Eibar,1.88686,0.786669,LaLiga,2020
+2020-12-23,Real Betis,Cadiz,0.342496,0.282205,LaLiga,2020
+2020-12-29,Barcelona,Eibar,2.05695,0.592271,LaLiga,2020
+2020-12-29,Sevilla,Villarreal,2.7317,0.346419,LaLiga,2020
+2020-12-29,Levante,Real Betis,1.67536,2.63943,LaLiga,2020
+2020-12-29,Cadiz,Real Valladolid,0.786846,0.299749,LaLiga,2020
+2020-12-30,Granada,Valencia,2.23615,1.27314,LaLiga,2020
+2020-12-30,Atletico Madrid,Getafe,0.919165,0.941238,LaLiga,2020
+2020-12-30,Celta Vigo,SD Huesca,2.85208,1.0513,LaLiga,2020
+2020-12-30,Elche,Real Madrid,1.02416,1.55495,LaLiga,2020
+2020-12-31,Athletic Club,Real Sociedad,0.172341,1.84296,LaLiga,2020
+2020-12-31,Osasuna,Alaves,0.318257,1.35028,LaLiga,2020
+2021-01-02,Villarreal,Levante,1.72781,0.554357,LaLiga,2020
+2021-01-02,Real Betis,Sevilla,2.03775,0.248156,LaLiga,2020
+2021-01-02,Getafe,Real Valladolid,0.768671,1.16924,LaLiga,2020
+2021-01-02,Real Madrid,Celta Vigo,1.24672,0.564784,LaLiga,2020
+2021-01-03,Athletic Club,Elche,1.38777,0.137448,LaLiga,2020
+2021-01-03,Alaves,Atletico Madrid,0.154899,2.31899,LaLiga,2020
+2021-01-03,Eibar,Granada,1.84192,0.917602,LaLiga,2020
+2021-01-03,Real Sociedad,Osasuna,0.78536,0.609915,LaLiga,2020
+2021-01-03,SD Huesca,Barcelona,0.259005,3.21201,LaLiga,2020
+2021-01-04,Valencia,Cadiz,0.942061,0.522228,LaLiga,2020
+2021-01-06,Athletic Club,Barcelona,0.638117,1.39939,LaLiga,2020
+2021-01-08,Celta Vigo,Villarreal,0.363035,2.88163,LaLiga,2020
+2021-01-09,Sevilla,Real Sociedad,2.9243,1.05731,LaLiga,2020
+2021-01-09,Granada,Barcelona,0.490441,1.64578,LaLiga,2020
+2021-01-09,Osasuna,Real Madrid,0.589148,0.42235,LaLiga,2020
+2021-01-10,Levante,Eibar,0.857988,1.34206,LaLiga,2020
+2021-01-10,Cadiz,Alaves,2.59473,0.829834,LaLiga,2020
+2021-01-10,Real Valladolid,Valencia,0.562807,1.09369,LaLiga,2020
+2021-01-11,Elche,Getafe,1.21278,3.17089,LaLiga,2020
+2021-01-11,SD Huesca,Real Betis,1.15245,2.98435,LaLiga,2020
+2021-01-12,Granada,Osasuna,0.831007,0.624174,LaLiga,2020
+2021-01-12,Atletico Madrid,Sevilla,0.577443,1.19957,LaLiga,2020
+2021-01-19,Cadiz,Levante,0.725743,2.00702,LaLiga,2020
+2021-01-19,Real Valladolid,Elche,1.02082,0.575886,LaLiga,2020
+2021-01-19,Alaves,Sevilla,1.40643,1.03209,LaLiga,2020
+2021-01-20,Getafe,SD Huesca,0.656624,0.712964,LaLiga,2020
+2021-01-20,Real Betis,Celta Vigo,0.646493,0.966752,LaLiga,2020
+2021-01-20,Villarreal,Granada,2.15885,0.135256,LaLiga,2020
+2021-01-21,Valencia,Osasuna,0.439791,1.63527,LaLiga,2020
+2021-01-21,Eibar,Atletico Madrid,1.27041,1.23064,LaLiga,2020
+2021-01-22,Levante,Real Valladolid,1.04736,0.631096,LaLiga,2020
+2021-01-23,SD Huesca,Villarreal,0.177253,0.484831,LaLiga,2020
+2021-01-23,Sevilla,Cadiz,2.51675,1.16695,LaLiga,2020
+2021-01-23,Real Sociedad,Real Betis,2.24597,0.638534,LaLiga,2020
+2021-01-23,Alaves,Real Madrid,0.762571,1.42254,LaLiga,2020
+2021-01-24,Osasuna,Granada,1.88102,0.592689,LaLiga,2020
+2021-01-24,Elche,Barcelona,0.477298,3.12144,LaLiga,2020
+2021-01-24,Celta Vigo,Eibar,1.53045,0.591142,LaLiga,2020
+2021-01-24,Atletico Madrid,Valencia,2.05311,0.250249,LaLiga,2020
+2021-01-25,Athletic Club,Getafe,1.87633,1.29166,LaLiga,2020
+2021-01-29,Real Valladolid,SD Huesca,1.74924,1.18337,LaLiga,2020
+2021-01-30,Eibar,Sevilla,1.02238,1.66557,LaLiga,2020
+2021-01-30,Real Madrid,Levante,1.23555,1.82881,LaLiga,2020
+2021-01-30,Valencia,Elche,3.00838,0.328905,LaLiga,2020
+2021-01-30,Villarreal,Real Sociedad,0.232475,1.16681,LaLiga,2020
+2021-01-31,Getafe,Alaves,0.530765,0.20139,LaLiga,2020
+2021-01-31,Cadiz,Atletico Madrid,0.861261,1.79542,LaLiga,2020
+2021-01-31,Granada,Celta Vigo,0.3242,0.339262,LaLiga,2020
+2021-01-31,Barcelona,Athletic Club,2.53148,0.275356,LaLiga,2020
+2021-02-01,Real Betis,Osasuna,1.9333,1.38521,LaLiga,2020
+2021-02-05,Alaves,Real Valladolid,1.60639,0.0534012,LaLiga,2020
+2021-02-06,Levante,Granada,1.52404,1.26925,LaLiga,2020
+2021-02-06,SD Huesca,Real Madrid,0.920971,3.53921,LaLiga,2020
+2021-02-06,Elche,Villarreal,1.13518,1.51126,LaLiga,2020
+2021-02-06,Sevilla,Getafe,2.03342,0.209522,LaLiga,2020
+2021-02-07,Real Sociedad,Cadiz,4.7946,0.354151,LaLiga,2020
+2021-02-07,Athletic Club,Valencia,1.34704,0.841344,LaLiga,2020
+2021-02-07,Osasuna,Eibar,2.62128,1.07628,LaLiga,2020
+2021-02-07,Real Betis,Barcelona,1.87521,1.33284,LaLiga,2020
+2021-02-08,Atletico Madrid,Celta Vigo,1.22973,1.71926,LaLiga,2020
+2021-02-09,Real Madrid,Getafe,1.86359,0.0930356,LaLiga,2020
+2021-02-12,Celta Vigo,Elche,2.31967,0.836576,LaLiga,2020
+2021-02-13,Granada,Atletico Madrid,0.827088,0.929672,LaLiga,2020
+2021-02-13,Sevilla,SD Huesca,1.329,1.39522,LaLiga,2020
+2021-02-13,Eibar,Real Valladolid,1.92231,0.968574,LaLiga,2020
+2021-02-13,Barcelona,Alaves,2.86032,0.710997,LaLiga,2020
+2021-02-14,Getafe,Real Sociedad,0.263007,1.03317,LaLiga,2020
+2021-02-14,Real Madrid,Valencia,0.862855,0.0596554,LaLiga,2020
+2021-02-14,Levante,Osasuna,1.73006,0.685142,LaLiga,2020
+2021-02-14,Villarreal,Real Betis,1.17957,1.35008,LaLiga,2020
+2021-02-15,Cadiz,Athletic Club,0.567254,2.36113,LaLiga,2020
+2021-02-17,Levante,Atletico Madrid,0.642423,1.16962,LaLiga,2020
+2021-02-19,Real Betis,Getafe,2.67474,0.277079,LaLiga,2020
+2021-02-20,Elche,Eibar,0.397175,1.66898,LaLiga,2020
+2021-02-20,Atletico Madrid,Levante,2.06148,0.767582,LaLiga,2020
+2021-02-20,Valencia,Celta Vigo,1.16675,0.689216,LaLiga,2020
+2021-02-20,Real Valladolid,Real Madrid,0.909714,1.30987,LaLiga,2020
+2021-02-21,Barcelona,Cadiz,2.39005,1.32905,LaLiga,2020
+2021-02-21,Real Sociedad,Alaves,2.50353,0.307378,LaLiga,2020
+2021-02-21,SD Huesca,Granada,2.47156,0.854609,LaLiga,2020
+2021-02-21,Athletic Club,Villarreal,2.32222,0.0679965,LaLiga,2020
+2021-02-22,Osasuna,Sevilla,0.457508,1.05344,LaLiga,2020
+2021-02-24,Barcelona,Elche,2.66084,0.351113,LaLiga,2020
+2021-02-26,Levante,Athletic Club,1.05928,1.99686,LaLiga,2020
+2021-02-27,Eibar,SD Huesca,1.79661,0.480747,LaLiga,2020
+2021-02-27,Sevilla,Barcelona,0.117061,1.58696,LaLiga,2020
+2021-02-27,Alaves,Osasuna,0.483459,0.994243,LaLiga,2020
+2021-02-27,Getafe,Valencia,0.895893,0.173822,LaLiga,2020
+2021-02-28,Celta Vigo,Real Valladolid,0.86079,0.762391,LaLiga,2020
+2021-02-28,Cadiz,Real Betis,0.227972,0.596164,LaLiga,2020
+2021-02-28,Granada,Elche,1.45197,1.28521,LaLiga,2020
+2021-02-28,Villarreal,Atletico Madrid,1.941,0.839764,LaLiga,2020
+2021-03-01,Real Madrid,Real Sociedad,1.98534,1.21953,LaLiga,2020
+2021-03-05,Valencia,Villarreal,1.75518,1.84626,LaLiga,2020
+2021-03-06,Real Valladolid,Getafe,1.31724,0.971736,LaLiga,2020
+2021-03-06,Elche,Sevilla,1.0131,0.964034,LaLiga,2020
+2021-03-06,Cadiz,Eibar,1.6239,1.6003,LaLiga,2020
+2021-03-06,Osasuna,Barcelona,0.756534,1.30761,LaLiga,2020
+2021-03-07,SD Huesca,Celta Vigo,3.13618,0.655624,LaLiga,2020
+2021-03-07,Atletico Madrid,Real Madrid,1.9832,1.88411,LaLiga,2020
+2021-03-07,Real Sociedad,Levante,4.95179,0.186229,LaLiga,2020
+2021-03-07,Athletic Club,Granada,1.28132,1.45524,LaLiga,2020
+2021-03-08,Real Betis,Alaves,2.01921,0.798216,LaLiga,2020
+2021-03-10,Atletico Madrid,Athletic Club,1.53875,0.701495,LaLiga,2020
+2021-03-12,Levante,Valencia,0.853066,0.493596,LaLiga,2020
+2021-03-13,Alaves,Cadiz,1.48992,1.74684,LaLiga,2020
+2021-03-13,Real Madrid,Elche,1.72628,0.726991,LaLiga,2020
+2021-03-13,Osasuna,Real Valladolid,0.467892,0.891,LaLiga,2020
+2021-03-13,Getafe,Atletico Madrid,0.409679,1.81829,LaLiga,2020
+2021-03-14,Celta Vigo,Athletic Club,1.18876,0.725139,LaLiga,2020
+2021-03-14,Granada,Real Sociedad,0.331961,0.306083,LaLiga,2020
+2021-03-14,Eibar,Villarreal,1.32358,2.84919,LaLiga,2020
+2021-03-14,Sevilla,Real Betis,0.841992,0.662923,LaLiga,2020
+2021-03-15,Barcelona,SD Huesca,1.52419,2.19819,LaLiga,2020
+2021-03-17,Sevilla,Elche,1.95263,0.612799,LaLiga,2020
+2021-03-19,Real Betis,Levante,2.46001,0.568605,LaLiga,2020
+2021-03-20,Athletic Club,Eibar,1.72731,0.532399,LaLiga,2020
+2021-03-20,Celta Vigo,Real Madrid,0.686996,2.79574,LaLiga,2020
+2021-03-20,SD Huesca,Osasuna,0.89442,0.734886,LaLiga,2020
+2021-03-20,Real Valladolid,Sevilla,0.809957,1.11252,LaLiga,2020
+2021-03-21,Getafe,Elche,1.79357,1.38712,LaLiga,2020
+2021-03-21,Valencia,Granada,1.4357,0.924202,LaLiga,2020
+2021-03-21,Villarreal,Cadiz,2.50648,0.90665,LaLiga,2020
+2021-03-21,Atletico Madrid,Alaves,0.64656,1.1132,LaLiga,2020
+2021-03-21,Real Sociedad,Barcelona,0.917148,3.3338,LaLiga,2020
+2021-04-02,Levante,SD Huesca,0.462819,0.857773,LaLiga,2020
+2021-04-03,Granada,Villarreal,1.22939,3.49755,LaLiga,2020
+2021-04-03,Real Madrid,Eibar,1.96177,0.299961,LaLiga,2020
+2021-04-03,Osasuna,Getafe,0.198501,0.316201,LaLiga,2020
+2021-04-04,Alaves,Celta Vigo,1.868,2.58943,LaLiga,2020
+2021-04-04,Elche,Real Betis,0.797759,1.90364,LaLiga,2020
+2021-04-04,Cadiz,Valencia,1.02818,0.858442,LaLiga,2020
+2021-04-04,Sevilla,Atletico Madrid,1.89943,0.551951,LaLiga,2020
+2021-04-05,Barcelona,Real Valladolid,1.68796,0.435921,LaLiga,2020
+2021-04-07,Real Sociedad,Athletic Club,0.724498,0.990446,LaLiga,2020
+2021-04-09,SD Huesca,Elche,1.09388,0.880685,LaLiga,2020
+2021-04-10,Getafe,Cadiz,2.78378,0.640397,LaLiga,2020
+2021-04-10,Athletic Club,Alaves,1.81094,0.448906,LaLiga,2020
+2021-04-10,Eibar,Levante,0.360623,0.309936,LaLiga,2020
+2021-04-10,Real Madrid,Barcelona,1.64993,1.15567,LaLiga,2020
+2021-04-11,Villarreal,Osasuna,1.60338,1.29078,LaLiga,2020
+2021-04-11,Valencia,Real Sociedad,2.34115,1.13047,LaLiga,2020
+2021-04-11,Real Valladolid,Granada,1.19214,1.22464,LaLiga,2020
+2021-04-11,Real Betis,Atletico Madrid,0.613966,1.34136,LaLiga,2020
+2021-04-12,Celta Vigo,Sevilla,2.09186,1.59713,LaLiga,2020
+2021-04-18,Osasuna,Elche,0.531975,0.699627,LaLiga,2020
+2021-04-18,Real Sociedad,Sevilla,0.292775,3.65426,LaLiga,2020
+2021-04-18,Alaves,SD Huesca,0.316991,0.747867,LaLiga,2020
+2021-04-18,Atletico Madrid,Eibar,2.75029,0.0,LaLiga,2020
+2021-04-18,Real Betis,Valencia,0.62725,1.61735,LaLiga,2020
+2021-04-18,Cadiz,Celta Vigo,0.322965,0.436078,LaLiga,2020
+2021-04-18,Getafe,Real Madrid,2.19426,0.618079,LaLiga,2020
+2021-04-18,Levante,Villarreal,0.844482,1.87811,LaLiga,2020
+2021-04-21,Levante,Sevilla,0.310335,2.05149,LaLiga,2020
+2021-04-21,Osasuna,Valencia,3.63596,1.20337,LaLiga,2020
+2021-04-21,Real Betis,Athletic Club,0.244787,0.845575,LaLiga,2020
+2021-04-21,Alaves,Villarreal,1.40963,1.45071,LaLiga,2020
+2021-04-21,Elche,Real Valladolid,1.33615,1.30359,LaLiga,2020
+2021-04-21,Cadiz,Real Madrid,1.31917,3.52537,LaLiga,2020
+2021-04-22,Atletico Madrid,SD Huesca,2.32831,1.40665,LaLiga,2020
+2021-04-22,Granada,Eibar,1.76204,1.34566,LaLiga,2020
+2021-04-22,Real Sociedad,Celta Vigo,2.19014,0.504303,LaLiga,2020
+2021-04-22,Barcelona,Getafe,2.15458,1.39543,LaLiga,2020
+2021-04-24,Elche,Levante,0.43368,0.236951,LaLiga,2020
+2021-04-24,Real Valladolid,Cadiz,3.23903,1.55697,LaLiga,2020
+2021-04-24,Valencia,Alaves,1.00912,0.893913,LaLiga,2020
+2021-04-24,Real Madrid,Real Betis,0.985387,0.898058,LaLiga,2020
+2021-04-25,SD Huesca,Getafe,0.472579,0.711933,LaLiga,2020
+2021-04-25,Villarreal,Barcelona,0.964915,3.38056,LaLiga,2020
+2021-04-25,Celta Vigo,Osasuna,0.601898,1.41709,LaLiga,2020
+2021-04-25,Sevilla,Granada,1.27314,0.902764,LaLiga,2020
+2021-04-25,Athletic Club,Atletico Madrid,1.42809,0.745334,LaLiga,2020
+2021-04-26,Eibar,Real Sociedad,0.729653,0.706358,LaLiga,2020
+2021-04-28,Athletic Club,Real Valladolid,1.73076,0.640604,LaLiga,2020
+2021-04-29,Barcelona,Granada,1.43667,0.811246,LaLiga,2020
+2021-04-30,Celta Vigo,Levante,2.3642,0.976661,LaLiga,2020
+2021-05-01,Eibar,Alaves,1.64332,0.154274,LaLiga,2020
+2021-05-01,Elche,Atletico Madrid,1.38118,1.01516,LaLiga,2020
+2021-05-01,SD Huesca,Real Sociedad,0.446278,0.298366,LaLiga,2020
+2021-05-01,Real Madrid,Osasuna,1.6256,0.0721582,LaLiga,2020
+2021-05-02,Real Valladolid,Real Betis,0.76247,1.88115,LaLiga,2020
+2021-05-02,Villarreal,Getafe,0.184151,0.487189,LaLiga,2020
+2021-05-02,Granada,Cadiz,0.924434,1.60276,LaLiga,2020
+2021-05-02,Valencia,Barcelona,1.41404,3.98456,LaLiga,2020
+2021-05-03,Sevilla,Athletic Club,0.792995,0.6882,LaLiga,2020
+2021-05-07,Real Sociedad,Elche,2.39443,0.0778732,LaLiga,2020
+2021-05-08,Alaves,Levante,1.32991,0.987587,LaLiga,2020
+2021-05-08,Barcelona,Atletico Madrid,0.853587,0.685355,LaLiga,2020
+2021-05-08,Cadiz,SD Huesca,0.990604,0.43525,LaLiga,2020
+2021-05-08,Athletic Club,Osasuna,1.39303,1.55726,LaLiga,2020
+2021-05-09,Getafe,Eibar,0.767031,1.06817,LaLiga,2020
+2021-05-09,Valencia,Real Valladolid,1.26443,0.754813,LaLiga,2020
+2021-05-09,Villarreal,Celta Vigo,2.50872,1.98001,LaLiga,2020
+2021-05-09,Real Madrid,Sevilla,0.99637,1.07261,LaLiga,2020
+2021-05-10,Real Betis,Granada,1.84702,2.08496,LaLiga,2020
+2021-05-11,Osasuna,Cadiz,2.14746,1.54692,LaLiga,2020
+2021-05-11,Elche,Alaves,0.886211,1.66141,LaLiga,2020
+2021-05-11,Levante,Barcelona,1.27727,3.0801,LaLiga,2020
+2021-05-12,Sevilla,Valencia,0.865705,0.343195,LaLiga,2020
+2021-05-12,Celta Vigo,Getafe,0.209945,1.14081,LaLiga,2020
+2021-05-12,SD Huesca,Athletic Club,1.56368,0.401551,LaLiga,2020
+2021-05-12,Atletico Madrid,Real Sociedad,1.7908,1.53283,LaLiga,2020
+2021-05-13,Real Valladolid,Villarreal,1.38976,0.600771,LaLiga,2020
+2021-05-13,Eibar,Real Betis,1.10754,0.605825,LaLiga,2020
+2021-05-13,Granada,Real Madrid,1.69529,1.39286,LaLiga,2020
+2021-05-16,Alaves,Granada,2.83763,0.841672,LaLiga,2020
+2021-05-16,Athletic Club,Real Madrid,0.705495,1.21866,LaLiga,2020
+2021-05-16,Atletico Madrid,Osasuna,2.97525,0.673558,LaLiga,2020
+2021-05-16,Barcelona,Celta Vigo,2.10966,0.631271,LaLiga,2020
+2021-05-16,Real Betis,SD Huesca,1.17298,0.249221,LaLiga,2020
+2021-05-16,Getafe,Levante,0.769611,0.441218,LaLiga,2020
+2021-05-16,Cadiz,Elche,1.07259,2.83914,LaLiga,2020
+2021-05-16,Real Sociedad,Real Valladolid,1.67996,1.04641,LaLiga,2020
+2021-05-16,Valencia,Eibar,1.33301,2.68303,LaLiga,2020
+2021-05-16,Villarreal,Sevilla,1.60717,2.51965,LaLiga,2020
+2021-05-21,Levante,Cadiz,1.51266,0.424135,LaLiga,2020
+2021-05-22,Celta Vigo,Real Betis,1.21829,2.06863,LaLiga,2020
+2021-05-22,Eibar,Barcelona,1.44968,0.284589,LaLiga,2020
+2021-05-22,SD Huesca,Valencia,0.974788,0.421299,LaLiga,2020
+2021-05-22,Osasuna,Real Sociedad,0.41494,2.08092,LaLiga,2020
+2021-05-22,Real Madrid,Villarreal,0.804298,0.614418,LaLiga,2020
+2021-05-22,Real Valladolid,Atletico Madrid,0.995635,1.2916,LaLiga,2020
+2021-05-22,Elche,Athletic Club,1.33082,0.303264,LaLiga,2020
+2021-05-23,Granada,Getafe,0.444987,0.46059,LaLiga,2020
+2021-05-23,Sevilla,Alaves,0.35705,0.785012,LaLiga,2020

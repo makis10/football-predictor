@@ -1,0 +1,307 @@
+date,home_team,away_team,home_xg,away_xg,league,season
+2024-08-09,Sporting CP,Rio Ave,3.0,0.46,PrimeiraLiga,2024
+2024-08-10,AVS,Nacional,1.01,0.53,PrimeiraLiga,2024
+2024-08-10,Casa Pia,Boavista,0.92,1.15,PrimeiraLiga,2024
+2024-08-10,FC Porto,GIL Vicente,3.47,0.1,PrimeiraLiga,2024
+2024-08-11,Estoril,Santa Clara,0.15,2.72,PrimeiraLiga,2024
+2024-08-11,Farense,Moreirense,1.4,2.2,PrimeiraLiga,2024
+2024-08-11,Famalicao,Benfica,1.47,0.78,PrimeiraLiga,2024
+2024-08-11,SC Braga,Estrela,1.41,0.69,PrimeiraLiga,2024
+2024-08-12,Arouca,Guimaraes,0.21,0.83,PrimeiraLiga,2024
+2024-08-16,Santa Clara,FC Porto,0.75,1.11,PrimeiraLiga,2024
+2024-08-16,GIL Vicente,AVS,2.38,1.42,PrimeiraLiga,2024
+2024-08-17,Rio Ave,Farense,1.36,0.54,PrimeiraLiga,2024
+2024-08-17,Nacional,Sporting CP,1.23,3.14,PrimeiraLiga,2024
+2024-08-17,Benfica,Casa Pia,2.5,0.29,PrimeiraLiga,2024
+2024-08-18,Moreirense,Arouca,2.5,1.01,PrimeiraLiga,2024
+2024-08-18,Guimaraes,Estoril,1.79,0.2,PrimeiraLiga,2024
+2024-08-18,Boavista,SC Braga,0.63,1.07,PrimeiraLiga,2024
+2024-08-19,Estrela,Famalicao,0.69,1.9,PrimeiraLiga,2024
+2024-08-23,Farense,Sporting CP,0.29,3.94,PrimeiraLiga,2024
+2024-08-24,Casa Pia,Santa Clara,0.79,0.69,PrimeiraLiga,2024
+2024-08-24,FC Porto,Rio Ave,3.37,0.0,PrimeiraLiga,2024
+2024-08-24,Benfica,Estrela,1.45,0.13,PrimeiraLiga,2024
+2024-08-24,Famalicao,Boavista,0.7,0.27,PrimeiraLiga,2024
+2024-08-25,Arouca,Nacional,1.23,1.21,PrimeiraLiga,2024
+2024-08-25,Estoril,GIL Vicente,0.56,1.34,PrimeiraLiga,2024
+2024-08-25,SC Braga,Moreirense,1.73,2.19,PrimeiraLiga,2024
+2024-08-25,AVS,Guimaraes,0.74,1.61,PrimeiraLiga,2024
+2024-08-30,Moreirense,Benfica,0.27,1.5,PrimeiraLiga,2024
+2024-08-31,Santa Clara,AVS,1.84,0.68,PrimeiraLiga,2024
+2024-08-31,Boavista,Estoril,1.54,0.27,PrimeiraLiga,2024
+2024-08-31,Estrela,Casa Pia,0.46,0.6,PrimeiraLiga,2024
+2024-08-31,Sporting CP,FC Porto,2.98,0.5,PrimeiraLiga,2024
+2024-09-01,Nacional,Farense,1.68,0.41,PrimeiraLiga,2024
+2024-09-01,Rio Ave,Arouca,1.66,1.1,PrimeiraLiga,2024
+2024-09-01,Guimaraes,Famalicao,1.4,0.25,PrimeiraLiga,2024
+2024-09-01,GIL Vicente,SC Braga,1.57,0.55,PrimeiraLiga,2024
+2024-09-13,Arouca,Sporting CP,0.23,3.21,PrimeiraLiga,2024
+2024-09-14,Casa Pia,Moreirense,0.74,0.69,PrimeiraLiga,2024
+2024-09-14,AVS,Rio Ave,0.62,0.92,PrimeiraLiga,2024
+2024-09-14,Benfica,Santa Clara,2.19,0.72,PrimeiraLiga,2024
+2024-09-14,Famalicao,GIL Vicente,1.07,0.44,PrimeiraLiga,2024
+2024-09-15,FC Porto,Farense,4.13,1.02,PrimeiraLiga,2024
+2024-09-15,Estoril,Nacional,0.68,2.14,PrimeiraLiga,2024
+2024-09-15,SC Braga,Guimaraes,0.47,0.98,PrimeiraLiga,2024
+2024-09-16,Estrela,Boavista,0.92,1.79,PrimeiraLiga,2024
+2024-09-20,Nacional,SC Braga,1.25,2.29,PrimeiraLiga,2024
+2024-09-21,Rio Ave,Estoril,1.05,1.21,PrimeiraLiga,2024
+2024-09-21,Santa Clara,Estrela,1.73,0.31,PrimeiraLiga,2024
+2024-09-21,Guimaraes,FC Porto,0.21,1.53,PrimeiraLiga,2024
+2024-09-21,Moreirense,Famalicao,0.61,0.14,PrimeiraLiga,2024
+2024-09-22,GIL Vicente,Casa Pia,0.88,1.29,PrimeiraLiga,2024
+2024-09-22,Farense,Arouca,1.24,0.64,PrimeiraLiga,2024
+2024-09-22,Sporting CP,AVS,1.57,0.09,PrimeiraLiga,2024
+2024-09-23,Boavista,Benfica,0.32,1.84,PrimeiraLiga,2024
+2024-09-27,Estoril,Sporting CP,0.13,1.89,PrimeiraLiga,2024
+2024-09-28,Estrela,Moreirense,0.6,1.3,PrimeiraLiga,2024
+2024-09-28,Casa Pia,Guimaraes,2.21,0.73,PrimeiraLiga,2024
+2024-09-28,Benfica,GIL Vicente,2.68,0.88,PrimeiraLiga,2024
+2024-09-29,Famalicao,Nacional,0.94,0.62,PrimeiraLiga,2024
+2024-09-29,FC Porto,Arouca,2.72,0.17,PrimeiraLiga,2024
+2024-09-29,SC Braga,Rio Ave,3.2,0.92,PrimeiraLiga,2024
+2024-09-29,Santa Clara,Boavista,2.17,0.12,PrimeiraLiga,2024
+2024-09-30,AVS,Farense,0.4,0.42,PrimeiraLiga,2024
+2024-10-04,Rio Ave,Famalicao,2.29,0.41,PrimeiraLiga,2024
+2024-10-05,Moreirense,Santa Clara,0.46,1.35,PrimeiraLiga,2024
+2024-10-05,GIL Vicente,Estrela,1.59,0.7,PrimeiraLiga,2024
+2024-10-05,Arouca,AVS,0.87,2.03,PrimeiraLiga,2024
+2024-10-05,Sporting CP,Casa Pia,2.71,0.43,PrimeiraLiga,2024
+2024-10-06,Guimaraes,Boavista,2.5,2.57,PrimeiraLiga,2024
+2024-10-06,Farense,Estoril,1.48,1.19,PrimeiraLiga,2024
+2024-10-06,FC Porto,SC Braga,1.21,1.03,PrimeiraLiga,2024
+2024-10-25,Casa Pia,Nacional,0.79,1.04,PrimeiraLiga,2024
+2024-10-25,Santa Clara,GIL Vicente,1.5,0.79,PrimeiraLiga,2024
+2024-10-26,Estoril,Arouca,2.23,1.69,PrimeiraLiga,2024
+2024-10-26,Boavista,Moreirense,0.23,2.0,PrimeiraLiga,2024
+2024-10-26,Famalicao,Sporting CP,0.2,3.6,PrimeiraLiga,2024
+2024-10-27,SC Braga,Farense,3.35,0.2,PrimeiraLiga,2024
+2024-10-27,Benfica,Rio Ave,2.38,0.19,PrimeiraLiga,2024
+2024-10-27,Estrela,Guimaraes,1.19,1.46,PrimeiraLiga,2024
+2024-10-28,AVS,FC Porto,0.24,2.35,PrimeiraLiga,2024
+2024-11-01,Sporting CP,Estrela,3.26,1.83,PrimeiraLiga,2024
+2024-11-02,Rio Ave,Casa Pia,1.05,1.33,PrimeiraLiga,2024
+2024-11-02,Farense,Benfica,0.75,1.5,PrimeiraLiga,2024
+2024-11-02,GIL Vicente,Boavista,0.8,1.76,PrimeiraLiga,2024
+2024-11-03,AVS,Famalicao,1.6,1.9,PrimeiraLiga,2024
+2024-11-03,Guimaraes,Moreirense,0.46,0.36,PrimeiraLiga,2024
+2024-11-03,Arouca,SC Braga,1.78,1.91,PrimeiraLiga,2024
+2024-11-03,FC Porto,Estoril,2.94,1.01,PrimeiraLiga,2024
+2024-11-04,Nacional,Santa Clara,1.35,1.05,PrimeiraLiga,2024
+2024-11-08,Moreirense,GIL Vicente,1.1,0.8,PrimeiraLiga,2024
+2024-11-09,Estoril,AVS,0.29,1.11,PrimeiraLiga,2024
+2024-11-09,Casa Pia,Farense,1.15,1.01,PrimeiraLiga,2024
+2024-11-09,Famalicao,Arouca,0.25,0.5,PrimeiraLiga,2024
+2024-11-09,Boavista,Rio Ave,1.74,0.14,PrimeiraLiga,2024
+2024-11-10,Estrela,Nacional,1.95,0.52,PrimeiraLiga,2024
+2024-11-10,Santa Clara,Guimaraes,3.03,0.54,PrimeiraLiga,2024
+2024-11-10,SC Braga,Sporting CP,0.8,0.9,PrimeiraLiga,2024
+2024-11-10,Benfica,FC Porto,2.08,1.12,PrimeiraLiga,2024
+2024-11-29,Farense,Estrela,1.01,0.37,PrimeiraLiga,2024
+2024-11-30,Rio Ave,Moreirense,1.92,1.38,PrimeiraLiga,2024
+2024-11-30,Nacional,Boavista,0.97,0.81,PrimeiraLiga,2024
+2024-11-30,Sporting CP,Santa Clara,1.51,0.37,PrimeiraLiga,2024
+2024-12-01,Estoril,Famalicao,1.42,1.04,PrimeiraLiga,2024
+2024-12-01,Arouca,Benfica,0.52,2.05,PrimeiraLiga,2024
+2024-12-01,AVS,SC Braga,0.89,3.55,PrimeiraLiga,2024
+2024-12-02,Guimaraes,GIL Vicente,1.71,0.09,PrimeiraLiga,2024
+2024-12-02,FC Porto,Casa Pia,1.82,0.46,PrimeiraLiga,2024
+2024-12-05,Moreirense,Sporting CP,0.3,1.94,PrimeiraLiga,2024
+2024-12-06,SC Braga,Estoril,3.71,1.51,PrimeiraLiga,2024
+2024-12-07,GIL Vicente,Nacional,0.65,2.01,PrimeiraLiga,2024
+2024-12-07,Benfica,Guimaraes,0.79,0.45,PrimeiraLiga,2024
+2024-12-07,Santa Clara,Rio Ave,0.81,0.41,PrimeiraLiga,2024
+2024-12-07,Famalicao,FC Porto,1.23,0.97,PrimeiraLiga,2024
+2024-12-08,Boavista,Farense,1.49,1.44,PrimeiraLiga,2024
+2024-12-08,Casa Pia,AVS,1.32,0.98,PrimeiraLiga,2024
+2024-12-09,Estrela,Arouca,1.07,1.07,PrimeiraLiga,2024
+2024-12-14,Farense,GIL Vicente,0.64,0.38,PrimeiraLiga,2024
+2024-12-14,Nacional,Moreirense,0.6,0.23,PrimeiraLiga,2024
+2024-12-14,Sporting CP,Boavista,1.92,0.72,PrimeiraLiga,2024
+2024-12-15,Arouca,Santa Clara,0.66,0.28,PrimeiraLiga,2024
+2024-12-15,AVS,Benfica,0.77,0.73,PrimeiraLiga,2024
+2024-12-15,Estoril,Casa Pia,0.91,1.63,PrimeiraLiga,2024
+2024-12-16,SC Braga,Famalicao,3.02,0.83,PrimeiraLiga,2024
+2024-12-16,FC Porto,Estrela,1.1,0.13,PrimeiraLiga,2024
+2024-12-16,Rio Ave,Guimaraes,0.18,2.59,PrimeiraLiga,2024
+2024-12-19,Nacional,Benfica,0.15,1.47,PrimeiraLiga,2024
+2024-12-20,Casa Pia,Arouca,0.81,0.62,PrimeiraLiga,2024
+2024-12-21,Famalicao,Farense,1.22,0.25,PrimeiraLiga,2024
+2024-12-21,Boavista,AVS,0.86,1.07,PrimeiraLiga,2024
+2024-12-21,Moreirense,FC Porto,0.31,0.91,PrimeiraLiga,2024
+2024-12-22,Santa Clara,SC Braga,1.41,1.58,PrimeiraLiga,2024
+2024-12-22,GIL Vicente,Sporting CP,0.08,1.16,PrimeiraLiga,2024
+2024-12-23,Benfica,Estoril,2.48,0.45,PrimeiraLiga,2024
+2024-12-23,Guimaraes,Nacional,1.2,0.53,PrimeiraLiga,2024
+2024-12-23,Estrela,Rio Ave,0.7,0.82,PrimeiraLiga,2024
+2024-12-27,Arouca,GIL Vicente,0.51,1.27,PrimeiraLiga,2024
+2024-12-28,AVS,Estrela,1.22,2.02,PrimeiraLiga,2024
+2024-12-28,Estoril,Moreirense,1.12,0.63,PrimeiraLiga,2024
+2024-12-28,FC Porto,Boavista,2.03,0.19,PrimeiraLiga,2024
+2024-12-29,Rio Ave,Nacional,1.9,0.52,PrimeiraLiga,2024
+2024-12-29,Farense,Guimaraes,0.26,2.05,PrimeiraLiga,2024
+2024-12-29,SC Braga,Casa Pia,1.13,1.11,PrimeiraLiga,2024
+2024-12-29,Sporting CP,Benfica,1.14,0.72,PrimeiraLiga,2024
+2024-12-30,Famalicao,Santa Clara,1.04,1.39,PrimeiraLiga,2024
+2025-01-03,Guimaraes,Sporting CP,1.79,1.14,PrimeiraLiga,2024
+2025-01-04,Moreirense,AVS,1.34,1.01,PrimeiraLiga,2024
+2025-01-04,Benfica,SC Braga,1.66,0.56,PrimeiraLiga,2024
+2025-01-04,Boavista,Arouca,0.75,1.98,PrimeiraLiga,2024
+2025-01-05,Santa Clara,Farense,0.63,0.09,PrimeiraLiga,2024
+2025-01-05,Casa Pia,Famalicao,0.69,1.28,PrimeiraLiga,2024
+2025-01-05,Estrela,Estoril,0.91,2.49,PrimeiraLiga,2024
+2025-01-06,GIL Vicente,Rio Ave,1.93,0.56,PrimeiraLiga,2024
+2025-01-12,Nacional,FC Porto,0.92,0.36,PrimeiraLiga,2024
+2025-01-17,Benfica,Famalicao,4.11,0.16,PrimeiraLiga,2024
+2025-01-18,Santa Clara,Estoril,2.02,0.78,PrimeiraLiga,2024
+2025-01-18,Rio Ave,Sporting CP,0.06,4.1,PrimeiraLiga,2024
+2025-01-18,Guimaraes,Arouca,1.13,1.65,PrimeiraLiga,2024
+2025-01-19,Moreirense,Farense,0.59,0.31,PrimeiraLiga,2024
+2025-01-19,Nacional,AVS,1.9,1.55,PrimeiraLiga,2024
+2025-01-19,Estrela,SC Braga,0.28,1.23,PrimeiraLiga,2024
+2025-01-19,GIL Vicente,FC Porto,1.97,1.05,PrimeiraLiga,2024
+2025-01-20,Boavista,Casa Pia,1.16,1.35,PrimeiraLiga,2024
+2025-01-24,Arouca,Moreirense,0.59,0.56,PrimeiraLiga,2024
+2025-01-25,Farense,Rio Ave,2.07,1.4,PrimeiraLiga,2024
+2025-01-25,Famalicao,Estrela,0.55,0.12,PrimeiraLiga,2024
+2025-01-25,Casa Pia,Benfica,1.25,1.93,PrimeiraLiga,2024
+2025-01-25,Sporting CP,Nacional,1.15,0.42,PrimeiraLiga,2024
+2025-01-26,Estoril,Guimaraes,1.07,0.5,PrimeiraLiga,2024
+2025-01-26,FC Porto,Santa Clara,3.19,0.04,PrimeiraLiga,2024
+2025-01-26,SC Braga,Boavista,2.64,0.44,PrimeiraLiga,2024
+2025-01-27,AVS,GIL Vicente,1.33,0.43,PrimeiraLiga,2024
+2025-01-31,Boavista,Famalicao,0.08,1.68,PrimeiraLiga,2024
+2025-02-01,Nacional,Arouca,0.79,1.56,PrimeiraLiga,2024
+2025-02-01,Santa Clara,Casa Pia,1.87,0.25,PrimeiraLiga,2024
+2025-02-01,GIL Vicente,Estoril,1.63,1.59,PrimeiraLiga,2024
+2025-02-01,Guimaraes,AVS,1.27,0.21,PrimeiraLiga,2024
+2025-02-02,Sporting CP,Farense,1.41,0.86,PrimeiraLiga,2024
+2025-02-02,Estrela,Benfica,1.12,1.84,PrimeiraLiga,2024
+2025-02-03,Moreirense,SC Braga,0.65,0.83,PrimeiraLiga,2024
+2025-02-03,Rio Ave,FC Porto,1.38,1.52,PrimeiraLiga,2024
+2025-02-07,FC Porto,Sporting CP,1.34,0.96,PrimeiraLiga,2024
+2025-02-08,AVS,Santa Clara,0.75,1.29,PrimeiraLiga,2024
+2025-02-08,Benfica,Moreirense,1.63,1.12,PrimeiraLiga,2024
+2025-02-08,Famalicao,Guimaraes,0.39,0.4,PrimeiraLiga,2024
+2025-02-09,Estoril,Boavista,1.58,1.25,PrimeiraLiga,2024
+2025-02-09,Farense,Nacional,1.08,0.47,PrimeiraLiga,2024
+2025-02-09,SC Braga,GIL Vicente,1.55,0.36,PrimeiraLiga,2024
+2025-02-09,Casa Pia,Estrela,1.46,0.25,PrimeiraLiga,2024
+2025-02-10,Arouca,Rio Ave,1.49,0.6,PrimeiraLiga,2024
+2025-02-14,Boavista,Estrela,0.51,0.47,PrimeiraLiga,2024
+2025-02-15,Moreirense,Casa Pia,2.15,1.05,PrimeiraLiga,2024
+2025-02-15,Nacional,Estoril,2.39,1.48,PrimeiraLiga,2024
+2025-02-15,Santa Clara,Benfica,0.82,2.59,PrimeiraLiga,2024
+2025-02-15,Sporting CP,Arouca,2.13,2.06,PrimeiraLiga,2024
+2025-02-16,Rio Ave,AVS,1.77,0.68,PrimeiraLiga,2024
+2025-02-16,Farense,FC Porto,0.47,1.31,PrimeiraLiga,2024
+2025-02-16,Guimaraes,SC Braga,1.34,0.11,PrimeiraLiga,2024
+2025-02-17,GIL Vicente,Famalicao,1.42,2.02,PrimeiraLiga,2024
+2025-02-21,SC Braga,Nacional,1.39,0.3,PrimeiraLiga,2024
+2025-02-22,Casa Pia,GIL Vicente,0.79,0.13,PrimeiraLiga,2024
+2025-02-22,Benfica,Boavista,5.44,0.23,PrimeiraLiga,2024
+2025-02-22,Estoril,Rio Ave,1.06,1.31,PrimeiraLiga,2024
+2025-02-23,Arouca,Farense,1.65,0.68,PrimeiraLiga,2024
+2025-02-23,Estrela,Santa Clara,0.75,0.46,PrimeiraLiga,2024
+2025-02-23,AVS,Sporting CP,1.13,1.24,PrimeiraLiga,2024
+2025-02-23,Famalicao,Moreirense,0.85,0.5,PrimeiraLiga,2024
+2025-02-24,FC Porto,Guimaraes,1.02,1.26,PrimeiraLiga,2024
+2025-03-01,Nacional,Famalicao,0.97,1.1,PrimeiraLiga,2024
+2025-03-01,Arouca,FC Porto,0.58,1.51,PrimeiraLiga,2024
+2025-03-01,Guimaraes,Casa Pia,1.69,0.46,PrimeiraLiga,2024
+2025-03-02,Moreirense,Estrela,0.38,1.08,PrimeiraLiga,2024
+2025-03-02,Boavista,Santa Clara,0.67,0.49,PrimeiraLiga,2024
+2025-03-02,Farense,AVS,1.07,1.09,PrimeiraLiga,2024
+2025-03-02,Rio Ave,SC Braga,2.1,0.98,PrimeiraLiga,2024
+2025-03-03,Sporting CP,Estoril,2.2,0.53,PrimeiraLiga,2024
+2025-03-07,Estrela,GIL Vicente,0.45,0.57,PrimeiraLiga,2024
+2025-03-08,AVS,Arouca,0.83,2.35,PrimeiraLiga,2024
+2025-03-08,Benfica,Nacional,4.34,2.4,PrimeiraLiga,2024
+2025-03-08,Estoril,Farense,2.51,1.18,PrimeiraLiga,2024
+2025-03-08,SC Braga,FC Porto,0.21,0.89,PrimeiraLiga,2024
+2025-03-09,Santa Clara,Moreirense,1.64,0.44,PrimeiraLiga,2024
+2025-03-09,Casa Pia,Sporting CP,0.45,2.32,PrimeiraLiga,2024
+2025-03-09,Boavista,Guimaraes,1.43,1.95,PrimeiraLiga,2024
+2025-03-10,Famalicao,Rio Ave,1.54,0.91,PrimeiraLiga,2024
+2025-03-15,Farense,SC Braga,0.43,1.11,PrimeiraLiga,2024
+2025-03-15,GIL Vicente,Santa Clara,0.65,0.48,PrimeiraLiga,2024
+2025-03-15,FC Porto,AVS,1.47,0.98,PrimeiraLiga,2024
+2025-03-15,Sporting CP,Famalicao,3.85,1.04,PrimeiraLiga,2024
+2025-03-16,Nacional,Casa Pia,0.86,1.04,PrimeiraLiga,2024
+2025-03-16,Arouca,Estoril,0.82,2.2,PrimeiraLiga,2024
+2025-03-16,Rio Ave,Benfica,1.29,4.81,PrimeiraLiga,2024
+2025-03-16,Moreirense,Boavista,1.79,0.67,PrimeiraLiga,2024
+2025-03-16,Guimaraes,Estrela,1.0,0.26,PrimeiraLiga,2024
+2025-03-28,GIL Vicente,Benfica,0.23,2.57,PrimeiraLiga,2024
+2025-03-29,Casa Pia,Rio Ave,0.86,2.11,PrimeiraLiga,2024
+2025-03-29,Estrela,Sporting CP,0.35,2.25,PrimeiraLiga,2024
+2025-03-29,SC Braga,Arouca,0.69,0.63,PrimeiraLiga,2024
+2025-03-30,Santa Clara,Nacional,0.83,0.52,PrimeiraLiga,2024
+2025-03-30,Famalicao,AVS,2.37,0.53,PrimeiraLiga,2024
+2025-03-30,Estoril,FC Porto,0.87,1.54,PrimeiraLiga,2024
+2025-03-30,Moreirense,Guimaraes,0.52,1.01,PrimeiraLiga,2024
+2025-04-01,Boavista,GIL Vicente,1.29,1.45,PrimeiraLiga,2024
+2025-04-02,Benfica,Farense,2.34,1.77,PrimeiraLiga,2024
+2025-04-04,AVS,Estoril,0.45,2.59,PrimeiraLiga,2024
+2025-04-05,Arouca,Famalicao,3.21,0.98,PrimeiraLiga,2024
+2025-04-05,Guimaraes,Santa Clara,0.53,1.25,PrimeiraLiga,2024
+2025-04-06,GIL Vicente,Moreirense,0.91,0.77,PrimeiraLiga,2024
+2025-04-06,Nacional,Estrela,0.59,1.05,PrimeiraLiga,2024
+2025-04-06,FC Porto,Benfica,1.17,2.71,PrimeiraLiga,2024
+2025-04-07,Farense,Casa Pia,0.82,0.03,PrimeiraLiga,2024
+2025-04-07,Rio Ave,Boavista,0.92,1.06,PrimeiraLiga,2024
+2025-04-07,Sporting CP,SC Braga,1.26,0.64,PrimeiraLiga,2024
+2025-04-11,GIL Vicente,Guimaraes,0.38,0.67,PrimeiraLiga,2024
+2025-04-12,Boavista,Nacional,1.76,1.1,PrimeiraLiga,2024
+2025-04-12,Famalicao,Estoril,2.17,0.4,PrimeiraLiga,2024
+2025-04-12,Santa Clara,Sporting CP,0.69,0.82,PrimeiraLiga,2024
+2025-04-12,Casa Pia,FC Porto,0.62,0.81,PrimeiraLiga,2024
+2025-04-13,Estrela,Farense,1.43,1.2,PrimeiraLiga,2024
+2025-04-13,Benfica,Arouca,2.86,1.38,PrimeiraLiga,2024
+2025-04-13,SC Braga,AVS,2.11,0.52,PrimeiraLiga,2024
+2025-04-13,Moreirense,Rio Ave,0.36,1.44,PrimeiraLiga,2024
+2025-04-18,Rio Ave,Santa Clara,0.46,1.64,PrimeiraLiga,2024
+2025-04-18,Farense,Boavista,1.09,0.52,PrimeiraLiga,2024
+2025-04-18,FC Porto,Famalicao,0.54,0.39,PrimeiraLiga,2024
+2025-04-18,Sporting CP,Moreirense,2.67,0.32,PrimeiraLiga,2024
+2025-04-19,Nacional,GIL Vicente,0.79,1.62,PrimeiraLiga,2024
+2025-04-19,AVS,Casa Pia,0.88,1.17,PrimeiraLiga,2024
+2025-04-19,Estoril,SC Braga,0.37,0.74,PrimeiraLiga,2024
+2025-04-19,Arouca,Estrela,1.85,0.69,PrimeiraLiga,2024
+2025-04-19,Guimaraes,Benfica,1.59,1.99,PrimeiraLiga,2024
+2025-04-25,Famalicao,SC Braga,2.03,0.85,PrimeiraLiga,2024
+2025-04-26,Santa Clara,Arouca,0.84,0.99,PrimeiraLiga,2024
+2025-04-26,GIL Vicente,Farense,1.47,0.13,PrimeiraLiga,2024
+2025-04-26,Estrela,FC Porto,2.43,0.5,PrimeiraLiga,2024
+2025-04-27,Moreirense,Nacional,0.49,0.52,PrimeiraLiga,2024
+2025-04-27,Benfica,AVS,3.57,0.54,PrimeiraLiga,2024
+2025-04-27,Guimaraes,Rio Ave,1.89,0.5,PrimeiraLiga,2024
+2025-04-27,Boavista,Sporting CP,0.42,4.03,PrimeiraLiga,2024
+2025-04-29,Casa Pia,Estoril,1.88,1.62,PrimeiraLiga,2024
+2025-05-02,FC Porto,Moreirense,1.87,0.34,PrimeiraLiga,2024
+2025-05-03,Nacional,Guimaraes,0.74,0.88,PrimeiraLiga,2024
+2025-05-03,Farense,Famalicao,1.82,0.92,PrimeiraLiga,2024
+2025-05-03,SC Braga,Santa Clara,1.05,0.62,PrimeiraLiga,2024
+2025-05-03,Estoril,Benfica,1.2,1.61,PrimeiraLiga,2024
+2025-05-04,Arouca,Casa Pia,1.07,0.3,PrimeiraLiga,2024
+2025-05-04,Sporting CP,GIL Vicente,0.72,0.79,PrimeiraLiga,2024
+2025-05-05,Rio Ave,Estrela,1.98,0.22,PrimeiraLiga,2024
+2025-05-05,AVS,Boavista,1.22,0.83,PrimeiraLiga,2024
+2025-05-10,Nacional,Rio Ave,1.75,1.17,PrimeiraLiga,2024
+2025-05-10,Santa Clara,Famalicao,3.3,1.39,PrimeiraLiga,2024
+2025-05-10,Benfica,Sporting CP,1.39,0.32,PrimeiraLiga,2024
+2025-05-10,GIL Vicente,Arouca,1.3,0.81,PrimeiraLiga,2024
+2025-05-10,Casa Pia,SC Braga,0.75,1.62,PrimeiraLiga,2024
+2025-05-11,Estrela,AVS,0.89,1.41,PrimeiraLiga,2024
+2025-05-11,Moreirense,Estoril,1.37,1.61,PrimeiraLiga,2024
+2025-05-11,Guimaraes,Farense,2.14,1.59,PrimeiraLiga,2024
+2025-05-11,Boavista,FC Porto,1.75,1.27,PrimeiraLiga,2024
+2025-05-16,Rio Ave,GIL Vicente,0.99,0.79,PrimeiraLiga,2024
+2025-05-16,Famalicao,Casa Pia,3.45,0.26,PrimeiraLiga,2024
+2025-05-17,FC Porto,Nacional,1.88,1.19,PrimeiraLiga,2024
+2025-05-17,SC Braga,Benfica,1.89,1.34,PrimeiraLiga,2024
+2025-05-17,Sporting CP,Guimaraes,2.18,0.04,PrimeiraLiga,2024
+2025-05-17,Estoril,Estrela,2.59,0.62,PrimeiraLiga,2024
+2025-05-17,Farense,Santa Clara,1.56,1.27,PrimeiraLiga,2024
+2025-05-17,Arouca,Boavista,1.48,1.65,PrimeiraLiga,2024
+2025-05-17,AVS,Moreirense,0.32,1.19,PrimeiraLiga,2024

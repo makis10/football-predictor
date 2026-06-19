@@ -1,0 +1,36 @@
+# Git
+.git
+.gitignore
+
+# Python caches
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info
+.eggs
+
+# Virtual envs
+.venv
+venv
+env
+
+# Test / temp DBs
+*.db
+*.sqlite
+
+# Node (frontend built separately)
+frontend/node_modules
+frontend/.next
+
+# IDE
+.idea
+.vscode
+*.swp
+
+# Env files with secrets
+.env
+
+# Docker
+docker-compose.override.yml

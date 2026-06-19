@@ -1,0 +1,381 @@
+date,home_team,away_team,home_xg,away_xg,league,season
+2022-08-12,Osasuna,Sevilla,1.35571,0.965574,LaLiga,2022
+2022-08-13,Celta Vigo,Espanyol,0.347363,1.0334,LaLiga,2022
+2022-08-13,Real Valladolid,Villarreal,0.859075,1.39509,LaLiga,2022
+2022-08-13,Barcelona,Rayo Vallecano,1.37129,0.77153,LaLiga,2022
+2022-08-14,Cadiz,Real Sociedad,0.294358,2.64367,LaLiga,2022
+2022-08-14,Valencia,Girona,1.87878,0.132198,LaLiga,2022
+2022-08-14,Almeria,Real Madrid,0.80073,3.11412,LaLiga,2022
+2022-08-15,Athletic Club,Mallorca,1.60559,0.476414,LaLiga,2022
+2022-08-15,Getafe,Atletico Madrid,1.14045,1.48417,LaLiga,2022
+2022-08-15,Real Betis,Elche,3.99664,0.29379,LaLiga,2022
+2022-08-19,Espanyol,Rayo Vallecano,0.904012,1.69789,LaLiga,2022
+2022-08-19,Sevilla,Real Valladolid,1.95115,0.557629,LaLiga,2022
+2022-08-20,Osasuna,Cadiz,2.92362,1.01741,LaLiga,2022
+2022-08-20,Mallorca,Real Betis,1.46761,2.21648,LaLiga,2022
+2022-08-20,Celta Vigo,Real Madrid,1.31973,3.59631,LaLiga,2022
+2022-08-21,Athletic Club,Valencia,0.761587,0.676158,LaLiga,2022
+2022-08-21,Atletico Madrid,Villarreal,1.5852,1.9825,LaLiga,2022
+2022-08-21,Real Sociedad,Barcelona,0.79913,2.04035,LaLiga,2022
+2022-08-22,Elche,Almeria,0.899007,0.969747,LaLiga,2022
+2022-08-22,Girona,Getafe,1.52171,0.692785,LaLiga,2022
+2022-08-26,Girona,Celta Vigo,0.566228,0.625546,LaLiga,2022
+2022-08-26,Real Betis,Osasuna,0.507146,0.910349,LaLiga,2022
+2022-08-27,Elche,Real Sociedad,1.23504,1.81171,LaLiga,2022
+2022-08-27,Rayo Vallecano,Mallorca,0.864794,0.855715,LaLiga,2022
+2022-08-27,Almeria,Sevilla,2.15407,1.37889,LaLiga,2022
+2022-08-28,Getafe,Villarreal,0.273957,1.13195,LaLiga,2022
+2022-08-28,Barcelona,Real Valladolid,3.28674,0.720063,LaLiga,2022
+2022-08-28,Espanyol,Real Madrid,1.63359,2.04602,LaLiga,2022
+2022-08-29,Cadiz,Athletic Club,0.239303,3.18677,LaLiga,2022
+2022-08-29,Valencia,Atletico Madrid,0.65396,1.97507,LaLiga,2022
+2022-09-02,Celta Vigo,Cadiz,1.50986,0.234828,LaLiga,2022
+2022-09-03,Mallorca,Girona,0.895835,1.09499,LaLiga,2022
+2022-09-03,Real Madrid,Real Betis,3.20593,0.333406,LaLiga,2022
+2022-09-03,Real Sociedad,Atletico Madrid,1.75154,2.24791,LaLiga,2022
+2022-09-03,Sevilla,Barcelona,0.829157,4.67838,LaLiga,2022
+2022-09-04,Osasuna,Rayo Vallecano,3.1751,0.179917,LaLiga,2022
+2022-09-04,Athletic Club,Espanyol,1.24661,1.11365,LaLiga,2022
+2022-09-04,Villarreal,Elche,3.5829,0.21919,LaLiga,2022
+2022-09-04,Valencia,Getafe,2.92757,0.572495,LaLiga,2022
+2022-09-05,Real Valladolid,Almeria,2.12493,0.505353,LaLiga,2022
+2022-09-09,Girona,Real Valladolid,2.59252,0.510622,LaLiga,2022
+2022-09-10,Rayo Vallecano,Valencia,2.01158,2.18195,LaLiga,2022
+2022-09-10,Espanyol,Sevilla,2.37055,2.32043,LaLiga,2022
+2022-09-10,Cadiz,Barcelona,0.24818,2.66856,LaLiga,2022
+2022-09-10,Atletico Madrid,Celta Vigo,0.92341,1.30565,LaLiga,2022
+2022-09-11,Real Madrid,Mallorca,2.21791,0.950984,LaLiga,2022
+2022-09-11,Elche,Athletic Club,0.748083,3.2386,LaLiga,2022
+2022-09-11,Getafe,Real Sociedad,1.06907,1.32142,LaLiga,2022
+2022-09-11,Real Betis,Villarreal,1.61505,2.44235,LaLiga,2022
+2022-09-12,Almeria,Osasuna,0.166505,2.14,LaLiga,2022
+2022-09-16,Real Valladolid,Cadiz,1.98829,0.523314,LaLiga,2022
+2022-09-17,Mallorca,Almeria,0.968715,0.297582,LaLiga,2022
+2022-09-17,Barcelona,Elche,5.17903,0.0129931,LaLiga,2022
+2022-09-17,Valencia,Celta Vigo,1.91153,0.587167,LaLiga,2022
+2022-09-17,Athletic Club,Rayo Vallecano,2.17305,0.62187,LaLiga,2022
+2022-09-18,Osasuna,Getafe,1.1323,1.43239,LaLiga,2022
+2022-09-18,Villarreal,Sevilla,2.10358,0.436539,LaLiga,2022
+2022-09-18,Real Betis,Girona,1.49153,1.34699,LaLiga,2022
+2022-09-18,Real Sociedad,Espanyol,2.35791,1.28945,LaLiga,2022
+2022-09-18,Atletico Madrid,Real Madrid,1.10431,1.09277,LaLiga,2022
+2022-09-30,Athletic Club,Almeria,2.55531,0.42606,LaLiga,2022
+2022-10-01,Cadiz,Villarreal,1.06071,1.43089,LaLiga,2022
+2022-10-01,Getafe,Real Valladolid,2.50588,1.32186,LaLiga,2022
+2022-10-01,Sevilla,Atletico Madrid,0.362804,2.12095,LaLiga,2022
+2022-10-01,Mallorca,Barcelona,0.925106,0.636371,LaLiga,2022
+2022-10-02,Espanyol,Valencia,0.738099,1.35604,LaLiga,2022
+2022-10-02,Celta Vigo,Real Betis,0.892987,1.10607,LaLiga,2022
+2022-10-02,Girona,Real Sociedad,0.932579,2.23639,LaLiga,2022
+2022-10-02,Real Madrid,Osasuna,2.56301,0.466155,LaLiga,2022
+2022-10-03,Rayo Vallecano,Elche,0.651238,0.924633,LaLiga,2022
+2022-10-07,Osasuna,Valencia,1.96282,2.73352,LaLiga,2022
+2022-10-08,Almeria,Rayo Vallecano,1.05684,0.893142,LaLiga,2022
+2022-10-08,Atletico Madrid,Girona,2.19801,0.721587,LaLiga,2022
+2022-10-08,Sevilla,Athletic Club,1.35598,1.91863,LaLiga,2022
+2022-10-08,Getafe,Real Madrid,0.262283,1.48053,LaLiga,2022
+2022-10-09,Real Valladolid,Real Betis,0.662444,0.545154,LaLiga,2022
+2022-10-09,Cadiz,Espanyol,1.33811,1.47057,LaLiga,2022
+2022-10-09,Real Sociedad,Villarreal,2.37138,0.221593,LaLiga,2022
+2022-10-09,Barcelona,Celta Vigo,1.98459,1.35022,LaLiga,2022
+2022-10-10,Elche,Mallorca,0.334856,2.69714,LaLiga,2022
+2022-10-14,Rayo Vallecano,Getafe,1.11946,0.395734,LaLiga,2022
+2022-10-15,Girona,Cadiz,2.36044,1.3467,LaLiga,2022
+2022-10-15,Valencia,Elche,3.04132,1.30317,LaLiga,2022
+2022-10-15,Mallorca,Sevilla,1.41043,0.176713,LaLiga,2022
+2022-10-15,Athletic Club,Atletico Madrid,1.33263,0.463248,LaLiga,2022
+2022-10-16,Celta Vigo,Real Sociedad,0.482536,1.17936,LaLiga,2022
+2022-10-16,Real Madrid,Barcelona,1.46965,1.66548,LaLiga,2022
+2022-10-16,Espanyol,Real Valladolid,1.63127,0.552288,LaLiga,2022
+2022-10-16,Real Betis,Almeria,3.19417,1.11551,LaLiga,2022
+2022-10-17,Villarreal,Osasuna,2.15273,0.33234,LaLiga,2022
+2022-10-18,Sevilla,Valencia,1.19743,1.71123,LaLiga,2022
+2022-10-18,Getafe,Athletic Club,0.753077,1.10208,LaLiga,2022
+2022-10-18,Atletico Madrid,Rayo Vallecano,0.817771,1.61962,LaLiga,2022
+2022-10-19,Cadiz,Real Betis,0.74688,1.22222,LaLiga,2022
+2022-10-19,Real Valladolid,Celta Vigo,1.63342,2.03107,LaLiga,2022
+2022-10-19,Real Sociedad,Mallorca,2.16436,1.09436,LaLiga,2022
+2022-10-19,Elche,Real Madrid,1.04972,1.6151,LaLiga,2022
+2022-10-20,Almeria,Girona,2.08595,2.65444,LaLiga,2022
+2022-10-20,Osasuna,Espanyol,1.02851,1.44867,LaLiga,2022
+2022-10-20,Barcelona,Villarreal,3.61604,0.503294,LaLiga,2022
+2022-10-22,Rayo Vallecano,Cadiz,3.88516,0.642193,LaLiga,2022
+2022-10-22,Real Valladolid,Real Sociedad,0.785666,0.82513,LaLiga,2022
+2022-10-22,Valencia,Mallorca,1.07022,1.25148,LaLiga,2022
+2022-10-22,Real Madrid,Sevilla,2.17678,0.518059,LaLiga,2022
+2022-10-23,Espanyol,Elche,2.18547,0.318561,LaLiga,2022
+2022-10-23,Real Betis,Atletico Madrid,1.33076,0.585496,LaLiga,2022
+2022-10-23,Girona,Osasuna,0.666875,0.693721,LaLiga,2022
+2022-10-23,Villarreal,Almeria,0.852495,1.24152,LaLiga,2022
+2022-10-23,Barcelona,Athletic Club,2.13539,0.240803,LaLiga,2022
+2022-10-24,Celta Vigo,Getafe,0.821869,0.226128,LaLiga,2022
+2022-10-28,Mallorca,Espanyol,1.19,0.248446,LaLiga,2022
+2022-10-29,Almeria,Celta Vigo,2.30529,0.197875,LaLiga,2022
+2022-10-29,Cadiz,Atletico Madrid,1.58908,1.79745,LaLiga,2022
+2022-10-29,Sevilla,Rayo Vallecano,0.978055,0.773435,LaLiga,2022
+2022-10-29,Valencia,Barcelona,0.187414,2.33418,LaLiga,2022
+2022-10-30,Osasuna,Real Valladolid,1.90028,0.330479,LaLiga,2022
+2022-10-30,Real Madrid,Girona,2.65755,1.99848,LaLiga,2022
+2022-10-30,Athletic Club,Villarreal,2.05689,0.221451,LaLiga,2022
+2022-10-30,Real Sociedad,Real Betis,1.28165,1.34514,LaLiga,2022
+2022-10-31,Elche,Getafe,1.22713,0.372744,LaLiga,2022
+2022-11-04,Girona,Athletic Club,1.06554,0.81175,LaLiga,2022
+2022-11-05,Getafe,Cadiz,0.517067,1.24542,LaLiga,2022
+2022-11-05,Real Valladolid,Elche,2.81292,0.198499,LaLiga,2022
+2022-11-05,Celta Vigo,Osasuna,0.824768,0.360091,LaLiga,2022
+2022-11-05,Barcelona,Almeria,4.33587,0.538049,LaLiga,2022
+2022-11-06,Atletico Madrid,Espanyol,2.02314,0.870622,LaLiga,2022
+2022-11-06,Real Sociedad,Valencia,1.45821,0.795825,LaLiga,2022
+2022-11-06,Villarreal,Mallorca,0.429852,0.704012,LaLiga,2022
+2022-11-06,Real Betis,Sevilla,1.13067,1.49591,LaLiga,2022
+2022-11-07,Rayo Vallecano,Real Madrid,1.65854,2.21264,LaLiga,2022
+2022-11-08,Elche,Girona,0.914455,2.20883,LaLiga,2022
+2022-11-08,Athletic Club,Real Valladolid,2.65727,0.481138,LaLiga,2022
+2022-11-08,Osasuna,Barcelona,1.23564,1.01467,LaLiga,2022
+2022-11-09,Almeria,Getafe,0.346293,0.451929,LaLiga,2022
+2022-11-09,Sevilla,Real Sociedad,0.69755,2.18846,LaLiga,2022
+2022-11-09,Espanyol,Villarreal,0.841866,0.750078,LaLiga,2022
+2022-11-09,Mallorca,Atletico Madrid,1.46593,1.50598,LaLiga,2022
+2022-11-10,Rayo Vallecano,Celta Vigo,0.442488,0.677591,LaLiga,2022
+2022-11-10,Valencia,Real Betis,2.2469,0.307626,LaLiga,2022
+2022-11-10,Real Madrid,Cadiz,1.73107,1.11674,LaLiga,2022
+2022-12-29,Girona,Rayo Vallecano,2.26829,1.3213,LaLiga,2022
+2022-12-29,Real Betis,Athletic Club,0.541791,0.358148,LaLiga,2022
+2022-12-29,Atletico Madrid,Elche,1.74436,0.568911,LaLiga,2022
+2022-12-30,Getafe,Mallorca,1.32751,0.359715,LaLiga,2022
+2022-12-30,Celta Vigo,Sevilla,1.66459,0.594381,LaLiga,2022
+2022-12-30,Cadiz,Almeria,1.57833,2.22992,LaLiga,2022
+2022-12-30,Real Valladolid,Real Madrid,0.535068,2.5342,LaLiga,2022
+2022-12-31,Barcelona,Espanyol,2.74555,0.846842,LaLiga,2022
+2022-12-31,Real Sociedad,Osasuna,1.54314,0.305627,LaLiga,2022
+2022-12-31,Villarreal,Valencia,2.37349,1.16707,LaLiga,2022
+2023-01-06,Elche,Celta Vigo,1.14494,1.9713,LaLiga,2022
+2023-01-06,Valencia,Cadiz,0.495475,0.434224,LaLiga,2022
+2023-01-07,Villarreal,Real Madrid,2.41742,2.16674,LaLiga,2022
+2023-01-07,Mallorca,Real Valladolid,1.52838,0.434531,LaLiga,2022
+2023-01-07,Espanyol,Girona,1.26728,1.65781,LaLiga,2022
+2023-01-08,Almeria,Real Sociedad,0.30978,2.11666,LaLiga,2022
+2023-01-08,Rayo Vallecano,Real Betis,1.38976,0.735098,LaLiga,2022
+2023-01-08,Sevilla,Getafe,1.21643,1.17518,LaLiga,2022
+2023-01-08,Atletico Madrid,Barcelona,1.93573,1.23617,LaLiga,2022
+2023-01-09,Athletic Club,Osasuna,1.17556,0.427681,LaLiga,2022
+2023-01-13,Celta Vigo,Villarreal,2.45811,0.105032,LaLiga,2022
+2023-01-14,Real Valladolid,Rayo Vallecano,0.611009,1.16996,LaLiga,2022
+2023-01-14,Girona,Sevilla,2.8461,0.784402,LaLiga,2022
+2023-01-14,Osasuna,Mallorca,1.19142,0.523266,LaLiga,2022
+2023-01-14,Real Sociedad,Athletic Club,1.88839,0.265103,LaLiga,2022
+2023-01-15,Getafe,Espanyol,0.496479,0.460177,LaLiga,2022
+2023-01-15,Almeria,Atletico Madrid,1.08212,2.08354,LaLiga,2022
+2023-01-16,Cadiz,Elche,1.40204,0.654686,LaLiga,2022
+2023-01-20,Mallorca,Celta Vigo,0.403993,0.425448,LaLiga,2022
+2023-01-21,Rayo Vallecano,Real Sociedad,0.64183,1.43612,LaLiga,2022
+2023-01-21,Espanyol,Real Betis,2.16171,0.835514,LaLiga,2022
+2023-01-21,Atletico Madrid,Real Valladolid,4.11414,0.421793,LaLiga,2022
+2023-01-21,Sevilla,Cadiz,1.66028,0.0765073,LaLiga,2022
+2023-01-22,Villarreal,Girona,2.79546,0.637476,LaLiga,2022
+2023-01-22,Elche,Osasuna,2.36237,0.607835,LaLiga,2022
+2023-01-22,Barcelona,Getafe,0.712066,1.2457,LaLiga,2022
+2023-01-22,Athletic Club,Real Madrid,1.15604,0.946951,LaLiga,2022
+2023-01-23,Valencia,Almeria,2.70702,1.68834,LaLiga,2022
+2023-01-27,Almeria,Espanyol,2.17998,0.805809,LaLiga,2022
+2023-01-28,Cadiz,Mallorca,1.8313,0.306812,LaLiga,2022
+2023-01-28,Girona,Barcelona,0.893789,0.981042,LaLiga,2022
+2023-01-28,Sevilla,Elche,3.27297,0.340633,LaLiga,2022
+2023-01-28,Getafe,Real Betis,0.206383,2.00036,LaLiga,2022
+2023-01-29,Real Valladolid,Valencia,1.47049,1.05725,LaLiga,2022
+2023-01-29,Osasuna,Atletico Madrid,0.741393,1.29745,LaLiga,2022
+2023-01-29,Celta Vigo,Athletic Club,0.614646,0.232576,LaLiga,2022
+2023-01-29,Real Madrid,Real Sociedad,1.40476,0.370087,LaLiga,2022
+2023-01-30,Villarreal,Rayo Vallecano,1.19676,0.830107,LaLiga,2022
+2023-02-01,Real Betis,Barcelona,0.760581,2.38335,LaLiga,2022
+2023-02-02,Real Madrid,Valencia,2.60454,0.213484,LaLiga,2022
+2023-02-03,Athletic Club,Cadiz,2.30209,1.55348,LaLiga,2022
+2023-02-04,Espanyol,Osasuna,1.56394,0.919455,LaLiga,2022
+2023-02-04,Elche,Villarreal,2.88986,1.48923,LaLiga,2022
+2023-02-04,Atletico Madrid,Getafe,1.01341,1.13659,LaLiga,2022
+2023-02-04,Real Betis,Celta Vigo,3.54117,2.30434,LaLiga,2022
+2023-02-05,Mallorca,Real Madrid,0.241595,1.39842,LaLiga,2022
+2023-02-05,Girona,Valencia,2.57015,0.877751,LaLiga,2022
+2023-02-05,Real Sociedad,Real Valladolid,1.21593,0.781504,LaLiga,2022
+2023-02-05,Barcelona,Sevilla,3.09763,0.0413799,LaLiga,2022
+2023-02-06,Rayo Vallecano,Almeria,1.38079,1.37549,LaLiga,2022
+2023-02-10,Cadiz,Girona,0.717862,0.213596,LaLiga,2022
+2023-02-11,Almeria,Real Betis,2.00937,3.30673,LaLiga,2022
+2023-02-11,Sevilla,Mallorca,2.16804,0.206824,LaLiga,2022
+2023-02-11,Valencia,Athletic Club,1.6755,1.34748,LaLiga,2022
+2023-02-12,Getafe,Rayo Vallecano,1.23739,1.70522,LaLiga,2022
+2023-02-12,Celta Vigo,Atletico Madrid,1.057,0.955578,LaLiga,2022
+2023-02-12,Real Valladolid,Osasuna,1.96448,1.03574,LaLiga,2022
+2023-02-12,Villarreal,Barcelona,1.05151,1.37827,LaLiga,2022
+2023-02-13,Espanyol,Real Sociedad,1.25733,1.20722,LaLiga,2022
+2023-02-15,Real Madrid,Elche,4.04364,0.619125,LaLiga,2022
+2023-02-17,Girona,Almeria,3.22586,1.23696,LaLiga,2022
+2023-02-18,Real Sociedad,Celta Vigo,1.52902,1.34253,LaLiga,2022
+2023-02-18,Real Betis,Real Valladolid,2.21822,0.97905,LaLiga,2022
+2023-02-18,Mallorca,Villarreal,2.74393,1.01893,LaLiga,2022
+2023-02-18,Osasuna,Real Madrid,0.400542,1.86475,LaLiga,2022
+2023-02-19,Elche,Espanyol,1.60154,1.35887,LaLiga,2022
+2023-02-19,Rayo Vallecano,Sevilla,1.37468,0.476153,LaLiga,2022
+2023-02-19,Atletico Madrid,Athletic Club,1.06493,1.00816,LaLiga,2022
+2023-02-19,Barcelona,Cadiz,2.28935,1.404,LaLiga,2022
+2023-02-20,Getafe,Valencia,2.13388,1.09398,LaLiga,2022
+2023-02-24,Elche,Real Betis,0.883935,4.05176,LaLiga,2022
+2023-02-25,Espanyol,Mallorca,1.99389,0.557974,LaLiga,2022
+2023-02-25,Cadiz,Rayo Vallecano,0.816453,0.407208,LaLiga,2022
+2023-02-25,Real Madrid,Atletico Madrid,1.56317,0.217661,LaLiga,2022
+2023-02-25,Valencia,Real Sociedad,0.636111,0.817876,LaLiga,2022
+2023-02-26,Athletic Club,Girona,1.34464,1.33877,LaLiga,2022
+2023-02-26,Celta Vigo,Real Valladolid,2.97597,0.902118,LaLiga,2022
+2023-02-26,Almeria,Barcelona,0.828027,1.15571,LaLiga,2022
+2023-02-26,Sevilla,Osasuna,2.38177,1.34283,LaLiga,2022
+2023-02-27,Villarreal,Getafe,1.9115,0.467981,LaLiga,2022
+2023-03-03,Real Sociedad,Cadiz,1.07575,0.847252,LaLiga,2022
+2023-03-04,Getafe,Girona,1.86918,0.845978,LaLiga,2022
+2023-03-04,Almeria,Villarreal,0.371041,2.37286,LaLiga,2022
+2023-03-04,Mallorca,Elche,0.96231,0.957134,LaLiga,2022
+2023-03-04,Atletico Madrid,Sevilla,3.05182,1.76791,LaLiga,2022
+2023-03-05,Real Valladolid,Espanyol,1.38048,0.946065,LaLiga,2022
+2023-03-05,Barcelona,Valencia,2.09199,0.629336,LaLiga,2022
+2023-03-05,Rayo Vallecano,Athletic Club,0.853959,1.25683,LaLiga,2022
+2023-03-05,Real Betis,Real Madrid,0.59294,1.14462,LaLiga,2022
+2023-03-06,Osasuna,Celta Vigo,1.16313,0.726128,LaLiga,2022
+2023-03-10,Cadiz,Getafe,1.73207,2.6986,LaLiga,2022
+2023-03-11,Real Madrid,Espanyol,1.78234,1.10182,LaLiga,2022
+2023-03-11,Elche,Real Valladolid,2.80287,0.246865,LaLiga,2022
+2023-03-11,Celta Vigo,Rayo Vallecano,2.13766,0.697265,LaLiga,2022
+2023-03-11,Valencia,Osasuna,1.84171,0.257674,LaLiga,2022
+2023-03-12,Mallorca,Real Sociedad,1.4638,0.683339,LaLiga,2022
+2023-03-12,Sevilla,Almeria,3.15875,1.51939,LaLiga,2022
+2023-03-12,Villarreal,Real Betis,1.33264,1.03133,LaLiga,2022
+2023-03-12,Athletic Club,Barcelona,1.13701,0.724931,LaLiga,2022
+2023-03-13,Girona,Atletico Madrid,0.301909,1.80682,LaLiga,2022
+2023-03-17,Real Valladolid,Athletic Club,1.08382,2.34513,LaLiga,2022
+2023-03-18,Almeria,Cadiz,2.69365,1.13127,LaLiga,2022
+2023-03-18,Rayo Vallecano,Girona,1.71981,1.50856,LaLiga,2022
+2023-03-18,Espanyol,Celta Vigo,1.7106,1.63211,LaLiga,2022
+2023-03-18,Atletico Madrid,Valencia,3.36294,0.68946,LaLiga,2022
+2023-03-19,Real Betis,Mallorca,0.606846,0.140478,LaLiga,2022
+2023-03-19,Osasuna,Villarreal,1.15562,1.5875,LaLiga,2022
+2023-03-19,Real Sociedad,Elche,2.69405,0.0819691,LaLiga,2022
+2023-03-19,Getafe,Sevilla,2.0733,0.81914,LaLiga,2022
+2023-03-19,Barcelona,Real Madrid,1.66532,0.524212,LaLiga,2022
+2023-03-31,Mallorca,Osasuna,0.433196,0.507781,LaLiga,2022
+2023-04-01,Girona,Espanyol,1.45036,0.946182,LaLiga,2022
+2023-04-01,Athletic Club,Getafe,0.751393,0.723494,LaLiga,2022
+2023-04-01,Cadiz,Sevilla,0.691241,1.72869,LaLiga,2022
+2023-04-01,Elche,Barcelona,0.508304,1.61804,LaLiga,2022
+2023-04-02,Celta Vigo,Almeria,2.13933,1.23651,LaLiga,2022
+2023-04-02,Real Madrid,Real Valladolid,4.82721,0.719567,LaLiga,2022
+2023-04-02,Villarreal,Real Sociedad,2.80501,0.912497,LaLiga,2022
+2023-04-02,Atletico Madrid,Real Betis,1.70131,0.371436,LaLiga,2022
+2023-04-03,Valencia,Rayo Vallecano,2.71116,0.645345,LaLiga,2022
+2023-04-07,Sevilla,Celta Vigo,0.475247,0.611169,LaLiga,2022
+2023-04-08,Osasuna,Elche,1.68972,0.657812,LaLiga,2022
+2023-04-08,Espanyol,Athletic Club,1.16752,2.73876,LaLiga,2022
+2023-04-08,Real Sociedad,Getafe,2.1178,0.243923,LaLiga,2022
+2023-04-08,Real Madrid,Villarreal,2.23296,1.24489,LaLiga,2022
+2023-04-09,Real Valladolid,Mallorca,0.948859,1.98329,LaLiga,2022
+2023-04-09,Real Betis,Cadiz,1.58835,2.85597,LaLiga,2022
+2023-04-09,Almeria,Valencia,1.49927,1.08869,LaLiga,2022
+2023-04-09,Rayo Vallecano,Atletico Madrid,0.564426,2.36535,LaLiga,2022
+2023-04-10,Barcelona,Girona,1.05077,0.491057,LaLiga,2022
+2023-04-14,Rayo Vallecano,Osasuna,1.08431,0.373133,LaLiga,2022
+2023-04-15,Villarreal,Real Valladolid,1.99484,2.41465,LaLiga,2022
+2023-04-15,Athletic Club,Real Sociedad,1.00026,1.71232,LaLiga,2022
+2023-04-15,Real Betis,Espanyol,1.965,0.616302,LaLiga,2022
+2023-04-15,Cadiz,Real Madrid,0.583718,4.49059,LaLiga,2022
+2023-04-16,Girona,Elche,1.22906,0.577847,LaLiga,2022
+2023-04-16,Getafe,Barcelona,0.621219,1.04627,LaLiga,2022
+2023-04-16,Atletico Madrid,Almeria,2.51151,0.058186,LaLiga,2022
+2023-04-16,Valencia,Sevilla,0.527847,1.46976,LaLiga,2022
+2023-04-17,Celta Vigo,Mallorca,0.469148,1.18361,LaLiga,2022
+2023-04-21,Espanyol,Cadiz,1.52285,1.12699,LaLiga,2022
+2023-04-22,Osasuna,Real Betis,1.63275,1.99331,LaLiga,2022
+2023-04-22,Almeria,Athletic Club,0.573355,1.83476,LaLiga,2022
+2023-04-22,Real Sociedad,Rayo Vallecano,0.814682,0.359842,LaLiga,2022
+2023-04-22,Real Valladolid,Girona,1.11143,1.0586,LaLiga,2022
+2023-04-22,Real Madrid,Celta Vigo,1.81403,0.744532,LaLiga,2022
+2023-04-23,Elche,Valencia,0.795158,1.05313,LaLiga,2022
+2023-04-23,Barcelona,Atletico Madrid,2.12803,0.714419,LaLiga,2022
+2023-04-23,Mallorca,Getafe,1.917,0.118861,LaLiga,2022
+2023-04-23,Sevilla,Villarreal,0.853114,2.13506,LaLiga,2022
+2023-04-25,Cadiz,Osasuna,1.4054,0.865548,LaLiga,2022
+2023-04-25,Girona,Real Madrid,2.4202,1.63006,LaLiga,2022
+2023-04-25,Real Betis,Real Sociedad,0.7286,0.607061,LaLiga,2022
+2023-04-26,Atletico Madrid,Mallorca,2.61545,0.741129,LaLiga,2022
+2023-04-26,Getafe,Almeria,1.66712,2.08963,LaLiga,2022
+2023-04-26,Celta Vigo,Elche,1.4351,1.48138,LaLiga,2022
+2023-04-26,Rayo Vallecano,Barcelona,0.862266,1.00988,LaLiga,2022
+2023-04-27,Valencia,Real Valladolid,0.900084,0.993149,LaLiga,2022
+2023-04-27,Villarreal,Espanyol,4.94822,1.12119,LaLiga,2022
+2023-04-27,Athletic Club,Sevilla,0.194682,1.00143,LaLiga,2022
+2023-04-28,Osasuna,Real Sociedad,0.987164,2.09575,LaLiga,2022
+2023-04-29,Elche,Rayo Vallecano,3.37969,0.565048,LaLiga,2022
+2023-04-29,Real Madrid,Almeria,3.20538,1.375,LaLiga,2022
+2023-04-29,Barcelona,Real Betis,3.0864,0.231066,LaLiga,2022
+2023-04-30,Cadiz,Valencia,2.16593,1.05204,LaLiga,2022
+2023-04-30,Villarreal,Celta Vigo,2.36969,0.746823,LaLiga,2022
+2023-04-30,Espanyol,Getafe,2.44417,0.410072,LaLiga,2022
+2023-04-30,Real Valladolid,Atletico Madrid,1.46642,2.75586,LaLiga,2022
+2023-05-01,Mallorca,Athletic Club,1.2911,1.3765,LaLiga,2022
+2023-05-01,Sevilla,Girona,2.35198,1.13007,LaLiga,2022
+2023-05-02,Barcelona,Osasuna,2.40046,0.355588,LaLiga,2022
+2023-05-02,Almeria,Elche,1.82539,1.01416,LaLiga,2022
+2023-05-02,Real Sociedad,Real Madrid,2.26252,0.867228,LaLiga,2022
+2023-05-03,Valencia,Villarreal,1.04163,0.742844,LaLiga,2022
+2023-05-03,Atletico Madrid,Cadiz,4.25954,0.0260457,LaLiga,2022
+2023-05-03,Getafe,Celta Vigo,2.8705,0.219098,LaLiga,2022
+2023-05-04,Girona,Mallorca,2.20534,1.34254,LaLiga,2022
+2023-05-04,Sevilla,Espanyol,2.902,0.61847,LaLiga,2022
+2023-05-04,Athletic Club,Real Betis,1.01449,0.753982,LaLiga,2022
+2023-05-04,Rayo Vallecano,Real Valladolid,1.57028,0.571427,LaLiga,2022
+2023-05-12,Mallorca,Cadiz,1.6025,0.611231,LaLiga,2022
+2023-05-13,Real Sociedad,Girona,3.05494,1.4691,LaLiga,2022
+2023-05-13,Osasuna,Almeria,1.87424,0.507884,LaLiga,2022
+2023-05-13,Villarreal,Athletic Club,3.09272,1.82199,LaLiga,2022
+2023-05-13,Real Madrid,Getafe,0.879325,0.586304,LaLiga,2022
+2023-05-14,Celta Vigo,Valencia,1.216,1.86638,LaLiga,2022
+2023-05-14,Elche,Atletico Madrid,2.28487,1.44785,LaLiga,2022
+2023-05-14,Real Valladolid,Sevilla,2.01745,3.05781,LaLiga,2022
+2023-05-14,Espanyol,Barcelona,2.72734,3.6498,LaLiga,2022
+2023-05-15,Real Betis,Rayo Vallecano,2.69596,1.71956,LaLiga,2022
+2023-05-19,Cadiz,Real Valladolid,2.1319,0.20683,LaLiga,2022
+2023-05-20,Girona,Villarreal,1.31674,1.71579,LaLiga,2022
+2023-05-20,Athletic Club,Celta Vigo,1.04201,0.283064,LaLiga,2022
+2023-05-20,Almeria,Mallorca,1.70726,0.35959,LaLiga,2022
+2023-05-20,Getafe,Elche,1.58846,1.34186,LaLiga,2022
+2023-05-20,Barcelona,Real Sociedad,1.8413,2.8035,LaLiga,2022
+2023-05-21,Rayo Vallecano,Espanyol,1.83113,1.3061,LaLiga,2022
+2023-05-21,Atletico Madrid,Osasuna,2.08773,0.714505,LaLiga,2022
+2023-05-21,Valencia,Real Madrid,1.49126,2.08896,LaLiga,2022
+2023-05-21,Sevilla,Real Betis,1.51947,0.114129,LaLiga,2022
+2023-05-23,Celta Vigo,Girona,0.933339,1.40034,LaLiga,2022
+2023-05-23,Real Sociedad,Almeria,1.91983,0.0996009,LaLiga,2022
+2023-05-23,Real Valladolid,Barcelona,2.20591,1.72866,LaLiga,2022
+2023-05-24,Elche,Sevilla,1.35854,0.889054,LaLiga,2022
+2023-05-24,Villarreal,Cadiz,2.9741,2.09634,LaLiga,2022
+2023-05-24,Real Madrid,Rayo Vallecano,1.66281,0.446413,LaLiga,2022
+2023-05-24,Real Betis,Getafe,1.09282,0.344449,LaLiga,2022
+2023-05-24,Espanyol,Atletico Madrid,3.03603,2.76349,LaLiga,2022
+2023-05-25,Mallorca,Valencia,0.538476,2.073,LaLiga,2022
+2023-05-25,Osasuna,Athletic Club,0.906699,0.534145,LaLiga,2022
+2023-05-27,Sevilla,Real Madrid,0.980153,0.815661,LaLiga,2022
+2023-05-28,Athletic Club,Elche,2.91389,0.769369,LaLiga,2022
+2023-05-28,Atletico Madrid,Real Sociedad,0.818599,0.943774,LaLiga,2022
+2023-05-28,Barcelona,Mallorca,4.40817,0.124265,LaLiga,2022
+2023-05-28,Getafe,Osasuna,2.7187,0.432264,LaLiga,2022
+2023-05-28,Cadiz,Celta Vigo,1.59827,0.599427,LaLiga,2022
+2023-05-28,Rayo Vallecano,Villarreal,1.16605,0.622891,LaLiga,2022
+2023-05-28,Almeria,Real Valladolid,1.5528,0.364363,LaLiga,2022
+2023-05-28,Girona,Real Betis,1.63315,2.32066,LaLiga,2022
+2023-05-28,Valencia,Espanyol,2.5327,1.78056,LaLiga,2022
+2023-06-04,Real Madrid,Athletic Club,1.72224,2.17987,LaLiga,2022
+2023-06-04,Villarreal,Atletico Madrid,2.06391,1.16068,LaLiga,2022
+2023-06-04,Celta Vigo,Barcelona,0.565601,1.41678,LaLiga,2022
+2023-06-04,Real Valladolid,Getafe,0.686831,0.27917,LaLiga,2022
+2023-06-04,Elche,Cadiz,1.534,2.22255,LaLiga,2022
+2023-06-04,Espanyol,Almeria,0.500084,2.03499,LaLiga,2022
+2023-06-04,Osasuna,Girona,1.91718,0.822488,LaLiga,2022
+2023-06-04,Real Betis,Valencia,0.677919,0.845969,LaLiga,2022
+2023-06-04,Mallorca,Rayo Vallecano,2.25123,1.04004,LaLiga,2022
+2023-06-04,Real Sociedad,Sevilla,2.35387,0.461529,LaLiga,2022

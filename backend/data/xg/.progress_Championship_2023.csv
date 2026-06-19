@@ -1,0 +1,551 @@
+fixture_id,date,home_team,away_team,home_xg,away_xg,league,season
+1047434,2023-08-04,Sheffield Wednesday,Southampton,0.56,1.39,Championship,2023
+1047442,2023-08-05,Watford,QPR,2.67,0.4,Championship,2023
+1047436,2023-08-05,Bristol City,Preston,0.9,1.06,Championship,2023
+1047435,2023-08-05,Blackburn,West Brom,1.45,0.83,Championship,2023
+1047437,2023-08-05,Middlesbrough,Millwall,0.74,1.23,Championship,2023
+1047438,2023-08-05,Norwich,Hull City,2.58,0.37,Championship,2023
+1047440,2023-08-05,Stoke City,Rotherham,2.42,0.86,Championship,2023
+1047441,2023-08-05,Swansea,Birmingham,1.37,0.77,Championship,2023
+1047439,2023-08-05,Plymouth,Huddersfield,2.17,2.02,Championship,2023
+1047443,2023-08-06,Leicester,Coventry,1.51,1.86,Championship,2023
+1047444,2023-08-06,Leeds,Cardiff,1.77,1.34,Championship,2023
+1047445,2023-08-06,Sunderland,Ipswich,1.92,1.26,Championship,2023
+1047446,2023-08-12,Coventry,Middlesbrough,0.95,1.33,Championship,2023
+1047449,2023-08-12,Huddersfield,Leicester,1.11,1.32,Championship,2023
+1047456,2023-08-12,Watford,Plymouth,1.35,0.88,Championship,2023
+1047455,2023-08-12,Southampton,Norwich,3.76,2.06,Championship,2023
+1047448,2023-08-12,Cardiff,QPR,2.06,1.35,Championship,2023
+1047447,2023-08-12,Birmingham,Leeds,1.56,0.36,Championship,2023
+1047451,2023-08-12,Ipswich,Stoke City,1.93,0.61,Championship,2023
+1047452,2023-08-12,Millwall,Bristol City,0.49,0.94,Championship,2023
+1047453,2023-08-12,Preston,Sunderland,0.63,1.44,Championship,2023
+1047457,2023-08-12,West Brom,Swansea,1.55,2.32,Championship,2023
+1047450,2023-08-12,Hull City,Sheffield Wednesday,1.96,0.52,Championship,2023
+1047454,2023-08-12,Rotherham,Blackburn,0.72,2.7,Championship,2023
+1047458,2023-08-18,Leeds,West Brom,1.57,0.35,Championship,2023
+1047459,2023-08-19,Plymouth,Southampton,1.39,2.18,Championship,2023
+1047462,2023-08-19,Leicester,Cardiff,0.69,0.87,Championship,2023
+1047461,2023-08-19,Bristol City,Birmingham,0.81,1.4,Championship,2023
+1047460,2023-08-19,Blackburn,Hull City,1.61,2.1,Championship,2023
+1047463,2023-08-19,Middlesbrough,Huddersfield,1.99,1.31,Championship,2023
+1047464,2023-08-19,QPR,Ipswich,1.3,1.34,Championship,2023
+1047465,2023-08-19,Sheffield Wednesday,Preston,0.45,0.4,Championship,2023
+1047466,2023-08-19,Stoke City,Watford,0.95,0.71,Championship,2023
+1047468,2023-08-19,Swansea,Coventry,0.73,0.86,Championship,2023
+1047467,2023-08-19,Sunderland,Rotherham,1.34,0.69,Championship,2023
+1047469,2023-08-20,Norwich,Millwall,1.73,0.49,Championship,2023
+1047470,2023-08-25,Hull City,Bristol City,1.48,3.62,Championship,2023
+1047474,2023-08-26,Huddersfield,Norwich,0.98,2.69,Championship,2023
+1047479,2023-08-26,Southampton,QPR,0.42,0.64,Championship,2023
+1047472,2023-08-26,Cardiff,Sheffield Wednesday,2.09,0.9,Championship,2023
+1047471,2023-08-26,Birmingham,Plymouth,2.18,1.41,Championship,2023
+1047475,2023-08-26,Ipswich,Leeds,2.47,1.63,Championship,2023
+1047476,2023-08-26,Millwall,Stoke City,0.98,1.67,Championship,2023
+1047477,2023-08-26,Preston,Swansea,0.59,0.35,Championship,2023
+1047481,2023-08-26,West Brom,Middlesbrough,0.66,1.79,Championship,2023
+1047478,2023-08-26,Rotherham,Leicester,0.64,1.4,Championship,2023
+1047473,2023-08-26,Coventry,Sunderland,1.31,0.69,Championship,2023
+1047480,2023-08-27,Watford,Blackburn,1.39,0.45,Championship,2023
+1047482,2023-09-02,Birmingham,Millwall,1.84,0.5,Championship,2023
+1047492,2023-09-02,Swansea,Bristol City,1.44,2.3,Championship,2023
+1047491,2023-09-02,Sunderland,Southampton,1.94,0.84,Championship,2023
+1047486,2023-09-02,Leicester,Hull City,1.28,0.36,Championship,2023
+1047484,2023-09-02,Ipswich,Cardiff,2.36,1.67,Championship,2023
+1047493,2023-09-02,West Brom,Huddersfield,1.06,0.79,Championship,2023
+1047485,2023-09-02,Leeds,Sheffield Wednesday,1.28,1.02,Championship,2023
+1047487,2023-09-02,Middlesbrough,QPR,1.31,0.6,Championship,2023
+1047489,2023-09-02,Rotherham,Norwich,0.55,1.24,Championship,2023
+1047490,2023-09-02,Stoke City,Preston,2.13,2.02,Championship,2023
+1047483,2023-09-02,Coventry,Watford,2.11,1.27,Championship,2023
+1047488,2023-09-02,Plymouth,Blackburn,1.23,1.49,Championship,2023
+1047494,2023-09-15,Hull City,Coventry,1.47,0.47,Championship,2023
+1047504,2023-09-15,Southampton,Leicester,1.56,4.14,Championship,2023
+1047498,2023-09-16,Huddersfield,Rotherham,1.92,0.37,Championship,2023
+1047505,2023-09-16,Watford,Birmingham,0.41,0.85,Championship,2023
+1047496,2023-09-16,Bristol City,West Brom,1.02,0.53,Championship,2023
+1047501,2023-09-16,Preston,Plymouth,1.52,1.51,Championship,2023
+1047495,2023-09-16,Blackburn,Middlesbrough,2.18,2.56,Championship,2023
+1047500,2023-09-16,Norwich,Stoke City,1.29,1.2,Championship,2023
+1047502,2023-09-16,QPR,Sunderland,0.3,2.42,Championship,2023
+1047503,2023-09-16,Sheffield Wednesday,Ipswich,0.46,1.67,Championship,2023
+1047497,2023-09-16,Cardiff,Swansea,1.53,0.6,Championship,2023
+1047499,2023-09-17,Millwall,Leeds,0.45,2.59,Championship,2023
+1047511,2023-09-19,Southampton,Ipswich,0.84,0.67,Championship,2023
+1047507,2023-09-19,Cardiff,Coventry,0.56,0.91,Championship,2023
+1047506,2023-09-19,Bristol City,Plymouth,1.61,0.58,Championship,2023
+1047508,2023-09-19,Preston,Birmingham,0.6,1.14,Championship,2023
+1047509,2023-09-19,QPR,Swansea,1.05,0.57,Championship,2023
+1047510,2023-09-19,Sheffield Wednesday,Middlesbrough,1.36,0.69,Championship,2023
+1047513,2023-09-20,Huddersfield,Stoke City,0.98,2.75,Championship,2023
+1047517,2023-09-20,Watford,West Brom,0.89,0.65,Championship,2023
+1047515,2023-09-20,Millwall,Rotherham,1.47,0.41,Championship,2023
+1047514,2023-09-20,Hull City,Leeds,1.01,1.49,Championship,2023
+1047512,2023-09-20,Blackburn,Sunderland,2.74,1.92,Championship,2023
+1047516,2023-09-20,Norwich,Leicester,0.81,1.97,Championship,2023
+1047518,2023-09-22,Birmingham,QPR,1.16,0.95,Championship,2023
+1047522,2023-09-23,Leicester,Bristol City,2.1,0.27,Championship,2023
+1047520,2023-09-23,Ipswich,Blackburn,3.01,0.8,Championship,2023
+1047529,2023-09-23,West Brom,Millwall,1.81,1.17,Championship,2023
+1047521,2023-09-23,Leeds,Watford,2.34,0.18,Championship,2023
+1047523,2023-09-23,Middlesbrough,Southampton,3.11,1.44,Championship,2023
+1047525,2023-09-23,Rotherham,Preston,0.09,1.76,Championship,2023
+1047528,2023-09-23,Swansea,Sheffield Wednesday,1.97,0.81,Championship,2023
+1047524,2023-09-23,Plymouth,Norwich,3.17,1.93,Championship,2023
+1047526,2023-09-24,Stoke City,Hull City,0.55,1.31,Championship,2023
+1047527,2023-09-24,Sunderland,Cardiff,1.19,1.67,Championship,2023
+1047519,2023-09-25,Coventry,Huddersfield,2.01,0.77,Championship,2023
+1047539,2023-09-29,Sheffield Wednesday,Sunderland,0.52,1.57,Championship,2023
+1047540,2023-09-30,Southampton,Leeds,1.48,0.92,Championship,2023
+1047533,2023-09-30,Huddersfield,Ipswich,1.32,1.36,Championship,2023
+1047541,2023-09-30,Watford,Middlesbrough,1.45,1.03,Championship,2023
+1047532,2023-09-30,Cardiff,Rotherham,1.25,0.59,Championship,2023
+1047531,2023-09-30,Bristol City,Stoke City,1.2,0.96,Championship,2023
+1047535,2023-09-30,Millwall,Swansea,1.39,1.2,Championship,2023
+1047537,2023-09-30,Preston,West Brom,0.35,1.31,Championship,2023
+1047534,2023-09-30,Hull City,Plymouth,1.73,0.7,Championship,2023
+1047536,2023-09-30,Norwich,Birmingham,1.27,1.14,Championship,2023
+1047538,2023-09-30,QPR,Coventry,0.93,1.47,Championship,2023
+1047530,2023-10-01,Blackburn,Leicester,1.42,1.8,Championship,2023
+1047542,2023-10-03,Birmingham,Huddersfield,1.78,2.31,Championship,2023
+1047543,2023-10-03,Ipswich,Hull City,0.94,0.89,Championship,2023
+1047544,2023-10-03,Middlesbrough,Cardiff,1.56,0.36,Championship,2023
+1047545,2023-10-03,Plymouth,Millwall,0.75,0.95,Championship,2023
+1047547,2023-10-03,West Brom,Sheffield Wednesday,1.21,0.16,Championship,2023
+1047546,2023-10-03,Stoke City,Southampton,0.66,0.92,Championship,2023
+1047550,2023-10-04,Leicester,Preston,1.48,0.43,Championship,2023
+1047549,2023-10-04,Leeds,QPR,1.89,0.3,Championship,2023
+1047553,2023-10-04,Swansea,Norwich,2.36,1.47,Championship,2023
+1047552,2023-10-04,Sunderland,Watford,1.25,0.46,Championship,2023
+1047548,2023-10-04,Coventry,Blackburn,0.88,0.74,Championship,2023
+1047551,2023-10-04,Rotherham,Bristol City,1.32,0.64,Championship,2023
+1047554,2023-10-06,Birmingham,West Brom,1.48,1.17,Championship,2023
+1047564,2023-10-07,Sunderland,Middlesbrough,0.55,2.53,Championship,2023
+1047563,2023-10-07,Southampton,Rotherham,3.3,0.14,Championship,2023
+1052667,2023-10-07,Cardiff,Watford,0.69,2.04,Championship,2023
+1047558,2023-10-07,Leicester,Stoke City,1.86,0.34,Championship,2023
+1047556,2023-10-07,Ipswich,Preston,2.3,0.4,Championship,2023
+1047559,2023-10-07,Millwall,Hull City,0.87,1.19,Championship,2023
+1047557,2023-10-07,Leeds,Bristol City,2.51,0.55,Championship,2023
+1047561,2023-10-07,QPR,Blackburn,1.06,1.99,Championship,2023
+1047562,2023-10-07,Sheffield Wednesday,Huddersfield,0.72,0.68,Championship,2023
+1047555,2023-10-07,Coventry,Norwich,1.91,0.39,Championship,2023
+1047560,2023-10-07,Plymouth,Swansea,1.2,2.24,Championship,2023
+1047571,2023-10-21,Preston,Millwall,0.48,0.34,Championship,2023
+1047567,2023-10-21,Huddersfield,QPR,0.47,1.04,Championship,2023
+1047575,2023-10-21,Watford,Sheffield Wednesday,0.45,0.39,Championship,2023
+1047566,2023-10-21,Bristol City,Coventry,0.36,0.49,Championship,2023
+1047576,2023-10-21,West Brom,Plymouth,0.75,0.48,Championship,2023
+1047568,2023-10-21,Hull City,Southampton,1.24,1.5,Championship,2023
+1047565,2023-10-21,Blackburn,Cardiff,0.9,0.56,Championship,2023
+1047569,2023-10-21,Middlesbrough,Birmingham,1.63,0.24,Championship,2023
+1047570,2023-10-21,Norwich,Leeds,0.9,1.38,Championship,2023
+1047573,2023-10-21,Stoke City,Sunderland,0.61,1.8,Championship,2023
+1047574,2023-10-21,Swansea,Leicester,0.57,2.36,Championship,2023
+1047577,2023-10-24,Huddersfield,Cardiff,1.47,1.48,Championship,2023
+1047579,2023-10-24,Millwall,Blackburn,1.8,1.11,Championship,2023
+1047580,2023-10-24,Norwich,Middlesbrough,0.5,1.17,Championship,2023
+1047581,2023-10-24,Swansea,Watford,0.74,0.8,Championship,2023
+1047578,2023-10-24,Leicester,Sunderland,1.39,0.95,Championship,2023
+1047582,2023-10-24,West Brom,QPR,2.59,0.14,Championship,2023
+1047583,2023-10-25,Birmingham,Hull City,0.61,1.32,Championship,2023
+1047584,2023-10-25,Bristol City,Ipswich,0.92,1.53,Championship,2023
+1047586,2023-10-25,Preston,Southampton,0.84,0.77,Championship,2023
+1047587,2023-10-25,Rotherham,Coventry,1.36,2.12,Championship,2023
+1047585,2023-10-25,Plymouth,Sheffield Wednesday,1.19,1.18,Championship,2023
+1047588,2023-10-25,Stoke City,Leeds,0.69,1.72,Championship,2023
+1047598,2023-10-28,Southampton,Birmingham,2.29,0.6,Championship,2023
+1047589,2023-10-28,Leeds,Huddersfield,1.75,0.9,Championship,2023
+1047600,2023-10-28,Watford,Millwall,2.27,0.97,Championship,2023
+1047591,2023-10-28,Cardiff,Bristol City,0.88,0.95,Championship,2023
+1047594,2023-10-28,Ipswich,Plymouth,2.01,1.61,Championship,2023
+1047593,2023-10-28,Hull City,Preston,0.43,0.38,Championship,2023
+1047590,2023-10-28,Blackburn,Swansea,2.23,1.03,Championship,2023
+1047595,2023-10-28,Middlesbrough,Stoke City,0.88,1.24,Championship,2023
+1047596,2023-10-28,QPR,Leicester,0.46,1.24,Championship,2023
+1047599,2023-10-28,Sunderland,Norwich,2.48,0.81,Championship,2023
+1047597,2023-10-29,Sheffield Wednesday,Rotherham,2.6,0.35,Championship,2023
+1047592,2023-10-30,Coventry,West Brom,1.82,1.96,Championship,2023
+1047604,2023-11-03,Leicester,Leeds,0.64,1.35,Championship,2023
+1047603,2023-11-04,Huddersfield,Watford,0.15,0.37,Championship,2023
+1047601,2023-11-04,Birmingham,Ipswich,1.27,1.48,Championship,2023
+1047602,2023-11-04,Bristol City,Sheffield Wednesday,1.18,0.74,Championship,2023
+1047605,2023-11-04,Millwall,Southampton,0.5,1.15,Championship,2023
+1047608,2023-11-04,Preston,Coventry,2.3,2.28,Championship,2023
+1047612,2023-11-04,West Brom,Hull City,0.95,0.56,Championship,2023
+1047609,2023-11-04,Rotherham,QPR,0.63,0.65,Championship,2023
+1047610,2023-11-04,Stoke City,Cardiff,0.38,0.39,Championship,2023
+1047611,2023-11-04,Swansea,Sunderland,0.87,1.88,Championship,2023
+1047607,2023-11-04,Plymouth,Middlesbrough,1.03,3.22,Championship,2023
+1047606,2023-11-05,Norwich,Blackburn,1.33,1.36,Championship,2023
+1047572,2023-11-07,Rotherham,Ipswich,1.27,0.9,Championship,2023
+1047613,2023-11-10,Blackburn,Preston,1.46,1.12,Championship,2023
+1047623,2023-11-11,Sunderland,Birmingham,3.09,1.37,Championship,2023
+1047624,2023-11-11,Watford,Rotherham,2.21,0.38,Championship,2023
+1047622,2023-11-11,Southampton,West Brom,1.02,2.2,Championship,2023
+1047614,2023-11-11,Cardiff,Norwich,1.25,2.85,Championship,2023
+1047617,2023-11-11,Ipswich,Swansea,3.65,1.44,Championship,2023
+1047618,2023-11-11,Leeds,Plymouth,1.49,1.39,Championship,2023
+1047616,2023-11-11,Hull City,Huddersfield,1.41,0.1,Championship,2023
+1047619,2023-11-11,Middlesbrough,Leicester,0.98,0.8,Championship,2023
+1047620,2023-11-11,QPR,Bristol City,0.38,0.44,Championship,2023
+1047621,2023-11-11,Sheffield Wednesday,Millwall,1.35,1.49,Championship,2023
+1047615,2023-11-11,Coventry,Stoke City,1.11,0.67,Championship,2023
+1047633,2023-11-24,Rotherham,Leeds,0.66,1.64,Championship,2023
+1047627,2023-11-25,Huddersfield,Southampton,0.44,1.36,Championship,2023
+1047628,2023-11-25,Leicester,Watford,2.88,0.54,Championship,2023
+1047625,2023-11-25,Birmingham,Sheffield Wednesday,1.32,2.13,Championship,2023
+1047626,2023-11-25,Bristol City,Middlesbrough,2.0,0.6,Championship,2023
+1047629,2023-11-25,Millwall,Coventry,1.86,2.27,Championship,2023
+1047632,2023-11-25,Preston,Cardiff,0.32,0.76,Championship,2023
+1047630,2023-11-25,Norwich,QPR,0.67,0.56,Championship,2023
+1047634,2023-11-25,Stoke City,Blackburn,0.82,1.71,Championship,2023
+1047635,2023-11-25,Swansea,Hull City,1.15,1.18,Championship,2023
+1047631,2023-11-25,Plymouth,Sunderland,0.77,1.72,Championship,2023
+1047636,2023-11-25,West Brom,Ipswich,1.58,0.22,Championship,2023
+1047637,2023-11-28,Cardiff,West Brom,0.48,1.22,Championship,2023
+1047639,2023-11-28,Hull City,Rotherham,3.72,0.53,Championship,2023
+1047640,2023-11-28,Middlesbrough,Preston,2.87,0.18,Championship,2023
+1047641,2023-11-28,QPR,Stoke City,2.36,0.93,Championship,2023
+1047638,2023-11-28,Coventry,Plymouth,1.38,0.56,Championship,2023
+1047642,2023-11-28,Watford,Norwich,2.04,0.57,Championship,2023
+1047647,2023-11-29,Southampton,Bristol City,0.81,0.72,Championship,2023
+1047645,2023-11-29,Leeds,Swansea,2.48,0.38,Championship,2023
+1047643,2023-11-29,Blackburn,Birmingham,0.72,1.31,Championship,2023
+1047646,2023-11-29,Sheffield Wednesday,Leicester,1.42,1.06,Championship,2023
+1047648,2023-11-29,Sunderland,Huddersfield,2.55,0.86,Championship,2023
+1047644,2023-11-29,Ipswich,Millwall,1.21,0.43,Championship,2023
+1047655,2023-12-01,Preston,QPR,0.26,1.35,Championship,2023
+1047659,2023-12-02,West Brom,Leicester,0.97,1.27,Championship,2023
+1047657,2023-12-02,Southampton,Cardiff,2.68,1.03,Championship,2023
+1047649,2023-12-02,Birmingham,Rotherham,0.73,1.16,Championship,2023
+1047651,2023-12-02,Ipswich,Coventry,1.23,1.29,Championship,2023
+1047653,2023-12-02,Millwall,Sunderland,0.68,1.56,Championship,2023
+1047652,2023-12-02,Leeds,Middlesbrough,3.35,1.24,Championship,2023
+1047650,2023-12-02,Hull City,Watford,1.92,0.69,Championship,2023
+1047656,2023-12-02,Sheffield Wednesday,Blackburn,1.05,1.58,Championship,2023
+1047658,2023-12-02,Swansea,Huddersfield,1.44,0.3,Championship,2023
+1047654,2023-12-02,Plymouth,Stoke City,1.72,1.63,Championship,2023
+1047660,2023-12-03,Bristol City,Norwich,1.16,0.94,Championship,2023
+1047663,2023-12-08,Coventry,Birmingham,1.16,0.53,Championship,2023
+1047661,2023-12-09,Blackburn,Leeds,0.68,1.0,Championship,2023
+1047671,2023-12-09,Sunderland,West Brom,1.4,0.64,Championship,2023
+1047664,2023-12-09,Huddersfield,Bristol City,0.63,1.08,Championship,2023
+1047672,2023-12-09,Watford,Southampton,0.61,0.8,Championship,2023
+1047662,2023-12-09,Cardiff,Millwall,0.65,1.7,Championship,2023
+1047665,2023-12-09,Leicester,Plymouth,2.97,1.12,Championship,2023
+1047666,2023-12-09,Middlesbrough,Ipswich,0.49,0.94,Championship,2023
+1047667,2023-12-09,Norwich,Preston,1.29,0.75,Championship,2023
+1047668,2023-12-09,QPR,Hull City,0.85,0.92,Championship,2023
+1047669,2023-12-09,Rotherham,Swansea,0.53,2.04,Championship,2023
+1047670,2023-12-09,Stoke City,Sheffield Wednesday,1.97,0.81,Championship,2023
+1047674,2023-12-12,Huddersfield,Preston,0.55,0.63,Championship,2023
+1047678,2023-12-12,Watford,Ipswich,1.29,1.82,Championship,2023
+1047673,2023-12-12,Blackburn,Bristol City,1.17,0.87,Championship,2023
+1047675,2023-12-12,Rotherham,West Brom,0.07,0.48,Championship,2023
+1047676,2023-12-12,Stoke City,Swansea,2.91,0.61,Championship,2023
+1047677,2023-12-12,Sunderland,Leeds,1.09,0.55,Championship,2023
+1047679,2023-12-13,Cardiff,Birmingham,0.88,1.65,Championship,2023
+1047681,2023-12-13,Leicester,Millwall,2.04,1.73,Championship,2023
+1047683,2023-12-13,Norwich,Sheffield Wednesday,1.55,1.34,Championship,2023
+1047684,2023-12-13,QPR,Plymouth,1.4,0.73,Championship,2023
+1047680,2023-12-13,Coventry,Southampton,0.51,0.83,Championship,2023
+1047682,2023-12-13,Middlesbrough,Hull City,1.25,1.31,Championship,2023
+1047688,2023-12-16,Ipswich,Norwich,2.07,0.81,Championship,2023
+1047694,2023-12-16,Southampton,Blackburn,3.74,0.74,Championship,2023
+1047686,2023-12-16,Bristol City,Sunderland,0.94,0.74,Championship,2023
+1047690,2023-12-16,Millwall,Huddersfield,1.57,1.44,Championship,2023
+1047692,2023-12-16,Preston,Watford,2.2,3.02,Championship,2023
+1047689,2023-12-16,Leeds,Coventry,1.34,0.48,Championship,2023
+1047687,2023-12-16,Hull City,Cardiff,1.9,0.69,Championship,2023
+1047693,2023-12-16,Sheffield Wednesday,QPR,0.86,0.37,Championship,2023
+1047695,2023-12-16,Swansea,Middlesbrough,1.44,1.1,Championship,2023
+1047691,2023-12-16,Plymouth,Rotherham,2.63,1.47,Championship,2023
+1047696,2023-12-17,West Brom,Stoke City,1.28,0.43,Championship,2023
+1047685,2023-12-18,Birmingham,Leicester,0.49,2.34,Championship,2023
+1047697,2023-12-22,Bristol City,Hull City,1.69,1.91,Championship,2023
+1047708,2023-12-22,Swansea,Preston,0.77,0.38,Championship,2023
+1047699,2023-12-23,Leeds,Ipswich,1.9,0.12,Championship,2023
+1047700,2023-12-23,Leicester,Rotherham,3.1,0.02,Championship,2023
+1047698,2023-12-23,Blackburn,Watford,0.82,2.07,Championship,2023
+1047701,2023-12-23,Middlesbrough,West Brom,2.17,0.35,Championship,2023
+1047702,2023-12-23,Norwich,Huddersfield,2.29,0.14,Championship,2023
+1047704,2023-12-23,QPR,Southampton,0.37,1.58,Championship,2023
+1047705,2023-12-23,Sheffield Wednesday,Cardiff,0.84,0.67,Championship,2023
+1047706,2023-12-23,Stoke City,Millwall,0.89,0.28,Championship,2023
+1047707,2023-12-23,Sunderland,Coventry,2.63,1.68,Championship,2023
+1047703,2023-12-23,Plymouth,Birmingham,1.61,1.79,Championship,2023
+1047716,2023-12-26,Preston,Leeds,0.43,1.35,Championship,2023
+1047709,2023-12-26,Millwall,QPR,1.39,0.59,Championship,2023
+1047713,2023-12-26,Huddersfield,Blackburn,1.21,0.52,Championship,2023
+1047719,2023-12-26,Watford,Bristol City,0.93,1.31,Championship,2023
+1047718,2023-12-26,Southampton,Swansea,2.05,0.39,Championship,2023
+1047711,2023-12-26,Cardiff,Plymouth,1.17,1.23,Championship,2023
+1047720,2023-12-26,West Brom,Norwich,2.06,0.47,Championship,2023
+1047714,2023-12-26,Hull City,Sunderland,0.81,1.03,Championship,2023
+1047717,2023-12-26,Rotherham,Middlesbrough,0.07,1.28,Championship,2023
+1047712,2023-12-26,Coventry,Sheffield Wednesday,0.5,1.58,Championship,2023
+1047710,2023-12-26,Birmingham,Stoke City,1.6,1.26,Championship,2023
+1047715,2023-12-26,Ipswich,Leicester,1.07,0.3,Championship,2023
+1047730,2023-12-29,Southampton,Plymouth,2.98,0.47,Championship,2023
+1047724,2023-12-29,Huddersfield,Middlesbrough,0.78,1.43,Championship,2023
+1047731,2023-12-29,Watford,Stoke City,1.42,0.82,Championship,2023
+1047722,2023-12-29,Cardiff,Leicester,0.41,2.13,Championship,2023
+1047721,2023-12-29,Birmingham,Bristol City,0.11,0.9,Championship,2023
+1047726,2023-12-29,Ipswich,QPR,0.46,0.39,Championship,2023
+1047727,2023-12-29,Millwall,Norwich,2.21,0.62,Championship,2023
+1047728,2023-12-29,Preston,Sheffield Wednesday,0.53,0.51,Championship,2023
+1047725,2023-12-29,Hull City,Blackburn,1.68,0.83,Championship,2023
+1047729,2023-12-29,Rotherham,Sunderland,1.71,0.3,Championship,2023
+1047723,2023-12-29,Coventry,Swansea,2.5,1.1,Championship,2023
+1047732,2023-12-29,West Brom,Leeds,1.36,0.96,Championship,2023
+1047743,2024-01-01,Sunderland,Preston,0.5,0.54,Championship,2023
+1047736,2024-01-01,Leicester,Huddersfield,1.98,1.11,Championship,2023
+1047734,2024-01-01,Bristol City,Millwall,0.56,0.66,Championship,2023
+1047735,2024-01-01,Leeds,Birmingham,1.36,0.68,Championship,2023
+1047733,2024-01-01,Blackburn,Rotherham,3.15,1.38,Championship,2023
+1047737,2024-01-01,Middlesbrough,Coventry,1.54,2.22,Championship,2023
+1047738,2024-01-01,Norwich,Southampton,0.79,2.34,Championship,2023
+1047740,2024-01-01,QPR,Cardiff,0.61,0.52,Championship,2023
+1047742,2024-01-01,Stoke City,Ipswich,0.35,0.6,Championship,2023
+1047744,2024-01-01,Swansea,West Brom,0.67,1.9,Championship,2023
+1047739,2024-01-01,Plymouth,Watford,1.85,1.55,Championship,2023
+1047741,2024-01-01,Sheffield Wednesday,Hull City,1.23,0.94,Championship,2023
+1047750,2024-01-12,Hull City,Norwich,0.97,1.4,Championship,2023
+1047748,2024-01-13,Coventry,Leicester,1.38,1.15,Championship,2023
+1047749,2024-01-13,Huddersfield,Plymouth,0.69,0.72,Championship,2023
+1047755,2024-01-13,Southampton,Sheffield Wednesday,2.42,0.6,Championship,2023
+1047747,2024-01-13,Cardiff,Leeds,0.37,3.73,Championship,2023
+1047746,2024-01-13,Birmingham,Swansea,1.57,0.74,Championship,2023
+1047752,2024-01-13,Millwall,Middlesbrough,1.16,2.31,Championship,2023
+1047753,2024-01-13,Preston,Bristol City,2.13,0.81,Championship,2023
+1047756,2024-01-13,West Brom,Blackburn,3.12,0.92,Championship,2023
+1047754,2024-01-13,Rotherham,Stoke City,0.21,0.33,Championship,2023
+1047751,2024-01-13,Ipswich,Sunderland,2.31,0.73,Championship,2023
+1047745,2024-01-14,QPR,Watford,1.4,0.46,Championship,2023
+1047767,2024-01-19,Sunderland,Hull City,0.77,0.11,Championship,2023
+1047768,2024-01-20,Swansea,Southampton,2.41,3.32,Championship,2023
+1047758,2024-01-20,Bristol City,Watford,1.4,1.3,Championship,2023
+1047757,2024-01-20,Blackburn,Huddersfield,1.17,1.34,Championship,2023
+1047761,2024-01-20,Middlesbrough,Rotherham,0.77,0.49,Championship,2023
+1047762,2024-01-20,Norwich,West Brom,1.69,1.52,Championship,2023
+1047764,2024-01-20,QPR,Millwall,1.56,0.21,Championship,2023
+1047765,2024-01-20,Sheffield Wednesday,Coventry,1.31,1.16,Championship,2023
+1047766,2024-01-20,Stoke City,Birmingham,2.29,0.56,Championship,2023
+1047763,2024-01-20,Plymouth,Cardiff,1.71,1.25,Championship,2023
+1047759,2024-01-21,Leeds,Preston,2.56,1.11,Championship,2023
+1047760,2024-01-22,Leicester,Ipswich,1.2,1.18,Championship,2023
+1047773,2024-01-24,Leeds,Norwich,1.52,0.45,Championship,2023
+1047774,2024-01-27,Millwall,Preston,1.77,1.3,Championship,2023
+1047779,2024-01-27,Sunderland,Stoke City,1.32,1.14,Championship,2023
+1047776,2024-01-28,QPR,Huddersfield,0.37,1.91,Championship,2023
+1047777,2024-01-31,Sheffield Wednesday,Watford,1.35,1.0,Championship,2023
+1047781,2024-02-02,Bristol City,Leeds,0.42,1.06,Championship,2023
+1047782,2024-02-03,Huddersfield,Sheffield Wednesday,1.67,0.46,Championship,2023
+1047790,2024-02-03,Watford,Cardiff,1.14,0.47,Championship,2023
+1047786,2024-02-03,Preston,Ipswich,0.69,2.76,Championship,2023
+1047791,2024-02-03,West Brom,Birmingham,0.71,0.68,Championship,2023
+1047783,2024-02-03,Hull City,Millwall,0.45,0.38,Championship,2023
+1047780,2024-02-03,Blackburn,QPR,1.46,1.47,Championship,2023
+1047785,2024-02-03,Norwich,Coventry,1.15,1.08,Championship,2023
+1047787,2024-02-03,Rotherham,Southampton,0.34,1.22,Championship,2023
+1047788,2024-02-03,Stoke City,Leicester,0.87,3.42,Championship,2023
+1047789,2024-02-03,Swansea,Plymouth,2.06,0.92,Championship,2023
+1047784,2024-02-04,Middlesbrough,Sunderland,1.64,1.05,Championship,2023
+1047800,2024-02-09,Sheffield Wednesday,Birmingham,1.52,1.74,Championship,2023
+1047796,2024-02-10,Ipswich,West Brom,1.9,0.4,Championship,2023
+1047803,2024-02-10,Watford,Leicester,1.12,1.43,Championship,2023
+1047801,2024-02-10,Southampton,Huddersfield,1.52,1.21,Championship,2023
+1047793,2024-02-10,Cardiff,Preston,0.69,0.62,Championship,2023
+1047797,2024-02-10,Leeds,Rotherham,2.7,0.28,Championship,2023
+1047795,2024-02-10,Hull City,Swansea,0.56,0.75,Championship,2023
+1047792,2024-02-10,Blackburn,Stoke City,1.71,1.04,Championship,2023
+1047798,2024-02-10,Middlesbrough,Bristol City,1.66,1.73,Championship,2023
+1047799,2024-02-10,QPR,Norwich,0.89,0.95,Championship,2023
+1047802,2024-02-10,Sunderland,Plymouth,0.98,0.39,Championship,2023
+1047794,2024-02-11,Coventry,Millwall,1.9,0.87,Championship,2023
+1047806,2024-02-13,Leicester,Sheffield Wednesday,1.89,0.54,Championship,2023
+1047804,2024-02-13,Birmingham,Blackburn,1.94,0.55,Championship,2023
+1047807,2024-02-13,Norwich,Watford,1.96,1.49,Championship,2023
+1047808,2024-02-13,Rotherham,Hull City,0.56,1.45,Championship,2023
+1047809,2024-02-13,Swansea,Leeds,0.56,1.77,Championship,2023
+1047805,2024-02-13,Bristol City,Southampton,1.17,1.66,Championship,2023
+1047815,2024-02-13,West Brom,Cardiff,1.86,0.46,Championship,2023
+1047810,2024-02-14,Huddersfield,Sunderland,1.44,0.7,Championship,2023
+1047813,2024-02-14,Preston,Middlesbrough,1.17,0.92,Championship,2023
+1047814,2024-02-14,Stoke City,QPR,0.61,0.44,Championship,2023
+1047812,2024-02-14,Plymouth,Coventry,1.12,2.57,Championship,2023
+1047811,2024-02-14,Millwall,Ipswich,0.78,1.87,Championship,2023
+1047827,2024-02-16,West Brom,Southampton,0.68,1.47,Championship,2023
+1047822,2024-02-17,Plymouth,Leeds,0.9,0.95,Championship,2023
+1047818,2024-02-17,Huddersfield,Hull City,0.49,0.43,Championship,2023
+1047819,2024-02-17,Leicester,Middlesbrough,2.12,1.04,Championship,2023
+1047816,2024-02-17,Birmingham,Sunderland,1.41,1.27,Championship,2023
+1047817,2024-02-17,Bristol City,QPR,0.6,0.9,Championship,2023
+1047820,2024-02-17,Millwall,Sheffield Wednesday,0.37,1.22,Championship,2023
+1047823,2024-02-17,Preston,Blackburn,1.08,0.8,Championship,2023
+1047821,2024-02-17,Norwich,Cardiff,3.25,0.42,Championship,2023
+1047824,2024-02-17,Rotherham,Watford,1.28,0.24,Championship,2023
+1047825,2024-02-17,Stoke City,Coventry,0.57,1.43,Championship,2023
+1047826,2024-02-17,Swansea,Ipswich,1.33,1.58,Championship,2023
+1047778,2024-02-20,Southampton,Hull City,1.4,1.6,Championship,2023
+1047770,2024-02-20,Cardiff,Blackburn,0.55,0.25,Championship,2023
+1047772,2024-02-20,Ipswich,Rotherham,1.77,1.64,Championship,2023
+1047775,2024-02-20,Plymouth,West Brom,0.1,2.28,Championship,2023
+1047830,2024-02-23,Coventry,Preston,0.82,1.41,Championship,2023
+1047833,2024-02-23,Leeds,Leicester,1.43,1.47,Championship,2023
+1047831,2024-02-24,Hull City,West Brom,0.56,0.96,Championship,2023
+1047839,2024-02-24,Watford,Huddersfield,1.05,0.77,Championship,2023
+1047837,2024-02-24,Southampton,Millwall,1.56,1.18,Championship,2023
+1047829,2024-02-24,Cardiff,Stoke City,0.54,1.95,Championship,2023
+1047832,2024-02-24,Ipswich,Birmingham,2.63,0.51,Championship,2023
+1047828,2024-02-24,Blackburn,Norwich,1.03,0.67,Championship,2023
+1047834,2024-02-24,Middlesbrough,Plymouth,0.55,1.71,Championship,2023
+1047835,2024-02-24,QPR,Rotherham,1.14,0.93,Championship,2023
+1047836,2024-02-24,Sheffield Wednesday,Bristol City,1.19,0.48,Championship,2023
+1047838,2024-02-24,Sunderland,Swansea,1.02,2.23,Championship,2023
+1047851,2024-03-01,West Brom,Coventry,0.37,1.77,Championship,2023
+1047840,2024-03-02,Huddersfield,Leeds,1.16,1.92,Championship,2023
+1047842,2024-03-02,Bristol City,Cardiff,0.7,0.33,Championship,2023
+1047843,2024-03-02,Leicester,QPR,0.97,0.99,Championship,2023
+1047841,2024-03-02,Birmingham,Southampton,0.79,2.35,Championship,2023
+1047844,2024-03-02,Millwall,Watford,0.59,0.7,Championship,2023
+1047847,2024-03-02,Preston,Hull City,1.06,1.1,Championship,2023
+1047845,2024-03-02,Norwich,Sunderland,1.27,0.58,Championship,2023
+1047848,2024-03-02,Rotherham,Sheffield Wednesday,0.37,1.48,Championship,2023
+1047849,2024-03-02,Stoke City,Middlesbrough,1.15,0.86,Championship,2023
+1047850,2024-03-02,Swansea,Blackburn,0.6,0.53,Championship,2023
+1047846,2024-03-02,Plymouth,Ipswich,0.51,1.02,Championship,2023
+1047856,2024-03-05,Leeds,Stoke City,1.36,0.44,Championship,2023
+1047854,2024-03-05,Hull City,Birmingham,1.41,0.38,Championship,2023
+1047852,2024-03-05,Blackburn,Millwall,0.65,0.32,Championship,2023
+1047860,2024-03-05,Sheffield Wednesday,Plymouth,1.65,0.64,Championship,2023
+1047857,2024-03-05,Sunderland,Leicester,0.61,1.15,Championship,2023
+1047853,2024-03-05,Coventry,Rotherham,2.04,0.96,Championship,2023
+1047855,2024-03-05,Ipswich,Bristol City,2.53,0.92,Championship,2023
+1047862,2024-03-06,Watford,Swansea,1.94,1.81,Championship,2023
+1052669,2024-03-06,Cardiff,Huddersfield,0.68,1.22,Championship,2023
+1047858,2024-03-06,Middlesbrough,Norwich,1.67,0.97,Championship,2023
+1047859,2024-03-06,QPR,West Brom,2.26,0.15,Championship,2023
+1047871,2024-03-08,Sheffield Wednesday,Leeds,0.8,1.98,Championship,2023
+1047864,2024-03-09,Cardiff,Ipswich,2.44,0.59,Championship,2023
+1047873,2024-03-09,Watford,Coventry,0.93,1.17,Championship,2023
+1047872,2024-03-09,Southampton,Sunderland,3.2,0.6,Championship,2023
+1047867,2024-03-09,Millwall,Birmingham,0.84,1.11,Championship,2023
+1047869,2024-03-09,Preston,Stoke City,0.47,1.39,Championship,2023
+1047866,2024-03-09,Hull City,Leicester,1.2,2.03,Championship,2023
+1047863,2024-03-09,Blackburn,Plymouth,1.09,2.5,Championship,2023
+1047868,2024-03-09,Norwich,Rotherham,1.55,0.04,Championship,2023
+1047870,2024-03-09,QPR,Middlesbrough,0.52,0.47,Championship,2023
+1047865,2024-03-10,Huddersfield,West Brom,1.66,1.73,Championship,2023
+1047874,2024-03-10,Bristol City,Swansea,0.5,0.62,Championship,2023
+1047769,2024-03-12,Birmingham,Middlesbrough,0.42,1.18,Championship,2023
+1047885,2024-03-16,Swansea,Cardiff,2.7,0.67,Championship,2023
+1047875,2024-03-16,Birmingham,Watford,2.12,1.48,Championship,2023
+1047877,2024-03-16,Ipswich,Sheffield Wednesday,3.73,0.7,Championship,2023
+1047886,2024-03-16,West Brom,Bristol City,1.14,0.73,Championship,2023
+1047880,2024-03-16,Middlesbrough,Blackburn,1.06,0.78,Championship,2023
+1047882,2024-03-16,Rotherham,Huddersfield,0.51,1.21,Championship,2023
+1047883,2024-03-16,Stoke City,Norwich,1.03,2.34,Championship,2023
+1047884,2024-03-16,Sunderland,QPR,0.21,0.86,Championship,2023
+1047881,2024-03-16,Plymouth,Preston,0.56,1.06,Championship,2023
+1047878,2024-03-17,Leeds,Millwall,1.54,0.58,Championship,2023
+1047889,2024-03-29,Bristol City,Leicester,1.07,2.06,Championship,2023
+1047887,2024-03-29,Millwall,West Brom,1.43,1.14,Championship,2023
+1047891,2024-03-29,Huddersfield,Coventry,1.56,1.14,Championship,2023
+1047897,2024-03-29,Southampton,Middlesbrough,2.31,0.51,Championship,2023
+1047890,2024-03-29,Cardiff,Sunderland,0.28,3.07,Championship,2023
+1047894,2024-03-29,Preston,Rotherham,2.25,0.44,Championship,2023
+1047892,2024-03-29,Hull City,Stoke City,0.7,1.39,Championship,2023
+1047893,2024-03-29,Norwich,Plymouth,2.2,1.2,Championship,2023
+1047895,2024-03-29,QPR,Birmingham,1.72,0.92,Championship,2023
+1047896,2024-03-29,Sheffield Wednesday,Swansea,1.74,1.15,Championship,2023
+1047888,2024-03-29,Blackburn,Ipswich,0.63,0.75,Championship,2023
+1047898,2024-03-29,Watford,Leeds,0.7,1.0,Championship,2023
+1047903,2024-04-01,Leicester,Norwich,2.33,1.02,Championship,2023
+1047899,2024-04-01,Birmingham,Preston,1.42,0.23,Championship,2023
+1047910,2024-04-01,West Brom,Watford,1.12,1.51,Championship,2023
+1047904,2024-04-01,Middlesbrough,Sheffield Wednesday,2.44,0.41,Championship,2023
+1047906,2024-04-01,Rotherham,Millwall,0.9,2.1,Championship,2023
+1047907,2024-04-01,Stoke City,Huddersfield,1.25,0.67,Championship,2023
+1047909,2024-04-01,Swansea,QPR,1.44,1.3,Championship,2023
+1047908,2024-04-01,Sunderland,Blackburn,1.54,3.41,Championship,2023
+1047900,2024-04-01,Coventry,Cardiff,1.5,1.18,Championship,2023
+1047905,2024-04-01,Plymouth,Bristol City,0.42,1.34,Championship,2023
+1047901,2024-04-01,Ipswich,Southampton,0.95,1.34,Championship,2023
+1047902,2024-04-01,Leeds,Hull City,2.98,0.56,Championship,2023
+1047919,2024-04-05,Rotherham,Plymouth,0.36,1.97,Championship,2023
+1047917,2024-04-06,Norwich,Ipswich,0.54,0.81,Championship,2023
+1047914,2024-04-06,Huddersfield,Millwall,1.54,1.05,Championship,2023
+1047922,2024-04-06,Watford,Preston,0.59,0.56,Championship,2023
+1047912,2024-04-06,Cardiff,Hull City,0.54,1.53,Championship,2023
+1047915,2024-04-06,Leicester,Birmingham,1.45,0.59,Championship,2023
+1047911,2024-04-06,Blackburn,Southampton,0.96,1.06,Championship,2023
+1047916,2024-04-06,Middlesbrough,Swansea,1.16,0.47,Championship,2023
+1047918,2024-04-06,QPR,Sheffield Wednesday,1.0,1.74,Championship,2023
+1047920,2024-04-06,Stoke City,West Brom,2.2,1.35,Championship,2023
+1047921,2024-04-06,Sunderland,Bristol City,1.67,0.68,Championship,2023
+1047913,2024-04-06,Coventry,Leeds,1.8,1.69,Championship,2023
+1047928,2024-04-09,Southampton,Coventry,1.41,1.5,Championship,2023
+1047924,2024-04-09,Millwall,Leicester,0.64,0.9,Championship,2023
+1047926,2024-04-09,Preston,Huddersfield,2.38,0.74,Championship,2023
+1047927,2024-04-09,Sheffield Wednesday,Norwich,1.27,1.49,Championship,2023
+1047925,2024-04-09,Plymouth,QPR,0.47,1.61,Championship,2023
+1047923,2024-04-09,Leeds,Sunderland,0.56,0.21,Championship,2023
+1047929,2024-04-10,Birmingham,Cardiff,0.63,0.97,Championship,2023
+1047930,2024-04-10,Bristol City,Blackburn,3.24,0.39,Championship,2023
+1047932,2024-04-10,Ipswich,Watford,0.77,0.24,Championship,2023
+1047931,2024-04-10,Hull City,Middlesbrough,1.66,1.13,Championship,2023
+1047934,2024-04-10,West Brom,Rotherham,3.09,0.39,Championship,2023
+1047933,2024-04-10,Swansea,Stoke City,1.88,0.31,Championship,2023
+1047941,2024-04-12,Plymouth,Leicester,0.24,1.41,Championship,2023
+1047939,2024-04-13,Leeds,Blackburn,1.42,0.61,Championship,2023
+1047944,2024-04-13,Southampton,Watford,1.85,0.84,Championship,2023
+1047935,2024-04-13,Birmingham,Coventry,1.37,0.58,Championship,2023
+1047936,2024-04-13,Bristol City,Huddersfield,0.54,1.57,Championship,2023
+1047938,2024-04-13,Ipswich,Middlesbrough,2.03,1.32,Championship,2023
+1047940,2024-04-13,Millwall,Cardiff,1.36,0.32,Championship,2023
+1047942,2024-04-13,Preston,Norwich,0.95,0.68,Championship,2023
+1047946,2024-04-13,West Brom,Sunderland,0.28,0.41,Championship,2023
+1047937,2024-04-13,Hull City,QPR,1.13,1.31,Championship,2023
+1047943,2024-04-13,Sheffield Wednesday,Stoke City,1.57,0.61,Championship,2023
+1047945,2024-04-13,Swansea,Rotherham,0.82,0.13,Championship,2023
+1047861,2024-04-16,Southampton,Preston,2.55,0.07,Championship,2023
+1047951,2024-04-20,Leicester,West Brom,2.6,2.18,Championship,2023
+1047950,2024-04-20,Huddersfield,Swansea,0.53,2.36,Championship,2023
+1047958,2024-04-20,Watford,Hull City,1.11,2.36,Championship,2023
+1047948,2024-04-20,Cardiff,Southampton,1.78,2.05,Championship,2023
+1047953,2024-04-20,Norwich,Bristol City,1.2,1.53,Championship,2023
+1047955,2024-04-20,Rotherham,Birmingham,0.35,0.42,Championship,2023
+1047956,2024-04-20,Stoke City,Plymouth,1.82,0.31,Championship,2023
+1047957,2024-04-20,Sunderland,Millwall,0.76,0.34,Championship,2023
+1047954,2024-04-20,QPR,Preston,1.84,0.59,Championship,2023
+1047947,2024-04-21,Blackburn,Sheffield Wednesday,0.96,1.67,Championship,2023
+1047952,2024-04-22,Middlesbrough,Leeds,1.13,2.47,Championship,2023
+1047879,2024-04-23,Leicester,Southampton,2.06,0.33,Championship,2023
+1047876,2024-04-24,Coventry,Hull City,0.56,1.87,Championship,2023
+1047966,2024-04-26,QPR,Leeds,0.72,1.01,Championship,2023
+1047962,2024-04-27,Huddersfield,Birmingham,1.09,1.11,Championship,2023
+1047969,2024-04-27,Watford,Sunderland,0.54,1.27,Championship,2023
+1047968,2024-04-27,Southampton,Stoke City,1.69,1.99,Championship,2023
+1047961,2024-04-27,Cardiff,Middlesbrough,1.63,1.66,Championship,2023
+1047960,2024-04-27,Bristol City,Rotherham,2.06,0.4,Championship,2023
+1047964,2024-04-27,Millwall,Plymouth,1.05,0.34,Championship,2023
+1047959,2024-04-27,Blackburn,Coventry,2.69,0.34,Championship,2023
+1052670,2024-04-27,Norwich,Swansea,3.09,1.4,Championship,2023
+1047967,2024-04-27,Sheffield Wednesday,West Brom,2.1,1.29,Championship,2023
+1047963,2024-04-27,Hull City,Ipswich,2.69,2.15,Championship,2023
+1047965,2024-04-29,Preston,Leicester,0.36,3.49,Championship,2023
+1047949,2024-04-30,Coventry,Ipswich,1.04,1.57,Championship,2023
+1047974,2024-05-04,Leicester,Blackburn,1.29,1.7,Championship,2023
+1047970,2024-05-04,Birmingham,Norwich,1.24,0.11,Championship,2023
+1047972,2024-05-04,Ipswich,Huddersfield,1.65,0.09,Championship,2023
+1047981,2024-05-04,West Brom,Preston,2.95,0.16,Championship,2023
+1047973,2024-05-04,Leeds,Southampton,0.92,1.16,Championship,2023
+1047975,2024-05-04,Middlesbrough,Watford,2.2,1.05,Championship,2023
+1047977,2024-05-04,Rotherham,Cardiff,3.3,1.34,Championship,2023
+1047978,2024-05-04,Stoke City,Bristol City,1.85,1.05,Championship,2023
+1047980,2024-05-04,Swansea,Millwall,1.45,0.8,Championship,2023
+1047979,2024-05-04,Sunderland,Sheffield Wednesday,1.49,1.14,Championship,2023
+1047971,2024-05-04,Coventry,QPR,1.85,0.5,Championship,2023
+1047976,2024-05-04,Plymouth,Hull City,0.43,0.5,Championship,2023

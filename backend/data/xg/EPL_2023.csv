@@ -1,0 +1,381 @@
+date,home_team,away_team,home_xg,away_xg,league,season
+2023-08-11,Burnley,Manchester City,0.311032,2.40074,EPL,2023
+2023-08-12,Arsenal,Nottingham Forest,0.84262,0.966305,EPL,2023
+2023-08-12,Bournemouth,West Ham,1.51025,1.4834,EPL,2023
+2023-08-12,Brighton,Luton,4.36748,1.88594,EPL,2023
+2023-08-12,Everton,Fulham,2.59001,1.58144,EPL,2023
+2023-08-12,Sheffield United,Crystal Palace,0.422704,2.27616,EPL,2023
+2023-08-12,Newcastle United,Aston Villa,4.32208,1.486,EPL,2023
+2023-08-13,Brentford,Tottenham,1.90756,1.45316,EPL,2023
+2023-08-13,Chelsea,Liverpool,1.93258,1.29994,EPL,2023
+2023-08-14,Manchester United,Wolverhampton Wanderers,1.97087,1.72228,EPL,2023
+2023-08-18,Nottingham Forest,Sheffield United,1.37181,0.551038,EPL,2023
+2023-08-19,Wolverhampton Wanderers,Brighton,2.68821,3.15562,EPL,2023
+2023-08-19,Fulham,Brentford,0.399899,3.46888,EPL,2023
+2023-08-19,Liverpool,Bournemouth,3.25448,1.3867,EPL,2023
+2023-08-19,Tottenham,Manchester United,2.53904,2.44604,EPL,2023
+2023-08-19,Manchester City,Newcastle United,1.22528,0.257154,EPL,2023
+2023-08-20,Aston Villa,Everton,3.24336,0.721465,EPL,2023
+2023-08-20,West Ham,Chelsea,1.71234,1.60916,EPL,2023
+2023-08-21,Crystal Palace,Arsenal,1.06916,2.20593,EPL,2023
+2023-08-25,Chelsea,Luton,3.41419,0.465741,EPL,2023
+2023-08-26,Bournemouth,Tottenham,0.483582,2.26115,EPL,2023
+2023-08-26,Arsenal,Fulham,3.23088,0.849817,EPL,2023
+2023-08-26,Brentford,Crystal Palace,0.948011,1.06061,EPL,2023
+2023-08-26,Everton,Wolverhampton Wanderers,1.89792,1.40228,EPL,2023
+2023-08-26,Manchester United,Nottingham Forest,3.02803,0.960354,EPL,2023
+2023-08-26,Brighton,West Ham,1.3743,2.9527,EPL,2023
+2023-08-27,Burnley,Aston Villa,0.630605,2.83691,EPL,2023
+2023-08-27,Sheffield United,Manchester City,0.762232,3.84804,EPL,2023
+2023-08-27,Newcastle United,Liverpool,1.62037,0.856121,EPL,2023
+2023-09-01,Luton,West Ham,2.02244,1.22528,EPL,2023
+2023-09-02,Sheffield United,Everton,1.575,2.73871,EPL,2023
+2023-09-02,Manchester City,Fulham,2.00152,1.46427,EPL,2023
+2023-09-02,Brentford,Bournemouth,3.07185,2.11013,EPL,2023
+2023-09-02,Burnley,Tottenham,1.66604,2.39785,EPL,2023
+2023-09-02,Chelsea,Nottingham Forest,2.28442,1.1505,EPL,2023
+2023-09-02,Brighton,Newcastle United,1.32258,0.90476,EPL,2023
+2023-09-03,Crystal Palace,Wolverhampton Wanderers,2.32935,1.13911,EPL,2023
+2023-09-03,Liverpool,Aston Villa,2.73138,0.615503,EPL,2023
+2023-09-03,Arsenal,Manchester United,1.90973,0.966109,EPL,2023
+2023-09-16,Wolverhampton Wanderers,Liverpool,0.538833,2.82701,EPL,2023
+2023-09-16,Tottenham,Sheffield United,2.15909,0.790655,EPL,2023
+2023-09-16,West Ham,Manchester City,0.895632,4.15046,EPL,2023
+2023-09-16,Aston Villa,Crystal Palace,2.31518,1.11696,EPL,2023
+2023-09-16,Fulham,Luton,1.75704,1.45705,EPL,2023
+2023-09-16,Manchester United,Brighton,0.719951,1.93908,EPL,2023
+2023-09-16,Newcastle United,Brentford,1.50126,0.633678,EPL,2023
+2023-09-17,Bournemouth,Chelsea,1.32515,1.39677,EPL,2023
+2023-09-17,Everton,Arsenal,0.28317,0.802605,EPL,2023
+2023-09-18,Nottingham Forest,Burnley,0.705795,0.807651,EPL,2023
+2023-09-23,Luton,Wolverhampton Wanderers,2.24101,0.762984,EPL,2023
+2023-09-23,Manchester City,Nottingham Forest,1.33984,0.729109,EPL,2023
+2023-09-23,Crystal Palace,Fulham,0.37236,0.542678,EPL,2023
+2023-09-23,Brentford,Everton,1.57402,2.51497,EPL,2023
+2023-09-23,Burnley,Manchester United,0.935444,0.840273,EPL,2023
+2023-09-24,Chelsea,Aston Villa,1.19716,1.13479,EPL,2023
+2023-09-24,Brighton,Bournemouth,2.14533,1.58984,EPL,2023
+2023-09-24,Arsenal,Tottenham,2.3429,2.21166,EPL,2023
+2023-09-24,Liverpool,West Ham,4.14262,1.53878,EPL,2023
+2023-09-24,Sheffield United,Newcastle United,0.579392,5.1082,EPL,2023
+2023-09-30,Aston Villa,Brighton,1.90746,1.72819,EPL,2023
+2023-09-30,Everton,Luton,3.65377,1.5102,EPL,2023
+2023-09-30,Manchester United,Crystal Palace,1.55408,1.19015,EPL,2023
+2023-09-30,Newcastle United,Burnley,3.08516,0.801849,EPL,2023
+2023-09-30,Bournemouth,Arsenal,0.644443,4.0742,EPL,2023
+2023-09-30,West Ham,Sheffield United,3.19753,0.911997,EPL,2023
+2023-09-30,Wolverhampton Wanderers,Manchester City,0.673985,0.98075,EPL,2023
+2023-09-30,Tottenham,Liverpool,2.18823,1.12299,EPL,2023
+2023-10-01,Nottingham Forest,Brentford,0.800317,1.75862,EPL,2023
+2023-10-02,Fulham,Chelsea,0.889383,1.98461,EPL,2023
+2023-10-03,Luton,Burnley,1.53058,0.920206,EPL,2023
+2023-10-07,Luton,Tottenham,0.848118,2.37947,EPL,2023
+2023-10-07,Burnley,Chelsea,0.956642,1.97566,EPL,2023
+2023-10-07,Everton,Bournemouth,3.16482,0.981732,EPL,2023
+2023-10-07,Fulham,Sheffield United,2.26612,0.251809,EPL,2023
+2023-10-07,Manchester United,Brentford,1.29356,1.02509,EPL,2023
+2023-10-07,Crystal Palace,Nottingham Forest,0.982452,1.22105,EPL,2023
+2023-10-08,Brighton,Liverpool,2.23187,2.51029,EPL,2023
+2023-10-08,West Ham,Newcastle United,0.931345,1.97865,EPL,2023
+2023-10-08,Wolverhampton Wanderers,Aston Villa,1.76232,1.81618,EPL,2023
+2023-10-08,Arsenal,Manchester City,0.386558,0.858071,EPL,2023
+2023-10-21,Liverpool,Everton,2.28568,0.0937725,EPL,2023
+2023-10-21,Bournemouth,Wolverhampton Wanderers,1.01839,2.30454,EPL,2023
+2023-10-21,Brentford,Burnley,3.15685,0.693129,EPL,2023
+2023-10-21,Manchester City,Brighton,0.962509,0.963733,EPL,2023
+2023-10-21,Newcastle United,Crystal Palace,3.73336,1.08795,EPL,2023
+2023-10-21,Nottingham Forest,Luton,3.27549,1.49555,EPL,2023
+2023-10-21,Chelsea,Arsenal,1.71838,1.05791,EPL,2023
+2023-10-21,Sheffield United,Manchester United,1.41074,1.46187,EPL,2023
+2023-10-22,Aston Villa,West Ham,2.34143,0.659622,EPL,2023
+2023-10-23,Tottenham,Fulham,1.63523,0.745838,EPL,2023
+2023-10-27,Crystal Palace,Tottenham,0.561834,0.989103,EPL,2023
+2023-10-28,Chelsea,Brentford,1.71801,2.48137,EPL,2023
+2023-10-28,Bournemouth,Burnley,1.10052,0.90255,EPL,2023
+2023-10-28,Arsenal,Sheffield United,3.03496,0.0281554,EPL,2023
+2023-10-28,Wolverhampton Wanderers,Newcastle United,0.863393,2.31987,EPL,2023
+2023-10-29,West Ham,Everton,0.618578,0.733813,EPL,2023
+2023-10-29,Aston Villa,Luton,3.07654,0.453117,EPL,2023
+2023-10-29,Brighton,Fulham,1.31996,0.552523,EPL,2023
+2023-10-29,Liverpool,Nottingham Forest,2.70428,0.642014,EPL,2023
+2023-10-29,Manchester United,Manchester City,0.714628,4.54595,EPL,2023
+2023-11-04,Fulham,Manchester United,1.18241,0.697095,EPL,2023
+2023-11-04,Brentford,West Ham,1.82944,1.75505,EPL,2023
+2023-11-04,Burnley,Crystal Palace,1.4998,1.43653,EPL,2023
+2023-11-04,Everton,Brighton,0.617607,0.442489,EPL,2023
+2023-11-04,Manchester City,Bournemouth,2.39949,0.643127,EPL,2023
+2023-11-04,Sheffield United,Wolverhampton Wanderers,1.10165,1.14803,EPL,2023
+2023-11-04,Newcastle United,Arsenal,1.12355,0.535473,EPL,2023
+2023-11-05,Nottingham Forest,Aston Villa,0.592447,1.33116,EPL,2023
+2023-11-05,Luton,Liverpool,1.3411,3.03925,EPL,2023
+2023-11-06,Tottenham,Chelsea,0.959108,4.05865,EPL,2023
+2023-11-11,Wolverhampton Wanderers,Tottenham,1.90884,0.432315,EPL,2023
+2023-11-11,Arsenal,Burnley,2.63194,0.327706,EPL,2023
+2023-11-11,Crystal Palace,Everton,1.89194,1.7904,EPL,2023
+2023-11-11,Manchester United,Luton,2.74105,0.408265,EPL,2023
+2023-11-11,Bournemouth,Newcastle United,2.78424,0.306141,EPL,2023
+2023-11-12,Aston Villa,Fulham,2.86039,0.648745,EPL,2023
+2023-11-12,Brighton,Sheffield United,1.08601,0.84434,EPL,2023
+2023-11-12,Liverpool,Brentford,1.56004,1.44954,EPL,2023
+2023-11-12,West Ham,Nottingham Forest,2.06402,1.42128,EPL,2023
+2023-11-12,Chelsea,Manchester City,3.47238,3.19324,EPL,2023
+2023-11-25,Manchester City,Liverpool,1.79622,0.766278,EPL,2023
+2023-11-25,Burnley,West Ham,1.44228,1.36963,EPL,2023
+2023-11-25,Luton,Crystal Palace,0.996153,1.83546,EPL,2023
+2023-11-25,Newcastle United,Chelsea,2.15227,0.968061,EPL,2023
+2023-11-25,Nottingham Forest,Brighton,2.22655,1.21792,EPL,2023
+2023-11-25,Sheffield United,Bournemouth,0.816227,3.13975,EPL,2023
+2023-11-25,Brentford,Arsenal,1.66315,1.82699,EPL,2023
+2023-11-26,Tottenham,Aston Villa,2.22542,2.39755,EPL,2023
+2023-11-26,Everton,Manchester United,2.49764,2.07334,EPL,2023
+2023-11-27,Fulham,Wolverhampton Wanderers,2.49057,1.57875,EPL,2023
+2023-12-02,Arsenal,Wolverhampton Wanderers,3.30368,1.07886,EPL,2023
+2023-12-02,Brentford,Luton,3.25952,0.227176,EPL,2023
+2023-12-02,Burnley,Sheffield United,2.60469,0.618131,EPL,2023
+2023-12-02,Nottingham Forest,Everton,0.673085,0.623789,EPL,2023
+2023-12-02,Newcastle United,Manchester United,2.90191,0.422674,EPL,2023
+2023-12-03,Bournemouth,Aston Villa,2.54937,0.89511,EPL,2023
+2023-12-03,Chelsea,Brighton,1.66304,0.855058,EPL,2023
+2023-12-03,Liverpool,Fulham,2.72831,1.51005,EPL,2023
+2023-12-03,West Ham,Crystal Palace,1.1466,0.987682,EPL,2023
+2023-12-03,Manchester City,Tottenham,2.90729,0.433077,EPL,2023
+2023-12-05,Wolverhampton Wanderers,Burnley,1.11886,0.781542,EPL,2023
+2023-12-05,Luton,Arsenal,0.526254,2.58815,EPL,2023
+2023-12-06,Brighton,Brentford,1.54099,1.22007,EPL,2023
+2023-12-06,Fulham,Nottingham Forest,3.09427,0.218659,EPL,2023
+2023-12-06,Sheffield United,Liverpool,0.834172,1.80116,EPL,2023
+2023-12-06,Crystal Palace,Bournemouth,1.26441,1.79997,EPL,2023
+2023-12-06,Aston Villa,Manchester City,2.1922,1.00198,EPL,2023
+2023-12-06,Manchester United,Chelsea,4.03949,2.3512,EPL,2023
+2023-12-07,Everton,Newcastle United,2.95393,1.29564,EPL,2023
+2023-12-07,Tottenham,West Ham,1.61268,1.7409,EPL,2023
+2023-12-09,Crystal Palace,Liverpool,1.79152,1.3708,EPL,2023
+2023-12-09,Brighton,Burnley,2.96247,1.05162,EPL,2023
+2023-12-09,Manchester United,Bournemouth,1.11296,1.9742,EPL,2023
+2023-12-09,Sheffield United,Brentford,0.841976,0.644638,EPL,2023
+2023-12-09,Wolverhampton Wanderers,Nottingham Forest,1.02199,1.21801,EPL,2023
+2023-12-09,Aston Villa,Arsenal,0.628499,1.71667,EPL,2023
+2023-12-10,Everton,Chelsea,1.11437,0.885512,EPL,2023
+2023-12-10,Fulham,West Ham,2.1884,0.983,EPL,2023
+2023-12-10,Luton,Manchester City,0.689037,2.23353,EPL,2023
+2023-12-10,Tottenham,Newcastle United,4.40118,1.61368,EPL,2023
+2023-12-15,Nottingham Forest,Tottenham,1.70569,1.60738,EPL,2023
+2023-12-16,Chelsea,Sheffield United,3.27322,0.44014,EPL,2023
+2023-12-16,Manchester City,Crystal Palace,2.41646,1.64977,EPL,2023
+2023-12-16,Newcastle United,Fulham,4.27933,0.471042,EPL,2023
+2023-12-16,Burnley,Everton,0.811435,2.22305,EPL,2023
+2023-12-17,Arsenal,Brighton,2.76976,0.663054,EPL,2023
+2023-12-17,Brentford,Aston Villa,0.796812,1.4664,EPL,2023
+2023-12-17,West Ham,Wolverhampton Wanderers,1.03828,0.556206,EPL,2023
+2023-12-17,Liverpool,Manchester United,1.97111,0.632715,EPL,2023
+2023-12-21,Crystal Palace,Brighton,1.65409,1.33653,EPL,2023
+2023-12-22,Aston Villa,Sheffield United,1.21861,0.646159,EPL,2023
+2023-12-23,West Ham,Manchester United,1.51468,0.730496,EPL,2023
+2023-12-23,Fulham,Burnley,1.38096,0.41714,EPL,2023
+2023-12-23,Luton,Newcastle United,1.81844,1.41488,EPL,2023
+2023-12-23,Nottingham Forest,Bournemouth,0.791806,1.89067,EPL,2023
+2023-12-23,Tottenham,Everton,1.57527,1.98385,EPL,2023
+2023-12-23,Liverpool,Arsenal,0.982901,0.851681,EPL,2023
+2023-12-24,Wolverhampton Wanderers,Chelsea,1.74626,1.75447,EPL,2023
+2023-12-26,Newcastle United,Nottingham Forest,2.79106,3.1074,EPL,2023
+2023-12-26,Bournemouth,Fulham,2.07911,0.324365,EPL,2023
+2023-12-26,Sheffield United,Luton,3.61788,0.715575,EPL,2023
+2023-12-26,Burnley,Liverpool,0.972389,1.68451,EPL,2023
+2023-12-26,Manchester United,Aston Villa,1.20104,1.83637,EPL,2023
+2023-12-27,Brentford,Wolverhampton Wanderers,2.59347,1.89483,EPL,2023
+2023-12-27,Chelsea,Crystal Palace,2.73005,0.958077,EPL,2023
+2023-12-27,Everton,Manchester City,1.23529,2.28321,EPL,2023
+2023-12-28,Brighton,Tottenham,3.84702,2.06955,EPL,2023
+2023-12-28,Arsenal,West Ham,2.7884,1.59711,EPL,2023
+2023-12-30,Luton,Chelsea,2.64093,1.57463,EPL,2023
+2023-12-30,Aston Villa,Burnley,2.92587,1.11923,EPL,2023
+2023-12-30,Crystal Palace,Brentford,1.61057,1.28731,EPL,2023
+2023-12-30,Manchester City,Sheffield United,2.24229,0.263211,EPL,2023
+2023-12-30,Wolverhampton Wanderers,Everton,2.64477,0.519641,EPL,2023
+2023-12-30,Nottingham Forest,Manchester United,0.744348,0.651905,EPL,2023
+2023-12-31,Fulham,Arsenal,1.52829,1.6591,EPL,2023
+2023-12-31,Tottenham,Bournemouth,2.15027,1.58229,EPL,2023
+2024-01-01,Liverpool,Newcastle United,6.67151,0.910974,EPL,2023
+2024-01-02,West Ham,Brighton,0.9831,2.1552,EPL,2023
+2024-01-12,Burnley,Luton,1.52023,0.965167,EPL,2023
+2024-01-13,Chelsea,Fulham,2.0456,0.697847,EPL,2023
+2024-01-13,Newcastle United,Manchester City,1.23638,2.55452,EPL,2023
+2024-01-14,Everton,Aston Villa,1.03664,1.3435,EPL,2023
+2024-01-14,Manchester United,Tottenham,0.923233,1.31224,EPL,2023
+2024-01-20,Arsenal,Crystal Palace,3.52167,0.288083,EPL,2023
+2024-01-20,Brentford,Nottingham Forest,1.94219,1.22251,EPL,2023
+2024-01-21,Sheffield United,West Ham,2.61362,2.4241,EPL,2023
+2024-01-21,Bournemouth,Liverpool,0.834585,1.53344,EPL,2023
+2024-01-22,Brighton,Wolverhampton Wanderers,1.3701,1.14116,EPL,2023
+2024-01-30,Nottingham Forest,Arsenal,0.631618,1.39143,EPL,2023
+2024-01-30,Fulham,Everton,2.37499,2.83317,EPL,2023
+2024-01-30,Luton,Brighton,3.63312,1.01366,EPL,2023
+2024-01-30,Crystal Palace,Sheffield United,1.1601,0.768467,EPL,2023
+2024-01-30,Aston Villa,Newcastle United,1.44485,3.3224,EPL,2023
+2024-01-31,Tottenham,Brentford,3.36194,1.59637,EPL,2023
+2024-01-31,Manchester City,Burnley,1.84756,1.49114,EPL,2023
+2024-01-31,Liverpool,Chelsea,3.6627,0.477972,EPL,2023
+2024-02-01,West Ham,Bournemouth,1.3128,1.13487,EPL,2023
+2024-02-01,Wolverhampton Wanderers,Manchester United,2.27609,3.22698,EPL,2023
+2024-02-03,Everton,Tottenham,3.25881,0.922371,EPL,2023
+2024-02-03,Brighton,Crystal Palace,1.92591,0.241137,EPL,2023
+2024-02-03,Burnley,Fulham,1.00428,1.28806,EPL,2023
+2024-02-03,Newcastle United,Luton,2.37353,2.67463,EPL,2023
+2024-02-03,Sheffield United,Aston Villa,1.52784,2.99015,EPL,2023
+2024-02-04,Bournemouth,Nottingham Forest,1.1895,0.456548,EPL,2023
+2024-02-04,Chelsea,Wolverhampton Wanderers,2.35967,2.48996,EPL,2023
+2024-02-04,Manchester United,West Ham,0.96721,1.1807,EPL,2023
+2024-02-04,Arsenal,Liverpool,2.8526,0.542052,EPL,2023
+2024-02-05,Brentford,Manchester City,0.865741,2.10785,EPL,2023
+2024-02-10,Manchester City,Everton,1.58971,0.192072,EPL,2023
+2024-02-10,Fulham,Bournemouth,1.7456,2.60612,EPL,2023
+2024-02-10,Liverpool,Burnley,3.14734,1.11123,EPL,2023
+2024-02-10,Luton,Sheffield United,1.76215,1.98283,EPL,2023
+2024-02-10,Tottenham,Brighton,2.10928,1.49285,EPL,2023
+2024-02-10,Wolverhampton Wanderers,Brentford,1.05781,1.84908,EPL,2023
+2024-02-10,Nottingham Forest,Newcastle United,0.968075,0.511375,EPL,2023
+2024-02-11,West Ham,Arsenal,0.191065,3.99893,EPL,2023
+2024-02-11,Aston Villa,Manchester United,2.64675,2.44591,EPL,2023
+2024-02-12,Crystal Palace,Chelsea,0.719516,1.26948,EPL,2023
+2024-02-17,Brentford,Liverpool,1.69518,3.08952,EPL,2023
+2024-02-17,Burnley,Arsenal,0.335143,2.20575,EPL,2023
+2024-02-17,Fulham,Aston Villa,1.41796,1.57297,EPL,2023
+2024-02-17,Newcastle United,Bournemouth,2.38425,2.08098,EPL,2023
+2024-02-17,Nottingham Forest,West Ham,2.66942,0.520016,EPL,2023
+2024-02-17,Tottenham,Wolverhampton Wanderers,1.59768,1.77591,EPL,2023
+2024-02-17,Manchester City,Chelsea,2.77713,1.82903,EPL,2023
+2024-02-18,Sheffield United,Brighton,0.586214,3.35549,EPL,2023
+2024-02-18,Luton,Manchester United,1.57234,3.58973,EPL,2023
+2024-02-19,Everton,Crystal Palace,2.44588,0.734685,EPL,2023
+2024-02-20,Manchester City,Brentford,2.53766,0.503799,EPL,2023
+2024-02-21,Liverpool,Luton,3.70302,0.956512,EPL,2023
+2024-02-24,Aston Villa,Nottingham Forest,3.48861,2.25569,EPL,2023
+2024-02-24,Brighton,Everton,1.6538,0.286655,EPL,2023
+2024-02-24,Crystal Palace,Burnley,2.41612,0.0760216,EPL,2023
+2024-02-24,Manchester United,Fulham,1.96036,1.1385,EPL,2023
+2024-02-24,Bournemouth,Manchester City,0.925889,1.79636,EPL,2023
+2024-02-24,Arsenal,Newcastle United,2.59336,0.217373,EPL,2023
+2024-02-25,Wolverhampton Wanderers,Sheffield United,1.21618,0.654342,EPL,2023
+2024-02-26,West Ham,Brentford,2.06873,1.33683,EPL,2023
+2024-03-02,Brentford,Chelsea,2.4732,2.1523,EPL,2023
+2024-03-02,Everton,West Ham,3.12075,2.17948,EPL,2023
+2024-03-02,Fulham,Brighton,1.37604,1.15198,EPL,2023
+2024-03-02,Newcastle United,Wolverhampton Wanderers,3.33495,0.507769,EPL,2023
+2024-03-02,Nottingham Forest,Liverpool,0.971466,1.32259,EPL,2023
+2024-03-02,Tottenham,Crystal Palace,2.6625,0.277887,EPL,2023
+2024-03-02,Luton,Aston Villa,2.43312,2.08586,EPL,2023
+2024-03-03,Burnley,Bournemouth,1.60461,1.43616,EPL,2023
+2024-03-03,Manchester City,Manchester United,2.64173,0.153764,EPL,2023
+2024-03-04,Sheffield United,Arsenal,0.201374,2.47294,EPL,2023
+2024-03-09,Manchester United,Everton,2.9016,1.8214,EPL,2023
+2024-03-09,Bournemouth,Sheffield United,3.92657,1.91752,EPL,2023
+2024-03-09,Crystal Palace,Luton,3.25103,1.08531,EPL,2023
+2024-03-09,Wolverhampton Wanderers,Fulham,1.29589,2.94155,EPL,2023
+2024-03-09,Arsenal,Brentford,1.59369,0.733239,EPL,2023
+2024-03-10,Aston Villa,Tottenham,1.23267,2.25381,EPL,2023
+2024-03-10,Brighton,Nottingham Forest,0.534518,0.687034,EPL,2023
+2024-03-10,West Ham,Burnley,1.87414,0.88131,EPL,2023
+2024-03-10,Liverpool,Manchester City,2.25492,1.37289,EPL,2023
+2024-03-11,Chelsea,Newcastle United,1.78315,0.568435,EPL,2023
+2024-03-13,Bournemouth,Luton,2.84403,2.79419,EPL,2023
+2024-03-16,Burnley,Brentford,2.69776,1.25123,EPL,2023
+2024-03-16,Luton,Nottingham Forest,0.853782,1.95268,EPL,2023
+2024-03-16,Fulham,Tottenham,2.47234,2.14564,EPL,2023
+2024-03-17,West Ham,Aston Villa,1.32829,0.911274,EPL,2023
+2024-03-30,Newcastle United,West Ham,3.80922,0.994584,EPL,2023
+2024-03-30,Bournemouth,Everton,1.39268,0.93378,EPL,2023
+2024-03-30,Chelsea,Burnley,4.46643,2.10422,EPL,2023
+2024-03-30,Nottingham Forest,Crystal Palace,0.784652,0.900972,EPL,2023
+2024-03-30,Sheffield United,Fulham,1.78824,1.10254,EPL,2023
+2024-03-30,Tottenham,Luton,2.46523,0.402402,EPL,2023
+2024-03-30,Aston Villa,Wolverhampton Wanderers,1.28271,1.66232,EPL,2023
+2024-03-30,Brentford,Manchester United,3.16487,0.989565,EPL,2023
+2024-03-31,Liverpool,Brighton,3.21149,0.43922,EPL,2023
+2024-03-31,Manchester City,Arsenal,1.22009,0.511402,EPL,2023
+2024-04-02,Nottingham Forest,Fulham,1.94619,1.04304,EPL,2023
+2024-04-02,Newcastle United,Everton,2.65009,1.69834,EPL,2023
+2024-04-02,Bournemouth,Crystal Palace,1.30969,0.174389,EPL,2023
+2024-04-02,Burnley,Wolverhampton Wanderers,1.12581,1.01021,EPL,2023
+2024-04-02,West Ham,Tottenham,1.47017,1.39423,EPL,2023
+2024-04-03,Arsenal,Luton,1.14384,0.292082,EPL,2023
+2024-04-03,Brentford,Brighton,0.423299,1.22404,EPL,2023
+2024-04-03,Manchester City,Aston Villa,3.87704,1.18643,EPL,2023
+2024-04-04,Liverpool,Sheffield United,2.51772,0.720948,EPL,2023
+2024-04-04,Chelsea,Manchester United,3.48048,1.56686,EPL,2023
+2024-04-06,Crystal Palace,Manchester City,1.49472,2.26381,EPL,2023
+2024-04-06,Aston Villa,Brentford,1.16333,1.42064,EPL,2023
+2024-04-06,Everton,Burnley,0.659844,0.34699,EPL,2023
+2024-04-06,Fulham,Newcastle United,0.834564,1.18012,EPL,2023
+2024-04-06,Luton,Bournemouth,1.30478,0.616108,EPL,2023
+2024-04-06,Wolverhampton Wanderers,West Ham,1.78341,1.14133,EPL,2023
+2024-04-06,Brighton,Arsenal,0.428514,4.16518,EPL,2023
+2024-04-07,Manchester United,Liverpool,0.814509,4.43457,EPL,2023
+2024-04-07,Sheffield United,Chelsea,1.74265,0.521789,EPL,2023
+2024-04-07,Tottenham,Nottingham Forest,1.61978,2.00122,EPL,2023
+2024-04-13,Newcastle United,Tottenham,3.1483,0.737596,EPL,2023
+2024-04-13,Brentford,Sheffield United,1.09071,0.834498,EPL,2023
+2024-04-13,Burnley,Brighton,1.8522,0.889445,EPL,2023
+2024-04-13,Manchester City,Luton,4.64245,0.809775,EPL,2023
+2024-04-13,Nottingham Forest,Wolverhampton Wanderers,1.76244,1.45688,EPL,2023
+2024-04-13,Bournemouth,Manchester United,2.38519,1.52274,EPL,2023
+2024-04-14,Liverpool,Crystal Palace,3.04497,2.12879,EPL,2023
+2024-04-14,West Ham,Fulham,1.45307,3.61413,EPL,2023
+2024-04-14,Arsenal,Aston Villa,1.89003,0.929049,EPL,2023
+2024-04-15,Chelsea,Everton,3.37093,1.21791,EPL,2023
+2024-04-20,Luton,Brentford,0.497799,3.7809,EPL,2023
+2024-04-20,Sheffield United,Burnley,1.97816,2.42338,EPL,2023
+2024-04-20,Wolverhampton Wanderers,Arsenal,0.164516,1.66179,EPL,2023
+2024-04-21,Everton,Nottingham Forest,0.473233,1.18916,EPL,2023
+2024-04-21,Aston Villa,Bournemouth,2.62687,2.05211,EPL,2023
+2024-04-21,Crystal Palace,West Ham,3.7185,1.34536,EPL,2023
+2024-04-21,Fulham,Liverpool,0.83885,1.02445,EPL,2023
+2024-04-23,Arsenal,Chelsea,3.45858,1.60343,EPL,2023
+2024-04-24,Wolverhampton Wanderers,Bournemouth,0.484454,2.40311,EPL,2023
+2024-04-24,Crystal Palace,Newcastle United,1.43661,0.55129,EPL,2023
+2024-04-24,Everton,Liverpool,1.89111,1.87155,EPL,2023
+2024-04-24,Manchester United,Sheffield United,3.51311,1.20517,EPL,2023
+2024-04-25,Brighton,Manchester City,0.572021,1.90507,EPL,2023
+2024-04-27,West Ham,Liverpool,0.794025,2.29298,EPL,2023
+2024-04-27,Fulham,Crystal Palace,1.39418,1.05387,EPL,2023
+2024-04-27,Manchester United,Burnley,3.06197,1.89591,EPL,2023
+2024-04-27,Newcastle United,Sheffield United,2.93477,1.82408,EPL,2023
+2024-04-27,Wolverhampton Wanderers,Luton,1.49011,0.90435,EPL,2023
+2024-04-27,Everton,Brentford,1.21399,0.956356,EPL,2023
+2024-04-27,Aston Villa,Chelsea,0.612257,1.56401,EPL,2023
+2024-04-28,Bournemouth,Brighton,2.48132,1.35682,EPL,2023
+2024-04-28,Tottenham,Arsenal,2.60458,1.51469,EPL,2023
+2024-04-28,Nottingham Forest,Manchester City,2.17312,0.932063,EPL,2023
+2024-05-02,Chelsea,Tottenham,2.22432,1.27064,EPL,2023
+2024-05-03,Luton,Everton,0.950391,1.22959,EPL,2023
+2024-05-04,Arsenal,Bournemouth,3.91372,0.4687,EPL,2023
+2024-05-04,Brentford,Fulham,0.809379,1.45579,EPL,2023
+2024-05-04,Burnley,Newcastle United,1.28632,4.25643,EPL,2023
+2024-05-04,Sheffield United,Nottingham Forest,2.48986,1.93818,EPL,2023
+2024-05-04,Manchester City,Wolverhampton Wanderers,4.52542,0.396887,EPL,2023
+2024-05-05,Brighton,Aston Villa,2.63566,0.0644055,EPL,2023
+2024-05-05,Chelsea,West Ham,4.21838,0.893899,EPL,2023
+2024-05-05,Liverpool,Tottenham,3.26222,1.17205,EPL,2023
+2024-05-06,Crystal Palace,Manchester United,2.0656,0.341417,EPL,2023
+2024-05-11,Fulham,Manchester City,0.0886245,3.15218,EPL,2023
+2024-05-11,Bournemouth,Brentford,1.07237,1.92722,EPL,2023
+2024-05-11,Everton,Sheffield United,1.82411,0.465523,EPL,2023
+2024-05-11,Newcastle United,Brighton,2.45163,1.91556,EPL,2023
+2024-05-11,Tottenham,Burnley,3.00238,0.950331,EPL,2023
+2024-05-11,West Ham,Luton,3.71009,0.640456,EPL,2023
+2024-05-11,Wolverhampton Wanderers,Crystal Palace,1.1561,2.51452,EPL,2023
+2024-05-11,Nottingham Forest,Chelsea,2.44569,2.41068,EPL,2023
+2024-05-12,Manchester United,Arsenal,0.551669,1.73104,EPL,2023
+2024-05-13,Aston Villa,Liverpool,2.71655,1.89968,EPL,2023
+2024-05-14,Tottenham,Manchester City,1.84285,2.70331,EPL,2023
+2024-05-15,Brighton,Chelsea,1.32423,1.544,EPL,2023
+2024-05-15,Manchester United,Newcastle United,1.49706,2.27657,EPL,2023
+2024-05-19,Arsenal,Everton,3.2117,0.664904,EPL,2023
+2024-05-19,Brentford,Newcastle United,1.70157,3.65044,EPL,2023
+2024-05-19,Brighton,Manchester United,1.9717,1.00404,EPL,2023
+2024-05-19,Burnley,Nottingham Forest,1.08222,1.57962,EPL,2023
+2024-05-19,Chelsea,Bournemouth,1.59771,2.002,EPL,2023
+2024-05-19,Crystal Palace,Aston Villa,2.23189,0.598846,EPL,2023
+2024-05-19,Liverpool,Wolverhampton Wanderers,5.65937,0.731254,EPL,2023
+2024-05-19,Luton,Fulham,2.06743,1.11598,EPL,2023
+2024-05-19,Manchester City,West Ham,2.31504,0.240159,EPL,2023
+2024-05-19,Sheffield United,Tottenham,0.697312,3.19675,EPL,2023

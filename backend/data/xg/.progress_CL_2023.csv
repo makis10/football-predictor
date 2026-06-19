@@ -1,0 +1,126 @@
+fixture_id,date,home_team,away_team,home_xg,away_xg,league,season
+1126144,2023-09-19,AC Milan,Newcastle,1.99,0.28,CL,2023
+1126145,2023-09-19,BSC Young Boys,RB Leipzig,0.47,2.67,CL,2023
+1126149,2023-09-19,Manchester City,FK Crvena Zvezda,4.13,0.78,CL,2023
+1126148,2023-09-19,Paris Saint Germain,Borussia Dortmund,2.44,0.66,CL,2023
+1126146,2023-09-19,Feyenoord,Celtic,1.63,0.3,CL,2023
+1126147,2023-09-19,Lazio,Atletico Madrid,1.22,0.87,CL,2023
+1126150,2023-09-19,Barcelona,Antwerp,2.88,0.34,CL,2023
+1126151,2023-09-19,Shakhtar Donetsk,FC Porto,0.48,1.84,CL,2023
+1126153,2023-09-20,Real Madrid,Union Berlin,3.38,0.21,CL,2023
+1126152,2023-09-20,Galatasaray,FC Copenhagen,0.89,0.61,CL,2023
+1126156,2023-09-20,Arsenal,PSV Eindhoven,2.36,0.57,CL,2023
+1126154,2023-09-20,Bayern Munich,Manchester United,2.46,1.68,CL,2023
+1126158,2023-09-20,Benfica,Red Bull Salzburg,1.48,2.97,CL,2023
+1126157,2023-09-20,SC Braga,Napoli,1.28,1.69,CL,2023
+1126155,2023-09-20,Sevilla,Lens,0.62,1.35,CL,2023
+1126159,2023-09-20,Real Sociedad,Inter,1.38,0.61,CL,2023
+1126160,2023-10-03,Union Berlin,SC Braga,2.21,1.28,CL,2023
+1126161,2023-10-03,Red Bull Salzburg,Real Sociedad,0.66,1.19,CL,2023
+1126162,2023-10-03,Manchester United,Galatasaray,2.1,2.64,CL,2023
+1126164,2023-10-03,Lens,Arsenal,0.64,1.31,CL,2023
+1126165,2023-10-03,PSV Eindhoven,Sevilla,2.58,1.29,CL,2023
+1126163,2023-10-03,FC Copenhagen,Bayern Munich,0.87,0.88,CL,2023
+1126166,2023-10-03,Napoli,Real Madrid,1.98,1.48,CL,2023
+1126167,2023-10-03,Inter,Benfica,3.81,0.31,CL,2023
+1126168,2023-10-04,Atletico Madrid,Feyenoord,0.84,2.46,CL,2023
+1126169,2023-10-04,Antwerp,Shakhtar Donetsk,1.84,2.27,CL,2023
+1126172,2023-10-04,Newcastle,Paris Saint Germain,0.94,0.93,CL,2023
+1126171,2023-10-04,Borussia Dortmund,AC Milan,0.98,1.65,CL,2023
+1126173,2023-10-04,RB Leipzig,Manchester City,0.47,2.28,CL,2023
+1126175,2023-10-04,FC Porto,Barcelona,0.67,1.29,CL,2023
+1126170,2023-10-04,Celtic,Lazio,1.13,0.77,CL,2023
+1126174,2023-10-04,FK Crvena Zvezda,BSC Young Boys,2.67,2.44,CL,2023
+1126177,2023-10-24,Inter,Red Bull Salzburg,2.38,0.49,CL,2023
+1126176,2023-10-24,Galatasaray,Bayern Munich,2.69,1.98,CL,2023
+1126178,2023-10-24,Manchester United,FC Copenhagen,1.69,2.22,CL,2023
+1126179,2023-10-24,Lens,PSV Eindhoven,0.96,0.56,CL,2023
+1126182,2023-10-24,Union Berlin,Napoli,0.45,0.25,CL,2023
+1126183,2023-10-24,Benfica,Real Sociedad,0.48,0.94,CL,2023
+1126181,2023-10-24,SC Braga,Real Madrid,1.54,0.89,CL,2023
+1126180,2023-10-24,Sevilla,Arsenal,0.78,2.04,CL,2023
+1126184,2023-10-25,Feyenoord,Lazio,2.1,2.29,CL,2023
+1126185,2023-10-25,Barcelona,Shakhtar Donetsk,2.73,0.93,CL,2023
+1126188,2023-10-25,Newcastle,Borussia Dortmund,1.08,1.79,CL,2023
+1126187,2023-10-25,Paris Saint Germain,AC Milan,1.33,0.58,CL,2023
+1126189,2023-10-25,RB Leipzig,FK Crvena Zvezda,2.79,1.09,CL,2023
+1126186,2023-10-25,Celtic,Atletico Madrid,0.89,2.09,CL,2023
+1126190,2023-10-25,BSC Young Boys,Manchester City,0.43,4.25,CL,2023
+1126191,2023-10-25,Antwerp,FC Porto,0.71,1.29,CL,2023
+1126192,2023-11-07,Borussia Dortmund,Newcastle,1.38,0.55,CL,2023
+1126193,2023-11-07,Shakhtar Donetsk,Barcelona,0.86,0.93,CL,2023
+1126197,2023-11-07,Manchester City,BSC Young Boys,3.5,0.0,CL,2023
+1126199,2023-11-07,FC Porto,Antwerp,2.32,0.59,CL,2023
+1126195,2023-11-07,Lazio,Feyenoord,1.12,1.42,CL,2023
+1126196,2023-11-07,AC Milan,Paris Saint Germain,1.45,1.54,CL,2023
+1126194,2023-11-07,Atletico Madrid,Celtic,3.05,0.02,CL,2023
+1126198,2023-11-07,FK Crvena Zvezda,RB Leipzig,1.52,2.23,CL,2023
+1126200,2023-11-08,Napoli,Union Berlin,1.75,1.1,CL,2023
+1126201,2023-11-08,Real Sociedad,Benfica,3.41,0.86,CL,2023
+1126204,2023-11-08,Arsenal,Sevilla,1.39,0.04,CL,2023
+1126202,2023-11-08,Bayern Munich,Galatasaray,2.57,0.65,CL,2023
+1126205,2023-11-08,PSV Eindhoven,Lens,0.83,1.15,CL,2023
+1126203,2023-11-08,FC Copenhagen,Manchester United,2.25,3.02,CL,2023
+1126206,2023-11-08,Real Madrid,SC Braga,3.25,1.43,CL,2023
+1126207,2023-11-08,Red Bull Salzburg,Inter,0.64,2.21,CL,2023
+1126208,2023-11-28,Lazio,Celtic,2.3,0.35,CL,2023
+1126209,2023-11-28,Shakhtar Donetsk,Antwerp,2.05,1.09,CL,2023
+1126213,2023-11-28,Manchester City,RB Leipzig,1.78,0.54,CL,2023
+1126211,2023-11-28,Paris Saint Germain,Newcastle,4.54,1.29,CL,2023
+1126210,2023-11-28,Feyenoord,Atletico Madrid,0.98,1.23,CL,2023
+1126212,2023-11-28,AC Milan,Borussia Dortmund,2.24,1.79,CL,2023
+1126215,2023-11-28,Barcelona,FC Porto,1.89,1.16,CL,2023
+1126214,2023-11-28,BSC Young Boys,FK Crvena Zvezda,1.33,1.79,CL,2023
+1126217,2023-11-29,Sevilla,PSV Eindhoven,2.08,2.17,CL,2023
+1126216,2023-11-29,Galatasaray,Manchester United,1.47,1.64,CL,2023
+1126219,2023-11-29,Arsenal,Lens,2.49,0.33,CL,2023
+1126218,2023-11-29,Bayern Munich,FC Copenhagen,0.69,0.74,CL,2023
+1126222,2023-11-29,Benfica,Inter,1.64,3.01,CL,2023
+1126221,2023-11-29,SC Braga,Union Berlin,2.29,0.75,CL,2023
+1126220,2023-11-29,Real Madrid,Napoli,2.82,1.44,CL,2023
+1126223,2023-11-29,Real Sociedad,Red Bull Salzburg,1.35,0.51,CL,2023
+1126224,2023-12-12,Lens,Sevilla,1.36,1.26,CL,2023
+1126225,2023-12-12,PSV Eindhoven,Arsenal,1.55,0.97,CL,2023
+1126226,2023-12-12,Manchester United,Bayern Munich,0.25,1.16,CL,2023
+1126229,2023-12-12,Union Berlin,Real Madrid,0.9,2.9,CL,2023
+1126227,2023-12-12,FC Copenhagen,Galatasaray,1.37,1.92,CL,2023
+1126228,2023-12-12,Napoli,SC Braga,1.44,0.98,CL,2023
+1126230,2023-12-12,Inter,Real Sociedad,0.71,0.77,CL,2023
+1126231,2023-12-12,Red Bull Salzburg,Benfica,1.72,2.96,CL,2023
+1126232,2023-12-13,RB Leipzig,BSC Young Boys,0.74,1.55,CL,2023
+1126233,2023-12-13,FK Crvena Zvezda,Manchester City,1.1,1.36,CL,2023
+1126237,2023-12-13,Newcastle,AC Milan,1.78,1.96,CL,2023
+1126236,2023-12-13,Borussia Dortmund,Paris Saint Germain,1.38,2.86,CL,2023
+1126238,2023-12-13,FC Porto,Shakhtar Donetsk,2.7,1.59,CL,2023
+1126235,2023-12-13,Celtic,Feyenoord,2.28,1.89,CL,2023
+1126234,2023-12-13,Atletico Madrid,Lazio,1.31,0.88,CL,2023
+1126239,2023-12-13,Antwerp,Barcelona,1.67,1.13,CL,2023
+1149512,2024-02-13,RB Leipzig,Real Madrid,1.37,1.43,CL,2023
+1149510,2024-02-13,FC Copenhagen,Manchester City,0.26,3.44,CL,2023
+1149514,2024-02-14,Paris Saint Germain,Real Sociedad,1.23,0.67,CL,2023
+1149516,2024-02-14,Lazio,Bayern Munich,1.63,1.1,CL,2023
+1149520,2024-02-20,PSV Eindhoven,Borussia Dortmund,1.58,0.86,CL,2023
+1149518,2024-02-20,Inter,Atletico Madrid,2.3,0.62,CL,2023
+1149522,2024-02-21,FC Porto,Arsenal,1.17,0.49,CL,2023
+1149524,2024-02-21,Napoli,Barcelona,0.87,0.69,CL,2023
+1149517,2024-03-05,Bayern Munich,Lazio,3.57,0.42,CL,2023
+1149515,2024-03-05,Real Sociedad,Paris Saint Germain,0.9,1.4,CL,2023
+1149511,2024-03-06,Manchester City,FC Copenhagen,0.77,1.23,CL,2023
+1149513,2024-03-06,Real Madrid,RB Leipzig,0.77,1.07,CL,2023
+1149523,2024-03-12,Arsenal,FC Porto,0.95,0.55,CL,2023
+1149525,2024-03-12,Barcelona,Napoli,2.73,1.31,CL,2023
+1149521,2024-03-13,Borussia Dortmund,PSV Eindhoven,1.47,1.57,CL,2023
+1149519,2024-03-13,Atletico Madrid,Inter,2.73,1.57,CL,2023
+1184777,2024-04-09,Arsenal,Bayern Munich,1.22,2.08,CL,2023
+1184779,2024-04-09,Real Madrid,Manchester City,0.65,0.8,CL,2023
+1184783,2024-04-10,Paris Saint Germain,Barcelona,1.28,1.9,CL,2023
+1184781,2024-04-10,Atletico Madrid,Borussia Dortmund,2.18,0.87,CL,2023
+1184782,2024-04-16,Borussia Dortmund,Atletico Madrid,1.48,1.89,CL,2023
+1184784,2024-04-16,Barcelona,Paris Saint Germain,1.08,2.47,CL,2023
+1184780,2024-04-17,Manchester City,Real Madrid,2.66,1.44,CL,2023
+1184778,2024-04-17,Bayern Munich,Arsenal,1.33,0.47,CL,2023
+1196543,2024-04-30,Bayern Munich,Real Madrid,1.58,1.9,CL,2023
+1196501,2024-05-01,Borussia Dortmund,Paris Saint Germain,1.78,1.7,CL,2023
+1196502,2024-05-07,Paris Saint Germain,Borussia Dortmund,3.25,0.74,CL,2023
+1196544,2024-05-08,Real Madrid,Bayern Munich,2.95,0.35,CL,2023
+1199389,2024-06-01,Borussia Dortmund,Real Madrid,2.08,1.13,CL,2023

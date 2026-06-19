@@ -1,0 +1,30 @@
+fixture_id,date,home_team,away_team,home_xg,away_xg,league,season
+971795,2023-02-14,Paris Saint Germain,Bayern Munich,0.83,1.41,CL,2022
+971793,2023-02-14,AC Milan,Tottenham,1.89,0.5,CL,2022
+971799,2023-02-15,Borussia Dortmund,Chelsea,1.49,2.2,CL,2022
+971797,2023-02-15,Club Brugge KV,Benfica,0.26,2.96,CL,2022
+971801,2023-02-21,Liverpool,Real Madrid,1.97,1.64,CL,2022
+971803,2023-02-21,Eintracht Frankfurt,Napoli,0.45,2.87,CL,2022
+971805,2023-02-22,RB Leipzig,Manchester City,0.77,1.18,CL,2022
+971807,2023-02-22,Inter,FC Porto,1.58,1.65,CL,2022
+971800,2023-03-07,Chelsea,Borussia Dortmund,1.97,0.94,CL,2022
+971798,2023-03-07,Benfica,Club Brugge KV,3.47,1.0,CL,2022
+971794,2023-03-08,Tottenham,AC Milan,0.47,1.42,CL,2022
+971796,2023-03-08,Bayern Munich,Paris Saint Germain,1.72,1.1,CL,2022
+971806,2023-03-14,Manchester City,RB Leipzig,4.24,0.56,CL,2022
+971808,2023-03-14,FC Porto,Inter,1.87,0.5,CL,2022
+971804,2023-03-15,Napoli,Eintracht Frankfurt,2.78,1.12,CL,2022
+971802,2023-03-15,Real Madrid,Liverpool,2.19,0.56,CL,2022
+1016057,2023-04-11,Manchester City,Bayern Munich,1.92,0.85,CL,2022
+1016055,2023-04-11,Benfica,Inter,1.79,1.71,CL,2022
+1016061,2023-04-12,AC Milan,Napoli,1.13,1.34,CL,2022
+1016059,2023-04-12,Real Madrid,Chelsea,2.28,0.66,CL,2022
+1016060,2023-04-18,Chelsea,Real Madrid,1.9,1.79,CL,2022
+1016062,2023-04-18,Napoli,AC Milan,2.24,2.0,CL,2022
+1016058,2023-04-19,Bayern Munich,Manchester City,2.19,1.35,CL,2022
+1016056,2023-04-19,Inter,Benfica,1.2,0.68,CL,2022
+1022981,2023-05-09,Real Madrid,Manchester City,0.7,0.55,CL,2022
+1022983,2023-05-10,AC Milan,Inter,0.9,1.97,CL,2022
+1022984,2023-05-16,Inter,AC Milan,0.97,0.48,CL,2022
+1022982,2023-05-17,Manchester City,Real Madrid,2.82,0.47,CL,2022
+1027909,2023-06-10,Manchester City,Inter,0.99,1.68,CL,2022

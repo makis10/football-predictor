@@ -1,0 +1,307 @@
+date,home_team,away_team,home_xg,away_xg,league,season
+2016-08-26,Bayern Munich,Werder Bremen,4.53263,0.185791,Bundesliga,2016
+2016-08-27,Augsburg,Wolfsburg,0.452708,0.711094,Bundesliga,2016
+2016-08-27,Hamburger SV,Ingolstadt,0.309707,1.20744,Bundesliga,2016
+2016-08-27,Eintracht Frankfurt,Schalke 04,1.86688,0.930915,Bundesliga,2016
+2016-08-27,FC Cologne,Darmstadt,3.13195,0.558815,Bundesliga,2016
+2016-08-27,Borussia Dortmund,Mainz 05,1.81984,1.07885,Bundesliga,2016
+2016-08-27,Borussia M.Gladbach,Bayer Leverkusen,1.88815,1.11067,Bundesliga,2016
+2016-08-28,Hertha Berlin,Freiburg,0.869084,0.360723,Bundesliga,2016
+2016-08-28,Hoffenheim,RasenBallsport Leipzig,1.15624,2.47526,Bundesliga,2016
+2016-09-09,Schalke 04,Bayern Munich,0.965209,2.2266,Bundesliga,2016
+2016-09-10,Wolfsburg,FC Cologne,0.914326,1.36943,Bundesliga,2016
+2016-09-10,Ingolstadt,Hertha Berlin,0.986677,0.854096,Bundesliga,2016
+2016-09-10,Darmstadt,Eintracht Frankfurt,0.277384,1.64252,Bundesliga,2016
+2016-09-10,Freiburg,Borussia M.Gladbach,1.55438,0.130259,Bundesliga,2016
+2016-09-10,Bayer Leverkusen,Hamburger SV,2.1378,0.65629,Bundesliga,2016
+2016-09-10,RasenBallsport Leipzig,Borussia Dortmund,0.950658,0.482478,Bundesliga,2016
+2016-09-11,Werder Bremen,Augsburg,1.62947,1.65986,Bundesliga,2016
+2016-09-11,Mainz 05,Hoffenheim,0.788235,2.26684,Bundesliga,2016
+2016-09-16,FC Cologne,Freiburg,1.40487,1.4295,Bundesliga,2016
+2016-09-17,Hamburger SV,RasenBallsport Leipzig,1.08134,3.30009,Bundesliga,2016
+2016-09-17,Hoffenheim,Wolfsburg,1.93562,2.34852,Bundesliga,2016
+2016-09-17,Eintracht Frankfurt,Bayer Leverkusen,2.14781,2.11932,Bundesliga,2016
+2016-09-17,Bayern Munich,Ingolstadt,0.446972,1.54672,Bundesliga,2016
+2016-09-17,Borussia Dortmund,Darmstadt,4.05385,0.179729,Bundesliga,2016
+2016-09-17,Borussia M.Gladbach,Werder Bremen,3.63049,1.20156,Bundesliga,2016
+2016-09-18,Augsburg,Mainz 05,0.82866,1.54386,Bundesliga,2016
+2016-09-18,Hertha Berlin,Schalke 04,0.724842,0.424457,Bundesliga,2016
+2016-09-20,Wolfsburg,Borussia Dortmund,2.71087,2.34245,Bundesliga,2016
+2016-09-20,Ingolstadt,Eintracht Frankfurt,0.782075,0.352096,Bundesliga,2016
+2016-09-20,Darmstadt,Hoffenheim,1.62811,1.44238,Bundesliga,2016
+2016-09-20,Freiburg,Hamburger SV,1.78293,0.647916,Bundesliga,2016
+2016-09-21,RasenBallsport Leipzig,Borussia M.Gladbach,1.58682,0.224262,Bundesliga,2016
+2016-09-21,Werder Bremen,Mainz 05,0.916,1.38592,Bundesliga,2016
+2016-09-21,Bayern Munich,Hertha Berlin,2.71721,0.153422,Bundesliga,2016
+2016-09-21,Bayer Leverkusen,Augsburg,2.0338,0.230565,Bundesliga,2016
+2016-09-21,Schalke 04,FC Cologne,1.37614,1.18875,Bundesliga,2016
+2016-09-23,Borussia Dortmund,Freiburg,3.2333,1.05384,Bundesliga,2016
+2016-09-24,Borussia M.Gladbach,Ingolstadt,1.18177,0.535119,Bundesliga,2016
+2016-09-24,Mainz 05,Bayer Leverkusen,1.73915,1.73598,Bundesliga,2016
+2016-09-24,Hamburger SV,Bayern Munich,0.304936,2.12276,Bundesliga,2016
+2016-09-24,Augsburg,Darmstadt,1.95473,0.129868,Bundesliga,2016
+2016-09-24,Eintracht Frankfurt,Hertha Berlin,1.50633,1.17158,Bundesliga,2016
+2016-09-24,Werder Bremen,Wolfsburg,1.11466,0.483419,Bundesliga,2016
+2016-09-25,Hoffenheim,Schalke 04,1.8649,1.04708,Bundesliga,2016
+2016-09-25,FC Cologne,RasenBallsport Leipzig,0.366844,0.819612,Bundesliga,2016
+2016-09-30,RasenBallsport Leipzig,Augsburg,1.04258,0.313816,Bundesliga,2016
+2016-10-01,Bayern Munich,FC Cologne,2.20563,0.899194,Bundesliga,2016
+2016-10-01,Hertha Berlin,Hamburger SV,2.44266,1.11245,Bundesliga,2016
+2016-10-01,Ingolstadt,Hoffenheim,2.21758,3.31162,Bundesliga,2016
+2016-10-01,Darmstadt,Werder Bremen,1.27773,1.54526,Bundesliga,2016
+2016-10-01,Freiburg,Eintracht Frankfurt,0.464817,0.715723,Bundesliga,2016
+2016-10-01,Bayer Leverkusen,Borussia Dortmund,1.52698,0.837447,Bundesliga,2016
+2016-10-02,Wolfsburg,Mainz 05,1.32308,0.256465,Bundesliga,2016
+2016-10-02,Schalke 04,Borussia M.Gladbach,3.05307,0.802215,Bundesliga,2016
+2016-10-14,Borussia Dortmund,Hertha Berlin,2.60334,0.994838,Bundesliga,2016
+2016-10-15,Borussia M.Gladbach,Hamburger SV,3.46166,0.209913,Bundesliga,2016
+2016-10-15,FC Cologne,Ingolstadt,3.98127,1.07265,Bundesliga,2016
+2016-10-15,Augsburg,Schalke 04,0.414301,0.73357,Bundesliga,2016
+2016-10-15,Hoffenheim,Freiburg,2.4316,0.860554,Bundesliga,2016
+2016-10-15,Eintracht Frankfurt,Bayern Munich,2.01559,1.4782,Bundesliga,2016
+2016-10-15,Werder Bremen,Bayer Leverkusen,1.51915,0.548105,Bundesliga,2016
+2016-10-16,Mainz 05,Darmstadt,2.86526,1.93127,Bundesliga,2016
+2016-10-16,Wolfsburg,RasenBallsport Leipzig,0.684268,1.82053,Bundesliga,2016
+2016-10-21,Hamburger SV,Eintracht Frankfurt,0.163638,1.31119,Bundesliga,2016
+2016-10-22,Ingolstadt,Borussia Dortmund,1.69325,2.51636,Bundesliga,2016
+2016-10-22,Darmstadt,Wolfsburg,1.38031,0.577877,Bundesliga,2016
+2016-10-22,Freiburg,Augsburg,1.53071,1.23006,Bundesliga,2016
+2016-10-22,Hertha Berlin,FC Cologne,1.43523,1.35639,Bundesliga,2016
+2016-10-22,Bayer Leverkusen,Hoffenheim,0.598561,2.30615,Bundesliga,2016
+2016-10-22,Bayern Munich,Borussia M.Gladbach,1.73353,0.49977,Bundesliga,2016
+2016-10-23,RasenBallsport Leipzig,Werder Bremen,3.33619,0.913725,Bundesliga,2016
+2016-10-23,Schalke 04,Mainz 05,1.21196,0.987414,Bundesliga,2016
+2016-10-28,Borussia M.Gladbach,Eintracht Frankfurt,0.605662,0.388618,Bundesliga,2016
+2016-10-29,Mainz 05,Ingolstadt,2.21072,0.216935,Bundesliga,2016
+2016-10-29,Wolfsburg,Bayer Leverkusen,1.1136,2.12119,Bundesliga,2016
+2016-10-29,Augsburg,Bayern Munich,0.724858,3.47304,Bundesliga,2016
+2016-10-29,Werder Bremen,Freiburg,1.29428,1.71134,Bundesliga,2016
+2016-10-29,Darmstadt,RasenBallsport Leipzig,0.199603,1.64364,Bundesliga,2016
+2016-10-29,Borussia Dortmund,Schalke 04,0.816002,0.46649,Bundesliga,2016
+2016-10-30,Hoffenheim,Hertha Berlin,2.77857,0.251867,Bundesliga,2016
+2016-10-30,FC Cologne,Hamburger SV,2.93112,0.307566,Bundesliga,2016
+2016-11-04,Hertha Berlin,Borussia M.Gladbach,1.66602,0.636014,Bundesliga,2016
+2016-11-05,Hamburger SV,Borussia Dortmund,0.716262,2.88584,Bundesliga,2016
+2016-11-05,Ingolstadt,Augsburg,0.587399,1.15792,Bundesliga,2016
+2016-11-05,Bayern Munich,Hoffenheim,1.49595,0.24666,Bundesliga,2016
+2016-11-05,Bayer Leverkusen,Darmstadt,0.674028,0.863248,Bundesliga,2016
+2016-11-05,Freiburg,Wolfsburg,0.916201,2.12583,Bundesliga,2016
+2016-11-05,Eintracht Frankfurt,FC Cologne,0.860348,0.638081,Bundesliga,2016
+2016-11-06,RasenBallsport Leipzig,Mainz 05,2.98005,0.510631,Bundesliga,2016
+2016-11-06,Schalke 04,Werder Bremen,2.84842,1.0143,Bundesliga,2016
+2016-11-18,Bayer Leverkusen,RasenBallsport Leipzig,1.85187,1.13026,Bundesliga,2016
+2016-11-19,Borussia M.Gladbach,FC Cologne,2.04672,0.413052,Bundesliga,2016
+2016-11-19,Mainz 05,Freiburg,2.51061,2.46211,Bundesliga,2016
+2016-11-19,Wolfsburg,Schalke 04,0.273387,1.12414,Bundesliga,2016
+2016-11-19,Augsburg,Hertha Berlin,1.1004,1.42162,Bundesliga,2016
+2016-11-19,Darmstadt,Ingolstadt,1.92547,1.18409,Bundesliga,2016
+2016-11-19,Borussia Dortmund,Bayern Munich,1.55352,0.929514,Bundesliga,2016
+2016-11-20,Hoffenheim,Hamburger SV,2.31892,1.80116,Bundesliga,2016
+2016-11-20,Werder Bremen,Eintracht Frankfurt,1.03212,1.62014,Bundesliga,2016
+2016-11-25,Freiburg,RasenBallsport Leipzig,0.683397,1.90539,Bundesliga,2016
+2016-11-26,FC Cologne,Augsburg,1.38658,0.50809,Bundesliga,2016
+2016-11-26,Borussia M.Gladbach,Hoffenheim,1.845,0.827583,Bundesliga,2016
+2016-11-26,Hamburger SV,Werder Bremen,2.17271,1.21396,Bundesliga,2016
+2016-11-26,Ingolstadt,Wolfsburg,3.68791,0.504027,Bundesliga,2016
+2016-11-26,Eintracht Frankfurt,Borussia Dortmund,0.686336,1.66759,Bundesliga,2016
+2016-11-26,Bayern Munich,Bayer Leverkusen,1.68783,1.26793,Bundesliga,2016
+2016-11-27,Schalke 04,Darmstadt,2.7318,1.26539,Bundesliga,2016
+2016-11-27,Hertha Berlin,Mainz 05,1.63472,1.52234,Bundesliga,2016
+2016-12-02,Mainz 05,Bayern Munich,0.47533,1.67552,Bundesliga,2016
+2016-12-03,Wolfsburg,Hertha Berlin,1.13683,1.54821,Bundesliga,2016
+2016-12-03,Borussia Dortmund,Borussia M.Gladbach,2.39193,0.731465,Bundesliga,2016
+2016-12-03,Bayer Leverkusen,Freiburg,3.31063,0.599753,Bundesliga,2016
+2016-12-03,Hoffenheim,FC Cologne,2.16731,1.83627,Bundesliga,2016
+2016-12-03,Werder Bremen,Ingolstadt,2.23558,1.09704,Bundesliga,2016
+2016-12-03,RasenBallsport Leipzig,Schalke 04,1.8836,1.12833,Bundesliga,2016
+2016-12-04,Darmstadt,Hamburger SV,0.567564,2.12004,Bundesliga,2016
+2016-12-04,Augsburg,Eintracht Frankfurt,0.671214,0.390793,Bundesliga,2016
+2016-12-09,Eintracht Frankfurt,Hoffenheim,0.582927,0.212786,Bundesliga,2016
+2016-12-10,Freiburg,Darmstadt,1.61481,0.604576,Bundesliga,2016
+2016-12-10,FC Cologne,Borussia Dortmund,0.905376,0.740252,Bundesliga,2016
+2016-12-10,Hamburger SV,Augsburg,0.886586,0.952731,Bundesliga,2016
+2016-12-10,Ingolstadt,RasenBallsport Leipzig,0.577386,1.51305,Bundesliga,2016
+2016-12-10,Bayern Munich,Wolfsburg,2.18433,0.422847,Bundesliga,2016
+2016-12-10,Hertha Berlin,Werder Bremen,0.521946,1.371,Bundesliga,2016
+2016-12-11,Borussia M.Gladbach,Mainz 05,0.355797,0.530834,Bundesliga,2016
+2016-12-11,Schalke 04,Bayer Leverkusen,0.699097,1.23195,Bundesliga,2016
+2016-12-16,Hoffenheim,Borussia Dortmund,1.54298,1.48937,Bundesliga,2016
+2016-12-17,Augsburg,Borussia M.Gladbach,0.34872,0.283914,Bundesliga,2016
+2016-12-17,Werder Bremen,FC Cologne,0.377752,1.84906,Bundesliga,2016
+2016-12-17,RasenBallsport Leipzig,Hertha Berlin,1.64142,0.199768,Bundesliga,2016
+2016-12-17,Schalke 04,Freiburg,0.958265,1.25505,Bundesliga,2016
+2016-12-17,Mainz 05,Hamburger SV,1.36545,0.900534,Bundesliga,2016
+2016-12-17,Wolfsburg,Eintracht Frankfurt,1.75441,1.38982,Bundesliga,2016
+2016-12-18,Darmstadt,Bayern Munich,0.869666,1.21772,Bundesliga,2016
+2016-12-18,Bayer Leverkusen,Ingolstadt,0.571467,2.29253,Bundesliga,2016
+2016-12-20,Eintracht Frankfurt,Mainz 05,1.76293,1.05038,Bundesliga,2016
+2016-12-20,Borussia M.Gladbach,Wolfsburg,1.53544,2.26217,Bundesliga,2016
+2016-12-20,Hamburger SV,Schalke 04,2.47737,0.439814,Bundesliga,2016
+2016-12-20,Borussia Dortmund,Augsburg,1.98186,1.18385,Bundesliga,2016
+2016-12-21,Ingolstadt,Freiburg,1.2843,1.5487,Bundesliga,2016
+2016-12-21,Hoffenheim,Werder Bremen,1.51059,0.546119,Bundesliga,2016
+2016-12-21,Hertha Berlin,Darmstadt,2.04959,1.07625,Bundesliga,2016
+2016-12-21,FC Cologne,Bayer Leverkusen,0.721118,1.45189,Bundesliga,2016
+2016-12-21,Bayern Munich,RasenBallsport Leipzig,4.92205,0.135897,Bundesliga,2016
+2017-01-20,Freiburg,Bayern Munich,0.696302,0.60487,Bundesliga,2016
+2017-01-21,Werder Bremen,Borussia Dortmund,0.683532,2.86037,Bundesliga,2016
+2017-01-21,Schalke 04,Ingolstadt,2.02155,0.522735,Bundesliga,2016
+2017-01-21,Wolfsburg,Hamburger SV,1.13564,0.666936,Bundesliga,2016
+2017-01-21,Augsburg,Hoffenheim,0.45179,1.89483,Bundesliga,2016
+2017-01-21,Darmstadt,Borussia M.Gladbach,0.802235,1.26715,Bundesliga,2016
+2017-01-21,RasenBallsport Leipzig,Eintracht Frankfurt,3.05773,0.617185,Bundesliga,2016
+2017-01-22,Bayer Leverkusen,Hertha Berlin,2.20774,1.18956,Bundesliga,2016
+2017-01-22,Mainz 05,FC Cologne,0.489561,0.407808,Bundesliga,2016
+2017-01-27,Schalke 04,Eintracht Frankfurt,0.621137,0.416066,Bundesliga,2016
+2017-01-28,RasenBallsport Leipzig,Hoffenheim,1.47923,0.793259,Bundesliga,2016
+2017-01-28,Wolfsburg,Augsburg,1.51608,2.03309,Bundesliga,2016
+2017-01-28,Ingolstadt,Hamburger SV,1.41586,0.491104,Bundesliga,2016
+2017-01-28,Werder Bremen,Bayern Munich,0.740585,0.664364,Bundesliga,2016
+2017-01-28,Darmstadt,FC Cologne,1.55993,3.27302,Bundesliga,2016
+2017-01-28,Bayer Leverkusen,Borussia M.Gladbach,1.53578,1.90101,Bundesliga,2016
+2017-01-29,Freiburg,Hertha Berlin,0.618883,0.529186,Bundesliga,2016
+2017-01-29,Mainz 05,Borussia Dortmund,0.681513,1.16864,Bundesliga,2016
+2017-02-03,Hamburger SV,Bayer Leverkusen,1.0957,0.258906,Bundesliga,2016
+2017-02-04,FC Cologne,Wolfsburg,1.1942,0.620852,Bundesliga,2016
+2017-02-04,Hoffenheim,Mainz 05,2.43327,0.895123,Bundesliga,2016
+2017-02-04,Bayern Munich,Schalke 04,1.20803,0.933229,Bundesliga,2016
+2017-02-04,Borussia M.Gladbach,Freiburg,1.86188,0.546023,Bundesliga,2016
+2017-02-04,Hertha Berlin,Ingolstadt,0.810684,0.523057,Bundesliga,2016
+2017-02-04,Borussia Dortmund,RasenBallsport Leipzig,3.12438,0.0680623,Bundesliga,2016
+2017-02-05,Augsburg,Werder Bremen,1.59519,2.32944,Bundesliga,2016
+2017-02-05,Eintracht Frankfurt,Darmstadt,2.40111,0.250504,Bundesliga,2016
+2017-02-10,Mainz 05,Augsburg,1.63564,0.427462,Bundesliga,2016
+2017-02-11,Bayer Leverkusen,Eintracht Frankfurt,2.54416,0.632868,Bundesliga,2016
+2017-02-11,Darmstadt,Borussia Dortmund,1.93475,0.746753,Bundesliga,2016
+2017-02-11,RasenBallsport Leipzig,Hamburger SV,1.39703,1.4821,Bundesliga,2016
+2017-02-11,Ingolstadt,Bayern Munich,0.436757,1.89105,Bundesliga,2016
+2017-02-11,Werder Bremen,Borussia M.Gladbach,1.06174,1.32359,Bundesliga,2016
+2017-02-11,Schalke 04,Hertha Berlin,1.20548,0.577284,Bundesliga,2016
+2017-02-12,Wolfsburg,Hoffenheim,2.33121,0.874317,Bundesliga,2016
+2017-02-12,Freiburg,FC Cologne,0.928509,1.74238,Bundesliga,2016
+2017-02-17,Augsburg,Bayer Leverkusen,1.44908,3.27707,Bundesliga,2016
+2017-02-18,Eintracht Frankfurt,Ingolstadt,2.1199,1.37301,Bundesliga,2016
+2017-02-18,Hoffenheim,Darmstadt,1.73239,0.316848,Bundesliga,2016
+2017-02-18,Mainz 05,Werder Bremen,0.855557,0.560453,Bundesliga,2016
+2017-02-18,Hertha Berlin,Bayern Munich,0.925318,1.28308,Bundesliga,2016
+2017-02-18,Borussia Dortmund,Wolfsburg,2.5227,0.213682,Bundesliga,2016
+2017-02-18,Hamburger SV,Freiburg,1.63591,0.940296,Bundesliga,2016
+2017-02-19,Borussia M.Gladbach,RasenBallsport Leipzig,1.38933,0.75509,Bundesliga,2016
+2017-02-19,FC Cologne,Schalke 04,0.302197,1.77578,Bundesliga,2016
+2017-02-24,Wolfsburg,Werder Bremen,2.1184,1.05277,Bundesliga,2016
+2017-02-25,Darmstadt,Augsburg,0.680607,1.81789,Bundesliga,2016
+2017-02-25,RasenBallsport Leipzig,FC Cologne,0.94132,0.696948,Bundesliga,2016
+2017-02-25,Freiburg,Borussia Dortmund,0.318406,5.0778,Bundesliga,2016
+2017-02-25,Bayer Leverkusen,Mainz 05,1.00907,1.36951,Bundesliga,2016
+2017-02-25,Bayern Munich,Hamburger SV,3.61743,0.228928,Bundesliga,2016
+2017-02-25,Hertha Berlin,Eintracht Frankfurt,0.743606,0.550767,Bundesliga,2016
+2017-02-26,Ingolstadt,Borussia M.Gladbach,0.876174,1.15857,Bundesliga,2016
+2017-02-26,Schalke 04,Hoffenheim,0.282474,0.907791,Bundesliga,2016
+2017-03-03,Augsburg,RasenBallsport Leipzig,0.825387,1.38005,Bundesliga,2016
+2017-03-04,Mainz 05,Wolfsburg,0.943015,0.753265,Bundesliga,2016
+2017-03-04,FC Cologne,Bayern Munich,0.184391,1.609,Bundesliga,2016
+2017-03-04,Werder Bremen,Darmstadt,1.99892,1.68003,Bundesliga,2016
+2017-03-04,Hoffenheim,Ingolstadt,2.00625,0.755565,Bundesliga,2016
+2017-03-04,Borussia Dortmund,Bayer Leverkusen,4.87346,0.634697,Bundesliga,2016
+2017-03-04,Borussia M.Gladbach,Schalke 04,3.02164,1.29836,Bundesliga,2016
+2017-03-05,Eintracht Frankfurt,Freiburg,1.72726,1.64187,Bundesliga,2016
+2017-03-05,Hamburger SV,Hertha Berlin,0.696504,0.385743,Bundesliga,2016
+2017-03-10,Bayer Leverkusen,Werder Bremen,1.64424,0.977419,Bundesliga,2016
+2017-03-11,Bayern Munich,Eintracht Frankfurt,2.93121,0.753534,Bundesliga,2016
+2017-03-11,Darmstadt,Mainz 05,1.66213,1.29857,Bundesliga,2016
+2017-03-11,Freiburg,Hoffenheim,1.14554,1.59538,Bundesliga,2016
+2017-03-11,RasenBallsport Leipzig,Wolfsburg,0.594929,1.70049,Bundesliga,2016
+2017-03-11,Hertha Berlin,Borussia Dortmund,1.73774,1.08133,Bundesliga,2016
+2017-03-11,Ingolstadt,FC Cologne,1.42995,1.28155,Bundesliga,2016
+2017-03-12,Schalke 04,Augsburg,3.76518,1.05335,Bundesliga,2016
+2017-03-12,Hamburger SV,Borussia M.Gladbach,1.4575,1.31382,Bundesliga,2016
+2017-03-17,Borussia Dortmund,Ingolstadt,0.574065,1.37608,Bundesliga,2016
+2017-03-18,Wolfsburg,Darmstadt,2.27784,0.745708,Bundesliga,2016
+2017-03-18,FC Cologne,Hertha Berlin,1.0584,1.69998,Bundesliga,2016
+2017-03-18,Augsburg,Freiburg,1.13915,1.03907,Bundesliga,2016
+2017-03-18,Werder Bremen,RasenBallsport Leipzig,1.39387,0.689398,Bundesliga,2016
+2017-03-18,Hoffenheim,Bayer Leverkusen,1.75958,0.992443,Bundesliga,2016
+2017-03-18,Eintracht Frankfurt,Hamburger SV,1.03591,0.134726,Bundesliga,2016
+2017-03-19,Mainz 05,Schalke 04,0.645262,1.04603,Bundesliga,2016
+2017-03-19,Borussia M.Gladbach,Bayern Munich,0.75605,2.21621,Bundesliga,2016
+2017-03-31,Hertha Berlin,Hoffenheim,0.269789,3.16527,Bundesliga,2016
+2017-04-01,Hamburger SV,FC Cologne,1.36149,1.13052,Bundesliga,2016
+2017-04-01,Bayern Munich,Augsburg,3.67736,0.186673,Bundesliga,2016
+2017-04-01,Schalke 04,Borussia Dortmund,0.578624,0.916317,Bundesliga,2016
+2017-04-01,Freiburg,Werder Bremen,1.76818,1.03239,Bundesliga,2016
+2017-04-01,RasenBallsport Leipzig,Darmstadt,4.00225,1.05189,Bundesliga,2016
+2017-04-01,Eintracht Frankfurt,Borussia M.Gladbach,2.70815,0.205804,Bundesliga,2016
+2017-04-02,Ingolstadt,Mainz 05,1.5092,0.767112,Bundesliga,2016
+2017-04-02,Bayer Leverkusen,Wolfsburg,0.779828,1.79787,Bundesliga,2016
+2017-04-04,Borussia Dortmund,Hamburger SV,3.96885,1.01065,Bundesliga,2016
+2017-04-04,FC Cologne,Eintracht Frankfurt,0.731269,0.651039,Bundesliga,2016
+2017-04-04,Werder Bremen,Schalke 04,2.02275,0.731092,Bundesliga,2016
+2017-04-04,Hoffenheim,Bayern Munich,0.972676,1.89107,Bundesliga,2016
+2017-04-05,Darmstadt,Bayer Leverkusen,0.548735,2.05324,Bundesliga,2016
+2017-04-05,Augsburg,Ingolstadt,1.36168,1.76551,Bundesliga,2016
+2017-04-05,Mainz 05,RasenBallsport Leipzig,2.90081,1.62551,Bundesliga,2016
+2017-04-05,Wolfsburg,Freiburg,1.9679,0.859006,Bundesliga,2016
+2017-04-05,Borussia M.Gladbach,Hertha Berlin,1.82471,0.863378,Bundesliga,2016
+2017-04-07,Eintracht Frankfurt,Werder Bremen,2.5197,0.550904,Bundesliga,2016
+2017-04-08,Freiburg,Mainz 05,0.937258,0.851206,Bundesliga,2016
+2017-04-08,RasenBallsport Leipzig,Bayer Leverkusen,1.51489,0.629889,Bundesliga,2016
+2017-04-08,Schalke 04,Wolfsburg,1.64298,1.59019,Bundesliga,2016
+2017-04-08,FC Cologne,Borussia M.Gladbach,0.968922,0.615319,Bundesliga,2016
+2017-04-08,Hamburger SV,Hoffenheim,0.920754,1.40908,Bundesliga,2016
+2017-04-08,Bayern Munich,Borussia Dortmund,1.9556,0.696828,Bundesliga,2016
+2017-04-09,Hertha Berlin,Augsburg,1.87729,0.668736,Bundesliga,2016
+2017-04-09,Ingolstadt,Darmstadt,3.65862,0.980139,Bundesliga,2016
+2017-04-15,Borussia Dortmund,Eintracht Frankfurt,2.56997,0.981383,Bundesliga,2016
+2017-04-15,Augsburg,FC Cologne,1.08513,1.39565,Bundesliga,2016
+2017-04-15,Mainz 05,Hertha Berlin,1.02606,0.261043,Bundesliga,2016
+2017-04-15,Wolfsburg,Ingolstadt,1.60835,0.155444,Bundesliga,2016
+2017-04-15,RasenBallsport Leipzig,Freiburg,1.19051,0.690412,Bundesliga,2016
+2017-04-15,Hoffenheim,Borussia M.Gladbach,2.0053,2.23834,Bundesliga,2016
+2017-04-15,Bayer Leverkusen,Bayern Munich,0.380752,2.14432,Bundesliga,2016
+2017-04-16,Werder Bremen,Hamburger SV,1.74435,0.695911,Bundesliga,2016
+2017-04-16,Darmstadt,Schalke 04,1.48412,2.79502,Bundesliga,2016
+2017-04-21,FC Cologne,Hoffenheim,1.18729,1.16684,Bundesliga,2016
+2017-04-22,Bayern Munich,Mainz 05,0.916519,1.75151,Bundesliga,2016
+2017-04-22,Hamburger SV,Darmstadt,1.14997,1.31693,Bundesliga,2016
+2017-04-22,Hertha Berlin,Wolfsburg,1.98048,1.57197,Bundesliga,2016
+2017-04-22,Eintracht Frankfurt,Augsburg,2.01622,0.793224,Bundesliga,2016
+2017-04-22,Ingolstadt,Werder Bremen,2.2262,2.20579,Bundesliga,2016
+2017-04-22,Borussia M.Gladbach,Borussia Dortmund,0.855144,1.94133,Bundesliga,2016
+2017-04-23,Freiburg,Bayer Leverkusen,1.0518,1.14702,Bundesliga,2016
+2017-04-23,Schalke 04,RasenBallsport Leipzig,0.768932,0.73343,Bundesliga,2016
+2017-04-28,Bayer Leverkusen,Schalke 04,1.26441,2.46126,Bundesliga,2016
+2017-04-29,Borussia Dortmund,FC Cologne,2.67669,0.275427,Bundesliga,2016
+2017-04-29,Darmstadt,Freiburg,1.61424,1.11673,Bundesliga,2016
+2017-04-29,Werder Bremen,Hertha Berlin,1.83478,0.761313,Bundesliga,2016
+2017-04-29,RasenBallsport Leipzig,Ingolstadt,1.50493,0.593622,Bundesliga,2016
+2017-04-29,Mainz 05,Borussia M.Gladbach,2.1399,1.22816,Bundesliga,2016
+2017-04-29,Wolfsburg,Bayern Munich,0.364748,2.26407,Bundesliga,2016
+2017-04-30,Augsburg,Hamburger SV,2.14215,0.294926,Bundesliga,2016
+2017-04-30,Hoffenheim,Eintracht Frankfurt,0.595004,0.172208,Bundesliga,2016
+2017-05-05,FC Cologne,Werder Bremen,2.86367,1.59994,Bundesliga,2016
+2017-05-06,Eintracht Frankfurt,Wolfsburg,1.14243,1.41291,Bundesliga,2016
+2017-05-06,Bayern Munich,Darmstadt,2.4342,1.1907,Bundesliga,2016
+2017-05-06,Borussia Dortmund,Hoffenheim,2.58723,1.03413,Bundesliga,2016
+2017-05-06,Borussia M.Gladbach,Augsburg,1.36962,1.5852,Bundesliga,2016
+2017-05-06,Ingolstadt,Bayer Leverkusen,0.432267,1.38231,Bundesliga,2016
+2017-05-06,Hertha Berlin,RasenBallsport Leipzig,0.23152,2.56445,Bundesliga,2016
+2017-05-07,Hamburger SV,Mainz 05,0.327514,1.37521,Bundesliga,2016
+2017-05-07,Freiburg,Schalke 04,2.48307,0.422559,Bundesliga,2016
+2017-05-13,Bayer Leverkusen,FC Cologne,2.64929,0.970487,Bundesliga,2016
+2017-05-13,Schalke 04,Hamburger SV,1.23798,1.82811,Bundesliga,2016
+2017-05-13,Mainz 05,Eintracht Frankfurt,1.77492,1.64384,Bundesliga,2016
+2017-05-13,Wolfsburg,Borussia M.Gladbach,1.26549,1.65365,Bundesliga,2016
+2017-05-13,Augsburg,Borussia Dortmund,1.27027,1.7547,Bundesliga,2016
+2017-05-13,Werder Bremen,Hoffenheim,1.44786,1.01187,Bundesliga,2016
+2017-05-13,Darmstadt,Hertha Berlin,0.754449,1.58846,Bundesliga,2016
+2017-05-13,Freiburg,Ingolstadt,1.27196,1.89065,Bundesliga,2016
+2017-05-13,RasenBallsport Leipzig,Bayern Munich,2.0471,3.61687,Bundesliga,2016
+2017-05-20,Borussia Dortmund,Werder Bremen,4.35162,1.6445,Bundesliga,2016
+2017-05-20,Borussia M.Gladbach,Darmstadt,1.97938,0.597895,Bundesliga,2016
+2017-05-20,Hertha Berlin,Bayer Leverkusen,3.7783,4.4212,Bundesliga,2016
+2017-05-20,FC Cologne,Mainz 05,1.29204,0.141602,Bundesliga,2016
+2017-05-20,Hamburger SV,Wolfsburg,0.566862,0.872557,Bundesliga,2016
+2017-05-20,Ingolstadt,Schalke 04,2.6011,1.13122,Bundesliga,2016
+2017-05-20,Hoffenheim,Augsburg,0.825898,0.264815,Bundesliga,2016
+2017-05-20,Eintracht Frankfurt,RasenBallsport Leipzig,2.26092,1.38077,Bundesliga,2016
+2017-05-20,Bayern Munich,Freiburg,3.93385,1.52892,Bundesliga,2016

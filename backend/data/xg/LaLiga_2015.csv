@@ -1,0 +1,381 @@
+date,home_team,away_team,home_xg,away_xg,league,season
+2015-08-21,Malaga,Sevilla,0.98272,0.856601,LaLiga,2015
+2015-08-22,Deportivo La Coruna,Real Sociedad,0.574748,0.944878,LaLiga,2015
+2015-08-22,Espanyol,Getafe,0.477297,1.27636,LaLiga,2015
+2015-08-22,Atletico Madrid,Las Palmas,0.91996,0.522515,LaLiga,2015
+2015-08-23,Rayo Vallecano,Valencia,0.693517,2.20399,LaLiga,2015
+2015-08-23,Athletic Club,Barcelona,0.394999,1.76141,LaLiga,2015
+2015-08-23,Sporting Gijon,Real Madrid,0.333248,1.54271,LaLiga,2015
+2015-08-24,Levante,Celta Vigo,0.485771,1.80598,LaLiga,2015
+2015-08-24,Real Betis,Villarreal,1.4954,1.63096,LaLiga,2015
+2015-08-24,Granada,Eibar,0.893586,1.81223,LaLiga,2015
+2015-08-28,Villarreal,Espanyol,1.59386,0.721424,LaLiga,2015
+2015-08-29,Real Sociedad,Sporting Gijon,0.887693,0.25686,LaLiga,2015
+2015-08-29,Barcelona,Malaga,1.92171,0.223011,LaLiga,2015
+2015-08-30,Celta Vigo,Rayo Vallecano,1.7022,0.0816438,LaLiga,2015
+2015-08-30,Real Madrid,Real Betis,3.14512,0.941159,LaLiga,2015
+2015-08-30,Eibar,Athletic Club,1.34808,0.316867,LaLiga,2015
+2015-08-30,Sevilla,Atletico Madrid,1.73824,1.2446,LaLiga,2015
+2015-08-30,Valencia,Deportivo La Coruna,1.85572,0.818281,LaLiga,2015
+2015-08-31,Getafe,Granada,0.801319,1.27622,LaLiga,2015
+2015-08-31,Las Palmas,Levante,0.825401,0.0685963,LaLiga,2015
+2015-09-11,Levante,Sevilla,1.09171,0.886593,LaLiga,2015
+2015-09-12,Espanyol,Real Madrid,1.47918,4.38766,LaLiga,2015
+2015-09-12,Sporting Gijon,Valencia,1.10502,1.48606,LaLiga,2015
+2015-09-12,Atletico Madrid,Barcelona,0.833737,2.33036,LaLiga,2015
+2015-09-13,Real Betis,Real Sociedad,0.75201,0.663712,LaLiga,2015
+2015-09-13,Granada,Villarreal,0.817524,1.48742,LaLiga,2015
+2015-09-13,Athletic Club,Getafe,1.91225,0.930841,LaLiga,2015
+2015-09-13,Celta Vigo,Las Palmas,3.52742,1.29875,LaLiga,2015
+2015-09-13,Malaga,Eibar,1.03596,0.885807,LaLiga,2015
+2015-09-14,Rayo Vallecano,Deportivo La Coruna,0.61631,2.11613,LaLiga,2015
+2015-09-18,Getafe,Malaga,1.18708,0.690557,LaLiga,2015
+2015-09-19,Real Madrid,Granada,3.03758,1.7661,LaLiga,2015
+2015-09-19,Valencia,Real Betis,1.81097,0.190749,LaLiga,2015
+2015-09-19,Eibar,Atletico Madrid,0.2857,1.72085,LaLiga,2015
+2015-09-20,Real Sociedad,Espanyol,1.35321,1.89499,LaLiga,2015
+2015-09-20,Sevilla,Celta Vigo,1.52622,0.84576,LaLiga,2015
+2015-09-20,Deportivo La Coruna,Sporting Gijon,0.831861,1.62405,LaLiga,2015
+2015-09-20,Villarreal,Athletic Club,1.61474,1.26405,LaLiga,2015
+2015-09-20,Barcelona,Levante,4.0122,0.866439,LaLiga,2015
+2015-09-20,Las Palmas,Rayo Vallecano,0.401504,1.77993,LaLiga,2015
+2015-09-22,Espanyol,Valencia,1.87389,0.777547,LaLiga,2015
+2015-09-22,Atletico Madrid,Getafe,1.48124,0.480381,LaLiga,2015
+2015-09-23,Granada,Real Sociedad,0.393118,2.65392,LaLiga,2015
+2015-09-23,Rayo Vallecano,Sporting Gijon,2.90667,0.532738,LaLiga,2015
+2015-09-23,Celta Vigo,Barcelona,2.22577,2.51546,LaLiga,2015
+2015-09-23,Levante,Eibar,0.537144,1.40104,LaLiga,2015
+2015-09-23,Athletic Club,Real Madrid,1.17616,2.93805,LaLiga,2015
+2015-09-24,Malaga,Villarreal,0.878256,0.933564,LaLiga,2015
+2015-09-24,Las Palmas,Sevilla,1.02387,1.53528,LaLiga,2015
+2015-09-25,Real Betis,Deportivo La Coruna,1.11886,0.264158,LaLiga,2015
+2015-09-25,Valencia,Granada,2.0801,0.990969,LaLiga,2015
+2015-09-26,Barcelona,Las Palmas,3.47992,0.585814,LaLiga,2015
+2015-09-26,Real Madrid,Malaga,3.18828,0.638418,LaLiga,2015
+2015-09-26,Sevilla,Rayo Vallecano,2.76392,0.920477,LaLiga,2015
+2015-09-26,Villarreal,Atletico Madrid,0.871094,0.466414,LaLiga,2015
+2015-09-27,Eibar,Celta Vigo,1.20938,1.08234,LaLiga,2015
+2015-09-27,Sporting Gijon,Real Betis,1.75847,1.65258,LaLiga,2015
+2015-09-27,Deportivo La Coruna,Espanyol,1.89137,0.259334,LaLiga,2015
+2015-09-27,Getafe,Levante,1.09777,0.589659,LaLiga,2015
+2015-09-27,Real Sociedad,Athletic Club,1.08705,0.611548,LaLiga,2015
+2015-10-02,Celta Vigo,Getafe,1.48902,1.32092,LaLiga,2015
+2015-10-03,Sevilla,Barcelona,1.57705,3.86997,LaLiga,2015
+2015-10-03,Granada,Deportivo La Coruna,0.825643,0.942041,LaLiga,2015
+2015-10-03,Espanyol,Sporting Gijon,2.00148,1.6289,LaLiga,2015
+2015-10-04,Las Palmas,Eibar,0.965753,1.62203,LaLiga,2015
+2015-10-04,Malaga,Real Sociedad,1.89707,1.04161,LaLiga,2015
+2015-10-04,Rayo Vallecano,Real Betis,1.2884,1.68781,LaLiga,2015
+2015-10-04,Athletic Club,Valencia,2.69373,0.61804,LaLiga,2015
+2015-10-04,Levante,Villarreal,1.06144,0.114789,LaLiga,2015
+2015-10-04,Atletico Madrid,Real Madrid,2.38708,0.792017,LaLiga,2015
+2015-10-17,Real Madrid,Levante,1.60293,1.5507,LaLiga,2015
+2015-10-17,Eibar,Sevilla,0.781265,1.68695,LaLiga,2015
+2015-10-17,Barcelona,Rayo Vallecano,4.61543,2.83637,LaLiga,2015
+2015-10-18,Valencia,Malaga,1.59507,1.53697,LaLiga,2015
+2015-10-18,Real Betis,Espanyol,1.86579,1.85292,LaLiga,2015
+2015-10-18,Villarreal,Celta Vigo,0.995361,1.62408,LaLiga,2015
+2015-10-18,Real Sociedad,Atletico Madrid,0.485713,1.57864,LaLiga,2015
+2015-10-18,Getafe,Las Palmas,2.86431,0.443316,LaLiga,2015
+2015-10-18,Deportivo La Coruna,Athletic Club,1.24801,0.676596,LaLiga,2015
+2015-10-19,Sporting Gijon,Granada,1.39196,2.51462,LaLiga,2015
+2015-10-23,Rayo Vallecano,Espanyol,1.85851,1.41105,LaLiga,2015
+2015-10-24,Celta Vigo,Real Madrid,1.57638,1.9616,LaLiga,2015
+2015-10-24,Granada,Real Betis,1.06647,1.11054,LaLiga,2015
+2015-10-24,Sevilla,Getafe,5.15361,0.227689,LaLiga,2015
+2015-10-25,Malaga,Deportivo La Coruna,1.06014,0.766533,LaLiga,2015
+2015-10-25,Levante,Real Sociedad,1.07863,3.28662,LaLiga,2015
+2015-10-25,Las Palmas,Villarreal,0.189007,0.205133,LaLiga,2015
+2015-10-25,Barcelona,Eibar,1.64662,1.30132,LaLiga,2015
+2015-10-25,Atletico Madrid,Valencia,2.07582,0.885758,LaLiga,2015
+2015-10-26,Athletic Club,Sporting Gijon,2.81541,0.15924,LaLiga,2015
+2015-10-30,Deportivo La Coruna,Atletico Madrid,0.917497,1.43617,LaLiga,2015
+2015-10-31,Real Madrid,Las Palmas,2.80269,0.562561,LaLiga,2015
+2015-10-31,Villarreal,Sevilla,1.03337,0.880961,LaLiga,2015
+2015-10-31,Valencia,Levante,2.26116,1.14512,LaLiga,2015
+2015-10-31,Getafe,Barcelona,0.18992,2.07864,LaLiga,2015
+2015-11-01,Real Sociedad,Celta Vigo,1.13516,1.43886,LaLiga,2015
+2015-11-01,Eibar,Rayo Vallecano,1.26188,0.502135,LaLiga,2015
+2015-11-01,Espanyol,Granada,1.71942,0.680785,LaLiga,2015
+2015-11-01,Sporting Gijon,Malaga,1.51083,0.482096,LaLiga,2015
+2015-11-01,Real Betis,Athletic Club,1.23993,4.022,LaLiga,2015
+2015-11-06,Las Palmas,Real Sociedad,0.802566,0.500075,LaLiga,2015
+2015-11-07,Celta Vigo,Valencia,1.6317,1.48214,LaLiga,2015
+2015-11-07,Levante,Deportivo La Coruna,0.822146,0.572246,LaLiga,2015
+2015-11-07,Eibar,Getafe,2.65653,0.607458,LaLiga,2015
+2015-11-07,Rayo Vallecano,Granada,0.825919,0.483537,LaLiga,2015
+2015-11-08,Malaga,Real Betis,0.890995,0.876923,LaLiga,2015
+2015-11-08,Athletic Club,Espanyol,0.780105,0.629441,LaLiga,2015
+2015-11-08,Barcelona,Villarreal,3.0769,0.278588,LaLiga,2015
+2015-11-08,Atletico Madrid,Sporting Gijon,1.21835,0.396003,LaLiga,2015
+2015-11-08,Sevilla,Real Madrid,2.39505,1.25807,LaLiga,2015
+2015-11-21,Real Sociedad,Sevilla,1.39018,1.1262,LaLiga,2015
+2015-11-21,Real Madrid,Barcelona,1.2581,3.27692,LaLiga,2015
+2015-11-21,Espanyol,Malaga,1.15492,0.753602,LaLiga,2015
+2015-11-22,Valencia,Las Palmas,1.38069,2.43396,LaLiga,2015
+2015-11-22,Deportivo La Coruna,Celta Vigo,1.02848,0.886052,LaLiga,2015
+2015-11-22,Sporting Gijon,Levante,1.98544,2.67209,LaLiga,2015
+2015-11-22,Villarreal,Eibar,1.78239,2.61337,LaLiga,2015
+2015-11-22,Granada,Athletic Club,0.806379,1.35423,LaLiga,2015
+2015-11-22,Real Betis,Atletico Madrid,0.128682,2.26452,LaLiga,2015
+2015-11-23,Getafe,Rayo Vallecano,0.721945,1.1181,LaLiga,2015
+2015-11-27,Levante,Real Betis,1.10847,0.943363,LaLiga,2015
+2015-11-28,Barcelona,Real Sociedad,2.95341,0.617573,LaLiga,2015
+2015-11-28,Atletico Madrid,Espanyol,1.73222,0.143079,LaLiga,2015
+2015-11-28,Malaga,Granada,1.40547,0.557943,LaLiga,2015
+2015-11-29,Las Palmas,Deportivo La Coruna,0.349655,2.20767,LaLiga,2015
+2015-11-29,Celta Vigo,Sporting Gijon,1.14376,0.664946,LaLiga,2015
+2015-11-29,Getafe,Villarreal,1.67288,0.7886,LaLiga,2015
+2015-11-29,Eibar,Real Madrid,0.28097,2.29034,LaLiga,2015
+2015-11-29,Rayo Vallecano,Athletic Club,1.45678,2.24726,LaLiga,2015
+2015-11-29,Sevilla,Valencia,1.63337,0.0,LaLiga,2015
+2015-12-05,Real Madrid,Getafe,1.87007,0.24488,LaLiga,2015
+2015-12-05,Granada,Atletico Madrid,0.602436,1.93434,LaLiga,2015
+2015-12-05,Valencia,Barcelona,0.847612,2.08221,LaLiga,2015
+2015-12-06,Deportivo La Coruna,Sevilla,0.64324,1.09296,LaLiga,2015
+2015-12-06,Real Betis,Celta Vigo,2.41831,0.535918,LaLiga,2015
+2015-12-06,Real Sociedad,Eibar,2.37051,0.286413,LaLiga,2015
+2015-12-06,Villarreal,Rayo Vallecano,1.60179,0.325638,LaLiga,2015
+2015-12-06,Sporting Gijon,Las Palmas,3.85858,0.418437,LaLiga,2015
+2015-12-06,Athletic Club,Malaga,0.305008,0.699162,LaLiga,2015
+2015-12-07,Espanyol,Levante,1.40669,1.01356,LaLiga,2015
+2015-12-11,Getafe,Real Sociedad,0.762214,1.82817,LaLiga,2015
+2015-12-12,Barcelona,Deportivo La Coruna,0.873385,1.22055,LaLiga,2015
+2015-12-12,Celta Vigo,Espanyol,1.23164,0.166852,LaLiga,2015
+2015-12-12,Levante,Granada,0.727312,0.752355,LaLiga,2015
+2015-12-12,Sevilla,Sporting Gijon,2.1509,0.0656616,LaLiga,2015
+2015-12-13,Las Palmas,Real Betis,2.11811,0.36831,LaLiga,2015
+2015-12-13,Rayo Vallecano,Malaga,1.12081,1.43186,LaLiga,2015
+2015-12-13,Eibar,Valencia,2.92204,0.286203,LaLiga,2015
+2015-12-13,Atletico Madrid,Athletic Club,0.33621,1.62076,LaLiga,2015
+2015-12-13,Villarreal,Real Madrid,0.940499,1.45508,LaLiga,2015
+2015-12-19,Valencia,Getafe,1.18705,0.508532,LaLiga,2015
+2015-12-19,Espanyol,Las Palmas,1.24844,0.598519,LaLiga,2015
+2015-12-19,Real Betis,Sevilla,0.377247,1.02024,LaLiga,2015
+2015-12-20,Deportivo La Coruna,Eibar,1.60925,0.462565,LaLiga,2015
+2015-12-20,Real Madrid,Rayo Vallecano,5.71778,0.93456,LaLiga,2015
+2015-12-20,Real Sociedad,Villarreal,1.02445,0.797645,LaLiga,2015
+2015-12-20,Granada,Celta Vigo,0.340342,2.25068,LaLiga,2015
+2015-12-20,Athletic Club,Levante,2.74756,0.514585,LaLiga,2015
+2015-12-20,Malaga,Atletico Madrid,1.0242,0.378061,LaLiga,2015
+2015-12-30,Real Madrid,Real Sociedad,3.42264,0.580977,LaLiga,2015
+2015-12-30,Levante,Malaga,0.167376,1.04316,LaLiga,2015
+2015-12-30,Rayo Vallecano,Atletico Madrid,0.372305,2.20164,LaLiga,2015
+2015-12-30,Sevilla,Espanyol,2.87616,0.633616,LaLiga,2015
+2015-12-30,Eibar,Sporting Gijon,1.17554,0.399746,LaLiga,2015
+2015-12-30,Getafe,Deportivo La Coruna,0.742286,0.584931,LaLiga,2015
+2015-12-30,Barcelona,Real Betis,4.34983,0.457226,LaLiga,2015
+2015-12-30,Celta Vigo,Athletic Club,0.414056,1.09564,LaLiga,2015
+2015-12-31,Las Palmas,Granada,1.28726,0.688245,LaLiga,2015
+2015-12-31,Villarreal,Valencia,0.420594,0.339183,LaLiga,2015
+2016-01-02,Espanyol,Barcelona,0.138495,1.00394,LaLiga,2015
+2016-01-02,Atletico Madrid,Levante,1.06627,0.460313,LaLiga,2015
+2016-01-03,Malaga,Celta Vigo,3.03854,1.0569,LaLiga,2015
+2016-01-03,Rayo Vallecano,Real Sociedad,0.924233,1.31907,LaLiga,2015
+2016-01-03,Real Betis,Eibar,1.53245,1.49466,LaLiga,2015
+2016-01-03,Granada,Sevilla,0.766685,2.31991,LaLiga,2015
+2016-01-03,Athletic Club,Las Palmas,1.71133,0.517767,LaLiga,2015
+2016-01-03,Deportivo La Coruna,Villarreal,1.15796,1.55208,LaLiga,2015
+2016-01-03,Valencia,Real Madrid,2.45563,1.20246,LaLiga,2015
+2016-01-04,Sporting Gijon,Getafe,1.85778,2.18421,LaLiga,2015
+2016-01-09,Barcelona,Granada,4.72913,0.325061,LaLiga,2015
+2016-01-09,Sevilla,Athletic Club,1.7013,1.25007,LaLiga,2015
+2016-01-09,Getafe,Real Betis,1.28639,0.602107,LaLiga,2015
+2016-01-09,Real Madrid,Deportivo La Coruna,3.52924,0.989088,LaLiga,2015
+2016-01-10,Levante,Rayo Vallecano,0.954929,0.34525,LaLiga,2015
+2016-01-10,Villarreal,Sporting Gijon,1.53045,0.960625,LaLiga,2015
+2016-01-10,Real Sociedad,Valencia,2.82395,0.838597,LaLiga,2015
+2016-01-10,Eibar,Espanyol,2.87714,0.263626,LaLiga,2015
+2016-01-10,Las Palmas,Malaga,0.391723,2.18407,LaLiga,2015
+2016-01-10,Celta Vigo,Atletico Madrid,0.213705,1.07666,LaLiga,2015
+2016-01-16,Sevilla,Malaga,1.39715,1.00078,LaLiga,2015
+2016-01-16,Celta Vigo,Levante,2.1571,1.42901,LaLiga,2015
+2016-01-16,Villarreal,Real Betis,0.806178,0.839004,LaLiga,2015
+2016-01-17,Real Sociedad,Deportivo La Coruna,2.75948,1.06682,LaLiga,2015
+2016-01-17,Valencia,Rayo Vallecano,1.26687,1.82333,LaLiga,2015
+2016-01-17,Real Madrid,Sporting Gijon,3.1536,0.691816,LaLiga,2015
+2016-01-17,Getafe,Espanyol,2.98406,1.6525,LaLiga,2015
+2016-01-17,Las Palmas,Atletico Madrid,0.605793,1.73491,LaLiga,2015
+2016-01-17,Barcelona,Athletic Club,4.44439,0.885303,LaLiga,2015
+2016-01-18,Eibar,Granada,2.01571,0.430886,LaLiga,2015
+2016-01-22,Sporting Gijon,Real Sociedad,4.13679,0.83285,LaLiga,2015
+2016-01-23,Malaga,Barcelona,1.12099,2.55037,LaLiga,2015
+2016-01-23,Espanyol,Villarreal,1.36067,1.50472,LaLiga,2015
+2016-01-23,Granada,Getafe,2.75252,1.57754,LaLiga,2015
+2016-01-24,Rayo Vallecano,Celta Vigo,3.20178,0.133975,LaLiga,2015
+2016-01-24,Athletic Club,Eibar,1.21738,1.67081,LaLiga,2015
+2016-01-24,Atletico Madrid,Sevilla,1.57618,0.27169,LaLiga,2015
+2016-01-24,Deportivo La Coruna,Valencia,1.05958,1.30721,LaLiga,2015
+2016-01-24,Real Betis,Real Madrid,0.211024,3.34615,LaLiga,2015
+2016-01-25,Levante,Las Palmas,1.48217,1.52612,LaLiga,2015
+2016-01-30,Barcelona,Atletico Madrid,1.19052,1.01896,LaLiga,2015
+2016-01-30,Eibar,Malaga,0.856269,1.31996,LaLiga,2015
+2016-01-30,Getafe,Athletic Club,1.33205,1.59857,LaLiga,2015
+2016-01-30,Villarreal,Granada,1.95153,0.91326,LaLiga,2015
+2016-01-31,Real Sociedad,Real Betis,1.08259,0.773957,LaLiga,2015
+2016-01-31,Sevilla,Levante,2.56252,0.686912,LaLiga,2015
+2016-01-31,Valencia,Sporting Gijon,2.04802,1.05546,LaLiga,2015
+2016-01-31,Las Palmas,Celta Vigo,2.12188,0.376974,LaLiga,2015
+2016-01-31,Real Madrid,Espanyol,2.76612,1.46627,LaLiga,2015
+2016-02-01,Deportivo La Coruna,Rayo Vallecano,1.42948,1.13142,LaLiga,2015
+2016-02-05,Malaga,Getafe,2.07318,0.524602,LaLiga,2015
+2016-02-06,Atletico Madrid,Eibar,2.57006,0.30035,LaLiga,2015
+2016-02-06,Rayo Vallecano,Las Palmas,3.09731,0.273377,LaLiga,2015
+2016-02-06,Athletic Club,Villarreal,0.56818,0.628815,LaLiga,2015
+2016-02-07,Sporting Gijon,Deportivo La Coruna,0.666281,0.227944,LaLiga,2015
+2016-02-07,Levante,Barcelona,0.802274,1.40471,LaLiga,2015
+2016-02-07,Real Betis,Valencia,1.00904,1.13142,LaLiga,2015
+2016-02-07,Celta Vigo,Sevilla,2.37006,0.922926,LaLiga,2015
+2016-02-07,Granada,Real Madrid,0.751196,1.67636,LaLiga,2015
+2016-02-08,Espanyol,Real Sociedad,0.208008,2.0285,LaLiga,2015
+2016-02-12,Sporting Gijon,Rayo Vallecano,2.38598,1.73162,LaLiga,2015
+2016-02-13,Real Madrid,Athletic Club,2.09005,1.50136,LaLiga,2015
+2016-02-13,Villarreal,Malaga,0.760756,0.671008,LaLiga,2015
+2016-02-13,Valencia,Espanyol,2.0361,3.41105,LaLiga,2015
+2016-02-14,Deportivo La Coruna,Real Betis,3.22944,0.598716,LaLiga,2015
+2016-02-14,Real Sociedad,Granada,2.55267,1.47828,LaLiga,2015
+2016-02-14,Sevilla,Las Palmas,1.12123,0.430522,LaLiga,2015
+2016-02-14,Getafe,Atletico Madrid,0.312685,0.711788,LaLiga,2015
+2016-02-14,Eibar,Levante,4.3639,0.78103,LaLiga,2015
+2016-02-14,Barcelona,Celta Vigo,5.54249,1.49242,LaLiga,2015
+2016-02-17,Sporting Gijon,Barcelona,0.87373,2.41243,LaLiga,2015
+2016-02-19,Levante,Getafe,2.29436,1.46167,LaLiga,2015
+2016-02-20,Las Palmas,Barcelona,1.08938,3.29704,LaLiga,2015
+2016-02-20,Espanyol,Deportivo La Coruna,3.34615,0.995453,LaLiga,2015
+2016-02-20,Real Betis,Sporting Gijon,0.953419,0.408199,LaLiga,2015
+2016-02-21,Celta Vigo,Eibar,2.5831,1.4201,LaLiga,2015
+2016-02-21,Rayo Vallecano,Sevilla,1.66155,3.37315,LaLiga,2015
+2016-02-21,Malaga,Real Madrid,1.68623,1.76313,LaLiga,2015
+2016-02-21,Athletic Club,Real Sociedad,0.512824,0.900436,LaLiga,2015
+2016-02-21,Granada,Valencia,2.00307,1.71536,LaLiga,2015
+2016-02-21,Atletico Madrid,Villarreal,0.769511,0.663896,LaLiga,2015
+2016-02-26,Eibar,Las Palmas,0.295947,0.651178,LaLiga,2015
+2016-02-27,Real Madrid,Atletico Madrid,0.984203,0.695343,LaLiga,2015
+2016-02-27,Getafe,Celta Vigo,0.863924,1.60224,LaLiga,2015
+2016-02-27,Sporting Gijon,Espanyol,1.68942,1.38627,LaLiga,2015
+2016-02-27,Real Betis,Rayo Vallecano,2.46401,1.42394,LaLiga,2015
+2016-02-28,Real Sociedad,Malaga,0.871084,1.22344,LaLiga,2015
+2016-02-28,Villarreal,Levante,1.6962,0.664928,LaLiga,2015
+2016-02-28,Valencia,Athletic Club,1.49242,1.68968,LaLiga,2015
+2016-02-28,Deportivo La Coruna,Granada,0.822359,1.84198,LaLiga,2015
+2016-02-28,Barcelona,Sevilla,2.33655,1.29686,LaLiga,2015
+2016-03-02,Atletico Madrid,Real Sociedad,1.92794,1.00552,LaLiga,2015
+2016-03-02,Las Palmas,Getafe,2.3145,0.477963,LaLiga,2015
+2016-03-02,Sevilla,Eibar,1.57261,0.553485,LaLiga,2015
+2016-03-02,Malaga,Valencia,0.433431,1.38765,LaLiga,2015
+2016-03-02,Celta Vigo,Villarreal,0.846173,0.328383,LaLiga,2015
+2016-03-02,Athletic Club,Deportivo La Coruna,2.7862,0.875636,LaLiga,2015
+2016-03-03,Levante,Real Madrid,1.07575,2.04124,LaLiga,2015
+2016-03-03,Granada,Sporting Gijon,1.87883,0.127036,LaLiga,2015
+2016-03-03,Espanyol,Real Betis,0.780555,1.92223,LaLiga,2015
+2016-03-04,Rayo Vallecano,Barcelona,1.17964,4.52996,LaLiga,2015
+2016-03-05,Real Madrid,Celta Vigo,2.39112,1.52691,LaLiga,2015
+2016-03-05,Villarreal,Las Palmas,1.15088,0.52008,LaLiga,2015
+2016-03-05,Getafe,Sevilla,1.13072,0.467979,LaLiga,2015
+2016-03-06,Deportivo La Coruna,Malaga,3.50017,0.990845,LaLiga,2015
+2016-03-06,Real Betis,Granada,0.844439,0.363768,LaLiga,2015
+2016-03-06,Eibar,Barcelona,0.358263,2.45515,LaLiga,2015
+2016-03-06,Sporting Gijon,Athletic Club,0.656848,1.34389,LaLiga,2015
+2016-03-06,Real Sociedad,Levante,2.23386,0.326226,LaLiga,2015
+2016-03-06,Valencia,Atletico Madrid,1.16388,1.58564,LaLiga,2015
+2016-03-07,Espanyol,Rayo Vallecano,1.78244,0.201034,LaLiga,2015
+2016-03-11,Malaga,Sporting Gijon,0.459569,0.957008,LaLiga,2015
+2016-03-12,Barcelona,Getafe,4.60705,0.281872,LaLiga,2015
+2016-03-12,Celta Vigo,Real Sociedad,0.377845,0.559876,LaLiga,2015
+2016-03-12,Atletico Madrid,Deportivo La Coruna,1.30692,0.292134,LaLiga,2015
+2016-03-13,Rayo Vallecano,Eibar,1.20734,0.804912,LaLiga,2015
+2016-03-13,Levante,Valencia,1.43121,0.77056,LaLiga,2015
+2016-03-13,Sevilla,Villarreal,3.1376,1.70728,LaLiga,2015
+2016-03-13,Athletic Club,Real Betis,2.14502,1.09836,LaLiga,2015
+2016-03-13,Las Palmas,Real Madrid,1.29762,0.860338,LaLiga,2015
+2016-03-14,Granada,Espanyol,0.793529,0.699866,LaLiga,2015
+2016-03-18,Getafe,Eibar,1.28229,2.83807,LaLiga,2015
+2016-03-19,Sporting Gijon,Atletico Madrid,1.89802,0.258695,LaLiga,2015
+2016-03-19,Real Sociedad,Las Palmas,0.590086,2.23147,LaLiga,2015
+2016-03-19,Granada,Rayo Vallecano,1.40008,1.57585,LaLiga,2015
+2016-03-19,Deportivo La Coruna,Levante,1.76797,0.632769,LaLiga,2015
+2016-03-20,Real Betis,Malaga,1.65417,1.33486,LaLiga,2015
+2016-03-20,Espanyol,Athletic Club,2.19144,1.80603,LaLiga,2015
+2016-03-20,Villarreal,Barcelona,0.980467,2.14473,LaLiga,2015
+2016-03-20,Valencia,Celta Vigo,0.646205,2.19927,LaLiga,2015
+2016-03-20,Real Madrid,Sevilla,4.08121,1.03777,LaLiga,2015
+2016-04-01,Rayo Vallecano,Getafe,2.4939,0.759713,LaLiga,2015
+2016-04-02,Atletico Madrid,Real Betis,4.5488,0.68708,LaLiga,2015
+2016-04-02,Las Palmas,Valencia,2.13172,0.748618,LaLiga,2015
+2016-04-02,Barcelona,Real Madrid,0.882445,1.56537,LaLiga,2015
+2016-04-03,Celta Vigo,Deportivo La Coruna,0.36047,0.864408,LaLiga,2015
+2016-04-03,Athletic Club,Granada,1.37516,0.618683,LaLiga,2015
+2016-04-03,Malaga,Espanyol,1.50099,0.260613,LaLiga,2015
+2016-04-03,Eibar,Villarreal,0.804064,2.08255,LaLiga,2015
+2016-04-03,Sevilla,Real Sociedad,1.82989,0.392534,LaLiga,2015
+2016-04-04,Levante,Sporting Gijon,1.87115,0.630978,LaLiga,2015
+2016-04-08,Granada,Malaga,0.613945,1.05827,LaLiga,2015
+2016-04-09,Real Madrid,Eibar,2.83938,1.60526,LaLiga,2015
+2016-04-09,Espanyol,Atletico Madrid,0.63963,2.12141,LaLiga,2015
+2016-04-09,Real Sociedad,Barcelona,0.295072,1.37196,LaLiga,2015
+2016-04-10,Real Betis,Levante,0.623216,1.17874,LaLiga,2015
+2016-04-10,Sporting Gijon,Celta Vigo,0.814767,1.03986,LaLiga,2015
+2016-04-10,Valencia,Sevilla,1.90707,1.00405,LaLiga,2015
+2016-04-10,Villarreal,Getafe,2.05697,0.718479,LaLiga,2015
+2016-04-10,Athletic Club,Rayo Vallecano,0.625122,2.08111,LaLiga,2015
+2016-04-11,Deportivo La Coruna,Las Palmas,2.30191,1.63213,LaLiga,2015
+2016-04-15,Levante,Espanyol,1.35949,1.08748,LaLiga,2015
+2016-04-16,Getafe,Real Madrid,1.0366,3.07047,LaLiga,2015
+2016-04-16,Las Palmas,Sporting Gijon,0.54782,0.864694,LaLiga,2015
+2016-04-16,Eibar,Real Sociedad,1.24429,0.865097,LaLiga,2015
+2016-04-17,Celta Vigo,Real Betis,1.74985,1.54169,LaLiga,2015
+2016-04-17,Malaga,Athletic Club,1.9143,1.08656,LaLiga,2015
+2016-04-17,Sevilla,Deportivo La Coruna,2.00121,0.699714,LaLiga,2015
+2016-04-17,Atletico Madrid,Granada,1.61364,0.473812,LaLiga,2015
+2016-04-17,Rayo Vallecano,Villarreal,1.08503,0.631315,LaLiga,2015
+2016-04-17,Barcelona,Valencia,4.05676,1.12103,LaLiga,2015
+2016-04-19,Espanyol,Celta Vigo,0.873164,0.502009,LaLiga,2015
+2016-04-19,Real Betis,Las Palmas,1.92261,0.217396,LaLiga,2015
+2016-04-20,Deportivo La Coruna,Barcelona,2.19692,5.76112,LaLiga,2015
+2016-04-20,Valencia,Eibar,3.14654,0.651864,LaLiga,2015
+2016-04-20,Athletic Club,Atletico Madrid,0.498286,0.919656,LaLiga,2015
+2016-04-20,Sporting Gijon,Sevilla,1.2216,1.76493,LaLiga,2015
+2016-04-20,Malaga,Rayo Vallecano,1.14186,1.05395,LaLiga,2015
+2016-04-21,Real Madrid,Villarreal,1.75884,0.226133,LaLiga,2015
+2016-04-21,Real Sociedad,Getafe,1.22844,1.58835,LaLiga,2015
+2016-04-21,Granada,Levante,3.1552,1.04939,LaLiga,2015
+2016-04-22,Las Palmas,Espanyol,1.68464,1.36658,LaLiga,2015
+2016-04-23,Rayo Vallecano,Real Madrid,1.56205,2.6433,LaLiga,2015
+2016-04-23,Atletico Madrid,Malaga,1.19248,0.167259,LaLiga,2015
+2016-04-23,Barcelona,Sporting Gijon,6.1271,0.624434,LaLiga,2015
+2016-04-24,Eibar,Deportivo La Coruna,0.950821,0.323346,LaLiga,2015
+2016-04-24,Levante,Athletic Club,0.759214,1.61191,LaLiga,2015
+2016-04-24,Sevilla,Real Betis,2.03176,0.394998,LaLiga,2015
+2016-04-24,Getafe,Valencia,2.82608,0.728167,LaLiga,2015
+2016-04-24,Villarreal,Real Sociedad,0.65957,0.640832,LaLiga,2015
+2016-04-25,Celta Vigo,Granada,1.96923,0.740282,LaLiga,2015
+2016-04-29,Sporting Gijon,Eibar,0.349788,0.985421,LaLiga,2015
+2016-04-30,Real Sociedad,Real Madrid,0.496976,1.58863,LaLiga,2015
+2016-04-30,Atletico Madrid,Rayo Vallecano,1.07386,0.597729,LaLiga,2015
+2016-04-30,Real Betis,Barcelona,0.0828961,2.07851,LaLiga,2015
+2016-05-01,Granada,Las Palmas,2.05186,1.747,LaLiga,2015
+2016-05-01,Athletic Club,Celta Vigo,1.64739,0.470176,LaLiga,2015
+2016-05-01,Espanyol,Sevilla,1.66593,0.329135,LaLiga,2015
+2016-05-01,Deportivo La Coruna,Getafe,0.669729,0.961273,LaLiga,2015
+2016-05-01,Valencia,Villarreal,0.259066,1.05764,LaLiga,2015
+2016-05-02,Malaga,Levante,2.53234,1.88493,LaLiga,2015
+2016-05-08,Las Palmas,Athletic Club,0.133019,0.297706,LaLiga,2015
+2016-05-08,Celta Vigo,Malaga,1.25876,0.981005,LaLiga,2015
+2016-05-08,Levante,Atletico Madrid,1.26898,1.69964,LaLiga,2015
+2016-05-08,Getafe,Sporting Gijon,1.25718,0.508995,LaLiga,2015
+2016-05-08,Villarreal,Deportivo La Coruna,0.701392,0.388761,LaLiga,2015
+2016-05-08,Real Sociedad,Rayo Vallecano,1.6654,2.18163,LaLiga,2015
+2016-05-08,Real Madrid,Valencia,2.52264,2.3222,LaLiga,2015
+2016-05-08,Eibar,Real Betis,2.67637,1.13808,LaLiga,2015
+2016-05-08,Barcelona,Espanyol,2.59373,0.20206,LaLiga,2015
+2016-05-08,Sevilla,Granada,0.898919,2.16052,LaLiga,2015
+2016-05-13,Valencia,Real Sociedad,0.918193,0.95132,LaLiga,2015
+2016-05-14,Deportivo La Coruna,Real Madrid,0.651269,1.90958,LaLiga,2015
+2016-05-14,Granada,Barcelona,0.383514,3.23381,LaLiga,2015
+2016-05-14,Athletic Club,Sevilla,1.70447,1.02774,LaLiga,2015
+2016-05-14,Atletico Madrid,Celta Vigo,1.24915,0.504827,LaLiga,2015
+2016-05-15,Malaga,Las Palmas,2.24531,1.78426,LaLiga,2015
+2016-05-15,Espanyol,Eibar,2.23504,1.8428,LaLiga,2015
+2016-05-15,Real Betis,Getafe,1.59407,1.28875,LaLiga,2015
+2016-05-15,Sporting Gijon,Villarreal,1.51593,0.721212,LaLiga,2015
+2016-05-15,Rayo Vallecano,Levante,2.06167,1.32769,LaLiga,2015

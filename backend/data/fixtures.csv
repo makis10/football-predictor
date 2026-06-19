@@ -1,0 +1,101 @@
+date,league,home_team,away_team
+2026-04-18,EPL,Chelsea,Arsenal
+2026-04-18,EPL,Man City,Liverpool
+2026-04-18,EPL,Tottenham,Aston Villa
+2026-04-18,EPL,Wolves,Man United
+2026-04-18,EPL,West Ham,Newcastle
+2026-04-18,EPL,Brentford,Fulham
+2026-04-18,LaLiga,Real Madrid,Barcelona
+2026-04-18,LaLiga,Ath Madrid,Ath Bilbao
+2026-04-18,LaLiga,Villarreal,Sevilla
+2026-04-18,LaLiga,Girona,Sociedad
+2026-04-18,SerieA,Inter,Milan
+2026-04-18,SerieA,Napoli,Roma
+2026-04-18,SerieA,Juventus,Atalanta
+2026-04-18,SerieA,Lazio,Fiorentina
+2026-04-18,Bundesliga,Bayern Munich,Dortmund
+2026-04-18,Bundesliga,Leverkusen,RB Leipzig
+2026-04-18,Bundesliga,Stuttgart,Ein Frankfurt
+2026-04-18,Bundesliga,Freiburg,M'gladbach
+2026-04-18,Ligue1,Paris SG,Monaco
+2026-04-18,Ligue1,Marseille,Lyon
+2026-04-18,Ligue1,Lens,Lille
+2026-04-18,Ligue1,Nice,Rennes
+2026-04-18,GreekSL,Olympiakos,PAOK
+2026-04-18,GreekSL,AEK,Panathinaikos
+2026-04-18,GreekSL,Aris,Atromitos
+2026-04-25,EPL,Arsenal,Man City
+2026-04-25,EPL,Liverpool,Chelsea
+2026-04-25,EPL,Aston Villa,Wolves
+2026-04-25,EPL,Man United,West Ham
+2026-04-25,EPL,Newcastle,Tottenham
+2026-04-25,EPL,Fulham,Brighton
+2026-04-25,LaLiga,Barcelona,Ath Madrid
+2026-04-25,LaLiga,Ath Bilbao,Real Madrid
+2026-04-25,LaLiga,Sevilla,Girona
+2026-04-25,LaLiga,Sociedad,Villarreal
+2026-04-25,SerieA,Milan,Juventus
+2026-04-25,SerieA,Roma,Inter
+2026-04-25,SerieA,Atalanta,Napoli
+2026-04-25,SerieA,Fiorentina,Lazio
+2026-04-25,Bundesliga,Dortmund,Leverkusen
+2026-04-25,Bundesliga,RB Leipzig,Bayern Munich
+2026-04-25,Bundesliga,Ein Frankfurt,Stuttgart
+2026-04-25,Bundesliga,M'gladbach,Freiburg
+2026-04-25,Ligue1,Monaco,Marseille
+2026-04-25,Ligue1,Lyon,Paris SG
+2026-04-25,Ligue1,Lille,Lens
+2026-04-25,Ligue1,Rennes,Nice
+2026-04-25,GreekSL,PAOK,AEK
+2026-04-25,GreekSL,Panathinaikos,Olympiakos
+2026-04-25,GreekSL,Atromitos,Aris
+2026-05-02,EPL,Chelsea,Man United
+2026-05-02,EPL,Liverpool,Arsenal
+2026-05-02,EPL,Man City,Tottenham
+2026-05-02,EPL,Newcastle,Aston Villa
+2026-05-02,EPL,Brighton,West Ham
+2026-05-02,EPL,Wolves,Brentford
+2026-05-02,LaLiga,Real Madrid,Girona
+2026-05-02,LaLiga,Barcelona,Villarreal
+2026-05-02,LaLiga,Ath Madrid,Sociedad
+2026-05-02,LaLiga,Sevilla,Ath Bilbao
+2026-05-02,SerieA,Inter,Atalanta
+2026-05-02,SerieA,Napoli,Juventus
+2026-05-02,SerieA,Roma,Lazio
+2026-05-02,SerieA,Milan,Fiorentina
+2026-05-02,Bundesliga,Bayern Munich,Leverkusen
+2026-05-02,Bundesliga,Dortmund,RB Leipzig
+2026-05-02,Bundesliga,Stuttgart,Freiburg
+2026-05-02,Bundesliga,Ein Frankfurt,M'gladbach
+2026-05-02,Ligue1,Paris SG,Lille
+2026-05-02,Ligue1,Monaco,Lyon
+2026-05-02,Ligue1,Marseille,Nice
+2026-05-02,Ligue1,Lens,Rennes
+2026-05-02,GreekSL,Olympiakos,AEK
+2026-05-02,GreekSL,PAOK,Panathinaikos
+2026-05-02,GreekSL,Aris,Levadeiakos
+2026-05-09,EPL,Arsenal,Tottenham
+2026-05-09,EPL,Man United,Liverpool
+2026-05-09,EPL,Aston Villa,Man City
+2026-05-09,EPL,West Ham,Chelsea
+2026-05-09,EPL,Brentford,Newcastle
+2026-05-09,EPL,Fulham,Crystal Palace
+2026-05-09,LaLiga,Barcelona,Real Madrid
+2026-05-09,LaLiga,Ath Bilbao,Ath Madrid
+2026-05-09,LaLiga,Villarreal,Sevilla
+2026-05-09,LaLiga,Girona,Osasuna
+2026-05-09,SerieA,Juventus,Inter
+2026-05-09,SerieA,Atalanta,Roma
+2026-05-09,SerieA,Lazio,Napoli
+2026-05-09,SerieA,Fiorentina,Milan
+2026-05-09,Bundesliga,RB Leipzig,Dortmund
+2026-05-09,Bundesliga,Leverkusen,Bayern Munich
+2026-05-09,Bundesliga,Freiburg,Stuttgart
+2026-05-09,Bundesliga,M'gladbach,Ein Frankfurt
+2026-05-09,Ligue1,Lille,Monaco
+2026-05-09,Ligue1,Lyon,Marseille
+2026-05-09,Ligue1,Nice,Paris SG
+2026-05-09,Ligue1,Rennes,Lens
+2026-05-09,GreekSL,AEK,Olympiakos
+2026-05-09,GreekSL,Panathinaikos,PAOK
+2026-05-09,GreekSL,Atromitos,Asteras Tripolis

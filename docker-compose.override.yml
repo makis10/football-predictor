@@ -1,0 +1,25 @@
+# docker-compose.override.yml — loaded automatically alongside docker-compose.yml
+# Adds live-reload volumes for local development.
+# This file is gitignored by default; commit it only if you want these overrides shared.
+
+services:
+
+  backend:
+    volumes:
+      - ./backend:/app/backend   # live Python changes without rebuild
+      - ./scripts:/app/scripts
+    command: >
+      sh -c "alembic upgrade head &&
+             uvicorn backend.app.main:app --host 0.0.0.0 --port 8000 --reload"
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      target: builder          # builder stage has node_modules; runner stage does not
+    volumes:
+      - ./frontend/src:/app/src  # live Next.js changes (HMR via Next dev server)
+    command: ["npm", "run", "dev"]
+    environment:
+      NEXT_PUBLIC_API_URL: /api/proxy
+      INTERNAL_API_URL: http://backend:8000

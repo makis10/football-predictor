@@ -1,0 +1,307 @@
+date,home_team,away_team,home_xg,away_xg,league,season
+2025-08-22,Bayern Munich,RasenBallsport Leipzig,3.29885,0.52226,Bundesliga,2025
+2025-08-23,FC Heidenheim,Wolfsburg,0.783156,2.57718,Bundesliga,2025
+2025-08-23,Bayer Leverkusen,Hoffenheim,1.05253,0.505193,Bundesliga,2025
+2025-08-23,Union Berlin,VfB Stuttgart,0.529421,1.80147,Bundesliga,2025
+2025-08-23,Eintracht Frankfurt,Werder Bremen,3.10684,0.587822,Bundesliga,2025
+2025-08-23,Freiburg,Augsburg,2.27247,1.30191,Bundesliga,2025
+2025-08-23,St. Pauli,Borussia Dortmund,1.46772,2.10289,Bundesliga,2025
+2025-08-24,Mainz 05,FC Cologne,1.31655,1.64676,Bundesliga,2025
+2025-08-24,Borussia M.Gladbach,Hamburger SV,1.01717,0.285593,Bundesliga,2025
+2025-08-29,Hamburger SV,St. Pauli,0.74111,1.85404,Bundesliga,2025
+2025-08-30,Hoffenheim,Eintracht Frankfurt,1.28178,1.82087,Bundesliga,2025
+2025-08-30,RasenBallsport Leipzig,FC Heidenheim,3.29717,0.969982,Bundesliga,2025
+2025-08-30,Werder Bremen,Bayer Leverkusen,2.32676,2.03733,Bundesliga,2025
+2025-08-30,VfB Stuttgart,Borussia M.Gladbach,0.925105,1.60717,Bundesliga,2025
+2025-08-30,Augsburg,Bayern Munich,0.506028,3.37523,Bundesliga,2025
+2025-08-31,Wolfsburg,Mainz 05,0.616661,1.81482,Bundesliga,2025
+2025-08-31,Borussia Dortmund,Union Berlin,1.82606,0.971167,Bundesliga,2025
+2025-08-31,FC Cologne,Freiburg,1.84068,0.933072,Bundesliga,2025
+2025-09-12,Bayer Leverkusen,Eintracht Frankfurt,2.31465,0.791863,Bundesliga,2025
+2025-09-13,Freiburg,VfB Stuttgart,1.6832,0.548804,Bundesliga,2025
+2025-09-13,FC Heidenheim,Borussia Dortmund,0.299026,2.84999,Bundesliga,2025
+2025-09-13,Mainz 05,RasenBallsport Leipzig,0.770276,1.5009,Bundesliga,2025
+2025-09-13,Wolfsburg,FC Cologne,1.79835,1.72631,Bundesliga,2025
+2025-09-13,Union Berlin,Hoffenheim,3.0814,3.34084,Bundesliga,2025
+2025-09-13,Bayern Munich,Hamburger SV,3.03718,0.559174,Bundesliga,2025
+2025-09-14,St. Pauli,Augsburg,1.95499,0.934223,Bundesliga,2025
+2025-09-14,Borussia M.Gladbach,Werder Bremen,1.58932,2.24671,Bundesliga,2025
+2025-09-19,VfB Stuttgart,St. Pauli,2.78829,1.05657,Bundesliga,2025
+2025-09-20,Werder Bremen,Freiburg,1.27257,2.36315,Bundesliga,2025
+2025-09-20,Augsburg,Mainz 05,0.870451,2.57047,Bundesliga,2025
+2025-09-20,Hamburger SV,FC Heidenheim,3.32157,2.63607,Bundesliga,2025
+2025-09-20,Hoffenheim,Bayern Munich,1.03716,2.7142,Bundesliga,2025
+2025-09-20,RasenBallsport Leipzig,FC Cologne,3.79591,1.39264,Bundesliga,2025
+2025-09-21,Eintracht Frankfurt,Union Berlin,1.75582,2.23419,Bundesliga,2025
+2025-09-21,Bayer Leverkusen,Borussia M.Gladbach,1.9461,1.29876,Bundesliga,2025
+2025-09-21,Borussia Dortmund,Wolfsburg,1.24747,0.975457,Bundesliga,2025
+2025-09-26,Bayern Munich,Werder Bremen,4.31859,0.298618,Bundesliga,2025
+2025-09-27,FC Heidenheim,Augsburg,1.79097,0.619833,Bundesliga,2025
+2025-09-27,Mainz 05,Borussia Dortmund,0.525149,1.75519,Bundesliga,2025
+2025-09-27,St. Pauli,Bayer Leverkusen,0.813325,1.28912,Bundesliga,2025
+2025-09-27,Wolfsburg,RasenBallsport Leipzig,2.59654,2.61107,Bundesliga,2025
+2025-09-27,Borussia M.Gladbach,Eintracht Frankfurt,2.12935,3.78879,Bundesliga,2025
+2025-09-28,Freiburg,Hoffenheim,1.2587,2.24224,Bundesliga,2025
+2025-09-28,FC Cologne,VfB Stuttgart,1.07972,2.20939,Bundesliga,2025
+2025-09-28,Union Berlin,Hamburger SV,1.54274,1.11274,Bundesliga,2025
+2025-10-03,Hoffenheim,FC Cologne,1.42371,1.30873,Bundesliga,2025
+2025-10-04,Bayer Leverkusen,Union Berlin,3.35673,1.19684,Bundesliga,2025
+2025-10-04,Borussia Dortmund,RasenBallsport Leipzig,0.668613,1.14077,Bundesliga,2025
+2025-10-04,Augsburg,Wolfsburg,1.75326,1.22584,Bundesliga,2025
+2025-10-04,Werder Bremen,St. Pauli,1.77957,0.912425,Bundesliga,2025
+2025-10-04,Eintracht Frankfurt,Bayern Munich,0.560138,2.2301,Bundesliga,2025
+2025-10-05,VfB Stuttgart,FC Heidenheim,1.10781,0.290942,Bundesliga,2025
+2025-10-05,Hamburger SV,Mainz 05,1.65883,0.591161,Bundesliga,2025
+2025-10-05,Borussia M.Gladbach,Freiburg,0.471184,0.689073,Bundesliga,2025
+2025-10-17,Union Berlin,Borussia M.Gladbach,1.53032,0.628848,Bundesliga,2025
+2025-10-18,FC Cologne,Augsburg,0.523854,1.11917,Bundesliga,2025
+2025-10-18,FC Heidenheim,Werder Bremen,3.07635,1.85638,Bundesliga,2025
+2025-10-18,Mainz 05,Bayer Leverkusen,1.62978,4.43462,Bundesliga,2025
+2025-10-18,RasenBallsport Leipzig,Hamburger SV,1.15611,1.29355,Bundesliga,2025
+2025-10-18,Wolfsburg,VfB Stuttgart,0.392885,2.39474,Bundesliga,2025
+2025-10-18,Bayern Munich,Borussia Dortmund,2.81994,1.41011,Bundesliga,2025
+2025-10-19,Freiburg,Eintracht Frankfurt,1.12896,0.772638,Bundesliga,2025
+2025-10-19,St. Pauli,Hoffenheim,0.871968,1.79103,Bundesliga,2025
+2025-10-24,Werder Bremen,Union Berlin,1.1444,0.487613,Bundesliga,2025
+2025-10-25,Augsburg,RasenBallsport Leipzig,0.639182,2.69438,Bundesliga,2025
+2025-10-25,Borussia M.Gladbach,Bayern Munich,0.757777,2.65026,Bundesliga,2025
+2025-10-25,Eintracht Frankfurt,St. Pauli,2.42632,0.519973,Bundesliga,2025
+2025-10-25,Hamburger SV,Wolfsburg,2.40547,0.695528,Bundesliga,2025
+2025-10-25,Hoffenheim,FC Heidenheim,2.4278,0.902315,Bundesliga,2025
+2025-10-25,Borussia Dortmund,FC Cologne,2.09125,0.70563,Bundesliga,2025
+2025-10-26,Bayer Leverkusen,Freiburg,2.46787,0.542897,Bundesliga,2025
+2025-10-26,VfB Stuttgart,Mainz 05,1.66805,1.40956,Bundesliga,2025
+2025-10-31,Augsburg,Borussia Dortmund,0.969501,0.588196,Bundesliga,2025
+2025-11-01,FC Heidenheim,Eintracht Frankfurt,0.831882,1.22406,Bundesliga,2025
+2025-11-01,Mainz 05,Werder Bremen,1.90161,0.880505,Bundesliga,2025
+2025-11-01,RasenBallsport Leipzig,VfB Stuttgart,1.73471,1.0701,Bundesliga,2025
+2025-11-01,St. Pauli,Borussia M.Gladbach,0.804394,3.6262,Bundesliga,2025
+2025-11-01,Union Berlin,Freiburg,1.34842,1.16519,Bundesliga,2025
+2025-11-01,Bayern Munich,Bayer Leverkusen,2.28295,0.382774,Bundesliga,2025
+2025-11-02,FC Cologne,Hamburger SV,3.87376,1.19296,Bundesliga,2025
+2025-11-02,Wolfsburg,Hoffenheim,1.40117,1.74291,Bundesliga,2025
+2025-11-07,Werder Bremen,Wolfsburg,1.69456,0.676326,Bundesliga,2025
+2025-11-08,Bayer Leverkusen,FC Heidenheim,3.90142,0.063377,Bundesliga,2025
+2025-11-08,Hamburger SV,Borussia Dortmund,0.419878,1.42582,Bundesliga,2025
+2025-11-08,Hoffenheim,RasenBallsport Leipzig,1.92349,1.56187,Bundesliga,2025
+2025-11-08,Union Berlin,Bayern Munich,1.02778,1.34246,Bundesliga,2025
+2025-11-08,Borussia M.Gladbach,FC Cologne,2.46206,2.15818,Bundesliga,2025
+2025-11-09,Freiburg,St. Pauli,1.66558,0.640748,Bundesliga,2025
+2025-11-09,VfB Stuttgart,Augsburg,2.44526,1.90345,Bundesliga,2025
+2025-11-09,Eintracht Frankfurt,Mainz 05,1.77854,0.121469,Bundesliga,2025
+2025-11-21,Mainz 05,Hoffenheim,2.88712,1.54404,Bundesliga,2025
+2025-11-22,Augsburg,Hamburger SV,1.61897,1.555,Bundesliga,2025
+2025-11-22,Bayern Munich,Freiburg,3.13858,0.516966,Bundesliga,2025
+2025-11-22,Borussia Dortmund,VfB Stuttgart,3.15124,1.80942,Bundesliga,2025
+2025-11-22,FC Heidenheim,Borussia M.Gladbach,0.363207,2.79666,Bundesliga,2025
+2025-11-22,Wolfsburg,Bayer Leverkusen,2.07979,1.58644,Bundesliga,2025
+2025-11-22,FC Cologne,Eintracht Frankfurt,1.38923,2.44506,Bundesliga,2025
+2025-11-23,RasenBallsport Leipzig,Werder Bremen,2.42834,0.774872,Bundesliga,2025
+2025-11-23,St. Pauli,Union Berlin,0.568717,0.398431,Bundesliga,2025
+2025-11-28,Borussia M.Gladbach,RasenBallsport Leipzig,0.388883,1.09232,Bundesliga,2025
+2025-11-29,Bayern Munich,St. Pauli,2.53942,0.74073,Bundesliga,2025
+2025-11-29,Hoffenheim,Augsburg,1.79612,0.655496,Bundesliga,2025
+2025-11-29,Union Berlin,FC Heidenheim,0.942923,0.522102,Bundesliga,2025
+2025-11-29,Werder Bremen,FC Cologne,1.53668,1.1848,Bundesliga,2025
+2025-11-29,Bayer Leverkusen,Borussia Dortmund,1.08287,1.1562,Bundesliga,2025
+2025-11-30,Hamburger SV,VfB Stuttgart,1.21357,1.10868,Bundesliga,2025
+2025-11-30,Eintracht Frankfurt,Wolfsburg,1.66051,1.60645,Bundesliga,2025
+2025-11-30,Freiburg,Mainz 05,4.15677,0.0500621,Bundesliga,2025
+2025-12-05,Mainz 05,Borussia M.Gladbach,1.09331,1.90297,Bundesliga,2025
+2025-12-06,VfB Stuttgart,Bayern Munich,0.729313,4.07867,Bundesliga,2025
+2025-12-06,Wolfsburg,Union Berlin,0.929936,2.01932,Bundesliga,2025
+2025-12-06,Augsburg,Bayer Leverkusen,2.14102,1.41889,Bundesliga,2025
+2025-12-06,FC Cologne,St. Pauli,1.90409,0.143945,Bundesliga,2025
+2025-12-06,FC Heidenheim,Freiburg,2.66592,0.800321,Bundesliga,2025
+2025-12-06,RasenBallsport Leipzig,Eintracht Frankfurt,3.64182,0.473289,Bundesliga,2025
+2025-12-07,Hamburger SV,Werder Bremen,1.57713,1.17349,Bundesliga,2025
+2025-12-07,Borussia Dortmund,Hoffenheim,1.10147,1.42364,Bundesliga,2025
+2025-12-12,Union Berlin,RasenBallsport Leipzig,1.4766,0.495677,Bundesliga,2025
+2025-12-13,Borussia M.Gladbach,Wolfsburg,0.620418,2.72142,Bundesliga,2025
+2025-12-13,Eintracht Frankfurt,Augsburg,1.52024,0.655733,Bundesliga,2025
+2025-12-13,Hoffenheim,Hamburger SV,2.48806,1.40522,Bundesliga,2025
+2025-12-13,St. Pauli,FC Heidenheim,1.00037,1.8944,Bundesliga,2025
+2025-12-13,Bayer Leverkusen,FC Cologne,2.295,0.436565,Bundesliga,2025
+2025-12-14,Freiburg,Borussia Dortmund,1.10621,1.47427,Bundesliga,2025
+2025-12-14,Bayern Munich,Mainz 05,4.67956,0.803171,Bundesliga,2025
+2025-12-14,Werder Bremen,VfB Stuttgart,0.607898,2.05209,Bundesliga,2025
+2025-12-19,Borussia Dortmund,Borussia M.Gladbach,1.65394,0.221237,Bundesliga,2025
+2025-12-20,Augsburg,Werder Bremen,1.49411,0.90686,Bundesliga,2025
+2025-12-20,FC Cologne,Union Berlin,0.677102,1.4739,Bundesliga,2025
+2025-12-20,Hamburger SV,Eintracht Frankfurt,1.09769,1.09137,Bundesliga,2025
+2025-12-20,VfB Stuttgart,Hoffenheim,1.46116,0.154175,Bundesliga,2025
+2025-12-20,Wolfsburg,Freiburg,1.30583,2.65964,Bundesliga,2025
+2025-12-20,RasenBallsport Leipzig,Bayer Leverkusen,1.93929,2.70478,Bundesliga,2025
+2025-12-21,Mainz 05,St. Pauli,1.87368,0.227249,Bundesliga,2025
+2025-12-21,FC Heidenheim,Bayern Munich,1.48758,3.36795,Bundesliga,2025
+2026-01-09,Eintracht Frankfurt,Borussia Dortmund,1.66426,2.29827,Bundesliga,2025
+2026-01-10,Freiburg,Hamburger SV,2.93517,0.850812,Bundesliga,2025
+2026-01-10,FC Heidenheim,FC Cologne,2.14635,2.75624,Bundesliga,2025
+2026-01-10,Union Berlin,Mainz 05,3.6505,1.56492,Bundesliga,2025
+2026-01-10,Bayer Leverkusen,VfB Stuttgart,1.98318,2.68822,Bundesliga,2025
+2026-01-11,Borussia M.Gladbach,Augsburg,3.57201,1.57502,Bundesliga,2025
+2026-01-11,Bayern Munich,Wolfsburg,3.54931,1.08515,Bundesliga,2025
+2026-01-13,VfB Stuttgart,Eintracht Frankfurt,3.54461,0.896468,Bundesliga,2025
+2026-01-13,Borussia Dortmund,Werder Bremen,2.31769,0.39948,Bundesliga,2025
+2026-01-13,Mainz 05,FC Heidenheim,1.95686,1.23557,Bundesliga,2025
+2026-01-14,Wolfsburg,St. Pauli,1.78032,1.21171,Bundesliga,2025
+2026-01-14,FC Cologne,Bayern Munich,0.714659,2.11635,Bundesliga,2025
+2026-01-14,Hoffenheim,Borussia M.Gladbach,4.3777,0.83294,Bundesliga,2025
+2026-01-14,RasenBallsport Leipzig,Freiburg,2.80289,0.147682,Bundesliga,2025
+2026-01-15,Augsburg,Union Berlin,0.559529,1.73831,Bundesliga,2025
+2026-01-16,Werder Bremen,Eintracht Frankfurt,2.10111,1.20772,Bundesliga,2025
+2026-01-17,Borussia Dortmund,St. Pauli,2.5477,0.532613,Bundesliga,2025
+2026-01-17,FC Cologne,Mainz 05,2.41277,1.91073,Bundesliga,2025
+2026-01-17,Hamburger SV,Borussia M.Gladbach,1.26205,0.576522,Bundesliga,2025
+2026-01-17,Hoffenheim,Bayer Leverkusen,2.11995,1.27048,Bundesliga,2025
+2026-01-17,Wolfsburg,FC Heidenheim,1.07653,0.991172,Bundesliga,2025
+2026-01-17,RasenBallsport Leipzig,Bayern Munich,2.86917,4.65226,Bundesliga,2025
+2026-01-18,VfB Stuttgart,Union Berlin,2.1978,1.88763,Bundesliga,2025
+2026-01-18,Augsburg,Freiburg,0.986653,1.59107,Bundesliga,2025
+2026-01-23,St. Pauli,Hamburger SV,0.311991,0.333197,Bundesliga,2025
+2026-01-24,Bayer Leverkusen,Werder Bremen,2.51599,0.673986,Bundesliga,2025
+2026-01-24,Bayern Munich,Augsburg,2.30773,1.24551,Bundesliga,2025
+2026-01-24,Eintracht Frankfurt,Hoffenheim,0.829658,1.62813,Bundesliga,2025
+2026-01-24,FC Heidenheim,RasenBallsport Leipzig,0.987658,2.07675,Bundesliga,2025
+2026-01-24,Mainz 05,Wolfsburg,4.34199,1.09338,Bundesliga,2025
+2026-01-24,Union Berlin,Borussia Dortmund,0.989732,2.27286,Bundesliga,2025
+2026-01-25,Borussia M.Gladbach,VfB Stuttgart,1.22197,2.72682,Bundesliga,2025
+2026-01-25,Freiburg,FC Cologne,2.56728,1.69119,Bundesliga,2025
+2026-01-27,St. Pauli,RasenBallsport Leipzig,1.33165,2.05989,Bundesliga,2025
+2026-01-27,Werder Bremen,Hoffenheim,1.42692,0.567567,Bundesliga,2025
+2026-01-30,FC Cologne,Wolfsburg,1.43559,1.34631,Bundesliga,2025
+2026-01-31,Augsburg,St. Pauli,2.11699,2.88611,Bundesliga,2025
+2026-01-31,Eintracht Frankfurt,Bayer Leverkusen,1.31849,1.52952,Bundesliga,2025
+2026-01-31,Hoffenheim,Union Berlin,1.50682,1.23275,Bundesliga,2025
+2026-01-31,RasenBallsport Leipzig,Mainz 05,2.09422,2.57678,Bundesliga,2025
+2026-01-31,Werder Bremen,Borussia M.Gladbach,0.991152,1.25715,Bundesliga,2025
+2026-01-31,Hamburger SV,Bayern Munich,2.64497,2.28911,Bundesliga,2025
+2026-02-01,VfB Stuttgart,Freiburg,2.95203,0.936187,Bundesliga,2025
+2026-02-01,Borussia Dortmund,FC Heidenheim,4.13897,3.04324,Bundesliga,2025
+2026-02-06,Union Berlin,Eintracht Frankfurt,1.27118,0.296813,Bundesliga,2025
+2026-02-07,Freiburg,Werder Bremen,0.36452,1.12332,Bundesliga,2025
+2026-02-07,FC Heidenheim,Hamburger SV,1.04614,1.55106,Bundesliga,2025
+2026-02-07,Mainz 05,Augsburg,3.00656,1.35939,Bundesliga,2025
+2026-02-07,St. Pauli,VfB Stuttgart,1.66217,0.912627,Bundesliga,2025
+2026-02-07,Wolfsburg,Borussia Dortmund,2.02751,1.70601,Bundesliga,2025
+2026-02-07,Borussia M.Gladbach,Bayer Leverkusen,0.783478,0.741257,Bundesliga,2025
+2026-02-08,FC Cologne,RasenBallsport Leipzig,1.12167,3.0577,Bundesliga,2025
+2026-02-08,Bayern Munich,Hoffenheim,6.37827,2.66829,Bundesliga,2025
+2026-02-13,Borussia Dortmund,Mainz 05,1.81026,1.67199,Bundesliga,2025
+2026-02-14,Bayer Leverkusen,St. Pauli,2.26044,0.654783,Bundesliga,2025
+2026-02-14,Eintracht Frankfurt,Borussia M.Gladbach,1.98736,1.03155,Bundesliga,2025
+2026-02-14,Hamburger SV,Union Berlin,2.20339,2.18966,Bundesliga,2025
+2026-02-14,Hoffenheim,Freiburg,1.90052,0.744054,Bundesliga,2025
+2026-02-14,Werder Bremen,Bayern Munich,0.77965,1.87713,Bundesliga,2025
+2026-02-14,VfB Stuttgart,FC Cologne,2.56266,1.13246,Bundesliga,2025
+2026-02-15,Augsburg,FC Heidenheim,1.87679,0.697774,Bundesliga,2025
+2026-02-15,RasenBallsport Leipzig,Wolfsburg,2.51087,0.687761,Bundesliga,2025
+2026-02-20,Mainz 05,Hamburger SV,1.75215,0.823398,Bundesliga,2025
+2026-02-21,Bayern Munich,Eintracht Frankfurt,2.83518,2.29258,Bundesliga,2025
+2026-02-21,FC Cologne,Hoffenheim,1.12252,1.8243,Bundesliga,2025
+2026-02-21,Union Berlin,Bayer Leverkusen,0.757702,1.20274,Bundesliga,2025
+2026-02-21,Wolfsburg,Augsburg,2.17584,1.56427,Bundesliga,2025
+2026-02-21,RasenBallsport Leipzig,Borussia Dortmund,3.50934,1.35347,Bundesliga,2025
+2026-02-22,Freiburg,Borussia M.Gladbach,1.29234,1.02855,Bundesliga,2025
+2026-02-22,St. Pauli,Werder Bremen,0.260698,1.61141,Bundesliga,2025
+2026-02-22,FC Heidenheim,VfB Stuttgart,2.21575,2.27505,Bundesliga,2025
+2026-02-27,Augsburg,FC Cologne,1.55844,0.492698,Bundesliga,2025
+2026-02-28,Bayer Leverkusen,Mainz 05,1.94817,0.9714,Bundesliga,2025
+2026-02-28,Borussia M.Gladbach,Union Berlin,2.56014,0.137598,Bundesliga,2025
+2026-02-28,Hoffenheim,St. Pauli,2.57411,0.946504,Bundesliga,2025
+2026-02-28,Werder Bremen,FC Heidenheim,3.47889,1.70919,Bundesliga,2025
+2026-02-28,Borussia Dortmund,Bayern Munich,1.39761,1.89016,Bundesliga,2025
+2026-03-01,VfB Stuttgart,Wolfsburg,2.95189,0.865739,Bundesliga,2025
+2026-03-01,Eintracht Frankfurt,Freiburg,1.67095,0.64193,Bundesliga,2025
+2026-03-01,Hamburger SV,RasenBallsport Leipzig,0.820585,2.28997,Bundesliga,2025
+2026-03-04,Hamburger SV,Bayer Leverkusen,1.28692,2.67874,Bundesliga,2025
+2026-03-06,Bayern Munich,Borussia M.Gladbach,3.11976,1.21993,Bundesliga,2025
+2026-03-07,Freiburg,Bayer Leverkusen,2.58409,2.1863,Bundesliga,2025
+2026-03-07,FC Heidenheim,Hoffenheim,0.966678,2.79383,Bundesliga,2025
+2026-03-07,Mainz 05,VfB Stuttgart,3.52523,0.920068,Bundesliga,2025
+2026-03-07,RasenBallsport Leipzig,Augsburg,2.19435,3.6651,Bundesliga,2025
+2026-03-07,Wolfsburg,Hamburger SV,2.46612,1.80445,Bundesliga,2025
+2026-03-07,FC Cologne,Borussia Dortmund,0.96405,1.9574,Bundesliga,2025
+2026-03-08,St. Pauli,Eintracht Frankfurt,0.472285,0.451537,Bundesliga,2025
+2026-03-08,Union Berlin,Werder Bremen,1.12998,2.23984,Bundesliga,2025
+2026-03-13,Borussia M.Gladbach,St. Pauli,1.08342,0.628713,Bundesliga,2025
+2026-03-14,Bayer Leverkusen,Bayern Munich,2.65255,1.26817,Bundesliga,2025
+2026-03-14,Borussia Dortmund,Augsburg,2.49053,0.755745,Bundesliga,2025
+2026-03-14,Eintracht Frankfurt,FC Heidenheim,0.725159,0.136174,Bundesliga,2025
+2026-03-14,Hoffenheim,Wolfsburg,2.23813,0.221431,Bundesliga,2025
+2026-03-14,Hamburger SV,FC Cologne,0.556493,0.984168,Bundesliga,2025
+2026-03-15,Werder Bremen,Mainz 05,0.890006,2.05621,Bundesliga,2025
+2026-03-15,Freiburg,Union Berlin,1.34508,1.0006,Bundesliga,2025
+2026-03-15,VfB Stuttgart,RasenBallsport Leipzig,1.93167,1.12178,Bundesliga,2025
+2026-03-20,RasenBallsport Leipzig,Hoffenheim,2.90699,0.521404,Bundesliga,2025
+2026-03-21,Bayern Munich,Union Berlin,5.93389,0.224572,Bundesliga,2025
+2026-03-21,FC Cologne,Borussia M.Gladbach,1.29293,1.08153,Bundesliga,2025
+2026-03-21,FC Heidenheim,Bayer Leverkusen,1.73738,1.96287,Bundesliga,2025
+2026-03-21,Wolfsburg,Werder Bremen,1.05686,0.414924,Bundesliga,2025
+2026-03-21,Borussia Dortmund,Hamburger SV,6.10187,1.23049,Bundesliga,2025
+2026-03-22,Mainz 05,Eintracht Frankfurt,1.38387,1.71748,Bundesliga,2025
+2026-03-22,St. Pauli,Freiburg,1.39653,2.74421,Bundesliga,2025
+2026-03-22,Augsburg,VfB Stuttgart,1.59097,3.87094,Bundesliga,2025
+2026-04-04,Bayer Leverkusen,Wolfsburg,4.59518,2.54712,Bundesliga,2025
+2026-04-04,Borussia M.Gladbach,FC Heidenheim,1.09174,0.883368,Bundesliga,2025
+2026-04-04,Freiburg,Bayern Munich,2.04585,2.49116,Bundesliga,2025
+2026-04-04,Hamburger SV,Augsburg,1.53108,2.57589,Bundesliga,2025
+2026-04-04,Hoffenheim,Mainz 05,1.51732,2.22893,Bundesliga,2025
+2026-04-04,Werder Bremen,RasenBallsport Leipzig,0.898486,1.61345,Bundesliga,2025
+2026-04-04,VfB Stuttgart,Borussia Dortmund,0.553248,0.76449,Bundesliga,2025
+2026-04-05,Union Berlin,St. Pauli,1.78288,0.325477,Bundesliga,2025
+2026-04-05,Eintracht Frankfurt,FC Cologne,2.16998,3.09815,Bundesliga,2025
+2026-04-10,Augsburg,Hoffenheim,2.67199,1.43152,Bundesliga,2025
+2026-04-11,Borussia Dortmund,Bayer Leverkusen,1.01423,0.728586,Bundesliga,2025
+2026-04-11,FC Heidenheim,Union Berlin,2.11247,1.11885,Bundesliga,2025
+2026-04-11,RasenBallsport Leipzig,Borussia M.Gladbach,2.56843,1.66258,Bundesliga,2025
+2026-04-11,Wolfsburg,Eintracht Frankfurt,2.26232,1.38694,Bundesliga,2025
+2026-04-11,St. Pauli,Bayern Munich,0.355983,4.15447,Bundesliga,2025
+2026-04-12,FC Cologne,Werder Bremen,3.90871,0.870139,Bundesliga,2025
+2026-04-12,VfB Stuttgart,Hamburger SV,3.8645,0.417554,Bundesliga,2025
+2026-04-12,Mainz 05,Freiburg,0.458085,0.538882,Bundesliga,2025
+2026-04-17,St. Pauli,FC Cologne,2.2798,1.26761,Bundesliga,2025
+2026-04-18,Bayer Leverkusen,Augsburg,3.73107,1.29743,Bundesliga,2025
+2026-04-18,Hoffenheim,Borussia Dortmund,2.22458,1.28292,Bundesliga,2025
+2026-04-18,Union Berlin,Wolfsburg,2.38881,0.23493,Bundesliga,2025
+2026-04-18,Werder Bremen,Hamburger SV,1.60257,0.914249,Bundesliga,2025
+2026-04-18,Eintracht Frankfurt,RasenBallsport Leipzig,1.40341,2.02122,Bundesliga,2025
+2026-04-19,Freiburg,FC Heidenheim,2.13766,1.74426,Bundesliga,2025
+2026-04-19,Bayern Munich,VfB Stuttgart,5.11014,1.26038,Bundesliga,2025
+2026-04-19,Borussia M.Gladbach,Mainz 05,1.11134,2.46195,Bundesliga,2025
+2026-04-24,RasenBallsport Leipzig,Union Berlin,4.53545,0.372365,Bundesliga,2025
+2026-04-25,Augsburg,Eintracht Frankfurt,2.13872,0.854238,Bundesliga,2025
+2026-04-25,FC Cologne,Bayer Leverkusen,3.49945,1.85749,Bundesliga,2025
+2026-04-25,FC Heidenheim,St. Pauli,2.17234,1.17753,Bundesliga,2025
+2026-04-25,Mainz 05,Bayern Munich,3.22403,2.36194,Bundesliga,2025
+2026-04-25,Wolfsburg,Borussia M.Gladbach,1.61116,0.473153,Bundesliga,2025
+2026-04-25,Hamburger SV,Hoffenheim,1.48261,2.42862,Bundesliga,2025
+2026-04-26,VfB Stuttgart,Werder Bremen,1.99681,0.958992,Bundesliga,2025
+2026-04-26,Borussia Dortmund,Freiburg,3.09306,0.496971,Bundesliga,2025
+2026-05-02,Bayern Munich,FC Heidenheim,1.87973,2.48197,Bundesliga,2025
+2026-05-02,Eintracht Frankfurt,Hamburger SV,0.992322,0.627209,Bundesliga,2025
+2026-05-02,Hoffenheim,VfB Stuttgart,2.6399,1.76153,Bundesliga,2025
+2026-05-02,Union Berlin,FC Cologne,0.887532,1.6958,Bundesliga,2025
+2026-05-02,Werder Bremen,Augsburg,0.814452,3.23625,Bundesliga,2025
+2026-05-02,Bayer Leverkusen,RasenBallsport Leipzig,5.41733,1.49733,Bundesliga,2025
+2026-05-03,St. Pauli,Mainz 05,1.08664,2.80672,Bundesliga,2025
+2026-05-03,Borussia M.Gladbach,Borussia Dortmund,2.68245,0.4281,Bundesliga,2025
+2026-05-03,Freiburg,Wolfsburg,0.947988,1.11086,Bundesliga,2025
+2026-05-08,Borussia Dortmund,Eintracht Frankfurt,2.94988,0.942523,Bundesliga,2025
+2026-05-09,Augsburg,Borussia M.Gladbach,2.80244,1.05493,Bundesliga,2025
+2026-05-09,Hoffenheim,Werder Bremen,1.28965,1.45272,Bundesliga,2025
+2026-05-09,RasenBallsport Leipzig,St. Pauli,2.32909,0.945954,Bundesliga,2025
+2026-05-09,VfB Stuttgart,Bayer Leverkusen,3.42891,0.631905,Bundesliga,2025
+2026-05-09,Wolfsburg,Bayern Munich,3.26878,1.9054,Bundesliga,2025
+2026-05-10,Hamburger SV,Freiburg,2.02228,0.583605,Bundesliga,2025
+2026-05-10,FC Cologne,FC Heidenheim,1.51486,2.04489,Bundesliga,2025
+2026-05-10,Mainz 05,Union Berlin,2.09983,2.94155,Bundesliga,2025
+2026-05-16,Bayer Leverkusen,Hamburger SV,3.08571,1.63049,Bundesliga,2025
+2026-05-16,Bayern Munich,FC Cologne,2.81515,0.880203,Bundesliga,2025
+2026-05-16,Borussia M.Gladbach,Hoffenheim,0.845598,1.77286,Bundesliga,2025
+2026-05-16,Eintracht Frankfurt,VfB Stuttgart,2.99231,1.81013,Bundesliga,2025
+2026-05-16,Freiburg,RasenBallsport Leipzig,2.54392,1.51341,Bundesliga,2025
+2026-05-16,FC Heidenheim,Mainz 05,3.03813,3.90834,Bundesliga,2025
+2026-05-16,St. Pauli,Wolfsburg,1.98722,4.0649,Bundesliga,2025
+2026-05-16,Union Berlin,Augsburg,2.45125,0.506181,Bundesliga,2025
+2026-05-16,Werder Bremen,Borussia Dortmund,0.530615,3.37413,Bundesliga,2025

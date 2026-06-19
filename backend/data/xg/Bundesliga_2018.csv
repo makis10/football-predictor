@@ -1,0 +1,307 @@
+date,home_team,away_team,home_xg,away_xg,league,season
+2018-08-24,Bayern Munich,Hoffenheim,3.08883,0.697274,Bundesliga,2018
+2018-08-25,Wolfsburg,Schalke 04,1.31029,1.86154,Bundesliga,2018
+2018-08-25,Fortuna Duesseldorf,Augsburg,1.32783,0.755029,Bundesliga,2018
+2018-08-25,Hertha Berlin,Nuernberg,1.03309,1.34412,Bundesliga,2018
+2018-08-25,Werder Bremen,Hannover 96,1.91197,0.840127,Bundesliga,2018
+2018-08-25,Freiburg,Eintracht Frankfurt,1.46674,0.81415,Bundesliga,2018
+2018-08-25,Borussia M.Gladbach,Bayer Leverkusen,3.34179,1.05775,Bundesliga,2018
+2018-08-26,Mainz 05,VfB Stuttgart,1.28621,1.07847,Bundesliga,2018
+2018-08-26,Borussia Dortmund,RasenBallsport Leipzig,1.96153,1.46268,Bundesliga,2018
+2018-08-31,Hannover 96,Borussia Dortmund,0.462033,0.842511,Bundesliga,2018
+2018-09-01,Nuernberg,Mainz 05,1.56238,0.367667,Bundesliga,2018
+2018-09-01,Eintracht Frankfurt,Werder Bremen,1.25306,1.34271,Bundesliga,2018
+2018-09-01,Augsburg,Borussia M.Gladbach,1.7521,1.31189,Bundesliga,2018
+2018-09-01,Hoffenheim,Freiburg,3.48013,1.53718,Bundesliga,2018
+2018-09-01,Bayer Leverkusen,Wolfsburg,0.877655,2.13508,Bundesliga,2018
+2018-09-01,VfB Stuttgart,Bayern Munich,0.0990837,1.71434,Bundesliga,2018
+2018-09-02,RasenBallsport Leipzig,Fortuna Duesseldorf,2.25033,1.43691,Bundesliga,2018
+2018-09-02,Schalke 04,Hertha Berlin,1.59561,0.566284,Bundesliga,2018
+2018-09-14,Borussia Dortmund,Eintracht Frankfurt,1.95503,0.199314,Bundesliga,2018
+2018-09-15,RasenBallsport Leipzig,Hannover 96,2.35222,0.950644,Bundesliga,2018
+2018-09-15,Mainz 05,Augsburg,2.81187,0.736371,Bundesliga,2018
+2018-09-15,Wolfsburg,Hertha Berlin,2.23932,0.590795,Bundesliga,2018
+2018-09-15,Fortuna Duesseldorf,Hoffenheim,1.78366,2.19977,Bundesliga,2018
+2018-09-15,Bayern Munich,Bayer Leverkusen,1.40345,0.784725,Bundesliga,2018
+2018-09-15,Borussia M.Gladbach,Schalke 04,1.4002,0.729351,Bundesliga,2018
+2018-09-16,Werder Bremen,Nuernberg,0.700449,0.514375,Bundesliga,2018
+2018-09-16,Freiburg,VfB Stuttgart,1.20784,1.19724,Bundesliga,2018
+2018-09-21,VfB Stuttgart,Fortuna Duesseldorf,1.39372,1.23964,Bundesliga,2018
+2018-09-22,Hoffenheim,Borussia Dortmund,1.92814,1.4456,Bundesliga,2018
+2018-09-22,Hertha Berlin,Borussia M.Gladbach,3.9572,2.64706,Bundesliga,2018
+2018-09-22,Augsburg,Werder Bremen,2.11259,1.39048,Bundesliga,2018
+2018-09-22,Wolfsburg,Freiburg,0.826665,2.26733,Bundesliga,2018
+2018-09-22,Nuernberg,Hannover 96,1.64985,0.557368,Bundesliga,2018
+2018-09-22,Schalke 04,Bayern Munich,0.358342,2.58882,Bundesliga,2018
+2018-09-23,Bayer Leverkusen,Mainz 05,1.29357,0.76291,Bundesliga,2018
+2018-09-23,Eintracht Frankfurt,RasenBallsport Leipzig,1.80358,1.8818,Bundesliga,2018
+2018-09-25,Werder Bremen,Hertha Berlin,2.51866,0.94148,Bundesliga,2018
+2018-09-25,Hannover 96,Hoffenheim,2.06878,1.98958,Bundesliga,2018
+2018-09-25,Freiburg,Schalke 04,1.38048,0.928266,Bundesliga,2018
+2018-09-25,Bayern Munich,Augsburg,1.43314,1.32512,Bundesliga,2018
+2018-09-26,Fortuna Duesseldorf,Bayer Leverkusen,1.75244,1.48071,Bundesliga,2018
+2018-09-26,Borussia Dortmund,Nuernberg,2.18746,0.154216,Bundesliga,2018
+2018-09-26,RasenBallsport Leipzig,VfB Stuttgart,3.13273,0.640951,Bundesliga,2018
+2018-09-26,Borussia M.Gladbach,Eintracht Frankfurt,1.5541,1.11709,Bundesliga,2018
+2018-09-26,Mainz 05,Wolfsburg,0.362483,1.19657,Bundesliga,2018
+2018-09-28,Hertha Berlin,Bayern Munich,1.48921,2.40599,Bundesliga,2018
+2018-09-29,VfB Stuttgart,Werder Bremen,2.43649,0.656694,Bundesliga,2018
+2018-09-29,Schalke 04,Mainz 05,1.59406,0.642848,Bundesliga,2018
+2018-09-29,Hoffenheim,RasenBallsport Leipzig,1.77221,1.47287,Bundesliga,2018
+2018-09-29,Wolfsburg,Borussia M.Gladbach,0.802752,0.849348,Bundesliga,2018
+2018-09-29,Nuernberg,Fortuna Duesseldorf,2.42225,1.17182,Bundesliga,2018
+2018-09-29,Bayer Leverkusen,Borussia Dortmund,1.34044,2.98145,Bundesliga,2018
+2018-09-30,Eintracht Frankfurt,Hannover 96,2.76495,0.613099,Bundesliga,2018
+2018-09-30,Augsburg,Freiburg,4.37565,1.61825,Bundesliga,2018
+2018-10-05,Werder Bremen,Wolfsburg,1.10209,0.351604,Bundesliga,2018
+2018-10-06,Borussia Dortmund,Augsburg,2.09977,3.18937,Bundesliga,2018
+2018-10-06,Hannover 96,VfB Stuttgart,2.0396,0.69495,Bundesliga,2018
+2018-10-06,Mainz 05,Hertha Berlin,1.56562,1.00145,Bundesliga,2018
+2018-10-06,Fortuna Duesseldorf,Schalke 04,0.557607,1.75802,Bundesliga,2018
+2018-10-06,Bayern Munich,Borussia M.Gladbach,0.595523,0.559058,Bundesliga,2018
+2018-10-07,Freiburg,Bayer Leverkusen,0.501569,0.551906,Bundesliga,2018
+2018-10-07,Hoffenheim,Eintracht Frankfurt,2.24067,1.02517,Bundesliga,2018
+2018-10-07,RasenBallsport Leipzig,Nuernberg,3.17935,0.394254,Bundesliga,2018
+2018-10-19,Eintracht Frankfurt,Fortuna Duesseldorf,3.51257,0.666096,Bundesliga,2018
+2018-10-20,Bayer Leverkusen,Hannover 96,2.38988,1.0744,Bundesliga,2018
+2018-10-20,VfB Stuttgart,Borussia Dortmund,1.03693,0.952768,Bundesliga,2018
+2018-10-20,Augsburg,RasenBallsport Leipzig,0.267706,1.098,Bundesliga,2018
+2018-10-20,Wolfsburg,Bayern Munich,0.815476,2.75811,Bundesliga,2018
+2018-10-20,Nuernberg,Hoffenheim,1.11043,2.46148,Bundesliga,2018
+2018-10-20,Schalke 04,Werder Bremen,0.966026,0.399747,Bundesliga,2018
+2018-10-21,Hertha Berlin,Freiburg,0.877118,0.427269,Bundesliga,2018
+2018-10-21,Borussia M.Gladbach,Mainz 05,3.00692,0.472964,Bundesliga,2018
+2018-10-26,Freiburg,Borussia M.Gladbach,1.41352,1.14643,Bundesliga,2018
+2018-10-27,Borussia Dortmund,Hertha Berlin,3.57277,2.04279,Bundesliga,2018
+2018-10-27,Hannover 96,Augsburg,0.616434,1.45577,Bundesliga,2018
+2018-10-27,Mainz 05,Bayern Munich,0.592384,2.15695,Bundesliga,2018
+2018-10-27,Fortuna Duesseldorf,Wolfsburg,0.245269,1.74956,Bundesliga,2018
+2018-10-27,Hoffenheim,VfB Stuttgart,2.93243,0.253449,Bundesliga,2018
+2018-10-28,Nuernberg,Eintracht Frankfurt,0.949097,0.998569,Bundesliga,2018
+2018-10-28,RasenBallsport Leipzig,Schalke 04,0.760107,0.754245,Bundesliga,2018
+2018-10-28,Werder Bremen,Bayer Leverkusen,1.49927,4.07211,Bundesliga,2018
+2018-11-02,VfB Stuttgart,Eintracht Frankfurt,1.02365,3.33128,Bundesliga,2018
+2018-11-03,Augsburg,Nuernberg,2.61879,1.37885,Bundesliga,2018
+2018-11-03,Wolfsburg,Borussia Dortmund,0.44332,1.19435,Bundesliga,2018
+2018-11-03,Bayern Munich,Freiburg,1.8539,0.592458,Bundesliga,2018
+2018-11-03,Schalke 04,Hannover 96,2.95181,1.18456,Bundesliga,2018
+2018-11-03,Bayer Leverkusen,Hoffenheim,2.21447,1.93557,Bundesliga,2018
+2018-11-03,Hertha Berlin,RasenBallsport Leipzig,1.79233,3.76073,Bundesliga,2018
+2018-11-04,Borussia M.Gladbach,Fortuna Duesseldorf,3.16198,0.719516,Bundesliga,2018
+2018-11-04,Mainz 05,Werder Bremen,1.54801,1.25758,Bundesliga,2018
+2018-11-09,Hannover 96,Wolfsburg,2.08751,2.99196,Bundesliga,2018
+2018-11-10,Hoffenheim,Augsburg,1.82862,1.14191,Bundesliga,2018
+2018-11-10,Werder Bremen,Borussia M.Gladbach,1.50955,2.73709,Bundesliga,2018
+2018-11-10,Freiburg,Mainz 05,1.86463,0.770571,Bundesliga,2018
+2018-11-10,Fortuna Duesseldorf,Hertha Berlin,2.89841,0.960102,Bundesliga,2018
+2018-11-10,Nuernberg,VfB Stuttgart,0.434841,1.54977,Bundesliga,2018
+2018-11-10,Borussia Dortmund,Bayern Munich,2.56191,1.84247,Bundesliga,2018
+2018-11-11,RasenBallsport Leipzig,Bayer Leverkusen,2.55127,0.443215,Bundesliga,2018
+2018-11-11,Eintracht Frankfurt,Schalke 04,2.51248,0.609591,Bundesliga,2018
+2018-11-23,Bayer Leverkusen,VfB Stuttgart,2.62916,0.393762,Bundesliga,2018
+2018-11-24,Bayern Munich,Fortuna Duesseldorf,2.81107,1.36755,Bundesliga,2018
+2018-11-24,Hertha Berlin,Hoffenheim,2.69304,1.68148,Bundesliga,2018
+2018-11-24,Augsburg,Eintracht Frankfurt,2.01274,3.21577,Bundesliga,2018
+2018-11-24,Mainz 05,Borussia Dortmund,1.05805,1.08217,Bundesliga,2018
+2018-11-24,Wolfsburg,RasenBallsport Leipzig,1.54495,0.647326,Bundesliga,2018
+2018-11-24,Schalke 04,Nuernberg,2.77116,2.29783,Bundesliga,2018
+2018-11-25,Freiburg,Werder Bremen,2.98264,2.13569,Bundesliga,2018
+2018-11-25,Borussia M.Gladbach,Hannover 96,1.70943,0.459166,Bundesliga,2018
+2018-11-30,Fortuna Duesseldorf,Mainz 05,1.10941,1.02576,Bundesliga,2018
+2018-12-01,Borussia Dortmund,Freiburg,2.69109,0.143781,Bundesliga,2018
+2018-12-01,VfB Stuttgart,Augsburg,0.710341,1.64707,Bundesliga,2018
+2018-12-01,Werder Bremen,Bayern Munich,0.637321,3.29433,Bundesliga,2018
+2018-12-01,Hannover 96,Hertha Berlin,0.54136,2.10742,Bundesliga,2018
+2018-12-01,Hoffenheim,Schalke 04,2.35914,2.15866,Bundesliga,2018
+2018-12-02,RasenBallsport Leipzig,Borussia M.Gladbach,2.39576,0.628352,Bundesliga,2018
+2018-12-02,Eintracht Frankfurt,Wolfsburg,1.53625,1.72581,Bundesliga,2018
+2018-12-03,Nuernberg,Bayer Leverkusen,0.675448,1.39302,Bundesliga,2018
+2018-12-07,Werder Bremen,Fortuna Duesseldorf,2.83748,1.37827,Bundesliga,2018
+2018-12-08,Bayern Munich,Nuernberg,2.8246,0.191129,Bundesliga,2018
+2018-12-08,Schalke 04,Borussia Dortmund,1.44761,0.898668,Bundesliga,2018
+2018-12-08,Bayer Leverkusen,Augsburg,1.53502,0.768373,Bundesliga,2018
+2018-12-08,Freiburg,RasenBallsport Leipzig,2.0335,1.23018,Bundesliga,2018
+2018-12-08,Wolfsburg,Hoffenheim,0.515385,2.10256,Bundesliga,2018
+2018-12-08,Hertha Berlin,Eintracht Frankfurt,0.243455,1.12526,Bundesliga,2018
+2018-12-09,Mainz 05,Hannover 96,3.27966,2.23642,Bundesliga,2018
+2018-12-09,Borussia M.Gladbach,VfB Stuttgart,2.61136,0.678537,Bundesliga,2018
+2018-12-14,Nuernberg,Wolfsburg,0.601572,0.70077,Bundesliga,2018
+2018-12-15,Hoffenheim,Borussia M.Gladbach,3.933,0.584205,Bundesliga,2018
+2018-12-15,VfB Stuttgart,Hertha Berlin,1.43807,1.53719,Bundesliga,2018
+2018-12-15,Augsburg,Schalke 04,2.00924,0.758425,Bundesliga,2018
+2018-12-15,Hannover 96,Bayern Munich,0.628893,4.18084,Bundesliga,2018
+2018-12-15,Fortuna Duesseldorf,Freiburg,2.59785,0.798948,Bundesliga,2018
+2018-12-15,Borussia Dortmund,Werder Bremen,2.89288,0.461208,Bundesliga,2018
+2018-12-16,RasenBallsport Leipzig,Mainz 05,4.47536,1.33833,Bundesliga,2018
+2018-12-16,Eintracht Frankfurt,Bayer Leverkusen,3.59588,0.744745,Bundesliga,2018
+2018-12-18,Borussia M.Gladbach,Nuernberg,3.61765,1.13637,Bundesliga,2018
+2018-12-18,Wolfsburg,VfB Stuttgart,1.584,0.333514,Bundesliga,2018
+2018-12-18,Fortuna Duesseldorf,Borussia Dortmund,1.3731,1.29548,Bundesliga,2018
+2018-12-18,Hertha Berlin,Augsburg,1.74712,0.728652,Bundesliga,2018
+2018-12-19,Schalke 04,Bayer Leverkusen,1.84453,0.683564,Bundesliga,2018
+2018-12-19,Bayern Munich,RasenBallsport Leipzig,1.81321,0.721767,Bundesliga,2018
+2018-12-19,Werder Bremen,Hoffenheim,2.39195,1.90654,Bundesliga,2018
+2018-12-19,Freiburg,Hannover 96,1.62711,2.01561,Bundesliga,2018
+2018-12-19,Mainz 05,Eintracht Frankfurt,1.61471,1.09488,Bundesliga,2018
+2018-12-21,Borussia Dortmund,Borussia M.Gladbach,1.79527,0.517203,Bundesliga,2018
+2018-12-22,Nuernberg,Freiburg,1.13859,0.318199,Bundesliga,2018
+2018-12-22,Bayer Leverkusen,Hertha Berlin,1.82482,1.26734,Bundesliga,2018
+2018-12-22,RasenBallsport Leipzig,Werder Bremen,1.93805,2.10073,Bundesliga,2018
+2018-12-22,VfB Stuttgart,Schalke 04,1.22362,2.42656,Bundesliga,2018
+2018-12-22,Hannover 96,Fortuna Duesseldorf,0.6702,1.13166,Bundesliga,2018
+2018-12-22,Eintracht Frankfurt,Bayern Munich,1.31242,2.04036,Bundesliga,2018
+2018-12-23,Augsburg,Wolfsburg,0.382344,2.66718,Bundesliga,2018
+2018-12-23,Hoffenheim,Mainz 05,2.21326,0.963816,Bundesliga,2018
+2019-01-18,Hoffenheim,Bayern Munich,1.1596,3.31311,Bundesliga,2018
+2019-01-19,VfB Stuttgart,Mainz 05,3.20149,1.17715,Bundesliga,2018
+2019-01-19,Eintracht Frankfurt,Freiburg,2.9107,1.54911,Bundesliga,2018
+2019-01-19,Augsburg,Fortuna Duesseldorf,0.869957,1.0413,Bundesliga,2018
+2019-01-19,Hannover 96,Werder Bremen,0.516442,2.168,Bundesliga,2018
+2019-01-19,Bayer Leverkusen,Borussia M.Gladbach,1.20925,0.747044,Bundesliga,2018
+2019-01-19,RasenBallsport Leipzig,Borussia Dortmund,0.778946,1.02216,Bundesliga,2018
+2019-01-20,Nuernberg,Hertha Berlin,1.1239,2.24853,Bundesliga,2018
+2019-01-20,Schalke 04,Wolfsburg,3.02896,1.72547,Bundesliga,2018
+2019-01-25,Hertha Berlin,Schalke 04,1.41796,1.03679,Bundesliga,2018
+2019-01-26,Borussia Dortmund,Hannover 96,2.89598,0.819503,Bundesliga,2018
+2019-01-26,Borussia M.Gladbach,Augsburg,2.08047,0.777086,Bundesliga,2018
+2019-01-26,Freiburg,Hoffenheim,1.77454,3.27125,Bundesliga,2018
+2019-01-26,Mainz 05,Nuernberg,2.36343,0.32725,Bundesliga,2018
+2019-01-26,Wolfsburg,Bayer Leverkusen,1.19108,3.00387,Bundesliga,2018
+2019-01-26,Werder Bremen,Eintracht Frankfurt,2.6,1.64974,Bundesliga,2018
+2019-01-27,Bayern Munich,VfB Stuttgart,3.41668,0.361664,Bundesliga,2018
+2019-01-27,Fortuna Duesseldorf,RasenBallsport Leipzig,0.290714,2.02739,Bundesliga,2018
+2019-02-01,Hannover 96,RasenBallsport Leipzig,0.138262,2.35194,Bundesliga,2018
+2019-02-02,Bayer Leverkusen,Bayern Munich,1.2769,1.868,Bundesliga,2018
+2019-02-02,Eintracht Frankfurt,Borussia Dortmund,1.44338,1.8842,Bundesliga,2018
+2019-02-02,Hertha Berlin,Wolfsburg,1.70071,1.18244,Bundesliga,2018
+2019-02-02,Nuernberg,Werder Bremen,1.09967,1.10992,Bundesliga,2018
+2019-02-02,Hoffenheim,Fortuna Duesseldorf,1.63645,1.17944,Bundesliga,2018
+2019-02-02,Schalke 04,Borussia M.Gladbach,0.663579,1.87388,Bundesliga,2018
+2019-02-03,Augsburg,Mainz 05,3.79911,0.20019,Bundesliga,2018
+2019-02-03,VfB Stuttgart,Freiburg,0.850155,2.53349,Bundesliga,2018
+2019-02-08,Mainz 05,Bayer Leverkusen,1.88457,3.30348,Bundesliga,2018
+2019-02-09,Borussia Dortmund,Hoffenheim,1.99653,2.47538,Bundesliga,2018
+2019-02-09,RasenBallsport Leipzig,Eintracht Frankfurt,1.59427,0.501519,Bundesliga,2018
+2019-02-09,Borussia M.Gladbach,Hertha Berlin,1.30285,2.49289,Bundesliga,2018
+2019-02-09,Hannover 96,Nuernberg,1.4289,0.981416,Bundesliga,2018
+2019-02-09,Freiburg,Wolfsburg,0.818616,1.91629,Bundesliga,2018
+2019-02-09,Bayern Munich,Schalke 04,2.35845,1.39766,Bundesliga,2018
+2019-02-10,Werder Bremen,Augsburg,1.66903,1.05801,Bundesliga,2018
+2019-02-10,Fortuna Duesseldorf,VfB Stuttgart,1.64721,1.1803,Bundesliga,2018
+2019-02-15,Augsburg,Bayern Munich,0.510867,2.20232,Bundesliga,2018
+2019-02-16,Hoffenheim,Hannover 96,3.59387,0.41327,Bundesliga,2018
+2019-02-16,VfB Stuttgart,RasenBallsport Leipzig,1.36671,1.32163,Bundesliga,2018
+2019-02-16,Wolfsburg,Mainz 05,2.13855,0.719281,Bundesliga,2018
+2019-02-16,Schalke 04,Freiburg,0.609421,1.09678,Bundesliga,2018
+2019-02-16,Hertha Berlin,Werder Bremen,1.09705,0.390094,Bundesliga,2018
+2019-02-17,Eintracht Frankfurt,Borussia M.Gladbach,1.16069,1.17016,Bundesliga,2018
+2019-02-17,Bayer Leverkusen,Fortuna Duesseldorf,1.90354,0.209187,Bundesliga,2018
+2019-02-18,Nuernberg,Borussia Dortmund,0.498008,0.930531,Bundesliga,2018
+2019-02-22,Werder Bremen,VfB Stuttgart,1.23401,0.946008,Bundesliga,2018
+2019-02-23,Bayern Munich,Hertha Berlin,0.989434,0.279649,Bundesliga,2018
+2019-02-23,Borussia M.Gladbach,Wolfsburg,1.18063,0.794633,Bundesliga,2018
+2019-02-23,Freiburg,Augsburg,2.01296,1.54501,Bundesliga,2018
+2019-02-23,Mainz 05,Schalke 04,2.44926,0.749874,Bundesliga,2018
+2019-02-23,Fortuna Duesseldorf,Nuernberg,1.55152,0.112551,Bundesliga,2018
+2019-02-24,Hannover 96,Eintracht Frankfurt,0.392236,2.33768,Bundesliga,2018
+2019-02-24,Borussia Dortmund,Bayer Leverkusen,1.05083,1.26295,Bundesliga,2018
+2019-02-25,RasenBallsport Leipzig,Hoffenheim,1.91108,1.30993,Bundesliga,2018
+2019-03-01,Augsburg,Borussia Dortmund,0.961029,2.85445,Bundesliga,2018
+2019-03-02,Schalke 04,Fortuna Duesseldorf,0.708083,2.89494,Bundesliga,2018
+2019-03-02,Bayer Leverkusen,Freiburg,3.25987,0.26273,Bundesliga,2018
+2019-03-02,Eintracht Frankfurt,Hoffenheim,2.30575,1.76367,Bundesliga,2018
+2019-03-02,Hertha Berlin,Mainz 05,1.77228,0.83743,Bundesliga,2018
+2019-03-02,Nuernberg,RasenBallsport Leipzig,1.02688,0.920561,Bundesliga,2018
+2019-03-02,Borussia M.Gladbach,Bayern Munich,0.58281,5.94023,Bundesliga,2018
+2019-03-03,VfB Stuttgart,Hannover 96,2.6743,0.613856,Bundesliga,2018
+2019-03-03,Wolfsburg,Werder Bremen,1.16809,1.83543,Bundesliga,2018
+2019-03-08,Werder Bremen,Schalke 04,2.44765,1.53919,Bundesliga,2018
+2019-03-09,Bayern Munich,Wolfsburg,3.77617,0.159247,Bundesliga,2018
+2019-03-09,Borussia Dortmund,VfB Stuttgart,2.5589,0.897914,Bundesliga,2018
+2019-03-09,RasenBallsport Leipzig,Augsburg,2.35335,0.181299,Bundesliga,2018
+2019-03-09,Freiburg,Hertha Berlin,0.972717,1.0226,Bundesliga,2018
+2019-03-09,Mainz 05,Borussia M.Gladbach,0.578029,1.20097,Bundesliga,2018
+2019-03-10,Hoffenheim,Nuernberg,2.64002,0.79045,Bundesliga,2018
+2019-03-10,Hannover 96,Bayer Leverkusen,0.672836,2.44206,Bundesliga,2018
+2019-03-11,Fortuna Duesseldorf,Eintracht Frankfurt,0.837274,2.76254,Bundesliga,2018
+2019-03-15,Borussia M.Gladbach,Freiburg,1.17388,0.514838,Bundesliga,2018
+2019-03-16,VfB Stuttgart,Hoffenheim,1.35935,2.90274,Bundesliga,2018
+2019-03-16,Schalke 04,RasenBallsport Leipzig,1.01343,1.69354,Bundesliga,2018
+2019-03-16,Wolfsburg,Fortuna Duesseldorf,3.87623,1.93907,Bundesliga,2018
+2019-03-16,Augsburg,Hannover 96,1.35782,1.4864,Bundesliga,2018
+2019-03-16,Hertha Berlin,Borussia Dortmund,2.20854,2.23731,Bundesliga,2018
+2019-03-17,Bayer Leverkusen,Werder Bremen,0.917302,1.31225,Bundesliga,2018
+2019-03-17,Eintracht Frankfurt,Nuernberg,2.58949,0.702802,Bundesliga,2018
+2019-03-17,Bayern Munich,Mainz 05,2.66818,0.302976,Bundesliga,2018
+2019-03-29,Hoffenheim,Bayer Leverkusen,2.4473,1.71436,Bundesliga,2018
+2019-03-30,Borussia Dortmund,Wolfsburg,1.45093,0.171788,Bundesliga,2018
+2019-03-30,Nuernberg,Augsburg,1.76901,0.867874,Bundesliga,2018
+2019-03-30,Werder Bremen,Mainz 05,1.22854,0.998556,Bundesliga,2018
+2019-03-30,Freiburg,Bayern Munich,0.719026,3.23843,Bundesliga,2018
+2019-03-30,Fortuna Duesseldorf,Borussia M.Gladbach,1.66988,1.34223,Bundesliga,2018
+2019-03-30,RasenBallsport Leipzig,Hertha Berlin,5.04475,0.895578,Bundesliga,2018
+2019-03-31,Hannover 96,Schalke 04,0.755656,0.864608,Bundesliga,2018
+2019-03-31,Eintracht Frankfurt,VfB Stuttgart,2.00509,0.569489,Bundesliga,2018
+2019-04-05,Mainz 05,Freiburg,2.27396,1.80652,Bundesliga,2018
+2019-04-06,Schalke 04,Eintracht Frankfurt,1.19525,2.24621,Bundesliga,2018
+2019-04-06,Bayer Leverkusen,RasenBallsport Leipzig,2.1254,1.44447,Bundesliga,2018
+2019-04-06,VfB Stuttgart,Nuernberg,1.62221,2.37695,Bundesliga,2018
+2019-04-06,Hertha Berlin,Fortuna Duesseldorf,1.90031,2.72781,Bundesliga,2018
+2019-04-06,Wolfsburg,Hannover 96,1.43754,1.54016,Bundesliga,2018
+2019-04-06,Bayern Munich,Borussia Dortmund,4.30876,0.478204,Bundesliga,2018
+2019-04-07,Augsburg,Hoffenheim,0.653608,3.60653,Bundesliga,2018
+2019-04-07,Borussia M.Gladbach,Werder Bremen,1.99752,1.05039,Bundesliga,2018
+2019-04-12,Nuernberg,Schalke 04,2.35613,0.850368,Bundesliga,2018
+2019-04-13,RasenBallsport Leipzig,Wolfsburg,2.11199,0.38877,Bundesliga,2018
+2019-04-13,VfB Stuttgart,Bayer Leverkusen,0.444283,2.53521,Bundesliga,2018
+2019-04-13,Werder Bremen,Freiburg,1.81623,0.55263,Bundesliga,2018
+2019-04-13,Hannover 96,Borussia M.Gladbach,1.36963,1.76261,Bundesliga,2018
+2019-04-13,Borussia Dortmund,Mainz 05,2.13802,2.93676,Bundesliga,2018
+2019-04-14,Hoffenheim,Hertha Berlin,3.53386,0.305091,Bundesliga,2018
+2019-04-14,Fortuna Duesseldorf,Bayern Munich,0.972295,3.34878,Bundesliga,2018
+2019-04-14,Eintracht Frankfurt,Augsburg,2.09741,2.22016,Bundesliga,2018
+2019-04-20,Bayern Munich,Werder Bremen,2.60771,0.134891,Bundesliga,2018
+2019-04-20,Bayer Leverkusen,Nuernberg,1.51156,0.245739,Bundesliga,2018
+2019-04-20,Augsburg,VfB Stuttgart,2.39187,1.38001,Bundesliga,2018
+2019-04-20,Mainz 05,Fortuna Duesseldorf,3.24326,2.5269,Bundesliga,2018
+2019-04-20,Borussia M.Gladbach,RasenBallsport Leipzig,2.19831,2.13066,Bundesliga,2018
+2019-04-20,Schalke 04,Hoffenheim,2.02105,1.87167,Bundesliga,2018
+2019-04-21,Freiburg,Borussia Dortmund,0.536271,2.91662,Bundesliga,2018
+2019-04-21,Hertha Berlin,Hannover 96,1.07608,0.527392,Bundesliga,2018
+2019-04-22,Wolfsburg,Eintracht Frankfurt,2.01024,1.62116,Bundesliga,2018
+2019-04-26,Augsburg,Bayer Leverkusen,0.278207,2.9293,Bundesliga,2018
+2019-04-27,Borussia Dortmund,Schalke 04,1.10244,1.12367,Bundesliga,2018
+2019-04-27,RasenBallsport Leipzig,Freiburg,2.04886,0.874413,Bundesliga,2018
+2019-04-27,Eintracht Frankfurt,Hertha Berlin,2.16123,1.17855,Bundesliga,2018
+2019-04-27,Hannover 96,Mainz 05,0.877396,2.93831,Bundesliga,2018
+2019-04-27,Fortuna Duesseldorf,Werder Bremen,2.06935,2.73602,Bundesliga,2018
+2019-04-27,VfB Stuttgart,Borussia M.Gladbach,1.59767,1.30221,Bundesliga,2018
+2019-04-28,Hoffenheim,Wolfsburg,3.38957,2.05348,Bundesliga,2018
+2019-04-28,Nuernberg,Bayern Munich,1.90716,1.68788,Bundesliga,2018
+2019-05-03,Mainz 05,RasenBallsport Leipzig,1.72126,2.74717,Bundesliga,2018
+2019-05-04,Bayern Munich,Hannover 96,5.36034,0.871424,Bundesliga,2018
+2019-05-04,Borussia M.Gladbach,Hoffenheim,1.23948,3.2364,Bundesliga,2018
+2019-05-04,Hertha Berlin,VfB Stuttgart,2.28859,1.39423,Bundesliga,2018
+2019-05-04,Wolfsburg,Nuernberg,1.18184,0.566199,Bundesliga,2018
+2019-05-04,Werder Bremen,Borussia Dortmund,0.642264,2.6708,Bundesliga,2018
+2019-05-05,Schalke 04,Augsburg,1.82173,0.589384,Bundesliga,2018
+2019-05-05,Freiburg,Fortuna Duesseldorf,1.2563,0.911705,Bundesliga,2018
+2019-05-05,Bayer Leverkusen,Eintracht Frankfurt,2.78767,0.17067,Bundesliga,2018
+2019-05-11,Hoffenheim,Werder Bremen,1.80986,0.931751,Bundesliga,2018
+2019-05-11,Borussia Dortmund,Fortuna Duesseldorf,2.03631,2.07768,Bundesliga,2018
+2019-05-11,Bayer Leverkusen,Schalke 04,1.61536,1.79193,Bundesliga,2018
+2019-05-11,RasenBallsport Leipzig,Bayern Munich,0.609829,1.72176,Bundesliga,2018
+2019-05-11,VfB Stuttgart,Wolfsburg,0.680306,0.340041,Bundesliga,2018
+2019-05-11,Augsburg,Hertha Berlin,1.43088,2.5836,Bundesliga,2018
+2019-05-11,Hannover 96,Freiburg,2.29894,0.674621,Bundesliga,2018
+2019-05-11,Nuernberg,Borussia M.Gladbach,0.797591,1.75711,Bundesliga,2018
+2019-05-12,Eintracht Frankfurt,Mainz 05,1.71254,1.2497,Bundesliga,2018
+2019-05-18,Schalke 04,VfB Stuttgart,0.688908,0.668898,Bundesliga,2018
+2019-05-18,Bayern Munich,Eintracht Frankfurt,4.62869,0.954021,Bundesliga,2018
+2019-05-18,Freiburg,Nuernberg,1.08819,0.734435,Bundesliga,2018
+2019-05-18,Werder Bremen,RasenBallsport Leipzig,1.20038,1.84544,Bundesliga,2018
+2019-05-18,Hertha Berlin,Bayer Leverkusen,1.20477,2.37483,Bundesliga,2018
+2019-05-18,Borussia M.Gladbach,Borussia Dortmund,0.629959,2.35948,Bundesliga,2018
+2019-05-18,Fortuna Duesseldorf,Hannover 96,2.17162,1.04029,Bundesliga,2018
+2019-05-18,Wolfsburg,Augsburg,4.15452,0.672581,Bundesliga,2018
+2019-05-18,Mainz 05,Hoffenheim,2.87626,1.64469,Bundesliga,2018
