@@ -98,13 +98,10 @@ async function forward(
   }
 }
 
-export const GET    = (req: NextRequest, { params }: { params: { path: string[] } }) =>
-  forward(req, params);
-export const POST   = (req: NextRequest, { params }: { params: { path: string[] } }) =>
-  forward(req, params);
-export const PATCH  = (req: NextRequest, { params }: { params: { path: string[] } }) =>
-  forward(req, params);
-export const PUT    = (req: NextRequest, { params }: { params: { path: string[] } }) =>
-  forward(req, params);
-export const DELETE = (req: NextRequest, { params }: { params: { path: string[] } }) =>
-  forward(req, params);
+// Next 15+: route-handler `params` is a Promise — await it before forwarding.
+type Ctx = { params: Promise<{ path: string[] }> };
+export const GET    = async (req: NextRequest, { params }: Ctx) => forward(req, await params);
+export const POST   = async (req: NextRequest, { params }: Ctx) => forward(req, await params);
+export const PATCH  = async (req: NextRequest, { params }: Ctx) => forward(req, await params);
+export const PUT    = async (req: NextRequest, { params }: Ctx) => forward(req, await params);
+export const DELETE = async (req: NextRequest, { params }: Ctx) => forward(req, await params);

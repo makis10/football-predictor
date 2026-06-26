@@ -10,7 +10,7 @@ import RecentResultCard from "@/components/RecentResultCard";
 const DAYS_PER_PAGE = 7;
 
 interface PageProps {
-  searchParams: { league?: string; page?: string };
+  searchParams: Promise<{ league?: string; page?: string }>;
 }
 
 function pageLabel(page: number): string {
@@ -246,9 +246,10 @@ async function RecentGrid({ league, page }: { league?: string; page: number }) {
   );
 }
 
-export default function RecentResultsPage({ searchParams }: PageProps) {
-  const league = searchParams.league;
-  const page = Math.max(1, Number(searchParams.page ?? "1"));
+export default async function RecentResultsPage({ searchParams }: PageProps) {
+  const sp = await searchParams;
+  const league = sp.league;
+  const page = Math.max(1, Number(sp.page ?? "1"));
 
   const buildHref = (p: number) => {
     const params = new URLSearchParams();

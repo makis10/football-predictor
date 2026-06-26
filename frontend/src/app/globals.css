@@ -1,6 +1,13 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+/* Tailwind v4 CSS-first theme (replaces tailwind.config.js theme.extend). */
+@theme {
+  --color-pitch-950: #07090f;
+  --color-pitch-900: #0d1117;
+  --color-pitch-800: #161b27;
+  --color-pitch-700: #1e2535;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
 
 @layer base {
   html {

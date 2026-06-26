@@ -17,7 +17,7 @@ import MatchAnalysisPanel from "@/components/MatchAnalysis";
 import PlayerPropsPanel from "@/components/PlayerPropsPanel";
 
 interface Props {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 }
 
 /** Settlement pill — green ✓ when we caught it, red ✗ when we missed. */
@@ -36,7 +36,7 @@ function HitPill({ hit, label }: { hit: boolean | null | undefined; label?: stri
 }
 
 export default async function NationalMatchDetailPage({ params }: Props) {
-  const id = Number(params.id);
+  const id = Number((await params).id);
   if (isNaN(id)) notFound();
 
   let prediction;

@@ -16,7 +16,8 @@ import ConfidenceFilter from "@/components/ConfidenceFilter";
 import TopPicks from "@/components/TopPicks";
 
 interface PageProps {
-  searchParams: { league?: string; min_odds?: string; min_confidence?: string };
+  // Next 15+: searchParams is now a Promise.
+  searchParams: Promise<{ league?: string; min_odds?: string; min_confidence?: string }>;
 }
 
 const DAYS_AHEAD = 3; // today + 2 more days
@@ -124,10 +125,11 @@ async function UpcomingGrid({
   );
 }
 
-export default function HomePage({ searchParams }: PageProps) {
-  const league        = searchParams.league;
-  const minOdds       = searchParams.min_odds ? Number(searchParams.min_odds) : undefined;
-  const minConfidence = searchParams.min_confidence || undefined;
+export default async function HomePage({ searchParams }: PageProps) {
+  const sp = await searchParams;
+  const league        = sp.league;
+  const minOdds       = sp.min_odds ? Number(sp.min_odds) : undefined;
+  const minConfidence = sp.min_confidence || undefined;
 
   return (
     <div className="space-y-6">

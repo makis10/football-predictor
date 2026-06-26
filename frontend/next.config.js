@@ -2,6 +2,13 @@
 const nextConfig = {
   output: "standalone",
 
+  // Next 15.2+/16: the dev server rejects cross-origin requests from non-local
+  // hosts unless allow-listed. We serve through ngrok, so allow that origin.
+  // Override via ALLOWED_DEV_ORIGINS (comma-separated) when the ngrok URL rotates.
+  allowedDevOrigins: process.env.ALLOWED_DEV_ORIGINS
+    ? process.env.ALLOWED_DEV_ORIGINS.split(",").map((s) => s.trim())
+    : ["hamster-manger-uplifting.ngrok-free.dev"],
+
   // NOTE: /api/proxy/* is handled by the code route at
   // src/app/api/proxy/[...path]/route.ts — NOT a rewrite. A rewrite would pass
   // the browser's headers straight through, letting a logged-in user spoof

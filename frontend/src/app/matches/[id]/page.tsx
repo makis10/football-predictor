@@ -19,11 +19,11 @@ import MatchAnalysisPanel from "@/components/MatchAnalysis";
 import LogBetButton from "@/components/LogBetButton";
 
 interface Props {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 }
 
 export default async function MatchDetailPage({ params }: Props) {
-  const id = Number(params.id);
+  const id = Number((await params).id);
   if (isNaN(id)) notFound();
 
   let match, prediction;

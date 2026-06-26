@@ -18,7 +18,7 @@ import LeagueFilter from "@/components/LeagueFilter";
 export const dynamic = "force-dynamic";
 
 interface PageProps {
-  searchParams: { league?: string };
+  searchParams: Promise<{ league?: string }>;
 }
 
 function pct(v: number) {
@@ -32,7 +32,7 @@ function accentForAccuracy(v: number): "green" | "yellow" | "red" {
 }
 
 export default async function StatsPage({ searchParams }: PageProps) {
-  const league = searchParams.league;
+  const league = (await searchParams).league;
   const isInternational = league === INTERNATIONAL_LEAGUE;
 
   let stats;
