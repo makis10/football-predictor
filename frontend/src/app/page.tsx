@@ -13,7 +13,6 @@ import MatchCard from "@/components/MatchCard";
 import LeagueFilter from "@/components/LeagueFilter";
 import OddsFilter from "@/components/OddsFilter";
 import ConfidenceFilter from "@/components/ConfidenceFilter";
-import ExportButton from "@/components/ExportButton";
 import TopPicks from "@/components/TopPicks";
 
 interface PageProps {
@@ -39,7 +38,7 @@ async function UpcomingGrid({
   try {
     if (isInternational) {
       // "International" filter — show upcoming national fixtures only
-      matches = await getUpcomingNationalMatches(athensDate(0), athensDate(DAYS_AHEAD - 1));
+      matches = await getUpcomingNationalMatches(athensDate(0), athensDate(DAYS_AHEAD - 1), 200, minOdds);
       const minConf = minConfidence?.toLowerCase();
       const confRank: Record<string, number> = { low: 1, medium: 2, high: 3 };
       if (minConf) {
@@ -63,11 +62,11 @@ async function UpcomingGrid({
   // Merge upcoming national-team fixtures into the "All Leagues" view (only
   // when no specific club league is selected). National predictions live in a
   // separate table/endpoint; a failure here must not break the club list.
-  // National fixtures carry no bookmaker odds, so they can't satisfy a min-odds
-  // filter — only merge them when no odds threshold is set.
-  if (!league && minOdds == null) {
+  // National fixtures DO carry bookmaker odds, so the min-odds filter is applied
+  // to them too (inside getUpcomingNationalMatches, same argmax-pick semantics).
+  if (!league) {
     try {
-      const nat = await getUpcomingNationalMatches(athensDate(0), athensDate(DAYS_AHEAD - 1));
+      const nat = await getUpcomingNationalMatches(athensDate(0), athensDate(DAYS_AHEAD - 1), 200, minOdds);
       // Honour the same confidence filter the club list uses.
       const minConf = minConfidence?.toLowerCase();
       const confRank: Record<string, number> = { low: 1, medium: 2, high: 3 };
@@ -152,12 +151,6 @@ export default function HomePage({ searchParams }: PageProps) {
         <Suspense>
           <ConfidenceFilter active={minConfidence} />
         </Suspense>
-        <ExportButton
-          league={league}
-          minOdds={minOdds}
-          minConfidence={minConfidence}
-          daysAhead={DAYS_AHEAD}
-        />
       </div>
 
       <div className="space-y-8">

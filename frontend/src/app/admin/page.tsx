@@ -2,6 +2,7 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import { getSession, fetchWithAuth } from "@/lib/auth";
 import AdminUserTable from "@/components/AdminUserTable";
+import AdminFeedback, { type FeedbackItem } from "@/components/AdminFeedback";
 
 interface UserStats {
   id:             number;
@@ -11,6 +12,7 @@ interface UserStats {
   is_admin:       boolean;
   created_at:     string;
   last_login_at:  string | null;
+  last_seen_at:   string | null;
   login_count:    number;
   tracked_count:  number;
   bets_count:     number;
@@ -26,6 +28,10 @@ export default async function AdminPage() {
 
   const res = await fetchWithAuth("/admin/users");
   const users: UserStats[] = res.ok ? await res.json() : [];
+
+  const fbRes = await fetchWithAuth("/admin/feedback");
+  const feedback: FeedbackItem[] = fbRes.ok ? await fbRes.json() : [];
+  const unreadFeedback = feedback.filter((f) => !f.is_read).length;
 
   const totalUsers    = users.length;
   const activeTrackers = users.filter((u) => u.tracked_count > 0).length;
@@ -45,7 +51,7 @@ export default async function AdminPage() {
           { label: "Total users",      value: totalUsers },
           { label: "Google OAuth",     value: googleUsers },
           { label: "Tracking matches", value: activeTrackers },
-          { label: "Logging bets",     value: activeBettors },
+          { label: "Νέα μηνύματα",      value: unreadFeedback },
         ].map(({ label, value }) => (
           <div key={label} className="rounded-xl border border-pitch-700 bg-pitch-900 p-4 text-center">
             <p className="text-xs text-gray-500 mb-1">{label}</p>
@@ -66,6 +72,19 @@ export default async function AdminPage() {
 
       {/* Users table with delete */}
       <AdminUserTable users={users} />
+
+      {/* Contact-form messages */}
+      <div>
+        <h2 className="text-lg font-bold mb-3">
+          ✉️ Μηνύματα χρηστών
+          {unreadFeedback > 0 && (
+            <span className="ml-2 text-xs px-2 py-0.5 rounded-full bg-green-500/20 text-green-400 align-middle">
+              {unreadFeedback} νέα
+            </span>
+          )}
+        </h2>
+        <AdminFeedback items={feedback} />
+      </div>
     </div>
   );
 }

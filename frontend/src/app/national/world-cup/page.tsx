@@ -281,10 +281,10 @@ function Header() {
         </p>
       </div>
       <Link
-        href="/national"
+        href="/"
         className="shrink-0 text-sm text-gray-400 hover:text-white whitespace-nowrap mt-1"
       >
-        ← Internationals
+        ← Upcoming
       </Link>
     </div>
   );

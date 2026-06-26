@@ -82,11 +82,19 @@ class ChatResponse(BaseModel):
 
 # ── Context builder ────────────────────────────────────────────────────────────
 
+_DAY_NAMES = {
+    0: "Δευτέρα", 1: "Τρίτη", 2: "Τετάρτη", 3: "Πέμπτη",
+    4: "Παρασκευή", 5: "Σάββατο", 6: "Κυριακή",
+}
+
+
 def _build_match_context(db: Session) -> str:
     """
-    Return compact upcoming matches + predictions for the next 3 days.
-    Only matches with predictions included (no-prediction rows add noise, not value).
-    Cached in Redis 30 min to avoid rebuilding on every chat message.
+    Return compact upcoming matches + predictions for the next 3 days — covering
+    BOTH club leagues (Match/Prediction) AND national-team / tournament matches
+    (NationalPrediction). During the off-season or a World Cup the club tables are
+    empty, so without the national side the assistant wrongly says "no matches".
+    Only matches with predictions are included. Cached in Redis 30 min.
     """
     cached = cache_get("chat:context")
     if cached is not CACHE_MISS:
@@ -95,7 +103,8 @@ def _build_match_context(db: Session) -> str:
     today   = date.today()
     horizon = today + timedelta(days=3)  # 3 days — was 7, cuts context ~60%
 
-    rows = db.execute(
+    # ── Club matches ──────────────────────────────────────────────────────────
+    club_rows = db.execute(
         select(Match, Prediction)
         .join(Prediction, Prediction.match_id == Match.id)   # INNER — skip no-pred rows
         .where(Match.result.is_(None))
@@ -104,35 +113,62 @@ def _build_match_context(db: Session) -> str:
         .order_by(Match.match_date.asc(), Match.id.asc())
     ).all()
 
-    if not rows:
+    # ── National-team / tournament matches ────────────────────────────────────
+    from backend.app.models.national_prediction import NationalPrediction
+    nat_rows = db.execute(
+        select(NationalPrediction)
+        .where(NationalPrediction.actual_home_goals.is_(None))
+        .where(NationalPrediction.match_date >= today.isoformat())
+        .where(NationalPrediction.match_date <= horizon.isoformat())
+        .order_by(NationalPrediction.match_date.asc(),
+                  NationalPrediction.kickoff_utc.asc().nullslast())
+    ).scalars().all()
+
+    if not club_rows and not nat_rows:
         result = "Δεν υπάρχουν επερχόμενοι αγώνες με προβλέψεις τις επόμενες 3 ημέρες."
         cache_set("chat:context", result, _CONTEXT_TTL)
         return result
 
-    day_names = {
-        0: "Δευτέρα", 1: "Τρίτη", 2: "Τετάρτη", 3: "Πέμπτη",
-        4: "Παρασκευή", 5: "Σάββατο", 6: "Κυριακή",
-    }
+    lines: list[str] = []
 
-    lines: list[str] = ["## Αγώνες (επόμενες 3 ημέρες)\n"]
-    current_date = None
+    if club_rows:
+        lines.append("## Αγώνες Συλλόγων (επόμενες 3 ημέρες)\n")
+        current_date = None
+        for match, pred in club_rows:
+            if match.match_date != current_date:
+                current_date = match.match_date
+                lines.append(f"\n### {_DAY_NAMES[current_date.weekday()]} {current_date.strftime('%d/%m')}")
+            hw   = round(pred.home_win_prob * 100)
+            d    = round(pred.draw_prob * 100)
+            aw   = round(pred.away_win_prob * 100)
+            ov   = round(pred.over_2_5_prob * 100)
+            btts = round(pred.btts_prob * 100) if pred.btts_prob is not None else "?"
+            lines.append(
+                f"[{match.league}] {match.home_team}-{match.away_team} "
+                f"1:{hw} X:{d} 2:{aw} O:{ov} GG:{btts} conf:{pred.confidence} id:{match.id}"
+            )
 
-    for match, pred in rows:
-        if match.match_date != current_date:
-            current_date = match.match_date
-            day = day_names[current_date.weekday()]
-            lines.append(f"\n### {day} {current_date.strftime('%d/%m')}")
-
-        hw   = round(pred.home_win_prob * 100)
-        d    = round(pred.draw_prob * 100)
-        aw   = round(pred.away_win_prob * 100)
-        ov   = round(pred.over_2_5_prob * 100)
-        btts = round(pred.btts_prob * 100) if pred.btts_prob is not None else "?"
-        # Compact format — includes BTTS so Groq doesn't hallucinate it
-        lines.append(
-            f"[{match.league}] {match.home_team}-{match.away_team} "
-            f"1:{hw} X:{d} 2:{aw} O:{ov} GG:{btts} conf:{pred.confidence} id:{match.id}"
-        )
+    if nat_rows:
+        lines.append("\n## Εθνικές Ομάδες / Διοργανώσεις (επόμενες 3 ημέρες)\n")
+        current_date = None
+        for p in nat_rows:
+            if p.match_date != current_date:
+                current_date = p.match_date
+                try:
+                    dt = date.fromisoformat(p.match_date)
+                    hdr = f"{_DAY_NAMES[dt.weekday()]} {dt.strftime('%d/%m')}"
+                except Exception:
+                    hdr = p.match_date
+                lines.append(f"\n### {hdr}")
+            hw   = round(p.home_win_prob * 100)
+            d    = round(p.draw_prob * 100)
+            aw   = round(p.away_win_prob * 100)
+            ov   = round(p.over_2_5_prob * 100)
+            btts = round(p.btts_prob * 100) if p.btts_prob is not None else "?"
+            lines.append(
+                f"[{p.tournament}] {p.home_team}-{p.away_team} "
+                f"1:{hw} X:{d} 2:{aw} O:{ov} GG:{btts} conf:{p.confidence} id:nat{p.id}"
+            )
 
     result = "\n".join(lines)
     cache_set("chat:context", result, _CONTEXT_TTL)

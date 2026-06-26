@@ -126,5 +126,10 @@ export const authOptions: NextAuthOptions = {
     error:  "/login",
   },
 
-  session: { strategy: "jwt" },
+  // 12-hour sessions: the JWT (and its cookie) expire after 12h, so users
+  // re-authenticate roughly daily. Keeps last_login_at / login_count meaningful
+  // and shrinks the window a stolen token is valid. last_seen_at (bumped on
+  // activity, backend) covers precise "last active" within a session.
+  session: { strategy: "jwt", maxAge: 12 * 60 * 60 },
+  jwt: { maxAge: 12 * 60 * 60 },
 };

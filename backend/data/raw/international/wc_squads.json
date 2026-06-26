@@ -29,7 +29,7 @@
       "A. Hadj-Moussa",
       "R. Mahrez"
     ],
-    "fetched_at": "2026-06-12T17:26:58.592076+00:00"
+    "fetched_at": "2026-06-20T03:03:27.429986+00:00"
   },
   "Argentina": {
     "team_id": 26,
@@ -37,7 +37,6 @@
       "E. Martínez",
       "J. Musso",
       "G. Rulli",
-      "L. Balerdi",
       "Lisandro Martínez",
       "F. Medina",
       "N. Molina",
@@ -59,9 +58,10 @@
       "J. López",
       "Lautaro Martínez",
       "L. Messi",
-      "G. Simeone"
+      "G. Simeone",
+      "M. Senesi"
     ],
-    "fetched_at": "2026-06-12T17:26:59.003593+00:00"
+    "fetched_at": "2026-06-20T03:03:27.855258+00:00"
   },
   "Australia": {
     "team_id": 20,
@@ -93,7 +93,7 @@
       "M. Touré",
       "N. Velupillay"
     ],
-    "fetched_at": "2026-06-12T17:26:59.441738+00:00"
+    "fetched_at": "2026-06-20T03:03:28.280479+00:00"
   },
   "Austria": {
     "team_id": 775,
@@ -109,7 +109,7 @@
       "P. Mwene",
       "S. Posch",
       "M. Svoboda",
-      "C. Baumgartner",
+      "D. Ljubičić",
       "C. Chukwuemeka",
       "F. Grillitsch",
       "K. Laimer",
@@ -125,7 +125,7 @@
       "M. Gregoritsch",
       "S. Kalajdzic"
     ],
-    "fetched_at": "2026-06-12T17:26:59.857591+00:00"
+    "fetched_at": "2026-06-20T03:03:28.705246+00:00"
   },
   "Belgium": {
     "team_id": 1,
@@ -157,7 +157,7 @@
       "C. De Ketelaere",
       "L. Trossard"
     ],
-    "fetched_at": "2026-06-12T17:27:00.280778+00:00"
+    "fetched_at": "2026-06-20T03:03:29.120369+00:00"
   },
   "Brazil": {
     "team_id": 6,
@@ -172,7 +172,7 @@
       "Léo Pereira",
       "Marquinhos",
       "Douglas Santos",
-      "Wesley",
+      "Éderson Silva",
       "Danilo",
       "Bruno Guimarães",
       "Casemiro",
@@ -189,7 +189,7 @@
       "Thiago",
       "Vinícius Júnior"
     ],
-    "fetched_at": "2026-06-12T17:27:01.540130+00:00"
+    "fetched_at": "2026-06-20T03:03:29.952497+00:00"
   },
   "Canada": {
     "team_id": 5529,
@@ -213,7 +213,7 @@
       "I. Koné",
       "J. Osorio",
       "N. Saliba",
-      "M. Flores",
+      "J. Nelson",
       "T. Buchanan",
       "J. David",
       "P. David",
@@ -221,7 +221,7 @@
       "A. Ahmed",
       "T. Oluwaseyi"
     ],
-    "fetched_at": "2026-06-12T17:27:01.961470+00:00"
+    "fetched_at": "2026-06-20T03:03:30.376057+00:00"
   },
   "Cape Verde": {
     "team_id": 1533,
@@ -253,7 +253,7 @@
       "Gilson Benchimol",
       "D. Livramento"
     ],
-    "fetched_at": "2026-06-12T17:27:02.384518+00:00"
+    "fetched_at": "2026-06-20T03:03:30.798220+00:00"
   },
   "Colombia": {
     "team_id": 8,
@@ -285,7 +285,7 @@
       "A. Gómez",
       "L. Suárez"
     ],
-    "fetched_at": "2026-06-12T17:27:02.805864+00:00"
+    "fetched_at": "2026-06-20T03:03:31.219582+00:00"
   },
   "Croatia": {
     "team_id": 3,
@@ -306,7 +306,7 @@
       "M. Kovacic",
       "L. Modric",
       "N. Moro",
-      "M. Pasalic",
+      "Mario Pasalic",
       "L. Sucic",
       "P. Sucic",
       "N. Vlasic",
@@ -314,10 +314,10 @@
       "A. Kramaric",
       "I. Matanovic",
       "P. Musa",
-      "M. Pasalic",
+      "Marco Pasalic",
       "I. Perisic"
     ],
-    "fetched_at": "2026-06-12T17:27:03.218305+00:00"
+    "fetched_at": "2026-06-20T03:03:31.629315+00:00"
   },
   "Curaçao": {
     "team_id": 5530,
@@ -349,7 +349,7 @@
       "J. Locadia",
       "J. Margaritha"
     ],
-    "fetched_at": "2026-06-12T17:27:03.629864+00:00"
+    "fetched_at": "2026-06-20T03:03:32.054151+00:00"
   },
   "Czech Republic": {
     "team_id": 770,
@@ -381,7 +381,7 @@
       "P. Schick",
       "D. Visinský"
     ],
-    "fetched_at": "2026-06-12T17:27:04.045275+00:00"
+    "fetched_at": "2026-06-20T03:03:32.531191+00:00"
   },
   "DR Congo": {
     "team_id": 1508,
@@ -413,7 +413,7 @@
       "F. Mayele",
       "Y. Wissa"
     ],
-    "fetched_at": "2026-06-12T17:27:04.464280+00:00"
+    "fetched_at": "2026-06-20T03:03:32.954104+00:00"
   },
   "Ecuador": {
     "team_id": 2382,
@@ -445,7 +445,7 @@
       "G. Plata",
       "E. Valencia"
     ],
-    "fetched_at": "2026-06-12T17:27:04.885248+00:00"
+    "fetched_at": "2026-06-20T03:03:33.371422+00:00"
   },
   "Egypt": {
     "team_id": 32,
@@ -477,7 +477,7 @@
       "Omar Marmoush",
       "Mohamed Salah"
     ],
-    "fetched_at": "2026-06-12T17:27:05.305084+00:00"
+    "fetched_at": "2026-06-20T03:03:33.789546+00:00"
   },
   "England": {
     "team_id": 10,
@@ -489,7 +489,7 @@
       "M. Guéhi",
       "R. James",
       "E. Konsa",
-      "T. Livramento",
+      "T. Chalobah",
       "N. Oreilly",
       "J. Quansah",
       "D. Spence",
@@ -509,7 +509,7 @@
       "I. Toney",
       "O. Watkins"
     ],
-    "fetched_at": "2026-06-12T17:27:05.724408+00:00"
+    "fetched_at": "2026-06-20T03:03:34.198314+00:00"
   },
   "France": {
     "team_id": 2,
@@ -541,7 +541,7 @@
       "M. Thuram",
       "M. Olise"
     ],
-    "fetched_at": "2026-06-12T17:27:06.131927+00:00"
+    "fetched_at": "2026-06-20T03:03:34.619590+00:00"
   },
   "Germany": {
     "team_id": 25,
@@ -560,7 +560,7 @@
       "N. Amiri",
       "L. Goretzka",
       "P. Groß",
-      "L. Karl",
+      "A. Ouédraogo",
       "J. Leweling",
       "J. Musiala",
       "F. Nmecha",
@@ -573,7 +573,7 @@
       "D. Undav",
       "N. Woltemade"
     ],
-    "fetched_at": "2026-06-12T17:27:06.555193+00:00"
+    "fetched_at": "2026-06-20T03:03:35.043051+00:00"
   },
   "Ghana": {
     "team_id": 1504,
@@ -605,7 +605,7 @@
       "E. Nuamah",
       "K. Sulemana"
     ],
-    "fetched_at": "2026-06-12T17:27:06.970393+00:00"
+    "fetched_at": "2026-06-20T03:03:35.481986+00:00"
   },
   "Haiti": {
     "team_id": 2386,
@@ -623,7 +623,7 @@
       "W. Paugain",
       "J. Bellegarde",
       "D. Jean-Jacques",
-      "L. Pierre",
+      "G. Métusala",
       "W. Pierre",
       "C. F. Sainte",
       "D. Simon",
@@ -637,7 +637,7 @@
       "F. Pierrot",
       "R. Providence"
     ],
-    "fetched_at": "2026-06-12T17:27:07.395686+00:00"
+    "fetched_at": "2026-06-20T03:03:35.902061+00:00"
   },
   "Iran": {
     "team_id": 22,
@@ -669,7 +669,7 @@
       "D. Eckert Ayensa",
       "M. Taremi"
     ],
-    "fetched_at": "2026-06-12T17:27:07.818154+00:00"
+    "fetched_at": "2026-06-20T03:03:36.325033+00:00"
   },
   "Iraq": {
     "team_id": 1567,
@@ -683,7 +683,7 @@
       "Mustafa Saadoun",
       "Rebin Solaka",
       "Zayed Tahseen",
-      "A. Yahya",
+      "Ahmed Hasan Al Reeshawee",
       "Munaf Younus",
       "Akam Rahman",
       "Amir Al Ammari",
@@ -701,7 +701,7 @@
       "A. Qasem",
       "A. Y. Hashim"
     ],
-    "fetched_at": "2026-06-12T17:27:08.237282+00:00"
+    "fetched_at": "2026-06-20T03:03:36.747875+00:00"
   },
   "Ivory Coast": {
     "team_id": 1501,
@@ -733,7 +733,7 @@
       "N. Pépé",
       "E. Wahi"
     ],
-    "fetched_at": "2026-06-12T17:27:08.664029+00:00"
+    "fetched_at": "2026-06-20T03:03:37.161744+00:00"
   },
   "Japan": {
     "team_id": 12,
@@ -751,7 +751,6 @@
       "T. Tomiyasu",
       "T. Watanabe",
       "R. Doan",
-      "W. Endo",
       "D. Kamada",
       "K. Sano",
       "A. Tanaka",
@@ -763,9 +762,10 @@
       "K. Goto",
       "Koki Ogawa",
       "K. Shiogai",
-      "A. Ueda"
+      "A. Ueda",
+      "S. Machino"
     ],
-    "fetched_at": "2026-06-12T17:27:09.071687+00:00"
+    "fetched_at": "2026-06-20T03:03:37.577598+00:00"
   },
   "Jordan": {
     "team_id": 1548,
@@ -794,10 +794,10 @@
       "O. Al Fakhouri",
       "A. Azaizeh",
       "Ali Olwan",
-      "Ibrahim Sabra",
+      "M. Abu Ghoush",
       "Mousa Tamari"
     ],
-    "fetched_at": "2026-06-12T17:27:09.492183+00:00"
+    "fetched_at": "2026-06-20T03:03:37.993086+00:00"
   },
   "Mexico": {
     "team_id": 16,
@@ -829,7 +829,7 @@
       "J. Quiñones",
       "A. Vega"
     ],
-    "fetched_at": "2026-06-12T17:27:09.910505+00:00"
+    "fetched_at": "2026-06-20T03:03:38.410391+00:00"
   },
   "Morocco": {
     "team_id": 31,
@@ -837,7 +837,7 @@
       "Y. Bounou",
       "M. Mohamedi",
       "A. Tagnaouti",
-      "N. Aguerd",
+      "M. Saâdane",
       "I. Diop",
       "Z. El Ouahdi",
       "A. Hakimi",
@@ -858,10 +858,10 @@
       "Brahim Díaz",
       "A. Amaimouni",
       "A. El Kaabi",
-      "A. Ezzalzouli",
+      "A. Sbaï",
       "S. Rahimi"
     ],
-    "fetched_at": "2026-06-12T17:27:10.326552+00:00"
+    "fetched_at": "2026-06-20T03:03:38.825925+00:00"
   },
   "Netherlands": {
     "team_id": 1118,
@@ -872,7 +872,7 @@
       "N. Aké",
       "D. Dumfries",
       "J. Hato",
-      "J. Timber",
+      "L. Geertruida",
       "V. van Dijk",
       "J. van Hecke",
       "M. van de Ven",
@@ -893,7 +893,7 @@
       "C. Summerville",
       "W. Weghorst"
     ],
-    "fetched_at": "2026-06-12T17:27:10.747782+00:00"
+    "fetched_at": "2026-06-20T03:03:39.239300+00:00"
   },
   "New Zealand": {
     "team_id": 4673,
@@ -912,7 +912,7 @@
       "F. Surman",
       "L. Bayliss",
       "J. Bell",
-      "M. Garbett",
+      "L. Rogerson",
       "C. McCowatt",
       "A. Rufer",
       "S. Singh",
@@ -925,7 +925,7 @@
       "B. Waine",
       "C. Wood"
     ],
-    "fetched_at": "2026-06-12T17:27:11.168317+00:00"
+    "fetched_at": "2026-06-20T03:03:39.656173+00:00"
   },
   "Norway": {
     "team_id": 1090,
@@ -957,7 +957,7 @@
       "A. Sørloth",
       "J. Ryerson"
     ],
-    "fetched_at": "2026-06-12T17:27:11.586621+00:00"
+    "fetched_at": "2026-06-20T03:03:40.075406+00:00"
   },
   "Panama": {
     "team_id": 11,
@@ -989,7 +989,7 @@
       "T. Rodríguez",
       "C. Waterman"
     ],
-    "fetched_at": "2026-06-12T17:27:12.005036+00:00"
+    "fetched_at": "2026-06-20T03:03:40.490294+00:00"
   },
   "Paraguay": {
     "team_id": 2380,
@@ -1021,7 +1021,7 @@
       "I. Pitta",
       "A. Sanabria"
     ],
-    "fetched_at": "2026-06-12T17:27:12.418675+00:00"
+    "fetched_at": "2026-06-20T03:03:40.913092+00:00"
   },
   "Portugal": {
     "team_id": 27,
@@ -1053,7 +1053,7 @@
       "Cristiano Ronaldo",
       "Trincão"
     ],
-    "fetched_at": "2026-06-12T17:27:12.831366+00:00"
+    "fetched_at": "2026-06-20T03:03:41.330145+00:00"
   },
   "Qatar": {
     "team_id": 1569,
@@ -1085,7 +1085,7 @@
       "Tahsin Jamshid",
       "Mohammed Muntari"
     ],
-    "fetched_at": "2026-06-12T17:27:13.251549+00:00"
+    "fetched_at": "2026-06-20T03:03:41.753084+00:00"
   },
   "Saudi Arabia": {
     "team_id": 23,
@@ -1117,7 +1117,7 @@
       "Saleh Al Shehri",
       "Salem Al Dawsari"
     ],
-    "fetched_at": "2026-06-12T17:27:13.669918+00:00"
+    "fetched_at": "2026-06-20T03:03:42.166506+00:00"
   },
   "Scotland": {
     "team_id": 1108,
@@ -1149,7 +1149,7 @@
       "R. Stewart",
       "Findlay Curtis"
     ],
-    "fetched_at": "2026-06-12T17:27:14.089649+00:00"
+    "fetched_at": "2026-06-20T03:03:42.591886+00:00"
   },
   "Senegal": {
     "team_id": 13,
@@ -1181,7 +1181,7 @@
       "I. Ndiaye",
       "I. Sarr"
     ],
-    "fetched_at": "2026-06-12T17:27:14.502551+00:00"
+    "fetched_at": "2026-06-20T03:03:43.006925+00:00"
   },
   "South Africa": {
     "team_id": 1531,
@@ -1213,7 +1213,7 @@
       "I. Rayners",
       "K. Sebelebele"
     ],
-    "fetched_at": "2026-06-12T17:27:14.915611+00:00"
+    "fetched_at": "2026-06-20T03:03:43.420139+00:00"
   },
   "South Korea": {
     "team_id": 17,
@@ -1245,7 +1245,7 @@
       "Oh Hyeon-Gyu",
       "Son Heung-Min"
     ],
-    "fetched_at": "2026-06-12T17:27:15.334621+00:00"
+    "fetched_at": "2026-06-20T03:03:43.841906+00:00"
   },
   "Spain": {
     "team_id": 9,
@@ -1277,7 +1277,7 @@
       "Ferran Torres",
       "Nico Williams"
     ],
-    "fetched_at": "2026-06-12T17:27:15.755337+00:00"
+    "fetched_at": "2026-06-20T03:03:44.254161+00:00"
   },
   "Sweden": {
     "team_id": 5,
@@ -1309,7 +1309,7 @@
       "A. Isak",
       "G. Nilsson"
     ],
-    "fetched_at": "2026-06-12T17:27:16.170109+00:00"
+    "fetched_at": "2026-06-20T03:03:44.669573+00:00"
   },
   "Switzerland": {
     "team_id": 15,
@@ -1341,7 +1341,7 @@
       "N. Okafor",
       "D. Ndoye"
     ],
-    "fetched_at": "2026-06-12T17:27:16.593170+00:00"
+    "fetched_at": "2026-06-20T03:03:45.087472+00:00"
   },
   "Tunisia": {
     "team_id": 28,
@@ -1373,7 +1373,7 @@
       "H. Mastouri",
       "E. Saad"
     ],
-    "fetched_at": "2026-06-12T17:27:17.015241+00:00"
+    "fetched_at": "2026-06-20T03:03:45.512216+00:00"
   },
   "Turkey": {
     "team_id": 777,
@@ -1405,7 +1405,7 @@
       "K. Yildiz",
       "B. Yilmaz"
     ],
-    "fetched_at": "2026-06-12T17:27:17.438755+00:00"
+    "fetched_at": "2026-06-20T03:03:45.935388+00:00"
   },
   "United States": {
     "team_id": 2384,
@@ -1437,7 +1437,7 @@
       "C. Pulisic",
       "H. Wright"
     ],
-    "fetched_at": "2026-06-12T17:27:17.858713+00:00"
+    "fetched_at": "2026-06-20T03:03:46.356411+00:00"
   },
   "Uruguay": {
     "team_id": 7,
@@ -1469,7 +1469,7 @@
       "B. Rodríguez",
       "F. Viñas"
     ],
-    "fetched_at": "2026-06-12T17:27:18.274343+00:00"
+    "fetched_at": "2026-06-20T03:03:46.779185+00:00"
   },
   "Uzbekistan": {
     "team_id": 1568,
@@ -1487,7 +1487,7 @@
       "J. Urozov",
       "A. Abdullaev",
       "A. Ulmasaliev",
-      "J. Masharipov",
+      "Ruslanbek Jiyanov",
       "A. Ganiyev",
       "J. Iskanderov",
       "O. Hamrobekov",
@@ -1501,7 +1501,7 @@
       "I. Sergeev",
       "E. Shomurodov"
     ],
-    "fetched_at": "2026-06-12T17:27:18.693048+00:00"
+    "fetched_at": "2026-06-20T03:03:47.194197+00:00"
   },
   "Bosnia and Herzegovina": {
     "team_id": 1113,
@@ -1509,7 +1509,7 @@
       "M. Jurkas",
       "N. Vasilj",
       "M. Zlomislic",
-      "N. Celik",
+      "A. Malic",
       "A. Dedic",
       "D. Hadzikadunic",
       "N. Katic",
@@ -1533,6 +1533,6 @@
       "J. Lukic",
       "H. Tabakovic"
     ],
-    "fetched_at": "2026-06-12T17:27:01.117788+00:00"
+    "fetched_at": "2026-06-20T03:03:29.533170+00:00"
   }
 }

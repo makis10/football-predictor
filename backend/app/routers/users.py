@@ -16,7 +16,9 @@ from sqlalchemy.orm import Session
 
 from backend.app.database import get_db
 from backend.app.internal_auth import require_internal_secret
+from backend.app.models.feedback import Feedback
 from backend.app.models.user import TrackedMatch, User, UserBet
+from backend.app.rate_limit import rate_limit_check
 
 router = APIRouter(
     prefix="/users",
@@ -41,6 +43,32 @@ def get_current_user(
     if not user:
         raise HTTPException(status_code=404, detail="User not found")
     return user
+
+
+# ── Contact / feedback ──────────────────────────────────────────────────────────
+
+class ContactRequest(BaseModel):
+    message: str
+
+
+@router.post("/contact", status_code=status.HTTP_201_CREATED)
+def submit_contact(
+    body: ContactRequest,
+    user: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
+):
+    """A logged-in user sends an idea/suggestion → stored for the admin inbox."""
+    msg = (body.message or "").strip()
+    if not msg:
+        raise HTTPException(status_code=400, detail="Το μήνυμα είναι κενό.")
+    if len(msg) > 2000:
+        raise HTTPException(status_code=400, detail="Το μήνυμα είναι πολύ μεγάλο (μέγιστο 2000 χαρακτήρες).")
+    # Light anti-spam: 5 messages / 5 min per user.
+    if not rate_limit_check(f"contact:{user.id}", 5, 300):
+        raise HTTPException(status_code=429, detail="Πολλά μηνύματα — δοκίμασε ξανά σε λίγο.")
+    db.add(Feedback(user_id=user.id, user_email=user.email, user_name=user.name, message=msg))
+    db.commit()
+    return {"ok": True}
 
 
 # ── Schemas ───────────────────────────────────────────────────────────────────

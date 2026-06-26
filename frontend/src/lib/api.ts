@@ -878,10 +878,25 @@ export async function getUpcomingNationalMatches(
   from: string,
   to: string,
   limit = 200,
+  minOdds?: number,
 ): Promise<Match[]> {
   const { predictions } = await getNationalPredictions({ from, to, limit });
   return predictions
     .filter((np) => np.actual_result == null)   // upcoming only
+    .filter((np) => {
+      if (minOdds == null) return true;
+      // Same semantics as the club min-odds filter: the bookmaker odds of the
+      // model's PICKED (argmax) outcome must be ≥ minOdds. Matches with no
+      // bookmaker odds can't satisfy a threshold → excluded.
+      const cands: { prob: number; odds: number | null }[] = [
+        { prob: np.home_win_prob, odds: np.bm_home_odds },
+        { prob: np.draw_prob,     odds: np.bm_draw_odds },
+        { prob: np.away_win_prob, odds: np.bm_away_odds },
+      ];
+      cands.sort((a, b) => b.prob - a.prob);
+      const pickOdds = cands[0].odds;
+      return pickOdds != null && pickOdds >= minOdds;
+    })
     .map(nationalToMatch);
 }
 

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import "./globals.css";
 import ChatBox from "@/components/ChatBox";
+import ContactButton from "@/components/ContactButton";
 import Providers from "@/components/Providers";
 import UserNav from "@/components/UserNav";
 
@@ -37,12 +38,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 >
                   Recent Results
                 </Link>
-                <Link
-                  href="/national"
-                  className="px-3 py-1.5 rounded-lg text-sm text-gray-400 hover:text-white hover:bg-pitch-800 transition-colors"
-                >
-                  🌍 Internationals
-                </Link>
+                {/* "Internationals" nav removed — upcoming national fixtures are
+                    merged into Upcoming (+ its International filter). /national
+                    route + detail pages stay (match cards link to them). */}
                 <Link
                   href="/national/world-cup"
                   className="px-3 py-1.5 rounded-lg text-sm text-gray-400 hover:text-white hover:bg-pitch-800 transition-colors"
@@ -77,17 +75,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 ML predictions for entertainment only · ~52% result / ~58% O/U accuracy ·{" "}
                 <span className="text-gray-700">Not financial advice</span>
               </p>
-              <a
-                href="https://www.paypal.com/donate/?hosted_button_id=RLTHVXFNMXAV4"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="shrink-0 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#0070ba] hover:bg-[#005ea6] text-white text-xs font-medium transition-colors"
-              >
-                <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944 3.217a.77.77 0 0 1 .761-.645h6.964c2.756 0 4.706.825 5.797 2.452.504.752.82 1.582.94 2.465.127.928.05 2.03-.232 3.27-.017.073-.033.147-.051.22-.712 3.174-3.117 4.862-7.047 4.862H9.62a.77.77 0 0 0-.76.645l-.967 5.432a.641.641 0 0 1-.633.539h-.184zm9.348-14.52c-.033.21-.072.424-.118.642-.994 4.42-4.394 5.772-8.736 5.772H5.38a.641.641 0 0 0-.633.54L3.6 21.337h3.476l.746-4.183a.77.77 0 0 1 .76-.645h1.457c3.933 0 6.338-1.688 7.047-4.862.289-1.285.229-2.352-.24-3.154a3.44 3.44 0 0 0-.422-.676z"/>
-                </svg>
-                ☕ Buy me a coffee
-              </a>
+              <div className="flex items-center gap-2 shrink-0">
+                <ContactButton />
+                <a
+                  href="https://www.paypal.com/donate/?hosted_button_id=RLTHVXFNMXAV4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="shrink-0 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#0070ba] hover:bg-[#005ea6] text-white text-xs font-medium transition-colors"
+                >
+                  <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944 3.217a.77.77 0 0 1 .761-.645h6.964c2.756 0 4.706.825 5.797 2.452.504.752.82 1.582.94 2.465.127.928.05 2.03-.232 3.27-.017.073-.033.147-.051.22-.712 3.174-3.117 4.862-7.047 4.862H9.62a.77.77 0 0 0-.76.645l-.967 5.432a.641.641 0 0 1-.633.539h-.184zm9.348-14.52c-.033.21-.072.424-.118.642-.994 4.42-4.394 5.772-8.736 5.772H5.38a.641.641 0 0 0-.633.54L3.6 21.337h3.476l.746-4.183a.77.77 0 0 1 .76-.645h1.457c3.933 0 6.338-1.688 7.047-4.862.289-1.285.229-2.352-.24-3.154a3.44 3.44 0 0 0-.422-.676z"/>
+                  </svg>
+                  ☕ Buy me a coffee
+                </a>
+              </div>
             </div>
           </footer>
         </Providers>

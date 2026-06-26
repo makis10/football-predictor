@@ -3,6 +3,7 @@ import time
 import logging
 
 from fastapi import FastAPI, Request
+from fastapi.concurrency import run_in_threadpool
 from fastapi.middleware.cors import CORSMiddleware
 
 from backend.app.routers import admin, admin_users, auth, chat, matches, national, predictions, stats, users
@@ -55,6 +56,33 @@ app.add_middleware(
 # Skips noisy health-check + session polling endpoints.
 _SKIP_PATHS = {"/health", "/api/auth/session"}
 
+
+def _db_touch_last_seen(uid: int) -> None:
+    from sqlalchemy import text
+    from backend.app.database import SessionLocal
+    db = SessionLocal()
+    try:
+        db.execute(text("UPDATE users SET last_seen_at = now() WHERE id = :id"), {"id": uid})
+        db.commit()
+    except Exception:
+        db.rollback()
+    finally:
+        db.close()
+
+
+async def _touch_last_seen(uid: int) -> None:
+    """Update users.last_seen_at, throttled to ≤1 DB write / 5 min / user via a
+    Redis flag. Never blocks or fails the request — best-effort activity signal."""
+    from backend.app.cache import CACHE_MISS, cache_get, cache_set
+    try:
+        if cache_get(f"seen:{uid}") is not CACHE_MISS:
+            return
+        cache_set(f"seen:{uid}", 1, 300)
+    except Exception:
+        return  # cache unavailable → skip rather than write on every request
+    await run_in_threadpool(_db_touch_last_seen, uid)
+
+
 @app.middleware("http")
 async def log_requests(request: Request, call_next):
     path = request.url.path
@@ -72,6 +100,13 @@ async def log_requests(request: Request, call_next):
     ms = round((time.monotonic() - t0) * 1000)
 
     logger.info("%s %s [%s] → %d (%dms)", request.method, path, user, response.status_code, ms)
+
+    # Best-effort "last active" tracking (throttled). Authenticated requests only.
+    if user_id.isdigit():
+        try:
+            await _touch_last_seen(int(user_id))
+        except Exception:
+            pass
     return response
 
 app.include_router(matches.router)

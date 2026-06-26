@@ -13,6 +13,7 @@ interface UserStats {
   is_admin:       boolean;
   created_at:     string;
   last_login_at:  string | null;
+  last_seen_at:   string | null;
   login_count:    number;
   tracked_count:  number;
   bets_count:     number;
@@ -122,6 +123,7 @@ export default function AdminUserTable({ users }: { users: UserStats[] }) {
                 <th className="px-4 py-3 text-left">Provider</th>
                 <th className="px-4 py-3 text-left">Joined</th>
                 <th className="px-4 py-3 text-left">Last Login</th>
+                <th className="px-4 py-3 text-left">Last Seen</th>
                 <th className="px-4 py-3 text-right">Logins</th>
                 <th className="px-4 py-3 text-right">Tracked</th>
                 <th className="px-4 py-3 text-right">Bets</th>
@@ -164,7 +166,7 @@ export default function AdminUserTable({ users }: { users: UserStats[] }) {
                     <td className="px-4 py-3">
                       <div className="flex items-center gap-2">
                         <div className="w-7 h-7 rounded-full bg-green-800 flex items-center justify-center text-xs font-bold text-white shrink-0">
-                          {(u.name ?? u.email)[0].toUpperCase()}
+                          {(u.name ?? u.email ?? "?").charAt(0).toUpperCase() || "?"}
                         </div>
                         <div className="min-w-0">
                           <p className="font-medium text-white truncate max-w-[160px]">
@@ -194,6 +196,14 @@ export default function AdminUserTable({ users }: { users: UserStats[] }) {
                       {u.last_login_at
                         ? new Date(u.last_login_at).toLocaleDateString("el-GR", {
                             day: "numeric", month: "short", year: "numeric",
+                            timeZone: "Europe/Athens",
+                          })
+                        : <span className="text-gray-600">—</span>}
+                    </td>
+                    <td className="px-4 py-3 text-gray-400 text-xs">
+                      {u.last_seen_at
+                        ? new Date(u.last_seen_at).toLocaleString("el-GR", {
+                            day: "numeric", month: "short", hour: "2-digit", minute: "2-digit",
                             timeZone: "Europe/Athens",
                           })
                         : <span className="text-gray-600">—</span>}

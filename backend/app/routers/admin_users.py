@@ -16,6 +16,7 @@ from backend.app.database import get_db
 from backend.app.internal_auth import require_internal_secret
 from backend.app.models.user import User
 from backend.app.models.training_run import TrainingRun
+from backend.app.models.feedback import Feedback
 
 router = APIRouter(
     prefix="/admin",
@@ -52,6 +53,7 @@ class UserStatsOut(BaseModel):
     is_admin:        bool
     created_at:      str
     last_login_at:   Optional[str]
+    last_seen_at:    Optional[str]
     login_count:     int
     tracked_count:   int
     bets_count:      int
@@ -74,6 +76,7 @@ def list_users(
             u.is_admin,
             u.created_at::text                                          AS created_at,
             u.last_login_at::text                                       AS last_login_at,
+            u.last_seen_at::text                                        AS last_seen_at,
             COALESCE(u.login_count, 0)                                  AS login_count,
             COUNT(DISTINCT tm.id)                                       AS tracked_count,
             COUNT(DISTINCT ub.id)                                       AS bets_count,
@@ -166,3 +169,53 @@ def list_training_runs(
         .all()
     )
     return runs
+
+
+# ── Feedback inbox (Contact form) ───────────────────────────────────────────────
+
+class FeedbackOut(BaseModel):
+    id:         int
+    user_id:    Optional[int]
+    user_email: Optional[str]
+    user_name:  Optional[str]
+    message:    str
+    is_read:    bool
+    created_at: str
+
+    @classmethod
+    def from_row(cls, f: Feedback) -> "FeedbackOut":
+        return cls(
+            id=f.id, user_id=f.user_id, user_email=f.user_email, user_name=f.user_name,
+            message=f.message, is_read=f.is_read,
+            created_at=f.created_at.isoformat() if f.created_at else "",
+        )
+
+
+@router.get("/feedback", response_model=List[FeedbackOut])
+def list_feedback(
+    _admin: User = Depends(_require_admin),
+    db: Session = Depends(get_db),
+    limit: int = 200,
+):
+    """Contact-form messages, newest first (unread on top)."""
+    rows = (
+        db.query(Feedback)
+        .order_by(Feedback.is_read.asc(), Feedback.created_at.desc())
+        .limit(limit)
+        .all()
+    )
+    return [FeedbackOut.from_row(f) for f in rows]
+
+
+@router.post("/feedback/{feedback_id}/read")
+def mark_feedback_read(
+    feedback_id: int,
+    _admin: User = Depends(_require_admin),
+    db: Session = Depends(get_db),
+):
+    fb = db.get(Feedback, feedback_id)
+    if not fb:
+        raise HTTPException(status_code=404, detail="Not found")
+    fb.is_read = True
+    db.commit()
+    return {"ok": True}

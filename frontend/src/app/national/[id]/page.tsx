@@ -1,7 +1,7 @@
 export const dynamic = "force-dynamic";
 
-import Link from "next/link";
 import { notFound } from "next/navigation";
+import BackLink from "@/components/BackLink";
 import {
   getNationalPrediction,
   getPlayerProps,
@@ -66,13 +66,8 @@ export default async function NationalMatchDetailPage({ params }: Props) {
 
   return (
     <div className="max-w-2xl mx-auto space-y-6">
-      {/* Back */}
-      <Link
-        href="/national"
-        className="inline-flex items-center gap-1.5 text-sm text-gray-500 hover:text-gray-300 transition-colors"
-      >
-        ← Back to International
-      </Link>
+      {/* Back — returns to wherever the user came from (history), not a fixed route */}
+      <BackLink fallback="/" label="← Back" />
 
       {/* Match header card */}
       <div className="card p-6 space-y-4">

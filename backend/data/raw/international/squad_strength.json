@@ -1,9 +1,9 @@
 {
   "Ghana": {
     "strength": 0.8594,
-    "n_rated": 26,
+    "n_rated": 25,
     "n_squad": 26,
-    "coverage": 1.0,
+    "coverage": 0.96,
     "top_leagues": [
       "Ligue 1 (France)",
       "La Liga (Spain)",
@@ -14,9 +14,9 @@
   },
   "Panama": {
     "strength": 0.5944,
-    "n_rated": 23,
+    "n_rated": 22,
     "n_squad": 26,
-    "coverage": 0.88,
+    "coverage": 0.85,
     "top_leagues": [
       "Liga MX (Mexico)",
       "Major League Soccer (USA)",
@@ -260,14 +260,15 @@
     "low_confidence": false
   },
   "England": {
-    "strength": 0.9944,
-    "n_rated": 16,
+    "strength": 1.0,
+    "n_rated": 26,
     "n_squad": 26,
-    "coverage": 0.62,
+    "coverage": 1.0,
     "top_leagues": [
       "Premier League (England)",
       "Bundesliga (Germany)",
-      "La Liga (Spain)"
+      "La Liga (Spain)",
+      "Pro League (Saudi-Arabia)"
     ],
     "low_confidence": false
   },
@@ -299,9 +300,9 @@
   },
   "Qatar": {
     "strength": 0.5063,
-    "n_rated": 23,
+    "n_rated": 25,
     "n_squad": 26,
-    "coverage": 0.88,
+    "coverage": 0.96,
     "top_leagues": [
       "Stars League (Qatar)",
       "Segunda División (Spain)"
@@ -398,14 +399,17 @@
     "low_confidence": false
   },
   "Tunisia": {
-    "strength": 0.5828,
-    "n_rated": 1,
+    "strength": 0.7427,
+    "n_rated": 18,
     "n_squad": 26,
-    "coverage": 0.04,
+    "coverage": 0.69,
     "top_leagues": [
-      "2. Bundesliga (Germany)"
+      "Bundesliga (Germany)",
+      "Ligue 1 (France)",
+      "Süper Lig (Turkey)",
+      "Super League (Switzerland)"
     ],
-    "low_confidence": true
+    "low_confidence": false
   },
   "Turkey": {
     "strength": 0.8669,
@@ -435,9 +439,9 @@
   },
   "Uzbekistan": {
     "strength": 0.5263,
-    "n_rated": 22,
+    "n_rated": 23,
     "n_squad": 26,
-    "coverage": 0.85,
+    "coverage": 0.88,
     "top_leagues": [
       "Super League (Uzbekistan)",
       "Pro League (United-Arab-Emirates)",
@@ -486,10 +490,10 @@
     "low_confidence": false
   },
   "Iran": {
-    "strength": 0.5509,
-    "n_rated": 11,
+    "strength": 0.5467,
+    "n_rated": 12,
     "n_squad": 26,
-    "coverage": 0.42,
+    "coverage": 0.46,
     "top_leagues": [
       "Pro League (United-Arab-Emirates)",
       "Persian Gulf Pro League (Iran)",
@@ -590,7 +594,7 @@
     "low_confidence": false
   },
   "New Zealand": {
-    "strength": 0.6272,
+    "strength": 0.6197,
     "n_rated": 25,
     "n_squad": 26,
     "coverage": 0.96,
@@ -598,7 +602,7 @@
       "A-League (Australia)",
       "Championship (England)",
       "Major League Soccer (USA)",
-      "League One (England)"
+      "Ekstraklasa (Poland)"
     ],
     "low_confidence": false
   },

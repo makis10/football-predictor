@@ -6,7 +6,12 @@ xgboost==3.2.0
 lightgbm==4.5.0
 catboost==1.2.10
 requests==2.32.5
-understat==0.1.14        # xG data for top-5 leagues from understat.com
+# understat (xG for top-5 leagues) is installed --no-deps in the Dockerfile:
+# its setup wrongly pins pytest==7.2.0 / aiohttp==3.8.3 as RUNTIME deps, which
+# conflicts with our pytest 8.x and modern charset-normalizer. We provide its
+# real runtime deps (aiohttp + beautifulsoup4) here instead.
+aiohttp>=3.9,<4          # understat HTTP client
+beautifulsoup4>=4.12     # understat HTML parsing
 
 # Groq (Llama-3.3-70B) — analysis + chatbot
 groq==1.0.0
