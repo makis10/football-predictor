@@ -160,6 +160,23 @@ def _elo_expected(elo_a: float, elo_b: float) -> float:
     return 1.0 / (1.0 + 10 ** ((elo_b - elo_a) / ELO_SCALE))
 
 
+def elo_three_way(adj_diff: float) -> tuple[float, float, float]:
+    """Map a (home-advantage-adjusted) talent-Elo difference to a calibrated
+    1×2 distribution (P_home, P_draw, P_away).
+
+    The trained international result model is flat — it under-rates clear
+    favourites and over-predicts draws on a thin dataset. This Elo-derived 1×2 is
+    used to sharpen the served probabilities toward the (market-independent)
+    talent-Elo signal. Draw probability peaks for even games and decays as the
+    sides diverge; the win/loss split follows a logistic on the Elo gap.
+    """
+    ws = 1.0 / (1.0 + math.exp(-adj_diff / 110.0))            # win share of decisive
+    p_draw = 0.26 * math.exp(-((adj_diff / 400.0) ** 2) * 0.7)
+    p_home = (1.0 - p_draw) * ws
+    p_away = (1.0 - p_draw) * (1.0 - ws)
+    return p_home, p_draw, p_away
+
+
 def _elo_update(
     elo_h: float, elo_a: float,
     hg: int, ag: int,

@@ -844,11 +844,19 @@ export function nationalToMatch(np: NationalPrediction): Match {
       ? np.kickoff_utc.slice(11, 19)
       : null;
 
+  // Group/display by the Athens calendar day the match is actually played, not
+  // the source "matchday": a late kick-off (e.g. 00:00 UTC = 03:00 Athens) is
+  // the NEXT day locally. Using the source date put such games under the wrong
+  // (yesterday) header and dropped them from "Upcoming" once that day passed.
+  const displayDate = np.kickoff_utc
+    ? new Date(np.kickoff_utc).toLocaleDateString("en-CA", { timeZone: DISPLAY_TZ })
+    : np.match_date;
+
   return {
     id:           np.id,
     league:       INTERNATIONAL_LEAGUE,
     season:       "",
-    match_date:   np.match_date,
+    match_date:   displayDate,
     kickoff_time: kickoffTime,
     // Full instant — lets MatchCard show a real time ("04:00 +1") even when
     // the UTC date crosses midnight and kickoff_time above had to be null.
@@ -880,9 +888,18 @@ export async function getUpcomingNationalMatches(
   limit = 200,
   minOdds?: number,
 ): Promise<Match[]> {
-  const { predictions } = await getNationalPredictions({ from, to, limit });
+  // Fetch a day EARLIER than the local "from": a match dated (source) yesterday
+  // can kick off after midnight UTC and still be in the future (e.g. 00:00 UTC =
+  // 03:00 Athens). We then decide "upcoming" by the kickoff INSTANT, not the
+  // source match_date — a 2 h grace keeps a just-started game briefly visible.
+  const fetchFrom = new Date(new Date(`${from}T00:00:00Z`).getTime() - 86_400_000)
+    .toISOString()
+    .slice(0, 10);
+  const { predictions } = await getNationalPredictions({ from: fetchFrom, to, limit });
+  const cutoffMs = Date.now() - 2 * 60 * 60 * 1000;
   return predictions
-    .filter((np) => np.actual_result == null)   // upcoming only
+    .filter((np) => np.actual_result == null)   // not yet settled
+    .filter((np) => !np.kickoff_utc || new Date(np.kickoff_utc).getTime() >= cutoffMs)
     .filter((np) => {
       if (minOdds == null) return true;
       // Same semantics as the club min-odds filter: the bookmaker odds of the

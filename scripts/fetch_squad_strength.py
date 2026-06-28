@@ -49,11 +49,22 @@ TOP_N = 16        # average the best-N players' leagues (≈ likely XI + key sub
 MIN_RATED = 6     # below this many rated players, mark low-confidence
 
 
-def _primary_league_coef(stats: list) -> tuple[float | None, str, str, int | None]:
+def _rating_mult(rating: float | None) -> float:
+    """Multiplier applied to a player's league coefficient based on their
+    club-season rating — distinguishes a star from a squad player WITHIN the
+    same league (which the league coefficient alone can't). Centered at a
+    typical ~6.9 rating (→ 1.0), ±0.20 per rating point, clamped. Missing rating
+    → 1.0 (fall back to pure league coefficient)."""
+    if rating is None:
+        return 1.0
+    return max(0.78, min(1.22, 1.0 + (rating - 6.9) * 0.20))
+
+
+def _primary_league_coef(stats: list) -> tuple[float | None, float | None, str, str, int | None]:
     """From a player's /players statistics, pick the domestic league with the
-    most minutes and return (coef, league_name, country, league_id).
+    most minutes and return (coef, rating, league_name, country, league_id).
     Cups are skipped (league_coef returns None)."""
-    best = None  # (minutes, coef, name, country, lid)
+    best = None  # (minutes, coef, rating, name, country, lid)
     for s in stats or []:
         lg = s.get("league") or {}
         games = s.get("games") or {}
@@ -67,12 +78,16 @@ def _primary_league_coef(stats: list) -> tuple[float | None, str, str, int | Non
         coef = league_coef(lid, name, country)
         if coef is None:        # cup → no league signal
             continue
+        try:
+            rating = float(games.get("rating")) if games.get("rating") else None
+        except (TypeError, ValueError):
+            rating = None
         score = mins if mins else apps * 30
         if best is None or score > best[0]:
-            best = (score, coef, name, country, lid)
+            best = (score, coef, rating, name, country, lid)
     if best is None:
-        return None, "", "", None
-    return best[1], best[2], best[3], best[4]
+        return None, None, "", "", None
+    return best[1], best[2], best[3], best[4], best[5]
 
 
 def main() -> None:
@@ -137,7 +152,7 @@ def main() -> None:
             print(f"  [warn] {team}: empty squad from API")
             continue
 
-        coefs: list[float] = []
+        coefs: list[float] = []   # per-player TALENT scores (league_coef × rating)
         league_hits: Counter = Counter()
         for pl in players:
             if not budget.ok():
@@ -152,10 +167,11 @@ def main() -> None:
                 continue
             presp = pdata.get("response") or []
             stats = presp[0].get("statistics") if presp else []
-            coef, lname, country, lid = _primary_league_coef(stats)
+            coef, rating, lname, country, lid = _primary_league_coef(stats)
             if coef is None:
                 continue
-            coefs.append(coef)
+            # Talent = WHERE he plays (league) × HOW well he plays there (rating).
+            coefs.append(coef * _rating_mult(rating))
             league_hits[f"{lname} ({country})"] += 1
             # flag leagues that hit the country/default fallback for audit
             from backend.app.ml.national.league_strength import LEAGUE_ID_STRENGTH

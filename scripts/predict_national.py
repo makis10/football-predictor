@@ -35,6 +35,10 @@ from backend.app.ml.national.train import blend_draw_probability
 DATA_DIR   = ROOT / "backend" / "data" / "raw" / "international"
 MODELS_DIR = ROOT / "backend" / "data" / "models" / "national"
 
+# Weight on the Elo-derived 1×2 when sharpening the (flat) trained model output.
+# 0 = trust the model only; 1 = pure Elo. Tunable.
+ELO_BLEND_W = 0.5
+
 
 def _load_models() -> dict:
     objects = {}
@@ -115,6 +119,20 @@ def predict_fixture(
     alpha = models.get("draw_alpha", 0.35)
     p_home, p_draw, p_away = blend_draw_probability(p_home_raw, p_draw_raw, p_away_raw,
                                                      draw_cal, alpha=alpha)
+
+    # Sharpen toward the talent-Elo. The trained international model is flat —
+    # it converts even a strong Elo gap into a near-toss-up with inflated draws
+    # (e.g. France +208 Elo → 33/37/30 raw). Blend its 1×2 with an Elo-derived
+    # 1×2 so clear favourites look like favourites. ELO_BLEND_W on the Elo side.
+    from backend.app.ml.national.features import elo_three_way, HOME_ADV
+    adj_diff = feat["h_elo"] - feat["a_elo"] + (0.0 if neutral else HOME_ADV)
+    eh, ed, ea = elo_three_way(adj_diff)
+    w = ELO_BLEND_W
+    p_home = (1 - w) * p_home + w * eh
+    p_draw = (1 - w) * p_draw + w * ed
+    p_away = (1 - w) * p_away + w * ea
+    _s = p_home + p_draw + p_away
+    p_home, p_draw, p_away = p_home / _s, p_draw / _s, p_away / _s
 
     # Goals
     p_over = float(_apply_calibration_binary(models["model_goals"], models["cal_goals"], X)[0])

@@ -79,7 +79,7 @@ function RunCard({ run, isLatest }: { run: TrainingRun; isLatest: boolean }) {
     day: "2-digit", month: "2-digit", year: "numeric",
   });
   const timeStr = date.toLocaleTimeString("el-GR", {
-    hour: "2-digit", minute: "2-digit",
+    hour: "2-digit", minute: "2-digit", hour12: false,
   });
 
   return (
@@ -243,7 +243,7 @@ function NationalMetricsCard({ m }: { m: NationalTrainingMetrics }) {
     ? trainedAt.toLocaleDateString("el-GR", { day: "2-digit", month: "2-digit", year: "numeric" })
     : "—";
   const trainedTimeStr = trainedAt
-    ? trainedAt.toLocaleTimeString("el-GR", { hour: "2-digit", minute: "2-digit" })
+    ? trainedAt.toLocaleTimeString("el-GR", { hour: "2-digit", minute: "2-digit", hour12: false })
     : "";
 
   return (

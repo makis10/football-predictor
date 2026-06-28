@@ -91,7 +91,7 @@ def list_users(
         LEFT JOIN tracked_matches tm ON tm.user_id = u.id
         LEFT JOIN user_bets ub       ON ub.user_id = u.id AND ub.outcome IN ('win','loss')
         GROUP BY u.id
-        ORDER BY u.created_at ASC
+        ORDER BY u.last_seen_at DESC NULLS LAST, u.created_at DESC
     """)).fetchall()
 
     return [dict(r._mapping) for r in rows]

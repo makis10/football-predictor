@@ -1,6 +1,6 @@
 {
   "Ghana": {
-    "strength": 0.8594,
+    "strength": 0.8448,
     "n_rated": 25,
     "n_squad": 26,
     "coverage": 0.96,
@@ -13,7 +13,7 @@
     "low_confidence": false
   },
   "Panama": {
-    "strength": 0.5944,
+    "strength": 0.6019,
     "n_rated": 22,
     "n_squad": 26,
     "coverage": 0.85,
@@ -26,7 +26,7 @@
     "low_confidence": false
   },
   "Germany": {
-    "strength": 0.9606,
+    "strength": 1.0143,
     "n_rated": 26,
     "n_squad": 26,
     "coverage": 1.0,
@@ -39,7 +39,7 @@
     "low_confidence": false
   },
   "Brazil": {
-    "strength": 0.9413,
+    "strength": 0.9871,
     "n_rated": 26,
     "n_squad": 26,
     "coverage": 1.0,
@@ -52,7 +52,7 @@
     "low_confidence": false
   },
   "Spain": {
-    "strength": 0.9831,
+    "strength": 1.0316,
     "n_rated": 26,
     "n_squad": 26,
     "coverage": 1.0,
@@ -65,7 +65,7 @@
     "low_confidence": false
   },
   "United States": {
-    "strength": 0.8875,
+    "strength": 0.8844,
     "n_rated": 26,
     "n_squad": 26,
     "coverage": 1.0,
@@ -78,7 +78,7 @@
     "low_confidence": false
   },
   "Algeria": {
-    "strength": 0.86,
+    "strength": 0.8837,
     "n_rated": 25,
     "n_squad": 26,
     "coverage": 0.96,
@@ -91,7 +91,7 @@
     "low_confidence": false
   },
   "Argentina": {
-    "strength": 0.9769,
+    "strength": 0.9976,
     "n_rated": 26,
     "n_squad": 26,
     "coverage": 1.0,
@@ -104,7 +104,7 @@
     "low_confidence": false
   },
   "Australia": {
-    "strength": 0.7382,
+    "strength": 0.7491,
     "n_rated": 26,
     "n_squad": 26,
     "coverage": 1.0,
@@ -117,7 +117,7 @@
     "low_confidence": false
   },
   "Austria": {
-    "strength": 0.9475,
+    "strength": 0.9419,
     "n_rated": 26,
     "n_squad": 26,
     "coverage": 1.0,
@@ -130,7 +130,7 @@
     "low_confidence": false
   },
   "Belgium": {
-    "strength": 0.9694,
+    "strength": 0.9862,
     "n_rated": 26,
     "n_squad": 26,
     "coverage": 1.0,
@@ -143,7 +143,7 @@
     "low_confidence": false
   },
   "Canada": {
-    "strength": 0.7494,
+    "strength": 0.741,
     "n_rated": 26,
     "n_squad": 26,
     "coverage": 1.0,
@@ -156,7 +156,7 @@
     "low_confidence": false
   },
   "Cape Verde": {
-    "strength": 0.69,
+    "strength": 0.6875,
     "n_rated": 26,
     "n_squad": 26,
     "coverage": 1.0,
@@ -169,7 +169,7 @@
     "low_confidence": false
   },
   "Colombia": {
-    "strength": 0.865,
+    "strength": 0.8709,
     "n_rated": 26,
     "n_squad": 26,
     "coverage": 1.0,
@@ -182,7 +182,7 @@
     "low_confidence": false
   },
   "Croatia": {
-    "strength": 0.9575,
+    "strength": 0.9713,
     "n_rated": 26,
     "n_squad": 26,
     "coverage": 1.0,
@@ -195,7 +195,7 @@
     "low_confidence": false
   },
   "Curaçao": {
-    "strength": 0.7656,
+    "strength": 0.7468,
     "n_rated": 21,
     "n_squad": 26,
     "coverage": 0.81,
@@ -208,7 +208,7 @@
     "low_confidence": false
   },
   "Czech Republic": {
-    "strength": 0.7681,
+    "strength": 0.7842,
     "n_rated": 26,
     "n_squad": 26,
     "coverage": 1.0,
@@ -221,7 +221,7 @@
     "low_confidence": false
   },
   "DR Congo": {
-    "strength": 0.8525,
+    "strength": 0.8342,
     "n_rated": 25,
     "n_squad": 26,
     "coverage": 0.96,
@@ -234,7 +234,7 @@
     "low_confidence": false
   },
   "Ecuador": {
-    "strength": 0.7845,
+    "strength": 0.7859,
     "n_rated": 26,
     "n_squad": 26,
     "coverage": 1.0,
@@ -247,7 +247,7 @@
     "low_confidence": false
   },
   "Egypt": {
-    "strength": 0.5944,
+    "strength": 0.6096,
     "n_rated": 23,
     "n_squad": 26,
     "coverage": 0.88,
@@ -260,7 +260,7 @@
     "low_confidence": false
   },
   "England": {
-    "strength": 1.0,
+    "strength": 1.0433,
     "n_rated": 26,
     "n_squad": 26,
     "coverage": 1.0,
@@ -273,7 +273,7 @@
     "low_confidence": false
   },
   "Paraguay": {
-    "strength": 0.7681,
+    "strength": 0.7731,
     "n_rated": 25,
     "n_squad": 26,
     "coverage": 0.96,
@@ -286,7 +286,7 @@
     "low_confidence": false
   },
   "Portugal": {
-    "strength": 0.9638,
+    "strength": 0.995,
     "n_rated": 26,
     "n_squad": 26,
     "coverage": 1.0,
@@ -299,7 +299,7 @@
     "low_confidence": false
   },
   "Qatar": {
-    "strength": 0.5063,
+    "strength": 0.5168,
     "n_rated": 25,
     "n_squad": 26,
     "coverage": 0.96,
@@ -310,7 +310,7 @@
     "low_confidence": false
   },
   "Saudi Arabia": {
-    "strength": 0.6738,
+    "strength": 0.6917,
     "n_rated": 23,
     "n_squad": 26,
     "coverage": 0.88,
@@ -321,7 +321,7 @@
     "low_confidence": false
   },
   "Scotland": {
-    "strength": 0.8744,
+    "strength": 0.8599,
     "n_rated": 25,
     "n_squad": 26,
     "coverage": 0.96,
@@ -334,7 +334,7 @@
     "low_confidence": false
   },
   "Senegal": {
-    "strength": 0.9481,
+    "strength": 0.9471,
     "n_rated": 26,
     "n_squad": 26,
     "coverage": 1.0,
@@ -347,7 +347,7 @@
     "low_confidence": false
   },
   "South Africa": {
-    "strength": 0.5264,
+    "strength": 0.5415,
     "n_rated": 26,
     "n_squad": 26,
     "coverage": 1.0,
@@ -360,7 +360,7 @@
     "low_confidence": false
   },
   "South Korea": {
-    "strength": 0.7244,
+    "strength": 0.7317,
     "n_rated": 25,
     "n_squad": 26,
     "coverage": 0.96,
@@ -373,7 +373,7 @@
     "low_confidence": false
   },
   "Sweden": {
-    "strength": 0.9506,
+    "strength": 0.9128,
     "n_rated": 26,
     "n_squad": 26,
     "coverage": 1.0,
@@ -386,7 +386,7 @@
     "low_confidence": false
   },
   "Switzerland": {
-    "strength": 0.965,
+    "strength": 0.9663,
     "n_rated": 26,
     "n_squad": 26,
     "coverage": 1.0,
@@ -399,7 +399,7 @@
     "low_confidence": false
   },
   "Tunisia": {
-    "strength": 0.7427,
+    "strength": 0.7188,
     "n_rated": 18,
     "n_squad": 26,
     "coverage": 0.69,
@@ -412,7 +412,7 @@
     "low_confidence": false
   },
   "Turkey": {
-    "strength": 0.8669,
+    "strength": 0.8933,
     "n_rated": 26,
     "n_squad": 26,
     "coverage": 1.0,
@@ -425,7 +425,7 @@
     "low_confidence": false
   },
   "Uruguay": {
-    "strength": 0.8581,
+    "strength": 0.8771,
     "n_rated": 26,
     "n_squad": 26,
     "coverage": 1.0,
@@ -438,7 +438,7 @@
     "low_confidence": false
   },
   "Uzbekistan": {
-    "strength": 0.5263,
+    "strength": 0.526,
     "n_rated": 23,
     "n_squad": 26,
     "coverage": 0.88,
@@ -451,7 +451,7 @@
     "low_confidence": false
   },
   "Bosnia and Herzegovina": {
-    "strength": 0.7439,
+    "strength": 0.7438,
     "n_rated": 25,
     "n_squad": 26,
     "coverage": 0.96,
@@ -464,7 +464,7 @@
     "low_confidence": false
   },
   "France": {
-    "strength": 0.9744,
+    "strength": 1.015,
     "n_rated": 26,
     "n_squad": 26,
     "coverage": 1.0,
@@ -477,7 +477,7 @@
     "low_confidence": false
   },
   "Haiti": {
-    "strength": 0.6926,
+    "strength": 0.6685,
     "n_rated": 21,
     "n_squad": 26,
     "coverage": 0.81,
@@ -490,7 +490,7 @@
     "low_confidence": false
   },
   "Iran": {
-    "strength": 0.5467,
+    "strength": 0.5391,
     "n_rated": 12,
     "n_squad": 26,
     "coverage": 0.46,
@@ -503,7 +503,7 @@
     "low_confidence": false
   },
   "Iraq": {
-    "strength": 0.5669,
+    "strength": 0.5535,
     "n_rated": 13,
     "n_squad": 26,
     "coverage": 0.5,
@@ -516,7 +516,7 @@
     "low_confidence": false
   },
   "Ivory Coast": {
-    "strength": 0.925,
+    "strength": 0.9261,
     "n_rated": 26,
     "n_squad": 26,
     "coverage": 1.0,
@@ -529,7 +529,7 @@
     "low_confidence": false
   },
   "Japan": {
-    "strength": 0.9025,
+    "strength": 0.899,
     "n_rated": 26,
     "n_squad": 26,
     "coverage": 1.0,
@@ -542,7 +542,7 @@
     "low_confidence": false
   },
   "Jordan": {
-    "strength": 0.56,
+    "strength": 0.5407,
     "n_rated": 7,
     "n_squad": 26,
     "coverage": 0.27,
@@ -555,7 +555,7 @@
     "low_confidence": false
   },
   "Mexico": {
-    "strength": 0.6944,
+    "strength": 0.7088,
     "n_rated": 26,
     "n_squad": 26,
     "coverage": 1.0,
@@ -568,7 +568,7 @@
     "low_confidence": false
   },
   "Morocco": {
-    "strength": 0.9288,
+    "strength": 0.926,
     "n_rated": 25,
     "n_squad": 26,
     "coverage": 0.96,
@@ -581,7 +581,7 @@
     "low_confidence": false
   },
   "Netherlands": {
-    "strength": 0.9981,
+    "strength": 1.0079,
     "n_rated": 26,
     "n_squad": 26,
     "coverage": 1.0,
@@ -594,7 +594,7 @@
     "low_confidence": false
   },
   "New Zealand": {
-    "strength": 0.6197,
+    "strength": 0.6225,
     "n_rated": 25,
     "n_squad": 26,
     "coverage": 0.96,
@@ -607,7 +607,7 @@
     "low_confidence": false
   },
   "Norway": {
-    "strength": 0.9731,
+    "strength": 0.9578,
     "n_rated": 26,
     "n_squad": 26,
     "coverage": 1.0,

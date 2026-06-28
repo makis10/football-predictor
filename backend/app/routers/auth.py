@@ -115,11 +115,16 @@ def _user_out(u: User) -> dict:
 
 def _record_login(user: User, db: Session) -> None:
     """
-    Bump login_count and set last_login_at to now (UTC).
+    Bump login_count and set last_login_at to now (UTC). Also set last_seen_at:
+    a login IS activity, and a user who only browses public pages never triggers
+    the middleware's authenticated-request bump — so without this their last_seen
+    would stay NULL ("—" in the admin panel).
     Does NOT commit — callers are responsible for committing so we avoid
     double-commits (one for the upsert, one for the login tracking).
     """
-    user.last_login_at = datetime.now(timezone.utc)
+    now = datetime.now(timezone.utc)
+    user.last_login_at = now
+    user.last_seen_at  = now
     user.login_count   = (user.login_count or 0) + 1
     # intentionally no db.commit() here
 

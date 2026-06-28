@@ -57,7 +57,7 @@ export default function AdminFeedback({ items }: { items: FeedbackItem[] }) {
             <span className="text-[11px] text-gray-600 shrink-0 tabular-nums">
               {new Date(f.created_at).toLocaleString("el-GR", {
                 day: "numeric", month: "short", hour: "2-digit", minute: "2-digit",
-                timeZone: "Europe/Athens",
+                hour12: false, timeZone: "Europe/Athens",
               })}
             </span>
           </div>

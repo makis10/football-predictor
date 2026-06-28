@@ -90,8 +90,13 @@ THIRD_SLOTS = {  # R32 match → allowed third-place groups
 # ── Load data ─────────────────────────────────────────────────────────────────
 
 def load_elo() -> dict[str, float]:
+    """Talent-adjusted Elo (results-Elo blended with squad league/quality
+    strength) so the tournament sim is consistent with the match predictions —
+    not the raw results-Elo, which is confederation-biased + squad-blind."""
     with open(SNAP_PATH, "rb") as f:
-        return dict(pickle.load(f)["elo"])
+        snap = pickle.load(f)
+    from backend.app.ml.national.features import talent_adjusted_elo
+    return {team: talent_adjusted_elo(snap, team) for team in snap["elo"]}
 
 
 # ── Player goal shares (Golden Boot) ──────────────────────────────────────────
@@ -243,6 +248,12 @@ def load_wc_2026() -> tuple[dict[tuple[str, str], tuple[int, int]],
     df = pd.read_csv(DATA_DIR / "results.csv")
     df["date"] = pd.to_datetime(df["date"], errors="coerce")
     wc = df[(df["tournament"] == "FIFA World Cup") & (df["date"] >= "2026-06-01")]
+    # GROUP STAGE ONLY (first 72 fixtures = 12 groups × 6). Once the knockouts are
+    # published they share the "FIFA World Cup" tournament tag, but they connect
+    # teams ACROSS groups → derive_groups' connected-components would merge the 12
+    # groups into a few blobs (KeyError on group letters). The sim builds the
+    # knockout bracket itself from the R32 template, so drop knockout fixtures here.
+    wc = wc.sort_values("date").head(72)
 
     played_map: dict[tuple[str, str], tuple[int, int]] = {}
     all_pairs: list[tuple[str, str]] = []
@@ -255,6 +266,41 @@ def load_wc_2026() -> tuple[dict[tuple[str, str], tuple[int, int]],
         else:
             upcoming_pairs.append((h, a))
     return played_map, all_pairs, upcoming_pairs
+
+
+def load_ko_results() -> dict[frozenset, tuple[dict[str, int], str]]:
+    """Already-played KNOCKOUT results, to condition the bracket on reality once
+    the knockouts start: {frozenset({h,a}): ({team: goals}, winner_team)}.
+    Knockout fixtures = WC-2026 fixtures after the first 72 (group stage). Draws
+    are resolved via shootouts.csv; a draw with no shootout record is left out
+    (still simulated). Empty until R32 games are played."""
+    df = pd.read_csv(DATA_DIR / "results.csv")
+    df["date"] = pd.to_datetime(df["date"], errors="coerce")
+    wc = df[(df["tournament"] == "FIFA World Cup") & (df["date"] >= "2026-06-01")].sort_values("date")
+    ko = wc.iloc[72:]
+    shootout_winner: dict[frozenset, str] = {}
+    try:
+        s = pd.read_csv(DATA_DIR / "shootouts.csv")
+        for _, r in s.iterrows():
+            if pd.notna(r.get("winner")):
+                shootout_winner[frozenset({r["home_team"], r["away_team"]})] = r["winner"]
+    except Exception:
+        pass
+    out: dict[frozenset, tuple[dict[str, int], str]] = {}
+    for _, r in ko.iterrows():
+        if pd.isna(r["home_score"]) or pd.isna(r["away_score"]):
+            continue
+        h, a = r["home_team"], r["away_team"]
+        hg, ag = int(r["home_score"]), int(r["away_score"])
+        key = frozenset({h, a})
+        if hg != ag:
+            w = h if hg > ag else a
+        else:
+            w = shootout_winner.get(key)
+            if not w:
+                continue   # drawn knockout, unknown shoot-out winner → simulate it
+        out[key] = ({h: hg, a: ag}, w)
+    return out
 
 
 def derive_groups(fixtures: list[tuple[str, str]]) -> dict[str, list[str]]:
@@ -328,6 +374,7 @@ def play(elo_a: float, elo_b: float, scale: float, knockout: bool) -> tuple:
 def simulate_once(
     groups: dict[str, list[str]], elo: dict, scale: float,
     played_map: dict[tuple[str, str], tuple[int, int]] | None = None,
+    ko_played: dict[frozenset, tuple[dict[str, int], str]] | None = None,
 ) -> tuple[str, tuple[str, str], dict[str, int], dict[str, tuple[bool, bool, bool]]]:
     """Returns (champion, (finalistA, finalistB), goals_per_team, group_outcome).
 
@@ -338,6 +385,7 @@ def simulate_once(
     fixtures are sampled. This makes the projection a live conditional one,
     not a from-scratch re-roll."""
     played_map = played_map or {}
+    ko_played = ko_played or {}
     standings: dict[str, list] = {}      # group → ranked team list
     thirds: list[tuple] = []             # (pts, gd, gf, team, group)
     goals_acc: dict[str, int] = defaultdict(int)   # team → tournament goals (Golden Boot)
@@ -404,6 +452,12 @@ def simulate_once(
         r32_teams[m] = (ta, tb)
 
     def winner(ta: str, tb: str) -> str:
+        # Condition on a real result if this knockout tie has already been played.
+        rec = ko_played.get(frozenset({ta, tb}))
+        if rec is not None:
+            pg, w = rec
+            goals_acc[ta] += pg.get(ta, 0); goals_acc[tb] += pg.get(tb, 0)
+            return w
         w, ga, gb = play(elo.get(ta, ELO_START), elo.get(tb, ELO_START), scale, knockout=True)
         goals_acc[ta] += ga; goals_acc[tb] += gb
         return ta if w == 0 else tb
@@ -543,6 +597,7 @@ def main() -> None:
 
     elo = load_elo()
     played_map, all_pairs, upcoming_pairs = load_wc_2026()
+    ko_played = load_ko_results()
     if len(all_pairs) < 12:
         print(f"Only {len(all_pairs)} WC 2026 group fixtures in the dataset — nothing "
               f"to simulate (tournament not scheduled). Exiting.")
@@ -554,7 +609,9 @@ def main() -> None:
     print(f"Derived {n_groups} groups from {len(all_pairs)} fixtures "
           f"({len(played_map)} already played, {len(upcoming_pairs)} remaining).")
     if played_map:
-        print(f"→ Conditioning the projection on {len(played_map)} real result(s).")
+        print(f"→ Conditioning the projection on {len(played_map)} real group result(s).")
+    if ko_played:
+        print(f"→ + {len(ko_played)} played knockout result(s) (bracket conditioned).")
     missing = {t for g in groups.values() for t in g if t not in elo}
     if missing:
         print(f"[warn] {len(missing)} team(s) missing Elo (→ {ELO_START}): {sorted(missing)}")
@@ -590,7 +647,7 @@ def main() -> None:
 
     print(f"Simulating {args.sims:,} tournaments …")
     for i in range(args.sims):
-        champ, (fa, fb), gacc, gout = simulate_once(groups, elo, scale, played_map)
+        champ, (fa, fb), gacc, gout = simulate_once(groups, elo, scale, played_map, ko_played)
         champ_ct[champ] += 1
         final_ct[fa] += 1; final_ct[fb] += 1
         pair_ct[tuple(sorted((fa, fb)))] += 1

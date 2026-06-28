@@ -204,7 +204,7 @@ export default function AdminUserTable({ users }: { users: UserStats[] }) {
                       {u.last_seen_at
                         ? new Date(u.last_seen_at).toLocaleString("el-GR", {
                             day: "numeric", month: "short", hour: "2-digit", minute: "2-digit",
-                            timeZone: "Europe/Athens",
+                            hour12: false, timeZone: "Europe/Athens",
                           })
                         : <span className="text-gray-600">—</span>}
                     </td>

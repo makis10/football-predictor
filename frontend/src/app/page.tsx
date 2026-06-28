@@ -77,7 +77,9 @@ async function UpcomingGrid({
       matches = [...matches, ...filtered].sort((a, b) =>
         a.match_date !== b.match_date
           ? a.match_date.localeCompare(b.match_date)
-          : (a.kickoff_time ?? "99").localeCompare(b.kickoff_time ?? "99"),
+          // kickoff_utc (full ISO) sorts chronologically; kickoff_time is null
+          // for games whose UTC date crosses midnight, so it can't order them.
+          : (a.kickoff_utc ?? a.kickoff_time ?? "99").localeCompare(b.kickoff_utc ?? b.kickoff_time ?? "99"),
       );
     } catch {
       // national merge is best-effort — ignore and show club fixtures only
