@@ -214,10 +214,20 @@ docker compose exec -T backend \
     python scripts/fetch_match_statistics.py --wc-only --last 5 --max-requests 1500 \
     2>&1 | tee -a "$LOG"
 
-# Recompute player props (anytime scorer / SoT / assist) for upcoming fixtures
-# from the freshly-ingested stats + the refreshed Elo snapshot.
+# Ingest current-season CLUB form per player (/players) — the empirical-Bayes
+# prior for the prop rates, so low-cap players regress toward real club form
+# instead of a flat league prior. Idempotent: only rows older than 7 days are
+# refreshed, so the cost amortises across days (1 request/player, budget-capped).
 echo "" >> "$LOG"
-echo "[national 7a2/7] Computing player props …" | tee -a "$LOG"
+echo "[national 7a2/7] Ingesting player club form (API-Football) …" | tee -a "$LOG"
+docker compose exec -T backend \
+    python scripts/fetch_club_form.py --wc-only --max-requests 1500 \
+    2>&1 | tee -a "$LOG"
+
+# Recompute player props (anytime scorer / SoT / assist) for upcoming fixtures
+# from the freshly-ingested stats + club-form priors + the refreshed Elo snapshot.
+echo "" >> "$LOG"
+echo "[national 7a3/7] Computing player props …" | tee -a "$LOG"
 docker compose exec -T backend \
     python scripts/compute_player_props.py \
     2>&1 | tee -a "$LOG"
@@ -247,6 +257,14 @@ echo "" >> "$LOG"
 echo "[national 7c2/7] Syncing same-day goalscorers …" | tee -a "$LOG"
 docker compose exec -T backend \
     python scripts/sync_goalscorers_to_dataset.py \
+    2>&1 | tee -a "$LOG"
+
+# Player availability (injuries + suspensions) from API-Football /injuries —
+# one cheap request; lets the simulation drop unavailable golden-boot scorers.
+echo "" >> "$LOG"
+echo "[national 7c2/7] Fetching player availability (injuries/suspensions) …" | tee -a "$LOG"
+docker compose exec -T backend \
+    python scripts/fetch_availability.py \
     2>&1 | tee -a "$LOG"
 
 # World Cup Monte Carlo simulation (champion/finalist/group/golden-boot).

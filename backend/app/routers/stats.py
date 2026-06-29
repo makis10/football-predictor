@@ -40,6 +40,7 @@ from backend.app.schemas.stats import (
     DrawStats,
     EVDataPoint,
     LeagueBreakdown,
+    MethodologyInfo,
     ModelVersionStats,
     PredictedOutcomeBreakdown,
     ResultCalibration,
@@ -358,6 +359,17 @@ def _compute_stats(rows: list[dict]) -> StatsResponse:
     rows_7d  = [r for r in rows if r["match_date"] >= cutoff_7d]
     rows_30d = [r for r in rows if r["match_date"] >= cutoff_30d]
 
+    # Honesty flag: the model went market-independent on 2026-06-17 (market
+    # features + anchoring removed). Predictions settled before that were served
+    # by the prior anchored model, so all-time accuracy/ROI mixes methodologies.
+    _METHODOLOGY_CUTOFF = date(2026, 6, 17)
+    _before = sum(1 for r in rows if r["match_date"] < _METHODOLOGY_CUTOFF)
+    methodology = MethodologyInfo(
+        cutoff=_METHODOLOGY_CUTOFF.isoformat(),
+        settled_before=_before,
+        settled_after=len(rows) - _before,
+    )
+
     rolling = RollingAccuracy(
         last_7d=_accuracy_slice(rows_7d),
         last_30d=_accuracy_slice(rows_30d),
@@ -675,9 +687,8 @@ def _compute_stats(rows: list[dict]) -> StatsResponse:
             res_staked += STAKE
             pnl_r = STAKE * (bet_odds - 1) if won else -STAKE
             res_return += STAKE * bet_odds if won else 0.0
-            # De-vig implied prob from the three stored 1×2 odds when complete.
-            # Stored 1×2 prob is already market-anchored — use it directly
-            # (re-shrinking would double-count the market, see _shrunk_prob).
+            # EV on the PURE-model probability vs the market price (anchoring +
+            # EV-shrinkage were removed 2026-06-17; _shrunk_prob is now identity).
             ev_r = STAKE * (model_prob * bet_odds - 1)
 
             if d_str not in daily:
@@ -732,7 +743,7 @@ def _compute_stats(rows: list[dict]) -> StatsResponse:
             goals_staked += STAKE
             pnl_g = STAKE * (over_odds - 1) if won_goals else -STAKE
             goals_return += STAKE * over_odds if won_goals else 0.0
-            # Stored Over prob is already market-anchored — use it directly.
+            # Pure-model Over prob vs market price (no anchoring since 2026-06-17).
             ev_g = STAKE * (over_prob * over_odds - 1)
 
             if d_str not in daily:
@@ -800,6 +811,7 @@ def _compute_stats(rows: list[dict]) -> StatsResponse:
     clv = _compute_clv(rows)
 
     return StatsResponse(
+        methodology=methodology,
         rolling=rolling,
         top_picks=top_picks_stats,
         by_league=by_league,

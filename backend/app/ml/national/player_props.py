@@ -57,8 +57,29 @@ def _shrink(weighted_events: float, weighted_minutes: float, prior_per90: float)
     return 90.0 * num / den if den > 0 else prior_per90
 
 
+def load_club_form(db) -> dict[int, dict]:
+    """{player_id: {g90, sot90, ast90}} from player_club_form (current club-season
+    form). Used as the per-player shrinkage prior. Returns {} gracefully if the
+    table hasn't been populated yet (scripts/fetch_club_form.py)."""
+    from sqlalchemy import text
+    try:
+        rows = db.execute(text(
+            "SELECT player_id, g90, sot90, ast90 FROM player_club_form"
+        )).fetchall()
+    except Exception:
+        return {}
+    return {
+        int(r[0]): {"g90": r[1], "sot90": r[2], "ast90": r[3]}
+        for r in rows
+    }
+
+
 def load_player_rates(db, as_of: date | None = None) -> dict[str, list[PlayerRate]]:
-    """Return {team: [PlayerRate, …]} from player_match_stats, recency+shrinkage."""
+    """Return {team: [PlayerRate, …]} from player_match_stats, recency+shrinkage.
+
+    The shrinkage prior is the player's CLUB-season per-90 rate when available
+    (so a low-cap player regresses toward his real club form, not a flat league
+    prior); otherwise the positional constants below."""
     from sqlalchemy import text
 
     rows = db.execute(text(
@@ -67,6 +88,8 @@ def load_player_rates(db, as_of: date | None = None) -> dict[str, list[PlayerRat
     )).fetchall()
     if not rows:
         return {}
+
+    club_form = load_club_form(db)
 
     df = pd.DataFrame(rows, columns=["pid", "player", "team", "date", "min", "g", "sot", "a"])
     df["date"] = pd.to_datetime(df["date"], errors="coerce")
@@ -86,11 +109,16 @@ def load_player_rates(db, as_of: date | None = None) -> dict[str, list[PlayerRat
         wast = float((g["a"]   * g["w"]).sum())
         # expected minutes = recency-weighted average minutes, capped at 90
         exp_min = float(min(90.0, (g["min"] * g["w"]).sum() / max(g["w"].sum(), 1e-9)))
+        # Per-player prior = club-season rate when known, else positional constant.
+        cf = club_form.get(int(pid))
+        prior_g   = cf["g90"]   if cf and cf["g90"]   is not None else PRIOR_G90
+        prior_sot = cf["sot90"] if cf and cf["sot90"] is not None else PRIOR_SOT90
+        prior_ast = cf["ast90"] if cf and cf["ast90"] is not None else PRIOR_AST90
         out.setdefault(team, []).append(PlayerRate(
             player_id=int(pid), player=player, team=team,
-            g90=_shrink(wg, wmin, PRIOR_G90),
-            sot90=_shrink(wsot, wmin, PRIOR_SOT90),
-            ast90=_shrink(wast, wmin, PRIOR_AST90),
+            g90=_shrink(wg, wmin, prior_g),
+            sot90=_shrink(wsot, wmin, prior_sot),
+            ast90=_shrink(wast, wmin, prior_ast),
             exp_minutes=exp_min, wmin=wmin, apps=int(len(g)),
         ))
     return out

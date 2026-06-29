@@ -1,7 +1,8 @@
 export const dynamic = "force-dynamic";
 
 import Link from "next/link";
-import { getWcSimulation, type WcSimulation } from "@/lib/api";
+import { getWcSimulation, getWcChampionHistory, type WcSimulation, type WcChampionHistory } from "@/lib/api";
+import { WcChampionHistoryChart } from "@/components/national/WcChampionHistoryChart";
 
 function pct(v: number | null | undefined): string {
   return v == null ? "—" : `${(v * 100).toFixed(1)}%`;
@@ -22,8 +23,12 @@ function EdgeBadge({ model, market }: { model: number; market: number | null }) 
 
 export default async function WorldCupPage() {
   let sim: WcSimulation = { available: false };
+  let history: WcChampionHistory = { available: false, snapshots: [] };
   try {
-    sim = await getWcSimulation();
+    [sim, history] = await Promise.all([
+      getWcSimulation(),
+      getWcChampionHistory().catch(() => ({ available: false, snapshots: [] })),
+    ]);
   } catch {
     /* fall through to unavailable state */
   }
@@ -105,6 +110,16 @@ export default async function WorldCupPage() {
           ))}
         </div>
       </section>
+
+      {/* Champion odds over time */}
+      {history.available && history.snapshots.length >= 2 && (
+        <section className="card p-5">
+          <h2 className="text-sm font-semibold text-gray-300 uppercase tracking-wider mb-4">
+            📉 Champion odds — trend
+          </h2>
+          <WcChampionHistoryChart snapshots={history.snapshots} />
+        </section>
+      )}
 
       {/* Model vs market edge */}
       {sim.has_market && (
@@ -202,44 +217,72 @@ export default async function WorldCupPage() {
             his nation&apos;s goals. Going deep in the bracket matters as much as scoring
             rate — that&apos;s why favourites&apos; strikers dominate.
           </p>
-          <div className="space-y-1.5">
-            <div className="grid grid-cols-[1.6rem_1fr_4rem_4rem_4rem] gap-2 text-[11px] text-gray-500 uppercase tracking-wide pb-1">
-              <span />
-              <span>Player</span>
-              <span className="text-right">GB</span>
-              <span className="text-right">xGoals</span>
-              <span className="text-right">P(4+)</span>
-            </div>
-            {(() => {
-              const players = sim.golden_boot!.players.slice(0, 15);
-              const maxGb = Math.max(...players.map((p) => p.gb_pct));
-              return players.map((p, i) => (
-                <div
-                  key={`${p.player}-${p.team}`}
-                  className="grid grid-cols-[1.6rem_1fr_4rem_4rem_4rem] gap-2 items-center text-sm"
-                >
-                  <span className="text-xs text-gray-600 tabular-nums">{i + 1}</span>
-                  <div className="relative">
-                    <div
-                      className="absolute inset-y-0 left-0 bg-amber-500/10 rounded"
-                      style={{ width: `${maxGb > 0 ? (p.gb_pct / maxGb) * 100 : 0}%` }}
-                    />
-                    <span className="relative font-medium text-gray-100">
-                      {p.player}{" "}
-                      <span className="text-xs text-gray-500">({p.team})</span>
-                    </span>
-                  </div>
-                  <span className="text-right tabular-nums text-amber-400 font-semibold">
-                    {pct(p.gb_pct)}
-                  </span>
-                  <span className="text-right tabular-nums text-gray-400">
-                    {p.exp_goals.toFixed(1)}
-                  </span>
-                  <span className="text-right tabular-nums text-gray-500">{pct(p.p4plus)}</span>
+          {(() => {
+            const gbHasMarket = !!sim.golden_boot?.has_market;
+            const cols = gbHasMarket
+              ? "grid-cols-[1.6rem_1fr_4rem_4rem_4rem]"
+              : "grid-cols-[1.6rem_1fr_4rem_4rem_4rem]";
+            const players = sim.golden_boot!.players.slice(0, 15);
+            const maxGb = Math.max(...players.map((p) => p.gb_pct));
+            return (
+              <div className="space-y-1.5">
+                <div className={`grid ${cols} gap-2 text-[11px] text-gray-500 uppercase tracking-wide pb-1`}>
+                  <span />
+                  <span>Player</span>
+                  <span className="text-right">GB</span>
+                  {gbHasMarket ? (
+                    <>
+                      <span className="text-right">Market</span>
+                      <span className="text-right">Edge</span>
+                    </>
+                  ) : (
+                    <>
+                      <span className="text-right">xGoals</span>
+                      <span className="text-right">P(4+)</span>
+                    </>
+                  )}
                 </div>
-              ));
-            })()}
-          </div>
+                {players.map((p, i) => (
+                  <div
+                    key={`${p.player}-${p.team}`}
+                    className={`grid ${cols} gap-2 items-center text-sm`}
+                  >
+                    <span className="text-xs text-gray-600 tabular-nums">{i + 1}</span>
+                    <div className="relative">
+                      <div
+                        className="absolute inset-y-0 left-0 bg-amber-500/10 rounded"
+                        style={{ width: `${maxGb > 0 ? (p.gb_pct / maxGb) * 100 : 0}%` }}
+                      />
+                      <span className="relative font-medium text-gray-100">
+                        {p.player}{" "}
+                        <span className="text-xs text-gray-500">({p.team})</span>
+                      </span>
+                    </div>
+                    <span className="text-right tabular-nums text-amber-400 font-semibold">
+                      {pct(p.gb_pct)}
+                    </span>
+                    {gbHasMarket ? (
+                      <>
+                        <span className="text-right tabular-nums text-gray-500">
+                          {pct(p.market_pct ?? null)}
+                        </span>
+                        <span className="text-right tabular-nums">
+                          <EdgeBadge model={p.gb_pct} market={p.market_pct ?? null} />
+                        </span>
+                      </>
+                    ) : (
+                      <>
+                        <span className="text-right tabular-nums text-gray-400">
+                          {p.exp_goals.toFixed(1)}
+                        </span>
+                        <span className="text-right tabular-nums text-gray-500">{pct(p.p4plus)}</span>
+                      </>
+                    )}
+                  </div>
+                ))}
+              </div>
+            );
+          })()}
           {sim.golden_boot.field_pct > 0 && (
             <p className="text-xs text-gray-600 mt-3">
               — field (any unlisted player): {pct(sim.golden_boot.field_pct)}
@@ -259,8 +302,11 @@ export default async function WorldCupPage() {
           ⚠ Golden Boot shares come from international scoring history (martj42
           goalscorers).{" "}
           {sim.golden_boot?.squad_filtered
-            ? "Restricted to officially called-up players (API-Football squads); a late withdrawal may still appear until the next refresh."
-            : "Not filtered by announced squads — an injured or unselected player still carries his historical share."}{" "}
+            ? "Restricted to officially called-up players (API-Football squads)."
+            : "Not filtered by announced squads — an unselected player still carries his historical share."}{" "}
+          {sim.golden_boot?.availability_filtered
+            ? `Injured/suspended players are excluded (${sim.golden_boot.unavailable_count ?? 0} flagged via API-Football /injuries; refreshed daily).`
+            : "Injuries/suspensions not yet applied."}{" "}
           Penalty-takers are implicitly favoured.
         </p>
         <p>Re-run nightly. Winner is a probability distribution, not a single pick.</p>

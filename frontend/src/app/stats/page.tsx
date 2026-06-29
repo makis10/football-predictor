@@ -245,6 +245,22 @@ export default async function StatsPage({ searchParams }: PageProps) {
         </p>
       </div>
 
+      {/* Methodology cutoff — honest flag: all-time numbers mix two models */}
+      {s.methodology && s.methodology.settled_before > 0 && (
+        <div className="rounded-xl border border-amber-700/40 bg-amber-950/20 p-4 text-sm">
+          <p className="font-semibold text-amber-300 mb-1">⚠️ Αλλαγή μοντέλου — {s.methodology.cutoff}</p>
+          <p className="text-gray-300 leading-relaxed">
+            Το μοντέλο έγινε <span className="font-medium text-gray-100">market-independent</span> στις{" "}
+            {s.methodology.cutoff} (αφαιρέθηκαν market features + anchoring). Τα{" "}
+            <span className="font-medium text-gray-100">{s.methodology.settled_before}</span> παιχνίδια πριν
+            σερβιρίστηκαν από το παλιό (anchored) μοντέλο, ενώ{" "}
+            <span className="font-medium text-gray-100">{s.methodology.settled_after}</span> από το τωρινό.
+            Τα «All Time» νούμερα παρακάτω αναμειγνύουν τις δύο μεθοδολογίες — τα rolling 7d/30d είναι πιο
+            αντιπροσωπευτικά του τωρινού μοντέλου.
+          </p>
+        </div>
+      )}
+
       {/* League filter */}
       <Suspense>
         <LeagueFilter active={league} basePath="/stats" />

@@ -171,7 +171,11 @@ def _in_squad(scorer: str, squad: dict) -> bool:
     return False
 
 
-def load_player_shares(teams: set[str], top_k: int = TOP_K_PLAYERS) -> dict[str, list[tuple[str, float]]]:
+def load_player_shares(
+    teams: set[str],
+    top_k: int = TOP_K_PLAYERS,
+    unavailable: dict[str, set[str]] | None = None,
+) -> dict[str, list[tuple[str, float]]]:
     """
     Recency-weighted share of each WC team's goals per player.
 
@@ -208,6 +212,7 @@ def load_player_shares(teams: set[str], top_k: int = TOP_K_PLAYERS) -> dict[str,
     if squad_index:
         print(f"[golden-boot] Squad filter active for {len(squad_index)} teams (wc_squads.json).")
     n_dropped = 0
+    n_unavail = 0
 
     shares: dict[str, list[tuple[str, float]]] = {}
     for team in teams:
@@ -224,11 +229,40 @@ def load_player_shares(teams: set[str], top_k: int = TOP_K_PLAYERS) -> dict[str,
             if keep.sum() >= 3:
                 n_dropped += int((~keep).sum())
                 sub = sub[keep]
+        # Drop injured/suspended players — their share flows to the "other"
+        # bucket (1 − Σ shares), exactly like a squad-dropped scorer.
+        una = (unavailable or {}).get(team)
+        if una:
+            avail = sub["scorer"].apply(lambda n: _player_surname(n) not in una)
+            n_unavail += int((~avail).sum())
+            sub = sub[avail]
         sub = sub.sort_values("w", ascending=False).head(top_k)
         shares[team] = [(r["scorer"], float(r["w"]) / tot) for _, r in sub.iterrows()]
     if squad_index and n_dropped:
         print(f"[golden-boot] {n_dropped} historical scorers dropped (not in official squads).")
+    if n_unavail:
+        print(f"[golden-boot] {n_unavail} scorers dropped (injured/suspended).")
     return shares
+
+
+def load_unavailable() -> dict[str, set[str]]:
+    """{team: {surname, …}} of injured/suspended players from wc_unavailable.json
+    (scripts/fetch_availability.py). Empty when the file is absent."""
+    import json as _json
+    path = SNAP_PATH.parent / "wc_unavailable.json"
+    if not path.exists():
+        return {}
+    try:
+        data = _json.loads(path.read_text())
+    except Exception:
+        return {}
+    out: dict[str, set[str]] = {}
+    for team, players in (data.get("teams") or {}).items():
+        surnames = {_player_surname(p.get("player", "")) for p in players if p.get("player")}
+        surnames.discard("")
+        if surnames:
+            out[team] = surnames
+    return out
 
 
 def load_wc_2026() -> tuple[dict[tuple[str, str], tuple[int, int]],
@@ -580,6 +614,71 @@ def fetch_market_winner() -> dict[str, float] | None:
     return {team: p / tot for team, p in raw.items()} if tot else None
 
 
+def fetch_market_top_scorer() -> dict[str, float] | None:
+    """De-vigged bookmaker 'Top Goalscorer' outright (player name → prob), or None.
+
+    The Odds API does not expose a WC top-scorer market on the current feed
+    (only the Winner outright), so this returns None today. It activates
+    automatically if the feed ever adds the dedicated sport key — we only ever
+    read that key, never the Winner event (whose outcomes are teams, not players)."""
+    import requests
+    key = os.getenv("ODDS_API_KEY", "")
+    if not key:
+        return None
+    try:
+        r = requests.get(
+            "https://api.the-odds-api.com/v4/sports/soccer_fifa_world_cup_top_goalscorer/odds/",
+            params={"apiKey": key, "regions": "eu", "markets": "outrights", "oddsFormat": "decimal"},
+            timeout=20,
+        )
+        if r.status_code != 200:          # 404/422 → market not offered
+            return None
+        data = r.json()
+    except Exception as e:
+        print(f"[market] top-scorer fetch failed: {e}")
+        return None
+    acc: dict[str, list] = defaultdict(list)
+    for ev in data:
+        for bm in ev.get("bookmakers", []):
+            for mk in bm.get("markets", []):
+                if mk.get("key") != "outrights":
+                    continue
+                for o in mk.get("outcomes", []):
+                    if o.get("price"):
+                        acc[o["name"]].append(1.0 / float(o["price"]))
+    if not acc:
+        return None
+    raw = {p: float(np.mean(v)) for p, v in acc.items()}
+    tot = sum(raw.values())
+    return {p: x / tot for p, x in raw.items()} if tot else None
+
+
+# NB: distinct from _norm_name (above) — that one keeps punctuation for the
+# squad-index name keys; this collapses it for plain surname matching.
+def _norm_player(s: str) -> str:
+    import unicodedata
+    s = unicodedata.normalize("NFKD", s or "").encode("ascii", "ignore").decode().lower()
+    return "".join(ch if (ch.isalnum() or ch == " ") else " " for ch in s).strip()
+
+
+def _player_surname(s: str) -> str:
+    parts = _norm_player(s).split()
+    return parts[-1] if parts else ""
+
+
+def attach_scorer_market(gb_players: list[dict], market: dict[str, float] | None) -> None:
+    """Set market_pct on each golden-boot player by surname match (in place)."""
+    by_surname: dict[str, float] = {}
+    if market:
+        for mname, p in market.items():
+            sn = _player_surname(mname)
+            if sn:
+                by_surname[sn] = max(by_surname.get(sn, 0.0), p)
+    for gp in gb_players:
+        sn = _player_surname(gp.get("player", ""))
+        gp["market_pct"] = round(by_surname[sn], 4) if sn in by_surname else None
+
+
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 _MARKET_ALIASES = {  # market name → our team name
@@ -642,7 +741,11 @@ def main() -> None:
 
     # Golden Boot: per-team tournament-goal arrays across sims
     all_teams = [t for g in groups.values() for t in g]
-    player_shares = load_player_shares(set(all_teams))
+    unavailable = load_unavailable()
+    if unavailable:
+        print(f"[availability] {sum(len(v) for v in unavailable.values())} injured/suspended "
+              f"players across {len(unavailable)} teams (wc_unavailable.json).")
+    player_shares = load_player_shares(set(all_teams), unavailable=unavailable)
     team_goals = {t: np.zeros(args.sims, dtype=np.int64) for t in all_teams}
 
     print(f"Simulating {args.sims:,} tournaments …")
@@ -667,6 +770,8 @@ def main() -> None:
     print("\n══════════ WINNER PROBABILITY (our model) ══════════")
     print(f"{'Team':<24}{'Win%':>7}{'Final%':>9}")
     market = None if args.no_market else fetch_market_winner()
+    scorer_market = None if args.no_market else fetch_market_top_scorer()
+    attach_scorer_market(gb_players, scorer_market)
     for team, c in champ_ct.most_common(15):
         print(f"{team:<24}{c/n:>6.1%}{final_ct[team]/n:>9.1%}")
 
@@ -676,10 +781,21 @@ def main() -> None:
 
     if gb_players:
         print("\n══════════ GOLDEN BOOT (top scorer) ══════════")
-        print(f"{'Player':<28}{'Team':<18}{'GB%':>6}{'xGoals':>8}{'P(4+)':>8}")
-        for p in gb_players[:15]:
-            print(f"{p['player']:<28}{p['team']:<18}{p['gb_pct']:>6.1%}{p['exp_goals']:>8.2f}{p['p4plus']:>8.1%}")
-        print(f"{'— field (unlisted players) —':<46}{gb_field_pct:>6.1%}")
+        if scorer_market:
+            print(f"{'Player':<28}{'Team':<18}{'GB%':>6}{'Market':>8}{'Edge':>8}")
+            for p in gb_players[:15]:
+                mp = p.get("market_pct")
+                edge = f"{p['gb_pct'] - mp:>+8.1%}" if mp is not None else f"{'—':>8}"
+                mstr = f"{mp:>8.1%}" if mp is not None else f"{'—':>8}"
+                print(f"{p['player']:<28}{p['team']:<18}{p['gb_pct']:>6.1%}{mstr}{edge}")
+            print("\n(Edge = model − market. Positive = model rates the scorer higher than sharps.)")
+        else:
+            print(f"{'Player':<28}{'Team':<18}{'GB%':>6}{'xGoals':>8}{'P(4+)':>8}")
+            for p in gb_players[:15]:
+                print(f"{p['player']:<28}{p['team']:<18}{p['gb_pct']:>6.1%}{p['exp_goals']:>8.2f}{p['p4plus']:>8.1%}")
+            print(f"{'— field (unlisted players) —':<46}{gb_field_pct:>6.1%}")
+            if not args.no_market:
+                print("[market] no top-scorer outright available from the feed.")
 
     def market_for(team: str) -> float | None:
         if not market:
@@ -727,6 +843,9 @@ def main() -> None:
                 "players":        gb_players,
                 "field_pct":      gb_field_pct,
                 "squad_filtered": SQUADS_PATH.exists(),
+                "has_market":     bool(scorer_market),
+                "availability_filtered": bool(unavailable),
+                "unavailable_count":     sum(len(v) for v in unavailable.values()),
             },
             "groups": groups,
             "group_standings": {
@@ -748,6 +867,40 @@ def main() -> None:
         with open(out_path, "w") as f:
             json.dump(result, f, indent=2, ensure_ascii=False)
         print(f"\n✓ Saved → {out_path}")
+
+        # ── Champion-odds history (JSONL, one snapshot per UTC day) ───────────
+        # Lets the frontend chart how each contender's title odds (model vs
+        # market) move over time as group/knockout results come in.
+        hist_path = SNAP_PATH.parent / "wc_champion_history.jsonl"
+        today_iso = datetime.now(timezone.utc).date().isoformat()
+        snapshot = {
+            "date":         today_iso,
+            "generated_at": result["generated_at"],
+            "n_sims":       n,
+            "played_games": len(played_map),
+            "teams": [
+                {"team": t["team"], "win_pct": t["win_pct"], "market_pct": t["market_pct"]}
+                for t in result["teams"][:12]
+            ],
+        }
+        rows: list[dict] = []
+        if hist_path.exists():
+            with open(hist_path) as f:
+                for line in f:
+                    line = line.strip()
+                    if not line:
+                        continue
+                    try:
+                        row = json.loads(line)
+                    except json.JSONDecodeError:
+                        continue
+                    if row.get("date") != today_iso:   # replace today's if re-run
+                        rows.append(row)
+        rows.append(snapshot)
+        with open(hist_path, "w") as f:
+            for row in rows:
+                f.write(json.dumps(row, ensure_ascii=False) + "\n")
+        print(f"✓ Champion-odds history → {hist_path} ({len(rows)} snapshots)")
 
 
 if __name__ == "__main__":

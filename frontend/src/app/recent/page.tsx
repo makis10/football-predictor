@@ -4,8 +4,12 @@ export const dynamic = "force-dynamic";
 import { Suspense } from "react";
 import Link from "next/link";
 import { getMatches, getPastNationalMatches, formatLongDate, INTERNATIONAL_LEAGUE, type Match } from "@/lib/api";
+import { accuracySummary, gradeMatch, hasResult } from "@/lib/matchGrade";
 import LeagueFilter from "@/components/LeagueFilter";
 import RecentResultCard from "@/components/RecentResultCard";
+
+const _shiftDays = (iso: string, n: number) =>
+  new Date(new Date(`${iso}T00:00:00Z`).getTime() + n * 86_400_000).toISOString().slice(0, 10);
 
 const DAYS_PER_PAGE = 7;
 
@@ -50,9 +54,16 @@ async function RecentGrid({ league, page }: { league?: string; page: number }) {
       );
     }
 
-    // National matches — include when All Leagues or International filter
+    // National matches — include when All Leagues or International filter.
+    // National match_date is remapped to the ATHENS calendar day in
+    // nationalToMatch (a late kickoff lands on the next day locally), while the
+    // fetch filters the DB source date. Fetch a ±1-day buffer, then keep only
+    // those whose Athens date falls in this page's window — so a boundary match
+    // shows on the right page (and isn't dropped/duplicated).
     if (!league || isInternational) {
-      const nationals = await getPastNationalMatches(fromStr, toStr, 200);
+      const nationals = (
+        await getPastNationalMatches(_shiftDays(fromStr, -1), _shiftDays(toStr, 1), 200)
+      ).filter((m) => m.match_date >= fromStr && m.match_date <= toStr);
       matches = isInternational
         ? nationals
         : [...matches, ...nationals].sort(
@@ -84,57 +95,13 @@ async function RecentGrid({ league, page }: { league?: string; page: number }) {
     return acc;
   }, {});
 
-  // Overall accuracy for this page — only matches with both a prediction AND a result
-  const withPrediction = matches.filter(
-    (m) => m.prediction && m.home_goals != null && m.away_goals != null
-  );
-
-  function matchState(m: Match): "correct" | "partial" | "wrong" {
-    const p = m.prediction!;
-    const actual =
-      m.home_goals! > m.away_goals! ? "H" : m.home_goals === m.away_goals ? "D" : "A";
-    const probs = [p.home_win_prob, p.draw_prob, p.away_win_prob];
-    const maxIdx = probs.indexOf(Math.max(...probs));
-    const resultOk = ["H", "D", "A"][maxIdx] === actual;
-
-    const totalGoals = m.home_goals! + m.away_goals!;
-    const goalsOk = p.goals_prediction === (totalGoals > 2.5 ? "OVER" : "UNDER");
-
-    if (resultOk && goalsOk) return "correct";
-    if (!resultOk && !goalsOk) return "wrong";
-    return "partial";
-  }
-
-  const correct  = withPrediction.filter((m) => matchState(m) === "correct");
-  const partial  = withPrediction.filter((m) => matchState(m) === "partial");
-  const wrong    = withPrediction.filter((m) => matchState(m) === "wrong");
-
-  const accuracy =
-    withPrediction.length > 0
-      ? Math.round((correct.length / withPrediction.length) * 100)
-      : null;
-
-  // Separate result (H/D/A) and goals (O/U) accuracy
-  const resultCorrect = withPrediction.filter((m) => {
-    const p = m.prediction!;
-    const actual =
-      m.home_goals! > m.away_goals! ? "H" : m.home_goals === m.away_goals ? "D" : "A";
-    const probs = [p.home_win_prob, p.draw_prob, p.away_win_prob];
-    const maxIdx = probs.indexOf(Math.max(...probs));
-    return ["H", "D", "A"][maxIdx] === actual;
-  });
-  const goalsCorrect = withPrediction.filter((m) => {
-    const totalGoals = m.home_goals! + m.away_goals!;
-    return m.prediction!.goals_prediction === (totalGoals > 2.5 ? "OVER" : "UNDER");
-  });
-  const resultAccuracy =
-    withPrediction.length > 0
-      ? Math.round((resultCorrect.length / withPrediction.length) * 100)
-      : null;
-  const goalsAccuracy =
-    withPrediction.length > 0
-      ? Math.round((goalsCorrect.length / withPrediction.length) * 100)
-      : null;
+  // Accuracy for the matches on THIS page — graded by the shared rule that
+  // mirrors the backend /stats definition (see lib/matchGrade.ts).
+  const acc = accuracySummary(matches);
+  const accuracy = acc.bothPct;
+  const resultAccuracy = acc.resultPct;
+  const goalsAccuracy = acc.goalsPct;
+  const noPred = matches.length - acc.total;
 
   return (
     <div className="space-y-8">
@@ -151,22 +118,22 @@ async function RecentGrid({ league, page }: { league?: string; page: number }) {
             <div className="flex gap-4 text-sm flex-wrap">
               <span className="flex items-center gap-1.5">
                 <span className="w-2.5 h-2.5 rounded-full bg-green-500 inline-block" />
-                <span className="text-green-400 font-bold">{correct.length}</span>
+                <span className="text-green-400 font-bold">{acc.correct}</span>
                 <span className="text-gray-500">correct</span>
               </span>
               <span className="flex items-center gap-1.5">
                 <span className="w-2.5 h-2.5 rounded-full bg-amber-500 inline-block" />
-                <span className="text-amber-400 font-bold">{partial.length}</span>
+                <span className="text-amber-400 font-bold">{acc.partial}</span>
                 <span className="text-gray-500">partial</span>
               </span>
               <span className="flex items-center gap-1.5">
                 <span className="w-2.5 h-2.5 rounded-full bg-red-500 inline-block" />
-                <span className="text-red-400 font-bold">{wrong.length}</span>
+                <span className="text-red-400 font-bold">{acc.wrong}</span>
                 <span className="text-gray-500">wrong</span>
               </span>
-              {matches.length - withPrediction.length > 0 && (
+              {noPred > 0 && (
                 <span className="text-gray-600 text-xs self-center">
-                  {matches.length - withPrediction.length} without prediction
+                  {noPred} without prediction
                 </span>
               )}
             </div>
@@ -186,7 +153,7 @@ async function RecentGrid({ league, page }: { league?: string; page: number }) {
                     {resultAccuracy}%
                   </span>
                   <span className="text-xs text-gray-600">
-                    {resultCorrect.length}/{withPrediction.length}
+                    {acc.resultCorrect}/{acc.total}
                   </span>
                 </span>
               )}
@@ -200,7 +167,7 @@ async function RecentGrid({ league, page }: { league?: string; page: number }) {
                     {goalsAccuracy}%
                   </span>
                   <span className="text-xs text-gray-600">
-                    {goalsCorrect.length}/{withPrediction.length}
+                    {acc.goalsCorrect}/{acc.total}
                   </span>
                 </span>
               )}
@@ -211,11 +178,9 @@ async function RecentGrid({ league, page }: { league?: string; page: number }) {
 
       {/* Matches grouped by day */}
       {Object.entries(byDate).map(([dateStr, dayMatches]) => {
-        const dayWithPred = dayMatches.filter(
-          (m) => m.prediction && m.home_goals != null && m.away_goals != null
-        );
-        const dayCorrect  = dayWithPred.filter((m) => matchState(m) === "correct");
-        const dayPartial  = dayWithPred.filter((m) => matchState(m) === "partial");
+        const dayWithPred = dayMatches.filter(hasResult);
+        const dayCorrect  = dayWithPred.filter((m) => gradeMatch(m) === "correct");
+        const dayPartial  = dayWithPred.filter((m) => gradeMatch(m) === "partial");
 
         return (
           <div key={dateStr} className="space-y-3">

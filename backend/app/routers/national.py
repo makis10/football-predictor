@@ -531,6 +531,7 @@ def training_metrics() -> dict[str, Any]:
 
 
 _WC_SIM_PATH = _METRICS_PATH.parent / "wc_simulation.json"
+_WC_HISTORY_PATH = _METRICS_PATH.parent / "wc_champion_history.jsonl"
 
 
 @router.get("/wc-simulation")
@@ -545,3 +546,26 @@ def wc_simulation() -> dict[str, Any]:
         return data
     except Exception:
         return {"available": False}
+
+
+@router.get("/wc-champion-history")
+def wc_champion_history() -> dict[str, Any]:
+    """Daily snapshots of each contender's title odds (model vs market) over
+    time — appended by simulate_wc.py. {available: false} until the first run."""
+    if not _WC_HISTORY_PATH.exists():
+        return {"available": False, "snapshots": []}
+    snapshots: list[dict[str, Any]] = []
+    try:
+        with open(_WC_HISTORY_PATH) as f:
+            for line in f:
+                line = line.strip()
+                if not line:
+                    continue
+                try:
+                    snapshots.append(json.loads(line))
+                except json.JSONDecodeError:
+                    continue
+    except Exception:
+        return {"available": False, "snapshots": []}
+    snapshots.sort(key=lambda s: s.get("date", ""))
+    return {"available": len(snapshots) > 0, "snapshots": snapshots}

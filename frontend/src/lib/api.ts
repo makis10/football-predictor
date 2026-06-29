@@ -320,7 +320,14 @@ export interface CLVStats {
   beat_close_pct: number;
 }
 
+export interface MethodologyInfo {
+  cutoff: string;          // ISO date the current market-independent model began
+  settled_before: number;  // settled predictions from the prior (anchored) model
+  settled_after: number;   // settled predictions from the current model
+}
+
 export interface StatsResponse {
+  methodology: MethodologyInfo | null;
   rolling: RollingAccuracy;
   top_picks: TopPicksStats | null;
   by_league: LeagueBreakdown[];
@@ -966,6 +973,8 @@ export interface WcGoldenBootPlayer {
   exp_goals: number;
   /** P(scores 4 or more goals). */
   p4plus: number;
+  /** De-vigged bookmaker top-scorer probability, or null when no market. */
+  market_pct?: number | null;
 }
 
 export interface WcGoldenBoot {
@@ -974,6 +983,12 @@ export interface WcGoldenBoot {
   field_pct: number;
   /** True when shares were restricted to the official call-ups (wc_squads.json). */
   squad_filtered?: boolean;
+  /** True when a bookmaker top-scorer market was available to compare against. */
+  has_market?: boolean;
+  /** True when injured/suspended players were excluded (wc_unavailable.json). */
+  availability_filtered?: boolean;
+  /** Count of injured/suspended players excluded across all teams. */
+  unavailable_count?: number;
 }
 
 export interface WcGroupTeam {
@@ -1003,4 +1018,27 @@ export interface WcSimulation {
 
 export async function getWcSimulation(): Promise<WcSimulation> {
   return apiFetch<WcSimulation>("/national/wc-simulation");
+}
+
+export interface WcHistoryTeam {
+  team: string;
+  win_pct: number;
+  market_pct: number | null;
+}
+
+export interface WcHistorySnapshot {
+  date: string;            // ISO "YYYY-MM-DD"
+  generated_at: string;
+  n_sims: number;
+  played_games: number;
+  teams: WcHistoryTeam[];
+}
+
+export interface WcChampionHistory {
+  available: boolean;
+  snapshots: WcHistorySnapshot[];
+}
+
+export async function getWcChampionHistory(): Promise<WcChampionHistory> {
+  return apiFetch<WcChampionHistory>("/national/wc-champion-history");
 }

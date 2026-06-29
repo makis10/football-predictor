@@ -1199,3 +1199,307 @@ fixture_id,date,home_team,away_team,home_xg,away_xg,league,season
 1545411,2026-05-21,Ajax,Groningen,1.83,0.16,Eredivisie,2025
 1545412,2026-05-21,Utrecht,Heerenveen,2.08,1.26,Eredivisie,2025
 1546052,2026-05-24,Ajax,Utrecht,1.47,0.96,Eredivisie,2025
+1380867,2025-08-08,Fortuna Sittard,GO Ahead Eagles,2.34,1.17,Eredivisie,2025
+1380868,2025-08-09,NEC Nijmegen,Excelsior,2.48,1.03,Eredivisie,2025
+1380869,2025-08-09,Feyenoord,NAC Breda,2.44,0.25,Eredivisie,2025
+1380870,2025-08-09,Heerenveen,FC Volendam,1.52,0.79,Eredivisie,2025
+1380871,2025-08-09,PSV Eindhoven,Sparta Rotterdam,1.73,1.21,Eredivisie,2025
+1380872,2025-08-10,PEC Zwolle,Twente,0.88,1.17,Eredivisie,2025
+1380873,2025-08-10,Ajax,Telstar,1.68,1.26,Eredivisie,2025
+1380874,2025-08-10,AZ Alkmaar,Groningen,1.56,1.5,Eredivisie,2025
+1380875,2025-08-10,Utrecht,Heracles,2.34,0.88,Eredivisie,2025
+1380876,2025-08-15,Telstar,PEC Zwolle,0.85,2.36,Eredivisie,2025
+1380878,2025-08-16,Excelsior,Feyenoord,1.07,2.52,Eredivisie,2025
+1380879,2025-08-16,Heracles,NEC Nijmegen,1.33,3.05,Eredivisie,2025
+1380877,2025-08-16,Groningen,Heerenveen,0.8,2.16,Eredivisie,2025
+1380880,2025-08-17,GO Ahead Eagles,Ajax,0.66,1.77,Eredivisie,2025
+1380882,2025-08-17,Twente,PSV Eindhoven,0.91,1.72,Eredivisie,2025
+1380881,2025-08-17,Sparta Rotterdam,Utrecht,1.47,1.39,Eredivisie,2025
+1380883,2025-08-17,FC Volendam,AZ Alkmaar,0.45,1.4,Eredivisie,2025
+1380884,2025-08-17,NAC Breda,Fortuna Sittard,2.06,0.73,Eredivisie,2025
+1380885,2025-08-23,GO Ahead Eagles,Sparta Rotterdam,2.6,1.71,Eredivisie,2025
+1380886,2025-08-23,PSV Eindhoven,Groningen,2.48,1.32,Eredivisie,2025
+1380887,2025-08-23,Telstar,FC Volendam,1.78,0.42,Eredivisie,2025
+1380889,2025-08-24,Heerenveen,Twente,2.39,2.01,Eredivisie,2025
+1380891,2025-08-24,Utrecht,Excelsior,1.78,1.31,Eredivisie,2025
+1380890,2025-08-24,NEC Nijmegen,NAC Breda,4.19,0.45,Eredivisie,2025
+1380892,2025-08-24,Ajax,Heracles,2.67,0.16,Eredivisie,2025
+1380893,2025-08-29,Groningen,Heracles,1.8,0.46,Eredivisie,2025
+1380894,2025-08-30,FC Volendam,Ajax,0.76,1.38,Eredivisie,2025
+1380895,2025-08-30,Heerenveen,GO Ahead Eagles,2.73,1.18,Eredivisie,2025
+1380896,2025-08-30,PSV Eindhoven,Telstar,1.72,1.48,Eredivisie,2025
+1380897,2025-08-30,Excelsior,Twente,0.37,2.52,Eredivisie,2025
+1380898,2025-08-31,Fortuna Sittard,NEC Nijmegen,1.33,1.9,Eredivisie,2025
+1380900,2025-08-31,PEC Zwolle,Utrecht,1.01,1.14,Eredivisie,2025
+1380899,2025-08-31,Sparta Rotterdam,Feyenoord,0.55,2.51,Eredivisie,2025
+1380901,2025-08-31,NAC Breda,AZ Alkmaar,1.96,2.82,Eredivisie,2025
+1380902,2025-09-13,Ajax,PEC Zwolle,2.59,0.53,Eredivisie,2025
+1380903,2025-09-13,GO Ahead Eagles,FC Volendam,2.14,1.31,Eredivisie,2025
+1380904,2025-09-13,NEC Nijmegen,PSV Eindhoven,2.0,2.23,Eredivisie,2025
+1380905,2025-09-13,Feyenoord,Heerenveen,0.91,1.17,Eredivisie,2025
+1380906,2025-09-13,Twente,NAC Breda,2.21,0.62,Eredivisie,2025
+1380907,2025-09-14,Excelsior,Sparta Rotterdam,1.55,1.59,Eredivisie,2025
+1380908,2025-09-14,Heracles,AZ Alkmaar,0.76,3.18,Eredivisie,2025
+1380909,2025-09-14,Utrecht,Groningen,1.24,1.69,Eredivisie,2025
+1380910,2025-09-14,Telstar,Fortuna Sittard,1.7,1.14,Eredivisie,2025
+1380911,2025-09-17,Feyenoord,Fortuna Sittard,2.13,0.3,Eredivisie,2025
+1380912,2025-09-19,Sparta Rotterdam,Twente,1.11,2.59,Eredivisie,2025
+1380913,2025-09-20,FC Volendam,Excelsior,1.48,1.76,Eredivisie,2025
+1380914,2025-09-20,Groningen,Telstar,1.8,0.84,Eredivisie,2025
+1380915,2025-09-20,Fortuna Sittard,Utrecht,1.16,0.96,Eredivisie,2025
+1380916,2025-09-20,NAC Breda,Heracles,2.5,1.09,Eredivisie,2025
+1380917,2025-09-21,PEC Zwolle,GO Ahead Eagles,0.49,2.07,Eredivisie,2025
+1380919,2025-09-21,PSV Eindhoven,Ajax,3.45,2.18,Eredivisie,2025
+1380918,2025-09-21,Heerenveen,NEC Nijmegen,2.81,0.94,Eredivisie,2025
+1380920,2025-09-21,AZ Alkmaar,Feyenoord,1.21,1.92,Eredivisie,2025
+1380888,2025-09-24,AZ Alkmaar,PEC Zwolle,2.49,0.91,Eredivisie,2025
+1380921,2025-09-26,Twente,Fortuna Sittard,2.9,0.48,Eredivisie,2025
+1380923,2025-09-27,Ajax,NAC Breda,1.87,1.56,Eredivisie,2025
+1380924,2025-09-27,FC Volendam,PEC Zwolle,1.96,1.03,Eredivisie,2025
+1380925,2025-09-27,Excelsior,PSV Eindhoven,2.17,2.67,Eredivisie,2025
+1380927,2025-09-27,Heracles,Sparta Rotterdam,1.33,1.5,Eredivisie,2025
+1380926,2025-09-28,NEC Nijmegen,AZ Alkmaar,1.81,0.38,Eredivisie,2025
+1380922,2025-09-28,Groningen,Feyenoord,0.98,1.17,Eredivisie,2025
+1380928,2025-09-28,Utrecht,Heerenveen,2.0,1.31,Eredivisie,2025
+1380929,2025-09-28,Telstar,GO Ahead Eagles,2.36,2.38,Eredivisie,2025
+1380930,2025-10-03,NAC Breda,Groningen,0.72,1.46,Eredivisie,2025
+1380931,2025-10-04,Sparta Rotterdam,Ajax,2.14,1.71,Eredivisie,2025
+1380932,2025-10-04,Fortuna Sittard,FC Volendam,1.58,0.84,Eredivisie,2025
+1380933,2025-10-04,PEC Zwolle,PSV Eindhoven,0.14,2.15,Eredivisie,2025
+1380934,2025-10-04,Heerenveen,Excelsior,2.01,0.57,Eredivisie,2025
+1380935,2025-10-05,Twente,Heracles,1.35,0.51,Eredivisie,2025
+1380937,2025-10-05,Feyenoord,Utrecht,3.42,0.49,Eredivisie,2025
+1380936,2025-10-05,AZ Alkmaar,Telstar,3.96,1.01,Eredivisie,2025
+1380938,2025-10-05,GO Ahead Eagles,NEC Nijmegen,0.76,0.95,Eredivisie,2025
+1380947,2025-10-18,NEC Nijmegen,Twente,0.68,1.98,Eredivisie,2025
+1380940,2025-10-18,PSV Eindhoven,GO Ahead Eagles,3.48,0.42,Eredivisie,2025
+1380941,2025-10-18,Utrecht,FC Volendam,2.54,0.46,Eredivisie,2025
+1380942,2025-10-18,Ajax,AZ Alkmaar,1.24,2.24,Eredivisie,2025
+1380943,2025-10-18,NAC Breda,PEC Zwolle,2.48,1.46,Eredivisie,2025
+1380946,2025-10-19,Telstar,Heerenveen,2.58,2.69,Eredivisie,2025
+1380945,2025-10-19,Excelsior,Fortuna Sittard,1.08,1.16,Eredivisie,2025
+1380944,2025-10-19,Groningen,Sparta Rotterdam,1.22,0.88,Eredivisie,2025
+1380939,2025-10-19,Heracles,Feyenoord,0.19,2.75,Eredivisie,2025
+1380948,2025-10-24,Heerenveen,NAC Breda,2.3,1.44,Eredivisie,2025
+1380949,2025-10-25,Fortuna Sittard,Groningen,1.2,1.77,Eredivisie,2025
+1380951,2025-10-25,Sparta Rotterdam,Telstar,1.79,0.63,Eredivisie,2025
+1380950,2025-10-25,FC Volendam,Heracles,1.54,1.16,Eredivisie,2025
+1380952,2025-10-25,PEC Zwolle,NEC Nijmegen,1.87,0.77,Eredivisie,2025
+1380953,2025-10-26,Twente,Ajax,2.75,0.99,Eredivisie,2025
+1380954,2025-10-26,Feyenoord,PSV Eindhoven,1.14,1.16,Eredivisie,2025
+1380956,2025-10-26,AZ Alkmaar,Utrecht,3.59,0.99,Eredivisie,2025
+1380955,2025-10-26,GO Ahead Eagles,Excelsior,1.81,0.54,Eredivisie,2025
+1380957,2025-10-31,PSV Eindhoven,Fortuna Sittard,2.2,0.73,Eredivisie,2025
+1380960,2025-11-01,Ajax,Heerenveen,1.11,1.06,Eredivisie,2025
+1380959,2025-11-01,NAC Breda,GO Ahead Eagles,0.63,0.4,Eredivisie,2025
+1380958,2025-11-01,Feyenoord,FC Volendam,4.82,0.97,Eredivisie,2025
+1380961,2025-11-01,Telstar,Excelsior,3.21,3.45,Eredivisie,2025
+1380962,2025-11-02,Heracles,PEC Zwolle,4.51,1.14,Eredivisie,2025
+1380963,2025-11-02,Groningen,Twente,3.33,1.44,Eredivisie,2025
+1380964,2025-11-02,Sparta Rotterdam,AZ Alkmaar,0.56,2.62,Eredivisie,2025
+1380965,2025-11-02,Utrecht,NEC Nijmegen,1.51,2.14,Eredivisie,2025
+1380966,2025-11-07,Twente,Telstar,1.75,0.63,Eredivisie,2025
+1380967,2025-11-08,Excelsior,Heracles,2.03,1.34,Eredivisie,2025
+1380968,2025-11-08,FC Volendam,NAC Breda,1.91,0.59,Eredivisie,2025
+1380969,2025-11-08,Fortuna Sittard,Heerenveen,1.83,1.49,Eredivisie,2025
+1380970,2025-11-08,PEC Zwolle,Sparta Rotterdam,1.05,0.94,Eredivisie,2025
+1380971,2025-11-09,Utrecht,Ajax,1.39,0.64,Eredivisie,2025
+1380973,2025-11-09,NEC Nijmegen,Groningen,1.57,1.38,Eredivisie,2025
+1380972,2025-11-09,AZ Alkmaar,PSV Eindhoven,0.28,2.39,Eredivisie,2025
+1380974,2025-11-09,GO Ahead Eagles,Feyenoord,1.67,2.68,Eredivisie,2025
+1380981,2025-11-22,NAC Breda,PSV Eindhoven,1.27,0.56,Eredivisie,2025
+1380975,2025-11-22,Ajax,Excelsior,1.44,0.51,Eredivisie,2025
+1380976,2025-11-22,FC Volendam,Twente,1.39,2.61,Eredivisie,2025
+1380980,2025-11-22,Heracles,GO Ahead Eagles,2.63,0.9,Eredivisie,2025
+1380982,2025-11-22,Sparta Rotterdam,Fortuna Sittard,1.84,1.17,Eredivisie,2025
+1380979,2025-11-23,Heerenveen,AZ Alkmaar,3.14,1.17,Eredivisie,2025
+1380977,2025-11-23,Feyenoord,NEC Nijmegen,2.82,2.26,Eredivisie,2025
+1380983,2025-11-23,Telstar,Utrecht,1.31,0.87,Eredivisie,2025
+1380978,2025-11-23,Groningen,PEC Zwolle,2.55,0.77,Eredivisie,2025
+1380992,2025-11-28,PEC Zwolle,Heerenveen,1.61,1.92,Eredivisie,2025
+1380985,2025-11-29,Excelsior,NAC Breda,0.94,1.57,Eredivisie,2025
+1380989,2025-11-29,Fortuna Sittard,Heracles,1.84,0.57,Eredivisie,2025
+1380987,2025-11-29,NEC Nijmegen,Sparta Rotterdam,2.78,1.7,Eredivisie,2025
+1380988,2025-11-30,PSV Eindhoven,FC Volendam,1.7,0.53,Eredivisie,2025
+1380986,2025-11-30,GO Ahead Eagles,Utrecht,0.89,1.8,Eredivisie,2025
+1380990,2025-11-30,Telstar,Feyenoord,1.55,1.55,Eredivisie,2025
+1380991,2025-11-30,Twente,AZ Alkmaar,1.04,1.31,Eredivisie,2025
+1380984,2025-12-02,Ajax,Groningen,1.52,1.96,Eredivisie,2025
+1380994,2025-12-05,Excelsior,Groningen,2.01,3.89,Eredivisie,2025
+1380997,2025-12-06,Heerenveen,PSV Eindhoven,0.81,0.77,Eredivisie,2025
+1380999,2025-12-06,Fortuna Sittard,Ajax,2.72,1.01,Eredivisie,2025
+1380998,2025-12-06,Heracles,Telstar,2.21,0.75,Eredivisie,2025
+1380996,2025-12-06,Feyenoord,PEC Zwolle,3.4,0.97,Eredivisie,2025
+1381001,2025-12-07,Utrecht,Twente,0.82,1.54,Eredivisie,2025
+1380993,2025-12-07,AZ Alkmaar,GO Ahead Eagles,2.11,1.33,Eredivisie,2025
+1380995,2025-12-07,FC Volendam,NEC Nijmegen,2.14,1.29,Eredivisie,2025
+1381000,2025-12-07,Sparta Rotterdam,NAC Breda,2.43,2.26,Eredivisie,2025
+1381008,2025-12-13,Telstar,NEC Nijmegen,1.82,2.34,Eredivisie,2025
+1381004,2025-12-13,Groningen,FC Volendam,2.67,0.22,Eredivisie,2025
+1381006,2025-12-13,PSV Eindhoven,Heracles,3.22,2.64,Eredivisie,2025
+1381010,2025-12-13,PEC Zwolle,Fortuna Sittard,1.58,0.72,Eredivisie,2025
+1381007,2025-12-14,Sparta Rotterdam,Heerenveen,0.52,1.38,Eredivisie,2025
+1381002,2025-12-14,Ajax,Feyenoord,1.25,1.89,Eredivisie,2025
+1381009,2025-12-14,Twente,GO Ahead Eagles,3.55,0.32,Eredivisie,2025
+1381005,2025-12-14,NAC Breda,Utrecht,1.2,0.66,Eredivisie,2025
+1381015,2025-12-20,Heracles,Heerenveen,0.48,1.76,Eredivisie,2025
+1381011,2025-12-20,Excelsior,PEC Zwolle,1.71,1.18,Eredivisie,2025
+1381017,2025-12-20,NEC Nijmegen,Ajax,2.05,2.02,Eredivisie,2025
+1381016,2025-12-20,NAC Breda,Telstar,0.73,1.48,Eredivisie,2025
+1381019,2025-12-21,Utrecht,PSV Eindhoven,1.37,1.53,Eredivisie,2025
+1381013,2025-12-21,Feyenoord,Twente,0.69,2.54,Eredivisie,2025
+1381014,2025-12-21,GO Ahead Eagles,Groningen,1.06,1.13,Eredivisie,2025
+1381018,2025-12-21,Fortuna Sittard,AZ Alkmaar,1.38,3.79,Eredivisie,2025
+1381012,2025-12-21,FC Volendam,Sparta Rotterdam,1.06,2.75,Eredivisie,2025
+1381020,2026-01-10,AZ Alkmaar,FC Volendam,2.39,0.48,Eredivisie,2025
+1381028,2026-01-10,Twente,PEC Zwolle,2.07,0.4,Eredivisie,2025
+1381025,2026-01-10,PSV Eindhoven,Excelsior,2.3,0.5,Eredivisie,2025
+1381022,2026-01-10,Groningen,NAC Breda,1.3,0.82,Eredivisie,2025
+1381023,2026-01-11,Heerenveen,Feyenoord,0.92,1.08,Eredivisie,2025
+1381021,2026-01-11,GO Ahead Eagles,Fortuna Sittard,1.72,0.84,Eredivisie,2025
+1381027,2026-01-11,Telstar,Ajax,0.77,1.74,Eredivisie,2025
+1381026,2026-01-11,Sparta Rotterdam,Heracles,2.39,0.33,Eredivisie,2025
+1381029,2026-01-17,Ajax,GO Ahead Eagles,3.43,0.86,Eredivisie,2025
+1381037,2026-01-17,PEC Zwolle,AZ Alkmaar,1.73,0.61,Eredivisie,2025
+1381030,2026-01-17,Excelsior,Telstar,1.48,1.44,Eredivisie,2025
+1381036,2026-01-17,Fortuna Sittard,PSV Eindhoven,0.33,3.03,Eredivisie,2025
+1381035,2026-01-17,NAC Breda,NEC Nijmegen,0.82,1.19,Eredivisie,2025
+1381033,2026-01-18,Heerenveen,Groningen,1.28,1.87,Eredivisie,2025
+1381034,2026-01-18,Heracles,Twente,0.7,2.53,Eredivisie,2025
+1381031,2026-01-18,FC Volendam,Utrecht,0.4,0.93,Eredivisie,2025
+1381032,2026-01-18,Feyenoord,Sparta Rotterdam,1.69,1.6,Eredivisie,2025
+1381003,2026-01-21,AZ Alkmaar,Excelsior,1.85,1.12,Eredivisie,2025
+1381038,2026-01-24,Ajax,FC Volendam,3.44,0.31,Eredivisie,2025
+1381042,2026-01-24,NEC Nijmegen,PEC Zwolle,1.5,0.71,Eredivisie,2025
+1381043,2026-01-24,PSV Eindhoven,NAC Breda,1.79,1.5,Eredivisie,2025
+1381045,2026-01-24,Twente,Excelsior,1.2,0.99,Eredivisie,2025
+1381044,2026-01-25,Telstar,AZ Alkmaar,1.09,1.16,Eredivisie,2025
+1381041,2026-01-25,Groningen,Fortuna Sittard,2.42,0.8,Eredivisie,2025
+1381046,2026-01-25,Utrecht,Sparta Rotterdam,1.4,0.59,Eredivisie,2025
+1381039,2026-01-25,Feyenoord,Heracles,1.48,2.05,Eredivisie,2025
+1381052,2026-01-30,NAC Breda,Twente,1.26,1.63,Eredivisie,2025
+1381047,2026-01-31,AZ Alkmaar,NEC Nijmegen,1.39,1.36,Eredivisie,2025
+1381055,2026-01-31,PEC Zwolle,Telstar,2.85,1.75,Eredivisie,2025
+1381054,2026-01-31,Sparta Rotterdam,Groningen,1.19,0.28,Eredivisie,2025
+1381048,2026-02-01,Excelsior,Ajax,0.8,0.63,Eredivisie,2025
+1381053,2026-02-01,PSV Eindhoven,Feyenoord,1.95,0.35,Eredivisie,2025
+1381051,2026-02-01,Heracles,Fortuna Sittard,2.01,0.6,Eredivisie,2025
+1381050,2026-02-01,Heerenveen,Utrecht,1.64,0.83,Eredivisie,2025
+1381049,2026-02-01,FC Volendam,GO Ahead Eagles,1.22,0.8,Eredivisie,2025
+1381059,2026-02-06,NAC Breda,Excelsior,1.08,0.86,Eredivisie,2025
+1381060,2026-02-07,NEC Nijmegen,Heracles,2.55,1.16,Eredivisie,2025
+1381064,2026-02-07,PEC Zwolle,FC Volendam,0.7,1.89,Eredivisie,2025
+1381062,2026-02-07,Twente,Heerenveen,3.18,0.29,Eredivisie,2025
+1381061,2026-02-07,Fortuna Sittard,Sparta Rotterdam,0.99,1.31,Eredivisie,2025
+1381063,2026-02-08,Utrecht,Feyenoord,1.06,0.95,Eredivisie,2025
+1381056,2026-02-08,AZ Alkmaar,Ajax,1.68,0.97,Eredivisie,2025
+1381057,2026-02-08,GO Ahead Eagles,Telstar,2.45,1.57,Eredivisie,2025
+1381058,2026-02-08,Groningen,PSV Eindhoven,0.89,2.74,Eredivisie,2025
+1381040,2026-02-11,GO Ahead Eagles,Heerenveen,0.77,1.82,Eredivisie,2025
+1381024,2026-02-11,NEC Nijmegen,Utrecht,1.99,1.78,Eredivisie,2025
+1381067,2026-02-13,FC Volendam,PSV Eindhoven,1.18,1.69,Eredivisie,2025
+1381071,2026-02-14,Heracles,NAC Breda,1.12,1.26,Eredivisie,2025
+1381066,2026-02-14,Excelsior,AZ Alkmaar,0.75,2.01,Eredivisie,2025
+1381065,2026-02-14,Ajax,Fortuna Sittard,1.18,0.84,Eredivisie,2025
+1381069,2026-02-14,Groningen,Utrecht,0.78,2.44,Eredivisie,2025
+1381068,2026-02-15,Feyenoord,GO Ahead Eagles,2.99,0.12,Eredivisie,2025
+1381070,2026-02-15,Heerenveen,PEC Zwolle,1.58,1.19,Eredivisie,2025
+1381073,2026-02-15,Telstar,Twente,1.32,2.03,Eredivisie,2025
+1381072,2026-02-17,Sparta Rotterdam,NEC Nijmegen,1.7,0.99,Eredivisie,2025
+1381080,2026-02-20,Fortuna Sittard,Excelsior,1.93,1.23,Eredivisie,2025
+1381079,2026-02-21,PSV Eindhoven,Heerenveen,3.27,1.28,Eredivisie,2025
+1381078,2026-02-21,NAC Breda,FC Volendam,1.39,0.52,Eredivisie,2025
+1381074,2026-02-21,Ajax,NEC Nijmegen,1.48,1.16,Eredivisie,2025
+1381081,2026-02-22,Twente,Groningen,0.78,0.92,Eredivisie,2025
+1381082,2026-02-22,Utrecht,PEC Zwolle,2.11,0.85,Eredivisie,2025
+1381077,2026-02-22,GO Ahead Eagles,Heracles,2.6,0.8,Eredivisie,2025
+1381075,2026-02-22,AZ Alkmaar,Sparta Rotterdam,1.39,0.91,Eredivisie,2025
+1381076,2026-02-22,Feyenoord,Telstar,2.09,1.27,Eredivisie,2025
+1381088,2026-02-27,Telstar,NAC Breda,1.24,0.36,Eredivisie,2025
+1381085,2026-02-28,Heerenveen,Sparta Rotterdam,1.27,0.83,Eredivisie,2025
+1381086,2026-02-28,Heracles,PSV Eindhoven,1.22,3.26,Eredivisie,2025
+1381087,2026-02-28,NEC Nijmegen,Fortuna Sittard,1.46,2.45,Eredivisie,2025
+1381091,2026-03-01,PEC Zwolle,Ajax,1.2,0.35,Eredivisie,2025
+1381089,2026-03-01,Twente,Feyenoord,1.18,0.88,Eredivisie,2025
+1381084,2026-03-01,FC Volendam,Groningen,2.38,4.16,Eredivisie,2025
+1381090,2026-03-01,Utrecht,AZ Alkmaar,1.19,0.76,Eredivisie,2025
+1381083,2026-03-01,Excelsior,GO Ahead Eagles,1.86,0.43,Eredivisie,2025
+1381095,2026-03-06,Heracles,Utrecht,0.31,2.17,Eredivisie,2025
+1381094,2026-03-07,Groningen,Ajax,1.92,1.86,Eredivisie,2025
+1381098,2026-03-07,PSV Eindhoven,AZ Alkmaar,2.33,1.6,Eredivisie,2025
+1381092,2026-03-07,Excelsior,Heerenveen,2.56,1.69,Eredivisie,2025
+1381100,2026-03-08,Sparta Rotterdam,PEC Zwolle,1.67,1.25,Eredivisie,2025
+1381099,2026-03-08,Fortuna Sittard,Telstar,2.83,2.65,Eredivisie,2025
+1381093,2026-03-08,GO Ahead Eagles,Twente,2.03,2.34,Eredivisie,2025
+1381096,2026-03-08,NAC Breda,Feyenoord,1.03,1.64,Eredivisie,2025
+1381097,2026-03-08,NEC Nijmegen,FC Volendam,1.44,0.45,Eredivisie,2025
+1381109,2026-03-13,PEC Zwolle,Groningen,2.26,2.09,Eredivisie,2025
+1381103,2026-03-14,FC Volendam,Fortuna Sittard,2.21,2.09,Eredivisie,2025
+1381107,2026-03-14,PSV Eindhoven,NEC Nijmegen,1.53,2.09,Eredivisie,2025
+1381106,2026-03-14,Heerenveen,Telstar,1.92,2.15,Eredivisie,2025
+1381101,2026-03-14,Ajax,Sparta Rotterdam,3.02,0.19,Eredivisie,2025
+1381108,2026-03-15,Twente,Utrecht,1.48,1.39,Eredivisie,2025
+1381102,2026-03-15,AZ Alkmaar,Heracles,3.28,0.66,Eredivisie,2025
+1381104,2026-03-15,Feyenoord,Excelsior,3.36,0.84,Eredivisie,2025
+1381105,2026-03-15,GO Ahead Eagles,NAC Breda,1.56,1.13,Eredivisie,2025
+1381112,2026-03-20,Heracles,Excelsior,1.52,1.06,Eredivisie,2025
+1381114,2026-03-21,Fortuna Sittard,Twente,1.25,1.85,Eredivisie,2025
+1381115,2026-03-21,Sparta Rotterdam,FC Volendam,1.33,0.34,Eredivisie,2025
+1381118,2026-03-21,PEC Zwolle,NAC Breda,0.82,1.04,Eredivisie,2025
+1381113,2026-03-22,NEC Nijmegen,Heerenveen,2.22,1.38,Eredivisie,2025
+1381117,2026-03-22,Utrecht,GO Ahead Eagles,2.29,0.62,Eredivisie,2025
+1381110,2026-03-22,Feyenoord,Ajax,1.37,0.21,Eredivisie,2025
+1381111,2026-03-22,Groningen,AZ Alkmaar,2.5,1.73,Eredivisie,2025
+1381116,2026-03-22,Telstar,PSV Eindhoven,1.84,1.34,Eredivisie,2025
+1381126,2026-04-04,PSV Eindhoven,Utrecht,3.48,1.36,Eredivisie,2025
+1381120,2026-04-04,AZ Alkmaar,Fortuna Sittard,1.92,0.4,Eredivisie,2025
+1381127,2026-04-04,Telstar,Groningen,1.28,2.36,Eredivisie,2025
+1381119,2026-04-04,Ajax,Twente,0.94,1.37,Eredivisie,2025
+1381121,2026-04-04,Excelsior,NEC Nijmegen,0.72,1.32,Eredivisie,2025
+1381123,2026-04-05,GO Ahead Eagles,PEC Zwolle,2.02,1.49,Eredivisie,2025
+1381124,2026-04-05,Heerenveen,Heracles,3.42,1.33,Eredivisie,2025
+1381122,2026-04-05,FC Volendam,Feyenoord,1.45,1.23,Eredivisie,2025
+1381125,2026-04-05,NAC Breda,Sparta Rotterdam,0.51,0.55,Eredivisie,2025
+1381134,2026-04-10,Twente,FC Volendam,2.08,1.15,Eredivisie,2025
+1381135,2026-04-11,Utrecht,Telstar,1.57,1.32,Eredivisie,2025
+1381133,2026-04-11,Sparta Rotterdam,PSV Eindhoven,1.2,2.0,Eredivisie,2025
+1381129,2026-04-11,Groningen,GO Ahead Eagles,1.72,0.82,Eredivisie,2025
+1381130,2026-04-11,Heracles,Ajax,1.19,1.92,Eredivisie,2025
+1381132,2026-04-12,Fortuna Sittard,NAC Breda,1.59,0.75,Eredivisie,2025
+1381136,2026-04-12,PEC Zwolle,Excelsior,2.66,1.5,Eredivisie,2025
+1381131,2026-04-12,NEC Nijmegen,Feyenoord,2.04,1.68,Eredivisie,2025
+1381128,2026-04-12,AZ Alkmaar,Heerenveen,1.85,0.64,Eredivisie,2025
+1381144,2026-04-22,Telstar,Sparta Rotterdam,1.7,1.04,Eredivisie,2025
+1381139,2026-04-23,GO Ahead Eagles,AZ Alkmaar,1.33,1.42,Eredivisie,2025
+1381143,2026-04-23,PSV Eindhoven,PEC Zwolle,1.9,0.81,Eredivisie,2025
+1381138,2026-04-25,Feyenoord,Groningen,1.64,1.46,Eredivisie,2025
+1381140,2026-04-25,Heerenveen,Fortuna Sittard,2.41,0.85,Eredivisie,2025
+1381142,2026-04-25,NAC Breda,Ajax,1.45,2.43,Eredivisie,2025
+1381145,2026-04-25,Twente,NEC Nijmegen,1.28,1.86,Eredivisie,2025
+1381137,2026-04-26,Excelsior,Utrecht,3.31,0.84,Eredivisie,2025
+1381141,2026-04-26,Heracles,FC Volendam,0.79,0.91,Eredivisie,2025
+1381153,2026-05-02,Utrecht,NAC Breda,2.9,0.45,Eredivisie,2025
+1381149,2026-05-02,Groningen,Excelsior,0.87,2.38,Eredivisie,2025
+1381146,2026-05-02,Ajax,PSV Eindhoven,0.95,1.8,Eredivisie,2025
+1381150,2026-05-02,NEC Nijmegen,Telstar,2.11,1.22,Eredivisie,2025
+1381148,2026-05-03,FC Volendam,Heerenveen,1.49,1.64,Eredivisie,2025
+1381154,2026-05-03,PEC Zwolle,Heracles,0.62,1.0,Eredivisie,2025
+1381151,2026-05-03,Fortuna Sittard,Feyenoord,0.77,2.5,Eredivisie,2025
+1381147,2026-05-03,AZ Alkmaar,Twente,1.39,0.46,Eredivisie,2025
+1381152,2026-05-03,Sparta Rotterdam,GO Ahead Eagles,1.89,2.08,Eredivisie,2025
+1381156,2026-05-10,Excelsior,FC Volendam,0.38,0.46,Eredivisie,2025
+1381159,2026-05-10,Groningen,NEC Nijmegen,1.56,1.08,Eredivisie,2025
+1381163,2026-05-10,Twente,Sparta Rotterdam,3.92,0.86,Eredivisie,2025
+1381160,2026-05-11,NAC Breda,Heerenveen,1.86,1.0,Eredivisie,2025
+1381172,2026-05-17,PEC Zwolle,Feyenoord,0.8,3.21,Eredivisie,2025
+1381169,2026-05-17,PSV Eindhoven,Twente,2.49,1.41,Eredivisie,2025
+1381164,2026-05-17,AZ Alkmaar,NAC Breda,1.45,2.08,Eredivisie,2025
+1381167,2026-05-17,Heracles,Groningen,0.64,1.17,Eredivisie,2025
+1381171,2026-05-17,Utrecht,Fortuna Sittard,2.09,0.48,Eredivisie,2025
+1381166,2026-05-17,Heerenveen,Ajax,1.61,1.86,Eredivisie,2025
+1381168,2026-05-17,NEC Nijmegen,GO Ahead Eagles,4.44,0.32,Eredivisie,2025
+1381165,2026-05-17,FC Volendam,Telstar,1.09,1.4,Eredivisie,2025
+1381170,2026-05-17,Sparta Rotterdam,Excelsior,1.76,0.95,Eredivisie,2025
+1545411,2026-05-21,Ajax,Groningen,1.83,0.16,Eredivisie,2025
+1545412,2026-05-21,Utrecht,Heerenveen,2.08,1.26,Eredivisie,2025
+1546052,2026-05-24,Ajax,Utrecht,1.47,0.96,Eredivisie,2025

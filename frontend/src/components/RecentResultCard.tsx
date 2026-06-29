@@ -11,16 +11,12 @@ import {
   INTERNATIONAL_LEAGUE,
   getPostmortem,
 } from "@/lib/api";
+// Grading uses the shared rule (mirrors backend /stats) so the per-card badge
+// can't disagree with the page accuracy or /stats. Display labels stay local.
+import { gradeMatch, goalsHit, hasResult } from "@/lib/matchGrade";
 
 interface Props {
   match: Match;
-}
-
-function actualOutcome(match: Match): "H" | "D" | "A" | null {
-  if (match.home_goals == null || match.away_goals == null) return null;
-  if (match.home_goals > match.away_goals) return "H";
-  if (match.home_goals === match.away_goals) return "D";
-  return "A";
 }
 
 function predictedOutcome(p: PredictionEmbed): "H" | "D" | "A" {
@@ -36,34 +32,11 @@ function outcomeLabel(o: "H" | "D" | "A", home: string, away: string) {
   return `${away} win`;
 }
 
-function goalsCorrect(match: Match, p: PredictionEmbed): boolean | null {
-  if (match.home_goals == null || match.away_goals == null) return null;
-  const actual = match.home_goals + match.away_goals > 2.5 ? "OVER" : "UNDER";
-  return p.goals_prediction === actual;
-}
-
-type CardState = "correct" | "partial" | "wrong" | null;
-
-function cardState(
-  resultCorrect: boolean | null,
-  goalsOk: boolean | null,
-): CardState {
-  if (resultCorrect === null) return null;
-  if (goalsOk !== null) {
-    if (resultCorrect && goalsOk) return "correct";
-    if (!resultCorrect && !goalsOk) return "wrong";
-    return "partial";
-  }
-  return resultCorrect ? "correct" : "wrong";
-}
-
 export default function RecentResultCard({ match }: Props) {
   const p = match.prediction ?? null;
-  const actual = actualOutcome(match);
   const predicted = p ? predictedOutcome(p) : null;
-  const resultCorrect = actual && predicted ? actual === predicted : null;
-  const goalsOk = p ? goalsCorrect(match, p) : null;
-  const state = cardState(resultCorrect, goalsOk);
+  const goalsOk = hasResult(match) ? goalsHit(match) : null;
+  const state = hasResult(match) ? gradeMatch(match) : null;
 
   const [postmortem, setPostmortem] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);

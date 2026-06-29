@@ -154,9 +154,8 @@ class ROIStats(BaseModel):
 class EVDataPoint(BaseModel):
     """One date in the cumulative EV / P&L time series.
 
-    EV uses the market-shrunk probability (model blended 50/50 toward the
-    bookmaker-implied prob), not the raw model prob — the raw version
-    systematically overstated edge and diverged from realised P&L."""
+    EV uses the PURE model probability vs the market price (anchoring + the
+    50/50 market-shrinkage were removed 2026-06-17; MARKET_SHRINKAGE=0)."""
     date: str                # ISO date "YYYY-MM-DD"
     daily_ev: float          # expected value added this day (€10 stake)
     daily_pnl: float         # actual P&L this day
@@ -181,7 +180,19 @@ class ResultCalibration(BaseModel):
     away: list[CalibrationBucket]
 
 
+class MethodologyInfo(BaseModel):
+    """Honesty flag: the model changed on the cutoff date (market features +
+    anchoring removed → market-independent). Predictions settled BEFORE the
+    cutoff were served by the prior anchored model, so all-time accuracy/ROI
+    below mixes two methodologies. The UI surfaces this so the numbers aren't
+    read as if they all reflect the current model."""
+    cutoff: str                  # ISO date the current (market-independent) model began
+    settled_before: int          # settled predictions from the prior (anchored) model
+    settled_after: int           # settled predictions from the current model
+
+
 class StatsResponse(BaseModel):
+    methodology: Optional[MethodologyInfo] = None
     rolling: RollingAccuracy
     top_picks: Optional[TopPicksStats] = None          # None when no suggested_market data yet
     by_league: list[LeagueBreakdown]
