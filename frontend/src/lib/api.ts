@@ -160,6 +160,12 @@ export interface PoissonStats {
   away_win_and_ng:    number;   // away wins, only away scores (0-1, 0-2…)
 }
 
+export interface WatchMarket {
+  market:      string;             // "GG @ 2.33"
+  ev_pct:      number;             // model edge, e.g. 21.2
+  market_pct:  number | null;      // de-vigged bookmaker probability
+}
+
 export interface MatchAnalysis {
   match_id:          number;
   home_team:         string;
@@ -170,6 +176,7 @@ export interface MatchAnalysis {
   analysis:          string;
   suggested_market:  string | null;          // primary pick (backwards compat)
   suggested_markets: string[];               // ranked list, up to 2
+  watch_markets?:    WatchMarket[];           // model edge, unproven — shadow-tracked
   poisson_stats:     PoissonStats | null;    // extended stats from λ_home/λ_away
   has_odds_data:     boolean;
   has_injury_data:   boolean;

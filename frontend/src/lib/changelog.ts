@@ -18,6 +18,13 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: "2026-06-30-watch-markets",
+    date: "2026-06-30",
+    tag: "improvement",
+    title: "Value markets now earn their place on data",
+    body: "Markets like GG/Over that the model rates higher than the bookmaker are no longer hidden — they appear as “tracking (unproven)” and get recorded, then promote to a real suggestion only once the current model's own settled record backs them. No more permanent bans inherited from the old model.",
+  },
+  {
     id: "2026-06-30-fair-value-roi",
     date: "2026-06-30",
     tag: "new",

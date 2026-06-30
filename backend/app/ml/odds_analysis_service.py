@@ -204,16 +204,34 @@ def run_national_comparison(
     ev         = _compute_ev(model_probs, bm_data)
     raw_odds   = (bm_data or {}).get("raw_odds", {})
     fair_probs = (bm_data or {}).get("fair_probs", {})
-    ev_markets = _top_ev_markets(ev, raw_odds, fair_probs=fair_probs, model_probs=model_probs, n=2)
+
+    # Dynamic, data-driven suggestable set for the national path (see
+    # proven_markets). Markets that qualify but aren't proven yet are surfaced as
+    # "watch" instead of being silently hidden — so e.g. a real GG edge is shown
+    # and shadow-tracked, but never headlined until the new model's record earns it.
+    try:
+        from backend.app.database import SessionLocal
+        _db = SessionLocal()
+        try:
+            proven = proven_markets(_db, "national")
+        finally:
+            _db.close()
+    except Exception:
+        proven = set(BASE_SUGGESTABLE)
+
+    ev_markets = _top_ev_markets(ev, raw_odds, fair_probs=fair_probs,
+                                 model_probs=model_probs, n=2, suggestable=proven)
+    watch_markets = _watch_markets(ev, raw_odds, fair_probs=fair_probs,
+                                   model_probs=model_probs, n=3, suggestable=proven)
     ev_best    = ev_markets[0] if ev_markets else None
 
     analysis = _get_llm_analysis(
-        home_team, away_team, tournament, model_probs, bm_data, injury_data=None
+        home_team, away_team, tournament, model_probs, bm_data,
+        injury_data=None, watch_markets=watch_markets,
     )
 
-    # The deterministic, market-shrunk EV gate is canonical — never let the LLM
-    # surface a "value bet" the gate rejected (that's how the toxic GG @ +78%
-    # suggestions leaked through). No qualifying market → no value bet.
+    # Proven markets are the canonical suggestion; watch markets are shown
+    # separately as unproven (data-collection), never as the headline pick.
     suggested = ev_best
     suggested_markets = ev_markets
 
@@ -227,6 +245,7 @@ def run_national_comparison(
         "analysis":         analysis["text"],
         "suggested_market": suggested,
         "suggested_markets": suggested_markets,
+        "watch_markets":     watch_markets,
         "has_odds_data":    bm_data is not None,
         "has_injury_data":  False,
     }
@@ -635,6 +654,85 @@ MARKET_SHRINKAGE = 0.0
 # Only the profitable markets stay suggestable; re-enable others only after a
 # positive rolling-90-day record.
 SUGGESTABLE_MARKETS = {"Home Win", "Draw"}
+
+# ── Dynamic, data-driven suggestable set (national) ──────────────────────────
+# The static set above was calibrated on the OLD (pre-2026-06-17, market-anchored)
+# model — and once a market was excluded it never got tracked, so the exclusion
+# could never be re-evaluated (self-fulfilling). Instead, for the national path
+# we now SHADOW-TRACK every market that clears the EV/sanity filters and let the
+# NEW model's own settled record decide what becomes a headline suggestion:
+#
+#   proven_markets = BASE_SUGGESTABLE ∪ {market : post-cutoff settled n ≥ MIN
+#                                                 and ROI ≥ FLOOR}
+#
+# A qualifying market that isn't proven yet is surfaced as "watch" (unproven) —
+# shown and recorded, but never staked with conviction until the data backs it.
+BASE_SUGGESTABLE   = {"Home Win", "Draw"}
+NEW_MODEL_CUTOFF   = "2026-06-17"   # market-independent retrain — see methodology
+PROVEN_MIN_SAMPLES = 30             # settled tickets before a market can promote
+PROVEN_ROI_FLOOR   = 0.0            # must at least break even on the new model
+_PROVEN_TTL        = 1800           # 30 min cache
+
+
+def _market_won(market: str, res: Optional[str], hg, ag) -> Optional[bool]:
+    """Did a single-market ticket win, given the actual result + goals?"""
+    if res is None and (hg is None or ag is None):
+        return None
+    total = (hg or 0) + (ag or 0)
+    return {
+        "Home Win":  res == "H",
+        "Draw":      res == "D",
+        "Away Win":  res == "A",
+        "Over 2.5":  total > 2.5,
+        "Under 2.5": total < 2.5,
+        "GG":        (hg or 0) > 0 and (ag or 0) > 0,
+        "NG":        not ((hg or 0) > 0 and (ag or 0) > 0),
+    }.get(market)
+
+
+def proven_markets(db, source: str = "national") -> set[str]:
+    """Markets allowed as headline suggestions = the base trusted set plus any
+    whose NEW-model (post-cutoff) settled record clears the bar. Cached 30 min.
+
+    Only implemented for the national ledger; other sources keep the static set
+    (their gate passes no `suggestable`, so this isn't consulted)."""
+    if source != "national":
+        return set(BASE_SUGGESTABLE)
+    ck = f"proven_markets:{source}"
+    cached = cache_get(ck)
+    if cached is not CACHE_MISS:
+        return set(cached)
+
+    from sqlalchemy import text
+    proven = set(BASE_SUGGESTABLE)
+    try:
+        rows = db.execute(text("""
+            SELECT vb.market, vb.odds,
+                   np.actual_result, np.actual_home_goals, np.actual_away_goals
+            FROM value_bets vb
+            JOIN national_predictions np ON np.id = vb.national_prediction_id
+            WHERE vb.source = 'national'
+              AND vb.created_at >= :cutoff
+              AND np.actual_result IS NOT NULL
+        """), {"cutoff": NEW_MODEL_CUTOFF}).fetchall()
+    except Exception:
+        return proven
+
+    agg: dict[str, list] = {}   # market → [n, pnl]
+    for market, odds, res, hg, ag in rows:
+        won = _market_won(market, res, hg, ag)
+        if won is None or not odds:
+            continue
+        a = agg.setdefault(market, [0, 0.0])
+        a[0] += 1
+        a[1] += (float(odds) - 1.0) if won else -1.0
+
+    for market, (n, pnl) in agg.items():
+        if n >= PROVEN_MIN_SAMPLES and (pnl / n) >= PROVEN_ROI_FLOOR:
+            proven.add(market)
+
+    cache_set(ck, list(proven), _PROVEN_TTL)
+    return proven
 
 
 # ── Team name matching ────────────────────────────────────────────────────────
@@ -1143,44 +1241,34 @@ def shrunk_ev(
     return p_shrunk * float(odds) - 1.0
 
 
-def _top_ev_markets(
+_ODDS_KEY = {
+    "Home Win":  "home_win",  "Draw":     "draw",
+    "Away Win":  "away_win",  "Over 2.5": "over_2_5",
+    "Under 2.5": "under_2_5", "GG":       "btts_yes",
+    "NG":        "btts_no",
+}
+_MODEL_KEY = {
+    "Home Win":  "home_win", "Draw":     "draw",
+    "Away Win":  "away_win", "Over 2.5": "over_2_5",
+    "Under 2.5": "over_2_5",   # complement
+    "GG":        "btts",     "NG":       "btts",
+}
+
+
+def _qualifying_markets(
     ev: dict,
     raw_odds: dict,
     fair_probs: Optional[dict] = None,
     model_probs: Optional[dict] = None,
-    n: int = 2,
-) -> list:
-    """
-    Return up to `n` 'Market Name @ odds' strings ranked by EV, each passing
-    all probability sanity filters.
+) -> dict:
+    """Markets passing the EV + sanity filters (1–4) — WITHOUT the suggestable
+    kill-switch. Returns {market: raw_ev}. Callers apply the kill-switch:
+    _top_ev_markets keeps only proven markets, _watch_markets keeps the rest.
 
-    Filters applied in order:
-      1. EV ≥ threshold (MIN_EV_FAVORITE for model's top pick, MIN_EV_ALT otherwise)
-      2. Bookmaker-implied probability ≥ MIN_BM_PROB (10%) — excludes longshots
-      3. Model probability ≥ MIN_MODEL_PROB_1X2 / MIN_MODEL_PROB_GOALS — a value
-         bet must have a meaningful chance of occurring, not just high odds
-      4. 1×2 markets: don't suggest the outcome ranked LAST by model probability
-         (e.g. don't suggest Draw when model ranks it below both Home Win and
-         Away Win — the model itself doesn't believe in it)
-    """
-    odds_key = {
-        "Home Win":  "home_win",  "Draw":     "draw",
-        "Away Win":  "away_win",  "Over 2.5": "over_2_5",
-        "Under 2.5": "under_2_5","GG":        "btts_yes",
-        "NG":        "btts_no",
-    }
-    # Reverse lookup for model_probs key from market name
-    model_key = {
-        "Home Win":  "home_win", "Draw":     "draw",
-        "Away Win":  "away_win", "Over 2.5": "over_2_5",
-        "Under 2.5": "over_2_5",  # complement
-        "GG":        "btts",     "NG":       "btts",
-    }
-
-    # Rank 1×2 outcomes by model probability — used for "last place" filter
-    result_probs: dict[str, float] = {}
-    model_favorite: Optional[str] = None
-    model_last: Optional[str] = None   # the LEAST likely 1×2 outcome per model
+    Filters: 1) EV ≥ threshold (favorite vs alt) at the market-shrunk prob,
+    2) bookmaker prob ≥ MIN_BM_PROB (no longshots), 3) model prob ≥ the per-type
+    floor (plausible outcome), 4) never the model's least-likely 1×2 outcome."""
+    model_favorite = model_last = None
     if model_probs:
         result_probs = {
             "Home Win": model_probs.get("home_win", 0),
@@ -1193,73 +1281,86 @@ def _top_ev_markets(
     def _threshold(market: str) -> float:
         return MIN_EV_FAVORITE if market == model_favorite else MIN_EV_ALT
 
-    # ── Filter 0: market kill-switch ──────────────────────────────────────────
-    # Only markets with a profitable tracked record are suggestable.
-    ev = {k: v for k, v in ev.items() if k in SUGGESTABLE_MARKETS}
-    if not ev:
-        return []
-
-    # ── Filter 1: EV threshold at the market-shrunk probability ──────────────
-    # p′ = (1−S)·model + S·fair. Requires fair_probs and model_probs; markets
-    # that can't be validated against the market are dropped (conservative).
+    # Filter 1 — EV ≥ threshold at the market-shrunk probability
     positive = {}
     for k, v in ev.items():
         sev = shrunk_ev(k, model_probs, fair_probs, raw_odds)
         if sev is not None and sev >= _threshold(k):
             positive[k] = v
-    if not positive:
-        return []
 
-    # ── Filter 2: bookmaker probability (longshot exclusion) ──────────────────
+    # Filter 2 — bookmaker probability (longshot exclusion)
     if fair_probs:
-        positive = {
-            k: v for k, v in positive.items()
-            if (fair_probs.get(odds_key.get(k, "")) or 1.0) >= MIN_BM_PROB
-        }
-    if not positive:
-        return []
+        positive = {k: v for k, v in positive.items()
+                    if (fair_probs.get(_ODDS_KEY.get(k, "")) or 1.0) >= MIN_BM_PROB}
 
-    # ── Filter 3: model probability (must be a plausible outcome) ─────────────
+    # Filter 3 — model probability (plausible outcome)
     goals_markets = {"Over 2.5", "Under 2.5", "GG", "NG"}
     if model_probs:
         def _model_prob(market: str) -> float:
-            mk = model_key.get(market, "")
-            p  = model_probs.get(mk, 0.0)
-            # Under 2.5 and NG are complements — use 1 - over/btts
+            p = model_probs.get(_MODEL_KEY.get(market, ""), 0.0) or 0.0
             if market in ("Under 2.5", "NG"):
                 p = 1.0 - p
             return p
+        positive = {k: v for k, v in positive.items()
+                    if _model_prob(k) >= (MIN_MODEL_PROB_GOALS if k in goals_markets
+                                          else MIN_MODEL_PROB_1X2)}
 
-        def _min_prob(market: str) -> float:
-            return MIN_MODEL_PROB_GOALS if market in goals_markets else MIN_MODEL_PROB_1X2
-
-        positive = {
-            k: v for k, v in positive.items()
-            if _model_prob(k) >= _min_prob(k)
-        }
-    if not positive:
-        return []
-
-    # ── Filter 4: don't suggest the model's least-likely 1×2 outcome ─────────
-    # If the model itself ranks Draw last (or Home/Away last), it's not a genuine
-    # value bet — the model doesn't believe in that outcome, so it shouldn't
-    # recommend it regardless of how high the bookmaker odds are.
+    # Filter 4 — never the model's least-likely 1×2 outcome (if alternatives exist)
     if model_last and model_last in positive:
-        # Only drop it if there's an alternative; keep it if it's the only option
-        alternatives = {k: v for k, v in positive.items() if k != model_last}
-        if alternatives:
-            positive = alternatives
+        alt = {k: v for k, v in positive.items() if k != model_last}
+        if alt:
+            positive = alt
+    return positive
 
-    if not positive:
-        return []
 
-    # Sort by EV descending, take top N, format as "Market @ odds"
-    ranked = sorted(positive, key=positive.__getitem__, reverse=True)[:n]
-    result = []
-    for market in ranked:
-        odds = raw_odds.get(odds_key.get(market, ""), "")
-        result.append(f"{market} @ {odds}" if odds else market)
-    return result
+def _fmt_market(market: str, raw_odds: dict) -> str:
+    odds = raw_odds.get(_ODDS_KEY.get(market, ""), "")
+    return f"{market} @ {odds}" if odds else market
+
+
+def _top_ev_markets(
+    ev: dict,
+    raw_odds: dict,
+    fair_probs: Optional[dict] = None,
+    model_probs: Optional[dict] = None,
+    n: int = 2,
+    suggestable: Optional[set] = None,
+) -> list:
+    """Up to `n` 'Market @ odds' strings ranked by EV that pass the sanity
+    filters AND are in the suggestable set. `suggestable` defaults to the static
+    SUGGESTABLE_MARKETS (back-compat for the club path); the national path passes
+    a dynamic proven_markets() set."""
+    allow = SUGGESTABLE_MARKETS if suggestable is None else suggestable
+    q = {k: v for k, v in _qualifying_markets(ev, raw_odds, fair_probs, model_probs).items()
+         if k in allow}
+    ranked = sorted(q, key=q.__getitem__, reverse=True)[:n]
+    return [_fmt_market(m, raw_odds) for m in ranked]
+
+
+def _watch_markets(
+    ev: dict,
+    raw_odds: dict,
+    fair_probs: Optional[dict] = None,
+    model_probs: Optional[dict] = None,
+    n: int = 3,
+    suggestable: Optional[set] = None,
+) -> list:
+    """Markets that clear the sanity filters but are NOT yet proven — surfaced as
+    'unproven/watch' (shown + shadow-tracked, never staked with conviction until
+    the new model's record promotes them). Returns dicts for the UI."""
+    allow = SUGGESTABLE_MARKETS if suggestable is None else suggestable
+    q = {k: v for k, v in _qualifying_markets(ev, raw_odds, fair_probs, model_probs).items()
+         if k not in allow}
+    ranked = sorted(q, key=q.__getitem__, reverse=True)[:n]
+    out = []
+    for m in ranked:
+        ok = _ODDS_KEY.get(m, "")
+        out.append({
+            "market":     _fmt_market(m, raw_odds),
+            "ev_pct":     round(q[m] * 100, 1),
+            "market_pct": round((fair_probs or {}).get(ok, 0) * 100, 1) if fair_probs else None,
+        })
+    return out
 
 
 def _best_ev_market(
@@ -1267,9 +1368,11 @@ def _best_ev_market(
     raw_odds: dict,
     fair_probs: Optional[dict] = None,
     model_probs: Optional[dict] = None,
+    suggestable: Optional[set] = None,
 ) -> Optional[str]:
-    """Return top-1 qualifying market string, or None. Wrapper for _top_ev_markets."""
-    results = _top_ev_markets(ev, raw_odds, fair_probs=fair_probs, model_probs=model_probs, n=1)
+    """Return top-1 qualifying+proven market string, or None."""
+    results = _top_ev_markets(ev, raw_odds, fair_probs=fair_probs,
+                              model_probs=model_probs, n=1, suggestable=suggestable)
     return results[0] if results else None
 
 
@@ -1280,10 +1383,15 @@ def _get_llm_analysis(
     model_probs: dict,
     bm_data: Optional[dict],
     injury_data: Optional[dict] = None,
+    watch_markets: Optional[list] = None,
 ) -> dict:
     """
     Ask Groq (Llama-3.3-70B) for a 2–3 sentence analysis + 1 suggested market.
     Returns {"text": str, "suggested_market": str | None}.
+
+    `watch_markets` are markets with a real model edge that aren't yet a proven
+    suggestion (being shadow-tracked on the new model) — the analysis should
+    acknowledge them honestly rather than claim "no opportunity exists".
     """
     if not GROQ_API_KEY:
         return {
@@ -1351,10 +1459,25 @@ def _get_llm_analysis(
         )
     else:
         suggested_rule = (
-            "No market clears both EV and probability filters. "
+            "No PROVEN market clears both EV and probability filters. "
             "Omit the SUGGESTED line entirely — do not invent a suggestion. "
             "If a team is a clear model favourite but their odds offer no value, "
             "say so explicitly in your analysis."
+        )
+
+    # Watch markets — a real model edge that is NOT a proven suggestion yet.
+    # The model must NOT claim 'no value anywhere' when these exist; it should
+    # name them and explain they're being tracked, not yet trusted to stake.
+    watch_section = ""
+    if watch_markets:
+        items = ", ".join(f"{w['market']} (model edge {w['ev_pct']:+.0f}%)" for w in watch_markets)
+        watch_section = (
+            f"\nWATCH markets (model shows an edge, but this market is not yet a proven "
+            f"suggestion on the current model — we are tracking it, not staking it): {items}.\n"
+            f"In your analysis, acknowledge the strongest watch market by name and state plainly "
+            f"that the model rates it higher than the bookmakers but it stays UNPROVEN until its "
+            f"tracked record earns it — do NOT present it as a recommended bet, and do NOT say "
+            f"there is no edge anywhere if a watch market exists."
         )
 
     injury_section = _format_injuries(injury_data, home_team, away_team)
@@ -1396,6 +1519,7 @@ def _get_llm_analysis(
 απουσίες μεμονωμένων παικτών.
 
 {suggested_rule}
+{watch_section}
 
 Γράψε ακριβώς 2-3 προτάσεις στα ΕΛΛΗΝΙΚΑ: περιέγραψε τη μεγαλύτερη απόκλιση \
 μοντέλου-bookmakers, ανέφερε τους τραυματίες/αποκλεισμένους (αν υπάρχουν στη λίστα), \

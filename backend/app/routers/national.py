@@ -367,6 +367,7 @@ def get_national_analysis(
         has_injury_data=False,
         suggested_market=data.get("suggested_market"),
         suggested_markets=data.get("suggested_markets", []),
+        watch_markets=data.get("watch_markets", []),
         odds_movement=None,
         poisson_stats=None,
     )

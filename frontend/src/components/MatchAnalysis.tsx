@@ -621,6 +621,34 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
             </div>
           );
         })()}
+
+        {/* Watch markets — model edge, not yet a proven suggestion (shadow-tracked) */}
+        {data.watch_markets && data.watch_markets.length > 0 && (
+          <div className="mt-2 rounded-lg border border-amber-500/20 bg-amber-500/5 px-3 py-2">
+            <div className="flex items-center gap-1.5 mb-1.5">
+              <span className="text-amber-400 text-xs">📈</span>
+              <span className="text-[10px] text-amber-500 font-semibold uppercase tracking-wide">
+                Υπό παρακολούθηση (αναπόδεικτο)
+              </span>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {data.watch_markets.map((w) => (
+                <span key={w.market} className="inline-flex items-center gap-1.5 text-sm text-amber-300/90">
+                  <span className="font-medium">{w.market}</span>
+                  <span className="text-amber-500 text-xs">
+                    (μοντέλο {w.ev_pct >= 0 ? "+" : ""}{w.ev_pct.toFixed(0)}%
+                    {w.market_pct != null ? ` vs αγορά ${Math.round(w.market_pct)}%` : ""})
+                  </span>
+                </span>
+              ))}
+            </div>
+            <p className="text-[11px] text-gray-500 mt-1.5 leading-snug">
+              Το μοντέλο βλέπει edge εδώ, αλλά αυτή η αγορά δεν έχει ακόμα αποδεδειγμένο ιστορικό
+              στο τρέχον μοντέλο — την καταγράφουμε και θα προωθηθεί σε πρόταση μόνο αν τα δεδομένα
+              τη δικαιώσουν.
+            </p>
+          </div>
+        )}
       </div>
 
       {/* Disclaimer */}

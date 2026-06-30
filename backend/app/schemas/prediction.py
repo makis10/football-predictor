@@ -117,6 +117,12 @@ class PoissonStats(BaseModel):
     away_win_and_ng:    float   # away wins AND only away scores (0-1, 0-2…)
 
 
+class WatchMarket(BaseModel):
+    market:     str                       # "GG @ 2.33"
+    ev_pct:     float                     # model edge in pp, e.g. 21.2
+    market_pct: Optional[float] = None    # de-vigged bookmaker probability
+
+
 class AnalysisResponse(BaseModel):
     match_id:          int
     home_team:         str
@@ -127,6 +133,7 @@ class AnalysisResponse(BaseModel):
     analysis:          str
     suggested_market:  Optional[str] = None          # primary pick (backwards compat)
     suggested_markets: List[str]     = []             # ranked list, up to 2
+    watch_markets:     List[WatchMarket] = []         # model edge, unproven (shadow-tracked)
     poisson_stats:     Optional[PoissonStats] = None  # extended stats from λ_home/λ_away
     has_odds_data:     bool
     has_injury_data:   bool = False

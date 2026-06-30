@@ -34,8 +34,13 @@ from backend.app.ml.odds_analysis_service import (
     fetch_bookmaker_odds_national,
     _compute_ev,
     _best_ev_market,
+    _qualifying_markets,
+    proven_markets,
     shrunk_ev,
+    _MARKET_ODDS_KEY,
+    _MARKET_MODEL_KEY,
 )
+from backend.app.ml.value_ledger import record_ticket
 
 
 def _confidence_label(p_max: float) -> str:
@@ -67,6 +72,12 @@ def main() -> None:
             q = q.filter(NationalPrediction.match_date <= upper)
         rows = q.order_by(NationalPrediction.match_date.asc()).all()
         print(f"{len(rows)} upcoming prediction(s) to price.")
+
+        # Dynamic proven set (new-model record). Markets that qualify but aren't
+        # proven yet are still recorded as shadow tickets below — that's how they
+        # accumulate the evidence to eventually promote.
+        proven = proven_markets(db, "national")
+        print(f"proven suggestable markets: {sorted(proven)}")
 
         # Skip whole tournaments with no Odds API coverage (e.g. Friendly) up front.
         skipped_tournaments: set[str] = set()
@@ -123,12 +134,14 @@ def main() -> None:
                 "btts":     r.btts_prob,
             }
             ev_map = _compute_ev(model_probs, {"raw_odds": raw})
+            raw_nz = {k: v for k, v in raw.items() if v}
             suggested = None
             ev_score = None
             if ev_map:
+                # Headline suggestion = best PROVEN market only.
                 suggested = _best_ev_market(
-                    ev_map, {k: v for k, v in raw.items() if v},
-                    fair_probs=fair, model_probs=model_probs,
+                    ev_map, raw_nz, fair_probs=fair, model_probs=model_probs,
+                    suggestable=proven,
                 )
                 if suggested:
                     # Store the market-shrunk EV — the honest edge estimate the
@@ -141,22 +154,28 @@ def main() -> None:
                 r.suggested_market = suggested
                 r.ev_score         = ev_score
 
-            # Value-bet ticket — insert-once at first-seen odds (opening attack)
-            if suggested:
-                from backend.app.ml.odds_analysis_service import _MARKET_ODDS_KEY, _MARKET_MODEL_KEY
-                from backend.app.ml.value_ledger import record_ticket
-                _mname = suggested.split(" @ ")[0]
-                _okey  = _MARKET_ODDS_KEY.get(_mname, "")
-                if raw.get(_okey):
+            # Shadow-track EVERY qualifying market (proven + watch) as an
+            # insert-once ticket. This is how previously-killed markets (GG,
+            # Over/Under, Away) accumulate a NEW-model record so the dynamic gate
+            # can eventually promote (or keep rejecting) them on data, not on a
+            # stale assumption. Tickets are immutable; CLV is measured later.
+            if ev_map:
+                qualifying = _qualifying_markets(ev_map, raw_nz, fair, model_probs)
+                for _mname in qualifying:
+                    _okey = _MARKET_ODDS_KEY.get(_mname, "")
+                    if not raw.get(_okey):
+                        continue
                     _mprob = model_probs.get(_MARKET_MODEL_KEY.get(_mname, ""))
                     if _mname in ("Under 2.5", "NG") and _mprob is not None:
                         _mprob = 1.0 - _mprob
+                    _sev = shrunk_ev(_mname, model_probs, fair, raw)
                     if record_ticket(
                         db, source="national", national_prediction_id=r.id,
-                        market=_mname, odds=raw[_okey], ev=ev_score,
+                        market=_mname, odds=raw[_okey], ev=_sev,
                         model_prob=_mprob, market_prob=fair.get(_okey),
                     ):
-                        print(f"    🎫 ticket: {r.home_team} vs {r.away_team} — {suggested}")
+                        tier = "proven" if _mname in proven else "watch"
+                        print(f"    🎫 [{tier}] {r.home_team} vs {r.away_team} — {_mname} @ {raw[_okey]}")
             # ── NO market anchoring (2026-06-17 directive) ──────────────────────
             # Served probabilities stay exactly as the pure international model
             # produced them in predict_national.py. The bookmaker is used above
