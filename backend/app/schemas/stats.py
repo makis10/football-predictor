@@ -150,6 +150,27 @@ class ROIStats(BaseModel):
     total_pnl: float
     total_roi_pct: float
 
+    # ── Fair-value ROI (vig removed) ────────────────────────────────────────
+    # Same bets, but priced at the de-vigged "fair" odds rather than the
+    # bookmaker's quoted odds. Measures pure model skill vs the market's TRUE
+    # belief, independent of the bookmaker commission. ≈ 0% means the model is
+    # as sharp as the fair market line; the gap to the quoted-odds ROI above is
+    # exactly the vig you pay. NOT an achievable return (you cannot bet at fair
+    # odds anywhere) — it is a model-quality metric.
+    #
+    # Result & BTTS are de-vigged exactly (all outcome odds stored). O/U uses an
+    # assumed 4% two-way overround (under-2.5 odds are not stored).
+    fair_available: bool = False
+    result_pnl_fair: float = 0.0
+    result_roi_fair_pct: float = 0.0
+    goals_pnl_fair: float = 0.0
+    goals_roi_fair_pct: float = 0.0
+    btts_pnl_fair: float = 0.0
+    btts_roi_fair_pct: float = 0.0
+    total_pnl_fair: float = 0.0
+    total_roi_fair_pct: float = 0.0
+    goals_fair_is_estimated: bool = True   # O/U fair uses assumed overround
+
 
 class EVDataPoint(BaseModel):
     """One date in the cumulative EV / P&L time series.
@@ -158,9 +179,11 @@ class EVDataPoint(BaseModel):
     50/50 market-shrinkage were removed 2026-06-17; MARKET_SHRINKAGE=0)."""
     date: str                # ISO date "YYYY-MM-DD"
     daily_ev: float          # expected value added this day (€10 stake)
-    daily_pnl: float         # actual P&L this day
+    daily_pnl: float         # actual P&L this day (quoted odds)
+    daily_pnl_fair: float = 0.0     # actual P&L this day at de-vigged fair odds
     cumulative_ev: float     # running total EV
-    cumulative_pnl: float    # running total P&L
+    cumulative_pnl: float    # running total P&L (quoted odds)
+    cumulative_pnl_fair: float = 0.0  # running total P&L at fair odds (vig removed)
 
 
 class CLVStats(BaseModel):

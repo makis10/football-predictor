@@ -3,13 +3,13 @@
 /**
  * Cumulative EV vs P&L Chart — pure SVG, no external library.
  *
- * Two lines:
+ * Three lines:
  *   - Cumulative Expected Value (dashed purple) — what the model "deserves"
- *   - Cumulative P&L (solid green/red)          — what actually happened
+ *   - Cumulative P&L (solid green/red)          — what actually happened (quoted odds)
+ *   - Cumulative Fair P&L (solid amber)         — same bets at de-vigged odds
  *
- * If both lines trend upward together → model has real edge.
- * If EV > P&L → model is underperforming expectations (variance).
- * If EV < P&L → getting lucky, not sustainable.
+ * The gap between Actual P&L and Fair P&L is exactly the bookmaker vig paid.
+ * Fair P&L ≈ 0 means the model is as sharp as the fair market line.
  */
 import { EVDataPoint } from "@/lib/api";
 import { useState } from "react";
@@ -54,8 +54,15 @@ export function EVChart({ series }: Props) {
     );
   }
 
-  // Y domain — include 0 and both series extremes
-  const allY = series.flatMap((p) => [p.cumulative_ev, p.cumulative_pnl, 0]);
+  const hasFair = series.some((p) => p.cumulative_pnl_fair !== 0);
+
+  // Y domain — include 0 and all series extremes
+  const allY = series.flatMap((p) => [
+    p.cumulative_ev,
+    p.cumulative_pnl,
+    ...(hasFair ? [p.cumulative_pnl_fair] : []),
+    0,
+  ]);
   const yMin = Math.min(...allY);
   const yMax = Math.max(...allY);
   const yRange = yMax - yMin || 1;
@@ -67,8 +74,9 @@ export function EVChart({ series }: Props) {
   const xScale = (i: number) => PAD.left + (i / (series.length - 1)) * INNER_W;
   const yScale = (v: number) => PAD.top + INNER_H - ((v - yLo) / ySpan) * INNER_H;
 
-  const evPoints:  [number, number][] = series.map((p, i) => [xScale(i), yScale(p.cumulative_ev)]);
-  const pnlPoints: [number, number][] = series.map((p, i) => [xScale(i), yScale(p.cumulative_pnl)]);
+  const evPoints:   [number, number][] = series.map((p, i) => [xScale(i), yScale(p.cumulative_ev)]);
+  const pnlPoints:  [number, number][] = series.map((p, i) => [xScale(i), yScale(p.cumulative_pnl)]);
+  const fairPoints: [number, number][] = series.map((p, i) => [xScale(i), yScale(p.cumulative_pnl_fair)]);
   const zeroY = yScale(0);
 
   // Y-axis ticks
@@ -105,6 +113,12 @@ export function EVChart({ series }: Props) {
                 <svg width="20" height="4"><line x1="0" y1="2" x2="20" y2="2" stroke={pnlColor} strokeWidth="2"/></svg>
                 Actual P&L
               </span>
+              {hasFair && (
+                <span className="flex items-center gap-1.5">
+                  <svg width="20" height="4"><line x1="0" y1="2" x2="20" y2="2" stroke="#fbbf24" strokeWidth="2"/></svg>
+                  Fair P&L (χωρίς γκανιότα)
+                </span>
+              )}
             </div>
           );
         })()}
@@ -120,6 +134,11 @@ export function EVChart({ series }: Props) {
           <span className={hoverPoint.cumulative_pnl >= 0 ? "text-green-400" : "text-red-400"}>
             P&L: {hoverPoint.cumulative_pnl >= 0 ? "+" : ""}€{hoverPoint.cumulative_pnl.toFixed(2)}
           </span>
+          {hasFair && (
+            <span className="text-amber-400">
+              Fair: {hoverPoint.cumulative_pnl_fair >= 0 ? "+" : ""}€{hoverPoint.cumulative_pnl_fair.toFixed(2)}
+            </span>
+          )}
         </div>
       )}
 
@@ -153,6 +172,11 @@ export function EVChart({ series }: Props) {
         {/* EV line (dashed purple) */}
         <path d={buildPath(evPoints)} fill="none" stroke="#a78bfa"
           strokeWidth={2} strokeDasharray="6 3" />
+
+        {/* Fair P&L line (solid amber) — same bets, vig removed */}
+        {hasFair && (
+          <path d={buildPath(fairPoints)} fill="none" stroke="#fbbf24" strokeWidth={2} />
+        )}
 
         {/* P&L line (solid, colour by last value) */}
         <path d={buildPath(pnlPoints)} fill="none"
@@ -194,6 +218,10 @@ export function EVChart({ series }: Props) {
               r={4} fill="#a78bfa" />
             <circle cx={xScale(hoverIdx)} cy={yScale(series[hoverIdx].cumulative_pnl)}
               r={4} fill={series[hoverIdx].cumulative_pnl >= 0 ? "#4ade80" : "#f87171"} />
+            {hasFair && (
+              <circle cx={xScale(hoverIdx)} cy={yScale(series[hoverIdx].cumulative_pnl_fair)}
+                r={4} fill="#fbbf24" />
+            )}
           </>
         )}
       </svg>

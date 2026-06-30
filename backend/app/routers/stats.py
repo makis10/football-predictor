@@ -83,6 +83,7 @@ def _load_rows(league: Optional[str] = None) -> list[dict]:
                 Prediction.bm_away_odds,
                 Prediction.bm_over_odds,
                 Prediction.bm_btts_yes_odds,
+                Prediction.bm_btts_no_odds,
                 Prediction.btts_prob,
                 Prediction.btts_prediction,
                 Prediction.poisson_lambda_home,
@@ -650,9 +651,17 @@ def _compute_stats(rows: list[dict]) -> StatsResponse:
     # ── ROI & Cumulative EV (only for rows with bookmaker odds stored) ─────────
     STAKE = 10.0  # flat €10 per bet
 
+    # Assumed two-way overround for the O/U 2.5 market (under-2.5 odds are not
+    # stored, so we cannot de-vig it exactly). 4% is typical for O/U 2.5 at the
+    # major books. Result & BTTS are de-vigged exactly from their stored odds.
+    GOALS_OVERROUND = 1.04
+
     res_staked = res_return = 0.0
     goals_staked = goals_return = 0.0
     btts_staked = btts_return = 0.0
+    # Fair-value (de-vigged) returns — same bets, priced at fair odds.
+    res_fair_return = goals_fair_return = btts_fair_return = 0.0
+    fair_available = False
     # Strategy ROI: bet ONLY the EV-suggested market at its quoted odds.
     # This is the actual value strategy; the blanket bets above/below are a
     # model-health baseline (they pay the vig on every match by construction).
@@ -691,10 +700,24 @@ def _compute_stats(rows: list[dict]) -> StatsResponse:
             # EV-shrinkage were removed 2026-06-17; _shrunk_prob is now identity).
             ev_r = STAKE * (model_prob * bet_odds - 1)
 
+            # Fair (de-vigged) odds for the picked outcome: multiplicative de-vig
+            # over the full 1×2 market — fair_odds = quoted × Σ(implied probs).
+            pnl_r_fair = pnl_r
+            h_o, d_o, a_o = r["bm_home_odds"], r["bm_draw_odds"], r["bm_away_odds"]
+            if h_o and d_o and a_o and h_o > 1 and d_o > 1 and a_o > 1:
+                overround = 1.0 / h_o + 1.0 / d_o + 1.0 / a_o
+                fair_odds = bet_odds * overround
+                pnl_r_fair = STAKE * (fair_odds - 1) if won else -STAKE
+                res_fair_return += STAKE * fair_odds if won else 0.0
+                fair_available = True
+            else:
+                res_fair_return += STAKE * bet_odds if won else 0.0
+
             if d_str not in daily:
-                daily[d_str] = {"ev": 0.0, "pnl": 0.0}
-            daily[d_str]["ev"]  += ev_r
-            daily[d_str]["pnl"] += pnl_r
+                daily[d_str] = {"ev": 0.0, "pnl": 0.0, "pnl_fair": 0.0}
+            daily[d_str]["ev"]       += ev_r
+            daily[d_str]["pnl"]      += pnl_r
+            daily[d_str]["pnl_fair"] += pnl_r_fair
 
         # ── Strategy bet: the suggested market at its quoted odds ───────────
         sm = r.get("suggested_market")
@@ -729,10 +752,24 @@ def _compute_stats(rows: list[dict]) -> StatsResponse:
             pnl_bt = STAKE * (gg_odds - 1) if won_btts else -STAKE
             btts_return += STAKE * gg_odds if won_btts else 0.0
             ev_bt = STAKE * (_shrunk_prob(btts_p, 1.0 / gg_odds) * gg_odds - 1)
+
+            # Fair (de-vigged) GG odds: two-way de-vig over GG + NG odds.
+            pnl_bt_fair = pnl_bt
+            ng_odds = r.get("bm_btts_no_odds")
+            if ng_odds and ng_odds > 1.0:
+                overround_bt = 1.0 / gg_odds + 1.0 / ng_odds
+                fair_gg = gg_odds * overround_bt
+                pnl_bt_fair = STAKE * (fair_gg - 1) if won_btts else -STAKE
+                btts_fair_return += STAKE * fair_gg if won_btts else 0.0
+                fair_available = True
+            else:
+                btts_fair_return += STAKE * gg_odds if won_btts else 0.0
+
             if d_str not in daily:
-                daily[d_str] = {"ev": 0.0, "pnl": 0.0}
-            daily[d_str]["ev"]  += ev_bt
-            daily[d_str]["pnl"] += pnl_bt
+                daily[d_str] = {"ev": 0.0, "pnl": 0.0, "pnl_fair": 0.0}
+            daily[d_str]["ev"]       += ev_bt
+            daily[d_str]["pnl"]      += pnl_bt
+            daily[d_str]["pnl_fair"] += pnl_bt_fair
 
         # ── Goals market bet (OVER only, when model predicts OVER) ──────────
         if r["goals_prediction"] == "OVER" and r["bm_over_odds"] and r["bm_over_odds"] > 1.0:
@@ -746,10 +783,17 @@ def _compute_stats(rows: list[dict]) -> StatsResponse:
             # Pure-model Over prob vs market price (no anchoring since 2026-06-17).
             ev_g = STAKE * (over_prob * over_odds - 1)
 
+            # Fair Over odds: under-2.5 odds are not stored, so de-vig with an
+            # assumed 4% two-way overround (GOALS_OVERROUND) — an estimate.
+            fair_over = over_odds * GOALS_OVERROUND
+            pnl_g_fair = STAKE * (fair_over - 1) if won_goals else -STAKE
+            goals_fair_return += STAKE * fair_over if won_goals else 0.0
+
             if d_str not in daily:
-                daily[d_str] = {"ev": 0.0, "pnl": 0.0}
-            daily[d_str]["ev"]  += ev_g
-            daily[d_str]["pnl"] += pnl_g
+                daily[d_str] = {"ev": 0.0, "pnl": 0.0, "pnl_fair": 0.0}
+            daily[d_str]["ev"]       += ev_g
+            daily[d_str]["pnl"]      += pnl_g
+            daily[d_str]["pnl_fair"] += pnl_g_fair
 
     roi: Optional[ROIStats] = None
     if res_staked > 0 or goals_staked > 0 or btts_staked > 0:
@@ -760,6 +804,13 @@ def _compute_stats(rows: list[dict]) -> StatsResponse:
         total_ret  = res_return + goals_return  + btts_return
         total_pnl  = total_ret  - total_st
         strat_pnl  = strat_return - strat_staked
+
+        # Fair-value (de-vigged) P&L per market + total.
+        res_pnl_fair   = res_fair_return   - res_staked
+        goals_pnl_fair = goals_fair_return - goals_staked
+        btts_pnl_fair  = btts_fair_return  - btts_staked
+        total_fair_ret = res_fair_return + goals_fair_return + btts_fair_return
+        total_pnl_fair = total_fair_ret - total_st
 
         roi = ROIStats(
             strategy_bets=strat_bets,
@@ -787,20 +838,34 @@ def _compute_stats(rows: list[dict]) -> StatsResponse:
             total_return=round(total_ret, 2),
             total_pnl=round(total_pnl, 2),
             total_roi_pct=round(total_pnl / total_st * 100, 2) if total_st else 0.0,
+            # Fair-value (vig-removed) ROI — model skill vs the fair market line.
+            fair_available=fair_available,
+            result_pnl_fair=round(res_pnl_fair, 2),
+            result_roi_fair_pct=round(res_pnl_fair / res_staked * 100, 2) if res_staked else 0.0,
+            goals_pnl_fair=round(goals_pnl_fair, 2),
+            goals_roi_fair_pct=round(goals_pnl_fair / goals_staked * 100, 2) if goals_staked else 0.0,
+            btts_pnl_fair=round(btts_pnl_fair, 2),
+            btts_roi_fair_pct=round(btts_pnl_fair / btts_staked * 100, 2) if btts_staked else 0.0,
+            total_pnl_fair=round(total_pnl_fair, 2),
+            total_roi_fair_pct=round(total_pnl_fair / total_st * 100, 2) if total_st else 0.0,
+            goals_fair_is_estimated=True,
         )
 
     # Build cumulative EV series sorted by date
     ev_series: list[EVDataPoint] = []
-    cum_ev = cum_pnl = 0.0
+    cum_ev = cum_pnl = cum_pnl_fair = 0.0
     for d_str in sorted(daily.keys()):
-        cum_ev  += daily[d_str]["ev"]
-        cum_pnl += daily[d_str]["pnl"]
+        cum_ev       += daily[d_str]["ev"]
+        cum_pnl      += daily[d_str]["pnl"]
+        cum_pnl_fair += daily[d_str].get("pnl_fair", 0.0)
         ev_series.append(EVDataPoint(
             date=d_str,
             daily_ev=round(daily[d_str]["ev"], 2),
             daily_pnl=round(daily[d_str]["pnl"], 2),
+            daily_pnl_fair=round(daily[d_str].get("pnl_fair", 0.0), 2),
             cumulative_ev=round(cum_ev, 2),
             cumulative_pnl=round(cum_pnl, 2),
+            cumulative_pnl_fair=round(cum_pnl_fair, 2),
         ))
 
     # ── CLV: did our suggested bets beat the closing line? ────────────────────

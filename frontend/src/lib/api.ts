@@ -304,14 +304,27 @@ export interface ROIStats {
   total_return: number;
   total_pnl: number;
   total_roi_pct: number;
+  // Fair-value ROI (bookmaker vig removed) — pure model skill vs the fair line.
+  fair_available: boolean;
+  result_pnl_fair: number;
+  result_roi_fair_pct: number;
+  goals_pnl_fair: number;
+  goals_roi_fair_pct: number;
+  btts_pnl_fair: number;
+  btts_roi_fair_pct: number;
+  total_pnl_fair: number;
+  total_roi_fair_pct: number;
+  goals_fair_is_estimated: boolean;
 }
 
 export interface EVDataPoint {
   date: string;
   daily_ev: number;
   daily_pnl: number;
+  daily_pnl_fair: number;
   cumulative_ev: number;
   cumulative_pnl: number;
+  cumulative_pnl_fair: number;
 }
 
 export interface CLVStats {

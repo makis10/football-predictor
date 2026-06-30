@@ -736,9 +736,12 @@ Model accuracy and ROI tracking dashboard data. Cached in-process for 6 hours.
 - Per-confidence-level breakdown (high/medium/low)
 - Per-predicted-outcome breakdown (H/D/A/OVER/UNDER)
 - Draw specialist stats (recall + precision)
-- `roi` — flat €10 stake ROI tracker (result market + goals market), `null` until bookmaker odds are stored
-- `ev_series` — daily cumulative EV vs P&L time series for the chart
-- Calibration buckets (O/U probability bins vs actual frequency)
+- BTTS (GG/NG) stats — recall, precision, accuracy + calibration buckets
+- Top AI Picks accuracy (top 3/day, mirrors the homepage picks)
+- `roi` — flat €10 stake ROI tracker (result + goals + BTTS markets), `null` until bookmaker odds are stored. Includes **fair-value (vig-removed) ROI** fields (`*_roi_fair_pct`, `total_roi_fair_pct`, `fair_available`)
+- `ev_series` — daily cumulative EV vs P&L time series for the chart, including `cumulative_pnl_fair` (de-vigged P&L line)
+- `clv` — closing-line value of suggested bets (beat-close %, avg CLV%)
+- Calibration buckets (O/U + result + BTTS probability bins vs actual frequency)
 - Per-model-version breakdown
 
 ---
@@ -872,7 +875,21 @@ All dates and kick-off times throughout the app are displayed in **Europe/Athens
 
 ### ROI Tracker & EV Chart
 
-The Stats page shows simulated ROI for flat €10-per-prediction betting (result market + Over 2.5 market). Data accumulates automatically as matches complete — `compute_predictions.py` stores bookmaker odds at prediction time in the `predictions` table (`bm_home_odds`, `bm_draw_odds`, `bm_away_odds`, `bm_over_odds`). Matches predicted before this feature was added show placeholders; all new predictions contribute to the tracker going forward.
+The Stats page shows simulated ROI for flat €10-per-prediction betting (result market + Over 2.5 market + GG/BTTS). Data accumulates automatically as matches complete — `compute_predictions.py` stores bookmaker odds at prediction time in the `predictions` table (`bm_home_odds`, `bm_draw_odds`, `bm_away_odds`, `bm_over_odds`, `bm_btts_yes_odds`, `bm_btts_no_odds`). Matches predicted before this feature was added show placeholders; all new predictions contribute to the tracker going forward.
+
+#### Fair-value ROI (vig removed)
+
+The headline metric is **Fair-value ROI** — the same simulated bets priced at the *de-vigged* "fair" odds instead of the bookmaker's quoted odds. This isolates pure model skill from the bookmaker commission:
+
+- **Fair odds** = `quoted_odds × Σ(implied probabilities)` (multiplicative de-vig over the full market).
+- **Result (1×2)** and **BTTS (GG/NG)** are de-vigged exactly — all outcome odds are stored.
+- **O/U 2.5** uses an assumed 4% two-way overround (`GOALS_OVERROUND = 1.04` in `stats.py`) because under-2.5 odds are not stored; this market is flagged with `*`.
+
+A Fair-value ROI **≈ 0%** means the model's probabilities are *as accurate as the fair market line* — the entire negative quoted-odds ROI is the bookmaker vig, not a model error. It is **not an achievable return** (you cannot bet at fair odds anywhere); it is a model-quality metric. The EV chart plots a third **amber "Fair P&L"** line alongside actual P&L — the gap between them is exactly the cumulative vig paid.
+
+Backend fields: `ROIStats.{fair_available, result_roi_fair_pct, goals_roi_fair_pct, btts_roi_fair_pct, total_roi_fair_pct, *_pnl_fair, goals_fair_is_estimated}` and `EVDataPoint.{daily_pnl_fair, cumulative_pnl_fair}`.
+
+> **Note:** `POST /stats/cache/clear` is admin-protected. To force-refresh the cached stats during development, run `docker compose exec redis redis-cli DEL stats:global` (or wait for the 6h TTL).
 
 ---
 

@@ -18,6 +18,27 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: "2026-06-30-fair-value-roi",
+    date: "2026-06-30",
+    tag: "new",
+    title: "Fair-value ROI — performance without the bookmaker margin",
+    body: "The ROI tracker now shows what our picks would return at fair (de-vigged) odds. At fair value the model is essentially break-even — the negative real-money ROI is the bookmaker's built-in commission, not a model error. A new amber line on the EV chart shows this fair P&L; the gap to actual P&L is the commission paid.",
+  },
+  {
+    id: "2026-06-30-btts-stats",
+    date: "2026-06-30",
+    tag: "new",
+    title: "Goal / No Goal (BTTS) stats & calibration",
+    body: "The Stats page now tracks our Both-Teams-To-Score predictions — accuracy, recall, precision, ROI and a calibration chart — alongside the result and over/under markets.",
+  },
+  {
+    id: "2026-06-30-top-picks-accuracy",
+    date: "2026-06-30",
+    tag: "new",
+    title: "Top AI Picks accuracy",
+    body: "A dedicated Stats section shows how the 3 daily Top Picks (shown on the home page) have actually performed over time, versus the overall hit rate.",
+  },
+  {
     id: "2026-06-30-live-results-source",
     date: "2026-06-30",
     tag: "improvement",

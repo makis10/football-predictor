@@ -80,12 +80,20 @@ export default function NotificationBell() {
         // Portal to <body> so the overlay escapes the header's backdrop-blur
         // containing block (a backdrop-filter ancestor traps position:fixed,
         // which otherwise pins this to the 56px header instead of the viewport).
-        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
+        <div
+          className="z-[100] flex items-center justify-center p-4"
+          style={{ position: "fixed", top: 0, right: 0, bottom: 0, left: 0 }}
+        >
           {/* Backdrop */}
           <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" onClick={() => setOpen(false)} />
-          {/* Centered modal — wide, height-capped, internal scroll */}
-          <div className="relative z-10 w-full max-w-2xl max-h-[75vh] flex flex-col rounded-2xl border border-pitch-700 bg-pitch-900 shadow-2xl">
-            <div className="flex items-start justify-between gap-3 px-5 py-4 border-b border-pitch-700 shrink-0">
+          {/* Centered modal — wide, height-capped, internal scroll.
+              Critical layout (height cap + flex) is set inline so it can't be
+              dropped by a Tailwind arbitrary-value / purge quirk in the build. */}
+          <div
+            className="relative z-10 w-full max-w-2xl rounded-2xl border border-pitch-700 bg-pitch-900 shadow-2xl"
+            style={{ display: "flex", flexDirection: "column", maxHeight: "85vh" }}
+          >
+            <div className="flex items-start justify-between gap-3 px-5 py-4 border-b border-pitch-700" style={{ flexShrink: 0 }}>
               <div>
                 <p className="text-base font-semibold text-white">🔔 Platform updates</p>
                 <p className="text-xs text-gray-500">Fixes &amp; improvements to the predictor</p>
@@ -101,7 +109,10 @@ export default function NotificationBell() {
                 </svg>
               </button>
             </div>
-            <ul className="flex-1 min-h-0 overflow-y-auto divide-y divide-pitch-800">
+            <ul
+              className="divide-y divide-pitch-800"
+              style={{ flex: "1 1 auto", minHeight: 0, overflowY: "auto" }}
+            >
               {CHANGELOG.map((e) => (
                 <li key={e.id} className="px-5 py-3">
                   <div className="flex items-center gap-2 mb-1">
