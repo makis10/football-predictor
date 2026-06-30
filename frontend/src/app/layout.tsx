@@ -5,6 +5,7 @@ import ChatBox from "@/components/ChatBox";
 import ContactButton from "@/components/ContactButton";
 import Providers from "@/components/Providers";
 import UserNav from "@/components/UserNav";
+import NotificationBell from "@/components/NotificationBell";
 
 export const metadata: Metadata = {
   title: "Football Predictor",
@@ -55,8 +56,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 </Link>
               </nav>
 
-              {/* User nav — sign in / avatar menu */}
-              <div className="ml-auto">
+              {/* Updates bell + user nav — sign in / avatar menu */}
+              <div className="ml-auto flex items-center gap-1">
+                <NotificationBell />
                 <UserNav />
               </div>
             </div>

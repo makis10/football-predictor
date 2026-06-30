@@ -50,6 +50,24 @@ function num(v: number | null, decimals = 3) {
   return v.toFixed(decimals);
 }
 
+/**
+ * Format a backend timestamp in Europe/Athens.
+ *
+ * This page is server-rendered, and the container runs in UTC — without an
+ * explicit timeZone the times come out 3h behind (e.g. the 06:00 cron showed
+ * as 03:00). Timezone-less strings (the national metrics.json `trained_at`)
+ * are treated as UTC, since that's what the backend writes.
+ */
+function fmtAthens(iso: string): { date: string; time: string } {
+  const hasTz = /[Zz]|[+-]\d{2}:?\d{2}$/.test(iso);
+  const d = new Date(hasTz ? iso : iso + "Z");
+  const tz = { timeZone: "Europe/Athens" } as const;
+  return {
+    date: d.toLocaleDateString("el-GR", { day: "2-digit", month: "2-digit", year: "numeric", ...tz }),
+    time: d.toLocaleTimeString("el-GR", { hour: "2-digit", minute: "2-digit", hour12: false, ...tz }),
+  };
+}
+
 function MetricCell({
   value,
   format = "pct",
@@ -74,13 +92,7 @@ function MetricCell({
 }
 
 function RunCard({ run, isLatest }: { run: TrainingRun; isLatest: boolean }) {
-  const date = new Date(run.run_at);
-  const dateStr = date.toLocaleDateString("el-GR", {
-    day: "2-digit", month: "2-digit", year: "numeric",
-  });
-  const timeStr = date.toLocaleTimeString("el-GR", {
-    hour: "2-digit", minute: "2-digit", hour12: false,
-  });
+  const { date: dateStr, time: timeStr } = fmtAthens(run.run_at);
 
   return (
     <div className={`rounded-xl border p-5 space-y-4 ${isLatest ? "border-blue-500 bg-blue-950/30" : "border-pitch-700 bg-pitch-900"}`}>
@@ -238,13 +250,9 @@ function NationalMetricsCard({ m }: { m: NationalTrainingMetrics }) {
     );
   }
 
-  const trainedAt = m.trained_at ? new Date(m.trained_at) : null;
-  const trainedDateStr = trainedAt
-    ? trainedAt.toLocaleDateString("el-GR", { day: "2-digit", month: "2-digit", year: "numeric" })
-    : "—";
-  const trainedTimeStr = trainedAt
-    ? trainedAt.toLocaleTimeString("el-GR", { hour: "2-digit", minute: "2-digit", hour12: false })
-    : "";
+  const trained = m.trained_at ? fmtAthens(m.trained_at) : null;
+  const trainedDateStr = trained?.date ?? "—";
+  const trainedTimeStr = trained?.time ?? "";
 
   return (
     <div className="rounded-xl border border-emerald-800 bg-emerald-950/20 p-5 space-y-4">
@@ -397,19 +405,25 @@ export default async function TrainingRunsPage() {
       <div>
         <h1 className="text-2xl font-bold">Training History</h1>
         <p className="text-sm text-gray-500 mt-1">
-          Metrics από κάθε weekly retrain — test set accuracy, recall, calibration
+          Test set accuracy, recall &amp; calibration ανά retrain · ώρες σε Europe/Athens
         </p>
       </div>
 
       {/* National Team Model */}
       <section className="space-y-3">
-        <h2 className="text-lg font-semibold text-white">National Team Model</h2>
+        <div>
+          <h2 className="text-lg font-semibold text-white">National Team Model</h2>
+          <p className="text-xs text-gray-500">Retrain καθημερινά ~06:00 (self-correct στα χθεσινά αποτελέσματα)</p>
+        </div>
         <NationalMetricsCard m={nationalMetrics} />
       </section>
 
       {/* Club Model Training Runs */}
       <section className="space-y-3">
-        <h2 className="text-lg font-semibold text-white">Club Model Training Runs</h2>
+        <div>
+          <h2 className="text-lg font-semibold text-white">Club Model Training Runs</h2>
+          <p className="text-xs text-gray-500">Retrain εβδομαδιαία (Δευτέρες ~06:00) — εκτός σεζόν αλλάζει αργά</p>
+        </div>
         {runs.length === 0 ? (
           <div className="rounded-xl border border-pitch-700 bg-pitch-900 p-8 text-center text-gray-500">
             Δεν υπάρχουν ακόμα training runs. Θα εμφανιστούν μετά το επόμενο weekly retrain.

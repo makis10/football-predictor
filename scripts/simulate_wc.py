@@ -337,6 +337,14 @@ def load_ko_results() -> dict[frozenset, tuple[dict[str, int], str]]:
     return out
 
 
+def eliminated_from(ko_played: dict[frozenset, tuple[dict[str, int], str]]) -> set[str]:
+    """Teams knocked out = the loser of every played knockout tie."""
+    out: set[str] = set()
+    for teams, (_pg, w) in ko_played.items():
+        out |= {t for t in teams if t != w}
+    return out
+
+
 def derive_groups(fixtures: list[tuple[str, str]]) -> dict[str, list[str]]:
     """Connected-components of the co-appearance graph → 12 groups of 4."""
     adj: dict[str, set[str]] = defaultdict(set)
@@ -409,6 +417,7 @@ def simulate_once(
     groups: dict[str, list[str]], elo: dict, scale: float,
     played_map: dict[tuple[str, str], tuple[int, int]] | None = None,
     ko_played: dict[frozenset, tuple[dict[str, int], str]] | None = None,
+    eliminated: set[str] | None = None,
 ) -> tuple[str, tuple[str, str], dict[str, int], dict[str, tuple[bool, bool, bool]]]:
     """Returns (champion, (finalistA, finalistB), goals_per_team, group_outcome).
 
@@ -420,6 +429,7 @@ def simulate_once(
     not a from-scratch re-roll."""
     played_map = played_map or {}
     ko_played = ko_played or {}
+    eliminated = eliminated or set()
     standings: dict[str, list] = {}      # group → ranked team list
     thirds: list[tuple] = []             # (pts, gd, gf, team, group)
     goals_acc: dict[str, int] = defaultdict(int)   # team → tournament goals (Golden Boot)
@@ -492,6 +502,14 @@ def simulate_once(
             pg, w = rec
             goals_acc[ta] += pg.get(ta, 0); goals_acc[tb] += pg.get(tb, 0)
             return w
+        # Hard elimination: a team that already lost a played knockout can never
+        # advance, even when the approximate bracket pairs it against someone
+        # other than its real conqueror. Prevents eliminated teams (e.g. a R32
+        # loser) from leaking back into the title race.
+        if ta in eliminated and tb not in eliminated:
+            return tb
+        if tb in eliminated and ta not in eliminated:
+            return ta
         w, ga, gb = play(elo.get(ta, ELO_START), elo.get(tb, ELO_START), scale, knockout=True)
         goals_acc[ta] += ga; goals_acc[tb] += gb
         return ta if w == 0 else tb
@@ -709,8 +727,12 @@ def main() -> None:
           f"({len(played_map)} already played, {len(upcoming_pairs)} remaining).")
     if played_map:
         print(f"→ Conditioning the projection on {len(played_map)} real group result(s).")
+    eliminated = eliminated_from(ko_played)
     if ko_played:
         print(f"→ + {len(ko_played)} played knockout result(s) (bracket conditioned).")
+    if eliminated:
+        print(f"→ {len(eliminated)} team(s) eliminated, forced out of the bracket: "
+              f"{', '.join(sorted(eliminated))}")
     missing = {t for g in groups.values() for t in g if t not in elo}
     if missing:
         print(f"[warn] {len(missing)} team(s) missing Elo (→ {ELO_START}): {sorted(missing)}")
@@ -750,7 +772,7 @@ def main() -> None:
 
     print(f"Simulating {args.sims:,} tournaments …")
     for i in range(args.sims):
-        champ, (fa, fb), gacc, gout = simulate_once(groups, elo, scale, played_map, ko_played)
+        champ, (fa, fb), gacc, gout = simulate_once(groups, elo, scale, played_map, ko_played, eliminated)
         champ_ct[champ] += 1
         final_ct[fa] += 1; final_ct[fb] += 1
         pair_ct[tuple(sorted((fa, fb)))] += 1
@@ -826,6 +848,7 @@ def main() -> None:
             "played_games": len(played_map),
             "remaining_games": len(upcoming_pairs),
             "has_market":   bool(market),
+            "eliminated":   sorted(eliminated),
             "teams": [
                 {
                     "team":       team,
@@ -834,6 +857,7 @@ def main() -> None:
                     "market_pct": (round(market_for(team), 4) if market_for(team) else None),
                 }
                 for team, _ in champ_ct.most_common(24)
+                if team not in eliminated     # knocked-out teams drop off the list
             ],
             "pairings": [
                 {"team_a": a, "team_b": b, "pct": round(c / n, 4)}

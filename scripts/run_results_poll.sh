@@ -40,6 +40,14 @@ docker compose exec -T backend \
     python scripts/update_results.py --days-back 2 \
     >> "$LOG" 2>&1 || true
 
+# API-Football authoritative overlay for the live tournament — fresh final
+# scores + penalty winners into results.csv / shootouts.csv, so a team that lost
+# (incl. on penalties → a draw in results.csv) drops out of the World Cup
+# champion list within the 2-hour poll window, not at the next daily run.
+docker compose exec -T backend \
+    python scripts/fetch_wc_results.py \
+    >> "$LOG" 2>&1 || true
+
 # Refresh the dashboard so newly-settled matches appear immediately.
 curl -s -X POST "${_ADMIN_HDR[@]}" http://localhost:8000/stats/cache/clear >> "$LOG" 2>&1 || true
 

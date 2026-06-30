@@ -140,6 +140,17 @@ docker compose exec -T backend \
     python scripts/sync_results_to_dataset.py \
     2>&1 | tee -a "$LOG"
 
+# API-Football is the source of truth for the LIVE tournament — fresher and more
+# accurate than martj42 (which lags ~1 day and rarely records penalty winners
+# quickly). Overlay its final scores + shoot-out winners onto results.csv /
+# shootouts.csv. MUST run after the martj42 --force above (which would otherwise
+# clobber it) and before the retrain/snapshot/sim so everything sees the truth.
+echo "" >> "$LOG"
+echo "[national 1c/7] Overlaying live WC results from API-Football …" | tee -a "$LOG"
+docker compose exec -T backend \
+    python scripts/fetch_wc_results.py \
+    2>&1 | tee -a "$LOG"
+
 # Daily full retrain — during a live tournament the model self-corrects every
 # day on the freshly-downloaded results. (User-requested over snapshot-only.)
 # Rebuilds models + the Elo/form snapshot together.
