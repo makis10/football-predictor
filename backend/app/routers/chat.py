@@ -42,7 +42,9 @@ _CONTEXT_TTL = 1800  # 30 min — context doesn't change that fast
 router = APIRouter(prefix="/chat", tags=["chat"])
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY", "")
-GROQ_MODEL   = "llama-3.3-70b-versatile"
+# llama-3.3-70b-versatile is deprecated on GroqCloud (decommission 2026-08-16);
+# default to its replacement, overridable via the GROQ_MODEL env var.
+GROQ_MODEL   = os.getenv("GROQ_MODEL", "openai/gpt-oss-120b")
 
 _SYSTEM_PROMPT = """\
 Είσαι ένας έξυπνος βοηθός πρόβλεψης ποδοσφαιρικών αγώνων που βοηθά χρήστες \

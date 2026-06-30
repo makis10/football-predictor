@@ -551,7 +551,7 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
           <span className="text-xs font-semibold text-gray-400 uppercase tracking-wider">
             Ανάλυση AI
           </span>
-          <span className="text-xs text-gray-600">(llama-3.3-70b · Groq)</span>
+          <span className="text-xs text-gray-600">(gpt-oss-120b · Groq)</span>
         </div>
         <p className="text-sm text-gray-300 leading-relaxed">{data.analysis}</p>
 

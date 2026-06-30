@@ -35,7 +35,11 @@ ODDS_API_KEY   = os.getenv("ODDS_API_KEY", "")
 GROQ_API_KEY   = os.getenv("GROQ_API_KEY", "")
 API_SPORTS_KEY = os.getenv("API_SPORTS_KEY", "")  # api-football.com
 
-GROQ_MODEL = "llama-3.3-70b-versatile"
+# llama-3.3-70b-versatile is deprecated on GroqCloud (decommission 2026-08-16).
+# Default to its recommended replacement; override with the GROQ_MODEL env var
+# (e.g. "qwen/qwen3.6-27b" for a faster/cheaper option). Verify availability at
+# GET https://api.groq.com/openai/v1/models.
+GROQ_MODEL = os.getenv("GROQ_MODEL", "openai/gpt-oss-120b")
 
 # ── League → The Odds API sport key ──────────────────────────────────────────
 LEAGUE_SPORT_KEY: dict[str, str] = {
