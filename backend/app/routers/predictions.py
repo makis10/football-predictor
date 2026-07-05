@@ -3,7 +3,7 @@ import time
 from typing import Optional
 
 import pandas as pd
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends, HTTPException, Request
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
@@ -309,7 +309,7 @@ def get_prediction(match_id: int, db: Session = Depends(get_db)):
 
 
 @router.get("/{match_id}/analysis", response_model=AnalysisResponse)
-def get_match_analysis(match_id: int, db: Session = Depends(get_db)):
+def get_match_analysis(match_id: int, request: Request, db: Session = Depends(get_db)):
     """
     Compare the ML prediction with live bookmaker odds and return a Claude
     AI analysis.  Results are cached in memory for 1 hour per match to
@@ -319,6 +319,12 @@ def get_match_analysis(match_id: int, db: Session = Depends(get_db)):
     Returns has_odds_data=false if ODDS_API_KEY is missing or match not found
     on The Odds API (still returns Claude analysis with model-only context).
     """
+    # Public LLM-backed endpoint — rate-limit per client to protect the Groq /
+    # Odds API free quotas from scraping.
+    from backend.app.rate_limit import rate_limit_check, client_ip
+    if not rate_limit_check(f"analysis:{client_ip(request)}", max_calls=20, window=60):
+        raise HTTPException(status_code=429, detail="Too many requests. Please slow down.")
+
     match = db.get(Match, match_id)
     if not match:
         raise HTTPException(status_code=404, detail=f"Match {match_id} not found")

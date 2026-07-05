@@ -219,3 +219,68 @@ def mark_feedback_read(
     fb.is_read = True
     db.commit()
     return {"ok": True}
+
+
+# ── Market record (dynamic-gate shadow-tracking visibility) ─────────────────────
+
+@router.get("/market-record")
+def market_record(
+    _admin: User = Depends(_require_admin),
+    db: Session = Depends(get_db),
+):
+    """Per-market NEW-model settled record from the value-bet ledger — so you can
+    watch a shadow-tracked market (GG, Over, …) accumulate evidence and see how
+    close it is to promotion into a headline suggestion."""
+    from backend.app.ml.odds_analysis_service import (
+        _market_won, BASE_SUGGESTABLE, NEW_MODEL_CUTOFF,
+        PROVEN_MIN_SAMPLES, PROVEN_ROI_FLOOR,
+    )
+
+    rows = db.execute(text("""
+        SELECT vb.market, vb.odds, vb.created_at::text AS created_at,
+               np.actual_result, np.actual_home_goals, np.actual_away_goals
+        FROM value_bets vb
+        JOIN national_predictions np ON np.id = vb.national_prediction_id
+        WHERE vb.source = 'national'
+        ORDER BY vb.market
+    """)).fetchall()
+
+    agg: dict[str, dict] = {}
+    for market, odds, created_at, res, hg, ag in rows:
+        a = agg.setdefault(market, {"tracked": 0, "settled": 0, "wins": 0,
+                                    "pnl": 0.0, "post_cutoff": 0})
+        a["tracked"] += 1
+        if created_at and created_at >= NEW_MODEL_CUTOFF:
+            a["post_cutoff"] += 1
+        won = _market_won(market, res, hg, ag)
+        # Only post-cutoff settled tickets count toward promotion (new model).
+        if won is not None and odds and created_at and created_at >= NEW_MODEL_CUTOFF:
+            a["settled"] += 1
+            a["wins"] += 1 if won else 0
+            a["pnl"] += (float(odds) - 1.0) if won else -1.0
+
+    out = []
+    for market, a in sorted(agg.items()):
+        n = a["settled"]
+        roi = (a["pnl"] / n) if n else None
+        proven = market in BASE_SUGGESTABLE or (
+            n >= PROVEN_MIN_SAMPLES and roi is not None and roi >= PROVEN_ROI_FLOOR
+        )
+        out.append({
+            "market":            market,
+            "is_base":           market in BASE_SUGGESTABLE,
+            "proven":            proven,
+            "tracked_total":     a["tracked"],
+            "settled":           n,
+            "wins":              a["wins"],
+            "win_pct":           round(a["wins"] / n, 3) if n else None,
+            "roi_pct":           round(roi * 100, 1) if roi is not None else None,
+            "samples_to_promote": max(0, PROVEN_MIN_SAMPLES - n) if not proven else 0,
+        })
+
+    return {
+        "cutoff":       NEW_MODEL_CUTOFF,
+        "min_samples":  PROVEN_MIN_SAMPLES,
+        "roi_floor_pct": round(PROVEN_ROI_FLOOR * 100, 1),
+        "markets":      out,
+    }

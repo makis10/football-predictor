@@ -326,12 +326,20 @@ function Header() {
           Monte Carlo tournament projection: champion & finalist probabilities.
         </p>
       </div>
-      <Link
-        href="/"
-        className="shrink-0 text-sm text-gray-400 hover:text-white whitespace-nowrap mt-1"
-      >
-        ← Upcoming
-      </Link>
+      <div className="shrink-0 flex items-center gap-3 mt-1">
+        <Link
+          href="/national/world-cup/review"
+          className="text-sm text-amber-400 hover:text-amber-300 whitespace-nowrap"
+        >
+          Review →
+        </Link>
+        <Link
+          href="/"
+          className="text-sm text-gray-400 hover:text-white whitespace-nowrap"
+        >
+          ← Upcoming
+        </Link>
+      </div>
     </div>
   );
 }

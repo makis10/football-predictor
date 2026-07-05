@@ -56,6 +56,14 @@ set -a
 source .env 2>/dev/null || true
 set +a
 
+# ── 0. Back up the database BEFORE any mutation ──────────────────────────────
+# A daily snapshot of everything that can't be regenerated (users, bets, the
+# value ledger, settled results) — taken first so today's --force/retrain can
+# never leave us without a restore point.
+echo "" >> "$LOG"
+echo "[0] Backing up database …" | tee -a "$LOG"
+bash "$PROJ_DIR/scripts/backup_db.sh" 2>&1 | tee -a "$LOG" || echo "  [warn] backup failed — continuing" | tee -a "$LOG"
+
 # ── 1. Update domestic + CL results (football-data.org) ──────────────────────
 echo "[1/6] Updating domestic + CL match results …" | tee -a "$LOG"
 docker compose exec -T backend \
@@ -386,4 +394,15 @@ if [ "$DAY_OF_WEEK" -eq 1 ]; then
 
     echo "" >> "$LOG"
     echo "Weekly retrain complete at $(date '+%Y-%m-%d %H:%M:%S')" | tee -a "$LOG"
+fi
+
+# ── Dead-man's-switch heartbeat ──────────────────────────────────────────────
+# Ping a monitor (e.g. healthchecks.io) on successful completion. If launchd
+# never fires or the job dies before here, the ping is missed and the monitor
+# alerts — this pipeline has silently no-op'd before (docker PATH), so we watch
+# it. Set HEARTBEAT_URL in .env to enable; no-op when unset.
+if [ -n "${HEARTBEAT_URL:-}" ]; then
+    curl -fsS -m 10 --retry 3 "$HEARTBEAT_URL" >> "$LOG" 2>&1 \
+        && echo "✓ heartbeat sent" >> "$LOG" \
+        || echo "[warn] heartbeat ping failed" >> "$LOG"
 fi

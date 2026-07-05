@@ -6,9 +6,16 @@ export default withAuth({
   },
 });
 
-// Apply to every route EXCEPT login, register, NextAuth, proxy API routes, and static assets
+// Protect ONLY the personal / admin areas. Everything else — predictions, stats,
+// recent results, the World Cup pages, robots/sitemap/OG — is PUBLIC, so visitors
+// (and search-engine crawlers) can see the product without a login wall. That's
+// essential for the showcase/reach goal; personal data stays gated.
 export const config = {
   matcher: [
-    "/((?!login|register|api/auth|api/proxy|_next/static|_next/image|favicon.ico).*)",
+    "/admin/:path*",
+    "/profile/:path*",
+    "/my-matches/:path*",
+    "/my-roi/:path*",
+    "/settings/:path*",
   ],
 };

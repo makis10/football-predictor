@@ -2,12 +2,15 @@
 export const dynamic = "force-dynamic";
 
 import { Suspense } from "react";
+import Link from "next/link";
 import {
   getMatches,
   getUpcomingNationalMatches,
+  getWcReview,
   athensDate,
   formatLongDate,
   INTERNATIONAL_LEAGUE,
+  type WcReview,
 } from "@/lib/api";
 import MatchCard from "@/components/MatchCard";
 import LeagueFilter from "@/components/LeagueFilter";
@@ -133,6 +136,15 @@ export default async function HomePage({ searchParams }: PageProps) {
   const minOdds       = sp.min_odds ? Number(sp.min_odds) : undefined;
   const minConfidence = sp.min_confidence || undefined;
 
+  // Best-effort WC retrospective hero — keeps the app compelling between the
+  // World Cup final and the club season restart, when fixtures are sparse.
+  let wcReview: WcReview = { available: false };
+  try {
+    wcReview = await getWcReview();
+  } catch {
+    /* non-fatal */
+  }
+
   return (
     <div className="space-y-6">
       <div>
@@ -143,6 +155,20 @@ export default async function HomePage({ searchParams }: PageProps) {
           Model predictions for the next {DAYS_AHEAD} days across 13 leagues.
         </p>
       </div>
+
+      {wcReview.available && wcReview.settled ? (
+        <Link
+          href="/national/world-cup/review"
+          className="flex items-center justify-between gap-3 rounded-xl border border-amber-700/40 bg-amber-950/20 px-4 py-3 hover:bg-amber-950/30 transition-colors"
+        >
+          <span className="text-sm text-gray-300">
+            🏆 <span className="font-semibold text-amber-300">World Cup 2026 review</span> — το μοντέλο πέτυχε{" "}
+            <span className="font-semibold text-emerald-400">{Math.round((wcReview.result_accuracy ?? 0) * 100)}%</span>{" "}
+            των αποτελεσμάτων σε {wcReview.settled} αγώνες
+          </span>
+          <span className="text-xs text-amber-400 whitespace-nowrap">Δες →</span>
+        </Link>
+      ) : null}
 
       <Suspense>
         <LeagueFilter active={league} />

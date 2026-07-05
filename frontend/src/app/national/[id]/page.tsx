@@ -21,15 +21,25 @@ interface Props {
 }
 
 /** Settlement pill — green ✓ when we caught it, red ✗ when we missed. */
-function HitPill({ hit, label }: { hit: boolean | null | undefined; label?: string }) {
+function HitPill({
+  hit,
+  label,
+  partial,
+}: {
+  hit: boolean | null | undefined;
+  label?: string;
+  partial?: boolean;   // soft hit — not the exact call, but close (e.g. score in top-6)
+}) {
   if (hit == null) return null;
+  const tone = hit
+    ? "bg-green-500/20 text-green-400"
+    : partial
+    ? "bg-amber-500/20 text-amber-400"
+    : "bg-rose-500/20 text-rose-400";
+  const icon = hit ? "✓" : partial ? "◐" : "✗";
   return (
-    <span
-      className={`badge font-semibold ${
-        hit ? "bg-green-500/20 text-green-400" : "bg-rose-500/20 text-rose-400"
-      }`}
-    >
-      {hit ? "✓" : "✗"}
+    <span className={`badge font-semibold ${tone}`}>
+      {icon}
       {label ? ` ${label}` : ""}
     </span>
   );
@@ -306,6 +316,7 @@ export default async function NationalMatchDetailPage({ params }: Props) {
               {hasResult && (
                 <HitPill
                   hit={prediction.score_hit}
+                  partial={!prediction.score_hit && !!prediction.score_in_top}
                   label={
                     prediction.score_hit ? "πιάσαμε" : prediction.score_in_top ? "top-6" : "χάσαμε"
                   }

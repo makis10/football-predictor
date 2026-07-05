@@ -7,9 +7,38 @@ import Providers from "@/components/Providers";
 import UserNav from "@/components/UserNav";
 import NotificationBell from "@/components/NotificationBell";
 
+const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL || "https://hamster-manger-uplifting.ngrok-free.dev";
+const SITE_NAME = "Football Predictor";
+const SITE_DESC =
+  "Market-independent ML predictions for football — 1×2, goals, BTTS, correct score, " +
+  "player props & a live World Cup simulation, with transparent accuracy tracking.";
+
 export const metadata: Metadata = {
-  title: "Football Predictor",
-  description: "ML-powered football match outcome predictions",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: `${SITE_NAME} — ML football predictions`,
+    template: `%s · ${SITE_NAME}`,
+  },
+  description: SITE_DESC,
+  applicationName: SITE_NAME,
+  keywords: [
+    "football predictions", "soccer predictions", "World Cup 2026",
+    "xG", "Elo", "machine learning", "value bets", "correct score",
+  ],
+  openGraph: {
+    type: "website",
+    siteName: SITE_NAME,
+    title: `${SITE_NAME} — ML football predictions`,
+    description: SITE_DESC,
+    url: SITE_URL,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${SITE_NAME} — ML football predictions`,
+    description: SITE_DESC,
+  },
+  robots: { index: true, follow: true },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

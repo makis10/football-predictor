@@ -1062,3 +1062,47 @@ export interface WcChampionHistory {
 export async function getWcChampionHistory(): Promise<WcChampionHistory> {
   return apiFetch<WcChampionHistory>("/national/wc-champion-history");
 }
+
+export interface MarketRecordRow {
+  market: string;
+  is_base: boolean;
+  proven: boolean;
+  tracked_total: number;
+  settled: number;
+  wins: number;
+  win_pct: number | null;
+  roi_pct: number | null;
+  samples_to_promote: number;
+}
+
+export interface MarketRecord {
+  cutoff: string;
+  min_samples: number;
+  roi_floor_pct: number;
+  markets: MarketRecordRow[];
+}
+
+export interface WcReviewHighlight {
+  home: string;
+  away: string;
+  score: string | null;
+  pick: string;      // "H" | "D" | "A"
+  prob: number;
+}
+
+export interface WcReview {
+  available: boolean;
+  settled?: number;
+  result_accuracy?: number;
+  result_correct?: number;
+  ou_accuracy?: number | null;
+  ou_total?: number;
+  high_conf_n?: number;
+  high_conf_accuracy?: number | null;
+  champ_favorite?: { team: string; win_pct: number | null } | null;
+  highlights?: WcReviewHighlight[];
+}
+
+export async function getWcReview(): Promise<WcReview> {
+  return apiFetch<WcReview>("/national/wc-review");
+}

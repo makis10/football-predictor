@@ -51,4 +51,10 @@ docker compose exec -T backend \
 # Refresh the dashboard so newly-settled matches appear immediately.
 curl -s -X POST "${_ADMIN_HDR[@]}" http://localhost:8000/stats/cache/clear >> "$LOG" 2>&1 || true
 
+# Dead-man's-switch heartbeat for the 2-hour poll (separate monitor from the
+# daily job). Set HEARTBEAT_POLL_URL in .env to enable; no-op when unset.
+if [ -n "${HEARTBEAT_POLL_URL:-}" ]; then
+    curl -fsS -m 10 --retry 2 "$HEARTBEAT_POLL_URL" >> "$LOG" 2>&1 || true
+fi
+
 echo "   done $(date '+%H:%M:%S')" >> "$LOG"

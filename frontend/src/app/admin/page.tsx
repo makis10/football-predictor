@@ -61,12 +61,18 @@ export default async function AdminPage() {
       </div>
 
       {/* Admin sub-pages */}
-      <div className="flex gap-3">
+      <div className="flex flex-wrap gap-3">
         <Link
           href="/admin/training"
           className="rounded-lg border border-pitch-700 bg-pitch-900 hover:bg-pitch-800 px-4 py-2 text-sm text-gray-300 transition-colors"
         >
           Training History →
+        </Link>
+        <Link
+          href="/admin/markets"
+          className="rounded-lg border border-pitch-700 bg-pitch-900 hover:bg-pitch-800 px-4 py-2 text-sm text-gray-300 transition-colors"
+        >
+          Market Record →
         </Link>
       </div>
 

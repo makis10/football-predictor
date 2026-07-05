@@ -1,0 +1,87 @@
+import { redirect } from "next/navigation";
+import { getSession, fetchWithAuth } from "@/lib/auth";
+import { type MarketRecord } from "@/lib/api";
+
+export const dynamic = "force-dynamic";
+
+function fmtRoi(v: number | null): string {
+  return v == null ? "—" : `${v >= 0 ? "+" : ""}${v.toFixed(1)}%`;
+}
+
+export default async function MarketRecordPage() {
+  const session = await getSession();
+  if (!(session?.user as any)?.isAdmin) redirect("/");
+
+  const res = await fetchWithAuth("/admin/market-record");
+  const data: MarketRecord | null = res.ok ? await res.json() : null;
+
+  return (
+    <div className="space-y-6">
+      <div>
+        <h1 className="text-2xl font-bold">Market Record</h1>
+        <p className="text-sm text-gray-500 mt-1">
+          Shadow-tracked new-model record per market (national). A market promotes to a
+          headline suggestion at ≥{data?.min_samples ?? 30} settled tickets with ROI ≥{" "}
+          {data?.roi_floor_pct ?? 0}%. Since cutoff {data?.cutoff ?? "—"}.
+        </p>
+      </div>
+
+      {!data || data.markets.length === 0 ? (
+        <div className="rounded-xl border border-pitch-700 bg-pitch-900 p-8 text-center text-gray-500">
+          Δεν υπάρχουν ακόμα καταγεγραμμένα tickets.
+        </div>
+      ) : (
+        <div className="overflow-x-auto rounded-xl border border-pitch-700">
+          <table className="w-full text-sm">
+            <thead className="bg-pitch-800 text-gray-400 text-xs uppercase tracking-wide">
+              <tr>
+                <th className="text-left px-4 py-2">Market</th>
+                <th className="text-center px-3 py-2">Status</th>
+                <th className="text-right px-3 py-2">Settled</th>
+                <th className="text-right px-3 py-2">Win%</th>
+                <th className="text-right px-3 py-2">ROI</th>
+                <th className="text-right px-4 py-2">To promote</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-pitch-800">
+              {data.markets.map((m) => (
+                <tr key={m.market} className="hover:bg-pitch-800/40">
+                  <td className="px-4 py-2 font-medium text-gray-100">{m.market}</td>
+                  <td className="px-3 py-2 text-center">
+                    {m.is_base ? (
+                      <span className="text-[11px] px-2 py-0.5 rounded-full bg-sky-900/40 text-sky-300">base</span>
+                    ) : m.proven ? (
+                      <span className="text-[11px] px-2 py-0.5 rounded-full bg-green-900/40 text-green-300">proven</span>
+                    ) : (
+                      <span className="text-[11px] px-2 py-0.5 rounded-full bg-amber-900/40 text-amber-300">watch</span>
+                    )}
+                  </td>
+                  <td className="px-3 py-2 text-right tabular-nums text-gray-300">
+                    {m.settled}
+                    <span className="text-gray-600 text-xs"> / {m.tracked_total}</span>
+                  </td>
+                  <td className="px-3 py-2 text-right tabular-nums text-gray-400">
+                    {m.win_pct == null ? "—" : `${Math.round(m.win_pct * 100)}%`}
+                  </td>
+                  <td className={`px-3 py-2 text-right tabular-nums font-semibold ${
+                    m.roi_pct == null ? "text-gray-500" : m.roi_pct >= 0 ? "text-emerald-400" : "text-rose-400"
+                  }`}>
+                    {fmtRoi(m.roi_pct)}
+                  </td>
+                  <td className="px-4 py-2 text-right tabular-nums text-gray-500">
+                    {m.is_base || m.proven ? "—" : m.samples_to_promote}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )}
+
+      <p className="text-xs text-gray-600">
+        “watch” markets are shown to users as unproven and recorded here; once the data clears
+        the bar they auto-promote to real suggestions. ROI is at the recorded (opening) odds.
+      </p>
+    </div>
+  );
+}

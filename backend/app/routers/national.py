@@ -17,7 +17,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any, Optional
 
-from fastapi import APIRouter, Depends, HTTPException, Query
+from fastapi import APIRouter, Depends, HTTPException, Query, Request
 from pydantic import BaseModel, field_validator
 from sqlalchemy import bindparam, text
 from sqlalchemy.orm import Session
@@ -310,6 +310,7 @@ def get_player_props(prediction_id: int, db: Session = Depends(get_db)):
 @router.get("/predictions/{prediction_id}/analysis", response_model=AnalysisResponse)
 def get_national_analysis(
     prediction_id: int,
+    request: Request,
     db: Session = Depends(get_db),
 ):
     """
@@ -317,6 +318,13 @@ def get_national_analysis(
     via The Odds API) and returns a Groq LLM analysis. No injury data — API-Football
     does not support national team injury reports. Results cached 30 min in Redis.
     """
+    # Public endpoint that can trigger a Groq (LLM) call — rate-limit per client
+    # so a scraper can't drain the free quota. Cached responses still count, but
+    # the limit is generous enough for normal browsing.
+    from backend.app.rate_limit import rate_limit_check, client_ip
+    if not rate_limit_check(f"analysis:{client_ip(request)}", max_calls=20, window=60):
+        raise HTTPException(status_code=429, detail="Too many requests. Please slow down.")
+
     pred = db.query(NationalPrediction).filter(NationalPrediction.id == prediction_id).first()
     if not pred:
         raise HTTPException(status_code=404, detail="Prediction not found")
@@ -533,6 +541,81 @@ def training_metrics() -> dict[str, Any]:
 
 _WC_SIM_PATH = _METRICS_PATH.parent / "wc_simulation.json"
 _WC_HISTORY_PATH = _METRICS_PATH.parent / "wc_champion_history.jsonl"
+
+
+@router.get("/wc-review")
+def wc_review(db: Session = Depends(get_db)) -> dict[str, Any]:
+    """Retrospective: how the model did across the World Cup — a permanent
+    showcase that stays relevant after the tournament ends."""
+    rows = db.execute(text("""
+        SELECT home_team, away_team, match_date, prediction, actual_result,
+               home_win_prob, draw_prob, away_win_prob, over_2_5_prob,
+               actual_home_goals, actual_away_goals, confidence
+        FROM national_predictions
+        WHERE tournament = 'FIFA World Cup' AND actual_result IS NOT NULL
+        ORDER BY match_date
+    """)).fetchall()
+
+    n = len(rows)
+    if n == 0:
+        return {"available": False}
+
+    result_correct = ou_correct = ou_total = 0
+    hi_conf_n = hi_conf_correct = 0
+    highlights: list[dict] = []
+    for r in rows:
+        hit = r.prediction == r.actual_result
+        result_correct += 1 if hit else 0
+        # Over/Under 2.5 accuracy
+        if r.actual_home_goals is not None and r.actual_away_goals is not None and r.over_2_5_prob is not None:
+            total = r.actual_home_goals + r.actual_away_goals
+            pred_over = r.over_2_5_prob > 0.5
+            ou_correct += 1 if (total > 2.5) == pred_over else 0
+            ou_total += 1
+        # Confidence slice (model's own top-outcome probability)
+        top_p = max(r.home_win_prob or 0, r.draw_prob or 0, r.away_win_prob or 0)
+        if top_p >= 0.55:
+            hi_conf_n += 1
+            hi_conf_correct += 1 if hit else 0
+        # Highlight: confident calls that landed
+        if hit and top_p >= 0.5:
+            highlights.append({
+                "home": r.home_team, "away": r.away_team,
+                "score": f"{r.actual_home_goals}-{r.actual_away_goals}"
+                         if r.actual_home_goals is not None else None,
+                "pick": r.prediction, "prob": round(top_p, 3),
+            })
+    highlights.sort(key=lambda h: h["prob"], reverse=True)
+
+    # Champion call: the model's pre-knockout title favourite, from the earliest
+    # champion-history snapshot (or the current sim as a fallback).
+    champ_favorite = None
+    try:
+        if _WC_HISTORY_PATH.exists():
+            first = None
+            with open(_WC_HISTORY_PATH) as f:
+                for line in f:
+                    line = line.strip()
+                    if line:
+                        first = json.loads(line); break
+            if first and first.get("teams"):
+                t0 = max(first["teams"], key=lambda t: t.get("win_pct", 0))
+                champ_favorite = {"team": t0["team"], "win_pct": t0.get("win_pct")}
+    except Exception:
+        pass
+
+    return {
+        "available": True,
+        "settled": n,
+        "result_accuracy": round(result_correct / n, 4),
+        "result_correct": result_correct,
+        "ou_accuracy": round(ou_correct / ou_total, 4) if ou_total else None,
+        "ou_total": ou_total,
+        "high_conf_n": hi_conf_n,
+        "high_conf_accuracy": round(hi_conf_correct / hi_conf_n, 4) if hi_conf_n else None,
+        "champ_favorite": champ_favorite,
+        "highlights": highlights[:8],
+    }
 
 
 @router.get("/wc-simulation")
