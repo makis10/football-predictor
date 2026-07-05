@@ -8,7 +8,7 @@ import UserNav from "@/components/UserNav";
 import NotificationBell from "@/components/NotificationBell";
 
 const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL || "https://hamster-manger-uplifting.ngrok-free.dev";
+  process.env.NEXT_PUBLIC_SITE_URL || "https://aitipster.net";
 const SITE_NAME = "Football Predictor";
 const SITE_DESC =
   "Market-independent ML predictions for football — 1×2, goals, BTTS, correct score, " +

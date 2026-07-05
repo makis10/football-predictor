@@ -79,6 +79,9 @@ services:
       # then set UMAMI_WEBSITE_ID in .env + `docker compose up -d frontend`).
       # Read server-side at render time, so no rebuild is needed.
       NEXT_PUBLIC_UMAMI_WEBSITE_ID: ${UMAMI_WEBSITE_ID:-}
+      # Public site URL (SEO metadata / sitemap / OG). Defaults in-code to
+      # https://aitipster.net; override here for another deployment.
+      NEXT_PUBLIC_SITE_URL: ${NEXT_PUBLIC_SITE_URL:-https://aitipster.net}
     ports:
       - "3000:3000"
     depends_on:

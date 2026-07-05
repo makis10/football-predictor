@@ -4,7 +4,7 @@ A full-stack machine-learning application that predicts football match outcomes 
 
 Built with **XGBoost + Pi-Ratings + Poisson expected-goals** (clubs) and a **talent-adjusted Elo** engine (national teams), **FastAPI**, **Next.js 16 / React 19**, **PostgreSQL**, **Redis**, and **Groq (GPT-OSS-120B)** — fully containerised with Docker Compose. Club feature set: **133 features, fully market-independent** (no bookmaker inputs — the market is only used as a benchmark).
 
-**Live URL:** [https://hamster-manger-uplifting.ngrok-free.dev](https://hamster-manger-uplifting.ngrok-free.dev)
+**Live URL:** [https://aitipster.net](https://aitipster.net)
 
 ### Engineering highlights
 
@@ -27,7 +27,7 @@ Built with **XGBoost + Pi-Ratings + Poisson expected-goals** (clubs) and a **tal
 7. [National Teams (International)](#national-teams-international)
 8. [Seeding the Database](#seeding-the-database)
 9. [Live Fixtures & Daily Automation](#live-fixtures--daily-automation)
-10. [Public Tunnel (ngrok)](#public-tunnel-ngrok)
+10. [Public Tunnel (Cloudflare)](#public-tunnel-cloudflare)
 11. [API Reference](#api-reference)
 12. [Model Deep-Dive](#model-deep-dive)
 13. [Adjusting & Improving the Model](#adjusting--improving-the-model)
@@ -42,7 +42,7 @@ Built with **XGBoost + Pi-Ratings + Poisson expected-goals** (clubs) and a **tal
 Internet
     │
     ▼
-ngrok tunnel (hamster-manger-uplifting.ngrok-free.dev)
+Cloudflare tunnel (aitipster.net)
     │
     ▼
 ┌─────────────────────────────────────────────────────────────┐
@@ -80,7 +80,7 @@ ngrok tunnel (hamster-manger-uplifting.ngrok-free.dev)
 - **ML** — Four XGBoost models (result, goals, draw specialist, BTTS classifier) trained on **133 features**, with Pi-Ratings and a Poisson expected-goals model as key feature sources. Draw probabilities are blended with a dedicated draw-specialist classifier (auto-tuned α=0.45 via Brier score sweep). BTTS predictions come from a dedicated XGBClassifier with isotonic calibration and an auto-tuned decision threshold (macro F1 sweep on calibration set; currently 0.52), replacing the previous Poisson-only estimate. Position-aware injury/suspension adjustments applied at inference time using API-Football data. Model files (`.pkl`) are mounted into the backend container.
 - **Database** — PostgreSQL 16. Schema managed by Alembic migrations (0001–0014). Kick-off times stored as UTC `TIME` columns; bookmaker odds stored at prediction time for ROI/EV tracking; `odds_history` table stores snapshots every 3h for odds movement arrows (↑/↓).
 - **Redis** — Caching layer (128MB, LRU eviction). Replaces all in-process Python dicts. Keys: `injuries:{match_id}` 30min, `squad_positions:{team_id}` 24h, `analysis:{fingerprint}` 30min, `postmortem:{match_id}` 24h, `stats:global` 6h, `league_odds:{league}` 30min, `match_events:{fixture_id}` 24h, `chat:context` 30min. Graceful fallback to no-op if Redis unavailable.
-- **Tunnel** — ngrok permanent static domain, managed by macOS launchd (auto-restarts on crash/reboot).
+- **Tunnel** — Cloudflare Tunnel serving the custom domain aitipster.net, managed by macOS launchd (auto-restarts on crash/reboot).
 
 ---
 
@@ -91,7 +91,7 @@ ngrok tunnel (hamster-manger-uplifting.ngrok-free.dev)
 | Docker Desktop | ≥ 4.x   | Includes Compose V2                      |
 | Python         | 3.11+   | Only needed for training / local dev     |
 | Node.js        | 20 LTS  | Only needed for local frontend dev       |
-| ngrok          | latest  | `brew install ngrok` — for public tunnel |
+| cloudflared    | latest  | `brew install cloudflared` — for the public tunnel (aitipster.net) |
 
 ---
 
@@ -197,9 +197,10 @@ API_SPORTS_KEY=your_key_here
 # ── Frontend ──────────────────────────────────────────────
 NEXT_PUBLIC_API_URL=http://localhost:8000
 
-# ── ngrok tunnel ─────────────────────────────────────────
-NGROK_AUTHTOKEN=your_token_here
-NGROK_DOMAIN=your-static-domain.ngrok-free.dev
+# ── Public URL (Cloudflare tunnel serves aitipster.net → localhost:3000) ──
+NEXTAUTH_URL=https://aitipster.net
+NEXT_PUBLIC_SITE_URL=https://aitipster.net
+ALLOWED_DEV_ORIGINS=aitipster.net,www.aitipster.net
 ```
 
 ### Frontend URL resolution
@@ -512,7 +513,7 @@ Two launchd jobs are defined in `launchd/` and installed via the install script:
 | `com.football-predictor.daily`       | Every day at **06:00** (+ on login/wake) | Runs `run_daily.sh`: domestic+CL results → EL/ECL/GreekSL results → top-5+CL+ELC+PPL+DED fixtures → Greek SL → CL/EL/ECL → compute predictions → backfill bm_odds → **warm injury cache** (next 3 days, new fixtures only) → clear stats cache. Every Monday also refreshes CSVs, retrains models, and force-recomputes all predictions. |
 | `com.football-predictor.prematch`    | Every day at **15:00**                   | Runs `compute_predictions.py --force-today` — refreshes predictions for today's unstarted matches using closing-line odds (~2h before typical evening kick-offs, the sharpest market signal).                                                                  |
 | `com.football-predictor.odds-poll`   | Every **3 hours**                        | Snapshots current bookmaker odds into the `odds_history` table. Powers odds movement arrows (↑/↓) on match detail pages, and feeds `odds_drift_*` / `is_steam_*` ML features at prediction time.                                                              |
-| `com.football-predictor.tunnel`      | Always (KeepAlive)                       | Keeps the ngrok tunnel alive across reboots.                                                                                                                                                                                                                  |
+| `com.football-predictor.cloudflared` | Always (KeepAlive)                       | Keeps the Cloudflare tunnel (aitipster.net) alive across reboots.                                                                                                                                                                                             |
 
 Logs: `~/Library/Logs/football-predictor/`
 
@@ -538,27 +539,29 @@ bash scripts/run_daily.sh
 
 ---
 
-## Public Tunnel (ngrok)
+## Public Tunnel (Cloudflare)
 
-The app is exposed publicly via a **permanent ngrok static domain** (free tier, no domain purchase needed).
+The app is served at **[https://aitipster.net](https://aitipster.net)** via a **Cloudflare Tunnel** (free) — a custom domain with Cloudflare's edge (DNS, TLS, DDoS protection) in front, forwarding to `localhost:3000` on this machine.
 
-**Current URL:** [https://hamster-manger-uplifting.ngrok-free.dev](https://hamster-manger-uplifting.ngrok-free.dev)
-
-The tunnel is managed by launchd (`com.football-predictor.tunnel`) — it starts at login and restarts automatically if it crashes.
+The tunnel is managed by launchd (`com.football-predictor.cloudflared`) — it starts at login and restarts automatically if it crashes. Full setup guide: [`launchd/CLOUDFLARED_SETUP.md`](launchd/CLOUDFLARED_SETUP.md).
 
 ### Setup on a new machine
 
 ```bash
-brew install ngrok
-ngrok config add-authtoken $NGROK_AUTHTOKEN
-bash launchd/install.sh   # installs both tunnel + daily services
+brew install cloudflared
+cloudflared tunnel login                                # authorise the aitipster.net zone
+cloudflared tunnel create aitipster                     # creds → ~/.cloudflared/
+cloudflared tunnel route dns aitipster aitipster.net
+cloudflared tunnel route dns aitipster www.aitipster.net
+bash launchd/install.sh                                 # installs tunnel + cron services
 ```
 
 ### Check tunnel status
 
 ```bash
 launchctl list | grep football-predictor
-curl https://hamster-manger-uplifting.ngrok-free.dev/api/proxy/matches?limit=1
+cloudflared tunnel list
+curl -I https://aitipster.net
 ```
 
 ---
@@ -1040,8 +1043,9 @@ football-predictor/
 │   └── run_daily.sh                   # Daily: results → fixtures → predictions → warm injuries → clear cache
 │
 ├── launchd/
-│   ├── com.football-predictor.tunnel.plist  # ngrok tunnel (KeepAlive)
+│   ├── com.football-predictor.cloudflared.plist  # Cloudflare tunnel (KeepAlive)
 │   ├── com.football-predictor.daily.plist   # Daily refresh at 06:00 (RunAtLoad=true)
+│   ├── CLOUDFLARED_SETUP.md                 # One-time tunnel setup guide
 │   ├── install.sh                           # Substitute placeholders + load services
 │   └── uninstall.sh                         # Unload + remove services
 │
@@ -1057,14 +1061,16 @@ football-predictor/
 
 ## Troubleshooting
 
-### Tunnel URL is wrong after reboot
+### aitipster.net not reachable (Cloudflare error 530/1033)
 
-The ngrok static domain is permanent — the URL never changes. If the tunnel isn't reachable:
+530 means Cloudflare can't reach the tunnel — cloudflared isn't running on this machine:
 
 ```bash
 launchctl list | grep football-predictor
+cloudflared tunnel list        # "aitipster" should show an active connection
 # If not running:
-launchctl load ~/Library/LaunchAgents/com.football-predictor.tunnel.plist
+launchctl load ~/Library/LaunchAgents/com.football-predictor.cloudflared.plist
+tail -20 ~/Library/Logs/football-predictor/tunnel-stderr.log
 ```
 
 ### "No CSV files found" when seeding

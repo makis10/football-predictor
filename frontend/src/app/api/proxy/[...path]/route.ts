@@ -3,7 +3,7 @@
  *
  * Why this exists:
  *   The browser only ever talks to the Next.js origin (one public URL, works
- *   behind an ngrok/cloudflared tunnel). This handler forwards to the backend
+ *   behind a cloudflared tunnel). This handler forwards to the backend
  *   server-side, so visitors never need to reach the backend port directly.
  *
  * Security:

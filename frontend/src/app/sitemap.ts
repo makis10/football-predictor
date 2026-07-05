@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL || "https://hamster-manger-uplifting.ngrok-free.dev";
+  process.env.NEXT_PUBLIC_SITE_URL || "https://aitipster.net";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();

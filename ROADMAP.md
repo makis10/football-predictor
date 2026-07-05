@@ -162,4 +162,4 @@ Value bets κατά τη διάρκεια αγώνα (ημίχρονο κ.λπ.)
 | Fixture Data | football-data.org (free tier) |
 | Injury Data | API-Football / api-sports.io (100 req/day free) |
 | xG Data | understat.com (scraped) |
-| Infrastructure | Docker Compose · ngrok static tunnel · macOS launchd (4 services: tunnel, daily@06:00, odds-poll@3h, prematch@15:00) |
+| Infrastructure | Docker Compose · Cloudflare tunnel (aitipster.net) · macOS launchd (4 services: tunnel, daily@06:00, odds-poll@3h, prematch@15:00) |

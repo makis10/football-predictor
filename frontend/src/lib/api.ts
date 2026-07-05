@@ -1,7 +1,7 @@
 // Server-side (SSR/RSC): talk directly to the backend container.
 // Client-side (browser): use the Next.js proxy route so only ONE public URL
 // is needed — works both locally and when the site is shared via a tunnel
-// (ngrok / cloudflared). The proxy at /api/proxy/* forwards to the backend
+// (cloudflared). The proxy at /api/proxy/* forwards to the backend
 // server-side, so visitors never need to reach backend:8000 directly.
 const API_URL =
   typeof window === "undefined"
