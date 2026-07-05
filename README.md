@@ -1,10 +1,18 @@
 # Football Match Predictor
 
-A full-stack machine-learning application that predicts football match outcomes (Win / Draw / Loss) and goal totals (Over / Under 2.5) for **13 competitions** — six domestic leagues, four second-tier / national leagues, Champions League, Europa League, and Conference League — with live bookmaker odds comparison, AI analysis, ROI tracking, odds movement tracking, and an AI chatbot assistant.
+A full-stack machine-learning application that predicts football match outcomes (Win / Draw / Loss), goal totals (Over / Under 2.5), BTTS, correct scores and player props for **13 club competitions + international football** (World Cup 2026 with a live Monte-Carlo tournament simulation) — with bookmaker comparison, AI analysis, transparent accuracy/ROI tracking, and an AI chatbot assistant.
 
-Built with **XGBoost + Pi-Ratings + Poisson expected-goals model**, **FastAPI**, **Next.js 14**, **PostgreSQL**, **Redis**, and **Groq (Llama 3.3 70B)** — fully containerised with Docker Compose. Feature set: **124 features**.
+Built with **XGBoost + Pi-Ratings + Poisson expected-goals** (clubs) and a **talent-adjusted Elo** engine (national teams), **FastAPI**, **Next.js 16 / React 19**, **PostgreSQL**, **Redis**, and **Groq (GPT-OSS-120B)** — fully containerised with Docker Compose. Club feature set: **133 features, fully market-independent** (no bookmaker inputs — the market is only used as a benchmark).
 
 **Live URL:** [https://hamster-manger-uplifting.ngrok-free.dev](https://hamster-manger-uplifting.ngrok-free.dev)
+
+### Engineering highlights
+
+- **Market-independent modelling** — bookmaker odds were removed from the feature set entirely (2026-06); value is measured *against* the de-vigged market, never borrowed from it.
+- **Data-driven value gate** — suggested markets must earn promotion from a shadow-tracked, settled ticket ledger (n ≥ 30, ROI ≥ 0) instead of a hardcoded allowlist.
+- **Honest evaluation** — CLV vs closing line, fair-value (de-vig) ROI, calibration plots, and a methodology-cutoff banner when metrics blend model generations.
+- **Ops** — daily `pg_dump` backups with rotation, dead-man's-switch heartbeats on every cron pipeline, per-IP rate limiting on LLM endpoints, self-hosted umami analytics, GitHub Actions CI (pytest + tsc + vitest + build).
+- **Resilient data plumbing** — volunteer dataset (martj42) for 150 years of history with an authoritative API-Football overlay for live-tournament scores & penalty shoot-outs.
 
 ---
 
@@ -60,16 +68,16 @@ ngrok tunnel (hamster-manger-uplifting.ngrok-free.dev)
 │                  ┌──────▼──────────────────────┐            │
 │                  │  External APIs              │            │
 │                  │  • The Odds API (bookmakers)│            │
-│                  │  • Groq API (Llama 3.3 70B) │            │
+│                  │  • Groq API (GPT-OSS-120B) │            │
 │                  │  • football-data.org        │            │
 │                  │  • API-Football (injuries)  │            │
 │                  └─────────────────────────────┘            │
 └─────────────────────────────────────────────────────────────┘
 ```
 
-- **Frontend** — Next.js 14 App Router, dark-themed Tailwind UI. Server components fetch data via internal `BACKEND_URL`; a `/api/proxy/*` catch-all route proxies browser-side calls so visitors only need one public URL. All times are rendered in **Europe/Athens** timezone (stored UTC in DB, converted at display time) so SSR and browser output match identically regardless of visitor location.
+- **Frontend** — Next.js 16 App Router, dark-themed Tailwind UI. Server components fetch data via internal `BACKEND_URL`; a `/api/proxy/*` catch-all route proxies browser-side calls so visitors only need one public URL. All times are rendered in **Europe/Athens** timezone (stored UTC in DB, converted at display time) so SSR and browser output match identically regardless of visitor location.
 - **Backend** — FastAPI REST API. Predictions are computed on-demand by the ML layer and cached in PostgreSQL. The `/predictions/{id}/analysis` endpoint fetches live bookmaker odds, injury data, and generates a Groq AI analysis in Greek. The `/predictions/{id}/postmortem` endpoint generates an AI post-mortem using real match events (goals/cards/penalties with minute+player) fetched from API-Football. The `/chat` endpoint powers a context-aware AI chatbot with full conversation history.
-- **ML** — Four XGBoost models (result, goals, draw specialist, BTTS classifier) trained on **124 features**, with Pi-Ratings and a Poisson expected-goals model as key feature sources. Draw probabilities are blended with a dedicated draw-specialist classifier (auto-tuned α=0.45 via Brier score sweep). BTTS predictions come from a dedicated XGBClassifier with isotonic calibration and an auto-tuned decision threshold (macro F1 sweep on calibration set; currently 0.52), replacing the previous Poisson-only estimate. Position-aware injury/suspension adjustments applied at inference time using API-Football data. Model files (`.pkl`) are mounted into the backend container.
+- **ML** — Four XGBoost models (result, goals, draw specialist, BTTS classifier) trained on **133 features**, with Pi-Ratings and a Poisson expected-goals model as key feature sources. Draw probabilities are blended with a dedicated draw-specialist classifier (auto-tuned α=0.45 via Brier score sweep). BTTS predictions come from a dedicated XGBClassifier with isotonic calibration and an auto-tuned decision threshold (macro F1 sweep on calibration set; currently 0.52), replacing the previous Poisson-only estimate. Position-aware injury/suspension adjustments applied at inference time using API-Football data. Model files (`.pkl`) are mounted into the backend container.
 - **Database** — PostgreSQL 16. Schema managed by Alembic migrations (0001–0014). Kick-off times stored as UTC `TIME` columns; bookmaker odds stored at prediction time for ROI/EV tracking; `odds_history` table stores snapshots every 3h for odds movement arrows (↑/↓).
 - **Redis** — Caching layer (128MB, LRU eviction). Replaces all in-process Python dicts. Keys: `injuries:{match_id}` 30min, `squad_positions:{team_id}` 24h, `analysis:{fingerprint}` 30min, `postmortem:{match_id}` 24h, `stats:global` 6h, `league_odds:{league}` 30min, `match_events:{fixture_id}` 24h, `chat:context` 30min. Graceful fallback to no-op if Redis unavailable.
 - **Tunnel** — ngrok permanent static domain, managed by macOS launchd (auto-restarts on crash/reboot).
@@ -178,7 +186,7 @@ FOOTBALLDATA_API_KEY=your_key_here
 # https://the-odds-api.com
 ODDS_API_KEY=your_key_here
 
-# Groq — AI chat + match analysis (Llama 3.3 70B, free tier: 14,400 req/day)
+# Groq — AI chat + match analysis (GPT-OSS-120B, free tier: 14,400 req/day)
 # https://console.groq.com
 GROQ_API_KEY=your_key_here
 
@@ -278,7 +286,7 @@ python -m backend.app.ml.train
 
 1. Loads all CSVs from `backend/data/raw/`
 2. Loads xG data from `backend/data/xg/` and merges onto training data by date + team name
-3. Engineers **124 features** per match (rolling stats, EWMA momentum, shots, xG, Elo, **Pi-Ratings**, **Poisson EG model**, Pinnacle odds, H2H, European congestion, referee stats, league position, draw-balance features, odds movement)
+3. Engineers **133 features** per match (rolling stats, EWMA momentum, shots, xG, Elo, **Pi-Ratings**, **Poisson EG model**, H2H, European congestion, referee stats, league position, draw-balance features). **No market/odds features** — removed 2026-06 so the model is fully market-independent; bookmaker odds are only used downstream as the value benchmark.
 4. Excludes 2020/21 COVID season (no crowds → distorted home advantage)
 5. Applies **exponential time decay** weights (3-year half-life) so recent seasons matter more
 6. Combined with **balanced class weights** (draws get ~1.8× more weight than home wins)
@@ -293,14 +301,14 @@ python -m backend.app.ml.train
 | Model                  | Accuracy  | Baseline (random) | Notes                                                    |
 | ---------------------- | --------- | ----------------- | -------------------------------------------------------- |
 | Result (W/D/L)         | **53.1%** | ~46%              | Calibrated; draw recall ~29%                             |
-| Goals (O/U 2.5)        | **54.7%** | ~50%              | xG + Pinnacle odds + time decay                          |
+| Goals (O/U 2.5)        | **54.7%** | ~50%              | xG + time decay (market-independent)                     |
 | BTTS (GG/NG)           | **52.9%** | ~50%              | Dedicated XGBClassifier + isotonic calibration + macro F1 threshold (0.52) |
 
 > Test set is 2025/26 YTD (from 2025-07-01); calibration set is 2024/25 season (used for isotonic calibrators + draw α tuning + BTTS threshold sweep).
 > The table above is a snapshot — live metrics for every weekly retrain are on `/admin/training`, and realised accuracy/ROI/CLV on `/stats`. A second-stage rolling recalibration (`scripts/recalibrate.py`, monthly + after each retrain) corrects drift against the last 365 days of stored out-of-sample predictions.
 
 > **Training improvements (cumulative):**
-> - **Pinnacle odds** as features: Pinnacle is the sharpest bookmaker; its closing line encodes injury news and team form invisible in stats.
+> - **Market independence (2026-06)**: all bookmaker-derived features (incl. Pinnacle closing lines) were REMOVED so predictions are 100% our own signal; the de-vigged market is now only the benchmark that value/EV is measured against.
 > - **xG from understat**: Expected goals are more stable than actual goals — ~16,500 matches matched from 2014/15 for the top-5 leagues.
 > - **Time decay** (3-year half-life): Down-weights 2010–2015 data where squad quality, tactics, and market efficiency differ from today.
 > - **Pi-Ratings** (Constantinou & Fenton 2012): Goal-based attack/defense ratings split by home/away context. Update by goal margin rather than win/loss — richer signal than Elo alone.
@@ -643,7 +651,7 @@ Compute or return cached prediction. If no prediction exists in the DB, runs ML 
 
 ### `GET /predictions/{match_id}/analysis`
 
-Fetches live bookmaker odds from The Odds API, compares with ML model, fetches injury/suspension data from API-Football, and returns a **Groq Llama 3.3 70B** analysis in Greek. Cached in Redis for 30 minutes per match (cache key includes a model-probability fingerprint — auto-busts on retrain).
+Fetches live bookmaker odds from The Odds API, compares with ML model, fetches injury/suspension data from API-Football, and returns a **Groq GPT-OSS-120B** analysis in Greek. Cached in Redis for 30 minutes per match (cache key includes a model-probability fingerprint — auto-busts on retrain).
 
 > **CL matches**: now fully supported — uses The Odds API `soccer_uefa_champs_league` sport key.
 
@@ -702,7 +710,7 @@ EV = model_probability × bookmaker_decimal_odds − 1
 
 ### `POST /chat`
 
-AI chatbot endpoint. Accepts a user message and optional conversation history; returns a Greek-language response from **Groq Llama 3.3 70B** with full awareness of upcoming fixtures and predictions.
+AI chatbot endpoint. Accepts a user message and optional conversation history; returns a Greek-language response from **Groq GPT-OSS-120B** with full awareness of upcoming fixtures and predictions.
 
 **Request:**
 
@@ -757,7 +765,7 @@ Model accuracy and ROI tracking dashboard data. Cached in-process for 6 hours.
 | `model_draw_clf.pkl`   | Draw specialist   | XGBoost binary         | 124 (RESULT_FEATURE_COLS) | 1=Draw, 0=Not Draw (blended into result probs with α=`draw_alpha.json`) |
 | `model_btts_clf.pkl`   | Both Teams Score  | XGBoost binary         | 40 (BTTS_FEATURE_COLS)    | 1=GG (both score), 0=NG        |
 
-### Feature set (124 features)
+### Feature set (133 features)
 
 **Rolling windows** (5 and 10 matches) per team — 42 features:
 - Goals scored / conceded (all venues + venue-split)
@@ -769,11 +777,9 @@ Model accuracy and ROI tracking dashboard data. Cached in-process for 6 hours.
 - Source: understat.com, EPL/LaLiga/SerieA/Bundesliga/Ligue1, from 2014/15
 - NaN for GreekSL + pre-2014/15 seasons — imputed with training median at inference
 
-**Pinnacle market fair probabilities** — 4 features:
-- `market_home_prob`, `market_draw_prob`, `market_away_prob`, `market_over_prob`
-- **#1 and #2 most important features** by XGBoost gain (8.7% and 8.4% respectively)
-- At training time: from historical Pinnacle closing odds in football-data.co.uk CSVs
-- **At inference time**: fetched live from The Odds API (one call per league) in `compute_predictions.py`
+**Market features — intentionally NONE (removed 2026-06):**
+- `market_home/draw/away/over_prob` used to be the top features by XGBoost gain, which meant the model was largely repackaging the bookmaker's opinion.
+- They are now excluded from every feature list (`MARKET_DERIVED_COLS` in `features.py`), so predictions are 100% independent signal; de-vigged market odds are used **only** as the benchmark for EV/value.
 
 **Elo ratings** (K=32, start=1500) — 4 features:
 - `h_elo`, `a_elo`, `elo_diff`, `elo_home_win_prob`
@@ -865,7 +871,7 @@ Bookmaker odds already partially price in injuries, so the adjustment is intenti
 | ----------------- | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Upcoming fixtures | `/`             | Next 3 days of fixtures with ML predictions. **Top 3 AI Picks** section at the top. **⚡ Value Badge** on each card when positive EV exists (market + EV% in tooltip). Filter by league, confidence level (Any / High only / Medium+), and minimum bookmaker odds. **Export** picks as CSV or JSON. Kick-off time in Athens time. Matches auto-disappear 2h after kick-off. |
 | Recent results    | `/recent`       | Past 7 days of results with prediction accuracy. 🟢 Green = both correct, 🟡 Amber = one correct, 🔴 Red = both wrong. **"Γιατί χάθηκε;"** AI post-mortem button on wrong predictions — generates event-based analysis (goals/cards/penalties) via Groq. Paginated — 7 days per page. |
-| Match detail      | `/matches/:id`  | Full prediction breakdown + live bookmaker odds + AI analysis in Greek (Groq Llama 3.3 70B). **Odds movement arrows ↑/↓** next to each bookmaker odd (polled every 3h). EV table shows which market offers most value. Injury list shows player name, status, and position. Hidden for finished matches. |
+| Match detail      | `/matches/:id`  | Full prediction breakdown + live bookmaker odds + AI analysis in Greek (Groq GPT-OSS-120B). **Odds movement arrows ↑/↓** next to each bookmaker odd (polled every 3h). EV table shows which market offers most value. Injury list shows player name, status, and position. Hidden for finished matches. |
 | Stats & Accuracy  | `/stats`        | Model accuracy dashboard: rolling windows, per-league/confidence/outcome breakdowns, draw specialist stats, **ROI Tracker** (flat €10 stake simulation), **Cumulative EV vs P&L chart**, O/U calibration, model version history. |
 | AI Chatbot        | All pages       | Floating chat button (bottom-right). Context-aware Groq assistant in Greek — knows upcoming fixtures (next 3 days) and probabilities. Full conversation history, quick-prompt chips. Context cached 30 min in Redis. |
 
@@ -976,7 +982,7 @@ football-predictor/
 │       │   ├── matches.py             # GET /matches + /export — injury-adjusted via Redis cache
 │       │   ├── predictions.py         # GET /predictions/{id}, /analysis, /postmortem
 │       │   ├── stats.py               # GET /stats — accuracy, ROI, EV series, calibration
-│       │   └── chat.py                # POST /chat — Groq Llama 3.3 70B (3-day context, Redis cached)
+│       │   └── chat.py                # POST /chat — Groq GPT-OSS-120B (3-day context, Redis cached)
 │       └── ml/
 │           ├── features.py            # build_features, build_team_snapshot, FEATURE_COLS (124)
 │           ├── train.py               # XGBoost training (tree_method=hist, nthread=-1, 4 models)

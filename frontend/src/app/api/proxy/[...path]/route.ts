@@ -27,6 +27,22 @@ const BACKEND =
 // Response headers worth forwarding from the backend (e.g. CSV/JSON downloads).
 const PASSTHROUGH_RESPONSE_HEADERS = ["content-type", "content-disposition"];
 
+// ── Freemium API gate ─────────────────────────────────────────────────────────
+// Public pages are rendered SERVER-side (SSR talks to the backend directly,
+// container-to-container), so this browser-facing proxy only needs to serve
+// logged-in users — plus the few genuinely public flows below. Everything else
+// without a session gets a 401, so prediction data can't be scraped by calling
+// the API directly (matches the LockedMatchCard/LockedDetailPanel UI gate).
+const PUBLIC_PREFIXES: { method: string; prefix: string }[] = [
+  { method: "POST", prefix: "auth/" },          // register (sign-in is /api/auth)
+  { method: "POST", prefix: "chat" },           // public chatbot (rate-limited)
+  { method: "POST", prefix: "users/contact" },  // contact form
+];
+
+function isPublicPath(method: string, path: string): boolean {
+  return PUBLIC_PREFIXES.some((p) => p.method === method && path.startsWith(p.prefix));
+}
+
 async function forward(
   request: NextRequest,
   params: { path: string[] },
@@ -36,6 +52,15 @@ async function forward(
   const targetUrl = `${BACKEND}/${path}${search}`;
 
   const token = await getToken({ req: request, secret: process.env.NEXTAUTH_SECRET });
+
+  // Deny-by-default: no session and not an allowlisted public flow → 401.
+  if (!token && !isPublicPath(request.method, path)) {
+    return NextResponse.json(
+      { error: "Authentication required — register for free to access predictions." },
+      { status: 401 },
+    );
+  }
+
   const forwardHeaders: Record<string, string> = {
     "Content-Type": "application/json",
   };

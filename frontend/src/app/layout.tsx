@@ -42,9 +42,16 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const umamiId = process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID;
   return (
     <html lang="en" className="dark">
       <body className="min-h-screen bg-pitch-950">
+        {/* Self-hosted umami analytics — same-origin via /u/* rewrites.
+            Enabled only when NEXT_PUBLIC_UMAMI_WEBSITE_ID is set (create the
+            website in the umami dashboard at localhost:3001 to get the id). */}
+        {umamiId && (
+          <script defer src="/u/script.js" data-website-id={umamiId} data-host-url="/u" />
+        )}
         <Providers>
           {/* Header */}
           <header className="border-b border-pitch-700 bg-pitch-900/80 backdrop-blur sticky top-0 z-40">

@@ -24,8 +24,9 @@ frontend/out/
 frontend/.vercel/
 frontend/tsconfig.tsbuildinfo
 
-# ML artefacts
-models/
+# ML artefacts — NOTE: must be the data path specifically; a bare "models/"
+# also swallowed backend/app/models/ (the SQLAlchemy source code!) and broke CI.
+backend/data/models/
 *.pkl
 *.joblib
 *.model

@@ -47,8 +47,10 @@ jobs:
         run: npm ci
       - name: Type-check
         run: npx tsc --noEmit
-      - name: Lint
-        run: npm run lint --if-present
+      # NOTE: no lint step — `next lint` was removed in Next 16 and no
+      # standalone eslint config exists; `next build` + tsc cover correctness.
+      - name: Unit tests (vitest)
+        run: npm run test
       - name: Build
         run: npm run build
         env:

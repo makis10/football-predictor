@@ -75,6 +75,10 @@ services:
       GOOGLE_CLIENT_SECRET: ${GOOGLE_CLIENT_SECRET}
       # Must match the backend's INTERNAL_API_SECRET — injected by the proxy.
       INTERNAL_API_SECRET: ${INTERNAL_API_SECRET:-}
+      # umami analytics website id (create in the dashboard at localhost:3001,
+      # then set UMAMI_WEBSITE_ID in .env + `docker compose up -d frontend`).
+      # Read server-side at render time, so no rebuild is needed.
+      NEXT_PUBLIC_UMAMI_WEBSITE_ID: ${UMAMI_WEBSITE_ID:-}
     ports:
       - "3000:3000"
     depends_on:
@@ -92,6 +96,24 @@ services:
       - "127.0.0.1:8080:8080"
     depends_on:
       - db
+
+  # Self-hosted web analytics (privacy-friendly, no external service).
+  # Dashboard: http://localhost:3001 (localhost only — first login admin/umami,
+  # change it). Visitors load the tracker same-origin via the Next.js rewrites
+  # /u/script.js + /u/api/send, so no extra public port/tunnel is needed.
+  # Uses its own database ("umami") inside the existing Postgres instance:
+  #   docker compose exec -T db sh -c 'psql -U "$POSTGRES_USER" -c "CREATE DATABASE umami"'
+  umami:
+    image: ghcr.io/umami-software/umami:postgresql-latest
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER:-user}:${POSTGRES_PASSWORD:-password}@db:5432/umami
+      APP_SECRET: ${UMAMI_APP_SECRET:-change-me-umami-secret}
+    ports:
+      - "127.0.0.1:3001:3000"
+    depends_on:
+      db:
+        condition: service_healthy
 
 volumes:
   postgres_data:

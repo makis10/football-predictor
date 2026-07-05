@@ -17,6 +17,8 @@ import {
 import { WinProbabilityBars, GoalsProbabilityBar, BttsProbabilityBar } from "@/components/PredictionBar";
 import MatchAnalysisPanel from "@/components/MatchAnalysis";
 import LogBetButton from "@/components/LogBetButton";
+import LockedDetailPanel from "@/components/LockedDetailPanel";
+import { getSession } from "@/lib/auth";
 
 interface Props {
   params: Promise<{ id: string }>;
@@ -49,6 +51,29 @@ export default async function MatchDetailPage({ params }: Props) {
     hasResult || hasMatchEnded(match.match_date, match.kickoff_time);
 
   const kickoff = formatKickoff(match.match_date, match.kickoff_time);
+
+  // Freemium: upcoming-match predictions are members-only. Finished matches
+  // stay public — they're the transparency proof. Rendered server-side, so no
+  // premium numbers reach the HTML for logged-out visitors.
+  if (!hasEnded && !(await getSession())) {
+    return (
+      <div className="max-w-2xl mx-auto space-y-6">
+        <Link
+          href="/"
+          className="inline-flex items-center gap-1.5 text-sm text-gray-500 hover:text-gray-300 transition-colors"
+        >
+          ← Back to matches
+        </Link>
+        <div className="card p-6 space-y-1 text-center">
+          <p className="text-xs text-gray-500">{kickoff}</p>
+          <p className="text-lg font-semibold text-gray-100">
+            {match.home_team} <span className="text-gray-600">vs</span> {match.away_team}
+          </p>
+        </div>
+        <LockedDetailPanel home={match.home_team} away={match.away_team} />
+      </div>
+    );
+  }
 
   return (
     <div className="max-w-2xl mx-auto space-y-6">

@@ -18,6 +18,20 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: "2026-07-05-freemium",
+    date: "2026-07-05",
+    tag: "new",
+    title: "Free daily Top-3 picks — full predictions for members",
+    body: "The 3 best picks of the day are free for everyone, along with stats, recent results and the World Cup pages. The full prediction breakdown for every upcoming fixture is now a (free) member feature — register to unlock.",
+  },
+  {
+    id: "2026-07-05-wc-review",
+    date: "2026-07-05",
+    tag: "new",
+    title: "World Cup review page",
+    body: "A permanent retrospective of the tournament: result accuracy, high-confidence calls and the model's title favourite — see /national/world-cup/review.",
+  },
+  {
     id: "2026-06-30-watch-markets",
     date: "2026-06-30",
     tag: "improvement",

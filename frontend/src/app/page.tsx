@@ -13,6 +13,8 @@ import {
   type WcReview,
 } from "@/lib/api";
 import MatchCard from "@/components/MatchCard";
+import LockedMatchCard from "@/components/LockedMatchCard";
+import { getSession } from "@/lib/auth";
 import LeagueFilter from "@/components/LeagueFilter";
 import OddsFilter from "@/components/OddsFilter";
 import ConfidenceFilter from "@/components/ConfidenceFilter";
@@ -30,11 +32,15 @@ async function UpcomingGrid({
   minOdds,
   minConfidence,
   showPicks = true,
+  locked = false,
 }: {
   league?: string;
   minOdds?: number;
   minConfidence?: string;
   showPicks?: boolean;
+  /** Freemium: logged-out visitors see the Top-3 picks free; every other
+      fixture renders as a LockedMatchCard (no prediction data in the HTML). */
+  locked?: boolean;
 }) {
   const isInternational = league === INTERNATIONAL_LEAGUE;
 
@@ -120,9 +126,13 @@ async function UpcomingGrid({
             {formatLongDate(dateStr, "en-GB")}
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-            {dayMatches.map((match) => (
-              <MatchCard key={`${match.league}-${match.id}`} match={match} />
-            ))}
+            {dayMatches.map((match) =>
+              locked ? (
+                <LockedMatchCard key={`${match.league}-${match.id}`} match={match} />
+              ) : (
+                <MatchCard key={`${match.league}-${match.id}`} match={match} />
+              ),
+            )}
           </div>
         </div>
       ))}
@@ -135,6 +145,11 @@ export default async function HomePage({ searchParams }: PageProps) {
   const league        = sp.league;
   const minOdds       = sp.min_odds ? Number(sp.min_odds) : undefined;
   const minConfidence = sp.min_confidence || undefined;
+
+  // Freemium: logged-out visitors get the Top-3 picks as a free teaser; the
+  // rest of the fixtures render locked with a register CTA.
+  const session = await getSession();
+  const locked = !session;
 
   // Best-effort WC retrospective hero — keeps the app compelling between the
   // World Cup final and the club season restart, when fixtures are sparse.
@@ -193,7 +208,7 @@ export default async function HomePage({ searchParams }: PageProps) {
             </div>
           }
         >
-          <UpcomingGrid league={league} minOdds={minOdds} minConfidence={minConfidence} showPicks={!league && !minOdds && !minConfidence} />
+          <UpcomingGrid league={league} minOdds={minOdds} minConfidence={minConfidence} showPicks={(!league && !minOdds && !minConfidence) || locked} locked={locked} />
         </Suspense>
       </div>
     </div>

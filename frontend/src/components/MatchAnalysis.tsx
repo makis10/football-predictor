@@ -1,6 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { useSession } from "next-auth/react";
+import Link from "next/link";
 import { getAnalysis, getNationalAnalysis, MatchAnalysis, InjuredPlayer, OddsMovement, PoissonStats } from "@/lib/api";
 
 interface Props {
@@ -120,6 +122,7 @@ function Skeleton() {
 }
 
 export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast, isNational }: Props) {
+  const { status } = useSession();
   const [data, setData]       = useState<MatchAnalysis | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError]     = useState<string | null>(null);
@@ -127,15 +130,35 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
   const [advancedOpen, setAdvancedOpen] = useState(false);
 
   useEffect(() => {
+    // The analysis API requires a session (freemium gate in /api/proxy) —
+    // don't even fire the request for logged-out visitors.
+    if (status !== "authenticated") return;
     setLoading(true);
     setError(null);
     (isNational ? getNationalAnalysis : getAnalysis)(matchId)
       .then(setData)
       .catch((e) => setError(e.message ?? "Failed to load analysis"))
       .finally(() => setLoading(false));
-  }, [matchId, isNational]);
+  }, [matchId, isNational, status]);
 
-  if (loading) return <Skeleton />;
+  // Logged-out: compact conversion CTA instead of the analysis panel.
+  if (status === "unauthenticated") {
+    return (
+      <div className="card p-5 text-center space-y-2">
+        <p className="text-sm text-gray-300">
+          🔒 Η σύγκριση με bookmakers και η AI ανάλυση είναι διαθέσιμες μόνο σε μέλη.
+        </p>
+        <Link
+          href="/register"
+          className="inline-block px-4 py-2 rounded-lg bg-green-600 hover:bg-green-500 text-white text-sm font-semibold transition-colors"
+        >
+          Δωρεάν εγγραφή
+        </Link>
+      </div>
+    );
+  }
+
+  if (status === "loading" || loading) return <Skeleton />;
   if (error)   return null; // silently hide if no prediction yet
 
   if (!data) return null;

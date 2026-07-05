@@ -2,6 +2,8 @@ export const dynamic = "force-dynamic";
 
 import { notFound } from "next/navigation";
 import BackLink from "@/components/BackLink";
+import LockedDetailPanel from "@/components/LockedDetailPanel";
+import { getSession } from "@/lib/auth";
 import {
   getNationalPrediction,
   getPlayerProps,
@@ -73,6 +75,27 @@ export default async function NationalMatchDetailPage({ params }: Props) {
 
   // Kick-off time in the user's timezone ("20:00", "04:00 +1"), when known.
   const kickoffTime = formatKickoffUtc(prediction.kickoff_utc, prediction.match_date);
+
+  // Freemium: upcoming-match predictions are members-only (finished matches
+  // stay public as the accuracy proof). Server-side gate — no premium data in
+  // the HTML for logged-out visitors.
+  if (!hasEnded && !(await getSession())) {
+    return (
+      <div className="max-w-2xl mx-auto space-y-6">
+        <BackLink fallback="/" label="← Back" />
+        <div className="card p-6 space-y-1 text-center">
+          <p className="text-xs text-gray-500">
+            🏆 {prediction.tournament} · {formatDate(prediction.match_date)}
+            {kickoffTime ? ` · ${kickoffTime}` : ""}
+          </p>
+          <p className="text-lg font-semibold text-gray-100">
+            {prediction.home_team} <span className="text-gray-600">vs</span> {prediction.away_team}
+          </p>
+        </div>
+        <LockedDetailPanel home={prediction.home_team} away={prediction.away_team} />
+      </div>
+    );
+  }
 
   return (
     <div className="max-w-2xl mx-auto space-y-6">

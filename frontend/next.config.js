@@ -24,6 +24,17 @@ const nextConfig = {
     // Every navigation triggers fresh SSR — required for live odds/scores/predictions.
     staleTimes: { dynamic: 0 },
   },
+
+  // Self-hosted umami analytics, proxied same-origin so visitors' browsers only
+  // ever talk to our public URL (no extra tunnel/port, adblock-resistant).
+  // Safe as a rewrite: pure telemetry, no auth headers involved (unlike
+  // /api/proxy, which must stay a code route — see note above).
+  async rewrites() {
+    return [
+      { source: "/u/script.js", destination: "http://umami:3000/script.js" },
+      { source: "/u/api/send", destination: "http://umami:3000/api/send" },
+    ];
+  },
 };
 
 module.exports = nextConfig;
