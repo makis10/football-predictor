@@ -9,7 +9,7 @@ Built with **XGBoost + Pi-Ratings + Poisson expected-goals** (clubs) and a **tal
 ### Engineering highlights
 
 - **Market-independent modelling** — bookmaker odds were removed from the feature set entirely (2026-06); value is measured *against* the de-vigged market, never borrowed from it.
-- **Data-driven value gate** — suggested markets must earn promotion from a shadow-tracked, settled ticket ledger (n ≥ 30, ROI ≥ 0) instead of a hardcoded allowlist.
+- **Data-driven value gate** — suggested markets must earn promotion from a shadow-tracked, settled ticket ledger (n ≥ 30, ROI ≥ 0) instead of a hardcoded allowlist; base markets are held to the same record and **auto-demote** when they bleed (early at n ≥ 15 with ROI ≤ −20%, or by the standard floor at full sample).
 - **Honest evaluation** — CLV vs closing line, fair-value (de-vig) ROI, calibration plots, and a methodology-cutoff banner when metrics blend model generations.
 - **Ops** — daily `pg_dump` backups with rotation, dead-man's-switch heartbeats on every cron pipeline, per-IP rate limiting on LLM endpoints, self-hosted umami analytics, GitHub Actions CI (pytest + tsc + vitest + build).
 - **Resilient data plumbing** — volunteer dataset (martj42) for 150 years of history with an authoritative API-Football overlay for live-tournament scores & penalty shoot-outs.
@@ -373,6 +373,23 @@ calibrated on 2023, tested on 2024+ (out-of-sample): **59.7% result accuracy**.
 **Odds & value** — bookmaker odds + EV from The Odds API for covered
 tournaments (WC, EURO, Copa, AFCON, NL, qualifiers). Friendlies have no odds
 source, so their odds columns stay NULL.
+
+**Dynamic value gate (promotion + demotion)** — every market that clears the
+EV/sanity filters is shadow-tracked in the `value_bets` ledger; only *proven*
+markets become headline suggestions, the rest surface as "watch" (unproven).
+The rule (`_market_is_proven`, shared by the live gate and `/admin/market-record`
+so they can never disagree), measured on post-cutoff (2026-06-17) settled
+tickets at opening odds:
+
+- **Promotion** (non-base): n ≥ 30 settled **and** ROI ≥ 0%.
+- **Demotion** (base = Home Win, Draw): start trusted, but demote to watch
+  early at n ≥ 15 with ROI ≤ −20% (clear bleeders only — small-sample noise
+  survives), and face the same ROI ≥ 0% floor as everyone once n ≥ 30.
+  Stateless: a demoted market re-enters as soon as its cumulative record
+  recovers. (First real casualty: Draw, demoted 2026-07-06 at 0/16, −100%.)
+
+Proven set is cached 30 min in Redis (`proven_markets:national`) — flush after
+changing gate constants. Status per market: `/admin/markets`.
 
 ```bash
 # Refresh dataset → re-inject friendlies → predict → odds/EV → fill actuals

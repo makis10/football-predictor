@@ -8,9 +8,10 @@
 
 ### ML & Predictions
 - XGBoost + LightGBM + MLP soft-vote ensemble (result + O/U) με isotonic calibration
-- Draw specialist classifier **ενεργός** με auto-tuned blend α (Brier sweep στο calibration set) — τα Draw suggestions είναι το πιο κερδοφόρο tracked market (+36.6% ROI)
+- Draw specialist classifier **ενεργός** με auto-tuned blend α (Brier sweep στο calibration set) — τα Draw suggestions ήταν το πιο κερδοφόρο tracked market στο ΠΑΛΙΟ μοντέλο (+36.6% ROI)· post-cutoff (2026-06-17) record 0/16, −100% → **demoted 2026-07-06** (βλ. dynamic gate)
 - Pi-Ratings, Poisson, rolling stats, H2H, European fatigue, EWMA, league position, odds movement, referee/card & suspension features — **144 features total**
 - **Market-anchored EV gate (2026-06)**: τα suggestions απαιτούν θετικό EV στη market-shrunk πιθανότητα `p′ = (model+market)/2` + kill-switch μόνο σε Home Win/Draw (tracked: Away −29%, GG −33%, Over −24% → disabled)
+- **Dynamic value gate + demotion (2026-06/07, national)**: κάθε qualifying market shadow-tracked στο `value_bets` ledger· promotion σε headline με n ≥ 30 settled & ROI ≥ 0. Base markets (Home/Draw) **υποβιβάζονται** αυτόματα: early στα n ≥ 15 με ROI ≤ −20% (μόνο ξεκάθαροι bleeders), και με το ίδιο ROI floor στα n ≥ 30. Ένας κοινός κανόνας (`_market_is_proven`) για live gate + `/admin/market-record` — status badges στο `/admin/markets`
 - **Market-anchored predictions (2026-06)**: τα stored/served probabilities = 0.7·market + 0.3·model όταν υπάρχουν odds — measured: model argmax 49.3% vs market favourite 50.9% (στις διαφωνίες η αγορά σωστή 43.9% vs 33.3%). Το value gate κρατά τα pre-anchor model probs.
 - **Strategy vs Baseline ROI**: ο tracker δείχνει χωριστά το ROI των suggested bets (στρατηγική) από το bet-σε-όλα baseline (≈ −γκανιότα by construction)
 - **CLV tracking**: μέση απόδοση suggestion vs closing line από `odds_history` — το πιο γρήγορο αξιόπιστο σήμα πραγματικού edge
