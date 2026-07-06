@@ -32,6 +32,11 @@ set -a
 source .env 2>/dev/null || true
 set +a
 
+# Guard against launchd firing this job on wake before Docker Desktop is up.
+# shellcheck disable=SC1091
+source "$PROJ_DIR/scripts/wait_docker.sh"
+wait_for_docker "$LOG" || exit 1
+
 echo "[1/2] Refreshing today's predictions with closing-line odds …" | tee -a "$LOG"
 docker compose exec -T backend \
     python scripts/compute_predictions.py --force-today \

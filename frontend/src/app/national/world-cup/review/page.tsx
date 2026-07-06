@@ -91,7 +91,7 @@ export default async function WcReviewPage() {
       <p className="text-xs text-gray-600">
         Οι προβλέψεις έγιναν πριν από κάθε αγώνα από το market-independent μοντέλο (talent-adjusted Elo).
         Δες επίσης τη{" "}
-        <Link href="/stats?league=international" className="text-sky-400 hover:underline">αναλυτική ακρίβεια</Link>.
+        <Link href="/stats?league=International" className="text-sky-400 hover:underline">αναλυτική ακρίβεια</Link>.
       </p>
     </div>
   );

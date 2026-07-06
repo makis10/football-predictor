@@ -30,6 +30,11 @@ _ADMIN_HDR=(-H "X-Admin-Key: ${ADMIN_API_KEY:-}")
 
 echo "── $(date '+%Y-%m-%d %H:%M:%S') results poll ──" >> "$LOG"
 
+# Guard against launchd firing this job on wake before Docker Desktop is up.
+# shellcheck disable=SC1091
+source "$PROJ_DIR/scripts/wait_docker.sh"
+wait_for_docker "$LOG" || exit 1
+
 # National results (dataset + live-scores fallback)
 docker compose exec -T backend \
     python scripts/update_national_results.py \

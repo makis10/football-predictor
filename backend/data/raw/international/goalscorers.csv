@@ -47862,10 +47862,10 @@ date,home_team,away_team,team,scorer,minute,own_goal,penalty
 2026-07-03,Australia,Egypt,Egypt,Emam Ashour,13.0,False,False
 2026-07-03,Australia,Egypt,Australia,Mohamed Hany,55.0,True,False
 2026-07-03,Colombia,Ghana,Colombia,Jhon Arias,14.0,False,False
-2026-06-25,Czech Republic,Mexico,Mexico,Mateo Chávez,,False,False
-2026-06-25,Czech Republic,Mexico,Mexico,Julián Quiñones,,False,False
-2026-06-25,Czech Republic,Mexico,Mexico,Álvaro Fidalgo,,False,False
-2026-06-25,South Africa,South Korea,South Africa,Thapelo Maseko,,False,False
+2026-07-04,Canada,Morocco,Morocco,Azzedine Ounahi,50.0,False,False
+2026-07-04,Canada,Morocco,Morocco,Azzedine Ounahi,82.0,False,False
+2026-07-04,Canada,Morocco,Morocco,Soufiane Rahimi,90.0,False,False
+2026-07-04,Paraguay,France,France,Kylian Mbappé,70.0,False,True
 2026-06-27,Uruguay,Spain,Spain,Alex Baena,,False,False
 2026-06-26,United States,Turkey,Turkey,Arda Güler,,False,False
 2026-06-26,United States,Turkey,Turkey,Barış Alper Yılmaz,,False,False
@@ -47899,7 +47899,11 @@ date,home_team,away_team,team,scorer,minute,own_goal,penalty
 2026-07-03,Switzerland,Algeria,Switzerland,Dan Ndoye,,False,False
 2026-07-03,Switzerland,Algeria,Switzerland,Breel Embolo,,False,False
 2026-07-04,Colombia,Ghana,Colombia,Jhon Arias,,False,False
-2026-07-04,Paraguay,France,France,Kylian Mbappé,,False,False
-2026-07-04,Canada,Morocco,Morocco,Azzedine Ounahi,,False,False
-2026-07-04,Canada,Morocco,Morocco,Azzedine Ounahi,,False,False
-2026-07-04,Canada,Morocco,Morocco,Soufiane Rahimi,,False,False
+2026-07-05,Brazil,Norway,Brazil,Neymar,,False,False
+2026-07-05,Brazil,Norway,Norway,Erling Haaland,,False,False
+2026-07-05,Brazil,Norway,Norway,Erling Haaland,,False,False
+2026-07-06,Mexico,England,Mexico,Raúl Jiménez,,False,False
+2026-07-06,Mexico,England,Mexico,Julián Quiñones,,False,False
+2026-07-06,Mexico,England,England,Jude Bellingham,,False,False
+2026-07-06,Mexico,England,England,Jude Bellingham,,False,False
+2026-07-06,Mexico,England,England,Harry Kane,,False,False

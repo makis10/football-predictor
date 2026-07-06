@@ -37,7 +37,8 @@ async function RecentGrid({ league, page }: { league?: string; page: number }) {
   const toStr  = toDate.toISOString().slice(0, 10);
   const fromStr = fromDate.toISOString().slice(0, 10);
 
-  const isInternational = league === INTERNATIONAL_LEAGUE;
+  // Case-insensitive — hand-typed URLs may use ?league=international.
+  const isInternational = league?.toLowerCase() === INTERNATIONAL_LEAGUE.toLowerCase();
 
   let matches: Match[] = [];
   try {

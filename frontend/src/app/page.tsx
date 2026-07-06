@@ -42,7 +42,8 @@ async function UpcomingGrid({
       fixture renders as a LockedMatchCard (no prediction data in the HTML). */
   locked?: boolean;
 }) {
-  const isInternational = league === INTERNATIONAL_LEAGUE;
+  // Case-insensitive — hand-typed URLs may use ?league=international.
+  const isInternational = league?.toLowerCase() === INTERNATIONAL_LEAGUE.toLowerCase();
 
   let matches = [];
   try {

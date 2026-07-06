@@ -33,7 +33,12 @@ function accentForAccuracy(v: number): "green" | "yellow" | "red" {
 
 export default async function StatsPage({ searchParams }: PageProps) {
   const league = (await searchParams).league;
-  const isInternational = league === INTERNATIONAL_LEAGUE;
+  // Case-insensitive: hand-typed/shared URLs use ?league=international (lowercase)
+  // while the filter emits "International" — both must hit the national view,
+  // otherwise the value leaks to the club /stats query as an unknown league
+  // and the page renders all-zeros.
+  const isInternational =
+    league?.toLowerCase() === INTERNATIONAL_LEAGUE.toLowerCase();
 
   let stats;
   let nationalStats: NationalStatsResponse | null = null;
