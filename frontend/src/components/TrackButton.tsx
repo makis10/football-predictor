@@ -2,8 +2,7 @@
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-
-const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
+import { CLIENT_API_URL as API } from "@/lib/api";
 
 interface Props {
   matchId: number;
@@ -16,7 +15,7 @@ export default function TrackButton({ matchId }: Props) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  const userId = (session?.user as any)?.id;
+  const userId = session?.user?.id;
 
   useEffect(() => {
     if (!userId) return;

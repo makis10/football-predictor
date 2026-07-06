@@ -2,8 +2,7 @@
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-
-const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
+import { CLIENT_API_URL as API } from "@/lib/api";
 
 interface Props {
   betId: number;
@@ -14,7 +13,7 @@ export default function SettleBetButton({ betId }: Props) {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
 
-  const userId = String((session?.user as any)?.id ?? "");
+  const userId = String(session?.user?.id ?? "");
 
   const settle = async (outcome: "win" | "loss" | "void") => {
     if (!userId) return;

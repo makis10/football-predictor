@@ -6,7 +6,7 @@
  * in a highlighted row above the fixture grid.
  */
 import Link from "next/link";
-import { Match, leagueFlag, leagueLabel, formatKickoff, confidenceColor, matchHref } from "@/lib/api";
+import { Match, leagueFlag, leagueLabel, formatKickoff, formatKickoffUtc, formatDate, confidenceColor, matchHref } from "@/lib/api";
 
 interface Props {
   matches: Match[];
@@ -56,7 +56,12 @@ export default function TopPicks({ matches }: Props) {
         {top3.map((match, idx) => {
           const p = match.prediction!;
           const pick = topPick(match);
-          const kickoff = formatKickoff(match.match_date, match.kickoff_time);
+          // kickoff_utc takes precedence: covers kick-offs whose UTC date
+          // crosses midnight, where kickoff_time is deliberately null.
+          const kickoff =
+            formatKickoffUtc(match.kickoff_utc ?? null, match.match_date) ??
+            formatKickoff(match.match_date, match.kickoff_time) ??
+            formatDate(match.match_date);
           const confColor = confidenceColor(p.confidence);
 
           return (

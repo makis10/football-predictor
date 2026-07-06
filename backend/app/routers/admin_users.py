@@ -230,10 +230,11 @@ def market_record(
 ):
     """Per-market NEW-model settled record from the value-bet ledger — so you can
     watch a shadow-tracked market (GG, Over, …) accumulate evidence and see how
-    close it is to promotion into a headline suggestion."""
+    close it is to promotion into a headline suggestion (or a base market to
+    demotion)."""
     from backend.app.ml.odds_analysis_service import (
-        _market_won, BASE_SUGGESTABLE, NEW_MODEL_CUTOFF,
-        PROVEN_MIN_SAMPLES, PROVEN_ROI_FLOOR,
+        _market_won, _market_is_proven, BASE_SUGGESTABLE, NEW_MODEL_CUTOFF,
+        PROVEN_MIN_SAMPLES, PROVEN_ROI_FLOOR, DEMOTE_MIN_SAMPLES, DEMOTE_ROI_CEIL,
     )
 
     rows = db.execute(text("""
@@ -263,24 +264,28 @@ def market_record(
     for market, a in sorted(agg.items()):
         n = a["settled"]
         roi = (a["pnl"] / n) if n else None
-        proven = market in BASE_SUGGESTABLE or (
-            n >= PROVEN_MIN_SAMPLES and roi is not None and roi >= PROVEN_ROI_FLOOR
-        )
+        is_base = market in BASE_SUGGESTABLE
+        proven = _market_is_proven(market, n, roi)   # same rule as the live gate
         out.append({
             "market":            market,
-            "is_base":           market in BASE_SUGGESTABLE,
+            "is_base":           is_base,
             "proven":            proven,
+            "demoted":           is_base and not proven,
             "tracked_total":     a["tracked"],
             "settled":           n,
             "wins":              a["wins"],
             "win_pct":           round(a["wins"] / n, 3) if n else None,
             "roi_pct":           round(roi * 100, 1) if roi is not None else None,
-            "samples_to_promote": max(0, PROVEN_MIN_SAMPLES - n) if not proven else 0,
+            # Sample-count path applies to non-base markets; a demoted base
+            # market re-enters by record recovery, not by counting samples.
+            "samples_to_promote": max(0, PROVEN_MIN_SAMPLES - n) if not (proven or is_base) else 0,
         })
 
     return {
-        "cutoff":       NEW_MODEL_CUTOFF,
-        "min_samples":  PROVEN_MIN_SAMPLES,
-        "roi_floor_pct": round(PROVEN_ROI_FLOOR * 100, 1),
-        "markets":      out,
+        "cutoff":              NEW_MODEL_CUTOFF,
+        "min_samples":         PROVEN_MIN_SAMPLES,
+        "roi_floor_pct":       round(PROVEN_ROI_FLOOR * 100, 1),
+        "demote_min_samples":  DEMOTE_MIN_SAMPLES,
+        "demote_roi_ceil_pct": round(DEMOTE_ROI_CEIL * 100, 1),
+        "markets":             out,
     }

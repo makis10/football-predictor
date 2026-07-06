@@ -1,6 +1,7 @@
 "use client";
 import { useSession } from "next-auth/react";
 import { useState } from "react";
+import { CLIENT_API_URL as API } from "@/lib/api";
 
 const ALL_LEAGUES = [
   { value: "E0",  label: "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Premier League" },
@@ -14,8 +15,6 @@ const ALL_LEAGUES = [
   { value: "G1",  label: "🇬🇷 Super League" },
 ];
 
-const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
-
 interface Profile {
   id:                number;
   name:              string | null;
@@ -24,7 +23,7 @@ interface Profile {
 
 export default function ProfileForm({ profile }: { profile: Profile }) {
   const { data: session } = useSession();
-  const userId = (session?.user as any)?.id;
+  const userId = session?.user?.id;
 
   const [name,    setName]    = useState(profile.name ?? "");
   const [leagues, setLeagues] = useState<string[]>(profile.preferred_leagues);

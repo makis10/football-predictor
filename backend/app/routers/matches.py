@@ -23,6 +23,13 @@ _EXPORT_RATE_WINDOW = 60
 router = APIRouter(prefix="/matches", tags=["matches"])
 
 
+def _utc_today() -> date:
+    """UTC-anchored 'today', consistent with the datetime.now(timezone.utc) cutoffs
+    used elsewhere in this router — avoids day-boundary drift if the server's
+    local timezone isn't UTC."""
+    return datetime.now(timezone.utc).date()
+
+
 def _adjust_prediction_embed(match_id: int, pred) -> "PredictionEmbed":
     """
     Build an adjusted PredictionEmbed that matches what the detail page serves:
@@ -160,7 +167,7 @@ def list_matches(
             .order_by(Match.match_date.asc(), Match.kickoff_time.asc().nulls_last(), Match.id.asc())
         )
         if days_ahead is not None:
-            stmt = stmt.where(Match.match_date <= date.today() + timedelta(days=days_ahead - 1))
+            stmt = stmt.where(Match.match_date <= _utc_today() + timedelta(days=days_ahead - 1))
     elif status == "past":
         # Include matches that have a result (scraper ran) OR that have ended
         # (kickoff + 2 h ago) even if the scraper hasn't filled in the score yet.
@@ -194,10 +201,10 @@ def list_matches(
                 .exists()
             )
         if days_back is not None:
-            lower = date.today() - timedelta(days=(days_offset or 0) + days_back)
+            lower = _utc_today() - timedelta(days=(days_offset or 0) + days_back)
             stmt = stmt.where(Match.match_date >= lower)
         if days_offset:
-            upper = date.today() - timedelta(days=days_offset)
+            upper = _utc_today() - timedelta(days=days_offset)
             stmt = stmt.where(Match.match_date <= upper)
         stmt = stmt.order_by(Match.match_date.desc(), Match.id.desc())
     else:
@@ -303,7 +310,7 @@ def export_picks(
             .order_by(Match.match_date.asc(), Match.kickoff_time.asc().nulls_last(), Match.id.asc())
         )
         if days_ahead is not None:
-            stmt = stmt.where(Match.match_date <= date.today() + timedelta(days=days_ahead - 1))
+            stmt = stmt.where(Match.match_date <= _utc_today() + timedelta(days=days_ahead - 1))
     else:
         now_e         = datetime.now(timezone.utc)
         cutoff_e      = now_e - timedelta(hours=2)
@@ -322,10 +329,10 @@ def export_picks(
         )
         stmt = select(Match).where(or_(Match.result.isnot(None), ended_e))
         if days_back is not None:
-            lower = date.today() - timedelta(days=(days_offset or 0) + days_back)
+            lower = _utc_today() - timedelta(days=(days_offset or 0) + days_back)
             stmt = stmt.where(Match.match_date >= lower)
         if days_offset:
-            upper = date.today() - timedelta(days=days_offset)
+            upper = _utc_today() - timedelta(days=days_offset)
             stmt = stmt.where(Match.match_date <= upper)
         stmt = stmt.order_by(Match.match_date.desc(), Match.id.desc())
 
@@ -387,18 +394,18 @@ def export_picks(
         nat_stmt = select(_Nat)
         if upcoming_export:
             nat_stmt = nat_stmt.where(_Nat.actual_result.is_(None))
-            nat_stmt = nat_stmt.where(_Nat.match_date >= date.today().isoformat())
+            nat_stmt = nat_stmt.where(_Nat.match_date >= _utc_today().isoformat())
             if days_ahead is not None:
-                upper = (date.today() + timedelta(days=days_ahead - 1)).isoformat()
+                upper = (_utc_today() + timedelta(days=days_ahead - 1)).isoformat()
                 nat_stmt = nat_stmt.where(_Nat.match_date <= upper)
             nat_stmt = nat_stmt.order_by(_Nat.match_date.asc())
         else:
             nat_stmt = nat_stmt.where(_Nat.actual_result.isnot(None))
             if days_back is not None:
-                lower = (date.today() - timedelta(days=(days_offset or 0) + days_back)).isoformat()
+                lower = (_utc_today() - timedelta(days=(days_offset or 0) + days_back)).isoformat()
                 nat_stmt = nat_stmt.where(_Nat.match_date >= lower)
             if days_offset:
-                upper = (date.today() - timedelta(days=days_offset)).isoformat()
+                upper = (_utc_today() - timedelta(days=days_offset)).isoformat()
                 nat_stmt = nat_stmt.where(_Nat.match_date <= upper)
             nat_stmt = nat_stmt.order_by(_Nat.match_date.desc())
 

@@ -24,7 +24,7 @@ interface UserStats {
 
 export default async function AdminPage() {
   const session = await getSession();
-  if (!(session?.user as any)?.isAdmin) redirect("/");
+  if (!session?.user?.isAdmin) redirect("/");
 
   const res = await fetchWithAuth("/admin/users");
   const users: UserStats[] = res.ok ? await res.json() : [];

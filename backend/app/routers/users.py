@@ -10,13 +10,14 @@ import json
 from typing import List, Optional
 
 from fastapi import APIRouter, Depends, Header, HTTPException, status
-from pydantic import BaseModel
+from pydantic import BaseModel, field_validator
 from sqlalchemy import text
 from sqlalchemy.orm import Session
 
 from backend.app.database import get_db
 from backend.app.internal_auth import require_internal_secret
 from backend.app.models.feedback import Feedback
+from backend.app.models.prediction import Prediction
 from backend.app.models.user import TrackedMatch, User, UserBet
 from backend.app.rate_limit import rate_limit_check
 
@@ -110,6 +111,20 @@ class BetRequest(BaseModel):
     market:   str
     odds:     float
     stake:    float = 1.0
+
+    @field_validator("odds")
+    @classmethod
+    def odds_must_be_valid(cls, v: float) -> float:
+        if v < 1.0:
+            raise ValueError("odds must be >= 1.0")
+        return v
+
+    @field_validator("stake")
+    @classmethod
+    def stake_must_be_positive(cls, v: float) -> float:
+        if v <= 0:
+            raise ValueError("stake must be > 0")
+        return v
 
 
 class BetOut(BaseModel):
@@ -216,6 +231,9 @@ def track_match(
         db.commit()
         return {"tracked": False}
 
+    if not db.query(Prediction).filter(Prediction.match_id == body.match_id).first():
+        raise HTTPException(status_code=404, detail="Match not found")
+
     tm = TrackedMatch(user_id=user.id, match_id=body.match_id)
     db.add(tm)
     db.commit()
@@ -265,6 +283,9 @@ def place_bet(
     user: User = Depends(get_current_user),
     db:   Session = Depends(get_db),
 ):
+    if not db.query(Prediction).filter(Prediction.match_id == body.match_id).first():
+        raise HTTPException(status_code=404, detail="Match not found")
+
     bet = UserBet(
         user_id=user.id,
         match_id=body.match_id,

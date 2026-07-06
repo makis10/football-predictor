@@ -2,8 +2,7 @@
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-
-const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
+import { CLIENT_API_URL as API } from "@/lib/api";
 
 interface UserStats {
   id:             number;

@@ -25,10 +25,11 @@ import sys
 from datetime import date, datetime, timezone
 
 import pandas as pd
-import requests
 
 _PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 sys.path.insert(0, _PROJECT_ROOT)
+
+from scripts._http_retry import get_with_retry  # noqa: E402
 
 ODDS_API_KEY = os.getenv("ODDS_API_KEY", "")
 ODDS_API_BASE = "https://api.the-odds-api.com/v4"
@@ -122,7 +123,7 @@ def fetch_odds_api_fixtures(league_code: str, sport_key: str, api_key: str) -> l
     """Fetch upcoming fixtures from The Odds API for a given competition."""
     url = f"{ODDS_API_BASE}/sports/{sport_key}/events"
     try:
-        resp = requests.get(url, params={"apiKey": api_key}, timeout=15)
+        resp = get_with_retry(url, params={"apiKey": api_key}, timeout=15)
         resp.raise_for_status()
         events = resp.json()
         remaining = resp.headers.get("x-requests-remaining", "?")

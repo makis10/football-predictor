@@ -7,9 +7,16 @@
  * /register. The free taste is the Top-3 picks row above the grid.
  */
 import Link from "next/link";
-import { Match, leagueFlag, leagueLabel, formatKickoff } from "@/lib/api";
+import { Match, leagueFlag, leagueLabel, formatKickoff, formatKickoffUtc, formatDate } from "@/lib/api";
 
 export default function LockedMatchCard({ match }: { match: Match }) {
+  // kickoff_utc takes precedence: covers kick-offs whose UTC date crosses
+  // midnight ("04:00 +1"), where kickoff_time is deliberately null.
+  const when =
+    formatKickoffUtc(match.kickoff_utc ?? null, match.match_date) ??
+    formatKickoff(match.match_date, match.kickoff_time) ??
+    formatDate(match.match_date);
+
   return (
     <Link
       href="/register"
@@ -19,7 +26,7 @@ export default function LockedMatchCard({ match }: { match: Match }) {
         <span>
           {leagueFlag(match.league)} {leagueLabel(match.league)}
         </span>
-        <span>{formatKickoff(match.match_date, match.kickoff_time)}</span>
+        <span>{when}</span>
       </div>
 
       <div className="flex items-center justify-between gap-2 text-sm font-medium text-gray-100">

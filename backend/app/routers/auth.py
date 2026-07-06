@@ -17,6 +17,7 @@ from typing import Optional
 import bcrypt as _bcrypt
 from fastapi import APIRouter, Depends, HTTPException, Request, status
 from pydantic import BaseModel, field_validator
+from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm import Session
 
 from backend.app.database import get_db
@@ -171,9 +172,13 @@ def register(body: RegisterRequest, request: Request, db: Session = Depends(get_
         provider="credentials",
     )
     db.add(user)
-    db.flush()          # assign user.id without closing the transaction
-    _record_login(user, db)
-    db.commit()
+    try:
+        db.flush()          # assign user.id without closing the transaction
+        _record_login(user, db)
+        db.commit()
+    except IntegrityError:
+        db.rollback()
+        raise HTTPException(status_code=400, detail="Email already registered")
     db.refresh(user)
     return _user_out(user)
 

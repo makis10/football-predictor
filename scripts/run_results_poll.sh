@@ -21,6 +21,12 @@ LOG_DIR="$HOME/Library/Logs/football-predictor"
 LOG="$LOG_DIR/results-poll.log"
 mkdir -p "$LOG_DIR"
 
+# Guard against launchd's missed-run coalescing firing this alongside another
+# instance of itself (or daily/prematch) against the same DB/CSVs.
+# shellcheck disable=SC1091
+source "$PROJ_DIR/scripts/_lock.sh"
+acquire_lock "run_results_poll" || exit 0
+
 cd "$PROJ_DIR"
 set -a
 # shellcheck disable=SC1091
@@ -35,10 +41,12 @@ echo "── $(date '+%Y-%m-%d %H:%M:%S') results poll ──" >> "$LOG"
 source "$PROJ_DIR/scripts/wait_docker.sh"
 wait_for_docker "$LOG" || exit 1
 
-# National results (dataset + live-scores fallback)
+# National results (dataset + live-scores fallback) — the primary step this
+# job exists for; its exit code gates the heartbeat below.
 docker compose exec -T backend \
     python scripts/update_national_results.py \
     >> "$LOG" 2>&1
+national_results_status=$?
 
 # Club results too — cheap no-op out of season, useful once leagues resume.
 docker compose exec -T backend \
@@ -58,7 +66,10 @@ curl -s -X POST "${_ADMIN_HDR[@]}" http://localhost:8000/stats/cache/clear >> "$
 
 # Dead-man's-switch heartbeat for the 2-hour poll (separate monitor from the
 # daily job). Set HEARTBEAT_POLL_URL in .env to enable; no-op when unset.
-if [ -n "${HEARTBEAT_POLL_URL:-}" ]; then
+# Skipped when the primary results step failed, so the monitor still alerts.
+if [ "$national_results_status" -ne 0 ]; then
+    echo "[warn] update_national_results.py failed — skipping heartbeat" >> "$LOG"
+elif [ -n "${HEARTBEAT_POLL_URL:-}" ]; then
     curl -fsS -m 10 --retry 2 "$HEARTBEAT_POLL_URL" >> "$LOG" 2>&1 || true
 fi
 

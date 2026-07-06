@@ -72,3 +72,44 @@ def test_market_won_covers_every_market():
 
 def test_market_won_none_without_data():
     assert svc._market_won("Home Win", None, None, None) is None
+
+
+# ── Promotion/demotion rule (_market_is_proven) ───────────────────────────────
+# Base markets start trusted but are demoted by the new model's own record:
+# early only as clear bleeders, at full sample size by the same floor as everyone.
+
+def test_base_with_no_record_stays_proven():
+    assert svc._market_is_proven("Draw", 0, None) is True
+
+
+def test_base_bleeder_demotes_early():
+    # Draw 0/16 (ROI −100%) — the real post-cutoff record that motivated this.
+    assert svc._market_is_proven("Draw", 16, -1.0) is False
+
+
+def test_base_below_demote_sample_bar_survives():
+    # Home Win 3/8 (ROI −18.8%): n < DEMOTE_MIN_SAMPLES → still noise, keep.
+    assert svc._market_is_proven("Home Win", 8, -0.188) is True
+
+
+def test_base_mild_negative_is_not_early_demoted():
+    # −5% at n=15 is inside noise; early exit is only for clear bleeders.
+    assert svc._market_is_proven("Home Win", 15, -0.05) is True
+
+
+def test_base_held_to_floor_at_full_sample():
+    # At n ≥ PROVEN_MIN_SAMPLES base markets face the same ROI floor.
+    assert svc._market_is_proven("Home Win", 30, -0.05) is False
+    assert svc._market_is_proven("Home Win", 30, 0.02) is True
+
+
+def test_demoted_base_reenters_on_recovery():
+    # Stateless rule: record climbs back above the ceiling → proven again.
+    assert svc._market_is_proven("Draw", 25, -0.15) is True
+
+
+def test_non_base_promotion_unchanged():
+    assert svc._market_is_proven("GG", 30, 0.0) is True      # at bar
+    assert svc._market_is_proven("GG", 29, 0.5) is False     # too few samples
+    assert svc._market_is_proven("GG", 30, -0.01) is False   # below floor
+    assert svc._market_is_proven("Away Win", 6, 0.413) is False  # small n, big ROI = noise

@@ -8,6 +8,12 @@ const API_URL =
     ? (process.env.INTERNAL_API_URL ?? "http://localhost:8000")  // SSR: direct
     : "/api/proxy";                                          // browser: proxy
 
+// For "use client" components, which only ever run in the browser: same
+// proxy path as API_URL's browser branch above, exported so those files
+// don't each redefine their own (and risk falling back to an unreachable
+// localhost:8000 if NEXT_PUBLIC_API_URL is ever unset at build time).
+export const CLIENT_API_URL = "/api/proxy";
+
 // ── Types ─────────────────────────────────────────────────────────────────────
 
 /**
@@ -1067,6 +1073,7 @@ export interface MarketRecordRow {
   market: string;
   is_base: boolean;
   proven: boolean;
+  demoted: boolean;
   tracked_total: number;
   settled: number;
   wins: number;
@@ -1079,6 +1086,8 @@ export interface MarketRecord {
   cutoff: string;
   min_samples: number;
   roi_floor_pct: number;
+  demote_min_samples: number;
+  demote_roi_ceil_pct: number;
   markets: MarketRecordRow[];
 }
 

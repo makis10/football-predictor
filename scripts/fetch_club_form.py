@@ -27,14 +27,12 @@ from __future__ import annotations
 import argparse
 import os
 import sys
-import time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-import requests
-
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
+from scripts._http_retry import get_with_retry  # noqa: E402
 
 API_BASE = "https://v3.football.api-sports.io"
 API_KEY  = os.getenv("API_SPORTS_KEY", "")
@@ -69,10 +67,7 @@ class Budget:
 
 def _get(path: str, params: dict, budget: Budget) -> dict:
     budget.hit()
-    r = requests.get(f"{API_BASE}{path}", headers=HEADERS, params=params, timeout=20)
-    if r.status_code == 429:
-        time.sleep(2)
-        r = requests.get(f"{API_BASE}{path}", headers=HEADERS, params=params, timeout=20)
+    r = get_with_retry(f"{API_BASE}{path}", headers=HEADERS, params=params, timeout=20)
     r.raise_for_status()
     return r.json()
 

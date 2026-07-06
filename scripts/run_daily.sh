@@ -43,12 +43,22 @@ _ADMIN_HDR=(-H "X-Admin-Key: ${ADMIN_API_KEY:-}")
 
 mkdir -p "$LOG_DIR"
 
+# Guard against launchd's missed-run coalescing firing this alongside another
+# instance of itself (or prematch/results-poll) against the same DB/CSVs.
+# shellcheck disable=SC1091
+source "$PROJ_DIR/scripts/_lock.sh"
+acquire_lock "run_daily" || exit 0
+
 echo "" >> "$LOG"
 echo "══════════════════════════════════════════" >> "$LOG"
 echo " $(date '+%Y-%m-%d %H:%M:%S')  Daily run" >> "$LOG"
 echo "══════════════════════════════════════════" >> "$LOG"
 
 cd "$PROJ_DIR"
+
+# Set to 1 whenever a step below fails, so the heartbeat doesn't report
+# healthy after a run where the real pipeline silently no-op'd.
+overall_failed=0
 
 # Load env vars from .env so API keys are available on the host too
 set -a
@@ -75,7 +85,7 @@ bash "$PROJ_DIR/scripts/backup_db.sh" 2>&1 | tee -a "$LOG" || echo "  [warn] bac
 echo "[1/6] Updating domestic + CL match results …" | tee -a "$LOG"
 docker compose exec -T backend \
     python scripts/update_results.py --days-back 7 \
-    2>&1 | tee -a "$LOG"
+    2>&1 | tee -a "$LOG" || overall_failed=1
 
 # ── 2. Update GreekSL / EL / ECL results (The Odds API) ──────────────────────
 echo "" >> "$LOG"
@@ -84,7 +94,7 @@ docker compose exec -T backend \
     python scripts/update_european_results.py \
         --key "${ODDS_API_KEY:-}" \
         --days-from 3 \
-    2>&1 | tee -a "$LOG"
+    2>&1 | tee -a "$LOG" || overall_failed=1
 
 # ── 3. Refresh upcoming fixtures (top-5 leagues via football-data.org) ────────
 echo "" >> "$LOG"
@@ -94,7 +104,7 @@ docker compose exec -T backend \
         --key "${FOOTBALLDATA_API_KEY:-}" \
         --days 60 \
         --no-predictions \
-    2>&1 | tee -a "$LOG"
+    2>&1 | tee -a "$LOG" || overall_failed=1
 
 # ── 4. Refresh Greek SL fixtures (The Odds API — 1 req per run) ──────────────
 echo "" >> "$LOG"
@@ -103,7 +113,7 @@ docker compose exec -T backend \
     python scripts/fetch_greek_fixtures.py \
         --key "${ODDS_API_KEY:-}" \
         --no-predictions \
-    2>&1 | tee -a "$LOG"
+    2>&1 | tee -a "$LOG" || overall_failed=1
 
 # ── 5. Refresh European fixtures (CL from CSVs, EL/ECL from Odds API) ────────
 echo "" >> "$LOG"
@@ -112,27 +122,27 @@ docker compose exec -T backend \
     python scripts/fetch_european_fixtures.py \
         --odds-key "${ODDS_API_KEY:-}" \
         --no-predictions \
-    2>&1 | tee -a "$LOG"
+    2>&1 | tee -a "$LOG" || overall_failed=1
 
 # ── 6. Compute any missing predictions ───────────────────────────────────────
 echo "" >> "$LOG"
 echo "[6/6] Computing missing predictions …" | tee -a "$LOG"
 docker compose exec -T backend \
     python scripts/compute_predictions.py \
-    2>&1 | tee -a "$LOG"
+    2>&1 | tee -a "$LOG" || overall_failed=1
 
 echo "" >> "$LOG"
 echo "[7/9] Backfilling bm_odds from CSVs …" | tee -a "$LOG"
 docker compose exec -T backend \
     python scripts/backfill_bm_odds.py \
-    2>&1 | tee -a "$LOG"
+    2>&1 | tee -a "$LOG" || overall_failed=1
 
 # ── 8. Pre-warm injury cache for new fixtures (next 3 days, skips existing) ───
 echo "" >> "$LOG"
 echo "[8/9] Pre-warming injury cache for new fixtures …" | tee -a "$LOG"
 docker compose exec -T backend \
     python scripts/warmup_injuries.py --days 3 \
-    2>&1 | tee -a "$LOG"
+    2>&1 | tee -a "$LOG" || overall_failed=1
 
 # ── National teams (international fixtures) ───────────────────────────────────
 # a. Refresh martj42 dataset (newly-played scores appear here once played)
@@ -145,7 +155,7 @@ echo "" >> "$LOG"
 echo "[national 1/7] Refreshing international dataset (martj42) …" | tee -a "$LOG"
 docker compose exec -T backend \
     python scripts/fetch_international_data.py --force \
-    2>&1 | tee -a "$LOG"
+    2>&1 | tee -a "$LOG" || overall_failed=1
 
 # Sync DB-known results into results.csv first — martj42 lags ~1 day, so this
 # ensures the retrain/snapshot below see yesterday's matches (true self-correct).
@@ -153,7 +163,7 @@ echo "" >> "$LOG"
 echo "[national 1b/7] Syncing settled results into dataset …" | tee -a "$LOG"
 docker compose exec -T backend \
     python scripts/sync_results_to_dataset.py \
-    2>&1 | tee -a "$LOG"
+    2>&1 | tee -a "$LOG" || overall_failed=1
 
 # API-Football is the source of truth for the LIVE tournament — fresher and more
 # accurate than martj42 (which lags ~1 day and rarely records penalty winners
@@ -164,7 +174,7 @@ echo "" >> "$LOG"
 echo "[national 1c/7] Overlaying live WC results from API-Football …" | tee -a "$LOG"
 docker compose exec -T backend \
     python scripts/fetch_wc_results.py \
-    2>&1 | tee -a "$LOG"
+    2>&1 | tee -a "$LOG" || overall_failed=1
 
 # Daily full retrain — during a live tournament the model self-corrects every
 # day on the freshly-downloaded results. (User-requested over snapshot-only.)
@@ -173,13 +183,13 @@ echo "" >> "$LOG"
 echo "[national 2/7] Daily national retrain …" | tee -a "$LOG"
 docker compose exec -T backend \
     python scripts/train_national.py \
-    2>&1 | tee -a "$LOG"
+    2>&1 | tee -a "$LOG" || overall_failed=1
 
 echo "" >> "$LOG"
 echo "[national 3/7] Re-injecting manual upcoming friendlies …" | tee -a "$LOG"
 docker compose exec -T backend \
     python scripts/add_upcoming_national.py \
-    2>&1 | tee -a "$LOG"
+    2>&1 | tee -a "$LOG" || overall_failed=1
 
 # Safety net: if the retrain step failed (pipeline continues on error), refresh
 # the Elo/form snapshot alone so predictions still reflect the latest results.
@@ -187,7 +197,7 @@ echo "" >> "$LOG"
 echo "[national 4/7] Refreshing Elo snapshot (safety) …" | tee -a "$LOG"
 docker compose exec -T backend \
     python scripts/refresh_national_snapshot.py \
-    2>&1 | tee -a "$LOG"
+    2>&1 | tee -a "$LOG" || overall_failed=1
 
 # Squad-strength (talent-adjusted Elo): which leagues each called-up player
 # plays in → per-team strength used to de-bias the confederation-siloed Elo at
@@ -201,25 +211,25 @@ echo "[national 4b/7] Refreshing squad strength (weekly) …" | tee -a "$LOG"
 SQUAD_SEASON=$(date +%Y); [ "$(date +%m)" -lt 7 ] && SQUAD_SEASON=$((SQUAD_SEASON - 1))
 docker compose exec -T backend \
     python scripts/fetch_squad_strength.py --season "$SQUAD_SEASON" --max-age-days 6 --max-requests 1700 \
-    2>&1 | tee -a "$LOG"
+    2>&1 | tee -a "$LOG" || overall_failed=1
 
 echo "" >> "$LOG"
 echo "[national 5/7] Generating international predictions …" | tee -a "$LOG"
 docker compose exec -T backend \
     python scripts/predict_national.py --save-db \
-    2>&1 | tee -a "$LOG"
+    2>&1 | tee -a "$LOG" || overall_failed=1
 
 echo "" >> "$LOG"
 echo "[national 6/7] Fetching bookmaker odds + EV for internationals …" | tee -a "$LOG"
 docker compose exec -T backend \
     python scripts/fetch_national_odds.py \
-    2>&1 | tee -a "$LOG"
+    2>&1 | tee -a "$LOG" || overall_failed=1
 
 echo "" >> "$LOG"
 echo "[national 7/7] Filling actual international results …" | tee -a "$LOG"
 docker compose exec -T backend \
     python scripts/update_national_results.py \
-    2>&1 | tee -a "$LOG"
+    2>&1 | tee -a "$LOG" || overall_failed=1
 
 # Ingest player stats for recently-played WC matches (anytime scorer / SoT /
 # assists / cards props + settlement actuals). --last 5; finished fixtures
@@ -230,7 +240,7 @@ echo "" >> "$LOG"
 echo "[national 7a/7] Ingesting player match stats (API-Football) …" | tee -a "$LOG"
 docker compose exec -T backend \
     python scripts/fetch_player_stats.py --wc-only --last 5 --max-requests 2500 \
-    2>&1 | tee -a "$LOG"
+    2>&1 | tee -a "$LOG" || overall_failed=1
 
 # Ingest team match stats (corners / shots / possession) from /fixtures/statistics
 # — corners aren't in /fixtures/players, so this is a separate cheap pull.
@@ -238,7 +248,7 @@ echo "" >> "$LOG"
 echo "[national 7a1/7] Ingesting team match stats (API-Football) …" | tee -a "$LOG"
 docker compose exec -T backend \
     python scripts/fetch_match_statistics.py --wc-only --last 5 --max-requests 1500 \
-    2>&1 | tee -a "$LOG"
+    2>&1 | tee -a "$LOG" || overall_failed=1
 
 # Ingest current-season CLUB form per player (/players) — the empirical-Bayes
 # prior for the prop rates, so low-cap players regress toward real club form
@@ -248,7 +258,7 @@ echo "" >> "$LOG"
 echo "[national 7a2/7] Ingesting player club form (API-Football) …" | tee -a "$LOG"
 docker compose exec -T backend \
     python scripts/fetch_club_form.py --wc-only --max-requests 1500 \
-    2>&1 | tee -a "$LOG"
+    2>&1 | tee -a "$LOG" || overall_failed=1
 
 # Recompute player props (anytime scorer / SoT / assist) for upcoming fixtures
 # from the freshly-ingested stats + club-form priors + the refreshed Elo snapshot.
@@ -256,7 +266,7 @@ echo "" >> "$LOG"
 echo "[national 7a3/7] Computing player props …" | tee -a "$LOG"
 docker compose exec -T backend \
     python scripts/compute_player_props.py \
-    2>&1 | tee -a "$LOG"
+    2>&1 | tee -a "$LOG" || overall_failed=1
 
 # 5b. Catch never-anticipated fixtures: any match played in the last 3 days
 # that has NO prediction row (e.g. friendlies missing from our fixture list)
@@ -267,7 +277,7 @@ echo "[national 7b/7] Backfilling missed recent fixtures …" | tee -a "$LOG"
 docker compose exec -T backend \
     python scripts/backfill_national_predictions.py \
         --from "$(date -v-3d +%Y-%m-%d)" --skip-existing \
-    2>&1 | tee -a "$LOG"
+    2>&1 | tee -a "$LOG" || overall_failed=1
 
 # Official WC squads for the Golden Boot squad filter. Skips itself when the
 # file is < 7 days old, so it only spends API-Football quota once a week.
@@ -275,7 +285,7 @@ echo "" >> "$LOG"
 echo "[national 7c/7] Refreshing WC squads (weekly) …" | tee -a "$LOG"
 docker compose exec -T backend \
     python scripts/fetch_wc_squads.py --max-age-days 7 \
-    2>&1 | tee -a "$LOG"
+    2>&1 | tee -a "$LOG" || overall_failed=1
 
 # Sync same-day goals from player_match_stats into goalscorers.csv so the
 # Golden Boot below reflects today's scorers immediately (martj42 lags ~1 day).
@@ -283,7 +293,7 @@ echo "" >> "$LOG"
 echo "[national 7c2/7] Syncing same-day goalscorers …" | tee -a "$LOG"
 docker compose exec -T backend \
     python scripts/sync_goalscorers_to_dataset.py \
-    2>&1 | tee -a "$LOG"
+    2>&1 | tee -a "$LOG" || overall_failed=1
 
 # Player availability (injuries + suspensions) from API-Football /injuries —
 # one cheap request; lets the simulation drop unavailable golden-boot scorers.
@@ -291,7 +301,7 @@ echo "" >> "$LOG"
 echo "[national 7c2/7] Fetching player availability (injuries/suspensions) …" | tee -a "$LOG"
 docker compose exec -T backend \
     python scripts/fetch_availability.py \
-    2>&1 | tee -a "$LOG"
+    2>&1 | tee -a "$LOG" || overall_failed=1
 
 # World Cup Monte Carlo simulation (champion/finalist/group/golden-boot).
 # Exits cheaply once the tournament is over (no upcoming group fixtures).
@@ -299,7 +309,7 @@ echo "" >> "$LOG"
 echo "[national 7d/7] Running World Cup Monte Carlo simulation …" | tee -a "$LOG"
 docker compose exec -T backend \
     python scripts/simulate_wc.py --sims 20000 --save-json \
-    2>&1 | tee -a "$LOG"
+    2>&1 | tee -a "$LOG" || overall_failed=1
 
 # ── Monthly rolling recalibration (1st of the month) ─────────────────────────
 # Refits the second-stage isotonic correction from the last 365 days of stored
@@ -310,7 +320,7 @@ if [ "$(date +%d)" = "01" ]; then
     echo "[monthly] Rolling recalibration …" | tee -a "$LOG"
     docker compose exec -T backend \
         python scripts/recalibrate.py \
-        2>&1 | tee -a "$LOG"
+        2>&1 | tee -a "$LOG" || overall_failed=1
 fi
 
 echo "" >> "$LOG"
@@ -334,20 +344,20 @@ if [ "$DAY_OF_WEEK" -eq 1 ]; then
     echo "[6b/10] Deep result backfill (30 days) …" | tee -a "$LOG"
     docker compose exec -T backend \
         python scripts/update_results.py --days-back 30 \
-        2>&1 | tee -a "$LOG"
+        2>&1 | tee -a "$LOG" || overall_failed=1
 
     # 7. Refresh current-season CSVs so training data is up-to-date
     echo "[7/10] Refreshing current-season CSVs …" | tee -a "$LOG"
     docker compose exec -T backend \
         python scripts/download_data.py --refresh-current \
-        2>&1 | tee -a "$LOG"
+        2>&1 | tee -a "$LOG" || overall_failed=1
 
     # 8a. Refresh understat xG for top-5 leagues (current season)
     echo "" >> "$LOG"
     echo "[8a/10] Refreshing understat xG (top-5 leagues, current season) …" | tee -a "$LOG"
     docker compose exec -T backend \
         python scripts/download_xg.py --season 2025 \
-        2>&1 | tee -a "$LOG"
+        2>&1 | tee -a "$LOG" || overall_failed=1
 
     # 8b. Refresh API-Football xG for remaining leagues (api-sports.io)
     #    --force overwrites so newly-added xG for recent matches is picked up.
@@ -363,34 +373,34 @@ if [ "$DAY_OF_WEEK" -eq 1 ]; then
             --leagues CL EL ECL Eredivisie PrimeiraLiga Championship \
             --seasons "${CURRENT_SEASON}" \
             --force \
-        2>&1 | tee -a "$LOG"
+        2>&1 | tee -a "$LOG" || overall_failed=1
 
     # 9. Retrain both models (takes ~2-3 min)
     echo "" >> "$LOG"
     echo "[9/10] Retraining ML models …" | tee -a "$LOG"
     docker compose exec -T backend \
         python -m backend.app.ml.train \
-        2>&1 | tee -a "$LOG"
+        2>&1 | tee -a "$LOG" || overall_failed=1
 
     # 9b. Refit the second-stage rolling calibration against the new models
     echo "" >> "$LOG"
     echo "[9b/10] Refitting rolling recalibration after retrain …" | tee -a "$LOG"
     docker compose exec -T backend \
         python scripts/recalibrate.py \
-        2>&1 | tee -a "$LOG"
+        2>&1 | tee -a "$LOG" || overall_failed=1
 
     # 10. Force-recompute all upcoming predictions with the new models
     echo "" >> "$LOG"
     echo "[10/10] Recomputing all predictions with new models …" | tee -a "$LOG"
     docker compose exec -T backend \
         python scripts/compute_predictions.py --force \
-        2>&1 | tee -a "$LOG"
+        2>&1 | tee -a "$LOG" || overall_failed=1
 
     echo "" >> "$LOG"
     echo "[11/12] Backfilling bm_odds from freshly-downloaded CSVs …" | tee -a "$LOG"
     docker compose exec -T backend \
         python scripts/backfill_bm_odds.py \
-        2>&1 | tee -a "$LOG"
+        2>&1 | tee -a "$LOG" || overall_failed=1
 
     echo "" >> "$LOG"
     echo "[12/12] Clearing stats cache after retrain …" | tee -a "$LOG"
@@ -408,7 +418,11 @@ fi
 # never fires or the job dies before here, the ping is missed and the monitor
 # alerts — this pipeline has silently no-op'd before (docker PATH), so we watch
 # it. Set HEARTBEAT_URL in .env to enable; no-op when unset.
-if [ -n "${HEARTBEAT_URL:-}" ]; then
+# Skipped when overall_failed=1 so a run where the real steps failed doesn't
+# still report healthy to the monitor.
+if [ "$overall_failed" -ne 0 ]; then
+    echo "[warn] one or more steps failed — skipping heartbeat so the monitor alerts" >> "$LOG"
+elif [ -n "${HEARTBEAT_URL:-}" ]; then
     curl -fsS -m 10 --retry 3 "$HEARTBEAT_URL" >> "$LOG" 2>&1 \
         && echo "✓ heartbeat sent" >> "$LOG" \
         || echo "[warn] heartbeat ping failed" >> "$LOG"

@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
-
-const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
+import { CLIENT_API_URL as API } from "@/lib/api";
 
 export interface FeedbackItem {
   id: number;

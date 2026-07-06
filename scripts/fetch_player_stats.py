@@ -25,13 +25,11 @@ import argparse
 import json
 import os
 import sys
-import time
 from pathlib import Path
-
-import requests
 
 ROOT      = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
+from scripts._http_retry import get_with_retry  # noqa: E402
 
 ID_CACHE  = ROOT / "backend" / "data" / "models" / "national" / "wc_team_ids.json"
 API_BASE  = "https://v3.football.api-sports.io"
@@ -82,10 +80,7 @@ class Budget:
 
 def _get(path: str, params: dict, budget: Budget) -> dict:
     budget.hit()
-    r = requests.get(f"{API_BASE}{path}", headers=HEADERS, params=params, timeout=20)
-    if r.status_code == 429:
-        time.sleep(2)
-        r = requests.get(f"{API_BASE}{path}", headers=HEADERS, params=params, timeout=20)
+    r = get_with_retry(f"{API_BASE}{path}", headers=HEADERS, params=params, timeout=20)
     r.raise_for_status()
     return r.json()
 

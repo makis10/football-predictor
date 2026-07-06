@@ -27,6 +27,8 @@ RESULTS  = DATA_DIR / "results.csv"
 
 sys.path.insert(0, str(ROOT))
 
+from scripts._atomic_csv import atomic_to_csv  # noqa: E402
+
 
 def main() -> None:
     from backend.app.database import SessionLocal
@@ -78,7 +80,7 @@ def main() -> None:
         written += 1
 
     if written:
-        df.drop(columns="_d").to_csv(RESULTS, index=False)
+        atomic_to_csv(df.drop(columns="_d"), RESULTS, index=False)
     print(f"✓ Synced {written} settled result(s) from DB into results.csv")
 
 

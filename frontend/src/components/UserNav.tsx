@@ -24,7 +24,7 @@ export default function UserNav() {
   }
 
   const user    = session.user;
-  const isAdmin = (user as any)?.isAdmin === true;
+  const isAdmin = user?.isAdmin === true;
   const initials = user?.name
     ? user.name.split(" ").map((n) => n[0]).join("").toUpperCase().slice(0, 2)
     : user?.email?.[0]?.toUpperCase() ?? "?";

@@ -13,6 +13,9 @@ export default function LeagueFilter({
   const router = useRouter();
   const params = useSearchParams();
 
+  // Case-insensitive — hand-typed URLs may use ?league=international.
+  const isActive = (code: string) => active?.toLowerCase() === code.toLowerCase();
+
   function select(code?: string) {
     const next = new URLSearchParams(params.toString());
     next.delete("page"); // reset pagination on filter change
@@ -41,14 +44,14 @@ export default function LeagueFilter({
         <button
           key={l.code}
           onClick={() => select(l.code)}
-          className={`${base} ${active === l.code ? activeClass : inactiveClass}`}
+          className={`${base} ${isActive(l.code) ? activeClass : inactiveClass}`}
         >
           {l.flag} {l.label}
         </button>
       ))}
       <button
         onClick={() => select(INTERNATIONAL_LEAGUE)}
-        className={`${base} ${active === INTERNATIONAL_LEAGUE ? activeClass : inactiveClass}`}
+        className={`${base} ${isActive(INTERNATIONAL_LEAGUE) ? activeClass : inactiveClass}`}
       >
         🌍 International
       </button>

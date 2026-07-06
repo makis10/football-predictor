@@ -26,10 +26,10 @@ import os
 import sys
 from datetime import date, datetime, timezone
 
-import requests
-
 _PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 sys.path.insert(0, _PROJECT_ROOT)
+
+from scripts._http_retry import get_with_retry  # noqa: E402
 
 SPORT_KEY = "soccer_greece_super_league"
 ODDS_API_BASE = "https://api.the-odds-api.com/v4"
@@ -68,7 +68,7 @@ def fetch_events(api_key: str) -> list[dict]:
     url = f"{ODDS_API_BASE}/sports/{SPORT_KEY}/events"
     params = {"apiKey": api_key}
     print(f"  GET {url} …", end=" ", flush=True)
-    resp = requests.get(url, params=params, timeout=15)
+    resp = get_with_retry(url, params=params, timeout=15)
     resp.raise_for_status()
     events = resp.json()
     remaining = resp.headers.get("x-requests-remaining", "?")

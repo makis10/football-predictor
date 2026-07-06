@@ -30,12 +30,14 @@ import sys
 from pathlib import Path
 
 import pandas as pd
-import requests
 
 ROOT      = Path(__file__).resolve().parent.parent
 DATA_DIR  = ROOT / "backend" / "data" / "raw" / "international"
 RESULTS   = DATA_DIR / "results.csv"
 SHOOTOUTS = DATA_DIR / "shootouts.csv"
+
+sys.path.insert(0, str(ROOT))
+from scripts._http_retry import get_with_retry  # noqa: E402
 API_BASE  = "https://v3.football.api-sports.io"
 API_KEY   = os.getenv("API_SPORTS_KEY", "")
 HEADERS   = {"x-apisports-key": API_KEY}
@@ -58,8 +60,8 @@ def _canon(name: str) -> str:
 
 
 def _fetch_fixtures(league: int, season: int) -> list[dict]:
-    r = requests.get(f"{API_BASE}/fixtures", headers=HEADERS,
-                     params={"league": league, "season": season}, timeout=20)
+    r = get_with_retry(f"{API_BASE}/fixtures", headers=HEADERS,
+                        params={"league": league, "season": season}, timeout=20)
     r.raise_for_status()
     return r.json().get("response", [])
 

@@ -1,8 +1,7 @@
 "use client";
 import { useSession } from "next-auth/react";
 import { useState } from "react";
-
-const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
+import { CLIENT_API_URL as API } from "@/lib/api";
 
 const MARKETS = [
   { value: "home_win",  label: "Home Win" },
@@ -32,7 +31,7 @@ export default function LogBetButton({ matchId, suggestedMarket }: Props) {
   if (status === "loading") return null;
   if (status !== "authenticated") return null;
 
-  const userId = String((session?.user as any)?.id ?? "");
+  const userId = String(session?.user?.id ?? "");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();

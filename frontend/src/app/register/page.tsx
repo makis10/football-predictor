@@ -3,8 +3,7 @@ import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import Link from "next/link";
-
-const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
+import { CLIENT_API_URL as API } from "@/lib/api";
 
 export default function RegisterPage() {
   const router = useRouter();
@@ -29,7 +28,12 @@ export default function RegisterPage() {
         throw new Error(data.detail ?? "Registration failed");
       }
       // Auto sign-in after register
-      await signIn("credentials", { email, password, callbackUrl: "/" });
+      const result = await signIn("credentials", { email, password, redirect: false });
+      if (result?.error) {
+        setError("Registered, but auto sign-in failed — please log in.");
+      } else {
+        router.push("/");
+      }
     } catch (err: any) {
       setError(err.message);
     } finally {

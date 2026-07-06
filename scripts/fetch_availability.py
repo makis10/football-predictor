@@ -22,10 +22,11 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
-import requests
-
 ROOT = Path(__file__).resolve().parent.parent
 OUT_PATH = ROOT / "backend" / "data" / "models" / "national" / "wc_unavailable.json"
+
+sys.path.insert(0, str(ROOT))
+from scripts._http_retry import get_with_retry  # noqa: E402
 API_BASE = "https://v3.football.api-sports.io"
 API_KEY  = os.getenv("API_SPORTS_KEY", "")
 HEADERS  = {"x-apisports-key": API_KEY}
@@ -53,8 +54,8 @@ def main() -> None:
         print("[error] API_SPORTS_KEY not set."); sys.exit(1)
 
     try:
-        r = requests.get(f"{API_BASE}/injuries", headers=HEADERS,
-                         params={"league": args.league, "season": args.season}, timeout=20)
+        r = get_with_retry(f"{API_BASE}/injuries", headers=HEADERS,
+                           params={"league": args.league, "season": args.season}, timeout=20)
         r.raise_for_status()
         resp = r.json().get("response", [])
     except Exception as e:

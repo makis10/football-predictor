@@ -27,6 +27,19 @@ interface PageProps {
 
 const DAYS_AHEAD = 3; // today + 2 more days
 
+const CONF_RANK: Record<string, number> = { low: 1, medium: 2, high: 3 };
+
+function filterByMinConfidence<T extends { prediction?: { confidence?: string } | null }>(
+  matches: T[],
+  minConfidence?: string,
+): T[] {
+  const minConf = minConfidence?.toLowerCase();
+  if (!minConf) return matches;
+  return matches.filter(
+    (m) => (CONF_RANK[m.prediction?.confidence ?? "low"] ?? 0) >= (CONF_RANK[minConf] ?? 0),
+  );
+}
+
 async function UpcomingGrid({
   league,
   minOdds,
@@ -49,14 +62,10 @@ async function UpcomingGrid({
   try {
     if (isInternational) {
       // "International" filter — show upcoming national fixtures only
-      matches = await getUpcomingNationalMatches(athensDate(0), athensDate(DAYS_AHEAD - 1), 200, minOdds);
-      const minConf = minConfidence?.toLowerCase();
-      const confRank: Record<string, number> = { low: 1, medium: 2, high: 3 };
-      if (minConf) {
-        matches = matches.filter(
-          (m) => (confRank[m.prediction?.confidence ?? "low"] ?? 0) >= (confRank[minConf] ?? 0),
-        );
-      }
+      matches = filterByMinConfidence(
+        await getUpcomingNationalMatches(athensDate(0), athensDate(DAYS_AHEAD - 1), 200, minOdds),
+        minConfidence,
+      );
     } else {
       matches = await getMatches(league, 100, 0, "upcoming", true, undefined, undefined, DAYS_AHEAD, minOdds, minConfidence);
     }
@@ -77,13 +86,11 @@ async function UpcomingGrid({
   // to them too (inside getUpcomingNationalMatches, same argmax-pick semantics).
   if (!league) {
     try {
-      const nat = await getUpcomingNationalMatches(athensDate(0), athensDate(DAYS_AHEAD - 1), 200, minOdds);
       // Honour the same confidence filter the club list uses.
-      const minConf = minConfidence?.toLowerCase();
-      const confRank: Record<string, number> = { low: 1, medium: 2, high: 3 };
-      const filtered = minConf
-        ? nat.filter((m) => (confRank[m.prediction?.confidence ?? "low"] ?? 0) >= (confRank[minConf] ?? 0))
-        : nat;
+      const filtered = filterByMinConfidence(
+        await getUpcomingNationalMatches(athensDate(0), athensDate(DAYS_AHEAD - 1), 200, minOdds),
+        minConfidence,
+      );
       matches = [...matches, ...filtered].sort((a, b) =>
         a.match_date !== b.match_date
           ? a.match_date.localeCompare(b.match_date)

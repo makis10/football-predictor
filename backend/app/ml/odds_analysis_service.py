@@ -671,10 +671,19 @@ SUGGESTABLE_MARKETS = {"Home Win", "Draw"}
 #
 # A qualifying market that isn't proven yet is surfaced as "watch" (unproven) —
 # shown and recorded, but never staked with conviction until the data backs it.
+#
+# Base markets are NOT exempt forever: they start trusted (old-model record) but
+# are DEMOTED to watch once the new model's own record says they lose —
+# early (n ≥ DEMOTE_MIN_SAMPLES) only for clear bleeders (ROI ≤ DEMOTE_ROI_CEIL),
+# and at full sample size (n ≥ PROVEN_MIN_SAMPLES) by the same ROI floor as
+# everyone else. Stateless: a demoted market re-enters as soon as its cumulative
+# post-cutoff record no longer trips the rule.
 BASE_SUGGESTABLE   = {"Home Win", "Draw"}
 NEW_MODEL_CUTOFF   = "2026-06-17"   # market-independent retrain — see methodology
 PROVEN_MIN_SAMPLES = 30             # settled tickets before a market can promote
 PROVEN_ROI_FLOOR   = 0.0            # must at least break even on the new model
+DEMOTE_MIN_SAMPLES = 15             # settled tickets before a base market can demote early
+DEMOTE_ROI_CEIL    = -0.20          # early demotion only for clear bleeders, not noise
 _PROVEN_TTL        = 1800           # 30 min cache
 
 
@@ -694,9 +703,27 @@ def _market_won(market: str, res: Optional[str], hg, ag) -> Optional[bool]:
     }.get(market)
 
 
+def _market_is_proven(market: str, n: int, roi: Optional[float]) -> bool:
+    """The single promotion/demotion rule — shared by the live gate and the
+    admin market-record endpoint so they can never disagree.
+
+    Non-base markets promote at n ≥ PROVEN_MIN_SAMPLES with ROI ≥ floor.
+    Base markets start proven, demote early only as clear bleeders
+    (n ≥ DEMOTE_MIN_SAMPLES, ROI ≤ DEMOTE_ROI_CEIL), and are held to the same
+    ROI floor as everyone else once at full sample size."""
+    if market in BASE_SUGGESTABLE:
+        if roi is None:            # no settled record yet → keep trusted
+            return True
+        early_bleeder = n >= DEMOTE_MIN_SAMPLES and roi <= DEMOTE_ROI_CEIL
+        failed_full   = n >= PROVEN_MIN_SAMPLES and roi < PROVEN_ROI_FLOOR
+        return not (early_bleeder or failed_full)
+    return n >= PROVEN_MIN_SAMPLES and roi is not None and roi >= PROVEN_ROI_FLOOR
+
+
 def proven_markets(db, source: str = "national") -> set[str]:
     """Markets allowed as headline suggestions = the base trusted set plus any
-    whose NEW-model (post-cutoff) settled record clears the bar. Cached 30 min.
+    whose NEW-model (post-cutoff) settled record clears the bar — minus any base
+    market whose post-cutoff record has demoted it. Cached 30 min.
 
     Only implemented for the national ledger; other sources keep the static set
     (their gate passes no `suggestable`, so this isn't consulted)."""
@@ -732,8 +759,10 @@ def proven_markets(db, source: str = "national") -> set[str]:
         a[1] += (float(odds) - 1.0) if won else -1.0
 
     for market, (n, pnl) in agg.items():
-        if n >= PROVEN_MIN_SAMPLES and (pnl / n) >= PROVEN_ROI_FLOOR:
+        if _market_is_proven(market, n, pnl / n):
             proven.add(market)
+        else:
+            proven.discard(market)   # demoted base market falls back to watch
 
     cache_set(ck, list(proven), _PROVEN_TTL)
     return proven

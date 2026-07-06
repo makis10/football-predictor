@@ -16,10 +16,11 @@ import argparse
 import sys
 from pathlib import Path
 
-import requests
-
 ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "backend" / "data" / "raw" / "international"
+
+sys.path.insert(0, str(ROOT))
+from scripts._http_retry import get_with_retry  # noqa: E402
 
 BASE_URL = "https://raw.githubusercontent.com/martj42/international_results/master"
 FILES = ["results.csv", "goalscorers.csv", "shootouts.csv"]
@@ -30,7 +31,7 @@ def download(url: str, dest: Path, force: bool = False) -> None:
         print(f"  [skip] {dest.name} already exists (use --force to re-download)")
         return
     print(f"  Downloading {url} …", end=" ", flush=True)
-    r = requests.get(url, timeout=60)
+    r = get_with_retry(url, timeout=60)
     r.raise_for_status()
     dest.write_bytes(r.content)
     print(f"done ({len(r.content)/1024:.0f} KB)")

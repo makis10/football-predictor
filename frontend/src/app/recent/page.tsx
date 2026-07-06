@@ -3,7 +3,7 @@ export const dynamic = "force-dynamic";
 
 import { Suspense } from "react";
 import Link from "next/link";
-import { getMatches, getPastNationalMatches, formatLongDate, INTERNATIONAL_LEAGUE, type Match } from "@/lib/api";
+import { getMatches, getPastNationalMatches, formatLongDate, athensDate, INTERNATIONAL_LEAGUE, type Match } from "@/lib/api";
 import { accuracySummary, gradeMatch, hasResult } from "@/lib/matchGrade";
 import LeagueFilter from "@/components/LeagueFilter";
 import RecentResultCard from "@/components/RecentResultCard";
@@ -28,14 +28,12 @@ function pageLabel(page: number): string {
 async function RecentGrid({ league, page }: { league?: string; page: number }) {
   const daysOffset = (page - 1) * DAYS_PER_PAGE;
 
-  // Date range for national predictions (same window as club matches)
-  const now = new Date();
-  const toDate = new Date(now);
-  toDate.setDate(now.getDate() - daysOffset);
-  const fromDate = new Date(now);
-  fromDate.setDate(now.getDate() - (daysOffset + DAYS_PER_PAGE));
-  const toStr  = toDate.toISOString().slice(0, 10);
-  const fromStr = fromDate.toISOString().slice(0, 10);
+  // Date range for national predictions (same window as club matches).
+  // Anchored to Athens time — matches how national match_date is bucketed
+  // below — so the UTC 22:00-24:00 window (01:00-03:00 Athens) doesn't
+  // shift a match onto the wrong page.
+  const toStr   = athensDate(-daysOffset);
+  const fromStr = athensDate(-(daysOffset + DAYS_PER_PAGE));
 
   // Case-insensitive — hand-typed URLs may use ?league=international.
   const isInternational = league?.toLowerCase() === INTERNATIONAL_LEAGUE.toLowerCase();

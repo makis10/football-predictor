@@ -22,7 +22,9 @@ export default async function MarketRecordPage() {
         <p className="text-sm text-gray-500 mt-1">
           Shadow-tracked new-model record per market (national). A market promotes to a
           headline suggestion at ≥{data?.min_samples ?? 30} settled tickets with ROI ≥{" "}
-          {data?.roi_floor_pct ?? 0}%. Since cutoff {data?.cutoff ?? "—"}.
+          {data?.roi_floor_pct ?? 0}%. Base markets demote to watch early at ≥
+          {data?.demote_min_samples ?? 15} settled with ROI ≤ {data?.demote_roi_ceil_pct ?? -20}%,
+          and are held to the same ROI floor at full sample size. Since cutoff {data?.cutoff ?? "—"}.
         </p>
       </div>
 
@@ -48,7 +50,9 @@ export default async function MarketRecordPage() {
                 <tr key={m.market} className="hover:bg-pitch-800/40">
                   <td className="px-4 py-2 font-medium text-gray-100">{m.market}</td>
                   <td className="px-3 py-2 text-center">
-                    {m.is_base ? (
+                    {m.demoted ? (
+                      <span className="text-[11px] px-2 py-0.5 rounded-full bg-rose-900/40 text-rose-300">demoted</span>
+                    ) : m.is_base ? (
                       <span className="text-[11px] px-2 py-0.5 rounded-full bg-sky-900/40 text-sky-300">base</span>
                     ) : m.proven ? (
                       <span className="text-[11px] px-2 py-0.5 rounded-full bg-green-900/40 text-green-300">proven</span>
@@ -80,7 +84,8 @@ export default async function MarketRecordPage() {
 
       <p className="text-xs text-gray-600">
         “watch” markets are shown to users as unproven and recorded here; once the data clears
-        the bar they auto-promote to real suggestions. ROI is at the recorded (opening) odds.
+        the bar they auto-promote to real suggestions. “demoted” base markets are treated as
+        watch until their cumulative record recovers. ROI is at the recorded (opening) odds.
       </p>
     </div>
   );

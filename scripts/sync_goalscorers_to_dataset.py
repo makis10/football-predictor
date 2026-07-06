@@ -27,6 +27,8 @@ GS_PATH  = DATA_DIR / "goalscorers.csv"
 
 sys.path.insert(0, str(ROOT))
 
+from scripts._atomic_csv import atomic_to_csv  # noqa: E402
+
 
 def main() -> None:
     from sqlalchemy import text
@@ -71,7 +73,7 @@ def main() -> None:
         return
 
     out = pd.concat([gs.drop(columns="_d"), pd.DataFrame(new_rows)], ignore_index=True)
-    out.to_csv(GS_PATH, index=False)
+    atomic_to_csv(out, GS_PATH, index=False)
     print(f"✓ Synced {len(new_rows)} goals across {len(added_keys)} fixture-sides into goalscorers.csv")
 
 

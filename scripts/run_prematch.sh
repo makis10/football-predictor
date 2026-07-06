@@ -20,6 +20,12 @@ LOG="$LOG_DIR/prematch.log"
 
 mkdir -p "$LOG_DIR"
 
+# Guard against launchd's missed-run coalescing firing this alongside another
+# instance of itself (or daily/results-poll) against the same DB/CSVs.
+# shellcheck disable=SC1091
+source "$PROJ_DIR/scripts/_lock.sh"
+acquire_lock "run_prematch" || exit 0
+
 echo "" >> "$LOG"
 echo "══════════════════════════════════════════" >> "$LOG"
 echo " $(date '+%Y-%m-%d %H:%M:%S')  Pre-match odds refresh" >> "$LOG"

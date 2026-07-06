@@ -19,7 +19,7 @@ interface Props {
 export default function MatchCard({ match }: Props) {
   const p = match.prediction ?? null;
   const hasResult = match.home_goals !== null && match.away_goals !== null;
-  const isNational = match.league === INTERNATIONAL_LEAGUE;
+  const isNational = match.league?.toLowerCase() === INTERNATIONAL_LEAGUE.toLowerCase();
   // Cards live under a per-day header (e.g. "Saturday, 18 April 2026"), so
   // the date is already obvious.  Show the kick-off time here instead; fall
   // back to the short date when no time is known (legacy fixtures).

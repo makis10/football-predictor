@@ -82,7 +82,7 @@ export default function RecentResultCard({ match }: Props) {
     }
   }
 
-  const isInternational = match.league === INTERNATIONAL_LEAGUE;
+  const isInternational = match.league?.toLowerCase() === INTERNATIONAL_LEAGUE.toLowerCase();
   const showPostmortem = (state === "wrong" || state === "partial") && p && !isInternational;
 
   return (
