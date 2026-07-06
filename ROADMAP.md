@@ -1,6 +1,10 @@
 # Football Predictor — Product Roadmap
 
-> Στόχος: μετάβαση από στατιστικό dashboard σε ολοκληρωμένη AI πλατφόρμα αξίας για pro bettors & B2B.
+> Στόχος (αναθεωρημένος 2026-07): διαφανές, δημόσιο AI predictions showcase — έντιμη
+> αξιολόγηση (fair-value/de-vig, CLV, dynamic gate με promotion **και** demotion) αντί
+> για υποσχέσεις κέρδους. Το B2B/pro-bettor positioning αποσύρθηκε: το tracked record
+> του νέου μοντέλου δεν τεκμηριώνει πωλήσιμο edge, και το project λειτουργεί πλέον ως
+> portfolio-grade πλατφόρμα (public content, SEO, ops αυτοματισμοί).
 
 ---
 
@@ -42,8 +46,15 @@
 - **Monte Carlo World Cup simulator** (`scripts/simulate_wc.py`): 20k tournament sims (official R32 template, best-thirds matching), winner/finalist probabilities + σύγκριση με τη sharp αγορά "WC Winner" — σελίδα `/national/world-cup`
 - Πλήρες daily/weekly cron wiring (dataset refresh, friendlies re-inject, predictions, odds+EV, actuals, retrain, sim)
 
+### Platform, Ops & Showcase (2026-06/07)
+- **Public showcase**: όλο το content δημόσιο (gated μόνο personal/admin), SEO live (`robots.ts`, `sitemap.ts`, OpenGraph images), rebrand σε **aitipster.net** (Cloudflare tunnel), prod build μέσω `deploy_frontend.sh`
+- **User platform**: NextAuth (Google) login/register/profile, tracked matches (`my-matches`), προσωπικό bet log + ROI (`user_bets`, `my-roi`, `LogBetButton`), in-app `NotificationBell`, feedback
+- **Admin suite**: `/admin` (users, market record με promotion/demotion status, feedback)
+- **Ops**: ημερήσια `pg_dump` backups με rotation, dead-man's-switch heartbeats σε κάθε cron pipeline, per-IP rate limiting στα LLM endpoints, self-hosted umami analytics, GitHub Actions CI (pytest + tsc + vitest + build), 5 launchd services (tunnel, daily, odds-poll, prematch, results-poll)
+- **Email/newsletter**: one-off ενημέρωση χρηστών (rebrand + WC record) μέσω Gmail BCC — αν γίνει τακτικό, θέλει ESP (Resend/SendGrid) με domain auth
+
 ### AI & Chatbot
-- Claude → **Groq migration** (Llama 3.3 70B, zero cost, <1s latency)
+- Claude → **Groq migration** (zero cost, <1s latency) — μοντέλο πλέον **openai/gpt-oss-120b** (το llama-3.3-70b αποσύρεται στο GroqCloud 2026-08-16)
 - **Floating AI chatbot** σε όλες τις σελίδες (Groq, context-aware, ελληνική γλώσσα, conversation history)
 - Quick-prompt chips, typing indicator, auto-scroll, Enter = send / Shift+Enter = newline
 - Match analysis (bookmaker comparison + EV + injuries) με Groq αντί Claude Sonnet
@@ -112,23 +123,70 @@ Click σε "Serie A" → όλα τα γραφήματα (Calibration, Confidence
 
 ## 🔴 Phase 3 — Platform & B2B Features
 
-### 3.1 · User Dashboard & Portfolio (SaaS)
+### ✅ 3.1 · User Dashboard & Portfolio — υλοποιημένο (χωρίς SaaS)
 
-Λογαριασμός χρήστη, "Track" αγώνων, προσωπικό ROI ιστορικό, notifications. Μετάβαση σε SaaS model.
+Λογαριασμός χρήστη (NextAuth/Google), "Track" αγώνων (`tracked_matches` + my-matches),
+προσωπικό bet log & ROI (`user_bets` + my-roi), in-app notifications, profile, feedback.
+**112 εγγεγραμμένοι χρήστες** (2026-07).
 
-**Απαιτεί:** Authentication (NextAuth / Clerk), user DB schema, subscription logic.
-
-**Πολυπλοκότητα:** 🔴 Πολύ Υψηλή &nbsp;|&nbsp; **Impact:** 🔥🔥🔥 (για SaaS)
+**⛔ Κομμένο — subscription/paid tier:** χωρίς αποδεδειγμένο edge δεν υπάρχει έντιμο
+προϊόν συνδρομής. Το platform μένει δωρεάν showcase.
 
 ---
 
-### 3.2 · Live In-Play Predictions
+### ⛔ 3.2 · Live In-Play Predictions — αποσύρθηκε
 
-Value bets κατά τη διάρκεια αγώνα (ημίχρονο κ.λπ.). Το 70% του τζίρου των στοιχηματικών είναι live — **το μεγαλύτερο B2B selling point**.
+Χτίστηκε πάνω στην υπόθεση «B2B selling point» που δεν ισχύει πια: το fair-value
+(de-vig) reframe έδειξε ότι το tracked «κέρδος» ήταν vig/anti-selection, όχι edge.
+Εξαιρετικά υψηλή πολυπλοκότητα (real-time pipeline, re-inference, WebSockets, live
+odds feed) για μηδενική τεκμηριωμένη αξία. Ξαναεξετάζεται μόνο αν κάποιο market
+αποδείξει βιώσιμο post-cutoff ROI σε βάθος ολόκληρης σεζόν.
 
-**Απαιτεί:** Real-time data pipeline, model re-inference στα 45', WebSocket frontend, live odds feed.
+---
 
-**Πολυπλοκότητα:** 🔴 Εξαιρετικά Υψηλή &nbsp;|&nbsp; **Impact:** 🔥🔥🔥🔥🔥
+## 🟢 Phase 4 — Gate hardening & επόμενα (μετά τις αλλαγές 2026-07)
+
+### 4.1 · Rolling-window demotion recovery
+
+Το demotion rule είναι cumulative-since-cutoff: το Draw (0/16, −100%) ρεαλιστικά δεν
+ξαναγυρνά ποτέ, όσο κι αν βελτιωθεί το μοντέλο. Rolling window (τελευταία 30 settled
+tickets) δίνει «δεύτερη ευκαιρία» με φρέσκο record. Θέλει state (window aggregation
+στο query — όχι νέο table).
+
+**Πολυπλοκότητα:** 🟡 Μέτρια &nbsp;|&nbsp; **Impact:** 🔥🔥 (μακροπρόθεσμη ορθότητα gate)
+
+---
+
+### 4.2 · Επέκταση dynamic gate + demotion στο club pipeline
+
+Το promotion/demotion τρέχει μόνο στο national path· το club path κρατά το static
+kill-switch (`SUGGESTABLE_MARKETS`). Με τη νέα σεζόν (Αύγουστος) το club πρέπει να
+μπει στο ίδιο καθεστώς: shadow-tracking στο `value_bets` με `source='club'`, ίδιος
+`_market_is_proven` κανόνας, ίδιο admin visibility.
+
+**Πολυπλοκότητα:** 🟡 Μέτρια &nbsp;|&nbsp; **Impact:** 🔥🔥🔥 (το club είναι ο κύριος όγκος)
+
+---
+
+### 4.3 · Promotion/demotion alerting
+
+Όταν αλλάζει το proven set (market προβιβάζεται ή υποβιβάζεται), ειδοποίηση στον
+admin (email ή NotificationBell) — τώρα φαίνεται μόνο αν κοιτάξεις το `/admin/markets`.
+Hook στο σημείο που γράφεται το `proven_markets:national` cache με diff έναντι
+προηγούμενης τιμής.
+
+**Πολυπλοκότητα:** 🟢 Χαμηλή &nbsp;|&nbsp; **Impact:** 🔥
+
+---
+
+### 4.4 · Post-WC μετάβαση
+
+Τελικός WC 2026-07-19 → το national pipeline αδρανεί μέχρι τα φθινοπωρινά παράθυρα.
+Checklist: τελικό WC record snapshot στο Stats (με methodology banner), heartbeat
+expectations των national crons να μη σκάνε ψευδώς στο κενό διάστημα, club season
+prep (fixtures Αυγούστου, retrain με τελικά 25/26 δεδομένα, 4.2 πριν την πρεμιέρα).
+
+**Πολυπλοκότητα:** 🟢 Χαμηλή &nbsp;|&nbsp; **Impact:** 🔥🔥 (αποφεύγει σιωπηλά κενά)
 
 ---
 
@@ -144,8 +202,12 @@ Value bets κατά τη διάρκεια αγώνα (ημίχρονο κ.λπ.)
 | 6 | Interactive Stats filters (2.1) | ✅ Done | 🟡 Μέτρια | 🔥🔥 |
 | 7 | AI Post-Mortem (1.4) | ✅ Done | 🟠 Μέτρια-Υψηλή | 🔥🔥 |
 | 8 | Odds Movement (1.5) | ✅ Done | 🔴 Υψηλή | 🔥🔥🔥 |
-| 9 | User Dashboard / SaaS (3.1) | 🔲 | 🔴 Πολύ Υψηλή | 🔥🔥🔥 |
-| 10 | Live In-Play (3.2) | 🔲 | 🔴 Εξαιρετικά Υψηλή | 🔥🔥🔥🔥🔥 |
+| 9 | User Dashboard (3.1, χωρίς SaaS) | ✅ Done | 🔴 Πολύ Υψηλή | 🔥🔥🔥 |
+| 10 | Live In-Play (3.2) | ⛔ Αποσύρθηκε | 🔴 Εξαιρετικά Υψηλή | — |
+| 11 | Club dynamic gate (4.2) | 🔲 πριν τη σεζόν | 🟡 Μέτρια | 🔥🔥🔥 |
+| 12 | Post-WC μετάβαση (4.4) | 🔲 έως 19/07 | 🟢 Χαμηλή | 🔥🔥 |
+| 13 | Rolling-window recovery (4.1) | 🔲 | 🟡 Μέτρια | 🔥🔥 |
+| 14 | Gate alerting (4.3) | 🔲 | 🟢 Χαμηλή | 🔥 |
 
 ---
 
@@ -153,14 +215,15 @@ Value bets κατά τη διάρκεια αγώνα (ημίχρονο κ.λπ.)
 
 | Layer | Technology |
 |---|---|
-| Frontend | Next.js 14 App Router · Tailwind CSS · TypeScript |
-| Backend | FastAPI · Python 3.11 · SQLAlchemy · Alembic |
-| ML | XGBoost · scikit-learn · pandas · NumPy |
+| Frontend | Next.js 16 App Router · Tailwind CSS · TypeScript |
+| Backend | FastAPI · Python 3.13 · SQLAlchemy · Alembic |
+| ML | XGBoost · LightGBM · scikit-learn · pandas · NumPy |
 | Database | PostgreSQL 16 |
-| Cache | Redis 7 (128MB LRU) — injuries 30min, analysis 30min, postmortem 24h, stats 6h |
-| AI / LLM | Groq (Llama 3.3 70B) — zero cost, <1s latency |
+| Cache | Redis 7 (128MB LRU) — injuries 30min, analysis 30min, postmortem 24h, stats 6h, proven_markets 30min |
+| AI / LLM | Groq (openai/gpt-oss-120b) — zero cost, <1s latency |
 | Odds Data | The Odds API (20k req/month) + odds_history polling every 3h |
-| Fixture Data | football-data.org (free tier) |
+| Fixture Data | football-data.org (free tier) · martj42 (international) + API-Football overlay |
 | Injury Data | API-Football / api-sports.io (100 req/day free) |
 | xG Data | understat.com (scraped) |
-| Infrastructure | Docker Compose · Cloudflare tunnel (aitipster.net) · macOS launchd (4 services: tunnel, daily@06:00, odds-poll@3h, prematch@15:00) |
+| Analytics | self-hosted umami |
+| Infrastructure | Docker Compose · Cloudflare tunnel (aitipster.net) · macOS launchd (5 services: tunnel, daily@06:00, odds-poll@3h, prematch@15:00, results-poll) · GitHub Actions CI |
