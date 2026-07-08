@@ -515,6 +515,7 @@ export const LEAGUES = [
   { code: "CL",           label: "Champions League",  flag: "⭐" },
   { code: "EL",           label: "Europa League",     flag: "🟠" },
   { code: "ECL",          label: "Conference League", flag: "🟢" },
+  { code: "ClubFriendly", label: "Club Friendlies",   flag: "🤝" },
 ] as const;
 
 export type LeagueCode = (typeof LEAGUES)[number]["code"];

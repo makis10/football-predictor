@@ -37,7 +37,7 @@ from backend.app.ml.features import (
     FEATURE_COLS, RESULT_FEATURE_COLS, GOALS_FEATURE_COLS,
 )
 from backend.app.ml.european import load_european_data, EUROPEAN_DIR
-from backend.app.ml.predict import SoftVoteEnsemble, _get_models, _confidence, _get_draw_alpha, _get_btts_threshold
+from backend.app.ml.predict import SoftVoteEnsemble, _get_models, confidence_for, _get_draw_alpha, _get_btts_threshold
 from backend.app.ml.calibration import load_calibrators, apply_calibration, apply_recent_calibration
 from backend.app.ml.draw_classifier import (
     load_draw_classifier, load_draw_calibrator,
@@ -483,7 +483,7 @@ for i, (mid, home, away, match_date, league) in enumerate(match_snapshots, 1):
                 "over_2_5_prob":    round(over_p, 4),
                 "goals_prediction": goals_prediction,
                 "model_version":    MODEL_VERSION,
-                "confidence":       _confidence(max_result_prob, over_p),
+                "confidence":       confidence_for(league, max_result_prob, over_p),
                 # Store bookmaker odds for ROI/EV tracking (NULL when unavailable)
                 "bm_home_odds":     live_odds.get("raw_home")     if live_odds else None,
                 "bm_draw_odds":     live_odds.get("raw_draw")     if live_odds else None,

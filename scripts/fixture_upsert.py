@@ -1,6 +1,7 @@
 """
 Shared reschedule-aware fixture upsert used by all fixture-fetch scripts
-(fetch_upcoming.py, fetch_greek_fixtures.py, fetch_european_fixtures.py).
+(fetch_upcoming.py, fetch_greek_fixtures.py, fetch_european_fixtures.py,
+fetch_club_friendlies.py).
 
 Why it exists
 -------------

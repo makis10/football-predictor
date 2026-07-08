@@ -9,6 +9,7 @@
 #   3. fetch_upcoming.py          — refresh fixture schedule (next 60 days)
 #   4. fetch_greek_fixtures.py    — refresh Greek SL fixtures (The Odds API)
 #   5. fetch_european_fixtures.py — refresh CL/EL/ECL fixtures
+#   5b. fetch_club_friendlies.py  — refresh club friendlies + their results (API-Football)
 #   6. compute_predictions.py     — ML predictions for any new fixtures
 #   7. backfill_bm_odds.py        — fill bm_odds from CSVs for completed matches missing them
 #   8. clear stats cache          — so dashboard reflects latest results immediately
@@ -121,6 +122,19 @@ echo "[5/6] Refreshing European fixtures (CL/EL/ECL) …" | tee -a "$LOG"
 docker compose exec -T backend \
     python scripts/fetch_european_fixtures.py \
         --odds-key "${ODDS_API_KEY:-}" \
+        --no-predictions \
+    2>&1 | tee -a "$LOG" || overall_failed=1
+
+# ── 5b. Refresh club friendlies (API-Football league 667) ────────────────────
+# Fetches upcoming club friendlies AND fills results for played ones — no other
+# results-updater covers league "ClubFriendly". Predictions come from step 6
+# (compute_predictions.py forces confidence "low" for ClubFriendly).
+echo "" >> "$LOG"
+echo "[5b/6] Refreshing club friendlies …" | tee -a "$LOG"
+docker compose exec -T backend \
+    python scripts/fetch_club_friendlies.py \
+        --days-ahead 14 \
+        --days-back 7 \
         --no-predictions \
     2>&1 | tee -a "$LOG" || overall_failed=1
 
