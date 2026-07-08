@@ -9,7 +9,7 @@ from sqlalchemy.orm import Session
 
 from backend.app.cache import CACHE_MISS, cache_get, cache_set
 from backend.app.database import get_db
-from backend.app.ml.predict import _confidence
+from backend.app.ml.predict import confidence_for
 from backend.app.models.match import Match
 from backend.app.models.odds_history import OddsHistory
 from backend.app.models.prediction import Prediction
@@ -194,7 +194,7 @@ def _build_response(
         # Recompute confidence from the DISPLAYED probs (which may be
         # injury-adjusted) so the label always matches what the user sees.
         # The raw DB value is intentionally ignored here.
-        confidence=_confidence(max(hw, d, aw), ov),
+        confidence=confidence_for(match.league, max(hw, d, aw), ov),
     )
 
 

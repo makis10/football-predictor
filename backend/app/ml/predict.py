@@ -167,6 +167,21 @@ def _confidence(max_result_prob: float, over_prob: float = 0.5) -> str:
     return "low"
 
 
+# Leagues whose predictions are always served as "low" confidence, regardless
+# of how sure the model looks. Club friendlies are cross-league exhibition
+# games (heavy rotation, 3×30' halves, trialists) — the training distribution
+# doesn't cover them, so an inflated confidence label would be dishonest.
+LOW_CONFIDENCE_LEAGUES = {"ClubFriendly"}
+
+
+def confidence_for(league: "str | None", max_result_prob: float, over_prob: float = 0.5) -> str:
+    """League-aware confidence: forced 'low' for LOW_CONFIDENCE_LEAGUES,
+    otherwise the composite _confidence formula."""
+    if league in LOW_CONFIDENCE_LEAGUES:
+        return "low"
+    return _confidence(max_result_prob, over_prob)
+
+
 def predict_match(
     history_df: pd.DataFrame,
     home_team: str,
@@ -336,5 +351,5 @@ def predict_match(
             "prediction":     btts_prediction,
         },
         "model_version": MODEL_VERSION,
-        "confidence":    _confidence(max_result_prob, over_p),
+        "confidence":    confidence_for(league, max_result_prob, over_p),
     }

@@ -151,6 +151,9 @@ docker compose exec backend python scripts/fetch_greek_fixtures.py --no-predicti
 # UEFA CL / EL / ECL fixtures
 docker compose exec backend python scripts/fetch_european_fixtures.py --no-predictions
 
+# Club friendlies — fixtures + results (API-Football league 667)
+docker compose exec backend python scripts/fetch_club_friendlies.py --no-predictions
+
 # ML predictions + bookmaker odds for all upcoming fixtures
 docker compose exec backend python scripts/compute_predictions.py
 
@@ -465,6 +468,28 @@ football-data.org doesn't cover Greek SL on the free tier. A dedicated script us
 ```bash
 docker compose exec backend python scripts/fetch_greek_fixtures.py --no-predictions
 ```
+
+### Fetch club friendlies
+
+Pre-season / exhibition club games (e.g. Olympiakos–Lyon). None of the regular
+sources carries them, so a dedicated script pulls API-Football's "Friendlies
+Clubs" league (id 667) and stores them under league code `ClubFriendly`:
+
+```bash
+docker compose exec backend python scripts/fetch_club_friendlies.py
+docker compose exec backend python scripts/fetch_club_friendlies.py --days-ahead 21 --allow-unknown
+```
+
+- Team names are resolved against our training data (static map → slug →
+  alias → difflib); fixtures whose teams we have no history for are skipped
+  by default (`--allow-unknown` keeps 1-known-side fixtures with neutral
+  default features, european-pipeline style).
+- The same run fills final scores for played friendlies — `update_results.py`
+  / `update_european_results.py` don't cover them.
+- Predictions use the shared cross-league path; **confidence is forced
+  `low`** for `ClubFriendly` (both at compute and serve time via
+  `confidence_for()`), and The Odds API has no friendlies key, so odds/EV
+  columns stay NULL — friendlies never become value-bet suggestions.
 
 ### Back-fill kick-off times for existing fixtures
 
@@ -1042,7 +1067,7 @@ football-predictor/
 │       │       ├── ROICard.tsx        # ROI Tracker (result + goals market breakdown)
 │       │       └── EVChart.tsx        # Cumulative EV vs P&L dual-line chart (pure SVG, no deps)
 │       └── lib/
-│           └── api.ts                 # Typed API client; sendChat(); buildExportUrl(); LEAGUES (13)
+│           └── api.ts                 # Typed API client; sendChat(); buildExportUrl(); LEAGUES (14)
 │
 ├── scripts/
 │   ├── download_data.py               # Fetch CSVs (E0 E1 SP1 I1 D1 F1 P1 N1 + European)
@@ -1051,6 +1076,7 @@ football-predictor/
 │   ├── fetch_upcoming.py              # Live fixtures from football-data.org (PL ELC PD SA BL1 FL1 PPL DED CL)
 │   ├── fetch_greek_fixtures.py        # Greek SL fixtures + kickoff_time via The Odds API
 │   ├── fetch_european_fixtures.py     # CL/EL/ECL fixtures + kickoff_time
+│   ├── fetch_club_friendlies.py       # Club friendlies (API-Football 667) + results + low-conf predictions
 │   ├── backfill_kickoff_times.py      # One-off: populate kickoff_time for existing NULL rows
 │   ├── update_results.py              # Update past match scores (domestic + CL)
 │   ├── update_european_results.py     # Update EL/ECL/GreekSL scores via The Odds API

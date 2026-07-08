@@ -1,5 +1,5 @@
 """Confidence label + stats correctness helpers."""
-from backend.app.ml.predict import _confidence
+from backend.app.ml.predict import _confidence, confidence_for
 from backend.app.routers.stats import _predicted_result, _goals_correct, _top_pick_correct
 
 
@@ -14,6 +14,16 @@ def test_confidence_medium_when_goals_are_coinflip():
 
 def test_confidence_low_when_result_uncertain():
     assert _confidence(0.30, 0.80) == "low"
+
+
+def test_confidence_for_forces_low_for_club_friendlies():
+    # Even a "sure thing" friendly is served as low confidence.
+    assert confidence_for("ClubFriendly", 0.80, 0.90) == "low"
+
+
+def test_confidence_for_passes_through_for_regular_leagues():
+    assert confidence_for("EPL", 0.60, 0.70) == _confidence(0.60, 0.70)
+    assert confidence_for(None, 0.60, 0.50) == _confidence(0.60, 0.50)
 
 
 def test_predicted_result_picks_argmax():

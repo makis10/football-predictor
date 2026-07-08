@@ -11,7 +11,7 @@ from sqlalchemy import and_, case, or_, select
 from sqlalchemy.orm import Session, joinedload, selectinload
 
 from backend.app.database import get_db
-from backend.app.ml.predict import _confidence as _ml_confidence
+from backend.app.ml.predict import confidence_for as _ml_confidence_for
 from backend.app.models.match import Match
 from backend.app.rate_limit import client_ip, rate_limit_check
 from backend.app.schemas.match import MatchResponse, PredictionEmbed
@@ -30,7 +30,7 @@ def _utc_today() -> date:
     return datetime.now(timezone.utc).date()
 
 
-def _adjust_prediction_embed(match_id: int, pred) -> "PredictionEmbed":
+def _adjust_prediction_embed(match_id: int, pred, league: "str | None" = None) -> "PredictionEmbed":
     """
     Build an adjusted PredictionEmbed that matches what the detail page serves:
 
@@ -63,7 +63,7 @@ def _adjust_prediction_embed(match_id: int, pred) -> "PredictionEmbed":
         pass  # graceful fallback — listing is never broken by an adjustment error
 
     goals_pred = "OVER" if ov >= 0.5 else "UNDER"
-    confidence = _ml_confidence(max(hw, d, aw), ov)
+    confidence = _ml_confidence_for(league, max(hw, d, aw), ov)
 
     return PredictionEmbed(
         home_win_prob=round(hw, 4),
@@ -79,7 +79,7 @@ def _adjust_prediction_embed(match_id: int, pred) -> "PredictionEmbed":
 
 VALID_LEAGUES = {
     "EPL", "LaLiga", "SerieA", "Bundesliga", "Ligue1", "GreekSL", "CL", "EL", "ECL",
-    "Championship", "LeagueOne", "PrimeiraLiga", "Eredivisie",
+    "Championship", "LeagueOne", "PrimeiraLiga", "Eredivisie", "ClubFriendly",
 }
 
 
@@ -265,7 +265,7 @@ def list_matches(
     for match in matches:
         resp = MatchResponse.model_validate(match)
         if resp.prediction is not None and match.prediction is not None:
-            resp.prediction = _adjust_prediction_embed(match.id, match.prediction)
+            resp.prediction = _adjust_prediction_embed(match.id, match.prediction, match.league)
         responses.append(resp)
     return responses
 

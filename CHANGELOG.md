@@ -4,6 +4,35 @@ Notable changes to Football Predictor. Format loosely follows
 [Keep a Changelog](https://keepachangelog.com/); dates are `YYYY-MM-DD`.
 History before this file was introduced lives in `git log`.
 
+## 2026-07-08
+
+### Added
+- **Club friendlies** (`scripts/fetch_club_friendlies.py`): pre-season /
+  exhibition club games (e.g. Olympiakos–Lyon) now appear in the app under
+  the new league code `ClubFriendly`. Source: API-Football "Friendlies
+  Clubs" (league 667) — none of the existing fixture sources
+  (football-data.org free tier, The Odds API) carries club friendlies.
+  Team names are resolved against training-data names (static map → slug →
+  alias → difflib, ambiguity-safe); fixtures with unknown teams are skipped
+  by default (`--allow-unknown` keeps 1-known-side games). The same run
+  fills final scores for played friendlies and prunes cancelled ones.
+- `confidence_for()` in `backend/app/ml/predict.py`: league-aware confidence
+  wrapper. `ClubFriendly` (`LOW_CONFIDENCE_LEAGUES`) is **always served as
+  `low` confidence** — friendlies are heavy-rotation exhibition games the
+  training distribution doesn't cover. Wired through every path that
+  computes the label: `compute_predictions.py`,
+  `fetch_european_fixtures.py`, `predict_match()`, and both serve-time
+  recompute sites (`routers/matches.py`, `routers/predictions.py`).
+- Daily pipeline step **[5b]** in `run_daily.sh`: refresh club friendlies
+  (fixtures + results) before the generic prediction step.
+- `ClubFriendly` in `VALID_LEAGUES` (API filter) and in the frontend
+  `LEAGUES` list ("Club Friendlies" 🤝).
+
+### Notes
+- Friendlies have no odds source (The Odds API has no club-friendlies key),
+  so their odds/EV columns stay NULL and they can never become value-bet
+  suggestions or ledger tickets.
+
 ## 2026-07-06
 
 ### Added
