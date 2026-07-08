@@ -1035,6 +1035,8 @@ export interface WcSimulation {
   played_games?: number;
   remaining_games?: number;
   has_market?: boolean;
+  /** True once knockouts are simulated on the real bracket (exact pairings). */
+  real_bracket?: boolean;
   teams?: WcSimTeam[];
   pairings?: WcSimPairing[];
   golden_boot?: WcGoldenBoot;

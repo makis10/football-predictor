@@ -294,9 +294,11 @@ export default async function WorldCupPage() {
       {/* Caveats */}
       <section className="text-xs text-gray-600 space-y-1 border-t border-pitch-700 pt-4">
         <p>
-          ⚠ Elo-Poisson engine calibrated to our trained result model. Bracket
-          group-letter assignment is approximate (fixtures carry no group label), so exact
-          knockout paths are indicative. Knockout draws resolved via Elo-weighted penalties.
+          ⚠ Elo-Poisson engine calibrated to our trained result model.{" "}
+          {sim.real_bracket
+            ? "Knockouts are simulated on the REAL bracket (actual scheduled pairings + played results), so matchup paths are exact."
+            : "Bracket group-letter assignment is approximate (fixtures carry no group label), so exact knockout paths are indicative."}{" "}
+          Knockout draws resolved via Elo-weighted penalties.
         </p>
         <p>
           ⚠ Golden Boot shares come from international scoring history (martj42

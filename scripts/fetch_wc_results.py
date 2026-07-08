@@ -72,16 +72,19 @@ def overlay_scores(fixtures: list[dict], season: int) -> int:
     df["date"] = pd.to_datetime(df["date"], errors="coerce")
 
     # Map a finished fixture by the unordered team pair → (home, away, hg, ag).
+    # NOTE: use `goals` (the FINAL score incl. extra time, excl. penalties) —
+    # `score.fulltime` is the 90-minute score, which silently rewrote AET wins
+    # (e.g. Argentina 3-2 aet Cape Verde) into draws and broke KO conditioning.
     finished: dict[frozenset, dict] = {}
     for f in fixtures:
         if f["fixture"]["status"]["short"] not in ("FT", "AET", "PEN"):
             continue
-        ft = f["score"]["fulltime"]
-        if ft["home"] is None or ft["away"] is None:
+        g = f["goals"]
+        if g["home"] is None or g["away"] is None:
             continue
         h, a = _canon(f["teams"]["home"]["name"]), _canon(f["teams"]["away"]["name"])
         finished[frozenset({h, a})] = {"home": h, "away": a,
-                                       "hg": int(ft["home"]), "ag": int(ft["away"])}
+                                       "hg": int(g["home"]), "ag": int(g["away"])}
 
     cutoff = pd.Timestamp(f"{season}-06-01")
     mask = (df["tournament"] == "FIFA World Cup") & (df["date"] >= cutoff)
@@ -118,8 +121,9 @@ def overlay_shootouts(fixtures: list[dict]) -> int:
     for f in fixtures:
         if f["fixture"]["status"]["short"] not in ("FT", "AET", "PEN"):
             continue
-        ft, pen = f["score"]["fulltime"], f["score"]["penalty"]
-        if ft["home"] is None or ft["home"] != ft["away"]:
+        # Level after extra time (`goals`) + a penalty score = shoot-out decided.
+        g, pen = f["goals"], f["score"]["penalty"]
+        if g["home"] is None or g["home"] != g["away"]:
             continue
         if pen["home"] is None or pen["away"] is None:
             continue

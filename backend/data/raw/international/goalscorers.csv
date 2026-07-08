@@ -47866,20 +47866,25 @@ date,home_team,away_team,team,scorer,minute,own_goal,penalty
 2026-07-04,Canada,Morocco,Morocco,Azzedine Ounahi,82.0,False,False
 2026-07-04,Canada,Morocco,Morocco,Soufiane Rahimi,90.0,False,False
 2026-07-04,Paraguay,France,France,Kylian Mbappé,70.0,False,True
-2026-06-27,Uruguay,Spain,Spain,Alex Baena,,False,False
-2026-06-26,United States,Turkey,Turkey,Arda Güler,,False,False
-2026-06-26,United States,Turkey,Turkey,Barış Alper Yılmaz,,False,False
-2026-06-26,United States,Turkey,Turkey,Kaan Ayhan,,False,False
-2026-06-26,Turkey,United States,United States,Auston Trusty,,False,False
-2026-06-26,Turkey,United States,United States,Sebastian Berhalter,,False,False
-2026-06-27,New Zealand,Belgium,New Zealand,Elijah Just,,False,False
-2026-06-27,New Zealand,Belgium,Belgium,Kevin De Bruyne,,False,False
-2026-06-27,New Zealand,Belgium,Belgium,Leandro Trossard,,False,False
-2026-06-27,New Zealand,Belgium,Belgium,Leandro Trossard,,False,False
-2026-06-27,New Zealand,Belgium,Belgium,Alexis Saelemaekers,,False,False
-2026-06-27,New Zealand,Belgium,Belgium,Romelu Lukaku,,False,False
-2026-06-27,Egypt,Iran,Egypt,Mahmoud Saber,,False,False
-2026-06-27,Egypt,Iran,Iran,Ramin Rezaeian,,False,False
+2026-07-05,Brazil,Norway,Norway,Erling Haaland,79.0,False,False
+2026-07-05,Brazil,Norway,Brazil,Neymar,90.0,False,True
+2026-07-05,Brazil,Norway,Norway,Erling Haaland,90.0,False,False
+2026-07-05,Mexico,England,England,Jude Bellingham,36.0,False,False
+2026-07-05,Mexico,England,England,Jude Bellingham,38.0,False,False
+2026-07-05,Mexico,England,Mexico,Julián Quiñones,42.0,False,False
+2026-07-05,Mexico,England,England,Harry Kane,60.0,False,True
+2026-07-05,Mexico,England,Mexico,Raúl Jiménez,69.0,False,True
+2026-07-06,Portugal,Spain,Spain,Mikel Merino,90.0,False,False
+2026-07-06,United States,Belgium,Belgium,Charles De Ketelaere,9.0,False,False
+2026-07-06,United States,Belgium,United States,Malik Tillman,31.0,False,False
+2026-07-06,United States,Belgium,Belgium,Charles De Ketelaere,33.0,False,False
+2026-07-06,United States,Belgium,Belgium,Hans Vanaken,57.0,False,False
+2026-07-06,United States,Belgium,Belgium,Romelu Lukaku,90.0,False,False
+2026-07-07,Argentina,Egypt,Egypt,Yasser Ibrahim,15.0,False,False
+2026-07-07,Argentina,Egypt,Egypt,Mostafa Ziko,67.0,False,False
+2026-07-07,Argentina,Egypt,Argentina,Cristian Romero,79.0,False,False
+2026-07-07,Argentina,Egypt,Argentina,Lionel Messi,83.0,False,False
+2026-07-07,Argentina,Egypt,Argentina,Enzo Fernández,90.0,False,False
 2026-06-28,Algeria,Austria,Algeria,Rafik Belghali,,False,False
 2026-06-28,Algeria,Austria,Algeria,Riyad Mahrez,,False,False
 2026-06-28,Algeria,Austria,Algeria,Riyad Mahrez,,False,False
@@ -47899,11 +47904,13 @@ date,home_team,away_team,team,scorer,minute,own_goal,penalty
 2026-07-03,Switzerland,Algeria,Switzerland,Dan Ndoye,,False,False
 2026-07-03,Switzerland,Algeria,Switzerland,Breel Embolo,,False,False
 2026-07-04,Colombia,Ghana,Colombia,Jhon Arias,,False,False
-2026-07-05,Brazil,Norway,Brazil,Neymar,,False,False
-2026-07-05,Brazil,Norway,Norway,Erling Haaland,,False,False
-2026-07-05,Brazil,Norway,Norway,Erling Haaland,,False,False
 2026-07-06,Mexico,England,Mexico,Raúl Jiménez,,False,False
 2026-07-06,Mexico,England,Mexico,Julián Quiñones,,False,False
 2026-07-06,Mexico,England,England,Jude Bellingham,,False,False
 2026-07-06,Mexico,England,England,Jude Bellingham,,False,False
 2026-07-06,Mexico,England,England,Harry Kane,,False,False
+2026-07-07,Belgium,United States,United States,Malik Tillman,,False,False
+2026-07-07,United States,Belgium,Belgium,Charles De Ketelaere,,False,False
+2026-07-07,United States,Belgium,Belgium,Charles De Ketelaere,,False,False
+2026-07-07,United States,Belgium,Belgium,Hans Vanaken,,False,False
+2026-07-07,United States,Belgium,Belgium,Romelu Lukaku,,False,False

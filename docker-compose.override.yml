@@ -1,6 +1,14 @@
 # docker-compose.override.yml — loaded automatically alongside docker-compose.yml
-# Adds live-reload volumes for local development.
-# This file is gitignored by default; commit it only if you want these overrides shared.
+#
+# BACKEND ONLY: live bind-mounts for backend/ and scripts/. These are
+# OPERATIONAL, not just dev convenience — the launchd pipelines run
+# `docker compose exec backend python scripts/…` and rely on reading the
+# CURRENT scripts from the mount (no image rebuild per edit).
+#
+# The frontend dev/HMR service was deliberately moved to docker-compose.dev.yml
+# (opt-in). It used to live here, which meant any `docker compose up -d frontend`
+# silently replaced the production build with `next dev` — bad for the public
+# site (slow, unoptimised, dev overlays). Prod deploys: scripts/deploy_frontend.sh.
 
 services:
 
@@ -11,15 +19,3 @@ services:
     command: >
       sh -c "alembic upgrade head &&
              uvicorn backend.app.main:app --host 0.0.0.0 --port 8000 --reload"
-
-  frontend:
-    build:
-      context: ./frontend
-      dockerfile: Dockerfile
-      target: builder          # builder stage has node_modules; runner stage does not
-    volumes:
-      - ./frontend/src:/app/src  # live Next.js changes (HMR via Next dev server)
-    command: ["npm", "run", "dev"]
-    environment:
-      NEXT_PUBLIC_API_URL: /api/proxy
-      INTERNAL_API_URL: http://backend:8000

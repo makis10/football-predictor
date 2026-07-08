@@ -1,0 +1,23 @@
+# Frontend dev/HMR mode — OPT-IN (not auto-loaded).
+#
+# Runs `next dev` with frontend/src bind-mounted for hot reload. Never use for
+# the public site; the tunnel should always serve the optimised prod build.
+#
+# Usage:
+#   docker compose -f docker-compose.yml -f docker-compose.override.yml -f docker-compose.dev.yml up -d frontend
+# Back to prod:
+#   ./scripts/deploy_frontend.sh
+
+services:
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      target: builder          # builder stage has node_modules; runner stage does not
+    volumes:
+      - ./frontend/src:/app/src  # live Next.js changes (HMR via Next dev server)
+    command: ["npm", "run", "dev"]
+    environment:
+      NEXT_PUBLIC_API_URL: /api/proxy
+      INTERNAL_API_URL: http://backend:8000

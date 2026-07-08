@@ -345,6 +345,86 @@ def eliminated_from(ko_played: dict[frozenset, tuple[dict[str, int], str]]) -> s
     return out
 
 
+def load_ko_fixtures() -> list[dict]:
+    """All KNOCKOUT fixtures known so far (played + scheduled), in date order:
+    [{"home", "away", "date"}, …]. Empty before the group stage ends."""
+    df = pd.read_csv(DATA_DIR / "results.csv")
+    df["date"] = pd.to_datetime(df["date"], errors="coerce")
+    wc = df[(df["tournament"] == "FIFA World Cup") & (df["date"] >= "2026-06-01")].sort_values("date")
+    ko = wc.iloc[72:]
+    return [{"home": r["home_team"], "away": r["away_team"], "date": r["date"]}
+            for _, r in ko.iterrows()]
+
+
+def build_real_rounds(ko_fixtures: list[dict]) -> list[list[dict]]:
+    """Chunk the KO fixture list into rounds by the 2026 format sizes
+    (R32=16, R16=8, QF=4, SF=2; anything after — bronze + final — lands in a
+    trailing round that the bracket runner disambiguates). A trailing PARTIAL
+    round (e.g. only 3 of 4 QFs scheduled yet) is kept — the runner completes
+    it from the previous round's winners."""
+    sizes = [16, 8, 4, 2]
+    rounds: list[list[dict]] = []
+    idx = 0
+    for s in sizes:
+        chunk = ko_fixtures[idx:idx + s]
+        if not chunk:
+            return rounds
+        rounds.append(chunk)
+        idx += len(chunk)
+        if len(chunk) < s:          # partial round = the live frontier
+            return rounds
+    if ko_fixtures[idx:]:
+        rounds.append(ko_fixtures[idx:])   # bronze + final
+    return rounds
+
+
+def _run_real_bracket(rounds: list[list[dict]], winner_fn) -> tuple[str, tuple[str, str]]:
+    """Simulate the REAL knockout tree (vs the pre-knockout template):
+
+    • A round that exists in the data is used as-is, in DATE order — this is
+      what encodes the true topology (e.g. FRA–MAR and ESP–BEL feed the same
+      semi-final, so a France–Spain FINAL is impossible).
+    • A named fixture is anchored only when both its teams are still alive —
+      this drops the bronze match (its teams lost the SFs) automatically.
+    • Winners not consumed by named fixtures pair adjacently in the previous
+      round's order — completes partial rounds (e.g. the QF whose opponent
+      comes from tonight's R16) and any rounds not yet scheduled.
+    Returns (champion, finalists)."""
+    prev_winners: list[str] | None = None
+    finalists: tuple[str, str] | None = None
+
+    for fixtures in rounds:
+        if prev_winners is None:
+            pairs = [(f["home"], f["away"]) for f in fixtures]
+        else:
+            alive = set(prev_winners)
+            used: set[str] = set()
+            pairs = []
+            for f in fixtures:
+                a, b = f["home"], f["away"]
+                if a in alive and b in alive and a not in used and b not in used:
+                    pairs.append((a, b))
+                    used.update((a, b))
+            leftovers = [w for w in prev_winners if w not in used]
+            for i in range(0, len(leftovers) - 1, 2):
+                pairs.append((leftovers[i], leftovers[i + 1]))
+        if len(pairs) == 1:
+            finalists = pairs[0]
+        prev_winners = [winner_fn(a, b) for a, b in pairs]
+
+    # Rounds not in the data yet — adjacent pairing all the way to the final.
+    while len(prev_winners) > 1:
+        if len(prev_winners) == 2:
+            finalists = (prev_winners[0], prev_winners[1])
+        prev_winners = [winner_fn(prev_winners[i], prev_winners[i + 1])
+                        for i in range(0, len(prev_winners), 2)]
+
+    champ = prev_winners[0]
+    if finalists is None:
+        finalists = (champ, champ)   # degenerate (single fixture) — shouldn't happen
+    return champ, finalists
+
+
 def derive_groups(fixtures: list[tuple[str, str]]) -> dict[str, list[str]]:
     """Connected-components of the co-appearance graph → 12 groups of 4."""
     adj: dict[str, set[str]] = defaultdict(set)
@@ -418,6 +498,7 @@ def simulate_once(
     played_map: dict[tuple[str, str], tuple[int, int]] | None = None,
     ko_played: dict[frozenset, tuple[dict[str, int], str]] | None = None,
     eliminated: set[str] | None = None,
+    real_rounds: list[list[dict]] | None = None,
 ) -> tuple[str, tuple[str, str], dict[str, int], dict[str, tuple[bool, bool, bool]]]:
     """Returns (champion, (finalistA, finalistB), goals_per_team, group_outcome).
 
@@ -476,25 +557,6 @@ def simulate_once(
             qual = top2 or team in qualified_thirds
             group_outcome[team] = (won, top2, qual)
 
-    # Bipartite-match qualifying third groups to the 8 third slots (by allowed set)
-    slot_assign = _match_thirds(qualifying_third_groups)
-    if slot_assign is None:
-        # Fallback: arbitrary valid-ish assignment (rare)
-        slot_assign = dict(zip(sorted(THIRD_SLOTS), sorted(qualifying_third_groups)))
-
-    def resolve(slot: str) -> str:
-        pos, grp = slot[0], slot[1:]
-        if pos == "1":  return standings[grp][0]
-        if pos == "2":  return standings[grp][1]
-        return ""  # third handled separately
-
-    # Build R32 fixtures
-    r32_teams: dict[int, tuple[str, str]] = {}
-    for m, (sa, sb) in R32.items():
-        ta = third_team_by_group[slot_assign[m]] if sa.startswith("3:") else resolve(sa)
-        tb = third_team_by_group[slot_assign[m]] if sb.startswith("3:") else resolve(sb)
-        r32_teams[m] = (ta, tb)
-
     def winner(ta: str, tb: str) -> str:
         # Condition on a real result if this knockout tie has already been played.
         rec = ko_played.get(frozenset({ta, tb}))
@@ -513,6 +575,35 @@ def simulate_once(
         w, ga, gb = play(elo.get(ta, ELO_START), elo.get(tb, ELO_START), scale, knockout=True)
         goals_acc[ta] += ga; goals_acc[tb] += gb
         return ta if w == 0 else tb
+
+    # ── REAL bracket (knockouts under way) ───────────────────────────────────
+    # Once actual knockout fixtures exist, simulate the true tree instead of
+    # the R32 template — the template's approximate group-letter seeding puts
+    # teams on the wrong bracket sides (e.g. it allowed a France–Spain final
+    # although both feed the same real semi-final).
+    if real_rounds:
+        champ, finalists = _run_real_bracket(real_rounds, winner)
+        return champ, finalists, goals_acc, group_outcome
+
+    # ── Template bracket (pre-knockout projection) ───────────────────────────
+    # Bipartite-match qualifying third groups to the 8 third slots (by allowed set)
+    slot_assign = _match_thirds(qualifying_third_groups)
+    if slot_assign is None:
+        # Fallback: arbitrary valid-ish assignment (rare)
+        slot_assign = dict(zip(sorted(THIRD_SLOTS), sorted(qualifying_third_groups)))
+
+    def resolve(slot: str) -> str:
+        pos, grp = slot[0], slot[1:]
+        if pos == "1":  return standings[grp][0]
+        if pos == "2":  return standings[grp][1]
+        return ""  # third handled separately
+
+    # Build R32 fixtures
+    r32_teams: dict[int, tuple[str, str]] = {}
+    for m, (sa, sb) in R32.items():
+        ta = third_team_by_group[slot_assign[m]] if sa.startswith("3:") else resolve(sa)
+        tb = third_team_by_group[slot_assign[m]] if sb.startswith("3:") else resolve(sb)
+        r32_teams[m] = (ta, tb)
 
     r32_w = {m: winner(*r32_teams[m]) for m in R32}
     r16_w = [winner(r32_w[a], r32_w[b]) for a, b in R16]
@@ -733,6 +824,13 @@ def main() -> None:
     if eliminated:
         print(f"→ {len(eliminated)} team(s) eliminated, forced out of the bracket: "
               f"{', '.join(sorted(eliminated))}")
+
+    # Real knockout tree (replaces the approximate R32 template once KO starts).
+    real_rounds = build_real_rounds(load_ko_fixtures())
+    if real_rounds:
+        n_fx = sum(len(r) for r in real_rounds)
+        print(f"→ REAL bracket active: {n_fx} knockout fixtures across "
+              f"{len(real_rounds)} round(s) — pairings follow the actual tree.")
     missing = {t for g in groups.values() for t in g if t not in elo}
     if missing:
         print(f"[warn] {len(missing)} team(s) missing Elo (→ {ELO_START}): {sorted(missing)}")
@@ -772,7 +870,7 @@ def main() -> None:
 
     print(f"Simulating {args.sims:,} tournaments …")
     for i in range(args.sims):
-        champ, (fa, fb), gacc, gout = simulate_once(groups, elo, scale, played_map, ko_played, eliminated)
+        champ, (fa, fb), gacc, gout = simulate_once(groups, elo, scale, played_map, ko_played, eliminated, real_rounds)
         champ_ct[champ] += 1
         final_ct[fa] += 1; final_ct[fb] += 1
         pair_ct[tuple(sorted((fa, fb)))] += 1
@@ -848,6 +946,7 @@ def main() -> None:
             "played_games": len(played_map),
             "remaining_games": len(upcoming_pairs),
             "has_market":   bool(market),
+            "real_bracket": bool(real_rounds),
             "eliminated":   sorted(eliminated),
             "teams": [
                 {
