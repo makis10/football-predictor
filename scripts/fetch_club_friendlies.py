@@ -84,31 +84,28 @@ def infer_season(d: date) -> str:
 # ── API-Football fetch ────────────────────────────────────────────────────────
 
 def fetch_friendlies(window_from: date, window_to: date) -> list[dict]:
-    """All league-667 fixtures in the window, following pagination."""
+    """All league-667 fixtures in the window (one request per calendar year).
+
+    NOTE: /fixtures is NOT paginated — it returns every match in the window
+    in a single response, and rejects a `page` parameter outright
+    ("The Page field do not exist")."""
     fixtures: list[dict] = []
     seasons = sorted({window_from.year, window_to.year})
     for season in seasons:
-        page = 1
-        while True:
-            params = {
-                "league": FRIENDLIES_CLUBS_LEAGUE_ID,
-                "season": season,
-                "from":   window_from.isoformat(),
-                "to":     window_to.isoformat(),
-                "page":   page,
-            }
-            resp = get_with_retry(f"{API_BASE}/fixtures", headers=HEADERS,
-                                  params=params, timeout=20)
-            resp.raise_for_status()
-            data = resp.json()
-            if data.get("errors"):
-                print(f"  [error] API-Football (season {season}): {data['errors']}")
-                break
-            fixtures.extend(data.get("response", []))
-            paging = data.get("paging", {})
-            if page >= int(paging.get("total", 1) or 1):
-                break
-            page += 1
+        params = {
+            "league": FRIENDLIES_CLUBS_LEAGUE_ID,
+            "season": season,
+            "from":   window_from.isoformat(),
+            "to":     window_to.isoformat(),
+        }
+        resp = get_with_retry(f"{API_BASE}/fixtures", headers=HEADERS,
+                              params=params, timeout=20)
+        resp.raise_for_status()
+        data = resp.json()
+        if data.get("errors"):
+            print(f"  [error] API-Football (season {season}): {data['errors']}")
+            continue
+        fixtures.extend(data.get("response", []))
         remaining = resp.headers.get("x-ratelimit-requests-remaining", "?")
         print(f"  season {season}: cumulative {len(fixtures)} fixture(s) "
               f"(quota remaining: {remaining})")
