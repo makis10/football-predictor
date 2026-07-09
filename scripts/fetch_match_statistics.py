@@ -77,6 +77,8 @@ def _parse_statistics(resp: list, fixture: dict, match_date: str, league_id: int
             "shots_total": _to_int(stats.get("Total Shots")),
             "shots_on":    _to_int(stats.get("Shots on Goal")),
             "fouls":       _to_int(stats.get("Fouls")),
+            "yellow_cards": _to_int(stats.get("Yellow Cards")),
+            "red_cards":    _to_int(stats.get("Red Cards")),
         })
     return rows
 

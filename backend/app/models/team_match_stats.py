@@ -28,4 +28,6 @@ class TeamMatchStats(Base):
     shots_total: Mapped[_Opt[int]] = mapped_column(Integer, nullable=True)
     shots_on:    Mapped[_Opt[int]] = mapped_column(Integer, nullable=True)
     fouls:       Mapped[_Opt[int]] = mapped_column(Integer, nullable=True)
+    yellow_cards: Mapped[_Opt[int]] = mapped_column(Integer, nullable=True)
+    red_cards:    Mapped[_Opt[int]] = mapped_column(Integer, nullable=True)
     created_at:  Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
