@@ -53,6 +53,12 @@ docker compose exec -T backend \
     python scripts/update_results.py --days-back 2 \
     >> "$LOG" 2>&1 || true
 
+# GreekSL / EL / ECL scores (The Odds API) — folded in from the retired legacy
+# `results` poller so this one job covers every competition.
+docker compose exec -T backend \
+    python scripts/update_european_results.py --key "${ODDS_API_KEY:-}" --days-from 2 \
+    >> "$LOG" 2>&1 || true
+
 # API-Football authoritative overlay for the live tournament — fresh final
 # scores + penalty winners into results.csv / shootouts.csv, so a team that lost
 # (incl. on penalties → a draw in results.csv) drops out of the World Cup

@@ -63,6 +63,17 @@ ODDS_API_COMPETITIONS = {
     "ECL": "soccer_uefa_europa_conference_league",
 }
 
+# Qualification rounds (July–August, before the league phase). Mapped to the
+# SAME league code so they show under the existing filter. The Odds API only
+# activates a sport once odds are posted (~1–2 weeks out) — until then these
+# return [] harmlessly (fetch_odds_api_fixtures swallows 404s). Some seasons
+# the main keys above already carry quals; these catch the ones split out.
+ODDS_API_QUALIFIERS = {
+    "CL":  "soccer_uefa_champs_league_qualification",
+    "EL":  "soccer_uefa_europa_league_qualification",
+    "ECL": "soccer_uefa_europa_conference_league_qualification",
+}
+
 
 def map_team(name: str) -> str:
     return TEAM_MAP.get(name, name)
@@ -313,10 +324,10 @@ def main():
             new = insert_fixtures(db, cl_fixtures)
             all_new.extend(new)
 
-        # ── Europa League + Conference League (The Odds API) ───────────────────
+        # ── Europa League + Conference League + qualifiers (The Odds API) ──────
         if args.odds_key:
-            for code, sport_key in ODDS_API_COMPETITIONS.items():
-                print(f"\nFetching {code} fixtures …")
+            for code, sport_key in {**ODDS_API_COMPETITIONS, **ODDS_API_QUALIFIERS}.items():
+                print(f"\nFetching {code} fixtures ({sport_key}) …")
                 fixtures = fetch_odds_api_fixtures(code, sport_key, args.odds_key)
                 if fixtures:
                     new = insert_fixtures(db, fixtures)

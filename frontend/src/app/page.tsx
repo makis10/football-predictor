@@ -175,7 +175,8 @@ export default async function HomePage({ searchParams }: PageProps) {
           Upcoming Fixtures
         </h1>
         <p className="text-sm text-gray-500 mt-1">
-          Model predictions for the next {DAYS_AHEAD} days across 13 leagues.
+          Model predictions for the next {DAYS_AHEAD} days across every major league,
+          European cup, friendly &amp; international.
         </p>
       </div>
 
