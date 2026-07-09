@@ -136,6 +136,11 @@ class AnalysisResponse(BaseModel):
     watch_markets:     List[WatchMarket] = []         # model edge, unproven (shadow-tracked)
     h_elo:             Optional[float] = None         # Elo ratings (club + national)
     a_elo:             Optional[float] = None
+    exp_home_cards:    Optional[float] = None         # team props (both club + national)
+    exp_away_cards:    Optional[float] = None
+    exp_home_corners:  Optional[float] = None
+    exp_away_corners:  Optional[float] = None
+    corners_over_9_5_prob: Optional[float] = None
     poisson_stats:     Optional[PoissonStats] = None  # extended stats from λ_home/λ_away
     has_odds_data:     bool
     has_injury_data:   bool = False

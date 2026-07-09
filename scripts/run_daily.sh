@@ -158,6 +158,22 @@ docker compose exec -T backend \
     python scripts/warmup_injuries.py --days 3 \
     2>&1 | tee -a "$LOG" || overall_failed=1
 
+# ── Club player/team props (parity with the national match pages) ────────────
+# Ingest club team stats (corners / cards) then per-player match stats for both
+# sides of every UPCOMING club fixture. Elo + all club props (corners / cards /
+# per-player scorer·SoT·assist) are computed LIVE at request time from these
+# tables, so no compute step follows. Budget-capped (Pro = 7500/day); fixtures
+# already in the tables are skipped, so the daily cost is only the new games.
+# Non-fatal: a club-stats API hiccup shouldn't flip the pipeline health signal.
+echo "" >> "$LOG"
+echo "[8b/9] Ingesting club team + player stats (props source) …" | tee -a "$LOG"
+docker compose exec -T backend \
+    python scripts/fetch_club_team_stats.py --days-ahead 5 --last 8 --max-requests 1200 \
+    2>&1 | tee -a "$LOG" || echo "  [warn] club team stats failed — continuing" | tee -a "$LOG"
+docker compose exec -T backend \
+    python scripts/fetch_club_player_stats.py --days-ahead 5 --last 8 --max-requests 2000 \
+    2>&1 | tee -a "$LOG" || echo "  [warn] club player stats failed — continuing" | tee -a "$LOG"
+
 # ── National teams (international fixtures) ───────────────────────────────────
 # a. Refresh martj42 dataset (newly-played scores appear here once played)
 # b. Re-inject manually-added upcoming friendlies (dedup keeps played versions)

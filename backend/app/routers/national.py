@@ -379,6 +379,11 @@ def get_national_analysis(
         odds_movement=None,
         h_elo=getattr(pred, "h_elo", None),
         a_elo=getattr(pred, "a_elo", None),
+        exp_home_cards=getattr(pred, "exp_home_cards", None),
+        exp_away_cards=getattr(pred, "exp_away_cards", None),
+        exp_home_corners=getattr(pred, "exp_home_corners", None),
+        exp_away_corners=getattr(pred, "exp_away_corners", None),
+        corners_over_9_5_prob=getattr(pred, "corners_over_9_5_prob", None),
         poisson_stats=_national_poisson_stats(pred.home_team, pred.away_team),
     )
 

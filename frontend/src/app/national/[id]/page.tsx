@@ -250,8 +250,9 @@ export default async function NationalMatchDetailPage({ params }: Props) {
         </div>
       )}
 
-      {/* Expected cards (yellow+red) per team */}
-      {(prediction.exp_home_cards != null || prediction.exp_away_cards != null) && (
+      {/* Expected cards — upcoming gets it from the shared panel above; kept
+          here (with settlement) for FINISHED matches only. */}
+      {hasEnded && (prediction.exp_home_cards != null || prediction.exp_away_cards != null) && (
         <div className="card p-5 space-y-3">
           <div className="flex items-center justify-between">
             <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
@@ -294,8 +295,9 @@ export default async function NationalMatchDetailPage({ params }: Props) {
         </div>
       )}
 
-      {/* Expected corners per team */}
-      {(prediction.exp_home_corners != null || prediction.exp_away_corners != null) && (
+      {/* Expected corners — upcoming gets it from the shared panel above; kept
+          here (with settlement) for FINISHED matches only. */}
+      {hasEnded && (prediction.exp_home_corners != null || prediction.exp_away_corners != null) && (
         <div className="card p-5 space-y-3">
           <div className="flex items-center justify-between">
             <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">

@@ -185,6 +185,11 @@ export interface MatchAnalysis {
   watch_markets?:    WatchMarket[];           // model edge, unproven — shadow-tracked
   h_elo?:            number | null;           // Elo ratings (club + national)
   a_elo?:            number | null;
+  exp_home_cards?:   number | null;           // team props (club + national)
+  exp_away_cards?:   number | null;
+  exp_home_corners?: number | null;
+  exp_away_corners?: number | null;
+  corners_over_9_5_prob?: number | null;
   poisson_stats:     PoissonStats | null;    // extended stats from λ_home/λ_away
   has_odds_data:     boolean;
   has_injury_data:   boolean;
@@ -863,6 +868,11 @@ export interface PlayerPropsResponse {
 
 export async function getPlayerProps(predictionId: number): Promise<PlayerPropsResponse> {
   return apiFetch<PlayerPropsResponse>(`/national/predictions/${predictionId}/player-props`);
+}
+
+/** Club player props — computed live from player_match_stats (no prediction_id). */
+export async function getClubPlayerProps(matchId: number): Promise<PlayerPropsResponse> {
+  return apiFetch<PlayerPropsResponse>(`/predictions/${matchId}/player-props`);
 }
 
 /**

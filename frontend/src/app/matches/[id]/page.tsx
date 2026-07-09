@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import {
   getMatch,
   getPrediction,
+  getClubPlayerProps,
   confidenceColor,
   confidenceDot,
   formatDate,
@@ -13,9 +14,11 @@ import {
   hasMatchEnded,
   leagueFlag,
   leagueLabel,
+  type PlayerProp,
 } from "@/lib/api";
 import { WinProbabilityBars, GoalsProbabilityBar, BttsProbabilityBar } from "@/components/PredictionBar";
 import MatchAnalysisPanel from "@/components/MatchAnalysis";
+import PlayerPropsPanel from "@/components/PlayerPropsPanel";
 import LogBetButton from "@/components/LogBetButton";
 import LockedDetailPanel from "@/components/LockedDetailPanel";
 import { getSession } from "@/lib/auth";
@@ -73,6 +76,15 @@ export default async function MatchDetailPage({ params }: Props) {
         <LockedDetailPanel home={match.home_team} away={match.away_team} />
       </div>
     );
+  }
+
+  // Player props (best-effort — only for club leagues we've ingested). Fetched
+  // past the freemium gate so logged-out upcoming views don't pay for it.
+  let propTeams: Record<string, PlayerProp[]> = {};
+  try {
+    propTeams = (await getClubPlayerProps(id)).teams;
+  } catch {
+    /* none yet */
   }
 
   return (
@@ -213,6 +225,9 @@ export default async function MatchDetailPage({ params }: Props) {
               awayTeam={match.away_team}
             />
           )}
+
+          {/* Player props (scorer / SoT / assist) — shown when we've priced them */}
+          <PlayerPropsPanel teams={propTeams} />
 
           {/* Log bet */}
           <LogBetButton

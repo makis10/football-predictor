@@ -468,6 +468,8 @@ def get_match_analysis(match_id: int, request: Request, db: Session = Depends(ge
 
     from backend.app.ml.club_elo import club_elo_pair
     _elo = club_elo_pair(db, match.home_team, match.away_team)
+    from backend.app.ml.club_props import club_team_props
+    _tp = club_team_props(db, match.home_team, match.away_team) or {}
 
     return AnalysisResponse(
         match_id=match_id,
@@ -481,6 +483,11 @@ def get_match_analysis(match_id: int, request: Request, db: Session = Depends(ge
         suggested_markets=data.get("suggested_markets", []),
         h_elo=_elo[0] if _elo else None,
         a_elo=_elo[1] if _elo else None,
+        exp_home_cards=_tp.get("exp_home_cards"),
+        exp_away_cards=_tp.get("exp_away_cards"),
+        exp_home_corners=_tp.get("exp_home_corners"),
+        exp_away_corners=_tp.get("exp_away_corners"),
+        corners_over_9_5_prob=_tp.get("corners_over_9_5_prob"),
         poisson_stats=poisson_stats_typed,
         has_odds_data=data["has_odds_data"],
         has_injury_data=data.get("has_injury_data", False),
@@ -490,6 +497,22 @@ def get_match_analysis(match_id: int, request: Request, db: Session = Depends(ge
 
 # ── In-process cache for postmortem analyses ──────────────────────────────────
 _POSTMORTEM_TTL = 24 * 3600  # 24 h — deterministic once match is over
+
+
+@router.get("/{match_id}/player-props")
+def get_club_player_props(match_id: int, db: Session = Depends(get_db)):
+    """Per-player prop probabilities (scorer / SoT / assist) for a CLUB fixture,
+    grouped by team. Computed live from player_match_stats — the club mirror of
+    /national/predictions/{id}/player-props. For finished matches each player is
+    settled against the actuals we caught."""
+    match = db.query(Match).filter(Match.id == match_id).first()
+    if not match:
+        raise HTTPException(status_code=404, detail="Match not found")
+    pred = db.execute(
+        select(Prediction).where(Prediction.match_id == match_id)
+    ).scalars().first()
+    from backend.app.ml.club_player_props import club_player_props
+    return club_player_props(db, match, pred)
 
 
 @router.get("/{match_id}/postmortem")
