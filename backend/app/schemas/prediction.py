@@ -134,6 +134,8 @@ class AnalysisResponse(BaseModel):
     suggested_market:  Optional[str] = None          # primary pick (backwards compat)
     suggested_markets: List[str]     = []             # ranked list, up to 2
     watch_markets:     List[WatchMarket] = []         # model edge, unproven (shadow-tracked)
+    h_elo:             Optional[float] = None         # Elo ratings (club + national)
+    a_elo:             Optional[float] = None
     poisson_stats:     Optional[PoissonStats] = None  # extended stats from λ_home/λ_away
     has_odds_data:     bool
     has_injury_data:   bool = False

@@ -466,6 +466,9 @@ def get_match_analysis(match_id: int, request: Request, db: Session = Depends(ge
             away_win_and_ng=ps["away_win_and_ng"],
         )
 
+    from backend.app.ml.club_elo import club_elo_pair
+    _elo = club_elo_pair(db, match.home_team, match.away_team)
+
     return AnalysisResponse(
         match_id=match_id,
         home_team=match.home_team,
@@ -476,6 +479,8 @@ def get_match_analysis(match_id: int, request: Request, db: Session = Depends(ge
         analysis=data["analysis"],
         suggested_market=data.get("suggested_market"),
         suggested_markets=data.get("suggested_markets", []),
+        h_elo=_elo[0] if _elo else None,
+        a_elo=_elo[1] if _elo else None,
         poisson_stats=poisson_stats_typed,
         has_odds_data=data["has_odds_data"],
         has_injury_data=data.get("has_injury_data", False),

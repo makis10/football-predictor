@@ -377,7 +377,35 @@ def get_national_analysis(
         suggested_markets=data.get("suggested_markets", []),
         watch_markets=data.get("watch_markets", []),
         odds_movement=None,
-        poisson_stats=None,
+        h_elo=getattr(pred, "h_elo", None),
+        a_elo=getattr(pred, "a_elo", None),
+        poisson_stats=_national_poisson_stats(pred.home_team, pred.away_team),
+    )
+
+
+def _national_poisson_stats(home: str, away: str):
+    """Full Poisson stat block (goals lines / team goals / correct score / combos)
+    from the snapshot Elo λ — so the national analysis panel renders the same
+    rich layout as the club one. Returns None if the snapshot isn't available."""
+    from backend.app.schemas.prediction import PoissonStats, CorrectScoreProb
+    from backend.app.ml.national.expected_goals import national_lambdas
+    from backend.app.ml.poisson import compute_extended_poisson_stats
+
+    lams = national_lambdas(home, away)
+    if not lams:
+        return None
+    ps = compute_extended_poisson_stats(lams[0], lams[1])
+    return PoissonStats(
+        over_1_5=ps["over_1_5"], under_1_5=ps["under_1_5"],
+        over_2_5=ps["over_2_5"], under_2_5=ps["under_2_5"],
+        over_3_5=ps["over_3_5"], under_3_5=ps["under_3_5"],
+        home_over_1_5=ps["home_over_1_5"], home_under_1_5=ps["home_under_1_5"],
+        away_over_1_5=ps["away_over_1_5"], away_under_1_5=ps["away_under_1_5"],
+        top_scores=[CorrectScoreProb(**s) for s in ps["top_scores"]],
+        most_likely_score=ps["most_likely_score"],
+        btts_and_over_2_5=ps["btts_and_over_2_5"], btts_and_under_2_5=ps["btts_and_under_2_5"],
+        home_win_and_btts=ps["home_win_and_btts"], away_win_and_btts=ps["away_win_and_btts"],
+        home_win_and_ng=ps["home_win_and_ng"], away_win_and_ng=ps["away_win_and_ng"],
     )
 
 

@@ -169,6 +169,32 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
   const mov = data.odds_movement;
 
   return (
+   <div className="space-y-4">
+    {/* Elo ratings — shown for both club & national once the analysis carries
+        them, so both detail pages present the same block. */}
+    {(data.h_elo != null || data.a_elo != null) && (
+      <div className="card p-5">
+        <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-3">
+          Elo Ratings
+        </h2>
+        <div className="flex items-center justify-between gap-4">
+          <div className="text-left">
+            <p className="text-2xl font-bold text-gray-100 tabular-nums">
+              {data.h_elo != null ? Math.round(data.h_elo) : "—"}
+            </p>
+            <p className="text-xs text-gray-500">{homeTeam}</p>
+          </div>
+          <span className="text-xs text-gray-600">vs</span>
+          <div className="text-right">
+            <p className="text-2xl font-bold text-gray-100 tabular-nums">
+              {data.a_elo != null ? Math.round(data.a_elo) : "—"}
+            </p>
+            <p className="text-xs text-gray-500">{awayTeam}</p>
+          </div>
+        </div>
+      </div>
+    )}
+
     <div className="card p-5 space-y-4">
       {/* Header */}
       <div className="flex items-center justify-between">
@@ -681,5 +707,6 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
         </p>
       )}
     </div>
+   </div>
   );
 }

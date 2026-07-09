@@ -152,62 +152,82 @@ export default async function NationalMatchDetailPage({ params }: Props) {
         </span>
       </div>
 
-      {/* Win / Draw / Loss */}
-      <div className="card p-5 space-y-3">
-        <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
-          Win · Draw · Loss
-        </h2>
-        <WinProbabilityBars
+      {/* Rich analysis panel — the SAME component the club pages use: bookmaker
+          comparison + 1×2 + O/U + Poisson goals lines + team goals + correct
+          score + combos. Now that the national analysis returns poisson_stats,
+          it renders the full block. Upcoming matches only (needs live odds). */}
+      {!hasEnded && (
+        <MatchAnalysisPanel
+          matchId={prediction.id}
           homeTeam={prediction.home_team}
           awayTeam={prediction.away_team}
-          homeWin={prediction.home_win_prob}
-          draw={prediction.draw_prob}
-          awayWin={prediction.away_win_prob}
+          isNational
         />
-      </div>
-
-      {/* Goals */}
-      <div className="card p-5 space-y-3">
-        <div className="flex items-center justify-between">
-          <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
-            Goals · Over / Under 2.5
-          </h2>
-          <span
-            className={`badge font-semibold ${
-              prediction.over_2_5_prob > 0.5
-                ? "bg-orange-500/20 text-orange-400"
-                : "bg-sky-600/20 text-sky-400"
-            }`}
-          >
-            {prediction.over_2_5_prob > 0.5 ? "OVER" : "UNDER"} 2.5
-          </span>
-        </div>
-        <GoalsProbabilityBar overProb={prediction.over_2_5_prob} />
-      </div>
-
-      {/* BTTS */}
-      {prediction.btts_prob != null && (
-        <div className="card p-5 space-y-3">
-          <div className="flex items-center justify-between">
-            <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
-              GG / NG · Both Teams to Score
-            </h2>
-            <span
-              className={`badge font-semibold ${
-                prediction.btts_prob >= 0.5
-                  ? "bg-emerald-500/20 text-emerald-400"
-                  : "bg-rose-500/20 text-rose-400"
-              }`}
-            >
-              {prediction.btts_prob >= 0.5 ? "GG" : "NG"}
-            </span>
-          </div>
-          <BttsProbabilityBar bttsProb={prediction.btts_prob} />
-        </div>
       )}
 
-      {/* Elo ratings */}
-      {(prediction.h_elo != null || prediction.a_elo != null) && (
+      {/* Finished matches: the panel above is upcoming-only, so keep the bespoke
+          1×2 / goals / BTTS cards to show the settled numbers. */}
+      {hasEnded && (
+        <>
+          {/* Win / Draw / Loss */}
+          <div className="card p-5 space-y-3">
+            <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
+              Win · Draw · Loss
+            </h2>
+            <WinProbabilityBars
+              homeTeam={prediction.home_team}
+              awayTeam={prediction.away_team}
+              homeWin={prediction.home_win_prob}
+              draw={prediction.draw_prob}
+              awayWin={prediction.away_win_prob}
+            />
+          </div>
+
+          {/* Goals */}
+          <div className="card p-5 space-y-3">
+            <div className="flex items-center justify-between">
+              <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
+                Goals · Over / Under 2.5
+              </h2>
+              <span
+                className={`badge font-semibold ${
+                  prediction.over_2_5_prob > 0.5
+                    ? "bg-orange-500/20 text-orange-400"
+                    : "bg-sky-600/20 text-sky-400"
+                }`}
+              >
+                {prediction.over_2_5_prob > 0.5 ? "OVER" : "UNDER"} 2.5
+              </span>
+            </div>
+            <GoalsProbabilityBar overProb={prediction.over_2_5_prob} />
+          </div>
+
+          {/* BTTS */}
+          {prediction.btts_prob != null && (
+            <div className="card p-5 space-y-3">
+              <div className="flex items-center justify-between">
+                <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
+                  GG / NG · Both Teams to Score
+                </h2>
+                <span
+                  className={`badge font-semibold ${
+                    prediction.btts_prob >= 0.5
+                      ? "bg-emerald-500/20 text-emerald-400"
+                      : "bg-rose-500/20 text-rose-400"
+                  }`}
+                >
+                  {prediction.btts_prob >= 0.5 ? "GG" : "NG"}
+                </span>
+              </div>
+              <BttsProbabilityBar bttsProb={prediction.btts_prob} />
+            </div>
+          )}
+        </>
+      )}
+
+      {/* Elo ratings — upcoming matches get this from the shared analysis panel
+          above (same as club); here it's kept for FINISHED matches only. */}
+      {hasEnded && (prediction.h_elo != null || prediction.a_elo != null) && (
         <div className="card p-5 space-y-3">
           <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
             Elo Ratings
@@ -323,8 +343,10 @@ export default async function NationalMatchDetailPage({ params }: Props) {
         </div>
       )}
 
-      {/* Correct score — most likely scorelines */}
-      {prediction.top_scores && prediction.top_scores.length > 0 && (
+      {/* Correct score — most likely scorelines. Upcoming matches get this from
+          the rich panel above; here we keep the bespoke card for FINISHED games
+          because it carries the settlement verdict (πιάσαμε / top-6 / χάσαμε). */}
+      {hasEnded && prediction.top_scores && prediction.top_scores.length > 0 && (
         <div className="card p-5 space-y-3">
           <div className="flex items-center justify-between">
             <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
@@ -388,16 +410,6 @@ export default async function NationalMatchDetailPage({ params }: Props) {
 
       {/* Player props (scorer / SoT / assist) */}
       <PlayerPropsPanel teams={propTeams} />
-
-      {/* AI Analysis + bookmaker comparison — only for upcoming matches */}
-      {!hasEnded && (
-        <MatchAnalysisPanel
-          matchId={prediction.id}
-          homeTeam={prediction.home_team}
-          awayTeam={prediction.away_team}
-          isNational
-        />
-      )}
 
       <p className="text-xs text-gray-600 text-center px-4">
         Predictions are for entertainment only.

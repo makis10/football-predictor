@@ -183,6 +183,8 @@ export interface MatchAnalysis {
   suggested_market:  string | null;          // primary pick (backwards compat)
   suggested_markets: string[];               // ranked list, up to 2
   watch_markets?:    WatchMarket[];           // model edge, unproven — shadow-tracked
+  h_elo?:            number | null;           // Elo ratings (club + national)
+  a_elo?:            number | null;
   poisson_stats:     PoissonStats | null;    // extended stats from λ_home/λ_away
   has_odds_data:     boolean;
   has_injury_data:   boolean;
