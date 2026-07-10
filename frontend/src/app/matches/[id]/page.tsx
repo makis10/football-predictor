@@ -160,70 +160,75 @@ export default async function MatchDetailPage({ params }: Props) {
             </span>
           </div>
 
-          {/* Win/Draw/Loss */}
-          <div className="card p-5 space-y-3">
-            <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
-              Win · Draw · Loss
-            </h2>
-            <WinProbabilityBars
-              homeTeam={match.home_team}
-              awayTeam={match.away_team}
-              homeWin={prediction.win_probabilities.home_win}
-              draw={prediction.win_probabilities.draw}
-              awayWin={prediction.win_probabilities.away_win}
-            />
-          </div>
-
-          {/* Goals */}
-          <div className="card p-5 space-y-3">
-            <div className="flex items-center justify-between">
-              <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
-                Goals · Over / Under 2.5
-              </h2>
-              <span
-                className={`badge font-semibold ${
-                  prediction.goals.prediction === "OVER"
-                    ? "bg-orange-500/20 text-orange-400"
-                    : "bg-sky-600/20 text-sky-400"
-                }`}
-              >
-                {prediction.goals.prediction} 2.5
-              </span>
-            </div>
-            <GoalsProbabilityBar overProb={prediction.goals.over_2_5_probability} />
-          </div>
-
-          {/* GG / NG — Poisson-derived, loads with the fast prediction endpoint */}
-          {prediction.btts_prob != null && (
-            <div className="card p-5 space-y-3">
-              <div className="flex items-center justify-between">
-                <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
-                  GG / NG · Both Teams to Score
-                </h2>
-                <span
-                  className={`badge font-semibold ${
-                    prediction.btts_prob >= 0.5
-                      ? "bg-emerald-500/20 text-emerald-400"
-                      : "bg-rose-500/20 text-rose-400"
-                  }`}
-                >
-                  {prediction.btts_prob >= 0.5 ? "GG" : "NG"}
-                </span>
-              </div>
-              <BttsProbabilityBar bttsProb={prediction.btts_prob} />
-            </div>
-          )}
-
-          {/* Bookmaker comparison + Claude analysis — only for matches that
-              are still genuinely "upcoming".  Suppress after kickoff+2h so we
-              don't burn Claude / Odds-API credits re-analysing games that are
-              already decided, even if the result hasn't been scraped yet. */}
-          {!hasEnded && (
+          {/* Bookmaker comparison + Claude analysis + Elo/cards/corners/goals-lines.
+              This shared panel is the upcoming-match layout — identical to the
+              national page. It already renders Win·Draw·Loss, Over/Under and
+              GG/NG, so the standalone bars below are shown ONLY for finished
+              matches (where the panel is suppressed to save Claude/Odds credits).
+              Keeping both for upcoming would duplicate 1×2/OU and diverge from
+              the national layout. */}
+          {!hasEnded ? (
             <MatchAnalysisPanel
               matchId={id}
               homeTeam={match.home_team}
               awayTeam={match.away_team}
             />
+          ) : (
+            <>
+              {/* Win/Draw/Loss */}
+              <div className="card p-5 space-y-3">
+                <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
+                  Win · Draw · Loss
+                </h2>
+                <WinProbabilityBars
+                  homeTeam={match.home_team}
+                  awayTeam={match.away_team}
+                  homeWin={prediction.win_probabilities.home_win}
+                  draw={prediction.win_probabilities.draw}
+                  awayWin={prediction.win_probabilities.away_win}
+                />
+              </div>
+
+              {/* Goals */}
+              <div className="card p-5 space-y-3">
+                <div className="flex items-center justify-between">
+                  <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
+                    Goals · Over / Under 2.5
+                  </h2>
+                  <span
+                    className={`badge font-semibold ${
+                      prediction.goals.prediction === "OVER"
+                        ? "bg-orange-500/20 text-orange-400"
+                        : "bg-sky-600/20 text-sky-400"
+                    }`}
+                  >
+                    {prediction.goals.prediction} 2.5
+                  </span>
+                </div>
+                <GoalsProbabilityBar overProb={prediction.goals.over_2_5_probability} />
+              </div>
+
+              {/* GG / NG — Poisson-derived, loads with the fast prediction endpoint */}
+              {prediction.btts_prob != null && (
+                <div className="card p-5 space-y-3">
+                  <div className="flex items-center justify-between">
+                    <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
+                      GG / NG · Both Teams to Score
+                    </h2>
+                    <span
+                      className={`badge font-semibold ${
+                        prediction.btts_prob >= 0.5
+                          ? "bg-emerald-500/20 text-emerald-400"
+                          : "bg-rose-500/20 text-rose-400"
+                      }`}
+                    >
+                      {prediction.btts_prob >= 0.5 ? "GG" : "NG"}
+                    </span>
+                  </div>
+                  <BttsProbabilityBar bttsProb={prediction.btts_prob} />
+                </div>
+              )}
+            </>
           )}
 
           {/* Player props (scorer / SoT / assist) — shown when we've priced them */}

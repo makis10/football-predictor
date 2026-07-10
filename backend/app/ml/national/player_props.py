@@ -74,18 +74,33 @@ def load_club_form(db) -> dict[int, dict]:
     }
 
 
-def load_player_rates(db, as_of: date | None = None) -> dict[str, list[PlayerRate]]:
+def load_player_rates(
+    db, as_of: date | None = None, teams: list[str] | None = None
+) -> dict[str, list[PlayerRate]]:
     """Return {team: [PlayerRate, …]} from player_match_stats, recency+shrinkage.
 
     The shrinkage prior is the player's CLUB-season per-90 rate when available
     (so a low-cap player regresses toward his real club form, not a flat league
-    prior); otherwise the positional constants below."""
-    from sqlalchemy import text
+    prior); otherwise the positional constants below.
 
-    rows = db.execute(text(
-        "SELECT player_id, player_name, team, match_date, minutes, goals, shots_on, assists "
-        "FROM player_match_stats"
-    )).fetchall()
+    `teams` restricts the scan. Rates are computed per player independently, so
+    filtering changes nothing but the cost. The nightly national job wants every
+    team (teams=None); a single match page wants two — and the full table is
+    55k+ rows, which turned each club player-props request into a ~2.4 s pandas
+    groupby over data it then threw away.
+    """
+    from sqlalchemy import bindparam, text
+
+    sql = ("SELECT player_id, player_name, team, match_date, minutes, goals, shots_on, assists "
+           "FROM player_match_stats")
+    params: dict = {}
+    if teams:
+        stmt = text(sql + " WHERE team IN :teams").bindparams(
+            bindparam("teams", expanding=True))
+        params = {"teams": list(teams)}
+    else:
+        stmt = text(sql)
+    rows = db.execute(stmt, params).fetchall()
     if not rows:
         return {}
 

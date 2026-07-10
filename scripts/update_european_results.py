@@ -1,8 +1,9 @@
 """
 Update match results for leagues sourced from The Odds API.
 
-Covers: Greek Super League, Europa League, Conference League.
+Covers: Greek Super League.
 Champions League + domestic leagues are handled by update_results.py (football-data.org).
+CL / EL / ECL results now come from API-Football via fetch_european_fixtures.py.
 
 Safe to run multiple times (idempotent).
 
@@ -24,11 +25,12 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")
 
 ODDS_API_BASE = "https://api.the-odds-api.com/v4"
 
-# All leagues we source from The Odds API (not football-data.org)
+# Leagues we still score from The Odds API.
+# EL/ECL were removed: their sport keys go inactive outside the league phase and
+# never cover the qualifying rounds, so scores silently never arrived.
+# fetch_european_fixtures.py fills those results from API-Football instead.
 COMPETITIONS = {
     "GreekSL": "soccer_greece_super_league",
-    "EL":      "soccer_uefa_europa_league",
-    "ECL":     "soccer_uefa_europa_conference_league",
 }
 
 # Must match the mappings in fetch_greek_fixtures.py and fetch_european_fixtures.py

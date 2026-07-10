@@ -174,10 +174,22 @@ def _confidence(max_result_prob: float, over_prob: float = 0.5) -> str:
 LOW_CONFIDENCE_LEAGUES = {"ClubFriendly"}
 
 
-def confidence_for(league: "str | None", max_result_prob: float, over_prob: float = 0.5) -> str:
+def confidence_for(
+    league: "str | None",
+    max_result_prob: float,
+    over_prob: float = 0.5,
+    has_history: bool = True,
+) -> str:
     """League-aware confidence: forced 'low' for LOW_CONFIDENCE_LEAGUES,
-    otherwise the composite _confidence formula."""
-    if league in LOW_CONFIDENCE_LEAGUES:
+    otherwise the composite _confidence formula.
+
+    `has_history=False` also forces 'low'. A fixture where a side has no CSV
+    history (UEFA qualifying minnows: Vestri, Floriana, Inter Club d'Escaldes)
+    is predicted entirely from neutral default features, so every such tie
+    collapses onto the same handful of probabilities. Labelling that "medium" —
+    let alone "high" — would be dishonest.
+    """
+    if league in LOW_CONFIDENCE_LEAGUES or not has_history:
         return "low"
     return _confidence(max_result_prob, over_prob)
 

@@ -119,8 +119,11 @@ class PoissonStats(BaseModel):
 
 class WatchMarket(BaseModel):
     market:     str                       # "GG @ 2.33"
-    ev_pct:     float                     # model edge in pp, e.g. 21.2
-    market_pct: Optional[float] = None    # de-vigged bookmaker probability
+    # Expected value: return per unit staked (model_prob × odds − 1), e.g. 21.2 = +21.2%.
+    # NOT a probability and NOT percentage points — don't compare it to market_pct.
+    ev_pct:     float
+    model_pct:  Optional[float] = None    # our model's probability for this market
+    market_pct: Optional[float] = None    # de-vigged bookmaker probability (same units as model_pct)
 
 
 class AnalysisResponse(BaseModel):

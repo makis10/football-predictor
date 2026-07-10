@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.football-predictor.warmup</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>__PROJ_DIR__/scripts/run_warmup.sh</string>
+    </array>
+
+    <!-- Every 50 minutes: just under ANALYSIS_CACHE_TTL (1 h), so an entry is
+         re-primed before it expires and a visitor never hits a cold cache. -->
+    <key>StartInterval</key>
+    <integer>3000</integer>
+
+    <key>WorkingDirectory</key>
+    <string>__PROJ_DIR__</string>
+
+    <!-- Prime the cache as soon as the machine (or the job) comes up. -->
+    <key>RunAtLoad</key>
+    <true/>
+
+    <key>StandardOutPath</key>
+    <string>__LOG_DIR__/warmup-stdout.log</string>
+    <key>StandardErrorPath</key>
+    <string>__LOG_DIR__/warmup-stderr.log</string>
+</dict>
+</plist>

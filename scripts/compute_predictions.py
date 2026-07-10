@@ -195,6 +195,24 @@ print("Building team snapshot …", flush=True)
 snapshot = build_team_snapshot(history_df)
 print("Snapshot ready. Loading European data …", flush=True)
 
+# Teams absent from the Elo snapshot have no CSV history, so their features are
+# pure defaults (see confidence_for(has_history=...)). Mirrors the name mapping
+# compute_match_features applies before its own snapshot lookup.
+#
+# Frozen NOW, before the prediction loop: snapshot["elo"] is a defaultdict, and
+# compute_match_features reads elo[team] for every fixture — which silently
+# inserts unknown clubs with the 1500 default. Testing membership afterwards
+# would report every team as "known".
+from backend.app.ml.features import _SNAP_NAME_MAP  # noqa: E402
+
+_KNOWN_TEAMS = frozenset(snapshot.get("elo", {}))
+
+
+def _has_history(home: str, away: str) -> bool:
+    def known(t: str) -> bool:
+        return t in _KNOWN_TEAMS or _SNAP_NAME_MAP.get(t, t) in _KNOWN_TEAMS
+    return known(home) and known(away)
+
 european_df = load_european_data(EUROPEAN_DIR)
 print(f"European fixtures: {len(european_df) if european_df is not None else 0}", flush=True)
 
@@ -483,7 +501,8 @@ for i, (mid, home, away, match_date, league) in enumerate(match_snapshots, 1):
                 "over_2_5_prob":    round(over_p, 4),
                 "goals_prediction": goals_prediction,
                 "model_version":    MODEL_VERSION,
-                "confidence":       confidence_for(league, max_result_prob, over_p),
+                "confidence":       confidence_for(league, max_result_prob, over_p,
+                                                   has_history=_has_history(home, away)),
                 # Store bookmaker odds for ROI/EV tracking (NULL when unavailable)
                 "bm_home_odds":     live_odds.get("raw_home")     if live_odds else None,
                 "bm_draw_odds":     live_odds.get("raw_draw")     if live_odds else None,

@@ -1,20 +1,39 @@
 """
-Fetch upcoming UEFA competition fixtures (CL / EL / ECL) and add predictions.
+Fetch UEFA competition fixtures + results (CL / EL / ECL).
 
-Sources:
-  • Champions League  — European CSVs already downloaded by download_european.py
-                        (football-data.org free tier covers CL)
-  • Europa League     — The Odds API  (soccer_uefa_europa_league)
-  • Conference League — The Odds API  (soccer_uefa_europa_conference_league)
+Source: API-Football (leagues CL=2, EL=3, ECL=848).
+Ingest-only — predictions come from scripts/compute_predictions.py.
+
+Why not The Odds API (the previous source)
+------------------------------------------
+It cannot serve this competition family:
+  • `soccer_uefa_europa_league_qualification` and
+    `soccer_uefa_europa_conference_league_qualification` DO NOT EXIST as sport
+    keys (only the CL one does) — the old code requested them and silently got
+    404 → [].
+  • Worse, `{**ODDS_API_COMPETITIONS, **ODDS_API_QUALIFIERS}` shared the keys
+    "EL"/"ECL", so the merge OVERWROTE the two valid league-phase keys with the
+    non-existent qualifier keys — we never fetched the league phase either.
+  • Bookmakers don't price 1st-qualifying-round ties (Escaldes–Mornar), so the
+    sport stays inactive and returns no events regardless.
+Net effect: no CL/EL/ECL fixture entered the DB after May 2026, including the
+whole July qualifying programme. API-Football carries all of them, with scores.
+
+Ingestion rule (deliberate, protects the public ROI / accuracy tracker)
+----------------------------------------------------------------------
+  • UPCOMING fixtures are inserted and predicted — including ties where neither
+    club is in our training data (they get neutral default features).
+  • FINISHED fixtures only ever FILL IN the score of a row we already had, i.e.
+    one we predicted before kick-off. Past matches are never inserted, so we
+    can't retro-fit predictions onto a known result and inflate our stats.
 
 Team names are mapped to our domestic training-data names where possible.
-Teams not in our training data (Porto, Sporting CP, etc.) use default features;
-predictions for those matches are lower-quality but still show the
-domestic-league team's relative strength.
+Teams we have no history for (Vestri, Floriana, …) keep their API name and use
+default features; those predictions are low-quality by construction.
 
 Usage:
   docker compose exec backend python scripts/fetch_european_fixtures.py
-  docker compose exec backend python scripts/fetch_european_fixtures.py --no-predictions
+  docker compose exec backend python scripts/fetch_european_fixtures.py --days-ahead 21 --days-back 5
 """
 
 from __future__ import annotations
@@ -22,19 +41,24 @@ from __future__ import annotations
 import argparse
 import os
 import sys
-from datetime import date, datetime, timezone
-
-import pandas as pd
+from datetime import date, datetime, timedelta, timezone
 
 _PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 sys.path.insert(0, _PROJECT_ROOT)
 
 from scripts._http_retry import get_with_retry  # noqa: E402
+from scripts.team_resolver import same_club  # noqa: E402
 
-ODDS_API_KEY = os.getenv("ODDS_API_KEY", "")
-ODDS_API_BASE = "https://api.the-odds-api.com/v4"
+API_BASE = "https://v3.football.api-sports.io"
+API_KEY  = os.getenv("API_SPORTS_KEY", "")
+HEADERS  = {"x-apisports-key": API_KEY}
 
-EUROPEAN_DIR = os.path.join(_PROJECT_ROOT, "backend", "data", "european")
+# API-Football league ids. Qualifying rounds live under the SAME id as the
+# league phase (distinguished by league.round), so one call covers both.
+LEAGUE_IDS = {"CL": 2, "EL": 3, "ECL": 848}
+
+UPCOMING_STATUSES = {"NS", "TBD"}
+FINISHED_STATUSES = {"FT", "AET", "PEN", "WO", "AWD"}
 
 # ── Team name mappings: external name → our training-data name ────────────────
 # Only covers teams we have domestic data for. Unmapped teams keep their name;
@@ -58,23 +82,6 @@ TEAM_MAP: dict[str, str] = {
     # (Bayern Munich, Real Madrid, Arsenal, etc. already correct)
 }
 
-ODDS_API_COMPETITIONS = {
-    "EL":  "soccer_uefa_europa_league",
-    "ECL": "soccer_uefa_europa_conference_league",
-}
-
-# Qualification rounds (July–August, before the league phase). Mapped to the
-# SAME league code so they show under the existing filter. The Odds API only
-# activates a sport once odds are posted (~1–2 weeks out) — until then these
-# return [] harmlessly (fetch_odds_api_fixtures swallows 404s). Some seasons
-# the main keys above already carry quals; these catch the ones split out.
-ODDS_API_QUALIFIERS = {
-    "CL":  "soccer_uefa_champs_league_qualification",
-    "EL":  "soccer_uefa_europa_league_qualification",
-    "ECL": "soccer_uefa_europa_conference_league_qualification",
-}
-
-
 def map_team(name: str) -> str:
     return TEAM_MAP.get(name, name)
 
@@ -85,87 +92,137 @@ def infer_season(d: date) -> str:
     return f"{d.year - 1}/{str(d.year)[2:]}"
 
 
-# ── CL: read from European CSVs ───────────────────────────────────────────────
-
-def fetch_cl_fixtures() -> list[dict]:
-    """Read upcoming CL matches from the European data directory."""
-    frames = []
-    for fname in os.listdir(EUROPEAN_DIR):
-        if fname.startswith("CL_") and fname.endswith(".csv"):
-            try:
-                df = pd.read_csv(os.path.join(EUROPEAN_DIR, fname))
-                frames.append(df)
-            except Exception as e:
-                print(f"  [warn] Could not read {fname}: {e}")
-
-    if not frames:
-        print("  No CL CSV files found in", EUROPEAN_DIR)
-        return []
-
-    df = pd.concat(frames, ignore_index=True)
-    df["date"] = pd.to_datetime(df["date"])
-    today = pd.Timestamp(date.today())
-
-    # Upcoming = no score yet AND not Unknown (semi/final TBD)
-    upcoming = df[
-        (df["status"] != "FINISHED") &
-        (df["date"] >= today) &
-        (df["home_team"] != "Unknown") &
-        (df["away_team"] != "Unknown")
-    ].copy()
-
-    print(f"  CL: {len(upcoming)} upcoming fixture(s) from CSVs")
-    fixtures = []
-    for _, row in upcoming.iterrows():
-        match_date = row["date"].date()
-        fixtures.append({
-            "match_date": match_date,
-            "league":     "CL",
-            "home_team":  row["home_team"],
-            "away_team":  row["away_team"],
-            "season":     infer_season(match_date),
-        })
-    return fixtures
+def _api_season(d: date) -> int:
+    """API-Football keys a UEFA season by its starting year (July → June)."""
+    return d.year if d.month >= 7 else d.year - 1
 
 
-# ── EL / ECL: fetch from The Odds API ─────────────────────────────────────────
+def build_strict_resolver(known_teams: set[str]):
+    """Resolver for this competition family — see scripts/team_resolver.py."""
+    from scripts.team_resolver import build_resolver
 
-def fetch_odds_api_fixtures(league_code: str, sport_key: str, api_key: str) -> list[dict]:
-    """Fetch upcoming fixtures from The Odds API for a given competition."""
-    url = f"{ODDS_API_BASE}/sports/{sport_key}/events"
-    try:
-        resp = get_with_retry(url, params={"apiKey": api_key}, timeout=15)
-        resp.raise_for_status()
-        events = resp.json()
-        remaining = resp.headers.get("x-requests-remaining", "?")
-        print(f"  {league_code}: {len(events)} fixture(s) from The Odds API  (quota: {remaining})")
-    except Exception as e:
-        print(f"  {league_code}: ERROR fetching from Odds API — {e}")
-        return []
+    return build_resolver(known_teams, TEAM_MAP)
 
-    today = date.today()
-    fixtures = []
-    for event in events:
+
+# ── CL / EL / ECL: fetch from API-Football ────────────────────────────────────
+
+def fetch_api_football_fixtures(
+    league_code: str, league_id: int, window_from: date, window_to: date
+) -> list[dict]:
+    """Every fixture for one competition in the window (qualifiers included).
+
+    /fixtures is not paginated — one request per (league, season). A window that
+    straddles a season boundary (e.g. June→July) needs both seasons.
+    """
+    raw: list[dict] = []
+    for season in sorted({_api_season(window_from), _api_season(window_to)}):
+        params = {
+            "league": league_id, "season": season,
+            "from": window_from.isoformat(), "to": window_to.isoformat(),
+        }
         try:
-            dt = datetime.fromisoformat(event["commence_time"].replace("Z", "+00:00"))
-            dt_utc = dt.astimezone(timezone.utc)
-            match_date = dt_utc.date()
-            match_time = dt_utc.time().replace(microsecond=0)
+            resp = get_with_retry(f"{API_BASE}/fixtures", headers=HEADERS,
+                                  params=params, timeout=20)
+            resp.raise_for_status()
+            data = resp.json()
+        except Exception as e:
+            print(f"  {league_code}: ERROR fetching season {season} — {e}")
+            continue
+        if data.get("errors"):
+            print(f"  {league_code}: API error (season {season}): {data['errors']}")
+            continue
+        raw.extend(data.get("response", []))
+    print(f"  {league_code}: {len(raw)} fixture(s) from API-Football")
+    return raw
+
+
+def parse_fixtures(league_code: str, raw: list[dict], resolve) -> tuple[list[dict], list[dict]]:
+    """Split the API payload into (upcoming, finished) fixture dicts.
+
+    Unknown clubs keep their API name — we still price the tie (neutral default
+    features) rather than hiding it from the schedule."""
+    today = date.today()
+    upcoming: list[dict] = []
+    finished: list[dict] = []
+
+    for entry in raw:
+        fx = entry.get("fixture", {})
+        status = fx.get("status", {}).get("short", "")
+        try:
+            dt_utc = datetime.fromisoformat(fx["date"].replace("Z", "+00:00")).astimezone(timezone.utc)
         except Exception:
             continue
-        if match_date < today:
+
+        api_home = entry["teams"]["home"]["name"]
+        api_away = entry["teams"]["away"]["name"]
+
+        # A club against its own youth/reserve side is not a real match-up:
+        # both sides carry identical features, so the prediction is pure home
+        # advantage and the club's Elo would update against itself.
+        if same_club(api_home, api_away):
+            print(f"  [skip] {league_code}: '{api_home}' vs '{api_away}' — same club")
             continue
-        home = map_team(event["home_team"])
-        away = map_team(event["away_team"])
-        fixtures.append({
-            "match_date":   match_date,
-            "kickoff_time": match_time,
+
+        # Unresolved clubs keep their FULL API name, so two distinct clubs that
+        # share a town ("Lincoln United" / "Lincoln") stay distinct.
+        home = resolve(api_home) or map_team(api_home)
+        away = resolve(api_away) or map_team(api_away)
+        if home == away:
+            print(f"  [warn] {league_code}: '{api_home}' vs '{api_away}' both resolved "
+                  f"to '{home}' — skipped. Add one to TEAM_MAP.")
+            continue
+
+        base = {
+            "match_date":   dt_utc.date(),
+            "kickoff_time": dt_utc.time().replace(microsecond=0),
             "league":       league_code,
             "home_team":    home,
             "away_team":    away,
-            "season":       infer_season(match_date),
-        })
-    return fixtures
+            "season":       infer_season(dt_utc.date()),
+        }
+        if status in UPCOMING_STATUSES and dt_utc.date() >= today:
+            upcoming.append(base)
+        elif status in FINISHED_STATUSES:
+            goals = entry.get("goals", {})
+            if goals.get("home") is None or goals.get("away") is None:
+                continue
+            base["home_goals"] = int(goals["home"])
+            base["away_goals"] = int(goals["away"])
+            finished.append(base)
+    return upcoming, finished
+
+
+def update_results(db, played: list[dict]) -> int:
+    """Fill the score on rows we ALREADY have (result still NULL).
+
+    Never inserts. A match we failed to fetch before kick-off stays out of the
+    DB entirely, so it can't be retro-predicted into the accuracy/ROI tracker.
+    Date matched ±1 day to absorb timezone drift against API-Football."""
+    from sqlalchemy import select
+
+    from backend.app.models.match import Match
+
+    updated = 0
+    for f in played:
+        row = db.scalars(
+            select(Match).where(
+                Match.league    == f["league"],
+                Match.home_team == f["home_team"],
+                Match.away_team == f["away_team"],
+                Match.result.is_(None),
+                Match.match_date >= f["match_date"] - timedelta(days=1),
+                Match.match_date <= f["match_date"] + timedelta(days=1),
+            )
+        ).first()
+        if row is None:
+            continue
+        hg, ag = f["home_goals"], f["away_goals"]
+        row.home_goals, row.away_goals = hg, ag
+        row.result = "H" if hg > ag else ("A" if ag > hg else "D")
+        updated += 1
+        print(f"  ✓ {f['league']}: {f['home_team']} {hg}-{ag} {f['away_team']}")
+    db.commit()
+    return updated
 
 
 # ── DB helpers ────────────────────────────────────────────────────────────────
@@ -180,169 +237,64 @@ def insert_fixtures(db, fixtures: list[dict]) -> list:
     return new_matches
 
 
-def compute_predictions(new_matches: list, db):
-    import pandas as pd
-    from sqlalchemy.dialects.postgresql import insert as pg_insert
-    from backend.app.ml.features import load_raw_csvs, build_team_snapshot, compute_match_features, FEATURE_COLS
-    from backend.app.ml.predict import _get_models, MODEL_VERSION, confidence_for
-    from backend.app.models.prediction import Prediction
-    from backend.app.ml.odds_analysis_service import fetch_all_league_odds, _teams_match
-
-    RAW_DIR = os.path.join(_PROJECT_ROOT, "backend", "data", "raw")
-    print("  Loading history …", flush=True)
-    history_df = load_raw_csvs(RAW_DIR)
-    snapshot = build_team_snapshot(history_df)
-    result_model, goals_model = _get_models()
-
-    # Fetch live odds per European league (one call each; CL returns [])
-    eur_leagues = list({m.league for m in new_matches})
-    eur_league_odds: dict[str, list] = {}
-    for lg in eur_leagues:
-        games = fetch_all_league_odds(lg)
-        eur_league_odds[lg] = games
-        print(f"  {lg} live odds: {len(games)} games", flush=True)
-
-    def _lookup_eur_odds(league, home, away):
-        for entry in eur_league_odds.get(league, []):
-            if _teams_match(entry["api_home"], home) and _teams_match(entry["api_away"], away):
-                fp = entry["fair_probs"]
-                if fp.get("home_win") and fp.get("away_win"):
-                    return {"home_win": fp.get("home_win"), "draw": fp.get("draw"),
-                            "away_win": fp.get("away_win"), "over_2_5": fp.get("over_2_5")}
-        return None
-
-    DEFAULTS = {
-        "h_goals_scored_5": 1.5, "h_goals_conceded_5": 1.5,
-        "a_goals_scored_5": 1.5, "a_goals_conceded_5": 1.5,
-        "h_home_scored_5": 1.5, "h_home_conceded_5": 1.5,
-        "a_away_scored_5": 1.5, "a_away_conceded_5": 1.5,
-        "h_form_5": 1.0, "a_form_5": 1.0,
-        "h_goals_scored_10": 1.5, "h_goals_conceded_10": 1.5,
-        "a_goals_scored_10": 1.5, "a_goals_conceded_10": 1.5,
-        "h_home_scored_10": 1.5, "h_home_conceded_10": 1.5,
-        "a_away_scored_10": 1.5, "a_away_conceded_10": 1.5,
-        "h_form_10": 1.0, "a_form_10": 1.0,
-        "h_goal_diff_5": 0.0, "a_goal_diff_5": 0.0,
-        "h_goal_diff_10": 0.0, "a_goal_diff_10": 0.0,
-        "expected_home_goals_5": 1.5, "expected_away_goals_5": 1.5, "expected_goals_5": 3.0,
-        "expected_home_goals_10": 1.5, "expected_away_goals_10": 1.5, "expected_goals_10": 3.0,
-        "h_total_goals_5": 3.0, "a_total_goals_5": 3.0,
-        "h_total_goals_10": 3.0, "a_total_goals_10": 3.0,
-        "h_over25_rate_5": 0.5, "a_over25_rate_5": 0.5,
-        "h_over25_rate_10": 0.5, "a_over25_rate_10": 0.5,
-        "h_shots_ot_5": 0.0, "h_shots_otc_5": 0.0,
-        "a_shots_ot_5": 0.0, "a_shots_otc_5": 0.0,
-        "h_xg_scored_5": 1.35,   "h_xg_conceded_5": 1.35,
-        "a_xg_scored_5": 1.35,   "a_xg_conceded_5": 1.35,
-        "h_xg_scored_10": 1.35,  "h_xg_conceded_10": 1.35,
-        "a_xg_scored_10": 1.35,  "a_xg_conceded_10": 1.35,
-        "market_home_prob": 0.44, "market_draw_prob": 0.27,
-        "market_away_prob": 0.29, "market_over_prob": 0.52,
-        "h_elo": 1500.0, "a_elo": 1500.0,
-        "elo_diff": 0.0, "elo_home_win_prob": 0.5,
-        "h_pi_att": 0.0, "h_pi_def": 0.0,
-        "a_pi_att": 0.0, "a_pi_def": 0.0,
-        "pi_att_diff": 0.0, "pi_def_diff": 0.0,
-        "pi_exp_home": 1.5, "pi_exp_away": 1.5,
-        "pi_exp_diff": 0.0, "pi_exp_total": 3.0,
-        "h2h_home_wins": 0, "h2h_away_wins": 0, "h2h_draws": 0,
-        "h_eur_fatigue": 0.0, "a_eur_fatigue": 0.0,
-        "h_eur_away": 0.0, "a_eur_away": 0.0,
-        "h_eur_result": 0.0, "a_eur_result": 0.0,
-    }
-
-    inserted = 0
-    for match in new_matches:
-        try:
-            live_odds = _lookup_eur_odds(match.league, match.home_team, match.away_team)
-            feats = compute_match_features(
-                snapshot,
-                match.home_team,
-                match.away_team,
-                match.league,
-                match.match_date,
-                european_df=None,
-                market_probs=live_odds,
-            )
-            feat_row = pd.DataFrame([feats])[FEATURE_COLS].fillna(DEFAULTS)
-
-            result_probs = result_model.predict_proba(feat_row)[0]
-            home_win_p = float(result_probs[0])
-            draw_p     = float(result_probs[1])
-            away_win_p = float(result_probs[2])
-
-            goals_probs = goals_model.predict_proba(feat_row)[0]
-            over_p      = float(goals_probs[1])
-            goals_pred  = "OVER" if over_p >= 0.5 else "UNDER"
-            max_prob    = max(home_win_p, draw_p, away_win_p)
-
-            stmt = pg_insert(Prediction).values(
-                match_id=match.id,
-                home_win_prob=round(home_win_p, 4),
-                draw_prob=round(draw_p, 4),
-                away_win_prob=round(away_win_p, 4),
-                over_2_5_prob=round(over_p, 4),
-                goals_prediction=goals_pred,
-                model_version=MODEL_VERSION,
-                confidence=confidence_for(match.league, max_prob, over_p),
-            ).on_conflict_do_nothing(index_elements=["match_id"])
-            db.execute(stmt)
-            inserted += 1
-            print(f"    ✓ {match.home_team} vs {match.away_team} ({match.league})", flush=True)
-        except Exception as e:
-            print(f"    [warn] {match.home_team} vs {match.away_team}: {e}")
-
-    db.commit()
-    print(f"  Predictions: {inserted} / {len(new_matches)} computed")
+# NOTE: this module used to carry its own `compute_predictions()` (a stripped
+# copy of scripts/compute_predictions.py). It silently produced ZERO predictions
+# after the market-independence refactor — it fed the model FEATURE_COLS while
+# the retrained model expects RESULT_FEATURE_COLS / GOALS_FEATURE_COLS — and
+# even when working it skipped calibration, the draw/BTTS specialists and the
+# Poisson λ (so match pages lost Goals Lines / GG-NG). It is gone: predictions
+# for every league, this one included, come from scripts/compute_predictions.py.
 
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Fetch upcoming CL / EL / ECL fixtures and compute predictions"
+        description="Fetch CL / EL / ECL fixtures + results (API-Football)"
     )
-    parser.add_argument(
-        "--odds-key",
-        default=os.getenv("ODDS_API_KEY", ""),
-        help="The Odds API key for EL/ECL (or set ODDS_API_KEY in .env)",
-    )
-    parser.add_argument(
-        "--no-predictions", action="store_true",
-        help="Skip ML prediction computation",
-    )
+    parser.add_argument("--days-ahead", type=int, default=21,
+                        help="How far ahead to look for upcoming ties (default 21)")
+    parser.add_argument("--days-back", type=int, default=5,
+                        help="How far back to look for finished ties to score (default 5)")
     args = parser.parse_args()
+
+    if not API_KEY:
+        print("ERROR: API_SPORTS_KEY not set in environment.")
+        sys.exit(1)
+
+    today = date.today()
+    window_from = today - timedelta(days=args.days_back)
+    window_to   = today + timedelta(days=args.days_ahead)
+
+    # Reuse the friendlies fetcher's training-data name list (lazy import keeps
+    # module import cheap), but resolve with our own stricter matcher.
+    from scripts.fetch_club_friendlies import _known_teams
+
+    print(f"Fetching CL / EL / ECL fixtures {window_from} → {window_to} …")
+    print("Loading training-data team names …")
+    resolve = build_strict_resolver(_known_teams())
 
     from backend.app.database import SessionLocal
     db = SessionLocal()
 
     all_new: list = []
+    total_scored = 0
 
     try:
-        # ── Champions League (from European CSVs) ──────────────────────────────
-        print("\nFetching Champions League fixtures …")
-        cl_fixtures = fetch_cl_fixtures()
-        if cl_fixtures:
-            new = insert_fixtures(db, cl_fixtures)
-            all_new.extend(new)
+        for code, league_id in LEAGUE_IDS.items():
+            print(f"\n{code} (API-Football league {league_id}) …")
+            raw = fetch_api_football_fixtures(code, league_id, window_from, window_to)
+            if not raw:
+                continue
+            upcoming, finished = parse_fixtures(code, raw, resolve)
+            print(f"  {len(upcoming)} upcoming / {len(finished)} finished")
 
-        # ── Europa League + Conference League + qualifiers (The Odds API) ──────
-        if args.odds_key:
-            for code, sport_key in {**ODDS_API_COMPETITIONS, **ODDS_API_QUALIFIERS}.items():
-                print(f"\nFetching {code} fixtures ({sport_key}) …")
-                fixtures = fetch_odds_api_fixtures(code, sport_key, args.odds_key)
-                if fixtures:
-                    new = insert_fixtures(db, fixtures)
-                    all_new.extend(new)
-        else:
-            print("\n[skip] EL/ECL: no ODDS_API_KEY available")
+            if upcoming:
+                all_new.extend(insert_fixtures(db, upcoming))
+            if finished:
+                total_scored += update_results(db, finished)
 
-        # ── Compute predictions ────────────────────────────────────────────────
-        if all_new and not args.no_predictions:
-            print(f"\nComputing predictions for {len(all_new)} new fixture(s) …")
-            compute_predictions(all_new, db)
-        elif args.no_predictions:
-            print("\nSkipping predictions (--no-predictions).")
-        else:
-            print("\nNo new fixtures inserted.")
+        print(f"\n{total_scored} result(s) written onto fixtures we already had.")
+        print(f"{len(all_new)} new fixture(s) inserted. Run scripts/compute_predictions.py "
+              f"to price them (run_daily does this in step 6).")
 
     finally:
         db.close()

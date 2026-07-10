@@ -116,13 +116,15 @@ docker compose exec -T backend \
         --no-predictions \
     2>&1 | tee -a "$LOG" || overall_failed=1
 
-# ── 5. Refresh European fixtures (CL from CSVs, EL/ECL from Odds API) ────────
+# ── 5. Refresh European fixtures (CL/EL/ECL, incl. qualifiers — API-Football) ─
+# Ingest-only: upcoming ties are inserted and finished ones get their score.
+# Predictions come from step 6 (compute_predictions.py), the single canonical
+# path — it calibrates, runs the draw/BTTS specialists and stores the Poisson λ.
 echo "" >> "$LOG"
 echo "[5/6] Refreshing European fixtures (CL/EL/ECL) …" | tee -a "$LOG"
 docker compose exec -T backend \
     python scripts/fetch_european_fixtures.py \
-        --odds-key "${ODDS_API_KEY:-}" \
-        --no-predictions \
+        --days-ahead 21 --days-back 5 \
     2>&1 | tee -a "$LOG" || overall_failed=1
 
 # ── 5b. Refresh club friendlies (API-Football league 667) ────────────────────
@@ -356,6 +358,18 @@ fi
 echo "" >> "$LOG"
 echo "[9/9] Clearing stats cache …" | tee -a "$LOG"
 curl -s -X POST "${_ADMIN_HDR[@]}" http://localhost:8000/stats/cache/clear >> "$LOG" 2>&1 || true
+
+# Re-prime the analysis cache. Today's recomputed predictions produce new model
+# probabilities, and those probabilities are part of the analysis cache key — so
+# every entry warmed before this run is now unreachable. Without this the first
+# visitor of the morning pays the cold Groq + odds fetch on every fixture.
+# (The 50-minute warm-up job keeps it warm from here on.)
+echo "" >> "$LOG"
+echo "[9b/9] Warming analysis cache …" | tee -a "$LOG"
+docker compose exec -T backend \
+    python scripts/warmup_analysis.py --days 2 \
+    2>&1 | tee -a "$LOG" || echo "  [warn] warm-up failed — pages still work, just cold" | tee -a "$LOG"
+
 echo "" >> "$LOG"
 echo "Daily run complete at $(date '+%Y-%m-%d %H:%M:%S')" | tee -a "$LOG"
 

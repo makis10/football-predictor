@@ -50,6 +50,7 @@ _PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 sys.path.insert(0, _PROJECT_ROOT)
 
 from scripts._http_retry import get_with_retry  # noqa: E402
+from scripts.team_resolver import same_club  # noqa: E402
 
 API_BASE = "https://v3.football.api-sports.io"
 API_KEY  = os.getenv("API_SPORTS_KEY", "")
@@ -61,10 +62,9 @@ FRIENDLIES_CLUBS_LEAGUE_ID = 667   # API-Football "Friendlies Clubs"
 UPCOMING_STATUSES = {"NS", "TBD"}
 FINISHED_STATUSES = {"FT", "AET", "PEN", "WO", "AWD"}
 
-# API-Football name → our training-data name, for spellings the fuzzy
-# resolver can't bridge (short slugs like "AEK" are protected from substring
-# matching by _teams_match's ≥4-char guard). Extend this map whenever the
-# run log prints an "unresolved" warning for a team we do have history for.
+# API-Football name → our training-data name, for spellings the resolver can't
+# bridge on its own. Extend this map whenever the run log prints an
+# "unresolved" warning for a team we do have history for.
 TEAM_MAP: dict[str, str] = {
     "AEK Athens":         "AEK",
     "AEK Athens FC":      "AEK",
@@ -72,6 +72,12 @@ TEAM_MAP: dict[str, str] = {
     "Olympiakos Piraeus": "Olympiakos",
     "PAOK Thessaloniki":  "PAOK",
     "Volos NPS":          "Volos NFC",
+    # League clubs whose API name carries a suffix our CSVs drop. These used to
+    # resolve by substring containment — which ALSO (wrongly) matched their
+    # non-league neighbours "Cambridge City" / "Peterborough Sports", collapsing
+    # both sides of a fixture onto one name. Now stated explicitly.
+    "Cambridge United":   "Cambridge",
+    "Peterborough":       "Peterboro",
 }
 
 
@@ -115,66 +121,19 @@ def fetch_friendlies(window_from: date, window_to: date) -> list[dict]:
 # ── Team-name resolution against training data ───────────────────────────────
 
 def _build_resolver(known_teams: set[str]):
+    """Return resolve(api_name) -> our training-data name, or None.
+
+    Thin wrapper over the shared resolver. It used to match by substring
+    containment, which collapsed distinct clubs onto one name:
+        "Lincoln United"   → "Lincoln"   (two different Lincoln clubs)
+        "Plymouth Parkway" → "Plymouth"  (Argyle)
+        "Cambridge City"   → "Cambridge" (United)
+    We stored the resulting "Lincoln vs Lincoln" self-fixtures with a phantom
+    prediction. Unresolved clubs now keep their full API name instead.
     """
-    Return resolve(api_name) -> our training-data name, or None.
+    from scripts.team_resolver import build_resolver
 
-    Scored candidate search so "Manchester United" can't half-match
-    "Man City" via a shared prefix: longest exact/alias/substring evidence
-    wins; ties are treated as ambiguous and skipped (with a warning).
-    """
-    from difflib import SequenceMatcher
-
-    from backend.app.ml.odds_analysis_service import _ALIASES, _slug
-
-    # known slug → known name (exact-slug fast path)
-    slug_to_name = {_slug(t): t for t in known_teams}
-    cache: dict[str, str | None] = {}
-
-    def resolve(api_name: str) -> str | None:
-        if api_name in cache:
-            return cache[api_name]
-        result = _resolve(api_name)
-        cache[api_name] = result
-        return result
-
-    def _resolve(api_name: str) -> str | None:
-        if api_name in TEAM_MAP:
-            return TEAM_MAP[api_name]
-        api_slug = _slug(api_name)
-        if api_slug in slug_to_name:
-            return slug_to_name[api_slug]
-
-        # Score every known team by the strongest piece of matching evidence.
-        scored: list[tuple[float, str]] = []
-        for team in known_teams:
-            team_slug = _slug(team)
-            best = 0.0
-            # Full containment either way (≥5 chars so "roma" can't hijack).
-            for a, b in ((api_slug, team_slug), (team_slug, api_slug)):
-                if len(b) >= 5 and b in a:
-                    best = max(best, 50.0 + len(b))
-            # Alias containment ("olympiquelyonnais" in api slug → Lyon).
-            for alias in _ALIASES.get(team, []):
-                if len(alias) >= 5 and alias in api_slug:
-                    best = max(best, 50.0 + len(alias))
-            # Spelling drift ("Espanyol" vs "Espanol").
-            ratio = SequenceMatcher(None, api_slug, team_slug).ratio()
-            if ratio >= 0.87:
-                best = max(best, 40.0 + ratio * 10)
-            if best > 0:
-                scored.append((best, team))
-
-        if not scored:
-            return None
-        scored.sort(reverse=True)
-        if len(scored) > 1 and scored[0][0] == scored[1][0]:
-            print(f"  [warn] '{api_name}' ambiguous between "
-                  f"'{scored[0][1]}' and '{scored[1][1]}' — skipped. "
-                  f"Add it to TEAM_MAP in {os.path.basename(__file__)}.")
-            return None
-        return scored[0][1]
-
-    return resolve
+    return build_resolver(known_teams, TEAM_MAP)
 
 
 def _known_teams() -> set[str]:
@@ -232,7 +191,8 @@ def main():
                         help="Keep fixtures where only ONE team is in our training data "
                              "(default: both teams must be known)")
     parser.add_argument("--no-predictions", action="store_true",
-                        help="Skip ML prediction computation")
+                        help="No-op, kept for compatibility: this script no longer "
+                             "predicts. compute_predictions.py is the only path.")
     args = parser.parse_args()
 
     if not API_KEY:
@@ -256,6 +216,7 @@ def main():
     upcoming: list[dict] = []
     played:   list[dict] = []
     skipped_unknown = 0
+    skipped_same_club = 0
     unresolved_names: set[str] = set()
 
     for entry in raw:
@@ -269,6 +230,15 @@ def main():
 
         api_home = entry["teams"]["home"]["name"]
         api_away = entry["teams"]["away"]["name"]
+
+        # A club against its own youth/reserve side ("Fiorentina" vs
+        # "Fiorentina U20") is not a real match-up: identical features on both
+        # sides make the prediction pure home advantage, and the club's Elo
+        # would update against itself.
+        if same_club(api_home, api_away):
+            skipped_same_club += 1
+            continue
+
         home = resolve(api_home)
         away = resolve(api_away)
         if home is None:
@@ -281,10 +251,14 @@ def main():
         if n_known < required:
             skipped_unknown += 1
             continue
-        # --allow-unknown: the unknown side keeps its API name; the feature
+        # --allow-unknown: the unknown side keeps its FULL API name; the feature
         # engine gives it neutral defaults (same as unmapped EL/ECL teams).
         home = home or api_home
         away = away or api_away
+        if home == away:
+            print(f"  [warn] '{api_home}' vs '{api_away}' both resolved to "
+                  f"'{home}' — skipped. Add one to TEAM_MAP.")
+            continue
 
         base = {
             "match_date":   dt_utc.date(),
@@ -306,7 +280,8 @@ def main():
 
     print(f"  {len(upcoming)} upcoming / {len(played)} finished with both teams known"
           f"{' (or one, --allow-unknown)' if args.allow_unknown else ''}; "
-          f"{skipped_unknown} skipped (unknown teams)")
+          f"{skipped_unknown} skipped (unknown teams); "
+          f"{skipped_same_club} skipped (club vs its own youth/reserve side)")
     if unresolved_names:
         sample = ", ".join(sorted(unresolved_names)[:15])
         print(f"  Unresolved team names ({len(unresolved_names)}): {sample}"
@@ -328,14 +303,12 @@ def main():
         n_res = update_results(db, played)
         print(f"  {n_res} result(s) written")
 
-        if new_matches and not args.no_predictions:
-            print(f"\nComputing predictions for {len(new_matches)} new fixture(s) …")
-            # Shared cross-league path (default features for missing history,
-            # no odds). confidence_for() forces "low" for ClubFriendly.
-            from scripts.fetch_european_fixtures import compute_predictions
-            compute_predictions(new_matches, db)
-        elif args.no_predictions:
-            print("\nSkipping predictions (--no-predictions).")
+        if new_matches:
+            print(f"\n{len(new_matches)} new fixture(s) inserted. Run "
+                  f"scripts/compute_predictions.py to price them (run_daily "
+                  f"does this in step 6). confidence_for() forces 'low' for "
+                  f"ClubFriendly, and no odds are quoted, so they never enter "
+                  f"value-bet suggestions.")
     finally:
         db.close()
 

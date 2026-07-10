@@ -170,80 +170,6 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
 
   return (
    <div className="space-y-4">
-    {/* Elo ratings — shown for both club & national once the analysis carries
-        them, so both detail pages present the same block. */}
-    {(data.h_elo != null || data.a_elo != null) && (
-      <div className="card p-5">
-        <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-3">
-          Elo Ratings
-        </h2>
-        <div className="flex items-center justify-between gap-4">
-          <div className="text-left">
-            <p className="text-2xl font-bold text-gray-100 tabular-nums">
-              {data.h_elo != null ? Math.round(data.h_elo) : "—"}
-            </p>
-            <p className="text-xs text-gray-500">{homeTeam}</p>
-          </div>
-          <span className="text-xs text-gray-600">vs</span>
-          <div className="text-right">
-            <p className="text-2xl font-bold text-gray-100 tabular-nums">
-              {data.a_elo != null ? Math.round(data.a_elo) : "—"}
-            </p>
-            <p className="text-xs text-gray-500">{awayTeam}</p>
-          </div>
-        </div>
-      </div>
-    )}
-
-    {/* Expected cards — team props (club + national), same block both pages. */}
-    {(data.exp_home_cards != null || data.exp_away_cards != null) && (
-      <div className="card p-5">
-        <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-3">
-          🟨 Expected Cards
-        </h2>
-        <div className="flex items-center justify-between gap-4">
-          <div className="text-left">
-            <p className="text-2xl font-bold text-gray-100 tabular-nums">{data.exp_home_cards?.toFixed(1) ?? "—"}</p>
-            <p className="text-xs text-gray-500">{homeTeam}</p>
-          </div>
-          <span className="text-xs text-gray-600 tabular-nums">
-            total ≈ {((data.exp_home_cards ?? 0) + (data.exp_away_cards ?? 0)).toFixed(1)}
-          </span>
-          <div className="text-right">
-            <p className="text-2xl font-bold text-gray-100 tabular-nums">{data.exp_away_cards?.toFixed(1) ?? "—"}</p>
-            <p className="text-xs text-gray-500">{awayTeam}</p>
-          </div>
-        </div>
-      </div>
-    )}
-
-    {/* Expected corners — team props (club + national). */}
-    {(data.exp_home_corners != null || data.exp_away_corners != null) && (
-      <div className="card p-5">
-        <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-3">
-          🚩 Expected Corners
-        </h2>
-        <div className="flex items-center justify-between gap-4">
-          <div className="text-left">
-            <p className="text-2xl font-bold text-gray-100 tabular-nums">{data.exp_home_corners?.toFixed(1) ?? "—"}</p>
-            <p className="text-xs text-gray-500">{homeTeam}</p>
-          </div>
-          <span className="text-xs text-gray-600 tabular-nums">
-            total ≈ {((data.exp_home_corners ?? 0) + (data.exp_away_corners ?? 0)).toFixed(1)}
-          </span>
-          <div className="text-right">
-            <p className="text-2xl font-bold text-gray-100 tabular-nums">{data.exp_away_corners?.toFixed(1) ?? "—"}</p>
-            <p className="text-xs text-gray-500">{awayTeam}</p>
-          </div>
-        </div>
-        {data.corners_over_9_5_prob != null && (
-          <p className="text-center text-xs text-gray-500 mt-2">
-            Over 9.5 corners: {Math.round(data.corners_over_9_5_prob * 100)}%
-          </p>
-        )}
-      </div>
-    )}
-
     <div className="card p-5 space-y-4">
       {/* Header */}
       <div className="flex items-center justify-between">
@@ -733,9 +659,14 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
               {data.watch_markets.map((w) => (
                 <span key={w.market} className="inline-flex items-center gap-1.5 text-sm text-amber-300/90">
                   <span className="font-medium">{w.market}</span>
+                  {/* EV is return-per-stake; model/market are probabilities. Never mix them. */}
                   <span className="text-amber-500 text-xs">
-                    (μοντέλο {w.ev_pct >= 0 ? "+" : ""}{w.ev_pct.toFixed(0)}%
-                    {w.market_pct != null ? ` vs αγορά ${Math.round(w.market_pct)}%` : ""})
+                    (EV {w.ev_pct >= 0 ? "+" : ""}{w.ev_pct.toFixed(0)}%
+                    {w.model_pct != null && w.market_pct != null
+                      ? ` · μοντέλο ${Math.round(w.model_pct)}% vs αγορά ${Math.round(w.market_pct)}%`
+                      : w.market_pct != null
+                        ? ` · αγορά ${Math.round(w.market_pct)}%`
+                        : ""})
                   </span>
                 </span>
               ))}
@@ -756,6 +687,83 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
         </p>
       )}
     </div>
+
+    {/* Bookmaker comparison + goal stats lead. Cards, corners and Elo follow as
+        supporting context. Same order on the club and national pages. */}
+
+    {/* Expected cards — team props (club + national), same block both pages. */}
+    {(data.exp_home_cards != null || data.exp_away_cards != null) && (
+      <div className="card p-5">
+        <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-3">
+          🟨 Expected Cards
+        </h2>
+        <div className="flex items-center justify-between gap-4">
+          <div className="text-left">
+            <p className="text-2xl font-bold text-gray-100 tabular-nums">{data.exp_home_cards?.toFixed(1) ?? "—"}</p>
+            <p className="text-xs text-gray-500">{homeTeam}</p>
+          </div>
+          <span className="text-xs text-gray-600 tabular-nums">
+            total ≈ {((data.exp_home_cards ?? 0) + (data.exp_away_cards ?? 0)).toFixed(1)}
+          </span>
+          <div className="text-right">
+            <p className="text-2xl font-bold text-gray-100 tabular-nums">{data.exp_away_cards?.toFixed(1) ?? "—"}</p>
+            <p className="text-xs text-gray-500">{awayTeam}</p>
+          </div>
+        </div>
+      </div>
+    )}
+
+    {/* Expected corners — team props (club + national). */}
+    {(data.exp_home_corners != null || data.exp_away_corners != null) && (
+      <div className="card p-5">
+        <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-3">
+          🚩 Expected Corners
+        </h2>
+        <div className="flex items-center justify-between gap-4">
+          <div className="text-left">
+            <p className="text-2xl font-bold text-gray-100 tabular-nums">{data.exp_home_corners?.toFixed(1) ?? "—"}</p>
+            <p className="text-xs text-gray-500">{homeTeam}</p>
+          </div>
+          <span className="text-xs text-gray-600 tabular-nums">
+            total ≈ {((data.exp_home_corners ?? 0) + (data.exp_away_corners ?? 0)).toFixed(1)}
+          </span>
+          <div className="text-right">
+            <p className="text-2xl font-bold text-gray-100 tabular-nums">{data.exp_away_corners?.toFixed(1) ?? "—"}</p>
+            <p className="text-xs text-gray-500">{awayTeam}</p>
+          </div>
+        </div>
+        {data.corners_over_9_5_prob != null && (
+          <p className="text-center text-xs text-gray-500 mt-2">
+            Over 9.5 corners: {Math.round(data.corners_over_9_5_prob * 100)}%
+          </p>
+        )}
+      </div>
+    )}
+
+    {/* Elo ratings — shown for both club & national once the analysis carries
+        them, so both detail pages present the same block. */}
+    {(data.h_elo != null || data.a_elo != null) && (
+      <div className="card p-5">
+        <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-3">
+          Elo Ratings
+        </h2>
+        <div className="flex items-center justify-between gap-4">
+          <div className="text-left">
+            <p className="text-2xl font-bold text-gray-100 tabular-nums">
+              {data.h_elo != null ? Math.round(data.h_elo) : "—"}
+            </p>
+            <p className="text-xs text-gray-500">{homeTeam}</p>
+          </div>
+          <span className="text-xs text-gray-600">vs</span>
+          <div className="text-right">
+            <p className="text-2xl font-bold text-gray-100 tabular-nums">
+              {data.a_elo != null ? Math.round(data.a_elo) : "—"}
+            </p>
+            <p className="text-xs text-gray-500">{awayTeam}</p>
+          </div>
+        </div>
+      </div>
+    )}
    </div>
   );
 }

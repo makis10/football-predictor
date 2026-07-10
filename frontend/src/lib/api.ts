@@ -168,8 +168,11 @@ export interface PoissonStats {
 
 export interface WatchMarket {
   market:      string;             // "GG @ 2.33"
-  ev_pct:      number;             // model edge, e.g. 21.2
-  market_pct:  number | null;      // de-vigged bookmaker probability
+  /** Expected value: return per unit staked (model_prob × odds − 1), e.g. 21.2 = +21.2%.
+   *  NOT a probability — never render it alongside market_pct as if it were one. */
+  ev_pct:      number;
+  model_pct:   number | null;      // our model's probability for this market
+  market_pct:  number | null;      // de-vigged bookmaker probability (same units as model_pct)
 }
 
 export interface MatchAnalysis {

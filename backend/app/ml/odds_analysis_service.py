@@ -597,7 +597,14 @@ def _format_injuries(injury_data: Optional[dict], home_team: str, away_team: str
 
 
 # TTLs (seconds) — Redis handles expiry natively, no timestamp bookkeeping needed.
-CACHE_TTL      = 1800   # 30 min — Groq analysis
+#
+# The analysis TTL also sets how often scripts/warmup_analysis.py has to pay for
+# a Groq call: the warm-up re-primes each entry once per expiry, so the daily
+# LLM spend is (86400 / CACHE_TTL) × upcoming_fixtures. At 30 min that was ~800
+# calls/day for ~17 fixtures; 1 h halves it. The cost of the longer TTL is odds
+# freshness inside the analysis panel (≤ 1 h stale), and the bookmaker odds it
+# quotes were never fresher than LEAGUE_ODDS_TTL anyway.
+CACHE_TTL      = int(os.getenv("ANALYSIS_CACHE_TTL", "3600"))  # 1 h — Groq analysis
 LEAGUE_ODDS_TTL = 1800  # 30 min — league odds batch
 
 # Don't suggest a market when bookmakers price it below this probability.
@@ -1390,10 +1397,26 @@ def _watch_markets(
         ok = _ODDS_KEY.get(m, "")
         out.append({
             "market":     _fmt_market(m, raw_odds),
+            # EV = return per unit staked (prob × odds − 1). NOT a probability —
+            # keep it distinct from model_pct/market_pct, which are probabilities.
             "ev_pct":     round(q[m] * 100, 1),
+            "model_pct":  _model_prob_pct(m, model_probs),
             "market_pct": round((fair_probs or {}).get(ok, 0) * 100, 1) if fair_probs else None,
         })
     return out
+
+
+def _model_prob_pct(market: str, model_probs: Optional[dict]) -> Optional[float]:
+    """Our model's probability (%) for a market — the like-for-like counterpart
+    of the de-vigged market_pct. Under 2.5 / NG are complements."""
+    if not model_probs:
+        return None
+    p = model_probs.get(_MARKET_MODEL_KEY.get(market, ""))
+    if p is None:
+        return None
+    if market in ("Under 2.5", "NG"):
+        p = 1.0 - p
+    return round(float(p) * 100, 1)
 
 
 def _best_ev_market(
@@ -1503,7 +1526,15 @@ def _get_llm_analysis(
     # name them and explain they're being tracked, not yet trusted to stake.
     watch_section = ""
     if watch_markets:
-        items = ", ".join(f"{w['market']} (model edge {w['ev_pct']:+.0f}%)" for w in watch_markets)
+        # EV is return-per-stake, not a probability — state both so the LLM
+        # doesn't narrate "the model gives it 55%" when 55% is the EV.
+        items = ", ".join(
+            f"{w['market']} (EV {w['ev_pct']:+.0f}% per unit staked; model "
+            f"{w['model_pct']:.0f}% vs market {w['market_pct']:.0f}%)"
+            if w.get("model_pct") is not None and w.get("market_pct") is not None
+            else f"{w['market']} (EV {w['ev_pct']:+.0f}% per unit staked)"
+            for w in watch_markets
+        )
         watch_section = (
             f"\nWATCH markets (model shows an edge, but this market is not yet a proven "
             f"suggestion on the current model — we are tracking it, not staking it): {items}.\n"

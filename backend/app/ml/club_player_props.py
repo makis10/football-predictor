@@ -53,7 +53,9 @@ def club_player_props(db, match, prediction=None) -> dict:
         else:
             lam_h = lam_a = MU_TOTAL / 2
 
-    rates = load_player_rates(db)
+    # Only this fixture's two clubs — the table holds every national + club
+    # player log, and scanning all of it per request cost ~2.4 s.
+    rates = load_player_rates(db, teams=[t for t in (ah, aa) if t])
     teams: dict[str, list[dict]] = {}
     for our_name, api_name, team_xg in ((match.home_team, ah, lam_h), (match.away_team, aa, lam_a)):
         if not api_name:
