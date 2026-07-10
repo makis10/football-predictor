@@ -356,10 +356,26 @@ export interface CLVStats {
   beat_close_pct: number;
 }
 
+export interface InjuryAdjustmentStats {
+  matches: number;
+  raw_result_accuracy: number;
+  adj_result_accuracy: number;
+  raw_goals_accuracy: number;
+  adj_goals_accuracy: number;
+}
+
+export interface RegimeSlice {
+  regime: string;                 // "anchored" | "pure-model" | "pure-unified" | …
+  from_date: string | null;
+  to_date: string | null;
+  stats: AccuracySlice;           // per-era accuracy — no methodology mixing
+}
+
 export interface MethodologyInfo {
   cutoff: string;          // ISO date the current market-independent model began
   settled_before: number;  // settled predictions from the prior (anchored) model
   settled_after: number;   // settled predictions from the current model
+  regimes?: RegimeSlice[];
 }
 
 export interface StatsResponse {
@@ -367,7 +383,9 @@ export interface StatsResponse {
   rolling: RollingAccuracy;
   top_picks: TopPicksStats | null;
   by_league: LeagueBreakdown[];
-  by_confidence: ConfidenceBreakdown[];
+  by_confidence: ConfidenceBreakdown[];                    // club only
+  by_confidence_national?: ConfidenceBreakdown[];          // separate label semantics
+  injury_adjustment?: InjuryAdjustmentStats | null;
   by_predicted_outcome: PredictedOutcomeBreakdown[];
   draw_stats: DrawStats;
   btts_stats: BTTSStats | null;

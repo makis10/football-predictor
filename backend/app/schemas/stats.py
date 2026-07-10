@@ -203,6 +203,29 @@ class ResultCalibration(BaseModel):
     away: list[CalibrationBucket]
 
 
+class InjuryAdjustmentStats(BaseModel):
+    """Raw vs injury-adjusted accuracy, on the SAME settled matches (only those
+    where a significant adjustment was actually served). Measures whether the
+    serve-time injury layer helps or hurts — before this, its effect was
+    completely unmeasured. Forward-only: adjustments are persisted from
+    2026-07-10 on."""
+    matches: int
+    raw_result_accuracy:  float
+    adj_result_accuracy:  float
+    raw_goals_accuracy:   float
+    adj_goals_accuracy:   float
+
+
+class RegimeSlice(BaseModel):
+    """Accuracy for one model-methodology era. Settled predictions are never
+    rewritten, so match_date deterministically assigns each row to the regime
+    that produced it — per-regime numbers don't mix methodologies."""
+    regime:    str                # short label, e.g. "anchored", "pure-model"
+    from_date: Optional[str]      # ISO start (None = beginning of data)
+    to_date:   Optional[str]      # ISO end   (None = ongoing)
+    stats:     AccuracySlice
+
+
 class MethodologyInfo(BaseModel):
     """Honesty flag: the model changed on the cutoff date (market features +
     anchoring removed → market-independent). Predictions settled BEFORE the
@@ -212,6 +235,7 @@ class MethodologyInfo(BaseModel):
     cutoff: str                  # ISO date the current (market-independent) model began
     settled_before: int          # settled predictions from the prior (anchored) model
     settled_after: int           # settled predictions from the current model
+    regimes: list[RegimeSlice] = []   # per-era accuracy (no methodology mixing)
 
 
 class StatsResponse(BaseModel):
@@ -219,7 +243,8 @@ class StatsResponse(BaseModel):
     rolling: RollingAccuracy
     top_picks: Optional[TopPicksStats] = None          # None when no suggested_market data yet
     by_league: list[LeagueBreakdown]
-    by_confidence: list[ConfidenceBreakdown]
+    by_confidence: list[ConfidenceBreakdown]                    # CLUB only
+    by_confidence_national: list[ConfidenceBreakdown] = []      # national (different label semantics)
     by_predicted_outcome: list[PredictedOutcomeBreakdown]
     draw_stats: DrawStats
     btts_stats: Optional[BTTSStats] = None           # None when no lambda data yet
@@ -230,4 +255,5 @@ class StatsResponse(BaseModel):
     roi: Optional[ROIStats] = None          # None when no bm odds stored yet
     clv: Optional[CLVStats] = None          # None until suggested bets have closing snapshots
     ev_series: list[EVDataPoint] = []       # empty until bm odds are stored
+    injury_adjustment: Optional[InjuryAdjustmentStats] = None   # None until adjusted rows settle
     computed_at: str                        # ISO timestamp

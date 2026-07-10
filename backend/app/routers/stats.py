@@ -39,8 +39,10 @@ from backend.app.schemas.stats import (
     ConfidenceBreakdown,
     DrawStats,
     EVDataPoint,
+    InjuryAdjustmentStats,
     LeagueBreakdown,
     MethodologyInfo,
+    RegimeSlice,
     ModelVersionStats,
     PredictedOutcomeBreakdown,
     ResultCalibration,
@@ -90,6 +92,10 @@ def _load_rows(league: Optional[str] = None) -> list[dict]:
                 Prediction.poisson_lambda_away,
                 Prediction.suggested_market,
                 Prediction.ev_score,
+                Prediction.adj_home_win_prob,
+                Prediction.adj_draw_prob,
+                Prediction.adj_away_win_prob,
+                Prediction.adj_over_2_5_prob,
             )
             .join(Prediction, Prediction.match_id == Match.id)
             .where(Match.result.isnot(None))
@@ -365,10 +371,30 @@ def _compute_stats(rows: list[dict]) -> StatsResponse:
     # by the prior anchored model, so all-time accuracy/ROI mixes methodologies.
     _METHODOLOGY_CUTOFF = date(2026, 6, 17)
     _before = sum(1 for r in rows if r["match_date"] < _METHODOLOGY_CUTOFF)
+    # Regime eras — extend this list on every methodology change so per-era
+    # accuracy never mixes models. (2026-07-10: unified train/serve imputation.)
+    _REGIMES: list[tuple[str, Optional[date], Optional[date]]] = [
+        ("anchored",       None,               date(2026, 6, 17)),
+        ("pure-model",     date(2026, 6, 17),  date(2026, 7, 10)),
+        ("pure-unified",   date(2026, 7, 10),  None),
+    ]
+    regime_slices = []
+    for name, lo, hi in _REGIMES:
+        sub = [r for r in rows
+               if (lo is None or r["match_date"] >= lo)
+               and (hi is None or r["match_date"] < hi)]
+        if sub:
+            regime_slices.append(RegimeSlice(
+                regime=name,
+                from_date=lo.isoformat() if lo else None,
+                to_date=hi.isoformat() if hi else None,
+                stats=_accuracy_slice(sub),
+            ))
     methodology = MethodologyInfo(
         cutoff=_METHODOLOGY_CUTOFF.isoformat(),
         settled_before=_before,
         settled_after=len(rows) - _before,
+        regimes=regime_slices,
     )
 
     rolling = RollingAccuracy(
@@ -398,21 +424,31 @@ def _compute_stats(rows: list[dict]) -> StatsResponse:
     # sort by total desc
     by_league.sort(key=lambda x: x.total, reverse=True)
 
-    # ── By confidence ─────────────────────────────────────────────────────────
-    conf_map: dict[str, list[dict]] = {}
-    for r in rows:
-        conf_map.setdefault(r["confidence"], []).append(r)
+    # ── By confidence — CLUB and NATIONAL kept separate ──────────────────────
+    # The two pipelines define the label differently (club: composite formula,
+    # high needs p_max ≥ 0.55 AND O/U signal; national: p_max ≥ 0.65 alone), so
+    # a shared bucket would compare incomparable tiers (club "high" avg p_max
+    # ≈ 0.67 vs national "HIGH" ≈ 0.80).
+    def _conf_breakdown(sub_rows: list[dict]) -> list[ConfidenceBreakdown]:
+        cmap: dict[str, list[dict]] = {}
+        for r in sub_rows:
+            cmap.setdefault(r["confidence"], []).append(r)
+        out = []
+        for conf in ("high", "medium", "low"):
+            conf_rows = cmap.get(conf, [])
+            n  = len(conf_rows)
+            rc = sum(_result_correct(r) for r in conf_rows)
+            out.append(ConfidenceBreakdown(
+                confidence=conf, total=n,
+                result_correct=rc,
+                result_accuracy=round(rc / n, 4) if n else 0.0,
+            ))
+        return out
 
-    by_confidence = []
-    for conf in ("high", "medium", "low"):
-        conf_rows = conf_map.get(conf, [])
-        n  = len(conf_rows)
-        rc = sum(_result_correct(r) for r in conf_rows)
-        by_confidence.append(ConfidenceBreakdown(
-            confidence=conf, total=n,
-            result_correct=rc,
-            result_accuracy=round(rc / n, 4) if n else 0.0,
-        ))
+    club_rows = [r for r in rows if not r.get("is_national")]
+    nat_rows  = [r for r in rows if r.get("is_national")]
+    by_confidence          = _conf_breakdown(club_rows)
+    by_confidence_national = _conf_breakdown(nat_rows) if nat_rows else []
 
     # ── By predicted outcome (H/D/A + OVER/UNDER) ────────────────────────────
     outcome_map: dict[str, list[tuple[bool, dict]]] = {}
@@ -471,7 +507,6 @@ def _compute_stats(rows: list[dict]) -> StatsResponse:
     )
 
     # ── Top AI Picks stats (mirrors TopPicks.tsx: top 3/day by confidence→max_prob) ──
-    _CONF_RANK = {"high": 3, "medium": 2, "low": 1}
 
     def _top_pick_outcome_for_row(r: dict) -> tuple[str, float, bool]:
         """
@@ -498,12 +533,12 @@ def _compute_stats(rows: list[dict]) -> StatsResponse:
 
     top_ai_pick_rows: list[tuple[dict, str, float, bool]] = []
     for _day_rows in _date_groups.values():
+        # Mirrors TopPicks.tsx: rank by max result-prob only. Confidence tiers
+        # are NOT comparable across the club/national pipelines (different
+        # formulas/thresholds), so tier-first ranking inverted the true order.
         _sorted = sorted(
             _day_rows,
-            key=lambda r: (
-                -_CONF_RANK.get(r["confidence"], 0),
-                -max(r["home_win_prob"], r["draw_prob"], r["away_win_prob"]),
-            ),
+            key=lambda r: -max(r["home_win_prob"], r["draw_prob"], r["away_win_prob"]),
         )
         for r in _sorted[:3]:
             mt, prob, ok = _top_pick_outcome_for_row(r)
@@ -868,6 +903,28 @@ def _compute_stats(rows: list[dict]) -> StatsResponse:
             cumulative_pnl_fair=round(cum_pnl_fair, 2),
         ))
 
+    # ── Injury adjustment: raw vs adjusted accuracy on the SAME rows ─────────
+    adj_rows = [r for r in rows
+                if not r.get("is_national") and r.get("adj_home_win_prob") is not None]
+    injury_adjustment: Optional[InjuryAdjustmentStats] = None
+    if adj_rows:
+        def _adj_predicted(r: dict) -> str:
+            probs = {"H": r["adj_home_win_prob"], "D": r["adj_draw_prob"], "A": r["adj_away_win_prob"]}
+            return max(probs, key=probs.__getitem__)
+        n_adj      = len(adj_rows)
+        raw_res    = sum(_result_correct(r) for r in adj_rows)
+        adj_res    = sum(_adj_predicted(r) == r["result"] for r in adj_rows)
+        raw_goals  = sum(_goals_correct(r) for r in adj_rows)
+        adj_goals  = sum((( (r["home_goals"] or 0) + (r["away_goals"] or 0)) > 2.5)
+                         == (r["adj_over_2_5_prob"] >= 0.5) for r in adj_rows)
+        injury_adjustment = InjuryAdjustmentStats(
+            matches=n_adj,
+            raw_result_accuracy=round(raw_res / n_adj, 4),
+            adj_result_accuracy=round(adj_res / n_adj, 4),
+            raw_goals_accuracy=round(raw_goals / n_adj, 4),
+            adj_goals_accuracy=round(adj_goals / n_adj, 4),
+        )
+
     # ── CLV: did our suggested bets beat the closing line? ────────────────────
     # For each suggested bet, compare the odds quoted at suggestion time with
     # the last odds_history snapshot for the match (≈ closing line). Positive
@@ -881,6 +938,7 @@ def _compute_stats(rows: list[dict]) -> StatsResponse:
         top_picks=top_picks_stats,
         by_league=by_league,
         by_confidence=by_confidence,
+        by_confidence_national=by_confidence_national,
         by_predicted_outcome=by_predicted_outcome,
         draw_stats=draw_stats,
         btts_stats=btts_stats,
@@ -891,6 +949,7 @@ def _compute_stats(rows: list[dict]) -> StatsResponse:
         roi=roi,
         clv=clv,
         ev_series=ev_series,
+        injury_adjustment=injury_adjustment,
         computed_at=datetime.now(timezone.utc).isoformat(),
     )
 

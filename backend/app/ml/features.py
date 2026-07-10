@@ -8,7 +8,7 @@ be sorted ascending by date before calling build_features().
 Output columns (prefix h_ = home team, a_ = away team):
   Rolling 5 + 10-match windows for scored/conceded (all venues + venue-split)
   Rolling form (points) over 5 and 10 matches
-  Head-to-head record (last 5 meetings)
+  Head-to-head record (last 10 meetings — _H2H_W)
   Elo ratings and diff
   Pi-Ratings: 4 ratings per team (home/away × attack/defense) — goal-based,
               more predictive than Elo because they use the margin of victory.

@@ -231,6 +231,37 @@ def _apply_injury_adjustment(
     )
 
 
+def _persist_adjustment(
+    db: Session,
+    pred: Prediction,
+    adjusted: Optional[tuple[float, float, float, float]],
+) -> None:
+    """Record the last injury-adjusted probabilities SERVED for this match.
+
+    The raw stored probs stay untouched (accuracy tracking of the base model);
+    these columns let /stats grade raw vs adjusted on the same rows, so the
+    adjustment layer's effect is measured instead of assumed. Cheap write:
+    skipped when the values haven't moved ≥0.001 (the 30-min injuries cache
+    already bounds the write rate)."""
+    if not adjusted:
+        return
+    hw, d, aw, ov = adjusted
+    if (pred.adj_home_win_prob is not None
+            and abs(pred.adj_home_win_prob - hw) < 1e-3
+            and abs(pred.adj_over_2_5_prob - ov) < 1e-3):
+        return
+    try:
+        from datetime import datetime, timezone
+        pred.adj_home_win_prob = hw
+        pred.adj_draw_prob     = d
+        pred.adj_away_win_prob = aw
+        pred.adj_over_2_5_prob = ov
+        pred.adj_updated_at    = datetime.now(timezone.utc)
+        db.commit()
+    except Exception:
+        db.rollback()   # grading is best-effort — never break the read path
+
+
 @router.get("/{match_id}", response_model=PredictionResponse)
 def get_prediction(match_id: int, db: Session = Depends(get_db)):
     match = db.get(Match, match_id)
@@ -243,6 +274,7 @@ def get_prediction(match_id: int, db: Session = Depends(get_db)):
 
     if pred:
         adjusted = _apply_injury_adjustment(match, pred)
+        _persist_adjustment(db, pred, adjusted)
         return _build_response(match, pred, adjusted)
 
     # Snapshot what we need from the match, then release the DB connection

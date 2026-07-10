@@ -94,6 +94,21 @@ def add_european_features(
     eur = european[european["status"] == "FINISHED"].copy()
     eur = eur.sort_values("date").reset_index(drop=True)
 
+    # The join below relies on EXACT team-name equality with the domestic CSV
+    # convention — a renamed/mis-spelled club silently degrades to NaN. Log the
+    # match rate so a drop is visible instead of silent. Only meaningful for
+    # BULK frames (training / full history): serve-time calls pass a single
+    # match (2 teams), where a low rate is expected and the log is pure noise.
+    if len(domestic) > 100:
+        eur_teams = set(eur["home_team"]) | set(eur["away_team"])
+        dom_teams = set(domestic["home_team"]) | set(domestic["away_team"])
+        matched = eur_teams & dom_teams
+        if eur_teams:
+            rate = len(matched) / len(eur_teams)
+            print(f"[european] team-name match rate: {len(matched)}/{len(eur_teams)} "
+                  f"({rate:.0%}) — unmatched names get NaN features"
+                  + (f"; sample unmatched: {sorted(eur_teams - dom_teams)[:5]}" if rate < 0.9 else ""))
+
     # Pre-group by team for O(1) lookup instead of O(n×m) full scan per row.
     # Each team's rows (both home and away legs) are stored sorted by date.
     _eur_by_team: dict[str, list] = {}

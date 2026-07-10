@@ -160,7 +160,12 @@ def _elo_expected(elo_a: float, elo_b: float) -> float:
     return 1.0 / (1.0 + 10 ** ((elo_b - elo_a) / ELO_SCALE))
 
 
-def elo_three_way(adj_diff: float) -> tuple[float, float, float]:
+def elo_three_way(
+    adj_diff: float,
+    scale: float = 110.0,
+    draw_base: float = 0.26,
+    draw_decay: float = 0.7,
+) -> tuple[float, float, float]:
     """Map a (home-advantage-adjusted) talent-Elo difference to a calibrated
     1×2 distribution (P_home, P_draw, P_away).
 
@@ -170,8 +175,10 @@ def elo_three_way(adj_diff: float) -> tuple[float, float, float]:
     talent-Elo signal. Draw probability peaks for even games and decays as the
     sides diverge; the win/loss split follows a logistic on the Elo gap.
     """
-    ws = 1.0 / (1.0 + math.exp(-adj_diff / 110.0))            # win share of decisive
-    p_draw = 0.26 * math.exp(-((adj_diff / 400.0) ** 2) * 0.7)
+    # Constants FITTED on the cal window by scripts/fit_national_blend.py
+    # (persisted in models/national/blend.json); defaults = pre-fit fallbacks.
+    ws = 1.0 / (1.0 + math.exp(-adj_diff / scale))            # win share of decisive
+    p_draw = draw_base * math.exp(-((adj_diff / 400.0) ** 2) * draw_decay)
     p_home = (1.0 - p_draw) * ws
     p_away = (1.0 - p_draw) * (1.0 - ws)
     return p_home, p_draw, p_away

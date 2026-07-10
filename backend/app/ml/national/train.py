@@ -251,8 +251,6 @@ def train(data_dir: str | Path = DATA_DIR, models_dir: str | Path = MODELS_DIR) 
     print(f"  Val (early-stop): {len(inner):,} train / {len(val):,} val")
 
     # Sample weights: class balance × match_type × time decay
-    decay = _time_decay_weights(inner["date"])
-
     def _sw(subset):
         """Compute sample weights for a training split."""
         d = _time_decay_weights(subset["date"])
@@ -428,7 +426,7 @@ def train(data_dir: str | Path = DATA_DIR, models_dir: str | Path = MODELS_DIR) 
     print(f"  Saved → {alpha_path}")
 
     # ── Save training metrics ──────────────────────────────────────────────────
-    from datetime import datetime
+    from datetime import datetime, timezone
 
     # Extract per-class metrics from classification_report for result model
     _result_report = classification_report(
@@ -459,7 +457,7 @@ def train(data_dir: str | Path = DATA_DIR, models_dir: str | Path = MODELS_DIR) 
     draw_actual_rate   = float((test_df["target_result"] == 1).mean())
 
     training_metrics = {
-        "trained_at":            datetime.utcnow().isoformat(),
+        "trained_at":            datetime.now(timezone.utc).isoformat(),
         "n_train":               int(len(train_df)),
         "n_cal":                 int(len(cal_df)),
         "n_test":                int(len(test_df)),

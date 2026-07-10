@@ -27,7 +27,7 @@ import argparse
 import os
 import pickle
 import sys
-from datetime import date, datetime, timedelta
+from datetime import date, datetime, timedelta, timezone
 
 import numpy as np
 
@@ -99,7 +99,7 @@ def main() -> None:
         "draw": _fit(d,  y_d, "draw"),
         "away": _fit(aw, y_a, "away"),
         "over": _fit(ov, y_o, "over"),
-        "fitted_at": datetime.utcnow().isoformat() + "Z",
+        "fitted_at": datetime.now(timezone.utc).isoformat(),
         "n": n,
         "window_days": args.days,
     }

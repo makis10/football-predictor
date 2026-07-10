@@ -35,9 +35,24 @@ from backend.app.ml.national.train import blend_draw_probability
 DATA_DIR   = ROOT / "backend" / "data" / "raw" / "international"
 MODELS_DIR = ROOT / "backend" / "data" / "models" / "national"
 
-# Weight on the Elo-derived 1×2 when sharpening the (flat) trained model output.
-# 0 = trust the model only; 1 = pure Elo. Tunable.
-ELO_BLEND_W = 0.5
+# Elo-blend parameters. FITTED on the calibration window by
+# scripts/fit_national_blend.py → models/national/blend.json; the literals
+# below are only the pre-fit fallbacks (the old hand-picked values).
+_BLEND_DEFAULTS = {"elo_blend_w": 0.5, "scale": 110.0, "draw_base": 0.26, "draw_decay": 0.7}
+
+
+def _load_blend() -> dict:
+    path = MODELS_DIR / "blend.json"
+    try:
+        with open(path) as f:
+            d = json.load(f)
+        return {k: float(d.get(k, v)) for k, v in _BLEND_DEFAULTS.items()}
+    except FileNotFoundError:
+        return dict(_BLEND_DEFAULTS)
+
+
+BLEND = _load_blend()
+ELO_BLEND_W = BLEND["elo_blend_w"]
 
 
 def _load_models() -> dict:
@@ -126,7 +141,8 @@ def predict_fixture(
     # 1×2 so clear favourites look like favourites. ELO_BLEND_W on the Elo side.
     from backend.app.ml.national.features import elo_three_way, HOME_ADV
     adj_diff = feat["h_elo"] - feat["a_elo"] + (0.0 if neutral else HOME_ADV)
-    eh, ed, ea = elo_three_way(adj_diff)
+    eh, ed, ea = elo_three_way(adj_diff, scale=BLEND["scale"],
+                               draw_base=BLEND["draw_base"], draw_decay=BLEND["draw_decay"])
     w = ELO_BLEND_W
     p_home = (1 - w) * p_home + w * eh
     p_draw = (1 - w) * p_draw + w * ed

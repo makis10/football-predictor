@@ -122,17 +122,38 @@ def _get_models():
     return _result_model, _goals_model
 
 
+# ── Training imputation medians ───────────────────────────────────────────────
+# Written by train.py at fit time (pre-CAL rows only). Serving MUST fill NaN
+# with the SAME values the model saw in training — a 0.0 where training used
+# median 4.2 makes a data-poor team look like the worst attack in history.
+_impute_medians: Optional[dict] = None
+
+
+def get_impute_medians() -> dict:
+    global _impute_medians
+    if _impute_medians is None:
+        import json
+        path = os.path.join(MODELS_DIR, "impute_medians.json")
+        try:
+            with open(path) as f:
+                _impute_medians = {k: float(v) for k, v in json.load(f).items()}
+        except Exception:
+            _impute_medians = {}   # pre-refit models: fall back to legacy defaults
+    return _impute_medians
+
+
 def reload_predict_models() -> None:
     """
     Reset all module-level singletons so the next call reloads from disk.
     Call this after a retrain so the running process picks up the new models.
     """
-    global _result_model, _goals_model, _DRAW_ALPHA, _BTTS_THRESHOLD, _european_df
+    global _result_model, _goals_model, _DRAW_ALPHA, _BTTS_THRESHOLD, _european_df, _impute_medians
     _result_model    = None
     _goals_model     = None
     _DRAW_ALPHA      = None
     _BTTS_THRESHOLD  = None
     _european_df     = None
+    _impute_medians  = None
     import logging
     logging.getLogger("predict").info("[predict] Model singletons cleared — will reload on next predict call.")
 
@@ -231,7 +252,7 @@ def predict_match(
 
     # Impute NaN values. Pi-Ratings start at 0.0 so they're never NaN.
     # Rolling stats may be NaN for new teams with insufficient history.
-    feat_row = feat_row.fillna({
+    _fill = {
         # Rolling stats
         "h_goals_scored_5":   1.5, "h_goals_conceded_5": 1.5,
         "a_goals_scored_5":   1.5, "a_goals_conceded_5": 1.5,
@@ -286,7 +307,13 @@ def predict_match(
         "market_draw_edge":       0.0,
         "low_total_xg":           0.0,
         "elo_closeness":          0.5,
-    })
+    }
+    # Training medians override the legacy literals above — serving must fill
+    # NaN with the SAME values the model was trained with (impute_medians.json,
+    # written by train.py from pre-CAL rows). Legacy literals remain the
+    # fallback for models trained before the artifact existed.
+    _fill.update(get_impute_medians())
+    feat_row = feat_row.fillna(_fill)
 
     # Slice to model-specific feature lists
     feat_result = feat_row[RESULT_FEATURE_COLS]

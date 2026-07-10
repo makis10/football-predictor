@@ -106,9 +106,9 @@ export default function MatchCard({ match }: Props) {
                 {p.ev_score != null && p.ev_score > 0 && (
                   <span
                     className="badge bg-emerald-500/20 text-emerald-400 font-semibold"
-                    title={p.suggested_market ?? "Value bet"}
+                    title={`${p.suggested_market ?? "Value bet"} — expected value per unit staked (not a probability)`}
                   >
-                    ⚡ +{Math.round(p.ev_score * 100)}%
+                    ⚡ EV +{Math.round(p.ev_score * 100)}%
                   </span>
                 )}
                 <span

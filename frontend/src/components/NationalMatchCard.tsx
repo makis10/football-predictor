@@ -86,9 +86,9 @@ export default function NationalMatchCard({ prediction: p }: Props) {
           {p.ev_score != null && p.ev_score > 0 && p.suggested_market && (
             <span
               className="badge bg-emerald-500/20 text-emerald-400 font-semibold"
-              title={p.suggested_market}
+              title={`${p.suggested_market} — expected value per unit staked (not a probability)`}
             >
-              ⚡ +{Math.round(p.ev_score * 100)}%
+              ⚡ EV +{Math.round(p.ev_score * 100)}%
             </span>
           )}
           <span className={`badge ${confidenceBadgeClass(p.confidence)}`}>

@@ -258,8 +258,13 @@ export default async function NationalMatchDetailPage({ params }: Props) {
             <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
               🟨 Expected Cards
             </h2>
+            {/* Not a market call — an estimate-accuracy check (|pred − actual| ≤ 1.5).
+                Label it as such so it doesn't read like a betting hit. */}
             {hasResult && prediction.cards_hit != null && (
-              <HitPill hit={prediction.cards_hit} label={prediction.cards_hit ? "πιάσαμε" : "χάσαμε"} />
+              <HitPill
+                hit={prediction.cards_hit}
+                label={prediction.cards_hit ? "εκτίμηση ±1.5 ✓" : "εκτός ±1.5"}
+              />
             )}
           </div>
           <div className="flex items-center justify-between text-sm">

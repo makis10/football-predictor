@@ -227,9 +227,9 @@ btts_cal  = load_btts_calibrator()
 print("Models loaded. Computing predictions …", flush=True)
 
 # ── Fetch live bookmaker odds (one API call per league) ───────────────────────
-# market_home_prob and market_away_prob are the #1 and #2 most important
-# features by XGBoost importance. Fetching live odds at prediction time
-# instead of using static defaults gives the model its most powerful signal.
+# Since 2026-06-17 the models are market-independent — odds are NOT model
+# inputs. They're still fetched because the EV/value gate, the stored bm_*
+# odds (ROI/CLV tracking) and the ticket ledger all price against them.
 print("Fetching live bookmaker odds …", flush=True)
 leagues_needed = list({league for _, _, _, _, league in match_snapshots})
 
@@ -330,6 +330,18 @@ DEFAULTS = {
     # League position defaults (neutral = middle of table)
     "h_league_pos_norm": 0.5, "a_league_pos_norm": 0.5, "league_pos_diff": 0.0,
 }
+# Training imputation medians (impute_medians.json, written by train.py from
+# pre-CAL rows) override the legacy literals above — one source of truth for
+# train/serve/backtest fill values. Legacy literals stay as fallback for
+# models trained before the artifact existed.
+try:
+    import json as _json
+    with open(os.path.join(_PROJECT_ROOT, "backend", "data", "models", "impute_medians.json")) as _f:
+        DEFAULTS.update({k: float(v) for k, v in _json.load(_f).items()})
+    print("Imputation medians loaded from impute_medians.json", flush=True)
+except FileNotFoundError:
+    print("[warn] impute_medians.json not found — using legacy DEFAULTS", flush=True)
+
 
 # ── Compute + insert ──────────────────────────────────────────────────────────
 ok = skipped = fail = 0

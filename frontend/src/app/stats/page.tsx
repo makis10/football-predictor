@@ -263,6 +263,61 @@ export default async function StatsPage({ searchParams }: PageProps) {
             Τα «All Time» νούμερα παρακάτω αναμειγνύουν τις δύο μεθοδολογίες — τα rolling 7d/30d είναι πιο
             αντιπροσωπευτικά του τωρινού μοντέλου.
           </p>
+          {/* Per-regime accuracy — no methodology mixing within a row */}
+          {s.methodology.regimes && s.methodology.regimes.length > 0 && (
+            <div className="mt-3 space-y-1">
+              <div className="grid grid-cols-[1fr_4.5rem_4.5rem_3.5rem] gap-2 text-[11px] text-gray-500 uppercase tracking-wide">
+                <span>Περίοδος μοντέλου</span>
+                <span className="text-right">1×2</span>
+                <span className="text-right">O/U</span>
+                <span className="text-right">N</span>
+              </div>
+              {s.methodology.regimes.map((r) => (
+                <div
+                  key={r.regime}
+                  className="grid grid-cols-[1fr_4.5rem_4.5rem_3.5rem] gap-2 text-sm items-center"
+                >
+                  <span className="text-gray-300">
+                    {r.regime}
+                    <span className="text-gray-600 text-xs">
+                      {" "}({r.from_date ?? "…"} → {r.to_date ?? "τώρα"})
+                    </span>
+                  </span>
+                  <span className="text-right tabular-nums text-gray-200">
+                    {(r.stats.result_accuracy * 100).toFixed(1)}%
+                  </span>
+                  <span className="text-right tabular-nums text-gray-200">
+                    {(r.stats.goals_accuracy * 100).toFixed(1)}%
+                  </span>
+                  <span className="text-right tabular-nums text-gray-500">{r.stats.total}</span>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* Injury adjustment: raw vs adjusted accuracy (same rows) */}
+      {s.injury_adjustment && s.injury_adjustment.matches >= 5 && (
+        <div className="rounded-xl border border-pitch-700 bg-pitch-800/60 p-4 text-sm">
+          <p className="font-semibold text-gray-300 mb-1">🩹 Injury adjustment — μετρημένη επίδραση</p>
+          <p className="text-gray-400 text-xs mb-2">
+            Ίδια {s.injury_adjustment.matches} παιχνίδια, ίδιο μοντέλο — μόνο το injury layer αλλάζει.
+          </p>
+          <div className="flex gap-6 tabular-nums">
+            <span>
+              1×2: raw {(s.injury_adjustment.raw_result_accuracy * 100).toFixed(1)}% →{" "}
+              <span className={s.injury_adjustment.adj_result_accuracy >= s.injury_adjustment.raw_result_accuracy ? "text-green-400" : "text-red-400"}>
+                adj {(s.injury_adjustment.adj_result_accuracy * 100).toFixed(1)}%
+              </span>
+            </span>
+            <span>
+              O/U: raw {(s.injury_adjustment.raw_goals_accuracy * 100).toFixed(1)}% →{" "}
+              <span className={s.injury_adjustment.adj_goals_accuracy >= s.injury_adjustment.raw_goals_accuracy ? "text-green-400" : "text-red-400"}>
+                adj {(s.injury_adjustment.adj_goals_accuracy * 100).toFixed(1)}%
+              </span>
+            </span>
+          </div>
         </div>
       )}
 
@@ -462,9 +517,11 @@ export default async function StatsPage({ searchParams }: PageProps) {
       )}
 
       {/* ── By confidence ─────────────────────────────────────────────────── */}
+      {/* Club-only: the national pipeline defines the label with a different
+          formula/thresholds, so the tiers are NOT comparable — shown separately. */}
       <section>
         <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-3">
-          By Confidence Level
+          By Confidence Level <span className="text-gray-600 normal-case">(club leagues)</span>
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           {[confHigh, confMedium, confLow].filter(Boolean).map((c) => (
@@ -497,8 +554,43 @@ export default async function StatsPage({ searchParams }: PageProps) {
           ))}
         </div>
         <p className="text-xs text-gray-600 mt-2">
-          High confidence = max outcome probability ≥ 55% · Medium ≥ 42% · Low &lt; 42%
+          High confidence = max outcome probability ≥ 55% ΚΑΙ σήμα στο O/U · Medium ≥ 42% · Low &lt; 42%
         </p>
+
+        {/* National — different label semantics (p_max ≥ 0.65 → HIGH, no O/U term) */}
+        {s.by_confidence_national && s.by_confidence_national.some((c) => c.total > 0) && (
+          <div className="mt-4">
+            <h3 className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">
+              Internationals <span className="text-gray-600 normal-case">(ξεχωριστή κλίμακα: HIGH = p ≥ 65%)</span>
+            </h3>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              {s.by_confidence_national.filter((c) => c.total > 0).map((c) => (
+                <div
+                  key={`nat-${c.confidence}`}
+                  className="rounded-xl border border-pitch-700 bg-pitch-800/40 p-4 space-y-2"
+                >
+                  <p className="text-sm font-semibold capitalize text-gray-300">
+                    {c.confidence === "high" && "🟢 "}
+                    {c.confidence === "medium" && "🟡 "}
+                    {c.confidence === "low" && "🔴 "}
+                    {c.confidence}
+                    <span className="ml-2 text-xs font-normal text-gray-500">{c.total} matches</span>
+                  </p>
+                  <AccuracyBar
+                    label="Result accuracy"
+                    value={c.result_accuracy}
+                    color={
+                      c.confidence === "high"   ? "bg-green-500" :
+                      c.confidence === "medium" ? "bg-yellow-500" :
+                      "bg-gray-500"
+                    }
+                  />
+                  <p className="text-xs text-gray-500">{c.result_correct} / {c.total} correct</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
       </section>
 
       {/* ── Predicted outcome breakdown ───────────────────────────────────── */}

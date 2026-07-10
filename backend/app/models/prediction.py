@@ -66,6 +66,18 @@ class Prediction(Base):
     # e.g. 0.08 means 8% edge. NULL when suggested_market is NULL.
     ev_score: Mapped[_Optional[float]] = mapped_column(Float, nullable=True)
 
+    # Last injury-adjusted probabilities actually SERVED for this match (written
+    # by the predictions router when a significant adjustment applies). The raw
+    # probs above stay untouched; /stats grades raw vs adjusted side-by-side so
+    # the adjustment layer's accuracy impact is finally measurable.
+    # NULL = no significant adjustment was ever applied (or pre-migration row).
+    adj_home_win_prob: Mapped[_Optional[float]] = mapped_column(Float, nullable=True)
+    adj_draw_prob:     Mapped[_Optional[float]] = mapped_column(Float, nullable=True)
+    adj_away_win_prob: Mapped[_Optional[float]] = mapped_column(Float, nullable=True)
+    adj_over_2_5_prob: Mapped[_Optional[float]] = mapped_column(Float, nullable=True)
+    adj_updated_at:    Mapped[_Optional[datetime]] = mapped_column(
+        DateTime(timezone=True), nullable=True)
+
     created_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), server_default=func.now()
     )

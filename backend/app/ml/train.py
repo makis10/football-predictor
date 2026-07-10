@@ -111,48 +111,65 @@ def _time_decay_weights(dates: pd.Series) -> np.ndarray:
     return w / w.mean()
 
 
-def _impute_optional(df: pd.DataFrame) -> pd.DataFrame:
+# Persisted imputation medians — the single source of truth for every consumer
+# (train, predict.py, compute_predictions.py, backtest_2526.py). Written at
+# train time from PRE-CAL rows only (no fit-before-split), loaded everywhere
+# else so train/serve/backtest all see the same fill values.
+IMPUTE_MEDIANS_PATH = os.path.join(MODELS_DIR, "impute_medians.json")
+
+
+def _impute_optional(df: pd.DataFrame, save_medians: bool = True) -> pd.DataFrame:
     """
-    Impute optional features.
-    Shots on target  → median of available values (0 if all NaN).
-    European features → 0  (not in Europe = no fatigue, neutral result).
+    Impute optional features and persist the fill values.
+
+    Medians are computed ONLY on rows before CAL_CUTOFF (the model-training
+    window) — computing them on the full frame would leak cal/test information
+    into training rows (textbook fit-before-split; measured impact ≈0 here, but
+    structurally wrong). The whole frame is then filled with those values.
+
+    Shots on target  → pre-CAL median.
+    European features → 0 (not in Europe = no fatigue, neutral result).
+    xG / market / Poisson → pre-CAL median with documented fallbacks.
+    Referee features: deliberately NOT imputed (XGBoost handles NaN natively;
+    a fake "average referee" in no-data leagues hurts more than it helps).
     """
     df = df.copy()
+    train_mask = df["Date"] < CAL_CUTOFF
+    medians: dict[str, float] = {}
+
+    def _fill(col: str, fallback: float) -> None:
+        m = df.loc[train_mask, col].median()
+        v = float(m) if pd.notna(m) else float(fallback)
+        medians[col] = round(v, 6)
+        df[col] = df[col].fillna(v)
+
     for col in SHOTS_COLS:
-        median = df[col].median()
-        df[col] = df[col].fillna(median if pd.notna(median) else 0.0)
+        _fill(col, 0.0)
     for col in EUROPEAN_FEATURE_COLS:
+        medians[col] = 0.0
         df[col] = df[col].fillna(0.0)
-    # xG features: impute with training median (NaN for GreekSL + pre-2014/15).
     for col in XG_COLS:
         if col in df.columns:
-            median = df[col].median()
-            df[col] = df[col].fillna(median if pd.notna(median) else 1.5)
-    # Market probabilities: impute with training median so older seasons
-    # (pre-2012/13) and leagues without Pinnacle coverage get a neutral prior.
+            _fill(col, 1.5)
     for col in MARKET_COLS:
         if col in df.columns:
-            median = df[col].median()
-            df[col] = df[col].fillna(median if pd.notna(median) else 1 / 3)
-    # Referee features: deliberately NOT imputed.
-    # NaN for non-EPL leagues and early EPL matches — XGBoost learns the best
-    # split direction for missing values natively (tree_method='hist').
-    # Median imputation would introduce spurious "average referee" signal in
-    # leagues where no referee data exists, which hurts more than it helps.
-
-    # Poisson features: imputed with training median.
-    # NaN only for the first MIN_SEASON_MATCHES of each (league, season) —
-    # a small fraction of rows. Median is a good neutral prior.
+            _fill(col, 1 / 3)
     for col in POISSON_COLS:
         if col in df.columns:
-            median = df[col].median()
             if "lambda" in col:
-                fallback = 1.5
+                fb = 1.5
             elif col in ("poisson_home_attack", "poisson_away_defense"):
-                fallback = 1.0
+                fb = 1.0
             else:
-                fallback = 1.0 / 3
-            df[col] = df[col].fillna(median if pd.notna(median) else fallback)
+                fb = 1.0 / 3
+            _fill(col, fb)
+
+    if save_medians:
+        import json
+        os.makedirs(MODELS_DIR, exist_ok=True)
+        with open(IMPUTE_MEDIANS_PATH, "w") as f:
+            json.dump(medians, f, indent=2, sort_keys=True)
+        print(f"  Imputation medians (pre-CAL rows only) saved → {IMPUTE_MEDIANS_PATH}")
     return df
 
 
@@ -252,23 +269,69 @@ def _val_split(train: pd.DataFrame, val_frac: float = 0.15) -> tuple[pd.DataFram
     return inner, val
 
 
+def _result_scoring_report(probs: np.ndarray, y_true: pd.Series, test: pd.DataFrame) -> dict:
+    """Proper scoring rules + baselines for the 3-way result model on the test set.
+
+    Accuracy alone is a bad 3-class metric (a model that never predicts Draw can
+    'win' on accuracy). Log-loss/Brier/RPS grade the full probability vector, and
+    the two baselines anchor the numbers: always-home (naive) and the de-vigged
+    bookmaker (the sharp ceiling — beat it or you have no edge).
+    """
+    from sklearn.metrics import log_loss
+
+    y = y_true.to_numpy()
+    n = len(y)
+    onehot = np.zeros((n, 3))
+    onehot[np.arange(n), y] = 1.0
+
+    ll    = float(log_loss(y, probs, labels=[0, 1, 2]))
+    brier = float(np.mean(np.sum((probs - onehot) ** 2, axis=1)))
+    # Ranked Probability Score — respects the H<D<A ordering.
+    cp, co = np.cumsum(probs, axis=1), np.cumsum(onehot, axis=1)
+    rps = float(np.mean(np.sum((cp[:, :2] - co[:, :2]) ** 2, axis=1) / 2.0))
+
+    # Baseline 1: always predict Home at the train-era base rates.
+    base_rates = np.array([0.44, 0.26, 0.30])
+    ll_home  = float(log_loss(y, np.tile(base_rates, (n, 1)), labels=[0, 1, 2]))
+    acc_home = float(np.mean(y == 0))
+
+    # Baseline 2: de-vigged bookmaker probabilities, where present in the test
+    # rows. NOTE: market_*_prob may be median-imputed for rows without odds —
+    # restrict to rows where all three are present and off-median-ish by using
+    # the raw columns directly (coverage printed alongside).
+    out = {
+        "test_log_loss": round(ll, 4), "test_brier": round(brier, 4),
+        "test_rps": round(rps, 4),
+        "baseline_home_acc": round(acc_home, 4), "baseline_home_log_loss": round(ll_home, 4),
+    }
+    mk_cols = ["market_home_prob", "market_draw_prob", "market_away_prob"]
+    if all(c in test.columns for c in mk_cols):
+        mk = test[mk_cols].to_numpy(dtype=float)
+        ok = ~np.isnan(mk).any(axis=1)
+        if ok.sum() >= 100:
+            mk_ok = mk[ok] / mk[ok].sum(axis=1, keepdims=True)
+            ll_bm  = float(log_loss(y[ok], mk_ok, labels=[0, 1, 2]))
+            ll_us  = float(log_loss(y[ok], probs[ok], labels=[0, 1, 2]))
+            out["bookmaker_log_loss"]     = round(ll_bm, 4)
+            out["model_log_loss_same_rows"] = round(ll_us, 4)
+            out["bookmaker_coverage"]     = round(float(ok.mean()), 3)
+    print(f"  [Scoring] log-loss={ll:.4f}  Brier={brier:.4f}  RPS={rps:.4f}")
+    print(f"  [Baseline] always-home: acc={acc_home:.3f} log-loss={ll_home:.4f}")
+    if "bookmaker_log_loss" in out:
+        print(f"  [Baseline] de-vig bookmaker log-loss={out['bookmaker_log_loss']:.4f} "
+              f"vs model {out['model_log_loss_same_rows']:.4f} "
+              f"(coverage {out['bookmaker_coverage']:.0%}) — beat the bookmaker or no edge")
+    return out
+
+
 def train_result_model(train: pd.DataFrame, test: pd.DataFrame) -> SoftVoteEnsemble:
     print("\n--- Result model (Win/Draw/Loss) — XGBoost + LightGBM + MLP ---")
     inner, val = _val_split(train)
     X_train, y_train = inner[RESULT_FEATURE_COLS], inner["target_result"]
     X_val,   y_val   = val[RESULT_FEATURE_COLS],   val["target_result"]
     X_test,  y_test  = test[RESULT_FEATURE_COLS],  test["target_result"]
-
-    # NaN dropout on market features: forces model to learn non-market fallback
-    # path (Poisson / xG / Pi-Ratings) for matches where odds are unavailable.
-    MARKET_DROPOUT_RESULT = 0.35
-    rng_r = np.random.default_rng(seed=99)
-    X_train = X_train.copy()
-    mask_r = rng_r.random(len(X_train)) < MARKET_DROPOUT_RESULT
-    for col in MARKET_COLS:
-        if col in X_train.columns:
-            X_train.loc[X_train.index[mask_r], col] = np.nan
-    print(f"  NaN dropout applied: {mask_r.sum():,}/{len(X_train):,} rows had market features masked")
+    # (Market-feature NaN dropout removed 2026-07: MARKET_COLS ∩ RESULT_FEATURE_COLS
+    #  is empty since the 2026-06-17 market-independent refactor — it was a no-op.)
 
     # Combined weights: class balance × time decay.
     class_w  = compute_sample_weight("balanced", y_train)
@@ -287,8 +350,8 @@ def train_result_model(train: pd.DataFrame, test: pd.DataFrame) -> SoftVoteEnsem
     )
     xgb_model.fit(X_train, y_train, sample_weight=sample_weights,
                   eval_set=[(X_val, y_val)], verbose=False)
-    xgb_acc = accuracy_score(y_test, xgb_model.predict(X_test))
-    print(f"  [XGBoost] test acc={xgb_acc:.3f}")
+    xgb_acc = accuracy_score(y_val, xgb_model.predict(X_val))
+    print(f"  [XGBoost] val acc={xgb_acc:.3f}")
 
     # ── LightGBM ──────────────────────────────────────────────────────────────
     # Leaf-wise tree growth (different inductive bias from XGB's depth-wise).
@@ -305,8 +368,8 @@ def train_result_model(train: pd.DataFrame, test: pd.DataFrame) -> SoftVoteEnsem
         eval_set=[(X_val, y_val)],
         callbacks=[lgb.early_stopping(50, verbose=False), lgb.log_evaluation(period=-1)],
     )
-    lgbm_acc = accuracy_score(y_test, lgbm_model.predict(X_test))
-    print(f"  [LightGBM] test acc={lgbm_acc:.3f}")
+    lgbm_acc = accuracy_score(y_val, lgbm_model.predict(X_val))
+    print(f"  [LightGBM] val acc={lgbm_acc:.3f}")
 
     # ── MLP ───────────────────────────────────────────────────────────────────
     # Learns nonlinear feature interactions that tree models may miss.
@@ -324,8 +387,8 @@ def train_result_model(train: pd.DataFrame, test: pd.DataFrame) -> SoftVoteEnsem
         )),
     ])
     mlp_model.fit(X_train, y_train)
-    mlp_acc = accuracy_score(y_test, mlp_model.predict(X_test))
-    print(f"  [MLP]     test acc={mlp_acc:.3f}")
+    mlp_acc = accuracy_score(y_val, mlp_model.predict(X_val))
+    print(f"  [MLP]     val acc={mlp_acc:.3f}")
 
     # ── XGBoost-recent (walk-forward recency member: RECENT_CUTOFF+ only) ────
     # Trained on recent seasons only with flat class weights (no time-decay —
@@ -337,15 +400,9 @@ def train_result_model(train: pd.DataFrame, test: pd.DataFrame) -> SoftVoteEnsem
         _n_rv = max(200, int(len(_recent_r) * 0.15))
         _r_inner = _recent_r.iloc[:-_n_rv]
         _r_val   = _recent_r.iloc[-_n_rv:]
-        _X_ri = _r_inner[RESULT_FEATURE_COLS].copy()
+        _X_ri = _r_inner[RESULT_FEATURE_COLS]
         _X_rv = _r_val[RESULT_FEATURE_COLS]
         _y_ri, _y_rv = _r_inner["target_result"], _r_val["target_result"]
-
-        _rng_ri = np.random.default_rng(seed=77)
-        _mask_ri = _rng_ri.random(len(_X_ri)) < MARKET_DROPOUT_RESULT
-        for col in MARKET_COLS:
-            if col in _X_ri.columns:
-                _X_ri.loc[_X_ri.index[_mask_ri], col] = np.nan
 
         _sw_ri = compute_sample_weight("balanced", _y_ri)   # flat weights — no time-decay
 
@@ -358,22 +415,28 @@ def train_result_model(train: pd.DataFrame, test: pd.DataFrame) -> SoftVoteEnsem
         )
         xgb_recent.fit(_X_ri, _y_ri, sample_weight=_sw_ri,
                        eval_set=[(_X_rv, _y_rv)], verbose=False)
-        _acc_recent = accuracy_score(y_test, xgb_recent.predict(X_test))
-        print(f"  [XGBoost-recent] test acc={_acc_recent:.3f}  (n={len(_recent_r):,} rows)")
+        _acc_recent = accuracy_score(_y_rv, xgb_recent.predict(_X_rv))
+        print(f"  [XGBoost-recent] val acc={_acc_recent:.3f}  (n={len(_recent_r):,} rows)")
         ensemble = SoftVoteEnsemble([xgb_model, lgbm_model, mlp_model, xgb_recent], [1, 1, 1, 1])
     else:
         print(f"  [XGBoost-recent] skipped — insufficient data ({len(_recent_r):,} rows)")
         ensemble = SoftVoteEnsemble([xgb_model, lgbm_model, mlp_model], [1, 1, 1])
 
     # ── Soft-vote ensemble ────────────────────────────────────────────────────
-    preds = ensemble.predict(X_test)
+    # NOTE: the fixed 2025/26 test window is FINAL-REPORT-ONLY. Member selection,
+    # weights and thresholds must be decided on val/cal or walk_forward_eval fold
+    # means — never against this window (adaptive reuse inflates it).
+    probs = ensemble.predict_proba(X_test)
+    preds = ensemble.classes_[np.argmax(probs, axis=1)]
     acc   = accuracy_score(y_test, preds)
     print(f"  [Ensemble] test accuracy: {acc:.3f}")
     report = classification_report(y_test, preds,
                                    target_names=["HomeWin", "Draw", "AwayWin"],
                                    output_dict=True)
     print(classification_report(y_test, preds, target_names=["HomeWin", "Draw", "AwayWin"]))
+    scoring = _result_scoring_report(probs, y_test, test)
     metrics = {
+        **scoring,
         "result_test_accuracy":  round(acc, 4),
         "result_home_recall":    round(report["HomeWin"]["recall"], 4),
         "result_draw_recall":    round(report["Draw"]["recall"], 4),
@@ -391,16 +454,7 @@ def train_goals_model(train: pd.DataFrame, test: pd.DataFrame) -> SoftVoteEnsemb
     X_train, y_train = inner[GOALS_FEATURE_COLS], inner["target_goals"]
     X_val,   y_val   = val[GOALS_FEATURE_COLS],   val["target_goals"]
     X_test,  y_test  = test[GOALS_FEATURE_COLS],  test["target_goals"]
-
-    # NaN dropout on market features (same rationale as result model).
-    MARKET_DROPOUT = 0.35
-    rng = np.random.default_rng(seed=42)
-    X_train = X_train.copy()
-    mask = rng.random(len(X_train)) < MARKET_DROPOUT
-    for col in MARKET_COLS:
-        if col in X_train.columns:
-            X_train.loc[X_train.index[mask], col] = np.nan
-    print(f"  NaN dropout applied: {mask.sum():,}/{len(X_train):,} rows had market features masked")
+    # (Market-feature NaN dropout removed 2026-07 — dead code, see result model.)
 
     class_w  = compute_sample_weight("balanced", y_train)
     decay_w  = _time_decay_weights(inner["Date"])
@@ -418,8 +472,8 @@ def train_goals_model(train: pd.DataFrame, test: pd.DataFrame) -> SoftVoteEnsemb
     )
     xgb_model.fit(X_train, y_train, sample_weight=sample_weights,
                   eval_set=[(X_val, y_val)], verbose=False)
-    xgb_acc = accuracy_score(y_test, xgb_model.predict(X_test))
-    print(f"  [XGBoost] test acc={xgb_acc:.3f}")
+    xgb_acc = accuracy_score(y_val, xgb_model.predict(X_val))
+    print(f"  [XGBoost] val acc={xgb_acc:.3f}")
 
     # ── LightGBM ──────────────────────────────────────────────────────────────
     print("  [LightGBM] training …")
@@ -434,8 +488,8 @@ def train_goals_model(train: pd.DataFrame, test: pd.DataFrame) -> SoftVoteEnsemb
         eval_set=[(X_val, y_val)],
         callbacks=[lgb.early_stopping(60, verbose=False), lgb.log_evaluation(period=-1)],
     )
-    lgbm_acc = accuracy_score(y_test, lgbm_model.predict(X_test))
-    print(f"  [LightGBM] test acc={lgbm_acc:.3f}")
+    lgbm_acc = accuracy_score(y_val, lgbm_model.predict(X_val))
+    print(f"  [LightGBM] val acc={lgbm_acc:.3f}")
 
     # ── MLP ───────────────────────────────────────────────────────────────────
     print("  [MLP] training …")
@@ -449,8 +503,8 @@ def train_goals_model(train: pd.DataFrame, test: pd.DataFrame) -> SoftVoteEnsemb
         )),
     ])
     mlp_model.fit(X_train, y_train)
-    mlp_acc = accuracy_score(y_test, mlp_model.predict(X_test))
-    print(f"  [MLP]     test acc={mlp_acc:.3f}")
+    mlp_acc = accuracy_score(y_val, mlp_model.predict(X_val))
+    print(f"  [MLP]     val acc={mlp_acc:.3f}")
 
     # ── XGBoost-recent (walk-forward recency member: RECENT_CUTOFF+ only) ────
     print(f"  [XGBoost-recent] training on {RECENT_CUTOFF.year}/{str(RECENT_CUTOFF.year+1)[-2:]}+ data …")
@@ -459,15 +513,9 @@ def train_goals_model(train: pd.DataFrame, test: pd.DataFrame) -> SoftVoteEnsemb
         _n_gv = max(200, int(len(_recent_g) * 0.15))
         _g_inner = _recent_g.iloc[:-_n_gv]
         _g_val   = _recent_g.iloc[-_n_gv:]
-        _X_gi = _g_inner[GOALS_FEATURE_COLS].copy()
+        _X_gi = _g_inner[GOALS_FEATURE_COLS]
         _X_gv = _g_val[GOALS_FEATURE_COLS]
         _y_gi, _y_gv = _g_inner["target_goals"], _g_val["target_goals"]
-
-        _rng_gi = np.random.default_rng(seed=78)
-        _mask_gi = _rng_gi.random(len(_X_gi)) < MARKET_DROPOUT
-        for col in MARKET_COLS:
-            if col in _X_gi.columns:
-                _X_gi.loc[_X_gi.index[_mask_gi], col] = np.nan
 
         _sw_gi = compute_sample_weight("balanced", _y_gi)   # flat weights — no time-decay
 
@@ -480,8 +528,8 @@ def train_goals_model(train: pd.DataFrame, test: pd.DataFrame) -> SoftVoteEnsemb
         )
         xgb_recent_g.fit(_X_gi, _y_gi, sample_weight=_sw_gi,
                           eval_set=[(_X_gv, _y_gv)], verbose=False)
-        _acc_recent_g = accuracy_score(y_test, xgb_recent_g.predict(X_test))
-        print(f"  [XGBoost-recent] test acc={_acc_recent_g:.3f}  (n={len(_recent_g):,} rows)")
+        _acc_recent_g = accuracy_score(_y_gv, xgb_recent_g.predict(_X_gv))
+        print(f"  [XGBoost-recent] val acc={_acc_recent_g:.3f}  (n={len(_recent_g):,} rows)")
         ensemble = SoftVoteEnsemble([xgb_model, lgbm_model, mlp_model, xgb_recent_g], [1, 1, 1, 1])
     else:
         print(f"  [XGBoost-recent] skipped — insufficient data ({len(_recent_g):,} rows)")
@@ -511,13 +559,25 @@ def save_model(model, name: str, models_dir: str):
 
 
 def _save_training_run(metrics: dict) -> None:
-    """Persist training metrics to the DB. Silently skips if DB unavailable."""
+    """Persist training metrics to the DB. Silently skips if DB unavailable.
+
+    Keys without a TrainingRun column (e.g. the scoring-rule report) are folded
+    into the free-text `notes` JSON instead of crashing the insert."""
     try:
+        import json as _json
         from backend.app.database import SessionLocal
         from backend.app.models.training_run import TrainingRun
+        cols = {c.name for c in TrainingRun.__table__.columns}
+        known = {k: v for k, v in metrics.items() if k in cols}
+        extra = {k: v for k, v in metrics.items() if k not in cols}
+        if extra:
+            merged_notes = {"scoring": extra}
+            if known.get("notes"):
+                merged_notes["notes"] = known["notes"]
+            known["notes"] = _json.dumps(merged_notes)
         db = SessionLocal()
         try:
-            run = TrainingRun(**metrics)
+            run = TrainingRun(**known)
             db.add(run)
             db.commit()
             print(f"  Training run saved to DB (id will be assigned by DB).")

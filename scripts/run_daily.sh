@@ -217,6 +217,15 @@ docker compose exec -T backend \
     python scripts/train_national.py \
     2>&1 | tee -a "$LOG" || overall_failed=1
 
+# Re-fit the serve-path Elo blend against the fresh models (blend.json). Keeps
+# ELO_BLEND_W + elo_three_way constants evidence-based instead of hand-picked;
+# predict (step 5) reads the file.
+echo "" >> "$LOG"
+echo "[national 2b/7] Fitting Elo-blend on held-out replay …" | tee -a "$LOG"
+docker compose exec -T backend \
+    python scripts/fit_national_blend.py \
+    2>&1 | tee -a "$LOG" || overall_failed=1
+
 echo "" >> "$LOG"
 echo "[national 3/7] Re-injecting manual upcoming friendlies …" | tee -a "$LOG"
 docker compose exec -T backend \

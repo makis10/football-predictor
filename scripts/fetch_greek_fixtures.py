@@ -124,7 +124,7 @@ def compute_predictions(new_matches: list, db):
     import pandas as pd
     from sqlalchemy.dialects.postgresql import insert as pg_insert
     from backend.app.ml.features import load_raw_csvs, build_team_snapshot, compute_match_features, FEATURE_COLS
-    from backend.app.ml.predict import _get_models, MODEL_VERSION, _confidence
+    from backend.app.ml.predict import _get_models, MODEL_VERSION, _confidence, confidence_for
     from backend.app.models.prediction import Prediction
     from backend.app.ml.odds_analysis_service import fetch_all_league_odds, _teams_match
 
@@ -220,7 +220,7 @@ def compute_predictions(new_matches: list, db):
                 over_2_5_prob=round(over_p, 4),
                 goals_prediction=goals_pred,
                 model_version=MODEL_VERSION,
-                confidence=_confidence(max_prob, over_p),
+                confidence=confidence_for("GreekSL", max_prob, over_p),
             ).on_conflict_do_nothing(index_elements=["match_id"])
             db.execute(stmt)
             inserted += 1

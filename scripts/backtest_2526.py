@@ -112,6 +112,17 @@ print(f"  Models loaded. draw_alpha={draw_alpha:.2f}  btts_threshold={btts_thres
 # ── 4. Predict every eval row ─────────────────────────────────────────────────
 print(f"\nPredicting {len(df_eval):,} completed 2025-26 matches …")
 
+# Fill NaN with the SAME training medians production uses (impute_medians.json)
+# so the backtest measures the actual serving path, not a third imputation.
+try:
+    import json as _json
+    with open(os.path.join(MODELS_DIR, "impute_medians.json")) as _f:
+        _medians = {k: float(v) for k, v in _json.load(_f).items()}
+    df_eval = df_eval.fillna({k: v for k, v in _medians.items() if k in df_eval.columns})
+    print(f"  Applied {len(_medians)} training imputation medians (impute_medians.json)")
+except FileNotFoundError:
+    print("  [warn] impute_medians.json not found — evaluating with raw NaN")
+
 res_cols  = [c for c in RESULT_FEATURE_COLS if c in df_eval.columns]
 gls_cols  = [c for c in GOALS_FEATURE_COLS  if c in df_eval.columns]
 btts_cols = [c for c in BTTS_FEATURE_COLS   if c in df_eval.columns]

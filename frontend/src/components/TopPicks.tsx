@@ -12,8 +12,6 @@ interface Props {
   matches: Match[];
 }
 
-const CONF_RANK: Record<string, number> = { high: 3, medium: 2, low: 1 };
-
 function topPick(m: Match): { label: string; prob: number } | null {
   const p = m.prediction;
   if (!p) return null;
@@ -31,10 +29,11 @@ export default function TopPicks({ matches }: Props) {
   const withPreds = matches.filter((m) => m.prediction);
   if (withPreds.length === 0) return null;
 
+  // Rank by max result-probability, NOT by confidence tier: club and national
+  // define the confidence label with different formulas/thresholds (national
+  // "HIGH" needs p_max ≥ 0.65 vs club composite at 0.55), so tier-first sorting
+  // over the mixed list systematically inverts the true certainty order.
   const ranked = [...withPreds].sort((a, b) => {
-    const confA = CONF_RANK[a.prediction!.confidence] ?? 0;
-    const confB = CONF_RANK[b.prediction!.confidence] ?? 0;
-    if (confB !== confA) return confB - confA;
     const maxA = Math.max(a.prediction!.home_win_prob, a.prediction!.draw_prob, a.prediction!.away_win_prob);
     const maxB = Math.max(b.prediction!.home_win_prob, b.prediction!.draw_prob, b.prediction!.away_win_prob);
     return maxB - maxA;
