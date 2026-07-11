@@ -324,7 +324,9 @@ def _fetch_squad_positions(team_id: int) -> dict[int, str]:
         return positions
     except Exception as e:
         log.warning(f"[injuries] Squad fetch failed for team {team_id}: {e}")
-        cache_set(cache_key, {}, 24 * 3600)
+        # Short TTL on FAILURE — a transient API error must not blank squad
+        # positions for a whole day (success path keeps the 24 h TTL).
+        cache_set(cache_key, {}, 3600)
         return {}
 
 
@@ -523,7 +525,9 @@ def fetch_match_events(
         log.info(f"[events] {len(raw_events)} events for fixture {fixture_id} (remaining: {remaining})")
     except Exception as exc:
         log.warning(f"[events] Events fetch failed for fixture {fixture_id}: {exc}")
-        cache_set(events_key, None, 24 * 3600)
+        # Short TTL on FAILURE (success path keeps 24 h) — don't blank a
+        # postmortem's events for a day over one transient error.
+        cache_set(events_key, None, 3600)
         return None
 
     lines: list[str] = []

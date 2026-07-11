@@ -31,6 +31,11 @@ API_BASE = "https://v3.football.api-sports.io"
 API_KEY  = os.getenv("API_SPORTS_KEY", "")
 HEADERS  = {"x-apisports-key": API_KEY}
 ID_CACHE = ROOT / "backend" / "data" / "models" / "club_team_ids.json"
+# our DB name → the exact name API-Football uses (= the name stored in
+# team_match_stats / player_match_stats rows). Learned automatically from
+# fixture responses; consumed by club_props._api_name so the read side never
+# needs slug guessing for teams we ingest.
+NAME_MAP = ROOT / "backend" / "data" / "models" / "club_name_map.json"
 
 # our league code → API-Football league id (mirrors odds_analysis_service).
 LEAGUE_IDS = {
@@ -53,6 +58,17 @@ NAME_OVERRIDES = {
     "Mainz": "FSV Mainz 05", "Wolfsburg": "VfL Wolfsburg",
     "Hoffenheim": "1899 Hoffenheim", "Gladbach": "Borussia Mönchengladbach",
     "AEK": "AEK Athens FC", "PAOK": "PAOK", "Leganes": "Leganes",
+    # GreekSL — API names carry city suffixes / different spellings
+    "Olympiakos": "Olympiakos Piraeus", "Aris": "Aris Thessalonikis",
+    "Levadeiakos": "Levadiakos", "OFI Crete": "OFI",
+    # Eredivisie — API prefixes (PEC/ADO/Fortuna/…) that the slug can't bridge
+    "Zwolle": "PEC Zwolle", "Den Haag": "ADO Den Haag",
+    "Sittard": "Fortuna Sittard", "Go Ahead": "GO Ahead Eagles",
+    "Sparta": "Sparta Rotterdam",
+    # Friendly opponents / lower divisions — resolved via /teams?search fallback
+    "Graafschap": "De Graafschap", "Volendam": "FC Volendam",
+    "Bochum": "VfL Bochum", "Almere City": "Almere City FC",
+    "Accrington": "Accrington ST",
 }
 
 
@@ -73,7 +89,16 @@ def _get(path, params, budget):
     budget.hit()
     r = get_with_retry(f"{API_BASE}{path}", headers=HEADERS, params=params, timeout=20)
     r.raise_for_status()
-    return r.json()
+    body = r.json()
+    errs = body.get("errors")
+    # API-Football signals quota/plan errors as HTTP 200 + an errors dict —
+    # without this check an exhausted quota silently looks like "0 fixtures".
+    if errs:
+        if isinstance(errs, dict) and "requests" in errs:
+            raise SystemExit(f"[fatal] API-Football daily quota exhausted: {errs['requests']}")
+        raise RuntimeError(f"API-Football error: {errs}")
+    return body
+
 
 
 def _to_int(v):
@@ -97,6 +122,13 @@ def build_id_cache(our_teams: set[str], season: int, budget: Budget) -> dict:
             break
         try:
             resp = _get("/teams", {"league": lid, "season": season}, budget).get("response", [])
+            # In July/August the new season may not be registered on API-Football
+            # yet (empty list) — fall back to the previous season's team list
+            # (same team ids, only promoted/relegated sides differ).
+            if not resp and budget.ok():
+                resp = _get("/teams", {"league": lid, "season": season - 1}, budget).get("response", [])
+                if resp:
+                    print(f"  [info] /teams {code}: season {season} empty — using {season - 1}")
         except Exception as e:
             print(f"  [warn] /teams {code}: {e}"); continue
         for t in resp:
@@ -106,6 +138,29 @@ def build_id_cache(our_teams: set[str], season: int, budget: Budget) -> dict:
             if our:
                 cache[our] = api_id
                 matched.add(our)
+    # Fallback: /teams?search= for teams outside the tracked leagues (friendly
+    # opponents from lower divisions, e.g. Chesterfield, De Graafschap). Only
+    # accept a result whose slug matches the target (or its override) exactly —
+    # a fuzzy hit on the wrong club would poison the cache.
+    for team in sorted(our_teams - matched):
+        if not budget.ok():
+            break
+        target = NAME_OVERRIDES.get(team, team)
+        if len(target) < 3:
+            continue  # API requires >= 3 chars
+        try:
+            resp = _get("/teams", {"search": target}, budget).get("response", [])
+        except Exception as e:
+            print(f"  [warn] /teams search '{team}': {e}"); continue
+        tslug = _slug(target)
+        hit = next((t for t in resp if _slug(t["team"]["name"]) == tslug), None)
+        if hit is None and len(resp) == 1:
+            hit = resp[0]  # unambiguous single result
+        if hit:
+            cache[team] = hit["team"]["id"]
+            matched.add(team)
+            print(f"  [search] {team} → {hit['team']['name']} (id {hit['team']['id']})")
+
     unmatched = sorted(our_teams - matched)
     print(f"  resolved {len(matched)}/{len(our_teams)} club teams "
           f"({budget.used} API calls).")
@@ -151,7 +206,10 @@ def main() -> None:
         cache = {}
         if ID_CACHE.exists() and not args.refresh_ids:
             cache = json.loads(ID_CACHE.read_text())
-        missing = [t for t in target if t not in cache]
+        # Treat null-valued entries as missing too: earlier runs cached
+        # unresolved teams as None, which permanently blocked re-resolution
+        # (the Greek league outage — see 2026-07-11).
+        missing = [t for t in target if cache.get(t) is None]
         if missing or args.refresh_ids:
             cache = {**cache, **build_id_cache(set(target) | set(cache), season, budget)}
             ID_CACHE.parent.mkdir(parents=True, exist_ok=True)
@@ -161,6 +219,12 @@ def main() -> None:
             text("SELECT DISTINCT fixture_id FROM team_match_stats")).fetchall()}
 
         n_fx = n_rows = 0
+        name_map: dict[str, str] = {}
+        if NAME_MAP.exists():
+            try:
+                name_map = json.loads(NAME_MAP.read_text())
+            except Exception:
+                name_map = {}
         for team in target:
             if not budget.ok():
                 print("  [budget] cap reached."); break
@@ -171,6 +235,19 @@ def main() -> None:
                 fx = _get("/fixtures", {"team": tid, "last": args.last}, budget).get("response", [])
             except Exception as e:
                 print(f"  [warn] fixtures {team}: {e}"); continue
+            # Learn the exact API-Football spelling for this team (the name the
+            # stats rows are stored under) from the fixture header — no extra
+            # API credits, keeps club_props._api_name exact instead of fuzzy.
+            for f in fx:
+                for side in ("home", "away"):
+                    t_blk = f["teams"][side]
+                    if t_blk["id"] == tid and t_blk.get("name"):
+                        if name_map.get(team) != t_blk["name"]:
+                            name_map[team] = t_blk["name"]
+                        break
+                else:
+                    continue
+                break
             for f in fx:
                 if not budget.ok():
                     break
@@ -206,7 +283,9 @@ def main() -> None:
                 db.commit()
                 have.add(fid); n_fx += 1; n_rows += 2
             print(f"  {team}: {n_fx} fixtures so far  [req {budget.used}]")
-        print(f"\nDone. {n_fx} new fixtures, {n_rows} rows, {budget.used} API requests.")
+        NAME_MAP.write_text(json.dumps(name_map, indent=2, ensure_ascii=False, sort_keys=True))
+        print(f"\nDone. {n_fx} new fixtures, {n_rows} rows, {budget.used} API requests. "
+              f"Name map: {len(name_map)} teams → {NAME_MAP.name}")
     finally:
         db.close()
 

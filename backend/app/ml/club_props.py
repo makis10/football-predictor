@@ -26,6 +26,16 @@ NAME_OVERRIDES = {
     "Greuther Furth": "SpVgg Greuther Fürth", "Leverkusen": "Bayer Leverkusen",
     "Mainz": "FSV Mainz 05", "Wolfsburg": "VfL Wolfsburg",
     "Hoffenheim": "1899 Hoffenheim", "Gladbach": "Borussia Mönchengladbach",
+    # GreekSL — API names carry city suffixes / different spellings
+    "AEK": "AEK Athens FC", "Olympiakos": "Olympiakos Piraeus",
+    "Aris": "Aris Thessalonikis", "Levadeiakos": "Levadiakos",
+    "OFI Crete": "OFI",
+    # Eredivisie — API prefixes (PEC/ADO/Fortuna/…) that the slug can't bridge
+    "Zwolle": "PEC Zwolle", "Den Haag": "ADO Den Haag",
+    "Sittard": "Fortuna Sittard", "Go Ahead": "GO Ahead Eagles",
+    "Sparta": "Sparta Rotterdam",
+    # Friendly opponents stored via their tracked-league rivals' fixtures
+    "Graafschap": "De Graafschap",
 }
 
 
@@ -34,9 +44,42 @@ def _slug(name: str) -> str:
     return re.sub(r"[^a-z0-9]", "", s.lower())
 
 
+_NAME_MAP_PATH = None  # resolved lazily; module lives under backend/app/ml
+_name_map_cache: "tuple[float, dict] | None" = None
+
+
+def _learned_name_map() -> dict:
+    """club_name_map.json — exact our-name → API-name mapping learned by
+    fetch_club_team_stats.py from fixture responses. Reloaded every 30 min."""
+    global _NAME_MAP_PATH, _name_map_cache
+    import json
+    import os
+    import time
+    if _NAME_MAP_PATH is None:
+        _NAME_MAP_PATH = os.path.join(
+            os.path.dirname(__file__), "..", "..", "data", "models", "club_name_map.json")
+    now = time.time()
+    if _name_map_cache is not None and now - _name_map_cache[0] < 1800:
+        return _name_map_cache[1]
+    try:
+        with open(_NAME_MAP_PATH) as f:
+            m = json.load(f)
+    except Exception:
+        m = {}
+    _name_map_cache = (now, m)
+    return m
+
+
 def _api_name(db, our_name: str) -> str | None:
     """Resolve our DB team name → the name stored in team_match_stats (API name)."""
     from sqlalchemy import text
+    # 1. Exact learned mapping (written by the ingestion script) — no guessing.
+    learned = _learned_name_map().get(our_name)
+    if learned:
+        hit = db.execute(text("SELECT 1 FROM team_match_stats WHERE team = :t LIMIT 1"),
+                         {"t": learned}).fetchone()
+        if hit:
+            return learned
     if our_name in NAME_OVERRIDES:
         target = NAME_OVERRIDES[our_name]
     else:

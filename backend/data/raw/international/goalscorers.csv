@@ -47885,8 +47885,8 @@ date,home_team,away_team,team,scorer,minute,own_goal,penalty
 2026-07-07,Argentina,Egypt,Argentina,Cristian Romero,79.0,False,False
 2026-07-07,Argentina,Egypt,Argentina,Lionel Messi,83.0,False,False
 2026-07-07,Argentina,Egypt,Argentina,Enzo Fernández,90.0,False,False
-2026-06-30,Netherlands,Morocco,Netherlands,Cody Gakpo,,False,False
-2026-06-30,Netherlands,Morocco,Morocco,Issa Diop,,False,False
+2026-07-09,France,Morocco,France,Kylian Mbappé,60.0,False,False
+2026-07-09,France,Morocco,France,Ousmane Dembélé,66.0,False,False
 2026-07-02,Bosnia and Herzegovina,United States,United States,Malik Tillman,,False,False
 2026-07-02,Bosnia and Herzegovina,United States,United States,Folarin Balogun,,False,False
 2026-07-01,Mexico,Ecuador,Mexico,Raúl Jiménez,,False,False
@@ -47906,5 +47906,10 @@ date,home_team,away_team,team,scorer,minute,own_goal,penalty
 2026-07-07,United States,Belgium,Belgium,Romelu Lukaku,,False,False
 2026-07-03,Sligo Rovers,Shamrock Rovers,Sligo Rovers,W. Fitzgerald,,False,False
 2026-07-03,Sligo Rovers,Shamrock Rovers,Shamrock Rovers,J. Byrne,,False,False
-2026-07-09,France,Morocco,France,Ousmane Dembélé,,False,False
-2026-07-09,France,Morocco,France,Kylian Mbappé,,False,False
+2026-07-03,Derry City,Waterford,Waterford,T. Lonergan,,False,False
+2026-07-03,Derry City,Waterford,Waterford,T. Lonergan,,False,False
+2026-07-04,FF Jaro,Ilves,FF Jaro,R. Vikström,,False,False
+2026-07-04,FF Jaro,Ilves,FF Jaro,H. Sjögrell,,False,False
+2026-07-10,Spain,Belgium,Spain,Fabián Ruiz,,False,False
+2026-07-10,Spain,Belgium,Spain,Mikel Merino,,False,False
+2026-07-10,Spain,Belgium,Belgium,Charles De Ketelaere,,False,False

@@ -42,7 +42,16 @@ def _get(path, params, budget):
     budget.hit()
     r = get_with_retry(f"{API_BASE}{path}", headers=HEADERS, params=params, timeout=20)
     r.raise_for_status()
-    return r.json()
+    body = r.json()
+    errs = body.get("errors")
+    # API-Football signals quota/plan errors as HTTP 200 + an errors dict —
+    # without this check an exhausted quota silently looks like "0 fixtures".
+    if errs:
+        if isinstance(errs, dict) and "requests" in errs:
+            raise SystemExit(f"[fatal] API-Football daily quota exhausted: {errs['requests']}")
+        raise RuntimeError(f"API-Football error: {errs}")
+    return body
+
 
 
 def main() -> None:
@@ -74,7 +83,7 @@ def main() -> None:
             "UNION SELECT DISTINCT away_team FROM matches WHERE away_goals IS NULL "
             "AND match_date BETWEEN :lo AND :hi"
         ), {"lo": date.today().isoformat(), "hi": hi}).fetchall()
-        target = [t for t in sorted({r[0] for r in rows}) if t in cache]
+        target = [t for t in sorted({r[0] for r in rows}) if cache.get(t)]  # skip null-cached (unresolved) teams
         print(f"{len(target)} club teams (with resolved ids) to ingest.")
 
         have = {r[0] for r in db.execute(

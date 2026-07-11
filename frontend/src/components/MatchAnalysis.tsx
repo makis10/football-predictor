@@ -127,7 +127,6 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
   const [loading, setLoading] = useState(true);
   const [error, setError]     = useState<string | null>(null);
   const [tab, setTab]             = useState<"model" | "bookmakers">("model");
-  const [advancedOpen, setAdvancedOpen] = useState(false);
 
   useEffect(() => {
     // The analysis API requires a session (freemium gate in /api/proxy) —
@@ -417,22 +416,13 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
               </div>
             </div>
 
-            {/* Advanced Stats — collapsible, hidden when models disagree */}
+            {/* Advanced Stats — always expanded, hidden when models disagree */}
             {!modelsDisagree && <div className="border-t border-pitch-700 pt-3">
-              <button
-                onClick={() => setAdvancedOpen(o => !o)}
-                className="flex items-center gap-2 w-full text-left"
-              >
-                <span className="text-xs font-semibold text-gray-400 uppercase tracking-wider">
-                  Αναλυτικές Στατιστικές
-                </span>
-                <span className="text-gray-600 text-xs ml-auto">
-                  {advancedOpen ? "▲" : "▼"}
-                </span>
-              </button>
+              <span className="text-xs font-semibold text-gray-400 uppercase tracking-wider">
+                Αναλυτικές Στατιστικές
+              </span>
 
-              {advancedOpen && (
-                <div className="mt-3 space-y-4">
+              <div className="mt-3 space-y-4">
                   {/* Correct Scores */}
                   {(() => {
                     // Find dominant combo category and the most likely score within it.
@@ -523,7 +513,6 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
                     </div>
                   </div>
                 </div>
-              )}
             </div>}
           </>
         );

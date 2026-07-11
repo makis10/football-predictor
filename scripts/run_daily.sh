@@ -466,6 +466,17 @@ if [ "$DAY_OF_WEEK" -eq 1 ]; then
     echo "Weekly retrain complete at $(date '+%Y-%m-%d %H:%M:%S')" | tee -a "$LOG"
 fi
 
+# ── Data-completeness healthcheck ────────────────────────────────────────────
+# Audits every ingestion seam (team ids, stats coverage, name maps, club form,
+# odds match rate) for fixtures in the next 7 days. ALERT lines land in the log
+# and flip overall_failed so the heartbeat is skipped and the monitor fires —
+# silent "—" panels on match pages have shipped more than once.
+echo "" >> "$LOG"
+echo "[health] Data-completeness check …" | tee -a "$LOG"
+docker compose exec -T backend \
+    python scripts/check_data_completeness.py --days 7 \
+    2>&1 | tee -a "$LOG" || overall_failed=1
+
 # ── Dead-man's-switch heartbeat ──────────────────────────────────────────────
 # Ping a monitor (e.g. healthchecks.io) on successful completion. If launchd
 # never fires or the job dies before here, the ping is missed and the monitor

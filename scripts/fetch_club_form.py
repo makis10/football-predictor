@@ -69,7 +69,16 @@ def _get(path: str, params: dict, budget: Budget) -> dict:
     budget.hit()
     r = get_with_retry(f"{API_BASE}{path}", headers=HEADERS, params=params, timeout=20)
     r.raise_for_status()
-    return r.json()
+    body = r.json()
+    errs = body.get("errors")
+    # API-Football signals quota/plan errors as HTTP 200 + an errors dict —
+    # without this check an exhausted quota silently looks like "0 fixtures".
+    if errs:
+        if isinstance(errs, dict) and "requests" in errs:
+            raise SystemExit(f"[fatal] API-Football daily quota exhausted: {errs['requests']}")
+        raise RuntimeError(f"API-Football error: {errs}")
+    return body
+
 
 
 def _is_national_block(team_name: str, league_name: str, national_names: set[str]) -> bool:
@@ -161,11 +170,15 @@ def main() -> None:
             """
         )).fetchall()
 
-        # Skip rows refreshed recently (idempotent).
+        # Skip rows refreshed recently (idempotent) — but NEVER skip rows
+        # without a usable rate (g90 IS NULL): those are exactly the ones the
+        # season-rollover overwrite damaged, and skipping them for a week
+        # would freeze the damage. They retry daily until a rate lands.
         fresh_cut = datetime.now(timezone.utc) - timedelta(days=args.max_age_days)
         fresh = {
             r[0] for r in db.execute(text(
-                "SELECT player_id FROM player_club_form WHERE updated_at >= :cut"
+                "SELECT player_id FROM player_club_form "
+                "WHERE updated_at >= :cut AND g90 IS NOT NULL"
             ), {"cut": fresh_cut}).fetchall()
         }
 
@@ -185,12 +198,29 @@ def main() -> None:
             except Exception as e:
                 print(f"  [warn] /players failed for {pname} ({pid}): {e}"); continue
             resp = data.get("response", [])
-            if not resp:
+            agg = (aggregate_club(resp[0].get("statistics", []), national_names)
+                   if resp else None)
+            agg_season = season
+            # Season-rollover fallback (July–Sept): the new club season has no
+            # minutes yet, so a current-season row would OVERWRITE last season's
+            # usable g90 with None. Use the previous season's rates instead
+            # until the player accrues MIN_CLUB_MIN minutes in the new one.
+            if (agg is None or agg["g90"] is None) and budget.ok():
+                try:
+                    prev = _get("/players", {"id": pid, "season": season - 1}, budget)
+                    presp = prev.get("response", [])
+                    if presp:
+                        pagg = aggregate_club(presp[0].get("statistics", []), national_names)
+                        if pagg["g90"] is not None:
+                            agg = pagg
+                            agg_season = season - 1
+                except Exception:
+                    pass
+            if agg is None:
                 continue
-            agg = aggregate_club(resp[0].get("statistics", []), national_names)
             vals = {
                 "player_id": pid, "player_name": pname,
-                "season": season, **agg,
+                "season": agg_season, **agg,
                 "updated_at": datetime.now(timezone.utc),
             }
             stmt = pg_insert(PlayerClubForm).values(**vals)

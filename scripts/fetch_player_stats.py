@@ -65,6 +65,7 @@ NAME_TO_API = {
     "Bosnia and Herzegovina": "Bosnia",
     "Republic of Ireland":    "Ireland",
     "China PR":       "China",
+    "Curaçao":        "Curacao",   # accented form fails the API search
 }
 
 
@@ -82,7 +83,16 @@ def _get(path: str, params: dict, budget: Budget) -> dict:
     budget.hit()
     r = get_with_retry(f"{API_BASE}{path}", headers=HEADERS, params=params, timeout=20)
     r.raise_for_status()
-    return r.json()
+    body = r.json()
+    errs = body.get("errors")
+    # API-Football signals quota/plan errors as HTTP 200 + an errors dict —
+    # without this check an exhausted quota silently looks like "0 fixtures".
+    if errs:
+        if isinstance(errs, dict) and "requests" in errs:
+            raise SystemExit(f"[fatal] API-Football daily quota exhausted: {errs['requests']}")
+        raise RuntimeError(f"API-Football error: {errs}")
+    return body
+
 
 
 def _load_id_cache() -> dict:
@@ -98,7 +108,9 @@ def _save_id_cache(cache: dict) -> None:
 
 
 def resolve_team_id(name: str, cache: dict, budget: Budget) -> int | None:
-    if name in cache:
+    # Treat null-cached entries as unresolved so a failed search can retry
+    # later (a cached None used to block re-resolution forever).
+    if cache.get(name) is not None:
         return cache[name]
     if not budget.ok():
         return None
@@ -116,6 +128,9 @@ def resolve_team_id(name: str, cache: dict, budget: Budget) -> int | None:
             best = tm["id"]; break
     if best is None and data.get("response"):
         best = data["response"][0]["team"]["id"]
+    if best is None:
+        print(f"  [warn] no team id found for {name!r} — will retry next run")
+        return None
     cache[name] = best
     _save_id_cache(cache)
     return best
