@@ -552,6 +552,21 @@ export type LeagueCode = (typeof LEAGUES)[number]["code"];
  *  club fixture lists. Not a real league in LEAGUES — routed to /national. */
 export const INTERNATIONAL_LEAGUE = "International";
 
+/**
+ * Resolve a user-supplied league string (query param — any case) to its
+ * canonical code, or undefined when we don't cover that league. Callers must
+ * NOT forward an unresolved code to the API: the backend answers 400 for
+ * unknown leagues, which the fixture grids used to swallow and misreport as
+ * "Could not reach the API" (e.g. ?league=Brasileirao — a league we simply
+ * don't carry).
+ */
+export function canonicalLeagueCode(input?: string): string | undefined {
+  if (!input) return undefined;
+  const low = input.toLowerCase();
+  if (low === INTERNATIONAL_LEAGUE.toLowerCase()) return INTERNATIONAL_LEAGUE;
+  return LEAGUES.find((l) => l.code.toLowerCase() === low)?.code;
+}
+
 export function leagueLabel(code: string): string {
   if (code === INTERNATIONAL_LEAGUE) return "International";
   return LEAGUES.find((l) => l.code === code)?.label ?? code;

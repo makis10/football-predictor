@@ -3,7 +3,7 @@ export const dynamic = "force-dynamic";
 
 import { Suspense } from "react";
 import Link from "next/link";
-import { getMatches, getPastNationalMatches, formatLongDate, athensDate, INTERNATIONAL_LEAGUE, type Match } from "@/lib/api";
+import { getMatches, getPastNationalMatches, formatLongDate, athensDate, canonicalLeagueCode, INTERNATIONAL_LEAGUE, type Match } from "@/lib/api";
 import { accuracySummary, gradeMatch, hasResult } from "@/lib/matchGrade";
 import LeagueFilter from "@/components/LeagueFilter";
 import RecentResultCard from "@/components/RecentResultCard";
@@ -212,7 +212,11 @@ async function RecentGrid({ league, page }: { league?: string; page: number }) {
 
 export default async function RecentResultsPage({ searchParams }: PageProps) {
   const sp = await searchParams;
-  const league = sp.league;
+  // Resolve to the canonical code (case-insensitive); a league we don't cover
+  // renders an honest "not supported" panel instead of the API's 400 being
+  // swallowed and misreported as a connectivity error.
+  const league = canonicalLeagueCode(sp.league);
+  const unknownLeague = sp.league && !league ? sp.league : undefined;
   const page = Math.max(1, Number(sp.page ?? "1"));
 
   const buildHref = (p: number) => {
@@ -238,20 +242,30 @@ export default async function RecentResultsPage({ searchParams }: PageProps) {
       </div>
 
       <Suspense>
-        <LeagueFilter active={league} basePath="/recent" />
+        <LeagueFilter active={sp.league} basePath="/recent" />
       </Suspense>
 
-      <Suspense
-        fallback={
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
-            {Array.from({ length: 8 }).map((_, i) => (
-              <div key={i} className="rounded-xl h-36 animate-pulse bg-pitch-800" />
-            ))}
-          </div>
-        }
-      >
-        <RecentGrid league={league} page={page} />
-      </Suspense>
+      {unknownLeague ? (
+        <div className="text-center py-16 text-gray-500">
+          <p className="text-4xl mb-3">🔍</p>
+          <p className="font-medium">
+            League &ldquo;{unknownLeague}&rdquo; isn&apos;t covered (yet).
+          </p>
+          <p className="text-sm mt-1">Pick one of the leagues above.</p>
+        </div>
+      ) : (
+        <Suspense
+          fallback={
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
+              {Array.from({ length: 8 }).map((_, i) => (
+                <div key={i} className="rounded-xl h-36 animate-pulse bg-pitch-800" />
+              ))}
+            </div>
+          }
+        >
+          <RecentGrid league={league} page={page} />
+        </Suspense>
+      )}
 
       {/* Pagination */}
       <div className="flex items-center justify-center gap-3 pt-4">

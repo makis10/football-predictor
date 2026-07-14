@@ -8,6 +8,7 @@ import {
   getUpcomingNationalMatches,
   getWcReview,
   athensDate,
+  canonicalLeagueCode,
   formatLongDate,
   INTERNATIONAL_LEAGUE,
   type WcReview,
@@ -150,7 +151,11 @@ async function UpcomingGrid({
 
 export default async function HomePage({ searchParams }: PageProps) {
   const sp = await searchParams;
-  const league        = sp.league;
+  // Resolve to the canonical code (case-insensitive). A league we don't cover
+  // (e.g. ?league=Brasileirao) renders an honest "not supported" panel below
+  // instead of a 400 from the API dressed up as a connectivity error.
+  const league        = canonicalLeagueCode(sp.league);
+  const unknownLeague = sp.league && !league ? sp.league : undefined;
   const minOdds       = sp.min_odds ? Number(sp.min_odds) : undefined;
   const minConfidence = sp.min_confidence || undefined;
 
@@ -195,7 +200,7 @@ export default async function HomePage({ searchParams }: PageProps) {
       ) : null}
 
       <Suspense>
-        <LeagueFilter active={league} />
+        <LeagueFilter active={sp.league} />
       </Suspense>
 
       <div className="flex flex-wrap gap-x-6 gap-y-2">
@@ -208,17 +213,27 @@ export default async function HomePage({ searchParams }: PageProps) {
       </div>
 
       <div className="space-y-8">
-        <Suspense
-          fallback={
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-              {Array.from({ length: 8 }).map((_, i) => (
-                <div key={i} className="card p-4 h-36 animate-pulse bg-pitch-800" />
-              ))}
-            </div>
-          }
-        >
-          <UpcomingGrid league={league} minOdds={minOdds} minConfidence={minConfidence} showPicks={(!league && !minOdds && !minConfidence) || locked} locked={locked} />
-        </Suspense>
+        {unknownLeague ? (
+          <div className="col-span-full text-center py-16 text-gray-500">
+            <p className="text-4xl mb-3">🔍</p>
+            <p className="font-medium">
+              League &ldquo;{unknownLeague}&rdquo; isn&apos;t covered (yet).
+            </p>
+            <p className="text-sm mt-1">Pick one of the leagues above.</p>
+          </div>
+        ) : (
+          <Suspense
+            fallback={
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                {Array.from({ length: 8 }).map((_, i) => (
+                  <div key={i} className="card p-4 h-36 animate-pulse bg-pitch-800" />
+                ))}
+              </div>
+            }
+          >
+            <UpcomingGrid league={league} minOdds={minOdds} minConfidence={minConfidence} showPicks={(!league && !minOdds && !minConfidence) || locked} locked={locked} />
+          </Suspense>
+        )}
       </div>
     </div>
   );
