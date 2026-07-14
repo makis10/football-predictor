@@ -229,6 +229,13 @@ def load_results(data_dir: str | Path) -> tuple[pd.DataFrame, pd.DataFrame]:
     df["date"] = pd.to_datetime(df["date"], errors="coerce")
     df["neutral"] = df["neutral"].str.upper().isin({"TRUE", "1", "YES"})
 
+    # Drop rows without BOTH team names. Knockout-slot fixtures (WC final /
+    # 3rd-place match) sit in the dataset with empty teams until the previous
+    # round settles them — predicting "nan vs nan" crashed the DB save.
+    has_teams = (df["home_team"].notna() & (df["home_team"].str.upper() != "NA") &
+                 df["away_team"].notna() & (df["away_team"].str.upper() != "NA"))
+    df = df[has_teams].copy()
+
     # Split: upcoming = NA scores
     mask_played = df["home_score"].notna() & (df["home_score"] != "NA")
     historical = df[mask_played].copy()

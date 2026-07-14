@@ -79,7 +79,8 @@ def _adjust_prediction_embed(match_id: int, pred, league: "str | None" = None) -
 
 VALID_LEAGUES = {
     "EPL", "LaLiga", "SerieA", "Bundesliga", "Ligue1", "GreekSL", "CL", "EL", "ECL",
-    "Championship", "LeagueOne", "PrimeiraLiga", "Eredivisie", "ClubFriendly",
+    "Championship", "LeagueOne", "PrimeiraLiga", "Eredivisie", "BrazilSerieA",
+    "ClubFriendly",
 }
 
 

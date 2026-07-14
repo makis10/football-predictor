@@ -170,10 +170,10 @@ docker compose exec -T backend \
 echo "" >> "$LOG"
 echo "[8b/9] Ingesting club team + player stats (props source) …" | tee -a "$LOG"
 docker compose exec -T backend \
-    python scripts/fetch_club_team_stats.py --days-ahead 5 --last 8 --max-requests 1200 \
+    python scripts/fetch_club_team_stats.py --days-ahead 7 --last 8 --max-requests 1200 \
     2>&1 | tee -a "$LOG" || echo "  [warn] club team stats failed — continuing" | tee -a "$LOG"
 docker compose exec -T backend \
-    python scripts/fetch_club_player_stats.py --days-ahead 5 --last 8 --max-requests 2000 \
+    python scripts/fetch_club_player_stats.py --days-ahead 7 --last 8 --max-requests 2000 \
     2>&1 | tee -a "$LOG" || echo "  [warn] club player stats failed — continuing" | tee -a "$LOG"
 
 # ── National teams (international fixtures) ───────────────────────────────────

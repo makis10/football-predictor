@@ -470,13 +470,27 @@ def get_match_analysis(match_id: int, request: Request, db: Session = Depends(ge
             snapshot_age_hours=age_hours,
         )
 
-    # ── Extended Poisson stats (serve-time, from stored λ values) ────────────
+    # ── Extended Poisson stats — λ FITTED to the served probabilities ────────
+    # The score grid / combo markets must cohere with the headline 1×2 / Over /
+    # BTTS numbers (calibrated classifiers), so we solve for λ + ρ that
+    # reproduce them instead of reusing the feature-state λ — a different
+    # engine that regularly disagreed (e.g. "GG+Over 41%" beside "NG 65%").
     poisson_stats_typed: PoissonStats | None = None
-    lam_h = getattr(pred, "poisson_lambda_home", None)
-    lam_a = getattr(pred, "poisson_lambda_away", None)
+    from backend.app.ml.poisson import (
+        compute_extended_poisson_stats, fit_lambdas_to_probs, DC_RHO,
+    )
+    rho, diag, diag0 = DC_RHO, 1.0, 1.0
+    fitted = fit_lambdas_to_probs(
+        pred.home_win_prob, pred.away_win_prob, pred.over_2_5_prob,
+        p_btts=getattr(pred, "btts_prob", None),
+    )
+    if fitted:
+        lam_h, lam_a, rho, diag, diag0 = fitted
+    else:  # degenerate stored probs — fall back to the feature-state λ
+        lam_h = getattr(pred, "poisson_lambda_home", None)
+        lam_a = getattr(pred, "poisson_lambda_away", None)
     if lam_h and lam_a and lam_h > 0 and lam_a > 0:
-        from backend.app.ml.poisson import compute_extended_poisson_stats
-        ps = compute_extended_poisson_stats(lam_h, lam_a)
+        ps = compute_extended_poisson_stats(lam_h, lam_a, rho=rho, diag=diag, diag0=diag0)
         poisson_stats_typed = PoissonStats(
             over_1_5=ps["over_1_5"],
             under_1_5=ps["under_1_5"],

@@ -69,6 +69,9 @@ NAME_OVERRIDES = {
     "Graafschap": "De Graafschap", "Volendam": "FC Volendam",
     "Bochum": "VfL Bochum", "Almere City": "Almere City FC",
     "Accrington": "Accrington ST",
+    # Brazil Serie A — CSV names vs API-Football names
+    "Botafogo RJ": "Botafogo", "Bragantino": "RB Bragantino",
+    "Vasco": "Vasco DA Gama",
 }
 
 

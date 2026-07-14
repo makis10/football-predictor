@@ -156,11 +156,139 @@ def compute_poisson_probs(
     }
 
 
+def _score_matrix(
+    lam_h: float,
+    lam_a: float,
+    rho: float = 0.0,
+    diag: float = 1.0,
+    diag0: float = 1.0,
+    max_goals: int = MAX_GOALS,
+) -> "list[list[float]]":
+    """Normalised score matrix: independent Poisson × Dixon-Coles τ × two draw
+    adjustment factors — `diag0` scales the 0-0 cell (NG draw), `diag` scales
+    the scoring draws (1-1, 2-2, …). The split gives fit_lambdas_to_probs()
+    independent control over P(draw) and P(btts), which a single uniform
+    diagonal factor (or ρ alone) cannot reconcile."""
+    hp = [_poisson_pmf(i, lam_h) for i in range(max_goals + 1)]
+    ap = [_poisson_pmf(j, lam_a) for j in range(max_goals + 1)]
+
+    def _f(i: int, j: int) -> float:
+        if i != j:
+            return 1.0
+        return diag0 if i == 0 else diag
+
+    m = [[hp[i] * ap[j] * _dc_tau(i, j, lam_h, lam_a, rho) * _f(i, j)
+          for j in range(max_goals + 1)] for i in range(max_goals + 1)]
+    total = sum(sum(r) for r in m)
+    if total > 0:
+        m = [[v / total for v in r] for r in m]
+    return m
+
+
+def _matrix_summary(m: "list[list[float]]") -> dict:
+    n = len(m)
+    s = {"home_win": 0.0, "draw": 0.0, "away_win": 0.0, "over_2_5": 0.0, "btts": 0.0}
+    for i in range(n):
+        for j in range(n):
+            p = m[i][j]
+            if i > j:   s["home_win"] += p
+            elif i == j: s["draw"]    += p
+            else:        s["away_win"] += p
+            if i + j > 2.5:      s["over_2_5"] += p
+            if i >= 1 and j >= 1: s["btts"]    += p
+    return s
+
+
+def fit_lambdas_to_probs(
+    p_home: float,
+    p_away: float,
+    p_over: float,
+    p_btts: "float | None" = None,
+    max_goals: int = MAX_GOALS,
+) -> "tuple[float, float, float, float, float] | None":
+    """
+    Solve (λ_home, λ_away, ρ, diag, diag0) so the score matrix REPRODUCES the
+    served match probabilities. Used by the analysis panels so the correct-score
+    grid / combo markets / goal lines cohere with the headline 1×2 / Over / BTTS
+    numbers instead of coming from an independent engine (raw Elo or
+    feature-state λ), which made e.g. "GG+Over 41%" sit next to "NG 65%".
+
+    Four knobs ↔ four targets, each 1-D monotone, solved by coordinate
+    bisection sweeps (weakly coupled — 3 sweeps converge):
+      total T = λh+λa      ←  P(over 2.5)
+      diff  D = λh−λa      ←  P(home) − P(away)
+      diag  (1-1, 2-2, …)  ←  P(btts)   (scoring draws; optional target)
+      diag0 (0-0)          ←  P(draw)   (the btts-neutral draw mass)
+
+    ρ is fixed at 0 — the two diagonal factors supersede it here. Returns None
+    when inputs are unusable (NaN / degenerate).
+    """
+    try:
+        p_home, p_away, p_over = float(p_home), float(p_away), float(p_over)
+    except (TypeError, ValueError):
+        return None
+    if not (0.0 < p_over < 1.0) or math.isnan(p_home) or math.isnan(p_away):
+        return None
+    p_draw = 1.0 - p_home - p_away
+    if not (0.005 < p_draw < 0.95):
+        return None
+    supremacy = p_home - p_away
+    want_btts = None
+    if p_btts is not None:
+        try:
+            b = float(p_btts)
+            if 0.0 < b < 1.0 and not math.isnan(b):
+                want_btts = b
+        except (TypeError, ValueError):
+            pass
+
+    def _summary(T, D, diag, diag0):
+        lh = max(0.05, (T + D) / 2.0)
+        la = max(0.05, (T - D) / 2.0)
+        return _matrix_summary(_score_matrix(lh, la, 0.0, diag, diag0, max_goals))
+
+    T, D, diag, diag0 = 2.6, 0.0, 1.0, 1.0
+    for _ in range(3):  # coordinate sweeps
+        lo, hi = 0.3, 8.0                      # T ← over 2.5
+        for _i in range(28):
+            mid = (lo + hi) / 2.0
+            if _summary(mid, D, diag, diag0)["over_2_5"] < p_over: lo = mid
+            else: hi = mid
+        T = (lo + hi) / 2.0
+        lo, hi = -(T - 0.1), (T - 0.1)         # D ← supremacy
+        for _i in range(28):
+            mid = (lo + hi) / 2.0
+            s = _summary(T, mid, diag, diag0)
+            if s["home_win"] - s["away_win"] < supremacy: lo = mid
+            else: hi = mid
+        D = (lo + hi) / 2.0
+        if want_btts is not None:              # diag ← btts (btts ↑ as diag ↑)
+            lo, hi = 0.15, 4.0
+            for _i in range(26):
+                mid = (lo + hi) / 2.0
+                if _summary(T, D, mid, diag0)["btts"] < want_btts: lo = mid
+                else: hi = mid
+            diag = (lo + hi) / 2.0
+        lo, hi = 0.15, 6.0                     # diag0 ← draw (0-0 is btts-neutral)
+        for _i in range(26):
+            mid = (lo + hi) / 2.0
+            if _summary(T, D, diag, mid)["draw"] < p_draw: lo = mid
+            else: hi = mid
+        diag0 = (lo + hi) / 2.0
+
+    lam_h = max(0.05, (T + D) / 2.0)
+    lam_a = max(0.05, (T - D) / 2.0)
+    return lam_h, lam_a, 0.0, diag, diag0
+
+
 def compute_extended_poisson_stats(
     lambda_home: float,
     lambda_away: float,
     max_goals: int = MAX_GOALS,
     top_n_scores: int = 6,
+    rho: float = 0.0,
+    diag: float = 1.0,
+    diag0: float = 1.0,
 ) -> dict:
     """
     Compute extended Poisson-derived stats from two λ parameters.
@@ -173,10 +301,12 @@ def compute_extended_poisson_stats(
 
     Returns a dict ready for JSON serialisation.
     """
-    home_pmf = [_poisson_pmf(i, lambda_home) for i in range(max_goals + 1)]
-    away_pmf = [_poisson_pmf(j, lambda_away) for j in range(max_goals + 1)]
+    # Same normalised Dixon-Coles(+draw-inflation) matrix as the fitter — the
+    # combo/low-score numbers here must agree with the probabilities the λ/ρ/diag
+    # were solved against.
+    m = _score_matrix(lambda_home, lambda_away, rho, diag, diag0, max_goals)
 
-    over_1_5 = over_3_5 = 0.0
+    over_1_5 = over_2_5 = over_3_5 = 0.0
     home_over_1_5 = away_over_1_5 = 0.0
     btts_and_over = btts_and_under = 0.0
     home_win_btts = away_win_btts = 0.0
@@ -185,11 +315,12 @@ def compute_extended_poisson_stats(
 
     for i in range(max_goals + 1):
         for j in range(max_goals + 1):
-            p = home_pmf[i] * away_pmf[j]
+            p = m[i][j]
             total = i + j
             btts  = i >= 1 and j >= 1
 
             if total >= 2:          over_1_5      += p
+            if total >= 3:          over_2_5      += p
             if total >= 4:          over_3_5      += p
             if i >= 2:              home_over_1_5 += p
             if j >= 2:              away_over_1_5 += p
@@ -200,22 +331,13 @@ def compute_extended_poisson_stats(
             if not btts and i > j:      home_win_ng   += p   # home wins, only home scores (e.g. 1-0, 2-0)
             if not btts and j > i:      away_win_ng   += p   # away wins, only away scores (e.g. 0-1, 0-2)
 
-            score_probs[f"{i}-{j}"] = score_probs.get(f"{i}-{j}", 0.0) + p
+            score_probs[f"{i}-{j}"] = p
 
     ranked_scores = sorted(score_probs.items(), key=lambda x: x[1], reverse=True)
     top_scores = [
         {"score": s, "prob": round(p, 4)}
         for s, p in ranked_scores[:top_n_scores]
     ]
-
-    # Over 2.5 from the score matrix (Poisson-consistent, used in Goals Lines
-    # so all three lines come from the same model and numbers add up correctly).
-    over_2_5 = sum(
-        home_pmf[i] * away_pmf[j]
-        for i in range(max_goals + 1)
-        for j in range(max_goals + 1)
-        if i + j > 2.5
-    )
 
     return {
         "over_1_5":          round(over_1_5,       4),

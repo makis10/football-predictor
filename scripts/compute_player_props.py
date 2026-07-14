@@ -121,10 +121,21 @@ def main() -> None:
             if ch is not None and ca is not None:
                 np_row.corners_over_9_5_prob = round(corners_over_prob(ch + ca, 9.5), 4)
 
-            # Correct-score market — Dixon-Coles Poisson over the Elo λ.
-            from backend.app.ml.poisson import compute_extended_poisson_stats
+            # Correct-score market — λ + ρ fitted to the prediction's own served
+            # probabilities so the stored most-likely score / top-scores cohere
+            # with the headline 1×2 / Over / BTTS (Elo λ only as fallback).
+            from backend.app.ml.poisson import compute_extended_poisson_stats, fit_lambdas_to_probs, DC_RHO
             import json as _json
-            cs = compute_extended_poisson_stats(lam_h, lam_a, top_n_scores=6)
+            _rho, _diag, _diag0 = DC_RHO, 1.0, 1.0
+            _fit = fit_lambdas_to_probs(
+                np_row.home_win_prob, np_row.away_win_prob, np_row.over_2_5_prob,
+                p_btts=getattr(np_row, "btts_prob", None),
+            )
+            if _fit:
+                _clh, _cla, _rho, _diag, _diag0 = _fit
+            else:
+                _clh, _cla = lam_h, lam_a
+            cs = compute_extended_poisson_stats(_clh, _cla, top_n_scores=6, rho=_rho, diag=_diag, diag0=_diag0)
             np_row.most_likely_score = cs.get("most_likely_score")
             np_row.top_scores = _json.dumps(cs.get("top_scores", []))
 

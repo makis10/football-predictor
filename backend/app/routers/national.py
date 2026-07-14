@@ -384,22 +384,34 @@ def get_national_analysis(
         exp_home_corners=getattr(pred, "exp_home_corners", None),
         exp_away_corners=getattr(pred, "exp_away_corners", None),
         corners_over_9_5_prob=getattr(pred, "corners_over_9_5_prob", None),
-        poisson_stats=_national_poisson_stats(pred.home_team, pred.away_team),
+        poisson_stats=_national_poisson_stats(pred),
     )
 
 
-def _national_poisson_stats(home: str, away: str):
-    """Full Poisson stat block (goals lines / team goals / correct score / combos)
-    from the snapshot Elo λ — so the national analysis panel renders the same
-    rich layout as the club one. Returns None if the snapshot isn't available."""
+def _national_poisson_stats(pred):
+    """Full Poisson stat block (goals lines / team goals / correct score / combos).
+
+    λ + ρ are FITTED to the prediction's own served probabilities (1×2 / Over /
+    BTTS) so the panel coheres with the headline numbers — the old snapshot-Elo λ
+    were an independent engine that regularly contradicted them (e.g. "GG+Over
+    41%" beside "NG 65%"). Falls back to the Elo λ when the fit is degenerate."""
     from backend.app.schemas.prediction import PoissonStats, CorrectScoreProb
     from backend.app.ml.national.expected_goals import national_lambdas
-    from backend.app.ml.poisson import compute_extended_poisson_stats
+    from backend.app.ml.poisson import compute_extended_poisson_stats, fit_lambdas_to_probs, DC_RHO
 
-    lams = national_lambdas(home, away)
+    rho, diag, diag0 = DC_RHO, 1.0, 1.0
+    fitted = fit_lambdas_to_probs(
+        getattr(pred, "home_win_prob", None), getattr(pred, "away_win_prob", None),
+        getattr(pred, "over_2_5_prob", None),
+        p_btts=getattr(pred, "btts_prob", None),
+    )
+    if fitted:
+        lams, rho, diag, diag0 = fitted[:2], fitted[2], fitted[3], fitted[4]
+    else:
+        lams = national_lambdas(pred.home_team, pred.away_team)
     if not lams:
         return None
-    ps = compute_extended_poisson_stats(lams[0], lams[1])
+    ps = compute_extended_poisson_stats(lams[0], lams[1], rho=rho, diag=diag, diag0=diag0)
     return PoissonStats(
         over_1_5=ps["over_1_5"], under_1_5=ps["under_1_5"],
         over_2_5=ps["over_2_5"], under_2_5=ps["under_2_5"],
