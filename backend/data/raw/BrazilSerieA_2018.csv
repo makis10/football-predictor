@@ -1,0 +1,381 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,PSH,PSD,PSA
+14/04/2018,Cruzeiro,Gremio,0,1,A,1.96,3.29,4.87
+14/04/2018,Vitoria,Flamengo RJ,2,2,D,3.56,3.41,2.22
+15/04/2018,Santos,Ceara,2,0,H,1.57,4.13,6.76
+15/04/2018,America MG,Sport Recife,3,0,H,1.98,3.35,4.51
+15/04/2018,Corinthians,Fluminense,2,1,H,1.67,3.68,6.55
+15/04/2018,Internacional,Bahia,2,0,H,1.74,3.53,6.01
+15/04/2018,Vasco,Atletico-MG,2,1,H,2.98,3.22,2.64
+15/04/2018,Athletico-PR,Chapecoense-SC,5,1,H,2.14,3.25,4.02
+17/04/2018,Botafogo RJ,Palmeiras,1,1,D,3.89,3.37,2.12
+17/04/2018,Sao Paulo,Parana,1,0,H,1.47,4.35,8.75
+21/04/2018,Bahia,Santos,1,0,H,2.31,3.27,3.48
+21/04/2018,Flamengo RJ,America MG,2,0,H,1.45,4.58,8.58
+22/04/2018,Parana,Corinthians,0,4,A,4.15,2.96,2.24
+22/04/2018,Atletico-MG,Vitoria,2,1,H,1.56,4.33,6.6
+22/04/2018,Ceara,Sao Paulo,0,0,D,3.03,3.26,2.58
+22/04/2018,Chapecoense-SC,Vasco,1,1,D,1.91,3.47,4.69
+22/04/2018,Fluminense,Cruzeiro,1,0,H,2.71,3.22,2.9
+22/04/2018,Palmeiras,Internacional,1,0,H,1.63,3.83,6.74
+22/04/2018,Gremio,Athletico-PR,0,0,D,1.62,3.83,6.88
+24/04/2018,Sport Recife,Botafogo RJ,1,1,D,2.27,3.26,3.59
+28/04/2018,Botafogo RJ,Gremio,2,1,H,2.59,3.09,3.17
+29/04/2018,Atletico-MG,Corinthians,1,0,H,1.99,3.39,4.37
+29/04/2018,Bahia,Athletico-PR,0,0,D,2.03,3.4,4.2
+29/04/2018,Ceara,Flamengo RJ,0,3,A,3.32,3.21,2.42
+29/04/2018,Fluminense,Sao Paulo,1,1,D,2.55,3.26,3.06
+29/04/2018,Palmeiras,Chapecoense-SC,0,0,D,1.33,5.19,12.11
+29/04/2018,Parana,Sport Recife,1,2,A,2.29,3.28,3.52
+29/04/2018,Internacional,Cruzeiro,0,0,D,1.93,3.28,4.9
+01/05/2018,America MG,Vitoria,2,1,H,2.06,3.25,4.22
+05/05/2018,Sao Paulo,Atletico-MG,2,2,D,2.09,3.38,3.87
+05/05/2018,Vasco,America MG,4,1,H,2.11,3.2,4.07
+06/05/2018,Corinthians,Ceara,1,1,D,1.68,3.56,6.45
+06/05/2018,Athletico-PR,Palmeiras,1,3,A,3.2,3.25,2.42
+06/05/2018,Cruzeiro,Botafogo RJ,1,0,H,1.47,4.43,7.85
+06/05/2018,Flamengo RJ,Internacional,2,0,H,1.76,3.58,5.24
+06/05/2018,Vitoria,Fluminense,1,2,A,2.07,3.61,3.68
+06/05/2018,Gremio,Santos,5,1,H,1.63,3.89,6.16
+06/05/2018,Sport Recife,Bahia,2,0,H,2.24,3.39,3.42
+08/05/2018,Chapecoense-SC,Parana,1,1,D,1.78,3.43,5.63
+12/05/2018,Gremio,Internacional,0,0,D,1.9,3.08,5.5
+13/05/2018,Cruzeiro,Sport Recife,2,0,H,1.43,4.69,8.41
+13/05/2018,Athletico-PR,Atletico-MG,1,2,A,2.42,3.3,3.16
+13/05/2018,Bahia,Sao Paulo,2,2,D,2.39,3.13,3.39
+13/05/2018,Chapecoense-SC,Flamengo RJ,3,2,H,3.08,3.1,2.57
+13/05/2018,Corinthians,Palmeiras,1,0,H,3.13,2.96,2.68
+13/05/2018,Vasco,Vitoria,2,3,A,1.88,3.58,4.47
+13/05/2018,Santos,Parana,3,1,H,1.6,3.75,7.18
+15/05/2018,Botafogo RJ,Fluminense,2,1,H,2.58,3.1,3.09
+15/05/2018,Ceara,America MG,2,2,D,1.98,3.42,4.24
+19/05/2018,Atletico-MG,Cruzeiro,1,0,H,2.01,3.43,4.12
+19/05/2018,Flamengo RJ,Vasco,1,1,D,1.62,3.99,6.09
+20/05/2018,Palmeiras,Bahia,3,0,H,1.4,4.62,9.45
+20/05/2018,Vitoria,Ceara,2,1,H,1.96,3.51,4.19
+20/05/2018,America MG,Botafogo RJ,1,0,H,2.32,3.22,3.42
+20/05/2018,Parana,Gremio,0,0,D,4.94,3.55,1.83
+20/05/2018,Sao Paulo,Santos,1,0,H,2.08,3.28,4.01
+20/05/2018,Sport Recife,Corinthians,1,1,D,2,3.35,4.26
+20/05/2018,Fluminense,Athletico-PR,2,0,H,1.93,3.51,4.35
+22/05/2018,Internacional,Chapecoense-SC,3,0,H,1.64,3.7,6.52
+26/05/2018,Fluminense,Chapecoense-SC,3,1,H,1.91,3.28,4.85
+26/05/2018,Palmeiras,Sport Recife,2,3,A,1.36,4.94,10.52
+27/05/2018,Atletico-MG,Flamengo RJ,0,1,A,1.95,3.43,4.23
+27/05/2018,Parana,Athletico-PR,0,0,D,2.61,3.13,3.02
+27/05/2018,Bahia,Vasco,3,0,H,1.69,3.82,5.58
+27/05/2018,Botafogo RJ,Vitoria,1,1,D,1.87,3.86,4.18
+27/05/2018,Internacional,Corinthians,2,1,H,1.84,3.34,5.22
+27/05/2018,Santos,Cruzeiro,0,1,A,2.83,3.22,2.74
+27/05/2018,America MG,Sao Paulo,1,3,A,3.12,3.05,2.6
+27/05/2018,Ceara,Gremio,0,1,A,3.82,3.15,2.2
+30/05/2018,Sport Recife,Atletico-MG,3,2,H,2.75,3.3,2.75
+30/05/2018,Vasco,Parana,1,0,H,1.97,3.21,4.65
+30/05/2018,Vitoria,Internacional,2,3,A,3.43,3.17,2.35
+31/05/2018,Chapecoense-SC,Ceara,2,0,H,1.93,3.35,4.62
+31/05/2018,Sao Paulo,Botafogo RJ,3,2,H,1.63,3.76,6.48
+31/05/2018,Cruzeiro,Palmeiras,1,0,H,2.08,3.39,3.88
+31/05/2018,Gremio,Fluminense,0,0,D,1.4,4.92,8.72
+31/05/2018,Flamengo RJ,Bahia,2,0,H,1.41,4.42,10.02
+31/05/2018,Corinthians,America MG,1,0,H,1.55,3.94,7.63
+01/06/2018,Athletico-PR,Santos,2,0,H,2.31,3.36,3.3
+02/06/2018,Atletico-MG,Chapecoense-SC,3,3,D,1.56,3.96,7.25
+02/06/2018,Internacional,Sport Recife,0,0,D,1.43,4.57,8.87
+02/06/2018,Vasco,Botafogo RJ,1,2,A,2.39,3.34,3.16
+03/06/2018,Palmeiras,Sao Paulo,3,1,H,2.08,3.3,4.03
+03/06/2018,America MG,Athletico-PR,3,1,H,2.32,3.42,3.23
+03/06/2018,Bahia,Gremio,0,2,A,3.14,2.99,2.63
+03/06/2018,Flamengo RJ,Corinthians,1,0,H,1.78,3.48,5.43
+03/06/2018,Santos,Vitoria,5,2,H,1.56,4.34,6.17
+03/06/2018,Ceara,Cruzeiro,0,1,A,4.79,3.32,1.91
+05/06/2018,Parana,Fluminense,2,1,H,2.54,3.23,3.03
+06/06/2018,Sao Paulo,Internacional,0,0,D,2.31,3.08,3.64
+06/06/2018,Botafogo RJ,Ceara,0,0,D,1.59,3.9,6.82
+06/06/2018,Vitoria,Chapecoense-SC,1,0,H,2.02,3.66,3.79
+07/06/2018,Corinthians,Santos,1,1,D,2.02,3.33,4.2
+07/06/2018,Sport Recife,Athletico-PR,1,0,H,2.06,3.55,3.75
+07/06/2018,Cruzeiro,Vasco,1,1,D,1.34,4.87,12.12
+07/06/2018,Gremio,Palmeiras,0,2,A,2.03,3.19,4.41
+08/06/2018,Fluminense,Flamengo RJ,0,2,A,4.8,3.23,1.94
+08/06/2018,Parana,Bahia,1,0,H,2.5,3.08,3.24
+08/06/2018,America MG,Atletico-MG,1,3,A,4.58,3.47,1.9
+09/06/2018,Athletico-PR,Sao Paulo,0,1,A,2.87,3.17,2.71
+09/06/2018,Chapecoense-SC,Cruzeiro,2,0,H,3.58,3.17,2.28
+09/06/2018,Vasco,Sport Recife,3,2,H,1.93,3.38,4.61
+10/06/2018,Corinthians,Vitoria,0,0,D,1.83,3.43,5.18
+10/06/2018,Atletico-MG,Fluminense,5,2,H,1.59,4.03,6.37
+10/06/2018,Bahia,Botafogo RJ,3,3,D,1.85,3.63,4.64
+10/06/2018,Ceara,Palmeiras,2,2,D,5.73,3.62,1.71
+10/06/2018,Gremio,America MG,1,0,H,1.32,4.99,13.01
+10/06/2018,Flamengo RJ,Parana,2,0,H,1.32,4.96,13.52
+10/06/2018,Santos,Internacional,1,2,A,2.38,3.13,3.4
+13/06/2018,Sao Paulo,Vitoria,3,0,H,1.42,4.74,8.44
+13/06/2018,America MG,Chapecoense-SC,0,0,D,2.18,3.2,3.8
+13/06/2018,Fluminense,Santos,0,1,A,2.69,3.21,2.87
+13/06/2018,Parana,Cruzeiro,1,1,D,3.95,3,2.24
+13/06/2018,Sport Recife,Gremio,0,0,D,3.31,3.13,2.43
+14/06/2018,Botafogo RJ,Athletico-PR,2,0,H,2.04,3.33,4.13
+14/06/2018,Palmeiras,Flamengo RJ,1,1,D,2.15,3.21,3.92
+14/06/2018,Atletico-MG,Ceara,2,1,H,1.31,5.71,10.79
+14/06/2018,Bahia,Corinthians,1,0,H,1.86,3.53,4.73
+14/06/2018,Internacional,Vasco,3,1,H,1.49,4.35,7.67
+18/07/2018,Ceara,Sport Recife,1,0,H,2.52,3.22,3.07
+19/07/2018,Vitoria,Parana,1,0,H,1.91,3.41,4.63
+19/07/2018,Corinthians,Botafogo RJ,2,0,H,1.93,3.4,4.5
+19/07/2018,Flamengo RJ,Sao Paulo,0,1,A,2,3.43,4.16
+19/07/2018,Gremio,Atletico-MG,2,0,H,1.6,3.98,6.43
+19/07/2018,Chapecoense-SC,Bahia,1,1,D,2.04,3.08,4.57
+19/07/2018,Cruzeiro,America MG,3,1,H,1.52,3.89,8.41
+20/07/2018,Santos,Palmeiras,1,1,D,2.61,3.27,2.91
+20/07/2018,Vasco,Fluminense,1,1,D,2.29,3.27,3.45
+20/07/2018,Athletico-PR,Internacional,2,2,D,2.66,3.11,2.98
+21/07/2018,Flamengo RJ,Botafogo RJ,2,0,H,1.69,3.58,6.16
+22/07/2018,Sao Paulo,Corinthians,3,1,H,2.11,3.1,4.22
+22/07/2018,Bahia,Vitoria,4,1,H,1.84,3.71,4.57
+22/07/2018,Palmeiras,Atletico-MG,3,2,H,1.56,4.27,6.28
+22/07/2018,Parana,America MG,1,0,H,2.35,3.15,3.44
+22/07/2018,Sport Recife,Fluminense,1,2,A,2.21,3.34,3.55
+22/07/2018,Vasco,Gremio,1,0,H,3.91,3.06,2.22
+22/07/2018,Chapecoense-SC,Santos,0,0,D,2.73,3.21,2.81
+22/07/2018,Cruzeiro,Athletico-PR,2,1,H,1.45,4.26,9.28
+24/07/2018,Internacional,Ceara,1,0,H,1.49,3.98,8.94
+25/07/2018,Fluminense,Palmeiras,1,0,H,3.39,3.39,2.26
+26/07/2018,Atletico-MG,Parana,2,0,H,1.49,4.18,8.16
+26/07/2018,Corinthians,Cruzeiro,2,0,H,3.41,3.03,2.44
+26/07/2018,Santos,Flamengo RJ,1,1,D,2.8,3.14,2.8
+26/07/2018,Botafogo RJ,Chapecoense-SC,1,0,H,1.83,3.44,5.15
+26/07/2018,Gremio,Sao Paulo,2,1,H,1.88,3.33,5
+26/07/2018,Vitoria,Sport Recife,1,0,H,2.24,3.52,3.31
+27/07/2018,America MG,Internacional,2,1,H,3.03,3.07,2.65
+28/07/2018,Ceara,Fluminense,1,0,H,2.62,3.27,2.9
+29/07/2018,Palmeiras,Parana,3,0,H,1.32,4.99,13.55
+29/07/2018,Vasco,Corinthians,1,4,A,2.88,3.06,2.79
+29/07/2018,Athletico-PR,Vitoria,4,0,H,1.67,4.21,5.14
+29/07/2018,Cruzeiro,Sao Paulo,0,2,A,1.7,3.79,5.56
+29/07/2018,Flamengo RJ,Sport Recife,4,1,H,1.39,4.69,10.07
+29/07/2018,Internacional,Botafogo RJ,3,0,H,1.56,4,7
+29/07/2018,Chapecoense-SC,Gremio,1,1,D,2.43,3.01,3.46
+29/07/2018,Santos,America MG,0,1,A,1.47,4.17,9.04
+31/07/2018,Bahia,Atletico-MG,2,2,D,2.23,3.43,3.42
+04/08/2018,Botafogo RJ,Santos,0,0,D,2.81,3.14,2.79
+04/08/2018,Gremio,Flamengo RJ,2,0,H,3.28,2.86,2.64
+05/08/2018,Corinthians,Athletico-PR,0,0,D,2.35,3.09,3.53
+05/08/2018,America MG,Palmeiras,0,0,D,3.37,3.2,2.36
+05/08/2018,Parana,Ceara,0,1,A,2.13,3.11,4.13
+05/08/2018,Sao Paulo,Vasco,2,1,H,1.44,4.37,9.1
+05/08/2018,Vitoria,Cruzeiro,1,1,D,2.67,3.24,2.85
+05/08/2018,Fluminense,Bahia,1,1,D,2.05,3.36,4.04
+05/08/2018,Sport Recife,Chapecoense-SC,1,1,D,2.07,3.04,4.52
+07/08/2018,Atletico-MG,Internacional,0,1,A,2.31,3.35,3.33
+08/08/2018,Ceara,Santos,1,1,D,3.08,3.11,2.59
+11/08/2018,Ceara,Athletico-PR,0,0,D,2.26,3.34,3.43
+11/08/2018,Bahia,America MG,1,0,H,1.63,3.88,6.22
+12/08/2018,Atletico-MG,Santos,3,1,H,2.11,3.26,3.96
+12/08/2018,Parana,Botafogo RJ,1,1,D,2.77,3.04,2.92
+12/08/2018,Chapecoense-SC,Corinthians,2,1,H,1.89,3.36,4.82
+12/08/2018,Flamengo RJ,Cruzeiro,1,0,H,1.7,3.44,6.51
+12/08/2018,Sport Recife,Sao Paulo,1,3,A,3.07,3.17,2.55
+12/08/2018,Gremio,Vitoria,4,0,H,1.66,3.86,5.8
+12/08/2018,Palmeiras,Vasco,1,0,H,1.62,4.06,5.91
+14/08/2018,Fluminense,Internacional,0,3,A,2.65,3.09,3.01
+18/08/2018,Santos,Sport Recife,3,0,H,1.51,4.37,7.04
+18/08/2018,Corinthians,Gremio,0,1,A,3.62,2.98,2.38
+19/08/2018,Athletico-PR,Flamengo RJ,3,0,H,2.53,3.25,3.03
+19/08/2018,Internacional,Parana,1,0,H,1.44,4.26,9.42
+19/08/2018,Botafogo RJ,Atletico-MG,0,3,A,2.41,3.37,3.1
+19/08/2018,Cruzeiro,Bahia,1,1,D,1.47,4.02,9.85
+19/08/2018,Vitoria,Palmeiras,0,3,A,3.47,3.5,2.18
+19/08/2018,America MG,Fluminense,0,0,D,2.49,3.2,3.14
+19/08/2018,Sao Paulo,Chapecoense-SC,2,0,H,1.68,3.42,6.88
+21/08/2018,Vasco,Ceara,1,1,D,1.7,3.52,6.25
+22/08/2018,Bahia,Internacional,0,1,A,2.67,2.93,3.13
+22/08/2018,Parana,Sao Paulo,1,1,D,4.82,3.23,1.96
+23/08/2018,Palmeiras,Botafogo RJ,2,0,H,1.39,4.66,9.92
+23/08/2018,Sport Recife,America MG,0,2,A,1.94,3.26,4.72
+23/08/2018,Fluminense,Corinthians,1,0,H,2.16,3.14,4.02
+23/08/2018,Gremio,Cruzeiro,1,1,D,1.88,3.1,5.51
+23/08/2018,Flamengo RJ,Vitoria,1,0,H,1.28,5.57,13.69
+24/08/2018,Atletico-MG,Vasco,0,0,D,1.48,4.47,7.57
+25/08/2018,Santos,Bahia,2,0,H,1.83,3.43,5.13
+25/08/2018,Athletico-PR,Gremio,2,1,H,2.13,3.13,4.11
+25/08/2018,Corinthians,Parana,1,0,H,1.7,3.35,6.78
+26/08/2018,Botafogo RJ,Sport Recife,2,0,H,1.76,3.71,5.1
+26/08/2018,Cruzeiro,Fluminense,2,1,H,1.58,3.97,6.78
+26/08/2018,Sao Paulo,Ceara,1,0,H,1.41,4.49,9.86
+26/08/2018,America MG,Flamengo RJ,2,2,D,4.43,3.37,1.96
+26/08/2018,Internacional,Palmeiras,0,0,D,2.11,3.25,3.95
+26/08/2018,Vitoria,Atletico-MG,1,0,H,3.29,3.74,2.16
+26/08/2018,Vasco,Chapecoense-SC,3,1,H,1.98,3.32,4.42
+29/08/2018,Athletico-PR,Vasco,1,0,H,1.61,3.95,6.26
+29/08/2018,Ceara,Bahia,0,2,A,2.54,3.06,3.19
+01/09/2018,Gremio,Botafogo RJ,4,0,H,1.43,4.45,9.4
+01/09/2018,Vitoria,America MG,1,0,H,2.11,3.24,4
+01/09/2018,Vasco,Santos,0,3,A,2.6,3.09,3.08
+02/09/2018,Corinthians,Atletico-MG,1,1,D,2.95,3.27,2.58
+02/09/2018,Flamengo RJ,Ceara,0,1,A,1.33,4.99,12.24
+02/09/2018,Athletico-PR,Bahia,2,0,H,1.87,3.49,4.71
+02/09/2018,Sao Paulo,Fluminense,1,1,D,1.63,3.73,6.72
+02/09/2018,Sport Recife,Parana,1,0,H,1.85,3.39,5.09
+02/09/2018,Chapecoense-SC,Palmeiras,1,2,A,3.74,3.1,2.25
+02/09/2018,Cruzeiro,Internacional,0,0,D,2.04,3.11,4.48
+05/09/2018,Bahia,Sport Recife,2,0,H,1.65,3.83,6.01
+05/09/2018,Botafogo RJ,Cruzeiro,1,1,D,3.27,2.99,2.57
+06/09/2018,Ceara,Corinthians,2,1,H,2.32,3.06,3.61
+06/09/2018,Palmeiras,Athletico-PR,2,0,H,1.55,3.8,8.05
+06/09/2018,Parana,Chapecoense-SC,1,1,D,2.49,2.91,3.49
+06/09/2018,Atletico-MG,Sao Paulo,1,0,H,2.11,3.54,3.66
+06/09/2018,Internacional,Flamengo RJ,2,1,H,2.08,3,4.59
+06/09/2018,Fluminense,Vitoria,0,0,D,1.73,3.59,5.67
+06/09/2018,Santos,Gremio,0,0,D,2.69,2.82,3.27
+07/09/2018,America MG,Vasco,2,1,H,2.73,3.05,2.96
+08/09/2018,Sport Recife,Cruzeiro,0,0,D,3.69,3,2.34
+08/09/2018,Sao Paulo,Bahia,1,0,H,1.75,3.25,6.5
+09/09/2018,Flamengo RJ,Chapecoense-SC,2,0,H,1.52,3.94,8.3
+09/09/2018,America MG,Ceara,0,0,D,1.99,3.28,4.45
+09/09/2018,Fluminense,Botafogo RJ,1,0,H,2.46,3.13,3.25
+09/09/2018,Internacional,Gremio,1,0,H,2.55,2.86,3.43
+09/09/2018,Palmeiras,Corinthians,1,0,H,1.64,3.61,6.88
+09/09/2018,Parana,Santos,0,2,A,3.62,3,2.36
+09/09/2018,Vitoria,Vasco,1,0,H,2.34,3.27,3.34
+11/09/2018,Atletico-MG,Athletico-PR,3,1,H,1.98,3.31,4.45
+14/09/2018,Chapecoense-SC,Athletico-PR,2,1,H,3.09,2.89,2.75
+15/09/2018,Ceara,Vitoria,2,0,H,1.89,3.41,4.58
+15/09/2018,Gremio,Parana,2,0,H,1.55,3.8,7.48
+15/09/2018,Vasco,Flamengo RJ,1,1,D,5.41,3.69,1.71
+16/09/2018,Botafogo RJ,America MG,1,0,H,1.71,3.47,6
+16/09/2018,Athletico-PR,Fluminense,3,1,H,1.61,3.95,6.07
+16/09/2018,Bahia,Palmeiras,1,1,D,2.98,3.09,2.63
+16/09/2018,Cruzeiro,Atletico-MG,0,0,D,2.69,3.13,2.87
+16/09/2018,Santos,Sao Paulo,0,0,D,2.42,3.09,3.37
+16/09/2018,Corinthians,Sport Recife,2,1,H,1.64,3.65,6.44
+18/09/2018,Chapecoense-SC,Internacional,2,1,H,3.85,3.03,2.22
+22/09/2018,Sao Paulo,America MG,1,1,D,1.44,4.12,10.23
+23/09/2018,Gremio,Ceara,3,2,H,1.34,4.56,14
+23/09/2018,Athletico-PR,Parana,3,0,H,1.52,4.21,7.15
+23/09/2018,Corinthians,Internacional,1,1,D,2.78,2.92,2.98
+23/09/2018,Flamengo RJ,Atletico-MG,2,1,H,1.81,3.46,5.08
+23/09/2018,Sport Recife,Palmeiras,0,1,A,4.62,3.45,1.88
+23/09/2018,Vitoria,Botafogo RJ,3,4,A,2.87,3.14,2.71
+23/09/2018,Cruzeiro,Santos,2,1,H,2.43,3.01,3.41
+25/09/2018,Chapecoense-SC,Fluminense,1,2,A,2.28,3.07,3.67
+25/09/2018,Vasco,Bahia,2,1,H,2.06,3.44,3.84
+28/09/2018,Santos,Vasco,1,1,D,1.51,3.95,8.22
+29/09/2018,Fluminense,Gremio,0,1,A,3,3.11,2.67
+29/09/2018,America MG,Corinthians,0,0,D,2.41,2.98,3.56
+30/09/2018,Bahia,Flamengo RJ,0,0,D,2.78,3.18,2.81
+30/09/2018,Palmeiras,Cruzeiro,3,1,H,1.61,3.67,6.86
+30/09/2018,Atletico-MG,Sport Recife,5,2,H,1.35,4.86,10.67
+30/09/2018,Botafogo RJ,Sao Paulo,2,2,D,2.71,3.15,2.9
+30/09/2018,Internacional,Vitoria,2,1,H,1.32,5.15,11.04
+30/09/2018,Santos,Athletico-PR,1,0,H,1.96,3.32,4.52
+30/09/2018,Ceara,Chapecoense-SC,3,1,H,2.13,3.01,4.31
+02/10/2018,Parana,Vasco,1,1,D,2.96,3.04,2.75
+05/10/2018,Sport Recife,Internacional,2,1,H,4.24,3.41,1.99
+06/10/2018,Corinthians,Flamengo RJ,0,3,A,3.06,2.94,2.75
+06/10/2018,Vitoria,Santos,0,1,A,3.89,3.33,2.11
+06/10/2018,Athletico-PR,America MG,4,0,H,1.46,4.31,8.18
+06/10/2018,Chapecoense-SC,Atletico-MG,1,0,H,2.97,3.02,2.76
+06/10/2018,Sao Paulo,Palmeiras,0,2,A,2.76,2.92,3.07
+07/10/2018,Gremio,Bahia,2,2,D,1.37,4.68,10.04
+09/10/2018,Fluminense,Parana,4,0,H,1.53,3.67,8.78
+10/10/2018,Botafogo RJ,Vasco,1,1,D,2.18,3.11,3.96
+13/10/2018,Flamengo RJ,Fluminense,3,0,H,1.7,3.65,5.7
+13/10/2018,Santos,Corinthians,1,0,H,1.48,4.09,8.3
+14/10/2018,Bahia,Parana,2,0,H,1.36,4.45,12.22
+14/10/2018,Chapecoense-SC,Vitoria,0,1,A,1.83,3.33,5.28
+14/10/2018,Internacional,Sao Paulo,3,1,H,1.93,3.19,4.88
+14/10/2018,Palmeiras,Gremio,2,0,H,1.94,3.06,5.21
+14/10/2018,Vasco,Cruzeiro,2,0,H,2.22,3.15,3.81
+14/10/2018,Atletico-MG,America MG,0,0,D,1.59,3.95,6.47
+14/10/2018,Athletico-PR,Sport Recife,4,0,H,1.34,4.91,10.66
+16/10/2018,Ceara,Botafogo RJ,0,0,D,2.11,3.28,3.95
+20/10/2018,America MG,Gremio,1,1,D,2.8,3.03,2.91
+20/10/2018,Botafogo RJ,Bahia,0,1,A,2.41,2.95,3.61
+20/10/2018,Sao Paulo,Athletico-PR,0,0,D,2.18,3.08,4.01
+20/10/2018,Sport Recife,Vasco,2,1,H,2.77,3.17,2.83
+21/10/2018,Fluminense,Atletico-MG,1,0,H,2.51,3.26,3.07
+21/10/2018,Palmeiras,Ceara,2,1,H,1.39,4.41,10.51
+21/10/2018,Vitoria,Corinthians,2,2,D,2.45,3.03,3.42
+21/10/2018,Cruzeiro,Chapecoense-SC,3,0,H,1.57,3.96,6.73
+21/10/2018,Parana,Flamengo RJ,0,4,A,7.98,3.99,1.51
+23/10/2018,Internacional,Santos,2,2,D,1.81,3.41,5.3
+24/10/2018,Cruzeiro,Ceara,0,2,A,1.63,3.66,6.73
+26/10/2018,Vitoria,Sao Paulo,0,1,A,3.2,3.26,2.42
+27/10/2018,Vasco,Internacional,1,1,D,3.11,3.38,2.42
+27/10/2018,Gremio,Sport Recife,3,4,A,1.63,3.89,6.05
+27/10/2018,Santos,Fluminense,3,0,H,1.38,4.58,9.98
+27/10/2018,Chapecoense-SC,America MG,1,0,H,2,3.16,4.59
+27/10/2018,Corinthians,Bahia,2,1,H,2.21,2.94,4.18
+27/10/2018,Flamengo RJ,Palmeiras,1,1,D,2.22,3.08,3.89
+28/10/2018,Athletico-PR,Botafogo RJ,2,1,H,1.9,3.28,4.92
+28/10/2018,Cruzeiro,Parana,3,1,H,1.29,5.46,11.38
+29/10/2018,Ceara,Atletico-MG,2,1,H,2.46,3.19,3.22
+03/11/2018,Atletico-MG,Gremio,0,1,A,2.21,3.24,3.7
+03/11/2018,Fluminense,Vasco,0,1,A,2.82,3.15,2.79
+03/11/2018,Palmeiras,Santos,3,2,H,1.94,3.34,4.57
+04/11/2018,America MG,Cruzeiro,1,2,A,4.15,3.04,2.16
+04/11/2018,Botafogo RJ,Corinthians,1,0,H,2.09,3.13,4.26
+04/11/2018,Parana,Vitoria,1,1,D,3.28,3.13,2.46
+04/11/2018,Sao Paulo,Flamengo RJ,2,2,D,2.9,3.16,2.71
+04/11/2018,Bahia,Chapecoense-SC,1,0,H,1.64,3.66,6.48
+04/11/2018,Internacional,Athletico-PR,2,1,H,1.52,4.01,7.59
+05/11/2018,Sport Recife,Ceara,1,0,H,2.24,3.14,3.75
+10/11/2018,America MG,Parana,0,1,A,1.46,4.05,9.17
+10/11/2018,Corinthians,Sao Paulo,1,1,D,2.57,3.03,3.21
+10/11/2018,Athletico-PR,Cruzeiro,2,0,H,2.1,3.21,4.1
+10/11/2018,Botafogo RJ,Flamengo RJ,2,1,H,4.15,3.54,1.96
+11/11/2018,Atletico-MG,Palmeiras,1,1,D,2.68,3.21,2.89
+11/11/2018,Ceara,Internacional,1,1,D,2.82,2.98,2.94
+11/11/2018,Gremio,Vasco,2,1,H,1.41,4.64,8.74
+11/11/2018,Vitoria,Bahia,2,2,D,2.84,3.1,2.81
+11/11/2018,Fluminense,Sport Recife,0,0,D,1.92,3.47,4.44
+12/11/2018,Santos,Chapecoense-SC,0,1,A,1.66,3.6,6.4
+14/11/2018,Vasco,Athletico-PR,1,1,D,3.07,3.05,2.65
+14/11/2018,Bahia,Ceara,2,1,H,1.81,3.25,5.7
+14/11/2018,Parana,Atletico-MG,0,1,A,7.16,4.05,1.53
+14/11/2018,Cruzeiro,Corinthians,1,0,H,2.08,3.07,4.41
+14/11/2018,Palmeiras,Fluminense,3,0,H,1.36,4.84,9.98
+14/11/2018,Sport Recife,Vitoria,0,0,D,2.04,3.39,4.05
+15/11/2018,Chapecoense-SC,Botafogo RJ,0,1,A,2.15,3.07,4.14
+15/11/2018,Flamengo RJ,Santos,1,0,H,1.7,3.71,5.56
+15/11/2018,Sao Paulo,Gremio,1,1,D,2.91,2.91,2.91
+15/11/2018,Internacional,America MG,2,0,H,1.35,4.81,10.75
+17/11/2018,Corinthians,Vasco,1,0,H,1.76,3.5,5.47
+17/11/2018,Vitoria,Athletico-PR,1,2,A,2.78,3.38,2.67
+17/11/2018,Atletico-MG,Bahia,1,0,H,1.72,3.63,5.58
+18/11/2018,America MG,Santos,2,1,H,3.37,3.08,2.44
+18/11/2018,Botafogo RJ,Internacional,1,0,H,3.04,2.94,2.77
+18/11/2018,Parana,Palmeiras,1,1,D,17.68,6.97,1.15
+18/11/2018,Sport Recife,Flamengo RJ,0,1,A,3.42,3.32,2.29
+18/11/2018,Gremio,Chapecoense-SC,2,0,H,1.49,4.07,8.08
+18/11/2018,Sao Paulo,Cruzeiro,1,0,H,2.01,2.97,5.02
+19/11/2018,Fluminense,Ceara,0,0,D,1.98,3.18,4.69
+21/11/2018,Internacional,Atletico-MG,1,2,A,1.86,3.5,4.75
+21/11/2018,Santos,Botafogo RJ,1,1,D,1.95,3.18,4.84
+21/11/2018,Athletico-PR,Corinthians,1,0,H,1.47,4.38,7.76
+21/11/2018,Cruzeiro,Vitoria,3,0,H,1.73,3.84,5.09
+21/11/2018,Flamengo RJ,Gremio,2,0,H,2.2,3.05,4
+21/11/2018,Palmeiras,America MG,4,0,H,1.28,5.38,13.05
+22/11/2018,Vasco,Sao Paulo,2,0,H,2.51,3.13,3.2
+22/11/2018,Bahia,Fluminense,2,0,H,1.62,3.82,6.29
+22/11/2018,Ceara,Parana,1,0,H,1.34,5.03,10.38
+22/11/2018,Chapecoense-SC,Sport Recife,2,1,H,1.86,3.37,4.99
+24/11/2018,Santos,Atletico-MG,3,2,H,2.44,3.18,3.2
+25/11/2018,Athletico-PR,Ceara,2,2,D,1.89,3.26,4.84
+25/11/2018,Cruzeiro,Flamengo RJ,0,2,A,2.7,3.03,2.97
+25/11/2018,Vasco,Palmeiras,0,1,A,4.04,3.14,2.12
+25/11/2018,Vitoria,Gremio,0,0,D,4.37,3.7,1.85
+25/11/2018,America MG,Bahia,1,0,H,2.09,3.04,4.32
+25/11/2018,Corinthians,Chapecoense-SC,0,0,D,2.04,2.99,4.64
+25/11/2018,Internacional,Fluminense,2,0,H,1.44,4.45,7.71
+26/11/2018,Botafogo RJ,Parana,2,1,H,1.28,5.37,11.43
+26/11/2018,Sao Paulo,Sport Recife,0,0,D,1.37,4.8,8.83
+01/12/2018,Atletico-MG,Botafogo RJ,1,0,H,1.32,5.32,9.3
+01/12/2018,Flamengo RJ,Athletico-PR,1,2,A,1.45,4.67,6.98
+02/12/2018,Bahia,Cruzeiro,0,0,D,1.92,3.55,4.21
+02/12/2018,Ceara,Vasco,0,0,D,2.41,2.92,3.58
+02/12/2018,Chapecoense-SC,Sao Paulo,1,0,H,2.31,3.24,3.39
+02/12/2018,Fluminense,America MG,1,0,H,2.18,3.29,3.63
+02/12/2018,Gremio,Corinthians,1,0,H,1.3,5.11,11.32
+02/12/2018,Palmeiras,Vitoria,3,2,H,1.19,7.39,13.16
+02/12/2018,Parana,Internacional,1,1,D,5.14,3.4,1.81
+02/12/2018,Sport Recife,Santos,2,1,H,1.64,3.79,5.87

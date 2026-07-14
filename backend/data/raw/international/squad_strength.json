@@ -1,6 +1,6 @@
 {
   "Ghana": {
-    "strength": 0.4479,
+    "strength": 0.447,
     "n_rated": 1,
     "n_squad": 26,
     "coverage": 0.04,
@@ -10,7 +10,7 @@
     "low_confidence": true
   },
   "Panama": {
-    "strength": 0.5304,
+    "strength": 0.5319,
     "n_rated": 6,
     "n_squad": 26,
     "coverage": 0.23,
@@ -215,10 +215,10 @@
     "low_confidence": false
   },
   "Ecuador": {
-    "strength": 0.6639,
-    "n_rated": 10,
+    "strength": 0.6496,
+    "n_rated": 11,
     "n_squad": 26,
-    "coverage": 0.38,
+    "coverage": 0.42,
     "top_leagues": [
       "Serie A (Brazil)",
       "Liga Profesional Argentina (Argentina)",
@@ -338,7 +338,7 @@
     "low_confidence": true
   },
   "South Korea": {
-    "strength": 0.5376,
+    "strength": 0.5342,
     "n_rated": 10,
     "n_squad": 26,
     "coverage": 0.38,
@@ -509,7 +509,7 @@
     "low_confidence": true
   },
   "Jordan": {
-    "strength": 0.478,
+    "strength": 0.484,
     "n_rated": 1,
     "n_squad": 26,
     "coverage": 0.04,

@@ -1,0 +1,381 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,PSH,PSD,PSA
+15/04/2023,America MG,Fluminense,0,3,A,2.55,3.34,2.98
+15/04/2023,Palmeiras,Cuiaba,2,1,H,1.39,5.12,8.51
+15/04/2023,Athletico-PR,Goias,2,0,H,1.64,3.69,6.64
+15/04/2023,Botafogo RJ,Sao Paulo,2,1,H,2.46,3.17,3.26
+15/04/2023,Bragantino,Bahia,2,1,H,1.85,3.71,4.58
+15/04/2023,Fortaleza,Internacional,1,1,D,1.91,3.6,4.4
+16/04/2023,Atletico-MG,Vasco,1,2,A,1.84,3.59,4.84
+16/04/2023,Corinthians,Cruzeiro,2,1,H,1.8,3.51,5.29
+16/04/2023,Flamengo RJ,Coritiba,3,0,H,1.39,5.02,8.79
+16/04/2023,Gremio,Santos,1,0,H,1.78,3.58,5.34
+22/04/2023,Fluminense,Athletico-PR,2,0,H,1.5,4.3,7.59
+22/04/2023,Cuiaba,Bragantino,1,1,D,2.65,3.11,3.04
+22/04/2023,Sao Paulo,America MG,3,0,H,1.94,3.42,4.51
+23/04/2023,Cruzeiro,Gremio,1,0,H,2.39,3.26,3.31
+23/04/2023,Internacional,Flamengo RJ,2,1,H,2.77,3.31,2.74
+23/04/2023,Santos,Atletico-MG,0,0,D,3.42,3.13,2.41
+23/04/2023,Vasco,Palmeiras,2,2,D,3.28,3.19,2.44
+23/04/2023,Coritiba,Fortaleza,0,3,A,2.73,3.18,2.89
+23/04/2023,Goias,Corinthians,3,1,H,3.29,2.93,2.62
+25/04/2023,Bahia,Botafogo RJ,1,2,A,2.1,3.34,3.96
+29/04/2023,Coritiba,Sao Paulo,1,1,D,3.03,3.18,2.61
+29/04/2023,Fortaleza,Fluminense,4,2,H,2.16,3.34,3.76
+29/04/2023,Bragantino,Cruzeiro,0,3,A,1.82,3.67,4.81
+29/04/2023,Palmeiras,Corinthians,2,1,H,1.5,4.07,8.26
+29/04/2023,Santos,America MG,3,2,H,2.41,3.22,3.31
+30/04/2023,Atletico-MG,Athletico-PR,2,1,H,1.63,3.83,6.73
+30/04/2023,Flamengo RJ,Botafogo RJ,2,3,A,1.61,4,6.2
+30/04/2023,Cuiaba,Gremio,1,2,A,2.79,3.12,2.87
+30/04/2023,Internacional,Goias,1,0,H,1.64,3.98,5.91
+02/05/2023,Vasco,Bahia,0,1,A,1.75,3.85,5.05
+06/05/2023,Cruzeiro,Santos,2,1,H,1.75,3.63,5.49
+07/05/2023,Fluminense,Vasco,1,1,D,1.79,3.74,4.9
+07/05/2023,America MG,Cuiaba,1,2,A,1.73,3.83,5.23
+07/05/2023,Athletico-PR,Flamengo RJ,2,1,H,3.01,3.22,2.61
+07/05/2023,Bahia,Coritiba,3,1,H,1.74,3.76,5.35
+07/05/2023,Sao Paulo,Internacional,2,0,H,2.05,3.47,3.95
+07/05/2023,Botafogo RJ,Atletico-MG,2,0,H,3.72,3.33,2.18
+07/05/2023,Goias,Palmeiras,0,5,A,5.53,3.99,1.67
+07/05/2023,Gremio,Bragantino,3,3,D,1.91,3.6,4.41
+09/05/2023,Corinthians,Fortaleza,1,1,D,2.66,3.1,3.05
+10/05/2023,Bragantino,America MG,2,2,D,1.83,3.77,4.62
+10/05/2023,Internacional,Athletico-PR,0,2,A,1.82,3.61,4.93
+10/05/2023,Santos,Bahia,3,0,H,2.3,3.14,3.65
+11/05/2023,Cuiaba,Atletico-MG,0,4,A,3.86,3.3,2.15
+11/05/2023,Flamengo RJ,Goias,2,0,H,1.25,6.22,12.58
+11/05/2023,Cruzeiro,Fluminense,0,2,A,2.74,3.21,2.85
+11/05/2023,Palmeiras,Gremio,4,1,H,1.41,4.71,8.65
+11/05/2023,Coritiba,Vasco,1,1,D,3.49,3.17,2.46
+11/05/2023,Botafogo RJ,Corinthians,3,0,H,1.95,3.47,4.56
+12/05/2023,Fortaleza,Sao Paulo,0,0,D,2,3.42,4.24
+13/05/2023,Bahia,Flamengo RJ,2,3,A,3.15,3.46,2.38
+13/05/2023,Fluminense,Cuiaba,2,0,H,1.4,4.76,8.03
+13/05/2023,Palmeiras,Bragantino,1,1,D,1.6,4.2,5.91
+14/05/2023,Atletico-MG,Internacional,2,0,H,1.56,3.92,6.56
+14/05/2023,Corinthians,Sao Paulo,1,1,D,2.57,3.02,3.25
+14/05/2023,Gremio,Fortaleza,0,0,D,1.9,3.64,4.38
+14/05/2023,Vasco,Santos,0,1,A,1.93,3.33,4.73
+14/05/2023,America MG,Cruzeiro,0,4,A,2.56,3.47,2.87
+14/05/2023,Athletico-PR,Coritiba,3,2,H,1.63,3.83,6.41
+14/05/2023,Goias,Botafogo RJ,2,1,H,3.27,3.29,2.4
+20/05/2023,Bahia,Goias,1,1,D,1.71,3.76,5.54
+20/05/2023,America MG,Fortaleza,2,1,H,3.05,3.39,2.47
+20/05/2023,Botafogo RJ,Fluminense,1,0,H,2.77,3.32,2.74
+20/05/2023,Bragantino,Athletico-PR,2,0,H,1.85,3.64,4.63
+20/05/2023,Coritiba,Atletico-MG,1,2,A,4.83,3.45,1.88
+20/05/2023,Sao Paulo,Vasco,4,2,H,1.87,3.44,4.88
+21/05/2023,Santos,Palmeiras,0,0,D,5.45,3.63,1.75
+21/05/2023,Flamengo RJ,Corinthians,1,0,H,1.43,4.45,9.02
+21/05/2023,Gremio,Internacional,3,1,H,2.05,3.36,4.1
+23/05/2023,Cruzeiro,Cuiaba,0,1,A,1.64,3.77,6.45
+27/05/2023,Athletico-PR,Gremio,1,2,A,1.64,4,5.9
+27/05/2023,Fortaleza,Vasco,2,0,H,1.68,4.03,5.3
+27/05/2023,Cuiaba,Coritiba,1,1,D,1.89,3.44,4.74
+27/05/2023,Flamengo RJ,Cruzeiro,1,1,D,1.7,3.77,5.63
+28/05/2023,Sao Paulo,Goias,2,1,H,1.57,3.91,7.17
+28/05/2023,Corinthians,Fluminense,2,0,H,2.81,3.19,2.79
+28/05/2023,Internacional,Bahia,2,0,H,2.12,3.52,3.67
+28/05/2023,Atletico-MG,Palmeiras,1,1,D,2.29,3.3,3.43
+28/05/2023,Bragantino,Santos,2,0,H,1.78,3.52,5.46
+28/05/2023,Botafogo RJ,America MG,2,0,H,1.83,3.72,4.7
+03/06/2023,Fortaleza,Bahia,0,0,D,1.61,4.02,6.12
+03/06/2023,America MG,Corinthians,2,0,H,2.93,3.14,2.72
+03/06/2023,Athletico-PR,Botafogo RJ,1,0,H,1.99,3.5,4.16
+03/06/2023,Cruzeiro,Atletico-MG,0,1,A,3.53,3.11,2.37
+04/06/2023,Santos,Internacional,1,1,D,2.52,2.88,3.54
+04/06/2023,Fluminense,Bragantino,2,1,H,1.77,3.73,4.99
+04/06/2023,Gremio,Sao Paulo,2,1,H,2.09,3.32,4.01
+04/06/2023,Goias,Cuiaba,0,1,A,2.35,3.02,3.68
+04/06/2023,Palmeiras,Coritiba,3,1,H,1.29,5.88,11.94
+06/06/2023,Vasco,Flamengo RJ,1,4,A,4.27,3.69,1.91
+10/06/2023,Coritiba,Santos,0,0,D,2.57,2.96,3.32
+10/06/2023,Atletico-MG,Bragantino,1,1,D,1.82,3.43,5.3
+10/06/2023,Bahia,Cruzeiro,2,2,D,2.87,3.27,2.68
+10/06/2023,Corinthians,Cuiaba,1,1,D,1.82,3.29,5.68
+11/06/2023,Botafogo RJ,Fortaleza,2,0,H,2.27,3.25,3.59
+11/06/2023,America MG,Athletico-PR,2,2,D,2.65,3.28,2.9
+11/06/2023,Internacional,Vasco,2,1,H,1.83,3.55,4.98
+11/06/2023,Sao Paulo,Palmeiras,0,2,A,3.19,3.25,2.47
+11/06/2023,Flamengo RJ,Gremio,3,0,H,1.61,4.2,5.82
+11/06/2023,Goias,Fluminense,2,2,D,3.49,3.3,2.28
+21/06/2023,Cruzeiro,Fortaleza,0,1,A,1.94,3.51,4.34
+21/06/2023,Sao Paulo,Athletico-PR,2,1,H,1.81,3.51,5.17
+22/06/2023,Santos,Corinthians,0,2,A,2.28,3,3.9
+22/06/2023,Bahia,Palmeiras,1,0,H,3.68,3.5,2.12
+22/06/2023,Fluminense,Atletico-MG,1,1,D,2.97,3.22,2.63
+22/06/2023,Gremio,America MG,3,1,H,1.7,3.81,5.52
+23/06/2023,Coritiba,Internacional,0,1,A,2.75,3.01,3.02
+23/06/2023,Cuiaba,Botafogo RJ,0,1,A,2.73,2.98,3.08
+23/06/2023,Vasco,Goias,0,1,A,1.99,3.31,4.46
+23/06/2023,Bragantino,Flamengo RJ,4,0,H,3.23,3.36,2.38
+24/06/2023,Athletico-PR,Corinthians,1,0,H,1.95,3.24,4.73
+24/06/2023,Fluminense,Bahia,2,1,H,1.55,4.18,6.78
+24/06/2023,Fortaleza,Atletico-MG,2,1,H,2.86,3.12,2.81
+25/06/2023,Cruzeiro,Sao Paulo,1,0,H,2.3,3.18,3.58
+25/06/2023,Gremio,Coritiba,5,1,H,1.53,4.33,6.7
+25/06/2023,Palmeiras,Botafogo RJ,0,1,A,1.45,4.73,7.59
+25/06/2023,America MG,Internacional,1,2,A,2.01,3.46,4.14
+25/06/2023,Bragantino,Goias,2,0,H,1.43,4.79,8.14
+25/06/2023,Santos,Flamengo RJ,2,3,A,3.48,3.21,2.33
+27/06/2023,Vasco,Cuiaba,1,0,H,2.24,3.11,3.85
+01/07/2023,Sao Paulo,Fluminense,1,0,H,2.17,3.47,3.57
+01/07/2023,Bahia,Gremio,1,2,A,2.94,3.28,2.62
+01/07/2023,Flamengo RJ,Fortaleza,2,0,H,1.61,4.11,6
+02/07/2023,Internacional,Cruzeiro,0,0,D,2.06,3.3,4.17
+02/07/2023,Corinthians,Bragantino,0,1,A,2.92,2.92,2.92
+02/07/2023,Athletico-PR,Palmeiras,2,2,D,2.35,3.24,3.4
+02/07/2023,Atletico-MG,America MG,2,2,D,1.54,4.01,7.6
+02/07/2023,Botafogo RJ,Vasco,2,0,H,1.97,3.41,4.37
+02/07/2023,Cuiaba,Santos,3,0,H,1.96,3.24,4.72
+04/07/2023,Goias,Coritiba,1,2,A,2.18,3.33,3.71
+08/07/2023,Cuiaba,Bahia,1,1,D,1.79,3.5,5.39
+08/07/2023,Vasco,Cruzeiro,0,1,A,2.98,3.23,2.61
+08/07/2023,Atletico-MG,Corinthians,0,1,A,1.79,3.32,5.91
+08/07/2023,Coritiba,America MG,3,1,H,2.17,3.41,3.64
+09/07/2023,Palmeiras,Flamengo RJ,1,1,D,1.85,3.94,4.27
+09/07/2023,Santos,Goias,4,3,H,1.98,3.25,4.61
+09/07/2023,Bragantino,Sao Paulo,0,0,D,1.68,3.81,5.75
+09/07/2023,Fluminense,Internacional,2,0,H,1.93,3.44,4.58
+09/07/2023,Fortaleza,Athletico-PR,1,0,H,1.53,4.11,7.49
+09/07/2023,Gremio,Botafogo RJ,0,2,A,1.85,3.69,4.76
+16/07/2023,Botafogo RJ,Bragantino,2,0,H,2.14,3.32,3.83
+16/07/2023,Cruzeiro,Coritiba,0,0,D,1.66,3.79,6.03
+16/07/2023,Fluminense,Flamengo RJ,0,0,D,2.85,3.32,2.66
+16/07/2023,Fortaleza,Cuiaba,0,1,A,1.79,3.5,5.42
+16/07/2023,Sao Paulo,Santos,4,1,H,1.65,3.67,6.61
+16/07/2023,Athletico-PR,Bahia,2,0,H,1.59,4.14,6.25
+16/07/2023,Internacional,Palmeiras,0,0,D,2.83,3.15,2.8
+18/07/2023,Goias,Atletico-MG,0,0,D,4.27,3.46,1.98
+22/07/2023,Flamengo RJ,America MG,1,1,D,1.35,5.17,10.13
+22/07/2023,Palmeiras,Fortaleza,3,1,H,1.55,4.05,7.15
+22/07/2023,Bahia,Corinthians,0,0,D,2.28,3.11,3.74
+22/07/2023,Cuiaba,Sao Paulo,2,1,H,2.86,3.01,2.9
+23/07/2023,Gremio,Atletico-MG,1,0,H,2.48,3.2,3.21
+23/07/2023,Bragantino,Internacional,0,0,D,1.75,3.72,5.31
+23/07/2023,Cruzeiro,Goias,0,1,A,1.54,4.05,7.32
+23/07/2023,Santos,Botafogo RJ,2,2,D,2.99,2.97,2.81
+23/07/2023,Vasco,Athletico-PR,0,2,A,2.87,3.16,2.75
+24/07/2023,Coritiba,Fluminense,2,0,H,3.4,3.19,2.38
+29/07/2023,Athletico-PR,Cruzeiro,3,3,D,1.86,3.49,4.87
+29/07/2023,Fluminense,Santos,1,0,H,1.55,3.98,7.47
+29/07/2023,Internacional,Cuiaba,1,2,A,1.81,3.44,5.41
+29/07/2023,Corinthians,Vasco,3,1,H,2.1,3.13,4.32
+29/07/2023,Fortaleza,Bragantino,0,3,A,2.22,3.35,3.59
+30/07/2023,Atletico-MG,Flamengo RJ,1,2,A,2.23,3.3,3.62
+30/07/2023,Sao Paulo,Bahia,0,0,D,1.68,3.68,6.17
+30/07/2023,America MG,Palmeiras,1,4,A,3.68,3.45,2.14
+30/07/2023,Botafogo RJ,Coritiba,4,1,H,1.7,3.69,5.79
+30/07/2023,Goias,Gremio,1,1,D,2.74,3.34,2.75
+05/08/2023,Santos,Athletico-PR,1,1,D,2.41,3.05,3.52
+05/08/2023,Goias,Fortaleza,1,0,H,2.73,3.05,3
+05/08/2023,Internacional,Corinthians,2,2,D,2.32,2.97,3.83
+06/08/2023,Fluminense,Palmeiras,2,1,H,2.2,3.25,3.77
+06/08/2023,Sao Paulo,Atletico-MG,0,2,A,1.99,3.36,4.7
+06/08/2023,Vasco,Gremio,1,0,H,2.74,3.11,2.93
+06/08/2023,Bahia,America MG,3,1,H,1.94,3.68,4.12
+06/08/2023,Coritiba,Bragantino,0,1,A,3.58,3.33,2.23
+06/08/2023,Cruzeiro,Botafogo RJ,0,0,D,2.35,3.23,3.41
+07/08/2023,Cuiaba,Flamengo RJ,3,0,H,2.95,3.08,2.71
+13/08/2023,Botafogo RJ,Internacional,3,1,H,2.41,3.07,3.48
+13/08/2023,Atletico-MG,Bahia,1,0,H,1.6,3.86,6.76
+13/08/2023,America MG,Goias,0,1,A,2,3.46,4.17
+13/08/2023,Corinthians,Coritiba,3,1,H,1.73,3.59,5.72
+13/08/2023,Gremio,Fluminense,2,1,H,2.32,3.35,3.36
+13/08/2023,Flamengo RJ,Sao Paulo,1,1,D,1.8,3.73,4.87
+13/08/2023,Fortaleza,Santos,4,0,H,1.55,3.98,7.47
+14/08/2023,Palmeiras,Cruzeiro,1,0,H,1.6,4.06,6.35
+15/08/2023,Bragantino,Vasco,1,1,D,1.64,3.82,6.32
+16/08/2023,Athletico-PR,Cuiaba,2,0,H,1.84,3.44,5.09
+19/08/2023,Internacional,Fortaleza,0,1,A,2.43,3.14,3.37
+19/08/2023,Sao Paulo,Botafogo RJ,0,0,D,1.95,3.52,4.28
+19/08/2023,Cuiaba,Palmeiras,0,2,A,3.46,3.13,2.38
+19/08/2023,Fluminense,America MG,3,1,H,1.5,4.34,7.55
+20/08/2023,Cruzeiro,Corinthians,1,1,D,1.8,3.59,5.12
+20/08/2023,Vasco,Atletico-MG,1,0,H,2.69,3.12,2.98
+20/08/2023,Bahia,Bragantino,4,0,H,2.45,3.32,3.15
+20/08/2023,Coritiba,Flamengo RJ,2,3,A,3.97,3.59,2.01
+20/08/2023,Santos,Gremio,2,1,H,2.64,3.19,2.99
+22/08/2023,Goias,Athletico-PR,1,1,D,2.94,3.11,2.73
+26/08/2023,Flamengo RJ,Internacional,0,0,D,1.48,4.38,7.89
+27/08/2023,Corinthians,Goias,1,1,D,1.98,3.27,4.58
+27/08/2023,Bragantino,Cuiaba,2,0,H,1.65,3.66,6.51
+27/08/2023,America MG,Sao Paulo,2,1,H,2.68,3.28,2.86
+27/08/2023,Atletico-MG,Santos,2,0,H,1.6,3.67,7.43
+27/08/2023,Botafogo RJ,Bahia,3,0,H,1.89,3.6,4.48
+27/08/2023,Athletico-PR,Fluminense,2,2,D,1.81,3.59,5.06
+27/08/2023,Fortaleza,Coritiba,3,1,H,1.53,4.17,7.18
+27/08/2023,Palmeiras,Vasco,1,0,H,1.38,4.87,9.59
+27/08/2023,Gremio,Cruzeiro,3,0,H,2.05,3.41,4.03
+02/09/2023,Athletico-PR,Atletico-MG,1,1,D,2.46,3.06,3.41
+02/09/2023,Goias,Internacional,0,0,D,2.9,2.89,2.97
+03/09/2023,Botafogo RJ,Flamengo RJ,1,2,A,2.48,3.28,3.13
+03/09/2023,Gremio,Cuiaba,2,0,H,1.68,3.75,5.88
+03/09/2023,Corinthians,Palmeiras,0,0,D,4.92,3.25,1.93
+03/09/2023,Fluminense,Fortaleza,1,0,H,1.95,3.45,4.41
+03/09/2023,America MG,Santos,2,0,H,2.21,3.2,3.8
+03/09/2023,Bahia,Vasco,1,1,D,2.11,3.33,3.95
+03/09/2023,Cruzeiro,Bragantino,0,0,D,2.47,3.14,3.29
+14/09/2023,Flamengo RJ,Athletico-PR,0,3,A,1.81,3.58,5.02
+14/09/2023,Internacional,Sao Paulo,2,1,H,2.71,3.06,3.01
+14/09/2023,Fortaleza,Corinthians,2,1,H,1.6,3.87,6.84
+14/09/2023,Santos,Cruzeiro,0,3,A,2.4,3.12,3.44
+15/09/2023,Coritiba,Bahia,2,4,A,2.66,3.22,2.94
+15/09/2023,Bragantino,Gremio,2,0,H,1.72,3.86,5.26
+16/09/2023,Cuiaba,America MG,2,2,D,1.88,3.5,4.67
+16/09/2023,Palmeiras,Goias,1,0,H,1.29,5.59,13.03
+16/09/2023,Vasco,Fluminense,4,2,H,3.57,3.15,2.32
+17/09/2023,Atletico-MG,Botafogo RJ,1,0,H,2.32,3.24,3.48
+19/09/2023,Bahia,Santos,1,2,A,1.67,3.74,6.04
+19/09/2023,Corinthians,Gremio,4,4,D,2.5,3.18,3.19
+20/09/2023,America MG,Bragantino,0,2,A,2.97,3.52,2.46
+20/09/2023,Goias,Flamengo RJ,0,0,D,2.96,3.2,2.62
+21/09/2023,Fluminense,Cruzeiro,1,0,H,1.83,3.59,4.9
+21/09/2023,Sao Paulo,Fortaleza,1,2,A,2.4,3.22,3.3
+21/09/2023,Vasco,Coritiba,5,1,H,1.58,3.9,6.79
+21/09/2023,Athletico-PR,Internacional,2,1,H,1.67,3.79,5.96
+22/09/2023,Gremio,Palmeiras,1,0,H,3.1,3.34,2.47
+23/09/2023,Corinthians,Botafogo RJ,1,0,H,2.91,2.99,2.86
+24/09/2023,Atletico-MG,Cuiaba,1,0,H,1.57,3.69,8.03
+26/09/2023,America MG,Vasco,0,1,A,2.84,3.36,2.64
+27/09/2023,Sao Paulo,Coritiba,2,1,H,1.48,4.49,7.54
+30/09/2023,Flamengo RJ,Bahia,1,0,H,1.54,4.35,6.51
+30/09/2023,Fortaleza,Gremio,1,1,D,2.64,3.29,2.9
+30/09/2023,Cuiaba,Fluminense,3,0,H,2.33,3.1,3.62
+30/09/2023,Sao Paulo,Corinthians,2,1,H,1.52,3.96,8.24
+01/10/2023,Internacional,Atletico-MG,0,2,A,3.78,3.06,2.36
+01/10/2023,Coritiba,Athletico-PR,2,0,H,3.68,3.26,2.22
+01/10/2023,Cruzeiro,America MG,1,1,D,1.74,3.8,5.18
+01/10/2023,Santos,Vasco,4,1,H,2.6,3.11,3.11
+01/10/2023,Bragantino,Palmeiras,2,1,H,1.68,4.01,5.3
+03/10/2023,Botafogo RJ,Goias,1,1,D,1.65,3.68,6.45
+07/10/2023,Goias,Bahia,4,6,A,2.5,3.14,3.24
+07/10/2023,Vasco,Sao Paulo,0,0,D,2.65,3.14,3.01
+08/10/2023,Corinthians,Flamengo RJ,1,1,D,3.68,3.16,2.27
+08/10/2023,Fluminense,Botafogo RJ,0,2,A,1.95,3.52,4.29
+08/10/2023,Internacional,Gremio,3,2,H,2.29,3.26,3.53
+08/10/2023,Palmeiras,Santos,1,2,A,1.44,4.48,8.73
+08/10/2023,Athletico-PR,Bragantino,1,1,D,2.76,3.22,2.82
+08/10/2023,Atletico-MG,Coritiba,1,2,A,1.39,4.75,9.8
+08/10/2023,Fortaleza,America MG,3,2,H,1.53,4.43,6.46
+15/10/2023,Cuiaba,Cruzeiro,0,0,D,2.47,2.95,3.53
+18/10/2023,Gremio,Athletico-PR,1,2,A,2.11,3.33,3.92
+19/10/2023,America MG,Botafogo RJ,1,2,A,2.9,3.26,2.67
+19/10/2023,Coritiba,Cuiaba,0,3,A,2.61,2.94,3.29
+19/10/2023,Bahia,Internacional,1,0,H,2.07,3.37,4.04
+19/10/2023,Goias,Sao Paulo,2,0,H,3.79,3.19,2.22
+19/10/2023,Vasco,Fortaleza,1,0,H,2.32,3.19,3.53
+19/10/2023,Cruzeiro,Flamengo RJ,0,2,A,3.55,3.22,2.3
+19/10/2023,Palmeiras,Atletico-MG,0,2,A,1.74,3.51,5.87
+20/10/2023,Santos,Bragantino,1,3,A,3.2,3.39,2.38
+20/10/2023,Fluminense,Corinthians,3,3,D,1.65,3.9,5.98
+21/10/2023,Bahia,Fortaleza,2,0,H,2.09,3.39,3.93
+21/10/2023,Cuiaba,Goias,1,1,D,2.05,3.18,4.4
+21/10/2023,Sao Paulo,Gremio,3,0,H,1.6,4.04,6.32
+22/10/2023,Botafogo RJ,Athletico-PR,1,1,D,1.9,3.35,4.87
+22/10/2023,Atletico-MG,Cruzeiro,0,1,A,1.92,3.17,5.2
+22/10/2023,Flamengo RJ,Vasco,1,0,H,1.7,3.77,5.61
+22/10/2023,Internacional,Santos,7,1,H,1.54,4.08,7.28
+22/10/2023,Bragantino,Fluminense,1,0,H,1.76,3.9,4.85
+22/10/2023,Corinthians,America MG,1,1,D,2.09,3.29,4.08
+22/10/2023,Coritiba,Palmeiras,0,2,A,5.19,3.57,1.79
+25/10/2023,Athletico-PR,America MG,3,2,H,1.58,4.31,6.03
+25/10/2023,Bragantino,Atletico-MG,1,2,A,1.88,3.47,4.8
+25/10/2023,Fluminense,Goias,5,3,H,1.61,4.15,5.9
+26/10/2023,Cruzeiro,Bahia,3,0,H,2,3.26,4.51
+26/10/2023,Palmeiras,Sao Paulo,5,0,H,2.09,3.25,4.15
+26/10/2023,Cuiaba,Corinthians,0,1,A,2.23,3.1,3.88
+26/10/2023,Gremio,Flamengo RJ,3,2,H,4.14,3.4,2.03
+26/10/2023,Vasco,Internacional,1,2,A,2.18,3.2,3.87
+27/10/2023,Santos,Coritiba,2,1,H,1.68,4.09,5.21
+28/10/2023,America MG,Gremio,3,4,A,2.32,3.56,3.16
+28/10/2023,Palmeiras,Bahia,1,0,H,1.34,5.16,10.94
+29/10/2023,Atletico-MG,Fluminense,2,0,H,1.78,3.57,5.37
+29/10/2023,Athletico-PR,Sao Paulo,1,1,D,2.09,3.4,3.91
+29/10/2023,Goias,Vasco,1,1,D,2.5,3.09,3.29
+29/10/2023,Corinthians,Santos,1,1,D,2.18,3.25,3.83
+29/10/2023,Internacional,Coritiba,3,4,A,1.41,4.85,8.62
+29/10/2023,Botafogo RJ,Cuiaba,0,1,A,1.68,3.67,6.14
+31/10/2023,Bahia,Fluminense,1,0,H,1.5,4.49,7.16
+01/11/2023,Corinthians,Athletico-PR,1,0,H,2.73,3,3.05
+01/11/2023,Internacional,America MG,1,1,D,1.58,4.38,5.87
+01/11/2023,Coritiba,Gremio,1,2,A,3.22,3.68,2.24
+01/11/2023,Flamengo RJ,Santos,1,2,A,1.47,4.52,7.59
+02/11/2023,Atletico-MG,Fortaleza,3,1,H,1.73,3.71,5.48
+02/11/2023,Botafogo RJ,Palmeiras,3,4,A,3.14,3.2,2.52
+02/11/2023,Cuiaba,Vasco,0,2,A,2.67,3.03,3.1
+02/11/2023,Goias,Bragantino,0,2,A,3.29,3.44,2.31
+02/11/2023,Sao Paulo,Cruzeiro,1,0,H,1.91,3.34,4.86
+04/11/2023,America MG,Atletico-MG,1,1,D,4.61,3.73,1.83
+04/11/2023,Gremio,Bahia,1,0,H,1.76,3.83,4.79
+05/11/2023,Palmeiras,Athletico-PR,1,0,H,1.7,3.87,5.44
+05/11/2023,Bragantino,Corinthians,1,0,H,1.6,4.22,5.87
+05/11/2023,Cruzeiro,Internacional,1,2,A,2.21,3.06,4.02
+05/11/2023,Fortaleza,Flamengo RJ,0,2,A,2.58,3.16,3.09
+05/11/2023,Coritiba,Goias,0,1,A,2.7,3.33,2.8
+06/11/2023,Vasco,Botafogo RJ,1,0,H,2.35,3.39,3.26
+07/11/2023,Santos,Cuiaba,0,0,D,1.79,3.52,5.3
+08/11/2023,America MG,Coritiba,0,3,A,1.75,4.03,4.77
+08/11/2023,Internacional,Fluminense,0,0,D,1.88,3.59,4.52
+08/11/2023,Athletico-PR,Fortaleza,1,1,D,2.01,3.46,4.12
+08/11/2023,Sao Paulo,Bragantino,1,0,H,3.25,3.3,2.38
+09/11/2023,Flamengo RJ,Palmeiras,3,0,H,2.46,3.29,3.16
+09/11/2023,Corinthians,Atletico-MG,1,1,D,2.89,2.92,2.95
+09/11/2023,Goias,Santos,0,1,A,2.19,3.28,3.76
+09/11/2023,Bahia,Cuiaba,0,3,A,1.86,3.45,4.93
+09/11/2023,Botafogo RJ,Gremio,3,4,A,1.95,3.71,4.03
+11/11/2023,Coritiba,Cruzeiro,1,0,H,3.63,3.35,2.2
+11/11/2023,Flamengo RJ,Fluminense,1,1,D,1.96,3.58,4.16
+12/11/2023,Palmeiras,Internacional,3,0,H,1.65,4,5.68
+12/11/2023,Bragantino,Botafogo RJ,2,2,D,1.74,3.88,5.07
+12/11/2023,Gremio,Corinthians,0,1,A,1.66,3.92,5.54
+12/11/2023,Atletico-MG,Goias,2,1,H,1.59,3.91,6.91
+12/11/2023,Bahia,Athletico-PR,1,1,D,2.3,3.31,3.44
+12/11/2023,Cuiaba,Fortaleza,2,1,H,2.9,2.81,3.05
+12/11/2023,Santos,Sao Paulo,0,0,D,2.77,3.03,2.97
+12/11/2023,Vasco,America MG,2,1,H,1.5,4.47,7.08
+18/11/2023,Fortaleza,Cruzeiro,0,1,A,2.01,3.25,4.5
+22/11/2023,Cruzeiro,Vasco,2,2,D,2.18,3.09,4.05
+23/11/2023,Fluminense,Sao Paulo,1,0,H,2.25,3.21,3.68
+23/11/2023,Fortaleza,Botafogo RJ,2,2,D,2.19,3.48,3.52
+24/11/2023,Flamengo RJ,Bragantino,1,0,H,2.14,3.49,3.65
+25/11/2023,Corinthians,Bahia,1,5,A,2.1,3.2,4.16
+25/11/2023,Athletico-PR,Vasco,0,0,D,1.99,3.45,4.24
+26/11/2023,Fluminense,Coritiba,2,1,H,1.33,5.39,10.37
+26/11/2023,Atletico-MG,Gremio,3,0,H,1.77,3.75,5.05
+26/11/2023,Botafogo RJ,Santos,1,1,D,1.84,3.55,4.89
+26/11/2023,America MG,Flamengo RJ,0,3,A,8.52,5.02,1.4
+26/11/2023,Fortaleza,Palmeiras,2,2,D,3.22,3.22,2.46
+26/11/2023,Internacional,Bragantino,1,0,H,2.58,3.3,2.97
+26/11/2023,Sao Paulo,Cuiaba,0,0,D,1.7,3.5,6.32
+28/11/2023,Goias,Cruzeiro,0,1,A,2.95,3.11,2.73
+29/11/2023,Vasco,Corinthians,2,4,A,2,3.23,4.55
+29/11/2023,Santos,Fluminense,0,3,A,2.6,3.23,3
+29/11/2023,Flamengo RJ,Atletico-MG,0,3,A,1.74,3.72,5.36
+29/11/2023,Bahia,Sao Paulo,0,1,A,2.31,3.13,3.62
+29/11/2023,Cuiaba,Internacional,0,2,A,3.19,2.86,2.75
+30/11/2023,Coritiba,Botafogo RJ,1,1,D,4.87,3.78,1.78
+30/11/2023,Palmeiras,America MG,4,0,H,1.19,7.6,15.84
+30/11/2023,Gremio,Goias,2,1,H,1.52,4.58,6.46
+30/11/2023,Cruzeiro,Athletico-PR,1,1,D,2.01,3.46,4.14
+30/11/2023,Bragantino,Fortaleza,1,2,A,1.85,3.68,4.59
+02/12/2023,Corinthians,Internacional,1,2,A,2.64,2.88,3.31
+03/12/2023,Atletico-MG,Sao Paulo,2,1,H,1.7,3.62,6.01
+03/12/2023,Flamengo RJ,Cuiaba,2,1,H,1.37,4.87,10.36
+03/12/2023,Palmeiras,Fluminense,1,0,H,1.27,6.17,10.98
+03/12/2023,America MG,Bahia,3,2,H,3.77,3.76,2.01
+03/12/2023,Athletico-PR,Santos,3,0,H,2.03,3.44,4.07
+03/12/2023,Botafogo RJ,Cruzeiro,0,0,D,1.96,3.54,4.22
+03/12/2023,Bragantino,Coritiba,1,0,H,1.2,7.58,14.6
+03/12/2023,Fortaleza,Goias,1,0,H,1.41,4.76,8.75
+03/12/2023,Gremio,Vasco,1,0,H,1.85,3.72,4.56
+06/12/2023,Goias,America MG,1,0,H,1.72,4.14,4.67
+07/12/2023,Bahia,Atletico-MG,4,1,H,2.5,3.64,2.83
+07/12/2023,Coritiba,Corinthians,0,2,A,3.4,3.3,2.29
+07/12/2023,Cruzeiro,Palmeiras,1,1,D,4.13,2.83,2.29
+07/12/2023,Cuiaba,Athletico-PR,3,0,H,2.37,3.12,3.43
+07/12/2023,Fluminense,Gremio,2,3,A,2.08,3.92,3.35
+07/12/2023,Internacional,Botafogo RJ,3,1,H,2.1,3.38,3.71
+07/12/2023,Santos,Fortaleza,1,2,A,1.95,3.33,4.5
+07/12/2023,Sao Paulo,Flamengo RJ,1,0,H,3.41,3.36,2.26
+07/12/2023,Vasco,Bragantino,2,1,H,2.21,3.35,3.54

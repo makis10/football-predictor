@@ -35,12 +35,24 @@ COMPETITIONS = {
     "FL1": "Ligue1",
     "PPL": "PrimeiraLiga",
     "DED": "Eredivisie",
+    "BSA": "BrazilSerieA",
     "CL":  "CL",
 }
 
 # ── Team name mapping: API shortName → our CSV/DB name ───────────────────────
 
 TEAM_MAP: dict[str, str] = {
+    # Brazil Serie A — football-data.org shortName → football-data.co.uk CSV name
+    "Botafogo":         "Botafogo RJ",
+    "Chapecoense":      "Chapecoense-SC",
+    "Clube do Remo":    "Remo",
+    "Flamengo":         "Flamengo RJ",
+    "Grêmio":           "Gremio",
+    "Mineiro":          "Atletico-MG",     # Atlético Mineiro
+    "Paranaense":       "Athletico-PR",    # Athletico Paranaense
+    "São Paulo":        "Sao Paulo",
+    "Vasco da Gama":    "Vasco",
+    "Vitória":          "Vitoria",
     # Premier League
     "Leeds United":     "Leeds",
     "Wolverhampton":    "Wolves",

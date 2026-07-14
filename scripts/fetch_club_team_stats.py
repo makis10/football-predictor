@@ -41,7 +41,7 @@ NAME_MAP = ROOT / "backend" / "data" / "models" / "club_name_map.json"
 LEAGUE_IDS = {
     "EPL": 39, "Championship": 40, "LeagueOne": 41, "LaLiga": 140, "SerieA": 135,
     "Bundesliga": 78, "Ligue1": 61, "GreekSL": 197, "PrimeiraLiga": 94,
-    "Eredivisie": 88, "CL": 2, "EL": 3, "ECL": 848,
+    "Eredivisie": 88, "BrazilSerieA": 71, "CL": 2, "EL": 3, "ECL": 848,
 }
 
 # our DB name → API-Football name, where the slug match can't bridge them.

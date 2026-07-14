@@ -1,0 +1,381 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,PSH,PSD,PSA
+25/05/2013,Vasco,Portuguesa,1,0,H,2.06,3.47,3.96
+25/05/2013,Vitoria,Internacional,2,2,D,2.72,3.37,2.77
+26/05/2013,Corinthians,Botafogo RJ,1,1,D,1.88,3.6,4.66
+26/05/2013,Criciuma,Bahia,3,1,H,1.8,3.59,5.23
+26/05/2013,Gremio,Nautico,2,0,H,1.4,4.73,9.96
+26/05/2013,Ponte Preta,Sao Paulo,0,2,A,3.21,3.27,2.45
+26/05/2013,Santos,Flamengo RJ,0,0,D,2.78,3.37,2.74
+26/05/2013,Coritiba,Atletico-MG,2,1,H,2.06,3.62,3.8
+26/05/2013,Cruzeiro,Goias,5,0,H,1.58,4.33,6.26
+26/05/2013,Fluminense,Athletico-PR,2,1,H,2.36,3.22,3.45
+29/05/2013,Athletico-PR,Cruzeiro,2,2,D,2.94,3.47,2.52
+29/05/2013,Botafogo RJ,Santos,2,1,H,1.72,3.8,5.55
+29/05/2013,Sao Paulo,Vasco,5,1,H,1.68,3.93,5.72
+30/05/2013,Bahia,Coritiba,0,0,D,2.86,3.39,2.62
+30/05/2013,Flamengo RJ,Ponte Preta,0,2,A,1.71,3.75,5.72
+30/05/2013,Nautico,Vitoria,0,3,A,2.45,3.39,3.1
+30/05/2013,Goias,Corinthians,1,1,D,3.14,3.35,2.45
+30/05/2013,Internacional,Criciuma,2,0,H,1.55,4.3,6.72
+01/06/2013,Athletico-PR,Flamengo RJ,2,2,D,2.59,3.31,2.97
+01/06/2013,Botafogo RJ,Cruzeiro,2,1,H,2.33,3.44,3.28
+01/06/2013,Santos,Gremio,1,1,D,2.86,3.26,2.7
+01/06/2013,Goias,Coritiba,1,1,D,2.24,3.55,3.37
+01/06/2013,Vitoria,Vasco,2,0,H,1.81,3.7,4.9
+02/06/2013,Corinthians,Ponte Preta,1,0,H,1.59,4.11,6.54
+02/06/2013,Atletico-MG,Sao Paulo,0,0,D,2,3.58,4.05
+02/06/2013,Fluminense,Criciuma,3,0,H,1.68,4,5.53
+02/06/2013,Internacional,Bahia,1,2,A,1.47,4.34,8.94
+02/06/2013,Nautico,Portuguesa,2,2,D,2.27,3.36,3.45
+05/06/2013,Criciuma,Santos,3,1,H,2.44,3.38,3.13
+05/06/2013,Portuguesa,Internacional,1,1,D,3.04,3.24,2.59
+05/06/2013,Sao Paulo,Goias,0,1,A,1.43,4.76,8.51
+06/06/2013,Gremio,Vitoria,1,0,H,1.42,4.59,9.74
+06/06/2013,Ponte Preta,Athletico-PR,3,4,A,2.59,3.16,3.1
+06/06/2013,Vasco,Atletico-MG,2,0,H,3.77,3.43,2.12
+06/06/2013,Bahia,Botafogo RJ,2,1,H,4.05,3.39,2.06
+06/06/2013,Cruzeiro,Corinthians,1,0,H,2.31,3.35,3.38
+06/06/2013,Flamengo RJ,Nautico,0,1,A,1.48,4.38,8.25
+07/06/2013,Coritiba,Fluminense,2,1,H,2.33,3.33,3.39
+08/06/2013,Criciuma,Flamengo RJ,0,3,A,2.61,3.35,2.91
+08/06/2013,Cruzeiro,Internacional,2,2,D,2.04,3.35,4.23
+08/06/2013,Corinthians,Portuguesa,0,0,D,1.64,3.85,6.44
+08/06/2013,Vasco,Bahia,1,1,D,1.93,3.6,4.36
+09/06/2013,Ponte Preta,Botafogo RJ,0,2,A,2.66,3.41,2.81
+09/06/2013,Atletico-MG,Gremio,2,0,H,2.08,3.45,3.92
+09/06/2013,Coritiba,Nautico,1,0,H,1.43,4.65,9.1
+09/06/2013,Fluminense,Goias,2,1,H,1.79,3.7,5.12
+09/06/2013,Vitoria,Athletico-PR,3,2,H,3.01,3.38,2.52
+12/06/2013,Santos,Atletico-MG,1,0,H,2.8,3.33,2.72
+13/06/2013,Gremio,Sao Paulo,1,1,D,2.27,3.34,3.5
+13/06/2013,Portuguesa,Fluminense,2,1,H,2.91,3.11,2.77
+06/07/2013,Athletico-PR,Gremio,1,1,D,2.73,3.43,2.73
+06/07/2013,Flamengo RJ,Coritiba,2,2,D,2.06,3.68,3.74
+06/07/2013,Nautico,Ponte Preta,1,3,A,2.31,3.51,3.27
+07/07/2013,Portuguesa,Cruzeiro,1,1,D,3.04,3.33,2.52
+07/07/2013,Bahia,Corinthians,0,2,A,3.27,3.26,2.43
+07/07/2013,Goias,Vitoria,1,0,H,2,3.58,4.05
+07/07/2013,Internacional,Vasco,5,3,H,1.51,4.25,7.74
+07/07/2013,Sao Paulo,Santos,0,2,A,1.6,4.09,6.34
+07/07/2013,Atletico-MG,Criciuma,3,2,H,1.78,3.9,4.8
+07/07/2013,Botafogo RJ,Fluminense,1,0,H,2.92,3.33,2.61
+11/07/2013,Sao Paulo,Bahia,1,2,A,1.47,4.43,8.5
+13/07/2013,Fluminense,Internacional,2,3,A,2.14,3.56,3.58
+13/07/2013,Santos,Portuguesa,4,1,H,2.06,3.34,4.13
+14/07/2013,Ponte Preta,Bahia,0,0,D,1.9,3.65,4.47
+14/07/2013,Corinthians,Atletico-MG,0,1,A,1.6,4.04,6.59
+14/07/2013,Coritiba,Athletico-PR,1,0,H,2.24,3.55,3.4
+14/07/2013,Gremio,Botafogo RJ,2,1,H,1.91,3.64,4.42
+14/07/2013,Vitoria,Sao Paulo,3,2,H,2.5,3.43,2.99
+14/07/2013,Criciuma,Goias,0,0,D,2.16,3.55,3.57
+14/07/2013,Cruzeiro,Nautico,3,0,H,1.36,5.32,10.13
+14/07/2013,Vasco,Flamengo RJ,0,1,A,4.38,3.61,1.93
+20/07/2013,Botafogo RJ,Nautico,2,0,H,1.35,5.37,10.28
+20/07/2013,Criciuma,Gremio,2,1,H,3.56,3.44,2.21
+20/07/2013,Sao Paulo,Cruzeiro,0,3,A,2.09,3.59,3.73
+21/07/2013,Athletico-PR,Corinthians,1,1,D,2.61,3.37,2.88
+21/07/2013,Internacional,Flamengo RJ,1,0,H,1.86,3.6,4.75
+21/07/2013,Santos,Coritiba,2,2,D,2.19,3.35,3.7
+21/07/2013,Vitoria,Bahia,0,0,D,2.29,3.25,3.53
+21/07/2013,Fluminense,Vasco,1,3,A,1.55,4.22,6.92
+21/07/2013,Goias,Portuguesa,2,1,H,1.94,3.52,4.38
+25/07/2013,Sao Paulo,Internacional,0,1,A,2.02,3.66,3.88
+27/07/2013,Portuguesa,Athletico-PR,2,3,A,2.79,3.58,2.58
+27/07/2013,Vasco,Criciuma,3,2,H,1.74,3.88,5.17
+28/07/2013,Ponte Preta,Santos,1,0,H,2.52,3.36,3
+28/07/2013,Corinthians,Sao Paulo,0,0,D,2.04,3.38,4.17
+28/07/2013,Cruzeiro,Atletico-MG,4,1,H,1.78,3.82,5.01
+28/07/2013,Gremio,Fluminense,2,0,H,2.04,3.32,4.22
+28/07/2013,Nautico,Internacional,3,0,H,3.47,3.25,2.31
+28/07/2013,Bahia,Goias,2,1,H,2.02,3.37,4.28
+28/07/2013,Coritiba,Vitoria,1,1,D,1.63,4.19,5.75
+28/07/2013,Flamengo RJ,Botafogo RJ,1,1,D,3.03,3.33,2.52
+31/07/2013,Atletico-MG,Athletico-PR,1,2,A,1.65,4.05,5.84
+31/07/2013,Fluminense,Cruzeiro,1,0,H,2.23,3.5,3.41
+31/07/2013,Portuguesa,Criciuma,1,1,D,2.12,3.3,3.93
+01/08/2013,Coritiba,Ponte Preta,5,3,H,1.72,3.79,5.48
+01/08/2013,Bahia,Flamengo RJ,3,0,H,2.85,3.34,2.67
+01/08/2013,Corinthians,Gremio,2,0,H,1.83,3.41,5.43
+01/08/2013,Botafogo RJ,Vitoria,2,0,H,1.46,4.76,7.8
+02/08/2013,Goias,Vasco,1,1,D,2.02,3.61,3.91
+03/08/2013,Cruzeiro,Coritiba,1,0,H,1.62,3.87,6.64
+04/08/2013,Athletico-PR,Goias,2,0,H,1.66,4.05,5.64
+04/08/2013,Criciuma,Corinthians,0,2,A,3.33,3.31,2.36
+04/08/2013,Flamengo RJ,Atletico-MG,3,0,H,2.45,3.27,3.2
+04/08/2013,Gremio,Internacional,1,1,D,2.54,3.24,3.08
+04/08/2013,Ponte Preta,Fluminense,1,1,D,2.96,3.33,2.57
+04/08/2013,Vasco,Botafogo RJ,2,3,A,4,3.39,2.08
+04/08/2013,Vitoria,Portuguesa,2,1,H,1.85,3.8,4.47
+07/08/2013,Criciuma,Cruzeiro,1,2,A,3.77,3.38,2.14
+07/08/2013,Vitoria,Fluminense,1,1,D,3.34,3.52,2.25
+08/08/2013,Athletico-PR,Bahia,1,0,H,1.65,3.72,6.71
+08/08/2013,Flamengo RJ,Portuguesa,1,1,D,1.7,3.93,5.43
+08/08/2013,Atletico-MG,Botafogo RJ,2,2,D,1.99,3.46,4.26
+08/08/2013,Goias,Nautico,2,1,H,1.74,3.74,5.48
+08/08/2013,Santos,Corinthians,1,1,D,3.33,3.17,2.44
+09/08/2013,Gremio,Coritiba,0,1,A,1.85,3.42,5.22
+09/08/2013,Vasco,Ponte Preta,1,1,D,2.02,3.51,4.07
+10/08/2013,Botafogo RJ,Goias,1,1,D,1.76,4,4.87
+10/08/2013,Nautico,Atletico-MG,0,0,D,3.68,3.56,2.12
+11/08/2013,Corinthians,Vitoria,2,0,H,1.38,4.67,11.2
+11/08/2013,Coritiba,Vasco,0,1,A,1.66,4.23,5.39
+11/08/2013,Cruzeiro,Santos,0,0,D,1.53,4.51,6.55
+11/08/2013,Fluminense,Flamengo RJ,2,3,A,2.25,3.3,3.6
+11/08/2013,Bahia,Gremio,0,3,A,2.45,3.06,3.43
+11/08/2013,Internacional,Athletico-PR,2,2,D,1.98,3.51,4.24
+11/08/2013,Ponte Preta,Criciuma,3,1,H,1.93,3.62,4.28
+11/08/2013,Portuguesa,Sao Paulo,2,1,H,3.3,3.53,2.27
+14/08/2013,Atletico-MG,Bahia,2,0,H,1.61,3.89,6.74
+14/08/2013,Criciuma,Nautico,3,0,H,1.96,3.65,4.16
+14/08/2013,Santos,Vasco,1,1,D,1.79,3.82,4.92
+15/08/2013,Coritiba,Portuguesa,1,1,D,1.78,3.72,5.17
+15/08/2013,Vitoria,Ponte Preta,3,1,H,2.46,3.4,3.1
+15/08/2013,Fluminense,Corinthians,0,0,D,2.77,3.09,2.94
+15/08/2013,Goias,Flamengo RJ,1,1,D,2.62,3.35,2.91
+15/08/2013,Gremio,Cruzeiro,3,1,H,2.4,3.43,3.17
+15/08/2013,Sao Paulo,Athletico-PR,1,1,D,1.8,3.95,4.62
+16/08/2013,Botafogo RJ,Internacional,3,3,D,2.06,3.64,3.76
+17/08/2013,Cruzeiro,Vitoria,5,1,H,1.35,5.22,10.55
+17/08/2013,Nautico,Fluminense,0,1,A,3.39,3.28,2.35
+18/08/2013,Vasco,Gremio,2,3,A,2.46,3.35,3.13
+18/08/2013,Corinthians,Coritiba,1,0,H,1.56,3.91,7.95
+18/08/2013,Flamengo RJ,Sao Paulo,0,0,D,2.5,3.21,3.18
+18/08/2013,Ponte Preta,Goias,0,1,A,2.27,3.43,3.39
+18/08/2013,Portuguesa,Botafogo RJ,1,3,A,3.63,3.54,2.14
+18/08/2013,Athletico-PR,Criciuma,2,1,H,1.58,4.26,6.34
+18/08/2013,Bahia,Santos,0,0,D,2.1,3.27,4.07
+18/08/2013,Internacional,Atletico-MG,0,0,D,2.12,3.41,3.86
+24/08/2013,Flamengo RJ,Gremio,0,1,A,2.6,3.17,3.08
+24/08/2013,Ponte Preta,Cruzeiro,0,2,A,4.15,3.55,1.99
+24/08/2013,Santos,Vitoria,2,0,H,1.58,4.08,6.83
+25/08/2013,Criciuma,Coritiba,2,1,H,2.31,3.39,3.34
+25/08/2013,Atletico-MG,Portuguesa,2,1,H,1.6,4.01,6.64
+25/08/2013,Bahia,Nautico,2,0,H,1.66,3.77,6.36
+25/08/2013,Sao Paulo,Fluminense,2,1,H,1.83,3.62,4.94
+25/08/2013,Vasco,Corinthians,1,1,D,4.46,3.47,1.95
+25/08/2013,Athletico-PR,Botafogo RJ,2,0,H,2.31,3.55,3.21
+25/08/2013,Internacional,Goias,3,3,D,1.51,4.26,7.85
+31/08/2013,Goias,Atletico-MG,0,0,D,2.49,3.3,3.12
+31/08/2013,Gremio,Ponte Preta,1,0,H,1.5,4.17,8.43
+31/08/2013,Nautico,Athletico-PR,1,4,A,2.77,3.39,2.71
+31/08/2013,Portuguesa,Bahia,4,2,H,2.21,3.28,3.77
+01/09/2013,Fluminense,Santos,0,2,A,1.93,3.45,4.61
+01/09/2013,Botafogo RJ,Sao Paulo,0,0,D,2.38,3.36,3.26
+01/09/2013,Corinthians,Flamengo RJ,4,0,H,1.85,3.55,4.92
+01/09/2013,Coritiba,Internacional,0,0,D,2.8,3.29,2.75
+01/09/2013,Vitoria,Criciuma,0,1,A,1.93,3.7,4.24
+01/09/2013,Cruzeiro,Vasco,5,3,H,1.46,4.78,7.63
+03/09/2013,Goias,Gremio,2,0,H,2.9,3.25,2.69
+04/09/2013,Nautico,Sao Paulo,0,1,A,4.3,3.69,1.92
+04/09/2013,Athletico-PR,Santos,2,1,H,1.78,3.76,5.07
+04/09/2013,Flamengo RJ,Vitoria,2,1,H,1.54,4.35,6.93
+05/09/2013,Portuguesa,Ponte Preta,2,1,H,1.92,3.6,4.43
+05/09/2013,Atletico-MG,Fluminense,2,2,D,1.93,3.47,4.57
+05/09/2013,Bahia,Cruzeiro,1,3,A,4.32,3.52,1.96
+05/09/2013,Internacional,Corinthians,1,0,H,2.31,3.22,3.55
+05/09/2013,Botafogo RJ,Coritiba,3,1,H,1.75,3.76,5.33
+06/09/2013,Nautico,Vasco,0,3,A,2.82,3.37,2.7
+06/09/2013,Sao Paulo,Criciuma,1,2,A,1.47,4.55,7.94
+07/09/2013,Fluminense,Bahia,1,0,H,1.65,3.86,6.23
+07/09/2013,Ponte Preta,Internacional,1,3,A,3.93,3.46,2.08
+07/09/2013,Santos,Goias,1,0,H,2.14,3.28,3.97
+07/09/2013,Vitoria,Atletico-MG,1,1,D,3.21,3.52,2.33
+08/09/2013,Gremio,Portuguesa,3,2,H,1.62,4.08,6.15
+08/09/2013,Corinthians,Nautico,0,0,D,1.35,4.94,12.53
+08/09/2013,Coritiba,Sao Paulo,2,0,H,3,3.38,2.53
+08/09/2013,Cruzeiro,Flamengo RJ,1,0,H,1.47,4.61,7.79
+08/09/2013,Criciuma,Botafogo RJ,1,2,A,2.47,3.51,2.99
+08/09/2013,Vasco,Athletico-PR,0,0,D,2.48,3.51,2.98
+10/09/2013,Internacional,Santos,1,2,A,1.6,4,6.74
+11/09/2013,Athletico-PR,Fluminense,1,1,D,1.97,3.53,4.29
+12/09/2013,Bahia,Criciuma,2,2,D,1.85,3.77,4.6
+12/09/2013,Goias,Cruzeiro,1,2,A,3.62,3.71,2.08
+12/09/2013,Botafogo RJ,Corinthians,1,0,H,2.08,3.48,3.9
+12/09/2013,Nautico,Gremio,0,2,A,4.08,3.77,1.94
+12/09/2013,Portuguesa,Vasco,2,0,H,2.36,3.55,3.13
+12/09/2013,Internacional,Vitoria,2,2,D,1.37,5.24,9.73
+13/09/2013,Atletico-MG,Coritiba,3,0,H,1.57,4.41,6.25
+13/09/2013,Flamengo RJ,Santos,2,1,H,1.95,3.53,4.34
+13/09/2013,Sao Paulo,Ponte Preta,1,0,H,1.44,4.73,8.39
+14/09/2013,Cruzeiro,Athletico-PR,1,0,H,1.58,4.33,6.18
+15/09/2013,Fluminense,Portuguesa,2,1,H,1.76,3.8,5.18
+15/09/2013,Corinthians,Goias,1,2,A,1.63,3.9,6.5
+15/09/2013,Coritiba,Bahia,2,2,D,1.8,3.49,5.45
+15/09/2013,Criciuma,Internacional,0,1,A,3.57,3.47,2.19
+15/09/2013,Ponte Preta,Flamengo RJ,1,1,D,2.74,3.21,2.87
+15/09/2013,Vasco,Sao Paulo,0,2,A,2.6,3.4,2.89
+15/09/2013,Gremio,Atletico-MG,0,1,A,2.08,3.31,4.1
+15/09/2013,Santos,Botafogo RJ,1,2,A,2.82,3.24,2.76
+15/09/2013,Vitoria,Nautico,2,1,H,1.62,3.91,6.58
+18/09/2013,Gremio,Santos,1,1,D,1.63,3.69,6.08
+18/09/2013,Vasco,Vitoria,1,2,A,1.56,4.39,6.45
+19/09/2013,Coritiba,Goias,2,2,D,1.8,3.65,5.12
+19/09/2013,Criciuma,Fluminense,1,2,A,2.95,3.36,2.57
+19/09/2013,Cruzeiro,Botafogo RJ,3,0,H,1.66,4.19,5.39
+19/09/2013,Ponte Preta,Corinthians,2,0,H,4.75,3.26,1.97
+19/09/2013,Sao Paulo,Atletico-MG,1,0,H,2,3.51,4.13
+19/09/2013,Flamengo RJ,Athletico-PR,2,4,A,2.21,3.38,3.63
+20/09/2013,Bahia,Internacional,2,0,H,2.83,3.16,2.81
+20/09/2013,Portuguesa,Nautico,3,0,H,1.46,4.9,7.26
+21/09/2013,Fluminense,Coritiba,1,1,D,1.7,3.71,5.94
+22/09/2013,Vitoria,Gremio,0,0,D,2.67,3.25,2.91
+22/09/2013,Botafogo RJ,Bahia,1,2,A,1.51,4.5,7.16
+22/09/2013,Corinthians,Cruzeiro,0,0,D,2.88,3.23,2.71
+22/09/2013,Goias,Sao Paulo,1,0,H,2.87,3.28,2.69
+22/09/2013,Internacional,Portuguesa,0,1,A,1.51,4.25,7.92
+22/09/2013,Nautico,Flamengo RJ,0,0,D,3.9,3.33,2.15
+22/09/2013,Atletico-MG,Vasco,2,1,H,1.62,4.28,5.78
+22/09/2013,Athletico-PR,Ponte Preta,1,0,H,1.6,4.18,6.16
+22/09/2013,Santos,Criciuma,2,1,H,1.63,3.99,6.19
+25/09/2013,Criciuma,Atletico-MG,1,1,D,3.55,3.59,2.15
+26/09/2013,Santos,Nautico,1,1,D,1.32,4.61,10.25
+28/09/2013,Goias,Fluminense,1,2,A,2.53,3.26,3.09
+28/09/2013,Nautico,Coritiba,3,0,H,2.99,3.35,2.55
+29/09/2013,Botafogo RJ,Ponte Preta,0,1,A,1.59,4.26,6.18
+29/09/2013,Bahia,Vasco,0,0,D,2.35,3.33,3.33
+29/09/2013,Flamengo RJ,Criciuma,4,1,H,1.5,4.43,7.71
+29/09/2013,Portuguesa,Corinthians,4,0,H,4.61,3.45,1.93
+29/09/2013,Sao Paulo,Gremio,0,1,A,2.05,3.3,4.29
+29/09/2013,Atletico-MG,Santos,3,1,H,1.7,4.21,4.97
+29/09/2013,Athletico-PR,Vitoria,3,5,A,1.58,4.25,6.38
+29/09/2013,Internacional,Cruzeiro,1,2,A,2.83,3.53,2.56
+01/10/2013,Ponte Preta,Nautico,1,2,A,1.58,4.02,7.06
+02/10/2013,Cruzeiro,Portuguesa,4,0,H,1.42,4.23,7.69
+02/10/2013,Gremio,Athletico-PR,1,0,H,1.8,3.38,4.54
+03/10/2013,Fluminense,Botafogo RJ,1,1,D,2.62,3.46,2.82
+03/10/2013,Vitoria,Goias,2,1,H,1.99,3.56,4.13
+03/10/2013,Corinthians,Bahia,2,0,H,1.7,3.29,6.26
+03/10/2013,Coritiba,Flamengo RJ,0,2,A,2.72,3.04,3.03
+03/10/2013,Santos,Sao Paulo,3,0,H,3.13,3.44,2.41
+03/10/2013,Atletico-MG,Ponte Preta,4,0,H,1.39,5,9.38
+04/10/2013,Vasco,Internacional,3,1,H,3.38,3.56,2.22
+05/10/2013,Botafogo RJ,Gremio,0,1,A,2.24,3.3,3.6
+06/10/2013,Sao Paulo,Vitoria,3,2,H,1.74,3.8,5.32
+06/10/2013,Atletico-MG,Corinthians,0,0,D,2.17,3.17,4.03
+06/10/2013,Athletico-PR,Coritiba,2,1,H,2.01,3.45,4.21
+06/10/2013,Flamengo RJ,Vasco,1,1,D,2.29,3.51,3.27
+06/10/2013,Internacional,Fluminense,1,0,H,1.79,3.6,5.24
+06/10/2013,Nautico,Cruzeiro,1,4,A,5.54,4.06,1.67
+06/10/2013,Bahia,Ponte Preta,1,1,D,2.06,3.3,4.18
+06/10/2013,Goias,Criciuma,1,1,D,1.65,3.91,6.07
+06/10/2013,Portuguesa,Santos,3,0,H,2.37,3.3,3.33
+09/10/2013,Coritiba,Santos,1,0,H,2.24,3.33,3.57
+09/10/2013,Gremio,Criciuma,1,2,A,1.52,4.3,7.32
+10/10/2013,Bahia,Vitoria,2,0,H,2.75,3.23,2.83
+10/10/2013,Ponte Preta,Atletico-MG,2,0,H,2.6,3.33,2.93
+10/10/2013,Corinthians,Athletico-PR,0,0,D,2.14,3.3,3.92
+10/10/2013,Cruzeiro,Sao Paulo,0,2,A,1.6,4.15,6.34
+10/10/2013,Nautico,Botafogo RJ,1,3,A,3.24,3.62,2.28
+10/10/2013,Vasco,Fluminense,1,0,H,2.81,3.32,2.72
+10/10/2013,Portuguesa,Goias,1,2,A,1.75,3.85,5.13
+11/10/2013,Flamengo RJ,Internacional,2,1,H,2.35,3.32,3.33
+12/10/2013,Fluminense,Gremio,1,1,D,2.26,3.09,3.87
+12/10/2013,Vitoria,Coritiba,2,1,H,1.99,3.44,4.32
+13/10/2013,Santos,Ponte Preta,2,1,H,2.04,3.42,4.08
+13/10/2013,Atletico-MG,Cruzeiro,1,0,H,2.63,3.49,2.8
+13/10/2013,Criciuma,Vasco,3,2,H,2.5,3.51,2.93
+13/10/2013,Internacional,Nautico,4,1,H,1.33,5.46,11.27
+13/10/2013,Sao Paulo,Corinthians,0,0,D,2.31,3.14,3.65
+13/10/2013,Athletico-PR,Portuguesa,1,0,H,1.75,3.76,5.36
+13/10/2013,Botafogo RJ,Flamengo RJ,2,1,H,2.84,3.38,2.65
+13/10/2013,Goias,Bahia,3,1,H,1.8,3.68,5.03
+16/10/2013,Cruzeiro,Fluminense,1,0,H,1.55,4.44,6.42
+16/10/2013,Santos,Internacional,0,0,D,2.67,3.45,2.77
+17/10/2013,Criciuma,Portuguesa,1,3,A,2.23,3.39,3.55
+17/10/2013,Ponte Preta,Coritiba,1,0,H,2.08,3.53,3.83
+17/10/2013,Sao Paulo,Nautico,3,0,H,1.31,5.82,11.09
+17/10/2013,Athletico-PR,Atletico-MG,1,0,H,2.13,3.42,3.8
+17/10/2013,Flamengo RJ,Bahia,2,1,H,1.52,4.22,7.72
+17/10/2013,Gremio,Corinthians,1,0,H,2.16,3.09,4.22
+17/10/2013,Vasco,Goias,0,2,A,2.17,3.57,3.52
+18/10/2013,Vitoria,Botafogo RJ,1,0,H,2.62,3.47,2.81
+19/10/2013,Fluminense,Ponte Preta,1,1,D,1.77,3.64,5.41
+19/10/2013,Nautico,Santos,1,5,A,2.85,3.29,2.7
+20/10/2013,Corinthians,Criciuma,1,0,H,1.74,3.64,5.76
+20/10/2013,Atletico-MG,Flamengo RJ,1,0,H,2.26,3.57,3.31
+20/10/2013,Bahia,Sao Paulo,0,1,A,3.12,3.21,2.54
+20/10/2013,Goias,Athletico-PR,3,0,H,2.2,3.49,3.48
+20/10/2013,Internacional,Gremio,2,2,D,2.2,3.23,3.82
+20/10/2013,Botafogo RJ,Vasco,2,2,D,2.35,3.52,3.17
+20/10/2013,Coritiba,Cruzeiro,2,1,H,2.96,3.47,2.51
+20/10/2013,Portuguesa,Vitoria,1,1,D,2.09,3.41,3.95
+26/10/2013,Botafogo RJ,Atletico-MG,1,0,H,2.41,3.37,3.19
+26/10/2013,Cruzeiro,Criciuma,5,3,H,1.32,5.65,10.69
+27/10/2013,Bahia,Athletico-PR,1,1,D,2.22,3.27,3.71
+27/10/2013,Corinthians,Santos,1,1,D,2.24,3.13,3.85
+27/10/2013,Internacional,Sao Paulo,2,3,A,2.02,3.46,4.14
+27/10/2013,Ponte Preta,Vasco,2,1,H,2.4,3.44,3.15
+27/10/2013,Portuguesa,Flamengo RJ,0,0,D,3.51,3.62,2.16
+27/10/2013,Coritiba,Gremio,4,0,H,2.5,3.15,3.25
+27/10/2013,Fluminense,Vitoria,2,3,A,1.71,3.72,5.84
+27/10/2013,Nautico,Goias,0,2,A,2.57,3.58,2.77
+02/11/2013,Sao Paulo,Portuguesa,2,1,H,1.66,3.97,5.81
+02/11/2013,Vasco,Coritiba,2,1,H,2.06,3.52,3.91
+02/11/2013,Atletico-MG,Nautico,5,0,H,1.24,6.54,15.15
+03/11/2013,Goias,Botafogo RJ,1,0,H,2.33,3.49,3.23
+03/11/2013,Gremio,Bahia,0,0,D,1.61,3.88,6.92
+03/11/2013,Santos,Cruzeiro,0,1,A,3.14,3.5,2.37
+03/11/2013,Vitoria,Corinthians,1,1,D,2.3,3.3,3.48
+03/11/2013,Athletico-PR,Internacional,1,0,H,2.45,3.41,3.08
+03/11/2013,Criciuma,Ponte Preta,1,1,D,2.18,3.45,3.6
+03/11/2013,Flamengo RJ,Fluminense,1,0,H,3.2,3.34,2.43
+09/11/2013,Bahia,Atletico-MG,0,0,D,2.77,3.11,2.92
+09/11/2013,Portuguesa,Coritiba,0,0,D,2.18,3.43,3.63
+09/11/2013,Flamengo RJ,Goias,1,1,D,2.41,3.37,3.19
+10/11/2013,Athletico-PR,Sao Paulo,3,0,H,2.44,3.29,3.21
+10/11/2013,Cruzeiro,Gremio,3,0,H,1.75,3.57,5.8
+10/11/2013,Internacional,Botafogo RJ,2,1,H,2.01,3.56,4.04
+10/11/2013,Ponte Preta,Vitoria,0,3,A,2.38,3.3,3.32
+10/11/2013,Corinthians,Fluminense,1,0,H,2.62,3.14,3.12
+10/11/2013,Nautico,Criciuma,0,1,A,3.18,3.79,2.24
+10/11/2013,Vasco,Santos,2,2,D,1.85,3.81,4.51
+13/11/2013,Goias,Ponte Preta,2,0,H,1.65,4.03,5.91
+13/11/2013,Gremio,Vasco,1,0,H,1.79,3.85,4.8
+13/11/2013,Botafogo RJ,Portuguesa,0,0,D,1.59,4.21,6.34
+13/11/2013,Criciuma,Athletico-PR,2,1,H,2.2,3.54,3.46
+13/11/2013,Coritiba,Corinthians,0,1,A,2.63,3.03,3.17
+13/11/2013,Sao Paulo,Flamengo RJ,2,0,H,2.54,3.15,3.19
+13/11/2013,Vitoria,Cruzeiro,1,3,A,2.51,3.49,2.94
+14/11/2013,Santos,Bahia,3,0,H,1.89,3.54,4.64
+14/11/2013,Atletico-MG,Internacional,2,1,H,1.72,3.41,5.06
+14/11/2013,Fluminense,Nautico,2,0,H,1.27,6.1,13.5
+16/11/2013,Botafogo RJ,Athletico-PR,4,0,H,2.02,3.58,3.98
+16/11/2013,Coritiba,Criciuma,1,2,A,1.68,3.78,6.01
+17/11/2013,Corinthians,Vasco,0,0,D,2,3.28,4.54
+17/11/2013,Cruzeiro,Ponte Preta,2,2,D,1.66,4.07,5.63
+17/11/2013,Fluminense,Sao Paulo,2,1,H,1.65,3.78,6.42
+17/11/2013,Vitoria,Santos,2,0,H,2.09,3.46,3.89
+17/11/2013,Goias,Internacional,3,1,H,1.84,3.69,4.86
+17/11/2013,Gremio,Flamengo RJ,2,1,H,1.48,4.28,8.68
+17/11/2013,Nautico,Bahia,0,1,A,3.87,3.45,2.09
+17/11/2013,Portuguesa,Atletico-MG,2,0,H,2.26,3.41,3.45
+23/11/2013,Criciuma,Vitoria,1,1,D,2.39,3.43,3.19
+23/11/2013,Vasco,Cruzeiro,2,1,H,1.79,4.03,4.58
+23/11/2013,Atletico-MG,Goias,4,1,H,2.15,3.35,3.85
+24/11/2013,Athletico-PR,Nautico,6,1,H,1.24,6.61,15.44
+24/11/2013,Flamengo RJ,Corinthians,1,0,H,2.64,3.02,3.16
+24/11/2013,Ponte Preta,Gremio,1,1,D,3.41,3.55,2.22
+24/11/2013,Santos,Fluminense,1,0,H,3.1,3.37,2.47
+24/11/2013,Bahia,Portuguesa,1,0,H,2.24,3.29,3.64
+24/11/2013,Internacional,Coritiba,0,0,D,1.7,3.86,5.63
+24/11/2013,Sao Paulo,Botafogo RJ,1,1,D,2.85,3.37,2.65
+30/11/2013,Fluminense,Atletico-MG,2,2,D,1.8,3.66,5.1
+30/11/2013,Corinthians,Internacional,0,0,D,2.54,3.1,3.22
+01/12/2013,Coritiba,Botafogo RJ,2,1,H,2.28,3.54,3.29
+01/12/2013,Criciuma,Sao Paulo,1,0,H,2.01,3.57,4.03
+01/12/2013,Cruzeiro,Bahia,1,2,A,1.5,4.55,7.36
+01/12/2013,Ponte Preta,Portuguesa,0,2,A,4.94,3.94,1.76
+01/12/2013,Vasco,Nautico,2,0,H,1.2,7.59,16.87
+01/12/2013,Vitoria,Flamengo RJ,4,2,H,1.66,4.05,5.68
+01/12/2013,Gremio,Goias,1,0,H,1.75,3.65,5.56
+01/12/2013,Santos,Athletico-PR,2,1,H,2.96,3.13,2.41
+07/12/2013,Flamengo RJ,Cruzeiro,1,1,D,1.85,3.39,4.6
+07/12/2013,Nautico,Corinthians,1,0,H,4.07,3.45,2.04
+08/12/2013,Atletico-MG,Vitoria,2,2,D,1.98,3.74,3.94
+08/12/2013,Athletico-PR,Vasco,5,1,H,1.91,3.79,4.2
+08/12/2013,Bahia,Fluminense,1,2,A,4.13,3.6,1.98
+08/12/2013,Botafogo RJ,Criciuma,3,0,H,1.59,4.43,5.86
+08/12/2013,Goias,Santos,0,3,A,1.5,4.6,7.19
+08/12/2013,Internacional,Ponte Preta,0,0,D,1.23,6.41,17.21
+08/12/2013,Portuguesa,Gremio,0,0,D,2.81,3.19,2.81
+08/12/2013,Sao Paulo,Coritiba,0,1,A,2.84,3.58,2.54

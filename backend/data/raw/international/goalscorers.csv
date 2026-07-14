@@ -47887,12 +47887,16 @@ date,home_team,away_team,team,scorer,minute,own_goal,penalty
 2026-07-07,Argentina,Egypt,Argentina,Enzo Fernández,90.0,False,False
 2026-07-09,France,Morocco,France,Kylian Mbappé,60.0,False,False
 2026-07-09,France,Morocco,France,Ousmane Dembélé,66.0,False,False
-2026-07-02,Bosnia and Herzegovina,United States,United States,Malik Tillman,,False,False
-2026-07-02,Bosnia and Herzegovina,United States,United States,Folarin Balogun,,False,False
-2026-07-01,Mexico,Ecuador,Mexico,Raúl Jiménez,,False,False
-2026-07-01,Mexico,Ecuador,Mexico,Julián Quiñones,,False,False
-2026-07-03,Switzerland,Algeria,Switzerland,Dan Ndoye,,False,False
-2026-07-03,Switzerland,Algeria,Switzerland,Breel Embolo,,False,False
+2026-07-10,Spain,Belgium,Spain,Fabián Ruiz,30.0,False,False
+2026-07-10,Spain,Belgium,Belgium,Charles De Ketelaere,41.0,False,False
+2026-07-10,Spain,Belgium,Spain,Mikel Merino,88.0,False,False
+2026-07-11,Argentina,Switzerland,Argentina,Alexis Mac Allister,10.0,False,False
+2026-07-11,Argentina,Switzerland,Switzerland,Dan Ndoye,67.0,False,False
+2026-07-11,Argentina,Switzerland,Argentina,Julián Alvarez,112.0,False,False
+2026-07-11,Argentina,Switzerland,Argentina,Lautaro Martínez,120.0,False,False
+2026-07-11,Norway,England,Norway,Andreas Schjelderup,36.0,False,False
+2026-07-11,Norway,England,England,Jude Bellingham,45.0,False,False
+2026-07-11,Norway,England,England,Jude Bellingham,93.0,False,False
 2026-07-04,Colombia,Ghana,Colombia,Jhon Arias,,False,False
 2026-07-06,Mexico,England,Mexico,Raúl Jiménez,,False,False
 2026-07-06,Mexico,England,Mexico,Julián Quiñones,,False,False
@@ -47904,12 +47908,9 @@ date,home_team,away_team,team,scorer,minute,own_goal,penalty
 2026-07-07,United States,Belgium,Belgium,Charles De Ketelaere,,False,False
 2026-07-07,United States,Belgium,Belgium,Hans Vanaken,,False,False
 2026-07-07,United States,Belgium,Belgium,Romelu Lukaku,,False,False
-2026-07-03,Sligo Rovers,Shamrock Rovers,Sligo Rovers,W. Fitzgerald,,False,False
-2026-07-03,Sligo Rovers,Shamrock Rovers,Shamrock Rovers,J. Byrne,,False,False
-2026-07-03,Derry City,Waterford,Waterford,T. Lonergan,,False,False
-2026-07-03,Derry City,Waterford,Waterford,T. Lonergan,,False,False
 2026-07-04,FF Jaro,Ilves,FF Jaro,R. Vikström,,False,False
 2026-07-04,FF Jaro,Ilves,FF Jaro,H. Sjögrell,,False,False
-2026-07-10,Spain,Belgium,Spain,Fabián Ruiz,,False,False
-2026-07-10,Spain,Belgium,Spain,Mikel Merino,,False,False
-2026-07-10,Spain,Belgium,Belgium,Charles De Ketelaere,,False,False
+2026-07-12,Argentina,Switzerland,Argentina,Alexis Mac Allister,,False,False
+2026-07-12,Argentina,Switzerland,Argentina,Julián Alvarez,,False,False
+2026-07-12,Argentina,Switzerland,Argentina,Lautaro Martínez,,False,False
+2026-07-12,Argentina,Switzerland,Switzerland,Dan Ndoye,,False,False

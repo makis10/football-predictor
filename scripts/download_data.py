@@ -87,6 +87,64 @@ def download_csv(league_name: str, league_code: str, season: str,
         return False
 
 
+# ── "New leagues" (football-data.co.uk /new/) — one growing file per country ──
+# Different schema: Country,League,Season,Date,Time,Home,Away,HG,AG,Res + odds
+# columns (PSCH/PSCD/PSCA = Pinnacle closing). No shots / cards / referee.
+# Seasons are CALENDAR years (Brazil plays Apr–Dec). We convert to our per-season
+# file layout + main-league column names so load_raw_csvs() ingests it unchanged.
+NEW_LEAGUES = {
+    "BrazilSerieA": "https://www.football-data.co.uk/new/BRA.csv",
+}
+NEW_MIN_SEASON = 2012
+
+
+def download_new_league(league_name: str, url: str) -> bool:
+    """Download a /new/-format CSV and split it into per-season files in the
+    main-league schema (BrazilSerieA_2024.csv, …). Always refreshed — the
+    upstream file grows in place, and one 600 KB download is cheap."""
+    import csv
+    import io
+
+    try:
+        resp = requests.get(url, timeout=30)
+        resp.raise_for_status()
+    except requests.RequestException as e:
+        print(f"  [err]   {league_name} — {e}")
+        return False
+
+    text = resp.content.decode("utf-8-sig", errors="replace")
+    by_season: dict[str, list[dict]] = {}
+    for row in csv.DictReader(io.StringIO(text)):
+        season = (row.get("Season") or "").strip()
+        if not season.isdigit() or int(season) < NEW_MIN_SEASON:
+            continue
+        if not (row.get("Home") and row.get("Away") and row.get("Res")):
+            continue  # unplayed / malformed row
+        by_season.setdefault(season, []).append({
+            "Date":     row.get("Date", ""),
+            "HomeTeam": row["Home"].strip(),
+            "AwayTeam": row["Away"].strip(),
+            "FTHG":     row.get("HG", ""),
+            "FTAG":     row.get("AG", ""),
+            "FTR":      row.get("Res", ""),
+            # Pinnacle closing 1×2 → our PSH/PSD/PSA slots (pre-kickoff prices)
+            "PSH":      row.get("PSCH", ""),
+            "PSD":      row.get("PSCD", ""),
+            "PSA":      row.get("PSCA", ""),
+        })
+
+    fields = ["Date", "HomeTeam", "AwayTeam", "FTHG", "FTAG", "FTR", "PSH", "PSD", "PSA"]
+    for season, rows in sorted(by_season.items()):
+        filepath = os.path.join(RAW_DIR, f"{league_name}_{season}.csv")
+        with open(filepath, "w", newline="", encoding="latin-1", errors="replace") as f:
+            w = csv.DictWriter(f, fieldnames=fields)
+            w.writeheader()
+            w.writerows(rows)
+    total = sum(len(r) for r in by_season.values())
+    print(f"  [ok]    {league_name}: {total:,} matches → {len(by_season)} season files")
+    return True
+
+
 def main():
     parser = argparse.ArgumentParser(description="Download match CSVs from football-data.co.uk")
     parser.add_argument(
@@ -109,6 +167,14 @@ def main():
             else:
                 failed += 1
             time.sleep(0.3)  # be polite to the server
+
+    print("\nNew-format leagues (always refreshed):")
+    for league_name, url in NEW_LEAGUES.items():
+        if download_new_league(league_name, url):
+            ok += 1
+        else:
+            failed += 1
+        time.sleep(0.3)
 
     print(f"\nDone — {ok} downloaded/skipped, {failed} failed.")
 

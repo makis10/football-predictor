@@ -1,0 +1,381 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,PSH,PSD,PSA
+09/04/2022,Fluminense,Santos,0,0,D,1.73,3.53,5.67
+09/04/2022,Atletico GO,Flamengo RJ,1,1,D,3.99,3.37,2.06
+10/04/2022,Palmeiras,Ceara,2,3,A,1.44,4.41,8.53
+10/04/2022,Coritiba,Goias,3,0,H,1.85,3.35,4.96
+10/04/2022,Atletico-MG,Internacional,2,0,H,1.5,4.2,7.46
+10/04/2022,Botafogo RJ,Corinthians,1,3,A,2.62,3.07,3.08
+10/04/2022,Fortaleza,Cuiaba,0,1,A,1.93,3.08,5.25
+10/04/2022,Avai,America MG,1,0,H,3.08,2.82,2.83
+10/04/2022,Sao Paulo,Athletico-PR,4,0,H,1.61,3.68,6.85
+12/04/2022,Juventude,Bragantino,2,2,D,2.36,3.17,3.39
+16/04/2022,Goias,Palmeiras,1,1,D,6.62,3.93,1.6
+16/04/2022,America MG,Juventude,4,1,H,2.08,2.96,4.64
+16/04/2022,Corinthians,Avai,3,0,H,1.5,3.96,8.53
+17/04/2022,Cuiaba,Fluminense,0,1,A,3.02,2.85,2.85
+17/04/2022,Santos,Coritiba,2,1,H,2.01,3.39,4.22
+17/04/2022,Flamengo RJ,Sao Paulo,3,1,H,1.72,3.82,5.18
+17/04/2022,Athletico-PR,Atletico-MG,0,1,A,3.75,3.16,2.22
+17/04/2022,Bragantino,Atletico GO,4,0,H,1.89,3.45,4.62
+17/04/2022,Internacional,Fortaleza,2,1,H,2.46,3.05,3.35
+17/04/2022,Ceara,Botafogo RJ,1,3,A,1.72,3.76,5.24
+20/04/2022,Flamengo RJ,Palmeiras,0,0,D,2.12,3.42,3.71
+23/04/2022,Athletico-PR,Flamengo RJ,1,0,H,3.82,3.38,2.1
+23/04/2022,Bragantino,Sao Paulo,1,1,D,3.4,3.1,2.4
+23/04/2022,Fluminense,Internacional,0,1,A,1.87,3.28,5.11
+23/04/2022,Palmeiras,Corinthians,3,0,H,1.91,3.36,4.66
+24/04/2022,Atletico-MG,Coritiba,2,2,D,1.25,5.73,15.17
+24/04/2022,Santos,America MG,3,0,H,2.2,3.13,3.85
+24/04/2022,Juventude,Cuiaba,0,1,A,2.07,3.05,4.49
+24/04/2022,Atletico GO,Botafogo RJ,1,1,D,2.29,3.34,3.36
+26/04/2022,Avai,Goias,3,2,H,2.26,2.96,3.95
+30/04/2022,America MG,Athletico-PR,1,0,H,1.99,3.21,4.52
+30/04/2022,Ceara,Bragantino,0,1,A,2.05,3.29,4.12
+30/04/2022,Goias,Atletico-MG,2,2,D,7.5,4.16,1.51
+30/04/2022,Cuiaba,Atletico GO,1,1,D,2.25,2.99,3.93
+01/05/2022,Botafogo RJ,Juventude,1,1,D,1.92,3.31,4.73
+01/05/2022,Corinthians,Fortaleza,1,0,H,1.81,3.47,5.15
+01/05/2022,Coritiba,Fluminense,3,2,H,2.53,2.95,3.34
+01/05/2022,Internacional,Avai,0,0,D,1.53,4.02,7.6
+03/05/2022,Sao Paulo,Santos,2,1,H,1.65,3.73,6.07
+07/05/2022,Atletico-MG,America MG,1,2,A,1.44,4.67,7.74
+08/05/2022,Athletico-PR,Ceara,1,0,H,2.1,3.26,4
+08/05/2022,Flamengo RJ,Botafogo RJ,0,1,A,1.5,4.31,7.2
+08/05/2022,Atletico GO,Goias,0,1,A,1.78,3.46,5.37
+08/05/2022,Palmeiras,Fluminense,1,1,D,1.45,4.47,7.97
+08/05/2022,Bragantino,Corinthians,0,1,A,2.69,3.01,3.04
+08/05/2022,Santos,Cuiaba,4,1,H,1.91,3.21,5
+08/05/2022,Fortaleza,Sao Paulo,1,1,D,2.51,3.08,3.22
+08/05/2022,Juventude,Internacional,1,1,D,2.91,2.93,2.88
+10/05/2022,Avai,Coritiba,2,1,H,2.35,3.15,3.44
+12/05/2022,Bragantino,Atletico-MG,1,1,D,3.42,3.12,2.38
+14/05/2022,Ceara,Flamengo RJ,2,2,D,4.26,3.62,1.91
+14/05/2022,Palmeiras,Bragantino,2,0,H,1.34,5.58,8.98
+14/05/2022,Atletico-MG,Atletico GO,2,0,H,1.27,6.11,10.8
+14/05/2022,Internacional,Corinthians,2,2,D,2.27,3.15,3.62
+15/05/2022,Fluminense,Athletico-PR,2,1,H,2.08,3.18,4.21
+15/05/2022,Sao Paulo,Cuiaba,2,1,H,1.46,4.26,8.35
+15/05/2022,Coritiba,America MG,1,0,H,2.24,3.13,3.74
+15/05/2022,Avai,Juventude,1,2,A,2.4,3.04,3.47
+15/05/2022,Botafogo RJ,Fortaleza,3,1,H,2.34,3.1,3.54
+15/05/2022,Goias,Santos,1,0,H,3.21,3.09,2.51
+21/05/2022,Atletico GO,Coritiba,2,0,H,2.08,3.23,4.05
+21/05/2022,Flamengo RJ,Goias,1,0,H,1.17,7.33,18.97
+21/05/2022,Santos,Ceara,0,0,D,2.46,3.1,3.29
+21/05/2022,Juventude,Palmeiras,0,3,A,5.07,3.42,1.83
+22/05/2022,America MG,Botafogo RJ,1,1,D,2.72,3.08,2.88
+22/05/2022,Cuiaba,Internacional,1,1,D,3,2.9,2.82
+22/05/2022,Corinthians,Sao Paulo,1,1,D,2.56,2.86,3.41
+22/05/2022,Fortaleza,Fluminense,0,1,A,2.02,3.3,4.23
+22/05/2022,Athletico-PR,Avai,2,1,H,1.57,3.93,6.84
+28/05/2022,Goias,Bragantino,1,1,D,2.89,2.93,2.89
+28/05/2022,Sao Paulo,Ceara,2,2,D,1.68,3.67,5.99
+29/05/2022,Fortaleza,Juventude,1,1,D,1.58,3.87,6.78
+29/05/2022,Coritiba,Botafogo RJ,1,0,H,2.71,3.03,3
+29/05/2022,Santos,Palmeiras,0,1,A,4.2,3.44,1.98
+29/05/2022,Corinthians,America MG,1,1,D,1.67,3.84,5.94
+29/05/2022,Cuiaba,Athletico-PR,0,1,A,2.64,2.83,3.33
+29/05/2022,Fluminense,Flamengo RJ,1,2,A,4.24,3.43,1.97
+29/05/2022,Atletico-MG,Avai,2,1,H,1.21,6.58,15.13
+31/05/2022,Internacional,Atletico GO,1,1,D,1.6,3.87,6.54
+02/06/2022,Fortaleza,Ceara,0,1,A,2.54,2.98,3.29
+04/06/2022,America MG,Cuiaba,2,1,H,1.88,3.19,5.22
+04/06/2022,Athletico-PR,Santos,2,2,D,2.06,3.32,4.03
+04/06/2022,Avai,Sao Paulo,1,1,D,4.36,3.06,2.09
+04/06/2022,Ceara,Coritiba,1,1,D,1.58,4.07,6.21
+05/06/2022,Atletico GO,Corinthians,0,1,A,2.46,3.15,3.24
+05/06/2022,Juventude,Fluminense,1,0,H,2.66,2.97,3.13
+05/06/2022,Flamengo RJ,Fortaleza,1,2,A,1.52,4.17,7.04
+05/06/2022,Palmeiras,Atletico-MG,0,0,D,2.13,3.37,3.73
+05/06/2022,Bragantino,Internacional,0,2,A,2.29,3.08,3.67
+07/06/2022,Botafogo RJ,Goias,1,2,A,1.73,3.42,6.06
+08/06/2022,Cuiaba,Corinthians,1,0,H,3.04,2.88,2.8
+08/06/2022,America MG,Ceara,0,2,A,2.23,3.02,3.93
+08/06/2022,Juventude,Athletico-PR,1,3,A,2.8,2.9,3.03
+09/06/2022,Atletico GO,Avai,2,1,H,1.66,3.68,6.16
+09/06/2022,Bragantino,Flamengo RJ,1,0,H,2.39,3.27,3.23
+09/06/2022,Fluminense,Atletico-MG,5,3,H,3.78,3,2.3
+09/06/2022,Santos,Internacional,1,1,D,2.26,3.03,3.83
+09/06/2022,Palmeiras,Botafogo RJ,4,0,H,1.39,5.07,8.21
+10/06/2022,Coritiba,Sao Paulo,1,1,D,3.42,3.01,2.45
+10/06/2022,Fortaleza,Goias,1,1,D,1.48,4.26,7.77
+11/06/2022,Corinthians,Juventude,2,0,H,1.81,3.25,5.63
+11/06/2022,Atletico-MG,Santos,1,1,D,1.46,4.34,8.23
+11/06/2022,Cuiaba,Bragantino,1,1,D,3.56,2.96,2.41
+11/06/2022,Fluminense,Atletico GO,0,2,A,1.91,3.38,4.66
+12/06/2022,Internacional,Flamengo RJ,3,1,H,3.28,3.16,2.43
+12/06/2022,Goias,Ceara,1,1,D,2.9,2.99,2.82
+12/06/2022,Sao Paulo,America MG,1,0,H,1.73,3.54,5.7
+12/06/2022,Coritiba,Palmeiras,0,2,A,5.47,3.86,1.68
+12/06/2022,Fortaleza,Athletico-PR,0,0,D,1.59,4.08,6.08
+13/06/2022,Botafogo RJ,Avai,0,1,A,1.88,3.35,4.9
+15/06/2022,Juventude,Santos,1,2,A,2.37,3.02,3.57
+15/06/2022,Bragantino,Coritiba,4,2,H,1.56,3.77,7.55
+15/06/2022,Ceara,Atletico-MG,0,0,D,3.69,3.14,2.25
+16/06/2022,Flamengo RJ,Cuiaba,2,0,H,1.32,5.57,10.11
+16/06/2022,Goias,Internacional,1,2,A,3.64,3.12,2.28
+16/06/2022,America MG,Fluminense,0,0,D,2.33,3.12,3.52
+16/06/2022,Athletico-PR,Corinthians,1,1,D,2.38,3.12,3.42
+16/06/2022,Botafogo RJ,Sao Paulo,1,0,H,3.62,3.06,2.33
+16/06/2022,Palmeiras,Atletico GO,4,2,H,1.41,4.72,8.33
+16/06/2022,Avai,Fortaleza,3,2,H,3.21,3.17,2.46
+18/06/2022,Cuiaba,Ceara,0,0,D,2.81,2.85,3.06
+19/06/2022,Santos,Bragantino,2,2,D,2.11,3.25,3.98
+19/06/2022,Atletico-MG,Flamengo RJ,2,0,H,1.98,3.57,3.99
+19/06/2022,Corinthians,Goias,1,0,H,1.5,4.05,8.02
+19/06/2022,Coritiba,Athletico-PR,0,1,A,2.69,2.92,3.14
+19/06/2022,Atletico GO,Juventude,3,1,H,1.68,3.84,5.47
+19/06/2022,Fortaleza,America MG,1,0,H,1.73,3.78,5.18
+19/06/2022,Internacional,Botafogo RJ,2,3,A,1.54,3.95,7.31
+19/06/2022,Fluminense,Avai,2,0,H,1.66,3.72,5.99
+21/06/2022,Sao Paulo,Palmeiras,1,2,A,3.13,3.09,2.59
+25/06/2022,Internacional,Coritiba,3,0,H,1.78,3.64,5.05
+25/06/2022,Athletico-PR,Bragantino,4,2,H,3.33,3.11,2.43
+25/06/2022,Corinthians,Santos,0,0,D,2.33,2.98,3.72
+25/06/2022,Flamengo RJ,America MG,3,0,H,1.52,4.26,6.85
+26/06/2022,Atletico-MG,Fortaleza,3,2,H,1.85,3.24,5.38
+26/06/2022,Avai,Palmeiras,2,2,D,5.35,3.38,1.81
+26/06/2022,Botafogo RJ,Fluminense,0,1,A,3.19,3.06,2.55
+26/06/2022,Ceara,Atletico GO,1,1,D,1.95,3.33,4.5
+26/06/2022,Goias,Cuiaba,1,0,H,2.36,2.98,3.66
+26/06/2022,Sao Paulo,Juventude,0,0,D,1.59,3.68,7.3
+02/07/2022,Fluminense,Corinthians,4,0,H,1.6,3.66,7.1
+02/07/2022,Juventude,Atletico-MG,1,2,A,4.82,3.37,1.88
+02/07/2022,Ceara,Internacional,1,1,D,2.07,3.25,4.12
+02/07/2022,Santos,Flamengo RJ,1,2,A,3.05,3.17,2.57
+03/07/2022,Palmeiras,Athletico-PR,0,2,A,1.34,5.47,9.19
+03/07/2022,Avai,Cuiaba,1,2,A,2.28,3.02,3.78
+03/07/2022,Atletico GO,Sao Paulo,1,2,A,2.74,3.18,2.82
+03/07/2022,America MG,Goias,1,0,H,1.81,3.37,5.12
+03/07/2022,Coritiba,Fortaleza,2,1,H,2.43,3.18,3.25
+05/07/2022,Bragantino,Botafogo RJ,0,1,A,1.71,3.61,5.69
+09/07/2022,Bragantino,Avai,4,0,H,1.5,4.27,7.25
+09/07/2022,Fluminense,Ceara,2,1,H,1.71,3.65,5.59
+10/07/2022,Goias,Athletico-PR,2,1,H,2.81,2.98,2.93
+10/07/2022,Coritiba,Juventude,2,2,D,1.92,3.44,4.49
+10/07/2022,Corinthians,Flamengo RJ,1,0,H,3.09,2.93,2.72
+10/07/2022,Atletico-MG,Sao Paulo,0,0,D,1.58,3.95,6.55
+10/07/2022,Fortaleza,Palmeiras,0,0,D,3.77,3.44,2.09
+10/07/2022,Santos,Atletico GO,1,0,H,1.97,3.39,4.33
+10/07/2022,Cuiaba,Botafogo RJ,2,0,H,2.32,2.92,3.85
+12/07/2022,Internacional,America MG,1,0,H,1.63,3.92,5.93
+16/07/2022,Athletico-PR,Internacional,0,0,D,2.2,3.3,3.62
+16/07/2022,Avai,Santos,1,0,H,3.16,3.09,2.55
+16/07/2022,Flamengo RJ,Coritiba,2,0,H,1.51,4.52,6.52
+17/07/2022,Ceara,Corinthians,3,1,H,1.86,3.25,5.25
+17/07/2022,Juventude,Goias,0,0,D,2.12,3.12,4.15
+17/07/2022,Sao Paulo,Fluminense,2,2,D,2.66,3.04,3.06
+17/07/2022,Atletico GO,Fortaleza,0,1,A,2.13,3.32,3.8
+17/07/2022,Botafogo RJ,Atletico-MG,0,1,A,5.21,3.55,1.78
+17/07/2022,America MG,Bragantino,0,3,A,2.82,3.1,2.75
+19/07/2022,Palmeiras,Cuiaba,1,0,H,1.26,5.9,13.34
+20/07/2022,Ceara,Avai,1,0,H,1.38,4.76,9.52
+20/07/2022,Bragantino,Fortaleza,2,1,H,1.83,3.46,5.2
+20/07/2022,Goias,Fluminense,2,3,A,4.28,3.56,1.93
+20/07/2022,Athletico-PR,Atletico GO,4,1,H,1.95,3.41,4.35
+21/07/2022,Flamengo RJ,Juventude,4,0,H,1.34,5.49,9.31
+21/07/2022,Internacional,Sao Paulo,3,3,D,1.85,3.39,5.04
+21/07/2022,Corinthians,Coritiba,3,1,H,1.68,3.59,6.12
+21/07/2022,Santos,Botafogo RJ,2,0,H,1.93,3.34,4.62
+21/07/2022,Cuiaba,Atletico-MG,1,1,D,3.73,2.92,2.37
+22/07/2022,America MG,Palmeiras,0,1,A,4.77,3.59,1.83
+23/07/2022,Sao Paulo,Goias,3,3,D,1.43,4.41,8.88
+24/07/2022,Botafogo RJ,Athletico-PR,2,0,H,2.46,3.17,3.23
+24/07/2022,Avai,Flamengo RJ,1,2,A,6.05,4.03,1.6
+24/07/2022,Fluminense,Bragantino,2,1,H,2.03,3.4,4.05
+24/07/2022,Juventude,Ceara,1,0,H,3.28,3.07,2.48
+24/07/2022,Palmeiras,Internacional,2,1,H,1.44,4.45,8.44
+24/07/2022,Atletico GO,America MG,0,1,A,1.88,3.35,4.85
+24/07/2022,Atletico-MG,Corinthians,1,2,A,1.46,4.22,8.62
+24/07/2022,Fortaleza,Santos,0,0,D,1.79,3.59,5
+26/07/2022,Coritiba,Cuiaba,1,0,H,2.13,3.14,4.05
+30/07/2022,Ceara,Palmeiras,1,2,A,3.76,3.29,2.15
+30/07/2022,Goias,Coritiba,1,0,H,2.44,3.18,3.25
+30/07/2022,Corinthians,Botafogo RJ,1,0,H,1.83,3.32,5.36
+31/07/2022,Flamengo RJ,Atletico GO,4,1,H,1.47,4.34,7.76
+31/07/2022,Athletico-PR,Sao Paulo,1,0,H,2.05,3.26,4.14
+31/07/2022,Internacional,Atletico-MG,3,0,H,3.2,2.98,2.6
+31/07/2022,America MG,Avai,3,1,H,1.71,3.65,5.59
+31/07/2022,Cuiaba,Fortaleza,0,1,A,2.74,2.92,3.08
+31/07/2022,Bragantino,Juventude,1,0,H,1.59,3.88,6.59
+02/08/2022,Santos,Fluminense,2,2,D,3.04,3.23,2.54
+06/08/2022,Botafogo RJ,Ceara,1,1,D,2.4,3.08,3.42
+06/08/2022,Juventude,America MG,0,1,A,2.42,3.25,3.2
+06/08/2022,Atletico GO,Bragantino,2,1,H,3.25,3.19,2.43
+06/08/2022,Avai,Corinthians,1,1,D,3.27,2.95,2.57
+07/08/2022,Sao Paulo,Flamengo RJ,0,2,A,3.47,3.28,2.27
+07/08/2022,Fluminense,Cuiaba,1,0,H,1.49,4.01,8.38
+07/08/2022,Palmeiras,Goias,3,0,H,1.26,6.26,11.25
+07/08/2022,Fortaleza,Internacional,3,0,H,1.74,3.76,5.08
+07/08/2022,Atletico-MG,Athletico-PR,2,3,A,1.51,4.18,7.32
+09/08/2022,Coritiba,Santos,1,2,A,2.71,3.06,2.97
+13/08/2022,Goias,Avai,1,1,D,1.96,3.43,4.28
+13/08/2022,Corinthians,Palmeiras,0,1,A,3.51,3.02,2.4
+14/08/2022,Cuiaba,Juventude,1,0,H,2.03,3.05,4.68
+14/08/2022,Botafogo RJ,Atletico GO,0,0,D,2.07,3.37,3.93
+14/08/2022,Coritiba,Atletico-MG,0,1,A,5.38,3.8,1.7
+14/08/2022,Ceara,Fortaleza,0,1,A,2.96,2.93,2.83
+14/08/2022,Flamengo RJ,Athletico-PR,5,0,H,1.33,5.31,10.33
+14/08/2022,Sao Paulo,Bragantino,3,0,H,2.15,3.38,3.68
+14/08/2022,America MG,Santos,1,0,H,2.38,3.07,3.5
+14/08/2022,Internacional,Fluminense,3,0,H,2.49,3.14,3.19
+20/08/2022,Atletico-MG,Goias,0,1,A,1.24,6.42,12.63
+20/08/2022,Fluminense,Coritiba,5,2,H,1.39,4.86,8.99
+21/08/2022,Juventude,Botafogo RJ,2,2,D,2.51,3.11,3.19
+21/08/2022,Palmeiras,Flamengo RJ,1,1,D,2,3.49,4.03
+21/08/2022,Athletico-PR,America MG,1,1,D,1.88,3.47,4.66
+21/08/2022,Atletico GO,Cuiaba,1,1,D,2.26,2.96,3.97
+21/08/2022,Bragantino,Ceara,1,1,D,1.86,3.5,4.68
+21/08/2022,Fortaleza,Corinthians,1,0,H,1.94,3.3,4.61
+21/08/2022,Santos,Sao Paulo,1,0,H,2.51,3,3.31
+23/08/2022,Avai,Internacional,0,1,A,3.76,3.25,2.17
+27/08/2022,Coritiba,Avai,1,0,H,1.95,3.39,4.37
+27/08/2022,Goias,Atletico GO,2,1,H,2.79,3,2.93
+27/08/2022,Fluminense,Palmeiras,1,1,D,3.19,3.14,2.46
+28/08/2022,Ceara,Athletico-PR,0,0,D,1.8,3.62,4.91
+28/08/2022,America MG,Atletico-MG,1,1,D,5.72,3.8,1.67
+28/08/2022,Sao Paulo,Fortaleza,0,1,A,1.93,3.36,4.54
+28/08/2022,Botafogo RJ,Flamengo RJ,0,1,A,4.97,3.73,1.76
+28/08/2022,Cuiaba,Santos,0,0,D,2.34,2.88,3.84
+30/08/2022,Internacional,Juventude,4,0,H,1.44,4.56,7.88
+30/08/2022,Corinthians,Bragantino,1,0,H,2.05,3.14,4.38
+03/09/2022,Juventude,Avai,1,1,D,2.25,3.12,3.74
+03/09/2022,Athletico-PR,Fluminense,1,0,H,3.25,3.25,2.39
+03/09/2022,Bragantino,Palmeiras,2,2,D,2.67,3.06,3.02
+04/09/2022,America MG,Coritiba,2,0,H,1.67,3.69,6.04
+04/09/2022,Flamengo RJ,Ceara,1,1,D,1.36,4.92,10.17
+04/09/2022,Corinthians,Internacional,2,2,D,2.44,2.95,3.53
+04/09/2022,Fortaleza,Botafogo RJ,1,3,A,1.72,3.51,5.8
+04/09/2022,Atletico GO,Atletico-MG,0,2,A,4.52,3.49,1.89
+04/09/2022,Cuiaba,Sao Paulo,1,1,D,2.32,2.82,4.04
+06/09/2022,Santos,Goias,1,2,A,1.59,3.94,6.42
+07/09/2022,Atletico-MG,Bragantino,1,1,D,1.68,3.75,5.72
+10/09/2022,Ceara,Santos,2,1,H,2.16,3.07,4.08
+10/09/2022,Internacional,Cuiaba,1,0,H,1.6,3.74,6.85
+10/09/2022,Fluminense,Fortaleza,2,1,H,1.72,3.63,5.57
+11/09/2022,Palmeiras,Juventude,2,1,H,1.17,7.33,19.54
+11/09/2022,Avai,Athletico-PR,1,1,D,3.49,3.13,2.34
+11/09/2022,Botafogo RJ,America MG,0,0,D,2.02,3.34,4.16
+11/09/2022,Coritiba,Atletico GO,2,0,H,2.24,3.15,3.71
+11/09/2022,Sao Paulo,Corinthians,1,1,D,2.68,2.84,3.26
+11/09/2022,Goias,Flamengo RJ,1,1,D,6.22,4.03,1.59
+17/09/2022,Avai,Atletico-MG,1,0,H,4.61,3.37,1.92
+17/09/2022,Botafogo RJ,Coritiba,2,0,H,1.55,4.04,6.98
+18/09/2022,Bragantino,Goias,1,1,D,1.46,4.4,7.98
+18/09/2022,Ceara,Sao Paulo,0,2,A,2.65,3.02,3.09
+18/09/2022,Flamengo RJ,Fluminense,1,2,A,1.69,3.74,5.63
+18/09/2022,America MG,Corinthians,1,0,H,2.26,3.08,3.76
+18/09/2022,Juventude,Fortaleza,1,1,D,3.38,3.22,2.34
+18/09/2022,Palmeiras,Santos,1,0,H,1.39,4.7,9.59
+18/09/2022,Athletico-PR,Cuiaba,2,2,D,1.7,3.45,6.22
+20/09/2022,Atletico GO,Internacional,1,2,A,3.64,3.2,2.24
+26/09/2022,Sao Paulo,Avai,4,0,H,1.38,4.82,9.28
+28/09/2022,Santos,Athletico-PR,2,0,H,2.11,3.28,3.98
+28/09/2022,Corinthians,Atletico GO,2,1,H,1.62,3.84,6.47
+28/09/2022,Coritiba,Ceara,1,0,H,2.29,3.23,3.55
+28/09/2022,Fluminense,Juventude,4,0,H,1.36,5.37,9.3
+28/09/2022,Fortaleza,Flamengo RJ,3,2,H,3.11,3.05,2.65
+29/09/2022,Cuiaba,America MG,2,1,H,2.52,3.01,3.35
+29/09/2022,Atletico-MG,Palmeiras,0,1,A,1.88,3.4,4.92
+29/09/2022,Goias,Botafogo RJ,0,1,A,3.49,3.14,2.37
+29/09/2022,Internacional,Bragantino,0,0,D,1.91,3.55,4.44
+01/10/2022,Atletico-MG,Fluminense,2,0,H,1.76,3.59,5.31
+01/10/2022,Ceara,America MG,1,2,A,2.05,3.26,4.13
+01/10/2022,Internacional,Santos,1,0,H,1.73,3.59,5.56
+01/10/2022,Athletico-PR,Juventude,2,0,H,1.46,4.44,8.04
+01/10/2022,Avai,Atletico GO,1,2,A,2.26,3.17,3.58
+01/10/2022,Flamengo RJ,Bragantino,4,1,H,1.44,4.63,8.07
+01/10/2022,Goias,Fortaleza,0,1,A,2.91,3,2.79
+02/10/2022,Corinthians,Cuiaba,2,0,H,1.71,3.43,6.21
+04/10/2022,Botafogo RJ,Palmeiras,1,3,A,5.22,3.67,1.76
+05/10/2022,Juventude,Corinthians,2,2,D,4.68,3.3,1.95
+05/10/2022,Atletico GO,Fluminense,3,2,H,3.21,3.27,2.44
+05/10/2022,Bragantino,Cuiaba,2,1,H,1.96,3.25,4.72
+05/10/2022,Ceara,Goias,1,1,D,1.69,3.72,5.83
+05/10/2022,Athletico-PR,Fortaleza,1,1,D,2.11,3.26,4.05
+06/10/2022,Flamengo RJ,Internacional,0,0,D,1.39,4.89,9.07
+06/10/2022,Santos,Atletico-MG,1,2,A,3.36,3.11,2.45
+06/10/2022,Palmeiras,Coritiba,4,0,H,1.23,6.5,13.64
+07/10/2022,America MG,Sao Paulo,1,2,A,2.78,3.17,2.84
+07/10/2022,Avai,Botafogo RJ,1,2,A,2.67,3.06,3.07
+08/10/2022,Cuiaba,Flamengo RJ,1,2,A,3.77,3.22,2.21
+09/10/2022,Corinthians,Athletico-PR,2,1,H,2.16,3.15,4.03
+09/10/2022,Internacional,Goias,4,2,H,1.39,4.86,9.39
+09/10/2022,Fortaleza,Avai,2,0,H,1.45,4.35,8.74
+09/10/2022,Sao Paulo,Botafogo RJ,0,1,A,1.7,3.79,5.55
+09/10/2022,Atletico-MG,Ceara,0,0,D,1.46,4.31,8.87
+09/10/2022,Coritiba,Bragantino,2,1,H,2.51,3.2,3.15
+09/10/2022,Fluminense,America MG,0,2,A,1.63,4.09,5.78
+10/10/2022,Atletico GO,Palmeiras,1,1,D,6.08,3.99,1.62
+11/10/2022,Santos,Juventude,4,1,H,1.48,4.23,8.26
+16/10/2022,Flamengo RJ,Atletico-MG,1,0,H,2.74,2.99,3.04
+16/10/2022,America MG,Fortaleza,1,2,A,2.2,3.27,3.73
+16/10/2022,Ceara,Cuiaba,1,1,D,2.02,3.13,4.64
+16/10/2022,Palmeiras,Sao Paulo,0,0,D,1.65,3.92,5.82
+16/10/2022,Juventude,Atletico GO,1,1,D,2.81,3.22,2.78
+16/10/2022,Botafogo RJ,Internacional,0,1,A,2.73,3.11,2.94
+16/10/2022,Athletico-PR,Coritiba,1,0,H,1.71,3.77,5.56
+16/10/2022,Avai,Fluminense,0,3,A,4.45,3.4,1.96
+18/10/2022,Bragantino,Santos,0,2,A,1.93,3.39,4.6
+21/10/2022,Sao Paulo,Coritiba,3,1,H,1.42,4.58,9.17
+22/10/2022,Bragantino,Athletico-PR,4,2,H,2.14,3.36,3.8
+22/10/2022,America MG,Flamengo RJ,1,2,A,2.81,3.29,2.72
+22/10/2022,Santos,Corinthians,0,1,A,2.65,2.9,3.27
+23/10/2022,Palmeiras,Avai,3,0,H,1.16,8.19,21
+23/10/2022,Fluminense,Botafogo RJ,2,2,D,1.91,3.51,4.55
+23/10/2022,Juventude,Sao Paulo,1,2,A,4.64,3.54,1.88
+23/10/2022,Atletico GO,Ceara,1,0,H,2.31,3.27,3.46
+23/10/2022,Coritiba,Internacional,1,1,D,4.2,3.47,1.99
+23/10/2022,Cuiaba,Goias,1,2,A,1.74,3.7,5.41
+25/10/2022,Fortaleza,Atletico-MG,0,0,D,2.47,3.09,3.35
+26/10/2022,Athletico-PR,Palmeiras,1,3,A,6.57,3.94,1.63
+26/10/2022,Flamengo RJ,Santos,3,2,H,1.39,4.89,9.35
+26/10/2022,Botafogo RJ,Bragantino,2,1,H,2.37,3.2,3.4
+27/10/2022,Corinthians,Fluminense,0,2,A,2.28,3.12,3.72
+27/10/2022,Goias,America MG,2,2,D,3.08,3.19,2.57
+27/10/2022,Internacional,Ceara,2,1,H,1.65,3.75,6.2
+27/10/2022,Fortaleza,Coritiba,3,1,H,1.46,4.51,7.98
+27/10/2022,Sao Paulo,Atletico GO,2,1,H,1.66,3.93,5.75
+27/10/2022,Atletico-MG,Juventude,1,0,H,1.2,7.43,16.94
+28/10/2022,Cuiaba,Avai,1,0,H,1.85,3.45,4.98
+29/10/2022,Goias,Corinthians,0,0,D,2.9,3.05,2.82
+31/10/2022,Ceara,Fluminense,0,1,A,3.43,3.25,2.33
+01/11/2022,Botafogo RJ,Cuiaba,0,2,A,1.86,3.38,5.09
+02/11/2022,Sao Paulo,Atletico-MG,2,2,D,2.58,2.99,3.27
+02/11/2022,America MG,Internacional,1,0,H,2.45,3.3,3.16
+02/11/2022,Athletico-PR,Goias,3,2,H,1.64,4.01,5.81
+02/11/2022,Atletico GO,Santos,2,3,A,2.03,3.35,4.21
+02/11/2022,Avai,Bragantino,1,2,A,3.57,3.35,2.22
+02/11/2022,Juventude,Coritiba,0,1,A,2.59,3.27,2.98
+03/11/2022,Flamengo RJ,Corinthians,1,2,A,1.72,3.73,5.54
+03/11/2022,Palmeiras,Fortaleza,4,0,H,1.44,4.85,7.65
+05/11/2022,Fluminense,Sao Paulo,3,1,H,2.09,3.61,3.68
+05/11/2022,Santos,Avai,1,1,D,1.38,4.74,10.15
+05/11/2022,Bragantino,America MG,1,4,A,2.02,3.63,3.85
+05/11/2022,Goias,Juventude,1,0,H,1.67,3.98,5.47
+05/11/2022,Corinthians,Ceara,1,0,H,1.88,3.35,5.02
+06/11/2022,Internacional,Athletico-PR,2,0,H,1.88,3.61,4.53
+06/11/2022,Coritiba,Flamengo RJ,1,0,H,3.67,3.36,2.18
+06/11/2022,Fortaleza,Atletico GO,1,1,D,1.68,3.92,5.59
+06/11/2022,Cuiaba,Palmeiras,1,1,D,3.94,3.46,2.06
+07/11/2022,Atletico-MG,Botafogo RJ,0,2,A,1.64,3.84,6.24
+09/11/2022,Sao Paulo,Internacional,0,1,A,1.87,3.63,4.58
+09/11/2022,Avai,Ceara,2,0,H,4.26,3.42,1.99
+09/11/2022,Coritiba,Corinthians,2,2,D,2.94,3.07,2.77
+09/11/2022,Fluminense,Goias,3,0,H,1.39,5.37,7.93
+09/11/2022,Fortaleza,Bragantino,6,0,H,1.82,3.78,4.64
+10/11/2022,Atletico GO,Athletico-PR,1,1,D,2.15,3.55,3.56
+10/11/2022,Juventude,Flamengo RJ,2,2,D,5.65,3.84,1.68
+10/11/2022,Palmeiras,America MG,2,1,H,1.51,4.44,6.27
+10/11/2022,Atletico-MG,Cuiaba,3,0,H,1.47,4.38,7.98
+10/11/2022,Botafogo RJ,Santos,3,0,H,2.24,3.3,3.6
+12/11/2022,Flamengo RJ,Avai,1,2,A,1.17,8.17,16.16
+13/11/2022,America MG,Atletico GO,1,1,D,1.61,4.44,5.47
+13/11/2022,Athletico-PR,Botafogo RJ,3,0,H,2.21,3.37,3.58
+13/11/2022,Bragantino,Fluminense,0,1,A,2.49,3.69,2.82
+13/11/2022,Ceara,Juventude,4,1,H,1.66,4.08,5.48
+13/11/2022,Corinthians,Atletico-MG,0,1,A,3.14,3.19,2.52
+13/11/2022,Cuiaba,Coritiba,2,1,H,1.94,3.54,4.3
+13/11/2022,Goias,Sao Paulo,0,4,A,5.09,3.99,1.71
+13/11/2022,Internacional,Palmeiras,3,0,H,2.6,3.59,2.74
+13/11/2022,Santos,Fortaleza,0,2,A,3.29,3.47,2.29

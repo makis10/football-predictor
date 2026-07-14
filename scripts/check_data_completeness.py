@@ -40,7 +40,7 @@ SQUADS   = ROOT / "backend" / "data" / "raw" / "international" / "squad_strength
 # no statistics for their domestic micro-leagues, so absence is expected until
 # they play a covered European tie.
 DOMESTIC = {"EPL", "Championship", "LeagueOne", "LaLiga", "SerieA", "Bundesliga",
-            "Ligue1", "GreekSL", "PrimeiraLiga", "Eredivisie"}
+            "Ligue1", "GreekSL", "PrimeiraLiga", "Eredivisie", "BrazilSerieA"}
 EURO     = {"CL", "EL", "ECL"}
 TRACKED  = DOMESTIC | EURO
 
@@ -164,6 +164,28 @@ def main() -> None:
                       f"(check _ALIASES in odds_analysis_service)")
     finally:
         db.close()
+
+    # API-Football quota visibility (the /status call is not billed). A day at
+    # >85% of the cap means the next backfill will start silently starving.
+    import os
+    import requests as _rq
+    try:
+        r = _rq.get("https://v3.football.api-sports.io/status",
+                    headers={"x-apisports-key": os.getenv("API_SPORTS_KEY", "")},
+                    timeout=10).json()
+        resp = r.get("response") or {}
+        if isinstance(resp, dict) and resp:
+            used = (resp.get("requests") or {}).get("current", 0)
+            cap  = (resp.get("requests") or {}).get("limit_day", 0)
+            plan = (resp.get("subscription") or {}).get("plan", "?")
+            print(f"[quota] API-Football {plan}: {used:,}/{cap:,} requests today "
+                  f"({used / cap:.0%})" if cap else f"[quota] plan {plan}, usage {used}")
+            if cap and used / cap > 0.85:
+                _warn(f"API-Football quota at {used / cap:.0%} — ingestion may starve")
+        elif r.get("errors"):
+            _warn(f"API-Football status: {r['errors']}")
+    except Exception:
+        pass
 
     print(f"\n{'FAIL' if alerts else 'OK'} — {len(alerts)} alert(s), {len(warns)} warning(s)")
     sys.exit(1 if alerts else 0)

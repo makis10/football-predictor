@@ -540,6 +540,7 @@ export const LEAGUES = [
   { code: "GreekSL",      label: "Super League",       flag: "🇬🇷" },
   { code: "PrimeiraLiga", label: "Primeira Liga",      flag: "🇵🇹" },
   { code: "Eredivisie",   label: "Eredivisie",         flag: "🇳🇱" },
+  { code: "BrazilSerieA", label: "Brasileirão",        flag: "🇧🇷" },
   { code: "CL",           label: "Champions League",  flag: "⭐" },
   { code: "EL",           label: "Europa League",     flag: "🟠" },
   { code: "ECL",          label: "Conference League", flag: "🟢" },

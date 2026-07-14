@@ -64,6 +64,7 @@ LEAGUE_STAKES: dict[str, dict[str, int]] = {
     "Eredivisie":   {"cl": 2,  "relegation": 3},
     "LeagueOne":    {"cl": 2,  "relegation": 4},
     "PrimeiraLiga": {"cl": 3,  "relegation": 3},
+    "BrazilSerieA": {"cl": 4,  "relegation": 4},   # Libertadores top 4; bottom 4 drop
 }
 
 # Minimum referee-observed matches before we trust the rolling stats.
@@ -556,7 +557,7 @@ def build_features(
     ref_draws:     dict[str, int]   = defaultdict(int)
     ref_cards:     dict[str, float] = defaultdict(float)
 
-    known_leagues = ["EPL", "LaLiga", "SerieA", "Bundesliga", "Ligue1", "GreekSL"]
+    known_leagues = ["EPL", "LaLiga", "SerieA", "Bundesliga", "Ligue1", "GreekSL", "BrazilSerieA"]
 
     feature_rows = []
 
@@ -1496,7 +1497,7 @@ def compute_match_features(
         feat["season_phase"]            = np.nan
         feat["days_since_season_start"] = np.nan
 
-    known_leagues = ["EPL", "LaLiga", "SerieA", "Bundesliga", "Ligue1", "GreekSL"]
+    known_leagues = ["EPL", "LaLiga", "SerieA", "Bundesliga", "Ligue1", "GreekSL", "BrazilSerieA"]
     for lg in known_leagues:
         feat[f"league_{lg}"] = 1 if league == lg else 0
 
@@ -1785,6 +1786,7 @@ FEATURE_COLS = [
     # League
     "league_EPL",         "league_LaLiga",  "league_SerieA",
     "league_Bundesliga",  "league_Ligue1",  "league_GreekSL",
+    "league_BrazilSerieA",
     # European competition schedule (0 when no data / team not in Europe)
     "h_eur_fatigue",      "a_eur_fatigue",
     "h_eur_away",         "a_eur_away",
@@ -1911,6 +1913,7 @@ BTTS_FEATURE_COLS = [
     "elo_diff",            "elo_home_win_prob",
     "league_EPL",          "league_LaLiga",       "league_SerieA",
     "league_Bundesliga",   "league_Ligue1",       "league_GreekSL",
+    "league_BrazilSerieA",
     # H2H goals history — direct signal for BTTS and over/under between this specific pair
     "h2h_count",           "h2h_btts_rate",
     "h2h_total_goals_avg", "h2h_over25_rate",

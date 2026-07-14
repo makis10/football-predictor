@@ -32,10 +32,22 @@ COMPETITIONS = {
     "ELC": "Championship",
     "PPL": "PrimeiraLiga",
     "DED": "Eredivisie",
+    "BSA": "BrazilSerieA",
 }
 
 # Same team name mapping as fetch_upcoming.py
 TEAM_MAP: dict[str, str] = {
+    # Brazil Serie A — football-data.org shortName → football-data.co.uk CSV name
+    "Botafogo":       "Botafogo RJ",
+    "Chapecoense":    "Chapecoense-SC",
+    "Clube do Remo":  "Remo",
+    "Flamengo":       "Flamengo RJ",
+    "Grêmio":         "Gremio",
+    "Mineiro":        "Atletico-MG",
+    "Paranaense":     "Athletico-PR",
+    "São Paulo":      "Sao Paulo",
+    "Vasco da Gama":  "Vasco",
+    "Vitória":        "Vitoria",
     "Leeds United":   "Leeds",
     "Wolverhampton":  "Wolves",
     "Brighton Hove":  "Brighton",

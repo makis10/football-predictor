@@ -75,6 +75,7 @@ DRAW_FEATURE_COLS = [
     # League dummies: draw rates differ by league
     "league_EPL",          "league_LaLiga",    "league_SerieA",
     "league_Bundesliga",   "league_Ligue1",    "league_GreekSL",
+    "league_BrazilSerieA",
     # Draw-balance features (new — capture match symmetry directly)
     "goals_asymmetry_5",      # abs(h_scored - a_scored): low = matched offences
     "combined_draw_tendency", # sqrt(h_draw_rate * a_draw_rate): both teams draw-prone
