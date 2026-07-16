@@ -135,6 +135,11 @@ def _impute_optional(df: pd.DataFrame, save_medians: bool = True) -> pd.DataFram
     """
     df = df.copy()
     train_mask = df["Date"] < CAL_CUTOFF
+    # Pre-imputation flag: rows that had NO real 1×2 market probs. The scoring
+    # report needs it — after imputation every row "has" market values, which
+    # silently pollutes the de-vig bookmaker baseline with fake (median) odds.
+    df["market_was_imputed"] = df[[c for c in MARKET_COLS if c in df.columns][:3]].isna().any(axis=1) \
+        if any(c in df.columns for c in MARKET_COLS) else True
     medians: dict[str, float] = {}
 
     def _fill(col: str, fallback: float) -> None:
@@ -269,7 +274,8 @@ def _val_split(train: pd.DataFrame, val_frac: float = 0.15) -> tuple[pd.DataFram
     return inner, val
 
 
-def _result_scoring_report(probs: np.ndarray, y_true: pd.Series, test: pd.DataFrame) -> dict:
+def _result_scoring_report(probs: np.ndarray, y_true: pd.Series, test: pd.DataFrame,
+                           train_base_rates: "np.ndarray | None" = None) -> dict:
     """Proper scoring rules + baselines for the 3-way result model on the test set.
 
     Accuracy alone is a bad 3-class metric (a model that never predicts Draw can
@@ -290,8 +296,8 @@ def _result_scoring_report(probs: np.ndarray, y_true: pd.Series, test: pd.DataFr
     cp, co = np.cumsum(probs, axis=1), np.cumsum(onehot, axis=1)
     rps = float(np.mean(np.sum((cp[:, :2] - co[:, :2]) ** 2, axis=1) / 2.0))
 
-    # Baseline 1: always predict Home at the train-era base rates.
-    base_rates = np.array([0.44, 0.26, 0.30])
+    # Baseline 1: constant prediction at the train-era base rates.
+    base_rates = train_base_rates if train_base_rates is not None else np.array([0.44, 0.26, 0.30])
     ll_home  = float(log_loss(y, np.tile(base_rates, (n, 1)), labels=[0, 1, 2]))
     acc_home = float(np.mean(y == 0))
 
@@ -308,6 +314,11 @@ def _result_scoring_report(probs: np.ndarray, y_true: pd.Series, test: pd.DataFr
     if all(c in test.columns for c in mk_cols):
         mk = test[mk_cols].to_numpy(dtype=float)
         ok = ~np.isnan(mk).any(axis=1)
+        # Exclude rows whose market probs are imputed medians, not real odds —
+        # counting them would both misstate coverage and unfairly degrade the
+        # bookmaker baseline (flag written by _impute_optional pre-fill).
+        if "market_was_imputed" in test.columns:
+            ok &= ~test["market_was_imputed"].to_numpy(dtype=bool)
         if ok.sum() >= 100:
             mk_ok = mk[ok] / mk[ok].sum(axis=1, keepdims=True)
             ll_bm  = float(log_loss(y[ok], mk_ok, labels=[0, 1, 2]))
@@ -434,7 +445,9 @@ def train_result_model(train: pd.DataFrame, test: pd.DataFrame) -> SoftVoteEnsem
                                    target_names=["HomeWin", "Draw", "AwayWin"],
                                    output_dict=True)
     print(classification_report(y_test, preds, target_names=["HomeWin", "Draw", "AwayWin"]))
-    scoring = _result_scoring_report(probs, y_test, test)
+    _tr_counts = np.bincount(train["target_result"].to_numpy(dtype=int), minlength=3)
+    scoring = _result_scoring_report(probs, y_test, test,
+                                     train_base_rates=_tr_counts / max(_tr_counts.sum(), 1))
     metrics = {
         **scoring,
         "result_test_accuracy":  round(acc, 4),

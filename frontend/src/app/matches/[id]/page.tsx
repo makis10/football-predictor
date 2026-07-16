@@ -143,7 +143,17 @@ export default async function MatchDetailPage({ params }: Props) {
       </div>
 
       {/* Prediction card */}
-      {prediction ? (
+      {prediction && prediction.insufficient_data ? (
+        <div className="card p-6 text-center text-gray-400 space-y-2">
+          <p className="text-3xl">ℹ️</p>
+          <p className="font-medium text-gray-300">Ανεπαρκή δεδομένα για πρόβλεψη</p>
+          <p className="text-sm text-gray-500 max-w-md mx-auto">
+            Μία ή και οι δύο ομάδες δεν υπάρχουν στο ιστορικό εκπαίδευσης του μοντέλου
+            (συνήθως προκριματικά ή ομάδες από πρωταθλήματα που δεν καλύπτουμε). Οι
+            πιθανότητες θα ήταν απλώς οι default τιμές — δεν τις εμφανίζουμε.
+          </p>
+        </div>
+      ) : prediction ? (
         <>
           {/* Confidence + model info */}
           <div className="flex items-center justify-between px-1">

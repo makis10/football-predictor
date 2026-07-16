@@ -176,6 +176,11 @@ def parse_fixtures(league_code: str, raw: list[dict], resolve) -> tuple[list[dic
             "match_date":   dt_utc.date(),
             "kickoff_time": dt_utc.time().replace(microsecond=0),
             "league":       league_code,
+            # The stage ("1st Qualifying Round" / "League Phase - 3" /
+            # "Round of 16"). A UEFA season stacks three different formats under
+            # one league id; without this they're indistinguishable, and a
+            # qualifying tie would be counted into the league-phase table.
+            "round":        (entry.get("league") or {}).get("round"),
             "home_team":    home,
             "away_team":    away,
             "season":       infer_season(dt_utc.date()),
@@ -219,6 +224,10 @@ def update_results(db, played: list[dict]) -> int:
         hg, ag = f["home_goals"], f["away_goals"]
         row.home_goals, row.away_goals = hg, ag
         row.result = "H" if hg > ag else ("A" if ag > hg else "D")
+        # Finished fixtures never go through upsert_fixtures, so this is the only
+        # place their stage gets recorded — and the league-phase table needs it.
+        if f.get("round") and not row.round:
+            row.round = f["round"]
         updated += 1
         print(f"  ✓ {f['league']}: {f['home_team']} {hg}-{ag} {f['away_team']}")
     db.commit()
@@ -286,6 +295,12 @@ def main():
                 continue
             upcoming, finished = parse_fixtures(code, raw, resolve)
             print(f"  {len(upcoming)} upcoming / {len(finished)} finished")
+
+            # domestic=False: unresolved UEFA teams are genuine minnows we have
+            # no history for (they keep their full name + default features), not
+            # a mapping bug — so this is an FYI, not a warning.
+            from scripts.team_resolver import warn_unknown_teams
+            warn_unknown_teams(upcoming, domestic=False)
 
             if upcoming:
                 all_new.extend(insert_fixtures(db, upcoming))

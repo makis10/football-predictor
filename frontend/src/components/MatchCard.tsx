@@ -63,7 +63,13 @@ export default function MatchCard({ match }: Props) {
         </div>
 
         {/* Prediction row */}
-        {p ? (
+        {p && p.insufficient_data ? (
+          <div className="mt-auto">
+            <span className="text-xs text-gray-500 italic">
+              ℹ️ Ανεπαρκή δεδομένα — άγνωστες ομάδες
+            </span>
+          </div>
+        ) : p ? (
           <div className="mt-auto space-y-2">
             {/* Win / Draw / Loss mini-bars */}
             <div className="flex gap-1 h-1.5 rounded-full overflow-hidden">

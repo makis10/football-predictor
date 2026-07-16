@@ -148,7 +148,7 @@ def main() -> None:
 
     # ── Grid search on CAL only ───────────────────────────────────────────────
     print(f"Grid-searching {len(W_GRID)*len(SCALE_GRID)*len(DRAW_BASE_GRID)*len(DRAW_DECAY_GRID)} combos on CAL …")
-    best = None
+    combos = []
     for scale in SCALE_GRID:
         for base in DRAW_BASE_GRID:
             for decay in DRAW_DECAY_GRID:
@@ -156,12 +156,33 @@ def main() -> None:
                 for w in W_GRID:
                     blended = (1 - w) * cal_model + w * e3
                     blended /= blended.sum(axis=1, keepdims=True)
-                    ll = _log_loss(y_cal, blended)
-                    if best is None or ll < best["cal_log_loss"]:
-                        best = {"elo_blend_w": w, "scale": scale,
-                                "draw_base": base, "draw_decay": decay,
-                                "cal_log_loss": round(ll, 4)}
-    print(f"  Best on CAL: {best}")
+                    combos.append({"elo_blend_w": w, "scale": scale,
+                                   "draw_base": base, "draw_decay": decay,
+                                   "cal_log_loss": _log_loss(y_cal, blended)})
+    min_ll = min(c["cal_log_loss"] for c in combos)
+    # Stability tie-break: the plateau around the optimum is nearly flat, so the
+    # argmin flaps between re-fits (w 0.5↔0.6↔0.7 day to day) and predictions
+    # jitter for no real signal. Among combos within LL_TOL of the best, prefer
+    # the one closest to the PREVIOUS blend.json values.
+    LL_TOL = 0.002
+    near = [c for c in combos if c["cal_log_loss"] <= min_ll + LL_TOL]
+    prev = None
+    if BLEND_PATH.exists():
+        try:
+            prev = json.load(open(BLEND_PATH))
+        except Exception:
+            prev = None
+    if prev:
+        def _dist(c):
+            return (abs(c["elo_blend_w"] - prev.get("elo_blend_w", 0.5)) * 10
+                    + abs(c["scale"] - prev.get("scale", 110)) / 100
+                    + abs(c["draw_base"] - prev.get("draw_base", 0.26)) * 10
+                    + abs(c["draw_decay"] - prev.get("draw_decay", 0.7)))
+        best = min(near, key=_dist)
+    else:
+        best = min(near, key=lambda c: c["cal_log_loss"])
+    best = {**best, "cal_log_loss": round(best["cal_log_loss"], 4)}
+    print(f"  Best on CAL: {best}  (near-tied combos: {len(near)}, tol={LL_TOL})")
 
     # ── TEST report: pure vs current-production vs fitted ────────────────────
     def _blend_on_test(w, scale, base, decay):

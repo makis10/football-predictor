@@ -57,6 +57,11 @@ def upsert_fixtures(
             if f.get("kickoff_time") is not None and exists.kickoff_time != f["kickoff_time"]:
                 exists.kickoff_time = f["kickoff_time"]
                 backfilled += 1
+            # Backfill the stage onto rows inserted before we stored it — without
+            # this, existing cup fixtures stay NULL forever and the league-phase
+            # table can't tell them apart from a qualifier.
+            if f.get("round") and exists.round != f["round"]:
+                exists.round = f["round"]
             skipped += 1
             touched_ids.add(exists.id)
             continue
@@ -89,6 +94,7 @@ def upsert_fixtures(
             kickoff_time=f.get("kickoff_time"),
             league=f["league"],
             season=f["season"],
+            round=f.get("round"),      # cups only; NULL for domestic leagues
             home_team=f["home_team"],
             away_team=f["away_team"],
         )

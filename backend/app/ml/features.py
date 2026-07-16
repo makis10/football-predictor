@@ -60,7 +60,7 @@ LEAGUE_STAKES: dict[str, dict[str, int]] = {
     "Bundesliga":   {"cl": 4,  "relegation": 3},
     "Ligue1":       {"cl": 3,  "relegation": 3},
     "Championship": {"cl": 6,  "relegation": 3},   # top 2 auto + 4 playoff spots
-    "GreekSL":      {"cl": 3,  "relegation": 4},
+    "GreekSL":      {"cl": 4,  "relegation": 2},   # top-4 championship play-off; bottom-2 down
     "Eredivisie":   {"cl": 2,  "relegation": 3},
     "LeagueOne":    {"cl": 2,  "relegation": 4},
     "PrimeiraLiga": {"cl": 3,  "relegation": 3},

@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from datetime import datetime
 
-from sqlalchemy import DateTime, Float, ForeignKey, Integer, String, func
+from sqlalchemy import Boolean, DateTime, Float, ForeignKey, Integer, String, func
 from typing import Optional as _Optional
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
@@ -65,6 +65,11 @@ class Prediction(Base):
     # Expected value of the suggested market: model_prob × odds − 1.
     # e.g. 0.08 means 8% edge. NULL when suggested_market is NULL.
     ev_score: Mapped[_Optional[float]] = mapped_column(Float, nullable=True)
+
+    # True when BOTH teams are absent from training history → the model ran on
+    # pure-default features and this prediction is not meaningful (identical for
+    # every such fixture). UI shows "insufficient data" instead of the numbers.
+    insufficient_data: Mapped[bool] = mapped_column(Boolean, nullable=False, server_default="false")
 
     # Last injury-adjusted probabilities actually SERVED for this match (written
     # by the predictions router when a significant adjustment applies). The raw

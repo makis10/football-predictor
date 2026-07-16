@@ -26,6 +26,7 @@ class PredictionResponse(BaseModel):
     btts_prob: Optional[float] = None   # Both Teams To Score — Poisson-derived
     model_version: str
     confidence: str
+    insufficient_data: bool = False     # both teams unknown → not a real prediction
 
     model_config = {"from_attributes": True, "protected_namespaces": ()}
 

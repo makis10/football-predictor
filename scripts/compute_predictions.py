@@ -404,18 +404,28 @@ for i, (mid, home, away, match_date, league) in enumerate(match_snapshots, 1):
             home_win_p, draw_p, away_win_p, over_p
         )
 
-        # Served probabilities = PURE model output — no market anchoring.
-        # The bookmaker is used only below, for the EV/value comparison.
-        pre_anchor = (home_win_p, draw_p, away_win_p, over_p)
-
         # BTTS classifier (replaces raw Poisson BTTS)
         btts_raw = predict_btts_prob(btts_clf, feat)
         if btts_raw is not None:
             gg_prob = apply_btts_calibration(btts_cal, btts_raw)
         else:
             gg_prob = float(feat.get("poisson_btts", 0.5))
-        btts_prediction = "GG" if gg_prob >= _get_btts_threshold() else "NG"
 
+        # Coherence projection: result/goals/BTTS are independent models and can
+        # contradict (e.g. Over 57% with NG 53%). Project onto the nearest
+        # mutually consistent set via the fitted score matrix — feasible inputs
+        # round-trip unchanged, contradictions get the best compromise.
+        from backend.app.ml.poisson import project_probs_coherent
+        _proj = project_probs_coherent(home_win_p, draw_p, away_win_p, over_p, gg_prob)
+        if _proj:
+            home_win_p, draw_p, away_win_p = _proj["home"], _proj["draw"], _proj["away"]
+            over_p, gg_prob = _proj["over"], _proj["btts"]
+
+        # Served probabilities = PURE model output — no market anchoring.
+        # The bookmaker is used only below, for the EV/value comparison.
+        pre_anchor = (home_win_p, draw_p, away_win_p, over_p)
+
+        btts_prediction = "GG" if gg_prob >= _get_btts_threshold() else "NG"
         goals_prediction = "OVER" if over_p >= 0.5 else "UNDER"
         max_result_prob = max(home_win_p, draw_p, away_win_p)
 
@@ -493,7 +503,7 @@ for i, (mid, home, away, match_date, league) in enumerate(match_snapshots, 1):
                      suggested_market, ev_score,
                      poisson_lambda_home, poisson_lambda_away,
                      raw_home_prob, raw_draw_prob, raw_away_prob, raw_over_prob,
-                     btts_prob, btts_prediction)
+                     btts_prob, btts_prediction, insufficient_data)
                 VALUES
                     (:match_id, :home_win_prob, :draw_prob, :away_win_prob,
                      :over_2_5_prob, :goals_prediction, :model_version, :confidence,
@@ -502,7 +512,7 @@ for i, (mid, home, away, match_date, league) in enumerate(match_snapshots, 1):
                      :suggested_market, :ev_score,
                      :poisson_lambda_home, :poisson_lambda_away,
                      :raw_home_prob, :raw_draw_prob, :raw_away_prob, :raw_over_prob,
-                     :btts_prob, :btts_prediction)
+                     :btts_prob, :btts_prediction, :insufficient_data)
                 ON CONFLICT (match_id) DO NOTHING
             """),
             {
@@ -513,6 +523,9 @@ for i, (mid, home, away, match_date, league) in enumerate(match_snapshots, 1):
                 "over_2_5_prob":    round(over_p, 4),
                 "goals_prediction": goals_prediction,
                 "model_version":    MODEL_VERSION,
+                # Both teams unknown → pure-default features → not a real
+                # prediction (identical for every such fixture). Flag it.
+                "insufficient_data": not _has_history(home, away),
                 "confidence":       confidence_for(league, max_result_prob, over_p,
                                                    has_history=_has_history(home, away)),
                 # Store bookmaker odds for ROI/EV tracking (NULL when unavailable)

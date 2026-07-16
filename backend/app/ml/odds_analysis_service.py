@@ -1465,6 +1465,22 @@ def _get_llm_analysis(
     suggestion (being shadow-tracked on the new model) — the analysis should
     acknowledge them honestly rather than claim "no opportunity exists".
     """
+    # The narrative is the expensive part — Groq tokens are the binding budget
+    # (200k/day; the hourly warm-up alone was on course for ~1.2M) — and the
+    # text barely changes while the probabilities stay put. So it's cached far
+    # longer than the surrounding odds/EV payload, which stays on the 1 h
+    # analysis cache: a cache-miss there recomputes fresh odds but REUSES this
+    # narrative instead of paying Groq again. Keyed on the probs, so a retrain
+    # or injury adjustment regenerates it.
+    _fp = ":".join(
+        f"{round(model_probs.get(k) or 0, 3)}"
+        for k in ("home_win", "draw", "away_win", "over_2_5")
+    )
+    _nkey = f"groq_narrative:{_slug(home_team)}:{_slug(away_team)}:{_fp}"
+    _ncached = cache_get(_nkey)
+    if _ncached is not CACHE_MISS:
+        return _ncached
+
     if not GROQ_API_KEY:
         return {
             "text": "LLM analysis not available — add GROQ_API_KEY to .env.",
@@ -1634,17 +1650,24 @@ SUGGESTED: <market name> @ <decimal odds>
             elif line.strip():
                 analysis_lines.append(line.strip())
 
-        return {
+        result = {
             "text":              " ".join(analysis_lines),
             "suggested_market":  suggested,
         }
+        cache_set(_nkey, result, 24 * 3600)
+        return result
 
     except Exception as e:
         log.warning(f"[groq] Analysis error: {e}")
-        return {
+        # Cache the failure BRIEFLY: long enough that a rate-limited Groq isn't
+        # hammered once per page view (the 429 stampede), short enough that the
+        # narrative recovers minutes after the limit lifts — not next day.
+        fail = {
             "text":              "Analysis temporarily unavailable.",
             "suggested_market":  None,
         }
+        cache_set(_nkey, fail, 300)
+        return fail
 
 
 # ── Public entry point ────────────────────────────────────────────────────────

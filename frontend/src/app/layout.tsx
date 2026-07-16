@@ -79,6 +79,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     merged into Upcoming (+ its International filter). /national
                     route + detail pages stay (match cards link to them). */}
                 <Link
+                  href="/projections"
+                  className="px-3 py-1.5 rounded-lg text-sm text-gray-400 hover:text-white hover:bg-pitch-800 transition-colors"
+                >
+                  🔮 Projections
+                </Link>
+                <Link
                   href="/national/world-cup"
                   className="px-3 py-1.5 rounded-lg text-sm text-gray-400 hover:text-white hover:bg-pitch-800 transition-colors"
                 >

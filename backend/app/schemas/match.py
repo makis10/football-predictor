@@ -16,6 +16,7 @@ class PredictionEmbed(BaseModel):
     confidence: str  # "high" / "medium" / "low"
     suggested_market: Optional[str] = None
     ev_score: Optional[float] = None
+    insufficient_data: bool = False   # both teams unknown → not a real prediction
 
     model_config = {"from_attributes": True, "protected_namespaces": ()}
 

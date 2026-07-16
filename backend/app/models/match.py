@@ -24,6 +24,10 @@ class Match(Base):
     # date-only display and treats the match as "in progress" until the date
     # itself is past.
     kickoff_time: Mapped[Optional[time]] = mapped_column(Time, nullable=True)
+    # Competition stage, for cups whose season has several formats stacked in
+    # one league id: "1st Qualifying Round" / "League Phase - 3" / "Round of 16".
+    # NULL for domestic leagues, which are a single round-robin throughout.
+    round: Mapped[Optional[str]] = mapped_column(String(60), nullable=True, index=True)
     home_team: Mapped[str] = mapped_column(String(100), index=True)
     away_team: Mapped[str] = mapped_column(String(100), index=True)
 

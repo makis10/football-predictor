@@ -99,6 +99,9 @@ def _load_rows(league: Optional[str] = None) -> list[dict]:
             )
             .join(Prediction, Prediction.match_id == Match.id)
             .where(Match.result.isnot(None))
+            # Exclude no-history fixtures (pure-default features → identical
+            # coin-flip predictions) so they don't dilute accuracy/ROI.
+            .where(Prediction.insufficient_data.is_(False))
             .where(Match.league == league if league else sql_true())
             .order_by(Match.match_date)
         ).mappings().all()

@@ -160,10 +160,15 @@ def _build_response(
         ov = round(pred.over_2_5_prob,  4)
         goals_pred = pred.goals_prediction
 
-    btts = _compute_btts(
-        match.home_team, match.away_team, match.league, match.match_date,
-        xgb_over_2_5=ov,
-    )
+    # Prefer the STORED BTTS (classifier output, coherence-projected at compute
+    # time alongside 1×2/Over) — recomputing an independent Poisson blend here
+    # reintroduced exactly the Over-vs-NG contradictions the projection removes.
+    btts = getattr(pred, "btts_prob", None)
+    if btts is None:
+        btts = _compute_btts(
+            match.home_team, match.away_team, match.league, match.match_date,
+            xgb_over_2_5=ov,
+        )
 
     # Enforce logical consistency: a draw with Over 2.5 goals (≥ 3 total) is
     # impossible without both teams scoring.  Any draw at 2-2, 3-3 etc.
@@ -195,6 +200,7 @@ def _build_response(
         # injury-adjusted) so the label always matches what the user sees.
         # The raw DB value is intentionally ignored here.
         confidence=confidence_for(match.league, max(hw, d, aw), ov),
+        insufficient_data=bool(getattr(pred, "insufficient_data", False)),
     )
 
 
@@ -320,6 +326,15 @@ def get_prediction(match_id: int, db: Session = Depends(get_db)):
             adj2 = _apply_injury_adjustment(match2, existing)
             return _build_response(match2, existing, adj2)
 
+        # Flag on-the-fly predictions for teams with no training history — same
+        # rule as compute_predictions (identical default-derived output).
+        try:
+            hist = _get_history()
+            known = set(hist["home_team"]) | set(hist["away_team"])
+            _insufficient = not (home_team in known and away_team in known)
+        except Exception:
+            _insufficient = False
+
         new_pred = Prediction(
             match_id=mid,
             home_win_prob=result["win_probabilities"]["home_win"],
@@ -329,6 +344,7 @@ def get_prediction(match_id: int, db: Session = Depends(get_db)):
             goals_prediction=result["goals"]["prediction"],
             model_version=result["model_version"],
             confidence=result["confidence"],
+            insufficient_data=_insufficient,
         )
         db2.add(new_pred)
         db2.commit()
@@ -384,10 +400,12 @@ def get_match_analysis(match_id: int, request: Request, db: Session = Depends(ge
         aw = round(pred.away_win_prob, 4)
         ov = round(pred.over_2_5_prob, 4)
 
-    # Use the same blended + logically-consistent BTTS as _build_response so that
-    # the analysis bookmaker comparison table shows the same model btts as the
+    # Use the same stored/consistent BTTS as _build_response so that the
+    # analysis bookmaker comparison table shows the same model btts as the
     # prediction card above it.
-    btts = _compute_btts(
+    btts = getattr(pred, "btts_prob", None)
+    if btts is None:
+        btts = _compute_btts(
         match.home_team, match.away_team, match.league, match.match_date,
         xgb_over_2_5=ov,
     )

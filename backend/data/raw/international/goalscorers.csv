@@ -47897,7 +47897,11 @@ date,home_team,away_team,team,scorer,minute,own_goal,penalty
 2026-07-11,Norway,England,Norway,Andreas Schjelderup,36.0,False,False
 2026-07-11,Norway,England,England,Jude Bellingham,45.0,False,False
 2026-07-11,Norway,England,England,Jude Bellingham,93.0,False,False
-2026-07-04,Colombia,Ghana,Colombia,Jhon Arias,,False,False
+2026-07-14,France,Spain,Spain,Mikel Oyarzabal,22.0,False,True
+2026-07-14,France,Spain,Spain,Pedro Porro,58.0,False,False
+2026-07-15,England,Argentina,England,Anthony Gordon,55.0,False,False
+2026-07-15,England,Argentina,Argentina,Enzo Fernández,85.0,False,False
+2026-07-15,England,Argentina,Argentina,Lautaro Martínez,90.0,False,False
 2026-07-06,Mexico,England,Mexico,Raúl Jiménez,,False,False
 2026-07-06,Mexico,England,Mexico,Julián Quiñones,,False,False
 2026-07-06,Mexico,England,England,Jude Bellingham,,False,False
@@ -47908,9 +47912,12 @@ date,home_team,away_team,team,scorer,minute,own_goal,penalty
 2026-07-07,United States,Belgium,Belgium,Charles De Ketelaere,,False,False
 2026-07-07,United States,Belgium,Belgium,Hans Vanaken,,False,False
 2026-07-07,United States,Belgium,Belgium,Romelu Lukaku,,False,False
-2026-07-04,FF Jaro,Ilves,FF Jaro,R. Vikström,,False,False
-2026-07-04,FF Jaro,Ilves,FF Jaro,H. Sjögrell,,False,False
 2026-07-12,Argentina,Switzerland,Argentina,Alexis Mac Allister,,False,False
 2026-07-12,Argentina,Switzerland,Argentina,Julián Alvarez,,False,False
 2026-07-12,Argentina,Switzerland,Argentina,Lautaro Martínez,,False,False
 2026-07-12,Argentina,Switzerland,Switzerland,Dan Ndoye,,False,False
+2026-07-06,IF Brommapojkarna,Gais,IF Brommapojkarna,Oliver Berg,,False,False
+2026-07-06,IF Brommapojkarna,Gais,Gais,Henry Sletsjoe,,False,False
+2026-07-14,Gyori ETO FC,Vikingur Reykjavik,Gyori ETO FC,Milán Vitális,,False,False
+2026-07-14,Gyori ETO FC,Vikingur Reykjavik,Vikingur Reykjavik,Daniel Hafsteinsson,,False,False
+2026-07-14,Gyori ETO FC,Vikingur Reykjavik,Vikingur Reykjavik,Daniel Hafsteinsson,,False,False

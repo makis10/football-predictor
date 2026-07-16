@@ -30,6 +30,9 @@ export interface PredictionEmbed {
   confidence: "high" | "medium" | "low";
   suggested_market: string | null;
   ev_score: number | null;
+  /** Both teams absent from training history → not a real prediction (identical
+   *  default output for every such fixture). UI shows an "insufficient data" note. */
+  insufficient_data?: boolean;
 }
 
 export interface Match {
@@ -80,6 +83,7 @@ export interface Prediction {
   confidence: "high" | "medium" | "low";
   suggested_market: string | null;
   ev_score: number | null;
+  insufficient_data?: boolean;
 }
 
 // ── Odds / Analysis types ─────────────────────────────────────────────────────
@@ -910,6 +914,137 @@ export async function getPlayerProps(predictionId: number): Promise<PlayerPropsR
 /** Club player props — computed live from player_match_stats (no prediction_id). */
 export async function getClubPlayerProps(matchId: number): Promise<PlayerPropsResponse> {
   return apiFetch<PlayerPropsResponse>(`/predictions/${matchId}/player-props`);
+}
+
+// ── League standings ─────────────────────────────────────────────────────────
+
+export interface StandingRow {
+  position: number;
+  team: string;
+  played: number;
+  won: number;
+  drawn: number;
+  lost: number;
+  goals_for: number;
+  goals_against: number;
+  goal_diff: number;
+  points: number;
+  /** "top" = Europe/promotion (or UEFA direct R16), "playoff" = UEFA knockout
+   *  play-off (9–24), "bottom" = relegation/eliminated, null = mid-table. */
+  zone: "top" | "playoff" | "bottom" | null;
+}
+
+export interface Standings {
+  league: string;
+  season: string;
+  /** True once the season has no fixtures left — the UI says "final" rather
+   *  than implying the table is still moving. */
+  is_final: boolean;
+  /** What the top zone grants here: "Champions League" / "Promotion" /
+   *  "Round of 16" (UEFA league phase) … */
+  top_zone: string;
+  /** UEFA league phase only: positions 9–24 go to the knockout play-off.
+   *  null for domestic leagues, which have no middle zone. */
+  playoff_zone: string | null;
+  bottom_zone: string;
+  top_n: number;
+  playoff_to: number;
+  bottom_n: number;
+  rows: StandingRow[];
+}
+
+/** Standings for a league. 404s when the league has no played matches yet. */
+export async function getStandings(league: string, season?: string): Promise<Standings> {
+  const qs = season ? `?season=${encodeURIComponent(season)}` : "";
+  return apiFetch<Standings>(`/standings/${encodeURIComponent(league)}${qs}`);
+}
+
+export interface ProjectionTeam {
+  team: string;
+  p_title: number;
+  /** Finishing in the top zone — Champions League, promotion, Libertadores… */
+  p_top: number;
+  p_relegated: number;
+  exp_points: number;
+}
+
+export interface LeagueProjection {
+  league: string;
+  season: string;
+  sims: number;
+  matches_played: number;
+  matches_remaining: number;
+  top_zone: string;
+  top_n: number;
+  bottom_n: number;
+  /** Present for play-off leagues (Greek SL): warns that only the regular
+   *  season is simulated and the play-offs decide the title. */
+  note?: string | null;
+  teams: ProjectionTeam[];
+}
+
+export interface EuropeanProjectionTeam {
+  team: string;
+  p_champion: number;
+  p_final: number;
+  /** Reaching the last 16 (top 8 go direct; 9–24 must win the play-off). */
+  p_r16: number;
+}
+
+/** A UEFA competition projects to a trophy, not a table position — so it is a
+ *  different shape from the domestic one, not a superset of it. */
+export interface EuropeanProjection {
+  league: string;
+  season: string;
+  sims: number;
+  matches_played: number;
+  matches_remaining: number;
+  teams: EuropeanProjectionTeam[];
+}
+
+export type SeasonProjection = LeagueProjection | EuropeanProjection;
+
+/** Discriminates the two projection shapes: only the domestic one names a
+ *  top zone (Champions League / Promotion / …). */
+export function isEuropeanProjection(p: SeasonProjection): p is EuropeanProjection {
+  return !("top_zone" in p);
+}
+
+export interface ProjectionHistoryTeam {
+  team: string;
+  /** Model title (league) or champion (European) probability that day. */
+  prob: number;
+  /** De-vigged bookmaker probability, when a market was offered. */
+  market_pct?: number | null;
+}
+
+export interface ProjectionHistorySnapshot {
+  date: string;
+  league: string;
+  season: string | null;
+  matches_remaining: number | null;
+  teams: ProjectionHistoryTeam[];
+}
+
+export interface ProjectionHistory {
+  available: boolean;
+  snapshots: ProjectionHistorySnapshot[];
+}
+
+/** Daily model-vs-market odds history for a competition's title race. Always
+ *  200 (with available:false until the first snapshot is stored). */
+export async function getProjectionHistory(league: string): Promise<ProjectionHistory> {
+  return apiFetch<ProjectionHistory>(
+    `/standings/${encodeURIComponent(league)}/projection/history`,
+  );
+}
+
+/** Monte Carlo season projection. 404s when there is nothing honest to project:
+ *  a finished season, a play-off format whose fixtures we refuse to guess
+ *  (Greek Super League), or a UEFA competition still in qualifying — where the
+ *  league-phase field doesn't exist yet. */
+export async function getLeagueProjection(league: string): Promise<SeasonProjection> {
+  return apiFetch<SeasonProjection>(`/standings/${encodeURIComponent(league)}/projection`);
 }
 
 /**

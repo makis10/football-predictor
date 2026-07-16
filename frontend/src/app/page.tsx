@@ -5,6 +5,9 @@ import { Suspense } from "react";
 import Link from "next/link";
 import {
   getMatches,
+  getLeagueProjection,
+  isEuropeanProjection,
+  getStandings,
   getUpcomingNationalMatches,
   getWcReview,
   athensDate,
@@ -15,6 +18,9 @@ import {
 } from "@/lib/api";
 import MatchCard from "@/components/MatchCard";
 import LockedMatchCard from "@/components/LockedMatchCard";
+import StandingsTable from "@/components/StandingsTable";
+import LeagueProjectionPanel from "@/components/LeagueProjectionPanel";
+import EuropeanProjectionPanel from "@/components/EuropeanProjectionPanel";
 import { getSession } from "@/lib/auth";
 import LeagueFilter from "@/components/LeagueFilter";
 import OddsFilter from "@/components/OddsFilter";
@@ -149,6 +155,36 @@ async function UpcomingGrid({
   );
 }
 
+/**
+ * League table for the selected competition. Public: it is a record of results,
+ * not a prediction, so it sits outside the freemium gate. Silently renders
+ * nothing for competitions with no played matches (a cup, or a season that
+ * hasn't kicked off).
+ */
+async function LeagueStandings({ league }: { league: string }) {
+  // Table and projection are independent: a finished season has a table but no
+  // projection; a season that hasn't kicked off has a projection but no table.
+  // Fetch both, render whichever exists.
+  const [table, proj] = await Promise.all([
+    getStandings(league).catch(() => null),
+    getLeagueProjection(league).catch(() => null),
+  ]);
+  if (!table && !proj) return null;
+  return (
+    <div className="space-y-6">
+      {table && <StandingsTable table={table} />}
+      {/* A domestic season projects to a table position, a UEFA one to a trophy
+          — different questions, so different panels. */}
+      {proj &&
+        (isEuropeanProjection(proj) ? (
+          <EuropeanProjectionPanel proj={proj} />
+        ) : (
+          <LeagueProjectionPanel proj={proj} />
+        ))}
+    </div>
+  );
+}
+
 export default async function HomePage({ searchParams }: PageProps) {
   const sp = await searchParams;
   // Resolve to the canonical code (case-insensitive). A league we don't cover
@@ -235,6 +271,15 @@ export default async function HomePage({ searchParams }: PageProps) {
           </Suspense>
         )}
       </div>
+
+      {/* League table — only meaningful once a single league is selected, and
+          never for the "International" pseudo-league (national teams have no
+          table). Streams in separately so it can't delay the fixture grid. */}
+      {league && league !== INTERNATIONAL_LEAGUE && (
+        <Suspense fallback={<div className="card p-5 h-64 animate-pulse bg-pitch-800" />}>
+          <LeagueStandings league={league} />
+        </Suspense>
+      )}
     </div>
   );
 }

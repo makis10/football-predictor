@@ -74,6 +74,55 @@ def same_club(home: str, away: str) -> bool:
     return _slug(strip_youth(home)[0]) == _slug(strip_youth(away)[0])
 
 
+# ── The one place fixtures are checked against the training data ──────────────
+
+def known_team_names() -> frozenset[str]:
+    """Team names as they appear in the training CSVs — the canonical spelling.
+
+    Elo, form and every rolling feature are keyed on these, so a fixture stored
+    under any other spelling is invisible to the model. Cached; the CSVs don't
+    change within a run.
+    """
+    import os
+
+    from backend.app.ml.features import load_raw_csvs
+
+    global _KNOWN_CACHE
+    if _KNOWN_CACHE is None:
+        root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+        h = load_raw_csvs(os.path.join(root, "backend", "data", "raw"))
+        _KNOWN_CACHE = frozenset(set(h["home_team"]) | set(h["away_team"]))
+    return _KNOWN_CACHE
+
+
+_KNOWN_CACHE: frozenset[str] | None = None
+
+
+def warn_unknown_teams(fixtures: list[dict], *, domestic: bool) -> set[str]:
+    """Print a warning for every fixture team missing from the training data and
+    return the offending names.
+
+    A DOMESTIC-league team that isn't in the CSVs is almost always a name we
+    failed to map (the "Bayer Leverkusen"/"AC Milan" phantom-team bug): it gets
+    default features (Elo 1500, junk prediction) and splits the real club's
+    record. For cup fetchers (`domestic=False`) an unknown is usually a genuine
+    minnow we have no history for, so it's reported quietly as an FYI, not a bug.
+    """
+    known = known_team_names()
+    unknown = {
+        t for f in fixtures for t in (f.get("home_team"), f.get("away_team"))
+        if t and t not in known
+    }
+    if unknown:
+        tag = "[warn]" if domestic else "[info]"
+        why = ("not in training data — likely an unmapped name; add it to TEAM_MAP"
+               if domestic else "no training history — will use default features")
+        sample = ", ".join(sorted(unknown)[:20])
+        print(f"  {tag} {len(unknown)} unresolved team(s) — {why}: {sample}"
+              + (" …" if len(unknown) > 20 else ""))
+    return unknown
+
+
 # Legal / corporate affixes that decorate a club name without changing which
 # club it is: "1. FC Heidenheim" is Heidenheim, "SC Freiburg" is Freiburg.
 # Containment is only accepted when everything left over after removing our

@@ -26,7 +26,9 @@ function topPick(m: Match): { label: string; prob: number } | null {
 }
 
 export default function TopPicks({ matches }: Props) {
-  const withPreds = matches.filter((m) => m.prediction);
+  // Exclude no-history fixtures: their default-derived probs are identical and
+  // meaningless, so they must never surface as a "top pick".
+  const withPreds = matches.filter((m) => m.prediction && !m.prediction.insufficient_data);
   if (withPreds.length === 0) return null;
 
   // Rank by max result-probability, NOT by confidence tier: club and national

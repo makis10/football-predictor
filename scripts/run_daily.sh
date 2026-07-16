@@ -55,6 +55,11 @@ echo "════════════════════════�
 echo " $(date '+%Y-%m-%d %H:%M:%S')  Daily run" >> "$LOG"
 echo "══════════════════════════════════════════" >> "$LOG"
 
+# Where THIS run starts in the log — the phantom-team alert at the end scans
+# only from here, so yesterday's (already handled) warnings can't re-fire it.
+# tr strips macOS wc's leading padding, which breaks `tail -n +N`.
+RUN_START_LINE=$(wc -l < "$LOG" | tr -d ' ')
+
 cd "$PROJ_DIR"
 
 # Set to 1 whenever a step below fails, so the heartbeat doesn't report
@@ -115,6 +120,17 @@ docker compose exec -T backend \
         --key "${ODDS_API_KEY:-}" \
         --no-predictions \
     2>&1 | tee -a "$LOG" || overall_failed=1
+
+# ── 4b. Greek SL fixtures from API-Football (league 197) ─────────────────────
+# The Odds API's Greek key goes inactive out of season, leaving the Super League
+# with no upcoming fixtures — and therefore no long-term projection — between
+# seasons. API-Football publishes the new-season schedule weeks earlier, so this
+# lights up the projection sooner. Greece is our primary market. Non-fatal.
+echo "" >> "$LOG"
+echo "[4b/6] Refreshing Greek SL fixtures (API-Football) …" | tee -a "$LOG"
+docker compose exec -T backend \
+    python scripts/fetch_greek_apifootball.py --days-ahead 120 --days-back 5 \
+    2>&1 | tee -a "$LOG" || echo "  [warn] Greek API-Football fetch failed — continuing" | tee -a "$LOG"
 
 # ── 5. Refresh European fixtures (CL/EL/ECL, incl. qualifiers — API-Football) ─
 # Ingest-only: upcoming ties are inserted and finished ones get their score.
@@ -378,6 +394,42 @@ echo "[9b/9] Warming analysis cache …" | tee -a "$LOG"
 docker compose exec -T backend \
     python scripts/warmup_analysis.py --days 2 \
     2>&1 | tee -a "$LOG" || echo "  [warn] warm-up failed — pages still work, just cold" | tee -a "$LOG"
+
+# League tables + season Monte Carlo (title / Europe / relegation odds). Both
+# only change when a result lands, which today's steps have just written — so
+# recompute now rather than making the first visitor of the day wait ~2s per
+# league for the simulation.
+echo "" >> "$LOG"
+echo "[9c/9] Warming league tables + season projections …" | tee -a "$LOG"
+docker compose exec -T backend \
+    python scripts/warmup_standings.py \
+    2>&1 | tee -a "$LOG" || echo "  [warn] standings warm-up failed — pages still work, just cold" | tee -a "$LOG"
+
+# One dated snapshot per competition of the title/champion odds (model + market
+# where offered) → the odds-over-time chart on /projections. Re-writes the
+# projection cache enriched with the bookmaker column, so it runs AFTER the
+# warm-up above.
+echo "" >> "$LOG"
+echo "[9d/9] Snapshotting projection odds (model vs market) …" | tee -a "$LOG"
+docker compose exec -T backend \
+    python scripts/snapshot_projections.py \
+    2>&1 | tee -a "$LOG" || echo "  [warn] projection snapshot failed — chart just won't gain a point today" | tee -a "$LOG"
+
+# ── Phantom-team alert ────────────────────────────────────────────────────────
+# The name guards print "[warn] N unresolved team(s)" when a DOMESTIC fixture
+# names a club missing from the training data — which is how "Bayer Leverkusen"
+# and the whole promoted Championship cohort became phantom teams (Elo 1500,
+# junk predictions, split league tables). Buried in the log those warnings went
+# unseen for days; this surfaces them as a macOS notification the same morning.
+# Only THIS run's lines are scanned (tail from RUN_START_LINE). [info] lines
+# (cup minnows with no history — expected) don't fire it.
+PHANTOM_WARNS=$(tail -n "+$((RUN_START_LINE + 1))" "$LOG" \
+    | grep -cE '\[warn\].*(unresolved team|not in the training data)' || true)
+if [ "${PHANTOM_WARNS:-0}" -gt 0 ]; then
+    echo "[alert] $PHANTOM_WARNS unresolved-team warning(s) this run — check TEAM_MAP" | tee -a "$LOG"
+    osascript -e "display notification \"${PHANTOM_WARNS} unresolved team warning(s) — δες daily.log και πρόσθεσε TEAM_MAP entries\" with title \"⚠️ Football Predictor\" sound name \"Basso\"" \
+        2>/dev/null || true
+fi
 
 echo "" >> "$LOG"
 echo "Daily run complete at $(date '+%Y-%m-%d %H:%M:%S')" | tee -a "$LOG"

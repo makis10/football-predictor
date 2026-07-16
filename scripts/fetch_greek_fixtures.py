@@ -114,6 +114,11 @@ def insert_fixtures(db, fixtures: list[dict]) -> list:
 
     No pruning here: The Odds API feed only lists matches with active odds
     (~8 days out), so absence from the feed doesn't mean cancelled."""
+    # Greek SL is a training league — an unmapped Odds-API spelling becomes a
+    # phantom team, so flag it (see the Bayer Leverkusen / AC Milan bug).
+    from scripts.team_resolver import warn_unknown_teams
+    warn_unknown_teams(fixtures, domestic=True)
+
     from scripts.fixture_upsert import upsert_fixtures
     new_matches, _ = upsert_fixtures(db, fixtures)
     return new_matches

@@ -22,7 +22,8 @@ from datetime import date, datetime, timedelta, timezone
 
 import requests
 
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))  # project root
+_PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+sys.path.insert(0, _PROJECT_ROOT)  # project root
 
 # ── Competition config ────────────────────────────────────────────────────────
 
@@ -116,16 +117,28 @@ TEAM_MAP: dict[str, str] = {
     "Paris":            "Paris SG",
     "Dortmund":         "Dortmund",
     "Real":             "Real Madrid",
-    "Milan":            "AC Milan",
-    "Leverkusen":       "Bayer Leverkusen",
+    # NOTE: do NOT map "Milan" → "AC Milan" or "Leverkusen" → "Bayer Leverkusen".
+    # This map's direction is API shortName → OUR CSV name, and the CSV name is
+    # the short one. Those two entries were inverted: they rewrote a correct name
+    # into one that exists nowhere in the training data, so the club was split in
+    # two (Leverkusen 99 matches + "Bayer Leverkusen" 6) — a phantom team with no
+    # history, hence Elo 1500 and junk predictions for its upcoming fixtures.
+    "Ipswich Town":     "Ipswich",
 
-    # Championship
-    "Sheffield Wed":    "Sheffield Wednesday",
+    # Championship — direction is API shortName → CSV name, and the CSVs use the
+    # SHORT form. "Coventry"→"Coventry City" / "Hull"→"Hull City" /
+    # "Sheffield Wed"→"Sheffield Wednesday" were inverted (same phantom-team bug
+    # as Leverkusen/Milan): they rewrote the correct CSV name into one with no
+    # history, so the club got Elo 1500 and its league record split in two.
+    "Sheffield Wed":    "Sheffield Weds",
+    "Sheffield Utd":    "Sheffield United",
     "Middlesbrough":    "Middlesbrough",
-    "Coventry":         "Coventry City",
-    "Hull":             "Hull City",
+    "Coventry City":    "Coventry",
+    "Hull City":        "Hull",
+    "Preston NE":       "Preston",
+    "Lincoln City":     "Lincoln",
+    "Derby County":     "Derby",
     "QPR":              "QPR",
-    "Preston":          "Preston",
     "Millwall":         "Millwall",
 
     # Primeira Liga
@@ -323,6 +336,11 @@ def main():
     print(f"\nFetching fixtures for the next {args.days} days …")
     fixtures = fetch_fixtures(args.key, args.days)
     print(f"\nTotal: {len(fixtures)} fixtures fetched across {len(COMPETITIONS)} leagues.\n")
+
+    # These are all top-division leagues we train on, so an unmapped name is a
+    # bug (phantom team), not a new minnow — hence domestic=True.
+    from scripts.team_resolver import warn_unknown_teams
+    warn_unknown_teams(fixtures, domestic=True)
 
     db = SessionLocal()
     try:

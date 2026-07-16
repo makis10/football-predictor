@@ -156,6 +156,17 @@ def predict_fixture(
     # BTTS
     p_btts = float(_apply_calibration_binary(models["model_btts"], models["cal_btts"], X)[0])
 
+    # Coherence projection: the result/goals/BTTS models are independent and can
+    # contradict each other (e.g. Over 57% with NG 53% — impossible outside a
+    # 3-0 blowout). Project all headline probabilities onto the nearest mutually
+    # consistent set via the fitted score matrix; feasible inputs pass through
+    # unchanged, contradictions get the best compromise.
+    from backend.app.ml.poisson import project_probs_coherent
+    _proj = project_probs_coherent(p_home, p_draw, p_away, p_over, p_btts)
+    if _proj:
+        p_home, p_draw, p_away = _proj["home"], _proj["draw"], _proj["away"]
+        p_over, p_btts = _proj["over"], _proj["btts"]
+
     prediction = max(["H", "D", "A"], key=lambda x: {"H": p_home, "D": p_draw, "A": p_away}[x])
     p_max = max(p_home, p_draw, p_away)
 

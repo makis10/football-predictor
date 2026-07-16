@@ -281,6 +281,38 @@ def fit_lambdas_to_probs(
     return lam_h, lam_a, 0.0, diag, diag0
 
 
+def project_probs_coherent(
+    p_home: float,
+    p_draw: float,
+    p_away: float,
+    p_over: float,
+    p_btts: "float | None" = None,
+) -> "dict | None":
+    """
+    Project independently-modelled headline probabilities onto the nearest
+    MUTUALLY CONSISTENT set, via the fitted score matrix.
+
+    The result/goals/BTTS classifiers are trained separately and can emit
+    impossible combinations (e.g. Over 57% with NG 53%, though Over without
+    BTTS requires a 3-0-style blowout — bounded at ~9%). Fitting the matrix to
+    all targets at once finds the best compromise; reading the headline numbers
+    BACK from that matrix guarantees coherence. Feasible inputs round-trip
+    unchanged (fit error < 1e-3), so this is a no-op except in contradictions.
+
+    Returns {home, draw, away, over, btts} or None when the fit is degenerate.
+    """
+    fit = fit_lambdas_to_probs(p_home, p_away, p_over, p_btts)
+    if not fit:
+        return None
+    lam_h, lam_a, rho, diag, diag0 = fit
+    s = _matrix_summary(_score_matrix(lam_h, lam_a, rho, diag, diag0))
+    return {
+        "home": s["home_win"], "draw": s["draw"], "away": s["away_win"],
+        "over": s["over_2_5"],
+        "btts": s["btts"] if p_btts is not None else None,
+    }
+
+
 def compute_extended_poisson_stats(
     lambda_home: float,
     lambda_away: float,

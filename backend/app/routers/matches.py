@@ -75,6 +75,7 @@ def _adjust_prediction_embed(match_id: int, pred, league: "str | None" = None) -
         confidence=confidence,
         suggested_market=pred.suggested_market,
         ev_score=pred.ev_score,
+        insufficient_data=bool(getattr(pred, "insufficient_data", False)),
     )
 
 VALID_LEAGUES = {
