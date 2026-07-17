@@ -1,15 +1,25 @@
-"""Unified imputation artifact + parametrized national Elo blend."""
+"""Unified imputation artifact + parametrized national Elo blend.
+
+Model artifacts (backend/data/models/*) are gitignored — they only exist after
+a local retrain, NEVER in a fresh CI checkout. So artifact-dependent assertions
+are guarded with pytest.skip; the artifact-free behaviour (graceful fallback,
+caching, the pure Elo math) is always tested.
+"""
 import json
 import os
+
+import pytest
 
 from backend.app.ml.predict import get_impute_medians, MODELS_DIR
 from backend.app.ml.national.features import elo_three_way
 
+_MEDIANS_PATH = os.path.join(MODELS_DIR, "impute_medians.json")
 
-def test_impute_medians_artifact_exists_and_sane():
-    path = os.path.join(MODELS_DIR, "impute_medians.json")
-    assert os.path.exists(path), "impute_medians.json missing — retrain must write it"
-    d = json.load(open(path))
+
+def test_impute_medians_artifact_sane_when_present():
+    if not os.path.exists(_MEDIANS_PATH):
+        pytest.skip("impute_medians.json absent (no local retrain / fresh CI checkout)")
+    d = json.load(open(_MEDIANS_PATH))
     assert len(d) >= 20
     # Regression guard for the train/serve skew this artifact fixes: shots
     # median must be the training value (~4.2), never the legacy 0.0 serve fill.
@@ -17,12 +27,17 @@ def test_impute_medians_artifact_exists_and_sane():
     assert 0.8 < d["poisson_lambda_home"] < 2.0
 
 
-def test_get_impute_medians_loads_and_caches():
+def test_get_impute_medians_caches_and_is_graceful():
+    # Loader must be safe both ways: returns a dict, cached singleton, all floats.
+    # When the artifact is absent it returns {} (never raises) — the serve path
+    # relies on that fallback.
     m1 = get_impute_medians()
     m2 = get_impute_medians()
-    assert m1 is m2                      # cached singleton
-    assert m1["h_shots_ot_5"] > 3.0
+    assert m1 is m2                                  # cached singleton
+    assert isinstance(m1, dict)
     assert all(isinstance(v, float) for v in m1.values())
+    if os.path.exists(_MEDIANS_PATH):
+        assert m1["h_shots_ot_5"] > 3.0              # training value, not legacy 0.0
 
 
 def test_elo_three_way_sums_to_one_and_orders():
