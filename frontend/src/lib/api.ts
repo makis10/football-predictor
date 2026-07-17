@@ -54,6 +54,8 @@ export interface Match {
   away_goals: number | null;
   result: "H" | "D" | "A" | null;
   created_at: string;
+  /** European tie round, e.g. "2nd Qualifying Round" (null for domestic leagues). */
+  round?: string | null;
   /** Present when the matches endpoint is called with include_predictions=true */
   prediction?: PredictionEmbed | null;
 }

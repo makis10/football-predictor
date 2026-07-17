@@ -90,10 +90,22 @@ def _api_name(db, our_name: str) -> str | None:
                      {"t": target}).fetchone()
     if hit:
         return target
-    # Slug match against distinct stored teams.
-    for (stored,) in db.execute(text("SELECT DISTINCT team FROM team_match_stats")).fetchall():
+    stored_names = [s for (s,) in db.execute(
+        text("SELECT DISTINCT team FROM team_match_stats")).fetchall()]
+    # Exact slug match.
+    for stored in stored_names:
         if _slug(stored) == tslug:
             return stored
+    # Uniqueness-guarded containment: recover "Roma"→"AS Roma", "Stoke"→
+    # "Stoke City", "Vallecano"→"Rayo Vallecano". Only accept when EXACTLY ONE
+    # stored name contains/is-contained-by ours — otherwise it's ambiguous
+    # ("Roma" also matches "Romania") and a wrong match is worse than None.
+    # The ≥5-char guard blocks short-slug noise.
+    if len(tslug) >= 5:
+        cands = [s for s in stored_names
+                 if tslug in _slug(s) or _slug(s) in tslug]
+        if len(cands) == 1:
+            return cands[0]
     return None
 
 
@@ -142,11 +154,15 @@ def club_team_props(db, home: str, away: str) -> dict | None:
     acards = _team_rate(db, aa, "COALESCE(yellow_cards,0)+COALESCE(red_cards,0)") if aa else None
     if hc is None and ac is None and hcards is None and acards is None:
         return None
-    total_corners = (hc or 0) + (ac or 0)
+    # Over/Under 9.5 needs the MATCH total — only meaningful when BOTH teams'
+    # corner rates are known. With one side missing (e.g. a name-map miss) the
+    # "total" is half a match and the probability is garbage (e.g. 4%), so
+    # return None instead of a misleading number.
+    both_corners = hc is not None and ac is not None
     return {
         "exp_home_corners": round(hc, 1) if hc is not None else None,
         "exp_away_corners": round(ac, 1) if ac is not None else None,
-        "corners_over_9_5_prob": round(corners_over_prob(total_corners), 3) if (hc or ac) else None,
+        "corners_over_9_5_prob": round(corners_over_prob(hc + ac), 3) if both_corners else None,
         "exp_home_cards": round(hcards, 1) if hcards is not None else None,
         "exp_away_cards": round(acards, 1) if acards is not None else None,
     }

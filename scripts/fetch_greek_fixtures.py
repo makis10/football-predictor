@@ -9,14 +9,14 @@ The script:
   1. Calls GET /v4/sports/soccer_greece_super_league/events  (no odds, just fixtures).
   2. Maps The Odds API team names to our training-data names.
   3. Inserts upcoming fixtures into the DB, skipping duplicates.
-  4. Optionally computes ML predictions.
+  4. Fetch-only — predictions are computed by compute_predictions.py.
 
 API usage: 1 request per run — well within the 500 req/month free limit.
 Safe to run multiple times (idempotent).
 
 Usage (inside the backend container):
   python scripts/fetch_greek_fixtures.py
-  python scripts/fetch_greek_fixtures.py --no-predictions
+  python scripts/fetch_greek_fixtures.py   # --no-predictions accepted but a no-op
 """
 
 from __future__ import annotations
@@ -124,118 +124,6 @@ def insert_fixtures(db, fixtures: list[dict]) -> list:
     return new_matches
 
 
-def compute_predictions(new_matches: list, db):
-    """Run ML inference for each new Greek SL fixture."""
-    import pandas as pd
-    from sqlalchemy.dialects.postgresql import insert as pg_insert
-    from backend.app.ml.features import load_raw_csvs, build_team_snapshot, compute_match_features, FEATURE_COLS
-    from backend.app.ml.predict import _get_models, MODEL_VERSION, _confidence, confidence_for
-    from backend.app.models.prediction import Prediction
-    from backend.app.ml.odds_analysis_service import fetch_all_league_odds, _teams_match
-
-    RAW_DIR = os.path.join(_PROJECT_ROOT, "backend", "data", "raw")
-    print(f"  Loading history …")
-    history_df = load_raw_csvs(RAW_DIR)
-    snapshot = build_team_snapshot(history_df)
-    result_model, goals_model = _get_models()
-
-    # Fetch live odds for GreekSL (one API call; empty list if unavailable)
-    greek_odds = fetch_all_league_odds("GreekSL")
-    print(f"  GreekSL live odds: {len(greek_odds)} games")
-
-    DEFAULTS = {
-        "h_goals_scored_5": 1.5, "h_goals_conceded_5": 1.5,
-        "a_goals_scored_5": 1.5, "a_goals_conceded_5": 1.5,
-        "h_home_scored_5": 1.5, "h_home_conceded_5": 1.5,
-        "a_away_scored_5": 1.5, "a_away_conceded_5": 1.5,
-        "h_form_5": 1.0, "a_form_5": 1.0,
-        "h_goals_scored_10": 1.5, "h_goals_conceded_10": 1.5,
-        "a_goals_scored_10": 1.5, "a_goals_conceded_10": 1.5,
-        "h_home_scored_10": 1.5, "h_home_conceded_10": 1.5,
-        "a_away_scored_10": 1.5, "a_away_conceded_10": 1.5,
-        "h_form_10": 1.0, "a_form_10": 1.0,
-        "h_goal_diff_5": 0.0, "a_goal_diff_5": 0.0,
-        "h_goal_diff_10": 0.0, "a_goal_diff_10": 0.0,
-        "expected_home_goals_5": 1.5, "expected_away_goals_5": 1.5, "expected_goals_5": 3.0,
-        "expected_home_goals_10": 1.5, "expected_away_goals_10": 1.5, "expected_goals_10": 3.0,
-        "h_total_goals_5": 3.0, "a_total_goals_5": 3.0,
-        "h_total_goals_10": 3.0, "a_total_goals_10": 3.0,
-        "h_over25_rate_5": 0.5, "a_over25_rate_5": 0.5,
-        "h_over25_rate_10": 0.5, "a_over25_rate_10": 0.5,
-        "h_shots_ot_5": 0.0, "h_shots_otc_5": 0.0,
-        "a_shots_ot_5": 0.0, "a_shots_otc_5": 0.0,
-        "h_xg_scored_5": 1.35,   "h_xg_conceded_5": 1.35,
-        "a_xg_scored_5": 1.35,   "a_xg_conceded_5": 1.35,
-        "h_xg_scored_10": 1.35,  "h_xg_conceded_10": 1.35,
-        "a_xg_scored_10": 1.35,  "a_xg_conceded_10": 1.35,
-        "market_home_prob": 0.44, "market_draw_prob": 0.27,
-        "market_away_prob": 0.29, "market_over_prob": 0.52,
-        "h_elo": 1500.0, "a_elo": 1500.0,
-        "elo_diff": 0.0, "elo_home_win_prob": 0.5,
-        "h_pi_att": 0.0, "h_pi_def": 0.0,
-        "a_pi_att": 0.0, "a_pi_def": 0.0,
-        "pi_att_diff": 0.0, "pi_def_diff": 0.0,
-        "pi_exp_home": 1.5, "pi_exp_away": 1.5,
-        "pi_exp_diff": 0.0, "pi_exp_total": 3.0,
-        "h2h_home_wins": 0, "h2h_away_wins": 0, "h2h_draws": 0,
-        "h_eur_fatigue": 0.0, "a_eur_fatigue": 0.0,
-        "h_eur_away": 0.0, "a_eur_away": 0.0,
-        "h_eur_result": 0.0, "a_eur_result": 0.0,
-    }
-
-    def _lookup_greek_odds(home, away):
-        for entry in greek_odds:
-            if _teams_match(entry["api_home"], home) and _teams_match(entry["api_away"], away):
-                fp = entry["fair_probs"]
-                if fp.get("home_win") and fp.get("away_win"):
-                    return {"home_win": fp.get("home_win"), "draw": fp.get("draw"),
-                            "away_win": fp.get("away_win"), "over_2_5": fp.get("over_2_5")}
-        return None
-
-    inserted = 0
-    for match in new_matches:
-        try:
-            live_odds = _lookup_greek_odds(match.home_team, match.away_team)
-            feats = compute_match_features(
-                snapshot,
-                match.home_team,
-                match.away_team,
-                match.league,
-                match.match_date,
-                european_df=None,
-                market_probs=live_odds,
-            )
-            feat_row = pd.DataFrame([feats])[FEATURE_COLS].fillna(DEFAULTS)
-
-            result_probs = result_model.predict_proba(feat_row)[0]
-            home_win_p = float(result_probs[0])
-            draw_p     = float(result_probs[1])
-            away_win_p = float(result_probs[2])
-
-            goals_probs = goals_model.predict_proba(feat_row)[0]
-            over_p      = float(goals_probs[1])
-            goals_pred  = "OVER" if over_p >= 0.5 else "UNDER"
-            max_prob    = max(home_win_p, draw_p, away_win_p)
-
-            stmt = pg_insert(Prediction).values(
-                match_id=match.id,
-                home_win_prob=round(home_win_p, 4),
-                draw_prob=round(draw_p, 4),
-                away_win_prob=round(away_win_p, 4),
-                over_2_5_prob=round(over_p, 4),
-                goals_prediction=goals_pred,
-                model_version=MODEL_VERSION,
-                confidence=confidence_for("GreekSL", max_prob, over_p),
-            ).on_conflict_do_nothing(index_elements=["match_id"])
-            db.execute(stmt)
-            inserted += 1
-        except Exception as e:
-            print(f"    [warn] {match.home_team} vs {match.away_team}: {e}")
-
-    db.commit()
-    print(f"  Predictions computed: {inserted} / {len(new_matches)}")
-
-
 def main():
     parser = argparse.ArgumentParser(
         description="Fetch upcoming Greek SL fixtures via The Odds API"
@@ -247,7 +135,7 @@ def main():
     )
     parser.add_argument(
         "--no-predictions", action="store_true",
-        help="Skip ML prediction computation",
+        help="Deprecated no-op (kept for backward-compat); this script is fetch-only",
     )
     args = parser.parse_args()
 
@@ -271,14 +159,12 @@ def main():
     db = SessionLocal()
     try:
         new_matches = insert_fixtures(db, fixtures)
-
-        if new_matches and not args.no_predictions:
-            print(f"\nComputing predictions for {len(new_matches)} new fixtures …")
-            compute_predictions(new_matches, db)
-        elif args.no_predictions:
-            print("Skipping predictions (--no-predictions).")
-        else:
-            print("No new fixtures to predict.")
+        # Fetch-only. Predictions come exclusively from scripts/compute_predictions.py
+        # (the single canonical path: calibration + draw/BTTS specialists + Poisson λ +
+        # value gate). The old in-script predictor produced inferior, uncalibrated
+        # rows without BTTS/λ and was removed 2026-07-17.
+        print(f"\n{len(new_matches)} new fixture(s) inserted. "
+              f"Predictions are computed by compute_predictions.py.")
     finally:
         db.close()
 

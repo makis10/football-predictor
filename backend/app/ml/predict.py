@@ -389,6 +389,10 @@ def predict_match(
             "gg_probability": round(gg_prob, 4),
             "prediction":     btts_prediction,
         },
+        # Poisson λ — persisted with the prediction so serve-time extended stats
+        # (O/U 1.5/3.5, correct scores, combos) work for on-the-fly rows too.
+        "poisson_lambda_home": round(float(feat_dict.get("poisson_lambda_home", 1.5)), 4),
+        "poisson_lambda_away": round(float(feat_dict.get("poisson_lambda_away", 1.2)), 4),
         "model_version": MODEL_VERSION,
         "confidence":    confidence_for(league, max_result_prob, over_p),
     }

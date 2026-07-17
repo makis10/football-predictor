@@ -110,6 +110,9 @@ def _build_match_context(db: Session) -> str:
         select(Match, Prediction)
         .join(Prediction, Prediction.match_id == Match.id)   # INNER — skip no-pred rows
         .where(Match.result.is_(None))
+        # Skip no-history fixtures: their default-derived probs are identical and
+        # meaningless — the LLM must not present them as recommendations.
+        .where(Prediction.insufficient_data.is_(False))
         .where(Match.match_date >= today)
         .where(Match.match_date <= horizon)
         .order_by(Match.match_date.asc(), Match.id.asc())

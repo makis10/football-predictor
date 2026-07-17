@@ -47902,11 +47902,6 @@ date,home_team,away_team,team,scorer,minute,own_goal,penalty
 2026-07-15,England,Argentina,England,Anthony Gordon,55.0,False,False
 2026-07-15,England,Argentina,Argentina,Enzo Fernández,85.0,False,False
 2026-07-15,England,Argentina,Argentina,Lautaro Martínez,90.0,False,False
-2026-07-06,Mexico,England,Mexico,Raúl Jiménez,,False,False
-2026-07-06,Mexico,England,Mexico,Julián Quiñones,,False,False
-2026-07-06,Mexico,England,England,Jude Bellingham,,False,False
-2026-07-06,Mexico,England,England,Jude Bellingham,,False,False
-2026-07-06,Mexico,England,England,Harry Kane,,False,False
 2026-07-07,Belgium,United States,United States,Malik Tillman,,False,False
 2026-07-07,United States,Belgium,Belgium,Charles De Ketelaere,,False,False
 2026-07-07,United States,Belgium,Belgium,Charles De Ketelaere,,False,False
@@ -47916,8 +47911,23 @@ date,home_team,away_team,team,scorer,minute,own_goal,penalty
 2026-07-12,Argentina,Switzerland,Argentina,Julián Alvarez,,False,False
 2026-07-12,Argentina,Switzerland,Argentina,Lautaro Martínez,,False,False
 2026-07-12,Argentina,Switzerland,Switzerland,Dan Ndoye,,False,False
-2026-07-06,IF Brommapojkarna,Gais,IF Brommapojkarna,Oliver Berg,,False,False
-2026-07-06,IF Brommapojkarna,Gais,Gais,Henry Sletsjoe,,False,False
 2026-07-14,Gyori ETO FC,Vikingur Reykjavik,Gyori ETO FC,Milán Vitális,,False,False
 2026-07-14,Gyori ETO FC,Vikingur Reykjavik,Vikingur Reykjavik,Daniel Hafsteinsson,,False,False
 2026-07-14,Gyori ETO FC,Vikingur Reykjavik,Vikingur Reykjavik,Daniel Hafsteinsson,,False,False
+2026-07-16,Botafogo,Santos,Botafogo,Lucas Emanuel,,False,False
+2026-07-16,Botafogo,Santos,Botafogo,Kadir Barría,,False,False
+2026-07-16,Botafogo,Santos,Santos,Álvaro Barreal,,False,False
+2026-07-12,Hammarby FF,Kalmar FF,Hammarby FF,Paulos Abraham,,False,False
+2026-07-14,Larne,Tre Fiori,Larne,D. Bent,,False,False
+2026-07-14,Larne,Tre Fiori,Larne,M. Ridley,,False,False
+2026-07-14,Levski Sofia,Borac Banja Luka,Levski Sofia,A. Oko-Flex,,False,False
+2026-07-14,Levski Sofia,Borac Banja Luka,Levski Sofia,Reinaldo,,False,False
+2026-07-14,Levski Sofia,Borac Banja Luka,Levski Sofia,Reinaldo,,False,False
+2026-07-14,Levski Sofia,Borac Banja Luka,Levski Sofia,J. Perea,,False,False
+2026-07-14,Shamrock Rovers,Floriana,Floriana,T. Gudelj,,False,False
+2026-07-14,Shamrock Rovers,Floriana,Shamrock Rovers,L. Grace,,False,False
+2026-07-14,Shamrock Rovers,Floriana,Shamrock Rovers,D. Watts,,False,False
+2026-07-14,Shamrock Rovers,Floriana,Shamrock Rovers,J. Byrne,,False,False
+2026-07-14,Shamrock Rovers,Floriana,Shamrock Rovers,J. McGovern,,False,False
+2026-07-14,Shamrock Rovers,Floriana,Shamrock Rovers,G. Burke,,False,False
+2026-07-16,Vitoria,Vasco DA Gama,Vitoria,Renato Kayzer,,False,False

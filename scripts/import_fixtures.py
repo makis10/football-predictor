@@ -83,6 +83,10 @@ def _compute_predictions(match_ids: list[int]) -> None:
                     away_win_prob=result["win_probabilities"]["away_win"],
                     over_2_5_prob=result["goals"]["over_2_5_probability"],
                     goals_prediction=result["goals"]["prediction"],
+                    btts_prob=result["btts"]["gg_probability"],
+                    btts_prediction=result["btts"]["prediction"],
+                    poisson_lambda_home=result.get("poisson_lambda_home"),
+                    poisson_lambda_away=result.get("poisson_lambda_away"),
                     model_version=result["model_version"],
                     confidence=result["confidence"],
                 ))

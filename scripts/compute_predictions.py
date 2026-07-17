@@ -443,7 +443,10 @@ for i, (mid, home, away, match_date, league) in enumerate(match_snapshots, 1):
         # Includes GG/NG (BTTS) markets alongside 1x2, Over/Under.
         suggested_market: str | None = None
         ev_score: float | None = None
-        if live_odds:
+        # No value bets on no-history fixtures: the model probs are pure defaults
+        # (identical for every such match), so any "edge" vs the odds is noise.
+        _hist_ok = _has_history(home, away)
+        if live_odds and _hist_ok:
             bm_data = {
                 "raw_odds": {
                     "home_win":  live_odds.get("raw_home"),
@@ -525,9 +528,9 @@ for i, (mid, home, away, match_date, league) in enumerate(match_snapshots, 1):
                 "model_version":    MODEL_VERSION,
                 # Both teams unknown → pure-default features → not a real
                 # prediction (identical for every such fixture). Flag it.
-                "insufficient_data": not _has_history(home, away),
+                "insufficient_data": not _hist_ok,
                 "confidence":       confidence_for(league, max_result_prob, over_p,
-                                                   has_history=_has_history(home, away)),
+                                                   has_history=_hist_ok),
                 # Store bookmaker odds for ROI/EV tracking (NULL when unavailable)
                 "bm_home_odds":     live_odds.get("raw_home")     if live_odds else None,
                 "bm_draw_odds":     live_odds.get("raw_draw")     if live_odds else None,

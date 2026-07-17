@@ -28,6 +28,7 @@ class MatchBase(BaseModel):
     kickoff_time: Optional[time] = None  # UTC scheduled kick-off; NULL if unknown
     home_team: str
     away_team: str
+    round: Optional[str] = None           # e.g. "1st Qualifying Round" (European ties only)
 
 
 class MatchResponse(MatchBase):
