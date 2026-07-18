@@ -8,20 +8,37 @@ function fmtRoi(v: number | null): string {
   return v == null ? "—" : `${v >= 0 ? "+" : ""}${v.toFixed(1)}%`;
 }
 
-export default async function MarketRecordPage() {
+type PageProps = {
+  // Next 15+: searchParams is a Promise.
+  searchParams: Promise<{ source?: string }>;
+};
+
+export default async function MarketRecordPage({ searchParams }: PageProps) {
   const session = await getSession();
   if (!(session?.user as any)?.isAdmin) redirect("/");
 
-  const res = await fetchWithAuth("/admin/market-record");
+  const source = (await searchParams).source === "club" ? "club" : "national";
+  const res = await fetchWithAuth(`/admin/market-record?source=${source}`);
   const data: MarketRecord | null = res.ok ? await res.json() : null;
+
+  const tabCls = (active: boolean) =>
+    `px-3 py-1.5 rounded-lg text-sm font-medium ${
+      active ? "bg-pitch-700 text-gray-100" : "text-gray-400 hover:text-gray-200"
+    }`;
 
   return (
     <div className="space-y-6">
       <div>
         <h1 className="text-2xl font-bold">Market Record</h1>
-        <p className="text-sm text-gray-500 mt-1">
-          Shadow-tracked new-model record per market (national). A market promotes to a
-          headline suggestion at ≥{data?.min_samples ?? 30} settled tickets with ROI ≥{" "}
+        <div className="mt-3 inline-flex gap-1 rounded-xl border border-pitch-700 bg-pitch-900 p-1">
+          <a href="/admin/markets?source=national" className={tabCls(source === "national")}>National</a>
+          <a href="/admin/markets?source=club" className={tabCls(source === "club")}>Club</a>
+        </div>
+        <p className="text-sm text-gray-500 mt-3">
+          Shadow-tracked new-model record per market ({source}), over the most-recent{" "}
+          {data?.rolling_window ?? 40} settled tickets (rolling window — old results age out,
+          so a demoted market can recover on recent form). A market promotes to a headline
+          suggestion at ≥{data?.min_samples ?? 30} settled with ROI ≥{" "}
           {data?.roi_floor_pct ?? 0}%. Base markets demote to watch early at ≥
           {data?.demote_min_samples ?? 15} settled with ROI ≤ {data?.demote_roi_ceil_pct ?? -20}%,
           and are held to the same ROI floor at full sample size. Since cutoff {data?.cutoff ?? "—"}.

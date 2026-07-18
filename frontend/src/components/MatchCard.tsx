@@ -9,21 +9,12 @@ import {
   leagueFlag,
   leagueLabel,
   matchHref,
+  roundLabel,
   INTERNATIONAL_LEAGUE,
 } from "@/lib/api";
 
 interface Props {
   match: Match;
-}
-
-/** Compact European round label: "1st Qualifying Round" → "Q1", "Play-off Round" → "PO".
- *  Group stage / knockout rounds and domestic (null) show nothing. */
-function roundLabel(round?: string | null): string | null {
-  if (!round) return null;
-  const m = round.match(/(\d+)(?:st|nd|rd|th)?\s+Qualifying/i);
-  if (m) return `Q${m[1]}`;
-  if (/play-?off/i.test(round)) return "PO";
-  return null;
 }
 
 export default function MatchCard({ match }: Props) {

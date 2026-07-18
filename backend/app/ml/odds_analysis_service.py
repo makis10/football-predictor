@@ -697,7 +697,35 @@ PROVEN_MIN_SAMPLES = 30             # settled tickets before a market can promot
 PROVEN_ROI_FLOOR   = 0.0            # must at least break even on the new model
 DEMOTE_MIN_SAMPLES = 15             # settled tickets before a base market can demote early
 DEMOTE_ROI_CEIL    = -0.20          # early demotion only for clear bleeders, not noise
+# Rolling evaluation window: only the most-recent N settled tickets per market
+# count toward promotion/demotion. Cumulative-since-cutoff never let a demoted
+# market recover — a market that bled early (e.g. Draw 0/16) stayed condemned no
+# matter how well it later did, because the old losses never aged out. A sliding
+# window gives a fresh second chance: as new results settle, stale ones drop out,
+# so a market re-promotes once its RECENT record clears the bar (and, symmetrically,
+# a once-good market demotes if its recent form collapses). Window ≥ PROVEN_MIN_SAMPLES
+# so a market can still reach the promotion sample size inside it.
+PROVEN_ROLLING_WINDOW = 40
 _PROVEN_TTL        = 1800           # 30 min cache
+
+
+def _window_market_records(rows) -> dict[str, dict]:
+    """Aggregate settled tickets into per-market {n, wins, pnl} over the most-recent
+    PROVEN_ROLLING_WINDOW settled tickets. `rows` must be (market, odds, res, hg, ag)
+    ordered MOST-RECENT-FIRST; once a market has WINDOW counted rows the rest (older)
+    are ignored, so the record reflects only recent form."""
+    agg: dict[str, dict] = {}
+    for market, odds, res, hg, ag in rows:
+        won = _market_won(market, res, hg, ag)
+        if won is None or not odds:
+            continue
+        a = agg.setdefault(market, {"n": 0, "wins": 0, "pnl": 0.0})
+        if a["n"] >= PROVEN_ROLLING_WINDOW:
+            continue                          # window full → drop older tickets
+        a["n"] += 1
+        a["wins"] += 1 if won else 0
+        a["pnl"] += (float(odds) - 1.0) if won else -1.0
+    return agg
 
 
 def _market_won(market: str, res: Optional[str], hg, ag) -> Optional[bool]:
@@ -733,14 +761,45 @@ def _market_is_proven(market: str, n: int, roi: Optional[float]) -> bool:
     return n >= PROVEN_MIN_SAMPLES and roi is not None and roi >= PROVEN_ROI_FLOOR
 
 
+# Per-source settled-ticket query. Club tickets carry match_id → join `matches`
+# (result + goals); national tickets carry national_prediction_id → join
+# `national_predictions`. Same shape (market, odds, result, hg, ag), ordered
+# MOST-RECENT-FIRST so _window_market_records keeps only the recent window.
+_PROVEN_SQL = {
+    "national": """
+        SELECT vb.market, vb.odds,
+               np.actual_result, np.actual_home_goals, np.actual_away_goals
+        FROM value_bets vb
+        JOIN national_predictions np ON np.id = vb.national_prediction_id
+        WHERE vb.source = 'national'
+          AND vb.created_at >= :cutoff
+          AND np.actual_result IS NOT NULL
+        ORDER BY np.match_date DESC, vb.id DESC
+    """,
+    "club": """
+        SELECT vb.market, vb.odds,
+               m.result, m.home_goals, m.away_goals
+        FROM value_bets vb
+        JOIN matches m ON m.id = vb.match_id
+        WHERE vb.source = 'club'
+          AND vb.created_at >= :cutoff
+          AND m.result IS NOT NULL
+        ORDER BY m.match_date DESC, vb.id DESC
+    """,
+}
+
+
 def proven_markets(db, source: str = "national") -> set[str]:
     """Markets allowed as headline suggestions = the base trusted set plus any
-    whose NEW-model (post-cutoff) settled record clears the bar — minus any base
-    market whose post-cutoff record has demoted it. Cached 30 min.
+    whose NEW-model record over the most-recent PROVEN_ROLLING_WINDOW settled
+    tickets clears the bar — minus any base market whose recent record has
+    demoted it. Cached 30 min.
 
-    Only implemented for the national ledger; other sources keep the static set
-    (their gate passes no `suggestable`, so this isn't consulted)."""
-    if source != "national":
+    Implemented for both the `national` and `club` ledgers (same promotion/
+    demotion rule, different result join); any other source keeps the static
+    base set."""
+    sql = _PROVEN_SQL.get(source)
+    if sql is None:
         return set(BASE_SUGGESTABLE)
     ck = f"proven_markets:{source}"
     cached = cache_get(ck)
@@ -750,29 +809,13 @@ def proven_markets(db, source: str = "national") -> set[str]:
     from sqlalchemy import text
     proven = set(BASE_SUGGESTABLE)
     try:
-        rows = db.execute(text("""
-            SELECT vb.market, vb.odds,
-                   np.actual_result, np.actual_home_goals, np.actual_away_goals
-            FROM value_bets vb
-            JOIN national_predictions np ON np.id = vb.national_prediction_id
-            WHERE vb.source = 'national'
-              AND vb.created_at >= :cutoff
-              AND np.actual_result IS NOT NULL
-        """), {"cutoff": NEW_MODEL_CUTOFF}).fetchall()
+        rows = db.execute(text(sql), {"cutoff": NEW_MODEL_CUTOFF}).fetchall()
     except Exception:
         return proven
 
-    agg: dict[str, list] = {}   # market → [n, pnl]
-    for market, odds, res, hg, ag in rows:
-        won = _market_won(market, res, hg, ag)
-        if won is None or not odds:
-            continue
-        a = agg.setdefault(market, [0, 0.0])
-        a[0] += 1
-        a[1] += (float(odds) - 1.0) if won else -1.0
-
-    for market, (n, pnl) in agg.items():
-        if _market_is_proven(market, n, pnl / n):
+    for market, rec in _window_market_records(rows).items():
+        n, pnl = rec["n"], rec["pnl"]
+        if _market_is_proven(market, n, pnl / n if n else None):
             proven.add(market)
         else:
             proven.discard(market)   # demoted base market falls back to watch

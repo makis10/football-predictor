@@ -156,6 +156,18 @@ docker compose exec -T backend \
         --no-predictions \
     2>&1 | tee -a "$LOG" || overall_failed=1
 
+# ── 5c. Refresh ClubElo cold-start snapshot ──────────────────────────────────
+# Daily ClubElo rating pull → clubelo.json. compute_predictions seeds a real Elo
+# (mapped onto our scale) for cold-start teams with no CSV history — promoted
+# sides, lower-division cup/friendly opponents, European-qualifier minnows —
+# instead of the flat 1500 default. Non-fatal: a failed/stale pull just disables
+# seeding (falls back to 1500), so it must not flip the pipeline health signal.
+echo "" >> "$LOG"
+echo "[5c/6] Refreshing ClubElo cold-start ratings …" | tee -a "$LOG"
+docker compose exec -T backend \
+    python scripts/fetch_clubelo.py \
+    2>&1 | tee -a "$LOG" || echo "  [warn] ClubElo fetch failed — cold-start seeding disabled this run" | tee -a "$LOG"
+
 # ── 6. Compute any missing predictions ───────────────────────────────────────
 echo "" >> "$LOG"
 echo "[6/6] Computing missing predictions …" | tee -a "$LOG"

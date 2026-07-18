@@ -223,39 +223,65 @@ def mark_feedback_read(
 
 # ── Market record (dynamic-gate shadow-tracking visibility) ─────────────────────
 
+# Ordered MOST-RECENT-FIRST within each market so the rolling-window cap below
+# keeps only the recent settled tickets — matching proven_markets() exactly.
+_MARKET_RECORD_SQL = {
+    "national": """
+        SELECT vb.market, vb.odds, vb.created_at::text AS created_at,
+               np.actual_result, np.actual_home_goals, np.actual_away_goals
+        FROM value_bets vb
+        JOIN national_predictions np ON np.id = vb.national_prediction_id
+        WHERE vb.source = 'national'
+        ORDER BY vb.market, np.match_date DESC, vb.id DESC
+    """,
+    "club": """
+        SELECT vb.market, vb.odds, vb.created_at::text AS created_at,
+               m.result, m.home_goals, m.away_goals
+        FROM value_bets vb
+        JOIN matches m ON m.id = vb.match_id
+        WHERE vb.source = 'club'
+        ORDER BY vb.market, m.match_date DESC, vb.id DESC
+    """,
+}
+
+
 @router.get("/market-record")
 def market_record(
+    source: str = "national",
     _admin: User = Depends(_require_admin),
     db: Session = Depends(get_db),
 ):
     """Per-market NEW-model settled record from the value-bet ledger — so you can
     watch a shadow-tracked market (GG, Over, …) accumulate evidence and see how
     close it is to promotion into a headline suggestion (or a base market to
-    demotion)."""
+    demotion). `source` selects the club or national ledger (same gate rule).
+
+    Settled record + ROI reflect the most-recent PROVEN_ROLLING_WINDOW settled
+    tickets — the exact window the live gate evaluates — so a demoted market can
+    visibly recover as its recent form improves."""
     from backend.app.ml.odds_analysis_service import (
         _market_won, _market_is_proven, BASE_SUGGESTABLE, NEW_MODEL_CUTOFF,
         PROVEN_MIN_SAMPLES, PROVEN_ROI_FLOOR, DEMOTE_MIN_SAMPLES, DEMOTE_ROI_CEIL,
+        PROVEN_ROLLING_WINDOW,
     )
 
-    rows = db.execute(text("""
-        SELECT vb.market, vb.odds, vb.created_at::text AS created_at,
-               np.actual_result, np.actual_home_goals, np.actual_away_goals
-        FROM value_bets vb
-        JOIN national_predictions np ON np.id = vb.national_prediction_id
-        WHERE vb.source = 'national'
-        ORDER BY vb.market
-    """)).fetchall()
+    sql = _MARKET_RECORD_SQL.get(source)
+    if sql is None:
+        raise HTTPException(status_code=400, detail=f"unknown source: {source!r}")
+    rows = db.execute(text(sql)).fetchall()
 
     agg: dict[str, dict] = {}
     for market, odds, created_at, res, hg, ag in rows:
         a = agg.setdefault(market, {"tracked": 0, "settled": 0, "wins": 0,
                                     "pnl": 0.0, "post_cutoff": 0})
         a["tracked"] += 1
-        if created_at and created_at >= NEW_MODEL_CUTOFF:
+        post = bool(created_at and created_at >= NEW_MODEL_CUTOFF)
+        if post:
             a["post_cutoff"] += 1
         won = _market_won(market, res, hg, ag)
-        # Only post-cutoff settled tickets count toward promotion (new model).
-        if won is not None and odds and created_at and created_at >= NEW_MODEL_CUTOFF:
+        # Only the most-recent PROVEN_ROLLING_WINDOW post-cutoff settled tickets
+        # count toward promotion/demotion (rows are date-desc within market).
+        if won is not None and odds and post and a["settled"] < PROVEN_ROLLING_WINDOW:
             a["settled"] += 1
             a["wins"] += 1 if won else 0
             a["pnl"] += (float(odds) - 1.0) if won else -1.0
@@ -282,10 +308,26 @@ def market_record(
         })
 
     return {
+        "source":              source,
         "cutoff":              NEW_MODEL_CUTOFF,
         "min_samples":         PROVEN_MIN_SAMPLES,
+        "rolling_window":      PROVEN_ROLLING_WINDOW,
         "roi_floor_pct":       round(PROVEN_ROI_FLOOR * 100, 1),
         "demote_min_samples":  DEMOTE_MIN_SAMPLES,
         "demote_roi_ceil_pct": round(DEMOTE_ROI_CEIL * 100, 1),
         "markets":             out,
     }
+
+
+@router.get("/gate-changes")
+def gate_changes(
+    source: Optional[str] = None,
+    limit: int = 100,
+    _admin: User = Depends(_require_admin),
+):
+    """History of dynamic-gate promotions/demotions (what the GATE_ALERT_URL
+    webhook fires on) — so a market moving in/out of the suggestable set is
+    visible in-panel, not only in the logs. Newest first."""
+    from backend.app.ml.gate_alerts import load_history
+    src = source if source in ("club", "national") else None
+    return {"events": load_history(limit=min(max(limit, 1), 500), source=src)}

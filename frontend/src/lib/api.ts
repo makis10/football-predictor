@@ -584,6 +584,16 @@ export function leagueFlag(code: string): string {
   return LEAGUES.find((l) => l.code === code)?.flag ?? "🌍";
 }
 
+/** Compact European tie-round label: "1st Qualifying Round" → "Q1",
+ *  "Play-off Round" → "PO". Group stage / knockout / domestic (null) → null. */
+export function roundLabel(round?: string | null): string | null {
+  if (!round) return null;
+  const m = round.match(/(\d+)(?:st|nd|rd|th)?\s+Qualifying/i);
+  if (m) return `Q${m[1]}`;
+  if (/play-?off/i.test(round)) return "PO";
+  return null;
+}
+
 /** Detail-page link for a match card. National fixtures live under /national. */
 export function matchHref(m: Match): string {
   return m.league === INTERNATIONAL_LEAGUE
@@ -1272,12 +1282,22 @@ export interface MarketRecordRow {
 }
 
 export interface MarketRecord {
+  source?: string;
   cutoff: string;
   min_samples: number;
+  rolling_window?: number;
   roi_floor_pct: number;
   demote_min_samples: number;
   demote_roi_ceil_pct: number;
   markets: MarketRecordRow[];
+}
+
+export interface GateChange {
+  at: string;             // ISO timestamp
+  source: string;         // "club" | "national"
+  promoted: string[];
+  demoted: string[];
+  now: string[];          // proven set after the change
 }
 
 export interface WcReviewHighlight {

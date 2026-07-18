@@ -172,8 +172,27 @@ def main() -> None:
             print(f"  {mark} {p.match_date}  {p.home_team} {hg}-{ag} {p.away_team}"
                   f"  (pred {p.prediction}, actual {p.actual_result})  [live scores]")
 
+        # ── Prune unsettleable ghosts ────────────────────────────────────────
+        # A prediction still NULL more than 10 days after its match date will
+        # never settle: the source (martj42 + The Odds API) simply never recorded
+        # a score for it (minor friendlies the dataset scheduled but abandoned,
+        # or a cancelled fixture). Left in place they pollute the national
+        # "upcoming" view and keep the post-tournament quiet-skip logic from ever
+        # seeing zero-pending. The generation-side floor in load_results stops new
+        # ones; this clears the historical backlog. Accuracy stats are untouched —
+        # they only count rows where actual_result IS NOT NULL.
+        stale_cut = (date.today() - timedelta(days=10)).isoformat()
+        stale = [p for p in still_pending
+                 if p.actual_result is None and p.match_date < stale_cut]
+        for p in stale:
+            print(f"  ⌫ pruning unsettleable {p.match_date} "
+                  f"{p.home_team}-{p.away_team} ({p.tournament})")
+            db.delete(p)
+        pruned = len(stale)
+
         db.commit()
-        print(f"\nFilled: {filled} (dataset) + {live_filled} (live scores)   Still pending: {missing}")
+        print(f"\nFilled: {filled} (dataset) + {live_filled} (live scores)   "
+              f"Pruned: {pruned}   Still pending: {missing - pruned}")
     finally:
         db.close()
 

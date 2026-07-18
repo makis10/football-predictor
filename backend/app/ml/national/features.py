@@ -241,6 +241,16 @@ def load_results(data_dir: str | Path) -> tuple[pd.DataFrame, pd.DataFrame]:
     historical = df[mask_played].copy()
     upcoming   = df[~mask_played].copy()
 
+    # A row with NA scores whose date is well in the PAST is not a "future
+    # fixture" — it's a dataset defect (minor friendly the source scheduled but
+    # never recorded a result for). Left in `upcoming`, predict_national re-saves
+    # it every run, producing DB predictions that can never settle (they clutter
+    # the national view and keep the post-tournament "has upcoming?" logic true
+    # forever). Floor to a 2-day grace so genuinely-just-kicked-off games survive
+    # for same-day prediction, but 6-week-old ghosts are dropped.
+    floor = pd.Timestamp.now().normalize() - pd.Timedelta(days=2)
+    upcoming = upcoming[upcoming["date"] >= floor].copy()
+
     historical["home_goals"] = pd.to_numeric(historical["home_score"], errors="coerce").fillna(0).astype(int)
     historical["away_goals"] = pd.to_numeric(historical["away_score"], errors="coerce").fillna(0).astype(int)
     historical = historical.sort_values("date").reset_index(drop=True)

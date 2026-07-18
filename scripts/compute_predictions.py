@@ -47,7 +47,10 @@ from backend.app.ml.btts_classifier import (
     load_btts_classifier, load_btts_calibrator,
     predict_btts_prob, apply_btts_calibration,
 )
-from backend.app.ml.odds_analysis_service import fetch_all_league_odds, _teams_match, _best_ev_market, _compute_ev, shrunk_ev
+from backend.app.ml.odds_analysis_service import (
+    fetch_all_league_odds, _teams_match, _best_ev_market, _compute_ev, shrunk_ev,
+    proven_markets, _qualifying_markets,
+)
 
 MODEL_VERSION = "1.0.0"
 
@@ -213,6 +216,25 @@ def _has_history(home: str, away: str) -> bool:
         return t in _KNOWN_TEAMS or _SNAP_NAME_MAP.get(t, t) in _KNOWN_TEAMS
     return known(home) and known(away)
 
+# ── ClubElo cold-start Elo seeding ────────────────────────────────────────────
+# Teams with no CSV history default to Elo 1500 (average). Seed a real strength
+# signal from ClubElo (scripts/fetch_clubelo.py → clubelo.json), mapped onto OUR
+# Elo scale via a linear fit on the overlap. _KNOWN_TEAMS is already frozen above,
+# so insufficient_data stays True for these fixtures — this only sharpens the
+# Elo-diff feature, never promotes a no-history match to "suggestable".
+from backend.app.ml.clubelo import seed_cold_start  # noqa: E402
+
+_clubelo_seeded = seed_cold_start(
+    snapshot,
+    _KNOWN_TEAMS,
+    fixtures_teams={t for _mid, h, a, _d, _lg in match_snapshots for t in (h, a)},
+)
+if _clubelo_seeded:
+    _preview = ", ".join(f"{t}={e:.0f}" for t, e in sorted(_clubelo_seeded.items())[:12])
+    print(f"ClubElo fallback: seeded {len(_clubelo_seeded)} cold-start team(s) "
+          f"onto our Elo scale — {_preview}"
+          f"{' …' if len(_clubelo_seeded) > 12 else ''}", flush=True)
+
 european_df = load_european_data(EUROPEAN_DIR)
 print(f"European fixtures: {len(european_df) if european_df is not None else 0}", flush=True)
 
@@ -225,6 +247,21 @@ draw_cal  = load_draw_calibrator()
 btts_clf  = load_btts_classifier()
 btts_cal  = load_btts_calibrator()
 print("Models loaded. Computing predictions …", flush=True)
+
+# ── Dynamic club suggestable set (promotion + demotion) ───────────────────────
+# Same gate the national path uses: headline suggestions are restricted to the
+# base trusted markets (Home Win / Draw) PLUS any market whose post-cutoff club
+# record has earned promotion, MINUS base markets its record has demoted. Every
+# qualifying market is still shadow-tracked below, so a currently-unproven market
+# can accumulate the evidence to promote. Computed once per run.
+_pm_db = SessionLocal()
+try:
+    club_proven = proven_markets(_pm_db, "club")
+finally:
+    _pm_db.close()
+print(f"club proven suggestable markets: {sorted(club_proven)}", flush=True)
+from backend.app.ml.gate_alerts import alert_gate_change  # noqa: E402
+alert_gate_change("club", club_proven)   # log + webhook on promote/demote
 
 # ── Fetch live bookmaker odds (one API call per league) ───────────────────────
 # Since 2026-06-17 the models are market-independent — odds are NOT model
@@ -251,7 +288,9 @@ def _lookup_odds(league: str, home_team: str, away_team: str) -> "dict | None":
             # Return only if we have at least 1x2 data
             if fp.get("home_win") and fp.get("away_win"):
                 return {
-                    # Fair probabilities — injected as ML features
+                    # De-vig fair probabilities — for the EV/value-gate + UI
+                    # model-vs-market comparison (NOT model inputs; the models
+                    # are market-independent since 2026-06-17).
                     "home_win": fp.get("home_win"),
                     "draw":     fp.get("draw"),
                     "away_win": fp.get("away_win"),
@@ -266,7 +305,7 @@ def _lookup_odds(league: str, home_team: str, away_team: str) -> "dict | None":
                     "raw_btts_yes": ro.get("btts_yes"),
                     "raw_btts_no":  ro.get("btts_no"),
                 }
-    print(f"  [warn] no odds match for {home_team} vs {away_team} in {league} — market features will be NaN", flush=True)
+    print(f"  [warn] no odds match for {home_team} vs {away_team} in {league} — no EV/value gate for this match", flush=True)
     return None
 
 
@@ -443,6 +482,7 @@ for i, (mid, home, away, match_date, league) in enumerate(match_snapshots, 1):
         # Includes GG/NG (BTTS) markets alongside 1x2, Over/Under.
         suggested_market: str | None = None
         ev_score: float | None = None
+        ev_map: dict = {}
         # No value bets on no-history fixtures: the model probs are pure defaults
         # (identical for every such match), so any "edge" vs the odds is noise.
         _hist_ok = _has_history(home, away)
@@ -482,6 +522,7 @@ for i, (mid, home, away, match_date, league) in enumerate(match_snapshots, 1):
                     ev_map, raw_odds_map,
                     fair_probs=fair_probs,
                     model_probs=model_probs_map,
+                    suggestable=club_proven,     # dynamic gate, not the static set
                 )
                 if suggested_market:
                     # Store the market-shrunk EV — the honest edge estimate the
@@ -555,29 +596,37 @@ for i, (mid, home, away, match_date, league) in enumerate(match_snapshots, 1):
         else:
             skipped += 1
 
-        # Value-bet ticket — written ONCE at the first (softest) odds the
-        # suggestion appeared at; later recomputes never modify it.
-        if suggested_market and live_odds:
+        # Shadow-track EVERY qualifying market (proven + watch) as an insert-once
+        # ticket — same as the national path. This is how currently-unproven
+        # markets (Over/Under, GG/NG, Away) accumulate a post-cutoff club record
+        # so the dynamic gate can promote (or keep rejecting) them on data, not on
+        # the stale static assumption. Tickets are immutable; CLV measured later.
+        if live_odds and ev_map:
             from backend.app.ml.odds_analysis_service import _MARKET_ODDS_KEY, _MARKET_MODEL_KEY
             from backend.app.ml.value_ledger import record_ticket
-            _mname = suggested_market.split(" @ ")[0]
-            _okey  = _MARKET_ODDS_KEY.get(_mname, "")
-            _ticket_odds = {k: v for k, v in {
+            _ticket_odds_by_key = {
                 "home_win": live_odds.get("raw_home"), "draw": live_odds.get("raw_draw"),
                 "away_win": live_odds.get("raw_away"), "over_2_5": live_odds.get("raw_over"),
                 "under_2_5": None,
                 "btts_yes": live_odds.get("raw_btts_yes"), "btts_no": live_odds.get("raw_btts_no"),
-            }.items()}.get(_okey)
-            if _ticket_odds:
+            }
+            qualifying = _qualifying_markets(ev_map, raw_odds_map, fair_probs, model_probs_map)
+            for _mname in qualifying:
+                _okey = _MARKET_ODDS_KEY.get(_mname, "")
+                _ticket_odds = _ticket_odds_by_key.get(_okey)
+                if not _ticket_odds:
+                    continue
                 _mprob = model_probs_map.get(_MARKET_MODEL_KEY.get(_mname, ""))
                 if _mname in ("Under 2.5", "NG") and _mprob is not None:
                     _mprob = 1.0 - _mprob
+                _sev = shrunk_ev(_mname, model_probs_map, fair_probs, raw_odds_map)
                 if record_ticket(
                     conn, source="club", match_id=mid, market=_mname,
-                    odds=_ticket_odds, ev=ev_score, model_prob=_mprob,
+                    odds=_ticket_odds, ev=_sev, model_prob=_mprob,
                     market_prob=fair_probs.get(_okey),
                 ):
-                    print(f"  🎫 ticket: {home} vs {away} — {suggested_market}", flush=True)
+                    _tier = "proven" if _mname in club_proven else "watch"
+                    print(f"  🎫 [{_tier}] {home} vs {away} — {_mname} @ {_ticket_odds}", flush=True)
 
     if i % 20 == 0:
         print(f"  {i}/{len(match_snapshots)} done "

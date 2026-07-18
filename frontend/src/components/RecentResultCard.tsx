@@ -8,6 +8,7 @@ import {
   leagueFlag,
   leagueLabel,
   matchHref,
+  roundLabel,
   INTERNATIONAL_LEAGUE,
   getPostmortem,
 } from "@/lib/api";
@@ -90,8 +91,13 @@ export default function RecentResultCard({ match }: Props) {
       <Link href={matchHref(match)} className="block p-4 pb-0">
         {/* League + correctness badge */}
         <div className="flex items-center justify-between">
-          <span className="text-xs text-gray-400">
+          <span className="flex items-center gap-1.5 text-xs text-gray-400">
             {leagueFlag(match.league)} {leagueLabel(match.league)}
+            {roundLabel(match.round) && (
+              <span className="badge bg-pitch-700 text-gray-400 text-[10px] px-1.5 py-0">
+                {roundLabel(match.round)}
+              </span>
+            )}
           </span>
           {badgeLabel !== null ? (
             <span className={`text-xs font-bold px-2 py-0.5 rounded-full ${badge}`}>

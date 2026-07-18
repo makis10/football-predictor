@@ -78,6 +78,8 @@ def main() -> None:
         # accumulate the evidence to eventually promote.
         proven = proven_markets(db, "national")
         print(f"proven suggestable markets: {sorted(proven)}")
+        from backend.app.ml.gate_alerts import alert_gate_change
+        alert_gate_change("national", proven)   # log + webhook on promote/demote
 
         # Skip whole tournaments with no Odds API coverage (e.g. Friendly) up front.
         skipped_tournaments: set[str] = set()

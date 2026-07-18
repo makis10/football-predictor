@@ -74,6 +74,12 @@ export default async function AdminPage() {
         >
           Market Record →
         </Link>
+        <Link
+          href="/admin/gate-changes"
+          className="rounded-lg border border-pitch-700 bg-pitch-900 hover:bg-pitch-800 px-4 py-2 text-sm text-gray-300 transition-colors"
+        >
+          Gate Changes →
+        </Link>
       </div>
 
       {/* Users table with delete */}

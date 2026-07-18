@@ -2,7 +2,7 @@
 
 A full-stack machine-learning application that predicts football match outcomes (Win / Draw / Loss), goal totals (Over / Under 2.5), BTTS, correct scores and player props for **13 club competitions + international football** (World Cup 2026 with a live Monte-Carlo tournament simulation) — with bookmaker comparison, AI analysis, transparent accuracy/ROI tracking, and an AI chatbot assistant.
 
-Built with **XGBoost + Pi-Ratings + Poisson expected-goals** (clubs) and a **talent-adjusted Elo** engine (national teams), **FastAPI**, **Next.js 16 / React 19**, **PostgreSQL**, **Redis**, and **Groq (GPT-OSS-120B)** — fully containerised with Docker Compose. Club feature set: **133 features, fully market-independent** (no bookmaker inputs — the market is only used as a benchmark).
+Built with **XGBoost + Pi-Ratings + Poisson expected-goals** (clubs) and a **talent-adjusted Elo** engine (national teams), **FastAPI**, **Next.js 16 / React 19**, **PostgreSQL**, **Redis**, and **Groq (GPT-OSS-120B)** — fully containerised with Docker Compose. Club feature set: **134 features, fully market-independent** (no bookmaker inputs — the market is only used as a benchmark).
 
 **Live URL:** [https://aitipster.net](https://aitipster.net)
 
@@ -77,7 +77,7 @@ Cloudflare tunnel (aitipster.net)
 
 - **Frontend** — Next.js 16 App Router, dark-themed Tailwind UI. Server components fetch data via internal `BACKEND_URL`; a `/api/proxy/*` catch-all route proxies browser-side calls so visitors only need one public URL. All times are rendered in **Europe/Athens** timezone (stored UTC in DB, converted at display time) so SSR and browser output match identically regardless of visitor location.
 - **Backend** — FastAPI REST API. Predictions are computed on-demand by the ML layer and cached in PostgreSQL. The `/predictions/{id}/analysis` endpoint fetches live bookmaker odds, injury data, and generates a Groq AI analysis in Greek. The `/predictions/{id}/postmortem` endpoint generates an AI post-mortem using real match events (goals/cards/penalties with minute+player) fetched from API-Football. The `/chat` endpoint powers a context-aware AI chatbot with full conversation history.
-- **ML** — Four XGBoost models (result, goals, draw specialist, BTTS classifier) trained on **133 features**, with Pi-Ratings and a Poisson expected-goals model as key feature sources. Draw probabilities are blended with a dedicated draw-specialist classifier (auto-tuned α=0.45 via Brier score sweep). BTTS predictions come from a dedicated XGBClassifier with isotonic calibration and an auto-tuned decision threshold (macro F1 sweep on calibration set; currently 0.52), replacing the previous Poisson-only estimate. Position-aware injury/suspension adjustments applied at inference time using API-Football data. Model files (`.pkl`) are mounted into the backend container.
+- **ML** — Four XGBoost models (result, goals, draw specialist, BTTS classifier) trained on **134 features**, with Pi-Ratings and a Poisson expected-goals model as key feature sources. Draw probabilities are blended with a dedicated draw-specialist classifier (auto-tuned α=0.45 via Brier score sweep). BTTS predictions come from a dedicated XGBClassifier with isotonic calibration and an auto-tuned decision threshold (macro F1 sweep on calibration set; currently 0.52), replacing the previous Poisson-only estimate. Position-aware injury/suspension adjustments applied at inference time using API-Football data. Model files (`.pkl`) are mounted into the backend container.
 - **Database** — PostgreSQL 16. Schema managed by Alembic migrations (0001–0014). Kick-off times stored as UTC `TIME` columns; bookmaker odds stored at prediction time for ROI/EV tracking; `odds_history` table stores snapshots every 3h for odds movement arrows (↑/↓).
 - **Redis** — Caching layer (128MB, LRU eviction). Replaces all in-process Python dicts. Keys: `injuries:{match_id}` 30min, `squad_positions:{team_id}` 24h, `analysis:{fingerprint}` 30min, `postmortem:{match_id}` 24h, `stats:global` 6h, `league_odds:{league}` 30min, `match_events:{fixture_id}` 24h, `chat:context` 30min. Graceful fallback to no-op if Redis unavailable.
 - **Tunnel** — Cloudflare Tunnel serving the custom domain aitipster.net, managed by macOS launchd (auto-restarts on crash/reboot).
@@ -290,7 +290,7 @@ python -m backend.app.ml.train
 
 1. Loads all CSVs from `backend/data/raw/`
 2. Loads xG data from `backend/data/xg/` and merges onto training data by date + team name
-3. Engineers **133 features** per match (rolling stats, EWMA momentum, shots, xG, Elo, **Pi-Ratings**, **Poisson EG model**, H2H, European congestion, referee stats, league position, draw-balance features). **No market/odds features** — removed 2026-06 so the model is fully market-independent; bookmaker odds are only used downstream as the value benchmark.
+3. Engineers **134 features** per match (rolling stats, EWMA momentum, shots, xG, Elo, **Pi-Ratings**, **Poisson EG model**, H2H, European congestion, referee stats, league position, draw-balance features). **No market/odds features** — removed 2026-06 so the model is fully market-independent; bookmaker odds are only used downstream as the value benchmark.
 4. Excludes 2020/21 COVID season (no crowds → distorted home advantage)
 5. Applies **exponential time decay** weights (3-year half-life) so recent seasons matter more
 6. Combined with **balanced class weights** (draws get ~1.8× more weight than home wins)
@@ -323,7 +323,7 @@ python -m backend.app.ml.train
 >
 > - **EWMA momentum features**: exponentially weighted goals/points (α=0.3) alongside flat rolling windows — recent matches carry proportionally more weight.
 > - **League position feature**: normalized rank in current-season table (`h_league_pos_norm`, `a_league_pos_norm`, `league_pos_diff`) built from running standings; NaN for the first 2 matches of a new season.
-> - **Odds movement (steam) features**: `odds_drift_*` and `is_steam_home/away` injected at inference from `odds_history` snapshots; always 0.0 in training (reserved for future retraining once historical odds data is available in training CSVs).
+> - **Odds movement (steam) signals**: `odds_drift_*` and `is_steam_home/away` are computed from `odds_history` snapshots and shown as ↑/↓ arrows on the match-detail page. They live in `MARKET_DERIVED_COLS` and are **excluded from every trained model** (market-independence cutoff 2026-06-17) — display-only.
 > - **Pi-Rating decay**: season-boundary decay (×0.85) now applied at inference as well as training, eliminating a train/inference mismatch.
 > - **Dixon-Coles ρ correction** on Poisson probabilities: low-score outcomes (0-0, 1-0, 0-1, 1-1) corrected with τ(i,j) factor (ρ=−0.13). Already baked into `poisson_btts`, `poisson_home_win`, `poisson_draw`, etc.
 > - **BTTS EV in batch predictions**: `_compute_ev()` now includes GG/NG markets in `suggested_market` / `ev_score` — was previously missing from `compute_predictions.py`.
@@ -333,7 +333,7 @@ python -m backend.app.ml.train
 > - **Separate GOALS_FEATURE_COLS**: draw-balance features (6) are excluded from the goals model feature set — they add noise to O/U prediction and caused a regression when shared.
 >
 > **Inference improvements (do not affect benchmarks):**
-> - **Live odds at prediction time**: `compute_predictions.py` fetches live bookmaker odds (one call per league via The Odds API) and injects them as `market_home_prob` / `market_away_prob` — the two most important features by XGBoost importance (8.7% and 8.4%). Previously these were set to static defaults.
+> - **Live odds at prediction time** (~~market_home_prob/market_away_prob as features #1/#2~~ → removed 2026-06-17): odds were once the two most important model features (8.7%/8.4% XGBoost importance), but the model was made **fully market-independent** — `compute_predictions.py` still fetches live bookmaker odds (one call per league via The Odds API), now used **only** for the EV/value-gate and the UI's model-vs-market comparison, never as model input.
 > - **Closing-line refresh** (`--force-today`): re-fetches predictions for today's unstarted matches using closing-line odds, which are ~20–30% sharper than opening odds. Automated at 15:00 via `com.football-predictor.prematch`.
 > - **Position-aware injury adjustment**: At detail-page time, API-Football provides current injury/suspension lists enriched with player positions from `/players/squads` (cached 24h). Probabilities are adjusted at serve-time only (raw DB values kept clean for accuracy tracking):
 >   - **Attacker injured** → team scores less → over_2_5 ↓
@@ -365,13 +365,14 @@ the club pipeline: its own dataset, features, models, DB table and API.
 dataset doesn't pre-publish are kept in `scripts/upcoming_friendlies.csv` and
 re-injected after every refresh.
 
-**Features (44)** — custom Elo (K=15–60 by tournament tier, +100 home adv.),
+**Features (49)** — custom Elo (K=15–60 by tournament tier, +100 home adv.),
 rolling form/goals windows (competitive-only variants), H2H, rest days,
 tournament tier; separate draw-specialist feature set.
 
 **Models** — XGBoost + LightGBM soft-vote (result / O-U 2.5 / BTTS) + draw
-classifier with isotonic calibration and auto-tuned blend α. Trained < 2023,
-calibrated on 2023, tested on 2024+ (out-of-sample): **59.7% result accuracy**.
+classifier with isotonic calibration, plus an Elo three-way blend fitted on a
+held-out replay (`blend.json`). Honest held-out result accuracy **61.7%**
+(n=786, log-loss 0.834).
 
 **Odds & value** — bookmaker odds + EV from The Odds API for covered
 tournaments (WC, EURO, Copa, AFCON, NL, qualifiers). Friendlies have no odds
@@ -554,7 +555,7 @@ Two launchd jobs are defined in `launchd/` and installed via the install script:
 | ------------------------------------ | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `com.football-predictor.daily`       | Every day at **06:00** (+ on login/wake) | Runs `run_daily.sh`: domestic+CL results → EL/ECL/GreekSL results → top-5+CL+ELC+PPL+DED fixtures → Greek SL → CL/EL/ECL → compute predictions → backfill bm_odds → **warm injury cache** (next 3 days, new fixtures only) → clear stats cache. Every Monday also refreshes CSVs, retrains models, and force-recomputes all predictions. |
 | `com.football-predictor.prematch`    | Every day at **15:00**                   | Runs `compute_predictions.py --force-today` — refreshes predictions for today's unstarted matches using closing-line odds (~2h before typical evening kick-offs, the sharpest market signal).                                                                  |
-| `com.football-predictor.odds-poll`   | Every **3 hours**                        | Snapshots current bookmaker odds into the `odds_history` table. Powers odds movement arrows (↑/↓) on match detail pages, and feeds `odds_drift_*` / `is_steam_*` ML features at prediction time.                                                              |
+| `com.football-predictor.odds-poll`   | Every **3 hours**                        | Snapshots current bookmaker odds into the `odds_history` table. Powers odds movement arrows (↑/↓) on match detail pages. (`odds_drift_*` / `is_steam_*` are display-only — excluded from the market-independent model.)                                                              |
 | `com.football-predictor.cloudflared` | Always (KeepAlive)                       | Keeps the Cloudflare tunnel (aitipster.net) alive across reboots.                                                                                                                                                                                             |
 
 Logs: `~/Library/Logs/football-predictor/`
@@ -810,7 +811,7 @@ Model accuracy and ROI tracking dashboard data. Cached in-process for 6 hours.
 | `model_draw_clf.pkl`   | Draw specialist   | XGBoost binary         | 124 (RESULT_FEATURE_COLS) | 1=Draw, 0=Not Draw (blended into result probs with α=`draw_alpha.json`) |
 | `model_btts_clf.pkl`   | Both Teams Score  | XGBoost binary         | 40 (BTTS_FEATURE_COLS)    | 1=GG (both score), 0=NG        |
 
-### Feature set (133 features)
+### Feature set (134 features)
 
 **Rolling windows** (5 and 10 matches) per team — 42 features:
 - Goals scored / conceded (all venues + venue-split)
