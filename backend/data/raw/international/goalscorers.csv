@@ -47902,11 +47902,6 @@ date,home_team,away_team,team,scorer,minute,own_goal,penalty
 2026-07-15,England,Argentina,England,Anthony Gordon,55.0,False,False
 2026-07-15,England,Argentina,Argentina,Enzo Fernández,85.0,False,False
 2026-07-15,England,Argentina,Argentina,Lautaro Martínez,90.0,False,False
-2026-07-07,Belgium,United States,United States,Malik Tillman,,False,False
-2026-07-07,United States,Belgium,Belgium,Charles De Ketelaere,,False,False
-2026-07-07,United States,Belgium,Belgium,Charles De Ketelaere,,False,False
-2026-07-07,United States,Belgium,Belgium,Hans Vanaken,,False,False
-2026-07-07,United States,Belgium,Belgium,Romelu Lukaku,,False,False
 2026-07-12,Argentina,Switzerland,Argentina,Alexis Mac Allister,,False,False
 2026-07-12,Argentina,Switzerland,Argentina,Julián Alvarez,,False,False
 2026-07-12,Argentina,Switzerland,Argentina,Lautaro Martínez,,False,False
@@ -47931,3 +47926,17 @@ date,home_team,away_team,team,scorer,minute,own_goal,penalty
 2026-07-14,Shamrock Rovers,Floriana,Shamrock Rovers,J. McGovern,,False,False
 2026-07-14,Shamrock Rovers,Floriana,Shamrock Rovers,G. Burke,,False,False
 2026-07-16,Vitoria,Vasco DA Gama,Vitoria,Renato Kayzer,,False,False
+2026-07-14,Riga,Ararat-Armenia,Riga,A. Ankrah,,False,False
+2026-07-14,Riga,Ararat-Armenia,Ararat-Armenia,Sandro Lima,,False,False
+2026-07-14,Riga,Ararat-Armenia,Ararat-Armenia,Z. Shaghoyan,,False,False
+2026-07-17,Bahia,Chapecoense-sc,Bahia,Román Gómez,,False,False
+2026-07-17,Bahia,Chapecoense-sc,Bahia,Rodrigo Nestor,,False,False
+2026-07-14,Drita,Kauno Žalgiris,Kauno Žalgiris,V. Slivka,,False,False
+2026-07-14,Drita,Kauno Žalgiris,Kauno Žalgiris,V. Slivka,,False,False
+2026-07-14,Drita,Kauno Žalgiris,Kauno Žalgiris,A. Benchaib,,False,False
+2026-07-12,Gais,IF Elfsborg,Gais,Róbert Frosti Thorkelsson,,False,False
+2026-07-14,The New Saints,Sabah FA,Sabah FA,J. Mickels,,False,False
+2026-07-11,Tromso,Valerenga,Tromso,Jens Hjertø-Dahl,,False,False
+2026-07-11,Tromso,Valerenga,Tromso,Heine Asen Larsen,,False,False
+2026-07-11,Tromso,Valerenga,Tromso,Heine Asen Larsen,,False,False
+2026-07-11,Tromso,Valerenga,Tromso,Troy Nyhammer,,False,False

@@ -6,10 +6,13 @@
     <key>Label</key>
     <string>com.football-predictor.odds-poll</string>
 
+    <!-- Runs through the backend container (docker compose exec) like every
+         other job — see scripts/run_odds_poll.sh. The old form invoked a
+         non-existent .venv python directly and failed on every fire. -->
     <key>ProgramArguments</key>
     <array>
-        <string>__PROJ_DIR__/.venv/bin/python</string>
-        <string>__PROJ_DIR__/scripts/poll_odds.py</string>
+        <string>/bin/bash</string>
+        <string>__PROJ_DIR__/scripts/run_odds_poll.sh</string>
     </array>
 
     <!-- Run every 3 hours at the top of the hour -->
@@ -41,11 +44,8 @@
     <string>__LOG_DIR__/odds-poll-stdout.log</string>
     <key>StandardErrorPath</key>
     <string>__LOG_DIR__/odds-poll-stderr.log</string>
-
-    <key>KeepAlive</key>
-    <dict>
-        <key>SuccessfulExit</key>
-        <false/>
-    </dict>
+    <!-- No KeepAlive: this is a scheduled job (StartCalendarInterval). KeepAlive
+         with SuccessfulExit=false would relaunch it on every failure → a
+         restart storm. The 3-hourly schedule is the only trigger. -->
 </dict>
 </plist>
