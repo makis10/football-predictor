@@ -26,6 +26,7 @@ import LeagueFilter from "@/components/LeagueFilter";
 import OddsFilter from "@/components/OddsFilter";
 import ConfidenceFilter from "@/components/ConfidenceFilter";
 import TopPicks from "@/components/TopPicks";
+import { getServerT } from "@/lib/i18n-server";
 
 interface PageProps {
   // Next 15+: searchParams is now a Promise.
@@ -62,6 +63,7 @@ async function UpcomingGrid({
       fixture renders as a LockedMatchCard (no prediction data in the HTML). */
   locked?: boolean;
 }) {
+  const t = await getServerT();
   // Case-insensitive — hand-typed URLs may use ?league=international.
   const isInternational = league?.toLowerCase() === INTERNATIONAL_LEAGUE.toLowerCase();
 
@@ -143,9 +145,9 @@ async function UpcomingGrid({
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
             {dayMatches.map((match) =>
               locked ? (
-                <LockedMatchCard key={`${match.league}-${match.id}`} match={match} />
+                <LockedMatchCard key={`${match.league}-${match.id}`} match={match} t={t} />
               ) : (
-                <MatchCard key={`${match.league}-${match.id}`} match={match} />
+                <MatchCard key={`${match.league}-${match.id}`} match={match} t={t} />
               ),
             )}
           </div>
@@ -162,6 +164,7 @@ async function UpcomingGrid({
  * hasn't kicked off).
  */
 async function LeagueStandings({ league }: { league: string }) {
+  const t = await getServerT();
   // Table and projection are independent: a finished season has a table but no
   // projection; a season that hasn't kicked off has a projection but no table.
   // Fetch both, render whichever exists.
@@ -172,20 +175,21 @@ async function LeagueStandings({ league }: { league: string }) {
   if (!table && !proj) return null;
   return (
     <div className="space-y-6">
-      {table && <StandingsTable table={table} />}
+      {table && <StandingsTable table={table} t={t} />}
       {/* A domestic season projects to a table position, a UEFA one to a trophy
           — different questions, so different panels. */}
       {proj &&
         (isEuropeanProjection(proj) ? (
-          <EuropeanProjectionPanel proj={proj} />
+          <EuropeanProjectionPanel proj={proj} t={t} />
         ) : (
-          <LeagueProjectionPanel proj={proj} />
+          <LeagueProjectionPanel proj={proj} t={t} />
         ))}
     </div>
   );
 }
 
 export default async function HomePage({ searchParams }: PageProps) {
+  const t = await getServerT();
   const sp = await searchParams;
   // Resolve to the canonical code (case-insensitive). A league we don't cover
   // (e.g. ?league=Brasileirao) renders an honest "not supported" panel below
@@ -227,11 +231,11 @@ export default async function HomePage({ searchParams }: PageProps) {
           className="flex items-center justify-between gap-3 rounded-xl border border-amber-700/40 bg-amber-950/20 px-4 py-3 hover:bg-amber-950/30 transition-colors"
         >
           <span className="text-sm text-gray-300">
-            🏆 <span className="font-semibold text-amber-300">World Cup 2026 review</span> — το μοντέλο πέτυχε{" "}
+            🏆 <span className="font-semibold text-amber-300">{t("home.wcReview.label")}</span> {t("home.wcReview.mid")}{" "}
             <span className="font-semibold text-emerald-400">{Math.round((wcReview.result_accuracy ?? 0) * 100)}%</span>{" "}
-            των αποτελεσμάτων σε {wcReview.settled} αγώνες
+            {t("home.wcReview.suffix", { n: wcReview.settled })}
           </span>
-          <span className="text-xs text-amber-400 whitespace-nowrap">Δες →</span>
+          <span className="text-xs text-amber-400 whitespace-nowrap">{t("home.wcReview.cta")}</span>
         </Link>
       ) : null}
 

@@ -10,6 +10,7 @@
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { CHANGELOG, type ChangeTag } from "@/lib/changelog";
+import { useT, useLang } from "@/components/LanguageProvider";
 
 const STORAGE_KEY = "fp_changelog_last_read_id";
 
@@ -19,19 +20,23 @@ const TAG_STYLE: Record<ChangeTag, string> = {
   fix:         "bg-amber-900/40 text-amber-300 border-amber-700/40",
 };
 
-const TAG_LABEL: Record<ChangeTag, string> = {
-  new: "New", improvement: "Improved", fix: "Fixed",
+const TAG_KEY: Record<ChangeTag, string> = {
+  new: "bell.tag.new", improvement: "bell.tag.improvement", fix: "bell.tag.fix",
 };
 
-function fmtDate(iso: string): string {
-  const d = new Date(iso + "T00:00:00");
-  return d.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
-}
-
 export default function NotificationBell() {
+  const t = useT();
+  const lang = useLang();
   const [open, setOpen] = useState(false);
   const [unread, setUnread] = useState(0);
   const [mounted, setMounted] = useState(false);
+
+  const fmtDate = (iso: string): string => {
+    const d = new Date(iso + "T00:00:00");
+    return d.toLocaleDateString(lang === "el" ? "el-GR" : "en-GB", {
+      day: "numeric", month: "short", year: "numeric",
+    });
+  };
 
   // Compute unread after mount (localStorage isn't available during SSR).
   useEffect(() => {
@@ -61,7 +66,7 @@ export default function NotificationBell() {
     <div className="relative">
       <button
         onClick={toggle}
-        aria-label="Platform updates"
+        aria-label={t("bell.aria")}
         className="relative flex items-center justify-center w-9 h-9 rounded-full text-gray-400 hover:text-white hover:bg-pitch-800 transition-colors"
       >
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -95,12 +100,12 @@ export default function NotificationBell() {
           >
             <div className="flex items-start justify-between gap-3 px-5 py-4 border-b border-pitch-700" style={{ flexShrink: 0 }}>
               <div>
-                <p className="text-base font-semibold text-white">🔔 Platform updates</p>
-                <p className="text-xs text-gray-500">Fixes &amp; improvements to the predictor</p>
+                <p className="text-base font-semibold text-white">{t("bell.title")}</p>
+                <p className="text-xs text-gray-500">{t("bell.subtitle")}</p>
               </div>
               <button
                 onClick={() => setOpen(false)}
-                aria-label="Close"
+                aria-label={t("bell.close")}
                 className="shrink-0 w-8 h-8 flex items-center justify-center rounded-lg text-gray-400 hover:text-white hover:bg-pitch-800 transition-colors"
               >
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -117,7 +122,7 @@ export default function NotificationBell() {
                 <li key={e.id} className="px-5 py-3">
                   <div className="flex items-center gap-2 mb-1">
                     <span className={`text-[10px] uppercase tracking-wide font-semibold px-1.5 py-0.5 rounded border ${TAG_STYLE[e.tag]}`}>
-                      {TAG_LABEL[e.tag]}
+                      {t(TAG_KEY[e.tag])}
                     </span>
                     <span className="text-[11px] text-gray-500">{fmtDate(e.date)}</span>
                   </div>

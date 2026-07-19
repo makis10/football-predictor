@@ -3,6 +3,7 @@ export const dynamic = "force-dynamic";
 import Link from "next/link";
 import { getWcSimulation, getWcChampionHistory, type WcSimulation, type WcChampionHistory } from "@/lib/api";
 import { WcChampionHistoryChart } from "@/components/national/WcChampionHistoryChart";
+import { getServerT } from "@/lib/i18n-server";
 
 function pct(v: number | null | undefined): string {
   return v == null ? "—" : `${(v * 100).toFixed(1)}%`;
@@ -22,6 +23,7 @@ function EdgeBadge({ model, market }: { model: number; market: number | null }) 
 }
 
 export default async function WorldCupPage() {
+  const t = await getServerT();
   let sim: WcSimulation = { available: false };
   let history: WcChampionHistory = { available: false, snapshots: [] };
   try {
@@ -152,28 +154,28 @@ export default async function WorldCupPage() {
       {sim.group_standings && Object.keys(sim.group_standings).length > 0 && (
         <section className="card p-5">
           <h2 className="text-sm font-semibold text-gray-300 uppercase tracking-wider mb-1">
-            📊 Πρόκριση Ομίλων
+            {t("wc.groupQual")}
           </h2>
           <p className="text-xs text-gray-500 mb-4">
-            <span className="text-gray-300">1ος</span> = πρώτη θέση ομίλου ·{" "}
-            <span className="text-gray-300">Top-2</span> = απευθείας πρόκριση ·{" "}
-            <span className="text-gray-300">Πρόκριση</span> = top-2 ή ένας από τους 8 καλύτερους 3ους.
+            <span className="text-gray-300">{t("wc.first")}</span> {t("wc.firstDef")} ·{" "}
+            <span className="text-gray-300">{t("wc.top2")}</span> {t("wc.top2Def")} ·{" "}
+            <span className="text-gray-300">{t("wc.qualify")}</span> {t("wc.qualifyDef")}
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-5">
             {Object.entries(sim.group_standings).map(([letter, teams]) => (
               <div key={letter} className="space-y-1">
                 <div className="grid grid-cols-[1fr_2.4rem_2.4rem_2.6rem] gap-1 text-[10px] text-gray-500 uppercase tracking-wide pb-0.5 border-b border-pitch-700">
                   <span>Group {letter}</span>
-                  <span className="text-right">1ος</span>
-                  <span className="text-right">Top2</span>
-                  <span className="text-right">Πρόκρ</span>
+                  <span className="text-right">{t("wc.first")}</span>
+                  <span className="text-right">{t("wc.top2")}</span>
+                  <span className="text-right">{t("wc.qualCol")}</span>
                 </div>
-                {teams.map((t) => (
-                  <div key={t.team} className="grid grid-cols-[1fr_2.4rem_2.4rem_2.6rem] gap-1 items-center text-xs">
-                    <span className="text-gray-200 truncate">{t.team}</span>
-                    <span className="text-right tabular-nums text-gray-400">{Math.round(t.p_first * 100)}%</span>
-                    <span className="text-right tabular-nums text-gray-300">{Math.round(t.p_top2 * 100)}%</span>
-                    <span className="text-right tabular-nums text-green-400 font-semibold">{Math.round(t.p_qualify * 100)}%</span>
+                {teams.map((row) => (
+                  <div key={row.team} className="grid grid-cols-[1fr_2.4rem_2.4rem_2.6rem] gap-1 items-center text-xs">
+                    <span className="text-gray-200 truncate">{row.team}</span>
+                    <span className="text-right tabular-nums text-gray-400">{Math.round(row.p_first * 100)}%</span>
+                    <span className="text-right tabular-nums text-gray-300">{Math.round(row.p_top2 * 100)}%</span>
+                    <span className="text-right tabular-nums text-green-400 font-semibold">{Math.round(row.p_qualify * 100)}%</span>
                   </div>
                 ))}
               </div>

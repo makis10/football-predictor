@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { CLIENT_API_URL as API } from "@/lib/api";
+import { useT, useLang } from "@/components/LanguageProvider";
 
 export interface FeedbackItem {
   id: number;
@@ -13,6 +14,8 @@ export interface FeedbackItem {
 }
 
 export default function AdminFeedback({ items }: { items: FeedbackItem[] }) {
+  const t = useT();
+  const lang = useLang();
   const [feedback, setFeedback] = useState<FeedbackItem[]>(items);
 
   const markRead = async (id: number) => {
@@ -27,7 +30,7 @@ export default function AdminFeedback({ items }: { items: FeedbackItem[] }) {
   if (feedback.length === 0) {
     return (
       <div className="rounded-xl border border-pitch-700 bg-pitch-900 p-6 text-center text-sm text-gray-500">
-        Κανένα μήνυμα ακόμα.
+        {t("fb.empty")}
       </div>
     );
   }
@@ -47,14 +50,14 @@ export default function AdminFeedback({ items }: { items: FeedbackItem[] }) {
                 {f.user_name ?? f.user_email ?? "—"}
                 {!f.is_read && (
                   <span className="ml-2 text-[10px] px-1.5 py-0.5 rounded bg-green-500/20 text-green-400 font-semibold align-middle">
-                    ΝΕΟ
+                    {t("fb.new")}
                   </span>
                 )}
               </p>
               {f.user_email && <p className="text-xs text-gray-500">{f.user_email}</p>}
             </div>
             <span className="text-[11px] text-gray-600 shrink-0 tabular-nums">
-              {new Date(f.created_at).toLocaleString("el-GR", {
+              {new Date(f.created_at).toLocaleString(lang === "el" ? "el-GR" : "en-GB", {
                 day: "numeric", month: "short", hour: "2-digit", minute: "2-digit",
                 hour12: false, timeZone: "Europe/Athens",
               })}
@@ -67,7 +70,7 @@ export default function AdminFeedback({ items }: { items: FeedbackItem[] }) {
                 href={`mailto:${f.user_email}?subject=Re: Football Predictor`}
                 className="text-xs text-sky-400 hover:text-sky-300"
               >
-                Απάντηση ↗
+                {t("fb.reply")}
               </a>
             )}
             {!f.is_read && (
@@ -75,7 +78,7 @@ export default function AdminFeedback({ items }: { items: FeedbackItem[] }) {
                 onClick={() => markRead(f.id)}
                 className="text-xs text-gray-400 hover:text-white"
               >
-                Σήμανση ως διαβασμένο
+                {t("fb.markRead")}
               </button>
             )}
           </div>

@@ -1,4 +1,5 @@
 import { type PlayerProp } from "@/lib/api";
+import type { TFunc } from "@/lib/i18n";
 
 function pct(v: number | null): string {
   return v == null ? "—" : `${Math.round(v * 100)}%`;
@@ -42,7 +43,7 @@ function StatPill({
   );
 }
 
-function TeamPropsTable({ team, players }: { team: string; players: PlayerProp[] }) {
+function TeamPropsTable({ team, players, t }: { team: string; players: PlayerProp[]; t: TFunc }) {
   // Finished match? (any player carries settlement). If so, surface the players
   // who actually delivered (scored / shot / assisted), not just our top picks.
   const finished = players.some((p) => p.played != null);
@@ -74,9 +75,9 @@ function TeamPropsTable({ team, players }: { team: string; players: PlayerProp[]
               {dnp && <span className="text-[10px] text-gray-500"> · DNP</span>}
             </span>
             <div className="flex gap-1 shrink-0">
-              <StatPill label="Σκορ" value={p.p_score} tone="score" hit={dnp ? null : p.score_hit} actual={p.actual_goals} />
-              <StatPill label="Σουτ" value={p.p_sot_1} tone="sot" hit={dnp ? null : p.sot_hit} actual={p.actual_sot} />
-              <StatPill label="Ασίστ" value={p.p_assist} tone="assist" hit={dnp ? null : p.assist_hit} actual={p.actual_assists} />
+              <StatPill label={t("props.score")} value={p.p_score} tone="score" hit={dnp ? null : p.score_hit} actual={p.actual_goals} />
+              <StatPill label={t("props.shots")} value={p.p_sot_1} tone="sot" hit={dnp ? null : p.sot_hit} actual={p.actual_sot} />
+              <StatPill label={t("props.assist")} value={p.p_assist} tone="assist" hit={dnp ? null : p.assist_hit} actual={p.actual_assists} />
             </div>
           </div>
         );
@@ -85,29 +86,27 @@ function TeamPropsTable({ team, players }: { team: string; players: PlayerProp[]
   );
 }
 
-export default function PlayerPropsPanel({ teams }: { teams: Record<string, PlayerProp[]> }) {
+export default function PlayerPropsPanel({ teams, t }: { teams: Record<string, PlayerProp[]>; t: TFunc }) {
   const names = Object.keys(teams);
   if (names.length === 0) return null;
-  const finished = names.some((t) => teams[t].some((p) => p.played != null));
+  const finished = names.some((tm) => teams[tm].some((p) => p.played != null));
   return (
     <div className="card p-5 space-y-4">
       <div>
         <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
-          👤 Στατιστικά Παικτών
+          {t("props.title")}
         </h2>
         <p className="text-[11px] text-gray-600 mt-1 leading-relaxed">
-          Πιθανότητα ανά παίκτη να:{" "}
-          <span className="text-green-400">Σκορ</span> = σκοράρει ·{" "}
-          <span className="text-sky-300">Σουτ</span> = 1+ σουτ στην εστία ·{" "}
-          <span className="text-amber-300">Ασίστ</span> = δώσει ασίστ.{" "}
-          {finished
-            ? "Κάτω από κάθε πιθανότητα: ✓/✗ τι πιάσαμε + ο πραγματικός αριθμός."
-            : "(recency-weighted ρυθμοί × αναμενόμενα γκολ)"}
+          {t("props.descPre")}{" "}
+          <span className="text-green-400">{t("props.score")}</span> {t("props.scoreDef")} ·{" "}
+          <span className="text-sky-300">{t("props.shots")}</span> {t("props.shotsDef")} ·{" "}
+          <span className="text-amber-300">{t("props.assist")}</span> {t("props.assistDef")}{" "}
+          {finished ? t("props.settledNote") : t("props.methodNote")}
         </p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-5">
-        {names.map((t) => (
-          <TeamPropsTable key={t} team={t} players={teams[t]} />
+        {names.map((tm) => (
+          <TeamPropsTable key={tm} team={tm} players={teams[tm]} t={t} />
         ))}
       </div>
     </div>

@@ -12,12 +12,14 @@ import {
   roundLabel,
   INTERNATIONAL_LEAGUE,
 } from "@/lib/api";
+import type { TFunc } from "@/lib/i18n";
 
 interface Props {
   match: Match;
+  t: TFunc;
 }
 
-export default function MatchCard({ match }: Props) {
+export default function MatchCard({ match, t }: Props) {
   const p = match.prediction ?? null;
   const hasResult = match.home_goals !== null && match.away_goals !== null;
   const isNational = match.league?.toLowerCase() === INTERNATIONAL_LEAGUE.toLowerCase();
@@ -72,7 +74,7 @@ export default function MatchCard({ match }: Props) {
         {p && p.insufficient_data ? (
           <div className="mt-auto">
             <span className="text-xs text-gray-500 italic">
-              ℹ️ Ανεπαρκή δεδομένα — άγνωστες ομάδες
+              {t("matchCard.insufficient")}
             </span>
           </div>
         ) : p ? (

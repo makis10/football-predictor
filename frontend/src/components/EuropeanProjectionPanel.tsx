@@ -1,4 +1,5 @@
 import { type EuropeanProjection } from "@/lib/api";
+import type { TFunc } from "@/lib/i18n";
 
 function pct(v: number): string {
   if (v <= 0) return "—";
@@ -18,10 +19,10 @@ function tone(v: number): string {
  * Only the teams with a real chance are listed — a 36-team wall of "<1%" tells
  * nobody anything.
  */
-export default function EuropeanProjectionPanel({ proj }: { proj: EuropeanProjection }) {
+export default function EuropeanProjectionPanel({ proj, t }: { proj: EuropeanProjection; t: TFunc }) {
   if (!proj || proj.teams.length === 0) return null;
 
-  const contenders = proj.teams.filter((t) => t.p_champion >= 0.005).slice(0, 16);
+  const contenders = proj.teams.filter((row) => row.p_champion >= 0.005).slice(0, 16);
   const rest = proj.teams.length - contenders.length;
 
   return (
@@ -29,14 +30,12 @@ export default function EuropeanProjectionPanel({ proj }: { proj: EuropeanProjec
       <div>
         <div className="flex items-baseline justify-between gap-3">
           <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
-            🏆 Πρόγνωση Κατάκτησης
+            {t("proj.eu.title")}
           </h2>
           <span className="text-[11px] text-gray-600 tabular-nums">{proj.season}</span>
         </div>
         <p className="text-[11px] text-gray-600 mt-1 leading-relaxed">
-          {proj.sims.toLocaleString("el-GR")} προσομοιώσεις: {proj.matches_remaining} αγώνες
-          league phase που απομένουν, μετά playoff + νοκ-άουτ μέχρι τον τελικό. Το
-          bracket προκύπτει από τη σειρά κατάταξης — η πραγματική κλήρωση δεν έχει γίνει.
+          {t("proj.eu.desc", { sims: proj.sims.toLocaleString(), n: proj.matches_remaining })}
         </p>
       </div>
 
@@ -44,24 +43,24 @@ export default function EuropeanProjectionPanel({ proj }: { proj: EuropeanProjec
         <table className="w-full text-sm">
           <thead>
             <tr className="text-[10px] uppercase tracking-wide text-gray-500">
-              <th className="py-1.5 pr-2 text-left font-medium">Ομάδα</th>
-              <th className="py-1.5 px-2 text-right font-medium">Κατάκτηση</th>
-              <th className="py-1.5 px-2 text-right font-medium">Τελικός</th>
-              <th className="py-1.5 pl-2 text-right font-medium">16άδα</th>
+              <th className="py-1.5 pr-2 text-left font-medium">{t("proj.team")}</th>
+              <th className="py-1.5 px-2 text-right font-medium">{t("proj.eu.win")}</th>
+              <th className="py-1.5 px-2 text-right font-medium">{t("proj.eu.final")}</th>
+              <th className="py-1.5 pl-2 text-right font-medium">{t("proj.eu.r16")}</th>
             </tr>
           </thead>
           <tbody>
-            {contenders.map((t) => (
-              <tr key={t.team} className="border-t border-pitch-800">
-                <td className="py-1.5 pr-2 text-gray-200 truncate max-w-[10rem]">{t.team}</td>
-                <td className={`py-1.5 px-2 text-right tabular-nums font-semibold ${tone(t.p_champion)}`}>
-                  {pct(t.p_champion)}
+            {contenders.map((row) => (
+              <tr key={row.team} className="border-t border-pitch-800">
+                <td className="py-1.5 pr-2 text-gray-200 truncate max-w-[10rem]">{row.team}</td>
+                <td className={`py-1.5 px-2 text-right tabular-nums font-semibold ${tone(row.p_champion)}`}>
+                  {pct(row.p_champion)}
                 </td>
                 <td className="py-1.5 px-2 text-right tabular-nums text-gray-400">
-                  {pct(t.p_final)}
+                  {pct(row.p_final)}
                 </td>
                 <td className="py-1.5 pl-2 text-right tabular-nums text-gray-500">
-                  {pct(t.p_r16)}
+                  {pct(row.p_r16)}
                 </td>
               </tr>
             ))}
@@ -71,7 +70,7 @@ export default function EuropeanProjectionPanel({ proj }: { proj: EuropeanProjec
 
       {rest > 0 && (
         <p className="text-[11px] text-gray-600">
-          + {rest} ομάδες κάτω από 1%.
+          {t("proj.eu.more", { n: rest })}
         </p>
       )}
     </div>

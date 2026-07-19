@@ -13,6 +13,7 @@ import { ResultCalibrationChart } from "@/components/stats/ResultCalibrationChar
 import { ROICard } from "@/components/stats/ROICard";
 import { EVChart } from "@/components/stats/EVChart";
 import LeagueFilter from "@/components/LeagueFilter";
+import { getServerT } from "@/lib/i18n-server";
 
 // SSR every request — backend has its own 6h in-process cache so this is fast.
 export const dynamic = "force-dynamic";
@@ -32,6 +33,7 @@ function accentForAccuracy(v: number): "green" | "yellow" | "red" {
 }
 
 export default async function StatsPage({ searchParams }: PageProps) {
+  const t = await getServerT();
   const league = (await searchParams).league;
   // Case-insensitive: hand-typed/shared URLs use ?league=international (lowercase)
   // while the filter emits "International" — both must hit the national view,
@@ -50,9 +52,9 @@ export default async function StatsPage({ searchParams }: PageProps) {
       return (
         <div className="text-center py-16 text-gray-500">
           <p className="text-4xl mb-4">📊</p>
-          <p className="text-lg font-medium text-gray-400">Stats unavailable</p>
+          <p className="text-lg font-medium text-gray-400">{t("stats.unavailable.title")}</p>
           <p className="text-sm mt-1">
-            No completed matches with predictions yet — check back after the next match day.
+            {t("stats.unavailable.body")}
           </p>
         </div>
       );
@@ -73,14 +75,14 @@ export default async function StatsPage({ searchParams }: PageProps) {
       return (
         <div className="space-y-6">
           <div>
-            <h1 className="text-2xl font-bold text-gray-100 mb-1">📊 International Model Accuracy</h1>
+            <h1 className="text-2xl font-bold text-gray-100 mb-1">{t("stats.intl.title")}</h1>
           </div>
           <Suspense>
             <LeagueFilter active={league} basePath="/stats" />
           </Suspense>
           <div className="text-center py-16 text-gray-500">
             <p className="text-4xl mb-3">🌍</p>
-            <p className="font-medium">No international results yet.</p>
+            <p className="font-medium">{t("stats.intl.empty")}</p>
           </div>
         </div>
       );
@@ -90,9 +92,9 @@ export default async function StatsPage({ searchParams }: PageProps) {
     return (
       <div className="space-y-10">
         <div>
-          <h1 className="text-2xl font-bold text-gray-100 mb-1">📊 International Model Accuracy</h1>
+          <h1 className="text-2xl font-bold text-gray-100 mb-1">{t("stats.intl.title")}</h1>
           <p className="text-sm text-gray-500">
-            National team predictions · {ns.total} completed matches.
+            {t("stats.intl.subtitle", { n: ns.total })}
           </p>
         </div>
 
@@ -103,31 +105,31 @@ export default async function StatsPage({ searchParams }: PageProps) {
         {/* Overall hero cards */}
         <section>
           <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-3">
-            All Time · {ns.total} matches
+            {t("stats.allTimeN", { n: ns.total })}
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
             <StatCard
-              label="Result Accuracy"
+              label={t("stats.resultAccuracy")}
               value={pct(ns.result_accuracy)}
-              sub={`${ns.result_correct} / ${ns.total} correct`}
+              sub={t("stats.correctFrac", { c: ns.result_correct, t: ns.total })}
               accent={accentForAccuracy(ns.result_accuracy)}
             />
             <StatCard
-              label="O/U Accuracy"
+              label={t("stats.ouAccuracy")}
               value={pct(ns.over_accuracy)}
-              sub={`${ns.over_correct} / ${ns.total} correct`}
+              sub={t("stats.correctFrac", { c: ns.over_correct, t: ns.total })}
               accent={accentForAccuracy(ns.over_accuracy)}
             />
             <StatCard
-              label="Both Correct"
+              label={t("stats.bothCorrect")}
               value={pct(ns.both_accuracy)}
-              sub={`${ns.both_correct} / ${ns.total}`}
+              sub={t("stats.frac", { c: ns.both_correct, t: ns.total })}
               accent={accentForAccuracy(ns.both_accuracy)}
             />
             <StatCard
-              label="Matches Tracked"
+              label={t("stats.matchesTracked")}
               value={ns.total.toLocaleString()}
-              sub="with stored predictions"
+              sub={t("stats.withStored")}
               accent="gray"
             />
           </div>
@@ -137,18 +139,18 @@ export default async function StatsPage({ searchParams }: PageProps) {
         {ns.by_tournament.length > 0 && (
           <section>
             <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-3">
-              By Tournament
+              {t("stats.byTournament")}
             </h2>
             <LeagueTable
-              rows={ns.by_tournament.map((t) => ({
-                league:          t.tournament,
-                total:           t.total,
-                result_correct:  t.result_correct,
-                goals_correct:   t.over_correct,
-                both_correct:    t.both_correct,
-                result_accuracy: t.result_accuracy,
-                goals_accuracy:  t.over_accuracy,
-                both_accuracy:   t.both_accuracy,
+              rows={ns.by_tournament.map((row) => ({
+                league:          row.tournament,
+                total:           row.total,
+                result_correct:  row.result_correct,
+                goals_correct:   row.over_correct,
+                both_correct:    row.both_correct,
+                result_accuracy: row.result_accuracy,
+                goals_accuracy:  row.over_accuracy,
+                both_accuracy:   row.both_accuracy,
               }))}
             />
           </section>
@@ -158,7 +160,7 @@ export default async function StatsPage({ searchParams }: PageProps) {
         {ns.by_confidence.length > 0 && (
           <section>
             <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-3">
-              By Confidence Level
+              {t("stats.byConfidence")}
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               {ns.by_confidence.map((c) => (
@@ -172,11 +174,11 @@ export default async function StatsPage({ searchParams }: PageProps) {
                     {c.confidence === "LOW" && "🔴 "}
                     {c.confidence.toLowerCase()}
                     <span className="ml-2 text-xs font-normal text-gray-500">
-                      {c.total} matches
+                      {t("stats.nMatches", { n: c.total })}
                     </span>
                   </p>
                   <AccuracyBar
-                    label="Result accuracy"
+                    label={t("stats.resultAccuracyBar")}
                     value={c.result_accuracy}
                     color={
                       c.confidence === "HIGH"   ? "bg-green-500" :
@@ -185,7 +187,7 @@ export default async function StatsPage({ searchParams }: PageProps) {
                     }
                   />
                   <p className="text-xs text-gray-500">
-                    {c.result_correct} / {c.total} correct
+                    {t("stats.correctFrac", { c: c.result_correct, t: c.total })}
                   </p>
                 </div>
               ))}
@@ -197,13 +199,13 @@ export default async function StatsPage({ searchParams }: PageProps) {
         {ns.draw_stats && (
           <section>
             <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-3">
-              Draw Prediction
+              {t("stats.drawPrediction")}
             </h2>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-              <StatCard label="Total Draws"      value={ns.draw_stats.total_draws}     sub="actual draws" accent="gray" />
-              <StatCard label="Draw Predictions" value={ns.draw_stats.predicted_draws}  sub="predicted as draw" accent="gray" />
-              <StatCard label="Draw Recall"      value={pct(ns.draw_stats.recall)}     sub="of actual draws caught" accent={accentForAccuracy(ns.draw_stats.recall)} />
-              <StatCard label="Draw Precision"   value={pct(ns.draw_stats.precision)}  sub="of draw preds correct" accent={accentForAccuracy(ns.draw_stats.precision)} />
+              <StatCard label={t("stats.totalDraws")}      value={ns.draw_stats.total_draws}     sub={t("stats.actualDraws")} accent="gray" />
+              <StatCard label={t("stats.drawPredictions")} value={ns.draw_stats.predicted_draws}  sub={t("stats.predictedAsDraw")} accent="gray" />
+              <StatCard label={t("stats.drawRecall")}      value={pct(ns.draw_stats.recall)}     sub={t("stats.ofActualDrawsCaught")} accent={accentForAccuracy(ns.draw_stats.recall)} />
+              <StatCard label={t("stats.drawPrecision")}   value={pct(ns.draw_stats.precision)}  sub={t("stats.ofDrawPredsCorrect")} accent={accentForAccuracy(ns.draw_stats.precision)} />
             </div>
           </section>
         )}
@@ -243,31 +245,28 @@ export default async function StatsPage({ searchParams }: PageProps) {
     <div className="space-y-10">
       {/* Header */}
       <div>
-        <h1 className="text-2xl font-bold text-gray-100 mb-1">📊 Model Accuracy</h1>
+        <h1 className="text-2xl font-bold text-gray-100 mb-1">{t("stats.title")}</h1>
         <p className="text-sm text-gray-500">
-          Live accuracy tracking across all completed matches with ML predictions.
-          Refreshed every hour · last computed {computedAt}.
+          {t("stats.subtitle", { when: computedAt })}
         </p>
       </div>
 
       {/* Methodology cutoff — honest flag: all-time numbers mix two models */}
       {s.methodology && s.methodology.settled_before > 0 && (
         <div className="rounded-xl border border-amber-700/40 bg-amber-950/20 p-4 text-sm">
-          <p className="font-semibold text-amber-300 mb-1">⚠️ Αλλαγή μοντέλου — {s.methodology.cutoff}</p>
+          <p className="font-semibold text-amber-300 mb-1">{t("stats.methodology.title", { cutoff: s.methodology.cutoff })}</p>
           <p className="text-gray-300 leading-relaxed">
-            Το μοντέλο έγινε <span className="font-medium text-gray-100">market-independent</span> στις{" "}
-            {s.methodology.cutoff} (αφαιρέθηκαν market features + anchoring). Τα{" "}
-            <span className="font-medium text-gray-100">{s.methodology.settled_before}</span> παιχνίδια πριν
-            σερβιρίστηκαν από το παλιό (anchored) μοντέλο, ενώ{" "}
-            <span className="font-medium text-gray-100">{s.methodology.settled_after}</span> από το τωρινό.
-            Τα «All Time» νούμερα παρακάτω αναμειγνύουν τις δύο μεθοδολογίες — τα rolling 7d/30d είναι πιο
-            αντιπροσωπευτικά του τωρινού μοντέλου.
+            {t("stats.methodology.body", {
+              cutoff: s.methodology.cutoff,
+              before: s.methodology.settled_before,
+              after: s.methodology.settled_after,
+            })}
           </p>
           {/* Per-regime accuracy — no methodology mixing within a row */}
           {s.methodology.regimes && s.methodology.regimes.length > 0 && (
             <div className="mt-3 space-y-1">
               <div className="grid grid-cols-[1fr_4.5rem_4.5rem_3.5rem] gap-2 text-[11px] text-gray-500 uppercase tracking-wide">
-                <span>Περίοδος μοντέλου</span>
+                <span>{t("stats.methodology.regime")}</span>
                 <span className="text-right">1×2</span>
                 <span className="text-right">O/U</span>
                 <span className="text-right">N</span>
@@ -280,7 +279,7 @@ export default async function StatsPage({ searchParams }: PageProps) {
                   <span className="text-gray-300">
                     {r.regime}
                     <span className="text-gray-600 text-xs">
-                      {" "}({r.from_date ?? "…"} → {r.to_date ?? "τώρα"})
+                      {" "}({r.from_date ?? "…"} → {r.to_date ?? t("stats.methodology.now")})
                     </span>
                   </span>
                   <span className="text-right tabular-nums text-gray-200">
@@ -300,9 +299,9 @@ export default async function StatsPage({ searchParams }: PageProps) {
       {/* Injury adjustment: raw vs adjusted accuracy (same rows) */}
       {s.injury_adjustment && s.injury_adjustment.matches >= 5 && (
         <div className="rounded-xl border border-pitch-700 bg-pitch-800/60 p-4 text-sm">
-          <p className="font-semibold text-gray-300 mb-1">🩹 Injury adjustment — μετρημένη επίδραση</p>
+          <p className="font-semibold text-gray-300 mb-1">{t("stats.injury.title")}</p>
           <p className="text-gray-400 text-xs mb-2">
-            Ίδια {s.injury_adjustment.matches} παιχνίδια, ίδιο μοντέλο — μόνο το injury layer αλλάζει.
+            {t("stats.injury.body", { n: s.injury_adjustment.matches })}
           </p>
           <div className="flex gap-6 tabular-nums">
             <span>
@@ -332,49 +331,49 @@ export default async function StatsPage({ searchParams }: PageProps) {
           <div className="flex items-center gap-2 mb-4">
             <span className="text-lg">⚡</span>
             <h2 className="text-sm font-semibold text-amber-300 uppercase tracking-wide">
-              Top AI Picks — ιστορική ακρίβεια
+              {t("stats.topPicks.title")}
             </h2>
             <span className="ml-auto text-xs text-gray-500">
-              Top 3 ανά ημέρα · high confidence → μεγαλύτερη πιθανότητα
+              {t("stats.topPicks.caption")}
             </span>
           </div>
 
           {/* Hero cards */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-4">
             <div className="rounded-lg bg-pitch-800/80 border border-amber-700/30 p-4 text-center">
-              <p className="text-xs text-gray-500 uppercase tracking-wide mb-1">Ακρίβεια</p>
+              <p className="text-xs text-gray-500 uppercase tracking-wide mb-1">{t("stats.topPicks.accuracy")}</p>
               <p className={`text-3xl font-bold ${
                 topPicks.accuracy >= 0.57 ? "text-green-400" :
                 topPicks.accuracy >= 0.48 ? "text-yellow-400" : "text-red-400"
               }`}>
                 {pct(topPicks.accuracy)}
               </p>
-              <p className="text-xs text-gray-500 mt-1">{topPicks.correct} / {topPicks.total} σωστές</p>
+              <p className="text-xs text-gray-500 mt-1">{t("stats.topPicks.correctN", { c: topPicks.correct, t: topPicks.total })}</p>
             </div>
 
             <div className="rounded-lg bg-pitch-800/80 border border-amber-700/30 p-4 text-center">
-              <p className="text-xs text-gray-500 uppercase tracking-wide mb-1">Vs Γενική</p>
+              <p className="text-xs text-gray-500 uppercase tracking-wide mb-1">{t("stats.topPicks.vsOverall")}</p>
               <p className={`text-3xl font-bold ${
                 topPicks.vs_overall_accuracy > 0.02 ? "text-green-400" :
                 topPicks.vs_overall_accuracy > -0.02 ? "text-yellow-400" : "text-red-400"
               }`}>
                 {topPicks.vs_overall_accuracy >= 0 ? "+" : ""}{pct(topPicks.vs_overall_accuracy)}
               </p>
-              <p className="text-xs text-gray-500 mt-1">διαφορά από {pct(all.result_accuracy)} overall</p>
+              <p className="text-xs text-gray-500 mt-1">{t("stats.topPicks.diffFrom", { pct: pct(all.result_accuracy) })}</p>
             </div>
 
             <div className="rounded-lg bg-pitch-800/80 border border-amber-700/30 p-4 text-center">
-              <p className="text-xs text-gray-500 uppercase tracking-wide mb-1">Μέση Πιθανότητα</p>
+              <p className="text-xs text-gray-500 uppercase tracking-wide mb-1">{t("stats.topPicks.avgProb")}</p>
               <p className="text-3xl font-bold text-amber-400">
                 {Math.round(topPicks.avg_pick_prob * 100)}%
               </p>
-              <p className="text-xs text-gray-500 mt-1">confidence του top pick</p>
+              <p className="text-xs text-gray-500 mt-1">{t("stats.topPicks.topPickConfidence")}</p>
             </div>
 
             <div className="rounded-lg bg-pitch-800/80 border border-amber-700/30 p-4 text-center">
-              <p className="text-xs text-gray-500 uppercase tracking-wide mb-1">Σύνολο Picks</p>
+              <p className="text-xs text-gray-500 uppercase tracking-wide mb-1">{t("stats.topPicks.totalPicks")}</p>
               <p className="text-3xl font-bold text-gray-100">{topPicks.total}</p>
-              <p className="text-xs text-gray-500 mt-1">~3 ανά ημέρα παιχνιδιών</p>
+              <p className="text-xs text-gray-500 mt-1">{t("stats.topPicks.perMatchDay")}</p>
             </div>
           </div>
 
@@ -382,40 +381,38 @@ export default async function StatsPage({ searchParams }: PageProps) {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {topPicks.result_picks > 0 && (
               <div className="rounded-lg bg-pitch-800/60 border border-pitch-700 p-3">
-                <p className="text-xs font-semibold text-gray-400 uppercase mb-2">1×2 Αποτέλεσμα</p>
+                <p className="text-xs font-semibold text-gray-400 uppercase mb-2">{t("stats.topPicks.result")}</p>
                 <div className="flex items-end justify-between">
                   <div>
                     <p className={`text-2xl font-bold ${
                       topPicks.result_accuracy >= 0.57 ? "text-green-400" :
                       topPicks.result_accuracy >= 0.48 ? "text-yellow-400" : "text-red-400"
                     }`}>{pct(topPicks.result_accuracy)}</p>
-                    <p className="text-xs text-gray-500">{topPicks.result_correct}/{topPicks.result_picks} σωστές</p>
+                    <p className="text-xs text-gray-500">{t("stats.topPicks.correctN", { c: topPicks.result_correct, t: topPicks.result_picks })}</p>
                   </div>
-                  <p className="text-xs text-gray-600">{topPicks.result_picks} picks</p>
+                  <p className="text-xs text-gray-600">{t("stats.topPicks.picks", { n: topPicks.result_picks })}</p>
                 </div>
               </div>
             )}
             {topPicks.goals_picks > 0 && (
               <div className="rounded-lg bg-pitch-800/60 border border-pitch-700 p-3">
-                <p className="text-xs font-semibold text-gray-400 uppercase mb-2">Over/Under 2.5</p>
+                <p className="text-xs font-semibold text-gray-400 uppercase mb-2">{t("stats.topPicks.ou")}</p>
                 <div className="flex items-end justify-between">
                   <div>
                     <p className={`text-2xl font-bold ${
                       topPicks.goals_accuracy >= 0.57 ? "text-green-400" :
                       topPicks.goals_accuracy >= 0.48 ? "text-yellow-400" : "text-red-400"
                     }`}>{pct(topPicks.goals_accuracy)}</p>
-                    <p className="text-xs text-gray-500">{topPicks.goals_correct}/{topPicks.goals_picks} σωστές</p>
+                    <p className="text-xs text-gray-500">{t("stats.topPicks.correctN", { c: topPicks.goals_correct, t: topPicks.goals_picks })}</p>
                   </div>
-                  <p className="text-xs text-gray-600">{topPicks.goals_picks} picks</p>
+                  <p className="text-xs text-gray-600">{t("stats.topPicks.picks", { n: topPicks.goals_picks })}</p>
                 </div>
               </div>
             )}
           </div>
 
           <p className="text-[10px] text-gray-600 mt-3 leading-relaxed">
-            Ίδια λογική με την αρχική σελίδα: top 3 αγώνες ανά ημέρα ταξινομημένοι κατά high confidence
-            → μεγαλύτερη πιθανότητα αποτελέσματος. Μετράει αν η προβλεπόμενη έκβαση (Home Win / Away Win / Draw / Over / Under)
-            ήταν σωστή.
+            {t("stats.topPicks.note")}
           </p>
         </section>
       )}
@@ -423,31 +420,31 @@ export default async function StatsPage({ searchParams }: PageProps) {
       {/* ── All-time hero cards ────────────────────────────────────────────── */}
       <section>
         <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-3">
-          All Time · {all.total} matches
+          {t("stats.allTimeN", { n: all.total })}
         </h2>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
           <StatCard
-            label="Result Accuracy"
+            label={t("stats.resultAccuracy")}
             value={pct(all.result_accuracy)}
-            sub={`${all.result_correct} / ${all.total} correct`}
+            sub={t("stats.correctFrac", { c: all.result_correct, t: all.total })}
             accent={accentForAccuracy(all.result_accuracy)}
           />
           <StatCard
-            label="O/U Accuracy"
+            label={t("stats.ouAccuracy")}
             value={pct(all.goals_accuracy)}
-            sub={`${all.goals_correct} / ${all.total} correct`}
+            sub={t("stats.correctFrac", { c: all.goals_correct, t: all.total })}
             accent={accentForAccuracy(all.goals_accuracy)}
           />
           <StatCard
-            label="Both Correct"
+            label={t("stats.bothCorrect")}
             value={pct(all.both_accuracy)}
-            sub={`${all.both_correct} / ${all.total}`}
+            sub={t("stats.frac", { c: all.both_correct, t: all.total })}
             accent={accentForAccuracy(all.both_accuracy)}
           />
           <StatCard
-            label="Matches Tracked"
+            label={t("stats.matchesTracked")}
             value={all.total.toLocaleString()}
-            sub="with stored predictions"
+            sub={t("stats.withStored")}
             accent="gray"
           />
         </div>
@@ -456,33 +453,33 @@ export default async function StatsPage({ searchParams }: PageProps) {
       {/* ── Rolling windows ────────────────────────────────────────────────── */}
       <section>
         <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-3">
-          Rolling Performance
+          {t("stats.rollingPerformance")}
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {/* Last 7 days */}
           <div className="rounded-xl border border-pitch-700 bg-pitch-800/60 p-4 space-y-3">
             <p className="text-sm font-semibold text-gray-300">
-              Last 7 days
+              {t("stats.last7")}
               <span className="ml-2 text-xs font-normal text-gray-500">
-                {last7.total} matches
+                {t("stats.nMatches", { n: last7.total })}
               </span>
             </p>
-            <AccuracyBar label="Result" value={last7.result_accuracy} color="bg-green-500" />
-            <AccuracyBar label="O/U"    value={last7.goals_accuracy}  color="bg-blue-500" />
-            <AccuracyBar label="Both"   value={last7.both_accuracy}   color="bg-purple-500" />
+            <AccuracyBar label={t("stats.result")} value={last7.result_accuracy} color="bg-green-500" />
+            <AccuracyBar label={t("stats.ou")}     value={last7.goals_accuracy}  color="bg-blue-500" />
+            <AccuracyBar label={t("stats.both")}   value={last7.both_accuracy}   color="bg-purple-500" />
           </div>
 
           {/* Last 30 days */}
           <div className="rounded-xl border border-pitch-700 bg-pitch-800/60 p-4 space-y-3">
             <p className="text-sm font-semibold text-gray-300">
-              Last 30 days
+              {t("stats.last30")}
               <span className="ml-2 text-xs font-normal text-gray-500">
-                {last30.total} matches
+                {t("stats.nMatches", { n: last30.total })}
               </span>
             </p>
-            <AccuracyBar label="Result" value={last30.result_accuracy} color="bg-green-500" />
-            <AccuracyBar label="O/U"    value={last30.goals_accuracy}  color="bg-blue-500" />
-            <AccuracyBar label="Both"   value={last30.both_accuracy}   color="bg-purple-500" />
+            <AccuracyBar label={t("stats.result")} value={last30.result_accuracy} color="bg-green-500" />
+            <AccuracyBar label={t("stats.ou")}     value={last30.goals_accuracy}  color="bg-blue-500" />
+            <AccuracyBar label={t("stats.both")}   value={last30.both_accuracy}   color="bg-purple-500" />
           </div>
         </div>
       </section>
@@ -490,7 +487,7 @@ export default async function StatsPage({ searchParams }: PageProps) {
       {/* ── By league ─────────────────────────────────────────────────────── */}
       <section>
         <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-3">
-          By League
+          {t("stats.byLeague")}
         </h2>
         <LeagueTable rows={s.by_league} />
       </section>
@@ -499,18 +496,18 @@ export default async function StatsPage({ searchParams }: PageProps) {
       {nationalStats && nationalStats.by_tournament.length > 0 && (
         <section>
           <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-3">
-            🌍 International — By Tournament
+            {t("stats.intlByTournament")}
           </h2>
           <LeagueTable
-            rows={nationalStats.by_tournament.map((t) => ({
-              league:          t.tournament,
-              total:           t.total,
-              result_correct:  t.result_correct,
-              goals_correct:   t.over_correct,
-              both_correct:    t.both_correct,
-              result_accuracy: t.result_accuracy,
-              goals_accuracy:  t.over_accuracy,
-              both_accuracy:   t.both_accuracy,
+            rows={nationalStats.by_tournament.map((row) => ({
+              league:          row.tournament,
+              total:           row.total,
+              result_correct:  row.result_correct,
+              goals_correct:   row.over_correct,
+              both_correct:    row.both_correct,
+              result_accuracy: row.result_accuracy,
+              goals_accuracy:  row.over_accuracy,
+              both_accuracy:   row.both_accuracy,
             }))}
           />
         </section>
@@ -521,7 +518,7 @@ export default async function StatsPage({ searchParams }: PageProps) {
           formula/thresholds, so the tiers are NOT comparable — shown separately. */}
       <section>
         <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-3">
-          By Confidence Level <span className="text-gray-600 normal-case">(club leagues)</span>
+          {t("stats.byConfidence")} <span className="text-gray-600 normal-case">{t("stats.byConfidenceClub")}</span>
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           {[confHigh, confMedium, confLow].filter(Boolean).map((c) => (
@@ -535,11 +532,11 @@ export default async function StatsPage({ searchParams }: PageProps) {
                 {c!.confidence === "low" && "🔴 "}
                 {c!.confidence}
                 <span className="ml-2 text-xs font-normal text-gray-500">
-                  {c!.total} matches
+                  {t("stats.nMatches", { n: c!.total })}
                 </span>
               </p>
               <AccuracyBar
-                label="Result accuracy"
+                label={t("stats.resultAccuracyBar")}
                 value={c!.result_accuracy}
                 color={
                   c!.confidence === "high"   ? "bg-green-500" :
@@ -548,20 +545,20 @@ export default async function StatsPage({ searchParams }: PageProps) {
                 }
               />
               <p className="text-xs text-gray-500">
-                {c!.result_correct} / {c!.total} correct
+                {t("stats.correctFrac", { c: c!.result_correct, t: c!.total })}
               </p>
             </div>
           ))}
         </div>
         <p className="text-xs text-gray-600 mt-2">
-          High confidence = max outcome probability ≥ 55% ΚΑΙ σήμα στο O/U · Medium ≥ 42% · Low &lt; 42%
+          {t("stats.confHelp")}
         </p>
 
         {/* National — different label semantics (p_max ≥ 0.65 → HIGH, no O/U term) */}
         {s.by_confidence_national && s.by_confidence_national.some((c) => c.total > 0) && (
           <div className="mt-4">
             <h3 className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">
-              Internationals <span className="text-gray-600 normal-case">(ξεχωριστή κλίμακα: HIGH = p ≥ 65%)</span>
+              {t("stats.internationals")} <span className="text-gray-600 normal-case">{t("stats.intlScale")}</span>
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               {s.by_confidence_national.filter((c) => c.total > 0).map((c) => (
@@ -574,10 +571,10 @@ export default async function StatsPage({ searchParams }: PageProps) {
                     {c.confidence === "medium" && "🟡 "}
                     {c.confidence === "low" && "🔴 "}
                     {c.confidence}
-                    <span className="ml-2 text-xs font-normal text-gray-500">{c.total} matches</span>
+                    <span className="ml-2 text-xs font-normal text-gray-500">{t("stats.nMatches", { n: c.total })}</span>
                   </p>
                   <AccuracyBar
-                    label="Result accuracy"
+                    label={t("stats.resultAccuracyBar")}
                     value={c.result_accuracy}
                     color={
                       c.confidence === "high"   ? "bg-green-500" :
@@ -585,7 +582,7 @@ export default async function StatsPage({ searchParams }: PageProps) {
                       "bg-gray-500"
                     }
                   />
-                  <p className="text-xs text-gray-500">{c.result_correct} / {c.total} correct</p>
+                  <p className="text-xs text-gray-500">{t("stats.correctFrac", { c: c.result_correct, t: c.total })}</p>
                 </div>
               ))}
             </div>
@@ -596,19 +593,19 @@ export default async function StatsPage({ searchParams }: PageProps) {
       {/* ── Predicted outcome breakdown ───────────────────────────────────── */}
       <section>
         <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-3">
-          By Predicted Outcome
+          {t("stats.byPredictedOutcome")}
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {/* Result outcomes */}
           <div className="rounded-xl border border-pitch-700 bg-pitch-800/60 p-4 space-y-3">
-            <p className="text-sm font-semibold text-gray-300">Match Result</p>
+            <p className="text-sm font-semibold text-gray-300">{t("stats.matchResult")}</p>
             {resultOutcomes.map((o) => (
               <div key={o.predicted} className="space-y-1">
                 <AccuracyBar
                   label={
-                    o.predicted === "H" ? "🏠 Home win" :
-                    o.predicted === "D" ? "🤝 Draw" :
-                    "✈️ Away win"
+                    o.predicted === "H" ? t("stats.homeWin") :
+                    o.predicted === "D" ? t("stats.draw") :
+                    t("stats.awayWin")
                   }
                   value={o.accuracy}
                   color={
@@ -618,7 +615,7 @@ export default async function StatsPage({ searchParams }: PageProps) {
                   }
                 />
                 <p className="text-xs text-gray-500 pl-1">
-                  {o.correct} / {o.total} correct
+                  {t("stats.correctFrac", { c: o.correct, t: o.total })}
                 </p>
               </div>
             ))}
@@ -626,16 +623,16 @@ export default async function StatsPage({ searchParams }: PageProps) {
 
           {/* O/U outcomes */}
           <div className="rounded-xl border border-pitch-700 bg-pitch-800/60 p-4 space-y-3">
-            <p className="text-sm font-semibold text-gray-300">Over / Under 2.5</p>
+            <p className="text-sm font-semibold text-gray-300">{t("stats.overUnder")}</p>
             {goalsOutcomes.map((o) => (
               <div key={o.predicted} className="space-y-1">
                 <AccuracyBar
-                  label={o.predicted === "OVER" ? "⬆️ Over 2.5" : "⬇️ Under 2.5"}
+                  label={o.predicted === "OVER" ? t("stats.over25") : t("stats.under25")}
                   value={o.accuracy}
                   color={o.predicted === "OVER" ? "bg-orange-500" : "bg-sky-500"}
                 />
                 <p className="text-xs text-gray-500 pl-1">
-                  {o.correct} / {o.total} correct
+                  {t("stats.correctFrac", { c: o.correct, t: o.total })}
                 </p>
               </div>
             ))}
@@ -646,37 +643,36 @@ export default async function StatsPage({ searchParams }: PageProps) {
       {/* ── Draw specialist stats ──────────────────────────────────────────── */}
       <section>
         <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-3">
-          Draw Prediction
+          {t("stats.drawPrediction")}
         </h2>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
           <StatCard
-            label="Total Draws"
+            label={t("stats.totalDraws")}
             value={draw.total_draws}
-            sub="actual draws in dataset"
+            sub={t("stats.totalDrawsSub")}
             accent="gray"
           />
           <StatCard
-            label="Draw Predictions"
+            label={t("stats.drawPredictions")}
             value={draw.predicted_draws}
-            sub="matches predicted as draw"
+            sub={t("stats.drawPredictionsSub")}
             accent="gray"
           />
           <StatCard
-            label="Draw Recall"
+            label={t("stats.drawRecall")}
             value={pct(draw.recall)}
-            sub="of actual draws caught"
+            sub={t("stats.drawRecallSub")}
             accent={accentForAccuracy(draw.recall)}
           />
           <StatCard
-            label="Draw Precision"
+            label={t("stats.drawPrecision")}
             value={pct(draw.precision)}
-            sub="of draw predictions correct"
+            sub={t("stats.drawPrecisionSub")}
             accent={accentForAccuracy(draw.precision)}
           />
         </div>
         <p className="text-xs text-gray-600 mt-2">
-          Draws ({pct(draw.total_draws / (all.total || 1))} of matches) are the hardest outcome to predict.
-          Recall = what fraction of actual draws we caught · Precision = how reliable our draw calls are.
+          {t("stats.drawNote", { pct: pct(draw.total_draws / (all.total || 1)) })}
         </p>
       </section>
 
@@ -684,21 +680,19 @@ export default async function StatsPage({ searchParams }: PageProps) {
       {btts && (
         <section>
           <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-3">
-            Goal / No Goal (BTTS)
+            {t("stats.bttsTitle")}
           </h2>
 
           {/* What is GG/NG */}
           <div className="rounded-xl border border-pitch-700 bg-pitch-800/40 p-3 mb-3 text-xs text-gray-400 leading-relaxed">
-            <span className="font-semibold text-gray-300">GG (Goal Goal)</span> = και οι δύο ομάδες σκόραραν τουλάχιστον 1 γκολ.{" "}
-            <span className="font-semibold text-gray-300">NG (No Goal)</span> = τουλάχιστον μία ομάδα δεν σκόραρε.{" "}
-            Η πρόβλεψη γίνεται μέσω του Poisson μοντέλου (από τα αποθηκευμένα λ).
+            {t("stats.bttsIntro", { gg: t("stats.bttsGG"), ng: t("stats.bttsNG") })}
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-3">
             <div className="rounded-xl border border-pitch-700 bg-pitch-800/60 p-4 text-center">
-              <p className="text-xs text-gray-500 uppercase tracking-wide mb-1">Δείγμα</p>
+              <p className="text-xs text-gray-500 uppercase tracking-wide mb-1">{t("stats.bttsSample")}</p>
               <p className="text-2xl font-bold text-gray-100">{btts.total_gg + btts.total_ng}</p>
-              <p className="text-xs text-gray-500 mt-1">ολοκληρωμένοι αγώνες με λ</p>
+              <p className="text-xs text-gray-500 mt-1">{t("stats.bttsCompletedWithLambda")}</p>
               <div className="flex justify-center gap-4 mt-2 text-xs">
                 <span className="text-green-400 font-semibold">{btts.total_gg} GG</span>
                 <span className="text-gray-500">/</span>
@@ -706,53 +700,53 @@ export default async function StatsPage({ searchParams }: PageProps) {
               </div>
             </div>
             <div className="rounded-xl border border-pitch-700 bg-pitch-800/60 p-4 text-center">
-              <p className="text-xs text-gray-500 uppercase tracking-wide mb-1">Συνολική Ακρίβεια</p>
+              <p className="text-xs text-gray-500 uppercase tracking-wide mb-1">{t("stats.bttsOverallAcc")}</p>
               <p className={`text-2xl font-bold ${accentForAccuracy(btts.overall_accuracy) === "green" ? "text-green-400" : accentForAccuracy(btts.overall_accuracy) === "yellow" ? "text-yellow-400" : "text-red-400"}`}>
                 {pct(btts.overall_accuracy)}
               </p>
               <p className="text-xs text-gray-500 mt-1">
-                {btts.correctly_predicted_gg + btts.correctly_predicted_ng} / {btts.total_gg + btts.total_ng} σωστές (GG+NG)
+                {t("stats.bttsCorrectGGNG", { c: btts.correctly_predicted_gg + btts.correctly_predicted_ng, t: btts.total_gg + btts.total_ng })}
               </p>
             </div>
             <div className="rounded-xl border border-pitch-700 bg-pitch-800/60 p-4 text-center">
-              <p className="text-xs text-gray-500 uppercase tracking-wide mb-1">GG Ακρίβεια</p>
+              <p className="text-xs text-gray-500 uppercase tracking-wide mb-1">{t("stats.bttsGGAcc")}</p>
               <p className={`text-2xl font-bold ${accentForAccuracy(btts.gg_precision) === "green" ? "text-green-400" : accentForAccuracy(btts.gg_precision) === "yellow" ? "text-yellow-400" : "text-red-400"}`}>
                 {pct(btts.gg_precision)}
               </p>
               <p className="text-xs text-gray-500 mt-1">
-                {btts.correctly_predicted_gg} / {btts.predicted_gg} GG προβλέψεων σωστές
+                {t("stats.bttsGGPredsCorrect", { c: btts.correctly_predicted_gg, t: btts.predicted_gg })}
               </p>
             </div>
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
             <div className="rounded-xl border border-pitch-700 bg-pitch-800/60 p-4">
-              <p className="text-xs text-gray-500 mb-1">GG Recall</p>
+              <p className="text-xs text-gray-500 mb-1">{t("stats.bttsGGRecall")}</p>
               <p className={`text-xl font-bold ${accentForAccuracy(btts.gg_recall) === "green" ? "text-green-400" : accentForAccuracy(btts.gg_recall) === "yellow" ? "text-yellow-400" : "text-red-400"}`}>
                 {pct(btts.gg_recall)}
               </p>
               <p className="text-xs text-gray-600 mt-1 leading-tight">
-                Από {btts.total_gg} πραγματικά GG, πιάσαμε τα {btts.correctly_predicted_gg}
+                {t("stats.bttsGGRecallSub", { t: btts.total_gg, c: btts.correctly_predicted_gg })}
               </p>
             </div>
             <div className="rounded-xl border border-pitch-700 bg-pitch-800/60 p-4">
-              <p className="text-xs text-gray-500 mb-1">NG Recall</p>
+              <p className="text-xs text-gray-500 mb-1">{t("stats.bttsNGRecall")}</p>
               <p className={`text-xl font-bold ${accentForAccuracy(btts.ng_recall) === "green" ? "text-green-400" : accentForAccuracy(btts.ng_recall) === "yellow" ? "text-yellow-400" : "text-red-400"}`}>
                 {pct(btts.ng_recall)}
               </p>
               <p className="text-xs text-gray-600 mt-1 leading-tight">
-                Από {btts.total_ng} πραγματικά NG, πιάσαμε τα {btts.correctly_predicted_ng}
+                {t("stats.bttsNGRecallSub", { t: btts.total_ng, c: btts.correctly_predicted_ng })}
               </p>
             </div>
             <div className="rounded-xl border border-pitch-700 bg-pitch-800/60 p-4">
-              <p className="text-xs text-gray-500 mb-1">GG Predictions</p>
+              <p className="text-xs text-gray-500 mb-1">{t("stats.bttsGGPredictions")}</p>
               <p className="text-xl font-bold text-gray-200">{btts.predicted_gg}</p>
-              <p className="text-xs text-gray-600 mt-1 leading-tight">αγώνες που προβλέψαμε GG</p>
+              <p className="text-xs text-gray-600 mt-1 leading-tight">{t("stats.bttsGGPredictedSub")}</p>
             </div>
             <div className="rounded-xl border border-pitch-700 bg-pitch-800/60 p-4">
-              <p className="text-xs text-gray-500 mb-1">NG Predictions</p>
+              <p className="text-xs text-gray-500 mb-1">{t("stats.bttsNGPredictions")}</p>
               <p className="text-xl font-bold text-gray-200">{btts.predicted_ng}</p>
-              <p className="text-xs text-gray-600 mt-1 leading-tight">αγώνες που προβλέψαμε NG</p>
+              <p className="text-xs text-gray-600 mt-1 leading-tight">{t("stats.bttsNGPredictedSub")}</p>
             </div>
           </div>
         </section>
@@ -761,17 +755,17 @@ export default async function StatsPage({ searchParams }: PageProps) {
       {/* ── ROI Tracker ───────────────────────────────────────────────────── */}
       <section>
         <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-3">
-          ROI Tracker
+          {t("stats.roiTracker")}
         </h2>
         {s.roi ? (
-          <ROICard roi={s.roi} bttsStats={s.btts_stats} clv={s.clv} />
+          <ROICard roi={s.roi} bttsStats={s.btts_stats} clv={s.clv} t={t} />
         ) : (
           <div className="rounded-xl border border-pitch-700 bg-pitch-800/60 p-6 text-center">
             <p className="text-sm text-gray-500">
-              💰 ROI tracking starts once bookmaker odds are stored at prediction time.
+              {t("stats.roiEmpty")}
             </p>
             <p className="text-xs text-gray-600 mt-1">
-              Re-run <code className="font-mono bg-pitch-700 px-1 rounded">compute_predictions.py</code> for upcoming matches to begin accumulating data.
+              {t("stats.roiEmptySub")}
             </p>
           </div>
         )}
@@ -780,7 +774,7 @@ export default async function StatsPage({ searchParams }: PageProps) {
       {/* ── Cumulative EV Chart ────────────────────────────────────────────── */}
       <section>
         <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-3">
-          Cumulative EV vs P&L
+          {t("stats.cumEV")}
         </h2>
         <EVChart series={s.ev_series} />
       </section>
@@ -788,7 +782,7 @@ export default async function StatsPage({ searchParams }: PageProps) {
       {/* ── Calibration charts ────────────────────────────────────────────── */}
       <section>
         <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-3">
-          Calibration
+          {t("stats.calibration")}
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           <CalibrationChart buckets={s.calibration} />
@@ -803,16 +797,16 @@ export default async function StatsPage({ searchParams }: PageProps) {
       {s.by_model_version.length > 1 && (
         <section>
           <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-3">
-            By Model Version
+            {t("stats.byModelVersion")}
           </h2>
           <div className="overflow-x-auto rounded-xl border border-pitch-700">
             <table className="w-full text-sm">
               <thead>
                 <tr className="bg-pitch-800 text-gray-400 text-xs uppercase tracking-wide">
-                  <th className="px-4 py-3 text-left">Version</th>
-                  <th className="px-4 py-3 text-right">Games</th>
-                  <th className="px-4 py-3 text-right">Result %</th>
-                  <th className="px-4 py-3 text-right">O/U %</th>
+                  <th className="px-4 py-3 text-left">{t("stats.version")}</th>
+                  <th className="px-4 py-3 text-right">{t("stats.games")}</th>
+                  <th className="px-4 py-3 text-right">{t("stats.resultPct")}</th>
+                  <th className="px-4 py-3 text-right">{t("stats.ouPct")}</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-pitch-700">

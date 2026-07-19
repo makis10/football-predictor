@@ -1,38 +1,39 @@
 import { type Standings } from "@/lib/api";
+import type { TFunc } from "@/lib/i18n";
 
-// The API names the zones in the language of the competition regulations; the
-// UI speaks Greek. Anything unmapped (a new competition) falls through as-is
-// rather than rendering blank.
-const ZONE_EL: Record<string, string> = {
-  "Champions League": "Champions League",
-  "Promotion":        "Άνοδος",
-  "Europe":           "Ευρώπη",
-  "Libertadores":     "Libertadores",
-  "Round of 16":      "Απευθείας 16άδα",
-  "Play-off":         "Play-off 16άδας",
-  "Relegation":       "Υποβιβασμός",
-  "Eliminated":       "Αποκλεισμός",
+// The API names the zones in the language of the competition regulations; we
+// map each to a dictionary key so the label follows the active language.
+// Anything unmapped (a new competition) falls through as-is rather than blank.
+const ZONE_KEY: Record<string, string> = {
+  "Champions League": "zone.championsLeague",
+  "Promotion":        "zone.promotion",
+  "Europe":           "zone.europe",
+  "Libertadores":     "zone.libertadores",
+  "Round of 16":      "zone.round16",
+  "Play-off":         "zone.playoff",
+  "Relegation":       "zone.relegation",
+  "Eliminated":       "zone.eliminated",
 };
 
-const zoneLabel = (s: string) => ZONE_EL[s] ?? s;
+const zoneLabel = (s: string, t: TFunc) => (ZONE_KEY[s] ? t(ZONE_KEY[s]) : s);
 
 /**
  * League table with zone shading. The top zone means different things in
  * different competitions (Champions League vs promotion play-off vs
  * Libertadores), so its label comes from the API rather than being hardcoded.
  */
-export default function StandingsTable({ table }: { table: Standings }) {
+export default function StandingsTable({ table, t }: { table: Standings; t: TFunc }) {
   if (!table || table.rows.length === 0) return null;
 
   return (
     <div className="card p-5 space-y-3">
       <div className="flex items-baseline justify-between gap-3">
         <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
-          📋 Βαθμολογία
+          {t("st.title")}
         </h2>
         <span className="text-[11px] text-gray-600 tabular-nums">
           {table.season}
-          {table.is_final && " · τελική"}
+          {table.is_final && ` · ${t("st.final")}`}
         </span>
       </div>
 
@@ -41,13 +42,13 @@ export default function StandingsTable({ table }: { table: Standings }) {
           <thead>
             <tr className="text-[10px] uppercase tracking-wide text-gray-500">
               <th className="py-1.5 pr-2 text-left font-medium">#</th>
-              <th className="py-1.5 pr-2 text-left font-medium">Ομάδα</th>
-              <th className="py-1.5 px-1.5 text-right font-medium">Α</th>
-              <th className="py-1.5 px-1.5 text-right font-medium hidden sm:table-cell">Ν</th>
-              <th className="py-1.5 px-1.5 text-right font-medium hidden sm:table-cell">Ι</th>
-              <th className="py-1.5 px-1.5 text-right font-medium hidden sm:table-cell">Η</th>
-              <th className="py-1.5 px-1.5 text-right font-medium">Δ</th>
-              <th className="py-1.5 pl-1.5 text-right font-medium">Β</th>
+              <th className="py-1.5 pr-2 text-left font-medium">{t("st.team")}</th>
+              <th className="py-1.5 px-1.5 text-right font-medium">{t("st.p")}</th>
+              <th className="py-1.5 px-1.5 text-right font-medium hidden sm:table-cell">{t("st.w")}</th>
+              <th className="py-1.5 px-1.5 text-right font-medium hidden sm:table-cell">{t("st.d")}</th>
+              <th className="py-1.5 px-1.5 text-right font-medium hidden sm:table-cell">{t("st.l")}</th>
+              <th className="py-1.5 px-1.5 text-right font-medium">{t("st.gd")}</th>
+              <th className="py-1.5 pl-1.5 text-right font-medium">{t("st.pts")}</th>
             </tr>
           </thead>
           <tbody>
@@ -97,19 +98,19 @@ export default function StandingsTable({ table }: { table: Standings }) {
         {table.top_n > 0 && (
           <span className="flex items-center gap-1.5">
             <span className="w-2 h-2 rounded-sm bg-green-500/70" />
-            {zoneLabel(table.top_zone)}
+            {zoneLabel(table.top_zone, t)}
           </span>
         )}
         {table.playoff_zone && (
           <span className="flex items-center gap-1.5">
             <span className="w-2 h-2 rounded-sm bg-amber-500/70" />
-            {zoneLabel(table.playoff_zone)}
+            {zoneLabel(table.playoff_zone, t)}
           </span>
         )}
         {(table.bottom_n > 0 || table.playoff_zone) && (
           <span className="flex items-center gap-1.5">
             <span className="w-2 h-2 rounded-sm bg-rose-500/70" />
-            {zoneLabel(table.bottom_zone)}
+            {zoneLabel(table.bottom_zone, t)}
           </span>
         )}
       </div>

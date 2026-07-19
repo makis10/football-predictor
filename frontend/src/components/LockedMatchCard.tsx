@@ -8,8 +8,9 @@
  */
 import Link from "next/link";
 import { Match, leagueFlag, leagueLabel, formatKickoff, formatKickoffUtc, formatDate } from "@/lib/api";
+import type { TFunc } from "@/lib/i18n";
 
-export default function LockedMatchCard({ match }: { match: Match }) {
+export default function LockedMatchCard({ match, t }: { match: Match; t: TFunc }) {
   // kickoff_utc takes precedence: covers kick-offs whose UTC date crosses
   // midnight ("04:00 +1"), where kickoff_time is deliberately null.
   const when =
@@ -45,9 +46,9 @@ export default function LockedMatchCard({ match }: { match: Match }) {
         <div className="mt-2 flex items-center gap-2 text-xs">
           <span className="text-amber-400">🔒</span>
           <span className="text-gray-300">
-            Πρόβλεψη μόνο για μέλη —{" "}
+            {t("locked.membersOnly")}{" "}
             <span className="text-green-400 font-semibold group-hover:underline">
-              κάνε δωρεάν εγγραφή
+              {t("locked.signupFree")}
             </span>
           </span>
         </div>

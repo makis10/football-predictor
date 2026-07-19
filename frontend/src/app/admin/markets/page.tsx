@@ -1,6 +1,7 @@
 import { redirect } from "next/navigation";
 import { getSession, fetchWithAuth } from "@/lib/auth";
 import { type MarketRecord } from "@/lib/api";
+import { getServerT } from "@/lib/i18n-server";
 
 export const dynamic = "force-dynamic";
 
@@ -14,6 +15,7 @@ type PageProps = {
 };
 
 export default async function MarketRecordPage({ searchParams }: PageProps) {
+  const t = await getServerT();
   const session = await getSession();
   if (!(session?.user as any)?.isAdmin) redirect("/");
 
@@ -47,7 +49,7 @@ export default async function MarketRecordPage({ searchParams }: PageProps) {
 
       {!data || data.markets.length === 0 ? (
         <div className="rounded-xl border border-pitch-700 bg-pitch-900 p-8 text-center text-gray-500">
-          Δεν υπάρχουν ακόμα καταγεγραμμένα tickets.
+          {t("markets.empty")}
         </div>
       ) : (
         <div className="overflow-x-auto rounded-xl border border-pitch-700">

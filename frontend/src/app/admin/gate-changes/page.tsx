@@ -1,6 +1,7 @@
 import { redirect } from "next/navigation";
 import { getSession, fetchWithAuth } from "@/lib/auth";
 import { type GateChange } from "@/lib/api";
+import { getServerT } from "@/lib/i18n-server";
 
 export const dynamic = "force-dynamic";
 
@@ -14,6 +15,7 @@ function fmtWhen(iso: string): string {
 }
 
 export default async function GateChangesPage() {
+  const t = await getServerT();
   const session = await getSession();
   if (!(session?.user as any)?.isAdmin) redirect("/");
 
@@ -25,16 +27,14 @@ export default async function GateChangesPage() {
       <div>
         <h1 className="text-2xl font-bold">Gate Changes</h1>
         <p className="text-sm text-gray-500 mt-1">
-          Κάθε φορά που ένα market μπαίνει (promoted) ή βγαίνει (demoted) από το suggestable
-          set, καταγράφεται εδώ — το ίδιο συμβάν που στέλνει το <code>GATE_ALERT_URL</code>{" "}
-          webhook. Πιο πρόσφατα πρώτα.
+          {t("gate.descPre")} <code>GATE_ALERT_URL</code>{" "}
+          {t("gate.descPost")}
         </p>
       </div>
 
       {events.length === 0 ? (
         <div className="rounded-xl border border-pitch-700 bg-pitch-900 p-8 text-center text-gray-500">
-          Καμία αλλαγή ακόμα. Οι base markets (Home Win / Draw) ξεκινούν proven· εδώ
-          εμφανίζονται προβιβασμοί/υποβιβασμοί καθώς μαζεύεται record.
+          {t("gate.empty")}
         </div>
       ) : (
         <div className="overflow-x-auto rounded-xl border border-pitch-700">

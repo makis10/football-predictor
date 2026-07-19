@@ -9,6 +9,7 @@
  * team that has one (usually none off-season).
  */
 import { type ProjectionHistorySnapshot } from "@/lib/api";
+import { useT } from "@/components/LanguageProvider";
 
 const W = 720;
 const H = 260;
@@ -28,15 +29,15 @@ export default function ProjectionHistoryChart({
   snapshots: ProjectionHistorySnapshot[];
   topN?: number;
 }) {
+  const t = useT();
   if (snapshots.length < 2) {
     return (
       <div className="card p-5">
         <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-2">
-          📈 Εξέλιξη Αποδόσεων
+          {t("hist.title")}
         </h2>
         <p className="text-[11px] text-gray-600 leading-relaxed">
-          Το ιστορικό αποδόσεων εμφανίζεται μετά από μερικές ημερήσιες προσομοιώσεις —
-          ένα στιγμιότυπο την ημέρα.
+          {t("hist.empty")}
         </p>
       </div>
     );
@@ -68,7 +69,7 @@ export default function ProjectionHistoryChart({
   return (
     <div className="card p-5 space-y-3">
       <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
-        📈 Εξέλιξη Αποδόσεων {anyMarket && <span className="text-[11px] text-gray-600 normal-case">(— μοντέλο · - - αγορά)</span>}
+        {t("hist.title")} {anyMarket && <span className="text-[11px] text-gray-600 normal-case">{t("hist.legend")}</span>}
       </h2>
       <div className="overflow-x-auto">
         <svg viewBox={`0 0 ${W} ${H}`} className="w-full" style={{ minWidth: 420 }}>

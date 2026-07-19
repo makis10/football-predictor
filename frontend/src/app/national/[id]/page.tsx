@@ -15,6 +15,7 @@ import {
   type PlayerProp,
 } from "@/lib/api";
 import { WinProbabilityBars, GoalsProbabilityBar, BttsProbabilityBar } from "@/components/PredictionBar";
+import { getServerT } from "@/lib/i18n-server";
 import MatchAnalysisPanel from "@/components/MatchAnalysis";
 import PlayerPropsPanel from "@/components/PlayerPropsPanel";
 
@@ -48,6 +49,7 @@ function HitPill({
 }
 
 export default async function NationalMatchDetailPage({ params }: Props) {
+  const t = await getServerT();
   const id = Number((await params).id);
   if (isNaN(id)) notFound();
 
@@ -92,7 +94,7 @@ export default async function NationalMatchDetailPage({ params }: Props) {
             {prediction.home_team} <span className="text-gray-600">vs</span> {prediction.away_team}
           </p>
         </div>
-        <LockedDetailPanel home={prediction.home_team} away={prediction.away_team} />
+        <LockedDetailPanel home={prediction.home_team} away={prediction.away_team} t={t} />
       </div>
     );
   }
@@ -219,7 +221,7 @@ export default async function NationalMatchDetailPage({ params }: Props) {
                   {prediction.btts_prob >= 0.5 ? "GG" : "NG"}
                 </span>
               </div>
-              <BttsProbabilityBar bttsProb={prediction.btts_prob} />
+              <BttsProbabilityBar bttsProb={prediction.btts_prob} t={t} />
             </div>
           )}
         </>
@@ -263,7 +265,7 @@ export default async function NationalMatchDetailPage({ params }: Props) {
             {hasResult && prediction.cards_hit != null && (
               <HitPill
                 hit={prediction.cards_hit}
-                label={prediction.cards_hit ? "εκτίμηση ±1.5 ✓" : "εκτός ±1.5"}
+                label={prediction.cards_hit ? t("nat.cards.hitYes") : t("nat.cards.hitNo")}
               />
             )}
           </div>
@@ -290,7 +292,7 @@ export default async function NationalMatchDetailPage({ params }: Props) {
                 {prediction.actual_home_cards ?? "—"}
               </span>
               <span className="text-gray-500">
-                Πραγματικά · σύνολο {((prediction.actual_home_cards ?? 0) + (prediction.actual_away_cards ?? 0)).toFixed(0)}
+                {t("nat.actualTotal", { n: ((prediction.actual_home_cards ?? 0) + (prediction.actual_away_cards ?? 0)).toFixed(0) })}
               </span>
               <span className="tabular-nums text-emerald-400 font-semibold">
                 {prediction.actual_away_cards ?? "—"}
@@ -309,7 +311,7 @@ export default async function NationalMatchDetailPage({ params }: Props) {
               🚩 Expected Corners
             </h2>
             {hasResult && prediction.corners_hit != null && (
-              <HitPill hit={prediction.corners_hit} label={prediction.corners_hit ? "πιάσαμε" : "χάσαμε"} />
+              <HitPill hit={prediction.corners_hit} label={prediction.corners_hit ? t("nat.caught") : t("nat.missed")} />
             )}
           </div>
           <div className="flex items-center justify-between text-sm">
@@ -340,7 +342,7 @@ export default async function NationalMatchDetailPage({ params }: Props) {
                 {prediction.actual_home_corners ?? "—"}
               </span>
               <span className="text-gray-500">
-                Πραγματικά · σύνολο {(prediction.actual_home_corners ?? 0) + (prediction.actual_away_corners ?? 0)}
+                {t("nat.actualTotal", { n: (prediction.actual_home_corners ?? 0) + (prediction.actual_away_corners ?? 0) })}
               </span>
               <span className="tabular-nums text-emerald-400 font-semibold">
                 {prediction.actual_away_corners ?? "—"}
@@ -357,7 +359,7 @@ export default async function NationalMatchDetailPage({ params }: Props) {
         <div className="card p-5 space-y-3">
           <div className="flex items-center justify-between">
             <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
-              🎯 Πιθανά Σκορ
+              {t("nat.likelyScores")}
             </h2>
             <div className="flex items-center gap-2">
               {prediction.most_likely_score && (
@@ -370,7 +372,7 @@ export default async function NationalMatchDetailPage({ params }: Props) {
                   hit={prediction.score_hit}
                   partial={!prediction.score_hit && !!prediction.score_in_top}
                   label={
-                    prediction.score_hit ? "πιάσαμε" : prediction.score_in_top ? "top-6" : "χάσαμε"
+                    prediction.score_hit ? t("nat.caught") : prediction.score_in_top ? t("nat.top6") : t("nat.missed")
                   }
                 />
               )}
@@ -378,7 +380,7 @@ export default async function NationalMatchDetailPage({ params }: Props) {
           </div>
           {hasResult && (
             <p className="text-xs text-gray-500">
-              Πραγματικό σκορ:{" "}
+              {t("nat.actualScore")}{" "}
               <span className="tabular-nums text-emerald-400 font-semibold">
                 {prediction.actual_home_goals}-{prediction.actual_away_goals}
               </span>
@@ -416,7 +418,7 @@ export default async function NationalMatchDetailPage({ params }: Props) {
       )}
 
       {/* Player props (scorer / SoT / assist) */}
-      <PlayerPropsPanel teams={propTeams} />
+      <PlayerPropsPanel teams={propTeams} t={t} />
 
       <p className="text-xs text-gray-600 text-center px-4">
         Predictions are for entertainment only.

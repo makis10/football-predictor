@@ -13,6 +13,7 @@ import StandingsTable from "@/components/StandingsTable";
 import LeagueProjectionPanel from "@/components/LeagueProjectionPanel";
 import EuropeanProjectionPanel from "@/components/EuropeanProjectionPanel";
 import ProjectionHistoryChart from "@/components/ProjectionHistoryChart";
+import { useT } from "@/components/LanguageProvider";
 
 export interface CompetitionProjection {
   league: string;
@@ -24,11 +25,7 @@ export interface CompetitionProjection {
 
 type Filter = "all" | "domestic" | "european";
 
-const FILTERS: { key: Filter; label: string }[] = [
-  { key: "all",      label: "Όλα" },
-  { key: "domestic", label: "Πρωταθλήματα" },
-  { key: "european", label: "Ευρώπη" },
-];
+const FILTER_KEYS: Filter[] = ["all", "domestic", "european"];
 
 /**
  * Long-term projections browser: a category filter + a competition picker, then
@@ -36,6 +33,7 @@ const FILTERS: { key: Filter; label: string }[] = [
  * fetched server-side (and cached), so switching competition is instant.
  */
 export default function ProjectionsBrowser({ items }: { items: CompetitionProjection[] }) {
+  const t = useT();
   const [filter, setFilter] = useState<Filter>("all");
 
   const visible = useMemo(
@@ -52,9 +50,9 @@ export default function ProjectionsBrowser({ items }: { items: CompetitionProjec
     return (
       <div className="card p-8 text-center text-gray-500">
         <p className="text-4xl mb-3">🔮</p>
-        <p className="font-medium">Δεν υπάρχουν διαθέσιμες προγνώσεις αυτή τη στιγμή.</p>
+        <p className="font-medium">{t("proj.empty.title")}</p>
         <p className="text-sm mt-1">
-          Οι μακροχρόνιες προγνώσεις ανάβουν μόλις ξεκινήσει η σεζόν κάθε διοργάνωσης.
+          {t("proj.empty.body")}
         </p>
       </div>
     );
@@ -70,18 +68,18 @@ export default function ProjectionsBrowser({ items }: { items: CompetitionProjec
     <div className="space-y-5">
       {/* Category filter */}
       <div className="flex flex-wrap gap-2">
-        {FILTERS.filter((f) => counts[f.key] > 0).map((f) => (
+        {FILTER_KEYS.filter((key) => counts[key] > 0).map((key) => (
           <button
-            key={f.key}
-            onClick={() => setFilter(f.key)}
+            key={key}
+            onClick={() => setFilter(key)}
             className={`px-3 py-1.5 rounded-full text-sm transition-colors ${
-              filter === f.key
+              filter === key
                 ? "bg-green-600 text-white"
                 : "bg-pitch-800 text-gray-400 hover:text-gray-200"
             }`}
           >
-            {f.label}
-            <span className="ml-1.5 text-xs opacity-70">{counts[f.key]}</span>
+            {t(`proj.filter.${key}`)}
+            <span className="ml-1.5 text-xs opacity-70">{counts[key]}</span>
           </button>
         ))}
       </div>
@@ -109,25 +107,22 @@ export default function ProjectionsBrowser({ items }: { items: CompetitionProjec
         <div className="space-y-6">
           {current.projection &&
             (isEuropeanProjection(current.projection) ? (
-              <EuropeanProjectionPanel proj={current.projection} />
+              <EuropeanProjectionPanel proj={current.projection} t={t} />
             ) : (
-              <LeagueProjectionPanel proj={current.projection} />
+              <LeagueProjectionPanel proj={current.projection} t={t} />
             ))}
           {current.history.length >= 2 && (
             <ProjectionHistoryChart snapshots={current.history} />
           )}
-          {current.table && <StandingsTable table={current.table} />}
+          {current.table && <StandingsTable table={current.table} t={t} />}
           {!current.projection && !current.table && current.category === "european" && (
             <div className="rounded-xl border border-pitch-700 bg-pitch-800/60 p-6 text-center space-y-2">
               <p className="text-2xl">🏆</p>
               <p className="text-sm font-semibold text-gray-200">
-                Διαθέσιμο μετά την κλήρωση της league phase
+                {t("proj.eu.pending.title")}
               </p>
               <p className="text-xs text-gray-500 leading-relaxed max-w-md mx-auto">
-                Οι 36 συμμετέχοντες της διοργάνωσης κρίνονται στα προκριματικά που
-                παίζονται τώρα — μια «πιθανότητα κατάκτησης» πριν οριστικοποιηθεί το
-                πεδίο θα ήταν εφεύρεση, όχι εκτίμηση. Η πρόβλεψη ανάβει αυτόματα μόλις
-                μπουν οι αγώνες της league phase (τέλη Αυγούστου).
+                {t("proj.eu.pending.body")}
               </p>
             </div>
           )}

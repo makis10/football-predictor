@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import { sendChat, ChatMessage } from "@/lib/api";
+import { useT } from "@/components/LanguageProvider";
 
 // ── Icons ─────────────────────────────────────────────────────────────────────
 
@@ -51,11 +52,11 @@ function TypingIndicator() {
 
 // ── Quick-prompt chips ────────────────────────────────────────────────────────
 
-const QUICK_PROMPTS = [
-  "Δώσε μου 3 προτάσεις με high confidence",
-  "Ποια παιχνίδια σήμερα είναι over 2.5;",
-  "Καλύτερα παιχνίδια EPL αυτή την εβδομάδα;",
-  "Ποιες ισοπαλίες είναι πιο πιθανές;",
+const QUICK_PROMPT_KEYS = [
+  "chat.suggest1",
+  "chat.suggest2",
+  "chat.suggest3",
+  "chat.suggest4",
 ];
 
 // ── Main component ────────────────────────────────────────────────────────────
@@ -63,6 +64,7 @@ const QUICK_PROMPTS = [
 const STORAGE_KEY = "chat:messages";
 
 export default function ChatBox() {
+  const t = useT();
   const [open, setOpen]       = useState(false);
   const [input, setInput]     = useState("");
   const [loading, setLoading] = useState(false);
@@ -117,7 +119,7 @@ export default function ChatBox() {
       const { reply } = await sendChat(trimmed, messages);
       setMessages([...next, { role: "assistant", content: reply }]);
     } catch (e: unknown) {
-      const msg = e instanceof Error ? e.message : "Κάτι πήγε στραβά.";
+      const msg = e instanceof Error ? e.message : t("chat.error");
       setMessages([...next, { role: "assistant", content: `⚠️ ${msg}` }]);
     } finally {
       setLoading(false);
@@ -185,20 +187,20 @@ export default function ChatBox() {
             {messages.length === 0 && !loading && (
               <div className="space-y-3">
                 <p className="text-xs text-gray-500 text-center pt-2">
-                  Ρώτησέ με για τις προβλέψεις των αγώνων
+                  {t("chat.askMe")}
                 </p>
                 <div className="flex flex-col gap-1.5">
-                  {QUICK_PROMPTS.map((q) => (
+                  {QUICK_PROMPT_KEYS.map((key) => (
                     <button
-                      key={q}
-                      onClick={() => sendMessage(q)}
+                      key={key}
+                      onClick={() => sendMessage(t(key))}
                       className="
                         text-left text-xs text-gray-300 px-3 py-2 rounded-xl
                         bg-pitch-800 hover:bg-pitch-700 border border-pitch-700
                         hover:border-green-700 transition-colors
                       "
                     >
-                      {q}
+                      {t(key)}
                     </button>
                   ))}
                 </div>
@@ -240,7 +242,7 @@ export default function ChatBox() {
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={handleKey}
-                placeholder="Γράψε την ερώτησή σου…"
+                placeholder={t("chat.placeholder")}
                 rows={1}
                 className="
                   flex-1 resize-none rounded-xl bg-pitch-700 border border-pitch-600
@@ -266,7 +268,7 @@ export default function ChatBox() {
               </button>
             </div>
             <p className="text-[10px] text-gray-700 mt-1.5 text-center">
-              Enter αποστολή · Shift+Enter νέα γραμμή
+              {t("chat.enterHint")}
             </p>
           </div>
         </div>

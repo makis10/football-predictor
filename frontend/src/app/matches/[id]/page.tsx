@@ -17,6 +17,7 @@ import {
   type PlayerProp,
 } from "@/lib/api";
 import { WinProbabilityBars, GoalsProbabilityBar, BttsProbabilityBar } from "@/components/PredictionBar";
+import { getServerT } from "@/lib/i18n-server";
 import MatchAnalysisPanel from "@/components/MatchAnalysis";
 import PlayerPropsPanel from "@/components/PlayerPropsPanel";
 import LogBetButton from "@/components/LogBetButton";
@@ -28,6 +29,7 @@ interface Props {
 }
 
 export default async function MatchDetailPage({ params }: Props) {
+  const t = await getServerT();
   const id = Number((await params).id);
   if (isNaN(id)) notFound();
 
@@ -73,7 +75,7 @@ export default async function MatchDetailPage({ params }: Props) {
             {match.home_team} <span className="text-gray-600">vs</span> {match.away_team}
           </p>
         </div>
-        <LockedDetailPanel home={match.home_team} away={match.away_team} />
+        <LockedDetailPanel home={match.home_team} away={match.away_team} t={t} />
       </div>
     );
   }
@@ -146,11 +148,9 @@ export default async function MatchDetailPage({ params }: Props) {
       {prediction && prediction.insufficient_data ? (
         <div className="card p-6 text-center text-gray-400 space-y-2">
           <p className="text-3xl">ℹ️</p>
-          <p className="font-medium text-gray-300">Ανεπαρκή δεδομένα για πρόβλεψη</p>
+          <p className="font-medium text-gray-300">{t("match.insufficient.title")}</p>
           <p className="text-sm text-gray-500 max-w-md mx-auto">
-            Μία ή και οι δύο ομάδες δεν υπάρχουν στο ιστορικό εκπαίδευσης του μοντέλου
-            (συνήθως προκριματικά ή ομάδες από πρωταθλήματα που δεν καλύπτουμε). Οι
-            πιθανότητες θα ήταν απλώς οι default τιμές — δεν τις εμφανίζουμε.
+            {t("match.insufficient.body")}
           </p>
         </div>
       ) : prediction ? (
@@ -235,14 +235,14 @@ export default async function MatchDetailPage({ params }: Props) {
                       {prediction.btts_prob >= 0.5 ? "GG" : "NG"}
                     </span>
                   </div>
-                  <BttsProbabilityBar bttsProb={prediction.btts_prob} />
+                  <BttsProbabilityBar bttsProb={prediction.btts_prob} t={t} />
                 </div>
               )}
             </>
           )}
 
           {/* Player props (scorer / SoT / assist) — shown when we've priced them */}
-          <PlayerPropsPanel teams={propTeams} />
+          <PlayerPropsPanel teams={propTeams} t={t} />
 
           {/* Log bet */}
           <LogBetButton

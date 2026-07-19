@@ -3,6 +3,7 @@ import { redirect } from "next/navigation";
 import { getSession, fetchWithAuth } from "@/lib/auth";
 import AdminUserTable from "@/components/AdminUserTable";
 import AdminFeedback, { type FeedbackItem } from "@/components/AdminFeedback";
+import { getServerT } from "@/lib/i18n-server";
 
 interface UserStats {
   id:             number;
@@ -23,6 +24,7 @@ interface UserStats {
 
 
 export default async function AdminPage() {
+  const t = await getServerT();
   const session = await getSession();
   if (!session?.user?.isAdmin) redirect("/");
 
@@ -51,7 +53,7 @@ export default async function AdminPage() {
           { label: "Total users",      value: totalUsers },
           { label: "Google OAuth",     value: googleUsers },
           { label: "Tracking matches", value: activeTrackers },
-          { label: "Νέα μηνύματα",      value: unreadFeedback },
+          { label: t("admin.newMessages"), value: unreadFeedback },
         ].map(({ label, value }) => (
           <div key={label} className="rounded-xl border border-pitch-700 bg-pitch-900 p-4 text-center">
             <p className="text-xs text-gray-500 mb-1">{label}</p>
@@ -88,10 +90,10 @@ export default async function AdminPage() {
       {/* Contact-form messages */}
       <div>
         <h2 className="text-lg font-bold mb-3">
-          ✉️ Μηνύματα χρηστών
+          {t("admin.userMessages")}
           {unreadFeedback > 0 && (
             <span className="ml-2 text-xs px-2 py-0.5 rounded-full bg-green-500/20 text-green-400 align-middle">
-              {unreadFeedback} νέα
+              {t("admin.newBadge", { n: unreadFeedback })}
             </span>
           )}
         </h2>

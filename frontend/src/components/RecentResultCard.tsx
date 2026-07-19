@@ -15,6 +15,7 @@ import {
 // Grading uses the shared rule (mirrors backend /stats) so the per-card badge
 // can't disagree with the page accuracy or /stats. Display labels stay local.
 import { gradeMatch, goalsHit, hasResult } from "@/lib/matchGrade";
+import { useT } from "@/components/LanguageProvider";
 
 interface Props {
   match: Match;
@@ -34,6 +35,7 @@ function outcomeLabel(o: "H" | "D" | "A", home: string, away: string) {
 }
 
 export default function RecentResultCard({ match }: Props) {
+  const t = useT();
   const p = match.prediction ?? null;
   const predicted = p ? predictedOutcome(p) : null;
   const goalsOk = hasResult(match) ? goalsHit(match) : null;
@@ -77,7 +79,7 @@ export default function RecentResultCard({ match }: Props) {
       const res = await getPostmortem(match.id);
       setPostmortem(res.analysis);
     } catch {
-      setPostmortem("Αποτυχία φόρτωσης ανάλυσης.");
+      setPostmortem(t("recent.loadFail"));
     } finally {
       setLoading(false);
     }
@@ -190,7 +192,7 @@ export default function RecentResultCard({ match }: Props) {
             disabled={loading}
             className="w-full py-1.5 text-xs rounded-lg bg-red-500/10 text-red-400 hover:bg-red-500/20 transition-colors border border-red-700/30 disabled:opacity-50"
           >
-            {loading ? "Αναλύω…" : postmortem ? "▲ Κλείσιμο ανάλυσης" : "🔍 Γιατί απέτυχε;"}
+            {loading ? t("recent.analyzing") : postmortem ? t("recent.closeAnalysis") : t("recent.whyFail")}
           </button>
           {postmortem && (
             <p className="mt-2 text-xs text-gray-400 leading-relaxed border-t border-white/5 pt-2">

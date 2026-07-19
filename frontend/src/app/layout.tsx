@@ -6,6 +6,9 @@ import ContactButton from "@/components/ContactButton";
 import Providers from "@/components/Providers";
 import UserNav from "@/components/UserNav";
 import NotificationBell from "@/components/NotificationBell";
+import LanguageToggle from "@/components/LanguageToggle";
+import { getServerLang } from "@/lib/i18n-server";
+import { getT } from "@/lib/i18n";
 
 const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL || "https://aitipster.net";
@@ -41,10 +44,12 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const umamiId = process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID;
+  const lang = await getServerLang();
+  const t = getT(lang);
   return (
-    <html lang="en" className="dark">
+    <html lang={lang} className="dark">
       <body className="min-h-screen bg-pitch-950">
         {/* Self-hosted umami analytics — same-origin via /u/* rewrites.
             Enabled only when NEXT_PUBLIC_UMAMI_WEBSITE_ID is set (create the
@@ -52,7 +57,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {umamiId && (
           <script defer src="/u/script.js" data-website-id={umamiId} data-host-url="/u" />
         )}
-        <Providers>
+        <Providers initialLang={lang}>
           {/* Header */}
           <header className="border-b border-pitch-700 bg-pitch-900/80 backdrop-blur sticky top-0 z-40">
             <div className="max-w-6xl mx-auto px-4 h-14 flex items-center gap-4">
@@ -67,13 +72,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   href="/"
                   className="px-3 py-1.5 rounded-lg text-sm text-gray-400 hover:text-white hover:bg-pitch-800 transition-colors"
                 >
-                  Upcoming
+                  {t("nav.upcoming")}
                 </Link>
                 <Link
                   href="/recent"
                   className="px-3 py-1.5 rounded-lg text-sm text-gray-400 hover:text-white hover:bg-pitch-800 transition-colors"
                 >
-                  Recent Results
+                  {t("nav.recent")}
                 </Link>
                 {/* "Internationals" nav removed — upcoming national fixtures are
                     merged into Upcoming (+ its International filter). /national
@@ -82,24 +87,25 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   href="/projections"
                   className="px-3 py-1.5 rounded-lg text-sm text-gray-400 hover:text-white hover:bg-pitch-800 transition-colors"
                 >
-                  🔮 Projections
+                  {t("nav.projections")}
                 </Link>
                 <Link
                   href="/national/world-cup"
                   className="px-3 py-1.5 rounded-lg text-sm text-gray-400 hover:text-white hover:bg-pitch-800 transition-colors"
                 >
-                  🏆 World Cup
+                  {t("nav.worldCup")}
                 </Link>
                 <Link
                   href="/stats"
                   className="px-3 py-1.5 rounded-lg text-sm text-gray-400 hover:text-white hover:bg-pitch-800 transition-colors"
                 >
-                  📊 Stats
+                  {t("nav.stats")}
                 </Link>
               </nav>
 
-              {/* Updates bell + user nav — sign in / avatar menu */}
+              {/* Language toggle + updates bell + user nav */}
               <div className="ml-auto flex items-center gap-1">
+                <LanguageToggle />
                 <NotificationBell />
                 <UserNav />
               </div>
@@ -116,8 +122,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <footer className="fixed bottom-0 left-0 right-0 z-30 border-t border-pitch-700 bg-pitch-900/90 backdrop-blur">
             <div className="max-w-6xl mx-auto px-4 py-2 flex flex-col sm:flex-row items-center justify-between gap-2">
               <p className="text-[11px] text-gray-600 text-center sm:text-left leading-tight">
-                ML predictions for entertainment only · ~52% result / ~58% O/U accuracy ·{" "}
-                <span className="text-gray-700">Not financial advice</span>
+                {t("footer.disclaimer")}{" "}
+                <span className="text-gray-700">{t("footer.notFinancial")}</span>
               </p>
               <div className="flex items-center gap-2 shrink-0">
                 <ContactButton />
@@ -130,7 +136,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944 3.217a.77.77 0 0 1 .761-.645h6.964c2.756 0 4.706.825 5.797 2.452.504.752.82 1.582.94 2.465.127.928.05 2.03-.232 3.27-.017.073-.033.147-.051.22-.712 3.174-3.117 4.862-7.047 4.862H9.62a.77.77 0 0 0-.76.645l-.967 5.432a.641.641 0 0 1-.633.539h-.184zm9.348-14.52c-.033.21-.072.424-.118.642-.994 4.42-4.394 5.772-8.736 5.772H5.38a.641.641 0 0 0-.633.54L3.6 21.337h3.476l.746-4.183a.77.77 0 0 1 .76-.645h1.457c3.933 0 6.338-1.688 7.047-4.862.289-1.285.229-2.352-.24-3.154a3.44 3.44 0 0 0-.422-.676z"/>
                   </svg>
-                  ☕ Buy me a coffee
+                  {t("footer.coffee")}
                 </a>
               </div>
             </div>

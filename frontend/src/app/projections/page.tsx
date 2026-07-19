@@ -8,11 +8,12 @@ import { getStandings, getLeagueProjection, getProjectionHistory } from "@/lib/a
 import ProjectionsBrowser, {
   type CompetitionProjection,
 } from "@/components/ProjectionsBrowser";
+import { getServerT } from "@/lib/i18n-server";
 
 export const metadata: Metadata = {
-  title: "Μακροχρόνιες Προγνώσεις | AI Tipster",
+  title: "Long-term Projections | AI Tipster",
   description:
-    "Πιθανότητες κατάκτησης, εισόδου στην Ευρώπη και υποβιβασμού για κάθε πρωτάθλημα και ευρωπαϊκή διοργάνωση — Monte Carlo από το μοντέλο μας.",
+    "Title, Europe-qualification and relegation probabilities for every league and European competition — Monte Carlo from our model.",
 };
 
 // Competitions that can carry a long-term projection, with their category. The
@@ -35,6 +36,7 @@ const COMPETITIONS: { league: string; category: "domestic" | "european" }[] = [
 ];
 
 export default async function ProjectionsPage() {
+  const t = await getServerT();
   // Fetch every competition's table + projection in parallel. They're all
   // cached (re-primed by the daily warm-up), so this is cheap; a competition
   // that's out of season simply 404s and drops out below.
@@ -60,11 +62,10 @@ export default async function ProjectionsPage() {
     <div className="max-w-3xl mx-auto space-y-6">
       <div>
         <h1 className="text-2xl font-bold tracking-tight text-white">
-          🔮 Μακροχρόνιες Προγνώσεις
+          {t("projPage.title")}
         </h1>
         <p className="text-sm text-gray-500 mt-1">
-          Πιθανότητες κατάκτησης, Ευρώπης και υποβιβασμού ανά διοργάνωση —
-          Monte Carlo από το τρέχον Elo και τη βαθμολογία.
+          {t("projPage.desc")}
         </p>
       </div>
 

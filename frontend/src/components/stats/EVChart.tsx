@@ -13,6 +13,7 @@
  */
 import { EVDataPoint } from "@/lib/api";
 import { useState } from "react";
+import { useT } from "@/components/LanguageProvider";
 
 interface Props {
   series: EVDataPoint[];
@@ -39,16 +40,17 @@ function niceStep(range: number, ticks = 6): number {
 }
 
 export function EVChart({ series }: Props) {
+  const t = useT();
   const [hoverIdx, setHoverIdx] = useState<number | null>(null);
 
   if (series.length < 2) {
     return (
       <div className="rounded-xl border border-pitch-700 bg-pitch-800/60 p-6 text-center">
         <p className="text-sm text-gray-500">
-          📈 Cumulative EV chart will appear once bookmaker odds are stored for completed matches.
+          {t("ev.empty")}
         </p>
         <p className="text-xs text-gray-600 mt-1">
-          Run <code className="font-mono bg-pitch-700 px-1 rounded">compute_predictions.py</code> to populate odds going forward.
+          {t("ev.emptySub")}
         </p>
       </div>
     );
@@ -81,7 +83,7 @@ export function EVChart({ series }: Props) {
 
   // Y-axis ticks
   const yTicks: number[] = [];
-  for (let t = yLo; t <= yHi + 0.001; t += step) yTicks.push(t);
+  for (let tick = yLo; tick <= yHi + 0.001; tick += step) yTicks.push(tick);
 
   // X-axis: show every Nth label to avoid crowding
   const xTickInterval = Math.ceil(series.length / 6);
@@ -96,8 +98,8 @@ export function EVChart({ series }: Props) {
     <div className="rounded-xl border border-pitch-700 bg-pitch-800/60 p-5 space-y-3">
       <div className="flex items-center justify-between flex-wrap gap-2">
         <div>
-          <h3 className="text-sm font-semibold text-gray-300">📈 Cumulative EV vs P&L</h3>
-          <p className="text-xs text-gray-500 mt-0.5">€10 flat stake · {series.length} days tracked</p>
+          <h3 className="text-sm font-semibold text-gray-300">{t("ev.title")}</h3>
+          <p className="text-xs text-gray-500 mt-0.5">{t("ev.flatStake", { n: series.length })}</p>
         </div>
         {/* Legend — P&L colour matches the line (green=profit, red=loss) */}
         {(() => {
@@ -107,16 +109,16 @@ export function EVChart({ series }: Props) {
             <div className="flex items-center gap-4 text-xs text-gray-400">
               <span className="flex items-center gap-1.5">
                 <svg width="20" height="4"><line x1="0" y1="2" x2="20" y2="2" stroke="#a78bfa" strokeWidth="2" strokeDasharray="4 2"/></svg>
-                Expected Value
+                {t("ev.expectedValue")}
               </span>
               <span className="flex items-center gap-1.5">
                 <svg width="20" height="4"><line x1="0" y1="2" x2="20" y2="2" stroke={pnlColor} strokeWidth="2"/></svg>
-                Actual P&L
+                {t("ev.actualPnl")}
               </span>
               {hasFair && (
                 <span className="flex items-center gap-1.5">
                   <svg width="20" height="4"><line x1="0" y1="2" x2="20" y2="2" stroke="#fbbf24" strokeWidth="2"/></svg>
-                  Fair P&L (χωρίς γκανιότα)
+                  {t("ev.fairPnl")}
                 </span>
               )}
             </div>
@@ -149,15 +151,15 @@ export function EVChart({ series }: Props) {
         onMouseLeave={() => setHoverIdx(null)}
       >
         {/* Y grid lines + labels */}
-        {yTicks.map((t) => {
-          const y = yScale(t);
+        {yTicks.map((tick) => {
+          const y = yScale(tick);
           return (
-            <g key={t}>
+            <g key={tick}>
               <line x1={PAD.left} x2={W - PAD.right} y1={y} y2={y}
-                stroke="#374151" strokeWidth={t === 0 ? 1.5 : 0.5} />
+                stroke="#374151" strokeWidth={tick === 0 ? 1.5 : 0.5} />
               <text x={PAD.left - 6} y={y + 4} textAnchor="end"
                 fill="#6b7280" fontSize={11}>
-                {t >= 0 ? `+€${t}` : `-€${Math.abs(t)}`}
+                {tick >= 0 ? `+€${tick}` : `-€${Math.abs(tick)}`}
               </text>
             </g>
           );

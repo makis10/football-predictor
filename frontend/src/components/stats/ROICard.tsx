@@ -1,9 +1,11 @@
 import { BTTSStats, CLVStats, ROIStats } from "@/lib/api";
+import type { TFunc } from "@/lib/i18n";
 
 interface Props {
   roi: ROIStats;
   bttsStats?: BTTSStats | null;
   clv?: CLVStats | null;
+  t: TFunc;
 }
 
 function fmt(n: number, decimals = 2) {
@@ -27,6 +29,7 @@ function euro(n: number) {
 }
 
 function MarketRow({
+  t,
   label,
   bets,
   staked,
@@ -36,6 +39,7 @@ function MarketRow({
   fairRoiPct,
   fairEstimated,
 }: {
+  t: TFunc;
   label: string;
   bets: number;
   staked: number;
@@ -52,9 +56,9 @@ function MarketRow({
       <div>
         <p className="text-sm text-gray-300 font-medium">{label}</p>
         <p className="text-xs text-gray-500">
-          {bets} bets · €{fmt(staked)} staked
+          {t("roi.betsStaked", { bets, staked: fmt(staked) })}
           {vig != null && (
-            <span className="text-gray-600"> · γκανιότα {euro(vig)}</span>
+            <span className="text-gray-600"> · {t("roi.vig", { amt: euro(vig) })}</span>
           )}
         </p>
       </div>
@@ -73,7 +77,7 @@ function MarketRow({
               {euro(fairPnl)}
             </p>
             <p className={`text-xs font-semibold ${roiColor(fairRoiPct)}`}>
-              {fairRoiPct >= 0 ? "+" : ""}{fmt(fairRoiPct)}% fair{fairEstimated ? "*" : ""}
+              {fairRoiPct >= 0 ? "+" : ""}{fmt(fairRoiPct)}% {t("roi.fairSuffix")}{fairEstimated ? "*" : ""}
             </p>
           </div>
         )}
@@ -82,7 +86,7 @@ function MarketRow({
   );
 }
 
-export function ROICard({ roi, bttsStats, clv }: Props) {
+export function ROICard({ roi, bttsStats, clv, t }: Props) {
   const hasStrategy = roi.strategy_bets > 0;
 
   return (
@@ -91,12 +95,12 @@ export function ROICard({ roi, bttsStats, clv }: Props) {
       <div className="flex items-start justify-between">
         <div>
           <h3 className="text-sm font-semibold text-gray-300">
-            💰 ROI Tracker — Value Strategy
+            {t("roi.header")}
           </h3>
           <p className="text-xs text-gray-500 mt-0.5">
             {hasStrategy
-              ? `Μόνο τα ⚡ suggested bets · €${roi.stake_per_bet} flat · ${roi.strategy_bets} bets`
-              : "Δεν υπάρχουν ακόμα διευθετημένα suggested bets"}
+              ? t("roi.subtitle", { stake: roi.stake_per_bet, n: roi.strategy_bets })
+              : t("roi.noStrategy")}
           </p>
         </div>
         {hasStrategy && (
@@ -105,7 +109,7 @@ export function ROICard({ roi, bttsStats, clv }: Props) {
               {roi.strategy_pnl >= 0 ? "+" : ""}€{fmt(roi.strategy_pnl)}
             </p>
             <p className={`text-xs font-semibold ${roiColor(roi.strategy_roi_pct)}`}>
-              Strategy ROI {roi.strategy_roi_pct >= 0 ? "+" : ""}{fmt(roi.strategy_roi_pct)}%
+              {t("roi.strategyRoi")} {roi.strategy_roi_pct >= 0 ? "+" : ""}{fmt(roi.strategy_roi_pct)}%
             </p>
           </div>
         )}
@@ -115,9 +119,9 @@ export function ROICard({ roi, bttsStats, clv }: Props) {
       {clv && clv.bets > 0 && (
         <div className="flex items-center justify-between rounded-lg bg-pitch-900/60 px-3 py-2">
           <div>
-            <p className="text-xs text-gray-400 font-medium">📉 Closing Line Value</p>
+            <p className="text-xs text-gray-400 font-medium">{t("roi.clvTitle")}</p>
             <p className="text-[10px] text-gray-600">
-              {clv.bets} bets με closing snapshot · θετικό CLV = πραγματικό edge
+              {t("roi.clvSub", { n: clv.bets })}
             </p>
           </div>
           <div className="text-right">
@@ -125,7 +129,7 @@ export function ROICard({ roi, bttsStats, clv }: Props) {
               {clv.avg_clv_pct >= 0 ? "+" : ""}{fmt(clv.avg_clv_pct)}%
             </p>
             <p className="text-[10px] text-gray-500">
-              beat close {fmt(clv.beat_close_pct, 0)}%
+              {t("roi.beatClose", { pct: fmt(clv.beat_close_pct, 0) })}
             </p>
           </div>
         </div>
@@ -137,10 +141,10 @@ export function ROICard({ roi, bttsStats, clv }: Props) {
           <div className="flex items-center justify-between">
             <div>
               <p className="text-sm font-semibold text-green-300">
-                🎯 Fair-value ROI — χωρίς γκανιότα
+                {t("roi.fairTitle")}
               </p>
               <p className="text-[11px] text-gray-400 mt-0.5">
-                Ίδια στοιχήματα σε δίκαιες (de-vigged) αποδόσεις · ποιότητα μοντέλου vs αγορά
+                {t("roi.fairSub")}
               </p>
             </div>
             <div className="text-right">
@@ -148,26 +152,20 @@ export function ROICard({ roi, bttsStats, clv }: Props) {
                 {roi.total_pnl_fair >= 0 ? "+" : ""}€{fmt(roi.total_pnl_fair)}
               </p>
               <p className={`text-xs font-semibold ${roiColor(roi.total_roi_fair_pct)}`}>
-                {roi.total_roi_fair_pct >= 0 ? "+" : ""}{fmt(roi.total_roi_fair_pct)}% fair
+                {roi.total_roi_fair_pct >= 0 ? "+" : ""}{fmt(roi.total_roi_fair_pct)}% {t("roi.fairSuffix")}
               </p>
               <p className="text-[11px] text-gray-500 mt-0.5">
-                vs −€{fmt(Math.abs(roi.total_pnl))} ({fmt(roi.total_roi_pct)}%) με γκανιότα
+                {t("roi.vsWithVig", { amt: fmt(Math.abs(roi.total_pnl)), pct: fmt(roi.total_roi_pct) })}
               </p>
             </div>
           </div>
-          <p className="text-[10px] text-gray-500 mt-2 leading-relaxed">
-            Στις δίκαιες αποδόσεις θα ήμασταν <span className="text-gray-300">≈ στο μηδέν ({roi.total_pnl_fair >= 0 ? "+" : ""}€{fmt(roi.total_pnl_fair)})</span>,
-            όχι −€{fmt(Math.abs(roi.total_pnl))}. Όλη η απώλεια των −€{fmt(Math.abs(roi.total_pnl))} είναι
-            <span className="text-gray-300"> η προμήθεια του πράκτορα (γκανιότα)</span> — όχι λάθος του μοντέλου.
-            Οι προβλέψεις μας είναι τόσο ακριβείς όσο η δίκαιη τιμή της αγοράς.
-          </p>
         </div>
       )}
 
       {/* Model baseline — bet-everything, expected ≈ −vig */}
       <div className="flex items-baseline justify-between border-t border-pitch-700/50 pt-3">
         <p className="text-xs text-gray-500 font-medium">
-          Model baseline (bet σε όλα · {roi.total_bets} bets)
+          {t("roi.modelBaseline", { n: roi.total_bets })}
         </p>
         <div className="flex items-center gap-4 text-right">
           <p className={`text-xs font-semibold ${roiColor(roi.total_roi_pct)} min-w-[72px]`}>
@@ -184,15 +182,16 @@ export function ROICard({ roi, bttsStats, clv }: Props) {
       {/* Column headers for the per-market breakdown */}
       {roi.fair_available && (
         <div className="flex items-center justify-end gap-4 text-[10px] uppercase tracking-wide text-gray-600 -mb-1">
-          <span className="min-w-[72px] text-right">με γκανιότα</span>
-          <span className="min-w-[72px] text-right pl-3">μοντέλο (fair)</span>
+          <span className="min-w-[72px] text-right">{t("roi.colWithVig")}</span>
+          <span className="min-w-[72px] text-right pl-3">{t("roi.colModelFair")}</span>
         </div>
       )}
 
       {/* Market breakdown */}
       <div className="space-y-0">
         <MarketRow
-          label="1×2 Result"
+          t={t}
+          label={t("roi.market.result")}
           bets={roi.result_bets}
           staked={roi.result_staked}
           pnl={roi.result_pnl}
@@ -201,7 +200,8 @@ export function ROICard({ roi, bttsStats, clv }: Props) {
           fairRoiPct={roi.fair_available ? roi.result_roi_fair_pct : undefined}
         />
         <MarketRow
-          label="Over 2.5 Goals"
+          t={t}
+          label={t("roi.market.goals")}
           bets={roi.goals_bets}
           staked={roi.goals_staked}
           pnl={roi.goals_pnl}
@@ -213,7 +213,8 @@ export function ROICard({ roi, bttsStats, clv }: Props) {
         {bttsStats && (
           roi.btts_bets > 0 ? (
             <MarketRow
-              label="GG (BTTS)"
+              t={t}
+              label={t("roi.market.btts")}
               bets={roi.btts_bets}
               staked={roi.btts_staked}
               pnl={roi.btts_pnl}
@@ -224,12 +225,12 @@ export function ROICard({ roi, bttsStats, clv }: Props) {
           ) : (
             <div className="flex items-center justify-between py-2 border-b border-pitch-700/50">
               <div>
-                <p className="text-sm text-gray-300 font-medium">GG (BTTS)</p>
+                <p className="text-sm text-gray-300 font-medium">{t("roi.market.btts")}</p>
                 <p className="text-xs text-gray-600">
-                  Δεν υπάρχουν αποθηκευμένες αποδόσεις BTTS ακόμα
+                  {t("roi.bttsPending")}
                 </p>
               </div>
-              <p className="text-xs text-gray-600 italic">pending</p>
+              <p className="text-xs text-gray-600 italic">{t("roi.pending")}</p>
             </div>
           )
         )}
@@ -239,15 +240,15 @@ export function ROICard({ roi, bttsStats, clv }: Props) {
       {roi.fair_available && (
         <div className="rounded-lg bg-pitch-900/60 px-4 py-3 space-y-1.5 text-sm">
           <div className="flex items-center justify-between">
-            <span className="text-gray-400">Πραγματικό αποτέλεσμα (με γκανιότα)</span>
+            <span className="text-gray-400">{t("roi.decomp.real")}</span>
             <span className={`font-bold ${pnlColor(roi.total_pnl)}`}>{euro(roi.total_pnl)}</span>
           </div>
           <div className="flex items-center justify-between border-t border-pitch-700/50 pt-1.5">
-            <span className="text-gray-400">↳ από σωστά αποτελέσματα μοντέλου</span>
+            <span className="text-gray-400">{t("roi.decomp.model")}</span>
             <span className={`font-semibold ${pnlColor(roi.total_pnl_fair)}`}>{euro(roi.total_pnl_fair)}</span>
           </div>
           <div className="flex items-center justify-between">
-            <span className="text-gray-400">↳ χαμένα σε γκανιότα (προμήθεια πράκτορα)</span>
+            <span className="text-gray-400">{t("roi.decomp.vig")}</span>
             <span className="font-semibold text-red-400">{euro(roi.total_pnl - roi.total_pnl_fair)}</span>
           </div>
         </div>
@@ -255,12 +256,7 @@ export function ROICard({ roi, bttsStats, clv }: Props) {
 
       {/* Disclaimer */}
       <p className="text-[10px] text-gray-600 leading-relaxed">
-        Strategy = flat stake μόνο στα ⚡ suggested value bets (με market-shrunk EV
-        gate). Το baseline ποντάρει σε κάθε πρόβλεψη και αναμένεται ≈ −γκανιότα —
-        είναι δείκτης υγείας μοντέλου, όχι στρατηγική. Fair-value = ίδια στοιχήματα
-        σε de-vigged αποδόσεις (Result &amp; BTTS ακριβώς· *O/U με υποθετικό 4%
-        overround αφού δεν αποθηκεύουμε under-2.5 odds). Δεν είναι εφικτή απόδοση —
-        πουθενά δεν ποντάρεις σε fair odds — αλλά μετρά καθαρά την ποιότητα του μοντέλου.
+        {t("roi.disclaimer")}
       </p>
     </div>
   );

@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { useSession } from "next-auth/react";
+import { useT } from "@/components/LanguageProvider";
 import Link from "next/link";
 import { getAnalysis, getNationalAnalysis, MatchAnalysis, InjuredPlayer, OddsMovement, PoissonStats } from "@/lib/api";
 
@@ -122,6 +123,7 @@ function Skeleton() {
 }
 
 export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast, isNational }: Props) {
+  const t = useT();
   const { status } = useSession();
   const [data, setData]       = useState<MatchAnalysis | null>(null);
   const [loading, setLoading] = useState(true);
@@ -145,13 +147,13 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
     return (
       <div className="card p-5 text-center space-y-2">
         <p className="text-sm text-gray-300">
-          🔒 Η σύγκριση με bookmakers και η AI ανάλυση είναι διαθέσιμες μόνο σε μέλη.
+          {t("ma.lockedCta")}
         </p>
         <Link
           href="/register"
           className="inline-block px-4 py-2 rounded-lg bg-green-600 hover:bg-green-500 text-white text-sm font-semibold transition-colors"
         >
-          Δωρεάν εγγραφή
+          {t("ma.signup")}
         </Link>
       </div>
     );
@@ -372,7 +374,7 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
                 <span className="text-[10px] text-gray-600">(Poisson model)</span>
                 {modelsDisagree && (
                   <span className="text-[10px] text-amber-500/80 border border-amber-500/30 rounded px-1.5 py-0.5">
-                    ⚠ Poisson ↔ XGBoost διαφορά {Math.round(modelGap * 100)}pp — ενδεικτικά
+                    {t("ma.poissonGap", { pp: Math.round(modelGap * 100) })}
                   </span>
                 )}
               </div>
@@ -419,7 +421,7 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
             {/* Advanced Stats — always expanded, hidden when models disagree */}
             {!modelsDisagree && <div className="border-t border-pitch-700 pt-3">
               <span className="text-xs font-semibold text-gray-400 uppercase tracking-wider">
-                Αναλυτικές Στατιστικές
+                {t("ma.analyticStats")}
               </span>
 
               <div className="mt-3 space-y-4">
@@ -444,7 +446,7 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
                     return (
                       <div className="space-y-2">
                         <div className="flex items-center gap-2 flex-wrap">
-                          <p className="text-xs text-gray-500 uppercase tracking-wider">Πιθανά Σκορ</p>
+                          <p className="text-xs text-gray-500 uppercase tracking-wider">{t("ma.likelyScores")}</p>
                           {topComboScore && (
                             <span className="text-xs bg-teal-500/15 border border-teal-500/25 text-teal-400 rounded px-1.5 py-0.5">
                               ⭐ {topComboScore.score} ({pct(topComboScore.prob)})
@@ -473,7 +475,7 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
                           })}
                         </div>
                         <p className="text-[10px] text-gray-600">
-                          Teal = ανήκει στο dominant combo · Τα scores αθροίζονται σε 100%
+                          {t("ma.teal")}
                         </p>
                       </div>
                     );
@@ -481,7 +483,7 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
 
                   {/* Combo Markets — 2 groups side by side */}
                   <div className="space-y-2">
-                    <p className="text-xs text-gray-500 uppercase tracking-wider">Συνδυαστικές Αγορές</p>
+                    <p className="text-xs text-gray-500 uppercase tracking-wider">{t("ma.comboMarkets")}</p>
                     <div className="grid grid-cols-2 gap-x-4 gap-y-1.5">
                       {/* Left col: GG-based combos */}
                       {[
@@ -498,8 +500,8 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
                       ))}
                       {/* Right col: Clean-sheet combos (aligns with 1-0 / 0-1 scenarios) */}
                       {[
-                        { label: `${homeTeam} + NG`, prob: ps.home_win_and_ng,  note: "π.χ. 1-0, 2-0" },
-                        { label: `${awayTeam} + NG`, prob: ps.away_win_and_ng,  note: "π.χ. 0-1, 0-2" },
+                        { label: `${homeTeam} + NG`, prob: ps.home_win_and_ng,  note: `${t("ma.eg")} 1-0, 2-0` },
+                        { label: `${awayTeam} + NG`, prob: ps.away_win_and_ng,  note: `${t("ma.eg")} 0-1, 0-2` },
                       ].map(({ label, prob, note }) => (
                         <div key={label} className="flex items-center gap-1.5 text-xs col-span-1">
                           <div className="flex flex-col w-28 shrink-0">
@@ -562,7 +564,7 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
       <div className="border-t border-pitch-700 pt-3 space-y-2">
         <div className="flex items-center gap-2">
           <span className="text-xs font-semibold text-gray-400 uppercase tracking-wider">
-            Ανάλυση AI
+            {t("ma.aiAnalysis")}
           </span>
           <span className="text-xs text-gray-600">(gpt-oss-120b · Groq)</span>
         </div>
@@ -573,15 +575,15 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
           // Determine top-probability market from model probs.
           // Include GG/NG when the Poisson BTTS probability is available.
           const picks: { label: string; key: string; prob: number }[] = [
-            { label: `Νίκη ${homeTeam}`, key: "home_win",  prob: m.home_win },
-            { label: "Ισοπαλία",         key: "draw",      prob: m.draw },
-            { label: `Νίκη ${awayTeam}`, key: "away_win",  prob: m.away_win },
+            { label: t("ma.win", { team: homeTeam }), key: "home_win",  prob: m.home_win },
+            { label: t("ma.draw"),                    key: "draw",      prob: m.draw },
+            { label: t("ma.win", { team: awayTeam }), key: "away_win",  prob: m.away_win },
             { label: "Over 2.5",         key: "over_2_5",  prob: m.over_2_5 },
             { label: "Under 2.5",        key: "under_2_5", prob: 1 - m.over_2_5 },
             ...(m.btts != null
               ? [
-                  { label: "GG (Και οι δύο σκοράρουν)", key: "btts_yes", prob: m.btts },
-                  { label: "NG",                         key: "btts_no",  prob: 1 - m.btts },
+                  { label: t("ma.ggFull"), key: "btts_yes", prob: m.btts },
+                  { label: "NG",           key: "btts_no",  prob: 1 - m.btts },
                 ]
               : []),
           ];
@@ -599,7 +601,7 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
                   <span className="text-sky-400 text-xs">📊</span>
                   <div className="flex flex-col leading-tight">
                     <span className="text-[10px] text-sky-500 font-semibold uppercase tracking-wide">
-                      Πιθανότερο αποτέλεσμα
+                      {t("ma.mostLikely")}
                     </span>
                     <span className="text-sm text-sky-300 font-medium">
                       {topPick.label}{" "}
@@ -641,7 +643,7 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
             <div className="flex items-center gap-1.5 mb-1.5">
               <span className="text-amber-400 text-xs">📈</span>
               <span className="text-[10px] text-amber-500 font-semibold uppercase tracking-wide">
-                Υπό παρακολούθηση (αναπόδεικτο)
+                {t("ma.watched")}
               </span>
             </div>
             <div className="flex flex-wrap gap-2">
@@ -652,18 +654,16 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
                   <span className="text-amber-500 text-xs">
                     (EV {w.ev_pct >= 0 ? "+" : ""}{w.ev_pct.toFixed(0)}%
                     {w.model_pct != null && w.market_pct != null
-                      ? ` · μοντέλο ${Math.round(w.model_pct)}% vs αγορά ${Math.round(w.market_pct)}%`
+                      ? t("ma.modelVs", { m: Math.round(w.model_pct), k: Math.round(w.market_pct) })
                       : w.market_pct != null
-                        ? ` · αγορά ${Math.round(w.market_pct)}%`
+                        ? t("ma.marketOnly", { k: Math.round(w.market_pct) })
                         : ""})
                   </span>
                 </span>
               ))}
             </div>
             <p className="text-[11px] text-gray-500 mt-1.5 leading-snug">
-              Το μοντέλο βλέπει edge εδώ, αλλά αυτή η αγορά δεν έχει ακόμα αποδεδειγμένο ιστορικό
-              στο τρέχον μοντέλο — την καταγράφουμε και θα προωθηθεί σε πρόταση μόνο αν τα δεδομένα
-              τη δικαιώσουν.
+              {t("ma.watchNote")}
             </p>
           </div>
         )}

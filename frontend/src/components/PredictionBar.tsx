@@ -1,3 +1,5 @@
+import type { TFunc } from "@/lib/i18n";
+
 interface BarProps {
   label: string;
   probability: number;   // 0–1
@@ -68,14 +70,15 @@ export function GoalsProbabilityBar({ overProb }: GoalsBarProps) {
 
 interface BttsBarProps {
   bttsProb: number;
+  t: TFunc;
 }
 
-export function BttsProbabilityBar({ bttsProb }: BttsBarProps) {
+export function BttsProbabilityBar({ bttsProb, t }: BttsBarProps) {
   const ngProb = 1 - bttsProb;
   return (
     <div className="space-y-3">
-      <Bar label="GG (και οι δύο σκοράρουν)" probability={bttsProb} color="bg-emerald-500" bold={bttsProb >= 0.5} />
-      <Bar label="NG (τουλάχιστον μία δεν σκοράρει)" probability={ngProb} color="bg-rose-500" bold={ngProb > 0.5} />
+      <Bar label={t("pred.ggLabel")} probability={bttsProb} color="bg-emerald-500" bold={bttsProb >= 0.5} />
+      <Bar label={t("pred.ngLabel")} probability={ngProb} color="bg-rose-500" bold={ngProb > 0.5} />
     </div>
   );
 }

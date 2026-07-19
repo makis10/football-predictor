@@ -1,6 +1,7 @@
 import { redirect } from "next/navigation";
 import { getSession, fetchWithAuth } from "@/lib/auth";
 import { type NationalTrainingMetrics } from "@/lib/api";
+import { getServerT } from "@/lib/i18n-server";
 
 interface TrainingRun {
   id: number;
@@ -388,6 +389,7 @@ function NationalMetricsCard({ m }: { m: NationalTrainingMetrics }) {
 }
 
 export default async function TrainingRunsPage() {
+  const t = await getServerT();
   const session = await getSession();
   if (!(session?.user as any)?.isAdmin) redirect("/");
 
@@ -405,7 +407,7 @@ export default async function TrainingRunsPage() {
       <div>
         <h1 className="text-2xl font-bold">Training History</h1>
         <p className="text-sm text-gray-500 mt-1">
-          Test set accuracy, recall &amp; calibration ανά retrain · ώρες σε Europe/Athens
+          {t("adminTr.subtitle")}
         </p>
       </div>
 
@@ -413,7 +415,7 @@ export default async function TrainingRunsPage() {
       <section className="space-y-3">
         <div>
           <h2 className="text-lg font-semibold text-white">National Team Model</h2>
-          <p className="text-xs text-gray-500">Retrain καθημερινά ~06:00 (self-correct στα χθεσινά αποτελέσματα)</p>
+          <p className="text-xs text-gray-500">{t("adminTr.dailyRetrain")}</p>
         </div>
         <NationalMetricsCard m={nationalMetrics} />
       </section>
@@ -422,11 +424,11 @@ export default async function TrainingRunsPage() {
       <section className="space-y-3">
         <div>
           <h2 className="text-lg font-semibold text-white">Club Model Training Runs</h2>
-          <p className="text-xs text-gray-500">Retrain εβδομαδιαία (Δευτέρες ~06:00) — εκτός σεζόν αλλάζει αργά</p>
+          <p className="text-xs text-gray-500">{t("adminTr.weeklyRetrain")}</p>
         </div>
         {runs.length === 0 ? (
           <div className="rounded-xl border border-pitch-700 bg-pitch-900 p-8 text-center text-gray-500">
-            Δεν υπάρχουν ακόμα training runs. Θα εμφανιστούν μετά το επόμενο weekly retrain.
+            {t("adminTr.noRuns")}
           </div>
         ) : (
           <div className="space-y-4">
