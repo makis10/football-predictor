@@ -89,8 +89,10 @@ export default async function RootLayout({ children }: { children: React.ReactNo
                 >
                   {t("nav.projections")}
                 </Link>
+                {/* Tournament is over — nav points at the retrospective review;
+                    the simulation route now permanently redirects here too. */}
                 <Link
-                  href="/national/world-cup"
+                  href="/national/world-cup/review"
                   className="px-3 py-1.5 rounded-lg text-sm text-gray-400 hover:text-white hover:bg-pitch-800 transition-colors"
                 >
                   {t("nav.worldCup")}

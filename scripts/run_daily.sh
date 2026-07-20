@@ -72,6 +72,19 @@ set -a
 source .env 2>/dev/null || true
 set +a
 
+# ── Live-tournament gate ─────────────────────────────────────────────────────
+# World Cup 2026 ended 2026-07-19. The WC-specific steps below (API-Football
+# result overlay, squads, availability, Monte Carlo sim) only make sense while a
+# tournament is actually being played — left on they burn API quota and CPU
+# re-simulating a finished bracket, and overwrite the frozen artifacts in
+# backend/data/models/national/archive/wc2026/.
+#
+# The generic national steps (dataset refresh, retrain, Elo snapshot, squad
+# strength, predictions) keep running — they serve every future tournament.
+#
+# Set WC_ACTIVE=1 in .env when the next national-team tournament starts.
+WC_ACTIVE="${WC_ACTIVE:-0}"
+
 # ── 0. Back up the database BEFORE any mutation ──────────────────────────────
 # ── Wait for Docker to be ready ──────────────────────────────────────────────
 # Guards against launchd firing this job on wake before Docker Desktop is up.
@@ -230,11 +243,13 @@ docker compose exec -T backend \
 # quickly). Overlay its final scores + shoot-out winners onto results.csv /
 # shootouts.csv. MUST run after the martj42 --force above (which would otherwise
 # clobber it) and before the retrain/snapshot/sim so everything sees the truth.
-echo "" >> "$LOG"
-echo "[national 1c/7] Overlaying live WC results from API-Football …" | tee -a "$LOG"
-docker compose exec -T backend \
-    python scripts/fetch_wc_results.py \
-    2>&1 | tee -a "$LOG" || overall_failed=1
+if [ "$WC_ACTIVE" = "1" ]; then
+    echo "" >> "$LOG"
+    echo "[national 1c/7] Overlaying live WC results from API-Football …" | tee -a "$LOG"
+    docker compose exec -T backend \
+        python scripts/fetch_wc_results.py \
+        2>&1 | tee -a "$LOG" || overall_failed=1
+fi
 
 # Daily full retrain — during a live tournament the model self-corrects every
 # day on the freshly-downloaded results. (User-requested over snapshot-only.)
@@ -348,37 +363,41 @@ docker compose exec -T backend \
         --from "$(date -v-3d +%Y-%m-%d)" --skip-existing \
     2>&1 | tee -a "$LOG" || overall_failed=1
 
-# Official WC squads for the Golden Boot squad filter. Skips itself when the
-# file is < 7 days old, so it only spends API-Football quota once a week.
-echo "" >> "$LOG"
-echo "[national 7c/7] Refreshing WC squads (weekly) …" | tee -a "$LOG"
-docker compose exec -T backend \
-    python scripts/fetch_wc_squads.py --max-age-days 7 \
-    2>&1 | tee -a "$LOG" || overall_failed=1
+if [ "$WC_ACTIVE" = "1" ]; then
+    # Official WC squads for the Golden Boot squad filter. Skips itself when the
+    # file is < 7 days old, so it only spends API-Football quota once a week.
+    echo "" >> "$LOG"
+    echo "[national 7c/7] Refreshing WC squads (weekly) …" | tee -a "$LOG"
+    docker compose exec -T backend \
+        python scripts/fetch_wc_squads.py --max-age-days 7 \
+        2>&1 | tee -a "$LOG" || overall_failed=1
 
-# Sync same-day goals from player_match_stats into goalscorers.csv so the
-# Golden Boot below reflects today's scorers immediately (martj42 lags ~1 day).
-echo "" >> "$LOG"
-echo "[national 7c2/7] Syncing same-day goalscorers …" | tee -a "$LOG"
-docker compose exec -T backend \
-    python scripts/sync_goalscorers_to_dataset.py \
-    2>&1 | tee -a "$LOG" || overall_failed=1
+    # Sync same-day goals from player_match_stats into goalscorers.csv so the
+    # Golden Boot below reflects today's scorers immediately (martj42 lags ~1 day).
+    echo "" >> "$LOG"
+    echo "[national 7c2/7] Syncing same-day goalscorers …" | tee -a "$LOG"
+    docker compose exec -T backend \
+        python scripts/sync_goalscorers_to_dataset.py \
+        2>&1 | tee -a "$LOG" || overall_failed=1
 
-# Player availability (injuries + suspensions) from API-Football /injuries —
-# one cheap request; lets the simulation drop unavailable golden-boot scorers.
-echo "" >> "$LOG"
-echo "[national 7c2/7] Fetching player availability (injuries/suspensions) …" | tee -a "$LOG"
-docker compose exec -T backend \
-    python scripts/fetch_availability.py \
-    2>&1 | tee -a "$LOG" || overall_failed=1
+    # Player availability (injuries + suspensions) from API-Football /injuries —
+    # one cheap request; lets the simulation drop unavailable golden-boot scorers.
+    echo "" >> "$LOG"
+    echo "[national 7c2/7] Fetching player availability (injuries/suspensions) …" | tee -a "$LOG"
+    docker compose exec -T backend \
+        python scripts/fetch_availability.py \
+        2>&1 | tee -a "$LOG" || overall_failed=1
 
-# World Cup Monte Carlo simulation (champion/finalist/group/golden-boot).
-# Exits cheaply once the tournament is over (no upcoming group fixtures).
-echo "" >> "$LOG"
-echo "[national 7d/7] Running World Cup Monte Carlo simulation …" | tee -a "$LOG"
-docker compose exec -T backend \
-    python scripts/simulate_wc.py --sims 20000 --save-json \
-    2>&1 | tee -a "$LOG" || overall_failed=1
+    # World Cup Monte Carlo simulation (champion/finalist/group/golden-boot).
+    echo "" >> "$LOG"
+    echo "[national 7d/7] Running World Cup Monte Carlo simulation …" | tee -a "$LOG"
+    docker compose exec -T backend \
+        python scripts/simulate_wc.py --sims 20000 --save-json \
+        2>&1 | tee -a "$LOG" || overall_failed=1
+else
+    echo "" >> "$LOG"
+    echo "[national 7c-7d/7] Skipped — no live tournament (WC_ACTIVE=0)." | tee -a "$LOG"
+fi
 
 # ── Monthly rolling recalibration (1st of the month) ─────────────────────────
 # Refits the second-stage isotonic correction from the last 365 days of stored

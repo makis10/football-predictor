@@ -126,8 +126,8 @@ export default function NotificationBell() {
                     </span>
                     <span className="text-[11px] text-gray-500">{fmtDate(e.date)}</span>
                   </div>
-                  <p className="text-sm font-medium text-gray-100">{e.title}</p>
-                  <p className="text-xs text-gray-400 mt-0.5 leading-relaxed">{e.body}</p>
+                  <p className="text-sm font-medium text-gray-100">{e.title[lang]}</p>
+                  <p className="text-xs text-gray-400 mt-0.5 leading-relaxed">{e.body[lang]}</p>
                 </li>
               ))}
             </ul>

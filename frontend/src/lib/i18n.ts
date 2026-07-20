@@ -51,7 +51,7 @@ const en: Table = {
   "nav.upcoming": "Upcoming",
   "nav.recent": "Recent Results",
   "nav.projections": "🔮 Projections",
-  "nav.worldCup": "🏆 World Cup",
+  "nav.worldCup": "🏆 World Cup 2026",
   "nav.stats": "📊 Stats",
 
   // Footer
@@ -394,6 +394,7 @@ const en: Table = {
   "rev.detailedAcc": "detailed accuracy",
   "rev.title": "World Cup 2026 — Review",
   "rev.subtitle": "How the model did in the tournament.",
+  "rev.backNational": "National teams →",
 
   // ── Admin: training ──
   "adminTr.deltaVsActual": "Δ = {pp}pp vs actual",
@@ -428,7 +429,7 @@ const el: Table = {
   "nav.upcoming": "Προσεχή",
   "nav.recent": "Πρόσφατα Αποτελέσματα",
   "nav.projections": "🔮 Προβλέψεις",
-  "nav.worldCup": "🏆 Παγκόσμιο Κύπελλο",
+  "nav.worldCup": "🏆 Μουντιάλ 2026",
   "nav.stats": "📊 Στατιστικά",
 
   // Footer
@@ -771,6 +772,7 @@ const el: Table = {
   "rev.detailedAcc": "αναλυτική ακρίβεια",
   "rev.title": "World Cup 2026 — Review",
   "rev.subtitle": "Πώς τα πήγε το μοντέλο στο τουρνουά.",
+  "rev.backNational": "Εθνικές ομάδες →",
 
   // ── Admin: training ──
   "adminTr.deltaVsActual": "Δ = {pp}pp vs actual",

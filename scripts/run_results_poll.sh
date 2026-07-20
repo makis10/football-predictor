@@ -63,9 +63,14 @@ docker compose exec -T backend \
 # scores + penalty winners into results.csv / shootouts.csv, so a team that lost
 # (incl. on penalties → a draw in results.csv) drops out of the World Cup
 # champion list within the 2-hour poll window, not at the next daily run.
-docker compose exec -T backend \
-    python scripts/fetch_wc_results.py \
-    >> "$LOG" 2>&1 || true
+# Gated on WC_ACTIVE: World Cup 2026 ended 2026-07-19, and with no tournament in
+# progress this only spends API-Football quota re-fetching settled scores.
+# Set WC_ACTIVE=1 in .env when the next national-team tournament starts.
+if [ "${WC_ACTIVE:-0}" = "1" ]; then
+    docker compose exec -T backend \
+        python scripts/fetch_wc_results.py \
+        >> "$LOG" 2>&1 || true
+fi
 
 # Refresh the dashboard so newly-settled matches appear immediately.
 curl -s -X POST "${_ADMIN_HDR[@]}" http://localhost:8000/stats/cache/clear >> "$LOG" 2>&1 || true

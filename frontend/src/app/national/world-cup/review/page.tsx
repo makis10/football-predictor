@@ -104,8 +104,10 @@ function Header({ t }: { t: TFunc }) {
         <h1 className="text-2xl font-bold tracking-tight text-white">{t("rev.title")}</h1>
         <p className="text-sm text-gray-500 mt-1">{t("rev.subtitle")}</p>
       </div>
-      <Link href="/national/world-cup" className="text-sm text-gray-400 hover:text-white whitespace-nowrap">
-        ← Simulation
+      {/* The simulation page is retired now the tournament is over (that route
+          permanently redirects here), so this points at the national hub. */}
+      <Link href="/national" className="text-sm text-gray-400 hover:text-white whitespace-nowrap">
+        {t("rev.backNational")}
       </Link>
     </div>
   );

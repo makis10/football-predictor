@@ -235,6 +235,20 @@ if _clubelo_seeded:
           f"onto our Elo scale — {_preview}"
           f"{' …' if len(_clubelo_seeded) > 12 else ''}", flush=True)
 
+_SEEDED_TEAMS = frozenset(_clubelo_seeded)
+
+
+def _predictable(home: str, away: str) -> bool:
+    """Both sides carry a real strength signal: CSV history OR a ClubElo seed.
+    Such fixtures get their prediction DISPLAYED (insufficient_data=False) —
+    still confidence 'low' and never suggestable (the value gate requires full
+    history via _has_history). Fixtures where a side has neither stay hidden
+    behind 'Insufficient data'."""
+    def ok(t: str) -> bool:
+        return (t in _KNOWN_TEAMS or _SNAP_NAME_MAP.get(t, t) in _KNOWN_TEAMS
+                or t in _SEEDED_TEAMS)
+    return ok(home) and ok(away)
+
 european_df = load_european_data(EUROPEAN_DIR)
 print(f"European fixtures: {len(european_df) if european_df is not None else 0}", flush=True)
 
@@ -569,7 +583,7 @@ for i, (mid, home, away, match_date, league) in enumerate(match_snapshots, 1):
                 "model_version":    MODEL_VERSION,
                 # Both teams unknown → pure-default features → not a real
                 # prediction (identical for every such fixture). Flag it.
-                "insufficient_data": not _hist_ok,
+                "insufficient_data": not _predictable(home, away),
                 "confidence":       confidence_for(league, max_result_prob, over_p,
                                                    has_history=_hist_ok),
                 # Store bookmaker odds for ROI/EV tracking (NULL when unavailable)

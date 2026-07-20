@@ -47902,6 +47902,17 @@ date,home_team,away_team,team,scorer,minute,own_goal,penalty
 2026-07-15,England,Argentina,England,Anthony Gordon,55.0,False,False
 2026-07-15,England,Argentina,Argentina,Enzo Fernández,85.0,False,False
 2026-07-15,England,Argentina,Argentina,Lautaro Martínez,90.0,False,False
+2026-07-18,France,England,England,Declan Rice,3.0,False,False
+2026-07-18,France,England,England,Ezri Konsa,18.0,False,False
+2026-07-18,France,England,England,Bukayo Saka,37.0,False,False
+2026-07-18,France,England,England,Bukayo Saka,45.0,False,False
+2026-07-18,France,England,France,Kylian Mbappé,48.0,False,False
+2026-07-18,France,England,France,Bradley Barcola,54.0,False,False
+2026-07-18,France,England,France,Kylian Mbappé,66.0,False,False
+2026-07-18,France,England,England,Bukayo Saka,87.0,False,True
+2026-07-18,France,England,France,Ousmane Dembélé,90.0,False,False
+2026-07-18,France,England,England,Jude Bellingham,90.0,False,False
+2026-07-19,Spain,Argentina,Spain,Ferran Torres,106.0,False,False
 2026-07-12,Argentina,Switzerland,Argentina,Alexis Mac Allister,,False,False
 2026-07-12,Argentina,Switzerland,Argentina,Julián Alvarez,,False,False
 2026-07-12,Argentina,Switzerland,Argentina,Lautaro Martínez,,False,False
@@ -47968,13 +47979,3 @@ date,home_team,away_team,team,scorer,minute,own_goal,penalty
 2026-07-18,Ham-Kam,Tromso,Tromso,Jens Hjertø-Dahl,,False,False
 2026-07-18,Ham-Kam,Tromso,Tromso,Heine Asen Larsen,,False,False
 2026-07-18,Ham-Kam,Tromso,Tromso,Ieltsin Camões,,False,False
-2026-07-18,France,England,France,Kylian Mbappé,,False,False
-2026-07-18,France,England,France,Kylian Mbappé,,False,False
-2026-07-18,France,England,France,Ousmane Dembélé,,False,False
-2026-07-18,France,England,France,Bradley Barcola,,False,False
-2026-07-18,France,England,England,Ezri Konsa,,False,False
-2026-07-18,France,England,England,Declan Rice,,False,False
-2026-07-18,France,England,England,Bukayo Saka,,False,False
-2026-07-18,France,England,England,Bukayo Saka,,False,False
-2026-07-18,France,England,England,Bukayo Saka,,False,False
-2026-07-18,France,England,England,Jude Bellingham,,False,False

@@ -113,12 +113,37 @@ def seed_cold_start(
         return {}
     a, b, lo, hi = fit
 
+    # Our fixture name → ClubElo's (often truncated) name, where neither the
+    # exact slug nor the unique-prefix rule can bridge them safely.
+    _SEED_ALIASES = {
+        "lechpoznan": "lech",
+        "heartofmidlothian": "hearts",
+        "kiklaksvik": "klaksvik",
+    }
+
+    def _lookup(team_slug: str) -> "float | None":
+        alias = _SEED_ALIASES.get(team_slug)
+        if alias is not None and alias in clubelo_by_slug:
+            return clubelo_by_slug[alias]
+        """Exact slug match first; else a UNIQUE prefix match (ClubElo often
+        stores truncated names — 'Lech' for Lech Poznan, 'Gornik' for Gornik
+        Zabrze). ≥5 chars and exactly one candidate, so 'riga' can never
+        swallow 'rigasfs'."""
+        hit = clubelo_by_slug.get(team_slug)
+        if hit is not None:
+            return hit
+        if len(team_slug) < 5:
+            return None
+        cands = [v for cs, v in clubelo_by_slug.items()
+                 if len(cs) >= 5 and (cs.startswith(team_slug) or team_slug.startswith(cs))]
+        return cands[0] if len(cands) == 1 else None
+
     known = set(known_teams)
     seeded: dict[str, float] = {}
     for team in set(fixtures_teams):
         if team in known:
             continue
-        c = clubelo_by_slug.get(_slug(team))
+        c = _lookup(_slug(team))
         if c is None:
             continue
         val = a * c + b
