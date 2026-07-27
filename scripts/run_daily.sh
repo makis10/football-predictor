@@ -72,6 +72,27 @@ set -a
 source .env 2>/dev/null || true
 set +a
 
+# ── API-Football pre-flight ──────────────────────────────────────────────────
+# The account is IP-whitelisted and this connection has a dynamic IP. When it
+# rotates, every API-Football call returns {"errors":{"Ip":...}} with HTTP 200 —
+# callers just warn and continue, so the run "succeeds" having fetched nothing.
+# That went unnoticed for 5 days in July 2026, and retrying ~7,400 doomed calls
+# stretched this script from ~15 min to 4+ hours.
+#
+# Check once, up front: exit 2 means the IP is blocked, so skip every
+# API-Football step (they cannot succeed) but still run the rest — results from
+# The Odds API, predictions, projections and cache warming all work without it.
+API_FOOTBALL_OK=1
+echo "" >> "$LOG"
+echo "[0/9] API-Football pre-flight …" | tee -a "$LOG"
+docker compose exec -T backend python scripts/preflight_api_football.py 2>&1 | tee -a "$LOG"
+_preflight_rc=${PIPESTATUS[0]}
+if [ "$_preflight_rc" -ne 0 ]; then
+    API_FOOTBALL_OK=0
+    overall_failed=1
+    echo "  [skip] API-Football steps disabled for this run (pre-flight rc=$_preflight_rc)." | tee -a "$LOG"
+fi
+
 # ── Live-tournament gate ─────────────────────────────────────────────────────
 # World Cup 2026 ended 2026-07-19. The WC-specific steps below (API-Football
 # result overlay, squads, availability, Monte Carlo sim) only make sense while a
@@ -141,9 +162,11 @@ docker compose exec -T backend \
 # lights up the projection sooner. Greece is our primary market. Non-fatal.
 echo "" >> "$LOG"
 echo "[4b/6] Refreshing Greek SL fixtures (API-Football) …" | tee -a "$LOG"
+if [ "$API_FOOTBALL_OK" -eq 1 ]; then
 docker compose exec -T backend \
     python scripts/fetch_greek_apifootball.py --days-ahead 120 --days-back 5 \
     2>&1 | tee -a "$LOG" || echo "  [warn] Greek API-Football fetch failed — continuing" | tee -a "$LOG"
+else echo "  [skip] API-Football blocked." | tee -a "$LOG"; fi
 
 # ── 5. Refresh European fixtures (CL/EL/ECL, incl. qualifiers — API-Football) ─
 # Ingest-only: upcoming ties are inserted and finished ones get their score.
@@ -151,10 +174,12 @@ docker compose exec -T backend \
 # path — it calibrates, runs the draw/BTTS specialists and stores the Poisson λ.
 echo "" >> "$LOG"
 echo "[5/6] Refreshing European fixtures (CL/EL/ECL) …" | tee -a "$LOG"
+if [ "$API_FOOTBALL_OK" -eq 1 ]; then
 docker compose exec -T backend \
     python scripts/fetch_european_fixtures.py \
         --days-ahead 21 --days-back 5 \
     2>&1 | tee -a "$LOG" || overall_failed=1
+else echo "  [skip] API-Football blocked." | tee -a "$LOG"; fi
 
 # ── 5b. Refresh club friendlies (API-Football league 667) ────────────────────
 # Fetches upcoming club friendlies AND fills results for played ones — no other
@@ -162,12 +187,14 @@ docker compose exec -T backend \
 # (compute_predictions.py forces confidence "low" for ClubFriendly).
 echo "" >> "$LOG"
 echo "[5b/6] Refreshing club friendlies …" | tee -a "$LOG"
+if [ "$API_FOOTBALL_OK" -eq 1 ]; then
 docker compose exec -T backend \
     python scripts/fetch_club_friendlies.py \
         --days-ahead 14 \
         --days-back 7 \
         --no-predictions \
     2>&1 | tee -a "$LOG" || overall_failed=1
+else echo "  [skip] API-Football blocked." | tee -a "$LOG"; fi
 
 # ── 5c. Refresh ClubElo cold-start snapshot ──────────────────────────────────
 # Daily ClubElo rating pull → clubelo.json. compute_predictions seeds a real Elo
@@ -197,9 +224,11 @@ docker compose exec -T backend \
 # ── 8. Pre-warm injury cache for new fixtures (next 3 days, skips existing) ───
 echo "" >> "$LOG"
 echo "[8/9] Pre-warming injury cache for new fixtures …" | tee -a "$LOG"
+if [ "$API_FOOTBALL_OK" -eq 1 ]; then
 docker compose exec -T backend \
     python scripts/warmup_injuries.py --days 3 \
     2>&1 | tee -a "$LOG" || overall_failed=1
+else echo "  [skip] API-Football blocked." | tee -a "$LOG"; fi
 
 # ── Club player/team props (parity with the national match pages) ────────────
 # Ingest club team stats (corners / cards) then per-player match stats for both
@@ -210,12 +239,14 @@ docker compose exec -T backend \
 # Non-fatal: a club-stats API hiccup shouldn't flip the pipeline health signal.
 echo "" >> "$LOG"
 echo "[8b/9] Ingesting club team + player stats (props source) …" | tee -a "$LOG"
+if [ "$API_FOOTBALL_OK" -eq 1 ]; then
 docker compose exec -T backend \
     python scripts/fetch_club_team_stats.py --days-ahead 7 --last 8 --max-requests 1200 \
     2>&1 | tee -a "$LOG" || echo "  [warn] club team stats failed — continuing" | tee -a "$LOG"
 docker compose exec -T backend \
     python scripts/fetch_club_player_stats.py --days-ahead 7 --last 8 --max-requests 2000 \
     2>&1 | tee -a "$LOG" || echo "  [warn] club player stats failed — continuing" | tee -a "$LOG"
+else echo "  [skip] API-Football blocked." | tee -a "$LOG"; fi
 
 # ── National teams (international fixtures) ───────────────────────────────────
 # a. Refresh martj42 dataset (newly-played scores appear here once played)

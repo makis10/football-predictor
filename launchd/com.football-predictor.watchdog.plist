@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.football-predictor.watchdog</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>__PROJ_DIR__/scripts/run_watchdog.sh</string>
+    </array>
+
+    <!-- Every 5 minutes. The site is public; the previous floor on an outage
+         was the next 06:00 daily run, i.e. up to ~24 h unnoticed. -->
+    <key>StartInterval</key>
+    <integer>300</integer>
+
+    <key>WorkingDirectory</key>
+    <string>__PROJ_DIR__</string>
+
+    <!-- Check as soon as the Mac (or the job) comes up — waking from sleep is
+         one of the ways the stack ends up stopped. -->
+    <key>RunAtLoad</key>
+    <true/>
+
+    <key>StandardOutPath</key>
+    <string>__LOG_DIR__/watchdog-stdout.log</string>
+    <key>StandardErrorPath</key>
+    <string>__LOG_DIR__/watchdog-stderr.log</string>
+</dict>
+</plist>

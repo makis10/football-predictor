@@ -800,6 +800,55 @@ Model accuracy and ROI tracking dashboard data. Cached in-process for 6 hours.
 
 ---
 
+### `GET /standings/{league}`
+
+League table for a competition, **computed from stored results** — there is no
+standings table and no external call. Cached 10 min.
+
+**Response:** `season`, `is_final`, `rows[]` (position, played, W/D/L, goals,
+`goal_diff`, points, `zone`) plus the zone metadata the UI colours by:
+`top_zone` / `playoff_zone` / `bottom_zone` and `top_n` / `playoff_to` /
+`bottom_n`. The top zone means different things per competition — Champions
+League, Promotion, Libertadores — so its label comes from the API, not the UI.
+UEFA competitions use the 2024 format (1–8 direct to the last 16, 9–24 play-off,
+25–36 eliminated) and count **only league-phase fixtures** (`matches.round`),
+so a July qualifier is never mixed into the table.
+
+404 when the competition has no played matches yet.
+
+> ⚠ Season labels in `matches` are inconsistent — the CSV importer writes
+> `2025/2026`, the API fetchers write `2025/26` for the *same* season. Everything
+> goes through `_canon_season()`; group by the raw string and one table becomes
+> two half-tables.
+
+### `GET /standings/{league}/projection`
+
+Monte Carlo season projection (10k runs from current club Elo). Cached 25 h and
+re-primed by the daily pipeline, because a run takes ~2 s.
+
+- **Domestic league** → `p_title`, `p_top` (Europe/promotion), `p_relegated`,
+  `exp_points` per team.
+- **UEFA competition** → `p_champion`, `p_final`, `p_r16` per team.
+
+The remaining fixtures are **derived** as the complete double round-robin minus
+what has been played: we only ingest ~60 days ahead, so simulating the stored
+fixture list would answer a question nobody asked. The Greek Super League also
+simulates its play-off phase (position groups 1-4 / 5-8 / 9-14 with carried
+points), so the title comes out of the championship group rather than the
+regular-season order.
+
+404 when there is nothing honest to project: a finished season, or a UEFA
+competition still in qualifying — before the draw the 36-team field does not
+exist yet, so a title probability would be invented rather than estimated.
+
+### `GET /standings/{league}/projection/history`
+
+Daily snapshots of the title/champion odds (model, plus the de-vigged bookmaker
+outright where one is offered) written by `scripts/snapshot_projections.py`.
+Always 200; `available: false` until the first snapshot exists.
+
+---
+
 ## Model Deep-Dive
 
 ### Four classifiers
@@ -919,7 +968,18 @@ Bookmaker odds already partially price in injuries, so the adjustment is intenti
 | Recent results    | `/recent`       | Past 7 days of results with prediction accuracy. 🟢 Green = both correct, 🟡 Amber = one correct, 🔴 Red = both wrong. **"Γιατί χάθηκε;"** AI post-mortem button on wrong predictions — generates event-based analysis (goals/cards/penalties) via Groq. Paginated — 7 days per page. |
 | Match detail      | `/matches/:id`  | Full prediction breakdown + live bookmaker odds + AI analysis in Greek (Groq GPT-OSS-120B). **Odds movement arrows ↑/↓** next to each bookmaker odd (polled every 3h). EV table shows which market offers most value. Injury list shows player name, status, and position. Hidden for finished matches. |
 | Stats & Accuracy  | `/stats`        | Model accuracy dashboard: rolling windows, per-league/confidence/outcome breakdowns, draw specialist stats, **ROI Tracker** (flat €10 stake simulation), **Cumulative EV vs P&L chart**, O/U calibration, model version history. |
+| Projections       | `/projections`  | Long-term Monte Carlo per competition: **title / Europe / relegation** odds for leagues, **champion / final / last-16** for UEFA competitions, alongside the league table with its zones. Category filters (domestic / European) and an odds-over-time chart from the daily snapshots. |
 | AI Chatbot        | All pages       | Floating chat button (bottom-right). Context-aware Groq assistant in Greek — knows upcoming fixtures (next 3 days) and probabilities. Full conversation history, quick-prompt chips. Context cached 30 min in Redis. |
+
+### Language (EN / EL)
+
+The UI is fully bilingual. The active language lives in a first-party `locale`
+cookie so server and client render identically (no hydration mismatch): server
+components read it via `getServerT()` (`lib/i18n-server.ts`), client components
+via `useT()` (`components/LanguageProvider.tsx`), both off one flat message table
+in `lib/i18n.ts`. A missing key falls back to English and then to the raw key, so
+a half-translated build never renders blank. The flag toggle in the header writes
+the cookie and refreshes.
 
 ### Timezone handling
 

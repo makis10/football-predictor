@@ -109,10 +109,10 @@ def warn_unknown_teams(fixtures: list[dict], *, domestic: bool) -> set[str]:
     minnow we have no history for, so it's reported quietly as an FYI, not a bug.
     """
     known = known_team_names()
-    unknown = {
-        t for f in fixtures for t in (f.get("home_team"), f.get("away_team"))
-        if t and t not in known
+    fixture_teams = {
+        t for f in fixtures for t in (f.get("home_team"), f.get("away_team")) if t
     }
+    unknown = {t for t in fixture_teams if t not in known}
     if unknown:
         tag = "[warn]" if domestic else "[info]"
         why = ("not in training data — likely an unmapped name; add it to TEAM_MAP"
@@ -120,7 +120,107 @@ def warn_unknown_teams(fixtures: list[dict], *, domestic: bool) -> set[str]:
         sample = ", ".join(sorted(unknown)[:20])
         print(f"  {tag} {len(unknown)} unresolved team(s) — {why}: {sample}"
               + (" …" if len(unknown) > 20 else ""))
+
+    # Membership alone misses the subtler phantom: a name that IS in the CSVs but
+    # holds almost no history, while a near-identical name holds the club's real
+    # record ("OFI" 1 match vs "OFI Crete" 97). That still yields default
+    # features, just without tripping the check above.
+    if domestic:
+        thin = _thin_duplicates(fixture_teams - unknown, known)
+        if thin:
+            pairs = ", ".join(f"{a!r}→{b!r}" for a, b in sorted(thin)[:10])
+            print(f"  [warn] {len(thin)} team(s) look like a thin duplicate of an "
+                  f"existing club — add to COMMON_ALIASES: {pairs}")
+            unknown |= {a for a, _ in thin}
     return unknown
+
+
+def _thin_duplicates(names: set[str], known: set[str]) -> set[tuple[str, str]]:
+    """{(thin_name, fat_name)} for names whose near-twin has far more history."""
+    from difflib import SequenceMatcher
+
+    from backend.app.ml.odds_analysis_service import _slug
+
+    counts = _csv_match_counts()
+    out: set[tuple[str, str]] = set()
+    for n in names:
+        n_hist = counts.get(n, 0)
+        if n_hist > 20:                      # a well-established name is not thin
+            continue
+        for other in known:
+            if other == n or counts.get(other, 0) < 20:
+                continue
+            a, b = _slug(n), _slug(other)
+            if a and (a in b or SequenceMatcher(None, a, b).ratio() > 0.85):
+                out.add((n, other))
+                break
+    return out
+
+
+def _csv_match_counts() -> dict[str, int]:
+    """{team: matches in the training CSVs} — how much history a name really has."""
+    import os
+
+    from backend.app.ml.features import load_raw_csvs
+
+    global _COUNTS_CACHE
+    if _COUNTS_CACHE is None:
+        root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+        h = load_raw_csvs(os.path.join(root, "backend", "data", "raw"))
+        c: dict[str, int] = {}
+        for col in ("home_team", "away_team"):
+            for team, n in h[col].value_counts().items():
+                c[team] = c.get(team, 0) + int(n)
+        _COUNTS_CACHE = c
+    return _COUNTS_CACHE
+
+
+_COUNTS_CACHE: dict[str, int] | None = None
+
+
+# Cross-source aliases: API spelling → our CSV name. Every fetcher's resolver
+# falls back to these, because the same club is spelled differently by
+# football-data.org, The Odds API and API-Football, and fixing it in one
+# fetcher's private map left the others generating phantom teams.
+#
+# Only entries where the club VERIFIABLY exists in the training CSVs under the
+# target name. A club we genuinely have no history for (Elversberg, Le Mans,
+# Academico Viseu, Kalamata — newly promoted or lower-division) belongs nowhere
+# in here: it keeps its own name and is priced from default features, which is
+# honest. Mapping it onto a similar-looking club would be far worse.
+COMMON_ALIASES: dict[str, str] = {
+    # Portugal
+    "Braga":              "Sp Braga",
+    "SC Braga":           "Sp Braga",
+    "CD Nacional":        "Nacional",
+    "Marítimo":           "Maritimo",
+    "Vitoria SC":         "Vitoria",
+    "Amadora":            "Estrela",          # Estrela da Amadora
+    # Spain
+    "Málaga":             "Malaga",
+    "Deportivo":          "La Coruna",        # Deportivo La Coruña
+    # Germany
+    "Schalke":            "Schalke 04",
+    "SC Paderborn":       "Paderborn",
+    # Netherlands
+    "NEC Nijmegen":       "Nijmegen",
+    "Go Ahead":           "Go Ahead Eagles",
+    "Sittard":            "For Sittard",      # Fortuna Sittard
+    "Sparta":             "Sparta Rotterdam",
+    # Greece — three feeds, three spellings of the same four clubs
+    "AEK Athens":         "AEK",
+    "AEK Athens FC":      "AEK",
+    "Olympiakos Piraeus": "Olympiakos",
+    "Aris Thessaloniki":  "Aris",
+    "Aris Thessalonikis": "Aris",
+    "PAOK Thessaloniki":  "PAOK",
+    "Iraklis FC":         "Iraklis",
+    "Volos NPS":          "Volos NFC",
+    # ⚠ "OFI" is ALSO in the CSVs (1 match) while "OFI Crete" holds the club's
+    # real 97-match history — so the membership guard could not see it was a
+    # duplicate. Pin the thin spelling onto the fat one.
+    "OFI":                "OFI Crete",
+}
 
 
 # Legal / corporate affixes that decorate a club name without changing which
@@ -176,7 +276,10 @@ def build_resolver(known_teams: set[str], team_map: dict[str, str] | None = None
 
     from backend.app.ml.odds_analysis_service import _ALIASES, _slug
 
-    team_map = team_map or {}
+    # Caller's map wins over the shared aliases (a fetcher may know that its
+    # feed means something different by the same string), but every caller
+    # inherits COMMON_ALIASES so one source's fix covers the others too.
+    team_map = {**COMMON_ALIASES, **(team_map or {})}
     slug_to_name = {_slug(t): t for t in known_teams}
     cache: dict[str, str | None] = {}
 

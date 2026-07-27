@@ -9,12 +9,10 @@ import {
   isEuropeanProjection,
   getStandings,
   getUpcomingNationalMatches,
-  getWcReview,
   athensDate,
   canonicalLeagueCode,
   formatLongDate,
   INTERNATIONAL_LEAGUE,
-  type WcReview,
 } from "@/lib/api";
 import MatchCard from "@/components/MatchCard";
 import LockedMatchCard from "@/components/LockedMatchCard";
@@ -189,7 +187,6 @@ async function LeagueStandings({ league }: { league: string }) {
 }
 
 export default async function HomePage({ searchParams }: PageProps) {
-  const t = await getServerT();
   const sp = await searchParams;
   // Resolve to the canonical code (case-insensitive). A league we don't cover
   // (e.g. ?league=Brasileirao) renders an honest "not supported" panel below
@@ -204,15 +201,6 @@ export default async function HomePage({ searchParams }: PageProps) {
   const session = await getSession();
   const locked = !session;
 
-  // Best-effort WC retrospective hero — keeps the app compelling between the
-  // World Cup final and the club season restart, when fixtures are sparse.
-  let wcReview: WcReview = { available: false };
-  try {
-    wcReview = await getWcReview();
-  } catch {
-    /* non-fatal */
-  }
-
   return (
     <div className="space-y-6">
       <div>
@@ -224,20 +212,6 @@ export default async function HomePage({ searchParams }: PageProps) {
           European cup, friendly &amp; international.
         </p>
       </div>
-
-      {wcReview.available && wcReview.settled ? (
-        <Link
-          href="/national/world-cup/review"
-          className="flex items-center justify-between gap-3 rounded-xl border border-amber-700/40 bg-amber-950/20 px-4 py-3 hover:bg-amber-950/30 transition-colors"
-        >
-          <span className="text-sm text-gray-300">
-            🏆 <span className="font-semibold text-amber-300">{t("home.wcReview.label")}</span> {t("home.wcReview.mid")}{" "}
-            <span className="font-semibold text-emerald-400">{Math.round((wcReview.result_accuracy ?? 0) * 100)}%</span>{" "}
-            {t("home.wcReview.suffix", { n: wcReview.settled })}
-          </span>
-          <span className="text-xs text-amber-400 whitespace-nowrap">{t("home.wcReview.cta")}</span>
-        </Link>
-      ) : null}
 
       <Suspense>
         <LeagueFilter active={sp.league} />

@@ -403,7 +403,25 @@ def load_raw_csvs(raw_dir: str) -> pd.DataFrame:
         raise RuntimeError(f"No CSV files found in {raw_dir}")
 
     data = pd.concat(frames, ignore_index=True)
-    return _normalise(data)
+    return _canonicalise_teams(_normalise(data))
+
+
+# Clubs whose history the source CSVs split across two spellings, which silently
+# halves the club: Elo, form and every rolling stat are keyed on the name, so
+# "OFI" (127 matches) and "OFI Crete" (262) were two mediocre teams instead of
+# one real one. Applied at load, so training and inference always agree.
+# Only for names verified to be the SAME club — "Atletico GO"/"Atletico-MG" and
+# "Bury"/"Shrewsbury" look similar but are different clubs and must stay apart.
+_CSV_TEAM_CANON: dict[str, str] = {
+    "OFI": "OFI Crete",
+}
+
+
+def _canonicalise_teams(df: pd.DataFrame) -> pd.DataFrame:
+    for col in ("home_team", "away_team"):
+        if col in df.columns:
+            df[col] = df[col].replace(_CSV_TEAM_CANON)
+    return df
 
 
 def _normalise(df: pd.DataFrame) -> pd.DataFrame:
@@ -1321,6 +1339,14 @@ _SNAP_NAME_MAP: dict[str, str] = {
     "Derby County":      "Derby",
     "Oxford United":     "Oxford",
     "Preston NE":        "Preston",
+    # GreekSL — API-Football qualifies the club with its city, our CSVs use the
+    # bare name. Without these the club drops out of the Elo snapshot and its
+    # fixtures render as "Insufficient data" even though we ingest its league.
+    # (Kalamata is genuinely absent — newly promoted, no CSV history yet.)
+    "Olympiakos Piraeus":  "Olympiakos",
+    "AEK Athens FC":       "AEK",
+    "AEK Athens":          "AEK",
+    "Aris Thessalonikis":  "Aris",
 }
 
 

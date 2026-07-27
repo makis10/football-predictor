@@ -235,18 +235,23 @@ if _clubelo_seeded:
           f"onto our Elo scale — {_preview}"
           f"{' …' if len(_clubelo_seeded) > 12 else ''}", flush=True)
 
-_SEEDED_TEAMS = frozenset(_clubelo_seeded)
-
 
 def _predictable(home: str, away: str) -> bool:
-    """Both sides carry a real strength signal: CSV history OR a ClubElo seed.
-    Such fixtures get their prediction DISPLAYED (insufficient_data=False) —
-    still confidence 'low' and never suggestable (the value gate requires full
-    history via _has_history). Fixtures where a side has neither stay hidden
-    behind 'Insufficient data'."""
+    """Both sides carry REAL history (they're in the Elo snapshot from our CSVs).
+
+    A ClubElo cold-start seed is deliberately NOT enough to display a prediction.
+    It sharpens the Elo feature (see seed_cold_start above), but every OTHER
+    feature — form, goals for/against, xG, H2H, market — is still a league-median
+    default for these clubs, because we don't ingest their domestic leagues.
+    With only Elo carrying signal the model collapses onto a near-constant
+    home-advantage prior: measured on the 2026-07 UEFA Q2 round, 14 of 24
+    fixtures shared just 4 distinct probability triples — Fenerbahçe v Górnik
+    came out identical to Kauno Žalgiris v KI Klaksvík. Serving that as a real
+    prediction is worse than serving nothing, so those fixtures stay behind
+    'Insufficient data' (the fixture, competition and kick-off still show).
+    """
     def ok(t: str) -> bool:
-        return (t in _KNOWN_TEAMS or _SNAP_NAME_MAP.get(t, t) in _KNOWN_TEAMS
-                or t in _SEEDED_TEAMS)
+        return t in _KNOWN_TEAMS or _SNAP_NAME_MAP.get(t, t) in _KNOWN_TEAMS
     return ok(home) and ok(away)
 
 european_df = load_european_data(EUROPEAN_DIR)

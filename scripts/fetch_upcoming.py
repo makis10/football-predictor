@@ -173,7 +173,14 @@ TEAM_MAP: dict[str, str] = {
 
 
 def map_team(short_name: str) -> str:
-    return TEAM_MAP.get(short_name, short_name)
+    """API shortName → our CSV name. Falls back to the cross-source alias table
+    so a spelling fixed for one feed (Braga/Schalke/Nijmegen…) doesn't have to
+    be re-discovered here as a phantom team."""
+    from scripts.team_resolver import COMMON_ALIASES
+
+    if short_name in TEAM_MAP:
+        return TEAM_MAP[short_name]
+    return COMMON_ALIASES.get(short_name, short_name)
 
 
 def infer_season(d: date) -> str:

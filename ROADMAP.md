@@ -213,6 +213,106 @@ minnows) έπαιρναν flat Elo 1500 (μέση ομάδα). Το `scripts/fet
 
 ---
 
+## 🟣 Phase 5 — Parity, βαθμολογίες & μακροχρόνιες προγνώσεις (2026-07)
+
+### ✅ 5.1 · Club ↔ National parity στη σελίδα αγώνα — υλοποιημένο 2026-07-09
+
+Τα δύο match-detail layouts ήταν διαφορετικά και τα club matches δεν είχαν Elo,
+expected cards/corners, στατιστικά παικτών. Πλέον **ίδιο layout και στα δύο**, με
+όλα τα national-only sections να υπολογίζονται **live** για τα club (καμία
+persistence, κανένα nightly step): `club_elo.py` (Elo από τον πίνακα matches),
+`club_props.py` (corners/cards από `team_match_stats`), `club_player_props.py`
+(scorer/SoT/assist, reuse του national engine· λ από `poisson_lambda_*`).
+Ingestion: `fetch_club_team_stats.py` + `fetch_club_player_stats.py` (budget-capped,
+idempotent, wired στο daily). Migration 0028 (`yellow_cards`/`red_cards`).
+
+**Πολυπλοκότητα:** 🔴 Υψηλή &nbsp;|&nbsp; **Impact:** 🔥🔥🔥
+
+---
+
+### ✅ 5.2 · Βαθμολογίες με ζώνες — υλοποιημένο 2026-07-15
+
+Πίνακας βαθμολογίας ανά διοργάνωση, **παραγόμενος από τα αποθηκευμένα
+αποτελέσματα** (κανένας νέος πίνακας, καμία κλήση API). Οι ζώνες αλλάζουν νόημα
+ανά πρωτάθλημα (Champions League / Άνοδος / Libertadores / Ευρώπη) — μέγεθος από
+`LEAGUE_STAKES`, σημασία από `TOP_ZONE_LABEL`. Οι ευρωπαϊκές έχουν το format 2024:
+**1-8 απευθείας 16άδα · 9-24 play-off · 25-36 εκτός**.
+⚠ Τα season labels στη DB ήταν ασυνεπή (`2025/2026` από CSV vs `2025/26` από API
+για την ΙΔΙΑ σεζόν) — `_canon_season()` αλλιώς ο πίνακας διχοτομείται.
+
+**Πολυπλοκότητα:** 🟡 Μέτρια &nbsp;|&nbsp; **Impact:** 🔥🔥🔥
+
+---
+
+### ✅ 5.3 · Μακροχρόνιες προγνώσεις (Monte Carlo) — υλοποιημένο 2026-07-15
+
+Πιθανότητες **τίτλου / Ευρώπης / υποβιβασμού** ανά πρωτάθλημα και
+**κατάκτησης / τελικού / 16άδας** για τις ευρωπαϊκές, 10k sims από το τρέχον Elo.
+Σελίδα `/projections` (φίλτρα κατηγορίας) + nav link.
+Δύο σχεδιαστικές αποφάσεις που κρατούν την πρόγνωση έντιμη:
+- **Τα υπόλοιπα ματς παράγονται** ως πλήρες διπλό round-robin μείον τα παιγμένα —
+  τραβάμε fixtures μόνο 60 μέρες μπροστά, οπότε η DB έχει 37 από τους 380 αγώνες
+  της Premier· προσομοίωση αυτών δεν απαντά σε τίποτα.
+- **Οι ευρωπαϊκές δεν προβλέπονται στα προκριματικά**: πριν την κλήρωση του league
+  phase οι 36 ομάδες δεν υπάρχουν. Ανάβει μόνο του (~Σεπτέμβρης).
+Το **GreekSL προσομοιώνει και τα play-offs** (όμιλοι θέσεων 1-4/5-8/9-14 με
+μεταφορά βαθμών) — ο τίτλος βγαίνει από τον championship όμιλο, όχι από τη σειρά
+της κανονικής περιόδου.
+
+**Πολυπλοκότητα:** 🔴 Υψηλή &nbsp;|&nbsp; **Impact:** 🔥🔥🔥
+
+---
+
+### 🟡 5.4 · Πρόγνωση vs αγορά — μερικώς (υποδομή έτοιμη, αγορά απούσα)
+
+`title_market.py` τραβά de-vigged bookmaker outright ανά διοργάνωση και το
+`snapshot_projections.py` γράφει ημερήσιο στιγμιότυπο (μοντέλο + αγορά) →
+γράφημα εξέλιξης. **⚠ Το The Odds API δεν προσφέρει league-title outrights στο
+τρέχον plan** (τα base keys γυρίζουν 422 σε `markets=outrights`), οπότε σήμερα
+εμφανίζεται μόνο η γραμμή του μοντέλου. Ανάβει μόνη της αν/όταν δοθεί η αγορά.
+
+**Πολυπλοκότητα:** 🟢 Χαμηλή &nbsp;|&nbsp; **Impact:** 🔥🔥 (όταν υπάρξει feed)
+
+---
+
+### ✅ 5.5 · Name guard σε όλους τους fetchers — υλοποιημένο 2026-07-15/27
+
+Το επαναλαμβανόμενο **phantom-team bug** (ίδιος σύλλογος με δύο ονόματα → Elo
+1500, σπασμένη βαθμολογία) χτύπησε τέσσερις φορές: Leverkusen/Milan, η φουρνιά
+του Championship, η ευρωπαϊκή εισροή 2026/27 και οι ελληνικές ομάδες σε τρία
+feeds. Πλέον: **ένα** κοινό alias table (`COMMON_ALIASES`) που κληρονομούν όλοι
+οι fetchers, `warn_unknown_teams()` που φωνάζει σε κάθε daily run (+ macOS
+notification), και canonicalization των CSV ονομάτων στο `load_raw_csvs`.
+
+**Πολυπλοκότητα:** 🟡 Μέτρια &nbsp;|&nbsp; **Impact:** 🔥🔥🔥 (data integrity)
+
+---
+
+### ✅ 5.6 · Δίγλωσσο UI (EN/EL) — υλοποιημένο 2026-07
+
+Πλήρες i18n με `locale` cookie ώστε server και client να αποδίδουν το ίδιο (χωρίς
+hydration mismatch): `lib/i18n.ts` (632 κλειδιά), `getServerT()` για server
+components, `useT()` για client, flag toggle στο header. Αντικατέστησε την παλιά
+σύμβαση «αγγλικά labels / ελληνικές προτάσεις» (`frontend/LANGUAGE.md`).
+
+**Πολυπλοκότητα:** 🟡 Μέτρια &nbsp;|&nbsp; **Impact:** 🔥🔥
+
+---
+
+### ✅ 5.7 · Cache warm-up (latency + κόστος LLM) — υλοποιημένο 2026-07-15/27
+
+Κρύο `/analysis` = ~5.8s, ζεστό = ~0.01s. `warmup_analysis.py` (launchd/50min) +
+`warmup_standings.py` (daily) προθερμαίνουν ό,τι είναι ακριβό.
+⚠ Το warm-up **χτυπά τα πραγματικά endpoints**: το cache key φτιάχνεται από τις
+πιθανότητες όπως τις στρογγυλοποιεί το endpoint (μετά το injury adjustment), οπότε
+ανακατασκευή τους σε script θα έφτιαχνε κλειδί που δεν διαβάζει κανείς.
+Το Groq narrative έχει **δικό του 24ωρο cache** — αλλιώς το ωριαίο warm-up
+ξεπερνούσε το ημερήσιο όριο tokens (~1.2M vs 200k).
+
+**Πολυπλοκότητα:** 🟡 Μέτρια &nbsp;|&nbsp; **Impact:** 🔥🔥🔥 (UX + κόστος)
+
+---
+
 ## Προτεινόμενη σειρά υλοποίησης
 
 | # | Feature | Status | Πολυπλοκότητα | Impact |
@@ -232,6 +332,13 @@ minnows) έπαιρναν flat Elo 1500 (μέση ομάδα). Το `scripts/fet
 | 13 | Rolling-window recovery (4.1) | ✅ Done (2026-07-18) | 🟡 Μέτρια | 🔥🔥 |
 | 14 | Gate alerting (4.3) | ✅ Done (2026-07-18) | 🟢 Χαμηλή | 🔥 |
 | 15 | ClubElo cold-start fallback | ✅ Done (2026-07-18) | 🟡 Μέτρια | 🔥🔥 |
+| 16 | Club↔National parity (5.1) | ✅ Done (2026-07-09) | 🔴 Υψηλή | 🔥🔥🔥 |
+| 17 | Βαθμολογίες + ζώνες (5.2) | ✅ Done (2026-07-15) | 🟡 Μέτρια | 🔥🔥🔥 |
+| 18 | Μακροχρόνιες προγνώσεις (5.3) | ✅ Done (2026-07-15) | 🔴 Υψηλή | 🔥🔥🔥 |
+| 19 | Πρόγνωση vs αγορά (5.4) | 🟡 Υποδομή έτοιμη — λείπει feed | 🟢 Χαμηλή | 🔥🔥 |
+| 20 | Name guard παντού (5.5) | ✅ Done (2026-07-27) | 🟡 Μέτρια | 🔥🔥🔥 |
+| 21 | Δίγλωσσο UI (5.6) | ✅ Done (2026-07) | 🟡 Μέτρια | 🔥🔥 |
+| 22 | Cache warm-up (5.7) | ✅ Done (2026-07-27) | 🟡 Μέτρια | 🔥🔥🔥 |
 
 ---
 

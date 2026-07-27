@@ -44,16 +44,10 @@ def _save_state(state: dict) -> None:
 
 
 def _post_webhook(text: str) -> None:
-    url = os.environ.get("GATE_ALERT_URL")
-    if not url:
-        return
-    try:
-        import requests
-        # {"content": …} suits Discord; Slack uses {"text": …}. Send both keys so
-        # a single URL works for either without per-provider config.
-        requests.post(url, json={"content": text, "text": text}, timeout=8)
-    except Exception as e:  # noqa: BLE001 — best-effort, never raise
-        print(f"  [gate-alert] webhook POST failed: {e}")
+    """Send via the shared sink (handles ntfy vs Discord/Slack formatting)."""
+    from backend.app.alerting import post_alert
+
+    post_alert(text, title="Suggestable set changed", priority="default", tags="chart_with_upwards_trend")
 
 
 def alert_gate_change(source: str, proven: Iterable[str]) -> Optional[dict]:
