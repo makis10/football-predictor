@@ -1,0 +1,199 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2018-03-11,Kairat Almaty,Kyzyl-Zhar,2,1,H
+2018-03-11,Ordabasy,Shakhter Karagandy,2,1,H
+2018-03-11,Zhetysu,FK Tobol Kostanay,0,1,A
+2018-03-11,Kaisar,Aktobe,0,1,A
+2018-03-11,Irtysh,Atyrau,2,1,H
+2018-03-11,FC Astana,Akzhayik,3,0,H
+2018-03-17,Kairat Almaty,Atyrau,2,0,H
+2018-03-17,Ordabasy,Kyzyl-Zhar,2,1,H
+2018-03-17,FK Tobol Kostanay,Shakhter Karagandy,0,1,A
+2018-03-17,Zhetysu,FC Astana,0,2,A
+2018-03-17,Kaisar,Akzhayik,1,1,D
+2018-03-17,Irtysh,Aktobe,2,1,H
+2018-03-31,Akzhayik,Irtysh,1,0,H
+2018-03-31,Aktobe,Kairat Almaty,1,1,D
+2018-03-31,FC Astana,Kaisar,2,0,H
+2018-03-31,Atyrau,Ordabasy,0,1,A
+2018-04-01,Kyzyl-Zhar,FK Tobol Kostanay,1,2,A
+2018-04-01,Shakhter Karagandy,Zhetysu,1,1,D
+2018-04-07,FK Tobol Kostanay,Atyrau,3,2,H
+2018-04-07,Zhetysu,Kaisar,1,0,H
+2018-04-07,Irtysh,FC Astana,1,6,A
+2018-04-07,Shakhter Karagandy,Kyzyl-Zhar,2,1,H
+2018-04-07,Kairat Almaty,Akzhayik,3,0,H
+2018-04-07,Ordabasy,Aktobe,3,1,H
+2018-04-14,FC Astana,Kairat Almaty,1,1,D
+2018-04-14,Akzhayik,Ordabasy,4,1,H
+2018-04-14,Kyzyl-Zhar,Zhetysu,1,0,H
+2018-04-14,Kaisar,Irtysh,0,0,D
+2018-04-14,Aktobe,FK Tobol Kostanay,0,1,A
+2018-04-14,Atyrau,Shakhter Karagandy,0,0,D
+2018-04-22,FK Tobol Kostanay,Akzhayik,1,1,D
+2018-04-22,Kyzyl-Zhar,Atyrau,1,1,D
+2018-04-22,Zhetysu,Irtysh,2,1,H
+2018-04-22,Shakhter Karagandy,Aktobe,1,1,D
+2018-04-22,Kairat Almaty,Kaisar,4,1,H
+2018-04-22,Ordabasy,FC Astana,1,2,A
+2018-04-25,Kyzyl-Zhar,FC Astana,0,2,A
+2018-04-28,Akzhayik,Shakhter Karagandy,1,1,D
+2018-04-28,Kaisar,Ordabasy,0,0,D
+2018-04-28,Irtysh,Kairat Almaty,1,2,A
+2018-04-28,Atyrau,Zhetysu,1,0,H
+2018-04-29,FC Astana,FK Tobol Kostanay,1,0,H
+2018-04-29,Aktobe,Kyzyl-Zhar,2,0,H
+2018-05-05,Kyzyl-Zhar,Akzhayik,2,1,H
+2018-05-05,Shakhter Karagandy,FC Astana,1,0,H
+2018-05-05,Zhetysu,Kairat Almaty,1,3,A
+2018-05-05,Atyrau,Aktobe,1,1,D
+2018-05-05,Ordabasy,Irtysh,1,0,H
+2018-05-05,FK Tobol Kostanay,Kaisar,0,3,A
+2018-05-09,Akzhayik,Atyrau,1,1,D
+2018-05-09,Kairat Almaty,Ordabasy,2,0,H
+2018-05-09,Kaisar,Shakhter Karagandy,3,0,H
+2018-05-09,Irtysh,FK Tobol Kostanay,0,1,A
+2018-05-09,FC Astana,Kyzyl-Zhar,2,0,H
+2018-05-09,Aktobe,Zhetysu,1,1,D
+2018-05-13,Kyzyl-Zhar,Kaisar,0,0,D
+2018-05-13,Shakhter Karagandy,Irtysh,0,1,A
+2018-05-13,FK Tobol Kostanay,Kairat Almaty,1,0,H
+2018-05-13,Atyrau,FC Astana,0,2,A
+2018-05-13,Aktobe,Akzhayik,5,3,H
+2018-05-14,Zhetysu,Ordabasy,4,2,H
+2018-05-19,Irtysh,Kyzyl-Zhar,5,0,H
+2018-05-19,FC Astana,Aktobe,3,1,H
+2018-05-19,Kaisar,Atyrau,0,0,D
+2018-05-19,Kairat Almaty,Shakhter Karagandy,2,0,H
+2018-05-19,Ordabasy,FK Tobol Kostanay,0,1,A
+2018-05-19,Akzhayik,Zhetysu,2,0,H
+2018-05-23,Akzhayik,FC Astana,3,0,H
+2018-05-27,Kyzyl-Zhar,Ordabasy,1,2,A
+2018-05-27,Shakhter Karagandy,FK Tobol Kostanay,0,1,A
+2018-05-27,FC Astana,Zhetysu,3,0,H
+2018-05-27,Akzhayik,Kaisar,0,0,D
+2018-05-27,Atyrau,Kairat Almaty,1,3,A
+2018-05-27,Aktobe,Irtysh,1,1,D
+2018-05-31,Zhetysu,Shakhter Karagandy,1,0,H
+2018-05-31,Kaisar,FC Astana,0,2,A
+2018-05-31,Kairat Almaty,Aktobe,3,2,H
+2018-05-31,Ordabasy,Atyrau,0,2,A
+2018-05-31,FK Tobol Kostanay,Kyzyl-Zhar,0,1,A
+2018-05-31,Irtysh,Akzhayik,2,0,H
+2018-06-17,FC Astana,Irtysh,3,0,H
+2018-06-17,Akzhayik,Kairat Almaty,1,2,A
+2018-06-17,Kaisar,Zhetysu,0,0,D
+2018-06-17,Atyrau,FK Tobol Kostanay,0,2,A
+2018-06-17,Aktobe,Ordabasy,3,1,H
+2018-06-18,Kyzyl-Zhar,Shakhter Karagandy,1,0,H
+2018-06-23,FK Tobol Kostanay,Aktobe,2,3,A
+2018-06-23,Zhetysu,Kyzyl-Zhar,2,1,H
+2018-06-23,Shakhter Karagandy,Atyrau,3,0,H
+2018-06-23,Ordabasy,Akzhayik,2,1,H
+2018-06-23,Irtysh,Kaisar,0,1,A
+2018-06-24,Kairat Almaty,FC Astana,1,2,A
+2018-06-30,FC Astana,Ordabasy,5,3,H
+2018-07-01,Akzhayik,FK Tobol Kostanay,1,3,A
+2018-07-01,Kaisar,Kairat Almaty,1,2,A
+2018-07-01,Irtysh,Zhetysu,0,2,A
+2018-07-01,Atyrau,Kyzyl-Zhar,0,0,D
+2018-07-01,Aktobe,Shakhter Karagandy,2,0,H
+2018-07-05,FK Tobol Kostanay,FC Astana,0,0,D
+2018-07-05,Ordabasy,Kaisar,1,2,A
+2018-07-06,Kairat Almaty,Irtysh,4,0,H
+2018-07-07,Kyzyl-Zhar,Aktobe,2,1,H
+2018-07-07,Zhetysu,Atyrau,2,2,D
+2018-07-07,Shakhter Karagandy,Akzhayik,1,2,A
+2018-07-14,Kaisar,FK Tobol Kostanay,2,2,D
+2018-07-14,FC Astana,Shakhter Karagandy,2,0,H
+2018-07-14,Akzhayik,Kyzyl-Zhar,2,0,H
+2018-07-14,Aktobe,Atyrau,5,1,H
+2018-07-15,Irtysh,Ordabasy,1,2,A
+2018-07-15,Kairat Almaty,Zhetysu,2,1,H
+2018-07-21,Zhetysu,Aktobe,1,2,A
+2018-07-21,Shakhter Karagandy,Kaisar,2,2,D
+2018-07-21,Atyrau,Akzhayik,2,0,H
+2018-07-22,FK Tobol Kostanay,Irtysh,1,1,D
+2018-07-22,Ordabasy,Kairat Almaty,2,1,H
+2018-07-28,Kaisar,Kyzyl-Zhar,2,1,H
+2018-07-28,FC Astana,Atyrau,2,0,H
+2018-07-28,Akzhayik,Aktobe,1,1,D
+2018-07-29,Kairat Almaty,FK Tobol Kostanay,1,0,H
+2018-07-29,Irtysh,Shakhter Karagandy,1,1,D
+2018-07-29,Ordabasy,Zhetysu,1,2,A
+2018-08-04,Zhetysu,Akzhayik,1,1,D
+2018-08-04,Atyrau,Kaisar,2,1,H
+2018-08-04,Aktobe,FC Astana,1,1,D
+2018-08-05,Kyzyl-Zhar,Irtysh,1,0,H
+2018-08-05,FK Tobol Kostanay,Ordabasy,1,1,D
+2018-08-05,Shakhter Karagandy,Kairat Almaty,1,1,D
+2018-08-11,FK Tobol Kostanay,Zhetysu,1,0,H
+2018-08-11,Aktobe,Kaisar,3,1,H
+2018-08-12,Kyzyl-Zhar,Kairat Almaty,1,3,A
+2018-08-12,Atyrau,Irtysh,2,0,H
+2018-08-12,Shakhter Karagandy,Ordabasy,0,0,D
+2018-08-18,Akzhayik,Aktobe,0,0,D
+2018-08-18,Atyrau,FK Tobol Kostanay,2,1,H
+2018-08-19,Zhetysu,Irtysh,2,0,H
+2018-08-19,Kaisar,Ordabasy,2,1,H
+2018-08-25,Irtysh,Shakhter Karagandy,1,1,D
+2018-08-25,FK Tobol Kostanay,Kaisar,0,0,D
+2018-08-25,Ordabasy,Akzhayik,1,0,H
+2018-08-25,Aktobe,Zhetysu,2,3,A
+2018-08-26,Kairat Almaty,Atyrau,4,2,H
+2018-08-26,FC Astana,Kyzyl-Zhar,3,0,H
+2018-09-16,FK Tobol Kostanay,Zhetysu,2,2,D
+2018-09-16,Irtysh,Kyzyl-Zhar,0,1,A
+2018-09-16,Shakhter Karagandy,Atyrau,2,1,H
+2018-09-16,FC Astana,Kaisar,0,0,D
+2018-09-16,Kairat Almaty,Akzhayik,0,1,A
+2018-09-16,Ordabasy,Aktobe,0,0,D
+2018-09-22,Zhetysu,Kairat Almaty,1,0,H
+2018-09-22,Kaisar,Shakhter Karagandy,2,1,H
+2018-09-22,Atyrau,Kyzyl-Zhar,3,2,H
+2018-09-22,Ordabasy,Irtysh,0,2,A
+2018-09-22,Aktobe,FK Tobol Kostanay,3,1,H
+2018-09-23,Akzhayik,FC Astana,1,2,A
+2018-09-26,Kyzyl-Zhar,Shakhter Karagandy,2,1,H
+2018-09-26,Zhetysu,Ordabasy,1,1,D
+2018-09-26,Kaisar,Kairat Almaty,1,2,A
+2018-09-26,Akzhayik,FK Tobol Kostanay,0,1,A
+2018-09-26,Atyrau,FC Astana,0,1,A
+2018-09-26,Aktobe,Irtysh,2,0,H
+2018-09-30,Kyzyl-Zhar,Kaisar,1,0,H
+2018-09-30,Irtysh,Atyrau,1,0,H
+2018-09-30,Shakhter Karagandy,Akzhayik,1,0,H
+2018-09-30,Kairat Almaty,Aktobe,6,1,H
+2018-09-30,FC Astana,Zhetysu,3,0,H
+2018-09-30,FK Tobol Kostanay,Ordabasy,1,0,H
+2018-10-06,Zhetysu,Shakhter Karagandy,1,1,D
+2018-10-06,Kaisar,Atyrau,2,2,D
+2018-10-06,Ordabasy,Kairat Almaty,2,0,H
+2018-10-06,FK Tobol Kostanay,Irtysh,1,2,A
+2018-10-06,Akzhayik,Kyzyl-Zhar,0,0,D
+2018-10-07,Aktobe,FC Astana,1,2,A
+2018-10-20,FC Astana,Ordabasy,1,1,D
+2018-10-21,Kairat Almaty,FK Tobol Kostanay,0,0,D
+2018-10-21,Kyzyl-Zhar,Zhetysu,1,1,D
+2018-10-21,Shakhter Karagandy,Aktobe,0,1,A
+2018-10-21,Atyrau,Akzhayik,2,1,H
+2018-10-21,Irtysh,Kaisar,0,1,A
+2018-10-27,Kairat Almaty,Irtysh,0,1,A
+2018-10-27,Zhetysu,Atyrau,0,0,D
+2018-10-27,Ordabasy,Shakhter Karagandy,1,1,D
+2018-10-27,Akzhayik,Kaisar,0,4,A
+2018-10-27,Aktobe,Kyzyl-Zhar,1,0,H
+2018-10-28,FK Tobol Kostanay,FC Astana,1,0,H
+2018-10-31,Kyzyl-Zhar,Kairat Almaty,2,1,H
+2018-10-31,Shakhter Karagandy,FC Astana,3,1,H
+2018-11-03,Kyzyl-Zhar,Ordabasy,1,2,A
+2018-11-03,Kaisar,Zhetysu,1,0,H
+2018-11-03,Atyrau,Aktobe,3,1,H
+2018-11-03,Irtysh,Akzhayik,2,0,H
+2018-11-03,Shakhter Karagandy,FK Tobol Kostanay,2,1,H
+2018-11-03,FC Astana,Kairat Almaty,3,2,H
+2018-11-11,FC Astana,Irtysh,4,0,H
+2018-11-11,Kairat Almaty,Shakhter Karagandy,0,0,D
+2018-11-11,Ordabasy,Atyrau,1,0,H
+2018-11-11,FK Tobol Kostanay,Kyzyl-Zhar,3,0,H
+2018-11-11,Zhetysu,Akzhayik,3,1,H
+2018-11-11,Aktobe,Kaisar,0,2,A

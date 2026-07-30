@@ -1,0 +1,136 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2021-03-06,EB / Streymur,IF II,1,1,D
+2021-03-07,Vikingur Gota,TB,1,0,H
+2021-03-07,HB Torshavn,NSI Runavik,5,2,H
+2021-03-07,07 Vestur,B36 Torshavn,0,2,A
+2021-03-07,B68,KI Klaksvik,0,4,A
+2021-03-13,07 Vestur,B68,3,2,H
+2021-03-14,KI Klaksvik,NSI Runavik,2,0,H
+2021-03-14,HB Torshavn,B36 Torshavn,0,0,D
+2021-03-14,EB / Streymur,Vikingur Gota,0,0,D
+2021-03-14,IF II,TB,3,1,H
+2021-03-19,Vikingur Gota,HB Torshavn,2,1,H
+2021-03-20,B36 Torshavn,B68,0,0,D
+2021-03-20,IF II,07 Vestur,3,1,H
+2021-03-20,NSI Runavik,EB / Streymur,3,0,H
+2021-03-20,TB,KI Klaksvik,0,5,A
+2021-04-11,B36 Torshavn,Vikingur Gota,1,1,D
+2021-04-11,NSI Runavik,IF II,3,0,H
+2021-04-11,KI Klaksvik,EB / Streymur,3,0,H
+2021-04-11,B68,TB,2,2,D
+2021-04-11,HB Torshavn,07 Vestur,7,0,H
+2021-04-14,TB,07 Vestur,2,4,A
+2021-04-14,EB / Streymur,B68,3,2,H
+2021-04-14,Vikingur Gota,KI Klaksvik,1,2,A
+2021-04-14,NSI Runavik,B36 Torshavn,4,2,H
+2021-04-14,HB Torshavn,IF II,6,1,H
+2021-04-25,B36 Torshavn,EB / Streymur,2,1,H
+2021-04-25,IF II,KI Klaksvik,1,4,A
+2021-04-25,TB,HB Torshavn,0,4,A
+2021-04-25,B68,NSI Runavik,1,2,A
+2021-04-25,07 Vestur,Vikingur Gota,2,4,A
+2021-04-28,TB,B36 Torshavn,0,4,A
+2021-04-28,NSI Runavik,Vikingur Gota,1,1,D
+2021-04-28,KI Klaksvik,HB Torshavn,2,2,D
+2021-04-28,07 Vestur,EB / Streymur,1,3,A
+2021-04-28,B68,IF II,3,1,H
+2021-05-02,B36 Torshavn,IF II,2,2,D
+2021-05-02,NSI Runavik,TB,3,0,H
+2021-05-02,EB / Streymur,HB Torshavn,0,3,A
+2021-05-02,07 Vestur,KI Klaksvik,0,5,A
+2021-05-02,B68,Vikingur Gota,0,6,A
+2021-05-08,NSI Runavik,07 Vestur,1,1,D
+2021-05-09,Vikingur Gota,IF II,5,1,H
+2021-05-09,KI Klaksvik,B36 Torshavn,4,0,H
+2021-05-09,HB Torshavn,B68,1,0,H
+2021-05-09,TB,EB / Streymur,1,1,D
+2021-05-13,07 Vestur,KI Klaksvik,0,9,A
+2021-05-13,EB / Streymur,HB Torshavn,0,1,A
+2021-05-13,IF II,B36 Torshavn,0,5,A
+2021-05-13,TB,NSI Runavik,0,2,A
+2021-05-13,B68,Vikingur Gota,2,2,D
+2021-05-16,Vikingur Gota,TB,1,0,H
+2021-05-16,B36 Torshavn,07 Vestur,1,1,D
+2021-05-16,NSI Runavik,HB Torshavn,0,0,D
+2021-05-16,KI Klaksvik,B68,8,0,H
+2021-05-16,IF II,EB / Streymur,2,1,H
+2021-05-22,NSI Runavik,KI Klaksvik,0,3,A
+2021-06-13,KI Klaksvik,TB,4,0,H
+2021-06-13,HB Torshavn,Vikingur Gota,1,2,A
+2021-06-13,EB / Streymur,NSI Runavik,2,1,H
+2021-06-13,B68,B36 Torshavn,1,3,A
+2021-06-14,07 Vestur,IF II,1,0,H
+2021-06-17,HB Torshavn,TB,6,0,H
+2021-06-18,NSI Runavik,B68,4,3,H
+2021-06-19,EB / Streymur,B36 Torshavn,0,4,A
+2021-06-20,Vikingur Gota,07 Vestur,4,1,H
+2021-06-20,KI Klaksvik,IF II,4,0,H
+2021-06-25,IF II,Vikingur Gota,1,2,A
+2021-06-25,B36 Torshavn,KI Klaksvik,0,0,D
+2021-06-26,07 Vestur,NSI Runavik,2,4,A
+2021-06-29,B68,HB Torshavn,0,6,A
+2021-07-25,IF II,B68,0,1,A
+2021-07-27,Vikingur Gota,NSI Runavik,2,1,H
+2021-07-27,07 Vestur,EB / Streymur,0,1,A
+2021-07-28,B36 Torshavn,TB,3,0,H
+2021-08-01,IF II,NSI Runavik,1,1,D
+2021-08-01,HB Torshavn,07 Vestur,5,0,H
+2021-08-02,TB,B68,0,1,A
+2021-08-02,Vikingur Gota,B36 Torshavn,1,0,H
+2021-08-02,EB / Streymur,KI Klaksvik,0,4,A
+2021-08-08,B36 Torshavn,NSI Runavik,1,1,D
+2021-08-08,KI Klaksvik,Vikingur Gota,3,0,H
+2021-08-08,07 Vestur,TB,3,1,H
+2021-08-08,B68,EB / Streymur,2,1,H
+2021-08-14,B68,IF II,2,0,H
+2021-08-14,TB,B36 Torshavn,1,2,A
+2021-08-14,NSI Runavik,Vikingur Gota,0,2,A
+2021-08-15,EB / Streymur,07 Vestur,1,3,A
+2021-08-18,HB Torshavn,KI Klaksvik,2,3,A
+2021-08-21,B36 Torshavn,B68,2,1,H
+2021-08-22,Vikingur Gota,HB Torshavn,3,1,H
+2021-08-22,KI Klaksvik,TB,7,0,H
+2021-08-22,IF II,07 Vestur,1,2,A
+2021-08-22,NSI Runavik,EB / Streymur,4,0,H
+2021-08-27,B36 Torshavn,HB Torshavn,2,2,D
+2021-08-27,KI Klaksvik,NSI Runavik,2,0,H
+2021-08-27,EB / Streymur,Vikingur Gota,1,1,D
+2021-08-28,07 Vestur,B68,1,1,D
+2021-08-28,IF II,TB,2,2,D
+2021-09-12,07 Vestur,B36 Torshavn,2,2,D
+2021-09-12,EB / Streymur,IF II,1,0,H
+2021-09-12,B68,KI Klaksvik,0,5,A
+2021-09-12,TB,Vikingur Gota,0,6,A
+2021-09-12,HB Torshavn,NSI Runavik,4,0,H
+2021-09-15,IF II,HB Torshavn,0,2,A
+2021-09-19,Vikingur Gota,B68,3,1,H
+2021-09-19,B36 Torshavn,IF II,5,0,H
+2021-09-19,NSI Runavik,TB,7,2,H
+2021-09-19,KI Klaksvik,07 Vestur,4,0,H
+2021-09-19,HB Torshavn,EB / Streymur,4,1,H
+2021-09-26,B36 Torshavn,EB / Streymur,3,2,H
+2021-09-26,07 Vestur,Vikingur Gota,1,2,A
+2021-09-26,B68,NSI Runavik,0,1,A
+2021-09-26,IF II,KI Klaksvik,1,5,A
+2021-09-27,TB,HB Torshavn,1,6,A
+2021-10-02,B68,07 Vestur,1,2,A
+2021-10-02,B36 Torshavn,HB Torshavn,2,4,A
+2021-10-02,TB,IF II,0,1,A
+2021-10-02,Vikingur Gota,EB / Streymur,3,1,H
+2021-10-16,EB / Streymur,TB,5,2,H
+2021-10-16,HB Torshavn,B68,5,0,H
+2021-10-16,KI Klaksvik,B36 Torshavn,3,1,H
+2021-10-17,Vikingur Gota,IF II,3,2,H
+2021-10-17,NSI Runavik,07 Vestur,2,0,H
+2021-10-20,HB Torshavn,KI Klaksvik,2,1,H
+2021-10-21,TB,EB / Streymur,0,1,A
+2021-10-24,KI Klaksvik,EB / Streymur,2,1,H
+2021-10-24,07 Vestur,HB Torshavn,0,5,A
+2021-10-24,B68,TB,6,1,H
+2021-10-24,IF II,NSI Runavik,2,5,A
+2021-10-30,Vikingur Gota,KI Klaksvik,1,1,D
+2021-10-30,HB Torshavn,IF II,2,0,H
+2021-10-30,EB / Streymur,B68,0,1,A
+2021-10-30,TB,07 Vestur,1,5,A
+2021-11-04,B36 Torshavn,Vikingur Gota,2,0,H
+2021-11-07,NSI Runavik,B36 Torshavn,2,0,H

@@ -1,0 +1,307 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2016-10-30,Apollon Smirnis,Kallithea,3,2,H
+2016-10-30,Acharnaikos,AEL Kallonis,3,0,H
+2016-10-30,Panegialios,Chania,0,0,D
+2016-10-30,Sparti,Panthrakikos,2,1,H
+2016-10-31,Panserraikos,Panelefsiniakos,2,1,H
+2016-10-31,Aiginiakos,Lamia,0,0,D
+2016-10-31,Kissamikos,OFI,1,1,D
+2016-11-01,Agrotikos Asteras,Trikala,3,1,H
+2016-11-01,Anagennisi Karditsas,Aris Thessalonikis,1,1,D
+2016-11-06,Chania,Agrotikos Asteras,0,2,A
+2016-11-06,Lamia,Kissamikos,2,0,H
+2016-11-06,Aris Thessalonikis,Aiginiakos,1,1,D
+2016-11-06,Panelefsiniakos,Acharnaikos,1,3,A
+2016-11-06,Panthrakikos,Anagennisi Karditsas,0,0,D
+2016-11-06,Trikala,Panserraikos,1,1,D
+2016-11-06,Kallithea,Panegialios,1,0,H
+2016-11-06,Sparti,Apollon Smirnis,0,2,A
+2016-11-06,OFI,AEL Kallonis,2,2,D
+2016-11-25,Apollon Smirnis,Panegialios,2,0,H
+2016-11-25,OFI,Panelefsiniakos,2,0,H
+2016-11-26,Acharnaikos,Trikala,0,1,A
+2016-11-26,AEL Kallonis,Lamia,0,2,A
+2016-11-26,Agrotikos Asteras,Kallithea,5,3,H
+2016-11-26,Anagennisi Karditsas,Sparti,0,2,A
+2016-11-26,Aiginiakos,Panthrakikos,2,1,H
+2016-11-26,Kissamikos,Aris Thessalonikis,0,1,A
+2016-11-27,Panserraikos,Chania,1,2,A
+2016-12-04,Lamia,Panelefsiniakos,4,0,H
+2016-12-04,Chania,Acharnaikos,2,3,A
+2016-12-04,Panthrakikos,Kissamikos,1,0,H
+2016-12-04,Anagennisi Karditsas,Apollon Smirnis,0,0,D
+2016-12-04,Panegialios,Agrotikos Asteras,1,0,H
+2016-12-04,Sparti,Aiginiakos,3,2,H
+2016-12-05,Aris Thessalonikis,AEL Kallonis,5,0,H
+2016-12-05,Kallithea,Panserraikos,0,1,A
+2016-12-07,Trikala,OFI,1,0,H
+2016-12-10,Apollon Smirnis,Agrotikos Asteras,0,0,D
+2016-12-10,Panelefsiniakos,Aris Thessalonikis,1,3,A
+2016-12-10,Kissamikos,Sparti,2,1,H
+2016-12-10,Aiginiakos,Anagennisi Karditsas,0,3,A
+2016-12-11,AEL Kallonis,Panthrakikos,1,1,D
+2016-12-11,Lamia,Trikala,1,0,H
+2016-12-11,Acharnaikos,Kallithea,3,1,H
+2016-12-11,Panserraikos,Panegialios,4,2,H
+2016-12-11,OFI,Chania,3,0,H
+2016-12-18,Anagennisi Karditsas,Kissamikos,0,1,A
+2016-12-18,Panthrakikos,Panelefsiniakos,1,0,H
+2016-12-18,Panegialios,Acharnaikos,0,0,D
+2016-12-18,Sparti,AEL Kallonis,1,1,D
+2016-12-18,Aris Thessalonikis,Trikala,3,2,H
+2016-12-19,Chania,Lamia,0,3,A
+2016-12-19,Agrotikos Asteras,Panserraikos,2,0,H
+2016-12-19,Kallithea,OFI,1,2,A
+2016-12-19,Aiginiakos,Apollon Smirnis,1,2,A
+2016-12-22,Apollon Smirnis,Panserraikos,1,0,H
+2016-12-22,Lamia,Kallithea,1,0,H
+2016-12-22,Acharnaikos,Agrotikos Asteras,2,1,H
+2016-12-22,Panelefsiniakos,Sparti,1,1,D
+2016-12-22,Trikala,Panthrakikos,3,0,H
+2016-12-22,Kissamikos,Aiginiakos,1,0,H
+2016-12-22,Aris Thessalonikis,Chania,2,1,H
+2016-12-22,OFI,Panegialios,1,0,H
+2016-12-23,AEL Kallonis,Anagennisi Karditsas,0,0,D
+2017-01-03,Kallithea,Aris Thessalonikis,2,0,H
+2017-01-04,Aiginiakos,AEL Kallonis,0,0,D
+2017-01-04,Panthrakikos,Chania,0,2,A
+2017-01-04,Agrotikos Asteras,OFI,2,1,H
+2017-01-04,Anagennisi Karditsas,Panelefsiniakos,0,0,D
+2017-01-04,Kissamikos,Apollon Smirnis,0,1,A
+2017-01-04,Panegialios,Lamia,1,0,H
+2017-01-04,Sparti,Trikala,0,0,D
+2017-01-04,Panserraikos,Acharnaikos,1,0,H
+2017-01-07,Lamia,Agrotikos Asteras,2,1,H
+2017-01-08,Apollon Smirnis,Acharnaikos,3,1,H
+2017-01-08,AEL Kallonis,Kissamikos,1,1,D
+2017-01-08,Panelefsiniakos,Aiginiakos,0,1,A
+2017-01-08,Panthrakikos,Kallithea,2,1,H
+2017-01-08,OFI,Panserraikos,2,0,H
+2017-01-08,Aris Thessalonikis,Panegialios,2,1,H
+2017-01-15,Acharnaikos,OFI,2,3,A
+2017-01-15,AEL Kallonis,Apollon Smirnis,1,4,A
+2017-01-15,Kallithea,Sparti,2,2,D
+2017-01-15,Kissamikos,Panelefsiniakos,1,1,D
+2017-01-15,Panegialios,Panthrakikos,3,0,H
+2017-01-15,Aiginiakos,Trikala,2,2,D
+2017-01-18,Panelefsiniakos,AEL Kallonis,3,1,H
+2017-01-18,Apollon Smirnis,OFI,0,0,D
+2017-01-18,Lamia,Acharnaikos,3,0,H
+2017-01-18,Chania,Aiginiakos,3,2,H
+2017-01-18,Panthrakikos,Agrotikos Asteras,0,1,A
+2017-01-18,Kallithea,Anagennisi Karditsas,2,2,D
+2017-01-18,Sparti,Panegialios,0,0,D
+2017-01-18,Aris Thessalonikis,Panserraikos,4,0,H
+2017-01-21,Acharnaikos,Aris Thessalonikis,1,2,A
+2017-01-21,OFI,Lamia,1,2,A
+2017-01-22,AEL Kallonis,Trikala,0,2,A
+2017-01-22,Panelefsiniakos,Apollon Smirnis,1,3,A
+2017-01-22,Agrotikos Asteras,Sparti,3,0,H
+2017-01-22,Kissamikos,Chania,0,0,D
+2017-01-22,Panegialios,Anagennisi Karditsas,1,0,H
+2017-01-22,Panserraikos,Panthrakikos,0,0,D
+2017-01-22,Aiginiakos,Kallithea,1,2,A
+2017-01-28,Aris Thessalonikis,OFI,1,0,H
+2017-01-29,Apollon Smirnis,Lamia,1,0,H
+2017-01-29,Chania,AEL Kallonis,4,0,H
+2017-01-29,Panthrakikos,Acharnaikos,0,3,A
+2017-01-29,Trikala,Panelefsiniakos,4,0,H
+2017-01-29,Anagennisi Karditsas,Agrotikos Asteras,2,0,H
+2017-01-29,Kallithea,Kissamikos,2,0,H
+2017-01-29,Panegialios,Aiginiakos,1,1,D
+2017-01-29,Sparti,Panserraikos,3,0,H
+2017-02-01,Chania,Sparti,2,2,D
+2017-02-04,Trikala,Apollon Smirnis,0,1,A
+2017-02-05,Lamia,Aris Thessalonikis,1,0,H
+2017-02-05,OFI,Panthrakikos,3,0,H
+2017-02-05,Acharnaikos,Sparti,1,2,A
+2017-02-05,AEL Kallonis,Kallithea,2,0,H
+2017-02-05,Panelefsiniakos,Chania,1,3,A
+2017-02-05,Agrotikos Asteras,Aiginiakos,1,0,H
+2017-02-05,Kissamikos,Panegialios,2,1,H
+2017-02-05,Panserraikos,Anagennisi Karditsas,0,0,D
+2017-02-11,Chania,Trikala,1,0,H
+2017-02-11,Agrotikos Asteras,Kissamikos,4,0,H
+2017-02-11,Sparti,OFI,1,0,H
+2017-02-12,Panegialios,AEL Kallonis,2,0,H
+2017-02-12,Apollon Smirnis,Aris Thessalonikis,2,2,D
+2017-02-12,Panthrakikos,Lamia,0,3,A
+2017-02-12,Anagennisi Karditsas,Acharnaikos,2,0,H
+2017-02-12,Kallithea,Panelefsiniakos,0,0,D
+2017-02-12,Aiginiakos,Panserraikos,0,0,D
+2017-02-15,Trikala,Anagennisi Karditsas,2,0,H
+2017-02-15,Agrotikos Asteras,Aris Thessalonikis,1,1,D
+2017-02-16,Panserraikos,Lamia,0,3,A
+2017-02-18,Chania,Apollon Smirnis,1,4,A
+2017-02-19,Lamia,Sparti,2,0,H
+2017-02-19,Aris Thessalonikis,Panthrakikos,3,0,H
+2017-02-19,OFI,Anagennisi Karditsas,5,0,H
+2017-02-19,Acharnaikos,Aiginiakos,3,1,H
+2017-02-19,AEL Kallonis,Agrotikos Asteras,1,0,H
+2017-02-19,Panelefsiniakos,Panegialios,0,0,D
+2017-02-19,Trikala,Kallithea,2,2,D
+2017-02-19,Panserraikos,Kissamikos,1,0,H
+2017-02-21,Apollon Smirnis,Panthrakikos,3,0,H
+2017-02-22,Panthrakikos,Sparti,0,3,A
+2017-02-22,Agrotikos Asteras,Panelefsiniakos,0,0,D
+2017-02-22,Kallithea,Chania,3,1,H
+2017-02-22,Kissamikos,Acharnaikos,1,0,H
+2017-02-22,Panegialios,Trikala,1,0,H
+2017-02-22,Sparti,Aris Thessalonikis,0,0,D
+2017-02-22,Panserraikos,AEL Kallonis,3,1,H
+2017-02-22,Aiginiakos,OFI,0,1,A
+2017-02-23,Anagennisi Karditsas,Lamia,0,2,A
+2017-02-25,Kallithea,Apollon Smirnis,1,2,A
+2017-02-26,Lamia,Aiginiakos,2,1,H
+2017-02-26,Aris Thessalonikis,Anagennisi Karditsas,3,0,H
+2017-02-26,OFI,Kissamikos,2,0,H
+2017-02-26,AEL Kallonis,Acharnaikos,2,1,H
+2017-02-26,Chania,Panegialios,1,0,H
+2017-02-26,Panelefsiniakos,Panserraikos,0,1,A
+2017-02-26,Trikala,Agrotikos Asteras,3,0,H
+2017-02-26,Anagennisi Karditsas,Panthrakikos,3,0,H
+2017-03-04,Apollon Smirnis,Sparti,1,0,H
+2017-03-05,Acharnaikos,Panelefsiniakos,0,0,D
+2017-03-05,AEL Kallonis,OFI,1,2,A
+2017-03-05,Agrotikos Asteras,Chania,2,0,H
+2017-03-05,Kissamikos,Lamia,1,2,A
+2017-03-05,Panegialios,Kallithea,2,0,H
+2017-03-05,Panserraikos,Trikala,0,3,A
+2017-03-05,Aiginiakos,Aris Thessalonikis,0,1,A
+2017-03-08,Anagennisi Karditsas,Chania,2,0,H
+2017-03-08,Trikala,Kissamikos,3,1,H
+2017-03-11,Panegialios,Apollon Smirnis,0,0,D
+2017-03-12,Chania,Panserraikos,0,1,A
+2017-03-12,Lamia,AEL Kallonis,4,0,H
+2017-03-12,Aris Thessalonikis,Kissamikos,1,0,H
+2017-03-12,Panelefsiniakos,OFI,0,3,A
+2017-03-12,Panthrakikos,Aiginiakos,0,3,A
+2017-03-12,Trikala,Acharnaikos,5,0,H
+2017-03-12,Kallithea,Agrotikos Asteras,1,2,A
+2017-03-12,Sparti,Anagennisi Karditsas,1,0,H
+2017-03-18,Apollon Smirnis,Anagennisi Karditsas,2,0,H
+2017-03-18,OFI,Trikala,0,1,A
+2017-03-19,Acharnaikos,Chania,1,2,A
+2017-03-19,AEL Kallonis,Aris Thessalonikis,0,1,A
+2017-03-19,Panelefsiniakos,Lamia,0,0,D
+2017-03-19,Agrotikos Asteras,Panegialios,1,1,D
+2017-03-19,Kissamikos,Panthrakikos,3,0,H
+2017-03-19,Panserraikos,Kallithea,1,1,D
+2017-03-19,Aiginiakos,Sparti,1,0,H
+2017-03-22,Sparti,Kissamikos,0,0,D
+2017-03-22,Aris Thessalonikis,Panelefsiniakos,4,0,H
+2017-03-22,Panthrakikos,AEL Kallonis,0,3,A
+2017-03-22,Trikala,Lamia,1,0,H
+2017-03-22,Anagennisi Karditsas,Aiginiakos,2,1,H
+2017-03-22,Kallithea,Acharnaikos,1,1,D
+2017-03-22,Panegialios,Panserraikos,1,1,D
+2017-03-22,Chania,OFI,0,2,A
+2017-03-23,Agrotikos Asteras,Apollon Smirnis,0,1,A
+2017-03-25,Lamia,Chania,2,1,H
+2017-03-26,Apollon Smirnis,Aiginiakos,4,1,H
+2017-03-26,OFI,Kallithea,1,0,H
+2017-03-26,Acharnaikos,Panegialios,0,0,D
+2017-03-26,AEL Kallonis,Sparti,0,0,D
+2017-03-26,Panelefsiniakos,Panthrakikos,3,0,H
+2017-03-26,Trikala,Aris Thessalonikis,1,0,H
+2017-03-26,Kissamikos,Anagennisi Karditsas,2,1,H
+2017-03-26,Panserraikos,Agrotikos Asteras,2,1,H
+2017-04-01,Panserraikos,Apollon Smirnis,1,2,A
+2017-04-02,Anagennisi Karditsas,AEL Kallonis,1,0,H
+2017-04-02,Chania,Aris Thessalonikis,0,2,A
+2017-04-02,Panthrakikos,Trikala,0,3,A
+2017-04-02,Panegialios,OFI,0,3,A
+2017-04-02,Agrotikos Asteras,Acharnaikos,0,1,A
+2017-04-02,Kallithea,Lamia,0,1,A
+2017-04-02,Sparti,Panelefsiniakos,1,0,H
+2017-04-02,Aiginiakos,Kissamikos,2,0,H
+2017-04-08,OFI,Agrotikos Asteras,4,0,H
+2017-04-09,Lamia,Panegialios,1,0,H
+2017-04-09,Chania,Panthrakikos,3,0,H
+2017-04-09,Apollon Smirnis,Kissamikos,1,0,H
+2017-04-09,Aris Thessalonikis,Kallithea,3,0,H
+2017-04-09,Acharnaikos,Panserraikos,2,1,H
+2017-04-09,AEL Kallonis,Aiginiakos,1,3,A
+2017-04-09,Panelefsiniakos,Anagennisi Karditsas,1,0,H
+2017-04-09,Trikala,Sparti,1,0,H
+2017-04-12,Kissamikos,AEL Kallonis,4,1,H
+2017-04-12,Sparti,Chania,3,1,H
+2017-04-12,Agrotikos Asteras,Lamia,0,1,A
+2017-04-12,Kallithea,Panthrakikos,3,0,H
+2017-04-12,Panserraikos,OFI,0,1,A
+2017-04-12,Acharnaikos,Apollon Smirnis,0,2,A
+2017-04-12,Anagennisi Karditsas,Trikala,0,2,A
+2017-04-13,Panegialios,Aris Thessalonikis,0,1,A
+2017-04-13,Aiginiakos,Panelefsiniakos,0,0,D
+2017-04-22,Lamia,Panserraikos,3,1,H
+2017-04-23,Aris Thessalonikis,Agrotikos Asteras,2,0,H
+2017-04-23,Panthrakikos,Panegialios,0,3,A
+2017-04-23,Apollon Smirnis,AEL Kallonis,4,0,H
+2017-04-23,OFI,Acharnaikos,3,0,H
+2017-04-23,Panelefsiniakos,Kissamikos,2,1,H
+2017-04-23,Trikala,Aiginiakos,5,0,H
+2017-04-23,Sparti,Kallithea,2,1,H
+2017-04-24,Chania,Anagennisi Karditsas,2,1,H
+2017-04-29,OFI,Apollon Smirnis,1,1,D
+2017-04-30,Agrotikos Asteras,Panthrakikos,3,0,H
+2017-04-30,Acharnaikos,Lamia,0,3,A
+2017-04-30,Anagennisi Karditsas,Kallithea,1,0,H
+2017-04-30,Kissamikos,Trikala,1,3,A
+2017-04-30,Panegialios,Sparti,2,4,A
+2017-04-30,Panserraikos,Aris Thessalonikis,0,0,D
+2017-04-30,Aiginiakos,Chania,5,1,H
+2017-05-01,AEL Kallonis,Panelefsiniakos,1,3,A
+2017-05-06,Lamia,OFI,1,1,D
+2017-05-07,Panthrakikos,Panserraikos,0,3,A
+2017-05-07,Apollon Smirnis,Panelefsiniakos,3,0,H
+2017-05-07,Aris Thessalonikis,Acharnaikos,2,0,H
+2017-05-07,Chania,Kissamikos,1,1,D
+2017-05-07,Trikala,AEL Kallonis,5,0,H
+2017-05-07,Anagennisi Karditsas,Panegialios,1,1,D
+2017-05-07,Kallithea,Aiginiakos,0,1,A
+2017-05-07,Sparti,Agrotikos Asteras,1,2,A
+2017-05-12,AEL Kallonis,Chania,0,1,A
+2017-05-13,OFI,Aris Thessalonikis,1,1,D
+2017-05-14,Acharnaikos,Panthrakikos,3,0,H
+2017-05-14,Lamia,Apollon Smirnis,0,0,D
+2017-05-14,Panelefsiniakos,Trikala,1,0,H
+2017-05-14,Agrotikos Asteras,Anagennisi Karditsas,3,0,H
+2017-05-14,Kissamikos,Kallithea,1,0,H
+2017-05-14,Panserraikos,Sparti,3,0,H
+2017-05-14,Aiginiakos,Panegialios,1,1,D
+2017-05-21,Panthrakikos,OFI,0,3,A
+2017-05-21,Apollon Smirnis,Trikala,0,0,D
+2017-05-21,Aris Thessalonikis,Lamia,0,0,D
+2017-05-21,Chania,Panelefsiniakos,0,0,D
+2017-05-21,Anagennisi Karditsas,Panserraikos,2,1,H
+2017-05-21,Kallithea,AEL Kallonis,4,1,H
+2017-05-21,Panegialios,Kissamikos,1,0,H
+2017-05-21,Sparti,Acharnaikos,1,2,A
+2017-05-21,Aiginiakos,Agrotikos Asteras,2,0,H
+2017-05-28,Lamia,Panthrakikos,3,0,H
+2017-05-28,Aris Thessalonikis,Apollon Smirnis,1,0,H
+2017-05-28,OFI,Sparti,6,1,H
+2017-05-28,Acharnaikos,Anagennisi Karditsas,1,1,D
+2017-05-28,AEL Kallonis,Panegialios,0,3,A
+2017-05-28,Panelefsiniakos,Kallithea,1,3,A
+2017-05-28,Trikala,Chania,6,1,H
+2017-05-28,Kissamikos,Agrotikos Asteras,2,0,H
+2017-05-28,Panserraikos,Aiginiakos,4,5,A
+2017-06-04,Panthrakikos,Aris Thessalonikis,0,3,A
+2017-06-04,Apollon Smirnis,Chania,3,0,H
+2017-06-04,Agrotikos Asteras,AEL Kallonis,3,0,H
+2017-06-04,Anagennisi Karditsas,OFI,0,2,A
+2017-06-04,Kallithea,Trikala,0,1,A
+2017-06-04,Kissamikos,Panserraikos,1,1,D
+2017-06-04,Panegialios,Panelefsiniakos,4,0,H
+2017-06-04,Sparti,Lamia,0,1,A
+2017-06-04,Aiginiakos,Acharnaikos,3,1,H
+2017-06-11,Panthrakikos,Apollon Smirnis,0,3,A
+2017-06-11,Lamia,Anagennisi Karditsas,0,1,A
+2017-06-11,Aris Thessalonikis,Sparti,2,1,H
+2017-06-11,OFI,Aiginiakos,6,1,H
+2017-06-11,Acharnaikos,Kissamikos,0,1,A
+2017-06-11,AEL Kallonis,Panserraikos,0,3,A
+2017-06-11,Chania,Kallithea,1,3,A
+2017-06-11,Panelefsiniakos,Agrotikos Asteras,0,6,A
+2017-06-11,Trikala,Panegialios,1,0,H

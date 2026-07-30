@@ -1,0 +1,198 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2022-07-15,Zemplin Michalovce,Dukla Banska Bystrica,2,0,H
+2022-07-16,AS Trencin,Zilina,0,0,D
+2022-07-16,Spartak Trnava,Zlate Moravce,2,0,H
+2022-07-16,Podbrezova,Slovan Bratislava,2,1,H
+2022-07-17,Dunajska Streda,Liptovsky Mikulas,2,1,H
+2022-07-17,Skalica,Ruzomberok,0,2,A
+2022-07-22,Zlate Moravce,Skalica,2,2,D
+2022-07-23,Slovan Bratislava,AS Trencin,4,0,H
+2022-07-23,Liptovsky Mikulas,Zemplin Michalovce,1,1,D
+2022-07-24,Zilina,Dunajska Streda,1,1,D
+2022-07-24,Ruzomberok,Podbrezova,2,2,D
+2022-07-24,Spartak Trnava,Dukla Banska Bystrica,1,2,A
+2022-07-29,Zilina,Dukla Banska Bystrica,4,1,H
+2022-07-30,Slovan Bratislava,Zemplin Michalovce,4,2,H
+2022-07-30,Skalica,AS Trencin,2,0,H
+2022-07-31,Spartak Trnava,Podbrezova,1,1,D
+2022-07-31,Dunajska Streda,Zlate Moravce,3,0,H
+2022-07-31,Liptovsky Mikulas,Ruzomberok,0,0,D
+2022-08-05,AS Trencin,Zemplin Michalovce,3,1,H
+2022-08-06,Zlate Moravce,Liptovsky Mikulas,1,1,D
+2022-08-06,Dukla Banska Bystrica,Ruzomberok,2,3,A
+2022-08-07,Slovan Bratislava,Skalica,3,0,H
+2022-08-07,Podbrezova,Dunajska Streda,0,0,D
+2022-08-07,Spartak Trnava,Zilina,2,2,D
+2022-08-12,Skalica,Podbrezova,1,1,D
+2022-08-13,Zilina,Zlate Moravce,1,0,H
+2022-08-13,Ruzomberok,AS Trencin,0,0,D
+2022-08-14,Zemplin Michalovce,Spartak Trnava,0,4,A
+2022-08-14,Liptovsky Mikulas,Slovan Bratislava,1,5,A
+2022-08-14,Dunajska Streda,Dukla Banska Bystrica,3,0,H
+2022-08-19,Podbrezova,Dukla Banska Bystrica,3,1,H
+2022-08-20,AS Trencin,Liptovsky Mikulas,2,1,H
+2022-08-20,Spartak Trnava,Dunajska Streda,3,1,H
+2022-08-20,Zemplin Michalovce,Skalica,3,1,H
+2022-08-20,Zlate Moravce,Ruzomberok,2,2,D
+2022-08-21,Slovan Bratislava,Zilina,3,1,H
+2022-08-26,Zilina,Zemplin Michalovce,2,0,H
+2022-08-27,Dunajska Streda,AS Trencin,1,2,A
+2022-08-27,Dukla Banska Bystrica,Zlate Moravce,4,2,H
+2022-08-27,Liptovsky Mikulas,Podbrezova,2,5,A
+2022-08-27,Skalica,Spartak Trnava,1,1,D
+2022-08-28,Ruzomberok,Slovan Bratislava,0,1,A
+2022-08-30,Podbrezova,Zlate Moravce,0,0,D
+2022-08-30,Skalica,Zilina,1,0,H
+2022-08-30,AS Trencin,Dukla Banska Bystrica,0,2,A
+2022-08-31,Spartak Trnava,Liptovsky Mikulas,1,0,H
+2022-08-31,Zemplin Michalovce,Ruzomberok,1,1,D
+2022-08-31,Slovan Bratislava,Dunajska Streda,1,1,D
+2022-09-02,Zilina,Podbrezova,0,1,A
+2022-09-03,Dunajska Streda,Zemplin Michalovce,1,0,H
+2022-09-03,Zlate Moravce,AS Trencin,1,0,H
+2022-09-03,Dukla Banska Bystrica,Slovan Bratislava,0,1,A
+2022-09-03,Liptovsky Mikulas,Skalica,0,0,D
+2022-09-04,Ruzomberok,Spartak Trnava,3,2,H
+2022-09-09,Ruzomberok,Zilina,0,2,A
+2022-09-10,Liptovsky Mikulas,Dukla Banska Bystrica,1,2,A
+2022-09-10,Skalica,Dunajska Streda,1,1,D
+2022-09-11,AS Trencin,Spartak Trnava,0,2,A
+2022-09-16,Dukla Banska Bystrica,Skalica,0,0,D
+2022-09-17,Zilina,Liptovsky Mikulas,4,2,H
+2022-09-17,Podbrezova,AS Trencin,2,0,H
+2022-09-17,Zlate Moravce,Zemplin Michalovce,0,1,A
+2022-09-18,Spartak Trnava,Slovan Bratislava,0,0,D
+2022-09-30,Ruzomberok,Skalica,2,0,H
+2022-10-01,Zilina,AS Trencin,1,1,D
+2022-10-01,Dukla Banska Bystrica,Zemplin Michalovce,3,1,H
+2022-10-01,Liptovsky Mikulas,Dunajska Streda,0,1,A
+2022-10-02,Slovan Bratislava,Podbrezova,3,1,H
+2022-10-02,Zlate Moravce,Spartak Trnava,0,3,A
+2022-10-07,Podbrezova,Ruzomberok,0,2,A
+2022-10-08,Zemplin Michalovce,Liptovsky Mikulas,1,2,A
+2022-10-08,Dukla Banska Bystrica,Spartak Trnava,0,2,A
+2022-10-08,Skalica,Zlate Moravce,0,2,A
+2022-10-09,Dunajska Streda,Zilina,5,2,H
+2022-10-09,AS Trencin,Slovan Bratislava,4,0,H
+2022-10-12,Zemplin Michalovce,Podbrezova,1,0,H
+2022-10-14,Zlate Moravce,Dunajska Streda,2,2,D
+2022-10-15,AS Trencin,Skalica,3,1,H
+2022-10-15,Ruzomberok,Liptovsky Mikulas,1,1,D
+2022-10-15,Dukla Banska Bystrica,Zilina,2,1,H
+2022-10-16,Podbrezova,Spartak Trnava,3,1,H
+2022-10-16,Zemplin Michalovce,Slovan Bratislava,0,1,A
+2022-10-21,Skalica,Slovan Bratislava,1,4,A
+2022-10-22,Ruzomberok,Dukla Banska Bystrica,1,1,D
+2022-10-22,Zemplin Michalovce,AS Trencin,2,0,H
+2022-10-22,Zilina,Spartak Trnava,1,2,A
+2022-10-22,Liptovsky Mikulas,Zlate Moravce,1,2,A
+2022-10-23,Dunajska Streda,Podbrezova,2,1,H
+2022-10-28,Zlate Moravce,Zilina,4,0,H
+2022-10-29,AS Trencin,Ruzomberok,0,0,D
+2022-10-29,Podbrezova,Skalica,0,2,A
+2022-10-30,Slovan Bratislava,Liptovsky Mikulas,1,0,H
+2022-10-30,Dukla Banska Bystrica,Dunajska Streda,1,3,A
+2022-11-04,Dukla Banska Bystrica,Podbrezova,0,2,A
+2022-11-05,Dunajska Streda,Spartak Trnava,1,0,H
+2022-11-05,Liptovsky Mikulas,AS Trencin,1,1,D
+2022-11-05,Skalica,Zemplin Michalovce,0,0,D
+2022-11-06,Zilina,Slovan Bratislava,4,1,H
+2022-11-11,Spartak Trnava,Skalica,2,1,H
+2022-11-12,AS Trencin,Dunajska Streda,0,4,A
+2022-11-12,Podbrezova,Liptovsky Mikulas,1,0,H
+2022-11-12,Zemplin Michalovce,Zilina,3,2,H
+2022-11-12,Zlate Moravce,Dukla Banska Bystrica,4,4,D
+2022-11-13,Slovan Bratislava,Ruzomberok,2,0,H
+2022-11-24,Slovan Bratislava,Zlate Moravce,4,1,H
+2022-11-24,Spartak Trnava,Zemplin Michalovce,4,1,H
+2022-11-24,Dunajska Streda,Ruzomberok,1,0,H
+2022-11-27,Ruzomberok,Zlate Moravce,2,2,D
+2023-02-10,Dukla Banska Bystrica,AS Trencin,3,0,H
+2023-02-11,Ruzomberok,Zemplin Michalovce,1,0,H
+2023-02-11,Zlate Moravce,Podbrezova,1,1,D
+2023-02-11,Zilina,Skalica,1,0,H
+2023-02-11,Liptovsky Mikulas,Spartak Trnava,1,2,A
+2023-02-12,Dunajska Streda,Slovan Bratislava,1,1,D
+2023-02-17,Spartak Trnava,Ruzomberok,0,2,A
+2023-02-18,AS Trencin,Zlate Moravce,1,1,D
+2023-02-18,Slovan Bratislava,Dukla Banska Bystrica,2,2,D
+2023-02-18,Zemplin Michalovce,Dunajska Streda,0,2,A
+2023-02-19,Skalica,Liptovsky Mikulas,3,0,H
+2023-02-19,Podbrezova,Zilina,3,1,H
+2023-02-24,Podbrezova,Zemplin Michalovce,2,2,D
+2023-02-25,Spartak Trnava,AS Trencin,3,2,H
+2023-02-25,Dunajska Streda,Skalica,2,1,H
+2023-02-25,Zlate Moravce,Slovan Bratislava,1,1,D
+2023-02-25,Dukla Banska Bystrica,Liptovsky Mikulas,2,0,H
+2023-02-26,Zilina,Ruzomberok,2,0,H
+2023-03-04,AS Trencin,Podbrezova,1,1,D
+2023-03-04,Slovan Bratislava,Spartak Trnava,4,1,H
+2023-03-04,Ruzomberok,Dunajska Streda,0,1,A
+2023-03-04,Zemplin Michalovce,Zlate Moravce,0,0,D
+2023-03-04,Liptovsky Mikulas,Zilina,1,2,A
+2023-03-04,Skalica,Dukla Banska Bystrica,1,2,A
+2023-03-10,AS Trencin,Ruzomberok,0,3,A
+2023-03-11,Spartak Trnava,Podbrezova,6,1,H
+2023-03-11,Zlate Moravce,Zemplin Michalovce,2,5,A
+2023-03-11,Liptovsky Mikulas,Skalica,0,3,A
+2023-03-12,Slovan Bratislava,Zilina,0,1,A
+2023-03-12,Dukla Banska Bystrica,Dunajska Streda,2,3,A
+2023-03-17,Zilina,Dukla Banska Bystrica,6,4,H
+2023-03-18,Ruzomberok,Zlate Moravce,2,0,H
+2023-03-18,Zemplin Michalovce,Liptovsky Mikulas,0,0,D
+2023-03-18,Skalica,AS Trencin,2,0,H
+2023-03-19,Podbrezova,Slovan Bratislava,1,2,A
+2023-03-19,Dunajska Streda,Spartak Trnava,3,1,H
+2023-03-31,Zlate Moravce,Skalica,0,0,D
+2023-04-01,Zemplin Michalovce,Ruzomberok,2,2,D
+2023-04-01,Dukla Banska Bystrica,Podbrezova,3,1,H
+2023-04-01,Liptovsky Mikulas,AS Trencin,0,2,A
+2023-04-02,Spartak Trnava,Slovan Bratislava,0,0,D
+2023-04-02,Dunajska Streda,Zilina,1,0,H
+2023-04-07,Podbrezova,Zilina,3,2,H
+2023-04-08,Zlate Moravce,Liptovsky Mikulas,0,1,A
+2023-04-08,AS Trencin,Zemplin Michalovce,3,3,D
+2023-04-08,Dukla Banska Bystrica,Spartak Trnava,2,0,H
+2023-04-08,Skalica,Ruzomberok,1,1,D
+2023-04-09,Slovan Bratislava,Dunajska Streda,2,1,H
+2023-04-14,Dunajska Streda,Podbrezova,2,1,H
+2023-04-15,Zilina,Spartak Trnava,1,1,D
+2023-04-15,AS Trencin,Zlate Moravce,2,1,H
+2023-04-15,Ruzomberok,Liptovsky Mikulas,3,0,H
+2023-04-15,Zemplin Michalovce,Skalica,1,1,D
+2023-04-16,Slovan Bratislava,Dukla Banska Bystrica,4,0,H
+2023-04-21,Ruzomberok,AS Trencin,4,1,H
+2023-04-22,Podbrezova,Dukla Banska Bystrica,1,2,A
+2023-04-22,Liptovsky Mikulas,Zemplin Michalovce,1,3,A
+2023-04-22,Skalica,Zlate Moravce,0,1,A
+2023-04-23,Zilina,Slovan Bratislava,2,4,A
+2023-04-23,Spartak Trnava,Dunajska Streda,1,1,D
+2023-04-28,AS Trencin,Liptovsky Mikulas,2,2,D
+2023-04-28,Slovan Bratislava,Spartak Trnava,1,0,H
+2023-04-29,Zlate Moravce,Ruzomberok,1,0,H
+2023-04-29,Dukla Banska Bystrica,Zilina,1,1,D
+2023-04-29,Skalica,Zemplin Michalovce,3,2,H
+2023-04-30,Podbrezova,Dunajska Streda,2,0,H
+2023-05-05,Zilina,Podbrezova,0,1,A
+2023-05-06,Spartak Trnava,Dukla Banska Bystrica,0,1,A
+2023-05-06,Ruzomberok,Skalica,1,2,A
+2023-05-06,Zemplin Michalovce,AS Trencin,0,2,A
+2023-05-06,Liptovsky Mikulas,Zlate Moravce,1,1,D
+2023-05-07,Dunajska Streda,Slovan Bratislava,2,3,A
+2023-05-12,Zlate Moravce,AS Trencin,1,2,A
+2023-05-13,Podbrezova,Spartak Trnava,0,3,A
+2023-05-13,Ruzomberok,Zemplin Michalovce,2,0,H
+2023-05-13,Zilina,Dunajska Streda,0,1,A
+2023-05-13,Dukla Banska Bystrica,Slovan Bratislava,1,2,A
+2023-05-13,Skalica,Liptovsky Mikulas,4,0,H
+2023-05-20,AS Trencin,Skalica,1,3,A
+2023-05-20,Slovan Bratislava,Podbrezova,0,1,A
+2023-05-20,Spartak Trnava,Zilina,4,2,H
+2023-05-20,Dunajska Streda,Dukla Banska Bystrica,1,0,H
+2023-05-20,Zemplin Michalovce,Zlate Moravce,1,0,H
+2023-05-20,Liptovsky Mikulas,Ruzomberok,2,1,H
+2023-05-23,Tatran Presov,Zlate Moravce,1,0,H
+2023-05-23,Podbrezova,Ruzomberok,0,3,A
+2023-05-23,Dukla Banska Bystrica,Zilina,1,3,A
+2023-05-26,Zilina,Ruzomberok,3,1,H
+2023-05-26,Zlate Moravce,Tatran Presov,3,0,H

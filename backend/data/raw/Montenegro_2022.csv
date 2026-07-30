@@ -1,0 +1,185 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2022-07-23,Jedinstvo,Sutjeska,1,1,D
+2022-07-23,Jezero,Rudar,3,1,H
+2022-07-23,Arsenal Tivat,Petrovac,0,2,A
+2022-07-24,Mornar,Decic,0,1,A
+2022-07-30,Rudar,Mornar,1,0,H
+2022-07-30,Decic,Iskra,3,0,H
+2022-07-31,Sutjeska,Jezero,3,0,H
+2022-07-31,Petrovac,Buducnost Podgorica,4,2,H
+2022-07-31,Arsenal Tivat,Jedinstvo,1,0,H
+2022-08-06,Jedinstvo,Petrovac,0,1,A
+2022-08-06,Jezero,Arsenal Tivat,2,1,H
+2022-08-06,Iskra,Rudar,0,0,D
+2022-08-06,Mornar,Sutjeska,2,1,H
+2022-08-07,Buducnost Podgorica,Decic,0,2,A
+2022-08-16,Rudar,Buducnost Podgorica,0,1,A
+2022-08-16,Sutjeska,Iskra,3,0,H
+2022-08-16,Jedinstvo,Jezero,0,1,A
+2022-08-16,Petrovac,Decic,2,2,D
+2022-08-16,Arsenal Tivat,Mornar,2,1,H
+2022-08-20,Jezero,Petrovac,2,2,D
+2022-08-20,Buducnost Podgorica,Sutjeska,2,0,H
+2022-08-20,Iskra,Arsenal Tivat,2,3,A
+2022-08-20,Mornar,Jedinstvo,2,2,D
+2022-08-21,Decic,Rudar,5,1,H
+2022-08-24,Iskra,Buducnost Podgorica,1,1,D
+2022-08-27,Sutjeska,Decic,3,0,H
+2022-08-27,Jezero,Mornar,3,1,H
+2022-08-27,Petrovac,Rudar,0,0,D
+2022-08-28,Jedinstvo,Iskra,2,1,H
+2022-08-28,Arsenal Tivat,Buducnost Podgorica,0,4,A
+2022-09-03,Iskra,Jezero,2,1,H
+2022-09-03,Decic,Arsenal Tivat,2,4,A
+2022-09-03,Rudar,Sutjeska,0,0,D
+2022-09-04,Mornar,Petrovac,1,0,H
+2022-09-04,Buducnost Podgorica,Jedinstvo,3,0,H
+2022-09-10,Petrovac,Sutjeska,0,4,A
+2022-09-11,Jezero,Buducnost Podgorica,0,0,D
+2022-09-11,Jedinstvo,Decic,1,2,A
+2022-09-11,Mornar,Iskra,0,0,D
+2022-09-11,Arsenal Tivat,Rudar,0,2,A
+2022-09-17,Sutjeska,Arsenal Tivat,2,1,H
+2022-09-17,Rudar,Jedinstvo,0,3,A
+2022-09-17,Iskra,Petrovac,1,2,A
+2022-09-17,Buducnost Podgorica,Mornar,2,0,H
+2022-09-17,Decic,Jezero,1,1,D
+2022-10-01,Sutjeska,Jedinstvo,5,0,H
+2022-10-01,Rudar,Jezero,2,1,H
+2022-10-01,Petrovac,Arsenal Tivat,1,2,A
+2022-10-01,Decic,Mornar,3,1,H
+2022-10-02,Buducnost Podgorica,Iskra,0,1,A
+2022-10-09,Mornar,Rudar,2,2,D
+2022-10-09,Jedinstvo,Arsenal Tivat,2,2,D
+2022-10-09,Buducnost Podgorica,Petrovac,3,3,D
+2022-10-09,Iskra,Decic,0,0,D
+2022-10-09,Jezero,Sutjeska,1,0,H
+2022-10-15,Rudar,Iskra,3,1,H
+2022-10-15,Arsenal Tivat,Jezero,1,1,D
+2022-10-15,Petrovac,Jedinstvo,1,1,D
+2022-10-15,Decic,Buducnost Podgorica,0,0,D
+2022-10-16,Sutjeska,Mornar,1,1,D
+2022-10-21,Jezero,Jedinstvo,0,2,A
+2022-10-22,Decic,Petrovac,1,1,D
+2022-10-22,Iskra,Sutjeska,1,2,A
+2022-10-22,Mornar,Arsenal Tivat,0,1,A
+2022-10-22,Buducnost Podgorica,Rudar,2,1,H
+2022-10-29,Petrovac,Jezero,2,1,H
+2022-10-30,Rudar,Decic,1,1,D
+2022-10-30,Arsenal Tivat,Iskra,3,0,H
+2022-10-30,Jedinstvo,Mornar,1,0,H
+2022-10-30,Sutjeska,Buducnost Podgorica,0,1,A
+2022-11-06,Rudar,Petrovac,0,1,A
+2022-11-06,Iskra,Jedinstvo,1,3,A
+2022-11-06,Buducnost Podgorica,Arsenal Tivat,2,0,H
+2022-11-06,Mornar,Jezero,1,0,H
+2022-11-06,Decic,Sutjeska,1,2,A
+2022-11-12,Jezero,Iskra,0,0,D
+2022-11-12,Jedinstvo,Buducnost Podgorica,0,1,A
+2022-11-12,Sutjeska,Rudar,4,0,H
+2022-11-12,Petrovac,Mornar,1,2,A
+2022-11-12,Arsenal Tivat,Decic,1,2,A
+2022-11-26,Rudar,Arsenal Tivat,0,0,D
+2022-11-26,Iskra,Mornar,2,1,H
+2022-11-26,Decic,Jedinstvo,0,1,A
+2022-11-27,Buducnost Podgorica,Jezero,2,1,H
+2022-11-27,Sutjeska,Petrovac,2,0,H
+2022-12-03,Mornar,Buducnost Podgorica,1,2,A
+2022-12-03,Petrovac,Iskra,1,0,H
+2022-12-03,Jedinstvo,Rudar,0,0,D
+2022-12-03,Jezero,Decic,0,0,D
+2022-12-03,Arsenal Tivat,Sutjeska,2,2,D
+2022-12-07,Arsenal Tivat,Petrovac,1,1,D
+2022-12-07,Jedinstvo,Sutjeska,0,4,A
+2022-12-07,Jezero,Rudar,0,0,D
+2022-12-07,Iskra,Buducnost Podgorica,3,0,H
+2022-12-10,Mornar,Decic,1,0,H
+2023-02-18,Rudar,Mornar,0,1,A
+2023-02-18,Arsenal Tivat,Jedinstvo,1,0,H
+2023-02-18,Decic,Iskra,0,2,A
+2023-02-18,Sutjeska,Jezero,4,2,H
+2023-02-18,Petrovac,Buducnost Podgorica,1,1,D
+2023-02-23,Jedinstvo,Petrovac,2,1,H
+2023-02-23,Jezero,Arsenal Tivat,1,0,H
+2023-02-23,Iskra,Rudar,2,1,H
+2023-02-23,Mornar,Sutjeska,3,2,H
+2023-02-23,Buducnost Podgorica,Decic,1,0,H
+2023-02-28,Sutjeska,Iskra,2,1,H
+2023-02-28,Arsenal Tivat,Mornar,0,0,D
+2023-02-28,Petrovac,Decic,2,1,H
+2023-03-04,Decic,Rudar,1,0,H
+2023-03-04,Jezero,Petrovac,1,1,D
+2023-03-04,Iskra,Arsenal Tivat,0,1,A
+2023-03-04,Mornar,Jedinstvo,1,0,H
+2023-03-04,Buducnost Podgorica,Sutjeska,1,1,D
+2023-03-08,Arsenal Tivat,Buducnost Podgorica,1,1,D
+2023-03-08,Jezero,Mornar,0,0,D
+2023-03-08,Jedinstvo,Iskra,2,1,H
+2023-03-08,Sutjeska,Decic,1,1,D
+2023-03-08,Petrovac,Rudar,2,3,A
+2023-03-12,Mornar,Petrovac,0,1,A
+2023-03-12,Rudar,Sutjeska,1,4,A
+2023-03-12,Buducnost Podgorica,Jedinstvo,4,0,H
+2023-03-12,Decic,Arsenal Tivat,0,0,D
+2023-03-13,Iskra,Jezero,1,1,D
+2023-03-18,Jedinstvo,Decic,0,0,D
+2023-03-18,Arsenal Tivat,Rudar,0,1,A
+2023-03-18,Jezero,Buducnost Podgorica,1,2,A
+2023-03-18,Mornar,Iskra,0,0,D
+2023-03-18,Petrovac,Sutjeska,1,1,D
+2023-04-01,Buducnost Podgorica,Mornar,2,0,H
+2023-04-01,Rudar,Jedinstvo,1,2,A
+2023-04-01,Iskra,Petrovac,2,2,D
+2023-04-01,Decic,Jezero,1,1,D
+2023-04-01,Sutjeska,Arsenal Tivat,2,2,D
+2023-04-05,Rudar,Jezero,0,0,D
+2023-04-05,Petrovac,Arsenal Tivat,0,3,A
+2023-04-05,Decic,Mornar,1,1,D
+2023-04-05,Buducnost Podgorica,Iskra,3,0,H
+2023-04-05,Sutjeska,Jedinstvo,3,4,A
+2023-04-09,Iskra,Decic,1,3,A
+2023-04-09,Jezero,Sutjeska,0,0,D
+2023-04-09,Jedinstvo,Arsenal Tivat,0,0,D
+2023-04-09,Mornar,Rudar,2,0,H
+2023-04-09,Buducnost Podgorica,Petrovac,4,4,D
+2023-04-15,Sutjeska,Mornar,4,1,H
+2023-04-15,Rudar,Iskra,3,1,H
+2023-04-15,Arsenal Tivat,Jezero,1,0,H
+2023-04-15,Petrovac,Jedinstvo,2,3,A
+2023-04-15,Decic,Buducnost Podgorica,4,3,H
+2023-04-19,Rudar,Buducnost Podgorica,1,1,D
+2023-04-19,Jedinstvo,Jezero,2,1,H
+2023-04-23,Mornar,Arsenal Tivat,0,1,A
+2023-04-23,Jezero,Jedinstvo,2,1,H
+2023-04-23,Iskra,Sutjeska,0,2,A
+2023-04-23,Decic,Petrovac,3,0,H
+2023-04-23,Buducnost Podgorica,Rudar,2,1,H
+2023-04-29,Rudar,Decic,0,0,D
+2023-04-29,Arsenal Tivat,Iskra,2,3,A
+2023-04-29,Jedinstvo,Mornar,3,1,H
+2023-04-29,Petrovac,Jezero,1,0,H
+2023-04-29,Sutjeska,Buducnost Podgorica,2,2,D
+2023-05-07,Rudar,Petrovac,4,2,H
+2023-05-07,Buducnost Podgorica,Arsenal Tivat,1,0,H
+2023-05-07,Iskra,Jedinstvo,1,1,D
+2023-05-07,Mornar,Jezero,1,0,H
+2023-05-07,Decic,Sutjeska,0,3,A
+2023-05-14,Sutjeska,Rudar,2,1,H
+2023-05-14,Petrovac,Mornar,0,1,A
+2023-05-14,Arsenal Tivat,Decic,0,0,D
+2023-05-14,Jedinstvo,Buducnost Podgorica,1,3,A
+2023-05-14,Jezero,Iskra,2,0,H
+2023-05-21,Buducnost Podgorica,Jezero,1,3,A
+2023-05-21,Sutjeska,Petrovac,2,1,H
+2023-05-21,Rudar,Arsenal Tivat,1,2,A
+2023-05-21,Iskra,Mornar,1,1,D
+2023-05-21,Decic,Jedinstvo,2,0,H
+2023-05-25,Mornar,Buducnost Podgorica,0,1,A
+2023-05-25,Petrovac,Iskra,4,1,H
+2023-05-25,Arsenal Tivat,Sutjeska,0,1,A
+2023-05-25,Jedinstvo,Rudar,3,4,A
+2023-05-25,Jezero,Decic,2,1,H
+2023-05-30,Kom,Rudar,1,1,D
+2023-05-30,Mornar,Berane,2,0,H
+2023-06-03,Rudar,Kom,2,1,H
+2023-06-03,Berane,Mornar,0,2,A

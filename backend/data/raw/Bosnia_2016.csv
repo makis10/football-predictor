@@ -1,0 +1,193 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2016-07-23,Celik,Metalleghe-BSI Jajce,1,3,A
+2016-07-23,Sloboda Tuzla,Olimpik Sarajevo,3,0,H
+2016-07-23,Zeljeznicar Sarajevo,FK Sarajevo,1,1,D
+2016-07-24,Krupa na Vrbasu,Mladost Doboj Kakanj,1,1,D
+2016-07-24,Siroki Brijeg,Vitez,1,1,D
+2016-07-24,Zrinjski,Radnik Bijeljina,2,1,H
+2016-07-30,Metalleghe-BSI Jajce,Krupa na Vrbasu,0,2,A
+2016-07-30,Olimpik Sarajevo,Zeljeznicar Sarajevo,0,2,A
+2016-07-30,Vitez,Mladost Doboj Kakanj,1,1,D
+2016-07-31,Radnik Bijeljina,Celik,2,3,A
+2016-07-31,FK Sarajevo,Zrinjski,2,0,H
+2016-07-31,Siroki Brijeg,Sloboda Tuzla,2,2,D
+2016-08-05,Sloboda Tuzla,Vitez,1,0,H
+2016-08-06,Krupa na Vrbasu,Radnik Bijeljina,2,2,D
+2016-08-06,Celik,FK Sarajevo,1,1,D
+2016-08-06,Zeljeznicar Sarajevo,Siroki Brijeg,2,0,H
+2016-08-06,Zrinjski,Olimpik Sarajevo,4,1,H
+2016-08-07,Mladost Doboj Kakanj,Metalleghe-BSI Jajce,3,2,H
+2016-08-10,Olimpik Sarajevo,Celik,3,0,H
+2016-08-10,FK Sarajevo,Krupa na Vrbasu,3,2,H
+2016-08-10,Radnik Bijeljina,Mladost Doboj Kakanj,0,0,D
+2016-08-10,Sloboda Tuzla,Zeljeznicar Sarajevo,2,0,H
+2016-08-10,Vitez,Metalleghe-BSI Jajce,1,0,H
+2016-08-10,Siroki Brijeg,Zrinjski,1,1,D
+2016-08-13,Krupa na Vrbasu,Olimpik Sarajevo,2,0,H
+2016-08-13,Mladost Doboj Kakanj,FK Sarajevo,0,0,D
+2016-08-13,Celik,Siroki Brijeg,0,1,A
+2016-08-13,Zrinjski,Sloboda Tuzla,2,0,H
+2016-08-14,Metalleghe-BSI Jajce,Radnik Bijeljina,1,2,A
+2016-08-14,Zeljeznicar Sarajevo,Vitez,0,2,A
+2016-08-20,Olimpik Sarajevo,Mladost Doboj Kakanj,2,3,A
+2016-08-20,Sloboda Tuzla,Celik,2,0,H
+2016-08-20,Zeljeznicar Sarajevo,Zrinjski,0,1,A
+2016-08-21,Vitez,Radnik Bijeljina,1,4,A
+2016-08-21,Siroki Brijeg,Krupa na Vrbasu,3,1,H
+2016-08-22,FK Sarajevo,Metalleghe-BSI Jajce,1,2,A
+2016-08-27,Krupa na Vrbasu,Sloboda Tuzla,3,0,H
+2016-08-27,Radnik Bijeljina,FK Sarajevo,0,0,D
+2016-08-27,Metalleghe-BSI Jajce,Olimpik Sarajevo,1,1,D
+2016-08-27,Celik,Zeljeznicar Sarajevo,1,1,D
+2016-08-27,Zrinjski,Vitez,2,1,H
+2016-08-28,Mladost Doboj Kakanj,Siroki Brijeg,3,1,H
+2016-09-10,Zrinjski,Celik,4,0,H
+2016-09-10,Zeljeznicar Sarajevo,Krupa na Vrbasu,2,1,H
+2016-09-11,Olimpik Sarajevo,Radnik Bijeljina,0,3,A
+2016-09-11,Vitez,FK Sarajevo,0,1,A
+2016-09-11,Sloboda Tuzla,Mladost Doboj Kakanj,1,1,D
+2016-09-11,Siroki Brijeg,Metalleghe-BSI Jajce,3,1,H
+2016-09-17,Mladost Doboj Kakanj,Zeljeznicar Sarajevo,0,0,D
+2016-09-17,Krupa na Vrbasu,Zrinjski,0,0,D
+2016-09-17,Radnik Bijeljina,Siroki Brijeg,2,1,H
+2016-09-17,Celik,Vitez,0,1,A
+2016-09-18,Metalleghe-BSI Jajce,Sloboda Tuzla,0,0,D
+2016-09-18,FK Sarajevo,Olimpik Sarajevo,1,0,H
+2016-09-24,Sloboda Tuzla,Radnik Bijeljina,0,1,A
+2016-09-24,Celik,Krupa na Vrbasu,1,2,A
+2016-09-24,Vitez,Olimpik Sarajevo,0,0,D
+2016-09-24,Zrinjski,Mladost Doboj Kakanj,2,1,H
+2016-09-25,Siroki Brijeg,FK Sarajevo,2,2,D
+2016-09-25,Zeljeznicar Sarajevo,Metalleghe-BSI Jajce,2,1,H
+2016-09-30,Mladost Doboj Kakanj,Celik,1,0,H
+2016-10-01,FK Sarajevo,Sloboda Tuzla,1,1,D
+2016-10-01,Olimpik Sarajevo,Siroki Brijeg,3,1,H
+2016-10-01,Krupa na Vrbasu,Vitez,2,0,H
+2016-10-01,Radnik Bijeljina,Zeljeznicar Sarajevo,1,2,A
+2016-10-01,Metalleghe-BSI Jajce,Zrinjski,0,4,A
+2016-10-15,Olimpik Sarajevo,Sloboda Tuzla,3,3,D
+2016-10-15,Mladost Doboj Kakanj,Krupa na Vrbasu,0,1,A
+2016-10-15,Radnik Bijeljina,Zrinjski,1,1,D
+2016-10-15,Metalleghe-BSI Jajce,Celik,1,1,D
+2016-10-15,Vitez,Siroki Brijeg,0,1,A
+2016-10-16,FK Sarajevo,Zeljeznicar Sarajevo,0,0,D
+2016-10-22,Krupa na Vrbasu,Metalleghe-BSI Jajce,1,0,H
+2016-10-22,Mladost Doboj Kakanj,Vitez,1,2,A
+2016-10-22,Sloboda Tuzla,Siroki Brijeg,1,0,H
+2016-10-22,Zrinjski,FK Sarajevo,1,0,H
+2016-10-22,Zeljeznicar Sarajevo,Olimpik Sarajevo,3,2,H
+2016-10-23,Celik,Radnik Bijeljina,0,1,A
+2016-10-29,Metalleghe-BSI Jajce,Mladost Doboj Kakanj,2,0,H
+2016-10-29,Olimpik Sarajevo,Zrinjski,0,5,A
+2016-10-29,Vitez,Sloboda Tuzla,0,0,D
+2016-10-29,Radnik Bijeljina,Krupa na Vrbasu,3,1,H
+2016-10-30,FK Sarajevo,Celik,4,0,H
+2016-10-30,Siroki Brijeg,Zeljeznicar Sarajevo,1,0,H
+2016-11-05,Krupa na Vrbasu,FK Sarajevo,0,1,A
+2016-11-05,Metalleghe-BSI Jajce,Vitez,0,1,A
+2016-11-05,Zrinjski,Siroki Brijeg,0,0,D
+2016-11-05,Zeljeznicar Sarajevo,Sloboda Tuzla,1,1,D
+2016-11-06,Celik,Olimpik Sarajevo,3,0,H
+2016-11-06,Mladost Doboj Kakanj,Radnik Bijeljina,0,0,D
+2016-11-19,Radnik Bijeljina,Metalleghe-BSI Jajce,1,0,H
+2016-11-19,Sloboda Tuzla,Zrinjski,3,3,D
+2016-11-19,Vitez,Zeljeznicar Sarajevo,0,2,A
+2016-11-20,FK Sarajevo,Mladost Doboj Kakanj,4,3,H
+2016-11-20,Olimpik Sarajevo,Krupa na Vrbasu,0,3,A
+2016-11-20,Siroki Brijeg,Celik,1,0,H
+2016-11-26,Krupa na Vrbasu,Siroki Brijeg,1,0,H
+2016-11-26,Mladost Doboj Kakanj,Olimpik Sarajevo,3,0,H
+2016-11-26,Radnik Bijeljina,Vitez,1,1,D
+2016-11-26,Celik,Sloboda Tuzla,0,2,A
+2016-11-26,Zrinjski,Zeljeznicar Sarajevo,0,4,A
+2016-11-27,Metalleghe-BSI Jajce,FK Sarajevo,0,2,A
+2016-12-02,Vitez,Zrinjski,0,1,A
+2016-12-03,Zeljeznicar Sarajevo,Celik,1,0,H
+2016-12-03,Sloboda Tuzla,Krupa na Vrbasu,2,1,H
+2016-12-03,Olimpik Sarajevo,Metalleghe-BSI Jajce,0,2,A
+2016-12-04,FK Sarajevo,Radnik Bijeljina,2,0,H
+2016-12-04,Siroki Brijeg,Mladost Doboj Kakanj,2,1,H
+2017-02-25,Mladost Doboj Kakanj,Sloboda Tuzla,3,1,H
+2017-02-25,Radnik Bijeljina,Olimpik Sarajevo,2,0,H
+2017-02-25,Metalleghe-BSI Jajce,Siroki Brijeg,1,0,H
+2017-02-25,Celik,Zrinjski,1,1,D
+2017-02-26,FK Sarajevo,Vitez,1,0,H
+2017-02-26,Krupa na Vrbasu,Zeljeznicar Sarajevo,0,1,A
+2017-03-04,Zrinjski,Krupa na Vrbasu,3,1,H
+2017-03-04,Siroki Brijeg,Radnik Bijeljina,2,2,D
+2017-03-04,Zeljeznicar Sarajevo,Mladost Doboj Kakanj,1,0,H
+2017-03-04,Sloboda Tuzla,Metalleghe-BSI Jajce,2,1,H
+2017-03-04,Olimpik Sarajevo,FK Sarajevo,0,1,A
+2017-03-04,Vitez,Celik,0,0,D
+2017-03-11,FK Sarajevo,Siroki Brijeg,2,0,H
+2017-03-11,Krupa na Vrbasu,Celik,0,0,D
+2017-03-11,Mladost Doboj Kakanj,Zrinjski,0,1,A
+2017-03-11,Radnik Bijeljina,Sloboda Tuzla,2,1,H
+2017-03-11,Metalleghe-BSI Jajce,Zeljeznicar Sarajevo,0,1,A
+2017-03-11,Olimpik Sarajevo,Vitez,0,0,D
+2017-03-18,Zrinjski,Metalleghe-BSI Jajce,0,2,A
+2017-03-18,Siroki Brijeg,Olimpik Sarajevo,0,0,D
+2017-03-18,Zeljeznicar Sarajevo,Radnik Bijeljina,2,0,H
+2017-03-18,Sloboda Tuzla,FK Sarajevo,3,0,H
+2017-03-18,Celik,Mladost Doboj Kakanj,2,2,D
+2017-03-18,Vitez,Krupa na Vrbasu,0,0,D
+2017-04-01,Zrinjski,Krupa na Vrbasu,4,0,H
+2017-04-01,Mladost Doboj Kakanj,Celik,3,3,D
+2017-04-01,Vitez,Metalleghe-BSI Jajce,1,1,D
+2017-04-01,Zeljeznicar Sarajevo,Sloboda Tuzla,4,2,H
+2017-04-02,Siroki Brijeg,Olimpik Sarajevo,5,1,H
+2017-04-02,FK Sarajevo,Radnik Bijeljina,1,1,D
+2017-04-05,Krupa na Vrbasu,Radnik Bijeljina,1,1,D
+2017-04-05,Sloboda Tuzla,FK Sarajevo,0,2,A
+2017-04-05,Celik,Vitez,1,0,H
+2017-04-05,Olimpik Sarajevo,Metalleghe-BSI Jajce,1,0,H
+2017-04-05,Zrinjski,Zeljeznicar Sarajevo,0,0,D
+2017-04-05,Siroki Brijeg,Mladost Doboj Kakanj,4,0,H
+2017-04-08,Vitez,Siroki Brijeg,1,1,D
+2017-04-08,Mladost Doboj Kakanj,Olimpik Sarajevo,2,2,D
+2017-04-08,Radnik Bijeljina,Sloboda Tuzla,0,1,A
+2017-04-08,Zeljeznicar Sarajevo,Krupa na Vrbasu,1,0,H
+2017-04-09,Metalleghe-BSI Jajce,Celik,0,0,D
+2017-04-09,FK Sarajevo,Zrinjski,0,0,D
+2017-04-14,Olimpik Sarajevo,Celik,0,1,A
+2017-04-15,Zrinjski,Radnik Bijeljina,2,0,H
+2017-04-15,Krupa na Vrbasu,Sloboda Tuzla,3,0,H
+2017-04-15,Mladost Doboj Kakanj,Vitez,4,1,H
+2017-04-15,Siroki Brijeg,Metalleghe-BSI Jajce,0,1,A
+2017-04-15,Zeljeznicar Sarajevo,FK Sarajevo,0,0,D
+2017-04-22,Sloboda Tuzla,Zrinjski,0,0,D
+2017-04-22,Celik,Siroki Brijeg,1,0,H
+2017-04-22,Metalleghe-BSI Jajce,Mladost Doboj Kakanj,0,0,D
+2017-04-22,Vitez,Olimpik Sarajevo,0,2,A
+2017-04-23,FK Sarajevo,Krupa na Vrbasu,1,1,D
+2017-04-23,Radnik Bijeljina,Zeljeznicar Sarajevo,0,1,A
+2017-04-29,Krupa na Vrbasu,Zrinjski,1,1,D
+2017-04-29,Radnik Bijeljina,FK Sarajevo,0,3,A
+2017-04-29,Celik,Mladost Doboj Kakanj,1,0,H
+2017-04-30,Sloboda Tuzla,Zeljeznicar Sarajevo,2,2,D
+2017-04-30,Metalleghe-BSI Jajce,Vitez,0,0,D
+2017-04-30,Olimpik Sarajevo,Siroki Brijeg,2,0,H
+2017-05-05,FK Sarajevo,Sloboda Tuzla,1,0,H
+2017-05-06,Mladost Doboj Kakanj,Siroki Brijeg,1,0,H
+2017-05-06,Metalleghe-BSI Jajce,Olimpik Sarajevo,1,1,D
+2017-05-06,Vitez,Celik,0,2,A
+2017-05-06,Zeljeznicar Sarajevo,Zrinjski,2,1,H
+2017-05-07,Radnik Bijeljina,Krupa na Vrbasu,2,2,D
+2017-05-12,Siroki Brijeg,Vitez,0,1,A
+2017-05-13,Sloboda Tuzla,Radnik Bijeljina,2,0,H
+2017-05-13,Celik,Metalleghe-BSI Jajce,0,0,D
+2017-05-13,Olimpik Sarajevo,Mladost Doboj Kakanj,3,3,D
+2017-05-13,Zrinjski,FK Sarajevo,3,2,H
+2017-05-14,Krupa na Vrbasu,Zeljeznicar Sarajevo,1,1,D
+2017-05-20,FK Sarajevo,Zeljeznicar Sarajevo,1,0,H
+2017-05-20,Radnik Bijeljina,Zrinjski,1,2,A
+2017-05-20,Sloboda Tuzla,Krupa na Vrbasu,1,3,A
+2017-05-21,Celik,Olimpik Sarajevo,4,1,H
+2017-05-21,Metalleghe-BSI Jajce,Siroki Brijeg,0,0,D
+2017-05-21,Vitez,Mladost Doboj Kakanj,3,0,H
+2017-05-27,Siroki Brijeg,Celik,1,1,D
+2017-05-27,Mladost Doboj Kakanj,Metalleghe-BSI Jajce,2,2,D
+2017-05-27,Olimpik Sarajevo,Vitez,0,1,A
+2017-05-28,Zrinjski,Sloboda Tuzla,3,0,H
+2017-05-28,Zeljeznicar Sarajevo,Radnik Bijeljina,2,1,H
+2017-05-28,Krupa na Vrbasu,FK Sarajevo,1,0,H

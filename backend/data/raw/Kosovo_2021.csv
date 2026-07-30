@@ -1,0 +1,182 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2021-08-21,Drita,Feronikeli,2,1,H
+2021-08-21,Drenica Skenderaj,Gjilani,1,1,D
+2021-08-21,Llapi,Ulpiana,1,1,D
+2021-08-22,Ballkani,Dukagjini,2,2,D
+2021-08-22,Malisheva,Prishtina,1,1,D
+2021-08-28,Drita,Llapi,0,0,D
+2021-08-28,Ulpiana,Malisheva,1,3,A
+2021-08-29,Prishtina,Ballkani,0,1,A
+2021-08-29,Feronikeli,Gjilani,0,1,A
+2021-08-30,Dukagjini,Drenica Skenderaj,1,2,A
+2021-09-11,Ballkani,Ulpiana,3,2,H
+2021-09-11,Drenica Skenderaj,Prishtina,2,1,H
+2021-09-11,Malisheva,Drita,0,1,A
+2021-09-12,Gjilani,Dukagjini,0,0,D
+2021-09-12,Llapi,Feronikeli,0,2,A
+2021-09-15,Feronikeli,Dukagjini,1,0,H
+2021-09-15,Drita,Ballkani,0,0,D
+2021-09-15,Llapi,Malisheva,0,3,A
+2021-09-16,Prishtina,Gjilani,1,1,D
+2021-09-16,Ulpiana,Drenica Skenderaj,0,1,A
+2021-09-18,Ballkani,Llapi,2,0,H
+2021-09-18,Malisheva,Feronikeli,1,0,H
+2021-09-19,Dukagjini,Prishtina,1,2,A
+2021-09-19,Gjilani,Ulpiana,2,3,A
+2021-09-19,Drenica Skenderaj,Drita,0,2,A
+2021-09-25,Llapi,Drenica Skenderaj,1,1,D
+2021-09-25,Ulpiana,Dukagjini,0,0,D
+2021-09-26,Feronikeli,Prishtina,0,4,A
+2021-09-26,Drita,Gjilani,0,2,A
+2021-09-26,Malisheva,Ballkani,0,0,D
+2021-09-29,Ballkani,Feronikeli,0,0,D
+2021-09-29,Gjilani,Llapi,2,1,H
+2021-09-29,Drenica Skenderaj,Malisheva,1,0,H
+2021-09-30,Prishtina,Ulpiana,1,1,D
+2021-09-30,Dukagjini,Drita,2,1,H
+2021-10-02,Ballkani,Drenica Skenderaj,3,2,H
+2021-10-02,Malisheva,Gjilani,1,1,D
+2021-10-03,Feronikeli,Ulpiana,1,0,H
+2021-10-03,Drita,Prishtina,0,0,D
+2021-10-03,Llapi,Dukagjini,1,0,H
+2021-10-15,Dukagjini,Malisheva,2,0,H
+2021-10-15,Drenica Skenderaj,Feronikeli,4,0,H
+2021-10-15,Ulpiana,Drita,1,1,D
+2021-10-16,Prishtina,Llapi,1,2,A
+2021-10-16,Gjilani,Ballkani,1,1,D
+2021-10-19,Prishtina,Malisheva,2,1,H
+2021-10-19,Feronikeli,Drita,0,2,A
+2021-10-19,Ulpiana,Llapi,0,6,A
+2021-10-20,Gjilani,Drenica Skenderaj,2,1,H
+2021-10-20,Dukagjini,Ballkani,0,0,D
+2021-10-23,Gjilani,Feronikeli,1,0,H
+2021-10-23,Llapi,Drita,1,3,A
+2021-10-23,Malisheva,Ulpiana,1,2,A
+2021-10-24,Ballkani,Prishtina,2,0,H
+2021-10-24,Drenica Skenderaj,Dukagjini,2,0,H
+2021-10-30,Feronikeli,Llapi,0,2,A
+2021-10-30,Drita,Malisheva,1,0,H
+2021-10-30,Dukagjini,Gjilani,1,1,D
+2021-10-31,Prishtina,Drenica Skenderaj,1,0,H
+2021-10-31,Ulpiana,Ballkani,2,1,H
+2021-11-06,Ballkani,Drita,2,0,H
+2021-11-06,Drenica Skenderaj,Ulpiana,0,1,A
+2021-11-06,Malisheva,Llapi,0,1,A
+2021-11-07,Dukagjini,Feronikeli,1,0,H
+2021-11-07,Gjilani,Prishtina,1,1,D
+2021-11-19,Prishtina,Dukagjini,0,0,D
+2021-11-20,Feronikeli,Malisheva,0,1,A
+2021-11-20,Drita,Drenica Skenderaj,1,0,H
+2021-11-20,Ulpiana,Gjilani,1,2,A
+2021-11-21,Llapi,Ballkani,4,1,H
+2021-11-23,Prishtina,Feronikeli,2,0,H
+2021-11-23,Dukagjini,Ulpiana,1,1,D
+2021-11-25,Ballkani,Malisheva,2,0,H
+2021-11-25,Gjilani,Drita,1,0,H
+2021-11-25,Drenica Skenderaj,Llapi,3,5,A
+2021-11-27,Ulpiana,Prishtina,0,3,A
+2021-11-28,Feronikeli,Ballkani,0,1,A
+2021-11-28,Malisheva,Drenica Skenderaj,2,0,H
+2021-11-28,Llapi,Gjilani,0,0,D
+2021-11-29,Drita,Dukagjini,4,0,H
+2021-12-04,Gjilani,Malisheva,3,1,H
+2021-12-04,Drenica Skenderaj,Ballkani,0,1,A
+2021-12-05,Dukagjini,Llapi,0,0,D
+2021-12-05,Ulpiana,Feronikeli,0,0,D
+2021-12-05,Prishtina,Drita,0,1,A
+2021-12-11,Feronikeli,Drenica Skenderaj,0,2,A
+2021-12-11,Drita,Ulpiana,3,1,H
+2021-12-11,Llapi,Prishtina,3,2,H
+2021-12-12,Malisheva,Dukagjini,2,2,D
+2021-12-12,Ballkani,Gjilani,0,1,A
+2022-02-12,Ballkani,Dukagjini,4,1,H
+2022-02-12,Drita,Feronikeli,7,0,H
+2022-02-12,Drenica Skenderaj,Gjilani,1,1,D
+2022-02-13,Malisheva,Prishtina,2,1,H
+2022-02-13,Llapi,Ulpiana,2,0,H
+2022-02-19,Drita,Llapi,1,1,D
+2022-02-19,Ulpiana,Malisheva,1,1,D
+2022-02-20,Feronikeli,Gjilani,1,3,A
+2022-02-20,Dukagjini,Drenica Skenderaj,1,2,A
+2022-02-20,Prishtina,Ballkani,0,2,A
+2022-02-23,Ballkani,Ulpiana,3,0,H
+2022-02-23,Llapi,Feronikeli,4,2,H
+2022-02-23,Malisheva,Drita,1,2,A
+2022-02-24,Gjilani,Dukagjini,2,1,H
+2022-02-24,Drenica Skenderaj,Prishtina,0,0,D
+2022-02-26,Drita,Ballkani,0,1,A
+2022-02-26,Llapi,Malisheva,3,0,H
+2022-02-27,Feronikeli,Dukagjini,0,3,A
+2022-02-27,Ulpiana,Drenica Skenderaj,3,1,H
+2022-02-27,Prishtina,Gjilani,2,2,D
+2022-03-05,Dukagjini,Prishtina,2,1,H
+2022-03-05,Malisheva,Feronikeli,6,1,H
+2022-03-06,Gjilani,Ulpiana,2,0,H
+2022-03-06,Drenica Skenderaj,Drita,2,1,H
+2022-03-06,Ballkani,Llapi,1,0,H
+2022-03-09,Feronikeli,Prishtina,0,3,A
+2022-03-09,Malisheva,Ballkani,2,0,H
+2022-03-09,Ulpiana,Dukagjini,1,1,D
+2022-03-10,Drita,Gjilani,1,1,D
+2022-03-10,Llapi,Drenica Skenderaj,3,3,D
+2022-03-12,Prishtina,Ulpiana,2,0,H
+2022-03-12,Ballkani,Feronikeli,6,0,H
+2022-03-13,Drenica Skenderaj,Malisheva,2,3,A
+2022-03-13,Dukagjini,Drita,0,0,D
+2022-03-13,Gjilani,Llapi,1,1,D
+2022-03-19,Feronikeli,Ulpiana,2,2,D
+2022-03-19,Llapi,Dukagjini,1,2,A
+2022-03-19,Malisheva,Gjilani,0,0,D
+2022-03-20,Ballkani,Drenica Skenderaj,2,0,H
+2022-03-20,Drita,Prishtina,2,0,H
+2022-04-01,Dukagjini,Malisheva,0,0,D
+2022-04-02,Prishtina,Llapi,2,1,H
+2022-04-02,Ulpiana,Drita,2,3,A
+2022-04-03,Drenica Skenderaj,Feronikeli,6,0,H
+2022-04-03,Gjilani,Ballkani,0,3,A
+2022-04-09,Dukagjini,Ballkani,0,1,A
+2022-04-09,Gjilani,Drenica Skenderaj,5,0,H
+2022-04-10,Prishtina,Malisheva,3,2,H
+2022-04-10,Feronikeli,Drita,0,5,A
+2022-04-10,Ulpiana,Llapi,0,2,A
+2022-04-16,Gjilani,Feronikeli,5,1,H
+2022-04-16,Drenica Skenderaj,Dukagjini,0,1,A
+2022-04-16,Malisheva,Ulpiana,1,0,H
+2022-04-17,Ballkani,Prishtina,2,0,H
+2022-04-17,Llapi,Drita,1,0,H
+2022-04-23,Feronikeli,Llapi,0,2,A
+2022-04-23,Drita,Malisheva,3,1,H
+2022-04-23,Ulpiana,Ballkani,0,3,A
+2022-04-24,Dukagjini,Gjilani,2,0,H
+2022-04-24,Prishtina,Drenica Skenderaj,1,1,D
+2022-04-27,Gjilani,Prishtina,1,2,A
+2022-04-27,Drenica Skenderaj,Ulpiana,3,1,H
+2022-04-27,Dukagjini,Feronikeli,4,0,H
+2022-04-28,Ballkani,Drita,3,2,H
+2022-04-28,Malisheva,Llapi,0,2,A
+2022-04-30,Prishtina,Dukagjini,0,1,A
+2022-04-30,Ulpiana,Gjilani,0,4,A
+2022-05-01,Feronikeli,Malisheva,0,2,A
+2022-05-01,Drita,Drenica Skenderaj,1,1,D
+2022-05-01,Llapi,Ballkani,1,1,D
+2022-05-04,Prishtina,Feronikeli,5,0,H
+2022-05-04,Gjilani,Drita,0,0,D
+2022-05-04,Dukagjini,Ulpiana,2,1,H
+2022-05-05,Ballkani,Malisheva,2,3,A
+2022-05-05,Drenica Skenderaj,Llapi,1,0,H
+2022-05-08,Feronikeli,Ballkani,0,2,A
+2022-05-08,Drita,Dukagjini,0,0,D
+2022-05-08,Llapi,Gjilani,2,4,A
+2022-05-08,Malisheva,Drenica Skenderaj,0,0,D
+2022-05-08,Ulpiana,Prishtina,0,3,A
+2022-05-15,Prishtina,Drita,0,1,A
+2022-05-15,Gjilani,Malisheva,3,4,A
+2022-05-15,Drenica Skenderaj,Ballkani,3,1,H
+2022-05-15,Dukagjini,Llapi,3,2,H
+2022-05-15,Ulpiana,Feronikeli,6,2,H
+2022-05-22,Feronikeli,Drenica Skenderaj,2,3,A
+2022-05-22,Ballkani,Gjilani,2,0,H
+2022-05-22,Drita,Ulpiana,5,0,H
+2022-05-22,Llapi,Prishtina,1,2,A
+2022-05-22,Malisheva,Dukagjini,0,0,D
+2022-05-28,Vushtrria,Malisheva,1,3,A

@@ -1,0 +1,199 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2022-07-29,Budapest Honved,Zalaegerszegi TE,0,1,A
+2022-07-30,Kecskemeti TE,Vasas,0,0,D
+2022-07-30,Ujpest,Mezokovesd-zsory,1,1,D
+2022-07-31,Kisvarda FC,Debreceni VSC,2,2,D
+2022-07-31,Paks,Fehervar FC,2,0,H
+2022-07-31,Ferencvarosi TC,Puskas Academy,1,0,H
+2022-08-05,Vasas,Paks,2,2,D
+2022-08-06,Debreceni VSC,Kecskemeti TE,1,1,D
+2022-08-07,Kisvarda FC,Mezokovesd-zsory,4,2,H
+2022-08-07,Puskas Academy,Ujpest,2,0,H
+2022-08-07,Fehervar FC,Budapest Honved,4,0,H
+2022-08-12,Debreceni VSC,Vasas,1,1,D
+2022-08-13,Kecskemeti TE,Mezokovesd-zsory,1,0,H
+2022-08-13,Ujpest,Zalaegerszegi TE,1,1,D
+2022-08-14,Kisvarda FC,Puskas Academy,1,1,D
+2022-08-14,Budapest Honved,Paks,3,3,D
+2022-08-14,Ferencvarosi TC,Fehervar FC,4,0,H
+2022-08-19,Puskas Academy,Kecskemeti TE,1,1,D
+2022-08-21,Zalaegerszegi TE,Kisvarda FC,1,3,A
+2022-08-21,Vasas,Budapest Honved,1,2,A
+2022-08-22,Mezokovesd-zsory,Debreceni VSC,4,2,H
+2022-08-26,Ujpest,Paks,2,3,A
+2022-08-27,Mezokovesd-zsory,Vasas,1,1,D
+2022-08-27,Kecskemeti TE,Zalaegerszegi TE,3,1,H
+2022-08-27,Debreceni VSC,Puskas Academy,1,1,D
+2022-08-28,Kisvarda FC,Fehervar FC,3,1,H
+2022-08-28,Ferencvarosi TC,Budapest Honved,3,1,H
+2022-08-30,Puskas Academy,Mezokovesd-zsory,1,0,H
+2022-08-30,Zalaegerszegi TE,Debreceni VSC,4,2,H
+2022-08-31,Paks,Kisvarda FC,1,3,A
+2022-08-31,Fehervar FC,Kecskemeti TE,2,1,H
+2022-08-31,Vasas,Ferencvarosi TC,0,1,A
+2022-09-01,Budapest Honved,Ujpest,0,0,D
+2022-09-02,Mezokovesd-zsory,Zalaegerszegi TE,0,5,A
+2022-09-03,Kecskemeti TE,Paks,3,1,H
+2022-09-03,Vasas,Puskas Academy,1,1,D
+2022-09-03,Debreceni VSC,Fehervar FC,1,0,H
+2022-09-04,Kisvarda FC,Budapest Honved,0,1,A
+2022-09-04,Ujpest,Ferencvarosi TC,0,6,A
+2022-09-10,Paks,Debreceni VSC,1,0,H
+2022-09-10,Budapest Honved,Kecskemeti TE,0,0,D
+2022-09-10,Fehervar FC,Mezokovesd-zsory,2,1,H
+2022-09-11,Zalaegerszegi TE,Puskas Academy,1,2,A
+2022-09-11,Ferencvarosi TC,Kisvarda FC,3,0,H
+2022-09-11,Ujpest,Vasas,2,1,H
+2022-09-30,Mezokovesd-zsory,Paks,1,2,A
+2022-10-01,Ujpest,Kisvarda FC,4,0,H
+2022-10-01,Debreceni VSC,Budapest Honved,4,3,H
+2022-10-01,Vasas,Zalaegerszegi TE,1,1,D
+2022-10-02,Kecskemeti TE,Ferencvarosi TC,2,0,H
+2022-10-02,Puskas Academy,Fehervar FC,1,1,D
+2022-10-07,Fehervar FC,Zalaegerszegi TE,1,1,D
+2022-10-07,Ujpest,Kecskemeti TE,1,2,A
+2022-10-08,Kisvarda FC,Vasas,2,0,H
+2022-10-08,Budapest Honved,Mezokovesd-zsory,2,2,D
+2022-10-09,Paks,Puskas Academy,1,3,A
+2022-10-09,Ferencvarosi TC,Debreceni VSC,2,0,H
+2022-10-10,Fehervar FC,Ujpest,0,1,A
+2022-10-14,Kecskemeti TE,Kisvarda FC,3,3,D
+2022-10-15,Zalaegerszegi TE,Paks,3,0,H
+2022-10-15,Puskas Academy,Budapest Honved,1,0,H
+2022-10-15,Vasas,Fehervar FC,2,0,H
+2022-10-16,Debreceni VSC,Ujpest,4,1,H
+2022-10-16,Mezokovesd-zsory,Ferencvarosi TC,2,1,H
+2022-10-21,Vasas,Kecskemeti TE,1,2,A
+2022-10-22,Zalaegerszegi TE,Budapest Honved,0,2,A
+2022-10-22,Fehervar FC,Paks,1,1,D
+2022-10-22,Puskas Academy,Ferencvarosi TC,2,4,A
+2022-10-24,Mezokovesd-zsory,Ujpest,1,0,H
+2022-10-24,Debreceni VSC,Kisvarda FC,2,3,A
+2022-10-28,Mezokovesd-zsory,Kisvarda FC,1,1,D
+2022-10-29,Budapest Honved,Fehervar FC,0,1,A
+2022-10-29,Kecskemeti TE,Debreceni VSC,2,2,D
+2022-10-29,Paks,Vasas,0,1,A
+2022-10-30,Ujpest,Puskas Academy,3,3,D
+2022-10-30,Ferencvarosi TC,Zalaegerszegi TE,2,1,H
+2022-11-05,Mezokovesd-zsory,Kecskemeti TE,2,1,H
+2022-11-05,Puskas Academy,Kisvarda FC,0,1,A
+2022-11-05,Zalaegerszegi TE,Ujpest,1,0,H
+2022-11-06,Vasas,Debreceni VSC,0,3,A
+2022-11-06,Paks,Budapest Honved,5,0,H
+2022-11-06,Fehervar FC,Ferencvarosi TC,2,2,D
+2022-11-08,Kisvarda FC,Zalaegerszegi TE,0,3,A
+2022-11-08,Kecskemeti TE,Puskas Academy,1,1,D
+2022-11-09,Debreceni VSC,Mezokovesd-zsory,1,0,H
+2022-11-09,Ferencvarosi TC,Paks,3,2,H
+2022-11-09,Ujpest,Fehervar FC,2,1,H
+2022-11-10,Budapest Honved,Vasas,2,0,H
+2022-11-12,Puskas Academy,Debreceni VSC,2,1,H
+2022-11-12,Paks,Ujpest,3,1,H
+2022-11-12,Zalaegerszegi TE,Kecskemeti TE,0,0,D
+2022-11-13,Fehervar FC,Kisvarda FC,4,1,H
+2022-11-13,Budapest Honved,Ferencvarosi TC,0,2,A
+2022-11-13,Vasas,Mezokovesd-zsory,1,0,H
+2023-01-24,Zalaegerszegi TE,Ferencvarosi TC,1,2,A
+2023-01-28,Kisvarda FC,Paks,2,2,D
+2023-01-28,Debreceni VSC,Zalaegerszegi TE,3,0,H
+2023-01-28,Ferencvarosi TC,Vasas,0,0,D
+2023-01-29,Mezokovesd-zsory,Puskas Academy,1,0,H
+2023-01-29,Ujpest,Budapest Honved,2,1,H
+2023-01-29,Kecskemeti TE,Fehervar FC,2,1,H
+2023-02-01,Paks,Ferencvarosi TC,1,3,A
+2023-02-03,Puskas Academy,Vasas,1,1,D
+2023-02-04,Paks,Kecskemeti TE,0,0,D
+2023-02-04,Budapest Honved,Kisvarda FC,1,1,D
+2023-02-04,Fehervar FC,Debreceni VSC,1,1,D
+2023-02-05,Zalaegerszegi TE,Mezokovesd-zsory,0,0,D
+2023-02-05,Ferencvarosi TC,Ujpest,3,1,H
+2023-02-10,Mezokovesd-zsory,Fehervar FC,2,1,H
+2023-02-11,Kecskemeti TE,Budapest Honved,2,2,D
+2023-02-11,Kisvarda FC,Ferencvarosi TC,0,0,D
+2023-02-11,Debreceni VSC,Paks,2,1,H
+2023-02-12,Puskas Academy,Zalaegerszegi TE,1,0,H
+2023-02-12,Vasas,Ujpest,0,1,A
+2023-02-17,Kisvarda FC,Ujpest,2,1,H
+2023-02-18,Paks,Mezokovesd-zsory,0,2,A
+2023-02-18,Ferencvarosi TC,Kecskemeti TE,1,1,D
+2023-02-18,Fehervar FC,Puskas Academy,1,1,D
+2023-02-19,Zalaegerszegi TE,Vasas,0,0,D
+2023-02-19,Budapest Honved,Debreceni VSC,2,3,A
+2023-02-24,Mezokovesd-zsory,Budapest Honved,0,0,D
+2023-02-25,Zalaegerszegi TE,Fehervar FC,2,1,H
+2023-02-25,Puskas Academy,Paks,1,4,A
+2023-02-25,Vasas,Kisvarda FC,2,2,D
+2023-02-26,Kecskemeti TE,Ujpest,2,2,D
+2023-02-26,Debreceni VSC,Ferencvarosi TC,0,2,A
+2023-03-03,Ferencvarosi TC,Mezokovesd-zsory,1,1,D
+2023-03-04,Kisvarda FC,Kecskemeti TE,0,1,A
+2023-03-04,Paks,Zalaegerszegi TE,3,1,H
+2023-03-04,Fehervar FC,Vasas,2,1,H
+2023-03-05,Budapest Honved,Puskas Academy,3,1,H
+2023-03-05,Ujpest,Debreceni VSC,1,1,D
+2023-03-11,Kisvarda FC,Debreceni VSC,0,1,A
+2023-03-11,Paks,Fehervar FC,2,1,H
+2023-03-11,Budapest Honved,Zalaegerszegi TE,1,0,H
+2023-03-12,Kecskemeti TE,Vasas,2,0,H
+2023-03-12,Ujpest,Mezokovesd-zsory,1,0,H
+2023-03-12,Ferencvarosi TC,Puskas Academy,1,2,A
+2023-03-18,Mezokovesd-zsory,Kisvarda FC,1,1,D
+2023-03-18,Debreceni VSC,Kecskemeti TE,1,2,A
+2023-03-18,Fehervar FC,Budapest Honved,2,0,H
+2023-03-19,Vasas,Paks,2,3,A
+2023-03-19,Puskas Academy,Ujpest,5,1,H
+2023-03-19,Zalaegerszegi TE,Ferencvarosi TC,1,0,H
+2023-04-01,Kisvarda FC,Puskas Academy,2,2,D
+2023-04-01,Ujpest,Zalaegerszegi TE,3,2,H
+2023-04-01,Budapest Honved,Paks,1,2,A
+2023-04-02,Kecskemeti TE,Mezokovesd-zsory,0,1,A
+2023-04-02,Ferencvarosi TC,Fehervar FC,2,2,D
+2023-04-02,Debreceni VSC,Vasas,3,1,H
+2023-04-07,Mezokovesd-zsory,Debreceni VSC,0,1,A
+2023-04-08,Puskas Academy,Kecskemeti TE,0,3,A
+2023-04-08,Fehervar FC,Ujpest,0,0,D
+2023-04-08,Paks,Ferencvarosi TC,3,2,H
+2023-04-09,Vasas,Budapest Honved,0,1,A
+2023-04-09,Zalaegerszegi TE,Kisvarda FC,0,0,D
+2023-04-14,Debreceni VSC,Puskas Academy,0,1,A
+2023-04-15,Kecskemeti TE,Zalaegerszegi TE,3,0,H
+2023-04-15,Mezokovesd-zsory,Vasas,1,4,A
+2023-04-15,Ferencvarosi TC,Budapest Honved,3,0,H
+2023-04-16,Kisvarda FC,Fehervar FC,0,0,D
+2023-04-16,Ujpest,Paks,3,2,H
+2023-04-21,Budapest Honved,Ujpest,0,1,A
+2023-04-22,Fehervar FC,Kecskemeti TE,1,2,A
+2023-04-22,Vasas,Ferencvarosi TC,0,1,A
+2023-04-23,Paks,Kisvarda FC,2,0,H
+2023-04-23,Puskas Academy,Mezokovesd-zsory,2,1,H
+2023-04-23,Zalaegerszegi TE,Debreceni VSC,0,2,A
+2023-04-28,Kecskemeti TE,Paks,2,3,A
+2023-04-29,Mezokovesd-zsory,Zalaegerszegi TE,1,2,A
+2023-04-29,Kisvarda FC,Budapest Honved,2,2,D
+2023-04-29,Vasas,Puskas Academy,2,2,D
+2023-04-30,Debreceni VSC,Fehervar FC,2,0,H
+2023-05-01,Ujpest,Ferencvarosi TC,2,3,A
+2023-05-05,Budapest Honved,Kecskemeti TE,1,0,H
+2023-05-06,Ujpest,Vasas,1,1,D
+2023-05-06,Paks,Debreceni VSC,0,0,D
+2023-05-06,Ferencvarosi TC,Kisvarda FC,3,0,H
+2023-05-07,Zalaegerszegi TE,Puskas Academy,2,1,H
+2023-05-07,Fehervar FC,Mezokovesd-zsory,1,1,D
+2023-05-13,Vasas,Zalaegerszegi TE,1,1,D
+2023-05-13,Debreceni VSC,Budapest Honved,0,0,D
+2023-05-13,Kecskemeti TE,Ferencvarosi TC,2,0,H
+2023-05-14,Mezokovesd-zsory,Paks,6,1,H
+2023-05-14,Kisvarda FC,Ujpest,2,0,H
+2023-05-14,Puskas Academy,Fehervar FC,2,1,H
+2023-05-19,Paks,Puskas Academy,0,2,A
+2023-05-19,Kisvarda FC,Vasas,2,1,H
+2023-05-20,Fehervar FC,Zalaegerszegi TE,3,0,H
+2023-05-20,Ferencvarosi TC,Debreceni VSC,1,3,A
+2023-05-21,Budapest Honved,Mezokovesd-zsory,2,3,A
+2023-05-21,Ujpest,Kecskemeti TE,3,0,H
+2023-05-26,Kecskemeti TE,Kisvarda FC,1,0,H
+2023-05-26,Zalaegerszegi TE,Paks,1,1,D
+2023-05-27,Vasas,Fehervar FC,0,0,D
+2023-05-27,Puskas Academy,Budapest Honved,2,1,H
+2023-05-27,Debreceni VSC,Ujpest,2,0,H
+2023-05-28,Mezokovesd-zsory,Ferencvarosi TC,1,0,H

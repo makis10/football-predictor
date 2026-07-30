@@ -1,0 +1,150 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2020-03-06,Flora Tallinn,Legion,3,1,H
+2020-03-07,FC Levadia Tallinn,Kuressaare,1,0,H
+2020-03-07,Trans Narva,Kalju Nomme,0,1,A
+2020-03-07,Tallinna Kalev,Paide,1,8,A
+2020-03-08,Tammeka,Tulevik,2,1,H
+2020-05-19,Kuressaare,Kalju Nomme,0,2,A
+2020-05-19,Legion,FC Levadia Tallinn,0,2,A
+2020-05-19,Paide,Tulevik,1,2,A
+2020-05-20,Tallinna Kalev,Trans Narva,1,1,D
+2020-05-20,Flora Tallinn,Tammeka,0,0,D
+2020-05-23,Paide,Kuressaare,2,0,H
+2020-05-23,Kalju Nomme,Legion,1,2,A
+2020-05-24,Trans Narva,Flora Tallinn,2,3,A
+2020-05-24,Tammeka,Tallinna Kalev,0,2,A
+2020-05-24,Tulevik,FC Levadia Tallinn,1,3,A
+2020-05-30,Flora Tallinn,Tallinna Kalev,3,0,H
+2020-05-30,Kuressaare,Trans Narva,3,2,H
+2020-05-30,Legion,Tammeka,0,1,A
+2020-05-31,Tulevik,Kalju Nomme,0,6,A
+2020-05-31,FC Levadia Tallinn,Paide,4,1,H
+2020-06-02,Tallinna Kalev,Legion,1,0,H
+2020-06-02,Tammeka,Kuressaare,1,2,A
+2020-06-03,Kalju Nomme,FC Levadia Tallinn,2,0,H
+2020-06-03,Trans Narva,Tulevik,0,2,A
+2020-06-03,Paide,Flora Tallinn,1,3,A
+2020-06-06,FC Levadia Tallinn,Tallinna Kalev,4,0,H
+2020-06-06,Legion,Trans Narva,0,0,D
+2020-06-07,Tulevik,Kuressaare,5,0,H
+2020-06-07,Kalju Nomme,Flora Tallinn,1,2,A
+2020-06-07,Tammeka,Paide,0,2,A
+2020-06-12,Flora Tallinn,Tulevik,3,0,H
+2020-06-13,FC Levadia Tallinn,Tammeka,2,2,D
+2020-06-13,Kuressaare,Legion,0,0,D
+2020-06-14,Tallinna Kalev,Kalju Nomme,0,4,A
+2020-06-14,Paide,Trans Narva,2,1,H
+2020-06-16,Legion,Tulevik,0,2,A
+2020-06-17,Kalju Nomme,Paide,0,1,A
+2020-06-17,Trans Narva,Tammeka,0,1,A
+2020-06-17,Tallinna Kalev,Kuressaare,0,2,A
+2020-06-17,Flora Tallinn,FC Levadia Tallinn,4,0,H
+2020-06-26,Tammeka,Kalju Nomme,0,2,A
+2020-06-27,Kuressaare,Flora Tallinn,0,4,A
+2020-06-27,Tulevik,Tallinna Kalev,2,1,H
+2020-06-27,Trans Narva,FC Levadia Tallinn,4,4,D
+2020-06-27,Paide,Legion,2,0,H
+2020-06-30,Legion,Tallinna Kalev,0,0,D
+2020-06-30,Flora Tallinn,Trans Narva,3,1,H
+2020-07-01,Kuressaare,Tulevik,3,0,H
+2020-07-01,Paide,Tammeka,3,0,H
+2020-07-01,FC Levadia Tallinn,Kalju Nomme,1,1,D
+2020-07-07,Kalju Nomme,Kuressaare,1,0,H
+2020-07-08,Tallinna Kalev,FC Levadia Tallinn,0,4,A
+2020-07-08,Tammeka,Legion,1,3,A
+2020-07-08,Tulevik,Flora Tallinn,2,1,H
+2020-07-08,Trans Narva,Paide,1,0,H
+2020-07-11,Tulevik,Trans Narva,0,1,A
+2020-07-11,Flora Tallinn,Paide,3,1,H
+2020-07-11,Kuressaare,Tammeka,2,4,A
+2020-07-12,Kalju Nomme,Tallinna Kalev,2,0,H
+2020-07-12,FC Levadia Tallinn,Legion,4,0,H
+2020-07-17,Legion,Kuressaare,1,1,D
+2020-07-17,Paide,Kalju Nomme,1,3,A
+2020-07-18,Tallinna Kalev,Tulevik,0,2,A
+2020-07-18,FC Levadia Tallinn,Flora Tallinn,1,3,A
+2020-07-18,Tammeka,Trans Narva,2,2,D
+2020-07-24,Tulevik,Tammeka,2,0,H
+2020-07-24,Flora Tallinn,Kalju Nomme,2,1,H
+2020-07-25,Paide,FC Levadia Tallinn,4,2,H
+2020-07-25,Trans Narva,Legion,2,0,H
+2020-07-27,Kuressaare,Tallinna Kalev,2,2,D
+2020-07-31,Tallinna Kalev,Flora Tallinn,0,3,A
+2020-07-31,Kalju Nomme,Tammeka,1,1,D
+2020-08-01,Legion,Paide,0,3,A
+2020-08-01,Trans Narva,Kuressaare,1,0,H
+2020-08-02,FC Levadia Tallinn,Tulevik,5,1,H
+2020-08-07,Flora Tallinn,Kuressaare,3,0,H
+2020-08-08,Tulevik,Legion,0,2,A
+2020-08-09,Paide,Tallinna Kalev,4,0,H
+2020-08-09,Kalju Nomme,Trans Narva,3,0,H
+2020-08-09,Tammeka,FC Levadia Tallinn,1,1,D
+2020-08-14,Kuressaare,FC Levadia Tallinn,2,2,D
+2020-08-14,Tammeka,Flora Tallinn,1,3,A
+2020-08-15,Legion,Kalju Nomme,0,6,A
+2020-08-15,Tulevik,Paide,1,3,A
+2020-08-16,Trans Narva,Tallinna Kalev,1,0,H
+2020-08-21,FC Levadia Tallinn,Trans Narva,3,0,H
+2020-08-22,Tulevik,Kalju Nomme,0,1,A
+2020-08-22,Tallinna Kalev,Tammeka,0,2,A
+2020-08-22,Kuressaare,Paide,0,4,A
+2020-08-23,Legion,Flora Tallinn,1,3,A
+2020-08-29,Flora Tallinn,Legion,1,0,H
+2020-08-30,Trans Narva,Kuressaare,0,0,D
+2020-08-30,Paide,Tammeka,3,1,H
+2020-08-30,FC Levadia Tallinn,Tallinna Kalev,3,0,H
+2020-09-12,Tallinna Kalev,Flora Tallinn,1,4,A
+2020-09-12,Tulevik,Paide,1,4,A
+2020-09-13,Legion,Trans Narva,2,1,H
+2020-09-13,Kuressaare,FC Levadia Tallinn,1,5,A
+2020-09-19,Trans Narva,Tulevik,0,1,A
+2020-09-19,Tallinna Kalev,Tammeka,1,2,A
+2020-09-19,Kuressaare,Legion,2,2,D
+2020-09-20,FC Levadia Tallinn,Kalju Nomme,2,1,H
+2020-09-23,Tammeka,Kalju Nomme,0,0,D
+2020-09-26,Tulevik,Kuressaare,1,1,D
+2020-09-26,Paide,Tallinna Kalev,4,1,H
+2020-09-27,Legion,Tammeka,3,1,H
+2020-09-27,Kalju Nomme,Trans Narva,2,1,H
+2020-09-30,Kalju Nomme,Tulevik,0,0,D
+2020-10-03,Tammeka,Trans Narva,0,0,D
+2020-10-03,Kuressaare,Tallinna Kalev,0,1,A
+2020-10-04,Kalju Nomme,Legion,1,1,D
+2020-10-04,Flora Tallinn,Tulevik,2,1,H
+2020-10-04,Paide,FC Levadia Tallinn,1,0,H
+2020-10-17,FC Levadia Tallinn,Tulevik,2,0,H
+2020-10-17,Tallinna Kalev,Kalju Nomme,1,4,A
+2020-10-18,Tammeka,Kuressaare,4,2,H
+2020-10-18,Legion,Paide,0,2,A
+2020-10-21,Trans Narva,Flora Tallinn,1,2,A
+2020-10-24,Tulevik,Tammeka,0,1,A
+2020-10-24,Legion,Tallinna Kalev,2,0,H
+2020-10-25,Trans Narva,FC Levadia Tallinn,1,2,A
+2020-10-25,Kuressaare,Flora Tallinn,0,4,A
+2020-10-25,Kalju Nomme,Paide,1,3,A
+2020-10-28,Flora Tallinn,Paide,1,0,H
+2020-10-31,Tallinna Kalev,Trans Narva,4,1,H
+2020-10-31,Tulevik,Legion,0,0,D
+2020-10-31,FC Levadia Tallinn,Tammeka,3,2,H
+2020-11-01,Paide,Kuressaare,6,2,H
+2020-11-01,Flora Tallinn,Kalju Nomme,0,0,D
+2020-11-07,Kuressaare,Kalju Nomme,1,1,D
+2020-11-08,Paide,Trans Narva,4,2,H
+2020-11-08,Tallinna Kalev,Tulevik,1,0,H
+2020-11-08,Tammeka,Flora Tallinn,0,1,A
+2020-11-14,Legion,FC Levadia Tallinn,1,2,A
+2020-11-21,Tallinna Kalev,Legion,0,2,A
+2020-11-21,Kuressaare,Trans Narva,0,3,A
+2020-11-22,Tammeka,Tulevik,3,3,D
+2020-11-22,Kalju Nomme,Flora Tallinn,0,3,A
+2020-11-22,FC Levadia Tallinn,Paide,2,2,D
+2020-11-24,Trans Narva,Tallinna Kalev,1,1,D
+2020-11-24,Legion,Kuressaare,0,1,A
+2020-11-28,Trans Narva,Legion,1,3,A
+2020-11-28,Tallinna Kalev,Kuressaare,1,1,D
+2020-11-29,Paide,Flora Tallinn,1,7,A
+2020-11-29,Kalju Nomme,FC Levadia Tallinn,0,2,A
+2020-12-02,FC Levadia Tallinn,Flora Tallinn,0,2,A
+2020-12-06,Paide,Kalju Nomme,7,4,H
+2020-12-10,Maardu,Kuressaare,3,5,A
+2020-12-13,Kuressaare,Maardu,4,2,H

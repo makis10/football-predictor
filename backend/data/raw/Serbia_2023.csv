@@ -1,0 +1,301 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2023-07-29,FK Spartak Zdrepceva KRV,IMT Novi Beograd,2,1,H
+2023-07-29,Cukaricki,Radnicki NIS,2,0,H
+2023-07-29,TSC Backa Topola,FK Partizan,3,3,D
+2023-07-29,FK Vozdovac,Javor,0,0,D
+2023-07-30,Novi Pazar,Radnicki 1923,2,0,H
+2023-07-30,Napredak,Zeleznicar Pancevo,0,1,A
+2023-07-30,FK Crvena Zvezda,Vojvodina,5,0,H
+2023-07-31,Mladost Lucani,Radnik Surdulica,0,0,D
+2023-08-03,Radnicki NIS,TSC Backa Topola,0,3,A
+2023-08-05,Javor,Novi Pazar,3,1,H
+2023-08-05,Zeleznicar Pancevo,Mladost Lucani,0,2,A
+2023-08-06,FK Crvena Zvezda,Napredak,4,0,H
+2023-08-06,Radnicki 1923,Cukaricki,1,2,A
+2023-08-06,Vojvodina,FK Partizan,0,2,A
+2023-08-06,IMT Novi Beograd,FK Vozdovac,2,2,D
+2023-08-07,Radnik Surdulica,FK Spartak Zdrepceva KRV,2,0,H
+2023-08-11,Mladost Lucani,FK Crvena Zvezda,1,4,A
+2023-08-12,TSC Backa Topola,Radnicki 1923,1,0,H
+2023-08-12,FK Vozdovac,Radnik Surdulica,1,1,D
+2023-08-12,Cukaricki,Javor,2,2,D
+2023-08-13,Napredak,Vojvodina,0,0,D
+2023-08-13,FK Partizan,Radnicki NIS,2,1,H
+2023-08-13,FK Spartak Zdrepceva KRV,Zeleznicar Pancevo,3,0,H
+2023-08-14,Novi Pazar,IMT Novi Beograd,3,4,A
+2023-08-18,IMT Novi Beograd,Cukaricki,3,0,H
+2023-08-19,Vojvodina,Radnicki NIS,3,2,H
+2023-08-19,FK Crvena Zvezda,FK Spartak Zdrepceva KRV,3,0,H
+2023-08-19,Zeleznicar Pancevo,FK Vozdovac,0,1,A
+2023-08-20,Radnik Surdulica,Novi Pazar,0,0,D
+2023-08-20,Javor,TSC Backa Topola,0,3,A
+2023-08-20,Napredak,Mladost Lucani,0,1,A
+2023-08-25,Radnicki NIS,Radnicki 1923,4,1,H
+2023-08-26,TSC Backa Topola,IMT Novi Beograd,1,0,H
+2023-08-26,FK Vozdovac,FK Crvena Zvezda,3,2,H
+2023-08-26,Mladost Lucani,Vojvodina,2,2,D
+2023-08-27,Novi Pazar,Zeleznicar Pancevo,1,0,H
+2023-08-27,FK Spartak Zdrepceva KRV,Napredak,1,3,A
+2023-08-27,Cukaricki,Radnik Surdulica,0,0,D
+2023-08-27,FK Partizan,Javor,3,1,H
+2023-09-01,Radnik Surdulica,TSC Backa Topola,0,1,A
+2023-09-02,Napredak,FK Vozdovac,2,1,H
+2023-09-02,FK Crvena Zvezda,Novi Pazar,2,1,H
+2023-09-02,Javor,Radnicki NIS,1,0,H
+2023-09-02,Vojvodina,Radnicki 1923,2,1,H
+2023-09-03,Mladost Lucani,FK Spartak Zdrepceva KRV,2,1,H
+2023-09-03,IMT Novi Beograd,FK Partizan,2,3,A
+2023-09-04,Zeleznicar Pancevo,Cukaricki,2,2,D
+2023-09-16,Cukaricki,FK Crvena Zvezda,2,1,H
+2023-09-16,TSC Backa Topola,Zeleznicar Pancevo,6,3,H
+2023-09-16,FK Vozdovac,Mladost Lucani,3,1,H
+2023-09-16,FK Spartak Zdrepceva KRV,Vojvodina,2,0,H
+2023-09-17,Radnicki 1923,Javor,2,0,H
+2023-09-17,Novi Pazar,Napredak,2,1,H
+2023-09-17,Radnicki NIS,IMT Novi Beograd,1,0,H
+2023-09-17,FK Partizan,Radnik Surdulica,3,2,H
+2023-09-21,IMT Novi Beograd,Radnicki 1923,1,0,H
+2023-09-22,Radnik Surdulica,Radnicki NIS,0,0,D
+2023-09-22,FK Spartak Zdrepceva KRV,FK Vozdovac,1,0,H
+2023-09-22,Zeleznicar Pancevo,FK Partizan,1,2,A
+2023-09-23,Mladost Lucani,Novi Pazar,2,0,H
+2023-09-23,Vojvodina,Javor,2,1,H
+2023-09-29,Vojvodina,IMT Novi Beograd,2,1,H
+2023-09-30,FK Spartak Zdrepceva KRV,Cukaricki,0,3,A
+2023-09-30,FK Crvena Zvezda,Radnicki NIS,1,0,H
+2023-09-30,Mladost Lucani,TSC Backa Topola,1,1,D
+2023-10-01,Radnik Surdulica,Javor,0,1,A
+2023-10-01,Napredak,FK Partizan,0,2,A
+2023-10-01,Zeleznicar Pancevo,Radnicki 1923,0,2,A
+2023-10-02,FK Vozdovac,Novi Pazar,1,0,H
+2023-10-06,IMT Novi Beograd,Radnik Surdulica,1,1,D
+2023-10-06,Radnicki NIS,Napredak,1,1,D
+2023-10-07,Novi Pazar,Vojvodina,3,1,H
+2023-10-07,Javor,Zeleznicar Pancevo,2,1,H
+2023-10-07,FK Partizan,Mladost Lucani,2,0,H
+2023-10-08,Radnicki 1923,FK Crvena Zvezda,3,4,A
+2023-10-08,TSC Backa Topola,FK Spartak Zdrepceva KRV,0,2,A
+2023-10-08,Cukaricki,FK Vozdovac,1,1,D
+2023-10-20,Novi Pazar,Cukaricki,1,0,H
+2023-10-20,Napredak,Radnicki 1923,1,3,A
+2023-10-20,FK Spartak Zdrepceva KRV,FK Partizan,0,3,A
+2023-10-21,FK Crvena Zvezda,Javor,3,2,H
+2023-10-21,FK Vozdovac,TSC Backa Topola,1,1,D
+2023-10-22,Mladost Lucani,Radnicki NIS,1,2,A
+2023-10-22,Vojvodina,Radnik Surdulica,3,0,H
+2023-10-23,Zeleznicar Pancevo,IMT Novi Beograd,3,1,H
+2023-10-25,Radnicki 1923,FK Partizan,0,4,A
+2023-10-27,Javor,Napredak,0,2,A
+2023-10-28,Radnik Surdulica,Zeleznicar Pancevo,0,1,A
+2023-10-28,Radnicki NIS,FK Spartak Zdrepceva KRV,1,1,D
+2023-10-28,IMT Novi Beograd,FK Crvena Zvezda,1,2,A
+2023-10-29,Radnicki 1923,Mladost Lucani,4,1,H
+2023-10-29,Cukaricki,Vojvodina,2,2,D
+2023-10-29,FK Partizan,FK Vozdovac,3,0,H
+2023-10-29,TSC Backa Topola,Novi Pazar,1,1,D
+2023-11-01,FK Crvena Zvezda,TSC Backa Topola,1,1,D
+2023-11-04,FK Crvena Zvezda,Radnik Surdulica,3,1,H
+2023-11-05,Vojvodina,Zeleznicar Pancevo,2,2,D
+2023-11-05,Cukaricki,TSC Backa Topola,0,2,A
+2023-11-05,FK Vozdovac,Radnicki NIS,1,1,D
+2023-11-06,Novi Pazar,FK Partizan,0,1,A
+2023-11-06,FK Spartak Zdrepceva KRV,Radnicki 1923,1,3,A
+2023-11-06,Napredak,IMT Novi Beograd,0,4,A
+2023-11-06,Mladost Lucani,Javor,1,0,H
+2023-11-10,Radnicki NIS,Novi Pazar,0,1,A
+2023-11-11,Radnicki 1923,FK Vozdovac,3,0,H
+2023-11-11,Radnik Surdulica,Napredak,1,2,A
+2023-11-11,Zeleznicar Pancevo,FK Crvena Zvezda,1,2,A
+2023-11-11,IMT Novi Beograd,Mladost Lucani,0,1,A
+2023-11-12,Javor,FK Spartak Zdrepceva KRV,2,0,H
+2023-11-12,FK Partizan,Cukaricki,2,1,H
+2023-11-12,TSC Backa Topola,Vojvodina,1,2,A
+2023-11-22,Napredak,Cukaricki,1,0,H
+2023-11-24,IMT Novi Beograd,FK Spartak Zdrepceva KRV,0,1,A
+2023-11-25,Radnik Surdulica,Mladost Lucani,1,1,D
+2023-11-25,Vojvodina,FK Crvena Zvezda,1,2,A
+2023-11-25,FK Partizan,TSC Backa Topola,0,4,A
+2023-11-26,Radnicki 1923,Novi Pazar,0,4,A
+2023-11-26,Radnicki NIS,Cukaricki,0,2,A
+2023-11-26,Zeleznicar Pancevo,Napredak,2,1,H
+2023-11-27,Javor,FK Vozdovac,4,0,H
+2023-12-01,Novi Pazar,Javor,2,0,H
+2023-12-01,FK Spartak Zdrepceva KRV,Radnik Surdulica,1,0,H
+2023-12-02,FK Partizan,Vojvodina,3,1,H
+2023-12-02,Mladost Lucani,Zeleznicar Pancevo,1,0,H
+2023-12-02,FK Vozdovac,IMT Novi Beograd,4,0,H
+2023-12-03,Cukaricki,Radnicki 1923,4,1,H
+2023-12-03,Napredak,FK Crvena Zvezda,0,1,A
+2023-12-03,TSC Backa Topola,Radnicki NIS,1,0,H
+2023-12-09,Radnicki 1923,TSC Backa Topola,0,0,D
+2023-12-09,FK Crvena Zvezda,Mladost Lucani,3,1,H
+2023-12-09,Zeleznicar Pancevo,FK Spartak Zdrepceva KRV,2,1,H
+2023-12-10,Radnik Surdulica,FK Vozdovac,1,1,D
+2023-12-10,Javor,Cukaricki,1,2,A
+2023-12-10,IMT Novi Beograd,Novi Pazar,1,0,H
+2023-12-11,Radnicki NIS,FK Partizan,2,1,H
+2023-12-11,Vojvodina,Napredak,2,0,H
+2023-12-15,Novi Pazar,Radnik Surdulica,2,1,H
+2023-12-15,FK Vozdovac,Zeleznicar Pancevo,5,1,H
+2023-12-16,Mladost Lucani,Napredak,1,2,A
+2023-12-16,Radnicki NIS,Vojvodina,0,1,A
+2023-12-16,FK Spartak Zdrepceva KRV,FK Crvena Zvezda,1,4,A
+2023-12-16,FK Partizan,Radnicki 1923,3,3,D
+2023-12-18,TSC Backa Topola,Javor,3,0,H
+2023-12-18,Cukaricki,IMT Novi Beograd,0,1,A
+2023-12-20,Radnicki 1923,Radnik Surdulica,1,0,H
+2023-12-20,FK Partizan,FK Crvena Zvezda,2,1,H
+2023-12-21,Novi Pazar,FK Spartak Zdrepceva KRV,0,1,A
+2023-12-21,Radnicki NIS,Zeleznicar Pancevo,1,1,D
+2023-12-21,FK Vozdovac,Vojvodina,3,2,H
+2023-12-22,Cukaricki,Mladost Lucani,3,0,H
+2023-12-22,Javor,IMT Novi Beograd,1,1,D
+2023-12-22,TSC Backa Topola,Napredak,1,1,D
+2024-02-09,Radnik Surdulica,Cukaricki,0,3,A
+2024-02-10,Zeleznicar Pancevo,Novi Pazar,2,2,D
+2024-02-10,Javor,FK Partizan,0,1,A
+2024-02-10,Vojvodina,Mladost Lucani,1,1,D
+2024-02-10,FK Crvena Zvezda,FK Vozdovac,2,1,H
+2024-02-11,Radnicki 1923,Radnicki NIS,3,2,H
+2024-02-11,IMT Novi Beograd,TSC Backa Topola,0,2,A
+2024-02-12,Napredak,FK Spartak Zdrepceva KRV,1,1,D
+2024-02-17,Novi Pazar,FK Crvena Zvezda,0,3,A
+2024-02-17,FK Partizan,IMT Novi Beograd,5,2,H
+2024-02-17,Cukaricki,Zeleznicar Pancevo,2,1,H
+2024-02-18,Radnicki 1923,Vojvodina,2,1,H
+2024-02-18,FK Spartak Zdrepceva KRV,Mladost Lucani,0,1,A
+2024-02-18,Radnicki NIS,Javor,1,0,H
+2024-02-18,TSC Backa Topola,Radnik Surdulica,1,0,H
+2024-02-19,FK Vozdovac,Napredak,1,2,A
+2024-02-23,IMT Novi Beograd,Radnicki NIS,0,3,A
+2024-02-24,Radnik Surdulica,FK Partizan,1,2,A
+2024-02-24,FK Crvena Zvezda,Cukaricki,3,0,H
+2024-02-24,Zeleznicar Pancevo,TSC Backa Topola,2,3,A
+2024-02-25,Javor,Radnicki 1923,0,3,A
+2024-02-25,Napredak,Novi Pazar,3,1,H
+2024-02-25,Vojvodina,FK Spartak Zdrepceva KRV,0,0,D
+2024-02-26,Mladost Lucani,FK Vozdovac,2,0,H
+2024-03-01,Radnicki 1923,IMT Novi Beograd,1,0,H
+2024-03-01,Cukaricki,Napredak,2,1,H
+2024-03-02,Javor,Vojvodina,2,2,D
+2024-03-02,TSC Backa Topola,FK Crvena Zvezda,1,3,A
+2024-03-02,FK Partizan,Zeleznicar Pancevo,3,1,H
+2024-03-03,Radnicki NIS,Radnik Surdulica,0,3,A
+2024-03-03,Novi Pazar,Mladost Lucani,0,0,D
+2024-03-03,FK Vozdovac,FK Spartak Zdrepceva KRV,0,2,A
+2024-03-07,IMT Novi Beograd,Javor,2,1,H
+2024-03-07,Napredak,TSC Backa Topola,0,0,D
+2024-03-08,FK Spartak Zdrepceva KRV,Novi Pazar,0,1,A
+2024-03-08,Radnik Surdulica,Radnicki 1923,0,1,A
+2024-03-08,Mladost Lucani,Cukaricki,1,0,H
+2024-03-08,Vojvodina,FK Vozdovac,2,1,H
+2024-03-09,FK Crvena Zvezda,FK Partizan,2,2,D
+2024-03-09,Zeleznicar Pancevo,Radnicki NIS,3,2,H
+2024-03-12,TSC Backa Topola,Mladost Lucani,4,1,H
+2024-03-12,Novi Pazar,FK Vozdovac,2,2,D
+2024-03-12,Cukaricki,FK Spartak Zdrepceva KRV,2,2,D
+2024-03-12,Javor,Radnik Surdulica,2,1,H
+2024-03-12,IMT Novi Beograd,Vojvodina,1,3,A
+2024-03-13,Radnicki 1923,Zeleznicar Pancevo,3,0,H
+2024-03-13,FK Partizan,Napredak,0,1,A
+2024-03-13,Radnicki NIS,FK Crvena Zvezda,0,2,A
+2024-03-16,Radnik Surdulica,IMT Novi Beograd,0,1,A
+2024-03-16,FK Vozdovac,Cukaricki,1,1,D
+2024-03-16,FK Spartak Zdrepceva KRV,TSC Backa Topola,2,4,A
+2024-03-16,Vojvodina,Novi Pazar,1,0,H
+2024-03-17,Mladost Lucani,FK Partizan,1,1,D
+2024-03-17,FK Crvena Zvezda,Radnicki 1923,5,0,H
+2024-03-17,Zeleznicar Pancevo,Javor,0,1,A
+2024-03-17,Napredak,Radnicki NIS,1,0,H
+2024-03-29,Cukaricki,Novi Pazar,2,0,H
+2024-03-29,Radnik Surdulica,Vojvodina,0,4,A
+2024-03-29,TSC Backa Topola,FK Vozdovac,2,0,H
+2024-03-29,IMT Novi Beograd,Zeleznicar Pancevo,1,1,D
+2024-03-30,Radnicki NIS,Mladost Lucani,3,0,H
+2024-03-30,Radnicki 1923,Napredak,3,1,H
+2024-03-30,Javor,FK Crvena Zvezda,0,3,A
+2024-03-30,FK Partizan,FK Spartak Zdrepceva KRV,1,0,H
+2024-04-02,Novi Pazar,TSC Backa Topola,3,4,A
+2024-04-02,Vojvodina,Cukaricki,1,1,D
+2024-04-02,Zeleznicar Pancevo,Radnik Surdulica,3,1,H
+2024-04-03,Mladost Lucani,Radnicki 1923,2,0,H
+2024-04-03,FK Vozdovac,FK Partizan,2,3,A
+2024-04-03,FK Spartak Zdrepceva KRV,Radnicki NIS,1,2,A
+2024-04-03,FK Crvena Zvezda,IMT Novi Beograd,2,0,H
+2024-04-04,Napredak,Javor,3,0,H
+2024-04-06,Zeleznicar Pancevo,Vojvodina,0,3,A
+2024-04-06,TSC Backa Topola,Cukaricki,0,0,D
+2024-04-07,Radnicki 1923,FK Spartak Zdrepceva KRV,3,1,H
+2024-04-07,Radnik Surdulica,FK Crvena Zvezda,0,2,A
+2024-04-07,Radnicki NIS,FK Vozdovac,2,1,H
+2024-04-07,FK Partizan,Novi Pazar,2,0,H
+2024-04-08,IMT Novi Beograd,Napredak,1,1,D
+2024-04-08,Javor,Mladost Lucani,1,0,H
+2024-04-14,Vojvodina,TSC Backa Topola,3,2,H
+2024-04-14,Napredak,Radnik Surdulica,0,2,A
+2024-04-14,FK Crvena Zvezda,Zeleznicar Pancevo,3,0,H
+2024-04-14,Cukaricki,FK Partizan,3,2,H
+2024-04-15,Novi Pazar,Radnicki NIS,2,2,D
+2024-04-15,Mladost Lucani,IMT Novi Beograd,1,2,A
+2024-04-15,FK Spartak Zdrepceva KRV,Javor,1,0,H
+2024-04-15,FK Vozdovac,Radnicki 1923,1,2,A
+2024-04-20,Radnicki 1923,Cukaricki,4,3,H
+2024-04-20,TSC Backa Topola,Vojvodina,3,2,H
+2024-04-20,FK Crvena Zvezda,FK Partizan,3,2,H
+2024-04-21,FK Spartak Zdrepceva KRV,Javor,1,0,H
+2024-04-21,Radnicki NIS,Radnik Surdulica,1,0,H
+2024-04-21,Novi Pazar,FK Vozdovac,0,1,A
+2024-04-22,IMT Novi Beograd,Zeleznicar Pancevo,0,0,D
+2024-04-22,Mladost Lucani,Napredak,3,1,H
+2024-04-26,FK Vozdovac,FK Spartak Zdrepceva KRV,0,0,D
+2024-04-26,Cukaricki,Mladost Lucani,4,1,H
+2024-04-27,Radnik Surdulica,Novi Pazar,1,4,A
+2024-04-27,Javor,IMT Novi Beograd,1,1,D
+2024-04-27,Zeleznicar Pancevo,Radnicki NIS,1,1,D
+2024-04-28,Vojvodina,FK Crvena Zvezda,0,0,D
+2024-04-28,Napredak,Radnicki 1923,1,4,A
+2024-04-28,FK Partizan,TSC Backa Topola,1,2,A
+2024-05-01,Radnicki NIS,FK Vozdovac,2,0,H
+2024-05-01,IMT Novi Beograd,Radnik Surdulica,5,2,H
+2024-05-01,Novi Pazar,Javor,1,0,H
+2024-05-01,FK Spartak Zdrepceva KRV,Zeleznicar Pancevo,1,1,D
+2024-05-02,Radnicki 1923,Mladost Lucani,3,2,H
+2024-05-02,FK Partizan,Vojvodina,2,3,A
+2024-05-02,Cukaricki,Napredak,2,0,H
+2024-05-02,FK Crvena Zvezda,TSC Backa Topola,2,1,H
+2024-05-07,IMT Novi Beograd,Novi Pazar,0,1,A
+2024-05-07,FK Spartak Zdrepceva KRV,Radnicki NIS,3,1,H
+2024-05-07,Radnik Surdulica,Javor,0,1,A
+2024-05-07,FK Vozdovac,Zeleznicar Pancevo,2,3,A
+2024-05-08,TSC Backa Topola,Radnicki 1923,4,3,H
+2024-05-08,Napredak,FK Partizan,3,3,D
+2024-05-08,Vojvodina,Cukaricki,2,3,A
+2024-05-08,Mladost Lucani,FK Crvena Zvezda,0,1,A
+2024-05-12,TSC Backa Topola,Cukaricki,2,0,H
+2024-05-12,FK Partizan,Mladost Lucani,3,0,H
+2024-05-12,FK Crvena Zvezda,Radnicki 1923,3,2,H
+2024-05-12,Vojvodina,Napredak,5,0,H
+2024-05-13,Novi Pazar,FK Spartak Zdrepceva KRV,0,1,A
+2024-05-13,Radnicki NIS,IMT Novi Beograd,0,0,D
+2024-05-13,Javor,FK Vozdovac,1,1,D
+2024-05-13,Zeleznicar Pancevo,Radnik Surdulica,4,0,H
+2024-05-16,Radnicki 1923,Vojvodina,0,0,D
+2024-05-16,Napredak,FK Crvena Zvezda,0,4,A
+2024-05-17,Mladost Lucani,TSC Backa Topola,2,0,H
+2024-05-17,Cukaricki,FK Partizan,0,1,A
+2024-05-18,Radnicki NIS,Javor,1,2,A
+2024-05-18,IMT Novi Beograd,FK Vozdovac,2,1,H
+2024-05-18,Zeleznicar Pancevo,Novi Pazar,3,1,H
+2024-05-18,Radnik Surdulica,FK Spartak Zdrepceva KRV,0,0,D
+2024-05-23,TSC Backa Topola,Napredak,6,0,H
+2024-05-24,FK Spartak Zdrepceva KRV,IMT Novi Beograd,1,1,D
+2024-05-24,Novi Pazar,Radnicki NIS,2,1,H
+2024-05-24,Javor,Zeleznicar Pancevo,1,1,D
+2024-05-24,FK Vozdovac,Radnik Surdulica,3,2,H
+2024-05-25,FK Partizan,Radnicki 1923,2,2,D
+2024-05-25,FK Crvena Zvezda,Cukaricki,4,1,H
+2024-05-25,Vojvodina,Mladost Lucani,1,0,H
+2024-05-29,Tekstilac Odzaci,Javor,1,0,H
+2024-05-30,Indjija,Zeleznicar Pancevo,1,2,A
+2024-06-03,Javor,Tekstilac Odzaci,1,1,D
+2024-06-03,Zeleznicar Pancevo,Indjija,2,0,H

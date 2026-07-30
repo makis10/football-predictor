@@ -1,0 +1,234 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2021-08-27,Portadown,Glenavon FC,1,1,D
+2021-08-27,Larne,Coleraine FC,4,2,H
+2021-08-28,Linfield,Crusaders FC,2,0,H
+2021-08-28,Cliftonville FC,Carrick Rangers,2,1,H
+2021-08-28,Dungannon Swifts,Glentoran,2,3,A
+2021-08-28,Warrenpoint Town,Ballymena United,2,1,H
+2021-08-31,Crusaders FC,Portadown,4,0,H
+2021-08-31,Cliftonville FC,Coleraine FC,2,1,H
+2021-08-31,Carrick Rangers,Warrenpoint Town,1,0,H
+2021-09-04,Cliftonville FC,Glentoran,1,0,H
+2021-09-04,Portadown,Larne,2,3,A
+2021-09-04,Carrick Rangers,Coleraine FC,0,3,A
+2021-09-04,Warrenpoint Town,Glenavon FC,1,6,A
+2021-09-10,Glentoran,Ballymena United,4,1,H
+2021-09-11,Crusaders FC,Cliftonville FC,1,1,D
+2021-09-11,Glenavon FC,Carrick Rangers,0,4,A
+2021-09-11,Portadown,Linfield,2,3,A
+2021-09-11,Dungannon Swifts,Coleraine FC,0,5,A
+2021-09-11,Larne,Warrenpoint Town,3,0,H
+2021-09-18,Linfield,Coleraine FC,1,1,D
+2021-09-18,Ballymena United,Glenavon FC,1,1,D
+2021-09-18,Crusaders FC,Larne,1,0,H
+2021-09-18,Carrick Rangers,Portadown,1,0,H
+2021-09-18,Dungannon Swifts,Cliftonville FC,1,3,A
+2021-09-18,Warrenpoint Town,Glentoran,0,3,A
+2021-09-25,Coleraine FC,Ballymena United,3,0,H
+2021-09-25,Cliftonville FC,Warrenpoint Town,1,0,H
+2021-09-25,Glenavon FC,Linfield,0,0,D
+2021-09-25,Portadown,Dungannon Swifts,1,4,A
+2021-09-25,Glentoran,Crusaders FC,0,3,A
+2021-09-25,Larne,Carrick Rangers,0,0,D
+2021-09-28,Ballymena United,Dungannon Swifts,4,3,H
+2021-09-28,Glenavon FC,Larne,0,1,A
+2021-09-28,Glentoran,Linfield,0,3,A
+2021-10-01,Linfield,Cliftonville FC,1,1,D
+2021-10-02,Glenavon FC,Glentoran,1,2,A
+2021-10-02,Carrick Rangers,Ballymena United,2,1,H
+2021-10-02,Dungannon Swifts,Larne,2,4,A
+2021-10-02,Warrenpoint Town,Portadown,2,3,A
+2021-10-04,Crusaders FC,Coleraine FC,0,2,A
+2021-10-08,Coleraine FC,Glenavon FC,0,0,D
+2021-10-09,Linfield,Carrick Rangers,4,0,H
+2021-10-09,Ballymena United,Crusaders FC,0,1,A
+2021-10-16,Cliftonville FC,Larne,2,1,H
+2021-10-16,Glenavon FC,Dungannon Swifts,4,2,H
+2021-10-16,Portadown,Ballymena United,0,1,A
+2021-10-16,Warrenpoint Town,Linfield,0,3,A
+2021-10-16,Glentoran,Coleraine FC,2,2,D
+2021-10-22,Dungannon Swifts,Carrick Rangers,2,0,H
+2021-10-23,Ballymena United,Cliftonville FC,1,0,H
+2021-10-23,Coleraine FC,Warrenpoint Town,2,0,H
+2021-10-23,Glentoran,Portadown,2,2,D
+2021-10-25,Larne,Linfield,1,1,D
+2021-10-29,Carrick Rangers,Glentoran,0,2,A
+2021-10-30,Linfield,Dungannon Swifts,3,0,H
+2021-10-30,Ballymena United,Larne,0,3,A
+2021-10-30,Coleraine FC,Portadown,2,0,H
+2021-10-30,Cliftonville FC,Glenavon FC,2,1,H
+2021-10-30,Warrenpoint Town,Crusaders FC,2,4,A
+2021-11-02,Cliftonville FC,Portadown,4,0,H
+2021-11-02,Larne,Glentoran,1,1,D
+2021-11-05,Larne,Crusaders FC,1,0,H
+2021-11-06,Cliftonville FC,Dungannon Swifts,3,0,H
+2021-11-06,Glenavon FC,Ballymena United,0,1,A
+2021-11-06,Portadown,Linfield,0,0,D
+2021-11-06,Carrick Rangers,Coleraine FC,0,0,D
+2021-11-06,Glentoran,Warrenpoint Town,2,1,H
+2021-11-13,Coleraine FC,Dungannon Swifts,2,0,H
+2021-11-13,Crusaders FC,Linfield,2,1,H
+2021-11-13,Portadown,Carrick Rangers,2,2,D
+2021-11-13,Glentoran,Ballymena United,4,0,H
+2021-11-13,Larne,Glenavon FC,3,2,H
+2021-11-13,Warrenpoint Town,Cliftonville FC,2,4,A
+2021-11-16,Carrick Rangers,Crusaders FC,0,2,A
+2021-11-19,Coleraine FC,Larne,3,1,H
+2021-11-20,Linfield,Cliftonville FC,1,0,H
+2021-11-20,Ballymena United,Carrick Rangers,0,1,A
+2021-11-20,Crusaders FC,Glentoran,0,1,A
+2021-11-20,Dungannon Swifts,Portadown,4,2,H
+2021-11-20,Warrenpoint Town,Glenavon FC,0,3,A
+2021-11-23,Dungannon Swifts,Crusaders FC,0,2,A
+2021-11-26,Glentoran,Dungannon Swifts,3,0,H
+2021-11-27,Ballymena United,Crusaders FC,2,0,H
+2021-11-27,Coleraine FC,Cliftonville FC,0,0,D
+2021-11-27,Portadown,Larne,2,2,D
+2021-11-27,Carrick Rangers,Warrenpoint Town,1,2,A
+2021-11-27,Glenavon FC,Linfield,0,3,A
+2021-11-30,Linfield,Carrick Rangers,2,0,H
+2021-11-30,Crusaders FC,Portadown,2,0,H
+2021-11-30,Dungannon Swifts,Glenavon FC,0,2,A
+2021-11-30,Larne,Cliftonville FC,1,1,D
+2021-11-30,Warrenpoint Town,Ballymena United,1,2,A
+2021-12-04,Coleraine FC,Linfield,1,2,A
+2021-12-04,Cliftonville FC,Ballymena United,1,0,H
+2021-12-04,Glenavon FC,Crusaders FC,1,0,H
+2021-12-04,Carrick Rangers,Dungannon Swifts,1,2,A
+2021-12-04,Glentoran,Portadown,3,1,H
+2021-12-04,Larne,Warrenpoint Town,3,0,H
+2021-12-10,Ballymena United,Larne,2,1,H
+2021-12-11,Linfield,Warrenpoint Town,1,1,D
+2021-12-11,Crusaders FC,Dungannon Swifts,4,0,H
+2021-12-11,Glenavon FC,Coleraine FC,1,0,H
+2021-12-11,Portadown,Cliftonville FC,1,1,D
+2021-12-11,Carrick Rangers,Glentoran,0,3,A
+2021-12-17,Glentoran,Glenavon FC,2,0,H
+2021-12-17,Larne,Linfield,0,1,A
+2021-12-18,Coleraine FC,Crusaders FC,0,0,D
+2021-12-18,Cliftonville FC,Carrick Rangers,2,0,H
+2021-12-18,Dungannon Swifts,Ballymena United,0,2,A
+2021-12-18,Warrenpoint Town,Portadown,0,1,A
+2021-12-21,Linfield,Ballymena United,1,0,H
+2021-12-21,Dungannon Swifts,Warrenpoint Town,2,2,D
+2021-12-22,Coleraine FC,Glentoran,0,2,A
+2021-12-27,Linfield,Glentoran,1,1,D
+2021-12-27,Ballymena United,Coleraine FC,2,1,H
+2021-12-27,Portadown,Glenavon FC,0,1,A
+2021-12-27,Carrick Rangers,Larne,1,3,A
+2022-01-01,Ballymena United,Portadown,4,0,H
+2022-01-01,Crusaders FC,Carrick Rangers,0,0,D
+2022-01-01,Glenavon FC,Cliftonville FC,0,2,A
+2022-01-01,Dungannon Swifts,Linfield,1,6,A
+2022-01-01,Glentoran,Larne,2,3,A
+2022-01-04,Cliftonville FC,Crusaders FC,0,2,A
+2022-01-11,Warrenpoint Town,Dungannon Swifts,1,2,A
+2022-01-15,Linfield,Ballymena United,1,0,H
+2022-01-15,Portadown,Coleraine FC,0,0,D
+2022-01-15,Carrick Rangers,Glenavon FC,2,2,D
+2022-01-15,Larne,Dungannon Swifts,0,1,A
+2022-01-15,Warrenpoint Town,Crusaders FC,0,1,A
+2022-01-17,Cliftonville FC,Glentoran,1,2,A
+2022-01-21,Crusaders FC,Glentoran,1,2,A
+2022-01-21,Larne,Cliftonville FC,0,1,A
+2022-01-22,Linfield,Glenavon FC,2,0,H
+2022-01-22,Ballymena United,Warrenpoint Town,1,0,H
+2022-01-22,Coleraine FC,Carrick Rangers,3,0,H
+2022-01-22,Dungannon Swifts,Portadown,3,1,H
+2022-01-25,Cliftonville FC,Linfield,2,2,D
+2022-01-25,Glenavon FC,Dungannon Swifts,3,1,H
+2022-01-25,Portadown,Crusaders FC,0,1,A
+2022-01-25,Carrick Rangers,Ballymena United,3,0,H
+2022-01-25,Glentoran,Coleraine FC,2,1,H
+2022-01-25,Warrenpoint Town,Larne,0,3,A
+2022-01-28,Ballymena United,Cliftonville FC,2,2,D
+2022-01-29,Coleraine FC,Linfield,3,0,H
+2022-01-29,Crusaders FC,Glenavon FC,0,1,A
+2022-01-29,Dungannon Swifts,Carrick Rangers,3,2,H
+2022-01-29,Glentoran,Warrenpoint Town,1,0,H
+2022-01-29,Larne,Portadown,4,0,H
+2022-02-05,Glenavon FC,Warrenpoint Town,2,2,D
+2022-02-08,Linfield,Larne,2,1,H
+2022-02-08,Coleraine FC,Dungannon Swifts,2,0,H
+2022-02-08,Portadown,Glentoran,1,1,D
+2022-02-08,Carrick Rangers,Cliftonville FC,2,3,A
+2022-02-11,Glentoran,Linfield,1,0,H
+2022-02-12,Ballymena United,Dungannon Swifts,1,0,H
+2022-02-12,Cliftonville FC,Coleraine FC,2,0,H
+2022-02-12,Glenavon FC,Portadown,3,0,H
+2022-02-12,Larne,Crusaders FC,1,2,A
+2022-02-12,Warrenpoint Town,Carrick Rangers,4,2,H
+2022-02-15,Crusaders FC,Glenavon FC,0,0,D
+2022-02-15,Coleraine FC,Warrenpoint Town,2,1,H
+2022-02-18,Larne,Glentoran,2,1,H
+2022-02-19,Linfield,Portadown,1,0,H
+2022-02-19,Ballymena United,Glenavon FC,3,3,D
+2022-02-19,Crusaders FC,Carrick Rangers,2,1,H
+2022-02-22,Cliftonville FC,Warrenpoint Town,1,0,H
+2022-02-26,Coleraine FC,Ballymena United,1,1,D
+2022-02-26,Cliftonville FC,Crusaders FC,3,1,H
+2022-02-26,Glenavon FC,Glentoran,2,4,A
+2022-02-26,Portadown,Warrenpoint Town,1,0,H
+2022-02-26,Dungannon Swifts,Larne,0,2,A
+2022-03-01,Coleraine FC,Larne,1,1,D
+2022-03-04,Carrick Rangers,Linfield,1,2,A
+2022-03-08,Ballymena United,Linfield,0,2,A
+2022-03-08,Crusaders FC,Coleraine FC,1,0,H
+2022-03-08,Carrick Rangers,Portadown,2,2,D
+2022-03-08,Glentoran,Cliftonville FC,0,1,A
+2022-03-08,Larne,Glenavon FC,1,1,D
+2022-03-08,Warrenpoint Town,Dungannon Swifts,2,3,A
+2022-03-11,Linfield,Crusaders FC,3,2,H
+2022-03-12,Glenavon FC,Carrick Rangers,2,0,H
+2022-03-12,Portadown,Ballymena United,1,0,H
+2022-03-12,Dungannon Swifts,Glentoran,0,1,A
+2022-03-15,Crusaders FC,Ballymena United,2,1,H
+2022-03-18,Carrick Rangers,Larne,1,1,D
+2022-03-19,Linfield,Dungannon Swifts,5,0,H
+2022-03-19,Ballymena United,Glentoran,1,1,D
+2022-03-19,Crusaders FC,Warrenpoint Town,2,1,H
+2022-03-19,Glenavon FC,Cliftonville FC,0,2,A
+2022-03-19,Portadown,Coleraine FC,2,0,H
+2022-03-22,Dungannon Swifts,Cliftonville FC,0,1,A
+2022-03-22,Warrenpoint Town,Coleraine FC,2,5,A
+2022-03-25,Larne,Ballymena United,1,3,A
+2022-03-26,Warrenpoint Town,Linfield,1,2,A
+2022-03-26,Coleraine FC,Glenavon FC,2,3,A
+2022-03-26,Dungannon Swifts,Crusaders FC,2,4,A
+2022-03-28,Glentoran,Carrick Rangers,6,2,H
+2022-04-05,Portadown,Cliftonville FC,0,2,A
+2022-04-08,Larne,Coleraine FC,3,0,H
+2022-04-09,Glenavon FC,Ballymena United,3,1,H
+2022-04-09,Portadown,Warrenpoint Town,0,1,A
+2022-04-09,Carrick Rangers,Dungannon Swifts,1,0,H
+2022-04-09,Glentoran,Crusaders FC,0,4,A
+2022-04-09,Cliftonville FC,Linfield,0,0,D
+2022-04-15,Linfield,Glentoran,1,1,D
+2022-04-16,Ballymena United,Portadown,2,1,H
+2022-04-16,Coleraine FC,Crusaders FC,1,4,A
+2022-04-16,Cliftonville FC,Larne,0,0,D
+2022-04-16,Dungannon Swifts,Glenavon FC,3,2,H
+2022-04-16,Warrenpoint Town,Carrick Rangers,1,2,A
+2022-04-19,Ballymena United,Warrenpoint Town,0,1,A
+2022-04-19,Coleraine FC,Cliftonville FC,1,2,A
+2022-04-19,Crusaders FC,Linfield,1,2,A
+2022-04-19,Portadown,Dungannon Swifts,0,0,D
+2022-04-19,Carrick Rangers,Glenavon FC,0,1,A
+2022-04-19,Glentoran,Larne,0,0,D
+2022-04-23,Ballymena United,Carrick Rangers,3,0,H
+2022-04-23,Coleraine FC,Glentoran,3,2,H
+2022-04-23,Glenavon FC,Portadown,1,0,H
+2022-04-23,Dungannon Swifts,Warrenpoint Town,2,0,H
+2022-04-23,Linfield,Larne,0,0,D
+2022-04-23,Crusaders FC,Cliftonville FC,3,3,D
+2022-04-30,Linfield,Coleraine FC,2,0,H
+2022-04-30,Crusaders FC,Larne,1,2,A
+2022-04-30,Glenavon FC,Warrenpoint Town,1,2,A
+2022-04-30,Portadown,Carrick Rangers,0,5,A
+2022-04-30,Dungannon Swifts,Ballymena United,1,2,A
+2022-04-30,Glentoran,Cliftonville FC,1,2,A
+2022-05-03,Annagh United,Portadown,2,3,A
+2022-05-06,Portadown,Annagh United,1,0,H
+2022-05-10,Glentoran,Glenavon FC,2,0,H
+2022-05-10,Larne,Coleraine FC,2,0,H
+2022-05-13,Glentoran,Larne,2,4,A

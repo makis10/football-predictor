@@ -1,0 +1,199 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2022-07-15,Posusje,Velez,1,1,D
+2022-07-16,Igman Konjic,Siroki Brijeg,0,1,A
+2022-07-16,Zeljeznicar Sarajevo,Leotar,1,1,D
+2022-07-18,Sloga Doboj,Borac Banja Luka,2,2,D
+2022-07-23,Sloga Doboj,Leotar,4,0,H
+2022-07-24,Borac Banja Luka,FK Sarajevo,1,3,A
+2022-07-24,Siroki Brijeg,Sloboda Tuzla,2,0,H
+2022-07-24,Zrinjski,Zeljeznicar Sarajevo,1,2,A
+2022-07-30,Posusje,Borac Banja Luka,0,2,A
+2022-07-30,FK Sarajevo,Sloga Doboj,4,2,H
+2022-07-31,Zeljeznicar Sarajevo,Siroki Brijeg,1,1,D
+2022-07-31,Zrinjski,Leotar,4,1,H
+2022-08-05,Velez,Zeljeznicar Sarajevo,3,1,H
+2022-08-06,Borac Banja Luka,Igman Konjic,1,0,H
+2022-08-06,FK Sarajevo,Posusje,1,0,H
+2022-08-07,Tuzla City,Sloboda Tuzla,0,0,D
+2022-08-07,Siroki Brijeg,Leotar,1,0,H
+2022-08-10,FK Sarajevo,Tuzla City,1,5,A
+2022-08-12,Leotar,Velez,1,0,H
+2022-08-13,Sloboda Tuzla,Borac Banja Luka,2,0,H
+2022-08-13,Posusje,Sloga Doboj,3,2,H
+2022-08-13,Zeljeznicar Sarajevo,Tuzla City,4,2,H
+2022-08-14,Igman Konjic,FK Sarajevo,2,0,H
+2022-08-17,Tuzla City,Posusje,3,0,H
+2022-08-17,Velez,Igman Konjic,1,1,D
+2022-08-19,FK Sarajevo,Sloboda Tuzla,1,1,D
+2022-08-20,Borac Banja Luka,Zeljeznicar Sarajevo,2,1,H
+2022-08-20,Tuzla City,Leotar,4,1,H
+2022-08-20,Sloga Doboj,Siroki Brijeg,1,1,D
+2022-08-21,Posusje,Igman Konjic,2,2,D
+2022-08-26,Borac Banja Luka,Leotar,0,1,A
+2022-08-26,Zeljeznicar Sarajevo,FK Sarajevo,2,2,D
+2022-08-27,Igman Konjic,Sloga Doboj,0,2,A
+2022-08-27,Sloboda Tuzla,Posusje,0,1,A
+2022-08-27,Siroki Brijeg,Velez,0,0,D
+2022-08-30,Sloga Doboj,Velez,3,0,H
+2022-08-30,FK Sarajevo,Leotar,3,0,H
+2022-08-31,Borac Banja Luka,Zrinjski,1,0,H
+2022-08-31,Tuzla City,Siroki Brijeg,4,1,H
+2022-08-31,Igman Konjic,Sloboda Tuzla,0,0,D
+2022-08-31,Posusje,Zeljeznicar Sarajevo,1,2,A
+2022-09-03,Sloboda Tuzla,Sloga Doboj,4,2,H
+2022-09-04,Leotar,Posusje,0,1,A
+2022-09-04,Zrinjski,FK Sarajevo,4,1,H
+2022-09-04,Siroki Brijeg,Borac Banja Luka,2,0,H
+2022-09-05,Velez,Tuzla City,4,0,H
+2022-09-05,Zeljeznicar Sarajevo,Igman Konjic,1,0,H
+2022-09-07,Sloboda Tuzla,Zrinjski,0,1,A
+2022-09-10,Sloboda Tuzla,Zeljeznicar Sarajevo,1,1,D
+2022-09-10,Borac Banja Luka,Velez,0,0,D
+2022-09-10,Sloga Doboj,Tuzla City,0,3,A
+2022-09-11,Igman Konjic,Leotar,3,1,H
+2022-09-11,Posusje,Zrinjski,0,1,A
+2022-09-11,FK Sarajevo,Siroki Brijeg,0,0,D
+2022-09-14,Sloboda Tuzla,Velez,1,1,D
+2022-09-14,Igman Konjic,Tuzla City,3,2,H
+2022-09-14,Sloga Doboj,Zrinjski,1,0,H
+2022-09-17,Tuzla City,Borac Banja Luka,0,1,A
+2022-09-18,Leotar,Sloboda Tuzla,0,0,D
+2022-09-18,Zrinjski,Igman Konjic,4,0,H
+2022-09-18,Zeljeznicar Sarajevo,Sloga Doboj,1,0,H
+2022-09-18,Siroki Brijeg,Posusje,1,0,H
+2022-09-19,Velez,FK Sarajevo,1,1,D
+2022-09-30,Tuzla City,FK Sarajevo,1,0,H
+2022-09-30,Velez,Posusje,1,1,D
+2022-09-30,Zrinjski,Sloboda Tuzla,1,0,H
+2022-10-01,Borac Banja Luka,Sloga Doboj,2,1,H
+2022-10-01,Leotar,Zeljeznicar Sarajevo,0,1,A
+2022-10-01,Siroki Brijeg,Igman Konjic,3,2,H
+2022-10-05,Zrinjski,Siroki Brijeg,3,0,H
+2022-10-07,Igman Konjic,Velez,0,1,A
+2022-10-08,Sloboda Tuzla,Siroki Brijeg,0,3,A
+2022-10-08,Leotar,Sloga Doboj,4,1,H
+2022-10-08,Zeljeznicar Sarajevo,Zrinjski,0,1,A
+2022-10-08,FK Sarajevo,Borac Banja Luka,1,0,H
+2022-10-09,Posusje,Tuzla City,3,0,H
+2022-10-12,Zrinjski,Velez,1,0,H
+2022-10-14,Borac Banja Luka,Posusje,2,1,H
+2022-10-14,Sloga Doboj,FK Sarajevo,1,0,H
+2022-10-15,Tuzla City,Igman Konjic,2,3,A
+2022-10-15,Siroki Brijeg,Zeljeznicar Sarajevo,1,0,H
+2022-10-16,Leotar,Zrinjski,1,1,D
+2022-10-16,Velez,Sloboda Tuzla,1,0,H
+2022-10-22,Igman Konjic,Borac Banja Luka,0,0,D
+2022-10-22,Leotar,Siroki Brijeg,1,0,H
+2022-10-22,Zrinjski,Sloga Doboj,3,0,H
+2022-10-22,Zeljeznicar Sarajevo,Velez,2,0,H
+2022-10-23,Sloboda Tuzla,Tuzla City,0,0,D
+2022-10-23,Posusje,FK Sarajevo,0,1,A
+2022-10-26,Zrinjski,Tuzla City,0,0,D
+2022-10-29,Velez,Leotar,1,0,H
+2022-10-29,Sloga Doboj,Posusje,0,1,A
+2022-10-29,Borac Banja Luka,Sloboda Tuzla,3,1,H
+2022-10-30,Siroki Brijeg,Zrinjski,1,1,D
+2022-10-30,FK Sarajevo,Igman Konjic,3,1,H
+2022-10-31,Tuzla City,Zeljeznicar Sarajevo,1,2,A
+2022-11-05,Sloboda Tuzla,FK Sarajevo,2,0,H
+2022-11-06,Igman Konjic,Posusje,0,0,D
+2022-11-06,Leotar,Tuzla City,4,0,H
+2022-11-06,Siroki Brijeg,Sloga Doboj,3,0,H
+2022-11-06,Zeljeznicar Sarajevo,Borac Banja Luka,1,2,A
+2022-11-12,Velez,Siroki Brijeg,4,4,D
+2022-11-13,Tuzla City,Zrinjski,1,2,A
+2022-11-13,Posusje,Sloboda Tuzla,2,1,H
+2022-11-13,Sloga Doboj,Igman Konjic,3,2,H
+2022-11-14,Leotar,Borac Banja Luka,0,1,A
+2022-11-19,Velez,Sloga Doboj,2,2,D
+2022-11-19,Siroki Brijeg,Tuzla City,1,0,H
+2022-11-19,Zeljeznicar Sarajevo,Posusje,1,1,D
+2022-11-20,Sloboda Tuzla,Igman Konjic,5,1,H
+2022-11-20,Leotar,FK Sarajevo,2,0,H
+2022-11-20,Zrinjski,Borac Banja Luka,1,0,H
+2023-02-24,Borac Banja Luka,Siroki Brijeg,1,0,H
+2023-02-25,Igman Konjic,Zeljeznicar Sarajevo,3,1,H
+2023-02-25,Sloga Doboj,Sloboda Tuzla,2,2,D
+2023-02-26,Tuzla City,Velez,0,1,A
+2023-02-26,Posusje,Leotar,1,1,D
+2023-02-26,FK Sarajevo,Zrinjski,0,2,A
+2023-03-04,Leotar,Igman Konjic,1,1,D
+2023-03-04,Zeljeznicar Sarajevo,Sloboda Tuzla,1,0,H
+2023-03-04,Velez,Borac Banja Luka,1,0,H
+2023-03-05,Zrinjski,Posusje,5,0,H
+2023-03-05,Tuzla City,Sloga Doboj,0,0,D
+2023-03-05,Siroki Brijeg,FK Sarajevo,1,3,A
+2023-03-08,FK Sarajevo,Zeljeznicar Sarajevo,0,0,D
+2023-03-08,Velez,Zrinjski,1,3,A
+2023-03-11,Sloboda Tuzla,Leotar,2,1,H
+2023-03-11,Igman Konjic,Zrinjski,0,3,A
+2023-03-11,Borac Banja Luka,Tuzla City,3,0,H
+2023-03-12,Posusje,Siroki Brijeg,0,1,A
+2023-03-12,FK Sarajevo,Velez,0,1,A
+2023-03-12,Sloga Doboj,Zeljeznicar Sarajevo,0,1,A
+2023-03-18,Zrinjski,Igman Konjic,2,1,H
+2023-03-18,Borac Banja Luka,Leotar,2,0,H
+2023-03-19,Zeljeznicar Sarajevo,Sloga Doboj,4,1,H
+2023-03-19,Siroki Brijeg,Tuzla City,1,1,D
+2023-03-19,Velez,Sloboda Tuzla,0,0,D
+2023-03-20,FK Sarajevo,Posusje,3,1,H
+2023-03-31,Tuzla City,Borac Banja Luka,2,2,D
+2023-04-01,Zrinjski,Siroki Brijeg,3,1,H
+2023-04-01,Igman Konjic,Posusje,3,0,H
+2023-04-01,Leotar,Zeljeznicar Sarajevo,1,0,H
+2023-04-02,Sloga Doboj,Velez,0,2,A
+2023-04-02,Sloboda Tuzla,FK Sarajevo,2,3,A
+2023-04-07,FK Sarajevo,Sloga Doboj,1,1,D
+2023-04-08,Posusje,Sloboda Tuzla,2,0,H
+2023-04-08,Velez,Leotar,2,0,H
+2023-04-08,Borac Banja Luka,Zrinjski,0,3,A
+2023-04-08,Zeljeznicar Sarajevo,Tuzla City,0,1,A
+2023-04-10,Siroki Brijeg,Igman Konjic,0,0,D
+2023-04-14,Zrinjski,Zeljeznicar Sarajevo,2,0,H
+2023-04-14,Tuzla City,Velez,1,1,D
+2023-04-15,Igman Konjic,Sloboda Tuzla,1,1,D
+2023-04-15,Leotar,FK Sarajevo,0,3,A
+2023-04-15,Sloga Doboj,Posusje,2,0,H
+2023-04-15,Siroki Brijeg,Borac Banja Luka,2,3,A
+2023-04-22,Sloboda Tuzla,Sloga Doboj,0,1,A
+2023-04-22,Zeljeznicar Sarajevo,Siroki Brijeg,1,0,H
+2023-04-23,Posusje,Leotar,1,0,H
+2023-04-23,FK Sarajevo,Tuzla City,1,0,H
+2023-04-23,Velez,Zrinjski,0,1,A
+2023-04-24,Borac Banja Luka,Igman Konjic,1,0,H
+2023-04-26,Zrinjski,FK Sarajevo,2,3,A
+2023-04-26,Tuzla City,Posusje,3,1,H
+2023-04-26,Leotar,Sloboda Tuzla,0,0,D
+2023-04-26,Siroki Brijeg,Velez,1,0,H
+2023-04-27,Igman Konjic,Sloga Doboj,3,0,H
+2023-04-27,Borac Banja Luka,Zeljeznicar Sarajevo,2,0,H
+2023-04-29,FK Sarajevo,Siroki Brijeg,2,1,H
+2023-04-30,Sloga Doboj,Leotar,1,1,D
+2023-04-30,Posusje,Zrinjski,0,2,A
+2023-04-30,Sloboda Tuzla,Tuzla City,1,0,H
+2023-05-01,Velez,Borac Banja Luka,2,0,H
+2023-05-02,Zeljeznicar Sarajevo,Igman Konjic,1,1,D
+2023-05-06,Zrinjski,Sloboda Tuzla,4,1,H
+2023-05-06,Tuzla City,Sloga Doboj,1,2,A
+2023-05-06,Siroki Brijeg,Posusje,1,1,D
+2023-05-07,Igman Konjic,Leotar,2,0,H
+2023-05-07,Zeljeznicar Sarajevo,Velez,2,1,H
+2023-05-07,Borac Banja Luka,FK Sarajevo,1,0,H
+2023-05-12,Sloga Doboj,Zrinjski,1,3,A
+2023-05-12,Velez,Igman Konjic,3,3,D
+2023-05-12,FK Sarajevo,Zeljeznicar Sarajevo,2,2,D
+2023-05-13,Leotar,Tuzla City,3,2,H
+2023-05-14,Posusje,Borac Banja Luka,1,0,H
+2023-05-15,Sloboda Tuzla,Siroki Brijeg,2,1,H
+2023-05-21,Zrinjski,Leotar,2,1,H
+2023-05-21,Siroki Brijeg,Sloga Doboj,1,0,H
+2023-05-21,Zeljeznicar Sarajevo,Posusje,3,0,H
+2023-05-21,Borac Banja Luka,Sloboda Tuzla,3,2,H
+2023-05-21,Igman Konjic,Tuzla City,0,1,A
+2023-05-21,Velez,FK Sarajevo,3,5,A
+2023-05-28,FK Sarajevo,Igman Konjic,2,4,A
+2023-05-28,Sloboda Tuzla,Zeljeznicar Sarajevo,1,2,A
+2023-05-28,Tuzla City,Zrinjski,3,0,H
+2023-05-28,Leotar,Siroki Brijeg,2,1,H
+2023-05-28,Sloga Doboj,Borac Banja Luka,2,1,H
+2023-05-28,Posusje,Velez,2,1,H

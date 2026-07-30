@@ -1,0 +1,241 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2018-10-27,Trikala,Doxa Dramas,2,3,A
+2018-10-27,Sparti,Kissamikos,1,1,D
+2018-10-27,Iraklis,Irodotos,1,0,H
+2018-10-27,Platanias,Aittitos Spaton,2,1,H
+2018-10-27,Volos NFC,AE Karaiskakis,7,0,H
+2018-10-28,Apollon Larissa FC,AOK Kerkyra,2,0,H
+2018-10-28,Ergotelis,Apollon Pontou,2,0,H
+2018-10-28,Panachaiki FC,Aiginiakos,2,2,D
+2018-11-03,AE Karaiskakis,Platanias,0,1,A
+2018-11-04,Kissamikos,Ergotelis,1,2,A
+2018-11-04,Aiginiakos,Apollon Larissa FC,0,4,A
+2018-11-04,Apollon Pontou,Trikala,1,0,H
+2018-11-04,Doxa Dramas,Volos NFC,0,3,A
+2018-11-04,Irodotos,Aittitos Spaton,1,0,H
+2018-11-04,AOK Kerkyra,Iraklis,1,0,H
+2018-11-05,Panachaiki FC,Sparti,1,0,H
+2018-11-10,Sparti,Ergotelis,0,2,A
+2018-11-10,Volos NFC,Apollon Pontou,2,0,H
+2018-11-11,Platanias,Doxa Dramas,0,0,D
+2018-11-11,Trikala,Kissamikos,2,0,H
+2018-11-11,Apollon Larissa FC,Panachaiki FC,1,0,H
+2018-11-11,Irodotos,AE Karaiskakis,2,0,H
+2018-11-11,Aittitos Spaton,AOK Kerkyra,0,0,D
+2018-11-11,Iraklis,Aiginiakos,1,1,D
+2018-11-17,Kissamikos,Volos NFC,1,2,A
+2018-11-17,Apollon Pontou,Platanias,0,1,A
+2018-11-17,Doxa Dramas,Irodotos,2,3,A
+2018-11-17,Ergotelis,Trikala,3,0,H
+2018-11-18,Aiginiakos,Aittitos Spaton,1,2,A
+2018-11-18,Apollon Larissa FC,Sparti,1,1,D
+2018-11-18,Panachaiki FC,Iraklis,1,0,H
+2018-11-18,AOK Kerkyra,AE Karaiskakis,0,1,A
+2018-11-21,Platanias,Kissamikos,0,0,D
+2018-11-21,Sparti,Trikala,2,0,H
+2018-11-21,AE Karaiskakis,Aiginiakos,4,0,H
+2018-11-21,Irodotos,Apollon Pontou,0,1,A
+2018-11-21,Aittitos Spaton,Panachaiki FC,1,1,D
+2018-11-21,Volos NFC,Ergotelis,1,1,D
+2018-11-21,AOK Kerkyra,Doxa Dramas,3,0,H
+2018-11-22,Iraklis,Apollon Larissa FC,3,4,A
+2018-11-24,Kissamikos,Irodotos,2,0,H
+2018-11-25,Trikala,Volos NFC,0,1,A
+2018-11-25,Aiginiakos,Doxa Dramas,1,3,A
+2018-11-25,Apollon Larissa FC,Aittitos Spaton,2,0,H
+2018-11-25,Apollon Pontou,AOK Kerkyra,0,2,A
+2018-11-25,Ergotelis,Platanias,2,2,D
+2018-11-25,Panachaiki FC,AE Karaiskakis,0,0,D
+2018-11-25,Iraklis,Sparti,3,0,H
+2018-12-01,Platanias,Trikala,2,0,H
+2018-12-01,Aiginiakos,Apollon Pontou,2,2,D
+2018-12-02,Sparti,Volos NFC,1,3,A
+2018-12-02,AE Karaiskakis,Apollon Larissa FC,0,1,A
+2018-12-02,Doxa Dramas,Panachaiki FC,1,1,D
+2018-12-02,Irodotos,Ergotelis,1,0,H
+2018-12-02,Aittitos Spaton,Iraklis,0,3,A
+2018-12-02,AOK Kerkyra,Kissamikos,1,0,H
+2018-12-08,Ergotelis,AOK Kerkyra,1,2,A
+2018-12-09,Volos NFC,Platanias,3,1,H
+2018-12-09,Kissamikos,Aiginiakos,2,3,A
+2018-12-09,Trikala,Irodotos,2,0,H
+2018-12-09,Apollon Larissa FC,Doxa Dramas,0,0,D
+2018-12-09,Panachaiki FC,Apollon Pontou,1,1,D
+2018-12-09,Aittitos Spaton,Sparti,0,0,D
+2018-12-09,Iraklis,AE Karaiskakis,0,1,A
+2018-12-15,Aiginiakos,Ergotelis,1,0,H
+2018-12-15,Doxa Dramas,Iraklis,2,0,H
+2018-12-15,Irodotos,Volos NFC,0,2,A
+2018-12-15,AOK Kerkyra,Trikala,1,1,D
+2018-12-16,Kissamikos,Panachaiki FC,0,0,D
+2018-12-16,Sparti,Platanias,0,0,D
+2018-12-16,Apollon Pontou,Apollon Larissa FC,1,0,H
+2018-12-16,AE Karaiskakis,Aittitos Spaton,1,0,H
+2018-12-22,Platanias,Irodotos,5,1,H
+2018-12-23,Apollon Larissa FC,Kissamikos,0,3,A
+2018-12-23,Trikala,Aiginiakos,2,0,H
+2018-12-23,AE Karaiskakis,Sparti,0,0,D
+2018-12-23,Ergotelis,Panachaiki FC,2,1,H
+2018-12-23,Aittitos Spaton,Doxa Dramas,2,0,H
+2018-12-23,Iraklis,Apollon Pontou,0,2,A
+2018-12-23,Volos NFC,AOK Kerkyra,2,1,H
+2019-01-05,Kissamikos,Iraklis,0,1,A
+2019-01-05,Ergotelis,Apollon Larissa FC,1,2,A
+2019-01-05,Panachaiki FC,Trikala,2,1,H
+2019-01-06,Sparti,Irodotos,3,0,H
+2019-01-06,AOK Kerkyra,Platanias,1,0,H
+2019-01-12,Irodotos,AOK Kerkyra,0,2,A
+2019-01-13,Platanias,Aiginiakos,3,0,H
+2019-01-13,AE Karaiskakis,Apollon Pontou,0,2,A
+2019-01-13,Doxa Dramas,Sparti,2,0,H
+2019-01-13,Aittitos Spaton,Kissamikos,0,1,A
+2019-01-13,Iraklis,Ergotelis,2,1,H
+2019-01-13,Volos NFC,Panachaiki FC,2,1,H
+2019-01-19,Kissamikos,AE Karaiskakis,1,0,H
+2019-01-19,Apollon Larissa FC,Volos NFC,1,1,D
+2019-01-19,Ergotelis,Aittitos Spaton,3,1,H
+2019-01-19,Panachaiki FC,Platanias,1,0,H
+2019-01-20,Aiginiakos,Irodotos,0,1,A
+2019-01-20,Trikala,Iraklis,0,0,D
+2019-01-20,Sparti,AOK Kerkyra,1,2,A
+2019-01-20,Apollon Pontou,Doxa Dramas,0,0,D
+2019-01-26,Platanias,Apollon Larissa FC,0,0,D
+2019-01-26,Volos NFC,Iraklis,0,2,A
+2019-01-27,Apollon Pontou,Sparti,1,0,H
+2019-01-27,AE Karaiskakis,Ergotelis,1,0,H
+2019-01-27,Doxa Dramas,Kissamikos,1,0,H
+2019-01-27,Aittitos Spaton,Trikala,1,1,D
+2019-01-27,AOK Kerkyra,Aiginiakos,1,0,H
+2019-01-28,Irodotos,Panachaiki FC,0,1,A
+2019-01-30,Trikala,Apollon Larissa FC,1,1,D
+2019-01-30,Aiginiakos,Volos NFC,1,4,A
+2019-01-30,Apollon Pontou,Aittitos Spaton,0,1,A
+2019-01-30,Doxa Dramas,AE Karaiskakis,2,0,H
+2019-02-02,Iraklis,Platanias,2,2,D
+2019-02-03,Kissamikos,Apollon Pontou,1,0,H
+2019-02-03,Trikala,AE Karaiskakis,0,0,D
+2019-02-03,Sparti,Aiginiakos,1,0,H
+2019-02-03,Apollon Larissa FC,Irodotos,1,1,D
+2019-02-03,Ergotelis,Doxa Dramas,2,0,H
+2019-02-03,Panachaiki FC,AOK Kerkyra,1,0,H
+2019-02-03,Volos NFC,Aittitos Spaton,3,1,H
+2019-02-09,Doxa Dramas,Trikala,1,2,A
+2019-02-10,Kissamikos,Sparti,4,1,H
+2019-02-10,Aiginiakos,Panachaiki FC,0,0,D
+2019-02-10,AE Karaiskakis,Volos NFC,0,1,A
+2019-02-10,Irodotos,Iraklis,1,1,D
+2019-02-10,Aittitos Spaton,Platanias,0,0,D
+2019-02-10,AOK Kerkyra,Apollon Larissa FC,1,2,A
+2019-02-11,Apollon Pontou,Ergotelis,3,0,H
+2019-02-16,Ergotelis,Kissamikos,1,0,H
+2019-02-17,Platanias,AE Karaiskakis,2,0,H
+2019-02-17,Trikala,Apollon Pontou,0,1,A
+2019-02-17,Sparti,Panachaiki FC,2,3,A
+2019-02-17,Apollon Larissa FC,Aiginiakos,3,2,H
+2019-02-17,Aittitos Spaton,Irodotos,1,1,D
+2019-02-17,Iraklis,AOK Kerkyra,1,1,D
+2019-02-17,Volos NFC,Doxa Dramas,2,1,H
+2019-02-23,Ergotelis,Sparti,1,1,D
+2019-02-23,Panachaiki FC,Apollon Larissa FC,1,0,H
+2019-02-23,Doxa Dramas,Platanias,2,2,D
+2019-02-24,Kissamikos,Trikala,1,0,H
+2019-02-24,Aiginiakos,Iraklis,1,0,H
+2019-02-24,Apollon Pontou,Volos NFC,1,0,H
+2019-02-24,AE Karaiskakis,Irodotos,1,0,H
+2019-02-24,AOK Kerkyra,Aittitos Spaton,0,2,A
+2019-03-02,Volos NFC,Kissamikos,1,4,A
+2019-03-02,Platanias,Apollon Pontou,3,1,H
+2019-03-02,Trikala,Ergotelis,1,1,D
+2019-03-02,Irodotos,Doxa Dramas,0,0,D
+2019-03-03,Sparti,Apollon Larissa FC,0,2,A
+2019-03-03,AE Karaiskakis,AOK Kerkyra,1,1,D
+2019-03-03,Aittitos Spaton,Aiginiakos,1,0,H
+2019-03-03,Iraklis,Panachaiki FC,0,0,D
+2019-03-06,Apollon Pontou,Irodotos,3,0,H
+2019-03-06,Trikala,Sparti,1,0,H
+2019-03-06,Aiginiakos,AE Karaiskakis,1,2,A
+2019-03-06,Apollon Larissa FC,Iraklis,1,0,H
+2019-03-06,Doxa Dramas,AOK Kerkyra,0,1,A
+2019-03-06,Ergotelis,Volos NFC,2,0,H
+2019-03-06,Panachaiki FC,Aittitos Spaton,2,1,H
+2019-03-07,Kissamikos,Platanias,2,2,D
+2019-03-09,AE Karaiskakis,Panachaiki FC,0,1,A
+2019-03-10,Platanias,Ergotelis,1,0,H
+2019-03-10,Sparti,Iraklis,0,1,A
+2019-03-10,Doxa Dramas,Aiginiakos,2,0,H
+2019-03-10,Irodotos,Kissamikos,2,1,H
+2019-03-10,Aittitos Spaton,Apollon Larissa FC,2,2,D
+2019-03-10,Volos NFC,Trikala,1,1,D
+2019-03-10,AOK Kerkyra,Apollon Pontou,0,2,A
+2019-03-16,Kissamikos,AOK Kerkyra,1,0,H
+2019-03-16,Trikala,Platanias,1,0,H
+2019-03-17,Apollon Larissa FC,AE Karaiskakis,0,1,A
+2019-03-17,Apollon Pontou,Aiginiakos,1,0,H
+2019-03-17,Panachaiki FC,Doxa Dramas,2,2,D
+2019-03-17,Iraklis,Aittitos Spaton,2,1,H
+2019-03-17,Volos NFC,Sparti,3,0,H
+2019-03-17,Ergotelis,Irodotos,4,1,H
+2019-03-23,Platanias,Volos NFC,0,0,D
+2019-03-23,Sparti,Aittitos Spaton,3,0,H
+2019-03-23,Aiginiakos,Kissamikos,0,4,A
+2019-03-23,Irodotos,Trikala,1,0,H
+2019-03-23,AOK Kerkyra,Ergotelis,2,1,H
+2019-03-24,Apollon Pontou,Panachaiki FC,0,0,D
+2019-03-24,AE Karaiskakis,Iraklis,1,0,H
+2019-03-24,Doxa Dramas,Apollon Larissa FC,2,0,H
+2019-03-27,Volos NFC,Irodotos,5,0,H
+2019-03-27,Platanias,Sparti,7,0,H
+2019-03-27,Trikala,AOK Kerkyra,1,0,H
+2019-03-27,Apollon Larissa FC,Apollon Pontou,3,1,H
+2019-03-27,Ergotelis,Aiginiakos,4,1,H
+2019-03-27,Panachaiki FC,Kissamikos,1,3,A
+2019-03-27,Aittitos Spaton,AE Karaiskakis,0,3,A
+2019-03-28,Iraklis,Doxa Dramas,0,0,D
+2019-03-30,Irodotos,Platanias,0,4,A
+2019-03-31,AOK Kerkyra,Volos NFC,1,1,D
+2019-03-31,Kissamikos,Apollon Larissa FC,1,1,D
+2019-03-31,Sparti,AE Karaiskakis,0,4,A
+2019-03-31,Aiginiakos,Trikala,2,1,H
+2019-03-31,Apollon Pontou,Iraklis,0,1,A
+2019-03-31,Doxa Dramas,Aittitos Spaton,3,0,H
+2019-03-31,Panachaiki FC,Ergotelis,0,1,A
+2019-04-06,Iraklis,Kissamikos,0,0,D
+2019-04-07,Platanias,AOK Kerkyra,2,0,H
+2019-04-07,Trikala,Panachaiki FC,0,0,D
+2019-04-07,Apollon Larissa FC,Ergotelis,2,2,D
+2019-04-07,AE Karaiskakis,Doxa Dramas,0,0,D
+2019-04-07,Irodotos,Sparti,4,1,H
+2019-04-07,Aittitos Spaton,Apollon Pontou,0,3,A
+2019-04-07,Volos NFC,Aiginiakos,6,0,H
+2019-04-13,Aiginiakos,Platanias,0,5,A
+2019-04-13,Panachaiki FC,Volos NFC,1,1,D
+2019-04-13,AOK Kerkyra,Irodotos,2,0,H
+2019-04-13,Sparti,Doxa Dramas,0,7,A
+2019-04-13,Ergotelis,Iraklis,1,1,D
+2019-04-13,Kissamikos,Aittitos Spaton,3,0,H
+2019-04-14,Apollon Larissa FC,Trikala,3,1,H
+2019-04-14,Apollon Pontou,AE Karaiskakis,2,1,H
+2019-04-17,Platanias,Panachaiki FC,4,3,H
+2019-04-17,AE Karaiskakis,Kissamikos,0,0,D
+2019-04-17,Irodotos,Aiginiakos,4,2,H
+2019-04-17,Iraklis,Trikala,1,0,H
+2019-04-17,Volos NFC,Apollon Larissa FC,1,3,A
+2019-04-17,AOK Kerkyra,Sparti,3,0,H
+2019-04-17,Aittitos Spaton,Ergotelis,0,3,A
+2019-04-18,Doxa Dramas,Apollon Pontou,4,0,H
+2019-04-21,Sparti,Apollon Pontou,0,3,A
+2019-04-21,Apollon Larissa FC,Platanias,1,0,H
+2019-04-21,Trikala,Aittitos Spaton,3,0,H
+2019-04-22,Kissamikos,Doxa Dramas,0,1,A
+2019-04-22,Aiginiakos,AOK Kerkyra,0,1,A
+2019-04-22,Ergotelis,AE Karaiskakis,1,1,D
+2019-04-22,Panachaiki FC,Irodotos,2,0,H
+2019-04-22,Iraklis,Volos NFC,2,0,H
+2019-05-05,Platanias,Iraklis,2,1,H
+2019-05-05,Aiginiakos,Sparti,3,0,H
+2019-05-05,Apollon Pontou,Kissamikos,1,3,A
+2019-05-05,AE Karaiskakis,Trikala,1,3,A
+2019-05-05,Doxa Dramas,Ergotelis,0,2,A
+2019-05-05,Irodotos,Apollon Larissa FC,0,1,A
+2019-05-05,AOK Kerkyra,Panachaiki FC,0,2,A
+2019-05-05,Aittitos Spaton,Volos NFC,0,3,A

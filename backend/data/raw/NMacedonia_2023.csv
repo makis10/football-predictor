@@ -1,0 +1,200 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2023-08-06,Akademija Pandev,Vardar Skopje,1,0,H
+2023-08-06,Bregalnica Stip,Sileks,2,1,H
+2023-08-06,Struga,KF Gostivari,2,0,H
+2023-08-06,Tikves,Makedonija GjP,1,0,H
+2023-08-06,Voska Sport,Shkendija,0,1,A
+2023-08-07,FK Rabotnicki,Shkupi 1927,3,1,H
+2023-08-13,Vardar Skopje,Shkupi 1927,0,1,A
+2023-08-13,Akademija Pandev,Voska Sport,2,0,H
+2023-08-13,Makedonija GjP,Bregalnica Stip,1,0,H
+2023-08-13,Sileks,FK Rabotnicki,2,0,H
+2023-08-13,KF Gostivari,Tikves,0,3,A
+2023-08-20,FK Rabotnicki,Makedonija GjP,1,0,H
+2023-08-20,Shkupi 1927,Sileks,1,1,D
+2023-08-20,Bregalnica Stip,KF Gostivari,2,1,H
+2023-08-20,Tikves,Shkendija,1,2,A
+2023-08-20,Voska Sport,Vardar Skopje,3,2,H
+2023-08-21,Struga,Akademija Pandev,1,2,A
+2023-08-23,Vardar Skopje,Sileks,2,2,D
+2023-08-23,Shkendija,Bregalnica Stip,2,0,H
+2023-08-23,Makedonija GjP,Shkupi 1927,0,0,D
+2023-08-23,KF Gostivari,FK Rabotnicki,2,0,H
+2023-08-24,Akademija Pandev,Tikves,2,0,H
+2023-08-27,FK Rabotnicki,Shkendija,1,2,A
+2023-08-27,Shkupi 1927,KF Gostivari,3,1,H
+2023-08-27,Sileks,Makedonija GjP,2,2,D
+2023-08-27,Bregalnica Stip,Akademija Pandev,1,0,H
+2023-08-27,Tikves,Voska Sport,1,1,D
+2023-09-02,Vardar Skopje,Makedonija GjP,2,1,H
+2023-09-02,Shkendija,Shkupi 1927,0,0,D
+2023-09-02,Akademija Pandev,FK Rabotnicki,0,0,D
+2023-09-02,KF Gostivari,Sileks,1,2,A
+2023-09-02,Voska Sport,Bregalnica Stip,2,0,H
+2023-09-04,Struga,Tikves,3,1,H
+2023-09-16,Shkupi 1927,Akademija Pandev,1,0,H
+2023-09-17,FK Rabotnicki,Voska Sport,2,0,H
+2023-09-17,Makedonija GjP,KF Gostivari,3,0,H
+2023-09-17,Sileks,Shkendija,2,1,H
+2023-09-17,Bregalnica Stip,Struga,1,3,A
+2023-09-17,Tikves,Vardar Skopje,1,0,H
+2023-09-24,Vardar Skopje,KF Gostivari,0,2,A
+2023-09-24,Shkendija,Makedonija GjP,1,0,H
+2023-09-24,Akademija Pandev,Sileks,1,1,D
+2023-09-24,Struga,FK Rabotnicki,1,0,H
+2023-09-24,Tikves,Bregalnica Stip,2,1,H
+2023-09-24,Voska Sport,Shkupi 1927,2,3,A
+2023-09-27,Voska Sport,Struga,0,1,A
+2023-09-30,Makedonija GjP,Akademija Pandev,1,0,H
+2023-10-01,FK Rabotnicki,Tikves,1,0,H
+2023-10-01,Shkupi 1927,Struga,2,0,H
+2023-10-01,Sileks,Voska Sport,4,2,H
+2023-10-01,Bregalnica Stip,Vardar Skopje,0,0,D
+2023-10-01,KF Gostivari,Shkendija,2,2,D
+2023-10-04,Shkendija,Struga,1,0,H
+2023-10-07,Akademija Pandev,KF Gostivari,0,1,A
+2023-10-07,Bregalnica Stip,FK Rabotnicki,2,1,H
+2023-10-07,Tikves,Shkupi 1927,1,1,D
+2023-10-07,Voska Sport,Makedonija GjP,2,1,H
+2023-10-08,Vardar Skopje,Shkendija,0,2,A
+2023-10-08,Struga,Sileks,2,0,H
+2023-10-22,Shkendija,Akademija Pandev,1,1,D
+2023-10-22,FK Rabotnicki,Vardar Skopje,0,1,A
+2023-10-22,Shkupi 1927,Bregalnica Stip,1,0,H
+2023-10-22,Makedonija GjP,Struga,0,3,A
+2023-10-22,Sileks,Tikves,1,0,H
+2023-10-22,KF Gostivari,Voska Sport,1,1,D
+2023-10-28,Sileks,Bregalnica Stip,0,0,D
+2023-10-29,Vardar Skopje,Akademija Pandev,1,0,H
+2023-10-29,Shkendija,Voska Sport,1,1,D
+2023-10-29,Shkupi 1927,FK Rabotnicki,3,0,H
+2023-10-29,Makedonija GjP,Tikves,1,1,D
+2023-10-29,KF Gostivari,Struga,2,1,H
+2023-11-01,Struga,Vardar Skopje,4,0,H
+2023-11-04,FK Rabotnicki,Sileks,1,0,H
+2023-11-04,Bregalnica Stip,Makedonija GjP,2,3,A
+2023-11-04,Tikves,KF Gostivari,2,2,D
+2023-11-04,Voska Sport,Akademija Pandev,1,1,D
+2023-11-05,Shkupi 1927,Vardar Skopje,2,0,H
+2023-11-05,Struga,Shkendija,2,1,H
+2023-11-11,Vardar Skopje,Voska Sport,1,2,A
+2023-11-11,Shkendija,Tikves,1,0,H
+2023-11-11,Akademija Pandev,Struga,2,1,H
+2023-11-11,KF Gostivari,Bregalnica Stip,1,0,H
+2023-11-12,Makedonija GjP,FK Rabotnicki,0,1,A
+2023-11-12,Sileks,Shkupi 1927,2,1,H
+2023-11-25,Bregalnica Stip,Shkendija,2,2,D
+2023-11-26,FK Rabotnicki,KF Gostivari,0,0,D
+2023-11-26,Shkupi 1927,Makedonija GjP,1,0,H
+2023-11-26,Tikves,Akademija Pandev,1,0,H
+2023-11-29,Vardar Skopje,Struga,1,3,A
+2023-11-29,Shkendija,FK Rabotnicki,2,0,H
+2023-11-29,Akademija Pandev,Bregalnica Stip,1,1,D
+2023-11-29,Makedonija GjP,Sileks,1,0,H
+2023-11-29,KF Gostivari,Shkupi 1927,0,0,D
+2023-11-29,Voska Sport,Tikves,0,3,A
+2023-12-02,Makedonija GjP,Vardar Skopje,0,1,A
+2023-12-03,FK Rabotnicki,Akademija Pandev,1,0,H
+2023-12-03,Shkupi 1927,Shkendija,1,0,H
+2023-12-03,Sileks,KF Gostivari,1,1,D
+2023-12-03,Bregalnica Stip,Voska Sport,2,2,D
+2023-12-03,Tikves,Struga,2,3,A
+2023-12-06,Sileks,Vardar Skopje,3,2,H
+2023-12-06,Struga,Voska Sport,1,0,H
+2023-12-09,KF Gostivari,Makedonija GjP,1,0,H
+2023-12-10,Vardar Skopje,Tikves,2,0,H
+2023-12-10,Shkendija,Sileks,3,1,H
+2023-12-10,Akademija Pandev,Shkupi 1927,0,1,A
+2023-12-10,Struga,Bregalnica Stip,2,1,H
+2023-12-10,Voska Sport,FK Rabotnicki,3,2,H
+2024-02-17,KF Gostivari,Vardar Skopje,1,1,D
+2024-02-18,FK Rabotnicki,Struga,0,0,D
+2024-02-18,Shkupi 1927,Voska Sport,3,0,H
+2024-02-18,Makedonija GjP,Shkendija,0,1,A
+2024-02-18,Sileks,Akademija Pandev,0,1,A
+2024-02-18,Bregalnica Stip,Tikves,2,1,H
+2024-02-24,Struga,Shkupi 1927,2,2,D
+2024-02-25,Vardar Skopje,Bregalnica Stip,2,0,H
+2024-02-25,Shkendija,KF Gostivari,2,2,D
+2024-02-25,Akademija Pandev,Makedonija GjP,3,0,H
+2024-02-25,Tikves,FK Rabotnicki,2,0,H
+2024-02-25,Voska Sport,Sileks,0,0,D
+2024-03-03,Shkendija,Vardar Skopje,3,0,H
+2024-03-03,FK Rabotnicki,Bregalnica Stip,2,0,H
+2024-03-03,Shkupi 1927,Tikves,0,0,D
+2024-03-03,Makedonija GjP,Voska Sport,1,2,A
+2024-03-03,Sileks,Struga,0,0,D
+2024-03-03,KF Gostivari,Akademija Pandev,2,0,H
+2024-03-06,Vardar Skopje,FK Rabotnicki,1,0,H
+2024-03-06,Akademija Pandev,Shkendija,0,0,D
+2024-03-06,Bregalnica Stip,Shkupi 1927,0,0,D
+2024-03-06,Struga,Makedonija GjP,2,1,H
+2024-03-06,Tikves,Sileks,1,0,H
+2024-03-06,Voska Sport,KF Gostivari,1,1,D
+2024-03-10,Shkendija,Voska Sport,0,0,D
+2024-03-10,Shkupi 1927,FK Rabotnicki,3,2,H
+2024-03-10,Sileks,Makedonija GjP,1,0,H
+2024-03-10,KF Gostivari,Vardar Skopje,0,0,D
+2024-03-10,Struga,Akademija Pandev,3,1,H
+2024-03-10,Tikves,Bregalnica Stip,2,1,H
+2024-03-16,Vardar Skopje,Shkendija,1,1,D
+2024-03-16,Makedonija GjP,Tikves,1,0,H
+2024-03-16,Sileks,Akademija Pandev,2,1,H
+2024-03-16,Bregalnica Stip,KF Gostivari,0,0,D
+2024-03-16,Voska Sport,Shkupi 1927,0,0,D
+2024-03-17,FK Rabotnicki,Struga,1,2,A
+2024-03-30,Shkupi 1927,Vardar Skopje,3,0,H
+2024-03-30,Tikves,Sileks,1,1,D
+2024-03-31,Shkendija,Bregalnica Stip,4,1,H
+2024-03-31,Akademija Pandev,FK Rabotnicki,2,1,H
+2024-03-31,KF Gostivari,Makedonija GjP,1,4,A
+2024-03-31,Struga,Voska Sport,3,1,H
+2024-04-06,Sileks,KF Gostivari,0,0,D
+2024-04-07,Vardar Skopje,Struga,1,0,H
+2024-04-07,Makedonija GjP,Shkendija,1,1,D
+2024-04-07,Bregalnica Stip,Shkupi 1927,1,0,H
+2024-04-07,Tikves,Akademija Pandev,3,1,H
+2024-04-07,Voska Sport,FK Rabotnicki,1,1,D
+2024-04-13,Shkupi 1927,Makedonija GjP,3,1,H
+2024-04-13,Akademija Pandev,Voska Sport,1,0,H
+2024-04-13,KF Gostivari,Tikves,2,1,H
+2024-04-14,Shkendija,Sileks,6,1,H
+2024-04-14,FK Rabotnicki,Vardar Skopje,2,0,H
+2024-04-14,Struga,Bregalnica Stip,2,2,D
+2024-04-20,Bregalnica Stip,FK Rabotnicki,0,1,A
+2024-04-21,Vardar Skopje,Voska Sport,0,1,A
+2024-04-21,Makedonija GjP,Struga,0,1,A
+2024-04-21,Sileks,Shkupi 1927,0,0,D
+2024-04-21,KF Gostivari,Akademija Pandev,1,1,D
+2024-04-21,Tikves,Shkendija,2,1,H
+2024-04-28,Shkendija,KF Gostivari,4,1,H
+2024-04-28,FK Rabotnicki,Makedonija GjP,1,1,D
+2024-04-28,Shkupi 1927,Tikves,3,2,H
+2024-04-28,Akademija Pandev,Vardar Skopje,2,0,H
+2024-04-28,Struga,Sileks,2,3,A
+2024-04-28,Voska Sport,Bregalnica Stip,4,0,H
+2024-05-01,Shkendija,Akademija Pandev,3,2,H
+2024-05-01,Makedonija GjP,Voska Sport,0,2,A
+2024-05-01,Sileks,FK Rabotnicki,0,1,A
+2024-05-01,Bregalnica Stip,Vardar Skopje,0,3,A
+2024-05-01,KF Gostivari,Shkupi 1927,2,0,H
+2024-05-01,Tikves,Struga,3,2,H
+2024-05-04,Vardar Skopje,Makedonija GjP,1,0,H
+2024-05-04,FK Rabotnicki,Tikves,3,1,H
+2024-05-04,Shkupi 1927,Shkendija,0,2,A
+2024-05-04,Akademija Pandev,Bregalnica Stip,1,1,D
+2024-05-04,Struga,KF Gostivari,1,0,H
+2024-05-04,Voska Sport,Sileks,2,1,H
+2024-05-12,Shkendija,Struga,0,2,A
+2024-05-12,Shkupi 1927,Akademija Pandev,0,0,D
+2024-05-12,Makedonija GjP,Bregalnica Stip,2,1,H
+2024-05-12,Sileks,Vardar Skopje,1,1,D
+2024-05-12,KF Gostivari,FK Rabotnicki,0,0,D
+2024-05-12,Tikves,Voska Sport,0,0,D
+2024-05-18,Vardar Skopje,Tikves,2,2,D
+2024-05-18,FK Rabotnicki,Shkendija,0,2,A
+2024-05-18,Akademija Pandev,Makedonija GjP,5,3,H
+2024-05-18,Bregalnica Stip,Sileks,1,1,D
+2024-05-18,Struga,Shkupi 1927,1,2,A
+2024-05-18,Voska Sport,KF Gostivari,1,1,D
+2024-05-26,Vardar Skopje,Detonit Plachkovica,2,0,H

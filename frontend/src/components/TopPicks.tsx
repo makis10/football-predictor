@@ -7,9 +7,11 @@
  */
 import Link from "next/link";
 import { Match, leagueFlag, leagueLabel, formatKickoff, formatKickoffUtc, formatDate, confidenceColor, matchHref } from "@/lib/api";
+import type { TFunc } from "@/lib/i18n";
 
 interface Props {
   matches: Match[];
+  t: TFunc;
 }
 
 function topPick(m: Match): { label: string; prob: number } | null {
@@ -25,7 +27,7 @@ function topPick(m: Match): { label: string; prob: number } | null {
   return candidates.reduce((best, c) => (c.prob > best.prob ? c : best));
 }
 
-export default function TopPicks({ matches }: Props) {
+export default function TopPicks({ matches, t }: Props) {
   // Exclude no-history fixtures: their default-derived probs are identical and
   // meaningless, so they must never surface as a "top pick".
   const withPreds = matches.filter((m) => m.prediction && !m.prediction.insufficient_data);
@@ -48,9 +50,9 @@ export default function TopPicks({ matches }: Props) {
     <section className="space-y-3">
       <div className="flex items-center gap-2">
         <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
-          ⚡ Top AI Picks
+          {t("topPicks.heading")}
         </h2>
-        <span className="text-xs text-gray-600">highest-confidence predictions</span>
+        <span className="text-xs text-gray-600">{t("topPicks.subtitle")}</span>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">

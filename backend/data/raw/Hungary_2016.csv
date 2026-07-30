@@ -1,0 +1,199 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2016-07-16,Mezokovesd-zsory,Gyirmot SE,2,2,D
+2016-07-16,Ujpest,Budapest Honved,0,2,A
+2016-07-16,Ferencvarosi TC,Szombathelyi Haladas,3,1,H
+2016-07-17,Fehervar FC,Diosgyori VTK,1,2,A
+2016-07-17,Debreceni VSC,Paks,1,1,D
+2016-07-17,MTK Budapest,Vasas,0,1,A
+2016-07-23,Diosgyori VTK,Ujpest,2,1,H
+2016-07-23,Szombathelyi Haladas,Mezokovesd-zsory,1,1,D
+2016-07-23,Budapest Honved,Ferencvarosi TC,0,1,A
+2016-07-24,Vasas,Debreceni VSC,3,1,H
+2016-07-24,Paks,Fehervar FC,1,1,D
+2016-07-24,Gyirmot SE,MTK Budapest,0,0,D
+2016-07-30,Ujpest,Paks,1,0,H
+2016-07-30,Szombathelyi Haladas,Budapest Honved,1,1,D
+2016-07-30,Ferencvarosi TC,Diosgyori VTK,6,2,H
+2016-07-31,Fehervar FC,Vasas,1,2,A
+2016-07-31,Debreceni VSC,Gyirmot SE,4,0,H
+2016-07-31,MTK Budapest,Mezokovesd-zsory,0,1,A
+2016-08-06,Paks,Ferencvarosi TC,0,0,D
+2016-08-06,Diosgyori VTK,Budapest Honved,0,3,A
+2016-08-06,Vasas,Ujpest,0,1,A
+2016-08-07,Mezokovesd-zsory,Debreceni VSC,0,1,A
+2016-08-07,MTK Budapest,Szombathelyi Haladas,0,2,A
+2016-08-07,Gyirmot SE,Fehervar FC,0,4,A
+2016-08-13,Budapest Honved,Paks,3,1,H
+2016-08-13,Fehervar FC,Mezokovesd-zsory,2,0,H
+2016-08-13,Ujpest,Gyirmot SE,3,1,H
+2016-08-13,Debreceni VSC,MTK Budapest,1,1,D
+2016-08-13,Szombathelyi Haladas,Diosgyori VTK,3,1,H
+2016-08-13,Ferencvarosi TC,Vasas,1,2,A
+2016-08-16,MTK Budapest,Fehervar FC,1,0,H
+2016-08-17,Debreceni VSC,Szombathelyi Haladas,0,1,A
+2016-08-17,Vasas,Budapest Honved,2,0,H
+2016-08-17,Mezokovesd-zsory,Ujpest,0,2,A
+2016-08-17,Paks,Diosgyori VTK,2,1,H
+2016-08-17,Gyirmot SE,Ferencvarosi TC,0,1,A
+2016-08-21,Budapest Honved,Gyirmot SE,0,0,D
+2016-08-21,Ferencvarosi TC,Mezokovesd-zsory,2,2,D
+2016-08-21,Ujpest,MTK Budapest,0,0,D
+2016-08-21,Diosgyori VTK,Vasas,1,1,D
+2016-08-21,Szombathelyi Haladas,Paks,3,1,H
+2016-08-21,Fehervar FC,Debreceni VSC,5,1,H
+2016-09-10,Fehervar FC,Szombathelyi Haladas,3,0,H
+2016-09-10,Vasas,Paks,1,0,H
+2016-09-10,Mezokovesd-zsory,Budapest Honved,3,1,H
+2016-09-10,Debreceni VSC,Ujpest,2,1,H
+2016-09-10,Gyirmot SE,Diosgyori VTK,1,0,H
+2016-09-10,MTK Budapest,Ferencvarosi TC,2,1,H
+2016-09-17,Budapest Honved,MTK Budapest,5,0,H
+2016-09-17,Ujpest,Fehervar FC,3,4,A
+2016-09-17,Paks,Gyirmot SE,0,0,D
+2016-09-17,Diosgyori VTK,Mezokovesd-zsory,1,1,D
+2016-09-17,Szombathelyi Haladas,Vasas,1,0,H
+2016-09-17,Ferencvarosi TC,Debreceni VSC,3,1,H
+2016-09-20,Debreceni VSC,Budapest Honved,0,1,A
+2016-09-21,Ujpest,Szombathelyi Haladas,1,1,D
+2016-09-21,Mezokovesd-zsory,Paks,1,3,A
+2016-09-21,MTK Budapest,Diosgyori VTK,1,0,H
+2016-09-21,Gyirmot SE,Vasas,1,0,H
+2016-09-21,Fehervar FC,Ferencvarosi TC,1,1,D
+2016-09-24,Budapest Honved,Fehervar FC,1,2,A
+2016-09-24,Vasas,Mezokovesd-zsory,4,0,H
+2016-09-24,Paks,MTK Budapest,0,0,D
+2016-09-24,Diosgyori VTK,Debreceni VSC,1,3,A
+2016-09-24,Szombathelyi Haladas,Gyirmot SE,0,1,A
+2016-09-24,Ferencvarosi TC,Ujpest,3,3,D
+2016-10-15,Gyirmot SE,Mezokovesd-zsory,0,1,A
+2016-10-15,Budapest Honved,Ujpest,1,1,D
+2016-10-15,Vasas,MTK Budapest,3,2,H
+2016-10-15,Paks,Debreceni VSC,1,1,D
+2016-10-15,Diosgyori VTK,Fehervar FC,2,0,H
+2016-10-15,Szombathelyi Haladas,Ferencvarosi TC,2,0,H
+2016-10-22,Fehervar FC,Paks,5,1,H
+2016-10-22,Debreceni VSC,Vasas,1,2,A
+2016-10-22,Ferencvarosi TC,Budapest Honved,3,2,H
+2016-10-22,Ujpest,Diosgyori VTK,4,4,D
+2016-10-22,Mezokovesd-zsory,Szombathelyi Haladas,3,0,H
+2016-10-22,MTK Budapest,Gyirmot SE,1,0,H
+2016-10-29,Budapest Honved,Szombathelyi Haladas,2,1,H
+2016-10-29,Diosgyori VTK,Ferencvarosi TC,2,3,A
+2016-10-29,Vasas,Fehervar FC,1,1,D
+2016-10-29,Mezokovesd-zsory,MTK Budapest,1,0,H
+2016-10-29,Paks,Ujpest,1,1,D
+2016-10-29,Gyirmot SE,Debreceni VSC,1,2,A
+2016-11-05,Budapest Honved,Diosgyori VTK,2,0,H
+2016-11-05,Fehervar FC,Gyirmot SE,4,0,H
+2016-11-05,Ferencvarosi TC,Paks,1,2,A
+2016-11-05,Debreceni VSC,Mezokovesd-zsory,0,0,D
+2016-11-05,Szombathelyi Haladas,MTK Budapest,1,1,D
+2016-11-05,Ujpest,Vasas,2,2,D
+2016-11-19,Mezokovesd-zsory,Fehervar FC,2,1,H
+2016-11-19,Paks,Budapest Honved,1,1,D
+2016-11-19,Diosgyori VTK,Szombathelyi Haladas,2,1,H
+2016-11-19,MTK Budapest,Debreceni VSC,1,1,D
+2016-11-19,Gyirmot SE,Ujpest,1,2,A
+2016-11-19,Vasas,Ferencvarosi TC,2,2,D
+2016-11-26,Budapest Honved,Vasas,2,1,H
+2016-11-26,Ferencvarosi TC,Gyirmot SE,2,0,H
+2016-11-26,Ujpest,Mezokovesd-zsory,1,1,D
+2016-11-26,Diosgyori VTK,Paks,2,0,H
+2016-11-26,Szombathelyi Haladas,Debreceni VSC,1,0,H
+2016-11-26,Fehervar FC,MTK Budapest,2,0,H
+2016-12-03,Vasas,Diosgyori VTK,3,0,H
+2016-12-03,Mezokovesd-zsory,Ferencvarosi TC,2,0,H
+2016-12-03,Paks,Szombathelyi Haladas,2,1,H
+2016-12-03,MTK Budapest,Ujpest,1,1,D
+2016-12-03,Gyirmot SE,Budapest Honved,0,4,A
+2016-12-03,Debreceni VSC,Fehervar FC,0,1,A
+2016-12-10,Budapest Honved,Mezokovesd-zsory,1,0,H
+2016-12-10,Ujpest,Debreceni VSC,2,0,H
+2016-12-10,Paks,Vasas,1,0,H
+2016-12-10,Diosgyori VTK,Gyirmot SE,1,0,H
+2016-12-10,Szombathelyi Haladas,Fehervar FC,1,1,D
+2016-12-10,Ferencvarosi TC,MTK Budapest,1,1,D
+2017-02-18,Fehervar FC,Ujpest,5,1,H
+2017-02-18,Mezokovesd-zsory,Diosgyori VTK,3,0,H
+2017-02-18,MTK Budapest,Budapest Honved,1,2,A
+2017-02-18,Gyirmot SE,Paks,0,0,D
+2017-02-18,Debreceni VSC,Ferencvarosi TC,0,0,D
+2017-02-25,Budapest Honved,Debreceni VSC,1,0,H
+2017-02-25,Vasas,Gyirmot SE,1,1,D
+2017-02-25,Paks,Mezokovesd-zsory,5,0,H
+2017-02-25,Diosgyori VTK,MTK Budapest,2,3,A
+2017-02-25,Szombathelyi Haladas,Ujpest,0,2,A
+2017-02-25,Ferencvarosi TC,Fehervar FC,0,0,D
+2017-03-04,Fehervar FC,Budapest Honved,3,0,H
+2017-03-04,Mezokovesd-zsory,Vasas,0,2,A
+2017-03-04,Debreceni VSC,Diosgyori VTK,3,0,H
+2017-03-04,MTK Budapest,Paks,1,2,A
+2017-03-04,Gyirmot SE,Szombathelyi Haladas,1,2,A
+2017-03-04,Ujpest,Ferencvarosi TC,0,1,A
+2017-03-11,Fehervar FC,Diosgyori VTK,2,0,H
+2017-03-11,Mezokovesd-zsory,Gyirmot SE,1,1,D
+2017-03-11,Debreceni VSC,Paks,1,3,A
+2017-03-11,MTK Budapest,Vasas,1,0,H
+2017-03-11,Ferencvarosi TC,Szombathelyi Haladas,3,1,H
+2017-03-11,Ujpest,Budapest Honved,1,1,D
+2017-03-16,Vasas,Szombathelyi Haladas,2,3,A
+2017-04-01,Vasas,Debreceni VSC,2,3,A
+2017-04-01,Paks,Fehervar FC,0,0,D
+2017-04-01,Diosgyori VTK,Ujpest,3,1,H
+2017-04-01,Szombathelyi Haladas,Mezokovesd-zsory,4,2,H
+2017-04-01,Gyirmot SE,MTK Budapest,1,0,H
+2017-04-01,Budapest Honved,Ferencvarosi TC,2,1,H
+2017-04-08,Fehervar FC,Vasas,1,2,A
+2017-04-08,Ujpest,Paks,1,1,D
+2017-04-08,Debreceni VSC,Gyirmot SE,2,1,H
+2017-04-08,Szombathelyi Haladas,Budapest Honved,0,1,A
+2017-04-08,MTK Budapest,Mezokovesd-zsory,2,0,H
+2017-04-08,Ferencvarosi TC,Diosgyori VTK,1,1,D
+2017-04-11,Vasas,Ujpest,2,3,A
+2017-04-11,Diosgyori VTK,Budapest Honved,2,0,H
+2017-04-12,Mezokovesd-zsory,Debreceni VSC,2,1,H
+2017-04-12,Paks,Ferencvarosi TC,3,1,H
+2017-04-12,MTK Budapest,Szombathelyi Haladas,0,0,D
+2017-04-12,Gyirmot SE,Fehervar FC,0,1,A
+2017-04-15,Budapest Honved,Paks,2,0,H
+2017-04-15,Fehervar FC,Mezokovesd-zsory,1,1,D
+2017-04-15,Ujpest,Gyirmot SE,2,2,D
+2017-04-15,Szombathelyi Haladas,Diosgyori VTK,2,0,H
+2017-04-15,Debreceni VSC,MTK Budapest,0,0,D
+2017-04-15,Ferencvarosi TC,Vasas,1,2,A
+2017-04-22,Mezokovesd-zsory,Ujpest,1,3,A
+2017-04-22,Paks,Diosgyori VTK,0,1,A
+2017-04-22,Debreceni VSC,Szombathelyi Haladas,4,2,H
+2017-04-22,MTK Budapest,Fehervar FC,1,1,D
+2017-04-22,Gyirmot SE,Ferencvarosi TC,2,3,A
+2017-04-22,Vasas,Budapest Honved,1,0,H
+2017-04-29,Budapest Honved,Gyirmot SE,1,0,H
+2017-04-29,Ferencvarosi TC,Mezokovesd-zsory,3,1,H
+2017-04-29,Ujpest,MTK Budapest,1,2,A
+2017-04-29,Diosgyori VTK,Vasas,2,1,H
+2017-04-29,Szombathelyi Haladas,Paks,2,0,H
+2017-04-29,Fehervar FC,Debreceni VSC,3,2,H
+2017-05-06,Fehervar FC,Szombathelyi Haladas,2,0,H
+2017-05-06,Vasas,Paks,0,3,A
+2017-05-06,Mezokovesd-zsory,Budapest Honved,1,5,A
+2017-05-06,Debreceni VSC,Ujpest,1,0,H
+2017-05-06,Gyirmot SE,Diosgyori VTK,1,1,D
+2017-05-06,MTK Budapest,Ferencvarosi TC,1,3,A
+2017-05-13,Budapest Honved,MTK Budapest,2,1,H
+2017-05-13,Ferencvarosi TC,Debreceni VSC,0,0,D
+2017-05-13,Paks,Gyirmot SE,3,0,H
+2017-05-13,Diosgyori VTK,Mezokovesd-zsory,2,2,D
+2017-05-13,Szombathelyi Haladas,Vasas,2,2,D
+2017-05-13,Ujpest,Fehervar FC,0,3,A
+2017-05-20,Ujpest,Szombathelyi Haladas,2,1,H
+2017-05-20,Mezokovesd-zsory,Paks,3,2,H
+2017-05-20,Debreceni VSC,Budapest Honved,2,5,A
+2017-05-20,MTK Budapest,Diosgyori VTK,0,0,D
+2017-05-20,Gyirmot SE,Vasas,1,2,A
+2017-05-20,Fehervar FC,Ferencvarosi TC,4,1,H
+2017-05-27,Budapest Honved,Fehervar FC,1,0,H
+2017-05-27,Ferencvarosi TC,Ujpest,2,0,H
+2017-05-27,Vasas,Mezokovesd-zsory,1,1,D
+2017-05-27,Paks,MTK Budapest,1,1,D
+2017-05-27,Diosgyori VTK,Debreceni VSC,1,3,A
+2017-05-27,Szombathelyi Haladas,Gyirmot SE,1,2,A

@@ -1,0 +1,162 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2019-09-28,Ionikos,Trikala,0,0,D
+2019-09-29,Egaleo,Kalamata,0,2,A
+2019-09-29,Veria,Diagoras,0,0,D
+2019-09-29,Kavala,Triglia,4,1,H
+2019-09-29,Niki Volos,Thesprotos,2,1,H
+2019-09-29,Aspropyrgos Enosis,Olympiakos Volos,2,2,D
+2019-09-29,Ialysos,OF Ierapetra,0,0,D
+2019-10-05,Kavala,Egaleo,0,0,D
+2019-10-06,Kalamata,Ialysos,2,0,H
+2019-10-06,OF Ierapetra,Niki Volos,2,1,H
+2019-10-06,Olympiakos Volos,Veria,0,2,A
+2019-10-06,Thesprotos,Ionikos,0,2,A
+2019-10-06,Diagoras,Trikala,1,2,A
+2019-10-06,Triglia,Aspropyrgos Enosis,2,0,H
+2019-10-12,Aspropyrgos Enosis,Kavala,1,0,H
+2019-10-13,Trikala,Olympiakos Volos,1,1,D
+2019-10-13,Veria,Triglia,2,1,H
+2019-10-13,Niki Volos,Kalamata,1,1,D
+2019-10-13,Diagoras,Thesprotos,4,1,H
+2019-10-13,Egaleo,Ialysos,1,0,H
+2019-10-13,Ionikos,OF Ierapetra,0,1,A
+2019-10-19,Kalamata,Ionikos,1,0,H
+2019-10-19,Olympiakos Volos,Thesprotos,1,1,D
+2019-10-20,Ialysos,Niki Volos,1,0,H
+2019-10-20,Kavala,Veria,1,0,H
+2019-10-20,OF Ierapetra,Diagoras,0,0,D
+2019-10-20,Aspropyrgos Enosis,Egaleo,1,1,D
+2019-10-20,Triglia,Trikala,0,1,A
+2019-10-26,Veria,Aspropyrgos Enosis,1,1,D
+2019-10-26,Trikala,Kavala,0,0,D
+2019-10-27,Olympiakos Volos,OF Ierapetra,2,1,H
+2019-10-27,Thesprotos,Triglia,3,0,H
+2019-10-27,Diagoras,Kalamata,2,0,H
+2019-10-27,Egaleo,Niki Volos,2,0,H
+2019-10-27,Ionikos,Ialysos,1,0,H
+2019-11-02,Niki Volos,Ionikos,1,2,A
+2019-11-03,Veria,Egaleo,3,1,H
+2019-11-03,Kalamata,Olympiakos Volos,1,2,A
+2019-11-03,Kavala,Thesprotos,4,1,H
+2019-11-03,Aspropyrgos Enosis,Trikala,1,1,D
+2019-11-03,Ialysos,Diagoras,1,1,D
+2019-11-03,Triglia,OF Ierapetra,0,2,A
+2019-11-09,Trikala,Veria,2,1,H
+2019-11-10,Olympiakos Volos,Ialysos,2,0,H
+2019-11-10,OF Ierapetra,Kavala,3,2,H
+2019-11-10,Thesprotos,Aspropyrgos Enosis,1,0,H
+2019-11-10,Diagoras,Niki Volos,1,1,D
+2019-11-10,Egaleo,Ionikos,1,2,A
+2019-11-10,Triglia,Kalamata,1,0,H
+2019-11-16,Niki Volos,Olympiakos Volos,2,0,H
+2019-11-17,Veria,Thesprotos,1,1,D
+2019-11-17,Trikala,Egaleo,2,1,H
+2019-11-17,Kavala,Kalamata,2,1,H
+2019-11-17,Aspropyrgos Enosis,OF Ierapetra,3,0,H
+2019-11-17,Ialysos,Triglia,1,2,A
+2019-11-17,Ionikos,Diagoras,3,2,H
+2019-11-23,Thesprotos,Trikala,1,2,A
+2019-11-24,Ialysos,Kavala,0,0,D
+2019-11-24,Kalamata,Aspropyrgos Enosis,2,2,D
+2019-11-24,OF Ierapetra,Veria,0,1,A
+2019-11-24,Egaleo,Diagoras,0,2,A
+2019-11-24,Triglia,Niki Volos,0,0,D
+2019-11-24,Olympiakos Volos,Ionikos,1,1,D
+2019-11-30,Veria,Kalamata,2,0,H
+2019-11-30,Trikala,OF Ierapetra,3,0,H
+2019-11-30,Niki Volos,Kavala,2,0,H
+2019-11-30,Aspropyrgos Enosis,Ialysos,1,0,H
+2019-12-01,Thesprotos,Egaleo,0,1,A
+2019-12-01,Diagoras,Olympiakos Volos,0,0,D
+2019-12-01,Ionikos,Triglia,2,0,H
+2019-12-07,Kalamata,Trikala,0,1,A
+2019-12-08,Kavala,Ionikos,0,0,D
+2019-12-08,Niki Volos,Aspropyrgos Enosis,3,0,H
+2019-12-08,OF Ierapetra,Thesprotos,1,0,H
+2019-12-08,Egaleo,Olympiakos Volos,0,1,A
+2019-12-08,Ialysos,Veria,1,0,H
+2019-12-08,Triglia,Diagoras,1,1,D
+2019-12-14,OF Ierapetra,Egaleo,0,0,D
+2019-12-15,Trikala,Ialysos,3,0,H
+2019-12-15,Diagoras,Kavala,0,0,D
+2019-12-15,Veria,Niki Volos,3,0,H
+2019-12-15,Thesprotos,Kalamata,3,1,H
+2019-12-15,Ionikos,Aspropyrgos Enosis,2,0,H
+2019-12-15,Olympiakos Volos,Triglia,3,1,H
+2019-12-21,Niki Volos,Trikala,2,0,H
+2019-12-22,Ialysos,Thesprotos,1,0,H
+2019-12-22,Kalamata,OF Ierapetra,2,3,A
+2019-12-22,Kavala,Olympiakos Volos,2,0,H
+2019-12-22,Aspropyrgos Enosis,Diagoras,0,3,A
+2019-12-22,Egaleo,Triglia,1,1,D
+2019-12-22,Ionikos,Veria,0,0,D
+2020-01-04,Kalamata,Egaleo,0,1,A
+2020-01-04,Diagoras,Veria,0,1,A
+2020-01-04,Olympiakos Volos,Aspropyrgos Enosis,4,1,H
+2020-01-05,Trikala,Ionikos,1,0,H
+2020-01-05,OF Ierapetra,Ialysos,3,0,H
+2020-01-05,Thesprotos,Niki Volos,0,1,A
+2020-01-05,Triglia,Kavala,1,2,A
+2020-01-11,Niki Volos,OF Ierapetra,0,0,D
+2020-01-11,Aspropyrgos Enosis,Triglia,0,3,A
+2020-01-11,Egaleo,Kavala,0,0,D
+2020-01-12,Ialysos,Kalamata,0,0,D
+2020-01-12,Trikala,Diagoras,0,1,A
+2020-01-12,Veria,Olympiakos Volos,1,0,H
+2020-01-12,Ionikos,Thesprotos,1,1,D
+2020-01-18,Ialysos,Egaleo,1,0,H
+2020-01-18,Kavala,Aspropyrgos Enosis,0,0,D
+2020-01-18,OF Ierapetra,Ionikos,0,0,D
+2020-01-19,Kalamata,Niki Volos,0,2,A
+2020-01-19,Thesprotos,Diagoras,1,2,A
+2020-01-19,Triglia,Veria,0,0,D
+2020-01-19,Olympiakos Volos,Trikala,2,2,D
+2020-01-25,Veria,Kavala,0,2,A
+2020-01-26,Niki Volos,Ialysos,2,0,H
+2020-01-26,Diagoras,OF Ierapetra,0,0,D
+2020-01-26,Trikala,Triglia,2,0,H
+2020-01-26,Thesprotos,Olympiakos Volos,4,1,H
+2020-01-26,Egaleo,Aspropyrgos Enosis,0,2,A
+2020-01-26,Ionikos,Kalamata,1,0,H
+2020-02-01,Ialysos,Ionikos,2,2,D
+2020-02-01,Kavala,Trikala,0,0,D
+2020-02-01,Triglia,Thesprotos,0,1,A
+2020-02-02,Kalamata,Diagoras,1,0,H
+2020-02-02,Niki Volos,Egaleo,1,1,D
+2020-02-02,OF Ierapetra,Olympiakos Volos,1,3,A
+2020-02-02,Aspropyrgos Enosis,Veria,2,2,D
+2020-02-08,Trikala,Aspropyrgos Enosis,1,0,H
+2020-02-08,Ionikos,Niki Volos,2,0,H
+2020-02-09,OF Ierapetra,Triglia,3,0,H
+2020-02-09,Thesprotos,Kavala,1,0,H
+2020-02-09,Diagoras,Ialysos,3,1,H
+2020-02-09,Egaleo,Veria,1,0,H
+2020-02-09,Olympiakos Volos,Kalamata,2,1,H
+2020-02-15,Veria,Trikala,1,1,D
+2020-02-15,Kalamata,Triglia,1,0,H
+2020-02-16,Niki Volos,Diagoras,2,1,H
+2020-02-16,Ialysos,Olympiakos Volos,4,0,H
+2020-02-16,Kavala,OF Ierapetra,0,0,D
+2020-02-16,Aspropyrgos Enosis,Thesprotos,1,2,A
+2020-02-16,Ionikos,Egaleo,3,0,H
+2020-02-22,Diagoras,Ionikos,1,0,H
+2020-02-22,OF Ierapetra,Aspropyrgos Enosis,1,0,H
+2020-02-22,Triglia,Ialysos,0,2,A
+2020-02-22,Olympiakos Volos,Niki Volos,1,1,D
+2020-02-23,Kalamata,Kavala,0,1,A
+2020-02-23,Thesprotos,Veria,2,4,A
+2020-02-23,Egaleo,Trikala,1,0,H
+2020-02-29,Diagoras,Egaleo,1,0,H
+2020-02-29,Veria,OF Ierapetra,1,2,A
+2020-02-29,Trikala,Thesprotos,2,1,H
+2020-02-29,Niki Volos,Triglia,2,2,D
+2020-03-01,Kavala,Ialysos,3,0,H
+2020-03-01,Ionikos,Olympiakos Volos,2,0,H
+2020-03-01,Aspropyrgos Enosis,Kalamata,1,0,H
+2020-03-07,Ialysos,Aspropyrgos Enosis,2,2,D
+2020-03-07,OF Ierapetra,Trikala,0,1,A
+2020-03-07,Egaleo,Thesprotos,1,0,H
+2020-03-08,Olympiakos Volos,Diagoras,0,1,A
+2020-03-08,Kalamata,Veria,1,1,D
+2020-03-08,Kavala,Niki Volos,0,1,A
+2020-03-08,Triglia,Ionikos,1,0,H

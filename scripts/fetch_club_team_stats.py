@@ -71,7 +71,13 @@ NAME_OVERRIDES = {
     "Accrington": "Accrington ST",
     # Brazil Serie A — CSV names vs API-Football names
     "Botafogo RJ": "Botafogo", "Bragantino": "RB Bragantino",
-    "Vasco": "Vasco DA Gama",
+    "Vasco": "Vasco DA Gama", "Athletico-PR": "Atletico Paranaense",
+    # German lower divisions / relegated sides — API keeps the club prefix
+    "Augsburg": "FC Augsburg", "Darmstadt": "SV Darmstadt 98",
+    "Heidenheim": "1. FC Heidenheim", "Ingolstadt": "FC Ingolstadt 04",
+    "Kaiserslautern": "1. FC Kaiserslautern", "Nurnberg": "1. FC Nürnberg",
+    "Espanol": "Espanyol", "Nijmegen": "NEC Nijmegen",
+    "Peterboro": "Peterborough", "Sp Braga": "SC Braga",
 }
 
 
@@ -80,6 +86,25 @@ def _slug(name: str) -> str:
     import unicodedata
     s = unicodedata.normalize("NFKD", (name or "")).encode("ascii", "ignore").decode("ascii")
     return re.sub(r"[^a-z0-9]", "", s.lower())
+
+
+def _search_terms(our: str, target: str) -> list[str]:
+    """Query strings to try against /teams?search, best first.
+
+    The endpoint 400s on anything but alphanumerics and spaces ("Athletico-PR")
+    and matches on substrings, so the stripped API name can still miss
+    ("1 FC Nurnberg" → 0 results) where the short name hits. Acceptance is
+    still gated on the slug check below, so a loose query is safe.
+    """
+    import re
+    import unicodedata
+    terms = []
+    for cand in (target, our):
+        s = unicodedata.normalize("NFKD", (cand or "")).encode("ascii", "ignore").decode("ascii")
+        s = re.sub(r"\s+", " ", re.sub(r"[^A-Za-z0-9 ]", " ", s)).strip()
+        if len(s) >= 3 and s not in terms:
+            terms.append(s)
+    return terms
 
 
 class Budget:
@@ -149,16 +174,20 @@ def build_id_cache(our_teams: set[str], season: int, budget: Budget) -> dict:
         if not budget.ok():
             break
         target = NAME_OVERRIDES.get(team, team)
-        if len(target) < 3:
-            continue  # API requires >= 3 chars
-        try:
-            resp = _get("/teams", {"search": target}, budget).get("response", [])
-        except Exception as e:
-            print(f"  [warn] /teams search '{team}': {e}"); continue
         tslug = _slug(target)
-        hit = next((t for t in resp if _slug(t["team"]["name"]) == tslug), None)
-        if hit is None and len(resp) == 1:
-            hit = resp[0]  # unambiguous single result
+        hit = None
+        for i, term in enumerate(_search_terms(team, target)):
+            if not budget.ok():
+                break
+            try:
+                resp = _get("/teams", {"search": term}, budget).get("response", [])
+            except Exception as e:
+                print(f"  [warn] /teams search '{term}': {e}"); continue
+            hit = next((t for t in resp if _slug(t["team"]["name"]) == tslug), None)
+            if hit is None and i == 0 and len(resp) == 1:
+                hit = resp[0]  # unambiguous single result for the exact name
+            if hit:
+                break
         if hit:
             cache[team] = hit["team"]["id"]
             matched.add(team)

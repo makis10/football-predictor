@@ -1,0 +1,199 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2015-07-18,Ujpest,Paks,0,0,D
+2015-07-18,Diosgyori VTK,Vasas,2,1,H
+2015-07-18,MTK Budapest,Puskas Academy,1,0,H
+2015-07-18,Budapest Honved,Fehervar FC,1,0,H
+2015-07-19,Szombathelyi Haladas,Ferencvarosi TC,0,2,A
+2015-07-19,Bekescsaba 1912,Debreceni VSC,2,3,A
+2015-07-25,Budapest Honved,MTK Budapest,2,1,H
+2015-07-25,Fehervar FC,Szombathelyi Haladas,0,1,A
+2015-07-25,Paks,Bekescsaba 1912,4,0,H
+2015-07-25,Vasas,Ujpest,1,3,A
+2015-07-26,Ferencvarosi TC,Diosgyori VTK,3,1,H
+2015-07-26,Debreceni VSC,Puskas Academy,1,1,D
+2015-08-01,Ujpest,Bekescsaba 1912,2,0,H
+2015-08-01,Puskas Academy,Paks,1,0,H
+2015-08-01,Diosgyori VTK,Fehervar FC,1,2,A
+2015-08-01,Szombathelyi Haladas,MTK Budapest,2,2,D
+2015-08-01,Vasas,Ferencvarosi TC,0,2,A
+2015-08-02,Budapest Honved,Debreceni VSC,3,3,D
+2015-08-08,Ujpest,Puskas Academy,2,2,D
+2015-08-08,Paks,Budapest Honved,3,1,H
+2015-08-08,MTK Budapest,Diosgyori VTK,5,0,H
+2015-08-08,Bekescsaba 1912,Vasas,0,2,A
+2015-08-08,Fehervar FC,Ferencvarosi TC,1,3,A
+2015-08-09,Debreceni VSC,Szombathelyi Haladas,0,1,A
+2015-08-15,Vasas,Fehervar FC,2,1,H
+2015-08-15,Ujpest,Budapest Honved,1,1,D
+2015-08-15,Puskas Academy,Bekescsaba 1912,1,2,A
+2015-08-15,Diosgyori VTK,Debreceni VSC,0,2,A
+2015-08-15,Szombathelyi Haladas,Paks,1,0,H
+2015-08-15,Ferencvarosi TC,MTK Budapest,2,0,H
+2015-08-22,Ujpest,Szombathelyi Haladas,0,0,D
+2015-08-22,Paks,Diosgyori VTK,1,1,D
+2015-08-22,Puskas Academy,Vasas,1,0,H
+2015-08-22,Bekescsaba 1912,Budapest Honved,1,4,A
+2015-08-22,Debreceni VSC,Ferencvarosi TC,0,3,A
+2015-08-23,MTK Budapest,Fehervar FC,1,0,H
+2015-08-29,Budapest Honved,Puskas Academy,0,0,D
+2015-08-29,Vasas,MTK Budapest,0,1,A
+2015-08-29,Diosgyori VTK,Ujpest,2,1,H
+2015-08-29,Bekescsaba 1912,Szombathelyi Haladas,0,1,A
+2015-08-29,Ferencvarosi TC,Paks,2,0,H
+2015-08-30,Fehervar FC,Debreceni VSC,1,0,H
+2015-09-12,Budapest Honved,Vasas,0,1,A
+2015-09-12,Paks,Fehervar FC,2,0,H
+2015-09-12,Puskas Academy,Szombathelyi Haladas,1,1,D
+2015-09-12,Debreceni VSC,MTK Budapest,1,0,H
+2015-09-12,Bekescsaba 1912,Diosgyori VTK,1,1,D
+2015-09-12,Ujpest,Ferencvarosi TC,1,2,A
+2015-09-19,Ferencvarosi TC,Bekescsaba 1912,1,0,H
+2015-09-19,Vasas,Debreceni VSC,0,1,A
+2015-09-19,Paks,MTK Budapest,0,0,D
+2015-09-19,Diosgyori VTK,Puskas Academy,3,2,H
+2015-09-19,Szombathelyi Haladas,Budapest Honved,0,0,D
+2015-09-19,Fehervar FC,Ujpest,3,0,H
+2015-09-26,Budapest Honved,Diosgyori VTK,2,1,H
+2015-09-26,Paks,Debreceni VSC,1,1,D
+2015-09-26,Puskas Academy,Ferencvarosi TC,0,0,D
+2015-09-26,Szombathelyi Haladas,Vasas,1,1,D
+2015-09-26,Bekescsaba 1912,Fehervar FC,2,0,H
+2015-09-26,Ujpest,MTK Budapest,2,2,D
+2015-10-03,Fehervar FC,Puskas Academy,3,2,H
+2015-10-03,Vasas,Paks,1,2,A
+2015-10-03,Debreceni VSC,Ujpest,1,1,D
+2015-10-03,Diosgyori VTK,Szombathelyi Haladas,1,1,D
+2015-10-03,Bekescsaba 1912,MTK Budapest,1,1,D
+2015-10-03,Ferencvarosi TC,Budapest Honved,2,1,H
+2015-10-17,Fehervar FC,Budapest Honved,3,0,H
+2015-10-17,Vasas,Diosgyori VTK,0,1,A
+2015-10-17,Paks,Ujpest,1,0,H
+2015-10-17,Puskas Academy,MTK Budapest,2,3,A
+2015-10-17,Debreceni VSC,Bekescsaba 1912,7,0,H
+2015-10-17,Ferencvarosi TC,Szombathelyi Haladas,3,1,H
+2015-10-24,Puskas Academy,Debreceni VSC,1,1,D
+2015-10-24,Ujpest,Vasas,2,0,H
+2015-10-24,Diosgyori VTK,Ferencvarosi TC,0,2,A
+2015-10-24,Szombathelyi Haladas,Fehervar FC,1,0,H
+2015-10-24,MTK Budapest,Budapest Honved,2,1,H
+2015-10-24,Bekescsaba 1912,Paks,2,3,A
+2015-10-31,Paks,Puskas Academy,4,2,H
+2015-10-31,Debreceni VSC,Budapest Honved,0,0,D
+2015-10-31,Fehervar FC,Diosgyori VTK,2,1,H
+2015-10-31,Ferencvarosi TC,Vasas,5,1,H
+2015-10-31,MTK Budapest,Szombathelyi Haladas,0,1,A
+2015-10-31,Bekescsaba 1912,Ujpest,1,3,A
+2015-11-21,Budapest Honved,Ujpest,1,2,A
+2015-11-21,Fehervar FC,Vasas,2,0,H
+2015-11-21,Paks,Szombathelyi Haladas,2,0,H
+2015-11-21,Debreceni VSC,Diosgyori VTK,1,0,H
+2015-11-21,Bekescsaba 1912,Puskas Academy,2,1,H
+2015-11-21,MTK Budapest,Ferencvarosi TC,1,0,H
+2015-11-28,Budapest Honved,Bekescsaba 1912,3,2,H
+2015-11-28,Fehervar FC,MTK Budapest,1,0,H
+2015-11-28,Vasas,Puskas Academy,2,4,A
+2015-11-28,Diosgyori VTK,Paks,1,1,D
+2015-11-28,Szombathelyi Haladas,Ujpest,0,3,A
+2015-11-28,Ferencvarosi TC,Debreceni VSC,3,0,H
+2015-12-01,Puskas Academy,Ujpest,1,1,D
+2015-12-02,Budapest Honved,Paks,0,0,D
+2015-12-02,Ferencvarosi TC,Fehervar FC,1,0,H
+2015-12-02,Vasas,Bekescsaba 1912,4,0,H
+2015-12-02,Diosgyori VTK,MTK Budapest,1,1,D
+2015-12-02,Szombathelyi Haladas,Debreceni VSC,2,2,D
+2015-12-05,Ujpest,Diosgyori VTK,2,1,H
+2015-12-05,Paks,Ferencvarosi TC,0,5,A
+2015-12-05,Puskas Academy,Budapest Honved,0,3,A
+2015-12-05,Szombathelyi Haladas,Bekescsaba 1912,1,1,D
+2015-12-05,MTK Budapest,Vasas,2,1,H
+2015-12-05,Debreceni VSC,Fehervar FC,1,2,A
+2015-12-12,Fehervar FC,Paks,1,0,H
+2015-12-12,Vasas,Budapest Honved,2,1,H
+2015-12-12,Debreceni VSC,MTK Budapest,3,1,H
+2015-12-12,Diosgyori VTK,Bekescsaba 1912,2,0,H
+2015-12-12,Szombathelyi Haladas,Puskas Academy,2,1,H
+2015-12-12,Ferencvarosi TC,Ujpest,0,1,A
+2016-02-13,Budapest Honved,Szombathelyi Haladas,0,1,A
+2016-02-13,Puskas Academy,Diosgyori VTK,1,0,H
+2016-02-13,Debreceni VSC,Vasas,4,0,H
+2016-02-13,Bekescsaba 1912,Ferencvarosi TC,0,1,A
+2016-02-13,Ujpest,Fehervar FC,1,0,H
+2016-02-20,Diosgyori VTK,Budapest Honved,2,1,H
+2016-02-20,Fehervar FC,Bekescsaba 1912,1,1,D
+2016-02-20,Ferencvarosi TC,Puskas Academy,2,0,H
+2016-02-20,Vasas,Szombathelyi Haladas,1,0,H
+2016-02-20,Debreceni VSC,Paks,2,0,H
+2016-02-20,Ujpest,MTK Budapest,1,1,D
+2016-02-27,Ujpest,Debreceni VSC,1,1,D
+2016-02-27,Paks,Vasas,3,0,H
+2016-02-27,Puskas Academy,Fehervar FC,0,1,A
+2016-02-27,Szombathelyi Haladas,Diosgyori VTK,2,1,H
+2016-02-27,MTK Budapest,Bekescsaba 1912,0,0,D
+2016-02-27,Budapest Honved,Ferencvarosi TC,2,1,H
+2016-03-05,MTK Budapest,Ujpest,2,1,H
+2016-03-05,Budapest Honved,Vasas,0,0,D
+2016-03-05,Fehervar FC,Szombathelyi Haladas,2,1,H
+2016-03-05,Ferencvarosi TC,Diosgyori VTK,2,2,D
+2016-03-05,Paks,Bekescsaba 1912,0,2,A
+2016-03-05,Debreceni VSC,Puskas Academy,4,2,H
+2016-03-08,Vasas,Debreceni VSC,0,0,D
+2016-03-09,Puskas Academy,Paks,2,1,H
+2016-03-09,Diosgyori VTK,Fehervar FC,2,1,H
+2016-03-09,Szombathelyi Haladas,Ujpest,1,1,D
+2016-03-09,MTK Budapest,Budapest Honved,1,0,H
+2016-03-09,Bekescsaba 1912,Ferencvarosi TC,0,1,A
+2016-03-12,Fehervar FC,Bekescsaba 1912,1,1,D
+2016-03-12,Ujpest,Diosgyori VTK,1,0,H
+2016-03-12,Paks,Vasas,2,0,H
+2016-03-12,Debreceni VSC,Budapest Honved,0,3,A
+2016-03-12,MTK Budapest,Szombathelyi Haladas,3,1,H
+2016-03-12,Ferencvarosi TC,Puskas Academy,4,0,H
+2016-03-19,Budapest Honved,Paks,2,0,H
+2016-03-19,Puskas Academy,Fehervar FC,0,0,D
+2016-03-19,Diosgyori VTK,Szombathelyi Haladas,3,0,H
+2016-03-19,Bekescsaba 1912,Ujpest,1,0,H
+2016-03-19,Vasas,Ferencvarosi TC,1,4,A
+2016-03-20,MTK Budapest,Debreceni VSC,1,0,H
+2016-04-02,Budapest Honved,Fehervar FC,2,1,H
+2016-04-02,Paks,MTK Budapest,4,1,H
+2016-04-02,Puskas Academy,Szombathelyi Haladas,1,1,D
+2016-04-02,Debreceni VSC,Ferencvarosi TC,2,1,H
+2016-04-02,Bekescsaba 1912,Diosgyori VTK,0,0,D
+2016-04-02,Vasas,Ujpest,3,2,H
+2016-04-05,Fehervar FC,Debreceni VSC,1,0,H
+2016-04-06,Ujpest,Budapest Honved,2,0,H
+2016-04-06,Ferencvarosi TC,Paks,5,2,H
+2016-04-06,Diosgyori VTK,Puskas Academy,2,1,H
+2016-04-06,Szombathelyi Haladas,Vasas,2,1,H
+2016-04-06,MTK Budapest,Bekescsaba 1912,3,0,H
+2016-04-09,Fehervar FC,Vasas,2,2,D
+2016-04-09,Ujpest,Puskas Academy,2,2,D
+2016-04-09,Szombathelyi Haladas,Bekescsaba 1912,1,0,H
+2016-04-09,MTK Budapest,Diosgyori VTK,0,0,D
+2016-04-09,Paks,Debreceni VSC,0,1,A
+2016-04-10,Ferencvarosi TC,Budapest Honved,2,1,H
+2016-04-12,MTK Budapest,Paks,1,0,H
+2016-04-16,Budapest Honved,Szombathelyi Haladas,0,1,A
+2016-04-16,Vasas,Diosgyori VTK,1,3,A
+2016-04-16,Paks,Fehervar FC,0,1,A
+2016-04-16,Puskas Academy,Bekescsaba 1912,0,1,A
+2016-04-16,Debreceni VSC,Ujpest,1,0,H
+2016-04-16,Ferencvarosi TC,MTK Budapest,2,1,H
+2016-04-19,Bekescsaba 1912,Vasas,1,1,D
+2016-04-20,Szombathelyi Haladas,Debreceni VSC,2,2,D
+2016-04-20,Ujpest,Paks,1,1,D
+2016-04-20,Diosgyori VTK,Budapest Honved,1,2,A
+2016-04-20,MTK Budapest,Puskas Academy,0,1,A
+2016-04-20,Fehervar FC,Ferencvarosi TC,1,0,H
+2016-04-23,Budapest Honved,Bekescsaba 1912,2,1,H
+2016-04-23,Fehervar FC,MTK Budapest,5,0,H
+2016-04-23,Vasas,Puskas Academy,1,0,H
+2016-04-23,Paks,Szombathelyi Haladas,2,3,A
+2016-04-23,Debreceni VSC,Diosgyori VTK,3,1,H
+2016-04-23,Ferencvarosi TC,Ujpest,2,2,D
+2016-04-30,Ujpest,Fehervar FC,0,3,A
+2016-04-30,Puskas Academy,Budapest Honved,2,1,H
+2016-04-30,Szombathelyi Haladas,Ferencvarosi TC,0,1,A
+2016-04-30,MTK Budapest,Vasas,0,2,A
+2016-04-30,Bekescsaba 1912,Debreceni VSC,0,0,D
+2016-04-30,Diosgyori VTK,Paks,0,2,A

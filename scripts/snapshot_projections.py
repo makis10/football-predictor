@@ -31,6 +31,7 @@ HIST_DIR = ROOT / "backend" / "data" / "models" / "projections"
 COMPETITIONS = [
     "EPL", "LaLiga", "SerieA", "Bundesliga", "Ligue1", "Championship",
     "LeagueOne", "GreekSL", "Eredivisie", "PrimeiraLiga", "BrazilSerieA",
+    "Belgium", "Turkey", "Scotland", "Denmark", "Sweden", "Norway", "Poland", "Austria", "Switzerland", "Romania", "Ireland", "Finland",
     "CL", "EL", "ECL",
 ]
 

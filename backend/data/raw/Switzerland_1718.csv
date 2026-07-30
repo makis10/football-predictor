@@ -1,0 +1,181 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,PSH,PSD,PSA
+22/07/2017,Lausanne,St. Gallen,3,3,D,2.17,3.55,3.54
+22/07/2017,Young Boys,Basel,2,0,H,2.75,3.76,2.53
+23/07/2017,Grasshoppers,Zurich,0,2,A,4.04,3.92,1.92
+23/07/2017,Luzern,Lugano,1,0,H,2.03,3.79,3.73
+23/07/2017,Thun,Sion,0,1,A,2.46,3.58,2.95
+29/07/2017,Grasshoppers,Young Boys,0,4,A,3.44,3.74,2.14
+30/07/2017,Basel,Luzern,3,1,H,1.4,5.32,8.13
+30/07/2017,Lausanne,Sion,0,1,A,2.62,3.59,2.74
+30/07/2017,Zurich,Thun,2,1,H,1.88,3.9,4.23
+05/08/2017,Lugano,Zurich,0,0,D,3.57,3.72,2.1
+05/08/2017,Thun,Basel,0,3,A,3.9,3.77,1.99
+06/08/2017,Luzern,Grasshoppers,2,2,D,1.74,4.24,4.67
+06/08/2017,St. Gallen,Sion,2,0,H,2.66,3.52,2.74
+06/08/2017,Young Boys,Lausanne,3,0,H,1.33,5.86,9.62
+09/08/2017,Lausanne,Lugano,2,3,A,2.55,3.48,2.89
+09/08/2017,St. Gallen,Luzern,0,2,A,2.09,3.84,3.49
+09/08/2017,Young Boys,Thun,0,4,A,1.64,4.47,5.25
+10/08/2017,Basel,Grasshoppers,3,2,H,1.26,6.89,11.35
+10/08/2017,Zurich,Sion,2,0,H,1.78,4.11,4.56
+16/08/2017,Lugano,St. Gallen,0,1,A,2.01,3.79,3.79
+19/08/2017,Thun,Lausanne,5,2,H,1.73,4.09,4.95
+19/08/2017,Zurich,Young Boys,0,0,D,2.62,3.65,2.71
+20/08/2017,Basel,Lugano,1,1,D,1.33,5.57,11
+20/08/2017,Grasshoppers,St. Gallen,2,0,H,2.49,3.63,2.88
+20/08/2017,Sion,Luzern,1,1,D,2.48,3.63,2.89
+26/08/2017,Lausanne,Grasshoppers,1,1,D,2.54,3.56,2.86
+26/08/2017,Lugano,Thun,4,1,H,2.25,3.66,3.25
+27/08/2017,Luzern,Zurich,1,1,D,2.89,3.51,2.54
+27/08/2017,Sion,Basel,1,1,D,5.38,4.12,1.68
+27/08/2017,St. Gallen,Young Boys,2,2,D,3.95,3.78,1.97
+09/09/2017,Basel,Lausanne,1,2,A,1.28,6.65,10.8
+09/09/2017,Zurich,St. Gallen,1,1,D,1.74,4.16,4.8
+10/09/2017,Grasshoppers,Sion,3,2,H,2.2,3.61,3.4
+10/09/2017,Luzern,Thun,2,2,D,2.17,3.71,3.4
+10/09/2017,Young Boys,Lugano,3,0,H,1.61,4.51,5.46
+20/09/2017,Lausanne,Zurich,1,1,D,3.63,3.68,2.09
+20/09/2017,St. Gallen,Basel,2,1,H,5.02,4.24,1.69
+20/09/2017,Young Boys,Luzern,4,1,H,1.52,5.18,5.75
+21/09/2017,Lugano,Sion,1,2,A,1.92,3.78,4.18
+21/09/2017,Thun,Grasshoppers,2,2,D,1.93,4.13,3.75
+23/09/2017,Basel,Zurich,1,0,H,1.75,3.98,4.95
+23/09/2017,Luzern,Lausanne,2,3,A,1.76,4.22,4.55
+24/09/2017,Lugano,Grasshoppers,0,3,A,2.24,3.58,3.33
+24/09/2017,Sion,Young Boys,0,1,A,3.64,3.85,2.04
+24/09/2017,St. Gallen,Thun,3,0,H,2.7,3.77,2.57
+27/09/2017,Sion,Lausanne,1,1,D,1.65,4.16,5.64
+30/09/2017,Grasshoppers,Basel,0,0,D,4.81,3.92,1.78
+01/10/2017,Thun,Luzern,2,0,H,2.33,3.88,2.96
+01/10/2017,Young Boys,St. Gallen,6,1,H,1.44,5.19,7.25
+01/10/2017,Zurich,Lugano,3,0,H,1.63,4.03,6.13
+14/10/2017,Lausanne,Young Boys,2,1,H,6.12,5.02,1.51
+14/10/2017,Lugano,Basel,0,4,A,4.38,3.76,1.88
+15/10/2017,Grasshoppers,Luzern,1,1,D,2.21,3.79,3.28
+15/10/2017,Sion,St. Gallen,1,2,A,1.88,3.91,4.18
+15/10/2017,Thun,Zurich,1,3,A,2.83,3.76,2.47
+21/10/2017,Basel,Thun,2,1,H,1.4,5.46,7.68
+21/10/2017,Zurich,Grasshoppers,0,4,A,1.85,3.89,4.41
+22/10/2017,Luzern,Young Boys,0,1,A,3.86,3.82,1.98
+22/10/2017,Sion,Lugano,2,2,D,2.13,3.55,3.65
+22/10/2017,St. Gallen,Lausanne,0,4,A,1.91,4.05,3.93
+28/10/2017,Lausanne,Thun,1,3,A,2.92,3.66,2.44
+28/10/2017,Zurich,Basel,0,0,D,3.57,3.57,2.15
+29/10/2017,Lugano,Luzern,1,0,H,2.06,3.7,3.7
+29/10/2017,St. Gallen,Grasshoppers,3,1,H,2.87,3.51,2.55
+29/10/2017,Young Boys,Sion,5,1,H,1.43,5.12,7.56
+04/11/2017,Grasshoppers,Lausanne,2,0,H,1.7,4.16,5.12
+04/11/2017,Sion,Zurich,1,1,D,2.96,3.56,2.46
+05/11/2017,Basel,Young Boys,1,1,D,1.87,3.85,4.37
+05/11/2017,Luzern,St. Gallen,3,0,H,2.11,3.83,3.45
+05/11/2017,Thun,Lugano,1,1,D,2.27,3.58,3.26
+18/11/2017,Basel,Sion,5,1,H,1.32,5.89,10.09
+18/11/2017,St. Gallen,Lugano,0,2,A,2.65,3.58,2.72
+19/11/2017,Grasshoppers,Thun,2,0,H,2.01,3.68,3.9
+19/11/2017,Lausanne,Luzern,3,1,H,2.69,3.71,2.61
+19/11/2017,Young Boys,Zurich,2,1,H,1.77,3.9,4.9
+25/11/2017,Luzern,Basel,1,4,A,6.15,4.44,1.57
+25/11/2017,Thun,St. Gallen,1,2,A,1.99,3.84,3.8
+26/11/2017,Lugano,Young Boys,1,2,A,3.8,3.6,2.06
+26/11/2017,Sion,Grasshoppers,3,0,H,2.93,3.63,2.45
+26/11/2017,Zurich,Lausanne,2,0,H,1.38,5.51,8.37
+02/12/2017,Lausanne,Basel,1,4,A,7.66,5.11,1.43
+02/12/2017,Luzern,Sion,2,1,H,2.22,3.73,3.26
+03/12/2017,Grasshoppers,Lugano,0,1,A,2.47,3.38,3.09
+03/12/2017,St. Gallen,Zurich,1,3,A,3.81,3.7,2.03
+03/12/2017,Thun,Young Boys,3,1,H,4.48,4.32,1.75
+09/12/2017,Basel,St. Gallen,3,0,H,1.24,6.96,12.94
+09/12/2017,Sion,Thun,2,3,A,2.44,3.68,2.9
+10/12/2017,Lugano,Lausanne,1,2,A,1.61,4.16,6.07
+10/12/2017,Young Boys,Grasshoppers,1,1,D,1.49,4.45,7.78
+10/12/2017,Zurich,Luzern,1,2,A,1.59,4.3,6.08
+16/12/2017,St. Gallen,Sion,3,2,H,2.37,3.67,3.02
+16/12/2017,Thun,Lugano,0,2,A,2.32,3.56,3.19
+17/12/2017,Grasshoppers,Basel,0,2,A,6.26,4.13,1.61
+17/12/2017,Lausanne,Zurich,5,1,H,4.45,4.01,1.81
+17/12/2017,Luzern,Young Boys,2,4,A,4.84,4.2,1.72
+03/02/2018,Luzern,Lausanne,2,1,H,1.9,3.83,4.1
+03/02/2018,Young Boys,St. Gallen,2,0,H,1.29,6.21,10.49
+04/02/2018,Basel,Lugano,0,1,A,1.34,5.35,10.3
+04/02/2018,Sion,Grasshoppers,1,3,A,2.34,3.63,3.06
+04/02/2018,Zurich,Thun,2,4,A,1.66,4.18,5.27
+10/02/2018,Lugano,Sion,1,0,H,2.01,3.62,3.91
+10/02/2018,Thun,Basel,0,2,A,5.78,4.44,1.6
+11/02/2018,Grasshoppers,Luzern,1,2,A,2.02,3.65,3.82
+11/02/2018,Lausanne,Young Boys,1,4,A,7.23,5.32,1.42
+11/02/2018,St. Gallen,Zurich,1,2,A,3.47,3.78,2.09
+17/02/2018,Basel,St. Gallen,0,2,A,1.22,7.52,13.42
+17/02/2018,Lugano,Grasshoppers,1,0,H,2.06,3.35,4.08
+18/02/2018,Sion,Lausanne,3,1,H,1.9,3.84,4.11
+18/02/2018,Young Boys,Thun,3,1,H,1.37,5.31,8.73
+18/02/2018,Zurich,Luzern,1,1,D,1.65,4.24,5.37
+24/02/2018,Young Boys,Sion,1,0,H,1.27,6.87,10.1
+25/02/2018,Grasshoppers,Zurich,1,0,H,3.43,3.48,2.22
+25/02/2018,Luzern,Thun,2,1,H,2.25,3.65,3.21
+25/02/2018,St. Gallen,Lugano,3,0,H,2.9,3.31,2.61
+03/03/2018,Grasshoppers,Lausanne,0,0,D,1.78,3.87,4.75
+04/03/2018,Lugano,Young Boys,2,4,A,4.49,3.55,1.9
+04/03/2018,Sion,Luzern,1,1,D,2.18,3.76,3.27
+04/03/2018,Thun,St. Gallen,1,2,A,1.81,4.18,4.22
+10/03/2018,Lausanne,St. Gallen,1,4,A,2.72,3.71,2.54
+10/03/2018,Zurich,Lugano,3,0,H,2.32,3.19,3.49
+11/03/2018,Luzern,Basel,1,0,H,5.23,3.91,1.71
+11/03/2018,Sion,Thun,7,2,H,2.1,3.91,3.35
+11/03/2018,Young Boys,Grasshoppers,3,1,H,1.37,5.35,8.8
+14/03/2018,Lausanne,Basel,1,1,D,8.21,5.12,1.4
+17/03/2018,St. Gallen,Grasshoppers,2,1,H,2.45,3.54,2.96
+17/03/2018,Zurich,Young Boys,1,2,A,4.15,3.84,1.89
+18/03/2018,Basel,Sion,1,0,H,1.33,5.61,9.88
+18/03/2018,Lugano,Luzern,1,2,A,2.12,3.42,3.78
+18/03/2018,Thun,Lausanne,0,0,D,1.75,4.3,4.42
+31/03/2018,Grasshoppers,Thun,0,2,A,1.98,3.57,4.06
+31/03/2018,Sion,Zurich,1,1,D,2.86,3.43,2.57
+02/04/2018,Lausanne,Lugano,2,1,H,3.39,3.46,2.24
+02/04/2018,Luzern,St. Gallen,3,1,H,2.22,3.69,3.24
+02/04/2018,Young Boys,Basel,2,2,D,1.95,3.86,3.84
+07/04/2018,Thun,Luzern,1,0,H,2.16,3.79,3.3
+07/04/2018,Zurich,Grasshoppers,1,1,D,2.43,3.25,3.22
+08/04/2018,Lausanne,Sion,0,2,A,3.57,3.94,2.02
+08/04/2018,Lugano,Basel,0,1,A,4.36,3.61,1.91
+08/04/2018,St. Gallen,Young Boys,2,4,A,5.13,4.36,1.65
+11/04/2018,Basel,Zurich,3,0,H,1.47,4.53,7.66
+14/04/2018,Grasshoppers,St. Gallen,1,2,A,2.06,3.51,3.85
+14/04/2018,Lugano,Thun,1,1,D,1.93,3.54,4.32
+15/04/2018,Basel,Lausanne,2,1,H,1.22,7.06,14.29
+15/04/2018,Luzern,Sion,0,1,A,2.53,3.69,2.75
+15/04/2018,Young Boys,Zurich,1,0,H,1.38,5.33,8.03
+18/04/2018,Basel,Grasshoppers,1,0,H,1.51,4.42,7.13
+18/04/2018,Sion,Lugano,0,1,A,2.29,3.48,3.27
+18/04/2018,Thun,Young Boys,2,2,D,4.66,4.23,1.72
+18/04/2018,Zurich,St. Gallen,4,0,H,1.96,3.83,3.85
+19/04/2018,Lausanne,Luzern,0,1,A,2.99,3.66,2.37
+21/04/2018,Grasshoppers,Lugano,4,3,H,2.58,3.12,3.11
+21/04/2018,St. Gallen,Thun,0,1,A,2.21,3.79,3.18
+22/04/2018,Luzern,Zurich,2,1,H,2.72,3.34,2.76
+22/04/2018,Sion,Basel,2,2,D,3.95,3.87,1.93
+22/04/2018,Young Boys,Lausanne,4,1,H,1.18,8.4,15
+28/04/2018,Lausanne,Grasshoppers,0,1,A,3.23,3.61,2.25
+28/04/2018,Young Boys,Luzern,2,1,H,1.33,5.81,9.63
+29/04/2018,Basel,Thun,6,1,H,1.47,4.64,7.35
+29/04/2018,Lugano,St. Gallen,2,1,H,1.88,3.71,4.4
+29/04/2018,Zurich,Sion,3,3,D,2.21,3.65,3.3
+05/05/2018,Luzern,Lugano,2,0,H,2.52,3.54,2.85
+05/05/2018,Sion,Young Boys,0,1,A,2.37,3.8,2.9
+06/05/2018,St. Gallen,Basel,2,4,A,4.53,4.22,1.75
+06/05/2018,Thun,Grasshoppers,2,1,H,2.34,3.47,3.17
+06/05/2018,Zurich,Lausanne,1,1,D,1.52,4.76,6.22
+09/05/2018,Grasshoppers,Sion,0,2,A,2.91,3.63,2.41
+09/05/2018,St. Gallen,Luzern,2,3,A,2.55,3.58,2.77
+09/05/2018,Thun,Zurich,0,1,A,2.3,3.82,2.97
+10/05/2018,Basel,Young Boys,5,1,H,2.16,3.91,3.17
+10/05/2018,Lugano,Lausanne,2,0,H,1.61,4.19,5.7
+13/05/2018,Lausanne,Thun,0,3,A,2.97,4.03,2.2
+13/05/2018,Luzern,Grasshoppers,1,1,D,2.34,3.6,2.98
+13/05/2018,Sion,St. Gallen,3,2,H,1.63,4.86,4.54
+13/05/2018,Young Boys,Lugano,3,1,H,1.62,4.46,5.06
+13/05/2018,Zurich,Basel,4,1,H,3.23,4.12,2.05
+19/05/2018,Basel,Luzern,2,2,D,1.37,5.52,7.71
+19/05/2018,Grasshoppers,Young Boys,1,2,A,3.64,4.24,1.89
+19/05/2018,Lugano,Zurich,1,1,D,2.06,3.59,3.64
+19/05/2018,St. Gallen,Lausanne,0,3,A,1.58,4.61,5.28
+19/05/2018,Thun,Sion,1,4,A,1.94,4.42,3.34

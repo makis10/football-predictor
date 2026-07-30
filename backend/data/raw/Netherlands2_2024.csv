@@ -1,0 +1,381 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2024-08-09,Vitesse,Telstar,2,3,A
+2024-08-09,Emmen,Dordrecht,1,2,A
+2024-08-09,MVV,Cambuur,0,1,A
+2024-08-09,FC Eindhoven,Den Bosch,2,0,H
+2024-08-09,FC OSS,Excelsior,3,1,H
+2024-08-09,Helmond Sport,Jong Utrecht,1,1,D
+2024-08-10,ADO Den Haag,VVV Venlo,1,1,D
+2024-08-11,De Graafschap,FC Volendam,4,3,H
+2024-08-12,Jong PSV U21,Jong Ajax,2,2,D
+2024-08-12,Jong AZ,Roda,6,1,H
+2024-08-16,Excelsior,De Graafschap,3,1,H
+2024-08-16,VVV Venlo,Vitesse,0,1,A
+2024-08-16,Roda,FC OSS,0,0,D
+2024-08-16,Den Bosch,Jong AZ,6,0,H
+2024-08-16,Telstar,FC Eindhoven,0,3,A
+2024-08-16,Jong Utrecht,Jong PSV U21,0,2,A
+2024-08-17,Dordrecht,ADO Den Haag,1,1,D
+2024-08-18,Cambuur,Helmond Sport,0,1,A
+2024-08-18,FC Volendam,Emmen,0,1,A
+2024-08-19,Jong Ajax,MVV,0,0,D
+2024-08-23,ADO Den Haag,FC Volendam,2,1,H
+2024-08-23,De Graafschap,Jong Utrecht,2,2,D
+2024-08-23,Emmen,Helmond Sport,0,0,D
+2024-08-23,Den Bosch,MVV,1,1,D
+2024-08-23,FC OSS,Cambuur,1,0,H
+2024-08-24,FC Eindhoven,Jong Ajax,0,3,A
+2024-08-25,Vitesse,Excelsior,1,1,D
+2024-08-25,VVV Venlo,Roda,1,1,D
+2024-08-26,Jong PSV U21,Telstar,0,2,A
+2024-08-26,Jong AZ,Dordrecht,3,1,H
+2024-08-30,ADO Den Haag,Excelsior,0,5,A
+2024-08-30,Vitesse,FC Eindhoven,1,1,D
+2024-08-30,Dordrecht,Cambuur,2,0,H
+2024-08-30,MVV,Jong PSV U21,3,2,H
+2024-08-30,Helmond Sport,VVV Venlo,3,0,H
+2024-08-30,Jong Ajax,Den Bosch,1,2,A
+2024-08-30,Telstar,Jong AZ,0,0,D
+2024-08-30,Jong Utrecht,Emmen,1,2,A
+2024-08-31,FC Volendam,FC OSS,4,0,H
+2024-09-01,Roda,De Graafschap,1,4,A
+2024-09-06,De Graafschap,FC Eindhoven,2,0,H
+2024-09-08,Telstar,MVV,4,0,H
+2024-09-13,Excelsior,Telstar,3,2,H
+2024-09-13,De Graafschap,Helmond Sport,2,3,A
+2024-09-13,VVV Venlo,Jong Utrecht,3,2,H
+2024-09-13,Emmen,Roda,1,3,A
+2024-09-13,MVV,FC Volendam,2,2,D
+2024-09-13,Jong AZ,Vitesse,0,1,A
+2024-09-13,Cambuur,Jong Ajax,0,1,A
+2024-09-13,Den Bosch,ADO Den Haag,2,0,H
+2024-09-13,FC Eindhoven,Dordrecht,0,0,D
+2024-09-13,FC OSS,Jong PSV U21,0,3,A
+2024-09-16,Excelsior,VVV Venlo,4,0,H
+2024-09-16,Emmen,Vitesse,3,3,D
+2024-09-16,Jong PSV U21,ADO Den Haag,2,2,D
+2024-09-16,Cambuur,Roda,0,0,D
+2024-09-16,Helmond Sport,FC OSS,1,0,H
+2024-09-16,Jong Utrecht,Den Bosch,0,3,A
+2024-09-17,FC Volendam,Dordrecht,2,0,H
+2024-09-17,Jong Ajax,Jong AZ,1,2,A
+2024-09-20,ADO Den Haag,Telstar,1,1,D
+2024-09-20,VVV Venlo,Jong PSV U21,0,2,A
+2024-09-20,Dordrecht,Excelsior,2,2,D
+2024-09-20,Den Bosch,Emmen,1,0,H
+2024-09-20,Helmond Sport,FC Volendam,2,3,A
+2024-09-21,Roda,MVV,1,0,H
+2024-09-21,Vitesse,Jong Ajax,2,2,D
+2024-09-22,FC OSS,FC Eindhoven,0,4,A
+2024-09-23,Jong AZ,De Graafschap,2,2,D
+2024-09-23,Jong Utrecht,Cambuur,0,4,A
+2024-09-27,Excelsior,Jong AZ,4,2,H
+2024-09-27,ADO Den Haag,Jong Utrecht,1,1,D
+2024-09-27,MVV,FC OSS,2,2,D
+2024-09-27,FC Volendam,VVV Venlo,2,4,A
+2024-09-27,FC Eindhoven,Roda,0,0,D
+2024-09-28,Telstar,Den Bosch,0,0,D
+2024-09-29,De Graafschap,Vitesse,3,1,H
+2024-09-29,Cambuur,Emmen,1,3,A
+2024-09-30,Jong PSV U21,Helmond Sport,1,3,A
+2024-09-30,Jong Ajax,Dordrecht,0,1,A
+2024-10-04,Vitesse,FC Volendam,1,2,A
+2024-10-04,VVV Venlo,Cambuur,0,1,A
+2024-10-04,Emmen,MVV,1,1,D
+2024-10-04,Dordrecht,Jong PSV U21,2,0,H
+2024-10-04,Roda,Excelsior,3,0,H
+2024-10-04,Jong AZ,FC Eindhoven,2,3,A
+2024-10-04,Den Bosch,De Graafschap,2,2,D
+2024-10-04,FC OSS,ADO Den Haag,1,5,A
+2024-10-04,Helmond Sport,Jong Ajax,1,1,D
+2024-10-04,Jong Utrecht,Telstar,1,1,D
+2024-10-12,Telstar,De Graafschap,2,2,D
+2024-10-13,MVV,VVV Venlo,2,0,H
+2024-10-18,Excelsior,MVV,3,2,H
+2024-10-18,ADO Den Haag,Roda,3,0,H
+2024-10-18,De Graafschap,Jong PSV U21,3,1,H
+2024-10-18,VVV Venlo,Dordrecht,2,3,A
+2024-10-18,Jong AZ,Helmond Sport,2,3,A
+2024-10-18,Cambuur,FC Volendam,1,2,A
+2024-10-18,Den Bosch,Vitesse,4,2,H
+2024-10-18,FC Eindhoven,Emmen,0,3,A
+2024-10-18,FC OSS,Telstar,1,1,D
+2024-10-18,Jong Ajax,Jong Utrecht,0,0,D
+2024-10-21,Jong PSV U21,Excelsior,1,3,A
+2024-10-21,Cambuur,FC Eindhoven,2,0,H
+2024-10-21,Helmond Sport,Roda,2,1,H
+2024-10-21,Jong Ajax,ADO Den Haag,0,0,D
+2024-10-22,Emmen,FC OSS,2,0,H
+2024-10-22,Dordrecht,Vitesse,2,2,D
+2024-10-22,FC Volendam,Den Bosch,3,2,H
+2024-10-22,Jong Utrecht,Jong AZ,0,1,A
+2024-10-25,ADO Den Haag,De Graafschap,1,2,A
+2024-10-25,Vitesse,Jong PSV U21,1,3,A
+2024-10-25,VVV Venlo,Den Bosch,1,2,A
+2024-10-25,Dordrecht,Jong Utrecht,3,1,H
+2024-10-25,Roda,Jong Ajax,2,1,H
+2024-10-25,FC Volendam,FC Eindhoven,4,1,H
+2024-10-25,FC OSS,Jong AZ,2,1,H
+2024-10-26,Excelsior,Cambuur,0,1,A
+2024-10-27,Emmen,Telstar,0,1,A
+2024-10-27,MVV,Helmond Sport,1,2,A
+2024-11-01,De Graafschap,Dordrecht,4,1,H
+2024-11-01,Jong AZ,Cambuur,2,3,A
+2024-11-01,FC Eindhoven,ADO Den Haag,0,4,A
+2024-11-01,Jong Ajax,VVV Venlo,0,1,A
+2024-11-02,Vitesse,FC OSS,0,0,D
+2024-11-02,Den Bosch,Roda,1,1,D
+2024-11-03,Telstar,FC Volendam,2,2,D
+2024-11-03,Helmond Sport,Excelsior,0,1,A
+2024-11-04,Jong PSV U21,Emmen,2,3,A
+2024-11-04,Jong Utrecht,MVV,4,3,H
+2024-11-08,Excelsior,FC Eindhoven,2,0,H
+2024-11-08,ADO Den Haag,Vitesse,2,0,H
+2024-11-08,VVV Venlo,Jong AZ,0,1,A
+2024-11-08,Emmen,Jong Ajax,4,2,H
+2024-11-08,MVV,De Graafschap,0,0,D
+2024-11-08,FC Volendam,Jong Utrecht,2,0,H
+2024-11-08,Cambuur,Jong PSV U21,1,0,H
+2024-11-08,FC OSS,Den Bosch,1,0,H
+2024-11-09,Roda,Telstar,1,0,H
+2024-11-10,Dordrecht,Helmond Sport,4,0,H
+2024-11-15,Telstar,VVV Venlo,4,0,H
+2024-11-17,FC Eindhoven,MVV,1,1,D
+2024-11-22,De Graafschap,FC OSS,4,0,H
+2024-11-22,Vitesse,Cambuur,0,6,A
+2024-11-22,VVV Venlo,Emmen,0,2,A
+2024-11-22,Jong PSV U21,FC Volendam,1,4,A
+2024-11-22,MVV,Dordrecht,2,1,H
+2024-11-22,Jong AZ,ADO Den Haag,3,3,D
+2024-11-22,Den Bosch,Excelsior,0,3,A
+2024-11-22,Helmond Sport,FC Eindhoven,3,4,A
+2024-11-22,Jong Ajax,Telstar,3,0,H
+2024-11-22,Jong Utrecht,Roda,1,3,A
+2024-11-25,Emmen,De Graafschap,3,0,H
+2024-11-25,Dordrecht,FC OSS,2,2,D
+2024-11-25,Jong PSV U21,Jong AZ,2,1,H
+2024-11-25,FC Volendam,Jong Ajax,3,0,H
+2024-11-25,Helmond Sport,ADO Den Haag,2,1,H
+2024-11-26,Roda,Vitesse,3,0,H
+2024-11-26,Cambuur,Den Bosch,1,2,A
+2024-11-26,Jong Utrecht,Excelsior,0,0,D
+2024-11-29,Excelsior,Jong Ajax,2,0,H
+2024-11-29,ADO Den Haag,Emmen,2,1,H
+2024-11-29,Vitesse,Helmond Sport,2,1,H
+2024-11-29,Roda,FC Volendam,1,1,D
+2024-11-29,FC Eindhoven,Jong PSV U21,1,0,H
+2024-11-29,Telstar,Cambuur,2,2,D
+2024-11-30,FC OSS,Jong Utrecht,1,1,D
+2024-12-01,De Graafschap,VVV Venlo,3,1,H
+2024-12-01,Den Bosch,Dordrecht,2,3,A
+2024-12-02,Jong AZ,MVV,2,3,A
+2024-12-06,VVV Venlo,FC OSS,0,0,D
+2024-12-06,Dordrecht,Telstar,3,2,H
+2024-12-06,MVV,Vitesse,2,2,D
+2024-12-06,FC Volendam,Jong AZ,2,0,H
+2024-12-06,Helmond Sport,Den Bosch,0,0,D
+2024-12-07,Cambuur,ADO Den Haag,2,1,H
+2024-12-08,Emmen,Excelsior,1,1,D
+2024-12-09,Jong PSV U21,Roda,2,3,A
+2024-12-09,Jong Ajax,De Graafschap,2,0,H
+2024-12-09,Jong Utrecht,FC Eindhoven,0,4,A
+2024-12-13,Excelsior,FC Volendam,0,0,D
+2024-12-13,ADO Den Haag,MVV,2,0,H
+2024-12-13,De Graafschap,Cambuur,0,2,A
+2024-12-13,Vitesse,Jong Utrecht,2,1,H
+2024-12-13,Roda,Dordrecht,0,1,A
+2024-12-13,Jong AZ,Emmen,1,1,D
+2024-12-13,Den Bosch,Jong PSV U21,1,1,D
+2024-12-13,FC Eindhoven,VVV Venlo,1,3,A
+2024-12-13,FC OSS,Jong Ajax,2,1,H
+2024-12-13,Telstar,Helmond Sport,3,0,H
+2024-12-20,Emmen,Den Bosch,0,3,A
+2024-12-20,Dordrecht,FC Eindhoven,3,3,D
+2024-12-20,Jong PSV U21,Vitesse,6,4,H
+2024-12-20,Cambuur,Jong AZ,0,2,A
+2024-12-20,Jong Utrecht,Helmond Sport,3,1,H
+2024-12-21,VVV Venlo,Excelsior,1,1,D
+2024-12-22,MVV,Telstar,5,1,H
+2024-12-22,FC Volendam,De Graafschap,2,1,H
+2024-12-22,ADO Den Haag,FC OSS,1,0,H
+2024-12-23,Jong Ajax,Roda,3,1,H
+2025-01-10,Excelsior,Dordrecht,1,0,H
+2025-01-10,FC Eindhoven,FC Volendam,1,3,A
+2025-01-10,FC OSS,MVV,1,0,H
+2025-01-12,Telstar,Jong PSV U21,1,0,H
+2025-01-12,Vitesse,VVV Venlo,1,4,A
+2025-01-13,Jong AZ,Jong Ajax,2,1,H
+2025-01-17,ADO Den Haag,Helmond Sport,3,1,H
+2025-01-17,VVV Venlo,Telstar,1,0,H
+2025-01-17,Dordrecht,Jong AZ,1,1,D
+2025-01-17,FC Volendam,Vitesse,4,0,H
+2025-01-17,Cambuur,Excelsior,1,0,H
+2025-01-17,FC OSS,Roda,0,2,A
+2025-01-18,MVV,Den Bosch,5,0,H
+2025-01-19,Emmen,FC Eindhoven,1,2,A
+2025-01-20,Roda,Cambuur,0,1,A
+2025-01-20,Jong Ajax,Jong PSV U21,4,0,H
+2025-01-20,Jong Utrecht,De Graafschap,1,1,D
+2025-01-24,De Graafschap,Emmen,4,0,H
+2025-01-24,Vitesse,Dordrecht,0,3,A
+2025-01-24,Roda,Jong Utrecht,3,0,H
+2025-01-24,FC Volendam,MVV,3,1,H
+2025-01-24,Den Bosch,FC OSS,1,0,H
+2025-01-24,FC Eindhoven,Cambuur,4,2,H
+2025-01-25,Telstar,Jong Ajax,3,0,H
+2025-01-26,Excelsior,ADO Den Haag,1,0,H
+2025-01-26,Helmond Sport,Jong AZ,2,1,H
+2025-01-27,Jong PSV U21,VVV Venlo,1,2,A
+2025-01-27,Den Bosch,Jong Utrecht,2,0,H
+2025-01-31,ADO Den Haag,FC Eindhoven,2,1,H
+2025-01-31,Emmen,Jong PSV U21,4,2,H
+2025-01-31,Dordrecht,De Graafschap,1,1,D
+2025-01-31,Cambuur,Telstar,2,1,H
+2025-01-31,Den Bosch,FC Volendam,3,0,H
+2025-02-01,Excelsior,Vitesse,1,3,A
+2025-02-01,MVV,Roda,3,2,H
+2025-02-02,FC OSS,Helmond Sport,1,1,D
+2025-02-03,De Graafschap,ADO Den Haag,1,2,A
+2025-02-03,Jong AZ,VVV Venlo,3,0,H
+2025-02-07,De Graafschap,Den Bosch,1,0,H
+2025-02-07,Roda,Jong AZ,3,3,D
+2025-02-07,FC Volendam,ADO Den Haag,1,2,A
+2025-02-07,FC Eindhoven,FC OSS,3,0,H
+2025-02-08,Helmond Sport,Dordrecht,0,1,A
+2025-02-09,VVV Venlo,MVV,0,0,D
+2025-02-09,Telstar,Jong Utrecht,6,0,H
+2025-02-10,Vitesse,Emmen,2,0,H
+2025-02-10,Jong PSV U21,Cambuur,1,4,A
+2025-02-10,Jong Ajax,Excelsior,3,2,H
+2025-02-14,ADO Den Haag,Jong Ajax,1,0,H
+2025-02-14,Dordrecht,Roda,2,1,H
+2025-02-14,MVV,FC Eindhoven,2,0,H
+2025-02-14,Cambuur,FC OSS,1,1,D
+2025-02-14,Den Bosch,Telstar,0,1,A
+2025-02-15,Emmen,FC Volendam,1,2,A
+2025-02-16,Vitesse,De Graafschap,2,0,H
+2025-02-16,Excelsior,Helmond Sport,1,1,D
+2025-02-21,De Graafschap,Jong AZ,5,1,H
+2025-02-21,Roda,Den Bosch,0,0,D
+2025-02-21,FC OSS,Emmen,0,4,A
+2025-02-21,Helmond Sport,Vitesse,3,0,H
+2025-02-21,Telstar,Excelsior,1,3,A
+2025-02-22,VVV Venlo,FC Volendam,1,3,A
+2025-02-23,FC Eindhoven,Jong Utrecht,1,2,A
+2025-02-23,MVV,ADO Den Haag,1,4,A
+2025-02-24,Jong PSV U21,Dordrecht,1,2,A
+2025-02-24,Helmond Sport,Emmen,1,2,A
+2025-02-24,Jong Ajax,Cambuur,1,1,D
+2025-02-28,Dordrecht,Emmen,3,0,H
+2025-02-28,Jong PSV U21,De Graafschap,1,2,A
+2025-02-28,FC Volendam,Helmond Sport,3,1,H
+2025-02-28,Cambuur,VVV Venlo,5,0,H
+2025-02-28,Jong Utrecht,Jong Ajax,1,2,A
+2025-03-01,Vitesse,MVV,1,0,H
+2025-03-02,ADO Den Haag,Den Bosch,2,1,H
+2025-03-02,Excelsior,Roda,1,1,D
+2025-03-03,Jong AZ,Telstar,1,2,A
+2025-03-03,Jong Ajax,FC Eindhoven,0,2,A
+2025-03-03,Jong Utrecht,FC OSS,1,1,D
+2025-03-07,De Graafschap,Excelsior,2,1,H
+2025-03-07,VVV Venlo,Jong Ajax,1,0,H
+2025-03-07,Emmen,ADO Den Haag,0,1,A
+2025-03-07,Roda,Jong PSV U21,2,1,H
+2025-03-07,Jong AZ,Jong Utrecht,5,1,H
+2025-03-07,Den Bosch,Cambuur,0,2,A
+2025-03-07,FC Eindhoven,Vitesse,3,3,D
+2025-03-07,FC OSS,FC Volendam,0,2,A
+2025-03-07,Helmond Sport,MVV,4,0,H
+2025-03-07,Telstar,Dordrecht,5,0,H
+2025-03-10,Excelsior,Den Bosch,3,1,H
+2025-03-10,Jong PSV U21,FC OSS,2,2,D
+2025-03-10,Cambuur,Dordrecht,1,0,H
+2025-03-10,Jong Utrecht,Vitesse,0,2,A
+2025-03-11,ADO Den Haag,Jong AZ,0,3,A
+2025-03-11,Roda,Helmond Sport,3,2,H
+2025-03-11,FC Volendam,Telstar,3,0,H
+2025-03-11,Jong Ajax,Emmen,0,2,A
+2025-03-14,Vitesse,ADO Den Haag,0,1,A
+2025-03-14,Emmen,Jong Utrecht,2,0,H
+2025-03-14,Dordrecht,VVV Venlo,4,0,H
+2025-03-14,MVV,Jong AZ,0,1,A
+2025-03-14,FC Eindhoven,Excelsior,1,2,A
+2025-03-14,Helmond Sport,Jong PSV U21,1,1,D
+2025-03-14,Telstar,Roda,3,1,H
+2025-03-15,FC Volendam,Cambuur,4,1,H
+2025-03-16,FC OSS,De Graafschap,0,2,A
+2025-03-16,Den Bosch,Jong Ajax,3,1,H
+2025-03-22,De Graafschap,MVV,0,0,D
+2025-03-22,VVV Venlo,FC Eindhoven,2,2,D
+2025-03-28,Excelsior,Jong Utrecht,3,0,H
+2025-03-28,MVV,Emmen,1,2,A
+2025-03-28,Cambuur,De Graafschap,3,2,H
+2025-03-28,FC Eindhoven,Helmond Sport,2,2,D
+2025-03-28,Telstar,Vitesse,1,0,H
+2025-03-29,Roda,VVV Venlo,1,4,A
+2025-03-30,ADO Den Haag,Dordrecht,2,1,H
+2025-03-31,Jong PSV U21,Den Bosch,2,4,A
+2025-03-31,Jong AZ,FC OSS,1,1,D
+2025-03-31,Jong Ajax,FC Volendam,0,2,A
+2025-04-01,Jong Utrecht,VVV Venlo,0,0,D
+2025-04-04,Vitesse,Jong AZ,2,2,D
+2025-04-04,Emmen,Cambuur,3,0,H
+2025-04-04,Dordrecht,Jong Ajax,3,0,H
+2025-04-04,MVV,Excelsior,1,2,A
+2025-04-04,FC Volendam,Jong PSV U21,4,0,H
+2025-04-04,FC OSS,VVV Venlo,2,1,H
+2025-04-05,Helmond Sport,Telstar,2,2,D
+2025-04-06,Den Bosch,FC Eindhoven,2,2,D
+2025-04-06,De Graafschap,Roda,2,0,H
+2025-04-07,Jong AZ,Jong PSV U21,2,2,D
+2025-04-07,Jong Utrecht,ADO Den Haag,1,1,D
+2025-04-11,Excelsior,FC OSS,2,0,H
+2025-04-11,Roda,Emmen,1,0,H
+2025-04-11,FC Eindhoven,De Graafschap,1,0,H
+2025-04-11,Telstar,ADO Den Haag,1,1,D
+2025-04-12,Dordrecht,Den Bosch,4,0,H
+2025-04-13,Cambuur,Jong Utrecht,3,1,H
+2025-04-13,VVV Venlo,Helmond Sport,4,1,H
+2025-04-14,Jong PSV U21,MVV,3,2,H
+2025-04-14,Jong AZ,FC Volendam,0,1,A
+2025-04-14,Jong Ajax,Vitesse,1,1,D
+2025-04-18,Emmen,Jong AZ,1,4,A
+2025-04-18,MVV,Jong Utrecht,5,0,H
+2025-04-18,Den Bosch,VVV Venlo,0,0,D
+2025-04-18,FC Eindhoven,Telstar,0,4,A
+2025-04-18,Helmond Sport,Cambuur,1,1,D
+2025-04-19,Vitesse,Roda,3,0,H
+2025-04-19,FC OSS,Dordrecht,2,0,H
+2025-04-19,De Graafschap,Jong Ajax,2,0,H
+2025-04-20,ADO Den Haag,Jong PSV U21,3,2,H
+2025-04-20,FC Volendam,Excelsior,1,4,A
+2025-04-24,Roda,ADO Den Haag,1,1,D
+2025-04-25,Dordrecht,MVV,3,0,H
+2025-04-25,Cambuur,Vitesse,2,1,H
+2025-04-25,Telstar,FC OSS,3,2,H
+2025-04-27,Excelsior,Emmen,2,0,H
+2025-04-28,VVV Venlo,De Graafschap,3,1,H
+2025-04-28,Jong PSV U21,FC Eindhoven,0,2,A
+2025-04-28,Jong AZ,Den Bosch,0,0,D
+2025-04-28,Jong Ajax,Helmond Sport,1,0,H
+2025-04-28,Jong Utrecht,FC Volendam,2,3,A
+2025-05-02,Excelsior,Jong PSV U21,5,0,H
+2025-05-02,ADO Den Haag,Cambuur,3,4,A
+2025-05-02,De Graafschap,Telstar,2,1,H
+2025-05-02,Emmen,VVV Venlo,2,1,H
+2025-05-02,MVV,Jong Ajax,1,0,H
+2025-05-02,FC Volendam,Roda,3,2,H
+2025-05-02,Den Bosch,Helmond Sport,1,0,H
+2025-05-02,FC Eindhoven,Jong AZ,2,4,A
+2025-05-02,FC OSS,Vitesse,2,2,D
+2025-05-02,Jong Utrecht,Dordrecht,1,0,H
+2025-05-09,Vitesse,Den Bosch,3,1,H
+2025-05-09,VVV Venlo,ADO Den Haag,2,7,A
+2025-05-09,Dordrecht,FC Volendam,4,1,H
+2025-05-09,Jong PSV U21,Jong Utrecht,3,1,H
+2025-05-09,Roda,FC Eindhoven,0,1,A
+2025-05-09,Jong AZ,Excelsior,2,1,H
+2025-05-09,Cambuur,MVV,1,0,H
+2025-05-09,Helmond Sport,De Graafschap,1,4,A
+2025-05-09,Jong Ajax,FC OSS,0,0,D
+2025-05-09,Telstar,Emmen,3,0,H

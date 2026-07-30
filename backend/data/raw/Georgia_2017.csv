@@ -1,0 +1,181 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2017-03-04,Samtredia,Shukura,1,1,D
+2017-03-05,Dinamo Tbilisi,Kolkheti Poti,1,0,H
+2017-03-05,Lokomotivi Tbilisi,Dinamo Batumi,2,1,H
+2017-03-05,Chikhura Sachkhere,Dila,0,0,D
+2017-03-05,Saburtalo,Torpedo Kutaisi,1,0,H
+2017-03-10,Shukura,Torpedo Kutaisi,1,1,D
+2017-03-11,Lokomotivi Tbilisi,Dinamo Tbilisi,1,0,H
+2017-03-11,Samtredia,Chikhura Sachkhere,0,1,A
+2017-03-11,Dila,Dinamo Batumi,0,1,A
+2017-03-11,Kolkheti Poti,Saburtalo,3,0,H
+2017-03-18,Dinamo Tbilisi,Dila,1,2,A
+2017-03-18,Saburtalo,Lokomotivi Tbilisi,2,1,H
+2017-03-19,Dinamo Batumi,Samtredia,0,1,A
+2017-03-19,Chikhura Sachkhere,Shukura,3,1,H
+2017-03-19,Torpedo Kutaisi,Kolkheti Poti,2,1,H
+2017-04-01,Shukura,Kolkheti Poti,2,4,A
+2017-04-01,Lokomotivi Tbilisi,Torpedo Kutaisi,1,1,D
+2017-04-01,Dila,Saburtalo,0,1,A
+2017-04-02,Samtredia,Dinamo Tbilisi,0,2,A
+2017-04-02,Chikhura Sachkhere,Dinamo Batumi,0,1,A
+2017-04-04,Kolkheti Poti,Lokomotivi Tbilisi,0,5,A
+2017-04-04,Torpedo Kutaisi,Dila,1,1,D
+2017-04-05,Dinamo Batumi,Shukura,2,0,H
+2017-04-05,Dinamo Tbilisi,Chikhura Sachkhere,2,1,H
+2017-04-05,Saburtalo,Samtredia,1,2,A
+2017-04-08,Shukura,Lokomotivi Tbilisi,0,5,A
+2017-04-08,Dila,Kolkheti Poti,1,1,D
+2017-04-09,Samtredia,Torpedo Kutaisi,0,2,A
+2017-04-09,Dinamo Batumi,Dinamo Tbilisi,0,1,A
+2017-04-09,Chikhura Sachkhere,Saburtalo,2,1,H
+2017-04-12,Lokomotivi Tbilisi,Dila,3,3,D
+2017-04-13,Kolkheti Poti,Samtredia,1,2,A
+2017-04-13,Dinamo Tbilisi,Shukura,5,0,H
+2017-04-13,Saburtalo,Dinamo Batumi,2,0,H
+2017-04-13,Torpedo Kutaisi,Chikhura Sachkhere,2,1,H
+2017-04-21,Shukura,Dila,0,0,D
+2017-04-21,Chikhura Sachkhere,Kolkheti Poti,3,1,H
+2017-04-22,Samtredia,Lokomotivi Tbilisi,0,0,D
+2017-04-22,Dinamo Batumi,Torpedo Kutaisi,1,3,A
+2017-04-23,Dinamo Tbilisi,Saburtalo,2,0,H
+2017-04-29,Lokomotivi Tbilisi,Chikhura Sachkhere,5,0,H
+2017-04-29,Saburtalo,Shukura,5,0,H
+2017-04-30,Kolkheti Poti,Dinamo Batumi,0,1,A
+2017-04-30,Dila,Samtredia,1,2,A
+2017-04-30,Torpedo Kutaisi,Dinamo Tbilisi,0,2,A
+2017-05-04,Shukura,Samtredia,0,2,A
+2017-05-05,Kolkheti Poti,Dinamo Tbilisi,0,3,A
+2017-05-05,Dila,Chikhura Sachkhere,2,0,H
+2017-05-05,Dinamo Batumi,Lokomotivi Tbilisi,1,2,A
+2017-05-05,Torpedo Kutaisi,Saburtalo,0,0,D
+2017-05-09,Saburtalo,Kolkheti Poti,1,2,A
+2017-05-09,Torpedo Kutaisi,Shukura,1,0,H
+2017-05-10,Dinamo Batumi,Dila,2,3,A
+2017-05-10,Dinamo Tbilisi,Lokomotivi Tbilisi,3,0,H
+2017-05-10,Chikhura Sachkhere,Samtredia,1,2,A
+2017-05-13,Kolkheti Poti,Torpedo Kutaisi,0,3,A
+2017-05-14,Lokomotivi Tbilisi,Saburtalo,1,2,A
+2017-05-14,Samtredia,Dinamo Batumi,2,0,H
+2017-05-14,Shukura,Chikhura Sachkhere,1,4,A
+2017-05-14,Dila,Dinamo Tbilisi,1,1,D
+2017-05-20,Kolkheti Poti,Shukura,0,0,D
+2017-05-20,Saburtalo,Dila,0,1,A
+2017-05-20,Torpedo Kutaisi,Lokomotivi Tbilisi,2,0,H
+2017-05-21,Dinamo Tbilisi,Samtredia,3,2,H
+2017-05-21,Dinamo Batumi,Chikhura Sachkhere,0,0,D
+2017-05-23,Lokomotivi Tbilisi,Kolkheti Poti,1,2,A
+2017-05-23,Dila,Torpedo Kutaisi,0,2,A
+2017-05-24,Chikhura Sachkhere,Dinamo Tbilisi,2,1,H
+2017-05-24,Samtredia,Saburtalo,3,2,H
+2017-05-24,Shukura,Dinamo Batumi,2,4,A
+2017-05-27,Kolkheti Poti,Dila,0,0,D
+2017-05-28,Lokomotivi Tbilisi,Shukura,0,3,A
+2017-05-28,Saburtalo,Chikhura Sachkhere,1,2,A
+2017-05-28,Torpedo Kutaisi,Samtredia,2,1,H
+2017-05-28,Dinamo Tbilisi,Dinamo Batumi,4,0,H
+2017-06-01,Shukura,Dinamo Tbilisi,1,4,A
+2017-06-01,Dinamo Batumi,Saburtalo,0,1,A
+2017-06-02,Samtredia,Kolkheti Poti,1,1,D
+2017-06-02,Chikhura Sachkhere,Torpedo Kutaisi,0,3,A
+2017-06-02,Dila,Lokomotivi Tbilisi,0,2,A
+2017-06-16,Lokomotivi Tbilisi,Samtredia,0,1,A
+2017-06-16,Kolkheti Poti,Chikhura Sachkhere,1,3,A
+2017-06-16,Dila,Shukura,4,0,H
+2017-06-17,Saburtalo,Dinamo Tbilisi,0,5,A
+2017-06-17,Torpedo Kutaisi,Dinamo Batumi,1,0,H
+2017-06-20,Chikhura Sachkhere,Lokomotivi Tbilisi,0,3,A
+2017-06-20,Samtredia,Dila,3,2,H
+2017-06-21,Shukura,Saburtalo,1,2,A
+2017-06-21,Dinamo Batumi,Kolkheti Poti,0,0,D
+2017-06-21,Dinamo Tbilisi,Torpedo Kutaisi,2,1,H
+2017-07-21,Dinamo Tbilisi,Kolkheti Poti,6,1,H
+2017-07-22,Samtredia,Shukura,4,1,H
+2017-07-23,Chikhura Sachkhere,Dila,4,2,H
+2017-07-23,Dinamo Batumi,Lokomotivi Tbilisi,1,0,H
+2017-07-23,Saburtalo,Torpedo Kutaisi,1,2,A
+2017-07-28,Samtredia,Chikhura Sachkhere,3,0,H
+2017-07-29,Lokomotivi Tbilisi,Dinamo Tbilisi,3,1,H
+2017-07-29,Kolkheti Poti,Saburtalo,0,0,D
+2017-07-30,Dila,Dinamo Batumi,1,2,A
+2017-07-30,Shukura,Torpedo Kutaisi,1,2,A
+2017-08-04,Dinamo Tbilisi,Dila,5,0,H
+2017-08-05,Dinamo Batumi,Samtredia,0,1,A
+2017-08-05,Torpedo Kutaisi,Kolkheti Poti,0,0,D
+2017-08-06,Chikhura Sachkhere,Shukura,1,1,D
+2017-08-06,Saburtalo,Lokomotivi Tbilisi,6,0,H
+2017-08-10,Dila,Saburtalo,0,2,A
+2017-08-12,Samtredia,Dinamo Tbilisi,1,1,D
+2017-08-13,Chikhura Sachkhere,Dinamo Batumi,2,1,H
+2017-08-13,Shukura,Kolkheti Poti,3,2,H
+2017-08-14,Lokomotivi Tbilisi,Torpedo Kutaisi,2,0,H
+2017-08-18,Dinamo Batumi,Shukura,3,2,H
+2017-08-19,Saburtalo,Samtredia,1,1,D
+2017-08-19,Torpedo Kutaisi,Dila,2,1,H
+2017-08-20,Kolkheti Poti,Lokomotivi Tbilisi,1,2,A
+2017-08-20,Dinamo Tbilisi,Chikhura Sachkhere,5,0,H
+2017-08-25,Chikhura Sachkhere,Saburtalo,0,0,D
+2017-08-25,Shukura,Lokomotivi Tbilisi,1,3,A
+2017-08-26,Samtredia,Torpedo Kutaisi,1,1,D
+2017-08-26,Dinamo Batumi,Dinamo Tbilisi,1,2,A
+2017-08-27,Dila,Kolkheti Poti,3,0,H
+2017-09-08,Kolkheti Poti,Samtredia,1,3,A
+2017-09-08,Torpedo Kutaisi,Chikhura Sachkhere,0,2,A
+2017-09-09,Lokomotivi Tbilisi,Dila,4,2,H
+2017-09-09,Dinamo Tbilisi,Shukura,1,1,D
+2017-09-10,Saburtalo,Dinamo Batumi,5,0,H
+2017-09-16,Samtredia,Lokomotivi Tbilisi,2,1,H
+2017-09-16,Dinamo Batumi,Torpedo Kutaisi,0,5,A
+2017-09-17,Chikhura Sachkhere,Kolkheti Poti,2,1,H
+2017-09-17,Shukura,Dila,0,1,A
+2017-09-17,Dinamo Tbilisi,Saburtalo,1,4,A
+2017-09-22,Kolkheti Poti,Dinamo Batumi,0,2,A
+2017-09-22,Saburtalo,Shukura,3,2,H
+2017-09-23,Lokomotivi Tbilisi,Chikhura Sachkhere,3,0,H
+2017-09-23,Dila,Samtredia,2,1,H
+2017-09-24,Torpedo Kutaisi,Dinamo Tbilisi,1,1,D
+2017-09-29,Kolkheti Poti,Dinamo Tbilisi,1,1,D
+2017-09-29,Shukura,Samtredia,2,2,D
+2017-09-30,Lokomotivi Tbilisi,Dinamo Batumi,3,0,H
+2017-09-30,Torpedo Kutaisi,Saburtalo,2,0,H
+2017-10-01,Dila,Chikhura Sachkhere,1,0,H
+2017-10-13,Chikhura Sachkhere,Samtredia,1,2,A
+2017-10-13,Dinamo Batumi,Dila,1,0,H
+2017-10-14,Torpedo Kutaisi,Shukura,3,1,H
+2017-10-15,Saburtalo,Kolkheti Poti,6,3,H
+2017-10-15,Dinamo Tbilisi,Lokomotivi Tbilisi,3,1,H
+2017-10-18,Samtredia,Dinamo Batumi,3,0,H
+2017-10-18,Shukura,Chikhura Sachkhere,0,1,A
+2017-10-19,Lokomotivi Tbilisi,Saburtalo,1,1,D
+2017-10-19,Kolkheti Poti,Torpedo Kutaisi,1,2,A
+2017-10-19,Dila,Dinamo Tbilisi,1,2,A
+2017-10-22,Dinamo Batumi,Chikhura Sachkhere,1,2,A
+2017-10-23,Kolkheti Poti,Shukura,0,3,A
+2017-10-23,Saburtalo,Dila,3,1,H
+2017-10-23,Torpedo Kutaisi,Lokomotivi Tbilisi,4,2,H
+2017-10-23,Dinamo Tbilisi,Samtredia,0,1,A
+2017-10-28,Samtredia,Saburtalo,0,2,A
+2017-10-28,Dila,Torpedo Kutaisi,1,0,H
+2017-10-28,Chikhura Sachkhere,Dinamo Tbilisi,1,3,A
+2017-10-29,Lokomotivi Tbilisi,Kolkheti Poti,1,0,H
+2017-10-29,Shukura,Dinamo Batumi,0,0,D
+2017-11-04,Kolkheti Poti,Dila,1,0,H
+2017-11-04,Lokomotivi Tbilisi,Shukura,2,2,D
+2017-11-05,Saburtalo,Chikhura Sachkhere,1,2,A
+2017-11-05,Dinamo Tbilisi,Dinamo Batumi,4,0,H
+2017-11-05,Torpedo Kutaisi,Samtredia,2,0,H
+2017-11-18,Samtredia,Kolkheti Poti,5,0,H
+2017-11-18,Shukura,Dinamo Tbilisi,0,1,A
+2017-11-18,Chikhura Sachkhere,Torpedo Kutaisi,1,3,A
+2017-11-18,Dila,Lokomotivi Tbilisi,2,1,H
+2017-11-18,Dinamo Batumi,Saburtalo,1,2,A
+2017-11-22,Torpedo Kutaisi,Dinamo Batumi,2,0,H
+2017-11-22,Dila,Shukura,0,1,A
+2017-11-22,Lokomotivi Tbilisi,Samtredia,2,5,A
+2017-11-22,Saburtalo,Dinamo Tbilisi,0,0,D
+2017-11-22,Kolkheti Poti,Chikhura Sachkhere,0,4,A
+2017-11-25,Samtredia,Dila,2,2,D
+2017-11-26,Chikhura Sachkhere,Lokomotivi Tbilisi,1,0,H
+2017-11-26,Dinamo Batumi,Kolkheti Poti,1,2,A
+2017-11-26,Shukura,Saburtalo,1,2,A
+2017-11-26,Dinamo Tbilisi,Torpedo Kutaisi,0,1,A

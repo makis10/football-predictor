@@ -1,0 +1,116 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2019-08-10,Shkupi 1927,Borec,2,0,H
+2019-08-10,Akademija Pandev,Shkendija,1,0,H
+2019-08-10,Renova,Sileks,1,0,H
+2019-08-10,Struga,FK Rabotnicki,2,1,H
+2019-08-11,Vardar Skopje,Makedonija GjP,0,2,A
+2019-08-17,FK Rabotnicki,Shkupi 1927,2,0,H
+2019-08-18,Makedonija GjP,Akademija Pandev,0,0,D
+2019-08-18,Renova,Struga,2,1,H
+2019-08-18,Sileks,Shkendija,1,0,H
+2019-08-18,Borec,Vardar Skopje,0,0,D
+2019-08-24,Vardar Skopje,FK Rabotnicki,2,0,H
+2019-08-25,Shkendija,Makedonija GjP,1,1,D
+2019-08-25,Shkupi 1927,Renova,2,2,D
+2019-08-25,Akademija Pandev,Borec,2,0,H
+2019-08-25,Struga,Sileks,2,1,H
+2019-08-31,FK Rabotnicki,Akademija Pandev,1,2,A
+2019-08-31,Sileks,Makedonija GjP,3,4,A
+2019-08-31,Borec,Shkendija,1,0,H
+2019-08-31,Struga,Shkupi 1927,1,1,D
+2019-09-01,Renova,Vardar Skopje,0,1,A
+2019-09-13,Akademija Pandev,Renova,2,0,H
+2019-09-14,Shkendija,FK Rabotnicki,3,0,H
+2019-09-14,Vardar Skopje,Struga,3,0,H
+2019-09-14,Shkupi 1927,Sileks,1,0,H
+2019-09-14,Makedonija GjP,Borec,3,1,H
+2019-09-18,FK Rabotnicki,Makedonija GjP,1,0,H
+2019-09-18,Shkupi 1927,Vardar Skopje,1,2,A
+2019-09-18,Renova,Shkendija,0,2,A
+2019-09-18,Sileks,Borec,3,0,H
+2019-09-18,Struga,Akademija Pandev,0,0,D
+2019-09-21,Borec,FK Rabotnicki,1,1,D
+2019-09-22,Makedonija GjP,Renova,0,1,A
+2019-09-22,Vardar Skopje,Sileks,3,0,H
+2019-09-22,Shkendija,Struga,2,0,H
+2019-09-22,Akademija Pandev,Shkupi 1927,0,0,D
+2019-09-28,Shkupi 1927,Shkendija,2,0,H
+2019-09-29,Vardar Skopje,Akademija Pandev,1,0,H
+2019-09-29,Renova,Borec,2,1,H
+2019-09-29,Sileks,FK Rabotnicki,1,0,H
+2019-09-29,Struga,Makedonija GjP,0,2,A
+2019-10-04,FK Rabotnicki,Renova,1,0,H
+2019-10-05,Shkendija,Vardar Skopje,0,0,D
+2019-10-05,Akademija Pandev,Sileks,2,0,H
+2019-10-05,Makedonija GjP,Shkupi 1927,0,0,D
+2019-10-05,Borec,Struga,3,2,H
+2019-10-18,Shkendija,Akademija Pandev,0,1,A
+2019-10-19,FK Rabotnicki,Struga,1,2,A
+2019-10-19,Makedonija GjP,Vardar Skopje,1,1,D
+2019-10-19,Sileks,Renova,3,0,H
+2019-10-19,Borec,Shkupi 1927,2,1,H
+2019-10-23,Vardar Skopje,Borec,2,0,H
+2019-10-23,Shkendija,Sileks,3,0,H
+2019-10-23,Shkupi 1927,FK Rabotnicki,2,0,H
+2019-10-23,Akademija Pandev,Makedonija GjP,4,0,H
+2019-10-23,Struga,Renova,1,0,H
+2019-10-26,FK Rabotnicki,Vardar Skopje,0,2,A
+2019-10-27,Makedonija GjP,Shkendija,0,0,D
+2019-10-27,Renova,Shkupi 1927,2,2,D
+2019-10-27,Sileks,Struga,1,0,H
+2019-10-27,Borec,Akademija Pandev,1,0,H
+2019-11-02,Akademija Pandev,FK Rabotnicki,1,1,D
+2019-11-03,Vardar Skopje,Renova,2,0,H
+2019-11-03,Shkendija,Borec,4,0,H
+2019-11-03,Shkupi 1927,Struga,0,0,D
+2019-11-03,Makedonija GjP,Sileks,0,1,A
+2019-11-09,Renova,Akademija Pandev,1,1,D
+2019-11-09,Sileks,Shkupi 1927,1,0,H
+2019-11-09,Borec,Makedonija GjP,1,1,D
+2019-11-09,Struga,Vardar Skopje,2,1,H
+2019-11-10,FK Rabotnicki,Shkendija,1,2,A
+2019-11-23,Makedonija GjP,FK Rabotnicki,2,0,H
+2019-11-24,Vardar Skopje,Shkupi 1927,1,1,D
+2019-11-24,Shkendija,Renova,6,1,H
+2019-11-24,Akademija Pandev,Struga,1,1,D
+2019-11-24,Borec,Sileks,0,0,D
+2019-11-27,FK Rabotnicki,Borec,2,1,H
+2019-11-27,Shkupi 1927,Akademija Pandev,3,1,H
+2019-11-27,Renova,Makedonija GjP,1,1,D
+2019-11-27,Sileks,Vardar Skopje,2,2,D
+2019-11-27,Struga,Shkendija,2,1,H
+2019-11-30,Makedonija GjP,Struga,1,1,D
+2019-12-01,Shkendija,Shkupi 1927,4,0,H
+2019-12-01,FK Rabotnicki,Sileks,1,1,D
+2019-12-01,Akademija Pandev,Vardar Skopje,0,3,A
+2019-12-01,Borec,Renova,1,0,H
+2019-12-07,Sileks,Akademija Pandev,3,1,H
+2019-12-08,Vardar Skopje,Shkendija,2,2,D
+2019-12-08,Shkupi 1927,Makedonija GjP,2,3,A
+2019-12-08,Renova,FK Rabotnicki,4,3,H
+2019-12-08,Struga,Borec,1,1,D
+2020-02-15,Vardar Skopje,Makedonija GjP,3,1,H
+2020-02-16,Akademija Pandev,Shkendija,1,2,A
+2020-02-16,Shkupi 1927,Borec,2,0,H
+2020-02-16,Renova,Sileks,0,1,A
+2020-02-16,Struga,FK Rabotnicki,0,1,A
+2020-02-22,Borec,Vardar Skopje,0,1,A
+2020-02-23,Makedonija GjP,Akademija Pandev,1,0,H
+2020-02-23,FK Rabotnicki,Shkupi 1927,2,1,H
+2020-02-23,Renova,Struga,2,0,H
+2020-02-23,Sileks,Shkendija,0,0,D
+2020-02-29,Vardar Skopje,FK Rabotnicki,0,0,D
+2020-02-29,Struga,Sileks,0,0,D
+2020-03-01,Shkendija,Makedonija GjP,4,1,H
+2020-03-01,Shkupi 1927,Renova,2,3,A
+2020-03-01,Akademija Pandev,Borec,0,0,D
+2020-03-07,FK Rabotnicki,Akademija Pandev,1,0,H
+2020-03-08,Renova,Vardar Skopje,2,0,H
+2020-03-08,Sileks,Makedonija GjP,1,0,H
+2020-03-08,Borec,Shkendija,4,2,H
+2020-03-08,Struga,Shkupi 1927,1,2,A
+2020-03-11,Vardar Skopje,Struga,1,0,H
+2020-03-11,Shkendija,FK Rabotnicki,0,1,A
+2020-03-11,Shkupi 1927,Sileks,1,1,D
+2020-03-11,Akademija Pandev,Renova,0,1,A
+2020-03-11,Makedonija GjP,Borec,0,2,A

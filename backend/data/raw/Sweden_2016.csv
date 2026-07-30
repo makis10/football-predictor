@@ -1,0 +1,243 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,PSH,PSD,PSA
+02/04/2016,Malmo FF,Norrkoping,3,1,H,1.72,3.93,5.27
+02/04/2016,Kalmar,Jonkopings,0,1,A,2.06,3.39,4.1
+03/04/2016,AIK,Sundsvall,1,1,D,1.52,4.53,6.88
+03/04/2016,Gefle,Helsingborg,1,1,D,2.67,3.38,2.82
+03/04/2016,Hacken,Elfsborg,2,1,H,2.12,3.7,3.61
+03/04/2016,Falkenbergs,Goteborg,0,2,A,5.34,3.99,1.7
+03/04/2016,Orebro,Djurgarden,0,2,A,2.8,3.39,2.68
+04/04/2016,Hammarby,Ostersunds,1,1,D,1.88,3.66,4.55
+06/04/2016,Goteborg,Hacken,1,0,H,1.74,3.85,5.29
+06/04/2016,Jonkopings,Malmo FF,3,2,H,5.33,3.82,1.74
+06/04/2016,Norrkoping,Kalmar,4,1,H,1.58,4.23,6.35
+07/04/2016,Djurgarden,Falkenbergs,5,0,H,1.32,5.59,11.25
+07/04/2016,Elfsborg,Hammarby,4,1,H,1.67,4.15,5.42
+07/04/2016,Helsingborg,Orebro,1,3,A,2.2,3.59,3.36
+07/04/2016,Ostersunds,AIK,0,2,A,2.67,3.3,2.87
+07/04/2016,Sundsvall,Gefle,1,2,A,1.81,3.94,4.55
+09/04/2016,Hacken,Norrkoping,1,2,A,2.39,3.55,3.08
+10/04/2016,Gefle,Djurgarden,1,2,A,4.48,3.72,1.88
+10/04/2016,Hammarby,Helsingborg,5,1,H,1.76,4.01,4.85
+10/04/2016,Falkenbergs,Ostersunds,1,2,A,3.26,3.4,2.36
+10/04/2016,Kalmar,Elfsborg,3,2,H,3.18,3.39,2.41
+11/04/2016,AIK,Goteborg,3,3,D,2.73,3.22,2.87
+11/04/2016,Malmo FF,Sundsvall,1,2,A,1.29,5.99,11.93
+11/04/2016,Orebro,Jonkopings,2,1,H,1.92,3.63,4.39
+15/04/2016,Ostersunds,Hacken,2,1,H,2.32,3.57,3.18
+16/04/2016,Helsingborg,Falkenbergs,3,1,H,1.69,4.14,5.19
+17/04/2016,Jonkopings,Gefle,1,0,H,1.82,3.75,4.77
+17/04/2016,Norrkoping,AIK,4,1,H,2.43,3.44,3.1
+17/04/2016,Goteborg,Kalmar,1,1,D,1.51,4.37,7.56
+18/04/2016,Elfsborg,Malmo FF,0,1,A,3.11,3.58,2.36
+18/04/2016,Sundsvall,Orebro,3,1,H,2.56,3.55,2.84
+19/04/2016,Djurgarden,Hammarby,1,3,A,2.21,3.55,3.44
+22/04/2016,Falkenbergs,Norrkoping,2,1,H,5.38,3.99,1.7
+23/04/2016,Gefle,Ostersunds,0,0,D,3.61,3.59,2.13
+23/04/2016,Hammarby,Jonkopings,1,1,D,1.66,4.07,5.68
+24/04/2016,Hacken,Sundsvall,0,1,A,1.61,4.37,5.71
+24/04/2016,Malmo FF,Djurgarden,1,0,H,1.74,3.93,5.14
+24/04/2016,Orebro,Goteborg,3,2,H,3.39,3.58,2.22
+25/04/2016,AIK,Elfsborg,2,1,H,2.06,3.76,3.66
+25/04/2016,Kalmar,Helsingborg,2,3,A,1.85,3.78,4.58
+26/04/2016,Norrkoping,Hammarby,3,1,H,1.96,3.69,4.12
+27/04/2016,Goteborg,Malmo FF,0,3,A,2.22,3.49,3.48
+27/04/2016,Jonkopings,Falkenbergs,1,1,D,1.7,3.93,5.44
+27/04/2016,Ostersunds,Orebro,2,4,A,2.03,3.63,3.91
+28/04/2016,Elfsborg,Djurgarden,3,0,H,2.27,3.58,3.26
+28/04/2016,Hacken,Gefle,6,1,H,1.49,4.71,7.18
+28/04/2016,Helsingborg,AIK,2,1,H,3,3.68,2.38
+28/04/2016,Sundsvall,Kalmar,1,1,D,2.35,3.52,3.17
+01/05/2016,Falkenbergs,Elfsborg,1,2,A,4.56,3.97,1.81
+01/05/2016,Hammarby,Sundsvall,1,1,D,1.69,4.07,5.34
+01/05/2016,Malmo FF,Hacken,3,0,H,1.51,4.63,6.78
+02/05/2016,AIK,Jonkopings,0,0,D,1.58,4.34,6.22
+02/05/2016,Djurgarden,Ostersunds,3,0,H,1.75,3.9,5.1
+02/05/2016,Gefle,Goteborg,2,6,A,5.49,3.94,1.7
+02/05/2016,Kalmar,Orebro,3,2,H,2.21,3.58,3.41
+02/05/2016,Norrkoping,Helsingborg,3,0,H,1.39,5.41,8.34
+07/05/2016,Elfsborg,Gefle,2,0,H,1.28,6.36,11.16
+07/05/2016,Ostersunds,Kalmar,1,0,H,1.85,3.79,4.51
+08/05/2016,Helsingborg,Malmo FF,2,1,H,4.58,3.95,1.81
+08/05/2016,Jonkopings,Norrkoping,0,2,A,4.28,3.82,1.88
+08/05/2016,Hacken,AIK,2,3,A,2.13,3.71,3.49
+09/05/2016,Goteborg,Djurgarden,2,1,H,1.83,3.73,4.79
+09/05/2016,Orebro,Hammarby,3,2,H,2.58,3.44,2.88
+09/05/2016,Sundsvall,Falkenbergs,2,1,H,1.6,4.23,6.16
+13/05/2016,Jonkopings,Helsingborg,1,1,D,2.17,3.62,3.47
+14/05/2016,Kalmar,Hammarby,1,1,D,2.44,3.59,2.97
+14/05/2016,Malmo FF,Gefle,3,0,H,1.23,6.73,15.48
+15/05/2016,Norrkoping,Sundsvall,3,1,H,1.41,5.22,8.09
+15/05/2016,Orebro,Elfsborg,1,0,H,2.98,3.84,2.33
+15/05/2016,Falkenbergs,Hacken,1,4,A,4.53,4.02,1.8
+15/05/2016,Ostersunds,Goteborg,2,0,H,3.7,3.62,2.09
+16/05/2016,AIK,Djurgarden,2,0,H,2.22,3.37,3.6
+18/05/2016,Hacken,Jonkopings,3,1,H,1.61,4.36,5.78
+18/05/2016,Hammarby,Malmo FF,2,3,A,3,3.66,2.39
+18/05/2016,Helsingborg,Ostersunds,1,1,D,2.62,3.35,2.9
+18/05/2016,Sundsvall,Elfsborg,1,3,A,2.76,3.59,2.61
+19/05/2016,Djurgarden,Kalmar,0,3,A,1.9,3.63,4.49
+19/05/2016,Gefle,Orebro,0,4,A,3.5,3.81,2.1
+19/05/2016,Goteborg,Norrkoping,1,1,D,2.19,3.57,3.47
+20/05/2016,Falkenbergs,AIK,2,3,A,5.56,4.24,1.64
+21/05/2016,Sundsvall,Ostersunds,5,0,H,2.71,3.41,2.76
+22/05/2016,Kalmar,Hacken,1,1,D,2.48,3.56,2.94
+22/05/2016,Orebro,Norrkoping,2,2,D,2.55,3.53,2.86
+22/05/2016,Djurgarden,Helsingborg,3,0,H,1.52,4.64,6.61
+22/05/2016,Elfsborg,Jonkopings,3,3,D,1.46,4.84,7.48
+23/05/2016,Gefle,AIK,0,1,A,5.34,4.04,1.69
+23/05/2016,Goteborg,Hammarby,2,1,H,1.68,4.07,5.39
+23/05/2016,Malmo FF,Falkenbergs,2,0,H,1.2,7.62,17.34
+28/05/2016,AIK,Orebro,0,0,D,2,3.87,3.76
+28/05/2016,Jonkopings,Sundsvall,1,1,D,2.32,3.47,3.27
+28/05/2016,Ostersunds,Malmo FF,1,4,A,3.33,3.54,2.26
+29/05/2016,Falkenbergs,Kalmar,1,2,A,3.85,3.65,2.03
+29/05/2016,Hammarby,Gefle,2,1,H,1.38,5.15,9.23
+29/05/2016,Helsingborg,Goteborg,1,3,A,3.56,3.74,1.99
+29/05/2016,Hacken,Djurgarden,3,1,H,2.26,3.65,3.24
+29/05/2016,Norrkoping,Elfsborg,0,0,D,1.72,4.22,4.78
+09/07/2016,Djurgarden,Norrkoping,0,1,A,2.5,3.46,2.97
+09/07/2016,Gefle,Falkenbergs,1,2,A,2.03,3.61,3.92
+09/07/2016,Hacken,Hammarby,4,2,H,1.84,4.06,4.24
+10/07/2016,Goteborg,Sundsvall,4,1,H,1.38,5.24,9.29
+10/07/2016,Ostersunds,Jonkopings,1,0,H,1.92,3.66,4.34
+10/07/2016,Helsingborg,Elfsborg,2,4,A,3.01,3.78,2.34
+10/07/2016,Kalmar,AIK,1,1,D,2.81,3.51,2.6
+11/07/2016,Malmo FF,Orebro,1,0,H,1.44,5.19,7.18
+16/07/2016,Norrkoping,Ostersunds,3,3,D,1.72,4.07,5.06
+16/07/2016,Sundsvall,Helsingborg,0,2,A,1.99,3.7,3.95
+17/07/2016,Elfsborg,Goteborg,1,1,D,2.61,3.35,2.91
+17/07/2016,AIK,Malmo FF,1,1,D,2.89,3.29,2.67
+17/07/2016,Hammarby,Falkenbergs,3,3,D,1.41,5.38,7.8
+17/07/2016,Orebro,Hacken,0,0,D,2.44,3.68,2.91
+18/07/2016,Gefle,Kalmar,4,2,H,3.77,3.46,2.12
+18/07/2016,Jonkopings,Djurgarden,1,0,H,2.97,3.39,2.54
+23/07/2016,Falkenbergs,Orebro,1,3,A,3.35,3.75,2.17
+23/07/2016,Malmo FF,Kalmar,1,1,D,1.47,4.74,7.53
+23/07/2016,Norrkoping,Gefle,2,0,H,1.31,6.07,10.12
+24/07/2016,Hammarby,AIK,0,3,A,2.72,3.53,2.68
+24/07/2016,Goteborg,Jonkopings,2,1,H,1.39,5.26,8.6
+24/07/2016,Helsingborg,Hacken,0,2,A,3.01,3.61,2.41
+25/07/2016,Djurgarden,Sundsvall,1,3,A,1.61,4.41,5.7
+25/07/2016,Elfsborg,Ostersunds,3,1,H,1.78,3.97,4.79
+30/07/2016,Gefle,Hammarby,0,2,A,3.66,3.82,2.04
+30/07/2016,Ostersunds,Elfsborg,0,0,D,2.58,3.63,2.76
+30/07/2016,Sundsvall,Norrkoping,1,2,A,3.17,3.76,2.25
+31/07/2016,Jonkopings,Goteborg,1,1,D,4.5,3.82,1.85
+31/07/2016,AIK,Falkenbergs,2,0,H,1.36,5.12,10.31
+31/07/2016,Hacken,Helsingborg,1,1,D,1.53,4.68,6.41
+01/08/2016,Kalmar,Djurgarden,2,1,H,2.32,3.41,3.31
+01/08/2016,Orebro,Malmo FF,0,3,A,3.99,3.95,1.92
+05/08/2016,Helsingborg,Gefle,2,3,A,1.71,4.23,4.91
+06/08/2016,Falkenbergs,Jonkopings,0,5,A,2.89,3.48,2.55
+06/08/2016,Ostersunds,Sundsvall,4,0,H,1.85,3.87,4.38
+07/08/2016,Malmo FF,AIK,2,0,H,1.68,3.89,5.72
+07/08/2016,Elfsborg,Hacken,2,4,A,2.25,3.73,3.2
+07/08/2016,Hammarby,Kalmar,2,1,H,1.99,3.68,3.99
+07/08/2016,Norrkoping,Orebro,3,1,H,1.53,4.77,6.15
+08/08/2016,Djurgarden,Goteborg,3,1,H,2.94,3.47,2.52
+10/08/2016,Norrkoping,Hacken,3,1,H,1.92,3.91,4.05
+12/08/2016,Goteborg,Falkenbergs,2,0,H,1.23,7.07,13.93
+13/08/2016,AIK,Helsingborg,2,1,H,1.5,4.76,6.83
+13/08/2016,Gefle,Norrkoping,0,0,D,4.9,4.32,1.69
+14/08/2016,Kalmar,Malmo FF,1,1,D,3.89,3.79,1.99
+14/08/2016,Djurgarden,Elfsborg,2,2,D,2.13,3.74,3.46
+14/08/2016,Hacken,Orebro,0,1,A,1.63,4.55,5.21
+15/08/2016,Jonkopings,Ostersunds,1,1,D,2.82,3.39,2.67
+15/08/2016,Sundsvall,Hammarby,0,0,D,3.17,3.54,2.34
+20/08/2016,Helsingborg,Kalmar,0,1,A,2.51,3.57,2.89
+20/08/2016,Ostersunds,Djurgarden,1,0,H,2.2,3.51,3.5
+21/08/2016,Hammarby,Goteborg,2,0,H,2.59,3.52,2.82
+21/08/2016,Falkenbergs,Gefle,1,1,D,2.43,3.55,3.02
+21/08/2016,Orebro,AIK,0,2,A,2.93,3.56,2.48
+22/08/2016,Elfsborg,Sundsvall,4,0,H,1.35,5.65,9.26
+22/08/2016,Malmo FF,Jonkopings,4,1,H,1.32,5.7,10.82
+27/08/2016,Djurgarden,Gefle,2,1,H,1.42,5.14,7.94
+27/08/2016,Kalmar,Norrkoping,0,1,A,2.69,3.54,2.7
+28/08/2016,AIK,Hammarby,0,0,D,2,3.64,4.02
+28/08/2016,Hacken,Ostersunds,3,1,H,2.06,3.62,3.78
+28/08/2016,Jonkopings,Elfsborg,1,0,H,3.56,3.83,2.07
+28/08/2016,Goteborg,Helsingborg,2,0,H,1.62,4.37,5.63
+28/08/2016,Orebro,Falkenbergs,3,2,H,1.47,5.06,6.9
+28/08/2016,Sundsvall,Malmo FF,0,1,A,6.84,4.99,1.47
+10/09/2016,Elfsborg,Kalmar,1,1,D,1.82,3.91,4.55
+11/09/2016,Falkenbergs,Djurgarden,1,2,A,4.14,4.02,1.87
+11/09/2016,Sundsvall,AIK,1,3,A,4.77,3.89,1.79
+11/09/2016,Norrkoping,Jonkopings,5,1,H,1.51,4.68,6.68
+11/09/2016,Ostersunds,Helsingborg,2,0,H,1.69,4.05,5.31
+12/09/2016,Gefle,Hacken,2,2,D,4.48,4.14,1.79
+12/09/2016,Hammarby,Orebro,1,1,D,1.9,3.91,4.11
+12/09/2016,Malmo FF,Goteborg,3,1,H,1.84,3.73,4.67
+16/09/2016,Jonkopings,Hammarby,0,1,A,2.94,3.44,2.53
+16/09/2016,Orebro,Sundsvall,3,3,D,1.63,4.3,5.66
+17/09/2016,Kalmar,Ostersunds,2,0,H,2.29,3.38,3.43
+18/09/2016,AIK,Gefle,1,0,H,1.35,5.46,9.78
+18/09/2016,Elfsborg,Falkenbergs,5,0,H,1.31,6.18,10
+18/09/2016,Helsingborg,Norrkoping,1,2,A,3.96,3.71,1.99
+18/09/2016,Djurgarden,Malmo FF,3,1,H,2.93,3.53,2.49
+19/09/2016,Hacken,Goteborg,2,2,D,2.39,3.69,2.99
+21/09/2016,Djurgarden,AIK,0,3,A,2.56,3.39,2.95
+21/09/2016,Gefle,Jonkopings,0,1,A,2.5,3.41,3.02
+21/09/2016,Helsingborg,Sundsvall,2,1,H,1.8,3.89,4.69
+21/09/2016,Kalmar,Falkenbergs,3,0,H,1.41,5.28,8
+21/09/2016,Ostersunds,Norrkoping,0,2,A,2.48,3.41,3.04
+22/09/2016,Goteborg,Orebro,3,2,H,1.66,4.13,5.51
+22/09/2016,Hammarby,Hacken,2,3,A,2.43,3.69,2.92
+22/09/2016,Malmo FF,Elfsborg,1,0,H,1.57,4.4,6.18
+24/09/2016,Jonkopings,Kalmar,0,1,A,2.85,3.37,2.65
+25/09/2016,Elfsborg,AIK,2,2,D,2.53,3.51,2.9
+25/09/2016,Malmo FF,Helsingborg,2,0,H,1.34,5.38,10.6
+26/09/2016,Falkenbergs,Hammarby,0,2,A,4.76,4.36,1.71
+26/09/2016,Goteborg,Ostersunds,2,0,H,1.74,3.9,5.18
+26/09/2016,Norrkoping,Djurgarden,1,3,A,1.66,4.06,5.67
+26/09/2016,Orebro,Gefle,2,2,D,1.56,4.6,5.91
+26/09/2016,Sundsvall,Hacken,0,0,D,4.61,4.32,1.74
+30/09/2016,Helsingborg,Hammarby,0,1,A,2.56,3.42,2.92
+01/10/2016,Sundsvall,Jonkopings,3,1,H,2.56,3.34,2.99
+01/10/2016,Hacken,Malmo FF,2,4,A,2.59,3.52,2.82
+01/10/2016,Ostersunds,Falkenbergs,6,1,H,1.32,6.09,9.85
+02/10/2016,Gefle,Elfsborg,2,2,D,4.05,4.06,1.88
+02/10/2016,Kalmar,Goteborg,4,2,H,2.69,3.41,2.78
+02/10/2016,AIK,Norrkoping,6,0,H,1.92,3.77,4.16
+02/10/2016,Djurgarden,Orebro,3,2,H,1.59,4.64,5.55
+15/10/2016,Falkenbergs,Sundsvall,1,1,D,3.33,3.91,2.13
+16/10/2016,AIK,Ostersunds,2,0,H,1.45,4.88,7.55
+16/10/2016,Norrkoping,Malmo FF,1,2,A,2.62,3.71,2.67
+16/10/2016,Orebro,Kalmar,2,1,H,2.47,3.66,2.88
+16/10/2016,Elfsborg,Helsingborg,1,0,H,1.62,4.49,5.46
+16/10/2016,Jonkopings,Hacken,1,1,D,3.77,3.87,1.99
+17/10/2016,Goteborg,Gefle,3,3,D,1.34,6.2,8.5
+17/10/2016,Hammarby,Djurgarden,4,2,H,3.03,3.5,2.44
+21/10/2016,Gefle,Sundsvall,1,1,D,1.98,3.9,3.79
+22/10/2016,Malmo FF,Ostersunds,0,3,A,1.39,5.28,8.56
+23/10/2016,Norrkoping,Falkenbergs,2,1,H,1.19,8.5,15.6
+23/10/2016,Orebro,Helsingborg,0,0,D,2,3.95,3.66
+23/10/2016,Hacken,Kalmar,2,3,A,1.79,4.12,4.49
+23/10/2016,Hammarby,Elfsborg,2,4,A,2.46,3.65,2.9
+24/10/2016,Djurgarden,Jonkopings,0,2,A,1.79,3.94,4.71
+24/10/2016,Goteborg,AIK,1,0,H,2.71,3.46,2.72
+26/10/2016,Elfsborg,Norrkoping,2,1,H,2.19,3.81,3.28
+26/10/2016,Falkenbergs,Malmo FF,0,3,A,10.07,6.34,1.3
+26/10/2016,Kalmar,Gefle,0,1,A,1.58,4.55,5.71
+26/10/2016,Ostersunds,Hammarby,2,0,H,1.96,3.82,3.96
+27/10/2016,AIK,Hacken,2,1,H,1.66,4.37,5.12
+27/10/2016,Helsingborg,Djurgarden,1,2,A,2.08,3.72,3.64
+27/10/2016,Jonkopings,Orebro,1,1,D,2.49,3.56,2.89
+27/10/2016,Sundsvall,Goteborg,1,3,A,4.67,4.18,1.75
+30/10/2016,Hammarby,Norrkoping,1,1,D,2.77,3.83,2.48
+30/10/2016,Kalmar,Sundsvall,2,0,H,1.52,4.81,6.23
+30/10/2016,Falkenbergs,Helsingborg,1,4,A,6.51,4.88,1.5
+30/10/2016,Gefle,Malmo FF,1,0,H,3.13,4.07,2.17
+31/10/2016,Djurgarden,Hacken,1,0,H,2.76,3.65,2.57
+31/10/2016,Goteborg,Elfsborg,2,2,D,2.15,3.69,3.46
+31/10/2016,Jonkopings,AIK,0,0,D,6.08,4.21,1.61
+31/10/2016,Orebro,Ostersunds,1,5,A,2.8,3.6,2.56
+06/11/2016,AIK,Kalmar,3,1,H,1.54,4.57,6.41
+06/11/2016,Elfsborg,Orebro,2,1,H,1.54,5.02,5.71
+06/11/2016,Hacken,Falkenbergs,7,0,H,1.21,7.9,13.88
+06/11/2016,Helsingborg,Jonkopings,2,0,H,1.64,4.27,5.54
+06/11/2016,Malmo FF,Hammarby,3,0,H,1.5,4.78,6.73
+06/11/2016,Norrkoping,Goteborg,3,1,H,1.74,4.29,4.65
+06/11/2016,Ostersunds,Gefle,2,4,A,1.7,4.23,4.99
+06/11/2016,Sundsvall,Djurgarden,2,5,A,3.49,3.85,2.09
+17/11/2016,Halmstad,Helsingborg,1,1,D,3.16,3.36,2.43
+20/11/2016,Helsingborg,Halmstad,1,2,A,1.67,3.94,5.84

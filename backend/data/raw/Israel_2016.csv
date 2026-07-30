@@ -1,0 +1,241 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2016-08-20,Bnei Yehuda,Bnei Sakhnin,1,1,D
+2016-08-20,Hapoel Ashkelon,Hapoel Haifa,3,2,H
+2016-08-20,Ironi Kiryat Shmona,Ashdod,1,0,H
+2016-08-20,Hapoel Beer Sheva,Hapoel Ra'anana,2,1,H
+2016-08-21,Maccabi Petah Tikva,Beitar Jerusalem,2,2,D
+2016-08-21,Maccabi Tel Aviv,Hapoel Kfar Saba,3,1,H
+2016-08-22,Maccabi Haifa,Hapoel Tel Aviv,1,0,H
+2016-08-27,Hapoel Haifa,Bnei Yehuda,1,0,H
+2016-08-27,Hapoel Ra'anana,Maccabi Petah Tikva,0,1,A
+2016-08-27,Bnei Sakhnin,Maccabi Haifa,1,0,H
+2016-08-27,Hapoel Tel Aviv,Hapoel Beer Sheva,0,0,D
+2016-08-28,Beitar Jerusalem,Ironi Kiryat Shmona,2,2,D
+2016-08-28,Ashdod,Maccabi Tel Aviv,1,2,A
+2016-08-29,Hapoel Kfar Saba,Hapoel Ashkelon,1,1,D
+2016-09-10,Bnei Yehuda,Maccabi Haifa,1,1,D
+2016-09-10,Ironi Kiryat Shmona,Hapoel Ra'anana,0,0,D
+2016-09-10,Hapoel Haifa,Hapoel Kfar Saba,1,2,A
+2016-09-10,Hapoel Beer Sheva,Bnei Sakhnin,3,0,H
+2016-09-11,Hapoel Ashkelon,Ashdod,0,0,D
+2016-09-11,Maccabi Tel Aviv,Beitar Jerusalem,2,2,D
+2016-09-12,Maccabi Petah Tikva,Hapoel Tel Aviv,2,0,H
+2016-09-17,Hapoel Tel Aviv,Ironi Kiryat Shmona,3,3,D
+2016-09-17,Ashdod,Hapoel Haifa,1,3,A
+2016-09-17,Beitar Jerusalem,Hapoel Ashkelon,3,0,H
+2016-09-17,Hapoel Kfar Saba,Bnei Yehuda,0,1,A
+2016-09-18,Bnei Sakhnin,Maccabi Petah Tikva,0,1,A
+2016-09-18,Hapoel Ra'anana,Maccabi Tel Aviv,0,3,A
+2016-09-19,Maccabi Haifa,Hapoel Beer Sheva,2,1,H
+2016-09-21,Bnei Sakhnin,Maccabi Tel Aviv,0,3,A
+2016-09-24,Hapoel Kfar Saba,Ashdod,1,0,H
+2016-09-24,Ironi Kiryat Shmona,Bnei Sakhnin,2,2,D
+2016-09-24,Hapoel Ashkelon,Hapoel Ra'anana,0,0,D
+2016-09-24,Hapoel Haifa,Beitar Jerusalem,4,0,H
+2016-09-25,Bnei Yehuda,Hapoel Beer Sheva,0,3,A
+2016-09-25,Maccabi Tel Aviv,Hapoel Tel Aviv,5,0,H
+2016-09-26,Maccabi Petah Tikva,Maccabi Haifa,2,2,D
+2016-10-01,Maccabi Haifa,Ironi Kiryat Shmona,0,0,D
+2016-10-01,Hapoel Ra'anana,Hapoel Haifa,2,0,H
+2016-10-01,Hapoel Tel Aviv,Hapoel Ashkelon,2,0,H
+2016-10-01,Beitar Jerusalem,Hapoel Kfar Saba,1,0,H
+2016-10-01,Ashdod,Bnei Yehuda,2,2,D
+2016-10-15,Hapoel Beer Sheva,Maccabi Petah Tikva,5,0,H
+2016-10-22,Bnei Yehuda,Maccabi Petah Tikva,1,4,A
+2016-10-22,Hapoel Kfar Saba,Hapoel Ra'anana,1,2,A
+2016-10-22,Hapoel Haifa,Hapoel Tel Aviv,0,2,A
+2016-10-22,Hapoel Ashkelon,Bnei Sakhnin,0,1,A
+2016-10-22,Ashdod,Beitar Jerusalem,0,0,D
+2016-10-24,Ironi Kiryat Shmona,Hapoel Beer Sheva,0,2,A
+2016-10-24,Maccabi Tel Aviv,Maccabi Haifa,0,2,A
+2016-10-29,Bnei Sakhnin,Hapoel Haifa,2,1,H
+2016-10-29,Hapoel Tel Aviv,Hapoel Kfar Saba,1,1,D
+2016-10-29,Hapoel Ra'anana,Ashdod,0,0,D
+2016-10-29,Maccabi Haifa,Hapoel Ashkelon,5,0,H
+2016-10-30,Maccabi Petah Tikva,Ironi Kiryat Shmona,2,1,H
+2016-10-30,Hapoel Beer Sheva,Maccabi Tel Aviv,2,0,H
+2016-10-31,Beitar Jerusalem,Bnei Yehuda,2,2,D
+2016-11-05,Bnei Yehuda,Ironi Kiryat Shmona,0,1,A
+2016-11-05,Ashdod,Hapoel Tel Aviv,1,0,H
+2016-11-05,Beitar Jerusalem,Hapoel Ra'anana,1,0,H
+2016-11-05,Hapoel Haifa,Maccabi Haifa,0,0,D
+2016-11-06,Hapoel Ashkelon,Hapoel Beer Sheva,1,5,A
+2016-11-06,Maccabi Tel Aviv,Maccabi Petah Tikva,0,0,D
+2016-11-07,Hapoel Kfar Saba,Bnei Sakhnin,2,1,H
+2016-11-19,Bnei Sakhnin,Ashdod,0,1,A
+2016-11-19,Maccabi Petah Tikva,Hapoel Ashkelon,1,1,D
+2016-11-19,Maccabi Haifa,Hapoel Kfar Saba,2,0,H
+2016-11-19,Hapoel Beer Sheva,Hapoel Haifa,5,1,H
+2016-11-20,Hapoel Ra'anana,Bnei Yehuda,1,0,H
+2016-11-20,Ironi Kiryat Shmona,Maccabi Tel Aviv,1,2,A
+2016-11-21,Beitar Jerusalem,Hapoel Tel Aviv,1,1,D
+2016-11-26,Hapoel Ra'anana,Hapoel Tel Aviv,0,0,D
+2016-11-26,Hapoel Haifa,Maccabi Petah Tikva,2,1,H
+2016-11-26,Ashdod,Maccabi Haifa,1,1,D
+2016-11-26,Ironi Kiryat Shmona,Hapoel Ashkelon,4,1,H
+2016-11-27,Hapoel Kfar Saba,Hapoel Beer Sheva,0,2,A
+2016-11-27,Bnei Yehuda,Maccabi Tel Aviv,1,0,H
+2016-11-28,Beitar Jerusalem,Bnei Sakhnin,0,1,A
+2016-12-03,Ironi Kiryat Shmona,Hapoel Haifa,2,0,H
+2016-12-03,Maccabi Petah Tikva,Hapoel Kfar Saba,0,0,D
+2016-12-03,Maccabi Tel Aviv,Hapoel Ashkelon,0,0,D
+2016-12-03,Hapoel Beer Sheva,Ashdod,5,0,H
+2016-12-04,Bnei Sakhnin,Hapoel Ra'anana,1,1,D
+2016-12-04,Bnei Yehuda,Hapoel Tel Aviv,0,1,A
+2016-12-05,Maccabi Haifa,Beitar Jerusalem,0,2,A
+2016-12-10,Hapoel Tel Aviv,Bnei Sakhnin,1,1,D
+2016-12-10,Hapoel Kfar Saba,Ironi Kiryat Shmona,2,2,D
+2016-12-10,Hapoel Ashkelon,Bnei Yehuda,1,0,H
+2016-12-10,Hapoel Ra'anana,Maccabi Haifa,1,1,D
+2016-12-11,Ashdod,Maccabi Petah Tikva,2,2,D
+2016-12-11,Hapoel Haifa,Maccabi Tel Aviv,2,4,A
+2016-12-12,Beitar Jerusalem,Hapoel Beer Sheva,1,3,A
+2016-12-17,Hapoel Kfar Saba,Maccabi Tel Aviv,1,1,D
+2016-12-17,Ashdod,Ironi Kiryat Shmona,0,0,D
+2016-12-17,Bnei Sakhnin,Bnei Yehuda,1,1,D
+2016-12-17,Beitar Jerusalem,Maccabi Petah Tikva,1,1,D
+2016-12-18,Hapoel Haifa,Hapoel Ashkelon,3,1,H
+2016-12-18,Hapoel Ra'anana,Hapoel Beer Sheva,1,0,H
+2016-12-19,Hapoel Tel Aviv,Maccabi Haifa,0,2,A
+2016-12-24,Bnei Yehuda,Hapoel Haifa,1,1,D
+2016-12-24,Hapoel Ashkelon,Hapoel Kfar Saba,0,0,D
+2016-12-24,Maccabi Tel Aviv,Ashdod,1,0,H
+2016-12-24,Ironi Kiryat Shmona,Beitar Jerusalem,2,0,H
+2016-12-25,Maccabi Petah Tikva,Hapoel Ra'anana,2,0,H
+2016-12-25,Hapoel Beer Sheva,Hapoel Tel Aviv,1,1,D
+2016-12-26,Maccabi Haifa,Bnei Sakhnin,1,2,A
+2016-12-31,Hapoel Kfar Saba,Hapoel Haifa,1,2,A
+2016-12-31,Hapoel Ra'anana,Ironi Kiryat Shmona,0,3,A
+2016-12-31,Maccabi Haifa,Bnei Yehuda,1,1,D
+2016-12-31,Hapoel Tel Aviv,Maccabi Petah Tikva,0,1,A
+2017-01-01,Ashdod,Hapoel Ashkelon,1,0,H
+2017-01-01,Bnei Sakhnin,Hapoel Beer Sheva,0,0,D
+2017-01-02,Beitar Jerusalem,Maccabi Tel Aviv,1,0,H
+2017-01-10,Maccabi Petah Tikva,Bnei Sakhnin,1,1,D
+2017-01-10,Hapoel Ashkelon,Beitar Jerusalem,1,1,D
+2017-01-10,Hapoel Beer Sheva,Maccabi Haifa,2,0,H
+2017-01-11,Bnei Yehuda,Hapoel Kfar Saba,1,1,D
+2017-01-11,Maccabi Tel Aviv,Hapoel Ra'anana,4,1,H
+2017-01-11,Hapoel Haifa,Ashdod,0,1,A
+2017-01-12,Ironi Kiryat Shmona,Hapoel Tel Aviv,2,1,H
+2017-01-14,Ashdod,Hapoel Kfar Saba,0,0,D
+2017-01-14,Hapoel Ra'anana,Hapoel Ashkelon,0,2,A
+2017-01-14,Maccabi Haifa,Maccabi Petah Tikva,0,2,A
+2017-01-14,Hapoel Beer Sheva,Bnei Yehuda,2,1,H
+2017-01-15,Beitar Jerusalem,Hapoel Haifa,1,0,H
+2017-01-16,Bnei Sakhnin,Ironi Kiryat Shmona,5,2,H
+2017-01-16,Hapoel Tel Aviv,Maccabi Tel Aviv,0,1,A
+2017-01-21,Ironi Kiryat Shmona,Maccabi Haifa,3,0,H
+2017-01-21,Hapoel Haifa,Hapoel Ra'anana,1,0,H
+2017-01-21,Hapoel Ashkelon,Hapoel Tel Aviv,0,1,A
+2017-01-21,Maccabi Petah Tikva,Hapoel Beer Sheva,1,1,D
+2017-01-22,Bnei Yehuda,Ashdod,2,0,H
+2017-01-22,Hapoel Kfar Saba,Beitar Jerusalem,0,2,A
+2017-01-22,Maccabi Tel Aviv,Bnei Sakhnin,2,1,H
+2017-01-28,Maccabi Petah Tikva,Bnei Yehuda,2,0,H
+2017-01-28,Hapoel Ra'anana,Hapoel Kfar Saba,1,0,H
+2017-01-28,Hapoel Beer Sheva,Ironi Kiryat Shmona,2,0,H
+2017-01-28,Beitar Jerusalem,Ashdod,1,1,D
+2017-01-29,Bnei Sakhnin,Hapoel Ashkelon,1,0,H
+2017-01-29,Hapoel Tel Aviv,Hapoel Haifa,0,0,D
+2017-01-30,Maccabi Haifa,Maccabi Tel Aviv,2,2,D
+2017-02-04,Ironi Kiryat Shmona,Maccabi Petah Tikva,0,1,A
+2017-02-04,Hapoel Haifa,Bnei Sakhnin,0,1,A
+2017-02-04,Bnei Yehuda,Beitar Jerusalem,1,1,D
+2017-02-04,Maccabi Tel Aviv,Hapoel Beer Sheva,1,0,H
+2017-02-05,Ashdod,Hapoel Ra'anana,0,1,A
+2017-02-05,Hapoel Kfar Saba,Hapoel Tel Aviv,0,0,D
+2017-02-06,Hapoel Ashkelon,Maccabi Haifa,0,2,A
+2017-02-11,Maccabi Haifa,Hapoel Haifa,0,3,A
+2017-02-11,Ironi Kiryat Shmona,Bnei Yehuda,0,1,A
+2017-02-11,Hapoel Beer Sheva,Hapoel Ashkelon,2,1,H
+2017-02-11,Hapoel Ra'anana,Beitar Jerusalem,0,4,A
+2017-02-12,Bnei Sakhnin,Hapoel Kfar Saba,1,0,H
+2017-02-12,Hapoel Tel Aviv,Ashdod,2,0,H
+2017-02-13,Maccabi Petah Tikva,Maccabi Tel Aviv,0,1,A
+2017-02-18,Hapoel Kfar Saba,Maccabi Haifa,0,2,A
+2017-02-18,Bnei Yehuda,Hapoel Ra'anana,0,2,A
+2017-02-18,Ashdod,Bnei Sakhnin,1,1,D
+2017-02-18,Maccabi Tel Aviv,Ironi Kiryat Shmona,3,0,H
+2017-02-19,Hapoel Ashkelon,Maccabi Petah Tikva,0,1,A
+2017-02-19,Hapoel Haifa,Hapoel Beer Sheva,0,0,D
+2017-02-20,Hapoel Tel Aviv,Beitar Jerusalem,1,2,A
+2017-02-25,Hapoel Tel Aviv,Hapoel Ra'anana,0,0,D
+2017-02-25,Hapoel Ashkelon,Ironi Kiryat Shmona,1,1,D
+2017-02-25,Maccabi Haifa,Ashdod,0,1,A
+2017-02-25,Maccabi Tel Aviv,Bnei Yehuda,2,0,H
+2017-02-26,Maccabi Petah Tikva,Hapoel Haifa,3,1,H
+2017-02-26,Bnei Sakhnin,Beitar Jerusalem,0,2,A
+2017-02-27,Hapoel Beer Sheva,Hapoel Kfar Saba,3,0,H
+2017-03-04,Hapoel Haifa,Ironi Kiryat Shmona,1,2,A
+2017-03-04,Hapoel Ra'anana,Bnei Sakhnin,0,1,A
+2017-03-04,Hapoel Tel Aviv,Bnei Yehuda,1,2,A
+2017-03-04,Ashdod,Hapoel Beer Sheva,0,1,A
+2017-03-05,Hapoel Kfar Saba,Maccabi Petah Tikva,1,3,A
+2017-03-05,Hapoel Ashkelon,Maccabi Tel Aviv,1,2,A
+2017-03-06,Beitar Jerusalem,Maccabi Haifa,0,1,A
+2017-03-11,Maccabi Petah Tikva,Ashdod,0,1,A
+2017-03-11,Maccabi Haifa,Hapoel Ra'anana,2,0,H
+2017-03-11,Bnei Sakhnin,Hapoel Tel Aviv,0,0,D
+2017-03-11,Ironi Kiryat Shmona,Hapoel Kfar Saba,1,2,A
+2017-03-12,Bnei Yehuda,Hapoel Ashkelon,0,0,D
+2017-03-12,Maccabi Tel Aviv,Hapoel Haifa,1,0,H
+2017-03-13,Hapoel Beer Sheva,Beitar Jerusalem,2,1,H
+2017-03-18,Ironi Kiryat Shmona,Hapoel Tel Aviv,2,3,A
+2017-03-18,Hapoel Haifa,Hapoel Ashkelon,1,4,A
+2017-03-18,Maccabi Tel Aviv,Bnei Sakhnin,3,0,H
+2017-03-18,Maccabi Petah Tikva,Beitar Jerusalem,0,1,A
+2017-03-19,Hapoel Ra'anana,Bnei Yehuda,0,2,A
+2017-03-19,Hapoel Beer Sheva,Maccabi Haifa,4,0,H
+2017-03-20,Ashdod,Hapoel Kfar Saba,0,0,D
+2017-04-01,Hapoel Tel Aviv,Bnei Yehuda,2,0,H
+2017-04-01,Ironi Kiryat Shmona,Hapoel Haifa,0,2,A
+2017-04-01,Maccabi Haifa,Beitar Jerusalem,3,2,H
+2017-04-01,Hapoel Beer Sheva,Maccabi Tel Aviv,1,0,H
+2017-04-02,Bnei Sakhnin,Maccabi Petah Tikva,1,0,H
+2017-04-02,Hapoel Kfar Saba,Hapoel Ra'anana,0,2,A
+2017-04-03,Hapoel Ashkelon,Ashdod,0,0,D
+2017-04-08,Hapoel Haifa,Hapoel Tel Aviv,3,3,D
+2017-04-08,Hapoel Ra'anana,Hapoel Ashkelon,0,2,A
+2017-04-08,Bnei Yehuda,Hapoel Kfar Saba,1,0,H
+2017-04-08,Beitar Jerusalem,Bnei Sakhnin,3,0,H
+2017-04-09,Ashdod,Ironi Kiryat Shmona,1,1,D
+2017-04-09,Maccabi Petah Tikva,Hapoel Beer Sheva,1,2,A
+2017-04-09,Maccabi Tel Aviv,Maccabi Haifa,3,0,H
+2017-04-15,Maccabi Haifa,Bnei Sakhnin,0,1,A
+2017-04-15,Maccabi Tel Aviv,Maccabi Petah Tikva,2,0,H
+2017-04-17,Hapoel Beer Sheva,Beitar Jerusalem,2,0,H
+2017-04-22,Hapoel Ashkelon,Bnei Yehuda,1,0,H
+2017-04-22,Hapoel Haifa,Ashdod,1,1,D
+2017-04-22,Maccabi Petah Tikva,Maccabi Haifa,0,1,A
+2017-04-22,Bnei Sakhnin,Hapoel Beer Sheva,1,3,A
+2017-04-22,Ironi Kiryat Shmona,Hapoel Ra'anana,2,3,A
+2017-04-22,Beitar Jerusalem,Maccabi Tel Aviv,1,1,D
+2017-04-24,Hapoel Tel Aviv,Hapoel Kfar Saba,2,0,H
+2017-04-25,Bnei Sakhnin,Maccabi Tel Aviv,1,3,A
+2017-04-25,Maccabi Haifa,Hapoel Beer Sheva,0,1,A
+2017-04-26,Beitar Jerusalem,Maccabi Petah Tikva,2,1,H
+2017-04-27,Bnei Yehuda,Ironi Kiryat Shmona,0,2,A
+2017-04-27,Hapoel Ra'anana,Hapoel Haifa,0,2,A
+2017-04-29,Hapoel Kfar Saba,Hapoel Ashkelon,1,0,H
+2017-04-29,Ashdod,Hapoel Tel Aviv,2,0,H
+2017-04-29,Maccabi Petah Tikva,Bnei Sakhnin,1,0,H
+2017-04-29,Beitar Jerusalem,Maccabi Haifa,2,0,H
+2017-04-29,Maccabi Tel Aviv,Hapoel Beer Sheva,1,2,A
+2017-05-06,Hapoel Haifa,Bnei Yehuda,1,1,D
+2017-05-06,Hapoel Tel Aviv,Hapoel Ashkelon,0,0,D
+2017-05-06,Ashdod,Hapoel Ra'anana,2,2,D
+2017-05-06,Ironi Kiryat Shmona,Hapoel Kfar Saba,1,4,A
+2017-05-06,Bnei Sakhnin,Beitar Jerusalem,1,5,A
+2017-05-07,Maccabi Haifa,Maccabi Tel Aviv,0,2,A
+2017-05-08,Hapoel Beer Sheva,Maccabi Petah Tikva,1,1,D
+2017-05-13,Bnei Sakhnin,Maccabi Haifa,1,0,H
+2017-05-13,Hapoel Ashkelon,Ironi Kiryat Shmona,2,1,H
+2017-05-13,Hapoel Kfar Saba,Hapoel Haifa,1,0,H
+2017-05-13,Bnei Yehuda,Ashdod,2,1,H
+2017-05-13,Hapoel Ra'anana,Hapoel Tel Aviv,1,1,D
+2017-05-14,Maccabi Petah Tikva,Maccabi Tel Aviv,2,1,H
+2017-05-15,Beitar Jerusalem,Hapoel Beer Sheva,1,1,D
+2017-05-20,Hapoel Beer Sheva,Bnei Sakhnin,2,0,H
+2017-05-20,Maccabi Tel Aviv,Beitar Jerusalem,0,2,A
+2017-05-20,Maccabi Haifa,Maccabi Petah Tikva,0,0,D

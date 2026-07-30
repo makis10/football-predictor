@@ -1,0 +1,193 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2025-07-26,Dunajska Streda,Zemplin Michalovce,1,1,D
+2025-07-26,Komarno,AS Trencin,1,2,A
+2025-07-26,Tatran Presov,Slovan Bratislava,2,2,D
+2025-07-27,Podbrezova,FK Kosice,3,1,H
+2025-07-27,Skalica,Zilina,0,0,D
+2025-07-27,Spartak Trnava,Ruzomberok,3,0,H
+2025-08-02,Zemplin Michalovce,Komarno,3,1,H
+2025-08-02,Slovan Bratislava,Podbrezova,4,1,H
+2025-08-03,AS Trencin,Spartak Trnava,0,1,A
+2025-08-03,Zilina,Tatran Presov,1,0,H
+2025-08-09,Zemplin Michalovce,Zilina,2,4,A
+2025-08-09,Skalica,Podbrezova,2,2,D
+2025-08-09,Dunajska Streda,Ruzomberok,2,0,H
+2025-08-10,FK Kosice,AS Trencin,0,1,A
+2025-08-10,Spartak Trnava,Tatran Presov,1,0,H
+2025-08-12,Ruzomberok,Skalica,1,3,A
+2025-08-16,Slovan Bratislava,Skalica,1,0,H
+2025-08-16,Podbrezova,Komarno,2,1,H
+2025-08-16,Ruzomberok,Zemplin Michalovce,0,1,A
+2025-08-16,Tatran Presov,Dunajska Streda,0,0,D
+2025-08-17,AS Trencin,Zilina,2,1,H
+2025-08-23,FK Kosice,Ruzomberok,3,1,H
+2025-08-23,Skalica,Tatran Presov,2,2,D
+2025-08-23,Dunajska Streda,AS Trencin,4,1,H
+2025-08-24,Komarno,Spartak Trnava,1,4,A
+2025-08-24,Zemplin Michalovce,Slovan Bratislava,1,1,D
+2025-08-24,Zilina,Podbrezova,3,0,H
+2025-08-30,Komarno,Skalica,1,0,H
+2025-08-30,Tatran Presov,AS Trencin,2,3,A
+2025-08-30,Podbrezova,Zemplin Michalovce,2,2,D
+2025-08-31,Slovan Bratislava,FK Kosice,3,2,H
+2025-08-31,Ruzomberok,Zilina,3,3,D
+2025-08-31,Spartak Trnava,Dunajska Streda,0,3,A
+2025-09-13,AS Trencin,Ruzomberok,0,3,A
+2025-09-13,FK Kosice,Komarno,2,3,A
+2025-09-13,Skalica,Spartak Trnava,0,4,A
+2025-09-13,Zilina,Slovan Bratislava,3,3,D
+2025-09-14,Zemplin Michalovce,Tatran Presov,1,2,A
+2025-09-14,Dunajska Streda,Podbrezova,2,0,H
+2025-09-20,Podbrezova,AS Trencin,2,0,H
+2025-09-20,Skalica,FK Kosice,1,0,H
+2025-09-20,Tatran Presov,Ruzomberok,1,3,A
+2025-09-20,Slovan Bratislava,Dunajska Streda,3,2,H
+2025-09-21,Komarno,Zilina,1,3,A
+2025-09-21,Spartak Trnava,Zemplin Michalovce,0,1,A
+2025-09-27,AS Trencin,Slovan Bratislava,1,2,A
+2025-09-27,Dunajska Streda,Komarno,1,1,D
+2025-09-27,Zemplin Michalovce,Skalica,2,0,H
+2025-09-27,FK Kosice,Tatran Presov,2,2,D
+2025-09-28,Ruzomberok,Podbrezova,1,0,H
+2025-09-28,Zilina,Spartak Trnava,2,2,D
+2025-10-01,FK Kosice,Dunajska Streda,0,2,A
+2025-10-04,Zemplin Michalovce,AS Trencin,2,0,H
+2025-10-04,Komarno,Tatran Presov,0,0,D
+2025-10-04,Zilina,FK Kosice,4,1,H
+2025-10-05,Skalica,Dunajska Streda,1,1,D
+2025-10-18,AS Trencin,Skalica,1,1,D
+2025-10-18,Ruzomberok,Komarno,0,1,A
+2025-10-18,Tatran Presov,Podbrezova,2,2,D
+2025-10-18,Spartak Trnava,Slovan Bratislava,0,2,A
+2025-10-19,FK Kosice,Zemplin Michalovce,3,2,H
+2025-10-19,Dunajska Streda,Zilina,1,2,A
+2025-10-25,AS Trencin,Komarno,0,1,A
+2025-10-25,Zemplin Michalovce,Dunajska Streda,2,4,A
+2025-10-25,Zilina,Skalica,3,2,H
+2025-10-25,FK Kosice,Podbrezova,2,4,A
+2025-10-26,Ruzomberok,Spartak Trnava,1,1,D
+2025-10-26,Slovan Bratislava,Tatran Presov,0,1,A
+2025-10-29,Spartak Trnava,FK Kosice,3,1,H
+2025-10-29,Komarno,Slovan Bratislava,2,3,A
+2025-11-01,Podbrezova,Slovan Bratislava,1,3,A
+2025-11-01,Skalica,Ruzomberok,0,0,D
+2025-11-01,Tatran Presov,Zilina,0,4,A
+2025-11-01,Dunajska Streda,FK Kosice,3,1,H
+2025-11-02,Komarno,Zemplin Michalovce,1,1,D
+2025-11-02,Spartak Trnava,AS Trencin,4,0,H
+2025-11-08,AS Trencin,FK Kosice,2,0,H
+2025-11-08,Podbrezova,Skalica,2,0,H
+2025-11-08,Ruzomberok,Dunajska Streda,0,1,A
+2025-11-08,Zilina,Zemplin Michalovce,2,0,H
+2025-11-09,Slovan Bratislava,Komarno,3,2,H
+2025-11-09,Tatran Presov,Spartak Trnava,2,1,H
+2025-11-22,Zilina,AS Trencin,4,1,H
+2025-11-22,Komarno,Podbrezova,1,0,H
+2025-11-22,Skalica,Slovan Bratislava,0,1,A
+2025-11-22,FK Kosice,Spartak Trnava,1,2,A
+2025-11-23,Zemplin Michalovce,Ruzomberok,4,2,H
+2025-11-23,Dunajska Streda,Tatran Presov,0,0,D
+2025-11-29,Spartak Trnava,Komarno,2,0,H
+2025-11-29,Ruzomberok,FK Kosice,1,1,D
+2025-11-29,Tatran Presov,Skalica,3,2,H
+2025-11-29,AS Trencin,Dunajska Streda,0,3,A
+2025-11-30,Slovan Bratislava,Zemplin Michalovce,3,2,H
+2025-11-30,Podbrezova,Zilina,2,0,H
+2025-12-03,Slovan Bratislava,Ruzomberok,1,2,A
+2025-12-03,Podbrezova,Spartak Trnava,1,3,A
+2025-12-06,Zemplin Michalovce,Podbrezova,0,4,A
+2025-12-06,Zilina,Ruzomberok,1,2,A
+2025-12-06,Skalica,Komarno,1,1,D
+2025-12-06,FK Kosice,Slovan Bratislava,2,0,H
+2025-12-07,AS Trencin,Tatran Presov,0,0,D
+2025-12-07,Dunajska Streda,Spartak Trnava,3,1,H
+2025-12-13,Spartak Trnava,Skalica,2,0,H
+2025-12-13,Podbrezova,Dunajska Streda,0,1,A
+2025-12-13,Ruzomberok,AS Trencin,0,0,D
+2025-12-13,Tatran Presov,Zemplin Michalovce,0,1,A
+2025-12-14,Komarno,FK Kosice,1,2,A
+2025-12-14,Slovan Bratislava,Zilina,3,2,H
+2026-02-07,AS Trencin,Podbrezova,0,4,A
+2026-02-07,Ruzomberok,Tatran Presov,1,0,H
+2026-02-07,FK Kosice,Skalica,3,1,H
+2026-02-07,Dunajska Streda,Slovan Bratislava,0,3,A
+2026-02-08,Zilina,Komarno,1,0,H
+2026-02-08,Zemplin Michalovce,Spartak Trnava,1,1,D
+2026-02-14,Slovan Bratislava,AS Trencin,0,2,A
+2026-02-14,Podbrezova,Ruzomberok,5,0,H
+2026-02-14,Skalica,Zemplin Michalovce,2,1,H
+2026-02-14,Tatran Presov,FK Kosice,1,4,A
+2026-02-15,Komarno,Dunajska Streda,2,2,D
+2026-02-15,Spartak Trnava,Zilina,0,0,D
+2026-02-21,AS Trencin,Zemplin Michalovce,1,2,A
+2026-02-21,Dunajska Streda,Skalica,3,2,H
+2026-02-21,Tatran Presov,Komarno,1,1,D
+2026-02-21,Spartak Trnava,Podbrezova,0,5,A
+2026-02-22,Ruzomberok,Slovan Bratislava,2,2,D
+2026-02-22,FK Kosice,Zilina,2,2,D
+2026-02-28,Slovan Bratislava,Spartak Trnava,4,0,H
+2026-02-28,Podbrezova,Tatran Presov,4,1,H
+2026-02-28,Zemplin Michalovce,FK Kosice,0,2,A
+2026-02-28,Zilina,Dunajska Streda,0,0,D
+2026-02-28,Komarno,Ruzomberok,1,1,D
+2026-02-28,Skalica,AS Trencin,0,1,A
+2026-03-07,Zemplin Michalovce,Slovan Bratislava,1,3,A
+2026-03-07,FK Kosice,AS Trencin,2,0,H
+2026-03-07,Skalica,Tatran Presov,1,0,H
+2026-03-07,Zilina,Spartak Trnava,0,1,A
+2026-03-08,Komarno,Ruzomberok,3,0,H
+2026-03-08,Dunajska Streda,Podbrezova,2,1,H
+2026-03-14,Podbrezova,Zemplin Michalovce,0,1,A
+2026-03-14,Ruzomberok,FK Kosice,1,1,D
+2026-03-14,Tatran Presov,Komarno,0,0,D
+2026-03-15,AS Trencin,Skalica,2,1,H
+2026-03-15,Slovan Bratislava,Zilina,0,1,A
+2026-03-21,AS Trencin,Ruzomberok,3,1,H
+2026-03-21,Zemplin Michalovce,Spartak Trnava,1,0,H
+2026-03-21,Zilina,Dunajska Streda,3,1,H
+2026-03-21,FK Kosice,Tatran Presov,2,1,H
+2026-03-22,Skalica,Komarno,2,1,H
+2026-03-22,Slovan Bratislava,Podbrezova,2,0,H
+2026-04-04,Zemplin Michalovce,Zilina,2,1,H
+2026-04-04,FK Kosice,Skalica,2,0,H
+2026-04-04,Tatran Presov,Ruzomberok,0,0,D
+2026-04-04,Dunajska Streda,Slovan Bratislava,0,3,A
+2026-04-05,Komarno,AS Trencin,0,1,A
+2026-04-05,Spartak Trnava,Podbrezova,4,1,H
+2026-04-11,AS Trencin,Tatran Presov,1,0,H
+2026-04-11,Podbrezova,Zilina,1,5,A
+2026-04-11,Ruzomberok,Skalica,0,0,D
+2026-04-11,Slovan Bratislava,Spartak Trnava,2,2,D
+2026-04-12,Komarno,FK Kosice,1,2,A
+2026-04-12,Dunajska Streda,Zemplin Michalovce,3,0,H
+2026-04-18,Spartak Trnava,Zemplin Michalovce,3,0,H
+2026-04-18,Podbrezova,Dunajska Streda,1,2,A
+2026-04-18,Ruzomberok,Komarno,2,1,H
+2026-04-18,Zilina,Slovan Bratislava,0,1,A
+2026-04-19,Skalica,AS Trencin,4,1,H
+2026-04-19,Tatran Presov,FK Kosice,2,1,H
+2026-04-22,Spartak Trnava,Dunajska Streda,2,1,H
+2026-04-25,Zemplin Michalovce,Podbrezova,1,2,A
+2026-04-25,FK Kosice,Ruzomberok,3,1,H
+2026-04-25,Komarno,Skalica,0,2,A
+2026-04-25,Dunajska Streda,Zilina,3,1,H
+2026-04-26,Tatran Presov,AS Trencin,0,1,A
+2026-04-26,Spartak Trnava,Slovan Bratislava,0,1,A
+2026-05-02,Ruzomberok,Tatran Presov,1,1,D
+2026-05-02,Slovan Bratislava,Dunajska Streda,1,0,H
+2026-05-03,AS Trencin,Komarno,1,2,A
+2026-05-03,Podbrezova,Spartak Trnava,0,3,A
+2026-05-05,Zilina,Zemplin Michalovce,3,2,H
+2026-05-05,Skalica,FK Kosice,3,1,H
+2026-05-09,Podbrezova,Slovan Bratislava,1,2,A
+2026-05-09,Ruzomberok,AS Trencin,4,3,H
+2026-05-09,Zemplin Michalovce,Dunajska Streda,2,1,H
+2026-05-09,Tatran Presov,Skalica,3,0,H
+2026-05-10,FK Kosice,Komarno,2,1,H
+2026-05-10,Spartak Trnava,Zilina,1,0,H
+2026-05-16,AS Trencin,FK Kosice,3,0,H
+2026-05-16,Slovan Bratislava,Zemplin Michalovce,0,2,A
+2026-05-16,Dunajska Streda,Spartak Trnava,3,0,H
+2026-05-16,Zilina,Podbrezova,0,2,A
+2026-05-16,Komarno,Tatran Presov,1,0,H
+2026-05-16,Skalica,Ruzomberok,1,0,H

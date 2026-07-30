@@ -1,0 +1,266 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2025-09-13,Kalamata,Marko,2,0,H
+2025-09-13,Egaleo,Kallithea,1,2,A
+2025-09-13,Ilioupoli,Panargiakos,1,1,D
+2025-09-13,Kampaniakos Chalastra,Kavala,1,0,H
+2025-09-14,Anagennisi Karditsas,Makedonikos Neapolis,3,0,H
+2025-09-14,Kissamikos,Ellas Syros,1,1,D
+2025-09-14,Nestos Chrisoupolis,PAS Giannina,1,0,H
+2025-09-14,Iraklis 1908,Asteras Tripolis II,2,2,D
+2025-09-14,Olympiakos Piraeus II,Panionios,1,1,D
+2025-09-15,Niki Volos,PAOK II,1,0,H
+2025-09-20,PAOK II,Anagennisi Karditsas,0,1,A
+2025-09-20,Kissamikos,Kalamata,1,2,A
+2025-09-20,Kavala,Iraklis 1908,1,2,A
+2025-09-20,Makedonikos Neapolis,PAS Giannina,1,0,H
+2025-09-20,Marko,Ilioupoli,1,0,H
+2025-09-21,Panionios,Kallithea,1,0,H
+2025-09-21,Niki Volos,Kampaniakos Chalastra,4,0,H
+2025-09-21,Panargiakos,Egaleo,1,1,D
+2025-09-21,Ellas Syros,Olympiakos Piraeus II,0,1,A
+2025-09-21,Asteras Tripolis II,Nestos Chrisoupolis,2,1,H
+2025-09-27,Panionios,Panargiakos,3,1,H
+2025-09-27,Makedonikos Neapolis,Asteras Tripolis II,1,1,D
+2025-09-27,PAS Giannina,PAOK II,2,4,A
+2025-09-28,Anagennisi Karditsas,Niki Volos,0,3,A
+2025-09-28,Kampaniakos Chalastra,Iraklis 1908,0,1,A
+2025-09-28,Kallithea,Ellas Syros,1,0,H
+2025-09-28,Olympiakos Piraeus II,Kissamikos,1,0,H
+2025-09-28,Kalamata,Ilioupoli,5,0,H
+2025-09-28,Egaleo,Marko,0,1,A
+2025-09-29,Nestos Chrisoupolis,Kavala,0,1,A
+2025-10-04,Anagennisi Karditsas,Kampaniakos Chalastra,2,0,H
+2025-10-04,Niki Volos,PAS Giannina,1,0,H
+2025-10-04,Ilioupoli,Egaleo,1,2,A
+2025-10-04,PAOK II,Asteras Tripolis II,0,1,A
+2025-10-05,Ellas Syros,Panargiakos,5,0,H
+2025-10-05,Kissamikos,Kallithea,1,3,A
+2025-10-05,Marko,Panionios,1,1,D
+2025-10-05,Iraklis 1908,Nestos Chrisoupolis,3,1,H
+2025-10-05,Olympiakos Piraeus II,Kalamata,1,4,A
+2025-10-05,Kavala,Makedonikos Neapolis,1,1,D
+2025-10-11,Kalamata,Egaleo,1,1,D
+2025-10-11,Makedonikos Neapolis,Iraklis 1908,1,4,A
+2025-10-11,Asteras Tripolis II,Niki Volos,3,1,H
+2025-10-11,Marko,Ellas Syros,1,1,D
+2025-10-11,Kampaniakos Chalastra,Nestos Chrisoupolis,1,1,D
+2025-10-12,Panionios,Ilioupoli,2,0,H
+2025-10-12,Kallithea,Olympiakos Piraeus II,2,3,A
+2025-10-12,Panargiakos,Kissamikos,0,0,D
+2025-10-12,PAS Giannina,Anagennisi Karditsas,0,0,D
+2025-10-12,Kavala,PAOK II,1,1,D
+2025-10-18,Kissamikos,Marko,1,1,D
+2025-10-18,Ilioupoli,Ellas Syros,1,2,A
+2025-10-18,Iraklis 1908,PAOK II,2,1,H
+2025-10-18,Olympiakos Piraeus II,Panargiakos,2,1,H
+2025-10-18,Niki Volos,Kavala,6,0,H
+2025-10-18,Nestos Chrisoupolis,Makedonikos Neapolis,1,0,H
+2025-10-19,PAS Giannina,Kampaniakos Chalastra,3,0,H
+2025-10-19,Anagennisi Karditsas,Asteras Tripolis II,2,0,H
+2025-10-19,Kallithea,Kalamata,1,2,A
+2025-10-19,Egaleo,Panionios,0,1,A
+2025-10-25,Ellas Syros,Egaleo,0,0,D
+2025-10-25,Iraklis 1908,Niki Volos,0,0,D
+2025-10-25,Asteras Tripolis II,PAS Giannina,2,1,H
+2025-10-25,Kavala,Anagennisi Karditsas,2,3,A
+2025-10-25,Panargiakos,Kallithea,0,4,A
+2025-10-25,Ilioupoli,Kissamikos,0,2,A
+2025-10-26,Panionios,Kalamata,1,1,D
+2025-10-26,Makedonikos Neapolis,Kampaniakos Chalastra,0,1,A
+2025-10-26,Marko,Olympiakos Piraeus II,2,0,H
+2025-10-26,PAOK II,Nestos Chrisoupolis,2,0,H
+2025-11-01,Kallithea,Marko,1,1,D
+2025-11-01,Kalamata,Panargiakos,5,1,H
+2025-11-01,Nestos Chrisoupolis,Niki Volos,0,0,D
+2025-11-01,Olympiakos Piraeus II,Ilioupoli,2,3,A
+2025-11-01,PAOK II,Makedonikos Neapolis,3,0,H
+2025-11-02,Ellas Syros,Panionios,1,2,A
+2025-11-02,Anagennisi Karditsas,Iraklis 1908,1,1,D
+2025-11-02,Kampaniakos Chalastra,Asteras Tripolis II,0,1,A
+2025-11-02,PAS Giannina,Kavala,0,0,D
+2025-11-02,Egaleo,Kissamikos,1,0,H
+2025-11-08,Iraklis 1908,PAS Giannina,4,0,H
+2025-11-08,Asteras Tripolis II,Kavala,1,0,H
+2025-11-08,Kissamikos,Panionios,0,2,A
+2025-11-09,Kampaniakos Chalastra,PAOK II,0,0,D
+2025-11-09,Kalamata,Ellas Syros,2,0,H
+2025-11-09,Niki Volos,Makedonikos Neapolis,6,0,H
+2025-11-09,Panargiakos,Marko,0,1,A
+2025-11-09,Nestos Chrisoupolis,Anagennisi Karditsas,0,1,A
+2025-11-10,Ilioupoli,Kallithea,0,1,A
+2025-11-15,Marko,Kalamata,2,3,A
+2025-11-15,Makedonikos Neapolis,Anagennisi Karditsas,0,1,A
+2025-11-15,PAS Giannina,Nestos Chrisoupolis,0,1,A
+2025-11-15,PAOK II,Niki Volos,1,6,A
+2025-11-16,Ellas Syros,Kissamikos,4,1,H
+2025-11-16,Asteras Tripolis II,Iraklis 1908,0,1,A
+2025-11-16,Kallithea,Egaleo,1,1,D
+2025-11-16,Kavala,Kampaniakos Chalastra,1,0,H
+2025-11-16,Panargiakos,Ilioupoli,0,2,A
+2025-11-22,Iraklis 1908,Kavala,1,0,H
+2025-11-22,Olympiakos Piraeus II,Ellas Syros,2,2,D
+2025-11-22,Anagennisi Karditsas,PAOK II,2,1,H
+2025-11-22,Kalamata,Kissamikos,1,0,H
+2025-11-22,Kampaniakos Chalastra,Niki Volos,1,3,A
+2025-11-23,Kallithea,Panionios,0,1,A
+2025-11-23,Nestos Chrisoupolis,Asteras Tripolis II,0,1,A
+2025-11-23,PAS Giannina,Makedonikos Neapolis,1,0,H
+2025-11-23,Egaleo,Panargiakos,0,0,D
+2025-11-23,Ilioupoli,Marko,1,2,A
+2025-11-29,Kissamikos,Olympiakos Piraeus II,1,0,H
+2025-11-29,Ilioupoli,Kalamata,0,3,A
+2025-11-29,Kavala,Nestos Chrisoupolis,1,0,H
+2025-11-29,Marko,Egaleo,3,0,H
+2025-11-29,PAOK II,PAS Giannina,1,0,H
+2025-11-30,Ellas Syros,Kallithea,2,0,H
+2025-11-30,Niki Volos,Anagennisi Karditsas,0,0,D
+2025-11-30,Asteras Tripolis II,Makedonikos Neapolis,3,0,H
+2025-11-30,Panargiakos,Panionios,0,3,A
+2025-11-30,Iraklis 1908,Kampaniakos Chalastra,2,2,D
+2025-12-03,Panionios,Olympiakos Piraeus II,4,1,H
+2025-12-06,Kalamata,Olympiakos Piraeus II,3,1,H
+2025-12-06,Asteras Tripolis II,PAOK II,1,1,D
+2025-12-06,PAS Giannina,Niki Volos,1,1,D
+2025-12-06,Kampaniakos Chalastra,Anagennisi Karditsas,0,3,A
+2025-12-07,Makedonikos Neapolis,Kavala,0,1,A
+2025-12-07,Panionios,Marko,1,0,H
+2025-12-07,Kallithea,Kissamikos,2,0,H
+2025-12-07,Panargiakos,Ellas Syros,1,3,A
+2025-12-07,Egaleo,Ilioupoli,3,0,H
+2025-12-07,Nestos Chrisoupolis,Iraklis 1908,1,2,A
+2025-12-13,Olympiakos Piraeus II,Kallithea,0,0,D
+2025-12-13,Ellas Syros,Marko,0,2,A
+2025-12-13,Egaleo,Kalamata,0,2,A
+2025-12-13,Nestos Chrisoupolis,Kampaniakos Chalastra,2,0,H
+2025-12-13,PAOK II,Kavala,0,2,A
+2025-12-14,Niki Volos,Asteras Tripolis II,3,1,H
+2025-12-14,Anagennisi Karditsas,PAS Giannina,1,0,H
+2025-12-14,Kissamikos,Panargiakos,2,0,H
+2025-12-14,Ilioupoli,Panionios,0,1,A
+2025-12-14,Iraklis 1908,Makedonikos Neapolis,3,0,H
+2025-12-17,Egaleo,Olympiakos Piraeus II,0,3,A
+2025-12-20,Kalamata,Kallithea,2,0,H
+2025-12-20,Makedonikos Neapolis,Nestos Chrisoupolis,2,2,D
+2025-12-20,Kampaniakos Chalastra,PAS Giannina,2,0,H
+2025-12-21,Marko,Kissamikos,2,0,H
+2025-12-21,Panionios,Egaleo,1,0,H
+2025-12-21,Kavala,Niki Volos,2,2,D
+2025-12-21,Panargiakos,Olympiakos Piraeus II,1,2,A
+2025-12-21,PAOK II,Iraklis 1908,1,2,A
+2025-12-21,Ellas Syros,Ilioupoli,1,1,D
+2025-12-22,Asteras Tripolis II,Anagennisi Karditsas,0,1,A
+2026-01-10,Niki Volos,Iraklis 1908,1,1,D
+2026-01-10,Kallithea,Panargiakos,1,1,D
+2026-01-10,Egaleo,Ellas Syros,0,2,A
+2026-01-10,Nestos Chrisoupolis,PAOK II,0,2,A
+2026-01-10,Kampaniakos Chalastra,Makedonikos Neapolis,2,1,H
+2026-01-11,PAS Giannina,Asteras Tripolis II,1,1,D
+2026-01-11,Kalamata,Panionios,2,0,H
+2026-01-11,Anagennisi Karditsas,Kavala,3,0,H
+2026-01-11,Kissamikos,Ilioupoli,0,2,A
+2026-01-11,Olympiakos Piraeus II,Marko,1,0,H
+2026-01-17,Kavala,PAS Giannina,2,0,H
+2026-01-17,Niki Volos,Nestos Chrisoupolis,2,0,H
+2026-01-17,Makedonikos Neapolis,PAOK II,1,3,A
+2026-01-17,Iraklis 1908,Anagennisi Karditsas,1,0,H
+2026-01-17,Asteras Tripolis II,Kampaniakos Chalastra,4,1,H
+2026-01-18,Panionios,Ellas Syros,0,0,D
+2026-01-18,Kissamikos,Egaleo,1,3,A
+2026-01-18,Panargiakos,Kalamata,0,2,A
+2026-01-18,Marko,Kallithea,0,1,A
+2026-01-18,Ilioupoli,Olympiakos Piraeus II,1,0,H
+2026-01-24,PAS Giannina,Iraklis 1908,1,2,A
+2026-01-24,Anagennisi Karditsas,Nestos Chrisoupolis,1,2,A
+2026-01-24,Kavala,Asteras Tripolis II,1,1,D
+2026-01-24,Makedonikos Neapolis,Niki Volos,0,1,A
+2026-01-24,PAOK II,Kampaniakos Chalastra,4,1,H
+2026-01-25,Panionios,Kissamikos,3,0,H
+2026-01-25,Kallithea,Ilioupoli,1,1,D
+2026-01-25,Marko,Panargiakos,1,0,H
+2026-01-25,Olympiakos Piraeus II,Egaleo,2,1,H
+2026-01-25,Ellas Syros,Kalamata,1,2,A
+2026-02-14,Anagennisi Karditsas,Niki Volos,0,0,D
+2026-02-14,Makedonikos Neapolis,PAS Giannina,0,1,A
+2026-02-14,Iraklis 1908,Asteras Tripolis II,2,0,H
+2026-02-14,PAOK II,Kavala,4,0,H
+2026-02-14,Kampaniakos Chalastra,Nestos Chrisoupolis,0,0,D
+2026-02-15,Kissamikos,Ellas Syros,1,2,A
+2026-02-15,Kalamata,Panionios,0,2,A
+2026-02-15,Egaleo,Kallithea,1,0,H
+2026-02-15,Marko,Olympiakos Piraeus II,1,1,D
+2026-02-15,Ilioupoli,Panargiakos,1,0,H
+2026-02-21,Panionios,Marko,0,0,D
+2026-02-21,Kallithea,Ilioupoli,1,0,H
+2026-02-21,Panargiakos,Kissamikos,0,1,A
+2026-02-21,Olympiakos Piraeus II,Kalamata,0,3,A
+2026-02-21,Ellas Syros,Egaleo,3,0,H
+2026-02-22,PAS Giannina,PAOK II,1,2,A
+2026-02-22,Kavala,Kampaniakos Chalastra,0,0,D
+2026-02-22,Niki Volos,Iraklis 1908,0,1,A
+2026-02-22,Nestos Chrisoupolis,Makedonikos Neapolis,5,1,H
+2026-02-22,Asteras Tripolis II,Anagennisi Karditsas,1,0,H
+2026-02-28,Anagennisi Karditsas,Iraklis 1908,0,1,A
+2026-02-28,Kavala,PAS Giannina,3,0,H
+2026-02-28,Nestos Chrisoupolis,PAOK II,1,0,H
+2026-02-28,Kampaniakos Chalastra,Makedonikos Neapolis,1,2,A
+2026-02-28,Asteras Tripolis II,Niki Volos,1,1,D
+2026-03-01,Kissamikos,Egaleo,0,0,D
+2026-03-01,Kalamata,Marko,2,0,H
+2026-03-01,Panargiakos,Kallithea,0,1,A
+2026-03-01,Olympiakos Piraeus II,Panionios,2,1,H
+2026-03-01,Ellas Syros,Ilioupoli,1,1,D
+2026-03-07,Panionios,Kalamata,0,1,A
+2026-03-07,Kallithea,Ellas Syros,1,1,D
+2026-03-07,Egaleo,Panargiakos,1,0,H
+2026-03-07,Ilioupoli,Kissamikos,0,1,A
+2026-03-07,Olympiakos Piraeus II,Marko,0,3,A
+2026-03-08,PAS Giannina,Nestos Chrisoupolis,0,0,D
+2026-03-08,Niki Volos,Anagennisi Karditsas,1,0,H
+2026-03-08,Makedonikos Neapolis,Kavala,0,0,D
+2026-03-08,PAOK II,Kampaniakos Chalastra,3,0,H
+2026-03-08,Asteras Tripolis II,Iraklis 1908,0,2,A
+2026-03-14,Anagennisi Karditsas,Asteras Tripolis II,2,2,D
+2026-03-14,Nestos Chrisoupolis,Kavala,2,1,H
+2026-03-14,Makedonikos Neapolis,PAOK II,0,1,A
+2026-03-14,Iraklis 1908,Niki Volos,0,0,D
+2026-03-14,Kampaniakos Chalastra,PAS Giannina,3,2,H
+2026-03-15,Kissamikos,Kallithea,1,2,A
+2026-03-15,Kalamata,Olympiakos Piraeus II,1,0,H
+2026-03-15,Egaleo,Ilioupoli,2,0,H
+2026-03-15,Marko,Panionios,2,1,H
+2026-03-15,Ellas Syros,Panargiakos,3,1,H
+2026-03-21,Panionios,Olympiakos Piraeus II,3,0,H
+2026-03-21,Kallithea,Egaleo,1,1,D
+2026-03-21,Panargiakos,Ilioupoli,1,1,D
+2026-03-21,Marko,Kalamata,0,0,D
+2026-03-21,Ellas Syros,Kissamikos,1,0,H
+2026-03-22,Niki Volos,Asteras Tripolis II,3,0,H
+2026-03-22,Iraklis 1908,Anagennisi Karditsas,3,1,H
+2026-03-28,Kalamata,Iraklis 1908,1,0,H
+2026-03-29,Kissamikos,Panargiakos,2,0,H
+2026-03-29,Egaleo,Ellas Syros,2,1,H
+2026-03-29,Ilioupoli,Kallithea,0,2,A
+2026-04-04,Kallithea,Panargiakos,1,1,D
+2026-04-04,Egaleo,Kissamikos,1,0,H
+2026-04-04,Ilioupoli,Ellas Syros,0,2,A
+2026-04-05,PAS Giannina,Makedonikos Neapolis,2,2,D
+2026-04-05,Kavala,PAOK II,2,1,H
+2026-04-05,Nestos Chrisoupolis,Kampaniakos Chalastra,3,0,H
+2026-04-08,Makedonikos Neapolis,Nestos Chrisoupolis,0,2,A
+2026-04-08,PAOK II,PAS Giannina,2,1,H
+2026-04-08,Kampaniakos Chalastra,Kavala,2,0,H
+2026-04-18,PAS Giannina,Kavala,3,1,H
+2026-04-18,Makedonikos Neapolis,Kampaniakos Chalastra,4,3,H
+2026-04-18,PAOK II,Nestos Chrisoupolis,1,1,D
+2026-04-19,Kissamikos,Ilioupoli,1,0,H
+2026-04-19,Panargiakos,Egaleo,3,2,H
+2026-04-19,Ellas Syros,Kallithea,0,0,D
+2026-04-22,Kavala,Makedonikos Neapolis,5,1,H
+2026-04-22,Nestos Chrisoupolis,PAS Giannina,1,0,H
+2026-04-22,Kampaniakos Chalastra,PAOK II,1,2,A
+2026-04-25,Kallithea,Kissamikos,2,0,H
+2026-04-25,Panargiakos,Ellas Syros,0,1,A
+2026-04-25,Ilioupoli,Egaleo,1,3,A
+2026-04-26,PAS Giannina,Kampaniakos Chalastra,4,3,H
+2026-04-26,Kavala,Nestos Chrisoupolis,2,2,D
+2026-04-26,PAOK II,Makedonikos Neapolis,3,1,H

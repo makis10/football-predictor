@@ -1,0 +1,185 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2020-08-14,Decic,Buducnost Podgorica,2,0,H
+2020-08-15,Jezero,Rudar Velenje,1,0,H
+2020-08-15,Sutjeska,Petrovac,3,3,D
+2020-08-15,Zeta,Iskra,0,1,A
+2020-08-15,Mladost Ljeskopolje,FK Mladost Podgorica,2,0,H
+2020-08-22,Jezero,Zeta,1,1,D
+2020-08-23,Buducnost Podgorica,Sutjeska,1,0,H
+2020-08-23,Rudar Velenje,FK Mladost Podgorica,3,1,H
+2020-08-23,Iskra,Decic,0,0,D
+2020-08-23,Petrovac,Mladost Ljeskopolje,0,1,A
+2020-08-29,FK Mladost Podgorica,Petrovac,2,2,D
+2020-08-29,Decic,Jezero,0,0,D
+2020-08-29,Mladost Ljeskopolje,Buducnost Podgorica,4,0,H
+2020-09-12,Jezero,Sutjeska,0,2,A
+2020-09-12,Rudar Velenje,Petrovac,1,0,H
+2020-09-12,Iskra,Mladost Ljeskopolje,1,1,D
+2020-09-12,Buducnost Podgorica,FK Mladost Podgorica,3,1,H
+2020-09-12,Zeta,Decic,0,2,A
+2020-09-16,Sutjeska,Iskra,3,2,H
+2020-09-16,Zeta,Rudar Velenje,2,1,H
+2020-09-20,Sutjeska,Zeta,0,2,A
+2020-09-20,Mladost Ljeskopolje,Jezero,1,0,H
+2020-09-20,FK Mladost Podgorica,Iskra,1,1,D
+2020-09-20,Decic,Rudar Velenje,4,1,H
+2020-09-26,Jezero,FK Mladost Podgorica,1,0,H
+2020-09-27,Rudar Velenje,Buducnost Podgorica,1,2,A
+2020-09-27,Iskra,Petrovac,1,0,H
+2020-09-27,Decic,Sutjeska,1,1,D
+2020-09-27,Zeta,Mladost Ljeskopolje,1,1,D
+2020-09-30,Petrovac,Jezero,0,1,A
+2020-09-30,Sutjeska,Rudar Velenje,2,0,H
+2020-09-30,FK Mladost Podgorica,Zeta,1,0,H
+2020-09-30,Mladost Ljeskopolje,Decic,1,1,D
+2020-09-30,Buducnost Podgorica,Iskra,1,0,H
+2020-10-04,Jezero,Buducnost Podgorica,0,2,A
+2020-10-04,Sutjeska,Mladost Ljeskopolje,3,0,H
+2020-10-04,Rudar Velenje,Iskra,4,0,H
+2020-10-04,Zeta,Petrovac,1,0,H
+2020-10-04,Decic,FK Mladost Podgorica,3,0,H
+2020-10-17,Buducnost Podgorica,Zeta,1,0,H
+2020-10-17,Petrovac,Decic,1,1,D
+2020-10-17,Mladost Ljeskopolje,Rudar Velenje,2,0,H
+2020-10-17,Iskra,Jezero,2,1,H
+2020-10-17,FK Mladost Podgorica,Sutjeska,0,0,D
+2020-10-25,Petrovac,Sutjeska,1,1,D
+2020-10-25,Rudar Velenje,Jezero,0,1,A
+2020-10-25,FK Mladost Podgorica,Mladost Ljeskopolje,1,0,H
+2020-10-25,Iskra,Zeta,0,0,D
+2020-10-25,Buducnost Podgorica,Decic,2,2,D
+2020-10-31,Mladost Ljeskopolje,Petrovac,1,3,A
+2020-10-31,Sutjeska,Buducnost Podgorica,0,1,A
+2020-10-31,Zeta,Jezero,1,0,H
+2020-10-31,FK Mladost Podgorica,Rudar Velenje,0,2,A
+2020-10-31,Decic,Iskra,2,0,H
+2020-11-04,Rudar Velenje,Zeta,0,3,A
+2020-11-04,Jezero,Decic,0,0,D
+2020-11-04,Petrovac,FK Mladost Podgorica,1,3,A
+2020-11-04,Buducnost Podgorica,Mladost Ljeskopolje,1,0,H
+2020-11-04,Iskra,Sutjeska,3,0,H
+2020-11-08,Sutjeska,Jezero,0,1,A
+2020-11-08,Petrovac,Rudar Velenje,1,1,D
+2020-11-08,FK Mladost Podgorica,Buducnost Podgorica,0,4,A
+2020-11-08,Mladost Ljeskopolje,Iskra,1,1,D
+2020-11-08,Decic,Zeta,0,0,D
+2020-11-21,Rudar Velenje,Decic,0,3,A
+2020-11-21,Jezero,Mladost Ljeskopolje,0,0,D
+2020-11-21,Zeta,Sutjeska,0,1,A
+2020-11-21,Iskra,FK Mladost Podgorica,1,1,D
+2020-11-21,Buducnost Podgorica,Petrovac,2,1,H
+2020-11-29,Buducnost Podgorica,Rudar Velenje,4,2,H
+2020-11-29,FK Mladost Podgorica,Jezero,1,0,H
+2020-11-29,Sutjeska,Decic,1,1,D
+2020-11-29,Petrovac,Iskra,1,0,H
+2020-11-29,Mladost Ljeskopolje,Zeta,0,1,A
+2020-12-02,Rudar Velenje,Sutjeska,0,4,A
+2020-12-02,Jezero,Petrovac,2,0,H
+2020-12-02,Iskra,Buducnost Podgorica,0,2,A
+2020-12-02,Zeta,FK Mladost Podgorica,1,0,H
+2020-12-02,Decic,Mladost Ljeskopolje,0,3,A
+2020-12-06,Buducnost Podgorica,Jezero,2,1,H
+2020-12-06,Iskra,Rudar Velenje,0,1,A
+2020-12-06,Mladost Ljeskopolje,Sutjeska,1,1,D
+2020-12-06,Petrovac,Zeta,1,1,D
+2020-12-06,FK Mladost Podgorica,Decic,1,1,D
+2020-12-09,Rudar Velenje,Mladost Ljeskopolje,1,0,H
+2020-12-09,Jezero,Iskra,0,2,A
+2020-12-09,Sutjeska,FK Mladost Podgorica,3,0,H
+2020-12-09,Decic,Petrovac,1,0,H
+2020-12-09,Zeta,Buducnost Podgorica,0,2,A
+2020-12-13,Jezero,Rudar Velenje,1,2,A
+2020-12-13,Sutjeska,Petrovac,2,1,H
+2020-12-13,Decic,Buducnost Podgorica,0,4,A
+2020-12-13,Zeta,Iskra,0,2,A
+2020-12-13,Mladost Ljeskopolje,FK Mladost Podgorica,2,1,H
+2020-12-17,Petrovac,Buducnost Podgorica,0,1,A
+2021-02-19,Rudar Velenje,FK Mladost Podgorica,4,2,H
+2021-02-19,Petrovac,Mladost Ljeskopolje,2,1,H
+2021-02-19,Jezero,Zeta,0,1,A
+2021-02-19,Iskra,Decic,2,1,H
+2021-02-19,Buducnost Podgorica,Sutjeska,1,1,D
+2021-02-23,Zeta,Rudar Velenje,0,1,A
+2021-02-23,Decic,Jezero,0,0,D
+2021-02-23,Sutjeska,Iskra,2,2,D
+2021-02-23,Mladost Ljeskopolje,Buducnost Podgorica,0,1,A
+2021-02-23,FK Mladost Podgorica,Petrovac,1,0,H
+2021-02-28,Rudar Velenje,Petrovac,2,0,H
+2021-02-28,Jezero,Sutjeska,0,2,A
+2021-02-28,Iskra,Mladost Ljeskopolje,1,0,H
+2021-02-28,Zeta,Decic,1,2,A
+2021-02-28,Buducnost Podgorica,FK Mladost Podgorica,1,0,H
+2021-03-06,Sutjeska,Zeta,4,3,H
+2021-03-06,Decic,Rudar Velenje,0,1,A
+2021-03-06,Mladost Ljeskopolje,Jezero,2,1,H
+2021-03-06,FK Mladost Podgorica,Iskra,0,0,D
+2021-03-06,Petrovac,Buducnost Podgorica,1,4,A
+2021-03-10,Rudar Velenje,Buducnost Podgorica,1,1,D
+2021-03-10,Iskra,Petrovac,0,0,D
+2021-03-10,Decic,Sutjeska,2,1,H
+2021-03-10,Zeta,Mladost Ljeskopolje,1,3,A
+2021-03-14,Buducnost Podgorica,Iskra,1,0,H
+2021-03-14,Petrovac,Jezero,0,2,A
+2021-03-14,Sutjeska,Rudar Velenje,1,1,D
+2021-03-14,FK Mladost Podgorica,Zeta,0,2,A
+2021-03-14,Mladost Ljeskopolje,Decic,0,3,A
+2021-03-20,Zeta,Petrovac,1,1,D
+2021-03-20,Rudar Velenje,Iskra,0,0,D
+2021-03-20,Jezero,Buducnost Podgorica,1,2,A
+2021-03-20,Sutjeska,Mladost Ljeskopolje,1,1,D
+2021-03-20,Decic,FK Mladost Podgorica,1,0,H
+2021-04-03,Mladost Ljeskopolje,Rudar Velenje,2,1,H
+2021-04-03,Petrovac,Decic,0,0,D
+2021-04-03,FK Mladost Podgorica,Sutjeska,0,4,A
+2021-04-03,Iskra,Jezero,1,1,D
+2021-04-03,Buducnost Podgorica,Zeta,0,1,A
+2021-04-07,Petrovac,Sutjeska,1,3,A
+2021-04-07,Rudar Velenje,Jezero,4,2,H
+2021-04-07,FK Mladost Podgorica,Mladost Ljeskopolje,0,1,A
+2021-04-07,Buducnost Podgorica,Decic,2,0,H
+2021-04-07,Iskra,Zeta,1,1,D
+2021-04-11,Zeta,Jezero,0,1,A
+2021-04-11,FK Mladost Podgorica,Rudar Velenje,0,0,D
+2021-04-11,Mladost Ljeskopolje,Petrovac,0,1,A
+2021-04-11,Sutjeska,Buducnost Podgorica,0,1,A
+2021-04-11,Decic,Iskra,0,0,D
+2021-04-17,Rudar Velenje,Zeta,0,1,A
+2021-04-17,Jezero,Decic,1,0,H
+2021-04-17,Petrovac,FK Mladost Podgorica,0,0,D
+2021-04-17,Iskra,Sutjeska,0,0,D
+2021-04-17,Buducnost Podgorica,Mladost Ljeskopolje,1,2,A
+2021-04-21,Jezero,FK Mladost Podgorica,0,0,D
+2021-04-25,Petrovac,Rudar Velenje,3,1,H
+2021-04-25,Sutjeska,Jezero,0,0,D
+2021-04-25,Decic,Zeta,3,1,H
+2021-04-25,FK Mladost Podgorica,Buducnost Podgorica,0,2,A
+2021-04-25,Mladost Ljeskopolje,Iskra,1,0,H
+2021-05-01,Rudar Velenje,Decic,0,0,D
+2021-05-01,Jezero,Mladost Ljeskopolje,3,2,H
+2021-05-01,Iskra,FK Mladost Podgorica,1,1,D
+2021-05-01,Zeta,Sutjeska,0,2,A
+2021-05-01,Buducnost Podgorica,Petrovac,0,2,A
+2021-05-09,Buducnost Podgorica,Rudar Velenje,3,1,H
+2021-05-09,FK Mladost Podgorica,Jezero,1,2,A
+2021-05-09,Sutjeska,Decic,1,2,A
+2021-05-09,Petrovac,Iskra,1,0,H
+2021-05-09,Mladost Ljeskopolje,Zeta,2,1,H
+2021-05-14,Zeta,FK Mladost Podgorica,2,1,H
+2021-05-14,Rudar Velenje,Sutjeska,0,2,A
+2021-05-14,Iskra,Buducnost Podgorica,1,1,D
+2021-05-14,Decic,Mladost Ljeskopolje,0,1,A
+2021-05-14,Jezero,Petrovac,1,0,H
+2021-05-19,Buducnost Podgorica,Jezero,3,2,H
+2021-05-19,FK Mladost Podgorica,Decic,1,0,H
+2021-05-19,Iskra,Rudar Velenje,2,0,H
+2021-05-19,Petrovac,Zeta,0,2,A
+2021-05-19,Mladost Ljeskopolje,Sutjeska,0,4,A
+2021-05-25,Sutjeska,FK Mladost Podgorica,1,2,A
+2021-05-25,Zeta,Buducnost Podgorica,2,4,A
+2021-05-25,Rudar Velenje,Mladost Ljeskopolje,1,0,H
+2021-05-25,Decic,Petrovac,1,1,D
+2021-05-25,Jezero,Iskra,0,0,D
+2021-06-01,Iskra,Igalo,2,1,H
+2021-06-01,Petrovac,Arsenal Tivat,2,1,H
+2021-06-06,Arsenal Tivat,Petrovac,2,1,H
+2021-06-06,Igalo,Iskra,0,1,A

@@ -1,0 +1,185 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2023-02-25,Samtredia,Telavi,1,0,H
+2023-02-25,Dila,Dinamo Tbilisi,1,2,A
+2023-02-26,Gagra,Samgurali,3,4,A
+2023-02-26,Saburtalo,Torpedo Kutaisi,0,0,D
+2023-02-26,Dinamo Batumi,Shukura,2,1,H
+2023-03-03,Dinamo Batumi,Saburtalo,3,1,H
+2023-03-04,Shukura,Samgurali,2,1,H
+2023-03-04,Torpedo Kutaisi,Dila,0,0,D
+2023-03-04,Telavi,Gagra,0,0,D
+2023-03-04,Dinamo Tbilisi,Samtredia,4,0,H
+2023-03-08,Gagra,Dinamo Tbilisi,3,5,A
+2023-03-08,Samgurali,Telavi,1,0,H
+2023-03-08,Samtredia,Torpedo Kutaisi,0,2,A
+2023-03-08,Saburtalo,Shukura,2,1,H
+2023-03-08,Dila,Dinamo Batumi,1,1,D
+2023-03-12,Shukura,Telavi,1,2,A
+2023-03-12,Torpedo Kutaisi,Gagra,3,1,H
+2023-03-12,Saburtalo,Dila,0,0,D
+2023-03-12,Dinamo Batumi,Samtredia,3,2,H
+2023-03-13,Dinamo Tbilisi,Samgurali,2,0,H
+2023-03-18,Gagra,Dinamo Batumi,1,4,A
+2023-03-18,Samtredia,Saburtalo,3,3,D
+2023-03-18,Telavi,Dinamo Tbilisi,2,2,D
+2023-03-18,Dila,Shukura,2,0,H
+2023-03-19,Samgurali,Torpedo Kutaisi,0,0,D
+2023-04-01,Torpedo Kutaisi,Telavi,2,1,H
+2023-04-01,Saburtalo,Gagra,3,0,H
+2023-04-01,Dila,Samtredia,1,0,H
+2023-04-02,Shukura,Dinamo Tbilisi,1,2,A
+2023-04-02,Dinamo Batumi,Samgurali,2,0,H
+2023-04-08,Samtredia,Shukura,0,2,A
+2023-04-08,Telavi,Dinamo Batumi,1,4,A
+2023-04-08,Dinamo Tbilisi,Torpedo Kutaisi,2,1,H
+2023-04-09,Gagra,Dila,0,0,D
+2023-04-09,Samgurali,Saburtalo,2,1,H
+2023-04-12,Shukura,Torpedo Kutaisi,0,2,A
+2023-04-12,Dinamo Batumi,Dinamo Tbilisi,2,2,D
+2023-04-13,Samtredia,Gagra,1,2,A
+2023-04-13,Saburtalo,Telavi,3,0,H
+2023-04-13,Dila,Samgurali,0,3,A
+2023-04-21,Torpedo Kutaisi,Dinamo Batumi,0,0,D
+2023-04-21,Telavi,Dila,2,2,D
+2023-04-21,Dinamo Tbilisi,Saburtalo,1,3,A
+2023-04-22,Gagra,Shukura,2,0,H
+2023-04-22,Samgurali,Samtredia,2,1,H
+2023-04-25,Torpedo Kutaisi,Saburtalo,0,3,A
+2023-04-25,Dinamo Tbilisi,Dila,1,2,A
+2023-04-26,Samgurali,Gagra,1,0,H
+2023-04-26,Shukura,Dinamo Batumi,1,3,A
+2023-04-26,Telavi,Samtredia,0,1,A
+2023-04-30,Gagra,Telavi,1,1,D
+2023-04-30,Samgurali,Shukura,4,1,H
+2023-04-30,Samtredia,Dinamo Tbilisi,0,2,A
+2023-04-30,Saburtalo,Dinamo Batumi,3,3,D
+2023-04-30,Dila,Torpedo Kutaisi,5,0,H
+2023-05-05,Shukura,Saburtalo,2,3,A
+2023-05-05,Dinamo Batumi,Dila,0,2,A
+2023-05-06,Torpedo Kutaisi,Samtredia,1,0,H
+2023-05-06,Telavi,Samgurali,0,1,A
+2023-05-06,Dinamo Tbilisi,Gagra,0,0,D
+2023-05-09,Dila,Saburtalo,1,1,D
+2023-05-10,Gagra,Torpedo Kutaisi,0,0,D
+2023-05-10,Samgurali,Dinamo Tbilisi,2,1,H
+2023-05-10,Samtredia,Dinamo Batumi,1,2,A
+2023-05-10,Telavi,Shukura,0,0,D
+2023-05-14,Torpedo Kutaisi,Samgurali,1,3,A
+2023-05-14,Saburtalo,Samtredia,2,0,H
+2023-05-14,Dinamo Tbilisi,Telavi,6,1,H
+2023-05-14,Dinamo Batumi,Gagra,3,1,H
+2023-05-15,Shukura,Dila,2,3,A
+2023-05-20,Gagra,Saburtalo,1,2,A
+2023-05-20,Samtredia,Dila,1,2,A
+2023-05-20,Samgurali,Dinamo Batumi,1,1,D
+2023-05-20,Telavi,Torpedo Kutaisi,1,0,H
+2023-05-20,Dinamo Tbilisi,Shukura,4,4,D
+2023-05-24,Shukura,Samtredia,2,2,D
+2023-05-24,Torpedo Kutaisi,Dinamo Tbilisi,2,3,A
+2023-05-24,Saburtalo,Samgurali,5,1,H
+2023-05-24,Dila,Gagra,1,0,H
+2023-05-24,Dinamo Batumi,Telavi,2,0,H
+2023-05-28,Gagra,Samtredia,0,1,A
+2023-05-28,Samgurali,Dila,2,2,D
+2023-05-28,Torpedo Kutaisi,Shukura,1,2,A
+2023-05-28,Telavi,Saburtalo,0,3,A
+2023-05-28,Dinamo Tbilisi,Dinamo Batumi,1,2,A
+2023-06-01,Samtredia,Samgurali,0,2,A
+2023-06-01,Shukura,Gagra,3,4,A
+2023-06-01,Saburtalo,Dinamo Tbilisi,2,1,H
+2023-06-01,Dila,Telavi,6,1,H
+2023-06-01,Dinamo Batumi,Torpedo Kutaisi,1,1,D
+2023-06-05,Torpedo Kutaisi,Dila,1,0,H
+2023-06-05,Dinamo Tbilisi,Samtredia,3,0,H
+2023-06-05,Dinamo Batumi,Saburtalo,2,1,H
+2023-06-06,Shukura,Samgurali,2,2,D
+2023-06-06,Telavi,Gagra,0,1,A
+2023-08-05,Gagra,Samgurali,0,0,D
+2023-08-05,Dinamo Batumi,Shukura,5,0,H
+2023-08-06,Samtredia,Telavi,0,2,A
+2023-08-08,Saburtalo,Torpedo Kutaisi,1,3,A
+2023-08-12,Samgurali,Telavi,0,1,A
+2023-08-13,Gagra,Dinamo Tbilisi,1,6,A
+2023-08-14,Samtredia,Torpedo Kutaisi,2,3,A
+2023-08-15,Saburtalo,Shukura,5,1,H
+2023-08-19,Dinamo Tbilisi,Samgurali,5,2,H
+2023-08-19,Dinamo Batumi,Samtredia,1,1,D
+2023-08-20,Torpedo Kutaisi,Gagra,4,1,H
+2023-08-20,Shukura,Telavi,0,2,A
+2023-08-20,Saburtalo,Dila,1,2,A
+2023-08-25,Dila,Shukura,5,1,H
+2023-08-25,Telavi,Dinamo Tbilisi,2,2,D
+2023-08-26,Samtredia,Saburtalo,0,0,D
+2023-08-27,Samgurali,Torpedo Kutaisi,0,0,D
+2023-08-27,Gagra,Dinamo Batumi,0,2,A
+2023-08-29,Dila,Dinamo Tbilisi,0,3,A
+2023-09-01,Torpedo Kutaisi,Telavi,2,1,H
+2023-09-01,Dinamo Batumi,Samgurali,4,1,H
+2023-09-02,Shukura,Dinamo Tbilisi,2,3,A
+2023-09-02,Saburtalo,Gagra,5,0,H
+2023-09-02,Dila,Samtredia,1,3,A
+2023-09-16,Telavi,Dinamo Batumi,2,1,H
+2023-09-16,Gagra,Dila,0,0,D
+2023-09-16,Dinamo Tbilisi,Torpedo Kutaisi,1,1,D
+2023-09-17,Samtredia,Shukura,4,2,H
+2023-09-17,Samgurali,Saburtalo,1,0,H
+2023-09-20,Dila,Dinamo Batumi,1,3,A
+2023-09-23,Samtredia,Gagra,3,1,H
+2023-09-23,Shukura,Torpedo Kutaisi,0,0,D
+2023-09-24,Dila,Samgurali,2,0,H
+2023-09-24,Saburtalo,Telavi,0,1,A
+2023-09-24,Dinamo Batumi,Dinamo Tbilisi,2,2,D
+2023-09-27,Gagra,Shukura,1,0,H
+2023-09-28,Samgurali,Samtredia,0,3,A
+2023-09-28,Telavi,Dila,2,1,H
+2023-09-28,Torpedo Kutaisi,Dinamo Batumi,0,3,A
+2023-09-29,Dinamo Tbilisi,Saburtalo,1,0,H
+2023-10-02,Shukura,Dinamo Batumi,0,6,A
+2023-10-02,Samgurali,Gagra,2,2,D
+2023-10-02,Telavi,Samtredia,1,1,D
+2023-10-03,Torpedo Kutaisi,Saburtalo,5,0,H
+2023-10-03,Dinamo Tbilisi,Dila,3,1,H
+2023-10-07,Samtredia,Dinamo Tbilisi,3,2,H
+2023-10-07,Dila,Torpedo Kutaisi,0,1,A
+2023-10-08,Samgurali,Shukura,5,0,H
+2023-10-08,Gagra,Telavi,4,1,H
+2023-10-08,Saburtalo,Dinamo Batumi,0,0,D
+2023-10-20,Shukura,Saburtalo,1,2,A
+2023-10-20,Dinamo Batumi,Dila,1,1,D
+2023-10-21,Telavi,Samgurali,2,1,H
+2023-10-21,Dinamo Tbilisi,Gagra,0,1,A
+2023-10-21,Torpedo Kutaisi,Samtredia,2,0,H
+2023-10-28,Samtredia,Dinamo Batumi,1,3,A
+2023-10-28,Telavi,Shukura,0,1,A
+2023-10-28,Dila,Saburtalo,3,0,H
+2023-10-29,Samgurali,Dinamo Tbilisi,0,2,A
+2023-10-29,Gagra,Torpedo Kutaisi,1,2,A
+2023-11-03,Saburtalo,Samtredia,0,0,D
+2023-11-03,Torpedo Kutaisi,Samgurali,0,0,D
+2023-11-03,Dinamo Batumi,Gagra,3,0,H
+2023-11-04,Shukura,Dila,1,2,A
+2023-11-04,Dinamo Tbilisi,Telavi,4,0,H
+2023-11-10,Samtredia,Dila,1,2,A
+2023-11-10,Telavi,Torpedo Kutaisi,1,2,A
+2023-11-10,Dinamo Tbilisi,Shukura,4,2,H
+2023-11-11,Samgurali,Dinamo Batumi,3,2,H
+2023-11-11,Gagra,Saburtalo,2,1,H
+2023-11-23,Saburtalo,Samgurali,2,2,D
+2023-11-24,Shukura,Samtredia,0,9,A
+2023-11-24,Torpedo Kutaisi,Dinamo Tbilisi,2,2,D
+2023-11-24,Dinamo Batumi,Telavi,3,0,H
+2023-11-24,Dila,Gagra,1,0,H
+2023-11-28,Gagra,Samtredia,4,3,H
+2023-11-28,Samgurali,Dila,1,0,H
+2023-11-28,Telavi,Saburtalo,3,0,H
+2023-11-28,Torpedo Kutaisi,Shukura,9,0,H
+2023-11-28,Dinamo Tbilisi,Dinamo Batumi,6,2,H
+2023-12-02,Samtredia,Samgurali,2,3,A
+2023-12-02,Dinamo Batumi,Torpedo Kutaisi,2,2,D
+2023-12-02,Dila,Telavi,3,1,H
+2023-12-02,Shukura,Gagra,0,9,A
+2023-12-02,Saburtalo,Dinamo Tbilisi,0,3,A
+2023-12-06,Samtredia,Gareji,4,1,H
+2023-12-06,Spaeri,Telavi,1,1,D
+2023-12-10,Gareji,Samtredia,3,1,H
+2023-12-10,Telavi,Spaeri,4,0,H

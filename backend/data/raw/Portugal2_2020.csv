@@ -1,0 +1,307 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2020-09-10,Estoril,Arouca,1,0,H
+2020-09-12,Vizela,Oliveirense,2,1,H
+2020-09-13,Cova De Piedade,Mafra,0,4,A
+2020-09-13,Leixoes,Casa Pia,2,2,D
+2020-09-13,Benfica B,Vilafranquense,3,2,H
+2020-09-13,Varzim,FC Porto B,1,0,H
+2020-09-14,Penafiel,SC Covilha,1,0,H
+2020-09-18,Oliveirense,Penafiel,2,1,H
+2020-09-18,Chaves,Varzim,0,0,D
+2020-09-18,Vilafranquense,Feirense,0,4,A
+2020-09-19,Casa Pia,Benfica B,0,6,A
+2020-09-19,Arouca,Leixoes,0,0,D
+2020-09-19,Mafra,Academico Viseu,1,0,H
+2020-09-19,FC Porto B,Vizela,4,1,H
+2020-09-19,SC Covilha,Cova De Piedade,1,3,A
+2020-09-20,Academica,Estoril,1,0,H
+2020-09-22,Feirense,Casa Pia,2,1,H
+2020-09-22,Vizela,SC Covilha,2,1,H
+2020-09-22,Varzim,Arouca,0,0,D
+2020-09-23,Benfica B,Chaves,3,4,A
+2020-09-23,Oliveirense,FC Porto B,2,2,D
+2020-09-23,Cova De Piedade,Academica,0,0,D
+2020-09-23,Penafiel,Vilafranquense,1,2,A
+2020-09-23,Leixoes,Mafra,0,2,A
+2020-09-24,Academico Viseu,Estoril,0,2,A
+2020-09-26,SC Covilha,Varzim,2,1,H
+2020-09-27,Mafra,Benfica B,2,1,H
+2020-09-27,Arouca,Academico Viseu,1,1,D
+2020-09-27,Casa Pia,Vizela,1,1,D
+2020-09-27,FC Porto B,Penafiel,1,2,A
+2020-09-27,Chaves,Cova De Piedade,1,0,H
+2020-09-27,Vilafranquense,Oliveirense,0,0,D
+2020-09-28,Estoril,Leixoes,1,0,H
+2020-09-29,Academica,Feirense,0,1,A
+2020-10-02,Penafiel,Mafra,3,1,H
+2020-10-03,Feirense,SC Covilha,0,0,D
+2020-10-03,Oliveirense,Casa Pia,0,1,A
+2020-10-03,Cova De Piedade,Arouca,0,2,A
+2020-10-04,Benfica B,Estoril,0,1,A
+2020-10-04,Varzim,Academica,0,1,A
+2020-10-04,Academico Viseu,Leixoes,1,1,D
+2020-10-04,FC Porto B,Vilafranquense,2,1,H
+2020-10-05,Vizela,Chaves,1,1,D
+2020-10-08,Academico Viseu,Academica,0,0,D
+2020-10-15,Feirense,Chaves,0,4,A
+2020-10-16,Leixoes,Varzim,3,1,H
+2020-10-17,Arouca,Benfica B,1,0,H
+2020-10-17,Mafra,Vizela,2,0,H
+2020-10-17,Casa Pia,FC Porto B,2,1,H
+2020-10-18,Academica,Penafiel,2,1,H
+2020-10-18,SC Covilha,Vilafranquense,2,2,D
+2020-10-18,Academico Viseu,Cova De Piedade,0,2,A
+2020-10-20,Chaves,Oliveirense,0,2,A
+2020-10-20,Estoril,Feirense,3,3,D
+2020-10-23,Penafiel,Arouca,2,2,D
+2020-10-24,Vizela,Academica,1,3,A
+2020-10-24,Cova De Piedade,Leixoes,2,0,H
+2020-10-24,FC Porto B,Chaves,1,2,A
+2020-10-24,Vilafranquense,Casa Pia,2,2,D
+2020-10-24,Benfica B,Academico Viseu,0,1,A
+2020-10-25,Varzim,Estoril,0,2,A
+2020-10-25,Oliveirense,SC Covilha,1,2,A
+2020-10-26,Feirense,Mafra,3,1,H
+2020-10-31,SC Covilha,FC Porto B,4,0,H
+2020-10-31,Academica,Oliveirense,3,0,H
+2020-10-31,Chaves,Vilafranquense,0,0,D
+2020-11-01,Leixoes,Benfica B,3,2,H
+2020-11-01,Casa Pia,Penafiel,3,3,D
+2020-11-01,Academico Viseu,Feirense,0,1,A
+2020-11-01,Arouca,Vizela,2,1,H
+2020-11-01,Mafra,Varzim,3,1,H
+2020-11-06,Feirense,Arouca,0,1,A
+2020-11-07,Varzim,Academico Viseu,1,1,D
+2020-11-07,FC Porto B,Mafra,1,2,A
+2020-11-07,Casa Pia,SC Covilha,0,1,A
+2020-11-07,Vizela,Leixoes,2,1,H
+2020-11-08,Oliveirense,Estoril,0,1,A
+2020-11-08,Vilafranquense,Academica,0,0,D
+2020-11-09,Penafiel,Chaves,1,0,H
+2020-11-14,Estoril,Cova De Piedade,5,1,H
+2020-11-25,Cova De Piedade,Benfica B,2,3,A
+2020-11-28,Academico Viseu,Penafiel,0,0,D
+2020-11-28,Cova De Piedade,Feirense,0,0,D
+2020-11-29,Academica,SC Covilha,2,1,H
+2020-11-29,Estoril,Vizela,2,2,D
+2020-11-29,Arouca,FC Porto B,2,3,A
+2020-11-30,Benfica B,Varzim,1,0,H
+2020-11-30,Mafra,Vilafranquense,0,1,A
+2020-12-01,Chaves,Casa Pia,1,2,A
+2020-12-04,Penafiel,Leixoes,1,0,H
+2020-12-05,Feirense,Benfica B,2,0,H
+2020-12-05,Oliveirense,Arouca,1,2,A
+2020-12-05,Vizela,Academico Viseu,1,0,H
+2020-12-06,Vilafranquense,Estoril,0,1,A
+2020-12-06,FC Porto B,Academica,1,2,A
+2020-12-06,Varzim,Cova De Piedade,1,3,A
+2020-12-07,SC Covilha,Chaves,1,2,A
+2020-12-08,Casa Pia,Mafra,2,0,H
+2020-12-19,Cova De Piedade,Penafiel,2,3,A
+2020-12-19,Academico Viseu,Chaves,2,1,H
+2020-12-19,Varzim,Feirense,0,2,A
+2020-12-20,Mafra,Oliveirense,2,2,D
+2020-12-20,Academica,Casa Pia,1,1,D
+2020-12-20,Benfica B,Vizela,1,1,D
+2020-12-20,Arouca,SC Covilha,1,0,H
+2020-12-21,Estoril,FC Porto B,1,1,D
+2020-12-27,Chaves,Academica,2,1,H
+2020-12-27,Penafiel,Benfica B,2,0,H
+2020-12-28,Vilafranquense,Arouca,2,0,H
+2020-12-29,Oliveirense,Cova De Piedade,0,0,D
+2020-12-29,Vizela,Varzim,1,0,H
+2020-12-30,FC Porto B,Academico Viseu,2,3,A
+2020-12-30,Casa Pia,Estoril,0,2,A
+2020-12-30,Feirense,Leixoes,3,1,H
+2021-01-03,Benfica B,Oliveirense,4,0,H
+2021-01-03,Mafra,Chaves,1,2,A
+2021-01-03,Feirense,Vizela,1,2,A
+2021-01-03,Varzim,Vilafranquense,1,1,D
+2021-01-03,Leixoes,SC Covilha,0,0,D
+2021-01-04,Cova De Piedade,FC Porto B,1,1,D
+2021-01-04,Estoril,Penafiel,3,1,H
+2021-01-05,Academico Viseu,Casa Pia,1,1,D
+2021-01-05,Arouca,Academica,0,2,A
+2021-01-06,Leixoes,Oliveirense,1,1,D
+2021-01-09,Chaves,Estoril,0,2,A
+2021-01-09,Vilafranquense,Academico Viseu,1,1,D
+2021-01-10,Penafiel,Varzim,1,2,A
+2021-01-10,Oliveirense,Feirense,1,0,H
+2021-01-10,SC Covilha,Benfica B,1,1,D
+2021-01-10,Vizela,Cova De Piedade,2,1,H
+2021-01-10,Casa Pia,Arouca,1,1,D
+2021-01-11,FC Porto B,Leixoes,1,2,A
+2021-01-11,Academica,Mafra,1,0,H
+2021-01-16,Leixoes,Chaves,1,0,H
+2021-01-16,Benfica B,Academica,2,2,D
+2021-01-16,Vizela,Penafiel,3,1,H
+2021-01-17,Feirense,FC Porto B,2,0,H
+2021-01-17,Academico Viseu,Oliveirense,1,2,A
+2021-01-17,Arouca,Mafra,0,0,D
+2021-01-17,Varzim,Casa Pia,0,1,A
+2021-01-18,Estoril,SC Covilha,0,0,D
+2021-01-21,Leixoes,Vilafranquense,2,0,H
+2021-01-22,Oliveirense,Varzim,1,1,D
+2021-01-22,Penafiel,Feirense,2,2,D
+2021-01-24,Mafra,Estoril,1,1,D
+2021-01-24,Chaves,Arouca,2,1,H
+2021-01-25,FC Porto B,Benfica B,1,1,D
+2021-01-25,Casa Pia,Cova De Piedade,2,1,H
+2021-01-26,Vilafranquense,Vizela,1,1,D
+2021-01-26,Academica,Leixoes,1,1,D
+2021-01-30,Chaves,Feirense,0,1,A
+2021-01-30,Oliveirense,Vizela,0,3,A
+2021-01-31,Vilafranquense,Benfica B,2,2,D
+2021-01-31,Academica,Academico Viseu,2,1,H
+2021-01-31,FC Porto B,Varzim,0,1,A
+2021-01-31,Casa Pia,Leixoes,1,1,D
+2021-02-02,Mafra,Cova De Piedade,1,1,D
+2021-02-02,Arouca,Estoril,1,0,H
+2021-02-06,Feirense,Vilafranquense,2,1,H
+2021-02-06,Varzim,Chaves,1,3,A
+2021-02-06,Leixoes,Arouca,0,1,A
+2021-02-06,Estoril,Academica,1,2,A
+2021-02-07,Vizela,FC Porto B,0,0,D
+2021-02-07,Academico Viseu,Mafra,2,0,H
+2021-02-07,Benfica B,Casa Pia,2,0,H
+2021-02-08,Cova De Piedade,SC Covilha,1,0,H
+2021-02-13,Academica,Cova De Piedade,2,1,H
+2021-02-13,Arouca,Varzim,0,0,D
+2021-02-13,SC Covilha,Vizela,0,0,D
+2021-02-14,Mafra,Leixoes,1,1,D
+2021-02-14,Chaves,Benfica B,0,0,D
+2021-02-14,FC Porto B,Oliveirense,1,2,A
+2021-02-14,Casa Pia,Feirense,0,1,A
+2021-02-16,Estoril,Academico Viseu,3,0,H
+2021-02-17,Cova De Piedade,Vilafranquense,1,1,D
+2021-02-18,SC Covilha,Mafra,2,2,D
+2021-02-20,Cova De Piedade,Chaves,1,1,D
+2021-02-20,Vizela,Casa Pia,3,1,H
+2021-02-21,Leixoes,Estoril,0,1,A
+2021-02-21,Penafiel,FC Porto B,0,0,D
+2021-02-21,Academico Viseu,Arouca,0,4,A
+2021-02-22,Benfica B,Mafra,2,0,H
+2021-02-22,Varzim,SC Covilha,1,2,A
+2021-02-22,Feirense,Academica,1,0,H
+2021-02-23,Oliveirense,Vilafranquense,2,2,D
+2021-02-26,Chaves,Vizela,2,2,D
+2021-02-27,SC Covilha,Feirense,0,2,A
+2021-02-27,Arouca,Cova De Piedade,2,1,H
+2021-02-27,Vilafranquense,FC Porto B,1,1,D
+2021-02-28,Estoril,Benfica B,3,2,H
+2021-02-28,Mafra,Penafiel,1,0,H
+2021-02-28,Casa Pia,Oliveirense,2,0,H
+2021-02-28,Leixoes,Academico Viseu,2,1,H
+2021-03-01,Academica,Varzim,1,2,A
+2021-03-03,SC Covilha,Academico Viseu,2,1,H
+2021-03-03,Penafiel,Oliveirense,1,0,H
+2021-03-06,Vizela,Mafra,2,0,H
+2021-03-07,Penafiel,Academica,1,2,A
+2021-03-07,Oliveirense,Chaves,0,1,A
+2021-03-08,Cova De Piedade,Academico Viseu,0,2,A
+2021-03-08,FC Porto B,Casa Pia,1,1,D
+2021-03-08,Benfica B,Arouca,3,1,H
+2021-03-08,Vilafranquense,SC Covilha,2,2,D
+2021-03-08,Varzim,Leixoes,0,1,A
+2021-03-09,Feirense,Estoril,0,1,A
+2021-03-11,SC Covilha,Penafiel,0,2,A
+2021-03-13,Academica,Vizela,1,3,A
+2021-03-13,Academico Viseu,Benfica B,2,1,H
+2021-03-13,Leixoes,Cova De Piedade,1,1,D
+2021-03-13,Casa Pia,Vilafranquense,3,0,H
+2021-03-14,Estoril,Varzim,1,0,H
+2021-03-14,Chaves,FC Porto B,1,1,D
+2021-03-15,Arouca,Penafiel,0,1,A
+2021-03-15,Mafra,Feirense,2,1,H
+2021-03-16,SC Covilha,Oliveirense,1,0,H
+2021-03-18,Vilafranquense,Penafiel,0,0,D
+2021-03-20,Cova De Piedade,Estoril,2,3,A
+2021-03-20,Varzim,Mafra,2,0,H
+2021-03-21,Oliveirense,Academica,0,0,D
+2021-03-21,Vizela,Arouca,1,1,D
+2021-03-21,FC Porto B,SC Covilha,2,1,H
+2021-03-21,Benfica B,Leixoes,2,1,H
+2021-03-22,Penafiel,Casa Pia,1,1,D
+2021-03-22,Feirense,Academico Viseu,1,1,D
+2021-03-23,Vilafranquense,Chaves,0,1,A
+2021-03-26,Academico Viseu,Varzim,0,1,A
+2021-03-26,Estoril,Oliveirense,3,0,H
+2021-03-27,Arouca,Feirense,1,0,H
+2021-03-28,SC Covilha,Casa Pia,0,0,D
+2021-03-28,Benfica B,Cova De Piedade,0,1,A
+2021-03-29,Mafra,FC Porto B,0,4,A
+2021-03-29,Leixoes,Vizela,0,4,A
+2021-03-29,Chaves,Penafiel,2,1,H
+2021-04-02,SC Covilha,Academica,1,1,D
+2021-04-02,Varzim,Benfica B,2,1,H
+2021-04-02,Penafiel,Academico Viseu,1,2,A
+2021-04-03,Vizela,Estoril,1,1,D
+2021-04-03,FC Porto B,Arouca,0,3,A
+2021-04-04,Feirense,Cova De Piedade,1,1,D
+2021-04-04,Vilafranquense,Mafra,2,1,H
+2021-04-05,Oliveirense,Leixoes,2,1,H
+2021-04-06,Casa Pia,Chaves,1,2,A
+2021-04-10,Academica,FC Porto B,1,1,D
+2021-04-10,Cova De Piedade,Varzim,2,1,H
+2021-04-10,Leixoes,Penafiel,2,0,H
+2021-04-11,Estoril,Vilafranquense,3,1,H
+2021-04-11,Chaves,SC Covilha,2,0,H
+2021-04-11,Benfica B,Feirense,2,0,H
+2021-04-11,Arouca,Oliveirense,3,0,H
+2021-04-12,Academico Viseu,Vizela,1,3,A
+2021-04-13,Mafra,Casa Pia,0,4,A
+2021-04-16,Vilafranquense,Leixoes,0,2,A
+2021-04-17,Feirense,Varzim,1,0,H
+2021-04-18,Casa Pia,Academica,0,3,A
+2021-04-18,Penafiel,Cova De Piedade,2,2,D
+2021-04-18,FC Porto B,Estoril,2,2,D
+2021-04-18,Oliveirense,Mafra,0,0,D
+2021-04-18,Chaves,Academico Viseu,2,1,H
+2021-04-19,SC Covilha,Arouca,1,2,A
+2021-04-19,Vizela,Benfica B,1,0,H
+2021-04-23,Estoril,Casa Pia,1,1,D
+2021-04-24,Academica,Chaves,2,1,H
+2021-04-24,Leixoes,Feirense,1,4,A
+2021-04-24,Varzim,Vizela,0,3,A
+2021-04-24,Mafra,SC Covilha,2,2,D
+2021-04-25,Academico Viseu,FC Porto B,1,0,H
+2021-04-25,Cova De Piedade,Oliveirense,0,0,D
+2021-04-25,Arouca,Vilafranquense,3,0,H
+2021-04-26,Benfica B,Penafiel,2,2,D
+2021-05-01,Chaves,Mafra,1,1,D
+2021-05-01,FC Porto B,Cova De Piedade,5,1,H
+2021-05-02,Oliveirense,Benfica B,0,2,A
+2021-05-02,Vizela,Feirense,1,1,D
+2021-05-02,SC Covilha,Leixoes,0,0,D
+2021-05-02,Casa Pia,Academico Viseu,0,0,D
+2021-05-02,Penafiel,Estoril,0,0,D
+2021-05-03,Vilafranquense,Varzim,1,3,A
+2021-05-03,Academica,Arouca,0,1,A
+2021-05-08,Feirense,Oliveirense,4,1,H
+2021-05-08,Benfica B,SC Covilha,1,1,D
+2021-05-08,Mafra,Academica,2,2,D
+2021-05-08,Estoril,Chaves,1,1,D
+2021-05-09,Cova De Piedade,Vizela,1,1,D
+2021-05-09,Arouca,Casa Pia,2,1,H
+2021-05-09,Leixoes,FC Porto B,2,0,H
+2021-05-09,Varzim,Penafiel,1,2,A
+2021-05-10,Academico Viseu,Vilafranquense,1,2,A
+2021-05-14,Oliveirense,Academico Viseu,2,1,H
+2021-05-15,Chaves,Leixoes,3,1,H
+2021-05-15,Vilafranquense,Cova De Piedade,0,0,D
+2021-05-15,Mafra,Arouca,0,1,A
+2021-05-16,SC Covilha,Estoril,3,2,H
+2021-05-16,Penafiel,Vizela,1,2,A
+2021-05-16,FC Porto B,Feirense,4,2,H
+2021-05-16,Casa Pia,Varzim,3,0,H
+2021-05-16,Academica,Benfica B,1,0,H
+2021-05-19,Academica,Vilafranquense,2,2,D
+2021-05-20,Estoril,Mafra,1,0,H
+2021-05-21,Feirense,Penafiel,0,1,A
+2021-05-22,Benfica B,FC Porto B,2,1,H
+2021-05-22,Varzim,Oliveirense,1,0,H
+2021-05-22,Academico Viseu,SC Covilha,3,2,H
+2021-05-22,Arouca,Chaves,3,1,H
+2021-05-22,Cova De Piedade,Casa Pia,4,0,H
+2021-05-22,Leixoes,Academica,1,2,A
+2021-05-22,Vizela,Vilafranquense,5,2,H

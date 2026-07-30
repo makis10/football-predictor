@@ -48,7 +48,7 @@ from backend.app.ml.btts_classifier import (
     predict_btts_prob, apply_btts_calibration,
 )
 from backend.app.ml.odds_analysis_service import (
-    fetch_all_league_odds, _teams_match, _best_ev_market, _compute_ev, shrunk_ev,
+    fetch_all_league_odds, _teams_match, _compute_ev, shrunk_ev,
     proven_markets, _qualifying_markets,
 )
 
@@ -64,6 +64,14 @@ parser.add_argument(
     help=(
         "Delete and recompute predictions for today's matches that have not yet kicked off. "
         "Run 1-2h before kick-off to use closing-line odds (sharper market signal)."
+    ),
+)
+parser.add_argument(
+    "--force-missing-odds", action="store_true",
+    help=(
+        "Recompute FUTURE predictions that were priced before the bookmaker opened "
+        "the market, and for which odds have since arrived in odds_history. "
+        "Cheap (no API calls) — run alongside the odds poll."
     ),
 )
 args = parser.parse_args()
@@ -118,6 +126,42 @@ if args.force_today:
     db.close()
     print(f"--force-today: deleted {deleted.rowcount} predictions "
           f"for today's unstarted matches (cutoff UTC {cutoff_dt:%H:%M})", flush=True)
+
+if args.force_missing_odds:
+    # A fixture drawn or published days ahead gets priced by us immediately, but
+    # bookmakers only open the market later — so bm_* stayed NULL and the whole
+    # EV / value-gate / CLV chain had nothing to work with until --force-today
+    # recomputed it on match day. That threw away every day the market was
+    # actually moving. An odds_history row is exactly the signal "the bookmaker
+    # prices this now" (the poll only stores matches it matched), so no API call
+    # is needed to find them.
+    #
+    # Strictly future only, for the same reason as --force: a match kicking off
+    # today may already be in progress, and --force-today owns that window.
+    from backend.app.models.odds_history import OddsHistory
+    db = SessionLocal()
+    stale_ids = db.scalars(
+        select(Match.id)
+        .join(Prediction, Prediction.match_id == Match.id)
+        .where(Match.result.is_(None))
+        .where(Match.match_date > date.today())
+        .where(Prediction.bm_home_odds.is_(None))
+        .where(select(OddsHistory.id)
+               .where(OddsHistory.match_id == Match.id)
+               .exists())
+    ).all()
+    if stale_ids:
+        deleted = db.execute(
+            delete(Prediction).where(Prediction.match_id.in_(stale_ids))
+        )
+        db.commit()
+        print(f"--force-missing-odds: deleted {deleted.rowcount} odds-less predictions "
+              f"for {len(stale_ids)} future match(es) whose market has since opened",
+              flush=True)
+    else:
+        print("--force-missing-odds: nothing to do — no future prediction is "
+              "missing odds that are now available", flush=True)
+    db.close()
 
 # ── Fetch matches that need predictions ───────────────────────────────────────
 db = SessionLocal()
@@ -206,14 +250,17 @@ print("Snapshot ready. Loading European data …", flush=True)
 # compute_match_features reads elo[team] for every fixture — which silently
 # inserts unknown clubs with the 1500 default. Testing membership afterwards
 # would report every team as "known".
-from backend.app.ml.features import _SNAP_NAME_MAP  # noqa: E402
+from backend.app.ml.features import _SNAP_NAME_MAP, snapshot_name  # noqa: E402
 
 _KNOWN_TEAMS = frozenset(snapshot.get("elo", {}))
 
 
 def _has_history(home: str, away: str) -> bool:
+    # snapshot_name() falls back to an accent-insensitive slug, so a fixture
+    # spelled "Železničar Pančevo" finds the CSV's "Zeleznicar Pancevo" without
+    # needing an alias entry for every diacritic in Europe.
     def known(t: str) -> bool:
-        return t in _KNOWN_TEAMS or _SNAP_NAME_MAP.get(t, t) in _KNOWN_TEAMS
+        return snapshot_name(t, _KNOWN_TEAMS) in _KNOWN_TEAMS
     return known(home) and known(away)
 
 # ── ClubElo cold-start Elo seeding ────────────────────────────────────────────
@@ -495,16 +542,46 @@ for i, (mid, home, away, match_date, league) in enumerate(match_snapshots, 1):
         if lambda_away is not None and (np.isnan(lambda_away) or lambda_away <= 0):
             lambda_away = None
 
-        # ── Value-bet EV computation ──────────────────────────────────────────
-        # Uses _compute_ev() + _best_ev_market() — same path as the analysis
-        # endpoint — so DB-stored suggestions are consistent with the live page.
-        # Includes GG/NG (BTTS) markets alongside 1x2, Over/Under.
+        # ── Suggestion + shadow-ledger EV ─────────────────────────────────────
         suggested_market: str | None = None
         ev_score: float | None = None
         ev_map: dict = {}
-        # No value bets on no-history fixtures: the model probs are pure defaults
-        # (identical for every such match), so any "edge" vs the odds is noise.
+        # Nothing is suggested on no-history fixtures: the model probs are pure
+        # defaults (identical for every such match), so the "pick" would be an
+        # artefact of the default feature vector, not an opinion about the game.
         _hist_ok = _has_history(home, away)
+
+        # ── What we put in front of the reader ────────────────────────────────
+        # The model's most likely 1x2 outcome — deliberately NOT the highest-EV
+        # market. Measured over 470 settled fixtures (scripts/eval_gate_power.py
+        # §2b): EV-selected picks came in 32.1% of the time, the plain argmax
+        # 52.6%. Selecting on model-minus-market disagreement means selecting the
+        # model's own largest positive errors, so the old gate systematically
+        # surfaced the fixtures it was most wrong about — and did it under a
+        # label the reader reads as "this is the one to back".
+        #
+        # Uses the SERVED probabilities, so the suggestion can never contradict
+        # the probability bars on the card.
+        #
+        # Needs no odds, so every fixture with history now carries a suggestion
+        # instead of only the fraction the bookmaker has already priced.
+        if _hist_ok:
+            _served = {"Home Win": home_win_p, "Draw": draw_p, "Away Win": away_win_p}
+            _pick = max(_served, key=_served.get)
+            _pick_odds = {
+                "Home Win": live_odds.get("raw_home") if live_odds else None,
+                "Draw":     live_odds.get("raw_draw") if live_odds else None,
+                "Away Win": live_odds.get("raw_away") if live_odds else None,
+            }[_pick]
+            # Odds are appended only when we have them: the ROI tracker keys off
+            # " @ " and must not count a pick it cannot price, while the accuracy
+            # tracker reads the market name alone and counts every one.
+            suggested_market = f"{_pick} @ {_pick_odds}" if _pick_odds else _pick
+
+        # ev_score stays NULL for the suggestion. EV turned out to be a poor
+        # guide to whether a pick lands, so surfacing it as a badge invites
+        # exactly the inference the data does not support. It is still computed
+        # below for the shadow ledger — that is measurement, not advice.
         if live_odds and _hist_ok:
             bm_data = {
                 "raw_odds": {
@@ -535,20 +612,9 @@ for i, (mid, home, away, match_date, league) in enumerate(match_snapshots, 1):
             }
             raw_odds_map = {k: v for k, v in bm_data["raw_odds"].items() if v}
 
+            # Feeds the shadow ledger below only — see the note above on why the
+            # reader-facing suggestion no longer comes from here.
             ev_map = _compute_ev(model_probs_map, bm_data)
-            if ev_map:
-                suggested_market = _best_ev_market(
-                    ev_map, raw_odds_map,
-                    fair_probs=fair_probs,
-                    model_probs=model_probs_map,
-                    suggestable=club_proven,     # dynamic gate, not the static set
-                )
-                if suggested_market:
-                    # Store the market-shrunk EV — the honest edge estimate the
-                    # gate validated, not the inflated raw model EV.
-                    market_name = suggested_market.split(" @ ")[0]
-                    ev_score = shrunk_ev(market_name, model_probs_map,
-                                         fair_probs, raw_odds_map)
 
     except Exception as e:
         fail += 1

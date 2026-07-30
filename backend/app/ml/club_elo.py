@@ -10,18 +10,64 @@ import time
 from backend.app.ml.features import _elo_update, ELO_START
 
 _CACHE: tuple[float, dict] | None = None
+_CSV_CACHE: tuple[dict, set] | None = None
 _TTL = 1800  # 30 min — Elo only moves when new results land
+
+
+def _csv_elo() -> tuple[dict, set]:
+    """Elo from the training CSVs, plus the (date, home, away) keys consumed.
+
+    The `matches` table only holds what we ingest for FIXTURES — which for most
+    leagues is a few weeks of results, and for the twelve added in July 2026
+    was nothing at all. Building Elo from it alone left entire leagues on the
+    1500 default, so every team simulated identically: the season projection
+    gave all eighteen Süper Lig clubs the same 47 xPts and a 6% title chance,
+    while the CSVs sitting on disk rate Galatasaray 1850 and Fenerbahçe 1825.
+
+    The CSVs are the same history the model trains on, so this is the honest
+    base. Cached for the process lifetime — they change once a day at most.
+    """
+    global _CSV_CACHE
+    if _CSV_CACHE is None:
+        import os
+
+        from backend.app.ml.features import load_raw_csvs
+        raw_dir = os.path.join(os.path.dirname(__file__), "..", "..", "data", "raw")
+        df = load_raw_csvs(os.path.abspath(raw_dir)).sort_values("Date")
+        elo: dict[str, float] = {}
+        seen: set = set()
+        for d, h, a, hg, ag in df[["Date", "home_team", "away_team",
+                                   "home_goals", "away_goals"]].itertuples(index=False):
+            if hg != hg or ag != ag:          # NaN → unplayed
+                continue
+            rh, ra = elo.get(h, ELO_START), elo.get(a, ELO_START)
+            elo[h], elo[a] = _elo_update(rh, ra, int(hg), int(ag))
+            try:
+                seen.add((d.date(), h, a))
+            except AttributeError:
+                pass
+        _CSV_CACHE = (elo, seen)
+    return _CSV_CACHE
 
 
 def _build(db) -> dict:
     from sqlalchemy import text
+
+    base, seen = _csv_elo()
+    elo: dict[str, float] = dict(base)
+
+    # DB results on top — they cover what the CSVs don't (European ties,
+    # friendlies) and anything played since the last CSV refresh. Skipped when
+    # the same fixture is already in the CSV history, or the club would be
+    # rated twice for one match.
     rows = db.execute(text(
-        "SELECT home_team, away_team, home_goals, away_goals FROM matches "
+        "SELECT match_date, home_team, away_team, home_goals, away_goals FROM matches "
         "WHERE home_goals IS NOT NULL AND away_goals IS NOT NULL "
         "ORDER BY match_date, id"
     )).fetchall()
-    elo: dict[str, float] = {}
-    for h, a, hg, ag in rows:
+    for d, h, a, hg, ag in rows:
+        if (d, h, a) in seen:
+            continue
         rh, ra = elo.get(h, ELO_START), elo.get(a, ELO_START)
         elo[h], elo[a] = _elo_update(rh, ra, int(hg), int(ag))
     return elo

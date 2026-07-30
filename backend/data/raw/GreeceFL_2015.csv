@@ -1,0 +1,307 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2015-09-25,AOK Kerkyra,Kallithea,1,0,H
+2015-09-26,Larisa,Lamia,3,0,H
+2015-09-27,Apollon Smirnis,Zakynthos,3,2,H
+2015-09-27,Panegialios,Acharnaikos,0,0,D
+2015-09-27,Anagennisi Karditsas,Agrotikos Asteras,0,0,D
+2015-09-27,Trikala,Kissamikos,2,2,D
+2015-09-28,Ergotelis,Chania,0,1,A
+2015-10-14,Panserraikos,Olympiakos Volos,2,1,H
+2015-10-14,Panelefsiniakos,Panachaiki FC,0,3,A
+2015-10-02,Lamia,Panegialios,1,0,H
+2015-10-03,Zakynthos,Olympiakos Volos,1,0,H
+2015-10-04,Larisa,Panelefsiniakos,3,1,H
+2015-10-04,Kallithea,Anagennisi Karditsas,1,0,H
+2015-10-04,Acharnaikos,Ergotelis,1,2,A
+2015-10-04,Agrotikos Asteras,Trikala,1,2,A
+2015-10-05,Chania,Apollon Smirnis,0,0,D
+2015-11-11,Kissamikos,Panserraikos,2,0,H
+2015-11-11,Panachaiki FC,AOK Kerkyra,1,0,H
+2015-10-09,Panelefsiniakos,AOK Kerkyra,1,3,A
+2015-10-10,Panegialios,Larisa,0,1,A
+2015-10-11,Anagennisi Karditsas,Panachaiki FC,1,0,H
+2015-10-11,Ergotelis,Lamia,1,1,D
+2015-10-11,Trikala,Kallithea,2,0,H
+2015-10-11,Panserraikos,Agrotikos Asteras,1,2,A
+2015-10-11,Olympiakos Volos,Chania,1,0,H
+2015-10-11,Zakynthos,Kissamikos,0,0,D
+2015-10-12,Apollon Smirnis,Acharnaikos,0,1,A
+2015-10-16,Agrotikos Asteras,Zakynthos,1,0,H
+2015-10-17,Larisa,Ergotelis,2,1,H
+2015-10-18,Panegialios,Panelefsiniakos,2,0,H
+2015-10-18,AOK Kerkyra,Anagennisi Karditsas,2,0,H
+2015-10-18,Panachaiki FC,Trikala,0,0,D
+2015-10-19,Kallithea,Panserraikos,1,1,D
+2015-10-19,Acharnaikos,Olympiakos Volos,1,1,D
+2015-10-19,Lamia,Apollon Smirnis,0,0,D
+2015-10-19,Chania,Kissamikos,0,1,A
+2015-10-23,Trikala,AOK Kerkyra,3,2,H
+2015-10-24,Ergotelis,Panegialios,3,2,H
+2015-10-24,Panelefsiniakos,Anagennisi Karditsas,0,1,A
+2015-10-24,Panserraikos,Panachaiki FC,1,2,A
+2015-10-24,Olympiakos Volos,Lamia,1,0,H
+2015-10-24,Zakynthos,Kallithea,1,2,A
+2015-10-24,Kissamikos,Acharnaikos,1,1,D
+2015-10-24,Apollon Smirnis,Larisa,0,0,D
+2015-10-25,Chania,Agrotikos Asteras,1,0,H
+2015-11-01,Ergotelis,Panelefsiniakos,3,1,H
+2015-11-01,Panegialios,Apollon Smirnis,0,0,D
+2015-11-01,AOK Kerkyra,Panserraikos,1,0,H
+2015-11-01,Panachaiki FC,Zakynthos,0,0,D
+2015-11-01,Lamia,Kissamikos,0,0,D
+2015-11-01,Acharnaikos,Agrotikos Asteras,2,0,H
+2015-11-01,Larisa,Olympiakos Volos,1,0,H
+2015-11-02,Kallithea,Chania,2,0,H
+2015-11-02,Anagennisi Karditsas,Trikala,2,1,H
+2015-11-06,Kissamikos,Larisa,2,2,D
+2015-11-07,Panserraikos,Anagennisi Karditsas,2,0,H
+2015-11-07,Zakynthos,AOK Kerkyra,1,1,D
+2015-11-07,Chania,Panachaiki FC,2,0,H
+2015-11-08,Panelefsiniakos,Trikala,0,1,A
+2015-11-08,Apollon Smirnis,Ergotelis,3,0,H
+2015-11-08,Agrotikos Asteras,Lamia,0,0,D
+2015-11-08,Acharnaikos,Kallithea,1,1,D
+2015-11-09,Olympiakos Volos,Panegialios,2,1,H
+2015-11-14,Larisa,Agrotikos Asteras,2,1,H
+2015-11-15,Apollon Smirnis,Panelefsiniakos,3,1,H
+2015-11-15,Trikala,Panserraikos,3,0,H
+2015-11-15,Ergotelis,Olympiakos Volos,0,0,D
+2015-11-15,Anagennisi Karditsas,Zakynthos,2,0,H
+2015-11-15,Panachaiki FC,Acharnaikos,1,0,H
+2015-11-15,Lamia,Kallithea,2,1,H
+2015-11-16,Panegialios,Kissamikos,1,0,H
+2015-11-16,AOK Kerkyra,Chania,1,1,D
+2015-11-22,Panelefsiniakos,Panserraikos,1,0,H
+2015-11-22,Olympiakos Volos,Apollon Smirnis,1,2,A
+2015-11-22,Zakynthos,Trikala,1,0,H
+2015-11-22,Agrotikos Asteras,Panegialios,0,0,D
+2015-11-22,Lamia,Panachaiki FC,4,1,H
+2015-11-22,Kallithea,Larisa,0,1,A
+2015-11-23,Acharnaikos,AOK Kerkyra,0,0,D
+2015-11-23,Kissamikos,Ergotelis,2,1,H
+2015-11-24,Chania,Anagennisi Karditsas,2,0,H
+2015-11-27,Olympiakos Volos,Panelefsiniakos,5,1,H
+2015-11-27,AOK Kerkyra,Lamia,3,2,H
+2015-11-27,Panserraikos,Zakynthos,1,0,H
+2015-11-28,Apollon Smirnis,Kissamikos,1,0,H
+2015-11-28,Anagennisi Karditsas,Acharnaikos,1,0,H
+2015-11-28,Panachaiki FC,Larisa,1,1,D
+2015-11-29,Trikala,Chania,2,1,H
+2015-11-29,Ergotelis,Agrotikos Asteras,1,2,A
+2015-11-29,Panegialios,Kallithea,0,3,A
+2015-12-06,Panelefsiniakos,Zakynthos,1,0,H
+2015-12-06,Kissamikos,Olympiakos Volos,0,1,A
+2015-12-06,Acharnaikos,Trikala,1,2,A
+2015-12-06,Lamia,Anagennisi Karditsas,2,1,H
+2015-12-06,Larisa,AOK Kerkyra,0,1,A
+2015-12-07,Chania,Panserraikos,1,1,D
+2015-12-07,Agrotikos Asteras,Apollon Smirnis,0,1,A
+2015-12-07,Kallithea,Ergotelis,1,0,H
+2015-12-07,Panachaiki FC,Panegialios,0,1,A
+2015-12-11,Anagennisi Karditsas,Larisa,1,1,D
+2015-12-12,Kissamikos,Panelefsiniakos,1,0,H
+2015-12-12,Zakynthos,Chania,3,3,D
+2015-12-12,Olympiakos Volos,Agrotikos Asteras,0,0,D
+2015-12-12,Panserraikos,Acharnaikos,3,0,H
+2015-12-12,Ergotelis,Panachaiki FC,3,1,H
+2015-12-12,Apollon Smirnis,Kallithea,3,0,H
+2015-12-13,AOK Kerkyra,Panegialios,1,0,H
+2015-12-13,Trikala,Lamia,1,1,D
+2015-12-20,Acharnaikos,Zakynthos,1,0,H
+2015-12-20,Agrotikos Asteras,Kissamikos,0,0,D
+2015-12-20,Lamia,Panserraikos,2,0,H
+2015-12-20,Panegialios,Anagennisi Karditsas,0,0,D
+2015-12-20,Larisa,Trikala,2,0,H
+2015-12-21,Panelefsiniakos,Chania,3,1,H
+2015-12-21,Kallithea,Olympiakos Volos,1,0,H
+2015-12-21,Panachaiki FC,Apollon Smirnis,0,2,A
+2015-12-21,AOK Kerkyra,Ergotelis,1,2,A
+2016-01-08,Kissamikos,Kallithea,0,0,D
+2016-01-09,Panserraikos,Larisa,0,2,A
+2016-01-10,Anagennisi Karditsas,Ergotelis,0,0,D
+2016-01-10,Agrotikos Asteras,Panelefsiniakos,2,0,H
+2016-01-10,Chania,Acharnaikos,0,1,A
+2016-01-10,Zakynthos,Lamia,3,0,H
+2016-01-10,Olympiakos Volos,Panachaiki FC,2,2,D
+2016-01-10,Trikala,Panegialios,4,0,H
+2016-01-11,Apollon Smirnis,AOK Kerkyra,1,2,A
+2016-01-16,Anagennisi Karditsas,Apollon Smirnis,1,3,A
+2016-01-17,Panelefsiniakos,Acharnaikos,1,1,D
+2016-01-17,Kallithea,Agrotikos Asteras,2,0,H
+2016-01-17,Panachaiki FC,Kissamikos,0,1,A
+2016-01-17,Larisa,Zakynthos,2,0,H
+2016-01-17,AOK Kerkyra,Olympiakos Volos,3,1,H
+2016-01-17,Panegialios,Panserraikos,1,0,H
+2016-01-17,Lamia,Chania,3,0,H
+2016-01-18,Ergotelis,Trikala,1,1,D
+2016-01-23,Chania,Larisa,0,0,D
+2016-01-23,Trikala,Apollon Smirnis,0,1,A
+2016-01-24,Kallithea,Panelefsiniakos,1,2,A
+2016-01-24,Acharnaikos,Lamia,1,0,H
+2016-01-24,Agrotikos Asteras,Panachaiki FC,0,0,D
+2016-01-24,Kissamikos,AOK Kerkyra,0,1,A
+2016-01-24,Zakynthos,Panegialios,0,1,A
+2016-01-24,Olympiakos Volos,Anagennisi Karditsas,0,3,A
+2016-01-24,Panserraikos,Ergotelis,3,0,H
+2016-01-29,Larisa,Acharnaikos,2,0,H
+2016-01-31,Panelefsiniakos,Lamia,1,1,D
+2016-01-31,Panachaiki FC,Kallithea,0,1,A
+2016-01-31,Panegialios,Chania,1,1,D
+2016-01-31,Anagennisi Karditsas,Kissamikos,0,1,A
+2016-01-31,Ergotelis,Zakynthos,0,3,A
+2016-01-31,Trikala,Olympiakos Volos,3,0,H
+2016-01-31,Apollon Smirnis,Panserraikos,1,1,D
+2016-02-01,AOK Kerkyra,Agrotikos Asteras,2,1,H
+2016-02-06,Zakynthos,Apollon Smirnis,0,0,D
+2016-02-07,Acharnaikos,Panegialios,3,1,H
+2016-02-07,Agrotikos Asteras,Anagennisi Karditsas,0,1,A
+2016-02-07,Chania,Ergotelis,3,0,H
+2016-02-07,Kissamikos,Trikala,1,1,D
+2016-02-07,Olympiakos Volos,Panserraikos,0,3,A
+2016-02-08,Kallithea,AOK Kerkyra,2,0,H
+2016-02-08,Lamia,Larisa,1,0,H
+2016-03-02,Panachaiki FC,Panelefsiniakos,1,4,A
+2016-02-12,Apollon Smirnis,Chania,1,0,H
+2016-02-13,Panegialios,Lamia,1,3,A
+2016-02-14,AOK Kerkyra,Panachaiki FC,2,1,H
+2016-02-14,Anagennisi Karditsas,Kallithea,1,1,D
+2016-02-14,Trikala,Agrotikos Asteras,0,0,D
+2016-02-14,Panserraikos,Kissamikos,1,0,H
+2016-02-14,Ergotelis,Acharnaikos,0,3,A
+2016-02-15,Panelefsiniakos,Larisa,0,2,A
+2016-02-16,Olympiakos Volos,Zakynthos,0,3,A
+2016-02-19,Acharnaikos,Apollon Smirnis,0,1,A
+2016-02-20,Lamia,Ergotelis,3,0,H
+2016-02-20,Chania,Olympiakos Volos,3,0,H
+2016-02-21,AOK Kerkyra,Panelefsiniakos,3,0,H
+2016-02-21,Agrotikos Asteras,Panserraikos,0,0,D
+2016-02-21,Kissamikos,Zakynthos,1,0,H
+2016-02-21,Larisa,Panegialios,1,2,A
+2016-02-22,Panachaiki FC,Anagennisi Karditsas,1,0,H
+2016-02-22,Kallithea,Trikala,1,1,D
+2016-02-27,Ergotelis,Larisa,0,3,A
+2016-02-27,Olympiakos Volos,Acharnaikos,0,3,A
+2016-02-28,Panelefsiniakos,Panegialios,0,2,A
+2016-02-28,Trikala,Panachaiki FC,3,0,H
+2016-02-28,Apollon Smirnis,Lamia,1,0,H
+2016-02-28,Panserraikos,Kallithea,3,2,H
+2016-02-28,Zakynthos,Agrotikos Asteras,1,0,H
+2016-02-29,Anagennisi Karditsas,AOK Kerkyra,1,2,A
+2016-02-29,Kissamikos,Chania,0,0,D
+2016-03-05,Acharnaikos,Kissamikos,0,1,A
+2016-03-05,Larisa,Apollon Smirnis,1,0,H
+2016-03-05,Panegialios,Ergotelis,3,0,H
+2016-03-05,Lamia,Olympiakos Volos,3,0,H
+2016-03-06,Anagennisi Karditsas,Panelefsiniakos,2,0,H
+2016-03-06,AOK Kerkyra,Trikala,1,0,H
+2016-03-06,Panachaiki FC,Panserraikos,0,1,A
+2016-03-06,Agrotikos Asteras,Chania,1,0,H
+2016-03-07,Kallithea,Zakynthos,1,1,D
+2016-03-11,Apollon Smirnis,Panegialios,1,1,D
+2016-03-12,Zakynthos,Panachaiki FC,4,0,H
+2016-03-12,Kissamikos,Lamia,0,0,D
+2016-03-12,Panserraikos,AOK Kerkyra,2,2,D
+2016-03-12,Panelefsiniakos,Ergotelis,3,0,H
+2016-03-12,Olympiakos Volos,Larisa,0,3,A
+2016-03-13,Chania,Kallithea,0,1,A
+2016-03-13,Agrotikos Asteras,Acharnaikos,0,0,D
+2016-03-13,Trikala,Anagennisi Karditsas,3,1,H
+2016-03-19,Ergotelis,Apollon Smirnis,0,3,A
+2016-03-19,Panegialios,Olympiakos Volos,3,0,H
+2016-03-20,Trikala,Panelefsiniakos,3,1,H
+2016-03-20,Anagennisi Karditsas,Panserraikos,1,0,H
+2016-03-20,Larisa,Kissamikos,1,0,H
+2016-03-20,Kallithea,Acharnaikos,1,0,H
+2016-03-21,AOK Kerkyra,Zakynthos,4,0,H
+2016-03-21,Lamia,Agrotikos Asteras,1,0,H
+2016-04-14,Panachaiki FC,Chania,0,0,D
+2016-03-26,Agrotikos Asteras,Larisa,0,1,A
+2016-03-26,Olympiakos Volos,Ergotelis,3,0,H
+2016-03-27,Chania,AOK Kerkyra,0,3,A
+2016-03-27,Zakynthos,Anagennisi Karditsas,1,0,H
+2016-03-27,Panserraikos,Trikala,0,1,A
+2016-03-27,Kissamikos,Panegialios,2,0,H
+2016-03-27,Kallithea,Lamia,0,0,D
+2016-03-28,Panelefsiniakos,Apollon Smirnis,0,1,A
+2016-05-05,Acharnaikos,Panachaiki FC,3,0,H
+2016-04-02,Larisa,Kallithea,1,0,H
+2016-04-02,Apollon Smirnis,Olympiakos Volos,3,0,H
+2016-04-02,Ergotelis,Kissamikos,0,3,A
+2016-04-03,Panserraikos,Panelefsiniakos,2,2,D
+2016-04-03,Anagennisi Karditsas,Chania,0,0,D
+2016-04-03,Panegialios,Agrotikos Asteras,2,2,D
+2016-04-03,AOK Kerkyra,Acharnaikos,2,0,H
+2016-04-04,Trikala,Zakynthos,1,0,H
+2016-05-11,Panachaiki FC,Lamia,0,1,A
+2016-04-08,Kissamikos,Apollon Smirnis,0,0,D
+2016-04-09,Panelefsiniakos,Olympiakos Volos,3,0,H
+2016-04-09,Agrotikos Asteras,Ergotelis,3,0,H
+2016-04-10,Zakynthos,Panserraikos,1,2,A
+2016-04-10,Acharnaikos,Anagennisi Karditsas,1,0,H
+2016-04-10,Larisa,Panachaiki FC,1,0,H
+2016-04-11,Lamia,AOK Kerkyra,1,1,D
+2016-04-11,Chania,Trikala,2,2,D
+2016-04-11,Kallithea,Panegialios,1,2,A
+2016-04-15,Apollon Smirnis,Agrotikos Asteras,0,2,A
+2016-04-16,AOK Kerkyra,Larisa,0,0,D
+2016-04-16,Olympiakos Volos,Kissamikos,0,3,A
+2016-04-16,Ergotelis,Kallithea,0,3,A
+2016-04-17,Zakynthos,Panelefsiniakos,2,0,H
+2016-04-17,Trikala,Acharnaikos,1,0,H
+2016-04-17,Panegialios,Panachaiki FC,0,1,A
+2016-04-18,Panserraikos,Chania,2,2,D
+2016-04-18,Anagennisi Karditsas,Lamia,0,1,A
+2016-04-22,Kallithea,Apollon Smirnis,0,1,A
+2016-04-23,Chania,Zakynthos,1,0,H
+2016-04-23,Acharnaikos,Panserraikos,2,1,H
+2016-04-23,Lamia,Trikala,0,1,A
+2016-04-23,Larisa,Anagennisi Karditsas,3,0,H
+2016-04-23,Agrotikos Asteras,Olympiakos Volos,3,0,H
+2016-04-23,Panachaiki FC,Ergotelis,3,0,H
+2016-04-24,Panegialios,AOK Kerkyra,0,1,A
+2016-04-24,Panelefsiniakos,Kissamikos,0,0,D
+2016-04-26,Panserraikos,Lamia,0,2,A
+2016-04-27,Kissamikos,Agrotikos Asteras,1,0,H
+2016-04-27,Zakynthos,Acharnaikos,0,0,D
+2016-04-27,Chania,Panelefsiniakos,2,0,H
+2016-04-27,Olympiakos Volos,Kallithea,0,3,A
+2016-04-27,Apollon Smirnis,Panachaiki FC,1,1,D
+2016-04-27,Ergotelis,AOK Kerkyra,0,3,A
+2016-04-27,Anagennisi Karditsas,Panegialios,3,1,H
+2016-04-27,Trikala,Larisa,3,0,H
+2016-05-06,Panelefsiniakos,Agrotikos Asteras,1,0,H
+2016-05-07,Lamia,Zakynthos,1,0,H
+2016-05-07,Larisa,Panserraikos,1,0,H
+2016-05-07,Panachaiki FC,Olympiakos Volos,3,0,H
+2016-05-07,Ergotelis,Anagennisi Karditsas,0,3,A
+2016-05-08,Kallithea,Kissamikos,2,1,H
+2016-05-08,Panegialios,Trikala,0,0,D
+2016-05-09,Acharnaikos,Chania,3,0,H
+2016-05-09,AOK Kerkyra,Apollon Smirnis,2,0,H
+2016-05-14,Olympiakos Volos,AOK Kerkyra,0,3,A
+2016-05-14,Trikala,Ergotelis,3,0,H
+2016-05-16,Acharnaikos,Panelefsiniakos,1,0,H
+2016-05-16,Agrotikos Asteras,Kallithea,2,1,H
+2016-05-16,Chania,Lamia,1,3,A
+2016-05-16,Kissamikos,Panachaiki FC,3,1,H
+2016-05-16,Zakynthos,Larisa,0,1,A
+2016-05-16,Panserraikos,Panegialios,3,2,H
+2016-05-16,Apollon Smirnis,Anagennisi Karditsas,5,0,H
+2016-05-21,Anagennisi Karditsas,Olympiakos Volos,3,0,H
+2016-05-21,Ergotelis,Panserraikos,0,3,A
+2016-05-22,Panelefsiniakos,Kallithea,2,1,H
+2016-05-22,Lamia,Acharnaikos,1,1,D
+2016-05-22,Panachaiki FC,Agrotikos Asteras,0,1,A
+2016-05-22,Larisa,Chania,3,0,H
+2016-05-22,AOK Kerkyra,Kissamikos,2,0,H
+2016-05-22,Panegialios,Zakynthos,2,0,H
+2016-05-22,Apollon Smirnis,Trikala,0,0,D
+2016-05-28,Zakynthos,Ergotelis,3,0,H
+2016-05-28,Olympiakos Volos,Trikala,0,3,A
+2016-05-29,Lamia,Panelefsiniakos,1,1,D
+2016-05-29,Kallithea,Panachaiki FC,4,2,H
+2016-05-29,Acharnaikos,Larisa,1,2,A
+2016-05-29,Agrotikos Asteras,AOK Kerkyra,3,1,H
+2016-05-29,Chania,Panegialios,3,2,H
+2016-05-29,Kissamikos,Anagennisi Karditsas,0,1,A
+2016-05-29,Panserraikos,Apollon Smirnis,0,5,A

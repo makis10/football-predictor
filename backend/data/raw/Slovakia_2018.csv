@@ -1,0 +1,193 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2018-07-21,Senica,Spartak Trnava,1,0,H
+2018-07-21,Ruzomberok,Sered,0,0,D
+2018-07-22,Podbrezova,Dunajska Streda,1,2,A
+2018-07-22,Zlate Moravce,Slovan Bratislava,1,4,A
+2018-07-28,Zilina,Nitra,2,1,H
+2018-07-28,Spartak Trnava,Zlate Moravce,1,0,H
+2018-07-28,Sered,Senica,2,1,H
+2018-07-29,AS Trencin,Ruzomberok,1,4,A
+2018-07-29,Slovan Bratislava,Podbrezova,3,0,H
+2018-07-29,Dunajska Streda,Zemplin Michalovce,4,1,H
+2018-08-04,Podbrezova,Spartak Trnava,1,0,H
+2018-08-04,Ruzomberok,Zilina,3,1,H
+2018-08-04,Zlate Moravce,Senica,4,0,H
+2018-08-05,AS Trencin,Sered,5,1,H
+2018-08-05,Nitra,Dunajska Streda,2,3,A
+2018-08-05,Zemplin Michalovce,Slovan Bratislava,1,2,A
+2018-08-11,Spartak Trnava,Zemplin Michalovce,3,0,H
+2018-08-11,Dunajska Streda,Ruzomberok,2,2,D
+2018-08-11,Senica,Podbrezova,1,1,D
+2018-08-11,Sered,Zlate Moravce,2,0,H
+2018-08-12,Zilina,AS Trencin,2,3,A
+2018-08-12,Slovan Bratislava,Nitra,1,1,D
+2018-08-18,Nitra,Spartak Trnava,0,0,D
+2018-08-18,Podbrezova,Zlate Moravce,3,0,H
+2018-08-18,Zemplin Michalovce,Senica,1,1,D
+2018-08-18,Zilina,Sered,2,1,H
+2018-08-19,Ruzomberok,Slovan Bratislava,0,2,A
+2018-08-19,AS Trencin,Dunajska Streda,3,3,D
+2018-08-21,Zemplin Michalovce,Zilina,0,1,A
+2018-08-25,Dunajska Streda,Zilina,0,0,D
+2018-08-25,Senica,Nitra,1,1,D
+2018-08-25,Sered,Podbrezova,1,2,A
+2018-08-25,Zlate Moravce,Zemplin Michalovce,2,0,H
+2018-08-26,Slovan Bratislava,AS Trencin,3,3,D
+2018-08-26,Spartak Trnava,Ruzomberok,0,0,D
+2018-09-01,Zilina,Slovan Bratislava,0,1,A
+2018-09-01,Dunajska Streda,Sered,5,0,H
+2018-09-01,Nitra,Zlate Moravce,4,1,H
+2018-09-01,Ruzomberok,Senica,4,0,H
+2018-09-01,Zemplin Michalovce,Podbrezova,2,0,H
+2018-09-02,AS Trencin,Spartak Trnava,1,0,H
+2018-09-15,Slovan Bratislava,Dunajska Streda,3,2,H
+2018-09-15,Spartak Trnava,Zilina,1,2,A
+2018-09-15,Podbrezova,Nitra,3,2,H
+2018-09-15,Senica,AS Trencin,0,2,A
+2018-09-15,Sered,Zemplin Michalovce,2,1,H
+2018-09-15,Zlate Moravce,Ruzomberok,1,1,D
+2018-09-22,Nitra,Zemplin Michalovce,2,1,H
+2018-09-22,AS Trencin,Zlate Moravce,1,0,H
+2018-09-22,Slovan Bratislava,Sered,2,1,H
+2018-09-22,Ruzomberok,Podbrezova,3,0,H
+2018-09-22,Zilina,Senica,5,0,H
+2018-09-23,Dunajska Streda,Spartak Trnava,3,2,H
+2018-09-25,Nitra,AS Trencin,2,1,H
+2018-09-29,Sered,Nitra,2,1,H
+2018-09-29,Spartak Trnava,Slovan Bratislava,1,2,A
+2018-09-29,Podbrezova,AS Trencin,2,0,H
+2018-09-29,Senica,Dunajska Streda,1,2,A
+2018-09-29,Zemplin Michalovce,Ruzomberok,2,2,D
+2018-09-29,Zlate Moravce,Zilina,1,2,A
+2018-10-06,Ruzomberok,Nitra,3,1,H
+2018-10-06,AS Trencin,Zemplin Michalovce,1,2,A
+2018-10-06,Slovan Bratislava,Senica,2,2,D
+2018-10-06,Zilina,Podbrezova,2,0,H
+2018-10-06,Dunajska Streda,Zlate Moravce,3,1,H
+2018-10-07,Spartak Trnava,Sered,2,1,H
+2018-10-20,Spartak Trnava,Senica,4,1,H
+2018-10-20,AS Trencin,Nitra,0,1,A
+2018-10-20,Slovan Bratislava,Zlate Moravce,3,1,H
+2018-10-20,Dunajska Streda,Podbrezova,3,2,H
+2018-10-20,Sered,Ruzomberok,3,1,H
+2018-10-20,Zilina,Zemplin Michalovce,2,2,D
+2018-10-27,Ruzomberok,AS Trencin,1,0,H
+2018-10-27,Podbrezova,Slovan Bratislava,0,2,A
+2018-10-27,Nitra,Zilina,0,2,A
+2018-10-27,Senica,Sered,0,1,A
+2018-10-27,Zemplin Michalovce,Dunajska Streda,2,1,H
+2018-10-28,Zlate Moravce,Spartak Trnava,1,1,D
+2018-11-03,Zilina,Ruzomberok,3,0,H
+2018-11-03,Slovan Bratislava,Zemplin Michalovce,6,0,H
+2018-11-03,Spartak Trnava,Podbrezova,2,0,H
+2018-11-03,Dunajska Streda,Nitra,1,0,H
+2018-11-03,Senica,Zlate Moravce,3,0,H
+2018-11-03,Sered,AS Trencin,3,1,H
+2018-11-10,AS Trencin,Zilina,0,2,A
+2018-11-10,Ruzomberok,Dunajska Streda,0,1,A
+2018-11-10,Podbrezova,Senica,2,4,A
+2018-11-11,Nitra,Slovan Bratislava,1,2,A
+2018-11-11,Zemplin Michalovce,Spartak Trnava,1,0,H
+2018-11-11,Zlate Moravce,Sered,0,1,A
+2018-11-24,Sered,Zilina,1,1,D
+2018-11-24,Slovan Bratislava,Ruzomberok,1,1,D
+2018-11-24,Spartak Trnava,Nitra,2,3,A
+2018-11-24,Senica,Zemplin Michalovce,2,4,A
+2018-11-24,Zlate Moravce,Podbrezova,1,0,H
+2018-11-24,Dunajska Streda,AS Trencin,0,0,D
+2018-12-01,AS Trencin,Slovan Bratislava,0,3,A
+2018-12-01,Nitra,Senica,1,0,H
+2018-12-01,Podbrezova,Sered,1,1,D
+2018-12-01,Zemplin Michalovce,Zlate Moravce,3,0,H
+2018-12-01,Zilina,Dunajska Streda,2,2,D
+2018-12-02,Ruzomberok,Spartak Trnava,3,1,H
+2018-12-08,Slovan Bratislava,Zilina,5,2,H
+2018-12-08,Podbrezova,Zemplin Michalovce,0,1,A
+2018-12-08,Senica,Ruzomberok,1,1,D
+2018-12-08,Sered,Dunajska Streda,0,1,A
+2018-12-08,Zlate Moravce,Nitra,0,3,A
+2018-12-08,Spartak Trnava,AS Trencin,3,1,H
+2019-02-16,AS Trencin,Senica,3,0,H
+2019-02-16,Nitra,Podbrezova,1,3,A
+2019-02-16,Ruzomberok,Zlate Moravce,4,0,H
+2019-02-16,Zemplin Michalovce,Sered,1,0,H
+2019-02-16,Zilina,Spartak Trnava,1,1,D
+2019-02-16,Dunajska Streda,Slovan Bratislava,0,1,A
+2019-02-23,Spartak Trnava,Dunajska Streda,3,1,H
+2019-02-23,Podbrezova,Ruzomberok,0,1,A
+2019-02-23,Senica,Zilina,0,1,A
+2019-02-23,Sered,Slovan Bratislava,0,1,A
+2019-02-23,Zlate Moravce,AS Trencin,3,1,H
+2019-02-23,Zemplin Michalovce,Nitra,0,0,D
+2019-03-02,AS Trencin,Podbrezova,1,1,D
+2019-03-02,Dunajska Streda,Senica,1,0,H
+2019-03-02,Nitra,Sered,0,2,A
+2019-03-02,Ruzomberok,Zemplin Michalovce,0,0,D
+2019-03-02,Zilina,Zlate Moravce,2,1,H
+2019-03-03,Slovan Bratislava,Spartak Trnava,2,0,H
+2019-03-09,Nitra,Ruzomberok,0,0,D
+2019-03-09,Podbrezova,Zilina,0,2,A
+2019-03-09,Senica,Slovan Bratislava,1,2,A
+2019-03-09,Sered,Spartak Trnava,3,1,H
+2019-03-09,Zemplin Michalovce,AS Trencin,4,2,H
+2019-03-09,Zlate Moravce,Dunajska Streda,1,2,A
+2019-03-16,Sered,Slovan Bratislava,1,4,A
+2019-03-16,AS Trencin,Spartak Trnava,0,1,A
+2019-03-16,Podbrezova,Nitra,1,1,D
+2019-03-16,Zlate Moravce,Senica,3,2,H
+2019-03-16,Zilina,Zemplin Michalovce,4,0,H
+2019-03-17,Dunajska Streda,Ruzomberok,1,1,D
+2019-03-30,Ruzomberok,Zilina,1,1,D
+2019-03-30,Nitra,AS Trencin,2,2,D
+2019-03-30,Spartak Trnava,Zlate Moravce,0,1,A
+2019-03-30,Senica,Podbrezova,0,0,D
+2019-03-30,Zemplin Michalovce,Sered,2,0,H
+2019-03-31,Slovan Bratislava,Dunajska Streda,3,1,H
+2019-04-06,Dunajska Streda,Zilina,1,0,H
+2019-04-06,AS Trencin,Senica,2,3,A
+2019-04-06,Spartak Trnava,Nitra,1,1,D
+2019-04-06,Sered,Ruzomberok,0,1,A
+2019-04-06,Zlate Moravce,Podbrezova,2,1,H
+2019-04-07,Slovan Bratislava,Zemplin Michalovce,4,1,H
+2019-04-13,Sered,Dunajska Streda,0,5,A
+2019-04-13,Ruzomberok,Zemplin Michalovce,1,0,H
+2019-04-13,AS Trencin,Zlate Moravce,1,0,H
+2019-04-13,Podbrezova,Spartak Trnava,0,0,D
+2019-04-13,Senica,Nitra,4,1,H
+2019-04-14,Zilina,Slovan Bratislava,0,3,A
+2019-04-20,Spartak Trnava,Senica,0,1,A
+2019-04-20,Nitra,Zlate Moravce,2,2,D
+2019-04-20,Podbrezova,AS Trencin,0,0,D
+2019-04-20,Zemplin Michalovce,Dunajska Streda,0,2,A
+2019-04-20,Zilina,Sered,1,2,A
+2019-04-21,Slovan Bratislava,Ruzomberok,3,2,H
+2019-04-26,Nitra,Podbrezova,2,2,D
+2019-04-27,Dunajska Streda,Slovan Bratislava,1,0,H
+2019-04-27,Senica,AS Trencin,4,0,H
+2019-04-27,Zemplin Michalovce,Zilina,2,1,H
+2019-04-27,Zlate Moravce,Spartak Trnava,1,1,D
+2019-04-28,Ruzomberok,Sered,1,0,H
+2019-05-04,AS Trencin,Nitra,1,4,A
+2019-05-04,Podbrezova,Zlate Moravce,0,1,A
+2019-05-04,Senica,Spartak Trnava,2,0,H
+2019-05-04,Sered,Zemplin Michalovce,2,2,D
+2019-05-05,Ruzomberok,Slovan Bratislava,3,2,H
+2019-05-05,Zilina,Dunajska Streda,1,2,A
+2019-05-11,Slovan Bratislava,Zilina,6,2,H
+2019-05-11,Spartak Trnava,Podbrezova,3,1,H
+2019-05-11,Dunajska Streda,Sered,3,4,A
+2019-05-11,Nitra,Senica,2,3,A
+2019-05-11,Zemplin Michalovce,Ruzomberok,0,3,A
+2019-05-11,Zlate Moravce,AS Trencin,2,1,H
+2019-05-18,AS Trencin,Podbrezova,4,0,H
+2019-05-18,Nitra,Spartak Trnava,0,1,A
+2019-05-18,Ruzomberok,Dunajska Streda,1,0,H
+2019-05-18,Senica,Zlate Moravce,3,1,H
+2019-05-18,Sered,Zilina,2,3,A
+2019-05-18,Zemplin Michalovce,Slovan Bratislava,3,3,D
+2019-05-24,Slovan Bratislava,Sered,3,1,H
+2019-05-24,Spartak Trnava,AS Trencin,0,0,D
+2019-05-24,Dunajska Streda,Zemplin Michalovce,5,0,H
+2019-05-24,Podbrezova,Senica,1,0,H
+2019-05-24,Zlate Moravce,Nitra,1,0,H
+2019-05-24,Zilina,Ruzomberok,4,2,H

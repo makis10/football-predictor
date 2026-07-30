@@ -1,0 +1,297 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2018-07-20,FK Crvena Zvezda,Dinamo Vranje,3,0,H
+2018-07-20,Vojvodina,Mladost Lucani,1,1,D
+2018-07-21,Napredak,RAD,1,0,H
+2018-07-21,Cukaricki,Zemun,1,1,D
+2018-07-21,FK Vozdovac,Backa,1,0,H
+2018-07-22,Radnik Surdulica,FK Partizan,1,0,H
+2018-07-22,Radnicki NIS,Proleter Novi SAD,3,1,H
+2018-07-23,FK Spartak Zdrepceva KRV,Macva,1,0,H
+2018-07-28,Zemun,Vojvodina,1,1,D
+2018-07-28,Mladost Lucani,Radnik Surdulica,1,0,H
+2018-07-28,Macva,Napredak,1,0,H
+2018-07-28,Proleter Novi SAD,FK Vozdovac,2,1,H
+2018-07-28,RAD,Cukaricki,0,3,A
+2018-07-29,Backa,FK Spartak Zdrepceva KRV,2,1,H
+2018-07-29,FK Crvena Zvezda,Radnicki NIS,2,0,H
+2018-07-29,Dinamo Vranje,FK Partizan,0,1,A
+2018-08-03,Cukaricki,Macva,1,0,H
+2018-08-04,FK Vozdovac,FK Crvena Zvezda,1,2,A
+2018-08-04,Napredak,Backa,1,1,D
+2018-08-04,Radnik Surdulica,Zemun,2,1,H
+2018-08-05,FK Partizan,Mladost Lucani,0,0,D
+2018-08-05,Vojvodina,RAD,1,2,A
+2018-08-05,Radnicki NIS,Dinamo Vranje,2,0,H
+2018-08-06,FK Spartak Zdrepceva KRV,Proleter Novi SAD,0,4,A
+2018-08-10,Radnicki NIS,FK Vozdovac,1,0,H
+2018-08-11,Proleter Novi SAD,Napredak,1,1,D
+2018-08-11,Dinamo Vranje,Mladost Lucani,1,3,A
+2018-08-11,Macva,Vojvodina,0,0,D
+2018-08-11,Backa,Cukaricki,1,1,D
+2018-08-11,RAD,Radnik Surdulica,3,1,H
+2018-08-12,Zemun,FK Partizan,0,1,A
+2018-08-12,FK Crvena Zvezda,FK Spartak Zdrepceva KRV,3,0,H
+2018-08-18,Cukaricki,Proleter Novi SAD,1,0,H
+2018-08-18,Mladost Lucani,Zemun,2,1,H
+2018-08-18,Vojvodina,Backa,2,0,H
+2018-08-18,FK Vozdovac,Dinamo Vranje,2,0,H
+2018-08-19,FK Spartak Zdrepceva KRV,Radnicki NIS,1,4,A
+2018-08-19,Radnik Surdulica,Macva,0,1,A
+2018-08-24,Proleter Novi SAD,Vojvodina,0,1,A
+2018-08-25,Radnicki NIS,Napredak,3,3,D
+2018-08-25,Backa,Radnik Surdulica,1,0,H
+2018-08-25,RAD,Mladost Lucani,1,1,D
+2018-08-25,FK Crvena Zvezda,Cukaricki,2,1,H
+2018-08-26,Macva,FK Partizan,1,3,A
+2018-08-26,Dinamo Vranje,Zemun,1,0,H
+2018-08-26,FK Vozdovac,FK Spartak Zdrepceva KRV,0,0,D
+2018-08-31,Mladost Lucani,Macva,1,2,A
+2018-09-01,Zemun,RAD,1,0,H
+2018-09-01,Cukaricki,Radnicki NIS,1,1,D
+2018-09-01,Napredak,FK Vozdovac,0,0,D
+2018-09-01,Radnik Surdulica,Proleter Novi SAD,0,0,D
+2018-09-02,FK Spartak Zdrepceva KRV,Dinamo Vranje,2,0,H
+2018-09-02,Vojvodina,FK Crvena Zvezda,1,4,A
+2018-09-02,FK Partizan,Backa,1,0,H
+2018-09-14,Radnicki NIS,Vojvodina,1,0,H
+2018-09-15,Proleter Novi SAD,FK Partizan,0,1,A
+2018-09-15,Dinamo Vranje,RAD,0,1,A
+2018-09-15,Macva,Zemun,0,2,A
+2018-09-15,Backa,Mladost Lucani,0,2,A
+2018-09-15,FK Crvena Zvezda,Radnik Surdulica,6,0,H
+2018-09-16,FK Spartak Zdrepceva KRV,Napredak,0,1,A
+2018-09-16,FK Vozdovac,Cukaricki,1,3,A
+2018-09-19,FK Partizan,RAD,1,0,H
+2018-09-21,Cukaricki,FK Spartak Zdrepceva KRV,3,1,H
+2018-09-22,Zemun,Backa,2,2,D
+2018-09-22,Napredak,Dinamo Vranje,3,0,H
+2018-09-22,Mladost Lucani,Proleter Novi SAD,1,0,H
+2018-09-22,Vojvodina,FK Vozdovac,3,0,H
+2018-09-22,Radnik Surdulica,Radnicki NIS,1,2,A
+2018-09-22,RAD,Macva,1,0,H
+2018-09-23,FK Partizan,FK Crvena Zvezda,1,1,D
+2018-09-26,Napredak,FK Crvena Zvezda,0,3,A
+2018-09-29,FK Crvena Zvezda,Mladost Lucani,2,1,H
+2018-09-30,FK Spartak Zdrepceva KRV,Vojvodina,0,1,A
+2018-09-30,Proleter Novi SAD,Zemun,4,1,H
+2018-09-30,Radnicki NIS,FK Partizan,2,2,D
+2018-09-30,Dinamo Vranje,Macva,1,0,H
+2018-09-30,Napredak,Cukaricki,1,1,D
+2018-09-30,FK Vozdovac,Radnik Surdulica,1,0,H
+2018-09-30,Backa,RAD,1,0,H
+2018-10-05,FK Partizan,FK Vozdovac,4,0,H
+2018-10-06,Mladost Lucani,Radnicki NIS,0,1,A
+2018-10-06,Radnik Surdulica,FK Spartak Zdrepceva KRV,0,0,D
+2018-10-06,Macva,Backa,2,0,H
+2018-10-06,Vojvodina,Napredak,0,1,A
+2018-10-06,Cukaricki,Dinamo Vranje,6,1,H
+2018-10-06,RAD,Proleter Novi SAD,1,3,A
+2018-10-07,Zemun,FK Crvena Zvezda,1,2,A
+2018-10-19,Cukaricki,Vojvodina,1,0,H
+2018-10-20,FK Vozdovac,Mladost Lucani,1,1,D
+2018-10-20,FK Crvena Zvezda,RAD,3,1,H
+2018-10-20,Radnicki NIS,Zemun,2,0,H
+2018-10-20,Proleter Novi SAD,Macva,1,0,H
+2018-10-20,Napredak,Radnik Surdulica,1,1,D
+2018-10-21,FK Spartak Zdrepceva KRV,FK Partizan,0,0,D
+2018-10-21,Dinamo Vranje,Backa,1,1,D
+2018-10-27,Zemun,FK Vozdovac,2,1,H
+2018-10-27,FK Partizan,Napredak,1,1,D
+2018-10-27,Vojvodina,Dinamo Vranje,2,0,H
+2018-10-27,Radnik Surdulica,Cukaricki,1,0,H
+2018-10-27,RAD,Radnicki NIS,0,0,D
+2018-10-27,Backa,Proleter Novi SAD,0,1,A
+2018-10-28,Macva,FK Crvena Zvezda,0,2,A
+2018-10-28,Mladost Lucani,FK Spartak Zdrepceva KRV,2,1,H
+2018-10-31,FK Spartak Zdrepceva KRV,Zemun,2,2,D
+2018-10-31,Dinamo Vranje,Proleter Novi SAD,2,4,A
+2018-10-31,Vojvodina,Radnik Surdulica,1,0,H
+2018-10-31,Radnicki NIS,Macva,3,0,H
+2018-10-31,Napredak,Mladost Lucani,4,1,H
+2018-10-31,FK Vozdovac,RAD,2,0,H
+2018-10-31,Cukaricki,FK Partizan,1,1,D
+2018-10-31,FK Crvena Zvezda,Backa,3,1,H
+2018-11-03,Proleter Novi SAD,FK Crvena Zvezda,0,2,A
+2018-11-03,Mladost Lucani,Cukaricki,3,4,A
+2018-11-03,Radnik Surdulica,Dinamo Vranje,2,0,H
+2018-11-03,Backa,Radnicki NIS,0,2,A
+2018-11-04,Zemun,Napredak,0,2,A
+2018-11-04,Macva,FK Vozdovac,2,0,H
+2018-11-04,RAD,FK Spartak Zdrepceva KRV,1,1,D
+2018-11-04,FK Partizan,Vojvodina,2,0,H
+2018-11-09,Proleter Novi SAD,Radnicki NIS,1,2,A
+2018-11-10,FK Partizan,Radnik Surdulica,2,0,H
+2018-11-10,Macva,FK Spartak Zdrepceva KRV,0,0,D
+2018-11-10,Zemun,Cukaricki,0,3,A
+2018-11-10,Backa,FK Vozdovac,1,0,H
+2018-11-10,Dinamo Vranje,FK Crvena Zvezda,0,3,A
+2018-11-10,Mladost Lucani,Vojvodina,1,0,H
+2018-11-10,RAD,Napredak,0,2,A
+2018-11-23,Cukaricki,RAD,2,1,H
+2018-11-24,FK Spartak Zdrepceva KRV,Backa,3,0,H
+2018-11-24,Napredak,Macva,2,0,H
+2018-11-24,Vojvodina,Zemun,0,0,D
+2018-11-24,Radnik Surdulica,Mladost Lucani,1,0,H
+2018-11-24,FK Vozdovac,Proleter Novi SAD,0,0,D
+2018-11-24,Radnicki NIS,FK Crvena Zvezda,2,2,D
+2018-11-25,FK Partizan,Dinamo Vranje,6,0,H
+2018-11-30,Backa,Napredak,3,3,D
+2018-12-01,Zemun,Radnik Surdulica,0,0,D
+2018-12-01,RAD,Vojvodina,0,1,A
+2018-12-01,Macva,Cukaricki,1,0,H
+2018-12-01,Mladost Lucani,FK Partizan,1,1,D
+2018-12-01,Dinamo Vranje,Radnicki NIS,0,4,A
+2018-12-01,Proleter Novi SAD,FK Spartak Zdrepceva KRV,2,2,D
+2018-12-02,FK Crvena Zvezda,FK Vozdovac,2,0,H
+2018-12-05,Mladost Lucani,Dinamo Vranje,2,0,H
+2018-12-05,Vojvodina,Macva,1,1,D
+2018-12-05,FK Spartak Zdrepceva KRV,FK Crvena Zvezda,1,3,A
+2018-12-05,Napredak,Proleter Novi SAD,1,1,D
+2018-12-05,Cukaricki,Backa,3,0,H
+2018-12-05,Radnik Surdulica,RAD,1,0,H
+2018-12-05,FK Vozdovac,Radnicki NIS,0,1,A
+2018-12-05,FK Partizan,Zemun,1,0,H
+2018-12-08,FK Crvena Zvezda,Napredak,3,0,H
+2018-12-09,Radnicki NIS,FK Spartak Zdrepceva KRV,3,0,H
+2018-12-09,Dinamo Vranje,FK Vozdovac,1,2,A
+2018-12-09,Macva,Radnik Surdulica,1,2,A
+2018-12-09,Zemun,Mladost Lucani,0,3,A
+2018-12-09,Proleter Novi SAD,Cukaricki,0,0,D
+2018-12-09,Backa,Vojvodina,0,0,D
+2018-12-09,RAD,FK Partizan,0,3,A
+2018-12-14,FK Partizan,Macva,0,0,D
+2018-12-15,Radnik Surdulica,Backa,3,2,H
+2018-12-16,FK Spartak Zdrepceva KRV,FK Vozdovac,3,2,H
+2018-12-16,Vojvodina,Proleter Novi SAD,0,0,D
+2018-12-16,Cukaricki,FK Crvena Zvezda,1,2,A
+2018-12-17,Zemun,Dinamo Vranje,1,2,A
+2018-12-17,Mladost Lucani,RAD,0,0,D
+2018-12-17,Napredak,Radnicki NIS,1,2,A
+2019-02-15,FK Vozdovac,Napredak,4,0,H
+2019-02-16,Backa,FK Partizan,0,3,A
+2019-02-16,Macva,Mladost Lucani,0,1,A
+2019-02-16,Proleter Novi SAD,Radnik Surdulica,0,0,D
+2019-02-16,Radnicki NIS,Cukaricki,2,0,H
+2019-02-16,FK Crvena Zvezda,Vojvodina,4,0,H
+2019-02-17,Dinamo Vranje,FK Spartak Zdrepceva KRV,1,0,H
+2019-02-17,RAD,Zemun,2,2,D
+2019-02-22,Vojvodina,Radnicki NIS,0,1,A
+2019-02-23,Zemun,Macva,0,0,D
+2019-02-23,Mladost Lucani,Backa,5,0,H
+2019-02-23,Napredak,FK Spartak Zdrepceva KRV,0,0,D
+2019-02-23,Radnik Surdulica,FK Crvena Zvezda,0,1,A
+2019-02-23,FK Partizan,Proleter Novi SAD,3,0,H
+2019-02-24,Cukaricki,FK Vozdovac,3,0,H
+2019-02-24,RAD,Dinamo Vranje,1,1,D
+2019-03-01,Macva,RAD,0,0,D
+2019-03-02,FK Spartak Zdrepceva KRV,Cukaricki,1,2,A
+2019-03-02,Radnicki NIS,Radnik Surdulica,4,1,H
+2019-03-02,Dinamo Vranje,Napredak,4,0,H
+2019-03-02,Proleter Novi SAD,Mladost Lucani,2,0,H
+2019-03-02,FK Vozdovac,Vojvodina,1,0,H
+2019-03-02,FK Crvena Zvezda,FK Partizan,1,1,D
+2019-03-03,Backa,Zemun,2,0,H
+2019-03-06,Zemun,Proleter Novi SAD,0,0,D
+2019-03-06,Mladost Lucani,FK Crvena Zvezda,1,3,A
+2019-03-06,Macva,Dinamo Vranje,0,0,D
+2019-03-06,Cukaricki,Napredak,2,1,H
+2019-03-06,Radnik Surdulica,FK Vozdovac,2,1,H
+2019-03-06,RAD,Backa,1,1,D
+2019-03-06,FK Partizan,Radnicki NIS,0,1,A
+2019-03-06,Vojvodina,FK Spartak Zdrepceva KRV,1,2,A
+2019-03-09,Radnicki NIS,Mladost Lucani,1,0,H
+2019-03-09,Napredak,Vojvodina,0,0,D
+2019-03-09,FK Crvena Zvezda,Zemun,4,0,H
+2019-03-10,FK Spartak Zdrepceva KRV,Radnik Surdulica,3,2,H
+2019-03-10,Dinamo Vranje,Cukaricki,0,0,D
+2019-03-10,Proleter Novi SAD,RAD,0,0,D
+2019-03-10,FK Vozdovac,FK Partizan,1,0,H
+2019-03-10,Backa,Macva,0,1,A
+2019-03-15,Backa,Dinamo Vranje,5,1,H
+2019-03-16,FK Partizan,FK Spartak Zdrepceva KRV,1,3,A
+2019-03-16,Zemun,Radnicki NIS,0,1,A
+2019-03-16,Radnik Surdulica,Napredak,1,0,H
+2019-03-16,Macva,Proleter Novi SAD,2,1,H
+2019-03-17,RAD,FK Crvena Zvezda,0,3,A
+2019-03-17,Mladost Lucani,FK Vozdovac,3,1,H
+2019-03-17,Vojvodina,Cukaricki,0,0,D
+2019-03-29,Proleter Novi SAD,Backa,3,0,H
+2019-03-30,FK Spartak Zdrepceva KRV,Mladost Lucani,1,0,H
+2019-03-30,Dinamo Vranje,Vojvodina,1,3,A
+2019-03-30,Radnicki NIS,RAD,2,0,H
+2019-03-30,Cukaricki,Radnik Surdulica,2,0,H
+2019-03-30,FK Crvena Zvezda,Macva,2,1,H
+2019-03-31,Napredak,FK Partizan,1,0,H
+2019-03-31,FK Vozdovac,Zemun,3,1,H
+2019-04-03,Zemun,FK Spartak Zdrepceva KRV,0,2,A
+2019-04-03,RAD,FK Vozdovac,0,1,A
+2019-04-03,Backa,FK Crvena Zvezda,1,3,A
+2019-04-03,Mladost Lucani,Napredak,2,0,H
+2019-04-03,Macva,Radnicki NIS,0,0,D
+2019-04-03,Proleter Novi SAD,Dinamo Vranje,0,0,D
+2019-04-03,Radnik Surdulica,Vojvodina,0,1,A
+2019-04-03,FK Partizan,Cukaricki,3,2,H
+2019-04-07,Vojvodina,FK Partizan,3,2,H
+2019-04-07,FK Spartak Zdrepceva KRV,RAD,1,0,H
+2019-04-07,Radnicki NIS,Backa,5,1,H
+2019-04-07,Dinamo Vranje,Radnik Surdulica,0,3,A
+2019-04-07,Napredak,Zemun,1,0,H
+2019-04-07,Cukaricki,Mladost Lucani,0,0,D
+2019-04-07,FK Vozdovac,Macva,1,0,H
+2019-04-07,FK Crvena Zvezda,Proleter Novi SAD,4,0,H
+2019-04-12,FK Spartak Zdrepceva KRV,RAD,2,0,H
+2019-04-13,FK Crvena Zvezda,Radnicki NIS,3,0,H
+2019-04-13,Mladost Lucani,Napredak,2,1,H
+2019-04-13,Radnik Surdulica,Backa,1,1,D
+2019-04-13,FK Partizan,Cukaricki,3,0,H
+2019-04-13,Vojvodina,Proleter Novi SAD,0,1,A
+2019-04-13,Macva,Dinamo Vranje,2,0,H
+2019-04-13,FK Vozdovac,Zemun,2,2,D
+2019-04-19,Zemun,FK Spartak Zdrepceva KRV,0,0,D
+2019-04-20,Dinamo Vranje,FK Vozdovac,1,0,H
+2019-04-20,Napredak,Vojvodina,5,0,H
+2019-04-20,Cukaricki,FK Crvena Zvezda,3,2,H
+2019-04-20,Backa,Macva,2,2,D
+2019-04-20,RAD,Radnik Surdulica,1,0,H
+2019-04-21,Proleter Novi SAD,Mladost Lucani,0,1,A
+2019-04-21,Radnicki NIS,FK Partizan,3,1,H
+2019-04-25,Radnicki NIS,Cukaricki,2,2,D
+2019-04-25,Mladost Lucani,Vojvodina,3,1,H
+2019-04-25,FK Spartak Zdrepceva KRV,Backa,0,1,A
+2019-04-25,Macva,Zemun,1,5,A
+2019-04-25,Napredak,Proleter Novi SAD,2,0,H
+2019-04-25,Radnik Surdulica,Dinamo Vranje,1,1,D
+2019-04-25,FK Vozdovac,RAD,1,1,D
+2019-04-25,FK Crvena Zvezda,FK Partizan,2,1,H
+2019-04-30,Proleter Novi SAD,Radnicki NIS,2,3,A
+2019-05-01,Vojvodina,FK Crvena Zvezda,0,5,A
+2019-05-01,Zemun,Backa,7,0,H
+2019-05-01,Radnik Surdulica,FK Vozdovac,4,2,H
+2019-05-01,RAD,Dinamo Vranje,1,0,H
+2019-05-01,FK Partizan,Mladost Lucani,2,1,H
+2019-05-01,Macva,FK Spartak Zdrepceva KRV,2,1,H
+2019-05-01,Cukaricki,Napredak,5,2,H
+2019-05-05,FK Spartak Zdrepceva KRV,Radnik Surdulica,3,3,D
+2019-05-05,Dinamo Vranje,Zemun,1,0,H
+2019-05-05,FK Vozdovac,Macva,1,1,D
+2019-05-05,Backa,RAD,1,2,A
+2019-05-05,FK Partizan,Napredak,2,1,H
+2019-05-05,FK Crvena Zvezda,Mladost Lucani,1,0,H
+2019-05-05,Radnicki NIS,Vojvodina,0,0,D
+2019-05-05,Cukaricki,Proleter Novi SAD,3,0,H
+2019-05-10,Proleter Novi SAD,FK Crvena Zvezda,0,1,A
+2019-05-11,Mladost Lucani,Cukaricki,1,1,D
+2019-05-11,Vojvodina,FK Partizan,1,2,A
+2019-05-11,Dinamo Vranje,FK Spartak Zdrepceva KRV,2,1,H
+2019-05-11,Macva,RAD,0,0,D
+2019-05-11,Zemun,Radnik Surdulica,2,1,H
+2019-05-11,Napredak,Radnicki NIS,3,3,D
+2019-05-11,FK Vozdovac,Backa,1,0,H
+2019-05-19,FK Partizan,Proleter Novi SAD,2,0,H
+2019-05-19,FK Crvena Zvezda,Napredak,3,0,H
+2019-05-19,FK Spartak Zdrepceva KRV,FK Vozdovac,2,1,H
+2019-05-19,Radnicki NIS,Mladost Lucani,2,2,D
+2019-05-19,Cukaricki,Vojvodina,1,1,D
+2019-05-19,Radnik Surdulica,Macva,3,0,H
+2019-05-19,Backa,Dinamo Vranje,0,1,A
+2019-05-19,RAD,Zemun,1,1,D

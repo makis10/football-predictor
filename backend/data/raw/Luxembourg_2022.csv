@@ -1,0 +1,243 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2022-08-06,Etzella Ettelbruck,Union Titus Petange,2,0,H
+2022-08-07,Fola Esch,UNA Strassen,2,1,H
+2022-08-07,FC Differdange 03,Racing FC Union Luxembourg,2,3,A
+2022-08-07,UN Kaerjeng 97,Wiltz,1,1,D
+2022-08-07,US Mondorf-les-bains,US Hostert,2,0,H
+2022-08-07,Mondercange,Victoria Rosport,5,1,H
+2022-08-07,Swift Hesperange,Progres Niederkorn,4,2,H
+2022-08-08,F91 Dudelange,AS Jeunesse Esch,5,0,H
+2022-08-13,Racing FC Union Luxembourg,US Mondorf-les-bains,1,0,H
+2022-08-13,Union Titus Petange,Fola Esch,2,3,A
+2022-08-14,Wiltz,Victoria Rosport,3,1,H
+2022-08-14,UNA Strassen,FC Differdange 03,3,2,H
+2022-08-14,Progres Niederkorn,F91 Dudelange,2,3,A
+2022-08-14,AS Jeunesse Esch,UN Kaerjeng 97,0,0,D
+2022-08-14,US Hostert,Swift Hesperange,0,4,A
+2022-08-14,Mondercange,Etzella Ettelbruck,1,2,A
+2022-08-20,Victoria Rosport,AS Jeunesse Esch,1,1,D
+2022-08-20,Fola Esch,Etzella Ettelbruck,0,0,D
+2022-08-20,Swift Hesperange,Racing FC Union Luxembourg,2,0,H
+2022-08-21,FC Differdange 03,Union Titus Petange,1,1,D
+2022-08-21,UN Kaerjeng 97,Progres Niederkorn,1,1,D
+2022-08-21,US Mondorf-les-bains,UNA Strassen,1,2,A
+2022-08-21,Wiltz,Mondercange,1,4,A
+2022-08-21,F91 Dudelange,US Hostert,3,1,H
+2022-08-26,US Hostert,UN Kaerjeng 97,0,1,A
+2022-08-28,Progres Niederkorn,Victoria Rosport,1,0,H
+2022-08-28,Union Titus Petange,US Mondorf-les-bains,4,1,H
+2022-08-28,AS Jeunesse Esch,Wiltz,1,0,H
+2022-08-28,UNA Strassen,Swift Hesperange,0,4,A
+2022-08-28,Etzella Ettelbruck,FC Differdange 03,0,2,A
+2022-08-28,Racing FC Union Luxembourg,F91 Dudelange,2,4,A
+2022-08-28,Mondercange,Fola Esch,3,0,H
+2022-09-03,Swift Hesperange,Union Titus Petange,3,3,D
+2022-09-04,F91 Dudelange,UNA Strassen,3,1,H
+2022-09-04,FC Differdange 03,Fola Esch,6,0,H
+2022-09-04,AS Jeunesse Esch,Mondercange,1,1,D
+2022-09-04,UN Kaerjeng 97,Racing FC Union Luxembourg,0,5,A
+2022-09-04,US Mondorf-les-bains,Etzella Ettelbruck,3,0,H
+2022-09-04,Victoria Rosport,US Hostert,2,2,D
+2022-09-04,Wiltz,Progres Niederkorn,1,2,A
+2022-09-10,Racing FC Union Luxembourg,Victoria Rosport,2,2,D
+2022-09-10,Etzella Ettelbruck,Swift Hesperange,0,4,A
+2022-09-11,Union Titus Petange,F91 Dudelange,1,2,A
+2022-09-11,UNA Strassen,UN Kaerjeng 97,0,2,A
+2022-09-11,US Hostert,Wiltz,2,3,A
+2022-09-11,Mondercange,FC Differdange 03,0,0,D
+2022-09-11,Fola Esch,US Mondorf-les-bains,0,1,A
+2022-09-11,Progres Niederkorn,AS Jeunesse Esch,2,1,H
+2022-09-18,F91 Dudelange,Etzella Ettelbruck,4,0,H
+2022-09-18,AS Jeunesse Esch,US Hostert,1,2,A
+2022-09-18,UN Kaerjeng 97,Union Titus Petange,0,1,A
+2022-09-18,US Mondorf-les-bains,FC Differdange 03,0,1,A
+2022-09-18,Victoria Rosport,UNA Strassen,0,0,D
+2022-09-18,Wiltz,Racing FC Union Luxembourg,1,1,D
+2022-09-18,Swift Hesperange,Fola Esch,8,1,H
+2022-09-18,Progres Niederkorn,Mondercange,4,0,H
+2022-10-09,Fola Esch,F91 Dudelange,0,2,A
+2022-10-09,FC Differdange 03,Swift Hesperange,1,2,A
+2022-10-09,Racing FC Union Luxembourg,AS Jeunesse Esch,2,1,H
+2022-10-09,Union Titus Petange,Victoria Rosport,5,1,H
+2022-10-09,UNA Strassen,Wiltz,4,3,H
+2022-10-09,US Hostert,Progres Niederkorn,1,0,H
+2022-10-09,Etzella Ettelbruck,UN Kaerjeng 97,1,1,D
+2022-10-09,Mondercange,US Mondorf-les-bains,1,2,A
+2022-10-16,F91 Dudelange,FC Differdange 03,3,1,H
+2022-10-16,Progres Niederkorn,Racing FC Union Luxembourg,0,0,D
+2022-10-16,AS Jeunesse Esch,UNA Strassen,2,0,H
+2022-10-16,UN Kaerjeng 97,Fola Esch,3,2,H
+2022-10-16,Victoria Rosport,Etzella Ettelbruck,3,1,H
+2022-10-16,US Hostert,Mondercange,0,0,D
+2022-10-16,Wiltz,Union Titus Petange,0,2,A
+2022-10-16,Swift Hesperange,US Mondorf-les-bains,4,2,H
+2022-10-23,Fola Esch,Victoria Rosport,4,1,H
+2022-10-23,FC Differdange 03,UN Kaerjeng 97,2,2,D
+2022-10-23,Racing FC Union Luxembourg,US Hostert,2,1,H
+2022-10-23,Union Titus Petange,AS Jeunesse Esch,0,0,D
+2022-10-23,UNA Strassen,Progres Niederkorn,0,1,A
+2022-10-23,Etzella Ettelbruck,Wiltz,1,2,A
+2022-10-23,US Mondorf-les-bains,F91 Dudelange,0,7,A
+2022-10-23,Mondercange,Swift Hesperange,1,2,A
+2022-11-06,Racing FC Union Luxembourg,Mondercange,2,2,D
+2022-11-06,AS Jeunesse Esch,Etzella Ettelbruck,6,0,H
+2022-11-06,Victoria Rosport,FC Differdange 03,2,3,A
+2022-11-06,US Hostert,UNA Strassen,1,0,H
+2022-11-06,Wiltz,Fola Esch,5,1,H
+2022-11-06,Progres Niederkorn,Union Titus Petange,2,3,A
+2022-11-06,UN Kaerjeng 97,US Mondorf-les-bains,0,2,A
+2022-11-06,F91 Dudelange,Swift Hesperange,0,4,A
+2022-11-13,Fola Esch,AS Jeunesse Esch,1,3,A
+2022-11-13,FC Differdange 03,Wiltz,2,1,H
+2022-11-13,Union Titus Petange,US Hostert,4,1,H
+2022-11-13,UNA Strassen,Racing FC Union Luxembourg,1,4,A
+2022-11-13,US Mondorf-les-bains,Victoria Rosport,1,6,A
+2022-11-13,Etzella Ettelbruck,Progres Niederkorn,0,1,A
+2022-11-13,Swift Hesperange,UN Kaerjeng 97,4,2,H
+2022-11-13,Mondercange,F91 Dudelange,2,3,A
+2022-11-26,AS Jeunesse Esch,FC Differdange 03,1,0,H
+2022-11-27,Progres Niederkorn,Fola Esch,3,2,H
+2022-11-27,Racing FC Union Luxembourg,Union Titus Petange,0,2,A
+2022-11-27,UNA Strassen,Mondercange,2,0,H
+2022-11-27,Victoria Rosport,Swift Hesperange,0,0,D
+2022-11-27,Wiltz,US Mondorf-les-bains,4,4,D
+2022-11-27,UN Kaerjeng 97,F91 Dudelange,2,4,A
+2022-11-27,US Hostert,Etzella Ettelbruck,0,3,A
+2022-12-03,Etzella Ettelbruck,Racing FC Union Luxembourg,0,1,A
+2022-12-03,Mondercange,UN Kaerjeng 97,1,1,D
+2022-12-04,F91 Dudelange,Victoria Rosport,2,0,H
+2022-12-04,Fola Esch,US Hostert,0,1,A
+2022-12-04,FC Differdange 03,Progres Niederkorn,2,3,A
+2022-12-04,Union Titus Petange,UNA Strassen,0,1,A
+2022-12-04,US Mondorf-les-bains,AS Jeunesse Esch,3,1,H
+2022-12-04,Swift Hesperange,Wiltz,4,2,H
+2022-12-10,US Hostert,FC Differdange 03,0,5,A
+2022-12-10,Union Titus Petange,Mondercange,5,2,H
+2022-12-10,Swift Hesperange,AS Jeunesse Esch,2,0,H
+2022-12-10,Victoria Rosport,UN Kaerjeng 97,3,0,H
+2022-12-11,Racing FC Union Luxembourg,Fola Esch,4,2,H
+2022-12-11,UNA Strassen,Etzella Ettelbruck,4,1,H
+2022-12-11,Wiltz,F91 Dudelange,0,3,A
+2022-12-11,Progres Niederkorn,US Mondorf-les-bains,4,2,H
+2023-02-12,F91 Dudelange,Progres Niederkorn,1,4,A
+2023-02-12,Fola Esch,Union Titus Petange,1,2,A
+2023-02-12,FC Differdange 03,UNA Strassen,0,1,A
+2023-02-12,UN Kaerjeng 97,AS Jeunesse Esch,1,4,A
+2023-02-12,US Mondorf-les-bains,Racing FC Union Luxembourg,0,1,A
+2023-02-12,Victoria Rosport,Wiltz,0,0,D
+2023-02-12,Etzella Ettelbruck,Mondercange,1,2,A
+2023-02-12,Swift Hesperange,US Hostert,5,1,H
+2023-02-18,Mondercange,Wiltz,0,3,A
+2023-02-19,Progres Niederkorn,UN Kaerjeng 97,1,0,H
+2023-02-19,Racing FC Union Luxembourg,Swift Hesperange,1,3,A
+2023-02-19,Union Titus Petange,FC Differdange 03,4,2,H
+2023-02-19,AS Jeunesse Esch,Victoria Rosport,2,0,H
+2023-02-19,UNA Strassen,US Mondorf-les-bains,0,1,A
+2023-02-19,US Hostert,F91 Dudelange,0,4,A
+2023-02-19,Etzella Ettelbruck,Fola Esch,0,4,A
+2023-02-26,F91 Dudelange,Racing FC Union Luxembourg,0,1,A
+2023-02-26,Fola Esch,Mondercange,2,0,H
+2023-02-26,FC Differdange 03,Etzella Ettelbruck,6,0,H
+2023-02-26,UN Kaerjeng 97,US Hostert,0,0,D
+2023-02-26,US Mondorf-les-bains,Union Titus Petange,2,0,H
+2023-02-26,Victoria Rosport,Progres Niederkorn,2,3,A
+2023-02-26,Wiltz,AS Jeunesse Esch,3,2,H
+2023-02-26,Swift Hesperange,UNA Strassen,3,0,H
+2023-03-04,Fola Esch,FC Differdange 03,3,2,H
+2023-03-04,Mondercange,AS Jeunesse Esch,1,2,A
+2023-03-05,Progres Niederkorn,Wiltz,3,0,H
+2023-03-05,Racing FC Union Luxembourg,UN Kaerjeng 97,1,1,D
+2023-03-05,Union Titus Petange,Swift Hesperange,2,1,H
+2023-03-05,UNA Strassen,F91 Dudelange,1,2,A
+2023-03-05,US Hostert,Victoria Rosport,1,3,A
+2023-03-05,Etzella Ettelbruck,US Mondorf-les-bains,0,3,A
+2023-03-11,F91 Dudelange,Union Titus Petange,0,1,A
+2023-03-12,FC Differdange 03,Mondercange,2,0,H
+2023-03-12,AS Jeunesse Esch,Progres Niederkorn,0,1,A
+2023-03-12,UN Kaerjeng 97,UNA Strassen,1,2,A
+2023-03-12,US Mondorf-les-bains,Fola Esch,5,0,H
+2023-03-12,Victoria Rosport,Racing FC Union Luxembourg,4,2,H
+2023-03-12,Wiltz,US Hostert,2,2,D
+2023-03-12,Swift Hesperange,Etzella Ettelbruck,2,2,D
+2023-03-17,Union Titus Petange,UN Kaerjeng 97,4,1,H
+2023-03-19,Fola Esch,Swift Hesperange,0,1,A
+2023-03-19,FC Differdange 03,US Mondorf-les-bains,2,1,H
+2023-03-19,Racing FC Union Luxembourg,Wiltz,0,1,A
+2023-03-19,UNA Strassen,Victoria Rosport,2,2,D
+2023-03-19,US Hostert,AS Jeunesse Esch,0,1,A
+2023-03-19,Etzella Ettelbruck,F91 Dudelange,2,5,A
+2023-03-19,Mondercange,Progres Niederkorn,3,3,D
+2023-03-29,F91 Dudelange,Fola Esch,2,1,H
+2023-03-29,Progres Niederkorn,US Hostert,6,0,H
+2023-03-29,AS Jeunesse Esch,Racing FC Union Luxembourg,1,1,D
+2023-03-29,US Mondorf-les-bains,Mondercange,4,1,H
+2023-03-29,Victoria Rosport,Union Titus Petange,0,2,A
+2023-03-29,Wiltz,UNA Strassen,2,1,H
+2023-03-29,Swift Hesperange,FC Differdange 03,4,0,H
+2023-04-02,Fola Esch,UN Kaerjeng 97,3,2,H
+2023-04-02,FC Differdange 03,F91 Dudelange,0,4,A
+2023-04-02,Racing FC Union Luxembourg,Progres Niederkorn,1,2,A
+2023-04-02,Union Titus Petange,Wiltz,2,1,H
+2023-04-02,UNA Strassen,AS Jeunesse Esch,2,1,H
+2023-04-02,US Mondorf-les-bains,Swift Hesperange,0,4,A
+2023-04-02,Etzella Ettelbruck,Victoria Rosport,1,5,A
+2023-04-02,Mondercange,US Hostert,1,0,H
+2023-04-05,UN Kaerjeng 97,Etzella Ettelbruck,0,3,A
+2023-04-08,F91 Dudelange,US Mondorf-les-bains,4,0,H
+2023-04-08,AS Jeunesse Esch,Union Titus Petange,2,2,D
+2023-04-08,Progres Niederkorn,UNA Strassen,2,1,H
+2023-04-08,UN Kaerjeng 97,FC Differdange 03,0,8,A
+2023-04-08,Victoria Rosport,Fola Esch,3,0,H
+2023-04-08,US Hostert,Racing FC Union Luxembourg,1,1,D
+2023-04-08,Wiltz,Etzella Ettelbruck,3,0,H
+2023-04-08,Swift Hesperange,Mondercange,2,1,H
+2023-04-16,Fola Esch,Wiltz,1,2,A
+2023-04-16,FC Differdange 03,Victoria Rosport,4,0,H
+2023-04-16,Union Titus Petange,Progres Niederkorn,0,2,A
+2023-04-16,UNA Strassen,US Hostert,2,0,H
+2023-04-16,US Mondorf-les-bains,UN Kaerjeng 97,1,1,D
+2023-04-16,Etzella Ettelbruck,AS Jeunesse Esch,3,0,H
+2023-04-16,Swift Hesperange,F91 Dudelange,4,3,H
+2023-04-16,Mondercange,Racing FC Union Luxembourg,0,1,A
+2023-04-22,Victoria Rosport,US Mondorf-les-bains,1,1,D
+2023-04-22,Wiltz,FC Differdange 03,1,2,A
+2023-04-23,F91 Dudelange,Mondercange,5,1,H
+2023-04-23,Progres Niederkorn,Etzella Ettelbruck,3,1,H
+2023-04-23,Racing FC Union Luxembourg,UNA Strassen,0,1,A
+2023-04-23,AS Jeunesse Esch,Fola Esch,3,1,H
+2023-04-23,UN Kaerjeng 97,Swift Hesperange,0,6,A
+2023-04-23,US Hostert,Union Titus Petange,0,2,A
+2023-04-29,Mondercange,UNA Strassen,0,0,D
+2023-04-30,F91 Dudelange,UN Kaerjeng 97,4,0,H
+2023-04-30,Fola Esch,Progres Niederkorn,0,4,A
+2023-04-30,FC Differdange 03,AS Jeunesse Esch,0,2,A
+2023-04-30,Union Titus Petange,Racing FC Union Luxembourg,1,1,D
+2023-04-30,US Mondorf-les-bains,Wiltz,3,0,H
+2023-04-30,Etzella Ettelbruck,US Hostert,1,1,D
+2023-04-30,Swift Hesperange,Victoria Rosport,5,1,H
+2023-05-05,AS Jeunesse Esch,US Mondorf-les-bains,0,2,A
+2023-05-06,Progres Niederkorn,FC Differdange 03,2,0,H
+2023-05-07,Racing FC Union Luxembourg,Etzella Ettelbruck,2,2,D
+2023-05-07,UN Kaerjeng 97,Mondercange,2,2,D
+2023-05-07,UNA Strassen,Union Titus Petange,0,3,A
+2023-05-07,Victoria Rosport,F91 Dudelange,2,1,H
+2023-05-07,US Hostert,Fola Esch,0,1,A
+2023-05-07,Wiltz,Swift Hesperange,0,6,A
+2023-05-14,F91 Dudelange,Wiltz,1,1,D
+2023-05-14,Fola Esch,Racing FC Union Luxembourg,1,1,D
+2023-05-14,FC Differdange 03,US Hostert,1,0,H
+2023-05-14,AS Jeunesse Esch,Swift Hesperange,1,1,D
+2023-05-14,UN Kaerjeng 97,Victoria Rosport,2,1,H
+2023-05-14,US Mondorf-les-bains,Progres Niederkorn,0,1,A
+2023-05-14,Etzella Ettelbruck,UNA Strassen,3,0,H
+2023-05-14,Mondercange,Union Titus Petange,4,1,H
+2023-05-21,Progres Niederkorn,Swift Hesperange,2,2,D
+2023-05-21,Racing FC Union Luxembourg,FC Differdange 03,0,1,A
+2023-05-21,Union Titus Petange,Etzella Ettelbruck,3,2,H
+2023-05-21,AS Jeunesse Esch,F91 Dudelange,4,2,H
+2023-05-21,UNA Strassen,Fola Esch,1,0,H
+2023-05-21,Victoria Rosport,Mondercange,1,2,A
+2023-05-21,US Hostert,US Mondorf-les-bains,2,5,A
+2023-05-21,Wiltz,UN Kaerjeng 97,2,3,A
+2023-05-25,Fola Esch,Jeunesse Canach,4,3,H
+2023-05-27,UN Kaerjeng 97,Bettembourg,3,2,H

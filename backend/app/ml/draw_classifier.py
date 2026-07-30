@@ -33,6 +33,8 @@ import numpy as np
 from sklearn.isotonic import IsotonicRegression
 from xgboost import XGBClassifier
 
+from backend.app.ml.features import LEAGUE_DUMMY_COLS
+
 MODELS_DIR = os.path.join(os.path.dirname(__file__), "..", "..", "data", "models")
 
 # ── Feature subset for the draw specialist ───────────────────────────────────
@@ -72,10 +74,10 @@ DRAW_FEATURE_COLS = [
     "h_goals_scored_5",    "a_goals_scored_5",
     "h_goals_conceded_5",  "a_goals_conceded_5",
     "h_over25_rate_5",     "a_over25_rate_5",
-    # League dummies: draw rates differ by league
-    "league_EPL",          "league_LaLiga",    "league_SerieA",
-    "league_Bundesliga",   "league_Ligue1",    "league_GreekSL",
-    "league_BrazilSerieA",
+    # League dummies: draw rates differ by league. Derived from
+    # features.ONE_HOT_LEAGUES so a new league can't be added to the model's
+    # feature vector and silently missed here.
+    *LEAGUE_DUMMY_COLS,
     # Draw-balance features (new — capture match symmetry directly)
     "goals_asymmetry_5",      # abs(h_scored - a_scored): low = matched offences
     "combined_draw_tendency", # sqrt(h_draw_rate * a_draw_rate): both teams draw-prone

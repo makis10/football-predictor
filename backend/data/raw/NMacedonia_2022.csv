@@ -1,0 +1,166 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2022-08-06,Struga,Pobeda,3,0,H
+2022-08-07,Akademija Pandev,Bregalnica Stip,1,2,A
+2022-08-07,Sileks,FK Rabotnicki,2,0,H
+2022-08-13,Shkupi 1927,Makedonija GjP,2,1,H
+2022-08-14,Shkendija,Sileks,1,1,D
+2022-08-14,FK Rabotnicki,Akademija Pandev,0,5,A
+2022-08-14,Pobeda,Tikves,0,1,A
+2022-08-14,Bregalnica Stip,Struga,0,1,A
+2022-08-17,Shkendija,Skopje,2,0,H
+2022-08-20,Makedonija GjP,Pobeda,4,1,H
+2022-08-21,Akademija Pandev,Shkendija,0,1,A
+2022-08-21,Sileks,Skopje,3,1,H
+2022-08-21,Struga,FK Rabotnicki,2,1,H
+2022-08-21,Tikves,Bregalnica Stip,1,1,D
+2022-08-27,Sileks,Akademija Pandev,1,1,D
+2022-08-28,Shkendija,Struga,0,2,A
+2022-08-28,FK Rabotnicki,Tikves,2,0,H
+2022-08-28,Skopje,Shkupi 1927,0,2,A
+2022-08-28,Bregalnica Stip,Makedonija GjP,1,0,H
+2022-08-31,Shkupi 1927,Pobeda,1,1,D
+2022-08-31,Akademija Pandev,Skopje,3,0,H
+2022-08-31,Makedonija GjP,FK Rabotnicki,1,1,D
+2022-08-31,Struga,Sileks,2,1,H
+2022-08-31,Tikves,Shkendija,1,3,A
+2022-09-04,Shkendija,Makedonija GjP,1,1,D
+2022-09-04,Akademija Pandev,Struga,0,3,A
+2022-09-04,Sileks,Tikves,3,2,H
+2022-09-04,Skopje,Pobeda,1,0,H
+2022-09-04,Bregalnica Stip,Shkupi 1927,2,0,H
+2022-09-07,Tikves,Shkupi 1927,3,1,H
+2022-09-10,Makedonija GjP,Sileks,0,1,A
+2022-09-11,Shkupi 1927,FK Rabotnicki,5,0,H
+2022-09-11,Pobeda,Bregalnica Stip,1,0,H
+2022-09-11,Struga,Skopje,3,0,H
+2022-09-11,Tikves,Akademija Pandev,2,1,H
+2022-09-17,Shkendija,Shkupi 1927,0,0,D
+2022-09-17,FK Rabotnicki,Pobeda,1,0,H
+2022-09-17,Akademija Pandev,Makedonija GjP,0,1,A
+2022-09-17,Struga,Tikves,2,0,H
+2022-09-18,Skopje,Bregalnica Stip,0,0,D
+2022-10-01,Makedonija GjP,Struga,1,1,D
+2022-10-01,Bregalnica Stip,FK Rabotnicki,1,3,A
+2022-10-02,Shkupi 1927,Sileks,0,0,D
+2022-10-02,Pobeda,Shkendija,1,3,A
+2022-10-02,Tikves,Skopje,2,0,H
+2022-10-08,Tikves,Makedonija GjP,4,0,H
+2022-10-09,Shkendija,Bregalnica Stip,0,0,D
+2022-10-09,Akademija Pandev,Shkupi 1927,0,1,A
+2022-10-09,Sileks,Pobeda,0,3,A
+2022-10-09,Skopje,FK Rabotnicki,0,0,D
+2022-10-15,FK Rabotnicki,Shkendija,2,4,A
+2022-10-15,Makedonija GjP,Skopje,2,0,H
+2022-10-15,Pobeda,Akademija Pandev,1,1,D
+2022-10-15,Bregalnica Stip,Sileks,2,3,A
+2022-10-16,Shkupi 1927,Struga,1,0,H
+2022-10-25,Bregalnica Stip,Akademija Pandev,1,0,H
+2022-10-26,FK Rabotnicki,Sileks,0,1,A
+2022-10-26,Shkupi 1927,Tikves,4,2,H
+2022-10-26,Pobeda,Struga,2,0,H
+2022-10-26,Skopje,Shkendija,0,1,A
+2022-10-30,Akademija Pandev,FK Rabotnicki,0,2,A
+2022-10-30,Makedonija GjP,Shkupi 1927,1,1,D
+2022-10-30,Sileks,Shkendija,1,1,D
+2022-10-30,Struga,Bregalnica Stip,2,2,D
+2022-10-30,Tikves,Pobeda,1,0,H
+2022-11-05,Skopje,Sileks,0,0,D
+2022-11-06,Shkendija,Akademija Pandev,1,1,D
+2022-11-06,FK Rabotnicki,Struga,1,1,D
+2022-11-06,Pobeda,Makedonija GjP,1,3,A
+2022-11-06,Bregalnica Stip,Tikves,2,1,H
+2022-11-12,Shkupi 1927,Skopje,3,1,H
+2022-11-12,Akademija Pandev,Sileks,3,0,H
+2022-11-12,Struga,Shkendija,1,0,H
+2022-11-12,Tikves,FK Rabotnicki,3,0,H
+2022-11-13,Makedonija GjP,Bregalnica Stip,0,0,D
+2022-11-26,Sileks,Struga,1,2,A
+2022-11-27,Shkendija,Tikves,0,0,D
+2022-11-27,FK Rabotnicki,Makedonija GjP,2,0,H
+2022-11-27,Pobeda,Shkupi 1927,0,6,A
+2022-11-27,Skopje,Akademija Pandev,2,1,H
+2022-12-04,Shkupi 1927,Bregalnica Stip,3,1,H
+2022-12-04,Makedonija GjP,Shkendija,1,3,A
+2022-12-04,Pobeda,Skopje,0,0,D
+2022-12-04,Struga,Akademija Pandev,1,0,H
+2022-12-04,Tikves,Sileks,0,2,A
+2022-12-11,FK Rabotnicki,Shkupi 1927,2,4,A
+2022-12-11,Akademija Pandev,Tikves,0,2,A
+2022-12-11,Sileks,Makedonija GjP,1,3,A
+2022-12-11,Skopje,Struga,1,1,D
+2022-12-11,Bregalnica Stip,Pobeda,2,2,D
+2023-02-19,Shkupi 1927,Shkendija,2,0,H
+2023-02-19,Makedonija GjP,Akademija Pandev,0,1,A
+2023-02-19,Pobeda,FK Rabotnicki,0,2,A
+2023-02-19,Bregalnica Stip,Skopje,0,0,D
+2023-02-19,Tikves,Struga,1,1,D
+2023-02-25,Struga,Makedonija GjP,0,0,D
+2023-02-26,Shkendija,Pobeda,1,0,H
+2023-02-26,FK Rabotnicki,Bregalnica Stip,0,1,A
+2023-02-26,Sileks,Shkupi 1927,2,1,H
+2023-02-26,Skopje,Tikves,0,0,D
+2023-03-04,FK Rabotnicki,Skopje,4,0,H
+2023-03-04,Shkupi 1927,Akademija Pandev,3,3,D
+2023-03-05,Makedonija GjP,Tikves,3,0,H
+2023-03-05,Pobeda,Sileks,1,4,A
+2023-03-05,Bregalnica Stip,Shkendija,0,0,D
+2023-03-08,Shkendija,FK Rabotnicki,3,1,H
+2023-03-08,Akademija Pandev,Pobeda,3,0,H
+2023-03-08,Sileks,Bregalnica Stip,1,2,A
+2023-03-08,Skopje,Makedonija GjP,1,1,D
+2023-03-08,Struga,Shkupi 1927,2,1,H
+2023-03-11,Sileks,Skopje,3,1,H
+2023-03-12,Shkendija,Akademija Pandev,2,1,H
+2023-03-12,Shkupi 1927,FK Rabotnicki,3,1,H
+2023-03-12,Bregalnica Stip,Pobeda,4,0,H
+2023-03-12,Struga,Makedonija GjP,0,0,D
+2023-03-18,FK Rabotnicki,Struga,0,1,A
+2023-03-18,Akademija Pandev,Shkupi 1927,1,1,D
+2023-03-18,Pobeda,Sileks,1,5,A
+2023-03-18,Tikves,Makedonija GjP,0,1,A
+2023-03-19,Skopje,Shkendija,0,2,A
+2023-04-01,Makedonija GjP,FK Rabotnicki,2,1,H
+2023-04-02,Shkendija,Pobeda,2,0,H
+2023-04-02,Shkupi 1927,Skopje,0,1,A
+2023-04-02,Bregalnica Stip,Tikves,0,0,D
+2023-04-02,Struga,Akademija Pandev,3,1,H
+2023-04-09,Akademija Pandev,FK Rabotnicki,0,0,D
+2023-04-09,Pobeda,Shkupi 1927,0,6,A
+2023-04-09,Skopje,Struga,1,1,D
+2023-04-09,Bregalnica Stip,Makedonija GjP,2,1,H
+2023-04-09,Tikves,Sileks,0,0,D
+2023-04-15,Shkendija,Tikves,4,1,H
+2023-04-15,FK Rabotnicki,Skopje,1,0,H
+2023-04-15,Makedonija GjP,Akademija Pandev,0,0,D
+2023-04-15,Sileks,Bregalnica Stip,0,0,D
+2023-04-15,Struga,Pobeda,6,2,H
+2023-04-22,Bregalnica Stip,Shkendija,0,1,A
+2023-04-23,Pobeda,FK Rabotnicki,0,1,A
+2023-04-23,Sileks,Makedonija GjP,1,0,H
+2023-04-23,Skopje,Akademija Pandev,1,1,D
+2023-04-23,Tikves,Shkupi 1927,0,0,D
+2023-04-26,Shkendija,Sileks,0,0,D
+2023-04-26,Shkupi 1927,Bregalnica Stip,3,0,H
+2023-04-26,Akademija Pandev,Pobeda,2,0,H
+2023-04-26,Makedonija GjP,Skopje,2,1,H
+2023-04-26,Struga,Tikves,2,0,H
+2023-04-29,Shkendija,Makedonija GjP,3,1,H
+2023-04-30,Pobeda,Skopje,0,4,A
+2023-04-30,Sileks,Shkupi 1927,0,2,A
+2023-04-30,Bregalnica Stip,Struga,0,3,A
+2023-04-30,Tikves,FK Rabotnicki,1,3,A
+2023-05-07,FK Rabotnicki,Bregalnica Stip,5,4,H
+2023-05-07,Shkupi 1927,Shkendija,2,1,H
+2023-05-07,Akademija Pandev,Tikves,1,4,A
+2023-05-07,Makedonija GjP,Pobeda,7,0,H
+2023-05-07,Struga,Sileks,3,0,H
+2023-05-10,Shkendija,Struga,1,2,A
+2023-05-10,Shkupi 1927,Makedonija GjP,3,0,H
+2023-05-10,Sileks,FK Rabotnicki,2,0,H
+2023-05-10,Bregalnica Stip,Akademija Pandev,1,1,D
+2023-05-10,Tikves,Skopje,4,0,H
+2023-05-14,FK Rabotnicki,Shkendija,1,2,A
+2023-05-14,Akademija Pandev,Sileks,2,2,D
+2023-05-14,Pobeda,Tikves,1,4,A
+2023-05-14,Skopje,Bregalnica Stip,1,2,A
+2023-05-14,Struga,Shkupi 1927,2,1,H

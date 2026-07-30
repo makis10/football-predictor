@@ -1,0 +1,193 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2015-03-07,Ordabasy,Irtysh,1,1,D
+2015-03-07,Taraz,Shakhter Karagandy,0,0,D
+2015-03-07,Kaisar,Zhetysu,0,0,D
+2015-03-07,Aktobe,Atyrau,1,1,D
+2015-03-07,FC Astana,Okzhetpes,2,0,H
+2015-03-07,Kairat Almaty,FK Tobol Kostanay,4,0,H
+2015-03-11,Zhetysu,FK Tobol Kostanay,0,0,D
+2015-03-11,Irtysh,FC Astana,0,3,A
+2015-03-11,Aktobe,Kairat Almaty,0,0,D
+2015-03-11,Atyrau,Taraz,2,1,H
+2015-03-11,Shakhter Karagandy,Ordabasy,0,1,A
+2015-03-11,Okzhetpes,Kaisar,1,0,H
+2015-03-15,Ordabasy,Atyrau,2,0,H
+2015-03-15,FK Tobol Kostanay,Okzhetpes,0,2,A
+2015-03-15,Taraz,Aktobe,0,1,A
+2015-03-15,Kaisar,Irtysh,0,0,D
+2015-03-15,FC Astana,Shakhter Karagandy,2,1,H
+2015-03-15,Kairat Almaty,Zhetysu,2,0,H
+2015-03-21,Taraz,Kairat Almaty,1,0,H
+2015-03-21,Irtysh,FK Tobol Kostanay,1,1,D
+2015-03-21,Okzhetpes,Zhetysu,2,0,H
+2015-03-21,Aktobe,Ordabasy,0,0,D
+2015-03-21,Atyrau,FC Astana,1,1,D
+2015-03-21,Shakhter Karagandy,Kaisar,1,2,A
+2015-04-05,Ordabasy,Taraz,1,0,H
+2015-04-05,FK Tobol Kostanay,Shakhter Karagandy,4,1,H
+2015-04-05,Zhetysu,Irtysh,2,2,D
+2015-04-05,FC Astana,Aktobe,0,0,D
+2015-04-05,Kaisar,Atyrau,0,0,D
+2015-04-05,Kairat Almaty,Okzhetpes,4,0,H
+2015-04-08,Kairat Almaty,Irtysh,1,0,H
+2015-04-11,Ordabasy,Kairat Almaty,2,2,D
+2015-04-11,Irtysh,Okzhetpes,3,1,H
+2015-04-11,Taraz,FC Astana,2,0,H
+2015-04-11,Atyrau,FK Tobol Kostanay,1,2,A
+2015-04-11,Shakhter Karagandy,Zhetysu,2,1,H
+2015-04-11,Aktobe,Kaisar,0,0,D
+2015-04-15,Okzhetpes,Shakhter Karagandy,1,0,H
+2015-04-15,Kaisar,Taraz,1,3,A
+2015-04-15,Zhetysu,Atyrau,1,2,A
+2015-04-15,FK Tobol Kostanay,Aktobe,0,2,A
+2015-04-15,FC Astana,Ordabasy,1,1,D
+2015-04-19,Ordabasy,Kaisar,0,0,D
+2015-04-19,Aktobe,Zhetysu,2,0,H
+2015-04-19,Atyrau,Okzhetpes,2,1,H
+2015-04-19,FC Astana,Kairat Almaty,4,3,H
+2015-04-19,Taraz,FK Tobol Kostanay,1,0,H
+2015-04-20,Shakhter Karagandy,Irtysh,2,2,D
+2015-04-25,Okzhetpes,Aktobe,2,3,A
+2015-04-25,Kaisar,FC Astana,2,1,H
+2015-04-25,Irtysh,Atyrau,1,2,A
+2015-04-25,FK Tobol Kostanay,Ordabasy,1,3,A
+2015-04-25,Kairat Almaty,Shakhter Karagandy,4,0,H
+2015-04-25,Zhetysu,Taraz,1,0,H
+2015-05-03,Taraz,Okzhetpes,1,1,D
+2015-05-03,Ordabasy,Zhetysu,0,0,D
+2015-05-03,FC Astana,FK Tobol Kostanay,4,0,H
+2015-05-03,Kaisar,Kairat Almaty,0,0,D
+2015-05-03,Aktobe,Irtysh,2,1,H
+2015-05-03,Atyrau,Shakhter Karagandy,1,0,H
+2015-05-07,Shakhter Karagandy,Aktobe,0,1,A
+2015-05-07,Okzhetpes,Ordabasy,0,1,A
+2015-05-07,Kairat Almaty,Atyrau,0,1,A
+2015-05-07,FK Tobol Kostanay,Kaisar,1,0,H
+2015-05-07,Zhetysu,FC Astana,1,3,A
+2015-05-07,Irtysh,Taraz,0,1,A
+2015-05-16,Ordabasy,Shakhter Karagandy,1,0,H
+2015-05-16,FC Astana,Irtysh,2,2,D
+2015-05-16,Kairat Almaty,Aktobe,1,2,A
+2015-05-16,FK Tobol Kostanay,Zhetysu,3,1,H
+2015-05-16,Taraz,Atyrau,0,1,A
+2015-05-16,Kaisar,Okzhetpes,0,2,A
+2015-05-24,Shakhter Karagandy,FC Astana,0,4,A
+2015-05-24,Okzhetpes,FK Tobol Kostanay,1,0,H
+2015-05-24,Zhetysu,Kairat Almaty,0,3,A
+2015-05-24,Irtysh,Kaisar,4,2,H
+2015-05-24,Aktobe,Taraz,3,1,H
+2015-05-24,Atyrau,Ordabasy,1,1,D
+2015-05-29,FC Astana,Atyrau,0,0,D
+2015-05-29,Ordabasy,Aktobe,0,1,A
+2015-05-29,FK Tobol Kostanay,Irtysh,1,0,H
+2015-05-29,Zhetysu,Okzhetpes,0,1,A
+2015-05-29,Kaisar,Shakhter Karagandy,2,0,H
+2015-05-29,Kairat Almaty,Taraz,2,0,H
+2015-06-06,Irtysh,Zhetysu,1,0,H
+2015-06-06,Okzhetpes,Kairat Almaty,1,3,A
+2015-06-06,Shakhter Karagandy,FK Tobol Kostanay,1,0,H
+2015-06-06,Taraz,Ordabasy,0,1,A
+2015-06-06,Aktobe,FC Astana,0,0,D
+2015-06-06,Atyrau,Kaisar,2,1,H
+2015-06-20,FC Astana,Taraz,4,1,H
+2015-06-20,FK Tobol Kostanay,Atyrau,2,2,D
+2015-06-20,Okzhetpes,Irtysh,0,1,A
+2015-06-20,Zhetysu,Shakhter Karagandy,3,0,H
+2015-06-20,Kaisar,Aktobe,0,0,D
+2015-06-20,Kairat Almaty,Ordabasy,2,1,H
+2015-06-24,Ordabasy,FC Astana,0,2,A
+2015-06-24,Shakhter Karagandy,Okzhetpes,3,0,H
+2015-06-24,Taraz,Kaisar,3,0,H
+2015-06-24,Irtysh,Kairat Almaty,1,1,D
+2015-06-24,Aktobe,FK Tobol Kostanay,2,1,H
+2015-06-24,Atyrau,Zhetysu,3,0,H
+2015-06-27,Zhetysu,Aktobe,1,1,D
+2015-06-27,Kaisar,Ordabasy,1,1,D
+2015-06-28,FK Tobol Kostanay,Taraz,3,0,H
+2015-06-28,Okzhetpes,Atyrau,2,2,D
+2015-06-28,Irtysh,Shakhter Karagandy,3,1,H
+2015-06-28,Kairat Almaty,FC Astana,2,0,H
+2015-07-04,Taraz,Zhetysu,2,0,H
+2015-07-04,FC Astana,Kaisar,2,0,H
+2015-07-04,Atyrau,Irtysh,0,0,D
+2015-07-05,Shakhter Karagandy,Kairat Almaty,0,5,A
+2015-07-05,Ordabasy,FK Tobol Kostanay,2,0,H
+2015-07-05,Aktobe,Okzhetpes,4,2,H
+2015-07-10,FK Tobol Kostanay,FC Astana,1,1,D
+2015-07-11,Shakhter Karagandy,Atyrau,1,1,D
+2015-07-11,Okzhetpes,Taraz,2,0,H
+2015-07-12,Zhetysu,Ordabasy,3,0,H
+2015-07-12,Irtysh,Aktobe,1,0,H
+2015-07-12,Kairat Almaty,Kaisar,1,0,H
+2015-07-18,FC Astana,Zhetysu,2,1,H
+2015-07-18,Kaisar,FK Tobol Kostanay,0,1,A
+2015-07-18,Taraz,Irtysh,0,0,D
+2015-07-19,Ordabasy,Okzhetpes,2,1,H
+2015-07-19,Aktobe,Shakhter Karagandy,0,1,A
+2015-07-19,Atyrau,Kairat Almaty,0,0,D
+2015-07-25,Okzhetpes,FC Astana,1,2,A
+2015-07-26,Zhetysu,Kaisar,2,1,H
+2015-07-26,FK Tobol Kostanay,Kairat Almaty,1,3,A
+2015-07-26,Irtysh,Ordabasy,2,0,H
+2015-07-26,Shakhter Karagandy,Taraz,2,0,H
+2015-07-26,Atyrau,Aktobe,0,2,A
+2015-08-13,Aktobe,FC Astana,0,1,A
+2015-08-14,Ordabasy,Kairat Almaty,0,0,D
+2015-08-15,Kaisar,Taraz,0,0,D
+2015-08-15,Irtysh,Atyrau,2,0,H
+2015-08-15,Shakhter Karagandy,Okzhetpes,0,0,D
+2015-08-16,FK Tobol Kostanay,Zhetysu,1,3,A
+2015-08-23,Okzhetpes,Kaisar,2,1,H
+2015-08-23,Zhetysu,Taraz,1,0,H
+2015-08-23,FK Tobol Kostanay,Shakhter Karagandy,2,1,H
+2015-08-23,Aktobe,Ordabasy,1,0,H
+2015-08-24,Kairat Almaty,Irtysh,5,2,H
+2015-09-11,Ordabasy,FC Astana,2,3,A
+2015-09-12,Irtysh,Aktobe,1,0,H
+2015-09-12,Taraz,Okzhetpes,3,3,D
+2015-09-12,Atyrau,Kairat Almaty,1,2,A
+2015-09-13,Kaisar,FK Tobol Kostanay,1,2,A
+2015-09-13,Shakhter Karagandy,Zhetysu,3,1,H
+2015-09-19,FK Tobol Kostanay,Taraz,0,0,D
+2015-09-19,Zhetysu,Okzhetpes,0,3,A
+2015-09-19,Shakhter Karagandy,Kaisar,1,1,D
+2015-09-20,Ordabasy,Irtysh,1,1,D
+2015-09-20,Aktobe,Atyrau,1,0,H
+2015-09-20,FC Astana,Kairat Almaty,0,1,A
+2015-09-26,Irtysh,FC Astana,2,1,H
+2015-09-26,Atyrau,Ordabasy,1,3,A
+2015-09-27,Taraz,Shakhter Karagandy,2,0,H
+2015-09-27,Okzhetpes,FK Tobol Kostanay,1,2,A
+2015-09-27,Kaisar,Zhetysu,3,1,H
+2015-09-27,Kairat Almaty,Aktobe,2,1,H
+2015-10-03,Ordabasy,Aktobe,2,1,H
+2015-10-03,Irtysh,Kairat Almaty,0,2,A
+2015-10-03,Taraz,Zhetysu,1,0,H
+2015-10-03,Kaisar,Okzhetpes,0,1,A
+2015-10-03,Shakhter Karagandy,FK Tobol Kostanay,1,2,A
+2015-10-04,Atyrau,FC Astana,0,1,A
+2015-10-17,FC Astana,Ordabasy,2,1,H
+2015-10-17,Aktobe,Irtysh,3,2,H
+2015-10-17,Kairat Almaty,Atyrau,0,0,D
+2015-10-18,Okzhetpes,Taraz,0,0,D
+2015-10-18,Zhetysu,Shakhter Karagandy,0,1,A
+2015-10-18,FK Tobol Kostanay,Kaisar,0,0,D
+2015-10-24,Kaisar,Shakhter Karagandy,0,1,A
+2015-10-24,Taraz,FK Tobol Kostanay,1,0,H
+2015-10-24,Atyrau,Aktobe,1,1,D
+2015-10-25,Okzhetpes,Zhetysu,1,1,D
+2015-10-25,Irtysh,Ordabasy,1,2,A
+2015-10-25,Kairat Almaty,FC Astana,0,1,A
+2015-10-28,FC Astana,Atyrau,4,1,H
+2015-10-31,FC Astana,Irtysh,1,0,H
+2015-10-31,Ordabasy,Atyrau,0,1,A
+2015-10-31,FK Tobol Kostanay,Okzhetpes,1,0,H
+2015-10-31,Zhetysu,Kaisar,2,1,H
+2015-10-31,Aktobe,Kairat Almaty,0,3,A
+2015-10-31,Shakhter Karagandy,Taraz,3,0,H
+2015-11-08,FC Astana,Aktobe,1,0,H
+2015-11-08,Kairat Almaty,Ordabasy,2,0,H
+2015-11-08,Okzhetpes,Shakhter Karagandy,1,0,H
+2015-11-08,Taraz,Kaisar,1,1,D
+2015-11-08,Zhetysu,FK Tobol Kostanay,2,0,H
+2015-11-08,Atyrau,Irtysh,1,0,H

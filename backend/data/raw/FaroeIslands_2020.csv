@@ -1,0 +1,136 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2020-05-09,NSI Runavik,TB,3,1,H
+2020-05-09,HB Torshavn,EB / Streymur,1,0,H
+2020-05-09,Skala,IF II,1,2,A
+2020-05-09,KI Klaksvik,B36 Torshavn,0,2,A
+2020-05-09,AB,Vikingur Gota,0,0,D
+2020-05-16,TB,KI Klaksvik,1,2,A
+2020-05-17,Vikingur Gota,Skala,5,2,H
+2020-05-17,B36 Torshavn,AB,3,0,H
+2020-05-17,IF II,HB Torshavn,1,3,A
+2020-05-17,EB / Streymur,NSI Runavik,0,3,A
+2020-05-22,Vikingur Gota,NSI Runavik,1,0,H
+2020-05-23,B36 Torshavn,Skala,6,2,H
+2020-05-23,IF II,KI Klaksvik,1,4,A
+2020-05-23,EB / Streymur,TB,2,0,H
+2020-05-24,AB,HB Torshavn,0,5,A
+2020-05-27,NSI Runavik,IF II,5,0,H
+2020-05-27,TB,B36 Torshavn,1,3,A
+2020-05-28,HB Torshavn,Vikingur Gota,3,0,H
+2020-05-28,KI Klaksvik,EB / Streymur,3,0,H
+2020-05-28,Skala,AB,1,1,D
+2020-06-01,Vikingur Gota,TB,0,0,D
+2020-06-01,B36 Torshavn,HB Torshavn,2,4,A
+2020-06-01,Skala,NSI Runavik,0,4,A
+2020-06-01,AB,KI Klaksvik,0,6,A
+2020-06-02,IF II,EB / Streymur,2,1,H
+2020-06-06,TB,HB Torshavn,0,1,A
+2020-06-07,KI Klaksvik,NSI Runavik,1,1,D
+2020-06-07,EB / Streymur,Skala,1,0,H
+2020-06-07,IF II,AB,4,2,H
+2020-06-07,Vikingur Gota,B36 Torshavn,4,2,H
+2020-06-12,B36 Torshavn,EB / Streymur,4,1,H
+2020-06-12,NSI Runavik,AB,3,0,H
+2020-06-13,TB,IF II,0,0,D
+2020-06-13,HB Torshavn,Skala,3,0,H
+2020-06-13,KI Klaksvik,Vikingur Gota,4,1,H
+2020-06-16,AB,EB / Streymur,1,1,D
+2020-06-16,B36 Torshavn,NSI Runavik,1,1,D
+2020-06-17,Skala,TB,0,2,A
+2020-06-17,Vikingur Gota,IF II,1,2,A
+2020-06-17,HB Torshavn,KI Klaksvik,3,3,D
+2020-06-21,KI Klaksvik,Skala,3,0,H
+2020-06-21,IF II,B36 Torshavn,0,3,A
+2020-06-21,TB,AB,1,1,D
+2020-06-21,EB / Streymur,Vikingur Gota,0,2,A
+2020-06-22,NSI Runavik,HB Torshavn,2,0,H
+2020-06-26,EB / Streymur,B36 Torshavn,0,3,A
+2020-06-28,Vikingur Gota,KI Klaksvik,1,2,A
+2020-06-28,IF II,TB,1,0,H
+2020-06-28,Skala,HB Torshavn,1,3,A
+2020-06-28,AB,NSI Runavik,2,3,A
+2020-07-04,IF II,HB Torshavn,1,2,A
+2020-07-04,AB,B36 Torshavn,0,4,A
+2020-07-04,Skala,Vikingur Gota,0,4,A
+2020-07-04,KI Klaksvik,TB,2,1,H
+2020-07-04,NSI Runavik,EB / Streymur,1,0,H
+2020-07-12,Vikingur Gota,AB,2,1,H
+2020-07-12,B36 Torshavn,KI Klaksvik,6,2,H
+2020-07-12,IF II,Skala,3,0,H
+2020-07-12,TB,NSI Runavik,0,1,A
+2020-07-12,EB / Streymur,HB Torshavn,0,2,A
+2020-07-22,NSI Runavik,Skala,1,0,H
+2020-07-22,KI Klaksvik,AB,2,0,H
+2020-07-23,HB Torshavn,B36 Torshavn,2,0,H
+2020-07-27,NSI Runavik,KI Klaksvik,0,2,A
+2020-07-27,AB,IF II,2,2,D
+2020-07-27,Skala,EB / Streymur,1,3,A
+2020-07-28,HB Torshavn,TB,4,1,H
+2020-07-29,B36 Torshavn,Vikingur Gota,4,2,H
+2020-08-02,Vikingur Gota,EB / Streymur,6,0,H
+2020-08-02,HB Torshavn,NSI Runavik,2,0,H
+2020-08-02,Skala,KI Klaksvik,0,6,A
+2020-08-02,AB,TB,0,0,D
+2020-08-02,B36 Torshavn,IF II,2,0,H
+2020-08-06,B36 Torshavn,TB,4,1,H
+2020-08-06,IF II,NSI Runavik,0,1,A
+2020-08-06,Vikingur Gota,HB Torshavn,1,3,A
+2020-08-06,EB / Streymur,KI Klaksvik,0,7,A
+2020-08-07,AB,Skala,1,1,D
+2020-08-11,KI Klaksvik,IF II,6,0,H
+2020-08-12,HB Torshavn,AB,11,0,H
+2020-08-12,NSI Runavik,Vikingur Gota,1,2,A
+2020-08-16,TB,EB / Streymur,0,1,A
+2020-08-23,EB / Streymur,AB,3,1,H
+2020-08-23,TB,Skala,1,0,H
+2020-08-23,IF II,Vikingur Gota,1,2,A
+2020-08-28,TB,Vikingur Gota,1,2,A
+2020-08-28,EB / Streymur,IF II,1,0,H
+2020-09-12,KI Klaksvik,HB Torshavn,2,1,H
+2020-09-12,NSI Runavik,B36 Torshavn,4,2,H
+2020-09-13,EB / Streymur,Vikingur Gota,2,3,A
+2020-09-13,AB,TB,0,3,A
+2020-09-15,Skala,KI Klaksvik,0,1,A
+2020-09-19,TB,KI Klaksvik,0,0,D
+2020-09-19,NSI Runavik,EB / Streymur,4,1,H
+2020-09-20,B36 Torshavn,AB,3,0,H
+2020-09-20,Vikingur Gota,Skala,2,1,H
+2020-09-20,HB Torshavn,IF II,4,2,H
+2020-09-23,TB,NSI Runavik,0,1,A
+2020-09-23,EB / Streymur,HB Torshavn,1,5,A
+2020-09-23,Skala,IF II,4,4,D
+2020-09-27,NSI Runavik,Skala,4,1,H
+2020-09-27,TB,Vikingur Gota,0,2,A
+2020-09-27,IF II,EB / Streymur,1,1,D
+2020-09-28,B36 Torshavn,HB Torshavn,1,2,A
+2020-09-30,Vikingur Gota,AB,4,1,H
+2020-10-01,Skala,B36 Torshavn,1,3,A
+2020-10-03,TB,IF II,1,1,D
+2020-10-04,HB Torshavn,Skala,3,0,H
+2020-10-04,AB,NSI Runavik,1,2,A
+2020-10-04,EB / Streymur,B36 Torshavn,2,6,A
+2020-10-17,B36 Torshavn,TB,2,0,H
+2020-10-17,KI Klaksvik,EB / Streymur,2,1,H
+2020-10-18,HB Torshavn,Vikingur Gota,4,0,H
+2020-10-18,IF II,NSI Runavik,2,3,A
+2020-10-18,Skala,AB,2,0,H
+2020-10-21,KI Klaksvik,B36 Torshavn,1,1,D
+2020-10-24,AB,HB Torshavn,2,3,A
+2020-10-24,NSI Runavik,Vikingur Gota,3,2,H
+2020-10-25,KI Klaksvik,IF II,4,1,H
+2020-10-25,EB / Streymur,TB,3,2,H
+2020-10-25,Skala,B36 Torshavn,1,2,A
+2020-10-28,HB Torshavn,NSI Runavik,2,2,D
+2020-10-28,Vikingur Gota,KI Klaksvik,1,3,A
+2020-10-28,IF II,B36 Torshavn,1,2,A
+2020-11-01,IF II,AB,1,0,H
+2020-11-01,Vikingur Gota,B36 Torshavn,1,3,A
+2020-11-01,NSI Runavik,KI Klaksvik,1,0,H
+2020-11-01,HB Torshavn,TB,4,0,H
+2020-11-01,EB / Streymur,Skala,1,1,D
+2020-11-04,KI Klaksvik,AB,3,1,H
+2020-11-07,Vikingur Gota,IF II,4,1,H
+2020-11-07,B36 Torshavn,NSI Runavik,3,4,A
+2020-11-07,KI Klaksvik,HB Torshavn,1,1,D
+2020-11-07,AB,EB / Streymur,4,0,H
+2020-11-07,TB,Skala,3,2,H

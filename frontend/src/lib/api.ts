@@ -56,6 +56,9 @@ export interface Match {
   created_at: string;
   /** European tie round, e.g. "2nd Qualifying Round" (null for domestic leagues). */
   round?: string | null;
+  /** Side(s) with no history behind them; set only when the prediction is
+   *  flagged insufficient_data, so the card can name the missing club. */
+  unknown_teams?: string[];
   /** Present when the matches endpoint is called with include_predictions=true */
   prediction?: PredictionEmbed | null;
 }
@@ -547,6 +550,21 @@ export const LEAGUES = [
   { code: "PrimeiraLiga", label: "Primeira Liga",      flag: "🇵🇹" },
   { code: "Eredivisie",   label: "Eredivisie",         flag: "🇳🇱" },
   { code: "BrazilSerieA", label: "Brasileirão",        flag: "🇧🇷" },
+  // 2026-07-30 expansion. Codes are country names because the local league
+  // names collide with ones we already carry (Austria's top flight is also
+  // "Bundesliga", Denmark's and Romania's are both "Superliga").
+  { code: "Belgium",      label: "Pro League",         flag: "🇧🇪" },
+  { code: "Turkey",       label: "Süper Lig",          flag: "🇹🇷" },
+  { code: "Scotland",     label: "Premiership",        flag: "🏴󠁧󠁢󠁳󠁣󠁴󠁿" },
+  { code: "Denmark",      label: "Superliga",          flag: "🇩🇰" },
+  { code: "Sweden",       label: "Allsvenskan",        flag: "🇸🇪" },
+  { code: "Norway",       label: "Eliteserien",        flag: "🇳🇴" },
+  { code: "Poland",       label: "Ekstraklasa",        flag: "🇵🇱" },
+  { code: "Austria",      label: "Bundesliga (AT)",    flag: "🇦🇹" },
+  { code: "Switzerland",  label: "Super League",       flag: "🇨🇭" },
+  { code: "Romania",      label: "Liga I",             flag: "🇷🇴" },
+  { code: "Ireland",      label: "Premier Division",   flag: "🇮🇪" },
+  { code: "Finland",      label: "Veikkausliiga",      flag: "🇫🇮" },
   { code: "CL",           label: "Champions League",  flag: "⭐" },
   { code: "EL",           label: "Europa League",     flag: "🟠" },
   { code: "ECL",          label: "Conference League", flag: "🟢" },

@@ -1,0 +1,183 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2019-07-13,Tabor Sezana,Aluminij,0,2,A
+2019-07-13,Maribor,Triglav,1,2,A
+2019-07-14,Bravo,Olimpija Ljubljana,0,2,A
+2019-07-14,Celje,Mura,2,2,D
+2019-07-14,NK Domzale,Rudar,2,2,D
+2019-07-19,Aluminij,Triglav,2,1,H
+2019-07-20,Tabor Sezana,Celje,1,0,H
+2019-07-20,Rudar,Maribor,1,1,D
+2019-07-21,Mura,Bravo,4,3,H
+2019-07-21,Olimpija Ljubljana,NK Domzale,4,2,H
+2019-07-26,Celje,Aluminij,0,0,D
+2019-07-27,Triglav,Rudar,3,2,H
+2019-07-28,Bravo,Tabor Sezana,1,0,H
+2019-07-28,Maribor,Olimpija Ljubljana,0,0,D
+2019-08-02,Celje,Bravo,2,2,D
+2019-08-03,Aluminij,Rudar,1,1,D
+2019-08-03,Mura,Maribor,1,1,D
+2019-08-04,Tabor Sezana,NK Domzale,2,1,H
+2019-08-04,Olimpija Ljubljana,Triglav,4,2,H
+2019-08-09,Bravo,Aluminij,0,1,A
+2019-08-10,Triglav,Mura,1,3,A
+2019-08-10,Maribor,Tabor Sezana,4,2,H
+2019-08-11,NK Domzale,Celje,3,5,A
+2019-08-11,Rudar,Olimpija Ljubljana,0,3,A
+2019-08-17,Tabor Sezana,Triglav,2,0,H
+2019-08-17,Celje,Maribor,2,1,H
+2019-08-18,Bravo,NK Domzale,0,0,D
+2019-08-18,Mura,Rudar,2,0,H
+2019-08-18,Aluminij,Olimpija Ljubljana,1,0,H
+2019-08-24,Olimpija Ljubljana,Mura,1,1,D
+2019-08-25,Triglav,Celje,0,6,A
+2019-08-25,Rudar,Tabor Sezana,2,2,D
+2019-08-25,Maribor,Bravo,4,0,H
+2019-08-26,NK Domzale,Aluminij,1,1,D
+2019-08-30,Bravo,Triglav,1,0,H
+2019-08-31,Tabor Sezana,Olimpija Ljubljana,1,2,A
+2019-08-31,Aluminij,Mura,2,0,H
+2019-09-01,Celje,Rudar,3,0,H
+2019-09-01,NK Domzale,Maribor,0,1,A
+2019-09-12,NK Domzale,Mura,0,0,D
+2019-09-13,Rudar,Bravo,1,4,A
+2019-09-14,Maribor,Aluminij,2,1,H
+2019-09-15,Triglav,NK Domzale,2,3,A
+2019-09-15,Olimpija Ljubljana,Celje,2,2,D
+2019-09-15,Mura,Tabor Sezana,1,0,H
+2019-09-21,Aluminij,Tabor Sezana,3,0,H
+2019-09-22,Rudar,NK Domzale,2,3,A
+2019-09-22,Triglav,Maribor,1,3,A
+2019-09-22,Mura,Celje,1,0,H
+2019-09-22,Olimpija Ljubljana,Bravo,3,1,H
+2019-09-25,Bravo,Mura,3,3,D
+2019-09-25,NK Domzale,Olimpija Ljubljana,1,4,A
+2019-09-25,Maribor,Rudar,5,0,H
+2019-09-26,Triglav,Aluminij,1,0,H
+2019-09-26,Celje,Tabor Sezana,2,0,H
+2019-09-28,Olimpija Ljubljana,Maribor,2,4,A
+2019-09-28,Mura,NK Domzale,3,0,H
+2019-09-29,Tabor Sezana,Bravo,3,1,H
+2019-09-29,Rudar,Triglav,1,1,D
+2019-09-30,Aluminij,Celje,0,0,D
+2019-10-05,Bravo,Celje,2,2,D
+2019-10-05,NK Domzale,Tabor Sezana,1,0,H
+2019-10-05,Maribor,Mura,0,0,D
+2019-10-06,Triglav,Olimpija Ljubljana,2,3,A
+2019-10-06,Rudar,Aluminij,1,2,A
+2019-10-19,Mura,Triglav,2,2,D
+2019-10-19,Olimpija Ljubljana,Rudar,6,0,H
+2019-10-19,Celje,NK Domzale,2,1,H
+2019-10-20,Tabor Sezana,Maribor,4,1,H
+2019-10-20,Aluminij,Bravo,5,1,H
+2019-10-26,Triglav,Tabor Sezana,3,2,H
+2019-10-26,Olimpija Ljubljana,Aluminij,3,1,H
+2019-10-26,Maribor,Celje,1,0,H
+2019-10-27,Rudar,Mura,1,2,A
+2019-10-27,NK Domzale,Bravo,2,0,H
+2019-11-02,Bravo,Maribor,0,1,A
+2019-11-02,Celje,Triglav,4,0,H
+2019-11-03,Tabor Sezana,Rudar,1,1,D
+2019-11-03,Mura,Olimpija Ljubljana,3,1,H
+2019-11-03,Aluminij,NK Domzale,4,2,H
+2019-11-09,Rudar,Celje,3,3,D
+2019-11-09,Maribor,NK Domzale,4,1,H
+2019-11-10,Triglav,Bravo,1,0,H
+2019-11-10,Olimpija Ljubljana,Tabor Sezana,2,0,H
+2019-11-10,Mura,Aluminij,2,4,A
+2019-11-23,Bravo,Rudar,2,1,H
+2019-11-23,NK Domzale,Triglav,3,0,H
+2019-11-23,Celje,Olimpija Ljubljana,1,3,A
+2019-11-24,Tabor Sezana,Mura,1,1,D
+2019-11-24,Aluminij,Maribor,0,2,A
+2019-11-30,Tabor Sezana,Aluminij,1,1,D
+2019-11-30,Celje,Mura,1,0,H
+2019-11-30,Maribor,Triglav,0,2,A
+2019-12-01,Bravo,Olimpija Ljubljana,1,2,A
+2019-12-01,NK Domzale,Rudar,2,1,H
+2019-12-04,Tabor Sezana,Celje,0,4,A
+2019-12-04,Aluminij,Triglav,8,1,H
+2019-12-04,Rudar,Maribor,1,1,D
+2019-12-04,Olimpija Ljubljana,NK Domzale,0,1,A
+2019-12-05,Mura,Bravo,1,1,D
+2020-02-22,Triglav,Rudar,3,0,H
+2020-02-22,Celje,Aluminij,2,0,H
+2020-02-22,Maribor,Olimpija Ljubljana,1,1,D
+2020-02-23,Bravo,Tabor Sezana,2,1,H
+2020-02-23,NK Domzale,Mura,1,2,A
+2020-02-25,Olimpija Ljubljana,Triglav,0,2,A
+2020-02-25,Aluminij,Rudar,1,0,H
+2020-02-26,Tabor Sezana,NK Domzale,2,1,H
+2020-02-26,Mura,Maribor,1,2,A
+2020-02-26,Celje,Bravo,2,2,D
+2020-02-29,Rudar,Olimpija Ljubljana,1,1,D
+2020-02-29,Bravo,Aluminij,0,0,D
+2020-02-29,Maribor,Tabor Sezana,0,0,D
+2020-03-01,Triglav,Mura,1,1,D
+2020-03-01,NK Domzale,Celje,1,1,D
+2020-03-03,Aluminij,Olimpija Ljubljana,1,2,A
+2020-03-04,Bravo,NK Domzale,2,1,H
+2020-03-04,Celje,Maribor,2,0,H
+2020-03-04,Mura,Rudar,1,1,D
+2020-03-05,Tabor Sezana,Triglav,3,1,H
+2020-03-07,NK Domzale,Aluminij,1,3,A
+2020-03-07,Maribor,Bravo,1,2,A
+2020-03-08,Triglav,Celje,0,5,A
+2020-03-08,Rudar,Tabor Sezana,0,1,A
+2020-03-08,Olimpija Ljubljana,Mura,1,0,H
+2020-06-05,Aluminij,Mura,1,3,A
+2020-06-05,Celje,Rudar,2,0,H
+2020-06-06,Tabor Sezana,Olimpija Ljubljana,0,3,A
+2020-06-07,Bravo,Triglav,1,0,H
+2020-06-07,NK Domzale,Maribor,1,2,A
+2020-06-12,Triglav,NK Domzale,1,1,D
+2020-06-12,Rudar,Bravo,1,3,A
+2020-06-13,Olimpija Ljubljana,Celje,0,1,A
+2020-06-13,Mura,Tabor Sezana,3,2,H
+2020-06-14,Maribor,Aluminij,3,0,H
+2020-06-16,Mura,Celje,3,1,H
+2020-06-17,Aluminij,Tabor Sezana,0,2,A
+2020-06-17,Rudar,NK Domzale,2,3,A
+2020-06-17,Olimpija Ljubljana,Bravo,0,5,A
+2020-06-18,Triglav,Maribor,1,3,A
+2020-06-20,Bravo,Mura,1,0,H
+2020-06-20,Celje,Tabor Sezana,1,1,D
+2020-06-21,Triglav,Aluminij,1,4,A
+2020-06-21,NK Domzale,Olimpija Ljubljana,0,1,A
+2020-06-21,Maribor,Rudar,3,0,H
+2020-06-26,Rudar,Triglav,0,1,A
+2020-06-27,Tabor Sezana,Bravo,0,0,D
+2020-06-27,Aluminij,Celje,0,2,A
+2020-06-28,Mura,NK Domzale,0,1,A
+2020-06-28,Olimpija Ljubljana,Maribor,1,0,H
+2020-07-03,Bravo,Celje,1,2,A
+2020-07-03,NK Domzale,Tabor Sezana,2,1,H
+2020-07-04,Rudar,Aluminij,1,3,A
+2020-07-05,Triglav,Olimpija Ljubljana,3,7,A
+2020-07-05,Maribor,Mura,3,2,H
+2020-07-07,Celje,NK Domzale,4,1,H
+2020-07-08,Aluminij,Bravo,1,2,A
+2020-07-08,Mura,Triglav,2,0,H
+2020-07-09,Tabor Sezana,Maribor,4,1,H
+2020-07-09,Olimpija Ljubljana,Rudar,5,0,H
+2020-07-11,NK Domzale,Bravo,1,1,D
+2020-07-12,Triglav,Tabor Sezana,1,2,A
+2020-07-12,Maribor,Celje,1,2,A
+2020-07-12,Olimpija Ljubljana,Aluminij,0,1,A
+2020-07-13,Rudar,Mura,0,0,D
+2020-07-15,Bravo,Maribor,0,3,A
+2020-07-15,Celje,Triglav,2,2,D
+2020-07-16,Tabor Sezana,Rudar,1,0,H
+2020-07-16,Aluminij,NK Domzale,2,5,A
+2020-07-16,Mura,Olimpija Ljubljana,1,1,D
+2020-07-19,Mura,Aluminij,1,1,D
+2020-07-19,Triglav,Bravo,1,4,A
+2020-07-19,Maribor,NK Domzale,2,1,H
+2020-07-19,Olimpija Ljubljana,Tabor Sezana,1,2,A
+2020-07-19,Rudar,Celje,0,2,A
+2020-07-22,NK Domzale,Triglav,2,1,H
+2020-07-22,Aluminij,Maribor,1,4,A
+2020-07-22,Bravo,Rudar,1,1,D
+2020-07-22,Tabor Sezana,Mura,1,2,A
+2020-07-22,Celje,Olimpija Ljubljana,2,2,D
+2020-07-26,Gorica,Triglav,1,1,D
+2020-07-30,Triglav,Gorica,0,5,A

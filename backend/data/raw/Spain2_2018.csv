@@ -1,0 +1,467 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2018-08-17,Cadiz,Almeria,1,0,H
+2018-08-17,Albacete,Deportivo La Coruna,1,1,D
+2018-08-18,Elche,Granada CF,0,0,D
+2018-08-18,Lugo,Malaga,1,2,A
+2018-08-18,Alcorcon,Sporting Gijon,1,1,D
+2018-08-18,Cordoba,Numancia,3,3,D
+2018-08-19,Oviedo,Extremadura,1,1,D
+2018-08-19,Mallorca,Osasuna,1,0,H
+2018-08-19,Zaragoza,Rayo Majadahonda,2,1,H
+2018-08-19,Las Palmas,Reus,2,0,H
+2018-08-20,Gimnastic,Tenerife,1,1,D
+2018-08-24,Malaga,Alcorcon,1,0,H
+2018-08-24,Extremadura,Deportivo La Coruna,0,1,A
+2018-08-25,Numancia,Cadiz,1,1,D
+2018-08-25,Reus,Zaragoza,0,0,D
+2018-08-25,Las Palmas,Albacete,1,1,D
+2018-08-25,Cordoba,Oviedo,2,4,A
+2018-08-26,Sporting Gijon,Gimnastic,2,0,H
+2018-08-26,Osasuna,Elche,1,1,D
+2018-08-26,Granada CF,Lugo,1,1,D
+2018-08-26,Almeria,Tenerife,1,1,D
+2018-08-27,Rayo Majadahonda,Mallorca,0,1,A
+2018-08-31,Alcorcon,Mallorca,1,0,H
+2018-09-01,Lugo,Numancia,3,2,H
+2018-09-01,Zaragoza,Las Palmas,1,1,D
+2018-09-01,Elche,Reus,0,2,A
+2018-09-01,Cadiz,Oviedo,1,1,D
+2018-09-01,Tenerife,Deportivo La Coruna,2,2,D
+2018-09-02,Gimnastic,Rayo Majadahonda,0,1,A
+2018-09-02,Sporting Gijon,Extremadura,2,0,H
+2018-09-02,Albacete,Cordoba,3,0,H
+2018-09-02,Granada CF,Osasuna,2,0,H
+2018-09-03,Almeria,Malaga,0,1,A
+2018-09-07,Las Palmas,Gimnastic,4,0,H
+2018-09-07,Mallorca,Cadiz,1,0,H
+2018-09-08,Osasuna,Almeria,3,1,H
+2018-09-08,Malaga,Tenerife,1,0,H
+2018-09-08,Oviedo,Zaragoza,0,4,A
+2018-09-09,Reus,Albacete,1,2,A
+2018-09-09,Numancia,Elche,1,0,H
+2018-09-09,Extremadura,Granada CF,1,3,A
+2018-09-09,Cordoba,Alcorcon,0,0,D
+2018-09-09,Deportivo La Coruna,Sporting Gijon,1,0,H
+2018-09-10,Rayo Majadahonda,Lugo,1,0,H
+2018-09-15,Gimnastic,Osasuna,1,0,H
+2018-09-15,Malaga,Cordoba,3,0,H
+2018-09-15,Tenerife,Reus,0,1,A
+2018-09-15,Alcorcon,Deportivo La Coruna,1,0,H
+2018-09-16,Elche,Mallorca,1,1,D
+2018-09-16,Lugo,Oviedo,0,2,A
+2018-09-16,Extremadura,Las Palmas,1,2,A
+2018-09-16,Almeria,Zaragoza,2,1,H
+2018-09-16,Granada CF,Rayo Majadahonda,3,0,H
+2018-09-16,Sporting Gijon,Numancia,1,1,D
+2018-09-17,Albacete,Cadiz,1,1,D
+2018-09-22,Osasuna,Sporting Gijon,1,0,H
+2018-09-22,Zaragoza,Lugo,0,2,A
+2018-09-22,Rayo Majadahonda,Extremadura,1,4,A
+2018-09-22,Cordoba,Tenerife,1,1,D
+2018-09-23,Mallorca,Albacete,1,3,A
+2018-09-23,Oviedo,Elche,1,1,D
+2018-09-23,Las Palmas,Malaga,1,0,H
+2018-09-23,Numancia,Almeria,0,2,A
+2018-09-23,Reus,Gimnastic,1,1,D
+2018-09-23,Cadiz,Alcorcon,0,2,A
+2018-09-24,Deportivo La Coruna,Granada CF,2,1,H
+2018-09-28,Albacete,Zaragoza,2,2,D
+2018-09-29,Lugo,Mallorca,1,1,D
+2018-09-29,Granada CF,Cordoba,4,2,H
+2018-09-29,Sporting Gijon,Las Palmas,1,0,H
+2018-09-29,Tenerife,Cadiz,1,0,H
+2018-09-30,Alcorcon,Oviedo,2,0,H
+2018-09-30,Malaga,Rayo Majadahonda,1,0,H
+2018-09-30,Almeria,Reus,2,0,H
+2018-09-30,Osasuna,Numancia,0,0,D
+2018-09-30,Extremadura,Elche,2,2,D
+2018-09-30,Gimnastic,Deportivo La Coruna,1,3,A
+2018-10-06,Mallorca,Tenerife,4,1,H
+2018-10-06,Numancia,Extremadura,1,0,H
+2018-10-06,Cordoba,Almeria,1,0,H
+2018-10-06,Las Palmas,Alcorcon,0,0,D
+2018-10-07,Reus,Granada CF,1,2,A
+2018-10-07,Oviedo,Albacete,1,0,H
+2018-10-07,Deportivo La Coruna,Malaga,1,1,D
+2018-10-07,Elche,Lugo,2,1,H
+2018-10-07,Cadiz,Gimnastic,1,1,D
+2018-10-08,Rayo Majadahonda,Sporting Gijon,2,1,H
+2018-10-08,Zaragoza,Osasuna,1,1,D
+2018-10-12,Malaga,Albacete,2,1,H
+2018-10-12,Extremadura,Cadiz,2,1,H
+2018-10-12,Deportivo La Coruna,Elche,4,0,H
+2018-10-13,Osasuna,Cordoba,3,1,H
+2018-10-13,Sporting Gijon,Reus,1,1,D
+2018-10-13,Numancia,Zaragoza,1,0,H
+2018-10-13,Almeria,Las Palmas,3,0,H
+2018-10-14,Tenerife,Lugo,0,0,D
+2018-10-14,Rayo Majadahonda,Oviedo,1,0,H
+2018-10-14,Granada CF,Mallorca,1,0,H
+2018-10-15,Gimnastic,Alcorcon,1,3,A
+2018-10-19,Elche,Malaga,2,0,H
+2018-10-20,Oviedo,Osasuna,2,1,H
+2018-10-20,Las Palmas,Numancia,3,0,H
+2018-10-20,Alcorcon,Granada CF,1,0,H
+2018-10-20,Cordoba,Deportivo La Coruna,1,1,D
+2018-10-21,Mallorca,Extremadura,1,1,D
+2018-10-21,Lugo,Gimnastic,1,0,H
+2018-10-21,Albacete,Almeria,1,1,D
+2018-10-21,Reus,Rayo Majadahonda,2,1,H
+2018-10-21,Zaragoza,Tenerife,1,1,D
+2018-10-21,Cadiz,Sporting Gijon,0,0,D
+2018-10-26,Sporting Gijon,Cordoba,0,0,D
+2018-10-27,Deportivo La Coruna,Reus,2,0,H
+2018-10-27,Granada CF,Almeria,1,0,H
+2018-10-27,Mallorca,Las Palmas,2,2,D
+2018-10-27,Lugo,Cadiz,1,2,A
+2018-10-27,Tenerife,Alcorcon,3,2,H
+2018-10-28,Gimnastic,Oviedo,2,1,H
+2018-10-28,Extremadura,Albacete,1,2,A
+2018-10-28,Rayo Majadahonda,Osasuna,1,1,D
+2018-10-28,Elche,Zaragoza,2,0,H
+2018-10-29,Malaga,Numancia,2,0,H
+2018-11-02,Albacete,Gimnastic,2,0,H
+2018-11-03,Reus,Lugo,0,0,D
+2018-11-03,Numancia,Tenerife,2,0,H
+2018-11-03,Osasuna,Malaga,2,1,H
+2018-11-03,Cordoba,Extremadura,4,2,H
+2018-11-03,Las Palmas,Deportivo La Coruna,1,1,D
+2018-11-04,Cadiz,Elche,5,1,H
+2018-11-04,Oviedo,Mallorca,1,1,D
+2018-11-04,Alcorcon,Rayo Majadahonda,2,0,H
+2018-11-04,Almeria,Sporting Gijon,2,1,H
+2018-11-04,Zaragoza,Granada CF,0,2,A
+2018-11-10,Cadiz,Reus,2,0,H
+2018-11-10,Lugo,Alcorcon,0,1,A
+2018-11-10,Extremadura,Osasuna,2,3,A
+2018-11-10,Deportivo La Coruna,Oviedo,4,0,H
+2018-11-10,Elche,Las Palmas,0,0,D
+2018-11-11,Granada CF,Numancia,0,0,D
+2018-11-11,Rayo Majadahonda,Almeria,2,0,H
+2018-11-11,Sporting Gijon,Malaga,2,2,D
+2018-11-11,Mallorca,Cordoba,3,0,H
+2018-11-11,Tenerife,Albacete,0,0,D
+2018-11-12,Gimnastic,Zaragoza,1,3,A
+2018-11-16,Las Palmas,Granada CF,2,2,D
+2018-11-17,Malaga,Gimnastic,2,0,H
+2018-11-17,Osasuna,Tenerife,2,0,H
+2018-11-17,Reus,Extremadura,1,4,A
+2018-11-17,Zaragoza,Mallorca,2,2,D
+2018-11-17,Oviedo,Sporting Gijon,2,1,H
+2018-11-18,Numancia,Rayo Majadahonda,1,2,A
+2018-11-18,Cordoba,Cadiz,1,3,A
+2018-11-18,Alcorcon,Elche,1,0,H
+2018-11-18,Albacete,Lugo,1,0,H
+2018-11-19,Almeria,Deportivo La Coruna,1,1,D
+2018-11-23,Granada CF,Sporting Gijon,1,2,A
+2018-11-24,Gimnastic,Almeria,2,2,D
+2018-11-24,Deportivo La Coruna,Osasuna,2,0,H
+2018-11-24,Lugo,Cordoba,2,1,H
+2018-11-24,Cadiz,Las Palmas,4,1,H
+2018-11-25,Mallorca,Numancia,1,0,H
+2018-11-25,Extremadura,Malaga,1,0,H
+2018-11-25,Oviedo,Reus,3,0,H
+2018-11-25,Elche,Albacete,0,1,A
+2018-11-25,Tenerife,Rayo Majadahonda,2,1,H
+2018-11-25,Alcorcon,Zaragoza,2,0,H
+2018-11-30,Zaragoza,Cadiz,0,1,A
+2018-12-01,Cordoba,Elche,1,1,D
+2018-12-01,Malaga,Granada CF,0,1,A
+2018-12-01,Reus,Mallorca,0,2,A
+2018-12-01,Almeria,Extremadura,1,1,D
+2018-12-01,Sporting Gijon,Tenerife,2,1,H
+2018-12-02,Rayo Majadahonda,Deportivo La Coruna,0,0,D
+2018-12-02,Osasuna,Lugo,1,0,H
+2018-12-02,Numancia,Gimnastic,3,0,H
+2018-12-02,Albacete,Alcorcon,2,1,H
+2018-12-02,Las Palmas,Oviedo,0,0,D
+2018-12-07,Tenerife,Extremadura,0,0,D
+2018-12-08,Deportivo La Coruna,Numancia,2,2,D
+2018-12-08,Gimnastic,Granada CF,0,1,A
+2018-12-08,Albacete,Osasuna,2,2,D
+2018-12-08,Mallorca,Malaga,1,2,A
+2018-12-08,Oviedo,Almeria,1,2,A
+2018-12-09,Alcorcon,Reus,0,1,A
+2018-12-09,Cadiz,Rayo Majadahonda,1,0,H
+2018-12-09,Elche,Sporting Gijon,0,0,D
+2018-12-09,Lugo,Las Palmas,4,2,H
+2018-12-09,Zaragoza,Cordoba,0,0,D
+2018-12-14,Malaga,Cadiz,1,0,H
+2018-12-15,Granada CF,Oviedo,1,0,H
+2018-12-15,Numancia,Albacete,1,2,A
+2018-12-15,Reus,Cordoba,1,1,D
+2018-12-15,Sporting Gijon,Mallorca,1,0,H
+2018-12-16,Rayo Majadahonda,Elche,1,3,A
+2018-12-16,Osasuna,Alcorcon,2,1,H
+2018-12-16,Las Palmas,Tenerife,1,1,D
+2018-12-16,Extremadura,Gimnastic,0,1,A
+2018-12-16,Almeria,Lugo,1,1,D
+2018-12-16,Deportivo La Coruna,Zaragoza,3,1,H
+2018-12-21,Tenerife,Granada CF,1,1,D
+2018-12-21,Mallorca,Gimnastic,2,0,H
+2018-12-22,Lugo,Sporting Gijon,0,0,D
+2018-12-22,Oviedo,Malaga,0,0,D
+2018-12-22,Zaragoza,Extremadura,2,1,H
+2018-12-22,Elche,Almeria,2,2,D
+2018-12-22,Cordoba,Las Palmas,4,1,H
+2018-12-22,Cadiz,Deportivo La Coruna,3,0,H
+2018-12-23,Reus,Osasuna,0,1,A
+2018-12-23,Albacete,Rayo Majadahonda,1,0,H
+2018-12-23,Alcorcon,Numancia,1,1,D
+2019-01-04,Granada CF,Albacete,1,1,D
+2019-01-04,Tenerife,Elche,2,1,H
+2019-01-05,Sporting Gijon,Zaragoza,1,2,A
+2019-01-05,Extremadura,Alcorcon,3,0,H
+2019-01-06,Almeria,Mallorca,2,0,H
+2019-01-06,Deportivo La Coruna,Lugo,0,0,D
+2019-01-06,Gimnastic,Cordoba,1,0,H
+2019-01-06,Osasuna,Cadiz,2,1,H
+2019-01-06,Malaga,Reus,0,3,A
+2019-01-07,Numancia,Oviedo,2,3,A
+2019-01-07,Rayo Majadahonda,Las Palmas,0,0,D
+2019-01-11,Cadiz,Granada CF,0,0,D
+2019-01-12,Albacete,Sporting Gijon,1,1,D
+2019-01-12,Las Palmas,Osasuna,4,1,H
+2019-01-12,Reus,Numancia,1,1,D
+2019-01-12,Oviedo,Tenerife,1,0,H
+2019-01-12,Mallorca,Deportivo La Coruna,1,0,H
+2019-01-13,Cordoba,Rayo Majadahonda,1,1,D
+2019-01-13,Alcorcon,Almeria,0,0,D
+2019-01-13,Lugo,Extremadura,1,1,D
+2019-01-13,Zaragoza,Malaga,0,2,A
+2019-01-13,Elche,Gimnastic,1,0,H
+2019-01-19,Almeria,Cadiz,0,0,D
+2019-01-19,Numancia,Cordoba,3,2,H
+2019-01-19,Rayo Majadahonda,Zaragoza,2,2,D
+2019-01-19,Malaga,Lugo,2,1,H
+2019-01-19,Reus,Las Palmas,0,1,A
+2019-01-20,Osasuna,Mallorca,2,0,H
+2019-01-20,Sporting Gijon,Alcorcon,2,0,H
+2019-01-20,Deportivo La Coruna,Albacete,2,0,H
+2019-01-20,Tenerife,Gimnastic,2,0,H
+2019-01-20,Extremadura,Oviedo,0,2,A
+2019-01-21,Granada CF,Elche,2,1,H
+2019-01-25,Zaragoza,Oviedo,2,0,H
+2019-01-26,Almeria,Osasuna,0,1,A
+2019-01-26,Lugo,Rayo Majadahonda,3,2,H
+2019-01-26,Elche,Numancia,1,1,D
+2019-01-26,Tenerife,Malaga,0,0,D
+2019-01-26,Cadiz,Mallorca,1,1,D
+2019-01-27,Albacete,Reus,1,0,H
+2019-01-27,Granada CF,Extremadura,0,0,D
+2019-01-27,Alcorcon,Cordoba,2,1,H
+2019-01-27,Sporting Gijon,Deportivo La Coruna,1,2,A
+2019-01-27,Gimnastic,Las Palmas,0,0,D
+2019-02-01,Malaga,Almeria,1,1,D
+2019-02-02,Numancia,Lugo,3,0,H
+2019-02-02,Cordoba,Albacete,1,3,A
+2019-02-02,Rayo Majadahonda,Gimnastic,1,0,H
+2019-02-02,Deportivo La Coruna,Tenerife,0,0,D
+2019-02-03,Mallorca,Alcorcon,2,0,H
+2019-02-03,Oviedo,Cadiz,2,1,H
+2019-02-03,Osasuna,Granada CF,1,0,H
+2019-02-03,Reus,Elche,0,1,A
+2019-02-03,Extremadura,Sporting Gijon,0,3,A
+2019-02-04,Las Palmas,Zaragoza,1,1,D
+2019-02-08,Sporting Gijon,Osasuna,0,2,A
+2019-02-09,Gimnastic,Reus,1,0,H
+2019-02-09,Elche,Oviedo,1,2,A
+2019-02-09,Extremadura,Rayo Majadahonda,1,1,D
+2019-02-09,Tenerife,Cordoba,0,2,A
+2019-02-09,Lugo,Zaragoza,1,2,A
+2019-02-10,Alcorcon,Cadiz,1,2,A
+2019-02-10,Albacete,Mallorca,2,0,H
+2019-02-10,Granada CF,Deportivo La Coruna,0,1,A
+2019-02-10,Almeria,Numancia,1,0,H
+2019-02-10,Malaga,Las Palmas,0,0,D
+2019-02-15,Cordoba,Granada CF,1,2,A
+2019-02-16,Deportivo La Coruna,Gimnastic,1,1,D
+2019-02-16,Zaragoza,Albacete,0,0,D
+2019-02-16,Elche,Extremadura,2,0,H
+2019-02-16,Oviedo,Alcorcon,1,0,H
+2019-02-16,Cadiz,Tenerife,2,0,H
+2019-02-17,Mallorca,Lugo,3,0,H
+2019-02-17,Numancia,Osasuna,1,1,D
+2019-02-17,Reus,Almeria,0,1,A
+2019-02-17,Rayo Majadahonda,Malaga,0,1,A
+2019-02-17,Las Palmas,Sporting Gijon,1,0,H
+2019-02-22,Tenerife,Mallorca,2,2,D
+2019-02-23,Albacete,Oviedo,0,0,D
+2019-02-23,Gimnastic,Cadiz,2,3,A
+2019-02-23,Alcorcon,Las Palmas,2,0,H
+2019-02-23,Osasuna,Zaragoza,1,0,H
+2019-02-23,Granada CF,Reus,1,0,H
+2019-02-24,Sporting Gijon,Rayo Majadahonda,2,3,A
+2019-02-24,Almeria,Cordoba,3,1,H
+2019-02-24,Malaga,Deportivo La Coruna,0,0,D
+2019-02-24,Lugo,Elche,2,2,D
+2019-02-24,Extremadura,Numancia,0,1,A
+2019-03-02,Cadiz,Albacete,1,0,H
+2019-03-02,Cordoba,Malaga,1,1,D
+2019-03-02,Osasuna,Gimnastic,1,0,H
+2019-03-02,Reus,Tenerife,0,1,A
+2019-03-03,Mallorca,Elche,1,1,D
+2019-03-03,Numancia,Sporting Gijon,1,2,A
+2019-03-03,Oviedo,Lugo,1,1,D
+2019-03-03,Rayo Majadahonda,Granada CF,0,3,A
+2019-03-03,Las Palmas,Extremadura,1,1,D
+2019-03-03,Zaragoza,Almeria,1,2,A
+2019-03-04,Deportivo La Coruna,Alcorcon,2,2,D
+2019-03-09,Mallorca,Oviedo,1,0,H
+2019-03-09,Sporting Gijon,Almeria,1,0,H
+2019-03-09,Gimnastic,Albacete,1,0,H
+2019-03-09,Elche,Cadiz,1,0,H
+2019-03-09,Lugo,Reus,1,0,H
+2019-03-10,Rayo Majadahonda,Alcorcon,2,0,H
+2019-03-10,Extremadura,Cordoba,3,0,H
+2019-03-10,Granada CF,Zaragoza,1,0,H
+2019-03-10,Tenerife,Numancia,1,1,D
+2019-03-10,Deportivo La Coruna,Las Palmas,0,1,A
+2019-03-11,Malaga,Osasuna,1,2,A
+2019-03-16,Albacete,Extremadura,1,0,H
+2019-03-16,Cadiz,Lugo,1,1,D
+2019-03-16,Alcorcon,Tenerife,1,1,D
+2019-03-16,Zaragoza,Elche,1,0,H
+2019-03-16,Reus,Deportivo La Coruna,0,1,A
+2019-03-17,Oviedo,Gimnastic,2,0,H
+2019-03-17,Cordoba,Sporting Gijon,1,2,A
+2019-03-17,Almeria,Granada CF,0,0,D
+2019-03-17,Osasuna,Rayo Majadahonda,3,0,H
+2019-03-17,Las Palmas,Mallorca,1,2,A
+2019-03-18,Numancia,Malaga,1,1,D
+2019-03-22,Deportivo La Coruna,Almeria,0,0,D
+2019-03-22,Tenerife,Osasuna,3,2,H
+2019-03-23,Elche,Alcorcon,3,1,H
+2019-03-23,Lugo,Albacete,0,3,A
+2019-03-23,Extremadura,Reus,1,0,H
+2019-03-24,Rayo Majadahonda,Numancia,4,0,H
+2019-03-24,Gimnastic,Malaga,0,1,A
+2019-03-24,Cadiz,Cordoba,1,1,D
+2019-03-24,Granada CF,Las Palmas,1,1,D
+2019-03-24,Sporting Gijon,Oviedo,1,0,H
+2019-03-25,Mallorca,Zaragoza,3,0,H
+2019-03-29,Malaga,Sporting Gijon,1,1,D
+2019-03-30,Almeria,Rayo Majadahonda,2,2,D
+2019-03-30,Numancia,Granada CF,2,1,H
+2019-03-30,Albacete,Tenerife,2,2,D
+2019-03-30,Reus,Cadiz,0,1,A
+2019-03-31,Cordoba,Mallorca,3,2,H
+2019-03-31,Osasuna,Extremadura,1,0,H
+2019-03-31,Alcorcon,Lugo,0,0,D
+2019-03-31,Oviedo,Deportivo La Coruna,1,1,D
+2019-03-31,Las Palmas,Elche,0,1,A
+2019-04-01,Zaragoza,Gimnastic,3,0,H
+2019-04-05,Tenerife,Sporting Gijon,0,1,A
+2019-04-06,Deportivo La Coruna,Rayo Majadahonda,0,2,A
+2019-04-06,Granada CF,Malaga,1,0,H
+2019-04-06,Extremadura,Almeria,1,0,H
+2019-04-06,Oviedo,Las Palmas,1,1,D
+2019-04-06,Mallorca,Reus,1,0,H
+2019-04-07,Alcorcon,Albacete,0,1,A
+2019-04-07,Lugo,Osasuna,2,2,D
+2019-04-07,Gimnastic,Numancia,2,0,H
+2019-04-07,Elche,Cordoba,1,0,H
+2019-04-08,Cadiz,Zaragoza,3,3,D
+2019-04-12,Sporting Gijon,Granada CF,1,0,H
+2019-04-13,Malaga,Extremadura,1,2,A
+2019-04-13,Almeria,Gimnastic,3,0,H
+2019-04-13,Osasuna,Deportivo La Coruna,2,1,H
+2019-04-13,Rayo Majadahonda,Tenerife,1,3,A
+2019-04-13,Reus,Oviedo,0,1,A
+2019-04-14,Albacete,Elche,1,1,D
+2019-04-14,Numancia,Mallorca,1,1,D
+2019-04-14,Cordoba,Lugo,0,4,A
+2019-04-14,Las Palmas,Cadiz,0,3,A
+2019-04-14,Zaragoza,Alcorcon,0,2,A
+2019-04-19,Alcorcon,Malaga,1,4,A
+2019-04-20,Lugo,Granada CF,1,2,A
+2019-04-20,Gimnastic,Sporting Gijon,0,0,D
+2019-04-20,Albacete,Las Palmas,4,2,H
+2019-04-20,Mallorca,Rayo Majadahonda,2,0,H
+2019-04-20,Zaragoza,Reus,1,0,H
+2019-04-21,Cadiz,Numancia,2,1,H
+2019-04-21,Deportivo La Coruna,Extremadura,1,2,A
+2019-04-21,Oviedo,Cordoba,3,3,D
+2019-04-21,Tenerife,Almeria,1,3,A
+2019-04-22,Elche,Osasuna,1,2,A
+2019-04-26,Numancia,Deportivo La Coruna,1,2,A
+2019-04-27,Malaga,Mallorca,0,1,A
+2019-04-27,Almeria,Oviedo,0,1,A
+2019-04-27,Osasuna,Albacete,2,0,H
+2019-04-27,Extremadura,Tenerife,1,0,H
+2019-04-27,Reus,Alcorcon,0,1,A
+2019-04-28,Rayo Majadahonda,Cadiz,1,1,D
+2019-04-28,Sporting Gijon,Elche,1,1,D
+2019-04-28,Las Palmas,Lugo,4,1,H
+2019-04-28,Granada CF,Gimnastic,2,0,H
+2019-04-28,Cordoba,Zaragoza,0,3,A
+2019-05-04,Alcorcon,Osasuna,0,0,D
+2019-05-04,Gimnastic,Extremadura,0,1,A
+2019-05-04,Zaragoza,Deportivo La Coruna,0,1,A
+2019-05-04,Tenerife,Las Palmas,2,1,H
+2019-05-04,Cordoba,Reus,1,0,H
+2019-05-05,Lugo,Almeria,4,2,H
+2019-05-05,Mallorca,Sporting Gijon,2,1,H
+2019-05-05,Albacete,Numancia,0,0,D
+2019-05-05,Elche,Rayo Majadahonda,2,1,H
+2019-05-05,Oviedo,Granada CF,1,1,D
+2019-05-06,Cadiz,Malaga,1,1,D
+2019-05-10,Granada CF,Tenerife,2,1,H
+2019-05-11,Gimnastic,Mallorca,2,1,H
+2019-05-11,Sporting Gijon,Lugo,0,0,D
+2019-05-11,Numancia,Alcorcon,2,0,H
+2019-05-11,Extremadura,Zaragoza,0,3,A
+2019-05-11,Osasuna,Reus,1,0,H
+2019-05-12,Almeria,Elche,5,3,H
+2019-05-12,Deportivo La Coruna,Cadiz,1,1,D
+2019-05-12,Rayo Majadahonda,Albacete,2,3,A
+2019-05-12,Las Palmas,Cordoba,1,0,H
+2019-05-13,Malaga,Oviedo,3,0,H
+2019-05-17,Zaragoza,Sporting Gijon,4,2,H
+2019-05-18,Alcorcon,Extremadura,0,1,A
+2019-05-18,Elche,Tenerife,3,0,H
+2019-05-18,Reus,Malaga,0,1,A
+2019-05-19,Mallorca,Almeria,1,0,H
+2019-05-19,Oviedo,Numancia,1,0,H
+2019-05-19,Las Palmas,Rayo Majadahonda,3,2,H
+2019-05-19,Cadiz,Osasuna,0,0,D
+2019-05-19,Cordoba,Gimnastic,4,3,H
+2019-05-19,Lugo,Deportivo La Coruna,1,0,H
+2019-05-20,Albacete,Granada CF,0,1,A
+2019-05-24,Malaga,Zaragoza,3,1,H
+2019-05-25,Rayo Majadahonda,Cordoba,0,0,D
+2019-05-25,Osasuna,Las Palmas,2,0,H
+2019-05-25,Sporting Gijon,Albacete,0,2,A
+2019-05-25,Numancia,Reus,1,0,H
+2019-05-26,Almeria,Alcorcon,0,0,D
+2019-05-26,Gimnastic,Elche,3,3,D
+2019-05-26,Tenerife,Oviedo,2,1,H
+2019-05-26,Granada CF,Cadiz,1,1,D
+2019-05-26,Extremadura,Lugo,0,0,D
+2019-05-27,Deportivo La Coruna,Mallorca,1,0,H
+2019-05-31,Cordoba,Osasuna,2,3,A
+2019-06-01,Alcorcon,Gimnastic,0,1,A
+2019-06-01,Reus,Sporting Gijon,0,1,A
+2019-06-02,Las Palmas,Almeria,0,0,D
+2019-06-04,Lugo,Tenerife,0,0,D
+2019-06-04,Oviedo,Rayo Majadahonda,4,3,H
+2019-06-04,Albacete,Malaga,1,2,A
+2019-06-04,Cadiz,Extremadura,0,1,A
+2019-06-04,Zaragoza,Numancia,0,0,D
+2019-06-04,Elche,Deportivo La Coruna,0,0,D
+2019-06-04,Mallorca,Granada CF,1,1,D
+2019-06-08,Malaga,Elche,3,0,H
+2019-06-08,Deportivo La Coruna,Cordoba,2,0,H
+2019-06-08,Granada CF,Alcorcon,2,1,H
+2019-06-08,Almeria,Albacete,3,0,H
+2019-06-08,Osasuna,Oviedo,1,0,H
+2019-06-08,Sporting Gijon,Cadiz,1,0,H
+2019-06-08,Extremadura,Mallorca,0,0,D
+2019-06-08,Rayo Majadahonda,Reus,1,0,H
+2019-06-09,Gimnastic,Lugo,1,1,D
+2019-06-09,Numancia,Las Palmas,1,1,D
+2019-06-09,Tenerife,Zaragoza,1,0,H
+2019-06-12,Deportivo La Coruna,Malaga,4,2,H
+2019-06-13,Mallorca,Albacete,2,0,H
+2019-06-15,Malaga,Deportivo La Coruna,0,1,A
+2019-06-16,Albacete,Mallorca,1,0,H

@@ -1,0 +1,183 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2023-03-11,Valmiera / BSS,Rigas FS,0,0,D
+2023-03-11,Auda,Super Nova,2,0,H
+2023-03-12,Tukums,BFC Daugavpils,1,0,H
+2023-03-12,Riga,FS Jelgava,2,1,H
+2023-03-17,FS Jelgava,BFC Daugavpils,2,1,H
+2023-03-18,Metta / LU,Auda,0,2,A
+2023-03-18,Valmiera / BSS,FK Liepaja,0,1,A
+2023-03-18,Riga,Rigas FS,1,1,D
+2023-03-19,Super Nova,Tukums,2,0,H
+2023-04-01,BFC Daugavpils,Super Nova,3,0,H
+2023-04-01,FK Liepaja,Riga,0,3,A
+2023-04-01,FS Jelgava,Rigas FS,0,2,A
+2023-04-02,Tukums,Metta / LU,1,2,A
+2023-04-02,Auda,Valmiera / BSS,0,4,A
+2023-04-05,FS Jelgava,Super Nova,2,0,H
+2023-04-05,Rigas FS,FK Liepaja,2,0,H
+2023-04-06,Valmiera / BSS,Tukums,4,3,H
+2023-04-06,Riga,Auda,2,0,H
+2023-04-07,Metta / LU,BFC Daugavpils,3,2,H
+2023-04-09,FK Liepaja,FS Jelgava,3,2,H
+2023-04-10,Tukums,Riga,0,2,A
+2023-04-10,Auda,Rigas FS,0,0,D
+2023-04-11,Super Nova,Metta / LU,0,3,A
+2023-04-11,BFC Daugavpils,Valmiera / BSS,1,1,D
+2023-04-14,FK Liepaja,Auda,1,1,D
+2023-04-14,Rigas FS,Tukums,1,0,H
+2023-04-15,BFC Daugavpils,Riga,1,1,D
+2023-04-15,FS Jelgava,Metta / LU,2,1,H
+2023-04-16,Super Nova,Valmiera / BSS,1,0,H
+2023-04-18,Tukums,FK Liepaja,0,3,A
+2023-04-19,BFC Daugavpils,Rigas FS,0,5,A
+2023-04-19,FS Jelgava,Auda,0,0,D
+2023-04-20,Super Nova,Riga,0,4,A
+2023-04-20,Metta / LU,Valmiera / BSS,0,1,A
+2023-04-23,FK Liepaja,BFC Daugavpils,1,0,H
+2023-04-24,Auda,Tukums,0,3,A
+2023-04-24,Valmiera / BSS,FS Jelgava,2,0,H
+2023-04-24,Rigas FS,Super Nova,2,1,H
+2023-04-25,Riga,Metta / LU,4,0,H
+2023-04-28,Super Nova,FK Liepaja,2,6,A
+2023-04-28,BFC Daugavpils,Auda,0,2,A
+2023-04-29,FS Jelgava,Tukums,2,2,D
+2023-04-29,Metta / LU,Rigas FS,0,0,D
+2023-04-30,Riga,Valmiera / BSS,3,0,H
+2023-05-02,Super Nova,Auda,0,2,A
+2023-05-03,FK Liepaja,Metta / LU,1,1,D
+2023-05-03,BFC Daugavpils,Tukums,3,3,D
+2023-05-04,Rigas FS,Valmiera / BSS,2,1,H
+2023-05-04,FS Jelgava,Riga,1,3,A
+2023-05-07,Auda,FK Liepaja,0,4,A
+2023-05-08,Valmiera / BSS,Super Nova,3,1,H
+2023-05-08,Riga,BFC Daugavpils,1,0,H
+2023-05-09,Tukums,Rigas FS,1,7,A
+2023-05-09,FS Jelgava,Metta / LU,2,3,A
+2023-05-12,FK Liepaja,Riga,0,4,A
+2023-05-12,Valmiera / BSS,Auda,1,1,D
+2023-05-13,Metta / LU,Tukums,3,2,H
+2023-05-13,Rigas FS,FS Jelgava,4,0,H
+2023-05-14,Super Nova,BFC Daugavpils,0,4,A
+2023-05-16,Auda,Riga,0,2,A
+2023-05-17,Tukums,Valmiera / BSS,0,0,D
+2023-05-17,FK Liepaja,Rigas FS,0,3,A
+2023-05-18,Super Nova,FS Jelgava,2,2,D
+2023-05-18,BFC Daugavpils,Metta / LU,1,1,D
+2023-05-21,Riga,Tukums,5,1,H
+2023-05-21,Rigas FS,Auda,2,0,H
+2023-05-22,Valmiera / BSS,BFC Daugavpils,1,0,H
+2023-05-22,FS Jelgava,FK Liepaja,2,1,H
+2023-05-23,Metta / LU,Super Nova,4,1,H
+2023-05-26,BFC Daugavpils,FS Jelgava,5,2,H
+2023-05-26,Rigas FS,Riga,0,0,D
+2023-05-27,Tukums,Super Nova,3,2,H
+2023-05-27,FK Liepaja,Valmiera / BSS,1,2,A
+2023-05-28,Auda,Metta / LU,3,1,H
+2023-05-30,Rigas FS,BFC Daugavpils,3,1,H
+2023-05-31,Valmiera / BSS,Metta / LU,1,1,D
+2023-05-31,Riga,Super Nova,5,1,H
+2023-06-01,FK Liepaja,Tukums,0,1,A
+2023-06-01,Auda,FS Jelgava,1,0,H
+2023-06-04,Metta / LU,Riga,0,2,A
+2023-06-04,Super Nova,Rigas FS,1,6,A
+2023-06-05,BFC Daugavpils,FK Liepaja,1,2,A
+2023-06-05,FS Jelgava,Valmiera / BSS,2,0,H
+2023-06-06,Tukums,Auda,2,2,D
+2023-06-09,Valmiera / BSS,Riga,1,0,H
+2023-06-09,Metta / LU,Rigas FS,0,6,A
+2023-06-09,FK Liepaja,Super Nova,2,1,H
+2023-06-10,Auda,BFC Daugavpils,1,1,D
+2023-06-10,Tukums,FS Jelgava,2,0,H
+2023-06-25,FK Liepaja,Metta / LU,3,2,H
+2023-06-25,Rigas FS,Valmiera / BSS,3,0,H
+2023-06-25,Super Nova,Auda,0,5,A
+2023-06-25,FS Jelgava,Riga,1,3,A
+2023-06-26,BFC Daugavpils,Tukums,3,1,H
+2023-06-29,Valmiera / BSS,FK Liepaja,1,1,D
+2023-06-29,Metta / LU,Auda,0,1,A
+2023-06-30,Super Nova,Tukums,2,5,A
+2023-06-30,BFC Daugavpils,FS Jelgava,1,1,D
+2023-06-30,Riga,Rigas FS,2,2,D
+2023-07-03,Tukums,Metta / LU,1,1,D
+2023-07-03,Auda,Valmiera / BSS,0,0,D
+2023-07-04,Rigas FS,FS Jelgava,1,0,H
+2023-07-04,Riga,FK Liepaja,3,1,H
+2023-07-05,BFC Daugavpils,Super Nova,2,0,H
+2023-07-07,Valmiera / BSS,Tukums,6,0,H
+2023-07-08,FK Liepaja,Rigas FS,1,1,D
+2023-07-08,Riga,Auda,1,0,H
+2023-07-09,FS Jelgava,Super Nova,2,2,D
+2023-07-10,Metta / LU,BFC Daugavpils,0,0,D
+2023-07-21,Super Nova,Metta / LU,1,3,A
+2023-07-21,FS Jelgava,FK Liepaja,3,2,H
+2023-07-22,Valmiera / BSS,BFC Daugavpils,0,1,A
+2023-07-23,Auda,Rigas FS,2,5,A
+2023-07-23,Tukums,Riga,0,6,A
+2023-07-26,Metta / LU,FK Liepaja,1,1,D
+2023-07-29,Rigas FS,Tukums,7,0,H
+2023-07-30,Auda,FK Liepaja,1,1,D
+2023-07-30,Riga,BFC Daugavpils,3,0,H
+2023-07-31,Metta / LU,FS Jelgava,0,1,A
+2023-08-05,Tukums,FK Liepaja,1,2,A
+2023-08-06,Auda,FS Jelgava,3,0,H
+2023-08-06,Super Nova,Riga,1,5,A
+2023-08-06,Valmiera / BSS,Metta / LU,2,1,H
+2023-08-08,BFC Daugavpils,Rigas FS,0,1,A
+2023-08-12,FK Liepaja,BFC Daugavpils,2,1,H
+2023-08-12,Tukums,Auda,2,2,D
+2023-08-13,Valmiera / BSS,FS Jelgava,2,2,D
+2023-08-13,Rigas FS,Super Nova,5,0,H
+2023-08-13,Riga,Metta / LU,1,0,H
+2023-08-26,FS Jelgava,Tukums,2,0,H
+2023-08-26,Riga,Valmiera / BSS,3,0,H
+2023-08-27,BFC Daugavpils,Auda,0,2,A
+2023-08-27,Rigas FS,Metta / LU,5,0,H
+2023-08-28,Super Nova,FK Liepaja,0,2,A
+2023-09-01,Tukums,BFC Daugavpils,3,0,H
+2023-09-01,Riga,FS Jelgava,3,5,A
+2023-09-02,Valmiera / BSS,Rigas FS,1,0,H
+2023-09-02,Metta / LU,FK Liepaja,1,1,D
+2023-09-02,Auda,Super Nova,1,0,H
+2023-09-15,Auda,Metta / LU,3,1,H
+2023-09-16,FS Jelgava,BFC Daugavpils,0,0,D
+2023-09-16,Rigas FS,Riga,0,0,D
+2023-09-17,FK Liepaja,Valmiera / BSS,1,4,A
+2023-09-17,Tukums,Super Nova,1,0,H
+2023-09-23,Metta / LU,Tukums,1,1,D
+2023-09-23,Super Nova,BFC Daugavpils,0,1,A
+2023-09-24,Valmiera / BSS,Auda,1,2,A
+2023-09-24,FS Jelgava,Rigas FS,0,1,A
+2023-09-25,Riga,FK Liepaja,3,1,H
+2023-09-27,Valmiera / BSS,Super Nova,1,1,D
+2023-09-29,BFC Daugavpils,Metta / LU,4,2,H
+2023-09-30,Rigas FS,FK Liepaja,3,1,H
+2023-09-30,Auda,Riga,0,1,A
+2023-10-01,Super Nova,FS Jelgava,1,1,D
+2023-10-01,Tukums,Valmiera / BSS,3,2,H
+2023-10-06,Riga,Tukums,4,0,H
+2023-10-07,BFC Daugavpils,Valmiera / BSS,0,0,D
+2023-10-07,FK Liepaja,FS Jelgava,1,1,D
+2023-10-07,Rigas FS,Auda,3,0,H
+2023-10-08,Metta / LU,Super Nova,0,1,A
+2023-10-21,BFC Daugavpils,Riga,0,2,A
+2023-10-21,FK Liepaja,Auda,1,1,D
+2023-10-21,Tukums,Rigas FS,4,5,A
+2023-10-22,Metta / LU,FS Jelgava,0,1,A
+2023-10-22,Super Nova,Valmiera / BSS,0,2,A
+2023-10-28,FK Liepaja,Tukums,1,0,H
+2023-10-28,FS Jelgava,Auda,0,2,A
+2023-10-29,Metta / LU,Valmiera / BSS,4,1,H
+2023-10-29,Riga,Super Nova,1,1,D
+2023-10-29,Rigas FS,BFC Daugavpils,3,1,H
+2023-11-05,Auda,Tukums,1,0,H
+2023-11-05,Super Nova,Rigas FS,0,4,A
+2023-11-05,BFC Daugavpils,FK Liepaja,2,1,H
+2023-11-05,Metta / LU,Riga,1,3,A
+2023-11-05,FS Jelgava,Valmiera / BSS,0,1,A
+2023-11-11,FK Liepaja,Super Nova,2,0,H
+2023-11-11,Auda,BFC Daugavpils,1,0,H
+2023-11-11,Tukums,FS Jelgava,0,0,D
+2023-11-11,Valmiera / BSS,Riga,1,1,D
+2023-11-11,Rigas FS,Metta / LU,1,0,H
+2023-11-22,Metta / LU,Skanste,6,1,H
+2023-11-25,Skanste,Metta / LU,1,2,A

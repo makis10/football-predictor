@@ -1,0 +1,193 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2021-08-20,AEK Larnaca,Doxa,1,1,D
+2021-08-21,Pafos,Apoel Nicosia,4,0,H
+2021-08-22,Olympiakos,Aris,1,2,A
+2021-08-23,Apollon Limassol,Ethnikos Achna,4,2,H
+2021-09-11,Ethnikos Achna,PAEEK,1,3,A
+2021-09-11,Aris,Apollon Limassol,0,1,A
+2021-09-12,Doxa,Anorthosis,2,0,H
+2021-09-12,AEK Larnaca,Omonia Nicosia,2,1,H
+2021-09-13,Apoel Nicosia,Olympiakos,0,1,A
+2021-09-13,AEL,Pafos,4,0,H
+2021-09-17,PAEEK,Aris,0,0,D
+2021-09-18,Pafos,AEK Larnaca,1,1,D
+2021-09-18,Olympiakos,AEL,1,1,D
+2021-09-19,Apollon Limassol,Apoel Nicosia,2,1,H
+2021-09-20,Omonia Nicosia,Doxa,2,1,H
+2021-09-20,Anorthosis,Ethnikos Achna,2,1,H
+2021-09-24,Doxa,Ethnikos Achna,0,0,D
+2021-09-25,Aris,Anorthosis,3,2,H
+2021-09-26,AEL,Apollon Limassol,0,1,A
+2021-09-26,Omonia Nicosia,Pafos,1,1,D
+2021-09-27,AEK Larnaca,Olympiakos,1,0,H
+2021-09-27,Apoel Nicosia,PAEEK,1,0,H
+2021-10-01,PAEEK,AEL,1,3,A
+2021-10-01,Apollon Limassol,AEK Larnaca,1,4,A
+2021-10-02,Ethnikos Achna,Aris,0,3,A
+2021-10-02,Pafos,Doxa,1,1,D
+2021-10-03,Anorthosis,Apoel Nicosia,2,1,H
+2021-10-03,Olympiakos,Omonia Nicosia,1,0,H
+2021-10-16,AEK Larnaca,PAEEK,3,0,H
+2021-10-16,Pafos,Olympiakos,1,1,D
+2021-10-17,Omonia Nicosia,Apollon Limassol,1,0,H
+2021-10-17,AEL,Anorthosis,2,1,H
+2021-10-18,Doxa,Aris,1,2,A
+2021-10-18,Apoel Nicosia,Ethnikos Achna,2,1,H
+2021-10-22,Olympiakos,Doxa,1,0,H
+2021-10-23,Ethnikos Achna,AEL,2,2,D
+2021-10-23,Apollon Limassol,Pafos,2,0,H
+2021-10-24,Aris,Apoel Nicosia,0,1,A
+2021-10-25,Anorthosis,AEK Larnaca,1,2,A
+2021-10-25,PAEEK,Omonia Nicosia,1,0,H
+2021-10-29,Omonia Nicosia,Anorthosis,0,1,A
+2021-10-30,Doxa,Apoel Nicosia,2,2,D
+2021-10-30,AEL,Aris,0,1,A
+2021-10-31,AEK Larnaca,Ethnikos Achna,1,0,H
+2021-10-31,Olympiakos,Apollon Limassol,0,2,A
+2021-11-01,Pafos,PAEEK,2,0,H
+2021-11-05,Apollon Limassol,Doxa,3,0,H
+2021-11-05,PAEEK,Olympiakos,0,0,D
+2021-11-06,Apoel Nicosia,AEL,3,0,H
+2021-11-06,Aris,AEK Larnaca,1,0,H
+2021-11-07,Anorthosis,Pafos,1,0,H
+2021-11-07,Ethnikos Achna,Omonia Nicosia,0,2,A
+2021-11-20,Olympiakos,Anorthosis,3,2,H
+2021-11-20,Pafos,Ethnikos Achna,3,0,H
+2021-11-21,Omonia Nicosia,Aris,3,0,H
+2021-11-21,Doxa,AEL,0,0,D
+2021-11-22,Apollon Limassol,PAEEK,3,1,H
+2021-11-22,AEK Larnaca,Apoel Nicosia,0,0,D
+2021-11-26,Ethnikos Achna,Olympiakos,1,0,H
+2021-11-27,Aris,Pafos,0,0,D
+2021-11-27,PAEEK,Doxa,1,2,A
+2021-11-28,AEL,AEK Larnaca,0,2,A
+2021-11-29,Anorthosis,Apollon Limassol,1,1,D
+2021-12-03,Aris,Olympiakos,1,0,H
+2021-12-04,Doxa,AEK Larnaca,1,4,A
+2021-12-04,Anorthosis,PAEEK,2,3,A
+2021-12-05,Apoel Nicosia,Pafos,1,1,D
+2021-12-05,AEL,Omonia Nicosia,0,1,A
+2021-12-06,Ethnikos Achna,Apollon Limassol,0,1,A
+2021-12-10,Pafos,AEL,1,0,H
+2021-12-11,PAEEK,Ethnikos Achna,0,2,A
+2021-12-12,Apollon Limassol,Aris,0,2,A
+2021-12-12,Olympiakos,Apoel Nicosia,1,1,D
+2021-12-13,Omonia Nicosia,AEK Larnaca,1,1,D
+2021-12-13,Anorthosis,Doxa,2,0,H
+2021-12-17,Aris,PAEEK,1,1,D
+2021-12-18,Ethnikos Achna,Anorthosis,0,2,A
+2021-12-18,Apoel Nicosia,Apollon Limassol,1,1,D
+2021-12-19,AEL,Olympiakos,3,0,H
+2021-12-19,Doxa,Omonia Nicosia,2,1,H
+2021-12-20,AEK Larnaca,Pafos,1,3,A
+2021-12-22,PAEEK,Anorthosis,0,2,A
+2021-12-22,Omonia Nicosia,AEL,1,0,H
+2021-12-26,Apoel Nicosia,Omonia Nicosia,4,2,H
+2022-01-03,Ethnikos Achna,Doxa,0,1,A
+2022-01-05,Pafos,Omonia Nicosia,1,1,D
+2022-01-08,Aris,Ethnikos Achna,2,1,H
+2022-01-08,AEK Larnaca,Apollon Limassol,2,1,H
+2022-01-10,Omonia Nicosia,Olympiakos,1,0,H
+2022-01-14,Aris,Doxa,1,0,H
+2022-01-14,PAEEK,AEK Larnaca,2,2,D
+2022-01-15,Olympiakos,Pafos,1,2,A
+2022-01-15,Ethnikos Achna,Apoel Nicosia,0,3,A
+2022-01-16,Anorthosis,AEL,2,1,H
+2022-01-16,Apollon Limassol,Omonia Nicosia,2,0,H
+2022-01-22,Pafos,Apollon Limassol,0,1,A
+2022-01-22,AEL,Ethnikos Achna,1,0,H
+2022-01-23,Apoel Nicosia,Aris,1,1,D
+2022-01-23,Doxa,Olympiakos,0,0,D
+2022-01-24,Omonia Nicosia,PAEEK,2,1,H
+2022-01-24,AEK Larnaca,Anorthosis,1,1,D
+2022-01-28,PAEEK,Pafos,0,2,A
+2022-01-29,Ethnikos Achna,AEK Larnaca,0,0,D
+2022-01-29,Anorthosis,Omonia Nicosia,1,1,D
+2022-01-30,Apoel Nicosia,Doxa,2,0,H
+2022-01-30,Apollon Limassol,Olympiakos,2,1,H
+2022-01-31,Aris,AEL,1,2,A
+2022-02-05,AEK Larnaca,Aris,0,0,D
+2022-02-06,Pafos,Anorthosis,1,1,D
+2022-02-06,AEL,Apoel Nicosia,2,3,A
+2022-02-07,Omonia Nicosia,Ethnikos Achna,0,2,A
+2022-02-07,Doxa,Apollon Limassol,0,3,A
+2022-02-09,Olympiakos,AEK Larnaca,0,0,D
+2022-02-09,PAEEK,Apoel Nicosia,1,3,A
+2022-02-10,Apollon Limassol,AEL,2,1,H
+2022-02-10,Anorthosis,Aris,3,1,H
+2022-02-13,Ethnikos Achna,Pafos,0,1,A
+2022-02-14,Anorthosis,Olympiakos,3,1,H
+2022-02-14,Apoel Nicosia,AEK Larnaca,1,0,H
+2022-02-15,AEL,Doxa,3,2,H
+2022-02-15,PAEEK,Apollon Limassol,2,2,D
+2022-02-16,Aris,Omonia Nicosia,0,2,A
+2022-02-17,Apoel Nicosia,Anorthosis,0,2,A
+2022-02-18,Doxa,Pafos,1,1,D
+2022-02-18,AEL,PAEEK,0,0,D
+2022-02-22,Olympiakos,PAEEK,1,0,H
+2022-02-25,Omonia Nicosia,Apoel Nicosia,2,4,A
+2022-02-25,Pafos,Aris,1,1,D
+2022-02-26,AEK Larnaca,AEL,3,1,H
+2022-02-26,Apollon Limassol,Anorthosis,2,2,D
+2022-02-27,Doxa,PAEEK,1,0,H
+2022-02-27,Olympiakos,Ethnikos Achna,0,0,D
+2022-03-04,Doxa,Olympiakos,1,1,D
+2022-03-05,Apoel Nicosia,Aris,1,1,D
+2022-03-05,Anorthosis,AEK Larnaca,1,3,A
+2022-03-07,Pafos,Apollon Limassol,0,0,D
+2022-03-07,AEL,PAEEK,2,1,H
+2022-03-11,Olympiakos,AEL,0,1,A
+2022-03-12,Omonia Nicosia,Doxa,2,2,D
+2022-03-12,Aris,Pafos,2,1,H
+2022-03-13,AEK Larnaca,Apoel Nicosia,1,2,A
+2022-03-13,Apollon Limassol,Anorthosis,1,1,D
+2022-03-14,PAEEK,Ethnikos Achna,0,4,A
+2022-03-18,Ethnikos Achna,Doxa,0,0,D
+2022-03-18,PAEEK,Olympiakos,0,1,A
+2022-03-19,AEL,Omonia Nicosia,1,1,D
+2022-03-19,Pafos,Anorthosis,2,2,D
+2022-03-20,Apoel Nicosia,Apollon Limassol,0,0,D
+2022-03-20,Aris,AEK Larnaca,2,0,H
+2022-04-02,Ethnikos Achna,Olympiakos,1,0,H
+2022-04-02,Anorthosis,Apoel Nicosia,4,1,H
+2022-04-03,Doxa,AEL,0,1,A
+2022-04-03,Apollon Limassol,Aris,1,1,D
+2022-04-04,Omonia Nicosia,PAEEK,4,2,H
+2022-04-04,Pafos,AEK Larnaca,2,0,H
+2022-04-08,Olympiakos,Omonia Nicosia,3,0,H
+2022-04-09,AEL,Ethnikos Achna,2,0,H
+2022-04-09,AEK Larnaca,Apollon Limassol,3,3,D
+2022-04-10,Apoel Nicosia,Pafos,2,1,H
+2022-04-10,Aris,Anorthosis,1,1,D
+2022-04-11,PAEEK,Doxa,0,3,A
+2022-04-16,Olympiakos,Doxa,1,0,H
+2022-04-16,Apollon Limassol,Pafos,0,2,A
+2022-04-17,Omonia Nicosia,Ethnikos Achna,1,0,H
+2022-04-17,Aris,Apoel Nicosia,1,2,A
+2022-04-18,AEK Larnaca,Anorthosis,1,0,H
+2022-04-18,PAEEK,AEL,0,3,A
+2022-04-20,Ethnikos Achna,Omonia Nicosia,0,0,D
+2022-04-29,AEL,Olympiakos,0,4,A
+2022-04-29,Pafos,Aris,1,1,D
+2022-04-30,Ethnikos Achna,PAEEK,0,0,D
+2022-04-30,Anorthosis,Apollon Limassol,1,1,D
+2022-05-01,Apoel Nicosia,AEK Larnaca,1,1,D
+2022-05-01,Doxa,Omonia Nicosia,0,2,A
+2022-05-06,Olympiakos,PAEEK,4,3,H
+2022-05-07,Omonia Nicosia,AEL,3,2,H
+2022-05-08,AEK Larnaca,Aris,1,1,D
+2022-05-08,Apollon Limassol,Apoel Nicosia,3,2,H
+2022-05-09,Anorthosis,Pafos,1,0,H
+2022-05-09,Doxa,Ethnikos Achna,2,1,H
+2022-05-14,PAEEK,Omonia Nicosia,2,5,A
+2022-05-14,AEK Larnaca,Pafos,2,0,H
+2022-05-15,Apoel Nicosia,Anorthosis,1,1,D
+2022-05-15,Aris,Apollon Limassol,1,4,A
+2022-05-16,AEL,Doxa,3,1,H
+2022-05-16,Olympiakos,Ethnikos Achna,1,1,D
+2022-05-20,Omonia Nicosia,Olympiakos,1,1,D
+2022-05-20,Ethnikos Achna,AEL,1,2,A
+2022-05-21,Doxa,PAEEK,0,0,D
+2022-05-21,Anorthosis,Aris,0,3,A
+2022-05-22,Apollon Limassol,AEK Larnaca,0,1,A
+2022-05-22,Pafos,Apoel Nicosia,3,1,H

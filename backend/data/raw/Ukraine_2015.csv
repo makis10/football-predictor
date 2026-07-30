@@ -1,0 +1,183 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2015-07-17,Metalurh Zaporizhya,Zorya Luhansk,0,6,A
+2015-07-18,Olimpik Donetsk,Chornomorets,2,2,D
+2015-07-18,Metalist,Karpaty,2,0,H
+2015-07-18,Vorskla Poltava,Volyn,1,1,D
+2015-07-19,Shakhtar Donetsk,Oleksandria,2,0,H
+2015-07-19,Stal Kamianske,Dynamo Kyiv,1,2,A
+2015-07-19,Hoverla,Dnipro Dnipropetrovsk,1,1,D
+2015-07-23,Volyn,Shakhtar Donetsk,1,4,A
+2015-07-25,Karpaty,Stal Kamianske,1,0,H
+2015-07-25,Hoverla,Vorskla Poltava,1,1,D
+2015-07-25,Dynamo Kyiv,Olimpik Donetsk,2,0,H
+2015-07-25,Zorya Luhansk,Metalist,0,0,D
+2015-07-26,Oleksandria,Metalurh Zaporizhya,1,0,H
+2015-07-26,Dnipro Dnipropetrovsk,Chornomorets,4,2,H
+2015-08-01,Olimpik Donetsk,Karpaty,0,1,A
+2015-08-01,Shakhtar Donetsk,Hoverla,2,0,H
+2015-08-02,Metalurh Zaporizhya,Volyn,0,2,A
+2015-08-02,Metalist,Oleksandria,1,1,D
+2015-08-02,Vorskla Poltava,Dnipro Dnipropetrovsk,1,1,D
+2015-08-02,Chornomorets,Dynamo Kyiv,0,2,A
+2015-08-02,Stal Kamianske,Zorya Luhansk,2,0,H
+2015-08-07,Volyn,Metalist,2,2,D
+2015-08-08,Hoverla,Metalurh Zaporizhya,1,1,D
+2015-08-08,Karpaty,Chornomorets,4,0,H
+2015-08-08,Oleksandria,Stal Kamianske,0,1,A
+2015-08-09,Zorya Luhansk,Olimpik Donetsk,4,0,H
+2015-08-09,Vorskla Poltava,Shakhtar Donetsk,2,2,D
+2015-08-09,Dnipro Dnipropetrovsk,Dynamo Kyiv,1,2,A
+2015-08-14,Shakhtar Donetsk,Dnipro Dnipropetrovsk,0,2,A
+2015-08-15,Olimpik Donetsk,Oleksandria,1,0,H
+2015-08-15,Metalurh Zaporizhya,Vorskla Poltava,1,1,D
+2015-08-15,Dynamo Kyiv,Karpaty,3,0,H
+2015-08-16,Stal Kamianske,Volyn,1,2,A
+2015-08-16,Chornomorets,Zorya Luhansk,0,2,A
+2015-08-16,Metalist,Hoverla,2,2,D
+2015-08-28,Shakhtar Donetsk,Metalurh Zaporizhya,2,0,H
+2015-08-29,Hoverla,Stal Kamianske,0,0,D
+2015-08-29,Vorskla Poltava,Metalist,1,0,H
+2015-08-29,Volyn,Olimpik Donetsk,1,0,H
+2015-08-30,Oleksandria,Chornomorets,0,0,D
+2015-08-30,Zorya Luhansk,Dynamo Kyiv,0,0,D
+2015-08-30,Dnipro Dnipropetrovsk,Karpaty,2,0,H
+2015-09-11,Metalist,Shakhtar Donetsk,0,5,A
+2015-09-12,Olimpik Donetsk,Hoverla,0,1,A
+2015-09-12,Dynamo Kyiv,Oleksandria,3,0,H
+2015-09-12,Metalurh Zaporizhya,Dnipro Dnipropetrovsk,1,4,A
+2015-09-13,Stal Kamianske,Vorskla Poltava,1,2,A
+2015-09-13,Chornomorets,Volyn,1,2,A
+2015-09-13,Karpaty,Zorya Luhansk,1,1,D
+2015-09-19,Shakhtar Donetsk,Stal Kamianske,2,0,H
+2015-09-19,Vorskla Poltava,Olimpik Donetsk,2,1,H
+2015-09-19,Metalurh Zaporizhya,Metalist,0,0,D
+2015-09-20,Hoverla,Chornomorets,1,1,D
+2015-09-20,Oleksandria,Karpaty,4,1,H
+2015-09-20,Volyn,Dynamo Kyiv,0,2,A
+2015-09-20,Dnipro Dnipropetrovsk,Zorya Luhansk,0,3,A
+2015-09-26,Olimpik Donetsk,Shakhtar Donetsk,2,3,A
+2015-09-26,Dynamo Kyiv,Hoverla,2,0,H
+2015-09-27,Stal Kamianske,Metalurh Zaporizhya,3,0,H
+2015-09-27,Zorya Luhansk,Oleksandria,1,1,D
+2015-09-27,Chornomorets,Vorskla Poltava,0,0,D
+2015-09-27,Karpaty,Volyn,0,2,A
+2015-09-27,Metalist,Dnipro Dnipropetrovsk,1,2,A
+2015-10-03,Metalist,Stal Kamianske,1,1,D
+2015-10-03,Shakhtar Donetsk,Chornomorets,2,0,H
+2015-10-03,Metalurh Zaporizhya,Olimpik Donetsk,0,3,A
+2015-10-04,Hoverla,Karpaty,0,2,A
+2015-10-04,Dnipro Dnipropetrovsk,Oleksandria,2,0,H
+2015-10-04,Vorskla Poltava,Dynamo Kyiv,0,4,A
+2015-10-04,Volyn,Zorya Luhansk,0,3,A
+2015-10-16,Dynamo Kyiv,Shakhtar Donetsk,0,3,A
+2015-10-17,Stal Kamianske,Dnipro Dnipropetrovsk,0,6,A
+2015-10-18,Olimpik Donetsk,Metalist,3,0,H
+2015-10-18,Chornomorets,Metalurh Zaporizhya,5,2,H
+2015-10-18,Oleksandria,Volyn,3,1,H
+2015-10-18,Zorya Luhansk,Hoverla,2,1,H
+2015-10-18,Karpaty,Vorskla Poltava,1,3,A
+2015-10-30,Zorya Luhansk,Shakhtar Donetsk,1,7,A
+2015-10-31,Olimpik Donetsk,Dnipro Dnipropetrovsk,1,1,D
+2015-10-31,Dynamo Kyiv,Metalist,2,0,H
+2015-10-31,Karpaty,Metalurh Zaporizhya,1,0,H
+2015-11-01,Chornomorets,Stal Kamianske,1,1,D
+2015-11-01,Oleksandria,Vorskla Poltava,1,1,D
+2015-11-01,Volyn,Hoverla,0,0,D
+2015-11-07,Zorya Luhansk,Metalurh Zaporizhya,4,1,H
+2015-11-07,Chornomorets,Olimpik Donetsk,0,2,A
+2015-11-07,Karpaty,Metalist,1,1,D
+2015-11-07,Oleksandria,Shakhtar Donetsk,2,3,A
+2015-11-08,Volyn,Vorskla Poltava,2,1,H
+2015-11-08,Dnipro Dnipropetrovsk,Hoverla,2,0,H
+2015-11-08,Dynamo Kyiv,Stal Kamianske,2,0,H
+2015-11-20,Olimpik Donetsk,Dynamo Kyiv,0,3,A
+2015-11-21,Vorskla Poltava,Hoverla,2,1,H
+2015-11-21,Chornomorets,Dnipro Dnipropetrovsk,0,0,D
+2015-11-21,Shakhtar Donetsk,Volyn,4,0,H
+2015-11-22,Metalurh Zaporizhya,Oleksandria,0,2,A
+2015-11-22,Stal Kamianske,Karpaty,1,1,D
+2015-11-22,Metalist,Zorya Luhansk,0,1,A
+2015-11-28,Zorya Luhansk,Stal Kamianske,2,1,H
+2015-11-28,Karpaty,Olimpik Donetsk,4,1,H
+2015-11-28,Oleksandria,Metalist,2,0,H
+2015-11-29,Volyn,Metalurh Zaporizhya,9,1,H
+2015-11-29,Hoverla,Shakhtar Donetsk,1,6,A
+2015-11-29,Dynamo Kyiv,Chornomorets,2,1,H
+2015-11-30,Dnipro Dnipropetrovsk,Vorskla Poltava,0,2,A
+2015-12-03,Shakhtar Donetsk,Karpaty,3,0,H
+2015-12-04,Metalurh Zaporizhya,Dynamo Kyiv,0,6,A
+2015-12-05,Vorskla Poltava,Zorya Luhansk,0,2,A
+2015-12-05,Dnipro Dnipropetrovsk,Volyn,0,1,A
+2015-12-05,Hoverla,Oleksandria,1,2,A
+2015-12-06,Stal Kamianske,Olimpik Donetsk,1,0,H
+2015-12-06,Metalist,Chornomorets,2,2,D
+2016-03-05,Metalurh Zaporizhya,Hoverla,0,0,D
+2016-03-05,Chornomorets,Karpaty,0,0,D
+2016-03-05,Stal Kamianske,Oleksandria,2,2,D
+2016-03-05,Dynamo Kyiv,Dnipro Dnipropetrovsk,2,0,H
+2016-03-06,Olimpik Donetsk,Zorya Luhansk,1,1,D
+2016-03-06,Shakhtar Donetsk,Vorskla Poltava,3,1,H
+2016-03-06,Metalist,Volyn,3,0,H
+2016-03-11,Karpaty,Dynamo Kyiv,1,2,A
+2016-03-12,Vorskla Poltava,Metalurh Zaporizhya,0,0,D
+2016-03-12,Oleksandria,Olimpik Donetsk,0,0,D
+2016-03-12,Zorya Luhansk,Chornomorets,4,0,H
+2016-03-13,Volyn,Stal Kamianske,1,0,H
+2016-03-13,Hoverla,Metalist,1,0,H
+2016-03-13,Dnipro Dnipropetrovsk,Shakhtar Donetsk,4,1,H
+2016-03-19,Chornomorets,Oleksandria,1,2,A
+2016-03-19,Stal Kamianske,Hoverla,1,0,H
+2016-03-19,Metalurh Zaporizhya,Shakhtar Donetsk,0,0,D
+2016-03-19,Metalist,Vorskla Poltava,0,3,A
+2016-03-20,Olimpik Donetsk,Volyn,1,1,D
+2016-03-20,Karpaty,Dnipro Dnipropetrovsk,0,1,A
+2016-03-20,Dynamo Kyiv,Zorya Luhansk,1,0,H
+2016-04-01,Shakhtar Donetsk,Metalist,8,1,H
+2016-04-01,Dnipro Dnipropetrovsk,Metalurh Zaporizhya,0,0,D
+2016-04-02,Vorskla Poltava,Stal Kamianske,0,0,D
+2016-04-02,Zorya Luhansk,Karpaty,4,1,H
+2016-04-02,Oleksandria,Dynamo Kyiv,0,2,A
+2016-04-03,Volyn,Chornomorets,1,1,D
+2016-04-03,Hoverla,Olimpik Donetsk,0,2,A
+2016-04-08,Metalist,Metalurh Zaporizhya,0,0,D
+2016-04-09,Olimpik Donetsk,Vorskla Poltava,1,1,D
+2016-04-09,Chornomorets,Hoverla,1,0,H
+2016-04-10,Karpaty,Oleksandria,2,2,D
+2016-04-10,Stal Kamianske,Shakhtar Donetsk,3,3,D
+2016-04-10,Dynamo Kyiv,Volyn,3,0,H
+2016-04-10,Zorya Luhansk,Dnipro Dnipropetrovsk,1,2,A
+2016-04-15,Metalurh Zaporizhya,Stal Kamianske,0,0,D
+2016-04-16,Oleksandria,Zorya Luhansk,2,0,H
+2016-04-16,Dnipro Dnipropetrovsk,Metalist,5,0,H
+2016-04-16,Hoverla,Dynamo Kyiv,0,2,A
+2016-04-17,Volyn,Karpaty,0,0,D
+2016-04-17,Shakhtar Donetsk,Olimpik Donetsk,3,0,H
+2016-04-17,Vorskla Poltava,Chornomorets,2,0,H
+2016-04-22,Olimpik Donetsk,Metalurh Zaporizhya,0,0,D
+2016-04-23,Karpaty,Hoverla,3,0,H
+2016-04-23,Stal Kamianske,Metalist,0,0,D
+2016-04-23,Chornomorets,Shakhtar Donetsk,1,1,D
+2016-04-24,Zorya Luhansk,Volyn,1,1,D
+2016-04-24,Dynamo Kyiv,Vorskla Poltava,1,0,H
+2016-04-24,Oleksandria,Dnipro Dnipropetrovsk,0,4,A
+2016-04-29,Volyn,Oleksandria,0,0,D
+2016-04-29,Metalurh Zaporizhya,Chornomorets,0,0,D
+2016-04-30,Hoverla,Zorya Luhansk,0,4,A
+2016-04-30,Vorskla Poltava,Karpaty,3,0,H
+2016-04-30,Dnipro Dnipropetrovsk,Stal Kamianske,2,0,H
+2016-04-30,Metalist,Olimpik Donetsk,1,0,H
+2016-05-01,Shakhtar Donetsk,Dynamo Kyiv,3,0,H
+2016-05-06,Dynamo Kyiv,Metalurh Zaporizhya,0,0,D
+2016-05-07,Chornomorets,Metalist,0,1,A
+2016-05-07,Zorya Luhansk,Vorskla Poltava,1,2,A
+2016-05-07,Oleksandria,Hoverla,2,0,H
+2016-05-07,Volyn,Dnipro Dnipropetrovsk,2,3,A
+2016-05-08,Olimpik Donetsk,Stal Kamianske,0,2,A
+2016-05-08,Karpaty,Shakhtar Donetsk,1,2,A
+2016-05-14,Hoverla,Volyn,1,4,A
+2016-05-14,Stal Kamianske,Chornomorets,0,1,A
+2016-05-14,Metalist,Dynamo Kyiv,1,4,A
+2016-05-14,Metalurh Zaporizhya,Karpaty,0,0,D
+2016-05-15,Shakhtar Donetsk,Zorya Luhansk,2,3,A
+2016-05-15,Vorskla Poltava,Oleksandria,0,1,A
+2016-05-15,Dnipro Dnipropetrovsk,Olimpik Donetsk,1,1,D

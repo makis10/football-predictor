@@ -1,0 +1,113 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2019-03-16,Zimbru,Petrocub,0,1,A
+2019-03-16,Sheriff Tiraspol,Speranta Nisporeni,1,0,H
+2019-03-17,Dinamo-Auto,Codru Lozova,3,0,H
+2019-03-17,Milsami Orhei,Sfintul Gheorghe,0,3,A
+2019-03-29,Speranta Nisporeni,Sfintul Gheorghe,2,2,D
+2019-03-29,Sheriff Tiraspol,Zimbru,3,0,H
+2019-03-30,Codru Lozova,Milsami Orhei,0,3,A
+2019-03-30,Petrocub,Dinamo-Auto,0,1,A
+2019-04-02,Sfintul Gheorghe,Codru Lozova,2,0,H
+2019-04-02,Zimbru,Speranta Nisporeni,0,2,A
+2019-04-03,Dinamo-Auto,Sheriff Tiraspol,0,4,A
+2019-04-03,Milsami Orhei,Petrocub,2,0,H
+2019-04-06,Zimbru,Dinamo-Auto,1,1,D
+2019-04-06,Speranta Nisporeni,Codru Lozova,2,1,H
+2019-04-07,Sheriff Tiraspol,Milsami Orhei,0,1,A
+2019-04-07,Petrocub,Sfintul Gheorghe,2,2,D
+2019-04-12,Sfintul Gheorghe,Sheriff Tiraspol,0,3,A
+2019-04-12,Milsami Orhei,Zimbru,3,0,H
+2019-04-13,Dinamo-Auto,Speranta Nisporeni,0,3,A
+2019-04-13,Petrocub,Codru Lozova,1,1,D
+2019-04-20,Dinamo-Auto,Milsami Orhei,0,0,D
+2019-04-20,Sheriff Tiraspol,Codru Lozova,2,1,H
+2019-04-21,Zimbru,Sfintul Gheorghe,1,2,A
+2019-04-21,Speranta Nisporeni,Petrocub,1,1,D
+2019-04-26,Codru Lozova,Zimbru,0,3,A
+2019-04-26,Petrocub,Sheriff Tiraspol,1,0,H
+2019-04-27,Sfintul Gheorghe,Dinamo-Auto,3,1,H
+2019-04-27,Milsami Orhei,Speranta Nisporeni,1,1,D
+2019-05-03,Sfintul Gheorghe,Milsami Orhei,1,1,D
+2019-05-03,Speranta Nisporeni,Sheriff Tiraspol,0,4,A
+2019-05-04,Codru Lozova,Dinamo-Auto,2,5,A
+2019-05-04,Petrocub,Zimbru,1,0,H
+2019-05-11,Dinamo-Auto,Petrocub,0,1,A
+2019-05-11,Milsami Orhei,Codru Lozova,0,0,D
+2019-05-12,Sfintul Gheorghe,Speranta Nisporeni,0,0,D
+2019-05-12,Zimbru,Sheriff Tiraspol,0,4,A
+2019-05-18,Codru Lozova,Sfintul Gheorghe,1,2,A
+2019-05-18,Sheriff Tiraspol,Dinamo-Auto,3,0,H
+2019-05-19,Speranta Nisporeni,Zimbru,1,0,H
+2019-05-19,Petrocub,Milsami Orhei,1,1,D
+2019-05-25,Dinamo-Auto,Zimbru,0,0,D
+2019-05-25,Codru Lozova,Speranta Nisporeni,1,3,A
+2019-05-26,Sfintul Gheorghe,Petrocub,1,0,H
+2019-05-26,Milsami Orhei,Sheriff Tiraspol,1,2,A
+2019-05-30,Codru Lozova,Petrocub,0,1,A
+2019-05-30,Speranta Nisporeni,Dinamo-Auto,0,1,A
+2019-05-31,Zimbru,Milsami Orhei,0,1,A
+2019-05-31,Sheriff Tiraspol,Sfintul Gheorghe,5,0,H
+2019-06-15,Codru Lozova,Sheriff Tiraspol,0,2,A
+2019-06-15,Petrocub,Speranta Nisporeni,4,1,H
+2019-06-16,Sfintul Gheorghe,Zimbru,2,0,H
+2019-06-16,Milsami Orhei,Dinamo-Auto,3,1,H
+2019-06-21,Speranta Nisporeni,Milsami Orhei,0,1,A
+2019-06-21,Sheriff Tiraspol,Petrocub,2,0,H
+2019-06-22,Dinamo-Auto,Sfintul Gheorghe,3,0,H
+2019-06-22,Zimbru,Codru Lozova,1,1,D
+2019-06-29,Dinamo-Auto,Codru Lozova,4,0,H
+2019-06-29,Sheriff Tiraspol,Speranta Nisporeni,3,0,H
+2019-06-30,Milsami Orhei,Sfintul Gheorghe,0,2,A
+2019-06-30,Zimbru,Petrocub,0,2,A
+2019-08-03,Codru Lozova,Milsami Orhei,0,2,A
+2019-08-03,Petrocub,Dinamo-Auto,3,0,H
+2019-08-04,Speranta Nisporeni,Sfintul Gheorghe,1,2,A
+2019-08-04,Sheriff Tiraspol,Zimbru,3,0,H
+2019-08-10,Sfintul Gheorghe,Codru Lozova,1,0,H
+2019-08-10,Milsami Orhei,Petrocub,0,3,A
+2019-08-11,Dinamo-Auto,Sheriff Tiraspol,0,3,A
+2019-08-11,Zimbru,Speranta Nisporeni,2,1,H
+2019-08-17,Speranta Nisporeni,Codru Lozova,1,0,H
+2019-08-17,Zimbru,Dinamo-Auto,2,2,D
+2019-08-18,Petrocub,Sfintul Gheorghe,0,2,A
+2019-08-18,Sheriff Tiraspol,Milsami Orhei,2,1,H
+2019-08-24,Milsami Orhei,Zimbru,1,1,D
+2019-08-24,Sheriff Tiraspol,Sfintul Gheorghe,2,1,H
+2019-08-25,Codru Lozova,Petrocub,0,1,A
+2019-08-25,Dinamo-Auto,Speranta Nisporeni,3,4,A
+2019-08-31,Dinamo-Auto,Milsami Orhei,1,0,H
+2019-08-31,Sheriff Tiraspol,Codru Lozova,2,0,H
+2019-09-01,Zimbru,Sfintul Gheorghe,0,1,A
+2019-09-01,Speranta Nisporeni,Petrocub,1,3,A
+2019-09-14,Codru Lozova,Zimbru,0,2,A
+2019-09-14,Petrocub,Sheriff Tiraspol,0,0,D
+2019-09-15,Sfintul Gheorghe,Dinamo-Auto,1,0,H
+2019-09-15,Milsami Orhei,Speranta Nisporeni,0,0,D
+2019-09-20,Sfintul Gheorghe,Milsami Orhei,3,0,H
+2019-09-20,Petrocub,Zimbru,1,0,H
+2019-09-21,Codru Lozova,Dinamo-Auto,0,1,A
+2019-09-21,Speranta Nisporeni,Sheriff Tiraspol,0,0,D
+2019-09-28,Dinamo-Auto,Petrocub,2,0,H
+2019-09-28,Zimbru,Sheriff Tiraspol,1,2,A
+2019-09-29,Sfintul Gheorghe,Speranta Nisporeni,0,0,D
+2019-09-29,Milsami Orhei,Codru Lozova,3,0,H
+2019-10-06,Speranta Nisporeni,Zimbru,0,0,D
+2019-10-06,Codru Lozova,Sfintul Gheorghe,0,4,A
+2019-10-06,Sheriff Tiraspol,Dinamo-Auto,2,0,H
+2019-10-06,Petrocub,Milsami Orhei,1,1,D
+2019-10-19,Dinamo-Auto,Zimbru,4,0,H
+2019-10-19,Milsami Orhei,Sheriff Tiraspol,1,1,D
+2019-10-20,Codru Lozova,Speranta Nisporeni,0,0,D
+2019-10-20,Sfintul Gheorghe,Petrocub,0,2,A
+2019-10-25,Speranta Nisporeni,Dinamo-Auto,1,1,D
+2019-10-25,Petrocub,Codru Lozova,1,0,H
+2019-10-26,Sfintul Gheorghe,Sheriff Tiraspol,0,1,A
+2019-10-26,Zimbru,Milsami Orhei,1,2,A
+2019-11-02,Milsami Orhei,Dinamo-Auto,0,2,A
+2019-11-02,Petrocub,Speranta Nisporeni,2,2,D
+2019-11-02,Codru Lozova,Sheriff Tiraspol,0,3,A
+2019-11-02,Sfintul Gheorghe,Zimbru,2,1,H
+2019-11-09,Sheriff Tiraspol,Petrocub,1,1,D
+2019-11-09,Speranta Nisporeni,Milsami Orhei,2,1,H
+2019-11-09,Dinamo-Auto,Sfintul Gheorghe,2,1,H
+2019-11-09,Zimbru,Codru Lozova,0,0,D

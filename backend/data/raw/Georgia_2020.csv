@@ -1,0 +1,95 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2020-02-29,Dinamo Tbilisi,Telavi,0,0,D
+2020-02-29,Dinamo Batumi,Merani Tbilisi,0,0,D
+2020-03-01,Saburtalo,Chikhura Sachkhere,2,1,H
+2020-03-01,Torpedo Kutaisi,Dila,0,2,A
+2020-03-01,Lokomotivi Tbilisi,Samtredia,3,1,H
+2020-03-07,Chikhura Sachkhere,Lokomotivi Tbilisi,1,3,A
+2020-03-07,Samtredia,Torpedo Kutaisi,1,0,H
+2020-03-07,Merani Tbilisi,Saburtalo,0,0,D
+2020-03-08,Telavi,Dila,1,1,D
+2020-03-08,Dinamo Tbilisi,Dinamo Batumi,1,1,D
+2020-06-25,Saburtalo,Dinamo Tbilisi,0,3,A
+2020-06-25,Dinamo Batumi,Telavi,1,1,D
+2020-06-26,Lokomotivi Tbilisi,Merani Tbilisi,1,1,D
+2020-06-27,Dila,Samtredia,1,1,D
+2020-06-28,Torpedo Kutaisi,Chikhura Sachkhere,2,2,D
+2020-07-02,Dinamo Batumi,Saburtalo,1,1,D
+2020-07-03,Dinamo Tbilisi,Lokomotivi Tbilisi,4,0,H
+2020-07-04,Chikhura Sachkhere,Dila,0,2,A
+2020-07-04,Telavi,Samtredia,3,1,H
+2020-07-05,Merani Tbilisi,Torpedo Kutaisi,0,2,A
+2020-07-09,Samtredia,Chikhura Sachkhere,0,0,D
+2020-07-09,Lokomotivi Tbilisi,Dinamo Batumi,1,4,A
+2020-07-10,Saburtalo,Telavi,1,0,H
+2020-07-11,Dila,Merani Tbilisi,4,0,H
+2020-07-12,Torpedo Kutaisi,Dinamo Tbilisi,0,0,D
+2020-07-16,Telavi,Chikhura Sachkhere,2,0,H
+2020-07-17,Merani Tbilisi,Samtredia,1,2,A
+2020-07-18,Saburtalo,Lokomotivi Tbilisi,0,0,D
+2020-07-18,Dinamo Batumi,Torpedo Kutaisi,2,0,H
+2020-07-19,Dinamo Tbilisi,Dila,1,2,A
+2020-07-23,Chikhura Sachkhere,Merani Tbilisi,3,0,H
+2020-07-24,Torpedo Kutaisi,Saburtalo,0,4,A
+2020-07-25,Samtredia,Dinamo Tbilisi,0,4,A
+2020-07-25,Lokomotivi Tbilisi,Telavi,1,1,D
+2020-07-26,Dila,Dinamo Batumi,1,1,D
+2020-07-31,Telavi,Merani Tbilisi,0,0,D
+2020-08-01,Dinamo Tbilisi,Chikhura Sachkhere,1,0,H
+2020-08-01,Lokomotivi Tbilisi,Torpedo Kutaisi,1,2,A
+2020-08-02,Saburtalo,Dila,1,1,D
+2020-08-02,Dinamo Batumi,Samtredia,2,0,H
+2020-08-06,Torpedo Kutaisi,Telavi,1,1,D
+2020-08-07,Merani Tbilisi,Dinamo Tbilisi,1,2,A
+2020-08-09,Chikhura Sachkhere,Dinamo Batumi,0,4,A
+2020-08-10,Dila,Lokomotivi Tbilisi,0,1,A
+2020-08-11,Samtredia,Saburtalo,1,2,A
+2020-08-12,Telavi,Dinamo Tbilisi,0,0,D
+2020-08-16,Merani Tbilisi,Dinamo Batumi,1,2,A
+2020-08-17,Samtredia,Lokomotivi Tbilisi,0,0,D
+2020-08-18,Chikhura Sachkhere,Saburtalo,2,8,A
+2020-08-19,Dila,Torpedo Kutaisi,3,1,H
+2020-09-09,Lokomotivi Tbilisi,Chikhura Sachkhere,4,1,H
+2020-09-12,Dinamo Batumi,Dinamo Tbilisi,1,3,A
+2020-09-13,Saburtalo,Merani Tbilisi,0,0,D
+2020-09-13,Dila,Telavi,0,0,D
+2020-09-13,Torpedo Kutaisi,Samtredia,2,1,H
+2020-10-02,Telavi,Dinamo Batumi,1,3,A
+2020-10-03,Samtredia,Dila,1,0,H
+2020-10-03,Merani Tbilisi,Lokomotivi Tbilisi,0,4,A
+2020-10-04,Chikhura Sachkhere,Torpedo Kutaisi,2,2,D
+2020-10-17,Samtredia,Telavi,0,0,D
+2020-10-17,Dila,Chikhura Sachkhere,6,1,H
+2020-10-17,Torpedo Kutaisi,Merani Tbilisi,1,0,H
+2020-10-18,Saburtalo,Dinamo Batumi,0,1,A
+2020-10-23,Dinamo Tbilisi,Saburtalo,3,1,H
+2020-10-25,Chikhura Sachkhere,Samtredia,0,1,A
+2020-10-26,Merani Tbilisi,Dila,0,0,D
+2020-10-28,Telavi,Saburtalo,1,1,D
+2020-11-03,Chikhura Sachkhere,Telavi,1,2,A
+2020-11-03,Dila,Dinamo Tbilisi,0,3,A
+2020-11-03,Lokomotivi Tbilisi,Saburtalo,2,1,H
+2020-11-04,Samtredia,Merani Tbilisi,2,0,H
+2020-11-08,Lokomotivi Tbilisi,Dinamo Tbilisi,0,2,A
+2020-11-21,Saburtalo,Torpedo Kutaisi,1,0,H
+2020-11-21,Telavi,Lokomotivi Tbilisi,1,1,D
+2020-11-21,Dinamo Batumi,Dila,1,0,H
+2020-11-22,Merani Tbilisi,Chikhura Sachkhere,1,2,A
+2020-11-26,Dinamo Tbilisi,Torpedo Kutaisi,2,1,H
+2020-11-26,Dinamo Batumi,Lokomotivi Tbilisi,1,2,A
+2020-11-30,Samtredia,Dinamo Batumi,1,2,A
+2020-11-30,Chikhura Sachkhere,Dinamo Tbilisi,2,0,H
+2020-12-01,Torpedo Kutaisi,Lokomotivi Tbilisi,1,5,A
+2020-12-01,Dila,Saburtalo,4,3,H
+2020-12-02,Merani Tbilisi,Telavi,1,6,A
+2020-12-05,Torpedo Kutaisi,Dinamo Batumi,1,2,A
+2020-12-05,Dinamo Tbilisi,Samtredia,1,0,H
+2020-12-10,Saburtalo,Samtredia,2,1,H
+2020-12-10,Telavi,Torpedo Kutaisi,1,1,D
+2020-12-10,Dinamo Batumi,Chikhura Sachkhere,0,0,D
+2020-12-10,Dinamo Tbilisi,Merani Tbilisi,3,0,H
+2020-12-10,Lokomotivi Tbilisi,Dila,1,2,A
+2020-12-15,Gagra,Torpedo Kutaisi,0,2,A
+2020-12-15,Chikhura Sachkhere,Samgurali,0,2,A
+2020-12-19,Samgurali,Chikhura Sachkhere,1,0,H
+2020-12-19,Torpedo Kutaisi,Gagra,1,1,D

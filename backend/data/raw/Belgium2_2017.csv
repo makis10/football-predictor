@@ -1,0 +1,127 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2017-08-04,Beerschot VA,Union St. Gilloise,3,0,H
+2017-08-05,Tubize,Roeselare,1,3,A
+2017-08-05,OH Leuven,Lierse,2,2,D
+2017-08-06,KVC Westerlo,Cercle Brugge,1,2,A
+2017-08-11,Cercle Brugge,Union St. Gilloise,2,0,H
+2017-08-12,Roeselare,OH Leuven,3,1,H
+2017-08-12,KVC Westerlo,Tubize,1,1,D
+2017-08-13,Lierse,Beerschot VA,2,2,D
+2017-08-18,Lierse,Roeselare,2,2,D
+2017-08-19,Union St. Gilloise,KVC Westerlo,3,0,H
+2017-08-19,OH Leuven,Cercle Brugge,7,1,H
+2017-08-20,Beerschot VA,Tubize,1,0,H
+2017-09-01,Roeselare,Beerschot VA,0,4,A
+2017-09-02,KVC Westerlo,OH Leuven,2,2,D
+2017-09-02,Cercle Brugge,Lierse,2,0,H
+2017-09-03,Tubize,Union St. Gilloise,0,0,D
+2017-09-08,OH Leuven,Tubize,2,0,H
+2017-09-09,Lierse,KVC Westerlo,2,2,D
+2017-09-09,Union St. Gilloise,Roeselare,4,0,H
+2017-09-10,Cercle Brugge,Beerschot VA,0,1,A
+2017-09-15,Union St. Gilloise,OH Leuven,0,0,D
+2017-09-16,Beerschot VA,KVC Westerlo,2,2,D
+2017-09-16,Tubize,Lierse,2,0,H
+2017-09-17,Roeselare,Cercle Brugge,2,1,H
+2017-09-23,Cercle Brugge,Tubize,4,0,H
+2017-09-23,Lierse,Union St. Gilloise,2,1,H
+2017-09-24,OH Leuven,Beerschot VA,1,1,D
+2017-09-24,KVC Westerlo,Roeselare,4,0,H
+2017-09-29,Union St. Gilloise,Cercle Brugge,1,2,A
+2017-09-30,OH Leuven,Roeselare,2,0,H
+2017-09-30,Tubize,KVC Westerlo,1,2,A
+2017-10-01,Beerschot VA,Lierse,4,0,H
+2017-10-03,Cercle Brugge,OH Leuven,0,3,A
+2017-10-04,KVC Westerlo,Union St. Gilloise,0,3,A
+2017-10-04,Tubize,Beerschot VA,0,1,A
+2017-10-05,Roeselare,Lierse,2,0,H
+2017-10-07,Beerschot VA,Cercle Brugge,0,3,A
+2017-10-08,Roeselare,Union St. Gilloise,1,0,H
+2017-10-08,Lierse,Tubize,1,1,D
+2017-10-08,OH Leuven,KVC Westerlo,2,1,H
+2017-10-13,Tubize,OH Leuven,1,2,A
+2017-10-14,Cercle Brugge,Roeselare,1,1,D
+2017-10-15,KVC Westerlo,Beerschot VA,0,0,D
+2017-10-16,Union St. Gilloise,Lierse,3,2,H
+2017-10-21,Lierse,Cercle Brugge,3,2,H
+2017-10-21,Roeselare,KVC Westerlo,0,0,D
+2017-10-22,Beerschot VA,OH Leuven,2,2,D
+2017-10-23,Union St. Gilloise,Tubize,1,2,A
+2017-10-27,Beerschot VA,Roeselare,5,0,H
+2017-10-28,KVC Westerlo,Lierse,0,1,A
+2017-10-28,OH Leuven,Union St. Gilloise,1,0,H
+2017-10-29,Tubize,Cercle Brugge,1,1,D
+2017-11-05,Roeselare,Tubize,1,0,H
+2017-11-05,Cercle Brugge,KVC Westerlo,3,1,H
+2017-11-05,Lierse,OH Leuven,2,1,H
+2017-11-05,Union St. Gilloise,Beerschot VA,0,3,A
+2017-11-11,Tubize,Lierse,1,2,A
+2017-11-11,KVC Westerlo,Union St. Gilloise,0,1,A
+2017-11-12,Cercle Brugge,Beerschot VA,4,0,H
+2017-11-12,OH Leuven,Roeselare,1,1,D
+2017-11-17,Lierse,Cercle Brugge,1,0,H
+2017-11-18,Roeselare,KVC Westerlo,2,1,H
+2017-11-18,Beerschot VA,OH Leuven,1,2,A
+2017-11-19,Union St. Gilloise,Tubize,1,1,D
+2017-11-24,Tubize,Cercle Brugge,1,1,D
+2017-11-25,Union St. Gilloise,OH Leuven,0,0,D
+2017-11-25,Roeselare,Lierse,1,2,A
+2017-11-26,KVC Westerlo,Beerschot VA,1,1,D
+2017-12-01,Beerschot VA,Roeselare,1,0,H
+2017-12-02,Lierse,KVC Westerlo,2,0,H
+2017-12-02,Cercle Brugge,Union St. Gilloise,2,2,D
+2017-12-03,OH Leuven,Tubize,1,1,D
+2017-12-08,Roeselare,Cercle Brugge,0,3,A
+2017-12-09,KVC Westerlo,OH Leuven,1,0,H
+2017-12-09,Union St. Gilloise,Lierse,1,0,H
+2017-12-15,OH Leuven,Lierse,2,1,H
+2017-12-16,Beerschot VA,Union St. Gilloise,2,1,H
+2017-12-16,KVC Westerlo,Cercle Brugge,2,3,A
+2017-12-17,Roeselare,Tubize,1,2,A
+2018-01-05,Cercle Brugge,OH Leuven,1,0,H
+2018-01-06,Lierse,Beerschot VA,2,1,H
+2018-01-07,Tubize,KVC Westerlo,2,1,H
+2018-01-07,Union St. Gilloise,Roeselare,1,2,A
+2018-01-10,Tubize,Beerschot VA,1,2,A
+2018-01-12,KVC Westerlo,Roeselare,0,0,D
+2018-01-13,Beerschot VA,Cercle Brugge,2,3,A
+2018-01-14,Lierse,Tubize,2,1,H
+2018-01-14,OH Leuven,Union St. Gilloise,3,1,H
+2018-01-19,Cercle Brugge,Lierse,4,1,H
+2018-01-20,Union St. Gilloise,KVC Westerlo,1,1,D
+2018-01-20,Roeselare,Beerschot VA,0,0,D
+2018-01-21,Tubize,OH Leuven,0,1,A
+2018-01-26,OH Leuven,KVC Westerlo,0,1,A
+2018-01-27,Cercle Brugge,Roeselare,1,0,H
+2018-01-27,Beerschot VA,Tubize,1,0,H
+2018-01-28,Lierse,Union St. Gilloise,1,0,H
+2018-02-02,OH Leuven,Cercle Brugge,2,2,D
+2018-02-03,Tubize,Roeselare,0,0,D
+2018-02-03,KVC Westerlo,Lierse,6,0,H
+2018-02-04,Union St. Gilloise,Beerschot VA,1,0,H
+2018-02-09,Beerschot VA,KVC Westerlo,0,0,D
+2018-02-10,Roeselare,Union St. Gilloise,1,4,A
+2018-02-10,Cercle Brugge,Tubize,0,0,D
+2018-02-11,Lierse,OH Leuven,0,1,A
+2018-02-16,Lierse,Roeselare,1,2,A
+2018-02-17,Union St. Gilloise,Cercle Brugge,1,1,D
+2018-02-17,OH Leuven,Beerschot VA,1,1,D
+2018-02-18,KVC Westerlo,Tubize,0,0,D
+2018-02-25,Tubize,Union St. Gilloise,1,1,D
+2018-02-25,Beerschot VA,Lierse,1,1,D
+2018-02-25,Roeselare,OH Leuven,1,1,D
+2018-02-25,Cercle Brugge,KVC Westerlo,1,1,D
+2018-03-04,Beerschot VA,Cercle Brugge,1,0,H
+2018-03-10,Cercle Brugge,Beerschot VA,3,1,H
+2018-03-23,KVC Westerlo,Union St. Gilloise,1,0,H
+2018-03-25,Roeselare,Tubize,0,0,D
+2018-03-30,Tubize,KVC Westerlo,0,2,A
+2018-04-02,Union St. Gilloise,Roeselare,0,1,A
+2018-04-06,Union St. Gilloise,Tubize,1,1,D
+2018-04-08,KVC Westerlo,Roeselare,0,0,D
+2018-04-13,Tubize,Union St. Gilloise,0,1,A
+2018-04-15,Roeselare,KVC Westerlo,0,0,D
+2018-04-20,Union St. Gilloise,KVC Westerlo,0,2,A
+2018-04-22,Tubize,Roeselare,1,3,A
+2018-04-29,KVC Westerlo,Tubize,1,1,D
+2018-04-29,Roeselare,Union St. Gilloise,1,0,H

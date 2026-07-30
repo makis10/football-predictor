@@ -1,0 +1,383 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2017-07-28,Nimes,Reims,0,1,A
+2017-07-28,Orleans,Nancy,3,1,H
+2017-07-28,Valenciennes,Gazelec FC Ajaccio,1,1,D
+2017-07-28,Stade Brestois 29,Chateauroux,2,3,A
+2017-07-28,Niort,Ajaccio,0,0,D
+2017-07-28,Paris FC,Clermont Foot,0,0,D
+2017-07-28,Sochaux,Bourg-en-bresse 01,2,0,H
+2017-07-28,Tours,Le Havre,0,3,A
+2017-07-29,Lorient,Quevilly,1,1,D
+2017-07-31,Auxerre,Lens,1,0,H
+2017-08-04,Ajaccio,Stade Brestois 29,2,1,H
+2017-08-04,Clermont Foot,Tours,2,0,H
+2017-08-04,Gazelec FC Ajaccio,Lorient,0,0,D
+2017-08-04,Nancy,Niort,0,0,D
+2017-08-04,Chateauroux,Valenciennes,0,1,A
+2017-08-04,Le Havre,Auxerre,4,1,H
+2017-08-04,Lens,Nimes,1,2,A
+2017-08-04,Bourg-en-bresse 01,Paris FC,1,2,A
+2017-08-04,Quevilly,Sochaux,1,1,D
+2017-08-05,Reims,Orleans,2,0,H
+2017-08-11,Orleans,Ajaccio,0,0,D
+2017-08-11,Valenciennes,Clermont Foot,0,0,D
+2017-08-11,Stade Brestois 29,Gazelec FC Ajaccio,0,0,D
+2017-08-11,Niort,Auxerre,2,0,H
+2017-08-11,Paris FC,Le Havre,0,3,A
+2017-08-11,Quevilly,Bourg-en-bresse 01,1,4,A
+2017-08-11,Tours,Reims,0,1,A
+2017-08-12,Sochaux,Lens,3,2,H
+2017-08-14,Lorient,Chateauroux,3,0,H
+2017-08-14,Nimes,Nancy,0,0,D
+2017-08-18,Reims,Bourg-en-bresse 01,3,0,H
+2017-08-18,Ajaccio,Paris FC,2,0,H
+2017-08-18,Clermont Foot,Lorient,0,2,A
+2017-08-18,Gazelec FC Ajaccio,Quevilly,1,0,H
+2017-08-18,Nancy,Sochaux,2,2,D
+2017-08-18,Auxerre,Orleans,1,3,A
+2017-08-18,Le Havre,Valenciennes,1,0,H
+2017-08-18,Niort,Tours,2,1,H
+2017-08-19,Lens,Stade Brestois 29,2,4,A
+2017-08-21,Chateauroux,Nimes,1,0,H
+2017-08-25,Nimes,Le Havre,1,0,H
+2017-08-25,Valenciennes,Niort,4,1,H
+2017-08-25,Stade Brestois 29,Nancy,2,1,H
+2017-08-25,Paris FC,Auxerre,2,1,H
+2017-08-25,Sochaux,Chateauroux,1,5,A
+2017-08-25,Bourg-en-bresse 01,Gazelec FC Ajaccio,2,0,H
+2017-08-25,Quevilly,Clermont Foot,0,2,A
+2017-08-25,Tours,Ajaccio,1,3,A
+2017-08-26,Lorient,Reims,2,1,H
+2017-08-28,Orleans,Lens,2,0,H
+2017-09-08,Ajaccio,Nimes,1,4,A
+2017-09-08,Clermont Foot,Bourg-en-bresse 01,4,1,H
+2017-09-08,Gazelec FC Ajaccio,Sochaux,0,1,A
+2017-09-08,Nancy,Valenciennes,3,0,H
+2017-09-08,Chateauroux,Quevilly,3,2,H
+2017-09-08,Auxerre,Tours,1,1,D
+2017-09-08,Le Havre,Orleans,1,1,D
+2017-09-08,Niort,Paris FC,0,2,A
+2017-09-09,Lens,Lorient,2,3,A
+2017-09-11,Reims,Stade Brestois 29,0,1,A
+2017-09-15,Nimes,Auxerre,3,0,H
+2017-09-15,Lorient,Ajaccio,2,0,H
+2017-09-15,Gazelec FC Ajaccio,Clermont Foot,2,1,H
+2017-09-15,Orleans,Niort,3,1,H
+2017-09-15,Valenciennes,Lens,1,0,H
+2017-09-15,Stade Brestois 29,Le Havre,1,0,H
+2017-09-15,Paris FC,Tours,2,0,H
+2017-09-15,Bourg-en-bresse 01,Chateauroux,3,0,H
+2017-09-15,Quevilly,Nancy,2,0,H
+2017-09-16,Sochaux,Reims,2,4,A
+2017-09-18,Lens,Quevilly,2,0,H
+2017-09-19,Reims,Gazelec FC Ajaccio,5,0,H
+2017-09-19,Ajaccio,Valenciennes,3,0,H
+2017-09-19,Nancy,Bourg-en-bresse 01,2,1,H
+2017-09-19,Chateauroux,Clermont Foot,0,2,A
+2017-09-19,Auxerre,Lorient,1,0,H
+2017-09-19,Le Havre,Sochaux,1,0,H
+2017-09-19,Niort,Stade Brestois 29,0,2,A
+2017-09-19,Paris FC,Orleans,1,0,H
+2017-09-19,Tours,Nimes,0,4,A
+2017-09-22,Nimes,Niort,1,5,A
+2017-09-22,Gazelec FC Ajaccio,Chateauroux,2,1,H
+2017-09-22,Orleans,Tours,1,1,D
+2017-09-22,Valenciennes,Auxerre,0,2,A
+2017-09-22,Stade Brestois 29,Paris FC,1,1,D
+2017-09-22,Sochaux,Ajaccio,1,6,A
+2017-09-22,Bourg-en-bresse 01,Le Havre,2,1,H
+2017-09-22,Quevilly,Reims,1,2,A
+2017-09-23,Lorient,Nancy,0,0,D
+2017-09-25,Clermont Foot,Lens,1,0,H
+2017-09-29,Ajaccio,Bourg-en-bresse 01,2,0,H
+2017-09-29,Nancy,Chateauroux,4,1,H
+2017-09-29,Orleans,Valenciennes,3,4,A
+2017-09-29,Auxerre,Sochaux,2,0,H
+2017-09-29,Niort,Quevilly,2,1,H
+2017-09-29,Paris FC,Nimes,2,1,H
+2017-09-29,Lens,Gazelec FC Ajaccio,2,0,H
+2017-09-29,Tours,Stade Brestois 29,1,2,A
+2017-09-30,Reims,Clermont Foot,1,0,H
+2017-10-02,Le Havre,Lorient,3,2,H
+2017-10-13,Nimes,Orleans,4,1,H
+2017-10-13,Gazelec FC Ajaccio,Nancy,2,1,H
+2017-10-13,Valenciennes,Tours,2,0,H
+2017-10-13,Stade Brestois 29,Auxerre,1,1,D
+2017-10-13,Chateauroux,Reims,3,1,H
+2017-10-13,Sochaux,Paris FC,1,0,H
+2017-10-13,Bourg-en-bresse 01,Lens,0,6,A
+2017-10-13,Quevilly,Ajaccio,0,1,A
+2017-10-14,Clermont Foot,Le Havre,3,0,H
+2017-10-16,Lorient,Niort,0,0,D
+2017-10-20,Nimes,Stade Brestois 29,4,0,H
+2017-10-20,Nancy,Clermont Foot,2,2,D
+2017-10-20,Orleans,Lorient,1,2,A
+2017-10-20,Auxerre,Quevilly,2,1,H
+2017-10-20,Le Havre,Chateauroux,1,1,D
+2017-10-20,Niort,Bourg-en-bresse 01,2,0,H
+2017-10-20,Paris FC,Valenciennes,3,2,H
+2017-10-20,Tours,Sochaux,0,1,A
+2017-10-21,Lens,Reims,0,1,A
+2017-10-23,Ajaccio,Gazelec FC Ajaccio,2,0,H
+2017-10-27,Gazelec FC Ajaccio,Paris FC,0,0,D
+2017-10-27,Stade Brestois 29,Orleans,0,1,A
+2017-10-27,Sochaux,Niort,2,1,H
+2017-10-27,Bourg-en-bresse 01,Auxerre,1,1,D
+2017-10-27,Quevilly,Le Havre,0,2,A
+2017-10-28,Reims,Nancy,3,0,H
+2017-10-28,Lorient,Tours,2,0,H
+2017-10-28,Clermont Foot,Ajaccio,1,1,D
+2017-10-28,Valenciennes,Nimes,1,2,A
+2017-10-30,Chateauroux,Lens,0,0,D
+2017-11-03,Nimes,Quevilly,4,1,H
+2017-11-03,Ajaccio,Chateauroux,1,2,A
+2017-11-03,Orleans,Sochaux,3,3,D
+2017-11-03,Valenciennes,Stade Brestois 29,0,0,D
+2017-11-03,Auxerre,Gazelec FC Ajaccio,0,1,A
+2017-11-03,Niort,Clermont Foot,1,1,D
+2017-11-03,Paris FC,Lorient,1,1,D
+2017-11-03,Tours,Bourg-en-bresse 01,3,2,H
+2017-11-04,Nancy,Lens,1,1,D
+2017-11-06,Le Havre,Reims,0,0,D
+2017-11-17,Reims,Paris FC,1,1,D
+2017-11-17,Clermont Foot,Auxerre,1,0,H
+2017-11-17,Gazelec FC Ajaccio,Le Havre,1,1,D
+2017-11-17,Nancy,Ajaccio,2,2,D
+2017-11-17,Chateauroux,Tours,1,0,H
+2017-11-17,Sochaux,Nimes,2,1,H
+2017-11-17,Bourg-en-bresse 01,Valenciennes,1,3,A
+2017-11-17,Quevilly,Orleans,1,0,H
+2017-11-18,Lorient,Stade Brestois 29,4,2,H
+2017-11-20,Lens,Niort,3,1,H
+2017-11-24,Nimes,Bourg-en-bresse 01,4,0,H
+2017-11-24,Ajaccio,Reims,0,1,A
+2017-11-24,Orleans,Clermont Foot,1,2,A
+2017-11-24,Valenciennes,Lorient,4,2,H
+2017-11-24,Stade Brestois 29,Sochaux,1,0,H
+2017-11-24,Auxerre,Nancy,1,1,D
+2017-11-24,Niort,Chateauroux,2,1,H
+2017-11-24,Paris FC,Quevilly,2,0,H
+2017-11-24,Tours,Gazelec FC Ajaccio,1,2,A
+2017-11-25,Le Havre,Lens,1,0,H
+2017-11-27,Reims,Auxerre,2,0,H
+2017-11-28,Lorient,Nimes,1,2,A
+2017-11-28,Clermont Foot,Stade Brestois 29,1,2,A
+2017-11-28,Gazelec FC Ajaccio,Niort,0,2,A
+2017-11-28,Nancy,Le Havre,0,3,A
+2017-11-28,Chateauroux,Paris FC,0,0,D
+2017-11-28,Sochaux,Valenciennes,3,1,H
+2017-11-28,Lens,Ajaccio,2,0,H
+2017-11-28,Bourg-en-bresse 01,Orleans,4,0,H
+2017-11-28,Quevilly,Tours,4,0,H
+2017-12-08,Lorient,Sochaux,2,1,H
+2017-12-08,Valenciennes,Quevilly,1,1,D
+2017-12-08,Stade Brestois 29,Bourg-en-bresse 01,3,0,H
+2017-12-08,Auxerre,Chateauroux,1,2,A
+2017-12-08,Niort,Reims,1,2,A
+2017-12-08,Paris FC,Lens,2,2,D
+2017-12-08,Tours,Nancy,1,2,A
+2017-12-09,Ajaccio,Le Havre,1,0,H
+2017-12-11,Nimes,Clermont Foot,3,1,H
+2017-12-12,Orleans,Gazelec FC Ajaccio,2,0,H
+2017-12-15,Ajaccio,Auxerre,3,1,H
+2017-12-15,Clermont Foot,Sochaux,0,2,A
+2017-12-15,Nancy,Paris FC,0,1,A
+2017-12-15,Chateauroux,Orleans,0,0,D
+2017-12-15,Le Havre,Niort,2,1,H
+2017-12-15,Bourg-en-bresse 01,Lorient,2,2,D
+2017-12-15,Quevilly,Stade Brestois 29,1,4,A
+2017-12-16,Reims,Valenciennes,5,1,H
+2017-12-18,Lens,Tours,2,0,H
+2018-01-12,Nimes,Lens,0,1,A
+2018-01-12,Orleans,Reims,0,2,A
+2018-01-12,Valenciennes,Chateauroux,1,2,A
+2018-01-12,Stade Brestois 29,Ajaccio,2,3,A
+2018-01-12,Auxerre,Le Havre,1,1,D
+2018-01-12,Niort,Nancy,0,0,D
+2018-01-12,Paris FC,Bourg-en-bresse 01,2,0,H
+2018-01-12,Sochaux,Quevilly,0,1,A
+2018-01-12,Tours,Clermont Foot,0,0,D
+2018-01-13,Lorient,Gazelec FC Ajaccio,4,1,H
+2018-01-16,Reims,Tours,1,0,H
+2018-01-16,Ajaccio,Orleans,1,1,D
+2018-01-16,Clermont Foot,Valenciennes,3,0,H
+2018-01-16,Gazelec FC Ajaccio,Stade Brestois 29,1,1,D
+2018-01-16,Nancy,Nimes,0,2,A
+2018-01-16,Chateauroux,Lorient,3,1,H
+2018-01-16,Auxerre,Niort,5,0,H
+2018-01-16,Le Havre,Paris FC,1,1,D
+2018-01-16,Bourg-en-bresse 01,Quevilly,3,5,A
+2018-01-19,Lorient,Clermont Foot,1,1,D
+2018-01-19,Orleans,Auxerre,2,3,A
+2018-01-19,Valenciennes,Le Havre,1,1,D
+2018-01-19,Stade Brestois 29,Lens,1,1,D
+2018-01-19,Sochaux,Nancy,1,0,H
+2018-01-19,Bourg-en-bresse 01,Reims,0,2,A
+2018-01-19,Quevilly,Gazelec FC Ajaccio,0,2,A
+2018-01-19,Tours,Niort,2,1,H
+2018-01-20,Nimes,Chateauroux,3,0,H
+2018-01-22,Paris FC,Ajaccio,2,1,H
+2018-01-23,Gazelec FC Ajaccio,Nimes,2,0,H
+2018-01-26,Clermont Foot,Quevilly,1,1,D
+2018-01-26,Gazelec FC Ajaccio,Bourg-en-bresse 01,1,2,A
+2018-01-26,Nancy,Stade Brestois 29,2,2,D
+2018-01-26,Chateauroux,Sochaux,1,1,D
+2018-01-26,Auxerre,Paris FC,1,1,D
+2018-01-26,Niort,Valenciennes,1,2,A
+2018-01-26,Lens,Orleans,0,1,A
+2018-01-27,Le Havre,Nimes,2,1,H
+2018-01-27,Ajaccio,Tours,2,1,H
+2018-01-29,Reims,Lorient,0,1,A
+2018-01-30,Lens,Sochaux,0,1,A
+2018-02-02,Nimes,Ajaccio,1,1,D
+2018-02-02,Orleans,Le Havre,2,1,H
+2018-02-02,Valenciennes,Nancy,0,1,A
+2018-02-02,Paris FC,Niort,0,1,A
+2018-02-02,Sochaux,Gazelec FC Ajaccio,4,1,H
+2018-02-02,Bourg-en-bresse 01,Clermont Foot,0,2,A
+2018-02-02,Quevilly,Chateauroux,0,1,A
+2018-02-02,Tours,Auxerre,0,2,A
+2018-02-03,Lorient,Lens,1,1,D
+2018-02-05,Stade Brestois 29,Reims,0,0,D
+2018-02-09,Reims,Sochaux,3,0,H
+2018-02-09,Ajaccio,Lorient,3,2,H
+2018-02-09,Clermont Foot,Gazelec FC Ajaccio,1,0,H
+2018-02-09,Nancy,Quevilly,1,2,A
+2018-02-09,Chateauroux,Bourg-en-bresse 01,3,1,H
+2018-02-09,Le Havre,Stade Brestois 29,1,0,H
+2018-02-09,Niort,Orleans,2,3,A
+2018-02-09,Tours,Paris FC,1,2,A
+2018-02-10,Lens,Valenciennes,1,1,D
+2018-02-12,Auxerre,Nimes,0,0,D
+2018-02-16,Nimes,Tours,2,2,D
+2018-02-16,Clermont Foot,Chateauroux,1,1,D
+2018-02-16,Gazelec FC Ajaccio,Reims,1,2,A
+2018-02-16,Orleans,Paris FC,1,1,D
+2018-02-16,Valenciennes,Ajaccio,2,0,H
+2018-02-16,Stade Brestois 29,Niort,2,0,H
+2018-02-16,Sochaux,Le Havre,3,2,H
+2018-02-16,Bourg-en-bresse 01,Nancy,3,2,H
+2018-02-17,Lorient,Auxerre,1,3,A
+2018-02-19,Quevilly,Lens,1,2,A
+2018-02-23,Reims,Quevilly,2,1,H
+2018-02-23,Ajaccio,Sochaux,3,2,H
+2018-02-23,Chateauroux,Gazelec FC Ajaccio,4,1,H
+2018-02-23,Auxerre,Valenciennes,2,0,H
+2018-02-23,Le Havre,Bourg-en-bresse 01,0,0,D
+2018-02-23,Niort,Nimes,1,4,A
+2018-02-23,Lens,Clermont Foot,0,1,A
+2018-02-23,Tours,Orleans,1,1,D
+2018-02-24,Paris FC,Stade Brestois 29,0,1,A
+2018-02-26,Nancy,Lorient,0,2,A
+2018-03-02,Clermont Foot,Reims,2,1,H
+2018-03-02,Valenciennes,Orleans,0,1,A
+2018-03-02,Stade Brestois 29,Tours,1,3,A
+2018-03-02,Chateauroux,Nancy,1,0,H
+2018-03-02,Bourg-en-bresse 01,Ajaccio,5,4,H
+2018-03-02,Quevilly,Niort,1,2,A
+2018-03-02,Gazelec FC Ajaccio,Lens,1,1,D
+2018-03-03,Nimes,Paris FC,2,1,H
+2018-03-05,Lorient,Le Havre,1,0,H
+2018-03-09,Reims,Chateauroux,4,0,H
+2018-03-09,Ajaccio,Quevilly,2,0,H
+2018-03-09,Nancy,Gazelec FC Ajaccio,1,0,H
+2018-03-09,Orleans,Nimes,1,4,A
+2018-03-09,Auxerre,Stade Brestois 29,1,2,A
+2018-03-09,Le Havre,Clermont Foot,2,1,H
+2018-03-09,Niort,Lorient,1,2,A
+2018-03-10,Paris FC,Sochaux,2,0,H
+2018-03-12,Lens,Bourg-en-bresse 01,0,1,A
+2018-03-13,Sochaux,Auxerre,0,4,A
+2018-03-16,Lorient,Orleans,3,1,H
+2018-03-16,Clermont Foot,Nancy,2,0,H
+2018-03-16,Gazelec FC Ajaccio,Ajaccio,0,1,A
+2018-03-16,Valenciennes,Paris FC,2,4,A
+2018-03-16,Chateauroux,Le Havre,2,1,H
+2018-03-16,Sochaux,Tours,0,0,D
+2018-03-16,Bourg-en-bresse 01,Niort,0,1,A
+2018-03-16,Quevilly,Auxerre,4,1,H
+2018-03-17,Reims,Lens,3,1,H
+2018-03-19,Stade Brestois 29,Nimes,0,2,A
+2018-03-30,Nimes,Valenciennes,1,0,H
+2018-03-30,Ajaccio,Clermont Foot,2,1,H
+2018-03-30,Orleans,Stade Brestois 29,1,1,D
+2018-03-30,Auxerre,Bourg-en-bresse 01,3,1,H
+2018-03-30,Le Havre,Quevilly,0,2,A
+2018-03-30,Niort,Sochaux,1,1,D
+2018-03-30,Paris FC,Gazelec FC Ajaccio,0,0,D
+2018-03-30,Tours,Lorient,3,1,H
+2018-03-31,Nancy,Reims,0,2,A
+2018-04-02,Lens,Chateauroux,2,1,H
+2018-04-03,Tours,Valenciennes,1,2,A
+2018-04-06,Lorient,Paris FC,2,0,H
+2018-04-06,Clermont Foot,Niort,2,2,D
+2018-04-06,Gazelec FC Ajaccio,Auxerre,3,1,H
+2018-04-06,Stade Brestois 29,Valenciennes,3,1,H
+2018-04-06,Chateauroux,Ajaccio,0,2,A
+2018-04-06,Sochaux,Orleans,3,2,H
+2018-04-06,Bourg-en-bresse 01,Tours,1,1,D
+2018-04-06,Quevilly,Nimes,1,3,A
+2018-04-09,Lens,Nancy,1,1,D
+2018-04-13,Nimes,Sochaux,0,2,A
+2018-04-13,Ajaccio,Nancy,2,0,H
+2018-04-13,Orleans,Quevilly,2,1,H
+2018-04-13,Valenciennes,Bourg-en-bresse 01,2,2,D
+2018-04-13,Auxerre,Clermont Foot,1,2,A
+2018-04-13,Le Havre,Gazelec FC Ajaccio,2,1,H
+2018-04-13,Niort,Lens,2,2,D
+2018-04-13,Tours,Chateauroux,0,1,A
+2018-04-14,Paris FC,Reims,0,3,A
+2018-04-16,Stade Brestois 29,Lorient,3,0,H
+2018-04-20,Reims,Ajaccio,1,0,H
+2018-04-20,Lorient,Valenciennes,0,1,A
+2018-04-20,Clermont Foot,Orleans,4,2,H
+2018-04-20,Gazelec FC Ajaccio,Tours,3,2,H
+2018-04-20,Chateauroux,Niort,2,1,H
+2018-04-20,Sochaux,Stade Brestois 29,1,1,D
+2018-04-20,Lens,Le Havre,3,3,D
+2018-04-20,Bourg-en-bresse 01,Nimes,2,2,D
+2018-04-20,Quevilly,Paris FC,0,4,A
+2018-04-21,Nancy,Auxerre,2,1,H
+2018-04-23,Ajaccio,Lens,2,0,H
+2018-04-24,Nimes,Lorient,1,0,H
+2018-04-24,Orleans,Bourg-en-bresse 01,5,1,H
+2018-04-24,Valenciennes,Sochaux,2,2,D
+2018-04-24,Stade Brestois 29,Clermont Foot,1,0,H
+2018-04-24,Auxerre,Reims,1,4,A
+2018-04-24,Le Havre,Nancy,3,0,H
+2018-04-24,Niort,Gazelec FC Ajaccio,4,1,H
+2018-04-24,Paris FC,Chateauroux,0,0,D
+2018-04-24,Tours,Quevilly,2,2,D
+2018-04-27,Reims,Niort,3,1,H
+2018-04-27,Gazelec FC Ajaccio,Orleans,1,0,H
+2018-04-27,Nancy,Tours,3,1,H
+2018-04-27,Chateauroux,Auxerre,1,2,A
+2018-04-27,Le Havre,Ajaccio,2,0,H
+2018-04-27,Sochaux,Lorient,0,2,A
+2018-04-27,Bourg-en-bresse 01,Stade Brestois 29,2,4,A
+2018-04-27,Quevilly,Valenciennes,2,2,D
+2018-04-28,Clermont Foot,Nimes,1,1,D
+2018-04-30,Reims,Le Havre,0,1,A
+2018-04-30,Lens,Paris FC,1,0,H
+2018-05-04,Nimes,Gazelec FC Ajaccio,4,0,H
+2018-05-04,Lorient,Bourg-en-bresse 01,6,0,H
+2018-05-04,Orleans,Chateauroux,1,1,D
+2018-05-04,Valenciennes,Reims,1,3,A
+2018-05-04,Stade Brestois 29,Quevilly,2,0,H
+2018-05-04,Auxerre,Ajaccio,1,1,D
+2018-05-04,Niort,Le Havre,0,1,A
+2018-05-04,Paris FC,Nancy,2,1,H
+2018-05-04,Sochaux,Clermont Foot,1,3,A
+2018-05-04,Tours,Lens,4,2,H
+2018-05-11,Reims,Nimes,2,2,D
+2018-05-11,Ajaccio,Niort,2,2,D
+2018-05-11,Clermont Foot,Paris FC,2,2,D
+2018-05-11,Gazelec FC Ajaccio,Valenciennes,3,4,A
+2018-05-11,Nancy,Orleans,3,0,H
+2018-05-11,Chateauroux,Stade Brestois 29,2,2,D
+2018-05-11,Le Havre,Tours,2,0,H
+2018-05-11,Lens,Auxerre,2,1,H
+2018-05-11,Bourg-en-bresse 01,Sochaux,2,1,H
+2018-05-11,Quevilly,Lorient,3,0,H
+2018-05-15,Le Havre,Stade Brestois 29,2,0,H
+2018-05-20,Ajaccio,Le Havre,3,3,D

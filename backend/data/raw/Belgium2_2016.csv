@@ -1,0 +1,127 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2016-08-05,Roeselare,Lierse,2,2,D
+2016-08-06,Tubize,Union St. Gilloise,2,2,D
+2016-08-07,Lommel United,OH Leuven,2,2,D
+2016-08-07,Cercle Brugge,Antwerp,1,1,D
+2016-08-12,OH Leuven,Union St. Gilloise,0,3,A
+2016-08-13,Antwerp,Roeselare,1,0,H
+2016-08-14,Lierse,Cercle Brugge,2,0,H
+2016-08-14,Tubize,Lommel United,0,4,A
+2016-08-19,Antwerp,Lommel United,0,1,A
+2016-08-20,Roeselare,OH Leuven,2,2,D
+2016-08-21,Union St. Gilloise,Lierse,2,2,D
+2016-08-21,Cercle Brugge,Tubize,4,1,H
+2016-09-02,Lierse,OH Leuven,2,2,D
+2016-09-03,Lommel United,Cercle Brugge,1,1,D
+2016-09-04,Tubize,Roeselare,4,1,H
+2016-09-04,Union St. Gilloise,Antwerp,1,1,D
+2016-09-09,Antwerp,Lierse,1,2,A
+2016-09-10,Cercle Brugge,Union St. Gilloise,2,1,H
+2016-09-11,OH Leuven,Tubize,0,1,A
+2016-09-11,Lommel United,Roeselare,1,2,A
+2016-09-16,Union St. Gilloise,Lommel United,3,1,H
+2016-09-17,Lierse,Tubize,5,1,H
+2016-09-18,Roeselare,Cercle Brugge,2,1,H
+2016-09-18,OH Leuven,Antwerp,1,1,D
+2016-09-24,Roeselare,Union St. Gilloise,2,1,H
+2016-09-25,Cercle Brugge,OH Leuven,2,4,A
+2016-09-25,Lommel United,Lierse,0,3,A
+2016-09-25,Tubize,Antwerp,2,2,D
+2016-09-30,Union St. Gilloise,Tubize,0,1,A
+2016-10-01,Antwerp,Cercle Brugge,2,1,H
+2016-10-02,Lierse,Roeselare,0,2,A
+2016-10-02,OH Leuven,Lommel United,2,2,D
+2016-10-04,Antwerp,Union St. Gilloise,4,0,H
+2016-10-05,Tubize,OH Leuven,0,1,A
+2016-10-05,Roeselare,Lommel United,2,0,H
+2016-10-06,Cercle Brugge,Lierse,0,0,D
+2016-10-08,Lommel United,Tubize,3,6,A
+2016-10-09,OH Leuven,Roeselare,1,1,D
+2016-10-09,Union St. Gilloise,Cercle Brugge,3,2,H
+2016-10-09,Lierse,Antwerp,2,0,H
+2016-10-14,Cercle Brugge,Lommel United,3,1,H
+2016-10-15,Lierse,Union St. Gilloise,2,1,H
+2016-10-16,Roeselare,Tubize,1,0,H
+2016-10-16,Antwerp,OH Leuven,2,1,H
+2016-10-21,Tubize,Lierse,1,3,A
+2016-10-22,OH Leuven,Cercle Brugge,2,0,H
+2016-10-23,Lommel United,Antwerp,1,1,D
+2016-10-24,Union St. Gilloise,Roeselare,1,2,A
+2016-10-28,Cercle Brugge,Roeselare,0,3,A
+2016-10-29,Union St. Gilloise,OH Leuven,2,0,H
+2016-10-30,Antwerp,Tubize,2,0,H
+2016-10-30,Lierse,Lommel United,0,2,A
+2016-11-06,Lommel United,Union St. Gilloise,1,2,A
+2016-11-06,OH Leuven,Lierse,0,1,A
+2016-11-06,Tubize,Cercle Brugge,4,1,H
+2016-11-06,Roeselare,Antwerp,2,1,H
+2016-11-11,Lierse,Union St. Gilloise,1,0,H
+2016-11-12,Lommel United,OH Leuven,2,2,D
+2016-11-12,Roeselare,Tubize,1,1,D
+2016-11-13,Antwerp,Cercle Brugge,0,0,D
+2016-11-18,OH Leuven,Antwerp,0,0,D
+2016-11-19,Union St. Gilloise,Roeselare,0,0,D
+2016-11-20,Tubize,Lierse,0,3,A
+2016-11-20,Cercle Brugge,Lommel United,1,0,H
+2016-11-25,Roeselare,Lierse,2,1,H
+2016-11-26,Antwerp,Union St. Gilloise,2,0,H
+2016-11-26,Lommel United,Tubize,1,2,A
+2016-11-27,OH Leuven,Cercle Brugge,1,0,H
+2016-12-02,Lierse,Antwerp,2,2,D
+2016-12-03,Union St. Gilloise,Cercle Brugge,1,2,A
+2016-12-03,Tubize,OH Leuven,0,2,A
+2016-12-04,Roeselare,Lommel United,2,1,H
+2016-12-09,Union St. Gilloise,Lommel United,1,1,D
+2016-12-10,Cercle Brugge,Lierse,0,1,A
+2016-12-10,OH Leuven,Roeselare,1,2,A
+2016-12-11,Antwerp,Tubize,1,1,D
+2016-12-16,Lommel United,Antwerp,2,4,A
+2016-12-17,Roeselare,Cercle Brugge,3,1,H
+2016-12-17,Tubize,Union St. Gilloise,3,0,H
+2016-12-18,Lierse,OH Leuven,1,1,D
+2017-01-06,Antwerp,Roeselare,1,0,H
+2017-01-07,Cercle Brugge,Tubize,2,1,H
+2017-01-08,Union St. Gilloise,OH Leuven,4,0,H
+2017-01-08,Lierse,Lommel United,5,1,H
+2017-01-13,Lommel United,Roeselare,1,1,D
+2017-01-14,OH Leuven,Tubize,1,3,A
+2017-01-15,Cercle Brugge,Antwerp,0,1,A
+2017-01-15,Union St. Gilloise,Lierse,0,0,D
+2017-01-20,Tubize,Lommel United,2,0,H
+2017-01-21,Lierse,Cercle Brugge,1,1,D
+2017-01-21,Antwerp,OH Leuven,2,0,H
+2017-01-22,Roeselare,Union St. Gilloise,0,1,A
+2017-01-27,OH Leuven,Lierse,2,3,A
+2017-01-28,Lommel United,Union St. Gilloise,0,0,D
+2017-01-28,Cercle Brugge,Roeselare,2,2,D
+2017-01-29,Tubize,Antwerp,2,4,A
+2017-02-03,Lommel United,Cercle Brugge,0,1,A
+2017-02-04,Union St. Gilloise,Antwerp,1,1,D
+2017-02-04,Lierse,Tubize,3,0,H
+2017-02-05,Roeselare,OH Leuven,2,1,H
+2017-02-10,Cercle Brugge,Union St. Gilloise,0,1,A
+2017-02-11,OH Leuven,Lommel United,2,1,H
+2017-02-11,Antwerp,Lierse,0,2,A
+2017-02-12,Tubize,Roeselare,3,1,H
+2017-02-17,Lommel United,Lierse,1,1,D
+2017-02-18,Cercle Brugge,OH Leuven,1,0,H
+2017-02-18,Roeselare,Antwerp,1,2,A
+2017-02-19,Union St. Gilloise,Tubize,2,0,H
+2017-02-26,OH Leuven,Union St. Gilloise,2,0,H
+2017-02-26,Tubize,Cercle Brugge,1,3,A
+2017-02-26,Antwerp,Lommel United,1,0,H
+2017-02-26,Lierse,Roeselare,1,1,D
+2017-03-05,Antwerp,Roeselare,3,1,H
+2017-03-11,Roeselare,Antwerp,1,2,A
+2017-03-24,OH Leuven,Tubize,1,1,D
+2017-03-26,Cercle Brugge,Lommel United,0,5,A
+2017-03-31,Tubize,Cercle Brugge,2,2,D
+2017-04-01,Lommel United,OH Leuven,2,1,H
+2017-04-07,OH Leuven,Cercle Brugge,1,0,H
+2017-04-08,Tubize,Lommel United,0,0,D
+2017-04-14,Cercle Brugge,OH Leuven,0,0,D
+2017-04-17,Lommel United,Tubize,2,1,H
+2017-04-21,Lommel United,Cercle Brugge,0,1,A
+2017-04-22,Tubize,OH Leuven,1,0,H
+2017-04-28,OH Leuven,Lommel United,1,0,H
+2017-04-28,Cercle Brugge,Tubize,1,1,D

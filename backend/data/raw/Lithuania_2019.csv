@@ -1,0 +1,128 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2019-03-02,Atlantas,Kauno Zalgiris,2,0,H
+2019-03-02,Stumbras,Panevezys,1,0,H
+2019-03-03,Suduva Marijampole,FK Trakai,2,1,H
+2019-03-03,FK Zalgiris Vilnius,Palanga,5,1,H
+2019-03-09,Kauno Zalgiris,Palanga,6,1,H
+2019-03-09,Panevezys,FK Zalgiris Vilnius,0,3,A
+2019-03-10,Atlantas,Suduva Marijampole,0,5,A
+2019-03-11,FK Trakai,Stumbras,0,0,D
+2019-03-15,FK Zalgiris Vilnius,FK Trakai,1,1,D
+2019-03-16,Stumbras,Atlantas,2,0,H
+2019-03-16,Suduva Marijampole,Kauno Zalgiris,1,0,H
+2019-03-17,Palanga,Panevezys,1,1,D
+2019-03-30,Atlantas,FK Zalgiris Vilnius,0,3,A
+2019-03-30,Kauno Zalgiris,Panevezys,2,0,H
+2019-03-31,Stumbras,Suduva Marijampole,2,0,H
+2019-04-02,FK Trakai,Palanga,3,1,H
+2019-04-06,Palanga,Atlantas,2,1,H
+2019-04-06,Stumbras,Kauno Zalgiris,0,1,A
+2019-04-07,Panevezys,FK Trakai,1,2,A
+2019-04-07,FK Zalgiris Vilnius,Suduva Marijampole,1,0,H
+2019-04-13,Kauno Zalgiris,FK Trakai,3,1,H
+2019-04-13,Stumbras,FK Zalgiris Vilnius,1,0,H
+2019-04-14,Atlantas,Panevezys,2,1,H
+2019-04-14,Suduva Marijampole,Palanga,3,0,H
+2019-04-19,Panevezys,Suduva Marijampole,1,2,A
+2019-04-19,FK Zalgiris Vilnius,Kauno Zalgiris,3,1,H
+2019-04-20,Palanga,Stumbras,2,1,H
+2019-04-20,FK Trakai,Atlantas,0,0,D
+2019-04-27,Panevezys,Stumbras,1,1,D
+2019-04-27,Palanga,FK Zalgiris Vilnius,1,4,A
+2019-04-27,Kauno Zalgiris,Atlantas,2,1,H
+2019-04-27,FK Trakai,Suduva Marijampole,1,2,A
+2019-05-04,Stumbras,FK Trakai,0,3,A
+2019-05-05,Palanga,Kauno Zalgiris,0,3,A
+2019-05-05,Suduva Marijampole,Atlantas,4,0,H
+2019-05-05,FK Zalgiris Vilnius,Panevezys,2,1,H
+2019-05-11,FK Trakai,FK Zalgiris Vilnius,1,0,H
+2019-05-11,Kauno Zalgiris,Suduva Marijampole,0,3,A
+2019-05-12,Atlantas,Stumbras,0,0,D
+2019-05-12,Panevezys,Palanga,2,1,H
+2019-05-17,FK Zalgiris Vilnius,Atlantas,3,0,H
+2019-05-18,Panevezys,Kauno Zalgiris,1,1,D
+2019-05-18,Palanga,FK Trakai,1,3,A
+2019-05-18,Suduva Marijampole,Stumbras,2,0,H
+2019-05-21,Atlantas,Palanga,2,1,H
+2019-05-21,FK Trakai,Panevezys,1,1,D
+2019-05-22,Kauno Zalgiris,Stumbras,4,3,H
+2019-05-22,Suduva Marijampole,FK Zalgiris Vilnius,1,0,H
+2019-05-31,FK Zalgiris Vilnius,Stumbras,2,1,H
+2019-06-01,Palanga,Suduva Marijampole,0,2,A
+2019-06-01,FK Trakai,Kauno Zalgiris,1,0,H
+2019-06-02,Panevezys,Atlantas,4,1,H
+2019-06-14,Atlantas,FK Trakai,2,3,A
+2019-06-14,Kauno Zalgiris,FK Zalgiris Vilnius,3,4,A
+2019-06-15,Stumbras,Palanga,0,3,A
+2019-06-15,Suduva Marijampole,Panevezys,2,1,H
+2019-06-22,Atlantas,Kauno Zalgiris,1,1,D
+2019-06-22,Stumbras,Panevezys,0,3,A
+2019-06-22,Suduva Marijampole,FK Trakai,1,2,A
+2019-06-23,FK Zalgiris Vilnius,Palanga,3,2,H
+2019-06-29,Panevezys,FK Zalgiris Vilnius,0,2,A
+2019-06-29,Kauno Zalgiris,Palanga,4,0,H
+2019-06-29,Suduva Marijampole,Atlantas,4,1,H
+2019-06-29,FK Trakai,Stumbras,3,0,H
+2019-07-03,Suduva Marijampole,Kauno Zalgiris,3,0,H
+2019-07-04,Palanga,Panevezys,1,2,A
+2019-07-05,FK Zalgiris Vilnius,FK Trakai,2,1,H
+2019-07-06,Stumbras,Atlantas,0,3,A
+2019-08-03,Kauno Zalgiris,Panevezys,2,2,D
+2019-08-03,FK Trakai,Palanga,1,0,H
+2019-08-03,Suduva Marijampole,Stumbras,3,0,H
+2019-08-04,Atlantas,FK Zalgiris Vilnius,1,3,A
+2019-08-10,FK Trakai,Atlantas,1,1,D
+2019-08-11,Palanga,Stumbras,3,0,H
+2019-08-11,FK Zalgiris Vilnius,Kauno Zalgiris,3,0,H
+2019-08-12,Panevezys,Palanga,3,1,H
+2019-08-17,Kauno Zalgiris,FK Trakai,1,0,H
+2019-08-18,Stumbras,FK Zalgiris Vilnius,0,3,A
+2019-08-18,Atlantas,Panevezys,0,2,A
+2019-08-23,Panevezys,FK Trakai,4,2,H
+2019-08-24,Stumbras,Kauno Zalgiris,0,3,A
+2019-08-25,Palanga,Atlantas,0,2,A
+2019-08-31,Palanga,FK Zalgiris Vilnius,0,4,A
+2019-08-31,Kauno Zalgiris,Atlantas,1,0,H
+2019-09-01,Panevezys,Stumbras,3,0,H
+2019-09-13,FK Zalgiris Vilnius,Panevezys,5,0,H
+2019-09-13,Atlantas,Suduva Marijampole,0,4,A
+2019-09-14,Palanga,Kauno Zalgiris,2,3,A
+2019-09-14,Stumbras,FK Trakai,0,3,A
+2019-09-21,FK Trakai,FK Zalgiris Vilnius,1,1,D
+2019-09-21,Kauno Zalgiris,Suduva Marijampole,0,2,A
+2019-09-21,Atlantas,Stumbras,3,0,H
+2019-09-24,Panevezys,Suduva Marijampole,2,7,A
+2019-09-25,Palanga,FK Trakai,1,3,A
+2019-09-25,Stumbras,Suduva Marijampole,0,3,A
+2019-09-25,FK Zalgiris Vilnius,Atlantas,4,0,H
+2019-09-28,Panevezys,Kauno Zalgiris,3,3,D
+2019-10-02,Suduva Marijampole,Palanga,5,0,H
+2019-10-05,Kauno Zalgiris,FK Zalgiris Vilnius,1,2,A
+2019-10-05,Atlantas,FK Trakai,2,1,H
+2019-10-05,Stumbras,Palanga,0,3,A
+2019-10-05,Suduva Marijampole,Panevezys,3,1,H
+2019-10-12,Palanga,Suduva Marijampole,0,4,A
+2019-10-15,FK Trakai,Suduva Marijampole,1,2,A
+2019-10-19,FK Trakai,Kauno Zalgiris,0,0,D
+2019-10-19,Panevezys,Atlantas,1,1,D
+2019-10-19,FK Zalgiris Vilnius,Stumbras,3,0,H
+2019-10-20,FK Zalgiris Vilnius,Suduva Marijampole,1,3,A
+2019-10-26,Suduva Marijampole,FK Zalgiris Vilnius,1,0,H
+2019-10-26,FK Trakai,Panevezys,4,0,H
+2019-10-26,Atlantas,Palanga,0,1,A
+2019-10-26,Kauno Zalgiris,Stumbras,3,0,H
+2019-10-30,Suduva Marijampole,Atlantas,9,1,H
+2019-10-30,FK Zalgiris Vilnius,Panevezys,3,1,H
+2019-10-31,FK Trakai,Kauno Zalgiris,0,1,A
+2019-11-03,Panevezys,Suduva Marijampole,1,5,A
+2019-11-04,Kauno Zalgiris,FK Zalgiris Vilnius,1,2,A
+2019-11-04,FK Trakai,Atlantas,5,2,H
+2019-11-08,Atlantas,Panevezys,1,4,A
+2019-11-08,FK Zalgiris Vilnius,FK Trakai,1,3,A
+2019-11-09,Suduva Marijampole,Kauno Zalgiris,4,1,H
+2019-11-22,FK Zalgiris Vilnius,Atlantas,5,0,H
+2019-11-23,FK Trakai,Suduva Marijampole,5,1,H
+2019-11-23,Kauno Zalgiris,Panevezys,1,0,H
+2019-11-27,Suduva Marijampole,FK Zalgiris Vilnius,2,1,H
+2019-11-27,Atlantas,Kauno Zalgiris,0,2,A
+2019-11-27,Panevezys,FK Trakai,2,0,H

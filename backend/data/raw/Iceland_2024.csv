@@ -1,0 +1,163 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2024-04-06,Vikingur Reykjavik,Stjarnan,2,0,H
+2024-04-07,KA Akureyri,HK Kopavogur,1,1,D
+2024-04-07,Fram Reykjavik,Vestri,2,0,H
+2024-04-07,Fylkir,KR Reykjavik,3,4,A
+2024-04-07,Valur Reykjavik,IA Akranes,2,0,H
+2024-04-08,Breidablik,FH hafnarfjordur,2,0,H
+2024-04-12,Stjarnan,KR Reykjavik,1,3,A
+2024-04-13,Breidablik,Vestri,4,0,H
+2024-04-13,KA Akureyri,FH hafnarfjordur,2,3,A
+2024-04-14,HK Kopavogur,IA Akranes,0,4,A
+2024-04-14,Fylkir,Valur Reykjavik,0,0,D
+2024-04-15,Fram Reykjavik,Vikingur Reykjavik,0,1,A
+2024-04-19,Stjarnan,Valur Reykjavik,1,0,H
+2024-04-20,HK Kopavogur,FH hafnarfjordur,0,2,A
+2024-04-20,KR Reykjavik,Fram Reykjavik,0,1,A
+2024-04-21,KA Akureyri,Vestri,0,1,A
+2024-04-21,IA Akranes,Fylkir,5,1,H
+2024-04-21,Vikingur Reykjavik,Breidablik,4,1,H
+2024-04-28,IA Akranes,FH hafnarfjordur,1,2,A
+2024-04-28,Vestri,HK Kopavogur,1,0,H
+2024-04-28,Vikingur Reykjavik,KA Akureyri,4,2,H
+2024-04-28,KR Reykjavik,Breidablik,2,3,A
+2024-04-29,Valur Reykjavik,Fram Reykjavik,1,1,D
+2024-04-29,Fylkir,Stjarnan,0,1,A
+2024-05-04,FH hafnarfjordur,Vestri,3,2,H
+2024-05-05,KA Akureyri,KR Reykjavik,1,1,D
+2024-05-05,Stjarnan,IA Akranes,4,1,H
+2024-05-05,HK Kopavogur,Vikingur Reykjavik,3,1,H
+2024-05-05,Fram Reykjavik,Fylkir,2,1,H
+2024-05-06,Breidablik,Valur Reykjavik,2,3,A
+2024-05-10,Stjarnan,Fram Reykjavik,1,1,D
+2024-05-11,IA Akranes,Vestri,3,0,H
+2024-05-11,Valur Reykjavik,KA Akureyri,3,1,H
+2024-05-12,KR Reykjavik,HK Kopavogur,1,2,A
+2024-05-12,Fylkir,Breidablik,0,3,A
+2024-05-12,Vikingur Reykjavik,FH hafnarfjordur,2,0,H
+2024-05-20,Vestri,Vikingur Reykjavik,1,4,A
+2024-05-20,KA Akureyri,Fylkir,4,2,H
+2024-05-20,FH hafnarfjordur,KR Reykjavik,1,2,A
+2024-05-21,Breidablik,Stjarnan,2,1,H
+2024-05-21,HK Kopavogur,Valur Reykjavik,1,2,A
+2024-05-21,Fram Reykjavik,IA Akranes,1,1,D
+2024-05-25,KR Reykjavik,Vestri,2,2,D
+2024-05-25,IA Akranes,Vikingur Reykjavik,0,1,A
+2024-05-25,Valur Reykjavik,FH hafnarfjordur,2,2,D
+2024-05-26,Stjarnan,KA Akureyri,5,0,H
+2024-05-26,Fram Reykjavik,Breidablik,1,4,A
+2024-05-27,Fylkir,HK Kopavogur,3,1,H
+2024-05-30,Valur Reykjavik,Stjarnan,5,1,H
+2024-05-30,Breidablik,Vikingur Reykjavik,1,1,D
+2024-05-31,FH hafnarfjordur,Fram Reykjavik,3,3,D
+2024-06-01,KA Akureyri,IA Akranes,2,3,A
+2024-06-02,Vestri,Stjarnan,4,2,H
+2024-06-02,Vikingur Reykjavik,Fylkir,5,2,H
+2024-06-02,HK Kopavogur,Breidablik,0,2,A
+2024-06-03,KR Reykjavik,Valur Reykjavik,3,5,A
+2024-06-18,Fylkir,Vestri,3,2,H
+2024-06-18,Stjarnan,FH hafnarfjordur,4,2,H
+2024-06-18,IA Akranes,KR Reykjavik,2,1,H
+2024-06-18,Fram Reykjavik,HK Kopavogur,1,2,A
+2024-06-18,Valur Reykjavik,Vikingur Reykjavik,2,2,D
+2024-06-19,Breidablik,KA Akureyri,2,1,H
+2024-06-22,Vestri,Valur Reykjavik,1,5,A
+2024-06-22,HK Kopavogur,Stjarnan,4,3,H
+2024-06-22,Vikingur Reykjavik,KR Reykjavik,1,1,D
+2024-06-23,KA Akureyri,Fram Reykjavik,3,2,H
+2024-06-23,FH hafnarfjordur,Fylkir,3,1,H
+2024-06-23,Breidablik,IA Akranes,1,1,D
+2024-06-27,Vestri,Fram Reykjavik,1,3,A
+2024-06-27,KR Reykjavik,Fylkir,2,2,D
+2024-06-27,Stjarnan,Vikingur Reykjavik,0,4,A
+2024-06-28,HK Kopavogur,KA Akureyri,1,2,A
+2024-06-28,FH hafnarfjordur,Breidablik,1,0,H
+2024-06-28,IA Akranes,Valur Reykjavik,3,2,H
+2024-06-30,Vikingur Reykjavik,Fram Reykjavik,2,1,H
+2024-07-06,KR Reykjavik,Stjarnan,1,1,D
+2024-07-06,IA Akranes,HK Kopavogur,8,0,H
+2024-07-06,Vestri,Breidablik,2,2,D
+2024-07-06,Valur Reykjavik,Fylkir,4,0,H
+2024-07-08,FH hafnarfjordur,KA Akureyri,1,1,D
+2024-07-11,Fram Reykjavik,KR Reykjavik,1,0,H
+2024-07-14,Vestri,KA Akureyri,0,2,A
+2024-07-15,Fylkir,IA Akranes,3,0,H
+2024-07-15,FH hafnarfjordur,HK Kopavogur,3,1,H
+2024-07-20,HK Kopavogur,Vestri,1,1,D
+2024-07-20,KA Akureyri,Vikingur Reykjavik,1,0,H
+2024-07-21,Stjarnan,Fylkir,2,0,H
+2024-07-21,Breidablik,KR Reykjavik,4,2,H
+2024-07-22,FH hafnarfjordur,IA Akranes,1,1,D
+2024-07-28,Vestri,FH hafnarfjordur,0,2,A
+2024-07-28,IA Akranes,Stjarnan,1,3,A
+2024-07-28,Vikingur Reykjavik,HK Kopavogur,5,1,H
+2024-07-28,Fram Reykjavik,Valur Reykjavik,4,1,H
+2024-07-29,KR Reykjavik,KA Akureyri,2,2,D
+2024-07-31,Fylkir,Fram Reykjavik,0,0,D
+2024-08-05,FH hafnarfjordur,Vikingur Reykjavik,2,3,A
+2024-08-06,KA Akureyri,Valur Reykjavik,1,0,H
+2024-08-06,Breidablik,Fylkir,3,0,H
+2024-08-06,Fram Reykjavik,Stjarnan,2,1,H
+2024-08-07,Vestri,IA Akranes,0,0,D
+2024-08-11,Vikingur Reykjavik,Vestri,1,1,D
+2024-08-11,Fylkir,KA Akureyri,1,1,D
+2024-08-11,Valur Reykjavik,HK Kopavogur,5,1,H
+2024-08-11,Stjarnan,Breidablik,2,2,D
+2024-08-12,KR Reykjavik,FH hafnarfjordur,1,0,H
+2024-08-12,IA Akranes,Fram Reykjavik,1,0,H
+2024-08-15,Valur Reykjavik,Breidablik,0,2,A
+2024-08-17,Vestri,KR Reykjavik,2,0,H
+2024-08-18,KA Akureyri,Stjarnan,1,1,D
+2024-08-18,HK Kopavogur,Fylkir,0,2,A
+2024-08-19,FH hafnarfjordur,Valur Reykjavik,2,2,D
+2024-08-19,Breidablik,Fram Reykjavik,3,1,H
+2024-08-19,Vikingur Reykjavik,IA Akranes,1,2,A
+2024-08-22,HK Kopavogur,KR Reykjavik,3,2,H
+2024-08-25,Valur Reykjavik,Vestri,3,1,H
+2024-08-25,IA Akranes,Breidablik,1,2,A
+2024-08-25,Fram Reykjavik,KA Akureyri,1,2,A
+2024-08-25,Fylkir,FH hafnarfjordur,2,3,A
+2024-08-26,Stjarnan,HK Kopavogur,2,0,H
+2024-09-01,Vestri,Fylkir,0,0,D
+2024-09-01,KA Akureyri,Breidablik,2,3,A
+2024-09-01,FH hafnarfjordur,Stjarnan,0,3,A
+2024-09-01,KR Reykjavik,IA Akranes,4,2,H
+2024-09-01,Vikingur Reykjavik,Valur Reykjavik,3,2,H
+2024-09-01,HK Kopavogur,Fram Reykjavik,1,0,H
+2024-09-13,KR Reykjavik,Vikingur Reykjavik,0,3,A
+2024-09-15,Stjarnan,Vestri,1,0,H
+2024-09-15,IA Akranes,KA Akureyri,1,0,H
+2024-09-15,Fram Reykjavik,FH hafnarfjordur,3,3,D
+2024-09-15,Breidablik,HK Kopavogur,5,3,H
+2024-09-16,Fylkir,Vikingur Reykjavik,0,6,A
+2024-09-16,Valur Reykjavik,KR Reykjavik,4,1,H
+2024-09-22,KR Reykjavik,Vestri,2,2,D
+2024-09-22,Fram Reykjavik,Fylkir,2,0,H
+2024-09-23,Valur Reykjavik,Stjarnan,2,2,D
+2024-09-23,Breidablik,IA Akranes,2,0,H
+2024-09-25,KA Akureyri,HK Kopavogur,3,3,D
+2024-09-25,Vikingur Reykjavik,FH hafnarfjordur,3,0,H
+2024-09-29,FH hafnarfjordur,Breidablik,0,1,A
+2024-09-29,KR Reykjavik,Fram Reykjavik,7,1,H
+2024-09-29,Vestri,HK Kopavogur,2,1,H
+2024-09-29,Fylkir,KA Akureyri,1,3,A
+2024-09-29,Valur Reykjavik,Vikingur Reykjavik,2,3,A
+2024-09-30,Stjarnan,IA Akranes,3,0,H
+2024-10-05,Fram Reykjavik,Vestri,2,4,A
+2024-10-06,KA Akureyri,KR Reykjavik,0,4,A
+2024-10-06,IA Akranes,FH hafnarfjordur,4,1,H
+2024-10-06,Vikingur Reykjavik,Stjarnan,2,2,D
+2024-10-06,HK Kopavogur,Fylkir,2,2,D
+2024-10-06,Breidablik,Valur Reykjavik,2,2,D
+2024-10-19,FH hafnarfjordur,Valur Reykjavik,1,1,D
+2024-10-19,KA Akureyri,Vestri,2,1,H
+2024-10-19,IA Akranes,Vikingur Reykjavik,3,4,A
+2024-10-19,Breidablik,Stjarnan,2,1,H
+2024-10-20,Fylkir,KR Reykjavik,0,1,A
+2024-10-20,HK Kopavogur,Fram Reykjavik,2,1,H
+2024-10-26,KR Reykjavik,HK Kopavogur,7,0,H
+2024-10-26,Fram Reykjavik,KA Akureyri,1,4,A
+2024-10-26,Vestri,Fylkir,1,3,A
+2024-10-26,Valur Reykjavik,IA Akranes,6,1,H
+2024-10-26,Stjarnan,FH hafnarfjordur,3,2,H
+2024-10-27,Vikingur Reykjavik,Breidablik,0,3,A

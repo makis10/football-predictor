@@ -1,0 +1,193 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2016-03-12,Taraz,Kairat Almaty,2,1,H
+2016-03-12,Zhetysu,Atyrau,1,1,D
+2016-03-12,FC Astana,Shakhter Karagandy,2,1,H
+2016-03-13,Ordabasy,Aktobe,3,1,H
+2016-03-13,FK Tobol Kostanay,Akzhayik,1,0,H
+2016-03-13,Irtysh,Okzhetpes,1,0,H
+2016-03-19,Akzhayik,Irtysh,0,3,A
+2016-03-19,Okzhetpes,Kairat Almaty,1,1,D
+2016-03-19,Taraz,Aktobe,1,1,D
+2016-03-20,Ordabasy,FC Astana,1,3,A
+2016-03-20,Shakhter Karagandy,Zhetysu,0,0,D
+2016-04-03,FK Tobol Kostanay,Shakhter Karagandy,3,0,H
+2016-04-03,Zhetysu,Ordabasy,1,2,A
+2016-04-03,Irtysh,Atyrau,3,0,H
+2016-04-03,FC Astana,Aktobe,1,0,H
+2016-04-03,Akzhayik,Kairat Almaty,2,1,H
+2016-04-03,Taraz,Okzhetpes,1,3,A
+2016-04-09,Ordabasy,FK Tobol Kostanay,2,2,D
+2016-04-09,Shakhter Karagandy,Irtysh,0,2,A
+2016-04-09,FC Astana,Taraz,2,1,H
+2016-04-09,Akzhayik,Okzhetpes,0,2,A
+2016-04-09,Atyrau,Kairat Almaty,0,1,A
+2016-04-09,Aktobe,Zhetysu,3,2,H
+2016-04-13,Zhetysu,FC Astana,0,1,A
+2016-04-13,FK Tobol Kostanay,Aktobe,1,2,A
+2016-04-13,Okzhetpes,Atyrau,2,0,H
+2016-04-13,Taraz,Akzhayik,0,1,A
+2016-04-13,Irtysh,Ordabasy,2,0,H
+2016-04-13,Kairat Almaty,Shakhter Karagandy,0,0,D
+2016-04-17,Ordabasy,Kairat Almaty,1,0,H
+2016-04-17,Shakhter Karagandy,Okzhetpes,0,1,A
+2016-04-17,FC Astana,FK Tobol Kostanay,1,0,H
+2016-04-17,Zhetysu,Taraz,2,1,H
+2016-04-17,Aktobe,Irtysh,1,1,D
+2016-04-17,Atyrau,Akzhayik,2,0,H
+2016-04-23,FK Tobol Kostanay,Zhetysu,2,2,D
+2016-04-23,Okzhetpes,Ordabasy,2,0,H
+2016-04-23,Taraz,Atyrau,0,0,D
+2016-04-23,Kairat Almaty,Aktobe,3,0,H
+2016-04-23,Akzhayik,Shakhter Karagandy,0,1,A
+2016-04-23,Irtysh,FC Astana,2,2,D
+2016-05-01,FC Astana,Kairat Almaty,1,0,H
+2016-05-01,Ordabasy,Akzhayik,1,0,H
+2016-05-01,FK Tobol Kostanay,Taraz,1,0,H
+2016-05-01,Zhetysu,Irtysh,0,3,A
+2016-05-01,Shakhter Karagandy,Atyrau,0,0,D
+2016-05-01,Aktobe,Okzhetpes,1,0,H
+2016-05-05,Okzhetpes,FC Astana,0,1,A
+2016-05-05,Akzhayik,Aktobe,0,0,D
+2016-05-05,Taraz,Shakhter Karagandy,1,2,A
+2016-05-05,Irtysh,FK Tobol Kostanay,3,1,H
+2016-05-05,Atyrau,Ordabasy,2,2,D
+2016-05-05,Kairat Almaty,Zhetysu,2,0,H
+2016-05-09,Ordabasy,Shakhter Karagandy,2,0,H
+2016-05-09,Aktobe,Atyrau,1,0,H
+2016-05-09,Irtysh,Taraz,2,1,H
+2016-05-10,FC Astana,Akzhayik,2,0,H
+2016-05-10,FK Tobol Kostanay,Kairat Almaty,1,2,A
+2016-05-10,Zhetysu,Okzhetpes,1,4,A
+2016-05-14,Shakhter Karagandy,Aktobe,0,2,A
+2016-05-14,Taraz,Ordabasy,1,2,A
+2016-05-15,Okzhetpes,FK Tobol Kostanay,1,1,D
+2016-05-15,Kairat Almaty,Irtysh,1,0,H
+2016-05-15,Akzhayik,Zhetysu,1,2,A
+2016-05-15,Atyrau,FC Astana,1,0,H
+2016-05-21,FC Astana,Ordabasy,3,1,H
+2016-05-21,FK Tobol Kostanay,Atyrau,1,2,A
+2016-05-21,Zhetysu,Shakhter Karagandy,2,0,H
+2016-05-21,Kairat Almaty,Okzhetpes,6,0,H
+2016-05-21,Irtysh,Akzhayik,0,0,D
+2016-05-21,Aktobe,Taraz,2,2,D
+2016-05-29,Ordabasy,Zhetysu,0,1,A
+2016-05-29,Shakhter Karagandy,FK Tobol Kostanay,1,0,H
+2016-05-29,Kairat Almaty,Akzhayik,3,2,H
+2016-05-29,Okzhetpes,Taraz,0,0,D
+2016-05-29,Atyrau,Irtysh,0,1,A
+2016-05-29,Aktobe,FC Astana,0,1,A
+2016-06-02,Okzhetpes,Akzhayik,4,2,H
+2016-06-02,Taraz,FC Astana,0,2,A
+2016-06-02,Zhetysu,Aktobe,1,1,D
+2016-06-02,FK Tobol Kostanay,Ordabasy,1,0,H
+2016-06-02,Irtysh,Shakhter Karagandy,0,0,D
+2016-06-02,Kairat Almaty,Atyrau,5,2,H
+2016-06-11,FC Astana,Zhetysu,1,0,H
+2016-06-11,Shakhter Karagandy,Kairat Almaty,0,5,A
+2016-06-11,Ordabasy,Irtysh,2,0,H
+2016-06-11,Akzhayik,Taraz,2,1,H
+2016-06-11,Aktobe,FK Tobol Kostanay,0,1,A
+2016-06-11,Atyrau,Okzhetpes,2,1,H
+2016-06-15,FK Tobol Kostanay,FC Astana,1,2,A
+2016-06-15,Okzhetpes,Shakhter Karagandy,3,0,H
+2016-06-15,Taraz,Zhetysu,2,3,A
+2016-06-15,Irtysh,Aktobe,4,1,H
+2016-06-15,Akzhayik,Atyrau,0,4,A
+2016-06-15,Kairat Almaty,Ordabasy,2,2,D
+2016-06-19,FC Astana,Irtysh,1,1,D
+2016-06-19,Shakhter Karagandy,Akzhayik,3,1,H
+2016-06-19,Zhetysu,FK Tobol Kostanay,0,1,A
+2016-06-19,Ordabasy,Okzhetpes,2,2,D
+2016-06-19,Aktobe,Kairat Almaty,2,6,A
+2016-06-19,Atyrau,Taraz,1,0,H
+2016-06-23,Kairat Almaty,FC Astana,1,0,H
+2016-06-24,Okzhetpes,Aktobe,4,1,H
+2016-06-24,Akzhayik,Ordabasy,0,1,A
+2016-06-25,Taraz,FK Tobol Kostanay,2,0,H
+2016-06-25,Irtysh,Zhetysu,3,1,H
+2016-06-25,Atyrau,Shakhter Karagandy,0,0,D
+2016-06-29,Atyrau,FK Tobol Kostanay,0,0,D
+2016-07-02,Shakhter Karagandy,Taraz,0,1,A
+2016-07-03,Zhetysu,Kairat Almaty,1,1,D
+2016-07-03,Ordabasy,Atyrau,2,1,H
+2016-07-03,FK Tobol Kostanay,Irtysh,3,2,H
+2016-07-03,Aktobe,Akzhayik,1,0,H
+2016-07-05,FC Astana,Okzhetpes,1,0,H
+2016-07-08,Akzhayik,FC Astana,1,5,A
+2016-07-09,Taraz,Irtysh,1,0,H
+2016-07-10,Shakhter Karagandy,Ordabasy,0,0,D
+2016-07-10,Okzhetpes,Zhetysu,2,0,H
+2016-07-10,Kairat Almaty,FK Tobol Kostanay,3,2,H
+2016-07-10,Atyrau,Aktobe,1,1,D
+2016-07-16,FC Astana,Atyrau,2,1,H
+2016-07-16,Zhetysu,Akzhayik,2,0,H
+2016-07-16,FK Tobol Kostanay,Okzhetpes,0,1,A
+2016-07-17,Ordabasy,Taraz,0,3,A
+2016-07-17,Irtysh,Kairat Almaty,2,3,A
+2016-07-17,Aktobe,Shakhter Karagandy,2,0,H
+2016-07-24,Okzhetpes,Irtysh,0,2,A
+2016-07-24,Kairat Almaty,Taraz,3,1,H
+2016-07-24,Akzhayik,FK Tobol Kostanay,0,5,A
+2016-07-24,Aktobe,Ordabasy,0,0,D
+2016-07-24,Atyrau,Zhetysu,1,0,H
+2016-08-07,Shakhter Karagandy,FC Astana,2,0,H
+2016-08-12,FC Astana,Irtysh,3,0,H
+2016-08-13,Okzhetpes,Kairat Almaty,1,3,A
+2016-08-13,Aktobe,Ordabasy,4,4,D
+2016-08-14,Shakhter Karagandy,Taraz,1,0,H
+2016-08-14,FK Tobol Kostanay,Atyrau,0,0,D
+2016-08-14,Akzhayik,Zhetysu,1,0,H
+2016-08-20,Irtysh,Okzhetpes,0,2,A
+2016-08-20,Kairat Almaty,Aktobe,3,1,H
+2016-08-21,Zhetysu,FK Tobol Kostanay,2,0,H
+2016-08-21,Shakhter Karagandy,Akzhayik,0,1,A
+2016-08-21,FC Astana,Ordabasy,2,0,H
+2016-08-21,Taraz,Atyrau,1,0,H
+2016-08-26,Ordabasy,Kairat Almaty,2,1,H
+2016-08-26,FK Tobol Kostanay,Shakhter Karagandy,2,0,H
+2016-08-26,Akzhayik,Taraz,2,0,H
+2016-08-26,Atyrau,Zhetysu,3,3,D
+2016-08-26,Aktobe,Irtysh,1,0,H
+2016-09-10,FC Astana,Kairat Almaty,1,4,A
+2016-09-10,Akzhayik,FK Tobol Kostanay,1,0,H
+2016-09-10,Taraz,Zhetysu,3,2,H
+2016-09-10,Shakhter Karagandy,Atyrau,3,0,H
+2016-09-11,Irtysh,Ordabasy,1,2,A
+2016-09-12,Okzhetpes,Aktobe,0,3,A
+2016-09-17,Ordabasy,Okzhetpes,1,0,H
+2016-09-17,Atyrau,Akzhayik,1,2,A
+2016-09-17,Kairat Almaty,Irtysh,2,1,H
+2016-09-18,Zhetysu,Shakhter Karagandy,1,2,A
+2016-09-18,FK Tobol Kostanay,Taraz,3,1,H
+2016-09-18,Aktobe,FC Astana,1,2,A
+2016-09-24,FK Tobol Kostanay,Zhetysu,3,2,H
+2016-09-24,Akzhayik,Shakhter Karagandy,1,2,A
+2016-09-25,Ordabasy,FC Astana,0,1,A
+2016-09-25,Okzhetpes,Irtysh,1,4,A
+2016-09-25,Atyrau,Taraz,1,0,H
+2016-09-25,Aktobe,Kairat Almaty,0,1,A
+2016-10-01,Zhetysu,Atyrau,4,3,H
+2016-10-01,Irtysh,Aktobe,5,1,H
+2016-10-01,Kairat Almaty,Ordabasy,1,1,D
+2016-10-01,Taraz,Akzhayik,2,1,H
+2016-10-01,Shakhter Karagandy,FK Tobol Kostanay,2,3,A
+2016-10-02,FC Astana,Okzhetpes,3,0,H
+2016-10-16,Ordabasy,Irtysh,3,3,D
+2016-10-16,FK Tobol Kostanay,Akzhayik,0,1,A
+2016-10-16,Atyrau,Shakhter Karagandy,2,0,H
+2016-10-16,Zhetysu,Taraz,0,0,D
+2016-10-16,Kairat Almaty,FC Astana,2,0,H
+2016-10-16,Aktobe,Okzhetpes,2,2,D
+2016-10-22,Akzhayik,Atyrau,3,1,H
+2016-10-22,Taraz,FK Tobol Kostanay,2,1,H
+2016-10-22,Shakhter Karagandy,Zhetysu,4,1,H
+2016-10-23,FC Astana,Aktobe,1,0,H
+2016-10-23,Okzhetpes,Ordabasy,3,0,H
+2016-10-23,Irtysh,Kairat Almaty,1,3,A
+2016-10-26,Okzhetpes,FC Astana,0,0,D
+2016-10-29,Kairat Almaty,Okzhetpes,5,0,H
+2016-10-29,Ordabasy,Aktobe,2,1,H
+2016-10-29,Taraz,Shakhter Karagandy,2,1,H
+2016-10-29,Zhetysu,Akzhayik,0,2,A
+2016-10-29,Atyrau,FK Tobol Kostanay,3,0,H
+2016-10-29,Irtysh,FC Astana,0,0,D

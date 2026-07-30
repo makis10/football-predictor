@@ -1,0 +1,95 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,PSH,PSD,PSA
+14/02/2020,Cork City,Shelbourne,0,1,A,2.16,3.31,3.65
+14/02/2020,Dundalk,Derry City,1,0,H,1.55,4.01,6.87
+14/02/2020,St. Patricks,Waterford,0,1,A,2,3.17,4.49
+14/02/2020,Finn Harps,Sligo Rovers,1,0,H,3,3.03,2.66
+15/02/2020,Bohemians,Shamrock Rovers,0,1,A,3.77,3.11,2.21
+21/02/2020,Derry City,Finn Harps,1,1,D,1.43,4.18,9.71
+21/02/2020,Shelbourne,Dundalk,1,2,A,8.73,4.68,1.4
+21/02/2020,Sligo Rovers,St. Patricks,0,2,A,3.79,3.22,2.15
+21/02/2020,Waterford,Bohemians,0,2,A,3.18,3.1,2.48
+21/02/2020,Shamrock Rovers,Cork City,6,0,H,1.21,5.95,21.51
+24/02/2020,Waterford,Shamrock Rovers,0,2,A,8.5,4.3,1.44
+24/02/2020,Bohemians,Sligo Rovers,2,0,H,1.56,3.73,7.4
+24/02/2020,Dundalk,Cork City,3,0,H,1.18,7.31,15.16
+28/02/2020,Cork City,Finn Harps,1,0,H,2.38,2.98,3.52
+28/02/2020,Derry City,Bohemians,2,0,H,2.24,3.33,3.42
+28/02/2020,Shamrock Rovers,Dundalk,3,2,H,2.33,3.25,3.3
+28/02/2020,Shelbourne,St. Patricks,1,0,H,3.52,3.18,2.27
+06/03/2020,St. Patricks,Cork City,1,0,H,1.57,3.88,6.81
+06/03/2020,Waterford,Derry City,2,1,H,3.99,3.42,2.02
+06/03/2020,Bohemians,Shelbourne,2,0,H,1.81,3.38,5.25
+06/03/2020,Finn Harps,Dundalk,0,4,A,8.53,4.46,1.43
+07/03/2020,Sligo Rovers,Shamrock Rovers,2,3,A,10.57,5.22,1.32
+31/07/2020,Derry City,Sligo Rovers,0,2,A,1.68,3.88,5.32
+31/07/2020,Dundalk,St. Patricks,1,1,D,1.59,3.89,6.41
+01/08/2020,Shelbourne,Waterford,0,1,A,2.06,3.28,4.03
+01/08/2020,Shamrock Rovers,Finn Harps,3,1,H,1.23,6.26,14.55
+02/08/2020,Cork City,Bohemians,0,1,A,5.48,3.6,1.72
+03/08/2020,St. Patricks,Derry City,0,2,A,1.88,3.31,4.91
+04/08/2020,Finn Harps,Shelbourne,0,1,A,2.86,2.91,2.89
+07/08/2020,Bohemians,Dundalk,2,1,H,4.3,3.24,2.01
+07/08/2020,St. Patricks,Finn Harps,2,0,H,1.53,3.89,7.65
+08/08/2020,Waterford,Cork City,0,0,D,1.99,3.28,4.35
+08/08/2020,Sligo Rovers,Shelbourne,2,1,H,2.93,3.04,2.71
+09/08/2020,Derry City,Shamrock Rovers,1,2,A,5.93,3.68,1.67
+14/08/2020,Dundalk,Waterford,2,2,D,1.4,4.96,7.82
+14/08/2020,Cork City,Sligo Rovers,3,0,H,3.54,3,2.36
+15/08/2020,Finn Harps,Bohemians,0,1,A,5.18,3.22,1.87
+15/08/2020,Shelbourne,Derry City,1,1,D,3.55,2.95,2.39
+16/08/2020,St. Patricks,Shamrock Rovers,0,0,D,5.04,3.24,1.88
+18/08/2020,Sligo Rovers,Waterford,2,1,H,2.61,3.23,2.84
+21/08/2020,Derry City,Cork City,3,1,H,1.84,3.42,4.81
+21/08/2020,Shamrock Rovers,Shelbourne,0,0,D,1.27,5.39,14.99
+22/08/2020,Bohemians,St. Patricks,2,0,H,2.53,2.96,3.26
+22/08/2020,Sligo Rovers,Dundalk,3,1,H,4.98,4.01,1.69
+23/08/2020,Waterford,Finn Harps,2,3,A,2.07,3.25,4.03
+04/09/2020,Waterford,St. Patricks,3,0,H,3.54,3.23,2.24
+05/09/2020,Shamrock Rovers,Bohemians,1,0,H,1.72,3.6,5.46
+05/09/2020,Shelbourne,Cork City,1,1,D,1.83,3.34,5.15
+07/09/2020,Sligo Rovers,Finn Harps,3,1,H,2.1,3.25,3.97
+11/09/2020,Bohemians,Waterford,0,2,A,1.52,4.17,7.21
+11/09/2020,Dundalk,Shelbourne,3,2,H,1.63,3.94,5.89
+12/09/2020,Cork City,Shamrock Rovers,0,3,A,14.44,5.56,1.28
+12/09/2020,St. Patricks,Sligo Rovers,0,0,D,2,3.41,4.26
+13/09/2020,Finn Harps,Derry City,0,0,D,3.77,3.11,2.27
+18/09/2020,Derry City,St. Patricks,0,0,D,2.93,3.05,2.79
+18/09/2020,Sligo Rovers,Bohemians,0,1,A,3.93,3.17,2.18
+19/09/2020,Shelbourne,Finn Harps,1,1,D,2.22,3.16,3.83
+21/09/2020,Shamrock Rovers,Waterford,6,1,H,1.3,5.59,11.7
+25/09/2020,Bohemians,Derry City,2,1,H,1.84,3.54,4.9
+26/09/2020,Waterford,Sligo Rovers,1,0,H,3.04,3.17,2.61
+26/09/2020,St. Patricks,Shelbourne,2,0,H,1.86,3.43,5
+27/09/2020,Finn Harps,Cork City,1,1,D,2.33,2.97,3.82
+27/09/2020,Dundalk,Shamrock Rovers,0,4,A,8.6,4.7,1.42
+29/09/2020,Sligo Rovers,Derry City,1,0,H,3.61,3.06,2.36
+02/10/2020,Derry City,Waterford,2,0,H,2.04,3.3,4.23
+02/10/2020,Shamrock Rovers,Sligo Rovers,4,0,H,1.26,6.39,11.87
+03/10/2020,Cork City,St. Patricks,1,2,A,5.33,3.5,1.79
+03/10/2020,Shelbourne,Bohemians,1,3,A,3.86,3.27,2.16
+04/10/2020,Dundalk,Finn Harps,0,0,D,1.63,4.05,5.82
+09/10/2020,Bohemians,Cork City,3,0,H,1.35,5.21,10.14
+10/10/2020,Waterford,Shelbourne,0,1,A,2.94,3.3,2.6
+13/10/2020,Cork City,Dundalk,0,2,A,10.88,5.8,1.3
+16/10/2020,Dundalk,Bohemians,0,0,D,1.71,4.13,4.9
+17/10/2020,Cork City,Waterford,0,0,D,3.24,3.77,2.2
+18/10/2020,Shelbourne,Sligo Rovers,1,0,H,2.63,3.23,2.96
+19/10/2020,Derry City,Dundalk,1,2,A,3.69,3.22,2.24
+23/10/2020,Derry City,Shelbourne,2,0,H,1.75,3.66,5.41
+24/10/2020,Sligo Rovers,Cork City,2,1,H,1.75,3.83,5.03
+24/10/2020,Bohemians,Finn Harps,0,2,A,1.52,4.08,7.73
+25/10/2020,Waterford,Dundalk,1,0,H,6.59,4.41,1.53
+28/10/2020,Finn Harps,St. Patricks,3,2,H,5.04,3.45,1.85
+31/10/2020,Bray,Galway,0,1,A,2.07,3.64,3.61
+31/10/2020,UC Dublin,Longford,1,1,D,,,
+01/11/2020,St. Patricks,Dundalk,1,1,D,3.89,3.18,2.19
+01/11/2020,Finn Harps,Shamrock Rovers,0,2,A,5.63,3.68,1.72
+04/11/2020,Shamrock Rovers,St. Patricks,0,0,D,2,3.26,4.52
+06/11/2020,Galway,Longford,1,2,A,1.98,3.67,3.98
+07/11/2020,Shamrock Rovers,Derry City,2,0,H,1.71,3.96,5.13
+09/11/2020,Cork City,Derry City,1,1,D,6.37,3.97,1.61
+09/11/2020,Dundalk,Sligo Rovers,0,2,A,1.62,4.03,6.02
+09/11/2020,Finn Harps,Waterford,1,0,H,2.27,3.55,3.28
+09/11/2020,Shelbourne,Shamrock Rovers,0,2,A,8.3,4.96,1.41
+09/11/2020,St. Patricks,Bohemians,1,2,A,1.88,3.63,4.52
+15/11/2020,Shelbourne,Longford,0,1,A,1.78,3.96,4.66

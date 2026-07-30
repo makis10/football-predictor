@@ -44,6 +44,20 @@ TOP_ZONE_LABEL: dict[str, str] = {
     "Championship": "Promotion",
     "LeagueOne":    "Promotion",
     "BrazilSerieA": "Libertadores",
+    # 2026-07-30 expansion — all twelve feed UEFA competitions via the
+    # qualifying rounds rather than straight into a league phase.
+    "Belgium":      "Europe",
+    "Turkey":       "Europe",
+    "Scotland":     "Europe",
+    "Denmark":      "Europe",
+    "Sweden":       "Europe",
+    "Norway":       "Europe",
+    "Poland":       "Europe",
+    "Austria":      "Europe",
+    "Switzerland":  "Europe",
+    "Romania":      "Europe",
+    "Ireland":      "Europe",
+    "Finland":      "Europe",
 }
 BOTTOM_ZONE_LABEL = "Relegation"
 

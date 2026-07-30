@@ -1,0 +1,183 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2022-07-15,Koper,Tabor Sezana,2,1,H
+2022-07-16,NK Domzale,Celje,0,0,D
+2022-07-16,Maribor,Radomlje,0,3,A
+2022-07-17,Olimpija Ljubljana,Mura,2,0,H
+2022-07-18,Gorica,Bravo,2,0,H
+2022-07-22,Radomlje,Celje,1,1,D
+2022-07-23,Maribor,Gorica,3,2,H
+2022-07-24,Bravo,Koper,1,0,H
+2022-07-24,Tabor Sezana,Olimpija Ljubljana,0,1,A
+2022-07-24,Mura,NK Domzale,4,3,H
+2022-07-29,Gorica,Radomlje,0,1,A
+2022-07-30,NK Domzale,Tabor Sezana,1,1,D
+2022-07-31,Olimpija Ljubljana,Bravo,1,0,H
+2022-07-31,Celje,Mura,3,3,D
+2022-07-31,Koper,Maribor,2,1,H
+2022-08-05,Tabor Sezana,Celje,1,0,H
+2022-08-06,Bravo,NK Domzale,0,1,A
+2022-08-07,Radomlje,Mura,1,1,D
+2022-08-07,Maribor,Olimpija Ljubljana,0,2,A
+2022-08-08,Gorica,Koper,1,2,A
+2022-08-12,Celje,Bravo,1,0,H
+2022-08-13,Mura,Tabor Sezana,2,2,D
+2022-08-13,Koper,Radomlje,5,0,H
+2022-08-14,NK Domzale,Maribor,3,2,H
+2022-08-15,Olimpija Ljubljana,Gorica,2,0,H
+2022-08-19,Radomlje,Tabor Sezana,0,0,D
+2022-08-20,Bravo,Mura,0,1,A
+2022-08-20,Koper,Olimpija Ljubljana,0,2,A
+2022-08-21,Maribor,Celje,2,2,D
+2022-08-22,Gorica,NK Domzale,0,0,D
+2022-08-26,Tabor Sezana,Bravo,0,4,A
+2022-08-26,Celje,Gorica,1,0,H
+2022-08-27,Olimpija Ljubljana,Radomlje,2,1,H
+2022-08-27,NK Domzale,Koper,0,2,A
+2022-08-28,Mura,Maribor,0,1,A
+2022-09-02,Gorica,Mura,0,0,D
+2022-09-02,Koper,Celje,0,2,A
+2022-09-03,Maribor,Tabor Sezana,2,2,D
+2022-09-04,Olimpija Ljubljana,NK Domzale,3,2,H
+2022-09-05,Radomlje,Bravo,1,1,D
+2022-09-09,NK Domzale,Radomlje,3,1,H
+2022-09-10,Tabor Sezana,Gorica,1,3,A
+2022-09-10,Celje,Olimpija Ljubljana,4,3,H
+2022-09-11,Bravo,Maribor,0,1,A
+2022-09-11,Mura,Koper,2,1,H
+2022-09-17,Tabor Sezana,Koper,0,2,A
+2022-09-17,Mura,Olimpija Ljubljana,2,3,A
+2022-09-18,Bravo,Gorica,2,0,H
+2022-09-18,Radomlje,Maribor,0,5,A
+2022-09-18,Celje,NK Domzale,2,1,H
+2022-10-01,NK Domzale,Mura,2,2,D
+2022-10-01,Olimpija Ljubljana,Tabor Sezana,2,0,H
+2022-10-01,Koper,Bravo,2,0,H
+2022-10-02,Gorica,Maribor,1,4,A
+2022-10-02,Celje,Radomlje,2,1,H
+2022-10-08,Tabor Sezana,NK Domzale,1,1,D
+2022-10-08,Maribor,Koper,0,1,A
+2022-10-09,Bravo,Olimpija Ljubljana,6,1,H
+2022-10-09,Mura,Celje,3,1,H
+2022-10-10,Radomlje,Gorica,1,1,D
+2022-10-14,Celje,Tabor Sezana,1,0,H
+2022-10-14,NK Domzale,Bravo,0,0,D
+2022-10-15,Koper,Gorica,1,1,D
+2022-10-15,Olimpija Ljubljana,Maribor,1,0,H
+2022-10-16,Mura,Radomlje,3,0,H
+2022-10-22,Maribor,NK Domzale,0,3,A
+2022-10-23,Tabor Sezana,Mura,0,4,A
+2022-10-23,Gorica,Olimpija Ljubljana,0,0,D
+2022-10-24,Bravo,Celje,2,0,H
+2022-10-24,Radomlje,Koper,2,2,D
+2022-10-28,NK Domzale,Gorica,5,1,H
+2022-10-29,Tabor Sezana,Radomlje,2,1,H
+2022-10-29,Celje,Maribor,3,3,D
+2022-10-30,Olimpija Ljubljana,Koper,2,1,H
+2022-11-02,Mura,Bravo,1,0,H
+2022-11-04,Koper,NK Domzale,1,1,D
+2022-11-05,Gorica,Celje,0,2,A
+2022-11-05,Radomlje,Olimpija Ljubljana,0,1,A
+2022-11-06,Bravo,Tabor Sezana,2,1,H
+2022-11-06,Maribor,Mura,5,1,H
+2022-11-12,Bravo,Radomlje,1,1,D
+2022-11-12,NK Domzale,Olimpija Ljubljana,0,3,A
+2022-11-13,Tabor Sezana,Maribor,0,4,A
+2022-11-13,Celje,Koper,1,1,D
+2022-11-13,Mura,Gorica,2,0,H
+2022-11-29,Gorica,Tabor Sezana,1,1,D
+2022-11-29,Maribor,Bravo,3,0,H
+2022-11-30,Radomlje,NK Domzale,0,2,A
+2022-11-30,Koper,Mura,0,0,D
+2022-12-01,Olimpija Ljubljana,Celje,0,0,D
+2022-12-06,Gorica,Bravo,0,0,D
+2022-12-06,Maribor,Radomlje,7,0,H
+2022-12-07,Koper,Tabor Sezana,5,1,H
+2022-12-07,NK Domzale,Celje,2,1,H
+2022-12-08,Olimpija Ljubljana,Mura,0,0,D
+2022-12-10,Bravo,Koper,0,1,A
+2022-12-11,Tabor Sezana,Olimpija Ljubljana,0,8,A
+2022-12-11,Maribor,Gorica,2,1,H
+2022-12-11,Radomlje,Celje,0,3,A
+2022-12-12,Mura,NK Domzale,0,1,A
+2023-02-11,Olimpija Ljubljana,Bravo,2,1,H
+2023-02-11,Celje,Mura,2,1,H
+2023-02-12,Gorica,Radomlje,1,1,D
+2023-02-12,Koper,Maribor,0,1,A
+2023-02-12,NK Domzale,Tabor Sezana,0,4,A
+2023-02-18,Tabor Sezana,Celje,2,2,D
+2023-02-18,Radomlje,Mura,0,0,D
+2023-02-18,Gorica,Koper,2,2,D
+2023-02-19,Bravo,NK Domzale,0,2,A
+2023-02-19,Maribor,Olimpija Ljubljana,2,0,H
+2023-02-21,Koper,Radomlje,1,2,A
+2023-02-21,Mura,Tabor Sezana,2,2,D
+2023-02-22,Celje,Bravo,2,1,H
+2023-02-22,Olimpija Ljubljana,Gorica,4,3,H
+2023-02-23,NK Domzale,Maribor,1,1,D
+2023-02-25,Bravo,Mura,0,0,D
+2023-02-25,Radomlje,Tabor Sezana,0,0,D
+2023-02-25,Koper,Olimpija Ljubljana,0,1,A
+2023-02-26,Maribor,Celje,2,0,H
+2023-02-26,Gorica,NK Domzale,0,2,A
+2023-03-04,Celje,Gorica,0,1,A
+2023-03-04,NK Domzale,Koper,0,0,D
+2023-03-04,Olimpija Ljubljana,Radomlje,1,0,H
+2023-03-05,Tabor Sezana,Bravo,1,1,D
+2023-03-05,Mura,Maribor,2,1,H
+2023-03-10,Gorica,Mura,1,1,D
+2023-03-11,Maribor,Tabor Sezana,1,1,D
+2023-03-11,Koper,Celje,0,1,A
+2023-03-12,Olimpija Ljubljana,NK Domzale,1,4,A
+2023-03-12,Radomlje,Bravo,3,1,H
+2023-03-15,Bravo,Maribor,2,3,A
+2023-03-15,NK Domzale,Radomlje,1,2,A
+2023-03-15,Celje,Olimpija Ljubljana,0,1,A
+2023-03-16,Tabor Sezana,Gorica,0,1,A
+2023-03-16,Mura,Koper,1,2,A
+2023-03-18,Radomlje,Maribor,1,1,D
+2023-03-18,Celje,NK Domzale,1,0,H
+2023-03-19,Bravo,Gorica,2,1,H
+2023-03-19,Tabor Sezana,Koper,0,1,A
+2023-03-19,Mura,Olimpija Ljubljana,2,1,H
+2023-04-01,Celje,Radomlje,1,1,D
+2023-04-01,Gorica,Maribor,0,3,A
+2023-04-01,Koper,Bravo,1,0,H
+2023-04-02,Olimpija Ljubljana,Tabor Sezana,1,0,H
+2023-04-02,NK Domzale,Mura,0,0,D
+2023-04-08,Tabor Sezana,NK Domzale,1,1,D
+2023-04-08,Radomlje,Gorica,2,0,H
+2023-04-08,Maribor,Koper,3,1,H
+2023-04-10,Bravo,Olimpija Ljubljana,1,0,H
+2023-04-10,Mura,Celje,0,2,A
+2023-04-14,Koper,Gorica,1,0,H
+2023-04-15,Mura,Radomlje,1,1,D
+2023-04-15,NK Domzale,Bravo,2,2,D
+2023-04-15,Celje,Tabor Sezana,0,0,D
+2023-04-16,Olimpija Ljubljana,Maribor,2,0,H
+2023-04-22,Radomlje,Koper,1,1,D
+2023-04-22,Tabor Sezana,Mura,1,2,A
+2023-04-22,Maribor,NK Domzale,1,0,H
+2023-04-23,Gorica,Olimpija Ljubljana,2,2,D
+2023-04-23,Bravo,Celje,0,3,A
+2023-04-28,NK Domzale,Gorica,1,1,D
+2023-04-29,Mura,Bravo,0,1,A
+2023-04-29,Celje,Maribor,3,1,H
+2023-04-30,Tabor Sezana,Radomlje,1,2,A
+2023-04-30,Olimpija Ljubljana,Koper,3,2,H
+2023-05-02,Maribor,Mura,3,1,H
+2023-05-03,Radomlje,Olimpija Ljubljana,2,1,H
+2023-05-03,Gorica,Celje,1,2,A
+2023-05-04,Bravo,Tabor Sezana,1,1,D
+2023-05-04,Koper,NK Domzale,2,3,A
+2023-05-13,Mura,Gorica,4,2,H
+2023-05-13,NK Domzale,Olimpija Ljubljana,2,1,H
+2023-05-13,Celje,Koper,2,0,H
+2023-05-14,Tabor Sezana,Maribor,1,1,D
+2023-05-14,Bravo,Radomlje,0,1,A
+2023-05-19,Gorica,Tabor Sezana,1,0,H
+2023-05-20,Maribor,Bravo,1,1,D
+2023-05-20,Olimpija Ljubljana,Celje,0,2,A
+2023-05-20,Koper,Mura,1,2,A
+2023-05-20,Radomlje,NK Domzale,1,0,H
+2023-05-25,Aluminij,Gorica,3,1,H
+2023-05-28,Gorica,Aluminij,1,1,D

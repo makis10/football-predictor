@@ -1,0 +1,96 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2026-02-28,Torpedo Kutaisi,Spaeri,1,2,A
+2026-03-02,Gagra,Samgurali,0,1,A
+2026-03-06,Saburtalo,Dila,1,0,H
+2026-03-07,Spaeri,Dinamo Tbilisi,1,2,A
+2026-03-07,Rustavi,Torpedo Kutaisi,1,0,H
+2026-03-07,Dinamo Batumi,Gagra,1,1,D
+2026-03-08,Meshakhte,Samgurali,0,0,D
+2026-03-11,Dinamo Tbilisi,Rustavi,0,0,D
+2026-03-11,Torpedo Kutaisi,Saburtalo,1,0,H
+2026-03-11,Gagra,Spaeri,0,3,A
+2026-03-12,Samgurali,Dinamo Batumi,1,1,D
+2026-03-12,Dila,Meshakhte,0,1,A
+2026-03-15,Saburtalo,Dinamo Tbilisi,0,0,D
+2026-03-15,Rustavi,Gagra,1,2,A
+2026-03-16,Meshakhte,Dinamo Batumi,0,0,D
+2026-03-16,Dila,Torpedo Kutaisi,1,0,H
+2026-03-16,Spaeri,Samgurali,4,1,H
+2026-04-03,Dinamo Tbilisi,Dila,1,2,A
+2026-04-03,Samgurali,Rustavi,2,1,H
+2026-04-03,Dinamo Batumi,Spaeri,4,1,H
+2026-04-03,Torpedo Kutaisi,Meshakhte,3,0,H
+2026-04-03,Gagra,Saburtalo,1,2,A
+2026-04-07,Rustavi,Dinamo Batumi,3,0,H
+2026-04-07,Meshakhte,Spaeri,0,0,D
+2026-04-07,Saburtalo,Samgurali,2,1,H
+2026-04-07,Torpedo Kutaisi,Dinamo Tbilisi,0,0,D
+2026-04-07,Dila,Gagra,1,1,D
+2026-04-11,Dila,Rustavi,1,2,A
+2026-04-11,Dinamo Tbilisi,Dinamo Batumi,2,2,D
+2026-04-11,Saburtalo,Meshakhte,2,2,D
+2026-04-17,Dinamo Tbilisi,Meshakhte,1,1,D
+2026-04-17,Samgurali,Dila,0,1,A
+2026-04-17,Gagra,Torpedo Kutaisi,2,2,D
+2026-04-18,Dinamo Batumi,Saburtalo,0,3,A
+2026-04-18,Spaeri,Rustavi,1,1,D
+2026-04-21,Dinamo Tbilisi,Gagra,0,1,A
+2026-04-21,Torpedo Kutaisi,Samgurali,6,1,H
+2026-04-22,Meshakhte,Rustavi,0,0,D
+2026-04-22,Spaeri,Saburtalo,0,2,A
+2026-04-22,Dila,Dinamo Batumi,1,0,H
+2026-04-25,Samgurali,Dinamo Tbilisi,1,2,A
+2026-04-26,Spaeri,Dila,0,1,A
+2026-04-26,Rustavi,Saburtalo,2,1,H
+2026-04-27,Gagra,Meshakhte,1,1,D
+2026-04-27,Dinamo Batumi,Torpedo Kutaisi,0,3,A
+2026-05-01,Spaeri,Torpedo Kutaisi,1,1,D
+2026-05-01,Rustavi,Dila,1,0,H
+2026-05-02,Meshakhte,Saburtalo,1,4,A
+2026-05-02,Dinamo Batumi,Dinamo Tbilisi,2,2,D
+2026-05-02,Samgurali,Gagra,2,0,H
+2026-05-05,Torpedo Kutaisi,Rustavi,1,1,D
+2026-05-06,Dila,Saburtalo,0,1,A
+2026-05-06,Samgurali,Meshakhte,3,1,H
+2026-05-06,Gagra,Dinamo Batumi,1,2,A
+2026-05-07,Dinamo Tbilisi,Spaeri,2,1,H
+2026-05-10,Meshakhte,Dila,0,2,A
+2026-05-10,Saburtalo,Torpedo Kutaisi,1,1,D
+2026-05-10,Dinamo Batumi,Samgurali,3,1,H
+2026-05-11,Spaeri,Gagra,3,0,H
+2026-05-11,Rustavi,Dinamo Tbilisi,2,3,A
+2026-05-15,Torpedo Kutaisi,Dila,2,1,H
+2026-05-16,Gagra,Rustavi,1,1,D
+2026-05-16,Dinamo Tbilisi,Saburtalo,2,0,H
+2026-05-16,Dinamo Batumi,Meshakhte,2,1,H
+2026-05-17,Samgurali,Spaeri,0,0,D
+2026-05-20,Meshakhte,Torpedo Kutaisi,1,4,A
+2026-05-20,Saburtalo,Gagra,1,0,H
+2026-05-20,Dila,Dinamo Tbilisi,0,0,D
+2026-05-21,Spaeri,Dinamo Batumi,3,3,D
+2026-05-21,Rustavi,Samgurali,1,0,H
+2026-05-24,Dinamo Tbilisi,Torpedo Kutaisi,0,1,A
+2026-05-24,Gagra,Dila,2,0,H
+2026-05-25,Samgurali,Saburtalo,3,2,H
+2026-05-25,Dinamo Batumi,Rustavi,1,0,H
+2026-05-25,Spaeri,Meshakhte,2,1,H
+2026-05-28,Torpedo Kutaisi,Gagra,1,2,A
+2026-05-29,Dila,Samgurali,2,3,A
+2026-05-29,Rustavi,Spaeri,2,1,H
+2026-05-29,Saburtalo,Dinamo Batumi,1,0,H
+2026-05-30,Meshakhte,Dinamo Tbilisi,1,6,A
+2026-06-12,Saburtalo,Spaeri,1,1,D
+2026-06-12,Dinamo Batumi,Dila,3,2,H
+2026-06-13,Rustavi,Meshakhte,1,0,H
+2026-06-13,Samgurali,Torpedo Kutaisi,2,1,H
+2026-06-14,Gagra,Dinamo Tbilisi,2,1,H
+2026-06-16,Dila,Spaeri,3,1,H
+2026-06-17,Saburtalo,Rustavi,1,2,A
+2026-06-17,Torpedo Kutaisi,Dinamo Batumi,2,3,A
+2026-06-18,Meshakhte,Gagra,1,1,D
+2026-06-18,Dinamo Tbilisi,Samgurali,5,3,H
+2026-06-22,Dila,Rustavi,3,0,H
+2026-06-22,Torpedo Kutaisi,Spaeri,0,0,D
+2026-06-23,Saburtalo,Meshakhte,2,1,H
+2026-06-23,Dinamo Tbilisi,Dinamo Batumi,2,1,H
+2026-06-24,Gagra,Samgurali,0,0,D

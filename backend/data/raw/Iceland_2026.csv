@@ -1,0 +1,97 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2026-04-10,Vikingur Reykjavik,Breidablik,1,1,D
+2026-04-12,IBV Vestmannaeyjar,FH hafnarfjordur,1,1,D
+2026-04-12,KR Reykjavik,Keflavik,3,2,H
+2026-04-12,KA Akureyri,Stjarnan,2,3,A
+2026-04-12,Valur Reykjavik,Thor Akureyri,1,2,A
+2026-04-12,Fram Reykjavik,IA Akranes,3,3,D
+2026-04-17,Valur Reykjavik,IBV Vestmannaeyjar,2,1,H
+2026-04-17,KR Reykjavik,Thor Akureyri,5,2,H
+2026-04-17,KA Akureyri,Vikingur Reykjavik,0,2,A
+2026-04-17,Breidablik,IA Akranes,1,0,H
+2026-04-17,Fram Reykjavik,Keflavik,3,1,H
+2026-04-17,Stjarnan,FH hafnarfjordur,3,2,H
+2026-04-22,Keflavik,Breidablik,0,0,D
+2026-04-22,IA Akranes,KA Akureyri,1,1,D
+2026-04-23,IBV Vestmannaeyjar,KR Reykjavik,2,6,A
+2026-04-23,Thor Akureyri,Fram Reykjavik,1,0,H
+2026-04-23,Valur Reykjavik,FH hafnarfjordur,3,0,H
+2026-04-23,Vikingur Reykjavik,Stjarnan,3,2,H
+2026-04-26,KA Akureyri,Keflavik,1,2,A
+2026-04-27,Fram Reykjavik,IBV Vestmannaeyjar,5,1,H
+2026-04-27,KR Reykjavik,FH hafnarfjordur,4,2,H
+2026-04-27,Stjarnan,Valur Reykjavik,2,4,A
+2026-04-27,Breidablik,Thor Akureyri,4,0,H
+2026-04-27,Vikingur Reykjavik,IA Akranes,4,0,H
+2026-05-02,Thor Akureyri,KA Akureyri,0,1,A
+2026-05-02,Valur Reykjavik,KR Reykjavik,1,4,A
+2026-05-03,IBV Vestmannaeyjar,Breidablik,1,2,A
+2026-05-03,Stjarnan,IA Akranes,1,2,A
+2026-05-03,Keflavik,Vikingur Reykjavik,1,3,A
+2026-05-03,FH hafnarfjordur,Fram Reykjavik,3,4,A
+2026-05-08,Vikingur Reykjavik,Thor Akureyri,6,0,H
+2026-05-08,Stjarnan,KR Reykjavik,2,3,A
+2026-05-08,Breidablik,FH hafnarfjordur,3,3,D
+2026-05-08,IA Akranes,Keflavik,1,3,A
+2026-05-08,Fram Reykjavik,Valur Reykjavik,3,2,H
+2026-05-10,KA Akureyri,IBV Vestmannaeyjar,2,0,H
+2026-05-17,IBV Vestmannaeyjar,Vikingur Reykjavik,0,2,A
+2026-05-17,Thor Akureyri,IA Akranes,1,2,A
+2026-05-17,FH hafnarfjordur,KA Akureyri,1,2,A
+2026-05-17,Keflavik,Stjarnan,1,1,D
+2026-05-17,KR Reykjavik,Fram Reykjavik,2,2,D
+2026-05-17,Valur Reykjavik,Breidablik,3,2,H
+2026-05-21,IA Akranes,IBV Vestmannaeyjar,2,2,D
+2026-05-22,Keflavik,Thor Akureyri,1,0,H
+2026-05-22,KA Akureyri,Valur Reykjavik,0,1,A
+2026-05-22,Stjarnan,Fram Reykjavik,0,1,A
+2026-05-22,Breidablik,KR Reykjavik,6,3,H
+2026-05-22,Vikingur Reykjavik,FH hafnarfjordur,5,0,H
+2026-05-26,KR Reykjavik,Valur Reykjavik,3,1,H
+2026-05-26,Stjarnan,Vikingur Reykjavik,1,3,A
+2026-05-29,FH hafnarfjordur,IA Akranes,0,1,A
+2026-05-29,Fram Reykjavik,Breidablik,4,3,H
+2026-05-31,IBV Vestmannaeyjar,Keflavik,6,1,H
+2026-05-31,KR Reykjavik,KA Akureyri,5,3,H
+2026-05-31,Thor Akureyri,Stjarnan,1,3,A
+2026-05-31,Valur Reykjavik,Vikingur Reykjavik,1,5,A
+2026-06-14,Thor Akureyri,IBV Vestmannaeyjar,1,4,A
+2026-06-14,Keflavik,FH hafnarfjordur,1,2,A
+2026-06-15,KA Akureyri,Fram Reykjavik,3,4,A
+2026-06-16,Stjarnan,Breidablik,4,4,D
+2026-06-16,Vikingur Reykjavik,KR Reykjavik,2,0,H
+2026-06-16,IA Akranes,Valur Reykjavik,1,0,H
+2026-06-21,IBV Vestmannaeyjar,Stjarnan,2,1,H
+2026-06-21,FH hafnarfjordur,Thor Akureyri,1,1,D
+2026-06-21,Valur Reykjavik,Keflavik,1,1,D
+2026-06-21,Breidablik,KA Akureyri,3,1,H
+2026-06-21,Fram Reykjavik,Vikingur Reykjavik,0,5,A
+2026-06-22,KR Reykjavik,IA Akranes,5,3,H
+2026-06-25,Breidablik,Vikingur Reykjavik,1,4,A
+2026-06-28,Keflavik,KR Reykjavik,3,2,H
+2026-06-28,FH hafnarfjordur,IBV Vestmannaeyjar,1,1,D
+2026-06-28,Stjarnan,KA Akureyri,3,1,H
+2026-06-28,Thor Akureyri,Valur Reykjavik,2,4,A
+2026-06-29,IA Akranes,Fram Reykjavik,0,2,A
+2026-07-02,Thor Akureyri,KR Reykjavik,3,3,D
+2026-07-02,Vikingur Reykjavik,KA Akureyri,3,2,H
+2026-07-03,FH hafnarfjordur,Stjarnan,2,2,D
+2026-07-04,IA Akranes,Breidablik,1,2,A
+2026-07-04,IBV Vestmannaeyjar,Valur Reykjavik,1,0,H
+2026-07-06,Keflavik,Fram Reykjavik,1,1,D
+2026-07-12,KR Reykjavik,IBV Vestmannaeyjar,5,2,H
+2026-07-12,KA Akureyri,IA Akranes,3,2,H
+2026-07-12,Fram Reykjavik,Thor Akureyri,6,1,H
+2026-07-12,FH hafnarfjordur,Valur Reykjavik,2,0,H
+2026-07-13,Breidablik,Keflavik,2,1,H
+2026-07-18,Thor Akureyri,Vikingur Reykjavik,2,1,H
+2026-07-18,Valur Reykjavik,Fram Reykjavik,2,3,A
+2026-07-19,IBV Vestmannaeyjar,KA Akureyri,2,2,D
+2026-07-19,KR Reykjavik,Stjarnan,5,0,H
+2026-07-20,Keflavik,IA Akranes,5,2,H
+2026-07-20,FH hafnarfjordur,Breidablik,0,0,D
+2026-07-24,Vikingur Reykjavik,Keflavik,5,1,H
+2026-07-26,IA Akranes,Stjarnan,5,1,H
+2026-07-26,Fram Reykjavik,FH hafnarfjordur,0,0,D
+2026-07-27,Breidablik,IBV Vestmannaeyjar,1,0,H
+2026-07-27,KA Akureyri,Thor Akureyri,0,0,D

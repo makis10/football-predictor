@@ -1,0 +1,241 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,PSH,PSD,PSA
+17/08/2012,Pogon Szczecin,Zaglebie,4,0,H,3.23,3.21,2.47
+17/08/2012,Piast Gliwice,Gornik Z.,1,2,A,2.72,3.12,2.98
+18/08/2012,Jagiellonia,Podbeskidzie,2,1,H,1.74,3.6,5.63
+18/08/2012,Widzew Lodz,Slask Wroclaw,2,1,H,2.7,3.11,2.95
+18/08/2012,Lech Poznan,Ruch,4,0,H,2.12,3.29,3.89
+19/08/2012,Wisla,GKS Belchatow,2,1,H,1.5,4.13,8.31
+19/08/2012,Legia,Korona Kielce,4,0,H,1.63,3.67,7.21
+20/08/2012,Lechia Gdansk,Polonia Warszawa,1,3,A,2.45,2.99,3.54
+24/08/2012,Zaglebie,Piast Gliwice,2,1,H,1.85,3.64,4.76
+24/08/2012,Jagiellonia,Gornik Z.,1,1,D,2.24,3.22,3.7
+25/08/2012,Podbeskidzie,Wisla,1,1,D,4.48,3.35,1.96
+25/08/2012,Widzew Lodz,Ruch,2,0,H,2.47,3.05,3.36
+25/08/2012,Polonia Warszawa,Lech Poznan,1,2,A,2.97,3.2,2.62
+26/08/2012,Slask Wroclaw,Korona Kielce,2,0,H,2.45,3.19,3.24
+26/08/2012,GKS Belchatow,Legia,0,2,A,4.78,3.38,1.93
+27/08/2012,Pogon Szczecin,Lechia Gdansk,0,2,A,2.02,3.27,4.05
+31/08/2012,Piast Gliwice,Pogon Szczecin,1,0,H,2.23,3.3,3.65
+31/08/2012,Wisla,Polonia Warszawa,1,3,A,1.95,3.45,4.47
+01/09/2012,Korona Kielce,Lechia Gdansk,0,1,A,2.21,3.22,3.74
+01/09/2012,Widzew Lodz,GKS Belchatow,1,0,H,2.06,3.2,4.32
+01/09/2012,Jagiellonia,Zaglebie,0,0,D,2.41,3.33,3.18
+02/09/2012,Lech Poznan,Gornik Z.,0,0,D,1.65,3.88,5.98
+02/09/2012,Slask Wroclaw,Ruch,1,0,H,2,3.49,4.09
+03/09/2012,Legia,Podbeskidzie,3,1,H,1.31,5.57,11.22
+14/09/2012,Podbeskidzie,Slask Wroclaw,1,1,D,3.63,3.27,2.22
+14/09/2012,Pogon Szczecin,Wisla,2,0,H,3.08,3,2.68
+15/09/2012,Polonia Warszawa,Jagiellonia,1,1,D,1.71,3.84,5.18
+15/09/2012,Lechia Gdansk,Piast Gliwice,1,2,A,1.92,3.35,4.72
+15/09/2012,Ruch,Korona Kielce,1,1,D,1.99,3.46,4.21
+16/09/2012,Zaglebie,Widzew Lodz,0,1,A,2.06,3.32,4.2
+16/09/2012,Gornik Z.,Legia,2,2,D,3.71,3.23,2.21
+17/09/2012,GKS Belchatow,Lech Poznan,0,1,A,3.53,3.12,2.34
+21/09/2012,Korona Kielce,Podbeskidzie,2,1,H,1.87,3.66,4.59
+21/09/2012,Legia,Polonia Warszawa,1,1,D,1.85,3.68,4.71
+22/09/2012,Jagiellonia,Piast Gliwice,0,2,A,1.94,3.56,4.32
+22/09/2012,Ruch,Zaglebie,2,1,H,2.15,3.41,3.77
+22/09/2012,Wisla,Lechia Gdansk,1,0,H,1.92,3.46,4.68
+23/09/2012,Slask Wroclaw,GKS Belchatow,2,1,H,1.61,3.96,6.56
+23/09/2012,Lech Poznan,Pogon Szczecin,1,1,D,1.68,3.7,6.37
+24/09/2012,Widzew Lodz,Gornik Z.,1,1,D,2.7,3.3,2.81
+28/09/2012,Podbeskidzie,Ruch,1,2,A,3.35,3.25,2.35
+28/09/2012,Polonia Warszawa,Widzew Lodz,3,1,H,2.04,3.32,4.3
+29/09/2012,GKS Belchatow,Korona Kielce,1,1,D,2.63,3.12,3.04
+29/09/2012,Pogon Szczecin,Jagiellonia,1,1,D,2.06,3.39,4.01
+29/09/2012,Zaglebie,Legia,2,2,D,4.07,3.38,2.04
+30/09/2012,Gornik Z.,Slask Wroclaw,4,1,H,2.36,3.26,3.39
+30/09/2012,Lechia Gdansk,Lech Poznan,2,0,H,3.39,3.15,2.43
+01/10/2012,Piast Gliwice,Wisla,2,0,H,3.08,3.15,2.56
+05/10/2012,Ruch,GKS Belchatow,2,1,H,1.72,3.69,5.74
+05/10/2012,Legia,Wisla,2,1,H,1.61,4.05,6.37
+06/10/2012,Korona Kielce,Zaglebie,1,0,H,2.35,3.31,3.3
+06/10/2012,Podbeskidzie,Gornik Z.,1,3,A,3.98,3.41,2.06
+06/10/2012,Lech Poznan,Piast Gliwice,4,0,H,1.73,3.58,5.76
+07/10/2012,Widzew Lodz,Pogon Szczecin,1,3,A,1.98,3.28,4.55
+07/10/2012,Slask Wroclaw,Polonia Warszawa,2,1,H,2.31,3.35,3.32
+08/10/2012,Jagiellonia,Lechia Gdansk,0,2,A,2.29,3.14,3.71
+19/10/2012,Gornik Z.,Korona Kielce,2,0,H,1.74,3.83,5.33
+19/10/2012,Zaglebie,Lech Poznan,0,1,A,3.45,3.18,2.37
+20/10/2012,GKS Belchatow,Podbeskidzie,2,1,H,2.04,3.3,4.3
+20/10/2012,Piast Gliwice,Widzew Lodz,1,2,A,2.29,3.17,3.69
+20/10/2012,Wisla,Jagiellonia,0,0,D,1.87,3.48,4.86
+21/10/2012,Lechia Gdansk,Slask Wroclaw,2,3,A,2.37,3.13,3.47
+21/10/2012,Polonia Warszawa,Ruch,2,1,H,2,3.53,4.04
+22/10/2012,Pogon Szczecin,Legia,0,3,A,4.04,3.5,2
+26/10/2012,Podbeskidzie,Lechia Gdansk,2,3,A,3.33,3.2,2.39
+26/10/2012,Widzew Lodz,Wisla,1,2,A,3.1,3.11,2.58
+27/10/2012,Korona Kielce,Pogon Szczecin,2,1,H,2.11,3.37,3.84
+27/10/2012,GKS Belchatow,Polonia Warszawa,0,5,A,3.6,3.3,2.25
+27/10/2012,Lech Poznan,Jagiellonia,0,2,A,1.5,4.07,8.35
+28/10/2012,Slask Wroclaw,Zaglebie,0,2,A,1.79,3.77,5.05
+28/10/2012,Legia,Piast Gliwice,3,2,H,1.38,5,9.88
+29/10/2012,Ruch,Gornik Z.,0,0,D,2.97,3.16,2.62
+02/11/2012,Gornik Z.,GKS Belchatow,2,0,H,1.36,5.11,10.48
+02/11/2012,Wisla,Lech Poznan,0,1,A,2.47,3.1,3.37
+03/11/2012,Piast Gliwice,Ruch,1,3,A,2.6,3.16,3.09
+03/11/2012,Zaglebie,Podbeskidzie,1,2,A,1.58,4.18,6.45
+03/11/2012,Jagiellonia,Widzew Lodz,2,2,D,2.02,3.42,4.12
+04/11/2012,Lechia Gdansk,Legia,1,2,A,3.94,3.39,2.08
+04/11/2012,Polonia Warszawa,Korona Kielce,2,0,H,1.59,4.13,6.32
+05/11/2012,Pogon Szczecin,Slask Wroclaw,0,3,A,2.7,3.36,2.75
+09/11/2012,Ruch,Lechia Gdansk,0,1,A,2.02,3.4,4.24
+09/11/2012,Widzew Lodz,Lech Poznan,0,1,A,3.77,3.2,2.24
+10/11/2012,Podbeskidzie,Polonia Warszawa,0,1,A,4.63,3.67,1.86
+10/11/2012,Slask Wroclaw,Piast Gliwice,1,3,A,1.68,3.9,5.65
+10/11/2012,Legia,Jagiellonia,1,2,A,1.41,4.61,9.93
+11/11/2012,Gornik Z.,Zaglebie,0,2,A,1.61,3.99,6.52
+11/11/2012,Korona Kielce,Wisla,1,1,D,2.68,3.23,2.92
+12/11/2012,GKS Belchatow,Pogon Szczecin,0,1,A,2.78,3.24,2.79
+16/11/2012,Zaglebie,GKS Belchatow,1,0,H,1.55,4.12,7.24
+16/11/2012,Lechia Gdansk,Widzew Lodz,2,0,H,2,3.54,4.12
+17/11/2012,Piast Gliwice,Podbeskidzie,1,0,H,1.83,3.59,4.98
+17/11/2012,Jagiellonia,Korona Kielce,0,0,D,2.15,3.37,3.81
+17/11/2012,Polonia Warszawa,Gornik Z.,1,1,D,2.18,3.37,3.72
+18/11/2012,Lech Poznan,Legia,1,3,A,2.71,3.25,2.87
+18/11/2012,Wisla,Slask Wroclaw,1,0,H,2.25,3.28,3.62
+19/11/2012,Pogon Szczecin,Ruch,1,0,H,2.41,3.17,3.37
+23/11/2012,Korona Kielce,Piast Gliwice,4,0,H,2.13,3.41,3.74
+23/11/2012,Legia,Widzew Lodz,1,0,H,1.33,5.21,11.51
+24/11/2012,GKS Belchatow,Lechia Gdansk,1,1,D,3.47,3.24,2.33
+24/11/2012,Polonia Warszawa,Zaglebie,0,1,A,1.82,3.58,5.13
+24/11/2012,Gornik Z.,Pogon Szczecin,0,0,D,1.76,3.66,5.5
+25/11/2012,Slask Wroclaw,Jagiellonia,3,3,D,1.92,3.5,4.58
+25/11/2012,Ruch,Wisla,1,2,A,2.58,3.23,3.05
+26/11/2012,Podbeskidzie,Lech Poznan,2,3,A,5.41,3.61,1.78
+30/11/2012,Jagiellonia,GKS Belchatow,2,2,D,1.88,3.45,4.94
+30/11/2012,Lech Poznan,Slask Wroclaw,0,3,A,1.96,3.57,4.25
+01/12/2012,Pogon Szczecin,Podbeskidzie,2,0,H,1.84,3.52,5.05
+01/12/2012,Widzew Lodz,Korona Kielce,1,0,H,2.67,3.19,2.97
+01/12/2012,Wisla,Gornik Z.,1,3,A,2.56,3.14,3.16
+02/12/2012,Lechia Gdansk,Zaglebie,2,2,D,2.59,3.18,3.08
+02/12/2012,Legia,Ruch,3,0,H,1.44,4.62,8.66
+03/12/2012,Piast Gliwice,Polonia Warszawa,1,1,D,3.96,3.37,2.1
+07/12/2012,Ruch,Jagiellonia,1,1,D,2.33,3.32,3.4
+07/12/2012,Slask Wroclaw,Legia,1,0,H,3.56,3.32,2.25
+08/12/2012,GKS Belchatow,Piast Gliwice,1,3,A,2.56,3.35,2.96
+08/12/2012,Zaglebie,Wisla,4,1,H,2.42,3.12,3.44
+08/12/2012,Gornik Z.,Lechia Gdansk,2,0,H,2.17,3.31,3.84
+09/12/2012,Podbeskidzie,Widzew Lodz,2,2,D,2.85,3.17,2.79
+09/12/2012,Korona Kielce,Lech Poznan,0,1,A,2.89,3.27,2.68
+10/12/2012,Polonia Warszawa,Pogon Szczecin,2,0,H,1.71,3.75,5.55
+22/02/2013,Zaglebie,Pogon Szczecin,3,0,H,2.04,3.47,4.05
+22/02/2013,Polonia Warszawa,Lechia Gdansk,1,1,D,3.14,3.21,2.52
+23/02/2013,Podbeskidzie,Jagiellonia,4,0,H,3.24,3.29,2.43
+23/02/2013,Slask Wroclaw,Widzew Lodz,2,1,H,1.95,3.52,4.38
+23/02/2013,Korona Kielce,Legia,3,2,H,3.94,3.35,2.11
+24/02/2013,GKS Belchatow,Wisla,0,0,D,4.59,3.34,1.97
+24/02/2013,Ruch,Lech Poznan,0,4,A,3.15,3.09,2.61
+25/02/2013,Gornik Z.,Piast Gliwice,1,0,H,1.76,3.68,5.38
+01/03/2013,Lechia Gdansk,Pogon Szczecin,1,1,D,2.16,3.25,3.92
+01/03/2013,Lech Poznan,Polonia Warszawa,0,1,A,1.78,3.76,5.09
+02/03/2013,Ruch,Widzew Lodz,3,0,H,2.6,3.27,2.99
+02/03/2013,Piast Gliwice,Zaglebie,1,1,D,3.06,3.31,2.52
+02/03/2013,Legia,GKS Belchatow,0,0,D,1.23,6.54,17.32
+03/03/2013,Korona Kielce,Slask Wroclaw,1,1,D,2.68,3.22,2.93
+03/03/2013,Gornik Z.,Jagiellonia,1,2,A,1.79,3.58,5.33
+04/03/2013,Wisla,Podbeskidzie,0,0,D,2.06,3.34,4.18
+08/03/2013,Zaglebie,Jagiellonia,2,1,H,2.04,3.31,4.28
+08/03/2013,Podbeskidzie,Legia,1,2,A,5.56,3.87,1.7
+09/03/2013,GKS Belchatow,Widzew Lodz,0,0,D,2.96,3.13,2.73
+09/03/2013,Ruch,Slask Wroclaw,1,1,D,2.98,3.25,2.61
+09/03/2013,Polonia Warszawa,Wisla,1,2,A,2.33,3.26,3.45
+10/03/2013,Pogon Szczecin,Piast Gliwice,0,2,A,2.14,3.34,3.89
+10/03/2013,Gornik Z.,Lech Poznan,0,1,A,2.87,3.04,2.87
+11/03/2013,Lechia Gdansk,Korona Kielce,3,2,H,2.4,3.05,3.56
+15/03/2013,Jagiellonia,Polonia Warszawa,2,0,H,2.58,3.18,3.09
+15/03/2013,Legia,Gornik Z.,3,0,H,1.61,3.9,6.76
+16/03/2013,Korona Kielce,Ruch,2,1,H,2.23,3.24,3.76
+16/03/2013,Widzew Lodz,Zaglebie,0,0,D,2.83,3.14,2.83
+16/03/2013,Lech Poznan,GKS Belchatow,0,0,D,1.43,4.51,9.75
+17/03/2013,Slask Wroclaw,Podbeskidzie,1,1,D,1.65,3.94,6.06
+17/03/2013,Wisla,Pogon Szczecin,2,0,H,1.89,3.44,4.84
+18/03/2013,Piast Gliwice,Lechia Gdansk,2,0,H,2.49,3.03,3.33
+28/03/2013,Podbeskidzie,Korona Kielce,1,1,D,2.91,3.2,2.71
+28/03/2013,Gornik Z.,Widzew Lodz,3,1,H,1.84,3.49,5.05
+30/03/2013,Piast Gliwice,Jagiellonia,1,1,D,2.13,3.33,3.81
+30/03/2013,GKS Belchatow,Slask Wroclaw,1,0,H,3.87,3.24,2.16
+30/03/2013,Polonia Warszawa,Legia,1,2,A,3.54,3.31,2.25
+01/04/2013,Zaglebie,Ruch,2,3,A,1.96,3.54,4.32
+01/04/2013,Lechia Gdansk,Wisla,0,0,D,2.86,3.07,2.86
+01/04/2013,Pogon Szczecin,Lech Poznan,0,2,A,3.86,3.13,2.24
+05/04/2013,Ruch,Podbeskidzie,1,3,A,2.24,3.32,3.62
+05/04/2013,Lech Poznan,Lechia Gdansk,4,2,H,1.67,3.65,6.55
+06/04/2013,Jagiellonia,Pogon Szczecin,1,0,H,2.27,3.09,3.8
+06/04/2013,Slask Wroclaw,Gornik Z.,2,1,H,2.29,3.19,3.61
+06/04/2013,Legia,Zaglebie,2,0,H,1.47,4.48,8.19
+07/04/2013,Korona Kielce,GKS Belchatow,1,0,H,1.98,3.35,4.5
+07/04/2013,Wisla,Piast Gliwice,1,2,A,1.94,3.47,4.47
+08/04/2013,Widzew Lodz,Polonia Warszawa,3,2,H,2.91,3.08,2.76
+12/04/2013,Pogon Szczecin,Widzew Lodz,1,1,D,2.45,3.16,3.31
+12/04/2013,Zaglebie,Korona Kielce,2,1,H,2.15,3.35,3.81
+13/04/2013,GKS Belchatow,Ruch,0,3,A,2.66,3.16,2.99
+13/04/2013,Polonia Warszawa,Slask Wroclaw,2,2,D,2.75,3.22,2.85
+13/04/2013,Wisla,Legia,1,2,A,4.38,3.27,2.02
+14/04/2013,Gornik Z.,Podbeskidzie,0,1,A,1.72,3.7,5.7
+14/04/2013,Lechia Gdansk,Jagiellonia,2,3,A,2.04,3.36,4.17
+15/04/2013,Piast Gliwice,Lech Poznan,0,3,A,4.29,3.45,1.99
+19/04/2013,Widzew Lodz,Piast Gliwice,1,1,D,2.41,3.31,3.26
+19/04/2013,Korona Kielce,Gornik Z.,1,0,H,2.22,3.35,3.61
+20/04/2013,Podbeskidzie,GKS Belchatow,1,1,D,1.83,3.48,5.2
+20/04/2013,Jagiellonia,Wisla,2,2,D,2.16,3.45,3.64
+20/04/2013,Legia,Pogon Szczecin,3,1,H,1.33,5.25,12.19
+21/04/2013,Slask Wroclaw,Lechia Gdansk,1,1,D,2.09,3.4,3.96
+21/04/2013,Lech Poznan,Zaglebie,3,1,H,1.67,3.82,6.1
+22/04/2013,Ruch,Polonia Warszawa,2,1,H,2.31,3.28,3.39
+26/04/2013,Pogon Szczecin,Korona Kielce,2,1,H,2.29,3.22,3.6
+26/04/2013,Wisla,Widzew Lodz,1,0,H,2.04,3.47,4.05
+27/04/2013,Polonia Warszawa,GKS Belchatow,0,1,A,1.86,3.67,4.63
+27/04/2013,Lechia Gdansk,Podbeskidzie,1,2,A,2.27,3.37,3.45
+27/04/2013,Piast Gliwice,Legia,0,0,D,5.85,3.86,1.68
+28/04/2013,Zaglebie,Slask Wroclaw,4,0,H,2.77,3.21,2.83
+28/04/2013,Gornik Z.,Ruch,2,0,H,2.31,3.36,3.39
+29/04/2013,Jagiellonia,Lech Poznan,0,1,A,4.5,3.53,1.9
+03/05/2013,Podbeskidzie,Zaglebie,1,1,D,2.83,3.31,2.69
+03/05/2013,Korona Kielce,Polonia Warszawa,1,1,D,1.96,3.48,4.38
+04/05/2013,Widzew Lodz,Jagiellonia,3,0,H,2.5,3.3,3.1
+04/05/2013,GKS Belchatow,Gornik Z.,2,0,H,3.44,3.23,2.36
+04/05/2013,Lech Poznan,Wisla,1,0,H,1.54,4.08,7.61
+05/05/2013,Legia,Lechia Gdansk,1,0,H,1.38,4.94,10.36
+05/05/2013,Slask Wroclaw,Pogon Szczecin,1,0,H,1.82,3.65,5
+06/05/2013,Ruch,Piast Gliwice,1,2,A,2.18,3.44,3.62
+10/05/2013,Polonia Warszawa,Podbeskidzie,2,1,H,3.09,3.36,2.48
+10/05/2013,Lech Poznan,Widzew Lodz,4,0,H,1.38,4.7,11.57
+11/05/2013,Pogon Szczecin,GKS Belchatow,0,1,A,2.34,3.13,3.6
+11/05/2013,Wisla,Korona Kielce,3,0,H,2.09,3.18,4.3
+11/05/2013,Jagiellonia,Legia,0,3,A,6.27,3.91,1.64
+12/05/2013,Piast Gliwice,Slask Wroclaw,3,2,H,2.62,3.03,3.19
+12/05/2013,Lechia Gdansk,Ruch,4,4,D,2.38,2.94,3.77
+13/05/2013,Zaglebie,Gornik Z.,1,2,A,1.98,3.41,4.4
+17/05/2013,Ruch,Pogon Szczecin,2,3,A,2.04,3.45,4
+17/05/2013,Slask Wroclaw,Wisla,3,0,H,2.14,3.41,3.78
+18/05/2013,Legia,Lech Poznan,1,0,H,2.16,3.31,3.87
+18/05/2013,Podbeskidzie,Piast Gliwice,1,2,A,2.65,3.25,2.95
+18/05/2013,Gornik Z.,Polonia Warszawa,0,4,A,1.85,3.56,4.95
+19/05/2013,GKS Belchatow,Zaglebie,3,2,H,2.91,3.27,2.67
+19/05/2013,Korona Kielce,Jagiellonia,5,0,H,1.86,3.49,5
+20/05/2013,Widzew Lodz,Lechia Gdansk,1,2,A,2.43,2.9,3.46
+23/05/2013,Piast Gliwice,Korona Kielce,1,1,D,2.14,3.25,3.85
+24/05/2013,Wisla,Ruch,1,1,D,2.23,3.31,3.64
+24/05/2013,Widzew Lodz,Legia,1,1,D,7.35,4,1.56
+25/05/2013,Lechia Gdansk,GKS Belchatow,1,1,D,2.43,3.24,3.22
+25/05/2013,Lech Poznan,Podbeskidzie,0,2,A,1.38,4.92,9.42
+26/05/2013,Pogon Szczecin,Gornik Z.,1,0,H,2.57,3.12,3.18
+26/05/2013,Jagiellonia,Slask Wroclaw,0,3,A,3.95,3.61,2.02
+27/05/2013,Zaglebie,Polonia Warszawa,0,0,D,2.12,3.43,3.7
+30/05/2013,Gornik Z.,Wisla,0,1,A,2.16,3.14,4.07
+30/05/2013,Podbeskidzie,Pogon Szczecin,2,1,H,1.97,3.58,4.19
+30/05/2013,Polonia Warszawa,Piast Gliwice,1,1,D,2.66,3.34,2.85
+30/05/2013,Ruch,Legia,0,0,D,3.85,3.5,2.06
+30/05/2013,Slask Wroclaw,Lech Poznan,1,1,D,2.08,3.52,3.84
+30/05/2013,Zaglebie,Lechia Gdansk,0,3,A,1.99,3.61,4.08
+30/05/2013,GKS Belchatow,Jagiellonia,1,1,D,1.63,3.93,6.38
+30/05/2013,Korona Kielce,Widzew Lodz,0,0,D,2.34,3.22,3.45
+02/06/2013,Jagiellonia,Ruch,1,0,H,2.49,3.35,3.08
+02/06/2013,Lech Poznan,Korona Kielce,2,0,H,1.53,4.34,7.08
+02/06/2013,Lechia Gdansk,Gornik Z.,0,2,A,2.16,3.37,3.75
+02/06/2013,Legia,Slask Wroclaw,5,0,H,1.83,3.79,4.61
+02/06/2013,Piast Gliwice,GKS Belchatow,2,3,A,2.5,3.41,3.02
+02/06/2013,Pogon Szczecin,Polonia Warszawa,3,1,H,1.7,3.89,5.56
+02/06/2013,Widzew Lodz,Podbeskidzie,1,2,A,3.86,3.46,2.1
+02/06/2013,Wisla,Zaglebie,0,1,A,1.85,3.7,4.68

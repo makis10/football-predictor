@@ -1,0 +1,199 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2023-07-29,Velez,Zvijezda 09,5,0,H
+2023-07-30,GOSK Gabela,Tuzla City,1,4,A
+2023-07-30,FK Sarajevo,Sloga Doboj,1,2,A
+2023-08-04,Posusje,Siroki Brijeg,1,2,A
+2023-08-05,Zvijezda 09,Igman Konjic,3,4,A
+2023-08-06,Velez,GOSK Gabela,0,0,D
+2023-08-11,FK Sarajevo,Posusje,3,0,H
+2023-08-12,GOSK Gabela,Zvijezda 09,2,0,H
+2023-08-12,Igman Konjic,Sloga Doboj,1,0,H
+2023-08-12,Zeljeznicar Sarajevo,Borac Banja Luka,2,0,H
+2023-08-13,Siroki Brijeg,Tuzla City,1,0,H
+2023-08-19,Zvijezda 09,Sloga Doboj,1,0,H
+2023-08-19,Posusje,Zeljeznicar Sarajevo,1,0,H
+2023-08-20,Borac Banja Luka,Igman Konjic,4,1,H
+2023-08-20,Zrinjski,GOSK Gabela,3,1,H
+2023-08-20,Velez,Siroki Brijeg,1,1,D
+2023-08-21,Tuzla City,FK Sarajevo,1,2,A
+2023-08-25,Borac Banja Luka,Sloga Doboj,5,0,H
+2023-08-26,Igman Konjic,Posusje,2,1,H
+2023-08-26,Zeljeznicar Sarajevo,Tuzla City,3,1,H
+2023-08-27,Siroki Brijeg,GOSK Gabela,2,0,H
+2023-08-27,Zrinjski,Zvijezda 09,5,3,H
+2023-08-28,FK Sarajevo,Velez,1,0,H
+2023-08-30,Zeljeznicar Sarajevo,Igman Konjic,1,0,H
+2023-09-01,Borac Banja Luka,Zvijezda 09,4,2,H
+2023-09-02,Posusje,Sloga Doboj,4,0,H
+2023-09-02,GOSK Gabela,FK Sarajevo,2,2,D
+2023-09-03,Tuzla City,Igman Konjic,3,1,H
+2023-09-03,Velez,Zeljeznicar Sarajevo,1,0,H
+2023-09-13,Zrinjski,Posusje,0,1,A
+2023-09-15,Sloga Doboj,Tuzla City,2,1,H
+2023-09-15,Zeljeznicar Sarajevo,GOSK Gabela,2,3,A
+2023-09-16,Igman Konjic,Velez,2,4,A
+2023-09-16,FK Sarajevo,Zrinjski,1,0,H
+2023-09-17,Siroki Brijeg,Zvijezda 09,2,1,H
+2023-09-17,Borac Banja Luka,Posusje,1,0,H
+2023-09-20,Sloga Doboj,Zeljeznicar Sarajevo,3,0,H
+2023-09-22,Siroki Brijeg,FK Sarajevo,1,0,H
+2023-09-23,Tuzla City,Borac Banja Luka,1,2,A
+2023-09-23,GOSK Gabela,Igman Konjic,4,0,H
+2023-09-23,Velez,Sloga Doboj,4,2,H
+2023-09-24,Zvijezda 09,Posusje,0,2,A
+2023-09-24,Zrinjski,Zeljeznicar Sarajevo,2,1,H
+2023-09-27,Tuzla City,Zrinjski,2,4,A
+2023-09-27,Siroki Brijeg,Borac Banja Luka,0,2,A
+2023-09-30,Posusje,Tuzla City,1,1,D
+2023-09-30,FK Sarajevo,Zvijezda 09,2,0,H
+2023-10-01,Igman Konjic,Zrinjski,0,2,A
+2023-10-01,Sloga Doboj,GOSK Gabela,3,2,H
+2023-10-01,Borac Banja Luka,Velez,2,0,H
+2023-10-02,Zeljeznicar Sarajevo,Siroki Brijeg,2,1,H
+2023-10-06,Velez,Posusje,2,1,H
+2023-10-07,Zvijezda 09,Tuzla City,1,1,D
+2023-10-08,GOSK Gabela,Borac Banja Luka,0,3,A
+2023-10-08,Siroki Brijeg,Igman Konjic,2,0,H
+2023-10-08,FK Sarajevo,Zeljeznicar Sarajevo,3,0,H
+2023-10-09,Zrinjski,Sloga Doboj,2,0,H
+2023-10-18,Zrinjski,Velez,3,0,H
+2023-10-18,Borac Banja Luka,FK Sarajevo,1,1,D
+2023-10-21,Sloga Doboj,Siroki Brijeg,1,0,H
+2023-10-21,Posusje,GOSK Gabela,0,0,D
+2023-10-21,Zeljeznicar Sarajevo,Zvijezda 09,1,0,H
+2023-10-22,Igman Konjic,FK Sarajevo,1,2,A
+2023-10-22,Borac Banja Luka,Zrinjski,0,0,D
+2023-10-23,Tuzla City,Velez,1,1,D
+2023-10-27,Igman Konjic,Zeljeznicar Sarajevo,2,0,H
+2023-10-28,Sloga Doboj,FK Sarajevo,3,0,H
+2023-10-28,Borac Banja Luka,Siroki Brijeg,1,0,H
+2023-10-29,Zvijezda 09,Velez,0,0,D
+2023-10-29,Posusje,Zrinjski,2,2,D
+2023-10-30,Tuzla City,GOSK Gabela,2,2,D
+2023-11-03,GOSK Gabela,Velez,0,4,A
+2023-11-04,Igman Konjic,Zvijezda 09,3,1,H
+2023-11-04,Zeljeznicar Sarajevo,Sloga Doboj,1,0,H
+2023-11-05,Zrinjski,Tuzla City,3,1,H
+2023-11-05,Siroki Brijeg,Posusje,1,1,D
+2023-11-05,FK Sarajevo,Borac Banja Luka,1,1,D
+2023-11-11,Sloga Doboj,Igman Konjic,4,1,H
+2023-11-11,Posusje,FK Sarajevo,0,1,A
+2023-11-12,Zvijezda 09,GOSK Gabela,1,2,A
+2023-11-12,Borac Banja Luka,Zeljeznicar Sarajevo,3,2,H
+2023-11-13,Velez,Zrinjski,3,0,H
+2023-11-22,Zrinjski,Siroki Brijeg,3,1,H
+2023-11-24,FK Sarajevo,Tuzla City,6,2,H
+2023-11-25,Igman Konjic,Borac Banja Luka,0,1,A
+2023-11-26,Zeljeznicar Sarajevo,Posusje,1,1,D
+2023-11-26,Sloga Doboj,Zvijezda 09,1,0,H
+2023-11-26,GOSK Gabela,Zrinjski,1,5,A
+2023-11-26,Siroki Brijeg,Velez,2,2,D
+2023-12-01,Velez,FK Sarajevo,1,0,H
+2023-12-02,Tuzla City,Zeljeznicar Sarajevo,3,0,H
+2023-12-02,Sloga Doboj,Borac Banja Luka,0,4,A
+2023-12-03,Posusje,Igman Konjic,4,1,H
+2023-12-03,GOSK Gabela,Siroki Brijeg,0,0,D
+2023-12-04,Zvijezda 09,Zrinjski,2,1,H
+2023-12-06,Tuzla City,Siroki Brijeg,2,0,H
+2023-12-08,Zeljeznicar Sarajevo,Velez,0,1,A
+2023-12-09,Zvijezda 09,Borac Banja Luka,1,2,A
+2023-12-09,Sloga Doboj,Posusje,1,0,H
+2023-12-09,FK Sarajevo,GOSK Gabela,3,0,H
+2023-12-10,Igman Konjic,Tuzla City,2,0,H
+2023-12-10,Siroki Brijeg,Zrinjski,0,2,A
+2023-12-15,Posusje,Borac Banja Luka,0,2,A
+2023-12-16,Tuzla City,Sloga Doboj,3,0,H
+2023-12-16,GOSK Gabela,Zeljeznicar Sarajevo,1,0,H
+2023-12-17,Zvijezda 09,Siroki Brijeg,3,0,H
+2023-12-17,Velez,Igman Konjic,1,1,D
+2023-12-18,Zrinjski,FK Sarajevo,2,0,H
+2024-02-16,Sloga Doboj,Velez,0,0,D
+2024-02-17,Igman Konjic,GOSK Gabela,1,2,A
+2024-02-17,Posusje,Zvijezda 09,2,0,H
+2024-02-17,Zeljeznicar Sarajevo,Zrinjski,0,0,D
+2024-02-18,FK Sarajevo,Siroki Brijeg,1,3,A
+2024-02-18,Borac Banja Luka,Tuzla City,2,1,H
+2024-02-23,GOSK Gabela,Sloga Doboj,2,4,A
+2024-02-24,Zvijezda 09,FK Sarajevo,1,0,H
+2024-02-24,Velez,Borac Banja Luka,0,0,D
+2024-02-25,Tuzla City,Posusje,0,1,A
+2024-02-25,Zrinjski,Igman Konjic,5,0,H
+2024-02-26,Siroki Brijeg,Zeljeznicar Sarajevo,2,0,H
+2024-03-02,Tuzla City,Zvijezda 09,2,0,H
+2024-03-02,Igman Konjic,Siroki Brijeg,1,0,H
+2024-03-02,Sloga Doboj,Zrinjski,1,1,D
+2024-03-03,Posusje,Velez,1,0,H
+2024-03-03,Zeljeznicar Sarajevo,FK Sarajevo,3,0,H
+2024-03-04,Borac Banja Luka,GOSK Gabela,3,0,H
+2024-03-09,Siroki Brijeg,Sloga Doboj,0,1,A
+2024-03-09,GOSK Gabela,Posusje,1,1,D
+2024-03-09,FK Sarajevo,Igman Konjic,2,2,D
+2024-03-10,Zvijezda 09,Zeljeznicar Sarajevo,2,1,H
+2024-03-10,Zrinjski,Borac Banja Luka,0,1,A
+2024-03-11,Velez,Tuzla City,1,1,D
+2024-03-16,Sloga Doboj,Tuzla City,3,1,H
+2024-03-16,Zrinjski,Zeljeznicar Sarajevo,2,0,H
+2024-03-16,FK Sarajevo,GOSK Gabela,4,0,H
+2024-03-17,Posusje,Siroki Brijeg,1,0,H
+2024-03-17,Borac Banja Luka,Zvijezda 09,3,1,H
+2024-03-17,Velez,Igman Konjic,2,0,H
+2024-03-29,Igman Konjic,Sloga Doboj,2,0,H
+2024-03-29,Tuzla City,FK Sarajevo,1,5,A
+2024-03-29,Zeljeznicar Sarajevo,Velez,0,1,A
+2024-03-30,Zvijezda 09,Siroki Brijeg,2,3,A
+2024-03-30,Borac Banja Luka,Zrinjski,1,2,A
+2024-03-30,GOSK Gabela,Posusje,0,1,A
+2024-04-06,Posusje,Tuzla City,1,1,D
+2024-04-06,FK Sarajevo,Igman Konjic,3,2,H
+2024-04-07,Sloga Doboj,Zeljeznicar Sarajevo,0,3,A
+2024-04-07,Velez,Borac Banja Luka,1,1,D
+2024-04-08,Siroki Brijeg,GOSK Gabela,2,2,D
+2024-04-08,Zrinjski,Zvijezda 09,4,0,H
+2024-04-12,Tuzla City,Siroki Brijeg,3,1,H
+2024-04-12,Borac Banja Luka,Sloga Doboj,1,0,H
+2024-04-13,Zvijezda 09,GOSK Gabela,1,2,A
+2024-04-13,Zrinjski,Velez,1,0,H
+2024-04-14,Igman Konjic,Posusje,1,1,D
+2024-04-14,Zeljeznicar Sarajevo,FK Sarajevo,0,0,D
+2024-04-19,GOSK Gabela,Tuzla City,1,0,H
+2024-04-19,Posusje,Zeljeznicar Sarajevo,1,0,H
+2024-04-19,Velez,Zvijezda 09,3,1,H
+2024-04-20,Siroki Brijeg,Igman Konjic,4,1,H
+2024-04-20,Sloga Doboj,Zrinjski,0,2,A
+2024-04-20,FK Sarajevo,Borac Banja Luka,1,1,D
+2024-04-23,Igman Konjic,GOSK Gabela,0,0,D
+2024-04-23,Velez,Sloga Doboj,1,0,H
+2024-04-23,Zeljeznicar Sarajevo,Siroki Brijeg,1,0,H
+2024-04-24,Zvijezda 09,Tuzla City,3,2,H
+2024-04-24,Borac Banja Luka,Posusje,1,0,H
+2024-04-24,Zrinjski,FK Sarajevo,4,3,H
+2024-04-27,Sloga Doboj,Zvijezda 09,2,0,H
+2024-04-27,GOSK Gabela,Zeljeznicar Sarajevo,1,2,A
+2024-04-28,Siroki Brijeg,Borac Banja Luka,1,2,A
+2024-04-28,Posusje,Zrinjski,0,1,A
+2024-04-28,FK Sarajevo,Velez,3,0,H
+2024-04-29,Tuzla City,Igman Konjic,1,2,A
+2024-05-03,Zeljeznicar Sarajevo,Tuzla City,2,0,H
+2024-05-03,Velez,Posusje,2,0,H
+2024-05-03,Zrinjski,Siroki Brijeg,3,0,H
+2024-05-04,Zvijezda 09,Igman Konjic,2,2,D
+2024-05-04,Sloga Doboj,FK Sarajevo,0,1,A
+2024-05-04,Borac Banja Luka,GOSK Gabela,3,1,H
+2024-05-10,FK Sarajevo,Zvijezda 09,2,1,H
+2024-05-11,Siroki Brijeg,Velez,0,1,A
+2024-05-12,Igman Konjic,Zeljeznicar Sarajevo,0,0,D
+2024-05-12,Posusje,Sloga Doboj,2,1,H
+2024-05-13,Tuzla City,Borac Banja Luka,2,6,A
+2024-05-13,GOSK Gabela,Zrinjski,1,4,A
+2024-05-20,Zrinjski,Tuzla City,4,0,H
+2024-05-20,FK Sarajevo,Posusje,1,1,D
+2024-05-20,Zvijezda 09,Zeljeznicar Sarajevo,0,5,A
+2024-05-20,Borac Banja Luka,Igman Konjic,4,3,H
+2024-05-20,Velez,GOSK Gabela,3,3,D
+2024-05-20,Sloga Doboj,Siroki Brijeg,2,3,A
+2024-05-24,Tuzla City,Velez,1,5,A
+2024-05-26,GOSK Gabela,Sloga Doboj,1,1,D
+2024-05-26,Igman Konjic,Zrinjski,1,4,A
+2024-05-26,Siroki Brijeg,FK Sarajevo,2,2,D
+2024-05-26,Zeljeznicar Sarajevo,Borac Banja Luka,2,1,H
+2024-05-26,Posusje,Zvijezda 09,2,0,H

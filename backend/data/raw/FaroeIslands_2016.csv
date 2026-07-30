@@ -1,0 +1,136 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2016-03-05,B36 Torshavn,IF II,4,1,H
+2016-03-05,NSI Runavik,HB Torshavn,1,2,A
+2016-03-05,KI Klaksvik,TB,1,0,H
+2016-03-06,Vikingur Gota,Skala,4,1,H
+2016-03-06,AB,B68,1,1,D
+2016-03-12,Skala,B36 Torshavn,1,0,H
+2016-03-13,KI Klaksvik,NSI Runavik,1,3,A
+2016-03-13,HB Torshavn,Vikingur Gota,1,1,D
+2016-03-13,B68,TB,1,1,D
+2016-03-13,IF II,AB,1,0,H
+2016-03-19,NSI Runavik,Skala,2,0,H
+2016-03-19,IF II,Vikingur Gota,2,2,D
+2016-03-20,HB Torshavn,KI Klaksvik,4,2,H
+2016-03-20,B68,B36 Torshavn,1,4,A
+2016-03-20,TB,AB,1,0,H
+2016-04-02,NSI Runavik,IF II,6,1,H
+2016-04-03,Vikingur Gota,B68,4,0,H
+2016-04-03,B36 Torshavn,AB,2,1,H
+2016-04-03,KI Klaksvik,Skala,2,0,H
+2016-04-03,TB,HB Torshavn,0,1,A
+2016-04-09,Skala,HB Torshavn,0,3,A
+2016-04-10,B36 Torshavn,TB,0,0,D
+2016-04-10,B68,NSI Runavik,0,5,A
+2016-04-10,IF II,KI Klaksvik,0,4,A
+2016-04-10,AB,Vikingur Gota,2,2,D
+2016-04-17,NSI Runavik,Vikingur Gota,1,3,A
+2016-04-17,KI Klaksvik,B36 Torshavn,1,1,D
+2016-04-17,HB Torshavn,AB,0,0,D
+2016-04-17,Skala,B68,0,0,D
+2016-04-17,TB,IF II,0,3,A
+2016-04-20,Vikingur Gota,TB,2,1,H
+2016-04-20,HB Torshavn,B68,1,0,H
+2016-04-21,B36 Torshavn,NSI Runavik,3,1,H
+2016-04-21,AB,KI Klaksvik,1,1,D
+2016-04-21,IF II,Skala,2,2,D
+2016-04-27,TB,NSI Runavik,2,1,H
+2016-04-28,Vikingur Gota,KI Klaksvik,0,2,A
+2016-04-28,B36 Torshavn,HB Torshavn,3,2,H
+2016-04-28,AB,Skala,0,0,D
+2016-04-28,B68,IF II,1,2,A
+2016-05-01,Vikingur Gota,B36 Torshavn,1,0,H
+2016-05-01,NSI Runavik,AB,2,1,H
+2016-05-01,KI Klaksvik,B68,4,1,H
+2016-05-01,IF II,HB Torshavn,4,2,H
+2016-05-01,Skala,TB,5,1,H
+2016-05-12,AB,B36 Torshavn,2,3,A
+2016-05-12,B68,Vikingur Gota,2,2,D
+2016-05-12,Skala,KI Klaksvik,0,1,A
+2016-05-12,IF II,NSI Runavik,0,2,A
+2016-05-12,TB,HB Torshavn,0,0,D
+2016-05-16,Vikingur Gota,IF II,3,1,H
+2016-05-16,NSI Runavik,Skala,1,0,H
+2016-05-16,KI Klaksvik,HB Torshavn,1,0,H
+2016-05-16,AB,TB,3,2,H
+2016-05-16,B36 Torshavn,B68,3,1,H
+2016-05-21,Skala,Vikingur Gota,1,3,A
+2016-05-22,KI Klaksvik,TB,1,0,H
+2016-05-22,HB Torshavn,NSI Runavik,3,4,A
+2016-05-22,B68,AB,2,2,D
+2016-05-22,IF II,B36 Torshavn,0,0,D
+2016-05-29,Vikingur Gota,HB Torshavn,1,0,H
+2016-05-29,B36 Torshavn,Skala,1,1,D
+2016-05-29,B68,TB,3,3,D
+2016-05-29,AB,IF II,2,3,A
+2016-06-05,KI Klaksvik,NSI Runavik,4,0,H
+2016-06-12,KI Klaksvik,Vikingur Gota,2,0,H
+2016-06-12,HB Torshavn,B36 Torshavn,0,0,D
+2016-06-12,IF II,B68,4,0,H
+2016-06-12,TB,NSI Runavik,3,1,H
+2016-06-12,Skala,AB,1,0,H
+2016-06-18,NSI Runavik,Vikingur Gota,4,2,H
+2016-06-19,AB,HB Torshavn,0,1,A
+2016-06-19,B68,Skala,1,1,D
+2016-06-19,IF II,TB,2,2,D
+2016-06-19,B36 Torshavn,KI Klaksvik,0,1,A
+2016-06-23,NSI Runavik,B36 Torshavn,2,1,H
+2016-06-24,HB Torshavn,B68,6,1,H
+2016-06-24,Skala,IF II,1,0,H
+2016-06-24,TB,Vikingur Gota,0,2,A
+2016-06-24,KI Klaksvik,AB,5,1,H
+2016-07-24,Vikingur Gota,AB,3,0,H
+2016-07-24,NSI Runavik,B68,2,1,H
+2016-07-24,KI Klaksvik,IF II,2,4,A
+2016-07-24,HB Torshavn,Skala,1,0,H
+2016-07-24,TB,B36 Torshavn,0,1,A
+2016-07-27,AB,NSI Runavik,1,2,A
+2016-07-28,HB Torshavn,IF II,1,0,H
+2016-07-29,B36 Torshavn,Vikingur Gota,0,2,A
+2016-07-31,B68,KI Klaksvik,0,3,A
+2016-07-31,Skala,TB,0,1,A
+2016-08-05,KI Klaksvik,Skala,5,0,H
+2016-08-07,B36 Torshavn,AB,2,1,H
+2016-08-07,NSI Runavik,IF II,7,1,H
+2016-08-07,Vikingur Gota,B68,5,1,H
+2016-08-07,HB Torshavn,TB,4,1,H
+2016-08-12,IF II,Vikingur Gota,1,3,A
+2016-08-14,HB Torshavn,KI Klaksvik,2,3,A
+2016-08-14,B68,B36 Torshavn,0,1,A
+2016-08-14,Skala,NSI Runavik,0,2,A
+2016-08-14,TB,AB,2,1,H
+2016-08-21,Vikingur Gota,Skala,4,0,H
+2016-08-21,B36 Torshavn,IF II,4,1,H
+2016-08-21,NSI Runavik,HB Torshavn,0,0,D
+2016-08-21,KI Klaksvik,TB,4,0,H
+2016-08-21,AB,B68,5,0,H
+2016-09-11,NSI Runavik,KI Klaksvik,2,0,H
+2016-09-11,HB Torshavn,Vikingur Gota,0,1,A
+2016-09-11,IF II,AB,2,0,H
+2016-09-11,Skala,B36 Torshavn,0,2,A
+2016-09-11,TB,B68,4,1,H
+2016-09-18,Vikingur Gota,KI Klaksvik,1,2,A
+2016-09-18,B36 Torshavn,HB Torshavn,2,2,D
+2016-09-18,NSI Runavik,TB,2,1,H
+2016-09-18,B68,IF II,0,2,A
+2016-09-18,AB,Skala,0,2,A
+2016-09-25,Vikingur Gota,NSI Runavik,2,0,H
+2016-09-25,KI Klaksvik,B36 Torshavn,2,2,D
+2016-09-25,HB Torshavn,AB,1,2,A
+2016-09-25,Skala,B68,5,1,H
+2016-09-25,TB,IF II,3,2,H
+2016-10-02,Vikingur Gota,TB,1,0,H
+2016-10-02,AB,KI Klaksvik,3,1,H
+2016-10-02,B68,HB Torshavn,0,1,A
+2016-10-02,IF II,Skala,1,1,D
+2016-10-02,B36 Torshavn,NSI Runavik,2,0,H
+2016-10-16,Vikingur Gota,B36 Torshavn,2,0,H
+2016-10-16,NSI Runavik,AB,4,1,H
+2016-10-16,KI Klaksvik,B68,6,0,H
+2016-10-16,HB Torshavn,IF II,4,1,H
+2016-10-16,TB,Skala,1,1,D
+2016-10-22,B36 Torshavn,TB,5,2,H
+2016-10-22,AB,Vikingur Gota,1,3,A
+2016-10-22,B68,NSI Runavik,1,3,A
+2016-10-22,IF II,KI Klaksvik,1,3,A
+2016-10-22,Skala,HB Torshavn,2,2,D

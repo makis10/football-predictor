@@ -1,0 +1,167 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2016-07-23,Milsami Orhei,Saxan,2,0,H
+2016-07-23,Speranta Nisporeni,Dinamo-Auto,0,0,D
+2016-07-23,Sheriff Tiraspol,Zaria Balti,1,2,A
+2016-07-24,Academia,Ungheni,4,1,H
+2016-07-25,Dacia,Zimbru,0,1,A
+2016-07-30,Zaria Balti,Petrocub,0,0,D
+2016-07-30,Dinamo-Auto,Sheriff Tiraspol,0,1,A
+2016-07-30,Saxan,Academia,1,0,H
+2016-07-31,Ungheni,Speranta Nisporeni,0,0,D
+2016-07-31,Zimbru,Milsami Orhei,1,0,H
+2016-08-05,Petrocub,Dinamo-Auto,3,1,H
+2016-08-05,Speranta Nisporeni,Saxan,2,1,H
+2016-08-06,Milsami Orhei,Dacia,1,0,H
+2016-08-06,Academia,Zimbru,0,2,A
+2016-08-06,Sheriff Tiraspol,Ungheni,7,0,H
+2016-08-13,Dacia,Academia,2,0,H
+2016-08-13,Ungheni,Petrocub,0,2,A
+2016-08-14,Dinamo-Auto,Zaria Balti,1,3,A
+2016-08-14,Sheriff Tiraspol,Saxan,3,0,H
+2016-08-14,Zimbru,Speranta Nisporeni,2,0,H
+2016-08-20,Speranta Nisporeni,Dacia,1,2,A
+2016-08-20,Academia,Milsami Orhei,0,4,A
+2016-08-20,Sheriff Tiraspol,Zimbru,3,0,H
+2016-08-21,Zaria Balti,Ungheni,3,0,H
+2016-08-21,Petrocub,Saxan,2,1,H
+2016-08-27,Ungheni,Dinamo-Auto,2,1,H
+2016-09-10,Petrocub,Dacia,0,4,A
+2016-09-10,Dinamo-Auto,Saxan,1,0,H
+2016-09-10,Sheriff Tiraspol,Milsami Orhei,2,0,H
+2016-09-11,Zaria Balti,Zimbru,3,0,H
+2016-09-11,Speranta Nisporeni,Academia,0,1,A
+2016-09-16,Milsami Orhei,Petrocub,5,0,H
+2016-09-16,Saxan,Ungheni,2,2,D
+2016-09-17,Dacia,Zaria Balti,1,2,A
+2016-09-17,Academia,Sheriff Tiraspol,0,1,A
+2016-09-17,Zimbru,Dinamo-Auto,1,0,H
+2016-09-21,Milsami Orhei,Speranta Nisporeni,4,0,H
+2016-09-21,Zimbru,Petrocub,0,0,D
+2016-09-21,Dacia,Sheriff Tiraspol,3,0,H
+2016-09-25,Sheriff Tiraspol,Speranta Nisporeni,2,0,H
+2016-09-25,Zaria Balti,Milsami Orhei,0,2,A
+2016-09-25,Petrocub,Academia,0,1,A
+2016-09-25,Dinamo-Auto,Dacia,0,3,A
+2016-09-25,Ungheni,Zimbru,1,1,D
+2016-09-30,Milsami Orhei,Dinamo-Auto,4,1,H
+2016-09-30,Speranta Nisporeni,Petrocub,1,0,H
+2016-09-30,Academia,Zaria Balti,0,2,A
+2016-10-01,Zimbru,Saxan,2,0,H
+2016-10-01,Dacia,Ungheni,3,0,H
+2016-10-15,Dinamo-Auto,Academia,3,1,H
+2016-10-15,Saxan,Dacia,0,2,A
+2016-10-16,Zaria Balti,Speranta Nisporeni,0,2,A
+2016-10-16,Milsami Orhei,Ungheni,4,0,H
+2016-10-16,Petrocub,Sheriff Tiraspol,0,0,D
+2016-10-21,Zaria Balti,Sheriff Tiraspol,0,0,D
+2016-10-21,Dinamo-Auto,Speranta Nisporeni,1,4,A
+2016-10-21,Saxan,Milsami Orhei,0,1,A
+2016-10-21,Ungheni,Academia,1,2,A
+2016-10-21,Zimbru,Dacia,0,1,A
+2016-10-29,Speranta Nisporeni,Ungheni,3,0,H
+2016-10-29,Academia,Saxan,1,0,H
+2016-10-30,Milsami Orhei,Zimbru,1,0,H
+2016-10-30,Petrocub,Zaria Balti,2,2,D
+2016-10-30,Sheriff Tiraspol,Dinamo-Auto,3,0,H
+2016-11-04,Dinamo-Auto,Petrocub,0,1,A
+2016-11-04,Saxan,Zaria Balti,1,4,A
+2016-11-05,Zimbru,Academia,2,0,H
+2016-11-05,Dacia,Milsami Orhei,1,1,D
+2016-11-05,Ungheni,Sheriff Tiraspol,1,2,A
+2016-11-09,Saxan,Speranta Nisporeni,2,2,D
+2016-11-19,Petrocub,Ungheni,5,0,H
+2016-11-19,Speranta Nisporeni,Zimbru,0,1,A
+2016-11-19,Academia,Dacia,0,1,A
+2016-11-20,Zaria Balti,Dinamo-Auto,2,1,H
+2016-11-20,Saxan,Sheriff Tiraspol,1,5,A
+2016-11-25,Milsami Orhei,Academia,2,0,H
+2016-11-25,Saxan,Petrocub,2,0,H
+2016-11-25,Ungheni,Zaria Balti,0,3,A
+2016-11-26,Zimbru,Sheriff Tiraspol,1,4,A
+2016-11-26,Dacia,Speranta Nisporeni,1,0,H
+2016-11-29,Zaria Balti,Saxan,2,0,H
+2016-11-29,Dinamo-Auto,Ungheni,2,2,D
+2016-11-30,Sheriff Tiraspol,Dacia,1,0,H
+2016-11-30,Petrocub,Zimbru,1,2,A
+2016-11-30,Speranta Nisporeni,Milsami Orhei,0,2,A
+2016-12-03,Saxan,Dinamo-Auto,0,3,A
+2016-12-04,Milsami Orhei,Sheriff Tiraspol,2,1,H
+2016-12-04,Zimbru,Zaria Balti,0,1,A
+2016-12-04,Dacia,Petrocub,1,1,D
+2016-12-04,Academia,Speranta Nisporeni,3,1,H
+2016-12-09,Petrocub,Milsami Orhei,0,2,A
+2016-12-09,Ungheni,Saxan,3,0,H
+2016-12-10,Zaria Balti,Dacia,1,0,H
+2016-12-10,Dinamo-Auto,Zimbru,1,1,D
+2016-12-10,Sheriff Tiraspol,Academia,1,0,H
+2017-02-24,Milsami Orhei,Zaria Balti,1,2,A
+2017-02-24,Speranta Nisporeni,Sheriff Tiraspol,0,2,A
+2017-02-24,Academia,Petrocub,2,1,H
+2017-02-25,Zimbru,Ungheni,4,0,H
+2017-02-25,Dacia,Dinamo-Auto,4,1,H
+2017-02-28,Zaria Balti,Academia,6,0,H
+2017-02-28,Petrocub,Speranta Nisporeni,1,1,D
+2017-03-01,Dinamo-Auto,Milsami Orhei,0,4,A
+2017-03-01,Saxan,Zimbru,3,0,H
+2017-03-01,Ungheni,Dacia,1,2,A
+2017-03-04,Speranta Nisporeni,Zaria Balti,0,1,A
+2017-03-04,Sheriff Tiraspol,Petrocub,4,0,H
+2017-03-05,Dacia,Saxan,2,0,H
+2017-03-05,Ungheni,Milsami Orhei,0,2,A
+2017-03-06,Academia,Dinamo-Auto,1,2,A
+2017-03-11,Zimbru,Saxan,0,0,D
+2017-03-11,Dacia,Ungheni,3,0,H
+2017-03-11,Sheriff Tiraspol,Milsami Orhei,5,0,H
+2017-03-12,Academia,Dinamo-Auto,1,1,D
+2017-03-16,Zaria Balti,Sheriff Tiraspol,0,2,A
+2017-03-16,Milsami Orhei,Dacia,0,0,D
+2017-03-16,Dinamo-Auto,Petrocub,2,2,D
+2017-03-16,Ungheni,Zimbru,1,2,A
+2017-03-17,Saxan,Academia,1,0,H
+2017-03-20,Petrocub,Speranta Nisporeni,0,0,D
+2017-03-31,Petrocub,Saxan,1,0,H
+2017-03-31,Speranta Nisporeni,Dinamo-Auto,4,1,H
+2017-03-31,Academia,Ungheni,0,1,A
+2017-04-01,Dacia,Zaria Balti,1,0,H
+2017-04-01,Zimbru,Milsami Orhei,1,0,H
+2017-04-04,Saxan,Speranta Nisporeni,0,1,A
+2017-04-04,Ungheni,Petrocub,0,4,A
+2017-04-05,Zaria Balti,Zimbru,2,0,H
+2017-04-05,Milsami Orhei,Academia,3,2,H
+2017-04-05,Sheriff Tiraspol,Dacia,0,1,A
+2017-04-08,Speranta Nisporeni,Ungheni,0,1,A
+2017-04-09,Petrocub,Milsami Orhei,3,1,H
+2017-04-09,Dinamo-Auto,Saxan,2,0,H
+2017-04-09,Academia,Zaria Balti,0,4,A
+2017-04-09,Zimbru,Sheriff Tiraspol,0,1,A
+2017-04-14,Milsami Orhei,Speranta Nisporeni,1,0,H
+2017-04-14,Ungheni,Dinamo-Auto,2,2,D
+2017-04-14,Sheriff Tiraspol,Academia,1,2,A
+2017-04-15,Zaria Balti,Petrocub,2,1,H
+2017-04-15,Dacia,Zimbru,3,1,H
+2017-04-30,Sheriff Tiraspol,Speranta Nisporeni,4,1,H
+2017-04-30,Zaria Balti,Dinamo-Auto,3,2,H
+2017-04-30,Milsami Orhei,Saxan,3,1,H
+2017-04-30,Zimbru,Academia,4,0,H
+2017-04-30,Dacia,Petrocub,1,0,H
+2017-05-03,Petrocub,Sheriff Tiraspol,0,2,A
+2017-05-03,Speranta Nisporeni,Zaria Balti,0,0,D
+2017-05-03,Dinamo-Auto,Milsami Orhei,0,1,A
+2017-05-03,Saxan,Ungheni,3,0,H
+2017-05-03,Academia,Dacia,0,4,A
+2017-05-07,Petrocub,Zimbru,1,1,D
+2017-05-07,Speranta Nisporeni,Dacia,0,1,A
+2017-05-07,Dinamo-Auto,Sheriff Tiraspol,0,0,D
+2017-05-07,Saxan,Zaria Balti,1,1,D
+2017-05-08,Ungheni,Milsami Orhei,0,2,A
+2017-05-12,Sheriff Tiraspol,Saxan,7,1,H
+2017-05-12,Zaria Balti,Ungheni,5,0,H
+2017-05-12,Zimbru,Speranta Nisporeni,1,1,D
+2017-05-12,Dacia,Dinamo-Auto,4,1,H
+2017-05-12,Academia,Petrocub,0,0,D
+2017-05-21,Milsami Orhei,Zaria Balti,2,0,H
+2017-05-21,Speranta Nisporeni,Academia,0,0,D
+2017-05-21,Dinamo-Auto,Zimbru,1,1,D
+2017-05-21,Saxan,Dacia,2,3,A
+2017-05-21,Ungheni,Sheriff Tiraspol,0,6,A
+2017-05-30,Sheriff Tiraspol,Dacia,2,2,D

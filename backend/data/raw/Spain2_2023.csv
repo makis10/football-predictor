@@ -1,0 +1,469 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2023-08-11,Amorebieta,Levante,1,1,D
+2023-08-11,Valladolid,Sporting Gijon,2,0,H
+2023-08-12,Racing Santander,Eibar,4,0,H
+2023-08-12,Zaragoza,Villarreal II,2,0,H
+2023-08-12,Elche,Racing Ferrol,0,1,A
+2023-08-13,Burgos,Huesca,1,1,D
+2023-08-13,Albacete,Espanyol,1,1,D
+2023-08-13,FC Cartagena,Eldense,0,1,A
+2023-08-13,Leganes,FC Andorra,0,1,A
+2023-08-14,Mirandes,Alcorcon,4,0,H
+2023-08-14,Tenerife,Oviedo,1,0,H
+2023-08-18,FC Andorra,FC Cartagena,3,2,H
+2023-08-18,Zaragoza,Valladolid,1,0,H
+2023-08-19,Eibar,Elche,2,1,H
+2023-08-19,Espanyol,Racing Santander,2,0,H
+2023-08-19,Levante,Burgos,3,2,H
+2023-08-19,Alcorcon,Leganes,0,2,A
+2023-08-20,Oviedo,Racing Ferrol,1,1,D
+2023-08-20,Sporting Gijon,Mirandes,3,0,H
+2023-08-20,Albacete,Amorebieta,2,2,D
+2023-08-21,Villarreal II,Eldense,3,1,H
+2023-08-21,Huesca,Tenerife,0,2,A
+2023-08-25,FC Cartagena,Levante,0,1,A
+2023-08-26,Burgos,Oviedo,1,0,H
+2023-08-26,Tenerife,Zaragoza,0,1,A
+2023-08-26,Valladolid,Alcorcon,0,2,A
+2023-08-26,Elche,Villarreal II,1,0,H
+2023-08-27,Racing Ferrol,Sporting Gijon,2,0,H
+2023-08-27,Mirandes,Espanyol,0,1,A
+2023-08-27,Amorebieta,FC Andorra,3,0,H
+2023-08-27,Leganes,Albacete,2,0,H
+2023-08-28,Eldense,Eibar,2,1,H
+2023-08-28,Racing Santander,Huesca,0,0,D
+2023-09-01,Alcorcon,Racing Ferrol,1,1,D
+2023-09-01,Albacete,Valladolid,2,0,H
+2023-09-02,Sporting Gijon,Burgos,2,1,H
+2023-09-02,Levante,Oviedo,1,1,D
+2023-09-02,Elche,Racing Santander,1,1,D
+2023-09-02,Villarreal II,FC Cartagena,1,2,A
+2023-09-03,FC Andorra,Tenerife,0,1,A
+2023-09-03,Eibar,Leganes,0,1,A
+2023-09-03,Espanyol,Amorebieta,3,2,H
+2023-09-03,Zaragoza,Eldense,2,0,H
+2023-09-03,Huesca,Mirandes,1,1,D
+2023-09-08,Levante,Espanyol,1,4,A
+2023-09-09,Burgos,Eibar,1,0,H
+2023-09-09,Oviedo,Sporting Gijon,0,0,D
+2023-09-09,Leganes,Huesca,2,0,H
+2023-09-09,Tenerife,Albacete,2,0,H
+2023-09-10,Racing Santander,Amorebieta,1,0,H
+2023-09-10,Racing Ferrol,Villarreal II,2,2,D
+2023-09-10,Mirandes,FC Andorra,4,3,H
+2023-09-10,FC Cartagena,Zaragoza,1,3,A
+2023-09-10,Valladolid,Elche,1,1,D
+2023-09-11,Eldense,Alcorcon,2,2,D
+2023-09-15,Zaragoza,Racing Santander,1,1,D
+2023-09-16,Huesca,Villarreal II,2,2,D
+2023-09-16,Alcorcon,Levante,0,2,A
+2023-09-16,Valladolid,FC Cartagena,1,0,H
+2023-09-16,Albacete,Burgos,2,1,H
+2023-09-17,Amorebieta,Mirandes,2,0,H
+2023-09-17,Eibar,Racing Ferrol,2,0,H
+2023-09-17,Espanyol,Eldense,3,3,D
+2023-09-17,Elche,Leganes,1,0,H
+2023-09-17,Sporting Gijon,Tenerife,2,1,H
+2023-09-18,FC Andorra,Oviedo,1,0,H
+2023-09-22,FC Cartagena,Eibar,1,2,A
+2023-09-23,FC Andorra,Sporting Gijon,0,0,D
+2023-09-23,Levante,Eldense,2,0,H
+2023-09-23,Burgos,Elche,4,0,H
+2023-09-23,Alcorcon,Huesca,0,2,A
+2023-09-23,Racing Santander,Albacete,2,1,H
+2023-09-24,Villarreal II,Amorebieta,3,1,H
+2023-09-24,Oviedo,Valladolid,0,1,A
+2023-09-24,Mirandes,Leganes,1,3,A
+2023-09-25,Tenerife,Espanyol,1,0,H
+2023-09-25,Racing Ferrol,Zaragoza,1,0,H
+2023-09-29,Leganes,Racing Santander,2,1,H
+2023-09-30,Eibar,Tenerife,3,0,H
+2023-09-30,Elche,Levante,0,0,D
+2023-09-30,Albacete,FC Andorra,3,1,H
+2023-09-30,Villarreal II,Alcorcon,2,2,D
+2023-10-01,Eldense,Oviedo,1,3,A
+2023-10-01,Valladolid,Burgos,3,0,H
+2023-10-01,Zaragoza,Mirandes,0,1,A
+2023-10-01,Amorebieta,FC Cartagena,0,0,D
+2023-10-01,Huesca,Sporting Gijon,0,1,A
+2023-10-02,Espanyol,Racing Ferrol,3,0,H
+2023-10-03,Levante,Villarreal II,1,1,D
+2023-10-03,Alcorcon,Albacete,1,2,A
+2023-10-03,Tenerife,Racing Santander,2,0,H
+2023-10-04,Oviedo,Huesca,1,0,H
+2023-10-04,Eldense,Valladolid,0,1,A
+2023-10-04,Sporting Gijon,Elche,2,0,H
+2023-10-04,Burgos,Leganes,1,0,H
+2023-10-05,Mirandes,Eibar,1,3,A
+2023-10-05,FC Andorra,Zaragoza,0,1,A
+2023-10-05,FC Cartagena,Espanyol,0,2,A
+2023-10-05,Racing Ferrol,Amorebieta,1,0,H
+2023-10-06,Albacete,Levante,0,2,A
+2023-10-07,Huesca,Eldense,0,1,A
+2023-10-07,Racing Santander,Sporting Gijon,3,2,H
+2023-10-07,Leganes,Oviedo,0,0,D
+2023-10-08,Amorebieta,Eibar,1,2,A
+2023-10-08,Valladolid,Mirandes,3,2,H
+2023-10-08,Tenerife,Burgos,2,1,H
+2023-10-08,Racing Ferrol,FC Cartagena,1,1,D
+2023-10-08,Zaragoza,Alcorcon,0,2,A
+2023-10-09,Elche,FC Andorra,2,1,H
+2023-10-09,Villarreal II,Espanyol,3,1,H
+2023-10-13,Oviedo,Albacete,3,0,H
+2023-10-14,Mirandes,Tenerife,1,1,D
+2023-10-14,Sporting Gijon,Zaragoza,2,2,D
+2023-10-14,FC Cartagena,Racing Santander,2,3,A
+2023-10-14,Espanyol,Valladolid,2,0,H
+2023-10-15,Burgos,Villarreal II,3,2,H
+2023-10-15,FC Andorra,Alcorcon,2,0,H
+2023-10-15,Eldense,Elche,1,1,D
+2023-10-15,Leganes,Amorebieta,6,0,H
+2023-10-15,Eibar,Huesca,1,1,D
+2023-10-16,Levante,Racing Ferrol,1,0,H
+2023-10-20,Espanyol,Leganes,0,1,A
+2023-10-21,Amorebieta,Oviedo,0,0,D
+2023-10-21,Villarreal II,Mirandes,0,3,A
+2023-10-21,Tenerife,Levante,0,0,D
+2023-10-21,Zaragoza,Eibar,2,3,A
+2023-10-22,Racing Ferrol,Eldense,1,1,D
+2023-10-22,Huesca,Elche,0,1,A
+2023-10-22,Albacete,Sporting Gijon,1,3,A
+2023-10-22,Racing Santander,Burgos,3,0,H
+2023-10-22,Valladolid,FC Andorra,2,0,H
+2023-10-23,Alcorcon,FC Cartagena,1,1,D
+2023-10-27,Eibar,Valladolid,5,1,H
+2023-10-28,Eldense,Amorebieta,2,0,H
+2023-10-28,Sporting Gijon,Espanyol,2,0,H
+2023-10-28,FC Andorra,Levante,2,0,H
+2023-10-28,Elche,Tenerife,2,1,H
+2023-10-29,Mirandes,FC Cartagena,2,1,H
+2023-10-29,Huesca,Albacete,0,0,D
+2023-10-29,Leganes,Villarreal II,1,0,H
+2023-10-29,Oviedo,Alcorcon,2,0,H
+2023-10-29,Racing Santander,Racing Ferrol,1,3,A
+2023-10-30,Burgos,Zaragoza,1,1,D
+2023-11-03,Espanyol,Eibar,2,2,D
+2023-11-04,Villarreal II,Sporting Gijon,0,3,A
+2023-11-04,Levante,Mirandes,2,2,D
+2023-11-04,Valladolid,Tenerife,2,0,H
+2023-11-04,Albacete,Elche,1,1,D
+2023-11-05,Racing Ferrol,FC Andorra,1,0,H
+2023-11-05,Amorebieta,Huesca,0,1,A
+2023-11-05,Alcorcon,Racing Santander,3,1,H
+2023-11-05,FC Cartagena,Leganes,0,3,A
+2023-11-05,Eldense,Burgos,2,0,H
+2023-11-06,Zaragoza,Oviedo,0,0,D
+2023-11-10,Leganes,Levante,2,1,H
+2023-11-11,Racing Santander,Valladolid,2,3,A
+2023-11-11,Elche,Zaragoza,2,0,H
+2023-11-11,Mirandes,Racing Ferrol,1,2,A
+2023-11-11,Sporting Gijon,Amorebieta,1,1,D
+2023-11-12,Burgos,Alcorcon,4,2,H
+2023-11-12,FC Andorra,Eldense,1,3,A
+2023-11-12,Tenerife,Villarreal II,0,1,A
+2023-11-12,Huesca,Espanyol,1,1,D
+2023-11-12,Eibar,Albacete,1,1,D
+2023-11-13,Oviedo,FC Cartagena,1,1,D
+2023-11-17,Valladolid,Leganes,1,1,D
+2023-11-18,Alcorcon,Sporting Gijon,0,0,D
+2023-11-18,Zaragoza,Huesca,0,2,A
+2023-11-18,Amorebieta,Tenerife,2,0,H
+2023-11-18,Espanyol,Elche,2,0,H
+2023-11-19,Racing Ferrol,Burgos,1,1,D
+2023-11-19,Oviedo,Eibar,2,1,H
+2023-11-19,Eldense,Mirandes,2,2,D
+2023-11-19,FC Cartagena,Albacete,1,1,D
+2023-11-19,Villarreal II,FC Andorra,0,0,D
+2023-11-20,Levante,Racing Santander,2,4,A
+2023-11-24,Huesca,Valladolid,0,1,A
+2023-11-25,Racing Santander,Villarreal II,2,0,H
+2023-11-25,Burgos,FC Andorra,0,0,D
+2023-11-25,Albacete,Zaragoza,1,0,H
+2023-11-25,Eibar,Levante,3,1,H
+2023-11-26,Leganes,Racing Ferrol,2,2,D
+2023-11-26,Elche,Amorebieta,2,0,H
+2023-11-26,Mirandes,Oviedo,2,1,H
+2023-11-26,Tenerife,FC Cartagena,1,1,D
+2023-11-26,Espanyol,Alcorcon,2,0,H
+2023-11-27,Sporting Gijon,Eldense,2,0,H
+2023-12-01,Oviedo,Espanyol,2,0,H
+2023-12-02,FC Cartagena,Sporting Gijon,1,0,H
+2023-12-02,Eldense,Tenerife,0,3,A
+2023-12-02,Zaragoza,Leganes,1,0,H
+2023-12-02,Levante,Valladolid,2,1,H
+2023-12-03,FC Andorra,Huesca,1,0,H
+2023-12-03,Alcorcon,Elche,0,2,A
+2023-12-03,Mirandes,Racing Santander,0,0,D
+2023-12-03,Racing Ferrol,Albacete,5,4,H
+2023-12-03,Amorebieta,Burgos,0,1,A
+2023-12-04,Villarreal II,Eibar,1,0,H
+2023-12-08,Albacete,Villarreal II,2,0,H
+2023-12-08,Espanyol,Zaragoza,1,1,D
+2023-12-09,Valladolid,Amorebieta,2,1,H
+2023-12-09,Sporting Gijon,Levante,0,0,D
+2023-12-09,Burgos,Mirandes,0,0,D
+2023-12-10,Elche,FC Cartagena,1,2,A
+2023-12-10,Racing Santander,Oviedo,2,2,D
+2023-12-10,Leganes,Eldense,1,1,D
+2023-12-10,Eibar,FC Andorra,2,2,D
+2023-12-10,Huesca,Racing Ferrol,1,0,H
+2023-12-11,Tenerife,Alcorcon,1,0,H
+2023-12-15,Oviedo,Elche,3,2,H
+2023-12-16,Eldense,Racing Santander,3,3,D
+2023-12-16,FC Andorra,Espanyol,1,1,D
+2023-12-16,Sporting Gijon,Leganes,1,1,D
+2023-12-16,FC Cartagena,Burgos,0,3,A
+2023-12-16,Mirandes,Albacete,2,0,H
+2023-12-17,Alcorcon,Eibar,1,0,H
+2023-12-17,Levante,Huesca,2,1,H
+2023-12-17,Amorebieta,Zaragoza,1,1,D
+2023-12-17,Racing Ferrol,Tenerife,3,1,H
+2023-12-18,Villarreal II,Valladolid,1,0,H
+2023-12-19,Albacete,Eldense,1,1,D
+2023-12-19,Racing Santander,FC Andorra,2,0,H
+2023-12-19,Espanyol,Burgos,3,3,D
+2023-12-19,Elche,Mirandes,0,0,D
+2023-12-20,Zaragoza,Levante,2,2,D
+2023-12-20,Leganes,Tenerife,1,1,D
+2023-12-20,Eibar,Sporting Gijon,1,1,D
+2023-12-21,Huesca,FC Cartagena,3,0,H
+2023-12-21,Villarreal II,Oviedo,1,1,D
+2023-12-21,Valladolid,Racing Ferrol,0,1,A
+2023-12-21,Amorebieta,Alcorcon,1,2,A
+2024-01-12,Eibar,Racing Santander,2,0,H
+2024-01-13,Alcorcon,Mirandes,0,0,D
+2024-01-13,Levante,Albacete,3,2,H
+2024-01-13,Oviedo,Amorebieta,1,1,D
+2024-01-13,Tenerife,Elche,0,1,A
+2024-01-13,Racing Ferrol,Espanyol,0,0,D
+2024-01-13,Burgos,Valladolid,1,0,H
+2024-01-14,FC Andorra,Leganes,2,3,A
+2024-01-14,Sporting Gijon,Huesca,0,0,D
+2024-01-14,FC Cartagena,Villarreal II,4,1,H
+2024-01-15,Eldense,Zaragoza,1,1,D
+2024-01-20,Albacete,Alcorcon,0,1,A
+2024-01-20,Amorebieta,Eldense,0,2,A
+2024-01-20,Espanyol,Villarreal II,2,1,H
+2024-01-20,Tenerife,Sporting Gijon,1,2,A
+2024-01-20,Zaragoza,FC Andorra,2,0,H
+2024-01-20,Racing Ferrol,Oviedo,1,3,A
+2024-01-21,Racing Santander,FC Cartagena,0,2,A
+2024-01-21,Mirandes,Levante,1,1,D
+2024-01-21,Huesca,Eibar,2,3,A
+2024-01-21,Elche,Valladolid,0,0,D
+2024-01-22,Leganes,Burgos,2,0,H
+2024-01-26,Eibar,Mirandes,1,0,H
+2024-01-27,Alcorcon,Zaragoza,0,0,D
+2024-01-27,FC Cartagena,Amorebieta,1,0,H
+2024-01-27,Oviedo,Leganes,1,0,H
+2024-01-27,Levante,Tenerife,0,0,D
+2024-01-28,Eldense,Espanyol,3,2,H
+2024-01-28,FC Andorra,Elche,0,1,A
+2024-01-28,Villarreal II,Huesca,1,1,D
+2024-01-28,Burgos,Albacete,2,1,H
+2024-01-28,Sporting Gijon,Racing Ferrol,1,2,A
+2024-01-29,Valladolid,Racing Santander,3,1,H
+2024-02-02,Elche,Burgos,2,0,H
+2024-02-03,Albacete,FC Cartagena,1,1,D
+2024-02-03,Huesca,Alcorcon,1,0,H
+2024-02-03,Mirandes,Villarreal II,3,0,H
+2024-02-03,Leganes,Valladolid,0,0,D
+2024-02-03,Tenerife,FC Andorra,0,0,D
+2024-02-04,Racing Ferrol,Eibar,1,1,D
+2024-02-04,Oviedo,Eldense,1,1,D
+2024-02-04,Amorebieta,Racing Santander,0,1,A
+2024-02-04,Espanyol,Levante,2,1,H
+2024-02-05,Zaragoza,Sporting Gijon,3,0,H
+2024-02-09,Levante,Leganes,0,0,D
+2024-02-10,Amorebieta,Elche,1,0,H
+2024-02-10,Eldense,Huesca,0,0,D
+2024-02-10,Sporting Gijon,Oviedo,1,0,H
+2024-02-10,Racing Santander,Espanyol,2,0,H
+2024-02-11,Villarreal II,Tenerife,1,0,H
+2024-02-11,Alcorcon,FC Andorra,1,0,H
+2024-02-11,FC Cartagena,Mirandes,1,0,H
+2024-02-11,Eibar,Zaragoza,1,0,H
+2024-02-11,Burgos,Racing Ferrol,2,0,H
+2024-02-12,Valladolid,Albacete,0,0,D
+2024-02-16,Zaragoza,FC Cartagena,1,2,A
+2024-02-17,Oviedo,Burgos,5,0,H
+2024-02-17,FC Andorra,Villarreal II,1,1,D
+2024-02-17,Sporting Gijon,Valladolid,1,1,D
+2024-02-17,Espanyol,Mirandes,3,0,H
+2024-02-18,Albacete,Racing Santander,2,0,H
+2024-02-18,Leganes,Alcorcon,3,0,H
+2024-02-18,Racing Ferrol,Levante,0,0,D
+2024-02-18,Huesca,Amorebieta,0,0,D
+2024-02-18,Elche,Eibar,0,0,D
+2024-02-19,Tenerife,Eldense,1,0,H
+2024-02-23,Valladolid,Oviedo,3,0,H
+2024-02-24,Racing Santander,Leganes,2,1,H
+2024-02-24,Eibar,Espanyol,2,3,A
+2024-02-24,Villarreal II,Zaragoza,0,0,D
+2024-02-25,Eldense,Racing Ferrol,2,0,H
+2024-02-25,Alcorcon,Tenerife,1,1,D
+2024-02-25,Burgos,Sporting Gijon,1,0,H
+2024-02-25,FC Cartagena,Elche,0,1,A
+2024-02-25,Amorebieta,Albacete,1,1,D
+2024-02-26,Mirandes,Huesca,0,3,A
+2024-03-01,Sporting Gijon,Albacete,2,1,H
+2024-03-02,Eldense,Villarreal II,2,0,H
+2024-03-02,Espanyol,Huesca,0,0,D
+2024-03-02,Racing Ferrol,Racing Santander,2,2,D
+2024-03-02,Oviedo,Levante,3,2,H
+2024-03-02,Burgos,FC Cartagena,3,0,H
+2024-03-03,FC Andorra,Valladolid,2,1,H
+2024-03-03,Tenerife,Mirandes,2,1,H
+2024-03-03,Zaragoza,Amorebieta,0,1,A
+2024-03-03,Leganes,Eibar,0,2,A
+2024-03-04,Elche,Alcorcon,3,0,H
+2024-03-08,Huesca,FC Andorra,2,0,H
+2024-03-09,Albacete,Oviedo,1,2,A
+2024-03-09,Valladolid,Zaragoza,2,0,H
+2024-03-09,Mirandes,Eldense,3,1,H
+2024-03-09,FC Cartagena,Racing Ferrol,2,1,H
+2024-03-10,Racing Santander,Tenerife,4,2,H
+2024-03-10,Levante,Sporting Gijon,1,0,H
+2024-03-10,Villarreal II,Elche,0,1,A
+2024-03-10,Eibar,Burgos,0,1,A
+2024-03-10,Alcorcon,Espanyol,1,1,D
+2024-03-11,Amorebieta,Leganes,0,1,A
+2024-03-13,Levante,FC Andorra,0,0,D
+2024-03-15,Eldense,FC Cartagena,0,0,D
+2024-03-16,Burgos,Levante,1,1,D
+2024-03-16,Eibar,Villarreal II,2,0,H
+2024-03-16,Oviedo,Racing Santander,1,1,D
+2024-03-16,Tenerife,Huesca,0,0,D
+2024-03-16,Sporting Gijon,Alcorcon,1,0,H
+2024-03-17,Leganes,Mirandes,4,0,H
+2024-03-17,Racing Ferrol,Valladolid,2,0,H
+2024-03-17,Zaragoza,Espanyol,0,1,A
+2024-03-17,Elche,Albacete,3,2,H
+2024-03-18,FC Andorra,Amorebieta,0,1,A
+2024-03-23,Alcorcon,Oviedo,1,0,H
+2024-03-23,FC Cartagena,FC Andorra,1,0,H
+2024-03-23,Villarreal II,Leganes,1,2,A
+2024-03-23,Espanyol,Tenerife,1,1,D
+2024-03-24,Amorebieta,Sporting Gijon,3,1,H
+2024-03-24,Valladolid,Eibar,3,1,H
+2024-03-24,Huesca,Burgos,3,0,H
+2024-03-24,Levante,Elche,3,2,H
+2024-03-24,Mirandes,Zaragoza,0,0,D
+2024-03-24,Racing Santander,Eldense,2,1,H
+2024-03-25,Albacete,Racing Ferrol,1,1,D
+2024-03-29,Burgos,Espanyol,0,0,D
+2024-03-30,Valladolid,Levante,0,0,D
+2024-03-30,Leganes,FC Cartagena,0,0,D
+2024-03-30,Eibar,Eldense,5,1,H
+2024-03-30,FC Andorra,Mirandes,1,0,H
+2024-03-30,Albacete,Huesca,1,1,D
+2024-03-30,Sporting Gijon,Racing Santander,2,3,A
+2024-03-31,Alcorcon,Amorebieta,1,1,D
+2024-03-31,Zaragoza,Tenerife,3,1,H
+2024-03-31,Racing Ferrol,Elche,1,0,H
+2024-03-31,Oviedo,Villarreal II,2,1,H
+2024-04-05,Elche,Oviedo,0,2,A
+2024-04-05,Amorebieta,Racing Ferrol,3,1,H
+2024-04-06,Eldense,FC Andorra,0,2,A
+2024-04-06,Levante,Zaragoza,2,1,H
+2024-04-07,Huesca,Leganes,0,0,D
+2024-04-07,Mirandes,Sporting Gijon,1,3,A
+2024-04-07,Villarreal II,Burgos,2,1,H
+2024-04-07,Espanyol,Albacete,2,1,H
+2024-04-07,Tenerife,Eibar,2,1,H
+2024-04-07,FC Cartagena,Valladolid,0,2,A
+2024-04-08,Racing Santander,Alcorcon,0,1,A
+2024-04-12,Leganes,Espanyol,0,0,D
+2024-04-13,Sporting Gijon,FC Cartagena,1,0,H
+2024-04-13,Valladolid,Eldense,1,0,H
+2024-04-13,Levante,Amorebieta,1,2,A
+2024-04-14,Oviedo,Mirandes,1,1,D
+2024-04-14,Albacete,Tenerife,1,0,H
+2024-04-14,FC Andorra,Eibar,0,2,A
+2024-04-14,Zaragoza,Elche,1,1,D
+2024-04-14,Burgos,Racing Santander,2,1,H
+2024-04-14,Racing Ferrol,Huesca,2,1,H
+2024-04-15,Alcorcon,Villarreal II,1,0,H
+2024-04-19,Tenerife,Leganes,0,0,D
+2024-04-20,Amorebieta,Valladolid,0,3,A
+2024-04-20,Racing Santander,Levante,0,0,D
+2024-04-20,Villarreal II,Racing Ferrol,1,0,H
+2024-04-20,Elche,Sporting Gijon,2,1,H
+2024-04-20,Huesca,Zaragoza,1,2,A
+2024-04-21,Espanyol,FC Andorra,1,1,D
+2024-04-21,Eibar,Alcorcon,2,0,H
+2024-04-21,Eldense,Albacete,0,1,A
+2024-04-21,Mirandes,Burgos,2,1,H
+2024-04-22,FC Cartagena,Oviedo,2,0,H
+2024-04-26,FC Andorra,Racing Santander,1,1,D
+2024-04-27,Leganes,Zaragoza,1,1,D
+2024-04-27,Burgos,Amorebieta,2,2,D
+2024-04-27,Elche,Espanyol,2,2,D
+2024-04-28,Sporting Gijon,Villarreal II,0,3,A
+2024-04-28,Alcorcon,Eldense,0,0,D
+2024-04-28,Oviedo,Tenerife,0,1,A
+2024-04-28,Levante,FC Cartagena,0,1,A
+2024-04-28,Valladolid,Huesca,1,0,H
+2024-04-28,Albacete,Eibar,2,1,H
+2024-04-29,Racing Ferrol,Mirandes,0,2,A
+2024-05-03,Villarreal II,Levante,0,3,A
+2024-05-04,Mirandes,Valladolid,0,1,A
+2024-05-04,Huesca,Oviedo,0,2,A
+2024-05-04,Racing Santander,Elche,3,1,H
+2024-05-04,FC Cartagena,Alcorcon,1,0,H
+2024-05-05,Eibar,Amorebieta,5,0,H
+2024-05-05,Espanyol,Sporting Gijon,0,0,D
+2024-05-05,FC Andorra,Albacete,0,1,A
+2024-05-05,Zaragoza,Burgos,1,3,A
+2024-05-05,Eldense,Leganes,1,2,A
+2024-05-05,Tenerife,Racing Ferrol,2,0,H
+2024-05-10,Burgos,Eldense,1,2,A
+2024-05-11,Racing Santander,Mirandes,1,0,H
+2024-05-11,Sporting Gijon,FC Andorra,5,2,H
+2024-05-11,Racing Ferrol,Alcorcon,2,1,H
+2024-05-11,Valladolid,Espanyol,0,0,D
+2024-05-11,Levante,Eibar,2,2,D
+2024-05-12,Amorebieta,Villarreal II,2,0,H
+2024-05-12,Oviedo,Zaragoza,1,0,H
+2024-05-12,Albacete,Leganes,1,0,H
+2024-05-12,FC Cartagena,Tenerife,2,0,H
+2024-05-12,Elche,Huesca,0,3,A
+2024-05-17,Mirandes,Elche,1,1,D
+2024-05-18,FC Andorra,Burgos,1,0,H
+2024-05-18,Leganes,Sporting Gijon,2,1,H
+2024-05-18,Huesca,Racing Santander,0,3,A
+2024-05-18,Tenerife,Amorebieta,0,1,A
+2024-05-18,Eldense,Levante,0,0,D
+2024-05-19,Eibar,FC Cartagena,1,0,H
+2024-05-19,Alcorcon,Valladolid,1,1,D
+2024-05-19,Zaragoza,Racing Ferrol,2,2,D
+2024-05-20,Espanyol,Oviedo,2,1,H
+2024-05-20,Villarreal II,Albacete,2,2,D
+2024-05-26,Levante,Alcorcon,2,2,D
+2024-05-26,Oviedo,FC Andorra,3,0,H
+2024-05-26,Valladolid,Villarreal II,3,2,H
+2024-05-26,Albacete,Mirandes,2,2,D
+2024-05-26,Sporting Gijon,Eibar,1,0,H
+2024-05-26,Elche,Eldense,1,2,A
+2024-05-26,Racing Santander,Zaragoza,0,2,A
+2024-05-26,FC Cartagena,Huesca,0,2,A
+2024-05-26,Amorebieta,Espanyol,0,0,D
+2024-05-26,Racing Ferrol,Leganes,2,2,D
+2024-05-26,Burgos,Tenerife,1,1,D
+2024-06-02,Alcorcon,Burgos,1,1,D
+2024-06-02,Huesca,Levante,0,0,D
+2024-06-02,FC Andorra,Racing Ferrol,1,0,H
+2024-06-02,Leganes,Elche,2,0,H
+2024-06-02,Espanyol,FC Cartagena,3,0,H
+2024-06-02,Eibar,Oviedo,4,3,H
+2024-06-02,Tenerife,Valladolid,2,1,H
+2024-06-02,Mirandes,Amorebieta,1,0,H
+2024-06-02,Villarreal II,Racing Santander,1,0,H
+2024-06-02,Eldense,Sporting Gijon,0,1,A
+2024-06-02,Zaragoza,Albacete,1,1,D
+2024-06-08,Oviedo,Eibar,0,0,D
+2024-06-09,Sporting Gijon,Espanyol,0,1,A
+2024-06-12,Eibar,Oviedo,0,2,A
+2024-06-13,Espanyol,Sporting Gijon,0,0,D
+2024-06-16,Oviedo,Espanyol,1,0,H
+2024-06-23,Espanyol,Oviedo,2,0,H

@@ -1,0 +1,365 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2023-09-23,Olympiakos Piraeus II,Ilioupoli,0,0,D
+2023-09-23,Kallithea,Panachaiki FC,0,0,D
+2023-09-23,Makedonikos Neapolis,Iraklis 1908,0,0,D
+2023-09-24,Giouchtas,Diagoras,2,0,H
+2023-09-24,Larisa,Kampaniakos Chalastra,2,1,H
+2023-09-24,Anagennisi Karditsas,AEK Athens II,2,1,H
+2023-09-24,Tilikratis,Egaleo,1,0,H
+2023-09-24,Kozani,Aiolikos,1,2,A
+2023-09-24,Panathinaikos II,Kalamata,1,4,A
+2023-09-24,Ionikos,Kissamikos,0,3,A
+2023-09-25,PAOK II,Apollon Pontou,4,0,H
+2023-09-30,Diagoras,Egaleo,2,1,H
+2023-09-30,Panachaiki FC,Panathinaikos II,0,2,A
+2023-09-30,AEK Athens II,Larisa,3,0,H
+2023-09-30,PAOK II,Kampaniakos Chalastra,2,3,A
+2023-10-01,Ilioupoli,Ionikos,0,3,A
+2023-10-01,Iraklis 1908,Anagennisi Karditsas,1,1,D
+2023-10-01,Kallithea,Olympiakos Piraeus II,3,2,H
+2023-10-02,Aiolikos,Makedonikos Neapolis,1,3,A
+2023-10-02,Kissamikos,Tilikratis,3,0,H
+2023-10-02,Levadiakos,Kozani,1,0,H
+2023-10-02,Kalamata,Giouchtas,3,1,H
+2023-10-07,PAOK II,AEK Athens II,1,0,H
+2023-10-11,Larisa,Iraklis 1908,1,0,H
+2023-10-11,Anagennisi Karditsas,Aiolikos,3,1,H
+2023-10-11,Niki Volos,Levadiakos,0,1,A
+2023-10-11,Kozani,Makedonikos Neapolis,2,0,H
+2023-10-14,Egaleo,Kalamata,0,3,A
+2023-10-14,Giouchtas,Panachaiki FC,2,1,H
+2023-10-14,Olympiakos Piraeus II,Ionikos,1,1,D
+2023-10-15,Tilikratis,Ilioupoli,1,2,A
+2023-10-15,Levadiakos,Apollon Pontou,1,0,H
+2023-10-15,Aiolikos,Larisa,1,1,D
+2023-10-15,Niki Volos,Kozani,0,1,A
+2023-10-15,Makedonikos Neapolis,Anagennisi Karditsas,0,0,D
+2023-10-16,Diagoras,Kissamikos,3,1,H
+2023-10-20,Olympiakos Piraeus II,Panathinaikos II,3,1,H
+2023-10-21,Kallithea,Giouchtas,1,0,H
+2023-10-21,Ionikos,Tilikratis,1,0,H
+2023-10-21,PAOK II,Aiolikos,0,0,D
+2023-10-22,Kalamata,Kissamikos,0,2,A
+2023-10-22,Ilioupoli,Diagoras,1,0,H
+2023-10-22,Larisa,Makedonikos Neapolis,1,1,D
+2023-10-22,Apollon Pontou,Niki Volos,1,3,A
+2023-10-22,Panachaiki FC,Egaleo,0,1,A
+2023-10-22,Kozani,Anagennisi Karditsas,1,0,H
+2023-10-23,Kampaniakos Chalastra,Levadiakos,0,2,A
+2023-10-24,Panathinaikos II,Kallithea,0,1,A
+2023-10-25,Iraklis 1908,PAOK II,2,0,H
+2023-10-28,Levadiakos,AEK Athens II,2,1,H
+2023-10-28,Kissamikos,Panachaiki FC,4,1,H
+2023-10-28,Kalamata,Ilioupoli,2,0,H
+2023-10-28,Egaleo,Kallithea,1,1,D
+2023-10-28,Giouchtas,Panathinaikos II,2,0,H
+2023-10-28,Olympiakos Piraeus II,Tilikratis,4,1,H
+2023-10-29,Anagennisi Karditsas,Larisa,0,2,A
+2023-10-29,Apollon Pontou,Kozani,0,0,D
+2023-10-29,Diagoras,Ionikos,2,1,H
+2023-10-29,Makedonikos Neapolis,PAOK II,3,2,H
+2023-10-30,Niki Volos,Kampaniakos Chalastra,2,0,H
+2023-11-04,Giouchtas,Olympiakos Piraeus II,2,2,D
+2023-11-04,Ilioupoli,Panachaiki FC,1,0,H
+2023-11-04,Iraklis 1908,Levadiakos,0,1,A
+2023-11-04,PAOK II,Anagennisi Karditsas,2,0,H
+2023-11-05,Tilikratis,Diagoras,1,0,H
+2023-11-05,Ionikos,Kalamata,3,2,H
+2023-11-05,Kozani,Larisa,0,2,A
+2023-11-05,AEK Athens II,Niki Volos,0,3,A
+2023-11-05,Panathinaikos II,Egaleo,1,0,H
+2023-11-05,Kampaniakos Chalastra,Apollon Pontou,1,0,H
+2023-11-06,Kallithea,Kissamikos,0,1,A
+2023-11-11,Olympiakos Piraeus II,Diagoras,1,0,H
+2023-11-11,Larisa,PAOK II,2,0,H
+2023-11-11,Apollon Pontou,AEK Athens II,2,2,D
+2023-11-11,Kalamata,Tilikratis,3,0,H
+2023-11-11,Kampaniakos Chalastra,Kozani,0,1,A
+2023-11-12,Egaleo,Giouchtas,1,0,H
+2023-11-12,Levadiakos,Aiolikos,2,0,H
+2023-11-12,Kissamikos,Panathinaikos II,2,0,H
+2023-11-12,Panachaiki FC,Ionikos,1,1,D
+2023-11-12,Niki Volos,Iraklis 1908,3,1,H
+2023-11-12,Ilioupoli,Kallithea,1,2,A
+2023-11-15,Aiolikos,Niki Volos,0,2,A
+2023-11-15,Makedonikos Neapolis,Levadiakos,2,2,D
+2023-11-15,Iraklis 1908,Apollon Pontou,0,1,A
+2023-11-18,Egaleo,Olympiakos Piraeus II,0,0,D
+2023-11-19,Anagennisi Karditsas,Levadiakos,2,0,H
+2023-11-19,Apollon Pontou,Aiolikos,0,1,A
+2023-11-19,Kalamata,Diagoras,1,2,A
+2023-11-19,Tilikratis,Panachaiki FC,2,2,D
+2023-11-19,Ionikos,Kallithea,0,1,A
+2023-11-19,Giouchtas,Kissamikos,0,0,D
+2023-11-19,Kampaniakos Chalastra,Iraklis 1908,1,3,A
+2023-11-20,Niki Volos,Makedonikos Neapolis,1,2,A
+2023-11-25,Kallithea,Tilikratis,3,0,H
+2023-11-25,Ionikos,Panathinaikos II,2,0,H
+2023-11-25,Iraklis 1908,AEK Athens II,1,0,H
+2023-11-26,Aiolikos,Kampaniakos Chalastra,4,2,H
+2023-11-26,Anagennisi Karditsas,Niki Volos,2,0,H
+2023-11-26,Kissamikos,Egaleo,2,0,H
+2023-11-26,Panachaiki FC,Diagoras,1,1,D
+2023-11-26,Makedonikos Neapolis,Apollon Pontou,3,1,H
+2023-11-26,Ilioupoli,Giouchtas,0,0,D
+2023-11-26,Olympiakos Piraeus II,Kalamata,0,0,D
+2023-11-27,Levadiakos,Larisa,1,1,D
+2023-11-29,Kozani,PAOK II,0,1,A
+2023-11-29,Panathinaikos II,Ilioupoli,0,2,A
+2023-11-30,AEK Athens II,Kampaniakos Chalastra,1,0,H
+2023-12-02,Diagoras,Kallithea,2,1,H
+2023-12-03,Larisa,Niki Volos,1,0,H
+2023-12-03,Apollon Pontou,Anagennisi Karditsas,2,1,H
+2023-12-03,Kalamata,Panachaiki FC,1,0,H
+2023-12-03,Giouchtas,Ionikos,2,2,D
+2023-12-03,Ilioupoli,Egaleo,2,0,H
+2023-12-03,Iraklis 1908,Kozani,1,1,D
+2023-12-03,AEK Athens II,Aiolikos,2,1,H
+2023-12-03,Olympiakos Piraeus II,Kissamikos,3,0,H
+2023-12-03,PAOK II,Levadiakos,1,3,A
+2023-12-03,Panathinaikos II,Tilikratis,2,1,H
+2023-12-04,Kampaniakos Chalastra,Makedonikos Neapolis,1,2,A
+2023-12-09,Panachaiki FC,Olympiakos Piraeus II,1,1,D
+2023-12-09,Makedonikos Neapolis,AEK Athens II,1,1,D
+2023-12-09,Diagoras,Panathinaikos II,1,0,H
+2023-12-10,Anagennisi Karditsas,Kampaniakos Chalastra,0,1,A
+2023-12-10,Kallithea,Kalamata,1,0,H
+2023-12-10,Aiolikos,Iraklis 1908,1,1,D
+2023-12-10,Tilikratis,Giouchtas,0,0,D
+2023-12-10,Ilioupoli,Kissamikos,1,0,H
+2023-12-11,Larisa,Apollon Pontou,3,0,H
+2023-12-11,Niki Volos,PAOK II,3,2,H
+2023-12-13,Ionikos,Egaleo,5,1,H
+2023-12-13,AEK Athens II,Kozani,1,0,H
+2023-12-16,Kalamata,Panathinaikos II,0,0,D
+2023-12-16,Ilioupoli,Olympiakos Piraeus II,0,1,A
+2023-12-16,Kampaniakos Chalastra,Larisa,0,2,A
+2023-12-17,Aiolikos,Kozani,0,0,D
+2023-12-17,AEK Athens II,Anagennisi Karditsas,0,0,D
+2023-12-17,Panachaiki FC,Kallithea,1,1,D
+2023-12-17,Diagoras,Giouchtas,2,0,H
+2023-12-18,Iraklis 1908,Makedonikos Neapolis,5,1,H
+2023-12-18,Apollon Pontou,PAOK II,0,1,A
+2023-12-19,Egaleo,Tilikratis,1,0,H
+2023-12-19,Kissamikos,Ionikos,1,1,D
+2024-01-03,Anagennisi Karditsas,Iraklis 1908,2,1,H
+2024-01-03,Makedonikos Neapolis,Aiolikos,1,1,D
+2024-01-03,Kozani,Levadiakos,0,0,D
+2024-01-04,Kampaniakos Chalastra,PAOK II,2,0,H
+2024-01-04,Larisa,AEK Athens II,1,1,D
+2024-01-06,Olympiakos Piraeus II,Kallithea,1,2,A
+2024-01-07,Iraklis 1908,Larisa,1,1,D
+2024-01-07,Giouchtas,Kalamata,1,1,D
+2024-01-07,Aiolikos,Anagennisi Karditsas,1,1,D
+2024-01-07,Tilikratis,Kissamikos,0,3,A
+2024-01-07,Egaleo,Diagoras,4,1,H
+2024-01-07,Ionikos,Ilioupoli,4,1,H
+2024-01-07,Makedonikos Neapolis,Kozani,0,0,D
+2024-01-08,Panathinaikos II,Panachaiki FC,2,2,D
+2024-01-08,Levadiakos,Niki Volos,2,0,H
+2024-01-08,AEK Athens II,PAOK II,1,0,H
+2024-01-13,Kissamikos,Diagoras,4,0,H
+2024-01-13,Larisa,Aiolikos,2,0,H
+2024-01-13,Kallithea,Panathinaikos II,3,0,H
+2024-01-13,Apollon Pontou,Levadiakos,0,1,A
+2024-01-13,Kalamata,Egaleo,1,0,H
+2024-01-13,Kozani,Niki Volos,0,3,A
+2024-01-14,Anagennisi Karditsas,Makedonikos Neapolis,0,1,A
+2024-01-14,Panachaiki FC,Giouchtas,3,1,H
+2024-01-14,Ilioupoli,Tilikratis,1,0,H
+2024-01-15,PAOK II,Iraklis 1908,1,1,D
+2024-01-15,Ionikos,Olympiakos Piraeus II,1,0,H
+2024-01-21,Aiolikos,PAOK II,2,2,D
+2024-01-21,Makedonikos Neapolis,Larisa,0,0,D
+2024-01-21,Anagennisi Karditsas,Kozani,1,1,D
+2024-01-21,Tilikratis,Ionikos,3,2,H
+2024-01-21,Diagoras,Ilioupoli,0,1,A
+2024-01-21,Egaleo,Panachaiki FC,1,0,H
+2024-01-21,Kissamikos,Kalamata,1,1,D
+2024-01-22,Levadiakos,Kampaniakos Chalastra,3,0,H
+2024-01-22,Giouchtas,Kallithea,1,2,A
+2024-01-22,Panathinaikos II,Olympiakos Piraeus II,1,3,A
+2024-01-27,Tilikratis,Olympiakos Piraeus II,2,2,D
+2024-01-27,Kampaniakos Chalastra,Niki Volos,0,2,A
+2024-01-28,PAOK II,Makedonikos Neapolis,2,0,H
+2024-01-28,Larisa,Anagennisi Karditsas,1,0,H
+2024-01-28,Kallithea,Egaleo,1,0,H
+2024-01-28,Panachaiki FC,Kissamikos,2,1,H
+2024-01-28,Ilioupoli,Kalamata,1,0,H
+2024-01-28,Kozani,Apollon Pontou,1,0,H
+2024-01-28,Panathinaikos II,Giouchtas,2,1,H
+2024-01-28,Ionikos,Diagoras,1,0,H
+2024-01-29,AEK Athens II,Levadiakos,0,1,A
+2024-02-03,Olympiakos Piraeus II,Giouchtas,3,1,H
+2024-02-03,Anagennisi Karditsas,PAOK II,0,3,A
+2024-02-04,Levadiakos,Iraklis 1908,2,0,H
+2024-02-04,Larisa,Kozani,2,0,H
+2024-02-04,Kissamikos,Kallithea,0,0,D
+2024-02-04,Apollon Pontou,Kampaniakos Chalastra,2,0,H
+2024-02-04,Panachaiki FC,Ilioupoli,1,2,A
+2024-02-04,Diagoras,Tilikratis,0,2,A
+2024-02-05,Niki Volos,AEK Athens II,1,1,D
+2024-02-05,Egaleo,Panathinaikos II,2,1,H
+2024-02-05,Kalamata,Ionikos,0,0,D
+2024-02-10,Aiolikos,Levadiakos,0,3,A
+2024-02-11,Iraklis 1908,Niki Volos,1,0,H
+2024-02-11,Diagoras,Olympiakos Piraeus II,0,2,A
+2024-02-11,Ionikos,Panachaiki FC,3,1,H
+2024-02-11,Giouchtas,Egaleo,2,0,H
+2024-02-11,Kozani,Kampaniakos Chalastra,0,1,A
+2024-02-11,Panathinaikos II,Kissamikos,0,2,A
+2024-02-12,Tilikratis,Kalamata,0,2,A
+2024-02-12,Kallithea,Ilioupoli,2,1,H
+2024-02-14,Kampaniakos Chalastra,AEK Athens II,1,1,D
+2024-02-14,Levadiakos,Makedonikos Neapolis,2,1,H
+2024-02-14,Apollon Pontou,Iraklis 1908,0,1,A
+2024-02-14,Niki Volos,Aiolikos,3,1,H
+2024-02-17,Panachaiki FC,Tilikratis,2,1,H
+2024-02-18,Aiolikos,Apollon Pontou,3,1,H
+2024-02-18,Ilioupoli,Panathinaikos II,1,3,A
+2024-02-18,Kozani,AEK Athens II,0,1,A
+2024-02-18,Levadiakos,Anagennisi Karditsas,3,0,H
+2024-02-18,Kallithea,Ionikos,2,1,H
+2024-02-18,Kissamikos,Giouchtas,4,1,H
+2024-02-18,Diagoras,Kalamata,1,0,H
+2024-02-18,Makedonikos Neapolis,Niki Volos,0,0,D
+2024-02-19,Iraklis 1908,Kampaniakos Chalastra,2,2,D
+2024-02-19,Olympiakos Piraeus II,Egaleo,0,0,D
+2024-02-21,Niki Volos,Apollon Pontou,5,0,H
+2024-02-21,PAOK II,Larisa,1,2,A
+2024-02-24,Kalamata,Olympiakos Piraeus II,1,0,H
+2024-02-25,Larisa,Levadiakos,0,0,D
+2024-02-25,Apollon Pontou,Makedonikos Neapolis,0,3,A
+2024-02-25,Tilikratis,Kallithea,0,3,A
+2024-02-25,Diagoras,Panachaiki FC,1,2,A
+2024-02-25,Egaleo,Kissamikos,0,0,D
+2024-02-25,Giouchtas,Ilioupoli,0,1,A
+2024-02-25,AEK Athens II,Iraklis 1908,0,0,D
+2024-02-25,Kampaniakos Chalastra,Aiolikos,1,0,H
+2024-02-26,Niki Volos,Anagennisi Karditsas,1,2,A
+2024-02-26,Panathinaikos II,Ionikos,1,0,H
+2024-02-29,AEK Athens II,Apollon Pontou,4,0,H
+2024-02-29,PAOK II,Kozani,1,0,H
+2024-03-03,Kallithea,Diagoras,1,1,D
+2024-03-03,Kissamikos,Olympiakos Piraeus II,2,0,H
+2024-03-03,Panachaiki FC,Kalamata,1,1,D
+2024-03-03,Tilikratis,Panathinaikos II,2,0,H
+2024-03-03,Egaleo,Ilioupoli,1,0,H
+2024-03-03,Ionikos,Giouchtas,0,0,D
+2024-03-04,Levadiakos,PAOK II,3,1,H
+2024-03-04,Anagennisi Karditsas,Apollon Pontou,4,1,H
+2024-03-04,Aiolikos,AEK Athens II,0,2,A
+2024-03-04,Niki Volos,Larisa,1,2,A
+2024-03-04,Makedonikos Neapolis,Kampaniakos Chalastra,0,1,A
+2024-03-04,Kozani,Iraklis 1908,1,0,H
+2024-03-10,Kissamikos,Ilioupoli,3,1,H
+2024-03-10,Kalamata,Kallithea,1,0,H
+2024-03-10,Egaleo,Ionikos,1,2,A
+2024-03-10,Giouchtas,Tilikratis,1,0,H
+2024-03-10,Olympiakos Piraeus II,Panachaiki FC,2,2,D
+2024-03-10,Panathinaikos II,Diagoras,2,2,D
+2024-03-11,Apollon Pontou,Larisa,1,3,A
+2024-03-11,Iraklis 1908,Aiolikos,3,0,H
+2024-03-11,AEK Athens II,Makedonikos Neapolis,0,0,D
+2024-03-11,PAOK II,Niki Volos,4,0,H
+2024-03-11,Kampaniakos Chalastra,Anagennisi Karditsas,0,1,A
+2024-03-24,Panachaiki FC,Giouchtas,0,1,A
+2024-03-24,Aiolikos,Iraklis 1908,1,1,D
+2024-03-24,Niki Volos,Larisa,1,1,D
+2024-03-24,Ionikos,Kissamikos,5,1,H
+2024-03-24,Makedonikos Neapolis,Levadiakos,1,3,A
+2024-03-24,Kozani,Anagennisi Karditsas,1,0,H
+2024-03-25,Ilioupoli,Kallithea,0,4,A
+2024-03-30,Iraklis 1908,Kozani,1,1,D
+2024-03-30,AEK Athens II,Larisa,3,3,D
+2024-03-30,Levadiakos,Niki Volos,2,0,H
+2024-03-30,Anagennisi Karditsas,Kampaniakos Chalastra,0,1,A
+2024-03-30,Giouchtas,Egaleo,0,2,A
+2024-03-30,Olympiakos Piraeus II,Panachaiki FC,5,0,H
+2024-03-30,PAOK II,Aiolikos,2,1,H
+2024-03-30,Panathinaikos II,Diagoras,0,1,A
+2024-03-31,Kalamata,Kissamikos,0,5,A
+2024-03-31,Kallithea,Ionikos,1,1,D
+2024-04-03,Larisa,Levadiakos,2,2,D
+2024-04-03,Anagennisi Karditsas,Iraklis 1908,0,0,D
+2024-04-03,Kalamata,Ilioupoli,0,1,A
+2024-04-03,AEK Athens II,Makedonikos Neapolis,3,3,D
+2024-04-03,Olympiakos Piraeus II,Egaleo,1,3,A
+2024-04-03,PAOK II,Kozani,4,2,H
+2024-04-03,Panathinaikos II,Giouchtas,3,0,H
+2024-04-03,Kampaniakos Chalastra,Aiolikos,0,1,A
+2024-04-04,Kissamikos,Kallithea,2,1,H
+2024-04-04,Diagoras,Panachaiki FC,2,2,D
+2024-04-07,Aiolikos,Anagennisi Karditsas,0,1,A
+2024-04-07,Niki Volos,AEK Athens II,1,0,H
+2024-04-07,Ionikos,Kalamata,0,0,D
+2024-04-07,Makedonikos Neapolis,Larisa,3,2,H
+2024-04-07,Giouchtas,Olympiakos Piraeus II,3,2,H
+2024-04-07,Kozani,Kampaniakos Chalastra,2,2,D
+2024-04-07,Iraklis 1908,PAOK II,2,1,H
+2024-04-08,Egaleo,Diagoras,1,1,D
+2024-04-08,Panachaiki FC,Panathinaikos II,2,0,H
+2024-04-08,Ilioupoli,Kissamikos,4,2,H
+2024-04-10,Kampaniakos Chalastra,PAOK II,4,2,H
+2024-04-11,Diagoras,Olympiakos Piraeus II,1,0,H
+2024-04-11,Egaleo,Panathinaikos II,0,0,D
+2024-04-14,AEK Athens II,Levadiakos,0,2,A
+2024-04-14,Aiolikos,Kozani,0,0,D
+2024-04-14,Kalamata,Kallithea,0,1,A
+2024-04-14,Niki Volos,Makedonikos Neapolis,1,1,D
+2024-04-14,Ionikos,Ilioupoli,2,2,D
+2024-04-14,PAOK II,Anagennisi Karditsas,2,0,H
+2024-04-14,Kampaniakos Chalastra,Iraklis 1908,0,1,A
+2024-04-15,Panachaiki FC,Egaleo,1,0,H
+2024-04-15,Diagoras,Giouchtas,1,0,H
+2024-04-15,Olympiakos Piraeus II,Panathinaikos II,0,1,A
+2024-04-20,Olympiakos Piraeus II,Diagoras,1,1,D
+2024-04-20,Larisa,Niki Volos,2,3,A
+2024-04-20,Levadiakos,Makedonikos Neapolis,2,0,H
+2024-04-21,Anagennisi Karditsas,Kozani,1,1,D
+2024-04-21,Giouchtas,Panachaiki FC,1,2,A
+2024-04-21,PAOK II,Kampaniakos Chalastra,1,0,H
+2024-04-21,Panathinaikos II,Egaleo,0,0,D
+2024-04-21,Kallithea,Ilioupoli,4,0,H
+2024-04-21,Kissamikos,Ionikos,0,1,A
+2024-04-22,Iraklis 1908,Aiolikos,1,0,H
+2024-04-27,Larisa,AEK Athens II,3,0,H
+2024-04-27,Diagoras,Panathinaikos II,0,0,D
+2024-04-28,Kissamikos,Kalamata,2,0,H
+2024-04-28,Panachaiki FC,Olympiakos Piraeus II,1,0,H
+2024-04-28,Niki Volos,Levadiakos,0,1,A
+2024-04-28,Egaleo,Giouchtas,1,0,H
+2024-04-28,Kozani,Iraklis 1908,1,1,D
+2024-04-28,Kampaniakos Chalastra,Anagennisi Karditsas,0,0,D
+2024-04-29,Aiolikos,PAOK II,1,2,A
+2024-04-29,Ionikos,Kallithea,0,2,A
+2024-05-08,Aiolikos,Kampaniakos Chalastra,1,2,A
+2024-05-08,Egaleo,Olympiakos Piraeus II,1,1,D
+2024-05-08,Giouchtas,Panathinaikos II,2,1,H
+2024-05-08,Kozani,PAOK II,3,1,H
+2024-05-08,Iraklis 1908,Anagennisi Karditsas,0,0,D
+2024-05-09,Kallithea,Kissamikos,1,1,D
+2024-05-09,Ilioupoli,Kalamata,2,1,H
+2024-05-10,Makedonikos Neapolis,AEK Athens II,1,2,A
+2024-05-10,Panachaiki FC,Diagoras,1,0,H
+2024-05-11,Levadiakos,Larisa,1,2,A
+2024-05-14,PAOK II,Iraklis 1908,2,2,D
+2024-05-15,Larisa,Makedonikos Neapolis,1,1,D
+2024-05-15,Anagennisi Karditsas,Aiolikos,2,1,H
+2024-05-15,Kissamikos,Ilioupoli,6,2,H
+2024-05-15,Kalamata,Ionikos,0,0,D
+2024-05-15,Kampaniakos Chalastra,Kozani,1,0,H
+2024-05-16,Diagoras,Egaleo,1,1,D
+2024-05-16,AEK Athens II,Niki Volos,1,1,D
+2024-05-16,Olympiakos Piraeus II,Giouchtas,3,1,H
+2024-05-16,Panathinaikos II,Panachaiki FC,0,2,A
+2024-05-22,Giouchtas,Diagoras,0,0,D
+2024-05-22,Anagennisi Karditsas,PAOK II,2,4,A
+2024-05-22,Ilioupoli,Ionikos,0,0,D
+2024-05-22,Kozani,Aiolikos,4,1,H
+2024-05-22,Iraklis 1908,Kampaniakos Chalastra,1,2,A
+2024-05-23,Egaleo,Panachaiki FC,1,0,H
+2024-05-23,Panathinaikos II,Olympiakos Piraeus II,1,4,A
+2024-05-23,Makedonikos Neapolis,Niki Volos,3,1,H
+2024-05-25,Kallithea,Kalamata,4,1,H
+2024-05-26,Levadiakos,AEK Athens II,4,0,H

@@ -1,0 +1,182 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2020-11-04,Tirana,FK Kukesi,2,0,H
+2020-11-04,Kastrioti Kruje,Partizani,2,1,H
+2020-11-04,Bylis,Laci,1,1,D
+2020-11-04,Teuta Durres,Skenderbeu Korce,1,1,D
+2020-11-04,Vllaznia Shkoder,Apolonia Fier,2,0,H
+2020-11-08,FK Kukesi,Partizani,0,2,A
+2020-11-08,Tirana,Teuta Durres,0,1,A
+2020-11-08,Laci,Kastrioti Kruje,1,1,D
+2020-11-08,Apolonia Fier,Bylis,2,2,D
+2020-11-08,Skenderbeu Korce,Vllaznia Shkoder,0,2,A
+2020-11-21,Kastrioti Kruje,Apolonia Fier,1,1,D
+2020-11-21,Bylis,Skenderbeu Korce,0,2,A
+2020-11-21,Partizani,Laci,0,0,D
+2020-11-21,Teuta Durres,FK Kukesi,0,0,D
+2020-11-21,Vllaznia Shkoder,Tirana,3,2,H
+2020-11-25,Skenderbeu Korce,Kastrioti Kruje,1,2,A
+2020-11-25,Tirana,Bylis,0,0,D
+2020-11-25,Apolonia Fier,Partizani,0,3,A
+2020-11-25,FK Kukesi,Laci,1,0,H
+2020-11-25,Teuta Durres,Vllaznia Shkoder,0,0,D
+2020-11-29,Laci,Apolonia Fier,6,1,H
+2020-11-29,Kastrioti Kruje,Tirana,1,1,D
+2020-11-29,Bylis,Teuta Durres,0,0,D
+2020-11-29,Partizani,Skenderbeu Korce,4,0,H
+2020-11-29,Vllaznia Shkoder,FK Kukesi,2,4,A
+2020-12-04,Tirana,Partizani,0,0,D
+2020-12-05,Skenderbeu Korce,Laci,1,1,D
+2020-12-05,Vllaznia Shkoder,Bylis,1,0,H
+2020-12-05,FK Kukesi,Apolonia Fier,1,0,H
+2020-12-05,Teuta Durres,Kastrioti Kruje,1,1,D
+2020-12-09,Laci,Tirana,0,1,A
+2020-12-09,Kastrioti Kruje,Vllaznia Shkoder,0,3,A
+2020-12-09,Apolonia Fier,Skenderbeu Korce,1,0,H
+2020-12-09,Bylis,FK Kukesi,0,3,A
+2020-12-09,Partizani,Teuta Durres,0,0,D
+2020-12-13,Tirana,Apolonia Fier,3,0,H
+2020-12-13,Bylis,Kastrioti Kruje,2,1,H
+2020-12-13,FK Kukesi,Skenderbeu Korce,3,1,H
+2020-12-13,Teuta Durres,Laci,1,1,D
+2020-12-13,Vllaznia Shkoder,Partizani,1,0,H
+2020-12-19,Skenderbeu Korce,Tirana,1,1,D
+2020-12-19,Laci,Vllaznia Shkoder,1,0,H
+2020-12-19,Kastrioti Kruje,FK Kukesi,1,0,H
+2020-12-19,Apolonia Fier,Teuta Durres,0,1,A
+2020-12-19,Partizani,Bylis,0,0,D
+2020-12-23,Skenderbeu Korce,Teuta Durres,1,3,A
+2020-12-23,Partizani,Kastrioti Kruje,2,0,H
+2020-12-23,Laci,Bylis,2,0,H
+2020-12-23,Apolonia Fier,Vllaznia Shkoder,0,1,A
+2020-12-23,FK Kukesi,Tirana,0,0,D
+2020-12-27,Kastrioti Kruje,Laci,1,0,H
+2020-12-27,Bylis,Apolonia Fier,3,1,H
+2020-12-27,Vllaznia Shkoder,Skenderbeu Korce,5,1,H
+2020-12-27,Partizani,FK Kukesi,4,1,H
+2020-12-27,Teuta Durres,Tirana,1,1,D
+2020-12-30,Skenderbeu Korce,Bylis,4,3,H
+2020-12-30,Tirana,Vllaznia Shkoder,1,1,D
+2020-12-30,Laci,Partizani,3,2,H
+2020-12-30,Apolonia Fier,Kastrioti Kruje,2,1,H
+2020-12-30,FK Kukesi,Teuta Durres,0,3,A
+2021-01-08,Vllaznia Shkoder,Teuta Durres,1,0,H
+2021-01-09,Laci,FK Kukesi,3,2,H
+2021-01-09,Kastrioti Kruje,Skenderbeu Korce,2,2,D
+2021-01-09,Bylis,Tirana,0,0,D
+2021-01-09,Partizani,Apolonia Fier,1,1,D
+2021-01-15,FK Kukesi,Vllaznia Shkoder,0,1,A
+2021-01-15,Teuta Durres,Bylis,2,0,H
+2021-01-16,Skenderbeu Korce,Partizani,1,2,A
+2021-01-16,Tirana,Kastrioti Kruje,2,1,H
+2021-01-16,Apolonia Fier,Laci,1,0,H
+2021-01-20,Laci,Skenderbeu Korce,1,1,D
+2021-01-20,Kastrioti Kruje,Teuta Durres,0,1,A
+2021-01-20,Apolonia Fier,FK Kukesi,1,3,A
+2021-01-20,Bylis,Vllaznia Shkoder,0,1,A
+2021-01-21,Partizani,Tirana,1,0,H
+2021-01-24,FK Kukesi,Bylis,2,1,H
+2021-01-24,Skenderbeu Korce,Apolonia Fier,1,1,D
+2021-01-24,Vllaznia Shkoder,Kastrioti Kruje,0,0,D
+2021-01-25,Tirana,Laci,0,1,A
+2021-01-25,Teuta Durres,Partizani,1,1,D
+2021-01-30,Skenderbeu Korce,FK Kukesi,0,4,A
+2021-01-30,Kastrioti Kruje,Bylis,1,0,H
+2021-01-31,Laci,Teuta Durres,1,0,H
+2021-01-31,Apolonia Fier,Tirana,0,1,A
+2021-01-31,Partizani,Vllaznia Shkoder,0,0,D
+2021-02-05,Vllaznia Shkoder,Laci,1,2,A
+2021-02-06,Tirana,Skenderbeu Korce,2,0,H
+2021-02-06,Bylis,Partizani,1,2,A
+2021-02-06,Teuta Durres,Apolonia Fier,1,0,H
+2021-02-07,FK Kukesi,Kastrioti Kruje,0,1,A
+2021-02-12,Teuta Durres,Skenderbeu Korce,2,0,H
+2021-02-13,Tirana,FK Kukesi,0,2,A
+2021-02-13,Kastrioti Kruje,Partizani,0,3,A
+2021-02-13,Bylis,Laci,0,1,A
+2021-02-13,Vllaznia Shkoder,Apolonia Fier,1,0,H
+2021-02-20,Tirana,Teuta Durres,0,1,A
+2021-02-20,Laci,Kastrioti Kruje,1,0,H
+2021-02-20,Apolonia Fier,Bylis,0,1,A
+2021-02-21,Skenderbeu Korce,Vllaznia Shkoder,1,1,D
+2021-02-21,FK Kukesi,Partizani,1,2,A
+2021-02-26,Teuta Durres,FK Kukesi,2,2,D
+2021-02-27,Kastrioti Kruje,Apolonia Fier,0,0,D
+2021-02-27,Bylis,Skenderbeu Korce,1,0,H
+2021-02-27,Vllaznia Shkoder,Tirana,1,2,A
+2021-02-27,Partizani,Laci,1,1,D
+2021-03-03,Skenderbeu Korce,Kastrioti Kruje,0,1,A
+2021-03-03,Tirana,Bylis,2,0,H
+2021-03-03,Apolonia Fier,Partizani,1,1,D
+2021-03-03,FK Kukesi,Laci,1,2,A
+2021-03-03,Teuta Durres,Vllaznia Shkoder,1,0,H
+2021-03-07,Kastrioti Kruje,Tirana,1,2,A
+2021-03-07,Bylis,Teuta Durres,1,1,D
+2021-03-07,Partizani,Skenderbeu Korce,0,1,A
+2021-03-08,Laci,Apolonia Fier,1,1,D
+2021-03-08,Vllaznia Shkoder,FK Kukesi,0,0,D
+2021-03-12,FK Kukesi,Apolonia Fier,1,1,D
+2021-03-12,Vllaznia Shkoder,Bylis,1,2,A
+2021-03-13,Skenderbeu Korce,Laci,0,2,A
+2021-03-13,Tirana,Partizani,1,2,A
+2021-03-13,Teuta Durres,Kastrioti Kruje,0,0,D
+2021-03-21,Laci,Tirana,1,2,A
+2021-03-21,Kastrioti Kruje,Vllaznia Shkoder,0,1,A
+2021-03-21,Apolonia Fier,Skenderbeu Korce,1,2,A
+2021-03-21,Bylis,FK Kukesi,2,1,H
+2021-03-21,Partizani,Teuta Durres,0,0,D
+2021-04-03,Teuta Durres,Laci,1,0,H
+2021-04-03,Vllaznia Shkoder,Partizani,0,0,D
+2021-04-04,Bylis,Kastrioti Kruje,1,1,D
+2021-04-04,FK Kukesi,Skenderbeu Korce,0,1,A
+2021-04-04,Tirana,Apolonia Fier,5,2,H
+2021-04-10,Skenderbeu Korce,Tirana,0,0,D
+2021-04-10,Kastrioti Kruje,FK Kukesi,0,3,A
+2021-04-10,Laci,Vllaznia Shkoder,0,0,D
+2021-04-10,Apolonia Fier,Teuta Durres,0,2,A
+2021-04-11,Partizani,Bylis,3,0,H
+2021-04-17,FK Kukesi,Tirana,2,2,D
+2021-04-17,Partizani,Kastrioti Kruje,3,1,H
+2021-04-18,Apolonia Fier,Vllaznia Shkoder,0,6,A
+2021-04-18,Skenderbeu Korce,Teuta Durres,0,1,A
+2021-04-18,Laci,Bylis,2,1,H
+2021-04-24,Kastrioti Kruje,Laci,0,0,D
+2021-04-24,Bylis,Apolonia Fier,1,0,H
+2021-04-24,Vllaznia Shkoder,Skenderbeu Korce,2,1,H
+2021-04-24,Partizani,FK Kukesi,4,0,H
+2021-04-24,Teuta Durres,Tirana,0,2,A
+2021-04-28,Skenderbeu Korce,Bylis,2,1,H
+2021-04-28,Apolonia Fier,Kastrioti Kruje,2,1,H
+2021-04-28,FK Kukesi,Teuta Durres,0,2,A
+2021-04-28,Tirana,Vllaznia Shkoder,1,0,H
+2021-04-28,Laci,Partizani,2,2,D
+2021-05-02,Kastrioti Kruje,Skenderbeu Korce,0,2,A
+2021-05-02,Bylis,Tirana,0,0,D
+2021-05-03,Laci,FK Kukesi,2,0,H
+2021-05-03,Partizani,Apolonia Fier,1,0,H
+2021-05-03,Vllaznia Shkoder,Teuta Durres,0,0,D
+2021-05-07,FK Kukesi,Vllaznia Shkoder,3,1,H
+2021-05-08,Tirana,Kastrioti Kruje,1,0,H
+2021-05-08,Apolonia Fier,Laci,0,1,A
+2021-05-08,Skenderbeu Korce,Partizani,1,1,D
+2021-05-08,Teuta Durres,Bylis,4,0,H
+2021-05-13,Laci,Skenderbeu Korce,0,0,D
+2021-05-13,Kastrioti Kruje,Teuta Durres,1,2,A
+2021-05-13,Apolonia Fier,FK Kukesi,0,3,A
+2021-05-13,Bylis,Vllaznia Shkoder,0,1,A
+2021-05-13,Partizani,Tirana,0,0,D
+2021-05-17,FK Kukesi,Bylis,2,1,H
+2021-05-17,Skenderbeu Korce,Apolonia Fier,2,0,H
+2021-05-17,Tirana,Laci,0,1,A
+2021-05-17,Teuta Durres,Partizani,0,1,A
+2021-05-17,Vllaznia Shkoder,Kastrioti Kruje,1,0,H
+2021-05-21,Skenderbeu Korce,FK Kukesi,2,1,H
+2021-05-21,Partizani,Vllaznia Shkoder,0,1,A
+2021-05-21,Laci,Teuta Durres,0,0,D
+2021-05-21,Kastrioti Kruje,Bylis,1,1,D
+2021-05-21,Apolonia Fier,Tirana,1,1,D
+2021-05-26,FK Kukesi,Kastrioti Kruje,1,2,A
+2021-05-26,Tirana,Skenderbeu Korce,3,1,H
+2021-05-26,Teuta Durres,Apolonia Fier,6,1,H
+2021-05-26,Bylis,Partizani,2,4,A
+2021-05-26,Vllaznia Shkoder,Laci,2,0,H
+2021-05-30,Kastrioti Kruje,Tomori Berat,2,1,H

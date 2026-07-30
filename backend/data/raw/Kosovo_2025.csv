@@ -1,0 +1,183 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2025-08-17,Drenica Skenderaj,Llapi,0,0,D
+2025-08-17,Dukagjini,Prishtina,2,3,A
+2025-08-17,Ferizaj,Drita,1,0,H
+2025-08-17,Malisheva,Prishtina e Re,0,4,A
+2025-08-18,Gjilani,Ballkani,1,1,D
+2025-08-24,Ballkani,Malisheva,1,1,D
+2025-08-24,Dukagjini,Gjilani,2,0,H
+2025-08-24,Prishtina e Re,Ferizaj,0,1,A
+2025-08-24,Prishtina,Llapi,3,0,H
+2025-08-31,Gjilani,Prishtina,3,1,H
+2025-08-31,Drenica Skenderaj,Prishtina e Re,1,0,H
+2025-08-31,Ferizaj,Ballkani,1,3,A
+2025-08-31,Malisheva,Dukagjini,0,1,A
+2025-09-01,Llapi,Drita,1,1,D
+2025-09-14,Ballkani,Drenica Skenderaj,3,0,H
+2025-09-14,Gjilani,Malisheva,1,3,A
+2025-09-14,Dukagjini,Ferizaj,2,0,H
+2025-09-14,Prishtina e Re,Llapi,1,0,H
+2025-09-14,Prishtina,Drita,2,2,D
+2025-09-17,Drita,Drenica Skenderaj,0,1,A
+2025-09-21,Drita,Prishtina e Re,2,1,H
+2025-09-21,Drenica Skenderaj,Dukagjini,1,1,D
+2025-09-21,Ferizaj,Gjilani,0,1,A
+2025-09-21,Llapi,Ballkani,2,2,D
+2025-09-21,Malisheva,Prishtina,1,3,A
+2025-09-25,Ballkani,Drita,2,0,H
+2025-09-25,Gjilani,Drenica Skenderaj,0,1,A
+2025-09-25,Dukagjini,Llapi,3,1,H
+2025-09-25,Malisheva,Ferizaj,3,1,H
+2025-09-25,Prishtina,Prishtina e Re,2,0,H
+2025-09-28,Drita,Dukagjini,3,1,H
+2025-09-28,Drenica Skenderaj,Malisheva,3,4,A
+2025-09-28,Ferizaj,Prishtina,0,5,A
+2025-09-28,Llapi,Gjilani,4,1,H
+2025-09-28,Prishtina e Re,Ballkani,0,3,A
+2025-10-04,Prishtina,Ballkani,1,0,H
+2025-10-04,Malisheva,Llapi,1,2,A
+2025-10-05,Dukagjini,Prishtina e Re,1,1,D
+2025-10-05,Ferizaj,Drenica Skenderaj,2,0,H
+2025-10-06,Gjilani,Drita,1,2,A
+2025-10-18,Drita,Malisheva,2,1,H
+2025-10-18,Prishtina e Re,Gjilani,0,1,A
+2025-10-19,Ballkani,Dukagjini,2,0,H
+2025-10-19,Drenica Skenderaj,Prishtina,3,4,A
+2025-10-19,Llapi,Ferizaj,1,1,D
+2025-10-25,Ballkani,Gjilani,1,1,D
+2025-10-25,Prishtina e Re,Malisheva,0,2,A
+2025-10-25,Prishtina,Dukagjini,2,0,H
+2025-10-26,Drita,Ferizaj,3,1,H
+2025-10-26,Llapi,Drenica Skenderaj,4,3,H
+2025-10-28,Gjilani,Dukagjini,0,2,A
+2025-10-28,Malisheva,Ballkani,0,5,A
+2025-10-29,Drenica Skenderaj,Drita,3,1,H
+2025-10-29,Ferizaj,Prishtina e Re,3,0,H
+2025-10-29,Llapi,Prishtina,2,1,H
+2025-11-01,Ballkani,Ferizaj,1,1,D
+2025-11-01,Prishtina,Gjilani,0,0,D
+2025-11-02,Drita,Llapi,1,0,H
+2025-11-02,Dukagjini,Malisheva,1,2,A
+2025-11-08,Drenica Skenderaj,Ballkani,2,0,H
+2025-11-08,Llapi,Prishtina e Re,1,1,D
+2025-11-09,Ferizaj,Dukagjini,0,1,A
+2025-11-09,Malisheva,Gjilani,1,2,A
+2025-11-22,Prishtina e Re,Drita,0,2,A
+2025-11-22,Prishtina,Malisheva,0,2,A
+2025-11-23,Ballkani,Llapi,2,4,A
+2025-11-23,Gjilani,Ferizaj,2,2,D
+2025-11-23,Dukagjini,Drenica Skenderaj,3,0,H
+2025-11-29,Drenica Skenderaj,Gjilani,0,1,A
+2025-11-29,Prishtina e Re,Prishtina,4,1,H
+2025-11-30,Drita,Ballkani,2,3,A
+2025-11-30,Ferizaj,Malisheva,0,2,A
+2025-11-30,Llapi,Dukagjini,0,1,A
+2025-12-06,Ballkani,Prishtina e Re,6,1,H
+2025-12-06,Dukagjini,Drita,1,1,D
+2025-12-06,Malisheva,Drenica Skenderaj,2,0,H
+2025-12-07,Prishtina,Ferizaj,1,1,D
+2025-12-07,Gjilani,Llapi,3,0,H
+2025-12-13,Drenica Skenderaj,Ferizaj,2,1,H
+2025-12-13,Prishtina e Re,Dukagjini,0,0,D
+2025-12-14,Ballkani,Prishtina,3,1,H
+2025-12-14,Drita,Gjilani,1,1,D
+2025-12-14,Llapi,Malisheva,0,0,D
+2025-12-20,Prishtina,Drenica Skenderaj,2,1,H
+2025-12-20,Ferizaj,Llapi,2,1,H
+2025-12-21,Gjilani,Prishtina e Re,3,2,H
+2025-12-21,Dukagjini,Ballkani,0,0,D
+2025-12-21,Malisheva,Drita,1,1,D
+2025-12-24,Drita,Prishtina,2,0,H
+2026-02-07,Drenica Skenderaj,Llapi,1,1,D
+2026-02-07,Dukagjini,Prishtina,0,1,A
+2026-02-07,Ferizaj,Drita,0,1,A
+2026-02-08,Gjilani,Ballkani,1,2,A
+2026-02-08,Malisheva,Prishtina e Re,1,0,H
+2026-02-14,Drita,Drenica Skenderaj,1,0,H
+2026-02-15,Dukagjini,Gjilani,1,1,D
+2026-02-15,Prishtina e Re,Ferizaj,1,0,H
+2026-02-15,Prishtina,Llapi,4,1,H
+2026-02-16,Ballkani,Malisheva,1,2,A
+2026-02-21,Malisheva,Dukagjini,0,0,D
+2026-02-22,Gjilani,Prishtina,1,0,H
+2026-02-22,Ferizaj,Ballkani,2,1,H
+2026-02-22,Llapi,Drita,0,2,A
+2026-02-23,Drenica Skenderaj,Prishtina e Re,0,2,A
+2026-02-28,Gjilani,Malisheva,2,1,H
+2026-02-28,Dukagjini,Ferizaj,1,1,D
+2026-02-28,Prishtina e Re,Llapi,1,1,D
+2026-03-01,Ballkani,Drenica Skenderaj,1,0,H
+2026-03-01,Prishtina,Drita,1,1,D
+2026-03-07,Drita,Prishtina e Re,3,0,H
+2026-03-08,Drenica Skenderaj,Dukagjini,2,2,D
+2026-03-09,Ferizaj,Gjilani,1,2,A
+2026-03-09,Llapi,Ballkani,2,0,H
+2026-03-09,Malisheva,Prishtina,3,0,H
+2026-03-14,Prishtina,Prishtina e Re,1,1,D
+2026-03-14,Gjilani,Drenica Skenderaj,0,1,A
+2026-03-14,Malisheva,Ferizaj,1,2,A
+2026-03-15,Ballkani,Drita,3,0,H
+2026-03-15,Dukagjini,Llapi,1,2,A
+2026-03-17,Drenica Skenderaj,Malisheva,4,2,H
+2026-03-17,Ferizaj,Prishtina,3,0,H
+2026-03-18,Drita,Dukagjini,2,1,H
+2026-03-18,Llapi,Gjilani,2,3,A
+2026-03-18,Prishtina e Re,Ballkani,0,1,A
+2026-03-21,Prishtina,Ballkani,1,0,H
+2026-03-21,Ferizaj,Drenica Skenderaj,1,0,H
+2026-03-22,Gjilani,Drita,0,1,A
+2026-03-22,Dukagjini,Prishtina e Re,1,1,D
+2026-03-22,Malisheva,Llapi,2,0,H
+2026-04-04,Ballkani,Dukagjini,2,1,H
+2026-04-04,Llapi,Ferizaj,1,0,H
+2026-04-04,Prishtina e Re,Gjilani,1,2,A
+2026-04-05,Drita,Malisheva,2,0,H
+2026-04-05,Drenica Skenderaj,Prishtina,2,2,D
+2026-04-11,Prishtina e Re,Malisheva,2,1,H
+2026-04-12,Ballkani,Gjilani,1,1,D
+2026-04-12,Drita,Ferizaj,2,1,H
+2026-04-12,Llapi,Drenica Skenderaj,0,1,A
+2026-04-13,Prishtina,Dukagjini,1,1,D
+2026-04-18,Ferizaj,Prishtina e Re,1,1,D
+2026-04-18,Llapi,Prishtina,0,0,D
+2026-04-19,Gjilani,Dukagjini,2,3,A
+2026-04-19,Drenica Skenderaj,Drita,1,0,H
+2026-04-19,Malisheva,Ballkani,4,2,H
+2026-04-25,Prishtina e Re,Drenica Skenderaj,2,3,A
+2026-04-25,Prishtina,Gjilani,1,1,D
+2026-04-26,Ballkani,Ferizaj,3,0,H
+2026-04-26,Drita,Llapi,3,0,H
+2026-04-26,Dukagjini,Malisheva,0,1,A
+2026-04-29,Drita,Prishtina,1,0,H
+2026-04-29,Llapi,Prishtina e Re,4,0,H
+2026-04-29,Malisheva,Gjilani,3,1,H
+2026-04-30,Drenica Skenderaj,Ballkani,1,2,A
+2026-04-30,Ferizaj,Dukagjini,1,2,A
+2026-05-02,Prishtina e Re,Drita,0,1,A
+2026-05-02,Prishtina,Malisheva,0,1,A
+2026-05-03,Ballkani,Llapi,0,1,A
+2026-05-03,Gjilani,Ferizaj,1,1,D
+2026-05-03,Dukagjini,Drenica Skenderaj,0,1,A
+2026-05-06,Prishtina e Re,Prishtina,3,2,H
+2026-05-09,Drita,Ballkani,2,0,H
+2026-05-09,Drenica Skenderaj,Gjilani,2,1,H
+2026-05-10,Ferizaj,Malisheva,1,1,D
+2026-05-10,Llapi,Dukagjini,0,0,D
+2026-05-17,Prishtina,Ferizaj,3,3,D
+2026-05-17,Ballkani,Prishtina e Re,3,2,H
+2026-05-17,Gjilani,Llapi,1,2,A
+2026-05-17,Dukagjini,Drita,2,0,H
+2026-05-17,Malisheva,Drenica Skenderaj,4,1,H
+2026-05-24,Ballkani,Prishtina,1,2,A
+2026-05-24,Drita,Gjilani,0,2,A
+2026-05-24,Drenica Skenderaj,Ferizaj,3,2,H
+2026-05-24,Llapi,Malisheva,3,2,H
+2026-05-24,Prishtina e Re,Dukagjini,2,3,A
+2026-05-29,Liria Prizren,Dinamo Ferizaj,0,2,A
+2026-05-31,Prishtina,Drenica Skenderaj,1,2,A
+2026-05-31,Gjilani,Prishtina e Re,3,2,H
+2026-05-31,Dukagjini,Ballkani,1,0,H
+2026-05-31,Ferizaj,Llapi,2,3,A
+2026-05-31,Malisheva,Drita,3,2,H
+2026-06-06,Dinamo Ferizaj,Llapi,0,2,A
+2025-11-02,Prishtina e Re,Drenica Skenderaj,3,0,H

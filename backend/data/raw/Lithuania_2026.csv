@@ -1,0 +1,111 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2026-02-21,FK Zalgiris Vilnius,Dziugas Telsiai,2,3,A
+2026-02-22,Panevezys,Suduva Marijampole,0,0,D
+2026-02-22,Hegelmann Litauen,Banga,0,2,A
+2026-02-22,TransINVEST Vilnius,Siauliai,2,2,D
+2026-02-23,FK Trakai,Kauno Zalgiris,1,2,A
+2026-02-27,FK Zalgiris Vilnius,Panevezys,4,1,H
+2026-02-28,Kauno Zalgiris,Banga,1,0,H
+2026-02-28,Hegelmann Litauen,Dziugas Telsiai,1,1,D
+2026-03-01,Suduva Marijampole,Siauliai,0,0,D
+2026-03-01,TransINVEST Vilnius,FK Trakai,3,0,H
+2026-03-07,Dziugas Telsiai,Kauno Zalgiris,1,2,A
+2026-03-07,Panevezys,Hegelmann Litauen,1,1,D
+2026-03-07,Suduva Marijampole,TransINVEST Vilnius,2,0,H
+2026-03-07,Siauliai,FK Zalgiris Vilnius,0,2,A
+2026-03-08,Banga,FK Trakai,5,0,H
+2026-03-10,Kauno Zalgiris,Panevezys,4,0,H
+2026-03-10,FK Zalgiris Vilnius,Suduva Marijampole,1,0,H
+2026-03-11,Hegelmann Litauen,Siauliai,1,1,D
+2026-03-11,TransINVEST Vilnius,Banga,1,0,H
+2026-03-11,FK Trakai,Dziugas Telsiai,0,2,A
+2026-03-14,Suduva Marijampole,Hegelmann Litauen,0,0,D
+2026-03-15,Panevezys,FK Trakai,2,1,H
+2026-03-15,Banga,Dziugas Telsiai,0,1,A
+2026-03-15,Siauliai,Kauno Zalgiris,0,5,A
+2026-03-16,FK Zalgiris Vilnius,TransINVEST Vilnius,1,2,A
+2026-03-20,FK Trakai,Siauliai,1,1,D
+2026-03-21,Kauno Zalgiris,Suduva Marijampole,1,1,D
+2026-03-21,Banga,Panevezys,0,1,A
+2026-03-22,Hegelmann Litauen,FK Zalgiris Vilnius,0,0,D
+2026-03-22,TransINVEST Vilnius,Dziugas Telsiai,0,0,D
+2026-04-03,Suduva Marijampole,FK Trakai,5,0,H
+2026-04-04,Hegelmann Litauen,TransINVEST Vilnius,3,1,H
+2026-04-04,Siauliai,Banga,0,0,D
+2026-04-05,Panevezys,Dziugas Telsiai,0,1,A
+2026-04-05,FK Zalgiris Vilnius,Kauno Zalgiris,0,3,A
+2026-04-10,FK Trakai,FK Zalgiris Vilnius,0,0,D
+2026-04-11,Kauno Zalgiris,Hegelmann Litauen,5,0,H
+2026-04-11,Banga,Suduva Marijampole,2,1,H
+2026-04-12,TransINVEST Vilnius,Panevezys,1,2,A
+2026-04-12,Dziugas Telsiai,Siauliai,1,0,H
+2026-04-17,Hegelmann Litauen,FK Trakai,0,0,D
+2026-04-17,FK Zalgiris Vilnius,Banga,1,1,D
+2026-04-18,Kauno Zalgiris,TransINVEST Vilnius,1,2,A
+2026-04-18,Siauliai,Panevezys,3,1,H
+2026-04-19,Suduva Marijampole,Dziugas Telsiai,3,2,H
+2026-04-25,Suduva Marijampole,Panevezys,1,0,H
+2026-04-25,Kauno Zalgiris,FK Trakai,4,0,H
+2026-04-26,Banga,Hegelmann Litauen,2,1,H
+2026-04-26,Dziugas Telsiai,FK Zalgiris Vilnius,0,3,A
+2026-04-26,Siauliai,TransINVEST Vilnius,0,4,A
+2026-05-01,Banga,Kauno Zalgiris,2,2,D
+2026-05-01,Dziugas Telsiai,Hegelmann Litauen,3,0,H
+2026-05-02,FK Trakai,TransINVEST Vilnius,0,5,A
+2026-05-02,Siauliai,Suduva Marijampole,2,1,H
+2026-05-03,Panevezys,FK Zalgiris Vilnius,2,1,H
+2026-05-05,Kauno Zalgiris,Dziugas Telsiai,2,2,D
+2026-05-05,FK Trakai,Banga,0,4,A
+2026-05-06,Hegelmann Litauen,Panevezys,3,2,H
+2026-05-06,FK Zalgiris Vilnius,Siauliai,3,1,H
+2026-05-06,TransINVEST Vilnius,Suduva Marijampole,1,1,D
+2026-05-09,Hegelmann Litauen,Siauliai,1,1,D
+2026-05-09,Dziugas Telsiai,FK Trakai,1,0,H
+2026-05-10,Suduva Marijampole,FK Zalgiris Vilnius,1,1,D
+2026-05-10,Banga,TransINVEST Vilnius,2,2,D
+2026-05-10,Panevezys,Kauno Zalgiris,1,1,D
+2026-05-16,Kauno Zalgiris,Siauliai,0,0,D
+2026-05-16,Hegelmann Litauen,Suduva Marijampole,2,2,D
+2026-05-16,Dziugas Telsiai,Banga,0,1,A
+2026-05-17,TransINVEST Vilnius,FK Zalgiris Vilnius,1,0,H
+2026-05-23,Suduva Marijampole,Kauno Zalgiris,2,1,H
+2026-05-24,FK Zalgiris Vilnius,Hegelmann Litauen,1,3,A
+2026-05-24,Panevezys,Banga,1,0,H
+2026-05-24,Dziugas Telsiai,TransINVEST Vilnius,3,2,H
+2026-05-25,Siauliai,FK Trakai,2,0,H
+2026-05-29,TransINVEST Vilnius,Hegelmann Litauen,2,1,H
+2026-05-29,FK Trakai,Suduva Marijampole,0,3,A
+2026-05-30,Dziugas Telsiai,Panevezys,4,0,H
+2026-05-30,Banga,Siauliai,1,1,D
+2026-05-31,Kauno Zalgiris,FK Zalgiris Vilnius,0,1,A
+2026-06-12,Panevezys,TransINVEST Vilnius,1,2,A
+2026-06-12,Dziugas Telsiai,Siauliai,4,3,H
+2026-06-12,FK Zalgiris Vilnius,FK Trakai,3,2,H
+2026-06-13,Suduva Marijampole,Banga,0,0,D
+2026-06-14,Hegelmann Litauen,Kauno Zalgiris,1,1,D
+2026-06-16,Suduva Marijampole,Siauliai,2,1,H
+2026-06-16,FK Zalgiris Vilnius,Panevezys,3,0,H
+2026-06-17,Hegelmann Litauen,Dziugas Telsiai,1,1,D
+2026-06-17,Kauno Zalgiris,Banga,0,1,A
+2026-06-20,Panevezys,Siauliai,3,2,H
+2026-06-20,TransINVEST Vilnius,Kauno Zalgiris,1,2,A
+2026-06-20,Banga,FK Zalgiris Vilnius,3,0,H
+2026-06-21,Dziugas Telsiai,Suduva Marijampole,1,2,A
+2026-06-28,Banga,Hegelmann Litauen,2,0,H
+2026-06-28,Dziugas Telsiai,FK Zalgiris Vilnius,0,0,D
+2026-06-29,Siauliai,TransINVEST Vilnius,1,3,A
+2026-06-29,Panevezys,Suduva Marijampole,1,2,A
+2026-07-03,Dziugas Telsiai,Kauno Zalgiris,0,0,D
+2026-07-04,Panevezys,Hegelmann Litauen,1,1,D
+2026-07-05,Siauliai,FK Zalgiris Vilnius,0,3,A
+2026-07-06,Suduva Marijampole,TransINVEST Vilnius,0,0,D
+2026-07-11,Kauno Zalgiris,Panevezys,3,0,H
+2026-07-12,TransINVEST Vilnius,Banga,1,3,A
+2026-07-18,Kauno Zalgiris,Siauliai,4,0,H
+2026-07-19,Dziugas Telsiai,Banga,1,0,H
+2026-07-19,FK Zalgiris Vilnius,TransINVEST Vilnius,3,1,H
+2026-07-20,Suduva Marijampole,Hegelmann Litauen,5,1,H
+2026-07-24,Siauliai,Hegelmann Litauen,0,2,A
+2026-07-26,TransINVEST Vilnius,Dziugas Telsiai,1,0,H
+2026-07-27,Hegelmann Litauen,FK Zalgiris Vilnius,2,3,A
+2026-05-15,FK Trakai,Panevezys,0,3,A

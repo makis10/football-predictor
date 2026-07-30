@@ -1,0 +1,181 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2018-03-02,Torpedo Kutaisi,Dila,2,3,A
+2018-03-03,Chikhura Sachkhere,Kolkheti Poti,6,1,H
+2018-03-05,Lokomotivi Tbilisi,Samtredia,1,2,A
+2018-03-05,Dinamo Tbilisi,Rustavi,1,2,A
+2018-03-05,Saburtalo,Sioni,3,1,H
+2018-03-09,Dila,Chikhura Sachkhere,1,1,D
+2018-03-10,Rustavi,Torpedo Kutaisi,0,1,A
+2018-03-10,Kolkheti Poti,Saburtalo,1,4,A
+2018-03-11,Lokomotivi Tbilisi,Dinamo Tbilisi,1,4,A
+2018-03-11,Samtredia,Sioni,0,1,A
+2018-03-16,Dinamo Tbilisi,Samtredia,3,1,H
+2018-03-16,Torpedo Kutaisi,Lokomotivi Tbilisi,4,0,H
+2018-03-17,Chikhura Sachkhere,Rustavi,1,0,H
+2018-03-18,Sioni,Kolkheti Poti,0,0,D
+2018-03-18,Saburtalo,Dila,2,0,H
+2018-03-31,Lokomotivi Tbilisi,Chikhura Sachkhere,1,1,D
+2018-03-31,Rustavi,Saburtalo,0,2,A
+2018-03-31,Dila,Sioni,3,2,H
+2018-04-01,Dinamo Tbilisi,Torpedo Kutaisi,2,0,H
+2018-04-01,Samtredia,Kolkheti Poti,0,2,A
+2018-04-04,Sioni,Rustavi,0,2,A
+2018-04-04,Saburtalo,Lokomotivi Tbilisi,1,2,A
+2018-04-05,Chikhura Sachkhere,Dinamo Tbilisi,1,2,A
+2018-04-05,Kolkheti Poti,Dila,0,3,A
+2018-04-05,Torpedo Kutaisi,Samtredia,1,0,H
+2018-04-13,Rustavi,Kolkheti Poti,2,0,H
+2018-04-14,Lokomotivi Tbilisi,Sioni,1,2,A
+2018-04-14,Torpedo Kutaisi,Chikhura Sachkhere,0,1,A
+2018-04-15,Samtredia,Dila,0,0,D
+2018-04-15,Dinamo Tbilisi,Saburtalo,0,1,A
+2018-04-20,Kolkheti Poti,Lokomotivi Tbilisi,3,1,H
+2018-04-21,Sioni,Dinamo Tbilisi,1,2,A
+2018-04-21,Dila,Rustavi,2,2,D
+2018-04-22,Chikhura Sachkhere,Samtredia,0,0,D
+2018-04-22,Saburtalo,Torpedo Kutaisi,2,0,H
+2018-04-26,Lokomotivi Tbilisi,Dila,1,3,A
+2018-04-26,Samtredia,Rustavi,0,0,D
+2018-04-27,Chikhura Sachkhere,Saburtalo,2,1,H
+2018-04-27,Dinamo Tbilisi,Kolkheti Poti,4,1,H
+2018-04-27,Torpedo Kutaisi,Sioni,3,0,H
+2018-05-01,Sioni,Chikhura Sachkhere,0,2,A
+2018-05-01,Saburtalo,Samtredia,1,0,H
+2018-05-01,Kolkheti Poti,Torpedo Kutaisi,1,1,D
+2018-05-02,Rustavi,Lokomotivi Tbilisi,1,0,H
+2018-05-02,Dila,Dinamo Tbilisi,1,1,D
+2018-05-05,Sioni,Saburtalo,0,2,A
+2018-05-05,Kolkheti Poti,Chikhura Sachkhere,2,2,D
+2018-05-06,Samtredia,Lokomotivi Tbilisi,1,1,D
+2018-05-06,Rustavi,Dinamo Tbilisi,0,2,A
+2018-05-06,Dila,Torpedo Kutaisi,1,1,D
+2018-05-11,Saburtalo,Kolkheti Poti,5,0,H
+2018-05-12,Sioni,Samtredia,1,1,D
+2018-05-12,Chikhura Sachkhere,Dila,0,3,A
+2018-05-12,Torpedo Kutaisi,Rustavi,2,1,H
+2018-05-13,Dinamo Tbilisi,Lokomotivi Tbilisi,0,1,A
+2018-05-19,Samtredia,Dinamo Tbilisi,1,2,A
+2018-05-19,Kolkheti Poti,Sioni,2,0,H
+2018-05-20,Lokomotivi Tbilisi,Torpedo Kutaisi,1,0,H
+2018-05-20,Rustavi,Chikhura Sachkhere,0,4,A
+2018-05-20,Dila,Saburtalo,4,1,H
+2018-05-24,Saburtalo,Rustavi,2,1,H
+2018-05-25,Sioni,Dila,2,2,D
+2018-05-25,Torpedo Kutaisi,Dinamo Tbilisi,1,1,D
+2018-05-26,Chikhura Sachkhere,Lokomotivi Tbilisi,1,3,A
+2018-05-26,Kolkheti Poti,Samtredia,2,2,D
+2018-06-09,Samtredia,Torpedo Kutaisi,1,4,A
+2018-06-09,Rustavi,Sioni,2,2,D
+2018-06-09,Dila,Kolkheti Poti,2,0,H
+2018-06-10,Lokomotivi Tbilisi,Saburtalo,1,1,D
+2018-06-10,Dinamo Tbilisi,Chikhura Sachkhere,1,0,H
+2018-06-16,Kolkheti Poti,Rustavi,0,0,D
+2018-06-16,Dila,Samtredia,3,0,H
+2018-06-17,Sioni,Lokomotivi Tbilisi,1,0,H
+2018-06-17,Saburtalo,Dinamo Tbilisi,1,0,H
+2018-06-18,Chikhura Sachkhere,Torpedo Kutaisi,1,0,H
+2018-06-22,Lokomotivi Tbilisi,Kolkheti Poti,2,1,H
+2018-06-22,Rustavi,Dila,2,2,D
+2018-06-23,Samtredia,Chikhura Sachkhere,0,1,A
+2018-06-23,Dinamo Tbilisi,Sioni,2,1,H
+2018-06-23,Torpedo Kutaisi,Saburtalo,1,2,A
+2018-06-27,Dila,Lokomotivi Tbilisi,3,2,H
+2018-06-28,Saburtalo,Chikhura Sachkhere,1,0,H
+2018-06-29,Sioni,Torpedo Kutaisi,1,2,A
+2018-06-29,Kolkheti Poti,Dinamo Tbilisi,3,6,A
+2018-06-29,Rustavi,Samtredia,2,1,H
+2018-07-04,Samtredia,Saburtalo,1,3,A
+2018-07-04,Torpedo Kutaisi,Kolkheti Poti,3,0,H
+2018-07-05,Chikhura Sachkhere,Sioni,4,0,H
+2018-07-05,Lokomotivi Tbilisi,Rustavi,1,1,D
+2018-07-05,Dinamo Tbilisi,Dila,5,0,H
+2018-08-03,Dinamo Tbilisi,Rustavi,2,1,H
+2018-08-04,Lokomotivi Tbilisi,Samtredia,3,2,H
+2018-08-04,Saburtalo,Sioni,3,0,H
+2018-08-06,Chikhura Sachkhere,Kolkheti Poti,3,1,H
+2018-08-10,Samtredia,Sioni,0,4,A
+2018-08-11,Kolkheti Poti,Saburtalo,1,3,A
+2018-08-12,Lokomotivi Tbilisi,Dinamo Tbilisi,2,4,A
+2018-08-12,Dila,Chikhura Sachkhere,1,3,A
+2018-08-17,Sioni,Kolkheti Poti,2,0,H
+2018-08-18,Chikhura Sachkhere,Rustavi,0,0,D
+2018-08-18,Dinamo Tbilisi,Samtredia,0,0,D
+2018-08-19,Saburtalo,Dila,0,0,D
+2018-08-25,Lokomotivi Tbilisi,Chikhura Sachkhere,3,2,H
+2018-08-25,Rustavi,Saburtalo,0,2,A
+2018-08-26,Samtredia,Kolkheti Poti,1,0,H
+2018-08-26,Dila,Sioni,0,0,D
+2018-08-31,Chikhura Sachkhere,Dinamo Tbilisi,1,2,A
+2018-08-31,Saburtalo,Lokomotivi Tbilisi,2,1,H
+2018-09-01,Kolkheti Poti,Dila,0,2,A
+2018-09-02,Sioni,Rustavi,0,4,A
+2018-09-02,Torpedo Kutaisi,Samtredia,5,2,H
+2018-09-12,Rustavi,Torpedo Kutaisi,0,0,D
+2018-09-14,Samtredia,Dila,3,5,A
+2018-09-15,Lokomotivi Tbilisi,Sioni,1,0,H
+2018-09-16,Dinamo Tbilisi,Saburtalo,2,1,H
+2018-09-16,Rustavi,Kolkheti Poti,0,0,D
+2018-09-16,Torpedo Kutaisi,Chikhura Sachkhere,1,0,H
+2018-09-21,Kolkheti Poti,Lokomotivi Tbilisi,1,0,H
+2018-09-23,Sioni,Dinamo Tbilisi,0,0,D
+2018-09-23,Saburtalo,Torpedo Kutaisi,0,3,A
+2018-09-23,Dila,Rustavi,2,0,H
+2018-09-24,Chikhura Sachkhere,Samtredia,2,0,H
+2018-09-27,Lokomotivi Tbilisi,Dila,2,1,H
+2018-09-27,Dinamo Tbilisi,Kolkheti Poti,2,1,H
+2018-09-27,Torpedo Kutaisi,Sioni,3,0,H
+2018-09-28,Chikhura Sachkhere,Saburtalo,0,1,A
+2018-09-28,Samtredia,Rustavi,1,1,D
+2018-09-30,Kolkheti Poti,Torpedo Kutaisi,0,0,D
+2018-09-30,Dila,Dinamo Tbilisi,1,0,H
+2018-10-01,Sioni,Chikhura Sachkhere,1,2,A
+2018-10-01,Saburtalo,Samtredia,1,1,D
+2018-10-02,Rustavi,Lokomotivi Tbilisi,1,1,D
+2018-10-03,Torpedo Kutaisi,Dila,2,0,H
+2018-10-05,Kolkheti Poti,Chikhura Sachkhere,0,1,A
+2018-10-06,Sioni,Saburtalo,2,3,A
+2018-10-06,Samtredia,Lokomotivi Tbilisi,1,0,H
+2018-10-07,Rustavi,Dinamo Tbilisi,0,3,A
+2018-10-07,Dila,Torpedo Kutaisi,0,0,D
+2018-10-17,Torpedo Kutaisi,Lokomotivi Tbilisi,3,1,H
+2018-10-19,Chikhura Sachkhere,Dila,2,1,H
+2018-10-20,Sioni,Samtredia,4,2,H
+2018-10-21,Dinamo Tbilisi,Lokomotivi Tbilisi,0,0,D
+2018-10-21,Torpedo Kutaisi,Rustavi,2,2,D
+2018-10-21,Saburtalo,Kolkheti Poti,4,1,H
+2018-10-26,Rustavi,Chikhura Sachkhere,1,2,A
+2018-10-27,Kolkheti Poti,Sioni,1,1,D
+2018-10-27,Samtredia,Dinamo Tbilisi,1,8,A
+2018-10-27,Dila,Saburtalo,0,0,D
+2018-10-28,Lokomotivi Tbilisi,Torpedo Kutaisi,0,1,A
+2018-10-31,Dinamo Tbilisi,Torpedo Kutaisi,0,1,A
+2018-11-02,Chikhura Sachkhere,Lokomotivi Tbilisi,0,0,D
+2018-11-03,Sioni,Dila,3,1,H
+2018-11-03,Saburtalo,Rustavi,2,1,H
+2018-11-04,Kolkheti Poti,Samtredia,0,1,A
+2018-11-04,Torpedo Kutaisi,Dinamo Tbilisi,2,2,D
+2018-11-09,Rustavi,Sioni,0,3,A
+2018-11-10,Lokomotivi Tbilisi,Saburtalo,1,1,D
+2018-11-10,Dila,Kolkheti Poti,1,0,H
+2018-11-11,Samtredia,Torpedo Kutaisi,0,8,A
+2018-11-11,Dinamo Tbilisi,Chikhura Sachkhere,1,4,A
+2018-11-21,Chikhura Sachkhere,Torpedo Kutaisi,0,2,A
+2018-11-24,Kolkheti Poti,Rustavi,0,1,A
+2018-11-24,Dila,Samtredia,3,0,H
+2018-11-25,Sioni,Lokomotivi Tbilisi,1,2,A
+2018-11-26,Saburtalo,Dinamo Tbilisi,2,1,H
+2018-11-29,Samtredia,Chikhura Sachkhere,1,2,A
+2018-11-29,Rustavi,Dila,0,0,D
+2018-11-30,Lokomotivi Tbilisi,Kolkheti Poti,5,1,H
+2018-11-30,Dinamo Tbilisi,Sioni,5,2,H
+2018-11-30,Torpedo Kutaisi,Saburtalo,0,0,D
+2018-12-03,Rustavi,Samtredia,3,0,H
+2018-12-04,Kolkheti Poti,Dinamo Tbilisi,0,2,A
+2018-12-04,Sioni,Torpedo Kutaisi,0,3,A
+2018-12-04,Dila,Lokomotivi Tbilisi,4,0,H
+2018-12-04,Saburtalo,Chikhura Sachkhere,0,0,D
+2018-12-08,Samtredia,Saburtalo,1,4,A
+2018-12-08,Chikhura Sachkhere,Sioni,2,1,H
+2018-12-08,Dinamo Tbilisi,Dila,1,2,A
+2018-12-08,Lokomotivi Tbilisi,Rustavi,1,0,H
+2018-12-08,Torpedo Kutaisi,Kolkheti Poti,4,0,H

@@ -44,7 +44,10 @@ GROQ_MODEL = os.getenv("GROQ_MODEL", "openai/gpt-oss-120b")
 # ── League → The Odds API sport key ──────────────────────────────────────────
 LEAGUE_SPORT_KEY: dict[str, str] = {
     "EPL":          "soccer_epl",
-    "Championship": "soccer_england_championship",
+    # The Odds API calls this one "soccer_efl_champ"; the guessed
+    # "soccer_england_championship" is an Unknown sport, so Championship odds
+    # silently returned [] on every poll.
+    "Championship": "soccer_efl_champ",
     "LeagueOne":    "soccer_england_league1",
     "LaLiga":       "soccer_spain_la_liga",
     "SerieA":       "soccer_italy_serie_a",
@@ -57,7 +60,62 @@ LEAGUE_SPORT_KEY: dict[str, str] = {
     "EL":           "soccer_uefa_europa_league",
     "ECL":          "soccer_uefa_europa_conference_league",
     "CL":           "soccer_uefa_champs_league",
+    # 2026-07-30 expansion. Every key below was checked against the live
+    # /v4/sports list — a guessed key returns "Unknown sport" and the league
+    # silently carries no odds at all (see the Championship note above).
+    "Belgium":      "soccer_belgium_first_div",
+    "Turkey":       "soccer_turkey_super_league",
+    "Scotland":     "soccer_spl",
+    "Denmark":      "soccer_denmark_superliga",
+    "Sweden":       "soccer_sweden_allsvenskan",
+    "Norway":       "soccer_norway_eliteserien",
+    "Poland":       "soccer_poland_ekstraklasa",
+    "Austria":      "soccer_austria_bundesliga",
+    "Switzerland":  "soccer_switzerland_superleague",
+    # Romania is deliberately absent: The Odds API has no key for Liga I
+    # (checked 2026-07-30), and a made-up key costs a wasted request every poll.
+    # Its fixtures and predictions still work — they just carry no odds.
+    "Ireland":      "soccer_league_of_ireland",
+    "Finland":      "soccer_finland_veikkausliiga",
 }
+
+# Alternate sport keys to try when the primary one returns nothing.
+#
+# UEFA splits a competition across two keys: the group-stage key carries no
+# games until the draw, so through July/August every CL fixture we hold is a
+# qualifier and the primary key returns []. Trying the alternate keeps odds
+# flowing year-round instead of only from September.
+#
+# Only keys that exist on The Odds API belong here — an unknown key costs a
+# wasted request per poll. Europa League and Conference League have no
+# qualification key at all (checked 2026-07-29), so their qualifying rounds
+# simply have no bookmaker coverage; same for club friendlies.
+LEAGUE_SPORT_KEY_ALTS: dict[str, list[str]] = {
+    "CL": ["soccer_uefa_champs_league_qualification"],
+}
+
+# league → the key that last actually returned games, so the per-event BTTS
+# call below queries the same key the games came from. Mirrored into the shared
+# cache next to the games themselves: a cache HIT skips the fetch entirely, and
+# a fresh process (poll_odds.py) would otherwise fall back to the primary key
+# and 404 every BTTS lookup for a league served by an alternate.
+_ACTIVE_SPORT_KEY: dict[str, str] = {}
+
+
+def _sport_keys_for(league: str) -> list[str]:
+    primary = LEAGUE_SPORT_KEY.get(league)
+    return ([primary] if primary else []) + LEAGUE_SPORT_KEY_ALTS.get(league, [])
+
+
+def _active_sport_key(league: str) -> str:
+    """The sport key the league's cached games actually came from."""
+    key = _ACTIVE_SPORT_KEY.get(league)
+    if key:
+        return key
+    cached = cache_get(f"league_odds_key:{league}")
+    if cached is not CACHE_MISS and cached:
+        return cached
+    return LEAGUE_SPORT_KEY.get(league, "")
 
 # ── National tournament → The Odds API sport key (substring match) ────────────
 # Keys verified against the live /v4/sports list. Order matters: the more
@@ -273,6 +331,19 @@ _LEAGUE_API_SPORTS_ID: dict[str, int] = {
     "PrimeiraLiga": 94,
     "Eredivisie":   88,
     "BrazilSerieA": 71,
+    # 2026-07-30 expansion — ids read off the live /leagues endpoint per country.
+    "Belgium":      144,
+    "Turkey":       203,
+    "Scotland":     179,
+    "Denmark":      119,
+    "Sweden":       113,
+    "Norway":       103,
+    "Poland":       106,
+    "Austria":      218,
+    "Switzerland":  207,
+    "Romania":      283,
+    "Ireland":      357,
+    "Finland":      244,
     "CL":           2,
     "EL":           3,
     "ECL":          848,
@@ -896,6 +967,16 @@ _ALIASES: dict[str, list[str]] = {
     "Sport Recife":    ["sportclubdorecife", "sportrecife"],
     "Chapecoense-SC":  ["chapecoense"],
     "Sao Paulo":       ["saopaulo"],
+    # ── UEFA qualifying rounds — bookmakers use the club's local or historic
+    # name, which the slug + 0.85 similarity check can't bridge.
+    "Kairat Almaty":   ["fckairat", "kairat"],
+    "Omonia Nicosia":  ["omonoia", "omonia"],
+    "KI Klaksvik":     ["klaksvikaritrottarfelag", "kiklaksvik"],
+    "FK Crvena Zvezda": ["redstarbelgrade", "crvenazvezda"],
+    "Larne":           ["larnefc"],
+    # Saburtalo Tbilisi was renamed FC Iberia 1999 in 2024; our fixtures still
+    # carry the old name.
+    "Saburtalo":       ["iberia1999", "fciberia"],
     # ── National teams — martj42/DB name → The Odds API spelling ──────────────
     "United States":         ["usa", "unitedstates"],
     "Bosnia and Herzegovina":["bosnia"],
@@ -952,39 +1033,47 @@ def _fetch_league_games_cached(league: str) -> list:
     """
     if not ODDS_API_KEY:
         return []
-    sport_key = LEAGUE_SPORT_KEY.get(league)
-    if not sport_key:
+    sport_keys = _sport_keys_for(league)
+    if not sport_keys:
         return []
 
     cached = cache_get(f"league_odds:{league}")
     if cached is not CACHE_MISS:
         return cached
 
-    try:
-        resp = requests.get(
-            f"https://api.the-odds-api.com/v4/sports/{sport_key}/odds/",
-            params={
-                "apiKey":     ODDS_API_KEY,
-                "regions":    "eu",
-                # NOTE: "btts" is an "additional market" on The Odds API and
-                # returns 422 on this bulk endpoint. It is fetched separately
-                # via _fetch_event_btts() using the event ID from this response.
-                "markets":    "h2h,totals",
-                "dateFormat": "iso",
-                "oddsFormat": "decimal",
-            },
-            timeout=10,
-        )
-        resp.raise_for_status()
-        games = resp.json()
-        if not isinstance(games, list):
-            log.warning(f"[odds] Unexpected response for {league}: {games}")
-            games = []
-        remaining = resp.headers.get("x-requests-remaining", "?")
-        log.info(f"[odds] Fetched {len(games)} games for {league}  (quota remaining: {remaining})")
-    except Exception as e:
-        log.warning(f"[odds] League fetch failed for {league}: {e}")
-        games = []
+    games: list = []
+    for sport_key in sport_keys:
+        try:
+            resp = requests.get(
+                f"https://api.the-odds-api.com/v4/sports/{sport_key}/odds/",
+                params={
+                    "apiKey":     ODDS_API_KEY,
+                    "regions":    "eu",
+                    # NOTE: "btts" is an "additional market" on The Odds API and
+                    # returns 422 on this bulk endpoint. It is fetched separately
+                    # via _fetch_event_btts() using the event ID from this response.
+                    "markets":    "h2h,totals",
+                    "dateFormat": "iso",
+                    "oddsFormat": "decimal",
+                },
+                timeout=10,
+            )
+            resp.raise_for_status()
+            body = resp.json()
+            if not isinstance(body, list):
+                log.warning(f"[odds] Unexpected response for {league}: {body}")
+                body = []
+            remaining = resp.headers.get("x-requests-remaining", "?")
+            log.info(f"[odds] Fetched {len(body)} games for {league} "
+                     f"via {sport_key}  (quota remaining: {remaining})")
+        except Exception as e:
+            log.warning(f"[odds] League fetch failed for {league} ({sport_key}): {e}")
+            continue
+        if body:
+            _ACTIVE_SPORT_KEY[league] = sport_key
+            cache_set(f"league_odds_key:{league}", sport_key, LEAGUE_ODDS_TTL)
+            games = body
+            break
 
     cache_set(f"league_odds:{league}", games, LEAGUE_ODDS_TTL)
     return games
@@ -1088,8 +1177,10 @@ def fetch_all_league_odds(league: str) -> list:
     does not support the btts market.
     Returns [] if API key missing, league unsupported, or request fails.
     """
-    sport_key = LEAGUE_SPORT_KEY.get(league, "")
     games = _fetch_league_games_cached(league)
+    # Resolved after the fetch, so a league served by an alternate key (CL
+    # qualifiers) asks for BTTS on the key the games actually came from.
+    sport_key = _active_sport_key(league)
     results = []
     for game in games:
         parsed = _parse_game_odds(game)
@@ -1128,8 +1219,10 @@ def fetch_bookmaker_odds(
     Makes 1 additional credit call for BTTS via the per-event endpoint —
     cached 30 min, so repeated page views are free.
     """
-    sport_key = LEAGUE_SPORT_KEY.get(league, "")
     games = _fetch_league_games_cached(league)
+    # Resolved after the fetch, so a league served by an alternate key (CL
+    # qualifiers) asks for BTTS on the key the games actually came from.
+    sport_key = _active_sport_key(league)
     for game in games:
         if _teams_match(game.get("home_team", ""), home_team) and \
            _teams_match(game.get("away_team", ""), away_team):

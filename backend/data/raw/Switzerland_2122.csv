@@ -1,0 +1,182 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,PSH,PSD,PSA
+24/07/2021,Luzern,Young Boys,3,4,A,3.3,3.75,2.16
+24/07/2021,Lausanne,St. Gallen,1,2,A,2.21,3.93,3.06
+25/07/2021,Lugano,Zurich,0,2,A,2.19,3.59,3.34
+25/07/2021,Grasshoppers,Basel,0,2,A,3.82,3.63,2.01
+25/07/2021,Sion,Servette,1,2,A,3,3.91,2.25
+31/07/2021,Zurich,Lausanne,3,1,H,2.02,3.66,3.77
+31/07/2021,Young Boys,Grasshoppers,0,0,D,1.34,5.43,9.27
+01/08/2021,St. Gallen,Luzern,2,2,D,1.99,4.05,3.5
+01/08/2021,Basel,Sion,6,1,H,1.59,4.27,5.78
+01/08/2021,Servette,Lugano,0,2,A,1.99,3.4,4.19
+07/08/2021,Sion,Young Boys,1,0,H,6.86,4.69,1.47
+07/08/2021,Grasshoppers,Lausanne,3,1,H,2.02,3.6,3.82
+08/08/2021,Lugano,St. Gallen,2,1,H,2.32,3.39,3.25
+08/08/2021,Basel,Servette,5,1,H,1.81,4.17,3.92
+08/08/2021,Luzern,Zurich,1,3,A,2.11,3.93,3.28
+21/08/2021,Zurich,Grasshoppers,2,1,H,1.93,3.71,4.01
+21/08/2021,St. Gallen,Sion,1,1,D,1.53,4.99,5.48
+22/08/2021,Lausanne,Basel,2,2,D,4.28,4.43,1.74
+22/08/2021,Servette,Luzern,4,1,H,1.85,4.14,3.92
+28/08/2021,St. Gallen,Zurich,3,3,D,1.95,4.04,3.64
+28/08/2021,Sion,Lugano,3,2,H,2.85,3.38,2.59
+29/08/2021,Luzern,Lausanne,1,1,D,1.88,3.96,3.97
+29/08/2021,Basel,Young Boys,1,1,D,3.25,3.88,2.13
+29/08/2021,Grasshoppers,Servette,1,1,D,3.02,3.68,2.32
+11/09/2021,Luzern,Grasshoppers,1,1,D,1.94,3.8,3.88
+11/09/2021,Young Boys,Zurich,4,0,H,1.34,5.75,8.62
+12/09/2021,Servette,St. Gallen,5,1,H,1.9,3.97,3.87
+12/09/2021,Lausanne,Sion,1,1,D,2.1,3.66,3.5
+12/09/2021,Lugano,Basel,1,1,D,2.99,3.49,2.43
+21/09/2021,Zurich,Servette,2,2,D,2.45,3.59,2.89
+22/09/2021,Lausanne,Young Boys,1,6,A,7.13,5.2,1.42
+22/09/2021,St. Gallen,Basel,0,2,A,2.51,4.01,2.6
+23/09/2021,Lugano,Grasshoppers,1,1,D,2.26,3.21,3.58
+23/09/2021,Sion,Luzern,1,1,D,2.38,3.68,2.93
+25/09/2021,Young Boys,St. Gallen,2,1,H,1.18,7.9,15.56
+25/09/2021,Servette,Lausanne,1,1,D,1.56,4.65,5.52
+26/09/2021,Luzern,Lugano,2,3,A,2.32,3.52,3.15
+26/09/2021,Basel,Zurich,3,1,H,1.79,4.24,4.14
+26/09/2021,Grasshoppers,Sion,3,1,H,2.05,3.7,3.6
+02/10/2021,Grasshoppers,St. Gallen,5,2,H,2.31,3.58,3.12
+02/10/2021,Lugano,Lausanne,2,0,H,1.83,3.69,4.61
+03/10/2021,Zurich,Sion,6,2,H,1.64,4.5,4.92
+03/10/2021,Basel,Luzern,1,1,D,1.48,4.94,6.27
+03/10/2021,Servette,Young Boys,0,6,A,3.73,3.87,1.97
+16/10/2021,Young Boys,Luzern,1,1,D,1.2,7.34,13.75
+16/10/2021,Zurich,Lugano,1,0,H,2.05,3.42,3.92
+17/10/2021,Lausanne,Grasshoppers,3,1,H,3.05,3.61,2.33
+17/10/2021,Sion,Basel,0,1,A,3.84,3.82,1.95
+17/10/2021,St. Gallen,Servette,2,1,H,2.5,3.77,2.71
+23/10/2021,Young Boys,Lausanne,3,2,H,1.17,8.24,15.88
+23/10/2021,Grasshoppers,Zurich,3,3,D,2.54,3.62,2.75
+24/10/2021,Luzern,St. Gallen,2,0,H,2.28,3.92,2.94
+24/10/2021,Basel,Lugano,2,0,H,1.88,3.62,4.39
+24/10/2021,Servette,Sion,1,2,A,1.52,4.81,5.83
+30/10/2021,St. Gallen,Young Boys,3,1,H,5.03,4.46,1.63
+30/10/2021,Zurich,Basel,3,3,D,2.07,3.98,3.33
+31/10/2021,Sion,Grasshoppers,1,3,A,2.78,3.59,2.53
+31/10/2021,Lausanne,Luzern,1,1,D,2.35,3.79,2.91
+31/10/2021,Lugano,Servette,2,1,H,2.46,3.55,2.9
+06/11/2021,Grasshoppers,Young Boys,1,1,D,4.16,3.62,1.93
+06/11/2021,Luzern,Sion,0,1,A,1.72,4.02,4.83
+07/11/2021,Servette,Zurich,1,2,A,2.06,3.91,3.42
+07/11/2021,Basel,St. Gallen,0,1,A,1.68,4.37,4.75
+07/11/2021,Lausanne,Lugano,0,2,A,2.64,3.27,2.84
+20/11/2021,Sion,Zurich,0,1,A,3.42,3.81,2.09
+21/11/2021,St. Gallen,Lausanne,0,1,A,1.86,3.93,4.09
+21/11/2021,Lugano,Luzern,3,1,H,2.59,3.37,2.86
+21/11/2021,Servette,Grasshoppers,3,2,H,1.93,3.88,3.85
+27/11/2021,Grasshoppers,Lugano,0,1,A,2.28,3.36,3.37
+27/11/2021,Sion,St. Gallen,3,1,H,2.91,3.84,2.33
+28/11/2021,Zurich,Young Boys,1,0,H,3.36,3.87,2.09
+28/11/2021,Lausanne,Servette,0,3,A,2.6,3.53,2.74
+28/11/2021,Luzern,Basel,1,3,A,2.5,3.83,2.45
+01/12/2021,Young Boys,Lugano,3,1,H,1.53,4.36,6.39
+04/12/2021,Zurich,Luzern,4,0,H,1.87,3.95,4.05
+04/12/2021,Young Boys,Servette,1,2,A,1.44,4.96,7.04
+05/12/2021,Basel,Lausanne,1,1,D,1.59,4.42,5.47
+05/12/2021,Lugano,Sion,2,0,H,1.76,3.71,5.06
+05/12/2021,St. Gallen,Grasshoppers,0,4,A,2.32,3.81,2.95
+11/12/2021,Lausanne,Zurich,1,3,A,2.86,3.55,2.48
+11/12/2021,St. Gallen,Lugano,1,1,D,2.63,3.44,2.76
+12/12/2021,Young Boys,Sion,4,3,H,1.26,6.34,10.76
+12/12/2021,Grasshoppers,Luzern,1,1,D,2.14,3.59,3.47
+12/12/2021,Servette,Basel,2,2,D,2.17,4.06,3.06
+15/12/2021,Young Boys,Basel,1,1,D,1.6,4.53,5.23
+18/12/2021,Zurich,St. Gallen,3,1,H,1.56,4.5,5.66
+18/12/2021,Luzern,Servette,0,2,A,2.54,3.65,2.74
+19/12/2021,Lugano,Young Boys,0,5,A,3.96,3.56,2
+19/12/2021,Basel,Grasshoppers,2,2,D,1.81,4.16,4.14
+19/12/2021,Sion,Lausanne,2,0,H,2.61,3.55,2.71
+29/01/2022,Zurich,Servette,1,0,H,2.17,3.56,3.41
+29/01/2022,Young Boys,Lugano,1,0,H,1.35,5.41,8.77
+30/01/2022,Lausanne,St. Gallen,1,5,A,2.36,3.81,2.88
+30/01/2022,Luzern,Basel,0,3,A,2.99,3.73,2.32
+30/01/2022,Sion,Grasshoppers,2,0,H,2.38,3.54,3.02
+05/02/2022,Servette,Lausanne,1,0,H,1.7,3.97,5.08
+05/02/2022,Grasshoppers,Zurich,1,3,A,3.66,3.68,2.04
+06/02/2022,Basel,Sion,3,3,D,1.65,4.25,5.08
+06/02/2022,Lugano,Luzern,2,1,H,1.96,3.55,4.12
+06/02/2022,St. Gallen,Young Boys,3,3,D,3.46,3.64,2.13
+12/02/2022,Lausanne,Grasshoppers,0,2,A,2.8,3.47,2.58
+12/02/2022,St. Gallen,Servette,5,1,H,2.25,3.77,3.09
+13/02/2022,Young Boys,Basel,3,1,H,1.55,4.8,5.42
+13/02/2022,Luzern,Sion,1,0,H,2.16,3.55,3.47
+13/02/2022,Zurich,Lugano,3,0,H,1.91,3.49,4.43
+19/02/2022,Lugano,St. Gallen,0,2,A,2.43,3.52,2.97
+19/02/2022,Basel,Lausanne,3,0,H,1.65,4.15,5.26
+20/02/2022,Sion,Zurich,1,1,D,3.62,3.8,2.02
+20/02/2022,Grasshoppers,Young Boys,2,2,D,4.66,3.8,1.79
+20/02/2022,Servette,Luzern,1,1,D,1.89,3.89,4
+26/02/2022,Young Boys,Sion,3,1,H,1.36,5.33,8.53
+26/02/2022,Lugano,Servette,2,0,H,2.62,3.14,3.01
+27/02/2022,St. Gallen,Grasshoppers,2,0,H,2.19,3.57,3.38
+27/02/2022,Lausanne,Luzern,1,2,A,3.1,3.39,2.41
+27/02/2022,Zurich,Basel,4,2,H,2.32,3.85,2.92
+01/03/2022,Servette,Young Boys,1,0,H,3.33,3.6,2.19
+02/03/2022,Sion,Lausanne,1,0,H,1.94,3.42,4.37
+02/03/2022,Luzern,Zurich,0,2,A,2.96,3.52,2.43
+03/03/2022,Basel,St. Gallen,2,2,D,2.05,3.83,3.51
+03/03/2022,Grasshoppers,Lugano,1,2,A,2.58,3.16,3.05
+05/03/2022,Young Boys,Luzern,2,2,D,1.45,4.8,7.01
+05/03/2022,Lausanne,Zurich,0,2,A,4.19,3.79,1.88
+06/03/2022,Lugano,Basel,0,2,A,2.52,3.49,2.85
+06/03/2022,Grasshoppers,Servette,2,4,A,2.94,3.47,2.47
+06/03/2022,St. Gallen,Sion,1,1,D,1.6,4.4,5.46
+12/03/2022,Zurich,St. Gallen,0,3,A,1.97,3.84,3.74
+12/03/2022,Sion,Lugano,0,3,A,3.03,3.22,2.55
+13/03/2022,Lausanne,Young Boys,2,2,D,6.73,4.7,1.48
+13/03/2022,Basel,Servette,2,0,H,2.38,3.75,2.89
+13/03/2022,Luzern,Grasshoppers,1,0,H,2.15,3.57,3.46
+19/03/2022,St. Gallen,Luzern,3,2,H,1.97,3.83,3.74
+19/03/2022,Young Boys,Zurich,1,2,A,1.61,4.38,5.31
+20/03/2022,Servette,Sion,2,1,H,1.85,3.97,4.26
+20/03/2022,Grasshoppers,Basel,2,4,A,3.06,3.5,2.38
+20/03/2022,Lugano,Lausanne,3,1,H,1.85,3.36,5.09
+02/04/2022,Zurich,Grasshoppers,1,1,D,1.68,4.18,4.97
+02/04/2022,Sion,St. Gallen,0,3,A,3.82,4.09,1.89
+03/04/2022,Luzern,Lugano,2,2,D,2.37,3.25,3.29
+03/04/2022,Basel,Young Boys,2,2,D,3.17,3.88,2.17
+03/04/2022,Lausanne,Servette,4,1,H,3.77,3.56,2.05
+09/04/2022,Young Boys,Lausanne,2,2,D,1.38,5.41,7.83
+09/04/2022,Grasshoppers,Luzern,2,2,D,3.13,3.57,2.31
+10/04/2022,Servette,Zurich,1,0,H,2.32,3.66,3.03
+10/04/2022,Lugano,Sion,1,3,A,1.7,3.79,5.43
+10/04/2022,St. Gallen,Basel,2,2,D,1.99,4.19,3.42
+16/04/2022,Zurich,Young Boys,2,1,H,2.75,3.63,2.53
+16/04/2022,Servette,Grasshoppers,0,1,A,1.81,4.08,4.22
+18/04/2022,Luzern,St. Gallen,3,2,H,2.58,3.78,2.7
+18/04/2022,Lausanne,Lugano,4,1,H,2.51,3.24,3.07
+18/04/2022,Sion,Basel,0,0,D,3.62,3.81,2.02
+23/04/2022,Zurich,Sion,5,1,H,1.5,4.75,6.16
+23/04/2022,Young Boys,Servette,3,1,H,1.48,4.94,6.32
+24/04/2022,St. Gallen,Lugano,3,0,H,1.89,3.74,4.18
+24/04/2022,Basel,Luzern,3,0,H,1.93,3.86,3.87
+24/04/2022,Grasshoppers,Lausanne,3,1,H,2.14,3.61,3.45
+30/04/2022,Lugano,Grasshoppers,1,1,D,2.03,3.58,3.81
+30/04/2022,Servette,St. Gallen,0,2,A,2.48,3.97,2.65
+01/05/2022,Sion,Young Boys,1,2,A,6.56,4.83,1.47
+01/05/2022,Basel,Zurich,0,2,A,2.18,3.88,3.16
+01/05/2022,Luzern,Lausanne,3,0,H,1.65,4.39,4.95
+07/05/2022,Lugano,Young Boys,3,1,H,4.27,3.65,1.89
+07/05/2022,St. Gallen,Zurich,1,2,A,1.91,4.25,3.63
+08/05/2022,Grasshoppers,Sion,0,1,A,1.97,3.56,4.06
+08/05/2022,Lausanne,Basel,0,0,D,4.32,4.02,1.8
+08/05/2022,Luzern,Servette,4,0,H,1.89,4.12,3.79
+10/05/2022,Young Boys,St. Gallen,4,1,H,1.58,4.74,5.2
+11/05/2022,Servette,Lugano,2,2,D,2.1,3.64,3.55
+11/05/2022,Sion,Luzern,1,3,A,2.82,3.66,2.47
+12/05/2022,Basel,Grasshoppers,1,1,D,1.93,3.76,4.02
+12/05/2022,Zurich,Lausanne,2,2,D,1.71,4.29,4.55
+19/05/2022,Grasshoppers,St. Gallen,3,2,H,1.83,4.27,3.95
+19/05/2022,Lausanne,Sion,1,2,A,3.29,3.66,2.19
+19/05/2022,Lugano,Zurich,2,1,H,2.01,3.97,3.52
+19/05/2022,Luzern,Young Boys,2,2,D,2.64,3.8,2.55
+19/05/2022,Servette,Basel,0,0,D,1.96,3.98,3.65
+22/05/2022,Basel,Lugano,2,1,H,1.58,4.92,5
+22/05/2022,Sion,Servette,3,3,D,1.8,3.75,4.67
+22/05/2022,St. Gallen,Lausanne,4,0,H,1.41,5.34,7.12
+22/05/2022,Young Boys,Grasshoppers,3,0,H,1.31,6.66,7.75
+22/05/2022,Zurich,Luzern,2,3,A,2.32,4.1,2.8
+29/05/2022,Luzern,Schaffhausen,2,0,H,1.72,4.29,4.49

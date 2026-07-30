@@ -1,0 +1,183 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2015-04-10,FC Gomel,Belshina,2,0,H
+2015-04-10,Bate Borisov,Slavia Mozyr,1,0,H
+2015-04-11,Neman,Dinamo Minsk,1,1,D
+2015-04-11,Torpedo Zhodino,Dinamo Brest,1,3,A
+2015-04-11,FC Minsk,Naftan,0,0,D
+2015-04-11,Granit,FC Vitebsk,1,1,D
+2015-04-11,Shakhter Soligorsk,FC Slutsk,2,0,H
+2015-04-18,Naftan,Granit,0,0,D
+2015-04-18,FC Gomel,Neman,0,0,D
+2015-04-19,Dinamo Minsk,Bate Borisov,0,2,A
+2015-04-19,FC Slutsk,Torpedo Zhodino,1,1,D
+2015-04-19,Slavia Mozyr,Shakhter Soligorsk,1,1,D
+2015-04-19,Belshina,FC Vitebsk,1,1,D
+2015-04-20,Dinamo Brest,FC Minsk,1,0,H
+2015-04-25,Granit,Dinamo Brest,1,0,H
+2015-04-25,Shakhter Soligorsk,Dinamo Minsk,0,0,D
+2015-04-25,FC Minsk,FC Slutsk,2,0,H
+2015-04-25,Neman,Belshina,1,3,A
+2015-04-25,Bate Borisov,FC Gomel,2,0,H
+2015-04-26,FC Vitebsk,Naftan,1,3,A
+2015-04-27,Torpedo Zhodino,Slavia Mozyr,0,1,A
+2015-05-03,FC Slutsk,Granit,1,2,A
+2015-05-03,Slavia Mozyr,FC Minsk,0,0,D
+2015-05-03,Dinamo Brest,FC Vitebsk,3,2,H
+2015-05-04,Belshina,Naftan,1,1,D
+2015-05-04,Dinamo Minsk,Torpedo Zhodino,4,0,H
+2015-05-04,Neman,Bate Borisov,0,1,A
+2015-05-04,FC Gomel,Shakhter Soligorsk,1,3,A
+2015-05-10,Naftan,Dinamo Brest,1,0,H
+2015-05-10,Shakhter Soligorsk,Neman,3,0,H
+2015-05-10,Belshina,Bate Borisov,0,1,A
+2015-05-10,Granit,Slavia Mozyr,3,2,H
+2015-05-10,Torpedo Zhodino,FC Gomel,3,0,H
+2015-05-11,FC Minsk,Dinamo Minsk,0,3,A
+2015-05-11,FC Vitebsk,FC Slutsk,1,0,H
+2015-05-16,Shakhter Soligorsk,Bate Borisov,0,0,D
+2015-05-16,Dinamo Minsk,Granit,1,0,H
+2015-05-16,Slavia Mozyr,FC Vitebsk,4,0,H
+2015-05-16,Neman,Torpedo Zhodino,0,1,A
+2015-05-16,Belshina,Dinamo Brest,2,0,H
+2015-05-17,FC Gomel,FC Minsk,3,0,H
+2015-05-18,FC Slutsk,Naftan,0,1,A
+2015-05-20,Shakhter Soligorsk,Belshina,0,0,D
+2015-05-20,Torpedo Zhodino,Bate Borisov,0,0,D
+2015-05-23,FC Vitebsk,Dinamo Minsk,0,0,D
+2015-05-23,FC Minsk,Neman,2,0,H
+2015-05-23,Dinamo Brest,FC Slutsk,1,1,D
+2015-05-23,Naftan,Slavia Mozyr,1,1,D
+2015-05-23,Granit,FC Gomel,1,0,H
+2015-05-30,Neman,Granit,2,0,H
+2015-05-30,Shakhter Soligorsk,Torpedo Zhodino,3,1,H
+2015-05-30,Bate Borisov,FC Minsk,1,0,H
+2015-05-30,FC Gomel,FC Vitebsk,2,0,H
+2015-05-31,Dinamo Minsk,Naftan,2,1,H
+2015-05-31,Slavia Mozyr,Dinamo Brest,3,0,H
+2015-05-31,Belshina,FC Slutsk,2,0,H
+2015-06-05,FC Slutsk,Slavia Mozyr,3,1,H
+2015-06-05,FC Minsk,Shakhter Soligorsk,1,0,H
+2015-06-05,FC Vitebsk,Neman,0,0,D
+2015-06-05,Naftan,FC Gomel,3,1,H
+2015-06-05,Granit,Bate Borisov,0,1,A
+2015-06-05,Torpedo Zhodino,Belshina,0,3,A
+2015-06-05,Dinamo Brest,Dinamo Minsk,1,0,H
+2015-06-17,Neman,Naftan,3,1,H
+2015-06-17,FC Gomel,Dinamo Brest,2,0,H
+2015-06-17,Torpedo Zhodino,FC Minsk,2,0,H
+2015-06-17,Belshina,Slavia Mozyr,2,0,H
+2015-06-18,Dinamo Minsk,FC Slutsk,2,0,H
+2015-06-18,Shakhter Soligorsk,Granit,1,1,D
+2015-06-18,Bate Borisov,FC Vitebsk,4,0,H
+2015-06-21,Dinamo Brest,Neman,1,3,A
+2015-06-21,FC Slutsk,FC Gomel,0,0,D
+2015-06-21,FC Minsk,Belshina,2,1,H
+2015-06-22,FC Vitebsk,Shakhter Soligorsk,2,2,D
+2015-06-22,Naftan,Bate Borisov,1,2,A
+2015-06-22,Slavia Mozyr,Dinamo Minsk,2,4,A
+2015-06-22,Granit,Torpedo Zhodino,2,1,H
+2015-06-27,Belshina,Dinamo Minsk,0,2,A
+2015-06-27,Torpedo Zhodino,FC Vitebsk,3,1,H
+2015-06-27,Shakhter Soligorsk,Naftan,1,0,H
+2015-06-28,FC Minsk,Granit,5,0,H
+2015-06-28,Neman,FC Slutsk,0,4,A
+2015-06-28,FC Gomel,Slavia Mozyr,0,2,A
+2015-06-28,Bate Borisov,Dinamo Brest,1,0,H
+2015-07-04,Slavia Mozyr,Neman,0,0,D
+2015-07-04,Granit,Belshina,1,5,A
+2015-07-04,FC Vitebsk,FC Minsk,0,4,A
+2015-07-05,FC Slutsk,Bate Borisov,0,1,A
+2015-07-05,Dinamo Minsk,FC Gomel,1,0,H
+2015-07-06,Naftan,Torpedo Zhodino,0,2,A
+2015-07-06,Dinamo Brest,Shakhter Soligorsk,3,2,H
+2015-07-10,Slavia Mozyr,Bate Borisov,3,5,A
+2015-07-11,Naftan,FC Minsk,0,1,A
+2015-07-11,Belshina,FC Gomel,3,1,H
+2015-07-11,FC Vitebsk,Granit,2,3,A
+2015-07-12,FC Slutsk,Shakhter Soligorsk,0,2,A
+2015-07-12,Dinamo Minsk,Neman,2,0,H
+2015-07-12,Dinamo Brest,Torpedo Zhodino,2,1,H
+2015-08-08,Granit,Naftan,3,0,H
+2015-08-08,FC Vitebsk,Belshina,1,1,D
+2015-08-09,FC Minsk,Dinamo Brest,2,1,H
+2015-08-09,Neman,FC Gomel,1,0,H
+2015-08-09,Torpedo Zhodino,FC Slutsk,0,0,D
+2015-08-10,Shakhter Soligorsk,Slavia Mozyr,6,1,H
+2015-08-10,Bate Borisov,Dinamo Minsk,0,1,A
+2015-08-14,FC Gomel,Bate Borisov,0,0,D
+2015-08-15,Belshina,Neman,0,0,D
+2015-08-15,Dinamo Minsk,Shakhter Soligorsk,1,0,H
+2015-08-16,Naftan,FC Vitebsk,3,0,H
+2015-08-16,FC Slutsk,FC Minsk,0,1,A
+2015-08-16,Dinamo Brest,Granit,0,0,D
+2015-08-17,Slavia Mozyr,Torpedo Zhodino,1,2,A
+2015-08-22,FC Minsk,Slavia Mozyr,2,1,H
+2015-08-22,Bate Borisov,Neman,7,1,H
+2015-08-23,FC Vitebsk,Dinamo Brest,2,0,H
+2015-08-23,Naftan,Belshina,0,2,A
+2015-08-23,Shakhter Soligorsk,FC Gomel,4,1,H
+2015-08-23,Torpedo Zhodino,Dinamo Minsk,1,0,H
+2015-08-24,Granit,FC Slutsk,1,0,H
+2015-08-29,Slavia Mozyr,Granit,2,0,H
+2015-08-29,FC Slutsk,FC Vitebsk,4,2,H
+2015-08-29,Dinamo Brest,Naftan,0,1,A
+2015-08-30,FC Gomel,Torpedo Zhodino,0,2,A
+2015-08-30,Neman,Shakhter Soligorsk,0,1,A
+2015-08-31,Dinamo Minsk,FC Minsk,1,1,D
+2015-08-31,Bate Borisov,Belshina,1,0,H
+2015-09-12,Granit,Dinamo Minsk,0,0,D
+2015-09-12,Bate Borisov,Shakhter Soligorsk,1,1,D
+2015-09-13,Naftan,FC Slutsk,0,1,A
+2015-09-13,FC Vitebsk,Slavia Mozyr,0,0,D
+2015-09-13,Torpedo Zhodino,Neman,0,0,D
+2015-09-14,Dinamo Brest,Belshina,2,1,H
+2015-09-14,FC Minsk,FC Gomel,1,0,H
+2015-09-19,Slavia Mozyr,Naftan,0,3,A
+2015-09-19,FC Slutsk,Dinamo Brest,1,1,D
+2015-09-20,Belshina,Shakhter Soligorsk,3,1,H
+2015-09-20,FC Gomel,Granit,1,2,A
+2015-09-20,Bate Borisov,Torpedo Zhodino,1,0,H
+2015-09-21,Dinamo Minsk,FC Vitebsk,0,0,D
+2015-09-21,Neman,FC Minsk,1,1,D
+2015-09-25,FC Minsk,Bate Borisov,1,2,A
+2015-09-26,Naftan,Dinamo Minsk,2,2,D
+2015-09-26,Torpedo Zhodino,Shakhter Soligorsk,3,0,H
+2015-09-27,Granit,Neman,0,1,A
+2015-09-27,FC Slutsk,Belshina,0,0,D
+2015-09-27,Dinamo Brest,Slavia Mozyr,1,2,A
+2015-09-28,FC Vitebsk,FC Gomel,1,0,H
+2015-10-03,Belshina,Torpedo Zhodino,1,0,H
+2015-10-03,Slavia Mozyr,FC Slutsk,1,6,A
+2015-10-03,Neman,FC Vitebsk,0,1,A
+2015-10-04,Bate Borisov,Granit,1,1,D
+2015-10-04,FC Gomel,Naftan,1,4,A
+2015-10-04,Shakhter Soligorsk,FC Minsk,1,0,H
+2015-10-05,Dinamo Minsk,Dinamo Brest,4,1,H
+2015-10-16,FC Vitebsk,Bate Borisov,0,2,A
+2015-10-17,Granit,Shakhter Soligorsk,2,3,A
+2015-10-17,FC Slutsk,Dinamo Minsk,0,1,A
+2015-10-17,FC Minsk,Torpedo Zhodino,0,2,A
+2015-10-18,Naftan,Neman,1,2,A
+2015-10-18,Slavia Mozyr,Belshina,1,4,A
+2015-10-19,Dinamo Brest,FC Gomel,0,4,A
+2015-10-24,Belshina,FC Minsk,4,0,H
+2015-10-24,Torpedo Zhodino,Granit,2,3,A
+2015-10-25,FC Gomel,FC Slutsk,1,3,A
+2015-10-25,Shakhter Soligorsk,FC Vitebsk,4,1,H
+2015-10-25,Bate Borisov,Naftan,2,1,H
+2015-10-26,Dinamo Minsk,Slavia Mozyr,2,0,H
+2015-10-26,Neman,Dinamo Brest,2,1,H
+2015-10-31,FC Slutsk,Neman,0,0,D
+2015-10-31,FC Vitebsk,Torpedo Zhodino,0,0,D
+2015-10-31,Dinamo Brest,Bate Borisov,0,1,A
+2015-10-31,Dinamo Minsk,Belshina,0,0,D
+2015-10-31,Naftan,Shakhter Soligorsk,3,4,A
+2015-10-31,Slavia Mozyr,FC Gomel,3,1,H
+2015-10-31,Granit,FC Minsk,2,0,H
+2015-11-08,FC Minsk,FC Vitebsk,3,2,H
+2015-11-08,Torpedo Zhodino,Naftan,3,3,D
+2015-11-08,Neman,Slavia Mozyr,3,1,H
+2015-11-08,Bate Borisov,FC Slutsk,4,1,H
+2015-11-08,FC Gomel,Dinamo Minsk,1,2,A
+2015-11-08,Shakhter Soligorsk,Dinamo Brest,2,1,H
+2015-11-08,Belshina,Granit,0,1,A

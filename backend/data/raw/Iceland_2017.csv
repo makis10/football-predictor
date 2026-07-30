@@ -1,0 +1,133 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2017-04-30,IBV Vestmannaeyjar,Fjolnir,0,0,D
+2017-04-30,IA Akranes,FH hafnarfjordur,2,4,A
+2017-04-30,Valur Reykjavik,Vikingur Olafsiik,2,0,H
+2017-05-01,Breidablik,KA Akureyri,1,3,A
+2017-05-01,KR Reykjavik,Vikingur Reykjavik,1,2,A
+2017-05-01,Grindavik,Stjarnan,2,2,D
+2017-05-07,Stjarnan,IBV Vestmannaeyjar,5,0,H
+2017-05-07,Vikingur Olafsiik,KR Reykjavik,1,2,A
+2017-05-08,FH hafnarfjordur,KA Akureyri,2,2,D
+2017-05-08,Fjolnir,Breidablik,1,0,H
+2017-05-08,Vikingur Reykjavik,Grindavik,1,2,A
+2017-05-08,IA Akranes,Valur Reykjavik,2,4,A
+2017-05-14,IBV Vestmannaeyjar,Vikingur Reykjavik,1,0,H
+2017-05-14,KR Reykjavik,IA Akranes,2,1,H
+2017-05-14,KA Akureyri,Fjolnir,2,0,H
+2017-05-14,Grindavik,Vikingur Olafsiik,1,3,A
+2017-05-14,Breidablik,Stjarnan,1,3,A
+2017-05-15,Valur Reykjavik,FH hafnarfjordur,1,1,D
+2017-05-21,Vikingur Olafsiik,IBV Vestmannaeyjar,0,3,A
+2017-05-21,Vikingur Reykjavik,Breidablik,2,3,A
+2017-05-21,Stjarnan,KA Akureyri,2,1,H
+2017-05-22,FH hafnarfjordur,Fjolnir,1,2,A
+2017-05-22,IA Akranes,Grindavik,2,3,A
+2017-05-22,Valur Reykjavik,KR Reykjavik,2,1,H
+2017-05-27,KA Akureyri,Vikingur Reykjavik,2,2,D
+2017-05-27,IBV Vestmannaeyjar,IA Akranes,1,4,A
+2017-05-28,Breidablik,Vikingur Olafsiik,2,1,H
+2017-05-28,Fjolnir,Stjarnan,1,3,A
+2017-05-28,Grindavik,Valur Reykjavik,1,0,H
+2017-05-28,KR Reykjavik,FH hafnarfjordur,2,2,D
+2017-06-04,Valur Reykjavik,IBV Vestmannaeyjar,2,1,H
+2017-06-04,FH hafnarfjordur,Stjarnan,3,0,H
+2017-06-05,Vikingur Olafsiik,KA Akureyri,1,4,A
+2017-06-05,KR Reykjavik,Grindavik,0,1,A
+2017-06-05,IA Akranes,Breidablik,2,3,A
+2017-06-05,Vikingur Reykjavik,Fjolnir,2,1,H
+2017-06-14,KA Akureyri,IA Akranes,0,0,D
+2017-06-14,Breidablik,Valur Reykjavik,1,2,A
+2017-06-14,Grindavik,FH hafnarfjordur,1,1,D
+2017-06-15,IBV Vestmannaeyjar,KR Reykjavik,3,1,H
+2017-06-15,Fjolnir,Vikingur Olafsiik,1,1,D
+2017-06-15,Stjarnan,Vikingur Reykjavik,1,2,A
+2017-06-18,Valur Reykjavik,KA Akureyri,1,0,H
+2017-06-18,Grindavik,IBV Vestmannaeyjar,3,1,H
+2017-06-19,FH hafnarfjordur,Vikingur Reykjavik,2,2,D
+2017-06-19,IA Akranes,Fjolnir,3,1,H
+2017-06-19,Vikingur Olafsiik,Stjarnan,2,1,H
+2017-06-19,KR Reykjavik,Breidablik,1,1,D
+2017-06-24,Fjolnir,Valur Reykjavik,1,1,D
+2017-06-24,KA Akureyri,KR Reykjavik,2,3,A
+2017-06-24,Stjarnan,IA Akranes,2,2,D
+2017-06-25,IBV Vestmannaeyjar,FH hafnarfjordur,0,1,A
+2017-06-26,Vikingur Reykjavik,Vikingur Olafsiik,2,0,H
+2017-06-26,Breidablik,Grindavik,0,0,D
+2017-07-03,Breidablik,FH hafnarfjordur,1,2,A
+2017-07-07,FH hafnarfjordur,Vikingur Olafsiik,0,2,A
+2017-07-09,IBV Vestmannaeyjar,Breidablik,1,1,D
+2017-07-09,Grindavik,KA Akureyri,2,1,H
+2017-07-09,Valur Reykjavik,Stjarnan,1,1,D
+2017-07-10,IA Akranes,Vikingur Reykjavik,1,1,D
+2017-07-16,KA Akureyri,IBV Vestmannaeyjar,6,3,H
+2017-07-16,Vikingur Reykjavik,Valur Reykjavik,0,1,A
+2017-07-17,Vikingur Olafsiik,IA Akranes,1,0,H
+2017-07-17,Fjolnir,Grindavik,4,0,H
+2017-07-17,Stjarnan,KR Reykjavik,2,0,H
+2017-07-22,FH hafnarfjordur,IA Akranes,2,0,H
+2017-07-23,KA Akureyri,Breidablik,2,4,A
+2017-07-23,Fjolnir,IBV Vestmannaeyjar,2,1,H
+2017-07-23,Vikingur Reykjavik,KR Reykjavik,0,3,A
+2017-07-23,Stjarnan,Grindavik,5,0,H
+2017-07-25,Vikingur Olafsiik,Valur Reykjavik,1,2,A
+2017-07-27,KR Reykjavik,Fjolnir,2,0,H
+2017-07-30,IBV Vestmannaeyjar,Stjarnan,2,2,D
+2017-07-31,KR Reykjavik,Vikingur Olafsiik,4,2,H
+2017-07-31,Breidablik,Fjolnir,2,1,H
+2017-07-31,Grindavik,Vikingur Reykjavik,1,2,A
+2017-07-31,Valur Reykjavik,IA Akranes,6,0,H
+2017-08-05,KA Akureyri,FH hafnarfjordur,0,0,D
+2017-08-08,Vikingur Reykjavik,IBV Vestmannaeyjar,1,1,D
+2017-08-08,FH hafnarfjordur,Valur Reykjavik,2,1,H
+2017-08-08,IA Akranes,KR Reykjavik,1,1,D
+2017-08-09,Fjolnir,KA Akureyri,2,2,D
+2017-08-09,Vikingur Olafsiik,Grindavik,2,1,H
+2017-08-09,Stjarnan,Breidablik,2,0,H
+2017-08-14,KA Akureyri,Stjarnan,1,1,D
+2017-08-14,Breidablik,Vikingur Reykjavik,1,2,A
+2017-08-14,Grindavik,IA Akranes,3,2,H
+2017-08-14,KR Reykjavik,Valur Reykjavik,0,0,D
+2017-08-16,IBV Vestmannaeyjar,Vikingur Olafsiik,0,1,A
+2017-08-20,IA Akranes,IBV Vestmannaeyjar,0,1,A
+2017-08-20,Vikingur Reykjavik,KA Akureyri,0,1,A
+2017-08-20,Vikingur Olafsiik,Breidablik,0,3,A
+2017-08-21,Valur Reykjavik,Grindavik,2,0,H
+2017-08-21,Stjarnan,Fjolnir,4,0,H
+2017-08-27,IBV Vestmannaeyjar,Valur Reykjavik,2,3,A
+2017-08-27,Grindavik,KR Reykjavik,2,2,D
+2017-08-27,KA Akureyri,Vikingur Olafsiik,5,0,H
+2017-08-27,Fjolnir,Vikingur Reykjavik,3,1,H
+2017-08-27,Breidablik,IA Akranes,2,0,H
+2017-08-27,Stjarnan,FH hafnarfjordur,1,1,D
+2017-08-31,FH hafnarfjordur,KR Reykjavik,0,1,A
+2017-09-09,KR Reykjavik,IBV Vestmannaeyjar,0,3,A
+2017-09-09,Vikingur Olafsiik,Fjolnir,4,4,D
+2017-09-10,FH hafnarfjordur,Grindavik,1,0,H
+2017-09-10,Vikingur Reykjavik,Stjarnan,2,2,D
+2017-09-10,IA Akranes,KA Akureyri,2,0,H
+2017-09-10,Valur Reykjavik,Breidablik,1,0,H
+2017-09-14,IBV Vestmannaeyjar,Grindavik,2,1,H
+2017-09-14,KA Akureyri,Valur Reykjavik,1,1,D
+2017-09-14,Fjolnir,IA Akranes,2,2,D
+2017-09-14,Breidablik,KR Reykjavik,1,3,A
+2017-09-14,Vikingur Reykjavik,FH hafnarfjordur,2,4,A
+2017-09-14,Stjarnan,Vikingur Olafsiik,3,0,H
+2017-09-17,FH hafnarfjordur,IBV Vestmannaeyjar,2,1,H
+2017-09-17,KR Reykjavik,KA Akureyri,0,0,D
+2017-09-17,Grindavik,Breidablik,4,3,H
+2017-09-17,IA Akranes,Stjarnan,2,2,D
+2017-09-17,Valur Reykjavik,Fjolnir,4,1,H
+2017-09-18,Vikingur Olafsiik,Vikingur Reykjavik,1,3,A
+2017-09-21,Fjolnir,FH hafnarfjordur,2,1,H
+2017-09-24,KA Akureyri,Grindavik,2,1,H
+2017-09-24,Fjolnir,KR Reykjavik,2,2,D
+2017-09-24,Stjarnan,Valur Reykjavik,1,2,A
+2017-09-24,Breidablik,IBV Vestmannaeyjar,3,2,H
+2017-09-24,Vikingur Reykjavik,IA Akranes,0,0,D
+2017-09-24,Vikingur Olafsiik,FH hafnarfjordur,1,1,D
+2017-09-30,IBV Vestmannaeyjar,KA Akureyri,3,0,H
+2017-09-30,FH hafnarfjordur,Breidablik,0,1,A
+2017-09-30,KR Reykjavik,Stjarnan,0,1,A
+2017-09-30,Valur Reykjavik,Vikingur Reykjavik,4,3,H
+2017-09-30,Grindavik,Fjolnir,2,1,H
+2017-09-30,IA Akranes,Vikingur Olafsiik,0,0,D

@@ -1,0 +1,183 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2021-03-13,Kairat Almaty,Zhetysu,2,0,H
+2021-03-13,Atyrau,Shakhter Karagandy,0,1,A
+2021-03-13,Arys,FC Astana,2,2,D
+2021-03-14,Kaspiy,Aktobe,1,1,D
+2021-03-14,FK Tobol Kostanay,Akzhayik,2,0,H
+2021-03-14,Kaisar,Taraz,2,3,A
+2021-03-19,Taraz,Kyzyl-Zhar,0,0,D
+2021-03-19,Kaisar,Kairat Almaty,0,3,A
+2021-03-19,FC Astana,Kaspiy,2,0,H
+2021-03-20,Zhetysu,Arys,3,0,H
+2021-03-20,Akzhayik,Atyrau,1,0,H
+2021-03-20,Shakhter Karagandy,Ordabasy,0,2,A
+2021-03-20,Aktobe,FK Tobol Kostanay,1,1,D
+2021-04-04,Kaspiy,Zhetysu,2,0,H
+2021-04-04,Atyrau,Aktobe,1,3,A
+2021-04-04,Arys,Kaisar,1,1,D
+2021-04-05,Kyzyl-Zhar,Shakhter Karagandy,2,0,H
+2021-04-05,Kairat Almaty,Taraz,2,2,D
+2021-04-05,Ordabasy,Akzhayik,2,1,H
+2021-04-05,FK Tobol Kostanay,FC Astana,1,1,D
+2021-04-09,Taraz,Shakhter Karagandy,4,0,H
+2021-04-09,Akzhayik,Kyzyl-Zhar,0,1,A
+2021-04-09,Kaisar,Kaspiy,2,1,H
+2021-04-09,Aktobe,Ordabasy,4,4,D
+2021-04-10,Zhetysu,FK Tobol Kostanay,0,2,A
+2021-04-10,Kairat Almaty,Arys,5,1,H
+2021-04-10,FC Astana,Atyrau,6,2,H
+2021-04-13,Kyzyl-Zhar,Aktobe,1,2,A
+2021-04-13,Shakhter Karagandy,Akzhayik,1,2,A
+2021-04-14,Ordabasy,FC Astana,1,4,A
+2021-04-14,Kaspiy,Kairat Almaty,1,1,D
+2021-04-14,FK Tobol Kostanay,Kaisar,1,0,H
+2021-04-14,Atyrau,Zhetysu,2,2,D
+2021-04-14,Arys,Taraz,0,1,A
+2021-04-18,Taraz,Akzhayik,1,0,H
+2021-04-18,FC Astana,Kyzyl-Zhar,3,1,H
+2021-04-18,Kaisar,Atyrau,1,1,D
+2021-04-19,Zhetysu,Ordabasy,0,4,A
+2021-04-19,Aktobe,Shakhter Karagandy,0,3,A
+2021-04-19,Kairat Almaty,FK Tobol Kostanay,2,2,D
+2021-04-19,Arys,Kaspiy,2,2,D
+2021-04-23,Kaspiy,Taraz,1,0,H
+2021-04-23,Shakhter Karagandy,FC Astana,0,1,A
+2021-04-23,Atyrau,Kairat Almaty,1,0,H
+2021-04-23,FK Tobol Kostanay,Arys,5,0,H
+2021-04-24,Kyzyl-Zhar,Zhetysu,3,0,H
+2021-04-24,Akzhayik,Aktobe,1,0,H
+2021-04-24,Ordabasy,Kaisar,4,2,H
+2021-04-28,Kaspiy,FK Tobol Kostanay,2,1,H
+2021-04-28,FC Astana,Akzhayik,1,0,H
+2021-04-28,Taraz,Aktobe,3,1,H
+2021-04-28,Arys,Atyrau,1,2,A
+2021-04-29,Zhetysu,Shakhter Karagandy,0,1,A
+2021-04-29,Kairat Almaty,Ordabasy,3,0,H
+2021-04-29,Kaisar,Kyzyl-Zhar,1,2,A
+2021-05-02,Aktobe,FC Astana,0,2,A
+2021-05-02,Atyrau,Kaspiy,2,1,H
+2021-05-02,FK Tobol Kostanay,Taraz,3,0,H
+2021-05-03,Kyzyl-Zhar,Kairat Almaty,1,1,D
+2021-05-03,Ordabasy,Arys,0,1,A
+2021-05-03,Akzhayik,Zhetysu,3,2,H
+2021-05-03,Shakhter Karagandy,Kaisar,1,1,D
+2021-05-08,Taraz,FC Astana,0,1,A
+2021-05-08,Kaspiy,Ordabasy,0,0,D
+2021-05-08,Kairat Almaty,Shakhter Karagandy,1,1,D
+2021-05-08,Kaisar,Akzhayik,0,1,A
+2021-05-09,Zhetysu,Aktobe,1,5,A
+2021-05-09,FK Tobol Kostanay,Atyrau,2,0,H
+2021-05-09,Arys,Kyzyl-Zhar,1,0,H
+2021-05-14,Shakhter Karagandy,Arys,0,1,A
+2021-05-14,Akzhayik,Kairat Almaty,1,0,H
+2021-05-14,Aktobe,Kaisar,1,1,D
+2021-05-14,FC Astana,Zhetysu,1,0,H
+2021-05-15,Kyzyl-Zhar,Kaspiy,2,0,H
+2021-05-15,Ordabasy,FK Tobol Kostanay,1,1,D
+2021-05-15,Atyrau,Taraz,1,0,H
+2021-05-18,Arys,Akzhayik,0,2,A
+2021-05-18,Kairat Almaty,Aktobe,4,2,H
+2021-05-18,Kaisar,FC Astana,2,5,A
+2021-05-19,Kaspiy,Shakhter Karagandy,3,0,H
+2021-05-19,Taraz,Zhetysu,2,3,A
+2021-05-19,FK Tobol Kostanay,Kyzyl-Zhar,2,0,H
+2021-05-19,Atyrau,Ordabasy,0,0,D
+2021-05-23,Zhetysu,Kaisar,2,0,H
+2021-05-23,FC Astana,Kairat Almaty,1,1,D
+2021-05-23,Aktobe,Arys,0,2,A
+2021-05-24,Ordabasy,Taraz,1,1,D
+2021-05-24,Kyzyl-Zhar,Atyrau,0,1,A
+2021-05-24,Akzhayik,Kaspiy,0,3,A
+2021-05-24,Shakhter Karagandy,FK Tobol Kostanay,0,3,A
+2021-05-28,Kyzyl-Zhar,Taraz,2,2,D
+2021-05-28,Kairat Almaty,Kaisar,1,0,H
+2021-05-28,Arys,Zhetysu,0,2,A
+2021-05-29,Ordabasy,Shakhter Karagandy,0,0,D
+2021-05-29,Kaspiy,FC Astana,2,2,D
+2021-05-29,FK Tobol Kostanay,Aktobe,2,1,H
+2021-05-29,Atyrau,Akzhayik,2,0,H
+2021-06-12,Zhetysu,Kaspiy,0,1,A
+2021-06-12,Aktobe,Atyrau,1,0,H
+2021-06-12,Akzhayik,Ordabasy,0,1,A
+2021-06-12,Shakhter Karagandy,Kyzyl-Zhar,0,1,A
+2021-06-13,FC Astana,FK Tobol Kostanay,1,1,D
+2021-06-13,Taraz,Kairat Almaty,0,2,A
+2021-06-13,Kaisar,Arys,0,0,D
+2021-06-18,Kyzyl-Zhar,Akzhayik,0,1,A
+2021-06-18,Shakhter Karagandy,Taraz,1,0,H
+2021-06-18,Atyrau,FC Astana,0,2,A
+2021-06-18,Ordabasy,Aktobe,0,1,A
+2021-06-19,FK Tobol Kostanay,Zhetysu,2,1,H
+2021-06-19,Kaspiy,Kaisar,2,4,A
+2021-06-19,Arys,Kairat Almaty,0,3,A
+2021-06-22,FC Astana,Ordabasy,0,2,A
+2021-06-22,Akzhayik,Shakhter Karagandy,1,1,D
+2021-06-22,Aktobe,Kyzyl-Zhar,1,1,D
+2021-06-23,Zhetysu,Atyrau,1,2,A
+2021-06-23,Kairat Almaty,Kaspiy,5,1,H
+2021-06-23,Taraz,Arys,1,1,D
+2021-06-23,Kaisar,FK Tobol Kostanay,1,3,A
+2021-06-27,Kyzyl-Zhar,FC Astana,3,2,H
+2021-06-27,Shakhter Karagandy,Aktobe,1,0,H
+2021-06-27,Ordabasy,Zhetysu,3,0,H
+2021-06-28,FK Tobol Kostanay,Kairat Almaty,2,2,D
+2021-06-28,Akzhayik,Taraz,3,0,H
+2021-06-28,Kaspiy,Arys,0,0,D
+2021-06-28,Atyrau,Kaisar,1,1,D
+2021-07-02,FC Astana,Shakhter Karagandy,4,3,H
+2021-07-02,Kairat Almaty,Atyrau,5,0,H
+2021-07-02,Aktobe,Akzhayik,2,1,H
+2021-07-03,Zhetysu,Kyzyl-Zhar,0,0,D
+2021-07-03,Kaisar,Ordabasy,1,0,H
+2021-07-03,Arys,FK Tobol Kostanay,2,4,A
+2021-07-04,Taraz,Kaspiy,1,0,H
+2021-08-26,Ordabasy,Kyzyl-Zhar,0,5,A
+2021-09-11,Kyzyl-Zhar,Kaisar,2,0,H
+2021-09-11,Akzhayik,FC Astana,0,1,A
+2021-09-11,Atyrau,Arys,2,2,D
+2021-09-12,Shakhter Karagandy,Zhetysu,3,1,H
+2021-09-12,Aktobe,Taraz,0,0,D
+2021-09-12,Ordabasy,Kairat Almaty,2,1,H
+2021-09-12,FK Tobol Kostanay,Kaspiy,2,1,H
+2021-09-18,Zhetysu,Akzhayik,2,2,D
+2021-09-18,FC Astana,Aktobe,2,1,H
+2021-09-18,Kaspiy,Atyrau,2,1,H
+2021-09-18,Arys,Ordabasy,1,1,D
+2021-09-19,Taraz,FK Tobol Kostanay,0,0,D
+2021-09-19,Kairat Almaty,Kyzyl-Zhar,1,0,H
+2021-09-19,Kaisar,Shakhter Karagandy,1,2,A
+2021-09-26,Kyzyl-Zhar,Arys,0,1,A
+2021-09-26,Aktobe,Zhetysu,2,0,H
+2021-09-26,Shakhter Karagandy,Kairat Almaty,1,1,D
+2021-09-27,FC Astana,Taraz,3,0,H
+2021-09-27,Akzhayik,Kaisar,1,1,D
+2021-09-27,Atyrau,FK Tobol Kostanay,0,1,A
+2021-09-27,Ordabasy,Kaspiy,1,1,D
+2021-10-02,Zhetysu,FC Astana,1,3,A
+2021-10-02,FK Tobol Kostanay,Ordabasy,3,1,H
+2021-10-02,Arys,Shakhter Karagandy,0,0,D
+2021-10-02,Kaisar,Aktobe,0,2,A
+2021-10-03,Taraz,Atyrau,2,2,D
+2021-10-03,Kaspiy,Kyzyl-Zhar,1,2,A
+2021-10-03,Kairat Almaty,Akzhayik,3,1,H
+2021-10-16,Akzhayik,Arys,1,1,D
+2021-10-16,Shakhter Karagandy,Kaspiy,1,0,H
+2021-10-16,Ordabasy,Atyrau,2,1,H
+2021-10-16,Aktobe,Kairat Almaty,1,2,A
+2021-10-17,Zhetysu,Taraz,1,2,A
+2021-10-17,Kyzyl-Zhar,FK Tobol Kostanay,0,2,A
+2021-10-17,FC Astana,Kaisar,2,0,H
+2021-10-24,Kairat Almaty,FC Astana,1,0,H
+2021-10-24,FK Tobol Kostanay,Shakhter Karagandy,4,1,H
+2021-10-24,Taraz,Ordabasy,1,2,A
+2021-10-24,Atyrau,Kyzyl-Zhar,0,0,D
+2021-10-24,Arys,Aktobe,1,2,A
+2021-10-24,Kaspiy,Akzhayik,2,2,D
+2021-10-24,Kaisar,Zhetysu,0,1,A
+2021-10-30,Kyzyl-Zhar,Ordabasy,3,2,H
+2021-10-30,Taraz,Kaisar,1,2,A
+2021-10-30,Zhetysu,Kairat Almaty,0,0,D
+2021-10-30,Shakhter Karagandy,Atyrau,3,1,H
+2021-10-30,FC Astana,Arys,1,1,D
+2021-10-30,Akzhayik,FK Tobol Kostanay,0,2,A
+2021-10-30,Aktobe,Kaspiy,1,5,A

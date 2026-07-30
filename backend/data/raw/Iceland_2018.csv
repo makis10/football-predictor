@@ -1,0 +1,133 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2018-04-27,Valur Reykjavik,KR Reykjavik,2,1,H
+2018-04-27,Stjarnan,Keflavik,2,2,D
+2018-04-28,Breidablik,IBV Vestmannaeyjar,4,1,H
+2018-04-28,Grindavik,FH hafnarfjordur,0,1,A
+2018-04-28,Fjolnir,KA Akureyri,2,2,D
+2018-04-28,Vikingur Reykjavik,Fylkir,1,0,H
+2018-05-06,IBV Vestmannaeyjar,Fjolnir,1,1,D
+2018-05-06,Fylkir,KA Akureyri,2,1,H
+2018-05-06,Stjarnan,KR Reykjavik,2,3,A
+2018-05-07,Keflavik,Grindavik,0,2,A
+2018-05-07,FH hafnarfjordur,Breidablik,1,3,A
+2018-05-07,Vikingur Reykjavik,Valur Reykjavik,0,0,D
+2018-05-12,Grindavik,KR Reykjavik,1,1,D
+2018-05-12,KA Akureyri,IBV Vestmannaeyjar,2,0,H
+2018-05-12,Breidablik,Keflavik,1,0,H
+2018-05-13,Fjolnir,FH hafnarfjordur,2,3,A
+2018-05-13,Valur Reykjavik,Fylkir,2,2,D
+2018-05-14,Stjarnan,Vikingur Reykjavik,3,3,D
+2018-05-17,Fylkir,IBV Vestmannaeyjar,2,1,H
+2018-05-17,FH hafnarfjordur,KA Akureyri,3,1,H
+2018-05-18,Keflavik,Fjolnir,1,2,A
+2018-05-18,KR Reykjavik,Breidablik,1,1,D
+2018-05-18,Valur Reykjavik,Stjarnan,2,2,D
+2018-05-18,Vikingur Reykjavik,Grindavik,0,1,A
+2018-05-21,IBV Vestmannaeyjar,FH hafnarfjordur,0,0,D
+2018-05-21,Fjolnir,KR Reykjavik,1,1,D
+2018-05-22,KA Akureyri,Keflavik,0,0,D
+2018-05-23,Stjarnan,Fylkir,3,0,H
+2018-05-23,Breidablik,Vikingur Reykjavik,0,0,D
+2018-05-23,Grindavik,Valur Reykjavik,2,1,H
+2018-05-27,Keflavik,IBV Vestmannaeyjar,1,3,A
+2018-05-27,KR Reykjavik,KA Akureyri,2,0,H
+2018-05-27,Vikingur Reykjavik,Fjolnir,1,2,A
+2018-05-27,Stjarnan,Grindavik,1,1,D
+2018-05-27,Valur Reykjavik,Breidablik,2,1,H
+2018-05-28,FH hafnarfjordur,Fylkir,1,1,D
+2018-06-03,KA Akureyri,Vikingur Reykjavik,4,1,H
+2018-06-03,IBV Vestmannaeyjar,KR Reykjavik,2,0,H
+2018-06-03,Breidablik,Stjarnan,0,1,A
+2018-06-04,FH hafnarfjordur,Keflavik,2,2,D
+2018-06-04,Fjolnir,Valur Reykjavik,0,2,A
+2018-06-04,Grindavik,Fylkir,2,1,H
+2018-06-08,Fylkir,Keflavik,2,0,H
+2018-06-09,Vikingur Reykjavik,IBV Vestmannaeyjar,2,1,H
+2018-06-09,Grindavik,Breidablik,0,2,A
+2018-06-09,Valur Reykjavik,KA Akureyri,3,1,H
+2018-06-10,Stjarnan,Fjolnir,6,1,H
+2018-06-10,KR Reykjavik,FH hafnarfjordur,2,2,D
+2018-06-13,IBV Vestmannaeyjar,Valur Reykjavik,0,1,A
+2018-06-13,Breidablik,Fylkir,2,0,H
+2018-06-14,KA Akureyri,Stjarnan,1,2,A
+2018-06-14,Keflavik,KR Reykjavik,0,4,A
+2018-06-14,FH hafnarfjordur,Vikingur Reykjavik,3,0,H
+2018-06-14,Fjolnir,Grindavik,0,1,A
+2018-06-19,Stjarnan,IBV Vestmannaeyjar,2,1,H
+2018-06-20,Valur Reykjavik,FH hafnarfjordur,2,1,H
+2018-07-01,IBV Vestmannaeyjar,Grindavik,3,0,H
+2018-07-01,KA Akureyri,Breidablik,0,0,D
+2018-07-01,Keflavik,Valur Reykjavik,0,2,A
+2018-07-01,KR Reykjavik,Vikingur Reykjavik,0,1,A
+2018-07-01,Fjolnir,Fylkir,2,1,H
+2018-07-02,FH hafnarfjordur,Stjarnan,2,3,A
+2018-07-05,KA Akureyri,Fjolnir,2,0,H
+2018-07-05,KR Reykjavik,Valur Reykjavik,1,1,D
+2018-07-07,FH hafnarfjordur,Grindavik,2,1,H
+2018-07-07,IBV Vestmannaeyjar,Breidablik,0,0,D
+2018-07-07,Keflavik,Stjarnan,0,2,A
+2018-07-09,Fylkir,Vikingur Reykjavik,2,3,A
+2018-07-12,Grindavik,KA Akureyri,1,2,A
+2018-07-13,Vikingur Reykjavik,Keflavik,1,0,H
+2018-07-16,Fylkir,KR Reykjavik,2,5,A
+2018-07-16,Breidablik,Fjolnir,2,1,H
+2018-07-22,Fjolnir,IBV Vestmannaeyjar,1,1,D
+2018-07-22,Valur Reykjavik,Vikingur Reykjavik,4,1,H
+2018-07-22,KR Reykjavik,Stjarnan,1,0,H
+2018-07-22,KA Akureyri,Fylkir,5,1,H
+2018-07-22,Breidablik,FH hafnarfjordur,4,1,H
+2018-07-23,Grindavik,Keflavik,3,0,H
+2018-07-29,IBV Vestmannaeyjar,KA Akureyri,2,1,H
+2018-07-29,Vikingur Reykjavik,Stjarnan,0,4,A
+2018-07-30,Fylkir,Valur Reykjavik,0,0,D
+2018-07-30,Keflavik,Breidablik,1,3,A
+2018-07-30,FH hafnarfjordur,Fjolnir,1,0,H
+2018-07-30,KR Reykjavik,Grindavik,2,0,H
+2018-08-04,IBV Vestmannaeyjar,Fylkir,0,1,A
+2018-08-07,Breidablik,KR Reykjavik,1,0,H
+2018-08-08,KA Akureyri,FH hafnarfjordur,1,1,D
+2018-08-08,Fjolnir,Keflavik,0,0,D
+2018-08-08,Grindavik,Vikingur Reykjavik,2,1,H
+2018-08-12,FH hafnarfjordur,IBV Vestmannaeyjar,0,2,A
+2018-08-12,Fylkir,Stjarnan,0,2,A
+2018-08-12,Keflavik,KA Akureyri,0,3,A
+2018-08-12,KR Reykjavik,Fjolnir,0,0,D
+2018-08-13,Vikingur Reykjavik,Breidablik,2,3,A
+2018-08-13,Valur Reykjavik,Grindavik,4,0,H
+2018-08-18,IBV Vestmannaeyjar,Keflavik,1,0,H
+2018-08-19,KA Akureyri,KR Reykjavik,0,1,A
+2018-08-19,Fylkir,FH hafnarfjordur,1,1,D
+2018-08-19,Grindavik,Stjarnan,2,2,D
+2018-08-20,Fjolnir,Vikingur Reykjavik,2,2,D
+2018-08-20,Breidablik,Valur Reykjavik,1,3,A
+2018-08-25,Vikingur Reykjavik,KA Akureyri,2,2,D
+2018-08-25,Stjarnan,Breidablik,2,1,H
+2018-08-25,Valur Reykjavik,Fjolnir,5,3,H
+2018-08-26,KR Reykjavik,IBV Vestmannaeyjar,4,1,H
+2018-08-26,Keflavik,FH hafnarfjordur,1,3,A
+2018-08-27,Fylkir,Grindavik,3,1,H
+2018-08-29,Stjarnan,Valur Reykjavik,1,1,D
+2018-08-31,Keflavik,Fylkir,1,2,A
+2018-09-02,IBV Vestmannaeyjar,Vikingur Reykjavik,1,1,D
+2018-09-02,KA Akureyri,Valur Reykjavik,3,3,D
+2018-09-02,Fjolnir,Stjarnan,1,3,A
+2018-09-02,Breidablik,Grindavik,1,1,D
+2018-09-02,FH hafnarfjordur,KR Reykjavik,4,0,H
+2018-09-16,KR Reykjavik,Keflavik,3,1,H
+2018-09-16,Grindavik,Fjolnir,0,1,A
+2018-09-16,Vikingur Reykjavik,FH hafnarfjordur,1,1,D
+2018-09-16,Valur Reykjavik,IBV Vestmannaeyjar,5,1,H
+2018-09-19,Stjarnan,KA Akureyri,1,1,D
+2018-09-19,Fylkir,Breidablik,0,3,A
+2018-09-23,IBV Vestmannaeyjar,Stjarnan,2,1,H
+2018-09-23,Keflavik,Vikingur Reykjavik,0,4,A
+2018-09-23,FH hafnarfjordur,Valur Reykjavik,2,1,H
+2018-09-23,KR Reykjavik,Fylkir,1,1,D
+2018-09-23,KA Akureyri,Grindavik,4,3,H
+2018-09-23,Fjolnir,Breidablik,0,2,A
+2018-09-29,Fylkir,Fjolnir,7,0,H
+2018-09-29,Valur Reykjavik,Keflavik,4,1,H
+2018-09-29,Stjarnan,FH hafnarfjordur,0,1,A
+2018-09-29,Breidablik,KA Akureyri,4,0,H
+2018-09-29,Grindavik,IBV Vestmannaeyjar,2,5,A
+2018-09-29,Vikingur Reykjavik,KR Reykjavik,2,3,A

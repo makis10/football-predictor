@@ -1,0 +1,309 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2019-07-26,VfB Stuttgart,Hannover 96,2,1,H
+2019-07-27,Dynamo Dresden,FC Nurnberg,0,1,A
+2019-07-27,Holstein Kiel,SV Sandhausen,1,1,D
+2019-07-27,VfL Osnabruck,FC Heidenheim,1,3,A
+2019-07-28,Hamburger SV,SV Darmstadt 98,1,1,D
+2019-07-28,Jahn Regensburg,Vfl Bochum,3,1,H
+2019-07-28,SpVgg Greuther Furth,Erzgebirge AUE,0,2,A
+2019-07-28,SV Wehen,Karlsruher SC,1,2,A
+2019-07-29,Arminia Bielefeld,FC St. Pauli,1,1,D
+2019-08-02,Vfl Bochum,Arminia Bielefeld,3,3,D
+2019-08-02,SV Sandhausen,VfL Osnabruck,0,1,A
+2019-08-02,FC St. Pauli,SpVgg Greuther Furth,1,3,A
+2019-08-03,Karlsruher SC,Dynamo Dresden,4,2,H
+2019-08-03,Hannover 96,Jahn Regensburg,1,1,D
+2019-08-04,FC Heidenheim,VfB Stuttgart,2,2,D
+2019-08-04,SV Darmstadt 98,Holstein Kiel,2,0,H
+2019-08-04,Erzgebirge AUE,SV Wehen,3,2,H
+2019-08-05,FC Nurnberg,Hamburger SV,0,4,A
+2019-08-16,Hamburger SV,Vfl Bochum,1,0,H
+2019-08-16,SV Sandhausen,FC Nurnberg,3,2,H
+2019-08-17,VfB Stuttgart,FC St. Pauli,2,1,H
+2019-08-17,Arminia Bielefeld,Erzgebirge AUE,3,1,H
+2019-08-17,SV Wehen,Hannover 96,0,3,A
+2019-08-18,SpVgg Greuther Furth,Jahn Regensburg,1,0,H
+2019-08-18,Dynamo Dresden,FC Heidenheim,2,1,H
+2019-08-18,Holstein Kiel,Karlsruher SC,2,1,H
+2019-08-19,VfL Osnabruck,SV Darmstadt 98,4,0,H
+2019-08-23,SV Darmstadt 98,Dynamo Dresden,0,0,D
+2019-08-23,Erzgebirge AUE,VfB Stuttgart,0,0,D
+2019-08-24,Hannover 96,SpVgg Greuther Furth,1,1,D
+2019-08-24,Vfl Bochum,SV Wehen,3,3,D
+2019-08-24,Jahn Regensburg,Arminia Bielefeld,1,3,A
+2019-08-25,FC Nurnberg,VfL Osnabruck,1,0,H
+2019-08-25,FC Heidenheim,SV Sandhausen,0,2,A
+2019-08-25,Karlsruher SC,Hamburger SV,2,4,A
+2019-08-26,FC St. Pauli,Holstein Kiel,2,1,H
+2019-08-30,FC Nurnberg,FC Heidenheim,2,2,D
+2019-08-30,SV Sandhausen,SV Darmstadt 98,1,0,H
+2019-08-31,Dynamo Dresden,FC St. Pauli,3,3,D
+2019-08-31,Arminia Bielefeld,SpVgg Greuther Furth,2,2,D
+2019-08-31,SV Wehen,Jahn Regensburg,0,5,A
+2019-09-01,Hamburger SV,Hannover 96,3,0,H
+2019-09-01,Holstein Kiel,Erzgebirge AUE,1,1,D
+2019-09-01,VfL Osnabruck,Karlsruher SC,3,0,H
+2019-09-02,VfB Stuttgart,Vfl Bochum,2,1,H
+2019-09-13,SpVgg Greuther Furth,SV Wehen,2,1,H
+2019-09-13,Karlsruher SC,SV Sandhausen,1,0,H
+2019-09-14,Hannover 96,Arminia Bielefeld,0,2,A
+2019-09-14,Jahn Regensburg,VfB Stuttgart,2,3,A
+2019-09-14,FC Heidenheim,Holstein Kiel,3,0,H
+2019-09-15,Vfl Bochum,Dynamo Dresden,2,2,D
+2019-09-15,SV Darmstadt 98,FC Nurnberg,3,3,D
+2019-09-15,Erzgebirge AUE,VfL Osnabruck,1,0,H
+2019-09-16,FC St. Pauli,Hamburger SV,2,0,H
+2019-09-20,FC Heidenheim,SV Darmstadt 98,1,0,H
+2019-09-20,Holstein Kiel,Hannover 96,1,2,A
+2019-09-21,FC Nurnberg,Karlsruher SC,1,1,D
+2019-09-21,VfB Stuttgart,SpVgg Greuther Furth,2,0,H
+2019-09-21,SV Sandhausen,Vfl Bochum,1,1,D
+2019-09-21,SV Wehen,Arminia Bielefeld,2,5,A
+2019-09-22,Hamburger SV,Erzgebirge AUE,4,0,H
+2019-09-22,Dynamo Dresden,Jahn Regensburg,2,1,H
+2019-09-22,VfL Osnabruck,FC St. Pauli,1,1,D
+2019-09-27,Arminia Bielefeld,VfB Stuttgart,0,1,A
+2019-09-27,SV Wehen,VfL Osnabruck,2,0,H
+2019-09-28,Vfl Bochum,SV Darmstadt 98,2,2,D
+2019-09-28,Jahn Regensburg,Hamburger SV,2,2,D
+2019-09-28,Karlsruher SC,FC Heidenheim,1,1,D
+2019-09-29,SpVgg Greuther Furth,Holstein Kiel,0,3,A
+2019-09-29,FC St. Pauli,SV Sandhausen,2,0,H
+2019-09-29,Erzgebirge AUE,Dynamo Dresden,4,1,H
+2019-09-30,Hannover 96,FC Nurnberg,0,4,A
+2019-10-04,VfB Stuttgart,SV Wehen,1,2,A
+2019-10-04,SV Darmstadt 98,Karlsruher SC,1,1,D
+2019-10-05,Hamburger SV,SpVgg Greuther Furth,2,0,H
+2019-10-05,Dynamo Dresden,Hannover 96,0,2,A
+2019-10-05,SV Sandhausen,Erzgebirge AUE,2,2,D
+2019-10-06,FC Nurnberg,FC St. Pauli,1,1,D
+2019-10-06,FC Heidenheim,Vfl Bochum,2,3,A
+2019-10-06,Holstein Kiel,Jahn Regensburg,1,2,A
+2019-10-07,VfL Osnabruck,Arminia Bielefeld,0,1,A
+2019-10-18,SpVgg Greuther Furth,Dynamo Dresden,2,0,H
+2019-10-18,Erzgebirge AUE,FC Nurnberg,4,3,H
+2019-10-19,Jahn Regensburg,SV Sandhausen,1,0,H
+2019-10-19,FC St. Pauli,SV Darmstadt 98,0,1,A
+2019-10-19,SV Wehen,FC Heidenheim,0,0,D
+2019-10-20,Hannover 96,VfL Osnabruck,0,0,D
+2019-10-20,VfB Stuttgart,Holstein Kiel,0,1,A
+2019-10-20,Vfl Bochum,Karlsruher SC,3,3,D
+2019-10-21,Arminia Bielefeld,Hamburger SV,1,1,D
+2019-10-25,SV Darmstadt 98,Erzgebirge AUE,1,0,H
+2019-10-25,Holstein Kiel,Vfl Bochum,2,1,H
+2019-10-26,Hamburger SV,VfB Stuttgart,6,2,H
+2019-10-26,Dynamo Dresden,Arminia Bielefeld,0,1,A
+2019-10-26,Karlsruher SC,Hannover 96,3,3,D
+2019-10-27,FC Nurnberg,Jahn Regensburg,1,1,D
+2019-10-27,FC Heidenheim,FC St. Pauli,1,0,H
+2019-10-27,VfL Osnabruck,SpVgg Greuther Furth,0,0,D
+2019-10-28,SV Sandhausen,SV Wehen,0,0,D
+2019-11-01,Hannover 96,SV Sandhausen,1,1,D
+2019-11-01,Jahn Regensburg,VfL Osnabruck,3,3,D
+2019-11-02,SpVgg Greuther Furth,SV Darmstadt 98,3,1,H
+2019-11-02,FC St. Pauli,Karlsruher SC,2,2,D
+2019-11-02,Erzgebirge AUE,FC Heidenheim,1,1,D
+2019-11-03,VfB Stuttgart,Dynamo Dresden,3,1,H
+2019-11-03,Arminia Bielefeld,Holstein Kiel,2,1,H
+2019-11-03,SV Wehen,Hamburger SV,1,1,D
+2019-11-04,Vfl Bochum,FC Nurnberg,3,1,H
+2019-11-08,Dynamo Dresden,SV Wehen,1,0,H
+2019-11-08,FC St. Pauli,Vfl Bochum,1,1,D
+2019-11-09,SV Sandhausen,SpVgg Greuther Furth,3,2,H
+2019-11-09,Holstein Kiel,Hamburger SV,1,1,D
+2019-11-09,VfL Osnabruck,VfB Stuttgart,1,0,H
+2019-11-10,FC Nurnberg,Arminia Bielefeld,1,5,A
+2019-11-10,FC Heidenheim,Hannover 96,4,0,H
+2019-11-10,SV Darmstadt 98,Jahn Regensburg,2,2,D
+2019-11-11,Karlsruher SC,Erzgebirge AUE,1,1,D
+2019-11-22,Vfl Bochum,VfL Osnabruck,1,1,D
+2019-11-22,Erzgebirge AUE,FC St. Pauli,3,1,H
+2019-11-23,Hamburger SV,Dynamo Dresden,2,1,H
+2019-11-23,Arminia Bielefeld,SV Sandhausen,1,1,D
+2019-11-23,SV Wehen,Holstein Kiel,3,6,A
+2019-11-24,VfB Stuttgart,Karlsruher SC,3,0,H
+2019-11-24,Jahn Regensburg,FC Heidenheim,3,1,H
+2019-11-24,SpVgg Greuther Furth,FC Nurnberg,0,0,D
+2019-11-25,Hannover 96,SV Darmstadt 98,1,2,A
+2019-11-29,Karlsruher SC,Jahn Regensburg,4,1,H
+2019-11-29,VfL Osnabruck,Hamburger SV,2,1,H
+2019-11-30,FC Nurnberg,SV Wehen,0,2,A
+2019-11-30,Vfl Bochum,Erzgebirge AUE,2,0,H
+2019-11-30,Dynamo Dresden,Holstein Kiel,1,2,A
+2019-11-30,FC St. Pauli,Hannover 96,0,1,A
+2019-12-01,FC Heidenheim,SpVgg Greuther Furth,1,0,H
+2019-12-01,SV Darmstadt 98,Arminia Bielefeld,1,3,A
+2019-12-01,SV Sandhausen,VfB Stuttgart,2,1,H
+2019-12-06,Hamburger SV,FC Heidenheim,0,1,A
+2019-12-06,Arminia Bielefeld,Karlsruher SC,2,2,D
+2019-12-07,Hannover 96,Erzgebirge AUE,3,2,H
+2019-12-07,SpVgg Greuther Furth,Vfl Bochum,3,1,H
+2019-12-07,Holstein Kiel,VfL Osnabruck,2,4,A
+2019-12-08,Jahn Regensburg,FC St. Pauli,1,0,H
+2019-12-08,Dynamo Dresden,SV Sandhausen,1,1,D
+2019-12-08,SV Wehen,SV Darmstadt 98,0,0,D
+2019-12-09,VfB Stuttgart,FC Nurnberg,3,1,H
+2019-12-13,Vfl Bochum,Hannover 96,2,1,H
+2019-12-13,Erzgebirge AUE,Jahn Regensburg,1,0,H
+2019-12-14,FC Heidenheim,Arminia Bielefeld,0,0,D
+2019-12-14,FC St. Pauli,SV Wehen,3,1,H
+2019-12-14,Karlsruher SC,SpVgg Greuther Furth,1,5,A
+2019-12-15,FC Nurnberg,Holstein Kiel,2,2,D
+2019-12-15,SV Sandhausen,Hamburger SV,1,1,D
+2019-12-15,VfL Osnabruck,Dynamo Dresden,3,0,H
+2019-12-16,SV Darmstadt 98,VfB Stuttgart,1,1,D
+2019-12-20,FC Nurnberg,Dynamo Dresden,2,0,H
+2019-12-20,Karlsruher SC,SV Wehen,0,1,A
+2019-12-21,Hannover 96,VfB Stuttgart,2,2,D
+2019-12-21,SV Darmstadt 98,Hamburger SV,2,2,D
+2019-12-21,FC St. Pauli,Arminia Bielefeld,3,0,H
+2019-12-21,Erzgebirge AUE,SpVgg Greuther Furth,3,1,H
+2019-12-22,Vfl Bochum,Jahn Regensburg,2,3,A
+2019-12-22,FC Heidenheim,VfL Osnabruck,3,1,H
+2019-12-22,SV Sandhausen,Holstein Kiel,2,2,D
+2020-01-28,Arminia Bielefeld,Vfl Bochum,2,0,H
+2020-01-28,Jahn Regensburg,Hannover 96,1,0,H
+2020-01-28,SpVgg Greuther Furth,FC St. Pauli,3,0,H
+2020-01-28,SV Wehen,Erzgebirge AUE,1,0,H
+2020-01-29,VfB Stuttgart,FC Heidenheim,3,0,H
+2020-01-29,Dynamo Dresden,Karlsruher SC,1,0,H
+2020-01-29,Holstein Kiel,SV Darmstadt 98,1,1,D
+2020-01-29,VfL Osnabruck,SV Sandhausen,1,3,A
+2020-01-30,Hamburger SV,FC Nurnberg,4,1,H
+2020-01-31,Jahn Regensburg,SpVgg Greuther Furth,0,2,A
+2020-01-31,Erzgebirge AUE,Arminia Bielefeld,0,0,D
+2020-02-01,Hannover 96,SV Wehen,2,2,D
+2020-02-01,FC St. Pauli,VfB Stuttgart,1,1,D
+2020-02-01,Karlsruher SC,Holstein Kiel,0,2,A
+2020-02-02,FC Nurnberg,SV Sandhausen,2,0,H
+2020-02-02,FC Heidenheim,Dynamo Dresden,0,0,D
+2020-02-02,SV Darmstadt 98,VfL Osnabruck,2,2,D
+2020-02-03,Vfl Bochum,Hamburger SV,1,3,A
+2020-02-07,Dynamo Dresden,SV Darmstadt 98,2,3,A
+2020-02-07,SV Sandhausen,FC Heidenheim,0,1,A
+2020-02-08,VfB Stuttgart,Erzgebirge AUE,3,0,H
+2020-02-08,Hamburger SV,Karlsruher SC,2,0,H
+2020-02-08,VfL Osnabruck,FC Nurnberg,0,1,A
+2020-02-09,SpVgg Greuther Furth,Hannover 96,1,3,A
+2020-02-09,Arminia Bielefeld,Jahn Regensburg,6,0,H
+2020-02-09,SV Wehen,Vfl Bochum,0,1,A
+2020-02-10,Holstein Kiel,FC St. Pauli,2,1,H
+2020-02-14,FC Heidenheim,FC Nurnberg,2,2,D
+2020-02-14,FC St. Pauli,Dynamo Dresden,0,0,D
+2020-02-15,Hannover 96,Hamburger SV,1,1,D
+2020-02-15,Jahn Regensburg,SV Wehen,1,0,H
+2020-02-15,SpVgg Greuther Furth,Arminia Bielefeld,2,4,A
+2020-02-16,SV Darmstadt 98,SV Sandhausen,1,0,H
+2020-02-16,Erzgebirge AUE,Holstein Kiel,1,2,A
+2020-02-16,Karlsruher SC,VfL Osnabruck,1,1,D
+2020-02-17,Vfl Bochum,VfB Stuttgart,0,1,A
+2020-02-21,SV Wehen,SpVgg Greuther Furth,1,1,D
+2020-02-21,VfL Osnabruck,Erzgebirge AUE,0,0,D
+2020-02-22,VfB Stuttgart,Jahn Regensburg,2,0,H
+2020-02-22,Hamburger SV,FC St. Pauli,0,2,A
+2020-02-22,Dynamo Dresden,Vfl Bochum,1,2,A
+2020-02-22,Holstein Kiel,FC Heidenheim,0,1,A
+2020-02-23,FC Nurnberg,SV Darmstadt 98,1,2,A
+2020-02-23,SV Sandhausen,Karlsruher SC,0,2,A
+2020-02-23,Arminia Bielefeld,Hannover 96,1,0,H
+2020-02-28,Jahn Regensburg,Dynamo Dresden,1,2,A
+2020-02-28,Karlsruher SC,FC Nurnberg,0,1,A
+2020-02-29,SpVgg Greuther Furth,VfB Stuttgart,2,0,H
+2020-02-29,SV Darmstadt 98,FC Heidenheim,2,0,H
+2020-02-29,Erzgebirge AUE,Hamburger SV,3,0,H
+2020-03-01,Vfl Bochum,SV Sandhausen,4,4,D
+2020-03-01,FC St. Pauli,VfL Osnabruck,3,1,H
+2020-03-01,Arminia Bielefeld,SV Wehen,1,0,H
+2020-03-02,Hannover 96,Holstein Kiel,3,1,H
+2020-03-06,FC Nurnberg,Hannover 96,0,3,A
+2020-03-06,VfL Osnabruck,SV Wehen,2,6,A
+2020-03-07,Hamburger SV,Jahn Regensburg,2,1,H
+2020-03-07,FC Heidenheim,Karlsruher SC,3,1,H
+2020-03-07,SV Darmstadt 98,Vfl Bochum,0,0,D
+2020-03-08,Dynamo Dresden,Erzgebirge AUE,2,1,H
+2020-03-08,SV Sandhausen,FC St. Pauli,2,2,D
+2020-03-08,Holstein Kiel,SpVgg Greuther Furth,1,1,D
+2020-03-09,VfB Stuttgart,Arminia Bielefeld,1,1,D
+2020-05-16,Vfl Bochum,FC Heidenheim,3,0,H
+2020-05-16,Jahn Regensburg,Holstein Kiel,2,2,D
+2020-05-16,Erzgebirge AUE,SV Sandhausen,3,1,H
+2020-05-16,Karlsruher SC,SV Darmstadt 98,2,0,H
+2020-05-17,SpVgg Greuther Furth,Hamburger SV,2,2,D
+2020-05-17,FC St. Pauli,FC Nurnberg,1,0,H
+2020-05-17,Arminia Bielefeld,VfL Osnabruck,1,1,D
+2020-05-17,SV Wehen,VfB Stuttgart,2,1,H
+2020-05-22,FC Nurnberg,Erzgebirge AUE,1,1,D
+2020-05-22,FC Heidenheim,SV Wehen,1,0,H
+2020-05-23,SV Darmstadt 98,FC St. Pauli,4,0,H
+2020-05-23,SV Sandhausen,Jahn Regensburg,0,0,D
+2020-05-23,VfL Osnabruck,Hannover 96,2,4,A
+2020-05-24,Hamburger SV,Arminia Bielefeld,0,0,D
+2020-05-24,Holstein Kiel,VfB Stuttgart,3,2,H
+2020-05-24,Karlsruher SC,Vfl Bochum,0,0,D
+2020-05-26,Jahn Regensburg,FC Nurnberg,2,2,D
+2020-05-26,SpVgg Greuther Furth,VfL Osnabruck,0,2,A
+2020-05-26,Erzgebirge AUE,SV Darmstadt 98,1,3,A
+2020-05-26,SV Wehen,SV Sandhausen,0,1,A
+2020-05-27,Hannover 96,Karlsruher SC,1,1,D
+2020-05-27,Vfl Bochum,Holstein Kiel,2,1,H
+2020-05-27,FC St. Pauli,FC Heidenheim,0,0,D
+2020-05-28,VfB Stuttgart,Hamburger SV,3,2,H
+2020-05-29,SV Darmstadt 98,SpVgg Greuther Furth,1,1,D
+2020-05-29,VfL Osnabruck,Jahn Regensburg,2,2,D
+2020-05-30,FC Nurnberg,Vfl Bochum,0,0,D
+2020-05-30,SV Sandhausen,Hannover 96,3,1,H
+2020-05-30,Holstein Kiel,Arminia Bielefeld,1,2,A
+2020-05-30,Karlsruher SC,FC St. Pauli,1,1,D
+2020-05-31,Hamburger SV,SV Wehen,3,2,H
+2020-05-31,FC Heidenheim,Erzgebirge AUE,3,0,H
+2020-05-31,Dynamo Dresden,VfB Stuttgart,0,2,A
+2020-06-03,Hannover 96,Dynamo Dresden,3,0,H
+2020-06-05,Vfl Bochum,FC St. Pauli,2,0,H
+2020-06-05,SpVgg Greuther Furth,SV Sandhausen,1,2,A
+2020-06-06,Jahn Regensburg,SV Darmstadt 98,3,0,H
+2020-06-06,Arminia Bielefeld,FC Nurnberg,1,1,D
+2020-06-06,SV Wehen,Dynamo Dresden,2,3,A
+2020-06-07,Hannover 96,FC Heidenheim,2,1,H
+2020-06-07,VfB Stuttgart,VfL Osnabruck,0,0,D
+2020-06-07,Erzgebirge AUE,Karlsruher SC,1,0,H
+2020-06-08,Hamburger SV,Holstein Kiel,3,3,D
+2020-06-09,Dynamo Dresden,SpVgg Greuther Furth,1,1,D
+2020-06-12,Dynamo Dresden,Hamburger SV,0,1,A
+2020-06-12,SV Sandhausen,Arminia Bielefeld,0,0,D
+2020-06-13,FC Nurnberg,SpVgg Greuther Furth,0,1,A
+2020-06-13,FC Heidenheim,Jahn Regensburg,4,1,H
+2020-06-13,Holstein Kiel,SV Wehen,1,2,A
+2020-06-13,VfL Osnabruck,Vfl Bochum,0,2,A
+2020-06-14,SV Darmstadt 98,Hannover 96,3,2,H
+2020-06-14,FC St. Pauli,Erzgebirge AUE,2,1,H
+2020-06-14,Karlsruher SC,VfB Stuttgart,2,1,H
+2020-06-15,Arminia Bielefeld,Dynamo Dresden,4,0,H
+2020-06-16,Hamburger SV,VfL Osnabruck,1,1,D
+2020-06-16,SpVgg Greuther Furth,FC Heidenheim,0,0,D
+2020-06-16,SV Wehen,FC Nurnberg,0,6,A
+2020-06-17,Hannover 96,FC St. Pauli,4,0,H
+2020-06-17,Jahn Regensburg,Karlsruher SC,2,1,H
+2020-06-17,Erzgebirge AUE,Vfl Bochum,1,2,A
+2020-06-17,VfB Stuttgart,SV Sandhausen,5,1,H
+2020-06-18,Holstein Kiel,Dynamo Dresden,2,0,H
+2020-06-18,Arminia Bielefeld,SV Darmstadt 98,1,0,H
+2020-06-21,FC Nurnberg,VfB Stuttgart,0,6,A
+2020-06-21,Vfl Bochum,SpVgg Greuther Furth,2,2,D
+2020-06-21,FC Heidenheim,Hamburger SV,2,1,H
+2020-06-21,SV Darmstadt 98,SV Wehen,3,1,H
+2020-06-21,FC St. Pauli,Jahn Regensburg,1,1,D
+2020-06-21,SV Sandhausen,Dynamo Dresden,0,1,A
+2020-06-21,Erzgebirge AUE,Hannover 96,2,1,H
+2020-06-21,Karlsruher SC,Arminia Bielefeld,3,3,D
+2020-06-21,VfL Osnabruck,Holstein Kiel,4,1,H
+2020-06-28,Hannover 96,Vfl Bochum,2,0,H
+2020-06-28,VfB Stuttgart,SV Darmstadt 98,1,3,A
+2020-06-28,Hamburger SV,SV Sandhausen,1,5,A
+2020-06-28,Jahn Regensburg,Erzgebirge AUE,1,2,A
+2020-06-28,SpVgg Greuther Furth,Karlsruher SC,1,2,A
+2020-06-28,Dynamo Dresden,VfL Osnabruck,2,2,D
+2020-06-28,Arminia Bielefeld,FC Heidenheim,3,0,H
+2020-06-28,Holstein Kiel,FC Nurnberg,1,1,D
+2020-06-28,SV Wehen,FC St. Pauli,5,3,H
+2020-07-07,FC Nurnberg,FC Ingolstadt 04,2,0,H
+2020-07-11,FC Ingolstadt 04,FC Nurnberg,3,1,H

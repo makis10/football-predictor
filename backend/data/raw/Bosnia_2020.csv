@@ -1,0 +1,199 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2020-08-01,Sloboda Tuzla,Radnik Bijeljina,1,1,D
+2020-08-01,Borac Banja Luka,Mladost Doboj Kakanj,6,0,H
+2020-08-01,Zrinjski,Olimpik Sarajevo,1,0,H
+2020-08-01,Zeljeznicar Sarajevo,Velez,3,0,H
+2020-08-02,Krupa na Vrbasu,FK Sarajevo,0,2,A
+2020-08-02,Siroki Brijeg,Tuzla City,1,0,H
+2020-08-07,Radnik Bijeljina,Zeljeznicar Sarajevo,0,2,A
+2020-08-07,Borac Banja Luka,Sloboda Tuzla,2,0,H
+2020-08-08,Mladost Doboj Kakanj,FK Sarajevo,2,2,D
+2020-08-08,Olimpik Sarajevo,Siroki Brijeg,1,2,A
+2020-08-08,Velez,Zrinjski,2,0,H
+2020-08-08,Tuzla City,Krupa na Vrbasu,1,0,H
+2020-08-11,Zeljeznicar Sarajevo,Borac Banja Luka,2,1,H
+2020-08-11,Siroki Brijeg,Velez,2,2,D
+2020-08-12,FK Sarajevo,Tuzla City,1,0,H
+2020-08-12,Krupa na Vrbasu,Olimpik Sarajevo,1,0,H
+2020-08-12,Sloboda Tuzla,Mladost Doboj Kakanj,3,0,H
+2020-08-12,Zrinjski,Radnik Bijeljina,0,0,D
+2020-08-15,Mladost Doboj Kakanj,Tuzla City,2,5,A
+2020-08-15,Sloboda Tuzla,Zeljeznicar Sarajevo,0,2,A
+2020-08-15,Velez,Krupa na Vrbasu,2,0,H
+2020-08-16,Borac Banja Luka,Zrinjski,1,0,H
+2020-08-16,Radnik Bijeljina,Siroki Brijeg,1,1,D
+2020-08-21,Zeljeznicar Sarajevo,Mladost Doboj Kakanj,0,1,A
+2020-08-22,Siroki Brijeg,Borac Banja Luka,3,0,H
+2020-08-22,Zrinjski,Sloboda Tuzla,1,0,H
+2020-08-23,Krupa na Vrbasu,Radnik Bijeljina,1,1,D
+2020-08-23,Tuzla City,Olimpik Sarajevo,3,2,H
+2020-08-23,FK Sarajevo,Velez,1,1,D
+2020-08-29,Mladost Doboj Kakanj,Olimpik Sarajevo,1,0,H
+2020-08-29,Velez,Tuzla City,1,1,D
+2020-08-29,Sloboda Tuzla,Siroki Brijeg,3,0,H
+2020-08-31,Radnik Bijeljina,FK Sarajevo,0,2,A
+2020-08-31,Borac Banja Luka,Krupa na Vrbasu,3,1,H
+2020-09-11,FK Sarajevo,Borac Banja Luka,4,2,H
+2020-09-12,Olimpik Sarajevo,Velez,2,1,H
+2020-09-12,Zrinjski,Mladost Doboj Kakanj,2,0,H
+2020-09-13,Krupa na Vrbasu,Sloboda Tuzla,2,3,A
+2020-09-13,Siroki Brijeg,Zeljeznicar Sarajevo,0,1,A
+2020-09-13,Tuzla City,Radnik Bijeljina,1,0,H
+2020-09-16,Olimpik Sarajevo,FK Sarajevo,1,3,A
+2020-09-19,Mladost Doboj Kakanj,Velez,1,2,A
+2020-09-19,Radnik Bijeljina,Olimpik Sarajevo,4,0,H
+2020-09-19,Zeljeznicar Sarajevo,Krupa na Vrbasu,0,1,A
+2020-09-20,Sloboda Tuzla,FK Sarajevo,2,3,A
+2020-09-21,Borac Banja Luka,Tuzla City,2,0,H
+2020-09-26,Olimpik Sarajevo,Borac Banja Luka,1,4,A
+2020-09-26,Velez,Radnik Bijeljina,2,1,H
+2020-09-27,Tuzla City,Sloboda Tuzla,2,1,H
+2020-09-27,Siroki Brijeg,Mladost Doboj Kakanj,2,1,H
+2020-09-28,Krupa na Vrbasu,Zrinjski,0,3,A
+2020-10-03,Mladost Doboj Kakanj,Radnik Bijeljina,3,2,H
+2020-10-04,Sloboda Tuzla,Olimpik Sarajevo,2,0,H
+2020-10-04,Siroki Brijeg,Krupa na Vrbasu,1,0,H
+2020-10-04,Borac Banja Luka,Velez,2,0,H
+2020-10-05,Zrinjski,FK Sarajevo,2,3,A
+2020-10-05,Zeljeznicar Sarajevo,Tuzla City,1,0,H
+2020-10-16,Tuzla City,Zrinjski,0,4,A
+2020-10-16,Radnik Bijeljina,Borac Banja Luka,1,0,H
+2020-10-16,Velez,Sloboda Tuzla,3,0,H
+2020-10-17,Krupa na Vrbasu,Mladost Doboj Kakanj,0,1,A
+2020-10-17,Olimpik Sarajevo,Zeljeznicar Sarajevo,0,3,A
+2020-10-17,FK Sarajevo,Siroki Brijeg,2,0,H
+2020-10-24,Tuzla City,Siroki Brijeg,1,1,D
+2020-10-24,Olimpik Sarajevo,Zrinjski,3,0,H
+2020-10-24,Velez,Zeljeznicar Sarajevo,1,1,D
+2020-10-25,Mladost Doboj Kakanj,Borac Banja Luka,0,2,A
+2020-10-25,FK Sarajevo,Krupa na Vrbasu,3,0,H
+2020-10-25,Radnik Bijeljina,Sloboda Tuzla,1,1,D
+2020-10-28,Zeljeznicar Sarajevo,Zrinjski,1,0,H
+2020-10-30,FK Sarajevo,Mladost Doboj Kakanj,5,1,H
+2020-10-31,Krupa na Vrbasu,Tuzla City,0,1,A
+2020-10-31,Zrinjski,Velez,3,1,H
+2020-10-31,Siroki Brijeg,Olimpik Sarajevo,1,0,H
+2020-10-31,Zeljeznicar Sarajevo,Radnik Bijeljina,3,1,H
+2020-11-01,Sloboda Tuzla,Borac Banja Luka,1,0,H
+2020-11-04,Zrinjski,Siroki Brijeg,2,1,H
+2020-11-04,FK Sarajevo,Zeljeznicar Sarajevo,1,1,D
+2020-11-07,Mladost Doboj Kakanj,Sloboda Tuzla,2,0,H
+2020-11-07,Olimpik Sarajevo,Krupa na Vrbasu,1,1,D
+2020-11-08,Tuzla City,FK Sarajevo,0,0,D
+2020-11-08,Velez,Siroki Brijeg,2,1,H
+2020-11-08,Radnik Bijeljina,Zrinjski,0,2,A
+2020-11-09,Borac Banja Luka,Zeljeznicar Sarajevo,4,3,H
+2020-11-21,Tuzla City,Mladost Doboj Kakanj,1,0,H
+2020-11-21,Zeljeznicar Sarajevo,Sloboda Tuzla,2,2,D
+2020-11-21,Zrinjski,Borac Banja Luka,2,1,H
+2020-11-22,Krupa na Vrbasu,Velez,1,1,D
+2020-11-22,FK Sarajevo,Olimpik Sarajevo,2,0,H
+2020-11-22,Siroki Brijeg,Radnik Bijeljina,5,0,H
+2020-11-27,Mladost Doboj Kakanj,Zeljeznicar Sarajevo,0,4,A
+2020-11-28,Sloboda Tuzla,Zrinjski,0,0,D
+2020-11-28,Olimpik Sarajevo,Tuzla City,3,2,H
+2020-11-28,Velez,FK Sarajevo,0,0,D
+2020-11-28,Borac Banja Luka,Siroki Brijeg,1,1,D
+2020-11-29,Radnik Bijeljina,Krupa na Vrbasu,1,1,D
+2020-12-01,Tuzla City,Velez,1,3,A
+2020-12-01,Siroki Brijeg,Sloboda Tuzla,3,0,H
+2020-12-02,Krupa na Vrbasu,Borac Banja Luka,1,3,A
+2020-12-02,Olimpik Sarajevo,Mladost Doboj Kakanj,0,2,A
+2020-12-02,Zrinjski,Zeljeznicar Sarajevo,1,2,A
+2020-12-02,FK Sarajevo,Radnik Bijeljina,2,1,H
+2020-12-05,Radnik Bijeljina,Tuzla City,2,1,H
+2020-12-05,Velez,Olimpik Sarajevo,2,0,H
+2020-12-06,Mladost Doboj Kakanj,Zrinjski,0,1,A
+2020-12-06,Sloboda Tuzla,Krupa na Vrbasu,2,0,H
+2020-12-06,Zeljeznicar Sarajevo,Siroki Brijeg,2,3,A
+2020-12-06,Borac Banja Luka,FK Sarajevo,2,2,D
+2020-12-12,Krupa na Vrbasu,Zeljeznicar Sarajevo,2,1,H
+2020-12-12,Olimpik Sarajevo,Radnik Bijeljina,1,0,H
+2020-12-12,FK Sarajevo,Sloboda Tuzla,2,1,H
+2020-12-13,Tuzla City,Borac Banja Luka,2,0,H
+2020-12-13,Velez,Mladost Doboj Kakanj,4,0,H
+2020-12-13,Siroki Brijeg,Zrinjski,2,1,H
+2021-02-27,Radnik Bijeljina,Velez,0,0,D
+2021-02-27,Borac Banja Luka,Olimpik Sarajevo,2,0,H
+2021-02-27,Zrinjski,Krupa na Vrbasu,1,0,H
+2021-02-28,Mladost Doboj Kakanj,Siroki Brijeg,0,1,A
+2021-02-28,Sloboda Tuzla,Tuzla City,0,2,A
+2021-03-01,Zeljeznicar Sarajevo,FK Sarajevo,0,0,D
+2021-03-05,Velez,Borac Banja Luka,2,0,H
+2021-03-06,Krupa na Vrbasu,Siroki Brijeg,1,1,D
+2021-03-06,Tuzla City,Zeljeznicar Sarajevo,2,0,H
+2021-03-06,FK Sarajevo,Zrinjski,0,1,A
+2021-03-07,Radnik Bijeljina,Mladost Doboj Kakanj,3,1,H
+2021-03-08,Olimpik Sarajevo,Sloboda Tuzla,2,0,H
+2021-03-13,Mladost Doboj Kakanj,Krupa na Vrbasu,1,0,H
+2021-03-13,Sloboda Tuzla,Velez,1,2,A
+2021-03-14,Zrinjski,Tuzla City,1,2,A
+2021-03-14,Siroki Brijeg,FK Sarajevo,1,0,H
+2021-03-15,Zeljeznicar Sarajevo,Olimpik Sarajevo,0,1,A
+2021-03-15,Borac Banja Luka,Radnik Bijeljina,2,0,H
+2021-03-20,Borac Banja Luka,Mladost Doboj Kakanj,1,0,H
+2021-03-20,Velez,Radnik Bijeljina,2,2,D
+2021-03-20,Zrinjski,Sloboda Tuzla,3,1,H
+2021-03-21,FK Sarajevo,Krupa na Vrbasu,1,0,H
+2021-03-21,Siroki Brijeg,Olimpik Sarajevo,3,0,H
+2021-03-21,Zeljeznicar Sarajevo,Tuzla City,0,0,D
+2021-04-02,Mladost Doboj Kakanj,Zrinjski,1,1,D
+2021-04-02,Radnik Bijeljina,Borac Banja Luka,1,3,A
+2021-04-03,Krupa na Vrbasu,Tuzla City,1,1,D
+2021-04-03,Sloboda Tuzla,Zeljeznicar Sarajevo,1,0,H
+2021-04-03,FK Sarajevo,Siroki Brijeg,1,0,H
+2021-04-05,Olimpik Sarajevo,Velez,1,1,D
+2021-04-10,Zeljeznicar Sarajevo,Mladost Doboj Kakanj,4,4,D
+2021-04-10,Zrinjski,Radnik Bijeljina,3,0,H
+2021-04-11,Tuzla City,Sloboda Tuzla,1,0,H
+2021-04-11,Siroki Brijeg,Krupa na Vrbasu,2,2,D
+2021-04-11,Borac Banja Luka,Olimpik Sarajevo,3,0,H
+2021-04-12,Velez,FK Sarajevo,1,0,H
+2021-04-17,Krupa na Vrbasu,Sloboda Tuzla,1,0,H
+2021-04-17,Mladost Doboj Kakanj,Tuzla City,2,0,H
+2021-04-17,FK Sarajevo,Borac Banja Luka,0,2,A
+2021-04-18,Olimpik Sarajevo,Zrinjski,0,3,A
+2021-04-18,Radnik Bijeljina,Zeljeznicar Sarajevo,1,1,D
+2021-04-18,Siroki Brijeg,Velez,0,2,A
+2021-04-24,Sloboda Tuzla,Mladost Doboj Kakanj,1,0,H
+2021-04-24,Velez,Krupa na Vrbasu,2,1,H
+2021-04-24,Zrinjski,FK Sarajevo,1,1,D
+2021-04-25,Tuzla City,Radnik Bijeljina,2,0,H
+2021-04-25,Zeljeznicar Sarajevo,Olimpik Sarajevo,1,2,A
+2021-04-25,Borac Banja Luka,Siroki Brijeg,2,1,H
+2021-04-30,Radnik Bijeljina,Sloboda Tuzla,1,2,A
+2021-04-30,Velez,Borac Banja Luka,1,1,D
+2021-05-01,Krupa na Vrbasu,Mladost Doboj Kakanj,3,0,H
+2021-05-01,FK Sarajevo,Zeljeznicar Sarajevo,3,1,H
+2021-05-01,Siroki Brijeg,Zrinjski,1,0,H
+2021-05-03,Olimpik Sarajevo,Tuzla City,1,1,D
+2021-05-07,Tuzla City,FK Sarajevo,1,1,D
+2021-05-07,Zeljeznicar Sarajevo,Siroki Brijeg,1,3,A
+2021-05-08,Mladost Doboj Kakanj,Radnik Bijeljina,0,0,D
+2021-05-08,Sloboda Tuzla,Olimpik Sarajevo,2,0,H
+2021-05-08,Borac Banja Luka,Krupa na Vrbasu,1,0,H
+2021-05-08,Zrinjski,Velez,1,1,D
+2021-05-11,FK Sarajevo,Sloboda Tuzla,0,0,D
+2021-05-11,Borac Banja Luka,Zrinjski,2,1,H
+2021-05-12,Krupa na Vrbasu,Radnik Bijeljina,1,0,H
+2021-05-12,Olimpik Sarajevo,Mladost Doboj Kakanj,0,0,D
+2021-05-12,Siroki Brijeg,Tuzla City,0,0,D
+2021-05-12,Velez,Zeljeznicar Sarajevo,2,2,D
+2021-05-16,Zrinjski,Krupa na Vrbasu,3,1,H
+2021-05-16,Zeljeznicar Sarajevo,Borac Banja Luka,1,2,A
+2021-05-16,Mladost Doboj Kakanj,FK Sarajevo,0,0,D
+2021-05-16,Radnik Bijeljina,Olimpik Sarajevo,1,0,H
+2021-05-16,Sloboda Tuzla,Siroki Brijeg,1,1,D
+2021-05-16,Tuzla City,Velez,1,1,D
+2021-05-23,Zrinjski,Zeljeznicar Sarajevo,4,2,H
+2021-05-23,Siroki Brijeg,Mladost Doboj Kakanj,1,0,H
+2021-05-23,FK Sarajevo,Radnik Bijeljina,3,0,H
+2021-05-23,Krupa na Vrbasu,Olimpik Sarajevo,3,0,H
+2021-05-23,Borac Banja Luka,Tuzla City,2,0,H
+2021-05-23,Velez,Sloboda Tuzla,2,0,H
+2021-05-30,Zeljeznicar Sarajevo,Krupa na Vrbasu,3,0,H
+2021-05-30,Mladost Doboj Kakanj,Velez,0,1,A
+2021-05-30,Radnik Bijeljina,Siroki Brijeg,0,2,A
+2021-05-30,Sloboda Tuzla,Borac Banja Luka,0,0,D
+2021-05-30,Tuzla City,Zrinjski,1,2,A
+2021-05-30,Olimpik Sarajevo,FK Sarajevo,0,3,A

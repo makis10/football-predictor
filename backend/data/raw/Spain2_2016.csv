@@ -1,0 +1,469 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2016-08-19,Mirandes,Getafe,1,1,D
+2016-08-19,Almeria,Cadiz,1,1,D
+2016-08-20,Alcorcon,Huesca,0,0,D
+2016-08-20,Elche,Rayo Vallecano,2,1,H
+2016-08-20,Mallorca,Reus,0,1,A
+2016-08-20,Cordoba,Tenerife,1,0,H
+2016-08-21,Gimnastic,Lugo,2,2,D
+2016-08-21,Numancia,Levante,0,1,A
+2016-08-21,Sevilla Atletico,Girona,3,3,D
+2016-08-21,Valladolid,Oviedo,1,0,H
+2016-08-22,Zaragoza,Ucam Murcia,3,1,H
+2016-08-26,Getafe,Numancia,0,0,D
+2016-08-26,Tenerife,Sevilla Atletico,1,1,D
+2016-08-27,Girona,Elche,3,1,H
+2016-08-27,Oviedo,Almeria,2,0,H
+2016-08-27,Reus,Mirandes,1,1,D
+2016-08-27,Lugo,Zaragoza,3,3,D
+2016-08-28,Levante,Alcorcon,2,0,H
+2016-08-28,Huesca,Gimnastic,1,1,D
+2016-08-28,Ucam Murcia,Cordoba,1,1,D
+2016-08-28,Rayo Vallecano,Valladolid,0,0,D
+2016-08-28,Cadiz,Mallorca,1,1,D
+2016-09-02,Sevilla Atletico,Ucam Murcia,1,1,D
+2016-09-02,Cordoba,Lugo,3,3,D
+2016-09-03,Mirandes,Cadiz,3,2,H
+2016-09-03,Getafe,Reus,1,1,D
+2016-09-03,Valladolid,Girona,2,1,H
+2016-09-03,Almeria,Rayo Vallecano,3,0,H
+2016-09-03,Elche,Tenerife,3,1,H
+2016-09-04,Numancia,Alcorcon,1,1,D
+2016-09-04,Gimnastic,Levante,1,1,D
+2016-09-04,Mallorca,Oviedo,0,0,D
+2016-09-04,Zaragoza,Huesca,1,0,H
+2016-09-10,Lugo,Sevilla Atletico,1,0,H
+2016-09-10,Tenerife,Valladolid,1,0,H
+2016-09-10,Reus,Numancia,1,1,D
+2016-09-10,Levante,Zaragoza,4,2,H
+2016-09-11,Rayo Vallecano,Mallorca,1,0,H
+2016-09-11,Oviedo,Mirandes,0,0,D
+2016-09-11,Alcorcon,Gimnastic,1,0,H
+2016-09-11,Cadiz,Getafe,3,0,H
+2016-09-11,Huesca,Cordoba,3,0,H
+2016-09-11,Ucam Murcia,Elche,1,1,D
+2016-09-11,Girona,Almeria,3,3,D
+2016-09-17,Numancia,Gimnastic,1,0,H
+2016-09-17,Cordoba,Levante,1,0,H
+2016-09-17,Valladolid,Ucam Murcia,0,1,A
+2016-09-17,Reus,Cadiz,1,0,H
+2016-09-17,Elche,Lugo,0,3,A
+2016-09-17,Zaragoza,Alcorcon,2,0,H
+2016-09-18,Almeria,Tenerife,0,1,A
+2016-09-18,Mirandes,Rayo Vallecano,2,1,H
+2016-09-18,Getafe,Oviedo,2,1,H
+2016-09-18,Sevilla Atletico,Huesca,2,0,H
+2016-09-18,Mallorca,Girona,1,0,H
+2016-09-20,Alcorcon,Cordoba,0,1,A
+2016-09-20,Lugo,Valladolid,1,0,H
+2016-09-20,Gimnastic,Zaragoza,0,0,D
+2016-09-20,Cadiz,Numancia,1,0,H
+2016-09-21,Levante,Sevilla Atletico,1,0,H
+2016-09-21,Huesca,Elche,0,3,A
+2016-09-21,Ucam Murcia,Almeria,4,0,H
+2016-09-22,Girona,Mirandes,1,1,D
+2016-09-22,Oviedo,Reus,0,1,A
+2016-09-22,Rayo Vallecano,Getafe,2,0,H
+2016-09-22,Tenerife,Mallorca,0,0,D
+2016-09-24,Sevilla Atletico,Alcorcon,1,1,D
+2016-09-24,Cordoba,Gimnastic,2,0,H
+2016-09-24,Valladolid,Huesca,1,2,A
+2016-09-24,Almeria,Lugo,0,0,D
+2016-09-24,Elche,Levante,0,1,A
+2016-09-25,Cadiz,Oviedo,0,2,A
+2016-09-25,Mirandes,Tenerife,3,2,H
+2016-09-25,Getafe,Girona,0,2,A
+2016-09-25,Numancia,Zaragoza,2,1,H
+2016-09-25,Mallorca,Ucam Murcia,0,0,D
+2016-09-25,Reus,Rayo Vallecano,1,1,D
+2016-10-01,Huesca,Almeria,2,0,H
+2016-10-01,Alcorcon,Elche,1,0,H
+2016-10-01,Gimnastic,Sevilla Atletico,1,1,D
+2016-10-01,Lugo,Mallorca,3,1,H
+2016-10-01,Zaragoza,Cordoba,1,1,D
+2016-10-02,Ucam Murcia,Mirandes,2,2,D
+2016-10-02,Girona,Reus,1,0,H
+2016-10-02,Levante,Valladolid,3,2,H
+2016-10-02,Oviedo,Numancia,2,2,D
+2016-10-02,Tenerife,Getafe,0,0,D
+2016-10-02,Rayo Vallecano,Cadiz,3,0,H
+2016-10-08,Reus,Tenerife,0,0,D
+2016-10-08,Getafe,Ucam Murcia,2,0,H
+2016-10-08,Numancia,Cordoba,1,1,D
+2016-10-08,Valladolid,Alcorcon,2,0,H
+2016-10-08,Elche,Gimnastic,4,4,D
+2016-10-08,Sevilla Atletico,Zaragoza,2,1,H
+2016-10-09,Oviedo,Rayo Vallecano,2,0,H
+2016-10-09,Mirandes,Lugo,2,2,D
+2016-10-09,Almeria,Levante,2,2,D
+2016-10-09,Cadiz,Girona,0,0,D
+2016-10-09,Mallorca,Huesca,3,0,H
+2016-10-15,Lugo,Getafe,0,1,A
+2016-10-15,Girona,Oviedo,0,0,D
+2016-10-15,Alcorcon,Almeria,0,0,D
+2016-10-15,Huesca,Mirandes,3,0,H
+2016-10-15,Levante,Mallorca,2,1,H
+2016-10-16,Zaragoza,Elche,1,3,A
+2016-10-16,Cordoba,Sevilla Atletico,0,1,A
+2016-10-16,Gimnastic,Valladolid,1,2,A
+2016-10-16,Rayo Vallecano,Numancia,3,3,D
+2016-10-16,Ucam Murcia,Reus,0,2,A
+2016-10-16,Tenerife,Cadiz,1,1,D
+2016-10-22,Elche,Cordoba,1,1,D
+2016-10-22,Getafe,Huesca,1,1,D
+2016-10-22,Numancia,Sevilla Atletico,1,2,A
+2016-10-22,Reus,Lugo,2,1,H
+2016-10-22,Rayo Vallecano,Girona,1,0,H
+2016-10-23,Valladolid,Zaragoza,0,0,D
+2016-10-23,Mallorca,Alcorcon,1,0,H
+2016-10-23,Almeria,Gimnastic,3,0,H
+2016-10-23,Cadiz,Ucam Murcia,2,2,D
+2016-10-23,Mirandes,Levante,0,3,A
+2016-10-23,Oviedo,Tenerife,2,0,H
+2016-10-29,Huesca,Reus,2,1,H
+2016-10-29,Tenerife,Rayo Vallecano,3,2,H
+2016-10-29,Zaragoza,Almeria,2,1,H
+2016-10-29,Cordoba,Valladolid,1,1,D
+2016-10-30,Girona,Numancia,3,0,H
+2016-10-30,Sevilla Atletico,Elche,2,0,H
+2016-10-30,Lugo,Cadiz,0,1,A
+2016-10-30,Alcorcon,Mirandes,1,0,H
+2016-10-30,Gimnastic,Mallorca,2,2,D
+2016-10-30,Ucam Murcia,Oviedo,0,1,A
+2016-10-30,Levante,Getafe,1,1,D
+2016-11-05,Cadiz,Huesca,1,0,H
+2016-11-05,Girona,Tenerife,1,1,D
+2016-11-05,Valladolid,Sevilla Atletico,2,0,H
+2016-11-05,Rayo Vallecano,Ucam Murcia,0,1,A
+2016-11-05,Mallorca,Zaragoza,2,2,D
+2016-11-06,Mirandes,Gimnastic,0,1,A
+2016-11-06,Numancia,Elche,2,2,D
+2016-11-06,Getafe,Alcorcon,1,0,H
+2016-11-06,Oviedo,Lugo,1,1,D
+2016-11-06,Almeria,Cordoba,3,1,H
+2016-11-06,Reus,Levante,0,1,A
+2016-11-11,Cordoba,Mallorca,0,2,A
+2016-11-12,Elche,Valladolid,2,0,H
+2016-11-12,Gimnastic,Getafe,1,0,H
+2016-11-12,Huesca,Oviedo,4,0,H
+2016-11-12,Alcorcon,Reus,1,0,H
+2016-11-12,Tenerife,Numancia,1,1,D
+2016-11-12,Levante,Cadiz,0,0,D
+2016-11-13,Lugo,Rayo Vallecano,1,0,H
+2016-11-13,Sevilla Atletico,Almeria,1,0,H
+2016-11-13,Ucam Murcia,Girona,0,1,A
+2016-11-13,Zaragoza,Mirandes,2,0,H
+2016-11-18,Almeria,Elche,2,1,H
+2016-11-19,Numancia,Valladolid,2,1,H
+2016-11-19,Oviedo,Levante,2,0,H
+2016-11-19,Mallorca,Sevilla Atletico,2,2,D
+2016-11-19,Girona,Lugo,3,1,H
+2016-11-20,Reus,Gimnastic,1,0,H
+2016-11-20,Getafe,Zaragoza,1,0,H
+2016-11-20,Tenerife,Ucam Murcia,2,1,H
+2016-11-20,Cadiz,Alcorcon,4,1,H
+2016-11-20,Rayo Vallecano,Huesca,2,2,D
+2016-11-20,Mirandes,Cordoba,1,1,D
+2016-11-25,Gimnastic,Cadiz,1,0,H
+2016-11-26,Lugo,Tenerife,1,3,A
+2016-11-26,Alcorcon,Oviedo,5,1,H
+2016-11-26,Valladolid,Almeria,0,0,D
+2016-11-26,Ucam Murcia,Numancia,3,2,H
+2016-11-26,Zaragoza,Reus,2,2,D
+2016-11-27,Elche,Mallorca,1,0,H
+2016-11-27,Huesca,Girona,1,2,A
+2016-11-27,Cordoba,Getafe,1,3,A
+2016-11-27,Sevilla Atletico,Mirandes,1,0,H
+2016-12-02,Getafe,Sevilla Atletico,2,0,H
+2016-12-03,Numancia,Almeria,1,0,H
+2016-12-03,Mirandes,Elche,1,0,H
+2016-12-03,Ucam Murcia,Lugo,1,2,A
+2016-12-03,Cadiz,Zaragoza,3,0,H
+2016-12-04,Girona,Levante,2,1,H
+2016-12-04,Rayo Vallecano,Alcorcon,2,0,H
+2016-12-04,Oviedo,Gimnastic,1,0,H
+2016-12-04,Tenerife,Huesca,1,1,D
+2016-12-04,Mallorca,Valladolid,0,3,A
+2016-12-04,Reus,Cordoba,1,2,A
+2016-12-09,Sevilla Atletico,Reus,0,1,A
+2016-12-10,Gimnastic,Rayo Vallecano,0,1,A
+2016-12-10,Huesca,Ucam Murcia,5,2,H
+2016-12-10,Elche,Getafe,2,2,D
+2016-12-10,Levante,Tenerife,1,0,H
+2016-12-11,Almeria,Mallorca,2,1,H
+2016-12-11,Cordoba,Cadiz,1,3,A
+2016-12-11,Alcorcon,Girona,2,1,H
+2016-12-11,Lugo,Numancia,3,1,H
+2016-12-11,Valladolid,Mirandes,5,0,H
+2016-12-11,Zaragoza,Oviedo,2,1,H
+2016-12-14,Levante,Rayo Vallecano,1,0,H
+2016-12-16,Reus,Elche,0,1,A
+2016-12-17,Getafe,Valladolid,3,1,H
+2016-12-17,Lugo,Huesca,1,1,D
+2016-12-17,Oviedo,Cordoba,1,2,A
+2016-12-17,Tenerife,Alcorcon,2,0,H
+2016-12-17,Girona,Gimnastic,4,2,H
+2016-12-18,Numancia,Mallorca,3,1,H
+2016-12-18,Rayo Vallecano,Zaragoza,1,2,A
+2016-12-18,Mirandes,Almeria,2,1,H
+2016-12-18,Cadiz,Sevilla Atletico,4,1,H
+2017-01-06,Valladolid,Reus,1,0,H
+2017-01-06,Almeria,Getafe,0,1,A
+2017-01-06,Numancia,Huesca,0,0,D
+2017-01-06,Mallorca,Mirandes,2,0,H
+2017-01-07,Levante,Lugo,1,0,H
+2017-01-07,Cordoba,Rayo Vallecano,0,0,D
+2017-01-08,Alcorcon,Ucam Murcia,0,0,D
+2017-01-08,Gimnastic,Tenerife,1,1,D
+2017-01-08,Zaragoza,Girona,0,2,A
+2017-01-08,Elche,Cadiz,2,3,A
+2017-01-08,Sevilla Atletico,Oviedo,5,3,H
+2017-01-11,Ucam Murcia,Levante,0,2,A
+2017-01-13,Cadiz,Valladolid,0,1,A
+2017-01-14,Rayo Vallecano,Sevilla Atletico,1,1,D
+2017-01-14,Oviedo,Elche,2,1,H
+2017-01-14,Mirandes,Numancia,0,3,A
+2017-01-14,Ucam Murcia,Gimnastic,1,1,D
+2017-01-14,Tenerife,Zaragoza,1,0,H
+2017-01-15,Getafe,Mallorca,1,1,D
+2017-01-15,Reus,Almeria,1,0,H
+2017-01-15,Lugo,Alcorcon,1,0,H
+2017-01-15,Huesca,Levante,0,2,A
+2017-01-15,Girona,Cordoba,2,0,H
+2017-01-21,Oviedo,Valladolid,1,0,H
+2017-01-21,Lugo,Gimnastic,2,3,A
+2017-01-21,Tenerife,Cordoba,2,0,H
+2017-01-21,Huesca,Alcorcon,0,1,A
+2017-01-21,Rayo Vallecano,Elche,1,1,D
+2017-01-21,Ucam Murcia,Zaragoza,1,0,H
+2017-01-22,Levante,Numancia,1,0,H
+2017-01-22,Reus,Mallorca,1,1,D
+2017-01-22,Getafe,Mirandes,1,1,D
+2017-01-22,Girona,Sevilla Atletico,2,0,H
+2017-01-22,Cadiz,Almeria,1,0,H
+2017-01-27,Elche,Girona,1,0,H
+2017-01-28,Sevilla Atletico,Tenerife,0,0,D
+2017-01-28,Alcorcon,Levante,2,0,H
+2017-01-28,Gimnastic,Huesca,0,0,D
+2017-01-28,Mirandes,Reus,1,1,D
+2017-01-28,Valladolid,Rayo Vallecano,2,1,H
+2017-01-29,Numancia,Getafe,2,0,H
+2017-01-29,Cordoba,Ucam Murcia,1,1,D
+2017-01-29,Almeria,Oviedo,3,0,H
+2017-01-29,Mallorca,Cadiz,0,0,D
+2017-01-29,Zaragoza,Lugo,1,1,D
+2017-02-03,Ucam Murcia,Sevilla Atletico,1,0,H
+2017-02-04,Alcorcon,Numancia,2,3,A
+2017-02-04,Lugo,Cordoba,1,0,H
+2017-02-04,Tenerife,Elche,2,0,H
+2017-02-04,Cadiz,Mirandes,2,1,H
+2017-02-04,Huesca,Zaragoza,2,3,A
+2017-02-05,Oviedo,Mallorca,2,1,H
+2017-02-05,Rayo Vallecano,Almeria,1,0,H
+2017-02-05,Levante,Gimnastic,2,1,H
+2017-02-05,Reus,Getafe,1,1,D
+2017-02-05,Girona,Valladolid,2,1,H
+2017-02-10,Sevilla Atletico,Lugo,1,1,D
+2017-02-11,Almeria,Girona,0,0,D
+2017-02-11,Gimnastic,Alcorcon,1,1,D
+2017-02-11,Zaragoza,Levante,0,1,A
+2017-02-11,Getafe,Cadiz,3,2,H
+2017-02-12,Cordoba,Huesca,0,2,A
+2017-02-12,Valladolid,Tenerife,0,0,D
+2017-02-12,Numancia,Reus,1,0,H
+2017-02-12,Elche,Ucam Murcia,1,1,D
+2017-02-12,Mirandes,Oviedo,0,2,A
+2017-02-12,Mallorca,Rayo Vallecano,2,1,H
+2017-02-17,Lugo,Elche,1,2,A
+2017-02-18,Ucam Murcia,Valladolid,1,3,A
+2017-02-18,Levante,Cordoba,3,1,H
+2017-02-18,Gimnastic,Numancia,2,0,H
+2017-02-18,Tenerife,Almeria,1,0,H
+2017-02-18,Girona,Mallorca,1,0,H
+2017-02-19,Huesca,Sevilla Atletico,2,1,H
+2017-02-19,Cadiz,Reus,0,0,D
+2017-02-19,Oviedo,Getafe,2,1,H
+2017-02-19,Rayo Vallecano,Mirandes,1,2,A
+2017-02-19,Alcorcon,Zaragoza,1,1,D
+2017-02-24,Reus,Oviedo,1,1,D
+2017-02-25,Cordoba,Alcorcon,1,0,H
+2017-02-25,Elche,Huesca,1,1,D
+2017-02-25,Mallorca,Tenerife,1,4,A
+2017-02-25,Mirandes,Girona,0,2,A
+2017-02-25,Getafe,Rayo Vallecano,1,0,H
+2017-02-26,Numancia,Cadiz,0,3,A
+2017-02-26,Almeria,Ucam Murcia,2,3,A
+2017-02-26,Valladolid,Lugo,1,1,D
+2017-02-26,Sevilla Atletico,Levante,1,1,D
+2017-02-26,Zaragoza,Gimnastic,1,2,A
+2017-03-03,Tenerife,Mirandes,1,1,D
+2017-03-04,Alcorcon,Sevilla Atletico,0,0,D
+2017-03-04,Girona,Getafe,5,1,H
+2017-03-04,Rayo Vallecano,Reus,0,0,D
+2017-03-04,Oviedo,Cadiz,2,1,H
+2017-03-05,Ucam Murcia,Mallorca,1,1,D
+2017-03-05,Huesca,Valladolid,1,0,H
+2017-03-05,Levante,Elche,2,1,H
+2017-03-05,Gimnastic,Cordoba,2,1,H
+2017-03-05,Lugo,Almeria,1,2,A
+2017-03-05,Zaragoza,Numancia,3,0,H
+2017-03-10,Elche,Alcorcon,0,0,D
+2017-03-11,Mallorca,Lugo,1,1,D
+2017-03-11,Numancia,Oviedo,0,0,D
+2017-03-11,Valladolid,Levante,0,4,A
+2017-03-11,Mirandes,Ucam Murcia,1,1,D
+2017-03-11,Cordoba,Zaragoza,2,1,H
+2017-03-12,Almeria,Huesca,0,0,D
+2017-03-12,Sevilla Atletico,Gimnastic,2,2,D
+2017-03-12,Cadiz,Rayo Vallecano,1,0,H
+2017-03-12,Reus,Girona,1,2,A
+2017-03-12,Getafe,Tenerife,2,2,D
+2017-03-17,Gimnastic,Elche,1,3,A
+2017-03-18,Cordoba,Numancia,0,0,D
+2017-03-18,Lugo,Mirandes,2,1,H
+2017-03-18,Huesca,Mallorca,2,1,H
+2017-03-18,Ucam Murcia,Getafe,2,0,H
+2017-03-18,Zaragoza,Sevilla Atletico,1,2,A
+2017-03-19,Levante,Almeria,1,0,H
+2017-03-19,Alcorcon,Valladolid,1,2,A
+2017-03-19,Tenerife,Reus,0,1,A
+2017-03-19,Girona,Cadiz,1,2,A
+2017-03-19,Rayo Vallecano,Oviedo,2,0,H
+2017-03-25,Valladolid,Gimnastic,1,2,A
+2017-03-25,Numancia,Rayo Vallecano,0,0,D
+2017-03-25,Almeria,Alcorcon,3,1,H
+2017-03-25,Mallorca,Levante,1,1,D
+2017-03-25,Oviedo,Girona,2,0,H
+2017-03-26,Getafe,Lugo,2,0,H
+2017-03-26,Cadiz,Tenerife,0,1,A
+2017-03-26,Reus,Ucam Murcia,0,0,D
+2017-03-26,Sevilla Atletico,Cordoba,1,0,H
+2017-03-26,Mirandes,Huesca,1,3,A
+2017-03-26,Elche,Zaragoza,0,3,A
+2017-03-31,Alcorcon,Mallorca,1,0,H
+2017-04-01,Levante,Mirandes,2,1,H
+2017-04-01,Huesca,Getafe,0,0,D
+2017-04-01,Ucam Murcia,Cadiz,1,1,D
+2017-04-01,Girona,Rayo Vallecano,1,3,A
+2017-04-02,Gimnastic,Almeria,0,1,A
+2017-04-02,Lugo,Reus,1,0,H
+2017-04-02,Cordoba,Elche,1,0,H
+2017-04-02,Tenerife,Oviedo,1,0,H
+2017-04-02,Zaragoza,Valladolid,1,1,D
+2017-04-03,Sevilla Atletico,Numancia,1,1,D
+2017-04-07,Mirandes,Alcorcon,2,0,H
+2017-04-08,Mallorca,Gimnastic,0,0,D
+2017-04-08,Getafe,Levante,2,0,H
+2017-04-08,Cadiz,Lugo,1,1,D
+2017-04-08,Rayo Vallecano,Tenerife,1,1,D
+2017-04-09,Valladolid,Cordoba,2,1,H
+2017-04-09,Elche,Sevilla Atletico,3,2,H
+2017-04-09,Numancia,Girona,0,2,A
+2017-04-09,Oviedo,Ucam Murcia,2,0,H
+2017-04-09,Reus,Huesca,0,1,A
+2017-04-09,Almeria,Zaragoza,2,2,D
+2017-04-15,Elche,Numancia,1,3,A
+2017-04-15,Gimnastic,Mirandes,4,1,H
+2017-04-15,Tenerife,Girona,3,3,D
+2017-04-15,Huesca,Cadiz,1,1,D
+2017-04-16,Sevilla Atletico,Valladolid,6,2,H
+2017-04-16,Alcorcon,Getafe,0,3,A
+2017-04-16,Cordoba,Almeria,1,0,H
+2017-04-16,Lugo,Oviedo,2,1,H
+2017-04-16,Ucam Murcia,Rayo Vallecano,0,1,A
+2017-04-16,Zaragoza,Mallorca,1,0,H
+2017-04-17,Levante,Reus,0,0,D
+2017-04-21,Oviedo,Huesca,1,1,D
+2017-04-22,Valladolid,Elche,2,1,H
+2017-04-22,Getafe,Gimnastic,1,1,D
+2017-04-22,Cadiz,Levante,1,1,D
+2017-04-22,Rayo Vallecano,Lugo,2,0,H
+2017-04-22,Girona,Ucam Murcia,1,2,A
+2017-04-23,Numancia,Tenerife,1,1,D
+2017-04-23,Mallorca,Cordoba,1,1,D
+2017-04-23,Mirandes,Zaragoza,0,1,A
+2017-04-23,Almeria,Sevilla Atletico,2,1,H
+2017-04-23,Reus,Alcorcon,0,0,D
+2017-04-28,Elche,Almeria,2,3,A
+2017-04-29,Ucam Murcia,Tenerife,1,0,H
+2017-04-29,Levante,Oviedo,1,0,H
+2017-04-29,Valladolid,Numancia,1,1,D
+2017-04-29,Zaragoza,Getafe,1,2,A
+2017-04-30,Alcorcon,Cadiz,0,2,A
+2017-04-30,Lugo,Girona,1,2,A
+2017-04-30,Cordoba,Mirandes,1,1,D
+2017-04-30,Sevilla Atletico,Mallorca,2,3,A
+2017-05-01,Huesca,Rayo Vallecano,2,0,H
+2017-05-01,Gimnastic,Reus,0,1,A
+2017-05-05,Oviedo,Alcorcon,0,1,A
+2017-05-06,Mallorca,Elche,1,0,H
+2017-05-06,Numancia,Ucam Murcia,1,0,H
+2017-05-06,Rayo Vallecano,Levante,2,1,H
+2017-05-06,Girona,Huesca,3,1,H
+2017-05-07,Tenerife,Lugo,2,1,H
+2017-05-07,Mirandes,Sevilla Atletico,0,1,A
+2017-05-07,Getafe,Cordoba,2,0,H
+2017-05-07,Almeria,Valladolid,0,3,A
+2017-05-07,Cadiz,Gimnastic,0,0,D
+2017-05-07,Reus,Zaragoza,1,0,H
+2017-05-12,Sevilla Atletico,Getafe,2,1,H
+2017-05-12,Zaragoza,Cadiz,1,1,D
+2017-05-13,Valladolid,Mallorca,2,1,H
+2017-05-13,Huesca,Tenerife,2,2,D
+2017-05-13,Elche,Mirandes,0,1,A
+2017-05-13,Levante,Girona,2,1,H
+2017-05-13,Alcorcon,Rayo Vallecano,2,0,H
+2017-05-13,Cordoba,Reus,1,0,H
+2017-05-13,Almeria,Numancia,2,0,H
+2017-05-13,Gimnastic,Oviedo,2,2,D
+2017-05-14,Lugo,Ucam Murcia,0,0,D
+2017-05-19,Rayo Vallecano,Gimnastic,2,0,H
+2017-05-19,Getafe,Elche,2,0,H
+2017-05-20,Girona,Alcorcon,0,0,D
+2017-05-20,Tenerife,Levante,0,0,D
+2017-05-20,Reus,Sevilla Atletico,2,1,H
+2017-05-20,Mallorca,Almeria,1,0,H
+2017-05-20,Ucam Murcia,Huesca,3,1,H
+2017-05-20,Oviedo,Zaragoza,0,0,D
+2017-05-20,Cadiz,Cordoba,1,1,D
+2017-05-21,Mirandes,Valladolid,2,2,D
+2017-05-21,Numancia,Lugo,0,1,A
+2017-05-26,Levante,Ucam Murcia,3,1,H
+2017-05-27,Huesca,Lugo,1,0,H
+2017-05-27,Valladolid,Getafe,1,0,H
+2017-05-27,Almeria,Mirandes,2,0,H
+2017-05-27,Sevilla Atletico,Cadiz,3,3,D
+2017-05-28,Alcorcon,Tenerife,1,3,A
+2017-05-28,Zaragoza,Rayo Vallecano,1,1,D
+2017-05-28,Gimnastic,Girona,3,1,H
+2017-05-28,Elche,Reus,1,1,D
+2017-05-28,Mallorca,Numancia,0,0,D
+2017-05-28,Cordoba,Oviedo,4,2,H
+2017-06-02,Lugo,Levante,1,0,H
+2017-06-04,Getafe,Almeria,4,0,H
+2017-06-04,Girona,Zaragoza,0,0,D
+2017-06-04,Oviedo,Sevilla Atletico,1,0,H
+2017-06-04,Tenerife,Gimnastic,0,1,A
+2017-06-04,Cadiz,Elche,2,1,H
+2017-06-04,Huesca,Numancia,0,0,D
+2017-06-04,Rayo Vallecano,Cordoba,1,2,A
+2017-06-04,Reus,Valladolid,2,0,H
+2017-06-04,Mirandes,Mallorca,2,2,D
+2017-06-04,Ucam Murcia,Alcorcon,0,1,A
+2017-06-09,Sevilla Atletico,Rayo Vallecano,1,2,A
+2017-06-10,Levante,Huesca,1,2,A
+2017-06-10,Alcorcon,Lugo,3,0,H
+2017-06-10,Cordoba,Girona,2,1,H
+2017-06-10,Gimnastic,Ucam Murcia,1,0,H
+2017-06-10,Valladolid,Cadiz,1,0,H
+2017-06-10,Almeria,Reus,1,0,H
+2017-06-10,Zaragoza,Tenerife,1,2,A
+2017-06-10,Elche,Oviedo,0,2,A
+2017-06-10,Mallorca,Getafe,3,3,D
+2017-06-11,Numancia,Mirandes,0,2,A
+2017-06-14,Huesca,Getafe,2,2,D
+2017-06-15,Cadiz,Tenerife,1,0,H
+2017-06-17,Getafe,Huesca,3,0,H
+2017-06-18,Tenerife,Cadiz,1,0,H
+2017-06-21,Tenerife,Getafe,1,0,H
+2017-06-24,Getafe,Tenerife,3,1,H

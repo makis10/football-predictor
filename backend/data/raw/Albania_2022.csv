@@ -1,0 +1,182 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2022-08-19,FK Kukesi,Tirana,1,1,D
+2022-08-20,Erzeni Shijak,Vllaznia Shkoder,1,0,H
+2022-08-20,Partizani,Egnatia Rrogozhine,2,1,H
+2022-08-21,Laci,Teuta Durres,3,1,H
+2022-08-21,Bylis,Kastrioti Kruje,2,0,H
+2022-08-27,Kastrioti Kruje,Erzeni Shijak,0,0,D
+2022-08-27,Teuta Durres,Bylis,1,1,D
+2022-08-28,Egnatia Rrogozhine,Tirana,0,2,A
+2022-08-28,Vllaznia Shkoder,FK Kukesi,2,1,H
+2022-08-29,Partizani,Laci,1,0,H
+2022-09-02,Tirana,Vllaznia Shkoder,1,2,A
+2022-09-03,FK Kukesi,Kastrioti Kruje,1,2,A
+2022-09-03,Erzeni Shijak,Teuta Durres,0,0,D
+2022-09-04,Laci,Egnatia Rrogozhine,0,1,A
+2022-09-04,Bylis,Partizani,0,1,A
+2022-09-09,Teuta Durres,FK Kukesi,0,0,D
+2022-09-10,Kastrioti Kruje,Tirana,0,0,D
+2022-09-10,Egnatia Rrogozhine,Vllaznia Shkoder,3,0,H
+2022-09-11,Laci,Bylis,0,1,A
+2022-09-11,Partizani,Erzeni Shijak,0,1,A
+2022-09-16,Tirana,Teuta Durres,4,0,H
+2022-09-17,Bylis,Egnatia Rrogozhine,0,0,D
+2022-09-17,Erzeni Shijak,Laci,1,0,H
+2022-09-18,Vllaznia Shkoder,Kastrioti Kruje,1,0,H
+2022-09-19,FK Kukesi,Partizani,1,2,A
+2022-09-30,Bylis,Erzeni Shijak,4,1,H
+2022-09-30,Teuta Durres,Vllaznia Shkoder,0,0,D
+2022-10-01,Laci,FK Kukesi,0,1,A
+2022-10-01,Egnatia Rrogozhine,Kastrioti Kruje,0,0,D
+2022-10-02,Partizani,Tirana,0,2,A
+2022-10-07,Tirana,Laci,3,3,D
+2022-10-07,Erzeni Shijak,Egnatia Rrogozhine,0,0,D
+2022-10-07,Vllaznia Shkoder,Partizani,1,2,A
+2022-10-08,FK Kukesi,Bylis,2,0,H
+2022-10-08,Kastrioti Kruje,Teuta Durres,2,1,H
+2022-10-15,Egnatia Rrogozhine,Teuta Durres,1,2,A
+2022-10-16,Laci,Vllaznia Shkoder,1,1,D
+2022-10-16,Bylis,Tirana,0,1,A
+2022-10-16,Partizani,Kastrioti Kruje,0,0,D
+2022-10-17,Erzeni Shijak,FK Kukesi,0,2,A
+2022-10-21,Teuta Durres,Partizani,1,4,A
+2022-10-21,Vllaznia Shkoder,Bylis,2,1,H
+2022-10-22,FK Kukesi,Egnatia Rrogozhine,0,1,A
+2022-10-22,Kastrioti Kruje,Laci,0,1,A
+2022-10-22,Tirana,Erzeni Shijak,0,1,A
+2022-10-29,Kastrioti Kruje,Bylis,3,0,H
+2022-10-29,Teuta Durres,Laci,0,1,A
+2022-10-29,Vllaznia Shkoder,Erzeni Shijak,2,2,D
+2022-10-30,Tirana,FK Kukesi,4,1,H
+2022-10-30,Egnatia Rrogozhine,Partizani,3,0,H
+2022-11-02,Bylis,Teuta Durres,0,0,D
+2022-11-02,Erzeni Shijak,Kastrioti Kruje,1,1,D
+2022-11-03,FK Kukesi,Vllaznia Shkoder,0,1,A
+2022-11-03,Tirana,Egnatia Rrogozhine,1,0,H
+2022-11-03,Laci,Partizani,1,0,H
+2022-11-13,Kastrioti Kruje,FK Kukesi,1,1,D
+2022-11-13,Egnatia Rrogozhine,Laci,2,0,H
+2022-11-13,Vllaznia Shkoder,Tirana,0,0,D
+2022-11-14,Teuta Durres,Erzeni Shijak,1,2,A
+2022-11-14,Partizani,Bylis,2,1,H
+2022-12-11,FK Kukesi,Teuta Durres,0,1,A
+2022-12-11,Bylis,Laci,0,1,A
+2022-12-11,Erzeni Shijak,Partizani,3,3,D
+2022-12-12,Vllaznia Shkoder,Egnatia Rrogozhine,0,1,A
+2022-12-12,Tirana,Kastrioti Kruje,4,0,H
+2022-12-15,Laci,Erzeni Shijak,1,0,H
+2022-12-15,Partizani,FK Kukesi,2,1,H
+2022-12-16,Kastrioti Kruje,Vllaznia Shkoder,1,0,H
+2022-12-16,Egnatia Rrogozhine,Bylis,0,1,A
+2022-12-16,Teuta Durres,Tirana,1,0,H
+2022-12-21,FK Kukesi,Laci,1,0,H
+2022-12-21,Tirana,Partizani,0,1,A
+2022-12-22,Kastrioti Kruje,Egnatia Rrogozhine,2,3,A
+2022-12-22,Erzeni Shijak,Bylis,1,1,D
+2022-12-22,Vllaznia Shkoder,Teuta Durres,4,0,H
+2023-01-13,Laci,Tirana,1,2,A
+2023-01-13,Bylis,FK Kukesi,0,0,D
+2023-01-13,Partizani,Vllaznia Shkoder,1,2,A
+2023-01-14,Egnatia Rrogozhine,Erzeni Shijak,1,1,D
+2023-01-14,Teuta Durres,Kastrioti Kruje,2,0,H
+2023-01-21,Kastrioti Kruje,Partizani,1,1,D
+2023-01-21,Tirana,Bylis,4,1,H
+2023-01-21,Vllaznia Shkoder,Laci,4,1,H
+2023-01-22,FK Kukesi,Erzeni Shijak,0,2,A
+2023-01-22,Teuta Durres,Egnatia Rrogozhine,1,1,D
+2023-01-25,Laci,Kastrioti Kruje,4,1,H
+2023-01-25,Bylis,Vllaznia Shkoder,1,0,H
+2023-01-26,Egnatia Rrogozhine,FK Kukesi,1,2,A
+2023-01-26,Partizani,Teuta Durres,0,2,A
+2023-01-26,Erzeni Shijak,Tirana,0,2,A
+2023-01-29,FK Kukesi,Tirana,2,0,H
+2023-01-29,Bylis,Kastrioti Kruje,1,0,H
+2023-01-30,Laci,Teuta Durres,4,3,H
+2023-01-30,Partizani,Egnatia Rrogozhine,1,1,D
+2023-01-30,Erzeni Shijak,Vllaznia Shkoder,3,2,H
+2023-02-06,Egnatia Rrogozhine,Tirana,1,2,A
+2023-02-06,Partizani,Laci,1,2,A
+2023-02-07,Kastrioti Kruje,Erzeni Shijak,2,2,D
+2023-02-07,Teuta Durres,Bylis,1,0,H
+2023-02-07,Vllaznia Shkoder,FK Kukesi,2,0,H
+2023-02-11,FK Kukesi,Kastrioti Kruje,1,0,H
+2023-02-11,Laci,Egnatia Rrogozhine,0,1,A
+2023-02-12,Tirana,Vllaznia Shkoder,0,1,A
+2023-02-12,Erzeni Shijak,Teuta Durres,1,1,D
+2023-02-13,Bylis,Partizani,0,1,A
+2023-02-18,Laci,Bylis,0,1,A
+2023-02-18,Teuta Durres,FK Kukesi,1,0,H
+2023-02-18,Partizani,Erzeni Shijak,3,0,H
+2023-02-19,Kastrioti Kruje,Tirana,0,1,A
+2023-02-19,Egnatia Rrogozhine,Vllaznia Shkoder,0,0,D
+2023-02-24,FK Kukesi,Partizani,1,0,H
+2023-02-24,Bylis,Egnatia Rrogozhine,2,3,A
+2023-02-24,Erzeni Shijak,Laci,1,1,D
+2023-02-25,Tirana,Teuta Durres,0,2,A
+2023-02-25,Vllaznia Shkoder,Kastrioti Kruje,0,1,A
+2023-03-05,Bylis,Erzeni Shijak,1,1,D
+2023-03-05,Egnatia Rrogozhine,Kastrioti Kruje,4,1,H
+2023-03-06,Laci,FK Kukesi,1,2,A
+2023-03-06,Teuta Durres,Vllaznia Shkoder,1,1,D
+2023-03-06,Partizani,Tirana,2,0,H
+2023-03-10,FK Kukesi,Bylis,2,0,H
+2023-03-10,Kastrioti Kruje,Teuta Durres,0,0,D
+2023-03-10,Erzeni Shijak,Egnatia Rrogozhine,2,1,H
+2023-03-11,Tirana,Laci,3,2,H
+2023-03-11,Vllaznia Shkoder,Partizani,1,1,D
+2023-03-18,Bylis,Tirana,1,1,D
+2023-03-18,Erzeni Shijak,FK Kukesi,1,1,D
+2023-03-19,Laci,Vllaznia Shkoder,2,0,H
+2023-03-19,Egnatia Rrogozhine,Teuta Durres,1,1,D
+2023-03-19,Partizani,Kastrioti Kruje,4,1,H
+2023-04-01,FK Kukesi,Egnatia Rrogozhine,0,3,A
+2023-04-01,Vllaznia Shkoder,Bylis,0,0,D
+2023-04-01,Teuta Durres,Partizani,0,2,A
+2023-04-02,Kastrioti Kruje,Laci,2,1,H
+2023-04-02,Tirana,Erzeni Shijak,3,1,H
+2023-04-09,Teuta Durres,Laci,1,2,A
+2023-04-09,Vllaznia Shkoder,Erzeni Shijak,3,1,H
+2023-04-10,Egnatia Rrogozhine,Partizani,1,1,D
+2023-04-10,Tirana,FK Kukesi,2,1,H
+2023-04-15,Bylis,Teuta Durres,2,2,D
+2023-04-15,Erzeni Shijak,Kastrioti Kruje,0,0,D
+2023-04-16,FK Kukesi,Vllaznia Shkoder,0,0,D
+2023-04-16,Laci,Partizani,3,2,H
+2023-04-16,Tirana,Egnatia Rrogozhine,2,1,H
+2023-04-19,Kastrioti Kruje,Bylis,0,2,A
+2023-04-22,Egnatia Rrogozhine,Laci,1,1,D
+2023-04-22,Teuta Durres,Erzeni Shijak,2,0,H
+2023-04-22,Vllaznia Shkoder,Tirana,0,1,A
+2023-04-23,Kastrioti Kruje,FK Kukesi,1,0,H
+2023-04-23,Partizani,Bylis,2,1,H
+2023-04-29,Bylis,Laci,0,2,A
+2023-04-29,Erzeni Shijak,Partizani,1,2,A
+2023-04-30,FK Kukesi,Teuta Durres,0,0,D
+2023-04-30,Tirana,Kastrioti Kruje,1,0,H
+2023-04-30,Vllaznia Shkoder,Egnatia Rrogozhine,0,4,A
+2023-05-06,Kastrioti Kruje,Vllaznia Shkoder,2,2,D
+2023-05-06,Egnatia Rrogozhine,Bylis,2,0,H
+2023-05-06,Partizani,FK Kukesi,3,1,H
+2023-05-06,Teuta Durres,Tirana,2,1,H
+2023-05-07,Laci,Erzeni Shijak,1,1,D
+2023-05-17,FK Kukesi,Laci,3,0,H
+2023-05-17,Kastrioti Kruje,Egnatia Rrogozhine,1,0,H
+2023-05-17,Erzeni Shijak,Bylis,1,2,A
+2023-05-17,Vllaznia Shkoder,Teuta Durres,1,0,H
+2023-05-17,Tirana,Partizani,1,1,D
+2023-05-21,Partizani,Vllaznia Shkoder,2,1,H
+2023-05-21,Laci,Tirana,1,3,A
+2023-05-21,Teuta Durres,Kastrioti Kruje,1,0,H
+2023-05-21,Bylis,FK Kukesi,1,1,D
+2023-05-21,Egnatia Rrogozhine,Erzeni Shijak,3,2,H
+2023-05-25,FK Kukesi,Erzeni Shijak,0,0,D
+2023-05-25,Tirana,Bylis,2,2,D
+2023-05-25,Kastrioti Kruje,Partizani,1,4,A
+2023-05-25,Teuta Durres,Egnatia Rrogozhine,1,0,H
+2023-05-25,Vllaznia Shkoder,Laci,1,1,D
+2023-05-29,Partizani,Teuta Durres,2,0,H
+2023-05-29,Laci,Kastrioti Kruje,3,0,H
+2023-05-29,Bylis,Vllaznia Shkoder,1,2,A
+2023-05-29,Egnatia Rrogozhine,FK Kukesi,0,1,A
+2023-05-29,Erzeni Shijak,Tirana,1,2,A
+2023-06-04,Erzeni Shijak,Korabi Peshkopi,2,1,H

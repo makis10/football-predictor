@@ -1,0 +1,183 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2024-03-01,Suduva Marijampole,Siauliai,0,0,D
+2024-03-02,Dziugas Telsiai,Panevezys,0,0,D
+2024-03-02,Banga,Kauno Zalgiris,1,1,D
+2024-03-03,Dainava,FK Zalgiris Vilnius,0,1,A
+2024-03-03,Hegelmann Litauen,TransINVEST Vilnius,2,3,A
+2024-03-09,Kauno Zalgiris,Hegelmann Litauen,1,2,A
+2024-03-09,TransINVEST Vilnius,Dziugas Telsiai,0,1,A
+2024-03-10,Siauliai,Banga,0,0,D
+2024-03-10,Panevezys,Dainava,0,0,D
+2024-03-10,FK Zalgiris Vilnius,Suduva Marijampole,3,3,D
+2024-03-12,Kauno Zalgiris,TransINVEST Vilnius,2,1,H
+2024-03-13,Dainava,Dziugas Telsiai,0,0,D
+2024-03-13,Banga,FK Zalgiris Vilnius,1,4,A
+2024-03-13,Hegelmann Litauen,Siauliai,2,2,D
+2024-03-13,Suduva Marijampole,Panevezys,1,0,H
+2024-03-16,Dziugas Telsiai,Suduva Marijampole,1,0,H
+2024-03-16,Panevezys,Banga,0,1,A
+2024-03-17,TransINVEST Vilnius,Dainava,0,2,A
+2024-03-17,Siauliai,Kauno Zalgiris,2,1,H
+2024-03-17,FK Zalgiris Vilnius,Hegelmann Litauen,1,3,A
+2024-03-29,Banga,Dziugas Telsiai,0,2,A
+2024-03-30,Hegelmann Litauen,Panevezys,4,2,H
+2024-03-30,Siauliai,TransINVEST Vilnius,0,1,A
+2024-03-31,Suduva Marijampole,Dainava,0,1,A
+2024-03-31,Kauno Zalgiris,FK Zalgiris Vilnius,0,1,A
+2024-04-06,Dziugas Telsiai,Hegelmann Litauen,0,0,D
+2024-04-06,Dainava,Banga,2,2,D
+2024-04-07,TransINVEST Vilnius,Suduva Marijampole,0,2,A
+2024-04-07,FK Zalgiris Vilnius,Siauliai,3,0,H
+2024-04-07,Kauno Zalgiris,Panevezys,0,1,A
+2024-04-09,Hegelmann Litauen,Dainava,0,1,A
+2024-04-10,Banga,Suduva Marijampole,0,0,D
+2024-04-10,Siauliai,Panevezys,1,1,D
+2024-04-10,Kauno Zalgiris,Dziugas Telsiai,3,0,H
+2024-04-10,FK Zalgiris Vilnius,TransINVEST Vilnius,2,0,H
+2024-04-13,TransINVEST Vilnius,Banga,0,1,A
+2024-04-13,Suduva Marijampole,Hegelmann Litauen,0,1,A
+2024-04-14,Dziugas Telsiai,Siauliai,2,1,H
+2024-04-14,Panevezys,FK Zalgiris Vilnius,1,2,A
+2024-04-14,Kauno Zalgiris,Dainava,1,0,H
+2024-04-20,Kauno Zalgiris,Suduva Marijampole,2,1,H
+2024-04-20,Siauliai,Dainava,1,0,H
+2024-04-21,Panevezys,TransINVEST Vilnius,1,1,D
+2024-04-21,Hegelmann Litauen,Banga,2,2,D
+2024-04-21,FK Zalgiris Vilnius,Dziugas Telsiai,3,1,H
+2024-04-23,Siauliai,Suduva Marijampole,0,1,A
+2024-04-24,TransINVEST Vilnius,Hegelmann Litauen,1,2,A
+2024-04-24,Kauno Zalgiris,Banga,0,3,A
+2024-04-24,FK Zalgiris Vilnius,Dainava,4,0,H
+2024-04-27,Dziugas Telsiai,TransINVEST Vilnius,2,0,H
+2024-04-28,Hegelmann Litauen,Kauno Zalgiris,0,1,A
+2024-04-28,Banga,Siauliai,0,1,A
+2024-04-28,Suduva Marijampole,FK Zalgiris Vilnius,1,1,D
+2024-04-28,Dainava,Panevezys,0,0,D
+2024-05-01,Siauliai,Hegelmann Litauen,1,1,D
+2024-05-01,FK Zalgiris Vilnius,Banga,2,2,D
+2024-05-02,Dziugas Telsiai,Dainava,2,1,H
+2024-05-02,TransINVEST Vilnius,Kauno Zalgiris,3,2,H
+2024-05-02,Panevezys,Suduva Marijampole,1,0,H
+2024-05-11,Dainava,TransINVEST Vilnius,1,0,H
+2024-05-11,Suduva Marijampole,Dziugas Telsiai,0,1,A
+2024-05-11,Banga,Panevezys,2,0,H
+2024-05-12,Hegelmann Litauen,FK Zalgiris Vilnius,0,0,D
+2024-05-12,Kauno Zalgiris,Siauliai,2,1,H
+2024-05-17,Dainava,Suduva Marijampole,0,1,A
+2024-05-18,TransINVEST Vilnius,Siauliai,1,3,A
+2024-05-18,Panevezys,Hegelmann Litauen,0,2,A
+2024-05-19,Dziugas Telsiai,Banga,1,1,D
+2024-05-19,FK Zalgiris Vilnius,Kauno Zalgiris,1,0,H
+2024-05-24,Suduva Marijampole,TransINVEST Vilnius,0,1,A
+2024-05-25,Hegelmann Litauen,Dziugas Telsiai,2,1,H
+2024-05-25,Panevezys,Kauno Zalgiris,0,0,D
+2024-05-26,Banga,Dainava,0,3,A
+2024-05-26,Siauliai,FK Zalgiris Vilnius,1,2,A
+2024-05-31,Dainava,Hegelmann Litauen,0,2,A
+2024-06-01,Suduva Marijampole,Banga,1,0,H
+2024-06-01,Panevezys,Siauliai,2,0,H
+2024-06-02,TransINVEST Vilnius,FK Zalgiris Vilnius,1,3,A
+2024-06-02,Dziugas Telsiai,Kauno Zalgiris,0,1,A
+2024-06-15,Hegelmann Litauen,Suduva Marijampole,3,2,H
+2024-06-15,Siauliai,Dziugas Telsiai,3,3,D
+2024-06-15,Banga,TransINVEST Vilnius,2,0,H
+2024-06-15,Dainava,Kauno Zalgiris,0,0,D
+2024-06-16,FK Zalgiris Vilnius,Panevezys,2,1,H
+2024-06-18,Dainava,Siauliai,2,2,D
+2024-06-19,TransINVEST Vilnius,Panevezys,3,0,H
+2024-06-19,Dziugas Telsiai,FK Zalgiris Vilnius,0,4,A
+2024-06-19,Suduva Marijampole,Kauno Zalgiris,2,2,D
+2024-06-22,TransINVEST Vilnius,Dziugas Telsiai,3,0,H
+2024-06-22,Panevezys,Dainava,2,0,H
+2024-06-23,Kauno Zalgiris,Hegelmann Litauen,4,1,H
+2024-06-23,Siauliai,Banga,0,0,D
+2024-06-23,FK Zalgiris Vilnius,Suduva Marijampole,4,0,H
+2024-06-26,Suduva Marijampole,Panevezys,1,3,A
+2024-06-26,Hegelmann Litauen,Siauliai,0,0,D
+2024-06-26,Banga,FK Zalgiris Vilnius,0,2,A
+2024-06-26,Dainava,Dziugas Telsiai,3,1,H
+2024-06-26,Kauno Zalgiris,TransINVEST Vilnius,2,0,H
+2024-06-29,Panevezys,Banga,0,1,A
+2024-06-30,TransINVEST Vilnius,Dainava,2,1,H
+2024-06-30,Dziugas Telsiai,Suduva Marijampole,1,0,H
+2024-06-30,Hegelmann Litauen,FK Zalgiris Vilnius,3,1,H
+2024-07-01,Siauliai,Kauno Zalgiris,1,0,H
+2024-07-04,Panevezys,Hegelmann Litauen,0,1,A
+2024-07-05,Kauno Zalgiris,FK Zalgiris Vilnius,1,0,H
+2024-07-05,Siauliai,TransINVEST Vilnius,1,0,H
+2024-07-06,Banga,Dziugas Telsiai,0,0,D
+2024-07-07,Suduva Marijampole,Dainava,0,0,D
+2024-07-12,Banga,Hegelmann Litauen,2,4,A
+2024-07-19,Dziugas Telsiai,Hegelmann Litauen,0,2,A
+2024-07-20,TransINVEST Vilnius,Suduva Marijampole,2,2,D
+2024-07-20,Panevezys,Kauno Zalgiris,1,2,A
+2024-07-21,Dainava,Banga,3,1,H
+2024-07-26,Banga,Kauno Zalgiris,1,1,D
+2024-07-27,Dziugas Telsiai,Panevezys,3,3,D
+2024-07-28,Suduva Marijampole,Siauliai,0,0,D
+2024-08-02,Banga,Suduva Marijampole,1,0,H
+2024-08-03,Dainava,Hegelmann Litauen,0,1,A
+2024-08-04,Dziugas Telsiai,Kauno Zalgiris,2,3,A
+2024-08-09,Dziugas Telsiai,Siauliai,2,2,D
+2024-08-10,TransINVEST Vilnius,Banga,0,1,A
+2024-08-10,Suduva Marijampole,Hegelmann Litauen,0,1,A
+2024-08-11,Dainava,Kauno Zalgiris,0,1,A
+2024-08-11,Panevezys,FK Zalgiris Vilnius,0,0,D
+2024-08-14,FK Zalgiris Vilnius,TransINVEST Vilnius,2,0,H
+2024-08-16,Hegelmann Litauen,Banga,3,0,H
+2024-08-17,Suduva Marijampole,Kauno Zalgiris,1,1,D
+2024-08-18,FK Zalgiris Vilnius,Dziugas Telsiai,2,1,H
+2024-08-18,Siauliai,Dainava,0,0,D
+2024-08-23,Dziugas Telsiai,TransINVEST Vilnius,0,3,A
+2024-08-24,Banga,Siauliai,4,1,H
+2024-08-24,Hegelmann Litauen,Kauno Zalgiris,1,1,D
+2024-08-25,Dainava,Panevezys,1,1,D
+2024-08-25,Suduva Marijampole,FK Zalgiris Vilnius,1,1,D
+2024-08-31,TransINVEST Vilnius,Kauno Zalgiris,0,3,A
+2024-09-01,Siauliai,Hegelmann Litauen,3,1,H
+2024-09-01,FK Zalgiris Vilnius,Banga,2,1,H
+2024-09-01,Dziugas Telsiai,Dainava,0,2,A
+2024-09-01,Panevezys,Suduva Marijampole,0,0,D
+2024-09-14,FK Zalgiris Vilnius,Hegelmann Litauen,1,1,D
+2024-09-14,Dainava,TransINVEST Vilnius,0,1,A
+2024-09-14,Suduva Marijampole,Dziugas Telsiai,2,1,H
+2024-09-15,Banga,Panevezys,2,3,A
+2024-09-15,Kauno Zalgiris,Siauliai,2,1,H
+2024-09-20,Dainava,Suduva Marijampole,1,2,A
+2024-09-21,TransINVEST Vilnius,Siauliai,2,0,H
+2024-09-22,Dziugas Telsiai,Banga,0,2,A
+2024-09-22,Hegelmann Litauen,Panevezys,2,2,D
+2024-09-22,FK Zalgiris Vilnius,Kauno Zalgiris,5,0,H
+2024-09-26,Siauliai,Panevezys,2,1,H
+2024-09-27,FK Zalgiris Vilnius,Dainava,3,1,H
+2024-10-01,Panevezys,TransINVEST Vilnius,2,1,H
+2024-10-04,Siauliai,FK Zalgiris Vilnius,1,3,A
+2024-10-05,Kauno Zalgiris,Panevezys,0,0,D
+2024-10-05,Banga,Dainava,0,3,A
+2024-10-06,Hegelmann Litauen,Dziugas Telsiai,1,0,H
+2024-10-06,Suduva Marijampole,TransINVEST Vilnius,0,0,D
+2024-10-18,Panevezys,Dziugas Telsiai,1,0,H
+2024-10-19,TransINVEST Vilnius,Hegelmann Litauen,3,2,H
+2024-10-19,Kauno Zalgiris,Banga,1,1,D
+2024-10-20,Siauliai,Suduva Marijampole,2,1,H
+2024-10-20,Dainava,FK Zalgiris Vilnius,0,5,A
+2024-10-22,Panevezys,Dziugas Telsiai,0,0,D
+2024-10-25,Hegelmann Litauen,Dainava,1,2,A
+2024-10-26,TransINVEST Vilnius,FK Zalgiris Vilnius,0,1,A
+2024-10-27,Kauno Zalgiris,Dziugas Telsiai,0,1,A
+2024-10-27,Suduva Marijampole,Banga,2,0,H
+2024-10-27,Panevezys,Siauliai,1,3,A
+2024-11-02,Siauliai,Dziugas Telsiai,0,3,A
+2024-11-02,Hegelmann Litauen,Suduva Marijampole,2,1,H
+2024-11-02,Banga,TransINVEST Vilnius,1,1,D
+2024-11-03,Kauno Zalgiris,Dainava,0,1,A
+2024-11-03,FK Zalgiris Vilnius,Panevezys,2,4,A
+2024-11-06,Hegelmann Litauen,TransINVEST Vilnius,4,1,H
+2024-11-06,FK Zalgiris Vilnius,Siauliai,3,1,H
+2024-11-09,Banga,Hegelmann Litauen,1,1,D
+2024-11-09,Dainava,Siauliai,3,2,H
+2024-11-09,Dziugas Telsiai,FK Zalgiris Vilnius,1,0,H
+2024-11-09,Kauno Zalgiris,Suduva Marijampole,2,4,A
+2024-11-09,TransINVEST Vilnius,Panevezys,0,0,D
+2024-11-17,Be1 NFA,Suduva Marijampole,2,1,H
+2024-11-23,Suduva Marijampole,Be1 NFA,1,0,H

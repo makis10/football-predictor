@@ -1,0 +1,199 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2016-08-19,Gzira United,Tarxien Rainbows,1,1,D
+2016-08-19,Birkirkara,St. Andrews,4,0,H
+2016-08-19,Hibernians,Hamrun Spartans,1,3,A
+2016-08-19,Valletta FC,Sliema Wanderers,2,1,H
+2016-08-20,Floriana,Pembroke Athleta,2,1,H
+2016-08-20,Balzan FC,Mosta,3,2,H
+2016-08-26,Pembroke Athleta,Balzan FC,1,2,A
+2016-08-26,Tarxien Rainbows,Birkirkara,0,4,A
+2016-08-26,Mosta,Valletta FC,0,1,A
+2016-08-26,Sliema Wanderers,Hibernians,0,1,A
+2016-08-27,St. Andrews,Floriana,1,3,A
+2016-08-27,Hamrun Spartans,Gzira United,1,1,D
+2016-09-10,Gzira United,Sliema Wanderers,1,0,H
+2016-09-10,Floriana,Balzan FC,0,1,A
+2016-09-10,Valletta FC,Pembroke Athleta,5,1,H
+2016-09-10,Hibernians,Mosta,3,1,H
+2016-09-11,St. Andrews,Tarxien Rainbows,1,0,H
+2016-09-11,Birkirkara,Hamrun Spartans,2,1,H
+2016-09-17,Pembroke Athleta,Hibernians,1,2,A
+2016-09-17,Mosta,Gzira United,2,1,H
+2016-09-17,Balzan FC,Valletta FC,2,2,D
+2016-09-17,Tarxien Rainbows,Floriana,1,0,H
+2016-09-18,Hamrun Spartans,St. Andrews,3,1,H
+2016-09-18,Sliema Wanderers,Birkirkara,2,1,H
+2016-09-21,St. Andrews,Sliema Wanderers,3,0,H
+2016-09-21,Floriana,Valletta FC,2,0,H
+2016-09-22,Gzira United,Pembroke Athleta,3,0,H
+2016-09-22,Tarxien Rainbows,Hamrun Spartans,2,1,H
+2016-09-22,Hibernians,Balzan FC,0,2,A
+2016-09-22,Birkirkara,Mosta,2,0,H
+2016-09-25,Sliema Wanderers,Tarxien Rainbows,2,1,H
+2016-09-25,Valletta FC,Hibernians,0,2,A
+2016-09-26,Balzan FC,Gzira United,3,1,H
+2016-09-26,Mosta,St. Andrews,1,0,H
+2016-09-26,Hamrun Spartans,Floriana,1,1,D
+2016-09-26,Pembroke Athleta,Birkirkara,2,1,H
+2016-09-30,Balzan FC,St. Andrews,3,0,H
+2016-09-30,Mosta,Hamrun Spartans,2,5,A
+2016-09-30,Valletta FC,Birkirkara,1,1,D
+2016-09-30,Hibernians,Gzira United,1,1,D
+2016-10-01,Pembroke Athleta,Tarxien Rainbows,2,2,D
+2016-10-01,Sliema Wanderers,Floriana,3,1,H
+2016-10-15,Hamrun Spartans,Sliema Wanderers,0,3,A
+2016-10-15,Tarxien Rainbows,Mosta,1,1,D
+2016-10-15,Floriana,Hibernians,0,0,D
+2016-10-15,Gzira United,Valletta FC,1,3,A
+2016-10-16,St. Andrews,Pembroke Athleta,4,1,H
+2016-10-16,Birkirkara,Balzan FC,3,0,H
+2016-10-22,Balzan FC,Hamrun Spartans,3,1,H
+2016-10-22,Gzira United,Birkirkara,1,7,A
+2016-10-22,Valletta FC,Tarxien Rainbows,1,0,H
+2016-10-22,Mosta,Floriana,0,1,A
+2016-10-23,Pembroke Athleta,Sliema Wanderers,0,1,A
+2016-10-23,Hibernians,St. Andrews,1,0,H
+2016-10-28,Floriana,Gzira United,1,0,H
+2016-10-28,St. Andrews,Valletta FC,0,0,D
+2016-10-29,Hamrun Spartans,Pembroke Athleta,2,1,H
+2016-10-29,Tarxien Rainbows,Balzan FC,2,2,D
+2016-10-30,Sliema Wanderers,Mosta,1,1,D
+2016-10-30,Birkirkara,Hibernians,0,1,A
+2016-11-04,Sliema Wanderers,Balzan FC,1,1,D
+2016-11-04,Floriana,Birkirkara,1,1,D
+2016-11-05,St. Andrews,Gzira United,1,0,H
+2016-11-05,Tarxien Rainbows,Hibernians,1,2,A
+2016-11-05,Hamrun Spartans,Valletta FC,0,3,A
+2016-11-05,Mosta,Pembroke Athleta,0,3,A
+2016-11-19,St. Andrews,Birkirkara,1,1,D
+2016-11-19,Tarxien Rainbows,Gzira United,1,0,H
+2016-11-19,Sliema Wanderers,Valletta FC,1,2,A
+2016-11-19,Mosta,Balzan FC,0,1,A
+2016-11-20,Pembroke Athleta,Floriana,1,2,A
+2016-11-20,Hamrun Spartans,Hibernians,1,4,A
+2016-11-26,Gzira United,Hamrun Spartans,0,2,A
+2016-11-26,Floriana,St. Andrews,4,1,H
+2016-11-26,Hibernians,Sliema Wanderers,3,1,H
+2016-11-26,Birkirkara,Tarxien Rainbows,3,1,H
+2016-11-27,Balzan FC,Pembroke Athleta,4,0,H
+2016-11-27,Valletta FC,Mosta,0,0,D
+2016-12-03,Tarxien Rainbows,St. Andrews,1,1,D
+2016-12-03,Pembroke Athleta,Valletta FC,0,3,A
+2016-12-04,Hamrun Spartans,Birkirkara,2,0,H
+2016-12-04,Sliema Wanderers,Gzira United,1,0,H
+2016-12-04,Balzan FC,Floriana,1,3,A
+2016-12-04,Mosta,Hibernians,0,2,A
+2016-12-10,Gzira United,Mosta,3,0,H
+2016-12-10,Floriana,Tarxien Rainbows,1,1,D
+2016-12-10,Hibernians,Pembroke Athleta,1,1,D
+2016-12-10,St. Andrews,Hamrun Spartans,3,1,H
+2016-12-11,Birkirkara,Sliema Wanderers,1,2,A
+2016-12-11,Valletta FC,Balzan FC,2,2,D
+2016-12-17,Balzan FC,Hibernians,2,1,H
+2016-12-17,Valletta FC,Floriana,0,0,D
+2016-12-18,Sliema Wanderers,St. Andrews,1,1,D
+2016-12-18,Hamrun Spartans,Tarxien Rainbows,2,3,A
+2016-12-18,Pembroke Athleta,Gzira United,0,0,D
+2017-01-04,Mosta,Birkirkara,0,2,A
+2017-01-07,St. Andrews,Mosta,1,1,D
+2017-01-07,Floriana,Hamrun Spartans,5,1,H
+2017-01-08,Birkirkara,Pembroke Athleta,2,0,H
+2017-01-08,Tarxien Rainbows,Sliema Wanderers,1,0,H
+2017-01-08,Gzira United,Balzan FC,1,2,A
+2017-01-08,Hibernians,Valletta FC,1,0,H
+2017-01-14,Pembroke Athleta,St. Andrews,2,2,D
+2017-01-14,Sliema Wanderers,Hamrun Spartans,1,2,A
+2017-01-14,Valletta FC,Gzira United,1,0,H
+2017-01-14,Mosta,Tarxien Rainbows,0,2,A
+2017-01-15,Balzan FC,Birkirkara,1,1,D
+2017-01-15,Hibernians,Floriana,2,2,D
+2017-01-21,St. Andrews,Balzan FC,0,1,A
+2017-01-21,Birkirkara,Valletta FC,0,1,A
+2017-01-22,Gzira United,Hibernians,0,3,A
+2017-01-22,Tarxien Rainbows,Pembroke Athleta,7,1,H
+2017-01-22,Floriana,Sliema Wanderers,1,3,A
+2017-01-22,Hamrun Spartans,Mosta,3,0,H
+2017-01-28,Pembroke Athleta,Hamrun Spartans,1,0,H
+2017-01-28,Mosta,Sliema Wanderers,2,1,H
+2017-01-28,Balzan FC,Tarxien Rainbows,2,2,D
+2017-01-28,Valletta FC,St. Andrews,1,1,D
+2017-01-29,Gzira United,Floriana,4,3,H
+2017-01-29,Hibernians,Birkirkara,1,2,A
+2017-02-04,St. Andrews,Hibernians,1,2,A
+2017-02-04,Sliema Wanderers,Pembroke Athleta,1,1,D
+2017-02-04,Hamrun Spartans,Balzan FC,0,1,A
+2017-02-04,Floriana,Mosta,4,0,H
+2017-02-05,Birkirkara,Gzira United,2,1,H
+2017-02-05,Tarxien Rainbows,Valletta FC,1,1,D
+2017-02-11,Hibernians,Tarxien Rainbows,1,0,H
+2017-02-11,Pembroke Athleta,Mosta,5,0,H
+2017-02-11,Gzira United,St. Andrews,3,2,H
+2017-02-11,Birkirkara,Floriana,1,2,A
+2017-02-12,Balzan FC,Sliema Wanderers,1,2,A
+2017-02-12,Valletta FC,Hamrun Spartans,2,0,H
+2017-02-24,Balzan FC,Mosta,7,1,H
+2017-02-24,Valletta FC,Sliema Wanderers,3,1,H
+2017-02-25,Gzira United,Tarxien Rainbows,1,0,H
+2017-02-25,Birkirkara,St. Andrews,2,2,D
+2017-02-25,Hibernians,Hamrun Spartans,3,3,D
+2017-02-25,Floriana,Pembroke Athleta,2,0,H
+2017-03-04,St. Andrews,Floriana,0,0,D
+2017-03-04,Hamrun Spartans,Gzira United,1,3,A
+2017-03-04,Sliema Wanderers,Hibernians,1,2,A
+2017-03-04,Tarxien Rainbows,Birkirkara,0,1,A
+2017-03-05,Pembroke Athleta,Balzan FC,2,5,A
+2017-03-05,Mosta,Valletta FC,0,4,A
+2017-03-11,Valletta FC,Pembroke Athleta,4,0,H
+2017-03-11,Gzira United,Sliema Wanderers,0,1,A
+2017-03-11,Hibernians,Mosta,4,0,H
+2017-03-11,St. Andrews,Tarxien Rainbows,1,0,H
+2017-03-12,Floriana,Balzan FC,0,2,A
+2017-03-12,Birkirkara,Hamrun Spartans,3,0,H
+2017-03-17,Hamrun Spartans,St. Andrews,1,1,D
+2017-03-17,Mosta,Gzira United,1,4,A
+2017-03-17,Balzan FC,Valletta FC,0,1,A
+2017-03-17,Pembroke Athleta,Hibernians,0,3,A
+2017-03-18,Tarxien Rainbows,Floriana,0,1,A
+2017-03-18,Sliema Wanderers,Birkirkara,1,1,D
+2017-04-01,Gzira United,Pembroke Athleta,5,1,H
+2017-04-01,Tarxien Rainbows,Hamrun Spartans,1,1,D
+2017-04-01,Birkirkara,Mosta,3,0,H
+2017-04-01,St. Andrews,Sliema Wanderers,1,4,A
+2017-04-02,Hibernians,Balzan FC,3,1,H
+2017-04-02,Floriana,Valletta FC,1,1,D
+2017-04-04,Sliema Wanderers,Tarxien Rainbows,1,1,D
+2017-04-04,Pembroke Athleta,Birkirkara,0,2,A
+2017-04-05,Balzan FC,Gzira United,3,1,H
+2017-04-05,Mosta,St. Andrews,1,2,A
+2017-04-05,Valletta FC,Hibernians,1,0,H
+2017-04-05,Hamrun Spartans,Floriana,1,2,A
+2017-04-08,Gzira United,Valletta FC,1,1,D
+2017-04-08,Birkirkara,Balzan FC,3,1,H
+2017-04-09,St. Andrews,Pembroke Athleta,6,0,H
+2017-04-09,Hamrun Spartans,Sliema Wanderers,0,2,A
+2017-04-09,Floriana,Hibernians,2,3,A
+2017-04-09,Tarxien Rainbows,Mosta,1,3,A
+2017-04-15,Balzan FC,St. Andrews,2,1,H
+2017-04-15,Pembroke Athleta,Tarxien Rainbows,1,1,D
+2017-04-15,Valletta FC,Birkirkara,3,3,D
+2017-04-15,Hibernians,Gzira United,2,0,H
+2017-04-17,Mosta,Hamrun Spartans,2,1,H
+2017-04-17,Sliema Wanderers,Floriana,3,0,H
+2017-04-22,Floriana,Gzira United,1,1,D
+2017-04-22,Tarxien Rainbows,Balzan FC,0,3,A
+2017-04-22,St. Andrews,Valletta FC,3,1,H
+2017-04-22,Hamrun Spartans,Pembroke Athleta,1,2,A
+2017-04-23,Sliema Wanderers,Mosta,1,1,D
+2017-04-23,Birkirkara,Hibernians,2,0,H
+2017-04-29,Valletta FC,Tarxien Rainbows,0,2,A
+2017-04-29,Mosta,Floriana,0,2,A
+2017-04-29,Balzan FC,Hamrun Spartans,1,1,D
+2017-04-29,Pembroke Athleta,Sliema Wanderers,0,2,A
+2017-04-30,Hibernians,St. Andrews,3,1,H
+2017-04-30,Gzira United,Birkirkara,1,1,D
+2017-05-04,St. Andrews,Gzira United,2,3,A
+2017-05-05,Mosta,Pembroke Athleta,4,2,H
+2017-05-05,Sliema Wanderers,Balzan FC,2,1,H
+2017-05-05,Floriana,Birkirkara,1,2,A
+2017-05-05,Hamrun Spartans,Valletta FC,2,1,H
+2017-05-06,Tarxien Rainbows,Hibernians,1,6,A

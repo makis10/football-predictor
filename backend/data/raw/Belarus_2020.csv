@@ -1,0 +1,242 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2020-03-19,FC Energetik-Bgu Minsk,Bate Borisov,3,1,H
+2020-03-19,Shakhter Soligorsk,Torpedo Zhodino,0,1,A
+2020-03-20,Dinamo Brest,Smolevichi-Sti,1,1,D
+2020-03-20,Dinamo Minsk,Ruh Brest,0,1,A
+2020-03-21,FC Vitebsk,Gorodeya,1,0,H
+2020-03-21,FC Isloch Minsk R.,Neman,1,0,H
+2020-03-22,FC Slutsk,Slavia Mozyr,3,1,H
+2020-03-22,Belshina,FC Minsk,1,3,A
+2020-03-27,Torpedo Zhodino,Belshina,1,0,H
+2020-03-27,Ruh Brest,FC Energetik-Bgu Minsk,0,1,A
+2020-03-28,FC Slutsk,Dinamo Brest,0,1,A
+2020-03-28,Slavia Mozyr,Bate Borisov,2,1,H
+2020-03-28,FC Minsk,Dinamo Minsk,3,2,H
+2020-03-28,Gorodeya,Shakhter Soligorsk,0,2,A
+2020-03-29,FC Isloch Minsk R.,Smolevichi-Sti,1,0,H
+2020-03-29,Neman,FC Vitebsk,2,0,H
+2020-04-03,Belshina,Gorodeya,0,1,A
+2020-04-03,Dinamo Minsk,Torpedo Zhodino,2,0,H
+2020-04-04,Shakhter Soligorsk,Neman,0,0,D
+2020-04-04,Bate Borisov,Ruh Brest,1,0,H
+2020-04-04,Dinamo Brest,Slavia Mozyr,1,2,A
+2020-04-05,FC Energetik-Bgu Minsk,FC Minsk,2,0,H
+2020-04-05,Smolevichi-Sti,FC Vitebsk,0,1,A
+2020-04-05,FC Isloch Minsk R.,FC Slutsk,2,3,A
+2020-04-10,Neman,Belshina,1,1,D
+2020-04-11,FC Slutsk,FC Vitebsk,1,1,D
+2020-04-11,Torpedo Zhodino,FC Energetik-Bgu Minsk,2,0,H
+2020-04-11,Gorodeya,Dinamo Minsk,1,0,H
+2020-04-12,FC Minsk,Bate Borisov,0,3,A
+2020-04-12,Smolevichi-Sti,Shakhter Soligorsk,0,0,D
+2020-04-12,Dinamo Brest,FC Isloch Minsk R.,3,1,H
+2020-04-13,Slavia Mozyr,Ruh Brest,0,0,D
+2020-04-16,FC Energetik-Bgu Minsk,Gorodeya,0,1,A
+2020-04-16,Dinamo Minsk,Neman,2,0,H
+2020-04-17,Belshina,Smolevichi-Sti,1,1,D
+2020-04-17,Shakhter Soligorsk,FC Slutsk,1,2,A
+2020-04-18,FC Isloch Minsk R.,Slavia Mozyr,2,1,H
+2020-04-18,Ruh Brest,FC Minsk,1,0,H
+2020-04-18,FC Vitebsk,Dinamo Brest,1,0,H
+2020-04-18,Bate Borisov,Torpedo Zhodino,0,0,D
+2020-04-24,Smolevichi-Sti,Dinamo Minsk,1,3,A
+2020-04-24,Neman,FC Energetik-Bgu Minsk,3,0,H
+2020-04-25,Slavia Mozyr,FC Minsk,1,3,A
+2020-04-25,Gorodeya,Bate Borisov,0,2,A
+2020-04-25,Dinamo Brest,Shakhter Soligorsk,0,2,A
+2020-04-26,FC Slutsk,Belshina,3,2,H
+2020-04-26,Torpedo Zhodino,Ruh Brest,0,0,D
+2020-04-26,FC Isloch Minsk R.,FC Vitebsk,2,0,H
+2020-05-01,Smolevichi-Sti,FC Energetik-Bgu Minsk,0,2,A
+2020-05-02,FC Minsk,Torpedo Zhodino,2,5,A
+2020-05-02,Ruh Brest,Gorodeya,1,1,D
+2020-05-02,Dinamo Minsk,FC Slutsk,1,2,A
+2020-05-03,Belshina,Dinamo Brest,0,3,A
+2020-05-03,FC Vitebsk,Slavia Mozyr,2,3,A
+2020-05-03,Bate Borisov,Neman,3,1,H
+2020-05-03,Shakhter Soligorsk,FC Isloch Minsk R.,4,0,H
+2020-05-08,FC Slutsk,FC Energetik-Bgu Minsk,1,2,A
+2020-05-08,Gorodeya,FC Minsk,1,1,D
+2020-05-09,Slavia Mozyr,Torpedo Zhodino,0,0,D
+2020-05-09,Neman,Ruh Brest,2,4,A
+2020-05-10,FC Isloch Minsk R.,Belshina,2,1,H
+2020-05-10,FC Vitebsk,Shakhter Soligorsk,0,0,D
+2020-05-10,Smolevichi-Sti,Bate Borisov,3,5,A
+2020-05-10,Dinamo Brest,Dinamo Minsk,2,1,H
+2020-05-15,Torpedo Zhodino,Gorodeya,3,1,H
+2020-05-16,FC Energetik-Bgu Minsk,Dinamo Brest,2,1,H
+2020-05-16,Shakhter Soligorsk,Slavia Mozyr,2,0,H
+2020-05-16,Bate Borisov,FC Slutsk,3,0,H
+2020-05-17,Belshina,FC Vitebsk,1,1,D
+2020-05-17,Dinamo Minsk,FC Isloch Minsk R.,1,0,H
+2020-05-17,Ruh Brest,Smolevichi-Sti,0,0,D
+2020-05-20,Dinamo Brest,Bate Borisov,1,3,A
+2020-05-21,Neman,Torpedo Zhodino,3,1,H
+2020-05-22,Slavia Mozyr,Gorodeya,1,1,D
+2020-05-22,Shakhter Soligorsk,Belshina,4,0,H
+2020-05-23,FC Slutsk,Ruh Brest,1,1,D
+2020-05-23,FC Isloch Minsk R.,FC Energetik-Bgu Minsk,1,2,A
+2020-05-23,FC Vitebsk,Dinamo Minsk,1,1,D
+2020-05-29,Torpedo Zhodino,Smolevichi-Sti,2,1,H
+2020-05-29,Gorodeya,Neman,0,2,A
+2020-05-30,Belshina,Slavia Mozyr,2,3,A
+2020-05-30,Dinamo Minsk,Shakhter Soligorsk,0,1,A
+2020-05-31,FC Energetik-Bgu Minsk,FC Vitebsk,3,3,D
+2020-05-31,Bate Borisov,FC Isloch Minsk R.,1,0,H
+2020-05-31,Ruh Brest,Dinamo Brest,1,4,A
+2020-06-01,FC Minsk,FC Slutsk,1,0,H
+2020-06-05,Smolevichi-Sti,Gorodeya,4,1,H
+2020-06-06,FC Slutsk,Torpedo Zhodino,1,1,D
+2020-06-06,FC Isloch Minsk R.,Ruh Brest,1,1,D
+2020-06-06,Slavia Mozyr,Neman,1,3,A
+2020-06-06,Dinamo Brest,FC Minsk,6,1,H
+2020-06-07,FC Vitebsk,Bate Borisov,2,2,D
+2020-06-07,Belshina,Dinamo Minsk,0,4,A
+2020-06-07,Shakhter Soligorsk,FC Energetik-Bgu Minsk,1,0,H
+2020-06-12,FC Minsk,FC Isloch Minsk R.,0,1,A
+2020-06-12,Gorodeya,FC Slutsk,3,0,H
+2020-06-13,Neman,Smolevichi-Sti,2,0,H
+2020-06-13,Torpedo Zhodino,Dinamo Brest,0,2,A
+2020-06-13,Dinamo Minsk,Slavia Mozyr,1,0,H
+2020-06-14,FC Energetik-Bgu Minsk,Belshina,0,1,A
+2020-06-14,Ruh Brest,FC Vitebsk,0,1,A
+2020-06-14,Bate Borisov,Shakhter Soligorsk,2,2,D
+2020-06-19,Slavia Mozyr,Smolevichi-Sti,2,1,H
+2020-06-19,FC Slutsk,Neman,0,1,A
+2020-06-20,FC Isloch Minsk R.,Torpedo Zhodino,2,2,D
+2020-06-20,Dinamo Brest,Gorodeya,3,1,H
+2020-06-20,Dinamo Minsk,FC Energetik-Bgu Minsk,0,0,D
+2020-06-21,Belshina,Bate Borisov,0,2,A
+2020-06-21,FC Vitebsk,FC Minsk,1,0,H
+2020-06-21,Shakhter Soligorsk,Ruh Brest,1,1,D
+2020-06-26,FC Energetik-Bgu Minsk,Slavia Mozyr,5,0,H
+2020-06-26,Smolevichi-Sti,FC Slutsk,2,1,H
+2020-06-27,FC Minsk,Shakhter Soligorsk,1,1,D
+2020-06-27,Neman,Dinamo Brest,1,0,H
+2020-06-27,Bate Borisov,Dinamo Minsk,0,2,A
+2020-06-28,Torpedo Zhodino,FC Vitebsk,1,0,H
+2020-06-28,Ruh Brest,Belshina,3,0,H
+2020-06-28,Gorodeya,FC Isloch Minsk R.,0,2,A
+2020-07-03,Slavia Mozyr,FC Slutsk,3,1,H
+2020-07-03,Smolevichi-Sti,Dinamo Brest,3,3,D
+2020-07-04,Bate Borisov,FC Energetik-Bgu Minsk,0,1,A
+2020-07-04,Gorodeya,FC Vitebsk,2,2,D
+2020-07-04,Neman,FC Isloch Minsk R.,1,0,H
+2020-07-05,FC Minsk,Belshina,2,2,D
+2020-07-05,Torpedo Zhodino,Shakhter Soligorsk,1,4,A
+2020-07-05,Ruh Brest,Dinamo Minsk,1,0,H
+2020-07-10,Smolevichi-Sti,FC Isloch Minsk R.,3,1,H
+2020-07-11,Belshina,Torpedo Zhodino,2,1,H
+2020-07-11,Bate Borisov,Slavia Mozyr,1,1,D
+2020-07-11,Shakhter Soligorsk,Gorodeya,4,1,H
+2020-07-12,FC Energetik-Bgu Minsk,Ruh Brest,1,8,A
+2020-07-12,Dinamo Minsk,FC Minsk,1,0,H
+2020-07-12,FC Vitebsk,Neman,0,0,D
+2020-07-17,FC Slutsk,FC Isloch Minsk R.,2,1,H
+2020-07-17,Gorodeya,Belshina,2,1,H
+2020-07-18,FC Vitebsk,Smolevichi-Sti,1,0,H
+2020-07-18,Ruh Brest,Bate Borisov,0,3,A
+2020-07-19,FC Minsk,FC Energetik-Bgu Minsk,2,1,H
+2020-07-19,Neman,Shakhter Soligorsk,0,0,D
+2020-07-19,Torpedo Zhodino,Dinamo Minsk,0,0,D
+2020-07-24,Ruh Brest,Slavia Mozyr,3,3,D
+2020-07-24,FC Vitebsk,FC Slutsk,2,0,H
+2020-07-25,FC Isloch Minsk R.,Dinamo Brest,2,0,H
+2020-07-25,Belshina,Neman,0,1,A
+2020-07-25,Dinamo Minsk,Gorodeya,1,0,H
+2020-07-26,FC Energetik-Bgu Minsk,Torpedo Zhodino,1,4,A
+2020-07-26,Bate Borisov,FC Minsk,6,0,H
+2020-07-26,Shakhter Soligorsk,Smolevichi-Sti,4,0,H
+2020-07-31,FC Slutsk,Shakhter Soligorsk,0,2,A
+2020-07-31,Dinamo Brest,FC Vitebsk,1,0,H
+2020-08-01,Smolevichi-Sti,Belshina,0,3,A
+2020-08-01,Slavia Mozyr,FC Isloch Minsk R.,2,4,A
+2020-08-01,Neman,Dinamo Minsk,1,0,H
+2020-08-02,Torpedo Zhodino,Bate Borisov,3,2,H
+2020-08-02,FC Minsk,Ruh Brest,0,1,A
+2020-08-02,Gorodeya,FC Energetik-Bgu Minsk,1,1,D
+2020-08-06,Belshina,FC Slutsk,4,2,H
+2020-08-06,Shakhter Soligorsk,Dinamo Brest,1,0,H
+2020-08-07,FC Vitebsk,FC Isloch Minsk R.,2,3,A
+2020-08-08,FC Energetik-Bgu Minsk,Neman,1,1,D
+2020-08-08,Ruh Brest,Torpedo Zhodino,3,3,D
+2020-08-08,Bate Borisov,Gorodeya,1,0,H
+2020-08-21,FC Slutsk,Dinamo Minsk,1,2,A
+2020-08-21,FC Isloch Minsk R.,Shakhter Soligorsk,4,2,H
+2020-08-21,Dinamo Brest,Belshina,1,2,A
+2020-08-22,FC Energetik-Bgu Minsk,Smolevichi-Sti,4,1,H
+2020-08-22,Gorodeya,Ruh Brest,1,3,A
+2020-08-23,Slavia Mozyr,FC Vitebsk,1,1,D
+2020-08-23,Torpedo Zhodino,FC Minsk,1,1,D
+2020-08-23,Neman,Bate Borisov,0,2,A
+2020-08-29,FC Minsk,Neman,4,3,H
+2020-09-11,FC Minsk,Gorodeya,3,0,H
+2020-09-12,Ruh Brest,Neman,2,3,A
+2020-09-12,Bate Borisov,Smolevichi-Sti,5,2,H
+2020-09-12,Shakhter Soligorsk,FC Vitebsk,5,0,H
+2020-09-12,Dinamo Minsk,Dinamo Brest,2,4,A
+2020-09-13,Belshina,FC Isloch Minsk R.,2,3,A
+2020-09-13,Torpedo Zhodino,Slavia Mozyr,4,2,H
+2020-09-18,Smolevichi-Sti,Ruh Brest,0,6,A
+2020-09-18,Neman,FC Minsk,2,0,H
+2020-09-19,FC Vitebsk,Belshina,1,1,D
+2020-09-19,Dinamo Brest,FC Energetik-Bgu Minsk,2,1,H
+2020-09-19,Gorodeya,Torpedo Zhodino,1,3,A
+2020-09-20,FC Isloch Minsk R.,Dinamo Minsk,2,1,H
+2020-09-20,FC Slutsk,Bate Borisov,1,3,A
+2020-09-20,Slavia Mozyr,Shakhter Soligorsk,1,0,H
+2020-09-23,Smolevichi-Sti,FC Minsk,0,4,A
+2020-09-26,FC Energetik-Bgu Minsk,FC Isloch Minsk R.,1,1,D
+2020-09-26,Gorodeya,Slavia Mozyr,1,1,D
+2020-09-26,Torpedo Zhodino,Neman,0,1,A
+2020-09-26,Bate Borisov,Dinamo Brest,2,4,A
+2020-09-27,Dinamo Minsk,FC Vitebsk,1,0,H
+2020-09-27,Ruh Brest,FC Slutsk,5,0,H
+2020-09-28,FC Minsk,Smolevichi-Sti,2,1,H
+2020-10-02,Dinamo Minsk,Smolevichi-Sti,2,1,H
+2020-10-16,FC Slutsk,FC Minsk,2,1,H
+2020-10-17,FC Vitebsk,FC Energetik-Bgu Minsk,1,0,H
+2020-10-17,Neman,Gorodeya,0,1,A
+2020-10-18,Smolevichi-Sti,Torpedo Zhodino,1,4,A
+2020-10-18,FC Isloch Minsk R.,Bate Borisov,2,2,D
+2020-10-18,Shakhter Soligorsk,Dinamo Minsk,0,1,A
+2020-10-18,Dinamo Brest,Ruh Brest,5,2,H
+2020-10-21,FC Minsk,Slavia Mozyr,2,1,H
+2020-10-22,Dinamo Brest,FC Slutsk,3,1,H
+2020-10-24,Gorodeya,Smolevichi-Sti,4,0,H
+2020-10-24,Bate Borisov,FC Vitebsk,3,1,H
+2020-10-24,Dinamo Minsk,Belshina,3,1,H
+2020-10-25,Neman,Slavia Mozyr,1,2,A
+2020-10-25,FC Energetik-Bgu Minsk,Shakhter Soligorsk,1,2,A
+2020-10-25,Ruh Brest,FC Isloch Minsk R.,1,1,D
+2020-10-26,FC Minsk,Dinamo Brest,1,2,A
+2020-10-26,Torpedo Zhodino,FC Slutsk,4,1,H
+2020-10-31,Slavia Mozyr,Dinamo Brest,1,1,D
+2020-10-31,Belshina,Shakhter Soligorsk,1,5,A
+2020-11-01,FC Energetik-Bgu Minsk,FC Slutsk,0,2,A
+2020-11-04,Slavia Mozyr,Belshina,1,1,D
+2020-11-06,FC Isloch Minsk R.,FC Minsk,3,4,A
+2020-11-06,FC Vitebsk,Ruh Brest,0,0,D
+2020-11-07,Smolevichi-Sti,Neman,1,4,A
+2020-11-07,FC Slutsk,Gorodeya,0,1,A
+2020-11-07,Dinamo Brest,Torpedo Zhodino,2,3,A
+2020-11-07,Shakhter Soligorsk,Bate Borisov,1,1,D
+2020-11-08,Belshina,FC Energetik-Bgu Minsk,1,5,A
+2020-11-08,Slavia Mozyr,Dinamo Minsk,0,1,A
+2020-11-22,FC Minsk,FC Vitebsk,2,2,D
+2020-11-22,Smolevichi-Sti,Slavia Mozyr,0,3,A
+2020-11-22,Torpedo Zhodino,FC Isloch Minsk R.,2,0,H
+2020-11-22,Neman,FC Slutsk,1,0,H
+2020-11-22,Bate Borisov,Belshina,5,0,H
+2020-11-22,Gorodeya,Dinamo Brest,1,4,A
+2020-11-22,FC Energetik-Bgu Minsk,Dinamo Minsk,2,3,A
+2020-11-22,Ruh Brest,Shakhter Soligorsk,1,2,A
+2020-11-28,FC Vitebsk,Torpedo Zhodino,2,3,A
+2020-11-28,Dinamo Brest,Neman,3,1,H
+2020-11-28,FC Isloch Minsk R.,Gorodeya,2,2,D
+2020-11-28,Shakhter Soligorsk,FC Minsk,4,2,H
+2020-11-28,Dinamo Minsk,Bate Borisov,0,0,D
+2020-11-28,Slavia Mozyr,FC Energetik-Bgu Minsk,2,1,H
+2020-11-28,Belshina,Ruh Brest,3,7,A
+2020-12-15,NFK Minsk,FC Slutsk,0,2,A
+2020-12-19,FC Slutsk,NFK Minsk,2,1,H

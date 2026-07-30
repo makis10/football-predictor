@@ -1,0 +1,126 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2024-08-16,Manchester 62,College 1975,1,2,A
+2024-08-17,Lynx,Europa,1,3,A
+2024-08-17,Europa Point,Glacis United,0,4,A
+2024-08-18,Magpies,Lions Gibraltar,2,1,H
+2024-08-23,Manchester 62,Magpies,2,1,H
+2024-08-24,College 1975,St Joseph S Fc,0,4,A
+2024-08-25,Glacis United,Europa,1,2,A
+2024-08-25,Mons Calpe,Lynx,1,0,H
+2024-08-31,St Joseph S Fc,Glacis United,1,0,H
+2024-08-31,Lions Gibraltar,College 1975,1,0,H
+2024-09-01,Lynx,Europa Point,2,2,D
+2024-09-01,Europa,Mons Calpe,3,2,H
+2024-09-13,Glacis United,Lions Gibraltar,1,1,D
+2024-09-14,Magpies,Lincoln Red Imps FC,1,4,A
+2024-09-14,Manchester 62,Lynx,4,2,H
+2024-09-15,Mons Calpe,St Joseph S Fc,1,3,A
+2024-09-15,Europa Point,Europa,1,5,A
+2024-09-20,College 1975,Glacis United,0,2,A
+2024-09-21,Lynx,Magpies,0,3,A
+2024-09-21,Lions Gibraltar,Mons Calpe,4,2,H
+2024-09-22,Europa,Manchester 62,2,1,H
+2024-09-22,St Joseph S Fc,Europa Point,4,0,H
+2024-09-25,Lincoln Red Imps FC,Lynx,3,0,H
+2024-09-28,Mons Calpe,College 1975,3,0,H
+2024-09-28,Magpies,Europa,0,0,D
+2024-09-29,Europa Point,Lions Gibraltar,1,4,A
+2024-09-29,Manchester 62,St Joseph S Fc,1,1,D
+2024-10-03,St Joseph S Fc,Magpies,2,1,H
+2024-10-05,Europa,Lincoln Red Imps FC,0,0,D
+2024-10-05,College 1975,Europa Point,0,0,D
+2024-10-06,Glacis United,Mons Calpe,2,0,H
+2024-10-06,Lions Gibraltar,Manchester 62,2,2,D
+2024-10-18,Europa,College 1975,0,0,D
+2024-10-19,Magpies,Europa Point,3,2,H
+2024-10-19,Lynx,Glacis United,3,1,H
+2024-10-20,Lincoln Red Imps FC,Mons Calpe,3,0,H
+2024-10-20,St Joseph S Fc,Lions Gibraltar,2,1,H
+2024-10-23,Lincoln Red Imps FC,St Joseph S Fc,0,0,D
+2024-10-25,Mons Calpe,Europa Point,2,1,H
+2024-10-26,College 1975,Magpies,0,5,A
+2024-10-26,Glacis United,Manchester 62,0,2,A
+2024-10-27,Lions Gibraltar,Lincoln Red Imps FC,0,2,A
+2024-10-27,St Joseph S Fc,Lynx,3,1,H
+2024-10-30,Europa Point,Lincoln Red Imps FC,0,5,A
+2024-11-01,Europa,St Joseph S Fc,1,3,A
+2024-11-02,Manchester 62,Mons Calpe,4,1,H
+2024-11-02,Lynx,Lions Gibraltar,2,1,H
+2024-11-03,Magpies,Glacis United,3,1,H
+2024-11-03,Lincoln Red Imps FC,College 1975,5,1,H
+2024-11-06,Europa Point,Manchester 62,0,4,A
+2024-11-09,Glacis United,Lincoln Red Imps FC,0,6,A
+2024-11-09,Mons Calpe,Magpies,2,5,A
+2024-11-10,College 1975,Lynx,2,1,H
+2024-11-10,Lions Gibraltar,Europa,2,4,A
+2024-11-23,Lions Gibraltar,St Joseph S Fc,1,3,A
+2024-11-23,Europa Point,Magpies,0,7,A
+2024-11-24,College 1975,Europa,0,3,A
+2024-11-24,Mons Calpe,Lincoln Red Imps FC,0,3,A
+2024-11-25,Glacis United,Lynx,4,2,H
+2024-11-29,Magpies,Manchester 62,0,2,A
+2024-11-30,St Joseph S Fc,College 1975,1,0,H
+2024-11-30,Lincoln Red Imps FC,Europa Point,2,0,H
+2024-12-01,Lynx,Mons Calpe,1,2,A
+2024-12-01,Europa,Glacis United,8,0,H
+2024-12-04,Lincoln Red Imps FC,Manchester 62,3,0,H
+2024-12-06,College 1975,Lions Gibraltar,1,1,D
+2024-12-07,Manchester 62,Lincoln Red Imps FC,0,4,A
+2024-12-07,Glacis United,St Joseph S Fc,1,4,A
+2024-12-08,Europa Point,Lynx,1,1,D
+2024-12-08,Mons Calpe,Europa,1,3,A
+2024-12-13,Lynx,Manchester 62,3,2,H
+2024-12-14,Lions Gibraltar,Glacis United,4,1,H
+2024-12-14,Lincoln Red Imps FC,Magpies,2,0,H
+2024-12-15,St Joseph S Fc,Mons Calpe,2,1,H
+2024-12-15,Europa,Europa Point,3,0,H
+2024-12-20,Glacis United,College 1975,2,3,A
+2024-12-21,Magpies,Lynx,3,0,H
+2024-12-21,Mons Calpe,Lions Gibraltar,0,2,A
+2024-12-22,Manchester 62,Europa,2,2,D
+2024-12-22,Europa Point,St Joseph S Fc,1,6,A
+2025-01-08,College 1975,Mons Calpe,4,0,H
+2025-01-10,Lynx,Lincoln Red Imps FC,1,5,A
+2025-01-11,Europa,Magpies,2,0,H
+2025-01-12,Lions Gibraltar,Europa Point,3,2,H
+2025-01-12,St Joseph S Fc,Manchester 62,2,1,H
+2025-01-13,Mons Calpe,Glacis United,1,3,A
+2025-01-17,Lincoln Red Imps FC,Europa,3,1,H
+2025-02-05,Europa Point,College 1975,0,2,A
+2025-02-07,Europa,Lynx,3,0,H
+2025-02-08,Lions Gibraltar,Magpies,2,1,H
+2025-02-09,St Joseph S Fc,Lincoln Red Imps FC,0,0,D
+2025-02-09,College 1975,Manchester 62,0,2,A
+2025-02-10,Glacis United,Europa Point,3,0,H
+2025-02-19,Magpies,St Joseph S Fc,1,3,A
+2025-02-21,Europa Point,Mons Calpe,3,3,D
+2025-02-22,Lincoln Red Imps FC,Lions Gibraltar,1,2,A
+2025-02-22,Manchester 62,Glacis United,3,2,H
+2025-02-23,Lynx,St Joseph S Fc,0,7,A
+2025-02-23,Magpies,College 1975,3,2,H
+2025-02-26,Manchester 62,Lions Gibraltar,1,1,D
+2025-03-07,St Joseph S Fc,Europa,2,1,H
+2025-03-08,Mons Calpe,Manchester 62,0,4,A
+2025-03-08,Lions Gibraltar,Lynx,0,2,A
+2025-03-09,Glacis United,Magpies,0,5,A
+2025-03-09,College 1975,Lincoln Red Imps FC,0,2,A
+2025-03-14,Lincoln Red Imps FC,Glacis United,4,1,H
+2025-03-15,Magpies,Mons Calpe,4,1,H
+2025-03-15,Europa,Lions Gibraltar,3,0,H
+2025-03-16,Lynx,College 1975,3,1,H
+2025-03-16,Manchester 62,Europa Point,7,0,H
+2025-04-05,St Joseph S Fc,Lincoln Red Imps FC,0,1,A
+2025-04-05,Lions Gibraltar,Magpies,1,2,A
+2025-04-06,Manchester 62,Europa,1,2,A
+2025-04-11,Magpies,St Joseph S Fc,0,2,A
+2025-04-12,Europa,Lincoln Red Imps FC,0,4,A
+2025-04-13,Manchester 62,Lions Gibraltar,1,0,H
+2025-04-19,St Joseph S Fc,Europa,2,1,H
+2025-04-19,Magpies,Manchester 62,0,2,A
+2025-04-20,Lincoln Red Imps FC,Lions Gibraltar,3,0,H
+2025-04-25,Lions Gibraltar,Europa,1,4,A
+2025-04-26,Manchester 62,St Joseph S Fc,0,2,A
+2025-04-27,Lincoln Red Imps FC,Magpies,1,0,H
+2025-05-02,Manchester 62,Lincoln Red Imps FC,0,2,A
+2025-05-03,St Joseph S Fc,Lions Gibraltar,6,0,H
+2025-05-04,Europa,Magpies,4,2,H

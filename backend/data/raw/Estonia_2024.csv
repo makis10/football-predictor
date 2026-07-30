@@ -1,0 +1,183 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2024-03-01,Flora Tallinn,Nomme United,2,0,H
+2024-03-02,Kuressaare,Kalju Nomme,0,6,A
+2024-03-02,FC Levadia Tallinn,Trans Narva,6,0,H
+2024-03-03,Tallinna Kalev,Tammeka,1,1,D
+2024-03-03,Vaprus,Paide,0,3,A
+2024-03-09,Tammeka,Vaprus,1,0,H
+2024-03-09,Kalju Nomme,Trans Narva,3,0,H
+2024-03-09,Kuressaare,FC Levadia Tallinn,0,6,A
+2024-03-10,Paide,Nomme United,3,1,H
+2024-03-10,Flora Tallinn,Tallinna Kalev,2,2,D
+2024-03-16,Tallinna Kalev,FC Levadia Tallinn,0,2,A
+2024-03-16,Trans Narva,Tammeka,0,5,A
+2024-03-16,Paide,Flora Tallinn,2,1,H
+2024-03-17,Vaprus,Kuressaare,3,2,H
+2024-03-17,Nomme United,Kalju Nomme,0,0,D
+2024-03-29,Kuressaare,Tallinna Kalev,3,0,H
+2024-03-30,Vaprus,Kalju Nomme,1,2,A
+2024-03-30,Trans Narva,Nomme United,2,0,H
+2024-03-31,Tammeka,Flora Tallinn,0,0,D
+2024-03-31,FC Levadia Tallinn,Paide,2,0,H
+2024-04-05,Nomme United,Tammeka,2,1,H
+2024-04-06,Kalju Nomme,FC Levadia Tallinn,1,5,A
+2024-04-06,Paide,Kuressaare,3,1,H
+2024-04-06,Flora Tallinn,Trans Narva,4,3,H
+2024-04-07,Tallinna Kalev,Vaprus,3,1,H
+2024-04-13,Tammeka,Kuressaare,1,2,A
+2024-04-13,Trans Narva,Tallinna Kalev,2,2,D
+2024-04-13,FC Levadia Tallinn,Nomme United,2,0,H
+2024-04-14,Vaprus,Flora Tallinn,1,3,A
+2024-04-14,Kalju Nomme,Paide,2,1,H
+2024-04-16,Tallinna Kalev,FC Levadia Tallinn,1,2,A
+2024-04-17,Flora Tallinn,Paide,1,3,A
+2024-04-20,Nomme United,Tallinna Kalev,0,2,A
+2024-04-20,Paide,Tammeka,0,1,A
+2024-04-20,FC Levadia Tallinn,Vaprus,1,1,D
+2024-04-21,Kuressaare,Trans Narva,5,0,H
+2024-04-21,Flora Tallinn,Kalju Nomme,2,2,D
+2024-04-26,Vaprus,Nomme United,2,1,H
+2024-04-27,Tallinna Kalev,Kalju Nomme,0,2,A
+2024-04-27,Kuressaare,Flora Tallinn,2,2,D
+2024-04-28,Tammeka,FC Levadia Tallinn,0,3,A
+2024-04-28,Trans Narva,Paide,1,1,D
+2024-05-01,FC Levadia Tallinn,Paide,1,0,H
+2024-05-01,Tallinna Kalev,Flora Tallinn,0,3,A
+2024-05-03,Kalju Nomme,Tammeka,4,2,H
+2024-05-04,Nomme United,Kuressaare,1,1,D
+2024-05-04,Trans Narva,Vaprus,0,0,D
+2024-05-04,Paide,Tallinna Kalev,2,0,H
+2024-05-05,Flora Tallinn,FC Levadia Tallinn,1,0,H
+2024-05-11,Flora Tallinn,Vaprus,0,1,A
+2024-05-11,Kuressaare,Tammeka,0,0,D
+2024-05-12,FC Levadia Tallinn,Kalju Nomme,0,0,D
+2024-05-12,Tallinna Kalev,Trans Narva,1,0,H
+2024-05-12,Nomme United,Paide,0,1,A
+2024-05-18,Tammeka,Paide,1,2,A
+2024-05-18,Trans Narva,Flora Tallinn,1,3,A
+2024-05-18,Kalju Nomme,Kuressaare,3,0,H
+2024-05-19,Tallinna Kalev,Nomme United,2,0,H
+2024-05-19,Vaprus,FC Levadia Tallinn,0,2,A
+2024-05-21,Flora Tallinn,Kuressaare,1,0,H
+2024-05-22,FC Levadia Tallinn,Tallinna Kalev,2,2,D
+2024-05-22,Paide,Kalju Nomme,0,2,A
+2024-05-23,Nomme United,Trans Narva,1,3,A
+2024-05-23,Vaprus,Tammeka,1,1,D
+2024-05-27,Tammeka,Trans Narva,0,2,A
+2024-05-28,Kuressaare,Vaprus,2,2,D
+2024-05-28,Kalju Nomme,Nomme United,1,1,D
+2024-05-29,Paide,FC Levadia Tallinn,0,1,A
+2024-05-29,Tallinna Kalev,Flora Tallinn,2,3,A
+2024-05-31,Nomme United,Vaprus,2,1,H
+2024-06-01,Flora Tallinn,Paide,2,0,H
+2024-06-01,FC Levadia Tallinn,Kuressaare,2,0,H
+2024-06-02,Trans Narva,Kalju Nomme,4,1,H
+2024-06-02,Tammeka,Tallinna Kalev,4,0,H
+2024-06-15,Kalju Nomme,Flora Tallinn,0,0,D
+2024-06-15,Tallinna Kalev,Paide,2,5,A
+2024-06-15,Vaprus,Trans Narva,1,4,A
+2024-06-16,FC Levadia Tallinn,Tammeka,2,1,H
+2024-06-16,Kuressaare,Nomme United,1,1,D
+2024-06-18,Kalju Nomme,Tallinna Kalev,2,0,H
+2024-06-18,Paide,Vaprus,0,1,A
+2024-06-19,Trans Narva,Kuressaare,0,1,A
+2024-06-19,Nomme United,FC Levadia Tallinn,0,6,A
+2024-06-19,Flora Tallinn,Tammeka,3,1,H
+2024-06-28,Kuressaare,Paide,0,2,A
+2024-06-28,Tammeka,Kalju Nomme,1,1,D
+2024-06-28,Vaprus,Tallinna Kalev,0,1,A
+2024-06-29,Trans Narva,FC Levadia Tallinn,1,2,A
+2024-06-29,Nomme United,Flora Tallinn,1,1,D
+2024-07-03,Kalju Nomme,Vaprus,4,2,H
+2024-07-03,Tallinna Kalev,Kuressaare,2,2,D
+2024-07-04,FC Levadia Tallinn,Flora Tallinn,1,0,H
+2024-07-04,Paide,Trans Narva,2,2,D
+2024-07-04,Tammeka,Nomme United,2,1,H
+2024-07-12,Kuressaare,Tammeka,0,0,D
+2024-07-13,Vaprus,Nomme United,2,0,H
+2024-07-13,Trans Narva,Kalju Nomme,2,2,D
+2024-07-19,Tammeka,Flora Tallinn,2,0,H
+2024-07-19,Nomme United,Kalju Nomme,0,4,A
+2024-07-20,Vaprus,Trans Narva,0,0,D
+2024-07-21,FC Levadia Tallinn,Kuressaare,0,0,D
+2024-07-21,Paide,Tallinna Kalev,3,1,H
+2024-07-26,Trans Narva,Nomme United,2,1,H
+2024-07-27,Kalju Nomme,Tammeka,3,0,H
+2024-07-28,Kuressaare,Vaprus,1,1,D
+2024-08-02,Tammeka,Vaprus,0,1,A
+2024-08-03,Tallinna Kalev,Kalju Nomme,0,2,A
+2024-08-03,Flora Tallinn,Trans Narva,3,1,H
+2024-08-04,Kuressaare,Paide,0,2,A
+2024-08-04,Nomme United,FC Levadia Tallinn,0,1,A
+2024-08-09,Tallinna Kalev,Kuressaare,0,3,A
+2024-08-10,Vaprus,FC Levadia Tallinn,1,4,A
+2024-08-11,Tammeka,Nomme United,1,1,D
+2024-08-16,FC Levadia Tallinn,Tammeka,3,1,H
+2024-08-17,Trans Narva,Tallinna Kalev,2,2,D
+2024-08-18,Kalju Nomme,Kuressaare,5,1,H
+2024-08-18,Paide,Vaprus,1,0,H
+2024-08-18,Flora Tallinn,Nomme United,1,0,H
+2024-08-23,Vaprus,Flora Tallinn,0,1,A
+2024-08-24,Kuressaare,Trans Narva,0,1,A
+2024-08-24,Tammeka,Paide,1,3,A
+2024-08-25,Nomme United,Tallinna Kalev,1,1,D
+2024-08-25,FC Levadia Tallinn,Kalju Nomme,3,0,H
+2024-08-30,Flora Tallinn,FC Levadia Tallinn,2,1,H
+2024-08-31,Trans Narva,Tammeka,0,1,A
+2024-09-01,Nomme United,Kuressaare,2,2,D
+2024-09-01,Kalju Nomme,Paide,2,4,A
+2024-09-01,Tallinna Kalev,Vaprus,1,0,H
+2024-09-13,Tammeka,Tallinna Kalev,4,1,H
+2024-09-14,Kuressaare,Flora Tallinn,3,4,A
+2024-09-14,Paide,Nomme United,7,2,H
+2024-09-15,Vaprus,Kalju Nomme,0,4,A
+2024-09-17,Trans Narva,Flora Tallinn,1,1,D
+2024-09-17,Kuressaare,FC Levadia Tallinn,0,1,A
+2024-09-17,Tallinna Kalev,Paide,3,2,H
+2024-09-18,Kalju Nomme,Nomme United,3,0,H
+2024-09-18,Vaprus,Tammeka,2,2,D
+2024-09-21,Paide,Kuressaare,4,3,H
+2024-09-21,Nomme United,Trans Narva,0,4,A
+2024-09-21,Flora Tallinn,Tammeka,2,1,H
+2024-09-22,Kalju Nomme,Tallinna Kalev,3,1,H
+2024-09-22,FC Levadia Tallinn,Vaprus,3,1,H
+2024-09-25,Kalju Nomme,Flora Tallinn,3,0,H
+2024-09-25,Paide,Trans Narva,2,3,A
+2024-09-27,FC Levadia Tallinn,Tallinna Kalev,4,0,H
+2024-09-28,Kuressaare,Nomme United,4,1,H
+2024-09-29,Flora Tallinn,Vaprus,3,0,H
+2024-09-29,Trans Narva,Paide,0,3,A
+2024-09-29,Tammeka,Kalju Nomme,2,3,A
+2024-10-02,FC Levadia Tallinn,Trans Narva,0,0,D
+2024-10-05,Nomme United,Flora Tallinn,0,4,A
+2024-10-05,Trans Narva,FC Levadia Tallinn,0,2,A
+2024-10-05,Tallinna Kalev,Tammeka,1,2,A
+2024-10-06,Paide,Kalju Nomme,1,1,D
+2024-10-06,Vaprus,Kuressaare,3,1,H
+2024-10-19,Kuressaare,Tallinna Kalev,2,1,H
+2024-10-19,Nomme United,Vaprus,0,2,A
+2024-10-19,Tammeka,FC Levadia Tallinn,0,3,A
+2024-10-20,Kalju Nomme,Trans Narva,2,2,D
+2024-10-20,Paide,Flora Tallinn,2,1,H
+2024-10-22,FC Levadia Tallinn,Nomme United,1,1,D
+2024-10-22,Tammeka,Kuressaare,2,1,H
+2024-10-23,Vaprus,Paide,0,1,A
+2024-10-23,Tallinna Kalev,Trans Narva,0,1,A
+2024-10-23,Flora Tallinn,Kalju Nomme,3,2,H
+2024-10-26,Flora Tallinn,Kuressaare,3,0,H
+2024-10-26,Paide,Tammeka,2,0,H
+2024-10-26,Tallinna Kalev,Nomme United,1,0,H
+2024-10-27,Trans Narva,Vaprus,1,1,D
+2024-10-27,Kalju Nomme,FC Levadia Tallinn,0,4,A
+2024-11-02,Kuressaare,Kalju Nomme,1,2,A
+2024-11-03,Tammeka,Trans Narva,3,3,D
+2024-11-03,Nomme United,Paide,0,4,A
+2024-11-03,FC Levadia Tallinn,Flora Tallinn,4,2,H
+2024-11-03,Vaprus,Tallinna Kalev,2,0,H
+2024-11-09,Kalju Nomme,Vaprus,2,1,H
+2024-11-09,Flora Tallinn,Tallinna Kalev,5,1,H
+2024-11-09,Trans Narva,Kuressaare,0,2,A
+2024-11-09,Paide,FC Levadia Tallinn,3,0,H
+2024-11-09,Nomme United,Tammeka,1,2,A
+2024-11-24,Viimsi,Tallinna Kalev,1,1,D
+2024-11-30,Tallinna Kalev,Viimsi,1,0,H

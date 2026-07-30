@@ -133,7 +133,7 @@ async function UpcomingGrid({
   return (
     <>
       {/* Top 3 picks — shown when no league filter is active */}
-      {showPicks && <TopPicks matches={matches} />}
+      {showPicks && <TopPicks matches={matches} t={t} />}
 
       {Object.entries(byDate).map(([dateStr, dayMatches]) => (
         <div key={dateStr} className="col-span-full space-y-4">

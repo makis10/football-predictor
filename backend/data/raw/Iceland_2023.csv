@@ -1,0 +1,163 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2023-04-10,Fylkir,Keflavik,1,2,A
+2023-04-10,KA Akureyri,KR Reykjavik,1,1,D
+2023-04-10,Valur Reykjavik,IBV Vestmannaeyjar,2,1,H
+2023-04-10,Stjarnan,Vikingur Reykjavik,0,2,A
+2023-04-10,Fram Reykjavik,FH hafnarfjordur,2,2,D
+2023-04-10,Breidablik,HK Kopavogur,3,4,A
+2023-04-15,Keflavik,KR Reykjavik,0,2,A
+2023-04-15,FH hafnarfjordur,Stjarnan,1,0,H
+2023-04-15,KA Akureyri,IBV Vestmannaeyjar,3,0,H
+2023-04-16,Vikingur Reykjavik,Fylkir,2,0,H
+2023-04-16,Valur Reykjavik,Breidablik,0,2,A
+2023-04-16,HK Kopavogur,Fram Reykjavik,1,1,D
+2023-04-23,IBV Vestmannaeyjar,Breidablik,2,1,H
+2023-04-23,KA Akureyri,Keflavik,0,0,D
+2023-04-23,Fram Reykjavik,Valur Reykjavik,1,3,A
+2023-04-24,Fylkir,FH hafnarfjordur,4,2,H
+2023-04-24,Stjarnan,HK Kopavogur,5,4,H
+2023-04-24,Vikingur Reykjavik,KR Reykjavik,3,0,H
+2023-04-28,Breidablik,Fram Reykjavik,5,4,H
+2023-04-29,FH hafnarfjordur,KR Reykjavik,3,0,H
+2023-04-29,HK Kopavogur,Fylkir,1,0,H
+2023-04-29,Keflavik,IBV Vestmannaeyjar,1,3,A
+2023-04-29,Vikingur Reykjavik,KA Akureyri,1,0,H
+2023-04-29,Valur Reykjavik,Stjarnan,3,2,H
+2023-05-03,KA Akureyri,FH hafnarfjordur,4,2,H
+2023-05-03,Fram Reykjavik,IBV Vestmannaeyjar,3,1,H
+2023-05-03,KR Reykjavik,HK Kopavogur,0,1,A
+2023-05-03,Fylkir,Valur Reykjavik,1,6,A
+2023-05-04,Stjarnan,Breidablik,0,2,A
+2023-05-04,Vikingur Reykjavik,Keflavik,4,1,H
+2023-05-07,HK Kopavogur,KA Akureyri,1,2,A
+2023-05-07,Valur Reykjavik,KR Reykjavik,5,0,H
+2023-05-08,IBV Vestmannaeyjar,Vikingur Reykjavik,0,1,A
+2023-05-08,FH hafnarfjordur,Keflavik,2,1,H
+2023-05-08,Fram Reykjavik,Stjarnan,2,1,H
+2023-05-08,Fylkir,Breidablik,1,2,A
+2023-05-13,Stjarnan,IBV Vestmannaeyjar,4,0,H
+2023-05-13,KR Reykjavik,Breidablik,0,1,A
+2023-05-13,KA Akureyri,Valur Reykjavik,0,4,A
+2023-05-14,Keflavik,HK Kopavogur,0,2,A
+2023-05-14,Fylkir,Fram Reykjavik,3,1,H
+2023-05-14,Vikingur Reykjavik,FH hafnarfjordur,2,0,H
+2023-05-21,Breidablik,KA Akureyri,2,0,H
+2023-05-21,Valur Reykjavik,Keflavik,0,0,D
+2023-05-21,HK Kopavogur,Vikingur Reykjavik,1,2,A
+2023-05-22,IBV Vestmannaeyjar,FH hafnarfjordur,2,3,A
+2023-05-22,Stjarnan,Fylkir,2,2,D
+2023-05-22,Fram Reykjavik,KR Reykjavik,1,2,A
+2023-05-25,KA Akureyri,Vikingur Reykjavik,0,4,A
+2023-05-25,Breidablik,Valur Reykjavik,1,0,H
+2023-05-28,Fylkir,IBV Vestmannaeyjar,2,1,H
+2023-05-28,FH hafnarfjordur,HK Kopavogur,4,3,H
+2023-05-28,KR Reykjavik,Stjarnan,1,0,H
+2023-05-29,KA Akureyri,Fram Reykjavik,4,2,H
+2023-05-29,Keflavik,Breidablik,0,0,D
+2023-05-29,Vikingur Reykjavik,Valur Reykjavik,2,3,A
+2023-06-01,IBV Vestmannaeyjar,HK Kopavogur,3,0,H
+2023-06-01,Fylkir,KR Reykjavik,3,3,D
+2023-06-02,Stjarnan,KA Akureyri,4,0,H
+2023-06-02,Valur Reykjavik,FH hafnarfjordur,1,1,D
+2023-06-02,Breidablik,Vikingur Reykjavik,2,2,D
+2023-06-02,Fram Reykjavik,Keflavik,4,1,H
+2023-06-10,KR Reykjavik,IBV Vestmannaeyjar,1,1,D
+2023-06-10,KA Akureyri,Fylkir,2,1,H
+2023-06-10,FH hafnarfjordur,Breidablik,2,2,D
+2023-06-11,HK Kopavogur,Valur Reykjavik,0,5,A
+2023-06-11,Keflavik,Stjarnan,1,1,D
+2023-06-11,Vikingur Reykjavik,Fram Reykjavik,3,1,H
+2023-06-23,Keflavik,Fylkir,1,1,D
+2023-06-23,FH hafnarfjordur,Fram Reykjavik,4,0,H
+2023-06-23,HK Kopavogur,Breidablik,5,2,H
+2023-06-24,IBV Vestmannaeyjar,Valur Reykjavik,0,3,A
+2023-06-24,KR Reykjavik,KA Akureyri,2,0,H
+2023-06-24,Vikingur Reykjavik,Stjarnan,2,0,H
+2023-06-28,IBV Vestmannaeyjar,KA Akureyri,2,0,H
+2023-06-28,KR Reykjavik,Keflavik,2,0,H
+2023-06-28,Fram Reykjavik,HK Kopavogur,3,2,H
+2023-06-29,Fylkir,Vikingur Reykjavik,1,3,A
+2023-06-29,Stjarnan,FH hafnarfjordur,5,0,H
+2023-07-07,Breidablik,Fylkir,5,1,H
+2023-07-08,IBV Vestmannaeyjar,Fram Reykjavik,1,0,H
+2023-07-08,Keflavik,Vikingur Reykjavik,3,3,D
+2023-07-12,Valur Reykjavik,Fylkir,2,1,H
+2023-07-13,HK Kopavogur,KR Reykjavik,1,1,D
+2023-07-14,Fram Reykjavik,Breidablik,0,1,A
+2023-07-16,IBV Vestmannaeyjar,Keflavik,1,1,D
+2023-07-17,Stjarnan,Valur Reykjavik,2,0,H
+2023-07-18,Fylkir,HK Kopavogur,0,0,D
+2023-07-18,KR Reykjavik,FH hafnarfjordur,1,0,H
+2023-07-21,Breidablik,IBV Vestmannaeyjar,3,1,H
+2023-07-23,KR Reykjavik,Vikingur Reykjavik,1,2,A
+2023-07-23,Valur Reykjavik,Fram Reykjavik,1,0,H
+2023-07-23,HK Kopavogur,Stjarnan,1,1,D
+2023-07-24,Keflavik,KA Akureyri,3,4,A
+2023-07-24,FH hafnarfjordur,Fylkir,2,4,A
+2023-07-26,Stjarnan,Fram Reykjavik,4,0,H
+2023-07-29,Breidablik,Stjarnan,1,1,D
+2023-07-30,KA Akureyri,HK Kopavogur,1,1,D
+2023-07-30,Vikingur Reykjavik,IBV Vestmannaeyjar,6,0,H
+2023-07-31,Keflavik,FH hafnarfjordur,2,3,A
+2023-07-31,KR Reykjavik,Valur Reykjavik,0,4,A
+2023-08-05,IBV Vestmannaeyjar,Stjarnan,0,2,A
+2023-08-06,Breidablik,KR Reykjavik,3,4,A
+2023-08-07,Valur Reykjavik,KA Akureyri,4,2,H
+2023-08-08,FH hafnarfjordur,Vikingur Reykjavik,1,3,A
+2023-08-08,Fram Reykjavik,Fylkir,1,1,D
+2023-08-09,HK Kopavogur,Keflavik,3,1,H
+2023-08-13,KA Akureyri,Breidablik,1,1,D
+2023-08-13,Keflavik,Valur Reykjavik,1,1,D
+2023-08-13,FH hafnarfjordur,IBV Vestmannaeyjar,2,1,H
+2023-08-13,KR Reykjavik,Fram Reykjavik,3,2,H
+2023-08-13,Vikingur Reykjavik,HK Kopavogur,6,1,H
+2023-08-14,Fylkir,Stjarnan,0,4,A
+2023-08-20,IBV Vestmannaeyjar,Fylkir,0,1,A
+2023-08-20,Fram Reykjavik,KA Akureyri,2,1,H
+2023-08-20,Breidablik,Keflavik,2,1,H
+2023-08-20,Valur Reykjavik,Vikingur Reykjavik,0,4,A
+2023-08-20,HK Kopavogur,FH hafnarfjordur,2,2,D
+2023-08-21,Stjarnan,KR Reykjavik,3,1,H
+2023-08-26,KA Akureyri,Stjarnan,2,1,H
+2023-08-26,FH hafnarfjordur,Valur Reykjavik,3,2,H
+2023-08-27,Keflavik,Fram Reykjavik,0,0,D
+2023-08-27,KR Reykjavik,Fylkir,2,0,H
+2023-08-27,Vikingur Reykjavik,Breidablik,5,3,H
+2023-08-28,HK Kopavogur,IBV Vestmannaeyjar,2,2,D
+2023-08-30,FH hafnarfjordur,KA Akureyri,0,3,A
+2023-09-03,Fylkir,KA Akureyri,1,1,D
+2023-09-03,IBV Vestmannaeyjar,KR Reykjavik,2,2,D
+2023-09-03,Valur Reykjavik,HK Kopavogur,4,1,H
+2023-09-03,Stjarnan,Keflavik,3,0,H
+2023-09-03,Breidablik,FH hafnarfjordur,0,2,A
+2023-09-03,Fram Reykjavik,Vikingur Reykjavik,2,3,A
+2023-09-17,Fylkir,IBV Vestmannaeyjar,2,2,D
+2023-09-17,Breidablik,FH hafnarfjordur,0,2,A
+2023-09-17,Valur Reykjavik,Stjarnan,2,0,H
+2023-09-18,HK Kopavogur,Fram Reykjavik,1,1,D
+2023-09-20,KA Akureyri,Keflavik,4,2,H
+2023-09-20,Vikingur Reykjavik,KR Reykjavik,2,2,D
+2023-09-23,IBV Vestmannaeyjar,Fram Reykjavik,2,2,D
+2023-09-24,Keflavik,HK Kopavogur,2,1,H
+2023-09-24,FH hafnarfjordur,Stjarnan,1,3,A
+2023-09-24,KR Reykjavik,Valur Reykjavik,2,2,D
+2023-09-24,Fylkir,KA Akureyri,2,4,A
+2023-09-25,Breidablik,Vikingur Reykjavik,3,1,H
+2023-09-28,KA Akureyri,IBV Vestmannaeyjar,2,1,H
+2023-09-28,Valur Reykjavik,Breidablik,4,2,H
+2023-09-28,Stjarnan,KR Reykjavik,2,0,H
+2023-09-28,Vikingur Reykjavik,FH hafnarfjordur,2,1,H
+2023-09-28,HK Kopavogur,Fylkir,2,2,D
+2023-09-28,Fram Reykjavik,Keflavik,3,1,H
+2023-10-01,Keflavik,Fylkir,1,3,A
+2023-10-01,KR Reykjavik,Breidablik,4,3,H
+2023-10-01,HK Kopavogur,IBV Vestmannaeyjar,0,1,A
+2023-10-01,Fram Reykjavik,KA Akureyri,1,0,H
+2023-10-01,Valur Reykjavik,FH hafnarfjordur,4,1,H
+2023-10-02,Stjarnan,Vikingur Reykjavik,3,1,H
+2023-10-07,Fylkir,Fram Reykjavik,5,1,H
+2023-10-07,IBV Vestmannaeyjar,Keflavik,1,1,D
+2023-10-07,FH hafnarfjordur,KR Reykjavik,3,1,H
+2023-10-07,KA Akureyri,HK Kopavogur,1,0,H
+2023-10-07,Vikingur Reykjavik,Valur Reykjavik,5,1,H
+2023-10-08,Breidablik,Stjarnan,0,2,A

@@ -1,0 +1,312 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2019-08-16,Giresunspor,Menemen FK,0,2,A
+2019-08-17,Fatih Karagumruk,Bursaspor,3,1,H
+2019-08-17,Osmanlispor,Boluspor,2,1,H
+2019-08-17,Adana Demirspor,Balkesirspor,2,0,H
+2019-08-18,Hatayspor,Altnordu,1,0,H
+2019-08-18,Erzurumspor FK,Istanbulspor,2,2,D
+2019-08-18,Akhisarspor,Adanaspor,1,0,H
+2019-08-18,Altay,Umraniyespor,1,3,A
+2019-08-19,Eskisehirspor,Keciorengucu,1,1,D
+2019-08-23,Boluspor,Adana Demirspor,0,0,D
+2019-08-24,Keciorengucu,Osmanlispor,1,0,H
+2019-08-24,Altnordu,Fatih Karagumruk,1,2,A
+2019-08-24,Balkesirspor,Erzurumspor FK,2,1,H
+2019-08-25,Umraniyespor,Giresunspor,4,1,H
+2019-08-25,Menemen FK,Hatayspor,0,4,A
+2019-08-25,Bursaspor,Akhisarspor,2,1,H
+2019-08-25,Adanaspor,Eskisehirspor,3,2,H
+2019-08-26,Istanbulspor,Altay,2,2,D
+2019-08-30,Osmanlispor,Adanaspor,2,2,D
+2019-08-31,Umraniyespor,Istanbulspor,2,1,H
+2019-08-31,Erzurumspor FK,Boluspor,1,0,H
+2019-08-31,Akhisarspor,Altnordu,0,0,D
+2019-08-31,Altay,Balkesirspor,1,0,H
+2019-09-01,Giresunspor,Hatayspor,2,2,D
+2019-09-01,Fatih Karagumruk,Menemen FK,1,1,D
+2019-09-01,Adana Demirspor,Keciorengucu,0,0,D
+2019-09-01,Eskisehirspor,Bursaspor,0,2,A
+2019-09-13,Balkesirspor,Umraniyespor,2,0,H
+2019-09-14,Keciorengucu,Erzurumspor FK,1,0,H
+2019-09-14,Altnordu,Eskisehirspor,4,1,H
+2019-09-14,Boluspor,Altay,0,2,A
+2019-09-15,Bursaspor,Osmanlispor,3,1,H
+2019-09-15,Istanbulspor,Giresunspor,2,1,H
+2019-09-15,Adanaspor,Adana Demirspor,0,0,D
+2019-09-15,Menemen FK,Akhisarspor,0,1,A
+2019-09-16,Hatayspor,Fatih Karagumruk,0,0,D
+2019-09-20,Erzurumspor FK,Adanaspor,2,1,H
+2019-09-20,Istanbulspor,Balkesirspor,2,2,D
+2019-09-21,Umraniyespor,Boluspor,1,1,D
+2019-09-21,Osmanlispor,Altnordu,2,1,H
+2019-09-21,Altay,Keciorengucu,0,0,D
+2019-09-21,Adana Demirspor,Bursaspor,4,1,H
+2019-09-22,Giresunspor,Fatih Karagumruk,1,1,D
+2019-09-22,Eskisehirspor,Menemen FK,3,0,H
+2019-09-22,Akhisarspor,Hatayspor,3,1,H
+2019-09-28,Keciorengucu,Umraniyespor,1,1,D
+2019-09-28,Boluspor,Istanbulspor,1,2,A
+2019-09-28,Bursaspor,Erzurumspor FK,1,0,H
+2019-09-28,Adanaspor,Altay,3,3,D
+2019-09-29,Hatayspor,Eskisehirspor,1,0,H
+2019-09-29,Fatih Karagumruk,Akhisarspor,2,3,A
+2019-09-29,Balkesirspor,Giresunspor,2,0,H
+2019-09-29,Menemen FK,Osmanlispor,1,2,A
+2019-09-30,Altnordu,Adana Demirspor,2,2,D
+2019-10-04,Altay,Bursaspor,2,1,H
+2019-10-05,Giresunspor,Akhisarspor,1,0,H
+2019-10-05,Eskisehirspor,Fatih Karagumruk,1,3,A
+2019-10-05,Istanbulspor,Keciorengucu,1,1,D
+2019-10-05,Balkesirspor,Boluspor,3,2,H
+2019-10-06,Umraniyespor,Adanaspor,2,1,H
+2019-10-06,Osmanlispor,Hatayspor,0,1,A
+2019-10-06,Erzurumspor FK,Altnordu,1,0,H
+2019-10-06,Adana Demirspor,Menemen FK,0,1,A
+2019-10-18,Akhisarspor,Eskisehirspor,2,1,H
+2019-10-19,Hatayspor,Adana Demirspor,2,1,H
+2019-10-19,Bursaspor,Umraniyespor,2,1,H
+2019-10-19,Menemen FK,Erzurumspor FK,0,0,D
+2019-10-20,Keciorengucu,Balkesirspor,1,0,H
+2019-10-20,Boluspor,Giresunspor,2,0,H
+2019-10-20,Adanaspor,Istanbulspor,2,2,D
+2019-10-20,Altnordu,Altay,0,3,A
+2019-10-21,Fatih Karagumruk,Osmanlispor,2,0,H
+2019-10-25,Boluspor,Keciorengucu,3,1,H
+2019-10-26,Umraniyespor,Altnordu,4,0,H
+2019-10-26,Balkesirspor,Adanaspor,3,0,H
+2019-10-26,Istanbulspor,Bursaspor,1,2,A
+2019-10-26,Altay,Menemen FK,0,2,A
+2019-10-27,Erzurumspor FK,Hatayspor,3,1,H
+2019-10-27,Giresunspor,Eskisehirspor,3,1,H
+2019-10-27,Adana Demirspor,Fatih Karagumruk,1,1,D
+2019-10-28,Osmanlispor,Akhisarspor,2,1,H
+2019-11-02,Hatayspor,Altay,3,2,H
+2019-11-02,Adanaspor,Boluspor,0,0,D
+2019-11-02,Menemen FK,Umraniyespor,3,0,H
+2019-11-02,Akhisarspor,Adana Demirspor,1,1,D
+2019-11-03,Keciorengucu,Giresunspor,0,0,D
+2019-11-03,Eskisehirspor,Osmanlispor,3,2,H
+2019-11-03,Fatih Karagumruk,Erzurumspor FK,0,1,A
+2019-11-03,Altnordu,Istanbulspor,1,1,D
+2019-11-04,Bursaspor,Balkesirspor,0,0,D
+2019-11-08,Adana Demirspor,Eskisehirspor,2,3,A
+2019-11-09,Erzurumspor FK,Akhisarspor,0,0,D
+2019-11-09,Giresunspor,Osmanlispor,2,1,H
+2019-11-09,Istanbulspor,Menemen FK,1,2,A
+2019-11-09,Altay,Fatih Karagumruk,0,1,A
+2019-11-10,Umraniyespor,Hatayspor,0,0,D
+2019-11-10,Keciorengucu,Adanaspor,2,0,H
+2019-11-10,Boluspor,Bursaspor,1,1,D
+2019-11-10,Balkesirspor,Altnordu,0,0,D
+2019-11-22,Adanaspor,Giresunspor,1,1,D
+2019-11-23,Fatih Karagumruk,Umraniyespor,2,3,A
+2019-11-23,Eskisehirspor,Erzurumspor FK,1,2,A
+2019-11-23,Bursaspor,Keciorengucu,1,0,H
+2019-11-24,Hatayspor,Istanbulspor,1,0,H
+2019-11-24,Osmanlispor,Adana Demirspor,2,3,A
+2019-11-24,Menemen FK,Balkesirspor,1,0,H
+2019-11-24,Akhisarspor,Altay,2,1,H
+2019-11-25,Altnordu,Boluspor,2,0,H
+2019-11-29,Istanbulspor,Fatih Karagumruk,4,0,H
+2019-11-30,Keciorengucu,Altnordu,2,1,H
+2019-11-30,Erzurumspor FK,Osmanlispor,2,0,H
+2019-11-30,Adanaspor,Bursaspor,2,3,A
+2019-12-01,Giresunspor,Adana Demirspor,1,0,H
+2019-12-01,Umraniyespor,Akhisarspor,2,2,D
+2019-12-01,Boluspor,Menemen FK,2,2,D
+2019-12-01,Altay,Eskisehirspor,1,1,D
+2019-12-02,Balkesirspor,Hatayspor,0,1,A
+2019-12-06,Eskisehirspor,Umraniyespor,3,1,H
+2019-12-07,Hatayspor,Boluspor,3,0,H
+2019-12-07,Fatih Karagumruk,Balkesirspor,0,0,D
+2019-12-07,Akhisarspor,Istanbulspor,4,3,H
+2019-12-08,Osmanlispor,Altay,0,0,D
+2019-12-08,Bursaspor,Giresunspor,2,3,A
+2019-12-08,Altnordu,Adanaspor,1,0,H
+2019-12-08,Adana Demirspor,Erzurumspor FK,1,0,H
+2019-12-09,Menemen FK,Keciorengucu,1,1,D
+2019-12-13,Altay,Adana Demirspor,1,0,H
+2019-12-14,Erzurumspor FK,Giresunspor,2,0,H
+2019-12-14,Boluspor,Fatih Karagumruk,0,2,A
+2019-12-14,Istanbulspor,Eskisehirspor,1,0,H
+2019-12-14,Adanaspor,Menemen FK,1,3,A
+2019-12-15,Umraniyespor,Osmanlispor,1,0,H
+2019-12-15,Keciorengucu,Hatayspor,0,1,A
+2019-12-15,Balkesirspor,Akhisarspor,0,0,D
+2019-12-15,Altnordu,Bursaspor,0,0,D
+2019-12-20,Adana Demirspor,Umraniyespor,4,2,H
+2019-12-21,Hatayspor,Adanaspor,1,0,H
+2019-12-21,Eskisehirspor,Balkesirspor,1,2,A
+2019-12-21,Akhisarspor,Boluspor,0,0,D
+2019-12-22,Osmanlispor,Istanbulspor,1,1,D
+2019-12-22,Erzurumspor FK,Altay,1,3,A
+2019-12-22,Fatih Karagumruk,Keciorengucu,0,2,A
+2019-12-22,Menemen FK,Bursaspor,2,1,H
+2019-12-23,Giresunspor,Altnordu,1,1,D
+2019-12-27,Adanaspor,Fatih Karagumruk,2,0,H
+2019-12-28,Umraniyespor,Erzurumspor FK,1,2,A
+2019-12-28,Bursaspor,Hatayspor,2,1,H
+2019-12-28,Balkesirspor,Osmanlispor,1,1,D
+2019-12-28,Altnordu,Menemen FK,1,0,H
+2019-12-29,Boluspor,Eskisehirspor,1,1,D
+2019-12-29,Keciorengucu,Akhisarspor,1,0,H
+2019-12-29,Istanbulspor,Adana Demirspor,0,2,A
+2019-12-29,Altay,Giresunspor,0,0,D
+2020-01-17,Menemen FK,Giresunspor,0,3,A
+2020-01-18,Umraniyespor,Altay,1,0,H
+2020-01-18,Adanaspor,Akhisarspor,0,0,D
+2020-01-18,Altnordu,Hatayspor,2,2,D
+2020-01-19,Istanbulspor,Erzurumspor FK,1,1,D
+2020-01-19,Keciorengucu,Eskisehirspor,0,1,A
+2020-01-19,Boluspor,Osmanlispor,0,2,A
+2020-01-19,Bursaspor,Fatih Karagumruk,2,1,H
+2020-01-20,Balkesirspor,Adana Demirspor,1,6,A
+2020-01-24,Akhisarspor,Bursaspor,0,1,A
+2020-01-25,Giresunspor,Umraniyespor,2,1,H
+2020-01-25,Osmanlispor,Keciorengucu,0,0,D
+2020-01-25,Altay,Istanbulspor,1,0,H
+2020-01-26,Erzurumspor FK,Balkesirspor,1,0,H
+2020-01-26,Hatayspor,Menemen FK,2,0,H
+2020-01-26,Eskisehirspor,Adanaspor,0,0,D
+2020-01-26,Adana Demirspor,Boluspor,2,2,D
+2020-01-27,Fatih Karagumruk,Altnordu,3,3,D
+2020-01-31,Adanaspor,Osmanlispor,3,1,H
+2020-02-01,Keciorengucu,Adana Demirspor,1,3,A
+2020-02-01,Boluspor,Erzurumspor FK,1,1,D
+2020-02-01,Menemen FK,Fatih Karagumruk,0,1,A
+2020-02-02,Hatayspor,Giresunspor,1,1,D
+2020-02-02,Altnordu,Akhisarspor,2,0,H
+2020-02-02,Balkesirspor,Altay,0,0,D
+2020-02-02,Bursaspor,Eskisehirspor,0,1,A
+2020-02-03,Istanbulspor,Umraniyespor,2,1,H
+2020-02-07,Fatih Karagumruk,Hatayspor,1,1,D
+2020-02-08,Eskisehirspor,Altnordu,3,0,H
+2020-02-08,Adana Demirspor,Adanaspor,4,1,H
+2020-02-09,Umraniyespor,Balkesirspor,0,3,A
+2020-02-09,Osmanlispor,Bursaspor,2,4,A
+2020-02-09,Altay,Boluspor,2,1,H
+2020-02-10,Erzurumspor FK,Keciorengucu,1,0,H
+2020-02-10,Akhisarspor,Menemen FK,2,2,D
+2020-02-14,Altnordu,Osmanlispor,2,2,D
+2020-02-15,Hatayspor,Akhisarspor,2,3,A
+2020-02-15,Boluspor,Umraniyespor,1,1,D
+2020-02-15,Menemen FK,Eskisehirspor,3,1,H
+2020-02-16,Keciorengucu,Altay,2,0,H
+2020-02-16,Bursaspor,Adana Demirspor,2,1,H
+2020-02-16,Fatih Karagumruk,Giresunspor,2,1,H
+2020-02-16,Balkesirspor,Istanbulspor,0,5,A
+2020-02-17,Adanaspor,Erzurumspor FK,0,0,D
+2020-02-21,Osmanlispor,Menemen FK,2,0,H
+2020-02-21,Eskisehirspor,Hatayspor,0,1,A
+2020-02-22,Erzurumspor FK,Bursaspor,2,1,H
+2020-02-22,Umraniyespor,Keciorengucu,2,0,H
+2020-02-22,Akhisarspor,Fatih Karagumruk,0,2,A
+2020-02-22,Adana Demirspor,Altnordu,4,2,H
+2020-02-23,Giresunspor,Balkesirspor,0,3,A
+2020-02-23,Altay,Adanaspor,3,1,H
+2020-02-23,Istanbulspor,Boluspor,0,0,D
+2020-02-25,Hatayspor,Osmanlispor,1,0,H
+2020-02-25,Menemen FK,Adana Demirspor,2,3,A
+2020-02-25,Fatih Karagumruk,Eskisehirspor,2,0,H
+2020-02-26,Akhisarspor,Giresunspor,2,0,H
+2020-02-26,Altnordu,Erzurumspor FK,2,1,H
+2020-02-26,Adanaspor,Umraniyespor,0,1,A
+2020-02-27,Keciorengucu,Istanbulspor,0,0,D
+2020-02-27,Boluspor,Balkesirspor,1,1,D
+2020-02-27,Bursaspor,Altay,2,2,D
+2020-02-29,Osmanlispor,Fatih Karagumruk,1,1,D
+2020-02-29,Eskisehirspor,Akhisarspor,1,2,A
+2020-02-29,Adana Demirspor,Hatayspor,1,1,D
+2020-03-01,Erzurumspor FK,Menemen FK,2,0,H
+2020-03-01,Umraniyespor,Bursaspor,1,1,D
+2020-03-01,Istanbulspor,Adanaspor,1,0,H
+2020-03-01,Altay,Altnordu,1,0,H
+2020-03-02,Balkesirspor,Keciorengucu,2,2,D
+2020-03-02,Giresunspor,Boluspor,2,0,H
+2020-03-06,Adanaspor,Balkesirspor,1,1,D
+2020-03-06,Menemen FK,Altay,1,1,D
+2020-03-07,Hatayspor,Erzurumspor FK,0,0,D
+2020-03-07,Keciorengucu,Boluspor,0,1,A
+2020-03-07,Eskisehirspor,Giresunspor,0,2,A
+2020-03-07,Fatih Karagumruk,Adana Demirspor,2,2,D
+2020-03-07,Bursaspor,Istanbulspor,1,1,D
+2020-03-08,Akhisarspor,Osmanlispor,3,2,H
+2020-03-08,Altnordu,Umraniyespor,1,2,A
+2020-03-10,Boluspor,Adanaspor,2,1,H
+2020-03-10,Erzurumspor FK,Fatih Karagumruk,1,3,A
+2020-03-10,Altay,Hatayspor,2,1,H
+2020-03-10,Balkesirspor,Bursaspor,1,3,A
+2020-03-11,Umraniyespor,Menemen FK,1,1,D
+2020-03-11,Giresunspor,Keciorengucu,1,0,H
+2020-03-11,Adana Demirspor,Akhisarspor,2,3,A
+2020-03-11,Istanbulspor,Altnordu,0,2,A
+2020-03-12,Osmanlispor,Eskisehirspor,1,1,D
+2020-03-14,Fatih Karagumruk,Altay,2,2,D
+2020-03-14,Bursaspor,Boluspor,1,1,D
+2020-03-15,Hatayspor,Umraniyespor,2,0,H
+2020-03-15,Adanaspor,Keciorengucu,1,1,D
+2020-03-15,Menemen FK,Istanbulspor,2,2,D
+2020-03-15,Osmanlispor,Giresunspor,1,1,D
+2020-03-15,Akhisarspor,Erzurumspor FK,0,0,D
+2020-03-16,Altnordu,Balkesirspor,1,1,D
+2020-03-16,Eskisehirspor,Adana Demirspor,1,4,A
+2020-06-19,Giresunspor,Adanaspor,3,1,H
+2020-06-19,Istanbulspor,Hatayspor,2,2,D
+2020-06-20,Keciorengucu,Bursaspor,1,0,H
+2020-06-20,Erzurumspor FK,Eskisehirspor,1,0,H
+2020-06-20,Balkesirspor,Menemen FK,0,1,A
+2020-06-21,Umraniyespor,Fatih Karagumruk,1,1,D
+2020-06-21,Altay,Akhisarspor,3,1,H
+2020-06-21,Boluspor,Altnordu,0,0,D
+2020-06-22,Adana Demirspor,Osmanlispor,2,1,H
+2020-06-23,Giresunspor,Istanbulspor,2,1,H
+2020-06-26,Bursaspor,Adanaspor,1,0,H
+2020-06-26,Altnordu,Keciorengucu,1,2,A
+2020-06-27,Osmanlispor,Erzurumspor FK,1,3,A
+2020-06-27,Eskisehirspor,Altay,2,2,D
+2020-06-27,Adana Demirspor,Giresunspor,4,2,H
+2020-06-27,Menemen FK,Boluspor,1,1,D
+2020-06-28,Hatayspor,Balkesirspor,2,0,H
+2020-06-28,Akhisarspor,Umraniyespor,1,0,H
+2020-06-28,Fatih Karagumruk,Istanbulspor,1,0,H
+2020-06-30,Keciorengucu,Menemen FK,2,1,H
+2020-06-30,Adanaspor,Altnordu,0,0,D
+2020-06-30,Giresunspor,Bursaspor,0,1,A
+2020-07-01,Boluspor,Hatayspor,1,0,H
+2020-07-01,Erzurumspor FK,Adana Demirspor,1,2,A
+2020-07-01,Altay,Osmanlispor,3,0,H
+2020-07-02,Umraniyespor,Eskisehirspor,3,0,H
+2020-07-02,Balkesirspor,Fatih Karagumruk,0,5,A
+2020-07-02,Istanbulspor,Akhisarspor,0,1,A
+2020-07-04,Bursaspor,Altnordu,1,0,H
+2020-07-04,Menemen FK,Adanaspor,4,2,H
+2020-07-05,Giresunspor,Erzurumspor FK,0,2,A
+2020-07-05,Hatayspor,Keciorengucu,1,0,H
+2020-07-05,Osmanlispor,Umraniyespor,3,2,H
+2020-07-05,Adana Demirspor,Altay,2,2,D
+2020-07-06,Fatih Karagumruk,Boluspor,3,1,H
+2020-07-06,Akhisarspor,Balkesirspor,3,1,H
+2020-07-06,Eskisehirspor,Istanbulspor,0,3,A
+2020-07-11,Balkesirspor,Eskisehirspor,2,0,H
+2020-07-12,Bursaspor,Menemen FK,2,2,D
+2020-07-12,Adanaspor,Hatayspor,1,2,A
+2020-07-12,Altay,Erzurumspor FK,0,1,A
+2020-07-12,Altnordu,Giresunspor,3,1,H
+2020-07-12,Boluspor,Akhisarspor,0,1,A
+2020-07-12,Umraniyespor,Adana Demirspor,2,3,A
+2020-07-12,Istanbulspor,Osmanlispor,1,0,H
+2020-07-12,Keciorengucu,Fatih Karagumruk,3,0,H
+2020-07-17,Menemen FK,Altnordu,1,1,D
+2020-07-18,Akhisarspor,Keciorengucu,3,4,A
+2020-07-18,Erzurumspor FK,Umraniyespor,4,1,H
+2020-07-18,Adana Demirspor,Istanbulspor,3,0,H
+2020-07-18,Giresunspor,Altay,1,2,A
+2020-07-18,Hatayspor,Bursaspor,3,1,H
+2020-07-18,Fatih Karagumruk,Adanaspor,3,0,H
+2020-07-19,Osmanlispor,Balkesirspor,4,3,H
+2020-07-19,Eskisehirspor,Boluspor,0,3,A
+2020-07-22,Bursaspor,Adana Demirspor,0,0,D
+2020-07-22,Fatih Karagumruk,Akhisarspor,3,3,D
+2020-07-26,Akhisarspor,Fatih Karagumruk,0,1,A
+2020-07-26,Adana Demirspor,Bursaspor,4,1,H
+2020-07-30,Adana Demirspor,Fatih Karagumruk,1,1,D

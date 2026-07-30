@@ -1,0 +1,181 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2021-07-24,Petrovac,Mornar,0,1,A
+2021-07-24,Iskra,Jezero,2,0,H
+2021-07-24,Decic,Zeta,2,0,H
+2021-07-25,Sutjeska,Mladost Ljeskopolje,1,0,H
+2021-07-31,Rudar Velenje,Iskra,0,0,D
+2021-07-31,Jezero,Decic,0,0,D
+2021-07-31,Buducnost Podgorica,Mornar,1,1,D
+2021-07-31,Mladost Ljeskopolje,Petrovac,1,3,A
+2021-08-02,Zeta,Sutjeska,0,4,A
+2021-08-07,Iskra,Buducnost Podgorica,2,1,H
+2021-08-07,Petrovac,Zeta,2,2,D
+2021-08-07,Decic,Rudar Velenje,3,0,H
+2021-08-07,Mornar,Mladost Ljeskopolje,3,1,H
+2021-08-08,Sutjeska,Jezero,2,0,H
+2021-08-14,Jezero,Petrovac,1,2,A
+2021-08-14,Zeta,Mornar,0,1,A
+2021-08-14,Buducnost Podgorica,Mladost Ljeskopolje,2,1,H
+2021-08-14,Iskra,Decic,0,1,A
+2021-08-15,Rudar Velenje,Sutjeska,0,1,A
+2021-08-21,Sutjeska,Iskra,3,1,H
+2021-08-21,Petrovac,Rudar Velenje,4,3,H
+2021-08-21,Mladost Ljeskopolje,Zeta,0,0,D
+2021-08-21,Mornar,Jezero,1,0,H
+2021-08-21,Decic,Buducnost Podgorica,2,2,D
+2021-08-25,Rudar Velenje,Buducnost Podgorica,1,1,D
+2021-08-28,Jezero,Mladost Ljeskopolje,1,2,A
+2021-08-28,Iskra,Petrovac,4,1,H
+2021-08-29,Rudar Velenje,Mornar,2,1,H
+2021-08-29,Buducnost Podgorica,Zeta,5,1,H
+2021-08-29,Decic,Sutjeska,1,1,D
+2021-09-11,Sutjeska,Buducnost Podgorica,1,0,H
+2021-09-11,Zeta,Jezero,1,2,A
+2021-09-11,Mornar,Iskra,0,1,A
+2021-09-11,Petrovac,Decic,3,2,H
+2021-09-11,Mladost Ljeskopolje,Rudar Velenje,0,1,A
+2021-09-17,Buducnost Podgorica,Jezero,0,1,A
+2021-09-18,Rudar Velenje,Zeta,2,0,H
+2021-09-18,Iskra,Mladost Ljeskopolje,4,2,H
+2021-09-19,Sutjeska,Petrovac,0,0,D
+2021-09-19,Decic,Mornar,0,1,A
+2021-09-24,Zeta,Iskra,1,1,D
+2021-09-25,Jezero,Rudar Velenje,2,4,A
+2021-09-25,Mladost Ljeskopolje,Decic,1,1,D
+2021-09-26,Mornar,Sutjeska,0,2,A
+2021-09-26,Petrovac,Buducnost Podgorica,2,3,A
+2021-10-01,Jezero,Iskra,1,0,H
+2021-10-02,Mladost Ljeskopolje,Sutjeska,1,2,A
+2021-10-02,Mornar,Petrovac,0,0,D
+2021-10-03,Zeta,Decic,1,1,D
+2021-10-03,Buducnost Podgorica,Rudar Velenje,3,0,H
+2021-10-15,Petrovac,Mladost Ljeskopolje,2,1,H
+2021-10-16,Sutjeska,Zeta,2,0,H
+2021-10-16,Decic,Jezero,2,0,H
+2021-10-17,Iskra,Rudar Velenje,1,0,H
+2021-10-17,Mornar,Buducnost Podgorica,0,3,A
+2021-10-23,Rudar Velenje,Decic,1,1,D
+2021-10-23,Jezero,Sutjeska,0,2,A
+2021-10-23,Zeta,Petrovac,1,1,D
+2021-10-23,Mladost Ljeskopolje,Mornar,1,1,D
+2021-10-23,Buducnost Podgorica,Iskra,4,1,H
+2021-10-31,Decic,Iskra,1,1,D
+2021-10-31,Sutjeska,Rudar Velenje,2,1,H
+2021-10-31,Mornar,Zeta,2,2,D
+2021-10-31,Petrovac,Jezero,2,0,H
+2021-10-31,Mladost Ljeskopolje,Buducnost Podgorica,1,2,A
+2021-11-05,Zeta,Mladost Ljeskopolje,1,2,A
+2021-11-06,Buducnost Podgorica,Decic,1,2,A
+2021-11-06,Iskra,Sutjeska,0,0,D
+2021-11-07,Rudar Velenje,Petrovac,2,2,D
+2021-11-07,Jezero,Mornar,0,0,D
+2021-11-20,Mladost Ljeskopolje,Jezero,1,0,H
+2021-11-20,Mornar,Rudar Velenje,0,1,A
+2021-11-20,Petrovac,Iskra,0,1,A
+2021-11-20,Zeta,Buducnost Podgorica,0,0,D
+2021-11-20,Sutjeska,Decic,0,2,A
+2021-11-28,Rudar Velenje,Mladost Ljeskopolje,0,1,A
+2021-11-28,Decic,Petrovac,4,4,D
+2021-11-28,Buducnost Podgorica,Sutjeska,3,3,D
+2021-12-01,Jezero,Buducnost Podgorica,1,2,A
+2021-12-01,Zeta,Rudar Velenje,2,0,H
+2021-12-01,Mladost Ljeskopolje,Iskra,0,0,D
+2021-12-01,Mornar,Decic,1,2,A
+2021-12-01,Petrovac,Sutjeska,3,0,H
+2021-12-05,Sutjeska,Mornar,1,1,D
+2021-12-05,Rudar Velenje,Jezero,2,2,D
+2021-12-05,Buducnost Podgorica,Petrovac,2,1,H
+2021-12-05,Decic,Mladost Ljeskopolje,2,2,D
+2021-12-08,Sutjeska,Mladost Ljeskopolje,3,0,H
+2021-12-08,Rudar Velenje,Buducnost Podgorica,3,1,H
+2021-12-08,Iskra,Jezero,0,1,A
+2021-12-08,Decic,Zeta,1,0,H
+2021-12-08,Petrovac,Mornar,2,0,H
+2021-12-13,Iskra,Mornar,0,1,A
+2021-12-13,Jezero,Zeta,2,1,H
+2021-12-17,Iskra,Zeta,3,1,H
+2022-02-18,Rudar Velenje,Iskra,0,3,A
+2022-02-18,Jezero,Decic,4,2,H
+2022-02-18,Zeta,Sutjeska,0,1,A
+2022-02-18,Mladost Ljeskopolje,Petrovac,2,2,D
+2022-02-18,Buducnost Podgorica,Mornar,2,1,H
+2022-02-24,Sutjeska,Jezero,3,1,H
+2022-02-24,Decic,Rudar Velenje,1,2,A
+2022-02-24,Mornar,Mladost Ljeskopolje,2,2,D
+2022-02-24,Petrovac,Zeta,2,4,A
+2022-02-24,Iskra,Buducnost Podgorica,3,2,H
+2022-03-01,Rudar Velenje,Sutjeska,1,1,D
+2022-03-01,Jezero,Petrovac,0,1,A
+2022-03-01,Buducnost Podgorica,Mladost Ljeskopolje,2,1,H
+2022-03-01,Zeta,Mornar,0,1,A
+2022-03-01,Iskra,Decic,0,1,A
+2022-03-05,Sutjeska,Iskra,2,0,H
+2022-03-05,Petrovac,Rudar Velenje,1,1,D
+2022-03-05,Mornar,Jezero,1,1,D
+2022-03-05,Mladost Ljeskopolje,Zeta,1,0,H
+2022-03-09,Rudar Velenje,Mornar,0,0,D
+2022-03-09,Jezero,Mladost Ljeskopolje,4,0,H
+2022-03-09,Buducnost Podgorica,Zeta,2,1,H
+2022-03-09,Decic,Sutjeska,0,2,A
+2022-03-09,Iskra,Petrovac,2,0,H
+2022-03-13,Sutjeska,Buducnost Podgorica,2,2,D
+2022-03-13,Zeta,Jezero,0,0,D
+2022-03-13,Mladost Ljeskopolje,Rudar Velenje,2,1,H
+2022-03-13,Petrovac,Decic,0,0,D
+2022-03-13,Mornar,Iskra,1,1,D
+2022-03-16,Decic,Buducnost Podgorica,0,2,A
+2022-03-20,Sutjeska,Petrovac,1,1,D
+2022-03-20,Rudar Velenje,Zeta,0,3,A
+2022-03-20,Buducnost Podgorica,Jezero,1,2,A
+2022-03-20,Iskra,Mladost Ljeskopolje,2,0,H
+2022-03-20,Decic,Mornar,4,0,H
+2022-04-02,Petrovac,Buducnost Podgorica,0,2,A
+2022-04-02,Jezero,Rudar Velenje,3,2,H
+2022-04-02,Zeta,Iskra,3,1,H
+2022-04-02,Mladost Ljeskopolje,Decic,3,3,D
+2022-04-02,Mornar,Sutjeska,0,2,A
+2022-04-06,Mladost Ljeskopolje,Sutjeska,0,1,A
+2022-04-06,Buducnost Podgorica,Rudar Velenje,2,0,H
+2022-04-06,Jezero,Iskra,3,1,H
+2022-04-06,Zeta,Decic,1,2,A
+2022-04-06,Mornar,Petrovac,1,1,D
+2022-04-10,Decic,Jezero,1,2,A
+2022-04-10,Sutjeska,Zeta,6,1,H
+2022-04-10,Iskra,Rudar Velenje,3,1,H
+2022-04-10,Mornar,Buducnost Podgorica,0,2,A
+2022-04-10,Petrovac,Mladost Ljeskopolje,1,1,D
+2022-04-16,Rudar Velenje,Decic,1,0,H
+2022-04-16,Jezero,Sutjeska,0,2,A
+2022-04-16,Buducnost Podgorica,Iskra,4,2,H
+2022-04-16,Zeta,Petrovac,3,0,H
+2022-04-16,Mladost Ljeskopolje,Mornar,1,3,A
+2022-04-24,Sutjeska,Rudar Velenje,3,0,H
+2022-04-24,Petrovac,Jezero,2,1,H
+2022-04-24,Decic,Iskra,2,1,H
+2022-04-24,Mornar,Zeta,1,0,H
+2022-04-24,Mladost Ljeskopolje,Buducnost Podgorica,1,5,A
+2022-04-30,Rudar Velenje,Petrovac,1,0,H
+2022-04-30,Jezero,Mornar,1,2,A
+2022-04-30,Zeta,Mladost Ljeskopolje,1,0,H
+2022-04-30,Iskra,Sutjeska,0,3,A
+2022-04-30,Buducnost Podgorica,Decic,1,2,A
+2022-05-08,Sutjeska,Decic,1,2,A
+2022-05-08,Petrovac,Iskra,0,4,A
+2022-05-08,Zeta,Buducnost Podgorica,2,2,D
+2022-05-08,Mornar,Rudar Velenje,2,0,H
+2022-05-08,Mladost Ljeskopolje,Jezero,0,1,A
+2022-05-14,Buducnost Podgorica,Sutjeska,4,2,H
+2022-05-14,Rudar Velenje,Mladost Ljeskopolje,1,1,D
+2022-05-14,Iskra,Mornar,1,0,H
+2022-05-14,Decic,Petrovac,2,1,H
+2022-05-14,Jezero,Zeta,0,0,D
+2022-05-20,Zeta,Rudar Velenje,1,0,H
+2022-05-20,Mornar,Decic,2,1,H
+2022-05-20,Petrovac,Sutjeska,1,1,D
+2022-05-20,Mladost Ljeskopolje,Iskra,3,2,H
+2022-05-20,Jezero,Buducnost Podgorica,2,1,H
+2022-05-24,Buducnost Podgorica,Petrovac,6,0,H
+2022-05-24,Sutjeska,Mornar,1,3,A
+2022-05-24,Rudar Velenje,Jezero,1,3,A
+2022-05-24,Iskra,Zeta,0,2,A
+2022-05-24,Decic,Mladost Ljeskopolje,1,2,A

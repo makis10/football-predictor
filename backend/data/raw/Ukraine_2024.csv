@@ -1,0 +1,248 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2024-07-26,Livyi Bereh,Metalist 1925 Kharkiv,1,1,D
+2024-07-26,Epitsentr Dunayivtsi,Minai,3,3,D
+2024-07-30,Livyi Bereh,Minai,3,0,H
+2024-08-03,Veres Rivne,Karpaty,0,0,D
+2024-08-03,Kryvbas KR,Chornomorets,1,0,H
+2024-08-04,LNZ Cherkasy,Livyi Bereh,1,0,H
+2024-08-04,Vorskla Poltava,Shakhtar Donetsk,0,5,A
+2024-08-04,Obolon'-Brovar,Kolos Kovalivka,2,2,D
+2024-08-04,Zorya Luhansk,Inhulets,2,1,H
+2024-08-09,Livyi Bereh,Vorskla Poltava,0,3,A
+2024-08-09,Veres Rivne,Dynamo Kyiv,1,2,A
+2024-08-10,Chornomorets,Zorya Luhansk,0,1,A
+2024-08-10,Kolos Kovalivka,Inhulets,0,0,D
+2024-08-11,Obolon'-Brovar,Ruh Lviv,0,4,A
+2024-08-11,Karpaty,Kryvbas KR,3,0,H
+2024-08-11,Shakhtar Donetsk,Polessya,0,1,A
+2024-08-12,LNZ Cherkasy,Oleksandria,0,2,A
+2024-08-16,Chornomorets,Kolos Kovalivka,1,0,H
+2024-08-16,Vorskla Poltava,Obolon'-Brovar,2,0,H
+2024-08-17,Zorya Luhansk,Oleksandria,1,2,A
+2024-08-17,Polessya,Inhulets,1,1,D
+2024-08-17,Karpaty,Dynamo Kyiv,1,3,A
+2024-08-18,Veres Rivne,Kryvbas KR,0,2,A
+2024-08-18,LNZ Cherkasy,Ruh Lviv,3,1,H
+2024-08-18,Livyi Bereh,Shakhtar Donetsk,0,1,A
+2024-08-24,Oleksandria,Shakhtar Donetsk,4,3,H
+2024-08-25,Polessya,Obolon'-Brovar,4,0,H
+2024-08-25,Ruh Lviv,Zorya Luhansk,3,0,H
+2024-08-25,Kryvbas KR,Inhulets,1,1,D
+2024-08-26,Livyi Bereh,Chornomorets,1,0,H
+2024-08-26,Kolos Kovalivka,Veres Rivne,0,1,A
+2024-08-26,LNZ Cherkasy,Karpaty,2,1,H
+2024-08-30,Obolon'-Brovar,Zorya Luhansk,0,2,A
+2024-08-30,Ruh Lviv,Inhulets,5,0,H
+2024-08-31,Karpaty,Vorskla Poltava,1,1,D
+2024-08-31,Oleksandria,Kolos Kovalivka,2,1,H
+2024-08-31,Chornomorets,Polessya,1,4,A
+2024-09-01,Veres Rivne,Livyi Bereh,1,3,A
+2024-09-01,Dynamo Kyiv,LNZ Cherkasy,1,0,H
+2024-09-13,Obolon'-Brovar,Oleksandria,0,0,D
+2024-09-14,Chornomorets,Inhulets,1,0,H
+2024-09-14,Zorya Luhansk,Dynamo Kyiv,0,2,A
+2024-09-14,Shakhtar Donetsk,Karpaty,5,2,H
+2024-09-15,Vorskla Poltava,Ruh Lviv,0,0,D
+2024-09-15,Livyi Bereh,Kryvbas KR,0,1,A
+2024-09-15,Polessya,Veres Rivne,2,1,H
+2024-09-16,Kolos Kovalivka,LNZ Cherkasy,1,1,D
+2024-09-18,Dynamo Kyiv,Vorskla Poltava,3,1,H
+2024-09-21,Chornomorets,Karpaty,0,1,A
+2024-09-21,Oleksandria,Livyi Bereh,2,0,H
+2024-09-21,Dynamo Kyiv,Ruh Lviv,0,0,D
+2024-09-22,Veres Rivne,Inhulets,2,2,D
+2024-09-22,Kryvbas KR,Vorskla Poltava,1,1,D
+2024-09-22,Polessya,LNZ Cherkasy,1,1,D
+2024-09-23,Kolos Kovalivka,Zorya Luhansk,1,0,H
+2024-09-23,Shakhtar Donetsk,Obolon'-Brovar,4,0,H
+2024-09-27,Veres Rivne,Shakhtar Donetsk,1,1,D
+2024-09-28,Kryvbas KR,Oleksandria,0,1,A
+2024-09-28,LNZ Cherkasy,Chornomorets,1,1,D
+2024-09-28,Karpaty,Polessya,1,3,A
+2024-09-29,Obolon'-Brovar,Inhulets,2,1,H
+2024-09-29,Ruh Lviv,Kolos Kovalivka,0,0,D
+2024-09-29,Livyi Bereh,Dynamo Kyiv,0,3,A
+2024-09-30,Zorya Luhansk,Vorskla Poltava,2,0,H
+2024-10-04,Chornomorets,Obolon'-Brovar,1,0,H
+2024-10-04,Karpaty,Inhulets,0,0,D
+2024-10-05,Veres Rivne,Zorya Luhansk,2,1,H
+2024-10-05,Oleksandria,Ruh Lviv,1,1,D
+2024-10-05,Kolos Kovalivka,Livyi Bereh,0,0,D
+2024-10-06,Polessya,Vorskla Poltava,2,1,H
+2024-10-06,Shakhtar Donetsk,LNZ Cherkasy,5,1,H
+2024-10-06,Dynamo Kyiv,Kryvbas KR,2,1,H
+2024-10-18,Kolos Kovalivka,Shakhtar Donetsk,0,1,A
+2024-10-19,Oleksandria,Vorskla Poltava,1,0,H
+2024-10-19,Obolon'-Brovar,Dynamo Kyiv,1,5,A
+2024-10-19,Polessya,Livyi Bereh,0,0,D
+2024-10-20,LNZ Cherkasy,Inhulets,2,0,H
+2024-10-20,Chornomorets,Veres Rivne,1,1,D
+2024-10-20,Zorya Luhansk,Kryvbas KR,0,1,A
+2024-10-21,Ruh Lviv,Karpaty,0,1,A
+2024-10-25,Ruh Lviv,Chornomorets,1,1,D
+2024-10-25,Polessya,Kolos Kovalivka,1,1,D
+2024-10-26,Oleksandria,Inhulets,2,1,H
+2024-10-26,Kryvbas KR,LNZ Cherkasy,3,1,H
+2024-10-26,Karpaty,Obolon'-Brovar,1,0,H
+2024-10-27,Livyi Bereh,Zorya Luhansk,0,2,A
+2024-10-27,Veres Rivne,Vorskla Poltava,2,2,D
+2024-10-27,Dynamo Kyiv,Shakhtar Donetsk,1,1,D
+2024-11-02,Karpaty,Livyi Bereh,3,0,H
+2024-11-02,Shakhtar Donetsk,Chornomorets,2,1,H
+2024-11-03,Vorskla Poltava,Kolos Kovalivka,0,1,A
+2024-11-03,Oleksandria,Polessya,1,0,H
+2024-11-03,Dynamo Kyiv,Inhulets,5,2,H
+2024-11-04,Obolon'-Brovar,Veres Rivne,0,0,D
+2024-11-04,Kryvbas KR,Ruh Lviv,1,1,D
+2024-11-04,Zorya Luhansk,LNZ Cherkasy,1,2,A
+2024-11-08,Chornomorets,Vorskla Poltava,0,1,A
+2024-11-08,Livyi Bereh,Inhulets,0,0,D
+2024-11-09,LNZ Cherkasy,Obolon'-Brovar,0,1,A
+2024-11-09,Oleksandria,Karpaty,3,0,H
+2024-11-09,Kolos Kovalivka,Kryvbas KR,1,1,D
+2024-11-10,Veres Rivne,Ruh Lviv,2,0,H
+2024-11-10,Shakhtar Donetsk,Zorya Luhansk,3,1,H
+2024-11-10,Dynamo Kyiv,Polessya,2,1,H
+2024-11-22,Karpaty,Kolos Kovalivka,1,0,H
+2024-11-23,Vorskla Poltava,LNZ Cherkasy,2,0,H
+2024-11-23,Dynamo Kyiv,Chornomorets,3,1,H
+2024-11-23,Shakhtar Donetsk,Inhulets,6,0,H
+2024-11-24,Obolon'-Brovar,Kryvbas KR,0,1,A
+2024-11-24,Veres Rivne,Oleksandria,1,1,D
+2024-11-24,Ruh Lviv,Livyi Bereh,1,0,H
+2024-11-25,Polessya,Zorya Luhansk,1,1,D
+2024-11-29,Vorskla Poltava,Inhulets,0,3,A
+2024-11-30,LNZ Cherkasy,Veres Rivne,1,2,A
+2024-11-30,Kryvbas KR,Polessya,3,1,H
+2024-11-30,Livyi Bereh,Obolon'-Brovar,1,1,D
+2024-12-01,Oleksandria,Chornomorets,3,0,H
+2024-12-01,Kolos Kovalivka,Dynamo Kyiv,1,1,D
+2024-12-01,Shakhtar Donetsk,Ruh Lviv,1,1,D
+2024-12-02,Zorya Luhansk,Karpaty,2,1,H
+2024-12-04,Oleksandria,Dynamo Kyiv,0,0,D
+2024-12-04,Ruh Lviv,Polessya,1,1,D
+2024-12-05,Shakhtar Donetsk,Vorskla Poltava,3,1,H
+2024-12-07,Livyi Bereh,LNZ Cherkasy,3,1,H
+2024-12-07,Chornomorets,Kryvbas KR,1,3,A
+2024-12-07,Karpaty,Veres Rivne,5,0,H
+2024-12-08,Kolos Kovalivka,Obolon'-Brovar,0,0,D
+2024-12-08,Dynamo Kyiv,Oleksandria,3,0,H
+2024-12-09,Polessya,Ruh Lviv,0,1,A
+2024-12-13,Vorskla Poltava,Livyi Bereh,0,1,A
+2024-12-14,Oleksandria,LNZ Cherkasy,1,1,D
+2024-12-14,Kryvbas KR,Karpaty,2,0,H
+2024-12-14,Zorya Luhansk,Chornomorets,2,1,H
+2024-12-15,Inhulets,Kolos Kovalivka,0,2,A
+2024-12-15,Ruh Lviv,Obolon'-Brovar,1,3,A
+2024-12-15,Polessya,Shakhtar Donetsk,1,0,H
+2024-12-16,Dynamo Kyiv,Veres Rivne,1,0,H
+2025-02-21,Kolos Kovalivka,Chornomorets,1,2,A
+2025-02-22,Kryvbas KR,Veres Rivne,0,3,A
+2025-02-22,Inhulets,Polessya,0,1,A
+2025-02-22,Ruh Lviv,LNZ Cherkasy,0,1,A
+2025-02-23,Obolon'-Brovar,Vorskla Poltava,1,0,H
+2025-02-23,Oleksandria,Zorya Luhansk,2,1,H
+2025-02-23,Dynamo Kyiv,Karpaty,2,0,H
+2025-02-24,Shakhtar Donetsk,Livyi Bereh,1,0,H
+2025-02-28,Obolon'-Brovar,Polessya,0,0,D
+2025-02-28,Vorskla Poltava,Dynamo Kyiv,1,1,D
+2025-02-28,Karpaty,LNZ Cherkasy,1,0,H
+2025-03-01,Chornomorets,Livyi Bereh,0,1,A
+2025-03-01,Shakhtar Donetsk,Oleksandria,3,0,H
+2025-03-02,Inhulets,Kryvbas KR,2,0,H
+2025-03-02,Zorya Luhansk,Ruh Lviv,2,0,H
+2025-03-02,Veres Rivne,Kolos Kovalivka,2,1,H
+2025-03-06,Vorskla Poltava,Karpaty,0,0,D
+2025-03-06,Polessya,Chornomorets,3,1,H
+2025-03-06,LNZ Cherkasy,Dynamo Kyiv,1,2,A
+2025-03-06,Shakhtar Donetsk,Kryvbas KR,1,1,D
+2025-03-07,Livyi Bereh,Veres Rivne,2,0,H
+2025-03-07,Kolos Kovalivka,Oleksandria,0,1,A
+2025-03-07,Zorya Luhansk,Obolon'-Brovar,2,1,H
+2025-03-08,Inhulets,Ruh Lviv,0,1,A
+2025-03-11,Oleksandria,Obolon'-Brovar,4,0,H
+2025-03-11,Dynamo Kyiv,Zorya Luhansk,2,2,D
+2025-03-11,Veres Rivne,Polessya,5,1,H
+2025-03-11,Karpaty,Shakhtar Donetsk,0,0,D
+2025-03-15,Ruh Lviv,Vorskla Poltava,0,1,A
+2025-03-16,Inhulets,Chornomorets,1,0,H
+2025-03-16,LNZ Cherkasy,Kolos Kovalivka,2,0,H
+2025-03-28,Inhulets,Veres Rivne,0,0,D
+2025-03-28,LNZ Cherkasy,Polessya,0,1,A
+2025-03-29,Livyi Bereh,Oleksandria,0,1,A
+2025-03-29,Obolon'-Brovar,Shakhtar Donetsk,0,2,A
+2025-03-29,Ruh Lviv,Dynamo Kyiv,0,2,A
+2025-03-30,Vorskla Poltava,Kryvbas KR,0,1,A
+2025-03-30,Karpaty,Chornomorets,4,0,H
+2025-03-30,Zorya Luhansk,Kolos Kovalivka,0,3,A
+2025-04-04,Inhulets,Obolon'-Brovar,0,1,A
+2025-04-05,Vorskla Poltava,Zorya Luhansk,1,2,A
+2025-04-05,Chornomorets,LNZ Cherkasy,1,0,H
+2025-04-06,Oleksandria,Kryvbas KR,1,0,H
+2025-04-06,Dynamo Kyiv,Livyi Bereh,2,0,H
+2025-04-06,Shakhtar Donetsk,Veres Rivne,3,0,H
+2025-04-07,Kolos Kovalivka,Ruh Lviv,0,1,A
+2025-04-07,Polessya,Karpaty,1,1,D
+2025-04-11,LNZ Cherkasy,Shakhtar Donetsk,1,4,A
+2025-04-12,Kryvbas KR,Dynamo Kyiv,0,2,A
+2025-04-12,Ruh Lviv,Oleksandria,1,1,D
+2025-04-12,Obolon'-Brovar,Chornomorets,1,0,H
+2025-04-13,Vorskla Poltava,Polessya,0,2,A
+2025-04-13,Livyi Bereh,Kolos Kovalivka,0,2,A
+2025-04-13,Zorya Luhansk,Veres Rivne,1,2,A
+2025-04-14,Inhulets,Karpaty,1,2,A
+2025-04-16,Kryvbas KR,Shakhtar Donetsk,1,2,A
+2025-04-18,Vorskla Poltava,Oleksandria,1,3,A
+2025-04-18,Dynamo Kyiv,Obolon'-Brovar,3,0,H
+2025-04-19,Karpaty,Ruh Lviv,3,1,H
+2025-04-19,Livyi Bereh,Polessya,1,1,D
+2025-04-19,Shakhtar Donetsk,Kolos Kovalivka,2,4,A
+2025-04-20,Kryvbas KR,Zorya Luhansk,3,0,H
+2025-04-20,Inhulets,LNZ Cherkasy,0,0,D
+2025-04-20,Veres Rivne,Chornomorets,2,1,H
+2025-04-25,Inhulets,Oleksandria,0,1,A
+2025-04-25,Zorya Luhansk,Livyi Bereh,2,1,H
+2025-04-26,Chornomorets,Ruh Lviv,1,2,A
+2025-04-26,LNZ Cherkasy,Kryvbas KR,0,0,D
+2025-04-26,Obolon'-Brovar,Karpaty,2,2,D
+2025-04-27,Vorskla Poltava,Veres Rivne,3,0,H
+2025-04-27,Kolos Kovalivka,Polessya,1,1,D
+2025-04-27,Shakhtar Donetsk,Dynamo Kyiv,2,2,D
+2025-04-30,Inhulets,Zorya Luhansk,1,0,H
+2025-05-02,Livyi Bereh,Karpaty,2,3,A
+2025-05-02,Ruh Lviv,Kryvbas KR,0,0,D
+2025-05-03,Chornomorets,Shakhtar Donetsk,0,3,A
+2025-05-03,Inhulets,Dynamo Kyiv,0,4,A
+2025-05-03,Veres Rivne,Obolon'-Brovar,0,2,A
+2025-05-04,LNZ Cherkasy,Zorya Luhansk,1,1,D
+2025-05-04,Kolos Kovalivka,Vorskla Poltava,0,0,D
+2025-05-04,Polessya,Oleksandria,1,2,A
+2025-05-07,Kryvbas KR,Livyi Bereh,4,0,H
+2025-05-09,Zorya Luhansk,Shakhtar Donetsk,0,0,D
+2025-05-09,Polessya,Dynamo Kyiv,0,0,D
+2025-05-10,Vorskla Poltava,Chornomorets,1,2,A
+2025-05-10,Obolon'-Brovar,LNZ Cherkasy,0,0,D
+2025-05-10,Ruh Lviv,Veres Rivne,2,0,H
+2025-05-11,Kryvbas KR,Kolos Kovalivka,0,1,A
+2025-05-11,Karpaty,Oleksandria,2,1,H
+2025-05-12,Inhulets,Livyi Bereh,2,1,H
+2025-05-17,Zorya Luhansk,Polessya,0,1,A
+2025-05-17,Kolos Kovalivka,Karpaty,2,1,H
+2025-05-17,Kryvbas KR,Obolon'-Brovar,1,0,H
+2025-05-18,Chornomorets,Dynamo Kyiv,1,1,D
+2025-05-18,Oleksandria,Veres Rivne,3,1,H
+2025-05-18,Inhulets,Shakhtar Donetsk,1,4,A
+2025-05-18,LNZ Cherkasy,Vorskla Poltava,0,0,D
+2025-05-18,Livyi Bereh,Ruh Lviv,1,0,H
+2025-05-23,Inhulets,Vorskla Poltava,1,1,D
+2025-05-23,Obolon'-Brovar,Livyi Bereh,1,0,H
+2025-05-24,Chornomorets,Oleksandria,0,0,D
+2025-05-24,Ruh Lviv,Shakhtar Donetsk,1,1,D
+2025-05-24,Dynamo Kyiv,Kolos Kovalivka,1,1,D
+2025-05-25,Veres Rivne,LNZ Cherkasy,1,1,D
+2025-05-25,Karpaty,Zorya Luhansk,1,3,A
+2025-05-25,Polessya,Kryvbas KR,1,1,D
+2025-05-29,Kudrivka,Vorskla Poltava,1,2,A
+2025-05-29,Livyi Bereh,Metalist 1925 Kharkiv,0,1,A
+2025-06-01,Vorskla Poltava,Kudrivka,0,1,A
+2025-06-01,Metalist 1925 Kharkiv,Livyi Bereh,1,0,H

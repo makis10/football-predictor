@@ -1,0 +1,183 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2022-03-01,FC Levadia Tallinn,Tallinna Kalev,5,1,H
+2022-03-01,Vaprus,Paide,1,3,A
+2022-03-02,Kalju Nomme,Kuressaare,2,0,H
+2022-03-02,Tammeka,Flora Tallinn,0,4,A
+2022-03-02,Legion,Trans Narva,0,2,A
+2022-03-05,Kuressaare,Trans Narva,1,2,A
+2022-03-05,Vaprus,FC Levadia Tallinn,0,8,A
+2022-03-05,Legion,Tammeka,1,1,D
+2022-03-06,Flora Tallinn,Tallinna Kalev,7,1,H
+2022-03-06,Paide,Kalju Nomme,2,3,A
+2022-03-12,Tallinna Kalev,Kuressaare,0,3,A
+2022-03-12,Trans Narva,Tammeka,0,2,A
+2022-03-12,FC Levadia Tallinn,Legion,2,0,H
+2022-03-13,Kalju Nomme,Vaprus,2,0,H
+2022-03-13,Paide,Flora Tallinn,1,2,A
+2022-03-19,Kalju Nomme,Flora Tallinn,1,2,A
+2022-03-19,Legion,Kuressaare,2,2,D
+2022-03-20,Vaprus,Tallinna Kalev,3,1,H
+2022-03-20,Tammeka,Paide,1,3,A
+2022-04-01,Tallinna Kalev,Paide,0,3,A
+2022-04-02,Legion,Kalju Nomme,2,4,A
+2022-04-02,FC Levadia Tallinn,Tammeka,4,0,H
+2022-04-03,Flora Tallinn,Trans Narva,1,0,H
+2022-04-03,Kuressaare,Vaprus,3,2,H
+2022-04-09,Flora Tallinn,Legion,2,0,H
+2022-04-09,Trans Narva,Vaprus,3,1,H
+2022-04-09,Tammeka,Kuressaare,1,0,H
+2022-04-10,Kalju Nomme,Tallinna Kalev,2,1,H
+2022-04-10,Paide,FC Levadia Tallinn,0,1,A
+2022-04-12,Kuressaare,Flora Tallinn,0,3,A
+2022-04-12,Vaprus,Tammeka,1,2,A
+2022-04-13,Paide,Legion,5,0,H
+2022-04-13,Trans Narva,Tallinna Kalev,5,0,H
+2022-04-13,FC Levadia Tallinn,Kalju Nomme,1,1,D
+2022-04-16,Vaprus,Flora Tallinn,0,2,A
+2022-04-16,Legion,Tallinna Kalev,1,1,D
+2022-04-16,Trans Narva,Paide,1,2,A
+2022-04-17,Tammeka,Kalju Nomme,1,1,D
+2022-04-17,FC Levadia Tallinn,Kuressaare,1,0,H
+2022-04-20,Trans Narva,FC Levadia Tallinn,0,1,A
+2022-04-22,Tallinna Kalev,Tammeka,1,0,H
+2022-04-23,Legion,Vaprus,3,0,H
+2022-04-23,Kuressaare,Paide,2,1,H
+2022-04-23,Kalju Nomme,Trans Narva,3,0,H
+2022-04-24,Flora Tallinn,FC Levadia Tallinn,2,0,H
+2022-04-26,Trans Narva,Kuressaare,0,1,A
+2022-04-26,Kalju Nomme,Legion,3,0,H
+2022-04-27,Tammeka,FC Levadia Tallinn,0,1,A
+2022-04-27,Tallinna Kalev,Flora Tallinn,2,4,A
+2022-04-27,Paide,Vaprus,6,2,H
+2022-04-29,Kuressaare,Legion,1,0,H
+2022-04-30,Vaprus,Kalju Nomme,0,1,A
+2022-04-30,FC Levadia Tallinn,Trans Narva,6,0,H
+2022-05-01,Paide,Tallinna Kalev,7,0,H
+2022-05-01,Flora Tallinn,Tammeka,3,2,H
+2022-05-06,Vaprus,Kuressaare,3,1,H
+2022-05-07,Tallinna Kalev,FC Levadia Tallinn,0,1,A
+2022-05-07,Legion,Trans Narva,1,0,H
+2022-05-08,Kalju Nomme,Tammeka,3,1,H
+2022-05-08,Flora Tallinn,Paide,0,0,D
+2022-05-13,Tammeka,Vaprus,3,1,H
+2022-05-14,Kuressaare,Tallinna Kalev,1,0,H
+2022-05-15,FC Levadia Tallinn,Paide,1,0,H
+2022-05-17,Tammeka,Tallinna Kalev,1,3,A
+2022-05-17,Flora Tallinn,Kuressaare,4,0,H
+2022-05-18,Paide,Trans Narva,4,2,H
+2022-05-18,Vaprus,Legion,1,1,D
+2022-05-18,Kalju Nomme,FC Levadia Tallinn,0,1,A
+2022-05-24,Kuressaare,Kalju Nomme,1,1,D
+2022-05-24,Legion,FC Levadia Tallinn,1,3,A
+2022-05-24,Paide,Tammeka,3,0,H
+2022-05-25,Tallinna Kalev,Vaprus,1,0,H
+2022-05-25,Trans Narva,Flora Tallinn,0,3,A
+2022-05-28,Tallinna Kalev,Legion,2,2,D
+2022-05-29,Kalju Nomme,Paide,1,0,H
+2022-05-29,FC Levadia Tallinn,Flora Tallinn,1,1,D
+2022-05-29,Kuressaare,Tammeka,3,0,H
+2022-06-16,FC Levadia Tallinn,Vaprus,4,1,H
+2022-06-18,Trans Narva,Tallinna Kalev,1,1,D
+2022-06-18,Paide,Kuressaare,1,1,D
+2022-06-19,Tammeka,Legion,1,4,A
+2022-06-19,Flora Tallinn,Kalju Nomme,2,0,H
+2022-06-28,Kuressaare,FC Levadia Tallinn,1,1,D
+2022-06-28,Tallinna Kalev,Kalju Nomme,0,3,A
+2022-06-29,Tammeka,Trans Narva,1,0,H
+2022-06-29,Flora Tallinn,Vaprus,6,1,H
+2022-06-29,Legion,Paide,1,2,A
+2022-07-01,FC Levadia Tallinn,Tallinna Kalev,3,1,H
+2022-07-02,Trans Narva,Paide,1,1,D
+2022-07-02,Legion,Flora Tallinn,0,1,A
+2022-07-02,Vaprus,Tammeka,1,1,D
+2022-07-03,Kalju Nomme,Kuressaare,3,1,H
+2022-07-09,Vaprus,Trans Narva,3,5,A
+2022-07-15,Tammeka,FC Levadia Tallinn,0,3,A
+2022-07-16,Kalju Nomme,Trans Narva,1,1,D
+2022-07-16,Kuressaare,Legion,1,0,H
+2022-07-17,Flora Tallinn,Tallinna Kalev,2,0,H
+2022-07-22,Legion,Flora Tallinn,0,7,A
+2022-07-23,Trans Narva,Kalju Nomme,2,1,H
+2022-07-29,Vaprus,Kalju Nomme,0,3,A
+2022-07-30,Tallinna Kalev,Trans Narva,5,2,H
+2022-07-31,Paide,Tammeka,3,0,H
+2022-07-31,FC Levadia Tallinn,Legion,3,0,H
+2022-07-31,Kuressaare,Flora Tallinn,2,3,A
+2022-08-05,Tammeka,Flora Tallinn,0,1,A
+2022-08-06,Vaprus,Kuressaare,0,1,A
+2022-08-06,Kalju Nomme,Tallinna Kalev,6,0,H
+2022-08-07,Trans Narva,FC Levadia Tallinn,0,1,A
+2022-08-12,FC Levadia Tallinn,Vaprus,3,0,H
+2022-08-13,Legion,Kalju Nomme,1,2,A
+2022-08-13,Flora Tallinn,Trans Narva,1,1,D
+2022-08-13,Tallinna Kalev,Tammeka,2,5,A
+2022-08-14,Paide,Kuressaare,0,0,D
+2022-08-17,Paide,Vaprus,4,2,H
+2022-08-20,Tallinna Kalev,Paide,2,7,A
+2022-08-20,Trans Narva,Legion,2,1,H
+2022-08-20,Flora Tallinn,Vaprus,3,1,H
+2022-08-21,Kalju Nomme,Tammeka,1,1,D
+2022-08-21,Kuressaare,FC Levadia Tallinn,2,3,A
+2022-08-26,Vaprus,Tallinna Kalev,2,3,A
+2022-08-27,Kuressaare,Trans Narva,3,1,H
+2022-08-27,Tammeka,Legion,2,0,H
+2022-08-28,Paide,Flora Tallinn,1,2,A
+2022-08-28,FC Levadia Tallinn,Kalju Nomme,1,1,D
+2022-08-30,Trans Narva,Vaprus,1,0,H
+2022-08-30,Legion,Tallinna Kalev,2,3,A
+2022-08-30,Tammeka,Kuressaare,1,1,D
+2022-08-31,Paide,FC Levadia Tallinn,0,0,D
+2022-08-31,Flora Tallinn,Kalju Nomme,2,0,H
+2022-09-03,Trans Narva,Tammeka,0,0,D
+2022-09-03,Kalju Nomme,Paide,1,2,A
+2022-09-04,Tallinna Kalev,Kuressaare,1,2,A
+2022-09-04,FC Levadia Tallinn,Flora Tallinn,1,2,A
+2022-09-04,Vaprus,Legion,0,1,A
+2022-09-09,Flora Tallinn,Tammeka,1,0,H
+2022-09-10,Kuressaare,Kalju Nomme,0,0,D
+2022-09-10,Vaprus,Paide,1,2,A
+2022-09-11,Tallinna Kalev,FC Levadia Tallinn,0,3,A
+2022-09-11,Trans Narva,Legion,6,1,H
+2022-09-14,Legion,Paide,1,1,D
+2022-09-16,Kalju Nomme,Vaprus,4,0,H
+2022-09-17,Trans Narva,Flora Tallinn,0,4,A
+2022-09-17,Tammeka,Tallinna Kalev,1,3,A
+2022-09-18,FC Levadia Tallinn,Kuressaare,2,3,A
+2022-09-18,Paide,Legion,10,0,H
+2022-10-01,Tallinna Kalev,Vaprus,1,0,H
+2022-10-01,Kuressaare,Tammeka,2,2,D
+2022-10-01,Flora Tallinn,Legion,4,1,H
+2022-10-02,Paide,Trans Narva,2,0,H
+2022-10-02,Kalju Nomme,FC Levadia Tallinn,0,1,A
+2022-10-08,Legion,FC Levadia Tallinn,1,1,D
+2022-10-08,Tallinna Kalev,Trans Narva,0,2,A
+2022-10-08,Tammeka,Kalju Nomme,3,0,H
+2022-10-09,Kuressaare,Paide,3,3,D
+2022-10-09,Vaprus,Flora Tallinn,1,7,A
+2022-10-14,Legion,Kuressaare,3,2,H
+2022-10-15,Paide,Tallinna Kalev,1,2,A
+2022-10-15,FC Levadia Tallinn,Tammeka,1,0,H
+2022-10-15,Vaprus,Trans Narva,1,0,H
+2022-10-16,Kalju Nomme,Flora Tallinn,1,0,H
+2022-10-22,Tallinna Kalev,Legion,2,0,H
+2022-10-22,Flora Tallinn,Kuressaare,2,1,H
+2022-10-22,Tammeka,Vaprus,1,0,H
+2022-10-23,Trans Narva,Kalju Nomme,0,0,D
+2022-10-23,FC Levadia Tallinn,Paide,1,2,A
+2022-10-29,Kuressaare,Tallinna Kalev,1,1,D
+2022-10-29,Vaprus,FC Levadia Tallinn,2,3,A
+2022-10-29,Kalju Nomme,Legion,1,0,H
+2022-10-30,Tammeka,Trans Narva,2,0,H
+2022-10-30,Flora Tallinn,Paide,1,0,H
+2022-11-05,Tallinna Kalev,Flora Tallinn,1,1,D
+2022-11-05,Legion,Tammeka,1,1,D
+2022-11-05,FC Levadia Tallinn,Trans Narva,1,1,D
+2022-11-06,Kuressaare,Vaprus,1,0,H
+2022-11-06,Paide,Kalju Nomme,1,0,H
+2022-11-11,Legion,Vaprus,2,1,H
+2022-11-12,Flora Tallinn,FC Levadia Tallinn,2,1,H
+2022-11-12,Trans Narva,Kuressaare,2,2,D
+2022-11-12,Tallinna Kalev,Kalju Nomme,0,3,A
+2022-11-12,Tammeka,Paide,1,1,D
+2022-11-23,Elva,Legion,0,3,A
+2022-11-27,Legion,Elva,0,1,A

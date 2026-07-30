@@ -1,0 +1,133 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2016-05-01,Throttur Reykjavik,FH hafnarfjordur,0,3,A
+2016-05-01,IBV Vestmannaeyjar,IA Akranes,4,0,H
+2016-05-01,Breidablik,Vikingur Olafsiik,1,2,A
+2016-05-01,Valur Reykjavik,Fjolnir,1,2,A
+2016-05-02,KR Reykjavik,Vikingur Reykjavik,0,0,D
+2016-05-02,Stjarnan,Fylkir,2,0,H
+2016-05-07,Fjolnir,IBV Vestmannaeyjar,2,0,H
+2016-05-08,Vikingur Olafsiik,Valur Reykjavik,2,1,H
+2016-05-08,Fylkir,Breidablik,1,2,A
+2016-05-08,FH hafnarfjordur,IA Akranes,2,1,H
+2016-05-08,Vikingur Reykjavik,Stjarnan,1,2,A
+2016-05-08,Throttur Reykjavik,KR Reykjavik,2,2,D
+2016-05-12,IBV Vestmannaeyjar,Vikingur Olafsiik,1,1,D
+2016-05-12,Valur Reykjavik,Fylkir,2,0,H
+2016-05-12,Stjarnan,Throttur Reykjavik,6,0,H
+2016-05-12,IA Akranes,Fjolnir,1,0,H
+2016-05-12,KR Reykjavik,FH hafnarfjordur,1,0,H
+2016-05-13,Breidablik,Vikingur Reykjavik,1,0,H
+2016-05-16,Fylkir,IBV Vestmannaeyjar,0,3,A
+2016-05-16,FH hafnarfjordur,Fjolnir,2,0,H
+2016-05-16,Vikingur Olafsiik,IA Akranes,3,0,H
+2016-05-17,Vikingur Reykjavik,Valur Reykjavik,2,2,D
+2016-05-17,Throttur Reykjavik,Breidablik,2,0,H
+2016-05-17,KR Reykjavik,Stjarnan,1,1,D
+2016-05-21,IA Akranes,Fylkir,1,1,D
+2016-05-22,IBV Vestmannaeyjar,Vikingur Reykjavik,0,3,A
+2016-05-22,Fjolnir,Vikingur Olafsiik,5,1,H
+2016-05-22,Valur Reykjavik,Throttur Reykjavik,4,1,H
+2016-05-22,Breidablik,KR Reykjavik,1,0,H
+2016-05-23,Stjarnan,FH hafnarfjordur,1,1,D
+2016-05-29,Throttur Reykjavik,IBV Vestmannaeyjar,0,1,A
+2016-05-29,Vikingur Reykjavik,IA Akranes,3,2,H
+2016-05-29,KR Reykjavik,Valur Reykjavik,2,1,H
+2016-05-30,Fylkir,Fjolnir,2,2,D
+2016-05-30,FH hafnarfjordur,Vikingur Olafsiik,1,1,D
+2016-05-30,Stjarnan,Breidablik,1,3,A
+2016-06-04,IBV Vestmannaeyjar,KR Reykjavik,1,0,H
+2016-06-05,Valur Reykjavik,Stjarnan,2,0,H
+2016-06-05,Vikingur Olafsiik,Fylkir,1,0,H
+2016-06-05,Fjolnir,Vikingur Reykjavik,2,1,H
+2016-06-05,IA Akranes,Throttur Reykjavik,0,1,A
+2016-06-05,Breidablik,FH hafnarfjordur,0,1,A
+2016-06-15,IBV Vestmannaeyjar,Breidablik,0,2,A
+2016-06-15,Fjolnir,KR Reykjavik,3,1,H
+2016-06-16,Valur Reykjavik,FH hafnarfjordur,0,1,A
+2016-06-23,Stjarnan,IBV Vestmannaeyjar,1,0,H
+2016-06-23,KR Reykjavik,IA Akranes,1,2,A
+2016-06-24,FH hafnarfjordur,Fylkir,1,0,H
+2016-06-24,Vikingur Reykjavik,Vikingur Olafsiik,2,0,H
+2016-06-24,Breidablik,Valur Reykjavik,0,0,D
+2016-06-24,Throttur Reykjavik,Fjolnir,0,5,A
+2016-06-28,Fylkir,Vikingur Reykjavik,1,0,H
+2016-06-28,Vikingur Olafsiik,Throttur Reykjavik,3,2,H
+2016-06-29,IA Akranes,Stjarnan,4,2,H
+2016-07-09,FH hafnarfjordur,Vikingur Reykjavik,2,2,D
+2016-07-10,KR Reykjavik,Vikingur Olafsiik,0,0,D
+2016-07-11,Valur Reykjavik,IBV Vestmannaeyjar,2,1,H
+2016-07-11,Stjarnan,Fjolnir,2,1,H
+2016-07-11,Breidablik,IA Akranes,0,1,A
+2016-07-11,Throttur Reykjavik,Fylkir,1,4,A
+2016-07-16,IBV Vestmannaeyjar,FH hafnarfjordur,1,1,D
+2016-07-17,Fylkir,KR Reykjavik,1,4,A
+2016-07-17,IA Akranes,Valur Reykjavik,2,1,H
+2016-07-17,Vikingur Olafsiik,Stjarnan,2,3,A
+2016-07-17,Fjolnir,Breidablik,0,3,A
+2016-07-18,Vikingur Reykjavik,Throttur Reykjavik,2,0,H
+2016-07-24,IA Akranes,IBV Vestmannaeyjar,2,0,H
+2016-07-24,FH hafnarfjordur,Throttur Reykjavik,2,0,H
+2016-07-24,Fjolnir,Valur Reykjavik,2,2,D
+2016-07-24,Vikingur Olafsiik,Breidablik,0,2,A
+2016-07-24,Fylkir,Stjarnan,1,2,A
+2016-07-25,Vikingur Reykjavik,KR Reykjavik,1,0,H
+2016-08-03,IBV Vestmannaeyjar,Fjolnir,0,2,A
+2016-08-03,KR Reykjavik,Throttur Reykjavik,2,1,H
+2016-08-03,Breidablik,Fylkir,1,1,D
+2016-08-03,IA Akranes,FH hafnarfjordur,1,3,A
+2016-08-03,Valur Reykjavik,Vikingur Olafsiik,3,1,H
+2016-08-04,Stjarnan,Vikingur Reykjavik,3,0,H
+2016-08-07,Vikingur Olafsiik,IBV Vestmannaeyjar,0,1,A
+2016-08-07,Fylkir,Valur Reykjavik,2,2,D
+2016-08-07,Fjolnir,IA Akranes,4,0,H
+2016-08-08,FH hafnarfjordur,KR Reykjavik,0,1,A
+2016-08-08,Vikingur Reykjavik,Breidablik,3,1,H
+2016-08-08,Throttur Reykjavik,Stjarnan,1,1,D
+2016-08-15,Fjolnir,FH hafnarfjordur,0,1,A
+2016-08-15,Breidablik,Throttur Reykjavik,2,0,H
+2016-08-15,IA Akranes,Vikingur Olafsiik,3,0,H
+2016-08-15,Stjarnan,KR Reykjavik,1,3,A
+2016-08-18,IBV Vestmannaeyjar,Fylkir,1,2,A
+2016-08-18,Valur Reykjavik,Vikingur Reykjavik,7,0,H
+2016-08-21,KR Reykjavik,Breidablik,1,1,D
+2016-08-21,Vikingur Olafsiik,Fjolnir,2,2,D
+2016-08-22,Fylkir,IA Akranes,0,3,A
+2016-08-22,FH hafnarfjordur,Stjarnan,3,2,H
+2016-08-22,Vikingur Reykjavik,IBV Vestmannaeyjar,2,1,H
+2016-08-22,Throttur Reykjavik,Valur Reykjavik,0,4,A
+2016-08-27,Breidablik,Stjarnan,2,1,H
+2016-08-28,IBV Vestmannaeyjar,Throttur Reykjavik,1,1,D
+2016-08-28,Fjolnir,Fylkir,1,1,D
+2016-08-28,IA Akranes,Vikingur Reykjavik,2,0,H
+2016-08-28,Vikingur Olafsiik,FH hafnarfjordur,0,2,A
+2016-08-28,Valur Reykjavik,KR Reykjavik,2,0,H
+2016-09-10,KR Reykjavik,IBV Vestmannaeyjar,2,0,H
+2016-09-10,Vikingur Reykjavik,Fjolnir,1,2,A
+2016-09-11,Fylkir,Vikingur Olafsiik,2,1,H
+2016-09-11,FH hafnarfjordur,Breidablik,1,1,D
+2016-09-11,Throttur Reykjavik,IA Akranes,3,1,H
+2016-09-11,Stjarnan,Valur Reykjavik,2,3,A
+2016-09-15,Fylkir,FH hafnarfjordur,2,3,A
+2016-09-15,Fjolnir,Throttur Reykjavik,2,0,H
+2016-09-15,IA Akranes,KR Reykjavik,0,1,A
+2016-09-15,Vikingur Olafsiik,Vikingur Reykjavik,1,1,D
+2016-09-15,Valur Reykjavik,Breidablik,0,3,A
+2016-09-16,IBV Vestmannaeyjar,Stjarnan,1,2,A
+2016-09-18,FH hafnarfjordur,Valur Reykjavik,1,1,D
+2016-09-18,KR Reykjavik,Fjolnir,3,2,H
+2016-09-18,Vikingur Reykjavik,Fylkir,3,2,H
+2016-09-19,Breidablik,IBV Vestmannaeyjar,1,1,D
+2016-09-19,Throttur Reykjavik,Vikingur Olafsiik,1,1,D
+2016-09-19,Stjarnan,IA Akranes,3,1,H
+2016-09-25,Fylkir,Throttur Reykjavik,2,2,D
+2016-09-25,IBV Vestmannaeyjar,Valur Reykjavik,4,0,H
+2016-09-25,Fjolnir,Stjarnan,0,1,A
+2016-09-25,Vikingur Reykjavik,FH hafnarfjordur,1,0,H
+2016-09-25,IA Akranes,Breidablik,1,0,H
+2016-09-25,Vikingur Olafsiik,KR Reykjavik,0,1,A
+2016-10-01,FH hafnarfjordur,IBV Vestmannaeyjar,1,1,D
+2016-10-01,KR Reykjavik,Fylkir,3,0,H
+2016-10-01,Valur Reykjavik,IA Akranes,1,0,H
+2016-10-01,Stjarnan,Vikingur Olafsiik,4,1,H
+2016-10-01,Breidablik,Fjolnir,0,3,A
+2016-10-01,Throttur Reykjavik,Vikingur Reykjavik,1,2,A

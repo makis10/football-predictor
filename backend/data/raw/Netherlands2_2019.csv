@@ -1,0 +1,291 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2019-08-09,De Graafschap,Cambuur,2,0,H
+2019-08-09,Dordrecht,NAC Breda,0,2,A
+2019-08-09,GO Ahead Eagles,MVV,3,2,H
+2019-08-09,NEC Nijmegen,FC Eindhoven,1,2,A
+2019-08-09,Roda,Almere City FC,1,1,D
+2019-08-09,FC OSS,Jong Ajax,2,1,H
+2019-08-09,Helmond Sport,FC Volendam,1,1,D
+2019-08-10,Excelsior,Jong Utrecht,2,0,H
+2019-08-12,Jong PSV U21,Den Bosch,2,2,D
+2019-08-12,Jong AZ,Telstar,0,0,D
+2019-08-16,NAC Breda,Helmond Sport,5,1,H
+2019-08-16,MVV,De Graafschap,0,3,A
+2019-08-16,FC Volendam,Roda,4,0,H
+2019-08-16,Almere City FC,Jong PSV U21,3,2,H
+2019-08-16,Cambuur,GO Ahead Eagles,5,0,H
+2019-08-16,Den Bosch,Telstar,0,1,A
+2019-08-16,FC Eindhoven,Dordrecht,5,1,H
+2019-08-19,Jong AZ,Excelsior,1,2,A
+2019-08-19,Jong Ajax,NEC Nijmegen,3,3,D
+2019-08-19,Jong Utrecht,FC OSS,2,1,H
+2019-08-23,De Graafschap,FC Volendam,3,0,H
+2019-08-23,NAC Breda,Cambuur,1,0,H
+2019-08-23,Dordrecht,Jong Ajax,2,5,A
+2019-08-23,GO Ahead Eagles,Jong Utrecht,4,0,H
+2019-08-23,Roda,NEC Nijmegen,1,2,A
+2019-08-23,Den Bosch,FC Eindhoven,1,1,D
+2019-08-23,FC OSS,Jong AZ,1,2,A
+2019-08-23,Helmond Sport,Almere City FC,1,1,D
+2019-08-23,Telstar,Excelsior,3,0,H
+2019-08-26,Jong PSV U21,MVV,0,1,A
+2019-08-30,Excelsior,Helmond Sport,3,1,H
+2019-08-30,NEC Nijmegen,Telstar,4,2,H
+2019-08-30,FC Volendam,NAC Breda,2,1,H
+2019-08-30,Jong AZ,Dordrecht,1,1,D
+2019-08-30,Cambuur,Den Bosch,3,2,H
+2019-08-30,FC Eindhoven,GO Ahead Eagles,2,1,H
+2019-08-30,FC OSS,De Graafschap,0,0,D
+2019-08-30,Jong Ajax,Almere City FC,3,2,H
+2019-08-30,Jong Utrecht,Jong PSV U21,3,0,H
+2019-09-01,MVV,Roda,1,0,H
+2019-09-07,Dordrecht,MVV,1,1,D
+2019-09-07,Telstar,Cambuur,0,2,A
+2019-09-07,GO Ahead Eagles,Excelsior,2,2,D
+2019-09-08,Helmond Sport,FC Eindhoven,1,0,H
+2019-09-08,Roda,FC OSS,2,1,H
+2019-09-08,Almere City FC,FC Volendam,1,0,H
+2019-09-13,Excelsior,Almere City FC,4,2,H
+2019-09-13,De Graafschap,Jong Ajax,3,2,H
+2019-09-13,NAC Breda,Jong Utrecht,0,0,D
+2019-09-13,Jong PSV U21,Jong AZ,3,2,H
+2019-09-13,MVV,Telstar,1,2,A
+2019-09-13,FC Volendam,Dordrecht,1,1,D
+2019-09-13,Cambuur,Helmond Sport,5,1,H
+2019-09-13,Den Bosch,NEC Nijmegen,2,2,D
+2019-09-13,FC Eindhoven,Roda,1,1,D
+2019-09-14,FC OSS,GO Ahead Eagles,1,2,A
+2019-09-16,NEC Nijmegen,De Graafschap,1,1,D
+2019-09-16,Jong AZ,NAC Breda,1,2,A
+2019-09-16,Jong Ajax,Jong PSV U21,2,0,H
+2019-09-16,Jong Utrecht,Den Bosch,5,1,H
+2019-09-20,De Graafschap,FC Eindhoven,4,0,H
+2019-09-20,NAC Breda,Excelsior,2,1,H
+2019-09-20,Dordrecht,NEC Nijmegen,2,0,H
+2019-09-20,GO Ahead Eagles,Jong Ajax,1,1,D
+2019-09-20,Roda,Jong Utrecht,1,3,A
+2019-09-20,Almere City FC,Jong AZ,2,1,H
+2019-09-20,Den Bosch,MVV,4,0,H
+2019-09-20,Telstar,FC Volendam,1,2,A
+2019-09-21,Helmond Sport,FC OSS,0,2,A
+2019-09-23,Jong PSV U21,Cambuur,0,1,A
+2019-09-27,Excelsior,Jong PSV U21,5,2,H
+2019-09-27,MVV,Jong Ajax,1,4,A
+2019-09-27,NEC Nijmegen,GO Ahead Eagles,3,3,D
+2019-09-27,Roda,De Graafschap,1,1,D
+2019-09-27,FC Volendam,Cambuur,0,4,A
+2019-09-27,Almere City FC,Dordrecht,3,2,H
+2019-09-27,FC Eindhoven,Telstar,4,1,H
+2019-09-27,FC OSS,NAC Breda,0,1,A
+2019-09-30,Jong AZ,Den Bosch,2,2,D
+2019-09-30,Jong Utrecht,Helmond Sport,1,1,D
+2019-10-04,De Graafschap,Almere City FC,0,0,D
+2019-10-04,NAC Breda,NEC Nijmegen,1,0,H
+2019-10-04,Dordrecht,Jong Utrecht,2,5,A
+2019-10-04,GO Ahead Eagles,Jong AZ,1,1,D
+2019-10-04,Jong PSV U21,FC Volendam,3,1,H
+2019-10-04,Cambuur,Excelsior,4,0,H
+2019-10-04,Den Bosch,FC OSS,4,0,H
+2019-10-04,Helmond Sport,MVV,3,1,H
+2019-10-04,Jong Ajax,FC Eindhoven,6,0,H
+2019-10-04,Telstar,Roda,1,2,A
+2019-10-11,MVV,Cambuur,0,0,D
+2019-10-12,FC OSS,Telstar,2,2,D
+2019-10-12,Roda,Helmond Sport,4,0,H
+2019-10-13,FC Volendam,Den Bosch,1,1,D
+2019-10-13,Excelsior,Dordrecht,3,2,H
+2019-10-13,Almere City FC,GO Ahead Eagles,1,1,D
+2019-10-18,Dordrecht,Helmond Sport,1,2,A
+2019-10-18,GO Ahead Eagles,FC Volendam,3,0,H
+2019-10-18,MVV,Excelsior,0,0,D
+2019-10-18,NEC Nijmegen,Jong PSV U21,1,0,H
+2019-10-18,Jong AZ,Jong Ajax,3,2,H
+2019-10-18,Cambuur,FC OSS,5,1,H
+2019-10-18,Den Bosch,Roda,0,0,D
+2019-10-18,FC Eindhoven,NAC Breda,2,2,D
+2019-10-18,Telstar,Almere City FC,1,0,H
+2019-10-18,Jong Utrecht,De Graafschap,2,2,D
+2019-10-21,NAC Breda,De Graafschap,1,2,A
+2019-10-21,Jong PSV U21,FC Eindhoven,2,1,H
+2019-10-21,Jong AZ,NEC Nijmegen,0,2,A
+2019-10-21,Jong Ajax,Jong Utrecht,4,0,H
+2019-10-25,Excelsior,Jong Ajax,1,3,A
+2019-10-25,De Graafschap,Dordrecht,5,0,H
+2019-10-25,GO Ahead Eagles,Den Bosch,0,0,D
+2019-10-25,NEC Nijmegen,MVV,2,0,H
+2019-10-25,Roda,NAC Breda,4,2,H
+2019-10-25,FC Volendam,Jong AZ,3,2,H
+2019-10-25,Almere City FC,FC Eindhoven,3,1,H
+2019-10-25,FC OSS,Jong PSV U21,1,0,H
+2019-10-25,Helmond Sport,Telstar,1,4,A
+2019-10-25,Jong Utrecht,Cambuur,1,1,D
+2019-11-01,De Graafschap,Excelsior,0,0,D
+2019-11-01,NAC Breda,GO Ahead Eagles,1,1,D
+2019-11-01,Dordrecht,FC OSS,1,1,D
+2019-11-01,MVV,Almere City FC,3,2,H
+2019-11-01,Cambuur,NEC Nijmegen,0,0,D
+2019-11-01,Den Bosch,Helmond Sport,1,1,D
+2019-11-01,FC Eindhoven,Jong AZ,2,1,H
+2019-11-01,Telstar,Jong Utrecht,2,0,H
+2019-11-04,Jong PSV U21,Roda,1,1,D
+2019-11-04,Jong Ajax,FC Volendam,1,3,A
+2019-11-08,Excelsior,FC Eindhoven,5,4,H
+2019-11-08,GO Ahead Eagles,Dordrecht,3,1,H
+2019-11-08,Jong PSV U21,Telstar,1,1,D
+2019-11-08,NEC Nijmegen,FC OSS,3,0,H
+2019-11-08,Roda,Cambuur,1,2,A
+2019-11-08,FC Volendam,Jong Utrecht,1,0,H
+2019-11-08,Jong AZ,MVV,3,2,H
+2019-11-08,Almere City FC,NAC Breda,1,0,H
+2019-11-08,Helmond Sport,De Graafschap,1,2,A
+2019-11-08,Jong Ajax,Den Bosch,5,1,H
+2019-11-15,Dordrecht,Roda,1,1,D
+2019-11-15,FC Eindhoven,MVV,2,0,H
+2019-11-15,FC OSS,FC Volendam,1,2,A
+2019-11-17,Telstar,GO Ahead Eagles,0,2,A
+2019-11-17,Den Bosch,Excelsior,3,3,D
+2019-11-17,Cambuur,Almere City FC,3,1,H
+2019-11-22,Excelsior,FC Volendam,1,2,A
+2019-11-22,De Graafschap,Jong PSV U21,4,1,H
+2019-11-22,NAC Breda,Jong Ajax,1,2,A
+2019-11-22,Dordrecht,Telstar,2,3,A
+2019-11-22,GO Ahead Eagles,Roda,1,1,D
+2019-11-22,MVV,FC OSS,4,0,H
+2019-11-22,Almere City FC,Den Bosch,0,2,A
+2019-11-22,FC Eindhoven,Cambuur,0,3,A
+2019-11-22,Helmond Sport,NEC Nijmegen,1,2,A
+2019-11-22,Jong Utrecht,Jong AZ,2,1,H
+2019-11-25,Jong PSV U21,NAC Breda,1,3,A
+2019-11-25,NEC Nijmegen,Jong Utrecht,0,0,D
+2019-11-25,Jong AZ,De Graafschap,2,1,H
+2019-11-25,Jong Ajax,Helmond Sport,1,1,D
+2019-11-29,NAC Breda,MVV,2,0,H
+2019-11-29,Roda,Excelsior,1,4,A
+2019-11-29,FC Volendam,NEC Nijmegen,3,1,H
+2019-11-29,Cambuur,Jong AZ,3,1,H
+2019-11-29,Den Bosch,Dordrecht,3,2,H
+2019-11-29,FC OSS,FC Eindhoven,3,1,H
+2019-11-29,Helmond Sport,Jong PSV U21,2,3,A
+2019-11-29,Telstar,Jong Ajax,2,3,A
+2019-12-01,De Graafschap,GO Ahead Eagles,1,1,D
+2019-12-02,Jong Utrecht,Almere City FC,3,1,H
+2019-12-06,Excelsior,NEC Nijmegen,2,1,H
+2019-12-06,Dordrecht,Cambuur,2,4,A
+2019-12-06,GO Ahead Eagles,Jong PSV U21,1,1,D
+2019-12-06,MVV,Jong Utrecht,1,1,D
+2019-12-06,Almere City FC,FC OSS,3,0,H
+2019-12-06,Den Bosch,De Graafschap,2,2,D
+2019-12-06,FC Eindhoven,FC Volendam,1,4,A
+2019-12-06,Telstar,NAC Breda,1,1,D
+2019-12-09,Jong AZ,Helmond Sport,4,1,H
+2019-12-09,Jong Ajax,Roda,2,0,H
+2019-12-13,De Graafschap,Telstar,2,2,D
+2019-12-13,NAC Breda,Den Bosch,1,2,A
+2019-12-13,Jong PSV U21,Dordrecht,0,1,A
+2019-12-13,NEC Nijmegen,Almere City FC,2,3,A
+2019-12-13,Roda,Jong AZ,2,2,D
+2019-12-13,FC Volendam,MVV,4,1,H
+2019-12-13,Cambuur,Jong Ajax,0,2,A
+2019-12-13,FC OSS,Excelsior,0,2,A
+2019-12-13,Helmond Sport,GO Ahead Eagles,1,2,A
+2019-12-13,Jong Utrecht,FC Eindhoven,2,2,D
+2019-12-20,MVV,Helmond Sport,4,1,H
+2019-12-20,FC Volendam,De Graafschap,3,3,D
+2019-12-20,Almere City FC,Roda,2,0,H
+2019-12-20,Den Bosch,Jong PSV U21,2,1,H
+2019-12-20,FC Eindhoven,NEC Nijmegen,1,4,A
+2019-12-20,Jong Ajax,FC OSS,2,0,H
+2019-12-20,Jong Utrecht,GO Ahead Eagles,0,3,A
+2019-12-21,NAC Breda,Dordrecht,3,0,H
+2019-12-22,Excelsior,Cambuur,1,3,A
+2019-12-22,Telstar,Jong AZ,3,1,H
+2020-01-10,De Graafschap,Jong Utrecht,2,1,H
+2020-01-10,Dordrecht,Excelsior,1,1,D
+2020-01-10,Cambuur,FC Volendam,1,2,A
+2020-01-10,Helmond Sport,NAC Breda,0,0,D
+2020-01-10,Telstar,FC Eindhoven,2,0,H
+2020-01-12,Roda,MVV,2,2,D
+2020-01-12,GO Ahead Eagles,Almere City FC,1,1,D
+2020-01-12,NEC Nijmegen,Den Bosch,1,0,H
+2020-01-13,Jong PSV U21,Jong Ajax,0,0,D
+2020-01-13,Jong AZ,FC OSS,3,1,H
+2020-01-17,Excelsior,Telstar,3,3,D
+2020-01-17,NAC Breda,Jong AZ,3,1,H
+2020-01-17,MVV,NEC Nijmegen,0,0,D
+2020-01-17,FC Volendam,Jong PSV U21,4,2,H
+2020-01-17,Almere City FC,De Graafschap,0,2,A
+2020-01-17,FC Eindhoven,Helmond Sport,2,0,H
+2020-01-17,FC OSS,Cambuur,3,2,H
+2020-01-19,Den Bosch,GO Ahead Eagles,2,3,A
+2020-01-20,Jong Ajax,Dordrecht,2,0,H
+2020-01-20,Jong Utrecht,Roda,2,1,H
+2020-01-24,De Graafschap,MVV,3,2,H
+2020-01-24,Dordrecht,FC Eindhoven,1,0,H
+2020-01-24,NEC Nijmegen,Jong Ajax,3,3,D
+2020-01-24,Roda,FC Volendam,2,3,A
+2020-01-24,Cambuur,Jong Utrecht,3,1,H
+2020-01-24,Helmond Sport,Den Bosch,0,0,D
+2020-01-24,Telstar,FC OSS,1,0,H
+2020-01-26,GO Ahead Eagles,NAC Breda,1,0,H
+2020-01-27,Jong PSV U21,Excelsior,2,1,H
+2020-01-31,Excelsior,NAC Breda,2,2,D
+2020-01-31,MVV,Jong PSV U21,3,1,H
+2020-01-31,NEC Nijmegen,Cambuur,0,2,A
+2020-01-31,FC Volendam,Helmond Sport,2,1,H
+2020-01-31,Almere City FC,Telstar,4,2,H
+2020-01-31,Den Bosch,Jong AZ,3,0,H
+2020-01-31,FC Eindhoven,De Graafschap,1,1,D
+2020-01-31,FC OSS,Roda,0,0,D
+2020-02-03,Jong Ajax,GO Ahead Eagles,5,1,H
+2020-02-03,Jong Utrecht,Dordrecht,1,1,D
+2020-02-07,NAC Breda,FC OSS,1,1,D
+2020-02-07,Dordrecht,Almere City FC,1,2,A
+2020-02-07,GO Ahead Eagles,FC Eindhoven,3,1,H
+2020-02-07,Roda,Den Bosch,1,5,A
+2020-02-07,Cambuur,MVV,2,1,H
+2020-02-07,Helmond Sport,Excelsior,1,4,A
+2020-02-07,Telstar,NEC Nijmegen,1,7,A
+2020-02-10,Jong PSV U21,De Graafschap,2,3,A
+2020-02-10,Jong AZ,FC Volendam,1,1,D
+2020-02-10,Jong Utrecht,Jong Ajax,7,2,H
+2020-02-14,Excelsior,Jong AZ,3,3,D
+2020-02-14,De Graafschap,Roda,2,0,H
+2020-02-14,NEC Nijmegen,Helmond Sport,2,0,H
+2020-02-14,FC Volendam,Telstar,1,1,D
+2020-02-14,Almere City FC,Cambuur,0,1,A
+2020-02-14,Den Bosch,Jong Utrecht,3,2,H
+2020-02-14,FC Eindhoven,Jong PSV U21,1,1,D
+2020-02-14,FC OSS,Dordrecht,1,3,A
+2020-02-16,MVV,GO Ahead Eagles,3,0,H
+2020-02-17,Jong Ajax,NAC Breda,2,4,A
+2020-02-21,Excelsior,Den Bosch,6,4,H
+2020-02-21,NAC Breda,Almere City FC,1,0,H
+2020-02-21,Dordrecht,De Graafschap,1,2,A
+2020-02-21,GO Ahead Eagles,NEC Nijmegen,2,1,H
+2020-02-21,Jong PSV U21,FC OSS,1,1,D
+2020-02-21,Cambuur,Roda,2,0,H
+2020-02-21,Helmond Sport,Jong Ajax,0,2,A
+2020-02-21,Telstar,MVV,2,1,H
+2020-02-24,Jong AZ,FC Eindhoven,2,4,A
+2020-02-24,Jong Utrecht,FC Volendam,2,1,H
+2020-02-28,De Graafschap,Jong AZ,5,1,H
+2020-02-28,MVV,Den Bosch,2,3,A
+2020-02-28,NEC Nijmegen,NAC Breda,1,1,D
+2020-02-28,Roda,Dordrecht,5,0,H
+2020-02-28,FC Volendam,GO Ahead Eagles,2,2,D
+2020-02-28,Almere City FC,Helmond Sport,2,0,H
+2020-02-28,Cambuur,Jong PSV U21,4,2,H
+2020-02-28,FC Eindhoven,Excelsior,3,1,H
+2020-02-28,FC OSS,Jong Utrecht,2,1,H
+2020-02-28,Jong Ajax,Telstar,2,2,D
+2020-03-02,Jong AZ,Almere City FC,3,1,H
+2020-03-06,Excelsior,MVV,3,0,H
+2020-03-06,FC Volendam,Jong Ajax,4,0,H
+2020-03-06,Den Bosch,Almere City FC,1,2,A
+2020-03-06,FC Eindhoven,FC OSS,2,2,D
+2020-03-06,Helmond Sport,Dordrecht,1,1,D
+2020-03-06,Telstar,Jong PSV U21,1,0,H
+2020-03-08,NAC Breda,Roda,4,1,H
+2020-03-08,GO Ahead Eagles,De Graafschap,1,2,A
+2020-03-09,Jong AZ,Cambuur,0,3,A
+2020-03-09,Jong Utrecht,NEC Nijmegen,1,2,A

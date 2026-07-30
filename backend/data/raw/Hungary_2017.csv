@@ -1,0 +1,199 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2017-07-15,Paks,Ujpest,2,2,D
+2017-07-15,Debreceni VSC,Mezokovesd-zsory,1,2,A
+2017-07-15,Budapest Honved,Szombathelyi Haladas,2,0,H
+2017-07-16,Fehervar FC,Balmazujvaros,1,1,D
+2017-07-16,Ferencvarosi TC,Puskas Academy,1,1,D
+2017-07-16,Vasas,Diosgyori VTK,0,2,A
+2017-07-22,Budapest Honved,Diosgyori VTK,2,2,D
+2017-07-22,Mezokovesd-zsory,Paks,3,2,H
+2017-07-22,Szombathelyi Haladas,Debreceni VSC,1,0,H
+2017-07-23,Ujpest,Ferencvarosi TC,2,2,D
+2017-07-23,Puskas Academy,Fehervar FC,1,3,A
+2017-07-23,Balmazujvaros,Vasas,0,1,A
+2017-07-29,Paks,Debreceni VSC,1,1,D
+2017-07-29,Szombathelyi Haladas,Diosgyori VTK,0,3,A
+2017-07-29,Budapest Honved,Balmazujvaros,2,2,D
+2017-07-30,Fehervar FC,Ujpest,2,2,D
+2017-07-30,Ferencvarosi TC,Mezokovesd-zsory,5,0,H
+2017-07-30,Vasas,Puskas Academy,2,0,H
+2017-08-05,Balmazujvaros,Diosgyori VTK,4,0,H
+2017-08-05,Paks,Szombathelyi Haladas,2,0,H
+2017-08-05,Puskas Academy,Budapest Honved,0,2,A
+2017-08-06,Debreceni VSC,Ferencvarosi TC,0,0,D
+2017-08-06,Ujpest,Vasas,1,0,H
+2017-08-06,Mezokovesd-zsory,Fehervar FC,0,2,A
+2017-08-12,Budapest Honved,Ujpest,2,1,H
+2017-08-12,Ferencvarosi TC,Paks,1,1,D
+2017-08-12,Vasas,Mezokovesd-zsory,1,1,D
+2017-08-12,Diosgyori VTK,Puskas Academy,2,2,D
+2017-08-12,Szombathelyi Haladas,Balmazujvaros,3,1,H
+2017-08-12,Fehervar FC,Debreceni VSC,1,0,H
+2017-08-17,Ferencvarosi TC,Szombathelyi Haladas,2,0,H
+2017-08-18,Debreceni VSC,Vasas,4,1,H
+2017-08-19,Mezokovesd-zsory,Budapest Honved,1,2,A
+2017-08-19,Puskas Academy,Balmazujvaros,2,1,H
+2017-08-19,Ujpest,Diosgyori VTK,1,1,D
+2017-08-26,Vasas,Paks,3,1,H
+2017-08-26,Diosgyori VTK,Mezokovesd-zsory,2,1,H
+2017-08-26,Szombathelyi Haladas,Puskas Academy,1,5,A
+2017-08-26,Balmazujvaros,Ujpest,0,1,A
+2017-08-26,Budapest Honved,Debreceni VSC,1,3,A
+2017-08-27,Fehervar FC,Ferencvarosi TC,3,1,H
+2017-09-06,Paks,Fehervar FC,1,4,A
+2017-09-09,Ferencvarosi TC,Vasas,5,2,H
+2017-09-09,Mezokovesd-zsory,Balmazujvaros,2,2,D
+2017-09-09,Debreceni VSC,Diosgyori VTK,3,1,H
+2017-09-09,Ujpest,Puskas Academy,1,3,A
+2017-09-10,Fehervar FC,Szombathelyi Haladas,3,1,H
+2017-09-10,Paks,Budapest Honved,2,2,D
+2017-09-16,Vasas,Fehervar FC,3,1,H
+2017-09-16,Puskas Academy,Mezokovesd-zsory,1,0,H
+2017-09-16,Diosgyori VTK,Paks,2,4,A
+2017-09-16,Szombathelyi Haladas,Ujpest,1,0,H
+2017-09-16,Balmazujvaros,Debreceni VSC,0,1,A
+2017-09-16,Budapest Honved,Ferencvarosi TC,1,3,A
+2017-09-23,Ferencvarosi TC,Diosgyori VTK,2,0,H
+2017-09-23,Paks,Balmazujvaros,1,0,H
+2017-09-23,Debreceni VSC,Puskas Academy,3,0,H
+2017-09-23,Mezokovesd-zsory,Ujpest,2,4,A
+2017-09-23,Fehervar FC,Budapest Honved,1,1,D
+2017-09-30,Ujpest,Debreceni VSC,1,1,D
+2017-09-30,Puskas Academy,Paks,1,2,A
+2017-09-30,Diosgyori VTK,Fehervar FC,2,3,A
+2017-09-30,Szombathelyi Haladas,Mezokovesd-zsory,2,2,D
+2017-09-30,Balmazujvaros,Ferencvarosi TC,2,3,A
+2017-09-30,Budapest Honved,Vasas,1,4,A
+2017-10-14,Ujpest,Paks,0,0,D
+2017-10-14,Mezokovesd-zsory,Debreceni VSC,0,2,A
+2017-10-14,Diosgyori VTK,Vasas,5,0,H
+2017-10-14,Szombathelyi Haladas,Budapest Honved,1,2,A
+2017-10-14,Balmazujvaros,Fehervar FC,1,1,D
+2017-10-14,Puskas Academy,Ferencvarosi TC,1,1,D
+2017-10-17,Vasas,Szombathelyi Haladas,1,0,H
+2017-10-21,Fehervar FC,Puskas Academy,2,0,H
+2017-10-21,Ferencvarosi TC,Ujpest,1,0,H
+2017-10-21,Vasas,Balmazujvaros,1,2,A
+2017-10-21,Paks,Mezokovesd-zsory,1,1,D
+2017-10-21,Debreceni VSC,Szombathelyi Haladas,1,1,D
+2017-10-21,Diosgyori VTK,Budapest Honved,2,1,H
+2017-10-28,Ujpest,Fehervar FC,2,2,D
+2017-10-28,Mezokovesd-zsory,Ferencvarosi TC,0,1,A
+2017-10-28,Debreceni VSC,Paks,3,2,H
+2017-10-28,Szombathelyi Haladas,Diosgyori VTK,0,3,A
+2017-10-28,Balmazujvaros,Budapest Honved,0,3,A
+2017-10-28,Puskas Academy,Vasas,0,0,D
+2017-11-04,Fehervar FC,Mezokovesd-zsory,4,0,H
+2017-11-04,Ferencvarosi TC,Debreceni VSC,2,1,H
+2017-11-04,Vasas,Ujpest,0,1,A
+2017-11-04,Diosgyori VTK,Balmazujvaros,1,2,A
+2017-11-04,Szombathelyi Haladas,Paks,1,2,A
+2017-11-04,Budapest Honved,Puskas Academy,4,3,H
+2017-11-18,Ujpest,Budapest Honved,2,1,H
+2017-11-18,Mezokovesd-zsory,Vasas,3,3,D
+2017-11-18,Paks,Ferencvarosi TC,0,2,A
+2017-11-18,Puskas Academy,Diosgyori VTK,1,0,H
+2017-11-18,Balmazujvaros,Szombathelyi Haladas,2,1,H
+2017-11-18,Debreceni VSC,Fehervar FC,2,5,A
+2017-11-25,Budapest Honved,Mezokovesd-zsory,1,2,A
+2017-11-25,Fehervar FC,Paks,2,0,H
+2017-11-25,Vasas,Debreceni VSC,1,5,A
+2017-11-25,Diosgyori VTK,Ujpest,1,2,A
+2017-11-25,Balmazujvaros,Puskas Academy,2,2,D
+2017-11-25,Szombathelyi Haladas,Ferencvarosi TC,2,1,H
+2017-12-02,Ujpest,Balmazujvaros,2,2,D
+2017-12-02,Mezokovesd-zsory,Diosgyori VTK,0,0,D
+2017-12-02,Paks,Vasas,3,1,H
+2017-12-02,Puskas Academy,Szombathelyi Haladas,1,3,A
+2017-12-02,Debreceni VSC,Budapest Honved,1,0,H
+2017-12-02,Ferencvarosi TC,Fehervar FC,3,1,H
+2017-12-09,Budapest Honved,Paks,1,0,H
+2017-12-09,Puskas Academy,Ujpest,2,1,H
+2017-12-09,Szombathelyi Haladas,Fehervar FC,1,0,H
+2017-12-09,Balmazujvaros,Mezokovesd-zsory,0,0,D
+2017-12-09,Diosgyori VTK,Debreceni VSC,3,2,H
+2017-12-09,Vasas,Ferencvarosi TC,0,2,A
+2018-02-24,Fehervar FC,Vasas,2,1,H
+2018-02-24,Ujpest,Szombathelyi Haladas,1,0,H
+2018-02-24,Mezokovesd-zsory,Puskas Academy,0,0,D
+2018-02-24,Paks,Diosgyori VTK,2,1,H
+2018-02-24,Debreceni VSC,Balmazujvaros,0,2,A
+2018-02-24,Ferencvarosi TC,Budapest Honved,5,2,H
+2018-03-03,Ujpest,Mezokovesd-zsory,2,3,A
+2018-03-03,Puskas Academy,Debreceni VSC,0,0,D
+2018-03-03,Diosgyori VTK,Ferencvarosi TC,2,1,H
+2018-03-03,Szombathelyi Haladas,Vasas,3,0,H
+2018-03-03,Balmazujvaros,Paks,0,0,D
+2018-03-10,Debreceni VSC,Ujpest,1,2,A
+2018-03-10,Ferencvarosi TC,Balmazujvaros,5,0,H
+2018-03-10,Vasas,Budapest Honved,2,1,H
+2018-03-10,Mezokovesd-zsory,Szombathelyi Haladas,2,1,H
+2018-03-10,Paks,Puskas Academy,3,1,H
+2018-03-10,Fehervar FC,Diosgyori VTK,4,1,H
+2018-03-17,Budapest Honved,Szombathelyi Haladas,2,1,H
+2018-03-17,Fehervar FC,Balmazujvaros,1,0,H
+2018-03-17,Vasas,Diosgyori VTK,1,1,D
+2018-03-17,Paks,Ujpest,0,0,D
+2018-03-17,Debreceni VSC,Mezokovesd-zsory,2,3,A
+2018-03-17,Ferencvarosi TC,Puskas Academy,3,1,H
+2018-03-31,Ujpest,Ferencvarosi TC,0,0,D
+2018-03-31,Mezokovesd-zsory,Paks,2,3,A
+2018-03-31,Puskas Academy,Fehervar FC,0,0,D
+2018-03-31,Diosgyori VTK,Budapest Honved,1,1,D
+2018-03-31,Balmazujvaros,Vasas,1,1,D
+2018-03-31,Szombathelyi Haladas,Debreceni VSC,1,1,D
+2018-04-07,Ferencvarosi TC,Mezokovesd-zsory,3,0,H
+2018-04-07,Budapest Honved,Balmazujvaros,2,0,H
+2018-04-07,Vasas,Puskas Academy,1,2,A
+2018-04-07,Paks,Debreceni VSC,2,5,A
+2018-04-07,Diosgyori VTK,Szombathelyi Haladas,1,2,A
+2018-04-07,Fehervar FC,Ujpest,3,0,H
+2018-04-11,Budapest Honved,Fehervar FC,1,4,A
+2018-04-14,Ujpest,Vasas,4,2,H
+2018-04-14,Mezokovesd-zsory,Fehervar FC,0,0,D
+2018-04-14,Paks,Szombathelyi Haladas,1,2,A
+2018-04-14,Puskas Academy,Budapest Honved,1,1,D
+2018-04-14,Balmazujvaros,Diosgyori VTK,2,1,H
+2018-04-14,Debreceni VSC,Ferencvarosi TC,1,1,D
+2018-04-21,Budapest Honved,Ujpest,0,0,D
+2018-04-21,Ferencvarosi TC,Paks,2,2,D
+2018-04-21,Vasas,Mezokovesd-zsory,0,0,D
+2018-04-21,Diosgyori VTK,Puskas Academy,0,1,A
+2018-04-21,Szombathelyi Haladas,Balmazujvaros,0,0,D
+2018-04-21,Fehervar FC,Debreceni VSC,1,0,H
+2018-04-28,Ujpest,Diosgyori VTK,1,0,H
+2018-04-28,Mezokovesd-zsory,Budapest Honved,1,2,A
+2018-04-28,Paks,Fehervar FC,1,0,H
+2018-04-28,Puskas Academy,Balmazujvaros,3,1,H
+2018-04-28,Debreceni VSC,Vasas,2,3,A
+2018-04-28,Ferencvarosi TC,Szombathelyi Haladas,2,1,H
+2018-05-05,Budapest Honved,Debreceni VSC,1,3,A
+2018-05-05,Vasas,Paks,0,1,A
+2018-05-05,Diosgyori VTK,Mezokovesd-zsory,0,1,A
+2018-05-05,Szombathelyi Haladas,Puskas Academy,3,2,H
+2018-05-05,Balmazujvaros,Ujpest,1,1,D
+2018-05-05,Fehervar FC,Ferencvarosi TC,0,0,D
+2018-05-12,Fehervar FC,Szombathelyi Haladas,3,0,H
+2018-05-12,Ujpest,Puskas Academy,0,1,A
+2018-05-12,Mezokovesd-zsory,Balmazujvaros,1,0,H
+2018-05-12,Paks,Budapest Honved,1,2,A
+2018-05-12,Debreceni VSC,Diosgyori VTK,2,1,H
+2018-05-12,Ferencvarosi TC,Vasas,1,1,D
+2018-05-19,Vasas,Fehervar FC,0,3,A
+2018-05-19,Puskas Academy,Mezokovesd-zsory,1,2,A
+2018-05-19,Diosgyori VTK,Paks,1,0,H
+2018-05-19,Szombathelyi Haladas,Ujpest,1,1,D
+2018-05-19,Balmazujvaros,Debreceni VSC,4,0,H
+2018-05-19,Budapest Honved,Ferencvarosi TC,1,1,D
+2018-05-27,Vasas,Szombathelyi Haladas,1,0,H
+2018-05-27,Mezokovesd-zsory,Ujpest,0,1,A
+2018-05-27,Paks,Balmazujvaros,0,1,A
+2018-05-27,Ferencvarosi TC,Diosgyori VTK,4,0,H
+2018-05-27,Debreceni VSC,Puskas Academy,1,1,D
+2018-05-27,Fehervar FC,Budapest Honved,2,0,H
+2018-06-02,Budapest Honved,Vasas,3,1,H
+2018-06-02,Ujpest,Debreceni VSC,2,1,H
+2018-06-02,Puskas Academy,Paks,1,0,H
+2018-06-02,Diosgyori VTK,Fehervar FC,2,1,H
+2018-06-02,Szombathelyi Haladas,Mezokovesd-zsory,1,0,H
+2018-06-02,Balmazujvaros,Ferencvarosi TC,3,3,D

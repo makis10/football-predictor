@@ -1,0 +1,182 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2022-08-13,Trepca'89,Drita,2,2,D
+2022-08-13,Gjilani,Ferizaj,3,2,H
+2022-08-13,Dukagjini,Prishtina,1,2,A
+2022-08-14,Drenica Skenderaj,Llapi,0,1,A
+2022-08-20,Drita,Dukagjini,1,0,H
+2022-08-20,Llapi,Trepca'89,2,2,D
+2022-08-21,Gjilani,Malisheva,1,0,H
+2022-08-21,Ferizaj,Prishtina,0,0,D
+2022-08-21,Ballkani,Drenica Skenderaj,1,0,H
+2022-08-24,Drenica Skenderaj,Gjilani,0,0,D
+2022-08-24,Malisheva,Ferizaj,3,1,H
+2022-08-25,Dukagjini,Llapi,1,1,D
+2022-08-27,Gjilani,Trepca'89,3,1,H
+2022-08-27,Malisheva,Drenica Skenderaj,1,2,A
+2022-08-28,Ferizaj,Drita,1,1,D
+2022-08-28,Llapi,Prishtina,1,2,A
+2022-08-28,Ballkani,Dukagjini,1,0,H
+2022-09-03,Trepca'89,Malisheva,2,3,A
+2022-09-03,Drita,Llapi,4,0,H
+2022-09-04,Drenica Skenderaj,Ferizaj,0,0,D
+2022-09-04,Dukagjini,Gjilani,0,1,A
+2022-09-04,Prishtina,Ballkani,0,1,A
+2022-09-10,Drenica Skenderaj,Trepca'89,2,5,A
+2022-09-10,Malisheva,Dukagjini,1,1,D
+2022-09-11,Ballkani,Drita,0,2,A
+2022-09-11,Gjilani,Prishtina,1,1,D
+2022-09-11,Ferizaj,Llapi,2,1,H
+2022-09-14,Prishtina,Malisheva,4,2,H
+2022-09-14,Drita,Gjilani,4,1,H
+2022-09-15,Trepca'89,Ferizaj,1,1,D
+2022-09-15,Dukagjini,Drenica Skenderaj,1,2,A
+2022-09-17,Gjilani,Llapi,0,1,A
+2022-09-17,Malisheva,Drita,2,4,A
+2022-09-18,Trepca'89,Dukagjini,3,0,H
+2022-09-18,Drenica Skenderaj,Prishtina,2,1,H
+2022-09-19,Ferizaj,Ballkani,0,3,A
+2022-09-28,Malisheva,Ballkani,2,3,A
+2022-09-28,Prishtina,Drita,0,0,D
+2022-10-01,Drita,Drenica Skenderaj,2,1,H
+2022-10-01,Dukagjini,Ferizaj,4,1,H
+2022-10-01,Llapi,Malisheva,1,1,D
+2022-10-02,Ballkani,Gjilani,2,0,H
+2022-10-02,Prishtina,Trepca'89,2,2,D
+2022-10-08,Drita,Trepca'89,3,1,H
+2022-10-08,Prishtina,Dukagjini,0,1,A
+2022-10-09,Ballkani,Malisheva,2,1,H
+2022-10-09,Ferizaj,Gjilani,1,1,D
+2022-10-09,Llapi,Drenica Skenderaj,3,2,H
+2022-10-15,Prishtina,Ferizaj,2,1,H
+2022-10-15,Dukagjini,Drita,0,1,A
+2022-10-16,Trepca'89,Llapi,3,3,D
+2022-10-16,Drenica Skenderaj,Ballkani,1,1,D
+2022-10-16,Malisheva,Gjilani,0,1,A
+2022-10-19,Drita,Prishtina,1,2,A
+2022-10-19,Ferizaj,Malisheva,0,6,A
+2022-10-20,Ballkani,Trepca'89,2,0,H
+2022-10-20,Gjilani,Drenica Skenderaj,0,2,A
+2022-10-22,Drita,Ferizaj,1,0,H
+2022-10-22,Prishtina,Llapi,2,0,H
+2022-10-23,Trepca'89,Gjilani,1,1,D
+2022-10-23,Drenica Skenderaj,Malisheva,0,0,D
+2022-10-23,Dukagjini,Ballkani,1,1,D
+2022-10-26,Llapi,Dukagjini,0,1,A
+2022-10-29,Ferizaj,Drenica Skenderaj,1,1,D
+2022-10-29,Malisheva,Trepca'89,4,0,H
+2022-10-30,Gjilani,Dukagjini,1,0,H
+2022-10-30,Llapi,Drita,4,1,H
+2022-11-05,Trepca'89,Drenica Skenderaj,1,0,H
+2022-11-05,Dukagjini,Malisheva,4,0,H
+2022-11-05,Prishtina,Gjilani,2,2,D
+2022-11-06,Drita,Ballkani,2,2,D
+2022-11-06,Llapi,Ferizaj,1,2,A
+2022-11-09,Drenica Skenderaj,Dukagjini,0,1,A
+2022-11-09,Ferizaj,Trepca'89,2,3,A
+2022-11-09,Malisheva,Prishtina,2,1,H
+2022-11-10,Ballkani,Llapi,1,4,A
+2022-11-10,Gjilani,Drita,1,1,D
+2022-11-12,Prishtina,Drenica Skenderaj,0,1,A
+2022-11-12,Dukagjini,Trepca'89,1,0,H
+2022-11-13,Ballkani,Ferizaj,2,0,H
+2022-11-13,Drita,Malisheva,3,1,H
+2022-11-13,Llapi,Gjilani,0,1,A
+2022-11-26,Drenica Skenderaj,Drita,1,3,A
+2022-11-26,Ferizaj,Dukagjini,0,0,D
+2022-11-27,Trepca'89,Prishtina,0,3,A
+2022-11-27,Gjilani,Ballkani,0,3,A
+2022-11-27,Malisheva,Llapi,0,0,D
+2022-11-30,Trepca'89,Ballkani,1,1,D
+2022-12-04,Llapi,Ballkani,0,3,A
+2022-12-11,Ballkani,Prishtina,1,1,D
+2023-02-11,Gjilani,Ferizaj,0,0,D
+2023-02-11,Drenica Skenderaj,Llapi,0,1,A
+2023-02-11,Malisheva,Ballkani,2,4,A
+2023-02-12,Trepca'89,Drita,1,0,H
+2023-02-12,Dukagjini,Prishtina,1,0,H
+2023-02-18,Drita,Dukagjini,5,1,H
+2023-02-18,Ferizaj,Prishtina,1,0,H
+2023-02-18,Llapi,Trepca'89,2,1,H
+2023-02-19,Ballkani,Drenica Skenderaj,2,1,H
+2023-02-19,Gjilani,Malisheva,2,2,D
+2023-02-22,Prishtina,Drita,1,2,A
+2023-02-22,Drenica Skenderaj,Gjilani,1,2,A
+2023-02-22,Malisheva,Ferizaj,1,1,D
+2023-02-23,Trepca'89,Ballkani,0,1,A
+2023-02-23,Dukagjini,Llapi,0,1,A
+2023-02-25,Ferizaj,Drita,2,1,H
+2023-02-25,Malisheva,Drenica Skenderaj,3,1,H
+2023-02-26,Ballkani,Dukagjini,1,1,D
+2023-02-26,Gjilani,Trepca'89,1,0,H
+2023-02-26,Llapi,Prishtina,0,2,A
+2023-03-04,Drita,Llapi,2,0,H
+2023-03-04,Drenica Skenderaj,Ferizaj,1,0,H
+2023-03-04,Dukagjini,Gjilani,0,1,A
+2023-03-05,Prishtina,Ballkani,2,2,D
+2023-03-05,Trepca'89,Malisheva,0,0,D
+2023-03-08,Drenica Skenderaj,Trepca'89,1,2,A
+2023-03-08,Ferizaj,Llapi,2,1,H
+2023-03-08,Malisheva,Dukagjini,1,2,A
+2023-03-09,Ballkani,Drita,1,1,D
+2023-03-09,Gjilani,Prishtina,0,0,D
+2023-03-11,Trepca'89,Ferizaj,0,1,A
+2023-03-11,Dukagjini,Drenica Skenderaj,2,0,H
+2023-03-12,Prishtina,Malisheva,1,2,A
+2023-03-12,Drita,Gjilani,1,0,H
+2023-03-12,Llapi,Ballkani,3,2,H
+2023-03-18,Drenica Skenderaj,Prishtina,0,1,A
+2023-03-18,Malisheva,Drita,0,0,D
+2023-03-19,Trepca'89,Dukagjini,2,1,H
+2023-03-19,Gjilani,Llapi,2,2,D
+2023-03-19,Ferizaj,Ballkani,0,0,D
+2023-04-01,Prishtina,Trepca'89,4,1,H
+2023-04-01,Ballkani,Gjilani,2,0,H
+2023-04-01,Llapi,Malisheva,1,0,H
+2023-04-02,Drita,Drenica Skenderaj,3,0,H
+2023-04-02,Dukagjini,Ferizaj,3,1,H
+2023-04-08,Ballkani,Malisheva,2,2,D
+2023-04-08,Drita,Trepca'89,1,1,D
+2023-04-09,Prishtina,Dukagjini,1,2,A
+2023-04-09,Ferizaj,Gjilani,2,0,H
+2023-04-09,Llapi,Drenica Skenderaj,4,0,H
+2023-04-15,Prishtina,Ferizaj,2,0,H
+2023-04-15,Trepca'89,Llapi,2,1,H
+2023-04-15,Malisheva,Gjilani,0,2,A
+2023-04-16,Drenica Skenderaj,Ballkani,0,1,A
+2023-04-16,Dukagjini,Drita,0,0,D
+2023-04-22,Drita,Prishtina,1,0,H
+2023-04-22,Ferizaj,Malisheva,1,2,A
+2023-04-23,Ballkani,Trepca'89,7,2,H
+2023-04-23,Gjilani,Drenica Skenderaj,1,0,H
+2023-04-23,Llapi,Dukagjini,1,1,D
+2023-04-29,Drita,Ferizaj,3,0,H
+2023-04-29,Drenica Skenderaj,Malisheva,1,2,A
+2023-04-30,Prishtina,Llapi,0,0,D
+2023-04-30,Trepca'89,Gjilani,0,0,D
+2023-04-30,Dukagjini,Ballkani,1,1,D
+2023-05-03,Gjilani,Dukagjini,2,0,H
+2023-05-03,Ferizaj,Drenica Skenderaj,2,0,H
+2023-05-03,Malisheva,Trepca'89,1,0,H
+2023-05-04,Ballkani,Prishtina,1,1,D
+2023-05-04,Llapi,Drita,0,2,A
+2023-05-06,Trepca'89,Drenica Skenderaj,3,1,H
+2023-05-06,Dukagjini,Malisheva,1,0,H
+2023-05-07,Prishtina,Gjilani,0,0,D
+2023-05-07,Drita,Ballkani,1,2,A
+2023-05-07,Llapi,Ferizaj,0,0,D
+2023-05-14,Ballkani,Llapi,1,0,H
+2023-05-14,Gjilani,Drita,1,1,D
+2023-05-14,Drenica Skenderaj,Dukagjini,1,4,A
+2023-05-14,Ferizaj,Trepca'89,1,0,H
+2023-05-14,Malisheva,Prishtina,1,1,D
+2023-05-20,Prishtina,Drenica Skenderaj,4,1,H
+2023-05-20,Ballkani,Ferizaj,2,0,H
+2023-05-20,Drita,Malisheva,0,1,A
+2023-05-20,Dukagjini,Trepca'89,3,1,H
+2023-05-20,Llapi,Gjilani,2,2,D
+2023-05-28,Trepca'89,Prishtina,2,1,H
+2023-05-28,Gjilani,Ballkani,0,0,D
+2023-05-28,Drenica Skenderaj,Drita,1,3,A
+2023-05-28,Ferizaj,Dukagjini,2,1,H
+2023-05-28,Malisheva,Llapi,3,2,H
+2023-06-04,Liria Prizren,Ferizaj,0,0,D

@@ -1,0 +1,108 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2020-06-13,Valur Reykjavik,KR Reykjavik,0,1,A
+2020-06-14,IA Akranes,KA Akureyri,3,1,H
+2020-06-14,HK Kopavogur,FH hafnarfjordur,2,3,A
+2020-06-14,Breidablik,Grotta,3,0,H
+2020-06-15,Vikingur Reykjavik,Fjolnir,1,1,D
+2020-06-15,Stjarnan,Fylkir,2,1,H
+2020-06-20,KA Akureyri,Vikingur Reykjavik,0,0,D
+2020-06-20,Grotta,Valur Reykjavik,0,3,A
+2020-06-20,KR Reykjavik,HK Kopavogur,0,3,A
+2020-06-21,Fjolnir,Stjarnan,1,4,A
+2020-06-21,Fylkir,Breidablik,0,1,A
+2020-06-21,FH hafnarfjordur,IA Akranes,2,1,H
+2020-06-28,IA Akranes,KR Reykjavik,1,2,A
+2020-06-28,HK Kopavogur,Valur Reykjavik,0,4,A
+2020-06-29,Fylkir,Grotta,2,0,H
+2020-06-29,Breidablik,Fjolnir,3,1,H
+2020-06-29,Vikingur Reykjavik,FH hafnarfjordur,4,1,H
+2020-07-03,Valur Reykjavik,IA Akranes,1,4,A
+2020-07-04,Fjolnir,Fylkir,1,2,A
+2020-07-04,Grotta,HK Kopavogur,4,4,D
+2020-07-04,KR Reykjavik,Vikingur Reykjavik,2,0,H
+2020-07-05,KA Akureyri,Breidablik,2,2,D
+2020-07-08,Vikingur Reykjavik,Valur Reykjavik,1,5,A
+2020-07-08,Fjolnir,Grotta,0,3,A
+2020-07-08,IA Akranes,HK Kopavogur,2,2,D
+2020-07-08,Breidablik,FH hafnarfjordur,3,3,D
+2020-07-09,Fylkir,KA Akureyri,4,1,H
+2020-07-12,Grotta,IA Akranes,0,4,A
+2020-07-12,HK Kopavogur,Vikingur Reykjavik,0,2,A
+2020-07-13,KA Akureyri,Fjolnir,1,1,D
+2020-07-13,FH hafnarfjordur,Fylkir,1,2,A
+2020-07-13,KR Reykjavik,Breidablik,3,1,H
+2020-07-13,Valur Reykjavik,Stjarnan,0,0,D
+2020-07-17,Stjarnan,HK Kopavogur,4,1,H
+2020-07-18,KA Akureyri,Grotta,1,0,H
+2020-07-18,Fjolnir,FH hafnarfjordur,0,3,A
+2020-07-19,Fylkir,KR Reykjavik,0,3,A
+2020-07-19,Vikingur Reykjavik,IA Akranes,6,2,H
+2020-07-19,Breidablik,Valur Reykjavik,1,2,A
+2020-07-22,FH hafnarfjordur,KA Akureyri,0,0,D
+2020-07-22,KR Reykjavik,Fjolnir,2,2,D
+2020-07-23,IA Akranes,Stjarnan,1,2,A
+2020-07-23,Valur Reykjavik,Fylkir,3,0,H
+2020-07-23,Grotta,Vikingur Reykjavik,1,1,D
+2020-07-23,HK Kopavogur,Breidablik,1,0,H
+2020-07-26,KA Akureyri,KR Reykjavik,0,0,D
+2020-07-26,Breidablik,IA Akranes,5,3,H
+2020-07-27,Fylkir,HK Kopavogur,3,2,H
+2020-07-27,FH hafnarfjordur,Grotta,2,1,H
+2020-07-27,Fjolnir,Valur Reykjavik,1,3,A
+2020-07-27,Stjarnan,Vikingur Reykjavik,1,1,D
+2020-08-14,KR Reykjavik,FH hafnarfjordur,1,2,A
+2020-08-14,Stjarnan,Grotta,1,1,D
+2020-08-15,Valur Reykjavik,KA Akureyri,1,0,H
+2020-08-15,IA Akranes,Fylkir,3,2,H
+2020-08-16,HK Kopavogur,Fjolnir,3,1,H
+2020-08-16,Vikingur Reykjavik,Breidablik,2,4,A
+2020-08-17,FH hafnarfjordur,Stjarnan,1,2,A
+2020-08-20,Fjolnir,Vikingur Reykjavik,1,1,D
+2020-08-21,Fylkir,Stjarnan,1,1,D
+2020-08-21,Grotta,Breidablik,0,1,A
+2020-08-22,FH hafnarfjordur,HK Kopavogur,4,0,H
+2020-08-22,KA Akureyri,IA Akranes,2,2,D
+2020-08-25,Fylkir,Fjolnir,2,0,H
+2020-08-26,KR Reykjavik,Valur Reykjavik,4,5,A
+2020-08-26,Stjarnan,KA Akureyri,1,1,D
+2020-08-26,HK Kopavogur,Grotta,3,0,H
+2020-08-30,KA Akureyri,Stjarnan,0,0,D
+2020-08-30,KR Reykjavik,IA Akranes,4,1,H
+2020-08-30,Valur Reykjavik,HK Kopavogur,1,0,H
+2020-08-30,Grotta,Fylkir,0,2,A
+2020-09-05,Fjolnir,Breidablik,1,4,A
+2020-09-13,KR Reykjavik,Stjarnan,1,2,A
+2020-09-13,KA Akureyri,Fylkir,2,0,H
+2020-09-13,FH hafnarfjordur,Breidablik,3,1,H
+2020-09-13,HK Kopavogur,IA Akranes,3,2,H
+2020-09-13,Valur Reykjavik,Vikingur Reykjavik,2,0,H
+2020-09-14,Grotta,Fjolnir,2,2,D
+2020-09-17,FH hafnarfjordur,Vikingur Reykjavik,1,0,H
+2020-09-17,IA Akranes,Valur Reykjavik,2,4,A
+2020-09-19,Fjolnir,KA Akureyri,1,1,D
+2020-09-21,IA Akranes,Grotta,3,0,H
+2020-09-21,Fylkir,FH hafnarfjordur,1,4,A
+2020-09-21,Stjarnan,Valur Reykjavik,1,5,A
+2020-09-21,Breidablik,KR Reykjavik,0,2,A
+2020-09-21,Vikingur Reykjavik,HK Kopavogur,1,1,D
+2020-09-24,KA Akureyri,HK Kopavogur,1,1,D
+2020-09-24,FH hafnarfjordur,Valur Reykjavik,1,4,A
+2020-09-24,KR Reykjavik,Grotta,1,1,D
+2020-09-24,Fjolnir,IA Akranes,1,3,A
+2020-09-24,Fylkir,Vikingur Reykjavik,2,1,H
+2020-09-24,Breidablik,Stjarnan,2,1,H
+2020-09-27,FH hafnarfjordur,Fjolnir,1,0,H
+2020-09-27,KR Reykjavik,Fylkir,1,2,A
+2020-09-27,IA Akranes,Vikingur Reykjavik,2,2,D
+2020-09-27,Grotta,KA Akureyri,2,4,A
+2020-09-27,Valur Reykjavik,Breidablik,1,1,D
+2020-09-27,HK Kopavogur,Stjarnan,2,3,A
+2020-10-01,Breidablik,KA Akureyri,1,1,D
+2020-10-01,Vikingur Reykjavik,KR Reykjavik,0,2,A
+2020-10-01,Stjarnan,FH hafnarfjordur,1,1,D
+2020-10-04,Vikingur Reykjavik,KA Akureyri,2,2,D
+2020-10-04,IA Akranes,FH hafnarfjordur,0,4,A
+2020-10-04,Stjarnan,Fjolnir,1,0,H
+2020-10-04,HK Kopavogur,KR Reykjavik,1,1,D
+2020-10-04,Valur Reykjavik,Grotta,6,0,H
+2020-10-04,Breidablik,Fylkir,4,1,H

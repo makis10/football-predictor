@@ -1,0 +1,98 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2019-09-15,UE Engordany,UE Sant Julia,2,5,A
+2019-09-15,FC Santa Coloma,Atletic Club d'Escaldes,2,0,H
+2019-09-15,Ordino,UE Santa Coloma,2,1,H
+2019-09-15,Inter Club d'Escaldes,Carroi,2,0,H
+2019-09-22,UE Santa Coloma,FC Santa Coloma,2,2,D
+2019-09-22,UE Sant Julia,Inter Club d'Escaldes,0,0,D
+2019-09-22,Atletic Club d'Escaldes,UE Engordany,2,0,H
+2019-09-22,Carroi,Ordino,1,1,D
+2019-09-29,Inter Club d'Escaldes,Ordino,1,0,H
+2019-09-29,UE Engordany,UE Santa Coloma,1,1,D
+2019-09-29,FC Santa Coloma,Carroi,1,0,H
+2019-09-29,UE Sant Julia,Atletic Club d'Escaldes,1,0,H
+2019-10-06,Atletic Club d'Escaldes,Inter Club d'Escaldes,1,3,A
+2019-10-06,Carroi,UE Engordany,0,3,A
+2019-10-06,UE Santa Coloma,UE Sant Julia,1,0,H
+2019-10-06,Ordino,FC Santa Coloma,0,5,A
+2019-10-20,UE Sant Julia,Carroi,1,0,H
+2019-10-20,UE Engordany,Ordino,3,1,H
+2019-10-20,Inter Club d'Escaldes,FC Santa Coloma,1,0,H
+2019-10-20,Atletic Club d'Escaldes,UE Santa Coloma,0,1,A
+2019-10-27,Carroi,Atletic Club d'Escaldes,0,0,D
+2019-10-27,Inter Club d'Escaldes,UE Santa Coloma,1,1,D
+2019-10-27,Ordino,UE Sant Julia,1,3,A
+2019-10-27,FC Santa Coloma,UE Engordany,0,1,A
+2019-11-03,UE Santa Coloma,Carroi,1,0,H
+2019-11-03,Atletic Club d'Escaldes,Ordino,2,0,H
+2019-11-03,UE Engordany,Inter Club d'Escaldes,1,1,D
+2019-11-03,UE Sant Julia,FC Santa Coloma,0,3,A
+2019-11-09,Atletic Club d'Escaldes,FC Santa Coloma,1,2,A
+2019-11-09,Carroi,Inter Club d'Escaldes,1,2,A
+2019-11-10,UE Sant Julia,UE Engordany,0,3,A
+2019-11-10,UE Santa Coloma,Ordino,1,0,H
+2019-11-24,FC Santa Coloma,UE Santa Coloma,2,0,H
+2019-11-24,Inter Club d'Escaldes,UE Sant Julia,1,0,H
+2019-11-24,UE Engordany,Atletic Club d'Escaldes,3,1,H
+2019-11-24,Ordino,Carroi,2,2,D
+2019-12-01,Ordino,Inter Club d'Escaldes,0,5,A
+2019-12-01,Carroi,FC Santa Coloma,0,3,A
+2019-12-01,Atletic Club d'Escaldes,UE Sant Julia,0,0,D
+2019-12-01,UE Santa Coloma,UE Engordany,0,1,A
+2019-12-08,FC Santa Coloma,Ordino,1,0,H
+2019-12-08,UE Sant Julia,UE Santa Coloma,3,0,H
+2019-12-08,UE Engordany,Carroi,3,1,H
+2019-12-08,Inter Club d'Escaldes,Atletic Club d'Escaldes,1,2,A
+2019-12-15,UE Santa Coloma,Atletic Club d'Escaldes,1,1,D
+2019-12-15,Carroi,UE Sant Julia,0,2,A
+2019-12-15,FC Santa Coloma,Inter Club d'Escaldes,1,1,D
+2019-12-15,Ordino,UE Engordany,1,2,A
+2020-02-02,UE Engordany,FC Santa Coloma,1,1,D
+2020-02-02,Atletic Club d'Escaldes,Carroi,1,2,A
+2020-02-02,UE Sant Julia,Ordino,3,2,H
+2020-02-02,UE Santa Coloma,Inter Club d'Escaldes,0,2,A
+2020-02-09,Ordino,Atletic Club d'Escaldes,1,1,D
+2020-02-09,Inter Club d'Escaldes,UE Engordany,2,0,H
+2020-02-09,Carroi,UE Santa Coloma,0,3,A
+2020-02-09,FC Santa Coloma,UE Sant Julia,0,1,A
+2020-02-16,UE Engordany,UE Sant Julia,0,1,A
+2020-02-16,Ordino,UE Santa Coloma,0,2,A
+2020-02-16,FC Santa Coloma,Atletic Club d'Escaldes,5,0,H
+2020-02-16,Inter Club d'Escaldes,Carroi,2,0,H
+2020-02-23,UE Sant Julia,Inter Club d'Escaldes,0,1,A
+2020-02-23,UE Santa Coloma,FC Santa Coloma,1,4,A
+2020-02-23,Carroi,Ordino,1,2,A
+2020-03-01,FC Santa Coloma,Carroi,4,0,H
+2020-03-01,Inter Club d'Escaldes,Ordino,5,0,H
+2020-03-01,UE Engordany,UE Santa Coloma,1,1,D
+2020-03-01,UE Sant Julia,Atletic Club d'Escaldes,0,4,A
+2020-03-04,Atletic Club d'Escaldes,UE Engordany,1,1,D
+2020-03-08,Atletic Club d'Escaldes,Inter Club d'Escaldes,0,1,A
+2020-03-08,Carroi,UE Engordany,1,2,A
+2020-03-08,UE Santa Coloma,UE Sant Julia,3,1,H
+2020-03-08,Ordino,FC Santa Coloma,0,3,A
+2020-07-05,UE Sant Julia,Carroi,1,0,H
+2020-07-05,Atletic Club d'Escaldes,UE Santa Coloma,0,2,A
+2020-07-05,UE Engordany,Ordino,3,1,H
+2020-07-05,Inter Club d'Escaldes,FC Santa Coloma,1,1,D
+2020-07-08,Inter Club d'Escaldes,UE Santa Coloma,1,3,A
+2020-07-08,Ordino,UE Sant Julia,1,3,A
+2020-07-09,FC Santa Coloma,UE Engordany,2,0,H
+2020-07-09,Carroi,Atletic Club d'Escaldes,1,2,A
+2020-07-12,UE Santa Coloma,Carroi,0,1,A
+2020-07-12,Atletic Club d'Escaldes,Ordino,4,0,H
+2020-07-12,UE Sant Julia,FC Santa Coloma,1,1,D
+2020-07-12,UE Engordany,Inter Club d'Escaldes,2,3,A
+2020-07-15,UE Santa Coloma,Atletic Club d'Escaldes,2,2,D
+2020-07-15,Ordino,Carroi,0,2,A
+2020-07-16,FC Santa Coloma,Inter Club d'Escaldes,1,1,D
+2020-07-16,UE Sant Julia,UE Engordany,1,2,A
+2020-07-19,Ordino,UE Santa Coloma,0,5,A
+2020-07-19,Carroi,Atletic Club d'Escaldes,0,2,A
+2020-07-19,UE Sant Julia,FC Santa Coloma,0,2,A
+2020-07-19,UE Engordany,Inter Club d'Escaldes,0,0,D
+2020-07-22,UE Santa Coloma,Carroi,2,1,H
+2020-07-22,Atletic Club d'Escaldes,Ordino,5,0,H
+2020-07-23,FC Santa Coloma,UE Engordany,2,0,H
+2020-07-23,Inter Club d'Escaldes,UE Sant Julia,3,0,H
+2020-08-01,Carroi,La Massana,0,1,A

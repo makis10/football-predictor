@@ -1,0 +1,128 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2017-03-03,FK Trakai,Stumbras,1,0,H
+2017-03-04,Atlantas,FK Zalgiris Vilnius,1,2,A
+2017-03-04,Suduva Marijampole,Jonava,3,3,D
+2017-03-09,Stumbras,Suduva Marijampole,1,2,A
+2017-03-11,Kauno Zalgiris,Atlantas,0,1,A
+2017-03-12,Jonava,FK Trakai,0,0,D
+2017-03-12,FK Zalgiris Vilnius,Utenis Utena,0,1,A
+2017-03-15,Atlantas,Stumbras,4,1,H
+2017-03-16,Suduva Marijampole,FK Trakai,1,1,D
+2017-03-16,FK Zalgiris Vilnius,Kauno Zalgiris,1,0,H
+2017-03-18,Utenis Utena,Jonava,1,1,D
+2017-03-29,FK Trakai,FK Zalgiris Vilnius,0,1,A
+2017-03-30,Stumbras,Utenis Utena,1,1,D
+2017-03-30,Suduva Marijampole,Atlantas,0,0,D
+2017-04-01,Jonava,Kauno Zalgiris,5,2,H
+2017-04-04,Atlantas,FK Trakai,1,1,D
+2017-04-05,Kauno Zalgiris,Stumbras,0,0,D
+2017-04-05,FK Zalgiris Vilnius,Jonava,2,1,H
+2017-04-09,Utenis Utena,Suduva Marijampole,2,4,A
+2017-04-12,Jonava,Atlantas,0,2,A
+2017-04-12,Stumbras,FK Zalgiris Vilnius,1,3,A
+2017-04-13,Suduva Marijampole,Kauno Zalgiris,3,1,H
+2017-04-13,FK Trakai,Utenis Utena,1,0,H
+2017-04-17,Utenis Utena,Kauno Zalgiris,1,0,H
+2017-04-19,Stumbras,Jonava,1,0,H
+2017-04-19,FK Zalgiris Vilnius,Suduva Marijampole,3,1,H
+2017-04-20,Utenis Utena,Atlantas,0,3,A
+2017-04-20,Kauno Zalgiris,FK Trakai,1,1,D
+2017-04-25,Utenis Utena,FK Zalgiris Vilnius,0,4,A
+2017-04-25,Suduva Marijampole,Stumbras,2,0,H
+2017-04-26,Atlantas,Kauno Zalgiris,3,1,H
+2017-04-26,FK Trakai,Jonava,1,0,H
+2017-04-29,Jonava,Suduva Marijampole,1,4,A
+2017-04-29,Stumbras,FK Trakai,1,1,D
+2017-04-30,Kauno Zalgiris,Utenis Utena,0,1,A
+2017-04-30,FK Zalgiris Vilnius,Atlantas,1,0,H
+2017-05-03,Utenis Utena,FK Trakai,1,0,H
+2017-05-03,FK Zalgiris Vilnius,Stumbras,4,1,H
+2017-05-04,Kauno Zalgiris,Jonava,1,3,A
+2017-05-04,Atlantas,Suduva Marijampole,1,1,D
+2017-05-10,Jonava,FK Zalgiris Vilnius,0,2,A
+2017-05-10,FK Trakai,Atlantas,4,1,H
+2017-05-11,Suduva Marijampole,Utenis Utena,2,1,H
+2017-05-11,Stumbras,Kauno Zalgiris,3,0,H
+2017-05-16,Kauno Zalgiris,Suduva Marijampole,0,2,A
+2017-05-16,FK Zalgiris Vilnius,FK Trakai,1,1,D
+2017-05-17,Utenis Utena,Stumbras,0,0,D
+2017-05-17,Atlantas,Jonava,0,1,A
+2017-05-23,Jonava,Utenis Utena,1,0,H
+2017-05-23,FK Trakai,Kauno Zalgiris,4,1,H
+2017-05-24,Suduva Marijampole,FK Zalgiris Vilnius,0,0,D
+2017-05-24,Stumbras,Atlantas,1,1,D
+2017-05-31,Jonava,Stumbras,1,2,A
+2017-05-31,FK Trakai,Suduva Marijampole,2,0,H
+2017-06-01,Kauno Zalgiris,FK Zalgiris Vilnius,2,0,H
+2017-06-01,Atlantas,Utenis Utena,2,2,D
+2017-06-14,FK Zalgiris Vilnius,Atlantas,3,0,H
+2017-06-14,Stumbras,FK Trakai,0,0,D
+2017-06-15,Utenis Utena,Kauno Zalgiris,0,0,D
+2017-06-15,Suduva Marijampole,Jonava,1,1,D
+2017-06-20,Jonava,FK Zalgiris Vilnius,1,2,A
+2017-06-20,Stumbras,Kauno Zalgiris,0,1,A
+2017-06-21,Suduva Marijampole,Atlantas,1,1,D
+2017-06-21,FK Trakai,Utenis Utena,3,0,H
+2017-07-22,Kauno Zalgiris,Jonava,1,0,H
+2017-07-22,FK Zalgiris Vilnius,Stumbras,1,0,H
+2017-07-23,Utenis Utena,Suduva Marijampole,1,0,H
+2017-07-23,Atlantas,FK Trakai,0,1,A
+2017-07-25,Kauno Zalgiris,FK Zalgiris Vilnius,1,1,D
+2017-07-26,Utenis Utena,Atlantas,1,1,D
+2017-07-28,Stumbras,Jonava,0,0,D
+2017-08-02,FK Zalgiris Vilnius,Utenis Utena,5,0,H
+2017-08-03,Atlantas,Kauno Zalgiris,1,1,D
+2017-08-06,Jonava,FK Trakai,1,3,A
+2017-08-06,Suduva Marijampole,Stumbras,4,2,H
+2017-08-09,Kauno Zalgiris,FK Trakai,1,2,A
+2017-08-09,FK Zalgiris Vilnius,Suduva Marijampole,1,1,D
+2017-08-10,Utenis Utena,Stumbras,1,1,D
+2017-08-10,Atlantas,Jonava,0,1,A
+2017-08-12,FK Trakai,FK Zalgiris Vilnius,2,2,D
+2017-08-13,Stumbras,Atlantas,0,3,A
+2017-08-13,Jonava,Utenis Utena,1,3,A
+2017-08-16,Utenis Utena,FK Trakai,0,4,A
+2017-08-16,FK Zalgiris Vilnius,Jonava,5,0,H
+2017-08-17,Kauno Zalgiris,Stumbras,0,2,A
+2017-08-22,Stumbras,FK Zalgiris Vilnius,1,1,D
+2017-08-22,FK Trakai,Atlantas,2,0,H
+2017-08-23,Kauno Zalgiris,Utenis Utena,1,1,D
+2017-09-13,Jonava,Stumbras,1,1,D
+2017-09-13,Suduva Marijampole,FK Trakai,5,1,H
+2017-09-14,Atlantas,Utenis Utena,0,1,A
+2017-09-14,FK Zalgiris Vilnius,Kauno Zalgiris,3,1,H
+2017-09-16,FK Trakai,Suduva Marijampole,2,3,A
+2017-09-19,Kauno Zalgiris,Atlantas,0,1,A
+2017-09-19,FK Trakai,Jonava,0,0,D
+2017-09-20,Utenis Utena,FK Zalgiris Vilnius,1,2,A
+2017-09-20,Stumbras,Suduva Marijampole,1,3,A
+2017-09-27,Atlantas,FK Zalgiris Vilnius,1,1,D
+2017-09-27,FK Trakai,Stumbras,1,0,H
+2017-09-28,Jonava,Kauno Zalgiris,2,1,H
+2017-09-28,Suduva Marijampole,Utenis Utena,2,0,H
+2017-10-02,Atlantas,Suduva Marijampole,1,2,A
+2017-10-11,Suduva Marijampole,Kauno Zalgiris,5,0,H
+2017-10-12,Atlantas,Stumbras,3,2,H
+2017-10-12,FK Zalgiris Vilnius,FK Trakai,0,1,A
+2017-10-14,Utenis Utena,Jonava,1,2,A
+2017-10-14,Kauno Zalgiris,Suduva Marijampole,1,5,A
+2017-10-17,Jonava,Suduva Marijampole,0,5,A
+2017-10-22,Suduva Marijampole,FK Zalgiris Vilnius,3,0,H
+2017-10-22,FK Trakai,Kauno Zalgiris,5,1,H
+2017-10-22,Stumbras,Utenis Utena,0,3,A
+2017-10-22,Jonava,Atlantas,2,1,H
+2017-10-25,Utenis Utena,Suduva Marijampole,1,2,A
+2017-10-25,FK Trakai,Jonava,2,1,H
+2017-10-26,Atlantas,FK Zalgiris Vilnius,0,3,A
+2017-10-29,Jonava,Utenis Utena,3,0,H
+2017-10-29,Suduva Marijampole,Atlantas,1,0,H
+2017-10-31,FK Zalgiris Vilnius,FK Trakai,1,0,H
+2017-11-04,FK Zalgiris Vilnius,Jonava,2,4,A
+2017-11-04,Atlantas,Utenis Utena,2,2,D
+2017-11-04,FK Trakai,Suduva Marijampole,1,0,H
+2017-11-12,FK Trakai,Atlantas,2,2,D
+2017-11-15,Suduva Marijampole,Jonava,2,1,H
+2017-11-15,FK Zalgiris Vilnius,Utenis Utena,5,2,H
+2017-11-19,Suduva Marijampole,FK Zalgiris Vilnius,3,0,H
+2017-11-19,Jonava,Atlantas,2,2,D
+2017-11-19,Utenis Utena,FK Trakai,1,3,A

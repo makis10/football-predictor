@@ -1,0 +1,185 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2021-02-27,Dinamo Tbilisi,Samgurali,1,1,D
+2021-02-27,Torpedo Kutaisi,Dinamo Batumi,0,1,A
+2021-02-28,Telavi,Samtredia,1,0,H
+2021-02-28,Dila,Shukura,1,0,H
+2021-03-01,Saburtalo,Lokomotivi Tbilisi,2,0,H
+2021-03-05,Samtredia,Dila,0,2,A
+2021-03-05,Torpedo Kutaisi,Dinamo Tbilisi,0,2,A
+2021-03-05,Dinamo Batumi,Shukura,1,1,D
+2021-03-06,Samgurali,Saburtalo,0,0,D
+2021-03-06,Lokomotivi Tbilisi,Telavi,3,2,H
+2021-03-09,Shukura,Samtredia,1,0,H
+2021-03-09,Dinamo Tbilisi,Dinamo Batumi,0,1,A
+2021-03-10,Telavi,Samgurali,0,0,D
+2021-03-10,Dila,Lokomotivi Tbilisi,0,0,D
+2021-03-10,Saburtalo,Torpedo Kutaisi,0,0,D
+2021-03-13,Dinamo Batumi,Samtredia,2,0,H
+2021-03-14,Samgurali,Dila,1,2,A
+2021-03-14,Torpedo Kutaisi,Telavi,2,2,D
+2021-03-14,Dinamo Tbilisi,Saburtalo,4,3,H
+2021-03-15,Lokomotivi Tbilisi,Shukura,2,1,H
+2021-03-20,Shukura,Samgurali,2,0,H
+2021-03-20,Telavi,Dinamo Tbilisi,0,3,A
+2021-03-20,Saburtalo,Dinamo Batumi,0,0,D
+2021-03-21,Samtredia,Lokomotivi Tbilisi,3,4,A
+2021-03-21,Dila,Torpedo Kutaisi,1,1,D
+2021-04-02,Samgurali,Samtredia,0,1,A
+2021-04-02,Torpedo Kutaisi,Shukura,0,0,D
+2021-04-03,Dinamo Batumi,Lokomotivi Tbilisi,1,1,D
+2021-04-03,Saburtalo,Telavi,0,0,D
+2021-04-03,Dinamo Tbilisi,Dila,1,0,H
+2021-04-06,Samtredia,Torpedo Kutaisi,0,0,D
+2021-04-07,Lokomotivi Tbilisi,Samgurali,2,3,A
+2021-04-07,Shukura,Dinamo Tbilisi,0,2,A
+2021-04-07,Dila,Saburtalo,1,2,A
+2021-04-08,Telavi,Dinamo Batumi,1,2,A
+2021-04-11,Dinamo Tbilisi,Samtredia,2,1,H
+2021-04-11,Saburtalo,Shukura,2,2,D
+2021-04-11,Torpedo Kutaisi,Lokomotivi Tbilisi,1,3,A
+2021-04-12,Dinamo Batumi,Samgurali,2,0,H
+2021-04-12,Telavi,Dila,0,2,A
+2021-04-15,Samtredia,Saburtalo,2,3,A
+2021-04-16,Lokomotivi Tbilisi,Dinamo Tbilisi,1,3,A
+2021-04-17,Shukura,Telavi,2,0,H
+2021-04-17,Samgurali,Torpedo Kutaisi,2,1,H
+2021-04-17,Dila,Dinamo Batumi,2,1,H
+2021-04-24,Shukura,Dila,1,1,D
+2021-04-24,Samtredia,Telavi,2,1,H
+2021-04-24,Lokomotivi Tbilisi,Saburtalo,0,1,A
+2021-04-25,Samgurali,Dinamo Tbilisi,2,0,H
+2021-04-25,Dinamo Batumi,Torpedo Kutaisi,1,1,D
+2021-04-28,Telavi,Lokomotivi Tbilisi,2,2,D
+2021-04-28,Dila,Samtredia,1,1,D
+2021-04-29,Saburtalo,Samgurali,2,0,H
+2021-04-29,Shukura,Dinamo Batumi,1,8,A
+2021-04-29,Dinamo Tbilisi,Torpedo Kutaisi,1,0,H
+2021-05-07,Samgurali,Telavi,1,1,D
+2021-05-07,Lokomotivi Tbilisi,Dila,1,2,A
+2021-05-07,Torpedo Kutaisi,Saburtalo,1,1,D
+2021-05-08,Samtredia,Shukura,2,2,D
+2021-05-08,Dinamo Batumi,Dinamo Tbilisi,1,0,H
+2021-05-11,Telavi,Torpedo Kutaisi,0,4,A
+2021-05-11,Dila,Samgurali,1,2,A
+2021-05-12,Samtredia,Dinamo Batumi,0,2,A
+2021-05-12,Shukura,Lokomotivi Tbilisi,0,1,A
+2021-05-12,Saburtalo,Dinamo Tbilisi,0,4,A
+2021-05-16,Samtredia,Samgurali,1,0,H
+2021-05-16,Dila,Dinamo Tbilisi,1,0,H
+2021-05-16,Lokomotivi Tbilisi,Dinamo Batumi,3,1,H
+2021-05-16,Shukura,Torpedo Kutaisi,1,0,H
+2021-05-16,Telavi,Saburtalo,4,1,H
+2021-05-23,Lokomotivi Tbilisi,Dinamo Batumi,2,1,H
+2021-05-23,Dila,Dinamo Tbilisi,2,0,H
+2021-05-24,Shukura,Torpedo Kutaisi,0,2,A
+2021-05-24,Telavi,Saburtalo,0,2,A
+2021-05-25,Samtredia,Samgurali,2,3,A
+2021-06-09,Dinamo Tbilisi,Shukura,1,1,D
+2021-06-09,Saburtalo,Dila,3,0,H
+2021-06-09,Torpedo Kutaisi,Samtredia,1,1,D
+2021-06-10,Samgurali,Lokomotivi Tbilisi,1,3,A
+2021-06-10,Dinamo Batumi,Telavi,3,0,H
+2021-06-13,Samtredia,Dinamo Tbilisi,0,2,A
+2021-06-13,Shukura,Saburtalo,0,0,D
+2021-06-14,Samgurali,Dinamo Batumi,0,0,D
+2021-06-14,Dila,Telavi,1,1,D
+2021-06-14,Lokomotivi Tbilisi,Torpedo Kutaisi,3,1,H
+2021-06-18,Telavi,Shukura,1,0,H
+2021-06-18,Torpedo Kutaisi,Samgurali,0,0,D
+2021-06-18,Dinamo Batumi,Dila,2,0,H
+2021-06-19,Saburtalo,Samtredia,4,0,H
+2021-06-19,Dinamo Tbilisi,Lokomotivi Tbilisi,2,0,H
+2021-06-22,Torpedo Kutaisi,Dinamo Batumi,2,2,D
+2021-06-22,Dila,Shukura,1,0,H
+2021-06-23,Telavi,Samtredia,2,1,H
+2021-06-23,Dinamo Tbilisi,Samgurali,1,2,A
+2021-06-23,Saburtalo,Lokomotivi Tbilisi,1,2,A
+2021-06-27,Samtredia,Dila,1,2,A
+2021-06-27,Lokomotivi Tbilisi,Telavi,2,3,A
+2021-06-27,Dinamo Batumi,Shukura,2,2,D
+2021-06-27,Torpedo Kutaisi,Dinamo Tbilisi,0,1,A
+2021-06-29,Samgurali,Saburtalo,1,1,D
+2021-07-01,Dinamo Tbilisi,Dinamo Batumi,1,2,A
+2021-07-01,Dila,Lokomotivi Tbilisi,2,1,H
+2021-07-02,Shukura,Samtredia,2,0,H
+2021-07-04,Telavi,Samgurali,1,1,D
+2021-07-04,Saburtalo,Torpedo Kutaisi,3,0,H
+2021-08-07,Samgurali,Dila,1,3,A
+2021-08-07,Lokomotivi Tbilisi,Shukura,1,0,H
+2021-08-08,Dinamo Tbilisi,Saburtalo,2,1,H
+2021-08-08,Dinamo Batumi,Samtredia,3,1,H
+2021-08-09,Torpedo Kutaisi,Telavi,0,1,A
+2021-08-13,Samtredia,Lokomotivi Tbilisi,1,0,H
+2021-09-12,Shukura,Samgurali,0,0,D
+2021-09-12,Telavi,Dinamo Tbilisi,1,0,H
+2021-09-12,Dila,Torpedo Kutaisi,1,2,A
+2021-09-12,Saburtalo,Dinamo Batumi,1,1,D
+2021-09-16,Samgurali,Samtredia,4,0,H
+2021-09-16,Dinamo Batumi,Lokomotivi Tbilisi,7,3,H
+2021-09-16,Saburtalo,Telavi,2,1,H
+2021-09-16,Torpedo Kutaisi,Shukura,2,1,H
+2021-09-16,Dinamo Tbilisi,Dila,0,0,D
+2021-09-20,Samtredia,Torpedo Kutaisi,4,1,H
+2021-09-20,Shukura,Dinamo Tbilisi,0,4,A
+2021-09-20,Dila,Saburtalo,0,0,D
+2021-09-20,Telavi,Dinamo Batumi,0,1,A
+2021-09-20,Lokomotivi Tbilisi,Samgurali,2,2,D
+2021-09-24,Torpedo Kutaisi,Lokomotivi Tbilisi,0,1,A
+2021-09-24,Telavi,Dila,0,2,A
+2021-09-24,Dinamo Batumi,Samgurali,3,0,H
+2021-09-24,Dinamo Tbilisi,Samtredia,5,1,H
+2021-09-25,Saburtalo,Shukura,2,1,H
+2021-09-29,Samtredia,Saburtalo,0,2,A
+2021-09-29,Shukura,Telavi,1,1,D
+2021-09-29,Samgurali,Torpedo Kutaisi,0,0,D
+2021-09-29,Lokomotivi Tbilisi,Dinamo Tbilisi,2,2,D
+2021-09-29,Dila,Dinamo Batumi,2,2,D
+2021-10-03,Samtredia,Telavi,0,2,A
+2021-10-03,Shukura,Dila,4,0,H
+2021-10-03,Samgurali,Dinamo Tbilisi,2,2,D
+2021-10-03,Lokomotivi Tbilisi,Saburtalo,3,2,H
+2021-10-03,Dinamo Batumi,Torpedo Kutaisi,3,1,H
+2021-10-16,Shukura,Dinamo Batumi,0,2,A
+2021-10-16,Telavi,Lokomotivi Tbilisi,2,1,H
+2021-10-16,Saburtalo,Samgurali,2,1,H
+2021-10-16,Dila,Samtredia,3,1,H
+2021-10-16,Dinamo Tbilisi,Torpedo Kutaisi,1,0,H
+2021-10-20,Samtredia,Shukura,1,1,D
+2021-10-20,Samgurali,Telavi,0,1,A
+2021-10-20,Torpedo Kutaisi,Saburtalo,1,1,D
+2021-10-20,Dinamo Batumi,Dinamo Tbilisi,1,1,D
+2021-10-20,Lokomotivi Tbilisi,Dila,0,4,A
+2021-10-24,Samtredia,Dinamo Batumi,1,0,H
+2021-10-24,Shukura,Lokomotivi Tbilisi,0,1,A
+2021-10-24,Dila,Samgurali,2,0,H
+2021-10-24,Telavi,Torpedo Kutaisi,1,3,A
+2021-10-24,Saburtalo,Dinamo Tbilisi,0,1,A
+2021-10-31,Torpedo Kutaisi,Dila,0,3,A
+2021-10-31,Dinamo Tbilisi,Telavi,4,0,H
+2021-11-01,Samgurali,Shukura,0,0,D
+2021-11-01,Lokomotivi Tbilisi,Samtredia,4,2,H
+2021-11-01,Dinamo Batumi,Saburtalo,4,0,H
+2021-11-06,Lokomotivi Tbilisi,Dinamo Batumi,0,0,D
+2021-11-06,Dila,Dinamo Tbilisi,1,0,H
+2021-11-07,Samtredia,Samgurali,1,2,A
+2021-11-07,Shukura,Torpedo Kutaisi,0,1,A
+2021-11-07,Telavi,Saburtalo,2,1,H
+2021-11-20,Samgurali,Lokomotivi Tbilisi,0,0,D
+2021-11-20,Saburtalo,Dila,0,0,D
+2021-11-20,Dinamo Batumi,Telavi,2,0,H
+2021-11-20,Dinamo Tbilisi,Shukura,2,0,H
+2021-11-21,Torpedo Kutaisi,Samtredia,4,1,H
+2021-11-28,Samtredia,Dinamo Tbilisi,0,0,D
+2021-11-28,Dila,Telavi,1,3,A
+2021-11-28,Lokomotivi Tbilisi,Torpedo Kutaisi,1,1,D
+2021-11-29,Shukura,Saburtalo,1,2,A
+2021-11-29,Samgurali,Dinamo Batumi,0,3,A
+2021-12-03,Dinamo Batumi,Dila,2,2,D
+2021-12-04,Torpedo Kutaisi,Samgurali,4,1,H
+2021-12-04,Saburtalo,Samtredia,5,1,H
+2021-12-04,Telavi,Shukura,2,1,H
+2021-12-04,Dinamo Tbilisi,Lokomotivi Tbilisi,3,2,H
+2021-12-08,Shukura,Gagra,0,0,D
+2021-12-08,Merani Martvili,Torpedo Kutaisi,2,0,H
+2021-12-12,Gagra,Shukura,1,0,H
+2021-12-12,Torpedo Kutaisi,Merani Martvili,3,0,H

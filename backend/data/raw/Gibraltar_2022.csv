@@ -1,0 +1,106 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2022-09-30,Europa,Magpies,1,1,D
+2022-10-01,Mons Calpe,Lynx,1,2,A
+2022-10-01,Lincoln Red Imps FC,Manchester 62,3,0,H
+2022-10-02,College 1975,Europa Point,0,4,A
+2022-10-02,Lions Gibraltar,St Joseph S Fc,1,4,A
+2022-10-07,Glacis United,Mons Calpe,1,0,H
+2022-10-08,Manchester 62,Europa,1,4,A
+2022-10-08,Lynx,College 1975,1,0,H
+2022-10-09,St Joseph S Fc,Lincoln Red Imps FC,2,2,D
+2022-10-09,Europa Point,Lions Gibraltar,0,1,A
+2022-10-14,Magpies,Manchester 62,1,0,H
+2022-10-15,College 1975,Glacis United,1,0,H
+2022-10-15,Europa,St Joseph S Fc,1,0,H
+2022-10-16,Lions Gibraltar,Lynx,0,0,D
+2022-10-16,Lincoln Red Imps FC,Europa Point,10,0,H
+2022-10-21,Mons Calpe,College 1975,2,1,H
+2022-10-22,St Joseph S Fc,Magpies,1,2,A
+2022-10-22,Glacis United,Lions Gibraltar,1,0,H
+2022-10-23,Europa Point,Europa,0,9,A
+2022-10-23,Lynx,Lincoln Red Imps FC,1,2,A
+2022-10-28,Manchester 62,St Joseph S Fc,0,3,A
+2022-10-29,Lions Gibraltar,Mons Calpe,1,1,D
+2022-10-29,Magpies,Europa Point,7,0,H
+2022-10-30,Lincoln Red Imps FC,Glacis United,4,1,H
+2022-10-30,Europa,Lynx,2,1,H
+2022-11-04,Lions Gibraltar,College 1975,5,1,H
+2022-11-05,Manchester 62,Europa Point,2,2,D
+2022-11-05,Lincoln Red Imps FC,Mons Calpe,2,1,H
+2022-11-06,Magpies,Lynx,0,1,A
+2022-11-06,Europa,Glacis United,7,0,H
+2022-11-25,Europa Point,St Joseph S Fc,0,6,A
+2022-11-26,College 1975,Lincoln Red Imps FC,0,5,A
+2022-11-26,Lynx,Manchester 62,4,2,H
+2022-11-27,Mons Calpe,Europa,0,2,A
+2022-11-27,Glacis United,Magpies,1,2,A
+2022-12-02,Lincoln Red Imps FC,Lions Gibraltar,6,0,H
+2022-12-03,St Joseph S Fc,Lynx,2,1,H
+2022-12-03,Europa,College 1975,5,0,H
+2022-12-04,Manchester 62,Glacis United,3,2,H
+2022-12-04,Magpies,Mons Calpe,2,0,H
+2022-12-09,Lynx,Europa Point,5,1,H
+2022-12-10,Lions Gibraltar,Europa,0,3,A
+2022-12-10,Glacis United,St Joseph S Fc,2,1,H
+2022-12-11,College 1975,Magpies,0,4,A
+2022-12-11,Mons Calpe,Manchester 62,1,0,H
+2022-12-13,Europa,Lincoln Red Imps FC,0,1,A
+2022-12-14,Europa Point,Glacis United,0,4,A
+2022-12-15,Magpies,Lions Gibraltar,2,0,H
+2022-12-16,St Joseph S Fc,Mons Calpe,2,2,D
+2022-12-17,Manchester 62,College 1975,2,0,H
+2022-12-18,Lincoln Red Imps FC,Magpies,1,3,A
+2022-12-19,Mons Calpe,Europa Point,1,0,H
+2022-12-20,Glacis United,Lynx,0,2,A
+2022-12-20,Lions Gibraltar,Manchester 62,3,2,H
+2022-12-21,College 1975,St Joseph S Fc,1,4,A
+2023-01-06,Europa,Lynx,2,1,H
+2023-01-07,Glacis United,St Joseph S Fc,0,2,A
+2023-01-07,Europa Point,Lions Gibraltar,0,5,A
+2023-01-08,Magpies,Lincoln Red Imps FC,1,5,A
+2023-01-08,Manchester 62,Mons Calpe,0,2,A
+2023-01-20,Europa,Glacis United,4,2,H
+2023-01-21,St Joseph S Fc,Magpies,1,3,A
+2023-01-21,College 1975,Manchester 62,2,4,A
+2023-01-22,Lynx,Lincoln Red Imps FC,1,4,A
+2023-01-22,Mons Calpe,Europa Point,2,1,H
+2023-01-27,Lincoln Red Imps FC,Glacis United,4,1,H
+2023-01-28,St Joseph S Fc,Europa,2,0,H
+2023-01-28,Lions Gibraltar,Mons Calpe,2,5,A
+2023-01-29,Magpies,Lynx,1,1,D
+2023-01-29,Europa Point,College 1975,1,1,D
+2023-02-03,Europa,Magpies,0,0,D
+2023-02-04,Glacis United,Lynx,0,2,A
+2023-02-04,Manchester 62,Europa Point,2,0,H
+2023-02-05,Lincoln Red Imps FC,St Joseph S Fc,1,0,H
+2023-02-05,College 1975,Lions Gibraltar,4,1,H
+2023-02-11,Europa,Lincoln Red Imps FC,0,2,A
+2023-02-11,Mons Calpe,College 1975,2,1,H
+2023-02-12,Magpies,Glacis United,3,0,H
+2023-02-12,Lions Gibraltar,Manchester 62,0,4,A
+2023-02-15,Lynx,St Joseph S Fc,1,1,D
+2023-02-24,Lynx,Europa,2,0,H
+2023-02-25,Lincoln Red Imps FC,Magpies,3,1,H
+2023-02-25,Lions Gibraltar,Europa Point,0,0,D
+2023-02-26,St Joseph S Fc,Glacis United,3,2,H
+2023-02-26,Mons Calpe,Manchester 62,1,2,A
+2023-03-03,Lincoln Red Imps FC,Lynx,4,0,H
+2023-03-04,Magpies,St Joseph S Fc,0,1,A
+2023-03-04,Manchester 62,College 1975,4,1,H
+2023-03-05,Glacis United,Europa,0,1,A
+2023-03-05,Europa Point,Mons Calpe,1,4,A
+2023-04-08,Lynx,Magpies,0,5,A
+2023-04-08,Glacis United,Lincoln Red Imps FC,0,5,A
+2023-04-09,Europa,St Joseph S Fc,3,0,H
+2023-04-09,College 1975,Europa Point,2,2,D
+2023-04-11,Mons Calpe,Lions Gibraltar,0,3,A
+2023-04-14,St Joseph S Fc,Lincoln Red Imps FC,0,3,A
+2023-04-15,Lynx,Glacis United,5,2,H
+2023-04-15,Europa Point,Manchester 62,0,4,A
+2023-04-16,Magpies,Europa,1,2,A
+2023-04-16,Lions Gibraltar,College 1975,2,2,D
+2023-04-21,St Joseph S Fc,Lynx,0,2,A
+2023-04-22,Lincoln Red Imps FC,Europa,1,2,A
+2023-04-22,College 1975,Mons Calpe,2,3,A
+2023-04-23,Glacis United,Magpies,0,0,D
+2023-04-23,Manchester 62,Lions Gibraltar,2,1,H

@@ -1,0 +1,181 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2021-03-27,Niki Volos,Egaleo,1,2,A
+2021-03-28,Ialysos,Kallithea,1,1,D
+2021-03-28,Santorini 2020,Kalamata,0,0,D
+2021-03-28,Veria,Pontion Karagiannion,3,0,H
+2021-03-28,Apollon Pontou,Thesprotos,0,1,A
+2021-03-28,Kavala,Panserraikos,2,1,H
+2021-03-28,Olympiakos Volos,Triglia,1,0,H
+2021-03-28,Pierikos,Almopos,2,0,H
+2021-03-28,Rodos,Episkopi,0,0,D
+2021-03-28,Asteras Vlachioti,Aspropyrgos Enosis,1,0,H
+2021-03-31,Episkopi,Asteras Vlachioti,1,0,H
+2021-03-31,Rodos,Niki Volos,1,1,D
+2021-03-31,Veria,Apollon Pontou,1,0,H
+2021-03-31,Kallithea,Santorini 2020,1,1,D
+2021-03-31,Panserraikos,Pierikos,2,0,H
+2021-03-31,Thesprotos,Kavala,0,1,A
+2021-03-31,Aspropyrgos Enosis,Kalamata,0,2,A
+2021-03-31,Egaleo,Ialysos,0,2,A
+2021-03-31,Triglia,Almopos,1,1,D
+2021-03-31,Pontion Karagiannion,Olympiakos Volos,1,3,A
+2021-04-03,Asteras Vlachioti,Rodos,0,0,D
+2021-04-04,Kalamata,Episkopi,1,0,H
+2021-04-04,Santorini 2020,Egaleo,1,0,H
+2021-04-04,Apollon Pontou,Kavala,0,1,A
+2021-04-04,Niki Volos,Ialysos,0,1,A
+2021-04-04,Aspropyrgos Enosis,Kallithea,0,3,A
+2021-04-04,Triglia,Panserraikos,0,0,D
+2021-04-04,Olympiakos Volos,Veria,0,1,A
+2021-04-04,Almopos,Pontion Karagiannion,1,1,D
+2021-04-04,Pierikos,Thesprotos,2,0,H
+2021-04-10,Kavala,Pierikos,3,0,H
+2021-04-10,Episkopi,Kallithea,0,0,D
+2021-04-10,Veria,Almopos,2,0,H
+2021-04-10,Thesprotos,Triglia,0,0,D
+2021-04-10,Egaleo,Aspropyrgos Enosis,1,0,H
+2021-04-10,Ialysos,Santorini 2020,1,0,H
+2021-04-10,Olympiakos Volos,Apollon Pontou,1,0,H
+2021-04-10,Pontion Karagiannion,Panserraikos,0,2,A
+2021-04-10,Rodos,Kalamata,0,0,D
+2021-04-10,Asteras Vlachioti,Niki Volos,0,0,D
+2021-04-14,Kallithea,Rodos,2,3,A
+2021-04-14,Panserraikos,Veria,1,0,H
+2021-04-14,Apollon Pontou,Pierikos,2,2,D
+2021-04-14,Kalamata,Asteras Vlachioti,2,0,H
+2021-04-14,Niki Volos,Santorini 2020,1,1,D
+2021-04-14,Thesprotos,Pontion Karagiannion,3,1,H
+2021-04-14,Aspropyrgos Enosis,Ialysos,3,0,H
+2021-04-14,Egaleo,Episkopi,1,3,A
+2021-04-14,Triglia,Kavala,3,2,H
+2021-04-14,Almopos,Olympiakos Volos,0,1,A
+2021-04-17,Kalamata,Niki Volos,0,0,D
+2021-04-18,Santorini 2020,Aspropyrgos Enosis,0,0,D
+2021-04-18,Rodos,Egaleo,1,0,H
+2021-04-18,Veria,Thesprotos,3,1,H
+2021-04-18,Kavala,Pontion Karagiannion,5,1,H
+2021-04-18,Ialysos,Episkopi,1,0,H
+2021-04-18,Olympiakos Volos,Panserraikos,0,1,A
+2021-04-18,Almopos,Apollon Pontou,4,1,H
+2021-04-18,Pierikos,Triglia,2,0,H
+2021-04-18,Asteras Vlachioti,Kallithea,1,2,A
+2021-04-24,Kavala,Veria,0,0,D
+2021-04-24,Kallithea,Kalamata,2,1,H
+2021-04-24,Panserraikos,Almopos,3,0,H
+2021-04-24,Episkopi,Santorini 2020,1,0,H
+2021-04-24,Thesprotos,Olympiakos Volos,1,0,H
+2021-04-24,Egaleo,Asteras Vlachioti,1,0,H
+2021-04-24,Ialysos,Rodos,0,2,A
+2021-04-24,Triglia,Apollon Pontou,0,0,D
+2021-04-24,Pontion Karagiannion,Pierikos,0,1,A
+2021-04-28,Apollon Pontou,Panserraikos,0,3,A
+2021-04-28,Olympiakos Volos,Kavala,1,3,A
+2021-04-28,Almopos,Thesprotos,0,0,D
+2021-04-28,Pierikos,Veria,0,1,A
+2021-04-28,Pontion Karagiannion,Triglia,0,0,D
+2021-04-28,Asteras Vlachioti,Ialysos,1,1,D
+2021-04-28,Santorini 2020,Rodos,1,0,H
+2021-04-29,Kalamata,Egaleo,2,0,H
+2021-04-29,Niki Volos,Kallithea,1,0,H
+2021-05-04,Santorini 2020,Asteras Vlachioti,1,0,H
+2021-05-05,Niki Volos,Episkopi,0,0,D
+2021-05-05,Veria,Triglia,0,0,D
+2021-05-05,Apollon Pontou,Pontion Karagiannion,3,0,H
+2021-05-05,Kavala,Almopos,2,1,H
+2021-05-05,Ialysos,Kalamata,0,0,D
+2021-05-05,Pierikos,Olympiakos Volos,1,1,D
+2021-05-08,Panserraikos,Kavala,1,3,A
+2021-05-09,Episkopi,Rodos,0,0,D
+2021-05-09,Kalamata,Santorini 2020,1,0,H
+2021-05-09,Egaleo,Niki Volos,0,0,D
+2021-05-09,Triglia,Olympiakos Volos,2,0,H
+2021-05-09,Almopos,Pierikos,3,1,H
+2021-05-09,Pontion Karagiannion,Veria,0,0,D
+2021-05-12,Niki Volos,Rodos,1,2,A
+2021-05-12,Apollon Pontou,Veria,0,3,A
+2021-05-12,Kalamata,Aspropyrgos Enosis,2,0,H
+2021-05-12,Ialysos,Egaleo,1,1,D
+2021-05-12,Almopos,Triglia,3,0,H
+2021-05-12,Pierikos,Panserraikos,1,0,H
+2021-05-13,Olympiakos Volos,Pontion Karagiannion,3,0,H
+2021-05-15,Panserraikos,Triglia,1,0,H
+2021-05-16,Episkopi,Kalamata,1,0,H
+2021-05-16,Veria,Olympiakos Volos,3,0,H
+2021-05-16,Kallithea,Aspropyrgos Enosis,1,0,H
+2021-05-16,Kavala,Apollon Pontou,0,1,A
+2021-05-16,Thesprotos,Pierikos,0,2,A
+2021-05-16,Egaleo,Santorini 2020,3,0,H
+2021-05-16,Ialysos,Niki Volos,1,1,D
+2021-05-16,Pontion Karagiannion,Almopos,0,0,D
+2021-05-17,Rodos,Asteras Vlachioti,2,1,H
+2021-05-19,Kallithea,Egaleo,1,0,H
+2021-05-19,Panserraikos,Thesprotos,1,0,H
+2021-05-19,Aspropyrgos Enosis,Niki Volos,3,2,H
+2021-05-20,Asteras Vlachioti,Episkopi,1,1,D
+2021-05-22,Kalamata,Rodos,1,0,H
+2021-05-23,Santorini 2020,Ialysos,1,1,D
+2021-05-23,Kallithea,Episkopi,2,0,H
+2021-05-23,Panserraikos,Pontion Karagiannion,1,0,H
+2021-05-23,Niki Volos,Asteras Vlachioti,1,0,H
+2021-05-23,Aspropyrgos Enosis,Egaleo,0,2,A
+2021-05-23,Triglia,Thesprotos,2,1,H
+2021-05-23,Almopos,Veria,0,0,D
+2021-05-23,Pierikos,Kavala,0,2,A
+2021-05-26,Kallithea,Ialysos,2,1,H
+2021-05-26,Episkopi,Aspropyrgos Enosis,1,1,D
+2021-05-26,Thesprotos,Apollon Pontou,1,2,A
+2021-05-29,Santorini 2020,Niki Volos,0,1,A
+2021-05-29,Veria,Panserraikos,1,0,H
+2021-05-30,Episkopi,Egaleo,0,0,D
+2021-05-30,Kavala,Triglia,3,1,H
+2021-05-30,Ialysos,Aspropyrgos Enosis,2,0,H
+2021-05-30,Olympiakos Volos,Almopos,2,0,H
+2021-05-30,Pierikos,Apollon Pontou,3,0,H
+2021-05-30,Pontion Karagiannion,Thesprotos,1,1,D
+2021-05-30,Rodos,Kallithea,3,2,H
+2021-05-30,Asteras Vlachioti,Kalamata,0,1,A
+2021-06-02,Kavala,Thesprotos,1,1,D
+2021-06-02,Rodos,Aspropyrgos Enosis,1,0,H
+2021-06-02,Santorini 2020,Kallithea,1,0,H
+2021-06-05,Niki Volos,Kalamata,2,2,D
+2021-06-06,Kallithea,Asteras Vlachioti,1,0,H
+2021-06-06,Panserraikos,Olympiakos Volos,0,1,A
+2021-06-06,Apollon Pontou,Almopos,3,1,H
+2021-06-06,Episkopi,Ialysos,3,0,H
+2021-06-06,Thesprotos,Veria,3,2,H
+2021-06-06,Aspropyrgos Enosis,Santorini 2020,1,2,A
+2021-06-06,Egaleo,Rodos,1,1,D
+2021-06-06,Triglia,Pierikos,1,1,D
+2021-06-06,Pontion Karagiannion,Kavala,0,2,A
+2021-06-09,Aspropyrgos Enosis,Asteras Vlachioti,0,4,A
+2021-06-12,Olympiakos Volos,Thesprotos,4,2,H
+2021-06-12,Veria,Kavala,2,0,H
+2021-06-13,Kalamata,Kallithea,1,0,H
+2021-06-13,Niki Volos,Aspropyrgos Enosis,6,1,H
+2021-06-13,Almopos,Panserraikos,1,0,H
+2021-06-13,Pierikos,Pontion Karagiannion,1,1,D
+2021-06-13,Rodos,Ialysos,1,2,A
+2021-06-13,Asteras Vlachioti,Egaleo,1,0,H
+2021-06-13,Santorini 2020,Episkopi,2,2,D
+2021-06-16,Apollon Pontou,Olympiakos Volos,2,0,H
+2021-06-19,Kallithea,Niki Volos,0,0,D
+2021-06-19,Aspropyrgos Enosis,Episkopi,1,2,A
+2021-06-19,Egaleo,Kalamata,2,0,H
+2021-06-19,Ialysos,Asteras Vlachioti,1,2,A
+2021-06-19,Rodos,Santorini 2020,1,3,A
+2021-06-20,Veria,Pierikos,2,1,H
+2021-06-20,Panserraikos,Apollon Pontou,2,0,H
+2021-06-20,Kavala,Olympiakos Volos,1,2,A
+2021-06-20,Thesprotos,Almopos,1,0,H
+2021-06-20,Triglia,Pontion Karagiannion,3,0,H
+2021-06-23,Apollon Pontou,Triglia,1,1,D
+2021-06-26,Episkopi,Niki Volos,0,0,D
+2021-06-26,Kalamata,Ialysos,4,0,H
+2021-06-26,Aspropyrgos Enosis,Rodos,0,2,A
+2021-06-26,Egaleo,Kallithea,0,0,D
+2021-06-26,Asteras Vlachioti,Santorini 2020,2,1,H
+2021-06-27,Thesprotos,Panserraikos,3,2,H
+2021-06-27,Triglia,Veria,0,0,D
+2021-06-27,Olympiakos Volos,Pierikos,3,3,D
+2021-06-27,Almopos,Kavala,3,1,H
+2021-06-27,Pontion Karagiannion,Apollon Pontou,1,1,D

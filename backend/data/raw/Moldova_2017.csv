@@ -1,0 +1,91 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2017-07-08,Petrocub,Spicul Chiscareni,0,1,A
+2017-07-08,Dinamo-Auto,Zimbru,1,0,H
+2017-07-09,Milsami Orhei,Speranta Nisporeni,0,1,A
+2017-07-09,Sfintul Gheorghe,Dacia,0,1,A
+2017-07-09,Sheriff Tiraspol,Zaria Balti,5,0,H
+2017-07-15,Petrocub,Dinamo-Auto,1,0,H
+2017-07-15,Spicul Chiscareni,Speranta Nisporeni,1,1,D
+2017-07-15,Zimbru,Sfintul Gheorghe,4,0,H
+2017-07-16,Zaria Balti,Milsami Orhei,0,1,A
+2017-07-16,Dacia,Sheriff Tiraspol,1,1,D
+2017-07-22,Dinamo-Auto,Spicul Chiscareni,0,3,A
+2017-07-22,Sfintul Gheorghe,Petrocub,0,2,A
+2017-07-22,Sheriff Tiraspol,Zimbru,2,2,D
+2017-07-23,Milsami Orhei,Dacia,2,1,H
+2017-07-24,Speranta Nisporeni,Zaria Balti,2,4,A
+2017-07-29,Petrocub,Sheriff Tiraspol,1,2,A
+2017-07-29,Dinamo-Auto,Sfintul Gheorghe,2,2,D
+2017-07-30,Dacia,Speranta Nisporeni,2,1,H
+2017-07-30,Spicul Chiscareni,Zaria Balti,0,2,A
+2017-07-30,Zimbru,Milsami Orhei,0,1,A
+2017-08-04,Speranta Nisporeni,Zimbru,1,0,H
+2017-08-04,Sfintul Gheorghe,Spicul Chiscareni,4,3,H
+2017-08-05,Zaria Balti,Dacia,0,1,A
+2017-08-05,Milsami Orhei,Petrocub,1,0,H
+2017-08-05,Sheriff Tiraspol,Dinamo-Auto,3,1,H
+2017-08-12,Petrocub,Speranta Nisporeni,1,1,D
+2017-08-12,Dinamo-Auto,Milsami Orhei,1,4,A
+2017-08-12,Sfintul Gheorghe,Sheriff Tiraspol,0,3,A
+2017-08-13,Spicul Chiscareni,Dacia,0,1,A
+2017-08-13,Zimbru,Zaria Balti,1,0,H
+2017-08-19,Milsami Orhei,Sfintul Gheorghe,1,0,H
+2017-08-19,Speranta Nisporeni,Dinamo-Auto,1,1,D
+2017-08-20,Zaria Balti,Petrocub,2,2,D
+2017-08-20,Dacia,Zimbru,2,1,H
+2017-08-20,Sheriff Tiraspol,Spicul Chiscareni,5,0,H
+2017-08-25,Petrocub,Dacia,3,0,H
+2017-08-25,Dinamo-Auto,Zaria Balti,1,0,H
+2017-08-25,Sfintul Gheorghe,Speranta Nisporeni,2,1,H
+2017-08-26,Spicul Chiscareni,Zimbru,1,0,H
+2017-08-27,Sheriff Tiraspol,Milsami Orhei,3,1,H
+2017-09-09,Dacia,Dinamo-Auto,4,1,H
+2017-09-09,Zimbru,Petrocub,1,1,D
+2017-09-10,Zaria Balti,Sfintul Gheorghe,2,0,H
+2017-09-10,Milsami Orhei,Spicul Chiscareni,2,0,H
+2017-09-10,Speranta Nisporeni,Sheriff Tiraspol,1,2,A
+2017-09-15,Dacia,Sfintul Gheorghe,1,0,H
+2017-09-15,Spicul Chiscareni,Petrocub,0,4,A
+2017-09-16,Speranta Nisporeni,Milsami Orhei,1,3,A
+2017-09-16,Zimbru,Dinamo-Auto,1,0,H
+2017-09-17,Zaria Balti,Sheriff Tiraspol,0,2,A
+2017-09-23,Dinamo-Auto,Petrocub,1,0,H
+2017-09-23,Sfintul Gheorghe,Zimbru,0,0,D
+2017-09-23,Sheriff Tiraspol,Dacia,6,3,H
+2017-09-24,Milsami Orhei,Zaria Balti,1,0,H
+2017-09-24,Speranta Nisporeni,Spicul Chiscareni,2,0,H
+2017-09-29,Petrocub,Sfintul Gheorghe,1,2,A
+2017-09-30,Zaria Balti,Speranta Nisporeni,3,0,H
+2017-09-30,Dacia,Milsami Orhei,1,1,D
+2017-09-30,Spicul Chiscareni,Dinamo-Auto,1,1,D
+2017-10-01,Zimbru,Sheriff Tiraspol,1,2,A
+2017-10-14,Zaria Balti,Spicul Chiscareni,3,0,H
+2017-10-14,Milsami Orhei,Zimbru,1,0,H
+2017-10-14,Speranta Nisporeni,Dacia,0,0,D
+2017-10-15,Sfintul Gheorghe,Dinamo-Auto,1,0,H
+2017-10-15,Sheriff Tiraspol,Petrocub,3,1,H
+2017-10-20,Dacia,Zaria Balti,1,1,D
+2017-10-20,Spicul Chiscareni,Sfintul Gheorghe,1,1,D
+2017-10-20,Zimbru,Speranta Nisporeni,2,1,H
+2017-10-21,Petrocub,Milsami Orhei,1,0,H
+2017-10-22,Dinamo-Auto,Sheriff Tiraspol,0,4,A
+2017-10-28,Sheriff Tiraspol,Sfintul Gheorghe,1,1,D
+2017-10-28,Zaria Balti,Zimbru,3,0,H
+2017-10-28,Dacia,Spicul Chiscareni,2,2,D
+2017-10-29,Milsami Orhei,Dinamo-Auto,2,1,H
+2017-10-29,Speranta Nisporeni,Petrocub,0,0,D
+2017-11-03,Sfintul Gheorghe,Milsami Orhei,0,3,A
+2017-11-03,Zimbru,Dacia,2,0,H
+2017-11-04,Petrocub,Zaria Balti,1,1,D
+2017-11-04,Dinamo-Auto,Speranta Nisporeni,0,3,A
+2017-11-06,Spicul Chiscareni,Sheriff Tiraspol,0,4,A
+2017-11-18,Zaria Balti,Dinamo-Auto,6,0,H
+2017-11-18,Milsami Orhei,Sheriff Tiraspol,0,2,A
+2017-11-18,Speranta Nisporeni,Sfintul Gheorghe,0,0,D
+2017-11-18,Zimbru,Spicul Chiscareni,1,1,D
+2017-11-18,Dacia,Petrocub,0,2,A
+2017-11-26,Sheriff Tiraspol,Speranta Nisporeni,0,1,A
+2017-11-26,Petrocub,Zimbru,4,1,H
+2017-11-26,Dinamo-Auto,Dacia,3,2,H
+2017-11-26,Sfintul Gheorghe,Zaria Balti,2,1,H
+2017-11-26,Spicul Chiscareni,Milsami Orhei,0,2,A

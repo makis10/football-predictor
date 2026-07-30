@@ -1,0 +1,381 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2017-08-18,Fortuna Sittard,Dordrecht,5,1,H
+2017-08-18,MVV,GO Ahead Eagles,4,3,H
+2017-08-18,NEC Nijmegen,Almere City FC,3,1,H
+2017-08-18,FC Volendam,Helmond Sport,2,2,D
+2017-08-18,Waalwijk,Emmen,0,2,A
+2017-08-18,Cambuur,Jong Ajax,1,2,A
+2017-08-18,Den Bosch,Jong AZ,1,3,A
+2017-08-18,FC Eindhoven,Telstar,2,2,D
+2017-08-21,Jong PSV U21,De Graafschap,2,2,D
+2017-08-21,Jong Utrecht,FC OSS,0,3,A
+2017-08-25,De Graafschap,Cambuur,2,0,H
+2017-08-25,Emmen,FC Eindhoven,1,1,D
+2017-08-25,Dordrecht,Jong Utrecht,2,1,H
+2017-08-25,GO Ahead Eagles,NEC Nijmegen,1,1,D
+2017-08-25,Jong AZ,Waalwijk,2,1,H
+2017-08-25,Almere City FC,Den Bosch,1,1,D
+2017-08-25,FC OSS,FC Volendam,1,0,H
+2017-08-25,Helmond Sport,Jong PSV U21,1,2,A
+2017-08-25,Jong Ajax,Fortuna Sittard,4,2,H
+2017-08-25,Telstar,MVV,0,0,D
+2017-09-01,Fortuna Sittard,Almere City FC,2,1,H
+2017-09-01,Dordrecht,Emmen,2,2,D
+2017-09-01,Jong PSV U21,Jong Ajax,0,3,A
+2017-09-01,MVV,Den Bosch,3,0,H
+2017-09-01,NEC Nijmegen,FC Eindhoven,2,1,H
+2017-09-01,Helmond Sport,GO Ahead Eagles,1,1,D
+2017-09-01,Telstar,FC OSS,3,3,D
+2017-09-01,Jong Utrecht,Jong AZ,1,0,H
+2017-09-02,Waalwijk,De Graafschap,0,0,D
+2017-09-03,FC Volendam,Cambuur,0,1,A
+2017-09-08,De Graafschap,MVV,1,2,A
+2017-09-08,Emmen,Fortuna Sittard,0,0,D
+2017-09-08,GO Ahead Eagles,FC Volendam,1,1,D
+2017-09-08,Almere City FC,Helmond Sport,3,1,H
+2017-09-08,Cambuur,Jong Utrecht,2,2,D
+2017-09-08,Den Bosch,NEC Nijmegen,3,0,H
+2017-09-08,FC Eindhoven,Jong PSV U21,1,2,A
+2017-09-08,FC OSS,Dordrecht,3,1,H
+2017-09-11,Jong Ajax,Waalwijk,1,1,D
+2017-09-12,Jong AZ,Telstar,2,2,D
+2017-09-15,Fortuna Sittard,FC Volendam,1,0,H
+2017-09-15,Dordrecht,Almere City FC,1,1,D
+2017-09-15,GO Ahead Eagles,Cambuur,1,3,A
+2017-09-15,MVV,Jong PSV U21,0,0,D
+2017-09-15,NEC Nijmegen,Emmen,1,1,D
+2017-09-15,Waalwijk,FC Eindhoven,0,1,A
+2017-09-15,FC OSS,Jong AZ,0,2,A
+2017-09-15,Helmond Sport,Jong Ajax,1,4,A
+2017-09-15,Telstar,Den Bosch,3,2,H
+2017-09-15,Jong Utrecht,De Graafschap,1,4,A
+2017-09-22,Fortuna Sittard,Jong AZ,5,1,H
+2017-09-22,Emmen,GO Ahead Eagles,0,0,D
+2017-09-22,MVV,Cambuur,1,1,D
+2017-09-22,FC Volendam,De Graafschap,0,0,D
+2017-09-22,Waalwijk,Jong Utrecht,2,2,D
+2017-09-22,Almere City FC,FC OSS,2,2,D
+2017-09-22,FC Eindhoven,Den Bosch,0,1,A
+2017-09-22,Helmond Sport,Dordrecht,1,2,A
+2017-09-25,Jong PSV U21,NEC Nijmegen,3,3,D
+2017-09-25,Jong Ajax,Telstar,1,1,D
+2017-09-29,De Graafschap,Emmen,2,2,D
+2017-09-29,Dordrecht,FC Volendam,2,2,D
+2017-09-29,GO Ahead Eagles,Almere City FC,2,1,H
+2017-09-29,NEC Nijmegen,MVV,4,1,H
+2017-09-29,Jong AZ,FC Eindhoven,1,2,A
+2017-09-29,Cambuur,Waalwijk,1,1,D
+2017-09-29,Den Bosch,Jong PSV U21,5,0,H
+2017-09-29,FC OSS,Jong Ajax,0,3,A
+2017-09-29,Telstar,Fortuna Sittard,0,6,A
+2017-09-29,Jong Utrecht,Helmond Sport,0,0,D
+2017-10-06,Fortuna Sittard,NEC Nijmegen,1,2,A
+2017-10-06,Emmen,Cambuur,2,0,H
+2017-10-06,Dordrecht,FC Eindhoven,4,3,H
+2017-10-06,Jong PSV U21,Jong AZ,1,2,A
+2017-10-06,FC Volendam,Telstar,3,4,A
+2017-10-06,Almere City FC,MVV,3,2,H
+2017-10-06,FC OSS,GO Ahead Eagles,1,6,A
+2017-10-06,Helmond Sport,De Graafschap,0,2,A
+2017-10-06,Jong Ajax,Jong Utrecht,2,1,H
+2017-10-08,Waalwijk,Den Bosch,1,1,D
+2017-10-13,Emmen,Jong PSV U21,3,1,H
+2017-10-13,MVV,Fortuna Sittard,1,2,A
+2017-10-13,NEC Nijmegen,Waalwijk,2,0,H
+2017-10-13,Cambuur,FC OSS,1,3,A
+2017-10-13,Den Bosch,Jong Utrecht,1,0,H
+2017-10-13,FC Eindhoven,FC Volendam,1,0,H
+2017-10-13,Telstar,Dordrecht,3,0,H
+2017-10-15,De Graafschap,GO Ahead Eagles,1,1,D
+2017-10-16,Jong AZ,Helmond Sport,1,3,A
+2017-10-16,Jong Ajax,Almere City FC,3,0,H
+2017-10-20,Fortuna Sittard,FC Eindhoven,2,2,D
+2017-10-20,Dordrecht,De Graafschap,1,1,D
+2017-10-20,GO Ahead Eagles,Jong Ajax,4,1,H
+2017-10-20,Jong PSV U21,Waalwijk,3,2,H
+2017-10-20,FC Volendam,NEC Nijmegen,0,2,A
+2017-10-20,Jong AZ,Emmen,2,1,H
+2017-10-20,Almere City FC,Cambuur,1,1,D
+2017-10-20,FC OSS,Den Bosch,1,1,D
+2017-10-20,Helmond Sport,Telstar,1,2,A
+2017-10-20,Jong Utrecht,MVV,2,1,H
+2017-10-27,De Graafschap,Fortuna Sittard,2,0,H
+2017-10-27,Emmen,FC OSS,1,1,D
+2017-10-27,GO Ahead Eagles,Jong AZ,2,1,H
+2017-10-27,NEC Nijmegen,Jong Utrecht,3,1,H
+2017-10-27,Waalwijk,Dordrecht,1,0,H
+2017-10-27,Cambuur,Jong PSV U21,0,1,A
+2017-10-27,Den Bosch,Helmond Sport,2,2,D
+2017-10-27,FC Eindhoven,Jong Ajax,2,3,A
+2017-10-29,MVV,FC Volendam,2,1,H
+2017-10-29,Telstar,Almere City FC,4,0,H
+2017-11-03,Fortuna Sittard,FC OSS,4,0,H
+2017-11-03,Dordrecht,Den Bosch,0,3,A
+2017-11-03,MVV,Waalwijk,0,0,D
+2017-11-03,NEC Nijmegen,Cambuur,3,1,H
+2017-11-03,FC Volendam,Jong PSV U21,1,0,H
+2017-11-03,Almere City FC,Jong AZ,3,2,H
+2017-11-03,Helmond Sport,Emmen,3,1,H
+2017-11-03,Jong Ajax,De Graafschap,0,5,A
+2017-11-03,Telstar,GO Ahead Eagles,3,1,H
+2017-11-03,Jong Utrecht,FC Eindhoven,1,2,A
+2017-11-17,De Graafschap,NEC Nijmegen,1,3,A
+2017-11-17,Emmen,Almere City FC,2,2,D
+2017-11-17,GO Ahead Eagles,Dordrecht,0,3,A
+2017-11-17,Waalwijk,Telstar,4,1,H
+2017-11-17,Cambuur,Fortuna Sittard,1,0,H
+2017-11-17,Den Bosch,FC Volendam,3,1,H
+2017-11-17,FC Eindhoven,MVV,3,2,H
+2017-11-17,FC OSS,Helmond Sport,0,0,D
+2017-11-20,Jong PSV U21,Jong Utrecht,2,0,H
+2017-11-20,Jong AZ,Jong Ajax,4,2,H
+2017-11-24,De Graafschap,FC Eindhoven,4,0,H
+2017-11-24,Fortuna Sittard,GO Ahead Eagles,2,1,H
+2017-11-24,Dordrecht,Jong AZ,3,2,H
+2017-11-24,Jong PSV U21,Telstar,6,0,H
+2017-11-24,MVV,Helmond Sport,3,1,H
+2017-11-24,NEC Nijmegen,Jong Ajax,2,1,H
+2017-11-24,FC Volendam,Emmen,2,3,A
+2017-11-24,Waalwijk,FC OSS,2,1,H
+2017-11-24,Cambuur,Den Bosch,2,2,D
+2017-11-24,Jong Utrecht,Almere City FC,2,4,A
+2017-11-27,Emmen,MVV,2,1,H
+2017-11-27,GO Ahead Eagles,Jong Utrecht,0,0,D
+2017-11-27,Jong AZ,FC Volendam,0,2,A
+2017-11-27,Almere City FC,Waalwijk,3,2,H
+2017-11-27,Den Bosch,De Graafschap,1,1,D
+2017-11-27,FC Eindhoven,Cambuur,2,1,H
+2017-11-27,FC OSS,Jong PSV U21,0,3,A
+2017-11-27,Helmond Sport,Fortuna Sittard,1,3,A
+2017-11-27,Jong Ajax,Dordrecht,3,0,H
+2017-11-27,Telstar,NEC Nijmegen,3,2,H
+2017-12-01,De Graafschap,Jong AZ,1,0,H
+2017-12-01,MVV,Jong Ajax,0,4,A
+2017-12-01,NEC Nijmegen,Dordrecht,6,0,H
+2017-12-01,FC Volendam,Almere City FC,1,1,D
+2017-12-01,Waalwijk,Helmond Sport,1,0,H
+2017-12-01,Cambuur,Telstar,2,1,H
+2017-12-01,Den Bosch,GO Ahead Eagles,3,0,H
+2017-12-01,FC Eindhoven,FC OSS,1,3,A
+2017-12-04,Jong PSV U21,Fortuna Sittard,2,3,A
+2017-12-04,Jong Utrecht,Emmen,1,2,A
+2017-12-08,Fortuna Sittard,Waalwijk,6,0,H
+2017-12-08,Dordrecht,MVV,2,4,A
+2017-12-08,FC Volendam,Jong Utrecht,2,1,H
+2017-12-08,Almere City FC,De Graafschap,2,1,H
+2017-12-08,Telstar,Emmen,0,0,D
+2017-12-12,GO Ahead Eagles,Jong PSV U21,1,1,D
+2017-12-15,De Graafschap,FC OSS,1,1,D
+2017-12-15,Emmen,Jong Ajax,2,2,D
+2017-12-15,Jong PSV U21,Almere City FC,3,2,H
+2017-12-15,MVV,Jong AZ,3,0,H
+2017-12-15,NEC Nijmegen,Helmond Sport,1,1,D
+2017-12-15,Waalwijk,FC Volendam,1,3,A
+2017-12-15,Cambuur,Dordrecht,3,0,H
+2017-12-15,Den Bosch,Fortuna Sittard,2,4,A
+2017-12-15,FC Eindhoven,GO Ahead Eagles,3,2,H
+2017-12-15,Jong Utrecht,Telstar,0,1,A
+2017-12-18,Helmond Sport,FC Eindhoven,0,0,D
+2017-12-18,Jong Ajax,Den Bosch,1,0,H
+2017-12-22,Emmen,Den Bosch,2,2,D
+2017-12-22,Dordrecht,Jong PSV U21,2,3,A
+2017-12-22,GO Ahead Eagles,Waalwijk,0,0,D
+2017-12-22,Jong AZ,NEC Nijmegen,2,7,A
+2017-12-22,Almere City FC,FC Eindhoven,5,1,H
+2017-12-22,FC OSS,MVV,1,0,H
+2017-12-22,Helmond Sport,Cambuur,3,0,H
+2017-12-22,Jong Ajax,FC Volendam,7,0,H
+2017-12-22,Telstar,De Graafschap,3,2,H
+2017-12-23,Fortuna Sittard,Jong Utrecht,3,1,H
+2018-01-12,Fortuna Sittard,Jong Ajax,2,1,H
+2018-01-12,Jong PSV U21,Helmond Sport,1,2,A
+2018-01-12,MVV,Telstar,0,0,D
+2018-01-12,NEC Nijmegen,GO Ahead Eagles,5,1,H
+2018-01-12,FC Volendam,FC OSS,3,1,H
+2018-01-12,Waalwijk,Jong AZ,1,0,H
+2018-01-12,Cambuur,De Graafschap,3,2,H
+2018-01-12,Den Bosch,Almere City FC,1,3,A
+2018-01-12,FC Eindhoven,Emmen,2,1,H
+2018-01-12,Jong Utrecht,Dordrecht,0,2,A
+2018-01-15,Jong AZ,Cambuur,0,1,A
+2018-01-15,FC OSS,NEC Nijmegen,3,0,H
+2018-01-19,De Graafschap,Jong PSV U21,2,3,A
+2018-01-19,Emmen,Waalwijk,2,1,H
+2018-01-19,Dordrecht,Fortuna Sittard,3,0,H
+2018-01-19,GO Ahead Eagles,MVV,3,1,H
+2018-01-19,Almere City FC,NEC Nijmegen,3,2,H
+2018-01-19,FC OSS,Jong Utrecht,2,0,H
+2018-01-19,Helmond Sport,FC Volendam,1,4,A
+2018-01-19,Telstar,FC Eindhoven,4,1,H
+2018-01-22,Jong AZ,Den Bosch,1,1,D
+2018-01-22,Jong Ajax,Cambuur,3,2,H
+2018-01-26,Fortuna Sittard,Emmen,1,2,A
+2018-01-26,Dordrecht,FC OSS,2,0,H
+2018-01-26,MVV,De Graafschap,1,3,A
+2018-01-26,NEC Nijmegen,Den Bosch,1,0,H
+2018-01-26,Waalwijk,Jong Ajax,2,4,A
+2018-01-26,Helmond Sport,Almere City FC,1,2,A
+2018-01-26,Telstar,Jong AZ,2,1,H
+2018-01-26,Jong Utrecht,Cambuur,1,3,A
+2018-01-28,FC Volendam,GO Ahead Eagles,4,3,H
+2018-01-29,Jong PSV U21,FC Eindhoven,4,1,H
+2018-02-02,De Graafschap,Jong Utrecht,7,0,H
+2018-02-02,Emmen,NEC Nijmegen,1,0,H
+2018-02-02,FC Volendam,Fortuna Sittard,2,0,H
+2018-02-02,Almere City FC,Dordrecht,1,2,A
+2018-02-02,Cambuur,GO Ahead Eagles,2,1,H
+2018-02-02,Den Bosch,Telstar,3,2,H
+2018-02-02,FC Eindhoven,Waalwijk,3,1,H
+2018-02-05,Jong PSV U21,MVV,1,0,H
+2018-02-05,Jong AZ,FC OSS,3,1,H
+2018-02-05,Jong Ajax,Helmond Sport,2,0,H
+2018-02-08,NEC Nijmegen,Jong PSV U21,2,0,H
+2018-02-09,De Graafschap,FC Volendam,2,1,H
+2018-02-09,Cambuur,MVV,0,2,A
+2018-02-09,Den Bosch,FC Eindhoven,4,0,H
+2018-02-09,FC OSS,Almere City FC,5,1,H
+2018-02-09,Telstar,Jong Ajax,3,3,D
+2018-02-09,Jong Utrecht,Waalwijk,5,2,H
+2018-02-09,Dordrecht,Helmond Sport,3,2,H
+2018-02-12,GO Ahead Eagles,Emmen,0,1,A
+2018-02-12,Jong AZ,Fortuna Sittard,2,0,H
+2018-02-16,Fortuna Sittard,Telstar,1,1,D
+2018-02-16,Emmen,De Graafschap,5,2,H
+2018-02-16,MVV,NEC Nijmegen,4,1,H
+2018-02-16,FC Volendam,Dordrecht,4,1,H
+2018-02-16,Waalwijk,Cambuur,0,0,D
+2018-02-16,Almere City FC,GO Ahead Eagles,2,0,H
+2018-02-16,FC Eindhoven,Jong AZ,1,3,A
+2018-02-16,Helmond Sport,Jong Utrecht,2,0,H
+2018-02-19,Jong PSV U21,Den Bosch,2,1,H
+2018-02-19,Jong Ajax,FC OSS,2,0,H
+2018-02-23,De Graafschap,Helmond Sport,1,0,H
+2018-02-23,GO Ahead Eagles,FC OSS,2,1,H
+2018-02-23,MVV,Almere City FC,3,0,H
+2018-02-23,NEC Nijmegen,Fortuna Sittard,1,1,D
+2018-02-23,Cambuur,Emmen,1,1,D
+2018-02-23,Den Bosch,Waalwijk,0,0,D
+2018-02-23,FC Eindhoven,Dordrecht,0,1,A
+2018-02-23,Telstar,FC Volendam,5,2,H
+2018-02-26,Jong AZ,Jong PSV U21,2,1,H
+2018-02-26,Jong Utrecht,Jong Ajax,2,1,H
+2018-03-02,Dordrecht,Telstar,2,3,A
+2018-03-02,FC Volendam,FC Eindhoven,3,2,H
+2018-03-02,Waalwijk,NEC Nijmegen,0,2,A
+2018-03-02,Almere City FC,Jong Ajax,1,2,A
+2018-03-02,FC OSS,Cambuur,2,1,H
+2018-03-02,Helmond Sport,Jong AZ,3,0,H
+2018-03-04,GO Ahead Eagles,De Graafschap,0,4,A
+2018-03-05,Fortuna Sittard,MVV,3,0,H
+2018-03-05,Jong PSV U21,Emmen,1,1,D
+2018-03-05,Jong Utrecht,Den Bosch,1,1,D
+2018-03-09,De Graafschap,Dordrecht,0,1,A
+2018-03-09,Emmen,Jong AZ,0,2,A
+2018-03-09,MVV,Jong Utrecht,3,1,H
+2018-03-09,NEC Nijmegen,FC Volendam,3,0,H
+2018-03-09,Waalwijk,Jong PSV U21,3,2,H
+2018-03-09,Cambuur,Almere City FC,2,1,H
+2018-03-09,Den Bosch,FC OSS,0,0,D
+2018-03-09,FC Eindhoven,Fortuna Sittard,1,3,A
+2018-03-09,Jong Ajax,GO Ahead Eagles,0,2,A
+2018-03-09,Telstar,Helmond Sport,2,3,A
+2018-03-12,Fortuna Sittard,De Graafschap,1,1,D
+2018-03-12,Dordrecht,Waalwijk,1,0,H
+2018-03-12,Jong PSV U21,Cambuur,1,1,D
+2018-03-12,FC Volendam,MVV,2,2,D
+2018-03-12,Jong AZ,GO Ahead Eagles,0,0,D
+2018-03-12,Almere City FC,Telstar,2,3,A
+2018-03-12,FC OSS,Emmen,2,3,A
+2018-03-12,Helmond Sport,Den Bosch,3,1,H
+2018-03-12,Jong Ajax,FC Eindhoven,4,0,H
+2018-03-12,Jong Utrecht,NEC Nijmegen,0,2,A
+2018-03-16,De Graafschap,Jong Ajax,2,4,A
+2018-03-16,Emmen,Helmond Sport,0,0,D
+2018-03-16,GO Ahead Eagles,Telstar,1,1,D
+2018-03-16,Jong PSV U21,FC Volendam,2,1,H
+2018-03-16,Waalwijk,MVV,1,1,D
+2018-03-16,Jong AZ,Almere City FC,4,1,H
+2018-03-16,Cambuur,NEC Nijmegen,1,1,D
+2018-03-16,Den Bosch,Dordrecht,4,1,H
+2018-03-16,FC Eindhoven,Jong Utrecht,5,2,H
+2018-03-16,FC OSS,Fortuna Sittard,1,2,A
+2018-03-23,Fortuna Sittard,Cambuur,3,2,H
+2018-03-23,MVV,FC Eindhoven,2,0,H
+2018-03-23,NEC Nijmegen,De Graafschap,1,1,D
+2018-03-23,Helmond Sport,FC OSS,2,1,H
+2018-03-23,Jong Utrecht,Jong PSV U21,1,4,A
+2018-03-24,Telstar,Waalwijk,0,0,D
+2018-03-25,Dordrecht,GO Ahead Eagles,1,2,A
+2018-03-25,FC Volendam,Den Bosch,1,0,H
+2018-03-25,Almere City FC,Emmen,2,2,D
+2018-03-25,Jong Ajax,Jong AZ,0,1,A
+2018-03-30,De Graafschap,Waalwijk,1,0,H
+2018-03-30,Emmen,Dordrecht,1,3,A
+2018-03-30,GO Ahead Eagles,Helmond Sport,3,1,H
+2018-03-30,Jong AZ,Jong Utrecht,1,3,A
+2018-03-30,Almere City FC,Fortuna Sittard,1,4,A
+2018-03-30,Cambuur,FC Volendam,2,2,D
+2018-03-30,Den Bosch,MVV,2,1,H
+2018-03-30,FC Eindhoven,NEC Nijmegen,3,2,H
+2018-03-30,FC OSS,Telstar,0,0,D
+2018-03-30,Jong Ajax,Jong PSV U21,0,3,A
+2018-04-02,De Graafschap,Den Bosch,2,1,H
+2018-04-02,Fortuna Sittard,Helmond Sport,3,0,H
+2018-04-02,Dordrecht,Jong Ajax,2,3,A
+2018-04-02,Jong PSV U21,FC OSS,5,1,H
+2018-04-02,MVV,Emmen,0,1,A
+2018-04-02,NEC Nijmegen,Telstar,3,0,H
+2018-04-02,FC Volendam,Jong AZ,4,1,H
+2018-04-02,Waalwijk,Almere City FC,0,4,A
+2018-04-02,Cambuur,FC Eindhoven,3,2,H
+2018-04-02,Jong Utrecht,GO Ahead Eagles,1,0,H
+2018-04-06,Emmen,FC Volendam,2,3,A
+2018-04-06,GO Ahead Eagles,Fortuna Sittard,0,1,A
+2018-04-06,Jong AZ,Dordrecht,3,1,H
+2018-04-06,Almere City FC,Jong Utrecht,2,1,H
+2018-04-06,Den Bosch,Cambuur,1,2,A
+2018-04-06,FC Eindhoven,De Graafschap,2,4,A
+2018-04-06,FC OSS,Waalwijk,3,1,H
+2018-04-06,Helmond Sport,MVV,2,3,A
+2018-04-06,Jong Ajax,NEC Nijmegen,2,0,H
+2018-04-06,Telstar,Jong PSV U21,0,0,D
+2018-04-09,De Graafschap,Almere City FC,4,2,H
+2018-04-09,Emmen,Telstar,2,3,A
+2018-04-09,MVV,Dordrecht,1,0,H
+2018-04-09,NEC Nijmegen,FC OSS,2,1,H
+2018-04-09,Waalwijk,Fortuna Sittard,1,1,D
+2018-04-09,Cambuur,Jong AZ,3,2,H
+2018-04-09,Den Bosch,Jong Ajax,2,5,A
+2018-04-09,FC Eindhoven,Helmond Sport,3,2,H
+2018-04-09,Jong Utrecht,FC Volendam,2,1,H
+2018-04-10,Jong PSV U21,GO Ahead Eagles,6,0,H
+2018-04-13,Fortuna Sittard,Den Bosch,2,0,H
+2018-04-13,Dordrecht,Cambuur,0,3,A
+2018-04-13,GO Ahead Eagles,FC Eindhoven,1,3,A
+2018-04-13,FC Volendam,Waalwijk,0,1,A
+2018-04-13,Jong AZ,MVV,3,1,H
+2018-04-13,Almere City FC,Jong PSV U21,2,1,H
+2018-04-13,FC OSS,De Graafschap,1,4,A
+2018-04-13,Helmond Sport,NEC Nijmegen,1,2,A
+2018-04-13,Jong Ajax,Emmen,3,2,H
+2018-04-13,Telstar,Jong Utrecht,1,0,H
+2018-04-20,De Graafschap,Telstar,1,0,H
+2018-04-20,Jong PSV U21,Dordrecht,4,2,H
+2018-04-20,MVV,FC OSS,1,1,D
+2018-04-20,NEC Nijmegen,Jong AZ,2,0,H
+2018-04-20,FC Volendam,Jong Ajax,1,2,A
+2018-04-20,Waalwijk,GO Ahead Eagles,2,1,H
+2018-04-20,Cambuur,Helmond Sport,4,1,H
+2018-04-20,FC Eindhoven,Almere City FC,3,2,H
+2018-04-20,Jong Utrecht,Fortuna Sittard,0,1,A
+2018-04-23,Den Bosch,Emmen,1,2,A
+2018-04-28,Fortuna Sittard,Jong PSV U21,1,0,H
+2018-04-28,Emmen,Jong Utrecht,0,0,D
+2018-04-28,Dordrecht,NEC Nijmegen,3,3,D
+2018-04-28,GO Ahead Eagles,Den Bosch,1,2,A
+2018-04-28,Jong AZ,De Graafschap,2,2,D
+2018-04-28,Almere City FC,FC Volendam,2,0,H
+2018-04-28,FC OSS,FC Eindhoven,1,1,D
+2018-04-28,Helmond Sport,Waalwijk,2,2,D
+2018-04-28,Jong Ajax,MVV,2,1,H
+2018-04-28,Telstar,Cambuur,0,1,A

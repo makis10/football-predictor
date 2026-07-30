@@ -1,0 +1,182 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2023-08-12,Prishtina,Feronikeli,3,1,H
+2023-08-12,Dukagjini,Malisheva,0,1,A
+2023-08-13,Drita,Llapi,2,0,H
+2023-08-13,Liria Prizren,Ballkani,0,1,A
+2023-08-19,Liria Prizren,Drita,0,0,D
+2023-08-19,Malisheva,Fushe Kosova,6,1,H
+2023-08-20,Ballkani,Feronikeli,2,0,H
+2023-08-20,Llapi,Dukagjini,3,0,H
+2023-08-21,Gjilani,Prishtina,0,0,D
+2023-08-26,Prishtina,Malisheva,3,1,H
+2023-08-26,Feronikeli,Gjilani,1,0,H
+2023-08-27,Dukagjini,Liria Prizren,0,0,D
+2023-08-27,Fushe Kosova,Llapi,1,2,A
+2023-09-02,Liria Prizren,Fushe Kosova,2,1,H
+2023-09-02,Malisheva,Feronikeli,4,1,H
+2023-09-03,Ballkani,Gjilani,2,1,H
+2023-09-03,Drita,Dukagjini,2,2,D
+2023-09-03,Llapi,Prishtina,0,0,D
+2023-09-16,Feronikeli,Llapi,0,3,A
+2023-09-16,Gjilani,Malisheva,1,0,H
+2023-09-16,Fushe Kosova,Drita,1,1,D
+2023-09-17,Prishtina,Liria Prizren,1,1,D
+2023-09-17,Dukagjini,Ballkani,1,1,D
+2023-09-23,Dukagjini,Fushe Kosova,1,0,H
+2023-09-23,Llapi,Gjilani,2,1,H
+2023-09-24,Ballkani,Malisheva,3,2,H
+2023-09-24,Drita,Prishtina,3,0,H
+2023-09-24,Liria Prizren,Feronikeli,3,5,A
+2023-09-27,Gjilani,Liria Prizren,1,0,H
+2023-09-27,Malisheva,Llapi,2,3,A
+2023-09-27,Fushe Kosova,Ballkani,0,2,A
+2023-09-28,Prishtina,Dukagjini,2,2,D
+2023-09-28,Feronikeli,Drita,0,2,A
+2023-09-30,Ballkani,Llapi,2,1,H
+2023-09-30,Liria Prizren,Malisheva,0,1,A
+2023-10-01,Drita,Gjilani,2,0,H
+2023-10-01,Dukagjini,Feronikeli,1,1,D
+2023-10-02,Fushe Kosova,Prishtina,2,2,D
+2023-10-07,Feronikeli,Fushe Kosova,3,0,H
+2023-10-07,Gjilani,Dukagjini,1,1,D
+2023-10-07,Malisheva,Drita,1,3,A
+2023-10-08,Llapi,Liria Prizren,2,0,H
+2023-10-08,Prishtina,Ballkani,1,1,D
+2023-10-11,Fushe Kosova,Gjilani,2,0,H
+2023-10-20,Ballkani,Liria Prizren,4,1,H
+2023-10-21,Feronikeli,Prishtina,0,0,D
+2023-10-21,Gjilani,Fushe Kosova,1,0,H
+2023-10-22,Llapi,Drita,0,1,A
+2023-10-22,Malisheva,Dukagjini,3,4,A
+2023-10-28,Fushe Kosova,Malisheva,0,0,D
+2023-10-28,Prishtina,Gjilani,2,1,H
+2023-10-29,Feronikeli,Ballkani,0,3,A
+2023-10-29,Drita,Liria Prizren,1,1,D
+2023-10-29,Dukagjini,Llapi,0,0,D
+2023-11-01,Ballkani,Drita,1,0,H
+2023-11-01,Gjilani,Feronikeli,2,1,H
+2023-11-01,Malisheva,Prishtina,1,0,H
+2023-11-02,Llapi,Fushe Kosova,1,1,D
+2023-11-02,Liria Prizren,Dukagjini,2,2,D
+2023-11-04,Feronikeli,Malisheva,0,0,D
+2023-11-05,Dukagjini,Drita,1,0,H
+2023-11-05,Fushe Kosova,Liria Prizren,2,0,H
+2023-11-05,Prishtina,Llapi,2,2,D
+2023-11-10,Malisheva,Gjilani,1,0,H
+2023-11-11,Drita,Fushe Kosova,1,0,H
+2023-11-11,Llapi,Feronikeli,1,0,H
+2023-11-11,Liria Prizren,Prishtina,2,2,D
+2023-11-13,Ballkani,Dukagjini,3,1,H
+2023-11-24,Malisheva,Ballkani,0,2,A
+2023-11-26,Gjilani,Llapi,0,2,A
+2023-11-27,Prishtina,Drita,1,0,H
+2023-11-27,Feronikeli,Liria Prizren,2,1,H
+2023-11-28,Fushe Kosova,Dukagjini,0,3,A
+2023-12-02,Llapi,Malisheva,0,1,A
+2023-12-02,Liria Prizren,Gjilani,0,4,A
+2023-12-03,Ballkani,Fushe Kosova,2,1,H
+2023-12-03,Drita,Feronikeli,3,1,H
+2023-12-03,Dukagjini,Prishtina,0,0,D
+2023-12-09,Prishtina,Fushe Kosova,1,0,H
+2023-12-09,Llapi,Ballkani,5,3,H
+2023-12-09,Malisheva,Liria Prizren,1,0,H
+2023-12-10,Feronikeli,Dukagjini,1,0,H
+2023-12-10,Gjilani,Drita,0,1,A
+2023-12-16,Drita,Malisheva,1,2,A
+2023-12-16,Dukagjini,Gjilani,1,0,H
+2023-12-16,Fushe Kosova,Feronikeli,0,1,A
+2023-12-17,Ballkani,Prishtina,0,0,D
+2023-12-17,Liria Prizren,Llapi,0,2,A
+2023-12-20,Drita,Ballkani,2,1,H
+2023-12-24,Gjilani,Ballkani,0,0,D
+2024-02-10,Drita,Llapi,0,1,A
+2024-02-10,Fushe Kosova,Gjilani,1,1,D
+2024-02-11,Prishtina,Feronikeli,2,0,H
+2024-02-11,Dukagjini,Malisheva,2,1,H
+2024-02-11,Liria Prizren,Ballkani,0,3,A
+2024-02-16,Ballkani,Feronikeli,2,2,D
+2024-02-16,Gjilani,Prishtina,1,1,D
+2024-02-16,Liria Prizren,Drita,0,1,A
+2024-02-18,Llapi,Dukagjini,2,1,H
+2024-02-18,Malisheva,Fushe Kosova,4,1,H
+2024-02-21,Prishtina,Malisheva,0,2,A
+2024-02-21,Feronikeli,Gjilani,0,0,D
+2024-02-21,Drita,Ballkani,1,0,H
+2024-02-22,Dukagjini,Liria Prizren,2,1,H
+2024-02-22,Fushe Kosova,Llapi,0,3,A
+2024-02-24,Ballkani,Gjilani,1,1,D
+2024-02-24,Malisheva,Feronikeli,2,1,H
+2024-02-25,Drita,Dukagjini,2,0,H
+2024-02-25,Llapi,Prishtina,0,0,D
+2024-02-25,Liria Prizren,Fushe Kosova,0,0,D
+2024-03-02,Feronikeli,Llapi,0,1,A
+2024-03-02,Dukagjini,Ballkani,1,2,A
+2024-03-02,Fushe Kosova,Drita,1,0,H
+2024-03-03,Prishtina,Liria Prizren,3,1,H
+2024-03-03,Gjilani,Malisheva,2,3,A
+2024-03-09,Drita,Prishtina,1,0,H
+2024-03-09,Dukagjini,Fushe Kosova,0,0,D
+2024-03-09,Llapi,Gjilani,2,1,H
+2024-03-10,Ballkani,Malisheva,2,0,H
+2024-03-10,Liria Prizren,Feronikeli,0,2,A
+2024-03-13,Gjilani,Liria Prizren,3,0,H
+2024-03-13,Malisheva,Llapi,2,1,H
+2024-03-13,Fushe Kosova,Ballkani,2,0,H
+2024-03-14,Prishtina,Dukagjini,5,0,H
+2024-03-14,Feronikeli,Drita,0,1,A
+2024-03-16,Ballkani,Llapi,0,0,D
+2024-03-16,Liria Prizren,Malisheva,0,3,A
+2024-03-17,Drita,Gjilani,2,2,D
+2024-03-17,Dukagjini,Feronikeli,1,0,H
+2024-03-17,Fushe Kosova,Prishtina,0,0,D
+2024-03-30,Prishtina,Ballkani,0,0,D
+2024-03-30,Malisheva,Drita,1,1,D
+2024-03-31,Feronikeli,Fushe Kosova,1,0,H
+2024-03-31,Gjilani,Dukagjini,1,1,D
+2024-03-31,Llapi,Liria Prizren,3,0,H
+2024-04-06,Gjilani,Fushe Kosova,4,0,H
+2024-04-06,Malisheva,Dukagjini,1,1,D
+2024-04-07,Feronikeli,Prishtina,0,0,D
+2024-04-07,Ballkani,Liria Prizren,2,0,H
+2024-04-07,Llapi,Drita,0,1,A
+2024-04-13,Prishtina,Gjilani,1,3,A
+2024-04-13,Feronikeli,Ballkani,0,2,A
+2024-04-13,Drita,Liria Prizren,4,2,H
+2024-04-14,Dukagjini,Llapi,1,1,D
+2024-04-14,Fushe Kosova,Malisheva,1,3,A
+2024-04-20,Ballkani,Drita,2,2,D
+2024-04-20,Gjilani,Feronikeli,1,1,D
+2024-04-20,Liria Prizren,Dukagjini,0,0,D
+2024-04-21,Llapi,Fushe Kosova,1,0,H
+2024-04-21,Malisheva,Prishtina,0,1,A
+2024-04-27,Feronikeli,Malisheva,2,1,H
+2024-04-27,Fushe Kosova,Liria Prizren,0,2,A
+2024-04-28,Prishtina,Llapi,0,2,A
+2024-04-28,Gjilani,Ballkani,0,2,A
+2024-04-28,Dukagjini,Drita,1,1,D
+2024-05-05,Ballkani,Dukagjini,3,0,H
+2024-05-05,Drita,Fushe Kosova,3,1,H
+2024-05-05,Llapi,Feronikeli,3,2,H
+2024-05-05,Liria Prizren,Prishtina,0,1,A
+2024-05-05,Malisheva,Gjilani,0,0,D
+2024-05-09,Prishtina,Drita,1,2,A
+2024-05-09,Feronikeli,Liria Prizren,4,1,H
+2024-05-09,Gjilani,Llapi,1,1,D
+2024-05-09,Malisheva,Ballkani,0,2,A
+2024-05-09,Fushe Kosova,Dukagjini,1,2,A
+2024-05-12,Ballkani,Fushe Kosova,3,0,H
+2024-05-12,Drita,Feronikeli,0,0,D
+2024-05-12,Dukagjini,Prishtina,1,0,H
+2024-05-12,Llapi,Malisheva,1,0,H
+2024-05-12,Liria Prizren,Gjilani,1,3,A
+2024-05-18,Prishtina,Fushe Kosova,5,0,H
+2024-05-18,Feronikeli,Dukagjini,3,2,H
+2024-05-18,Gjilani,Drita,2,1,H
+2024-05-18,Llapi,Ballkani,0,1,A
+2024-05-18,Malisheva,Liria Prizren,7,4,H
+2024-05-25,Ballkani,Prishtina,2,1,H
+2024-05-25,Drita,Malisheva,1,1,D
+2024-05-25,Dukagjini,Gjilani,2,4,A
+2024-05-25,Liria Prizren,Llapi,1,5,A
+2024-05-25,Fushe Kosova,Feronikeli,0,3,A
+2024-06-01,Feronikeli,Prishtina e Re,1,0,H

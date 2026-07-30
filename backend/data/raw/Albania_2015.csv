@@ -1,0 +1,181 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2015-08-21,Partizani,Laci,1,1,D
+2015-08-22,Flamurtari,Teuta Durres,0,1,A
+2015-08-23,FK Kukesi,Bylis,2,0,H
+2015-08-23,Terbuni Puke,Tirana,1,2,A
+2015-08-28,Partizani,Flamurtari,2,1,H
+2015-08-29,Laci,Tirana,1,1,D
+2015-08-29,Skenderbeu Korce,FK Kukesi,1,0,H
+2015-08-29,Teuta Durres,Vllaznia Shkoder,2,0,H
+2015-08-30,Bylis,Terbuni Puke,0,2,A
+2015-09-09,Vllaznia Shkoder,Skenderbeu Korce,0,1,A
+2015-09-12,Terbuni Puke,Skenderbeu Korce,0,2,A
+2015-09-12,FK Kukesi,Teuta Durres,3,0,H
+2015-09-12,Tirana,Bylis,0,0,D
+2015-09-13,Flamurtari,Laci,0,0,D
+2015-09-13,Vllaznia Shkoder,Partizani,1,2,A
+2015-09-19,Teuta Durres,Terbuni Puke,3,1,H
+2015-09-19,Partizani,FK Kukesi,2,0,H
+2015-09-20,Laci,Bylis,3,1,H
+2015-09-20,Flamurtari,Vllaznia Shkoder,2,0,H
+2015-09-21,Skenderbeu Korce,Tirana,2,1,H
+2015-09-26,Terbuni Puke,Partizani,1,2,A
+2015-09-26,Bylis,Skenderbeu Korce,1,4,A
+2015-09-26,Tirana,Teuta Durres,2,0,H
+2015-09-27,Vllaznia Shkoder,Laci,0,1,A
+2015-09-27,FK Kukesi,Flamurtari,1,0,H
+2015-10-03,Vllaznia Shkoder,FK Kukesi,1,1,D
+2015-10-03,Partizani,Tirana,1,0,H
+2015-10-04,Flamurtari,Terbuni Puke,7,0,H
+2015-10-04,Teuta Durres,Bylis,3,0,H
+2015-10-05,Laci,Skenderbeu Korce,0,3,A
+2015-10-16,Skenderbeu Korce,Teuta Durres,2,2,D
+2015-10-17,FK Kukesi,Laci,1,0,H
+2015-10-17,Bylis,Partizani,1,2,A
+2015-10-17,Terbuni Puke,Vllaznia Shkoder,0,3,A
+2015-10-17,Tirana,Flamurtari,1,1,D
+2015-10-25,FK Kukesi,Terbuni Puke,1,0,H
+2015-10-25,Flamurtari,Bylis,0,0,D
+2015-10-25,Vllaznia Shkoder,Tirana,1,1,D
+2015-10-25,Laci,Teuta Durres,2,2,D
+2015-10-25,Partizani,Skenderbeu Korce,2,1,H
+2015-10-31,Bylis,Vllaznia Shkoder,3,1,H
+2015-10-31,Terbuni Puke,Laci,1,1,D
+2015-10-31,Skenderbeu Korce,Flamurtari,2,0,H
+2015-11-01,Tirana,FK Kukesi,2,1,H
+2015-11-01,Teuta Durres,Partizani,0,1,A
+2015-11-07,Tirana,Terbuni Puke,3,0,H
+2015-11-07,Teuta Durres,Flamurtari,3,1,H
+2015-11-08,Laci,Partizani,2,3,A
+2015-11-08,Bylis,FK Kukesi,1,1,D
+2015-11-08,Skenderbeu Korce,Vllaznia Shkoder,3,1,H
+2015-11-18,Vllaznia Shkoder,Teuta Durres,0,1,A
+2015-11-18,Terbuni Puke,Bylis,4,2,H
+2015-11-18,Flamurtari,Partizani,0,0,D
+2015-11-19,FK Kukesi,Skenderbeu Korce,2,1,H
+2015-11-19,Tirana,Laci,0,0,D
+2015-11-22,Skenderbeu Korce,Terbuni Puke,4,0,H
+2015-11-23,Laci,Flamurtari,2,1,H
+2015-11-23,Bylis,Tirana,0,1,A
+2015-11-23,Partizani,Vllaznia Shkoder,1,0,H
+2015-11-23,Teuta Durres,FK Kukesi,1,0,H
+2015-11-28,FK Kukesi,Partizani,0,1,A
+2015-11-28,Bylis,Laci,1,0,H
+2015-11-28,Vllaznia Shkoder,Flamurtari,4,0,H
+2015-11-28,Terbuni Puke,Teuta Durres,0,1,A
+2015-11-30,Tirana,Skenderbeu Korce,1,2,A
+2015-12-02,Laci,Vllaznia Shkoder,2,0,H
+2015-12-02,Flamurtari,FK Kukesi,0,1,A
+2015-12-02,Partizani,Terbuni Puke,4,0,H
+2015-12-03,Skenderbeu Korce,Bylis,4,0,H
+2015-12-03,Teuta Durres,Tirana,0,0,D
+2015-12-06,FK Kukesi,Vllaznia Shkoder,1,0,H
+2015-12-06,Terbuni Puke,Flamurtari,1,0,H
+2015-12-06,Skenderbeu Korce,Laci,4,0,H
+2015-12-07,Tirana,Partizani,0,0,D
+2015-12-07,Bylis,Teuta Durres,2,1,H
+2015-12-12,Laci,FK Kukesi,1,1,D
+2015-12-12,Vllaznia Shkoder,Terbuni Puke,2,0,H
+2015-12-12,Partizani,Bylis,1,1,D
+2015-12-13,Flamurtari,Tirana,0,2,A
+2015-12-13,Teuta Durres,Skenderbeu Korce,0,1,A
+2015-12-18,Teuta Durres,Laci,0,1,A
+2015-12-19,Tirana,Vllaznia Shkoder,0,0,D
+2015-12-19,Bylis,Flamurtari,2,3,A
+2015-12-19,Terbuni Puke,FK Kukesi,1,1,D
+2015-12-19,Skenderbeu Korce,Partizani,1,0,H
+2015-12-23,FK Kukesi,Tirana,0,1,A
+2015-12-23,Laci,Terbuni Puke,4,0,H
+2015-12-23,Vllaznia Shkoder,Bylis,3,2,H
+2015-12-23,Partizani,Teuta Durres,0,1,A
+2015-12-23,Flamurtari,Skenderbeu Korce,3,1,H
+2016-01-30,Vllaznia Shkoder,Skenderbeu Korce,1,0,H
+2016-01-30,Terbuni Puke,Tirana,1,3,A
+2016-01-30,Partizani,Laci,2,0,H
+2016-01-31,FK Kukesi,Bylis,3,0,H
+2016-01-31,Flamurtari,Teuta Durres,1,0,H
+2016-02-06,Bylis,Terbuni Puke,4,0,H
+2016-02-06,Partizani,Flamurtari,1,1,D
+2016-02-07,Skenderbeu Korce,FK Kukesi,3,1,H
+2016-02-07,Laci,Tirana,0,3,A
+2016-02-07,Teuta Durres,Vllaznia Shkoder,1,0,H
+2016-02-13,FK Kukesi,Teuta Durres,2,2,D
+2016-02-13,Tirana,Bylis,2,0,H
+2016-02-13,Vllaznia Shkoder,Partizani,1,1,D
+2016-02-13,Terbuni Puke,Skenderbeu Korce,1,3,A
+2016-02-13,Flamurtari,Laci,0,1,A
+2016-02-21,Laci,Bylis,0,1,A
+2016-02-21,Teuta Durres,Terbuni Puke,2,1,H
+2016-02-21,Flamurtari,Vllaznia Shkoder,2,0,H
+2016-02-22,Skenderbeu Korce,Tirana,1,0,H
+2016-02-22,Partizani,FK Kukesi,1,0,H
+2016-02-27,FK Kukesi,Flamurtari,4,0,H
+2016-02-27,Tirana,Teuta Durres,0,0,D
+2016-02-27,Vllaznia Shkoder,Laci,0,0,D
+2016-02-27,Terbuni Puke,Partizani,0,0,D
+2016-02-28,Bylis,Skenderbeu Korce,1,1,D
+2016-03-04,Partizani,Tirana,2,0,H
+2016-03-05,Laci,Skenderbeu Korce,0,2,A
+2016-03-05,Teuta Durres,Bylis,1,0,H
+2016-03-05,Vllaznia Shkoder,FK Kukesi,1,2,A
+2016-03-05,Flamurtari,Terbuni Puke,1,1,D
+2016-03-09,FK Kukesi,Laci,1,0,H
+2016-03-09,Tirana,Flamurtari,0,0,D
+2016-03-09,Bylis,Partizani,0,2,A
+2016-03-09,Terbuni Puke,Vllaznia Shkoder,0,4,A
+2016-03-09,Skenderbeu Korce,Teuta Durres,1,0,H
+2016-03-13,FK Kukesi,Terbuni Puke,1,0,H
+2016-03-13,Laci,Teuta Durres,1,2,A
+2016-03-13,Vllaznia Shkoder,Tirana,3,1,H
+2016-03-13,Flamurtari,Bylis,0,0,D
+2016-03-14,Partizani,Skenderbeu Korce,1,1,D
+2016-03-19,Terbuni Puke,Laci,1,1,D
+2016-03-20,Bylis,Vllaznia Shkoder,0,1,A
+2016-03-20,Skenderbeu Korce,Flamurtari,5,1,H
+2016-03-20,Tirana,FK Kukesi,1,1,D
+2016-03-20,Teuta Durres,Partizani,0,2,A
+2016-04-02,Laci,Partizani,0,0,D
+2016-04-02,Bylis,FK Kukesi,0,2,A
+2016-04-02,Skenderbeu Korce,Vllaznia Shkoder,2,1,H
+2016-04-02,Teuta Durres,Flamurtari,1,1,D
+2016-04-03,Tirana,Terbuni Puke,3,0,H
+2016-04-09,Vllaznia Shkoder,Teuta Durres,0,2,A
+2016-04-09,Terbuni Puke,Bylis,0,1,A
+2016-04-10,FK Kukesi,Skenderbeu Korce,1,0,H
+2016-04-10,Tirana,Laci,1,0,H
+2016-04-10,Flamurtari,Partizani,1,1,D
+2016-04-16,Laci,Flamurtari,1,2,A
+2016-04-16,Skenderbeu Korce,Terbuni Puke,2,3,A
+2016-04-16,Teuta Durres,FK Kukesi,0,0,D
+2016-04-17,Bylis,Tirana,0,0,D
+2016-04-17,Partizani,Vllaznia Shkoder,3,0,H
+2016-04-25,FK Kukesi,Partizani,0,1,A
+2016-04-25,Bylis,Laci,1,0,H
+2016-04-25,Vllaznia Shkoder,Flamurtari,2,1,H
+2016-04-25,Terbuni Puke,Teuta Durres,1,4,A
+2016-04-25,Tirana,Skenderbeu Korce,0,1,A
+2016-04-29,Flamurtari,FK Kukesi,0,1,A
+2016-04-29,Teuta Durres,Tirana,0,0,D
+2016-04-30,Laci,Vllaznia Shkoder,3,2,H
+2016-04-30,Skenderbeu Korce,Bylis,3,0,H
+2016-04-30,Partizani,Terbuni Puke,4,0,H
+2016-05-04,FK Kukesi,Vllaznia Shkoder,0,0,D
+2016-05-04,Skenderbeu Korce,Laci,6,1,H
+2016-05-04,Bylis,Teuta Durres,0,1,A
+2016-05-04,Terbuni Puke,Flamurtari,0,2,A
+2016-05-04,Tirana,Partizani,2,2,D
+2016-05-08,Laci,FK Kukesi,1,1,D
+2016-05-08,Vllaznia Shkoder,Terbuni Puke,2,0,H
+2016-05-08,Partizani,Bylis,1,2,A
+2016-05-08,Flamurtari,Tirana,2,1,H
+2016-05-08,Teuta Durres,Skenderbeu Korce,1,1,D
+2016-05-13,Skenderbeu Korce,Partizani,0,1,A
+2016-05-14,Tirana,Vllaznia Shkoder,1,0,H
+2016-05-14,Teuta Durres,Laci,3,0,H
+2016-05-14,Bylis,Flamurtari,0,0,D
+2016-05-14,Terbuni Puke,FK Kukesi,1,2,A
+2016-05-18,FK Kukesi,Tirana,2,1,H
+2016-05-18,Partizani,Teuta Durres,1,2,A
+2016-05-18,Laci,Terbuni Puke,0,0,D
+2016-05-18,Flamurtari,Skenderbeu Korce,0,2,A
+2016-05-18,Vllaznia Shkoder,Bylis,1,0,H

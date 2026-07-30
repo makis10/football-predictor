@@ -1,0 +1,181 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,PSH,PSD,PSA
+23/07/2016,SK Rapid,Ried,5,0,H,1.37,5.05,10.11
+23/07/2016,Altach,Wolfsberger AC,1,0,H,2.53,3.22,3.14
+23/07/2016,Sturm Graz,Salzburg,3,1,H,3.81,3.74,2.02
+24/07/2016,St. Polten,Austria Vienna,1,2,A,3.82,3.75,2.02
+24/07/2016,Mattersburg,Admira,0,1,A,2.68,3.46,2.75
+30/07/2016,Salzburg,Wolfsberger AC,1,1,D,1.44,4.88,7.94
+30/07/2016,Ried,Sturm Graz,1,0,H,3.62,3.48,2.17
+31/07/2016,Altach,SK Rapid,1,0,H,5.72,3.89,1.68
+31/07/2016,Austria Vienna,Mattersburg,3,1,H,1.6,4.39,5.78
+31/07/2016,St. Polten,Admira,2,1,H,2.1,3.41,3.9
+06/08/2016,Mattersburg,Sturm Graz,0,2,A,3.57,3.45,2.2
+06/08/2016,Wolfsberger AC,Ried,1,0,H,1.99,3.43,4.33
+06/08/2016,Admira,Altach,1,2,A,2.37,3.47,3.17
+06/08/2016,Salzburg,St. Polten,2,0,H,1.23,7.15,14.2
+07/08/2016,Austria Vienna,SK Rapid,1,4,A,3.21,3.71,2.25
+13/08/2016,Ried,Salzburg,0,2,A,4.63,4.16,1.76
+13/08/2016,Altach,St. Polten,3,1,H,1.83,3.77,4.72
+13/08/2016,Mattersburg,Wolfsberger AC,3,1,H,3.03,3.36,2.52
+13/08/2016,SK Rapid,Admira,4,0,H,1.3,5.86,11.74
+14/08/2016,Sturm Graz,Austria Vienna,3,1,H,2.3,3.42,3.36
+20/08/2016,St. Polten,Sturm Graz,1,3,A,4.1,3.6,1.99
+20/08/2016,Admira,Ried,1,0,H,2.37,3.46,3.19
+20/08/2016,Salzburg,Mattersburg,3,1,H,1.38,5.61,8.01
+21/08/2016,Wolfsberger AC,SK Rapid,1,1,D,5.29,4.02,1.7
+21/08/2016,Austria Vienna,Altach,3,1,H,2.07,3.65,3.72
+27/08/2016,Sturm Graz,Altach,3,1,H,1.77,3.92,4.89
+27/08/2016,Wolfsberger AC,Admira,5,0,H,2.03,3.52,4.05
+27/08/2016,Mattersburg,St. Polten,1,1,D,2.17,3.63,3.47
+28/08/2016,SK Rapid,Salzburg,0,0,D,2.34,3.59,3.14
+28/08/2016,Ried,Austria Vienna,1,1,D,3.33,3.39,2.33
+10/09/2016,Sturm Graz,SK Rapid,1,1,D,3.41,3.49,2.24
+10/09/2016,Altach,Mattersburg,2,1,H,1.78,3.85,4.96
+10/09/2016,Austria Vienna,Wolfsberger AC,4,1,H,1.94,3.51,4.45
+10/09/2016,St. Polten,Ried,2,3,A,2.59,3.36,2.93
+11/09/2016,Admira,Salzburg,0,4,A,8.17,5.16,1.41
+17/09/2016,Ried,Altach,2,1,H,2.57,3.22,3.07
+17/09/2016,Wolfsberger AC,St. Polten,1,1,D,1.58,4.27,6.35
+17/09/2016,Admira,Sturm Graz,0,3,A,5.05,3.99,1.74
+18/09/2016,Salzburg,Austria Vienna,4,1,H,1.36,5.71,8.84
+18/09/2016,SK Rapid,Mattersburg,3,0,H,1.33,5.98,9.64
+24/09/2016,St. Polten,SK Rapid,1,1,D,7.44,5.25,1.43
+24/09/2016,Austria Vienna,Admira,1,2,A,1.51,4.77,6.62
+24/09/2016,Mattersburg,Ried,1,1,D,2.4,3.44,3.14
+24/09/2016,Sturm Graz,Wolfsberger AC,3,0,H,1.59,4.12,6.46
+25/09/2016,Altach,Salzburg,0,0,D,6.62,4.46,1.54
+01/10/2016,Wolfsberger AC,Altach,1,2,A,2.1,3.34,4
+01/10/2016,Admira,Mattersburg,1,0,H,2.61,3.36,2.9
+02/10/2016,Ried,SK Rapid,4,2,H,5.8,3.96,1.67
+02/10/2016,Salzburg,Sturm Graz,0,1,A,1.61,4.3,5.85
+02/10/2016,Austria Vienna,St. Polten,2,1,H,1.5,4.6,7.02
+15/10/2016,Wolfsberger AC,Salzburg,2,2,D,5.63,3.98,1.68
+15/10/2016,Admira,St. Polten,1,1,D,2.14,3.48,3.69
+15/10/2016,SK Rapid,Altach,1,1,D,1.47,4.69,7.62
+15/10/2016,Sturm Graz,Ried,1,0,H,1.53,4.43,6.74
+16/10/2016,Mattersburg,Austria Vienna,0,2,A,3.74,3.89,2
+22/10/2016,Sturm Graz,Mattersburg,2,2,D,1.37,5.36,9.39
+22/10/2016,Altach,Admira,2,0,H,1.8,3.78,4.89
+22/10/2016,Ried,Wolfsberger AC,0,1,A,2.3,3.37,3.42
+23/10/2016,St. Polten,Salzburg,1,5,A,8.6,5.34,1.39
+23/10/2016,SK Rapid,Austria Vienna,0,2,A,1.91,3.78,4.21
+29/10/2016,Admira,SK Rapid,1,2,A,5.07,4.03,1.72
+29/10/2016,Wolfsberger AC,Mattersburg,3,0,H,1.92,3.66,4.36
+29/10/2016,Salzburg,Ried,1,0,H,1.23,6.78,14.95
+29/10/2016,St. Polten,Altach,0,1,A,3.2,3.58,2.31
+30/10/2016,Austria Vienna,Sturm Graz,2,0,H,2.41,3.58,3.03
+05/11/2016,Sturm Graz,St. Polten,1,2,A,1.35,5.5,9.88
+05/11/2016,Ried,Admira,2,1,H,2.23,3.45,3.47
+06/11/2016,SK Rapid,Wolfsberger AC,0,1,A,1.61,4.2,6.05
+06/11/2016,Altach,Austria Vienna,5,1,H,2.58,3.26,3.03
+06/11/2016,Mattersburg,Salzburg,2,1,H,10.2,6.33,1.3
+19/11/2016,Altach,Sturm Graz,1,1,D,2.79,3.24,2.79
+19/11/2016,Admira,Wolfsberger AC,4,1,H,2.76,3.27,2.81
+19/11/2016,Austria Vienna,Ried,2,0,H,1.6,4.32,5.88
+19/11/2016,St. Polten,Mattersburg,2,2,D,2.36,3.41,3.23
+20/11/2016,Salzburg,SK Rapid,2,1,H,1.7,3.85,5.63
+26/11/2016,Ried,St. Polten,1,2,A,1.99,3.53,4.18
+26/11/2016,Mattersburg,Altach,1,2,A,3.16,3.46,2.38
+27/11/2016,Wolfsberger AC,Austria Vienna,0,3,A,2.64,3.34,2.89
+27/11/2016,SK Rapid,Sturm Graz,1,2,A,2.21,3.46,3.52
+27/11/2016,Salzburg,Admira,0,1,A,1.23,7.3,12.98
+29/11/2016,Altach,Ried,1,0,H,1.94,3.47,4.49
+30/11/2016,Austria Vienna,Salzburg,1,3,A,4.94,4.31,1.69
+30/11/2016,Mattersburg,SK Rapid,1,1,D,4.86,4.05,1.75
+30/11/2016,St. Polten,Wolfsberger AC,0,4,A,2.48,3.47,2.99
+30/11/2016,Sturm Graz,Admira,0,2,A,1.55,4.21,7.07
+03/12/2016,SK Rapid,St. Polten,1,0,H,1.37,5.28,9.66
+03/12/2016,Admira,Austria Vienna,0,2,A,3.06,3.64,2.37
+03/12/2016,Ried,Mattersburg,2,1,H,2.07,3.49,3.92
+03/12/2016,Salzburg,Altach,4,1,H,1.32,5.49,12.02
+04/12/2016,Wolfsberger AC,Sturm Graz,0,4,A,3.53,3.44,2.21
+10/12/2016,Altach,Wolfsberger AC,2,1,H,1.84,3.6,4.91
+10/12/2016,Mattersburg,Admira,2,0,H,2.56,3.4,2.94
+11/12/2016,SK Rapid,Ried,3,1,H,1.48,4.5,7.9
+11/12/2016,Sturm Graz,Salzburg,0,1,A,4.01,3.62,2
+12/12/2016,St. Polten,Austria Vienna,2,1,H,3.62,3.86,2.04
+17/12/2016,Ried,Sturm Graz,0,3,A,4.21,3.4,2.03
+17/12/2016,Austria Vienna,Mattersburg,2,0,H,1.66,4.15,5.52
+17/12/2016,Salzburg,Wolfsberger AC,3,0,H,1.21,7.5,15.81
+17/12/2016,St. Polten,Admira,2,2,D,3.09,3.34,2.48
+18/12/2016,Altach,SK Rapid,3,1,H,2.92,3.39,2.58
+11/02/2017,Admira,Altach,1,1,D,3.01,3.32,2.56
+11/02/2017,Wolfsberger AC,Ried,1,0,H,2.01,3.48,4.17
+11/02/2017,Mattersburg,Sturm Graz,1,0,H,4.1,3.59,1.99
+11/02/2017,Salzburg,St. Polten,2,0,H,1.13,9.7,25
+12/02/2017,Austria Vienna,SK Rapid,1,1,D,2.76,3.54,2.63
+18/02/2017,Sturm Graz,Austria Vienna,0,4,A,2.17,3.49,3.59
+18/02/2017,Altach,St. Polten,1,2,A,1.68,3.97,5.59
+18/02/2017,Mattersburg,Wolfsberger AC,2,1,H,2.3,3.31,3.48
+18/02/2017,SK Rapid,Admira,0,0,D,1.52,4.4,7.18
+19/02/2017,Ried,Salzburg,1,6,A,9.71,5.28,1.36
+25/02/2017,Wolfsberger AC,SK Rapid,2,1,H,4.09,3.39,2.06
+25/02/2017,Admira,Ried,1,0,H,2.08,3.43,3.95
+25/02/2017,Austria Vienna,Altach,1,3,A,1.82,3.74,4.81
+25/02/2017,Salzburg,Mattersburg,1,0,H,1.21,7.3,15.8
+26/02/2017,St. Polten,Sturm Graz,2,1,H,3.95,3.63,2.01
+04/03/2017,Sturm Graz,Altach,3,0,H,2.06,3.45,4.01
+04/03/2017,Wolfsberger AC,Admira,1,1,D,2.38,3.21,3.4
+04/03/2017,Mattersburg,St. Polten,1,0,H,1.85,3.71,4.61
+04/03/2017,Ried,Austria Vienna,0,3,A,3.59,3.62,2.13
+05/03/2017,SK Rapid,Salzburg,0,1,A,3.92,3.54,2.05
+11/03/2017,St. Polten,Ried,1,0,H,2.34,3.33,3.36
+11/03/2017,Admira,Salzburg,1,1,D,7.91,4.9,1.44
+11/03/2017,Altach,Mattersburg,3,0,H,2.2,3.33,3.7
+11/03/2017,Austria Vienna,Wolfsberger AC,3,0,H,1.54,4.43,6.67
+12/03/2017,Sturm Graz,SK Rapid,2,1,H,2.81,3.33,2.7
+18/03/2017,SK Rapid,Mattersburg,1,1,D,1.47,4.48,8.32
+18/03/2017,Wolfsberger AC,St. Polten,1,0,H,2.12,3.46,3.78
+18/03/2017,Admira,Sturm Graz,1,0,H,3.25,3.36,2.39
+18/03/2017,Ried,Altach,2,0,H,2.93,3.22,2.68
+19/03/2017,Salzburg,Austria Vienna,5,0,H,1.42,5.02,8.13
+01/04/2017,St. Polten,SK Rapid,1,1,D,5.36,4.08,1.68
+01/04/2017,Austria Vienna,Admira,0,2,A,1.63,4.28,5.59
+01/04/2017,Mattersburg,Ried,2,1,H,2.12,3.54,3.7
+01/04/2017,Sturm Graz,Wolfsberger AC,4,0,H,1.89,3.51,4.66
+02/04/2017,Altach,Salzburg,0,5,A,6.08,4.01,1.64
+08/04/2017,Ried,SK Rapid,3,0,H,4.51,3.69,1.88
+08/04/2017,Wolfsberger AC,Altach,0,0,D,2.93,3.13,2.75
+08/04/2017,Admira,Mattersburg,0,2,A,2.27,3.44,3.42
+08/04/2017,Austria Vienna,St. Polten,1,2,A,1.42,5.01,8.4
+09/04/2017,Salzburg,Sturm Graz,1,0,H,1.32,5.56,11.6
+15/04/2017,Wolfsberger AC,Salzburg,0,2,A,8.2,4.62,1.46
+15/04/2017,Admira,St. Polten,2,0,H,2.62,3.47,2.82
+15/04/2017,SK Rapid,Altach,3,0,H,1.69,3.83,5.83
+15/04/2017,Sturm Graz,Ried,1,0,H,1.61,4.17,6.1
+16/04/2017,Mattersburg,Austria Vienna,0,3,A,3.42,3.42,2.27
+22/04/2017,Sturm Graz,Mattersburg,0,2,A,1.88,3.61,4.64
+22/04/2017,Altach,Admira,0,0,D,1.63,3.86,6.55
+22/04/2017,Ried,Wolfsberger AC,1,1,D,2.19,3.36,3.76
+22/04/2017,St. Polten,Salzburg,1,2,A,10.79,5.39,1.34
+23/04/2017,SK Rapid,Austria Vienna,0,2,A,1.95,3.56,4.29
+29/04/2017,Austria Vienna,Sturm Graz,4,1,H,2.12,3.36,3.92
+29/04/2017,Wolfsberger AC,Mattersburg,2,2,D,2.73,3.28,2.82
+29/04/2017,Salzburg,Ried,1,1,D,1.23,6.78,15.38
+29/04/2017,St. Polten,Altach,3,3,D,2.96,3.3,2.6
+30/04/2017,Admira,SK Rapid,3,2,H,4.65,3.77,1.83
+06/05/2017,Mattersburg,Salzburg,2,1,H,6.21,4.48,1.56
+06/05/2017,SK Rapid,Wolfsberger AC,4,0,H,1.64,4.04,5.9
+06/05/2017,Ried,Admira,1,0,H,1.97,3.63,4.12
+06/05/2017,Sturm Graz,St. Polten,3,2,H,1.71,3.98,5.29
+07/05/2017,Altach,Austria Vienna,1,1,D,3.29,3.3,2.39
+13/05/2017,Salzburg,SK Rapid,1,0,H,1.48,4.51,7.91
+13/05/2017,Admira,Wolfsberger AC,3,2,H,2.14,3.39,3.8
+13/05/2017,Austria Vienna,Ried,3,0,H,1.7,4.06,5.19
+13/05/2017,St. Polten,Mattersburg,1,0,H,3.09,3.29,2.51
+14/05/2017,Altach,Sturm Graz,1,2,A,2.47,3.27,3.17
+20/05/2017,Ried,St. Polten,1,1,D,2.05,3.53,3.92
+20/05/2017,Wolfsberger AC,Austria Vienna,2,1,H,3.9,3.89,1.95
+20/05/2017,Mattersburg,Altach,1,0,H,2.33,3.41,3.31
+20/05/2017,Salzburg,Admira,2,0,H,1.32,5.91,10.01
+21/05/2017,SK Rapid,Sturm Graz,1,0,H,1.88,3.7,4.44
+25/05/2017,Altach,Ried,0,2,A,2.15,3.75,3.4
+25/05/2017,Austria Vienna,Salzburg,2,3,A,4,4.01,1.9
+25/05/2017,Mattersburg,SK Rapid,1,3,A,2.82,3.53,2.59
+25/05/2017,St. Polten,Wolfsberger AC,1,1,D,2.32,3.2,3.54
+25/05/2017,Sturm Graz,Admira,2,1,H,1.65,4.41,5.22
+28/05/2017,Wolfsberger AC,Sturm Graz,1,0,H,4.48,4.18,1.78
+28/05/2017,Admira,Austria Vienna,1,6,A,3.41,3.96,2.08
+28/05/2017,SK Rapid,St. Polten,2,1,H,2.29,3.34,3.44
+28/05/2017,Ried,Mattersburg,2,3,A,1.69,4.24,5.01
+28/05/2017,Salzburg,Altach,1,0,H,1.31,6.23,9.89

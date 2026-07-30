@@ -1,0 +1,113 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2018-04-01,Sheriff Tiraspol,Petrocub,3,0,H
+2018-04-01,Milsami Orhei,Zimbru,1,0,H
+2018-04-01,Speranta Nisporeni,Zaria Balti,0,0,D
+2018-04-01,Sfintul Gheorghe,Dinamo-Auto,0,1,A
+2018-04-07,Sheriff Tiraspol,Speranta Nisporeni,3,0,H
+2018-04-07,Zimbru,Sfintul Gheorghe,1,1,D
+2018-04-07,Petrocub,Milsami Orhei,1,2,A
+2018-04-07,Dinamo-Auto,Zaria Balti,0,0,D
+2018-04-14,Zaria Balti,Zimbru,1,1,D
+2018-04-14,Milsami Orhei,Sheriff Tiraspol,0,1,A
+2018-04-14,Speranta Nisporeni,Dinamo-Auto,0,0,D
+2018-04-14,Sfintul Gheorghe,Petrocub,3,6,A
+2018-04-22,Milsami Orhei,Sfintul Gheorghe,1,0,H
+2018-04-22,Petrocub,Zaria Balti,3,0,H
+2018-04-22,Sheriff Tiraspol,Dinamo-Auto,5,2,H
+2018-04-22,Zimbru,Speranta Nisporeni,1,1,D
+2018-04-28,Zaria Balti,Milsami Orhei,2,2,D
+2018-04-28,Speranta Nisporeni,Petrocub,0,0,D
+2018-04-29,Dinamo-Auto,Zimbru,1,3,A
+2018-04-29,Sfintul Gheorghe,Sheriff Tiraspol,2,2,D
+2018-05-05,Milsami Orhei,Speranta Nisporeni,0,1,A
+2018-05-05,Petrocub,Dinamo-Auto,0,3,A
+2018-05-05,Sfintul Gheorghe,Zaria Balti,1,0,H
+2018-05-05,Sheriff Tiraspol,Zimbru,3,1,H
+2018-05-13,Zaria Balti,Sheriff Tiraspol,0,1,A
+2018-05-13,Speranta Nisporeni,Sfintul Gheorghe,1,1,D
+2018-05-13,Dinamo-Auto,Milsami Orhei,0,2,A
+2018-05-13,Zimbru,Petrocub,2,2,D
+2018-05-18,Zimbru,Milsami Orhei,0,0,D
+2018-05-19,Petrocub,Sheriff Tiraspol,1,0,H
+2018-05-20,Zaria Balti,Speranta Nisporeni,2,1,H
+2018-05-20,Dinamo-Auto,Sfintul Gheorghe,0,0,D
+2018-05-27,Zaria Balti,Dinamo-Auto,1,1,D
+2018-05-27,Milsami Orhei,Petrocub,2,1,H
+2018-05-27,Speranta Nisporeni,Sheriff Tiraspol,0,0,D
+2018-05-27,Sfintul Gheorghe,Zimbru,1,0,H
+2018-06-09,Zaria Balti,Petrocub,1,2,A
+2018-06-09,Speranta Nisporeni,Zimbru,1,1,D
+2018-06-10,Dinamo-Auto,Sheriff Tiraspol,0,5,A
+2018-06-10,Sfintul Gheorghe,Milsami Orhei,0,1,A
+2018-06-16,Milsami Orhei,Zaria Balti,3,1,H
+2018-06-16,Sheriff Tiraspol,Sfintul Gheorghe,4,0,H
+2018-06-16,Zimbru,Dinamo-Auto,2,2,D
+2018-06-16,Petrocub,Speranta Nisporeni,1,1,D
+2018-06-24,Zaria Balti,Sfintul Gheorghe,1,1,D
+2018-06-24,Speranta Nisporeni,Milsami Orhei,1,2,A
+2018-06-24,Dinamo-Auto,Petrocub,2,2,D
+2018-06-24,Zimbru,Sheriff Tiraspol,0,1,A
+2018-06-27,Dinamo-Auto,Speranta Nisporeni,1,2,A
+2018-06-27,Sheriff Tiraspol,Milsami Orhei,0,0,D
+2018-06-27,Zimbru,Zaria Balti,4,3,H
+2018-06-27,Petrocub,Sfintul Gheorghe,3,1,H
+2018-07-01,Sfintul Gheorghe,Speranta Nisporeni,2,2,D
+2018-07-01,Sheriff Tiraspol,Zaria Balti,5,1,H
+2018-07-01,Milsami Orhei,Dinamo-Auto,4,0,H
+2018-07-01,Petrocub,Zimbru,2,1,H
+2018-08-04,Zaria Balti,Speranta Nisporeni,0,0,D
+2018-08-04,Sfintul Gheorghe,Dinamo-Auto,5,2,H
+2018-08-05,Milsami Orhei,Zimbru,1,1,D
+2018-08-05,Petrocub,Sheriff Tiraspol,1,0,H
+2018-08-11,Dinamo-Auto,Zaria Balti,0,1,A
+2018-08-11,Petrocub,Milsami Orhei,1,1,D
+2018-08-11,Zimbru,Sfintul Gheorghe,2,1,H
+2018-08-12,Sheriff Tiraspol,Speranta Nisporeni,2,0,H
+2018-08-19,Zaria Balti,Zimbru,0,1,A
+2018-08-19,Speranta Nisporeni,Dinamo-Auto,1,0,H
+2018-08-19,Sfintul Gheorghe,Petrocub,0,1,A
+2018-08-20,Milsami Orhei,Sheriff Tiraspol,0,2,A
+2018-08-25,Petrocub,Zaria Balti,1,1,D
+2018-08-25,Zimbru,Speranta Nisporeni,1,0,H
+2018-08-26,Sheriff Tiraspol,Dinamo-Auto,2,0,H
+2018-08-26,Milsami Orhei,Sfintul Gheorghe,3,0,H
+2018-09-01,Zaria Balti,Milsami Orhei,3,4,A
+2018-09-01,Speranta Nisporeni,Petrocub,1,2,A
+2018-09-01,Dinamo-Auto,Zimbru,1,1,D
+2018-09-02,Sfintul Gheorghe,Sheriff Tiraspol,1,3,A
+2018-09-15,Sfintul Gheorghe,Zaria Balti,1,0,H
+2018-09-15,Petrocub,Dinamo-Auto,3,0,H
+2018-09-16,Sheriff Tiraspol,Zimbru,3,0,H
+2018-09-16,Milsami Orhei,Speranta Nisporeni,0,1,A
+2018-09-22,Speranta Nisporeni,Sfintul Gheorghe,4,1,H
+2018-09-22,Dinamo-Auto,Milsami Orhei,1,0,H
+2018-09-22,Sheriff Tiraspol,Zaria Balti,5,2,H
+2018-09-22,Zimbru,Petrocub,0,0,D
+2018-09-30,Speranta Nisporeni,Zaria Balti,1,2,A
+2018-09-30,Dinamo-Auto,Sfintul Gheorghe,3,1,H
+2018-09-30,Zimbru,Milsami Orhei,2,0,H
+2018-09-30,Sheriff Tiraspol,Petrocub,0,0,D
+2018-10-06,Zaria Balti,Dinamo-Auto,1,1,D
+2018-10-06,Milsami Orhei,Petrocub,1,2,A
+2018-10-06,Speranta Nisporeni,Sheriff Tiraspol,0,0,D
+2018-10-06,Sfintul Gheorghe,Zimbru,3,1,H
+2018-10-20,Dinamo-Auto,Speranta Nisporeni,0,1,A
+2018-10-20,Zimbru,Zaria Balti,3,1,H
+2018-10-21,Petrocub,Sfintul Gheorghe,0,0,D
+2018-10-21,Sheriff Tiraspol,Milsami Orhei,1,1,D
+2018-10-27,Zaria Balti,Petrocub,1,2,A
+2018-10-27,Speranta Nisporeni,Zimbru,1,3,A
+2018-10-27,Dinamo-Auto,Sheriff Tiraspol,0,1,A
+2018-10-27,Sfintul Gheorghe,Milsami Orhei,0,2,A
+2018-11-04,Milsami Orhei,Zaria Balti,3,0,H
+2018-11-04,Zimbru,Dinamo-Auto,1,0,H
+2018-11-04,Sheriff Tiraspol,Sfintul Gheorghe,4,1,H
+2018-11-04,Petrocub,Speranta Nisporeni,1,0,H
+2018-11-10,Zaria Balti,Sfintul Gheorghe,1,1,D
+2018-11-10,Speranta Nisporeni,Milsami Orhei,1,0,H
+2018-11-10,Dinamo-Auto,Petrocub,1,0,H
+2018-11-10,Zimbru,Sheriff Tiraspol,1,0,H
+2018-11-24,Zaria Balti,Sheriff Tiraspol,0,2,A
+2018-11-24,Milsami Orhei,Dinamo-Auto,0,1,A
+2018-11-24,Petrocub,Zimbru,0,1,A
+2018-11-24,Sfintul Gheorghe,Speranta Nisporeni,1,2,A

@@ -1,0 +1,309 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2025-08-01,FC Schalke 04,Hertha BSC,2,1,H
+2025-08-02,SV Darmstadt 98,VfL Bochum,4,1,H
+2025-08-02,SC Paderborn 07,Holstein Kiel,2,1,H
+2025-08-02,Karlsruher SC,Preuen Munster,3,2,H
+2025-08-02,SV Elversberg,1. FC Nurnberg,1,0,H
+2025-08-02,Arminia Bielefeld,Fortuna Dusseldorf,5,1,H
+2025-08-03,Hannover 96,1. FC Kaiserslautern,1,0,H
+2025-08-03,SpVgg Greuther Furth,Dynamo Dresden,3,2,H
+2025-08-03,1. FC Magdeburg,Eintracht Braunschweig,0,1,A
+2025-08-08,1. FC Nurnberg,SV Darmstadt 98,0,1,A
+2025-08-08,Preuen Munster,SC Paderborn 07,1,1,D
+2025-08-09,Fortuna Dusseldorf,Hannover 96,0,2,A
+2025-08-09,Dynamo Dresden,1. FC Magdeburg,1,2,A
+2025-08-09,Eintracht Braunschweig,SpVgg Greuther Furth,3,2,H
+2025-08-09,1. FC Kaiserslautern,FC Schalke 04,1,0,H
+2025-08-10,Hertha BSC,Karlsruher SC,0,0,D
+2025-08-10,VfL Bochum,SV Elversberg,2,0,H
+2025-08-10,Holstein Kiel,Arminia Bielefeld,0,2,A
+2025-08-22,Preuen Munster,1. FC Nurnberg,2,1,H
+2025-08-22,SV Elversberg,1. FC Kaiserslautern,2,1,H
+2025-08-23,Hannover 96,1. FC Magdeburg,3,1,H
+2025-08-23,SC Paderborn 07,Fortuna Dusseldorf,1,2,A
+2025-08-23,Karlsruher SC,Eintracht Braunschweig,2,0,H
+2025-08-23,FC Schalke 04,VfL Bochum,2,1,H
+2025-08-24,SpVgg Greuther Furth,Holstein Kiel,0,2,A
+2025-08-24,SV Darmstadt 98,Hertha BSC,0,0,D
+2025-08-24,Arminia Bielefeld,Dynamo Dresden,1,2,A
+2025-08-29,Hertha BSC,SV Elversberg,0,2,A
+2025-08-29,1. FC Nurnberg,SC Paderborn 07,0,0,D
+2025-08-30,VfL Bochum,Preuen Munster,1,2,A
+2025-08-30,Holstein Kiel,Hannover 96,1,2,A
+2025-08-30,Eintracht Braunschweig,Arminia Bielefeld,1,1,D
+2025-08-30,Fortuna Dusseldorf,Karlsruher SC,0,0,D
+2025-08-31,1. FC Magdeburg,SpVgg Greuther Furth,4,5,A
+2025-08-31,Dynamo Dresden,FC Schalke 04,0,1,A
+2025-08-31,1. FC Kaiserslautern,SV Darmstadt 98,3,1,H
+2025-09-12,SC Paderborn 07,VfL Bochum,1,0,H
+2025-09-12,Arminia Bielefeld,1. FC Magdeburg,2,0,H
+2025-09-13,FC Schalke 04,Holstein Kiel,0,1,A
+2025-09-13,SV Darmstadt 98,Eintracht Braunschweig,2,1,H
+2025-09-13,Karlsruher SC,1. FC Nurnberg,2,1,H
+2025-09-13,Hannover 96,Hertha BSC,0,3,A
+2025-09-14,SpVgg Greuther Furth,1. FC Kaiserslautern,0,3,A
+2025-09-14,Preuen Munster,Fortuna Dusseldorf,1,2,A
+2025-09-14,SV Elversberg,Dynamo Dresden,2,2,D
+2025-09-19,Arminia Bielefeld,SpVgg Greuther Furth,1,3,A
+2025-09-19,1. FC Kaiserslautern,Preuen Munster,4,1,H
+2025-09-20,Hertha BSC,SC Paderborn 07,0,2,A
+2025-09-20,1. FC Magdeburg,FC Schalke 04,0,2,A
+2025-09-20,Eintracht Braunschweig,SV Elversberg,1,4,A
+2025-09-20,1. FC Nurnberg,VfL Bochum,2,1,H
+2025-09-21,Fortuna Dusseldorf,SV Darmstadt 98,0,3,A
+2025-09-21,Dynamo Dresden,Hannover 96,2,2,D
+2025-09-21,Holstein Kiel,Karlsruher SC,3,0,H
+2025-09-26,FC Schalke 04,SpVgg Greuther Furth,1,0,H
+2025-09-26,SV Darmstadt 98,Dynamo Dresden,2,0,H
+2025-09-27,SC Paderborn 07,1. FC Kaiserslautern,2,0,H
+2025-09-27,Karlsruher SC,1. FC Magdeburg,1,0,H
+2025-09-27,SV Elversberg,Holstein Kiel,1,0,H
+2025-09-27,VfL Bochum,Fortuna Dusseldorf,0,1,A
+2025-09-28,Hannover 96,Arminia Bielefeld,3,1,H
+2025-09-28,1. FC Nurnberg,Hertha BSC,0,3,A
+2025-09-28,Preuen Munster,Eintracht Braunschweig,3,1,H
+2025-10-03,Fortuna Dusseldorf,1. FC Nurnberg,2,3,A
+2025-10-03,Eintracht Braunschweig,SC Paderborn 07,1,2,A
+2025-10-04,Hertha BSC,Preuen Munster,2,1,H
+2025-10-04,Holstein Kiel,SV Darmstadt 98,1,1,D
+2025-10-04,1. FC Kaiserslautern,VfL Bochum,3,2,H
+2025-10-04,Dynamo Dresden,Karlsruher SC,3,3,D
+2025-10-05,SpVgg Greuther Furth,Hannover 96,2,2,D
+2025-10-05,1. FC Magdeburg,SV Elversberg,0,4,A
+2025-10-05,Arminia Bielefeld,FC Schalke 04,1,2,A
+2025-10-17,Fortuna Dusseldorf,Eintracht Braunschweig,1,2,A
+2025-10-17,Hannover 96,FC Schalke 04,0,3,A
+2025-10-18,SC Paderborn 07,Arminia Bielefeld,4,3,H
+2025-10-18,Karlsruher SC,1. FC Kaiserslautern,2,3,A
+2025-10-18,Preuen Munster,Dynamo Dresden,2,2,D
+2025-10-18,VfL Bochum,Hertha BSC,3,2,H
+2025-10-19,1. FC Nurnberg,Holstein Kiel,1,1,D
+2025-10-19,SV Darmstadt 98,1. FC Magdeburg,0,0,D
+2025-10-19,SV Elversberg,SpVgg Greuther Furth,6,0,H
+2025-10-24,FC Schalke 04,SV Darmstadt 98,1,0,H
+2025-10-24,SpVgg Greuther Furth,Karlsruher SC,1,4,A
+2025-10-25,Dynamo Dresden,SC Paderborn 07,1,2,A
+2025-10-25,Arminia Bielefeld,SV Elversberg,2,0,H
+2025-10-25,Holstein Kiel,VfL Bochum,1,1,D
+2025-10-25,Hertha BSC,Fortuna Dusseldorf,1,0,H
+2025-10-26,1. FC Magdeburg,Preuen Munster,2,0,H
+2025-10-26,Eintracht Braunschweig,Hannover 96,0,3,A
+2025-10-26,1. FC Kaiserslautern,1. FC Nurnberg,1,1,D
+2025-10-31,Preuen Munster,Holstein Kiel,2,1,H
+2025-10-31,SV Elversberg,Hannover 96,2,2,D
+2025-11-01,Hertha BSC,Dynamo Dresden,2,0,H
+2025-11-01,1. FC Nurnberg,Eintracht Braunschweig,2,1,H
+2025-11-01,Karlsruher SC,FC Schalke 04,2,1,H
+2025-11-01,SV Darmstadt 98,Arminia Bielefeld,2,2,D
+2025-11-02,Fortuna Dusseldorf,1. FC Kaiserslautern,1,1,D
+2025-11-02,VfL Bochum,1. FC Magdeburg,2,0,H
+2025-11-02,SC Paderborn 07,SpVgg Greuther Furth,2,1,H
+2025-11-07,SpVgg Greuther Furth,Preuen Munster,1,0,H
+2025-11-07,Dynamo Dresden,1. FC Nurnberg,1,2,A
+2025-11-08,Hannover 96,SV Darmstadt 98,2,3,A
+2025-11-08,FC Schalke 04,SV Elversberg,1,0,H
+2025-11-08,Arminia Bielefeld,Karlsruher SC,4,0,H
+2025-11-08,1. FC Kaiserslautern,Hertha BSC,0,1,A
+2025-11-09,1. FC Magdeburg,SC Paderborn 07,0,1,A
+2025-11-09,Holstein Kiel,Fortuna Dusseldorf,1,0,H
+2025-11-09,Eintracht Braunschweig,VfL Bochum,0,2,A
+2025-11-21,Hertha BSC,Eintracht Braunschweig,1,0,H
+2025-11-21,VfL Bochum,Dynamo Dresden,1,2,A
+2025-11-22,Fortuna Dusseldorf,1. FC Magdeburg,2,1,H
+2025-11-22,SC Paderborn 07,Hannover 96,0,2,A
+2025-11-22,Preuen Munster,FC Schalke 04,0,0,D
+2025-11-22,SV Darmstadt 98,SpVgg Greuther Furth,4,2,H
+2025-11-23,1. FC Nurnberg,Arminia Bielefeld,2,0,H
+2025-11-23,1. FC Kaiserslautern,Holstein Kiel,4,1,H
+2025-11-23,Karlsruher SC,SV Elversberg,2,3,A
+2025-11-28,Hannover 96,Karlsruher SC,3,0,H
+2025-11-28,FC Schalke 04,SC Paderborn 07,2,1,H
+2025-11-29,SpVgg Greuther Furth,VfL Bochum,0,3,A
+2025-11-29,Holstein Kiel,Hertha BSC,0,1,A
+2025-11-29,Eintracht Braunschweig,1. FC Kaiserslautern,2,0,H
+2025-11-29,1. FC Magdeburg,1. FC Nurnberg,3,0,H
+2025-11-30,Dynamo Dresden,Fortuna Dusseldorf,2,1,H
+2025-11-30,Arminia Bielefeld,Preuen Munster,1,2,A
+2025-11-30,SV Elversberg,SV Darmstadt 98,0,0,D
+2025-12-05,Fortuna Dusseldorf,FC Schalke 04,0,2,A
+2025-12-05,Preuen Munster,Hannover 96,2,2,D
+2025-12-06,VfL Bochum,Arminia Bielefeld,1,0,H
+2025-12-06,SC Paderborn 07,SV Elversberg,1,2,A
+2025-12-06,1. FC Kaiserslautern,Dynamo Dresden,3,1,H
+2025-12-06,SV Darmstadt 98,Karlsruher SC,3,2,H
+2025-12-07,Hertha BSC,1. FC Magdeburg,0,2,A
+2025-12-07,1. FC Nurnberg,SpVgg Greuther Furth,2,2,D
+2025-12-07,Eintracht Braunschweig,Holstein Kiel,1,1,D
+2025-12-12,SpVgg Greuther Furth,Hertha BSC,3,3,D
+2025-12-12,Dynamo Dresden,Eintracht Braunschweig,2,3,A
+2025-12-13,1. FC Magdeburg,Holstein Kiel,3,3,D
+2025-12-13,Arminia Bielefeld,1. FC Kaiserslautern,0,0,D
+2025-12-13,Karlsruher SC,SC Paderborn 07,0,4,A
+2025-12-13,Hannover 96,VfL Bochum,0,0,D
+2025-12-14,FC Schalke 04,1. FC Nurnberg,1,0,H
+2025-12-14,SV Darmstadt 98,Preuen Munster,1,0,H
+2025-12-14,SV Elversberg,Fortuna Dusseldorf,1,0,H
+2025-12-19,Hertha BSC,Arminia Bielefeld,1,1,D
+2025-12-19,SC Paderborn 07,SV Darmstadt 98,2,2,D
+2025-12-20,Fortuna Dusseldorf,SpVgg Greuther Furth,2,1,H
+2025-12-20,VfL Bochum,Karlsruher SC,2,2,D
+2025-12-20,1. FC Kaiserslautern,1. FC Magdeburg,2,3,A
+2025-12-20,Holstein Kiel,Dynamo Dresden,2,1,H
+2025-12-21,1. FC Nurnberg,Hannover 96,2,1,H
+2025-12-21,Eintracht Braunschweig,FC Schalke 04,2,1,H
+2025-12-21,Preuen Munster,SV Elversberg,1,1,D
+2026-01-16,Fortuna Dusseldorf,Arminia Bielefeld,1,0,H
+2026-01-16,Eintracht Braunschweig,1. FC Magdeburg,0,3,A
+2026-01-17,1. FC Nurnberg,SV Elversberg,3,2,H
+2026-01-17,Dynamo Dresden,SpVgg Greuther Furth,2,0,H
+2026-01-17,Preuen Munster,Karlsruher SC,0,2,A
+2026-01-17,Hertha BSC,FC Schalke 04,0,0,D
+2026-01-18,VfL Bochum,SV Darmstadt 98,3,3,D
+2026-01-18,Holstein Kiel,SC Paderborn 07,2,0,H
+2026-01-18,1. FC Kaiserslautern,Hannover 96,3,1,H
+2026-01-23,SV Darmstadt 98,1. FC Nurnberg,2,0,H
+2026-01-23,Arminia Bielefeld,Holstein Kiel,2,2,D
+2026-01-24,Hannover 96,Fortuna Dusseldorf,2,1,H
+2026-01-24,SpVgg Greuther Furth,Eintracht Braunschweig,0,0,D
+2026-01-24,Karlsruher SC,Hertha BSC,2,2,D
+2026-01-24,1. FC Magdeburg,Dynamo Dresden,1,2,A
+2026-01-25,FC Schalke 04,1. FC Kaiserslautern,2,2,D
+2026-01-25,SC Paderborn 07,Preuen Munster,2,1,H
+2026-01-25,SV Elversberg,VfL Bochum,1,1,D
+2026-01-30,1. FC Nurnberg,Preuen Munster,1,1,D
+2026-01-30,1. FC Magdeburg,Hannover 96,1,2,A
+2026-01-31,VfL Bochum,FC Schalke 04,2,0,H
+2026-01-31,Holstein Kiel,SpVgg Greuther Furth,1,2,A
+2026-01-31,Eintracht Braunschweig,Karlsruher SC,1,0,H
+2026-01-31,1. FC Kaiserslautern,SV Elversberg,1,3,A
+2026-02-01,Fortuna Dusseldorf,SC Paderborn 07,2,1,H
+2026-02-01,Hertha BSC,SV Darmstadt 98,2,2,D
+2026-02-01,Dynamo Dresden,Arminia Bielefeld,1,1,D
+2026-02-06,SpVgg Greuther Furth,1. FC Magdeburg,4,5,A
+2026-02-06,Preuen Munster,VfL Bochum,1,1,D
+2026-02-07,FC Schalke 04,Dynamo Dresden,2,2,D
+2026-02-07,SC Paderborn 07,1. FC Nurnberg,2,1,H
+2026-02-07,SV Elversberg,Hertha BSC,0,3,A
+2026-02-07,SV Darmstadt 98,1. FC Kaiserslautern,4,0,H
+2026-02-08,Hannover 96,Holstein Kiel,3,1,H
+2026-02-08,Arminia Bielefeld,Eintracht Braunschweig,3,2,H
+2026-02-08,Karlsruher SC,Fortuna Dusseldorf,1,1,D
+2026-02-13,Fortuna Dusseldorf,Preuen Munster,0,0,D
+2026-02-13,1. FC Nurnberg,Karlsruher SC,5,1,H
+2026-02-14,Hertha BSC,Hannover 96,2,3,A
+2026-02-14,Eintracht Braunschweig,SV Darmstadt 98,2,2,D
+2026-02-14,1. FC Kaiserslautern,SpVgg Greuther Furth,1,0,H
+2026-02-14,Dynamo Dresden,SV Elversberg,1,2,A
+2026-02-15,VfL Bochum,SC Paderborn 07,0,0,D
+2026-02-15,1. FC Magdeburg,Arminia Bielefeld,0,2,A
+2026-02-15,Holstein Kiel,FC Schalke 04,1,2,A
+2026-02-20,VfL Bochum,1. FC Nurnberg,1,1,D
+2026-02-20,SpVgg Greuther Furth,Arminia Bielefeld,2,1,H
+2026-02-21,SV Darmstadt 98,Fortuna Dusseldorf,2,1,H
+2026-02-21,Karlsruher SC,Holstein Kiel,3,1,H
+2026-02-21,SV Elversberg,Eintracht Braunschweig,3,1,H
+2026-02-21,FC Schalke 04,1. FC Magdeburg,5,3,H
+2026-02-22,Hannover 96,Dynamo Dresden,0,0,D
+2026-02-22,SC Paderborn 07,Hertha BSC,5,2,H
+2026-02-22,Preuen Munster,1. FC Kaiserslautern,2,3,A
+2026-02-27,Fortuna Dusseldorf,VfL Bochum,2,1,H
+2026-02-27,Dynamo Dresden,SV Darmstadt 98,3,1,H
+2026-02-28,Arminia Bielefeld,Hannover 96,0,1,A
+2026-02-28,Holstein Kiel,SV Elversberg,1,1,D
+2026-02-28,1. FC Kaiserslautern,SC Paderborn 07,1,2,A
+2026-02-28,SpVgg Greuther Furth,FC Schalke 04,1,1,D
+2026-03-01,Hertha BSC,1. FC Nurnberg,2,1,H
+2026-03-01,1. FC Magdeburg,Karlsruher SC,1,3,A
+2026-03-01,Eintracht Braunschweig,Preuen Munster,1,2,A
+2026-03-06,FC Schalke 04,Arminia Bielefeld,1,0,H
+2026-03-06,SV Elversberg,1. FC Magdeburg,1,0,H
+2026-03-07,1. FC Nurnberg,Fortuna Dusseldorf,0,1,A
+2026-03-07,SV Darmstadt 98,Holstein Kiel,2,0,H
+2026-03-07,SC Paderborn 07,Eintracht Braunschweig,1,1,D
+2026-03-07,VfL Bochum,1. FC Kaiserslautern,3,2,H
+2026-03-08,Hannover 96,SpVgg Greuther Furth,1,2,A
+2026-03-08,Karlsruher SC,Dynamo Dresden,3,3,D
+2026-03-08,Preuen Munster,Hertha BSC,1,2,A
+2026-03-13,SpVgg Greuther Furth,SV Elversberg,2,0,H
+2026-03-13,1. FC Magdeburg,SV Darmstadt 98,1,1,D
+2026-03-14,Arminia Bielefeld,SC Paderborn 07,2,2,D
+2026-03-14,Holstein Kiel,1. FC Nurnberg,2,3,A
+2026-03-14,Eintracht Braunschweig,Fortuna Dusseldorf,1,0,H
+2026-03-14,Hertha BSC,VfL Bochum,1,1,D
+2026-03-15,FC Schalke 04,Hannover 96,2,2,D
+2026-03-15,Dynamo Dresden,Preuen Munster,6,0,H
+2026-03-15,1. FC Kaiserslautern,Karlsruher SC,3,0,H
+2026-03-20,Hannover 96,Eintracht Braunschweig,1,0,H
+2026-03-20,Karlsruher SC,SpVgg Greuther Furth,3,1,H
+2026-03-21,1. FC Nurnberg,1. FC Kaiserslautern,3,0,H
+2026-03-21,SC Paderborn 07,Dynamo Dresden,2,1,H
+2026-03-21,SV Elversberg,Arminia Bielefeld,3,1,H
+2026-03-21,SV Darmstadt 98,FC Schalke 04,1,1,D
+2026-03-22,Fortuna Dusseldorf,Hertha BSC,2,5,A
+2026-03-22,VfL Bochum,Holstein Kiel,2,3,A
+2026-03-22,Preuen Munster,1. FC Magdeburg,1,3,A
+2026-04-04,1. FC Magdeburg,VfL Bochum,4,1,H
+2026-04-04,Arminia Bielefeld,SV Darmstadt 98,2,1,H
+2026-04-04,1. FC Kaiserslautern,Fortuna Dusseldorf,3,0,H
+2026-04-04,Dynamo Dresden,Hertha BSC,0,1,A
+2026-04-05,Hannover 96,SV Elversberg,1,1,D
+2026-04-05,FC Schalke 04,Karlsruher SC,1,0,H
+2026-04-05,SpVgg Greuther Furth,SC Paderborn 07,0,2,A
+2026-04-05,Holstein Kiel,Preuen Munster,0,0,D
+2026-04-05,Eintracht Braunschweig,1. FC Nurnberg,1,1,D
+2026-04-10,Fortuna Dusseldorf,Holstein Kiel,1,2,A
+2026-04-10,Karlsruher SC,Arminia Bielefeld,4,1,H
+2026-04-11,Hertha BSC,1. FC Kaiserslautern,0,1,A
+2026-04-11,1. FC Nurnberg,Dynamo Dresden,0,2,A
+2026-04-11,Preuen Munster,SpVgg Greuther Furth,0,0,D
+2026-04-11,SV Darmstadt 98,Hannover 96,0,2,A
+2026-04-12,VfL Bochum,Eintracht Braunschweig,4,1,H
+2026-04-12,SC Paderborn 07,1. FC Magdeburg,4,3,H
+2026-04-12,SV Elversberg,FC Schalke 04,1,2,A
+2026-04-17,Holstein Kiel,1. FC Kaiserslautern,3,0,H
+2026-04-17,SV Elversberg,Karlsruher SC,3,0,H
+2026-04-18,1. FC Magdeburg,Fortuna Dusseldorf,2,0,H
+2026-04-18,Dynamo Dresden,VfL Bochum,2,0,H
+2026-04-18,Arminia Bielefeld,1. FC Nurnberg,1,1,D
+2026-04-18,Hannover 96,SC Paderborn 07,1,1,D
+2026-04-19,FC Schalke 04,Preuen Munster,4,1,H
+2026-04-19,SpVgg Greuther Furth,SV Darmstadt 98,3,2,H
+2026-04-19,Eintracht Braunschweig,Hertha BSC,1,1,D
+2026-04-24,Fortuna Dusseldorf,Dynamo Dresden,3,1,H
+2026-04-24,1. FC Kaiserslautern,Eintracht Braunschweig,0,2,A
+2026-04-25,Hertha BSC,Holstein Kiel,0,1,A
+2026-04-25,Karlsruher SC,Hannover 96,1,3,A
+2026-04-25,Preuen Munster,Arminia Bielefeld,2,3,A
+2026-04-25,SV Darmstadt 98,SV Elversberg,3,3,D
+2026-04-26,1. FC Nurnberg,1. FC Magdeburg,1,0,H
+2026-04-26,VfL Bochum,SpVgg Greuther Furth,2,1,H
+2026-04-26,SC Paderborn 07,FC Schalke 04,2,3,A
+2026-05-02,Dynamo Dresden,1. FC Kaiserslautern,1,0,H
+2026-05-02,Arminia Bielefeld,VfL Bochum,1,1,D
+2026-05-02,Holstein Kiel,Eintracht Braunschweig,2,0,H
+2026-05-02,FC Schalke 04,Fortuna Dusseldorf,1,0,H
+2026-05-03,Hannover 96,Preuen Munster,3,3,D
+2026-05-03,SpVgg Greuther Furth,1. FC Nurnberg,1,1,D
+2026-05-03,1. FC Magdeburg,Hertha BSC,1,0,H
+2026-05-03,Karlsruher SC,SV Darmstadt 98,2,1,H
+2026-05-03,SV Elversberg,SC Paderborn 07,5,1,H
+2026-05-08,SC Paderborn 07,Karlsruher SC,2,2,D
+2026-05-08,1. FC Kaiserslautern,Arminia Bielefeld,2,0,H
+2026-05-09,VfL Bochum,Hannover 96,1,1,D
+2026-05-09,Holstein Kiel,1. FC Magdeburg,1,3,A
+2026-05-09,Eintracht Braunschweig,Dynamo Dresden,2,1,H
+2026-05-09,1. FC Nurnberg,FC Schalke 04,3,0,H
+2026-05-10,Fortuna Dusseldorf,SV Elversberg,3,1,H
+2026-05-10,Hertha BSC,SpVgg Greuther Furth,2,1,H
+2026-05-10,Preuen Munster,SV Darmstadt 98,1,1,D
+2026-05-17,Hannover 96,1. FC Nurnberg,3,3,D
+2026-05-17,FC Schalke 04,Eintracht Braunschweig,1,0,H
+2026-05-17,SpVgg Greuther Furth,Fortuna Dusseldorf,3,0,H
+2026-05-17,1. FC Magdeburg,1. FC Kaiserslautern,0,1,A
+2026-05-17,SV Darmstadt 98,SC Paderborn 07,0,2,A
+2026-05-17,Dynamo Dresden,Holstein Kiel,2,1,H
+2026-05-17,Arminia Bielefeld,Hertha BSC,6,1,H
+2026-05-17,Karlsruher SC,VfL Bochum,1,2,A
+2026-05-17,SV Elversberg,Preuen Munster,3,0,H
+2026-05-22,Rot-Wei Essen,SpVgg Greuther Furth,1,0,H
+2026-05-26,SpVgg Greuther Furth,Rot-Wei Essen,2,0,H

@@ -1,0 +1,243 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,PSH,PSD,PSA
+06/04/2015,Mjondalen,Viking,1,0,H,2.38,3.61,3.05
+06/04/2015,Rosenborg,Aalesund,5,0,H,1.47,4.82,7.28
+06/04/2015,Sandefjord,Bodo/Glimt,3,1,H,1.93,3.77,4.17
+06/04/2015,Stabaek,Haugesund,1,1,D,2.6,3.46,2.84
+06/04/2015,Tromso,Sarpsborg 08,0,1,A,1.74,3.98,5.07
+06/04/2015,Valerenga,Stromsgodset,3,1,H,2.55,3.59,2.81
+07/04/2015,Lillestrom,Start,1,1,D,1.64,4.09,5.86
+07/04/2015,Molde,Odd,1,2,A,1.63,4.23,5.75
+10/04/2015,Sarpsborg 08,Valerenga,1,1,D,2.48,3.5,2.97
+11/04/2015,Bodo/Glimt,Molde,1,3,A,5.68,4.19,1.64
+11/04/2015,Stromsgodset,Mjondalen,1,1,D,1.62,4.35,5.69
+12/04/2015,Aalesund,Lillestrom,1,1,D,2,3.69,3.93
+12/04/2015,Haugesund,Rosenborg,0,6,A,3.11,3.61,2.35
+12/04/2015,Odd,Stabaek,2,0,H,1.34,5.67,9.52
+12/04/2015,Start,Sandefjord,2,1,H,2.17,3.66,3.39
+12/04/2015,Viking,Tromso,3,1,H,1.91,3.59,4.48
+17/04/2015,Valerenga,Haugesund,2,0,H,1.92,3.89,4.05
+18/04/2015,Mjondalen,Start,1,1,D,2.02,3.66,3.91
+18/04/2015,Rosenborg,Stromsgodset,1,1,D,1.45,4.9,7.67
+19/04/2015,Bodo/Glimt,Odd,2,4,A,3.19,3.64,2.29
+19/04/2015,Molde,Aalesund,5,1,H,1.29,6.28,10.88
+19/04/2015,Sandefjord,Sarpsborg 08,1,0,H,2.23,3.51,3.44
+19/04/2015,Stabaek,Viking,1,0,H,2.74,3.56,2.64
+19/04/2015,Tromso,Lillestrom,1,1,D,1.93,3.6,4.36
+24/04/2015,Start,Valerenga,2,3,A,2.47,3.66,2.88
+25/04/2015,Odd,Mjondalen,2,2,D,1.38,5.32,9.13
+25/04/2015,Viking,Rosenborg,1,4,A,3.78,3.72,2.03
+26/04/2015,Aalesund,Tromso,0,2,A,2.13,3.61,3.58
+26/04/2015,Haugesund,Molde,0,0,D,4.85,3.86,1.79
+26/04/2015,Lillestrom,Stabaek,0,2,A,2.03,3.77,3.75
+26/04/2015,Sarpsborg 08,Bodo/Glimt,2,2,D,1.75,3.96,4.94
+26/04/2015,Stromsgodset,Sandefjord,3,2,H,1.53,4.53,6.63
+29/04/2015,Molde,Stromsgodset,3,1,H,1.57,4.56,5.98
+29/04/2015,Sarpsborg 08,Odd,2,0,H,3.11,3.55,2.37
+30/04/2015,Bodo/Glimt,Haugesund,1,2,A,2.37,3.61,3.07
+30/04/2015,Sandefjord,Viking,1,2,A,2.57,3.62,2.78
+30/04/2015,Tromso,Stabaek,0,2,A,1.91,3.74,4.3
+30/04/2015,Valerenga,Aalesund,1,2,A,1.52,4.65,6.56
+30/04/2015,Mjondalen,Lillestrom,1,4,A,2.34,3.42,3.29
+30/04/2015,Rosenborg,Start,3,2,H,1.24,7.61,11.77
+02/05/2015,Stromsgodset,Sarpsborg 08,1,1,D,1.59,4.45,5.83
+03/05/2015,Aalesund,Bodo/Glimt,2,0,H,1.84,4,4.32
+03/05/2015,Start,Tromso,3,1,H,2.11,3.52,3.74
+03/05/2015,Haugesund,Sandefjord,2,1,H,1.83,3.91,4.49
+03/05/2015,Lillestrom,Valerenga,1,1,D,2.67,3.59,2.69
+03/05/2015,Stabaek,Mjondalen,1,0,H,1.85,3.74,4.52
+03/05/2015,Odd,Rosenborg,1,2,A,3.36,3.69,2.19
+04/05/2015,Viking,Molde,2,1,H,3.9,3.72,2
+09/05/2015,Mjondalen,Tromso,4,3,H,2.49,3.36,3.06
+09/05/2015,Rosenborg,Lillestrom,3,0,H,1.23,7.48,13.25
+09/05/2015,Valerenga,Stabaek,0,2,A,1.82,4.03,4.41
+10/05/2015,Sandefjord,Aalesund,1,3,A,2.3,3.51,3.26
+10/05/2015,Bodo/Glimt,Stromsgodset,3,5,A,3.61,3.82,2.06
+10/05/2015,Sarpsborg 08,Haugesund,3,0,H,2.03,3.61,3.92
+10/05/2015,Viking,Odd,1,1,D,2.22,3.74,3.24
+10/05/2015,Molde,Start,4,0,H,1.24,6.98,13.2
+12/05/2015,Mjondalen,Rosenborg,3,2,H,6.47,4.73,1.52
+12/05/2015,Tromso,Valerenga,4,5,A,2.15,3.52,3.62
+13/05/2015,Aalesund,Sarpsborg 08,2,2,D,2.08,3.72,3.62
+13/05/2015,Haugesund,Viking,0,2,A,2.85,3.44,2.6
+13/05/2015,Lillestrom,Molde,2,1,H,5.14,4.07,1.71
+13/05/2015,Odd,Stromsgodset,2,0,H,2.17,3.84,3.3
+13/05/2015,Stabaek,Sandefjord,4,0,H,1.75,4.12,4.76
+13/05/2015,Start,Bodo/Glimt,1,1,D,1.81,4.21,4.27
+16/05/2015,Bodo/Glimt,Tromso,1,0,H,2.67,3.45,2.77
+16/05/2015,Valerenga,Mjondalen,4,2,H,1.73,4.04,5.03
+16/05/2015,Molde,Stabaek,3,3,D,1.37,5.5,8.52
+16/05/2015,Odd,Haugesund,0,0,D,1.45,4.95,7.53
+16/05/2015,Rosenborg,Sandefjord,5,1,H,1.15,9.7,20.5
+16/05/2015,Sarpsborg 08,Lillestrom,1,3,A,1.94,3.7,4.24
+16/05/2015,Stromsgodset,Aalesund,3,1,H,1.49,4.79,6.9
+16/05/2015,Viking,Start,1,0,H,1.36,5.72,8.91
+22/05/2015,Mjondalen,Molde,0,3,A,3.96,4.09,1.89
+24/05/2015,Haugesund,Stromsgodset,4,0,H,3.07,3.69,2.33
+25/05/2015,Lillestrom,Bodo/Glimt,3,0,H,1.74,4.16,4.75
+25/05/2015,Tromso,Odd,2,2,D,3.19,3.49,2.36
+25/05/2015,Aalesund,Viking,0,4,A,2.75,3.75,2.55
+25/05/2015,Stabaek,Rosenborg,2,3,A,4.2,4.17,1.83
+25/05/2015,Sandefjord,Valerenga,0,3,A,3.35,3.78,2.17
+25/05/2015,Start,Sarpsborg 08,1,2,A,2.53,3.51,2.89
+29/05/2015,Odd,Aalesund,1,1,D,1.53,5.04,5.78
+30/05/2015,Haugesund,Start,0,2,A,1.77,3.9,4.94
+30/05/2015,Molde,Sandefjord,6,1,H,1.19,8.08,15.64
+31/05/2015,Stromsgodset,Lillestrom,2,0,H,1.71,4.21,4.94
+31/05/2015,Bodo/Glimt,Mjondalen,5,1,H,2.05,3.76,3.68
+31/05/2015,Sarpsborg 08,Stabaek,0,1,A,2.17,3.65,3.48
+31/05/2015,Viking,Valerenga,3,4,A,1.94,3.78,4.06
+31/05/2015,Rosenborg,Tromso,1,1,D,1.25,6.45,13.85
+05/06/2015,Tromso,Molde,2,0,H,5.06,4.12,1.71
+06/06/2015,Valerenga,Rosenborg,1,2,A,3.58,3.98,2.03
+06/06/2015,Sandefjord,Odd,0,1,A,4.65,4.05,1.78
+07/06/2015,Aalesund,Haugesund,2,1,H,2.04,3.56,3.93
+07/06/2015,Mjondalen,Sarpsborg 08,1,1,D,2.66,3.5,2.75
+07/06/2015,Stabaek,Bodo/Glimt,3,2,H,1.59,4.59,5.58
+07/06/2015,Start,Stromsgodset,0,1,A,3.23,3.79,2.21
+07/06/2015,Lillestrom,Viking,2,1,H,2.62,3.48,2.79
+19/06/2015,Odd,Start,3,3,D,1.35,5.59,9.64
+20/06/2015,Sandefjord,Lillestrom,0,0,D,3.28,3.57,2.27
+20/06/2015,Molde,Valerenga,0,0,D,1.43,5.2,7.6
+21/06/2015,Bodo/Glimt,Viking,0,3,A,3.38,3.83,2.14
+21/06/2015,Aalesund,Stabaek,1,1,D,2.49,3.87,2.74
+21/06/2015,Haugesund,Mjondalen,1,1,D,1.78,3.95,4.77
+21/06/2015,Stromsgodset,Tromso,2,1,H,1.53,4.7,6.22
+21/06/2015,Sarpsborg 08,Rosenborg,0,2,A,5.52,4.16,1.66
+27/06/2015,Start,Aalesund,3,1,H,2.25,3.69,3.23
+27/06/2015,Rosenborg,Molde,1,1,D,1.9,3.98,4.03
+27/06/2015,Stabaek,Stromsgodset,3,2,H,2.31,3.64,3.15
+28/06/2015,Viking,Sarpsborg 08,3,1,H,1.52,4.64,6.58
+28/06/2015,Lillestrom,Odd,1,1,D,2.72,3.63,2.62
+28/06/2015,Mjondalen,Sandefjord,2,2,D,1.89,4.05,4.02
+28/06/2015,Tromso,Haugesund,2,0,H,2,3.65,4
+28/06/2015,Valerenga,Bodo/Glimt,1,2,A,1.48,5.05,6.57
+03/07/2015,Sarpsborg 08,Molde,1,4,A,4.34,3.97,1.84
+04/07/2015,Start,Stabaek,4,1,H,3.11,3.71,2.31
+04/07/2015,Haugesund,Lillestrom,3,3,D,2.28,3.61,3.24
+05/07/2015,Stromsgodset,Viking,4,1,H,1.96,3.88,3.88
+05/07/2015,Aalesund,Mjondalen,4,2,H,2.32,3.61,3.15
+05/07/2015,Odd,Valerenga,1,2,A,1.72,4.25,4.8
+05/07/2015,Sandefjord,Tromso,1,1,D,2.83,3.59,2.55
+05/07/2015,Bodo/Glimt,Rosenborg,1,0,H,6.51,4.81,1.51
+10/07/2015,Molde,Haugesund,0,1,A,1.3,5.83,11.49
+11/07/2015,Viking,Aalesund,4,1,H,1.63,4.42,5.44
+11/07/2015,Valerenga,Sandefjord,2,0,H,1.48,4.9,6.95
+12/07/2015,Stabaek,Sarpsborg 08,0,0,D,1.63,4.3,5.58
+12/07/2015,Mjondalen,Bodo/Glimt,1,2,A,1.9,4.01,4
+12/07/2015,Rosenborg,Odd,3,0,H,1.47,5,6.95
+12/07/2015,Tromso,Start,2,1,H,1.81,4.02,4.45
+12/07/2015,Lillestrom,Stromsgodset,1,2,A,2.79,3.42,2.67
+18/07/2015,Molde,Bodo/Glimt,1,2,A,1.22,7.85,12.5
+24/07/2015,Start,Viking,0,3,A,2.75,3.63,2.59
+25/07/2015,Haugesund,Stabaek,2,2,D,2.55,3.62,2.8
+26/07/2015,Bodo/Glimt,Aalesund,1,0,H,2.16,3.75,3.37
+26/07/2015,Odd,Tromso,3,2,H,1.6,4.23,6.06
+26/07/2015,Sarpsborg 08,Mjondalen,2,2,D,2.02,3.69,3.85
+26/07/2015,Sandefjord,Rosenborg,1,2,A,8.51,5.83,1.36
+27/07/2015,Valerenga,Lillestrom,2,0,H,1.87,3.92,4.26
+31/07/2015,Viking,Haugesund,0,1,A,1.67,4.22,5.26
+01/08/2015,Stabaek,Valerenga,2,0,H,2.2,3.75,3.3
+02/08/2015,Mjondalen,Odd,3,6,A,3.18,3.76,2.25
+02/08/2015,Aalesund,Start,2,0,H,1.99,3.78,3.89
+02/08/2015,Lillestrom,Sandefjord,3,2,H,1.68,4.21,5.17
+02/08/2015,Tromso,Stromsgodset,0,6,A,2.65,3.62,2.69
+02/08/2015,Rosenborg,Sarpsborg 08,3,2,H,1.2,7.66,15.28
+07/08/2015,Sandefjord,Mjondalen,2,1,H,2.41,3.72,2.93
+07/08/2015,Valerenga,Tromso,1,0,H,1.63,4.42,5.35
+08/08/2015,Sarpsborg 08,Viking,0,2,A,2.8,3.61,2.56
+09/08/2015,Bodo/Glimt,Start,5,1,H,1.86,4.04,4.15
+09/08/2015,Haugesund,Aalesund,3,1,H,2.21,3.69,3.31
+09/08/2015,Lillestrom,Rosenborg,0,5,A,6.31,4.71,1.53
+09/08/2015,Stromsgodset,Stabaek,0,2,A,1.91,3.9,4.08
+09/08/2015,Odd,Molde,2,2,D,3.16,3.63,2.31
+14/08/2015,Aalesund,Stromsgodset,2,1,H,3.01,3.77,2.34
+15/08/2015,Molde,Sarpsborg 08,0,0,D,1.39,5.56,7.98
+15/08/2015,Viking,Bodo/Glimt,2,1,H,1.54,4.76,6.03
+16/08/2015,Start,Odd,0,4,A,3.71,3.84,2.02
+16/08/2015,Mjondalen,Haugesund,2,1,H,2.53,3.75,2.75
+16/08/2015,Rosenborg,Valerenga,2,0,H,1.33,6.05,9.5
+16/08/2015,Tromso,Sandefjord,1,1,D,1.61,4.36,5.76
+16/08/2015,Stabaek,Lillestrom,3,2,H,1.47,4.86,7.08
+21/08/2015,Lillestrom,Tromso,1,0,H,2,3.85,3.78
+22/08/2015,Sandefjord,Stabaek,2,4,A,4.95,4.14,1.72
+23/08/2015,Odd,Viking,1,0,H,2.18,3.81,3.29
+23/08/2015,Valerenga,Molde,0,1,A,2.54,3.67,2.78
+23/08/2015,Haugesund,Bodo/Glimt,2,4,A,2.08,3.8,3.55
+23/08/2015,Sarpsborg 08,Aalesund,3,1,H,2.02,3.66,3.89
+23/08/2015,Stromsgodset,Start,2,1,H,1.4,5.2,8.24
+23/08/2015,Rosenborg,Mjondalen,1,0,H,1.18,8.55,15.7
+28/08/2015,Aalesund,Valerenga,2,0,H,2.63,3.53,2.77
+29/08/2015,Viking,Sandefjord,2,0,H,1.33,5.95,9.39
+30/08/2015,Molde,Lillestrom,2,2,D,1.44,4.98,7.83
+30/08/2015,Stabaek,Odd,1,2,A,2,3.81,3.8
+30/08/2015,Bodo/Glimt,Sarpsborg 08,3,1,H,2.07,3.91,3.49
+30/08/2015,Mjondalen,Stromsgodset,2,4,A,3.75,3.97,1.98
+30/08/2015,Start,Haugesund,1,3,A,2.41,3.54,3.05
+30/08/2015,Tromso,Rosenborg,1,1,D,4.71,3.83,1.81
+11/09/2015,Stromsgodset,Haugesund,5,0,H,1.41,5.38,7.53
+12/09/2015,Sandefjord,Molde,2,4,A,6.2,4.65,1.54
+13/09/2015,Tromso,Mjondalen,0,0,D,1.79,3.8,4.89
+13/09/2015,Lillestrom,Aalesund,3,1,H,2,3.71,3.91
+13/09/2015,Odd,Bodo/Glimt,2,1,H,1.42,5.3,7.65
+13/09/2015,Rosenborg,Stabaek,1,0,H,1.4,5.41,7.79
+13/09/2015,Sarpsborg 08,Start,3,1,H,1.67,4.37,5.05
+13/09/2015,Valerenga,Viking,2,4,A,2.3,3.61,3.2
+18/09/2015,Viking,Stromsgodset,1,1,D,2.41,3.87,2.84
+19/09/2015,Start,Lillestrom,0,0,D,2.4,3.63,3
+19/09/2015,Stabaek,Tromso,2,1,H,1.72,3.92,5.3
+20/09/2015,Aalesund,Odd,1,3,A,3.23,3.77,2.22
+20/09/2015,Bodo/Glimt,Sandefjord,2,1,H,1.64,4.44,5.25
+20/09/2015,Haugesund,Sarpsborg 08,1,1,D,2.39,3.64,3.01
+20/09/2015,Molde,Rosenborg,1,0,H,2.31,3.78,3.05
+20/09/2015,Mjondalen,Valerenga,0,1,A,2.78,3.6,2.58
+23/09/2015,Stromsgodset,Molde,1,0,H,2.31,3.71,3.11
+25/09/2015,Valerenga,Start,1,1,D,1.59,4.41,5.91
+26/09/2015,Lillestrom,Mjondalen,3,0,H,2.16,3.57,3.54
+26/09/2015,Stromsgodset,Bodo/Glimt,3,1,H,1.38,5.79,7.71
+27/09/2015,Odd,Sarpsborg 08,1,1,D,1.51,4.6,6.85
+27/09/2015,Rosenborg,Viking,2,0,H,1.42,5.17,7.95
+27/09/2015,Sandefjord,Haugesund,0,1,A,2.52,3.7,2.79
+27/09/2015,Tromso,Aalesund,1,1,D,1.81,3.93,4.58
+27/09/2015,Stabaek,Molde,1,0,H,2.6,3.6,2.76
+02/10/2015,Bodo/Glimt,Valerenga,1,1,D,2.44,3.77,2.85
+03/10/2015,Sarpsborg 08,Stromsgodset,1,6,A,3.91,3.92,1.94
+03/10/2015,Mjondalen,Stabaek,1,4,A,4.17,3.89,1.89
+04/10/2015,Haugesund,Odd,1,2,A,4.57,4.1,1.78
+04/10/2015,Aalesund,Sandefjord,2,1,H,1.56,4.55,6.15
+04/10/2015,Molde,Tromso,4,0,H,1.53,4.62,6.45
+04/10/2015,Viking,Lillestrom,1,0,H,1.54,4.62,6.3
+04/10/2015,Start,Rosenborg,0,4,A,6.79,4.86,1.49
+16/10/2015,Stromsgodset,Odd,2,1,H,1.92,3.97,3.98
+17/10/2015,Sandefjord,Start,4,1,H,2.84,3.75,2.47
+17/10/2015,Stabaek,Aalesund,1,4,A,1.43,5.05,7.91
+18/10/2015,Molde,Mjondalen,3,1,H,1.31,5.88,10.83
+18/10/2015,Lillestrom,Haugesund,2,0,H,1.72,4.11,4.95
+18/10/2015,Rosenborg,Bodo/Glimt,1,1,D,1.22,7.75,12.5
+18/10/2015,Valerenga,Sarpsborg 08,3,1,H,1.72,4.14,4.95
+18/10/2015,Tromso,Viking,3,1,H,2.8,3.69,2.52
+23/10/2015,Start,Mjondalen,1,1,D,2.44,3.49,3.04
+24/10/2015,Sarpsborg 08,Tromso,1,0,H,2.4,3.45,3.12
+24/10/2015,Haugesund,Valerenga,0,1,A,3.11,3.74,2.29
+25/10/2015,Aalesund,Molde,1,2,A,4.67,4.31,1.72
+25/10/2015,Bodo/Glimt,Lillestrom,0,3,A,2.16,3.68,3.44
+25/10/2015,Odd,Sandefjord,4,3,H,1.24,7,12.75
+25/10/2015,Stromsgodset,Rosenborg,3,3,D,2.08,3.91,3.46
+25/10/2015,Viking,Stabaek,2,1,H,2.21,3.8,3.23
+01/11/2015,Lillestrom,Sarpsborg 08,3,1,H,1.83,3.91,4.5
+01/11/2015,Mjondalen,Aalesund,1,2,A,1.88,4.09,4.05
+01/11/2015,Molde,Viking,4,1,H,1.66,4.52,5
+01/11/2015,Rosenborg,Haugesund,4,3,H,1.22,7.8,12.75
+01/11/2015,Sandefjord,Stromsgodset,1,2,A,8.68,5.5,1.37
+01/11/2015,Stabaek,Start,3,2,H,1.48,4.97,6.77
+01/11/2015,Tromso,Bodo/Glimt,3,1,H,1.55,4.59,6.17
+01/11/2015,Valerenga,Odd,2,2,D,2.84,3.87,2.41
+08/11/2015,Aalesund,Rosenborg,0,1,A,2.98,4.16,2.23
+08/11/2015,Bodo/Glimt,Stabaek,6,1,H,3.67,3.89,2.02
+08/11/2015,Haugesund,Tromso,0,1,A,2.03,3.73,3.75
+08/11/2015,Odd,Lillestrom,5,0,H,1.39,5.42,8.11
+08/11/2015,Sarpsborg 08,Sandefjord,2,1,H,1.58,4.52,5.85
+08/11/2015,Start,Molde,0,3,A,4.16,4.51,1.78
+08/11/2015,Stromsgodset,Valerenga,2,2,D,1.39,5.82,7.57
+08/11/2015,Viking,Mjondalen,3,1,H,1.59,4.95,5.12
+21/11/2015,Jerv,Start,1,1,D,2.1,3.47,3.83
+25/11/2015,Start,Jerv,3,1,H,2.65,3.38,2.84

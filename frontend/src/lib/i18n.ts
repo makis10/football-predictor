@@ -210,8 +210,19 @@ const en: Table = {
 
   // ── Match card / prediction bars ──
   "matchCard.insufficient": "ℹ️ Insufficient data — unknown teams",
+  "matchCard.insufficientNamed": "ℹ️ No history for {teams} — no prediction",
   "pred.ggLabel": "GG (both teams score)",
   "pred.ngLabel": "NG (at least one doesn't score)",
+  "matchCard.pickHome": "Home",
+  "matchCard.pickDraw": "Draw",
+  "matchCard.pickAway": "Away",
+  "topPicks.heading": "⚡ Top AI Picks",
+  // Says what the ranking actually does. It sorts by model probability, while
+  // each card also prints its confidence tier — so the old "highest-confidence"
+  // subtitle sat directly above cards reading "LOW CONFIDENCE".
+  "topPicks.subtitle": "highest model probability",
+  "matchCard.pickTitle":
+    "Our pick: the outcome the model rates most likely, with its probability. It is not a betting tip — over {n} settled matches picks like this came in {hit} of the time.",
 
   // ── Recent result card ──
   "recent.loadFail": "Failed to load analysis.",
@@ -588,8 +599,16 @@ const el: Table = {
 
   // ── Match card / prediction bars ──
   "matchCard.insufficient": "ℹ️ Ανεπαρκή δεδομένα — άγνωστες ομάδες",
+  "matchCard.insufficientNamed": "ℹ️ Δεν έχουμε ιστορικό για {teams} — χωρίς πρόβλεψη",
   "pred.ggLabel": "GG (και οι δύο σκοράρουν)",
   "pred.ngLabel": "NG (τουλάχιστον μία δεν σκοράρει)",
+  "matchCard.pickHome": "Γηπεδούχος",
+  "matchCard.pickDraw": "Ισοπαλία",
+  "matchCard.pickAway": "Φιλοξενούμενη",
+  "topPicks.heading": "⚡ Κορυφαίες προτάσεις",
+  "topPicks.subtitle": "μεγαλύτερη πιθανότητα μοντέλου",
+  "matchCard.pickTitle":
+    "Η πρότασή μας: το αποτέλεσμα που το μοντέλο θεωρεί πιθανότερο, με την πιθανότητά του. Δεν είναι στοιχηματική συμβουλή — σε {n} αγώνες που έχουν κριθεί, προτάσεις σαν αυτή ήρθαν στο {hit} των περιπτώσεων.",
 
   // ── Recent result card ──
   "recent.loadFail": "Αποτυχία φόρτωσης ανάλυσης.",

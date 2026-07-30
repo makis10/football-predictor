@@ -1,0 +1,115 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2019-08-02,Beerschot VA,Lokeren,1,0,H
+2019-08-03,OH Leuven,Excelsior Virton,1,0,H
+2019-08-03,Lommel United,KVC Westerlo,0,2,A
+2019-08-04,Union St. Gilloise,Roeselare,3,0,H
+2019-08-09,KVC Westerlo,OH Leuven,1,0,H
+2019-08-10,Roeselare,Beerschot VA,1,1,D
+2019-08-10,Excelsior Virton,Union St. Gilloise,0,1,A
+2019-08-11,Lokeren,Lommel United,0,0,D
+2019-08-16,OH Leuven,Beerschot VA,3,0,H
+2019-08-17,Lommel United,Excelsior Virton,0,3,A
+2019-08-17,KVC Westerlo,Roeselare,4,1,H
+2019-08-18,Union St. Gilloise,Lokeren,3,1,H
+2019-08-30,Beerschot VA,Union St. Gilloise,1,0,H
+2019-08-31,Lokeren,OH Leuven,0,2,A
+2019-08-31,Roeselare,Lommel United,1,1,D
+2019-09-01,Excelsior Virton,KVC Westerlo,1,0,H
+2019-09-06,Lommel United,Union St. Gilloise,2,2,D
+2019-09-07,KVC Westerlo,Beerschot VA,2,0,H
+2019-09-07,OH Leuven,Roeselare,4,0,H
+2019-09-08,Excelsior Virton,Lokeren,4,0,H
+2019-09-13,Lokeren,KVC Westerlo,1,1,D
+2019-09-14,Union St. Gilloise,OH Leuven,1,1,D
+2019-09-14,Beerschot VA,Lommel United,2,0,H
+2019-09-15,Roeselare,Excelsior Virton,0,5,A
+2019-09-20,Lokeren,Roeselare,2,0,H
+2019-09-21,Excelsior Virton,Beerschot VA,3,0,H
+2019-09-21,KVC Westerlo,Union St. Gilloise,1,2,A
+2019-09-22,OH Leuven,Lommel United,1,0,H
+2019-09-27,Roeselare,KVC Westerlo,0,2,A
+2019-09-28,Union St. Gilloise,Excelsior Virton,2,1,H
+2019-09-28,Beerschot VA,OH Leuven,1,2,A
+2019-09-29,Lommel United,Lokeren,1,1,D
+2019-10-04,Lommel United,Roeselare,2,1,H
+2019-10-05,KVC Westerlo,Excelsior Virton,0,1,A
+2019-10-05,OH Leuven,Lokeren,2,3,A
+2019-10-06,Union St. Gilloise,Beerschot VA,1,1,D
+2019-10-11,Beerschot VA,KVC Westerlo,1,2,A
+2019-10-12,Roeselare,OH Leuven,3,1,H
+2019-10-12,Excelsior Virton,Lommel United,1,0,H
+2019-10-13,Lokeren,Union St. Gilloise,1,1,D
+2019-10-18,KVC Westerlo,Lokeren,2,0,H
+2019-10-19,Roeselare,Union St. Gilloise,3,0,H
+2019-10-19,Beerschot VA,Excelsior Virton,2,1,H
+2019-10-20,Lommel United,OH Leuven,0,2,A
+2019-10-25,OH Leuven,KVC Westerlo,2,1,H
+2019-10-26,Lokeren,Beerschot VA,2,1,H
+2019-10-26,Union St. Gilloise,Lommel United,2,1,H
+2019-10-27,Excelsior Virton,Roeselare,3,2,H
+2019-11-02,KVC Westerlo,Lommel United,1,1,D
+2019-11-02,Beerschot VA,Roeselare,2,1,H
+2019-11-03,Lokeren,Excelsior Virton,1,3,A
+2019-11-08,Lommel United,Beerschot VA,1,0,H
+2019-11-08,Roeselare,Lokeren,2,1,H
+2019-11-08,Union St. Gilloise,KVC Westerlo,0,2,A
+2019-11-08,Excelsior Virton,OH Leuven,0,1,A
+2019-11-15,OH Leuven,Beerschot VA,0,3,A
+2019-11-16,Lokeren,Lommel United,0,1,A
+2019-11-17,Union St. Gilloise,Excelsior Virton,2,0,H
+2019-11-17,Roeselare,KVC Westerlo,3,5,A
+2019-11-22,KVC Westerlo,OH Leuven,1,2,A
+2019-11-23,Lommel United,Union St. Gilloise,0,0,D
+2019-11-23,Beerschot VA,Lokeren,1,1,D
+2019-11-24,Excelsior Virton,Roeselare,1,1,D
+2019-11-29,OH Leuven,Lokeren,2,1,H
+2019-11-30,Excelsior Virton,KVC Westerlo,1,1,D
+2019-11-30,Roeselare,Lommel United,3,1,H
+2019-12-01,Union St. Gilloise,Beerschot VA,0,2,A
+2019-12-06,Lommel United,OH Leuven,3,2,H
+2019-12-07,Beerschot VA,Excelsior Virton,1,1,D
+2019-12-07,Lokeren,Roeselare,1,3,A
+2019-12-08,KVC Westerlo,Union St. Gilloise,0,3,A
+2019-12-13,Roeselare,OH Leuven,2,2,D
+2019-12-14,Excelsior Virton,Lommel United,3,1,H
+2019-12-14,KVC Westerlo,Beerschot VA,0,1,A
+2019-12-15,Union St. Gilloise,Lokeren,1,1,D
+2019-12-20,Lommel United,Beerschot VA,1,0,H
+2019-12-21,Roeselare,Union St. Gilloise,1,1,D
+2019-12-21,OH Leuven,Excelsior Virton,0,2,A
+2019-12-22,Lokeren,KVC Westerlo,0,4,A
+2020-01-10,Beerschot VA,Roeselare,1,1,D
+2020-01-11,KVC Westerlo,Lommel United,2,1,H
+2020-01-11,Union St. Gilloise,OH Leuven,2,3,A
+2020-01-12,Excelsior Virton,Lokeren,1,2,A
+2020-01-17,Lommel United,Lokeren,1,0,H
+2020-01-18,Roeselare,Excelsior Virton,0,2,A
+2020-01-18,Beerschot VA,Union St. Gilloise,1,1,D
+2020-01-19,OH Leuven,KVC Westerlo,1,3,A
+2020-01-24,Lokeren,OH Leuven,1,1,D
+2020-01-25,KVC Westerlo,Roeselare,1,1,D
+2020-01-26,Union St. Gilloise,Lommel United,2,2,D
+2020-01-31,Beerschot VA,KVC Westerlo,1,0,H
+2020-02-01,Lokeren,Union St. Gilloise,0,2,A
+2020-02-01,OH Leuven,Roeselare,2,1,H
+2020-02-02,Lommel United,Excelsior Virton,0,0,D
+2020-02-07,Roeselare,Beerschot VA,1,1,D
+2020-02-08,OH Leuven,Lommel United,3,0,H
+2020-02-08,Excelsior Virton,Union St. Gilloise,0,0,D
+2020-02-11,OH Leuven,Union St. Gilloise,0,0,D
+2020-02-12,KVC Westerlo,Lokeren,3,2,H
+2020-02-14,Beerschot VA,OH Leuven,2,1,H
+2020-02-15,Union St. Gilloise,Roeselare,3,3,D
+2020-02-15,Lommel United,KVC Westerlo,0,1,A
+2020-02-16,Lokeren,Excelsior Virton,0,2,A
+2020-02-21,OH Leuven,Union St. Gilloise,3,5,A
+2020-02-22,KVC Westerlo,Excelsior Virton,2,1,H
+2020-02-22,Roeselare,Lokeren,2,2,D
+2020-02-23,Beerschot VA,Lommel United,2,1,H
+2020-02-28,Lommel United,Roeselare,0,0,D
+2020-02-28,Lokeren,Beerschot VA,0,2,A
+2020-02-28,Union St. Gilloise,KVC Westerlo,3,1,H
+2020-02-28,Excelsior Virton,OH Leuven,4,1,H
+2020-03-08,Beerschot VA,OH Leuven,1,0,H
+2020-07-26,Excelsior Virton,Beerschot VA,1,0,H
+2020-08-02,OH Leuven,Beerschot VA,1,4,A

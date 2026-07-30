@@ -1,0 +1,181 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2017-07-14,Inter Zapresic,HNK Cibalia,3,1,H
+2017-07-15,Dinamo Zagreb,Istra 1961,2,0,H
+2017-07-15,HNK Rijeka,NK Slaven Belupo,2,0,H
+2017-07-16,NK Lokomotiva Zagreb,HNK Hajduk Split,1,3,A
+2017-07-16,NK Osijek,Rudes,1,1,D
+2017-07-21,Dinamo Zagreb,HNK Cibalia,4,0,H
+2017-07-22,NK Slaven Belupo,NK Lokomotiva Zagreb,1,0,H
+2017-07-22,HNK Rijeka,Rudes,4,1,H
+2017-07-23,Inter Zapresic,HNK Hajduk Split,2,2,D
+2017-07-23,Istra 1961,NK Osijek,1,1,D
+2017-07-28,NK Lokomotiva Zagreb,Rudes,1,1,D
+2017-07-29,Inter Zapresic,NK Slaven Belupo,0,1,A
+2017-07-29,HNK Rijeka,Istra 1961,2,0,H
+2017-07-30,HNK Cibalia,HNK Hajduk Split,1,2,A
+2017-07-30,NK Osijek,Dinamo Zagreb,1,1,D
+2017-08-04,Istra 1961,NK Lokomotiva Zagreb,1,2,A
+2017-08-05,Rudes,Inter Zapresic,0,2,A
+2017-08-05,NK Slaven Belupo,HNK Cibalia,2,1,H
+2017-08-06,Dinamo Zagreb,HNK Hajduk Split,3,1,H
+2017-08-07,NK Osijek,HNK Rijeka,1,0,H
+2017-08-11,HNK Rijeka,Dinamo Zagreb,0,2,A
+2017-08-11,HNK Hajduk Split,NK Slaven Belupo,1,0,H
+2017-08-12,NK Lokomotiva Zagreb,NK Osijek,2,3,A
+2017-08-12,Inter Zapresic,Istra 1961,2,2,D
+2017-08-13,HNK Cibalia,Rudes,3,0,H
+2017-08-18,Istra 1961,HNK Cibalia,0,1,A
+2017-08-19,HNK Rijeka,NK Lokomotiva Zagreb,2,1,H
+2017-08-20,Rudes,HNK Hajduk Split,0,4,A
+2017-08-20,NK Osijek,Inter Zapresic,3,0,H
+2017-08-20,Dinamo Zagreb,NK Slaven Belupo,2,0,H
+2017-08-26,NK Slaven Belupo,Rudes,2,2,D
+2017-08-26,Inter Zapresic,HNK Rijeka,1,3,A
+2017-08-27,NK Lokomotiva Zagreb,Dinamo Zagreb,0,3,A
+2017-08-27,HNK Hajduk Split,Istra 1961,2,0,H
+2017-08-27,HNK Cibalia,NK Osijek,2,1,H
+2017-09-08,Istra 1961,NK Slaven Belupo,1,0,H
+2017-09-09,HNK Rijeka,HNK Cibalia,7,0,H
+2017-09-09,NK Osijek,HNK Hajduk Split,2,1,H
+2017-09-10,NK Lokomotiva Zagreb,Inter Zapresic,3,0,H
+2017-09-10,Dinamo Zagreb,Rudes,3,2,H
+2017-09-15,HNK Cibalia,NK Lokomotiva Zagreb,0,1,A
+2017-09-16,NK Slaven Belupo,NK Osijek,1,1,D
+2017-09-16,Inter Zapresic,Dinamo Zagreb,1,3,A
+2017-09-17,HNK Hajduk Split,HNK Rijeka,0,2,A
+2017-09-17,Rudes,Istra 1961,1,0,H
+2017-09-23,HNK Cibalia,Inter Zapresic,1,2,A
+2017-09-23,NK Slaven Belupo,HNK Rijeka,1,1,D
+2017-09-24,Istra 1961,Dinamo Zagreb,0,0,D
+2017-09-24,HNK Hajduk Split,NK Lokomotiva Zagreb,2,2,D
+2017-09-25,Rudes,NK Osijek,1,1,D
+2017-09-29,NK Lokomotiva Zagreb,NK Slaven Belupo,0,0,D
+2017-09-30,HNK Cibalia,Dinamo Zagreb,2,5,A
+2017-09-30,HNK Hajduk Split,Inter Zapresic,2,0,H
+2017-10-01,NK Osijek,Istra 1961,2,1,H
+2017-10-01,Rudes,HNK Rijeka,1,5,A
+2017-10-13,Rudes,NK Lokomotiva Zagreb,0,1,A
+2017-10-14,Istra 1961,HNK Rijeka,1,0,H
+2017-10-14,Dinamo Zagreb,NK Osijek,1,1,D
+2017-10-15,NK Slaven Belupo,Inter Zapresic,1,2,A
+2017-10-15,HNK Hajduk Split,HNK Cibalia,2,1,H
+2017-10-20,Inter Zapresic,Rudes,3,1,H
+2017-10-21,HNK Cibalia,NK Slaven Belupo,1,0,H
+2017-10-21,HNK Hajduk Split,Dinamo Zagreb,2,2,D
+2017-10-22,NK Lokomotiva Zagreb,Istra 1961,1,0,H
+2017-10-22,HNK Rijeka,NK Osijek,1,2,A
+2017-10-28,Dinamo Zagreb,HNK Rijeka,3,1,H
+2017-10-28,NK Osijek,NK Lokomotiva Zagreb,3,0,H
+2017-10-29,NK Slaven Belupo,HNK Hajduk Split,0,0,D
+2017-10-29,Rudes,HNK Cibalia,1,1,D
+2017-10-30,Istra 1961,Inter Zapresic,1,1,D
+2017-11-03,Inter Zapresic,NK Osijek,3,1,H
+2017-11-04,HNK Cibalia,Istra 1961,1,4,A
+2017-11-04,HNK Hajduk Split,Rudes,2,3,A
+2017-11-05,NK Lokomotiva Zagreb,HNK Rijeka,1,0,H
+2017-11-05,NK Slaven Belupo,Dinamo Zagreb,0,1,A
+2017-11-17,Rudes,NK Slaven Belupo,1,2,A
+2017-11-18,NK Osijek,HNK Cibalia,1,1,D
+2017-11-18,HNK Rijeka,Inter Zapresic,0,0,D
+2017-11-19,Dinamo Zagreb,NK Lokomotiva Zagreb,2,0,H
+2017-11-19,Istra 1961,HNK Hajduk Split,1,3,A
+2017-11-24,Inter Zapresic,NK Lokomotiva Zagreb,1,1,D
+2017-11-25,NK Slaven Belupo,Istra 1961,2,0,H
+2017-11-25,HNK Hajduk Split,NK Osijek,1,1,D
+2017-11-26,Rudes,Dinamo Zagreb,1,1,D
+2017-11-26,HNK Cibalia,HNK Rijeka,1,2,A
+2017-12-02,NK Osijek,NK Slaven Belupo,2,0,H
+2017-12-02,HNK Rijeka,HNK Hajduk Split,1,2,A
+2017-12-03,NK Lokomotiva Zagreb,HNK Cibalia,1,3,A
+2017-12-03,Dinamo Zagreb,Inter Zapresic,1,0,H
+2017-12-04,Istra 1961,Rudes,2,1,H
+2017-12-08,Inter Zapresic,HNK Cibalia,3,2,H
+2017-12-09,Dinamo Zagreb,Istra 1961,5,1,H
+2017-12-09,NK Osijek,Rudes,3,0,H
+2017-12-10,NK Lokomotiva Zagreb,HNK Hajduk Split,0,2,A
+2017-12-10,HNK Rijeka,NK Slaven Belupo,2,0,H
+2017-12-16,Dinamo Zagreb,HNK Cibalia,1,0,H
+2017-12-16,Istra 1961,NK Osijek,1,1,D
+2017-12-17,HNK Hajduk Split,Inter Zapresic,5,0,H
+2017-12-17,HNK Rijeka,Rudes,3,0,H
+2017-12-18,NK Slaven Belupo,NK Lokomotiva Zagreb,2,2,D
+2018-02-09,Inter Zapresic,NK Slaven Belupo,0,0,D
+2018-02-10,HNK Rijeka,Istra 1961,4,0,H
+2018-02-10,NK Osijek,Dinamo Zagreb,2,4,A
+2018-02-11,HNK Cibalia,HNK Hajduk Split,0,5,A
+2018-02-11,NK Lokomotiva Zagreb,Rudes,2,2,D
+2018-02-16,Rudes,Inter Zapresic,2,0,H
+2018-02-17,NK Osijek,HNK Rijeka,2,1,H
+2018-02-17,Istra 1961,NK Lokomotiva Zagreb,1,0,H
+2018-02-18,Dinamo Zagreb,HNK Hajduk Split,0,1,A
+2018-02-18,NK Slaven Belupo,HNK Cibalia,2,0,H
+2018-02-24,HNK Hajduk Split,NK Slaven Belupo,0,1,A
+2018-03-02,Istra 1961,HNK Cibalia,0,0,D
+2018-03-03,HNK Hajduk Split,Rudes,1,0,H
+2018-03-04,Dinamo Zagreb,NK Slaven Belupo,1,0,H
+2018-03-04,HNK Rijeka,NK Lokomotiva Zagreb,3,1,H
+2018-03-07,HNK Rijeka,Dinamo Zagreb,4,1,H
+2018-03-09,NK Slaven Belupo,Rudes,2,0,H
+2018-03-10,Dinamo Zagreb,NK Lokomotiva Zagreb,1,4,A
+2018-03-10,HNK Hajduk Split,Istra 1961,3,2,H
+2018-03-11,Inter Zapresic,HNK Rijeka,0,3,A
+2018-03-11,HNK Cibalia,NK Osijek,1,1,D
+2018-03-14,HNK Cibalia,Rudes,1,1,D
+2018-03-14,NK Osijek,Inter Zapresic,1,1,D
+2018-03-16,Istra 1961,NK Slaven Belupo,2,1,H
+2018-03-17,NK Lokomotiva Zagreb,Inter Zapresic,2,3,A
+2018-03-17,Dinamo Zagreb,Rudes,2,0,H
+2018-03-18,NK Osijek,HNK Hajduk Split,3,3,D
+2018-03-18,HNK Rijeka,HNK Cibalia,5,1,H
+2018-03-24,Inter Zapresic,Istra 1961,1,0,H
+2018-03-29,Rudes,Istra 1961,2,1,H
+2018-03-30,HNK Cibalia,NK Lokomotiva Zagreb,1,1,D
+2018-03-30,NK Osijek,NK Slaven Belupo,3,0,H
+2018-03-31,HNK Hajduk Split,HNK Rijeka,1,1,D
+2018-03-31,Inter Zapresic,Dinamo Zagreb,0,0,D
+2018-04-03,NK Lokomotiva Zagreb,NK Osijek,1,1,D
+2018-04-06,HNK Cibalia,Inter Zapresic,3,0,H
+2018-04-07,Rudes,NK Osijek,1,0,H
+2018-04-07,HNK Hajduk Split,NK Lokomotiva Zagreb,1,0,H
+2018-04-08,NK Slaven Belupo,HNK Rijeka,1,3,A
+2018-04-08,Istra 1961,Dinamo Zagreb,0,4,A
+2018-04-13,NK Osijek,Istra 1961,2,0,H
+2018-04-13,Rudes,HNK Rijeka,4,2,H
+2018-04-14,HNK Cibalia,Dinamo Zagreb,0,2,A
+2018-04-14,Inter Zapresic,HNK Hajduk Split,0,3,A
+2018-04-15,NK Lokomotiva Zagreb,NK Slaven Belupo,5,2,H
+2018-04-17,Istra 1961,HNK Rijeka,0,1,A
+2018-04-18,Rudes,NK Lokomotiva Zagreb,1,2,A
+2018-04-18,Dinamo Zagreb,NK Osijek,0,1,A
+2018-04-18,HNK Hajduk Split,HNK Cibalia,4,0,H
+2018-04-19,NK Slaven Belupo,Inter Zapresic,3,3,D
+2018-04-21,HNK Rijeka,NK Osijek,1,0,H
+2018-04-22,HNK Hajduk Split,Dinamo Zagreb,1,2,A
+2018-04-22,NK Lokomotiva Zagreb,Istra 1961,0,0,D
+2018-04-23,Inter Zapresic,Rudes,1,1,D
+2018-04-23,HNK Cibalia,NK Slaven Belupo,1,3,A
+2018-04-27,Istra 1961,Inter Zapresic,2,4,A
+2018-04-28,Dinamo Zagreb,HNK Rijeka,0,1,A
+2018-04-28,NK Osijek,NK Lokomotiva Zagreb,0,1,A
+2018-04-29,Rudes,HNK Cibalia,3,2,H
+2018-04-29,NK Slaven Belupo,HNK Hajduk Split,0,0,D
+2018-05-04,NK Lokomotiva Zagreb,HNK Rijeka,1,0,H
+2018-05-04,NK Slaven Belupo,Dinamo Zagreb,2,2,D
+2018-05-05,Inter Zapresic,NK Osijek,1,0,H
+2018-05-05,HNK Cibalia,Istra 1961,1,1,D
+2018-05-06,Rudes,HNK Hajduk Split,2,1,H
+2018-05-08,NK Lokomotiva Zagreb,Dinamo Zagreb,3,1,H
+2018-05-08,HNK Rijeka,Inter Zapresic,5,1,H
+2018-05-09,Istra 1961,HNK Hajduk Split,1,5,A
+2018-05-09,NK Osijek,HNK Cibalia,3,1,H
+2018-05-10,Rudes,NK Slaven Belupo,2,0,H
+2018-05-13,HNK Cibalia,HNK Rijeka,0,0,D
+2018-05-13,HNK Hajduk Split,NK Osijek,1,1,D
+2018-05-13,Inter Zapresic,NK Lokomotiva Zagreb,1,2,A
+2018-05-14,NK Slaven Belupo,Istra 1961,1,0,H
+2018-05-14,Rudes,Dinamo Zagreb,1,0,H
+2018-05-18,NK Slaven Belupo,NK Osijek,2,1,H
+2018-05-18,Istra 1961,Rudes,1,1,D
+2018-05-18,NK Lokomotiva Zagreb,HNK Cibalia,2,1,H
+2018-05-19,HNK Rijeka,HNK Hajduk Split,3,1,H
+2018-05-19,Dinamo Zagreb,Inter Zapresic,3,1,H

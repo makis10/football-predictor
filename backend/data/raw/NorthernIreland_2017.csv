@@ -1,0 +1,232 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2017-08-11,Ballymena United,Crusaders FC,1,4,A
+2017-08-12,Linfield,Carrick Rangers,2,0,H
+2017-08-12,Cliftonville FC,Ards,6,3,H
+2017-08-12,Ballinamallard United,Glentoran,1,2,A
+2017-08-12,Dungannon Swifts,Coleraine FC,1,3,A
+2017-08-12,Warrenpoint Town,Glenavon FC,2,3,A
+2017-08-15,Coleraine FC,Cliftonville FC,2,0,H
+2017-08-15,Crusaders FC,Warrenpoint Town,5,0,H
+2017-08-15,Glenavon FC,Ballinamallard United,6,2,H
+2017-08-15,Ards,Linfield,0,2,A
+2017-08-15,Carrick Rangers,Ballymena United,1,1,D
+2017-08-15,Glentoran,Dungannon Swifts,2,0,H
+2017-08-19,Ballymena United,Glenavon FC,1,6,A
+2017-08-19,Crusaders FC,Coleraine FC,1,2,A
+2017-08-19,Ballinamallard United,Cliftonville FC,1,1,D
+2017-08-19,Dungannon Swifts,Linfield,0,4,A
+2017-08-19,Glentoran,Carrick Rangers,1,1,D
+2017-08-19,Warrenpoint Town,Ards,1,0,H
+2017-08-25,Glenavon FC,Glentoran,2,2,D
+2017-08-25,Ards,Dungannon Swifts,0,1,A
+2017-08-25,Coleraine FC,Warrenpoint Town,2,1,H
+2017-08-25,Carrick Rangers,Ballinamallard United,2,0,H
+2017-08-26,Linfield,Ballymena United,1,0,H
+2017-08-26,Cliftonville FC,Crusaders FC,1,2,A
+2017-09-02,Ballymena United,Cliftonville FC,1,0,H
+2017-09-02,Coleraine FC,Glenavon FC,4,2,H
+2017-09-02,Dungannon Swifts,Ballinamallard United,2,0,H
+2017-09-02,Glentoran,Warrenpoint Town,2,0,H
+2017-09-05,Carrick Rangers,Ards,0,1,A
+2017-09-08,Glenavon FC,Carrick Rangers,2,0,H
+2017-09-09,Linfield,Glentoran,1,0,H
+2017-09-09,Cliftonville FC,Dungannon Swifts,2,1,H
+2017-09-09,Ards,Coleraine FC,0,3,A
+2017-09-09,Ballinamallard United,Crusaders FC,1,5,A
+2017-09-09,Warrenpoint Town,Ballymena United,1,3,A
+2017-09-12,Crusaders FC,Linfield,2,1,H
+2017-09-16,Linfield,Ballinamallard United,4,0,H
+2017-09-16,Ballymena United,Glentoran,1,3,A
+2017-09-16,Coleraine FC,Carrick Rangers,3,0,H
+2017-09-16,Crusaders FC,Ards,0,0,D
+2017-09-16,Glenavon FC,Cliftonville FC,3,1,H
+2017-09-16,Dungannon Swifts,Warrenpoint Town,2,1,H
+2017-09-22,Warrenpoint Town,Linfield,1,4,A
+2017-09-23,Crusaders FC,Dungannon Swifts,1,1,D
+2017-09-23,Glenavon FC,Ards,3,0,H
+2017-09-23,Ballinamallard United,Ballymena United,1,3,A
+2017-09-23,Carrick Rangers,Cliftonville FC,1,2,A
+2017-09-23,Glentoran,Coleraine FC,0,0,D
+2017-09-29,Glenavon FC,Dungannon Swifts,1,1,D
+2017-09-30,Ballymena United,Coleraine FC,0,2,A
+2017-09-30,Cliftonville FC,Linfield,3,2,H
+2017-09-30,Ballinamallard United,Ards,0,2,A
+2017-09-30,Warrenpoint Town,Carrick Rangers,2,2,D
+2017-10-02,Glentoran,Crusaders FC,0,3,A
+2017-10-07,Cliftonville FC,Warrenpoint Town,2,0,H
+2017-10-07,Ards,Glentoran,0,1,A
+2017-10-07,Dungannon Swifts,Ballymena United,2,1,H
+2017-10-13,Warrenpoint Town,Ballinamallard United,2,1,H
+2017-10-14,Ballymena United,Ards,6,3,H
+2017-10-14,Coleraine FC,Linfield,2,1,H
+2017-10-14,Crusaders FC,Glenavon FC,2,3,A
+2017-10-14,Carrick Rangers,Dungannon Swifts,2,1,H
+2017-10-14,Glentoran,Cliftonville FC,0,2,A
+2017-10-20,Ards,Warrenpoint Town,2,1,H
+2017-10-21,Cliftonville FC,Coleraine FC,1,2,A
+2017-10-21,Glenavon FC,Ballymena United,4,0,H
+2017-10-21,Ballinamallard United,Carrick Rangers,2,0,H
+2017-10-21,Dungannon Swifts,Glentoran,0,2,A
+2017-10-23,Linfield,Crusaders FC,2,5,A
+2017-10-27,Crusaders FC,Ballinamallard United,2,0,H
+2017-10-28,Linfield,Ards,2,0,H
+2017-10-28,Ballymena United,Warrenpoint Town,3,3,D
+2017-10-28,Coleraine FC,Glentoran,3,0,H
+2017-10-28,Carrick Rangers,Glenavon FC,0,2,A
+2017-10-28,Dungannon Swifts,Cliftonville FC,0,4,A
+2017-10-31,Coleraine FC,Ballinamallard United,2,1,H
+2017-11-04,Cliftonville FC,Carrick Rangers,3,0,H
+2017-11-04,Glenavon FC,Coleraine FC,2,2,D
+2017-11-04,Ards,Crusaders FC,2,4,A
+2017-11-04,Ballinamallard United,Linfield,0,6,A
+2017-11-04,Warrenpoint Town,Dungannon Swifts,1,2,A
+2017-11-06,Glentoran,Ballymena United,1,1,D
+2017-11-10,Ballymena United,Linfield,2,1,H
+2017-11-11,Cliftonville FC,Ballinamallard United,5,0,H
+2017-11-11,Carrick Rangers,Warrenpoint Town,0,2,A
+2017-11-14,Glentoran,Glenavon FC,1,3,A
+2017-11-18,Linfield,Coleraine FC,2,1,H
+2017-11-18,Ballymena United,Dungannon Swifts,2,1,H
+2017-11-18,Crusaders FC,Carrick Rangers,7,1,H
+2017-11-18,Ards,Cliftonville FC,0,1,A
+2017-11-18,Ballinamallard United,Glenavon FC,0,3,A
+2017-11-18,Warrenpoint Town,Glentoran,2,3,A
+2017-11-21,Coleraine FC,Ards,4,1,H
+2017-11-21,Dungannon Swifts,Crusaders FC,0,4,A
+2017-11-24,Glenavon FC,Linfield,0,1,A
+2017-11-25,Coleraine FC,Crusaders FC,1,1,D
+2017-11-25,Cliftonville FC,Ballymena United,1,0,H
+2017-11-25,Dungannon Swifts,Carrick Rangers,4,0,H
+2017-11-25,Glentoran,Ards,0,2,A
+2017-11-25,Ballinamallard United,Warrenpoint Town,1,1,D
+2017-12-02,Linfield,Dungannon Swifts,1,0,H
+2017-12-02,Ballymena United,Ballinamallard United,2,1,H
+2017-12-02,Crusaders FC,Glentoran,1,0,H
+2017-12-02,Ards,Glenavon FC,0,2,A
+2017-12-02,Carrick Rangers,Coleraine FC,1,3,A
+2017-12-02,Warrenpoint Town,Cliftonville FC,1,3,A
+2017-12-09,Coleraine FC,Dungannon Swifts,1,0,H
+2017-12-09,Warrenpoint Town,Crusaders FC,2,3,A
+2017-12-16,Linfield,Warrenpoint Town,3,3,D
+2017-12-16,Ballymena United,Carrick Rangers,3,1,H
+2017-12-16,Cliftonville FC,Glentoran,1,0,H
+2017-12-16,Glenavon FC,Crusaders FC,3,4,A
+2017-12-16,Ballinamallard United,Coleraine FC,0,2,A
+2017-12-16,Dungannon Swifts,Ards,0,0,D
+2017-12-22,Crusaders FC,Ballymena United,2,1,H
+2017-12-22,Warrenpoint Town,Coleraine FC,0,2,A
+2017-12-23,Linfield,Cliftonville FC,2,0,H
+2017-12-23,Ards,Ballinamallard United,2,1,H
+2017-12-23,Carrick Rangers,Glentoran,1,1,D
+2017-12-23,Dungannon Swifts,Glenavon FC,0,3,A
+2017-12-26,Coleraine FC,Ballymena United,1,1,D
+2017-12-26,Crusaders FC,Cliftonville FC,2,0,H
+2017-12-26,Glenavon FC,Warrenpoint Town,1,0,H
+2017-12-26,Ards,Carrick Rangers,1,0,H
+2017-12-26,Ballinamallard United,Dungannon Swifts,0,1,A
+2017-12-26,Glentoran,Linfield,2,1,H
+2017-12-29,Carrick Rangers,Ballinamallard United,2,2,D
+2017-12-30,Linfield,Crusaders FC,1,2,A
+2017-12-30,Ballymena United,Glenavon FC,3,1,H
+2017-12-30,Cliftonville FC,Coleraine FC,0,0,D
+2017-12-30,Dungannon Swifts,Glentoran,0,0,D
+2017-12-30,Warrenpoint Town,Ards,3,3,D
+2018-01-01,Ballinamallard United,Crusaders FC,0,3,A
+2018-01-09,Carrick Rangers,Linfield,0,1,A
+2018-01-13,Ballymena United,Carrick Rangers,3,0,H
+2018-01-13,Crusaders FC,Ards,1,0,H
+2018-01-13,Glenavon FC,Cliftonville FC,1,1,D
+2018-01-13,Ballinamallard United,Glentoran,2,2,D
+2018-01-13,Dungannon Swifts,Coleraine FC,0,1,A
+2018-01-20,Linfield,Glenavon FC,2,3,A
+2018-01-20,Coleraine FC,Crusaders FC,3,3,D
+2018-01-20,Cliftonville FC,Dungannon Swifts,3,0,H
+2018-01-20,Ards,Ballymena United,1,0,H
+2018-01-20,Warrenpoint Town,Ballinamallard United,1,0,H
+2018-01-26,Glenavon FC,Warrenpoint Town,3,3,D
+2018-01-26,Ballinamallard United,Cliftonville FC,6,4,H
+2018-01-27,Ballymena United,Linfield,2,2,D
+2018-01-27,Crusaders FC,Carrick Rangers,6,0,H
+2018-01-27,Dungannon Swifts,Ards,1,0,H
+2018-01-27,Glentoran,Coleraine FC,0,2,A
+2018-01-29,Cliftonville FC,Glenavon FC,1,1,D
+2018-01-30,Coleraine FC,Linfield,2,2,D
+2018-02-06,Carrick Rangers,Crusaders FC,0,3,A
+2018-02-06,Glentoran,Ballinamallard United,2,1,H
+2018-02-06,Warrenpoint Town,Linfield,1,3,A
+2018-02-10,Linfield,Dungannon Swifts,0,0,D
+2018-02-10,Coleraine FC,Glenavon FC,1,1,D
+2018-02-10,Crusaders FC,Glentoran,4,2,H
+2018-02-10,Ards,Carrick Rangers,0,4,A
+2018-02-13,Ards,Glenavon FC,1,6,A
+2018-02-13,Carrick Rangers,Glentoran,1,2,A
+2018-02-13,Warrenpoint Town,Cliftonville FC,1,3,A
+2018-02-16,Ballinamallard United,Coleraine FC,2,5,A
+2018-02-16,Glentoran,Ards,1,2,A
+2018-02-17,Cliftonville FC,Linfield,1,2,A
+2018-02-17,Carrick Rangers,Warrenpoint Town,1,2,A
+2018-02-24,Coleraine FC,Warrenpoint Town,1,0,H
+2018-02-24,Crusaders FC,Ballymena United,3,1,H
+2018-02-24,Ards,Linfield,0,3,A
+2018-02-24,Carrick Rangers,Glenavon FC,1,2,A
+2018-02-24,Dungannon Swifts,Ballinamallard United,2,0,H
+2018-02-24,Glentoran,Cliftonville FC,1,0,H
+2018-02-27,Linfield,Glenavon FC,0,2,A
+2018-02-27,Ards,Ballymena United,1,0,H
+2018-02-27,Carrick Rangers,Dungannon Swifts,1,0,H
+2018-02-27,Glentoran,Warrenpoint Town,5,0,H
+2018-03-06,Glenavon FC,Crusaders FC,1,6,A
+2018-03-06,Dungannon Swifts,Ballymena United,2,3,A
+2018-03-10,Linfield,Carrick Rangers,2,0,H
+2018-03-10,Ballymena United,Coleraine FC,0,2,A
+2018-03-10,Cliftonville FC,Crusaders FC,3,1,H
+2018-03-10,Glenavon FC,Glentoran,2,2,D
+2018-03-10,Ballinamallard United,Ards,0,4,A
+2018-03-17,Linfield,Glentoran,1,1,D
+2018-03-17,Ballymena United,Warrenpoint Town,1,3,A
+2018-03-17,Crusaders FC,Dungannon Swifts,3,0,H
+2018-03-17,Glenavon FC,Ballinamallard United,0,0,D
+2018-03-17,Ards,Coleraine FC,1,3,A
+2018-03-17,Carrick Rangers,Cliftonville FC,0,1,A
+2018-03-20,Cliftonville FC,Ballymena United,1,2,A
+2018-03-23,Coleraine FC,Carrick Rangers,3,2,H
+2018-03-23,Cliftonville FC,Ards,3,0,H
+2018-03-23,Ballinamallard United,Linfield,2,2,D
+2018-03-23,Dungannon Swifts,Glenavon FC,3,2,H
+2018-03-23,Glentoran,Ballymena United,1,2,A
+2018-03-26,Warrenpoint Town,Crusaders FC,1,4,A
+2018-03-26,Ballymena United,Ballinamallard United,2,0,H
+2018-03-31,Warrenpoint Town,Dungannon Swifts,3,0,H
+2018-04-03,Ballymena United,Cliftonville FC,0,3,A
+2018-04-03,Crusaders FC,Coleraine FC,1,1,D
+2018-04-03,Glenavon FC,Linfield,2,3,A
+2018-04-03,Ards,Warrenpoint Town,4,2,H
+2018-04-07,Linfield,Ballymena United,2,0,H
+2018-04-07,Coleraine FC,Cliftonville FC,2,1,H
+2018-04-07,Crusaders FC,Glenavon FC,1,1,D
+2018-04-07,Ards,Glentoran,1,4,A
+2018-04-07,Ballinamallard United,Warrenpoint Town,2,0,H
+2018-04-07,Dungannon Swifts,Carrick Rangers,2,0,H
+2018-04-14,Coleraine FC,Ballymena United,1,0,H
+2018-04-14,Crusaders FC,Linfield,2,0,H
+2018-04-14,Cliftonville FC,Glenavon FC,1,3,A
+2018-04-14,Ballinamallard United,Dungannon Swifts,2,2,D
+2018-04-14,Carrick Rangers,Ards,0,1,A
+2018-04-14,Warrenpoint Town,Glentoran,1,0,H
+2018-04-17,Glentoran,Dungannon Swifts,4,2,H
+2018-04-17,Ballinamallard United,Carrick Rangers,2,1,H
+2018-04-21,Linfield,Coleraine FC,2,2,D
+2018-04-21,Crusaders FC,Cliftonville FC,1,1,D
+2018-04-21,Glenavon FC,Ballymena United,0,0,D
+2018-04-21,Ards,Ballinamallard United,1,1,D
+2018-04-21,Dungannon Swifts,Warrenpoint Town,4,2,H
+2018-04-21,Glentoran,Carrick Rangers,1,2,A
+2018-04-28,Linfield,Cliftonville FC,1,2,A
+2018-04-28,Ballymena United,Crusaders FC,1,2,A
+2018-04-28,Glenavon FC,Coleraine FC,0,0,D
+2018-04-28,Ards,Dungannon Swifts,3,4,A
+2018-04-28,Glentoran,Ballinamallard United,1,3,A
+2018-04-28,Warrenpoint Town,Carrick Rangers,2,3,A
+2018-05-09,Linfield,Glentoran,3,4,A
+2018-05-09,Cliftonville FC,Ballymena United,4,0,H
+2018-05-12,Cliftonville FC,Glentoran,3,2,H

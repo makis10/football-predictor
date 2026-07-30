@@ -1,0 +1,348 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2021-08-13,Genclerbirligi S.K.,Eyupspor,2,4,A
+2021-08-14,Istanbulspor,Manisa F.K.,3,4,A
+2021-08-14,Balkesirspor,Boluspor,1,0,H
+2021-08-14,Denizlispor,Bandrmaspor,0,2,A
+2021-08-15,Keciorengucu,Altnordu,1,1,D
+2021-08-15,Beykoz Anadolu,Ankaragucu,1,1,D
+2021-08-15,Bursaspor,Adanaspor,1,1,D
+2021-08-15,Menemen FK,Erzurumspor FK,2,0,H
+2021-08-16,Kocaelispor,Umraniyespor,0,3,A
+2021-08-20,Samsunspor,Balkesirspor,3,1,H
+2021-08-21,Eyupspor,Keciorengucu,2,1,H
+2021-08-21,Adanaspor,Genclerbirligi S.K.,0,0,D
+2021-08-21,Altnordu,Beykoz Anadolu,1,3,A
+2021-08-22,Umraniyespor,Istanbulspor,2,0,H
+2021-08-22,Bandrmaspor,Menemen FK,1,0,H
+2021-08-22,Ankaragucu,Kocaelispor,0,0,D
+2021-08-22,Manisa F.K.,Denizlispor,1,0,H
+2021-08-23,Erzurumspor FK,Bursaspor,2,1,H
+2021-08-27,Beykoz Anadolu,Boluspor,3,1,H
+2021-08-28,Keciorengucu,Adanaspor,2,0,H
+2021-08-28,Kocaelispor,Samsunspor,1,0,H
+2021-08-28,Bursaspor,Eyupspor,0,2,A
+2021-08-28,Menemen FK,Umraniyespor,0,4,A
+2021-08-29,Genclerbirligi S.K.,Manisa F.K.,0,3,A
+2021-08-29,Erzurumspor FK,Bandrmaspor,1,0,H
+2021-08-29,Denizlispor,Ankaragucu,0,3,A
+2021-08-29,Istanbulspor,Altnordu,3,0,H
+2021-09-11,Umraniyespor,Bandrmaspor,2,0,H
+2021-09-11,Eyupspor,Denizlispor,0,2,A
+2021-09-11,Adanaspor,Menemen FK,6,2,H
+2021-09-11,Manisa F.K.,Erzurumspor FK,0,1,A
+2021-09-12,Ankaragucu,Genclerbirligi S.K.,2,0,H
+2021-09-12,Boluspor,Kocaelispor,2,0,H
+2021-09-12,Altnordu,Bursaspor,2,1,H
+2021-09-12,Samsunspor,Keciorengucu,2,0,H
+2021-09-13,Balkesirspor,Beykoz Anadolu,0,1,A
+2021-09-14,Bandrmaspor,Eyupspor,1,2,A
+2021-09-14,Erzurumspor FK,Umraniyespor,0,2,A
+2021-09-15,Genclerbirligi S.K.,Altnordu,3,2,H
+2021-09-15,Denizlispor,Adanaspor,2,0,H
+2021-09-15,Bursaspor,Samsunspor,4,1,H
+2021-09-15,Menemen FK,Manisa F.K.,2,0,H
+2021-09-16,Keciorengucu,Boluspor,0,3,A
+2021-09-16,Kocaelispor,Balkesirspor,3,1,H
+2021-09-16,Istanbulspor,Ankaragucu,0,1,A
+2021-09-18,Eyupspor,Erzurumspor FK,0,1,A
+2021-09-18,Manisa F.K.,Bandrmaspor,1,3,A
+2021-09-19,Beykoz Anadolu,Bursaspor,0,0,D
+2021-09-19,Samsunspor,Genclerbirligi S.K.,2,2,D
+2021-09-19,Adanaspor,Umraniyespor,0,0,D
+2021-09-19,Altnordu,Denizlispor,2,1,H
+2021-09-20,Boluspor,Istanbulspor,1,1,D
+2021-09-20,Ankaragucu,Menemen FK,2,2,D
+2021-09-20,Balkesirspor,Keciorengucu,2,1,H
+2021-09-24,Kocaelispor,Beykoz Anadolu,1,0,H
+2021-09-25,Umraniyespor,Manisa F.K.,1,0,H
+2021-09-25,Erzurumspor FK,Adanaspor,3,1,H
+2021-09-25,Genclerbirligi S.K.,Boluspor,1,0,H
+2021-09-26,Bandrmaspor,Altnordu,2,1,H
+2021-09-26,Istanbulspor,Balkesirspor,1,0,H
+2021-09-26,Menemen FK,Eyupspor,1,1,D
+2021-09-26,Bursaspor,Ankaragucu,0,4,A
+2021-09-27,Denizlispor,Samsunspor,2,3,A
+2021-10-01,Altnordu,Menemen FK,1,0,H
+2021-10-02,Beykoz Anadolu,Keciorengucu,1,0,H
+2021-10-02,Balkesirspor,Genclerbirligi S.K.,0,2,A
+2021-10-02,Adanaspor,Bandrmaspor,1,5,A
+2021-10-02,Kocaelispor,Istanbulspor,2,1,H
+2021-10-03,Boluspor,Denizlispor,0,0,D
+2021-10-03,Samsunspor,Umraniyespor,1,1,D
+2021-10-03,Ankaragucu,Erzurumspor FK,2,1,H
+2021-10-03,Eyupspor,Manisa F.K.,3,2,H
+2021-10-16,Umraniyespor,Eyupspor,2,2,D
+2021-10-16,Bandrmaspor,Ankaragucu,1,2,A
+2021-10-16,Denizlispor,Balkesirspor,2,1,H
+2021-10-16,Menemen FK,Samsunspor,3,2,H
+2021-10-17,Keciorengucu,Kocaelispor,0,1,A
+2021-10-17,Erzurumspor FK,Altnordu,6,2,H
+2021-10-17,Manisa F.K.,Adanaspor,0,3,A
+2021-10-17,Bursaspor,Boluspor,3,1,H
+2021-10-18,Istanbulspor,Beykoz Anadolu,1,0,H
+2021-10-22,Ankaragucu,Manisa F.K.,2,1,H
+2021-10-22,Eyupspor,Adanaspor,1,0,H
+2021-10-23,Keciorengucu,Istanbulspor,3,2,H
+2021-10-23,Beykoz Anadolu,Bandrmaspor,0,3,A
+2021-10-23,Boluspor,Menemen FK,1,0,H
+2021-10-23,Samsunspor,Erzurumspor FK,0,0,D
+2021-10-24,Altnordu,Umraniyespor,0,2,A
+2021-10-24,Balkesirspor,Bursaspor,0,2,A
+2021-10-24,Kocaelispor,Genclerbirligi S.K.,1,2,A
+2021-10-30,Bandrmaspor,Samsunspor,2,0,H
+2021-10-30,Manisa F.K.,Boluspor,2,2,D
+2021-10-30,Eyupspor,Ankaragucu,2,0,H
+2021-10-31,Umraniyespor,Beykoz Anadolu,2,1,H
+2021-10-31,Erzurumspor FK,Balkesirspor,2,1,H
+2021-10-31,Genclerbirligi S.K.,Istanbulspor,0,2,A
+2021-10-31,Denizlispor,Kocaelispor,1,1,D
+2021-11-01,Bursaspor,Keciorengucu,2,0,H
+2021-11-01,Adanaspor,Altnordu,1,0,H
+2021-11-05,Beykoz Anadolu,Denizlispor,3,0,H
+2021-11-06,Istanbulspor,Menemen FK,3,2,H
+2021-11-06,Boluspor,Bandrmaspor,0,0,D
+2021-11-06,Samsunspor,Manisa F.K.,1,0,H
+2021-11-06,Ankaragucu,Umraniyespor,3,0,H
+2021-11-06,Altnordu,Eyupspor,1,2,A
+2021-11-07,Keciorengucu,Genclerbirligi S.K.,2,0,H
+2021-11-07,Balkesirspor,Adanaspor,1,2,A
+2021-11-07,Kocaelispor,Bursaspor,2,1,H
+2021-11-20,Erzurumspor FK,Boluspor,3,2,H
+2021-11-20,Menemen FK,Balkesirspor,2,1,H
+2021-11-20,Genclerbirligi S.K.,Beykoz Anadolu,0,1,A
+2021-11-20,Bursaspor,Istanbulspor,2,4,A
+2021-11-21,Bandrmaspor,Kocaelispor,1,0,H
+2021-11-21,Denizlispor,Keciorengucu,2,1,H
+2021-11-21,Adanaspor,Ankaragucu,1,0,H
+2021-11-21,Manisa F.K.,Altnordu,1,0,H
+2021-11-22,Eyupspor,Samsunspor,2,2,D
+2021-11-26,Balkesirspor,Manisa F.K.,0,0,D
+2021-11-26,Genclerbirligi S.K.,Bursaspor,2,0,H
+2021-11-27,Istanbulspor,Denizlispor,1,1,D
+2021-11-27,Kocaelispor,Menemen FK,1,2,A
+2021-11-27,Boluspor,Eyupspor,3,1,H
+2021-11-27,Samsunspor,Adanaspor,1,0,H
+2021-11-28,Keciorengucu,Umraniyespor,3,2,H
+2021-11-28,Altnordu,Ankaragucu,2,1,H
+2021-12-04,Erzurumspor FK,Istanbulspor,3,1,H
+2021-12-04,Bandrmaspor,Genclerbirligi S.K.,1,2,A
+2021-12-04,Adanaspor,Beykoz Anadolu,1,1,D
+2021-12-05,Umraniyespor,Boluspor,1,2,A
+2021-12-05,Manisa F.K.,Kocaelispor,2,1,H
+2021-12-05,Altnordu,Samsunspor,0,2,A
+2021-12-05,Denizlispor,Bursaspor,1,3,A
+2021-12-06,Ankaragucu,Balkesirspor,2,0,H
+2021-12-06,Menemen FK,Keciorengucu,2,2,D
+2021-12-10,Genclerbirligi S.K.,Denizlispor,1,0,H
+2021-12-10,Kocaelispor,Erzurumspor FK,2,0,H
+2021-12-11,Boluspor,Adanaspor,0,0,D
+2021-12-11,Keciorengucu,Bandrmaspor,3,2,H
+2021-12-11,Beykoz Anadolu,Menemen FK,1,1,D
+2021-12-11,Bursaspor,Manisa F.K.,1,1,D
+2021-12-11,Balkesirspor,Umraniyespor,1,2,A
+2021-12-11,Istanbulspor,Eyupspor,2,1,H
+2021-12-12,Samsunspor,Ankaragucu,2,0,H
+2021-12-14,Erzurumspor FK,Genclerbirligi S.K.,2,0,H
+2021-12-14,Manisa F.K.,Keciorengucu,1,1,D
+2021-12-14,Altnordu,Kocaelispor,3,2,H
+2021-12-15,Bandrmaspor,Balkesirspor,3,0,H
+2021-12-15,Samsunspor,Boluspor,1,1,D
+2021-12-15,Eyupspor,Beykoz Anadolu,2,0,H
+2021-12-15,Menemen FK,Denizlispor,0,0,D
+2021-12-16,Umraniyespor,Bursaspor,4,1,H
+2021-12-16,Adanaspor,Istanbulspor,1,0,H
+2021-12-18,Keciorengucu,Erzurumspor FK,3,3,D
+2021-12-18,Boluspor,Ankaragucu,0,2,A
+2021-12-18,Balkesirspor,Altnordu,3,4,A
+2021-12-19,Genclerbirligi S.K.,Menemen FK,5,0,H
+2021-12-19,Bursaspor,Bandrmaspor,0,1,A
+2021-12-19,Beykoz Anadolu,Manisa F.K.,0,1,A
+2021-12-19,Kocaelispor,Eyupspor,1,1,D
+2021-12-20,Istanbulspor,Samsunspor,2,1,H
+2021-12-20,Denizlispor,Umraniyespor,0,1,A
+2021-12-22,Beykoz Anadolu,Erzurumspor FK,1,1,D
+2021-12-24,Altnordu,Boluspor,2,1,H
+2021-12-24,Adanaspor,Kocaelispor,2,0,H
+2021-12-25,Erzurumspor FK,Denizlispor,3,1,H
+2021-12-25,Bandrmaspor,Istanbulspor,0,0,D
+2021-12-25,Menemen FK,Bursaspor,0,0,D
+2021-12-26,Umraniyespor,Genclerbirligi S.K.,3,1,H
+2021-12-26,Samsunspor,Beykoz Anadolu,2,2,D
+2021-12-26,Ankaragucu,Keciorengucu,2,1,H
+2021-12-26,Eyupspor,Balkesirspor,1,1,D
+2022-01-08,Umraniyespor,Kocaelispor,1,0,H
+2022-01-08,Bandrmaspor,Denizlispor,3,4,A
+2022-01-08,Adanaspor,Bursaspor,3,1,H
+2022-01-08,Ankaragucu,Beykoz Anadolu,1,0,H
+2022-01-09,Erzurumspor FK,Menemen FK,1,1,D
+2022-01-09,Manisa F.K.,Istanbulspor,1,2,A
+2022-01-09,Boluspor,Balkesirspor,1,0,H
+2022-01-09,Eyupspor,Genclerbirligi S.K.,1,0,H
+2022-01-10,Altnordu,Keciorengucu,2,3,A
+2022-01-14,Menemen FK,Bandrmaspor,1,1,D
+2022-01-15,Denizlispor,Manisa F.K.,0,1,A
+2022-01-15,Istanbulspor,Umraniyespor,1,0,H
+2022-01-15,Kocaelispor,Ankaragucu,1,2,A
+2022-01-16,Keciorengucu,Eyupspor,0,0,D
+2022-01-16,Beykoz Anadolu,Altnordu,2,1,H
+2022-01-16,Balkesirspor,Samsunspor,0,2,A
+2022-01-16,Bursaspor,Erzurumspor FK,0,0,D
+2022-01-17,Genclerbirligi S.K.,Adanaspor,0,3,A
+2022-01-21,Samsunspor,Kocaelispor,3,0,H
+2022-01-22,Umraniyespor,Menemen FK,2,1,H
+2022-01-22,Manisa F.K.,Genclerbirligi S.K.,3,1,H
+2022-01-22,Altnordu,Istanbulspor,0,5,A
+2022-01-22,Ankaragucu,Denizlispor,2,1,H
+2022-01-23,Adanaspor,Keciorengucu,0,1,A
+2022-01-23,Bandrmaspor,Erzurumspor FK,2,1,H
+2022-02-05,Keciorengucu,Samsunspor,1,1,D
+2022-02-05,Beykoz Anadolu,Balkesirspor,0,2,A
+2022-02-05,Bursaspor,Altnordu,1,0,H
+2022-02-05,Denizlispor,Eyupspor,2,2,D
+2022-02-06,Erzurumspor FK,Manisa F.K.,1,0,H
+2022-02-06,Bandrmaspor,Umraniyespor,2,0,H
+2022-02-06,Menemen FK,Adanaspor,2,1,H
+2022-02-06,Genclerbirligi S.K.,Ankaragucu,0,3,A
+2022-02-07,Kocaelispor,Boluspor,1,2,A
+2022-02-11,Altnordu,Genclerbirligi S.K.,1,2,A
+2022-02-11,Samsunspor,Bursaspor,1,1,D
+2022-02-12,Adanaspor,Denizlispor,0,0,D
+2022-02-12,Boluspor,Keciorengucu,0,0,D
+2022-02-12,Ankaragucu,Istanbulspor,0,1,A
+2022-02-12,Balkesirspor,Kocaelispor,1,2,A
+2022-02-13,Umraniyespor,Erzurumspor FK,3,3,D
+2022-02-13,Manisa F.K.,Menemen FK,1,1,D
+2022-02-13,Eyupspor,Bandrmaspor,2,0,H
+2022-02-15,Genclerbirligi S.K.,Samsunspor,2,2,D
+2022-02-15,Bursaspor,Beykoz Anadolu,0,1,A
+2022-02-16,Keciorengucu,Balkesirspor,3,1,H
+2022-02-16,Istanbulspor,Boluspor,1,2,A
+2022-02-16,Denizlispor,Altnordu,1,0,H
+2022-02-16,Menemen FK,Ankaragucu,1,1,D
+2022-02-17,Umraniyespor,Adanaspor,2,1,H
+2022-02-17,Bandrmaspor,Manisa F.K.,0,0,D
+2022-02-17,Erzurumspor FK,Eyupspor,1,1,D
+2022-02-19,Boluspor,Genclerbirligi S.K.,3,1,H
+2022-02-19,Beykoz Anadolu,Kocaelispor,0,0,D
+2022-02-20,Samsunspor,Denizlispor,5,0,H
+2022-02-20,Balkesirspor,Istanbulspor,1,3,A
+2022-02-20,Ankaragucu,Bursaspor,2,1,H
+2022-02-21,Manisa F.K.,Umraniyespor,2,1,H
+2022-02-21,Adanaspor,Erzurumspor FK,1,1,D
+2022-02-21,Altnordu,Bandrmaspor,0,2,A
+2022-02-21,Eyupspor,Menemen FK,1,1,D
+2022-02-25,Denizlispor,Boluspor,2,0,H
+2022-02-26,Keciorengucu,Beykoz Anadolu,1,0,H
+2022-02-26,Manisa F.K.,Eyupspor,2,1,H
+2022-02-26,Genclerbirligi S.K.,Balkesirspor,2,0,H
+2022-02-27,Umraniyespor,Samsunspor,3,1,H
+2022-02-27,Bandrmaspor,Adanaspor,1,0,H
+2022-02-27,Erzurumspor FK,Ankaragucu,0,1,A
+2022-02-27,Istanbulspor,Kocaelispor,1,1,D
+2022-02-28,Menemen FK,Altnordu,0,1,A
+2022-03-02,Boluspor,Beykoz Anadolu,0,1,A
+2022-03-04,Kocaelispor,Keciorengucu,1,0,H
+2022-03-05,Altnordu,Erzurumspor FK,1,0,H
+2022-03-05,Samsunspor,Menemen FK,2,4,A
+2022-03-05,Ankaragucu,Bandrmaspor,1,0,H
+2022-03-06,Adanaspor,Manisa F.K.,2,0,H
+2022-03-06,Boluspor,Bursaspor,1,1,D
+2022-03-06,Beykoz Anadolu,Istanbulspor,0,2,A
+2022-03-06,Eyupspor,Umraniyespor,0,1,A
+2022-03-07,Balkesirspor,Denizlispor,0,1,A
+2022-03-10,Eyupspor,Bursaspor,4,0,H
+2022-03-18,Istanbulspor,Keciorengucu,1,1,D
+2022-03-19,Umraniyespor,Altnordu,0,1,A
+2022-03-19,Erzurumspor FK,Samsunspor,1,2,A
+2022-03-19,Menemen FK,Boluspor,3,2,H
+2022-03-20,Bandrmaspor,Beykoz Anadolu,3,1,H
+2022-03-20,Manisa F.K.,Ankaragucu,1,1,D
+2022-03-20,Bursaspor,Balkesirspor,2,1,H
+2022-03-20,Genclerbirligi S.K.,Kocaelispor,1,1,D
+2022-03-21,Adanaspor,Eyupspor,1,1,D
+2022-04-01,Beykoz Anadolu,Umraniyespor,1,1,D
+2022-04-02,Boluspor,Manisa F.K.,1,2,A
+2022-04-02,Keciorengucu,Bursaspor,2,1,H
+2022-04-02,Istanbulspor,Genclerbirligi S.K.,0,0,D
+2022-04-02,Samsunspor,Bandrmaspor,0,1,A
+2022-04-03,Kocaelispor,Denizlispor,1,5,A
+2022-04-03,Balkesirspor,Erzurumspor FK,1,5,A
+2022-04-03,Ankaragucu,Eyupspor,2,3,A
+2022-04-03,Altnordu,Adanaspor,2,0,H
+2022-04-09,Umraniyespor,Ankaragucu,2,2,D
+2022-04-09,Bandrmaspor,Boluspor,3,0,H
+2022-04-09,Genclerbirligi S.K.,Keciorengucu,2,0,H
+2022-04-09,Adanaspor,Balkesirspor,3,1,H
+2022-04-10,Manisa F.K.,Samsunspor,2,0,H
+2022-04-10,Denizlispor,Beykoz Anadolu,2,4,A
+2022-04-10,Menemen FK,Istanbulspor,1,3,A
+2022-04-10,Bursaspor,Kocaelispor,2,1,H
+2022-04-11,Eyupspor,Altnordu,2,2,D
+2022-04-15,Keciorengucu,Denizlispor,0,1,A
+2022-04-15,Beykoz Anadolu,Genclerbirligi S.K.,4,0,H
+2022-04-15,Istanbulspor,Bursaspor,3,1,H
+2022-04-16,Balkesirspor,Menemen FK,1,1,D
+2022-04-16,Altnordu,Manisa F.K.,1,0,H
+2022-04-16,Kocaelispor,Bandrmaspor,2,1,H
+2022-04-16,Boluspor,Erzurumspor FK,0,2,A
+2022-04-17,Ankaragucu,Adanaspor,2,0,H
+2022-04-17,Samsunspor,Eyupspor,2,2,D
+2022-04-19,Umraniyespor,Keciorengucu,2,1,H
+2022-04-19,Denizlispor,Istanbulspor,4,3,H
+2022-04-19,Bursaspor,Genclerbirligi S.K.,0,0,D
+2022-04-20,Manisa F.K.,Balkesirspor,3,0,H
+2022-04-20,Erzurumspor FK,Beykoz Anadolu,1,1,D
+2022-04-20,Ankaragucu,Altnordu,2,3,A
+2022-04-20,Menemen FK,Kocaelispor,1,1,D
+2022-04-21,Adanaspor,Samsunspor,1,0,H
+2022-04-21,Eyupspor,Boluspor,0,2,A
+2022-04-23,Genclerbirligi S.K.,Bandrmaspor,2,0,H
+2022-04-23,Bursaspor,Denizlispor,1,0,H
+2022-04-24,Boluspor,Umraniyespor,0,2,A
+2022-04-24,Keciorengucu,Menemen FK,1,0,H
+2022-04-24,Kocaelispor,Manisa F.K.,2,1,H
+2022-04-24,Balkesirspor,Ankaragucu,0,2,A
+2022-04-24,Istanbulspor,Erzurumspor FK,1,2,A
+2022-04-25,Beykoz Anadolu,Adanaspor,4,1,H
+2022-04-25,Samsunspor,Altnordu,2,1,H
+2022-05-01,Erzurumspor FK,Kocaelispor,1,0,H
+2022-05-01,Ankaragucu,Samsunspor,0,0,D
+2022-05-01,Adanaspor,Boluspor,1,2,A
+2022-05-01,Denizlispor,Genclerbirligi S.K.,2,1,H
+2022-05-01,Umraniyespor,Balkesirspor,4,1,H
+2022-05-01,Bandrmaspor,Keciorengucu,0,2,A
+2022-05-01,Eyupspor,Istanbulspor,1,2,A
+2022-05-01,Manisa F.K.,Bursaspor,1,3,A
+2022-05-01,Menemen FK,Beykoz Anadolu,1,1,D
+2022-05-08,Genclerbirligi S.K.,Erzurumspor FK,2,1,H
+2022-05-08,Bursaspor,Umraniyespor,3,2,H
+2022-05-08,Balkesirspor,Bandrmaspor,1,5,A
+2022-05-08,Boluspor,Samsunspor,2,1,H
+2022-05-08,Denizlispor,Menemen FK,2,1,H
+2022-05-08,Istanbulspor,Adanaspor,1,1,D
+2022-05-08,Keciorengucu,Manisa F.K.,2,1,H
+2022-05-08,Beykoz Anadolu,Eyupspor,3,2,H
+2022-05-08,Kocaelispor,Altnordu,2,2,D
+2022-05-14,Erzurumspor FK,Keciorengucu,2,2,D
+2022-05-14,Ankaragucu,Boluspor,1,2,A
+2022-05-14,Altnordu,Balkesirspor,2,1,H
+2022-05-14,Umraniyespor,Denizlispor,0,0,D
+2022-05-14,Bandrmaspor,Bursaspor,4,2,H
+2022-05-14,Eyupspor,Kocaelispor,2,1,H
+2022-05-14,Manisa F.K.,Beykoz Anadolu,4,1,H
+2022-05-14,Menemen FK,Genclerbirligi S.K.,1,3,A
+2022-05-14,Samsunspor,Istanbulspor,0,0,D
+2022-05-20,Boluspor,Altnordu,2,1,H
+2022-05-20,Beykoz Anadolu,Samsunspor,2,4,A
+2022-05-20,Balkesirspor,Eyupspor,0,3,A
+2022-05-20,Denizlispor,Erzurumspor FK,4,0,H
+2022-05-20,Istanbulspor,Bandrmaspor,0,0,D
+2022-05-21,Genclerbirligi S.K.,Umraniyespor,2,4,A
+2022-05-21,Keciorengucu,Ankaragucu,1,2,A
+2022-05-21,Bursaspor,Menemen FK,1,0,H
+2022-05-21,Kocaelispor,Adanaspor,4,1,H
+2022-05-25,Erzurumspor FK,Istanbulspor,2,4,A
+2022-05-25,Eyupspor,Bandrmaspor,1,0,H
+2022-05-29,Bandrmaspor,Eyupspor,3,0,H
+2022-05-29,Istanbulspor,Erzurumspor FK,0,1,A
+2022-06-02,Bandrmaspor,Istanbulspor,1,2,A

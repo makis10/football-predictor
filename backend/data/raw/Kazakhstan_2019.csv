@@ -1,0 +1,199 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2019-03-09,Ordabasy,Shakhter Karagandy,3,0,H
+2019-03-09,Zhetysu,Okzhetpes,5,1,H
+2019-03-09,FK Tobol Kostanay,Irtysh,3,0,H
+2019-03-10,Kairat Almaty,Taraz,2,0,H
+2019-03-10,Kaisar,Atyrau,0,1,A
+2019-03-10,FC Astana,Aktobe,4,1,H
+2019-03-15,Ordabasy,Aktobe,1,0,H
+2019-03-15,Atyrau,Irtysh,1,3,A
+2019-03-15,Kaisar,Zhetysu,0,1,A
+2019-03-15,FK Tobol Kostanay,Taraz,4,1,H
+2019-03-15,Kairat Almaty,Shakhter Karagandy,2,1,H
+2019-03-15,FC Astana,Okzhetpes,2,1,H
+2019-03-30,Irtysh,Kaisar,0,1,A
+2019-03-30,Taraz,Atyrau,2,0,H
+2019-03-30,Zhetysu,FC Astana,0,2,A
+2019-03-31,Aktobe,Kairat Almaty,1,3,A
+2019-03-31,Shakhter Karagandy,FK Tobol Kostanay,0,1,A
+2019-03-31,Okzhetpes,Ordabasy,0,0,D
+2019-04-03,FC Astana,Atyrau,3,1,H
+2019-04-06,FK Tobol Kostanay,Aktobe,2,1,H
+2019-04-06,Irtysh,Taraz,2,0,H
+2019-04-06,Ordabasy,Zhetysu,1,0,H
+2019-04-06,Kairat Almaty,Okzhetpes,4,1,H
+2019-04-07,Kaisar,FC Astana,0,0,D
+2019-04-07,Atyrau,Shakhter Karagandy,0,0,D
+2019-04-14,Aktobe,Atyrau,2,0,H
+2019-04-14,Okzhetpes,FK Tobol Kostanay,1,2,A
+2019-04-14,Shakhter Karagandy,Irtysh,4,0,H
+2019-04-14,Taraz,Kaisar,1,2,A
+2019-04-14,Zhetysu,Kairat Almaty,3,0,H
+2019-04-14,FC Astana,Ordabasy,2,1,H
+2019-04-20,Kairat Almaty,FC Astana,0,1,A
+2019-04-20,FK Tobol Kostanay,Zhetysu,0,0,D
+2019-04-20,Taraz,Shakhter Karagandy,1,2,A
+2019-04-20,Kaisar,Ordabasy,0,0,D
+2019-04-20,Atyrau,Okzhetpes,1,2,A
+2019-04-20,Irtysh,Aktobe,0,1,A
+2019-04-24,Kairat Almaty,Atyrau,2,0,H
+2019-04-27,Okzhetpes,Irtysh,1,0,H
+2019-04-27,Shakhter Karagandy,Kaisar,0,1,A
+2019-04-27,Ordabasy,Kairat Almaty,0,0,D
+2019-04-27,Zhetysu,Atyrau,0,0,D
+2019-04-27,Aktobe,Taraz,2,3,A
+2019-04-27,FC Astana,FK Tobol Kostanay,2,1,H
+2019-05-01,Shakhter Karagandy,Aktobe,3,0,H
+2019-05-01,FK Tobol Kostanay,Ordabasy,1,1,D
+2019-05-01,Taraz,Okzhetpes,2,6,A
+2019-05-01,Kaisar,Kairat Almaty,2,1,H
+2019-05-01,Atyrau,FC Astana,0,3,A
+2019-05-01,Irtysh,Zhetysu,0,3,A
+2019-05-05,Okzhetpes,Shakhter Karagandy,2,2,D
+2019-05-05,Ordabasy,Atyrau,1,1,D
+2019-05-05,Zhetysu,Taraz,1,0,H
+2019-05-05,Kairat Almaty,FK Tobol Kostanay,0,1,A
+2019-05-05,FC Astana,Irtysh,0,1,A
+2019-05-05,Aktobe,Kaisar,1,3,A
+2019-05-11,Taraz,FC Astana,2,0,H
+2019-05-11,Irtysh,Ordabasy,0,2,A
+2019-05-12,Shakhter Karagandy,Zhetysu,2,0,H
+2019-05-12,Kaisar,FK Tobol Kostanay,5,1,H
+2019-05-12,Aktobe,Okzhetpes,0,2,A
+2019-05-12,Atyrau,Kairat Almaty,2,1,H
+2019-05-15,Irtysh,FC Astana,0,4,A
+2019-05-18,FK Tobol Kostanay,Atyrau,3,0,H
+2019-05-18,Okzhetpes,Kaisar,1,2,A
+2019-05-18,Zhetysu,Aktobe,1,1,D
+2019-05-18,Ordabasy,Taraz,3,0,H
+2019-05-19,FC Astana,Shakhter Karagandy,1,2,A
+2019-05-19,Kairat Almaty,Irtysh,2,1,H
+2019-05-26,Taraz,FK Tobol Kostanay,0,1,A
+2019-05-26,Okzhetpes,FC Astana,1,1,D
+2019-05-26,Zhetysu,Kaisar,1,0,H
+2019-05-26,Irtysh,Atyrau,1,0,H
+2019-05-26,Shakhter Karagandy,Kairat Almaty,1,2,A
+2019-05-26,Aktobe,Ordabasy,0,3,A
+2019-05-31,Atyrau,Taraz,1,1,D
+2019-05-31,Ordabasy,Okzhetpes,3,0,H
+2019-05-31,FC Astana,Zhetysu,1,0,H
+2019-05-31,Kairat Almaty,Aktobe,3,0,H
+2019-05-31,FK Tobol Kostanay,Shakhter Karagandy,2,0,H
+2019-05-31,Kaisar,Irtysh,2,0,H
+2019-06-15,Aktobe,FK Tobol Kostanay,0,1,A
+2019-06-16,Okzhetpes,Kairat Almaty,1,2,A
+2019-06-16,Taraz,Irtysh,0,0,D
+2019-06-16,Zhetysu,Ordabasy,1,1,D
+2019-06-16,FC Astana,Kaisar,4,1,H
+2019-06-16,Shakhter Karagandy,Atyrau,1,1,D
+2019-06-23,Kairat Almaty,Zhetysu,0,0,D
+2019-06-23,Ordabasy,FC Astana,3,2,H
+2019-06-23,FK Tobol Kostanay,Okzhetpes,2,0,H
+2019-06-23,Kaisar,Taraz,1,1,D
+2019-06-23,Irtysh,Shakhter Karagandy,0,0,D
+2019-06-23,Atyrau,Aktobe,1,1,D
+2019-06-30,Okzhetpes,Atyrau,3,0,H
+2019-06-30,Zhetysu,FK Tobol Kostanay,0,1,A
+2019-06-30,Ordabasy,Kaisar,1,2,A
+2019-06-30,Shakhter Karagandy,Taraz,1,0,H
+2019-06-30,FC Astana,Kairat Almaty,0,2,A
+2019-06-30,Aktobe,Irtysh,2,1,H
+2019-07-05,Kairat Almaty,Ordabasy,0,1,A
+2019-07-05,FK Tobol Kostanay,FC Astana,0,2,A
+2019-07-06,Taraz,Aktobe,1,1,D
+2019-07-06,Irtysh,Okzhetpes,2,1,H
+2019-07-06,Kaisar,Shakhter Karagandy,2,2,D
+2019-07-06,Atyrau,Zhetysu,2,1,H
+2019-07-13,Zhetysu,Irtysh,4,0,H
+2019-07-13,Aktobe,Shakhter Karagandy,2,2,D
+2019-07-14,Okzhetpes,Taraz,3,1,H
+2019-07-14,Kairat Almaty,Kaisar,5,1,H
+2019-07-14,Ordabasy,FK Tobol Kostanay,0,0,D
+2019-07-20,Shakhter Karagandy,Okzhetpes,1,0,H
+2019-07-20,Kaisar,Aktobe,0,1,A
+2019-07-21,FK Tobol Kostanay,Kairat Almaty,3,5,A
+2019-07-21,Taraz,Zhetysu,2,0,H
+2019-07-21,Atyrau,Ordabasy,1,0,H
+2019-07-27,Okzhetpes,Aktobe,4,0,H
+2019-07-27,Zhetysu,Shakhter Karagandy,2,0,H
+2019-07-28,FC Astana,Taraz,4,0,H
+2019-07-28,FK Tobol Kostanay,Kaisar,0,2,A
+2019-07-28,Ordabasy,Irtysh,1,0,H
+2019-08-03,Kaisar,Okzhetpes,0,1,A
+2019-08-03,Aktobe,Zhetysu,1,2,A
+2019-08-04,Irtysh,Kairat Almaty,0,2,A
+2019-08-04,Taraz,Ordabasy,1,0,H
+2019-08-04,Shakhter Karagandy,FC Astana,1,0,H
+2019-08-04,Atyrau,FK Tobol Kostanay,0,1,A
+2019-08-10,Okzhetpes,Zhetysu,0,1,A
+2019-08-10,Atyrau,Kaisar,1,3,A
+2019-08-11,Taraz,Kairat Almaty,0,1,A
+2019-08-11,Irtysh,FK Tobol Kostanay,0,2,A
+2019-08-11,Shakhter Karagandy,Ordabasy,1,2,A
+2019-08-11,Aktobe,FC Astana,2,3,A
+2019-08-17,Okzhetpes,Ordabasy,0,4,A
+2019-08-17,Irtysh,FK Tobol Kostanay,0,0,D
+2019-08-17,Taraz,Kairat Almaty,0,2,A
+2019-08-18,Zhetysu,Aktobe,5,0,H
+2019-08-18,Shakhter Karagandy,Kaisar,3,0,H
+2019-08-24,Ordabasy,Shakhter Karagandy,3,2,H
+2019-08-24,FK Tobol Kostanay,Atyrau,2,0,H
+2019-08-25,FC Astana,Taraz,5,0,H
+2019-08-25,Kaisar,Zhetysu,0,2,A
+2019-08-25,Kairat Almaty,Okzhetpes,0,1,A
+2019-08-25,Aktobe,Irtysh,1,1,D
+2019-08-31,Zhetysu,Ordabasy,0,1,A
+2019-08-31,Shakhter Karagandy,Kairat Almaty,0,4,A
+2019-08-31,Taraz,FK Tobol Kostanay,0,5,A
+2019-08-31,Kaisar,Aktobe,1,3,A
+2019-08-31,Atyrau,Irtysh,0,3,A
+2019-09-15,Ordabasy,Kaisar,0,2,A
+2019-09-15,FK Tobol Kostanay,Okzhetpes,1,0,H
+2019-09-15,Irtysh,Taraz,1,0,H
+2019-09-15,FC Astana,Shakhter Karagandy,2,1,H
+2019-09-15,Kairat Almaty,Zhetysu,4,1,H
+2019-09-15,Aktobe,Atyrau,3,2,H
+2019-09-21,Okzhetpes,Irtysh,1,0,H
+2019-09-21,Taraz,Atyrau,2,2,D
+2019-09-21,Kaisar,Kairat Almaty,0,1,A
+2019-09-22,Zhetysu,FC Astana,2,1,H
+2019-09-22,Shakhter Karagandy,FK Tobol Kostanay,0,1,A
+2019-09-22,Ordabasy,Aktobe,4,1,H
+2019-09-25,Atyrau,FC Astana,1,4,A
+2019-09-28,Irtysh,Shakhter Karagandy,4,2,H
+2019-09-28,FK Tobol Kostanay,Zhetysu,0,0,D
+2019-09-29,Atyrau,Okzhetpes,2,2,D
+2019-09-29,Aktobe,Taraz,2,2,D
+2019-09-29,FC Astana,Kaisar,3,0,H
+2019-09-29,Kairat Almaty,Ordabasy,4,1,H
+2019-10-05,Okzhetpes,Taraz,2,3,A
+2019-10-05,Zhetysu,Irtysh,2,1,H
+2019-10-05,Kairat Almaty,Aktobe,6,0,H
+2019-10-06,Ordabasy,FC Astana,1,1,D
+2019-10-19,Atyrau,Zhetysu,0,3,A
+2019-10-19,Irtysh,Kaisar,2,1,H
+2019-10-20,FK Tobol Kostanay,Ordabasy,1,2,A
+2019-10-20,Taraz,Shakhter Karagandy,0,0,D
+2019-10-20,Aktobe,Okzhetpes,1,2,A
+2019-10-20,FC Astana,Kairat Almaty,3,1,H
+2019-10-25,Kaisar,Atyrau,0,1,A
+2019-10-26,Ordabasy,Irtysh,2,0,H
+2019-10-26,Shakhter Karagandy,Okzhetpes,2,2,D
+2019-10-26,Kairat Almaty,FK Tobol Kostanay,2,0,H
+2019-10-27,Zhetysu,Taraz,0,0,D
+2019-10-27,FC Astana,Aktobe,5,0,H
+2019-10-30,Okzhetpes,FC Astana,0,1,A
+2019-10-30,Kaisar,FK Tobol Kostanay,1,1,D
+2019-10-30,Shakhter Karagandy,Atyrau,0,1,A
+2019-11-03,FK Tobol Kostanay,FC Astana,0,1,A
+2019-11-03,Okzhetpes,Zhetysu,1,1,D
+2019-11-03,Taraz,Kaisar,2,1,H
+2019-11-03,Aktobe,Shakhter Karagandy,3,2,H
+2019-11-03,Atyrau,Ordabasy,1,3,A
+2019-11-03,Irtysh,Kairat Almaty,5,0,H
+2019-11-10,FC Astana,Irtysh,0,2,A
+2019-11-10,Kairat Almaty,Atyrau,2,1,H
+2019-11-10,Ordabasy,Taraz,3,0,H
+2019-11-10,FK Tobol Kostanay,Aktobe,2,1,H
+2019-11-10,Zhetysu,Shakhter Karagandy,3,2,H
+2019-11-10,Kaisar,Okzhetpes,1,1,D

@@ -1,0 +1,179 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2020-07-03,Dinamo-Auto,Floresti,3,1,H
+2020-07-03,Sheriff Tiraspol,Speranta Nisporeni,2,0,H
+2020-07-04,Sfintul Gheorghe,Codru Lozova,5,1,H
+2020-07-04,Milsami Orhei,Petrocub,0,0,D
+2020-07-05,Zimbru,Dacia-Buiucani,0,1,A
+2020-07-07,Floresti,Codru Lozova,1,0,H
+2020-07-08,Sfintul Gheorghe,Sheriff Tiraspol,0,1,A
+2020-07-08,Petrocub,Dinamo-Auto,3,1,H
+2020-07-09,Dacia-Buiucani,Milsami Orhei,0,0,D
+2020-07-09,Speranta Nisporeni,Zimbru,2,2,D
+2020-07-11,Floresti,Petrocub,0,4,A
+2020-07-11,Sheriff Tiraspol,Codru Lozova,6,0,H
+2020-07-12,Dinamo-Auto,Dacia-Buiucani,1,0,H
+2020-07-12,Zimbru,Sfintul Gheorghe,1,3,A
+2020-07-13,Milsami Orhei,Speranta Nisporeni,3,0,H
+2020-07-17,Petrocub,Codru Lozova,7,0,H
+2020-07-17,Sheriff Tiraspol,Zimbru,2,0,H
+2020-07-18,Dacia-Buiucani,Floresti,2,0,H
+2020-07-18,Speranta Nisporeni,Dinamo-Auto,1,2,A
+2020-07-19,Sfintul Gheorghe,Milsami Orhei,3,1,H
+2020-07-21,Zimbru,Codru Lozova,3,1,H
+2020-07-22,Floresti,Speranta Nisporeni,1,1,D
+2020-07-22,Petrocub,Dacia-Buiucani,2,0,H
+2020-07-23,Dinamo-Auto,Sfintul Gheorghe,0,1,A
+2020-07-23,Milsami Orhei,Sheriff Tiraspol,0,1,A
+2020-07-25,Dacia-Buiucani,Codru Lozova,4,0,H
+2020-07-25,Speranta Nisporeni,Petrocub,1,4,A
+2020-07-26,Sheriff Tiraspol,Dinamo-Auto,6,0,H
+2020-07-27,Sfintul Gheorghe,Floresti,2,0,H
+2020-07-27,Zimbru,Milsami Orhei,0,1,A
+2020-07-31,Dacia-Buiucani,Speranta Nisporeni,0,3,A
+2020-07-31,Milsami Orhei,Codru Lozova,3,1,H
+2020-08-01,Floresti,Sheriff Tiraspol,0,1,A
+2020-08-01,Petrocub,Sfintul Gheorghe,1,0,H
+2020-08-02,Dinamo-Auto,Zimbru,1,1,D
+2020-08-04,Codru Lozova,Speranta Nisporeni,0,1,A
+2020-08-05,Milsami Orhei,Dinamo-Auto,1,0,H
+2020-08-05,Sheriff Tiraspol,Petrocub,4,1,H
+2020-08-06,Sfintul Gheorghe,Dacia-Buiucani,2,1,H
+2020-08-06,Zimbru,Floresti,0,2,A
+2020-09-10,Speranta Nisporeni,Sfintul Gheorghe,0,2,A
+2020-09-11,Dinamo-Auto,Codru Lozova,7,0,H
+2020-09-12,Dacia-Buiucani,Sheriff Tiraspol,0,3,A
+2020-09-12,Petrocub,Zimbru,2,0,H
+2020-09-13,Floresti,Milsami Orhei,0,4,A
+2020-09-18,Floresti,Dinamo-Auto,0,5,A
+2020-09-18,Speranta Nisporeni,Sheriff Tiraspol,1,2,A
+2020-09-19,Dacia-Buiucani,Zimbru,2,1,H
+2020-09-19,Petrocub,Milsami Orhei,1,2,A
+2020-09-20,Sfintul Gheorghe,Codru Lozova,2,2,D
+2020-09-22,Dinamo-Auto,Petrocub,1,1,D
+2020-09-22,Milsami Orhei,Dacia-Buiucani,2,0,H
+2020-09-23,Zimbru,Speranta Nisporeni,0,2,A
+2020-09-24,Codru Lozova,Floresti,1,1,D
+2020-09-26,Dacia-Buiucani,Dinamo-Auto,4,0,H
+2020-09-26,Speranta Nisporeni,Milsami Orhei,0,1,A
+2020-09-27,Sfintul Gheorghe,Zimbru,2,0,H
+2020-09-28,Sheriff Tiraspol,Codru Lozova,6,0,H
+2020-09-28,Petrocub,Floresti,4,0,H
+2020-10-02,Codru Lozova,Petrocub,1,4,A
+2020-10-02,Milsami Orhei,Sfintul Gheorghe,1,1,D
+2020-10-03,Floresti,Dacia-Buiucani,1,0,H
+2020-10-03,Sheriff Tiraspol,Zimbru,4,0,H
+2020-10-04,Dinamo-Auto,Speranta Nisporeni,3,3,D
+2020-10-16,Speranta Nisporeni,Floresti,0,0,D
+2020-10-16,Codru Lozova,Zimbru,0,2,A
+2020-10-17,Sfintul Gheorghe,Dinamo-Auto,1,1,D
+2020-10-17,Sheriff Tiraspol,Milsami Orhei,1,0,H
+2020-10-18,Dacia-Buiucani,Petrocub,0,0,D
+2020-10-20,Dinamo-Auto,Sheriff Tiraspol,1,2,A
+2020-10-20,Floresti,Sfintul Gheorghe,1,4,A
+2020-10-20,Milsami Orhei,Zimbru,2,0,H
+2020-10-21,Codru Lozova,Dacia-Buiucani,0,1,A
+2020-10-21,Petrocub,Speranta Nisporeni,2,0,H
+2020-10-24,Codru Lozova,Milsami Orhei,1,4,A
+2020-10-24,Sheriff Tiraspol,Floresti,5,0,H
+2020-10-25,Sfintul Gheorghe,Petrocub,0,4,A
+2020-10-25,Zimbru,Dinamo-Auto,0,0,D
+2020-10-25,Speranta Nisporeni,Dacia-Buiucani,0,0,D
+2020-10-31,Dinamo-Auto,Milsami Orhei,1,1,D
+2020-10-31,Speranta Nisporeni,Codru Lozova,3,0,H
+2020-11-01,Dacia-Buiucani,Sfintul Gheorghe,0,4,A
+2020-11-01,Petrocub,Sheriff Tiraspol,1,0,H
+2020-11-02,Floresti,Zimbru,1,0,H
+2020-11-06,Zimbru,Petrocub,0,1,A
+2020-11-06,Sfintul Gheorghe,Speranta Nisporeni,1,0,H
+2020-11-06,Milsami Orhei,Floresti,3,0,H
+2020-11-07,Sheriff Tiraspol,Dacia-Buiucani,0,0,D
+2020-11-08,Codru Lozova,Dinamo-Auto,1,4,A
+2020-11-20,Dinamo-Auto,Floresti,2,1,H
+2020-11-20,Zimbru,Dacia-Buiucani,1,3,A
+2020-11-21,Codru Lozova,Sfintul Gheorghe,0,0,D
+2020-11-21,Sheriff Tiraspol,Speranta Nisporeni,3,0,H
+2020-11-22,Milsami Orhei,Petrocub,1,3,A
+2020-11-24,Codru Lozova,Floresti,2,1,H
+2020-11-25,Sfintul Gheorghe,Sheriff Tiraspol,0,2,A
+2020-11-25,Speranta Nisporeni,Zimbru,2,2,D
+2020-11-26,Dacia-Buiucani,Milsami Orhei,0,0,D
+2020-11-26,Petrocub,Dinamo-Auto,1,1,D
+2020-11-28,Codru Lozova,Sheriff Tiraspol,1,2,A
+2020-11-29,Dinamo-Auto,Dacia-Buiucani,1,1,D
+2020-11-29,Floresti,Petrocub,0,1,A
+2020-11-29,Zimbru,Sfintul Gheorghe,2,3,A
+2021-02-20,Milsami Orhei,Speranta Nisporeni,3,0,H
+2021-02-20,Sheriff Tiraspol,Sfintul Gheorghe,4,1,H
+2021-02-23,Codru Lozova,Petrocub,1,9,A
+2021-02-23,Dacia-Buiucani,Floresti,2,2,D
+2021-02-24,Speranta Nisporeni,Dinamo-Auto,0,4,A
+2021-02-24,Zimbru,Sheriff Tiraspol,0,4,A
+2021-02-25,Sfintul Gheorghe,Milsami Orhei,1,3,A
+2021-02-27,Petrocub,Dacia-Buiucani,4,1,H
+2021-02-28,Floresti,Speranta Nisporeni,4,4,D
+2021-02-28,Zimbru,Codru Lozova,2,1,H
+2021-03-01,Dinamo-Auto,Sfintul Gheorghe,0,2,A
+2021-03-01,Milsami Orhei,Sheriff Tiraspol,0,1,A
+2021-03-06,Dacia-Buiucani,Codru Lozova,5,1,H
+2021-03-06,Sheriff Tiraspol,Dinamo-Auto,7,0,H
+2021-03-07,Speranta Nisporeni,Petrocub,1,3,A
+2021-03-07,Zimbru,Milsami Orhei,1,2,A
+2021-03-08,Sfintul Gheorghe,Floresti,3,2,H
+2021-03-12,Milsami Orhei,Codru Lozova,7,2,H
+2021-03-12,Dinamo-Auto,Zimbru,3,0,H
+2021-03-13,Sheriff Tiraspol,Floresti,6,0,H
+2021-03-13,Petrocub,Sfintul Gheorghe,2,0,H
+2021-03-14,Dacia-Buiucani,Speranta Nisporeni,4,1,H
+2021-03-19,Milsami Orhei,Dinamo-Auto,2,2,D
+2021-03-19,Sfintul Gheorghe,Dacia-Buiucani,2,0,H
+2021-03-19,Sheriff Tiraspol,Petrocub,0,0,D
+2021-04-11,Speranta Nisporeni,Sfintul Gheorghe,0,3,A
+2021-04-11,Dinamo-Auto,Codru Lozova,1,0,H
+2021-04-11,Dacia-Buiucani,Sheriff Tiraspol,0,4,A
+2021-04-12,Floresti,Milsami Orhei,2,5,A
+2021-04-12,Petrocub,Zimbru,3,0,H
+2021-04-15,Floresti,Dinamo-Auto,4,1,H
+2021-04-15,Codru Lozova,Sfintul Gheorghe,1,2,A
+2021-04-16,Speranta Nisporeni,Sheriff Tiraspol,0,10,A
+2021-04-16,Dacia-Buiucani,Zimbru,1,1,D
+2021-04-16,Petrocub,Milsami Orhei,1,1,D
+2021-04-23,Dinamo-Auto,Petrocub,0,0,D
+2021-04-23,Floresti,Codru Lozova,2,1,H
+2021-04-23,Zimbru,Speranta Nisporeni,6,0,H
+2021-04-24,Milsami Orhei,Dacia-Buiucani,3,0,H
+2021-04-24,Sheriff Tiraspol,Sfintul Gheorghe,2,0,H
+2021-04-26,Codru Lozova,Speranta Nisporeni,1,2,A
+2021-04-27,Zimbru,Floresti,3,0,H
+2021-04-29,Dacia-Buiucani,Dinamo-Auto,2,1,H
+2021-04-29,Codru Lozova,Sheriff Tiraspol,0,6,A
+2021-04-30,Speranta Nisporeni,Milsami Orhei,0,4,A
+2021-04-30,Sfintul Gheorghe,Zimbru,4,3,H
+2021-04-30,Petrocub,Floresti,4,0,H
+2021-05-07,Dinamo-Auto,Speranta Nisporeni,0,0,D
+2021-05-07,Floresti,Dacia-Buiucani,2,0,H
+2021-05-07,Petrocub,Codru Lozova,1,0,H
+2021-05-08,Zimbru,Sheriff Tiraspol,0,1,A
+2021-05-08,Milsami Orhei,Sfintul Gheorghe,2,1,H
+2021-05-11,Dacia-Buiucani,Petrocub,1,2,A
+2021-05-11,Speranta Nisporeni,Floresti,1,3,A
+2021-05-12,Codru Lozova,Zimbru,1,5,A
+2021-05-12,Sfintul Gheorghe,Dinamo-Auto,3,1,H
+2021-05-12,Sheriff Tiraspol,Milsami Orhei,6,0,H
+2021-05-15,Dinamo-Auto,Sheriff Tiraspol,0,7,A
+2021-05-15,Milsami Orhei,Zimbru,2,1,H
+2021-05-15,Codru Lozova,Dacia-Buiucani,0,4,A
+2021-05-16,Floresti,Sfintul Gheorghe,0,4,A
+2021-05-16,Petrocub,Speranta Nisporeni,3,0,H
+2021-05-18,Zimbru,Dinamo-Auto,1,1,D
+2021-05-18,Codru Lozova,Milsami Orhei,2,4,A
+2021-05-19,Sfintul Gheorghe,Petrocub,0,3,A
+2021-05-19,Floresti,Sheriff Tiraspol,0,3,A
+2021-05-19,Speranta Nisporeni,Dacia-Buiucani,0,3,A
+2021-05-22,Dinamo-Auto,Milsami Orhei,2,0,H
+2021-05-22,Petrocub,Sheriff Tiraspol,0,1,A
+2021-05-23,Dacia-Buiucani,Sfintul Gheorghe,1,0,H
+2021-05-23,Floresti,Zimbru,3,1,H
+2021-05-26,Sheriff Tiraspol,Dacia-Buiucani,1,1,D
+2021-05-26,Milsami Orhei,Floresti,3,2,H
+2021-05-26,Codru Lozova,Dinamo-Auto,0,2,A
+2021-05-26,Zimbru,Petrocub,0,0,D

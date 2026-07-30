@@ -1,0 +1,307 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2017-07-28,Vfl Bochum,FC St. Pauli,0,1,A
+2017-07-29,FC Ingolstadt 04,Union Berlin,0,1,A
+2017-07-29,SV Darmstadt 98,SpVgg Greuther Furth,1,0,H
+2017-07-29,Arminia Bielefeld,Jahn Regensburg,2,1,H
+2017-07-30,FC Nurnberg,FC Kaiserslautern,3,0,H
+2017-07-30,Dynamo Dresden,MSV Duisburg,1,0,H
+2017-07-30,Holstein Kiel,SV Sandhausen,2,2,D
+2017-07-31,Fortuna Dusseldorf,Eintracht Braunschweig,2,2,D
+2017-08-04,Union Berlin,Holstein Kiel,4,3,H
+2017-08-04,SV Sandhausen,FC Ingolstadt 04,1,0,H
+2017-08-04,FC Kaiserslautern,SV Darmstadt 98,1,1,D
+2017-08-05,MSV Duisburg,Vfl Bochum,1,1,D
+2017-08-05,Eintracht Braunschweig,FC Heidenheim,2,0,H
+2017-08-06,Jahn Regensburg,FC Nurnberg,0,1,A
+2017-08-06,SpVgg Greuther Furth,Arminia Bielefeld,1,2,A
+2017-08-06,Erzgebirge AUE,Fortuna Dusseldorf,0,2,A
+2017-08-07,FC St. Pauli,Dynamo Dresden,2,2,D
+2017-08-09,FC Heidenheim,Erzgebirge AUE,2,1,H
+2017-08-18,SV Darmstadt 98,FC St. Pauli,3,0,H
+2017-08-18,Eintracht Braunschweig,Erzgebirge AUE,1,1,D
+2017-08-19,Fortuna Dusseldorf,FC Kaiserslautern,2,0,H
+2017-08-19,FC Heidenheim,MSV Duisburg,1,2,A
+2017-08-19,Dynamo Dresden,SV Sandhausen,0,4,A
+2017-08-20,FC Nurnberg,Union Berlin,2,2,D
+2017-08-20,FC Ingolstadt 04,Jahn Regensburg,2,4,A
+2017-08-20,Holstein Kiel,SpVgg Greuther Furth,3,1,H
+2017-08-21,Arminia Bielefeld,Vfl Bochum,2,0,H
+2017-08-25,SpVgg Greuther Furth,FC Ingolstadt 04,0,1,A
+2017-08-25,MSV Duisburg,SV Darmstadt 98,1,2,A
+2017-08-26,Jahn Regensburg,Holstein Kiel,1,2,A
+2017-08-26,FC St. Pauli,FC Heidenheim,1,0,H
+2017-08-26,Erzgebirge AUE,FC Nurnberg,3,1,H
+2017-08-27,Vfl Bochum,Dynamo Dresden,3,2,H
+2017-08-27,Union Berlin,Arminia Bielefeld,1,1,D
+2017-08-27,SV Sandhausen,Fortuna Dusseldorf,1,2,A
+2017-08-28,FC Kaiserslautern,Eintracht Braunschweig,1,1,D
+2017-09-08,FC Heidenheim,Jahn Regensburg,1,3,A
+2017-09-08,Dynamo Dresden,SpVgg Greuther Furth,1,1,D
+2017-09-09,FC Ingolstadt 04,Erzgebirge AUE,1,2,A
+2017-09-09,Arminia Bielefeld,MSV Duisburg,0,4,A
+2017-09-09,Holstein Kiel,FC Kaiserslautern,2,1,H
+2017-09-10,Fortuna Dusseldorf,Union Berlin,3,2,H
+2017-09-10,SV Darmstadt 98,Vfl Bochum,1,2,A
+2017-09-10,Eintracht Braunschweig,SV Sandhausen,1,1,D
+2017-09-11,FC Nurnberg,FC St. Pauli,0,1,A
+2017-09-15,Erzgebirge AUE,Holstein Kiel,0,3,A
+2017-09-15,Union Berlin,Eintracht Braunschweig,1,1,D
+2017-09-16,FC St. Pauli,FC Ingolstadt 04,0,4,A
+2017-09-16,MSV Duisburg,FC Nurnberg,1,6,A
+2017-09-16,SV Sandhausen,FC Kaiserslautern,1,0,H
+2017-09-17,Vfl Bochum,FC Heidenheim,1,2,A
+2017-09-17,Jahn Regensburg,Dynamo Dresden,0,2,A
+2017-09-17,SpVgg Greuther Furth,Fortuna Dusseldorf,3,1,H
+2017-09-17,SV Darmstadt 98,Arminia Bielefeld,4,3,H
+2017-09-19,FC Ingolstadt 04,MSV Duisburg,2,2,D
+2017-09-19,SV Sandhausen,Union Berlin,1,0,H
+2017-09-19,Holstein Kiel,FC St. Pauli,0,1,A
+2017-09-19,FC Kaiserslautern,Erzgebirge AUE,0,2,A
+2017-09-20,Fortuna Dusseldorf,Jahn Regensburg,1,0,H
+2017-09-20,FC Heidenheim,SV Darmstadt 98,2,2,D
+2017-09-20,Dynamo Dresden,Arminia Bielefeld,0,2,A
+2017-09-20,Eintracht Braunschweig,SpVgg Greuther Furth,3,0,H
+2017-09-21,FC Nurnberg,Vfl Bochum,3,1,H
+2017-09-22,MSV Duisburg,Holstein Kiel,1,3,A
+2017-09-22,Erzgebirge AUE,SV Sandhausen,1,0,H
+2017-09-23,Jahn Regensburg,Eintracht Braunschweig,2,1,H
+2017-09-23,FC St. Pauli,Fortuna Dusseldorf,1,2,A
+2017-09-23,Arminia Bielefeld,FC Heidenheim,1,1,D
+2017-09-24,Vfl Bochum,FC Ingolstadt 04,2,0,H
+2017-09-24,SpVgg Greuther Furth,FC Nurnberg,1,3,A
+2017-09-24,SV Darmstadt 98,Dynamo Dresden,3,3,D
+2017-09-25,Union Berlin,FC Kaiserslautern,5,0,H
+2017-09-29,FC Ingolstadt 04,SV Darmstadt 98,3,0,H
+2017-09-29,FC Kaiserslautern,SpVgg Greuther Furth,3,0,H
+2017-09-30,FC Nurnberg,Arminia Bielefeld,1,2,A
+2017-09-30,Erzgebirge AUE,Union Berlin,1,2,A
+2017-09-30,Holstein Kiel,Vfl Bochum,3,0,H
+2017-10-01,FC Heidenheim,Dynamo Dresden,0,2,A
+2017-10-01,SV Sandhausen,Jahn Regensburg,2,0,H
+2017-10-01,Eintracht Braunschweig,FC St. Pauli,0,2,A
+2017-10-02,Fortuna Dusseldorf,MSV Duisburg,3,1,H
+2017-10-13,FC St. Pauli,FC Kaiserslautern,1,1,D
+2017-10-13,MSV Duisburg,Eintracht Braunschweig,0,0,D
+2017-10-14,Vfl Bochum,SV Sandhausen,2,0,H
+2017-10-14,Dynamo Dresden,FC Ingolstadt 04,2,2,D
+2017-10-14,Arminia Bielefeld,Fortuna Dusseldorf,0,2,A
+2017-10-15,Jahn Regensburg,Union Berlin,0,2,A
+2017-10-15,SpVgg Greuther Furth,Erzgebirge AUE,2,1,H
+2017-10-15,FC Heidenheim,Holstein Kiel,3,5,A
+2017-10-16,SV Darmstadt 98,FC Nurnberg,3,4,A
+2017-10-20,Fortuna Dusseldorf,SV Darmstadt 98,1,0,H
+2017-10-20,FC Ingolstadt 04,FC Heidenheim,3,0,H
+2017-10-21,Union Berlin,SpVgg Greuther Furth,3,1,H
+2017-10-21,Holstein Kiel,Arminia Bielefeld,2,1,H
+2017-10-21,Eintracht Braunschweig,Vfl Bochum,1,0,H
+2017-10-22,FC Nurnberg,Dynamo Dresden,2,1,H
+2017-10-22,Erzgebirge AUE,Jahn Regensburg,1,0,H
+2017-10-22,FC Kaiserslautern,MSV Duisburg,0,1,A
+2017-10-23,SV Sandhausen,FC St. Pauli,1,1,D
+2017-10-27,FC St. Pauli,Erzgebirge AUE,1,1,D
+2017-10-27,Arminia Bielefeld,FC Ingolstadt 04,1,3,A
+2017-10-28,Jahn Regensburg,FC Kaiserslautern,3,1,H
+2017-10-28,SpVgg Greuther Furth,SV Sandhausen,2,1,H
+2017-10-28,SV Darmstadt 98,Holstein Kiel,1,1,D
+2017-10-29,FC Heidenheim,FC Nurnberg,1,0,H
+2017-10-29,MSV Duisburg,Union Berlin,1,1,D
+2017-10-29,Dynamo Dresden,Eintracht Braunschweig,1,1,D
+2017-10-30,Vfl Bochum,Fortuna Dusseldorf,0,0,D
+2017-11-03,SV Sandhausen,MSV Duisburg,0,1,A
+2017-11-03,FC Kaiserslautern,Vfl Bochum,0,0,D
+2017-11-04,Jahn Regensburg,SpVgg Greuther Furth,3,2,H
+2017-11-04,Union Berlin,FC St. Pauli,1,0,H
+2017-11-04,Eintracht Braunschweig,SV Darmstadt 98,2,2,D
+2017-11-05,Fortuna Dusseldorf,FC Heidenheim,2,2,D
+2017-11-05,Erzgebirge AUE,Arminia Bielefeld,1,1,D
+2017-11-05,Holstein Kiel,Dynamo Dresden,3,0,H
+2017-11-06,FC Nurnberg,FC Ingolstadt 04,1,2,A
+2017-11-17,SV Darmstadt 98,SV Sandhausen,1,2,A
+2017-11-17,Arminia Bielefeld,Eintracht Braunschweig,2,2,D
+2017-11-18,FC Nurnberg,Holstein Kiel,2,2,D
+2017-11-18,Vfl Bochum,SpVgg Greuther Furth,1,1,D
+2017-11-18,FC Heidenheim,Union Berlin,4,3,H
+2017-11-19,FC Ingolstadt 04,Fortuna Dusseldorf,1,0,H
+2017-11-19,FC St. Pauli,Jahn Regensburg,2,2,D
+2017-11-19,MSV Duisburg,Erzgebirge AUE,3,0,H
+2017-11-20,Dynamo Dresden,FC Kaiserslautern,1,2,A
+2017-11-24,Union Berlin,SV Darmstadt 98,3,3,D
+2017-11-24,SV Sandhausen,FC Heidenheim,1,2,A
+2017-11-25,Jahn Regensburg,MSV Duisburg,4,0,H
+2017-11-25,Holstein Kiel,FC Ingolstadt 04,0,0,D
+2017-11-25,Eintracht Braunschweig,FC Nurnberg,2,3,A
+2017-11-26,SpVgg Greuther Furth,FC St. Pauli,4,0,H
+2017-11-26,Erzgebirge AUE,Vfl Bochum,1,1,D
+2017-11-26,FC Kaiserslautern,Arminia Bielefeld,0,2,A
+2017-11-27,Fortuna Dusseldorf,Dynamo Dresden,1,3,A
+2017-12-01,FC Heidenheim,FC Kaiserslautern,3,2,H
+2017-12-01,Arminia Bielefeld,FC St. Pauli,5,0,H
+2017-12-02,FC Nurnberg,SV Sandhausen,1,0,H
+2017-12-02,MSV Duisburg,SpVgg Greuther Furth,2,0,H
+2017-12-02,Holstein Kiel,Fortuna Dusseldorf,2,2,D
+2017-12-03,Vfl Bochum,Union Berlin,2,1,H
+2017-12-03,SV Darmstadt 98,Jahn Regensburg,0,1,A
+2017-12-03,Dynamo Dresden,Erzgebirge AUE,4,0,H
+2017-12-04,FC Ingolstadt 04,Eintracht Braunschweig,0,2,A
+2017-12-08,Erzgebirge AUE,SV Darmstadt 98,1,0,H
+2017-12-08,Eintracht Braunschweig,Holstein Kiel,0,0,D
+2017-12-09,Jahn Regensburg,Vfl Bochum,0,1,A
+2017-12-09,SpVgg Greuther Furth,FC Heidenheim,1,0,H
+2017-12-09,Union Berlin,Dynamo Dresden,0,1,A
+2017-12-10,FC St. Pauli,MSV Duisburg,2,2,D
+2017-12-10,SV Sandhausen,Arminia Bielefeld,3,1,H
+2017-12-10,FC Kaiserslautern,FC Ingolstadt 04,1,1,D
+2017-12-11,Fortuna Dusseldorf,FC Nurnberg,0,2,A
+2017-12-15,Union Berlin,FC Ingolstadt 04,1,2,A
+2017-12-15,Eintracht Braunschweig,Fortuna Dusseldorf,0,1,A
+2017-12-16,Jahn Regensburg,Arminia Bielefeld,3,2,H
+2017-12-16,Erzgebirge AUE,FC Heidenheim,1,1,D
+2017-12-16,FC Kaiserslautern,FC Nurnberg,1,1,D
+2017-12-17,SpVgg Greuther Furth,SV Darmstadt 98,1,1,D
+2017-12-17,MSV Duisburg,Dynamo Dresden,2,0,H
+2017-12-17,SV Sandhausen,Holstein Kiel,3,1,H
+2017-12-18,FC St. Pauli,Vfl Bochum,2,1,H
+2018-01-23,Vfl Bochum,MSV Duisburg,0,2,A
+2018-01-23,FC Nurnberg,Jahn Regensburg,2,2,D
+2018-01-23,FC Ingolstadt 04,SV Sandhausen,0,0,D
+2018-01-23,Holstein Kiel,Union Berlin,2,2,D
+2018-01-24,Fortuna Dusseldorf,Erzgebirge AUE,2,1,H
+2018-01-24,FC Heidenheim,Eintracht Braunschweig,2,0,H
+2018-01-24,Arminia Bielefeld,SpVgg Greuther Furth,0,0,D
+2018-01-25,Dynamo Dresden,FC St. Pauli,1,3,A
+2018-01-26,Jahn Regensburg,FC Ingolstadt 04,3,2,H
+2018-01-26,Union Berlin,FC Nurnberg,0,1,A
+2018-01-27,SpVgg Greuther Furth,Holstein Kiel,0,0,D
+2018-01-27,MSV Duisburg,FC Heidenheim,3,3,D
+2018-01-27,FC Kaiserslautern,Fortuna Dusseldorf,1,3,A
+2018-01-28,FC St. Pauli,SV Darmstadt 98,0,1,A
+2018-01-28,SV Sandhausen,Dynamo Dresden,1,0,H
+2018-01-28,Erzgebirge AUE,Eintracht Braunschweig,1,3,A
+2018-01-29,Vfl Bochum,Arminia Bielefeld,0,1,A
+2018-02-02,Fortuna Dusseldorf,SV Sandhausen,1,0,H
+2018-02-02,FC Nurnberg,Erzgebirge AUE,4,1,H
+2018-02-03,FC Heidenheim,FC St. Pauli,3,1,H
+2018-02-03,FC Ingolstadt 04,SpVgg Greuther Furth,3,0,H
+2018-02-03,Holstein Kiel,Jahn Regensburg,1,1,D
+2018-02-04,SV Darmstadt 98,MSV Duisburg,1,2,A
+2018-02-04,Dynamo Dresden,Vfl Bochum,2,0,H
+2018-02-04,Eintracht Braunschweig,FC Kaiserslautern,1,2,A
+2018-02-05,Arminia Bielefeld,Union Berlin,1,1,D
+2018-02-09,Vfl Bochum,SV Darmstadt 98,2,1,H
+2018-02-09,FC Kaiserslautern,Holstein Kiel,3,1,H
+2018-02-10,Jahn Regensburg,FC Heidenheim,2,0,H
+2018-02-10,Union Berlin,Fortuna Dusseldorf,3,1,H
+2018-02-10,MSV Duisburg,Arminia Bielefeld,2,2,D
+2018-02-11,SpVgg Greuther Furth,Dynamo Dresden,1,0,H
+2018-02-11,SV Sandhausen,Eintracht Braunschweig,0,0,D
+2018-02-11,Erzgebirge AUE,FC Ingolstadt 04,0,0,D
+2018-02-12,FC St. Pauli,FC Nurnberg,0,0,D
+2018-02-16,FC Heidenheim,Vfl Bochum,1,0,H
+2018-02-16,FC Kaiserslautern,SV Sandhausen,0,1,A
+2018-02-17,Fortuna Dusseldorf,SpVgg Greuther Furth,1,1,D
+2018-02-17,FC Ingolstadt 04,FC St. Pauli,0,1,A
+2018-02-17,Arminia Bielefeld,SV Darmstadt 98,2,0,H
+2018-02-17,Holstein Kiel,Erzgebirge AUE,2,2,D
+2018-02-18,FC Nurnberg,MSV Duisburg,3,1,H
+2018-02-18,Dynamo Dresden,Jahn Regensburg,1,0,H
+2018-02-18,Eintracht Braunschweig,Union Berlin,1,0,H
+2018-02-21,SV Darmstadt 98,FC Kaiserslautern,1,2,A
+2018-02-23,Jahn Regensburg,Fortuna Dusseldorf,4,3,H
+2018-02-23,Arminia Bielefeld,Dynamo Dresden,2,3,A
+2018-02-24,SpVgg Greuther Furth,Eintracht Braunschweig,2,1,H
+2018-02-24,Union Berlin,SV Sandhausen,2,1,H
+2018-02-24,MSV Duisburg,FC Ingolstadt 04,2,1,H
+2018-02-24,Erzgebirge AUE,FC Kaiserslautern,2,1,H
+2018-02-25,Vfl Bochum,FC Nurnberg,0,0,D
+2018-02-25,SV Darmstadt 98,FC Heidenheim,1,1,D
+2018-02-25,FC St. Pauli,Holstein Kiel,3,2,H
+2018-03-02,Dynamo Dresden,SV Darmstadt 98,0,2,A
+2018-03-02,FC Kaiserslautern,Union Berlin,4,3,H
+2018-03-03,FC Nurnberg,SpVgg Greuther Furth,0,2,A
+2018-03-03,SV Sandhausen,Erzgebirge AUE,1,1,D
+2018-03-03,Holstein Kiel,MSV Duisburg,5,0,H
+2018-03-04,Fortuna Dusseldorf,FC St. Pauli,2,1,H
+2018-03-04,FC Heidenheim,Arminia Bielefeld,2,2,D
+2018-03-04,Eintracht Braunschweig,Jahn Regensburg,2,1,H
+2018-03-05,FC Ingolstadt 04,Vfl Bochum,0,1,A
+2018-03-09,Dynamo Dresden,FC Heidenheim,3,2,H
+2018-03-09,Arminia Bielefeld,FC Nurnberg,1,0,H
+2018-03-10,Vfl Bochum,Holstein Kiel,1,1,D
+2018-03-10,SpVgg Greuther Furth,FC Kaiserslautern,2,1,H
+2018-03-10,SV Darmstadt 98,FC Ingolstadt 04,1,1,D
+2018-03-10,FC St. Pauli,Eintracht Braunschweig,0,0,D
+2018-03-11,Jahn Regensburg,SV Sandhausen,2,1,H
+2018-03-11,Union Berlin,Erzgebirge AUE,0,0,D
+2018-03-11,MSV Duisburg,Fortuna Dusseldorf,1,2,A
+2018-03-16,Fortuna Dusseldorf,Arminia Bielefeld,4,2,H
+2018-03-16,Holstein Kiel,FC Heidenheim,2,1,H
+2018-03-17,Union Berlin,Jahn Regensburg,2,2,D
+2018-03-17,SV Sandhausen,Vfl Bochum,2,3,A
+2018-03-17,FC Kaiserslautern,FC St. Pauli,1,1,D
+2018-03-18,FC Nurnberg,SV Darmstadt 98,1,1,D
+2018-03-18,FC Ingolstadt 04,Dynamo Dresden,4,2,H
+2018-03-18,Eintracht Braunschweig,MSV Duisburg,3,2,H
+2018-03-19,Erzgebirge AUE,SpVgg Greuther Furth,2,1,H
+2018-03-31,FC Heidenheim,FC Ingolstadt 04,1,2,A
+2018-03-31,Dynamo Dresden,FC Nurnberg,1,1,D
+2018-03-31,MSV Duisburg,FC Kaiserslautern,1,4,A
+2018-04-01,Vfl Bochum,Eintracht Braunschweig,2,0,H
+2018-04-01,Jahn Regensburg,Erzgebirge AUE,1,3,A
+2018-04-01,SpVgg Greuther Furth,Union Berlin,2,1,H
+2018-04-01,FC St. Pauli,SV Sandhausen,1,1,D
+2018-04-01,Arminia Bielefeld,Holstein Kiel,1,1,D
+2018-04-02,SV Darmstadt 98,Fortuna Dusseldorf,1,0,H
+2018-04-06,Fortuna Dusseldorf,Vfl Bochum,1,2,A
+2018-04-06,SV Sandhausen,SpVgg Greuther Furth,0,0,D
+2018-04-07,FC Nurnberg,FC Heidenheim,3,2,H
+2018-04-07,Union Berlin,MSV Duisburg,0,0,D
+2018-04-07,Erzgebirge AUE,FC St. Pauli,2,1,H
+2018-04-07,Holstein Kiel,SV Darmstadt 98,0,0,D
+2018-04-08,FC Ingolstadt 04,Arminia Bielefeld,2,2,D
+2018-04-08,Eintracht Braunschweig,Dynamo Dresden,1,1,D
+2018-04-08,FC Kaiserslautern,Jahn Regensburg,1,1,D
+2018-04-13,Vfl Bochum,FC Kaiserslautern,3,2,H
+2018-04-13,SpVgg Greuther Furth,Jahn Regensburg,1,2,A
+2018-04-14,Dynamo Dresden,Holstein Kiel,0,4,A
+2018-04-14,FC St. Pauli,Union Berlin,0,1,A
+2018-04-14,MSV Duisburg,SV Sandhausen,0,2,A
+2018-04-14,Arminia Bielefeld,Erzgebirge AUE,2,0,H
+2018-04-15,FC Heidenheim,Fortuna Dusseldorf,3,1,H
+2018-04-15,SV Darmstadt 98,Eintracht Braunschweig,1,1,D
+2018-04-15,FC Ingolstadt 04,FC Nurnberg,1,1,D
+2018-04-20,SpVgg Greuther Furth,Vfl Bochum,1,1,D
+2018-04-20,Eintracht Braunschweig,Arminia Bielefeld,0,0,D
+2018-04-21,Jahn Regensburg,FC St. Pauli,3,1,H
+2018-04-21,Union Berlin,FC Heidenheim,1,1,D
+2018-04-21,SV Sandhausen,SV Darmstadt 98,1,1,D
+2018-04-22,Fortuna Dusseldorf,FC Ingolstadt 04,3,0,H
+2018-04-22,Erzgebirge AUE,MSV Duisburg,1,3,A
+2018-04-22,FC Kaiserslautern,Dynamo Dresden,0,1,A
+2018-04-23,Holstein Kiel,FC Nurnberg,1,3,A
+2018-04-27,Vfl Bochum,Erzgebirge AUE,2,1,H
+2018-04-27,Arminia Bielefeld,FC Kaiserslautern,3,2,H
+2018-04-28,SV Darmstadt 98,Union Berlin,3,1,H
+2018-04-28,Dynamo Dresden,Fortuna Dusseldorf,1,2,A
+2018-04-28,FC St. Pauli,SpVgg Greuther Furth,3,0,H
+2018-04-29,FC Heidenheim,SV Sandhausen,2,0,H
+2018-04-29,FC Ingolstadt 04,Holstein Kiel,1,5,A
+2018-04-29,MSV Duisburg,Jahn Regensburg,4,1,H
+2018-04-30,FC Nurnberg,Eintracht Braunschweig,2,0,H
+2018-05-06,Fortuna Dusseldorf,Holstein Kiel,1,1,D
+2018-05-06,Jahn Regensburg,SV Darmstadt 98,0,3,A
+2018-05-06,SpVgg Greuther Furth,MSV Duisburg,2,2,D
+2018-05-06,Union Berlin,Vfl Bochum,3,1,H
+2018-05-06,FC St. Pauli,Arminia Bielefeld,1,0,H
+2018-05-06,SV Sandhausen,FC Nurnberg,0,2,A
+2018-05-06,Erzgebirge AUE,Dynamo Dresden,0,0,D
+2018-05-06,Eintracht Braunschweig,FC Ingolstadt 04,0,2,A
+2018-05-06,FC Kaiserslautern,FC Heidenheim,1,0,H
+2018-05-13,FC Nurnberg,Fortuna Dusseldorf,2,3,A
+2018-05-13,Vfl Bochum,Jahn Regensburg,1,1,D
+2018-05-13,FC Heidenheim,SpVgg Greuther Furth,1,1,D
+2018-05-13,SV Darmstadt 98,Erzgebirge AUE,1,0,H
+2018-05-13,Dynamo Dresden,Union Berlin,0,1,A
+2018-05-13,FC Ingolstadt 04,FC Kaiserslautern,1,3,A
+2018-05-13,MSV Duisburg,FC St. Pauli,2,0,H
+2018-05-13,Arminia Bielefeld,SV Sandhausen,0,0,D
+2018-05-13,Holstein Kiel,Eintracht Braunschweig,6,2,H

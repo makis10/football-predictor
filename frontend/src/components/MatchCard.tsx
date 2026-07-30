@@ -74,7 +74,15 @@ export default function MatchCard({ match, t }: Props) {
         {p && p.insufficient_data ? (
           <div className="mt-auto">
             <span className="text-xs text-gray-500 italic">
-              {t("matchCard.insufficient")}
+              {/* Name the side we actually lack. Saying "unknown teams" on a
+                  PAOK or Benfica tie reads as a broken site — most of these
+                  fixtures pair a club we model with one from a league nobody
+                  publishes history for. `knownTeams` is absent on the list
+                  payload, so fall back to the generic wording. */}
+              {match.unknown_teams?.length
+                ? t("matchCard.insufficientNamed",
+                    { teams: match.unknown_teams.join(", ") })
+                : t("matchCard.insufficient")}
             </span>
           </div>
         ) : p ? (
@@ -117,14 +125,27 @@ export default function MatchCard({ match, t }: Props) {
                 >
                   {p.goals_prediction} 2.5
                 </span>
-                {p.ev_score != null && p.ev_score > 0 && (
-                  <span
-                    className="badge bg-emerald-500/20 text-emerald-400 font-semibold"
-                    title={`${p.suggested_market ?? "Value bet"} — expected value per unit staked (not a probability)`}
-                  >
-                    ⚡ EV +{Math.round(p.ev_score * 100)}%
-                  </span>
-                )}
+                {/* Our pick = the outcome the model rates highest, shown with
+                    its probability so the reader can see how confident it
+                    actually is. This replaced an "⚡ EV +x%" badge: EV measured
+                    the model's disagreement with the bookmaker, which turned out
+                    to be anti-predictive (those picks landed 32% of the time vs
+                    53% for simply taking the most likely outcome). */}
+                {(() => {
+                  const pick = Math.max(p.home_win_prob, p.draw_prob, p.away_win_prob);
+                  const label =
+                    pick === p.home_win_prob ? t("matchCard.pickHome")
+                    : pick === p.draw_prob   ? t("matchCard.pickDraw")
+                    : t("matchCard.pickAway");
+                  return (
+                    <span
+                      className="badge bg-emerald-500/20 text-emerald-400 font-semibold"
+                      title={t("matchCard.pickTitle", { n: "470", hit: "53%" })}
+                    >
+                      {label} {Math.round(pick * 100)}%
+                    </span>
+                  );
+                })()}
                 <span
                   className={`w-1.5 h-1.5 rounded-full ${confidenceDot(p.confidence)}`}
                   title={`${p.confidence} confidence`}

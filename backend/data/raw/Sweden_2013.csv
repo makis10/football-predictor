@@ -1,0 +1,243 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,PSH,PSD,PSA
+31/03/2013,Hacken,Goteborg,0,3,A,2.41,3.24,3.31
+31/03/2013,Helsingborg,Djurgarden,3,0,H,1.79,3.77,4.98
+31/03/2013,Syrianska,Kalmar,0,3,A,2.85,3.22,2.74
+01/04/2013,Gefle,Atvidabergs,1,0,H,2.57,3.24,3.05
+01/04/2013,Malmo FF,Halmstad,1,1,D,1.42,4.63,9.27
+01/04/2013,Mjallby,Norrkoping,1,2,A,2.47,3.28,3.16
+01/04/2013,Brommapojkarna,Osters,2,2,D,2.65,3.29,2.92
+01/04/2013,Elfsborg,AIK,2,2,D,2.1,3.36,3.99
+05/04/2013,Atvidabergs,Malmo FF,1,3,A,3.21,3.21,2.48
+07/04/2013,AIK,Syrianska,0,0,D,1.48,4.26,8.64
+07/04/2013,Goteborg,Brommapojkarna,2,0,H,1.43,4.76,8.63
+07/04/2013,Halmstad,Elfsborg,1,1,D,3.78,3.61,2.06
+07/04/2013,Kalmar,Hacken,0,0,D,3.27,3.46,2.31
+08/04/2013,Djurgarden,Mjallby,0,3,A,1.93,3.47,4.54
+08/04/2013,Norrkoping,Gefle,2,1,H,2.06,3.41,4
+08/04/2013,Osters,Helsingborg,1,1,D,3.1,3.26,2.52
+12/04/2013,Brommapojkarna,Norrkoping,1,0,H,3.19,3.43,2.38
+13/04/2013,Syrianska,Osters,0,1,A,2.77,3.23,2.82
+14/04/2013,Atvidabergs,AIK,1,0,H,3.49,3.4,2.24
+14/04/2013,Malmo FF,Kalmar,1,0,H,1.61,3.93,6.7
+14/04/2013,Gefle,Halmstad,2,0,H,2.18,3.44,3.62
+14/04/2013,Hacken,Djurgarden,4,0,H,1.75,3.84,5.2
+15/04/2013,Helsingborg,Mjallby,1,2,A,1.45,4.44,9.23
+15/04/2013,Elfsborg,Goteborg,0,0,D,2.18,3.46,3.58
+17/04/2013,Halmstad,Atvidabergs,0,0,D,2.06,3.47,3.9
+17/04/2013,Osters,Hacken,2,0,H,3.05,3.3,2.54
+17/04/2013,AIK,Malmo FF,0,1,A,2.37,3.33,3.22
+18/04/2013,Djurgarden,Brommapojkarna,1,1,D,1.77,3.74,5.19
+18/04/2013,Goteborg,Syrianska,2,0,H,1.35,5,11.55
+18/04/2013,Kalmar,Elfsborg,1,1,D,3.23,3.31,2.41
+18/04/2013,Mjallby,Gefle,1,0,H,2.22,3.22,3.79
+18/04/2013,Norrkoping,Helsingborg,1,4,A,3.1,3.43,2.43
+21/04/2013,Atvidabergs,Goteborg,1,2,A,3.79,3.35,2.16
+21/04/2013,Halmstad,Kalmar,1,2,A,2.47,3.25,3.19
+21/04/2013,Brommapojkarna,Helsingborg,0,2,A,4.98,3.77,1.79
+21/04/2013,Hacken,Mjallby,2,0,H,1.64,3.98,6.13
+22/04/2013,Gefle,AIK,1,2,A,3.8,3.31,2.17
+22/04/2013,Malmo FF,Osters,2,0,H,1.67,3.92,5.9
+22/04/2013,Syrianska,Norrkoping,3,1,H,2.82,3.42,2.64
+22/04/2013,Elfsborg,Djurgarden,2,0,H,1.62,3.94,6.25
+25/04/2013,Goteborg,Malmo FF,1,1,D,2.61,3.24,3
+26/04/2013,Norrkoping,Hacken,4,2,H,2.83,3.48,2.6
+27/04/2013,Djurgarden,Syrianska,0,1,A,1.88,3.46,4.9
+27/04/2013,Helsingborg,Gefle,5,1,H,1.38,5.12,10
+27/04/2013,Kalmar,Atvidabergs,0,0,D,2,3.58,4.05
+28/04/2013,AIK,Halmstad,3,3,D,1.41,4.66,9.99
+28/04/2013,Mjallby,Brommapojkarna,4,2,H,1.78,3.63,5.34
+28/04/2013,Osters,Elfsborg,1,3,A,3.43,3.31,2.31
+03/05/2013,Malmo FF,Norrkoping,1,1,D,1.47,4.57,7.9
+04/05/2013,Atvidabergs,Djurgarden,5,1,H,2.31,3.17,3.59
+05/05/2013,Elfsborg,Mjallby,2,1,H,1.41,4.68,9.93
+05/05/2013,Halmstad,Osters,1,0,H,2.23,3.41,3.53
+05/05/2013,Syrianska,Helsingborg,0,1,A,4.7,3.8,1.83
+06/05/2013,Gefle,Kalmar,1,1,D,2.38,3.36,3.24
+06/05/2013,Hacken,Brommapojkarna,1,0,H,1.4,5.09,8.74
+06/05/2013,AIK,Goteborg,3,1,H,2.36,3.41,3.24
+10/05/2013,Norrkoping,Elfsborg,1,2,A,3.39,3.6,2.2
+11/05/2013,Goteborg,Halmstad,1,0,H,1.51,4.38,7.55
+12/05/2013,Kalmar,AIK,2,1,H,3.06,3.39,2.48
+12/05/2013,Mjallby,Syrianska,4,1,H,2.04,3.37,4.13
+12/05/2013,Djurgarden,Malmo FF,3,2,H,5.17,3.79,1.76
+13/05/2013,Brommapojkarna,Gefle,4,1,H,2.58,3.28,3.01
+13/05/2013,Osters,Atvidabergs,0,1,A,2.39,3.36,3.22
+13/05/2013,Helsingborg,Hacken,5,0,H,1.83,3.8,4.59
+17/05/2013,Mjallby,Malmo FF,2,2,D,4.37,3.59,1.95
+18/05/2013,Brommapojkarna,Syrianska,1,1,D,2.33,3.47,3.24
+19/05/2013,Hacken,Gefle,2,2,D,1.47,4.55,8.05
+19/05/2013,Osters,AIK,2,3,A,3.72,3.42,2.15
+19/05/2013,Djurgarden,Halmstad,1,0,H,1.86,3.59,4.78
+19/05/2013,Goteborg,Kalmar,2,0,H,1.7,3.76,5.87
+19/05/2013,Norrkoping,Atvidabergs,2,1,H,2.19,3.47,3.56
+20/05/2013,Helsingborg,Elfsborg,2,1,H,2.08,3.42,3.95
+22/05/2013,Gefle,Goteborg,1,1,D,3.46,3.29,2.31
+22/05/2013,AIK,Djurgarden,1,1,D,1.77,3.75,5.17
+23/05/2013,Atvidabergs,Mjallby,3,0,H,2.06,3.53,3.89
+23/05/2013,Elfsborg,Brommapojkarna,6,0,H,1.34,5.47,10.65
+23/05/2013,Halmstad,Norrkoping,1,1,D,2.61,3.44,2.85
+23/05/2013,Syrianska,Hacken,0,3,A,3.69,3.53,2.12
+23/05/2013,Kalmar,Osters,3,1,H,1.88,3.54,4.79
+28/05/2013,Syrianska,Gefle,2,2,D,2.7,3.25,2.88
+29/05/2013,Malmo FF,Helsingborg,1,1,D,2.33,3.42,3.34
+30/05/2013,Djurgarden,Kalmar,1,0,H,2.29,3.45,3.24
+30/05/2013,Norrkoping,AIK,0,1,A,2.96,3.56,2.46
+31/05/2013,Osters,Goteborg,2,0,H,4.45,3.4,1.98
+01/06/2013,Brommapojkarna,Malmo FF,1,3,A,5.97,4.05,1.64
+01/06/2013,Hacken,Elfsborg,0,1,A,2.57,3.55,2.82
+01/06/2013,Helsingborg,Atvidabergs,3,0,H,1.53,4.48,6.85
+01/06/2013,Mjallby,Halmstad,5,1,H,2,3.48,4.19
+15/06/2013,Gefle,Osters,0,0,D,2,3.57,4.15
+17/06/2013,Kalmar,Norrkoping,2,2,D,2.1,3.53,3.77
+17/06/2013,Goteborg,Djurgarden,0,0,D,1.79,3.65,5.25
+19/06/2013,Brommapojkarna,Halmstad,1,1,D,2.52,3.39,3
+19/06/2013,Elfsborg,Gefle,0,0,D,1.44,4.57,8.97
+19/06/2013,Hacken,Atvidabergs,0,2,A,1.71,3.99,5.29
+20/06/2013,Mjallby,Kalmar,0,2,A,2.09,3.5,3.78
+20/06/2013,Syrianska,Malmo FF,2,3,A,5.01,3.79,1.79
+20/06/2013,Norrkoping,Goteborg,1,2,A,2.41,3.24,3.32
+23/06/2013,Atvidabergs,Syrianska,1,0,H,1.81,3.92,4.67
+23/06/2013,Halmstad,Hacken,0,2,A,3.94,3.65,2.02
+23/06/2013,Kalmar,Helsingborg,1,1,D,4.92,3.77,1.81
+24/06/2013,AIK,Brommapojkarna,4,0,H,1.3,5.78,12.05
+24/06/2013,Gefle,Djurgarden,1,1,D,2.69,3.36,2.8
+24/06/2013,Goteborg,Mjallby,4,2,H,1.68,3.93,5.66
+24/06/2013,Osters,Norrkoping,0,2,A,2.97,3.39,2.52
+24/06/2013,Malmo FF,Elfsborg,2,1,H,1.98,3.64,4.09
+27/06/2013,Malmo FF,Hacken,1,3,A,1.76,3.85,5.05
+27/06/2013,Helsingborg,AIK,1,2,A,1.88,3.75,4.42
+30/06/2013,Elfsborg,Syrianska,5,1,H,1.24,6.35,16
+30/06/2013,Djurgarden,Osters,2,0,H,1.76,3.75,5.38
+01/07/2013,AIK,Mjallby,0,0,D,1.4,5,9.5
+01/07/2013,Atvidabergs,Brommapojkarna,4,1,H,1.58,4.38,6.28
+06/07/2013,Brommapojkarna,Kalmar,0,1,A,2.99,3.36,2.54
+06/07/2013,Elfsborg,Atvidabergs,0,1,A,1.51,4.5,7.3
+06/07/2013,Mjallby,Osters,1,1,D,2.06,3.61,3.82
+07/07/2013,Malmo FF,Gefle,3,1,H,1.41,4.76,9.53
+07/07/2013,AIK,Hacken,2,0,H,2.04,3.64,3.84
+07/07/2013,Syrianska,Halmstad,1,2,A,2.29,3.43,3.38
+08/07/2013,Helsingborg,Goteborg,1,1,D,1.75,3.83,5.19
+13/07/2013,Brommapojkarna,Goteborg,2,1,H,4.45,3.72,1.88
+13/07/2013,Elfsborg,Halmstad,2,2,D,1.26,6.38,13.65
+13/07/2013,Hacken,Kalmar,0,1,A,1.66,4.05,5.71
+14/07/2013,Gefle,Norrkoping,2,2,D,3.14,3.45,2.4
+14/07/2013,Mjallby,Djurgarden,2,0,H,2.62,3.31,2.93
+14/07/2013,Malmo FF,Atvidabergs,4,0,H,1.51,4.3,7.86
+14/07/2013,Syrianska,AIK,1,2,A,6.22,3.89,1.65
+15/07/2013,Helsingborg,Osters,3,0,H,1.42,4.98,8.51
+21/07/2013,Djurgarden,Norrkoping,1,2,A,2.29,3.46,3.3
+22/07/2013,Hacken,AIK,2,3,A,2.29,3.41,3.36
+24/07/2013,Halmstad,Helsingborg,0,1,A,5.67,4.08,1.65
+27/07/2013,Atvidabergs,Elfsborg,1,1,D,3.74,3.52,2.1
+27/07/2013,Kalmar,Brommapojkarna,2,2,D,1.64,4.22,5.59
+27/07/2013,Osters,Mjallby,1,1,D,2.29,3.48,3.31
+28/07/2013,Gefle,Malmo FF,2,0,H,4.71,3.77,1.83
+28/07/2013,Goteborg,Helsingborg,2,4,A,2.71,3.3,2.83
+29/07/2013,Halmstad,Syrianska,1,1,D,1.9,3.72,4.29
+03/08/2013,Kalmar,Syrianska,1,0,H,1.71,3.96,5.31
+03/08/2013,Osters,Brommapojkarna,0,0,D,1.83,3.82,4.55
+03/08/2013,AIK,Elfsborg,2,1,H,2.11,3.48,3.77
+04/08/2013,Atvidabergs,Gefle,1,1,D,1.88,3.52,4.83
+04/08/2013,Halmstad,Malmo FF,1,3,A,5.92,4.03,1.64
+04/08/2013,Goteborg,Hacken,3,1,H,2.25,3.4,3.48
+05/08/2013,Norrkoping,Mjallby,3,2,H,1.71,3.97,5.28
+05/08/2013,Djurgarden,Helsingborg,2,1,H,3.98,3.54,2.02
+10/08/2013,Atvidabergs,Halmstad,0,1,A,1.58,4.26,6.39
+10/08/2013,Brommapojkarna,Djurgarden,3,0,H,6.23,4.08,1.61
+10/08/2013,Elfsborg,Kalmar,1,0,H,1.48,4.51,7.76
+11/08/2013,Gefle,Mjallby,2,1,H,1.93,3.6,4.37
+11/08/2013,Helsingborg,Norrkoping,0,0,D,1.54,4.51,6.52
+11/08/2013,Syrianska,Goteborg,0,2,A,4.11,3.54,2
+11/08/2013,Hacken,Osters,0,2,A,1.51,4.38,7.51
+11/08/2013,Malmo FF,AIK,1,0,H,1.91,3.6,4.45
+16/08/2013,Osters,Syrianska,1,0,H,1.75,3.77,5.29
+17/08/2013,Goteborg,Elfsborg,3,1,H,2.43,3.43,3.11
+17/08/2013,Norrkoping,Brommapojkarna,2,1,H,1.61,4.29,5.83
+18/08/2013,Djurgarden,Hacken,1,1,D,2.37,3.35,3.28
+18/08/2013,Halmstad,Gefle,2,2,D,2.45,3.36,3.13
+18/08/2013,Kalmar,Malmo FF,1,4,A,4.25,3.58,1.96
+19/08/2013,AIK,Atvidabergs,3,2,H,1.5,4.49,7.49
+19/08/2013,Mjallby,Helsingborg,4,3,H,5.05,3.96,1.74
+22/08/2013,Norrkoping,Djurgarden,2,3,A,2.11,3.61,3.67
+25/08/2013,Elfsborg,Osters,2,4,A,1.44,4.63,8.72
+25/08/2013,Gefle,Helsingborg,1,2,A,3.39,3.28,2.35
+25/08/2013,Halmstad,AIK,1,0,H,4.96,3.81,1.78
+25/08/2013,Malmo FF,Goteborg,3,1,H,1.65,4.05,5.79
+26/08/2013,Atvidabergs,Kalmar,0,0,D,2.02,3.48,4.08
+26/08/2013,Brommapojkarna,Mjallby,2,0,H,2,3.51,4.12
+26/08/2013,Hacken,Norrkoping,1,0,H,1.89,3.7,4.43
+26/08/2013,Syrianska,Djurgarden,1,3,A,4.3,3.54,1.96
+30/08/2013,Helsingborg,Brommapojkarna,4,2,H,1.34,5.61,10.01
+31/08/2013,AIK,Gefle,3,0,H,1.6,4.23,6.19
+01/09/2013,Goteborg,Atvidabergs,3,0,H,1.57,4.29,6.48
+01/09/2013,Norrkoping,Syrianska,6,1,H,1.52,4.68,6.53
+01/09/2013,Osters,Malmo FF,1,1,D,4.59,3.56,1.9
+01/09/2013,Djurgarden,Elfsborg,1,2,A,2.45,3.43,3.08
+01/09/2013,Kalmar,Halmstad,1,0,H,1.86,3.65,4.66
+01/09/2013,Mjallby,Hacken,1,1,D,5.22,3.85,1.74
+14/09/2013,Atvidabergs,Osters,4,0,H,2.09,3.39,3.95
+14/09/2013,Gefle,Brommapojkarna,1,0,H,1.99,3.56,4.13
+15/09/2013,AIK,Kalmar,0,0,D,1.41,4.75,9.38
+15/09/2013,Elfsborg,Norrkoping,4,1,H,1.72,4.01,5.15
+15/09/2013,Halmstad,Goteborg,0,1,A,4.1,3.58,1.99
+15/09/2013,Hacken,Helsingborg,3,2,H,2.37,3.58,3.05
+15/09/2013,Syrianska,Mjallby,1,2,A,3.72,3.83,2.02
+16/09/2013,Malmo FF,Djurgarden,0,2,A,1.48,4.58,7.61
+20/09/2013,Osters,Halmstad,0,1,A,2,3.61,4.03
+21/09/2013,Kalmar,Gefle,0,0,D,2.25,3.36,3.52
+22/09/2013,Brommapojkarna,Hacken,1,0,H,3.14,3.57,2.35
+22/09/2013,Mjallby,Elfsborg,2,2,D,3.09,3.61,2.36
+22/09/2013,Djurgarden,Atvidabergs,2,0,H,1.75,3.85,5.17
+22/09/2013,Helsingborg,Syrianska,2,2,D,1.16,8.32,21.39
+22/09/2013,Norrkoping,Malmo FF,0,2,A,3.9,3.77,2
+23/09/2013,Goteborg,AIK,3,1,H,2.23,3.48,3.51
+24/09/2013,Osters,Kalmar,1,2,A,2.71,3.28,2.85
+25/09/2013,Brommapojkarna,Elfsborg,1,0,H,3.9,3.64,2.02
+25/09/2013,Hacken,Syrianska,4,0,H,1.28,6.42,11.88
+25/09/2013,Helsingborg,Malmo FF,0,3,A,2.56,3.67,2.76
+26/09/2013,Goteborg,Gefle,3,1,H,1.43,4.7,8.77
+26/09/2013,Mjallby,Atvidabergs,0,1,A,2.61,3.35,2.91
+26/09/2013,Norrkoping,Halmstad,3,2,H,1.72,4.04,5.04
+26/09/2013,Djurgarden,AIK,2,2,D,2.83,3.29,2.72
+28/09/2013,Syrianska,Brommapojkarna,1,2,A,4.23,3.61,1.95
+29/09/2013,Halmstad,Djurgarden,1,4,A,3.14,3.41,2.42
+29/09/2013,Kalmar,Goteborg,2,1,H,3.42,3.61,2.2
+29/09/2013,Elfsborg,Helsingborg,1,1,D,1.87,3.78,4.37
+30/09/2013,AIK,Osters,2,1,H,1.34,4.54,9.44
+30/09/2013,Gefle,Hacken,0,0,D,2.73,3.23,2.52
+30/09/2013,Malmo FF,Mjallby,1,0,H,1.21,5.84,14.39
+30/09/2013,Atvidabergs,Norrkoping,1,3,A,2.56,3.58,2.82
+04/10/2013,Mjallby,AIK,2,3,A,3.94,3.59,1.88
+05/10/2013,Brommapojkarna,Atvidabergs,0,0,D,2.09,3.52,3.82
+05/10/2013,Norrkoping,Kalmar,0,1,A,1.92,3.65,4.36
+06/10/2013,Djurgarden,Goteborg,2,1,H,2.8,3.55,2.59
+06/10/2013,Osters,Gefle,1,4,A,2.41,3.34,3.21
+06/10/2013,Syrianska,Elfsborg,1,3,A,8.39,5.25,1.4
+06/10/2013,Hacken,Malmo FF,2,0,H,3.67,3.74,2.07
+06/10/2013,Helsingborg,Halmstad,4,2,H,1.41,5.25,7.96
+19/10/2013,Gefle,Syrianska,2,0,H,1.34,5.33,10.94
+20/10/2013,Atvidabergs,Helsingborg,3,0,H,3.79,3.82,2
+20/10/2013,Goteborg,Osters,0,0,D,1.47,4.72,7.56
+20/10/2013,Elfsborg,Hacken,0,0,D,1.88,3.87,4.3
+20/10/2013,Malmo FF,Brommapojkarna,2,1,H,1.28,6.16,12.5
+21/10/2013,AIK,Norrkoping,1,0,H,1.53,4.61,6.4
+21/10/2013,Kalmar,Djurgarden,1,2,A,2.58,3.5,2.84
+21/10/2013,Halmstad,Mjallby,1,0,H,1.9,3.75,4.29
+25/10/2013,Hacken,Halmstad,1,3,A,1.78,4.14,4.56
+26/10/2013,Brommapojkarna,AIK,0,6,A,5.3,4.55,1.62
+27/10/2013,Djurgarden,Gefle,1,1,D,1.58,4.23,6.46
+27/10/2013,Mjallby,Goteborg,2,1,H,4.9,4.04,1.74
+27/10/2013,Helsingborg,Kalmar,2,3,A,1.55,4.54,6.34
+27/10/2013,Syrianska,Atvidabergs,4,1,H,4.35,3.72,1.9
+28/10/2013,Norrkoping,Osters,1,1,D,1.91,4.15,3.86
+28/10/2013,Elfsborg,Malmo FF,0,2,A,3.54,3.53,2.18
+03/11/2013,AIK,Helsingborg,2,1,H,1.92,3.89,4.05
+03/11/2013,Atvidabergs,Hacken,2,2,D,3.04,3.2,2.6
+03/11/2013,Gefle,Elfsborg,0,2,A,2.47,3.45,3.02
+03/11/2013,Goteborg,Norrkoping,2,0,H,1.37,5.17,9.77
+03/11/2013,Halmstad,Brommapojkarna,2,2,D,1.92,3.48,4.62
+03/11/2013,Kalmar,Mjallby,2,1,H,1.54,4.21,7.29
+03/11/2013,Malmo FF,Syrianska,3,1,H,1.21,7.67,14.05
+03/11/2013,Osters,Djurgarden,1,1,D,2.64,3.58,2.73
+06/11/2013,Sundsvall,Halmstad,1,1,D,2.52,3.44,2.98
+10/11/2013,Halmstad,Sundsvall,2,1,H,1.68,3.98,5.62

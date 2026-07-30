@@ -1,0 +1,184 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2018-08-17,Qormi,Senglea Athletic,1,0,H
+2018-08-17,Birkirkara,Balzan FC,1,0,H
+2018-08-17,Hibernians,Pieta Hotspurs,2,1,H
+2018-08-18,Hamrun Spartans,Floriana,2,0,H
+2018-08-18,Mosta,St. Andrews,1,3,A
+2018-08-18,Sliema Wanderers,Valletta FC,3,0,H
+2018-08-18,Tarxien Rainbows,Gzira United,1,4,A
+2018-08-24,Senglea Athletic,Mosta,0,2,A
+2018-08-24,Floriana,Sliema Wanderers,0,1,A
+2018-08-24,St. Andrews,Tarxien Rainbows,1,5,A
+2018-08-25,Gzira United,Hamrun Spartans,0,0,D
+2018-08-25,Pieta Hotspurs,Birkirkara,1,2,A
+2018-08-25,Valletta FC,Hibernians,1,2,A
+2018-08-25,Balzan FC,Qormi,4,2,H
+2018-09-14,Hibernians,Floriana,0,2,A
+2018-09-15,Qormi,Pieta Hotspurs,2,2,D
+2018-09-15,Senglea Athletic,Balzan FC,0,5,A
+2018-09-16,Hamrun Spartans,St. Andrews,1,0,H
+2018-09-16,Mosta,Tarxien Rainbows,3,1,H
+2018-09-16,Birkirkara,Valletta FC,0,3,A
+2018-09-16,Sliema Wanderers,Gzira United,0,2,A
+2018-09-21,Pieta Hotspurs,Senglea Athletic,1,1,D
+2018-09-21,Valletta FC,Qormi,6,0,H
+2018-09-21,Balzan FC,Mosta,3,1,H
+2018-09-22,St. Andrews,Sliema Wanderers,0,2,A
+2018-09-22,Tarxien Rainbows,Hamrun Spartans,2,1,H
+2018-09-23,Gzira United,Hibernians,3,2,H
+2018-09-23,Floriana,Birkirkara,0,2,A
+2018-09-28,Hibernians,St. Andrews,2,0,H
+2018-09-28,Qormi,Floriana,1,3,A
+2018-09-28,Senglea Athletic,Valletta FC,1,5,A
+2018-09-29,Balzan FC,Pieta Hotspurs,1,0,H
+2018-09-29,Mosta,Hamrun Spartans,0,0,D
+2018-09-30,Sliema Wanderers,Tarxien Rainbows,3,1,H
+2018-09-30,Birkirkara,Gzira United,1,2,A
+2018-10-05,Pieta Hotspurs,Mosta,3,1,H
+2018-10-05,Valletta FC,Balzan FC,4,1,H
+2018-10-05,Hamrun Spartans,Sliema Wanderers,0,0,D
+2018-10-06,Gzira United,Qormi,1,0,H
+2018-10-06,Floriana,Senglea Athletic,4,1,H
+2018-10-06,Tarxien Rainbows,Hibernians,2,4,A
+2018-10-06,St. Andrews,Birkirkara,2,0,H
+2018-10-19,Senglea Athletic,Gzira United,0,1,A
+2018-10-19,Qormi,St. Andrews,0,2,A
+2018-10-20,Pieta Hotspurs,Valletta FC,0,4,A
+2018-10-20,Birkirkara,Tarxien Rainbows,2,0,H
+2018-10-21,Mosta,Sliema Wanderers,1,2,A
+2018-10-21,Hibernians,Hamrun Spartans,2,1,H
+2018-10-22,Balzan FC,Floriana,2,0,H
+2018-10-26,Hamrun Spartans,Birkirkara,2,1,H
+2018-10-27,Floriana,Pieta Hotspurs,1,2,A
+2018-10-27,Tarxien Rainbows,Qormi,1,0,H
+2018-10-27,Valletta FC,Mosta,5,0,H
+2018-10-27,Gzira United,Balzan FC,3,0,H
+2018-10-29,St. Andrews,Senglea Athletic,1,2,A
+2018-10-29,Sliema Wanderers,Hibernians,0,1,A
+2018-11-02,Birkirkara,Sliema Wanderers,2,0,H
+2018-11-03,Pieta Hotspurs,Gzira United,1,1,D
+2018-11-03,Senglea Athletic,Tarxien Rainbows,1,2,A
+2018-11-03,Balzan FC,St. Andrews,0,2,A
+2018-11-03,Mosta,Hibernians,0,4,A
+2018-11-04,Qormi,Hamrun Spartans,0,2,A
+2018-11-04,Valletta FC,Floriana,1,0,H
+2018-11-09,Gzira United,Valletta FC,0,0,D
+2018-11-10,St. Andrews,Pieta Hotspurs,3,3,D
+2018-11-10,Hamrun Spartans,Senglea Athletic,1,0,H
+2018-11-10,Sliema Wanderers,Qormi,2,0,H
+2018-11-10,Tarxien Rainbows,Balzan FC,1,3,A
+2018-11-11,Floriana,Mosta,1,0,H
+2018-11-11,Hibernians,Birkirkara,2,1,H
+2018-11-23,Balzan FC,Hamrun Spartans,2,2,D
+2018-11-24,Senglea Athletic,Sliema Wanderers,0,2,A
+2018-11-24,Mosta,Birkirkara,0,3,A
+2018-11-24,Floriana,Gzira United,0,1,A
+2018-11-24,Valletta FC,St. Andrews,1,0,H
+2018-11-25,Pieta Hotspurs,Tarxien Rainbows,0,3,A
+2018-11-25,Qormi,Hibernians,1,2,A
+2018-12-07,Birkirkara,Qormi,2,1,H
+2018-12-08,St. Andrews,Floriana,0,0,D
+2018-12-08,Hamrun Spartans,Pieta Hotspurs,3,2,H
+2018-12-08,Sliema Wanderers,Balzan FC,1,3,A
+2018-12-08,Tarxien Rainbows,Valletta FC,0,7,A
+2018-12-09,Gzira United,Mosta,3,3,D
+2018-12-09,Hibernians,Senglea Athletic,2,0,H
+2018-12-14,Gzira United,St. Andrews,2,1,H
+2018-12-15,Mosta,Qormi,2,0,H
+2018-12-15,Pieta Hotspurs,Sliema Wanderers,0,3,A
+2018-12-16,Senglea Athletic,Birkirkara,0,2,A
+2018-12-16,Floriana,Tarxien Rainbows,4,0,H
+2018-12-17,Balzan FC,Hibernians,2,2,D
+2018-12-17,Valletta FC,Hamrun Spartans,0,1,A
+2019-01-11,Floriana,Hamrun Spartans,1,1,D
+2019-01-12,Pieta Hotspurs,Hibernians,0,2,A
+2019-01-12,Gzira United,Tarxien Rainbows,1,1,D
+2019-01-13,Balzan FC,Birkirkara,0,0,D
+2019-01-13,St. Andrews,Mosta,1,1,D
+2019-01-13,Valletta FC,Sliema Wanderers,2,0,H
+2019-01-13,Senglea Athletic,Qormi,4,0,H
+2019-01-18,Birkirkara,Pieta Hotspurs,3,0,H
+2019-01-18,Hamrun Spartans,Gzira United,1,1,D
+2019-01-18,Sliema Wanderers,Floriana,1,1,D
+2019-01-19,Mosta,Senglea Athletic,0,3,A
+2019-01-19,Tarxien Rainbows,St. Andrews,2,1,H
+2019-01-20,Qormi,Balzan FC,1,3,A
+2019-01-20,Hibernians,Valletta FC,1,2,A
+2019-02-01,Balzan FC,Senglea Athletic,1,2,A
+2019-02-02,Pieta Hotspurs,Qormi,0,2,A
+2019-02-02,St. Andrews,Hamrun Spartans,0,3,A
+2019-02-02,Floriana,Hibernians,0,1,A
+2019-02-02,Tarxien Rainbows,Mosta,0,2,A
+2019-02-03,Gzira United,Sliema Wanderers,1,1,D
+2019-02-03,Valletta FC,Birkirkara,2,0,H
+2019-02-08,Qormi,Valletta FC,1,2,A
+2019-02-09,Senglea Athletic,Pieta Hotspurs,2,1,H
+2019-02-09,Mosta,Balzan FC,0,0,D
+2019-02-09,Hamrun Spartans,Tarxien Rainbows,3,0,H
+2019-02-09,Sliema Wanderers,St. Andrews,1,1,D
+2019-02-10,Hibernians,Gzira United,1,0,H
+2019-02-10,Birkirkara,Floriana,0,0,D
+2019-02-15,Tarxien Rainbows,Sliema Wanderers,1,2,A
+2019-02-16,Valletta FC,Senglea Athletic,3,3,D
+2019-02-16,St. Andrews,Hibernians,1,2,A
+2019-02-16,Hamrun Spartans,Mosta,0,1,A
+2019-02-16,Floriana,Qormi,0,1,A
+2019-02-17,Pieta Hotspurs,Balzan FC,0,3,A
+2019-02-17,Gzira United,Birkirkara,1,1,D
+2019-03-01,Senglea Athletic,Floriana,0,1,A
+2019-03-01,Balzan FC,Valletta FC,1,2,A
+2019-03-01,Hibernians,Tarxien Rainbows,5,0,H
+2019-03-02,Birkirkara,St. Andrews,2,0,H
+2019-03-02,Mosta,Pieta Hotspurs,3,2,H
+2019-03-02,Sliema Wanderers,Hamrun Spartans,2,1,H
+2019-03-02,Qormi,Gzira United,1,4,A
+2019-03-08,Tarxien Rainbows,Birkirkara,0,2,A
+2019-03-08,Hamrun Spartans,Hibernians,1,1,D
+2019-03-08,Sliema Wanderers,Mosta,3,1,H
+2019-03-09,Valletta FC,Pieta Hotspurs,3,0,H
+2019-03-09,St. Andrews,Qormi,0,2,A
+2019-03-09,Gzira United,Senglea Athletic,3,1,H
+2019-03-09,Floriana,Balzan FC,0,0,D
+2019-03-12,Hibernians,Sliema Wanderers,2,2,D
+2019-03-13,Birkirkara,Hamrun Spartans,0,1,A
+2019-03-13,Pieta Hotspurs,Floriana,0,2,A
+2019-03-13,Balzan FC,Gzira United,0,0,D
+2019-03-13,Mosta,Valletta FC,0,1,A
+2019-03-14,Senglea Athletic,St. Andrews,5,0,H
+2019-03-14,Qormi,Tarxien Rainbows,1,2,A
+2019-03-29,Hamrun Spartans,Qormi,2,1,H
+2019-03-30,Gzira United,Pieta Hotspurs,5,2,H
+2019-03-30,Tarxien Rainbows,Senglea Athletic,2,2,D
+2019-03-30,St. Andrews,Balzan FC,0,1,A
+2019-03-30,Hibernians,Mosta,1,1,D
+2019-03-31,Sliema Wanderers,Birkirkara,0,1,A
+2019-03-31,Floriana,Valletta FC,2,0,H
+2019-04-05,Qormi,Sliema Wanderers,2,3,A
+2019-04-05,Birkirkara,Hibernians,2,3,A
+2019-04-05,Balzan FC,Tarxien Rainbows,2,0,H
+2019-04-06,Senglea Athletic,Hamrun Spartans,2,2,D
+2019-04-06,Mosta,Floriana,3,3,D
+2019-04-07,Pieta Hotspurs,St. Andrews,3,1,H
+2019-04-07,Valletta FC,Gzira United,1,1,D
+2019-04-13,Tarxien Rainbows,Pieta Hotspurs,2,0,H
+2019-04-13,Birkirkara,Mosta,1,2,A
+2019-04-14,Hamrun Spartans,Balzan FC,1,1,D
+2019-04-14,St. Andrews,Valletta FC,0,4,A
+2019-04-15,Sliema Wanderers,Senglea Athletic,0,0,D
+2019-04-15,Gzira United,Floriana,1,0,H
+2019-04-15,Hibernians,Qormi,1,3,A
+2019-04-20,Pieta Hotspurs,Hamrun Spartans,0,2,A
+2019-04-20,Mosta,Gzira United,1,1,D
+2019-04-20,Valletta FC,Tarxien Rainbows,1,0,H
+2019-04-20,Balzan FC,Sliema Wanderers,2,1,H
+2019-04-22,Floriana,St. Andrews,0,1,A
+2019-04-22,Qormi,Birkirkara,1,0,H
+2019-04-22,Senglea Athletic,Hibernians,0,2,A
+2019-04-26,Tarxien Rainbows,Floriana,0,3,A
+2019-04-26,Birkirkara,Senglea Athletic,2,3,A
+2019-04-26,Qormi,Mosta,1,1,D
+2019-04-26,St. Andrews,Gzira United,1,0,H
+2019-04-27,Hibernians,Balzan FC,5,1,H
+2019-04-27,Hamrun Spartans,Valletta FC,1,1,D
+2019-04-27,Sliema Wanderers,Pieta Hotspurs,2,1,H
+2019-05-04,Valletta FC,Hibernians,3,3,D

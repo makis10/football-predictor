@@ -1,0 +1,241 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,PSH,PSD,PSA
+01/04/2023,Malmo FF,Kalmar,1,0,H,1.63,4.11,5.76
+01/04/2023,Djurgarden,Brommapojkarna,3,1,H,1.32,5.91,9.28
+02/04/2023,Hammarby,Degerfors,3,1,H,1.31,6.01,9.69
+02/04/2023,Norrkoping,Sirius,1,1,D,1.93,3.71,4.14
+02/04/2023,Goteborg,Varnamo,0,1,A,2.04,3.61,3.82
+02/04/2023,Halmstad,AIK,2,1,H,3.26,3.19,2.46
+03/04/2023,Mjallby,Varberg,2,2,D,1.68,3.67,6.04
+03/04/2023,Elfsborg,Hacken,0,2,A,2.43,3.8,2.83
+08/04/2023,Brommapojkarna,Malmo FF,1,2,A,7.44,4.79,1.47
+08/04/2023,Degerfors,Halmstad,3,1,H,2.59,3.53,2.83
+09/04/2023,Hacken,Hammarby,3,1,H,2.02,3.79,3.68
+09/04/2023,Kalmar,Goteborg,2,0,H,2.05,3.38,4.03
+09/04/2023,Sirius,Djurgarden,0,0,D,3.73,3.62,2.05
+10/04/2023,Varnamo,Mjallby,0,1,A,2.94,3.25,2.63
+10/04/2023,AIK,Norrkoping,0,3,A,1.72,3.81,5.11
+10/04/2023,Varberg,Elfsborg,0,0,D,4.96,3.86,1.72
+15/04/2023,Elfsborg,Brommapojkarna,5,0,H,1.38,5.62,7.77
+15/04/2023,Hacken,Kalmar,1,3,A,1.67,4.15,5.3
+16/04/2023,AIK,Hammarby,2,0,H,2.99,3.16,2.65
+16/04/2023,Norrkoping,Varnamo,2,1,H,1.72,3.96,5.04
+16/04/2023,Halmstad,Djurgarden,2,0,H,3.79,3.4,2.13
+16/04/2023,Mjallby,Degerfors,2,0,H,1.83,3.73,4.65
+17/04/2023,Varberg,Sirius,1,1,D,3.58,3.37,2.21
+17/04/2023,Goteborg,Malmo FF,0,1,A,4.67,3.94,1.78
+22/04/2023,Hammarby,Varberg,2,0,H,1.3,5.87,10.94
+22/04/2023,Degerfors,Elfsborg,1,2,A,3.68,3.76,2.04
+23/04/2023,Djurgarden,Goteborg,1,0,H,1.53,4.4,6.6
+23/04/2023,Kalmar,Halmstad,2,0,H,1.79,3.48,5.42
+23/04/2023,Sirius,Hacken,1,4,A,3.74,3.86,1.99
+24/04/2023,Brommapojkarna,Mjallby,2,0,H,3.16,3.34,2.43
+24/04/2023,Varnamo,AIK,1,0,H,4.16,3.37,2.03
+24/04/2023,Malmo FF,Norrkoping,3,0,H,1.47,4.71,7.11
+29/04/2023,AIK,Sirius,0,0,D,1.99,3.57,4.04
+29/04/2023,Mjallby,Elfsborg,0,1,A,3.51,3.45,2.21
+29/04/2023,Hacken,Varnamo,3,1,H,1.3,5.71,10.38
+29/04/2023,Halmstad,Brommapojkarna,0,2,A,2.15,3.5,3.6
+30/04/2023,Malmo FF,Hammarby,4,2,H,1.78,3.71,5.07
+30/04/2023,Varberg,Kalmar,0,0,D,3.81,3.27,2.18
+30/04/2023,Degerfors,Djurgarden,2,1,H,3.88,3.74,1.99
+01/05/2023,Goteborg,Norrkoping,1,1,D,2.37,3.43,3.18
+03/05/2023,Elfsborg,Halmstad,6,1,H,1.45,4.74,7.7
+03/05/2023,Hacken,Djurgarden,4,1,H,1.88,3.96,4.09
+03/05/2023,Kalmar,Sirius,2,2,D,2.01,3.41,4.21
+03/05/2023,Mjallby,AIK,0,0,D,2.98,3.04,2.79
+04/05/2023,Goteborg,Degerfors,6,0,H,1.79,3.96,4.56
+04/05/2023,Norrkoping,Hammarby,2,0,H,3.2,3.42,2.37
+04/05/2023,Varberg,Malmo FF,0,6,A,8,4.47,1.47
+04/05/2023,Varnamo,Brommapojkarna,0,1,A,1.99,3.51,4.15
+07/05/2023,Malmo FF,AIK,3,1,H,1.53,4.22,6.89
+07/05/2023,Halmstad,Hacken,1,0,H,6.4,4.79,1.5
+08/05/2023,Brommapojkarna,Goteborg,0,0,D,2.87,3.66,2.47
+08/05/2023,Degerfors,Norrkoping,0,2,A,2.87,3.47,2.56
+08/05/2023,Sirius,Elfsborg,3,4,A,3.36,3.77,2.15
+08/05/2023,Djurgarden,Kalmar,3,1,H,1.8,3.69,4.9
+09/05/2023,Hammarby,Mjallby,0,0,D,1.69,3.85,5.54
+09/05/2023,Varnamo,Varberg,3,1,H,1.79,3.53,5.33
+13/05/2023,Hacken,Degerfors,6,1,H,1.21,7.72,11.99
+13/05/2023,Varberg,Norrkoping,1,3,A,3.18,3.31,2.43
+14/05/2023,Elfsborg,Varnamo,2,0,H,1.51,4.58,6.34
+14/05/2023,Hammarby,Djurgarden,4,3,H,2.48,3.4,3.02
+14/05/2023,Mjallby,Sirius,3,0,H,2.59,3.13,3.11
+14/05/2023,Halmstad,Malmo FF,0,1,A,7.71,4.58,1.46
+14/05/2023,Kalmar,Brommapojkarna,1,3,A,1.74,3.73,5.38
+15/05/2023,AIK,Goteborg,2,2,D,1.72,3.73,5.55
+20/05/2023,Degerfors,AIK,2,1,H,3.86,3.67,2.01
+21/05/2023,Brommapojkarna,Varberg,2,1,H,1.97,3.61,4.08
+21/05/2023,Djurgarden,Mjallby,2,0,H,1.6,4.02,6.31
+21/05/2023,Malmo FF,Hacken,2,2,D,1.75,4.33,4.38
+21/05/2023,Goteborg,Hammarby,1,1,D,3.01,3.39,2.5
+21/05/2023,Sirius,Halmstad,1,2,A,1.95,3.69,4.06
+22/05/2023,Varnamo,Kalmar,0,1,A,2.83,3.21,2.76
+22/05/2023,Norrkoping,Elfsborg,1,2,A,3.22,3.66,2.25
+24/05/2023,Djurgarden,Hacken,1,0,H,2.7,3.7,2.59
+25/05/2023,Degerfors,Hammarby,2,2,D,3.18,3.47,2.35
+27/05/2023,Mjallby,Halmstad,0,2,A,2,3.3,4.42
+27/05/2023,Brommapojkarna,Sirius,1,2,A,2.54,3.57,2.83
+28/05/2023,Djurgarden,AIK,1,0,H,1.88,3.57,4.57
+28/05/2023,Kalmar,Norrkoping,2,1,H,2.27,3.33,3.48
+28/05/2023,Elfsborg,Malmo FF,3,0,H,2.65,3.7,2.63
+29/05/2023,Degerfors,Varberg,1,1,D,1.63,4.27,5.15
+29/05/2023,Hammarby,Varnamo,0,2,A,1.73,4.06,4.86
+29/05/2023,Hacken,Goteborg,4,1,H,1.42,5.34,7.12
+03/06/2023,Goteborg,Mjallby,0,1,A,2.03,3.4,4.15
+03/06/2023,Norrkoping,Brommapojkarna,0,2,A,1.96,3.81,3.88
+04/06/2023,AIK,Kalmar,1,1,D,2.23,3.13,3.85
+04/06/2023,Halmstad,Hammarby,0,0,D,3.19,3.38,2.39
+04/06/2023,Elfsborg,Djurgarden,1,1,D,1.84,3.82,4.46
+04/06/2023,Sirius,Varnamo,2,0,H,1.92,3.8,4.09
+05/06/2023,Varberg,Hacken,0,2,A,6.86,4.97,1.46
+05/06/2023,Malmo FF,Degerfors,5,0,H,1.25,6.98,10.59
+09/06/2023,Hammarby,Brommapojkarna,2,1,H,1.6,4.29,5.74
+10/06/2023,Kalmar,Degerfors,2,1,H,1.65,4.11,5.48
+10/06/2023,Varnamo,Malmo FF,1,3,A,5.47,3.91,1.69
+10/06/2023,Varberg,Halmstad,1,2,A,2.88,3.08,2.83
+11/06/2023,AIK,Elfsborg,1,2,A,4.16,3.65,1.94
+11/06/2023,Sirius,Goteborg,2,0,H,2.17,3.75,3.34
+11/06/2023,Djurgarden,Norrkoping,2,2,D,1.55,4.33,6.4
+11/06/2023,Hacken,Mjallby,3,0,H,1.4,5.3,7.63
+01/07/2023,Brommapojkarna,AIK,0,2,A,3.26,3.45,2.32
+01/07/2023,Degerfors,Varnamo,0,2,A,2.71,3.45,2.71
+01/07/2023,Malmo FF,Sirius,3,0,H,1.31,5.97,9.96
+02/07/2023,Halmstad,Goteborg,0,0,D,2.35,3.32,3.33
+02/07/2023,Norrkoping,Hacken,2,2,D,5.14,4.69,1.6
+02/07/2023,Djurgarden,Varberg,2,0,H,1.23,6.7,14.01
+03/07/2023,Elfsborg,Hammarby,2,0,H,1.56,4.49,5.93
+03/07/2023,Mjallby,Kalmar,1,1,D,2.87,2.96,2.94
+08/07/2023,AIK,Hacken,1,2,A,3.13,3.52,2.35
+08/07/2023,Varnamo,Djurgarden,1,2,A,3.49,3.38,2.24
+08/07/2023,Brommapojkarna,Degerfors,1,2,A,1.66,4.28,5.13
+09/07/2023,Malmo FF,Mjallby,1,2,A,1.35,5.33,9.82
+09/07/2023,Sirius,Hammarby,1,2,A,2.92,3.59,2.46
+09/07/2023,Kalmar,Elfsborg,0,4,A,3.83,3.6,2.04
+10/07/2023,Goteborg,Varberg,1,2,A,1.72,3.76,5.4
+10/07/2023,Norrkoping,Halmstad,1,2,A,2.09,3.48,3.9
+15/07/2023,Halmstad,Varnamo,2,2,D,2.65,3.03,2.92
+15/07/2023,Degerfors,Sirius,0,3,A,2.74,3.59,2.61
+15/07/2023,Hacken,Brommapojkarna,4,2,H,1.34,6,8.41
+16/07/2023,Elfsborg,Goteborg,1,1,D,1.37,5.44,8.41
+16/07/2023,Hammarby,Kalmar,3,1,H,1.69,4.08,5.17
+16/07/2023,Mjallby,Norrkoping,1,2,A,2.23,3.3,3.61
+17/07/2023,Djurgarden,Malmo FF,2,0,H,2.58,3.39,2.9
+17/07/2023,Varberg,AIK,1,2,A,4.02,3.47,2.03
+21/07/2023,Brommapojkarna,Hammarby,1,0,H,3.09,3.58,2.36
+22/07/2023,Djurgarden,Elfsborg,0,4,A,2.24,3.58,3.3
+22/07/2023,Varnamo,Hacken,1,0,H,4.83,4.41,1.68
+23/07/2023,AIK,Malmo FF,0,0,D,3.13,3.31,2.46
+23/07/2023,Norrkoping,Degerfors,1,0,H,1.75,4.2,4.57
+23/07/2023,Goteborg,Halmstad,0,0,D,2.06,3.42,3.99
+23/07/2023,Kalmar,Varberg,1,0,H,1.88,3.57,4.59
+24/07/2023,Sirius,Mjallby,2,3,A,2.35,3.35,3.3
+29/07/2023,Hacken,Elfsborg,3,1,H,2.29,4.04,2.91
+29/07/2023,Degerfors,Brommapojkarna,2,0,H,2.94,3.68,2.4
+29/07/2023,Halmstad,Varberg,0,5,A,2.03,3.37,4.16
+30/07/2023,Hammarby,Norrkoping,2,1,H,2.01,3.7,3.84
+30/07/2023,Mjallby,Djurgarden,0,1,A,3.56,3.2,2.3
+30/07/2023,Goteborg,Kalmar,2,0,H,2.3,3.2,3.56
+31/07/2023,Malmo FF,Varnamo,3,1,H,1.33,5.65,9.94
+31/07/2023,Sirius,AIK,0,1,A,3.51,3.59,2.15
+05/08/2023,Brommapojkarna,Varnamo,0,2,A,2.28,3.56,3.25
+06/08/2023,Elfsborg,Sirius,1,0,H,1.31,6.08,9.46
+06/08/2023,Kalmar,AIK,1,1,D,3.41,3.09,2.44
+07/08/2023,Malmo FF,Halmstad,3,0,H,1.32,5.71,9.78
+07/08/2023,Norrkoping,Goteborg,3,0,H,2.3,3.37,3.37
+07/08/2023,Varberg,Mjallby,0,3,A,3.06,3.07,2.66
+12/08/2023,AIK,Brommapojkarna,2,2,D,1.68,4.26,5.01
+13/08/2023,Goteborg,Djurgarden,2,1,H,3.66,3.27,2.22
+13/08/2023,Sirius,Kalmar,3,0,H,2.08,3.66,3.64
+13/08/2023,Hacken,Varberg,2,0,H,1.32,6.37,8.36
+13/08/2023,Halmstad,Norrkoping,1,3,A,2.54,3.33,2.97
+13/08/2023,Hammarby,Elfsborg,1,0,H,3.26,3.48,2.3
+14/08/2023,Mjallby,Malmo FF,1,0,H,4.71,3.71,1.83
+14/08/2023,Varnamo,Degerfors,0,1,A,1.86,3.94,4.22
+19/08/2023,Brommapojkarna,Halmstad,3,1,H,2.01,3.67,3.86
+19/08/2023,Degerfors,Goteborg,1,2,A,3.07,3.47,2.41
+19/08/2023,Varberg,Varnamo,0,3,A,3.17,3.37,2.41
+20/08/2023,Hacken,Sirius,3,2,H,1.53,5.16,5.49
+20/08/2023,Malmo FF,Djurgarden,0,0,D,1.59,4.23,6.07
+20/08/2023,Elfsborg,Mjallby,2,0,H,1.49,4.51,7.11
+20/08/2023,Kalmar,Hammarby,0,0,D,2.81,3.3,2.71
+21/08/2023,Norrkoping,AIK,3,1,H,2.5,3.4,2.99
+27/08/2023,Brommapojkarna,Kalmar,2,3,A,2.19,3.47,3.54
+27/08/2023,Mjallby,Hammarby,0,3,A,3.09,3.03,2.68
+27/08/2023,Varnamo,Halmstad,0,0,D,1.96,3.64,4.1
+27/08/2023,Djurgarden,Degerfors,4,1,H,1.32,5.85,9.45
+27/08/2023,Goteborg,Hacken,4,2,H,3.41,3.84,2.11
+28/08/2023,AIK,Varberg,3,0,H,1.34,5.52,9.48
+28/08/2023,Elfsborg,Norrkoping,3,2,H,1.58,4.46,5.8
+28/08/2023,Sirius,Malmo FF,1,3,A,5.21,4.32,1.65
+02/09/2023,Halmstad,Sirius,2,1,H,3.1,3.47,2.4
+02/09/2023,Varnamo,Elfsborg,1,0,H,3.41,3.63,2.18
+03/09/2023,Degerfors,Hacken,1,0,H,3.81,4.23,1.88
+03/09/2023,Hammarby,AIK,4,2,H,2.36,3.44,3.18
+03/09/2023,Kalmar,Mjallby,0,2,A,2.48,3.1,3.32
+03/09/2023,Malmo FF,Goteborg,2,2,D,1.41,5.09,7.85
+03/09/2023,Norrkoping,Djurgarden,0,2,A,3.06,3.43,2.44
+03/09/2023,Varberg,Brommapojkarna,4,3,H,3.86,3.85,1.96
+16/09/2023,Goteborg,Brommapojkarna,1,0,H,1.83,3.8,4.56
+16/09/2023,Sirius,Varberg,7,0,H,1.38,5.54,7.87
+16/09/2023,Djurgarden,Varnamo,1,2,A,1.68,4.02,5.29
+17/09/2023,Hammarby,Malmo FF,1,3,A,2.91,3.51,2.5
+17/09/2023,Elfsborg,Kalmar,0,3,A,1.49,4.74,6.69
+17/09/2023,Hacken,Halmstad,3,2,H,1.33,6.18,8.5
+18/09/2023,Norrkoping,Mjallby,0,2,A,1.99,3.59,4.03
+18/09/2023,AIK,Degerfors,2,0,H,1.52,4.77,6.19
+23/09/2023,Degerfors,Malmo FF,1,2,A,7.86,5.27,1.4
+23/09/2023,Brommapojkarna,Norrkoping,2,2,D,1.98,3.85,3.78
+24/09/2023,AIK,Djurgarden,2,0,H,2.54,3.37,2.96
+24/09/2023,Mjallby,Goteborg,0,1,A,2.97,3.24,2.62
+24/09/2023,Kalmar,Hacken,1,0,H,3.63,4.02,1.98
+24/09/2023,Varberg,Hammarby,0,1,A,6.74,4.87,1.47
+25/09/2023,Halmstad,Elfsborg,0,1,A,4.22,3.81,1.88
+25/09/2023,Varnamo,Sirius,0,1,A,2.53,3.71,2.76
+30/09/2023,Djurgarden,Halmstad,1,0,H,1.5,4.52,6.97
+30/09/2023,Norrkoping,Kalmar,1,0,H,2.09,3.54,3.73
+01/10/2023,Hacken,AIK,2,0,H,1.92,4.07,3.82
+01/10/2023,Sirius,Degerfors,3,2,H,1.62,4.31,5.5
+01/10/2023,Hammarby,Goteborg,1,1,D,1.91,3.61,4.39
+01/10/2023,Mjallby,Varnamo,2,3,A,2.52,3.17,3.18
+02/10/2023,Elfsborg,Varberg,2,1,H,1.21,7.67,12.69
+02/10/2023,Malmo FF,Brommapojkarna,2,1,H,1.34,6.02,8.26
+07/10/2023,AIK,Mjallby,1,0,H,1.81,3.66,4.95
+07/10/2023,Halmstad,Degerfors,0,0,D,1.92,3.59,4.34
+07/10/2023,Goteborg,Sirius,0,1,A,2,3.59,4.01
+08/10/2023,Brommapojkarna,Elfsborg,0,3,A,3.4,3.99,2.06
+08/10/2023,Kalmar,Malmo FF,1,0,H,4.8,3.84,1.78
+08/10/2023,Varnamo,Norrkoping,2,1,H,2.05,3.69,3.71
+08/10/2023,Hammarby,Hacken,2,2,D,2.62,3.74,2.64
+08/10/2023,Varberg,Djurgarden,0,1,A,6.87,4.51,1.51
+21/10/2023,Degerfors,Kalmar,1,3,A,3,3.3,2.55
+21/10/2023,Sirius,Brommapojkarna,3,2,H,2.32,3.76,3.02
+22/10/2023,Djurgarden,Hammarby,0,0,D,2.26,3.37,3.47
+22/10/2023,Halmstad,Mjallby,1,1,D,2.36,3.13,3.51
+22/10/2023,Hacken,Norrkoping,4,1,H,1.38,5.71,7.41
+22/10/2023,Malmo FF,Varberg,5,0,H,1.08,13.45,26.94
+23/10/2023,Varnamo,Goteborg,3,1,H,3.36,3.36,2.32
+23/10/2023,Elfsborg,AIK,3,0,H,1.86,3.69,4.5
+28/10/2023,Brommapojkarna,Djurgarden,1,2,A,3.32,3.77,2.16
+28/10/2023,Varberg,Degerfors,1,1,D,3.37,3.85,2.12
+29/10/2023,Kalmar,Varnamo,1,3,A,2.2,3.5,3.46
+29/10/2023,Mjallby,Hacken,2,1,H,4.35,4.21,1.78
+29/10/2023,Norrkoping,Malmo FF,0,1,A,7.1,5,1.45
+29/10/2023,AIK,Halmstad,1,1,D,1.66,3.8,6.04
+30/10/2023,Hammarby,Sirius,2,2,D,2.02,3.89,3.61
+30/10/2023,Goteborg,Elfsborg,1,2,A,3.22,3.39,2.37
+04/11/2023,Varnamo,Hammarby,0,0,D,2.4,3.66,2.96
+04/11/2023,Djurgarden,Sirius,2,4,A,1.6,4.71,5.17
+05/11/2023,Hacken,Malmo FF,4,2,H,3.3,4.17,2.06
+05/11/2023,Halmstad,Kalmar,3,0,H,2.53,3.33,3.01
+05/11/2023,Elfsborg,Degerfors,2,2,D,1.26,6.61,11.05
+05/11/2023,Mjallby,Brommapojkarna,1,2,A,2.51,3.62,2.84
+06/11/2023,Norrkoping,Varberg,4,3,H,1.44,5.21,6.94
+06/11/2023,Goteborg,AIK,1,1,D,2.4,3.13,3.44
+12/11/2023,AIK,Varnamo,3,1,H,1.72,4.25,4.67
+12/11/2023,Brommapojkarna,Hacken,2,1,H,2.23,4.38,2.72
+12/11/2023,Degerfors,Mjallby,1,2,A,3.25,3.62,2.17
+12/11/2023,Hammarby,Halmstad,2,2,D,1.51,4.61,5.88
+12/11/2023,Kalmar,Djurgarden,2,1,H,3.32,3.56,2.16
+12/11/2023,Malmo FF,Elfsborg,1,0,H,1.74,4,4.9
+12/11/2023,Sirius,Norrkoping,2,0,H,1.64,4.79,4.33
+12/11/2023,Varberg,Goteborg,1,2,A,7.11,5.07,1.4

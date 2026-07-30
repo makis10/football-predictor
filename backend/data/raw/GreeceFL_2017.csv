@@ -1,0 +1,307 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2017-10-28,Aris Thessalonikis,Aiginiakos,5,0,H
+2017-10-29,Veria,Apollon Pontou,0,1,A
+2017-10-29,Sparti,Panegialios,1,1,D
+2017-10-29,Doxa Dramas,Anagennisi Karditsas,2,0,H
+2017-10-29,Ergotelis,Kallithea,0,0,D
+2017-10-30,Acharnaikos,Apollon Larissa FC,1,0,H
+2017-10-30,Kissamikos,AE Karaiskakis,1,0,H
+2017-10-30,Panserraikos,OFI,1,2,A
+2017-10-30,Panachaiki FC,Trikala,2,0,H
+2017-11-04,Apollon Pontou,Sparti,0,0,D
+2017-11-05,Trikala,Aris Thessalonikis,0,1,A
+2017-11-05,Anagennisi Karditsas,OFI,0,0,D
+2017-11-05,Kallithea,Panachaiki FC,0,3,A
+2017-11-05,Panegialios,Panserraikos,3,2,H
+2017-11-05,Aiginiakos,Doxa Dramas,0,2,A
+2017-11-05,Apollon Larissa FC,Veria,1,3,A
+2017-11-05,AE Karaiskakis,Acharnaikos,1,0,H
+2017-11-05,Ergotelis,Kissamikos,1,1,D
+2017-11-11,Doxa Dramas,Trikala,0,0,D
+2017-11-12,Veria,AE Karaiskakis,0,2,A
+2017-11-12,Aris Thessalonikis,Kallithea,2,0,H
+2017-11-12,OFI,Aiginiakos,6,0,H
+2017-11-12,Anagennisi Karditsas,Panegialios,1,0,H
+2017-11-12,Kissamikos,Acharnaikos,4,1,H
+2017-11-12,Sparti,Apollon Larissa FC,2,0,H
+2017-11-12,Panserraikos,Apollon Pontou,3,3,D
+2017-11-12,Panachaiki FC,Ergotelis,2,1,H
+2017-11-18,Trikala,OFI,0,0,D
+2017-11-19,Acharnaikos,Veria,0,3,A
+2017-11-19,Kallithea,Doxa Dramas,0,1,A
+2017-11-19,Aiginiakos,Panegialios,1,1,D
+2017-11-19,Apollon Larissa FC,Panserraikos,3,0,H
+2017-11-19,Apollon Pontou,Anagennisi Karditsas,2,0,H
+2017-11-19,AE Karaiskakis,Sparti,2,1,H
+2017-11-19,Ergotelis,Aris Thessalonikis,2,3,A
+2017-11-19,Panachaiki FC,Kissamikos,0,0,D
+2017-11-25,Aris Thessalonikis,Panachaiki FC,2,1,H
+2017-11-25,OFI,Kallithea,2,1,H
+2017-11-25,Anagennisi Karditsas,Apollon Larissa FC,2,0,H
+2017-11-25,Panserraikos,AE Karaiskakis,2,0,H
+2017-11-26,Panegialios,Trikala,0,1,A
+2017-11-26,Sparti,Acharnaikos,3,0,H
+2017-11-26,Aiginiakos,Apollon Pontou,2,1,H
+2017-11-26,Doxa Dramas,Ergotelis,4,0,H
+2017-11-26,Kissamikos,Veria,3,0,H
+2017-12-02,Veria,Sparti,1,0,H
+2017-12-02,Acharnaikos,Panserraikos,0,3,A
+2017-12-03,Aris Thessalonikis,Kissamikos,1,0,H
+2017-12-03,Apollon Larissa FC,Aiginiakos,1,0,H
+2017-12-03,AE Karaiskakis,Anagennisi Karditsas,3,1,H
+2017-12-03,Panachaiki FC,Doxa Dramas,1,0,H
+2017-12-04,Trikala,Apollon Pontou,0,0,D
+2017-12-04,Kallithea,Panegialios,2,1,H
+2017-12-04,Ergotelis,OFI,2,4,A
+2017-12-09,OFI,Panachaiki FC,1,2,A
+2017-12-09,Anagennisi Karditsas,Acharnaikos,3,0,H
+2017-12-10,Trikala,Apollon Larissa FC,3,1,H
+2017-12-10,Kissamikos,Sparti,0,2,A
+2017-12-10,Panegialios,Ergotelis,1,0,H
+2017-12-10,Panserraikos,Veria,1,0,H
+2017-12-10,Aiginiakos,AE Karaiskakis,2,0,H
+2017-12-10,Apollon Pontou,Kallithea,1,0,H
+2017-12-10,Doxa Dramas,Aris Thessalonikis,1,2,A
+2017-12-16,Sparti,Panserraikos,1,0,H
+2017-12-16,AE Karaiskakis,Trikala,0,1,A
+2017-12-16,Doxa Dramas,Kissamikos,1,1,D
+2017-12-16,Acharnaikos,Aiginiakos,0,3,A
+2017-12-17,Veria,Anagennisi Karditsas,1,0,H
+2017-12-17,Kallithea,Apollon Larissa FC,0,1,A
+2017-12-17,Ergotelis,Apollon Pontou,1,1,D
+2017-12-17,Aris Thessalonikis,OFI,0,0,D
+2017-12-17,Panachaiki FC,Panegialios,2,0,H
+2017-12-19,Trikala,Acharnaikos,3,0,H
+2017-12-20,Panegialios,Aris Thessalonikis,0,0,D
+2017-12-20,Aiginiakos,Veria,1,1,D
+2017-12-20,Apollon Larissa FC,Ergotelis,3,2,H
+2017-12-20,Apollon Pontou,Panachaiki FC,0,0,D
+2017-12-21,Kissamikos,Panserraikos,2,0,H
+2017-12-21,Kallithea,AE Karaiskakis,1,1,D
+2017-12-22,Anagennisi Karditsas,Sparti,1,0,H
+2018-01-05,Acharnaikos,Kallithea,0,3,A
+2018-01-06,Veria,Trikala,0,1,A
+2018-01-06,OFI,Kissamikos,3,0,H
+2018-01-07,Aris Thessalonikis,Apollon Pontou,2,0,H
+2018-01-07,Sparti,Aiginiakos,1,0,H
+2018-01-07,Panserraikos,Anagennisi Karditsas,1,1,D
+2018-01-07,AE Karaiskakis,Ergotelis,2,1,H
+2018-01-07,Doxa Dramas,Panegialios,0,0,D
+2018-01-07,Panachaiki FC,Apollon Larissa FC,2,1,H
+2018-01-13,Panegialios,OFI,0,2,A
+2018-01-13,Apollon Pontou,Doxa Dramas,1,1,D
+2018-01-13,Ergotelis,Acharnaikos,3,0,H
+2018-01-14,Trikala,Sparti,2,1,H
+2018-01-14,Kallithea,Veria,1,1,D
+2018-01-14,Kissamikos,Anagennisi Karditsas,1,0,H
+2018-01-14,Aiginiakos,Panserraikos,1,0,H
+2018-01-14,Apollon Larissa FC,Aris Thessalonikis,0,2,A
+2018-01-14,AE Karaiskakis,Panachaiki FC,0,1,A
+2018-01-17,OFI,Doxa Dramas,3,0,H
+2018-01-19,Acharnaikos,Panachaiki FC,0,3,A
+2018-01-20,Aris Thessalonikis,AE Karaiskakis,0,0,D
+2018-01-21,Veria,Ergotelis,0,2,A
+2018-01-21,OFI,Apollon Pontou,3,1,H
+2018-01-21,Anagennisi Karditsas,Aiginiakos,2,0,H
+2018-01-21,Panegialios,Kissamikos,0,4,A
+2018-01-21,Sparti,Kallithea,1,0,H
+2018-01-21,Panserraikos,Trikala,1,1,D
+2018-01-21,Doxa Dramas,Apollon Larissa FC,2,2,D
+2018-01-26,Acharnaikos,Aris Thessalonikis,0,3,A
+2018-01-27,Kissamikos,Aiginiakos,3,1,H
+2018-01-27,Trikala,Anagennisi Karditsas,1,1,D
+2018-01-27,AE Karaiskakis,Doxa Dramas,0,0,D
+2018-01-27,Ergotelis,Sparti,0,0,D
+2018-01-28,Kallithea,Panserraikos,3,1,H
+2018-01-28,Apollon Larissa FC,OFI,1,0,H
+2018-01-28,Apollon Pontou,Panegialios,4,1,H
+2018-01-28,Panachaiki FC,Veria,2,0,H
+2018-01-30,Doxa Dramas,Acharnaikos,3,0,H
+2018-01-31,Anagennisi Karditsas,Kallithea,2,1,H
+2018-01-31,Panegialios,Apollon Larissa FC,0,1,A
+2018-01-31,Sparti,Panachaiki FC,0,0,D
+2018-01-31,Panserraikos,Ergotelis,0,1,A
+2018-01-31,Aiginiakos,Trikala,0,0,D
+2018-01-31,Apollon Pontou,Kissamikos,0,1,A
+2018-01-31,Veria,Aris Thessalonikis,0,1,A
+2018-02-01,OFI,AE Karaiskakis,3,0,H
+2018-02-03,Veria,Doxa Dramas,0,2,A
+2018-02-03,Acharnaikos,OFI,0,3,A
+2018-02-04,Aris Thessalonikis,Sparti,1,0,H
+2018-02-04,Apollon Larissa FC,Apollon Pontou,1,0,H
+2018-02-04,Ergotelis,Anagennisi Karditsas,1,0,H
+2018-02-04,Panachaiki FC,Panserraikos,1,1,D
+2018-02-05,Kallithea,Aiginiakos,0,0,D
+2018-02-05,AE Karaiskakis,Panegialios,2,0,H
+2018-02-07,Kissamikos,Trikala,3,0,H
+2018-02-10,Panserraikos,Aris Thessalonikis,1,3,A
+2018-02-10,OFI,Veria,3,0,H
+2018-02-10,Panegialios,Acharnaikos,3,0,H
+2018-02-11,Trikala,Kallithea,1,0,H
+2018-02-11,Anagennisi Karditsas,Panachaiki FC,1,2,A
+2018-02-11,Sparti,Doxa Dramas,1,0,H
+2018-02-11,Aiginiakos,Ergotelis,3,2,H
+2018-02-11,Apollon Pontou,AE Karaiskakis,0,0,D
+2018-02-12,Apollon Larissa FC,Kissamikos,2,0,H
+2018-02-17,Sparti,OFI,0,3,A
+2018-02-17,Panachaiki FC,Aiginiakos,0,1,A
+2018-02-17,Acharnaikos,Apollon Pontou,0,3,A
+2018-02-18,Veria,Panegialios,3,1,H
+2018-02-18,Aris Thessalonikis,Anagennisi Karditsas,3,0,H
+2018-02-18,AE Karaiskakis,Apollon Larissa FC,2,0,H
+2018-02-18,Doxa Dramas,Panserraikos,3,1,H
+2018-02-18,Ergotelis,Trikala,0,2,A
+2018-02-20,Kissamikos,Kallithea,2,0,H
+2018-02-24,Trikala,Panachaiki FC,0,1,A
+2018-02-24,Apollon Larissa FC,Acharnaikos,3,0,H
+2018-02-25,OFI,Panserraikos,2,0,H
+2018-02-25,Anagennisi Karditsas,Doxa Dramas,0,1,A
+2018-02-25,Panegialios,Sparti,1,0,H
+2018-02-25,Aiginiakos,Aris Thessalonikis,1,4,A
+2018-02-25,Apollon Pontou,Veria,3,0,H
+2018-02-26,AE Karaiskakis,Kissamikos,2,2,D
+2018-02-26,Kallithea,Ergotelis,0,0,D
+2018-03-03,OFI,Anagennisi Karditsas,1,0,H
+2018-03-03,Acharnaikos,AE Karaiskakis,0,3,A
+2018-03-04,Veria,Apollon Larissa FC,0,3,A
+2018-03-04,Sparti,Apollon Pontou,0,4,A
+2018-03-04,Panserraikos,Panegialios,3,0,H
+2018-03-04,Doxa Dramas,Aiginiakos,3,3,D
+2018-03-04,Panachaiki FC,Kallithea,1,0,H
+2018-03-04,Aris Thessalonikis,Trikala,0,0,D
+2018-03-05,Kissamikos,Ergotelis,0,3,A
+2018-03-06,Acharnaikos,Kissamikos,0,3,A
+2018-03-07,Trikala,Doxa Dramas,0,1,A
+2018-03-07,Kallithea,Aris Thessalonikis,0,0,D
+2018-03-07,Panegialios,Anagennisi Karditsas,0,0,D
+2018-03-07,Aiginiakos,OFI,0,3,A
+2018-03-07,Apollon Larissa FC,Sparti,2,0,H
+2018-03-07,Apollon Pontou,Panserraikos,2,1,H
+2018-03-07,AE Karaiskakis,Veria,3,0,H
+2018-03-08,Ergotelis,Panachaiki FC,2,1,H
+2018-03-10,Panserraikos,Apollon Larissa FC,2,1,H
+2018-03-10,Veria,Acharnaikos,3,0,H
+2018-03-11,OFI,Trikala,3,0,H
+2018-03-11,Anagennisi Karditsas,Apollon Pontou,0,2,A
+2018-03-11,Panegialios,Aiginiakos,2,1,H
+2018-03-11,Doxa Dramas,Kallithea,2,0,H
+2018-03-12,Aris Thessalonikis,Ergotelis,3,0,H
+2018-03-12,Sparti,AE Karaiskakis,1,1,D
+2018-03-13,Kissamikos,Panachaiki FC,1,2,A
+2018-03-17,Kallithea,OFI,1,3,A
+2018-03-17,Acharnaikos,Sparti,0,3,A
+2018-03-18,Veria,Kissamikos,0,3,A
+2018-03-18,Trikala,Panegialios,1,0,H
+2018-03-18,Apollon Larissa FC,Anagennisi Karditsas,4,1,H
+2018-03-18,Apollon Pontou,Aiginiakos,2,0,H
+2018-03-18,AE Karaiskakis,Panserraikos,3,0,H
+2018-03-18,Ergotelis,Doxa Dramas,0,1,A
+2018-03-18,Panachaiki FC,Aris Thessalonikis,1,1,D
+2018-03-23,Sparti,Veria,3,0,H
+2018-03-23,Panserraikos,Acharnaikos,3,0,H
+2018-03-24,Anagennisi Karditsas,AE Karaiskakis,1,0,H
+2018-03-24,Kissamikos,Aris Thessalonikis,2,3,A
+2018-03-24,Panegialios,Kallithea,0,0,D
+2018-03-24,Aiginiakos,Apollon Larissa FC,1,2,A
+2018-03-24,Apollon Pontou,Trikala,1,1,D
+2018-03-24,OFI,Ergotelis,4,2,H
+2018-03-25,Doxa Dramas,Panachaiki FC,2,0,H
+2018-03-31,Sparti,Kissamikos,1,3,A
+2018-03-31,Panachaiki FC,OFI,0,3,A
+2018-03-31,Apollon Larissa FC,Trikala,0,1,A
+2018-03-31,Veria,Panserraikos,0,3,A
+2018-03-31,Acharnaikos,Anagennisi Karditsas,0,3,A
+2018-04-01,Kallithea,Apollon Pontou,0,1,A
+2018-04-01,AE Karaiskakis,Aiginiakos,2,0,H
+2018-04-01,Ergotelis,Panegialios,5,1,H
+2018-04-01,Aris Thessalonikis,Doxa Dramas,1,0,H
+2018-04-03,Anagennisi Karditsas,Veria,3,0,H
+2018-04-03,Aiginiakos,Acharnaikos,3,0,H
+2018-04-04,OFI,Aris Thessalonikis,2,1,H
+2018-04-04,Apollon Pontou,Ergotelis,1,1,D
+2018-04-04,Trikala,AE Karaiskakis,0,0,D
+2018-04-04,Panserraikos,Sparti,3,1,H
+2018-04-04,Apollon Larissa FC,Kallithea,4,3,H
+2018-04-05,Kissamikos,Doxa Dramas,2,1,H
+2018-04-05,Panegialios,Panachaiki FC,1,2,A
+2018-04-14,Panserraikos,Kissamikos,0,2,A
+2018-04-14,AE Karaiskakis,Kallithea,1,0,H
+2018-04-14,Veria,Aiginiakos,0,3,A
+2018-04-14,Acharnaikos,Trikala,0,3,A
+2018-04-15,Aris Thessalonikis,Panegialios,5,2,H
+2018-04-15,Sparti,Anagennisi Karditsas,2,0,H
+2018-04-15,Doxa Dramas,OFI,1,1,D
+2018-04-15,Ergotelis,Apollon Larissa FC,3,1,H
+2018-04-15,Panachaiki FC,Apollon Pontou,0,0,D
+2018-04-21,Kissamikos,OFI,1,1,D
+2018-04-21,Trikala,Veria,3,0,H
+2018-04-21,Kallithea,Acharnaikos,3,0,H
+2018-04-22,Anagennisi Karditsas,Panserraikos,1,0,H
+2018-04-22,Panegialios,Doxa Dramas,1,0,H
+2018-04-22,Aiginiakos,Sparti,2,0,H
+2018-04-22,Apollon Larissa FC,Panachaiki FC,0,1,A
+2018-04-22,Apollon Pontou,Aris Thessalonikis,0,0,D
+2018-04-22,Ergotelis,AE Karaiskakis,4,1,H
+2018-04-24,Veria,Kallithea,0,3,A
+2018-04-24,Acharnaikos,Ergotelis,0,3,A
+2018-04-25,Anagennisi Karditsas,Kissamikos,3,3,D
+2018-04-25,Panserraikos,Aiginiakos,1,2,A
+2018-04-25,Aris Thessalonikis,Apollon Larissa FC,3,0,H
+2018-04-25,Sparti,Trikala,1,0,H
+2018-04-25,Doxa Dramas,Apollon Pontou,3,1,H
+2018-04-25,Panachaiki FC,AE Karaiskakis,2,0,H
+2018-04-26,OFI,Panegialios,7,0,H
+2018-04-28,Kallithea,Sparti,0,0,D
+2018-04-28,Ergotelis,Veria,3,0,H
+2018-04-28,Panachaiki FC,Acharnaikos,3,0,H
+2018-04-29,Trikala,Panserraikos,2,1,H
+2018-04-29,Aiginiakos,Anagennisi Karditsas,1,1,D
+2018-04-29,Apollon Larissa FC,Doxa Dramas,1,3,A
+2018-04-29,Apollon Pontou,OFI,0,1,A
+2018-04-29,AE Karaiskakis,Aris Thessalonikis,0,2,A
+2018-04-30,Kissamikos,Panegialios,2,0,H
+2018-05-04,Sparti,Ergotelis,2,2,D
+2018-05-05,OFI,Apollon Larissa FC,4,0,H
+2018-05-05,Veria,Panachaiki FC,0,3,A
+2018-05-05,Aris Thessalonikis,Acharnaikos,3,0,H
+2018-05-06,Anagennisi Karditsas,Trikala,0,0,D
+2018-05-06,Panegialios,Apollon Pontou,1,2,A
+2018-05-06,Panserraikos,Kallithea,1,1,D
+2018-05-06,Aiginiakos,Kissamikos,1,1,D
+2018-05-06,Doxa Dramas,AE Karaiskakis,0,0,D
+2018-05-12,Ergotelis,Panserraikos,0,3,A
+2018-05-12,Aris Thessalonikis,Veria,3,0,H
+2018-05-12,Acharnaikos,Doxa Dramas,0,3,A
+2018-05-13,Kissamikos,Apollon Pontou,2,1,H
+2018-05-13,AE Karaiskakis,OFI,1,2,A
+2018-05-13,Trikala,Aiginiakos,1,0,H
+2018-05-13,Kallithea,Anagennisi Karditsas,3,1,H
+2018-05-13,Apollon Larissa FC,Panegialios,3,2,H
+2018-05-13,Panachaiki FC,Sparti,2,1,H
+2018-05-15,OFI,Acharnaikos,3,0,H
+2018-05-15,Doxa Dramas,Veria,3,0,H
+2018-05-16,Trikala,Kissamikos,2,1,H
+2018-05-16,Anagennisi Karditsas,Ergotelis,2,1,H
+2018-05-16,Panegialios,AE Karaiskakis,0,0,D
+2018-05-16,Sparti,Aris Thessalonikis,0,3,A
+2018-05-16,Panserraikos,Panachaiki FC,1,1,D
+2018-05-16,Aiginiakos,Kallithea,2,0,H
+2018-05-16,Apollon Pontou,Apollon Larissa FC,1,0,H
+2018-05-19,Veria,OFI,0,3,A
+2018-05-19,Acharnaikos,Panegialios,0,3,A
+2018-05-20,Aris Thessalonikis,Panserraikos,2,0,H
+2018-05-20,Kallithea,Trikala,0,1,A
+2018-05-20,Kissamikos,Apollon Larissa FC,7,0,H
+2018-05-20,AE Karaiskakis,Apollon Pontou,2,1,H
+2018-05-20,Doxa Dramas,Sparti,7,0,H
+2018-05-20,Ergotelis,Aiginiakos,5,1,H
+2018-05-20,Panachaiki FC,Anagennisi Karditsas,4,1,H
+2018-05-25,Trikala,Ergotelis,0,3,A
+2018-05-26,Panegialios,Veria,3,0,H
+2018-05-26,Apollon Pontou,Acharnaikos,3,0,H
+2018-05-27,OFI,Sparti,5,0,H
+2018-05-27,Anagennisi Karditsas,Aris Thessalonikis,0,1,A
+2018-05-27,Panserraikos,Doxa Dramas,3,4,A
+2018-05-27,Aiginiakos,Panachaiki FC,0,2,A
+2018-05-27,Apollon Larissa FC,AE Karaiskakis,3,1,H
+2018-05-28,Kallithea,Kissamikos,0,3,A

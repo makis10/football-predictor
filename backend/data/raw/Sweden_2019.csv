@@ -1,0 +1,243 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,PSH,PSD,PSA
+31/03/2019,AIK,Ostersunds,0,0,D,1.78,3.19,6.27
+31/03/2019,Falkenbergs,Orebro,1,0,H,2.73,3.39,2.71
+31/03/2019,Kalmar,Sirius,0,2,A,1.76,3.59,5.26
+31/03/2019,AFC Eskilstuna,Goteborg,3,1,H,2.74,3.11,2.91
+31/03/2019,Helsingborg,Norrkoping,3,1,H,2.85,3.32,2.64
+01/04/2019,Djurgarden,Sundsvall,2,2,D,1.88,3.36,4.87
+01/04/2019,Elfsborg,Hammarby,1,1,D,3.21,3.36,2.37
+01/04/2019,Malmo FF,Hacken,1,1,D,1.99,3.17,4.62
+06/04/2019,Hacken,Helsingborg,2,1,H,1.64,4.02,5.59
+06/04/2019,Sundsvall,Malmo FF,3,1,H,4.79,3.37,1.89
+07/04/2019,Goteborg,Elfsborg,3,0,H,2.61,3.25,2.94
+07/04/2019,Ostersunds,Falkenbergs,3,2,H,1.51,4.17,7.39
+07/04/2019,Hammarby,Kalmar,1,1,D,1.81,3.41,5.25
+08/04/2019,Norrkoping,AIK,0,0,D,2.89,3.17,2.72
+08/04/2019,Orebro,Djurgarden,0,3,A,4.2,3.22,2.06
+08/04/2019,Sirius,AFC Eskilstuna,3,2,H,2.24,3.27,3.58
+12/04/2019,AFC Eskilstuna,Orebro,1,1,D,2.39,3.27,3.27
+13/04/2019,Falkenbergs,Hacken,0,3,A,6.39,4.81,1.48
+13/04/2019,Kalmar,Norrkoping,2,2,D,3.13,3.21,2.5
+14/04/2019,AIK,Sirius,2,1,H,1.4,4.58,9.38
+14/04/2019,Elfsborg,Sundsvall,3,1,H,2.43,3.42,3.06
+14/04/2019,Malmo FF,Ostersunds,2,0,H,1.5,4.08,7.86
+15/04/2019,Djurgarden,Goteborg,2,1,H,1.6,3.97,6.18
+15/04/2019,Helsingborg,Hammarby,2,1,H,2.77,3.42,2.65
+19/04/2019,Ostersunds,Elfsborg,1,1,D,2.3,3.27,3.44
+19/04/2019,Norrkoping,Falkenbergs,4,3,H,1.3,5.4,11.28
+19/04/2019,Orebro,AIK,2,1,H,4.87,3.03,2.01
+20/04/2019,Sundsvall,Kalmar,1,2,A,2.4,3.24,3.27
+20/04/2019,Sirius,Malmo FF,0,1,A,5.59,4.11,1.63
+21/04/2019,Hacken,Djurgarden,0,1,A,1.85,3.75,4.42
+21/04/2019,Hammarby,AFC Eskilstuna,3,1,H,1.37,4.87,9.44
+22/04/2019,Goteborg,Helsingborg,3,1,H,2.48,3.31,3.07
+24/04/2019,AFC Eskilstuna,Ostersunds,0,1,A,3,3.3,2.54
+24/04/2019,AIK,Hacken,1,0,H,2.23,3.14,3.78
+24/04/2019,Elfsborg,Orebro,4,2,H,1.72,3.92,5.03
+24/04/2019,Falkenbergs,Sirius,0,0,D,2.65,3.46,2.75
+24/04/2019,Malmo FF,Hammarby,4,1,H,1.64,3.9,5.9
+25/04/2019,Djurgarden,Norrkoping,1,1,D,1.97,3.64,3.99
+25/04/2019,Helsingborg,Sundsvall,1,1,D,1.99,3.58,3.97
+25/04/2019,Kalmar,Goteborg,1,1,D,2.38,3.21,3.33
+27/04/2019,Sirius,Elfsborg,2,4,A,3.14,3.42,2.38
+28/04/2019,Hacken,AFC Eskilstuna,3,0,H,1.32,5.08,11.62
+28/04/2019,Hammarby,Djurgarden,2,1,H,2.86,3.31,2.64
+28/04/2019,Norrkoping,Malmo FF,1,1,D,3.55,3.42,2.19
+29/04/2019,Goteborg,AIK,3,0,H,3.06,3.07,2.65
+29/04/2019,Orebro,Kalmar,1,1,D,2.96,3.22,2.62
+29/04/2019,Ostersunds,Helsingborg,3,0,H,2.04,3.43,4
+29/04/2019,Sundsvall,Falkenbergs,3,1,H,1.63,4.19,5.36
+04/05/2019,AIK,AFC Eskilstuna,2,1,H,1.56,3.58,8.41
+04/05/2019,Sirius,Goteborg,2,4,A,3.14,3.29,2.45
+05/05/2019,Falkenbergs,Malmo FF,1,2,A,8.67,4.91,1.38
+05/05/2019,Hacken,Sundsvall,1,0,H,1.49,4.49,6.94
+05/05/2019,Kalmar,Ostersunds,1,1,D,2.16,3.36,3.69
+05/05/2019,Orebro,Hammarby,2,3,A,4.46,4.14,1.75
+06/05/2019,Elfsborg,Norrkoping,0,0,D,2.65,3.34,2.83
+06/05/2019,Helsingborg,Djurgarden,1,1,D,3.66,3.42,2.14
+10/05/2019,Hammarby,Sirius,2,0,H,1.35,5.34,8.68
+11/05/2019,Ostersunds,Hacken,1,1,D,3.45,3.45,2.21
+11/05/2019,AFC Eskilstuna,Falkenbergs,0,0,D,2.33,3.24,3.4
+11/05/2019,Kalmar,Helsingborg,1,0,H,1.85,3.62,4.63
+11/05/2019,Sundsvall,Orebro,1,2,A,1.78,3.76,4.84
+12/05/2019,Djurgarden,AIK,0,2,A,2.77,2.93,3.05
+12/05/2019,Malmo FF,Elfsborg,4,1,H,1.49,4.29,7.41
+13/05/2019,Norrkoping,Goteborg,1,2,A,2.38,3.42,3.14
+14/05/2019,Hammarby,Ostersunds,4,0,H,1.51,4.61,6.32
+15/05/2019,Elfsborg,AFC Eskilstuna,1,0,H,1.56,4.01,6.81
+15/05/2019,Falkenbergs,Djurgarden,0,3,A,4.23,3.61,1.92
+15/05/2019,Hacken,Kalmar,1,0,H,1.85,3.53,4.72
+15/05/2019,Helsingborg,AIK,1,3,A,3.13,3.1,2.57
+15/05/2019,Sirius,Sundsvall,1,0,H,2.63,3.33,2.86
+16/05/2019,Goteborg,Malmo FF,0,0,D,3.37,3.26,2.34
+16/05/2019,Orebro,Norrkoping,1,2,A,3.98,3.84,1.92
+18/05/2019,AFC Eskilstuna,Helsingborg,1,1,D,3.26,3.06,2.52
+19/05/2019,Malmo FF,Kalmar,1,0,H,1.61,3.84,6.46
+19/05/2019,Sirius,Hacken,3,4,A,4.79,3.75,1.79
+19/05/2019,Djurgarden,Elfsborg,2,0,H,1.76,3.63,5.25
+20/05/2019,AIK,Falkenbergs,2,0,H,1.43,4.21,9.66
+20/05/2019,Goteborg,Hammarby,0,0,D,2.6,3.28,2.93
+20/05/2019,Norrkoping,Sundsvall,2,0,H,1.56,4.06,6.58
+20/05/2019,Ostersunds,Orebro,1,3,A,1.92,3.65,4.18
+24/05/2019,Sundsvall,AIK,1,1,D,3.94,3.16,2.16
+25/05/2019,Hacken,Goteborg,1,2,A,2.28,3.35,3.41
+25/05/2019,Malmo FF,AFC Eskilstuna,5,0,H,1.34,5.06,9.86
+25/05/2019,Helsingborg,Falkenbergs,1,1,D,1.98,3.52,4.07
+26/05/2019,Djurgarden,Ostersunds,3,1,H,1.58,4.09,6.19
+26/05/2019,Kalmar,Elfsborg,1,1,D,2.12,3.3,3.9
+27/05/2019,Hammarby,Norrkoping,2,2,D,2.13,3.63,3.48
+27/05/2019,Orebro,Sirius,0,2,A,2.37,3.47,3.12
+28/05/2019,Malmo FF,Sundsvall,2,1,H,1.32,5.34,10.14
+01/06/2019,Goteborg,Orebro,0,1,A,1.51,4.4,6.8
+01/06/2019,Sirius,Djurgarden,0,2,A,4.25,3.64,1.91
+01/06/2019,Falkenbergs,Kalmar,0,0,D,3.13,3.23,2.48
+01/06/2019,Ostersunds,Sundsvall,1,1,D,2.06,3.56,3.77
+02/06/2019,AFC Eskilstuna,Norrkoping,0,2,A,5.79,3.97,1.63
+02/06/2019,AIK,Hammarby,2,0,H,2.51,3.06,3.27
+02/06/2019,Elfsborg,Hacken,0,0,D,3.01,3.31,2.52
+02/06/2019,Helsingborg,Malmo FF,0,1,A,5.94,4.04,1.61
+25/06/2019,AIK,Norrkoping,0,2,A,1.97,3.4,4.32
+28/06/2019,Orebro,Helsingborg,0,1,A,2.8,3.35,2.63
+29/06/2019,Ostersunds,Goteborg,0,0,D,3.8,3.23,2.16
+29/06/2019,Falkenbergs,Elfsborg,2,1,H,2.85,3.22,2.68
+29/06/2019,Sundsvall,AFC Eskilstuna,0,0,D,2.13,2.99,4.33
+30/06/2019,AIK,Malmo FF,0,0,D,3.56,3.05,2.35
+30/06/2019,Norrkoping,Sirius,0,1,A,1.47,4.63,6.96
+01/07/2019,Djurgarden,Kalmar,2,0,H,2.04,3.18,4.34
+01/07/2019,Hacken,Hammarby,2,0,H,2.02,3.8,3.62
+06/07/2019,Kalmar,AIK,0,1,A,2.8,2.81,3.07
+06/07/2019,Sirius,Ostersunds,1,1,D,2.29,3.28,3.34
+06/07/2019,Goteborg,Sundsvall,2,1,H,1.65,3.68,5.92
+06/07/2019,Malmo FF,Orebro,2,1,H,1.21,6.6,14.07
+07/07/2019,Hammarby,Falkenbergs,6,2,H,1.38,5.22,7.56
+07/07/2019,Norrkoping,Hacken,2,1,H,2.58,3.39,2.79
+08/07/2019,AFC Eskilstuna,Djurgarden,1,1,D,6.52,3.86,1.58
+08/07/2019,Elfsborg,Helsingborg,1,1,D,2.13,3.34,3.69
+13/07/2019,AIK,Elfsborg,3,0,H,1.81,3.32,5.49
+13/07/2019,Falkenbergs,Goteborg,1,1,D,3.91,3.62,2
+13/07/2019,AFC Eskilstuna,Kalmar,3,1,H,3.79,3.16,2.2
+14/07/2019,Hacken,Orebro,3,0,H,1.38,4.98,8.56
+14/07/2019,Ostersunds,Norrkoping,2,1,H,3.79,3.64,2.02
+14/07/2019,Djurgarden,Malmo FF,1,1,D,2.96,3.21,2.59
+15/07/2019,Helsingborg,Sirius,1,0,H,1.97,3.51,4.15
+15/07/2019,Sundsvall,Hammarby,2,3,A,5.83,4.23,1.58
+20/07/2019,AIK,Helsingborg,2,0,H,1.78,3.45,5.36
+20/07/2019,Orebro,Falkenbergs,4,0,H,2.46,3.49,2.92
+20/07/2019,Sundsvall,Hacken,0,1,A,5.84,3.97,1.63
+21/07/2019,Goteborg,AFC Eskilstuna,1,0,H,1.45,4.38,8.03
+21/07/2019,Malmo FF,Sirius,1,1,D,1.3,5.22,12.13
+21/07/2019,Norrkoping,Ostersunds,3,0,H,1.6,4.38,5.45
+22/07/2019,Hammarby,Elfsborg,5,2,H,1.51,4.62,6.26
+22/07/2019,Kalmar,Djurgarden,0,1,A,3.66,3.2,2.23
+27/07/2019,Falkenbergs,Sundsvall,2,0,H,2.14,3.49,3.56
+27/07/2019,Sirius,AIK,0,2,A,4.01,3.18,2.12
+27/07/2019,AFC Eskilstuna,Hammarby,1,6,A,6.77,4.65,1.48
+28/07/2019,Djurgarden,Hacken,2,0,H,2.13,3.5,3.58
+28/07/2019,Ostersunds,Malmo FF,0,0,D,3.85,3.31,2.11
+28/07/2019,Goteborg,Norrkoping,0,0,D,2.37,3.34,3.19
+29/07/2019,Elfsborg,Kalmar,2,1,H,2.36,3.33,3.22
+29/07/2019,Helsingborg,Orebro,1,4,A,2.1,3.43,3.76
+03/08/2019,Ostersunds,AFC Eskilstuna,1,2,A,1.62,4.05,5.73
+03/08/2019,Falkenbergs,Helsingborg,1,1,D,2.77,3.34,2.67
+04/08/2019,Kalmar,Hammarby,2,2,D,4.03,3.82,1.91
+04/08/2019,Hacken,Sirius,4,1,H,1.47,4.56,7.04
+05/08/2019,Elfsborg,Djurgarden,0,1,A,5.25,4.03,1.67
+05/08/2019,Orebro,Goteborg,2,2,D,3.18,3.16,2.48
+10/08/2019,Djurgarden,Sirius,4,0,H,1.38,4.9,8.71
+10/08/2019,Sundsvall,Ostersunds,1,1,D,2.48,3.2,3.14
+11/08/2019,AFC Eskilstuna,AIK,2,4,A,8.09,3.82,1.53
+11/08/2019,Hacken,Malmo FF,1,1,D,2.92,3.23,2.61
+11/08/2019,Hammarby,Helsingborg,2,1,H,1.47,4.76,6.57
+11/08/2019,Norrkoping,Elfsborg,2,0,H,1.64,4.01,5.62
+12/08/2019,Goteborg,Falkenbergs,1,1,D,1.79,3.72,4.75
+12/08/2019,Kalmar,Orebro,1,1,D,2.14,3.38,3.66
+17/08/2019,Hammarby,Sundsvall,3,0,H,1.33,5.5,9.38
+18/08/2019,AIK,Kalmar,1,2,A,1.75,3.36,5.96
+18/08/2019,Orebro,Hacken,1,2,A,3.93,3.69,1.97
+18/08/2019,Sirius,Norrkoping,0,2,A,4.27,3.95,1.82
+18/08/2019,Malmo FF,Falkenbergs,5,0,H,1.26,6.22,11.51
+19/08/2019,Djurgarden,AFC Eskilstuna,3,0,H,1.16,7.84,19.82
+19/08/2019,Elfsborg,Ostersunds,4,1,H,1.95,3.57,4.16
+19/08/2019,Helsingborg,Goteborg,1,2,A,2.92,3.16,2.66
+24/08/2019,Sirius,Orebro,3,4,A,2.46,3.46,2.95
+25/08/2019,AFC Eskilstuna,Hacken,0,2,A,8.58,5.22,1.36
+25/08/2019,Norrkoping,Helsingborg,5,0,H,1.45,4.65,7.36
+25/08/2019,Ostersunds,AIK,1,3,A,4.58,3.55,1.87
+25/08/2019,Malmo FF,Djurgarden,0,1,A,1.93,3.53,4.3
+26/08/2019,Falkenbergs,Hammarby,0,2,A,5.67,4.85,1.52
+26/08/2019,Goteborg,Kalmar,4,0,H,2,3.47,4.07
+26/08/2019,Sundsvall,Elfsborg,1,2,A,2.45,3.32,3.06
+30/08/2019,Helsingborg,Ostersunds,2,0,H,2.18,3.26,3.71
+31/08/2019,Elfsborg,Sirius,1,1,D,2.07,3.5,3.75
+31/08/2019,Orebro,AFC Eskilstuna,3,1,H,1.65,3.96,5.53
+01/09/2019,AIK,Djurgarden,1,0,H,2.89,2.99,2.83
+01/09/2019,Kalmar,Malmo FF,0,5,A,4.72,3.48,1.87
+01/09/2019,Sundsvall,Goteborg,0,2,A,3.8,3.5,2.06
+01/09/2019,Hacken,Falkenbergs,4,1,H,1.36,5.5,8.07
+01/09/2019,Norrkoping,Hammarby,2,0,H,2.3,3.62,3.09
+13/09/2019,Sirius,Falkenbergs,2,0,H,2.04,3.67,3.69
+14/09/2019,Orebro,Sundsvall,0,0,D,2.29,3.32,3.36
+14/09/2019,Ostersunds,Kalmar,1,2,A,2.55,3.28,2.96
+15/09/2019,Hacken,AIK,1,2,A,2.35,3.13,3.45
+15/09/2019,Hammarby,Goteborg,6,2,H,1.85,3.92,4.16
+15/09/2019,Malmo FF,Norrkoping,1,0,H,1.54,4.41,6.04
+16/09/2019,AFC Eskilstuna,Elfsborg,2,2,D,3.34,3.68,2.16
+16/09/2019,Djurgarden,Helsingborg,2,0,H,1.32,5.27,10.51
+20/09/2019,Sundsvall,Djurgarden,1,4,A,5.81,3.72,1.68
+21/09/2019,Falkenbergs,Ostersunds,1,0,H,1.95,3.74,3.93
+21/09/2019,Kalmar,Hacken,1,1,D,3.94,3.31,2.09
+21/09/2019,Norrkoping,Orebro,3,0,H,1.45,4.68,7.27
+21/09/2019,Goteborg,Sirius,2,1,H,1.65,4.1,5.37
+22/09/2019,Hammarby,AIK,2,1,H,2.19,3.39,3.54
+22/09/2019,Elfsborg,Malmo FF,0,3,A,5.44,4.2,1.62
+22/09/2019,Helsingborg,AFC Eskilstuna,2,1,H,1.53,4.32,6.4
+24/09/2019,Djurgarden,Falkenbergs,1,0,H,1.23,6.91,11.86
+24/09/2019,Kalmar,Sundsvall,0,2,A,2.06,3.4,3.92
+25/09/2019,AIK,Goteborg,1,0,H,1.85,3.46,4.86
+25/09/2019,Hacken,Elfsborg,1,2,A,1.45,4.87,6.94
+25/09/2019,Orebro,Ostersunds,2,0,H,2.26,3.46,3.29
+25/09/2019,Sirius,Hammarby,1,3,A,5.01,4.73,1.59
+26/09/2019,Malmo FF,Helsingborg,3,0,H,1.26,5.81,12.86
+26/09/2019,Norrkoping,AFC Eskilstuna,4,0,H,1.21,6.55,15.54
+29/09/2019,Elfsborg,AIK,1,1,D,4.26,3.5,1.95
+29/09/2019,Goteborg,Hacken,0,0,D,3.57,3.49,2.13
+29/09/2019,Sundsvall,Sirius,2,1,H,2.06,3.4,3.93
+29/09/2019,AFC Eskilstuna,Malmo FF,0,1,A,13.21,7.01,1.21
+29/09/2019,Falkenbergs,Norrkoping,0,2,A,4.45,4.23,1.74
+30/09/2019,Hammarby,Orebro,5,1,H,1.21,7.59,11.52
+30/09/2019,Helsingborg,Kalmar,2,0,H,2.55,3.08,3.14
+30/09/2019,Ostersunds,Djurgarden,1,2,A,6.11,4.22,1.56
+05/10/2019,Sundsvall,Norrkoping,4,4,D,5.13,4.03,1.68
+05/10/2019,AIK,Orebro,2,0,H,1.31,5.29,11.48
+05/10/2019,Sirius,Helsingborg,2,1,H,2.34,3.22,3.37
+06/10/2019,Djurgarden,Hammarby,1,2,A,2.17,3.74,3.26
+06/10/2019,Hacken,Ostersunds,1,1,D,1.51,4.55,6.35
+06/10/2019,Kalmar,AFC Eskilstuna,0,0,D,1.37,4.96,9.09
+06/10/2019,Elfsborg,Falkenbergs,4,0,H,2.15,3.64,3.38
+06/10/2019,Malmo FF,Goteborg,1,0,H,1.49,4.56,6.78
+18/10/2019,AFC Eskilstuna,Sundsvall,1,0,H,3.81,3.68,2
+19/10/2019,Helsingborg,Hacken,0,2,A,3.16,3.51,2.31
+19/10/2019,Ostersunds,Sirius,2,0,H,2.05,3.45,3.89
+20/10/2019,Falkenbergs,AIK,1,5,A,5,3.46,1.83
+20/10/2019,Hammarby,Malmo FF,2,0,H,2.98,3.77,2.3
+20/10/2019,Norrkoping,Kalmar,1,0,H,1.63,4,5.72
+21/10/2019,Goteborg,Djurgarden,0,1,A,4.78,3.78,1.78
+21/10/2019,Orebro,Elfsborg,2,2,D,2.88,3.6,2.44
+26/10/2019,Sundsvall,Helsingborg,1,2,A,1.51,4.39,6.61
+26/10/2019,Kalmar,Falkenbergs,2,3,A,1.72,3.74,5.27
+27/10/2019,AFC Eskilstuna,Sirius,0,0,D,2.85,3.46,2.53
+27/10/2019,Hacken,Norrkoping,0,1,A,2.72,3.65,2.55
+27/10/2019,Ostersunds,Hammarby,1,2,A,8.24,5.33,1.36
+28/10/2019,Djurgarden,Orebro,3,0,H,1.12,8.79,22.79
+28/10/2019,Elfsborg,Goteborg,2,0,H,2.55,3.6,2.74
+28/10/2019,Malmo FF,AIK,2,0,H,1.68,3.79,5.57
+02/11/2019,AIK,Sundsvall,2,1,H,1.74,3.96,4.77
+02/11/2019,Falkenbergs,AFC Eskilstuna,1,0,H,1.61,4.43,5.23
+02/11/2019,Goteborg,Ostersunds,7,1,H,1.58,4.15,6.03
+02/11/2019,Hammarby,Hacken,4,1,H,1.38,5.41,7.46
+02/11/2019,Helsingborg,Elfsborg,1,2,A,2.73,3.66,2.52
+02/11/2019,Norrkoping,Djurgarden,2,2,D,3.32,3.06,2.46
+02/11/2019,Orebro,Malmo FF,0,5,A,15.84,7.53,1.17
+02/11/2019,Sirius,Kalmar,3,0,H,5.16,4.11,1.66
+06/11/2019,Brage,Kalmar,0,2,A,3.07,3.25,2.49
+10/11/2019,Kalmar,Brage,2,2,D,1.75,3.39,5.79

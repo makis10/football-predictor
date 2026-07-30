@@ -1,0 +1,193 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2018-07-22,Zorya Luhansk,FC Mariupol,2,1,H
+2018-07-22,Karpaty,Oleksandria,0,2,A
+2018-07-22,Arsenal Kyiv,Lviv,0,2,A
+2018-07-23,Chornomorets,Olimpik Donetsk,2,1,H
+2018-07-25,Dynamo Kyiv,Vorskla Poltava,1,0,H
+2018-07-25,Desna,Shakhtar Donetsk,0,2,A
+2018-07-28,Oleksandria,Zorya Luhansk,1,0,H
+2018-07-28,Lviv,Dynamo Kyiv,0,1,A
+2018-07-29,Olimpik Donetsk,Vorskla Poltava,1,0,H
+2018-07-29,Karpaty,Chornomorets,1,0,H
+2018-07-29,Shakhtar Donetsk,Arsenal Kyiv,3,0,H
+2018-07-29,FC Mariupol,Desna,1,4,A
+2018-08-03,Dynamo Kyiv,Shakhtar Donetsk,1,0,H
+2018-08-04,Vorskla Poltava,Lviv,1,0,H
+2018-08-04,Zorya Luhansk,Chornomorets,1,1,D
+2018-08-05,Karpaty,Olimpik Donetsk,2,2,D
+2018-08-05,Arsenal Kyiv,FC Mariupol,1,2,A
+2018-08-05,Desna,Oleksandria,0,2,A
+2018-08-10,Olimpik Donetsk,Lviv,1,1,D
+2018-08-11,Shakhtar Donetsk,Vorskla Poltava,4,1,H
+2018-08-12,Karpaty,Zorya Luhansk,0,1,A
+2018-08-12,Oleksandria,Arsenal Kyiv,1,0,H
+2018-08-12,Chornomorets,Desna,1,0,H
+2018-08-17,Arsenal Kyiv,Chornomorets,1,1,D
+2018-08-18,Lviv,Shakhtar Donetsk,0,2,A
+2018-08-18,Dynamo Kyiv,Oleksandria,1,0,H
+2018-08-19,Desna,Karpaty,2,2,D
+2018-08-19,Zorya Luhansk,Olimpik Donetsk,0,0,D
+2018-08-19,Vorskla Poltava,FC Mariupol,2,1,H
+2018-08-24,Olimpik Donetsk,Shakhtar Donetsk,2,5,A
+2018-08-25,Oleksandria,Vorskla Poltava,2,0,H
+2018-08-25,Chornomorets,Dynamo Kyiv,1,1,D
+2018-08-26,Zorya Luhansk,Desna,0,2,A
+2018-08-26,FC Mariupol,Lviv,2,2,D
+2018-08-26,Karpaty,Arsenal Kyiv,1,2,A
+2018-08-31,Vorskla Poltava,Chornomorets,2,1,H
+2018-09-01,Shakhtar Donetsk,FC Mariupol,2,0,H
+2018-09-02,Desna,Olimpik Donetsk,0,1,A
+2018-09-02,Lviv,Oleksandria,2,2,D
+2018-09-02,Dynamo Kyiv,Karpaty,0,2,A
+2018-09-02,Arsenal Kyiv,Zorya Luhansk,0,5,A
+2018-09-14,Desna,Arsenal Kyiv,1,0,H
+2018-09-15,Oleksandria,Shakhtar Donetsk,0,2,A
+2018-09-15,Karpaty,Vorskla Poltava,0,1,A
+2018-09-16,Olimpik Donetsk,FC Mariupol,1,3,A
+2018-09-16,Zorya Luhansk,Dynamo Kyiv,1,1,D
+2018-09-16,Chornomorets,Lviv,0,1,A
+2018-09-22,FC Mariupol,Oleksandria,1,0,H
+2018-09-22,Lviv,Karpaty,1,1,D
+2018-09-22,Arsenal Kyiv,Olimpik Donetsk,1,3,A
+2018-09-23,Shakhtar Donetsk,Chornomorets,3,0,H
+2018-09-23,Dynamo Kyiv,Desna,4,0,H
+2018-09-23,Vorskla Poltava,Zorya Luhansk,2,1,H
+2018-09-26,FC Mariupol,Dynamo Kyiv,0,2,A
+2018-09-28,Karpaty,Shakhtar Donetsk,1,6,A
+2018-09-29,Olimpik Donetsk,Oleksandria,2,3,A
+2018-09-30,Desna,Vorskla Poltava,0,2,A
+2018-09-30,Zorya Luhansk,Lviv,0,0,D
+2018-09-30,Chornomorets,FC Mariupol,0,1,A
+2018-09-30,Arsenal Kyiv,Dynamo Kyiv,0,1,A
+2018-10-06,FC Mariupol,Karpaty,1,1,D
+2018-10-06,Oleksandria,Chornomorets,3,2,H
+2018-10-07,Lviv,Desna,1,3,A
+2018-10-07,Shakhtar Donetsk,Zorya Luhansk,1,1,D
+2018-10-07,Dynamo Kyiv,Olimpik Donetsk,1,0,H
+2018-10-07,Vorskla Poltava,Arsenal Kyiv,0,2,A
+2018-10-19,Shakhtar Donetsk,Desna,1,0,H
+2018-10-20,FC Mariupol,Zorya Luhansk,3,2,H
+2018-10-20,Vorskla Poltava,Dynamo Kyiv,0,1,A
+2018-10-21,Lviv,Arsenal Kyiv,1,0,H
+2018-10-21,Olimpik Donetsk,Chornomorets,1,0,H
+2018-10-21,Oleksandria,Karpaty,2,1,H
+2018-10-27,Desna,FC Mariupol,2,0,H
+2018-10-27,Zorya Luhansk,Oleksandria,0,0,D
+2018-10-27,Arsenal Kyiv,Shakhtar Donetsk,0,3,A
+2018-10-28,Chornomorets,Karpaty,0,5,A
+2018-10-28,Dynamo Kyiv,Lviv,0,1,A
+2018-10-28,Vorskla Poltava,Olimpik Donetsk,2,1,H
+2018-11-03,FC Mariupol,Arsenal Kyiv,1,0,H
+2018-11-03,Shakhtar Donetsk,Dynamo Kyiv,2,1,H
+2018-11-03,Olimpik Donetsk,Karpaty,1,2,A
+2018-11-04,Oleksandria,Desna,1,1,D
+2018-11-04,Lviv,Vorskla Poltava,0,2,A
+2018-11-04,Chornomorets,Zorya Luhansk,0,3,A
+2018-11-10,Lviv,Olimpik Donetsk,1,1,D
+2018-11-10,Zorya Luhansk,Karpaty,2,1,H
+2018-11-10,Desna,Chornomorets,2,0,H
+2018-11-10,Arsenal Kyiv,Oleksandria,0,3,A
+2018-11-11,Dynamo Kyiv,FC Mariupol,4,0,H
+2018-11-11,Vorskla Poltava,Shakhtar Donetsk,0,2,A
+2018-11-23,Shakhtar Donetsk,Lviv,0,0,D
+2018-11-24,FC Mariupol,Vorskla Poltava,1,0,H
+2018-11-24,Karpaty,Desna,0,2,A
+2018-11-25,Olimpik Donetsk,Zorya Luhansk,1,1,D
+2018-11-25,Chornomorets,Arsenal Kyiv,2,1,H
+2018-11-25,Oleksandria,Dynamo Kyiv,2,1,H
+2018-12-01,Desna,Zorya Luhansk,0,2,A
+2018-12-01,Arsenal Kyiv,Karpaty,1,1,D
+2018-12-02,Lviv,FC Mariupol,2,2,D
+2018-12-02,Shakhtar Donetsk,Olimpik Donetsk,2,2,D
+2018-12-03,Vorskla Poltava,Oleksandria,0,1,A
+2018-12-03,Dynamo Kyiv,Chornomorets,2,0,H
+2018-12-07,FC Mariupol,Shakhtar Donetsk,0,3,A
+2018-12-08,Zorya Luhansk,Arsenal Kyiv,3,0,H
+2018-12-08,Karpaty,Dynamo Kyiv,0,4,A
+2018-12-08,Chornomorets,Vorskla Poltava,0,1,A
+2018-12-09,Olimpik Donetsk,Desna,1,1,D
+2018-12-09,Oleksandria,Lviv,1,2,A
+2019-02-23,FC Mariupol,Olimpik Donetsk,2,1,H
+2019-02-23,Lviv,Chornomorets,0,1,A
+2019-02-24,Arsenal Kyiv,Desna,0,2,A
+2019-02-24,Vorskla Poltava,Karpaty,0,4,A
+2019-02-25,Dynamo Kyiv,Zorya Luhansk,5,0,H
+2019-02-25,Shakhtar Donetsk,Oleksandria,2,0,H
+2019-03-02,Desna,Dynamo Kyiv,1,2,A
+2019-03-02,Chornomorets,Shakhtar Donetsk,0,1,A
+2019-03-03,Zorya Luhansk,Vorskla Poltava,3,0,H
+2019-03-03,Olimpik Donetsk,Arsenal Kyiv,0,1,A
+2019-03-03,Karpaty,Lviv,0,1,A
+2019-03-03,Oleksandria,FC Mariupol,1,1,D
+2019-03-09,FC Mariupol,Chornomorets,0,0,D
+2019-03-09,Vorskla Poltava,Desna,0,0,D
+2019-03-09,Lviv,Zorya Luhansk,0,0,D
+2019-03-10,Shakhtar Donetsk,Karpaty,5,0,H
+2019-03-10,Dynamo Kyiv,Arsenal Kyiv,4,0,H
+2019-03-10,Oleksandria,Olimpik Donetsk,1,1,D
+2019-03-16,Chornomorets,Oleksandria,0,3,A
+2019-03-16,Zorya Luhansk,Shakhtar Donetsk,0,1,A
+2019-03-17,Desna,Lviv,0,1,A
+2019-03-17,Karpaty,FC Mariupol,1,1,D
+2019-03-17,Olimpik Donetsk,Dynamo Kyiv,1,2,A
+2019-03-18,Arsenal Kyiv,Vorskla Poltava,2,2,D
+2019-04-02,Karpaty,Vorskla Poltava,4,0,H
+2019-04-03,Oleksandria,Shakhtar Donetsk,0,1,A
+2019-04-03,Zorya Luhansk,Dynamo Kyiv,2,3,A
+2019-04-03,Lviv,FC Mariupol,2,3,A
+2019-04-06,Olimpik Donetsk,Desna,0,2,A
+2019-04-06,Chornomorets,Arsenal Kyiv,1,3,A
+2019-04-13,FC Mariupol,Dynamo Kyiv,0,1,A
+2019-04-13,Shakhtar Donetsk,Zorya Luhansk,3,0,H
+2019-04-13,Lviv,Oleksandria,1,2,A
+2019-04-14,Desna,Karpaty,2,1,H
+2019-04-14,Arsenal Kyiv,Vorskla Poltava,1,0,H
+2019-04-14,Chornomorets,Olimpik Donetsk,1,1,D
+2019-04-23,Olimpik Donetsk,Arsenal Kyiv,2,0,H
+2019-04-23,Karpaty,Chornomorets,0,0,D
+2019-04-23,Vorskla Poltava,Desna,3,3,D
+2019-04-24,Zorya Luhansk,Lviv,2,1,H
+2019-04-24,Oleksandria,FC Mariupol,2,1,H
+2019-04-24,Dynamo Kyiv,Shakhtar Donetsk,0,0,D
+2019-04-27,Chornomorets,Vorskla Poltava,1,2,A
+2019-04-27,Olimpik Donetsk,Karpaty,3,2,H
+2019-04-28,FC Mariupol,Shakhtar Donetsk,0,1,A
+2019-04-28,Oleksandria,Zorya Luhansk,0,2,A
+2019-04-28,Lviv,Dynamo Kyiv,0,1,A
+2019-04-29,Arsenal Kyiv,Desna,2,0,H
+2019-05-04,Zorya Luhansk,FC Mariupol,0,1,A
+2019-05-04,Dynamo Kyiv,Oleksandria,1,1,D
+2019-05-04,Shakhtar Donetsk,Lviv,5,0,H
+2019-05-05,Olimpik Donetsk,Vorskla Poltava,1,1,D
+2019-05-05,Desna,Chornomorets,2,4,A
+2019-05-05,Karpaty,Arsenal Kyiv,1,2,A
+2019-05-11,FC Mariupol,Lviv,2,0,H
+2019-05-11,Dynamo Kyiv,Zorya Luhansk,1,1,D
+2019-05-11,Shakhtar Donetsk,Oleksandria,2,1,H
+2019-05-12,Arsenal Kyiv,Chornomorets,3,3,D
+2019-05-12,Desna,Olimpik Donetsk,2,1,H
+2019-05-12,Vorskla Poltava,Karpaty,1,1,D
+2019-05-18,Vorskla Poltava,Arsenal Kyiv,2,0,H
+2019-05-18,Dynamo Kyiv,FC Mariupol,2,1,H
+2019-05-18,Karpaty,Desna,2,0,H
+2019-05-18,Olimpik Donetsk,Chornomorets,2,1,H
+2019-05-19,Oleksandria,Lviv,0,1,A
+2019-05-19,Zorya Luhansk,Shakhtar Donetsk,0,1,A
+2019-05-21,Chornomorets,Karpaty,3,1,H
+2019-05-21,Desna,Vorskla Poltava,0,1,A
+2019-05-21,Arsenal Kyiv,Olimpik Donetsk,1,1,D
+2019-05-22,FC Mariupol,Oleksandria,1,1,D
+2019-05-22,Lviv,Zorya Luhansk,0,0,D
+2019-05-22,Shakhtar Donetsk,Dynamo Kyiv,1,1,D
+2019-05-25,Vorskla Poltava,Chornomorets,1,2,A
+2019-05-25,Desna,Arsenal Kyiv,1,0,H
+2019-05-25,Karpaty,Olimpik Donetsk,3,3,D
+2019-05-26,Dynamo Kyiv,Lviv,2,1,H
+2019-05-26,Shakhtar Donetsk,FC Mariupol,4,0,H
+2019-05-26,Zorya Luhansk,Oleksandria,3,1,H
+2019-05-29,Vorskla Poltava,Olimpik Donetsk,2,2,D
+2019-05-29,Arsenal Kyiv,Karpaty,2,3,A
+2019-05-29,Chornomorets,Desna,3,0,H
+2019-05-30,FC Mariupol,Zorya Luhansk,3,1,H
+2019-05-30,Lviv,Shakhtar Donetsk,0,3,A
+2019-05-30,Oleksandria,Dynamo Kyiv,0,2,A

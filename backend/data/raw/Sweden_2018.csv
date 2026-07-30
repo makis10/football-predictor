@@ -1,0 +1,243 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,PSH,PSD,PSA
+01/04/2018,Hacken,Kalmar,1,0,H,1.58,4.17,6.4
+01/04/2018,Hammarby,Sirius,3,1,H,1.98,3.67,3.97
+01/04/2018,Ostersunds,Djurgarden,0,1,A,1.81,3.62,4.98
+01/04/2018,Trelleborgs,Goteborg,1,3,A,3.43,3.39,2.26
+02/04/2018,AIK,Dalkurd,2,0,H,1.5,3.98,8.8
+02/04/2018,Norrkoping,Brommapojkarna,2,1,H,1.6,3.99,6.57
+02/04/2018,Elfsborg,Malmo FF,1,2,A,3.67,3.75,2.04
+02/04/2018,Sundsvall,Orebro,0,0,D,2.44,3.35,3.11
+07/04/2018,Orebro,Norrkoping,1,1,D,3.33,3.67,2.19
+08/04/2018,Djurgarden,Trelleborgs,1,1,D,1.29,5.88,11.8
+08/04/2018,Kalmar,Elfsborg,1,0,H,2.64,3.25,2.91
+08/04/2018,Dalkurd,Ostersunds,3,0,H,3.9,3.62,2.01
+09/04/2018,Brommapojkarna,Hacken,2,0,H,4.44,3.78,1.85
+09/04/2018,Malmo FF,AIK,1,1,D,1.87,3.46,4.88
+10/04/2018,Goteborg,Hammarby,1,2,A,2.1,3.49,3.75
+13/04/2018,Sundsvall,Malmo FF,2,2,D,7.24,4.13,1.54
+13/04/2018,Trelleborgs,Orebro,1,2,A,3.09,3.31,2.48
+14/04/2018,Elfsborg,Sirius,0,1,A,1.73,4,4.94
+14/04/2018,Hacken,Dalkurd,3,0,H,1.71,3.81,5.43
+15/04/2018,AIK,Djurgarden,2,0,H,2.13,3.07,4.25
+15/04/2018,Norrkoping,Kalmar,3,1,H,1.5,4.46,7.25
+15/04/2018,Ostersunds,Goteborg,2,1,H,1.63,4.04,5.95
+16/04/2018,Hammarby,Brommapojkarna,4,0,H,1.64,4.12,5.68
+17/04/2018,Sundsvall,Trelleborgs,1,0,H,1.67,3.82,5.88
+18/04/2018,Djurgarden,Malmo FF,3,0,H,2.71,3.31,2.78
+18/04/2018,Kalmar,Ostersunds,1,1,D,3.71,3.38,2.15
+18/04/2018,Orebro,AIK,1,1,D,3.81,3.3,2.15
+18/04/2018,Sirius,Hacken,0,0,D,4.15,3.89,1.88
+19/04/2018,Brommapojkarna,Elfsborg,0,2,A,3.27,3.6,2.24
+19/04/2018,Goteborg,Dalkurd,1,0,H,1.95,3.51,4.29
+19/04/2018,Hammarby,Norrkoping,2,1,H,2.21,3.88,3.12
+21/04/2018,Ostersunds,Orebro,0,2,A,1.56,4.25,6.55
+22/04/2018,Dalkurd,Sundsvall,2,2,D,2.02,3.49,4.02
+22/04/2018,Hacken,Hammarby,2,2,D,1.8,3.91,4.58
+22/04/2018,AIK,Goteborg,2,0,H,1.68,3.74,6.01
+22/04/2018,Trelleborgs,Kalmar,0,1,A,3.59,3.35,2.21
+23/04/2018,Elfsborg,Djurgarden,2,2,D,2.89,3.41,2.56
+23/04/2018,Malmo FF,Brommapojkarna,3,1,H,1.24,6.65,13.2
+23/04/2018,Norrkoping,Sirius,1,0,H,1.46,4.77,7.5
+27/04/2018,AIK,Sirius,2,0,H,1.4,4.71,9.47
+28/04/2018,Goteborg,Hacken,2,1,H,3.32,3.34,2.3
+29/04/2018,Djurgarden,Hammarby,1,2,A,2.17,3.53,3.49
+29/04/2018,Sundsvall,Elfsborg,2,1,H,2.56,3.41,2.89
+29/04/2018,Kalmar,Malmo FF,3,0,H,4.48,3.54,1.91
+29/04/2018,Norrkoping,Trelleborgs,1,2,A,1.35,5.53,9.12
+30/04/2018,Brommapojkarna,Ostersunds,0,4,A,5.28,4.07,1.68
+30/04/2018,Orebro,Dalkurd,3,2,H,2.23,3.42,3.47
+02/05/2018,Sirius,AIK,2,3,A,5.59,3.8,1.7
+03/05/2018,Malmo FF,Djurgarden,1,0,H,1.75,3.68,5.41
+05/05/2018,Hammarby,Sundsvall,4,3,H,1.53,4.39,6.65
+05/05/2018,Ostersunds,Norrkoping,0,2,A,1.68,4.32,4.83
+06/05/2018,Brommapojkarna,Djurgarden,1,0,H,6.56,4.29,1.54
+06/05/2018,Dalkurd,Kalmar,1,2,A,2.22,3.29,3.59
+06/05/2018,Elfsborg,AIK,0,0,D,3.52,3.53,2.14
+06/05/2018,Trelleborgs,Hacken,0,3,A,5.12,3.89,1.72
+07/05/2018,Malmo FF,Goteborg,1,2,A,1.5,4.24,7.77
+07/05/2018,Sirius,Orebro,2,4,A,2.8,3.37,2.64
+12/05/2018,Sundsvall,Brommapojkarna,3,0,H,2.01,3.47,4.05
+13/05/2018,Djurgarden,Dalkurd,1,0,H,1.6,3.91,6.53
+13/05/2018,Goteborg,Norrkoping,0,2,A,2.54,3.54,2.81
+13/05/2018,Orebro,Hammarby,1,2,A,2.93,3.63,2.41
+13/05/2018,Trelleborgs,Malmo FF,1,0,H,7.87,4.79,1.43
+14/05/2018,AIK,Ostersunds,1,1,D,1.98,3.24,4.54
+14/05/2018,Hacken,Elfsborg,5,0,H,1.58,4.15,6.34
+14/05/2018,Kalmar,Sirius,1,0,H,1.74,3.58,5.58
+16/05/2018,Hammarby,Malmo FF,3,2,H,2.31,3.85,2.93
+17/05/2018,Djurgarden,Orebro,2,0,H,1.48,4.41,7.66
+18/05/2018,Brommapojkarna,Kalmar,2,1,H,3.39,3.28,2.31
+19/05/2018,Sirius,Trelleborgs,1,1,D,2.03,3.48,3.93
+19/05/2018,Sundsvall,Ostersunds,2,3,A,3.69,3.62,2.05
+19/05/2018,Norrkoping,Dalkurd,4,2,H,1.79,3.52,5.2
+20/05/2018,Hammarby,AIK,0,1,A,2.98,3.35,2.5
+20/05/2018,Malmo FF,Hacken,2,0,H,2.68,3.24,2.83
+21/05/2018,Elfsborg,Goteborg,1,1,D,2.29,3.45,3.25
+22/05/2018,Orebro,Kalmar,2,1,H,2.28,3.5,3.23
+23/05/2018,Hacken,AIK,1,1,D,2.54,3.15,3.12
+23/05/2018,Norrkoping,Sundsvall,1,0,H,1.5,4.65,6.59
+23/05/2018,Ostersunds,Sirius,5,2,H,1.43,4.8,7.81
+24/05/2018,Dalkurd,Elfsborg,1,4,A,2.46,3.52,2.92
+24/05/2018,Goteborg,Djurgarden,1,3,A,3.04,3.29,2.5
+24/05/2018,Trelleborgs,Brommapojkarna,2,1,H,2.18,3.54,3.44
+26/05/2018,AIK,Norrkoping,3,3,D,1.65,3.81,6.15
+26/05/2018,Ostersunds,Hacken,2,0,H,2.01,3.33,4.25
+27/05/2018,Kalmar,Hammarby,1,1,D,3.23,3.48,2.3
+27/05/2018,Malmo FF,Dalkurd,1,1,D,1.38,5.2,8.79
+27/05/2018,Sundsvall,Goteborg,2,0,H,2.86,3.47,2.53
+27/05/2018,Brommapojkarna,Orebro,0,0,D,3.4,3.72,2.13
+27/05/2018,Elfsborg,Trelleborgs,2,1,H,1.47,4.39,8.07
+27/05/2018,Sirius,Djurgarden,1,5,A,4.85,3.99,1.74
+03/07/2018,Sirius,Sundsvall,1,3,A,2.46,3.75,2.78
+07/07/2018,Sirius,Malmo FF,0,4,A,7.45,4.52,1.48
+07/07/2018,Dalkurd,Brommapojkarna,3,0,H,1.66,3.94,5.65
+07/07/2018,Hacken,Sundsvall,3,0,H,1.49,4.58,7.07
+07/07/2018,Trelleborgs,AIK,1,4,A,7.49,3.73,1.58
+08/07/2018,Goteborg,Kalmar,1,3,A,2.33,3.17,3.46
+08/07/2018,Djurgarden,Norrkoping,1,1,D,2.08,3.51,3.75
+08/07/2018,Orebro,Elfsborg,1,2,A,2.37,3.62,2.99
+09/07/2018,Hammarby,Ostersunds,1,2,A,2.05,3.71,3.64
+14/07/2018,Brommapojkarna,Sirius,0,1,A,2.19,3.77,3.22
+14/07/2018,Dalkurd,Trelleborgs,2,2,D,1.62,4.01,6.03
+14/07/2018,Malmo FF,Ostersunds,1,1,D,1.66,4.06,5.45
+14/07/2018,Goteborg,Orebro,2,0,H,2.24,3.38,3.43
+15/07/2018,Kalmar,Djurgarden,0,1,A,3.03,3.24,2.54
+15/07/2018,Norrkoping,Hacken,2,1,H,2.31,3.43,3.25
+15/07/2018,Sundsvall,AIK,0,1,A,4.87,3.44,1.86
+16/07/2018,Elfsborg,Hammarby,0,0,D,2.32,3.64,3.05
+21/07/2018,Orebro,Malmo FF,1,2,A,4.86,4.16,1.71
+21/07/2018,Ostersunds,Trelleborgs,4,1,H,1.34,5.13,11.13
+21/07/2018,Kalmar,Sundsvall,0,2,A,1.93,3.53,4.38
+22/07/2018,AIK,Brommapojkarna,5,1,H,1.23,6.21,17.77
+22/07/2018,Djurgarden,Hacken,2,1,H,1.97,3.42,4.37
+22/07/2018,Sirius,Goteborg,3,2,H,2.79,3.68,2.5
+23/07/2018,Hammarby,Dalkurd,4,1,H,1.56,4.25,6.61
+23/07/2018,Norrkoping,Elfsborg,1,0,H,1.82,3.95,4.42
+28/07/2018,Goteborg,Brommapojkarna,3,0,H,1.58,4.16,6.34
+28/07/2018,Ostersunds,Elfsborg,1,0,H,1.85,3.8,4.47
+28/07/2018,Dalkurd,Sirius,1,3,A,2.02,3.69,3.81
+28/07/2018,Malmo FF,Norrkoping,2,1,H,1.6,4.31,5.76
+29/07/2018,AIK,Kalmar,1,0,H,1.51,4,8.69
+29/07/2018,Djurgarden,Sundsvall,1,1,D,1.39,4.82,9.77
+29/07/2018,Hacken,Orebro,1,1,D,1.63,4.07,5.89
+30/07/2018,Trelleborgs,Hammarby,1,3,A,6.37,4.46,1.54
+04/08/2018,Brommapojkarna,Dalkurd,2,1,H,2.35,3.63,3.05
+04/08/2018,Kalmar,Goteborg,2,1,H,2.03,3.44,4.07
+05/08/2018,Hammarby,Trelleborgs,1,0,H,1.25,6.53,13.18
+05/08/2018,Orebro,Hacken,1,2,A,3.27,3.69,2.21
+06/08/2018,Elfsborg,Ostersunds,0,2,A,2.69,3.63,2.62
+06/08/2018,Sundsvall,Norrkoping,1,1,D,4.54,3.86,1.82
+10/08/2018,Dalkurd,Malmo FF,0,1,A,7.17,4.18,1.53
+10/08/2018,Goteborg,Sirius,2,3,A,1.96,3.25,4.66
+11/08/2018,Orebro,Brommapojkarna,0,1,A,1.81,3.56,4.93
+12/08/2018,Hacken,Djurgarden,5,0,H,2.71,3.24,2.85
+12/08/2018,Ostersunds,Kalmar,2,0,H,1.85,3.74,4.49
+12/08/2018,AIK,Elfsborg,1,0,H,1.55,3.89,7.93
+13/08/2018,Norrkoping,Hammarby,0,0,D,2.46,3.68,2.84
+13/08/2018,Trelleborgs,Sundsvall,1,6,A,3.07,3.48,2.4
+17/08/2018,Sirius,Dalkurd,2,3,A,1.92,3.74,4.14
+18/08/2018,Malmo FF,Trelleborgs,3,0,H,1.21,7.02,16.45
+19/08/2018,Elfsborg,Norrkoping,0,1,A,3.31,3.43,2.3
+19/08/2018,Sundsvall,Hacken,0,2,A,3.66,3.66,2.07
+19/08/2018,Brommapojkarna,AIK,0,2,A,9.13,5.1,1.38
+19/08/2018,Djurgarden,Kalmar,0,2,A,1.56,4.03,7
+20/08/2018,Goteborg,Ostersunds,2,1,H,2.81,3.34,2.68
+20/08/2018,Hammarby,Orebro,2,0,H,1.42,5.16,7.53
+26/08/2018,Hacken,Brommapojkarna,6,0,H,1.23,6.76,14.82
+26/08/2018,Malmo FF,Sirius,5,0,H,1.34,5.68,9.53
+26/08/2018,Ostersunds,Sundsvall,1,2,A,1.7,4.09,5.09
+26/08/2018,AIK,Trelleborgs,2,0,H,1.18,7.21,22.16
+26/08/2018,Djurgarden,Elfsborg,2,2,D,1.85,3.54,4.84
+27/08/2018,Dalkurd,Hammarby,2,3,A,6.45,4.2,1.57
+27/08/2018,Kalmar,Orebro,0,1,A,1.72,3.91,5.24
+27/08/2018,Norrkoping,Goteborg,2,1,H,1.57,4.29,6.32
+31/08/2018,Trelleborgs,Norrkoping,1,1,D,8.66,4.89,1.41
+01/09/2018,AIK,Hacken,3,0,H,1.81,3.51,5.19
+01/09/2018,Orebro,Ostersunds,2,1,H,3.02,3.38,2.48
+02/09/2018,Brommapojkarna,Malmo FF,0,3,A,14.83,5.43,1.29
+02/09/2018,Dalkurd,Goteborg,1,1,D,3.52,3.46,2.19
+02/09/2018,Hammarby,Djurgarden,1,3,A,2.19,3.51,3.48
+02/09/2018,Elfsborg,Kalmar,1,1,D,2.35,3.28,3.35
+02/09/2018,Sundsvall,Sirius,4,0,H,1.83,3.75,4.64
+15/09/2018,Orebro,Sundsvall,2,1,H,2.42,3.44,3.06
+15/09/2018,Ostersunds,Malmo FF,2,3,A,4.23,3.64,1.93
+16/09/2018,Norrkoping,AIK,2,0,H,3.26,3.31,2.4
+16/09/2018,Djurgarden,Brommapojkarna,0,1,A,1.33,5.08,11.79
+16/09/2018,Goteborg,Elfsborg,2,2,D,2.49,3.43,3.02
+17/09/2018,Hacken,Trelleborgs,2,1,H,1.23,6.52,15.14
+17/09/2018,Kalmar,Dalkurd,0,0,D,1.51,4.44,7.08
+17/09/2018,Sirius,Hammarby,1,1,D,5.56,4.38,1.61
+21/09/2018,Brommapojkarna,Sundsvall,1,3,A,3.22,3.64,2.21
+22/09/2018,Elfsborg,Orebro,1,0,H,1.69,3.92,5.3
+22/09/2018,Sirius,Ostersunds,0,1,A,3.16,3.6,2.26
+22/09/2018,Trelleborgs,Djurgarden,0,3,A,6.25,4.69,1.5
+22/09/2018,Dalkurd,Norrkoping,0,2,A,5.31,4.18,1.64
+23/09/2018,AIK,Hammarby,1,0,H,2.01,3.37,4.13
+23/09/2018,Malmo FF,Kalmar,4,0,H,1.44,4.53,7.98
+24/09/2018,Hacken,Goteborg,4,1,H,1.72,3.87,5.07
+25/09/2018,Orebro,Sirius,0,0,D,1.9,3.65,4.27
+26/09/2018,Hammarby,Elfsborg,0,1,A,1.75,3.78,5.01
+26/09/2018,Norrkoping,Malmo FF,3,1,H,3.04,3.21,2.53
+26/09/2018,Ostersunds,Brommapojkarna,3,1,H,1.48,4.52,7.05
+26/09/2018,Sundsvall,Djurgarden,1,1,D,3.12,3.37,2.38
+26/09/2018,Trelleborgs,Dalkurd,0,1,A,2.62,3.39,2.77
+27/09/2018,Goteborg,AIK,0,2,A,5.27,3.4,1.81
+27/09/2018,Kalmar,Hacken,1,2,A,3.32,3.37,2.28
+29/09/2018,Sirius,Norrkoping,1,1,D,5.1,3.97,1.7
+30/09/2018,Dalkurd,AIK,0,4,A,11.26,4.43,1.38
+30/09/2018,Kalmar,Brommapojkarna,1,1,D,1.61,3.93,6.18
+30/09/2018,Djurgarden,Ostersunds,0,2,A,1.84,3.73,4.5
+30/09/2018,Malmo FF,Sundsvall,0,0,D,1.34,5.06,10.1
+01/10/2018,Elfsborg,Hacken,0,3,A,2.88,3.68,2.43
+01/10/2018,Hammarby,Goteborg,3,0,H,1.43,4.74,7.77
+01/10/2018,Orebro,Trelleborgs,4,0,H,1.51,4.44,6.59
+05/10/2018,Ostersunds,Dalkurd,3,0,H,1.42,4.68,8.06
+06/10/2018,Sirius,Elfsborg,4,2,H,3.28,3.37,2.33
+06/10/2018,Goteborg,Trelleborgs,2,2,D,1.45,4.21,8.76
+07/10/2018,Hacken,Malmo FF,1,1,D,2.76,3.49,2.62
+07/10/2018,AIK,Orebro,1,1,D,1.28,5.15,14.57
+07/10/2018,Brommapojkarna,Hammarby,2,4,A,8.31,5.07,1.38
+07/10/2018,Norrkoping,Djurgarden,1,1,D,1.97,3.49,4.2
+08/10/2018,Sundsvall,Kalmar,2,0,H,2.16,3.37,3.67
+20/10/2018,Malmo FF,Hammarby,2,1,H,1.78,3.96,4.52
+20/10/2018,Dalkurd,Orebro,1,0,H,3.17,3.5,2.33
+21/10/2018,Djurgarden,AIK,0,0,D,3.73,3.21,2.21
+21/10/2018,Hacken,Ostersunds,2,0,H,1.7,4.13,4.86
+21/10/2018,Elfsborg,Sundsvall,2,0,H,2.45,3.56,2.92
+21/10/2018,Kalmar,Norrkoping,1,2,A,3.69,3.33,2.17
+21/10/2018,Trelleborgs,Sirius,1,2,A,3.15,3.45,2.36
+22/10/2018,Brommapojkarna,Goteborg,0,2,A,3.35,3.45,2.26
+26/10/2018,Goteborg,Sundsvall,1,2,A,2.23,3.66,3.23
+26/10/2018,Trelleborgs,Elfsborg,2,2,D,4.76,4.55,1.65
+27/10/2018,Dalkurd,Hacken,0,5,A,5.37,3.85,1.69
+28/10/2018,Hammarby,Kalmar,0,0,D,1.36,5.04,9.05
+28/10/2018,Orebro,Djurgarden,1,1,D,3.35,3.53,2.22
+28/10/2018,Norrkoping,Ostersunds,4,2,H,1.63,4.05,5.72
+28/10/2018,Sirius,Brommapojkarna,4,2,H,1.85,3.68,4.5
+29/10/2018,AIK,Malmo FF,1,1,D,2.36,3.12,3.47
+30/10/2018,Elfsborg,Dalkurd,0,0,D,1.59,3.99,6.26
+31/10/2018,Brommapojkarna,Norrkoping,0,1,A,7.94,5.17,1.38
+31/10/2018,Djurgarden,Goteborg,2,0,H,1.58,4.04,6.27
+31/10/2018,Hacken,Sirius,2,1,H,1.28,6.07,10.5
+31/10/2018,Kalmar,Trelleborgs,2,1,H,1.47,4.77,6.65
+31/10/2018,Sundsvall,Hammarby,2,3,A,3.3,3.81,2.14
+01/11/2018,Malmo FF,Orebro,4,0,H,1.31,5.46,10.59
+01/11/2018,Ostersunds,AIK,1,2,A,5.05,3.76,1.75
+04/11/2018,Goteborg,Malmo FF,0,3,A,6.46,4.82,1.46
+04/11/2018,Norrkoping,Orebro,3,2,H,1.34,4.92,9.94
+04/11/2018,AIK,Sundsvall,0,0,D,1.33,5.01,9.9
+04/11/2018,Hammarby,Hacken,1,0,H,2.54,3.56,2.76
+05/11/2018,Dalkurd,Djurgarden,1,2,A,3.7,3.65,2.02
+05/11/2018,Elfsborg,Brommapojkarna,1,2,A,1.74,4.19,4.39
+05/11/2018,Sirius,Kalmar,1,1,D,2.57,3.54,2.74
+05/11/2018,Trelleborgs,Ostersunds,0,1,A,4.06,4,1.83
+11/11/2018,Brommapojkarna,Trelleborgs,3,0,H,1.38,5.49,6.97
+11/11/2018,Djurgarden,Sirius,1,0,H,1.42,4.89,7.06
+11/11/2018,Hacken,Norrkoping,0,1,A,2.54,3.8,2.63
+11/11/2018,Kalmar,AIK,0,1,A,5.59,3.15,1.83
+11/11/2018,Malmo FF,Elfsborg,2,0,H,1.17,7.81,13.89
+11/11/2018,Orebro,Goteborg,1,3,A,2.02,3.87,3.51
+11/11/2018,Ostersunds,Hammarby,3,3,D,4.22,4.1,1.78
+11/11/2018,Sundsvall,Dalkurd,0,1,A,1.88,3.83,4.01
+22/11/2018,AFC Eskilstuna,Brommapojkarna,0,1,A,2.34,3.12,3.45
+25/11/2018,Brommapojkarna,AFC Eskilstuna,1,2,A,2.47,3.11,3.23

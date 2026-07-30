@@ -1,0 +1,199 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2019-08-17,Feronikeli,Drenica Skenderaj,4,1,H
+2019-08-17,Llapi,Vushtrria,4,1,H
+2019-08-17,Flamurtari,Prishtina,1,1,D
+2019-08-18,Trepca'89,Gjilani,4,1,H
+2019-08-18,Drita,Ferizaj,0,1,A
+2019-08-18,Dukagjini,Ballkani,0,0,D
+2019-08-23,Drenica Skenderaj,Llapi,3,0,H
+2019-08-24,Ballkani,Feronikeli,3,1,H
+2019-08-24,Ferizaj,Gjilani,0,3,A
+2019-08-25,Drita,Flamurtari,3,0,H
+2019-08-25,Vushtrria,Trepca'89,1,1,D
+2019-08-31,Feronikeli,Prishtina,1,0,H
+2019-08-31,Dukagjini,Drita,0,4,A
+2019-08-31,Llapi,Ballkani,0,0,D
+2019-08-31,Flamurtari,Ferizaj,1,0,H
+2019-09-01,Trepca'89,Drenica Skenderaj,1,1,D
+2019-09-01,Gjilani,Vushtrria,2,0,H
+2019-09-13,Ballkani,Trepca'89,3,2,H
+2019-09-13,Prishtina,Llapi,0,1,A
+2019-09-14,Drita,Feronikeli,1,0,H
+2019-09-14,Drenica Skenderaj,Gjilani,0,2,A
+2019-09-15,Ferizaj,Vushtrria,0,1,A
+2019-09-15,Flamurtari,Dukagjini,2,0,H
+2019-09-18,Trepca'89,Prishtina,0,1,A
+2019-09-18,Gjilani,Ballkani,1,0,H
+2019-09-18,Llapi,Drita,2,2,D
+2019-09-19,Feronikeli,Flamurtari,2,1,H
+2019-09-19,Dukagjini,Ferizaj,0,1,A
+2019-09-19,Vushtrria,Drenica Skenderaj,2,2,D
+2019-09-22,Drita,Trepca'89,1,1,D
+2019-09-22,Dukagjini,Feronikeli,0,2,A
+2019-09-22,Prishtina,Gjilani,2,1,H
+2019-09-23,Ballkani,Vushtrria,5,2,H
+2019-09-23,Ferizaj,Drenica Skenderaj,0,1,A
+2019-09-23,Flamurtari,Llapi,1,5,A
+2019-09-25,Prishtina,Dukagjini,2,0,H
+2019-09-28,Feronikeli,Ferizaj,5,0,H
+2019-09-28,Llapi,Dukagjini,2,1,H
+2019-09-28,Trepca'89,Flamurtari,5,1,H
+2019-09-29,Drenica Skenderaj,Ballkani,0,1,A
+2019-09-29,Gjilani,Drita,0,1,A
+2019-09-29,Vushtrria,Prishtina,0,3,A
+2019-10-02,Feronikeli,Llapi,1,2,A
+2019-10-02,Dukagjini,Trepca'89,1,0,H
+2019-10-02,Ferizaj,Ballkani,1,2,A
+2019-10-03,Drita,Vushtrria,5,1,H
+2019-10-03,Flamurtari,Gjilani,1,4,A
+2019-10-05,Llapi,Ferizaj,2,4,A
+2019-10-07,Trepca'89,Feronikeli,1,1,D
+2019-10-07,Ballkani,Prishtina,1,0,H
+2019-10-07,Vushtrria,Flamurtari,2,2,D
+2019-10-08,Gjilani,Dukagjini,1,0,H
+2019-10-08,Drenica Skenderaj,Drita,1,1,D
+2019-10-16,Prishtina,Drenica Skenderaj,0,0,D
+2019-10-18,Feronikeli,Gjilani,1,2,A
+2019-10-18,Dukagjini,Vushtrria,1,0,H
+2019-10-18,Llapi,Trepca'89,4,1,H
+2019-10-19,Flamurtari,Drenica Skenderaj,0,0,D
+2019-10-20,Drita,Ballkani,2,0,H
+2019-10-20,Ferizaj,Prishtina,0,2,A
+2019-10-22,Vushtrria,Feronikeli,0,1,A
+2019-10-23,Trepca'89,Ferizaj,1,0,H
+2019-10-23,Gjilani,Llapi,3,0,H
+2019-10-23,Drenica Skenderaj,Dukagjini,3,0,H
+2019-10-24,Ballkani,Flamurtari,3,1,H
+2019-10-24,Prishtina,Drita,1,0,H
+2019-10-26,Drenica Skenderaj,Feronikeli,1,0,H
+2019-10-26,Vushtrria,Llapi,1,0,H
+2019-10-27,Ballkani,Dukagjini,3,0,H
+2019-10-27,Gjilani,Trepca'89,0,2,A
+2019-10-27,Ferizaj,Drita,0,2,A
+2019-10-28,Prishtina,Flamurtari,2,0,H
+2019-11-01,Llapi,Drenica Skenderaj,1,0,H
+2019-11-02,Trepca'89,Vushtrria,1,0,H
+2019-11-02,Feronikeli,Ballkani,0,2,A
+2019-11-02,Dukagjini,Prishtina,0,0,D
+2019-11-03,Gjilani,Ferizaj,4,0,H
+2019-11-03,Flamurtari,Drita,1,0,H
+2019-11-06,Ballkani,Llapi,1,1,D
+2019-11-06,Drita,Dukagjini,1,0,H
+2019-11-06,Drenica Skenderaj,Trepca'89,3,2,H
+2019-11-06,Prishtina,Feronikeli,2,3,A
+2019-11-07,Ferizaj,Flamurtari,1,0,H
+2019-11-07,Vushtrria,Gjilani,1,3,A
+2019-11-09,Feronikeli,Drita,0,0,D
+2019-11-09,Llapi,Prishtina,1,4,A
+2019-11-10,Trepca'89,Ballkani,0,0,D
+2019-11-10,Gjilani,Drenica Skenderaj,1,1,D
+2019-11-11,Dukagjini,Flamurtari,1,2,A
+2019-11-11,Vushtrria,Ferizaj,3,1,H
+2019-11-22,Ballkani,Gjilani,2,1,H
+2019-11-23,Drita,Llapi,2,0,H
+2019-11-23,Drenica Skenderaj,Vushtrria,3,0,H
+2019-11-23,Flamurtari,Feronikeli,2,2,D
+2019-11-23,Prishtina,Trepca'89,1,0,H
+2019-11-24,Ferizaj,Dukagjini,2,0,H
+2019-12-01,Trepca'89,Drita,3,1,H
+2019-12-01,Gjilani,Prishtina,0,0,D
+2019-12-01,Llapi,Flamurtari,1,4,A
+2019-12-02,Feronikeli,Dukagjini,4,2,H
+2019-12-02,Drenica Skenderaj,Ferizaj,0,2,A
+2019-12-02,Vushtrria,Ballkani,1,0,H
+2020-02-15,Prishtina,Vushtrria,4,0,H
+2020-02-15,Ballkani,Drenica Skenderaj,3,0,H
+2020-02-15,Ferizaj,Feronikeli,1,1,D
+2020-02-16,Drita,Gjilani,2,0,H
+2020-02-16,Dukagjini,Llapi,0,0,D
+2020-02-16,Flamurtari,Trepca'89,4,3,H
+2020-02-21,Vushtrria,Drita,2,3,A
+2020-02-22,Drenica Skenderaj,Prishtina,1,3,A
+2020-02-22,Llapi,Feronikeli,2,1,H
+2020-02-23,Trepca'89,Dukagjini,2,1,H
+2020-02-23,Ballkani,Ferizaj,3,0,H
+2020-02-23,Gjilani,Flamurtari,2,0,H
+2020-02-28,Drita,Drenica Skenderaj,4,1,H
+2020-02-29,Feronikeli,Trepca'89,3,0,H
+2020-02-29,Dukagjini,Gjilani,0,4,A
+2020-02-29,Ferizaj,Llapi,2,0,H
+2020-02-29,Prishtina,Ballkani,0,0,D
+2020-03-02,Flamurtari,Vushtrria,2,0,H
+2020-03-04,Trepca'89,Llapi,1,2,A
+2020-03-04,Ballkani,Drita,2,0,H
+2020-03-04,Gjilani,Feronikeli,2,1,H
+2020-03-04,Prishtina,Ferizaj,3,2,H
+2020-03-05,Drenica Skenderaj,Flamurtari,3,1,H
+2020-03-05,Vushtrria,Dukagjini,3,3,D
+2020-03-07,Ferizaj,Trepca'89,4,0,H
+2020-03-08,Drita,Prishtina,2,1,H
+2020-03-08,Llapi,Gjilani,2,1,H
+2020-03-09,Feronikeli,Vushtrria,2,0,H
+2020-03-09,Dukagjini,Drenica Skenderaj,1,3,A
+2020-03-09,Flamurtari,Ballkani,2,1,H
+2020-06-05,Llapi,Dukagjini,4,1,H
+2020-06-06,Feronikeli,Vushtrria,3,1,H
+2020-06-06,Drita,Flamurtari,1,0,H
+2020-06-07,Ballkani,Drenica Skenderaj,0,0,D
+2020-06-07,Gjilani,Trepca'89,1,1,D
+2020-06-07,Prishtina,Ferizaj,8,1,H
+2020-06-12,Dukagjini,Feronikeli,0,2,A
+2020-06-12,Flamurtari,Ballkani,0,0,D
+2020-06-13,Llapi,Drenica Skenderaj,0,2,A
+2020-06-13,Vushtrria,Prishtina,0,2,A
+2020-06-14,Trepca'89,Drita,0,2,A
+2020-06-14,Ferizaj,Gjilani,0,3,A
+2020-06-19,Drita,Ferizaj,2,0,H
+2020-06-20,Gjilani,Vushtrria,3,0,H
+2020-06-20,Drenica Skenderaj,Flamurtari,1,2,A
+2020-06-20,Prishtina,Dukagjini,4,1,H
+2020-06-21,Feronikeli,Llapi,2,1,H
+2020-06-21,Ballkani,Trepca'89,3,1,H
+2020-06-24,Trepca'89,Flamurtari,1,1,D
+2020-06-24,Dukagjini,Gjilani,1,3,A
+2020-06-24,Vushtrria,Drita,0,4,A
+2020-06-25,Feronikeli,Drenica Skenderaj,0,0,D
+2020-06-25,Ferizaj,Ballkani,1,1,D
+2020-06-25,Llapi,Prishtina,1,1,D
+2020-06-28,Drita,Dukagjini,2,0,H
+2020-06-28,Drenica Skenderaj,Trepca'89,2,4,A
+2020-06-28,Flamurtari,Ferizaj,3,2,H
+2020-06-29,Ballkani,Vushtrria,3,1,H
+2020-06-29,Gjilani,Llapi,2,2,D
+2020-06-29,Prishtina,Feronikeli,3,1,H
+2020-07-03,Vushtrria,Flamurtari,2,2,D
+2020-07-03,Prishtina,Drenica Skenderaj,1,0,H
+2020-07-04,Feronikeli,Gjilani,0,2,A
+2020-07-04,Dukagjini,Ballkani,1,5,A
+2020-07-05,Ferizaj,Trepca'89,2,5,A
+2020-07-05,Llapi,Drita,0,4,A
+2020-07-08,Ballkani,Llapi,5,1,H
+2020-07-08,Gjilani,Prishtina,2,1,H
+2020-07-08,Drenica Skenderaj,Ferizaj,3,0,H
+2020-07-09,Trepca'89,Vushtrria,1,1,D
+2020-07-09,Drita,Feronikeli,2,1,H
+2020-07-09,Flamurtari,Dukagjini,4,3,H
+2020-07-12,Gjilani,Drenica Skenderaj,2,0,H
+2020-07-12,Prishtina,Drita,1,1,D
+2020-07-13,Feronikeli,Ballkani,0,1,A
+2020-07-13,Dukagjini,Trepca'89,3,2,H
+2020-07-13,Llapi,Flamurtari,1,0,H
+2020-07-13,Vushtrria,Ferizaj,1,3,A
+2020-07-18,Trepca'89,Llapi,5,4,H
+2020-07-18,Ballkani,Prishtina,2,2,D
+2020-07-18,Drita,Gjilani,0,2,A
+2020-07-18,Drenica Skenderaj,Vushtrria,2,1,H
+2020-07-18,Ferizaj,Dukagjini,0,4,A
+2020-07-18,Flamurtari,Feronikeli,1,0,H
+2020-07-21,Drita,Drenica Skenderaj,1,0,H
+2020-07-22,Prishtina,Flamurtari,3,0,H
+2020-07-22,Feronikeli,Trepca'89,1,2,A
+2020-07-22,Gjilani,Ballkani,2,2,D
+2020-07-22,Dukagjini,Vushtrria,2,1,H
+2020-07-22,Llapi,Ferizaj,2,1,H
+2020-07-26,Trepca'89,Prishtina,2,1,H
+2020-07-26,Ballkani,Drita,2,1,H
+2020-07-26,Drenica Skenderaj,Dukagjini,1,0,H
+2020-07-26,Ferizaj,Feronikeli,2,4,A
+2020-07-26,Vushtrria,Llapi,5,3,H
+2020-07-26,Flamurtari,Gjilani,0,1,A

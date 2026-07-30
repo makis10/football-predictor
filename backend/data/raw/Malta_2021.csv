@@ -1,0 +1,163 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2021-08-12,Balzan FC,Sliema Wanderers,1,0,H
+2021-08-13,Gudja United,Sirens,0,1,A
+2021-08-13,Hamrun Spartans,Valletta FC,1,2,A
+2021-08-14,Floriana,Santa Lucía,2,2,D
+2021-08-14,Mosta,Birkirkara,0,3,A
+2021-08-16,Gzira United,Hibernians,1,3,A
+2021-08-20,Sirens,Mosta,1,1,D
+2021-08-20,Sliema Wanderers,Floriana,0,0,D
+2021-08-21,Valletta FC,Balzan FC,1,0,H
+2021-08-21,Birkirkara,Hamrun Spartans,2,1,H
+2021-08-22,Santa Lucía,Gzira United,1,1,D
+2021-08-22,Hibernians,Gudja United,2,1,H
+2021-09-11,Mosta,Hamrun Spartans,1,2,A
+2021-09-11,Floriana,Valletta FC,3,0,H
+2021-09-11,Gzira United,Sliema Wanderers,1,1,D
+2021-09-12,Sirens,Hibernians,1,3,A
+2021-09-12,Balzan FC,Birkirkara,1,2,A
+2021-09-12,Gudja United,Santa Lucía,2,2,D
+2021-09-18,Santa Lucía,Sirens,1,3,A
+2021-09-18,Valletta FC,Gzira United,0,2,A
+2021-09-18,Hibernians,Mosta,3,2,H
+2021-09-19,Birkirkara,Floriana,1,1,D
+2021-09-19,Sliema Wanderers,Gudja United,2,3,A
+2021-09-19,Hamrun Spartans,Balzan FC,0,1,A
+2021-09-25,Gudja United,Valletta FC,2,0,H
+2021-09-25,Floriana,Hamrun Spartans,1,2,A
+2021-09-25,Hibernians,Santa Lucía,1,1,D
+2021-09-26,Gzira United,Birkirkara,1,1,D
+2021-09-26,Sirens,Sliema Wanderers,2,2,D
+2021-09-26,Mosta,Balzan FC,2,1,H
+2021-10-16,Balzan FC,Floriana,1,2,A
+2021-10-16,Hamrun Spartans,Gzira United,0,1,A
+2021-10-16,Birkirkara,Gudja United,2,0,H
+2021-10-17,Sliema Wanderers,Hibernians,0,3,A
+2021-10-17,Valletta FC,Sirens,3,1,H
+2021-10-17,Santa Lucía,Mosta,2,2,D
+2021-10-23,Gudja United,Hamrun Spartans,1,3,A
+2021-10-23,Mosta,Floriana,1,1,D
+2021-10-23,Gzira United,Balzan FC,1,2,A
+2021-10-24,Santa Lucía,Sliema Wanderers,0,0,D
+2021-10-24,Hibernians,Valletta FC,1,1,D
+2021-10-24,Sirens,Birkirkara,3,2,H
+2021-10-30,Birkirkara,Hibernians,1,1,D
+2021-10-30,Valletta FC,Santa Lucía,5,3,H
+2021-10-30,Hamrun Spartans,Sirens,1,0,H
+2021-10-31,Balzan FC,Gudja United,1,0,H
+2021-10-31,Floriana,Gzira United,2,1,H
+2021-10-31,Sliema Wanderers,Mosta,2,3,A
+2021-11-20,Mosta,Gzira United,2,2,D
+2021-11-20,Sliema Wanderers,Valletta FC,2,1,H
+2021-11-20,Gudja United,Floriana,0,1,A
+2021-11-21,Santa Lucía,Birkirkara,2,0,H
+2021-11-21,Sirens,Balzan FC,1,6,A
+2021-11-21,Hibernians,Hamrun Spartans,1,0,H
+2021-11-27,Floriana,Sirens,1,2,A
+2021-11-27,Birkirkara,Sliema Wanderers,2,0,H
+2021-11-27,Valletta FC,Mosta,3,1,H
+2021-11-28,Gzira United,Gudja United,3,2,H
+2021-11-28,Hamrun Spartans,Santa Lucía,3,0,H
+2021-11-28,Balzan FC,Hibernians,1,2,A
+2021-12-04,Mosta,Gudja United,0,3,A
+2021-12-04,Valletta FC,Birkirkara,0,0,D
+2021-12-04,Sirens,Gzira United,1,3,A
+2021-12-05,Sliema Wanderers,Hamrun Spartans,0,2,A
+2021-12-05,Hibernians,Floriana,0,0,D
+2021-12-05,Santa Lucía,Balzan FC,3,3,D
+2021-12-11,Santa Lucía,Floriana,1,3,A
+2021-12-12,Birkirkara,Mosta,2,2,D
+2021-12-12,Hibernians,Gzira United,3,1,H
+2021-12-13,Sirens,Gudja United,0,0,D
+2021-12-13,Valletta FC,Hamrun Spartans,0,1,A
+2021-12-18,Gzira United,Santa Lucía,2,2,D
+2021-12-18,Mosta,Sirens,2,3,A
+2021-12-19,Gudja United,Hibernians,1,2,A
+2021-12-19,Floriana,Sliema Wanderers,2,0,H
+2021-12-19,Balzan FC,Valletta FC,2,1,H
+2022-01-17,Valletta FC,Floriana,0,2,A
+2022-01-17,Hamrun Spartans,Mosta,2,1,H
+2022-01-18,Sliema Wanderers,Gzira United,1,3,A
+2022-01-18,Hibernians,Sirens,1,1,D
+2022-01-19,Santa Lucía,Gudja United,0,3,A
+2022-01-19,Birkirkara,Balzan FC,3,2,H
+2022-01-22,Balzan FC,Hamrun Spartans,2,2,D
+2022-01-22,Mosta,Hibernians,1,1,D
+2022-01-22,Gudja United,Sliema Wanderers,1,0,H
+2022-01-23,Gzira United,Valletta FC,1,1,D
+2022-01-23,Sirens,Santa Lucía,2,1,H
+2022-01-23,Floriana,Birkirkara,1,0,H
+2022-01-26,Hamrun Spartans,Birkirkara,0,0,D
+2022-01-26,Sliema Wanderers,Balzan FC,1,0,H
+2022-01-29,Santa Lucía,Hibernians,0,0,D
+2022-01-29,Sliema Wanderers,Sirens,1,0,H
+2022-01-29,Balzan FC,Mosta,2,3,A
+2022-01-30,Hamrun Spartans,Floriana,2,2,D
+2022-01-30,Valletta FC,Gudja United,1,3,A
+2022-01-30,Birkirkara,Gzira United,1,0,H
+2022-02-05,Mosta,Santa Lucía,1,0,H
+2022-02-05,Gzira United,Hamrun Spartans,4,1,H
+2022-02-05,Hibernians,Sliema Wanderers,1,0,H
+2022-02-06,Floriana,Balzan FC,2,1,H
+2022-02-06,Gudja United,Birkirkara,0,1,A
+2022-02-06,Sirens,Valletta FC,2,1,H
+2022-02-12,Floriana,Mosta,2,0,H
+2022-02-12,Valletta FC,Hibernians,1,4,A
+2022-02-12,Balzan FC,Gzira United,1,3,A
+2022-02-13,Hamrun Spartans,Gudja United,0,1,A
+2022-02-13,Sliema Wanderers,Santa Lucía,1,1,D
+2022-02-13,Birkirkara,Sirens,1,1,D
+2022-02-19,Gudja United,Balzan FC,1,0,H
+2022-02-19,Hibernians,Birkirkara,2,3,A
+2022-02-19,Sirens,Hamrun Spartans,1,1,D
+2022-02-20,Mosta,Sliema Wanderers,1,0,H
+2022-02-20,Santa Lucía,Valletta FC,2,1,H
+2022-02-20,Gzira United,Floriana,1,2,A
+2022-02-26,Valletta FC,Sliema Wanderers,1,0,H
+2022-02-26,Hamrun Spartans,Hibernians,0,0,D
+2022-02-26,Floriana,Gudja United,2,0,H
+2022-02-27,Birkirkara,Santa Lucía,2,3,A
+2022-02-27,Balzan FC,Sirens,2,1,H
+2022-02-27,Gzira United,Mosta,3,4,A
+2022-03-05,Gudja United,Gzira United,1,2,A
+2022-03-05,Hibernians,Balzan FC,1,0,H
+2022-03-05,Mosta,Valletta FC,2,2,D
+2022-03-06,Santa Lucía,Hamrun Spartans,0,1,A
+2022-03-06,Sirens,Floriana,0,3,A
+2022-03-06,Sliema Wanderers,Birkirkara,0,0,D
+2022-03-11,Balzan FC,Santa Lucía,0,1,A
+2022-03-11,Hamrun Spartans,Sliema Wanderers,3,1,H
+2022-03-12,Gzira United,Sirens,2,1,H
+2022-03-12,Birkirkara,Valletta FC,1,1,D
+2022-03-12,Gudja United,Mosta,1,0,H
+2022-03-12,Floriana,Hibernians,1,4,A
+2022-04-02,Sirens,Valletta FC,0,3,A
+2022-04-03,Floriana,Gzira United,0,1,A
+2022-04-04,Hamrun Spartans,Hibernians,2,1,H
+2022-04-04,Sliema Wanderers,Mosta,1,0,H
+2022-04-04,Balzan FC,Santa Lucía,0,3,A
+2022-04-04,Birkirkara,Gudja United,3,0,H
+2022-04-09,Santa Lucía,Sirens,2,2,D
+2022-04-09,Hibernians,Floriana,0,0,D
+2022-04-09,Mosta,Balzan FC,3,2,H
+2022-04-10,Gzira United,Birkirkara,1,1,D
+2022-04-10,Valletta FC,Sliema Wanderers,3,1,H
+2022-04-10,Gudja United,Hamrun Spartans,1,0,H
+2022-04-23,Balzan FC,Valletta FC,1,1,D
+2022-04-23,Birkirkara,Floriana,0,0,D
+2022-04-23,Sliema Wanderers,Sirens,0,5,A
+2022-04-24,Gudja United,Hibernians,0,2,A
+2022-04-24,Mosta,Santa Lucía,1,1,D
+2022-04-24,Hamrun Spartans,Gzira United,2,0,H
+2022-04-30,Valletta FC,Mosta,2,3,A
+2022-04-30,Floriana,Hamrun Spartans,0,0,D
+2022-04-30,Sirens,Balzan FC,2,3,A
+2022-05-01,Hibernians,Birkirkara,3,1,H
+2022-05-01,Santa Lucía,Sliema Wanderers,1,2,A
+2022-05-01,Gzira United,Gudja United,3,1,H
+2022-05-05,Gudja United,Floriana,1,2,A
+2022-05-05,Mosta,Sirens,2,3,A
+2022-05-06,Valletta FC,Santa Lucía,2,1,H
+2022-05-06,Sliema Wanderers,Balzan FC,0,1,A
+2022-05-07,Gzira United,Hibernians,2,1,H
+2022-05-07,Birkirkara,Hamrun Spartans,0,1,A

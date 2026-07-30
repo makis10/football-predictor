@@ -1,0 +1,163 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2021-01-16,AE Karaiskakis,Levadiakos,0,2,A
+2021-01-16,Panachaiki FC,Trikala,1,1,D
+2021-01-16,OF Ierapetra,Diagoras,1,1,D
+2021-01-17,Ergotelis,Ionikos,0,1,A
+2021-01-17,Apollon Larissa FC,Xanthi FC,1,1,D
+2021-01-20,Xanthi FC,Ionikos,1,0,H
+2021-01-20,Trikala,Apollon Larissa FC,1,0,H
+2021-01-20,OF Ierapetra,AE Karaiskakis,2,2,D
+2021-01-20,Diagoras,Panachaiki FC,1,1,D
+2021-01-20,Levadiakos,Kissamikos,1,1,D
+2021-01-23,Apollon Larissa FC,Diagoras,0,1,A
+2021-01-24,AE Karaiskakis,Kissamikos,1,1,D
+2021-01-24,Panachaiki FC,OF Ierapetra,2,0,H
+2021-01-24,Ergotelis,Levadiakos,0,1,A
+2021-01-24,Ionikos,Trikala,1,1,D
+2021-01-27,Trikala,Doxa Dramas,3,0,H
+2021-01-27,Kissamikos,Ergotelis,0,1,A
+2021-01-27,Panachaiki FC,AE Karaiskakis,2,2,D
+2021-01-27,OF Ierapetra,Apollon Larissa FC,0,0,D
+2021-01-27,Diagoras,Ionikos,1,1,D
+2021-01-27,Levadiakos,Xanthi FC,1,1,D
+2021-01-30,Xanthi FC,Kissamikos,0,0,D
+2021-01-30,Trikala,Levadiakos,1,3,A
+2021-01-31,Apollon Larissa FC,Panachaiki FC,0,3,A
+2021-01-31,AE Karaiskakis,Ergotelis,0,1,A
+2021-01-31,Doxa Dramas,Diagoras,0,2,A
+2021-01-31,Ionikos,OF Ierapetra,2,1,H
+2021-02-03,Kissamikos,Doxa Dramas,1,0,H
+2021-02-06,Levadiakos,Diagoras,0,0,D
+2021-02-06,Ergotelis,Xanthi FC,2,1,H
+2021-02-06,OF Ierapetra,Doxa Dramas,2,3,A
+2021-02-07,Kissamikos,Trikala,1,2,A
+2021-02-07,Apollon Larissa FC,AE Karaiskakis,3,0,H
+2021-02-07,Panachaiki FC,Ionikos,0,1,A
+2021-02-10,Trikala,Ergotelis,0,0,D
+2021-02-10,Diagoras,Kissamikos,1,1,D
+2021-02-10,Levadiakos,OF Ierapetra,1,0,H
+2021-02-10,AE Karaiskakis,Xanthi FC,0,1,A
+2021-02-10,Doxa Dramas,Panachaiki FC,0,0,D
+2021-02-10,Ionikos,Apollon Larissa FC,1,0,H
+2021-02-13,Xanthi FC,Trikala,1,0,H
+2021-02-13,Kissamikos,OF Ierapetra,1,0,H
+2021-02-14,Ergotelis,Diagoras,2,0,H
+2021-02-14,Panachaiki FC,Levadiakos,2,0,H
+2021-02-14,Ionikos,AE Karaiskakis,2,0,H
+2021-02-17,Doxa Dramas,Ionikos,2,1,H
+2021-02-17,OF Ierapetra,Ergotelis,0,1,A
+2021-02-17,Levadiakos,Apollon Larissa FC,0,0,D
+2021-02-17,Kissamikos,Panachaiki FC,0,0,D
+2021-02-17,AE Karaiskakis,Trikala,1,0,H
+2021-02-17,Diagoras,Xanthi FC,1,0,H
+2021-02-20,Ergotelis,Panachaiki FC,1,0,H
+2021-02-20,Doxa Dramas,AE Karaiskakis,0,0,D
+2021-02-21,Apollon Larissa FC,Kissamikos,1,0,H
+2021-02-21,Xanthi FC,OF Ierapetra,2,1,H
+2021-02-21,Trikala,Diagoras,0,1,A
+2021-02-21,Ionikos,Levadiakos,1,1,D
+2021-02-24,Doxa Dramas,Ergotelis,1,0,H
+2021-02-27,Kissamikos,Ionikos,0,1,A
+2021-02-27,OF Ierapetra,Trikala,1,1,D
+2021-02-27,Diagoras,AE Karaiskakis,1,0,H
+2021-02-28,Ergotelis,Apollon Larissa FC,1,0,H
+2021-02-28,Levadiakos,Doxa Dramas,2,1,H
+2021-02-28,Panachaiki FC,Xanthi FC,1,0,H
+2021-03-03,Doxa Dramas,Kissamikos,0,1,A
+2021-03-03,Diagoras,OF Ierapetra,1,0,H
+2021-03-03,Levadiakos,AE Karaiskakis,4,0,H
+2021-03-03,Xanthi FC,Apollon Larissa FC,0,0,D
+2021-03-03,Ionikos,Ergotelis,2,3,A
+2021-03-03,Trikala,Panachaiki FC,0,0,D
+2021-03-06,Ionikos,Xanthi FC,1,1,D
+2021-03-07,Ergotelis,Doxa Dramas,6,0,H
+2021-03-07,AE Karaiskakis,OF Ierapetra,2,3,A
+2021-03-07,Kissamikos,Levadiakos,0,0,D
+2021-03-07,Apollon Larissa FC,Trikala,0,0,D
+2021-03-07,Panachaiki FC,Diagoras,0,1,A
+2021-03-10,Xanthi FC,Doxa Dramas,1,0,H
+2021-03-13,Levadiakos,Ergotelis,1,0,H
+2021-03-13,Trikala,Ionikos,2,3,A
+2021-03-13,Kissamikos,AE Karaiskakis,1,0,H
+2021-03-13,Diagoras,Apollon Larissa FC,0,1,A
+2021-03-14,Doxa Dramas,Xanthi FC,0,3,A
+2021-03-14,OF Ierapetra,Panachaiki FC,1,0,H
+2021-03-17,Apollon Larissa FC,OF Ierapetra,1,1,D
+2021-03-17,Ionikos,Diagoras,3,1,H
+2021-03-17,AE Karaiskakis,Panachaiki FC,0,0,D
+2021-03-17,Doxa Dramas,Trikala,1,0,H
+2021-03-17,Ergotelis,Kissamikos,0,1,A
+2021-03-17,Xanthi FC,Levadiakos,1,0,H
+2021-03-20,Ergotelis,AE Karaiskakis,0,1,A
+2021-03-20,Panachaiki FC,Apollon Larissa FC,1,0,H
+2021-03-21,Diagoras,Doxa Dramas,1,3,A
+2021-03-21,Levadiakos,Trikala,0,0,D
+2021-03-21,Kissamikos,Xanthi FC,0,0,D
+2021-03-21,OF Ierapetra,Ionikos,1,2,A
+2021-03-24,Apollon Larissa FC,Doxa Dramas,1,0,H
+2021-03-27,Diagoras,Levadiakos,0,4,A
+2021-03-27,Xanthi FC,Ergotelis,1,0,H
+2021-03-28,Trikala,Kissamikos,0,2,A
+2021-03-28,AE Karaiskakis,Apollon Larissa FC,1,2,A
+2021-03-28,Doxa Dramas,OF Ierapetra,2,1,H
+2021-03-28,Ionikos,Panachaiki FC,1,0,H
+2021-04-03,Xanthi FC,AE Karaiskakis,1,1,D
+2021-04-03,Kissamikos,Diagoras,1,0,H
+2021-04-03,Ergotelis,Trikala,2,3,A
+2021-04-04,Apollon Larissa FC,Ionikos,0,1,A
+2021-04-04,Panachaiki FC,Doxa Dramas,2,1,H
+2021-04-04,OF Ierapetra,Levadiakos,1,1,D
+2021-04-07,Levadiakos,Panachaiki FC,3,0,H
+2021-04-07,Trikala,Xanthi FC,0,0,D
+2021-04-07,AE Karaiskakis,Ionikos,0,3,A
+2021-04-07,Doxa Dramas,Apollon Larissa FC,0,1,A
+2021-04-07,OF Ierapetra,Kissamikos,0,1,A
+2021-04-07,Diagoras,Ergotelis,1,1,D
+2021-04-10,Apollon Larissa FC,Levadiakos,1,2,A
+2021-04-10,Ionikos,Doxa Dramas,4,2,H
+2021-04-11,Xanthi FC,Diagoras,2,0,H
+2021-04-11,Trikala,AE Karaiskakis,1,0,H
+2021-04-11,Ergotelis,OF Ierapetra,4,0,H
+2021-04-11,Panachaiki FC,Kissamikos,3,2,H
+2021-04-17,Levadiakos,Ionikos,1,2,A
+2021-04-17,OF Ierapetra,Xanthi FC,1,2,A
+2021-04-17,Diagoras,Trikala,2,0,H
+2021-04-18,Kissamikos,Apollon Larissa FC,2,1,H
+2021-04-18,AE Karaiskakis,Doxa Dramas,1,1,D
+2021-04-18,Panachaiki FC,Ergotelis,1,1,D
+2021-04-21,Xanthi FC,Panachaiki FC,4,0,H
+2021-04-21,Trikala,OF Ierapetra,0,0,D
+2021-04-21,Apollon Larissa FC,Ergotelis,0,3,A
+2021-04-21,AE Karaiskakis,Diagoras,2,1,H
+2021-04-21,Doxa Dramas,Levadiakos,0,4,A
+2021-04-21,Ionikos,Kissamikos,1,1,D
+2021-04-27,Trikala,AE Karaiskakis,0,1,A
+2021-04-27,Doxa Dramas,OF Ierapetra,0,3,A
+2021-04-27,Panachaiki FC,Apollon Larissa FC,1,1,D
+2021-04-28,Xanthi FC,Kissamikos,1,1,D
+2021-04-28,Ergotelis,Diagoras,3,1,H
+2021-04-28,Ionikos,Levadiakos,2,3,A
+2021-05-04,Apollon Larissa FC,Doxa Dramas,1,2,A
+2021-05-04,AE Karaiskakis,Panachaiki FC,3,3,D
+2021-05-04,OF Ierapetra,Trikala,0,0,D
+2021-05-05,Levadiakos,Ergotelis,0,1,A
+2021-05-05,Kissamikos,Ionikos,1,0,H
+2021-05-05,Diagoras,Xanthi FC,0,1,A
+2021-05-08,Apollon Larissa FC,OF Ierapetra,1,0,H
+2021-05-08,Doxa Dramas,AE Karaiskakis,2,4,A
+2021-05-08,Panachaiki FC,Trikala,2,1,H
+2021-05-09,Levadiakos,Diagoras,4,0,H
+2021-05-09,Ergotelis,Kissamikos,2,0,H
+2021-05-09,Ionikos,Xanthi FC,0,2,A
+2021-05-15,Trikala,Doxa Dramas,1,1,D
+2021-05-15,Apollon Larissa FC,AE Karaiskakis,2,2,D
+2021-05-15,OF Ierapetra,Panachaiki FC,2,3,A
+2021-05-16,Levadiakos,Kissamikos,3,0,H
+2021-05-16,Xanthi FC,Ergotelis,0,1,A
+2021-05-16,Diagoras,Ionikos,3,5,A
+2021-05-18,Trikala,Apollon Larissa FC,3,1,H
+2021-05-18,AE Karaiskakis,OF Ierapetra,0,3,A
+2021-05-18,Panachaiki FC,Doxa Dramas,1,2,A
+2021-05-19,Xanthi FC,Levadiakos,1,0,H
+2021-05-19,Kissamikos,Diagoras,2,0,H
+2021-05-19,Ionikos,Ergotelis,2,1,H

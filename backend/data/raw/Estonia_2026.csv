@@ -1,0 +1,99 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2026-03-07,Flora Tallinn,Nomme United,3,0,H
+2026-03-07,Vaprus,Paide,3,2,H
+2026-03-07,Trans Narva,Laagri,1,2,A
+2026-03-08,FC Levadia Tallinn,Kuressaare,2,0,H
+2026-03-08,Tammeka,Kalju Nomme,0,1,A
+2026-03-14,Nomme United,Vaprus,7,1,H
+2026-03-14,Kuressaare,Tammeka,3,2,H
+2026-03-15,Paide,Trans Narva,1,0,H
+2026-03-15,Flora Tallinn,Kalju Nomme,0,1,A
+2026-03-15,Laagri,FC Levadia Tallinn,1,3,A
+2026-03-21,Kalju Nomme,Kuressaare,4,0,H
+2026-03-21,Nomme United,Tammeka,2,3,A
+2026-03-21,Trans Narva,Vaprus,2,1,H
+2026-03-22,Laagri,Flora Tallinn,2,0,H
+2026-03-22,FC Levadia Tallinn,Paide,2,2,D
+2026-04-03,Kalju Nomme,Trans Narva,2,1,H
+2026-04-03,Kuressaare,Paide,0,1,A
+2026-04-03,Tammeka,Flora Tallinn,3,1,H
+2026-04-04,FC Levadia Tallinn,Nomme United,1,1,D
+2026-04-04,Vaprus,Laagri,0,2,A
+2026-04-07,Flora Tallinn,Kuressaare,2,1,H
+2026-04-07,Trans Narva,Tammeka,3,0,H
+2026-04-08,FC Levadia Tallinn,Vaprus,2,1,H
+2026-04-08,Paide,Nomme United,3,1,H
+2026-04-08,Laagri,Kalju Nomme,0,2,A
+2026-04-11,Kuressaare,Laagri,3,2,H
+2026-04-11,Nomme United,Trans Narva,5,1,H
+2026-04-12,Kalju Nomme,FC Levadia Tallinn,1,1,D
+2026-04-12,Tammeka,Paide,1,4,A
+2026-04-12,Flora Tallinn,Vaprus,2,0,H
+2026-04-18,Trans Narva,Kuressaare,1,2,A
+2026-04-18,Vaprus,Tammeka,0,0,D
+2026-04-18,Nomme United,Laagri,1,2,A
+2026-04-19,FC Levadia Tallinn,Flora Tallinn,4,0,H
+2026-04-19,Paide,Kalju Nomme,1,0,H
+2026-04-21,Kuressaare,Vaprus,0,1,A
+2026-04-22,Kalju Nomme,Nomme United,7,1,H
+2026-04-22,Flora Tallinn,Trans Narva,6,0,H
+2026-04-22,Tammeka,FC Levadia Tallinn,1,2,A
+2026-04-22,Laagri,Paide,2,2,D
+2026-04-25,Laagri,Tammeka,1,0,H
+2026-04-25,Nomme United,Kuressaare,2,1,H
+2026-04-26,Kalju Nomme,Vaprus,1,2,A
+2026-04-26,Paide,Flora Tallinn,1,2,A
+2026-04-26,FC Levadia Tallinn,Trans Narva,7,0,H
+2026-04-30,Flora Tallinn,Laagri,5,0,H
+2026-05-01,Trans Narva,Kalju Nomme,0,3,A
+2026-05-01,Paide,Tammeka,0,1,A
+2026-05-02,Kuressaare,FC Levadia Tallinn,1,2,A
+2026-05-02,Vaprus,Nomme United,2,3,A
+2026-05-08,Tammeka,Kuressaare,1,0,H
+2026-05-09,FC Levadia Tallinn,Laagri,3,0,H
+2026-05-09,Vaprus,Trans Narva,2,0,H
+2026-05-10,Kalju Nomme,Flora Tallinn,0,1,A
+2026-05-10,Nomme United,Paide,2,3,A
+2026-05-15,Tammeka,Nomme United,3,1,H
+2026-05-16,Trans Narva,Flora Tallinn,0,3,A
+2026-05-16,Laagri,Vaprus,1,2,A
+2026-05-17,Paide,FC Levadia Tallinn,1,3,A
+2026-05-17,Kuressaare,Kalju Nomme,0,2,A
+2026-05-20,Kalju Nomme,Laagri,1,0,H
+2026-05-20,Trans Narva,Paide,1,0,H
+2026-05-20,Kuressaare,Nomme United,2,1,H
+2026-05-24,Vaprus,FC Levadia Tallinn,1,6,A
+2026-05-29,Nomme United,Flora Tallinn,0,4,A
+2026-05-30,Vaprus,Kalju Nomme,3,1,H
+2026-05-30,Laagri,Trans Narva,3,0,H
+2026-05-30,Tammeka,FC Levadia Tallinn,0,1,A
+2026-05-31,Paide,Kuressaare,1,1,D
+2026-06-13,Laagri,Kuressaare,2,3,A
+2026-06-13,Trans Narva,Nomme United,1,2,A
+2026-06-13,Tammeka,Vaprus,0,0,D
+2026-06-13,Flora Tallinn,FC Levadia Tallinn,1,3,A
+2026-06-14,Kalju Nomme,Paide,1,1,D
+2026-06-16,Vaprus,Flora Tallinn,1,2,A
+2026-06-16,Kuressaare,Trans Narva,0,0,D
+2026-06-17,Kalju Nomme,Tammeka,1,2,A
+2026-06-17,Paide,Laagri,1,0,H
+2026-06-17,Nomme United,FC Levadia Tallinn,1,2,A
+2026-06-20,Laagri,Nomme United,1,3,A
+2026-06-20,FC Levadia Tallinn,Kalju Nomme,1,1,D
+2026-06-21,Tammeka,Trans Narva,1,0,H
+2026-06-21,Flora Tallinn,Paide,1,2,A
+2026-06-26,Vaprus,Kuressaare,1,0,H
+2026-06-28,Kalju Nomme,Paide,1,1,D
+2026-06-28,FC Levadia Tallinn,Flora Tallinn,1,2,A
+2026-07-02,Kuressaare,Flora Tallinn,0,3,A
+2026-07-03,Nomme United,Kalju Nomme,1,3,A
+2026-07-04,Trans Narva,FC Levadia Tallinn,1,3,A
+2026-07-04,Paide,Vaprus,3,1,H
+2026-07-05,Tammeka,Laagri,2,1,H
+2026-07-10,Laagri,Trans Narva,3,0,H
+2026-07-11,Vaprus,Tammeka,5,1,H
+2026-07-11,Nomme United,Kuressaare,3,2,H
+2026-07-17,Flora Tallinn,Nomme United,1,2,A
+2026-07-18,Trans Narva,Vaprus,3,1,H
+2026-07-19,Kuressaare,Kalju Nomme,0,0,D
+2026-07-19,Laagri,Paide,5,2,H

@@ -1,0 +1,321 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,PSH,PSD,PSA
+15/07/2021,FC Botosani,FCSB,0,0,D,3.94,3.63,1.98
+16/07/2021,Sepsi Sf. Gheorghe,Academica Clinceni,2,0,H,1.57,3.92,6.86
+16/07/2021,CFR Cluj,U Craiova 1948,3,2,H,1.49,4.12,8.07
+17/07/2021,Gaz Metan Medias,Mioveni,1,0,H,2.23,3.25,3.62
+17/07/2021,Univ. Craiova,FC Arges,1,0,H,1.6,3.71,6.98
+18/07/2021,UTA Arad,Farul Constanta,0,0,D,2.32,3.21,3.45
+18/07/2021,FC Rapid Bucuresti,Chindia Targoviste,1,0,H,2.29,3.08,3.68
+19/07/2021,Din. Bucuresti,FC Voluntari,3,2,H,3.43,3.13,2.37
+23/07/2021,FC Arges,UTA Arad,0,1,A,2.65,2.96,3.14
+23/07/2021,Mioveni,FC Rapid Bucuresti,0,2,A,3.27,3.03,2.52
+24/07/2021,FC Voluntari,FC Botosani,0,1,A,2.89,2.99,2.84
+24/07/2021,Academica Clinceni,CFR Cluj,1,2,A,7.11,3.71,1.6
+25/07/2021,Farul Constanta,Gaz Metan Medias,2,0,H,1.83,3.35,5.23
+25/07/2021,FCSB,Univ. Craiova,4,1,H,2.3,3.24,3.44
+26/07/2021,Chindia Targoviste,Sepsi Sf. Gheorghe,1,1,D,4.46,2.94,2.13
+26/07/2021,U Craiova 1948,Din. Bucuresti,1,0,H,1.99,3.48,4.09
+30/07/2021,Gaz Metan Medias,FC Arges,2,2,D,3.17,2.81,2.77
+30/07/2021,FC Rapid Bucuresti,Farul Constanta,0,0,D,2.25,3.14,3.7
+31/07/2021,FC Voluntari,U Craiova 1948,2,1,H,2.62,3.32,2.87
+31/07/2021,CFR Cluj,Chindia Targoviste,1,0,H,1.47,3.99,9.17
+01/08/2021,Univ. Craiova,FC Botosani,1,2,A,1.74,3.54,5.62
+01/08/2021,UTA Arad,FCSB,1,1,D,4.43,3.34,1.96
+02/08/2021,Sepsi Sf. Gheorghe,Mioveni,1,2,A,1.64,3.68,6.43
+02/08/2021,Din. Bucuresti,Academica Clinceni,3,1,H,2.63,3.2,2.85
+06/08/2021,FC Botosani,UTA Arad,2,1,H,2.37,3.07,3.5
+06/08/2021,Mioveni,CFR Cluj,0,1,A,5.77,3.5,1.73
+07/08/2021,Academica Clinceni,U Craiova 1948,1,2,A,3.1,3.1,2.58
+07/08/2021,FC Arges,FC Rapid Bucuresti,0,1,A,2.84,3.02,2.86
+08/08/2021,Chindia Targoviste,Din. Bucuresti,1,0,H,2.03,3.33,4.12
+08/08/2021,FCSB,Gaz Metan Medias,2,1,H,1.35,4.93,10.71
+09/08/2021,Farul Constanta,Sepsi Sf. Gheorghe,1,0,H,2.94,2.98,2.8
+09/08/2021,Univ. Craiova,FC Voluntari,3,0,H,1.63,3.49,7.25
+13/08/2021,FC Voluntari,Academica Clinceni,1,0,H,2.34,3.1,3.53
+13/08/2021,CFR Cluj,Farul Constanta,1,0,H,1.6,3.78,6.83
+14/08/2021,U Craiova 1948,Chindia Targoviste,0,0,D,2.27,3,3.85
+14/08/2021,UTA Arad,Univ. Craiova,1,0,H,3.34,3.03,2.48
+15/08/2021,Sepsi Sf. Gheorghe,FC Arges,0,2,A,1.7,3.5,6.08
+15/08/2021,FC Rapid Bucuresti,FCSB,1,0,H,4.44,3.82,1.82
+16/08/2021,Gaz Metan Medias,FC Botosani,0,1,A,3.52,3.13,2.33
+16/08/2021,Din. Bucuresti,Mioveni,0,1,A,2.6,3.18,3
+20/08/2021,Chindia Targoviste,Academica Clinceni,2,2,D,2.09,2.96,4.59
+20/08/2021,Farul Constanta,Din. Bucuresti,3,0,H,1.57,3.97,6.74
+21/08/2021,Univ. Craiova,Gaz Metan Medias,1,0,H,1.44,4.28,8.87
+21/08/2021,FC Arges,CFR Cluj,0,1,A,5.79,3.42,1.75
+22/08/2021,UTA Arad,FC Voluntari,2,0,H,1.96,3.37,4.4
+22/08/2021,FC Botosani,FC Rapid Bucuresti,0,2,A,2.21,3.18,3.74
+23/08/2021,Mioveni,U Craiova 1948,1,0,H,2.87,2.96,2.89
+23/08/2021,FCSB,Sepsi Sf. Gheorghe,1,1,D,1.85,3.5,4.74
+27/08/2021,FC Voluntari,Chindia Targoviste,2,1,H,3.07,2.76,2.91
+27/08/2021,U Craiova 1948,Farul Constanta,1,1,D,3.05,2.84,2.84
+28/08/2021,Din. Bucuresti,FC Arges,0,2,A,3.55,2.93,2.44
+28/08/2021,FC Rapid Bucuresti,Univ. Craiova,1,2,A,3.31,3.12,2.44
+29/08/2021,Sepsi Sf. Gheorghe,FC Botosani,1,1,D,1.85,3.44,4.88
+29/08/2021,CFR Cluj,FCSB,4,1,H,1.92,3.26,4.85
+30/08/2021,Academica Clinceni,Mioveni,1,1,D,2.66,2.98,3.11
+30/08/2021,Gaz Metan Medias,UTA Arad,0,1,A,3.74,3.4,2.12
+10/09/2021,Mioveni,Chindia Targoviste,0,1,A,3.05,2.75,2.93
+10/09/2021,UTA Arad,FC Rapid Bucuresti,2,2,D,2.13,3.25,3.89
+11/09/2021,FC Arges,U Craiova 1948,1,0,H,2.61,3.01,3.14
+11/09/2021,FC Botosani,CFR Cluj,1,0,H,4.69,3.44,1.88
+12/09/2021,Gaz Metan Medias,FC Voluntari,1,2,A,2.68,2.93,3.14
+12/09/2021,FCSB,Din. Bucuresti,6,0,H,1.35,5.13,9.49
+13/09/2021,Farul Constanta,Academica Clinceni,5,0,H,1.65,3.62,6.39
+13/09/2021,Univ. Craiova,Sepsi Sf. Gheorghe,1,1,D,2.23,3.02,3.93
+17/09/2021,FC Voluntari,Mioveni,4,0,H,2.09,3.1,4.28
+17/09/2021,FC Rapid Bucuresti,Gaz Metan Medias,1,2,A,1.67,3.63,6.14
+18/09/2021,Chindia Targoviste,Farul Constanta,2,0,H,4.31,2.94,2.16
+18/09/2021,U Craiova 1948,FCSB,0,1,A,5.03,3.52,1.81
+19/09/2021,Academica Clinceni,FC Arges,0,1,A,2.94,2.96,2.82
+19/09/2021,Sepsi Sf. Gheorghe,UTA Arad,0,0,D,1.99,3.08,4.82
+19/09/2021,Din. Bucuresti,FC Botosani,1,2,A,5.06,3.26,1.88
+20/09/2021,CFR Cluj,Univ. Craiova,1,0,H,2.03,3.1,4.54
+24/09/2021,FC Rapid Bucuresti,FC Voluntari,0,1,A,2.35,3.1,3.51
+25/09/2021,FC Arges,Chindia Targoviste,0,0,D,2.5,2.75,3.7
+25/09/2021,FCSB,Academica Clinceni,3,2,H,1.44,4.55,8.04
+26/09/2021,Farul Constanta,Mioveni,2,1,H,1.5,4.21,7.55
+26/09/2021,FC Botosani,U Craiova 1948,1,1,D,2.11,3.2,4.05
+26/09/2021,UTA Arad,CFR Cluj,0,1,A,4.09,2.93,2.23
+27/09/2021,Gaz Metan Medias,Sepsi Sf. Gheorghe,0,0,D,4.48,3.18,2.01
+27/09/2021,Univ. Craiova,Din. Bucuresti,5,0,H,1.27,5.73,12.36
+01/10/2021,Mioveni,FC Arges,0,0,D,3.04,2.84,2.84
+01/10/2021,Chindia Targoviste,FCSB,0,1,A,5.34,3.17,1.88
+02/10/2021,Din. Bucuresti,UTA Arad,2,2,D,5.41,3.5,1.77
+02/10/2021,Sepsi Sf. Gheorghe,FC Rapid Bucuresti,2,2,D,1.88,3.38,4.86
+03/10/2021,FC Voluntari,Farul Constanta,1,0,H,3.97,3.03,2.22
+03/10/2021,CFR Cluj,Gaz Metan Medias,2,1,H,1.34,4.58,13.66
+03/10/2021,U Craiova 1948,Univ. Craiova,0,2,A,5.3,3.75,1.72
+04/10/2021,Academica Clinceni,FC Botosani,1,1,D,3.71,3.4,2.13
+15/10/2021,Gaz Metan Medias,Din. Bucuresti,2,1,H,2.21,3.3,3.6
+16/10/2021,Sepsi Sf. Gheorghe,FC Voluntari,1,2,A,1.68,3.44,6.57
+16/10/2021,FCSB,Mioveni,3,0,H,1.4,4.82,8.56
+17/10/2021,FC Arges,Farul Constanta,2,1,H,3.73,2.86,2.41
+17/10/2021,UTA Arad,U Craiova 1948,1,0,H,1.96,3.05,5.07
+17/10/2021,FC Rapid Bucuresti,CFR Cluj,2,0,H,5.36,3.48,1.78
+18/10/2021,FC Botosani,Chindia Targoviste,0,0,D,2,3.12,4.68
+18/10/2021,Univ. Craiova,Academica Clinceni,5,0,H,1.29,5.62,12.19
+22/10/2021,U Craiova 1948,Gaz Metan Medias,2,0,H,2.35,2.87,3.86
+22/10/2021,Chindia Targoviste,Univ. Craiova,0,1,A,6.57,3.47,1.68
+23/10/2021,FC Voluntari,FC Arges,0,2,A,2.87,2.76,3.1
+23/10/2021,Mioveni,FC Botosani,1,1,D,4.16,3.13,2.11
+23/10/2021,Din. Bucuresti,FC Rapid Bucuresti,1,1,D,3.4,3.17,2.36
+25/10/2021,Academica Clinceni,UTA Arad,0,3,A,5.24,3.47,1.79
+25/10/2021,CFR Cluj,Sepsi Sf. Gheorghe,2,0,H,1.78,3.35,5.67
+29/10/2021,FC Botosani,Farul Constanta,0,2,A,2.71,2.96,3.07
+30/10/2021,Univ. Craiova,Mioveni,5,2,H,1.31,5.47,10.59
+30/10/2021,CFR Cluj,FC Voluntari,1,0,H,1.39,4.34,11.18
+31/10/2021,Gaz Metan Medias,Academica Clinceni,1,1,D,2.11,3.27,3.93
+31/10/2021,Sepsi Sf. Gheorghe,Din. Bucuresti,4,1,H,1.56,4,6.91
+31/10/2021,FCSB,FC Arges,2,1,H,1.66,3.85,5.72
+01/11/2021,UTA Arad,Chindia Targoviste,0,2,A,1.94,3.02,5.29
+01/11/2021,FC Rapid Bucuresti,U Craiova 1948,0,0,D,2.18,3.05,4.05
+04/11/2021,Farul Constanta,FCSB,0,1,A,3.43,3.32,2.27
+05/11/2021,Chindia Targoviste,Gaz Metan Medias,0,1,A,2.59,2.65,3.7
+05/11/2021,FC Arges,FC Botosani,0,1,A,3.28,2.77,2.72
+06/11/2021,Mioveni,UTA Arad,0,0,D,4.73,3.24,1.94
+06/11/2021,U Craiova 1948,Sepsi Sf. Gheorghe,1,1,D,4.07,2.88,2.27
+07/11/2021,Farul Constanta,Univ. Craiova,1,0,H,3.45,3.22,2.31
+07/11/2021,Din. Bucuresti,CFR Cluj,0,3,A,8.25,4.34,1.45
+07/11/2021,FC Voluntari,FCSB,0,0,D,5.11,3.6,1.78
+08/11/2021,Academica Clinceni,FC Rapid Bucuresti,2,3,A,4,3.12,2.16
+19/11/2021,Academica Clinceni,Sepsi Sf. Gheorghe,0,2,A,6.39,3.81,1.62
+19/11/2021,Chindia Targoviste,FC Rapid Bucuresti,2,2,D,3.17,2.87,2.71
+20/11/2021,Farul Constanta,UTA Arad,0,0,D,2.28,2.95,3.91
+20/11/2021,U Craiova 1948,CFR Cluj,0,2,A,6.64,3.31,1.68
+21/11/2021,FC Arges,Univ. Craiova,3,2,H,5.65,3.33,1.75
+21/11/2021,FCSB,FC Botosani,3,1,H,1.67,3.77,5.4
+22/11/2021,Mioveni,Gaz Metan Medias,1,0,H,2.32,2.91,3.71
+22/11/2021,FC Voluntari,Din. Bucuresti,2,1,H,2.07,3.12,4.14
+26/11/2021,Din. Bucuresti,U Craiova 1948,0,0,D,2.69,3.08,2.88
+27/11/2021,Sepsi Sf. Gheorghe,Chindia Targoviste,0,0,D,1.62,3.5,6.83
+27/11/2021,UTA Arad,FC Arges,0,1,A,2.07,3,4.38
+27/11/2021,FC Rapid Bucuresti,Mioveni,1,1,D,2.24,2.92,3.92
+28/11/2021,FC Botosani,FC Voluntari,1,1,D,2.06,3.2,4.05
+28/11/2021,Univ. Craiova,FCSB,2,3,A,2.11,3.39,3.61
+29/11/2021,Gaz Metan Medias,Farul Constanta,1,1,D,4.4,2.94,2.09
+29/11/2021,CFR Cluj,Academica Clinceni,2,0,H,1.06,13.26,46.23
+03/12/2021,Academica Clinceni,Din. Bucuresti,1,0,H,4.18,3.15,2.04
+04/12/2021,Chindia Targoviste,CFR Cluj,0,1,A,6.92,3.17,1.7
+04/12/2021,Farul Constanta,FC Rapid Bucuresti,2,0,H,1.83,3.34,4.99
+05/12/2021,Mioveni,Sepsi Sf. Gheorghe,0,2,A,4.11,2.92,2.18
+05/12/2021,U Craiova 1948,FC Voluntari,0,2,A,2.73,2.75,3.19
+05/12/2021,FCSB,UTA Arad,2,1,H,1.78,3.49,5.05
+06/12/2021,FC Arges,Gaz Metan Medias,1,2,A,1.79,3.11,5.9
+06/12/2021,FC Botosani,Univ. Craiova,2,2,D,3.09,3.21,2.45
+10/12/2021,U Craiova 1948,Academica Clinceni,1,2,A,1.82,3.37,4.95
+10/12/2021,FC Rapid Bucuresti,FC Arges,2,0,H,2.85,2.81,2.96
+11/12/2021,UTA Arad,FC Botosani,0,0,D,2.08,3.04,4.25
+11/12/2021,FC Voluntari,Univ. Craiova,1,1,D,3.5,3.34,2.18
+11/12/2021,Gaz Metan Medias,FCSB,0,1,A,6.02,3.48,1.68
+12/12/2021,Sepsi Sf. Gheorghe,Farul Constanta,1,0,H,2.2,2.91,4.04
+12/12/2021,CFR Cluj,Mioveni,1,0,H,1.32,4.81,11.79
+13/12/2021,Din. Bucuresti,Chindia Targoviste,1,0,H,2.65,2.85,3.17
+14/12/2021,Academica Clinceni,FC Voluntari,0,0,D,5.07,3.41,1.79
+14/12/2021,Univ. Craiova,UTA Arad,0,0,D,1.73,3.67,5.04
+15/12/2021,FC Botosani,Gaz Metan Medias,2,1,H,1.71,3.42,5.77
+15/12/2021,FC Arges,Sepsi Sf. Gheorghe,1,1,D,3.59,2.71,2.52
+15/12/2021,FCSB,FC Rapid Bucuresti,3,1,H,1.56,4,6.27
+16/12/2021,Chindia Targoviste,U Craiova 1948,0,3,A,2.46,2.76,3.62
+16/12/2021,Mioveni,Din. Bucuresti,2,1,H,1.78,3.51,5.01
+16/12/2021,Farul Constanta,CFR Cluj,0,2,A,3.1,2.77,2.77
+17/12/2021,FC Voluntari,UTA Arad,2,1,H,3.1,2.8,2.75
+18/12/2021,Gaz Metan Medias,Univ. Craiova,1,1,D,5.37,3.3,1.79
+18/12/2021,FC Rapid Bucuresti,FC Botosani,1,1,D,3.31,3.03,2.42
+19/12/2021,Academica Clinceni,Chindia Targoviste,0,1,A,3.5,2.76,2.52
+19/12/2021,CFR Cluj,FC Arges,1,0,H,1.45,3.92,9.26
+19/12/2021,Sepsi Sf. Gheorghe,FCSB,0,0,D,2.68,2.86,3.12
+20/12/2021,U Craiova 1948,Mioveni,0,0,D,2.54,2.86,3.33
+20/12/2021,Din. Bucuresti,Farul Constanta,0,2,A,8,3.77,1.52
+21/01/2022,FC Arges,Din. Bucuresti,2,1,H,1.65,3.64,5.9
+22/01/2022,Chindia Targoviste,FC Voluntari,0,0,D,2.82,2.75,3.07
+22/01/2022,Univ. Craiova,FC Rapid Bucuresti,1,0,H,1.99,3.49,3.66
+23/01/2022,Mioveni,Academica Clinceni,3,1,H,1.11,9.02,28.47
+23/01/2022,UTA Arad,Gaz Metan Medias,0,1,A,1.56,3.67,7.45
+23/01/2022,FCSB,CFR Cluj,3,3,D,2.82,2.72,3.12
+24/01/2022,FC Botosani,Sepsi Sf. Gheorghe,1,0,H,3.33,2.78,2.6
+24/01/2022,Farul Constanta,U Craiova 1948,3,2,H,1.56,3.64,7.48
+28/01/2022,Sepsi Sf. Gheorghe,Univ. Craiova,3,1,H,2.73,2.83,3.09
+29/01/2022,FC Voluntari,Gaz Metan Medias,3,1,H,1.74,3.31,5.88
+29/01/2022,FC Rapid Bucuresti,UTA Arad,1,1,D,2.97,2.87,2.79
+30/01/2022,Chindia Targoviste,Mioveni,0,0,D,2.69,2.63,3.43
+30/01/2022,U Craiova 1948,FC Arges,1,0,H,2.74,2.68,3.27
+30/01/2022,Din. Bucuresti,FCSB,0,3,A,7.89,4.25,1.45
+31/01/2022,CFR Cluj,FC Botosani,1,1,D,1.51,3.81,8.1
+04/02/2022,Mioveni,FC Voluntari,0,0,D,3.05,2.64,2.97
+04/02/2022,Gaz Metan Medias,FC Rapid Bucuresti,1,1,D,3.31,2.8,2.6
+05/02/2022,UTA Arad,Sepsi Sf. Gheorghe,1,0,H,2.68,2.93,3.04
+05/02/2022,Farul Constanta,Chindia Targoviste,0,1,A,1.58,3.64,7.68
+05/02/2022,Univ. Craiova,CFR Cluj,1,1,D,3.02,2.84,2.78
+06/02/2022,FC Arges,Academica Clinceni,1,0,H,1.04,10.28,42.28
+06/02/2022,FCSB,U Craiova 1948,2,2,D,1.48,4.17,7.16
+07/02/2022,FC Botosani,Din. Bucuresti,4,0,H,1.72,3.37,5.71
+08/02/2022,Sepsi Sf. Gheorghe,Gaz Metan Medias,2,0,H,1.55,3.49,7.74
+08/02/2022,CFR Cluj,UTA Arad,0,0,D,1.81,3.03,6.12
+08/02/2022,FC Voluntari,FC Rapid Bucuresti,0,0,D,2.19,2.93,4.07
+09/02/2022,Chindia Targoviste,FC Arges,1,1,D,2.77,2.59,3.36
+09/02/2022,Mioveni,Farul Constanta,1,1,D,3.61,2.74,2.48
+09/02/2022,Academica Clinceni,FCSB,0,3,A,21.88,7.01,1.16
+10/02/2022,U Craiova 1948,FC Botosani,3,2,H,2.59,2.83,3.28
+10/02/2022,Din. Bucuresti,Univ. Craiova,1,6,A,6.52,3.74,1.59
+11/02/2022,FC Rapid Bucuresti,Sepsi Sf. Gheorghe,1,1,D,3.78,2.82,2.35
+12/02/2022,Farul Constanta,FC Voluntari,3,0,H,1.78,3.25,5.64
+12/02/2022,Gaz Metan Medias,CFR Cluj,1,2,A,11.56,4.32,1.36
+13/02/2022,FC Arges,Mioveni,1,0,H,2.42,2.83,3.61
+13/02/2022,UTA Arad,Din. Bucuresti,0,0,D,1.42,4.39,8.45
+13/02/2022,FCSB,Chindia Targoviste,3,2,H,1.62,3.54,6.64
+14/02/2022,FC Botosani,Academica Clinceni,2,0,H,1.23,5.94,14.55
+14/02/2022,Univ. Craiova,U Craiova 1948,2,0,H,1.76,3.34,5.51
+17/02/2022,Academica Clinceni,Farul Constanta,2,8,A,22.38,6.17,1.18
+18/02/2022,U Craiova 1948,UTA Arad,1,1,D,3.09,2.84,2.69
+18/02/2022,Din. Bucuresti,Gaz Metan Medias,4,0,H,1.34,4.77,9.18
+19/02/2022,FC Voluntari,Sepsi Sf. Gheorghe,3,1,H,3.11,2.83,2.71
+19/02/2022,Mioveni,FCSB,1,1,D,5.66,3.33,1.75
+20/02/2022,Chindia Targoviste,FC Botosani,1,1,D,2.89,2.72,3.03
+20/02/2022,CFR Cluj,FC Rapid Bucuresti,2,1,H,1.43,4.17,8.8
+21/02/2022,Farul Constanta,FC Arges,0,1,A,1.6,3.82,6.08
+21/02/2022,Academica Clinceni,Univ. Craiova,1,3,A,26.11,11.05,1.09
+25/02/2022,UTA Arad,Academica Clinceni,2,0,H,1.23,5.93,13.52
+25/02/2022,Univ. Craiova,Chindia Targoviste,1,0,H,1.44,4.05,9.33
+26/02/2022,Gaz Metan Medias,U Craiova 1948,0,3,A,41.66,12.15,1.06
+26/02/2022,Sepsi Sf. Gheorghe,CFR Cluj,0,2,A,2.79,2.88,2.96
+26/02/2022,FC Rapid Bucuresti,Din. Bucuresti,1,1,D,1.91,3.25,4.63
+27/02/2022,FC Arges,FC Voluntari,0,0,D,2.53,2.73,3.54
+27/02/2022,FC Botosani,Mioveni,0,0,D,1.96,3.1,4.65
+27/02/2022,FCSB,Farul Constanta,0,2,A,1.96,3.24,4.38
+01/03/2022,Chindia Targoviste,UTA Arad,1,0,H,3.56,2.65,2.6
+01/03/2022,Din. Bucuresti,Sepsi Sf. Gheorghe,1,3,A,3.78,3.2,2.14
+01/03/2022,U Craiova 1948,FC Rapid Bucuresti,3,2,H,2.39,2.98,3.45
+02/03/2022,Academica Clinceni,Gaz Metan Medias,2,0,H,1.31,5.06,11.17
+02/03/2022,Mioveni,Univ. Craiova,0,3,A,5.12,3.04,1.92
+02/03/2022,FC Voluntari,CFR Cluj,0,1,A,4.05,2.89,2.21
+03/03/2022,Farul Constanta,FC Botosani,2,0,H,1.68,3.49,5.97
+03/03/2022,FC Arges,FCSB,1,0,H,3.44,2.77,2.55
+04/03/2022,Sepsi Sf. Gheorghe,U Craiova 1948,2,1,H,1.72,3.52,5.47
+05/03/2022,UTA Arad,Mioveni,2,1,H,1.55,3.64,7.68
+05/03/2022,FC Rapid Bucuresti,Academica Clinceni,1,0,H,1.28,5.23,13.02
+06/03/2022,Gaz Metan Medias,Chindia Targoviste,0,4,A,44.19,8.71,1.1
+06/03/2022,CFR Cluj,Din. Bucuresti,4,1,H,1.2,6.51,15.42
+06/03/2022,FCSB,FC Voluntari,1,0,H,1.61,3.7,6.33
+07/03/2022,FC Botosani,FC Arges,1,2,A,2.35,2.84,3.74
+07/03/2022,Univ. Craiova,Farul Constanta,1,0,H,2,3.26,4.17
+11/03/2022,UTA Arad,Academica Clinceni,3,0,H,1.18,6.89,17.45
+11/03/2022,Univ. Craiova,FC Arges,3,0,H,1.44,4.07,8.97
+12/03/2022,Chindia Targoviste,U Craiova 1948,0,0,D,2.73,2.64,3.38
+12/03/2022,CFR Cluj,FC Voluntari,3,1,H,1.4,4.19,10
+13/03/2022,Sepsi Sf. Gheorghe,Mioveni,3,1,H,1.6,3.48,7.24
+13/03/2022,FC Rapid Bucuresti,Din. Bucuresti,3,1,H,2.05,3.12,4.23
+14/03/2022,FC Botosani,Gaz Metan Medias,5,0,H,,,
+14/03/2022,FCSB,Farul Constanta,2,0,H,2.04,3.12,4.23
+18/03/2022,FC Botosani,UTA Arad,1,0,H,2.8,2.8,3.04
+18/03/2022,FC Voluntari,Univ. Craiova,3,1,H,5.67,3.45,1.72
+19/03/2022,Gaz Metan Medias,U Craiova 1948,0,2,A,,,
+19/03/2022,Academica Clinceni,FC Rapid Bucuresti,0,1,A,10.86,4.51,1.36
+19/03/2022,Farul Constanta,CFR Cluj,0,0,D,3.25,2.75,2.77
+20/03/2022,Din. Bucuresti,Sepsi Sf. Gheorghe,0,0,D,4.49,3.41,1.88
+20/03/2022,FC Arges,FCSB,2,3,A,5.88,3.37,1.72
+21/03/2022,Mioveni,Chindia Targoviste,1,0,H,3.21,2.58,2.89
+01/04/2022,U Craiova 1948,Mioveni,1,1,D,2.14,3.03,4.05
+01/04/2022,Chindia Targoviste,Din. Bucuresti,0,2,A,1.75,3.23,6.03
+02/04/2022,UTA Arad,Gaz Metan Medias,4,0,H,1.06,13.11,49.77
+02/04/2022,FC Voluntari,Farul Constanta,1,0,H,3.46,2.95,2.4
+02/04/2022,FC Rapid Bucuresti,FC Botosani,3,0,H,2.49,2.9,3.36
+03/04/2022,FCSB,Univ. Craiova,0,2,A,2.11,3.39,3.63
+04/04/2022,Sepsi Sf. Gheorghe,Academica Clinceni,6,0,H,1.1,9.65,30.98
+04/04/2022,CFR Cluj,FC Arges,2,0,H,1.4,4.1,11.07
+08/04/2022,Academica Clinceni,Chindia Targoviste,0,3,A,22.39,6.23,1.18
+08/04/2022,Din. Bucuresti,U Craiova 1948,1,2,A,3.83,3.2,2.12
+09/04/2022,FC Arges,Farul Constanta,0,2,A,3.78,2.95,2.27
+09/04/2022,UTA Arad,FC Rapid Bucuresti,0,2,A,2.08,2.98,4.35
+10/04/2022,FC Botosani,Sepsi Sf. Gheorghe,0,1,A,3.21,2.86,2.62
+10/04/2022,Univ. Craiova,CFR Cluj,3,2,H,2.73,2.9,3.01
+11/04/2022,Gaz Metan Medias,Mioveni,1,2,A,30.08,8.03,1.12
+11/04/2022,FCSB,FC Voluntari,4,0,H,1.5,4.02,7.51
+15/04/2022,Chindia Targoviste,FC Botosani,1,2,A,2.35,2.8,3.82
+15/04/2022,Mioveni,Din. Bucuresti,2,0,H,2.13,3.24,3.76
+16/04/2022,Sepsi Sf. Gheorghe,UTA Arad,1,0,H,1.91,3.24,4.65
+16/04/2022,FC Voluntari,FC Arges,0,1,A,2.18,3.02,3.93
+16/04/2022,Farul Constanta,Univ. Craiova,0,3,A,3.08,3.13,2.5
+17/04/2022,U Craiova 1948,Academica Clinceni,4,0,H,1.08,10.79,45.8
+17/04/2022,CFR Cluj,FCSB,0,1,A,2.18,3.07,3.84
+18/04/2022,FC Rapid Bucuresti,Gaz Metan Medias,8,0,H,1.02,16.44,48.31
+22/04/2022,Academica Clinceni,Mioveni,0,2,A,21.49,7.36,1.15
+22/04/2022,Gaz Metan Medias,Din. Bucuresti,0,1,A,41.92,10.31,1.08
+23/04/2022,UTA Arad,Chindia Targoviste,1,0,H,2.19,2.85,4.22
+23/04/2022,FC Rapid Bucuresti,Sepsi Sf. Gheorghe,1,0,H,3.32,2.87,2.54
+24/04/2022,FC Voluntari,CFR Cluj,0,1,A,7.56,3.39,1.61
+25/04/2022,FC Botosani,U Craiova 1948,2,1,H,2.43,2.95,3.4
+25/04/2022,FC Arges,Univ. Craiova,0,4,A,6.37,3.83,1.58
+25/04/2022,Farul Constanta,FCSB,0,4,A,5.53,3.53,1.71
+29/04/2022,Sepsi Sf. Gheorghe,Gaz Metan Medias,3,1,H,1.03,18.55,49.5
+29/04/2022,Chindia Targoviste,FC Rapid Bucuresti,0,0,D,3.11,2.76,2.78
+30/04/2022,Din. Bucuresti,Academica Clinceni,5,1,H,1.19,6.73,15.79
+30/04/2022,Univ. Craiova,FC Voluntari,1,0,H,1.35,4.81,9.54
+01/05/2022,U Craiova 1948,UTA Arad,1,0,H,2.43,2.98,3.36
+01/05/2022,CFR Cluj,Farul Constanta,1,0,H,1.44,3.92,10.05
+02/05/2022,Mioveni,FC Botosani,0,2,A,2.78,2.78,3.07
+02/05/2022,FCSB,FC Arges,4,0,H,1.17,6.94,20.06
+06/05/2022,Gaz Metan Medias,Academica Clinceni,4,3,H,3.77,3.77,1.93
+06/05/2022,FC Botosani,Din. Bucuresti,2,3,A,1.55,4.19,6.02
+07/05/2022,UTA Arad,Mioveni,1,0,H,2.08,2.76,4.91
+07/05/2022,Farul Constanta,FC Voluntari,1,1,D,1.78,3.46,5.05
+07/05/2022,FC Arges,CFR Cluj,0,6,A,15.11,5.12,1.27
+08/05/2022,Sepsi Sf. Gheorghe,Chindia Targoviste,2,1,H,1.6,3.7,6.44
+08/05/2022,Univ. Craiova,FCSB,0,1,A,2.68,3.37,2.68
+09/05/2022,FC Rapid Bucuresti,U Craiova 1948,2,3,A,1.68,3.51,5.53
+13/05/2022,Chindia Targoviste,Gaz Metan Medias,3,0,H,1.06,13.2,38.91
+13/05/2022,Din. Bucuresti,UTA Arad,1,1,D,3.99,3.42,1.99
+14/05/2022,Farul Constanta,FC Arges,1,0,H,1.44,4.5,7.39
+14/05/2022,FC Voluntari,FCSB,2,2,D,18.61,6.37,1.18
+15/05/2022,CFR Cluj,Univ. Craiova,2,1,H,1.48,3.94,8.21
+16/05/2022,Academica Clinceni,FC Botosani,0,4,A,42.7,13.07,1.06
+16/05/2022,Mioveni,FC Rapid Bucuresti,3,2,H,9.01,4.18,1.43
+16/05/2022,U Craiova 1948,Sepsi Sf. Gheorghe,0,5,A,3.62,3.38,2.11
+20/05/2022,Univ. Craiova,Farul Constanta,4,1,H,1.94,3.51,4.07
+21/05/2022,Concordia,Chindia Targoviste,2,1,H,4.81,3.06,1.95
+21/05/2022,U. Cluj,Din. Bucuresti,2,0,H,2.71,2.92,3.01
+22/05/2022,FCSB,CFR Cluj,3,1,H,1.63,4,5.41
+23/05/2022,FC Arges,FC Voluntari,0,1,A,2.78,2.94,2.92
+27/05/2022,Univ. Craiova,FC Botosani,2,0,H,1.5,4.1,7.14
+29/05/2022,Chindia Targoviste,Concordia,1,0,H,1.38,4.35,9.53
+29/05/2022,Din. Bucuresti,U. Cluj,1,1,D,1.78,3.65,4.63

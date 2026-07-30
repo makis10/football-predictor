@@ -1,0 +1,241 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2017-04-01,FC Minsk,Dinamo Brest,2,2,D
+2017-04-01,Naftan,FC Slutsk,0,1,A
+2017-04-01,Gorodeya,Shakhter Soligorsk,0,1,A
+2017-04-01,Torpedo Zhodino,FC Isloch Minsk R.,2,1,H
+2017-04-01,FC Dnepr Mogilev,Dinamo Minsk,0,3,A
+2017-04-01,FC Gomel,Bate Borisov,1,1,D
+2017-04-02,Neman,Slavia Mozyr,0,0,D
+2017-04-02,NFK Minsk,FC Vitebsk,1,0,H
+2017-04-08,FC Isloch Minsk R.,Neman,0,1,A
+2017-04-08,Slavia Mozyr,Gorodeya,1,0,H
+2017-04-08,FC Vitebsk,FC Dnepr Mogilev,0,4,A
+2017-04-09,Dinamo Minsk,Naftan,1,0,H
+2017-04-09,Shakhter Soligorsk,FC Gomel,0,0,D
+2017-04-09,Bate Borisov,FC Minsk,1,0,H
+2017-04-09,NFK Minsk,Dinamo Brest,1,1,D
+2017-04-10,FC Slutsk,Torpedo Zhodino,4,1,H
+2017-04-14,Naftan,FC Vitebsk,0,0,D
+2017-04-14,FC Dnepr Mogilev,NFK Minsk,2,1,H
+2017-04-15,Torpedo Zhodino,Dinamo Minsk,1,0,H
+2017-04-15,Neman,FC Slutsk,2,1,H
+2017-04-15,FC Minsk,Shakhter Soligorsk,0,1,A
+2017-04-15,FC Gomel,Slavia Mozyr,2,0,H
+2017-04-15,Gorodeya,FC Isloch Minsk R.,2,0,H
+2017-04-15,Dinamo Brest,Bate Borisov,1,1,D
+2017-04-21,FC Vitebsk,Torpedo Zhodino,1,1,D
+2017-04-21,NFK Minsk,Bate Borisov,2,3,A
+2017-04-22,Dinamo Minsk,Neman,1,0,H
+2017-04-22,FC Dnepr Mogilev,Naftan,4,0,H
+2017-04-22,FC Slutsk,Gorodeya,1,1,D
+2017-04-22,Shakhter Soligorsk,Dinamo Brest,3,0,H
+2017-04-23,Slavia Mozyr,FC Minsk,2,2,D
+2017-04-23,FC Isloch Minsk R.,FC Gomel,0,1,A
+2017-04-29,Naftan,NFK Minsk,0,3,A
+2017-04-29,FC Minsk,FC Isloch Minsk R.,2,0,H
+2017-04-29,Neman,FC Vitebsk,1,4,A
+2017-04-30,Torpedo Zhodino,FC Dnepr Mogilev,0,0,D
+2017-04-30,Dinamo Brest,Slavia Mozyr,3,1,H
+2017-04-30,Bate Borisov,Shakhter Soligorsk,1,0,H
+2017-04-30,Gorodeya,Dinamo Minsk,1,0,H
+2017-04-30,FC Gomel,FC Slutsk,0,1,A
+2017-05-05,FC Isloch Minsk R.,Dinamo Brest,3,1,H
+2017-05-05,FC Vitebsk,Gorodeya,0,0,D
+2017-05-06,Slavia Mozyr,Bate Borisov,0,6,A
+2017-05-06,FC Slutsk,FC Minsk,2,0,H
+2017-05-06,Dinamo Minsk,FC Gomel,1,0,H
+2017-05-07,NFK Minsk,Shakhter Soligorsk,0,2,A
+2017-05-07,Naftan,Torpedo Zhodino,0,1,A
+2017-05-07,FC Dnepr Mogilev,Neman,0,3,A
+2017-05-10,FC Gomel,FC Vitebsk,0,1,A
+2017-05-10,Dinamo Brest,FC Slutsk,0,0,D
+2017-05-10,FC Minsk,Dinamo Minsk,0,2,A
+2017-05-10,Bate Borisov,FC Isloch Minsk R.,2,0,H
+2017-05-11,Shakhter Soligorsk,Slavia Mozyr,1,0,H
+2017-05-11,Torpedo Zhodino,NFK Minsk,3,0,H
+2017-05-11,Neman,Naftan,2,1,H
+2017-05-11,Gorodeya,FC Dnepr Mogilev,2,2,D
+2017-05-14,Dinamo Minsk,Dinamo Brest,1,0,H
+2017-05-14,FC Slutsk,Bate Borisov,1,0,H
+2017-05-14,FC Vitebsk,FC Minsk,3,0,H
+2017-05-15,Naftan,Gorodeya,1,0,H
+2017-05-15,FC Dnepr Mogilev,FC Gomel,0,4,A
+2017-05-15,Torpedo Zhodino,Neman,1,1,D
+2017-05-15,FC Isloch Minsk R.,Shakhter Soligorsk,1,2,A
+2017-05-16,NFK Minsk,Slavia Mozyr,1,1,D
+2017-05-20,FC Minsk,FC Dnepr Mogilev,0,0,D
+2017-05-20,Shakhter Soligorsk,FC Slutsk,2,1,H
+2017-05-20,Bate Borisov,Dinamo Minsk,1,0,H
+2017-05-20,FC Gomel,Naftan,3,1,H
+2017-05-20,Dinamo Brest,FC Vitebsk,2,0,H
+2017-05-21,Neman,NFK Minsk,2,0,H
+2017-05-21,Slavia Mozyr,FC Isloch Minsk R.,2,3,A
+2017-05-21,Gorodeya,Torpedo Zhodino,3,2,H
+2017-05-24,Dinamo Minsk,Shakhter Soligorsk,2,2,D
+2017-05-24,FC Dnepr Mogilev,Dinamo Brest,1,0,H
+2017-05-26,Gorodeya,Neman,1,0,H
+2017-05-26,NFK Minsk,FC Isloch Minsk R.,2,0,H
+2017-05-26,FC Vitebsk,Bate Borisov,1,0,H
+2017-05-27,Naftan,FC Minsk,0,1,A
+2017-05-27,FC Slutsk,Slavia Mozyr,0,0,D
+2017-05-27,Torpedo Zhodino,FC Gomel,1,0,H
+2017-06-03,FC Isloch Minsk R.,FC Slutsk,1,2,A
+2017-06-03,Gorodeya,NFK Minsk,1,1,D
+2017-06-03,FC Gomel,Neman,2,2,D
+2017-06-04,FC Minsk,Torpedo Zhodino,0,0,D
+2017-06-04,Slavia Mozyr,Dinamo Minsk,0,2,A
+2017-06-04,Shakhter Soligorsk,FC Vitebsk,2,0,H
+2017-06-04,Dinamo Brest,Naftan,2,0,H
+2017-06-04,Bate Borisov,FC Dnepr Mogilev,2,1,H
+2017-06-15,Neman,FC Minsk,3,1,H
+2017-06-15,Gorodeya,FC Gomel,0,0,D
+2017-06-15,NFK Minsk,FC Slutsk,1,1,D
+2017-06-16,Naftan,Bate Borisov,0,3,A
+2017-06-16,Torpedo Zhodino,Dinamo Brest,1,1,D
+2017-06-16,Dinamo Minsk,FC Isloch Minsk R.,1,0,H
+2017-06-16,FC Dnepr Mogilev,Shakhter Soligorsk,0,1,A
+2017-06-17,FC Vitebsk,Slavia Mozyr,1,0,H
+2017-06-20,Shakhter Soligorsk,Naftan,2,1,H
+2017-06-20,FC Slutsk,Dinamo Minsk,0,3,A
+2017-06-20,Bate Borisov,Torpedo Zhodino,0,0,D
+2017-06-20,FC Minsk,Gorodeya,0,0,D
+2017-06-20,FC Gomel,NFK Minsk,2,0,H
+2017-06-21,Slavia Mozyr,FC Dnepr Mogilev,4,0,H
+2017-06-21,FC Isloch Minsk R.,FC Vitebsk,0,1,A
+2017-06-21,Dinamo Brest,Neman,0,2,A
+2017-06-24,NFK Minsk,Dinamo Minsk,0,1,A
+2017-06-24,Torpedo Zhodino,Shakhter Soligorsk,1,2,A
+2017-06-24,FC Gomel,FC Minsk,2,1,H
+2017-06-25,FC Vitebsk,FC Slutsk,0,1,A
+2017-06-25,Gorodeya,Dinamo Brest,1,1,D
+2017-06-25,Neman,Bate Borisov,0,1,A
+2017-06-26,Naftan,Slavia Mozyr,0,2,A
+2017-06-30,FC Minsk,NFK Minsk,0,0,D
+2017-07-01,FC Slutsk,FC Dnepr Mogilev,1,0,H
+2017-07-01,FC Isloch Minsk R.,Naftan,0,0,D
+2017-07-01,Dinamo Brest,FC Gomel,3,0,H
+2017-07-01,Bate Borisov,Gorodeya,2,0,H
+2017-07-02,Dinamo Minsk,FC Vitebsk,1,3,A
+2017-07-02,Slavia Mozyr,Torpedo Zhodino,0,3,A
+2017-07-03,Shakhter Soligorsk,Neman,0,0,D
+2017-07-29,FC Vitebsk,NFK Minsk,2,2,D
+2017-07-29,Slavia Mozyr,Neman,1,2,A
+2017-07-29,FC Isloch Minsk R.,Torpedo Zhodino,2,1,H
+2017-07-29,Bate Borisov,FC Gomel,3,0,H
+2017-07-30,Shakhter Soligorsk,Gorodeya,4,0,H
+2017-07-30,Dinamo Brest,FC Minsk,4,0,H
+2017-07-30,Dinamo Minsk,FC Dnepr Mogilev,2,1,H
+2017-07-31,FC Slutsk,Naftan,0,1,A
+2017-08-05,FC Dnepr Mogilev,FC Vitebsk,1,2,A
+2017-08-05,Dinamo Brest,NFK Minsk,3,0,H
+2017-08-05,Gorodeya,Slavia Mozyr,0,0,D
+2017-08-06,Neman,FC Isloch Minsk R.,1,1,D
+2017-08-06,FC Minsk,Bate Borisov,1,0,H
+2017-08-06,Torpedo Zhodino,FC Slutsk,1,1,D
+2017-08-07,Naftan,Dinamo Minsk,0,4,A
+2017-08-07,FC Gomel,Shakhter Soligorsk,0,0,D
+2017-08-11,FC Isloch Minsk R.,Gorodeya,0,4,A
+2017-08-11,Bate Borisov,Dinamo Brest,1,0,H
+2017-08-12,FC Slutsk,Neman,1,2,A
+2017-08-12,FC Vitebsk,Naftan,2,0,H
+2017-08-12,NFK Minsk,FC Dnepr Mogilev,0,0,D
+2017-08-13,Dinamo Minsk,Torpedo Zhodino,1,0,H
+2017-08-13,Slavia Mozyr,FC Gomel,1,1,D
+2017-08-13,Shakhter Soligorsk,FC Minsk,3,0,H
+2017-08-18,Naftan,FC Dnepr Mogilev,0,1,A
+2017-08-18,FC Gomel,FC Isloch Minsk R.,0,1,A
+2017-08-19,Gorodeya,FC Slutsk,1,1,D
+2017-08-19,Torpedo Zhodino,FC Vitebsk,2,0,H
+2017-08-20,Neman,Dinamo Minsk,0,1,A
+2017-08-20,FC Minsk,Slavia Mozyr,2,2,D
+2017-08-20,Bate Borisov,NFK Minsk,2,3,A
+2017-08-20,Dinamo Brest,Shakhter Soligorsk,2,2,D
+2017-08-25,FC Dnepr Mogilev,Torpedo Zhodino,0,5,A
+2017-08-25,NFK Minsk,Naftan,2,2,D
+2017-08-26,FC Slutsk,FC Gomel,1,0,H
+2017-08-26,FC Vitebsk,Neman,2,2,D
+2017-08-26,FC Isloch Minsk R.,FC Minsk,0,0,D
+2017-08-27,Slavia Mozyr,Dinamo Brest,1,2,A
+2017-08-27,Dinamo Minsk,Gorodeya,4,2,H
+2017-08-27,Shakhter Soligorsk,Bate Borisov,0,4,A
+2017-09-08,FC Gomel,Dinamo Minsk,0,1,A
+2017-09-09,Shakhter Soligorsk,NFK Minsk,2,0,H
+2017-09-09,Bate Borisov,Slavia Mozyr,2,0,H
+2017-09-10,FC Minsk,FC Slutsk,1,1,D
+2017-09-10,Gorodeya,FC Vitebsk,3,2,H
+2017-09-10,Dinamo Brest,FC Isloch Minsk R.,4,1,H
+2017-09-11,Torpedo Zhodino,Naftan,1,1,D
+2017-09-11,Neman,FC Dnepr Mogilev,2,0,H
+2017-09-16,Dinamo Minsk,FC Minsk,1,0,H
+2017-09-16,NFK Minsk,Torpedo Zhodino,0,3,A
+2017-09-16,FC Vitebsk,FC Gomel,1,0,H
+2017-09-16,FC Dnepr Mogilev,Gorodeya,2,2,D
+2017-09-17,Naftan,Neman,3,2,H
+2017-09-17,FC Slutsk,Dinamo Brest,1,0,H
+2017-09-17,Slavia Mozyr,Shakhter Soligorsk,0,3,A
+2017-09-18,FC Isloch Minsk R.,Bate Borisov,0,2,A
+2017-09-22,FC Gomel,FC Dnepr Mogilev,0,0,D
+2017-09-22,Dinamo Brest,Dinamo Minsk,1,0,H
+2017-09-23,Bate Borisov,FC Slutsk,6,0,H
+2017-09-23,Shakhter Soligorsk,FC Isloch Minsk R.,4,0,H
+2017-09-24,Slavia Mozyr,NFK Minsk,3,1,H
+2017-09-24,FC Minsk,FC Vitebsk,0,0,D
+2017-09-24,Gorodeya,Naftan,2,0,H
+2017-09-24,Neman,Torpedo Zhodino,0,1,A
+2017-09-29,FC Vitebsk,Dinamo Brest,2,2,D
+2017-09-29,FC Isloch Minsk R.,Slavia Mozyr,1,0,H
+2017-09-30,NFK Minsk,Neman,2,2,D
+2017-09-30,Naftan,FC Gomel,0,3,A
+2017-09-30,FC Dnepr Mogilev,FC Minsk,1,1,D
+2017-10-01,FC Slutsk,Shakhter Soligorsk,0,2,A
+2017-10-01,Dinamo Minsk,Bate Borisov,0,1,A
+2017-10-01,Torpedo Zhodino,Gorodeya,3,2,H
+2017-10-13,Neman,Gorodeya,2,1,H
+2017-10-14,FC Isloch Minsk R.,NFK Minsk,1,1,D
+2017-10-14,Shakhter Soligorsk,Dinamo Minsk,0,1,A
+2017-10-15,Slavia Mozyr,FC Slutsk,1,2,A
+2017-10-15,FC Minsk,Naftan,2,2,D
+2017-10-15,Dinamo Brest,FC Dnepr Mogilev,3,0,H
+2017-10-15,Bate Borisov,FC Vitebsk,3,1,H
+2017-10-16,FC Gomel,Torpedo Zhodino,0,1,A
+2017-10-18,FC Dnepr Mogilev,FC Isloch Minsk R.,1,2,A
+2017-10-20,NFK Minsk,Gorodeya,0,3,A
+2017-10-21,Naftan,Dinamo Brest,0,4,A
+2017-10-21,Neman,FC Gomel,3,0,H
+2017-10-22,Dinamo Minsk,Slavia Mozyr,0,0,D
+2017-10-22,FC Slutsk,FC Isloch Minsk R.,1,3,A
+2017-10-22,FC Vitebsk,Shakhter Soligorsk,1,2,A
+2017-10-23,FC Dnepr Mogilev,Bate Borisov,0,2,A
+2017-10-23,Torpedo Zhodino,FC Minsk,1,1,D
+2017-10-27,Shakhter Soligorsk,FC Dnepr Mogilev,2,1,H
+2017-10-28,FC Slutsk,NFK Minsk,2,0,H
+2017-10-28,FC Gomel,Gorodeya,0,0,D
+2017-10-28,FC Isloch Minsk R.,Dinamo Minsk,1,5,A
+2017-10-28,Bate Borisov,Naftan,1,1,D
+2017-10-29,Slavia Mozyr,FC Vitebsk,0,1,A
+2017-10-29,FC Minsk,Neman,0,1,A
+2017-10-29,Dinamo Brest,Torpedo Zhodino,1,0,H
+2017-11-03,FC Vitebsk,FC Isloch Minsk R.,0,2,A
+2017-11-03,FC Dnepr Mogilev,Slavia Mozyr,5,3,H
+2017-11-04,NFK Minsk,FC Gomel,0,1,A
+2017-11-04,Naftan,Shakhter Soligorsk,1,5,A
+2017-11-04,Neman,Dinamo Brest,0,2,A
+2017-11-05,Dinamo Minsk,FC Slutsk,2,0,H
+2017-11-05,Gorodeya,FC Minsk,1,1,D
+2017-11-06,Torpedo Zhodino,Bate Borisov,2,4,A
+2017-11-18,FC Slutsk,FC Vitebsk,2,3,A
+2017-11-18,FC Minsk,FC Gomel,0,2,A
+2017-11-18,Dinamo Brest,Gorodeya,1,1,D
+2017-11-18,Bate Borisov,Neman,3,1,H
+2017-11-18,FC Isloch Minsk R.,FC Dnepr Mogilev,1,0,H
+2017-11-18,Shakhter Soligorsk,Torpedo Zhodino,1,2,A
+2017-11-18,Dinamo Minsk,NFK Minsk,1,0,H
+2017-11-18,Slavia Mozyr,Naftan,1,2,A
+2017-11-26,FC Vitebsk,Dinamo Minsk,1,4,A
+2017-11-26,FC Dnepr Mogilev,FC Slutsk,0,0,D
+2017-11-26,Torpedo Zhodino,Slavia Mozyr,2,0,H
+2017-11-26,Neman,Shakhter Soligorsk,3,1,H
+2017-11-26,FC Gomel,Dinamo Brest,0,1,A
+2017-11-26,Gorodeya,Bate Borisov,3,3,D
+2017-11-26,Naftan,FC Isloch Minsk R.,1,2,A
+2017-11-26,NFK Minsk,FC Minsk,2,1,H

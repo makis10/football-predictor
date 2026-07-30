@@ -1,0 +1,196 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,PSH,PSD,PSA
+26/07/2019,SK Rapid,Salzburg,0,2,A,3.92,3.95,1.9
+27/07/2019,Admira,Wolfsberger AC,0,3,A,3.99,3.96,1.88
+27/07/2019,Tirol,Austria Vienna,3,1,H,3.91,3.71,1.97
+28/07/2019,LASK,Altach,2,0,H,1.52,4.35,6.58
+28/07/2019,Mattersburg,Hartberg,2,1,H,1.92,3.91,3.89
+28/07/2019,Sturm Graz,St. Polten,3,0,H,1.71,3.91,5.04
+03/08/2019,Altach,Tirol,3,2,H,1.81,3.91,4.39
+03/08/2019,Austria Vienna,LASK,0,3,A,4.05,3.95,1.87
+03/08/2019,Hartberg,Admira,4,1,H,2.22,3.58,3.27
+04/08/2019,Wolfsberger AC,Sturm Graz,0,1,A,2.28,3.62,3.12
+04/08/2019,Salzburg,Mattersburg,4,1,H,1.14,9.25,18.97
+04/08/2019,St. Polten,SK Rapid,2,2,D,5.75,4.71,1.53
+10/08/2019,Admira,LASK,0,1,A,6.14,4.63,1.51
+10/08/2019,SK Rapid,Altach,2,1,H,1.62,4.27,5.32
+10/08/2019,Salzburg,Wolfsberger AC,5,2,H,1.28,5.99,10.31
+11/08/2019,Hartberg,Sturm Graz,1,0,H,3.94,4.22,1.83
+11/08/2019,Mattersburg,Austria Vienna,1,5,A,2.74,3.49,2.61
+11/08/2019,Tirol,St. Polten,1,1,D,2.06,3.86,3.45
+17/08/2019,Wolfsberger AC,Mattersburg,5,0,H,1.4,5.12,7.73
+17/08/2019,LASK,Tirol,1,1,D,1.48,4.67,6.62
+17/08/2019,St. Polten,Salzburg,0,6,A,15.85,8.92,1.16
+18/08/2019,Altach,Hartberg,3,3,D,1.54,4.65,5.74
+18/08/2019,Austria Vienna,Admira,1,1,D,1.72,3.86,5.04
+18/08/2019,Sturm Graz,SK Rapid,0,1,A,2.75,3.63,2.53
+24/08/2019,Wolfsberger AC,Altach,5,2,H,1.78,4.08,4.36
+24/08/2019,Mattersburg,St. Polten,0,1,A,2.27,3.54,3.21
+24/08/2019,SK Rapid,LASK,1,2,A,2.4,3.6,2.94
+25/08/2019,Hartberg,Austria Vienna,2,2,D,3.1,3.84,2.21
+25/08/2019,Salzburg,Admira,5,0,H,1.05,16.19,50.37
+25/08/2019,Sturm Graz,Tirol,2,0,H,1.68,4.06,5.07
+31/08/2019,Admira,Mattersburg,1,3,A,2.33,3.64,3.02
+31/08/2019,LASK,Wolfsberger AC,0,1,A,1.93,3.79,3.96
+31/08/2019,Tirol,Salzburg,1,5,A,13.55,8.23,1.15
+01/09/2019,Altach,Sturm Graz,1,2,A,2.83,3.4,2.58
+01/09/2019,Austria Vienna,SK Rapid,1,3,A,2.77,4.02,2.35
+01/09/2019,St. Polten,Hartberg,1,3,A,2.28,3.74,3.04
+14/09/2019,Mattersburg,Tirol,0,2,A,2.29,3.75,3.02
+14/09/2019,Salzburg,Hartberg,7,2,H,1.05,17.98,24.72
+14/09/2019,Sturm Graz,LASK,0,2,A,3.49,3.63,2.11
+15/09/2019,Altach,St. Polten,6,0,H,1.6,4.44,5.3
+15/09/2019,SK Rapid,Admira,5,0,H,1.31,5.85,9.08
+15/09/2019,Wolfsberger AC,Austria Vienna,3,0,H,1.52,4.66,6
+21/09/2019,Admira,St. Polten,1,1,D,2.36,3.51,3.07
+21/09/2019,Mattersburg,Sturm Graz,3,3,D,4.14,3.76,1.9
+21/09/2019,Tirol,SK Rapid,0,2,A,5.06,4.77,1.58
+22/09/2019,Austria Vienna,Altach,2,0,H,2.26,3.94,2.96
+22/09/2019,Hartberg,Wolfsberger AC,0,2,A,4.46,4.48,1.69
+22/09/2019,LASK,Salzburg,2,2,D,3.08,3.73,2.24
+28/09/2019,Salzburg,Austria Vienna,4,1,H,1.18,8.06,12.58
+28/09/2019,St. Polten,LASK,0,3,A,9.86,5.38,1.32
+28/09/2019,Wolfsberger AC,Tirol,2,2,D,1.27,6.42,9.94
+29/09/2019,Altach,Mattersburg,0,2,A,1.6,4.46,5.3
+29/09/2019,Sturm Graz,Admira,4,1,H,1.44,4.68,7.62
+29/09/2019,SK Rapid,Hartberg,3,3,D,1.22,7.49,11.34
+05/10/2019,Admira,Tirol,3,1,H,2.69,3.59,2.6
+05/10/2019,Mattersburg,SK Rapid,2,3,A,4.96,4.35,1.65
+05/10/2019,Salzburg,Altach,6,0,H,1.16,8.2,15.42
+06/10/2019,Hartberg,LASK,1,2,A,6.63,5.61,1.4
+06/10/2019,Wolfsberger AC,St. Polten,4,0,H,1.3,6.36,8.4
+06/10/2019,Austria Vienna,Sturm Graz,1,0,H,2.82,3.71,2.43
+19/10/2019,Altach,Admira,1,4,A,1.79,3.84,4.62
+19/10/2019,LASK,Mattersburg,7,2,H,1.2,7.42,11.99
+19/10/2019,Sturm Graz,Salzburg,1,1,D,6.87,4.83,1.45
+20/10/2019,St. Polten,Austria Vienna,2,2,D,3.35,3.72,2.14
+20/10/2019,Tirol,Hartberg,0,1,A,2.03,4.08,3.38
+20/10/2019,SK Rapid,Wolfsberger AC,1,1,D,2.33,3.99,2.82
+26/10/2019,Austria Vienna,Tirol,2,3,A,1.59,4.5,5.35
+26/10/2019,Hartberg,Mattersburg,3,1,H,1.93,4.36,3.5
+26/10/2019,St. Polten,Sturm Graz,0,4,A,4.29,3.98,1.81
+27/10/2019,Altach,LASK,0,1,A,6.52,4.57,1.5
+27/10/2019,Wolfsberger AC,Admira,2,2,D,1.34,5.62,8.56
+27/10/2019,Salzburg,SK Rapid,3,2,H,1.32,5.8,8.93
+02/11/2019,Mattersburg,Salzburg,0,3,A,17.3,9.7,1.13
+02/11/2019,SK Rapid,St. Polten,0,1,A,1.25,6.01,11.63
+02/11/2019,Sturm Graz,Wolfsberger AC,0,4,A,2.79,3.73,2.45
+03/11/2019,Admira,Hartberg,0,1,A,2.07,3.82,3.45
+03/11/2019,Tirol,Altach,0,4,A,2.59,3.64,2.67
+03/11/2019,LASK,Austria Vienna,2,0,H,1.32,5.96,8.67
+09/11/2019,Altach,SK Rapid,0,3,A,3.85,4.01,1.91
+09/11/2019,St. Polten,Tirol,5,1,H,2.22,3.68,3.19
+09/11/2019,Sturm Graz,Hartberg,3,1,H,1.47,4.94,6.35
+10/11/2019,Austria Vienna,Mattersburg,2,1,H,1.69,4.52,4.46
+10/11/2019,LASK,Admira,1,0,H,1.18,7.36,15.47
+10/11/2019,Wolfsberger AC,Salzburg,0,3,A,5.4,5.19,1.51
+23/11/2019,Mattersburg,Wolfsberger AC,1,4,A,6.68,5.55,1.4
+23/11/2019,Salzburg,St. Polten,2,2,D,1.08,11.04,22.08
+23/11/2019,Tirol,LASK,0,2,A,9.49,5.72,1.31
+24/11/2019,Admira,Austria Vienna,0,0,D,3.08,3.68,2.28
+24/11/2019,Hartberg,Altach,2,1,H,2.51,3.72,2.72
+24/11/2019,SK Rapid,Sturm Graz,1,1,D,1.88,3.99,4
+30/11/2019,Austria Vienna,Hartberg,5,0,H,1.73,4.2,4.5
+30/11/2019,St. Polten,Mattersburg,0,0,D,1.83,4.17,4.03
+30/11/2019,Tirol,Sturm Graz,1,5,A,4.07,3.69,1.93
+01/12/2019,Admira,Salzburg,1,1,D,12.8,8.18,1.16
+01/12/2019,Altach,Wolfsberger AC,2,1,H,4.31,4.18,1.77
+01/12/2019,LASK,SK Rapid,0,4,A,1.75,3.94,4.77
+07/12/2019,Hartberg,St. Polten,3,2,H,2.37,3.75,2.89
+07/12/2019,Salzburg,Tirol,5,1,H,1.06,13.1,28.16
+07/12/2019,Wolfsberger AC,LASK,1,3,A,3.13,3.61,2.28
+08/12/2019,Mattersburg,Admira,1,2,A,3.16,3.41,2.35
+08/12/2019,Sturm Graz,Altach,1,2,A,1.71,3.82,5.23
+08/12/2019,SK Rapid,Austria Vienna,2,2,D,1.68,4.41,4.63
+14/12/2019,Admira,SK Rapid,0,3,A,6.08,4.93,1.48
+14/12/2019,Hartberg,Salzburg,2,2,D,8.09,6.58,1.26
+14/12/2019,St. Polten,Altach,0,3,A,2.25,3.62,3.13
+15/12/2019,Austria Vienna,Wolfsberger AC,1,1,D,2.75,3.98,2.36
+15/12/2019,Tirol,Mattersburg,1,3,A,1.93,3.85,3.86
+15/12/2019,LASK,Sturm Graz,3,3,D,1.57,4.15,6.04
+14/02/2020,Salzburg,LASK,2,3,A,1.81,4.23,4
+15/02/2020,Altach,Austria Vienna,2,2,D,2.91,3.76,2.33
+15/02/2020,Wolfsberger AC,Hartberg,3,0,H,1.4,5.7,6.52
+16/02/2020,St. Polten,Admira,2,2,D,2.2,3.57,3.41
+16/02/2020,Sturm Graz,Mattersburg,1,2,A,1.82,3.88,4.49
+16/02/2020,SK Rapid,Tirol,2,0,H,1.25,7.32,10.32
+22/02/2020,Admira,Sturm Graz,0,2,A,3.35,3.63,2.15
+22/02/2020,Mattersburg,Altach,0,0,D,2.91,3.52,2.43
+22/02/2020,Tirol,Wolfsberger AC,2,0,H,4.42,4.08,1.76
+23/02/2020,Hartberg,SK Rapid,2,2,D,4.72,4.67,1.63
+23/02/2020,LASK,St. Polten,4,1,H,1.26,6.19,11.34
+23/02/2020,Austria Vienna,Salzburg,2,2,D,5.17,4.79,1.56
+01/03/2020,LASK,Hartberg,5,1,H,1.24,6.72,11.45
+01/03/2020,SK Rapid,Mattersburg,3,1,H,1.27,5.92,11.22
+01/03/2020,St. Polten,Wolfsberger AC,0,4,A,4.63,4.33,1.68
+01/03/2020,Sturm Graz,Austria Vienna,1,1,D,2.09,3.76,3.38
+01/03/2020,Tirol,Admira,1,1,D,2.09,3.75,3.4
+02/03/2020,Altach,Salzburg,3,2,H,5.85,4.85,1.5
+07/03/2020,Admira,Altach,2,0,H,2.94,3.3,2.52
+07/03/2020,Austria Vienna,St. Polten,0,0,D,1.54,4.67,5.57
+07/03/2020,Hartberg,Tirol,0,3,A,2.47,3.68,2.75
+07/03/2020,Wolfsberger AC,SK Rapid,2,2,D,2.51,3.82,2.63
+08/03/2020,Mattersburg,LASK,0,1,A,7.27,4.81,1.43
+08/03/2020,Salzburg,Sturm Graz,2,0,H,1.4,5.27,7.08
+02/06/2020,Mattersburg,Altach,1,1,D,2.93,3.35,2.5
+02/06/2020,Tirol,St. Polten,0,5,A,2.19,3.52,3.33
+02/06/2020,Austria Vienna,Admira,1,0,H,1.71,4.11,4.7
+03/06/2020,LASK,Hartberg,1,2,A,1.24,6.43,11.14
+03/06/2020,Sturm Graz,Wolfsberger AC,1,2,A,3.18,3.64,2.22
+03/06/2020,Salzburg,SK Rapid,2,0,H,1.41,5.35,6.71
+06/06/2020,Admira,Mattersburg,0,2,A,2.45,3.38,2.98
+06/06/2020,Altach,Tirol,1,1,D,1.85,3.87,4.17
+06/06/2020,St. Polten,Austria Vienna,1,1,D,2.77,3.48,2.56
+07/06/2020,Hartberg,Salzburg,0,6,A,13.29,8.48,1.19
+07/06/2020,Wolfsberger AC,LASK,3,3,D,3.06,3.79,2.27
+07/06/2020,SK Rapid,Sturm Graz,4,0,H,2.03,3.77,3.67
+09/06/2020,St. Polten,Admira,0,3,A,2.47,3.32,3.08
+09/06/2020,Tirol,Mattersburg,1,1,D,2.19,3.7,3.29
+09/06/2020,Austria Vienna,Altach,0,2,A,2.08,3.69,3.57
+10/06/2020,LASK,SK Rapid,0,1,A,1.8,4.24,4.13
+10/06/2020,Wolfsberger AC,Hartberg,2,4,A,1.4,5.47,7.1
+10/06/2020,Sturm Graz,Salzburg,1,5,A,9.03,6.02,1.32
+13/06/2020,Admira,Tirol,0,3,A,2.19,3.56,3.4
+13/06/2020,Altach,St. Polten,2,0,H,1.93,3.87,3.89
+13/06/2020,Mattersburg,Austria Vienna,1,4,A,3.23,3.67,2.23
+14/06/2020,Hartberg,Sturm Graz,1,2,A,2.95,3.87,2.31
+14/06/2020,SK Rapid,Wolfsberger AC,2,1,H,2.24,3.95,3.01
+14/06/2020,Salzburg,LASK,3,1,H,1.45,5.13,6.68
+16/06/2020,Admira,Altach,1,1,D,3.31,3.4,2.3
+16/06/2020,St. Polten,Mattersburg,1,0,H,2.41,3.5,3.03
+16/06/2020,Austria Vienna,Tirol,1,0,H,1.89,4.07,3.87
+17/06/2020,Hartberg,SK Rapid,0,1,A,7.19,5.48,1.4
+17/06/2020,Wolfsberger AC,Salzburg,0,0,D,8.01,5.98,1.34
+17/06/2020,LASK,Sturm Graz,4,0,H,1.57,4.64,5.45
+20/06/2020,Altach,Admira,1,1,D,1.88,3.72,4.33
+20/06/2020,Mattersburg,St. Polten,2,0,H,2.75,3.44,2.66
+20/06/2020,Tirol,Austria Vienna,1,2,A,3.12,3.66,2.29
+21/06/2020,SK Rapid,Hartberg,0,1,A,1.41,5.27,7.24
+21/06/2020,Salzburg,Wolfsberger AC,2,2,D,1.16,8.79,15.88
+21/06/2020,Sturm Graz,LASK,0,2,A,4.55,3.84,1.81
+23/06/2020,Admira,Austria Vienna,0,2,A,3.63,3.69,2.06
+23/06/2020,Altach,Mattersburg,1,1,D,1.96,3.69,3.98
+23/06/2020,St. Polten,Tirol,1,1,D,2.43,3.63,2.9
+24/06/2020,Hartberg,LASK,1,5,A,8.39,5.88,1.34
+24/06/2020,Wolfsberger AC,Sturm Graz,2,0,H,1.96,4.05,3.62
+24/06/2020,SK Rapid,Salzburg,2,7,A,7.3,5.38,1.4
+27/06/2020,Austria Vienna,St. Polten,2,5,A,2.05,3.71,3.64
+27/06/2020,Mattersburg,Admira,1,2,A,2.88,3.47,2.53
+27/06/2020,Tirol,Altach,0,1,A,3.11,3.58,2.33
+28/06/2020,LASK,Wolfsberger AC,0,1,A,1.8,4.17,4.2
+28/06/2020,Salzburg,Hartberg,3,0,H,1.06,15.98,33.57
+28/06/2020,Sturm Graz,SK Rapid,2,3,A,3.91,3.86,1.93
+30/06/2020,Admira,St. Polten,0,3,A,2.6,3.11,3.1
+30/06/2020,Altach,Austria Vienna,1,2,A,2.2,3.78,3.2
+30/06/2020,Mattersburg,Tirol,4,1,H,2.61,3.57,2.72
+01/07/2020,SK Rapid,LASK,3,1,H,3.12,3.68,2.28
+01/07/2020,Salzburg,Sturm Graz,5,2,H,1.15,11.12,11.64
+02/07/2020,Hartberg,Wolfsberger AC,3,3,D,5.03,4.79,1.6
+04/07/2020,Austria Vienna,Mattersburg,1,0,H,1.65,4.54,4.63
+04/07/2020,St. Polten,Altach,2,0,H,2.99,3.76,2.27
+04/07/2020,Tirol,Admira,0,0,D,2.82,3.38,2.57
+05/07/2020,LASK,Salzburg,0,3,A,4.36,4.95,1.64
+05/07/2020,Sturm Graz,Hartberg,1,4,A,2.19,4.11,2.94
+05/07/2020,Wolfsberger AC,SK Rapid,3,1,H,1.78,4.4,3.96
+08/07/2020,Austria Vienna,Altach,1,0,H,2.28,3.58,3.11
+11/07/2020,Austria Vienna,Hartberg,2,3,A,1.87,4.16,3.81
+15/07/2020,Hartberg,Austria Vienna,0,0,D,2.86,4.2,2.21

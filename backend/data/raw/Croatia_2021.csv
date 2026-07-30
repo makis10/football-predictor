@@ -1,0 +1,181 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2021-07-16,Dinamo Zagreb,NK Slaven Belupo,0,2,A
+2021-07-16,NK Osijek,Sibenik,3,0,H
+2021-07-17,NK Lokomotiva Zagreb,HNK Hajduk Split,2,2,D
+2021-07-17,HNK Rijeka,HNK Gorica,2,0,H
+2021-07-18,Istra 1961,Hrvatski Dragovoljac,3,1,H
+2021-07-23,Hrvatski Dragovoljac,Dinamo Zagreb,0,4,A
+2021-07-24,NK Slaven Belupo,NK Lokomotiva Zagreb,1,2,A
+2021-07-24,HNK Gorica,Sibenik,3,1,H
+2021-07-25,HNK Rijeka,Istra 1961,2,0,H
+2021-07-25,HNK Hajduk Split,NK Osijek,1,2,A
+2021-07-30,NK Lokomotiva Zagreb,Hrvatski Dragovoljac,3,2,H
+2021-07-31,Istra 1961,HNK Gorica,1,2,A
+2021-08-01,HNK Hajduk Split,Sibenik,1,0,H
+2021-08-01,NK Osijek,NK Slaven Belupo,0,0,D
+2021-08-01,Dinamo Zagreb,HNK Rijeka,3,3,D
+2021-08-07,NK Slaven Belupo,Sibenik,1,1,D
+2021-08-07,HNK Gorica,HNK Hajduk Split,1,3,A
+2021-08-08,Hrvatski Dragovoljac,NK Osijek,1,2,A
+2021-08-13,Dinamo Zagreb,HNK Gorica,1,0,H
+2021-08-14,NK Lokomotiva Zagreb,Istra 1961,4,0,H
+2021-08-14,HNK Hajduk Split,NK Slaven Belupo,2,0,H
+2021-08-15,Sibenik,Hrvatski Dragovoljac,6,2,H
+2021-08-15,NK Osijek,HNK Rijeka,1,0,H
+2021-08-20,Hrvatski Dragovoljac,HNK Hajduk Split,0,1,A
+2021-08-21,HNK Gorica,NK Slaven Belupo,1,0,H
+2021-08-21,Dinamo Zagreb,NK Lokomotiva Zagreb,1,0,H
+2021-08-22,Istra 1961,NK Osijek,2,0,H
+2021-08-22,HNK Rijeka,Sibenik,2,1,H
+2021-08-27,NK Slaven Belupo,Hrvatski Dragovoljac,0,1,A
+2021-08-28,NK Lokomotiva Zagreb,HNK Gorica,0,1,A
+2021-08-28,Sibenik,Istra 1961,3,1,H
+2021-08-29,NK Osijek,Dinamo Zagreb,0,2,A
+2021-08-29,HNK Hajduk Split,HNK Rijeka,1,2,A
+2021-09-10,HNK Gorica,Hrvatski Dragovoljac,1,1,D
+2021-09-11,Dinamo Zagreb,Sibenik,2,0,H
+2021-09-11,HNK Rijeka,NK Slaven Belupo,2,1,H
+2021-09-12,Istra 1961,HNK Hajduk Split,1,3,A
+2021-09-12,NK Lokomotiva Zagreb,NK Osijek,1,1,D
+2021-09-17,Hrvatski Dragovoljac,HNK Rijeka,2,2,D
+2021-09-18,NK Slaven Belupo,Istra 1961,1,1,D
+2021-09-18,Sibenik,NK Lokomotiva Zagreb,2,1,H
+2021-09-19,NK Osijek,HNK Gorica,3,2,H
+2021-09-25,NK Slaven Belupo,Dinamo Zagreb,1,4,A
+2021-09-25,Sibenik,NK Osijek,0,2,A
+2021-09-26,HNK Gorica,HNK Rijeka,3,4,A
+2021-09-26,HNK Hajduk Split,NK Lokomotiva Zagreb,1,0,H
+2021-09-27,Hrvatski Dragovoljac,Istra 1961,0,1,A
+2021-10-01,Sibenik,HNK Gorica,1,2,A
+2021-10-02,NK Lokomotiva Zagreb,NK Slaven Belupo,3,0,H
+2021-10-02,Istra 1961,HNK Rijeka,3,6,A
+2021-10-03,Dinamo Zagreb,Hrvatski Dragovoljac,8,0,H
+2021-10-03,NK Osijek,HNK Hajduk Split,1,1,D
+2021-10-15,Hrvatski Dragovoljac,NK Lokomotiva Zagreb,2,2,D
+2021-10-16,HNK Gorica,Istra 1961,1,1,D
+2021-10-16,HNK Rijeka,Dinamo Zagreb,3,3,D
+2021-10-17,NK Slaven Belupo,NK Osijek,0,2,A
+2021-10-17,Sibenik,HNK Hajduk Split,2,0,H
+2021-10-20,HNK Rijeka,NK Lokomotiva Zagreb,1,2,A
+2021-10-22,Sibenik,NK Slaven Belupo,1,1,D
+2021-10-23,NK Osijek,Hrvatski Dragovoljac,1,0,H
+2021-10-23,HNK Hajduk Split,HNK Gorica,0,0,D
+2021-10-24,Dinamo Zagreb,Istra 1961,1,1,D
+2021-10-24,NK Lokomotiva Zagreb,HNK Rijeka,0,2,A
+2021-10-30,Hrvatski Dragovoljac,Sibenik,1,1,D
+2021-10-30,HNK Gorica,Dinamo Zagreb,0,2,A
+2021-10-31,NK Slaven Belupo,HNK Hajduk Split,3,2,H
+2021-11-01,Istra 1961,NK Lokomotiva Zagreb,2,1,H
+2021-11-05,NK Slaven Belupo,HNK Gorica,1,2,A
+2021-11-06,NK Osijek,Istra 1961,3,0,H
+2021-11-06,HNK Hajduk Split,Hrvatski Dragovoljac,2,0,H
+2021-11-07,NK Lokomotiva Zagreb,Dinamo Zagreb,1,0,H
+2021-11-07,Sibenik,HNK Rijeka,0,1,A
+2021-11-19,Hrvatski Dragovoljac,NK Slaven Belupo,1,2,A
+2021-11-20,Dinamo Zagreb,NK Osijek,1,1,D
+2021-11-20,Istra 1961,Sibenik,3,4,A
+2021-11-21,HNK Gorica,NK Lokomotiva Zagreb,2,2,D
+2021-11-21,HNK Rijeka,HNK Hajduk Split,2,3,A
+2021-11-26,NK Osijek,NK Lokomotiva Zagreb,3,1,H
+2021-11-26,HNK Hajduk Split,Istra 1961,4,0,H
+2021-11-27,Hrvatski Dragovoljac,HNK Gorica,0,1,A
+2021-11-27,NK Slaven Belupo,HNK Rijeka,1,2,A
+2021-11-28,Sibenik,Dinamo Zagreb,1,2,A
+2021-12-04,HNK Gorica,NK Osijek,1,1,D
+2021-12-04,HNK Rijeka,Hrvatski Dragovoljac,4,1,H
+2021-12-05,NK Lokomotiva Zagreb,Sibenik,1,1,D
+2021-12-05,Dinamo Zagreb,HNK Hajduk Split,0,2,A
+2021-12-06,Istra 1961,NK Slaven Belupo,1,2,A
+2021-12-08,HNK Rijeka,NK Osijek,0,0,D
+2021-12-10,Istra 1961,Hrvatski Dragovoljac,3,0,H
+2021-12-11,NK Lokomotiva Zagreb,HNK Hajduk Split,3,3,D
+2021-12-11,HNK Rijeka,HNK Gorica,1,2,A
+2021-12-12,NK Osijek,Sibenik,3,1,H
+2021-12-12,Dinamo Zagreb,NK Slaven Belupo,3,0,H
+2021-12-15,Istra 1961,Dinamo Zagreb,0,2,A
+2021-12-17,NK Slaven Belupo,NK Lokomotiva Zagreb,2,1,H
+2021-12-18,HNK Gorica,Sibenik,2,3,A
+2021-12-18,HNK Rijeka,Istra 1961,1,0,H
+2021-12-19,Hrvatski Dragovoljac,Dinamo Zagreb,0,2,A
+2021-12-19,HNK Hajduk Split,NK Osijek,0,0,D
+2022-01-28,Istra 1961,HNK Gorica,2,1,H
+2022-01-29,NK Osijek,NK Slaven Belupo,1,2,A
+2022-01-29,Sibenik,HNK Hajduk Split,1,3,A
+2022-01-30,NK Lokomotiva Zagreb,Hrvatski Dragovoljac,2,1,H
+2022-01-30,Dinamo Zagreb,HNK Rijeka,2,0,H
+2022-02-04,NK Slaven Belupo,Sibenik,1,1,D
+2022-02-05,HNK Gorica,HNK Hajduk Split,0,4,A
+2022-02-05,HNK Rijeka,NK Lokomotiva Zagreb,3,2,H
+2022-02-06,Hrvatski Dragovoljac,NK Osijek,1,3,A
+2022-02-06,Istra 1961,Dinamo Zagreb,1,2,A
+2022-02-11,Sibenik,Hrvatski Dragovoljac,0,5,A
+2022-02-12,NK Lokomotiva Zagreb,Istra 1961,1,1,D
+2022-02-12,Dinamo Zagreb,HNK Gorica,2,1,H
+2022-02-13,HNK Hajduk Split,NK Slaven Belupo,3,1,H
+2022-02-13,NK Osijek,HNK Rijeka,1,0,H
+2022-02-18,HNK Gorica,NK Slaven Belupo,0,3,A
+2022-02-19,Hrvatski Dragovoljac,HNK Hajduk Split,0,3,A
+2022-02-19,Istra 1961,NK Osijek,2,3,A
+2022-02-20,HNK Rijeka,Sibenik,4,2,H
+2022-02-20,Dinamo Zagreb,NK Lokomotiva Zagreb,0,0,D
+2022-02-25,NK Slaven Belupo,Hrvatski Dragovoljac,1,0,H
+2022-02-26,NK Lokomotiva Zagreb,HNK Gorica,2,0,H
+2022-02-26,HNK Hajduk Split,HNK Rijeka,1,3,A
+2022-02-27,Sibenik,Istra 1961,2,1,H
+2022-02-27,NK Osijek,Dinamo Zagreb,1,0,H
+2022-03-04,NK Lokomotiva Zagreb,NK Osijek,0,0,D
+2022-03-05,Dinamo Zagreb,Sibenik,3,0,H
+2022-03-05,HNK Rijeka,NK Slaven Belupo,3,0,H
+2022-03-06,HNK Gorica,Hrvatski Dragovoljac,4,0,H
+2022-03-06,Istra 1961,HNK Hajduk Split,1,1,D
+2022-03-11,Sibenik,NK Lokomotiva Zagreb,1,4,A
+2022-03-12,NK Slaven Belupo,Istra 1961,0,0,D
+2022-03-12,HNK Hajduk Split,Dinamo Zagreb,0,0,D
+2022-03-13,Hrvatski Dragovoljac,HNK Rijeka,2,1,H
+2022-03-13,NK Osijek,HNK Gorica,0,0,D
+2022-03-18,Hrvatski Dragovoljac,Istra 1961,0,0,D
+2022-03-19,HNK Gorica,HNK Rijeka,1,0,H
+2022-03-19,HNK Hajduk Split,NK Lokomotiva Zagreb,4,0,H
+2022-03-20,NK Slaven Belupo,Dinamo Zagreb,0,1,A
+2022-03-20,Sibenik,NK Osijek,0,3,A
+2022-04-02,Sibenik,HNK Gorica,0,1,A
+2022-04-02,Istra 1961,HNK Rijeka,0,2,A
+2022-04-03,Dinamo Zagreb,Hrvatski Dragovoljac,2,0,H
+2022-04-03,NK Osijek,HNK Hajduk Split,0,0,D
+2022-04-04,NK Lokomotiva Zagreb,NK Slaven Belupo,3,1,H
+2022-04-08,HNK Gorica,Istra 1961,1,1,D
+2022-04-09,Hrvatski Dragovoljac,NK Lokomotiva Zagreb,1,1,D
+2022-04-09,HNK Hajduk Split,Sibenik,2,1,H
+2022-04-10,NK Slaven Belupo,NK Osijek,0,1,A
+2022-04-10,HNK Rijeka,Dinamo Zagreb,1,2,A
+2022-04-15,Dinamo Zagreb,Istra 1961,3,0,H
+2022-04-15,HNK Hajduk Split,HNK Gorica,1,0,H
+2022-04-16,Sibenik,NK Slaven Belupo,2,1,H
+2022-04-16,NK Osijek,Hrvatski Dragovoljac,2,1,H
+2022-04-16,NK Lokomotiva Zagreb,HNK Rijeka,2,1,H
+2022-04-20,HNK Hajduk Split,Dinamo Zagreb,1,0,H
+2022-04-22,Hrvatski Dragovoljac,Sibenik,3,1,H
+2022-04-23,Istra 1961,NK Lokomotiva Zagreb,2,2,D
+2022-04-23,HNK Rijeka,NK Osijek,3,1,H
+2022-04-24,NK Slaven Belupo,HNK Hajduk Split,0,0,D
+2022-04-24,HNK Gorica,Dinamo Zagreb,0,1,A
+2022-04-29,HNK Hajduk Split,Hrvatski Dragovoljac,2,1,H
+2022-04-30,NK Slaven Belupo,HNK Gorica,2,1,H
+2022-04-30,Sibenik,HNK Rijeka,3,5,A
+2022-05-01,NK Osijek,Istra 1961,2,2,D
+2022-05-01,NK Lokomotiva Zagreb,Dinamo Zagreb,1,1,D
+2022-05-06,Hrvatski Dragovoljac,NK Slaven Belupo,1,1,D
+2022-05-07,HNK Gorica,NK Lokomotiva Zagreb,3,3,D
+2022-05-07,Istra 1961,Sibenik,1,2,A
+2022-05-08,HNK Rijeka,HNK Hajduk Split,0,3,A
+2022-05-08,Dinamo Zagreb,NK Osijek,3,0,H
+2022-05-13,Hrvatski Dragovoljac,HNK Gorica,0,2,A
+2022-05-14,NK Slaven Belupo,HNK Rijeka,2,2,D
+2022-05-14,HNK Hajduk Split,Istra 1961,3,1,H
+2022-05-15,NK Osijek,NK Lokomotiva Zagreb,1,0,H
+2022-05-15,Sibenik,Dinamo Zagreb,0,2,A
+2022-05-20,Istra 1961,NK Slaven Belupo,3,1,H
+2022-05-20,NK Lokomotiva Zagreb,Sibenik,2,1,H
+2022-05-21,HNK Rijeka,Hrvatski Dragovoljac,1,0,H
+2022-05-21,HNK Gorica,NK Osijek,1,1,D
+2022-05-21,Dinamo Zagreb,HNK Hajduk Split,3,1,H

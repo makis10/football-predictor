@@ -1,0 +1,185 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2022-02-25,Dinamo Batumi,Sioni,4,0,H
+2022-02-25,Dinamo Tbilisi,Torpedo Kutaisi,4,0,H
+2022-02-26,Dila,Gagra,2,1,H
+2022-02-26,Lokomotivi Tbilisi,Telavi,0,1,A
+2022-02-27,Saburtalo,Samgurali,2,1,H
+2022-03-04,Gagra,Saburtalo,1,0,H
+2022-03-04,Torpedo Kutaisi,Dila,1,0,H
+2022-03-04,Dinamo Batumi,Dinamo Tbilisi,3,0,H
+2022-03-05,Sioni,Telavi,0,2,A
+2022-03-05,Samgurali,Lokomotivi Tbilisi,3,1,H
+2022-03-08,Dila,Dinamo Batumi,2,1,H
+2022-03-08,Saburtalo,Torpedo Kutaisi,2,0,H
+2022-03-09,Dinamo Tbilisi,Sioni,1,0,H
+2022-03-09,Lokomotivi Tbilisi,Gagra,0,2,A
+2022-03-13,Dinamo Batumi,Saburtalo,2,2,D
+2022-03-14,Samgurali,Sioni,1,1,D
+2022-03-15,Gagra,Telavi,2,2,D
+2022-03-18,Lokomotivi Tbilisi,Dinamo Batumi,0,2,A
+2022-03-19,Dila,Sioni,2,1,H
+2022-04-02,Torpedo Kutaisi,Samgurali,0,2,A
+2022-04-02,Dinamo Batumi,Telavi,1,0,H
+2022-04-02,Dinamo Tbilisi,Lokomotivi Tbilisi,2,1,H
+2022-04-02,Dila,Saburtalo,1,0,H
+2022-04-03,Sioni,Gagra,2,1,H
+2022-04-06,Telavi,Samgurali,0,0,D
+2022-04-06,Dinamo Tbilisi,Dila,2,1,H
+2022-04-06,Torpedo Kutaisi,Lokomotivi Tbilisi,4,2,H
+2022-04-10,Gagra,Torpedo Kutaisi,0,2,A
+2022-04-10,Samgurali,Dinamo Batumi,0,3,A
+2022-04-10,Saburtalo,Sioni,3,3,D
+2022-04-10,Telavi,Dinamo Tbilisi,1,1,D
+2022-04-11,Lokomotivi Tbilisi,Dila,0,3,A
+2022-04-14,Samgurali,Gagra,1,1,D
+2022-04-14,Telavi,Torpedo Kutaisi,0,0,D
+2022-04-14,Saburtalo,Dinamo Tbilisi,1,1,D
+2022-04-18,Sioni,Torpedo Kutaisi,1,1,D
+2022-04-18,Dinamo Tbilisi,Samgurali,0,0,D
+2022-04-18,Dila,Telavi,2,1,H
+2022-04-18,Dinamo Batumi,Gagra,5,2,H
+2022-04-18,Saburtalo,Lokomotivi Tbilisi,3,1,H
+2022-04-23,Samgurali,Dila,0,0,D
+2022-04-23,Lokomotivi Tbilisi,Sioni,1,2,A
+2022-04-23,Gagra,Dinamo Tbilisi,1,0,H
+2022-04-23,Torpedo Kutaisi,Dinamo Batumi,0,3,A
+2022-04-23,Telavi,Saburtalo,0,2,A
+2022-04-29,Sioni,Dinamo Batumi,1,1,D
+2022-04-29,Gagra,Dila,1,0,H
+2022-04-29,Samgurali,Saburtalo,3,0,H
+2022-04-29,Telavi,Lokomotivi Tbilisi,5,0,H
+2022-04-29,Torpedo Kutaisi,Dinamo Tbilisi,0,3,A
+2022-05-03,Dinamo Tbilisi,Dinamo Batumi,0,0,D
+2022-05-03,Dila,Torpedo Kutaisi,2,0,H
+2022-05-03,Saburtalo,Gagra,3,0,H
+2022-05-03,Telavi,Sioni,2,0,H
+2022-05-04,Lokomotivi Tbilisi,Samgurali,0,2,A
+2022-05-08,Sioni,Dinamo Tbilisi,3,7,A
+2022-05-08,Torpedo Kutaisi,Saburtalo,0,1,A
+2022-05-08,Dinamo Batumi,Dila,3,0,H
+2022-05-09,Samgurali,Telavi,2,1,H
+2022-05-09,Gagra,Lokomotivi Tbilisi,5,3,H
+2022-05-12,Saburtalo,Dinamo Batumi,0,0,D
+2022-05-12,Dila,Dinamo Tbilisi,0,1,A
+2022-05-13,Sioni,Samgurali,0,2,A
+2022-05-13,Lokomotivi Tbilisi,Torpedo Kutaisi,0,3,A
+2022-05-13,Telavi,Gagra,1,0,H
+2022-05-16,Dinamo Tbilisi,Saburtalo,0,0,D
+2022-05-17,Sioni,Dila,0,0,D
+2022-05-17,Gagra,Samgurali,0,2,A
+2022-05-17,Torpedo Kutaisi,Telavi,1,1,D
+2022-05-17,Dinamo Batumi,Lokomotivi Tbilisi,7,2,H
+2022-05-21,Lokomotivi Tbilisi,Dinamo Tbilisi,0,2,A
+2022-05-21,Samgurali,Torpedo Kutaisi,3,0,H
+2022-05-21,Telavi,Dinamo Batumi,0,2,A
+2022-05-22,Saburtalo,Dila,0,2,A
+2022-05-22,Gagra,Sioni,1,2,A
+2022-05-25,Dinamo Tbilisi,Telavi,3,2,H
+2022-05-25,Dinamo Batumi,Samgurali,4,4,D
+2022-05-26,Torpedo Kutaisi,Gagra,1,0,H
+2022-05-27,Sioni,Saburtalo,1,0,H
+2022-05-27,Dila,Lokomotivi Tbilisi,4,1,H
+2022-06-15,Telavi,Dila,0,0,D
+2022-06-16,Lokomotivi Tbilisi,Saburtalo,2,1,H
+2022-06-16,Gagra,Dinamo Batumi,0,3,A
+2022-06-16,Samgurali,Dinamo Tbilisi,2,1,H
+2022-06-16,Torpedo Kutaisi,Sioni,3,0,H
+2022-06-20,Sioni,Lokomotivi Tbilisi,5,1,H
+2022-06-20,Dinamo Tbilisi,Gagra,5,0,H
+2022-06-20,Dila,Samgurali,1,0,H
+2022-06-21,Saburtalo,Telavi,1,0,H
+2022-06-21,Dinamo Batumi,Torpedo Kutaisi,4,0,H
+2022-06-24,Dila,Gagra,1,1,D
+2022-06-25,Dinamo Batumi,Sioni,3,0,H
+2022-06-25,Saburtalo,Samgurali,3,1,H
+2022-06-25,Dinamo Tbilisi,Torpedo Kutaisi,5,1,H
+2022-06-26,Lokomotivi Tbilisi,Telavi,0,2,A
+2022-06-29,Torpedo Kutaisi,Dila,4,1,H
+2022-06-29,Gagra,Saburtalo,3,3,D
+2022-06-29,Dinamo Batumi,Dinamo Tbilisi,4,1,H
+2022-07-02,Sioni,Telavi,0,0,D
+2022-07-02,Samgurali,Lokomotivi Tbilisi,4,1,H
+2022-08-13,Telavi,Samgurali,1,1,D
+2022-08-13,Dinamo Tbilisi,Sioni,3,1,H
+2022-08-14,Lokomotivi Tbilisi,Gagra,0,2,A
+2022-08-14,Dila,Dinamo Batumi,0,1,A
+2022-08-15,Saburtalo,Torpedo Kutaisi,2,4,A
+2022-08-20,Sioni,Samgurali,0,0,D
+2022-08-20,Dinamo Tbilisi,Dila,3,0,H
+2022-08-21,Torpedo Kutaisi,Lokomotivi Tbilisi,3,1,H
+2022-08-21,Gagra,Telavi,1,1,D
+2022-08-21,Dinamo Batumi,Saburtalo,3,2,H
+2022-08-25,Dila,Sioni,1,2,A
+2022-08-26,Saburtalo,Dinamo Tbilisi,1,2,A
+2022-08-27,Samgurali,Gagra,2,2,D
+2022-08-27,Lokomotivi Tbilisi,Dinamo Batumi,1,1,D
+2022-08-27,Telavi,Torpedo Kutaisi,1,1,D
+2022-08-30,Dila,Saburtalo,3,0,H
+2022-09-01,Torpedo Kutaisi,Samgurali,3,2,H
+2022-09-01,Sioni,Gagra,0,0,D
+2022-09-01,Dinamo Batumi,Telavi,4,0,H
+2022-09-01,Dinamo Tbilisi,Lokomotivi Tbilisi,5,0,H
+2022-09-05,Lokomotivi Tbilisi,Dila,2,2,D
+2022-09-05,Saburtalo,Sioni,1,1,D
+2022-09-05,Telavi,Dinamo Tbilisi,1,2,A
+2022-09-06,Samgurali,Dinamo Batumi,3,0,H
+2022-09-06,Gagra,Torpedo Kutaisi,0,2,A
+2022-09-09,Dila,Telavi,0,0,D
+2022-09-10,Sioni,Torpedo Kutaisi,0,3,A
+2022-09-10,Dinamo Tbilisi,Samgurali,3,0,H
+2022-09-10,Saburtalo,Lokomotivi Tbilisi,5,1,H
+2022-09-10,Dinamo Batumi,Gagra,2,0,H
+2022-09-17,Samgurali,Dila,0,3,A
+2022-09-18,Torpedo Kutaisi,Dinamo Batumi,1,0,H
+2022-09-18,Lokomotivi Tbilisi,Sioni,2,2,D
+2022-09-18,Gagra,Dinamo Tbilisi,0,1,A
+2022-09-18,Telavi,Saburtalo,0,3,A
+2022-10-01,Gagra,Dila,0,0,D
+2022-10-01,Samgurali,Saburtalo,0,3,A
+2022-10-01,Telavi,Lokomotivi Tbilisi,0,0,D
+2022-10-02,Torpedo Kutaisi,Dinamo Tbilisi,0,0,D
+2022-10-02,Sioni,Dinamo Batumi,1,1,D
+2022-10-07,Dila,Torpedo Kutaisi,2,1,H
+2022-10-07,Dinamo Tbilisi,Dinamo Batumi,1,0,H
+2022-10-08,Saburtalo,Gagra,2,1,H
+2022-10-09,Lokomotivi Tbilisi,Samgurali,1,4,A
+2022-10-09,Telavi,Sioni,0,0,D
+2022-10-15,Gagra,Lokomotivi Tbilisi,2,0,H
+2022-10-15,Samgurali,Telavi,2,0,H
+2022-10-16,Torpedo Kutaisi,Saburtalo,1,1,D
+2022-10-16,Sioni,Dinamo Tbilisi,0,2,A
+2022-10-16,Dinamo Batumi,Dila,3,2,H
+2022-10-21,Saburtalo,Dinamo Batumi,2,4,A
+2022-10-22,Lokomotivi Tbilisi,Torpedo Kutaisi,0,0,D
+2022-10-22,Dila,Dinamo Tbilisi,2,3,A
+2022-10-23,Samgurali,Sioni,2,1,H
+2022-10-23,Telavi,Gagra,1,0,H
+2022-10-29,Torpedo Kutaisi,Telavi,1,0,H
+2022-10-29,Dinamo Tbilisi,Saburtalo,3,1,H
+2022-10-29,Dinamo Batumi,Lokomotivi Tbilisi,4,2,H
+2022-10-30,Sioni,Dila,1,2,A
+2022-10-30,Gagra,Samgurali,1,1,D
+2022-11-04,Gagra,Sioni,2,1,H
+2022-11-05,Telavi,Dinamo Batumi,0,2,A
+2022-11-06,Lokomotivi Tbilisi,Dinamo Tbilisi,0,2,A
+2022-11-06,Samgurali,Torpedo Kutaisi,2,2,D
+2022-11-06,Saburtalo,Dila,0,2,A
+2022-11-10,Dinamo Tbilisi,Telavi,1,1,D
+2022-11-11,Torpedo Kutaisi,Gagra,0,1,A
+2022-11-11,Sioni,Saburtalo,1,0,H
+2022-11-12,Dila,Lokomotivi Tbilisi,1,0,H
+2022-11-12,Dinamo Batumi,Samgurali,1,2,A
+2022-11-26,Torpedo Kutaisi,Sioni,3,0,H
+2022-11-26,Lokomotivi Tbilisi,Saburtalo,0,1,A
+2022-11-26,Gagra,Dinamo Batumi,1,4,A
+2022-11-26,Telavi,Dila,1,1,D
+2022-11-26,Samgurali,Dinamo Tbilisi,1,1,D
+2022-12-03,Dinamo Batumi,Torpedo Kutaisi,2,2,D
+2022-12-03,Dinamo Tbilisi,Gagra,2,1,H
+2022-12-03,Saburtalo,Telavi,0,1,A
+2022-12-03,Sioni,Lokomotivi Tbilisi,5,2,H
+2022-12-03,Dila,Samgurali,3,0,H
+2022-12-07,Samtredia,Sioni,1,0,H
+2022-12-08,Gagra,Spaeri,2,0,H
+2022-12-11,Sioni,Samtredia,0,2,A
+2022-12-12,Spaeri,Gagra,3,1,H

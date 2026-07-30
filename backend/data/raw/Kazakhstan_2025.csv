@@ -1,0 +1,183 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2025-03-01,Atyrau,Yelimay Semey,2,1,H
+2025-03-01,Ordabasy,Aktobe,0,0,D
+2025-03-01,FK Tobol Kostanay,Ulytau,2,0,H
+2025-03-02,Kaisar,Zhenys,0,0,D
+2025-03-02,Turan Turkistan,Okzhetpes,2,0,H
+2025-03-02,Kyzyl-Zhar,Zhetysu,1,1,D
+2025-03-02,FC Astana,Kairat Almaty,1,1,D
+2025-03-08,Okzhetpes,Atyrau,2,1,H
+2025-03-08,Zhetysu,Ulytau,0,0,D
+2025-03-08,Zhenys,FK Tobol Kostanay,0,0,D
+2025-03-08,Kairat Almaty,Ordabasy,4,0,H
+2025-03-09,Aktobe,Turan Turkistan,2,1,H
+2025-03-09,Yelimay Semey,Kaisar,2,0,H
+2025-03-09,Kyzyl-Zhar,FC Astana,0,2,A
+2025-03-29,Kaisar,Okzhetpes,2,2,D
+2025-03-29,Turan Turkistan,Kairat Almaty,1,2,A
+2025-03-30,Atyrau,Aktobe,0,4,A
+2025-03-30,FC Astana,Zhetysu,3,0,H
+2025-03-30,Ulytau,Zhenys,1,1,D
+2025-03-30,Ordabasy,Kyzyl-Zhar,0,0,D
+2025-03-30,FK Tobol Kostanay,Yelimay Semey,1,1,D
+2025-04-05,Okzhetpes,FK Tobol Kostanay,0,1,A
+2025-04-05,Zhetysu,Zhenys,0,0,D
+2025-04-05,FC Astana,Ordabasy,2,1,H
+2025-04-05,Kyzyl-Zhar,Turan Turkistan,2,3,A
+2025-04-06,Atyrau,Kairat Almaty,1,4,A
+2025-04-06,Aktobe,Kaisar,4,1,H
+2025-04-06,Yelimay Semey,Ulytau,3,0,H
+2025-04-16,Kairat Almaty,Atyrau,4,0,H
+2025-04-19,Ulytau,Okzhetpes,0,1,A
+2025-04-19,Ordabasy,Zhetysu,1,0,H
+2025-04-19,Atyrau,Kyzyl-Zhar,1,2,A
+2025-04-19,FK Tobol Kostanay,Aktobe,2,0,H
+2025-04-20,Kaisar,Kairat Almaty,0,0,D
+2025-04-20,Turan Turkistan,FC Astana,1,1,D
+2025-04-20,Zhenys,Yelimay Semey,0,1,A
+2025-04-26,Okzhetpes,Zhenys,1,1,D
+2025-04-26,Zhetysu,Yelimay Semey,0,3,A
+2025-04-26,FC Astana,Atyrau,2,1,H
+2025-04-26,Aktobe,Ulytau,1,0,H
+2025-04-27,Kyzyl-Zhar,Kaisar,2,1,H
+2025-04-27,Ordabasy,Turan Turkistan,1,0,H
+2025-04-27,Kairat Almaty,FK Tobol Kostanay,2,1,H
+2025-04-30,Atyrau,FC Astana,0,2,A
+2025-05-03,Zhenys,Aktobe,0,1,A
+2025-05-03,Ulytau,Kairat Almaty,1,4,A
+2025-05-03,Atyrau,Ordabasy,1,2,A
+2025-05-03,Turan Turkistan,Zhetysu,0,0,D
+2025-05-04,Kaisar,FC Astana,1,1,D
+2025-05-04,Yelimay Semey,Okzhetpes,0,2,A
+2025-05-04,FK Tobol Kostanay,Kyzyl-Zhar,2,1,H
+2025-05-09,Zhenys,Kairat Almaty,1,2,A
+2025-05-10,Kyzyl-Zhar,Ulytau,2,1,H
+2025-05-10,Turan Turkistan,Atyrau,1,0,H
+2025-05-10,FC Astana,FK Tobol Kostanay,1,3,A
+2025-05-11,Zhetysu,Okzhetpes,1,3,A
+2025-05-11,Ordabasy,Kaisar,5,0,H
+2025-05-11,Aktobe,Yelimay Semey,1,0,H
+2025-05-14,Kaisar,Aktobe,1,2,A
+2025-05-17,Okzhetpes,Aktobe,1,3,A
+2025-05-17,Atyrau,Zhetysu,1,1,D
+2025-05-18,Ulytau,FC Astana,0,2,A
+2025-05-18,Kaisar,Turan Turkistan,1,0,H
+2025-05-18,Zhenys,Kyzyl-Zhar,0,0,D
+2025-05-18,Yelimay Semey,Kairat Almaty,1,0,H
+2025-05-24,Kairat Almaty,Okzhetpes,1,2,A
+2025-05-24,FC Astana,Zhenys,4,2,H
+2025-05-24,Ordabasy,Ulytau,0,1,A
+2025-05-25,Zhetysu,Aktobe,2,1,H
+2025-05-25,Kyzyl-Zhar,Yelimay Semey,1,1,D
+2025-05-25,Atyrau,Kaisar,1,2,A
+2025-05-25,Turan Turkistan,FK Tobol Kostanay,1,2,A
+2025-05-30,Zhenys,Ordabasy,2,2,D
+2025-05-30,Yelimay Semey,FC Astana,0,2,A
+2025-05-30,FK Tobol Kostanay,Atyrau,5,0,H
+2025-05-30,Aktobe,Kairat Almaty,1,2,A
+2025-05-31,Okzhetpes,Kyzyl-Zhar,3,2,H
+2025-05-31,Ulytau,Turan Turkistan,2,1,H
+2025-05-31,Kaisar,Zhetysu,2,2,D
+2025-06-14,Kyzyl-Zhar,Aktobe,1,1,D
+2025-06-14,Zhetysu,Kairat Almaty,2,2,D
+2025-06-14,Atyrau,Ulytau,0,1,A
+2025-06-14,Turan Turkistan,Zhenys,0,2,A
+2025-06-15,FC Astana,Okzhetpes,5,2,H
+2025-06-15,Ordabasy,Yelimay Semey,1,1,D
+2025-06-15,Kaisar,FK Tobol Kostanay,1,1,D
+2025-06-21,Kairat Almaty,Kyzyl-Zhar,1,0,H
+2025-06-21,Zhenys,Atyrau,2,0,H
+2025-06-21,FK Tobol Kostanay,Zhetysu,2,1,H
+2025-06-21,Yelimay Semey,Turan Turkistan,2,1,H
+2025-06-21,Okzhetpes,Ordabasy,0,1,A
+2025-06-22,Kaisar,Ulytau,1,1,D
+2025-06-22,Aktobe,FC Astana,0,1,A
+2025-06-28,Ulytau,Zhetysu,1,2,A
+2025-06-28,Atyrau,Okzhetpes,0,0,D
+2025-06-29,FK Tobol Kostanay,Zhenys,2,2,D
+2025-06-29,Turan Turkistan,Aktobe,0,3,A
+2025-06-29,FC Astana,Kyzyl-Zhar,3,3,D
+2025-06-29,Ordabasy,Kairat Almaty,0,1,A
+2025-06-29,Kaisar,Yelimay Semey,1,2,A
+2025-07-04,Kairat Almaty,Turan Turkistan,4,0,H
+2025-07-05,Kyzyl-Zhar,Ordabasy,0,0,D
+2025-07-05,Zhenys,Ulytau,2,0,H
+2025-07-05,Aktobe,Atyrau,2,0,H
+2025-07-05,Yelimay Semey,FK Tobol Kostanay,2,3,A
+2025-07-06,Zhetysu,FC Astana,0,2,A
+2025-07-06,Okzhetpes,Kaisar,4,2,H
+2025-07-12,Ulytau,Yelimay Semey,1,1,D
+2025-07-12,Turan Turkistan,Kyzyl-Zhar,1,2,A
+2025-07-13,FK Tobol Kostanay,Okzhetpes,2,1,H
+2025-07-13,Zhenys,Zhetysu,3,1,H
+2025-07-13,Ordabasy,FC Astana,1,0,H
+2025-07-18,FC Astana,Turan Turkistan,7,0,H
+2025-07-19,Kairat Almaty,Kaisar,1,1,D
+2025-07-19,Yelimay Semey,Zhenys,1,2,A
+2025-07-19,Okzhetpes,Ulytau,1,0,H
+2025-07-20,Kyzyl-Zhar,Atyrau,0,1,A
+2025-07-20,Zhetysu,Ordabasy,1,0,H
+2025-07-20,Aktobe,FK Tobol Kostanay,0,0,D
+2025-07-25,Zhenys,Okzhetpes,0,0,D
+2025-07-26,FK Tobol Kostanay,Kairat Almaty,1,3,A
+2025-07-26,Yelimay Semey,Zhetysu,3,0,H
+2025-07-26,Kaisar,Kyzyl-Zhar,1,0,H
+2025-07-27,Turan Turkistan,Ordabasy,0,4,A
+2025-08-02,Okzhetpes,Yelimay Semey,1,1,D
+2025-08-02,Kairat Almaty,Ulytau,1,0,H
+2025-08-02,Kyzyl-Zhar,FK Tobol Kostanay,0,2,A
+2025-08-03,Ordabasy,Atyrau,2,2,D
+2025-08-03,Zhetysu,Turan Turkistan,1,0,H
+2025-08-03,Aktobe,Zhenys,0,2,A
+2025-08-09,Okzhetpes,Zhetysu,1,2,A
+2025-08-09,Ulytau,Kyzyl-Zhar,1,1,D
+2025-08-09,Atyrau,Turan Turkistan,1,1,D
+2025-08-10,Yelimay Semey,Aktobe,2,1,H
+2025-08-10,Kaisar,Ordabasy,1,1,D
+2025-08-16,Kairat Almaty,Yelimay Semey,2,3,A
+2025-08-16,Kyzyl-Zhar,Zhenys,1,1,D
+2025-08-16,Turan Turkistan,Kaisar,1,0,H
+2025-08-17,FC Astana,Ulytau,4,0,H
+2025-08-17,Ordabasy,FK Tobol Kostanay,2,3,A
+2025-08-17,Zhetysu,Atyrau,0,0,D
+2025-08-17,Aktobe,Okzhetpes,2,1,H
+2025-08-23,FK Tobol Kostanay,Turan Turkistan,2,0,H
+2025-08-23,Yelimay Semey,Kyzyl-Zhar,2,0,H
+2025-08-23,Kaisar,Atyrau,0,0,D
+2025-08-23,Zhenys,FC Astana,3,2,H
+2025-08-24,Ulytau,Ordabasy,2,1,H
+2025-08-24,Aktobe,Zhetysu,3,2,H
+2025-08-28,FC Astana,Kaisar,5,1,H
+2025-08-31,Okzhetpes,Kairat Almaty,0,1,A
+2025-09-13,Kyzyl-Zhar,Okzhetpes,3,1,H
+2025-09-13,Atyrau,FK Tobol Kostanay,1,0,H
+2025-09-13,Ordabasy,Zhenys,2,1,H
+2025-09-13,Turan Turkistan,Ulytau,1,1,D
+2025-09-14,Kairat Almaty,Aktobe,1,0,H
+2025-09-14,FC Astana,Yelimay Semey,3,3,D
+2025-09-16,Zhetysu,Kaisar,1,1,D
+2025-09-19,FK Tobol Kostanay,FC Astana,2,3,A
+2025-09-20,Ulytau,Aktobe,2,1,H
+2025-09-22,Kairat Almaty,Zhenys,3,1,H
+2025-09-24,FK Tobol Kostanay,Ordabasy,1,0,H
+2025-09-27,Ulytau,Atyrau,1,5,A
+2025-09-27,Zhenys,Turan Turkistan,6,3,H
+2025-09-27,Aktobe,Kyzyl-Zhar,1,0,H
+2025-09-28,Okzhetpes,FC Astana,1,2,A
+2025-09-28,Yelimay Semey,Ordabasy,2,1,H
+2025-09-28,FK Tobol Kostanay,Kaisar,1,0,H
+2025-10-05,Kairat Almaty,Zhetysu,5,0,H
+2025-10-17,Kyzyl-Zhar,Kairat Almaty,0,1,A
+2025-10-18,Ulytau,Kaisar,1,1,D
+2025-10-18,Atyrau,Zhenys,1,1,D
+2025-10-18,Turan Turkistan,Yelimay Semey,3,6,A
+2025-10-19,Zhetysu,FK Tobol Kostanay,1,2,A
+2025-10-19,FC Astana,Aktobe,5,3,H
+2025-10-19,Ordabasy,Okzhetpes,7,1,H
+2025-10-26,Kairat Almaty,FC Astana,1,1,D
+2025-10-26,Okzhetpes,Turan Turkistan,4,3,H
+2025-10-26,Zhetysu,Kyzyl-Zhar,0,1,A
+2025-10-26,Aktobe,Ordabasy,2,2,D
+2025-10-26,Zhenys,Kaisar,2,2,D
+2025-10-26,Ulytau,FK Tobol Kostanay,2,2,D
+2025-10-26,Yelimay Semey,Atyrau,3,2,H

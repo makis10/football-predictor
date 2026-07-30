@@ -1,0 +1,181 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2015-03-06,FC Levadia Tallinn,FCI Tallinn,0,0,D
+2015-03-07,Kalju Nomme,Tammeka,3,0,H
+2015-03-07,Sillamae Kalev,Paide,4,1,H
+2015-03-07,Flora Tallinn,Tulevik,3,0,H
+2015-03-07,Trans Narva,Parnu,5,2,H
+2015-03-13,FCI Tallinn,Flora Tallinn,0,2,A
+2015-03-14,Paide,Kalju Nomme,0,3,A
+2015-03-14,Tulevik,Sillamae Kalev,0,2,A
+2015-03-14,Parnu,Tammeka,4,2,H
+2015-03-14,FC Levadia Tallinn,Trans Narva,1,1,D
+2015-03-20,Trans Narva,FCI Tallinn,0,0,D
+2015-03-21,Kalju Nomme,Tulevik,6,2,H
+2015-03-21,FC Levadia Tallinn,Tammeka,2,1,H
+2015-03-21,Parnu,Paide,2,2,D
+2015-03-21,Flora Tallinn,Sillamae Kalev,1,0,H
+2015-04-03,FC Levadia Tallinn,Paide,2,1,H
+2015-04-04,Tulevik,Parnu,5,2,H
+2015-04-04,Sillamae Kalev,Kalju Nomme,2,3,A
+2015-04-04,Trans Narva,Flora Tallinn,0,1,A
+2015-04-04,FCI Tallinn,Tammeka,2,2,D
+2015-04-10,FC Levadia Tallinn,Tulevik,2,0,H
+2015-04-10,Parnu,Sillamae Kalev,1,6,A
+2015-04-11,Paide,FCI Tallinn,2,4,A
+2015-04-11,Flora Tallinn,Kalju Nomme,0,2,A
+2015-04-11,Tammeka,Trans Narva,3,1,H
+2015-04-13,Sillamae Kalev,FC Levadia Tallinn,3,3,D
+2015-04-14,Kalju Nomme,Parnu,1,0,H
+2015-04-14,Trans Narva,Paide,0,0,D
+2015-04-14,Tammeka,Flora Tallinn,1,3,A
+2015-04-14,FCI Tallinn,Tulevik,2,0,H
+2015-04-17,FCI Tallinn,Sillamae Kalev,1,0,H
+2015-04-18,Flora Tallinn,Parnu,3,1,H
+2015-04-18,Tulevik,Trans Narva,1,1,D
+2015-04-18,FC Levadia Tallinn,Kalju Nomme,0,2,A
+2015-04-18,Paide,Tammeka,2,3,A
+2015-04-24,Tammeka,Tulevik,1,1,D
+2015-04-25,Paide,Flora Tallinn,0,2,A
+2015-04-25,Parnu,FC Levadia Tallinn,2,2,D
+2015-04-25,Kalju Nomme,FCI Tallinn,1,0,H
+2015-04-25,Trans Narva,Sillamae Kalev,1,2,A
+2015-04-30,Parnu,FCI Tallinn,0,2,A
+2015-05-01,Sillamae Kalev,Tammeka,4,0,H
+2015-05-02,Flora Tallinn,FC Levadia Tallinn,0,1,A
+2015-05-02,Kalju Nomme,Trans Narva,4,1,H
+2015-05-02,Paide,Tulevik,0,3,A
+2015-05-08,Trans Narva,Kalju Nomme,2,0,H
+2015-05-08,Tammeka,Sillamae Kalev,0,5,A
+2015-05-08,FCI Tallinn,Parnu,2,0,H
+2015-05-09,FC Levadia Tallinn,Flora Tallinn,1,1,D
+2015-05-09,Tulevik,Paide,2,0,H
+2015-05-15,Tulevik,Tammeka,3,1,H
+2015-05-15,Sillamae Kalev,Trans Narva,1,0,H
+2015-05-16,FC Levadia Tallinn,Parnu,3,0,H
+2015-05-16,FCI Tallinn,Kalju Nomme,1,0,H
+2015-05-16,Flora Tallinn,Paide,2,1,H
+2015-05-22,Trans Narva,Tulevik,2,0,H
+2015-05-22,Tammeka,Paide,3,2,H
+2015-05-22,Parnu,Flora Tallinn,1,2,A
+2015-05-23,Kalju Nomme,FC Levadia Tallinn,1,2,A
+2015-05-23,Sillamae Kalev,FCI Tallinn,0,0,D
+2015-05-25,Paide,Trans Narva,1,0,H
+2015-05-26,FC Levadia Tallinn,Sillamae Kalev,2,0,H
+2015-05-26,Tulevik,FCI Tallinn,0,0,D
+2015-05-26,Parnu,Kalju Nomme,0,3,A
+2015-05-26,Flora Tallinn,Tammeka,7,0,H
+2015-06-01,FC Levadia Tallinn,Tulevik,2,0,H
+2015-06-02,Kalju Nomme,Flora Tallinn,2,0,H
+2015-06-02,Trans Narva,Tammeka,6,0,H
+2015-06-02,Sillamae Kalev,Parnu,0,0,D
+2015-06-02,FCI Tallinn,Paide,2,3,A
+2015-06-05,Flora Tallinn,Trans Narva,0,1,A
+2015-06-05,Paide,FC Levadia Tallinn,1,5,A
+2015-06-05,Tammeka,FCI Tallinn,1,2,A
+2015-06-06,Parnu,Tulevik,2,1,H
+2015-06-06,Kalju Nomme,Sillamae Kalev,0,2,A
+2015-06-26,Tammeka,FC Levadia Tallinn,2,3,A
+2015-06-26,FCI Tallinn,Trans Narva,3,0,H
+2015-06-26,Tulevik,Kalju Nomme,1,0,H
+2015-06-27,Sillamae Kalev,Flora Tallinn,1,2,A
+2015-06-27,Paide,Parnu,4,1,H
+2015-07-03,Tammeka,Parnu,1,0,H
+2015-07-04,Trans Narva,FC Levadia Tallinn,1,3,A
+2015-07-05,Flora Tallinn,FCI Tallinn,1,0,H
+2015-07-06,Kalju Nomme,Paide,2,1,H
+2015-07-06,Sillamae Kalev,Tulevik,2,1,H
+2015-07-10,FCI Tallinn,FC Levadia Tallinn,1,2,A
+2015-07-11,Parnu,Trans Narva,0,1,A
+2015-07-13,Paide,Sillamae Kalev,1,1,D
+2015-07-13,Tammeka,Kalju Nomme,1,2,A
+2015-07-13,Tulevik,Flora Tallinn,0,4,A
+2015-07-17,Trans Narva,Tammeka,4,2,H
+2015-07-18,FCI Tallinn,FC Levadia Tallinn,2,2,D
+2015-07-20,Kalju Nomme,Tulevik,4,0,H
+2015-07-20,Sillamae Kalev,Parnu,3,3,D
+2015-07-20,Flora Tallinn,Paide,1,0,H
+2015-07-24,FCI Tallinn,Trans Narva,3,0,H
+2015-07-25,Paide,Parnu,3,3,D
+2015-07-27,Flora Tallinn,FC Levadia Tallinn,1,1,D
+2015-07-27,Tammeka,Kalju Nomme,0,3,A
+2015-07-27,Tulevik,Sillamae Kalev,1,2,A
+2015-07-31,Flora Tallinn,FCI Tallinn,0,0,D
+2015-07-31,Trans Narva,Kalju Nomme,0,2,A
+2015-07-31,Sillamae Kalev,Tammeka,4,1,H
+2015-08-01,Paide,Tulevik,4,1,H
+2015-08-01,Parnu,FC Levadia Tallinn,0,5,A
+2015-08-03,Sillamae Kalev,Flora Tallinn,0,1,A
+2015-08-04,Kalju Nomme,Parnu,4,3,H
+2015-08-04,Trans Narva,FC Levadia Tallinn,0,1,A
+2015-08-04,Paide,FCI Tallinn,0,2,A
+2015-08-07,Kalju Nomme,Sillamae Kalev,2,1,H
+2015-08-07,FCI Tallinn,Parnu,1,1,D
+2015-08-08,Tulevik,FC Levadia Tallinn,0,4,A
+2015-08-08,Tammeka,Paide,1,1,D
+2015-08-08,Flora Tallinn,Trans Narva,2,3,A
+2015-08-14,Paide,Kalju Nomme,5,4,H
+2015-08-14,Tulevik,FCI Tallinn,0,1,A
+2015-08-14,Parnu,Flora Tallinn,1,5,A
+2015-08-15,Tammeka,FC Levadia Tallinn,1,6,A
+2015-08-15,Trans Narva,Sillamae Kalev,0,0,D
+2015-08-17,Flora Tallinn,Tulevik,4,1,H
+2015-08-18,Kalju Nomme,FC Levadia Tallinn,0,0,D
+2015-08-18,Parnu,Trans Narva,2,2,D
+2015-08-18,Sillamae Kalev,Paide,1,0,H
+2015-08-18,FCI Tallinn,Tammeka,4,2,H
+2015-08-21,Tammeka,Flora Tallinn,1,4,A
+2015-08-21,FCI Tallinn,Kalju Nomme,2,2,D
+2015-08-22,Trans Narva,Paide,2,0,H
+2015-08-22,Tulevik,Parnu,1,2,A
+2015-08-22,FC Levadia Tallinn,Sillamae Kalev,2,1,H
+2015-08-28,Paide,FC Levadia Tallinn,2,4,A
+2015-08-28,Tulevik,Trans Narva,2,3,A
+2015-08-28,Parnu,Tammeka,0,1,A
+2015-08-29,Flora Tallinn,Kalju Nomme,1,0,H
+2015-08-29,Sillamae Kalev,FCI Tallinn,1,0,H
+2015-08-31,Tammeka,Tulevik,1,0,H
+2015-09-11,Tulevik,Tammeka,3,2,H
+2015-09-11,Parnu,Kalju Nomme,2,1,H
+2015-09-12,FC Levadia Tallinn,Trans Narva,0,1,A
+2015-09-12,Flora Tallinn,Sillamae Kalev,3,1,H
+2015-09-12,FCI Tallinn,Paide,1,0,H
+2015-09-14,Tammeka,Parnu,0,1,A
+2015-09-15,Kalju Nomme,Flora Tallinn,0,2,A
+2015-09-15,FC Levadia Tallinn,Paide,5,1,H
+2015-09-15,Trans Narva,Tulevik,2,0,H
+2015-09-15,FCI Tallinn,Sillamae Kalev,3,1,H
+2015-09-18,Flora Tallinn,Tammeka,2,1,H
+2015-09-18,Parnu,Tulevik,1,0,H
+2015-09-19,Kalju Nomme,FCI Tallinn,1,1,D
+2015-09-19,Paide,Trans Narva,1,2,A
+2015-09-19,Sillamae Kalev,FC Levadia Tallinn,2,2,D
+2015-09-25,Tammeka,FCI Tallinn,1,1,D
+2015-09-26,Paide,Sillamae Kalev,1,1,D
+2015-09-26,Tulevik,Flora Tallinn,0,1,A
+2015-09-26,FC Levadia Tallinn,Kalju Nomme,1,2,A
+2015-09-26,Trans Narva,Parnu,5,0,H
+2015-10-01,FCI Tallinn,Tulevik,2,1,H
+2015-10-02,Flora Tallinn,Parnu,4,0,H
+2015-10-03,Kalju Nomme,Paide,1,0,H
+2015-10-03,FC Levadia Tallinn,Tammeka,1,0,H
+2015-10-03,Sillamae Kalev,Trans Narva,2,0,H
+2015-10-17,Tulevik,FC Levadia Tallinn,0,3,A
+2015-10-17,Parnu,FCI Tallinn,0,4,A
+2015-10-17,Sillamae Kalev,Kalju Nomme,0,4,A
+2015-10-17,Trans Narva,Flora Tallinn,1,3,A
+2015-10-18,Paide,Tammeka,4,0,H
+2015-10-23,Tammeka,Sillamae Kalev,1,4,A
+2015-10-24,Kalju Nomme,Trans Narva,1,1,D
+2015-10-24,FC Levadia Tallinn,Parnu,0,0,D
+2015-10-24,Tulevik,Paide,2,3,A
+2015-10-24,FCI Tallinn,Flora Tallinn,0,1,A
+2015-10-30,Trans Narva,FCI Tallinn,0,1,A
+2015-10-31,FC Levadia Tallinn,Flora Tallinn,0,2,A
+2015-10-31,Parnu,Paide,0,1,A
+2015-11-01,Kalju Nomme,Tammeka,1,0,H
+2015-11-01,Sillamae Kalev,Tulevik,2,1,H
+2015-11-07,FC Levadia Tallinn,FCI Tallinn,5,0,H
+2015-11-07,Paide,Flora Tallinn,2,1,H
+2015-11-07,Tammeka,Trans Narva,2,1,H
+2015-11-07,Tulevik,Kalju Nomme,2,2,D
+2015-11-07,Parnu,Sillamae Kalev,1,2,A

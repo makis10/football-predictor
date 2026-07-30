@@ -1,0 +1,309 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2023-08-12,Pacos Ferreira,Uniao de Leiria,0,0,D
+2023-08-12,Nacional,Maritimo,1,2,A
+2023-08-12,AVS,CF Os Belenenses,1,0,H
+2023-08-13,Academico Viseu,Vilaverdense,1,1,D
+2023-08-13,FC Porto B,Tondela,1,1,D
+2023-08-13,Penafiel,Leixoes,3,0,H
+2023-08-13,Benfica B,Mafra,3,2,H
+2023-08-15,Oliveirense,Feirense,3,1,H
+2023-08-16,Santa Clara,Torreense,2,0,H
+2023-08-18,Maritimo,AVS,0,1,A
+2023-08-19,Mafra,Pacos Ferreira,2,1,H
+2023-08-19,Uniao de Leiria,Benfica B,3,1,H
+2023-08-19,Tondela,Academico Viseu,2,2,D
+2023-08-20,Vilaverdense,Oliveirense,1,2,A
+2023-08-20,CF Os Belenenses,FC Porto B,1,1,D
+2023-08-20,Feirense,Penafiel,2,0,H
+2023-08-21,Torreense,Nacional,3,0,H
+2023-08-21,Leixoes,Santa Clara,0,0,D
+2023-08-26,Academico Viseu,Feirense,2,0,H
+2023-08-26,Pacos Ferreira,Tondela,5,1,H
+2023-08-26,CF Os Belenenses,Mafra,1,1,D
+2023-08-27,Oliveirense,Penafiel,3,1,H
+2023-08-27,FC Porto B,Uniao de Leiria,2,1,H
+2023-08-27,Santa Clara,Vilaverdense,2,0,H
+2023-08-27,Benfica B,Maritimo,0,1,A
+2023-08-27,AVS,Torreense,0,0,D
+2023-08-28,Nacional,Leixoes,3,1,H
+2023-09-01,Tondela,CF Os Belenenses,0,1,A
+2023-09-02,Mafra,FC Porto B,2,1,H
+2023-09-02,Feirense,Santa Clara,0,2,A
+2023-09-02,Penafiel,Academico Viseu,0,0,D
+2023-09-02,Uniao de Leiria,AVS,1,2,A
+2023-09-02,Maritimo,Pacos Ferreira,2,0,H
+2023-09-03,Torreense,Oliveirense,3,1,H
+2023-09-03,Leixoes,Benfica B,1,1,D
+2023-09-03,Vilaverdense,Nacional,1,2,A
+2023-09-15,Pacos Ferreira,Leixoes,1,2,A
+2023-09-16,FC Porto B,Maritimo,0,2,A
+2023-09-16,AVS,Vilaverdense,2,0,H
+2023-09-16,Nacional,Feirense,1,0,H
+2023-09-16,Santa Clara,Penafiel,0,0,D
+2023-09-16,Tondela,Mafra,2,1,H
+2023-09-17,Oliveirense,Academico Viseu,2,2,D
+2023-09-17,CF Os Belenenses,Uniao de Leiria,0,5,A
+2023-09-17,Benfica B,Torreense,0,2,A
+2023-09-29,Vilaverdense,Benfica B,1,4,A
+2023-09-30,Oliveirense,Santa Clara,1,1,D
+2023-09-30,Maritimo,Mafra,1,2,A
+2023-10-01,Academico Viseu,AVS,1,2,A
+2023-10-01,Leixoes,FC Porto B,1,3,A
+2023-10-01,Feirense,Pacos Ferreira,1,0,H
+2023-10-01,Uniao de Leiria,Tondela,2,2,D
+2023-10-02,Penafiel,Nacional,1,4,A
+2023-10-02,Torreense,CF Os Belenenses,2,2,D
+2023-10-06,Santa Clara,Academico Viseu,2,0,H
+2023-10-07,Nacional,Oliveirense,5,0,H
+2023-10-07,Tondela,Leixoes,4,2,H
+2023-10-07,Pacos Ferreira,Vilaverdense,2,0,H
+2023-10-08,FC Porto B,Torreense,2,2,D
+2023-10-08,Mafra,Uniao de Leiria,3,0,H
+2023-10-08,CF Os Belenenses,Maritimo,1,2,A
+2023-10-08,Benfica B,Feirense,2,3,A
+2023-10-09,AVS,Penafiel,1,0,H
+2023-10-27,Penafiel,Mafra,1,0,H
+2023-10-28,Torreense,Pacos Ferreira,1,2,A
+2023-10-28,Leixoes,CF Os Belenenses,1,0,H
+2023-10-28,Maritimo,Tondela,2,2,D
+2023-10-29,Academico Viseu,Nacional,1,1,D
+2023-10-29,Feirense,AVS,1,2,A
+2023-10-29,Santa Clara,Benfica B,1,1,D
+2023-10-29,Oliveirense,Uniao de Leiria,1,4,A
+2023-10-30,Vilaverdense,FC Porto B,0,5,A
+2023-11-04,FC Porto B,Feirense,2,0,H
+2023-11-04,Mafra,Leixoes,0,1,A
+2023-11-04,CF Os Belenenses,Vilaverdense,0,2,A
+2023-11-04,Nacional,Santa Clara,1,1,D
+2023-11-04,Benfica B,Penafiel,1,0,H
+2023-11-05,AVS,Oliveirense,0,1,A
+2023-11-05,Uniao de Leiria,Maritimo,4,3,H
+2023-11-05,Tondela,Torreense,1,2,A
+2023-11-06,Pacos Ferreira,Academico Viseu,1,0,H
+2023-11-10,Feirense,CF Os Belenenses,1,0,H
+2023-11-11,Nacional,Uniao de Leiria,2,0,H
+2023-11-11,Penafiel,FC Porto B,3,2,H
+2023-11-11,Santa Clara,AVS,2,1,H
+2023-11-11,Oliveirense,Pacos Ferreira,0,0,D
+2023-11-12,Torreense,Mafra,0,0,D
+2023-11-12,Vilaverdense,Tondela,1,2,A
+2023-11-12,Leixoes,Maritimo,0,1,A
+2023-11-12,Academico Viseu,Benfica B,1,0,H
+2023-11-18,Mafra,Vilaverdense,1,0,H
+2023-11-18,Pacos Ferreira,Santa Clara,0,2,A
+2023-11-18,Tondela,Feirense,2,0,H
+2023-11-18,Uniao de Leiria,Leixoes,0,0,D
+2023-11-19,AVS,Nacional,0,1,A
+2023-11-19,CF Os Belenenses,Penafiel,2,0,H
+2023-11-19,Maritimo,Torreense,1,2,A
+2023-11-25,FC Porto B,Academico Viseu,3,0,H
+2023-11-25,Benfica B,Oliveirense,1,1,D
+2023-12-01,Vilaverdense,Uniao de Leiria,1,0,H
+2023-12-01,Academico Viseu,CF Os Belenenses,3,1,H
+2023-12-02,Oliveirense,FC Porto B,1,3,A
+2023-12-02,Nacional,Pacos Ferreira,2,1,H
+2023-12-02,AVS,Benfica B,1,0,H
+2023-12-03,Torreense,Leixoes,0,0,D
+2023-12-03,Penafiel,Tondela,0,2,A
+2023-12-03,Santa Clara,Maritimo,2,1,H
+2023-12-04,Feirense,Mafra,3,2,H
+2023-12-08,Uniao de Leiria,Torreense,1,0,H
+2023-12-09,Pacos Ferreira,Penafiel,2,1,H
+2023-12-09,FC Porto B,AVS,2,3,A
+2023-12-09,Tondela,Santa Clara,2,3,A
+2023-12-09,Leixoes,Feirense,0,0,D
+2023-12-09,Benfica B,Nacional,2,1,H
+2023-12-10,Mafra,Academico Viseu,1,1,D
+2023-12-10,CF Os Belenenses,Oliveirense,1,0,H
+2023-12-10,Maritimo,Vilaverdense,4,0,H
+2023-12-16,Academico Viseu,Torreense,0,0,D
+2023-12-16,Penafiel,Uniao de Leiria,1,0,H
+2023-12-16,Nacional,CF Os Belenenses,5,0,H
+2023-12-16,AVS,Pacos Ferreira,2,0,H
+2023-12-17,Vilaverdense,Leixoes,1,0,H
+2023-12-17,Santa Clara,FC Porto B,2,1,H
+2023-12-17,Feirense,Maritimo,0,1,A
+2023-12-17,Benfica B,Tondela,1,1,D
+2023-12-17,Oliveirense,Mafra,1,3,A
+2023-12-21,Torreense,Vilaverdense,3,1,H
+2023-12-22,Uniao de Leiria,Pacos Ferreira,1,1,D
+2023-12-22,CF Os Belenenses,Santa Clara,0,0,D
+2023-12-23,Maritimo,Penafiel,0,0,D
+2023-12-30,FC Porto B,Nacional,2,3,A
+2023-12-30,Leixoes,Academico Viseu,1,2,A
+2023-12-30,Tondela,Oliveirense,1,0,H
+2023-12-30,Pacos Ferreira,Benfica B,2,2,D
+2023-12-30,Uniao de Leiria,Feirense,1,1,D
+2023-12-31,Mafra,AVS,0,2,A
+2024-01-06,Nacional,Tondela,1,1,D
+2024-01-06,Oliveirense,Maritimo,1,1,D
+2024-01-06,Penafiel,Vilaverdense,2,1,H
+2024-01-06,Santa Clara,Mafra,0,1,A
+2024-01-06,Benfica B,CF Os Belenenses,2,1,H
+2024-01-06,Academico Viseu,Uniao de Leiria,1,0,H
+2024-01-07,AVS,Leixoes,1,3,A
+2024-01-07,Pacos Ferreira,FC Porto B,3,0,H
+2024-01-07,Feirense,Torreense,3,1,H
+2024-01-12,Leixoes,Oliveirense,0,2,A
+2024-01-13,CF Os Belenenses,Pacos Ferreira,0,1,A
+2024-01-14,Vilaverdense,Feirense,2,1,H
+2024-01-14,Tondela,AVS,3,2,H
+2024-01-14,Maritimo,Academico Viseu,1,1,D
+2024-01-14,FC Porto B,Benfica B,0,3,A
+2024-01-14,Uniao de Leiria,Santa Clara,0,1,A
+2024-01-15,Mafra,Nacional,0,0,D
+2024-01-15,Torreense,Penafiel,1,0,H
+2024-01-19,Vilaverdense,Academico Viseu,0,2,A
+2024-01-20,Mafra,Benfica B,1,2,A
+2024-01-20,CF Os Belenenses,AVS,1,3,A
+2024-01-20,Feirense,Oliveirense,0,0,D
+2024-01-21,Tondela,FC Porto B,0,0,D
+2024-01-21,Leixoes,Penafiel,0,1,A
+2024-01-21,Torreense,Santa Clara,1,2,A
+2024-01-21,Maritimo,Nacional,3,1,H
+2024-01-28,AVS,Maritimo,3,2,H
+2024-01-28,Pacos Ferreira,Mafra,0,1,A
+2024-01-28,Santa Clara,Leixoes,2,0,H
+2024-01-28,Nacional,Torreense,2,1,H
+2024-01-28,FC Porto B,CF Os Belenenses,3,0,H
+2024-01-28,Oliveirense,Vilaverdense,0,1,A
+2024-01-29,Benfica B,Uniao de Leiria,0,1,A
+2024-01-29,Penafiel,Feirense,2,1,H
+2024-01-30,Academico Viseu,Tondela,1,1,D
+2024-02-02,Vilaverdense,Santa Clara,1,1,D
+2024-02-02,Mafra,CF Os Belenenses,1,1,D
+2024-02-03,Uniao de Leiria,FC Porto B,1,1,D
+2024-02-03,Torreense,AVS,2,1,H
+2024-02-03,Penafiel,Oliveirense,1,1,D
+2024-02-04,Maritimo,Benfica B,3,1,H
+2024-02-05,Tondela,Pacos Ferreira,1,1,D
+2024-02-09,Oliveirense,Torreense,1,2,A
+2024-02-10,Academico Viseu,Penafiel,1,0,H
+2024-02-10,Nacional,Vilaverdense,3,2,H
+2024-02-10,Benfica B,Leixoes,1,1,D
+2024-02-11,AVS,Uniao de Leiria,2,1,H
+2024-02-11,Pacos Ferreira,Maritimo,1,2,A
+2024-02-11,FC Porto B,Mafra,1,1,D
+2024-02-11,CF Os Belenenses,Tondela,0,0,D
+2024-02-12,Santa Clara,Feirense,2,1,H
+2024-02-16,Leixoes,Pacos Ferreira,1,1,D
+2024-02-17,Mafra,Tondela,1,3,A
+2024-02-17,Torreense,Benfica B,3,1,H
+2024-02-17,Maritimo,FC Porto B,1,0,H
+2024-02-17,Uniao de Leiria,CF Os Belenenses,4,2,H
+2024-02-18,Academico Viseu,Oliveirense,2,2,D
+2024-02-18,Penafiel,Santa Clara,1,2,A
+2024-02-18,Feirense,Nacional,2,1,H
+2024-02-19,Vilaverdense,AVS,2,3,A
+2024-02-21,Feirense,Academico Viseu,0,3,A
+2024-02-24,Tondela,Uniao de Leiria,1,1,D
+2024-02-24,Santa Clara,Oliveirense,3,0,H
+2024-02-24,Nacional,Penafiel,3,2,H
+2024-02-24,FC Porto B,Leixoes,0,2,A
+2024-02-24,Benfica B,Vilaverdense,2,0,H
+2024-02-25,Mafra,Maritimo,0,0,D
+2024-02-25,CF Os Belenenses,Torreense,0,2,A
+2024-02-26,Pacos Ferreira,Feirense,1,0,H
+2024-02-27,AVS,Academico Viseu,2,0,H
+2024-02-28,Leixoes,Nacional,1,1,D
+2024-03-02,Uniao de Leiria,Mafra,2,3,A
+2024-03-02,Feirense,Benfica B,1,2,A
+2024-03-03,Oliveirense,Nacional,0,1,A
+2024-03-03,Torreense,FC Porto B,0,1,A
+2024-03-03,Penafiel,AVS,0,1,A
+2024-03-03,Leixoes,Tondela,1,1,D
+2024-03-04,Academico Viseu,Santa Clara,1,1,D
+2024-03-04,Vilaverdense,Pacos Ferreira,0,1,A
+2024-03-05,Maritimo,CF Os Belenenses,1,1,D
+2024-03-08,Uniao de Leiria,Oliveirense,1,0,H
+2024-03-09,Mafra,Penafiel,0,1,A
+2024-03-09,Nacional,Academico Viseu,1,1,D
+2024-03-09,Benfica B,Santa Clara,0,1,A
+2024-03-09,Pacos Ferreira,Torreense,2,0,H
+2024-03-09,FC Porto B,Vilaverdense,2,1,H
+2024-03-10,Tondela,Maritimo,0,3,A
+2024-03-11,CF Os Belenenses,Leixoes,1,2,A
+2024-03-11,AVS,Feirense,1,0,H
+2024-03-15,Torreense,Tondela,0,1,A
+2024-03-16,Oliveirense,AVS,1,1,D
+2024-03-16,Penafiel,Benfica B,0,1,A
+2024-03-16,Maritimo,Uniao de Leiria,2,0,H
+2024-03-16,Academico Viseu,Pacos Ferreira,1,1,D
+2024-03-17,Feirense,FC Porto B,1,1,D
+2024-03-17,Santa Clara,Nacional,0,1,A
+2024-03-17,Leixoes,Mafra,1,1,D
+2024-03-18,Vilaverdense,CF Os Belenenses,1,1,D
+2024-03-29,CF Os Belenenses,Feirense,3,1,H
+2024-03-29,Pacos Ferreira,Oliveirense,2,0,H
+2024-03-29,Tondela,Vilaverdense,1,0,H
+2024-03-30,Uniao de Leiria,Nacional,1,1,D
+2024-03-30,Maritimo,Leixoes,0,0,D
+2024-03-30,FC Porto B,Penafiel,3,1,H
+2024-03-30,AVS,Santa Clara,1,2,A
+2024-04-01,Benfica B,Academico Viseu,1,1,D
+2024-04-01,Mafra,Torreense,2,1,H
+2024-04-06,Penafiel,CF Os Belenenses,3,0,H
+2024-04-06,Leixoes,Uniao de Leiria,0,0,D
+2024-04-06,Feirense,Tondela,1,3,A
+2024-04-06,Nacional,AVS,2,1,H
+2024-04-07,Vilaverdense,Mafra,2,1,H
+2024-04-07,Santa Clara,Pacos Ferreira,0,1,A
+2024-04-07,Torreense,Maritimo,0,0,D
+2024-04-07,Oliveirense,Benfica B,3,1,H
+2024-04-08,Academico Viseu,FC Porto B,0,2,A
+2024-04-13,CF Os Belenenses,Academico Viseu,1,0,H
+2024-04-13,Uniao de Leiria,Vilaverdense,3,1,H
+2024-04-13,Tondela,Penafiel,0,1,A
+2024-04-13,Benfica B,AVS,0,1,A
+2024-04-14,Pacos Ferreira,Nacional,1,1,D
+2024-04-14,Mafra,Feirense,0,0,D
+2024-04-14,FC Porto B,Oliveirense,0,1,A
+2024-04-14,Leixoes,Torreense,1,1,D
+2024-04-14,Maritimo,Santa Clara,0,0,D
+2024-04-19,Feirense,Leixoes,1,1,D
+2024-04-20,Penafiel,Pacos Ferreira,1,1,D
+2024-04-20,Torreense,Uniao de Leiria,0,3,A
+2024-04-20,Santa Clara,Tondela,1,0,H
+2024-04-21,Oliveirense,CF Os Belenenses,1,2,A
+2024-04-21,Academico Viseu,Mafra,0,1,A
+2024-04-21,Vilaverdense,Maritimo,0,2,A
+2024-04-22,Nacional,Benfica B,3,1,H
+2024-04-24,AVS,FC Porto B,0,2,A
+2024-04-25,Uniao de Leiria,Penafiel,0,2,A
+2024-04-27,Mafra,Oliveirense,3,3,D
+2024-04-27,Maritimo,Feirense,3,2,H
+2024-04-27,Leixoes,Vilaverdense,1,3,A
+2024-04-28,Torreense,Academico Viseu,1,2,A
+2024-04-28,Tondela,Benfica B,1,1,D
+2024-04-28,FC Porto B,Santa Clara,2,2,D
+2024-04-28,CF Os Belenenses,Nacional,1,3,A
+2024-04-30,Pacos Ferreira,AVS,0,4,A
+2024-05-03,Santa Clara,CF Os Belenenses,2,0,H
+2024-05-04,Feirense,Uniao de Leiria,1,0,H
+2024-05-04,Academico Viseu,Leixoes,1,1,D
+2024-05-04,Oliveirense,Tondela,2,1,H
+2024-05-05,Penafiel,Maritimo,0,1,A
+2024-05-05,Nacional,FC Porto B,4,0,H
+2024-05-05,Vilaverdense,Torreense,0,1,A
+2024-05-05,Benfica B,Pacos Ferreira,2,2,D
+2024-05-06,AVS,Mafra,3,3,D
+2024-05-10,CF Os Belenenses,Benfica B,2,3,A
+2024-05-11,Torreense,Feirense,2,1,H
+2024-05-11,Vilaverdense,Penafiel,2,1,H
+2024-05-12,Tondela,Nacional,2,3,A
+2024-05-12,Leixoes,AVS,0,0,D
+2024-05-12,Mafra,Santa Clara,0,2,A
+2024-05-12,Maritimo,Oliveirense,2,1,H
+2024-05-12,FC Porto B,Pacos Ferreira,1,3,A
+2024-05-13,Uniao de Leiria,Academico Viseu,3,0,H
+2024-05-16,Penafiel,Torreense,1,1,D
+2024-05-17,Benfica B,FC Porto B,5,2,H
+2024-05-17,Pacos Ferreira,CF Os Belenenses,2,1,H
+2024-05-18,Feirense,Vilaverdense,1,1,D
+2024-05-19,Academico Viseu,Maritimo,2,2,D
+2024-05-19,AVS,Tondela,0,1,A
+2024-05-19,Oliveirense,Leixoes,1,3,A
+2024-05-19,Nacional,Mafra,2,0,H
+2024-05-19,Santa Clara,Uniao de Leiria,2,0,H
+2024-05-26,Lusitania Lourosa,Feirense,1,0,H
+2024-06-02,Feirense,Lusitania Lourosa,3,0,H

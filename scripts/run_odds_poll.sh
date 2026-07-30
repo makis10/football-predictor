@@ -39,10 +39,33 @@ echo "── $(date '+%Y-%m-%d %H:%M:%S') odds poll ──" >> "$LOG"
 source "$PROJ_DIR/scripts/wait_docker.sh"
 wait_for_docker "$LOG" || exit 1
 
+# ── 1. Fresh UEFA pairings ────────────────────────────────────────────────────
+# During the qualifying rounds a tie's next opponent only exists once the second
+# leg is played, and API-Football publishes the new pairing during the day — so
+# the 06:00 daily fetch misses it and the site shows a partial round for up to
+# 24 h (2026-07-30: we held 4 of 10 CL Q3 ties). Re-fetching here costs 3
+# API-Football calls per poll (~24/day against a 7,500 quota).
+#
+# Narrow window on purpose: this is a freshness top-up, not the backfill path —
+# widen --days-back only when recovering from an outage (see run_daily).
+docker compose exec -T backend \
+    python scripts/fetch_european_fixtures.py --days-ahead 21 --days-back 1 \
+    >> "$LOG" 2>&1 || echo "   [warn] European fixture refresh failed — daily run will retry" >> "$LOG"
+
+# ── 2. Odds snapshot ──────────────────────────────────────────────────────────
 docker compose exec -T backend \
     python scripts/poll_odds.py \
     >> "$LOG" 2>&1
 status=$?
+
+# ── 3. Price what the market just opened ──────────────────────────────────────
+# Two jobs in one pass: predictions for fixtures that arrived in step 1, and a
+# recompute of any FUTURE prediction that was priced before its market opened
+# (bm_* NULL) and now has odds in odds_history — without this the EV / value
+# gate and CLV tracking stayed blind until match day. No API cost.
+docker compose exec -T backend \
+    python scripts/compute_predictions.py --force-missing-odds \
+    >> "$LOG" 2>&1 || echo "   [warn] prediction top-up failed" >> "$LOG"
 
 echo "   done $(date '+%H:%M:%S') (exit $status)" >> "$LOG"
 exit "$status"

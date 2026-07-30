@@ -1,0 +1,183 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2022-03-05,Ordabasy,Maqtaaral,1,1,D
+2022-03-05,FC Astana,Shakhter Karagandy,0,0,D
+2022-03-05,Kaspiy,Kyzyl-Zhar,1,0,H
+2022-03-05,Atyrau,FK Aksu,0,0,D
+2022-03-05,Arys,Taraz,0,0,D
+2022-03-06,Kairat Almaty,Aktobe,2,0,H
+2022-03-06,FK Tobol Kostanay,Akzhayik,1,0,H
+2022-03-10,Taraz,Ordabasy,1,0,H
+2022-03-10,FK Aksu,FC Astana,1,0,H
+2022-03-10,Kyzyl-Zhar,Shakhter Karagandy,0,1,A
+2022-03-11,Kaspiy,FK Tobol Kostanay,0,0,D
+2022-03-11,Aktobe,Atyrau,2,1,H
+2022-03-11,Maqtaaral,Kairat Almaty,0,1,A
+2022-03-17,Atyrau,Maqtaaral,2,1,H
+2022-03-17,Kairat Almaty,Taraz,1,1,D
+2022-03-17,Ordabasy,Akzhayik,2,0,H
+2022-03-17,Arys,Kaspiy,0,1,A
+2022-03-17,FC Astana,Aktobe,1,0,H
+2022-03-17,FK Tobol Kostanay,Kyzyl-Zhar,2,0,H
+2022-04-03,Kaspiy,Ordabasy,2,1,H
+2022-04-03,Aktobe,Shakhter Karagandy,1,1,D
+2022-04-03,Taraz,Atyrau,0,1,A
+2022-04-03,Maqtaaral,FC Astana,0,3,A
+2022-04-03,Kyzyl-Zhar,FK Aksu,2,1,H
+2022-04-04,Akzhayik,Kairat Almaty,0,0,D
+2022-04-04,FK Tobol Kostanay,Arys,3,0,H
+2022-04-09,Atyrau,Akzhayik,0,1,A
+2022-04-09,Ordabasy,FK Tobol Kostanay,3,1,H
+2022-04-09,Kairat Almaty,Kaspiy,1,0,H
+2022-04-10,Shakhter Karagandy,Maqtaaral,5,1,H
+2022-04-10,FK Aksu,Aktobe,1,2,A
+2022-04-10,Arys,Kyzyl-Zhar,0,0,D
+2022-04-10,FC Astana,Taraz,2,1,H
+2022-04-16,Akzhayik,FC Astana,1,0,H
+2022-04-16,Kaspiy,Atyrau,2,1,H
+2022-04-16,Kyzyl-Zhar,Aktobe,1,1,D
+2022-04-16,Arys,Ordabasy,0,0,D
+2022-04-16,FK Tobol Kostanay,Kairat Almaty,2,2,D
+2022-04-17,Maqtaaral,FK Aksu,2,1,H
+2022-04-17,Taraz,Shakhter Karagandy,2,1,H
+2022-04-22,Atyrau,FK Tobol Kostanay,2,1,H
+2022-04-22,FC Astana,Kaspiy,4,0,H
+2022-04-23,Shakhter Karagandy,Akzhayik,0,1,A
+2022-04-23,Aktobe,Maqtaaral,1,0,H
+2022-04-23,Ordabasy,Kyzyl-Zhar,3,1,H
+2022-04-23,Kairat Almaty,Arys,0,1,A
+2022-04-23,FK Aksu,Taraz,1,2,A
+2022-04-26,Ordabasy,Kairat Almaty,2,1,H
+2022-04-26,FK Tobol Kostanay,FC Astana,1,1,D
+2022-04-27,Kyzyl-Zhar,Maqtaaral,1,1,D
+2022-04-27,Akzhayik,FK Aksu,0,1,A
+2022-04-27,Kaspiy,Shakhter Karagandy,4,0,H
+2022-04-27,Arys,Atyrau,0,0,D
+2022-04-27,Taraz,Aktobe,3,0,H
+2022-05-01,FC Astana,Arys,3,3,D
+2022-05-01,Atyrau,Ordabasy,2,1,H
+2022-05-02,Shakhter Karagandy,FK Tobol Kostanay,4,1,H
+2022-05-02,Aktobe,Akzhayik,2,1,H
+2022-05-02,Kairat Almaty,Kyzyl-Zhar,1,1,D
+2022-05-02,FK Aksu,Kaspiy,2,0,H
+2022-05-02,Maqtaaral,Taraz,0,1,A
+2022-05-07,Kyzyl-Zhar,Taraz,1,1,D
+2022-05-07,Ordabasy,FC Astana,1,2,A
+2022-05-07,Kairat Almaty,Atyrau,0,3,A
+2022-05-07,FK Tobol Kostanay,FK Aksu,2,0,H
+2022-05-08,Akzhayik,Maqtaaral,0,0,D
+2022-05-08,Kaspiy,Aktobe,2,0,H
+2022-05-08,Arys,Shakhter Karagandy,2,0,H
+2022-05-14,Shakhter Karagandy,Ordabasy,1,0,H
+2022-05-14,FC Astana,Kairat Almaty,6,0,H
+2022-05-14,Atyrau,Kyzyl-Zhar,3,3,D
+2022-05-14,Aktobe,FK Tobol Kostanay,2,1,H
+2022-05-14,FK Aksu,Arys,2,0,H
+2022-05-15,Maqtaaral,Kaspiy,2,1,H
+2022-05-15,Taraz,Akzhayik,2,0,H
+2022-05-21,Kairat Almaty,Shakhter Karagandy,2,0,H
+2022-05-21,Atyrau,FC Astana,1,1,D
+2022-05-22,Kyzyl-Zhar,Akzhayik,2,0,H
+2022-05-22,FK Tobol Kostanay,Maqtaaral,4,2,H
+2022-05-22,Kaspiy,Taraz,2,1,H
+2022-06-19,Shakhter Karagandy,Kyzyl-Zhar,1,2,A
+2022-06-19,Ordabasy,Taraz,3,2,H
+2022-06-19,Kairat Almaty,Maqtaaral,1,0,H
+2022-06-19,Atyrau,Aktobe,0,2,A
+2022-06-19,FC Astana,FK Aksu,5,0,H
+2022-06-19,FK Tobol Kostanay,Kaspiy,1,0,H
+2022-06-19,Arys,Akzhayik,1,1,D
+2022-06-25,Akzhayik,Ordabasy,0,1,A
+2022-06-25,FK Aksu,Shakhter Karagandy,1,1,D
+2022-06-26,Kyzyl-Zhar,FK Tobol Kostanay,1,3,A
+2022-06-26,Kaspiy,Arys,0,2,A
+2022-06-26,Taraz,Kairat Almaty,1,1,D
+2022-06-26,Maqtaaral,Atyrau,1,1,D
+2022-06-26,Aktobe,FC Astana,4,1,H
+2022-06-29,Ordabasy,FK Aksu,3,0,H
+2022-07-01,Arys,FK Tobol Kostanay,2,2,D
+2022-07-02,Shakhter Karagandy,Aktobe,2,3,A
+2022-07-02,Atyrau,Taraz,0,0,D
+2022-07-03,FC Astana,Maqtaaral,4,0,H
+2022-07-03,Kairat Almaty,Akzhayik,2,0,H
+2022-07-03,FK Aksu,Kyzyl-Zhar,1,0,H
+2022-07-04,Ordabasy,Kaspiy,4,1,H
+2022-07-12,Shakhter Karagandy,FK Aksu,4,2,H
+2022-07-12,Arys,Aktobe,0,2,A
+2022-08-20,Akzhayik,Kaspiy,2,0,H
+2022-08-20,Shakhter Karagandy,Atyrau,0,0,D
+2022-08-20,Maqtaaral,Arys,2,0,H
+2022-08-21,FC Astana,Kyzyl-Zhar,1,0,H
+2022-08-21,FK Tobol Kostanay,Taraz,2,2,D
+2022-08-21,Aktobe,Ordabasy,3,1,H
+2022-08-21,FK Aksu,Kairat Almaty,1,2,A
+2022-08-26,Akzhayik,Atyrau,4,2,H
+2022-08-26,Maqtaaral,Shakhter Karagandy,0,2,A
+2022-08-26,Aktobe,FK Aksu,1,0,H
+2022-08-27,Kyzyl-Zhar,Arys,3,1,H
+2022-08-27,Kaspiy,Kairat Almaty,2,2,D
+2022-08-27,Taraz,FC Astana,1,1,D
+2022-08-27,FK Tobol Kostanay,Ordabasy,4,0,H
+2022-09-04,Shakhter Karagandy,Taraz,1,0,H
+2022-09-04,Atyrau,Kaspiy,3,2,H
+2022-09-04,Ordabasy,Arys,1,2,A
+2022-09-04,FK Aksu,Maqtaaral,4,2,H
+2022-09-05,Kairat Almaty,FK Tobol Kostanay,2,3,A
+2022-09-05,Aktobe,Kyzyl-Zhar,1,0,H
+2022-09-05,FC Astana,Akzhayik,4,0,H
+2022-09-10,Akzhayik,Shakhter Karagandy,1,2,A
+2022-09-10,Kaspiy,FC Astana,0,3,A
+2022-09-10,Taraz,FK Aksu,3,4,A
+2022-09-10,FK Tobol Kostanay,Atyrau,0,2,A
+2022-09-10,Maqtaaral,Aktobe,1,1,D
+2022-09-11,Kyzyl-Zhar,Ordabasy,4,0,H
+2022-09-11,Arys,Kairat Almaty,1,3,A
+2022-09-14,FC Astana,FK Tobol Kostanay,1,2,A
+2022-09-14,Aktobe,Taraz,1,0,H
+2022-09-15,Atyrau,Arys,0,2,A
+2022-09-15,Shakhter Karagandy,Kaspiy,0,1,A
+2022-09-15,Kairat Almaty,Ordabasy,1,2,A
+2022-09-15,FK Aksu,Akzhayik,1,0,H
+2022-09-15,Maqtaaral,Kyzyl-Zhar,1,1,D
+2022-10-01,Kaspiy,FK Aksu,1,0,H
+2022-10-01,Ordabasy,Atyrau,2,0,H
+2022-10-01,Taraz,Maqtaaral,0,1,A
+2022-10-02,FK Tobol Kostanay,Shakhter Karagandy,3,1,H
+2022-10-02,Kyzyl-Zhar,Kairat Almaty,1,2,A
+2022-10-02,Akzhayik,Aktobe,3,1,H
+2022-10-02,Arys,FC Astana,2,2,D
+2022-10-05,Akzhayik,Arys,1,1,D
+2022-10-08,Aktobe,Kaspiy,4,0,H
+2022-10-08,FK Aksu,FK Tobol Kostanay,3,0,H
+2022-10-09,Atyrau,Kairat Almaty,1,2,A
+2022-10-09,Shakhter Karagandy,Arys,0,0,D
+2022-10-09,FC Astana,Ordabasy,6,0,H
+2022-10-09,Taraz,Kyzyl-Zhar,0,0,D
+2022-10-09,Maqtaaral,Akzhayik,1,0,H
+2022-10-14,Akzhayik,Taraz,0,0,D
+2022-10-14,Kaspiy,Maqtaaral,2,4,A
+2022-10-14,Ordabasy,Shakhter Karagandy,1,0,H
+2022-10-14,Arys,FK Aksu,0,1,A
+2022-10-15,FK Tobol Kostanay,Aktobe,1,0,H
+2022-10-15,Kyzyl-Zhar,Atyrau,3,1,H
+2022-10-15,Kairat Almaty,FC Astana,0,4,A
+2022-10-23,Shakhter Karagandy,Kairat Almaty,0,2,A
+2022-10-23,Akzhayik,Kyzyl-Zhar,2,2,D
+2022-10-23,Maqtaaral,FK Tobol Kostanay,2,1,H
+2022-10-23,FC Astana,Atyrau,5,1,H
+2022-10-24,Taraz,Kaspiy,1,1,D
+2022-10-24,FK Aksu,Ordabasy,2,2,D
+2022-10-24,Aktobe,Arys,3,2,H
+2022-10-29,Kaspiy,Akzhayik,0,0,D
+2022-10-29,Taraz,FK Tobol Kostanay,0,2,A
+2022-10-29,Ordabasy,Aktobe,2,2,D
+2022-10-30,Kairat Almaty,FK Aksu,2,0,H
+2022-10-30,Kyzyl-Zhar,FC Astana,0,2,A
+2022-10-30,Atyrau,Shakhter Karagandy,2,2,D
+2022-10-30,Arys,Maqtaaral,0,3,A
+2022-11-06,Akzhayik,FK Tobol Kostanay,1,3,A
+2022-11-06,Kyzyl-Zhar,Kaspiy,4,1,H
+2022-11-06,Taraz,Arys,2,3,A
+2022-11-06,Aktobe,Kairat Almaty,4,1,H
+2022-11-06,Shakhter Karagandy,FC Astana,2,3,A
+2022-11-06,Maqtaaral,Ordabasy,0,0,D
+2022-11-06,FK Aksu,Atyrau,2,1,H

@@ -1,0 +1,119 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2026-03-06,Rigas FS,Ogre United,2,0,H
+2026-03-07,BFC Daugavpils,Grobina,0,1,A
+2026-03-07,FK Liepaja,Riga,2,1,H
+2026-03-08,FS Jelgava,Tukums,2,1,H
+2026-03-08,Auda,Super Nova,2,1,H
+2026-03-13,FK Liepaja,Rigas FS,0,1,A
+2026-03-14,Grobina,Auda,0,2,A
+2026-03-14,Riga,BFC Daugavpils,4,2,H
+2026-03-15,Super Nova,FS Jelgava,1,1,D
+2026-03-15,Ogre United,Tukums,1,1,D
+2026-03-20,Auda,Riga,1,2,A
+2026-03-20,Ogre United,FK Liepaja,0,1,A
+2026-03-21,Rigas FS,BFC Daugavpils,4,1,H
+2026-03-21,FS Jelgava,Grobina,0,1,A
+2026-03-22,Tukums,Super Nova,1,2,A
+2026-04-03,Ogre United,Super Nova,1,2,A
+2026-04-03,BFC Daugavpils,FK Liepaja,2,0,H
+2026-04-04,Rigas FS,Auda,0,1,A
+2026-04-04,FS Jelgava,Riga,0,8,A
+2026-04-05,Tukums,Grobina,1,1,D
+2026-04-07,BFC Daugavpils,Ogre United,2,1,H
+2026-04-08,FK Liepaja,Auda,1,2,A
+2026-04-08,FS Jelgava,Rigas FS,0,1,A
+2026-04-09,Grobina,Super Nova,0,1,A
+2026-04-09,Riga,Tukums,3,3,D
+2026-04-12,Auda,BFC Daugavpils,2,3,A
+2026-04-12,FK Liepaja,FS Jelgava,1,1,D
+2026-04-13,Tukums,Rigas FS,1,2,A
+2026-04-13,Ogre United,Grobina,1,1,D
+2026-04-14,Super Nova,Riga,1,4,A
+2026-04-16,BFC Daugavpils,FS Jelgava,1,0,H
+2026-04-17,Tukums,FK Liepaja,2,2,D
+2026-04-17,Ogre United,Auda,1,1,D
+2026-04-18,Grobina,Riga,0,3,A
+2026-04-18,Rigas FS,Super Nova,2,0,H
+2026-04-21,Tukums,BFC Daugavpils,1,1,D
+2026-04-21,FS Jelgava,Auda,2,3,A
+2026-04-22,Grobina,Rigas FS,0,1,A
+2026-04-22,Riga,Ogre United,4,0,H
+2026-04-23,Super Nova,FK Liepaja,1,2,A
+2026-04-26,Auda,Tukums,2,1,H
+2026-04-27,BFC Daugavpils,Super Nova,0,1,A
+2026-04-27,Ogre United,FS Jelgava,0,1,A
+2026-04-28,FK Liepaja,Grobina,1,1,D
+2026-04-28,Rigas FS,Riga,3,3,D
+2026-05-01,Tukums,FS Jelgava,5,0,H
+2026-05-01,Super Nova,Auda,1,2,A
+2026-05-02,Grobina,BFC Daugavpils,1,1,D
+2026-05-02,Ogre United,Rigas FS,3,4,A
+2026-05-03,Riga,FK Liepaja,1,0,H
+2026-05-06,FS Jelgava,Super Nova,1,0,H
+2026-05-07,Tukums,Ogre United,6,1,H
+2026-05-07,Auda,Grobina,7,0,H
+2026-05-08,BFC Daugavpils,Riga,1,3,A
+2026-05-08,Rigas FS,FK Liepaja,5,0,H
+2026-05-11,Grobina,FS Jelgava,0,0,D
+2026-05-11,Super Nova,Tukums,1,1,D
+2026-05-12,FK Liepaja,Ogre United,4,1,H
+2026-05-12,Riga,Auda,4,1,H
+2026-05-13,BFC Daugavpils,Rigas FS,0,1,A
+2026-05-15,Grobina,Tukums,3,3,D
+2026-05-16,Super Nova,Ogre United,3,1,H
+2026-05-16,Riga,FS Jelgava,2,2,D
+2026-05-17,Auda,Rigas FS,0,3,A
+2026-05-17,FK Liepaja,BFC Daugavpils,2,1,H
+2026-05-20,Tukums,Riga,1,3,A
+2026-05-20,Grobina,Super Nova,0,2,A
+2026-05-21,BFC Daugavpils,Ogre United,3,1,H
+2026-05-21,Rigas FS,FS Jelgava,4,0,H
+2026-05-22,Auda,FK Liepaja,3,1,H
+2026-05-24,Riga,Super Nova,3,0,H
+2026-05-25,Ogre United,Grobina,1,1,D
+2026-05-25,Rigas FS,Tukums,3,1,H
+2026-05-26,FS Jelgava,FK Liepaja,1,1,D
+2026-05-26,BFC Daugavpils,Auda,0,1,A
+2026-05-29,Riga,Grobina,2,0,H
+2026-05-29,Super Nova,Rigas FS,1,2,A
+2026-05-30,FK Liepaja,Tukums,3,0,H
+2026-05-30,Auda,Ogre United,2,0,H
+2026-05-31,FS Jelgava,BFC Daugavpils,1,1,D
+2026-06-12,Tukums,BFC Daugavpils,1,1,D
+2026-06-12,FK Liepaja,Super Nova,2,1,H
+2026-06-13,Ogre United,Riga,1,4,A
+2026-06-13,Grobina,Rigas FS,1,3,A
+2026-06-13,Auda,FS Jelgava,1,1,D
+2026-06-16,BFC Daugavpils,Super Nova,0,0,D
+2026-06-16,Grobina,FK Liepaja,1,0,H
+2026-06-17,Tukums,Auda,2,1,H
+2026-06-17,FS Jelgava,Ogre United,0,2,A
+2026-06-17,Riga,Rigas FS,2,1,H
+2026-06-20,BFC Daugavpils,Grobina,1,0,H
+2026-06-21,Super Nova,Auda,0,2,A
+2026-06-21,FS Jelgava,Tukums,4,1,H
+2026-06-21,Riga,FK Liepaja,4,0,H
+2026-06-22,Rigas FS,Ogre United,6,0,H
+2026-06-25,Grobina,Auda,0,0,D
+2026-06-25,BFC Daugavpils,Riga,0,0,D
+2026-06-25,Super Nova,FS Jelgava,1,5,A
+2026-06-26,Ogre United,Tukums,3,2,H
+2026-06-26,FK Liepaja,Rigas FS,0,2,A
+2026-06-29,Auda,Riga,0,2,A
+2026-06-29,FS Jelgava,Grobina,2,0,H
+2026-06-30,Rigas FS,BFC Daugavpils,3,1,H
+2026-06-30,FK Liepaja,Ogre United,4,0,H
+2026-07-01,Tukums,Super Nova,1,2,A
+2026-07-03,Riga,FS Jelgava,3,0,H
+2026-07-04,BFC Daugavpils,FK Liepaja,3,1,H
+2026-07-04,Rigas FS,Auda,1,1,D
+2026-07-05,Grobina,Tukums,3,1,H
+2026-07-06,Super Nova,Ogre United,1,2,A
+2026-07-18,Riga,Tukums,3,1,H
+2026-07-19,Ogre United,BFC Daugavpils,0,4,A
+2026-07-20,FS Jelgava,Rigas FS,0,1,A
+2026-07-20,Super Nova,Grobina,2,0,H
+2026-07-26,FS Jelgava,FK Liepaja,0,2,A
+2026-07-26,Auda,BFC Daugavpils,1,0,H
+2026-07-27,Tukums,Rigas FS,0,1,A
+2026-07-27,Grobina,Ogre United,2,2,D

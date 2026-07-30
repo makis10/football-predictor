@@ -1,0 +1,307 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2016-08-05,FC Kaiserslautern,Hannover 96,0,4,A
+2016-08-06,Vfl Bochum,Union Berlin,2,1,H
+2016-08-06,Dynamo Dresden,FC Nurnberg,1,1,D
+2016-08-06,SV Sandhausen,Fortuna Dusseldorf,2,2,D
+2016-08-07,SpVgg Greuther Furth,TSV 1860 Munich,1,0,H
+2016-08-07,FC Heidenheim,Erzgebirge AUE,1,0,H
+2016-08-07,Arminia Bielefeld,Karlsruher SC,0,0,D
+2016-08-07,Eintracht Braunschweig,FC Wurzburger Kickers,2,1,H
+2016-08-08,VfB Stuttgart,FC St. Pauli,2,1,H
+2016-08-12,FC Nurnberg,FC Heidenheim,1,1,D
+2016-08-12,Erzgebirge AUE,SV Sandhausen,2,0,H
+2016-08-12,Fortuna Dusseldorf,VfB Stuttgart,1,0,H
+2016-08-13,Karlsruher SC,Vfl Bochum,1,1,D
+2016-08-13,FC St. Pauli,Eintracht Braunschweig,0,2,A
+2016-08-14,Hannover 96,SpVgg Greuther Furth,3,1,H
+2016-08-14,FC Wurzburger Kickers,FC Kaiserslautern,1,1,D
+2016-08-14,TSV 1860 Munich,Arminia Bielefeld,1,0,H
+2016-08-15,Union Berlin,Dynamo Dresden,2,2,D
+2016-08-26,Vfl Bochum,Hannover 96,1,1,D
+2016-08-26,FC Heidenheim,FC Wurzburger Kickers,1,2,A
+2016-08-26,SV Sandhausen,VfB Stuttgart,1,2,A
+2016-08-27,SpVgg Greuther Furth,Erzgebirge AUE,3,2,H
+2016-08-27,Karlsruher SC,TSV 1860 Munich,0,0,D
+2016-08-28,Dynamo Dresden,FC St. Pauli,1,0,H
+2016-08-28,Arminia Bielefeld,Union Berlin,4,4,D
+2016-08-28,Eintracht Braunschweig,FC Nurnberg,6,1,H
+2016-08-29,FC Kaiserslautern,Fortuna Dusseldorf,0,0,D
+2016-09-09,VfB Stuttgart,FC Heidenheim,1,2,A
+2016-09-09,Erzgebirge AUE,Eintracht Braunschweig,0,2,A
+2016-09-09,FC Wurzburger Kickers,Vfl Bochum,2,0,H
+2016-09-10,Union Berlin,Karlsruher SC,4,0,H
+2016-09-10,FC St. Pauli,Arminia Bielefeld,2,1,H
+2016-09-11,Fortuna Dusseldorf,SpVgg Greuther Furth,1,1,D
+2016-09-11,Hannover 96,Dynamo Dresden,0,2,A
+2016-09-11,SV Sandhausen,FC Kaiserslautern,2,0,H
+2016-09-12,FC Nurnberg,TSV 1860 Munich,1,2,A
+2016-09-16,Vfl Bochum,FC Nurnberg,5,4,H
+2016-09-16,SpVgg Greuther Furth,FC Wurzburger Kickers,0,3,A
+2016-09-16,TSV 1860 Munich,Union Berlin,1,2,A
+2016-09-17,FC Heidenheim,Fortuna Dusseldorf,2,0,H
+2016-09-17,Eintracht Braunschweig,SV Sandhausen,2,1,H
+2016-09-17,FC Kaiserslautern,VfB Stuttgart,0,1,A
+2016-09-18,Dynamo Dresden,Erzgebirge AUE,0,3,A
+2016-09-18,Arminia Bielefeld,Hannover 96,3,3,D
+2016-09-18,Karlsruher SC,FC St. Pauli,1,1,D
+2016-09-20,Fortuna Dusseldorf,Vfl Bochum,3,0,H
+2016-09-20,FC Nurnberg,SpVgg Greuther Furth,1,2,A
+2016-09-20,VfB Stuttgart,Eintracht Braunschweig,2,0,H
+2016-09-20,SV Sandhausen,FC Heidenheim,0,0,D
+2016-09-21,Hannover 96,Karlsruher SC,1,0,H
+2016-09-21,Erzgebirge AUE,Arminia Bielefeld,1,1,D
+2016-09-21,FC Kaiserslautern,Dynamo Dresden,3,0,H
+2016-09-21,FC Wurzburger Kickers,Union Berlin,0,1,A
+2016-09-22,FC St. Pauli,TSV 1860 Munich,2,2,D
+2016-09-23,Vfl Bochum,VfB Stuttgart,1,1,D
+2016-09-23,SpVgg Greuther Furth,SV Sandhausen,1,1,D
+2016-09-23,Eintracht Braunschweig,Fortuna Dusseldorf,2,1,H
+2016-09-24,FC Heidenheim,FC Kaiserslautern,3,0,H
+2016-09-24,Karlsruher SC,Erzgebirge AUE,2,0,H
+2016-09-25,Dynamo Dresden,FC Wurzburger Kickers,2,2,D
+2016-09-25,Arminia Bielefeld,FC Nurnberg,1,3,A
+2016-09-25,TSV 1860 Munich,Hannover 96,0,2,A
+2016-09-26,Union Berlin,FC St. Pauli,2,0,H
+2016-09-30,FC Nurnberg,Union Berlin,2,0,H
+2016-09-30,SV Sandhausen,Dynamo Dresden,2,0,H
+2016-09-30,Erzgebirge AUE,Vfl Bochum,2,4,A
+2016-10-01,Fortuna Dusseldorf,Karlsruher SC,1,1,D
+2016-10-01,Hannover 96,FC St. Pauli,2,0,H
+2016-10-02,FC Heidenheim,Eintracht Braunschweig,1,1,D
+2016-10-02,FC Kaiserslautern,Arminia Bielefeld,0,0,D
+2016-10-02,FC Wurzburger Kickers,TSV 1860 Munich,2,0,H
+2016-10-03,VfB Stuttgart,SpVgg Greuther Furth,4,0,H
+2016-10-14,Vfl Bochum,SV Sandhausen,2,2,D
+2016-10-14,FC St. Pauli,Erzgebirge AUE,1,2,A
+2016-10-14,Arminia Bielefeld,FC Wurzburger Kickers,0,1,A
+2016-10-15,SpVgg Greuther Furth,FC Heidenheim,0,2,A
+2016-10-15,Dynamo Dresden,VfB Stuttgart,5,0,H
+2016-10-16,Union Berlin,Hannover 96,2,1,H
+2016-10-16,Karlsruher SC,FC Nurnberg,0,3,A
+2016-10-16,TSV 1860 Munich,Fortuna Dusseldorf,1,3,A
+2016-10-17,Eintracht Braunschweig,FC Kaiserslautern,1,0,H
+2016-10-21,Fortuna Dusseldorf,Arminia Bielefeld,4,0,H
+2016-10-21,VfB Stuttgart,TSV 1860 Munich,2,1,H
+2016-10-21,FC Wurzburger Kickers,Karlsruher SC,0,2,A
+2016-10-22,FC Heidenheim,Dynamo Dresden,0,0,D
+2016-10-22,SV Sandhausen,FC St. Pauli,3,0,H
+2016-10-23,FC Nurnberg,Hannover 96,2,0,H
+2016-10-23,Erzgebirge AUE,Union Berlin,1,3,A
+2016-10-23,Eintracht Braunschweig,SpVgg Greuther Furth,1,0,H
+2016-10-24,FC Kaiserslautern,Vfl Bochum,3,0,H
+2016-10-28,Dynamo Dresden,Eintracht Braunschweig,3,2,H
+2016-10-28,Arminia Bielefeld,SV Sandhausen,1,0,H
+2016-10-28,TSV 1860 Munich,Erzgebirge AUE,6,2,H
+2016-10-29,SpVgg Greuther Furth,FC Kaiserslautern,0,1,A
+2016-10-29,Union Berlin,Fortuna Dusseldorf,0,1,A
+2016-10-30,Hannover 96,FC Wurzburger Kickers,3,1,H
+2016-10-30,Vfl Bochum,FC Heidenheim,2,1,H
+2016-10-30,Karlsruher SC,VfB Stuttgart,1,3,A
+2016-10-31,FC St. Pauli,FC Nurnberg,1,1,D
+2016-11-04,Fortuna Dusseldorf,Dynamo Dresden,0,3,A
+2016-11-04,FC Heidenheim,Karlsruher SC,2,1,H
+2016-11-04,Erzgebirge AUE,FC Nurnberg,1,2,A
+2016-11-05,SpVgg Greuther Furth,Vfl Bochum,2,1,H
+2016-11-05,FC Kaiserslautern,Union Berlin,1,0,H
+2016-11-06,VfB Stuttgart,Arminia Bielefeld,3,1,H
+2016-11-06,SV Sandhausen,TSV 1860 Munich,3,2,H
+2016-11-06,Eintracht Braunschweig,Hannover 96,2,2,D
+2016-11-07,FC Wurzburger Kickers,FC St. Pauli,1,0,H
+2016-11-18,FC Nurnberg,FC Wurzburger Kickers,2,2,D
+2016-11-18,Vfl Bochum,Eintracht Braunschweig,1,1,D
+2016-11-18,Arminia Bielefeld,FC Heidenheim,2,1,H
+2016-11-19,Hannover 96,Erzgebirge AUE,2,0,H
+2016-11-19,Karlsruher SC,SV Sandhausen,1,3,A
+2016-11-20,Union Berlin,VfB Stuttgart,1,1,D
+2016-11-20,Dynamo Dresden,SpVgg Greuther Furth,2,1,H
+2016-11-20,FC St. Pauli,Fortuna Dusseldorf,0,1,A
+2016-11-21,TSV 1860 Munich,FC Kaiserslautern,1,1,D
+2016-11-25,Fortuna Dusseldorf,Hannover 96,2,2,D
+2016-11-25,SpVgg Greuther Furth,Arminia Bielefeld,2,1,H
+2016-11-25,FC Wurzburger Kickers,Erzgebirge AUE,1,1,D
+2016-11-26,FC Heidenheim,FC St. Pauli,2,0,H
+2016-11-26,Dynamo Dresden,Vfl Bochum,2,2,D
+2016-11-27,SV Sandhausen,Union Berlin,0,1,A
+2016-11-27,Eintracht Braunschweig,TSV 1860 Munich,2,1,H
+2016-11-27,FC Kaiserslautern,Karlsruher SC,0,0,D
+2016-11-28,VfB Stuttgart,FC Nurnberg,3,1,H
+2016-12-02,Hannover 96,FC Heidenheim,3,2,H
+2016-12-02,FC St. Pauli,FC Kaiserslautern,0,0,D
+2016-12-02,Karlsruher SC,SpVgg Greuther Furth,1,2,A
+2016-12-03,FC Nurnberg,SV Sandhausen,1,3,A
+2016-12-03,TSV 1860 Munich,Dynamo Dresden,1,0,H
+2016-12-04,Arminia Bielefeld,Vfl Bochum,1,0,H
+2016-12-04,Erzgebirge AUE,VfB Stuttgart,0,4,A
+2016-12-04,FC Wurzburger Kickers,Fortuna Dusseldorf,0,0,D
+2016-12-05,Union Berlin,Eintracht Braunschweig,2,0,H
+2016-12-09,Fortuna Dusseldorf,FC Nurnberg,0,2,A
+2016-12-09,FC Heidenheim,Union Berlin,3,0,H
+2016-12-09,Dynamo Dresden,Karlsruher SC,0,0,D
+2016-12-10,Vfl Bochum,TSV 1860 Munich,1,0,H
+2016-12-10,FC Kaiserslautern,Erzgebirge AUE,0,0,D
+2016-12-11,SpVgg Greuther Furth,FC St. Pauli,0,2,A
+2016-12-11,SV Sandhausen,FC Wurzburger Kickers,0,0,D
+2016-12-11,Eintracht Braunschweig,Arminia Bielefeld,3,2,H
+2016-12-12,VfB Stuttgart,Hannover 96,1,2,A
+2016-12-16,Union Berlin,SpVgg Greuther Furth,1,1,D
+2016-12-16,Erzgebirge AUE,Fortuna Dusseldorf,0,0,D
+2016-12-16,TSV 1860 Munich,FC Heidenheim,1,1,D
+2016-12-17,FC St. Pauli,Vfl Bochum,1,1,D
+2016-12-17,Karlsruher SC,Eintracht Braunschweig,0,0,D
+2016-12-18,Hannover 96,SV Sandhausen,0,0,D
+2016-12-18,Arminia Bielefeld,Dynamo Dresden,1,2,A
+2016-12-18,FC Wurzburger Kickers,VfB Stuttgart,3,0,H
+2016-12-19,FC Nurnberg,FC Kaiserslautern,2,1,H
+2017-01-27,Fortuna Dusseldorf,SV Sandhausen,0,3,A
+2017-01-27,Union Berlin,Vfl Bochum,2,1,H
+2017-01-27,TSV 1860 Munich,SpVgg Greuther Furth,2,1,H
+2017-01-28,Erzgebirge AUE,FC Heidenheim,2,1,H
+2017-01-28,FC Wurzburger Kickers,Eintracht Braunschweig,1,1,D
+2017-01-29,FC Nurnberg,Dynamo Dresden,1,2,A
+2017-01-29,FC St. Pauli,VfB Stuttgart,0,1,A
+2017-01-29,Karlsruher SC,Arminia Bielefeld,3,2,H
+2017-01-30,Hannover 96,FC Kaiserslautern,1,0,H
+2017-02-03,SpVgg Greuther Furth,Hannover 96,4,1,H
+2017-02-03,Arminia Bielefeld,TSV 1860 Munich,2,1,H
+2017-02-03,FC Kaiserslautern,FC Wurzburger Kickers,1,0,H
+2017-02-04,FC Heidenheim,FC Nurnberg,2,3,A
+2017-02-04,SV Sandhausen,Erzgebirge AUE,2,0,H
+2017-02-05,Vfl Bochum,Karlsruher SC,1,1,D
+2017-02-05,Dynamo Dresden,Union Berlin,0,0,D
+2017-02-05,Eintracht Braunschweig,FC St. Pauli,1,2,A
+2017-02-06,VfB Stuttgart,Fortuna Dusseldorf,2,0,H
+2017-02-10,Fortuna Dusseldorf,FC Kaiserslautern,1,1,D
+2017-02-10,FC Nurnberg,Eintracht Braunschweig,1,1,D
+2017-02-10,Erzgebirge AUE,SpVgg Greuther Furth,0,0,D
+2017-02-11,FC Wurzburger Kickers,FC Heidenheim,0,2,A
+2017-02-11,TSV 1860 Munich,Karlsruher SC,2,1,H
+2017-02-12,VfB Stuttgart,SV Sandhausen,2,1,H
+2017-02-12,Union Berlin,Arminia Bielefeld,3,1,H
+2017-02-12,FC St. Pauli,Dynamo Dresden,2,0,H
+2017-02-13,Hannover 96,Vfl Bochum,2,1,H
+2017-02-17,FC Heidenheim,VfB Stuttgart,1,2,A
+2017-02-17,Eintracht Braunschweig,Erzgebirge AUE,1,1,D
+2017-02-17,FC Kaiserslautern,SV Sandhausen,3,0,H
+2017-02-18,Vfl Bochum,FC Wurzburger Kickers,2,1,H
+2017-02-18,SpVgg Greuther Furth,Fortuna Dusseldorf,1,0,H
+2017-02-19,Dynamo Dresden,Hannover 96,1,2,A
+2017-02-19,Arminia Bielefeld,FC St. Pauli,1,1,D
+2017-02-19,Karlsruher SC,Union Berlin,1,2,A
+2017-02-20,TSV 1860 Munich,FC Nurnberg,2,0,H
+2017-02-24,Union Berlin,TSV 1860 Munich,2,0,H
+2017-02-24,SV Sandhausen,Eintracht Braunschweig,0,1,A
+2017-02-24,FC Wurzburger Kickers,SpVgg Greuther Furth,1,1,D
+2017-02-25,Fortuna Dusseldorf,FC Heidenheim,0,0,D
+2017-02-25,Hannover 96,Arminia Bielefeld,2,2,D
+2017-02-26,FC Nurnberg,Vfl Bochum,0,1,A
+2017-02-26,VfB Stuttgart,FC Kaiserslautern,2,0,H
+2017-02-26,Erzgebirge AUE,Dynamo Dresden,1,4,A
+2017-02-27,FC St. Pauli,Karlsruher SC,5,0,H
+2017-03-03,Vfl Bochum,Fortuna Dusseldorf,1,2,A
+2017-03-03,Union Berlin,FC Wurzburger Kickers,2,0,H
+2017-03-03,Dynamo Dresden,FC Kaiserslautern,3,3,D
+2017-03-04,Karlsruher SC,Hannover 96,2,0,H
+2017-03-04,TSV 1860 Munich,FC St. Pauli,1,2,A
+2017-03-05,SpVgg Greuther Furth,FC Nurnberg,1,0,H
+2017-03-05,FC Heidenheim,SV Sandhausen,2,2,D
+2017-03-05,Arminia Bielefeld,Erzgebirge AUE,2,2,D
+2017-03-06,Eintracht Braunschweig,VfB Stuttgart,1,1,D
+2017-03-10,VfB Stuttgart,Vfl Bochum,1,1,D
+2017-03-10,FC St. Pauli,Union Berlin,1,2,A
+2017-03-10,Erzgebirge AUE,Karlsruher SC,1,0,H
+2017-03-11,Hannover 96,TSV 1860 Munich,1,0,H
+2017-03-11,FC Wurzburger Kickers,Dynamo Dresden,0,2,A
+2017-03-12,FC Nurnberg,Arminia Bielefeld,1,0,H
+2017-03-12,SV Sandhausen,SpVgg Greuther Furth,1,1,D
+2017-03-12,FC Kaiserslautern,FC Heidenheim,1,1,D
+2017-03-13,Fortuna Dusseldorf,Eintracht Braunschweig,1,2,A
+2017-03-17,Arminia Bielefeld,FC Kaiserslautern,2,0,H
+2017-03-17,Eintracht Braunschweig,FC Heidenheim,3,2,H
+2017-03-17,TSV 1860 Munich,FC Wurzburger Kickers,2,1,H
+2017-03-18,SpVgg Greuther Furth,VfB Stuttgart,1,0,H
+2017-03-18,FC St. Pauli,Hannover 96,0,0,D
+2017-03-19,Vfl Bochum,Erzgebirge AUE,1,1,D
+2017-03-19,Dynamo Dresden,SV Sandhausen,2,0,H
+2017-03-19,Karlsruher SC,Fortuna Dusseldorf,0,3,A
+2017-03-20,Union Berlin,FC Nurnberg,1,0,H
+2017-03-31,Fortuna Dusseldorf,TSV 1860 Munich,0,1,A
+2017-03-31,FC Nurnberg,Karlsruher SC,2,1,H
+2017-03-31,Erzgebirge AUE,FC St. Pauli,1,0,H
+2017-04-01,Hannover 96,Union Berlin,2,0,H
+2017-04-01,SV Sandhausen,Vfl Bochum,0,0,D
+2017-04-01,FC Wurzburger Kickers,Arminia Bielefeld,1,1,D
+2017-04-02,VfB Stuttgart,Dynamo Dresden,3,3,D
+2017-04-02,FC Heidenheim,SpVgg Greuther Furth,0,2,A
+2017-04-02,FC Kaiserslautern,Eintracht Braunschweig,0,1,A
+2017-04-04,Hannover 96,FC Nurnberg,1,0,H
+2017-04-04,FC St. Pauli,SV Sandhausen,0,0,D
+2017-04-04,Arminia Bielefeld,Fortuna Dusseldorf,2,1,H
+2017-04-04,Karlsruher SC,FC Wurzburger Kickers,1,1,D
+2017-04-05,Vfl Bochum,FC Kaiserslautern,0,0,D
+2017-04-05,SpVgg Greuther Furth,Eintracht Braunschweig,0,0,D
+2017-04-05,Union Berlin,Erzgebirge AUE,0,1,A
+2017-04-05,Dynamo Dresden,FC Heidenheim,2,1,H
+2017-04-05,TSV 1860 Munich,VfB Stuttgart,1,1,D
+2017-04-07,FC Nurnberg,FC St. Pauli,0,2,A
+2017-04-07,SV Sandhausen,Arminia Bielefeld,1,3,A
+2017-04-07,FC Wurzburger Kickers,Hannover 96,0,0,D
+2017-04-08,FC Heidenheim,Vfl Bochum,0,0,D
+2017-04-08,FC Kaiserslautern,SpVgg Greuther Furth,2,0,H
+2017-04-09,Fortuna Dusseldorf,Union Berlin,2,2,D
+2017-04-09,VfB Stuttgart,Karlsruher SC,2,0,H
+2017-04-09,Erzgebirge AUE,TSV 1860 Munich,3,0,H
+2017-04-10,Eintracht Braunschweig,Dynamo Dresden,1,0,H
+2017-04-15,Hannover 96,Eintracht Braunschweig,1,0,H
+2017-04-15,FC Nurnberg,Erzgebirge AUE,2,1,H
+2017-04-16,Vfl Bochum,SpVgg Greuther Furth,1,0,H
+2017-04-16,Union Berlin,FC Kaiserslautern,3,1,H
+2017-04-16,Dynamo Dresden,Fortuna Dusseldorf,1,1,D
+2017-04-16,FC St. Pauli,FC Wurzburger Kickers,1,0,H
+2017-04-16,Karlsruher SC,FC Heidenheim,0,1,A
+2017-04-16,TSV 1860 Munich,SV Sandhausen,1,1,D
+2017-04-17,Arminia Bielefeld,VfB Stuttgart,2,3,A
+2017-04-21,Fortuna Dusseldorf,FC St. Pauli,1,3,A
+2017-04-21,SpVgg Greuther Furth,Dynamo Dresden,1,0,H
+2017-04-21,FC Kaiserslautern,TSV 1860 Munich,1,0,H
+2017-04-22,FC Heidenheim,Arminia Bielefeld,2,2,D
+2017-04-22,Erzgebirge AUE,Hannover 96,2,2,D
+2017-04-23,SV Sandhausen,Karlsruher SC,4,0,H
+2017-04-23,Eintracht Braunschweig,Vfl Bochum,2,0,H
+2017-04-23,FC Wurzburger Kickers,FC Nurnberg,1,1,D
+2017-04-24,VfB Stuttgart,Union Berlin,3,1,H
+2017-04-28,Vfl Bochum,Dynamo Dresden,4,2,H
+2017-04-28,Union Berlin,SV Sandhausen,2,1,H
+2017-04-28,FC St. Pauli,FC Heidenheim,3,0,H
+2017-04-29,FC Nurnberg,VfB Stuttgart,2,3,A
+2017-04-29,Arminia Bielefeld,SpVgg Greuther Furth,1,1,D
+2017-04-29,Karlsruher SC,FC Kaiserslautern,1,3,A
+2017-04-30,Hannover 96,Fortuna Dusseldorf,1,0,H
+2017-04-30,Erzgebirge AUE,FC Wurzburger Kickers,3,1,H
+2017-04-30,TSV 1860 Munich,Eintracht Braunschweig,0,1,A
+2017-05-05,FC Heidenheim,Hannover 96,0,2,A
+2017-05-05,Dynamo Dresden,TSV 1860 Munich,1,2,A
+2017-05-05,FC Kaiserslautern,FC St. Pauli,1,2,A
+2017-05-06,Fortuna Dusseldorf,FC Wurzburger Kickers,1,1,D
+2017-05-06,SV Sandhausen,FC Nurnberg,0,1,A
+2017-05-07,VfB Stuttgart,Erzgebirge AUE,3,0,H
+2017-05-07,Vfl Bochum,Arminia Bielefeld,1,1,D
+2017-05-07,SpVgg Greuther Furth,Karlsruher SC,0,1,A
+2017-05-08,Eintracht Braunschweig,Union Berlin,3,1,H
+2017-05-14,Hannover 96,VfB Stuttgart,1,0,H
+2017-05-14,FC Nurnberg,Fortuna Dusseldorf,2,3,A
+2017-05-14,Union Berlin,FC Heidenheim,0,1,A
+2017-05-14,FC St. Pauli,SpVgg Greuther Furth,1,1,D
+2017-05-14,Arminia Bielefeld,Eintracht Braunschweig,6,0,H
+2017-05-14,Erzgebirge AUE,FC Kaiserslautern,1,0,H
+2017-05-14,FC Wurzburger Kickers,SV Sandhausen,0,1,A
+2017-05-14,Karlsruher SC,Dynamo Dresden,3,4,A
+2017-05-14,TSV 1860 Munich,Vfl Bochum,1,2,A
+2017-05-21,Fortuna Dusseldorf,Erzgebirge AUE,1,0,H
+2017-05-21,VfB Stuttgart,FC Wurzburger Kickers,4,1,H
+2017-05-21,Vfl Bochum,FC St. Pauli,1,3,A
+2017-05-21,SpVgg Greuther Furth,Union Berlin,1,2,A
+2017-05-21,FC Heidenheim,TSV 1860 Munich,2,1,H
+2017-05-21,Dynamo Dresden,Arminia Bielefeld,1,1,D
+2017-05-21,SV Sandhausen,Hannover 96,1,1,D
+2017-05-21,Eintracht Braunschweig,Karlsruher SC,2,1,H
+2017-05-21,FC Kaiserslautern,FC Nurnberg,1,0,H

@@ -1,0 +1,469 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2017-08-18,Lorca FC,Cultural Leonesa,2,0,H
+2017-08-18,Tenerife,Zaragoza,1,0,H
+2017-08-19,Alcorcon,Sporting Gijon,0,0,D
+2017-08-19,Osasuna,Sevilla Atletico,1,1,D
+2017-08-19,Cordoba,Cadiz,1,2,A
+2017-08-19,Numancia,Huesca,1,0,H
+2017-08-19,Valladolid,Barcelona B,1,2,A
+2017-08-20,Oviedo,Rayo Vallecano,2,3,A
+2017-08-20,Gimnastic,Almeria,0,1,A
+2017-08-20,Granada CF,Albacete,0,0,D
+2017-08-21,Lugo,Reus,0,0,D
+2017-08-25,Albacete,Cordoba,0,3,A
+2017-08-26,Cultural Leonesa,Osasuna,2,1,H
+2017-08-26,Huesca,Lorca FC,2,0,H
+2017-08-26,Rayo Vallecano,Numancia,2,2,D
+2017-08-26,Sevilla Atletico,Valladolid,1,2,A
+2017-08-26,Almeria,Oviedo,1,1,D
+2017-08-27,Sporting Gijon,Lugo,2,0,H
+2017-08-27,Zaragoza,Granada CF,1,1,D
+2017-08-27,Cadiz,Alcorcon,0,0,D
+2017-08-27,Reus,Gimnastic,1,1,D
+2017-08-28,Barcelona B,Tenerife,0,3,A
+2017-09-01,Granada CF,Barcelona B,2,2,D
+2017-09-02,Lugo,Cadiz,0,1,A
+2017-09-02,Numancia,Almeria,1,0,H
+2017-09-02,Gimnastic,Sporting Gijon,0,4,A
+2017-09-02,Lorca FC,Rayo Vallecano,0,0,D
+2017-09-02,Osasuna,Huesca,1,1,D
+2017-09-03,Oviedo,Reus,3,0,H
+2017-09-03,Sevilla Atletico,Cultural Leonesa,1,2,A
+2017-09-03,Valladolid,Tenerife,2,0,H
+2017-09-03,Cordoba,Zaragoza,1,2,A
+2017-09-04,Alcorcon,Albacete,1,0,H
+2017-09-08,Cadiz,Gimnastic,2,0,H
+2017-09-09,Huesca,Sevilla Atletico,0,0,D
+2017-09-09,Barcelona B,Cordoba,4,0,H
+2017-09-09,Sporting Gijon,Oviedo,1,1,D
+2017-09-09,Almeria,Lorca FC,2,1,H
+2017-09-10,Tenerife,Granada CF,2,2,D
+2017-09-10,Zaragoza,Alcorcon,0,1,A
+2017-09-10,Cultural Leonesa,Valladolid,4,4,D
+2017-09-10,Albacete,Lugo,0,1,A
+2017-09-10,Rayo Vallecano,Osasuna,0,3,A
+2017-09-11,Reus,Numancia,1,0,H
+2017-09-15,Lugo,Zaragoza,2,1,H
+2017-09-16,Valladolid,Granada CF,2,1,H
+2017-09-16,Lorca FC,Reus,1,1,D
+2017-09-16,Sevilla Atletico,Rayo Vallecano,0,0,D
+2017-09-16,Osasuna,Almeria,2,1,H
+2017-09-16,Numancia,Sporting Gijon,3,0,H
+2017-09-17,Cultural Leonesa,Huesca,3,2,H
+2017-09-17,Alcorcon,Barcelona B,1,1,D
+2017-09-17,Gimnastic,Albacete,3,1,H
+2017-09-17,Oviedo,Cadiz,1,0,H
+2017-09-17,Cordoba,Tenerife,2,0,H
+2017-09-22,Almeria,Sevilla Atletico,3,0,H
+2017-09-23,Reus,Osasuna,0,0,D
+2017-09-23,Granada CF,Cordoba,3,1,H
+2017-09-23,Sporting Gijon,Lorca FC,1,0,H
+2017-09-23,Tenerife,Alcorcon,4,0,H
+2017-09-24,Huesca,Valladolid,1,0,H
+2017-09-24,Rayo Vallecano,Cultural Leonesa,3,1,H
+2017-09-24,Albacete,Oviedo,2,1,H
+2017-09-24,Cadiz,Numancia,0,0,D
+2017-09-24,Zaragoza,Gimnastic,1,1,D
+2017-09-25,Barcelona B,Lugo,1,2,A
+2017-09-29,Cultural Leonesa,Almeria,0,0,D
+2017-09-30,Valladolid,Cordoba,4,1,H
+2017-09-30,Numancia,Albacete,5,1,H
+2017-09-30,Lorca FC,Cadiz,3,0,H
+2017-10-01,Alcorcon,Granada CF,1,2,A
+2017-10-01,Huesca,Rayo Vallecano,2,1,H
+2017-10-01,Lugo,Tenerife,1,0,H
+2017-10-01,Osasuna,Sporting Gijon,2,0,H
+2017-10-01,Sevilla Atletico,Reus,0,1,A
+2017-10-02,Oviedo,Zaragoza,2,2,D
+2017-10-07,Sporting Gijon,Sevilla Atletico,3,0,H
+2017-10-07,Almeria,Huesca,0,3,A
+2017-10-07,Reus,Cultural Leonesa,1,1,D
+2017-10-07,Tenerife,Gimnastic,2,0,H
+2017-10-07,Cadiz,Osasuna,0,2,A
+2017-10-08,Albacete,Lorca FC,2,1,H
+2017-10-08,Rayo Vallecano,Valladolid,4,1,H
+2017-10-08,Barcelona B,Oviedo,1,1,D
+2017-10-08,Cordoba,Alcorcon,3,0,H
+2017-10-08,Granada CF,Lugo,2,0,H
+2017-10-08,Zaragoza,Numancia,3,0,H
+2017-10-10,Huesca,Reus,1,1,D
+2017-10-10,Cultural Leonesa,Sporting Gijon,0,2,A
+2017-10-11,Gimnastic,Granada CF,2,0,H
+2017-10-11,Numancia,Barcelona B,1,0,H
+2017-10-11,Oviedo,Tenerife,1,1,D
+2017-10-11,Lorca FC,Zaragoza,0,2,A
+2017-10-11,Sevilla Atletico,Cadiz,0,0,D
+2017-10-12,Lugo,Cordoba,2,0,H
+2017-10-12,Valladolid,Alcorcon,4,0,H
+2017-10-12,Osasuna,Albacete,1,0,H
+2017-10-12,Rayo Vallecano,Almeria,1,0,H
+2017-10-13,Sporting Gijon,Huesca,1,1,D
+2017-10-14,Cadiz,Cultural Leonesa,2,2,D
+2017-10-14,Barcelona B,Lorca FC,1,0,H
+2017-10-14,Granada CF,Oviedo,2,0,H
+2017-10-14,Tenerife,Numancia,1,1,D
+2017-10-15,Reus,Rayo Vallecano,0,2,A
+2017-10-15,Albacete,Sevilla Atletico,2,1,H
+2017-10-15,Almeria,Valladolid,1,1,D
+2017-10-15,Cordoba,Gimnastic,1,5,A
+2017-10-15,Zaragoza,Osasuna,1,1,D
+2017-10-16,Alcorcon,Lugo,0,1,A
+2017-10-20,Osasuna,Barcelona B,2,2,D
+2017-10-21,Huesca,Cadiz,1,0,H
+2017-10-21,Numancia,Granada CF,1,3,A
+2017-10-21,Lorca FC,Tenerife,2,2,D
+2017-10-21,Sevilla Atletico,Zaragoza,2,2,D
+2017-10-22,Oviedo,Cordoba,2,0,H
+2017-10-22,Valladolid,Lugo,2,2,D
+2017-10-22,Gimnastic,Alcorcon,0,3,A
+2017-10-22,Rayo Vallecano,Sporting Gijon,1,1,D
+2017-10-22,Almeria,Reus,0,1,A
+2017-10-23,Cultural Leonesa,Albacete,0,0,D
+2017-10-27,Zaragoza,Cultural Leonesa,0,0,D
+2017-10-28,Lugo,Gimnastic,1,0,H
+2017-10-28,Albacete,Huesca,0,0,D
+2017-10-28,Cadiz,Rayo Vallecano,0,0,D
+2017-10-28,Sporting Gijon,Almeria,2,0,H
+2017-10-29,Barcelona B,Sevilla Atletico,1,1,D
+2017-10-29,Cordoba,Numancia,1,1,D
+2017-10-29,Alcorcon,Oviedo,2,0,H
+2017-10-29,Reus,Valladolid,2,2,D
+2017-10-29,Tenerife,Osasuna,0,0,D
+2017-10-30,Granada CF,Lorca FC,4,1,H
+2017-11-01,Gimnastic,Barcelona B,0,0,D
+2017-11-03,Numancia,Alcorcon,1,0,H
+2017-11-04,Rayo Vallecano,Albacete,1,1,D
+2017-11-04,Sevilla Atletico,Tenerife,1,1,D
+2017-11-04,Lorca FC,Cordoba,1,0,H
+2017-11-04,Reus,Sporting Gijon,1,0,H
+2017-11-05,Oviedo,Lugo,3,2,H
+2017-11-05,Cultural Leonesa,Barcelona B,1,1,D
+2017-11-05,Valladolid,Gimnastic,0,3,A
+2017-11-05,Osasuna,Granada CF,0,0,D
+2017-11-05,Almeria,Cadiz,0,2,A
+2017-11-06,Huesca,Zaragoza,3,1,H
+2017-11-10,Cordoba,Osasuna,0,1,A
+2017-11-11,Alcorcon,Lorca FC,1,1,D
+2017-11-11,Albacete,Almeria,2,0,H
+2017-11-11,Tenerife,Cultural Leonesa,2,0,H
+2017-11-11,Zaragoza,Rayo Vallecano,3,2,H
+2017-11-11,Barcelona B,Huesca,0,2,A
+2017-11-12,Granada CF,Sevilla Atletico,1,2,A
+2017-11-12,Gimnastic,Oviedo,1,2,A
+2017-11-12,Lugo,Numancia,0,1,A
+2017-11-12,Sporting Gijon,Valladolid,1,1,D
+2017-11-13,Cadiz,Reus,1,0,H
+2017-11-17,Almeria,Zaragoza,3,0,H
+2017-11-18,Huesca,Tenerife,3,0,H
+2017-11-18,Valladolid,Oviedo,3,1,H
+2017-11-18,Lorca FC,Lugo,1,2,A
+2017-11-18,Reus,Albacete,1,1,D
+2017-11-19,Numancia,Gimnastic,1,2,A
+2017-11-19,Rayo Vallecano,Barcelona B,1,0,H
+2017-11-19,Osasuna,Alcorcon,2,3,A
+2017-11-19,Sevilla Atletico,Cordoba,1,1,D
+2017-11-19,Cultural Leonesa,Granada CF,1,1,D
+2017-11-19,Sporting Gijon,Cadiz,0,3,A
+2017-11-24,Tenerife,Rayo Vallecano,2,2,D
+2017-11-25,Cadiz,Valladolid,1,0,H
+2017-11-25,Gimnastic,Lorca FC,0,2,A
+2017-11-25,Oviedo,Numancia,3,1,H
+2017-11-25,Alcorcon,Sevilla Atletico,0,0,D
+2017-11-25,Zaragoza,Reus,0,0,D
+2017-11-26,Barcelona B,Almeria,1,1,D
+2017-11-26,Granada CF,Huesca,2,0,H
+2017-11-26,Cordoba,Cultural Leonesa,2,2,D
+2017-11-26,Lugo,Osasuna,1,0,H
+2017-11-26,Albacete,Sporting Gijon,2,2,D
+2017-12-02,Huesca,Cordoba,3,1,H
+2017-12-02,Rayo Vallecano,Granada CF,1,0,H
+2017-12-02,Reus,Barcelona B,2,1,H
+2017-12-02,Lorca FC,Oviedo,0,2,A
+2017-12-03,Cultural Leonesa,Alcorcon,2,2,D
+2017-12-03,Valladolid,Numancia,2,3,A
+2017-12-03,Cadiz,Albacete,2,0,H
+2017-12-03,Sevilla Atletico,Lugo,1,1,D
+2017-12-03,Almeria,Tenerife,2,1,H
+2017-12-03,Sporting Gijon,Zaragoza,0,1,A
+2017-12-08,Granada CF,Almeria,3,2,H
+2017-12-08,Barcelona B,Sporting Gijon,2,1,H
+2017-12-09,Albacete,Valladolid,2,1,H
+2017-12-09,Alcorcon,Huesca,1,1,D
+2017-12-09,Numancia,Lorca FC,1,0,H
+2017-12-09,Zaragoza,Cadiz,0,2,A
+2017-12-10,Cordoba,Rayo Vallecano,2,2,D
+2017-12-10,Lugo,Cultural Leonesa,3,1,H
+2017-12-10,Gimnastic,Sevilla Atletico,2,1,H
+2017-12-10,Oviedo,Osasuna,1,0,H
+2017-12-10,Tenerife,Reus,3,0,H
+2017-12-15,Cadiz,Barcelona B,3,1,H
+2017-12-16,Osasuna,Numancia,2,2,D
+2017-12-16,Valladolid,Lorca FC,3,0,H
+2017-12-16,Reus,Granada CF,0,0,D
+2017-12-16,Almeria,Cordoba,1,0,H
+2017-12-16,Albacete,Zaragoza,0,0,D
+2017-12-17,Sevilla Atletico,Oviedo,0,1,A
+2017-12-17,Huesca,Lugo,3,0,H
+2017-12-17,Cultural Leonesa,Gimnastic,2,0,H
+2017-12-17,Sporting Gijon,Tenerife,3,0,H
+2017-12-17,Rayo Vallecano,Alcorcon,2,1,H
+2017-12-19,Barcelona B,Albacete,0,1,A
+2017-12-19,Valladolid,Zaragoza,3,2,H
+2017-12-20,Lorca FC,Osasuna,0,1,A
+2017-12-20,Cordoba,Reus,5,0,H
+2017-12-20,Granada CF,Sporting Gijon,2,1,H
+2017-12-21,Numancia,Sevilla Atletico,3,0,H
+2017-12-21,Tenerife,Cadiz,1,1,D
+2017-12-22,Lugo,Rayo Vallecano,1,2,A
+2017-12-22,Alcorcon,Almeria,2,0,H
+2017-12-23,Gimnastic,Huesca,1,2,A
+2017-12-23,Oviedo,Cultural Leonesa,3,0,H
+2018-01-06,Sporting Gijon,Cordoba,3,2,H
+2018-01-06,Cadiz,Granada CF,1,0,H
+2018-01-06,Rayo Vallecano,Gimnastic,2,3,A
+2018-01-06,Reus,Alcorcon,1,1,D
+2018-01-06,Zaragoza,Barcelona B,1,1,D
+2018-01-07,Osasuna,Valladolid,4,2,H
+2018-01-07,Sevilla Atletico,Lorca FC,3,2,H
+2018-01-07,Albacete,Tenerife,1,2,A
+2018-01-07,Cultural Leonesa,Numancia,2,2,D
+2018-01-07,Huesca,Oviedo,1,1,D
+2018-01-07,Almeria,Lugo,1,0,H
+2018-01-12,Rayo Vallecano,Oviedo,2,2,D
+2018-01-13,Barcelona B,Valladolid,0,1,A
+2018-01-13,Almeria,Gimnastic,1,1,D
+2018-01-13,Sporting Gijon,Alcorcon,3,0,H
+2018-01-13,Reus,Lugo,0,1,A
+2018-01-13,Zaragoza,Tenerife,1,0,H
+2018-01-14,Huesca,Numancia,2,1,H
+2018-01-14,Cadiz,Cordoba,2,0,H
+2018-01-14,Albacete,Granada CF,2,1,H
+2018-01-14,Cultural Leonesa,Lorca FC,2,1,H
+2018-01-14,Sevilla Atletico,Osasuna,0,1,A
+2018-01-18,Osasuna,Gimnastic,0,2,A
+2018-01-19,Granada CF,Zaragoza,2,1,H
+2018-01-20,Valladolid,Sevilla Atletico,1,0,H
+2018-01-20,Cordoba,Albacete,1,0,H
+2018-01-20,Oviedo,Almeria,2,1,H
+2018-01-20,Lorca FC,Huesca,2,3,A
+2018-01-20,Lugo,Sporting Gijon,3,1,H
+2018-01-21,Alcorcon,Cadiz,1,0,H
+2018-01-21,Osasuna,Cultural Leonesa,2,1,H
+2018-01-21,Gimnastic,Reus,1,2,A
+2018-01-21,Numancia,Rayo Vallecano,0,0,D
+2018-01-21,Tenerife,Barcelona B,1,3,A
+2018-01-26,Zaragoza,Cordoba,1,0,H
+2018-01-27,Barcelona B,Granada CF,3,0,H
+2018-01-27,Rayo Vallecano,Lorca FC,5,1,H
+2018-01-27,Reus,Oviedo,0,0,D
+2018-01-27,Albacete,Alcorcon,2,0,H
+2018-01-27,Cadiz,Lugo,1,1,D
+2018-01-28,Cultural Leonesa,Sevilla Atletico,2,1,H
+2018-01-28,Sporting Gijon,Gimnastic,2,0,H
+2018-01-28,Almeria,Numancia,0,0,D
+2018-01-28,Huesca,Osasuna,1,0,H
+2018-01-28,Tenerife,Valladolid,0,0,D
+2018-02-02,Osasuna,Rayo Vallecano,1,1,D
+2018-02-03,Gimnastic,Cadiz,0,0,D
+2018-02-03,Alcorcon,Zaragoza,1,1,D
+2018-02-03,Valladolid,Cultural Leonesa,3,2,H
+2018-02-03,Lorca FC,Almeria,1,2,A
+2018-02-03,Granada CF,Tenerife,2,1,H
+2018-02-04,Lugo,Albacete,1,1,D
+2018-02-04,Sevilla Atletico,Huesca,0,1,A
+2018-02-04,Numancia,Reus,1,0,H
+2018-02-04,Oviedo,Sporting Gijon,2,1,H
+2018-02-04,Cordoba,Barcelona B,1,2,A
+2018-02-09,Granada CF,Valladolid,1,0,H
+2018-02-10,Sporting Gijon,Numancia,2,0,H
+2018-02-10,Barcelona B,Alcorcon,0,1,A
+2018-02-10,Cadiz,Oviedo,2,1,H
+2018-02-10,Almeria,Osasuna,0,1,A
+2018-02-11,Albacete,Gimnastic,0,1,A
+2018-02-11,Huesca,Cultural Leonesa,1,0,H
+2018-02-11,Rayo Vallecano,Sevilla Atletico,2,0,H
+2018-02-11,Reus,Lorca FC,3,0,H
+2018-02-11,Tenerife,Cordoba,5,1,H
+2018-02-11,Zaragoza,Lugo,2,0,H
+2018-02-16,Valladolid,Huesca,3,2,H
+2018-02-17,Osasuna,Reus,0,0,D
+2018-02-17,Alcorcon,Tenerife,1,1,D
+2018-02-17,Oviedo,Albacete,0,0,D
+2018-02-17,Lorca FC,Sporting Gijon,0,0,D
+2018-02-17,Gimnastic,Zaragoza,0,2,A
+2018-02-18,Sevilla Atletico,Almeria,0,3,A
+2018-02-18,Cordoba,Granada CF,1,2,A
+2018-02-18,Numancia,Cadiz,1,0,H
+2018-02-18,Cultural Leonesa,Rayo Vallecano,2,3,A
+2018-02-18,Lugo,Barcelona B,1,2,A
+2018-02-23,Sporting Gijon,Osasuna,2,0,H
+2018-02-24,Barcelona B,Gimnastic,1,1,D
+2018-02-24,Almeria,Cultural Leonesa,2,1,H
+2018-02-24,Rayo Vallecano,Huesca,3,0,H
+2018-02-24,Cadiz,Lorca FC,0,0,D
+2018-02-25,Cordoba,Valladolid,2,1,H
+2018-02-25,Zaragoza,Oviedo,2,1,H
+2018-02-25,Granada CF,Alcorcon,2,0,H
+2018-02-25,Albacete,Numancia,1,0,H
+2018-02-25,Reus,Sevilla Atletico,2,0,H
+2018-02-26,Tenerife,Lugo,3,1,H
+2018-03-02,Oviedo,Barcelona B,0,0,D
+2018-03-03,Numancia,Zaragoza,1,2,A
+2018-03-03,Cultural Leonesa,Reus,2,0,H
+2018-03-03,Osasuna,Cadiz,1,0,H
+2018-03-03,Lugo,Granada CF,2,1,H
+2018-03-04,Lorca FC,Albacete,1,2,A
+2018-03-04,Gimnastic,Tenerife,1,2,A
+2018-03-04,Alcorcon,Cordoba,1,2,A
+2018-03-04,Valladolid,Rayo Vallecano,1,1,D
+2018-03-04,Sevilla Atletico,Sporting Gijon,0,1,A
+2018-03-04,Huesca,Almeria,2,2,D
+2018-03-09,Tenerife,Oviedo,3,1,H
+2018-03-10,Granada CF,Gimnastic,0,1,A
+2018-03-10,Alcorcon,Valladolid,0,0,D
+2018-03-10,Almeria,Rayo Vallecano,0,1,A
+2018-03-10,Cadiz,Sevilla Atletico,4,1,H
+2018-03-11,Zaragoza,Lorca FC,3,1,H
+2018-03-11,Barcelona B,Numancia,2,2,D
+2018-03-11,Cordoba,Lugo,1,0,H
+2018-03-11,Albacete,Osasuna,0,0,D
+2018-03-11,Sporting Gijon,Cultural Leonesa,4,0,H
+2018-03-11,Reus,Huesca,0,0,D
+2018-03-16,Sevilla Atletico,Albacete,1,2,A
+2018-03-17,Osasuna,Zaragoza,1,2,A
+2018-03-17,Lugo,Alcorcon,2,1,H
+2018-03-17,Lorca FC,Barcelona B,1,1,D
+2018-03-17,Cultural Leonesa,Cadiz,0,1,A
+2018-03-18,Valladolid,Almeria,2,1,H
+2018-03-18,Rayo Vallecano,Reus,3,2,H
+2018-03-18,Gimnastic,Cordoba,0,2,A
+2018-03-18,Oviedo,Granada CF,2,1,H
+2018-03-18,Numancia,Tenerife,2,0,H
+2018-03-19,Huesca,Sporting Gijon,0,2,A
+2018-03-24,Albacete,Cultural Leonesa,0,0,D
+2018-03-24,Lugo,Valladolid,0,0,D
+2018-03-24,Cordoba,Oviedo,1,1,D
+2018-03-24,Reus,Almeria,1,0,H
+2018-03-24,Sporting Gijon,Rayo Vallecano,1,0,H
+2018-03-25,Alcorcon,Gimnastic,1,0,H
+2018-03-25,Zaragoza,Sevilla Atletico,0,1,A
+2018-03-25,Barcelona B,Osasuna,0,2,A
+2018-03-25,Tenerife,Lorca FC,2,0,H
+2018-03-25,Granada CF,Numancia,1,0,H
+2018-03-26,Cadiz,Huesca,1,1,D
+2018-03-31,Numancia,Cordoba,2,1,H
+2018-03-31,Cultural Leonesa,Zaragoza,0,1,A
+2018-03-31,Oviedo,Alcorcon,0,1,A
+2018-03-31,Valladolid,Reus,1,0,H
+2018-04-01,Sevilla Atletico,Barcelona B,3,1,H
+2018-04-01,Lorca FC,Granada CF,3,2,H
+2018-04-01,Osasuna,Tenerife,0,1,A
+2018-04-01,Almeria,Sporting Gijon,1,3,A
+2018-04-01,Rayo Vallecano,Cadiz,1,1,D
+2018-04-01,Gimnastic,Lugo,3,0,H
+2018-04-06,Cadiz,Almeria,0,0,D
+2018-04-07,Barcelona B,Cultural Leonesa,0,1,A
+2018-04-07,Granada CF,Osasuna,1,1,D
+2018-04-07,Alcorcon,Numancia,0,1,A
+2018-04-07,Zaragoza,Huesca,1,0,H
+2018-04-07,Albacete,Rayo Vallecano,0,1,A
+2018-04-08,Gimnastic,Valladolid,1,0,H
+2018-04-08,Lugo,Oviedo,0,1,A
+2018-04-08,Cordoba,Lorca FC,1,0,H
+2018-04-08,Sporting Gijon,Reus,2,1,H
+2018-04-08,Tenerife,Sevilla Atletico,2,0,H
+2018-04-12,Huesca,Albacete,0,0,D
+2018-04-14,Reus,Cadiz,1,0,H
+2018-04-14,Numancia,Lugo,2,0,H
+2018-04-14,Lorca FC,Alcorcon,1,1,D
+2018-04-14,Cultural Leonesa,Tenerife,3,2,H
+2018-04-15,Osasuna,Cordoba,1,1,D
+2018-04-15,Valladolid,Sporting Gijon,0,1,A
+2018-04-15,Almeria,Albacete,1,1,D
+2018-04-15,Rayo Vallecano,Zaragoza,2,1,H
+2018-04-15,Sevilla Atletico,Granada CF,0,0,D
+2018-04-15,Oviedo,Gimnastic,1,0,H
+2018-04-16,Huesca,Barcelona B,2,1,H
+2018-04-20,Cordoba,Sevilla Atletico,3,0,H
+2018-04-20,Oviedo,Valladolid,1,2,A
+2018-04-21,Gimnastic,Numancia,0,0,D
+2018-04-21,Zaragoza,Almeria,2,1,H
+2018-04-21,Tenerife,Huesca,2,4,A
+2018-04-21,Albacete,Reus,0,1,A
+2018-04-22,Alcorcon,Osasuna,0,0,D
+2018-04-22,Barcelona B,Rayo Vallecano,2,3,A
+2018-04-22,Lugo,Lorca FC,1,1,D
+2018-04-22,Cadiz,Sporting Gijon,0,0,D
+2018-04-22,Granada CF,Cultural Leonesa,3,3,D
+2018-04-27,Reus,Zaragoza,1,1,D
+2018-04-28,Valladolid,Cadiz,1,1,D
+2018-04-28,Almeria,Barcelona B,1,0,H
+2018-04-28,Osasuna,Lugo,1,1,D
+2018-04-28,Sevilla Atletico,Alcorcon,1,0,H
+2018-04-28,Huesca,Granada CF,2,1,H
+2018-04-29,Numancia,Oviedo,3,0,H
+2018-04-29,Sporting Gijon,Albacete,2,1,H
+2018-04-29,Cultural Leonesa,Cordoba,2,1,H
+2018-04-29,Rayo Vallecano,Tenerife,3,1,H
+2018-04-29,Lorca FC,Gimnastic,1,0,H
+2018-05-04,Alcorcon,Cultural Leonesa,0,0,D
+2018-05-05,Cordoba,Huesca,2,4,A
+2018-05-05,Numancia,Valladolid,0,1,A
+2018-05-05,Barcelona B,Reus,0,1,A
+2018-05-05,Zaragoza,Sporting Gijon,2,1,H
+2018-05-05,Tenerife,Almeria,0,0,D
+2018-05-06,Gimnastic,Osasuna,0,2,A
+2018-05-06,Oviedo,Lorca FC,2,0,H
+2018-05-06,Lugo,Sevilla Atletico,1,0,H
+2018-05-06,Albacete,Cadiz,1,1,D
+2018-05-07,Granada CF,Rayo Vallecano,0,2,A
+2018-05-11,Lorca FC,Numancia,2,1,H
+2018-05-12,Valladolid,Albacete,3,2,H
+2018-05-12,Sporting Gijon,Barcelona B,2,3,A
+2018-05-12,Osasuna,Oviedo,2,1,H
+2018-05-12,Reus,Tenerife,1,1,D
+2018-05-13,Cultural Leonesa,Lugo,1,1,D
+2018-05-13,Huesca,Alcorcon,1,1,D
+2018-05-13,Rayo Vallecano,Cordoba,1,2,A
+2018-05-13,Sevilla Atletico,Gimnastic,1,0,H
+2018-05-13,Almeria,Granada CF,2,0,H
+2018-05-14,Cadiz,Zaragoza,2,0,H
+2018-05-18,Tenerife,Sporting Gijon,1,0,H
+2018-05-19,Gimnastic,Cultural Leonesa,5,3,H
+2018-05-19,Oviedo,Sevilla Atletico,2,1,H
+2018-05-19,Granada CF,Reus,1,0,H
+2018-05-19,Lorca FC,Valladolid,1,5,A
+2018-05-20,Barcelona B,Cadiz,3,1,H
+2018-05-20,Numancia,Osasuna,1,1,D
+2018-05-20,Alcorcon,Rayo Vallecano,4,0,H
+2018-05-20,Zaragoza,Albacete,4,1,H
+2018-05-20,Cordoba,Almeria,2,0,H
+2018-05-21,Lugo,Huesca,0,2,A
+2018-05-27,Albacete,Barcelona B,0,0,D
+2018-05-27,Almeria,Alcorcon,0,0,D
+2018-05-27,Cadiz,Tenerife,1,1,D
+2018-05-27,Cultural Leonesa,Oviedo,2,0,H
+2018-05-27,Huesca,Gimnastic,0,1,A
+2018-05-27,Osasuna,Lorca FC,1,0,H
+2018-05-27,Rayo Vallecano,Lugo,1,0,H
+2018-05-27,Reus,Cordoba,1,2,A
+2018-05-27,Sevilla Atletico,Numancia,2,1,H
+2018-05-27,Sporting Gijon,Granada CF,2,1,H
+2018-05-27,Zaragoza,Valladolid,3,2,H
+2018-06-01,Lorca FC,Sevilla Atletico,2,1,H
+2018-06-02,Alcorcon,Reus,3,0,H
+2018-06-02,Barcelona B,Zaragoza,0,2,A
+2018-06-02,Cordoba,Sporting Gijon,3,0,H
+2018-06-02,Gimnastic,Rayo Vallecano,2,0,H
+2018-06-02,Granada CF,Cadiz,2,1,H
+2018-06-02,Lugo,Almeria,1,1,D
+2018-06-02,Numancia,Cultural Leonesa,2,1,H
+2018-06-02,Oviedo,Huesca,2,1,H
+2018-06-02,Tenerife,Albacete,1,1,D
+2018-06-02,Valladolid,Osasuna,2,0,H
+2018-06-06,Numancia,Zaragoza,1,1,D
+2018-06-07,Valladolid,Sporting Gijon,3,1,H
+2018-06-09,Zaragoza,Numancia,1,2,A
+2018-06-10,Sporting Gijon,Valladolid,1,2,A
+2018-06-13,Numancia,Valladolid,0,3,A
+2018-06-16,Valladolid,Numancia,1,1,D

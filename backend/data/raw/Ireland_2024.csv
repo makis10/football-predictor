@@ -1,0 +1,182 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,PSH,PSD,PSA
+16/02/2024,Bohemians,Sligo Rovers,2,2,D,2.04,3.46,3.91
+16/02/2024,Derry City,Drogheda,2,1,H,1.33,5.36,10.18
+16/02/2024,Galway,St. Patricks,0,1,A,2.41,3.49,3.02
+16/02/2024,Shamrock Rovers,Dundalk,1,1,D,1.43,4.67,7.91
+16/02/2024,Waterford,Shelbourne,1,1,D,3.73,3.29,2.17
+23/02/2024,Drogheda,Waterford,1,4,A,2.76,3.33,2.7
+23/02/2024,Dundalk,Galway,0,2,A,2.35,3.21,3.39
+23/02/2024,Shelbourne,Shamrock Rovers,2,1,H,3.68,3.09,2.28
+23/02/2024,St. Patricks,Bohemians,0,1,A,2.42,3.38,3.08
+24/02/2024,Sligo Rovers,Derry City,0,0,D,4.38,3.51,1.92
+01/03/2024,Derry City,St. Patricks,2,1,H,1.81,3.47,5.1
+01/03/2024,Galway,Waterford,2,1,H,1.94,3.38,4.48
+01/03/2024,Sligo Rovers,Shelbourne,0,1,A,3.24,3.09,2.49
+04/03/2024,Drogheda,Bohemians,2,1,H,3.13,3.6,2.29
+04/03/2024,Dundalk,Sligo Rovers,0,5,A,2.26,3.27,3.5
+04/03/2024,Shamrock Rovers,Derry City,2,2,D,2.17,3.31,3.7
+04/03/2024,Shelbourne,Galway,1,0,H,2.72,3.1,2.92
+04/03/2024,Waterford,St. Patricks,3,1,H,3.3,3.33,2.32
+08/03/2024,Bohemians,Shelbourne,0,2,A,3.09,3.09,2.59
+08/03/2024,Derry City,Waterford,3,0,H,1.56,4.11,6.6
+08/03/2024,Galway,Drogheda,0,0,D,1.62,4.05,5.83
+08/03/2024,St. Patricks,Dundalk,1,0,H,1.92,3.5,4.38
+09/03/2024,Sligo Rovers,Shamrock Rovers,0,0,D,4.44,3.61,1.88
+15/03/2024,Bohemians,Derry City,2,1,H,3.4,3.34,2.28
+15/03/2024,Dundalk,Waterford,0,0,D,2.18,3.57,3.4
+15/03/2024,Galway,Shamrock Rovers,0,1,A,3.29,3.42,2.29
+15/03/2024,St. Patricks,Shelbourne,1,2,A,2.76,2.98,2.98
+16/03/2024,Sligo Rovers,Drogheda,3,1,H,1.79,3.63,4.92
+29/03/2024,Derry City,Galway,0,1,A,1.91,3.14,5.01
+29/03/2024,Drogheda,St. Patricks,0,0,D,3.57,3.42,2.14
+29/03/2024,Shamrock Rovers,Bohemians,3,1,H,1.49,4.3,7.07
+29/03/2024,Shelbourne,Dundalk,2,1,H,1.8,3.49,4.99
+29/03/2024,Waterford,Sligo Rovers,0,1,A,2.48,3.09,3.21
+01/04/2024,Dundalk,Drogheda,0,0,D,2.3,3.43,3.2
+01/04/2024,Shelbourne,Derry City,0,0,D,3.5,2.85,2.49
+01/04/2024,St. Patricks,Sligo Rovers,3,0,H,2.38,3.24,3.22
+01/04/2024,Waterford,Shamrock Rovers,1,2,A,5.78,4.22,1.62
+01/04/2024,Galway,Bohemians,0,2,A,1.74,3.53,5.39
+05/04/2024,Bohemians,Waterford,0,1,A,1.93,3.59,4.08
+05/04/2024,Derry City,Dundalk,4,1,H,1.3,5.14,12.1
+05/04/2024,Drogheda,Shelbourne,2,2,D,3.71,3.06,2.26
+05/04/2024,St. Patricks,Shamrock Rovers,2,1,H,4.03,3.68,1.92
+12/04/2024,Drogheda,Derry City,2,2,D,5.53,3.51,1.74
+12/04/2024,Dundalk,St. Patricks,0,0,D,3.22,3.24,2.38
+12/04/2024,Shelbourne,Bohemians,1,2,A,2.14,3.22,3.82
+12/04/2024,Waterford,Galway,0,0,D,3.16,3.18,2.45
+12/04/2024,Shamrock Rovers,Sligo Rovers,3,0,H,1.39,5.06,7.77
+15/04/2024,Bohemians,Dundalk,1,0,H,2,3.36,4.1
+19/04/2024,Bohemians,Drogheda,1,0,H,1.81,3.53,4.39
+19/04/2024,Derry City,Shamrock Rovers,1,3,A,2.5,3.22,3.05
+19/04/2024,Galway,Shelbourne,1,0,H,2.56,3,3.18
+19/04/2024,Sligo Rovers,Dundalk,1,1,D,2.29,3.12,3.55
+19/04/2024,St. Patricks,Waterford,1,1,D,1.79,3.65,4.75
+22/04/2024,Derry City,St. Patricks,3,1,H,1.78,3.53,5.08
+22/04/2024,Shelbourne,Shamrock Rovers,0,0,D,3.66,3.31,2.15
+22/04/2024,Sligo Rovers,Galway,0,0,D,3.6,3.17,2.24
+26/04/2024,Drogheda,Sligo Rovers,3,1,H,2.31,3.2,3.41
+26/04/2024,Dundalk,Bohemians,2,0,H,2.68,3.2,2.83
+26/04/2024,Shelbourne,St. Patricks,1,0,H,2.3,3.03,3.65
+26/04/2024,Waterford,Derry City,0,2,A,4.35,3.29,1.97
+26/04/2024,Shamrock Rovers,Galway,1,1,D,1.77,3.62,4.98
+29/04/2024,Shamrock Rovers,Drogheda,4,0,H,1.38,5.09,8.09
+03/05/2024,Bohemians,Shamrock Rovers,1,1,D,5.09,3.74,1.72
+03/05/2024,Dundalk,Shelbourne,0,0,D,3.35,3.02,2.45
+03/05/2024,Galway,Derry City,0,0,D,3.2,3.18,2.43
+03/05/2024,Sligo Rovers,Waterford,0,1,A,2.26,3.17,3.56
+03/05/2024,St. Patricks,Drogheda,1,0,H,1.83,3.62,4.56
+06/05/2024,Drogheda,Dundalk,2,1,H,2.76,3.24,2.72
+06/05/2024,Bohemians,Galway,0,1,A,2.63,2.95,3.13
+06/05/2024,Shamrock Rovers,Waterford,1,3,A,1.39,4.86,8.44
+06/05/2024,Sligo Rovers,St. Patricks,1,0,H,3.46,3.16,2.31
+06/05/2024,Derry City,Shelbourne,1,1,D,1.99,2.97,4.95
+10/05/2024,Derry City,Bohemians,1,0,H,1.47,4.3,7.52
+10/05/2024,Galway,Sligo Rovers,0,0,D,1.79,3.35,5.41
+10/05/2024,Shamrock Rovers,St. Patricks,2,2,D,1.61,3.91,6.02
+10/05/2024,Shelbourne,Drogheda,1,1,D,1.68,3.64,5.77
+10/05/2024,Waterford,Dundalk,4,1,H,2.36,3.07,3.45
+17/05/2024,Drogheda,Galway,2,3,A,3.12,3.37,2.38
+17/05/2024,Dundalk,Shamrock Rovers,1,0,H,5.5,4.08,1.62
+17/05/2024,Shelbourne,Waterford,1,0,H,1.84,3.36,4.97
+17/05/2024,Sligo Rovers,Bohemians,0,3,A,2.93,3.18,2.62
+17/05/2024,St. Patricks,Derry City,0,1,A,2.9,3.22,2.6
+20/05/2024,St. Patricks,Shelbourne,1,2,A,2.82,2.94,2.92
+20/05/2024,Shamrock Rovers,Derry City,1,0,H,1.97,3.36,4.26
+23/05/2024,Waterford,Drogheda,4,2,H,2.28,3.46,3.2
+24/05/2024,Bohemians,St. Patricks,2,2,D,2.91,3.24,2.59
+24/05/2024,Derry City,Sligo Rovers,2,2,D,1.33,5.18,10.25
+24/05/2024,Galway,Dundalk,2,0,H,2.03,3.16,4.3
+24/05/2024,Shamrock Rovers,Shelbourne,0,2,A,1.72,3.58,5.47
+31/05/2024,Drogheda,Shamrock Rovers,0,2,A,5.06,4.12,1.66
+31/05/2024,Dundalk,Derry City,0,0,D,4.74,3.48,1.84
+31/05/2024,Shelbourne,Sligo Rovers,1,2,A,1.51,4.04,7.51
+31/05/2024,St. Patricks,Galway,2,1,H,2.6,3.13,2.99
+31/05/2024,Waterford,Bohemians,2,1,H,2.77,3.25,2.7
+03/06/2024,Sligo Rovers,Drogheda,2,1,H,2.34,3.32,3.22
+03/06/2024,St. Patricks,Dundalk,2,3,A,1.91,3.44,4.41
+03/06/2024,Derry City,Waterford,3,0,H,1.49,4.28,7.19
+07/06/2024,Derry City,Galway,2,0,H,1.9,3.35,4.52
+07/06/2024,Drogheda,St. Patricks,0,0,D,3.75,3.62,1.99
+07/06/2024,Shelbourne,Dundalk,1,0,H,1.83,3.3,5.06
+07/06/2024,Waterford,Sligo Rovers,4,1,H,1.93,3.46,4.19
+13/06/2024,Bohemians,Derry City,1,2,A,4.16,3.34,2
+13/06/2024,Dundalk,Sligo Rovers,1,0,H,1.8,3.67,4.7
+13/06/2024,Galway,Drogheda,3,0,H,1.61,3.98,5.82
+13/06/2024,St. Patricks,Shamrock Rovers,2,1,H,4.34,4.04,1.78
+13/06/2024,Waterford,Shelbourne,0,1,A,3.21,3.14,2.45
+28/06/2024,Derry City,Drogheda,5,1,H,1.27,5.78,11.77
+28/06/2024,Dundalk,Waterford,0,2,A,2.5,3.29,2.99
+28/06/2024,Shelbourne,Galway,2,0,H,2.4,2.94,3.55
+28/06/2024,Sligo Rovers,Shamrock Rovers,2,0,H,5.51,4.28,1.58
+28/06/2024,St. Patricks,Bohemians,0,0,D,2.2,3.41,3.43
+04/07/2024,Drogheda,Shelbourne,1,1,D,4.78,3.45,1.84
+04/07/2024,Galway,Bohemians,1,1,D,2.27,3.28,3.39
+04/07/2024,Sligo Rovers,Derry City,2,1,H,5.55,3.74,1.68
+04/07/2024,Waterford,St. Patricks,1,0,H,2.66,3.6,2.6
+04/07/2024,Shamrock Rovers,Dundalk,1,0,H,1.36,5.18,8.73
+12/07/2024,Bohemians,Sligo Rovers,0,2,A,1.78,3.91,4.44
+12/07/2024,Dundalk,Drogheda,4,2,H,2.21,3.43,3.39
+12/07/2024,Galway,Waterford,1,0,H,1.95,3.58,4.03
+26/07/2024,Bohemians,Dundalk,1,1,D,1.83,3.84,4.27
+26/07/2024,Drogheda,Waterford,2,0,H,2.53,3.62,2.72
+27/07/2024,Sligo Rovers,Galway,2,0,H,3.43,3.4,2.2
+02/08/2024,Drogheda,Bohemians,2,2,D,3.17,3.66,2.22
+02/08/2024,Dundalk,Galway,0,2,A,3.4,3.14,2.35
+02/08/2024,Waterford,Shamrock Rovers,1,2,A,3.83,3.8,1.93
+04/08/2024,St. Patricks,Sligo Rovers,3,2,H,1.84,3.64,4.46
+05/08/2024,Shelbourne,Derry City,0,0,D,3.93,3.07,2.18
+09/08/2024,Bohemians,Waterford,2,3,A,1.85,3.84,4.14
+09/08/2024,Derry City,Dundalk,1,1,D,1.28,5.66,11.85
+10/08/2024,Sligo Rovers,Shelbourne,2,1,H,3.55,3.06,2.32
+11/08/2024,Galway,St. Patricks,1,1,D,1.72,3.64,5.35
+11/08/2024,Shamrock Rovers,Drogheda,1,1,D,1.36,5.54,7.62
+23/08/2024,Drogheda,Sligo Rovers,7,0,H,2.3,3.37,3.26
+23/08/2024,Shelbourne,Bohemians,1,1,D,2.15,3.32,3.67
+23/08/2024,Waterford,Derry City,0,1,A,4.9,3.73,1.75
+25/08/2024,Shamrock Rovers,Galway,1,1,D,1.85,3.47,4.7
+30/08/2024,Dundalk,Shelbourne,0,1,A,4.62,3.2,1.95
+30/08/2024,Galway,Derry City,1,0,H,3.28,3.03,2.48
+31/08/2024,Sligo Rovers,Waterford,2,0,H,2.83,3.36,2.58
+01/09/2024,Bohemians,Shamrock Rovers,2,1,H,3.58,3.44,2.13
+01/09/2024,St. Patricks,Drogheda,4,1,H,1.82,3.73,4.48
+05/09/2024,Dundalk,St. Patricks,1,2,A,3.97,3.43,2.01
+06/09/2024,Bohemians,Shelbourne,1,1,D,2.55,3.05,3.14
+13/09/2024,Shamrock Rovers,Sligo Rovers,4,0,H,1.3,5.7,10.07
+13/09/2024,Waterford,Dundalk,2,1,H,1.97,3.58,3.9
+16/09/2024,Galway,Shamrock Rovers,1,2,A,3.12,3.15,2.5
+20/09/2024,Bohemians,Drogheda,0,1,A,1.85,3.79,4.21
+20/09/2024,Derry City,Shamrock Rovers,1,1,D,2.31,3.27,3.32
+20/09/2024,Galway,Shelbourne,1,0,H,2.18,3.07,3.92
+20/09/2024,St. Patricks,Waterford,3,0,H,1.59,4.18,5.72
+21/09/2024,Sligo Rovers,Dundalk,2,1,H,2.14,3.57,3.43
+23/09/2024,Drogheda,Galway,0,0,D,3.25,3.52,2.24
+23/09/2024,Shamrock Rovers,Bohemians,1,0,H,1.49,4.3,7.09
+27/09/2024,Drogheda,Derry City,2,1,H,3.96,3.45,2.01
+27/09/2024,Dundalk,Bohemians,0,2,A,3.22,3.49,2.26
+27/09/2024,Shelbourne,Sligo Rovers,0,0,D,1.72,3.72,5.15
+27/09/2024,Waterford,Galway,1,2,A,3.57,3.19,2.24
+27/09/2024,Shamrock Rovers,St. Patricks,0,3,A,1.65,4.03,5.35
+30/09/2024,Shelbourne,St. Patricks,2,3,A,3.1,3.09,2.55
+04/10/2024,Galway,Dundalk,1,1,D,1.34,5.06,9.91
+06/10/2024,Shamrock Rovers,Shelbourne,2,0,H,1.52,3.94,7.6
+11/10/2024,Derry City,Bohemians,1,1,D,1.66,3.89,5.49
+11/10/2024,Waterford,Drogheda,0,0,D,2.62,3.46,2.71
+14/10/2024,Derry City,Sligo Rovers,1,1,D,1.36,5.22,8.54
+14/10/2024,Bohemians,St. Patricks,1,3,A,2.87,3.56,2.44
+18/10/2024,Drogheda,Shamrock Rovers,0,1,A,4.58,4.05,1.74
+18/10/2024,Dundalk,Derry City,0,2,A,5.02,4.15,1.66
+18/10/2024,Shelbourne,Waterford,3,1,H,1.69,3.79,5.31
+18/10/2024,St. Patricks,Galway,2,1,H,2.02,3.44,3.92
+19/10/2024,Sligo Rovers,Bohemians,0,2,A,2.86,3.42,2.53
+25/10/2024,Galway,Sligo Rovers,2,2,D,1.55,4.04,6.68
+25/10/2024,Shelbourne,Drogheda,2,1,H,1.47,4.28,7.56
+25/10/2024,St. Patricks,Derry City,1,0,H,2.35,3.31,3.22
+25/10/2024,Waterford,Bohemians,1,1,D,2.79,3.35,2.62
+27/10/2024,Dundalk,Shamrock Rovers,0,1,A,11.53,6.12,1.25
+01/11/2024,Bohemians,Galway,1,1,D,2.38,3.33,3.14
+01/11/2024,Derry City,Shelbourne,0,1,A,2.21,3.25,3.58
+01/11/2024,Drogheda,Dundalk,0,0,D,1.88,3.78,4.07
+01/11/2024,Shamrock Rovers,Waterford,2,1,H,1.18,7.2,15.9
+01/11/2024,Sligo Rovers,St. Patricks,0,2,A,5.26,4.42,1.6
+16/11/2024,Bray,Drogheda,1,3,A,5.23,3.78,1.67

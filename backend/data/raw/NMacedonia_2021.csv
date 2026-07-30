@@ -1,0 +1,201 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2021-08-08,FK Rabotnicki,Borec,1,0,H
+2021-08-08,Makedonija GjP,Pelister,1,0,H
+2021-08-08,Renova,Skopje,1,1,D
+2021-08-08,Bregalnica Stip,Shkupi 1927,0,0,D
+2021-08-08,Tikves,Shkendija,0,0,D
+2021-08-08,Akademija Pandev,Struga,1,1,D
+2021-08-15,Shkendija,Renova,1,2,A
+2021-08-15,Shkupi 1927,Makedonija GjP,2,0,H
+2021-08-15,Skopje,Bregalnica Stip,0,0,D
+2021-08-15,Borec,Tikves,2,1,H
+2021-08-15,Struga,Pelister,1,0,H
+2021-08-15,Akademija Pandev,FK Rabotnicki,2,0,H
+2021-08-18,FK Rabotnicki,Struga,0,0,D
+2021-08-18,Pelister,Shkupi 1927,0,2,A
+2021-08-18,Makedonija GjP,Skopje,5,1,H
+2021-08-18,Renova,Borec,2,0,H
+2021-08-18,Bregalnica Stip,Shkendija,3,3,D
+2021-08-18,Tikves,Akademija Pandev,0,2,A
+2021-08-22,Shkendija,Makedonija GjP,4,0,H
+2021-08-22,FK Rabotnicki,Tikves,2,1,H
+2021-08-22,Skopje,Pelister,1,0,H
+2021-08-22,Borec,Bregalnica Stip,1,1,D
+2021-08-22,Struga,Shkupi 1927,4,2,H
+2021-08-22,Akademija Pandev,Renova,2,1,H
+2021-08-28,Pelister,Shkendija,2,2,D
+2021-08-28,Shkupi 1927,Skopje,4,1,H
+2021-08-28,Makedonija GjP,Borec,3,2,H
+2021-08-28,Renova,FK Rabotnicki,1,1,D
+2021-08-28,Bregalnica Stip,Akademija Pandev,3,2,H
+2021-08-28,Tikves,Struga,1,1,D
+2021-09-12,FK Rabotnicki,Bregalnica Stip,2,0,H
+2021-09-12,Akademija Pandev,Makedonija GjP,4,1,H
+2021-09-12,Borec,Pelister,2,1,H
+2021-09-12,Struga,Skopje,1,0,H
+2021-09-12,Tikves,Renova,0,2,A
+2021-09-14,Shkendija,Shkupi 1927,0,0,D
+2021-09-19,Pelister,Akademija Pandev,0,0,D
+2021-09-19,Shkupi 1927,Borec,3,0,H
+2021-09-19,Makedonija GjP,FK Rabotnicki,0,2,A
+2021-09-19,Renova,Struga,1,0,H
+2021-09-19,Skopje,Shkendija,0,2,A
+2021-09-19,Bregalnica Stip,Tikves,2,0,H
+2021-09-26,FK Rabotnicki,Pelister,1,1,D
+2021-09-26,Renova,Bregalnica Stip,5,2,H
+2021-09-26,Borec,Skopje,0,2,A
+2021-09-26,Struga,Shkendija,1,1,D
+2021-09-26,Tikves,Makedonija GjP,3,0,H
+2021-09-26,Akademija Pandev,Shkupi 1927,1,3,A
+2021-10-02,Shkendija,Borec,3,0,H
+2021-10-02,Pelister,Tikves,0,0,D
+2021-10-02,Makedonija GjP,Renova,1,1,D
+2021-10-02,Skopje,Akademija Pandev,0,0,D
+2021-10-02,Bregalnica Stip,Struga,1,0,H
+2021-10-03,Shkupi 1927,FK Rabotnicki,2,0,H
+2021-10-15,FK Rabotnicki,Skopje,0,1,A
+2021-10-16,Akademija Pandev,Shkendija,2,1,H
+2021-10-16,Renova,Pelister,2,0,H
+2021-10-16,Bregalnica Stip,Makedonija GjP,4,1,H
+2021-10-16,Struga,Borec,1,1,D
+2021-10-16,Tikves,Shkupi 1927,0,1,A
+2021-10-23,Shkupi 1927,Renova,2,1,H
+2021-10-24,Shkendija,FK Rabotnicki,2,0,H
+2021-10-24,Pelister,Bregalnica Stip,0,3,A
+2021-10-24,Makedonija GjP,Struga,1,1,D
+2021-10-24,Skopje,Tikves,2,1,H
+2021-10-24,Borec,Akademija Pandev,1,2,A
+2021-10-29,Shkupi 1927,Bregalnica Stip,5,0,H
+2021-10-30,Shkendija,Tikves,1,1,D
+2021-10-30,Pelister,Makedonija GjP,0,2,A
+2021-10-30,Skopje,Renova,0,0,D
+2021-10-30,Borec,FK Rabotnicki,0,1,A
+2021-10-30,Struga,Akademija Pandev,0,0,D
+2021-11-06,FK Rabotnicki,Akademija Pandev,0,3,A
+2021-11-06,Pelister,Struga,0,1,A
+2021-11-06,Makedonija GjP,Shkupi 1927,2,1,H
+2021-11-06,Renova,Shkendija,0,1,A
+2021-11-06,Bregalnica Stip,Skopje,2,1,H
+2021-11-06,Tikves,Borec,2,1,H
+2021-11-20,Skopje,Makedonija GjP,1,2,A
+2021-11-21,Shkendija,Bregalnica Stip,1,0,H
+2021-11-21,Shkupi 1927,Pelister,5,0,H
+2021-11-21,Akademija Pandev,Tikves,3,2,H
+2021-11-21,Borec,Renova,1,4,A
+2021-11-21,Struga,FK Rabotnicki,1,0,H
+2021-11-27,Renova,Akademija Pandev,1,2,A
+2021-11-28,Pelister,Skopje,0,0,D
+2021-11-28,Shkupi 1927,Struga,4,0,H
+2021-11-28,Makedonija GjP,Shkendija,1,2,A
+2021-11-28,Bregalnica Stip,Borec,2,1,H
+2021-11-28,Tikves,FK Rabotnicki,2,0,H
+2021-12-04,FK Rabotnicki,Renova,0,0,D
+2021-12-05,Shkendija,Pelister,2,1,H
+2021-12-05,Akademija Pandev,Bregalnica Stip,0,0,D
+2021-12-05,Skopje,Shkupi 1927,1,3,A
+2021-12-05,Borec,Makedonija GjP,1,1,D
+2021-12-05,Struga,Tikves,0,0,D
+2021-12-08,Pelister,Borec,1,3,A
+2021-12-08,Shkupi 1927,Shkendija,1,1,D
+2021-12-08,Makedonija GjP,Akademija Pandev,4,1,H
+2021-12-08,Renova,Tikves,1,1,D
+2021-12-08,Skopje,Struga,1,0,H
+2021-12-08,Bregalnica Stip,FK Rabotnicki,1,2,A
+2021-12-11,Tikves,Bregalnica Stip,1,3,A
+2021-12-12,Shkendija,Skopje,1,0,H
+2021-12-12,FK Rabotnicki,Makedonija GjP,1,2,A
+2021-12-12,Akademija Pandev,Pelister,1,0,H
+2021-12-12,Borec,Shkupi 1927,0,3,A
+2021-12-14,Struga,Renova,1,0,H
+2022-02-12,Bregalnica Stip,Renova,1,2,A
+2022-02-13,Shkendija,Struga,3,1,H
+2022-02-13,Pelister,FK Rabotnicki,0,2,A
+2022-02-13,Shkupi 1927,Akademija Pandev,2,1,H
+2022-02-13,Makedonija GjP,Tikves,1,0,H
+2022-02-13,Skopje,Borec,1,1,D
+2022-02-19,Borec,Shkendija,0,3,A
+2022-02-20,FK Rabotnicki,Shkupi 1927,0,1,A
+2022-02-20,Akademija Pandev,Skopje,5,0,H
+2022-02-20,Renova,Makedonija GjP,0,1,A
+2022-02-20,Struga,Bregalnica Stip,1,1,D
+2022-02-20,Tikves,Pelister,1,0,H
+2022-02-26,Makedonija GjP,Bregalnica Stip,2,1,H
+2022-02-27,Shkendija,Akademija Pandev,0,0,D
+2022-02-27,Shkupi 1927,Tikves,3,2,H
+2022-02-27,Skopje,FK Rabotnicki,0,1,A
+2022-02-27,Borec,Struga,0,1,A
+2022-02-28,Pelister,Renova,1,1,D
+2022-03-05,Tikves,Skopje,3,0,H
+2022-03-09,FK Rabotnicki,Shkendija,2,1,H
+2022-03-09,Akademija Pandev,Borec,5,0,H
+2022-03-09,Renova,Shkupi 1927,0,0,D
+2022-03-09,Bregalnica Stip,Pelister,2,1,H
+2022-03-09,Struga,Makedonija GjP,1,3,A
+2022-03-12,Shkupi 1927,FK Rabotnicki,2,0,H
+2022-03-13,Shkendija,Tikves,2,1,H
+2022-03-13,Akademija Pandev,Struga,1,0,H
+2022-03-13,Makedonija GjP,Skopje,1,1,D
+2022-03-13,Bregalnica Stip,Borec,3,0,H
+2022-03-14,Renova,Pelister,0,0,D
+2022-03-18,Struga,Shkupi 1927,1,3,A
+2022-03-19,Pelister,Bregalnica Stip,2,0,H
+2022-03-19,Renova,FK Rabotnicki,2,1,H
+2022-03-19,Skopje,Shkendija,0,2,A
+2022-03-19,Borec,Makedonija GjP,0,1,A
+2022-03-19,Tikves,Akademija Pandev,1,2,A
+2022-04-02,FK Rabotnicki,Struga,1,3,A
+2022-04-03,Shkendija,Borec,0,0,D
+2022-04-03,Shkupi 1927,Tikves,1,0,H
+2022-04-03,Akademija Pandev,Skopje,1,2,A
+2022-04-03,Makedonija GjP,Pelister,2,0,H
+2022-04-03,Bregalnica Stip,Renova,2,2,D
+2022-04-06,Skopje,Shkupi 1927,0,0,D
+2022-04-06,Pelister,Shkendija,0,2,A
+2022-04-06,Renova,Makedonija GjP,0,1,A
+2022-04-06,Bregalnica Stip,FK Rabotnicki,0,3,A
+2022-04-06,Borec,Akademija Pandev,1,1,D
+2022-04-06,Tikves,Struga,2,0,H
+2022-04-10,FK Rabotnicki,Tikves,1,0,H
+2022-04-10,Shkendija,Renova,1,1,D
+2022-04-10,Shkupi 1927,Borec,3,1,H
+2022-04-10,Akademija Pandev,Pelister,2,0,H
+2022-04-10,Makedonija GjP,Bregalnica Stip,1,1,D
+2022-04-10,Struga,Skopje,1,0,H
+2022-04-16,Pelister,Shkupi 1927,0,1,A
+2022-04-16,Makedonija GjP,FK Rabotnicki,1,0,H
+2022-04-16,Borec,Struga,2,0,H
+2022-04-17,Renova,Akademija Pandev,0,1,A
+2022-04-17,Skopje,Tikves,1,2,A
+2022-04-17,Bregalnica Stip,Shkendija,0,0,D
+2022-04-22,FK Rabotnicki,Skopje,0,1,A
+2022-04-22,Akademija Pandev,Bregalnica Stip,2,1,H
+2022-04-23,Shkendija,Makedonija GjP,3,1,H
+2022-04-23,Shkupi 1927,Renova,2,0,H
+2022-04-23,Struga,Pelister,4,0,H
+2022-04-23,Tikves,Borec,5,0,H
+2022-04-30,Shkendija,FK Rabotnicki,1,0,H
+2022-04-30,Bregalnica Stip,Shkupi 1927,4,1,H
+2022-05-01,Pelister,Tikves,1,1,D
+2022-05-01,Makedonija GjP,Akademija Pandev,1,0,H
+2022-05-01,Renova,Struga,1,1,D
+2022-05-01,Borec,Skopje,1,0,H
+2022-05-04,FK Rabotnicki,Borec,2,1,H
+2022-05-04,Shkupi 1927,Makedonija GjP,1,1,D
+2022-05-04,Akademija Pandev,Shkendija,4,2,H
+2022-05-04,Skopje,Pelister,4,2,H
+2022-05-04,Struga,Bregalnica Stip,1,0,H
+2022-05-04,Tikves,Renova,0,1,A
+2022-05-08,Shkendija,Shkupi 1927,0,0,D
+2022-05-08,Pelister,Borec,2,1,H
+2022-05-08,Akademija Pandev,FK Rabotnicki,2,1,H
+2022-05-08,Makedonija GjP,Struga,1,3,A
+2022-05-08,Renova,Skopje,2,0,H
+2022-05-08,Bregalnica Stip,Tikves,1,0,H
+2022-05-15,FK Rabotnicki,Pelister,2,1,H
+2022-05-15,Shkupi 1927,Akademija Pandev,3,0,H
+2022-05-15,Skopje,Bregalnica Stip,4,1,H
+2022-05-15,Borec,Renova,1,5,A
+2022-05-15,Struga,Shkendija,1,1,D
+2022-05-15,Tikves,Makedonija GjP,2,1,H
+2022-05-22,Skopje,Belasica,2,1,H
+2022-05-22,Tikves,Voska Sport,4,1,H

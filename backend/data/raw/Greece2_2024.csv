@@ -1,0 +1,260 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2024-09-20,Panachaiki FC,AEK Athens II,0,1,A
+2024-09-21,Larisa,Kavala,2,1,H
+2024-09-21,Ethnikos Neou Keramidiou,PAS Giannina,0,1,A
+2024-09-21,Kampaniakos Chalastra,Niki Volos,2,0,H
+2024-09-22,Kissamikos,Kalamata,1,2,A
+2024-09-22,Panargiakos,Kifisia,0,2,A
+2024-09-22,Ilioupoli,Egaleo,1,3,A
+2024-09-22,PAOK II,Iraklis 1908,0,0,D
+2024-09-23,Diagoras,Makedonikos Neapolis,0,0,D
+2024-09-23,Asteras Tripolis II,Panionios,0,0,D
+2024-09-27,AEK Athens II,Ilioupoli,2,2,D
+2024-09-28,PAS Giannina,Iraklis 1908,2,1,H
+2024-09-29,Panionios,Kissamikos,1,0,H
+2024-09-29,Larisa,Diagoras,3,0,H
+2024-09-29,Panachaiki FC,Asteras Tripolis II,1,0,H
+2024-09-29,Kavala,Ethnikos Neou Keramidiou,0,0,D
+2024-09-29,Makedonikos Neapolis,Kampaniakos Chalastra,1,0,H
+2024-09-29,Egaleo,Kifisia,0,0,D
+2024-09-30,Niki Volos,PAOK II,1,1,D
+2024-09-30,Kalamata,Panargiakos,2,1,H
+2024-10-04,PAOK II,Makedonikos Neapolis,2,1,H
+2024-10-05,Ethnikos Neou Keramidiou,Larisa,1,3,A
+2024-10-05,Iraklis 1908,Kavala,1,1,D
+2024-10-06,Panargiakos,Panionios,0,2,A
+2024-10-06,PAS Giannina,Niki Volos,0,0,D
+2024-10-06,Kifisia,AEK Athens II,4,2,H
+2024-10-06,Egaleo,Kalamata,1,1,D
+2024-10-07,Diagoras,Kampaniakos Chalastra,0,1,A
+2024-10-07,Asteras Tripolis II,Kissamikos,1,1,D
+2024-10-07,Ilioupoli,Panachaiki FC,2,1,H
+2024-10-11,Kampaniakos Chalastra,PAOK II,1,3,A
+2024-10-12,Larisa,Iraklis 1908,3,0,H
+2024-10-13,AEK Athens II,Kalamata,2,2,D
+2024-10-13,Kissamikos,Panargiakos,1,2,A
+2024-10-13,Ethnikos Neou Keramidiou,Diagoras,0,0,D
+2024-10-13,Makedonikos Neapolis,PAS Giannina,3,1,H
+2024-10-13,Ilioupoli,Asteras Tripolis II,1,0,H
+2024-10-13,Panachaiki FC,Kifisia,1,2,A
+2024-10-13,Kavala,Niki Volos,1,1,D
+2024-10-14,Panionios,Egaleo,2,0,H
+2024-10-18,PAS Giannina,Kampaniakos Chalastra,2,1,H
+2024-10-19,Panionios,AEK Athens II,2,1,H
+2024-10-19,Kifisia,Ilioupoli,5,0,H
+2024-10-19,PAOK II,Diagoras,1,2,A
+2024-10-20,Kalamata,Panachaiki FC,1,0,H
+2024-10-20,Egaleo,Kissamikos,1,0,H
+2024-10-20,Makedonikos Neapolis,Kavala,4,2,H
+2024-10-20,Iraklis 1908,Ethnikos Neou Keramidiou,1,0,H
+2024-10-20,Asteras Tripolis II,Panargiakos,1,3,A
+2024-10-21,Niki Volos,Larisa,3,3,D
+2024-10-25,Iraklis 1908,Diagoras,1,0,H
+2024-10-26,Kifisia,Asteras Tripolis II,3,3,D
+2024-10-26,Panachaiki FC,Panionios,1,1,D
+2024-10-27,PAOK II,PAS Giannina,4,0,H
+2024-10-27,Kissamikos,AEK Athens II,0,1,A
+2024-10-27,Ethnikos Neou Keramidiou,Niki Volos,0,2,A
+2024-10-27,Panargiakos,Egaleo,1,0,H
+2024-10-27,Ilioupoli,Kalamata,0,2,A
+2024-10-28,Kampaniakos Chalastra,Kavala,3,1,H
+2024-10-28,Larisa,Makedonikos Neapolis,2,0,H
+2024-11-01,Kampaniakos Chalastra,Larisa,0,2,A
+2024-11-02,Egaleo,Asteras Tripolis II,1,0,H
+2024-11-02,Niki Volos,Iraklis 1908,1,0,H
+2024-11-03,PAS Giannina,Diagoras,2,1,H
+2024-11-03,Kavala,PAOK II,0,1,A
+2024-11-03,Makedonikos Neapolis,Ethnikos Neou Keramidiou,2,1,H
+2024-11-03,Panionios,Ilioupoli,2,0,H
+2024-11-04,Kissamikos,Panachaiki FC,0,0,D
+2024-11-04,AEK Athens II,Panargiakos,0,2,A
+2024-11-04,Kalamata,Kifisia,1,1,D
+2024-11-08,Diagoras,Niki Volos,0,0,D
+2024-11-08,Iraklis 1908,Makedonikos Neapolis,3,0,H
+2024-11-09,PAOK II,Larisa,0,1,A
+2024-11-09,Panargiakos,Panachaiki FC,0,1,A
+2024-11-10,Kavala,PAS Giannina,2,4,A
+2024-11-10,AEK Athens II,Egaleo,1,1,D
+2024-11-10,Ilioupoli,Kissamikos,1,0,H
+2024-11-10,Asteras Tripolis II,Kalamata,1,3,A
+2024-11-11,Ethnikos Neou Keramidiou,Kampaniakos Chalastra,0,0,D
+2024-11-11,Kifisia,Panionios,2,1,H
+2024-11-15,Panachaiki FC,Egaleo,2,0,H
+2024-11-16,Diagoras,Kavala,1,1,D
+2024-11-16,Larisa,PAS Giannina,1,1,D
+2024-11-16,Panargiakos,Ilioupoli,0,1,A
+2024-11-17,Kalamata,Panionios,1,1,D
+2024-11-17,Kissamikos,Kifisia,0,3,A
+2024-11-17,Asteras Tripolis II,AEK Athens II,2,0,H
+2024-11-18,Niki Volos,Makedonikos Neapolis,0,3,A
+2024-11-18,Kampaniakos Chalastra,Iraklis 1908,3,3,D
+2024-11-22,PAS Giannina,Ethnikos Neou Keramidiou,1,0,H
+2024-11-23,Kavala,Larisa,0,3,A
+2024-11-23,AEK Athens II,Panachaiki FC,0,0,D
+2024-11-23,Kifisia,Panargiakos,1,0,H
+2024-11-24,Iraklis 1908,PAOK II,2,0,H
+2024-11-24,Niki Volos,Kampaniakos Chalastra,2,2,D
+2024-11-24,Panionios,Asteras Tripolis II,2,2,D
+2024-11-24,Makedonikos Neapolis,Diagoras,3,1,H
+2024-11-25,Kalamata,Kissamikos,2,1,H
+2024-11-25,Egaleo,Ilioupoli,2,0,H
+2024-11-27,PAOK II,Ethnikos Neou Keramidiou,0,1,A
+2024-11-29,Kifisia,Egaleo,4,0,H
+2024-11-30,Diagoras,Larisa,0,1,A
+2024-11-30,Iraklis 1908,PAS Giannina,3,1,H
+2024-11-30,Asteras Tripolis II,Panachaiki FC,2,1,H
+2024-12-01,Kissamikos,Panionios,1,1,D
+2024-12-01,Ilioupoli,AEK Athens II,3,3,D
+2024-12-01,Kampaniakos Chalastra,Makedonikos Neapolis,1,1,D
+2024-12-02,PAOK II,Niki Volos,0,4,A
+2024-12-02,Panargiakos,Kalamata,0,1,A
+2024-12-06,Kampaniakos Chalastra,Diagoras,1,0,H
+2024-12-07,Kissamikos,Asteras Tripolis II,2,0,H
+2024-12-07,Niki Volos,PAS Giannina,1,1,D
+2024-12-07,Larisa,Ethnikos Neou Keramidiou,1,0,H
+2024-12-08,Kavala,Iraklis 1908,0,1,A
+2024-12-08,Panachaiki FC,Ilioupoli,0,1,A
+2024-12-08,Kalamata,Egaleo,3,0,H
+2024-12-08,AEK Athens II,Kifisia,2,3,A
+2024-12-09,Makedonikos Neapolis,PAOK II,3,1,H
+2024-12-09,Panionios,Panargiakos,4,0,H
+2024-12-13,Kalamata,AEK Athens II,1,0,H
+2024-12-14,Niki Volos,Kavala,2,0,H
+2024-12-14,Iraklis 1908,Larisa,1,2,A
+2024-12-14,PAS Giannina,Makedonikos Neapolis,3,1,H
+2024-12-15,Egaleo,Panionios,1,2,A
+2024-12-15,Kifisia,Panachaiki FC,2,0,H
+2024-12-15,Diagoras,Ethnikos Neou Keramidiou,0,0,D
+2024-12-15,Panargiakos,Kissamikos,2,2,D
+2024-12-16,PAOK II,Kampaniakos Chalastra,1,3,A
+2024-12-16,Asteras Tripolis II,Ilioupoli,1,1,D
+2024-12-20,Diagoras,PAOK II,1,0,H
+2024-12-20,Kampaniakos Chalastra,PAS Giannina,2,2,D
+2024-12-20,Ethnikos Neou Keramidiou,Iraklis 1908,0,1,A
+2024-12-21,Kavala,Makedonikos Neapolis,1,0,H
+2024-12-21,AEK Athens II,Panionios,0,0,D
+2024-12-22,Panachaiki FC,Kalamata,0,1,A
+2024-12-22,Ilioupoli,Kifisia,0,2,A
+2024-12-22,Panargiakos,Asteras Tripolis II,1,2,A
+2024-12-22,Larisa,Niki Volos,3,0,H
+2024-12-23,Kissamikos,Egaleo,3,0,H
+2025-01-05,Ethnikos Neou Keramidiou,Kavala,0,1,A
+2025-01-11,AEK Athens II,Kissamikos,0,3,A
+2025-01-11,Makedonikos Neapolis,Larisa,0,1,A
+2025-01-11,Asteras Tripolis II,Kifisia,0,3,A
+2025-01-12,Panionios,Panachaiki FC,3,1,H
+2025-01-12,Diagoras,Iraklis 1908,0,4,A
+2025-01-12,Kalamata,Ilioupoli,1,0,H
+2025-01-12,Kavala,Kampaniakos Chalastra,0,2,A
+2025-01-12,Egaleo,Panargiakos,1,0,H
+2025-01-13,Niki Volos,Ethnikos Neou Keramidiou,2,2,D
+2025-01-13,PAS Giannina,PAOK II,1,0,H
+2025-01-17,Panargiakos,AEK Athens II,0,3,A
+2025-01-18,Diagoras,PAS Giannina,0,0,D
+2025-01-18,Larisa,Kampaniakos Chalastra,3,0,H
+2025-01-18,PAOK II,Kavala,3,0,H
+2025-01-19,Kifisia,Kalamata,1,0,H
+2025-01-19,Panachaiki FC,Kissamikos,0,0,D
+2025-01-19,Ethnikos Neou Keramidiou,Makedonikos Neapolis,1,2,A
+2025-01-19,Ilioupoli,Panionios,1,1,D
+2025-01-20,Asteras Tripolis II,Egaleo,0,0,D
+2025-01-20,Iraklis 1908,Niki Volos,2,1,H
+2025-01-25,PAS Giannina,Kavala,0,0,D
+2025-01-25,Larisa,PAOK II,2,1,H
+2025-01-25,Niki Volos,Diagoras,0,1,A
+2025-01-25,Makedonikos Neapolis,Iraklis 1908,0,2,A
+2025-01-25,Kampaniakos Chalastra,Ethnikos Neou Keramidiou,3,0,H
+2025-01-26,Panionios,Kifisia,2,0,H
+2025-01-26,Kissamikos,Ilioupoli,3,2,H
+2025-01-26,Panachaiki FC,Panargiakos,1,1,D
+2025-01-26,Kalamata,Asteras Tripolis II,2,0,H
+2025-01-26,Egaleo,AEK Athens II,0,0,D
+2025-02-01,PAS Giannina,Larisa,1,1,D
+2025-02-01,Ethnikos Neou Keramidiou,PAOK II,2,3,A
+2025-02-01,Kavala,Diagoras,0,0,D
+2025-02-01,Makedonikos Neapolis,Niki Volos,0,0,D
+2025-02-01,Iraklis 1908,Kampaniakos Chalastra,5,0,H
+2025-02-02,Panionios,Kalamata,0,1,A
+2025-02-02,Kifisia,Kissamikos,2,1,H
+2025-02-02,Egaleo,Panachaiki FC,3,1,H
+2025-02-02,Ilioupoli,Panargiakos,1,1,D
+2025-02-02,AEK Athens II,Asteras Tripolis II,2,1,H
+2025-02-22,Kissamikos,Panachaiki FC,1,0,H
+2025-02-22,Panargiakos,AEK Athens II,0,0,D
+2025-02-22,Kalamata,Panionios,2,0,H
+2025-02-22,Kifisia,Egaleo,1,0,H
+2025-02-23,Iraklis 1908,Larisa,2,2,D
+2025-02-23,Kampaniakos Chalastra,Makedonikos Neapolis,3,2,H
+2025-02-23,Niki Volos,Kavala,1,1,D
+2025-02-23,Diagoras,Ethnikos Neou Keramidiou,1,0,H
+2025-03-01,Ethnikos Neou Keramidiou,Niki Volos,1,1,D
+2025-03-01,Kavala,PAOK II,1,0,H
+2025-03-01,Larisa,Kampaniakos Chalastra,4,1,H
+2025-03-01,Makedonikos Neapolis,PAS Giannina,3,1,H
+2025-03-02,Panionios,Kifisia,0,1,A
+2025-03-02,Egaleo,Ilioupoli,1,0,H
+2025-03-02,AEK Athens II,Kissamikos,0,1,A
+2025-03-02,Asteras Tripolis II,Panachaiki FC,1,2,A
+2025-03-08,Kissamikos,Panargiakos,2,0,H
+2025-03-08,Asteras Tripolis II,AEK Athens II,1,0,H
+2025-03-08,Kifisia,Kalamata,0,0,D
+2025-03-08,Ilioupoli,Panionios,0,3,A
+2025-03-09,PAS Giannina,Larisa,1,1,D
+2025-03-09,Kampaniakos Chalastra,Iraklis 1908,0,3,A
+2025-03-09,Niki Volos,Diagoras,2,1,H
+2025-03-09,PAOK II,Ethnikos Neou Keramidiou,2,1,H
+2025-03-15,Ethnikos Neou Keramidiou,Kavala,0,2,A
+2025-03-15,Diagoras,PAOK II,0,1,A
+2025-03-15,Larisa,Makedonikos Neapolis,3,0,H
+2025-03-15,Iraklis 1908,PAS Giannina,2,2,D
+2025-03-16,Panionios,Egaleo,2,1,H
+2025-03-16,Kalamata,Ilioupoli,2,0,H
+2025-03-16,Panargiakos,Asteras Tripolis II,1,0,H
+2025-03-16,AEK Athens II,Panachaiki FC,1,1,D
+2025-03-22,Panachaiki FC,Panargiakos,1,0,H
+2025-03-22,Asteras Tripolis II,Kissamikos,1,2,A
+2025-03-22,Egaleo,Kalamata,0,1,A
+2025-03-22,Ilioupoli,Kifisia,0,3,A
+2025-03-23,PAS Giannina,Kampaniakos Chalastra,4,1,H
+2025-03-23,Makedonikos Neapolis,Iraklis 1908,1,2,A
+2025-03-23,Kavala,Diagoras,2,1,H
+2025-03-29,Ethnikos Neou Keramidiou,Diagoras,0,1,A
+2025-03-29,Kavala,Niki Volos,0,0,D
+2025-03-29,Larisa,Iraklis 1908,1,1,D
+2025-03-29,Makedonikos Neapolis,Kampaniakos Chalastra,1,1,D
+2025-03-30,Panionios,Kalamata,1,2,A
+2025-03-30,Egaleo,Kifisia,0,1,A
+2025-03-30,Panachaiki FC,Kissamikos,2,2,D
+2025-03-30,AEK Athens II,Panargiakos,2,2,D
+2025-04-02,PAOK II,Niki Volos,1,1,D
+2025-04-05,Kissamikos,AEK Athens II,0,1,A
+2025-04-05,Panachaiki FC,Asteras Tripolis II,1,0,H
+2025-04-05,Kifisia,Panionios,0,0,D
+2025-04-05,Ilioupoli,Egaleo,1,0,H
+2025-04-06,PAS Giannina,Makedonikos Neapolis,2,0,H
+2025-04-06,Kampaniakos Chalastra,Larisa,1,2,A
+2025-04-06,Niki Volos,Ethnikos Neou Keramidiou,1,0,H
+2025-04-06,PAOK II,Kavala,0,0,D
+2025-04-12,Ethnikos Neou Keramidiou,PAOK II,0,2,A
+2025-04-12,Diagoras,Niki Volos,3,0,H
+2025-04-12,Larisa,PAS Giannina,5,0,H
+2025-04-12,Iraklis 1908,Kampaniakos Chalastra,3,0,H
+2025-04-13,Panionios,Ilioupoli,2,0,H
+2025-04-13,Kalamata,Kifisia,0,1,A
+2025-04-13,Panargiakos,Kissamikos,1,0,H
+2025-04-13,AEK Athens II,Asteras Tripolis II,0,2,A
+2025-04-26,Panachaiki FC,AEK Athens II,1,0,H
+2025-04-26,Egaleo,Panionios,0,4,A
+2025-04-26,Ilioupoli,Kalamata,1,3,A
+2025-04-26,Asteras Tripolis II,Panargiakos,3,2,H
+2025-04-27,PAS Giannina,Iraklis 1908,0,3,A
+2025-04-27,Kavala,Ethnikos Neou Keramidiou,1,0,H
+2025-04-27,Makedonikos Neapolis,Larisa,0,3,A
+2025-04-28,PAOK II,Diagoras,0,0,D
+2025-05-03,Niki Volos,PAOK II,1,1,D
+2025-05-03,Diagoras,Kavala,2,2,D
+2025-05-03,Iraklis 1908,Makedonikos Neapolis,2,1,H
+2025-05-03,Kampaniakos Chalastra,PAS Giannina,2,2,D
+2025-05-04,Kissamikos,Asteras Tripolis II,2,2,D
+2025-05-04,Kalamata,Egaleo,4,1,H
+2025-05-04,Kifisia,Ilioupoli,2,0,H

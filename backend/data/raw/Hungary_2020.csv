@@ -1,0 +1,199 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2020-08-14,MTK Budapest,Ferencvarosi TC,1,1,D
+2020-08-15,Paks,Ujpest,1,2,A
+2020-08-15,Zalaegerszegi TE,Fehervar FC,3,3,D
+2020-08-16,Diosgyori VTK,Mezokovesd-zsory,2,1,H
+2020-08-17,Budafoki LC,Kisvarda FC,2,1,H
+2020-08-21,Mezokovesd-zsory,Zalaegerszegi TE,1,1,D
+2020-08-21,MTK Budapest,Budapest Honved,3,1,H
+2020-08-22,Fehervar FC,Paks,1,1,D
+2020-08-23,Ujpest,Budafoki LC,1,1,D
+2020-08-28,Diosgyori VTK,MTK Budapest,1,1,D
+2020-08-29,Paks,Mezokovesd-zsory,1,2,A
+2020-08-30,Budafoki LC,Fehervar FC,1,4,A
+2020-08-30,Zalaegerszegi TE,Ferencvarosi TC,1,2,A
+2020-08-30,Budapest Honved,Kisvarda FC,1,2,A
+2020-08-30,Puskas Academy,Ujpest,3,2,H
+2020-09-04,Kisvarda FC,Puskas Academy,0,3,A
+2020-09-11,Ferencvarosi TC,Paks,5,0,H
+2020-09-12,Mezokovesd-zsory,Budafoki LC,1,0,H
+2020-09-12,Diosgyori VTK,Budapest Honved,2,4,A
+2020-09-12,Fehervar FC,Puskas Academy,3,1,H
+2020-09-13,Ujpest,Kisvarda FC,2,4,A
+2020-09-13,MTK Budapest,Zalaegerszegi TE,0,3,A
+2020-09-25,Puskas Academy,Mezokovesd-zsory,1,0,H
+2020-09-26,Paks,MTK Budapest,4,0,H
+2020-09-26,Zalaegerszegi TE,Diosgyori VTK,3,1,H
+2020-09-27,Budapest Honved,Ujpest,1,2,A
+2020-10-02,MTK Budapest,Budafoki LC,1,2,A
+2020-10-03,Mezokovesd-zsory,Kisvarda FC,1,2,A
+2020-10-03,Diosgyori VTK,Paks,1,2,A
+2020-10-04,Zalaegerszegi TE,Budapest Honved,2,4,A
+2020-10-04,Ferencvarosi TC,Puskas Academy,2,1,H
+2020-10-04,Fehervar FC,Ujpest,5,1,H
+2020-10-16,Kisvarda FC,Ferencvarosi TC,0,2,A
+2020-10-17,Budafoki LC,Diosgyori VTK,2,1,H
+2020-10-17,Ujpest,Mezokovesd-zsory,1,0,H
+2020-10-17,Puskas Academy,MTK Budapest,0,3,A
+2020-10-18,Paks,Zalaegerszegi TE,3,1,H
+2020-10-18,Budapest Honved,Fehervar FC,2,2,D
+2020-10-24,MTK Budapest,Kisvarda FC,1,1,D
+2020-10-24,Paks,Budapest Honved,0,0,D
+2020-10-24,Ferencvarosi TC,Ujpest,2,0,H
+2020-10-25,Zalaegerszegi TE,Budafoki LC,1,3,A
+2020-10-25,Mezokovesd-zsory,Fehervar FC,1,2,A
+2020-10-25,Diosgyori VTK,Puskas Academy,3,0,H
+2020-10-31,Puskas Academy,Zalaegerszegi TE,1,2,A
+2020-10-31,Budapest Honved,Mezokovesd-zsory,1,1,D
+2020-10-31,Fehervar FC,Ferencvarosi TC,1,1,D
+2020-11-01,Budafoki LC,Paks,2,3,A
+2020-11-01,Ujpest,MTK Budapest,0,4,A
+2020-11-01,Kisvarda FC,Diosgyori VTK,1,0,H
+2020-11-04,Puskas Academy,Budapest Honved,1,0,H
+2020-11-06,Diosgyori VTK,Ujpest,3,0,H
+2020-11-07,Paks,Puskas Academy,6,2,H
+2020-11-07,MTK Budapest,Fehervar FC,3,1,H
+2020-11-08,Zalaegerszegi TE,Kisvarda FC,1,2,A
+2020-11-08,Ferencvarosi TC,Mezokovesd-zsory,3,0,H
+2020-11-20,Kisvarda FC,Paks,3,1,H
+2020-11-21,Puskas Academy,Budafoki LC,3,0,H
+2020-11-21,Mezokovesd-zsory,MTK Budapest,0,1,A
+2020-11-21,Budapest Honved,Ferencvarosi TC,0,1,A
+2020-11-22,Fehervar FC,Diosgyori VTK,3,0,H
+2020-11-27,Ujpest,Paks,1,1,D
+2020-11-28,Kisvarda FC,Budafoki LC,0,0,D
+2020-11-28,Fehervar FC,Zalaegerszegi TE,2,0,H
+2020-11-28,Ferencvarosi TC,MTK Budapest,2,0,H
+2020-11-29,Mezokovesd-zsory,Diosgyori VTK,2,1,H
+2020-11-29,Budapest Honved,Puskas Academy,0,1,A
+2020-12-04,Budafoki LC,Ujpest,1,1,D
+2020-12-05,Zalaegerszegi TE,Mezokovesd-zsory,3,0,H
+2020-12-05,Diosgyori VTK,Ferencvarosi TC,1,3,A
+2020-12-05,Puskas Academy,Kisvarda FC,0,0,D
+2020-12-06,Budapest Honved,MTK Budapest,2,2,D
+2020-12-06,Paks,Fehervar FC,1,0,H
+2020-12-11,Ujpest,Puskas Academy,1,2,A
+2020-12-12,Kisvarda FC,Budapest Honved,0,0,D
+2020-12-12,Ferencvarosi TC,Zalaegerszegi TE,2,0,H
+2020-12-12,Fehervar FC,Budafoki LC,4,1,H
+2020-12-13,Mezokovesd-zsory,Paks,4,3,H
+2020-12-13,MTK Budapest,Diosgyori VTK,1,0,H
+2020-12-15,Kisvarda FC,Ujpest,1,1,D
+2020-12-15,Fehervar FC,Puskas Academy,1,1,D
+2020-12-16,Budapest Honved,Diosgyori VTK,5,1,H
+2020-12-16,Zalaegerszegi TE,MTK Budapest,2,0,H
+2020-12-16,Paks,Ferencvarosi TC,1,3,A
+2020-12-16,Budafoki LC,Mezokovesd-zsory,0,1,A
+2020-12-18,Fehervar FC,Kisvarda FC,3,0,H
+2020-12-19,MTK Budapest,Paks,3,1,H
+2020-12-19,Diosgyori VTK,Zalaegerszegi TE,1,3,A
+2020-12-19,Ferencvarosi TC,Budafoki LC,2,1,H
+2020-12-20,Mezokovesd-zsory,Puskas Academy,1,0,H
+2020-12-20,Ujpest,Budapest Honved,2,1,H
+2020-12-23,Ujpest,Zalaegerszegi TE,3,2,H
+2020-12-23,Budafoki LC,Budapest Honved,1,2,A
+2021-01-20,Ferencvarosi TC,Diosgyori VTK,0,1,A
+2021-01-23,Kisvarda FC,Mezokovesd-zsory,0,0,D
+2021-01-23,Puskas Academy,Ferencvarosi TC,1,1,D
+2021-01-23,Ujpest,Fehervar FC,0,5,A
+2021-01-24,Budafoki LC,MTK Budapest,2,2,D
+2021-01-24,Paks,Diosgyori VTK,2,1,H
+2021-01-24,Budapest Honved,Zalaegerszegi TE,2,2,D
+2021-01-27,Kisvarda FC,Fehervar FC,2,1,H
+2021-01-27,Budafoki LC,Ferencvarosi TC,0,3,A
+2021-01-30,MTK Budapest,Puskas Academy,0,1,A
+2021-01-30,Mezokovesd-zsory,Ujpest,3,2,H
+2021-01-30,Ferencvarosi TC,Kisvarda FC,1,1,D
+2021-01-30,Fehervar FC,Budapest Honved,1,2,A
+2021-01-31,Zalaegerszegi TE,Paks,4,4,D
+2021-01-31,Diosgyori VTK,Budafoki LC,1,1,D
+2021-02-02,Kisvarda FC,MTK Budapest,0,2,A
+2021-02-02,Fehervar FC,Mezokovesd-zsory,0,0,D
+2021-02-03,Puskas Academy,Diosgyori VTK,2,0,H
+2021-02-03,Budapest Honved,Paks,1,1,D
+2021-02-03,Ujpest,Ferencvarosi TC,0,4,A
+2021-02-03,Budafoki LC,Zalaegerszegi TE,3,1,H
+2021-02-06,Diosgyori VTK,Kisvarda FC,2,0,H
+2021-02-06,Mezokovesd-zsory,Budapest Honved,2,1,H
+2021-02-06,MTK Budapest,Ujpest,1,3,A
+2021-02-07,Paks,Budafoki LC,4,1,H
+2021-02-07,Zalaegerszegi TE,Puskas Academy,1,2,A
+2021-02-07,Ferencvarosi TC,Fehervar FC,2,0,H
+2021-02-12,Ujpest,Diosgyori VTK,1,0,H
+2021-02-13,Puskas Academy,Paks,3,2,H
+2021-02-13,Kisvarda FC,Zalaegerszegi TE,2,1,H
+2021-02-13,Budapest Honved,Budafoki LC,2,3,A
+2021-02-14,Mezokovesd-zsory,Ferencvarosi TC,2,2,D
+2021-02-14,Fehervar FC,MTK Budapest,1,2,A
+2021-02-19,MTK Budapest,Mezokovesd-zsory,0,0,D
+2021-02-20,Zalaegerszegi TE,Ujpest,3,0,H
+2021-02-20,Fehervar FC,Diosgyori VTK,1,3,A
+2021-02-20,Ferencvarosi TC,Budapest Honved,1,0,H
+2021-02-21,Budafoki LC,Puskas Academy,0,3,A
+2021-02-21,Paks,Kisvarda FC,3,0,H
+2021-02-26,Diosgyori VTK,Mezokovesd-zsory,2,2,D
+2021-02-27,Budafoki LC,Kisvarda FC,2,0,H
+2021-02-27,Puskas Academy,Budapest Honved,1,2,A
+2021-02-27,MTK Budapest,Ferencvarosi TC,2,2,D
+2021-02-28,Paks,Ujpest,1,3,A
+2021-02-28,Zalaegerszegi TE,Fehervar FC,0,2,A
+2021-03-02,Kisvarda FC,Puskas Academy,0,1,A
+2021-03-02,Budapest Honved,MTK Budapest,3,2,H
+2021-03-02,Ferencvarosi TC,Diosgyori VTK,1,0,H
+2021-03-03,Mezokovesd-zsory,Zalaegerszegi TE,2,0,H
+2021-03-03,Ujpest,Budafoki LC,2,0,H
+2021-03-03,Fehervar FC,Paks,2,2,D
+2021-03-05,Diosgyori VTK,MTK Budapest,0,0,D
+2021-03-06,Paks,Mezokovesd-zsory,2,2,D
+2021-03-06,Puskas Academy,Ujpest,2,1,H
+2021-03-07,Budapest Honved,Kisvarda FC,0,1,A
+2021-03-07,Zalaegerszegi TE,Ferencvarosi TC,2,2,D
+2021-03-07,Budafoki LC,Fehervar FC,1,2,A
+2021-03-13,Ujpest,Kisvarda FC,3,0,H
+2021-03-13,MTK Budapest,Zalaegerszegi TE,3,0,H
+2021-03-13,Diosgyori VTK,Budapest Honved,0,0,D
+2021-03-14,Mezokovesd-zsory,Budafoki LC,2,1,H
+2021-03-14,Ferencvarosi TC,Paks,5,2,H
+2021-03-14,Puskas Academy,Fehervar FC,1,0,H
+2021-04-03,Paks,MTK Budapest,3,1,H
+2021-04-03,Zalaegerszegi TE,Diosgyori VTK,2,0,H
+2021-04-03,Budapest Honved,Ujpest,2,2,D
+2021-04-04,Kisvarda FC,Fehervar FC,0,0,D
+2021-04-04,Budafoki LC,Ferencvarosi TC,0,4,A
+2021-04-04,Puskas Academy,Mezokovesd-zsory,2,0,H
+2021-04-09,Mezokovesd-zsory,Kisvarda FC,0,1,A
+2021-04-10,MTK Budapest,Budafoki LC,0,0,D
+2021-04-10,Fehervar FC,Ujpest,4,0,H
+2021-04-10,Ferencvarosi TC,Puskas Academy,1,1,D
+2021-04-11,Diosgyori VTK,Paks,1,4,A
+2021-04-11,Zalaegerszegi TE,Budapest Honved,0,1,A
+2021-04-16,Budafoki LC,Diosgyori VTK,1,2,A
+2021-04-17,Ujpest,Mezokovesd-zsory,3,0,H
+2021-04-17,Kisvarda FC,Ferencvarosi TC,0,0,D
+2021-04-17,Paks,Zalaegerszegi TE,1,1,D
+2021-04-18,Puskas Academy,MTK Budapest,3,0,H
+2021-04-18,Budapest Honved,Fehervar FC,2,3,A
+2021-04-20,Zalaegerszegi TE,Budafoki LC,5,0,H
+2021-04-20,Ferencvarosi TC,Ujpest,3,0,H
+2021-04-21,MTK Budapest,Kisvarda FC,0,1,A
+2021-04-21,Diosgyori VTK,Puskas Academy,2,1,H
+2021-04-21,Mezokovesd-zsory,Fehervar FC,1,3,A
+2021-04-21,Paks,Budapest Honved,2,0,H
+2021-04-24,Puskas Academy,Zalaegerszegi TE,1,4,A
+2021-04-24,Kisvarda FC,Diosgyori VTK,0,1,A
+2021-04-24,Ujpest,MTK Budapest,1,3,A
+2021-04-25,Budafoki LC,Paks,2,9,A
+2021-04-25,Fehervar FC,Ferencvarosi TC,1,2,A
+2021-04-25,Budapest Honved,Mezokovesd-zsory,2,2,D
+2021-04-29,Diosgyori VTK,Ujpest,0,0,D
+2021-04-29,MTK Budapest,Fehervar FC,1,3,A
+2021-04-30,Paks,Puskas Academy,4,2,H
+2021-05-01,Zalaegerszegi TE,Kisvarda FC,0,0,D
+2021-05-01,Ferencvarosi TC,Mezokovesd-zsory,2,1,H
+2021-05-02,Budafoki LC,Budapest Honved,0,1,A
+2021-05-07,Mezokovesd-zsory,MTK Budapest,5,1,H
+2021-05-08,Budapest Honved,Ferencvarosi TC,1,2,A
+2021-05-08,Ujpest,Zalaegerszegi TE,5,4,H
+2021-05-09,Puskas Academy,Budafoki LC,5,0,H
+2021-05-09,Diosgyori VTK,Fehervar FC,0,4,A
+2021-05-09,Kisvarda FC,Paks,5,1,H

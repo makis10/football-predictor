@@ -1,0 +1,183 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2023-03-03,Flora Tallinn,Laagri,4,0,H
+2023-03-04,Tallinna Kalev,Kalju Nomme,0,0,D
+2023-03-05,Paide,Trans Narva,2,1,H
+2023-03-05,FC Levadia Tallinn,Vaprus,0,0,D
+2023-03-07,Kuressaare,Laagri,1,1,D
+2023-03-14,Flora Tallinn,Trans Narva,5,0,H
+2023-03-15,FC Levadia Tallinn,Tammeka,3,0,H
+2023-03-15,Laagri,Tallinna Kalev,0,2,A
+2023-03-15,Paide,Kuressaare,0,1,A
+2023-03-16,Vaprus,Kalju Nomme,1,1,D
+2023-03-18,Trans Narva,FC Levadia Tallinn,0,2,A
+2023-03-18,Tallinna Kalev,Flora Tallinn,0,2,A
+2023-03-19,Kuressaare,Vaprus,1,2,A
+2023-03-19,Laagri,Kalju Nomme,1,2,A
+2023-03-19,Tammeka,Paide,0,0,D
+2023-04-01,Flora Tallinn,Tammeka,1,1,D
+2023-04-01,Paide,Laagri,1,0,H
+2023-04-01,Kalju Nomme,Trans Narva,2,0,H
+2023-04-02,Vaprus,Tallinna Kalev,0,2,A
+2023-04-02,FC Levadia Tallinn,Kuressaare,4,1,H
+2023-04-08,Laagri,Trans Narva,1,2,A
+2023-04-08,Kuressaare,Flora Tallinn,1,4,A
+2023-04-08,Vaprus,Tammeka,1,0,H
+2023-04-09,Kalju Nomme,Paide,1,1,D
+2023-04-09,Tallinna Kalev,FC Levadia Tallinn,0,2,A
+2023-04-15,Paide,Tallinna Kalev,0,1,A
+2023-04-15,FC Levadia Tallinn,Laagri,6,1,H
+2023-04-16,Tammeka,Kalju Nomme,0,2,A
+2023-04-16,Flora Tallinn,Vaprus,4,0,H
+2023-04-16,Trans Narva,Kuressaare,0,1,A
+2023-04-18,Paide,FC Levadia Tallinn,1,1,D
+2023-04-19,Vaprus,Trans Narva,1,0,H
+2023-04-19,Tammeka,Tallinna Kalev,1,2,A
+2023-04-19,Kalju Nomme,Flora Tallinn,2,2,D
+2023-04-22,Trans Narva,Tallinna Kalev,2,1,H
+2023-04-23,Laagri,Tammeka,2,3,A
+2023-04-23,Flora Tallinn,FC Levadia Tallinn,0,2,A
+2023-04-23,Kuressaare,Kalju Nomme,2,0,H
+2023-04-23,Vaprus,Paide,2,2,D
+2023-04-28,Tammeka,Trans Narva,1,1,D
+2023-04-28,Laagri,Vaprus,1,2,A
+2023-04-29,Tallinna Kalev,Kuressaare,0,3,A
+2023-04-29,Paide,Flora Tallinn,1,3,A
+2023-04-29,Kalju Nomme,FC Levadia Tallinn,0,1,A
+2023-05-02,Trans Narva,Laagri,2,0,H
+2023-05-02,Kalju Nomme,Tallinna Kalev,1,2,A
+2023-05-03,Tammeka,Flora Tallinn,0,3,A
+2023-05-03,FC Levadia Tallinn,Paide,2,0,H
+2023-05-03,Vaprus,Kuressaare,1,2,A
+2023-05-06,Laagri,FC Levadia Tallinn,2,1,H
+2023-05-07,Kuressaare,Paide,1,4,A
+2023-05-07,Flora Tallinn,Kalju Nomme,3,1,H
+2023-05-07,Trans Narva,Vaprus,0,2,A
+2023-05-07,Tallinna Kalev,Tammeka,1,1,D
+2023-05-12,Kalju Nomme,Laagri,1,1,D
+2023-05-13,Vaprus,Tallinna Kalev,0,2,A
+2023-05-13,Paide,Tammeka,0,0,D
+2023-05-14,Kuressaare,Flora Tallinn,0,3,A
+2023-05-14,Trans Narva,FC Levadia Tallinn,0,1,A
+2023-05-19,Laagri,Flora Tallinn,0,1,A
+2023-05-20,Trans Narva,Kalju Nomme,0,2,A
+2023-05-20,Kuressaare,Tallinna Kalev,1,2,A
+2023-05-21,Tammeka,FC Levadia Tallinn,2,2,D
+2023-05-21,Paide,Vaprus,0,1,A
+2023-05-23,Trans Narva,Flora Tallinn,0,1,A
+2023-05-23,Laagri,Kuressaare,1,1,D
+2023-05-24,Kalju Nomme,Tammeka,1,2,A
+2023-05-24,Tallinna Kalev,Paide,1,1,D
+2023-05-24,Vaprus,FC Levadia Tallinn,0,0,D
+2023-05-27,Tammeka,Kuressaare,0,0,D
+2023-05-27,Flora Tallinn,Tallinna Kalev,3,0,H
+2023-05-28,FC Levadia Tallinn,Kalju Nomme,2,1,H
+2023-05-28,Vaprus,Laagri,0,1,A
+2023-05-28,Paide,Trans Narva,1,2,A
+2023-06-06,Kuressaare,FC Levadia Tallinn,0,2,A
+2023-06-06,Kalju Nomme,Vaprus,1,0,H
+2023-06-07,Tallinna Kalev,Trans Narva,0,1,A
+2023-06-07,Tammeka,Laagri,2,0,H
+2023-06-07,Flora Tallinn,Paide,0,0,D
+2023-06-10,Vaprus,Flora Tallinn,1,5,A
+2023-06-10,Kalju Nomme,Kuressaare,2,0,H
+2023-06-11,Laagri,Paide,0,1,A
+2023-06-11,FC Levadia Tallinn,Tallinna Kalev,2,1,H
+2023-06-11,Trans Narva,Tammeka,2,0,H
+2023-06-27,Kuressaare,Trans Narva,3,0,H
+2023-06-27,Tammeka,Vaprus,2,3,A
+2023-06-27,Paide,Kalju Nomme,0,0,D
+2023-06-28,Tallinna Kalev,Laagri,1,1,D
+2023-06-28,FC Levadia Tallinn,Flora Tallinn,0,0,D
+2023-06-30,Vaprus,Paide,1,1,D
+2023-07-01,Laagri,Kuressaare,1,1,D
+2023-07-01,FC Levadia Tallinn,Trans Narva,3,0,H
+2023-07-02,Kalju Nomme,Tallinna Kalev,1,2,A
+2023-07-02,Flora Tallinn,Tammeka,3,0,H
+2023-07-07,Paide,Flora Tallinn,0,0,D
+2023-07-08,Trans Narva,Vaprus,0,4,A
+2023-07-08,Tallinna Kalev,Kuressaare,1,3,A
+2023-07-09,Laagri,Tammeka,3,0,H
+2023-07-09,FC Levadia Tallinn,Kalju Nomme,3,0,H
+2023-07-22,Tallinna Kalev,Vaprus,1,1,D
+2023-07-22,Kalju Nomme,Laagri,1,0,H
+2023-07-23,Kuressaare,Paide,0,4,A
+2023-07-23,Tammeka,FC Levadia Tallinn,0,0,D
+2023-07-23,Flora Tallinn,Trans Narva,1,4,A
+2023-07-28,Flora Tallinn,Vaprus,1,1,D
+2023-07-31,Kuressaare,Tammeka,3,1,H
+2023-08-04,Flora Tallinn,Kuressaare,4,0,H
+2023-08-05,Kalju Nomme,Trans Narva,4,0,H
+2023-08-05,Tallinna Kalev,Tammeka,1,1,D
+2023-08-06,Laagri,Paide,0,1,A
+2023-08-06,Vaprus,FC Levadia Tallinn,0,3,A
+2023-08-12,Paide,Tallinna Kalev,1,1,D
+2023-08-12,FC Levadia Tallinn,Laagri,1,1,D
+2023-08-13,Tammeka,Kalju Nomme,1,1,D
+2023-08-13,Trans Narva,Kuressaare,2,0,H
+2023-08-18,Laagri,Trans Narva,0,2,A
+2023-08-19,Paide,Tammeka,6,3,H
+2023-08-19,Vaprus,Kalju Nomme,3,3,D
+2023-08-20,Kuressaare,FC Levadia Tallinn,2,1,H
+2023-08-20,Tallinna Kalev,Flora Tallinn,1,1,D
+2023-08-25,Flora Tallinn,Laagri,2,0,H
+2023-08-26,Tammeka,Vaprus,0,0,D
+2023-08-26,FC Levadia Tallinn,Tallinna Kalev,1,1,D
+2023-08-27,Trans Narva,Paide,0,0,D
+2023-08-27,Kalju Nomme,Kuressaare,4,1,H
+2023-09-01,Trans Narva,Tallinna Kalev,2,1,H
+2023-09-02,Laagri,Vaprus,0,4,A
+2023-09-02,Kuressaare,Tammeka,1,1,D
+2023-09-03,Paide,Kalju Nomme,2,0,H
+2023-09-03,Flora Tallinn,FC Levadia Tallinn,2,2,D
+2023-09-15,Tammeka,Trans Narva,3,0,H
+2023-09-16,Tallinna Kalev,Laagri,2,1,H
+2023-09-16,FC Levadia Tallinn,Paide,1,0,H
+2023-09-17,Kalju Nomme,Flora Tallinn,0,0,D
+2023-09-17,Vaprus,Kuressaare,3,1,H
+2023-09-22,Flora Tallinn,Tallinna Kalev,1,0,H
+2023-09-23,Trans Narva,Laagri,1,3,A
+2023-09-23,Paide,Vaprus,3,0,H
+2023-09-23,Kalju Nomme,Tammeka,4,1,H
+2023-09-23,FC Levadia Tallinn,Kuressaare,4,0,H
+2023-09-26,Kuressaare,Kalju Nomme,0,2,A
+2023-09-26,Laagri,FC Levadia Tallinn,0,1,A
+2023-09-27,Tallinna Kalev,Paide,2,1,H
+2023-09-27,Vaprus,Trans Narva,3,2,H
+2023-09-27,Tammeka,Flora Tallinn,1,2,A
+2023-09-30,Laagri,Kalju Nomme,1,0,H
+2023-09-30,Tammeka,Paide,1,2,A
+2023-10-01,Kuressaare,Tallinna Kalev,1,1,D
+2023-10-01,Vaprus,Flora Tallinn,0,1,A
+2023-10-01,FC Levadia Tallinn,Trans Narva,3,0,H
+2023-10-07,Kalju Nomme,Vaprus,1,1,D
+2023-10-07,Tallinna Kalev,FC Levadia Tallinn,1,2,A
+2023-10-07,Trans Narva,Tammeka,2,0,H
+2023-10-07,Flora Tallinn,Kuressaare,3,0,H
+2023-10-08,Paide,Laagri,4,0,H
+2023-10-21,Tallinna Kalev,Vaprus,1,0,H
+2023-10-21,Trans Narva,Kalju Nomme,2,1,H
+2023-10-21,FC Levadia Tallinn,Tammeka,2,1,H
+2023-10-22,Paide,Kuressaare,1,0,H
+2023-10-22,Laagri,Flora Tallinn,2,3,A
+2023-10-27,Vaprus,Laagri,0,0,D
+2023-10-27,Tammeka,Tallinna Kalev,2,7,A
+2023-10-28,Kuressaare,Trans Narva,1,0,H
+2023-10-28,Flora Tallinn,Paide,2,1,H
+2023-10-28,Kalju Nomme,FC Levadia Tallinn,4,3,H
+2023-10-31,Laagri,Tallinna Kalev,0,2,A
+2023-10-31,Kalju Nomme,Paide,3,3,D
+2023-11-01,FC Levadia Tallinn,Vaprus,0,0,D
+2023-11-01,Tammeka,Kuressaare,0,1,A
+2023-11-01,Trans Narva,Flora Tallinn,1,3,A
+2023-11-04,Kuressaare,Laagri,1,1,D
+2023-11-04,Trans Narva,Paide,1,3,A
+2023-11-05,Tallinna Kalev,Kalju Nomme,1,1,D
+2023-11-05,FC Levadia Tallinn,Flora Tallinn,2,1,H
+2023-11-05,Vaprus,Tammeka,2,0,H
+2023-11-10,Tammeka,Laagri,2,1,H
+2023-11-11,Flora Tallinn,Kalju Nomme,0,0,D
+2023-11-11,Kuressaare,Vaprus,1,0,H
+2023-11-11,Paide,FC Levadia Tallinn,2,2,D
+2023-11-11,Tallinna Kalev,Trans Narva,5,0,H
+2023-11-29,Viimsi,Tammeka,0,5,A
+2023-12-03,Tammeka,Viimsi,1,1,D

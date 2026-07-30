@@ -1,0 +1,136 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2015-03-01,Vikingur Gota,IF II,2,2,D
+2015-03-01,NSI Runavik,Suduroy,6,1,H
+2015-03-01,HB Torshavn,AB,2,2,D
+2015-03-01,TB,KI Klaksvik,1,1,D
+2015-03-03,EB / Streymur,B36 Torshavn,1,1,D
+2015-03-07,NSI Runavik,EB / Streymur,5,1,H
+2015-03-08,AB,TB,1,1,D
+2015-03-08,KI Klaksvik,Suduroy,3,0,H
+2015-03-08,IF II,HB Torshavn,1,1,D
+2015-03-08,B36 Torshavn,Vikingur Gota,3,3,D
+2015-03-14,Suduroy,TB,1,3,A
+2015-03-14,EB / Streymur,IF II,2,2,D
+2015-03-15,B36 Torshavn,NSI Runavik,3,0,H
+2015-03-15,KI Klaksvik,HB Torshavn,0,2,A
+2015-03-15,AB,Vikingur Gota,0,0,D
+2015-03-21,Suduroy,B36 Torshavn,1,3,A
+2015-03-21,EB / Streymur,AB,0,0,D
+2015-03-22,Vikingur Gota,KI Klaksvik,3,3,D
+2015-03-22,NSI Runavik,IF II,3,1,H
+2015-03-22,HB Torshavn,TB,0,0,D
+2015-04-02,HB Torshavn,EB / Streymur,4,2,H
+2015-04-02,Vikingur Gota,Suduroy,4,0,H
+2015-04-02,TB,NSI Runavik,2,3,A
+2015-04-02,AB,IF II,1,1,D
+2015-04-02,B36 Torshavn,KI Klaksvik,1,0,H
+2015-04-11,Suduroy,AB,3,1,H
+2015-04-12,B36 Torshavn,TB,3,0,H
+2015-04-12,NSI Runavik,HB Torshavn,2,0,H
+2015-04-12,IF II,KI Klaksvik,3,1,H
+2015-04-12,EB / Streymur,Vikingur Gota,1,2,A
+2015-04-18,Suduroy,HB Torshavn,1,2,A
+2015-04-18,NSI Runavik,AB,2,1,H
+2015-04-19,KI Klaksvik,EB / Streymur,4,0,H
+2015-04-19,IF II,B36 Torshavn,3,1,H
+2015-04-19,TB,Vikingur Gota,2,2,D
+2015-04-26,Suduroy,EB / Streymur,2,1,H
+2015-04-26,Vikingur Gota,NSI Runavik,5,1,H
+2015-04-26,KI Klaksvik,AB,2,1,H
+2015-04-26,HB Torshavn,B36 Torshavn,1,3,A
+2015-04-26,TB,IF II,1,1,D
+2015-05-03,B36 Torshavn,AB,1,1,D
+2015-05-03,NSI Runavik,KI Klaksvik,3,0,H
+2015-05-03,EB / Streymur,TB,0,3,A
+2015-05-03,IF II,Suduroy,2,3,A
+2015-05-03,HB Torshavn,Vikingur Gota,2,1,H
+2015-05-08,IF II,NSI Runavik,0,3,A
+2015-05-09,Suduroy,B36 Torshavn,1,3,A
+2015-05-10,KI Klaksvik,Vikingur Gota,3,2,H
+2015-05-10,AB,EB / Streymur,1,2,A
+2015-05-10,TB,HB Torshavn,1,1,D
+2015-05-14,Vikingur Gota,AB,3,1,H
+2015-05-14,NSI Runavik,B36 Torshavn,2,2,D
+2015-05-14,HB Torshavn,KI Klaksvik,3,1,H
+2015-05-14,EB / Streymur,IF II,0,3,A
+2015-05-14,TB,Suduroy,4,1,H
+2015-05-17,KI Klaksvik,TB,1,0,H
+2015-05-17,EB / Streymur,B36 Torshavn,0,2,A
+2015-05-17,Suduroy,NSI Runavik,1,3,A
+2015-05-17,AB,HB Torshavn,0,1,A
+2015-05-17,IF II,Vikingur Gota,1,3,A
+2015-05-25,Vikingur Gota,B36 Torshavn,1,1,D
+2015-05-25,KI Klaksvik,Suduroy,2,1,H
+2015-05-25,HB Torshavn,IF II,1,0,H
+2015-05-25,EB / Streymur,NSI Runavik,0,8,A
+2015-05-25,TB,AB,1,1,D
+2015-05-31,B36 Torshavn,HB Torshavn,1,1,D
+2015-05-31,NSI Runavik,Vikingur Gota,2,4,A
+2015-05-31,Suduroy,EB / Streymur,3,2,H
+2015-05-31,IF II,TB,2,0,H
+2015-05-31,AB,KI Klaksvik,0,4,A
+2015-06-06,Suduroy,AB,1,1,D
+2015-06-07,Vikingur Gota,EB / Streymur,3,0,H
+2015-06-07,KI Klaksvik,IF II,0,0,D
+2015-06-07,HB Torshavn,NSI Runavik,1,1,D
+2015-06-07,TB,B36 Torshavn,1,3,A
+2015-06-20,NSI Runavik,TB,0,0,D
+2015-06-21,Suduroy,Vikingur Gota,1,3,A
+2015-06-21,B36 Torshavn,KI Klaksvik,2,1,H
+2015-06-21,EB / Streymur,HB Torshavn,0,3,A
+2015-06-21,IF II,AB,3,3,D
+2015-06-25,IF II,Suduroy,3,3,D
+2015-06-26,KI Klaksvik,NSI Runavik,3,3,D
+2015-06-26,Vikingur Gota,HB Torshavn,3,0,H
+2015-06-26,AB,B36 Torshavn,1,3,A
+2015-06-27,TB,EB / Streymur,3,2,H
+2015-07-26,Vikingur Gota,TB,7,2,H
+2015-07-27,EB / Streymur,KI Klaksvik,4,4,D
+2015-07-27,AB,NSI Runavik,1,2,A
+2015-07-28,B36 Torshavn,IF II,4,0,H
+2015-07-29,HB Torshavn,Suduroy,0,0,D
+2015-08-02,HB Torshavn,TB,2,2,D
+2015-08-02,Vikingur Gota,KI Klaksvik,1,1,D
+2015-08-02,EB / Streymur,AB,0,4,A
+2015-08-02,B36 Torshavn,Suduroy,1,0,H
+2015-08-03,NSI Runavik,IF II,5,1,H
+2015-08-07,KI Klaksvik,HB Torshavn,2,0,H
+2015-08-09,B36 Torshavn,NSI Runavik,3,0,H
+2015-08-09,Suduroy,TB,2,2,D
+2015-08-09,IF II,EB / Streymur,4,1,H
+2015-08-09,AB,Vikingur Gota,0,0,D
+2015-08-12,Vikingur Gota,NSI Runavik,3,1,H
+2015-08-16,Vikingur Gota,IF II,4,2,H
+2015-08-16,NSI Runavik,Suduroy,5,1,H
+2015-08-16,HB Torshavn,AB,3,1,H
+2015-08-16,EB / Streymur,B36 Torshavn,0,5,A
+2015-08-16,TB,KI Klaksvik,1,1,D
+2015-08-23,NSI Runavik,EB / Streymur,6,0,H
+2015-08-23,Suduroy,KI Klaksvik,0,2,A
+2015-08-23,AB,TB,3,0,H
+2015-08-23,IF II,HB Torshavn,2,2,D
+2015-08-23,B36 Torshavn,Vikingur Gota,1,0,H
+2015-08-27,KI Klaksvik,AB,1,2,A
+2015-08-27,HB Torshavn,B36 Torshavn,1,2,A
+2015-08-30,EB / Streymur,Suduroy,3,5,A
+2015-08-30,TB,IF II,1,1,D
+2015-09-13,B36 Torshavn,TB,2,1,H
+2015-09-13,NSI Runavik,HB Torshavn,0,0,D
+2015-09-13,EB / Streymur,Vikingur Gota,2,1,H
+2015-09-13,AB,Suduroy,2,1,H
+2015-09-13,IF II,KI Klaksvik,1,1,D
+2015-09-20,Vikingur Gota,Suduroy,3,1,H
+2015-09-20,KI Klaksvik,B36 Torshavn,2,1,H
+2015-09-20,HB Torshavn,EB / Streymur,6,0,H
+2015-09-20,AB,IF II,2,2,D
+2015-09-20,TB,NSI Runavik,2,2,D
+2015-09-27,Vikingur Gota,HB Torshavn,3,2,H
+2015-09-27,B36 Torshavn,AB,2,2,D
+2015-09-27,NSI Runavik,KI Klaksvik,4,1,H
+2015-09-27,EB / Streymur,TB,2,2,D
+2015-09-27,Suduroy,IF II,5,2,H
+2015-10-03,KI Klaksvik,EB / Streymur,6,1,H
+2015-10-03,HB Torshavn,Suduroy,2,0,H
+2015-10-03,AB,NSI Runavik,0,1,A
+2015-10-03,IF II,B36 Torshavn,1,3,A
+2015-10-03,TB,Vikingur Gota,0,2,A

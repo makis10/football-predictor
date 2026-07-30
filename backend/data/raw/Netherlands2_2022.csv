@@ -1,0 +1,381 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2022-08-05,Willem II,Jong PSV U21,1,1,D
+2022-08-05,NAC Breda,Helmond Sport,1,0,H
+2022-08-05,VVV Venlo,Almere City FC,3,0,H
+2022-08-05,Heracles,ADO Den Haag,4,0,H
+2022-08-05,Dordrecht,Roda,0,2,A
+2022-08-05,Den Bosch,FC Eindhoven,1,3,A
+2022-08-05,FC OSS,Jong Utrecht,3,0,H
+2022-08-07,PEC Zwolle,De Graafschap,2,1,H
+2022-08-08,Jong AZ,MVV,3,1,H
+2022-08-08,Jong Ajax,Telstar,1,1,D
+2022-08-12,De Graafschap,VVV Venlo,1,2,A
+2022-08-12,Roda,Jong Ajax,1,0,H
+2022-08-12,Almere City FC,FC OSS,3,0,H
+2022-08-12,FC Eindhoven,Willem II,2,1,H
+2022-08-12,Helmond Sport,Jong AZ,1,3,A
+2022-08-12,Telstar,PEC Zwolle,0,5,A
+2022-08-14,ADO Den Haag,Den Bosch,0,2,A
+2022-08-15,Jong PSV U21,Dordrecht,1,0,H
+2022-08-15,MVV,NAC Breda,3,1,H
+2022-08-15,Jong Utrecht,Heracles,0,3,A
+2022-08-19,Willem II,Telstar,2,1,H
+2022-08-19,NAC Breda,FC OSS,1,0,H
+2022-08-19,Dordrecht,Jong Utrecht,2,1,H
+2022-08-19,MVV,ADO Den Haag,3,1,H
+2022-08-19,Den Bosch,Roda,0,3,A
+2022-08-19,Helmond Sport,FC Eindhoven,0,1,A
+2022-08-21,VVV Venlo,PEC Zwolle,0,4,A
+2022-08-22,Jong PSV U21,Heracles,0,3,A
+2022-08-22,Jong AZ,Almere City FC,3,2,H
+2022-08-22,Jong Ajax,De Graafschap,5,1,H
+2022-08-26,PEC Zwolle,Jong PSV U21,4,2,H
+2022-08-26,De Graafschap,Dordrecht,1,1,D
+2022-08-26,Roda,NAC Breda,1,3,A
+2022-08-26,Almere City FC,Den Bosch,2,0,H
+2022-08-26,FC Eindhoven,Jong AZ,1,0,H
+2022-08-26,FC OSS,VVV Venlo,1,2,A
+2022-08-26,Telstar,Helmond Sport,2,1,H
+2022-08-28,ADO Den Haag,Jong Ajax,4,0,H
+2022-08-29,Heracles,MVV,2,2,D
+2022-08-29,Jong Utrecht,Willem II,0,0,D
+2022-09-01,Telstar,De Graafschap,0,1,A
+2022-09-02,Willem II,ADO Den Haag,1,0,H
+2022-09-02,NAC Breda,FC Eindhoven,1,1,D
+2022-09-02,VVV Venlo,Jong Utrecht,2,1,H
+2022-09-02,Den Bosch,PEC Zwolle,1,2,A
+2022-09-02,Helmond Sport,Almere City FC,3,0,H
+2022-09-04,MVV,Roda,1,1,D
+2022-09-05,Jong PSV U21,FC OSS,0,3,A
+2022-09-05,Jong AZ,Dordrecht,3,1,H
+2022-09-05,Jong Ajax,Heracles,4,0,H
+2022-09-09,PEC Zwolle,Willem II,2,2,D
+2022-09-09,ADO Den Haag,Jong AZ,2,2,D
+2022-09-09,De Graafschap,NAC Breda,1,1,D
+2022-09-09,Heracles,VVV Venlo,5,3,H
+2022-09-09,Dordrecht,Den Bosch,2,1,H
+2022-09-09,Roda,Jong PSV U21,1,1,D
+2022-09-09,Almere City FC,Telstar,0,1,A
+2022-09-09,FC Eindhoven,MVV,5,0,H
+2022-09-09,FC OSS,Jong Ajax,1,1,D
+2022-09-09,Jong Utrecht,Helmond Sport,2,0,H
+2022-09-12,Jong PSV U21,Den Bosch,3,1,H
+2022-09-12,Roda,De Graafschap,3,2,H
+2022-09-12,Jong AZ,PEC Zwolle,2,3,A
+2022-09-12,Almere City FC,FC Eindhoven,1,1,D
+2022-09-12,Jong Ajax,NAC Breda,3,1,H
+2022-09-12,Jong Utrecht,ADO Den Haag,1,1,D
+2022-09-16,PEC Zwolle,ADO Den Haag,1,2,A
+2022-09-16,Willem II,Jong AZ,1,0,H
+2022-09-16,De Graafschap,Almere City FC,1,2,A
+2022-09-16,NAC Breda,Jong Utrecht,3,1,H
+2022-09-16,VVV Venlo,Jong PSV U21,1,1,D
+2022-09-16,MVV,Jong Ajax,4,1,H
+2022-09-16,FC Eindhoven,Roda,3,3,D
+2022-09-16,Helmond Sport,Dordrecht,2,1,H
+2022-09-16,Telstar,Heracles,0,3,A
+2022-09-17,Den Bosch,FC OSS,4,1,H
+2022-09-23,VVV Venlo,Telstar,1,1,D
+2022-09-23,Heracles,Helmond Sport,2,0,H
+2022-09-23,Dordrecht,MVV,1,2,A
+2022-09-23,FC OSS,Willem II,1,3,A
+2022-09-30,PEC Zwolle,Jong Ajax,1,1,D
+2022-09-30,ADO Den Haag,Jong PSV U21,1,3,A
+2022-09-30,De Graafschap,Jong AZ,2,0,H
+2022-09-30,NAC Breda,VVV Venlo,1,2,A
+2022-09-30,MVV,Willem II,3,2,H
+2022-09-30,Almere City FC,Roda,2,1,H
+2022-09-30,Den Bosch,Heracles,1,2,A
+2022-09-30,FC Eindhoven,Dordrecht,1,1,D
+2022-09-30,Helmond Sport,FC OSS,1,2,A
+2022-09-30,Telstar,Jong Utrecht,2,2,D
+2022-10-07,Willem II,Den Bosch,1,2,A
+2022-10-07,ADO Den Haag,FC Eindhoven,1,0,H
+2022-10-07,Heracles,De Graafschap,3,2,H
+2022-10-07,Dordrecht,PEC Zwolle,3,0,H
+2022-10-07,Jong PSV U21,Telstar,0,2,A
+2022-10-07,Roda,VVV Venlo,4,1,H
+2022-10-07,Jong AZ,NAC Breda,4,0,H
+2022-10-07,FC OSS,MVV,0,1,A
+2022-10-07,Jong Ajax,Helmond Sport,0,1,A
+2022-10-07,Jong Utrecht,Almere City FC,0,2,A
+2022-10-14,PEC Zwolle,Heracles,3,2,H
+2022-10-14,De Graafschap,Jong Utrecht,2,0,H
+2022-10-14,NAC Breda,ADO Den Haag,1,2,A
+2022-10-14,VVV Venlo,Dordrecht,0,1,A
+2022-10-14,MVV,Jong PSV U21,1,1,D
+2022-10-14,Almere City FC,Jong Ajax,2,3,A
+2022-10-14,Den Bosch,Jong AZ,3,0,H
+2022-10-14,FC Eindhoven,FC OSS,2,1,H
+2022-10-14,Helmond Sport,Willem II,1,3,A
+2022-10-14,Telstar,Roda,2,1,H
+2022-10-21,Willem II,Almere City FC,1,1,D
+2022-10-21,ADO Den Haag,De Graafschap,2,2,D
+2022-10-21,Heracles,FC Eindhoven,3,0,H
+2022-10-21,FC OSS,Roda,3,0,H
+2022-10-22,Dordrecht,NAC Breda,0,3,A
+2022-10-22,MVV,Den Bosch,3,1,H
+2022-10-24,Jong PSV U21,Helmond Sport,6,0,H
+2022-10-24,Jong AZ,Telstar,0,0,D
+2022-10-24,Jong Ajax,VVV Venlo,1,1,D
+2022-10-24,Jong Utrecht,PEC Zwolle,0,1,A
+2022-10-28,PEC Zwolle,MVV,0,1,A
+2022-10-28,De Graafschap,FC OSS,2,0,H
+2022-10-28,VVV Venlo,Jong AZ,1,2,A
+2022-10-28,Roda,Jong Utrecht,4,1,H
+2022-10-28,Almere City FC,Heracles,3,2,H
+2022-10-28,Den Bosch,NAC Breda,3,2,H
+2022-10-28,FC Eindhoven,Jong PSV U21,2,2,D
+2022-10-28,Helmond Sport,ADO Den Haag,2,1,H
+2022-10-28,Telstar,Dordrecht,2,2,D
+2022-10-31,Jong Ajax,Willem II,1,2,A
+2022-11-04,Willem II,Heracles,1,2,A
+2022-11-04,ADO Den Haag,VVV Venlo,2,3,A
+2022-11-04,NAC Breda,Telstar,1,1,D
+2022-11-04,Dordrecht,Jong Ajax,3,4,A
+2022-11-04,MVV,Helmond Sport,4,0,H
+2022-11-04,Den Bosch,De Graafschap,2,1,H
+2022-11-04,FC OSS,PEC Zwolle,0,5,A
+2022-11-07,Jong PSV U21,Almere City FC,0,1,A
+2022-11-07,Jong AZ,Roda,2,0,H
+2022-11-07,Jong Utrecht,FC Eindhoven,0,1,A
+2022-11-11,PEC Zwolle,FC Eindhoven,5,2,H
+2022-11-11,De Graafschap,Jong PSV U21,3,2,H
+2022-11-11,VVV Venlo,Willem II,0,0,D
+2022-11-11,Heracles,NAC Breda,5,1,H
+2022-11-11,Telstar,ADO Den Haag,0,0,D
+2022-11-12,Roda,Helmond Sport,0,1,A
+2022-11-13,Almere City FC,Dordrecht,2,1,H
+2022-11-14,Jong Ajax,Den Bosch,4,4,D
+2022-11-14,Jong Utrecht,MVV,3,0,H
+2022-11-16,ADO Den Haag,Roda,0,1,A
+2022-11-17,Jong PSV U21,Jong Utrecht,2,1,H
+2022-11-17,Jong AZ,Jong Ajax,1,1,D
+2022-11-18,FC Eindhoven,Telstar,3,0,H
+2022-11-18,Helmond Sport,De Graafschap,0,2,A
+2022-11-19,Den Bosch,VVV Venlo,0,2,A
+2022-11-19,Heracles,FC OSS,3,0,H
+2022-11-19,MVV,Almere City FC,1,0,H
+2022-11-19,NAC Breda,PEC Zwolle,0,2,A
+2022-11-20,Dordrecht,Willem II,2,2,D
+2022-12-11,Willem II,NAC Breda,1,2,A
+2022-12-11,De Graafschap,FC Eindhoven,1,2,A
+2022-12-11,VVV Venlo,MVV,2,1,H
+2022-12-11,Roda,Heracles,1,3,A
+2022-12-11,Almere City FC,ADO Den Haag,4,1,H
+2022-12-11,FC OSS,Dordrecht,0,1,A
+2022-12-11,Jong Ajax,Jong Utrecht,1,2,A
+2022-12-11,Telstar,Den Bosch,1,0,H
+2022-12-12,Jong AZ,Jong PSV U21,2,3,A
+2022-12-12,PEC Zwolle,Helmond Sport,1,0,H
+2022-12-15,Jong PSV U21,Jong Ajax,2,2,D
+2022-12-16,ADO Den Haag,FC OSS,0,0,D
+2022-12-16,De Graafschap,Willem II,0,3,A
+2022-12-16,NAC Breda,Almere City FC,0,1,A
+2022-12-16,Heracles,Dordrecht,8,1,H
+2022-12-16,FC Eindhoven,VVV Venlo,0,2,A
+2022-12-16,Helmond Sport,Den Bosch,1,0,H
+2023-01-06,PEC Zwolle,Almere City FC,3,2,H
+2023-01-06,Willem II,Roda,1,0,H
+2023-01-06,NAC Breda,Jong PSV U21,2,1,H
+2023-01-06,VVV Venlo,Helmond Sport,1,1,D
+2023-01-06,Dordrecht,ADO Den Haag,0,1,A
+2023-01-06,MVV,De Graafschap,2,2,D
+2023-01-06,Jong AZ,Heracles,1,1,D
+2023-01-06,Den Bosch,Jong Utrecht,1,4,A
+2023-01-06,FC OSS,Telstar,2,1,H
+2023-01-06,Jong Ajax,FC Eindhoven,1,1,D
+2023-01-09,Jong Utrecht,Jong AZ,0,2,A
+2023-01-13,ADO Den Haag,MVV,2,1,H
+2023-01-13,De Graafschap,Jong Ajax,3,0,H
+2023-01-13,Roda,FC OSS,1,1,D
+2023-01-13,Helmond Sport,NAC Breda,2,2,D
+2023-01-13,Telstar,Jong AZ,1,0,H
+2023-01-15,Almere City FC,Willem II,1,0,H
+2023-01-15,Heracles,PEC Zwolle,0,3,A
+2023-01-16,FC Eindhoven,Den Bosch,4,1,H
+2023-01-16,FC OSS,Jong AZ,1,3,A
+2023-01-16,Jong Utrecht,Dordrecht,0,1,A
+2023-01-20,PEC Zwolle,VVV Venlo,2,0,H
+2023-01-20,Almere City FC,De Graafschap,2,2,D
+2023-01-20,Den Bosch,Jong PSV U21,1,0,H
+2023-01-20,FC OSS,NAC Breda,1,2,A
+2023-01-21,Dordrecht,Telstar,0,0,D
+2023-01-22,ADO Den Haag,Jong Utrecht,1,1,D
+2023-01-23,Jong PSV U21,VVV Venlo,1,2,A
+2023-01-23,Jong AZ,Helmond Sport,1,1,D
+2023-01-23,Jong Ajax,Roda,1,2,A
+2023-01-24,Telstar,MVV,5,3,H
+2023-01-27,PEC Zwolle,FC OSS,4,1,H
+2023-01-27,NAC Breda,Jong AZ,5,1,H
+2023-01-27,VVV Venlo,ADO Den Haag,0,0,D
+2023-01-27,Roda,Dordrecht,1,0,H
+2023-01-27,Den Bosch,MVV,3,3,D
+2023-01-27,FC Eindhoven,Heracles,1,0,H
+2023-01-27,Helmond Sport,Jong Ajax,1,1,D
+2023-01-27,Telstar,Almere City FC,0,1,A
+2023-01-30,Jong PSV U21,Willem II,3,2,H
+2023-01-30,Roda,PEC Zwolle,1,2,A
+2023-01-30,Jong Utrecht,De Graafschap,1,1,D
+2023-02-03,Willem II,Helmond Sport,5,1,H
+2023-02-03,ADO Den Haag,NAC Breda,2,1,H
+2023-02-03,De Graafschap,Telstar,0,1,A
+2023-02-03,Heracles,Jong Utrecht,6,1,H
+2023-02-03,Dordrecht,FC Eindhoven,4,0,H
+2023-02-03,Jong AZ,VVV Venlo,4,3,H
+2023-02-03,Almere City FC,Jong PSV U21,1,2,A
+2023-02-03,FC OSS,Den Bosch,3,0,H
+2023-02-05,Roda,MVV,2,1,H
+2023-02-06,Willem II,FC Eindhoven,3,0,H
+2023-02-06,Jong Ajax,PEC Zwolle,0,0,D
+2023-02-10,PEC Zwolle,Jong AZ,4,1,H
+2023-02-10,Willem II,Dordrecht,1,0,H
+2023-02-10,NAC Breda,De Graafschap,2,0,H
+2023-02-10,VVV Venlo,Heracles,3,1,H
+2023-02-10,MVV,FC OSS,5,1,H
+2023-02-10,Den Bosch,Jong Ajax,4,2,H
+2023-02-10,FC Eindhoven,Almere City FC,0,1,A
+2023-02-10,Helmond Sport,Roda,1,0,H
+2023-02-13,Jong PSV U21,ADO Den Haag,1,2,A
+2023-02-13,MVV,Heracles,0,2,A
+2023-02-13,Jong Utrecht,Telstar,0,1,A
+2023-02-17,ADO Den Haag,PEC Zwolle,3,1,H
+2023-02-17,Heracles,Willem II,1,1,D
+2023-02-17,Dordrecht,VVV Venlo,1,2,A
+2023-02-17,Jong AZ,Den Bosch,3,1,H
+2023-02-17,Almere City FC,Helmond Sport,0,0,D
+2023-02-17,FC OSS,FC Eindhoven,2,0,H
+2023-02-17,Telstar,Jong PSV U21,1,1,D
+2023-02-19,De Graafschap,Roda,2,0,H
+2023-02-20,Jong Ajax,MVV,4,2,H
+2023-02-20,Jong Utrecht,NAC Breda,4,1,H
+2023-02-24,Willem II,Jong Ajax,2,1,H
+2023-02-24,NAC Breda,Dordrecht,3,2,H
+2023-02-24,VVV Venlo,FC OSS,0,1,A
+2023-02-24,Heracles,Telstar,7,0,H
+2023-02-24,Roda,Almere City FC,0,2,A
+2023-02-24,FC Eindhoven,De Graafschap,0,4,A
+2023-02-24,Helmond Sport,Jong Utrecht,2,0,H
+2023-02-26,Den Bosch,ADO Den Haag,0,0,D
+2023-02-27,Jong PSV U21,Jong AZ,3,3,D
+2023-02-27,MVV,PEC Zwolle,3,2,H
+2023-03-03,PEC Zwolle,Den Bosch,13,0,H
+2023-03-03,Dordrecht,Almere City FC,0,1,A
+2023-03-03,MVV,VVV Venlo,0,1,A
+2023-03-03,Telstar,FC Eindhoven,0,1,A
+2023-03-06,ADO Den Haag,Heracles,0,3,A
+2023-03-06,De Graafschap,Helmond Sport,2,0,H
+2023-03-06,Jong PSV U21,NAC Breda,1,2,A
+2023-03-06,Jong AZ,Willem II,2,2,D
+2023-03-06,Jong Ajax,FC OSS,1,2,A
+2023-03-06,Jong Utrecht,Roda,1,3,A
+2023-03-10,Willem II,PEC Zwolle,2,3,A
+2023-03-10,NAC Breda,MVV,4,1,H
+2023-03-10,VVV Venlo,Den Bosch,4,0,H
+2023-03-10,Heracles,Jong AZ,2,0,H
+2023-03-10,Dordrecht,De Graafschap,0,4,A
+2023-03-10,Roda,Telstar,1,2,A
+2023-03-10,FC Eindhoven,Jong Ajax,5,1,H
+2023-03-10,FC OSS,ADO Den Haag,2,3,A
+2023-03-10,Helmond Sport,Jong PSV U21,3,0,H
+2023-03-13,De Graafschap,PEC Zwolle,0,1,A
+2023-03-13,NAC Breda,Jong Ajax,2,6,A
+2023-03-13,Roda,Jong AZ,2,0,H
+2023-03-13,Almere City FC,VVV Venlo,1,3,A
+2023-03-13,FC Eindhoven,ADO Den Haag,1,1,D
+2023-03-13,Jong Utrecht,Jong PSV U21,0,1,A
+2023-03-17,PEC Zwolle,NAC Breda,2,0,H
+2023-03-17,ADO Den Haag,Willem II,1,3,A
+2023-03-17,Jong PSV U21,De Graafschap,2,1,H
+2023-03-17,MVV,Jong Utrecht,1,0,H
+2023-03-17,Jong AZ,FC Eindhoven,1,1,D
+2023-03-17,Den Bosch,Dordrecht,3,1,H
+2023-03-17,FC OSS,Heracles,1,5,A
+2023-03-17,Helmond Sport,Telstar,2,2,D
+2023-03-17,Jong Ajax,Almere City FC,0,2,A
+2023-03-19,VVV Venlo,Roda,1,1,D
+2023-03-26,Willem II,MVV,2,0,H
+2023-03-26,Heracles,Den Bosch,3,2,H
+2023-03-26,Dordrecht,Helmond Sport,0,0,D
+2023-03-26,Telstar,FC OSS,1,0,H
+2023-03-31,PEC Zwolle,Jong Utrecht,2,0,H
+2023-03-31,ADO Den Haag,Telstar,3,1,H
+2023-03-31,VVV Venlo,NAC Breda,1,3,A
+2023-03-31,Heracles,Almere City FC,1,1,D
+2023-03-31,MVV,FC Eindhoven,3,2,H
+2023-03-31,FC OSS,Helmond Sport,2,2,D
+2023-04-02,Den Bosch,Willem II,0,2,A
+2023-04-03,Jong PSV U21,Roda,5,1,H
+2023-04-03,Jong AZ,De Graafschap,0,1,A
+2023-04-03,Almere City FC,Jong Utrecht,1,0,H
+2023-04-03,Jong Ajax,Dordrecht,4,1,H
+2023-04-07,De Graafschap,Heracles,5,3,H
+2023-04-07,NAC Breda,Den Bosch,2,0,H
+2023-04-07,Dordrecht,Jong PSV U21,1,0,H
+2023-04-07,Roda,ADO Den Haag,1,1,D
+2023-04-07,Almere City FC,Jong AZ,2,1,H
+2023-04-07,FC Eindhoven,PEC Zwolle,4,2,H
+2023-04-07,Helmond Sport,MVV,1,2,A
+2023-04-07,Telstar,Jong Ajax,2,3,A
+2023-04-09,Willem II,VVV Venlo,2,1,H
+2023-04-10,Jong Utrecht,FC OSS,4,2,H
+2023-04-14,PEC Zwolle,Telstar,2,0,H
+2023-04-14,VVV Venlo,FC Eindhoven,2,2,D
+2023-04-14,Heracles,Roda,1,0,H
+2023-04-14,MVV,Dordrecht,2,1,H
+2023-04-14,Den Bosch,Helmond Sport,1,2,A
+2023-04-14,FC OSS,De Graafschap,3,3,D
+2023-04-16,ADO Den Haag,Almere City FC,2,3,A
+2023-04-17,Jong AZ,Jong Utrecht,4,0,H
+2023-04-17,Jong Ajax,Jong PSV U21,5,4,H
+2023-04-21,Willem II,FC OSS,4,0,H
+2023-04-21,De Graafschap,ADO Den Haag,0,1,A
+2023-04-21,Dordrecht,Jong AZ,1,0,H
+2023-04-21,Roda,Den Bosch,0,1,A
+2023-04-21,Almere City FC,PEC Zwolle,1,1,D
+2023-04-21,FC Eindhoven,NAC Breda,1,2,A
+2023-04-21,Helmond Sport,Heracles,0,1,A
+2023-04-21,Telstar,VVV Venlo,1,0,H
+2023-04-24,Jong PSV U21,MVV,0,1,A
+2023-04-24,Jong Utrecht,Jong Ajax,1,0,H
+2023-04-25,NAC Breda,Willem II,1,1,D
+2023-04-28,PEC Zwolle,Dordrecht,4,0,H
+2023-04-28,ADO Den Haag,Helmond Sport,2,2,D
+2023-04-28,VVV Venlo,Jong Ajax,0,1,A
+2023-04-28,Heracles,Jong PSV U21,3,0,H
+2023-04-28,MVV,Jong AZ,1,3,A
+2023-04-28,Den Bosch,Telstar,0,1,A
+2023-04-28,FC Eindhoven,Jong Utrecht,2,0,H
+2023-04-28,FC OSS,Almere City FC,0,5,A
+2023-04-29,NAC Breda,Roda,4,2,H
+2023-04-29,Willem II,De Graafschap,3,2,H
+2023-05-05,De Graafschap,MVV,2,1,H
+2023-05-05,Dordrecht,Heracles,1,3,A
+2023-05-05,Roda,FC Eindhoven,1,2,A
+2023-05-05,Helmond Sport,VVV Venlo,1,1,D
+2023-05-05,Telstar,Willem II,0,0,D
+2023-05-07,Almere City FC,NAC Breda,0,2,A
+2023-05-08,Jong PSV U21,PEC Zwolle,3,1,H
+2023-05-08,Jong AZ,FC OSS,1,1,D
+2023-05-08,Jong Ajax,ADO Den Haag,4,2,H
+2023-05-08,Jong Utrecht,Den Bosch,0,0,D
+2023-05-12,PEC Zwolle,Roda,3,1,H
+2023-05-12,Willem II,Jong Utrecht,3,0,H
+2023-05-12,ADO Den Haag,Dordrecht,2,2,D
+2023-05-12,NAC Breda,Heracles,0,3,A
+2023-05-12,VVV Venlo,De Graafschap,2,1,H
+2023-05-12,MVV,Telstar,2,1,H
+2023-05-12,Den Bosch,Almere City FC,2,2,D
+2023-05-12,FC Eindhoven,Helmond Sport,0,1,A
+2023-05-12,FC OSS,Jong PSV U21,1,0,H
+2023-05-12,Jong Ajax,Jong AZ,1,2,A
+2023-05-19,De Graafschap,Den Bosch,3,0,H
+2023-05-19,Heracles,Jong Ajax,2,0,H
+2023-05-19,Dordrecht,FC OSS,2,2,D
+2023-05-19,Jong PSV U21,FC Eindhoven,1,1,D
+2023-05-19,Roda,Willem II,2,2,D
+2023-05-19,Jong AZ,ADO Den Haag,0,2,A
+2023-05-19,Almere City FC,MVV,1,0,H
+2023-05-19,Helmond Sport,PEC Zwolle,2,3,A
+2023-05-19,Telstar,NAC Breda,2,1,H
+2023-05-19,Jong Utrecht,VVV Venlo,1,1,D

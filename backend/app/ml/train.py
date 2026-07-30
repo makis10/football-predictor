@@ -51,6 +51,7 @@ from backend.app.ml.features import (
     FEATURE_COLS, RESULT_FEATURE_COLS, GOALS_FEATURE_COLS, BTTS_FEATURE_COLS,
     build_features, load_raw_csvs,
     load_xg_data, merge_xg, XG_DIR,
+    HISTORY_ONLY_LEAGUES,
 )
 from backend.app.ml.european import load_european_data, EUROPEAN_DIR, EUROPEAN_FEATURE_COLS
 from backend.app.ml.poisson import POISSON_FEATURE_COLS
@@ -202,6 +203,18 @@ def prepare_data(raw_dir: str) -> pd.DataFrame:
 
     print("Engineering features …")
     df = build_features(df, european_df=eur_df)
+
+    # Drop the history-only leagues — AFTER build_features, which is the whole
+    # point: their matches have already contributed Elo, form and H2H for clubs
+    # that later appear in a competition we do price (a promoted side, a
+    # European qualifier), and now they leave before fitting. We never predict a
+    # Greek second-division or Faroese league match, and their scoring
+    # environments would pull the parameters shared with the leagues we serve.
+    hist_mask = df["League"].isin(HISTORY_ONLY_LEAGUES)
+    if hist_mask.any():
+        df = df[~hist_mask].copy()
+        print(f"  {hist_mask.sum():,} history-only rows excluded from fitting "
+              f"(kept for Elo/form)")
 
     # Exclude 2020/21 COVID season — no crowds → home advantage signal distorted.
     covid_mask = (df["Date"] >= "2020-07-01") & (df["Date"] < "2021-07-01")

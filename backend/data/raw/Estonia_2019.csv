@@ -1,0 +1,181 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2019-03-08,Kalju Nomme,Paide,0,2,A
+2019-03-09,Trans Narva,Kuressaare,0,0,D
+2019-03-09,FC Levadia Tallinn,Tallinna Kalev,5,1,H
+2019-03-10,Tammeka,Maardu,2,2,D
+2019-03-10,Flora Tallinn,Tulevik,2,0,H
+2019-03-16,Kuressaare,FC Levadia Tallinn,0,1,A
+2019-03-16,Tulevik,Tammeka,0,4,A
+2019-03-16,Tallinna Kalev,Trans Narva,0,4,A
+2019-03-17,Paide,Flora Tallinn,0,1,A
+2019-03-17,Maardu,Kalju Nomme,0,5,A
+2019-03-30,Paide,Tallinna Kalev,2,0,H
+2019-03-30,Trans Narva,Kalju Nomme,0,0,D
+2019-03-30,Flora Tallinn,Tammeka,4,1,H
+2019-03-31,FC Levadia Tallinn,Maardu,8,0,H
+2019-03-31,Tulevik,Kuressaare,1,2,A
+2019-04-02,Tammeka,Paide,0,3,A
+2019-04-02,Kalju Nomme,Flora Tallinn,0,3,A
+2019-04-03,Maardu,Kuressaare,1,0,H
+2019-04-03,Tallinna Kalev,Tulevik,0,2,A
+2019-04-03,Trans Narva,FC Levadia Tallinn,1,2,A
+2019-04-06,Paide,Trans Narva,0,0,D
+2019-04-07,Tammeka,FC Levadia Tallinn,1,2,A
+2019-04-07,Tulevik,Kalju Nomme,2,3,A
+2019-04-07,Kuressaare,Tallinna Kalev,2,0,H
+2019-04-07,Flora Tallinn,Maardu,6,0,H
+2019-04-13,FC Levadia Tallinn,Tulevik,5,2,H
+2019-04-13,Tallinna Kalev,Maardu,2,0,H
+2019-04-13,Trans Narva,Flora Tallinn,0,1,A
+2019-04-14,Kuressaare,Paide,0,1,A
+2019-04-14,Kalju Nomme,Tammeka,2,0,H
+2019-04-20,Kalju Nomme,Tallinna Kalev,2,2,D
+2019-04-20,Maardu,Tulevik,0,0,D
+2019-04-20,Tammeka,Trans Narva,1,2,A
+2019-04-21,Flora Tallinn,Kuressaare,5,0,H
+2019-04-21,Paide,FC Levadia Tallinn,0,2,A
+2019-04-27,Tallinna Kalev,Tammeka,0,4,A
+2019-04-27,Maardu,Trans Narva,0,1,A
+2019-04-27,Kuressaare,Kalju Nomme,0,0,D
+2019-04-28,Tulevik,Paide,2,2,D
+2019-04-28,FC Levadia Tallinn,Flora Tallinn,1,2,A
+2019-05-03,Tammeka,Kuressaare,1,1,D
+2019-05-03,Flora Tallinn,Tallinna Kalev,6,0,H
+2019-05-04,Paide,Maardu,2,0,H
+2019-05-04,Trans Narva,Tulevik,0,1,A
+2019-05-05,Kalju Nomme,FC Levadia Tallinn,2,1,H
+2019-05-10,Kuressaare,Maardu,1,0,H
+2019-05-11,FC Levadia Tallinn,Tammeka,7,0,H
+2019-05-11,Trans Narva,Paide,0,1,A
+2019-05-12,Tulevik,Flora Tallinn,1,3,A
+2019-05-12,Tallinna Kalev,Kalju Nomme,0,1,A
+2019-05-17,Kalju Nomme,Kuressaare,3,2,H
+2019-05-17,Tulevik,FC Levadia Tallinn,0,3,A
+2019-05-18,Flora Tallinn,Trans Narva,2,2,D
+2019-05-18,Paide,Tammeka,2,1,H
+2019-05-19,Maardu,Tallinna Kalev,0,0,D
+2019-05-21,FC Levadia Tallinn,Kalju Nomme,0,0,D
+2019-05-22,Trans Narva,Maardu,5,1,H
+2019-05-22,Tammeka,Flora Tallinn,0,2,A
+2019-05-24,Tallinna Kalev,Paide,0,3,A
+2019-05-24,Kuressaare,Tulevik,1,0,H
+2019-05-28,Maardu,Tammeka,2,1,H
+2019-05-28,Tallinna Kalev,Kuressaare,3,0,H
+2019-05-28,Tulevik,Trans Narva,1,1,D
+2019-05-28,Paide,Kalju Nomme,0,2,A
+2019-05-29,Flora Tallinn,FC Levadia Tallinn,1,3,A
+2019-05-31,Trans Narva,Tallinna Kalev,2,2,D
+2019-06-01,Kalju Nomme,Maardu,6,0,H
+2019-06-01,Tammeka,Tulevik,0,1,A
+2019-06-02,Kuressaare,Flora Tallinn,0,4,A
+2019-06-02,FC Levadia Tallinn,Paide,1,1,D
+2019-06-14,Tallinna Kalev,FC Levadia Tallinn,1,6,A
+2019-06-14,Paide,Tulevik,6,0,H
+2019-06-15,Maardu,Flora Tallinn,3,8,A
+2019-06-15,Kalju Nomme,Trans Narva,3,2,H
+2019-06-15,Kuressaare,Tammeka,1,1,D
+2019-06-18,Tammeka,Tallinna Kalev,2,0,H
+2019-06-18,Tulevik,Maardu,2,0,H
+2019-06-18,Flora Tallinn,Kalju Nomme,0,1,A
+2019-06-19,Paide,Kuressaare,7,0,H
+2019-06-19,FC Levadia Tallinn,Trans Narva,2,0,H
+2019-06-21,Tallinna Kalev,Flora Tallinn,0,2,A
+2019-06-22,Kalju Nomme,Tulevik,2,1,H
+2019-06-22,FC Levadia Tallinn,Kuressaare,5,0,H
+2019-06-22,Maardu,Paide,1,4,A
+2019-06-22,Trans Narva,Tammeka,2,5,A
+2019-06-28,Tammeka,Kalju Nomme,0,0,D
+2019-06-29,Maardu,FC Levadia Tallinn,1,6,A
+2019-06-29,Kuressaare,Trans Narva,1,1,D
+2019-06-30,Flora Tallinn,Paide,4,1,H
+2019-06-30,Tulevik,Tallinna Kalev,1,2,A
+2019-07-05,Paide,Kuressaare,6,1,H
+2019-07-05,Trans Narva,Kalju Nomme,1,1,D
+2019-07-06,FC Levadia Tallinn,Flora Tallinn,1,2,A
+2019-07-06,Tulevik,Tammeka,0,1,A
+2019-07-07,Tallinna Kalev,Maardu,1,4,A
+2019-07-19,Kalju Nomme,Paide,1,1,D
+2019-07-20,Tammeka,Tallinna Kalev,2,2,D
+2019-07-21,Trans Narva,Tulevik,3,2,H
+2019-07-21,Flora Tallinn,Maardu,3,0,H
+2019-07-21,Kuressaare,FC Levadia Tallinn,0,3,A
+2019-07-26,Paide,Tammeka,2,0,H
+2019-07-27,Maardu,Trans Narva,1,3,A
+2019-07-28,Tulevik,FC Levadia Tallinn,0,3,A
+2019-08-02,Tammeka,Maardu,2,0,H
+2019-08-03,Paide,Trans Narva,1,0,H
+2019-08-03,Kalju Nomme,Kuressaare,7,2,H
+2019-08-03,FC Levadia Tallinn,Tallinna Kalev,7,0,H
+2019-08-09,Kuressaare,Tallinna Kalev,0,1,A
+2019-08-09,Flora Tallinn,Tammeka,0,1,A
+2019-08-10,Trans Narva,FC Levadia Tallinn,1,3,A
+2019-08-11,Tulevik,Paide,1,2,A
+2019-08-13,Kuressaare,Flora Tallinn,0,3,A
+2019-08-16,Tammeka,Trans Narva,6,4,H
+2019-08-16,Tallinna Kalev,Flora Tallinn,0,2,A
+2019-08-17,Maardu,Kuressaare,2,1,H
+2019-08-17,FC Levadia Tallinn,Paide,3,2,H
+2019-08-18,Kalju Nomme,Tulevik,2,2,D
+2019-08-23,Kuressaare,Tammeka,0,1,A
+2019-08-24,Kalju Nomme,FC Levadia Tallinn,2,1,H
+2019-08-24,Trans Narva,Flora Tallinn,0,1,A
+2019-08-25,Paide,Maardu,5,0,H
+2019-08-25,Tulevik,Tallinna Kalev,1,1,D
+2019-08-27,Tammeka,FC Levadia Tallinn,1,1,D
+2019-08-28,Trans Narva,Kuressaare,4,2,H
+2019-08-28,Maardu,Tulevik,2,2,D
+2019-08-28,Tallinna Kalev,Paide,0,2,A
+2019-08-28,Flora Tallinn,Kalju Nomme,1,1,D
+2019-08-31,Tallinna Kalev,Trans Narva,0,3,A
+2019-08-31,Tammeka,Kalju Nomme,1,2,A
+2019-09-01,Tulevik,Kuressaare,3,0,H
+2019-09-01,Paide,Flora Tallinn,1,1,D
+2019-09-01,FC Levadia Tallinn,Maardu,3,1,H
+2019-09-13,Flora Tallinn,Tallinna Kalev,5,0,H
+2019-09-14,FC Levadia Tallinn,Tulevik,1,1,D
+2019-09-14,Kuressaare,Paide,0,3,A
+2019-09-14,Kalju Nomme,Trans Narva,2,2,D
+2019-09-15,Maardu,Tammeka,0,1,A
+2019-09-17,Tulevik,Kalju Nomme,0,3,A
+2019-09-17,Tallinna Kalev,Kuressaare,2,1,H
+2019-09-18,Trans Narva,Tammeka,3,2,H
+2019-09-18,Maardu,Paide,2,4,A
+2019-09-18,Flora Tallinn,FC Levadia Tallinn,2,1,H
+2019-09-21,Kalju Nomme,Tallinna Kalev,6,0,H
+2019-09-21,Paide,Tulevik,4,0,H
+2019-09-21,FC Levadia Tallinn,Trans Narva,1,0,H
+2019-09-22,Kuressaare,Maardu,1,0,H
+2019-09-22,Tammeka,Flora Tallinn,1,6,A
+2019-09-24,Tallinna Kalev,Kalju Nomme,2,3,A
+2019-09-25,Flora Tallinn,Tulevik,3,0,H
+2019-09-28,Tallinna Kalev,FC Levadia Tallinn,0,1,A
+2019-09-28,Kalju Nomme,Maardu,4,0,H
+2019-09-29,Trans Narva,Paide,0,1,A
+2019-09-29,Tulevik,Flora Tallinn,0,3,A
+2019-09-29,Tammeka,Kuressaare,4,0,H
+2019-10-01,Maardu,Kalju Nomme,1,4,A
+2019-10-05,Kuressaare,Tulevik,4,1,H
+2019-10-05,Maardu,Tallinna Kalev,2,2,D
+2019-10-05,Flora Tallinn,Trans Narva,1,0,H
+2019-10-06,Paide,Kalju Nomme,0,1,A
+2019-10-06,FC Levadia Tallinn,Tammeka,1,1,D
+2019-10-19,FC Levadia Tallinn,Kuressaare,2,1,H
+2019-10-19,Paide,Tallinna Kalev,2,1,H
+2019-10-19,Trans Narva,Maardu,5,2,H
+2019-10-20,Tammeka,Tulevik,1,3,A
+2019-10-20,Kalju Nomme,Flora Tallinn,2,1,H
+2019-10-26,Tallinna Kalev,Tammeka,1,2,A
+2019-10-26,Tulevik,Trans Narva,0,2,A
+2019-10-26,Maardu,FC Levadia Tallinn,1,4,A
+2019-10-27,Flora Tallinn,Paide,1,0,H
+2019-10-28,Kuressaare,Kalju Nomme,0,3,A
+2019-11-02,Trans Narva,Tallinna Kalev,2,0,H
+2019-11-02,FC Levadia Tallinn,Kalju Nomme,1,1,D
+2019-11-03,Tulevik,Maardu,2,1,H
+2019-11-03,Flora Tallinn,Kuressaare,7,0,H
+2019-11-03,Tammeka,Paide,3,2,H
+2019-11-09,Kalju Nomme,Tammeka,2,3,A
+2019-11-09,Kuressaare,Trans Narva,0,1,A
+2019-11-09,Maardu,Flora Tallinn,0,12,A
+2019-11-09,Paide,FC Levadia Tallinn,3,1,H
+2019-11-09,Tallinna Kalev,Tulevik,3,0,H

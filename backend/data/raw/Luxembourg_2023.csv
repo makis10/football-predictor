@@ -1,0 +1,243 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2023-08-05,Schifflange,Union Titus Petange,3,3,D
+2023-08-06,F91 Dudelange,Wiltz,3,1,H
+2023-08-06,UN Kaerjeng 97,Mondercange,1,2,A
+2023-08-06,UNA Strassen,Swift Hesperange,1,5,A
+2023-08-06,US Mondorf-les-bains,Racing FC Union Luxembourg,1,3,A
+2023-08-06,Marisca Mersch,Victoria Rosport,1,2,A
+2023-08-06,AS Jeunesse Esch,Progres Niederkorn,1,3,A
+2023-08-06,FC Differdange 03,Fola Esch,5,1,H
+2023-08-13,Fola Esch,F91 Dudelange,3,2,H
+2023-08-13,Racing FC Union Luxembourg,FC Differdange 03,1,3,A
+2023-08-13,Union Titus Petange,Swift Hesperange,2,0,H
+2023-08-13,UNA Strassen,UN Kaerjeng 97,2,1,H
+2023-08-13,Victoria Rosport,Schifflange,1,2,A
+2023-08-13,Wiltz,AS Jeunesse Esch,0,1,A
+2023-08-13,Mondercange,US Mondorf-les-bains,3,2,H
+2023-08-13,Progres Niederkorn,Marisca Mersch,4,3,H
+2023-08-20,F91 Dudelange,Racing FC Union Luxembourg,2,0,H
+2023-08-20,FC Differdange 03,Mondercange,2,0,H
+2023-08-20,AS Jeunesse Esch,Fola Esch,4,1,H
+2023-08-20,US Mondorf-les-bains,UN Kaerjeng 97,5,3,H
+2023-08-20,Swift Hesperange,Victoria Rosport,3,2,H
+2023-08-20,Marisca Mersch,Wiltz,1,1,D
+2023-08-20,Schifflange,Progres Niederkorn,2,0,H
+2023-08-20,Union Titus Petange,UNA Strassen,2,2,D
+2023-08-27,Fola Esch,Marisca Mersch,1,2,A
+2023-08-27,Racing FC Union Luxembourg,AS Jeunesse Esch,0,3,A
+2023-08-27,UN Kaerjeng 97,FC Differdange 03,0,1,A
+2023-08-27,UNA Strassen,US Mondorf-les-bains,4,2,H
+2023-08-27,Victoria Rosport,Union Titus Petange,3,1,H
+2023-08-27,Wiltz,Schifflange,2,1,H
+2023-08-27,Mondercange,F91 Dudelange,1,0,H
+2023-08-27,Progres Niederkorn,Swift Hesperange,2,0,H
+2023-09-03,F91 Dudelange,UN Kaerjeng 97,4,1,H
+2023-09-03,FC Differdange 03,US Mondorf-les-bains,1,1,D
+2023-09-03,Union Titus Petange,Progres Niederkorn,2,2,D
+2023-09-03,AS Jeunesse Esch,Mondercange,0,1,A
+2023-09-03,Victoria Rosport,UNA Strassen,0,3,A
+2023-09-03,Marisca Mersch,Racing FC Union Luxembourg,2,2,D
+2023-09-03,Schifflange,Fola Esch,3,1,H
+2023-09-03,Swift Hesperange,Wiltz,1,1,D
+2023-09-17,Fola Esch,Swift Hesperange,1,2,A
+2023-09-17,Progres Niederkorn,Victoria Rosport,1,1,D
+2023-09-17,Racing FC Union Luxembourg,Schifflange,1,0,H
+2023-09-17,UN Kaerjeng 97,AS Jeunesse Esch,1,1,D
+2023-09-17,US Mondorf-les-bains,F91 Dudelange,4,0,H
+2023-09-17,Wiltz,Union Titus Petange,2,0,H
+2023-09-17,Mondercange,Marisca Mersch,1,2,A
+2023-09-17,UNA Strassen,FC Differdange 03,2,2,D
+2023-09-22,Marisca Mersch,UN Kaerjeng 97,2,1,H
+2023-09-23,F91 Dudelange,FC Differdange 03,2,2,D
+2023-09-23,Union Titus Petange,Fola Esch,2,1,H
+2023-09-23,Progres Niederkorn,UNA Strassen,2,0,H
+2023-09-23,Swift Hesperange,Racing FC Union Luxembourg,2,1,H
+2023-09-24,AS Jeunesse Esch,US Mondorf-les-bains,2,2,D
+2023-09-24,Victoria Rosport,Wiltz,3,1,H
+2023-09-24,Schifflange,Mondercange,2,2,D
+2023-09-27,Fola Esch,Victoria Rosport,0,1,A
+2023-09-27,FC Differdange 03,AS Jeunesse Esch,3,1,H
+2023-09-27,Racing FC Union Luxembourg,Union Titus Petange,2,0,H
+2023-09-27,UN Kaerjeng 97,Schifflange,1,0,H
+2023-09-27,UNA Strassen,F91 Dudelange,1,1,D
+2023-09-27,US Mondorf-les-bains,Marisca Mersch,3,2,H
+2023-09-27,Wiltz,Progres Niederkorn,2,2,D
+2023-09-27,Mondercange,Swift Hesperange,0,6,A
+2023-10-08,Union Titus Petange,Mondercange,4,0,H
+2023-10-08,AS Jeunesse Esch,F91 Dudelange,1,2,A
+2023-10-08,Victoria Rosport,Racing FC Union Luxembourg,1,0,H
+2023-10-08,Wiltz,UNA Strassen,2,1,H
+2023-10-08,Swift Hesperange,UN Kaerjeng 97,0,0,D
+2023-10-08,Marisca Mersch,FC Differdange 03,1,1,D
+2023-10-08,Schifflange,US Mondorf-les-bains,0,0,D
+2023-10-08,Progres Niederkorn,Fola Esch,3,2,H
+2023-10-21,FC Differdange 03,Schifflange,5,0,H
+2023-10-22,F91 Dudelange,Marisca Mersch,1,0,H
+2023-10-22,Fola Esch,Wiltz,0,1,A
+2023-10-22,Racing FC Union Luxembourg,Progres Niederkorn,3,3,D
+2023-10-22,UNA Strassen,AS Jeunesse Esch,1,1,D
+2023-10-22,US Mondorf-les-bains,Swift Hesperange,0,2,A
+2023-10-22,Mondercange,Victoria Rosport,3,3,D
+2023-10-22,UN Kaerjeng 97,Union Titus Petange,0,1,A
+2023-11-05,Wiltz,Racing FC Union Luxembourg,1,3,A
+2023-11-05,Schifflange,F91 Dudelange,0,3,A
+2023-11-05,Progres Niederkorn,Mondercange,1,1,D
+2023-11-05,Fola Esch,UNA Strassen,1,1,D
+2023-11-05,Union Titus Petange,US Mondorf-les-bains,4,1,H
+2023-11-05,Victoria Rosport,UN Kaerjeng 97,1,4,A
+2023-11-05,Swift Hesperange,FC Differdange 03,1,1,D
+2023-11-11,Racing FC Union Luxembourg,Fola Esch,0,1,A
+2023-11-12,F91 Dudelange,Swift Hesperange,1,0,H
+2023-11-12,FC Differdange 03,Union Titus Petange,2,0,H
+2023-11-12,AS Jeunesse Esch,Schifflange,3,3,D
+2023-11-12,UN Kaerjeng 97,Progres Niederkorn,2,0,H
+2023-11-12,UNA Strassen,Marisca Mersch,1,1,D
+2023-11-12,Mondercange,Wiltz,1,3,A
+2023-11-26,Schifflange,Marisca Mersch,2,1,H
+2023-11-26,Progres Niederkorn,US Mondorf-les-bains,3,0,H
+2023-11-26,Fola Esch,Mondercange,2,2,D
+2023-11-26,Racing FC Union Luxembourg,UNA Strassen,2,1,H
+2023-11-26,Union Titus Petange,F91 Dudelange,0,1,A
+2023-11-26,Victoria Rosport,FC Differdange 03,0,1,A
+2023-11-26,Wiltz,UN Kaerjeng 97,1,1,D
+2023-11-26,Swift Hesperange,AS Jeunesse Esch,2,0,H
+2023-11-29,US Mondorf-les-bains,Victoria Rosport,2,0,H
+2023-11-29,Marisca Mersch,AS Jeunesse Esch,4,1,H
+2023-12-02,AS Jeunesse Esch,Union Titus Petange,0,0,D
+2023-12-02,Marisca Mersch,Swift Hesperange,2,2,D
+2023-12-02,Mondercange,Racing FC Union Luxembourg,0,4,A
+2023-12-03,UN Kaerjeng 97,Fola Esch,2,1,H
+2023-12-03,F91 Dudelange,Victoria Rosport,3,0,H
+2023-12-03,FC Differdange 03,Progres Niederkorn,3,1,H
+2023-12-03,UNA Strassen,Schifflange,1,0,H
+2023-12-03,US Mondorf-les-bains,Wiltz,2,0,H
+2023-12-09,Union Titus Petange,Marisca Mersch,4,1,H
+2023-12-09,Wiltz,FC Differdange 03,1,1,D
+2023-12-10,Fola Esch,US Mondorf-les-bains,3,2,H
+2023-12-10,Progres Niederkorn,F91 Dudelange,1,0,H
+2023-12-10,Racing FC Union Luxembourg,UN Kaerjeng 97,2,1,H
+2023-12-10,Swift Hesperange,Schifflange,2,1,H
+2023-12-10,Mondercange,UNA Strassen,0,0,D
+2024-02-04,Victoria Rosport,AS Jeunesse Esch,1,0,H
+2024-02-11,Schifflange,Victoria Rosport,2,2,D
+2024-02-11,F91 Dudelange,Fola Esch,4,0,H
+2024-02-11,FC Differdange 03,Racing FC Union Luxembourg,7,0,H
+2024-02-11,AS Jeunesse Esch,Wiltz,5,2,H
+2024-02-11,UN Kaerjeng 97,UNA Strassen,0,1,A
+2024-02-11,US Mondorf-les-bains,Mondercange,2,0,H
+2024-02-11,Swift Hesperange,Union Titus Petange,3,3,D
+2024-02-11,Marisca Mersch,Progres Niederkorn,0,3,A
+2024-02-18,Progres Niederkorn,Schifflange,4,0,H
+2024-02-18,Racing FC Union Luxembourg,F91 Dudelange,0,3,A
+2024-02-18,UN Kaerjeng 97,US Mondorf-les-bains,2,1,H
+2024-02-18,UNA Strassen,Union Titus Petange,1,0,H
+2024-02-18,Victoria Rosport,Swift Hesperange,1,3,A
+2024-02-18,Wiltz,Marisca Mersch,0,1,A
+2024-02-18,Mondercange,FC Differdange 03,1,1,D
+2024-02-18,Fola Esch,AS Jeunesse Esch,0,1,A
+2024-02-24,AS Jeunesse Esch,Racing FC Union Luxembourg,3,0,H
+2024-02-25,Schifflange,Wiltz,1,1,D
+2024-02-25,F91 Dudelange,Mondercange,4,2,H
+2024-02-25,FC Differdange 03,UN Kaerjeng 97,4,0,H
+2024-02-25,Union Titus Petange,Victoria Rosport,2,3,A
+2024-02-25,US Mondorf-les-bains,UNA Strassen,1,1,D
+2024-02-25,Swift Hesperange,Progres Niederkorn,0,0,D
+2024-03-03,Fola Esch,Schifflange,2,1,H
+2024-03-03,Progres Niederkorn,Union Titus Petange,2,1,H
+2024-03-03,Racing FC Union Luxembourg,Marisca Mersch,4,1,H
+2024-03-03,UN Kaerjeng 97,F91 Dudelange,2,2,D
+2024-03-03,UNA Strassen,Victoria Rosport,0,0,D
+2024-03-03,US Mondorf-les-bains,FC Differdange 03,0,2,A
+2024-03-03,Wiltz,Swift Hesperange,4,5,A
+2024-03-03,Mondercange,AS Jeunesse Esch,0,2,A
+2024-03-06,Marisca Mersch,Fola Esch,0,1,A
+2024-03-09,Union Titus Petange,Wiltz,1,0,H
+2024-03-10,Schifflange,Racing FC Union Luxembourg,4,1,H
+2024-03-10,F91 Dudelange,US Mondorf-les-bains,2,1,H
+2024-03-10,FC Differdange 03,UNA Strassen,2,0,H
+2024-03-10,AS Jeunesse Esch,UN Kaerjeng 97,3,0,H
+2024-03-10,Victoria Rosport,Progres Niederkorn,3,1,H
+2024-03-10,Swift Hesperange,Fola Esch,4,1,H
+2024-03-10,Marisca Mersch,Mondercange,2,1,H
+2024-03-16,FC Differdange 03,F91 Dudelange,2,0,H
+2024-03-17,Fola Esch,Union Titus Petange,0,3,A
+2024-03-17,Racing FC Union Luxembourg,Swift Hesperange,2,5,A
+2024-03-17,UN Kaerjeng 97,Marisca Mersch,1,0,H
+2024-03-17,UNA Strassen,Progres Niederkorn,0,1,A
+2024-03-17,US Mondorf-les-bains,AS Jeunesse Esch,0,2,A
+2024-03-17,Wiltz,Victoria Rosport,2,2,D
+2024-03-17,Mondercange,Schifflange,2,1,H
+2024-03-30,AS Jeunesse Esch,FC Differdange 03,4,3,H
+2024-03-30,Schifflange,UN Kaerjeng 97,0,1,A
+2024-03-30,Victoria Rosport,Fola Esch,2,3,A
+2024-03-30,F91 Dudelange,UNA Strassen,4,3,H
+2024-03-30,Union Titus Petange,Racing FC Union Luxembourg,0,3,A
+2024-03-30,Swift Hesperange,Mondercange,1,1,D
+2024-03-30,Marisca Mersch,US Mondorf-les-bains,1,4,A
+2024-03-30,Progres Niederkorn,Wiltz,3,0,H
+2024-04-07,F91 Dudelange,AS Jeunesse Esch,1,1,D
+2024-04-07,Fola Esch,Progres Niederkorn,0,0,D
+2024-04-07,FC Differdange 03,Marisca Mersch,2,0,H
+2024-04-07,Racing FC Union Luxembourg,Victoria Rosport,0,3,A
+2024-04-07,UN Kaerjeng 97,Swift Hesperange,1,3,A
+2024-04-07,UNA Strassen,Wiltz,1,1,D
+2024-04-07,US Mondorf-les-bains,Schifflange,3,3,D
+2024-04-07,Mondercange,Union Titus Petange,0,3,A
+2024-04-14,Progres Niederkorn,Racing FC Union Luxembourg,2,1,H
+2024-04-14,Union Titus Petange,UN Kaerjeng 97,1,1,D
+2024-04-14,AS Jeunesse Esch,UNA Strassen,1,2,A
+2024-04-14,Victoria Rosport,Mondercange,2,1,H
+2024-04-14,Wiltz,Fola Esch,1,1,D
+2024-04-14,Swift Hesperange,US Mondorf-les-bains,1,2,A
+2024-04-14,Marisca Mersch,F91 Dudelange,3,4,A
+2024-04-14,Schifflange,FC Differdange 03,0,4,A
+2024-04-20,FC Differdange 03,Swift Hesperange,2,0,H
+2024-04-20,AS Jeunesse Esch,Marisca Mersch,3,1,H
+2024-04-20,US Mondorf-les-bains,Union Titus Petange,2,1,H
+2024-04-20,Mondercange,Progres Niederkorn,2,1,H
+2024-04-21,F91 Dudelange,Schifflange,1,0,H
+2024-04-21,Racing FC Union Luxembourg,Wiltz,2,4,A
+2024-04-21,UN Kaerjeng 97,Victoria Rosport,0,0,D
+2024-04-21,UNA Strassen,Fola Esch,3,1,H
+2024-04-28,Fola Esch,Racing FC Union Luxembourg,1,2,A
+2024-04-28,Union Titus Petange,FC Differdange 03,1,4,A
+2024-04-28,Victoria Rosport,US Mondorf-les-bains,1,1,D
+2024-04-28,Wiltz,Mondercange,2,1,H
+2024-04-28,Marisca Mersch,UNA Strassen,2,3,A
+2024-04-28,Schifflange,AS Jeunesse Esch,1,3,A
+2024-04-28,Swift Hesperange,F91 Dudelange,2,1,H
+2024-04-28,Progres Niederkorn,UN Kaerjeng 97,2,0,H
+2024-05-05,F91 Dudelange,Union Titus Petange,3,0,H
+2024-05-05,FC Differdange 03,Victoria Rosport,2,2,D
+2024-05-05,AS Jeunesse Esch,Swift Hesperange,0,2,A
+2024-05-05,UN Kaerjeng 97,Wiltz,2,2,D
+2024-05-05,UNA Strassen,Racing FC Union Luxembourg,1,1,D
+2024-05-05,US Mondorf-les-bains,Progres Niederkorn,2,4,A
+2024-05-05,Marisca Mersch,Schifflange,2,0,H
+2024-05-05,Mondercange,Fola Esch,2,1,H
+2024-05-12,Racing FC Union Luxembourg,Mondercange,1,1,D
+2024-05-12,Union Titus Petange,AS Jeunesse Esch,2,1,H
+2024-05-12,Victoria Rosport,F91 Dudelange,1,2,A
+2024-05-12,Wiltz,US Mondorf-les-bains,2,2,D
+2024-05-12,Swift Hesperange,Marisca Mersch,3,1,H
+2024-05-12,Schifflange,UNA Strassen,0,2,A
+2024-05-12,Fola Esch,UN Kaerjeng 97,1,0,H
+2024-05-13,Progres Niederkorn,FC Differdange 03,0,1,A
+2024-05-18,F91 Dudelange,Progres Niederkorn,0,2,A
+2024-05-18,FC Differdange 03,Wiltz,1,1,D
+2024-05-18,AS Jeunesse Esch,Victoria Rosport,0,2,A
+2024-05-18,UN Kaerjeng 97,Racing FC Union Luxembourg,1,4,A
+2024-05-18,UNA Strassen,Mondercange,1,0,H
+2024-05-18,US Mondorf-les-bains,Fola Esch,6,0,H
+2024-05-18,Marisca Mersch,Union Titus Petange,1,4,A
+2024-05-18,Schifflange,Swift Hesperange,1,4,A
+2024-05-26,Fola Esch,FC Differdange 03,2,0,H
+2024-05-26,Progres Niederkorn,AS Jeunesse Esch,1,3,A
+2024-05-26,Racing FC Union Luxembourg,US Mondorf-les-bains,1,1,D
+2024-05-26,Union Titus Petange,Schifflange,1,3,A
+2024-05-26,Victoria Rosport,Marisca Mersch,2,0,H
+2024-05-26,Wiltz,F91 Dudelange,2,3,A
+2024-05-26,Swift Hesperange,UNA Strassen,2,0,H
+2024-05-26,Mondercange,UN Kaerjeng 97,2,1,H
+2024-05-31,UN Kaerjeng 97,US Hostert,1,3,A
+2024-06-02,Fola Esch,US Rumelange,2,2,D

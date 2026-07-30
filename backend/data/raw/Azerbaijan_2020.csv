@@ -1,0 +1,113 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2020-08-21,Sumqayt,Samax FK,0,1,A
+2020-08-21,Neftchi Baku,Sbail,2,1,H
+2020-08-22,Qarabag,Sabah FA,2,0,H
+2020-08-23,Qabala,Zira,1,1,D
+2020-09-11,Neftchi Baku,Sumqayt,0,2,A
+2020-09-11,Samax FK,Qarabag,0,0,D
+2020-09-12,Sbail,Zira,1,2,A
+2020-09-13,Sabah FA,Qabala,3,0,H
+2020-09-19,Qabala,Samax FK,0,0,D
+2020-09-19,Sumqayt,Sbail,2,1,H
+2020-09-20,Zira,Sabah FA,0,2,A
+2020-09-20,Qarabag,Neftchi Baku,1,2,A
+2020-09-25,Sumqayt,Qarabag,2,2,D
+2020-09-26,Sbail,Sabah FA,2,1,H
+2020-09-26,Samax FK,Zira,2,3,A
+2020-09-27,Neftchi Baku,Qabala,1,1,D
+2020-10-02,Sabah FA,Samax FK,0,2,A
+2020-10-03,Qabala,Sumqayt,1,1,D
+2020-10-03,Zira,Neftchi Baku,1,0,H
+2020-10-17,Sbail,Samax FK,1,1,D
+2020-10-17,Qarabag,Qabala,3,0,H
+2020-10-18,Neftchi Baku,Sabah FA,1,0,H
+2020-10-18,Sumqayt,Zira,2,1,H
+2020-10-24,Qabala,Sbail,1,1,D
+2020-10-24,Samax FK,Neftchi Baku,0,1,A
+2020-10-25,Sabah FA,Sumqayt,1,2,A
+2020-10-25,Zira,Qarabag,0,0,D
+2020-10-31,Qabala,Sabah FA,2,1,H
+2020-10-31,Zira,Sbail,0,0,D
+2020-11-01,Sumqayt,Neftchi Baku,0,0,D
+2020-11-01,Qarabag,Samax FK,6,1,H
+2020-11-07,Samax FK,Qabala,3,1,H
+2020-11-07,Sbail,Sumqayt,2,1,H
+2020-11-08,Neftchi Baku,Qarabag,0,6,A
+2020-11-08,Sabah FA,Zira,0,1,A
+2020-11-21,Qarabag,Sumqayt,6,1,H
+2020-11-22,Qabala,Neftchi Baku,1,4,A
+2020-11-22,Zira,Samax FK,3,1,H
+2020-11-23,Sabah FA,Sbail,2,1,H
+2020-11-28,Neftchi Baku,Zira,0,0,D
+2020-11-29,Samax FK,Sabah FA,1,1,D
+2020-11-29,Sbail,Qarabag,1,1,D
+2020-11-30,Sumqayt,Qabala,0,1,A
+2020-12-20,Qabala,Qarabag,1,1,D
+2020-12-20,Zira,Sumqayt,2,2,D
+2020-12-20,Samax FK,Sbail,0,2,A
+2020-12-20,Sabah FA,Neftchi Baku,0,2,A
+2020-12-24,Qarabag,Zira,3,2,H
+2020-12-24,Sbail,Qabala,1,3,A
+2020-12-24,Sumqayt,Sabah FA,1,2,A
+2020-12-24,Neftchi Baku,Samax FK,2,1,H
+2021-01-21,Zira,Qabala,2,0,H
+2021-01-21,Sbail,Neftchi Baku,1,3,A
+2021-01-21,Sabah FA,Qarabag,1,2,A
+2021-01-22,Samax FK,Sumqayt,0,1,A
+2021-01-28,Qarabag,Sbail,4,0,H
+2021-02-13,Sumqayt,Sbail,3,0,H
+2021-02-13,Qarabag,Neftchi Baku,1,2,A
+2021-02-14,Qabala,Samax FK,2,0,H
+2021-02-14,Zira,Sabah FA,2,2,D
+2021-02-19,Sbail,Sabah FA,2,0,H
+2021-02-19,Sumqayt,Qarabag,0,0,D
+2021-02-20,Samax FK,Zira,2,2,D
+2021-02-20,Neftchi Baku,Qabala,1,0,H
+2021-02-25,Qabala,Sumqayt,1,0,H
+2021-02-25,Zira,Neftchi Baku,1,0,H
+2021-02-25,Sabah FA,Samax FK,1,1,D
+2021-02-25,Qarabag,Sbail,1,0,H
+2021-03-02,Sbail,Samax FK,1,1,D
+2021-03-02,Qarabag,Qabala,3,0,H
+2021-03-03,Sumqayt,Zira,0,0,D
+2021-03-03,Neftchi Baku,Sabah FA,2,1,H
+2021-03-08,Sabah FA,Sumqayt,1,1,D
+2021-03-08,Neftchi Baku,Samax FK,3,1,H
+2021-03-09,Qabala,Sbail,1,1,D
+2021-03-09,Zira,Qarabag,0,2,A
+2021-03-13,Qarabag,Sabah FA,2,0,H
+2021-03-13,Sumqayt,Samax FK,2,2,D
+2021-03-14,Qabala,Zira,1,1,D
+2021-03-14,Neftchi Baku,Sbail,4,0,H
+2021-04-03,Sbail,Zira,0,0,D
+2021-04-04,Neftchi Baku,Sumqayt,0,2,A
+2021-04-04,Sabah FA,Qabala,1,0,H
+2021-04-04,Samax FK,Qarabag,1,1,D
+2021-04-10,Qabala,Neftchi Baku,2,2,D
+2021-04-10,Sabah FA,Sbail,0,0,D
+2021-04-11,Zira,Samax FK,0,0,D
+2021-04-11,Qarabag,Sumqayt,4,1,H
+2021-04-16,Sbail,Qarabag,1,1,D
+2021-04-16,Sumqayt,Qabala,2,0,H
+2021-04-17,Samax FK,Sabah FA,0,0,D
+2021-04-17,Neftchi Baku,Zira,4,0,H
+2021-04-25,Qabala,Qarabag,0,5,A
+2021-04-25,Samax FK,Sbail,1,0,H
+2021-04-25,Sabah FA,Neftchi Baku,2,2,D
+2021-04-25,Zira,Sumqayt,0,0,D
+2021-05-03,Samax FK,Neftchi Baku,0,3,A
+2021-05-03,Sbail,Qabala,1,0,H
+2021-05-04,Qarabag,Zira,1,1,D
+2021-05-04,Sumqayt,Sabah FA,0,2,A
+2021-05-08,Samax FK,Sumqayt,0,1,A
+2021-05-08,Sbail,Neftchi Baku,0,4,A
+2021-05-09,Zira,Qabala,0,0,D
+2021-05-09,Sabah FA,Qarabag,0,4,A
+2021-05-14,Qabala,Sabah FA,2,2,D
+2021-05-14,Qarabag,Samax FK,2,0,H
+2021-05-14,Zira,Sbail,2,0,H
+2021-05-14,Sumqayt,Neftchi Baku,0,1,A
+2021-05-19,Samax FK,Qabala,3,1,H
+2021-05-19,Sbail,Sumqayt,0,1,A
+2021-05-19,Sabah FA,Zira,2,1,H
+2021-05-19,Neftchi Baku,Qarabag,1,0,H

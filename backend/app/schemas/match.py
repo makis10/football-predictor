@@ -38,5 +38,9 @@ class MatchResponse(MatchBase):
     result: Optional[str] = None
     created_at: datetime
     prediction: Optional[PredictionEmbed] = None
+    # Which side(s) we hold no history for. Populated only when the prediction
+    # is flagged insufficient_data, so the card can say WHICH club is missing
+    # instead of calling a PAOK or Benfica tie "unknown teams".
+    unknown_teams: list[str] = []
 
     model_config = {"from_attributes": True}

@@ -1,0 +1,391 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2019-08-23,Pisa,Benevento,0,0,D
+2019-08-24,Crotone,Nuova Cosenza,0,0,D
+2019-08-24,Salernitana,Pescara,3,1,H
+2019-08-24,Ascoli,Trapani,3,1,H
+2019-08-24,Cittadella,Spezia,0,3,A
+2019-08-24,Venezia,Cremonese,1,2,A
+2019-08-24,Virtus Entella,Livorno,1,0,H
+2019-08-25,Empoli,Juve Stabia,2,1,H
+2019-08-25,Perugia,Chievo,2,1,H
+2019-08-26,Pordenone,Frosinone,3,0,H
+2019-08-30,Chievo,Empoli,1,1,D
+2019-08-31,Benevento,Cittadella,4,1,H
+2019-08-31,Spezia,Crotone,1,2,A
+2019-08-31,Cremonese,Virtus Entella,0,1,A
+2019-08-31,Trapani,Venezia,0,1,A
+2019-08-31,Livorno,Perugia,0,1,A
+2019-08-31,Nuova Cosenza,Salernitana,0,1,A
+2019-09-01,Pescara,Pordenone,4,2,H
+2019-09-01,Juve Stabia,Pisa,0,2,A
+2019-09-01,Frosinone,Ascoli,2,1,H
+2019-09-13,Pordenone,Spezia,1,0,H
+2019-09-14,Ascoli,Livorno,2,0,H
+2019-09-14,Cittadella,Trapani,2,0,H
+2019-09-14,Perugia,Juve Stabia,0,0,D
+2019-09-14,Virtus Entella,Frosinone,1,0,H
+2019-09-14,Venezia,Chievo,0,2,A
+2019-09-15,Crotone,Empoli,0,0,D
+2019-09-15,Nuova Cosenza,Pescara,1,2,A
+2019-09-15,Pisa,Cremonese,4,1,H
+2019-09-16,Salernitana,Benevento,0,2,A
+2019-09-20,Frosinone,Venezia,1,1,D
+2019-09-21,Benevento,Nuova Cosenza,1,0,H
+2019-09-21,Empoli,Cittadella,1,0,H
+2019-09-21,Spezia,Perugia,2,2,D
+2019-09-21,Cremonese,Crotone,2,1,H
+2019-09-21,Pescara,Virtus Entella,1,1,D
+2019-09-21,Juve Stabia,Ascoli,1,5,A
+2019-09-21,Livorno,Pordenone,2,1,H
+2019-09-21,Chievo,Pisa,2,2,D
+2019-09-22,Trapani,Salernitana,0,1,A
+2019-09-24,Crotone,Juve Stabia,2,0,H
+2019-09-24,Ascoli,Spezia,3,0,H
+2019-09-24,Cittadella,Pescara,2,1,H
+2019-09-24,Perugia,Frosinone,3,1,H
+2019-09-24,Virtus Entella,Venezia,0,2,A
+2019-09-24,Pisa,Empoli,2,3,A
+2019-09-24,Pordenone,Benevento,1,1,D
+2019-09-24,Nuova Cosenza,Livorno,1,1,D
+2019-09-25,Trapani,Cremonese,0,0,D
+2019-09-25,Salernitana,Chievo,1,1,D
+2019-09-27,Pescara,Crotone,0,3,A
+2019-09-28,Frosinone,Nuova Cosenza,1,1,D
+2019-09-28,Venezia,Pisa,1,1,D
+2019-09-28,Juve Stabia,Cittadella,0,1,A
+2019-09-28,Empoli,Perugia,3,0,H
+2019-09-29,Chievo,Pordenone,1,1,D
+2019-09-29,Benevento,Virtus Entella,1,1,D
+2019-09-29,Spezia,Trapani,2,4,A
+2019-09-29,Livorno,Salernitana,2,3,A
+2019-09-30,Cremonese,Ascoli,1,0,H
+2019-10-04,Perugia,Pisa,1,0,H
+2019-10-05,Crotone,Virtus Entella,3,1,H
+2019-10-05,Spezia,Benevento,0,1,A
+2019-10-05,Pordenone,Empoli,2,0,H
+2019-10-05,Livorno,Chievo,3,4,A
+2019-10-05,Nuova Cosenza,Venezia,1,1,D
+2019-10-05,Trapani,Juve Stabia,1,2,A
+2019-10-06,Salernitana,Frosinone,1,1,D
+2019-10-06,Cremonese,Cittadella,0,2,A
+2019-10-06,Ascoli,Pescara,0,2,A
+2019-10-18,Cittadella,Nuova Cosenza,1,3,A
+2019-10-19,Venezia,Salernitana,1,0,H
+2019-10-19,Pescara,Spezia,1,2,A
+2019-10-19,Virtus Entella,Trapani,1,1,D
+2019-10-19,Juve Stabia,Pordenone,4,2,H
+2019-10-19,Benevento,Perugia,1,0,H
+2019-10-20,Chievo,Ascoli,2,0,H
+2019-10-20,Pisa,Crotone,1,1,D
+2019-10-20,Empoli,Cremonese,1,1,D
+2019-10-21,Frosinone,Livorno,1,0,H
+2019-10-25,Ascoli,Virtus Entella,2,1,H
+2019-10-26,Crotone,Venezia,3,2,H
+2019-10-26,Salernitana,Perugia,1,1,D
+2019-10-26,Spezia,Juve Stabia,2,0,H
+2019-10-26,Pescara,Benevento,4,0,H
+2019-10-26,Trapani,Empoli,2,2,D
+2019-10-26,Pordenone,Cittadella,0,0,D
+2019-10-26,Nuova Cosenza,Chievo,1,1,D
+2019-10-26,Livorno,Pisa,1,0,H
+2019-10-27,Cremonese,Frosinone,1,1,D
+2019-10-29,Chievo,Crotone,2,1,H
+2019-10-29,Cittadella,Livorno,1,0,H
+2019-10-29,Empoli,Spezia,1,1,D
+2019-10-29,Venezia,Pordenone,1,2,A
+2019-10-29,Perugia,Ascoli,1,1,D
+2019-10-29,Virtus Entella,Nuova Cosenza,1,0,H
+2019-10-29,Pisa,Salernitana,2,1,H
+2019-10-29,Juve Stabia,Pescara,2,1,H
+2019-10-30,Benevento,Cremonese,2,0,H
+2019-10-30,Frosinone,Trapani,3,0,H
+2019-11-01,Spezia,Chievo,0,0,D
+2019-11-02,Crotone,Perugia,2,3,A
+2019-11-02,Ascoli,Venezia,1,1,D
+2019-11-02,Pescara,Pisa,3,0,H
+2019-11-02,Livorno,Juve Stabia,2,1,H
+2019-11-02,Salernitana,Virtus Entella,2,1,H
+2019-11-03,Cittadella,Frosinone,0,0,D
+2019-11-03,Pordenone,Trapani,2,1,H
+2019-11-03,Benevento,Empoli,2,0,H
+2019-11-04,Nuova Cosenza,Cremonese,2,0,H
+2019-11-08,Crotone,Ascoli,3,1,H
+2019-11-09,Venezia,Livorno,1,0,H
+2019-11-09,Perugia,Cittadella,0,2,A
+2019-11-09,Virtus Entella,Pordenone,1,1,D
+2019-11-09,Pisa,Spezia,3,2,H
+2019-11-09,Juve Stabia,Benevento,1,1,D
+2019-11-09,Empoli,Pescara,1,2,A
+2019-11-10,Cremonese,Salernitana,1,0,H
+2019-11-10,Trapani,Nuova Cosenza,2,2,D
+2019-11-10,Frosinone,Chievo,2,0,H
+2019-11-22,Pescara,Cremonese,1,1,D
+2019-11-23,Benevento,Crotone,2,0,H
+2019-11-23,Pordenone,Perugia,3,0,H
+2019-11-23,Juve Stabia,Salernitana,2,0,H
+2019-11-23,Livorno,Trapani,1,2,A
+2019-11-23,Empoli,Venezia,1,1,D
+2019-11-24,Ascoli,Nuova Cosenza,3,2,H
+2019-11-24,Cittadella,Pisa,1,1,D
+2019-11-24,Spezia,Frosinone,2,0,H
+2019-11-25,Chievo,Virtus Entella,2,1,H
+2019-11-29,Nuova Cosenza,Spezia,1,1,D
+2019-11-30,Crotone,Cittadella,1,1,D
+2019-11-30,Frosinone,Empoli,4,0,H
+2019-11-30,Venezia,Benevento,0,2,A
+2019-11-30,Cremonese,Livorno,0,0,D
+2019-11-30,Salernitana,Ascoli,1,1,D
+2019-12-01,Virtus Entella,Juve Stabia,2,0,H
+2019-12-01,Trapani,Chievo,1,0,H
+2019-12-01,Perugia,Pescara,3,1,H
+2019-12-02,Pisa,Pordenone,2,0,H
+2019-12-06,Benevento,Trapani,5,0,H
+2019-12-07,Cittadella,Salernitana,4,3,H
+2019-12-07,Empoli,Ascoli,2,1,H
+2019-12-07,Spezia,Livorno,2,0,H
+2019-12-07,Pescara,Venezia,2,2,D
+2019-12-07,Chievo,Cremonese,1,0,H
+2019-12-08,Pisa,Virtus Entella,0,2,A
+2019-12-08,Juve Stabia,Frosinone,0,2,A
+2019-12-08,Pordenone,Crotone,1,0,H
+2019-12-09,Perugia,Nuova Cosenza,2,2,D
+2019-12-13,Chievo,Juve Stabia,2,3,A
+2019-12-14,Ascoli,Cittadella,1,0,H
+2019-12-14,Frosinone,Pescara,2,0,H
+2019-12-14,Venezia,Spezia,0,0,D
+2019-12-14,Virtus Entella,Empoli,2,0,H
+2019-12-14,Livorno,Benevento,0,2,A
+2019-12-15,Cremonese,Perugia,2,1,H
+2019-12-15,Nuova Cosenza,Pordenone,1,2,A
+2019-12-15,Salernitana,Crotone,3,2,H
+2019-12-16,Trapani,Pisa,1,3,A
+2019-12-21,Crotone,Livorno,2,1,H
+2019-12-21,Cittadella,Chievo,1,1,D
+2019-12-21,Empoli,Salernitana,1,1,D
+2019-12-21,Perugia,Virtus Entella,2,0,H
+2019-12-21,Juve Stabia,Venezia,2,0,H
+2019-12-21,Benevento,Frosinone,1,0,H
+2019-12-22,Pescara,Trapani,1,1,D
+2019-12-22,Pisa,Nuova Cosenza,1,3,A
+2019-12-22,Pordenone,Ascoli,2,1,H
+2019-12-26,Nuova Cosenza,Empoli,1,0,H
+2019-12-26,Chievo,Benevento,1,2,A
+2019-12-26,Frosinone,Crotone,1,2,A
+2019-12-26,Salernitana,Pordenone,4,0,H
+2019-12-26,Venezia,Cittadella,1,2,A
+2019-12-26,Cremonese,Juve Stabia,1,1,D
+2019-12-26,Trapani,Perugia,2,2,D
+2019-12-26,Livorno,Pescara,0,2,A
+2019-12-26,Ascoli,Pisa,1,0,H
+2019-12-26,Virtus Entella,Spezia,0,0,D
+2019-12-29,Pescara,Chievo,0,0,D
+2019-12-29,Crotone,Trapani,3,0,H
+2019-12-29,Cittadella,Virtus Entella,1,3,A
+2019-12-29,Spezia,Salernitana,2,1,H
+2019-12-29,Perugia,Venezia,0,1,A
+2019-12-29,Pisa,Frosinone,0,0,D
+2019-12-29,Pordenone,Cremonese,1,0,H
+2019-12-29,Juve Stabia,Nuova Cosenza,1,0,H
+2019-12-29,Benevento,Ascoli,4,0,H
+2019-12-29,Empoli,Livorno,1,1,D
+2020-01-17,Frosinone,Pordenone,2,2,D
+2020-01-18,Cremonese,Venezia,0,0,D
+2020-01-18,Trapani,Ascoli,3,1,H
+2020-01-18,Juve Stabia,Empoli,1,0,H
+2020-01-18,Livorno,Virtus Entella,4,4,D
+2020-01-18,Chievo,Perugia,2,0,H
+2020-01-19,Spezia,Cittadella,1,1,D
+2020-01-19,Pescara,Salernitana,1,2,A
+2020-01-19,Benevento,Pisa,1,1,D
+2020-01-20,Nuova Cosenza,Crotone,0,1,A
+2020-01-24,Empoli,Chievo,1,1,D
+2020-01-25,Cittadella,Benevento,1,2,A
+2020-01-25,Virtus Entella,Cremonese,1,1,D
+2020-01-25,Pisa,Juve Stabia,1,1,D
+2020-01-25,Pordenone,Pescara,0,2,A
+2020-01-25,Salernitana,Nuova Cosenza,2,1,H
+2020-01-26,Crotone,Spezia,1,2,A
+2020-01-26,Venezia,Trapani,1,1,D
+2020-01-26,Ascoli,Frosinone,0,1,A
+2020-01-27,Perugia,Livorno,1,0,H
+2020-01-31,Cremonese,Pisa,3,4,A
+2020-02-01,Frosinone,Virtus Entella,1,0,H
+2020-02-01,Spezia,Pordenone,1,0,H
+2020-02-01,Trapani,Cittadella,0,3,A
+2020-02-01,Livorno,Ascoli,0,3,A
+2020-02-01,Empoli,Crotone,3,1,H
+2020-02-02,Chievo,Venezia,0,1,A
+2020-02-02,Juve Stabia,Perugia,1,2,A
+2020-02-02,Benevento,Salernitana,1,1,D
+2020-02-03,Pescara,Nuova Cosenza,2,1,H
+2020-02-07,Ascoli,Juve Stabia,2,2,D
+2020-02-08,Crotone,Cremonese,1,0,H
+2020-02-08,Cittadella,Empoli,1,2,A
+2020-02-08,Venezia,Frosinone,0,1,A
+2020-02-08,Pordenone,Livorno,2,2,D
+2020-02-08,Perugia,Spezia,0,3,A
+2020-02-09,Virtus Entella,Pescara,2,0,H
+2020-02-09,Pisa,Chievo,1,1,D
+2020-02-09,Nuova Cosenza,Benevento,0,1,A
+2020-02-10,Salernitana,Trapani,1,0,H
+2020-02-11,Spezia,Cremonese,3,2,H
+2020-02-14,Pescara,Cittadella,1,2,A
+2020-02-15,Benevento,Pordenone,2,1,H
+2020-02-15,Venezia,Virtus Entella,2,2,D
+2020-02-15,Juve Stabia,Crotone,3,2,H
+2020-02-15,Livorno,Nuova Cosenza,0,3,A
+2020-02-15,Spezia,Ascoli,3,1,H
+2020-02-16,Frosinone,Perugia,1,0,H
+2020-02-16,Cremonese,Trapani,5,0,H
+2020-02-16,Empoli,Pisa,2,1,H
+2020-02-17,Chievo,Salernitana,2,0,H
+2020-02-21,Nuova Cosenza,Frosinone,0,2,A
+2020-02-22,Cittadella,Juve Stabia,3,0,H
+2020-02-22,Virtus Entella,Benevento,0,4,A
+2020-02-22,Trapani,Spezia,1,1,D
+2020-02-22,Pisa,Venezia,1,2,A
+2020-02-23,Salernitana,Livorno,1,0,H
+2020-02-23,Pordenone,Chievo,0,1,A
+2020-02-23,Crotone,Pescara,4,1,H
+2020-02-24,Perugia,Empoli,0,1,A
+2020-02-28,Virtus Entella,Crotone,1,2,A
+2020-02-29,Benevento,Spezia,3,1,H
+2020-02-29,Cittadella,Cremonese,0,0,D
+2020-02-29,Empoli,Pordenone,0,1,A
+2020-02-29,Venezia,Nuova Cosenza,1,1,D
+2020-02-29,Pisa,Perugia,1,0,H
+2020-02-29,Juve Stabia,Trapani,2,2,D
+2020-02-29,Chievo,Livorno,0,1,A
+2020-02-29,Frosinone,Salernitana,1,0,H
+2020-03-01,Pescara,Ascoli,2,1,H
+2020-03-03,Crotone,Pisa,1,0,H
+2020-03-03,Salernitana,Venezia,2,0,H
+2020-03-03,Cremonese,Empoli,2,3,A
+2020-03-03,Perugia,Benevento,1,2,A
+2020-03-03,Trapani,Virtus Entella,4,1,H
+2020-03-03,Pordenone,Juve Stabia,2,1,H
+2020-03-03,Livorno,Frosinone,2,2,D
+2020-03-03,Nuova Cosenza,Cittadella,1,2,A
+2020-03-04,Ascoli,Chievo,1,1,D
+2020-03-04,Spezia,Pescara,2,0,H
+2020-03-07,Cittadella,Pordenone,0,2,A
+2020-03-07,Empoli,Trapani,1,1,D
+2020-03-07,Frosinone,Cremonese,0,2,A
+2020-03-07,Venezia,Crotone,1,3,A
+2020-03-07,Perugia,Salernitana,1,0,H
+2020-03-07,Pisa,Livorno,1,0,H
+2020-03-08,Virtus Entella,Ascoli,3,0,H
+2020-03-08,Juve Stabia,Spezia,3,1,H
+2020-03-08,Benevento,Pescara,4,0,H
+2020-03-09,Chievo,Nuova Cosenza,2,0,H
+2020-06-17,Ascoli,Cremonese,1,3,A
+2020-06-19,Spezia,Empoli,1,0,H
+2020-06-20,Crotone,Chievo,1,1,D
+2020-06-20,Salernitana,Pisa,1,1,D
+2020-06-20,Pescara,Juve Stabia,3,1,H
+2020-06-20,Trapani,Frosinone,0,0,D
+2020-06-20,Livorno,Cittadella,0,2,A
+2020-06-20,Nuova Cosenza,Virtus Entella,2,1,H
+2020-06-20,Pordenone,Venezia,0,0,D
+2020-06-21,Cremonese,Benevento,0,1,A
+2020-06-21,Ascoli,Perugia,0,1,A
+2020-06-26,Trapani,Pordenone,3,0,H
+2020-06-26,Chievo,Spezia,1,3,A
+2020-06-26,Empoli,Benevento,0,0,D
+2020-06-26,Frosinone,Cittadella,0,2,A
+2020-06-26,Venezia,Ascoli,2,1,H
+2020-06-26,Cremonese,Nuova Cosenza,0,2,A
+2020-06-26,Perugia,Crotone,0,0,D
+2020-06-26,Virtus Entella,Salernitana,1,0,H
+2020-06-26,Pisa,Pescara,2,1,H
+2020-06-26,Juve Stabia,Livorno,2,3,A
+2020-06-29,Salernitana,Cremonese,3,3,D
+2020-06-29,Chievo,Frosinone,2,0,H
+2020-06-29,Benevento,Juve Stabia,1,0,H
+2020-06-29,Ascoli,Crotone,1,1,D
+2020-06-29,Cittadella,Perugia,2,0,H
+2020-06-29,Spezia,Pisa,1,2,A
+2020-06-29,Pescara,Empoli,1,1,D
+2020-06-29,Pordenone,Virtus Entella,2,0,H
+2020-06-29,Livorno,Venezia,0,2,A
+2020-06-29,Nuova Cosenza,Trapani,2,2,D
+2020-07-03,Pisa,Cittadella,2,0,H
+2020-07-03,Crotone,Benevento,3,0,H
+2020-07-03,Frosinone,Spezia,2,1,H
+2020-07-03,Salernitana,Juve Stabia,2,1,H
+2020-07-03,Venezia,Empoli,0,2,A
+2020-07-03,Cremonese,Pescara,1,0,H
+2020-07-03,Perugia,Pordenone,1,2,A
+2020-07-03,Virtus Entella,Chievo,1,1,D
+2020-07-03,Trapani,Livorno,2,1,H
+2020-07-03,Nuova Cosenza,Ascoli,0,1,A
+2020-07-10,Juve Stabia,Virtus Entella,1,1,D
+2020-07-10,Chievo,Trapani,1,1,D
+2020-07-10,Benevento,Venezia,1,1,D
+2020-07-10,Ascoli,Salernitana,3,2,H
+2020-07-10,Cittadella,Crotone,1,3,A
+2020-07-10,Empoli,Frosinone,2,0,H
+2020-07-10,Spezia,Nuova Cosenza,5,1,H
+2020-07-10,Pescara,Perugia,2,2,D
+2020-07-10,Pordenone,Pisa,1,0,H
+2020-07-10,Livorno,Cremonese,1,2,A
+2020-07-13,Nuova Cosenza,Perugia,2,1,H
+2020-07-13,Crotone,Pordenone,1,0,H
+2020-07-13,Ascoli,Empoli,1,0,H
+2020-07-13,Frosinone,Juve Stabia,2,2,D
+2020-07-13,Salernitana,Cittadella,4,1,H
+2020-07-13,Venezia,Pescara,1,1,D
+2020-07-13,Cremonese,Chievo,1,0,H
+2020-07-13,Virtus Entella,Pisa,1,1,D
+2020-07-13,Trapani,Benevento,2,0,H
+2020-07-13,Livorno,Spezia,0,1,A
+2020-07-17,Pescara,Frosinone,1,1,D
+2020-07-17,Crotone,Salernitana,1,1,D
+2020-07-17,Benevento,Livorno,3,1,H
+2020-07-17,Cittadella,Ascoli,1,2,A
+2020-07-17,Empoli,Virtus Entella,2,4,A
+2020-07-17,Spezia,Venezia,0,1,A
+2020-07-17,Perugia,Cremonese,0,0,D
+2020-07-17,Pisa,Trapani,3,2,H
+2020-07-17,Pordenone,Nuova Cosenza,1,2,A
+2020-07-17,Juve Stabia,Chievo,3,2,H
+2020-07-24,Livorno,Crotone,1,5,A
+2020-07-24,Chievo,Cittadella,4,1,H
+2020-07-24,Ascoli,Pordenone,2,2,D
+2020-07-24,Frosinone,Benevento,2,3,A
+2020-07-24,Salernitana,Empoli,2,4,A
+2020-07-24,Venezia,Juve Stabia,1,0,H
+2020-07-24,Cremonese,Spezia,0,0,D
+2020-07-24,Virtus Entella,Perugia,0,2,A
+2020-07-24,Trapani,Pescara,1,0,H
+2020-07-24,Nuova Cosenza,Pisa,2,1,H
+2020-07-27,Crotone,Frosinone,1,0,H
+2020-07-27,Benevento,Chievo,0,1,A
+2020-07-27,Cittadella,Venezia,1,0,H
+2020-07-27,Empoli,Nuova Cosenza,1,5,A
+2020-07-27,Spezia,Virtus Entella,0,0,D
+2020-07-27,Perugia,Trapani,1,2,A
+2020-07-27,Pescara,Livorno,1,0,H
+2020-07-27,Pisa,Ascoli,1,0,H
+2020-07-27,Pordenone,Salernitana,1,1,D
+2020-07-27,Juve Stabia,Cremonese,1,2,A
+2020-07-31,Chievo,Pescara,1,0,H
+2020-07-31,Ascoli,Benevento,2,4,A
+2020-07-31,Frosinone,Pisa,1,1,D
+2020-07-31,Salernitana,Spezia,1,2,A
+2020-07-31,Venezia,Perugia,3,1,H
+2020-07-31,Cremonese,Pordenone,2,2,D
+2020-07-31,Virtus Entella,Cittadella,2,3,A
+2020-07-31,Trapani,Crotone,2,0,H
+2020-07-31,Livorno,Empoli,0,2,A
+2020-07-31,Nuova Cosenza,Juve Stabia,3,1,H
+2020-08-04,Chievo,Empoli,1,1,D
+2020-08-05,Cittadella,Frosinone,2,3,A
+2020-08-08,Chievo,Spezia,2,0,H
+2020-08-09,Frosinone,Pordenone,0,1,A
+2020-08-10,Pescara,Perugia,2,1,H
+2020-08-11,Spezia,Chievo,3,1,H
+2020-08-12,Pordenone,Frosinone,0,2,A
+2020-08-14,Perugia,Pescara,2,1,H
+2020-08-16,Frosinone,Spezia,0,1,A
+2020-08-20,Spezia,Frosinone,0,1,A

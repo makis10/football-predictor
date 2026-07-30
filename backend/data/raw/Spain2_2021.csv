@@ -1,0 +1,469 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2021-08-13,Huesca,Eibar,2,0,H
+2021-08-13,Zaragoza,Ibiza,0,0,D
+2021-08-14,Real Sociedad II,Leganes,1,0,H
+2021-08-14,Girona,Amorebieta,2,0,H
+2021-08-14,Ponferradina,Alcorcon,1,0,H
+2021-08-15,Sporting Gijon,Burgos,1,0,H
+2021-08-15,Oviedo,Lugo,2,2,D
+2021-08-15,Las Palmas,Valladolid,1,1,D
+2021-08-15,Fuenlabrada,Tenerife,1,2,A
+2021-08-16,Malaga,Mirandes,0,0,D
+2021-08-16,FC Cartagena,Almeria,1,3,A
+2021-08-20,Valladolid,Zaragoza,2,0,H
+2021-08-20,Almeria,Oviedo,2,1,H
+2021-08-21,Lugo,Real Sociedad II,0,0,D
+2021-08-21,Tenerife,Sporting Gijon,0,0,D
+2021-08-21,Alcorcon,Fuenlabrada,0,2,A
+2021-08-22,Ibiza,Malaga,2,2,D
+2021-08-22,Eibar,Ponferradina,0,1,A
+2021-08-22,Girona,Las Palmas,0,0,D
+2021-08-22,Huesca,FC Cartagena,2,0,H
+2021-08-23,Mirandes,Amorebieta,2,0,H
+2021-08-23,Leganes,Burgos,0,0,D
+2021-08-27,Las Palmas,Huesca,2,1,H
+2021-08-27,Malaga,Alcorcon,1,0,H
+2021-08-28,Sporting Gijon,Mirandes,2,1,H
+2021-08-28,Leganes,Ibiza,1,2,A
+2021-08-28,Oviedo,Tenerife,0,0,D
+2021-08-28,Ponferradina,Girona,2,1,H
+2021-08-29,Amorebieta,Almeria,2,1,H
+2021-08-29,Lugo,Valladolid,0,2,A
+2021-08-29,Real Sociedad II,Fuenlabrada,0,0,D
+2021-08-29,Burgos,Eibar,0,1,A
+2021-08-30,Zaragoza,FC Cartagena,0,1,A
+2021-09-03,Girona,Sporting Gijon,1,2,A
+2021-09-04,Eibar,Leganes,1,1,D
+2021-09-04,Tenerife,Ponferradina,2,0,H
+2021-09-04,FC Cartagena,Real Sociedad II,1,0,H
+2021-09-04,Almeria,Malaga,2,0,H
+2021-09-04,Fuenlabrada,Lugo,1,1,D
+2021-09-05,Ibiza,Amorebieta,1,1,D
+2021-09-05,Burgos,Valladolid,3,0,H
+2021-09-05,Alcorcon,Zaragoza,1,2,A
+2021-09-05,Mirandes,Las Palmas,4,2,H
+2021-09-06,Huesca,Oviedo,1,2,A
+2021-09-10,Sporting Gijon,Leganes,2,1,H
+2021-09-11,Amorebieta,Burgos,2,2,D
+2021-09-11,Real Sociedad II,Eibar,2,3,A
+2021-09-11,Las Palmas,Ibiza,1,1,D
+2021-09-11,Mirandes,Alcorcon,1,3,A
+2021-09-12,Oviedo,FC Cartagena,2,0,H
+2021-09-12,Valladolid,Tenerife,0,2,A
+2021-09-12,Ponferradina,Almeria,1,0,H
+2021-09-12,Fuenlabrada,Zaragoza,1,1,D
+2021-09-12,Malaga,Girona,2,0,H
+2021-09-13,Lugo,Huesca,3,2,H
+2021-09-17,Alcorcon,Almeria,0,4,A
+2021-09-18,Ibiza,Oviedo,1,1,D
+2021-09-18,Leganes,Amorebieta,1,0,H
+2021-09-18,Zaragoza,Real Sociedad II,1,1,D
+2021-09-18,Girona,Valladolid,1,0,H
+2021-09-18,FC Cartagena,Lugo,2,1,H
+2021-09-19,Huesca,Fuenlabrada,0,0,D
+2021-09-19,Ponferradina,Malaga,4,0,H
+2021-09-19,Eibar,Sporting Gijon,3,2,H
+2021-09-19,Tenerife,Mirandes,1,2,A
+2021-09-20,Burgos,Las Palmas,0,0,D
+2021-09-24,Real Sociedad II,Huesca,0,2,A
+2021-09-24,Almeria,Tenerife,3,1,H
+2021-09-25,Ibiza,Burgos,2,0,H
+2021-09-25,Las Palmas,Ponferradina,2,1,H
+2021-09-25,Amorebieta,Eibar,1,1,D
+2021-09-26,Mirandes,Leganes,1,2,A
+2021-09-26,Sporting Gijon,Malaga,2,1,H
+2021-09-26,Oviedo,Girona,0,0,D
+2021-09-26,Lugo,Zaragoza,1,1,D
+2021-09-26,Valladolid,Alcorcon,2,0,H
+2021-09-27,Fuenlabrada,FC Cartagena,2,1,H
+2021-10-01,Ponferradina,Valladolid,2,2,D
+2021-10-02,Huesca,Tenerife,1,2,A
+2021-10-02,Amorebieta,Sporting Gijon,1,1,D
+2021-10-02,Zaragoza,Oviedo,0,0,D
+2021-10-02,Alcorcon,Real Sociedad II,1,4,A
+2021-10-03,Eibar,Ibiza,3,1,H
+2021-10-03,Malaga,Fuenlabrada,1,0,H
+2021-10-03,Las Palmas,FC Cartagena,4,1,H
+2021-10-03,Burgos,Mirandes,1,0,H
+2021-10-03,Leganes,Lugo,1,1,D
+2021-10-04,Girona,Almeria,1,2,A
+2021-10-08,Valladolid,Malaga,1,1,D
+2021-10-09,Lugo,Girona,1,0,H
+2021-10-09,Mirandes,Eibar,3,3,D
+2021-10-09,Almeria,Las Palmas,1,1,D
+2021-10-09,Oviedo,Sporting Gijon,1,1,D
+2021-10-10,Real Sociedad II,Ponferradina,1,1,D
+2021-10-10,FC Cartagena,Ibiza,5,1,H
+2021-10-10,Alcorcon,Burgos,1,0,H
+2021-10-10,Tenerife,Amorebieta,2,1,H
+2021-10-10,Fuenlabrada,Leganes,2,1,H
+2021-10-11,Zaragoza,Huesca,0,0,D
+2021-10-15,Eibar,Almeria,1,0,H
+2021-10-16,Girona,Huesca,1,3,A
+2021-10-16,Amorebieta,FC Cartagena,2,3,A
+2021-10-16,Las Palmas,Tenerife,2,1,H
+2021-10-16,Malaga,Zaragoza,1,1,D
+2021-10-16,Sporting Gijon,Alcorcon,1,0,H
+2021-10-17,Ibiza,Mirandes,0,2,A
+2021-10-17,Leganes,Valladolid,0,2,A
+2021-10-17,Burgos,Lugo,1,1,D
+2021-10-17,Real Sociedad II,Oviedo,1,1,D
+2021-10-17,Ponferradina,Fuenlabrada,0,0,D
+2021-10-19,Huesca,Malaga,0,0,D
+2021-10-19,FC Cartagena,Sporting Gijon,1,0,H
+2021-10-19,Tenerife,Eibar,0,1,A
+2021-10-20,Valladolid,Ibiza,1,1,D
+2021-10-20,Fuenlabrada,Amorebieta,0,0,D
+2021-10-20,Alcorcon,Leganes,3,3,D
+2021-10-20,Lugo,Las Palmas,2,0,H
+2021-10-21,Almeria,Real Sociedad II,3,1,H
+2021-10-21,Zaragoza,Ponferradina,1,1,D
+2021-10-21,Oviedo,Burgos,1,3,A
+2021-10-21,Mirandes,Girona,1,2,A
+2021-10-22,Eibar,FC Cartagena,2,1,H
+2021-10-23,Ibiza,Fuenlabrada,3,1,H
+2021-10-23,Sporting Gijon,Valladolid,1,2,A
+2021-10-23,Malaga,Lugo,1,0,H
+2021-10-23,Leganes,Tenerife,1,2,A
+2021-10-24,Mirandes,Almeria,1,4,A
+2021-10-24,Amorebieta,Real Sociedad II,1,2,A
+2021-10-24,Ponferradina,Oviedo,1,2,A
+2021-10-24,Burgos,Huesca,3,1,H
+2021-10-24,Las Palmas,Alcorcon,3,0,H
+2021-10-25,Girona,Zaragoza,1,1,D
+2021-10-29,Almeria,Leganes,1,0,H
+2021-10-29,Real Sociedad II,Las Palmas,0,1,A
+2021-10-30,Huesca,Amorebieta,1,1,D
+2021-10-30,Lugo,Sporting Gijon,1,1,D
+2021-10-30,FC Cartagena,Ponferradina,0,1,A
+2021-10-31,Fuenlabrada,Girona,1,2,A
+2021-10-31,Oviedo,Malaga,2,1,H
+2021-10-31,Valladolid,Eibar,2,0,H
+2021-10-31,Zaragoza,Mirandes,1,1,D
+2021-11-01,Alcorcon,Ibiza,0,2,A
+2021-11-01,Tenerife,Burgos,4,0,H
+2021-11-02,Sporting Gijon,Almeria,0,1,A
+2021-11-02,Ponferradina,Huesca,1,1,D
+2021-11-02,Leganes,FC Cartagena,1,1,D
+2021-11-03,Mirandes,Lugo,3,2,H
+2021-11-03,Amorebieta,Valladolid,4,1,H
+2021-11-03,Las Palmas,Fuenlabrada,2,1,H
+2021-11-03,Eibar,Oviedo,1,0,H
+2021-11-04,Girona,Alcorcon,3,1,H
+2021-11-04,Burgos,Zaragoza,0,1,A
+2021-11-04,Malaga,Real Sociedad II,2,1,H
+2021-11-04,Ibiza,Tenerife,0,0,D
+2021-11-05,Huesca,Leganes,0,2,A
+2021-11-06,Lugo,Ponferradina,1,2,A
+2021-11-06,Oviedo,Las Palmas,1,1,D
+2021-11-06,Valladolid,Mirandes,3,1,H
+2021-11-06,Fuenlabrada,Eibar,0,0,D
+2021-11-07,Alcorcon,Amorebieta,2,2,D
+2021-11-07,Zaragoza,Sporting Gijon,2,0,H
+2021-11-07,Almeria,Burgos,2,0,H
+2021-11-07,FC Cartagena,Malaga,3,1,H
+2021-11-07,Real Sociedad II,Ibiza,0,1,A
+2021-11-08,Tenerife,Girona,2,1,H
+2021-11-12,Sporting Gijon,Real Sociedad II,0,1,A
+2021-11-13,Valladolid,Fuenlabrada,3,0,H
+2021-11-13,Eibar,Alcorcon,2,1,H
+2021-11-13,Mirandes,Huesca,0,1,A
+2021-11-13,Las Palmas,Zaragoza,2,3,A
+2021-11-14,Amorebieta,Lugo,1,3,A
+2021-11-14,Girona,FC Cartagena,2,0,H
+2021-11-14,Ibiza,Almeria,0,1,A
+2021-11-14,Leganes,Oviedo,0,0,D
+2021-11-14,Burgos,Ponferradina,1,0,H
+2021-11-15,Malaga,Tenerife,1,0,H
+2021-11-19,Fuenlabrada,Mirandes,1,1,D
+2021-11-20,Oviedo,Amorebieta,2,0,H
+2021-11-20,Malaga,Las Palmas,2,1,H
+2021-11-20,Almeria,Valladolid,3,1,H
+2021-11-21,FC Cartagena,Burgos,1,0,H
+2021-11-21,Lugo,Eibar,2,2,D
+2021-11-21,Tenerife,Alcorcon,1,0,H
+2021-11-21,Huesca,Ibiza,0,0,D
+2021-11-21,Ponferradina,Sporting Gijon,4,1,H
+2021-11-22,Real Sociedad II,Girona,1,2,A
+2021-11-22,Zaragoza,Leganes,0,2,A
+2021-11-26,Alcorcon,Lugo,1,1,D
+2021-11-26,Mirandes,Oviedo,1,1,D
+2021-11-27,Burgos,Malaga,3,0,H
+2021-11-27,Almeria,Huesca,0,0,D
+2021-11-27,Sporting Gijon,Fuenlabrada,1,1,D
+2021-11-27,Valladolid,FC Cartagena,2,0,H
+2021-11-28,Leganes,Las Palmas,4,1,H
+2021-11-28,Amorebieta,Zaragoza,1,1,D
+2021-11-28,Ibiza,Ponferradina,0,1,A
+2021-11-28,Tenerife,Real Sociedad II,2,0,H
+2021-11-29,Eibar,Girona,4,2,H
+2021-12-03,Huesca,Valladolid,3,2,H
+2021-12-04,Fuenlabrada,Almeria,1,1,D
+2021-12-05,Ponferradina,Mirandes,2,1,H
+2021-12-05,Malaga,Amorebieta,1,2,A
+2021-12-05,Lugo,Ibiza,0,0,D
+2021-12-05,Oviedo,Alcorcon,3,1,H
+2021-12-05,Real Sociedad II,Burgos,0,1,A
+2021-12-05,Las Palmas,Sporting Gijon,1,0,H
+2021-12-06,Zaragoza,Eibar,1,0,H
+2021-12-06,FC Cartagena,Tenerife,1,1,D
+2021-12-06,Girona,Leganes,3,0,H
+2021-12-10,Sporting Gijon,Huesca,1,1,D
+2021-12-11,Ibiza,Girona,1,1,D
+2021-12-11,Burgos,Fuenlabrada,2,0,H
+2021-12-11,Almeria,Zaragoza,3,0,H
+2021-12-11,Eibar,Malaga,2,2,D
+2021-12-11,Tenerife,Lugo,1,1,D
+2021-12-12,Leganes,Ponferradina,1,1,D
+2021-12-12,Valladolid,Oviedo,2,1,H
+2021-12-12,Alcorcon,FC Cartagena,1,1,D
+2021-12-12,Amorebieta,Las Palmas,1,1,D
+2021-12-13,Mirandes,Real Sociedad II,2,0,H
+2021-12-17,Girona,Burgos,3,1,H
+2021-12-18,Malaga,Leganes,0,2,A
+2021-12-18,Ibiza,Sporting Gijon,0,2,A
+2021-12-18,Las Palmas,Eibar,0,1,A
+2021-12-19,Fuenlabrada,Oviedo,0,0,D
+2021-12-19,Zaragoza,Tenerife,0,2,A
+2021-12-19,Ponferradina,Amorebieta,1,1,D
+2021-12-19,Huesca,Alcorcon,0,0,D
+2021-12-19,FC Cartagena,Mirandes,3,0,H
+2021-12-19,Real Sociedad II,Valladolid,0,2,A
+2021-12-31,Oviedo,Ponferradina,2,0,H
+2021-12-31,Burgos,Amorebieta,2,2,D
+2021-12-31,Eibar,Real Sociedad II,3,2,H
+2022-01-02,Valladolid,Leganes,1,0,H
+2022-01-02,Almeria,FC Cartagena,0,1,A
+2022-01-02,Sporting Gijon,Lugo,1,1,D
+2022-01-02,Huesca,Girona,0,1,A
+2022-01-02,Mirandes,Zaragoza,2,0,H
+2022-01-02,Fuenlabrada,Ibiza,1,2,A
+2022-01-02,Tenerife,Las Palmas,0,1,A
+2022-01-03,Alcorcon,Malaga,0,1,A
+2022-01-07,Amorebieta,Tenerife,1,1,D
+2022-01-08,FC Cartagena,Huesca,0,3,A
+2022-01-08,Ibiza,Alcorcon,6,2,H
+2022-01-08,Valladolid,Burgos,1,0,H
+2022-01-08,Leganes,Real Sociedad II,1,1,D
+2022-01-09,Girona,Fuenlabrada,2,1,H
+2022-01-09,Lugo,Mirandes,2,1,H
+2022-01-09,Malaga,Sporting Gijon,2,2,D
+2022-01-09,Ponferradina,Zaragoza,0,0,D
+2022-01-09,Las Palmas,Almeria,1,1,D
+2022-01-10,Oviedo,Eibar,1,1,D
+2022-01-19,Lugo,Almeria,2,1,H
+2022-01-21,Tenerife,Oviedo,4,0,H
+2022-01-22,Zaragoza,Valladolid,0,0,D
+2022-01-22,Fuenlabrada,Las Palmas,3,2,H
+2022-01-22,Malaga,Ibiza,0,5,A
+2022-01-23,Burgos,Leganes,4,0,H
+2022-01-23,Sporting Gijon,Amorebieta,2,1,H
+2022-01-23,Girona,Lugo,1,1,D
+2022-01-23,Huesca,Ponferradina,1,2,A
+2022-01-23,Alcorcon,Mirandes,0,0,D
+2022-01-24,Almeria,Eibar,0,2,A
+2022-01-24,Real Sociedad II,FC Cartagena,1,2,A
+2022-01-28,Valladolid,Sporting Gijon,1,0,H
+2022-01-29,Amorebieta,Girona,1,0,H
+2022-01-29,Eibar,Huesca,2,1,H
+2022-01-29,Lugo,Burgos,1,0,H
+2022-01-29,Oviedo,Almeria,2,0,H
+2022-01-30,Leganes,Alcorcon,1,0,H
+2022-01-30,FC Cartagena,Fuenlabrada,3,0,H
+2022-01-30,Las Palmas,Real Sociedad II,0,0,D
+2022-01-30,Mirandes,Malaga,3,0,H
+2022-01-30,Ponferradina,Tenerife,1,2,A
+2022-01-31,Ibiza,Zaragoza,2,2,D
+2022-02-04,Almeria,Ibiza,2,0,H
+2022-02-04,Burgos,Alcorcon,3,1,H
+2022-02-05,Real Sociedad II,Lugo,1,1,D
+2022-02-05,Zaragoza,Malaga,1,1,D
+2022-02-05,Girona,Ponferradina,3,0,H
+2022-02-05,Sporting Gijon,Eibar,0,1,A
+2022-02-06,Fuenlabrada,Valladolid,0,0,D
+2022-02-06,Amorebieta,Oviedo,1,1,D
+2022-02-06,Huesca,Mirandes,4,0,H
+2022-02-06,FC Cartagena,Las Palmas,0,2,A
+2022-02-06,Tenerife,Leganes,0,0,D
+2022-02-11,Leganes,Zaragoza,2,1,H
+2022-02-12,Mirandes,Sporting Gijon,0,3,A
+2022-02-12,Valladolid,Girona,2,2,D
+2022-02-12,Ibiza,FC Cartagena,2,1,H
+2022-02-12,Malaga,Almeria,0,1,A
+2022-02-13,Eibar,Fuenlabrada,0,0,D
+2022-02-13,Oviedo,Huesca,3,3,D
+2022-02-13,Alcorcon,Tenerife,0,2,A
+2022-02-13,Lugo,Amorebieta,1,1,D
+2022-02-13,Las Palmas,Burgos,0,2,A
+2022-02-14,Ponferradina,Real Sociedad II,3,2,H
+2022-02-18,FC Cartagena,Valladolid,2,3,A
+2022-02-19,Zaragoza,Las Palmas,2,1,H
+2022-02-19,Girona,Eibar,0,1,A
+2022-02-19,Tenerife,Ibiza,2,0,H
+2022-02-19,Real Sociedad II,Malaga,2,0,H
+2022-02-20,Fuenlabrada,Alcorcon,2,2,D
+2022-02-20,Burgos,Oviedo,0,1,A
+2022-02-20,Huesca,Lugo,1,0,H
+2022-02-20,Sporting Gijon,Ponferradina,2,3,A
+2022-02-20,Almeria,Mirandes,2,1,H
+2022-02-21,Amorebieta,Leganes,1,3,A
+2022-02-25,Almeria,Fuenlabrada,3,1,H
+2022-02-26,Mirandes,Tenerife,2,1,H
+2022-02-26,Ibiza,Huesca,2,1,H
+2022-02-26,Oviedo,Real Sociedad II,0,1,A
+2022-02-26,Las Palmas,Lugo,2,2,D
+2022-02-27,Eibar,Burgos,2,0,H
+2022-02-27,Sporting Gijon,Zaragoza,1,2,A
+2022-02-27,Leganes,Girona,1,1,D
+2022-02-27,Valladolid,Amorebieta,5,1,H
+2022-02-27,Alcorcon,Ponferradina,2,2,D
+2022-02-28,Malaga,FC Cartagena,1,1,D
+2022-03-04,Zaragoza,Almeria,2,0,H
+2022-03-05,Huesca,Las Palmas,0,0,D
+2022-03-05,Fuenlabrada,Burgos,1,2,A
+2022-03-05,Tenerife,Valladolid,1,4,A
+2022-03-06,Lugo,Alcorcon,1,0,H
+2022-03-06,Ponferradina,Ibiza,1,1,D
+2022-03-06,Leganes,Mirandes,2,0,H
+2022-03-06,FC Cartagena,Eibar,4,1,H
+2022-03-06,Amorebieta,Malaga,1,2,A
+2022-03-06,Girona,Oviedo,2,1,H
+2022-03-07,Real Sociedad II,Sporting Gijon,2,1,H
+2022-03-11,Zaragoza,Fuenlabrada,2,1,H
+2022-03-12,Mirandes,FC Cartagena,2,1,H
+2022-03-12,Ibiza,Leganes,1,1,D
+2022-03-12,Las Palmas,Girona,1,3,A
+2022-03-12,Almeria,Lugo,3,3,D
+2022-03-12,Malaga,Ponferradina,0,0,D
+2022-03-13,Burgos,Real Sociedad II,0,0,D
+2022-03-13,Eibar,Amorebieta,1,0,H
+2022-03-13,Sporting Gijon,Tenerife,1,2,A
+2022-03-13,Alcorcon,Huesca,1,0,H
+2022-03-13,Oviedo,Valladolid,3,0,H
+2022-03-18,Huesca,Burgos,1,0,H
+2022-03-19,Real Sociedad II,Mirandes,1,3,A
+2022-03-19,Fuenlabrada,Malaga,1,0,H
+2022-03-19,FC Cartagena,Zaragoza,3,0,H
+2022-03-19,Lugo,Oviedo,1,1,D
+2022-03-19,Valladolid,Las Palmas,0,1,A
+2022-03-19,Girona,Ibiza,5,1,H
+2022-03-20,Amorebieta,Alcorcon,0,0,D
+2022-03-20,Ponferradina,Eibar,2,2,D
+2022-03-20,Leganes,Sporting Gijon,1,1,D
+2022-03-21,Tenerife,Almeria,0,1,A
+2022-03-25,Zaragoza,Amorebieta,1,1,D
+2022-03-26,Ibiza,Real Sociedad II,2,2,D
+2022-03-26,Eibar,Lugo,1,0,H
+2022-03-26,Sporting Gijon,FC Cartagena,4,1,H
+2022-03-26,Oviedo,Fuenlabrada,3,0,H
+2022-03-27,Mirandes,Ponferradina,3,1,H
+2022-03-27,Burgos,Tenerife,1,0,H
+2022-03-27,Malaga,Huesca,0,2,A
+2022-03-27,Alcorcon,Valladolid,1,2,A
+2022-03-27,Almeria,Girona,0,1,A
+2022-03-28,Las Palmas,Leganes,4,2,H
+2022-04-01,Girona,Malaga,1,0,H
+2022-04-02,Valladolid,Lugo,4,1,H
+2022-04-02,Real Sociedad II,Alcorcon,2,4,A
+2022-04-02,Amorebieta,Ibiza,3,1,H
+2022-04-02,Tenerife,Zaragoza,1,1,D
+2022-04-03,FC Cartagena,Oviedo,1,2,A
+2022-04-03,Ponferradina,Las Palmas,1,2,A
+2022-04-03,Burgos,Sporting Gijon,0,0,D
+2022-04-03,Eibar,Mirandes,1,1,D
+2022-04-03,Huesca,Almeria,1,1,D
+2022-04-04,Leganes,Fuenlabrada,3,2,H
+2022-04-08,Lugo,FC Cartagena,1,0,H
+2022-04-09,Real Sociedad II,Tenerife,1,2,A
+2022-04-09,Malaga,Valladolid,2,2,D
+2022-04-09,Alcorcon,Sporting Gijon,1,1,D
+2022-04-09,Las Palmas,Amorebieta,1,0,H
+2022-04-10,Fuenlabrada,Huesca,2,3,A
+2022-04-10,Zaragoza,Girona,1,0,H
+2022-04-10,Oviedo,Leganes,1,0,H
+2022-04-10,Mirandes,Burgos,3,1,H
+2022-04-10,Ibiza,Eibar,2,0,H
+2022-04-11,Almeria,Ponferradina,3,0,H
+2022-04-15,Eibar,Las Palmas,2,2,D
+2022-04-15,Amorebieta,Mirandes,1,0,H
+2022-04-16,Leganes,Malaga,0,3,A
+2022-04-16,Valladolid,Almeria,2,2,D
+2022-04-16,Sporting Gijon,Oviedo,0,1,A
+2022-04-16,FC Cartagena,Alcorcon,3,1,H
+2022-04-17,Ponferradina,Lugo,3,1,H
+2022-04-17,Burgos,Ibiza,2,1,H
+2022-04-17,Tenerife,Fuenlabrada,3,1,H
+2022-04-17,Huesca,Zaragoza,1,1,D
+2022-04-18,Girona,Real Sociedad II,2,0,H
+2022-04-22,Tenerife,Huesca,0,0,D
+2022-04-23,Real Sociedad II,Amorebieta,2,1,H
+2022-04-23,Fuenlabrada,Ponferradina,2,3,A
+2022-04-23,FC Cartagena,Girona,3,0,H
+2022-04-23,Malaga,Eibar,1,3,A
+2022-04-24,Alcorcon,Oviedo,1,2,A
+2022-04-24,Mirandes,Valladolid,0,1,A
+2022-04-24,Ibiza,Las Palmas,1,1,D
+2022-04-24,Lugo,Leganes,0,0,D
+2022-04-24,Zaragoza,Burgos,0,0,D
+2022-04-25,Almeria,Sporting Gijon,1,0,H
+2022-04-29,Las Palmas,Malaga,2,1,H
+2022-04-30,Oviedo,Mirandes,3,0,H
+2022-04-30,Eibar,Zaragoza,2,0,H
+2022-04-30,Burgos,Almeria,0,2,A
+2022-05-01,Amorebieta,Fuenlabrada,2,1,H
+2022-05-01,Alcorcon,Girona,0,1,A
+2022-05-01,Sporting Gijon,Ibiza,0,1,A
+2022-05-01,Lugo,Tenerife,0,2,A
+2022-05-01,Ponferradina,FC Cartagena,4,2,H
+2022-05-02,Leganes,Huesca,2,1,H
+2022-05-02,Valladolid,Real Sociedad II,1,2,A
+2022-05-06,Las Palmas,Mirandes,1,0,H
+2022-05-07,Huesca,Sporting Gijon,1,1,D
+2022-05-07,Fuenlabrada,Real Sociedad II,1,2,A
+2022-05-07,Malaga,Oviedo,0,0,D
+2022-05-07,Almeria,Amorebieta,3,0,H
+2022-05-07,Ponferradina,Burgos,3,1,H
+2022-05-08,FC Cartagena,Leganes,0,0,D
+2022-05-08,Eibar,Valladolid,0,2,A
+2022-05-08,Zaragoza,Alcorcon,0,3,A
+2022-05-08,Ibiza,Lugo,1,1,D
+2022-05-09,Girona,Tenerife,0,1,A
+2022-05-13,Real Sociedad II,Almeria,0,2,A
+2022-05-14,Amorebieta,Huesca,1,0,H
+2022-05-14,Lugo,Fuenlabrada,1,3,A
+2022-05-14,Burgos,FC Cartagena,1,1,D
+2022-05-14,Valladolid,Ponferradina,2,0,H
+2022-05-14,Leganes,Eibar,2,3,A
+2022-05-15,Alcorcon,Las Palmas,0,2,A
+2022-05-15,Sporting Gijon,Girona,2,1,H
+2022-05-15,Mirandes,Ibiza,4,0,H
+2022-05-15,Tenerife,Malaga,0,2,A
+2022-05-16,Oviedo,Zaragoza,3,3,D
+2022-05-20,Zaragoza,Lugo,1,0,H
+2022-05-21,Malaga,Burgos,0,1,A
+2022-05-21,Huesca,Real Sociedad II,3,2,H
+2022-05-21,Fuenlabrada,Sporting Gijon,0,0,D
+2022-05-21,FC Cartagena,Amorebieta,5,0,H
+2022-05-21,Las Palmas,Oviedo,2,1,H
+2022-05-21,Eibar,Tenerife,2,0,H
+2022-05-21,Girona,Mirandes,2,0,H
+2022-05-21,Almeria,Alcorcon,1,1,D
+2022-05-21,Ponferradina,Leganes,0,3,A
+2022-05-21,Ibiza,Valladolid,1,2,A
+2022-05-27,Mirandes,Fuenlabrada,5,1,H
+2022-05-27,Real Sociedad II,Zaragoza,1,2,A
+2022-05-28,Lugo,Malaga,1,0,H
+2022-05-28,Amorebieta,Ponferradina,1,0,H
+2022-05-29,Leganes,Almeria,2,2,D
+2022-05-29,Alcorcon,Eibar,1,0,H
+2022-05-29,Oviedo,Ibiza,3,2,H
+2022-05-29,Tenerife,FC Cartagena,1,2,A
+2022-05-29,Valladolid,Huesca,3,0,H
+2022-05-29,Sporting Gijon,Las Palmas,0,1,A
+2022-05-29,Burgos,Girona,0,0,D
+2022-06-01,Tenerife,Las Palmas,1,0,H
+2022-06-02,Girona,Eibar,0,1,A
+2022-06-04,Las Palmas,Tenerife,1,2,A
+2022-06-05,Eibar,Girona,0,2,A
+2022-06-11,Girona,Tenerife,0,0,D
+2022-06-19,Tenerife,Girona,1,3,A

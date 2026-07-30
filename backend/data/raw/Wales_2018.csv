@@ -1,0 +1,196 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2018-08-10,Aberystwyth Town,Llandudno,1,0,H
+2018-08-10,Bala Town,Carmarthen Town,2,1,H
+2018-08-10,Cardiff MET,Newtown AFC,2,1,H
+2018-08-12,The New Saints,Barry Town,5,1,H
+2018-08-12,llanelli AFC,GAP Connah S Quay FC,0,7,A
+2018-08-12,Caernarfon Town,Cefn Druids AFC,1,0,H
+2018-08-17,Aberystwyth Town,Cardiff MET,1,4,A
+2018-08-17,Newtown AFC,Caernarfon Town,2,0,H
+2018-08-18,Carmarthen Town,Llandudno,0,0,D
+2018-08-18,Cefn Druids AFC,llanelli AFC,2,3,A
+2018-08-19,Barry Town,Bala Town,3,2,H
+2018-08-19,GAP Connah S Quay FC,The New Saints,1,0,H
+2018-08-24,llanelli AFC,Barry Town,1,1,D
+2018-08-24,Bala Town,Cefn Druids AFC,2,1,H
+2018-08-24,GAP Connah S Quay FC,Aberystwyth Town,2,1,H
+2018-08-25,The New Saints,Carmarthen Town,6,0,H
+2018-08-25,Llandudno,Newtown AFC,0,0,D
+2018-08-26,Cardiff MET,Caernarfon Town,0,1,A
+2018-08-31,Aberystwyth Town,llanelli AFC,3,1,H
+2018-08-31,Caernarfon Town,The New Saints,0,3,A
+2018-09-01,Newtown AFC,Bala Town,2,0,H
+2018-09-01,Carmarthen Town,Cardiff MET,2,0,H
+2018-09-01,Barry Town,GAP Connah S Quay FC,2,0,H
+2018-09-01,Cefn Druids AFC,Llandudno,2,1,H
+2018-09-08,Bala Town,llanelli AFC,3,1,H
+2018-09-08,Carmarthen Town,Newtown AFC,3,0,H
+2018-09-08,Llandudno,Barry Town,2,0,H
+2018-09-09,Cardiff MET,Cefn Druids AFC,1,0,H
+2018-09-11,The New Saints,Aberystwyth Town,6,0,H
+2018-09-11,GAP Connah S Quay FC,Caernarfon Town,0,1,A
+2018-09-14,llanelli AFC,The New Saints,0,2,A
+2018-09-14,GAP Connah S Quay FC,Newtown AFC,3,1,H
+2018-09-15,Caernarfon Town,Barry Town,0,1,A
+2018-09-15,Cefn Druids AFC,Carmarthen Town,4,0,H
+2018-09-15,Aberystwyth Town,Bala Town,3,2,H
+2018-09-16,Cardiff MET,Llandudno,0,1,A
+2018-09-21,The New Saints,Bala Town,0,0,D
+2018-09-22,Caernarfon Town,llanelli AFC,3,0,H
+2018-09-22,Newtown AFC,Cardiff MET,2,1,H
+2018-09-22,Carmarthen Town,Aberystwyth Town,2,2,D
+2018-09-22,Barry Town,Cefn Druids AFC,2,1,H
+2018-09-22,Llandudno,GAP Connah S Quay FC,0,4,A
+2018-09-28,Bala Town,Llandudno,2,1,H
+2018-09-28,Cefn Druids AFC,Caernarfon Town,1,1,D
+2018-09-28,llanelli AFC,Newtown AFC,1,3,A
+2018-09-29,Aberystwyth Town,Barry Town,0,1,A
+2018-09-29,GAP Connah S Quay FC,Carmarthen Town,3,1,H
+2018-09-30,Cardiff MET,The New Saints,4,1,H
+2018-10-05,Caernarfon Town,Bala Town,2,2,D
+2018-10-05,Cefn Druids AFC,Aberystwyth Town,1,0,H
+2018-10-06,Newtown AFC,Barry Town,2,0,H
+2018-10-06,Carmarthen Town,The New Saints,0,3,A
+2018-10-06,Llandudno,llanelli AFC,1,2,A
+2018-10-07,Cardiff MET,GAP Connah S Quay FC,1,3,A
+2018-10-12,Aberystwyth Town,Caernarfon Town,0,0,D
+2018-10-12,Bala Town,Newtown AFC,3,2,H
+2018-10-12,llanelli AFC,Cardiff MET,0,2,A
+2018-10-13,Barry Town,Carmarthen Town,1,0,H
+2018-10-16,GAP Connah S Quay FC,Cefn Druids AFC,3,1,H
+2018-10-17,The New Saints,Llandudno,6,1,H
+2018-10-19,Caernarfon Town,Newtown AFC,0,3,A
+2018-10-19,Barry Town,llanelli AFC,5,2,H
+2018-10-20,Carmarthen Town,Bala Town,1,2,A
+2018-10-20,Cefn Druids AFC,Cardiff MET,1,1,D
+2018-10-20,Llandudno,Aberystwyth Town,0,1,A
+2018-10-20,The New Saints,GAP Connah S Quay FC,3,0,H
+2018-10-26,llanelli AFC,Aberystwyth Town,1,3,A
+2018-10-26,Caernarfon Town,GAP Connah S Quay FC,0,0,D
+2018-10-26,Llandudno,Cefn Druids AFC,0,0,D
+2018-10-27,Bala Town,Barry Town,0,1,A
+2018-10-27,Newtown AFC,The New Saints,1,1,D
+2018-10-28,Cardiff MET,Carmarthen Town,1,1,D
+2018-11-02,Aberystwyth Town,The New Saints,1,0,H
+2018-11-02,Cefn Druids AFC,Newtown AFC,1,1,D
+2018-11-03,GAP Connah S Quay FC,llanelli AFC,6,0,H
+2018-11-03,Carmarthen Town,Caernarfon Town,4,3,H
+2018-11-03,Bala Town,Cardiff MET,3,0,H
+2018-11-04,Barry Town,Llandudno,2,1,H
+2018-11-09,The New Saints,Caernarfon Town,0,1,A
+2018-11-09,Llandudno,Bala Town,2,4,A
+2018-11-10,GAP Connah S Quay FC,Barry Town,2,2,D
+2018-11-10,Newtown AFC,llanelli AFC,7,1,H
+2018-11-10,Carmarthen Town,Cefn Druids AFC,2,3,A
+2018-11-11,Cardiff MET,Aberystwyth Town,2,3,A
+2018-11-17,Bala Town,Aberystwyth Town,2,3,A
+2018-11-17,llanelli AFC,Cefn Druids AFC,2,0,H
+2018-11-17,Barry Town,The New Saints,0,2,A
+2018-11-17,Llandudno,Carmarthen Town,1,2,A
+2018-11-17,Caernarfon Town,Cardiff MET,2,0,H
+2018-11-21,Newtown AFC,GAP Connah S Quay FC,1,1,D
+2018-11-30,Aberystwyth Town,Carmarthen Town,1,1,D
+2018-11-30,Cefn Druids AFC,Bala Town,2,2,D
+2018-12-01,The New Saints,Cardiff MET,1,1,D
+2018-12-01,llanelli AFC,Caernarfon Town,2,2,D
+2018-12-01,GAP Connah S Quay FC,Llandudno,3,0,H
+2018-12-01,Barry Town,Newtown AFC,4,1,H
+2018-12-14,Bala Town,The New Saints,1,1,D
+2018-12-14,Cardiff MET,llanelli AFC,4,0,H
+2018-12-14,Caernarfon Town,Aberystwyth Town,4,0,H
+2018-12-14,Carmarthen Town,Barry Town,2,3,A
+2018-12-14,Cefn Druids AFC,GAP Connah S Quay FC,1,2,A
+2018-12-15,Newtown AFC,Llandudno,3,1,H
+2018-12-21,Aberystwyth Town,Cefn Druids AFC,0,2,A
+2018-12-22,llanelli AFC,Bala Town,1,7,A
+2018-12-22,GAP Connah S Quay FC,Cardiff MET,6,1,H
+2018-12-22,Newtown AFC,Carmarthen Town,1,1,D
+2018-12-22,Llandudno,The New Saints,0,4,A
+2018-12-22,Barry Town,Caernarfon Town,2,1,H
+2018-12-26,llanelli AFC,Carmarthen Town,1,1,D
+2018-12-26,Barry Town,Cardiff MET,2,1,H
+2018-12-26,Aberystwyth Town,Newtown AFC,0,2,A
+2018-12-26,Bala Town,GAP Connah S Quay FC,2,1,H
+2018-12-26,The New Saints,Cefn Druids AFC,7,0,H
+2018-12-29,Caernarfon Town,Llandudno,3,3,D
+2018-12-30,Newtown AFC,Aberystwyth Town,2,1,H
+2018-12-31,Cardiff MET,Barry Town,3,0,H
+2019-01-01,GAP Connah S Quay FC,Bala Town,4,1,H
+2019-01-01,Cefn Druids AFC,The New Saints,0,3,A
+2019-01-01,Llandudno,Caernarfon Town,1,1,D
+2019-01-01,Carmarthen Town,llanelli AFC,2,0,H
+2019-01-04,Aberystwyth Town,GAP Connah S Quay FC,1,6,A
+2019-01-04,The New Saints,Newtown AFC,4,0,H
+2019-01-05,Cardiff MET,Bala Town,3,0,H
+2019-01-05,llanelli AFC,Llandudno,2,1,H
+2019-01-05,Caernarfon Town,Carmarthen Town,3,1,H
+2019-01-05,Cefn Druids AFC,Barry Town,2,5,A
+2019-01-12,Bala Town,Caernarfon Town,1,3,A
+2019-01-12,The New Saints,llanelli AFC,5,0,H
+2019-01-12,Newtown AFC,Cefn Druids AFC,1,1,D
+2019-01-12,Carmarthen Town,GAP Connah S Quay FC,3,2,H
+2019-01-12,Barry Town,Aberystwyth Town,2,1,H
+2019-01-12,Llandudno,Cardiff MET,0,3,A
+2019-02-01,Aberystwyth Town,Llandudno,1,1,D
+2019-02-02,Caernarfon Town,Barry Town,2,0,H
+2019-02-02,Newtown AFC,GAP Connah S Quay FC,1,2,A
+2019-02-02,Carmarthen Town,Cardiff MET,1,0,H
+2019-02-02,Cefn Druids AFC,llanelli AFC,0,0,D
+2019-02-08,The New Saints,Newtown AFC,5,0,H
+2019-02-08,llanelli AFC,Aberystwyth Town,2,4,A
+2019-02-08,GAP Connah S Quay FC,Caernarfon Town,6,2,H
+2019-02-09,Llandudno,Carmarthen Town,3,1,H
+2019-02-10,Cardiff MET,Cefn Druids AFC,3,0,H
+2019-02-15,llanelli AFC,Carmarthen Town,0,3,A
+2019-02-15,Cefn Druids AFC,Aberystwyth Town,3,1,H
+2019-02-16,Cardiff MET,Llandudno,3,0,H
+2019-02-16,The New Saints,Barry Town,2,2,D
+2019-02-16,Newtown AFC,Caernarfon Town,3,2,H
+2019-02-22,Bala Town,Newtown AFC,2,2,D
+2019-02-23,Aberystwyth Town,Cardiff MET,2,0,H
+2019-02-23,Carmarthen Town,Cefn Druids AFC,0,1,A
+2019-02-23,Llandudno,llanelli AFC,4,2,H
+2019-02-23,Barry Town,GAP Connah S Quay FC,1,1,D
+2019-02-25,Caernarfon Town,The New Saints,0,3,A
+2019-02-26,GAP Connah S Quay FC,Bala Town,1,0,H
+2019-03-08,Aberystwyth Town,Carmarthen Town,3,2,H
+2019-03-08,llanelli AFC,Cardiff MET,0,4,A
+2019-03-08,Caernarfon Town,Bala Town,1,0,H
+2019-03-08,Cefn Druids AFC,Llandudno,2,2,D
+2019-03-09,Newtown AFC,Barry Town,3,0,H
+2019-03-09,GAP Connah S Quay FC,The New Saints,0,2,A
+2019-03-15,GAP Connah S Quay FC,Newtown AFC,2,0,H
+2019-03-16,Barry Town,Bala Town,0,2,A
+2019-03-22,The New Saints,Bala Town,3,1,H
+2019-03-22,Llandudno,Aberystwyth Town,1,2,A
+2019-03-23,Cardiff MET,Carmarthen Town,1,0,H
+2019-03-23,llanelli AFC,Cefn Druids AFC,1,3,A
+2019-03-23,Barry Town,Caernarfon Town,4,0,H
+2019-04-03,Bala Town,The New Saints,0,7,A
+2019-04-05,Aberystwyth Town,llanelli AFC,3,2,H
+2019-04-05,Caernarfon Town,GAP Connah S Quay FC,1,0,H
+2019-04-06,Bala Town,Barry Town,2,5,A
+2019-04-06,Newtown AFC,The New Saints,0,6,A
+2019-04-06,Carmarthen Town,Llandudno,2,0,H
+2019-04-06,Cefn Druids AFC,Cardiff MET,3,1,H
+2019-04-12,Aberystwyth Town,Cefn Druids AFC,0,0,D
+2019-04-12,Bala Town,GAP Connah S Quay FC,1,4,A
+2019-04-12,Caernarfon Town,Newtown AFC,4,1,H
+2019-04-13,Carmarthen Town,llanelli AFC,3,1,H
+2019-04-13,Llandudno,Cardiff MET,1,2,A
+2019-04-13,Barry Town,The New Saints,0,4,A
+2019-04-19,Newtown AFC,Bala Town,2,3,A
+2019-04-20,Cardiff MET,Aberystwyth Town,1,0,H
+2019-04-20,llanelli AFC,Llandudno,0,4,A
+2019-04-20,GAP Connah S Quay FC,Barry Town,1,1,D
+2019-04-20,Cefn Druids AFC,Carmarthen Town,0,1,A
+2019-04-20,The New Saints,Caernarfon Town,3,1,H
+2019-04-26,Bala Town,Caernarfon Town,1,0,H
+2019-04-26,Cardiff MET,llanelli AFC,3,2,H
+2019-04-26,The New Saints,GAP Connah S Quay FC,1,0,H
+2019-04-26,Carmarthen Town,Aberystwyth Town,6,2,H
+2019-04-26,Barry Town,Newtown AFC,1,3,A
+2019-04-26,Llandudno,Cefn Druids AFC,0,5,A
+2019-05-10,Newtown AFC,Bala Town,1,2,A
+2019-05-11,Caernarfon Town,Cardiff MET,2,3,A
+2019-05-19,Bala Town,Cardiff MET,2,2,D

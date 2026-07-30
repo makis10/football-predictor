@@ -1,0 +1,181 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2023-08-04,Araz,Turan,0,3,A
+2023-08-05,Sbail,Sumqayt,1,4,A
+2023-08-05,Qarabag,Zira,0,1,A
+2023-08-06,Kapaz,Neftchi Baku,1,0,H
+2023-08-06,Sabah FA,Qabala,5,0,H
+2023-08-12,Araz,Qabala,2,0,H
+2023-08-12,Zira,Kapaz,1,0,H
+2023-08-13,Qarabag,Turan,3,0,H
+2023-08-14,Neftchi Baku,Sbail,1,1,D
+2023-08-18,Kapaz,Turan,0,2,A
+2023-08-19,Qabala,Sumqayt,1,2,A
+2023-08-19,Sbail,Zira,1,2,A
+2023-08-20,Qarabag,Araz,2,1,H
+2023-08-20,Sabah FA,Neftchi Baku,1,1,D
+2023-08-25,Araz,Sumqayt,1,1,D
+2023-08-26,Turan,Sbail,1,3,A
+2023-08-26,Zira,Sabah FA,1,0,H
+2023-08-27,Neftchi Baku,Qabala,2,0,H
+2023-08-27,Qarabag,Kapaz,1,1,D
+2023-09-01,Sabah FA,Turan,0,3,A
+2023-09-02,Qabala,Zira,1,0,H
+2023-09-02,Sumqayt,Neftchi Baku,0,1,A
+2023-09-03,Kapaz,Araz,1,2,A
+2023-09-03,Sbail,Qarabag,2,1,H
+2023-09-15,Zira,Sumqayt,1,0,H
+2023-09-16,Kapaz,Sbail,0,3,A
+2023-09-16,Araz,Neftchi Baku,1,0,H
+2023-09-17,Turan,Qabala,2,2,D
+2023-09-17,Qarabag,Sabah FA,2,0,H
+2023-09-23,Sumqayt,Turan,0,0,D
+2023-09-23,Zira,Neftchi Baku,1,1,D
+2023-09-24,Sabah FA,Kapaz,2,2,D
+2023-09-24,Sbail,Araz,1,0,H
+2023-09-25,Qabala,Qarabag,1,2,A
+2023-09-29,Qarabag,Sumqayt,5,0,H
+2023-09-30,Turan,Neftchi Baku,0,1,A
+2023-09-30,Sbail,Sabah FA,2,2,D
+2023-10-01,Kapaz,Qabala,0,1,A
+2023-10-01,Araz,Zira,1,0,H
+2023-10-06,Zira,Turan,2,1,H
+2023-10-07,Qabala,Sbail,0,1,A
+2023-10-07,Sabah FA,Araz,1,1,D
+2023-10-08,Sumqayt,Kapaz,1,0,H
+2023-10-08,Neftchi Baku,Qarabag,0,2,A
+2023-10-20,Turan,Qarabag,2,2,D
+2023-10-20,Sbail,Neftchi Baku,2,4,A
+2023-10-21,Kapaz,Zira,0,0,D
+2023-10-21,Sabah FA,Sumqayt,3,1,H
+2023-10-22,Qabala,Araz,1,4,A
+2023-10-25,Sumqayt,Sabah FA,1,0,H
+2023-10-28,Zira,Sbail,2,2,D
+2023-10-28,Turan,Kapaz,4,0,H
+2023-10-29,Sumqayt,Qabala,0,0,D
+2023-10-29,Neftchi Baku,Sabah FA,0,1,A
+2023-10-30,Araz,Qarabag,2,1,H
+2023-11-03,Sbail,Turan,2,1,H
+2023-11-04,Qarabag,Kapaz,7,1,H
+2023-11-04,Sumqayt,Araz,2,0,H
+2023-11-05,Qabala,Neftchi Baku,0,2,A
+2023-11-05,Sabah FA,Zira,0,1,A
+2023-11-10,Araz,Kapaz,0,1,A
+2023-11-11,Neftchi Baku,Sumqayt,1,2,A
+2023-11-11,Turan,Sabah FA,2,3,A
+2023-11-12,Zira,Qabala,1,0,H
+2023-11-12,Qarabag,Sbail,3,1,H
+2023-11-24,Sabah FA,Qarabag,1,2,A
+2023-11-25,Sbail,Kapaz,0,0,D
+2023-11-25,Qabala,Turan,4,0,H
+2023-11-26,Neftchi Baku,Araz,1,1,D
+2023-11-26,Sumqayt,Zira,0,0,D
+2023-12-02,Araz,Sbail,1,1,D
+2023-12-02,Turan,Sumqayt,2,2,D
+2023-12-03,Kapaz,Sabah FA,0,2,A
+2023-12-03,Neftchi Baku,Zira,1,0,H
+2023-12-04,Qarabag,Qabala,3,0,H
+2023-12-08,Sumqayt,Qarabag,1,6,A
+2023-12-09,Qabala,Kapaz,0,3,A
+2023-12-09,Zira,Araz,0,0,D
+2023-12-10,Sabah FA,Sbail,4,0,H
+2023-12-10,Neftchi Baku,Turan,3,2,H
+2023-12-14,Kapaz,Sumqayt,1,1,D
+2023-12-15,Sbail,Qabala,3,0,H
+2023-12-15,Araz,Sabah FA,2,0,H
+2023-12-16,Turan,Zira,1,0,H
+2023-12-18,Qarabag,Neftchi Baku,2,0,H
+2023-12-22,Qabala,Sabah FA,1,0,H
+2023-12-23,Sumqayt,Sbail,1,0,H
+2023-12-24,Turan,Araz,3,1,H
+2023-12-24,Neftchi Baku,Kapaz,2,0,H
+2023-12-24,Zira,Qarabag,0,1,A
+2024-01-21,Sabah FA,Neftchi Baku,0,0,D
+2024-01-22,Sbail,Zira,0,0,D
+2024-01-22,Kapaz,Turan,2,1,H
+2024-01-23,Qabala,Sumqayt,0,1,A
+2024-01-23,Qarabag,Araz,3,1,H
+2024-01-26,Turan,Sbail,3,1,H
+2024-01-27,Kapaz,Qarabag,1,2,A
+2024-01-27,Zira,Sabah FA,0,1,A
+2024-01-28,Araz,Sumqayt,1,1,D
+2024-01-28,Neftchi Baku,Qabala,3,1,H
+2024-02-03,Sbail,Qarabag,1,2,A
+2024-02-03,Sabah FA,Turan,1,1,D
+2024-02-04,Sumqayt,Neftchi Baku,2,1,H
+2024-02-04,Qabala,Zira,1,1,D
+2024-02-05,Kapaz,Araz,3,1,H
+2024-02-11,Qarabag,Sabah FA,3,3,D
+2024-02-12,Kapaz,Sbail,1,4,A
+2024-02-13,Turan,Qabala,2,1,H
+2024-02-13,Zira,Sumqayt,0,0,D
+2024-02-13,Araz,Neftchi Baku,1,0,H
+2024-02-17,Sabah FA,Kapaz,3,2,H
+2024-02-17,Sbail,Araz,2,2,D
+2024-02-18,Sumqayt,Turan,0,0,D
+2024-02-18,Neftchi Baku,Zira,1,0,H
+2024-02-23,Kapaz,Qabala,2,1,H
+2024-02-24,Turan,Neftchi Baku,1,1,D
+2024-02-24,Sbail,Sabah FA,2,0,H
+2024-02-25,Araz,Zira,0,3,A
+2024-02-25,Qarabag,Sumqayt,2,0,H
+2024-02-28,Qabala,Qarabag,0,4,A
+2024-03-01,Sumqayt,Kapaz,1,3,A
+2024-03-02,Zira,Turan,1,1,D
+2024-03-02,Sabah FA,Araz,2,0,H
+2024-03-03,Qabala,Sbail,2,3,A
+2024-03-03,Neftchi Baku,Qarabag,1,4,A
+2024-03-08,Sbail,Sumqayt,0,1,A
+2024-03-09,Kapaz,Neftchi Baku,3,3,D
+2024-03-09,Sabah FA,Qabala,2,1,H
+2024-03-10,Turan,Araz,2,0,H
+2024-03-10,Qarabag,Zira,3,1,H
+2024-03-15,Neftchi Baku,Sbail,3,0,H
+2024-03-16,Zira,Kapaz,2,1,H
+2024-03-16,Araz,Qabala,1,1,D
+2024-03-17,Turan,Qarabag,1,3,A
+2024-03-17,Sumqayt,Sabah FA,1,2,A
+2024-03-29,Qabala,Neftchi Baku,0,1,A
+2024-03-29,Kapaz,Qarabag,1,6,A
+2024-03-30,Sbail,Turan,1,1,D
+2024-03-30,Sabah FA,Zira,0,1,A
+2024-03-31,Sumqayt,Araz,1,0,H
+2024-04-05,Araz,Kapaz,1,2,A
+2024-04-06,Turan,Sabah FA,2,0,H
+2024-04-06,Qarabag,Sbail,4,2,H
+2024-04-07,Zira,Qabala,4,0,H
+2024-04-07,Neftchi Baku,Sumqayt,1,1,D
+2024-04-12,Sumqayt,Zira,0,0,D
+2024-04-13,Qabala,Turan,1,2,A
+2024-04-13,Neftchi Baku,Araz,3,0,H
+2024-04-14,Sbail,Kapaz,3,3,D
+2024-04-14,Sabah FA,Qarabag,3,2,H
+2024-04-19,Turan,Sumqayt,1,4,A
+2024-04-20,Qarabag,Qabala,2,2,D
+2024-04-20,Zira,Neftchi Baku,3,1,H
+2024-04-21,Kapaz,Sabah FA,1,2,A
+2024-04-21,Araz,Sbail,0,2,A
+2024-04-27,Sabah FA,Sbail,2,0,H
+2024-04-28,Qabala,Kapaz,0,1,A
+2024-04-28,Neftchi Baku,Turan,3,0,H
+2024-04-28,Sumqayt,Qarabag,1,0,H
+2024-04-29,Zira,Araz,0,1,A
+2024-05-04,Kapaz,Sumqayt,1,1,D
+2024-05-04,Qarabag,Neftchi Baku,5,0,H
+2024-05-05,Turan,Zira,1,2,A
+2024-05-05,Araz,Sabah FA,0,1,A
+2024-05-06,Sbail,Qabala,2,3,A
+2024-05-10,Neftchi Baku,Kapaz,5,1,H
+2024-05-11,Araz,Turan,0,1,A
+2024-05-11,Zira,Qarabag,0,1,A
+2024-05-12,Qabala,Sabah FA,2,0,H
+2024-05-12,Sumqayt,Sbail,2,1,H
+2024-05-17,Qarabag,Turan,4,3,H
+2024-05-18,Sbail,Neftchi Baku,0,3,A
+2024-05-18,Kapaz,Zira,0,1,A
+2024-05-18,Sabah FA,Sumqayt,2,0,H
+2024-05-19,Qabala,Araz,2,0,H
+2024-05-25,Zira,Sbail,1,0,H
+2024-05-25,Neftchi Baku,Sabah FA,0,1,A
+2024-05-25,Sumqayt,Qabala,1,0,H
+2024-05-26,Turan,Kapaz,1,0,H
+2024-05-26,Araz,Qarabag,2,2,D

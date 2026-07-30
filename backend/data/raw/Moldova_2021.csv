@@ -1,0 +1,105 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2021-07-01,Floresti,Petrocub,0,1,A
+2021-07-01,Sheriff Tiraspol,CSF Balti,0,1,A
+2021-07-02,Zimbru,Dinamo-Auto,3,0,H
+2021-07-02,Milsami Orhei,Sfintul Gheorghe,1,1,D
+2021-07-17,Zimbru,Floresti,4,0,H
+2021-07-18,Dinamo-Auto,Sfintul Gheorghe,2,2,D
+2021-07-18,CSF Balti,Milsami Orhei,0,1,A
+2021-07-24,Floresti,Dinamo-Auto,0,1,A
+2021-07-25,Sfintul Gheorghe,CSF Balti,1,1,D
+2021-07-25,Milsami Orhei,Petrocub,2,1,H
+2021-07-31,Dinamo-Auto,CSF Balti,1,4,A
+2021-07-31,Floresti,Sheriff Tiraspol,1,3,A
+2021-08-01,Zimbru,Milsami Orhei,0,2,A
+2021-08-01,Petrocub,Sfintul Gheorghe,5,0,H
+2021-08-07,Sheriff Tiraspol,Dinamo-Auto,7,1,H
+2021-08-07,CSF Balti,Petrocub,2,4,A
+2021-08-08,Milsami Orhei,Floresti,4,1,H
+2021-08-08,Sfintul Gheorghe,Zimbru,1,0,H
+2021-08-14,Dinamo-Auto,Petrocub,0,2,A
+2021-08-14,Zimbru,CSF Balti,2,3,A
+2021-08-15,Floresti,Sfintul Gheorghe,1,5,A
+2021-08-20,Petrocub,Zimbru,1,0,H
+2021-08-20,CSF Balti,Floresti,3,1,H
+2021-08-21,Milsami Orhei,Dinamo-Auto,4,1,H
+2021-08-25,Sfintul Gheorghe,Milsami Orhei,3,4,A
+2021-08-25,Petrocub,Floresti,2,0,H
+2021-08-26,Dinamo-Auto,Zimbru,3,3,D
+2021-08-28,CSF Balti,Sheriff Tiraspol,0,2,A
+2021-09-11,Floresti,Zimbru,1,3,A
+2021-09-11,Milsami Orhei,CSF Balti,1,1,D
+2021-09-12,Sfintul Gheorghe,Dinamo-Auto,0,1,A
+2021-09-12,Sheriff Tiraspol,Petrocub,2,0,H
+2021-09-17,Petrocub,Milsami Orhei,1,1,D
+2021-09-17,CSF Balti,Sfintul Gheorghe,1,2,A
+2021-09-18,Dinamo-Auto,Floresti,1,0,H
+2021-09-19,Zimbru,Sheriff Tiraspol,1,1,D
+2021-09-21,Sfintul Gheorghe,Petrocub,0,1,A
+2021-09-22,Sheriff Tiraspol,Floresti,4,0,H
+2021-09-22,Milsami Orhei,Zimbru,1,0,H
+2021-09-22,CSF Balti,Dinamo-Auto,2,4,A
+2021-09-25,Dinamo-Auto,Sheriff Tiraspol,0,7,A
+2021-09-25,Zimbru,Sfintul Gheorghe,1,1,D
+2021-09-26,Floresti,Milsami Orhei,0,3,A
+2021-09-26,Petrocub,CSF Balti,3,0,H
+2021-10-01,Sfintul Gheorghe,Floresti,4,1,H
+2021-10-01,Petrocub,Dinamo-Auto,6,1,H
+2021-10-02,Milsami Orhei,Sheriff Tiraspol,0,1,A
+2021-10-02,CSF Balti,Zimbru,2,1,H
+2021-10-16,Floresti,CSF Balti,1,3,A
+2021-10-16,Sheriff Tiraspol,Sfintul Gheorghe,4,0,H
+2021-10-17,Dinamo-Auto,Milsami Orhei,1,3,A
+2021-10-17,Zimbru,Petrocub,0,1,A
+2021-10-22,Zimbru,Dinamo-Auto,1,2,A
+2021-10-23,Floresti,Petrocub,3,4,A
+2021-10-23,Sheriff Tiraspol,CSF Balti,2,0,H
+2021-10-23,Milsami Orhei,Sfintul Gheorghe,2,2,D
+2021-10-30,Zimbru,Floresti,3,0,H
+2021-10-30,CSF Balti,Milsami Orhei,0,1,A
+2021-10-31,Dinamo-Auto,Sfintul Gheorghe,0,1,A
+2021-10-31,Petrocub,Sheriff Tiraspol,0,2,A
+2021-11-05,Sfintul Gheorghe,CSF Balti,1,0,H
+2021-11-05,Milsami Orhei,Petrocub,1,3,A
+2021-11-06,Floresti,Dinamo-Auto,1,5,A
+2021-11-06,Sheriff Tiraspol,Zimbru,6,0,H
+2021-11-20,Dinamo-Auto,CSF Balti,1,0,H
+2021-11-20,Floresti,Sheriff Tiraspol,1,3,A
+2021-11-20,Zimbru,Milsami Orhei,1,2,A
+2021-11-21,Petrocub,Sfintul Gheorghe,1,1,D
+2021-11-27,Zimbru,Sfintul Gheorghe,1,1,D
+2021-11-27,CSF Balti,Petrocub,1,2,A
+2021-11-28,Milsami Orhei,Floresti,5,0,H
+2021-11-28,Sheriff Tiraspol,Dinamo-Auto,7,0,H
+2021-12-02,Petrocub,Sheriff Tiraspol,0,0,D
+2021-12-11,Sheriff Tiraspol,Zimbru,4,0,H
+2022-03-01,Sheriff Tiraspol,Milsami Orhei,1,0,H
+2022-03-05,Sheriff Tiraspol,Sfintul Gheorghe,2,0,H
+2022-03-12,Zimbru,CSF Balti,2,1,H
+2022-03-13,Dinamo-Auto,Petrocub,0,0,D
+2022-03-13,Sheriff Tiraspol,Milsami Orhei,0,1,A
+2022-03-18,Milsami Orhei,Dinamo-Auto,2,5,A
+2022-03-18,Petrocub,Zimbru,5,1,H
+2022-03-19,Sfintul Gheorghe,Sheriff Tiraspol,0,3,A
+2022-04-03,Dinamo-Auto,Zimbru,0,0,D
+2022-04-03,CSF Balti,Sheriff Tiraspol,0,3,A
+2022-04-04,Sfintul Gheorghe,Milsami Orhei,2,0,H
+2022-04-08,Sfintul Gheorghe,Dinamo-Auto,4,0,H
+2022-04-08,Sheriff Tiraspol,Petrocub,1,0,H
+2022-04-09,Milsami Orhei,CSF Balti,0,2,A
+2022-04-16,Zimbru,Sheriff Tiraspol,1,1,D
+2022-04-17,CSF Balti,Sfintul Gheorghe,0,0,D
+2022-04-17,Petrocub,Milsami Orhei,1,0,H
+2022-04-21,Milsami Orhei,Zimbru,3,0,H
+2022-04-22,Sfintul Gheorghe,Petrocub,0,4,A
+2022-04-22,CSF Balti,Dinamo-Auto,3,0,H
+2022-04-29,Dinamo-Auto,Sheriff Tiraspol,0,3,A
+2022-04-30,Sfintul Gheorghe,Zimbru,0,1,A
+2022-04-30,Petrocub,CSF Balti,3,2,H
+2022-05-07,Milsami Orhei,Sheriff Tiraspol,1,1,D
+2022-05-08,Petrocub,Dinamo-Auto,5,0,H
+2022-05-08,CSF Balti,Zimbru,1,0,H
+2022-05-14,Dinamo-Auto,Milsami Orhei,2,2,D
+2022-05-14,Sfintul Gheorghe,Sheriff Tiraspol,0,2,A
+2022-05-14,Zimbru,Petrocub,0,3,A
+2022-05-26,Spartanii Selemet,Zimbru,0,1,A

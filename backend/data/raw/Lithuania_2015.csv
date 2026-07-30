@@ -1,0 +1,181 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2015-02-28,Stumbras,Siauliai,3,1,H
+2015-02-28,Atlantas,FK Trakai,5,1,H
+2015-03-01,Kauno Zalgiris,Granitas Klaipeda,2,1,H
+2015-03-01,Kruoja,Suduva Marijampole,1,3,A
+2015-03-02,FK Zalgiris Vilnius,Utenis Utena,2,0,H
+2015-03-07,Stumbras,Suduva Marijampole,0,2,A
+2015-03-07,Siauliai,Kauno Zalgiris,1,2,A
+2015-03-08,Granitas Klaipeda,FK Zalgiris Vilnius,0,2,A
+2015-03-08,Utenis Utena,Atlantas,1,2,A
+2015-03-09,FK Trakai,Kruoja,1,1,D
+2015-03-13,FK Zalgiris Vilnius,Siauliai,3,2,H
+2015-03-14,Kauno Zalgiris,Stumbras,1,4,A
+2015-03-14,Atlantas,Granitas Klaipeda,0,1,A
+2015-03-14,Suduva Marijampole,FK Trakai,0,1,A
+2015-03-15,Kruoja,Utenis Utena,1,0,H
+2015-03-17,Atlantas,Siauliai,5,0,H
+2015-03-17,FK Trakai,Stumbras,3,1,H
+2015-03-18,Utenis Utena,Suduva Marijampole,1,1,D
+2015-03-18,Kauno Zalgiris,FK Zalgiris Vilnius,0,1,A
+2015-03-19,Granitas Klaipeda,Kruoja,0,3,A
+2015-03-21,FK Trakai,Utenis Utena,5,1,H
+2015-03-22,Kruoja,Siauliai,2,2,D
+2015-03-23,Suduva Marijampole,Granitas Klaipeda,3,1,H
+2015-04-02,Kauno Zalgiris,Kruoja,0,2,A
+2015-04-03,Stumbras,Utenis Utena,0,1,A
+2015-04-03,FK Zalgiris Vilnius,Atlantas,2,0,H
+2015-04-04,Siauliai,Suduva Marijampole,0,3,A
+2015-04-04,Granitas Klaipeda,FK Trakai,2,4,A
+2015-04-07,Utenis Utena,Granitas Klaipeda,1,3,A
+2015-04-07,Atlantas,Stumbras,2,0,H
+2015-04-08,Kruoja,FK Zalgiris Vilnius,0,2,A
+2015-04-09,FK Trakai,Siauliai,4,0,H
+2015-04-09,Suduva Marijampole,Kauno Zalgiris,5,1,H
+2015-04-11,Stumbras,Granitas Klaipeda,1,1,D
+2015-04-11,Atlantas,Kruoja,3,1,H
+2015-04-12,Siauliai,Utenis Utena,0,2,A
+2015-04-12,FK Trakai,Kauno Zalgiris,2,0,H
+2015-04-13,FK Zalgiris Vilnius,Suduva Marijampole,2,0,H
+2015-04-17,Suduva Marijampole,Atlantas,1,1,D
+2015-04-18,Kauno Zalgiris,Utenis Utena,2,1,H
+2015-04-18,FK Trakai,FK Zalgiris Vilnius,2,1,H
+2015-04-19,Granitas Klaipeda,Siauliai,2,2,D
+2015-04-19,Stumbras,Kruoja,2,0,H
+2015-04-24,Siauliai,Stumbras,1,1,D
+2015-04-25,FK Trakai,Atlantas,2,0,H
+2015-04-26,Utenis Utena,FK Zalgiris Vilnius,0,2,A
+2015-04-26,Granitas Klaipeda,Kauno Zalgiris,1,1,D
+2015-04-28,Suduva Marijampole,Kruoja,3,0,H
+2015-05-01,Kauno Zalgiris,Siauliai,2,1,H
+2015-05-01,FK Zalgiris Vilnius,Granitas Klaipeda,6,0,H
+2015-05-02,Kruoja,FK Trakai,0,2,A
+2015-05-02,Atlantas,Utenis Utena,1,1,D
+2015-05-03,Suduva Marijampole,Stumbras,1,1,D
+2015-05-09,FK Trakai,Suduva Marijampole,4,1,H
+2015-05-10,Stumbras,Kauno Zalgiris,2,4,A
+2015-05-11,Granitas Klaipeda,Atlantas,1,2,A
+2015-05-11,Siauliai,FK Zalgiris Vilnius,1,6,A
+2015-05-12,Utenis Utena,Kruoja,0,0,D
+2015-05-14,Stumbras,FK Trakai,2,3,A
+2015-05-15,FK Zalgiris Vilnius,Kauno Zalgiris,4,0,H
+2015-05-16,Siauliai,Atlantas,0,0,D
+2015-05-16,Suduva Marijampole,Utenis Utena,0,1,A
+2015-05-17,Kruoja,Granitas Klaipeda,1,1,D
+2015-05-19,FK Zalgiris Vilnius,Stumbras,4,1,H
+2015-05-19,Kauno Zalgiris,Atlantas,1,0,H
+2015-05-26,Granitas Klaipeda,Suduva Marijampole,1,2,A
+2015-05-27,Utenis Utena,FK Trakai,1,0,H
+2015-05-27,Siauliai,Kruoja,1,0,H
+2015-05-28,Atlantas,Kauno Zalgiris,2,0,H
+2015-05-28,Stumbras,FK Zalgiris Vilnius,0,4,A
+2015-05-31,FK Trakai,Granitas Klaipeda,5,0,H
+2015-05-31,Suduva Marijampole,Siauliai,6,0,H
+2015-06-01,Utenis Utena,Stumbras,1,1,D
+2015-06-01,Atlantas,FK Zalgiris Vilnius,4,2,H
+2015-06-02,Kruoja,Kauno Zalgiris,1,2,A
+2015-06-06,Granitas Klaipeda,Utenis Utena,2,1,H
+2015-06-07,Kauno Zalgiris,Suduva Marijampole,2,1,H
+2015-06-18,Kruoja,FK Zalgiris Vilnius,2,2,D
+2015-06-18,Kauno Zalgiris,FK Trakai,0,3,A
+2015-06-19,Utenis Utena,Siauliai,1,0,H
+2015-06-21,Kruoja,Atlantas,1,2,A
+2015-06-21,Granitas Klaipeda,Stumbras,1,5,A
+2015-06-23,Utenis Utena,Kauno Zalgiris,2,3,A
+2015-06-23,Suduva Marijampole,FK Zalgiris Vilnius,1,2,A
+2015-06-25,Kruoja,Stumbras,1,1,D
+2015-06-25,Siauliai,Granitas Klaipeda,0,0,D
+2015-06-27,Utenis Utena,FK Zalgiris Vilnius,0,3,A
+2015-06-30,Kauno Zalgiris,Granitas Klaipeda,4,1,H
+2015-06-30,Siauliai,Stumbras,1,2,A
+2015-07-22,Stumbras,Suduva Marijampole,0,4,A
+2015-07-22,Siauliai,Kauno Zalgiris,1,2,A
+2015-07-25,Granitas Klaipeda,FK Zalgiris Vilnius,1,2,A
+2015-07-27,Utenis Utena,Atlantas,0,0,D
+2015-07-27,FK Trakai,Kruoja,0,0,D
+2015-07-30,Kruoja,Utenis Utena,2,1,H
+2015-07-30,Kauno Zalgiris,Stumbras,1,1,D
+2015-08-01,Atlantas,Granitas Klaipeda,1,1,D
+2015-08-01,FK Zalgiris Vilnius,Siauliai,5,0,H
+2015-08-02,Suduva Marijampole,FK Trakai,0,1,A
+2015-08-05,Stumbras,Atlantas,2,2,D
+2015-08-05,Siauliai,FK Trakai,3,1,H
+2015-08-06,Utenis Utena,Suduva Marijampole,0,0,D
+2015-08-06,Granitas Klaipeda,Kruoja,2,0,H
+2015-08-08,Siauliai,Atlantas,0,2,A
+2015-08-09,Stumbras,FK Trakai,0,5,A
+2015-08-10,FK Zalgiris Vilnius,Kauno Zalgiris,3,0,H
+2015-08-11,Kruoja,Suduva Marijampole,1,2,A
+2015-08-12,Atlantas,FK Trakai,1,0,H
+2015-08-13,Stumbras,FK Zalgiris Vilnius,1,7,A
+2015-08-15,Suduva Marijampole,Granitas Klaipeda,1,0,H
+2015-08-16,Kruoja,Siauliai,2,3,A
+2015-08-16,Atlantas,Kauno Zalgiris,2,1,H
+2015-08-16,FK Trakai,Utenis Utena,2,1,H
+2015-08-19,Siauliai,Suduva Marijampole,0,2,A
+2015-08-20,Granitas Klaipeda,FK Trakai,1,4,A
+2015-08-20,Stumbras,Utenis Utena,3,1,H
+2015-08-23,Kauno Zalgiris,Kruoja,1,1,D
+2015-08-24,FK Zalgiris Vilnius,Atlantas,0,1,A
+2015-08-27,Utenis Utena,Granitas Klaipeda,0,0,D
+2015-08-27,Siauliai,FK Trakai,2,4,A
+2015-08-28,Atlantas,Stumbras,4,1,H
+2015-08-29,FK Zalgiris Vilnius,Kruoja,3,0,H
+2015-08-30,Kauno Zalgiris,Suduva Marijampole,0,1,A
+2015-09-11,Stumbras,Granitas Klaipeda,1,1,D
+2015-09-11,Siauliai,Utenis Utena,0,2,A
+2015-09-12,FK Trakai,Kauno Zalgiris,5,0,H
+2015-09-12,Atlantas,Kruoja,3,0,H
+2015-09-12,FK Zalgiris Vilnius,Suduva Marijampole,3,0,H
+2015-09-15,Kauno Zalgiris,Utenis Utena,1,1,D
+2015-09-15,Suduva Marijampole,Atlantas,3,1,H
+2015-09-16,Kruoja,Stumbras,3,0,H
+2015-09-16,FK Trakai,FK Zalgiris Vilnius,0,2,A
+2015-09-17,Granitas Klaipeda,Siauliai,4,1,H
+2015-09-19,FK Trakai,Atlantas,5,1,H
+2015-09-19,Suduva Marijampole,Kruoja,3,0,H
+2015-09-19,FK Zalgiris Vilnius,Utenis Utena,4,3,H
+2015-09-20,Granitas Klaipeda,Kauno Zalgiris,2,2,D
+2015-09-22,Atlantas,Suduva Marijampole,0,1,A
+2015-09-23,Stumbras,Siauliai,3,2,H
+2015-09-23,FK Zalgiris Vilnius,FK Trakai,1,2,A
+2015-09-26,Atlantas,Utenis Utena,1,0,H
+2015-09-26,Kauno Zalgiris,Siauliai,3,2,H
+2015-09-27,Kruoja,FK Trakai,0,3,A
+2015-09-27,Suduva Marijampole,Stumbras,3,0,H
+2015-09-27,FK Zalgiris Vilnius,Granitas Klaipeda,2,0,H
+2015-10-03,Utenis Utena,Kruoja,3,0,H
+2015-10-03,Stumbras,Kauno Zalgiris,1,0,H
+2015-10-03,FK Trakai,Suduva Marijampole,2,0,H
+2015-10-04,Granitas Klaipeda,Atlantas,1,5,A
+2015-10-04,Siauliai,FK Zalgiris Vilnius,1,4,A
+2015-10-17,Kruoja,Granitas Klaipeda,0,3,A
+2015-10-17,Kauno Zalgiris,FK Zalgiris Vilnius,2,4,A
+2015-10-17,Atlantas,Siauliai,4,1,H
+2015-10-18,Suduva Marijampole,Utenis Utena,3,0,H
+2015-10-18,FK Trakai,Stumbras,3,1,H
+2015-10-24,Siauliai,Kruoja,3,0,H
+2015-10-24,Kauno Zalgiris,Atlantas,1,1,D
+2015-10-25,Utenis Utena,FK Trakai,1,1,D
+2015-10-25,Granitas Klaipeda,Suduva Marijampole,1,8,A
+2015-10-26,FK Zalgiris Vilnius,Stumbras,4,0,H
+2015-10-30,Kruoja,Kauno Zalgiris,0,3,A
+2015-10-30,Atlantas,FK Zalgiris Vilnius,0,1,A
+2015-10-30,FK Trakai,Granitas Klaipeda,3,0,H
+2015-10-31,Utenis Utena,Stumbras,3,1,H
+2015-10-31,Suduva Marijampole,Siauliai,5,0,H
+2015-11-08,Stumbras,Atlantas,0,2,A
+2015-11-08,FK Trakai,Siauliai,4,0,H
+2015-11-09,FK Zalgiris Vilnius,Kruoja,3,0,H
+2015-11-10,Granitas Klaipeda,Utenis Utena,1,2,A
+2015-11-10,Suduva Marijampole,Kauno Zalgiris,5,1,H
+2015-11-21,Kruoja,Atlantas,0,3,A
+2015-11-21,Kauno Zalgiris,FK Trakai,1,5,A
+2015-11-22,Utenis Utena,Siauliai,3,2,H
+2015-11-22,Granitas Klaipeda,Stumbras,0,3,A
+2015-11-22,Suduva Marijampole,FK Zalgiris Vilnius,1,3,A
+2015-11-28,FK Zalgiris Vilnius,FK Trakai,3,0,H
+2015-11-28,Atlantas,Suduva Marijampole,2,1,H
+2015-11-28,Stumbras,Kruoja,3,0,H
+2015-11-28,Siauliai,Granitas Klaipeda,3,0,H
+2015-11-28,Utenis Utena,Kauno Zalgiris,4,1,H

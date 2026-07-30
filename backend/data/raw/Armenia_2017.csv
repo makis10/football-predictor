@@ -1,0 +1,91 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2017-08-04,Shirak,Alashkert,2,1,H
+2017-08-06,FC Urartu,Pyunik Yerevan,2,2,D
+2017-08-06,Gandzasar,Ararat,1,3,A
+2017-08-11,Pyunik Yerevan,Gandzasar,2,1,H
+2017-08-12,Alashkert,Ararat,3,0,H
+2017-08-13,Shirak,FC Urartu,1,0,H
+2017-08-18,FC Urartu,Alashkert,2,2,D
+2017-08-19,Gandzasar,Shirak,0,1,A
+2017-08-20,Ararat,Pyunik Yerevan,0,0,D
+2017-08-25,Alashkert,Pyunik Yerevan,5,1,H
+2017-08-26,Shirak,Ararat,2,1,H
+2017-08-27,FC Urartu,Gandzasar,1,1,D
+2017-09-08,Gandzasar,Alashkert,1,1,D
+2017-09-09,Ararat,FC Urartu,1,2,A
+2017-09-10,Pyunik Yerevan,Shirak,0,2,A
+2017-09-15,Pyunik Yerevan,FC Urartu,1,2,A
+2017-09-16,Alashkert,Shirak,1,0,H
+2017-09-17,Ararat,Gandzasar,0,3,A
+2017-09-23,Gandzasar,Pyunik Yerevan,3,1,H
+2017-09-27,FC Urartu,Shirak,3,0,H
+2017-09-27,Ararat,Alashkert,1,3,A
+2017-09-30,Alashkert,FC Urartu,2,0,H
+2017-10-01,Shirak,Gandzasar,1,1,D
+2017-10-13,Ararat,Shirak,2,2,D
+2017-10-14,Gandzasar,FC Urartu,2,0,H
+2017-10-15,Pyunik Yerevan,Alashkert,0,1,A
+2017-10-20,FC Urartu,Ararat,0,0,D
+2017-10-21,Shirak,Pyunik Yerevan,0,0,D
+2017-10-22,Alashkert,Gandzasar,0,3,A
+2017-10-28,FC Urartu,Pyunik Yerevan,1,1,D
+2017-10-29,Shirak,Alashkert,0,1,A
+2017-10-29,Gandzasar,Ararat,2,0,H
+2017-11-03,Alashkert,Ararat,2,0,H
+2017-11-04,Pyunik Yerevan,Gandzasar,0,0,D
+2017-11-05,Shirak,FC Urartu,0,1,A
+2017-11-17,FC Urartu,Alashkert,2,2,D
+2017-11-18,Gandzasar,Shirak,2,2,D
+2017-11-19,Ararat,Pyunik Yerevan,0,1,A
+2017-11-24,Alashkert,Pyunik Yerevan,1,0,H
+2017-11-25,Shirak,Ararat,0,1,A
+2017-11-26,FC Urartu,Gandzasar,1,1,D
+2017-11-29,Pyunik Yerevan,Ararat,4,0,H
+2017-12-01,Gandzasar,Alashkert,1,0,H
+2017-12-02,Pyunik Yerevan,Shirak,3,2,H
+2017-12-03,Ararat,FC Urartu,2,3,A
+2018-02-28,Alashkert,Shirak,0,1,A
+2018-02-28,Pyunik Yerevan,FC Urartu,2,0,H
+2018-03-01,Ararat,Gandzasar,1,0,H
+2018-03-04,Gandzasar,Pyunik Yerevan,1,0,H
+2018-03-04,FC Urartu,Shirak,3,0,H
+2018-03-04,Ararat,Alashkert,2,3,A
+2018-03-10,Shirak,Gandzasar,2,1,H
+2018-03-11,Pyunik Yerevan,Ararat,3,3,D
+2018-03-11,Alashkert,FC Urartu,2,2,D
+2018-03-17,Pyunik Yerevan,Alashkert,3,1,H
+2018-03-18,Gandzasar,FC Urartu,2,2,D
+2018-03-18,Ararat,Shirak,0,2,A
+2018-03-31,Shirak,Pyunik Yerevan,2,0,H
+2018-04-01,Alashkert,Gandzasar,0,1,A
+2018-04-01,FC Urartu,Ararat,2,0,H
+2018-04-04,Gandzasar,Ararat,3,1,H
+2018-04-04,FC Urartu,Pyunik Yerevan,2,0,H
+2018-04-04,Shirak,Alashkert,1,0,H
+2018-04-07,Pyunik Yerevan,Gandzasar,2,1,H
+2018-04-07,Alashkert,Ararat,2,1,H
+2018-04-08,Shirak,FC Urartu,1,0,H
+2018-04-14,Gandzasar,Shirak,1,1,D
+2018-04-14,FC Urartu,Alashkert,3,0,H
+2018-04-15,Ararat,Pyunik Yerevan,1,1,D
+2018-04-21,Shirak,Ararat,4,1,H
+2018-04-22,Alashkert,Pyunik Yerevan,0,0,D
+2018-04-22,FC Urartu,Gandzasar,1,0,H
+2018-04-28,Gandzasar,Alashkert,0,4,A
+2018-04-28,Ararat,FC Urartu,2,1,H
+2018-04-29,Pyunik Yerevan,Shirak,1,2,A
+2018-05-01,Ararat,Gandzasar,1,6,A
+2018-05-02,Alashkert,Shirak,0,0,D
+2018-05-02,Pyunik Yerevan,FC Urartu,2,1,H
+2018-05-05,Gandzasar,Pyunik Yerevan,4,3,H
+2018-05-05,FC Urartu,Shirak,0,2,A
+2018-05-05,Ararat,Alashkert,2,3,A
+2018-05-08,Alashkert,FC Urartu,2,2,D
+2018-05-08,Pyunik Yerevan,Ararat,1,3,A
+2018-05-09,Shirak,Gandzasar,0,0,D
+2018-05-12,Gandzasar,FC Urartu,1,1,D
+2018-05-12,Ararat,Shirak,4,4,D
+2018-05-12,Pyunik Yerevan,Alashkert,0,0,D
+2018-05-20,Alashkert,Gandzasar,2,0,H
+2018-05-20,FC Urartu,Ararat,2,0,H
+2018-05-20,Shirak,Pyunik Yerevan,0,3,A

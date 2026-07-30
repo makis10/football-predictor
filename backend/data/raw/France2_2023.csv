@@ -1,0 +1,383 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2023-08-05,Saint Etienne,Grenoble,0,1,A
+2023-08-05,Amiens,Quevilly,1,0,H
+2023-08-05,Ajaccio,Rodez,1,1,D
+2023-08-05,Valenciennes,Auxerre,1,4,A
+2023-08-05,Paris FC,Caen,0,2,A
+2023-08-05,Laval,Angers,1,0,H
+2023-08-05,Concarneau,Bastia,0,0,D
+2023-08-05,Dunkerque,Estac Troyes,2,2,D
+2023-08-05,Annecy,Guingamp,1,4,A
+2023-08-07,PAU,Bordeaux,3,0,H
+2023-08-12,Rodez,Saint Etienne,2,1,H
+2023-08-12,Angers,Annecy,0,0,D
+2023-08-12,Caen,PAU,2,0,H
+2023-08-12,Guingamp,Dunkerque,0,1,A
+2023-08-12,Grenoble,Paris FC,2,0,H
+2023-08-12,Auxerre,Amiens,0,1,A
+2023-08-12,Estac Troyes,Laval,3,1,H
+2023-08-12,Quevilly,Ajaccio,0,1,A
+2023-08-12,Bastia,Valenciennes,3,0,H
+2023-08-14,Bordeaux,Concarneau,1,0,H
+2023-08-19,Angers,Auxerre,2,2,D
+2023-08-19,Amiens,Bastia,2,1,H
+2023-08-19,Grenoble,Estac Troyes,0,0,D
+2023-08-19,Valenciennes,Guingamp,0,0,D
+2023-08-19,Laval,Rodez,1,0,H
+2023-08-19,Saint Etienne,Quevilly,2,1,H
+2023-08-19,PAU,Paris FC,2,0,H
+2023-08-19,Concarneau,Caen,0,2,A
+2023-08-19,Annecy,Dunkerque,3,0,H
+2023-08-21,Ajaccio,Bordeaux,0,0,D
+2023-08-26,Bordeaux,Amiens,2,0,H
+2023-08-26,Caen,Ajaccio,3,0,H
+2023-08-26,Guingamp,PAU,4,0,H
+2023-08-26,Auxerre,Grenoble,0,0,D
+2023-08-26,Paris FC,Concarneau,3,0,H
+2023-08-26,Quevilly,Laval,0,0,D
+2023-08-26,Rodez,Valenciennes,0,1,A
+2023-08-26,Dunkerque,Angers,0,1,A
+2023-08-26,Bastia,Estac Troyes,3,2,H
+2023-08-28,Annecy,Saint Etienne,1,1,D
+2023-09-02,Bordeaux,Auxerre,2,4,A
+2023-09-02,Angers,Paris FC,2,0,H
+2023-09-02,Amiens,Guingamp,4,1,H
+2023-09-02,Ajaccio,Dunkerque,2,2,D
+2023-09-02,Grenoble,Bastia,0,0,D
+2023-09-02,Estac Troyes,Quevilly,2,2,D
+2023-09-02,Laval,Caen,2,1,H
+2023-09-02,Saint Etienne,Valenciennes,0,0,D
+2023-09-02,PAU,Rodez,2,2,D
+2023-09-02,Concarneau,Annecy,1,1,D
+2023-09-16,Caen,Saint Etienne,1,2,A
+2023-09-16,Valenciennes,Bordeaux,1,2,A
+2023-09-16,Auxerre,PAU,2,2,D
+2023-09-16,Paris FC,Amiens,3,0,H
+2023-09-16,Quevilly,Concarneau,2,3,A
+2023-09-16,Rodez,Angers,4,1,H
+2023-09-16,Dunkerque,Grenoble,0,0,D
+2023-09-16,Bastia,Laval,0,3,A
+2023-09-16,Annecy,Estac Troyes,0,0,D
+2023-09-18,Guingamp,Ajaccio,3,0,H
+2023-09-23,Estac Troyes,Auxerre,1,2,A
+2023-09-23,Angers,Bastia,2,0,H
+2023-09-23,Amiens,Valenciennes,0,0,D
+2023-09-23,Ajaccio,Paris FC,2,1,H
+2023-09-23,Grenoble,Quevilly,2,1,H
+2023-09-23,Laval,Guingamp,2,1,H
+2023-09-23,PAU,Annecy,0,3,A
+2023-09-23,Concarneau,Saint Etienne,0,1,A
+2023-09-23,Dunkerque,Rodez,1,2,A
+2023-09-26,Amiens,Ajaccio,0,0,D
+2023-09-26,Caen,Grenoble,1,2,A
+2023-09-26,Guingamp,Bordeaux,0,0,D
+2023-09-26,Valenciennes,Concarneau,0,1,A
+2023-09-26,Auxerre,Annecy,4,0,H
+2023-09-26,Paris FC,Laval,0,1,A
+2023-09-26,Quevilly,Angers,0,1,A
+2023-09-26,Rodez,Estac Troyes,2,1,H
+2023-09-26,Bastia,PAU,1,4,A
+2023-09-30,Estac Troyes,Saint Etienne,0,1,A
+2023-09-30,Angers,Concarneau,2,0,H
+2023-09-30,Caen,Guingamp,0,1,A
+2023-09-30,Grenoble,Bordeaux,2,0,H
+2023-09-30,Auxerre,Rodez,3,1,H
+2023-09-30,Laval,Valenciennes,1,0,H
+2023-09-30,PAU,Amiens,1,0,H
+2023-09-30,Dunkerque,Quevilly,0,1,A
+2023-09-30,Annecy,Paris FC,2,2,D
+2023-10-02,Ajaccio,Bastia,2,0,H
+2023-10-03,Bordeaux,Caen,1,1,D
+2023-10-04,Saint Etienne,Dunkerque,2,0,H
+2023-10-07,Bordeaux,Laval,0,1,A
+2023-10-07,Amiens,Angers,1,4,A
+2023-10-07,Guingamp,Grenoble,2,2,D
+2023-10-07,Valenciennes,Estac Troyes,1,1,D
+2023-10-07,Paris FC,Auxerre,0,2,A
+2023-10-07,Quevilly,PAU,2,2,D
+2023-10-07,Saint Etienne,Ajaccio,0,0,D
+2023-10-07,Concarneau,Dunkerque,4,3,H
+2023-10-07,Rodez,Caen,5,3,H
+2023-10-07,Bastia,Annecy,2,1,H
+2023-10-21,Caen,Auxerre,1,1,D
+2023-10-21,Angers,Bordeaux,2,0,H
+2023-10-21,Guingamp,Quevilly,2,2,D
+2023-10-21,Ajaccio,PAU,2,0,H
+2023-10-21,Grenoble,Valenciennes,3,3,D
+2023-10-21,Estac Troyes,Concarneau,0,0,D
+2023-10-21,Rodez,Bastia,1,1,D
+2023-10-21,Dunkerque,Paris FC,1,3,A
+2023-10-21,Annecy,Amiens,1,1,D
+2023-10-23,Laval,Saint Etienne,0,1,A
+2023-10-28,Bordeaux,Rodez,2,2,D
+2023-10-28,Amiens,Laval,0,0,D
+2023-10-28,Valenciennes,Caen,2,2,D
+2023-10-28,Auxerre,Dunkerque,0,1,A
+2023-10-28,Paris FC,Estac Troyes,2,2,D
+2023-10-28,Quevilly,Annecy,1,2,A
+2023-10-28,PAU,Grenoble,3,2,H
+2023-10-28,Concarneau,Ajaccio,2,1,H
+2023-10-28,Bastia,Guingamp,0,0,D
+2023-10-30,Saint Etienne,Angers,2,0,H
+2023-11-04,Saint Etienne,Paris FC,0,1,A
+2023-11-04,Angers,Valenciennes,2,0,H
+2023-11-04,Grenoble,Ajaccio,0,3,A
+2023-11-04,Estac Troyes,Caen,2,1,H
+2023-11-04,Quevilly,Rodez,3,1,H
+2023-11-04,Dunkerque,Amiens,0,1,A
+2023-11-04,Bastia,Bordeaux,3,1,H
+2023-11-04,Annecy,Laval,1,3,A
+2023-11-06,Guingamp,Auxerre,2,1,H
+2023-11-11,Bordeaux,Annecy,3,1,H
+2023-11-11,Amiens,Grenoble,1,2,A
+2023-11-11,Caen,Quevilly,3,3,D
+2023-11-11,Ajaccio,Estac Troyes,1,0,H
+2023-11-11,Valenciennes,Dunkerque,0,1,A
+2023-11-11,Auxerre,Saint Etienne,5,2,H
+2023-11-11,Paris FC,Bastia,1,0,H
+2023-11-11,Laval,Concarneau,0,3,A
+2023-11-11,PAU,Angers,4,4,D
+2023-11-11,Rodez,Guingamp,0,0,D
+2023-11-25,Saint Etienne,PAU,1,2,A
+2023-11-25,Amiens,Concarneau,1,1,D
+2023-11-25,Grenoble,Rodez,2,1,H
+2023-11-25,Estac Troyes,Guingamp,0,1,A
+2023-11-25,Paris FC,Bordeaux,1,2,A
+2023-11-25,Quevilly,Valenciennes,0,0,D
+2023-11-25,Dunkerque,Laval,0,2,A
+2023-11-25,Bastia,Auxerre,0,0,D
+2023-11-25,Annecy,Ajaccio,2,0,H
+2023-11-27,Angers,Caen,3,0,H
+2023-11-28,Concarneau,PAU,1,2,A
+2023-12-02,Bordeaux,Estac Troyes,0,1,A
+2023-12-02,Amiens,Saint Etienne,1,0,H
+2023-12-02,Caen,Bastia,1,0,H
+2023-12-02,Guingamp,Paris FC,0,1,A
+2023-12-02,Ajaccio,Angers,1,1,D
+2023-12-02,Valenciennes,Annecy,0,0,D
+2023-12-02,Auxerre,Quevilly,3,2,H
+2023-12-02,Laval,Grenoble,1,1,D
+2023-12-02,PAU,Dunkerque,1,1,D
+2023-12-02,Rodez,Concarneau,2,0,H
+2023-12-05,Angers,Grenoble,1,0,H
+2023-12-05,Ajaccio,Laval,2,0,H
+2023-12-05,Estac Troyes,Amiens,2,0,H
+2023-12-05,Paris FC,Rodez,2,0,H
+2023-12-05,Quevilly,Bordeaux,3,2,H
+2023-12-05,Saint Etienne,Guingamp,1,3,A
+2023-12-05,PAU,Valenciennes,3,1,H
+2023-12-05,Concarneau,Auxerre,1,2,A
+2023-12-05,Dunkerque,Bastia,0,5,A
+2023-12-06,Annecy,Caen,1,2,A
+2023-12-16,Bordeaux,Saint Etienne,0,0,D
+2023-12-16,Auxerre,Ajaccio,2,0,H
+2023-12-16,Caen,Dunkerque,1,0,H
+2023-12-16,Guingamp,Concarneau,0,1,A
+2023-12-16,Grenoble,Annecy,1,0,H
+2023-12-16,Valenciennes,Paris FC,0,1,A
+2023-12-16,Estac Troyes,Angers,1,4,A
+2023-12-16,Laval,PAU,1,1,D
+2023-12-16,Rodez,Amiens,2,2,D
+2023-12-16,Bastia,Quevilly,0,0,D
+2023-12-19,Angers,Guingamp,1,0,H
+2023-12-19,Amiens,Caen,0,0,D
+2023-12-19,Ajaccio,Valenciennes,2,1,H
+2023-12-19,Paris FC,Quevilly,2,2,D
+2023-12-19,Laval,Auxerre,1,3,A
+2023-12-19,Saint Etienne,Bastia,3,2,H
+2023-12-19,PAU,Estac Troyes,1,1,D
+2023-12-19,Concarneau,Grenoble,0,3,A
+2023-12-19,Dunkerque,Bordeaux,0,2,A
+2023-12-19,Annecy,Rodez,1,2,A
+2024-01-13,Saint Etienne,Laval,0,0,D
+2024-01-13,Caen,Concarneau,1,0,H
+2024-01-13,Grenoble,Dunkerque,2,2,D
+2024-01-13,Valenciennes,Amiens,0,1,A
+2024-01-13,Estac Troyes,Ajaccio,3,1,H
+2024-01-13,Paris FC,Annecy,2,1,H
+2024-01-13,Quevilly,Guingamp,0,1,A
+2024-01-13,Rodez,PAU,2,1,H
+2024-01-13,Bastia,Angers,2,0,H
+2024-01-15,Auxerre,Bordeaux,3,1,H
+2024-01-23,Angers,Quevilly,3,2,H
+2024-01-23,Bordeaux,Valenciennes,3,1,H
+2024-01-23,Amiens,Annecy,1,0,H
+2024-01-23,Guingamp,Rodez,3,3,D
+2024-01-23,Grenoble,Auxerre,1,1,D
+2024-01-23,Laval,Paris FC,1,1,D
+2024-01-23,PAU,Saint Etienne,0,1,A
+2024-01-23,Concarneau,Estac Troyes,1,0,H
+2024-01-23,Dunkerque,Ajaccio,2,0,H
+2024-01-23,Bastia,Caen,1,2,A
+2024-01-27,Saint Etienne,Amiens,0,1,A
+2024-01-27,Caen,Estac Troyes,0,0,D
+2024-01-27,Ajaccio,Concarneau,1,0,H
+2024-01-27,Valenciennes,Bastia,3,1,H
+2024-01-27,Auxerre,Guingamp,1,1,D
+2024-01-27,Paris FC,Dunkerque,1,2,A
+2024-01-27,Quevilly,Grenoble,1,1,D
+2024-01-27,Rodez,Laval,1,2,A
+2024-01-27,Annecy,PAU,0,0,D
+2024-01-29,Bordeaux,Angers,1,0,H
+2024-02-03,Dunkerque,Saint Etienne,1,0,H
+2024-02-03,Angers,Rodez,2,1,H
+2024-02-03,Amiens,Paris FC,1,1,D
+2024-02-03,Guingamp,Annecy,1,4,A
+2024-02-03,Grenoble,Caen,5,1,H
+2024-02-03,Estac Troyes,Bordeaux,2,1,H
+2024-02-03,Laval,Quevilly,2,4,A
+2024-02-03,PAU,Auxerre,2,2,D
+2024-02-03,Concarneau,Valenciennes,1,0,H
+2024-02-05,Bastia,Ajaccio,1,0,H
+2024-02-10,Auxerre,Angers,1,0,H
+2024-02-10,Bordeaux,Grenoble,1,0,H
+2024-02-10,Caen,Amiens,2,0,H
+2024-02-10,Ajaccio,Guingamp,3,0,H
+2024-02-10,Valenciennes,Laval,1,1,D
+2024-02-10,Paris FC,PAU,1,1,D
+2024-02-10,Quevilly,Bastia,0,1,A
+2024-02-10,Rodez,Dunkerque,0,0,D
+2024-02-10,Annecy,Concarneau,0,3,A
+2024-02-12,Saint Etienne,Estac Troyes,5,0,H
+2024-02-17,Angers,Saint Etienne,0,3,A
+2024-02-17,Guingamp,Caen,1,0,H
+2024-02-17,Estac Troyes,Grenoble,3,1,H
+2024-02-17,Laval,Ajaccio,1,1,D
+2024-02-17,PAU,Quevilly,0,2,A
+2024-02-17,Concarneau,Paris FC,2,2,D
+2024-02-17,Dunkerque,Valenciennes,2,1,H
+2024-02-17,Bastia,Rodez,0,2,A
+2024-02-17,Annecy,Auxerre,0,2,A
+2024-02-19,Amiens,Bordeaux,1,1,D
+2024-02-24,Saint Etienne,Annecy,2,1,H
+2024-02-24,Bordeaux,Guingamp,1,0,H
+2024-02-24,Ajaccio,Amiens,0,0,D
+2024-02-24,Grenoble,PAU,0,1,A
+2024-02-24,Valenciennes,Rodez,0,2,A
+2024-02-24,Auxerre,Bastia,1,1,D
+2024-02-24,Estac Troyes,Dunkerque,1,2,A
+2024-02-24,Quevilly,Paris FC,0,0,D
+2024-02-24,Concarneau,Laval,1,3,A
+2024-02-26,Caen,Angers,2,0,H
+2024-03-02,Paris FC,Saint Etienne,0,0,D
+2024-03-02,Guingamp,Estac Troyes,0,0,D
+2024-03-02,Auxerre,Valenciennes,0,0,D
+2024-03-02,Laval,Amiens,1,1,D
+2024-03-02,PAU,Caen,2,3,A
+2024-03-02,Rodez,Bordeaux,2,2,D
+2024-03-02,Dunkerque,Concarneau,2,2,D
+2024-03-02,Bastia,Grenoble,1,0,H
+2024-03-02,Annecy,Quevilly,0,0,D
+2024-03-04,Angers,Ajaccio,3,1,H
+2024-03-09,Saint Etienne,Auxerre,1,0,H
+2024-03-09,Bordeaux,Quevilly,0,0,D
+2024-03-09,Amiens,Rodez,1,1,D
+2024-03-09,Caen,Paris FC,0,1,A
+2024-03-09,Ajaccio,Annecy,1,3,A
+2024-03-09,Valenciennes,Angers,0,0,D
+2024-03-09,Estac Troyes,Bastia,2,0,H
+2024-03-09,Concarneau,Guingamp,2,3,A
+2024-03-09,Dunkerque,PAU,1,0,H
+2024-03-11,Grenoble,Laval,0,2,A
+2024-03-16,Auxerre,Caen,2,1,H
+2024-03-16,Angers,Amiens,1,3,A
+2024-03-16,Guingamp,Valenciennes,3,0,H
+2024-03-16,Paris FC,Ajaccio,2,0,H
+2024-03-16,Quevilly,Estac Troyes,1,1,D
+2024-03-16,Laval,Dunkerque,1,2,A
+2024-03-16,PAU,Concarneau,2,0,H
+2024-03-16,Rodez,Grenoble,3,1,H
+2024-03-16,Bastia,Saint Etienne,0,4,A
+2024-03-16,Annecy,Bordeaux,3,1,H
+2024-03-30,Valenciennes,Saint Etienne,0,2,A
+2024-03-30,Bordeaux,Paris FC,3,3,D
+2024-03-30,Amiens,PAU,2,3,A
+2024-03-30,Grenoble,Guingamp,0,0,D
+2024-03-30,Estac Troyes,Rodez,2,3,A
+2024-03-30,Quevilly,Caen,1,2,A
+2024-03-30,Laval,Bastia,1,2,A
+2024-03-30,Concarneau,Angers,2,4,A
+2024-03-30,Dunkerque,Annecy,0,2,A
+2024-04-01,Ajaccio,Auxerre,0,1,A
+2024-04-06,Saint Etienne,Concarneau,1,0,H
+2024-04-06,Angers,Laval,1,1,D
+2024-04-06,Caen,Bordeaux,0,1,A
+2024-04-06,Guingamp,Amiens,0,0,D
+2024-04-06,Paris FC,Grenoble,2,1,H
+2024-04-06,PAU,Ajaccio,1,1,D
+2024-04-06,Rodez,Quevilly,3,3,D
+2024-04-06,Bastia,Dunkerque,1,1,D
+2024-04-06,Annecy,Valenciennes,2,1,H
+2024-04-08,Auxerre,Estac Troyes,2,0,H
+2024-04-13,Ajaccio,Saint Etienne,2,0,H
+2024-04-13,Bordeaux,Bastia,2,3,A
+2024-04-13,Caen,Rodez,1,0,H
+2024-04-13,Valenciennes,PAU,1,4,A
+2024-04-13,Estac Troyes,Paris FC,1,2,A
+2024-04-13,Quevilly,Auxerre,4,3,H
+2024-04-13,Laval,Annecy,0,3,A
+2024-04-13,Concarneau,Amiens,0,0,D
+2024-04-13,Dunkerque,Guingamp,0,1,A
+2024-04-15,Grenoble,Angers,0,0,D
+2024-04-20,Rodez,Auxerre,2,0,H
+2024-04-20,Angers,Estac Troyes,2,1,H
+2024-04-20,Amiens,Dunkerque,0,1,A
+2024-04-20,Guingamp,Bastia,0,1,A
+2024-04-20,Ajaccio,Caen,2,1,H
+2024-04-20,Paris FC,Valenciennes,2,1,H
+2024-04-20,Saint Etienne,Bordeaux,2,1,H
+2024-04-20,PAU,Laval,3,0,H
+2024-04-20,Concarneau,Quevilly,0,0,D
+2024-04-20,Annecy,Grenoble,0,1,A
+2024-04-23,Bordeaux,Dunkerque,2,0,H
+2024-04-23,Caen,Annecy,2,1,H
+2024-04-23,Guingamp,Angers,1,2,A
+2024-04-23,Grenoble,Saint Etienne,0,2,A
+2024-04-23,Valenciennes,Ajaccio,1,0,H
+2024-04-23,Auxerre,Laval,4,0,H
+2024-04-23,Estac Troyes,PAU,2,2,D
+2024-04-23,Quevilly,Amiens,3,3,D
+2024-04-23,Rodez,Paris FC,1,0,H
+2024-04-23,Bastia,Concarneau,2,0,H
+2024-04-27,Saint Etienne,Caen,1,0,H
+2024-04-27,Amiens,Estac Troyes,0,0,D
+2024-04-27,Ajaccio,Quevilly,1,1,D
+2024-04-27,Valenciennes,Grenoble,2,0,H
+2024-04-27,Paris FC,Angers,3,1,H
+2024-04-27,Laval,Bordeaux,1,0,H
+2024-04-27,PAU,Guingamp,1,2,A
+2024-04-27,Concarneau,Rodez,1,2,A
+2024-04-27,Annecy,Bastia,3,2,H
+2024-04-29,Dunkerque,Auxerre,1,3,A
+2024-05-03,Angers,PAU,2,1,H
+2024-05-03,Bordeaux,Ajaccio,4,0,H
+2024-05-03,Caen,Laval,1,0,H
+2024-05-03,Grenoble,Concarneau,2,1,H
+2024-05-03,Estac Troyes,Valenciennes,1,1,D
+2024-05-03,Quevilly,Dunkerque,1,2,A
+2024-05-03,Rodez,Annecy,1,3,A
+2024-05-03,Bastia,Amiens,1,2,A
+2024-05-04,Auxerre,Paris FC,2,0,H
+2024-05-04,Guingamp,Saint Etienne,2,2,D
+2024-05-10,Amiens,Auxerre,0,0,D
+2024-05-10,Ajaccio,Grenoble,1,2,A
+2024-05-10,Valenciennes,Quevilly,2,1,H
+2024-05-10,Paris FC,Guingamp,2,1,H
+2024-05-10,Laval,Estac Troyes,1,2,A
+2024-05-10,Saint Etienne,Rodez,1,1,D
+2024-05-10,PAU,Bastia,1,2,A
+2024-05-10,Concarneau,Bordeaux,4,2,H
+2024-05-10,Dunkerque,Caen,2,2,D
+2024-05-10,Annecy,Angers,1,2,A
+2024-05-17,Angers,Dunkerque,0,0,D
+2024-05-17,Bordeaux,PAU,3,2,H
+2024-05-17,Caen,Valenciennes,3,0,H
+2024-05-17,Guingamp,Laval,0,1,A
+2024-05-17,Grenoble,Amiens,1,3,A
+2024-05-17,Auxerre,Concarneau,4,1,H
+2024-05-17,Estac Troyes,Annecy,1,1,D
+2024-05-17,Quevilly,Saint Etienne,2,1,H
+2024-05-17,Rodez,Ajaccio,2,0,H
+2024-05-17,Bastia,Paris FC,1,1,D
+2024-05-21,Rodez,Paris FC,2,2,D
+2024-05-24,Saint Etienne,Rodez,2,0,H

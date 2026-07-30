@@ -1,0 +1,385 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2020-08-22,Toulouse,Dunkerque,0,1,A
+2020-08-22,Amiens,Nancy,1,0,H
+2020-08-22,Guingamp,Niort,0,1,A
+2020-08-22,Ajaccio,Chateauroux,0,1,A
+2020-08-22,Clermont Foot,Caen,0,0,D
+2020-08-22,Valenciennes,PAU,3,0,H
+2020-08-22,Auxerre,Sochaux,0,2,A
+2020-08-22,Chambly Thelle FC,Paris FC,0,3,A
+2020-08-22,Rodez,Grenoble,1,0,H
+2020-08-24,Estac Troyes,Le Havre,2,0,H
+2020-08-29,Caen,Ajaccio,1,0,H
+2020-08-29,Nancy,Guingamp,2,2,D
+2020-08-29,Grenoble,Toulouse,5,3,H
+2020-08-29,Chateauroux,Auxerre,1,2,A
+2020-08-29,Le Havre,Amiens,1,0,H
+2020-08-29,Niort,Chambly Thelle FC,1,1,D
+2020-08-29,Paris FC,Valenciennes,1,0,H
+2020-08-29,Sochaux,Estac Troyes,2,1,H
+2020-08-29,PAU,Rodez,1,1,D
+2020-08-29,Dunkerque,Clermont Foot,1,1,D
+2020-09-12,Guingamp,Le Havre,1,3,A
+2020-09-12,Amiens,Paris FC,1,2,A
+2020-09-12,Valenciennes,Chateauroux,1,0,H
+2020-09-12,Auxerre,Clermont Foot,0,1,A
+2020-09-12,Estac Troyes,PAU,2,0,H
+2020-09-12,Niort,Nancy,1,0,H
+2020-09-12,Chambly Thelle FC,Grenoble,1,2,A
+2020-09-12,Rodez,Caen,0,3,A
+2020-09-14,Toulouse,Sochaux,0,0,D
+2020-09-19,Clermont Foot,Toulouse,1,1,D
+2020-09-19,Caen,Chambly Thelle FC,0,0,D
+2020-09-19,Grenoble,Ajaccio,2,0,H
+2020-09-19,Chateauroux,Amiens,0,0,D
+2020-09-19,Le Havre,Niort,0,1,A
+2020-09-19,Paris FC,Nancy,0,2,A
+2020-09-19,Sochaux,Rodez,2,2,D
+2020-09-19,PAU,Guingamp,0,1,A
+2020-09-19,Dunkerque,Valenciennes,1,0,H
+2020-09-21,Auxerre,Estac Troyes,2,1,H
+2020-09-26,Toulouse,Auxerre,3,1,H
+2020-09-26,Amiens,PAU,0,0,D
+2020-09-26,Guingamp,Grenoble,1,0,H
+2020-09-26,Ajaccio,Sochaux,1,1,D
+2020-09-26,Nancy,Le Havre,0,1,A
+2020-09-26,Valenciennes,Caen,1,0,H
+2020-09-26,Niort,Paris FC,2,2,D
+2020-09-26,Chambly Thelle FC,Chateauroux,2,1,H
+2020-09-26,Rodez,Dunkerque,2,1,H
+2020-09-28,Estac Troyes,Clermont Foot,1,0,H
+2020-09-30,Ajaccio,Dunkerque,1,0,H
+2020-10-03,Toulouse,Estac Troyes,0,0,D
+2020-10-03,Caen,Amiens,1,0,H
+2020-10-03,Clermont Foot,Rodez,3,0,H
+2020-10-03,Grenoble,Valenciennes,2,0,H
+2020-10-03,Chateauroux,Niort,2,0,H
+2020-10-03,Auxerre,Ajaccio,5,1,H
+2020-10-03,Paris FC,Le Havre,3,0,H
+2020-10-03,Sochaux,Chambly Thelle FC,3,2,H
+2020-10-03,PAU,Nancy,1,1,D
+2020-10-03,Dunkerque,Guingamp,1,0,H
+2020-10-16,Chambly Thelle FC,Clermont Foot,0,3,A
+2020-10-17,Valenciennes,Sochaux,0,0,D
+2020-10-17,Amiens,Grenoble,1,0,H
+2020-10-17,Ajaccio,Toulouse,0,1,A
+2020-10-17,Nancy,Dunkerque,2,1,H
+2020-10-17,Le Havre,Chateauroux,1,1,D
+2020-10-17,Niort,Caen,3,0,H
+2020-10-17,Paris FC,PAU,1,0,H
+2020-10-17,Rodez,Estac Troyes,0,1,A
+2020-10-19,Guingamp,Auxerre,2,0,H
+2020-10-24,Caen,Guingamp,1,0,H
+2020-10-24,Toulouse,Rodez,3,0,H
+2020-10-24,Clermont Foot,Ajaccio,0,2,A
+2020-10-24,Chateauroux,Paris FC,1,2,A
+2020-10-24,Auxerre,Chambly Thelle FC,4,0,H
+2020-10-24,Estac Troyes,Valenciennes,1,1,D
+2020-10-24,PAU,Niort,4,1,H
+2020-10-24,Dunkerque,Le Havre,0,1,A
+2020-10-26,Sochaux,Amiens,0,2,A
+2020-10-31,Paris FC,Caen,3,1,H
+2020-10-31,Guingamp,Sochaux,0,0,D
+2020-10-31,Ajaccio,Estac Troyes,0,4,A
+2020-10-31,Nancy,Chateauroux,2,1,H
+2020-10-31,Valenciennes,Clermont Foot,1,3,A
+2020-10-31,Le Havre,PAU,1,0,H
+2020-10-31,Chambly Thelle FC,Dunkerque,0,1,A
+2020-10-31,Rodez,Auxerre,2,2,D
+2020-11-02,Amiens,Toulouse,0,1,A
+2020-11-07,Clermont Foot,Guingamp,0,0,D
+2020-11-07,Grenoble,Le Havre,2,1,H
+2020-11-07,Caen,Nancy,2,1,H
+2020-11-07,Toulouse,Valenciennes,4,5,A
+2020-11-07,Chateauroux,PAU,0,3,A
+2020-11-07,Auxerre,Amiens,2,1,H
+2020-11-07,Estac Troyes,Chambly Thelle FC,2,2,D
+2020-11-07,Sochaux,Niort,3,4,A
+2020-11-07,Rodez,Ajaccio,0,1,A
+2020-11-07,Dunkerque,Paris FC,0,1,A
+2020-11-21,Le Havre,Caen,1,2,A
+2020-11-21,Amiens,Clermont Foot,1,1,D
+2020-11-21,Valenciennes,Rodez,1,1,D
+2020-11-21,Chateauroux,Sochaux,2,1,H
+2020-11-21,Niort,Dunkerque,1,2,A
+2020-11-21,Paris FC,Auxerre,0,3,A
+2020-11-21,Chambly Thelle FC,Toulouse,1,1,D
+2020-11-21,PAU,Grenoble,0,2,A
+2020-11-23,Guingamp,Ajaccio,2,2,D
+2020-11-24,Grenoble,Nancy,1,0,H
+2020-11-28,Toulouse,Niort,2,1,H
+2020-11-28,Grenoble,Paris FC,0,0,D
+2020-11-28,Caen,Chateauroux,1,1,D
+2020-11-28,Ajaccio,Chambly Thelle FC,0,0,D
+2020-11-28,Clermont Foot,Nancy,2,0,H
+2020-11-28,Auxerre,Valenciennes,1,1,D
+2020-11-28,Estac Troyes,Amiens,2,1,H
+2020-11-28,Sochaux,Le Havre,4,0,H
+2020-11-28,Rodez,Guingamp,1,1,D
+2020-11-28,Dunkerque,PAU,2,2,D
+2020-12-01,Amiens,Dunkerque,1,0,H
+2020-12-01,Guingamp,Estac Troyes,1,2,A
+2020-12-01,Nancy,Toulouse,1,3,A
+2020-12-01,Valenciennes,Ajaccio,1,1,D
+2020-12-01,Chateauroux,Grenoble,0,1,A
+2020-12-01,Le Havre,Auxerre,1,1,D
+2020-12-01,Niort,Clermont Foot,1,0,H
+2020-12-01,Paris FC,Sochaux,0,0,D
+2020-12-01,Chambly Thelle FC,Rodez,1,0,H
+2020-12-01,PAU,Caen,1,0,H
+2020-12-05,Estac Troyes,Paris FC,2,1,H
+2020-12-05,Caen,Grenoble,1,1,D
+2020-12-05,Toulouse,Guingamp,2,2,D
+2020-12-05,Clermont Foot,PAU,3,0,H
+2020-12-05,Auxerre,Niort,6,0,H
+2020-12-05,Sochaux,Nancy,1,1,D
+2020-12-05,Chambly Thelle FC,Valenciennes,1,2,A
+2020-12-05,Rodez,Amiens,1,2,A
+2020-12-05,Dunkerque,Chateauroux,2,0,H
+2020-12-07,Ajaccio,Le Havre,1,1,D
+2020-12-12,Caen,Estac Troyes,0,0,D
+2020-12-12,Amiens,Chambly Thelle FC,1,1,D
+2020-12-12,Guingamp,Valenciennes,1,1,D
+2020-12-12,Grenoble,Dunkerque,4,0,H
+2020-12-12,Nancy,Auxerre,2,2,D
+2020-12-12,Chateauroux,Toulouse,0,3,A
+2020-12-12,Niort,Ajaccio,2,0,H
+2020-12-12,Paris FC,Rodez,1,1,D
+2020-12-14,Le Havre,Clermont Foot,0,0,D
+2020-12-15,Nancy,Estac Troyes,2,3,A
+2020-12-15,Niort,Grenoble,0,0,D
+2020-12-15,PAU,Sochaux,0,0,D
+2020-12-18,Ajaccio,Nancy,1,0,H
+2020-12-18,Valenciennes,Amiens,0,2,A
+2020-12-18,Auxerre,PAU,2,1,H
+2020-12-18,Estac Troyes,Niort,1,0,H
+2020-12-18,Sochaux,Grenoble,1,1,D
+2020-12-18,Chambly Thelle FC,Guingamp,3,0,H
+2020-12-18,Rodez,Chateauroux,1,1,D
+2020-12-18,Dunkerque,Caen,2,3,A
+2020-12-19,Toulouse,Le Havre,4,3,H
+2020-12-19,Clermont Foot,Paris FC,3,2,H
+2020-12-22,Amiens,Ajaccio,0,0,D
+2020-12-22,Caen,Sochaux,1,4,A
+2020-12-22,Grenoble,Estac Troyes,2,0,H
+2020-12-22,Nancy,Chambly Thelle FC,3,3,D
+2020-12-22,Chateauroux,Clermont Foot,0,1,A
+2020-12-22,Le Havre,Rodez,1,1,D
+2020-12-22,Niort,Valenciennes,0,3,A
+2020-12-22,Paris FC,Guingamp,3,2,H
+2020-12-22,PAU,Toulouse,0,3,A
+2020-12-22,Dunkerque,Auxerre,0,1,A
+2021-01-05,Guingamp,Amiens,2,2,D
+2021-01-05,Toulouse,Paris FC,1,0,H
+2021-01-05,Ajaccio,PAU,4,1,H
+2021-01-05,Clermont Foot,Grenoble,3,0,H
+2021-01-05,Valenciennes,Nancy,2,3,A
+2021-01-05,Auxerre,Caen,1,1,D
+2021-01-05,Estac Troyes,Chateauroux,2,0,H
+2021-01-05,Sochaux,Dunkerque,1,0,H
+2021-01-05,Chambly Thelle FC,Le Havre,0,1,A
+2021-01-05,Rodez,Niort,1,1,D
+2021-01-08,Nancy,Rodez,2,2,D
+2021-01-08,Chateauroux,Guingamp,2,3,A
+2021-01-08,Le Havre,Valenciennes,0,2,A
+2021-01-08,Niort,Amiens,0,2,A
+2021-01-08,Paris FC,Ajaccio,1,1,D
+2021-01-08,Sochaux,Clermont Foot,0,0,D
+2021-01-08,PAU,Chambly Thelle FC,1,3,A
+2021-01-08,Dunkerque,Estac Troyes,0,0,D
+2021-01-09,Grenoble,Auxerre,2,2,D
+2021-01-11,Caen,Toulouse,2,2,D
+2021-01-16,Toulouse,Grenoble,2,0,H
+2021-01-16,Estac Troyes,Sochaux,2,1,H
+2021-01-16,Amiens,Le Havre,0,0,D
+2021-01-16,Guingamp,Nancy,0,0,D
+2021-01-16,Ajaccio,Caen,1,0,H
+2021-01-16,Clermont Foot,Dunkerque,5,0,H
+2021-01-16,Auxerre,Chateauroux,4,1,H
+2021-01-16,Rodez,PAU,1,0,H
+2021-01-23,Clermont Foot,Auxerre,1,0,H
+2021-01-23,Caen,Rodez,1,2,A
+2021-01-23,Grenoble,Chambly Thelle FC,2,0,H
+2021-01-23,Nancy,Niort,2,2,D
+2021-01-23,Chateauroux,Valenciennes,3,3,D
+2021-01-23,Le Havre,Guingamp,1,1,D
+2021-01-23,Paris FC,Amiens,4,2,H
+2021-01-23,PAU,Estac Troyes,0,1,A
+2021-01-23,Dunkerque,Ajaccio,3,1,H
+2021-01-25,Sochaux,Toulouse,0,1,A
+2021-01-26,Valenciennes,Paris FC,2,0,H
+2021-01-27,Chambly Thelle FC,Niort,1,1,D
+2021-01-30,Toulouse,Clermont Foot,3,2,H
+2021-01-30,Estac Troyes,Auxerre,3,1,H
+2021-01-30,Amiens,Chateauroux,1,0,H
+2021-01-30,Guingamp,PAU,2,3,A
+2021-01-30,Ajaccio,Grenoble,2,1,H
+2021-01-30,Nancy,Paris FC,1,1,D
+2021-01-30,Valenciennes,Dunkerque,1,0,H
+2021-01-30,Niort,Le Havre,0,0,D
+2021-01-30,Chambly Thelle FC,Caen,4,2,H
+2021-01-30,Rodez,Sochaux,1,1,D
+2021-02-02,Caen,Valenciennes,1,1,D
+2021-02-02,Clermont Foot,Estac Troyes,2,1,H
+2021-02-02,Grenoble,Guingamp,2,1,H
+2021-02-02,Chateauroux,Chambly Thelle FC,4,0,H
+2021-02-02,Auxerre,Toulouse,3,1,H
+2021-02-02,Le Havre,Nancy,1,1,D
+2021-02-02,Paris FC,Niort,3,3,D
+2021-02-02,Sochaux,Ajaccio,0,2,A
+2021-02-02,PAU,Amiens,2,0,H
+2021-02-02,Dunkerque,Rodez,0,0,D
+2021-02-05,Amiens,Caen,0,0,D
+2021-02-05,Guingamp,Dunkerque,0,0,D
+2021-02-05,Ajaccio,Auxerre,0,0,D
+2021-02-05,Nancy,PAU,1,0,H
+2021-02-05,Valenciennes,Grenoble,0,1,A
+2021-02-05,Niort,Chateauroux,1,1,D
+2021-02-05,Chambly Thelle FC,Sochaux,1,4,A
+2021-02-05,Rodez,Clermont Foot,2,0,H
+2021-02-06,Estac Troyes,Toulouse,1,1,D
+2021-02-06,Le Havre,Paris FC,1,0,H
+2021-02-13,Auxerre,Guingamp,1,1,D
+2021-02-13,Caen,Niort,1,0,H
+2021-02-13,Clermont Foot,Chambly Thelle FC,1,0,H
+2021-02-13,Grenoble,Amiens,0,0,D
+2021-02-13,Chateauroux,Le Havre,0,1,A
+2021-02-13,Estac Troyes,Rodez,2,1,H
+2021-02-13,PAU,Paris FC,1,1,D
+2021-02-13,Dunkerque,Nancy,1,2,A
+2021-02-15,Sochaux,Valenciennes,2,0,H
+2021-02-15,Toulouse,Ajaccio,3,0,H
+2021-02-20,Valenciennes,Estac Troyes,2,2,D
+2021-02-20,Amiens,Sochaux,0,1,A
+2021-02-20,Ajaccio,Clermont Foot,0,2,A
+2021-02-20,Nancy,Grenoble,1,2,A
+2021-02-20,Le Havre,Dunkerque,1,1,D
+2021-02-20,Niort,PAU,2,1,H
+2021-02-20,Paris FC,Chateauroux,1,0,H
+2021-02-20,Chambly Thelle FC,Auxerre,0,1,A
+2021-02-20,Rodez,Toulouse,1,0,H
+2021-02-22,Guingamp,Caen,2,2,D
+2021-02-27,Toulouse,Amiens,3,0,H
+2021-02-27,Estac Troyes,Ajaccio,1,0,H
+2021-02-27,Caen,Paris FC,0,2,A
+2021-02-27,Clermont Foot,Valenciennes,4,0,H
+2021-02-27,Grenoble,Niort,1,1,D
+2021-02-27,Chateauroux,Nancy,1,4,A
+2021-02-27,Auxerre,Rodez,0,1,A
+2021-02-27,Sochaux,Guingamp,0,0,D
+2021-02-27,PAU,Le Havre,2,0,H
+2021-02-27,Dunkerque,Chambly Thelle FC,1,1,D
+2021-03-02,Amiens,Auxerre,1,1,D
+2021-03-02,Guingamp,Clermont Foot,0,5,A
+2021-03-02,Ajaccio,Rodez,1,0,H
+2021-03-02,Nancy,Caen,1,0,H
+2021-03-02,Valenciennes,Toulouse,1,0,H
+2021-03-02,Le Havre,Grenoble,0,2,A
+2021-03-02,Niort,Sochaux,1,3,A
+2021-03-02,Paris FC,Dunkerque,1,0,H
+2021-03-02,Chambly Thelle FC,Estac Troyes,0,3,A
+2021-03-02,PAU,Chateauroux,1,0,H
+2021-03-13,Auxerre,Paris FC,0,0,D
+2021-03-13,Toulouse,Chambly Thelle FC,4,0,H
+2021-03-13,Ajaccio,Guingamp,0,2,A
+2021-03-13,Grenoble,PAU,1,1,D
+2021-03-13,Estac Troyes,Nancy,1,5,A
+2021-03-13,Sochaux,Chateauroux,0,0,D
+2021-03-13,Rodez,Valenciennes,3,0,H
+2021-03-13,Dunkerque,Niort,2,0,H
+2021-03-15,Caen,Le Havre,0,2,A
+2021-03-19,Chambly Thelle FC,Ajaccio,2,1,H
+2021-03-20,Amiens,Estac Troyes,3,1,H
+2021-03-20,Guingamp,Rodez,1,1,D
+2021-03-20,Nancy,Clermont Foot,1,0,H
+2021-03-20,Valenciennes,Auxerre,2,2,D
+2021-03-20,Chateauroux,Caen,2,2,D
+2021-03-20,Le Havre,Sochaux,0,2,A
+2021-03-20,Niort,Toulouse,1,0,H
+2021-03-20,Paris FC,Grenoble,2,0,H
+2021-03-20,PAU,Dunkerque,3,1,H
+2021-04-03,Toulouse,Nancy,4,1,H
+2021-04-03,Caen,PAU,1,1,D
+2021-04-03,Ajaccio,Valenciennes,3,0,H
+2021-04-03,Clermont Foot,Niort,0,0,D
+2021-04-03,Grenoble,Chateauroux,2,2,D
+2021-04-03,Estac Troyes,Guingamp,1,0,H
+2021-04-03,Sochaux,Paris FC,1,2,A
+2021-04-03,Rodez,Chambly Thelle FC,2,2,D
+2021-04-05,Auxerre,Le Havre,1,1,D
+2021-04-10,Paris FC,Estac Troyes,1,1,D
+2021-04-10,Grenoble,Caen,3,1,H
+2021-04-10,Nancy,Sochaux,0,0,D
+2021-04-10,Valenciennes,Chambly Thelle FC,2,1,H
+2021-04-10,Chateauroux,Dunkerque,1,2,A
+2021-04-10,Le Havre,Ajaccio,1,1,D
+2021-04-10,Niort,Auxerre,0,4,A
+2021-04-10,PAU,Clermont Foot,2,1,H
+2021-04-11,Amiens,Rodez,1,0,H
+2021-04-12,Guingamp,Toulouse,1,1,D
+2021-04-14,Clermont Foot,Amiens,3,0,H
+2021-04-17,Clermont Foot,Le Havre,1,1,D
+2021-04-17,Estac Troyes,Caen,1,0,H
+2021-04-17,Toulouse,Chateauroux,1,0,H
+2021-04-17,Ajaccio,Niort,3,0,H
+2021-04-17,Valenciennes,Guingamp,0,1,A
+2021-04-17,Auxerre,Nancy,3,2,H
+2021-04-17,Sochaux,PAU,1,1,D
+2021-04-17,Chambly Thelle FC,Amiens,2,0,H
+2021-04-17,Rodez,Paris FC,2,2,D
+2021-04-17,Dunkerque,Grenoble,1,1,D
+2021-04-20,Amiens,Valenciennes,3,1,H
+2021-04-20,Caen,Dunkerque,1,1,D
+2021-04-20,Guingamp,Chambly Thelle FC,1,0,H
+2021-04-20,Grenoble,Sochaux,2,0,H
+2021-04-20,Nancy,Ajaccio,2,0,H
+2021-04-20,Chateauroux,Rodez,1,1,D
+2021-04-20,Niort,Estac Troyes,0,3,A
+2021-04-20,Paris FC,Clermont Foot,0,1,A
+2021-04-20,PAU,Auxerre,3,0,H
+2021-04-24,Estac Troyes,Grenoble,3,1,H
+2021-04-24,Guingamp,Paris FC,0,0,D
+2021-04-24,Ajaccio,Amiens,2,2,D
+2021-04-24,Valenciennes,Niort,1,1,D
+2021-04-24,Auxerre,Dunkerque,2,1,H
+2021-04-24,Sochaux,Caen,1,0,H
+2021-04-24,Chambly Thelle FC,Nancy,1,1,D
+2021-04-24,Rodez,Le Havre,1,1,D
+2021-04-26,Clermont Foot,Chateauroux,2,1,H
+2021-04-28,Dunkerque,Amiens,1,1,D
+2021-05-01,Paris FC,Toulouse,3,1,H
+2021-05-01,Amiens,Guingamp,0,3,A
+2021-05-01,Caen,Auxerre,0,0,D
+2021-05-01,Nancy,Valenciennes,1,3,A
+2021-05-01,Chateauroux,Estac Troyes,1,2,A
+2021-05-01,Le Havre,Chambly Thelle FC,2,4,A
+2021-05-01,Niort,Rodez,1,1,D
+2021-05-01,PAU,Ajaccio,0,0,D
+2021-05-01,Dunkerque,Sochaux,1,0,H
+2021-05-03,Grenoble,Clermont Foot,1,2,A
+2021-05-04,Le Havre,Toulouse,0,1,A
+2021-05-08,Amiens,Niort,0,0,D
+2021-05-08,Guingamp,Chateauroux,2,0,H
+2021-05-08,Toulouse,Caen,3,0,H
+2021-05-08,Ajaccio,Paris FC,1,1,D
+2021-05-08,Clermont Foot,Sochaux,3,1,H
+2021-05-08,Valenciennes,Le Havre,3,5,A
+2021-05-08,Auxerre,Grenoble,1,1,D
+2021-05-08,Estac Troyes,Dunkerque,2,0,H
+2021-05-08,Chambly Thelle FC,PAU,1,0,H
+2021-05-08,Rodez,Nancy,1,1,D
+2021-05-12,Toulouse,PAU,2,2,D
+2021-05-15,Caen,Clermont Foot,2,1,H
+2021-05-15,Grenoble,Rodez,1,0,H
+2021-05-15,Nancy,Amiens,2,2,D
+2021-05-15,Chateauroux,Ajaccio,0,0,D
+2021-05-15,Le Havre,Estac Troyes,3,2,H
+2021-05-15,Niort,Guingamp,0,2,A
+2021-05-15,Paris FC,Chambly Thelle FC,3,0,H
+2021-05-15,Sochaux,Auxerre,2,3,A
+2021-05-15,PAU,Valenciennes,4,3,H
+2021-05-15,Dunkerque,Toulouse,3,3,D
+2021-05-18,Grenoble,Paris FC,2,0,H
+2021-05-19,Villefranche,Niort,3,1,H
+2021-05-21,Toulouse,Grenoble,3,0,H
+2021-05-22,Niort,Villefranche,2,0,H

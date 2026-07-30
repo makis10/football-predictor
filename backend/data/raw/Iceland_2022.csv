@@ -1,0 +1,163 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2022-04-18,Vikingur Reykjavik,FH hafnarfjordur,2,1,H
+2022-04-19,Valur Reykjavik,IBV Vestmannaeyjar,2,1,H
+2022-04-19,Stjarnan,IA Akranes,2,2,D
+2022-04-19,Breidablik,Keflavik,4,1,H
+2022-04-20,KA Akureyri,Leiknir R.,1,0,H
+2022-04-20,Fram Reykjavik,KR Reykjavik,1,4,A
+2022-04-24,IBV Vestmannaeyjar,KA Akureyri,0,3,A
+2022-04-24,Leiknir R.,Stjarnan,0,3,A
+2022-04-24,Keflavik,Valur Reykjavik,0,1,A
+2022-04-24,IA Akranes,Vikingur Reykjavik,3,0,H
+2022-04-25,FH hafnarfjordur,Fram Reykjavik,4,2,H
+2022-04-25,KR Reykjavik,Breidablik,0,1,A
+2022-04-28,Vikingur Reykjavik,Keflavik,4,1,H
+2022-04-30,Valur Reykjavik,KR Reykjavik,2,1,H
+2022-05-01,IBV Vestmannaeyjar,Leiknir R.,1,1,D
+2022-05-01,Breidablik,FH hafnarfjordur,3,0,H
+2022-05-02,KA Akureyri,Keflavik,3,2,H
+2022-05-02,Vikingur Reykjavik,Stjarnan,4,5,A
+2022-05-02,Fram Reykjavik,IA Akranes,1,1,D
+2022-05-06,FH hafnarfjordur,Valur Reykjavik,2,2,D
+2022-05-07,IA Akranes,Breidablik,1,5,A
+2022-05-07,Keflavik,IBV Vestmannaeyjar,3,3,D
+2022-05-07,KR Reykjavik,KA Akureyri,0,0,D
+2022-05-07,Stjarnan,Fram Reykjavik,1,1,D
+2022-05-08,Leiknir R.,Vikingur Reykjavik,0,0,D
+2022-05-11,IBV Vestmannaeyjar,KR Reykjavik,1,2,A
+2022-05-11,KA Akureyri,FH hafnarfjordur,1,0,H
+2022-05-11,Valur Reykjavik,IA Akranes,4,0,H
+2022-05-11,Breidablik,Stjarnan,3,2,H
+2022-05-12,Keflavik,Leiknir R.,3,0,H
+2022-05-12,Vikingur Reykjavik,Fram Reykjavik,4,1,H
+2022-05-15,FH hafnarfjordur,IBV Vestmannaeyjar,2,0,H
+2022-05-15,IA Akranes,KA Akureyri,0,3,A
+2022-05-15,Stjarnan,Valur Reykjavik,1,0,H
+2022-05-16,KR Reykjavik,Keflavik,1,0,H
+2022-05-16,Vikingur Reykjavik,Breidablik,0,3,A
+2022-05-16,Leiknir R.,Fram Reykjavik,1,2,A
+2022-05-21,IBV Vestmannaeyjar,IA Akranes,0,0,D
+2022-05-21,KR Reykjavik,Leiknir R.,1,1,D
+2022-05-21,KA Akureyri,Stjarnan,0,2,A
+2022-05-22,Keflavik,FH hafnarfjordur,2,1,H
+2022-05-22,Valur Reykjavik,Vikingur Reykjavik,1,3,A
+2022-05-22,Breidablik,Fram Reykjavik,4,3,H
+2022-05-29,Fram Reykjavik,Valur Reykjavik,3,2,H
+2022-05-29,Vikingur Reykjavik,KA Akureyri,2,1,H
+2022-05-29,Stjarnan,IBV Vestmannaeyjar,1,0,H
+2022-05-29,IA Akranes,Keflavik,0,2,A
+2022-05-29,FH hafnarfjordur,KR Reykjavik,2,3,A
+2022-05-29,Leiknir R.,Breidablik,1,2,A
+2022-06-15,IBV Vestmannaeyjar,Vikingur Reykjavik,0,3,A
+2022-06-15,KR Reykjavik,IA Akranes,3,3,D
+2022-06-16,KA Akureyri,Fram Reykjavik,2,2,D
+2022-06-16,Keflavik,Stjarnan,2,2,D
+2022-06-16,FH hafnarfjordur,Leiknir R.,2,2,D
+2022-06-16,Valur Reykjavik,Breidablik,3,2,H
+2022-06-20,Fram Reykjavik,IBV Vestmannaeyjar,3,3,D
+2022-06-20,Stjarnan,KR Reykjavik,1,1,D
+2022-06-20,Breidablik,KA Akureyri,4,1,H
+2022-06-21,Valur Reykjavik,Leiknir R.,2,1,H
+2022-06-21,IA Akranes,FH hafnarfjordur,1,1,D
+2022-06-23,Breidablik,KR Reykjavik,4,0,H
+2022-07-01,KR Reykjavik,Vikingur Reykjavik,0,3,A
+2022-07-02,IBV Vestmannaeyjar,Breidablik,0,0,D
+2022-07-03,Keflavik,Fram Reykjavik,3,1,H
+2022-07-04,KA Akureyri,Valur Reykjavik,1,1,D
+2022-07-04,FH hafnarfjordur,Stjarnan,1,1,D
+2022-07-04,Leiknir R.,IA Akranes,1,0,H
+2022-07-09,KA Akureyri,IBV Vestmannaeyjar,4,3,H
+2022-07-09,Vikingur Reykjavik,IA Akranes,3,2,H
+2022-07-11,Valur Reykjavik,Keflavik,0,3,A
+2022-07-11,Stjarnan,Leiknir R.,0,3,A
+2022-07-11,Fram Reykjavik,FH hafnarfjordur,1,0,H
+2022-07-16,FH hafnarfjordur,Vikingur Reykjavik,0,3,A
+2022-07-17,IBV Vestmannaeyjar,Valur Reykjavik,3,2,H
+2022-07-17,Leiknir R.,KA Akureyri,0,5,A
+2022-07-17,Keflavik,Breidablik,2,3,A
+2022-07-17,IA Akranes,Stjarnan,0,3,A
+2022-07-19,KR Reykjavik,Fram Reykjavik,1,1,D
+2022-07-24,Leiknir R.,IBV Vestmannaeyjar,1,4,A
+2022-07-24,Keflavik,KA Akureyri,1,3,A
+2022-07-24,FH hafnarfjordur,Breidablik,0,0,D
+2022-07-25,KR Reykjavik,Valur Reykjavik,3,3,D
+2022-07-25,IA Akranes,Fram Reykjavik,0,4,A
+2022-07-30,IBV Vestmannaeyjar,Keflavik,2,2,D
+2022-07-30,Stjarnan,Vikingur Reykjavik,2,2,D
+2022-08-01,Breidablik,IA Akranes,3,1,H
+2022-08-02,KA Akureyri,KR Reykjavik,0,1,A
+2022-08-03,Valur Reykjavik,FH hafnarfjordur,2,0,H
+2022-08-03,Fram Reykjavik,Stjarnan,2,2,D
+2022-08-07,FH hafnarfjordur,KA Akureyri,0,3,A
+2022-08-07,KR Reykjavik,IBV Vestmannaeyjar,4,0,H
+2022-08-07,Stjarnan,Breidablik,5,2,H
+2022-08-07,Fram Reykjavik,Vikingur Reykjavik,3,3,D
+2022-08-08,IA Akranes,Valur Reykjavik,1,2,A
+2022-08-08,Leiknir R.,Keflavik,1,2,A
+2022-08-14,IBV Vestmannaeyjar,FH hafnarfjordur,4,1,H
+2022-08-14,KA Akureyri,IA Akranes,3,0,H
+2022-08-14,Valur Reykjavik,Stjarnan,6,1,H
+2022-08-15,Keflavik,KR Reykjavik,0,0,D
+2022-08-15,Breidablik,Vikingur Reykjavik,1,1,D
+2022-08-15,Fram Reykjavik,Leiknir R.,4,1,H
+2022-08-21,IA Akranes,IBV Vestmannaeyjar,2,1,H
+2022-08-21,Stjarnan,KA Akureyri,2,4,A
+2022-08-22,FH hafnarfjordur,Keflavik,3,0,H
+2022-08-22,Leiknir R.,KR Reykjavik,4,3,H
+2022-08-22,Fram Reykjavik,Breidablik,0,2,A
+2022-08-22,Vikingur Reykjavik,Valur Reykjavik,2,2,D
+2022-08-28,IBV Vestmannaeyjar,Stjarnan,3,1,H
+2022-08-28,KA Akureyri,Vikingur Reykjavik,2,3,A
+2022-08-28,Keflavik,IA Akranes,0,1,A
+2022-08-28,KR Reykjavik,FH hafnarfjordur,0,0,D
+2022-08-28,Breidablik,Leiknir R.,4,0,H
+2022-08-29,Valur Reykjavik,Fram Reykjavik,1,1,D
+2022-09-04,Vikingur Reykjavik,IBV Vestmannaeyjar,2,2,D
+2022-09-04,Leiknir R.,FH hafnarfjordur,0,0,D
+2022-09-04,IA Akranes,KR Reykjavik,4,4,D
+2022-09-04,Fram Reykjavik,KA Akureyri,2,2,D
+2022-09-04,Stjarnan,Keflavik,0,2,A
+2022-09-05,Breidablik,Valur Reykjavik,1,0,H
+2022-09-07,Vikingur Reykjavik,Leiknir R.,9,0,H
+2022-09-11,IBV Vestmannaeyjar,Fram Reykjavik,2,2,D
+2022-09-11,Keflavik,Vikingur Reykjavik,0,3,A
+2022-09-11,FH hafnarfjordur,IA Akranes,6,1,H
+2022-09-11,KR Reykjavik,Stjarnan,3,1,H
+2022-09-11,KA Akureyri,Breidablik,2,1,H
+2022-09-11,Leiknir R.,Valur Reykjavik,1,0,H
+2022-09-17,Valur Reykjavik,KA Akureyri,0,1,A
+2022-09-17,Stjarnan,FH hafnarfjordur,2,1,H
+2022-09-17,Breidablik,IBV Vestmannaeyjar,3,0,H
+2022-09-17,Vikingur Reykjavik,KR Reykjavik,2,2,D
+2022-09-17,IA Akranes,Leiknir R.,1,2,A
+2022-09-17,Fram Reykjavik,Keflavik,4,8,A
+2022-10-02,Keflavik,IA Akranes,3,2,H
+2022-10-02,KA Akureyri,KR Reykjavik,1,0,H
+2022-10-02,Fram Reykjavik,Leiknir R.,3,2,H
+2022-10-03,Breidablik,Stjarnan,3,0,H
+2022-10-05,IBV Vestmannaeyjar,FH hafnarfjordur,2,1,H
+2022-10-05,Vikingur Reykjavik,Valur Reykjavik,3,2,H
+2022-10-08,KR Reykjavik,Valur Reykjavik,2,1,H
+2022-10-08,KA Akureyri,Breidablik,1,2,A
+2022-10-08,IA Akranes,Fram Reykjavik,3,2,H
+2022-10-10,IBV Vestmannaeyjar,Keflavik,2,1,H
+2022-10-10,FH hafnarfjordur,Leiknir R.,4,2,H
+2022-10-10,Stjarnan,Vikingur Reykjavik,2,1,H
+2022-10-15,Keflavik,FH hafnarfjordur,2,3,A
+2022-10-15,Leiknir R.,IA Akranes,2,2,D
+2022-10-15,Vikingur Reykjavik,KA Akureyri,2,2,D
+2022-10-15,Breidablik,KR Reykjavik,0,1,A
+2022-10-16,Fram Reykjavik,IBV Vestmannaeyjar,1,3,A
+2022-10-16,Valur Reykjavik,Stjarnan,3,0,H
+2022-10-22,IA Akranes,IBV Vestmannaeyjar,3,2,H
+2022-10-22,Leiknir R.,Keflavik,1,7,A
+2022-10-22,Valur Reykjavik,Breidablik,2,5,A
+2022-10-23,Fram Reykjavik,FH hafnarfjordur,3,0,H
+2022-10-23,Stjarnan,KA Akureyri,0,3,A
+2022-10-24,Vikingur Reykjavik,KR Reykjavik,2,2,D
+2022-10-29,IBV Vestmannaeyjar,Leiknir R.,1,0,H
+2022-10-29,Keflavik,Fram Reykjavik,4,0,H
+2022-10-29,FH hafnarfjordur,IA Akranes,1,2,A
+2022-10-29,KR Reykjavik,Stjarnan,0,2,A
+2022-10-29,KA Akureyri,Valur Reykjavik,2,0,H
+2022-10-29,Breidablik,Vikingur Reykjavik,1,0,H

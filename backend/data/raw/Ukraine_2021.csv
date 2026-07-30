@@ -1,0 +1,144 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2021-07-23,Lviv,FC Mariupol,1,1,D
+2021-07-24,Veres Rivne,Kolos Kovalivka,0,0,D
+2021-07-24,Shakhtar Donetsk,Inhulets,2,1,H
+2021-07-25,Metalist 1925 Kharkiv,Rukh Vynnyky,2,1,H
+2021-07-25,Zorya Luhansk,Oleksandria,0,1,A
+2021-07-25,Desna,Chornomorets,3,0,H
+2021-07-26,Vorskla Poltava,Dnipro-1,2,2,D
+2021-07-30,Lviv,Shakhtar Donetsk,0,3,A
+2021-07-30,Kolos Kovalivka,Metalist 1925 Kharkiv,1,0,H
+2021-07-31,Minai,Oleksandria,1,0,H
+2021-07-31,Chornomorets,Dnipro-1,0,3,A
+2021-08-01,FC Mariupol,Desna,1,2,A
+2021-08-01,Dynamo Kyiv,Veres Rivne,4,0,H
+2021-08-01,Vorskla Poltava,Rukh Vynnyky,2,0,H
+2021-08-02,Inhulets,Zorya Luhansk,1,5,A
+2021-08-06,Metalist 1925 Kharkiv,Chornomorets,3,2,H
+2021-08-07,Rukh Vynnyky,Veres Rivne,2,1,H
+2021-08-07,Shakhtar Donetsk,Oleksandria,1,2,A
+2021-08-07,Dnipro-1,FC Mariupol,2,1,H
+2021-08-08,Zorya Luhansk,Dynamo Kyiv,1,2,A
+2021-08-08,Vorskla Poltava,Lviv,4,1,H
+2021-08-09,Desna,Inhulets,2,0,H
+2021-08-11,Dynamo Kyiv,Minai,2,0,H
+2021-08-13,Shakhtar Donetsk,Metalist 1925 Kharkiv,2,0,H
+2021-08-14,Veres Rivne,Vorskla Poltava,1,1,D
+2021-08-14,Zorya Luhansk,Minai,1,1,D
+2021-08-14,Desna,Dnipro-1,2,1,H
+2021-08-15,Kolos Kovalivka,Rukh Vynnyky,1,1,D
+2021-08-15,Lviv,Oleksandria,1,1,D
+2021-08-16,FC Mariupol,Chornomorets,2,3,A
+2021-08-18,Inhulets,Dynamo Kyiv,1,1,D
+2021-08-20,Vorskla Poltava,Metalist 1925 Kharkiv,2,0,H
+2021-08-21,Veres Rivne,Minai,1,0,H
+2021-08-21,Chornomorets,Shakhtar Donetsk,0,3,A
+2021-08-21,Dnipro-1,Rukh Vynnyky,2,0,H
+2021-08-22,FC Mariupol,Zorya Luhansk,3,4,A
+2021-08-22,Kolos Kovalivka,Oleksandria,0,1,A
+2021-08-22,Dynamo Kyiv,Desna,4,0,H
+2021-08-23,Lviv,Inhulets,1,2,A
+2021-08-27,Chornomorets,Oleksandria,2,2,D
+2021-08-28,Inhulets,FC Mariupol,3,0,H
+2021-08-28,Metalist 1925 Kharkiv,Dnipro-1,1,2,A
+2021-08-28,Dynamo Kyiv,Kolos Kovalivka,7,0,H
+2021-08-29,Desna,Veres Rivne,0,4,A
+2021-08-29,Minai,Shakhtar Donetsk,1,1,D
+2021-08-29,Zorya Luhansk,Vorskla Poltava,1,0,H
+2021-08-29,Rukh Vynnyky,Lviv,1,0,H
+2021-09-10,Oleksandria,Inhulets,1,0,H
+2021-09-11,Rukh Vynnyky,Zorya Luhansk,1,1,D
+2021-09-11,Metalist 1925 Kharkiv,Dynamo Kyiv,0,2,A
+2021-09-11,Shakhtar Donetsk,Dnipro-1,2,0,H
+2021-09-12,Minai,Chornomorets,2,2,D
+2021-09-12,Kolos Kovalivka,FC Mariupol,1,3,A
+2021-09-12,Vorskla Poltava,Desna,2,2,D
+2021-09-13,Veres Rivne,Lviv,1,0,H
+2021-09-17,Desna,Rukh Vynnyky,1,0,H
+2021-09-18,Inhulets,Kolos Kovalivka,0,2,A
+2021-09-18,FC Mariupol,Shakhtar Donetsk,0,5,A
+2021-09-18,Dnipro-1,Veres Rivne,1,0,H
+2021-09-18,Dynamo Kyiv,Oleksandria,1,0,H
+2021-09-19,Vorskla Poltava,Minai,2,0,H
+2021-09-19,Zorya Luhansk,Chornomorets,3,0,H
+2021-09-19,Lviv,Metalist 1925 Kharkiv,0,0,D
+2021-09-24,Kolos Kovalivka,Vorskla Poltava,0,1,A
+2021-09-25,Oleksandria,FC Mariupol,2,1,H
+2021-09-25,Shakhtar Donetsk,Veres Rivne,4,1,H
+2021-09-25,Rukh Vynnyky,Dynamo Kyiv,0,2,A
+2021-09-26,Minai,Lviv,1,2,A
+2021-09-26,Dnipro-1,Zorya Luhansk,0,4,A
+2021-09-26,Desna,Metalist 1925 Kharkiv,1,2,A
+2021-09-27,Chornomorets,Inhulets,1,1,D
+2021-10-01,FC Mariupol,Rukh Vynnyky,0,2,A
+2021-10-02,Kolos Kovalivka,Chornomorets,2,1,H
+2021-10-02,Lviv,Dnipro-1,0,1,A
+2021-10-02,Vorskla Poltava,Inhulets,3,0,H
+2021-10-03,Veres Rivne,Oleksandria,0,0,D
+2021-10-03,Zorya Luhansk,Desna,2,0,H
+2021-10-03,Metalist 1925 Kharkiv,Minai,1,0,H
+2021-10-03,Dynamo Kyiv,Shakhtar Donetsk,0,0,D
+2021-10-15,Shakhtar Donetsk,Zorya Luhansk,6,1,H
+2021-10-16,FC Mariupol,Metalist 1925 Kharkiv,1,2,A
+2021-10-16,Lviv,Dynamo Kyiv,1,4,A
+2021-10-16,Dnipro-1,Kolos Kovalivka,2,0,H
+2021-10-17,Minai,Desna,0,0,D
+2021-10-17,Oleksandria,Vorskla Poltava,1,2,A
+2021-10-18,Chornomorets,Veres Rivne,0,1,A
+2021-10-22,Desna,Oleksandria,1,1,D
+2021-10-22,Metalist 1925 Kharkiv,Inhulets,4,0,H
+2021-10-23,Veres Rivne,FC Mariupol,2,0,H
+2021-10-23,Vorskla Poltava,Shakhtar Donetsk,0,2,A
+2021-10-23,Chornomorets,Lviv,1,1,D
+2021-10-24,Rukh Vynnyky,Minai,2,2,D
+2021-10-24,Dynamo Kyiv,Dnipro-1,2,0,H
+2021-10-24,Zorya Luhansk,Kolos Kovalivka,1,0,H
+2021-10-30,FC Mariupol,Dynamo Kyiv,2,3,A
+2021-10-30,Shakhtar Donetsk,Desna,4,1,H
+2021-10-30,Inhulets,Veres Rivne,0,0,D
+2021-10-31,Kolos Kovalivka,Lviv,0,1,A
+2021-10-31,Rukh Vynnyky,Oleksandria,0,0,D
+2021-10-31,Metalist 1925 Kharkiv,Zorya Luhansk,1,6,A
+2021-11-01,Dnipro-1,Minai,4,0,H
+2021-11-01,Vorskla Poltava,Chornomorets,0,0,D
+2021-11-05,Oleksandria,Metalist 1925 Kharkiv,2,0,H
+2021-11-06,Minai,FC Mariupol,0,2,A
+2021-11-06,Dynamo Kyiv,Vorskla Poltava,1,2,A
+2021-11-06,Chornomorets,Rukh Vynnyky,4,3,H
+2021-11-07,Inhulets,Dnipro-1,0,1,A
+2021-11-07,Zorya Luhansk,Veres Rivne,3,0,H
+2021-11-07,Kolos Kovalivka,Shakhtar Donetsk,1,3,A
+2021-11-07,Lviv,Desna,0,2,A
+2021-11-19,Chornomorets,Dynamo Kyiv,1,6,A
+2021-11-20,Lviv,Zorya Luhansk,2,1,H
+2021-11-20,Shakhtar Donetsk,Rukh Vynnyky,2,0,H
+2021-11-20,Dnipro-1,Oleksandria,3,1,H
+2021-11-21,Minai,Inhulets,2,2,D
+2021-11-21,Vorskla Poltava,FC Mariupol,5,1,H
+2021-11-21,Desna,Kolos Kovalivka,0,1,A
+2021-11-22,Veres Rivne,Metalist 1925 Kharkiv,2,0,H
+2021-11-24,Minai,Kolos Kovalivka,1,1,D
+2021-11-26,FC Mariupol,Lviv,0,1,A
+2021-11-27,Minai,Dynamo Kyiv,0,2,A
+2021-11-27,Chornomorets,Desna,0,1,A
+2021-11-27,Dnipro-1,Vorskla Poltava,5,1,H
+2021-11-28,Inhulets,Shakhtar Donetsk,0,1,A
+2021-11-28,Rukh Vynnyky,Metalist 1925 Kharkiv,2,0,H
+2021-11-28,Kolos Kovalivka,Veres Rivne,1,0,H
+2021-11-29,Oleksandria,Zorya Luhansk,0,1,A
+2021-12-03,Shakhtar Donetsk,Lviv,6,1,H
+2021-12-04,Veres Rivne,Dynamo Kyiv,0,3,A
+2021-12-04,Rukh Vynnyky,Vorskla Poltava,0,0,D
+2021-12-04,Metalist 1925 Kharkiv,Kolos Kovalivka,0,1,A
+2021-12-05,Zorya Luhansk,Inhulets,1,0,H
+2021-12-05,Oleksandria,Minai,3,0,H
+2021-12-05,Desna,FC Mariupol,3,3,D
+2021-12-06,Dnipro-1,Chornomorets,3,1,H
+2021-12-10,FC Mariupol,Dnipro-1,0,3,A
+2021-12-10,Inhulets,Desna,2,1,H
+2021-12-11,Oleksandria,Shakhtar Donetsk,1,2,A
+2021-12-11,Veres Rivne,Rukh Vynnyky,1,1,D
+2021-12-11,Lviv,Vorskla Poltava,1,1,D
+2021-12-12,Chornomorets,Metalist 1925 Kharkiv,2,1,H
+2021-12-12,Dynamo Kyiv,Zorya Luhansk,1,1,D
+2021-12-12,Kolos Kovalivka,Minai,2,1,H

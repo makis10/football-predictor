@@ -1,0 +1,307 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2018-08-11,Estoril,FC Porto B,4,0,H
+2018-08-11,Farense,Famalicao,1,0,H
+2018-08-11,Benfica B,Leixoes,2,1,H
+2018-08-11,Oliveirense,Academica,1,1,D
+2018-08-12,Pacos Ferreira,SC Braga B,2,0,H
+2018-08-12,Penafiel,Arouca,1,2,A
+2018-08-12,Varzim,Mafra,0,1,A
+2018-08-12,Guimaraes B,Cova De Piedade,0,1,A
+2018-08-12,SC Covilha,Academico Viseu,0,0,D
+2018-08-18,Academica,Pacos Ferreira,0,1,A
+2018-08-18,Cova De Piedade,SC Covilha,2,4,A
+2018-08-18,FC Porto B,Farense,1,3,A
+2018-08-18,Mafra,Guimaraes B,2,0,H
+2018-08-18,SC Braga B,Estoril,0,1,A
+2018-08-19,Arouca,Benfica B,1,2,A
+2018-08-19,Leixoes,Varzim,0,1,A
+2018-08-19,Academico Viseu,Oliveirense,3,1,H
+2018-08-19,Famalicao,Penafiel,2,0,H
+2018-08-25,Penafiel,FC Porto B,2,0,H
+2018-08-25,Varzim,SC Covilha,3,1,H
+2018-08-26,Estoril,Leixoes,1,2,A
+2018-08-26,Guimaraes B,Academica,0,0,D
+2018-08-26,Oliveirense,Cova De Piedade,1,1,D
+2018-08-26,Pacos Ferreira,Famalicao,1,2,A
+2018-08-26,Academico Viseu,Arouca,3,2,H
+2018-08-26,Benfica B,Mafra,1,0,H
+2018-08-26,Farense,SC Braga B,0,0,D
+2018-09-01,Academica,Benfica B,1,1,D
+2018-09-01,Mafra,Oliveirense,1,1,D
+2018-09-01,Cova De Piedade,Estoril,0,4,A
+2018-09-01,FC Porto B,Academico Viseu,2,1,H
+2018-09-01,SC Braga B,Penafiel,0,3,A
+2018-09-02,Varzim,Pacos Ferreira,0,1,A
+2018-09-02,Leixoes,Farense,2,1,H
+2018-09-02,SC Covilha,Guimaraes B,1,2,A
+2018-09-02,Famalicao,Arouca,2,0,H
+2018-09-22,Oliveirense,FC Porto B,1,1,D
+2018-09-22,Arouca,SC Braga B,0,2,A
+2018-09-22,Penafiel,Cova De Piedade,0,0,D
+2018-09-22,Benfica B,Varzim,1,0,H
+2018-09-23,Guimaraes B,Leixoes,0,2,A
+2018-09-23,Academico Viseu,Famalicao,3,4,A
+2018-09-23,Estoril,Mafra,1,4,A
+2018-09-23,Farense,Academica,0,2,A
+2018-09-23,Pacos Ferreira,SC Covilha,3,0,H
+2018-10-06,Cova De Piedade,Benfica B,0,0,D
+2018-10-06,Pacos Ferreira,Farense,1,0,H
+2018-10-06,SC Covilha,Penafiel,0,0,D
+2018-10-06,Mafra,Famalicao,1,1,D
+2018-10-07,Academica,Estoril,2,7,A
+2018-10-07,FC Porto B,Arouca,0,1,A
+2018-10-07,Varzim,Guimaraes B,1,2,A
+2018-10-07,Leixoes,Oliveirense,1,1,D
+2018-10-07,SC Braga B,Academico Viseu,2,0,H
+2018-10-14,Estoril,Varzim,2,2,D
+2018-10-21,Varzim,FC Porto B,2,1,H
+2018-10-27,Famalicao,FC Porto B,4,2,H
+2018-10-27,Farense,Cova De Piedade,1,0,H
+2018-10-27,Academico Viseu,Leixoes,0,0,D
+2018-10-27,Benfica B,SC Covilha,3,2,H
+2018-10-28,Oliveirense,SC Braga B,2,0,H
+2018-10-28,Arouca,Mafra,2,2,D
+2018-10-28,Guimaraes B,Pacos Ferreira,0,1,A
+2018-10-29,Penafiel,Academica,2,1,H
+2018-11-03,Pacos Ferreira,Benfica B,1,0,H
+2018-11-03,Cova De Piedade,Arouca,1,0,H
+2018-11-03,Mafra,Penafiel,1,0,H
+2018-11-03,SC Braga B,Famalicao,2,0,H
+2018-11-04,Leixoes,FC Porto B,0,0,D
+2018-11-04,Guimaraes B,Estoril,1,1,D
+2018-11-04,SC Covilha,Oliveirense,1,0,H
+2018-11-04,Varzim,Farense,1,1,D
+2018-11-04,Academica,Academico Viseu,0,1,A
+2018-11-10,Penafiel,Benfica B,1,0,H
+2018-11-10,Farense,Guimaraes B,2,2,D
+2018-11-10,Academico Viseu,Mafra,1,0,H
+2018-11-11,Arouca,Leixoes,2,0,H
+2018-11-11,Famalicao,SC Covilha,2,1,H
+2018-11-11,FC Porto B,Cova De Piedade,2,1,H
+2018-11-11,SC Braga B,Academica,0,1,A
+2018-11-12,Estoril,Pacos Ferreira,1,0,H
+2018-11-12,Oliveirense,Varzim,3,0,H
+2018-11-18,SC Covilha,Academica,0,1,A
+2018-11-18,Farense,Mafra,1,0,H
+2018-11-18,Academico Viseu,Estoril,1,2,A
+2018-11-18,Oliveirense,Famalicao,1,2,A
+2018-11-30,Benfica B,Estoril,1,0,H
+2018-12-01,Mafra,FC Porto B,2,1,H
+2018-12-01,Guimaraes B,Oliveirense,1,1,D
+2018-12-01,Varzim,Academico Viseu,0,0,D
+2018-12-01,Academica,Arouca,2,0,H
+2018-12-01,Cova De Piedade,Famalicao,0,0,D
+2018-12-02,Pacos Ferreira,Penafiel,2,0,H
+2018-12-02,SC Covilha,Farense,1,1,D
+2018-12-02,Leixoes,SC Braga B,2,1,H
+2018-12-06,Farense,Benfica B,0,1,A
+2018-12-08,Estoril,SC Covilha,1,0,H
+2018-12-08,Academico Viseu,Cova De Piedade,0,0,D
+2018-12-08,Famalicao,Leixoes,1,0,H
+2018-12-08,FC Porto B,Academica,3,0,H
+2018-12-09,Penafiel,Guimaraes B,3,2,H
+2018-12-09,Oliveirense,Pacos Ferreira,1,2,A
+2018-12-09,Arouca,Varzim,0,1,A
+2018-12-09,SC Braga B,Mafra,6,1,H
+2018-12-15,Pacos Ferreira,FC Porto B,0,1,A
+2018-12-15,Varzim,Penafiel,3,4,A
+2018-12-15,Mafra,Leixoes,1,0,H
+2018-12-15,Benfica B,Oliveirense,3,0,H
+2018-12-16,Estoril,Farense,1,0,H
+2018-12-16,Guimaraes B,Academico Viseu,2,0,H
+2018-12-16,SC Covilha,Arouca,2,2,D
+2018-12-16,Cova De Piedade,SC Braga B,2,1,H
+2018-12-17,Academica,Famalicao,0,1,A
+2018-12-21,Oliveirense,Estoril,0,1,A
+2018-12-22,Famalicao,Benfica B,0,0,D
+2018-12-22,FC Porto B,SC Covilha,3,0,H
+2018-12-22,Arouca,Guimaraes B,2,2,D
+2018-12-22,SC Braga B,Varzim,0,1,A
+2018-12-23,Penafiel,Farense,2,3,A
+2018-12-23,Academico Viseu,Pacos Ferreira,0,4,A
+2018-12-23,Leixoes,Cova De Piedade,1,2,A
+2018-12-23,Mafra,Academica,2,3,A
+2018-12-29,Cova De Piedade,Mafra,0,3,A
+2018-12-30,Academica,Leixoes,2,1,H
+2018-12-30,Farense,Oliveirense,5,0,H
+2019-01-02,Estoril,Penafiel,0,1,A
+2019-01-02,Guimaraes B,Famalicao,0,1,A
+2019-01-02,SC Covilha,SC Braga B,1,0,H
+2019-01-02,Pacos Ferreira,Arouca,1,0,H
+2019-01-04,Academica,Cova De Piedade,3,0,H
+2019-01-05,FC Porto B,Benfica B,2,2,D
+2019-01-06,Famalicao,Varzim,0,0,D
+2019-01-06,SC Braga B,Guimaraes B,2,3,A
+2019-01-06,Arouca,Farense,3,3,D
+2019-01-06,Leixoes,SC Covilha,1,0,H
+2019-01-06,Mafra,Pacos Ferreira,1,1,D
+2019-01-06,Oliveirense,Penafiel,2,1,H
+2019-01-09,Pacos Ferreira,Leixoes,1,0,H
+2019-01-09,Penafiel,Academico Viseu,2,0,H
+2019-01-09,SC Braga B,FC Porto B,0,1,A
+2019-01-09,Estoril,Arouca,1,1,D
+2019-01-09,Guimaraes B,Benfica B,2,1,H
+2019-01-09,Varzim,Cova De Piedade,2,1,H
+2019-01-12,Leixoes,Penafiel,2,1,H
+2019-01-13,Benfica B,SC Braga B,2,3,A
+2019-01-13,Cova De Piedade,Pacos Ferreira,0,3,A
+2019-01-13,Academico Viseu,Farense,2,1,H
+2019-01-13,FC Porto B,Guimaraes B,1,0,H
+2019-01-13,Mafra,SC Covilha,1,2,A
+2019-01-13,Academica,Varzim,2,0,H
+2019-01-13,Arouca,Oliveirense,0,0,D
+2019-01-14,Famalicao,Estoril,2,0,H
+2019-01-16,Benfica B,Academico Viseu,4,0,H
+2019-01-19,Famalicao,Farense,0,0,D
+2019-01-19,Cova De Piedade,Guimaraes B,1,0,H
+2019-01-19,SC Braga B,Pacos Ferreira,3,1,H
+2019-01-19,FC Porto B,Estoril,2,0,H
+2019-01-20,Leixoes,Benfica B,2,1,H
+2019-01-20,Academico Viseu,SC Covilha,1,1,D
+2019-01-20,Arouca,Penafiel,2,0,H
+2019-01-20,Mafra,Varzim,2,0,H
+2019-01-20,Academica,Oliveirense,1,0,H
+2019-01-28,Guimaraes B,Mafra,1,2,A
+2019-01-28,Pacos Ferreira,Academica,2,0,H
+2019-01-28,Penafiel,Famalicao,1,2,A
+2019-01-28,Oliveirense,Academico Viseu,5,3,H
+2019-01-29,Farense,FC Porto B,0,0,D
+2019-01-29,Estoril,SC Braga B,2,1,H
+2019-01-29,Varzim,Leixoes,2,1,H
+2019-01-30,Benfica B,Arouca,3,1,H
+2019-02-02,Mafra,Benfica B,1,1,D
+2019-02-02,SC Covilha,Varzim,1,0,H
+2019-02-02,Academica,Guimaraes B,1,1,D
+2019-02-03,Leixoes,Estoril,2,0,H
+2019-02-03,Arouca,Academico Viseu,2,0,H
+2019-02-03,Cova De Piedade,Oliveirense,0,1,A
+2019-02-03,FC Porto B,Penafiel,2,0,H
+2019-02-03,SC Braga B,Farense,1,0,H
+2019-02-05,Famalicao,Pacos Ferreira,0,1,A
+2019-02-06,SC Covilha,Cova De Piedade,3,0,H
+2019-02-09,Academico Viseu,FC Porto B,3,3,D
+2019-02-09,Farense,Leixoes,1,1,D
+2019-02-09,Benfica B,Academica,0,1,A
+2019-02-09,Penafiel,SC Braga B,3,0,H
+2019-02-10,Estoril,Cova De Piedade,2,0,H
+2019-02-10,Oliveirense,Mafra,3,2,H
+2019-02-10,Pacos Ferreira,Varzim,1,0,H
+2019-02-10,Arouca,Famalicao,2,1,H
+2019-02-11,Guimaraes B,SC Covilha,2,2,D
+2019-02-16,Varzim,Benfica B,0,1,A
+2019-02-16,Cova De Piedade,Penafiel,1,1,D
+2019-02-16,Famalicao,Academico Viseu,3,2,H
+2019-02-17,SC Covilha,Pacos Ferreira,3,0,H
+2019-02-17,Academica,Farense,1,0,H
+2019-02-17,FC Porto B,Oliveirense,1,1,D
+2019-02-17,Mafra,Estoril,1,1,D
+2019-02-17,SC Braga B,Arouca,0,2,A
+2019-02-17,Leixoes,Guimaraes B,2,1,H
+2019-02-23,Famalicao,Mafra,2,1,H
+2019-02-23,Oliveirense,Leixoes,3,2,H
+2019-02-23,Penafiel,SC Covilha,0,0,D
+2019-02-24,Benfica B,Cova De Piedade,1,2,A
+2019-02-24,Farense,Pacos Ferreira,1,2,A
+2019-02-24,Academico Viseu,SC Braga B,4,0,H
+2019-02-24,Arouca,FC Porto B,1,0,H
+2019-02-24,Guimaraes B,Varzim,0,0,D
+2019-02-24,Estoril,Academica,1,0,H
+2019-03-02,Pacos Ferreira,Guimaraes B,4,1,H
+2019-03-02,Mafra,Arouca,1,1,D
+2019-03-02,SC Braga B,Oliveirense,1,0,H
+2019-03-02,Academica,Penafiel,2,1,H
+2019-03-03,SC Covilha,Benfica B,2,0,H
+2019-03-03,Cova De Piedade,Farense,1,0,H
+2019-03-03,FC Porto B,Famalicao,1,1,D
+2019-03-03,Leixoes,Academico Viseu,0,2,A
+2019-03-03,Varzim,Estoril,0,0,D
+2019-03-09,Famalicao,SC Braga B,1,2,A
+2019-03-09,Benfica B,Pacos Ferreira,0,1,A
+2019-03-09,FC Porto B,Leixoes,1,0,H
+2019-03-10,Estoril,Guimaraes B,1,0,H
+2019-03-10,Farense,Varzim,3,0,H
+2019-03-10,Oliveirense,SC Covilha,1,2,A
+2019-03-10,Academico Viseu,Academica,1,2,A
+2019-03-10,Penafiel,Mafra,3,2,H
+2019-03-10,Arouca,Cova De Piedade,0,1,A
+2019-03-16,Academica,SC Braga B,1,0,H
+2019-03-16,Benfica B,Penafiel,2,1,H
+2019-03-16,Leixoes,Arouca,1,0,H
+2019-03-16,Mafra,Academico Viseu,2,2,D
+2019-03-17,Pacos Ferreira,Estoril,1,1,D
+2019-03-17,SC Covilha,Famalicao,2,0,H
+2019-03-17,Varzim,Oliveirense,1,1,D
+2019-03-17,Cova De Piedade,FC Porto B,1,1,D
+2019-03-17,Guimaraes B,Farense,1,0,H
+2019-03-30,Penafiel,Pacos Ferreira,1,1,D
+2019-03-30,FC Porto B,Mafra,3,0,H
+2019-03-31,Estoril,Benfica B,1,3,A
+2019-03-31,Farense,SC Covilha,1,0,H
+2019-03-31,Academico Viseu,Varzim,1,0,H
+2019-03-31,SC Braga B,Leixoes,1,1,D
+2019-03-31,Oliveirense,Guimaraes B,0,0,D
+2019-03-31,Arouca,Academica,2,1,H
+2019-03-31,Famalicao,Cova De Piedade,3,1,H
+2019-04-05,Benfica B,Farense,3,1,H
+2019-04-06,Academica,FC Porto B,4,1,H
+2019-04-06,Cova De Piedade,Academico Viseu,2,1,H
+2019-04-06,Mafra,SC Braga B,1,1,D
+2019-04-06,Varzim,Arouca,1,0,H
+2019-04-07,Leixoes,Famalicao,2,3,A
+2019-04-07,Pacos Ferreira,Oliveirense,0,1,A
+2019-04-07,SC Covilha,Estoril,1,2,A
+2019-04-08,Guimaraes B,Penafiel,4,5,A
+2019-04-12,SC Braga B,Cova De Piedade,0,1,A
+2019-04-12,Oliveirense,Benfica B,1,2,A
+2019-04-13,Famalicao,Academica,2,0,H
+2019-04-13,FC Porto B,Pacos Ferreira,1,1,D
+2019-04-13,Academico Viseu,Guimaraes B,5,2,H
+2019-04-14,Farense,Estoril,3,1,H
+2019-04-14,Arouca,SC Covilha,1,1,D
+2019-04-14,Leixoes,Mafra,1,0,H
+2019-04-14,Penafiel,Varzim,2,0,H
+2019-04-19,SC Covilha,FC Porto B,2,1,H
+2019-04-19,Estoril,Oliveirense,3,1,H
+2019-04-19,Cova De Piedade,Leixoes,1,1,D
+2019-04-19,Farense,Penafiel,1,1,D
+2019-04-19,Varzim,SC Braga B,1,0,H
+2019-04-20,Pacos Ferreira,Academico Viseu,2,1,H
+2019-04-20,Benfica B,Famalicao,1,3,A
+2019-04-20,Guimaraes B,Arouca,2,2,D
+2019-04-20,Academica,Mafra,0,0,D
+2019-04-23,FC Porto B,Varzim,0,1,A
+2019-04-26,Oliveirense,Farense,2,1,H
+2019-04-27,Leixoes,Academica,1,1,D
+2019-04-27,Mafra,Cova De Piedade,1,0,H
+2019-04-27,SC Braga B,SC Covilha,1,2,A
+2019-04-28,Famalicao,Guimaraes B,4,1,H
+2019-04-28,Academico Viseu,Benfica B,3,1,H
+2019-04-28,Penafiel,Estoril,4,2,H
+2019-04-28,Arouca,Pacos Ferreira,1,3,A
+2019-05-04,Varzim,Famalicao,1,4,A
+2019-05-04,Cova De Piedade,Academica,2,0,H
+2019-05-04,Penafiel,Oliveirense,2,4,A
+2019-05-05,Benfica B,FC Porto B,1,1,D
+2019-05-05,Pacos Ferreira,Mafra,2,0,H
+2019-05-05,Estoril,Academico Viseu,1,3,A
+2019-05-05,Farense,Arouca,2,2,D
+2019-05-05,SC Covilha,Leixoes,1,1,D
+2019-05-06,Guimaraes B,SC Braga B,2,2,D
+2019-05-11,Leixoes,Pacos Ferreira,1,1,D
+2019-05-11,Benfica B,Guimaraes B,2,2,D
+2019-05-11,Academico Viseu,Penafiel,2,1,H
+2019-05-11,Arouca,Estoril,2,1,H
+2019-05-12,Famalicao,Oliveirense,3,2,H
+2019-05-12,FC Porto B,SC Braga B,0,1,A
+2019-05-12,Academica,SC Covilha,0,2,A
+2019-05-12,Cova De Piedade,Varzim,0,0,D
+2019-05-12,Mafra,Farense,0,1,A
+2019-05-18,Guimaraes B,FC Porto B,2,2,D
+2019-05-18,SC Braga B,Benfica B,5,1,H
+2019-05-19,Estoril,Famalicao,2,1,H
+2019-05-19,Farense,Academico Viseu,1,0,H
+2019-05-19,Oliveirense,Arouca,2,1,H
+2019-05-19,Pacos Ferreira,Cova De Piedade,2,0,H
+2019-05-19,SC Covilha,Mafra,1,1,D
+2019-05-19,Varzim,Academica,1,0,H
+2019-05-19,Penafiel,Leixoes,0,1,A

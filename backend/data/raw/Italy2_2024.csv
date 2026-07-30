@@ -1,0 +1,391 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2024-08-16,Brescia,Palermo,1,0,H
+2024-08-17,Bari,Juve Stabia,1,3,A
+2024-08-17,Salernitana,Cittadella,2,1,H
+2024-08-17,Pisa,Spezia,2,2,D
+2024-08-17,Sudtirol,Modena,2,1,H
+2024-08-18,Cesena,Carrarese,2,1,H
+2024-08-18,Frosinone,Sampdoria,2,2,D
+2024-08-18,Reggiana,Mantova,2,2,D
+2024-08-18,Catanzaro,Sassuolo,1,1,D
+2024-08-18,Cosenza,Cremonese,1,0,H
+2024-08-23,Modena,Bari,2,1,H
+2024-08-24,Sudtirol,Salernitana,3,2,H
+2024-08-24,Sassuolo,Cesena,2,1,H
+2024-08-24,Sampdoria,Reggiana,0,1,A
+2024-08-24,Spezia,Frosinone,2,1,H
+2024-08-24,Brescia,Cittadella,0,1,A
+2024-08-24,Cremonese,Carrarese,1,0,H
+2024-08-24,Pisa,Palermo,2,0,H
+2024-08-25,Catanzaro,Juve Stabia,0,0,D
+2024-08-25,Mantova,Cosenza,3,2,H
+2024-08-27,Bari,Sassuolo,1,1,D
+2024-08-27,Cittadella,Pisa,1,1,D
+2024-08-27,Frosinone,Modena,1,1,D
+2024-08-27,Salernitana,Sampdoria,3,2,H
+2024-08-27,Cremonese,Palermo,0,1,A
+2024-08-27,Reggiana,Brescia,2,0,H
+2024-08-27,Carrarese,Sudtirol,2,0,H
+2024-08-28,Cesena,Catanzaro,2,0,H
+2024-08-28,Juve Stabia,Mantova,1,0,H
+2024-08-28,Cosenza,Spezia,0,0,D
+2024-08-31,Sampdoria,Bari,0,0,D
+2024-08-31,Sassuolo,Cremonese,1,4,A
+2024-08-31,Pisa,Reggiana,2,1,H
+2024-08-31,Modena,Cittadella,0,1,A
+2024-08-31,Sudtirol,Brescia,1,2,A
+2024-09-01,Frosinone,Juve Stabia,0,0,D
+2024-09-01,Spezia,Cesena,2,1,H
+2024-09-01,Palermo,Cosenza,1,1,D
+2024-09-01,Catanzaro,Carrarese,3,1,H
+2024-09-01,Mantova,Salernitana,1,0,H
+2024-09-13,Cesena,Modena,2,2,D
+2024-09-14,Bari,Mantova,2,0,H
+2024-09-14,Cittadella,Catanzaro,0,0,D
+2024-09-14,Brescia,Frosinone,4,0,H
+2024-09-14,Cremonese,Spezia,1,1,D
+2024-09-14,Juve Stabia,Palermo,1,3,A
+2024-09-15,Salernitana,Pisa,2,3,A
+2024-09-15,Reggiana,Sudtirol,1,3,A
+2024-09-15,Carrarese,Sassuolo,0,2,A
+2024-09-15,Cosenza,Sampdoria,2,1,H
+2024-09-20,Catanzaro,Cremonese,1,2,A
+2024-09-21,Sampdoria,Sudtirol,1,0,H
+2024-09-21,Palermo,Cesena,0,0,D
+2024-09-21,Pisa,Brescia,2,1,H
+2024-09-21,Reggiana,Salernitana,0,0,D
+2024-09-21,Cosenza,Sassuolo,0,1,A
+2024-09-21,Modena,Juve Stabia,3,0,H
+2024-09-22,Frosinone,Bari,0,3,A
+2024-09-22,Spezia,Carrarese,4,2,H
+2024-09-22,Mantova,Cittadella,1,0,H
+2024-09-27,Cittadella,Frosinone,1,2,A
+2024-09-28,Sassuolo,Spezia,0,0,D
+2024-09-28,Bari,Cosenza,1,1,D
+2024-09-28,Carrarese,Reggiana,0,0,D
+2024-09-29,Cesena,Mantova,4,2,H
+2024-09-29,Salernitana,Catanzaro,0,0,D
+2024-09-29,Juve Stabia,Pisa,2,0,H
+2024-09-29,Modena,Sampdoria,1,3,A
+2024-09-30,Sudtirol,Palermo,1,3,A
+2024-09-30,Brescia,Cremonese,3,2,H
+2024-10-04,Sampdoria,Juve Stabia,1,2,A
+2024-10-05,Sassuolo,Cittadella,6,1,H
+2024-10-05,Frosinone,Carrarese,0,1,A
+2024-10-05,Spezia,Reggiana,1,0,H
+2024-10-05,Pisa,Cesena,3,1,H
+2024-10-06,Cremonese,Bari,1,1,D
+2024-10-06,Palermo,Salernitana,0,1,A
+2024-10-06,Catanzaro,Modena,2,2,D
+2024-10-06,Mantova,Brescia,1,1,D
+2024-10-06,Cosenza,Sudtirol,0,2,A
+2024-10-18,Bari,Catanzaro,1,1,D
+2024-10-19,Cittadella,Cosenza,0,0,D
+2024-10-19,Salernitana,Spezia,0,2,A
+2024-10-19,Modena,Palermo,2,2,D
+2024-10-19,Sudtirol,Pisa,1,2,A
+2024-10-19,Brescia,Sassuolo,2,5,A
+2024-10-20,Juve Stabia,Cremonese,1,2,A
+2024-10-20,Reggiana,Frosinone,2,0,H
+2024-10-20,Carrarese,Mantova,1,1,D
+2024-10-20,Cesena,Sampdoria,3,5,A
+2024-10-25,Spezia,Bari,0,0,D
+2024-10-26,Cesena,Brescia,2,0,H
+2024-10-26,Cremonese,Salernitana,2,1,H
+2024-10-26,Palermo,Reggiana,2,0,H
+2024-10-26,Cosenza,Juve Stabia,1,1,D
+2024-10-26,Sassuolo,Modena,2,0,H
+2024-10-26,Carrarese,Cittadella,3,0,H
+2024-10-27,Sampdoria,Mantova,1,0,H
+2024-10-27,Frosinone,Pisa,0,0,D
+2024-10-27,Catanzaro,Sudtirol,3,0,H
+2024-10-29,Bari,Carrarese,0,0,D
+2024-10-29,Salernitana,Cesena,1,1,D
+2024-10-29,Brescia,Spezia,1,1,D
+2024-10-29,Juve Stabia,Sassuolo,2,2,D
+2024-10-29,Reggiana,Cosenza,0,1,A
+2024-10-29,Modena,Cremonese,2,2,D
+2024-10-30,Sudtirol,Frosinone,1,1,D
+2024-10-30,Cittadella,Sampdoria,0,0,D
+2024-10-30,Pisa,Catanzaro,0,0,D
+2024-10-30,Mantova,Palermo,0,0,D
+2024-11-02,Bari,Reggiana,2,2,D
+2024-11-02,Spezia,Modena,1,0,H
+2024-11-02,Carrarese,Juve Stabia,0,0,D
+2024-11-03,Cesena,Sudtirol,1,0,H
+2024-11-03,Cremonese,Pisa,1,3,A
+2024-11-03,Palermo,Cittadella,0,1,A
+2024-11-03,Catanzaro,Frosinone,0,0,D
+2024-11-03,Cosenza,Salernitana,1,1,D
+2024-11-03,Sassuolo,Mantova,1,0,H
+2024-11-03,Sampdoria,Brescia,0,1,A
+2024-11-08,Frosinone,Palermo,1,1,D
+2024-11-09,Brescia,Cosenza,2,3,A
+2024-11-09,Pisa,Sampdoria,3,0,H
+2024-11-09,Modena,Carrarese,2,0,H
+2024-11-09,Sudtirol,Sassuolo,0,1,A
+2024-11-09,Mantova,Cremonese,1,0,H
+2024-11-10,Cittadella,Cesena,0,2,A
+2024-11-10,Juve Stabia,Spezia,0,3,A
+2024-11-10,Reggiana,Catanzaro,2,2,D
+2024-11-10,Salernitana,Bari,0,2,A
+2024-11-22,Cosenza,Modena,1,1,D
+2024-11-23,Sassuolo,Salernitana,4,0,H
+2024-11-23,Juve Stabia,Brescia,0,0,D
+2024-11-23,Carrarese,Pisa,1,0,H
+2024-11-23,Catanzaro,Mantova,2,2,D
+2024-11-23,Cesena,Reggiana,1,1,D
+2024-11-24,Bari,Cittadella,3,2,H
+2024-11-24,Spezia,Sudtirol,3,0,H
+2024-11-24,Cremonese,Frosinone,1,0,H
+2024-11-24,Palermo,Sampdoria,1,1,D
+2024-11-29,Reggiana,Sassuolo,0,2,A
+2024-11-30,Sampdoria,Catanzaro,3,3,D
+2024-11-30,Cittadella,Juve Stabia,2,2,D
+2024-11-30,Brescia,Bari,1,1,D
+2024-11-30,Sudtirol,Cremonese,0,4,A
+2024-11-30,Mantova,Modena,0,0,D
+2024-12-01,Frosinone,Cesena,3,2,H
+2024-12-01,Palermo,Spezia,2,0,H
+2024-12-01,Pisa,Cosenza,2,2,D
+2024-12-01,Salernitana,Carrarese,4,1,H
+2024-12-06,Juve Stabia,Sudtirol,2,1,H
+2024-12-07,Bari,Cesena,1,0,H
+2024-12-07,Modena,Salernitana,1,1,D
+2024-12-07,Carrarese,Palermo,1,0,H
+2024-12-07,Mantova,Pisa,2,3,A
+2024-12-07,Cosenza,Frosinone,0,1,A
+2024-12-08,Spezia,Cittadella,5,0,H
+2024-12-08,Cremonese,Reggiana,0,2,A
+2024-12-08,Catanzaro,Brescia,2,1,H
+2024-12-08,Sassuolo,Sampdoria,5,1,H
+2024-12-13,Pisa,Bari,2,0,H
+2024-12-14,Cesena,Cosenza,2,1,H
+2024-12-14,Frosinone,Sassuolo,1,2,A
+2024-12-14,Reggiana,Modena,0,1,A
+2024-12-14,Sudtirol,Mantova,2,2,D
+2024-12-14,Sampdoria,Spezia,0,0,D
+2024-12-15,Cittadella,Cremonese,0,0,D
+2024-12-15,Brescia,Carrarese,0,0,D
+2024-12-15,Palermo,Catanzaro,1,2,A
+2024-12-15,Salernitana,Juve Stabia,1,2,A
+2024-12-20,Salernitana,Brescia,0,0,D
+2024-12-21,Sassuolo,Palermo,2,1,H
+2024-12-21,Bari,Sudtirol,0,1,A
+2024-12-21,Carrarese,Cosenza,1,0,H
+2024-12-21,Mantova,Frosinone,3,1,H
+2024-12-21,Cittadella,Reggiana,3,1,H
+2024-12-21,Modena,Pisa,1,0,H
+2024-12-21,Catanzaro,Spezia,0,1,A
+2024-12-22,Juve Stabia,Cesena,1,0,H
+2024-12-22,Cremonese,Sampdoria,1,1,D
+2024-12-26,Pisa,Sassuolo,3,1,H
+2024-12-26,Cesena,Cremonese,0,1,A
+2024-12-26,Frosinone,Salernitana,2,0,H
+2024-12-26,Spezia,Mantova,1,1,D
+2024-12-26,Brescia,Modena,3,3,D
+2024-12-26,Reggiana,Juve Stabia,2,1,H
+2024-12-26,Sudtirol,Cittadella,1,2,A
+2024-12-26,Cosenza,Catanzaro,1,1,D
+2024-12-26,Palermo,Bari,1,0,H
+2024-12-26,Sampdoria,Carrarese,1,1,D
+2024-12-29,Cremonese,Brescia,1,1,D
+2024-12-29,Sassuolo,Cosenza,2,1,H
+2024-12-29,Bari,Spezia,2,0,H
+2024-12-29,Modena,Sudtirol,0,0,D
+2024-12-29,Carrarese,Cesena,2,0,H
+2024-12-29,Mantova,Reggiana,0,2,A
+2024-12-29,Cittadella,Palermo,2,1,H
+2024-12-29,Juve Stabia,Frosinone,1,1,D
+2024-12-29,Catanzaro,Salernitana,1,0,H
+2024-12-29,Sampdoria,Pisa,0,1,A
+2025-01-12,Salernitana,Sassuolo,1,2,A
+2025-01-12,Frosinone,Cremonese,0,3,A
+2025-01-12,Spezia,Juve Stabia,1,1,D
+2025-01-12,Palermo,Modena,2,0,H
+2025-01-12,Reggiana,Bari,0,0,D
+2025-01-12,Sudtirol,Catanzaro,1,1,D
+2025-01-12,Cosenza,Mantova,2,2,D
+2025-01-12,Cesena,Cittadella,0,0,D
+2025-01-12,Brescia,Sampdoria,1,1,D
+2025-01-13,Pisa,Carrarese,2,1,H
+2025-01-17,Sampdoria,Cesena,1,2,A
+2025-01-18,Cittadella,Mantova,1,2,A
+2025-01-18,Salernitana,Reggiana,2,1,H
+2025-01-18,Cremonese,Cosenza,3,1,H
+2025-01-18,Modena,Frosinone,1,1,D
+2025-01-18,Bari,Brescia,2,2,D
+2025-01-19,Sassuolo,Sudtirol,5,3,H
+2025-01-19,Palermo,Juve Stabia,1,0,H
+2025-01-19,Catanzaro,Pisa,0,0,D
+2025-01-19,Carrarese,Spezia,0,4,A
+2025-01-24,Spezia,Sassuolo,2,1,H
+2025-01-25,Cesena,Bari,1,1,D
+2025-01-25,Frosinone,Sudtirol,0,3,A
+2025-01-25,Juve Stabia,Carrarese,2,1,H
+2025-01-25,Cosenza,Cittadella,0,1,A
+2025-01-25,Mantova,Sampdoria,2,2,D
+2025-01-26,Brescia,Catanzaro,2,3,A
+2025-01-26,Pisa,Salernitana,1,0,H
+2025-01-26,Reggiana,Palermo,2,1,H
+2025-01-26,Cremonese,Modena,2,2,D
+2025-01-31,Palermo,Pisa,1,2,A
+2025-02-01,Sassuolo,Juve Stabia,2,0,H
+2025-02-01,Sampdoria,Cosenza,1,0,H
+2025-02-01,Cittadella,Spezia,0,2,A
+2025-02-01,Catanzaro,Cesena,4,2,H
+2025-02-01,Modena,Mantova,3,1,H
+2025-02-02,Salernitana,Cremonese,1,0,H
+2025-02-02,Sudtirol,Reggiana,2,0,H
+2025-02-02,Carrarese,Brescia,1,2,A
+2025-02-02,Bari,Frosinone,2,1,H
+2025-02-07,Brescia,Salernitana,0,0,D
+2025-02-08,Frosinone,Catanzaro,1,1,D
+2025-02-08,Pisa,Cittadella,0,1,A
+2025-02-08,Mantova,Sassuolo,0,3,A
+2025-02-08,Cosenza,Carrarese,1,0,H
+2025-02-08,Sampdoria,Modena,1,0,H
+2025-02-09,Spezia,Palermo,2,2,D
+2025-02-09,Cremonese,Sudtirol,3,1,H
+2025-02-09,Reggiana,Cesena,0,1,A
+2025-02-09,Juve Stabia,Bari,3,1,H
+2025-02-14,Catanzaro,Cittadella,1,0,H
+2025-02-15,Sassuolo,Brescia,2,0,H
+2025-02-15,Modena,Spezia,1,1,D
+2025-02-15,Sudtirol,Sampdoria,2,1,H
+2025-02-15,Carrarese,Salernitana,3,2,H
+2025-02-15,Bari,Cremonese,1,1,D
+2025-02-16,Frosinone,Reggiana,1,1,D
+2025-02-16,Palermo,Mantova,2,2,D
+2025-02-16,Juve Stabia,Cosenza,3,0,H
+2025-02-16,Cesena,Pisa,1,1,D
+2025-02-21,Sampdoria,Sassuolo,0,0,D
+2025-02-22,Cittadella,Modena,0,2,A
+2025-02-22,Pisa,Juve Stabia,3,1,H
+2025-02-22,Reggiana,Carrarese,2,2,D
+2025-02-22,Mantova,Bari,0,1,A
+2025-02-22,Cremonese,Cesena,1,2,A
+2025-02-23,Spezia,Catanzaro,0,1,A
+2025-02-23,Brescia,Sudtirol,0,0,D
+2025-02-23,Cosenza,Palermo,0,3,A
+2025-02-23,Salernitana,Frosinone,1,1,D
+2025-02-28,Sudtirol,Spezia,1,1,D
+2025-03-01,Cesena,Salernitana,2,0,H
+2025-03-01,Frosinone,Mantova,2,1,H
+2025-03-01,Juve Stabia,Cittadella,0,1,A
+2025-03-01,Carrarese,Cremonese,2,2,D
+2025-03-01,Sassuolo,Pisa,1,0,H
+2025-03-02,Palermo,Brescia,1,0,H
+2025-03-02,Modena,Cosenza,1,1,D
+2025-03-02,Catanzaro,Reggiana,1,1,D
+2025-03-02,Bari,Sampdoria,1,1,D
+2025-03-07,Cosenza,Reggiana,1,0,H
+2025-03-08,Salernitana,Modena,1,0,H
+2025-03-08,Cremonese,Catanzaro,4,0,H
+2025-03-08,Carrarese,Frosinone,0,1,A
+2025-03-08,Mantova,Juve Stabia,1,1,D
+2025-03-08,Sampdoria,Palermo,1,1,D
+2025-03-08,Brescia,Cesena,1,1,D
+2025-03-09,Sassuolo,Bari,1,1,D
+2025-03-09,Spezia,Pisa,3,2,H
+2025-03-09,Cittadella,Sudtirol,1,5,A
+2025-03-14,Palermo,Cremonese,2,3,A
+2025-03-15,Cesena,Spezia,0,0,D
+2025-03-15,Cittadella,Sassuolo,1,2,A
+2025-03-15,Frosinone,Brescia,2,1,H
+2025-03-15,Juve Stabia,Modena,2,1,H
+2025-03-15,Bari,Salernitana,0,0,D
+2025-03-16,Pisa,Mantova,3,1,H
+2025-03-16,Reggiana,Sampdoria,2,2,D
+2025-03-16,Sudtirol,Carrarese,2,2,D
+2025-03-16,Catanzaro,Cosenza,4,0,H
+2025-03-28,Spezia,Brescia,0,1,A
+2025-03-29,Sampdoria,Frosinone,0,3,A
+2025-03-29,Modena,Catanzaro,2,1,H
+2025-03-29,Mantova,Sudtirol,2,0,H
+2025-03-29,Cosenza,Pisa,0,3,A
+2025-03-29,Cremonese,Cittadella,2,2,D
+2025-03-29,Sassuolo,Reggiana,5,1,H
+2025-03-30,Cesena,Juve Stabia,1,2,A
+2025-03-30,Carrarese,Bari,2,1,H
+2025-03-30,Salernitana,Palermo,1,2,A
+2025-04-04,Reggiana,Cremonese,1,2,A
+2025-04-05,Cittadella,Carrarese,0,0,D
+2025-04-05,Frosinone,Cosenza,2,2,D
+2025-04-05,Brescia,Mantova,1,2,A
+2025-04-05,Sudtirol,Cesena,1,1,D
+2025-04-05,Pisa,Modena,1,2,A
+2025-04-05,Juve Stabia,Salernitana,1,0,H
+2025-04-06,Palermo,Sassuolo,5,3,H
+2025-04-06,Catanzaro,Bari,3,3,D
+2025-04-06,Spezia,Sampdoria,2,0,H
+2025-04-11,Bari,Palermo,2,1,H
+2025-04-12,Salernitana,Sudtirol,2,1,H
+2025-04-12,Reggiana,Pisa,0,2,A
+2025-04-12,Carrarese,Catanzaro,2,2,D
+2025-04-12,Cosenza,Brescia,1,1,D
+2025-04-12,Sampdoria,Cittadella,1,0,H
+2025-04-12,Modena,Sassuolo,1,3,A
+2025-04-13,Cesena,Frosinone,1,1,D
+2025-04-13,Cremonese,Juve Stabia,1,1,D
+2025-04-13,Mantova,Spezia,2,2,D
+2025-04-25,Frosinone,Spezia,2,2,D
+2025-04-25,Bari,Modena,1,2,A
+2025-04-25,Salernitana,Cosenza,3,1,H
+2025-04-25,Brescia,Pisa,1,2,A
+2025-04-25,Reggiana,Cittadella,2,1,H
+2025-04-25,Carrarese,Sampdoria,1,0,H
+2025-04-25,Cremonese,Mantova,4,2,H
+2025-04-25,Cesena,Sassuolo,0,2,A
+2025-04-27,Sudtirol,Juve Stabia,2,0,H
+2025-04-27,Catanzaro,Palermo,1,3,A
+2025-05-01,Juve Stabia,Catanzaro,2,0,H
+2025-05-01,Sampdoria,Cremonese,0,0,D
+2025-05-01,Spezia,Salernitana,2,0,H
+2025-05-01,Palermo,Sudtirol,1,2,A
+2025-05-01,Pisa,Frosinone,1,0,H
+2025-05-01,Modena,Reggiana,2,3,A
+2025-05-01,Mantova,Cesena,3,0,H
+2025-05-01,Cosenza,Bari,1,0,H
+2025-05-01,Cittadella,Brescia,0,1,A
+2025-05-01,Sassuolo,Carrarese,2,0,H
+2025-05-04,Bari,Pisa,1,0,H
+2025-05-04,Cesena,Palermo,2,1,H
+2025-05-04,Frosinone,Cittadella,1,1,D
+2025-05-04,Salernitana,Mantova,2,0,H
+2025-05-04,Brescia,Juve Stabia,0,0,D
+2025-05-04,Reggiana,Spezia,2,1,H
+2025-05-04,Sudtirol,Cosenza,2,1,H
+2025-05-04,Carrarese,Modena,2,1,H
+2025-05-04,Catanzaro,Sampdoria,2,2,D
+2025-05-04,Cremonese,Sassuolo,1,1,D
+2025-05-09,Sassuolo,Catanzaro,0,2,A
+2025-05-09,Sampdoria,Salernitana,1,0,H
+2025-05-09,Cittadella,Bari,3,1,H
+2025-05-09,Spezia,Cremonese,2,3,A
+2025-05-09,Palermo,Frosinone,2,0,H
+2025-05-09,Pisa,Sudtirol,3,3,D
+2025-05-09,Juve Stabia,Reggiana,1,2,A
+2025-05-09,Modena,Brescia,2,2,D
+2025-05-09,Mantova,Carrarese,2,1,H
+2025-05-09,Cosenza,Cesena,0,1,A
+2025-05-13,Sassuolo,Frosinone,0,1,A
+2025-05-13,Cittadella,Salernitana,0,2,A
+2025-05-13,Spezia,Cosenza,3,1,H
+2025-05-13,Brescia,Reggiana,2,1,H
+2025-05-13,Palermo,Carrarese,1,1,D
+2025-05-13,Pisa,Cremonese,2,1,H
+2025-05-13,Juve Stabia,Sampdoria,0,0,D
+2025-05-13,Modena,Cesena,0,1,A
+2025-05-13,Sudtirol,Bari,0,0,D
+2025-05-13,Mantova,Catanzaro,0,0,D
+2025-05-17,Catanzaro,Cesena,1,0,H
+2025-05-17,Juve Stabia,Palermo,1,0,H
+2025-05-21,Juve Stabia,Cremonese,2,1,H
+2025-05-21,Catanzaro,Spezia,0,2,A
+2025-05-25,Cremonese,Juve Stabia,3,0,H
+2025-05-25,Spezia,Catanzaro,2,1,H
+2025-05-29,Cremonese,Spezia,0,0,D
+2025-06-01,Spezia,Cremonese,2,3,A
+2025-06-15,Sampdoria,Salernitana,2,0,H
+2025-06-22,Salernitana,Sampdoria,0,3,A

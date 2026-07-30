@@ -1,0 +1,243 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,PSH,PSD,PSA
+04/04/2015,Hammarby,Hacken,2,0,H,2.45,3.57,2.97
+04/04/2015,Kalmar,Helsingborg,0,0,D,2.08,3.52,3.84
+05/04/2015,Falkenbergs,Gefle,0,2,A,2.04,3.53,3.95
+05/04/2015,Goteborg,Atvidabergs,1,0,H,1.37,4.89,10.79
+05/04/2015,Djurgarden,Elfsborg,1,2,A,2.78,3.26,2.79
+05/04/2015,Norrkoping,Orebro,1,1,D,2.4,3.51,3.1
+06/04/2015,AIK,Halmstad,2,1,H,1.56,4.21,6.77
+06/04/2015,Sundsvall,Malmo FF,1,4,A,6.22,4.06,1.63
+08/04/2015,Gefle,Kalmar,2,0,H,3.03,3.28,2.56
+08/04/2015,Helsingborg,Falkenbergs,0,0,D,1.7,3.95,5.39
+08/04/2015,Orebro,Goteborg,0,2,A,3.6,3.43,2.18
+08/04/2015,Elfsborg,Hammarby,1,1,D,1.58,4.14,6.56
+09/04/2015,Atvidabergs,Sundsvall,2,3,A,1.89,3.63,4.52
+09/04/2015,Hacken,Djurgarden,1,1,D,1.99,3.56,4.13
+09/04/2015,Halmstad,Norrkoping,0,3,A,2.51,3.5,2.94
+09/04/2015,Malmo FF,AIK,0,0,D,1.68,4.13,5.37
+12/04/2015,Falkenbergs,Orebro,2,0,H,3.03,3.43,2.45
+12/04/2015,Halmstad,Helsingborg,1,2,A,2.81,3.28,2.71
+12/04/2015,AIK,Gefle,3,1,H,1.43,4.81,8.57
+12/04/2015,Goteborg,Malmo FF,0,1,A,2.44,3.44,3.08
+13/04/2015,Kalmar,Atvidabergs,2,1,H,1.95,3.49,4.44
+13/04/2015,Norrkoping,Elfsborg,0,4,A,3.11,3.5,2.39
+13/04/2015,Sundsvall,Hacken,1,1,D,3.35,3.67,2.2
+13/04/2015,Hammarby,Djurgarden,2,1,H,2.73,3.36,2.79
+17/04/2015,Djurgarden,Kalmar,1,0,H,1.98,3.54,4.2
+18/04/2015,Gefle,Halmstad,0,0,D,2.19,3.39,3.65
+19/04/2015,Atvidabergs,Falkenbergs,3,1,H,2.05,3.47,4.05
+19/04/2015,Hacken,Goteborg,1,2,A,3.7,3.56,2.13
+20/04/2015,Helsingborg,Norrkoping,3,1,H,2.15,3.46,3.69
+20/04/2015,Orebro,Sundsvall,1,3,A,1.59,4.27,6.16
+20/04/2015,Malmo FF,Hammarby,3,1,H,1.43,4.74,8.81
+21/04/2015,Elfsborg,AIK,3,2,H,1.88,3.65,4.57
+24/04/2015,Falkenbergs,Malmo FF,3,3,D,6.86,4.56,1.52
+25/04/2015,Hammarby,Atvidabergs,2,1,H,1.55,4.3,6.87
+26/04/2015,Halmstad,Elfsborg,1,0,H,4.97,4.04,1.74
+26/04/2015,Sundsvall,Djurgarden,0,2,A,3.11,3.48,2.4
+26/04/2015,AIK,Orebro,3,0,H,1.63,4.04,6.13
+26/04/2015,Kalmar,Hacken,0,1,A,2.61,3.38,2.89
+27/04/2015,Norrkoping,Gefle,4,1,H,1.71,3.92,5.42
+27/04/2015,Goteborg,Helsingborg,3,1,H,1.5,4.46,7.41
+29/04/2015,Djurgarden,Falkenbergs,3,1,H,1.42,4.76,8.9
+29/04/2015,Elfsborg,Kalmar,2,1,H,1.53,4.3,7.14
+29/04/2015,Malmo FF,Halmstad,3,1,H,1.23,7.05,15.01
+29/04/2015,Atvidabergs,AIK,1,1,D,4.49,3.74,1.87
+30/04/2015,Hacken,Norrkoping,0,2,A,1.69,4.04,5.34
+30/04/2015,Gefle,Goteborg,0,0,D,4.93,3.76,1.8
+30/04/2015,Helsingborg,Sundsvall,2,0,H,1.66,4.2,5.43
+30/04/2015,Orebro,Hammarby,2,2,D,2.38,3.59,3.06
+03/05/2015,Norrkoping,Atvidabergs,2,1,H,1.71,4.06,5.16
+03/05/2015,Sundsvall,Elfsborg,0,1,A,5.35,4.08,1.68
+03/05/2015,Djurgarden,Gefle,5,1,H,1.5,4.61,7.22
+03/05/2015,Malmo FF,Helsingborg,3,1,H,1.38,5.2,9.07
+04/05/2015,Goteborg,Falkenbergs,2,1,H,1.3,5.88,11.75
+04/05/2015,Halmstad,Hacken,0,2,A,3.31,3.52,2.28
+04/05/2015,Kalmar,Orebro,3,0,H,2.13,3.49,3.7
+04/05/2015,AIK,Hammarby,2,0,H,1.7,4,5.3
+08/05/2015,Kalmar,Goteborg,0,2,A,3.8,3.34,2.16
+09/05/2015,Helsingborg,Gefle,1,2,A,1.65,3.86,6.31
+10/05/2015,Falkenbergs,Halmstad,1,0,H,2.35,3.44,3.24
+10/05/2015,AIK,Norrkoping,2,2,D,1.7,4.07,5.23
+10/05/2015,Hacken,Orebro,2,0,H,1.63,4.24,5.69
+11/05/2015,Atvidabergs,Djurgarden,2,3,A,3.78,3.59,2.06
+11/05/2015,Hammarby,Sundsvall,1,2,A,1.64,4.33,5.48
+11/05/2015,Elfsborg,Malmo FF,2,2,D,2.67,3.5,2.73
+18/05/2015,Halmstad,Djurgarden,2,3,A,3.52,3.63,2.16
+19/05/2015,Falkenbergs,Kalmar,1,3,A,3.03,3.32,2.54
+20/05/2015,Elfsborg,Helsingborg,2,1,H,1.55,4.35,6.72
+20/05/2015,Norrkoping,Hammarby,1,0,H,2,3.7,3.9
+20/05/2015,Orebro,Atvidabergs,2,1,H,1.74,4.02,4.99
+20/05/2015,Gefle,Sundsvall,3,1,H,2.63,3.39,2.87
+21/05/2015,Malmo FF,Hacken,0,3,A,1.44,4.96,7.83
+21/05/2015,Goteborg,AIK,3,0,H,1.83,3.68,4.83
+24/05/2015,Halmstad,Goteborg,1,2,A,6.04,4.19,1.61
+24/05/2015,Orebro,Gefle,1,0,H,1.79,3.88,4.75
+24/05/2015,Atvidabergs,Elfsborg,1,2,A,5.62,4.08,1.66
+24/05/2015,Kalmar,Malmo FF,2,1,H,4.87,3.81,1.79
+25/05/2015,Hacken,Falkenbergs,0,2,A,1.42,4.98,8.38
+25/05/2015,Helsingborg,Hammarby,1,0,H,2.49,3.38,3.06
+25/05/2015,Sundsvall,Norrkoping,0,1,A,2.21,3.66,3.33
+25/05/2015,Djurgarden,AIK,2,2,D,2.32,3.47,3.27
+29/05/2015,Gefle,Hacken,2,0,H,3.6,3.55,2.14
+30/05/2015,Falkenbergs,Sundsvall,1,1,D,2.7,3.49,2.72
+30/05/2015,Hammarby,Halmstad,2,2,D,1.56,4.51,6.25
+30/05/2015,Norrkoping,Kalmar,2,1,H,1.83,3.79,4.66
+31/05/2015,AIK,Helsingborg,3,1,H,1.57,4.28,6.34
+31/05/2015,Elfsborg,Orebro,2,2,D,1.49,4.67,7.27
+31/05/2015,Malmo FF,Atvidabergs,3,0,H,1.21,7.19,16.25
+01/06/2015,Goteborg,Djurgarden,0,0,D,1.69,4.17,5.18
+03/06/2015,AIK,Falkenbergs,4,3,H,1.29,5.92,12.44
+03/06/2015,Atvidabergs,Hacken,1,1,D,3.45,3.56,2.2
+03/06/2015,Halmstad,Sundsvall,1,0,H,2.34,3.51,3.2
+03/06/2015,Orebro,Helsingborg,0,0,D,1.85,3.76,4.59
+03/06/2015,Gefle,Malmo FF,1,2,A,6.21,4.21,1.6
+04/06/2015,Djurgarden,Norrkoping,1,1,D,2.05,3.61,3.87
+04/06/2015,Kalmar,Hammarby,2,2,D,2.55,3.42,2.93
+04/06/2015,Goteborg,Elfsborg,1,0,H,2.14,3.29,3.92
+06/06/2015,Hacken,AIK,0,0,D,2.47,3.61,2.92
+06/06/2015,Helsingborg,Atvidabergs,3,0,H,1.82,3.74,4.81
+06/06/2015,Orebro,Halmstad,1,1,D,1.68,4.09,5.38
+07/06/2015,Hammarby,Goteborg,0,1,A,3.3,3.63,2.24
+07/06/2015,Sundsvall,Kalmar,1,1,D,2.21,3.58,3.4
+07/06/2015,Elfsborg,Gefle,5,1,H,1.3,5.88,11.97
+07/06/2015,Malmo FF,Djurgarden,1,1,D,1.63,4.3,5.59
+07/06/2015,Norrkoping,Falkenbergs,2,0,H,1.5,4.68,6.96
+04/07/2015,Atvidabergs,Halmstad,0,0,D,2.28,3.53,3.29
+04/07/2015,Djurgarden,Orebro,2,0,H,1.52,4.46,7.1
+04/07/2015,Norrkoping,Malmo FF,3,1,H,2.81,3.58,2.53
+05/07/2015,Falkenbergs,Elfsborg,2,2,D,7.5,4.65,1.48
+05/07/2015,Hacken,Helsingborg,3,2,H,1.83,3.83,4.62
+05/07/2015,Kalmar,AIK,0,0,D,2.81,3.54,2.58
+05/07/2015,Sundsvall,Goteborg,2,2,D,4.56,3.72,1.86
+06/07/2015,Gefle,Hammarby,1,1,D,3.15,3.33,2.46
+11/07/2015,Atvidabergs,Gefle,1,1,D,2.38,3.43,3.19
+11/07/2015,Halmstad,Kalmar,1,0,H,2.48,3.44,3.02
+11/07/2015,Malmo FF,Orebro,2,2,D,1.34,5.69,9.61
+12/07/2015,Elfsborg,Hacken,1,0,H,1.68,4.12,5.32
+12/07/2015,AIK,Sundsvall,4,1,H,1.53,4.51,6.58
+12/07/2015,Goteborg,Norrkoping,0,0,D,1.71,3.92,5.38
+13/07/2015,Hammarby,Falkenbergs,3,0,H,1.52,4.61,6.6
+13/07/2015,Helsingborg,Djurgarden,0,1,A,3.17,3.45,2.38
+18/07/2015,Kalmar,Falkenbergs,4,0,H,1.63,4.09,5.93
+18/07/2015,Orebro,Malmo FF,1,1,D,3.21,3.61,2.29
+18/07/2015,Sundsvall,Halmstad,0,0,D,1.99,3.76,3.9
+19/07/2015,Norrkoping,Goteborg,2,2,D,2.83,3.45,2.62
+19/07/2015,Helsingborg,AIK,3,1,H,3.69,3.67,2.08
+20/07/2015,Djurgarden,Atvidabergs,0,0,D,1.27,6.25,13
+20/07/2015,Hacken,Hammarby,3,3,D,2.01,3.63,3.96
+25/07/2015,Atvidabergs,Helsingborg,1,2,A,2.48,3.6,2.91
+25/07/2015,Hacken,Kalmar,3,0,H,1.94,3.72,4.12
+25/07/2015,Malmo FF,Sundsvall,3,0,H,1.31,5.97,10.83
+26/07/2015,Falkenbergs,Goteborg,1,0,H,6.15,4.26,1.59
+26/07/2015,AIK,Elfsborg,4,2,H,2.43,3.52,3.04
+27/07/2015,Halmstad,Gefle,0,1,A,2.02,3.39,4.28
+27/07/2015,Hammarby,Norrkoping,0,1,A,2.33,3.6,3.15
+27/07/2015,Orebro,Djurgarden,0,1,A,3.68,3.45,2.16
+31/07/2015,Helsingborg,Kalmar,1,2,A,2.26,3.48,3.39
+01/08/2015,Atvidabergs,Malmo FF,2,2,D,6.09,4.44,1.57
+01/08/2015,Djurgarden,Hacken,2,1,H,1.68,4.2,5.22
+01/08/2015,Gefle,Falkenbergs,1,0,H,2.09,3.4,3.98
+02/08/2015,Norrkoping,AIK,1,2,A,2.15,3.71,3.44
+02/08/2015,Elfsborg,Halmstad,2,0,H,1.33,5.51,11.25
+02/08/2015,Goteborg,Orebro,6,0,H,1.43,4.67,8.79
+03/08/2015,Sundsvall,Hammarby,3,0,H,2.76,3.52,2.64
+08/08/2015,Falkenbergs,Helsingborg,2,3,A,2.85,3.59,2.52
+08/08/2015,Hacken,Gefle,1,1,D,1.48,4.71,7.27
+09/08/2015,Malmo FF,Goteborg,2,1,H,2.03,3.56,3.97
+09/08/2015,Orebro,Norrkoping,1,3,A,3.6,3.86,2.05
+09/08/2015,Halmstad,Atvidabergs,0,0,D,1.97,3.62,4.14
+09/08/2015,Hammarby,Elfsborg,0,0,D,2.86,3.7,2.47
+10/08/2015,Kalmar,Sundsvall,0,2,A,1.7,3.99,5.38
+10/08/2015,AIK,Djurgarden,1,0,H,2.29,3.52,3.29
+12/08/2015,Gefle,Elfsborg,2,3,A,4.98,3.87,1.77
+15/08/2015,Malmo FF,Gefle,2,0,H,1.24,6.95,13.94
+15/08/2015,Sundsvall,Orebro,1,0,H,2.12,3.65,3.58
+16/08/2015,AIK,Kalmar,2,1,H,1.65,4.14,5.6
+16/08/2015,Goteborg,Hacken,4,0,H,1.77,3.86,5
+16/08/2015,Elfsborg,Djurgarden,2,0,H,1.78,4.03,4.65
+17/08/2015,Falkenbergs,Hammarby,0,1,A,3.51,3.72,2.12
+17/08/2015,Helsingborg,Halmstad,2,0,H,1.84,3.84,4.5
+17/08/2015,Atvidabergs,Norrkoping,1,1,D,5.2,4.15,1.69
+22/08/2015,Hacken,Malmo FF,1,0,H,3.17,3.74,2.26
+23/08/2015,Atvidabergs,Goteborg,0,1,A,7.01,4.41,1.53
+23/08/2015,Gefle,AIK,1,2,A,5.04,3.86,1.76
+23/08/2015,Halmstad,Orebro,2,2,D,2.78,3.29,2.76
+23/08/2015,Kalmar,Elfsborg,0,3,A,3.32,3.42,2.32
+24/08/2015,Norrkoping,Helsingborg,3,2,H,1.55,4.5,6.33
+24/08/2015,Sundsvall,Falkenbergs,0,1,A,1.8,3.88,4.67
+24/08/2015,Djurgarden,Hammarby,2,2,D,2.12,3.58,3.64
+28/08/2015,Hammarby,Kalmar,0,0,D,1.94,3.6,4.31
+29/08/2015,Djurgarden,Halmstad,4,2,H,1.34,5.29,11.03
+29/08/2015,Falkenbergs,Norrkoping,0,1,A,4.73,4.01,1.78
+29/08/2015,Orebro,Hacken,2,0,H,2.76,3.61,2.59
+30/08/2015,AIK,Atvidabergs,1,0,H,1.27,6.25,12.61
+30/08/2015,Goteborg,Gefle,3,0,H,1.24,6.53,14.98
+30/08/2015,Elfsborg,Sundsvall,1,2,A,1.31,5.99,10.57
+30/08/2015,Helsingborg,Malmo FF,0,3,A,4.98,4.16,1.71
+11/09/2015,Kalmar,Norrkoping,1,2,A,3.33,3.37,2.34
+12/09/2015,Falkenbergs,AIK,2,4,A,5.2,4.06,1.7
+12/09/2015,Malmo FF,Elfsborg,1,1,D,1.81,3.92,4.57
+13/09/2015,Hammarby,Orebro,1,2,A,1.76,3.95,4.89
+13/09/2015,Helsingborg,Goteborg,1,2,A,4.16,3.74,1.93
+14/09/2015,Hacken,Halmstad,4,1,H,1.45,4.91,7.5
+14/09/2015,Sundsvall,Atvidabergs,0,1,A,1.93,3.76,4.15
+14/09/2015,Gefle,Djurgarden,2,1,H,4.65,3.72,1.85
+18/09/2015,Halmstad,Falkenbergs,0,1,A,2.36,3.48,3.19
+19/09/2015,AIK,Hacken,2,1,H,1.87,4.03,4.12
+20/09/2015,Atvidabergs,Kalmar,1,1,D,2.66,3.32,2.87
+20/09/2015,Djurgarden,Malmo FF,0,2,A,3,3.61,2.41
+20/09/2015,Gefle,Helsingborg,2,1,H,2.18,3.61,3.46
+20/09/2015,Goteborg,Hammarby,1,0,H,1.52,4.39,7.27
+20/09/2015,Norrkoping,Sundsvall,5,1,H,1.44,5,7.62
+21/09/2015,Orebro,Elfsborg,4,2,H,3.22,3.66,2.26
+23/09/2015,Hammarby,Gefle,3,0,H,1.56,4.47,6.2
+23/09/2015,Kalmar,Halmstad,1,0,H,2.08,3.47,3.91
+23/09/2015,Malmo FF,Falkenbergs,4,3,H,1.19,7.7,18
+23/09/2015,Norrkoping,Djurgarden,4,2,H,1.96,3.75,4.01
+23/09/2015,Sundsvall,AIK,0,2,A,3.17,3.51,2.36
+24/09/2015,Hacken,Atvidabergs,3,0,H,1.44,4.81,8.04
+24/09/2015,Helsingborg,Orebro,0,2,A,2.21,3.77,3.24
+24/09/2015,Elfsborg,Goteborg,1,1,D,2.73,3.41,2.74
+26/09/2015,Halmstad,Malmo FF,0,0,D,7.94,4.96,1.43
+27/09/2015,Falkenbergs,Hacken,1,2,A,3.51,3.7,2.13
+27/09/2015,Hammarby,AIK,1,0,H,2.66,3.5,2.75
+27/09/2015,Gefle,Norrkoping,1,2,A,6.34,4.41,1.56
+28/09/2015,Djurgarden,Helsingborg,2,2,D,1.48,5.02,6.74
+28/09/2015,Elfsborg,Atvidabergs,3,1,H,1.32,5.77,10.74
+28/09/2015,Orebro,Kalmar,2,1,H,1.99,3.57,4.14
+28/09/2015,Goteborg,Sundsvall,3,2,H,1.3,5.93,11.66
+02/10/2015,Atvidabergs,Hammarby,0,3,A,3.33,3.55,2.26
+03/10/2015,Orebro,Falkenbergs,2,1,H,1.68,4.15,5.35
+03/10/2015,Sundsvall,Gefle,2,1,H,1.74,3.98,5.03
+04/10/2015,Goteborg,Halmstad,1,1,D,1.19,7.34,19.87
+04/10/2015,Helsingborg,Elfsborg,2,1,H,3.7,3.91,2
+04/10/2015,Kalmar,Djurgarden,0,3,A,3.18,3.32,2.44
+04/10/2015,AIK,Malmo FF,2,1,H,2.64,3.57,2.73
+04/10/2015,Norrkoping,Hacken,3,1,H,1.52,4.59,6.71
+17/10/2015,Malmo FF,Kalmar,3,0,H,1.4,5.15,8.63
+18/10/2015,Halmstad,AIK,0,1,A,4.81,4.04,1.75
+18/10/2015,Falkenbergs,Atvidabergs,6,0,H,1.97,3.82,3.88
+18/10/2015,Hammarby,Helsingborg,1,4,A,1.6,4.41,5.78
+19/10/2015,Djurgarden,Goteborg,2,2,D,3.23,3.51,2.32
+19/10/2015,Gefle,Orebro,2,2,D,2.92,3.58,2.48
+19/10/2015,Hacken,Sundsvall,3,1,H,1.78,4.08,4.61
+19/10/2015,Elfsborg,Norrkoping,3,2,H,2.41,3.78,2.89
+24/10/2015,Falkenbergs,Djurgarden,0,2,A,3.08,3.8,2.29
+25/10/2015,Hammarby,Malmo FF,0,1,A,3.21,3.64,2.28
+25/10/2015,Sundsvall,Helsingborg,2,1,H,2.21,3.83,3.16
+25/10/2015,Hacken,Elfsborg,5,2,H,2.63,3.8,2.62
+25/10/2015,Norrkoping,Halmstad,3,1,H,1.15,8.95,21.36
+26/10/2015,Atvidabergs,Orebro,2,3,A,3.43,3.91,2.09
+26/10/2015,Kalmar,Gefle,3,1,H,1.57,4.26,6.47
+26/10/2015,AIK,Goteborg,1,2,A,2.44,3.55,2.96
+31/10/2015,Djurgarden,Sundsvall,4,2,H,1.43,5.26,7.44
+31/10/2015,Elfsborg,Falkenbergs,4,2,H,1.23,7.49,13.13
+31/10/2015,Gefle,Atvidabergs,2,1,H,1.79,4.16,4.39
+31/10/2015,Goteborg,Kalmar,2,2,D,1.21,7.48,15.36
+31/10/2015,Halmstad,Hammarby,2,1,H,3.92,3.71,2
+31/10/2015,Helsingborg,Hacken,1,2,A,2.91,3.82,2.38
+31/10/2015,Malmo FF,Norrkoping,0,2,A,2.2,3.87,3.21
+31/10/2015,Orebro,AIK,1,1,D,3.35,3.85,2.14
+05/11/2015,Sirius,Falkenbergs,2,2,D,1.85,3.8,4.54
+08/11/2015,Falkenbergs,Sirius,1,1,D,2.64,3.45,2.81

@@ -1,0 +1,199 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2024-07-26,Zalaegerszegi TE,MTK Budapest,0,1,A
+2024-07-26,Nyiregyhaza,Gyori ETO FC,2,1,H
+2024-07-28,Ujpest,Puskas Academy,1,2,A
+2024-07-28,Diosgyori VTK,Paks,2,2,D
+2024-07-28,Kecskemeti TE,Fehervar FC,0,0,D
+2024-08-02,Gyori ETO FC,Debreceni VSC,0,3,A
+2024-08-03,Fehervar FC,Diosgyori VTK,3,1,H
+2024-08-03,Ferencvarosi TC,Kecskemeti TE,1,0,H
+2024-08-03,MTK Budapest,Nyiregyhaza,3,0,H
+2024-08-04,Paks,Ujpest,2,1,H
+2024-08-04,Puskas Academy,Zalaegerszegi TE,2,1,H
+2024-08-09,Kecskemeti TE,Debreceni VSC,1,1,D
+2024-08-10,Diosgyori VTK,Ferencvarosi TC,0,2,A
+2024-08-10,Zalaegerszegi TE,Paks,3,1,H
+2024-08-11,Gyori ETO FC,MTK Budapest,1,2,A
+2024-08-11,Ujpest,Fehervar FC,4,1,H
+2024-08-11,Puskas Academy,Nyiregyhaza,3,1,H
+2024-08-16,Kecskemeti TE,Gyori ETO FC,2,1,H
+2024-08-17,Debreceni VSC,Diosgyori VTK,0,1,A
+2024-08-17,Ferencvarosi TC,Ujpest,1,0,H
+2024-08-18,Fehervar FC,Zalaegerszegi TE,1,1,D
+2024-08-18,Paks,Nyiregyhaza,2,1,H
+2024-08-18,Puskas Academy,MTK Budapest,1,0,H
+2024-08-23,Ujpest,Debreceni VSC,3,0,H
+2024-08-24,Diosgyori VTK,Kecskemeti TE,1,0,H
+2024-08-25,Nyiregyhaza,Fehervar FC,3,3,D
+2024-08-30,Fehervar FC,MTK Budapest,1,0,H
+2024-08-31,Debreceni VSC,Zalaegerszegi TE,3,1,H
+2024-08-31,Diosgyori VTK,Gyori ETO FC,0,0,D
+2024-09-01,Kecskemeti TE,Ujpest,1,3,A
+2024-09-01,Paks,Puskas Academy,2,1,H
+2024-09-01,Ferencvarosi TC,Nyiregyhaza,2,1,H
+2024-09-20,MTK Budapest,Ferencvarosi TC,1,3,A
+2024-09-21,Zalaegerszegi TE,Kecskemeti TE,2,1,H
+2024-09-21,Ujpest,Diosgyori VTK,0,0,D
+2024-09-21,Nyiregyhaza,Debreceni VSC,3,2,H
+2024-09-22,Puskas Academy,Fehervar FC,3,0,H
+2024-09-22,Gyori ETO FC,Paks,2,1,H
+2024-09-27,Ujpest,Gyori ETO FC,0,0,D
+2024-09-28,Diosgyori VTK,Zalaegerszegi TE,2,1,H
+2024-09-28,Kecskemeti TE,Nyiregyhaza,0,2,A
+2024-09-28,Debreceni VSC,MTK Budapest,2,3,A
+2024-09-29,Fehervar FC,Paks,1,2,A
+2024-09-29,Ferencvarosi TC,Puskas Academy,3,0,H
+2024-10-04,Puskas Academy,Debreceni VSC,1,0,H
+2024-10-05,Gyori ETO FC,Fehervar FC,3,1,H
+2024-10-05,MTK Budapest,Kecskemeti TE,3,1,H
+2024-10-05,Nyiregyhaza,Diosgyori VTK,0,2,A
+2024-10-06,Zalaegerszegi TE,Ujpest,0,2,A
+2024-10-06,Paks,Ferencvarosi TC,3,1,H
+2024-10-19,Debreceni VSC,Paks,0,5,A
+2024-10-19,Diosgyori VTK,MTK Budapest,0,2,A
+2024-10-19,Ujpest,Nyiregyhaza,1,0,H
+2024-10-20,Kecskemeti TE,Puskas Academy,0,3,A
+2024-10-20,Zalaegerszegi TE,Gyori ETO FC,1,2,A
+2024-10-20,Ferencvarosi TC,Fehervar FC,2,0,H
+2024-10-26,Puskas Academy,Diosgyori VTK,1,1,D
+2024-10-26,Fehervar FC,Debreceni VSC,2,0,H
+2024-10-26,MTK Budapest,Ujpest,4,1,H
+2024-10-27,Nyiregyhaza,Zalaegerszegi TE,1,1,D
+2024-10-27,Paks,Kecskemeti TE,1,0,H
+2024-10-27,Gyori ETO FC,Ferencvarosi TC,1,1,D
+2024-11-02,MTK Budapest,Zalaegerszegi TE,1,1,D
+2024-11-02,Puskas Academy,Ujpest,1,1,D
+2024-11-02,Gyori ETO FC,Nyiregyhaza,1,1,D
+2024-11-03,Paks,Diosgyori VTK,3,4,A
+2024-11-03,Ferencvarosi TC,Debreceni VSC,2,2,D
+2024-11-03,Fehervar FC,Kecskemeti TE,6,1,H
+2024-11-08,Nyiregyhaza,MTK Budapest,2,0,H
+2024-11-09,Zalaegerszegi TE,Puskas Academy,4,2,H
+2024-11-09,Debreceni VSC,Gyori ETO FC,2,2,D
+2024-11-09,Ujpest,Paks,0,0,D
+2024-11-10,Diosgyori VTK,Fehervar FC,1,0,H
+2024-11-10,Kecskemeti TE,Ferencvarosi TC,0,1,A
+2024-11-23,Nyiregyhaza,Puskas Academy,0,3,A
+2024-11-23,MTK Budapest,Gyori ETO FC,2,2,D
+2024-11-23,Fehervar FC,Ujpest,0,1,A
+2024-11-24,Paks,Zalaegerszegi TE,2,2,D
+2024-11-24,Ferencvarosi TC,Diosgyori VTK,3,3,D
+2024-11-24,Debreceni VSC,Kecskemeti TE,2,2,D
+2024-11-29,Nyiregyhaza,Paks,4,2,H
+2024-11-30,MTK Budapest,Puskas Academy,0,1,A
+2024-11-30,Gyori ETO FC,Kecskemeti TE,1,2,A
+2024-11-30,Diosgyori VTK,Debreceni VSC,3,1,H
+2024-12-01,Zalaegerszegi TE,Fehervar FC,0,1,A
+2024-12-01,Ujpest,Ferencvarosi TC,0,0,D
+2024-12-03,MTK Budapest,Paks,3,1,H
+2024-12-04,Gyori ETO FC,Puskas Academy,0,2,A
+2024-12-05,Debreceni VSC,Ferencvarosi TC,5,4,H
+2024-12-07,Kecskemeti TE,Diosgyori VTK,0,0,D
+2024-12-07,Puskas Academy,Gyori ETO FC,0,3,A
+2024-12-07,Paks,MTK Budapest,4,2,H
+2024-12-08,Fehervar FC,Nyiregyhaza,2,0,H
+2024-12-08,Debreceni VSC,Ujpest,1,2,A
+2024-12-08,Ferencvarosi TC,Zalaegerszegi TE,1,0,H
+2024-12-14,MTK Budapest,Fehervar FC,3,2,H
+2024-12-14,Zalaegerszegi TE,Debreceni VSC,2,1,H
+2024-12-14,Gyori ETO FC,Diosgyori VTK,3,4,A
+2024-12-14,Puskas Academy,Paks,3,1,H
+2024-12-15,Ujpest,Kecskemeti TE,1,1,D
+2024-12-15,Nyiregyhaza,Ferencvarosi TC,0,1,A
+2025-02-01,Paks,Gyori ETO FC,1,1,D
+2025-02-01,Fehervar FC,Puskas Academy,1,0,H
+2025-02-01,Diosgyori VTK,Ujpest,1,1,D
+2025-02-02,Debreceni VSC,Nyiregyhaza,3,1,H
+2025-02-02,Kecskemeti TE,Zalaegerszegi TE,1,0,H
+2025-02-02,Ferencvarosi TC,MTK Budapest,0,0,D
+2025-02-05,Zalaegerszegi TE,Ferencvarosi TC,2,2,D
+2025-02-07,MTK Budapest,Debreceni VSC,0,2,A
+2025-02-08,Nyiregyhaza,Kecskemeti TE,0,0,D
+2025-02-08,Paks,Fehervar FC,2,0,H
+2025-02-08,Gyori ETO FC,Ujpest,3,0,H
+2025-02-09,Zalaegerszegi TE,Diosgyori VTK,2,1,H
+2025-02-09,Puskas Academy,Ferencvarosi TC,1,0,H
+2025-02-14,Fehervar FC,Gyori ETO FC,0,1,A
+2025-02-15,Kecskemeti TE,MTK Budapest,5,0,H
+2025-02-15,Diosgyori VTK,Nyiregyhaza,1,2,A
+2025-02-15,Debreceni VSC,Puskas Academy,1,2,A
+2025-02-16,Ujpest,Zalaegerszegi TE,1,2,A
+2025-02-16,Ferencvarosi TC,Paks,0,2,A
+2025-02-21,MTK Budapest,Diosgyori VTK,4,0,H
+2025-02-22,Puskas Academy,Kecskemeti TE,4,2,H
+2025-02-22,Paks,Debreceni VSC,4,3,H
+2025-02-22,Nyiregyhaza,Ujpest,0,0,D
+2025-02-23,Gyori ETO FC,Zalaegerszegi TE,2,0,H
+2025-02-23,Fehervar FC,Ferencvarosi TC,1,3,A
+2025-03-01,Zalaegerszegi TE,Nyiregyhaza,0,0,D
+2025-03-01,Diosgyori VTK,Puskas Academy,2,1,H
+2025-03-01,Ujpest,MTK Budapest,1,5,A
+2025-03-02,Debreceni VSC,Fehervar FC,1,2,A
+2025-03-02,Kecskemeti TE,Paks,2,2,D
+2025-03-02,Ferencvarosi TC,Gyori ETO FC,2,2,D
+2025-03-07,Kecskemeti TE,Fehervar FC,2,2,D
+2025-03-08,Nyiregyhaza,Gyori ETO FC,0,1,A
+2025-03-08,Zalaegerszegi TE,MTK Budapest,1,1,D
+2025-03-08,Diosgyori VTK,Paks,0,2,A
+2025-03-09,Ujpest,Puskas Academy,1,1,D
+2025-03-09,Debreceni VSC,Ferencvarosi TC,0,1,A
+2025-03-14,Gyori ETO FC,Debreceni VSC,0,0,D
+2025-03-14,Paks,Ujpest,6,1,H
+2025-03-16,Fehervar FC,Diosgyori VTK,0,0,D
+2025-03-16,Ferencvarosi TC,Kecskemeti TE,4,0,H
+2025-03-16,MTK Budapest,Nyiregyhaza,3,0,H
+2025-03-16,Puskas Academy,Zalaegerszegi TE,2,1,H
+2025-03-28,Kecskemeti TE,Debreceni VSC,1,3,A
+2025-03-29,Gyori ETO FC,MTK Budapest,2,1,H
+2025-03-29,Zalaegerszegi TE,Paks,1,1,D
+2025-03-29,Nyiregyhaza,Puskas Academy,0,2,A
+2025-03-30,Ujpest,Fehervar FC,2,2,D
+2025-03-30,Diosgyori VTK,Ferencvarosi TC,1,1,D
+2025-04-05,Kecskemeti TE,Gyori ETO FC,1,1,D
+2025-04-05,Paks,Nyiregyhaza,2,0,H
+2025-04-05,Debreceni VSC,Diosgyori VTK,4,1,H
+2025-04-06,Fehervar FC,Zalaegerszegi TE,0,2,A
+2025-04-06,Puskas Academy,MTK Budapest,1,1,D
+2025-04-06,Ferencvarosi TC,Ujpest,2,0,H
+2025-04-11,Diosgyori VTK,Kecskemeti TE,2,1,H
+2025-04-11,MTK Budapest,Paks,1,2,A
+2025-04-12,Gyori ETO FC,Puskas Academy,2,0,H
+2025-04-12,Zalaegerszegi TE,Ferencvarosi TC,0,2,A
+2025-04-13,Ujpest,Debreceni VSC,2,1,H
+2025-04-13,Nyiregyhaza,Fehervar FC,1,0,H
+2025-04-19,Debreceni VSC,Zalaegerszegi TE,4,3,H
+2025-04-19,Diosgyori VTK,Gyori ETO FC,2,4,A
+2025-04-19,Paks,Puskas Academy,2,2,D
+2025-04-20,Fehervar FC,MTK Budapest,1,1,D
+2025-04-20,Ferencvarosi TC,Nyiregyhaza,7,0,H
+2025-04-21,Kecskemeti TE,Ujpest,0,0,D
+2025-04-25,Nyiregyhaza,Debreceni VSC,1,0,H
+2025-04-26,Puskas Academy,Fehervar FC,3,1,H
+2025-04-26,Gyori ETO FC,Paks,2,0,H
+2025-04-26,Ujpest,Diosgyori VTK,1,1,D
+2025-04-27,MTK Budapest,Ferencvarosi TC,2,3,A
+2025-04-27,Zalaegerszegi TE,Kecskemeti TE,0,0,D
+2025-05-03,Ujpest,Gyori ETO FC,2,3,A
+2025-05-03,Debreceni VSC,MTK Budapest,0,0,D
+2025-05-03,Ferencvarosi TC,Puskas Academy,1,1,D
+2025-05-04,Diosgyori VTK,Zalaegerszegi TE,1,1,D
+2025-05-04,Kecskemeti TE,Nyiregyhaza,2,2,D
+2025-05-04,Fehervar FC,Paks,0,2,A
+2025-05-09,Gyori ETO FC,Fehervar FC,1,0,H
+2025-05-10,Puskas Academy,Debreceni VSC,4,2,H
+2025-05-10,MTK Budapest,Kecskemeti TE,2,1,H
+2025-05-10,Paks,Ferencvarosi TC,2,3,A
+2025-05-11,Zalaegerszegi TE,Ujpest,0,0,D
+2025-05-11,Nyiregyhaza,Diosgyori VTK,1,0,H
+2025-05-16,Kecskemeti TE,Puskas Academy,0,1,A
+2025-05-16,Ujpest,Nyiregyhaza,2,2,D
+2025-05-17,Zalaegerszegi TE,Gyori ETO FC,0,0,D
+2025-05-17,Diosgyori VTK,MTK Budapest,2,1,H
+2025-05-18,Debreceni VSC,Paks,0,0,D
+2025-05-18,Ferencvarosi TC,Fehervar FC,3,0,H
+2025-05-23,Paks,Kecskemeti TE,1,1,D
+2025-05-24,MTK Budapest,Ujpest,1,3,A
+2025-05-24,Fehervar FC,Debreceni VSC,0,3,A
+2025-05-24,Puskas Academy,Diosgyori VTK,4,3,H
+2025-05-24,Gyori ETO FC,Ferencvarosi TC,1,2,A
+2025-05-25,Nyiregyhaza,Zalaegerszegi TE,0,0,D

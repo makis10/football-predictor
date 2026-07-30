@@ -57,11 +57,31 @@ def test_plain_map_team_fetchers_also_inherit_them():
 def test_genuinely_new_clubs_are_not_force_mapped():
     """A club we have no history for must keep its own name and be priced from
     default features. Mapping it onto a similar-looking club is far worse than
-    admitting we don't know it."""
+    admitting we don't know it.
+
+    The examples used to be Elversberg / Le Mans / Acad. Viseu / Kalamata. The
+    2026-07-30 history import (second tiers + ~30 foreign leagues) gave all four
+    a real record, so they moved to the positive test below. San Marino is not
+    imported, which is what keeps a genuinely-unknown case here.
+    """
     resolve = build_resolver(known_team_names())
-    for name in ("Elversberg", "Le Mans", "Acad. Viseu", "Kalamata"):
+    for name in ("Tre Fiori", "Totally Fake FC"):
         assert resolve(name) is None, name
         assert name not in COMMON_ALIASES
+
+
+def test_imported_history_makes_promoted_clubs_resolvable():
+    """Guards the history import: these clubs are why it was done.
+
+    Each plays in a league we price but earned its record in one we don't —
+    Kalamata in Greek Super League 2, Le Mans in Ligue 2, Elversberg in 2.
+    Bundesliga, Académico de Viseu in Liga 2. Before the import their fixtures
+    rendered "no history — no prediction"; Kalamata alone accounted for eleven
+    blank Greek cards.
+    """
+    resolve = build_resolver(known_team_names())
+    for name in ("Elversberg", "Le Mans", "Acad. Viseu", "Kalamata"):
+        assert resolve(name) is not None, f"{name} lost its imported history"
 
 
 def test_similar_but_distinct_clubs_stay_apart():

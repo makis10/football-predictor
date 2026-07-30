@@ -1,0 +1,136 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2025-08-01,Gandzasar,Ararat,1,1,D
+2025-08-02,BKMA,FC Urartu,1,1,D
+2025-08-03,FC Noah,Shirak,4,0,H
+2025-08-04,Alashkert,Pyunik Yerevan,1,2,A
+2025-08-04,Van,Ararat-Armenia,0,0,D
+2025-08-09,Ararat,Van,0,1,A
+2025-08-09,FC Urartu,Gandzasar,1,0,H
+2025-08-11,Shirak,Pyunik Yerevan,0,0,D
+2025-08-15,Van,FC Urartu,0,2,A
+2025-08-16,Alashkert,Ararat,3,0,H
+2025-08-16,BKMA,Shirak,2,1,H
+2025-08-17,FC Noah,Gandzasar,4,1,H
+2025-08-22,Ararat,Pyunik Yerevan,0,2,A
+2025-08-22,FC Urartu,Alashkert,0,1,A
+2025-08-23,BKMA,Gandzasar,0,0,D
+2025-08-24,Shirak,Ararat-Armenia,0,1,A
+2025-08-29,BKMA,Van,0,0,D
+2025-08-29,Pyunik Yerevan,FC Urartu,1,2,A
+2025-08-30,Gandzasar,Shirak,1,1,D
+2025-08-30,Ararat-Armenia,Ararat,4,2,H
+2025-08-31,Alashkert,FC Noah,2,0,H
+2025-09-12,Gandzasar,Van,1,0,H
+2025-09-12,Shirak,Ararat,4,2,H
+2025-09-13,BKMA,Alashkert,1,3,A
+2025-09-14,FC Urartu,Ararat-Armenia,2,3,A
+2025-09-14,FC Noah,Pyunik Yerevan,3,1,H
+2025-09-19,Van,Shirak,3,2,H
+2025-09-19,FC Urartu,Ararat,6,0,H
+2025-09-20,Pyunik Yerevan,BKMA,2,1,H
+2025-09-20,Ararat-Armenia,FC Noah,2,2,D
+2025-09-21,Alashkert,Gandzasar,2,0,H
+2025-09-24,FC Noah,Van,2,1,H
+2025-09-25,Ararat-Armenia,Alashkert,2,1,H
+2025-09-26,Shirak,FC Urartu,0,1,A
+2025-09-27,Gandzasar,Pyunik Yerevan,0,1,A
+2025-09-28,FC Noah,Ararat,2,0,H
+2025-09-29,Van,Alashkert,1,2,A
+2025-09-29,BKMA,Ararat-Armenia,2,2,D
+2025-10-03,Alashkert,Shirak,1,1,D
+2025-10-04,Pyunik Yerevan,Van,5,1,H
+2025-10-04,Ararat,BKMA,2,2,D
+2025-10-05,Ararat-Armenia,Gandzasar,1,0,H
+2025-10-05,FC Urartu,FC Noah,0,0,D
+2025-10-17,Shirak,Alashkert,1,2,A
+2025-10-18,Van,Pyunik Yerevan,2,1,H
+2025-10-18,FC Noah,FC Urartu,0,0,D
+2025-10-19,Gandzasar,Ararat-Armenia,0,1,A
+2025-10-19,BKMA,Ararat,4,0,H
+2025-10-24,Alashkert,Van,1,0,H
+2025-10-24,FC Urartu,Shirak,5,0,H
+2025-10-25,Pyunik Yerevan,Gandzasar,2,0,H
+2025-10-25,Ararat-Armenia,BKMA,2,1,H
+2025-10-27,Ararat,FC Noah,0,3,A
+2025-11-01,FC Noah,Ararat-Armenia,1,2,A
+2025-11-02,BKMA,Pyunik Yerevan,1,2,A
+2025-11-02,Shirak,Van,2,3,A
+2025-11-03,Gandzasar,Alashkert,1,0,H
+2025-11-03,Ararat,FC Urartu,0,1,A
+2025-11-08,Alashkert,BKMA,2,0,H
+2025-11-08,Ararat-Armenia,FC Urartu,1,1,D
+2025-11-09,Van,Gandzasar,2,1,H
+2025-11-09,Ararat,Shirak,0,0,D
+2025-11-21,Ararat,Ararat-Armenia,1,2,A
+2025-11-21,FC Urartu,Pyunik Yerevan,1,1,D
+2025-11-22,Shirak,Gandzasar,1,0,H
+2025-11-22,FC Noah,Alashkert,2,2,D
+2025-11-23,Van,BKMA,3,2,H
+2025-11-25,Pyunik Yerevan,Ararat-Armenia,1,0,H
+2025-11-28,Gandzasar,BKMA,0,0,D
+2025-11-29,Alashkert,FC Urartu,0,2,A
+2025-11-30,Pyunik Yerevan,Ararat,2,0,H
+2025-12-01,Ararat-Armenia,Shirak,4,1,H
+2025-12-02,Van,FC Noah,0,0,D
+2025-12-06,FC Noah,BKMA,2,3,A
+2026-03-06,Gandzasar,FC Urartu,2,2,D
+2026-03-07,Van,Ararat,1,2,A
+2026-03-07,Alashkert,Ararat-Armenia,1,0,H
+2026-03-08,BKMA,FC Noah,0,2,A
+2026-03-09,Pyunik Yerevan,Shirak,3,0,H
+2026-03-14,Ararat,Gandzasar,0,2,A
+2026-03-15,Pyunik Yerevan,Alashkert,1,0,H
+2026-03-15,FC Urartu,BKMA,4,1,H
+2026-03-16,Ararat-Armenia,Van,3,0,H
+2026-03-16,Shirak,FC Noah,0,2,A
+2026-03-20,Van,Ararat-Armenia,2,2,D
+2026-03-20,BKMA,FC Urartu,0,1,A
+2026-03-21,Alashkert,Pyunik Yerevan,0,1,A
+2026-03-21,Gandzasar,Ararat,2,1,H
+2026-03-22,FC Noah,Shirak,3,0,H
+2026-04-04,Ararat,Van,1,2,A
+2026-04-05,FC Noah,BKMA,2,0,H
+2026-04-05,FC Urartu,Gandzasar,4,2,H
+2026-04-06,Shirak,Pyunik Yerevan,0,1,A
+2026-04-06,Ararat-Armenia,Alashkert,1,1,D
+2026-04-10,Van,FC Urartu,1,2,A
+2026-04-10,Gandzasar,FC Noah,0,3,A
+2026-04-11,Ararat,Alashkert,2,3,A
+2026-04-11,Pyunik Yerevan,Ararat-Armenia,0,2,A
+2026-04-12,BKMA,Shirak,0,0,D
+2026-04-14,Alashkert,Ararat,2,0,H
+2026-04-16,Shirak,BKMA,1,1,D
+2026-04-18,Ararat,Pyunik Yerevan,1,0,H
+2026-04-19,BKMA,Gandzasar,1,1,D
+2026-04-19,FC Urartu,Alashkert,1,3,A
+2026-04-20,FC Noah,Van,2,0,H
+2026-04-20,Shirak,Ararat-Armenia,0,4,A
+2026-04-23,Van,BKMA,1,2,A
+2026-04-23,Pyunik Yerevan,FC Urartu,2,1,H
+2026-04-25,Alashkert,FC Noah,1,1,D
+2026-04-25,Ararat-Armenia,Ararat,4,0,H
+2026-04-26,Gandzasar,Shirak,3,2,H
+2026-04-26,FC Urartu,Van,2,0,H
+2026-05-01,Shirak,Ararat,0,2,A
+2026-05-02,BKMA,Alashkert,2,2,D
+2026-05-02,Gandzasar,Van,0,1,A
+2026-05-03,FC Urartu,Ararat-Armenia,0,2,A
+2026-05-03,FC Noah,Pyunik Yerevan,0,0,D
+2026-05-06,Gandzasar,FC Noah,1,4,A
+2026-05-06,Ararat-Armenia,Pyunik Yerevan,1,0,H
+2026-05-08,Van,Shirak,1,0,H
+2026-05-09,Alashkert,Gandzasar,3,1,H
+2026-05-09,Pyunik Yerevan,BKMA,2,0,H
+2026-05-10,Ararat,FC Urartu,0,1,A
+2026-05-10,Ararat-Armenia,FC Noah,0,4,A
+2026-05-16,Van,Alashkert,0,1,A
+2026-05-17,BKMA,Ararat-Armenia,2,3,A
+2026-05-18,Shirak,FC Urartu,0,0,D
+2026-05-18,Gandzasar,Pyunik Yerevan,0,2,A
+2026-05-19,FC Noah,Ararat,8,3,H
+2026-05-23,Pyunik Yerevan,FC Noah,0,0,D
+2026-05-26,Alashkert,Shirak,2,0,H
+2026-05-26,Ararat,BKMA,1,1,D
+2026-05-27,Pyunik Yerevan,Van,2,1,H
+2026-05-27,FC Urartu,FC Noah,0,5,A
+2026-05-27,Ararat-Armenia,Gandzasar,1,0,H

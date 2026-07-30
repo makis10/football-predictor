@@ -1,0 +1,126 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2022-07-30,Dacia-Buiucani,CSF Balti,0,0,D
+2022-07-30,Zimbru,Sheriff Tiraspol,1,1,D
+2022-07-31,Petrocub,Sfintul Gheorghe,0,2,A
+2022-07-31,Milsami Orhei,Dinamo-Auto,0,0,D
+2022-08-06,Dinamo-Auto,Zimbru,0,0,D
+2022-08-06,Sfintul Gheorghe,Sheriff Tiraspol,1,3,A
+2022-08-07,Petrocub,Dacia-Buiucani,1,0,H
+2022-08-07,CSF Balti,Milsami Orhei,1,1,D
+2022-08-13,Dacia-Buiucani,Sfintul Gheorghe,2,0,H
+2022-08-13,Zimbru,CSF Balti,0,3,A
+2022-08-14,Sheriff Tiraspol,Dinamo-Auto,2,0,H
+2022-08-14,Milsami Orhei,Petrocub,1,0,H
+2022-08-20,Sfintul Gheorghe,Dinamo-Auto,3,0,H
+2022-08-20,Petrocub,Zimbru,2,2,D
+2022-08-21,Dacia-Buiucani,Milsami Orhei,0,2,A
+2022-08-21,CSF Balti,Sheriff Tiraspol,0,3,A
+2022-08-27,Dinamo-Auto,CSF Balti,0,1,A
+2022-08-27,Zimbru,Dacia-Buiucani,3,4,A
+2022-08-28,Milsami Orhei,Sfintul Gheorghe,2,3,A
+2022-08-29,Sheriff Tiraspol,Petrocub,1,1,D
+2022-09-03,Dacia-Buiucani,Sheriff Tiraspol,0,2,A
+2022-09-03,Petrocub,Dinamo-Auto,4,0,H
+2022-09-04,Sfintul Gheorghe,CSF Balti,1,2,A
+2022-09-04,Milsami Orhei,Zimbru,1,0,H
+2022-09-10,Dinamo-Auto,Dacia-Buiucani,2,0,H
+2022-09-11,Zimbru,Sfintul Gheorghe,3,3,D
+2022-09-11,Sheriff Tiraspol,Milsami Orhei,2,0,H
+2022-09-12,CSF Balti,Petrocub,0,1,A
+2022-09-16,Dinamo-Auto,Milsami Orhei,1,1,D
+2022-09-16,CSF Balti,Dacia-Buiucani,0,1,A
+2022-09-17,Sfintul Gheorghe,Petrocub,1,2,A
+2022-09-18,Sheriff Tiraspol,Zimbru,0,0,D
+2022-10-01,Zimbru,Dinamo-Auto,2,1,H
+2022-10-01,Milsami Orhei,CSF Balti,1,0,H
+2022-10-02,Dacia-Buiucani,Petrocub,0,0,D
+2022-10-02,Sheriff Tiraspol,Sfintul Gheorghe,3,0,H
+2022-10-08,Sfintul Gheorghe,Dacia-Buiucani,1,0,H
+2022-10-08,Petrocub,Milsami Orhei,2,1,H
+2022-10-09,Dinamo-Auto,Sheriff Tiraspol,0,1,A
+2022-10-09,CSF Balti,Zimbru,0,2,A
+2022-10-15,Dinamo-Auto,Sfintul Gheorghe,0,2,A
+2022-10-15,Milsami Orhei,Dacia-Buiucani,1,1,D
+2022-10-16,Zimbru,Petrocub,2,1,H
+2022-10-16,Sheriff Tiraspol,CSF Balti,2,1,H
+2022-10-22,Dacia-Buiucani,Zimbru,0,0,D
+2022-10-22,CSF Balti,Dinamo-Auto,1,0,H
+2022-10-23,Sfintul Gheorghe,Milsami Orhei,1,0,H
+2022-10-23,Petrocub,Sheriff Tiraspol,1,0,H
+2022-10-27,Dinamo-Auto,Petrocub,1,4,A
+2022-10-27,Zimbru,Milsami Orhei,1,1,D
+2022-10-28,CSF Balti,Sfintul Gheorghe,4,0,H
+2022-10-30,Sheriff Tiraspol,Dacia-Buiucani,2,1,H
+2022-11-09,Milsami Orhei,Sheriff Tiraspol,0,2,A
+2022-11-09,Petrocub,CSF Balti,1,0,H
+2022-11-09,Sfintul Gheorghe,Zimbru,0,1,A
+2022-11-09,Dacia-Buiucani,Dinamo-Auto,5,0,H
+2023-03-10,Spartanii Selemet,Dinamo-Auto,1,1,D
+2023-03-11,Zimbru,Sfintul Gheorghe,0,0,D
+2023-03-11,Floresti,Dacia-Buiucani,0,0,D
+2023-03-11,Victoria,Falesti,3,1,H
+2023-03-11,Petrocub,Milsami Orhei,2,1,H
+2023-03-13,Sheriff Tiraspol,CSF Balti,1,0,H
+2023-03-17,Sfintul Gheorghe,CSF Balti,1,1,D
+2023-03-17,Dinamo-Auto,Victoria,1,2,A
+2023-03-17,Floresti,Spartanii Selemet,4,0,H
+2023-03-18,Milsami Orhei,Zimbru,0,3,A
+2023-03-18,Dacia-Buiucani,Falesti,3,1,H
+2023-03-19,Sheriff Tiraspol,Petrocub,1,0,H
+2023-03-23,Victoria,Floresti,1,2,A
+2023-03-31,Falesti,Dinamo-Auto,1,8,A
+2023-04-01,Zimbru,Sheriff Tiraspol,0,2,A
+2023-04-01,Spartanii Selemet,Dacia-Buiucani,0,5,A
+2023-04-02,Sfintul Gheorghe,Milsami Orhei,1,1,D
+2023-04-02,Petrocub,CSF Balti,0,0,D
+2023-04-07,Floresti,Falesti,7,0,H
+2023-04-08,Dacia-Buiucani,Dinamo-Auto,1,0,H
+2023-04-09,CSF Balti,Milsami Orhei,2,2,D
+2023-04-09,Sheriff Tiraspol,Sfintul Gheorghe,1,0,H
+2023-04-09,Petrocub,Zimbru,3,2,H
+2023-04-09,Spartanii Selemet,Victoria,4,1,H
+2023-04-14,Victoria,Dacia-Buiucani,1,5,A
+2023-04-14,Falesti,Spartanii Selemet,1,5,A
+2023-04-15,Sfintul Gheorghe,Petrocub,0,0,D
+2023-04-15,Dinamo-Auto,Floresti,2,0,H
+2023-04-15,Sheriff Tiraspol,Milsami Orhei,2,1,H
+2023-04-15,Zimbru,CSF Balti,1,0,H
+2023-04-21,Dinamo-Auto,Spartanii Selemet,2,0,H
+2023-04-21,Dacia-Buiucani,Floresti,2,0,H
+2023-04-21,Falesti,Victoria,1,5,A
+2023-04-22,Sfintul Gheorghe,Zimbru,0,2,A
+2023-04-22,Sheriff Tiraspol,CSF Balti,1,1,D
+2023-04-22,Milsami Orhei,Petrocub,0,2,A
+2023-04-29,Spartanii Selemet,Floresti,1,2,A
+2023-04-29,Victoria,Dinamo-Auto,0,2,A
+2023-04-29,Falesti,Dacia-Buiucani,0,5,A
+2023-04-29,CSF Balti,Sfintul Gheorghe,0,2,A
+2023-04-30,Zimbru,Milsami Orhei,0,1,A
+2023-04-30,Petrocub,Sheriff Tiraspol,1,1,D
+2023-05-03,Dinamo-Auto,Falesti,6,2,H
+2023-05-03,Dacia-Buiucani,Spartanii Selemet,2,0,H
+2023-05-03,Floresti,Victoria,3,1,H
+2023-05-06,Vasieni,Sucleia,6,1,H
+2023-05-06,Speranis Nisporeni,Speranta Drochia,4,0,H
+2023-05-06,Dinamo-Auto,Dacia-Buiucani,0,0,D
+2023-05-06,Victoria,Spartanii Selemet,1,3,A
+2023-05-06,Falesti,Floresti,1,3,A
+2023-05-06,Sheriff Tiraspol,Zimbru,0,0,D
+2023-05-07,Milsami Orhei,Sfintul Gheorghe,3,0,H
+2023-05-07,Petrocub,CSF Balti,3,0,H
+2023-05-10,Dacia-Buiucani,Victoria,3,1,H
+2023-05-10,Floresti,Dinamo-Auto,2,0,H
+2023-05-10,Spartanii Selemet,Falesti,3,1,H
+2023-05-13,Milsami Orhei,CSF Balti,1,0,H
+2023-05-14,Dinamo-Auto,Speranis Nisporeni,2,2,D
+2023-05-14,Floresti,Vasieni,2,0,H
+2023-05-14,Spartanii Selemet,Real Succes,7,1,H
+2023-05-14,Victoria Bardar,Falesti,6,2,H
+2023-05-14,Sfintul Gheorghe,Sheriff Tiraspol,0,2,A
+2023-05-14,Zimbru,Petrocub,1,2,A
+2023-05-19,Dinamo-Auto,Spartanii Selemet,2,0,H
+2023-05-19,Floresti,Victoria Bardar,3,3,D
+2023-05-20,Sheriff Tiraspol,Milsami Orhei,4,0,H
+2023-05-20,Petrocub,Sfintul Gheorghe,3,0,H
+2023-05-20,CSF Balti,Zimbru,1,1,D
+2023-05-24,Dinamo-Auto,Victoria Bardar,5,1,H

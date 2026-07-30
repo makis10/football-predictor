@@ -1,0 +1,201 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2025-08-08,Shkendija,Shkupi 1927,5,1,H
+2025-08-08,Vardar Skopje,Pelister,4,1,H
+2025-08-09,Struga,Makedonija GjP,2,0,H
+2025-08-09,Bashkimi Kumanovo,Aresimi,1,1,D
+2025-08-10,Tikves,FK Rabotnicki,0,0,D
+2025-08-11,Sileks,Akademija Pandev,5,0,H
+2025-08-15,Tikves,Vardar Skopje,1,2,A
+2025-08-15,Aresimi,Struga,1,2,A
+2025-08-16,FK Rabotnicki,Bashkimi Kumanovo,0,2,A
+2025-08-16,Makedonija GjP,Shkendija,1,3,A
+2025-08-18,Akademija Pandev,Pelister,1,2,A
+2025-08-22,Struga,FK Rabotnicki,2,0,H
+2025-08-22,Vardar Skopje,Akademija Pandev,2,2,D
+2025-08-23,Sileks,Makedonija GjP,3,0,H
+2025-08-24,Shkendija,Aresimi,0,0,D
+2025-08-25,Pelister,Shkupi 1927,2,0,H
+2025-08-25,Bashkimi Kumanovo,Tikves,3,1,H
+2025-08-29,Shkupi 1927,Vardar Skopje,2,4,A
+2025-08-30,Aresimi,Sileks,0,1,A
+2025-08-30,Bashkimi Kumanovo,Struga,0,5,A
+2025-08-31,Makedonija GjP,Pelister,2,1,H
+2025-08-31,Tikves,Akademija Pandev,0,0,D
+2025-09-12,Shkendija,Bashkimi Kumanovo,2,1,H
+2025-09-12,Vardar Skopje,Makedonija GjP,1,0,H
+2025-09-13,Akademija Pandev,Shkupi 1927,1,0,H
+2025-09-13,Sileks,FK Rabotnicki,3,1,H
+2025-09-14,Struga,Tikves,3,0,H
+2025-09-14,Pelister,Aresimi,0,4,A
+2025-09-16,Makedonija GjP,Akademija Pandev,2,0,H
+2025-09-16,Bashkimi Kumanovo,Sileks,2,1,H
+2025-09-17,Struga,Shkendija,1,1,D
+2025-09-17,Tikves,Shkupi 1927,1,0,H
+2025-09-18,FK Rabotnicki,Pelister,3,0,H
+2025-09-18,Aresimi,Vardar Skopje,1,4,A
+2025-09-20,Shkupi 1927,Makedonija GjP,0,2,A
+2025-09-21,Shkendija,Tikves,1,0,H
+2025-09-21,Vardar Skopje,FK Rabotnicki,3,1,H
+2025-09-22,Akademija Pandev,Aresimi,2,1,H
+2025-09-22,Sileks,Struga,1,3,A
+2025-09-23,Pelister,Bashkimi Kumanovo,1,2,A
+2025-09-24,FK Rabotnicki,Shkendija,0,1,A
+2025-09-27,Tikves,Makedonija GjP,2,1,H
+2025-09-27,Aresimi,Shkupi 1927,4,2,H
+2025-09-28,Shkendija,Sileks,2,0,H
+2025-09-28,FK Rabotnicki,Akademija Pandev,3,4,A
+2025-09-29,Struga,Pelister,2,0,H
+2025-09-29,Bashkimi Kumanovo,Vardar Skopje,0,0,D
+2025-10-03,Makedonija GjP,Aresimi,4,1,H
+2025-10-04,Shkupi 1927,FK Rabotnicki,1,1,D
+2025-10-04,Akademija Pandev,Bashkimi Kumanovo,1,1,D
+2025-10-05,Vardar Skopje,Struga,2,2,D
+2025-10-05,Sileks,Tikves,1,0,H
+2025-10-06,Pelister,Shkendija,0,0,D
+2025-10-24,Tikves,Aresimi,3,4,A
+2025-10-24,Bashkimi Kumanovo,Shkupi 1927,4,1,H
+2025-10-25,FK Rabotnicki,Makedonija GjP,0,0,D
+2025-10-25,Struga,Akademija Pandev,2,4,A
+2025-10-26,Sileks,Pelister,3,1,H
+2025-10-27,Shkendija,Vardar Skopje,0,1,A
+2025-10-29,Makedonija GjP,Bashkimi Kumanovo,1,1,D
+2025-10-29,Aresimi,FK Rabotnicki,2,2,D
+2025-10-30,Shkupi 1927,Struga,1,2,A
+2025-10-30,Pelister,Tikves,0,0,D
+2025-10-31,Akademija Pandev,Shkendija,2,3,A
+2025-10-31,Vardar Skopje,Sileks,2,1,H
+2025-11-03,Aresimi,Bashkimi Kumanovo,4,2,H
+2025-11-04,FK Rabotnicki,Tikves,0,2,A
+2025-11-04,Makedonija GjP,Struga,0,2,A
+2025-11-05,Akademija Pandev,Sileks,3,3,D
+2025-11-05,Pelister,Vardar Skopje,1,2,A
+2025-11-08,Struga,Aresimi,4,0,H
+2025-11-08,Bashkimi Kumanovo,FK Rabotnicki,2,1,H
+2025-11-09,Vardar Skopje,Tikves,3,1,H
+2025-11-09,Pelister,Akademija Pandev,1,0,H
+2025-11-10,Shkendija,Makedonija GjP,7,2,H
+2025-11-10,Sileks,Shkupi 1927,5,1,H
+2025-11-15,Shkupi 1927,Shkendija,1,2,A
+2025-11-21,Makedonija GjP,Sileks,1,2,A
+2025-11-22,Akademija Pandev,Vardar Skopje,0,2,A
+2025-11-23,Tikves,Bashkimi Kumanovo,3,0,H
+2025-11-23,Aresimi,Shkendija,3,0,H
+2025-11-24,FK Rabotnicki,Struga,1,3,A
+2025-11-25,Shkupi 1927,Pelister,0,3,A
+2025-11-28,Sileks,Aresimi,1,3,A
+2025-11-29,Pelister,Makedonija GjP,1,1,D
+2025-11-29,Akademija Pandev,Tikves,0,4,A
+2025-11-30,Struga,Bashkimi Kumanovo,6,0,H
+2025-11-30,Vardar Skopje,Shkupi 1927,6,1,H
+2025-12-01,Shkendija,FK Rabotnicki,1,0,H
+2025-12-05,Makedonija GjP,Vardar Skopje,1,2,A
+2025-12-05,Tikves,Struga,0,1,A
+2025-12-06,Bashkimi Kumanovo,Shkendija,1,3,A
+2025-12-07,FK Rabotnicki,Sileks,0,3,A
+2025-12-07,Shkupi 1927,Akademija Pandev,1,3,A
+2025-12-08,Aresimi,Pelister,3,3,D
+2026-02-10,Shkendija,Struga,2,0,H
+2026-02-10,Shkupi 1927,Tikves,0,6,A
+2026-02-11,Vardar Skopje,Aresimi,5,1,H
+2026-02-11,Sileks,Bashkimi Kumanovo,0,0,D
+2026-02-12,Akademija Pandev,Makedonija GjP,1,1,D
+2026-02-12,Pelister,FK Rabotnicki,4,1,H
+2026-02-14,Tikves,Shkendija,1,4,A
+2026-02-15,FK Rabotnicki,Vardar Skopje,0,3,A
+2026-02-15,Struga,Sileks,2,3,A
+2026-02-16,Makedonija GjP,Shkupi 1927,3,0,H
+2026-02-16,Aresimi,Akademija Pandev,0,2,A
+2026-02-17,Bashkimi Kumanovo,Pelister,1,0,H
+2026-02-20,Akademija Pandev,FK Rabotnicki,3,4,A
+2026-02-21,Vardar Skopje,Bashkimi Kumanovo,1,0,H
+2026-02-21,Pelister,Struga,1,1,D
+2026-02-22,Sileks,Shkendija,1,2,A
+2026-02-22,Shkupi 1927,Aresimi,0,3,A
+2026-02-23,Makedonija GjP,Tikves,0,1,A
+2026-02-27,Bashkimi Kumanovo,Akademija Pandev,0,2,A
+2026-02-28,FK Rabotnicki,Shkupi 1927,3,0,H
+2026-02-28,Struga,Vardar Skopje,1,1,D
+2026-03-01,Tikves,Sileks,0,1,A
+2026-03-01,Aresimi,Makedonija GjP,1,1,D
+2026-03-02,Shkendija,Pelister,2,1,H
+2026-03-03,Shkupi 1927,Bashkimi Kumanovo,0,2,A
+2026-03-03,Akademija Pandev,Struga,0,0,D
+2026-03-04,Makedonija GjP,FK Rabotnicki,3,1,H
+2026-03-04,Aresimi,Tikves,0,5,A
+2026-03-05,Vardar Skopje,Shkendija,0,1,A
+2026-03-05,Pelister,Sileks,0,0,D
+2026-03-07,Struga,Shkupi 1927,5,0,H
+2026-03-08,Tikves,Pelister,1,0,H
+2026-03-08,Bashkimi Kumanovo,Makedonija GjP,2,0,H
+2026-03-09,Shkendija,Akademija Pandev,1,1,D
+2026-03-09,Sileks,Vardar Skopje,0,1,A
+2026-03-10,FK Rabotnicki,Aresimi,1,0,H
+2026-03-14,Struga,Makedonija GjP,3,0,H
+2026-03-14,Vardar Skopje,Akademija Pandev,1,0,H
+2026-03-15,Tikves,Shkupi 1927,6,0,H
+2026-03-15,Shkendija,Aresimi,1,0,H
+2026-03-16,Sileks,Pelister,0,0,D
+2026-03-16,Bashkimi Kumanovo,FK Rabotnicki,1,2,A
+2026-03-20,FK Rabotnicki,Sileks,2,0,H
+2026-03-20,Tikves,Akademija Pandev,6,1,H
+2026-03-21,Makedonija GjP,Shkendija,0,1,A
+2026-03-21,Aresimi,Vardar Skopje,1,0,H
+2026-03-22,Pelister,Struga,0,2,A
+2026-03-23,Shkupi 1927,Bashkimi Kumanovo,2,3,A
+2026-04-02,Bashkimi Kumanovo,Tikves,2,2,D
+2026-04-03,Akademija Pandev,Aresimi,2,1,H
+2026-04-03,Sileks,Shkupi 1927,6,0,H
+2026-04-04,Shkendija,Pelister,1,2,A
+2026-04-04,Vardar Skopje,Makedonija GjP,5,1,H
+2026-04-05,Struga,FK Rabotnicki,1,2,A
+2026-04-07,Tikves,Sileks,0,3,A
+2026-04-07,Bashkimi Kumanovo,Akademija Pandev,0,0,D
+2026-04-08,FK Rabotnicki,Shkendija,0,3,A
+2026-04-08,Pelister,Vardar Skopje,0,0,D
+2026-04-09,Shkupi 1927,Struga,0,3,A
+2026-04-09,Makedonija GjP,Aresimi,0,1,A
+2026-04-11,Vardar Skopje,FK Rabotnicki,1,0,H
+2026-04-11,Sileks,Bashkimi Kumanovo,1,0,H
+2026-04-13,Shkendija,Shkupi 1927,6,0,H
+2026-04-13,Struga,Tikves,1,2,A
+2026-04-14,Aresimi,Pelister,1,0,H
+2026-04-14,Akademija Pandev,Makedonija GjP,1,1,D
+2026-04-17,Sileks,Akademija Pandev,4,0,H
+2026-04-17,Tikves,Shkendija,1,4,A
+2026-04-18,Shkupi 1927,Vardar Skopje,0,7,A
+2026-04-18,Pelister,Makedonija GjP,2,0,H
+2026-04-19,FK Rabotnicki,Aresimi,2,0,H
+2026-04-19,Bashkimi Kumanovo,Struga,0,4,A
+2026-04-24,Aresimi,Shkupi 1927,5,1,H
+2026-04-25,Makedonija GjP,FK Rabotnicki,2,1,H
+2026-04-26,Vardar Skopje,Tikves,7,0,H
+2026-04-26,Akademija Pandev,Pelister,0,1,A
+2026-04-27,Struga,Sileks,2,0,H
+2026-04-27,Shkendija,Bashkimi Kumanovo,2,3,A
+2026-05-01,Shkupi 1927,Makedonija GjP,0,4,A
+2026-05-01,Sileks,Shkendija,1,1,D
+2026-05-02,FK Rabotnicki,Pelister,3,3,D
+2026-05-02,Bashkimi Kumanovo,Vardar Skopje,0,2,A
+2026-05-03,Struga,Akademija Pandev,0,1,A
+2026-05-03,Tikves,Aresimi,1,1,D
+2026-05-09,Vardar Skopje,Sileks,2,1,H
+2026-05-09,Shkendija,Struga,3,1,H
+2026-05-09,Pelister,Shkupi 1927,7,0,H
+2026-05-10,Akademija Pandev,FK Rabotnicki,2,2,D
+2026-05-10,Makedonija GjP,Tikves,1,4,A
+2026-05-10,Aresimi,Bashkimi Kumanovo,1,1,D
+2026-05-15,Shkendija,Akademija Pandev,2,1,H
+2026-05-15,Sileks,Aresimi,0,1,A
+2026-05-15,Struga,Vardar Skopje,0,1,A
+2026-05-16,Shkupi 1927,FK Rabotnicki,0,7,A
+2026-05-16,Tikves,Pelister,2,2,D
+2026-05-16,Bashkimi Kumanovo,Makedonija GjP,3,3,D
+2026-05-23,Aresimi,Struga,1,0,H
+2026-05-23,Vardar Skopje,Shkendija,3,0,H
+2026-05-24,Pelister,Bashkimi Kumanovo,1,0,H
+2026-05-24,Akademija Pandev,Shkupi 1927,6,0,H
+2026-05-25,FK Rabotnicki,Tikves,1,3,A
+2026-05-25,Makedonija GjP,Sileks,4,2,H
+2026-05-31,Pelister,Shkendija Haracine,1,1,D
+2026-05-31,Akademija Pandev,Skopje,0,1,A
+2025-08-17,Shkupi 1927,Sileks,0,3,A

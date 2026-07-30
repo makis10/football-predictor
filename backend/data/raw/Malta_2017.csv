@@ -1,0 +1,183 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2017-08-18,Birkirkara,Floriana,1,1,D
+2017-08-18,Lija Athletic,Gzira United,0,4,A
+2017-08-18,Hibernians,St. Andrews,4,0,H
+2017-08-18,Tarxien Rainbows,Hamrun Spartans,1,4,A
+2017-08-19,Balzan FC,Naxxar Lions,2,0,H
+2017-08-19,Sliema Wanderers,Senglea Athletic,2,2,D
+2017-08-19,Valletta FC,Mosta,1,0,H
+2017-08-25,St. Andrews,Balzan FC,3,2,H
+2017-08-25,Floriana,Tarxien Rainbows,5,0,H
+2017-08-25,Senglea Athletic,Valletta FC,0,1,A
+2017-08-25,Hamrun Spartans,Hibernians,0,1,A
+2017-08-26,Gzira United,Birkirkara,2,0,H
+2017-08-26,Mosta,Lija Athletic,3,1,H
+2017-08-26,Naxxar Lions,Sliema Wanderers,1,5,A
+2017-09-08,St. Andrews,Hamrun Spartans,1,2,A
+2017-09-09,Balzan FC,Sliema Wanderers,0,0,D
+2017-09-09,Tarxien Rainbows,Gzira United,1,2,A
+2017-09-09,Hibernians,Floriana,1,1,D
+2017-09-09,Birkirkara,Mosta,2,0,H
+2017-09-10,Lija Athletic,Senglea Athletic,2,3,A
+2017-09-10,Valletta FC,Naxxar Lions,0,0,D
+2017-09-15,Floriana,St. Andrews,4,0,H
+2017-09-16,Naxxar Lions,Lija Athletic,1,1,D
+2017-09-16,Senglea Athletic,Birkirkara,1,0,H
+2017-09-16,Gzira United,Hibernians,3,2,H
+2017-09-16,Hamrun Spartans,Balzan FC,0,0,D
+2017-09-17,Mosta,Tarxien Rainbows,3,1,H
+2017-09-17,Sliema Wanderers,Valletta FC,0,1,A
+2017-09-22,Hibernians,Mosta,3,0,H
+2017-09-23,Lija Athletic,Sliema Wanderers,0,2,A
+2017-09-23,Tarxien Rainbows,Senglea Athletic,1,1,D
+2017-09-23,Birkirkara,Naxxar Lions,3,2,H
+2017-09-23,Hamrun Spartans,Floriana,0,1,A
+2017-09-24,St. Andrews,Gzira United,2,3,A
+2017-09-24,Balzan FC,Valletta FC,2,1,H
+2017-09-29,Balzan FC,Lija Athletic,4,3,H
+2017-09-29,Floriana,Gzira United,1,1,D
+2017-09-29,Birkirkara,Valletta FC,0,3,A
+2017-09-29,Hibernians,Naxxar Lions,1,1,D
+2017-09-30,St. Andrews,Senglea Athletic,1,0,H
+2017-09-30,Hamrun Spartans,Mosta,5,2,H
+2017-09-30,Tarxien Rainbows,Sliema Wanderers,2,1,H
+2017-10-13,Senglea Athletic,Hibernians,0,1,A
+2017-10-13,Naxxar Lions,Tarxien Rainbows,1,2,A
+2017-10-13,Valletta FC,Lija Athletic,4,2,H
+2017-10-14,Mosta,St. Andrews,1,0,H
+2017-10-14,Floriana,Balzan FC,1,1,D
+2017-10-15,Gzira United,Hamrun Spartans,4,0,H
+2017-10-15,Sliema Wanderers,Birkirkara,3,0,H
+2017-10-20,Lija Athletic,Birkirkara,0,2,A
+2017-10-20,Naxxar Lions,St. Andrews,3,1,H
+2017-10-20,Gzira United,Balzan FC,1,2,A
+2017-10-21,Senglea Athletic,Hamrun Spartans,1,3,A
+2017-10-21,Valletta FC,Tarxien Rainbows,6,0,H
+2017-10-22,Mosta,Floriana,2,2,D
+2017-10-22,Sliema Wanderers,Hibernians,1,0,H
+2017-10-27,Senglea Athletic,Gzira United,1,1,D
+2017-10-28,Valletta FC,St. Andrews,3,0,H
+2017-10-28,Lija Athletic,Hibernians,0,3,A
+2017-10-28,Naxxar Lions,Floriana,1,2,A
+2017-10-28,Birkirkara,Tarxien Rainbows,3,1,H
+2017-10-30,Mosta,Balzan FC,0,5,A
+2017-10-30,Sliema Wanderers,Hamrun Spartans,1,0,H
+2017-11-03,Floriana,Senglea Athletic,3,0,H
+2017-11-04,Gzira United,Mosta,2,2,D
+2017-11-04,Tarxien Rainbows,Lija Athletic,2,3,A
+2017-11-04,Balzan FC,Birkirkara,2,1,H
+2017-11-04,Hamrun Spartans,Naxxar Lions,2,0,H
+2017-11-05,St. Andrews,Sliema Wanderers,0,2,A
+2017-11-05,Hibernians,Valletta FC,0,0,D
+2017-11-17,Gzira United,Naxxar Lions,3,1,H
+2017-11-18,St. Andrews,Lija Athletic,1,1,D
+2017-11-18,Mosta,Senglea Athletic,2,1,H
+2017-11-18,Hibernians,Birkirkara,1,0,H
+2017-11-18,Balzan FC,Tarxien Rainbows,1,0,H
+2017-11-19,Floriana,Sliema Wanderers,1,0,H
+2017-11-19,Hamrun Spartans,Valletta FC,0,0,D
+2017-11-24,Birkirkara,St. Andrews,2,0,H
+2017-11-25,Lija Athletic,Hamrun Spartans,1,5,A
+2017-11-25,Sliema Wanderers,Gzira United,2,1,H
+2017-11-25,Naxxar Lions,Mosta,2,0,H
+2017-11-25,Senglea Athletic,Balzan FC,0,1,A
+2017-11-26,Tarxien Rainbows,Hibernians,0,3,A
+2017-11-26,Valletta FC,Floriana,1,0,H
+2017-12-08,Mosta,Sliema Wanderers,1,1,D
+2017-12-09,Senglea Athletic,Naxxar Lions,2,1,H
+2017-12-09,Hamrun Spartans,Birkirkara,0,1,A
+2017-12-09,Balzan FC,Hibernians,1,0,H
+2017-12-09,Floriana,Lija Athletic,6,0,H
+2017-12-10,St. Andrews,Tarxien Rainbows,2,3,A
+2017-12-10,Gzira United,Valletta FC,2,1,H
+2017-12-16,Naxxar Lions,Balzan FC,0,0,D
+2017-12-16,Senglea Athletic,Sliema Wanderers,3,0,H
+2017-12-16,Mosta,Valletta FC,0,1,A
+2017-12-16,Hamrun Spartans,Tarxien Rainbows,2,1,H
+2017-12-17,St. Andrews,Hibernians,2,1,H
+2017-12-17,Floriana,Birkirkara,0,2,A
+2017-12-18,Gzira United,Lija Athletic,3,2,H
+2018-01-05,Birkirkara,Gzira United,4,0,H
+2018-01-06,Balzan FC,St. Andrews,3,1,H
+2018-01-06,Lija Athletic,Mosta,1,5,A
+2018-01-06,Valletta FC,Senglea Athletic,1,0,H
+2018-01-06,Sliema Wanderers,Naxxar Lions,1,1,D
+2018-01-07,Tarxien Rainbows,Floriana,0,2,A
+2018-01-07,Hibernians,Hamrun Spartans,0,0,D
+2018-01-12,Senglea Athletic,Lija Athletic,2,0,H
+2018-01-13,Gzira United,Tarxien Rainbows,3,1,H
+2018-01-13,Hamrun Spartans,St. Andrews,1,1,D
+2018-01-13,Sliema Wanderers,Balzan FC,1,2,A
+2018-01-13,Naxxar Lions,Valletta FC,0,1,A
+2018-01-14,Mosta,Birkirkara,0,3,A
+2018-01-14,Floriana,Hibernians,0,1,A
+2018-01-26,Valletta FC,Sliema Wanderers,1,1,D
+2018-01-27,Lija Athletic,Naxxar Lions,0,4,A
+2018-01-27,Tarxien Rainbows,Mosta,0,1,A
+2018-01-27,Hibernians,Gzira United,2,0,H
+2018-01-27,St. Andrews,Floriana,1,0,H
+2018-01-28,Birkirkara,Senglea Athletic,5,0,H
+2018-01-28,Balzan FC,Hamrun Spartans,2,0,H
+2018-02-02,Gzira United,St. Andrews,1,1,D
+2018-02-03,Senglea Athletic,Tarxien Rainbows,2,2,D
+2018-02-03,Sliema Wanderers,Lija Athletic,2,0,H
+2018-02-03,Floriana,Hamrun Spartans,1,0,H
+2018-02-03,Naxxar Lions,Birkirkara,0,2,A
+2018-02-04,Mosta,Hibernians,0,0,D
+2018-02-04,Valletta FC,Balzan FC,0,0,D
+2018-02-09,St. Andrews,Mosta,0,0,D
+2018-02-10,Birkirkara,Sliema Wanderers,2,1,H
+2018-02-10,Balzan FC,Floriana,1,1,D
+2018-02-12,Lija Athletic,Valletta FC,1,3,A
+2018-02-12,Tarxien Rainbows,Naxxar Lions,5,2,H
+2018-02-12,Hamrun Spartans,Gzira United,1,2,A
+2018-02-12,Hibernians,Senglea Athletic,5,1,H
+2018-02-23,Naxxar Lions,Hibernians,0,0,D
+2018-02-24,Lija Athletic,Balzan FC,0,3,A
+2018-02-24,Senglea Athletic,St. Andrews,2,1,H
+2018-02-24,Gzira United,Floriana,0,0,D
+2018-02-24,Sliema Wanderers,Tarxien Rainbows,1,1,D
+2018-02-25,Mosta,Hamrun Spartans,0,2,A
+2018-02-25,Valletta FC,Birkirkara,0,0,D
+2018-03-03,Birkirkara,Lija Athletic,2,1,H
+2018-03-03,Floriana,Mosta,5,0,H
+2018-03-03,St. Andrews,Naxxar Lions,0,0,D
+2018-03-03,Tarxien Rainbows,Valletta FC,0,2,A
+2018-03-04,Hamrun Spartans,Senglea Athletic,3,0,H
+2018-03-04,Hibernians,Sliema Wanderers,0,1,A
+2018-03-05,Balzan FC,Gzira United,0,0,D
+2018-03-09,Lija Athletic,Tarxien Rainbows,0,4,A
+2018-03-10,Senglea Athletic,Floriana,0,0,D
+2018-03-10,Sliema Wanderers,St. Andrews,1,0,H
+2018-03-10,Birkirkara,Balzan FC,1,3,A
+2018-03-10,Naxxar Lions,Hamrun Spartans,1,4,A
+2018-03-11,Mosta,Gzira United,3,5,A
+2018-03-11,Valletta FC,Hibernians,2,1,H
+2018-03-16,Tarxien Rainbows,Birkirkara,1,3,A
+2018-03-17,Balzan FC,Mosta,2,0,H
+2018-03-17,Floriana,Naxxar Lions,2,0,H
+2018-03-17,St. Andrews,Valletta FC,0,1,A
+2018-03-17,Hamrun Spartans,Sliema Wanderers,2,3,A
+2018-03-18,Gzira United,Senglea Athletic,4,1,H
+2018-03-18,Hibernians,Lija Athletic,7,0,H
+2018-04-06,Senglea Athletic,Mosta,5,2,H
+2018-04-07,Lija Athletic,St. Andrews,1,2,A
+2018-04-07,Naxxar Lions,Gzira United,0,2,A
+2018-04-07,Birkirkara,Hibernians,1,3,A
+2018-04-07,Tarxien Rainbows,Balzan FC,3,1,H
+2018-04-08,Sliema Wanderers,Floriana,2,2,D
+2018-04-08,Valletta FC,Hamrun Spartans,3,0,H
+2018-04-13,Hamrun Spartans,Lija Athletic,1,1,D
+2018-04-14,St. Andrews,Birkirkara,1,0,H
+2018-04-14,Floriana,Valletta FC,1,1,D
+2018-04-14,Balzan FC,Senglea Athletic,2,1,H
+2018-04-14,Gzira United,Sliema Wanderers,2,1,H
+2018-04-15,Mosta,Naxxar Lions,0,2,A
+2018-04-15,Hibernians,Tarxien Rainbows,2,2,D
+2018-04-20,Naxxar Lions,Senglea Athletic,3,0,H
+2018-04-20,Sliema Wanderers,Mosta,0,1,A
+2018-04-20,Tarxien Rainbows,St. Andrews,0,0,D
+2018-04-21,Valletta FC,Gzira United,2,1,H
+2018-04-21,Birkirkara,Hamrun Spartans,4,2,H
+2018-04-21,Hibernians,Balzan FC,1,0,H
+2018-04-21,Lija Athletic,Floriana,2,6,A

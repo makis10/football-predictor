@@ -1,0 +1,196 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2016-08-12,Bangor City,Cefn Druids AFC,2,1,H
+2016-08-13,Newtown AFC,Bala Town,0,0,D
+2016-08-13,Carmarthen Town,GAP Connah S Quay FC,0,0,D
+2016-08-14,The New Saints,Aberystwyth Town,2,1,H
+2016-08-14,Airbus UK,Cardiff MET,1,0,H
+2016-08-14,Rhyl,Llandudno,0,0,D
+2016-08-20,Newtown AFC,Carmarthen Town,4,2,H
+2016-08-20,Rhyl,Cefn Druids AFC,0,3,A
+2016-08-20,Llandudno,The New Saints,0,5,A
+2016-08-21,Cardiff MET,Bala Town,0,1,A
+2016-08-21,Bangor City,GAP Connah S Quay FC,0,2,A
+2016-08-21,Airbus UK,Aberystwyth Town,0,1,A
+2016-08-27,Carmarthen Town,Airbus UK,2,1,H
+2016-08-27,Cefn Druids AFC,Cardiff MET,0,0,D
+2016-08-27,Bangor City,Bala Town,2,0,H
+2016-08-28,The New Saints,Rhyl,10,0,H
+2016-08-28,GAP Connah S Quay FC,Newtown AFC,1,0,H
+2016-08-28,Llandudno,Aberystwyth Town,0,1,A
+2016-08-30,Bala Town,Carmarthen Town,0,0,D
+2016-08-30,Llandudno,Airbus UK,2,0,H
+2016-08-31,Cardiff MET,The New Saints,1,2,A
+2016-08-31,Cefn Druids AFC,GAP Connah S Quay FC,0,0,D
+2016-08-31,Bangor City,Newtown AFC,2,1,H
+2016-08-31,Rhyl,Aberystwyth Town,3,1,H
+2016-09-03,Carmarthen Town,Llandudno,0,1,A
+2016-09-03,Bangor City,Aberystwyth Town,4,0,H
+2016-09-03,GAP Connah S Quay FC,Bala Town,1,1,D
+2016-09-04,Newtown AFC,Cefn Druids AFC,1,1,D
+2016-09-04,Airbus UK,The New Saints,1,4,A
+2016-09-04,Rhyl,Cardiff MET,1,0,H
+2016-09-10,Aberystwyth Town,Carmarthen Town,0,3,A
+2016-09-10,Llandudno,Newtown AFC,0,0,D
+2016-09-10,Rhyl,Airbus UK,3,1,H
+2016-09-11,Bala Town,Cefn Druids AFC,2,0,H
+2016-09-11,Cardiff MET,GAP Connah S Quay FC,1,2,A
+2016-09-11,The New Saints,Bangor City,4,0,H
+2016-09-17,Newtown AFC,Rhyl,3,3,D
+2016-09-17,Carmarthen Town,Bangor City,1,1,D
+2016-09-17,The New Saints,Bala Town,5,1,H
+2016-09-18,GAP Connah S Quay FC,Aberystwyth Town,4,0,H
+2016-09-18,Llandudno,Cardiff MET,0,1,A
+2016-09-18,Airbus UK,Cefn Druids AFC,3,2,H
+2016-09-20,Bala Town,The New Saints,0,2,A
+2016-09-20,Cardiff MET,Newtown AFC,2,1,H
+2016-09-20,GAP Connah S Quay FC,Llandudno,1,1,D
+2016-09-20,Carmarthen Town,Aberystwyth Town,0,5,A
+2016-09-20,Cefn Druids AFC,Airbus UK,2,2,D
+2016-09-20,Rhyl,Bangor City,1,0,H
+2016-09-23,Bala Town,Bangor City,1,1,D
+2016-09-24,Newtown AFC,Airbus UK,2,4,A
+2016-09-24,Cardiff MET,Aberystwyth Town,1,0,H
+2016-09-25,The New Saints,Carmarthen Town,2,1,H
+2016-09-25,GAP Connah S Quay FC,Rhyl,2,0,H
+2016-09-25,Llandudno,Cefn Druids AFC,0,0,D
+2016-09-30,Cefn Druids AFC,Rhyl,4,3,H
+2016-10-01,Aberystwyth Town,The New Saints,1,5,A
+2016-10-01,Airbus UK,Llandudno,2,3,A
+2016-10-02,Bala Town,Newtown AFC,1,0,H
+2016-10-02,GAP Connah S Quay FC,Carmarthen Town,1,0,H
+2016-10-02,Bangor City,Cardiff MET,2,1,H
+2016-10-14,Aberystwyth Town,Rhyl,4,0,H
+2016-10-15,Carmarthen Town,Newtown AFC,3,1,H
+2016-10-15,The New Saints,Llandudno,5,0,H
+2016-10-16,Bala Town,Airbus UK,3,3,D
+2016-10-16,Cardiff MET,Cefn Druids AFC,5,0,H
+2016-10-16,GAP Connah S Quay FC,Bangor City,2,2,D
+2016-10-21,Cefn Druids AFC,Bala Town,4,4,D
+2016-10-22,Airbus UK,Carmarthen Town,1,1,D
+2016-10-22,Bangor City,Rhyl,3,2,H
+2016-10-23,Aberystwyth Town,Llandudno,0,0,D
+2016-10-23,The New Saints,Newtown AFC,1,0,H
+2016-10-23,GAP Connah S Quay FC,Cardiff MET,0,0,D
+2016-10-28,Cefn Druids AFC,Bangor City,2,3,A
+2016-10-29,Newtown AFC,Llandudno,0,0,D
+2016-10-29,Carmarthen Town,Bala Town,2,3,A
+2016-10-29,Aberystwyth Town,Airbus UK,3,1,H
+2016-10-30,Cardiff MET,Rhyl,4,0,H
+2016-10-30,The New Saints,GAP Connah S Quay FC,3,0,H
+2016-11-04,Cefn Druids AFC,Llandudno,1,3,A
+2016-11-05,Aberystwyth Town,GAP Connah S Quay FC,1,3,A
+2016-11-05,Bala Town,Cardiff MET,1,0,H
+2016-11-05,Airbus UK,Newtown AFC,0,2,A
+2016-11-05,Rhyl,Carmarthen Town,0,1,A
+2016-11-05,Bangor City,The New Saints,1,2,A
+2016-11-11,Bala Town,Aberystwyth Town,4,0,H
+2016-11-13,Cardiff MET,Airbus UK,2,0,H
+2016-11-13,Newtown AFC,Bangor City,1,2,A
+2016-11-13,Llandudno,GAP Connah S Quay FC,0,2,A
+2016-11-13,Carmarthen Town,Cefn Druids AFC,2,2,D
+2016-11-18,Carmarthen Town,The New Saints,2,4,A
+2016-11-19,Cardiff MET,Bangor City,4,0,H
+2016-11-19,Newtown AFC,GAP Connah S Quay FC,2,1,H
+2016-11-19,Llandudno,Bala Town,1,3,A
+2016-11-19,Airbus UK,Rhyl,0,3,A
+2016-11-25,Aberystwyth Town,Bala Town,1,3,A
+2016-11-25,The New Saints,Airbus UK,4,0,H
+2016-11-25,Cefn Druids AFC,Newtown AFC,1,0,H
+2016-11-25,Rhyl,GAP Connah S Quay FC,1,2,A
+2016-11-26,Bangor City,Carmarthen Town,1,2,A
+2016-11-27,Cardiff MET,Llandudno,1,1,D
+2016-12-10,The New Saints,Cardiff MET,3,1,H
+2016-12-10,Rhyl,Newtown AFC,1,3,A
+2016-12-10,Llandudno,Carmarthen Town,2,0,H
+2016-12-13,GAP Connah S Quay FC,Cefn Druids AFC,1,0,H
+2016-12-14,Rhyl,The New Saints,1,2,A
+2016-12-16,Cefn Druids AFC,Aberystwyth Town,0,3,A
+2016-12-17,Bala Town,Llandudno,3,0,H
+2016-12-17,Newtown AFC,Cardiff MET,0,1,A
+2016-12-17,Carmarthen Town,Rhyl,5,0,H
+2016-12-17,Bangor City,Airbus UK,2,1,H
+2016-12-17,GAP Connah S Quay FC,The New Saints,0,3,A
+2016-12-20,Airbus UK,Bala Town,2,4,A
+2016-12-20,Aberystwyth Town,Bangor City,0,3,A
+2016-12-26,Airbus UK,GAP Connah S Quay FC,0,3,A
+2016-12-26,Aberystwyth Town,Newtown AFC,1,0,H
+2016-12-26,Bala Town,Rhyl,6,1,H
+2016-12-26,The New Saints,Cefn Druids AFC,4,0,H
+2016-12-26,Carmarthen Town,Cardiff MET,0,0,D
+2016-12-26,Bangor City,Llandudno,2,1,H
+2016-12-30,GAP Connah S Quay FC,Airbus UK,5,1,H
+2016-12-30,Cefn Druids AFC,The New Saints,0,2,A
+2016-12-30,Rhyl,Bala Town,2,0,H
+2016-12-31,Cardiff MET,Carmarthen Town,1,3,A
+2016-12-31,Newtown AFC,Aberystwyth Town,2,2,D
+2017-01-01,Llandudno,Bangor City,1,0,H
+2017-01-07,Aberystwyth Town,Cefn Druids AFC,0,1,A
+2017-01-14,Aberystwyth Town,Cardiff MET,0,2,A
+2017-01-14,Bala Town,GAP Connah S Quay FC,0,0,D
+2017-01-14,Newtown AFC,The New Saints,3,3,D
+2017-01-14,Cefn Druids AFC,Carmarthen Town,0,0,D
+2017-01-14,Llandudno,Rhyl,2,2,D
+2017-01-14,Airbus UK,Bangor City,4,2,H
+2017-02-04,Aberystwyth Town,Airbus UK,1,0,H
+2017-02-04,The New Saints,Cardiff MET,2,0,H
+2017-02-04,GAP Connah S Quay FC,Carmarthen Town,0,1,A
+2017-02-04,Llandudno,Newtown AFC,1,2,A
+2017-02-04,Rhyl,Cefn Druids AFC,0,2,A
+2017-02-04,Bala Town,Bangor City,3,2,H
+2017-02-10,Bala Town,Cardiff MET,3,1,H
+2017-02-10,Bangor City,GAP Connah S Quay FC,2,1,H
+2017-02-10,Airbus UK,Llandudno,0,0,D
+2017-02-11,Newtown AFC,Rhyl,3,2,H
+2017-02-11,Carmarthen Town,The New Saints,1,0,H
+2017-02-11,Cefn Druids AFC,Aberystwyth Town,2,1,H
+2017-02-17,Cefn Druids AFC,Newtown AFC,1,2,A
+2017-02-18,Aberystwyth Town,Llandudno,3,4,A
+2017-02-18,Carmarthen Town,Bala Town,0,1,A
+2017-02-18,Airbus UK,Rhyl,0,2,A
+2017-02-18,Bangor City,Cardiff MET,3,2,H
+2017-03-03,Bala Town,GAP Connah S Quay FC,1,1,D
+2017-03-03,Llandudno,Cefn Druids AFC,0,0,D
+2017-03-03,Rhyl,Aberystwyth Town,2,2,D
+2017-03-04,Cardiff MET,Carmarthen Town,2,2,D
+2017-03-04,Newtown AFC,Airbus UK,4,1,H
+2017-03-04,The New Saints,Bangor City,4,0,H
+2017-03-10,Airbus UK,Cefn Druids AFC,0,0,D
+2017-03-10,Aberystwyth Town,Newtown AFC,0,4,A
+2017-03-10,Llandudno,Rhyl,1,1,D
+2017-03-11,GAP Connah S Quay FC,Cardiff MET,2,0,H
+2017-03-11,Carmarthen Town,Bangor City,2,3,A
+2017-03-12,The New Saints,Bala Town,3,2,H
+2017-03-17,Cefn Druids AFC,Rhyl,4,1,H
+2017-03-17,Bangor City,Bala Town,1,2,A
+2017-03-18,Cardiff MET,The New Saints,0,5,A
+2017-03-18,Carmarthen Town,GAP Connah S Quay FC,1,3,A
+2017-03-18,Airbus UK,Aberystwyth Town,4,2,H
+2017-03-19,Newtown AFC,Llandudno,2,2,D
+2017-03-21,GAP Connah S Quay FC,The New Saints,2,1,H
+2017-03-25,Aberystwyth Town,Cefn Druids AFC,0,0,D
+2017-03-25,Cardiff MET,Bala Town,2,3,A
+2017-03-25,The New Saints,Carmarthen Town,2,0,H
+2017-03-25,GAP Connah S Quay FC,Bangor City,1,1,D
+2017-03-25,Llandudno,Airbus UK,2,2,D
+2017-03-26,Rhyl,Newtown AFC,0,2,A
+2017-04-07,The New Saints,GAP Connah S Quay FC,1,0,H
+2017-04-08,Bala Town,Carmarthen Town,1,1,D
+2017-04-08,Newtown AFC,Cefn Druids AFC,1,1,D
+2017-04-08,Rhyl,Airbus UK,2,1,H
+2017-04-09,Cardiff MET,Bangor City,2,3,A
+2017-04-09,Llandudno,Aberystwyth Town,0,2,A
+2017-04-14,GAP Connah S Quay FC,Bala Town,2,0,H
+2017-04-14,Carmarthen Town,Cardiff MET,0,4,A
+2017-04-14,Cefn Druids AFC,Llandudno,3,2,H
+2017-04-14,Bangor City,The New Saints,3,0,H
+2017-04-14,Airbus UK,Newtown AFC,0,7,A
+2017-04-14,Aberystwyth Town,Rhyl,4,0,H
+2017-04-22,Bala Town,The New Saints,4,6,A
+2017-04-22,Cardiff MET,GAP Connah S Quay FC,0,0,D
+2017-04-22,Newtown AFC,Aberystwyth Town,6,1,H
+2017-04-22,Cefn Druids AFC,Airbus UK,3,1,H
+2017-04-22,Bangor City,Carmarthen Town,0,2,A
+2017-04-22,Rhyl,Llandudno,1,1,D
+2017-05-06,Bangor City,Newtown AFC,3,2,H
+2017-05-07,Carmarthen Town,Cardiff MET,1,2,A
+2017-05-13,Bangor City,Cardiff MET,1,0,H

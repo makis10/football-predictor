@@ -1,0 +1,183 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2023-03-04,Ordabasy,Kaspiy,3,1,H
+2023-03-04,Zhetysu,Aktobe,0,1,A
+2023-03-04,FK Tobol Kostanay,FK Aksu,3,1,H
+2023-03-04,FC Astana,Shakhter Karagandy,2,1,H
+2023-03-05,Maqtaaral,Okzhetpes,0,1,A
+2023-03-05,Kairat Almaty,Atyrau,2,2,D
+2023-03-05,Kaisar,Kyzyl-Zhar,0,1,A
+2023-03-09,Zhetysu,FC Astana,0,2,A
+2023-03-09,Shakhter Karagandy,Ordabasy,1,4,A
+2023-03-09,Aktobe,Okzhetpes,5,1,H
+2023-03-09,FK Aksu,Kairat Almaty,1,3,A
+2023-03-10,Kaspiy,FK Tobol Kostanay,0,1,A
+2023-03-10,Atyrau,Kaisar,2,1,H
+2023-03-10,Kyzyl-Zhar,Maqtaaral,1,0,H
+2023-03-14,Kairat Almaty,Kaspiy,3,1,H
+2023-03-14,Ordabasy,Zhetysu,2,0,H
+2023-03-14,FK Tobol Kostanay,Shakhter Karagandy,2,1,H
+2023-03-14,FC Astana,Aktobe,1,4,A
+2023-03-14,Kaisar,FK Aksu,2,2,D
+2023-03-15,Maqtaaral,Atyrau,0,1,A
+2023-03-15,Okzhetpes,Kyzyl-Zhar,0,1,A
+2023-04-01,Kaspiy,Kaisar,1,3,A
+2023-04-01,Shakhter Karagandy,Kairat Almaty,1,1,D
+2023-04-01,FK Aksu,Maqtaaral,2,1,H
+2023-04-02,Zhetysu,FK Tobol Kostanay,1,1,D
+2023-04-02,Aktobe,Kyzyl-Zhar,1,3,A
+2023-04-02,Atyrau,Okzhetpes,0,4,A
+2023-04-02,FC Astana,Ordabasy,2,0,H
+2023-04-08,Okzhetpes,FK Aksu,3,0,H
+2023-04-08,Kyzyl-Zhar,Atyrau,1,0,H
+2023-04-08,Maqtaaral,Kaspiy,3,1,H
+2023-04-08,Kaisar,Shakhter Karagandy,2,1,H
+2023-04-09,Kairat Almaty,Zhetysu,2,3,A
+2023-04-09,FK Tobol Kostanay,FC Astana,0,1,A
+2023-04-09,Ordabasy,Aktobe,1,1,D
+2023-04-15,Kaspiy,Okzhetpes,2,1,H
+2023-04-15,Zhetysu,Kaisar,0,2,A
+2023-04-15,Shakhter Karagandy,Maqtaaral,3,0,H
+2023-04-16,FK Aksu,Kyzyl-Zhar,0,2,A
+2023-04-16,Aktobe,Atyrau,4,0,H
+2023-04-16,FC Astana,Kairat Almaty,0,3,A
+2023-04-16,Ordabasy,FK Tobol Kostanay,4,1,H
+2023-04-22,Kyzyl-Zhar,Kaspiy,1,1,D
+2023-04-22,Maqtaaral,Zhetysu,1,2,A
+2023-04-23,Okzhetpes,Shakhter Karagandy,1,1,D
+2023-04-23,FK Tobol Kostanay,Aktobe,2,2,D
+2023-04-23,Atyrau,FK Aksu,2,1,H
+2023-04-23,Kairat Almaty,Ordabasy,2,2,D
+2023-04-23,Kaisar,FC Astana,1,2,A
+2023-05-06,FK Tobol Kostanay,Kairat Almaty,2,3,A
+2023-05-06,Aktobe,FK Aksu,2,1,H
+2023-05-06,FC Astana,Maqtaaral,2,0,H
+2023-05-06,Ordabasy,Kaisar,4,0,H
+2023-05-07,Zhetysu,Okzhetpes,1,0,H
+2023-05-07,Kaspiy,Atyrau,1,1,D
+2023-05-07,Shakhter Karagandy,Kyzyl-Zhar,1,0,H
+2023-05-10,Maqtaaral,FC Astana,0,1,A
+2023-05-13,FK Aksu,Kaspiy,0,1,A
+2023-05-13,Kyzyl-Zhar,Zhetysu,1,0,H
+2023-05-13,Atyrau,Shakhter Karagandy,2,1,H
+2023-05-13,Maqtaaral,Ordabasy,1,2,A
+2023-05-14,Okzhetpes,FC Astana,0,0,D
+2023-05-14,Kairat Almaty,Aktobe,2,1,H
+2023-05-14,Kaisar,FK Tobol Kostanay,1,0,H
+2023-05-20,Zhetysu,Atyrau,0,3,A
+2023-05-20,Shakhter Karagandy,FK Aksu,2,1,H
+2023-05-20,FC Astana,Kyzyl-Zhar,3,2,H
+2023-05-21,FK Tobol Kostanay,Maqtaaral,1,0,H
+2023-05-21,Kairat Almaty,Kaisar,0,3,A
+2023-05-21,Aktobe,Kaspiy,0,0,D
+2023-05-21,Ordabasy,Okzhetpes,1,0,H
+2023-05-24,FK Aksu,FC Astana,0,1,A
+2023-05-27,FK Aksu,Zhetysu,2,1,H
+2023-05-27,Kaspiy,Shakhter Karagandy,1,1,D
+2023-05-27,Maqtaaral,Kairat Almaty,3,1,H
+2023-05-28,Okzhetpes,FK Tobol Kostanay,1,2,A
+2023-05-28,Kyzyl-Zhar,Ordabasy,0,1,A
+2023-05-28,Atyrau,FC Astana,0,0,D
+2023-05-28,Kaisar,Aktobe,0,1,A
+2023-06-03,Kairat Almaty,Okzhetpes,2,1,H
+2023-06-03,FC Astana,FK Aksu,1,0,H
+2023-06-03,FK Tobol Kostanay,Kyzyl-Zhar,1,0,H
+2023-06-03,Ordabasy,Atyrau,2,1,H
+2023-06-03,Aktobe,Shakhter Karagandy,2,0,H
+2023-06-04,Zhetysu,Kaspiy,3,2,H
+2023-06-04,Kaisar,Maqtaaral,0,2,A
+2023-06-24,FC Astana,Kaspiy,3,1,H
+2023-06-24,Kairat Almaty,Kyzyl-Zhar,3,0,H
+2023-06-24,Atyrau,FK Tobol Kostanay,3,0,H
+2023-06-24,Shakhter Karagandy,Zhetysu,0,1,A
+2023-06-24,FK Aksu,Ordabasy,0,1,A
+2023-06-25,Okzhetpes,Kaisar,0,1,A
+2023-06-25,Aktobe,Maqtaaral,1,1,D
+2023-07-01,Maqtaaral,Aktobe,1,2,A
+2023-07-01,Zhetysu,Shakhter Karagandy,1,3,A
+2023-07-01,Kaisar,Okzhetpes,0,1,A
+2023-07-02,Kyzyl-Zhar,Kairat Almaty,2,1,H
+2023-07-02,Kaspiy,FC Astana,1,2,A
+2023-07-02,FK Tobol Kostanay,Atyrau,1,0,H
+2023-07-02,Ordabasy,FK Aksu,2,0,H
+2023-07-10,Okzhetpes,Ordabasy,0,4,A
+2023-07-15,Okzhetpes,Kairat Almaty,0,1,A
+2023-07-15,Maqtaaral,Kaisar,2,2,D
+2023-07-15,Shakhter Karagandy,Aktobe,0,1,A
+2023-07-15,Atyrau,Ordabasy,1,1,D
+2023-07-16,Kaspiy,Zhetysu,1,2,A
+2023-07-22,Zhetysu,FK Aksu,1,1,D
+2023-07-22,FC Astana,Atyrau,0,0,D
+2023-07-22,Aktobe,Kaisar,1,0,H
+2023-07-22,Ordabasy,Kyzyl-Zhar,2,1,H
+2023-07-23,Shakhter Karagandy,Kaspiy,1,0,H
+2023-07-23,Kairat Almaty,Maqtaaral,2,2,D
+2023-07-23,FK Tobol Kostanay,Okzhetpes,2,0,H
+2023-07-29,Kyzyl-Zhar,FC Astana,1,0,H
+2023-07-29,Kaisar,Kairat Almaty,0,0,D
+2023-07-29,FK Aksu,Shakhter Karagandy,2,1,H
+2023-07-30,Kaspiy,Aktobe,2,2,D
+2023-07-30,Atyrau,Zhetysu,0,1,A
+2023-08-05,Zhetysu,Kyzyl-Zhar,1,1,D
+2023-08-05,Kaspiy,FK Aksu,3,1,H
+2023-08-05,Shakhter Karagandy,Atyrau,2,2,D
+2023-08-06,FK Tobol Kostanay,Kaisar,0,2,A
+2023-08-06,Aktobe,Kairat Almaty,4,2,H
+2023-08-12,Okzhetpes,Zhetysu,2,1,H
+2023-08-12,Atyrau,Kaspiy,1,0,H
+2023-08-13,Kyzyl-Zhar,Shakhter Karagandy,1,1,D
+2023-08-13,Kairat Almaty,FK Tobol Kostanay,2,1,H
+2023-08-13,Kaisar,Ordabasy,2,3,A
+2023-08-13,FK Aksu,Aktobe,1,1,D
+2023-08-19,Shakhter Karagandy,Okzhetpes,2,0,H
+2023-08-19,Kaspiy,Kyzyl-Zhar,1,2,A
+2023-08-19,FK Aksu,Atyrau,4,1,H
+2023-08-20,Zhetysu,Maqtaaral,0,1,A
+2023-08-20,FC Astana,Kaisar,1,1,D
+2023-08-20,Aktobe,FK Tobol Kostanay,1,1,D
+2023-08-20,Ordabasy,Kairat Almaty,1,0,H
+2023-08-26,Okzhetpes,Kaspiy,3,3,D
+2023-08-26,Maqtaaral,Shakhter Karagandy,3,1,H
+2023-08-26,Kaisar,Zhetysu,1,1,D
+2023-08-27,Kyzyl-Zhar,FK Aksu,1,0,H
+2023-08-27,Kairat Almaty,FC Astana,1,0,H
+2023-08-27,Atyrau,Aktobe,0,0,D
+2023-08-27,FK Tobol Kostanay,Ordabasy,0,0,D
+2023-09-15,FK Aksu,Okzhetpes,0,1,A
+2023-09-15,Kaspiy,Maqtaaral,0,2,A
+2023-09-16,Atyrau,Kyzyl-Zhar,0,0,D
+2023-09-16,FC Astana,FK Tobol Kostanay,2,1,H
+2023-09-16,Aktobe,Ordabasy,2,1,H
+2023-09-17,Zhetysu,Kairat Almaty,1,2,A
+2023-09-17,Shakhter Karagandy,Kaisar,2,2,D
+2023-09-23,Kyzyl-Zhar,Aktobe,0,0,D
+2023-09-23,Maqtaaral,FK Aksu,2,0,H
+2023-09-23,Kairat Almaty,Shakhter Karagandy,0,0,D
+2023-09-23,Kaisar,Kaspiy,3,1,H
+2023-09-24,Okzhetpes,Atyrau,0,0,D
+2023-09-24,FK Tobol Kostanay,Zhetysu,1,2,A
+2023-09-24,Ordabasy,FC Astana,1,2,A
+2023-09-27,Kyzyl-Zhar,FK Tobol Kostanay,1,1,D
+2023-09-27,FC Astana,Okzhetpes,5,2,H
+2023-09-27,Ordabasy,Maqtaaral,1,0,H
+2023-09-30,Shakhter Karagandy,FK Tobol Kostanay,2,1,H
+2023-09-30,Aktobe,FC Astana,2,0,H
+2023-10-01,Kyzyl-Zhar,Okzhetpes,1,2,A
+2023-10-01,FK Aksu,Kaisar,2,0,H
+2023-10-01,Zhetysu,Ordabasy,1,2,A
+2023-10-01,Kaspiy,Kairat Almaty,1,1,D
+2023-10-01,Atyrau,Maqtaaral,2,0,H
+2023-10-05,Maqtaaral,FK Tobol Kostanay,1,1,D
+2023-10-21,Maqtaaral,Kyzyl-Zhar,2,1,H
+2023-10-21,Kairat Almaty,FK Aksu,4,1,H
+2023-10-21,FK Tobol Kostanay,Kaspiy,1,1,D
+2023-10-21,FC Astana,Zhetysu,2,1,H
+2023-10-22,Okzhetpes,Aktobe,1,1,D
+2023-10-22,Kaisar,Atyrau,1,0,H
+2023-10-22,Ordabasy,Shakhter Karagandy,3,1,H
+2023-10-29,Kyzyl-Zhar,Kaisar,0,1,A
+2023-10-29,Atyrau,Kairat Almaty,0,0,D
+2023-10-29,FK Aksu,FK Tobol Kostanay,0,3,A
+2023-10-29,Kaspiy,Ordabasy,1,0,H
+2023-10-29,Okzhetpes,Maqtaaral,1,1,D
+2023-10-29,Aktobe,Zhetysu,2,2,D
+2023-10-29,Shakhter Karagandy,FC Astana,1,1,D

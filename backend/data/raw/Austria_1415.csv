@@ -1,0 +1,181 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,PSH,PSD,PSA
+19/07/2014,Salzburg,SK Rapid,6,1,H,1.32,5.74,11
+19/07/2014,Admira,Wolfsberger AC,1,4,A,2.01,3.58,4.04
+19/07/2014,Altach,Sturm Graz,1,0,H,2.52,3.48,2.94
+19/07/2014,Ried,Neustadt,3,1,H,1.79,3.95,4.68
+20/07/2014,Austria Vienna,Grodig,1,1,D,1.69,4.05,5.34
+26/07/2014,Wolfsberger AC,Austria Vienna,4,0,H,3.04,3.49,2.43
+26/07/2014,Neustadt,Salzburg,0,5,A,18.4,9.3,1.16
+26/07/2014,SK Rapid,Ried,1,0,H,1.65,4.2,5.49
+27/07/2014,Grodig,Sturm Graz,2,1,H,2.29,3.56,3.25
+02/08/2014,Admira,SK Rapid,1,1,D,3.95,3.72,1.99
+02/08/2014,Austria Vienna,Altach,0,0,D,1.7,4.09,5.18
+02/08/2014,Ried,Salzburg,0,2,A,11.5,6.46,1.28
+02/08/2014,Sturm Graz,Neustadt,4,2,H,1.43,4.81,8.44
+03/08/2014,Grodig,Wolfsberger AC,0,2,A,2.72,3.63,2.62
+09/08/2014,Neustadt,Austria Vienna,2,2,D,5.09,4,1.73
+09/08/2014,Altach,Wolfsberger AC,1,2,A,2.59,3.51,2.83
+09/08/2014,SK Rapid,Sturm Graz,1,1,D,1.92,3.81,4.16
+09/08/2014,Ried,Admira,1,1,D,2.2,3.63,3.39
+10/08/2014,Salzburg,Grodig,8,0,H,1.1,11.43,25.97
+13/08/2014,Altach,Admira,0,2,A,2.09,3.69,3.65
+16/08/2014,SK Rapid,Altach,0,1,A,1.66,4.16,5.51
+16/08/2014,Wolfsberger AC,Ried,4,1,H,1.85,3.85,4.45
+16/08/2014,Admira,Salzburg,0,3,A,10,6.4,1.3
+16/08/2014,Grodig,Neustadt,3,0,H,1.61,4.73,5.14
+17/08/2014,Sturm Graz,Austria Vienna,1,1,D,2.64,3.3,2.91
+23/08/2014,Sturm Graz,Wolfsberger AC,1,2,A,2.38,3.52,3.12
+23/08/2014,Neustadt,Admira,5,4,H,3.44,3.68,2.16
+23/08/2014,Ried,Grodig,2,2,D,2.42,3.74,2.9
+23/08/2014,Salzburg,Altach,5,0,H,1.15,9.74,19.71
+24/08/2014,Austria Vienna,SK Rapid,2,2,D,2.31,3.25,3.48
+30/08/2014,Salzburg,Sturm Graz,2,3,A,1.16,9.45,17.76
+30/08/2014,Wolfsberger AC,Neustadt,0,1,A,1.37,5.8,8.24
+30/08/2014,Admira,Austria Vienna,2,1,H,3.81,3.76,2.01
+30/08/2014,Altach,Ried,2,2,D,2.04,3.61,3.87
+31/08/2014,SK Rapid,Grodig,2,0,H,1.79,4.07,4.56
+13/09/2014,Austria Vienna,Ried,3,1,H,1.56,4.6,6.01
+13/09/2014,Sturm Graz,Admira,0,2,A,1.68,4.13,5.31
+14/09/2014,Wolfsberger AC,Salzburg,1,0,H,8.21,5.48,1.39
+17/09/2014,Grodig,Altach,3,3,D,2.17,3.47,3.62
+17/09/2014,Neustadt,SK Rapid,1,5,A,5.09,4.27,1.68
+20/09/2014,SK Rapid,Wolfsberger AC,3,0,H,1.99,3.69,3.96
+20/09/2014,Admira,Grodig,0,0,D,2.21,3.66,3.33
+20/09/2014,Altach,Neustadt,2,0,H,1.58,4.51,5.83
+20/09/2014,Ried,Sturm Graz,0,1,A,2.75,3.51,2.66
+21/09/2014,Salzburg,Austria Vienna,2,3,A,1.33,6.26,9.01
+27/09/2014,Sturm Graz,Altach,2,2,D,1.77,3.83,4.99
+27/09/2014,Wolfsberger AC,Admira,2,1,H,1.91,3.82,4.19
+27/09/2014,Grodig,Austria Vienna,0,0,D,3.27,3.72,2.22
+27/09/2014,Neustadt,Ried,0,1,A,3.12,3.61,2.34
+28/09/2014,SK Rapid,Salzburg,1,2,A,3.6,3.74,2.09
+04/10/2014,Austria Vienna,Wolfsberger AC,0,2,A,1.88,3.8,4.32
+04/10/2014,Admira,Altach,0,2,A,2.21,3.57,3.42
+04/10/2014,Sturm Graz,Grodig,1,0,H,1.88,3.89,4.19
+05/10/2014,Ried,SK Rapid,1,2,A,3.88,3.62,2.04
+05/10/2014,Salzburg,Neustadt,4,1,H,,,
+18/10/2014,Salzburg,Ried,4,2,H,1.13,10.92,18
+18/10/2014,Wolfsberger AC,Grodig,1,2,A,1.88,3.87,4.27
+18/10/2014,Altach,Austria Vienna,1,1,D,3.2,3.51,2.33
+18/10/2014,SK Rapid,Admira,0,0,D,1.52,4.51,6.81
+19/10/2014,Neustadt,Sturm Graz,0,0,D,3.67,3.63,2.09
+25/10/2014,Sturm Graz,SK Rapid,1,3,A,3.16,3.34,2.44
+25/10/2014,Wolfsberger AC,Altach,0,0,D,1.91,3.77,4.23
+25/10/2014,Admira,Ried,0,0,D,2.48,3.43,3.04
+25/10/2014,Austria Vienna,Neustadt,2,0,H,1.39,5.42,8.41
+26/10/2014,Grodig,Salzburg,2,2,D,8.7,5.82,1.35
+01/11/2014,Austria Vienna,Sturm Graz,0,3,A,1.98,3.56,4.17
+01/11/2014,Ried,Wolfsberger AC,1,0,H,2.49,3.54,2.98
+01/11/2014,Salzburg,Admira,2,0,H,1.16,9.09,17.8
+02/11/2014,Altach,SK Rapid,2,0,H,3.1,3.49,2.41
+05/11/2014,Neustadt,Grodig,2,4,A,3.4,3.61,2.2
+08/11/2014,Wolfsberger AC,Sturm Graz,0,2,A,2.91,3.38,2.58
+08/11/2014,Admira,Neustadt,1,1,D,1.67,4.16,5.42
+08/11/2014,Grodig,Ried,0,1,A,2.09,3.88,3.48
+09/11/2014,SK Rapid,Austria Vienna,2,3,A,2.32,3.47,3.26
+09/11/2014,Altach,Salzburg,4,1,H,7.27,5.32,1.43
+22/11/2014,Grodig,SK Rapid,3,1,H,3.34,3.66,2.21
+22/11/2014,Austria Vienna,Admira,4,0,H,1.53,4.46,6.74
+22/11/2014,Neustadt,Wolfsberger AC,2,0,H,3.33,3.7,2.21
+22/11/2014,Ried,Altach,2,1,H,2.46,3.56,2.96
+23/11/2014,Sturm Graz,Salzburg,1,2,A,5.58,4.21,1.65
+29/11/2014,Ried,Austria Vienna,1,1,D,3.13,3.57,2.35
+29/11/2014,Admira,Sturm Graz,0,2,A,3.52,3.48,2.2
+29/11/2014,Altach,Grodig,3,1,H,2.12,3.74,3.49
+29/11/2014,SK Rapid,Neustadt,3,0,H,1.4,5.29,8.19
+30/11/2014,Salzburg,Wolfsberger AC,2,2,D,1.2,8.05,14.98
+06/12/2014,Austria Vienna,Salzburg,2,4,A,4.77,4.19,1.74
+06/12/2014,Grodig,Admira,5,0,H,1.79,3.84,4.9
+06/12/2014,Neustadt,Altach,2,0,H,3.33,3.56,2.23
+06/12/2014,Sturm Graz,Ried,3,1,H,1.97,3.73,4.03
+07/12/2014,Wolfsberger AC,SK Rapid,1,1,D,3.21,3.5,2.34
+13/12/2014,Altach,Sturm Graz,2,0,H,2.59,3.54,2.81
+13/12/2014,Admira,Wolfsberger AC,2,1,H,3.03,3.33,2.53
+13/12/2014,Austria Vienna,Grodig,1,0,H,1.75,3.93,5
+13/12/2014,Ried,Neustadt,6,0,H,1.64,4.22,5.66
+14/12/2014,Salzburg,SK Rapid,1,2,A,1.33,6.14,9.06
+14/02/2015,SK Rapid,Ried,3,0,H,1.7,4.02,5.32
+14/02/2015,Altach,Admira,2,0,H,1.76,3.86,4.91
+14/02/2015,Neustadt,Salzburg,0,2,A,10.71,6.21,1.3
+15/02/2015,Wolfsberger AC,Austria Vienna,1,0,H,3.41,3.31,2.32
+21/02/2015,Austria Vienna,Altach,5,2,H,1.74,3.86,5.25
+21/02/2015,Sturm Graz,Neustadt,3,3,D,1.46,4.82,7.65
+22/02/2015,Ried,Salzburg,2,2,D,5.01,4.15,1.71
+22/02/2015,Admira,SK Rapid,1,1,D,4.05,3.68,1.98
+28/02/2015,Altach,Wolfsberger AC,1,0,H,2.28,3.4,3.43
+28/02/2015,Neustadt,Austria Vienna,1,0,H,5.24,3.87,1.74
+28/02/2015,SK Rapid,Sturm Graz,1,0,H,1.96,3.56,4.26
+28/02/2015,Ried,Admira,2,2,D,1.99,3.67,4.02
+01/03/2015,Salzburg,Grodig,3,1,H,1.28,6.61,10.47
+03/03/2015,Sturm Graz,Austria Vienna,2,1,H,2.77,3.5,2.64
+04/03/2015,Wolfsberger AC,Ried,1,2,A,2.41,3.44,3.13
+04/03/2015,Admira,Salzburg,1,4,A,7.21,5.27,1.43
+04/03/2015,Grodig,Neustadt,1,3,A,1.72,4.23,4.82
+04/03/2015,SK Rapid,Altach,1,0,H,1.55,4.27,6.92
+07/03/2015,Sturm Graz,Wolfsberger AC,2,0,H,1.81,3.76,4.86
+07/03/2015,Neustadt,Admira,0,0,D,2.72,3.5,2.68
+07/03/2015,Ried,Grodig,2,1,H,1.88,3.59,4.65
+07/03/2015,Salzburg,Altach,0,1,A,1.23,7.43,12.98
+08/03/2015,Austria Vienna,SK Rapid,2,1,H,3.18,3.22,2.49
+11/03/2015,Grodig,Sturm Graz,0,2,A,3.38,3.31,2.34
+14/03/2015,Admira,Austria Vienna,1,1,D,3.33,3.45,2.3
+14/03/2015,Wolfsberger AC,Neustadt,2,0,H,1.76,3.85,5.08
+14/03/2015,Altach,Ried,2,1,H,2.47,3.3,3.17
+14/03/2015,SK Rapid,Grodig,4,0,H,1.32,5.73,10.88
+15/03/2015,Salzburg,Sturm Graz,2,1,H,1.49,4.85,6.87
+18/03/2015,Grodig,Wolfsberger AC,2,0,H,2.49,3.41,3.02
+21/03/2015,Austria Vienna,Ried,0,1,A,1.93,3.76,4.16
+21/03/2015,Wolfsberger AC,Salzburg,3,2,H,7.66,4.98,1.44
+21/03/2015,Grodig,Altach,0,1,A,2.52,3.33,3.04
+21/03/2015,Sturm Graz,Admira,3,1,H,1.54,4.29,6.96
+22/03/2015,Neustadt,SK Rapid,0,1,A,8.01,4.76,1.45
+04/04/2015,Salzburg,Austria Vienna,3,1,H,1.44,5.24,7.1
+04/04/2015,Admira,Grodig,2,3,A,2.27,3.36,3.49
+04/04/2015,SK Rapid,Wolfsberger AC,4,1,H,1.48,4.66,7.35
+05/04/2015,Ried,Sturm Graz,1,2,A,2.61,3.41,2.86
+11/04/2015,Sturm Graz,Altach,5,0,H,1.53,4.27,7.25
+11/04/2015,Wolfsberger AC,Admira,2,0,H,1.96,3.84,3.91
+11/04/2015,Grodig,Austria Vienna,1,1,D,3.09,3.48,2.42
+11/04/2015,Neustadt,Ried,0,1,A,3.81,3.71,2.03
+12/04/2015,SK Rapid,Salzburg,3,3,D,2.46,3.59,2.96
+15/04/2015,Altach,Neustadt,3,1,H,1.67,4.02,5.49
+18/04/2015,Ried,SK Rapid,0,1,A,3.26,3.65,2.25
+18/04/2015,Admira,Altach,2,2,D,2.19,3.68,3.37
+18/04/2015,Salzburg,Neustadt,6,0,H,1.09,13.75,27.19
+18/04/2015,Sturm Graz,Grodig,2,1,H,1.58,4.5,5.8
+19/04/2015,Austria Vienna,Wolfsberger AC,1,1,D,1.74,4.12,4.81
+25/04/2015,Salzburg,Ried,2,1,H,1.24,7.4,11.5
+25/04/2015,Wolfsberger AC,Grodig,2,1,H,2.13,3.57,3.62
+25/04/2015,Neustadt,Sturm Graz,4,4,D,4.48,3.89,1.83
+25/04/2015,SK Rapid,Admira,1,1,D,1.38,5.5,8.49
+26/04/2015,Altach,Austria Vienna,2,0,H,3.1,3.56,2.36
+02/05/2015,Wolfsberger AC,Altach,2,0,H,2,3.67,3.95
+02/05/2015,Admira,Ried,1,0,H,2.64,3.5,2.76
+02/05/2015,Austria Vienna,Neustadt,2,1,H,1.37,5.55,8.8
+02/05/2015,Grodig,Salzburg,0,3,A,10.54,6.08,1.31
+03/05/2015,Sturm Graz,SK Rapid,2,2,D,3.11,3.56,2.37
+09/05/2015,Austria Vienna,Sturm Graz,0,0,D,2.31,3.57,3.2
+09/05/2015,Neustadt,Grodig,2,4,A,2.77,3.65,2.56
+09/05/2015,Ried,Wolfsberger AC,4,0,H,2.01,3.91,3.62
+09/05/2015,Salzburg,Admira,4,0,H,,,
+10/05/2015,Altach,SK Rapid,1,3,A,5.17,4.15,1.69
+16/05/2015,Altach,Salzburg,2,2,D,7.72,5.9,1.38
+16/05/2015,Wolfsberger AC,Sturm Graz,1,0,H,3.21,3.56,2.31
+16/05/2015,Admira,Neustadt,0,0,D,1.65,4.28,5.35
+16/05/2015,Grodig,Ried,3,2,H,2.85,3.54,2.55
+17/05/2015,SK Rapid,Austria Vienna,4,1,H,1.7,4.08,5.22
+19/05/2015,Ried,Altach,4,1,H,2.39,3.76,2.94
+20/05/2015,Austria Vienna,Admira,0,1,A,1.95,3.81,3.99
+20/05/2015,Neustadt,Wolfsberger AC,2,0,H,2.79,3.65,2.55
+20/05/2015,Sturm Graz,Salzburg,0,0,D,4.43,4.09,1.79
+24/05/2015,Admira,Sturm Graz,1,2,A,2.89,3.31,2.66
+24/05/2015,Altach,Grodig,2,0,H,1.72,4.34,4.6
+24/05/2015,SK Rapid,Neustadt,0,0,D,1.25,7.21,11.81
+24/05/2015,Ried,Austria Vienna,0,2,A,2.24,3.66,3.28
+24/05/2015,Salzburg,Wolfsberger AC,3,0,H,1.23,7.45,12.88
+27/05/2015,Grodig,SK Rapid,0,2,A,5.07,4.29,1.67
+31/05/2015,Wolfsberger AC,SK Rapid,0,5,A,4.43,3.96,1.83
+31/05/2015,Austria Vienna,Salzburg,1,1,D,3.55,3.73,2.1
+31/05/2015,Grodig,Admira,0,1,A,3.87,3.58,2.04
+31/05/2015,Neustadt,Altach,0,1,A,2.15,3.87,3.33
+31/05/2015,Sturm Graz,Ried,0,0,D,1.67,4.3,5.22

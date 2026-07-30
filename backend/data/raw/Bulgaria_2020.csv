@@ -1,0 +1,224 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2020-08-07,CSKA 1948,CSKA Sofia,2,2,D
+2020-08-08,Montana,Arda Kardzhali,3,3,D
+2020-08-08,Botev Vratsa,Ludogorets,3,1,H
+2020-08-09,Botev Plovdiv,Lokomotiv Plovdiv,2,0,H
+2020-08-09,Slavia Sofia,Cherno More Varna,1,1,D
+2020-08-10,Levski Sofia,Beroe,0,2,A
+2020-08-11,Tsarsko Selo,Etar Veliko Tarnovo,3,0,H
+2020-08-14,Ludogorets,Slavia Sofia,3,0,H
+2020-08-15,Lokomotiv Plovdiv,Botev Vratsa,2,1,H
+2020-08-15,Arda Kardzhali,Levski Sofia,1,1,D
+2020-08-16,Etar Veliko Tarnovo,Cherno More Varna,0,4,A
+2020-08-16,CSKA Sofia,Botev Plovdiv,2,1,H
+2020-08-17,Tsarsko Selo,Montana,0,0,D
+2020-08-17,Beroe,CSKA 1948,0,0,D
+2020-08-21,Slavia Sofia,Lokomotiv Plovdiv,0,2,A
+2020-08-22,Botev Vratsa,CSKA Sofia,1,2,A
+2020-08-22,Cherno More Varna,Ludogorets,1,4,A
+2020-08-23,Levski Sofia,Tsarsko Selo,0,1,A
+2020-08-23,Botev Plovdiv,Beroe,3,3,D
+2020-08-24,Montana,Etar Veliko Tarnovo,1,0,H
+2020-08-24,CSKA 1948,Arda Kardzhali,0,2,A
+2020-08-28,Tsarsko Selo,CSKA 1948,0,0,D
+2020-08-28,Beroe,Botev Vratsa,6,0,H
+2020-08-29,Arda Kardzhali,Botev Plovdiv,3,2,H
+2020-08-29,Montana,Levski Sofia,0,4,A
+2020-08-29,Etar Veliko Tarnovo,Ludogorets,0,2,A
+2020-08-30,Lokomotiv Plovdiv,Cherno More Varna,2,1,H
+2020-08-30,CSKA Sofia,Slavia Sofia,1,0,H
+2020-09-11,Botev Vratsa,Arda Kardzhali,0,0,D
+2020-09-11,Botev Plovdiv,Tsarsko Selo,0,0,D
+2020-09-12,Cherno More Varna,CSKA Sofia,1,1,D
+2020-09-12,Ludogorets,Lokomotiv Plovdiv,3,1,H
+2020-09-13,CSKA 1948,Montana,2,0,H
+2020-09-13,Levski Sofia,Etar Veliko Tarnovo,2,1,H
+2020-09-14,Slavia Sofia,Beroe,0,2,A
+2020-09-18,Tsarsko Selo,Botev Vratsa,1,2,A
+2020-09-18,Montana,Botev Plovdiv,3,1,H
+2020-09-19,Beroe,Cherno More Varna,4,0,H
+2020-09-19,Levski Sofia,CSKA 1948,3,0,H
+2020-09-20,Etar Veliko Tarnovo,Lokomotiv Plovdiv,1,3,A
+2020-09-20,CSKA Sofia,Ludogorets,2,2,D
+2020-09-21,Arda Kardzhali,Slavia Sofia,2,1,H
+2020-09-25,Botev Vratsa,Montana,2,0,H
+2020-09-25,CSKA 1948,Etar Veliko Tarnovo,5,1,H
+2020-09-26,Ludogorets,Beroe,2,0,H
+2020-09-26,Botev Plovdiv,Levski Sofia,2,1,H
+2020-09-27,Cherno More Varna,Arda Kardzhali,2,0,H
+2020-09-27,Lokomotiv Plovdiv,CSKA Sofia,2,1,H
+2020-09-28,Slavia Sofia,Tsarsko Selo,1,0,H
+2020-10-02,Tsarsko Selo,Cherno More Varna,1,0,H
+2020-10-02,CSKA 1948,Botev Plovdiv,5,0,H
+2020-10-03,Montana,Slavia Sofia,2,1,H
+2020-10-03,Levski Sofia,Botev Vratsa,0,0,D
+2020-10-04,Beroe,Lokomotiv Plovdiv,1,3,A
+2020-10-04,Etar Veliko Tarnovo,CSKA Sofia,2,2,D
+2020-10-17,Ludogorets,Tsarsko Selo,1,1,D
+2020-10-17,CSKA Sofia,Beroe,1,1,D
+2020-10-18,Botev Vratsa,CSKA 1948,0,0,D
+2020-10-18,Cherno More Varna,Montana,3,0,H
+2020-10-18,Slavia Sofia,Levski Sofia,1,0,H
+2020-10-19,Botev Plovdiv,Etar Veliko Tarnovo,1,1,D
+2020-10-20,Lokomotiv Plovdiv,Arda Kardzhali,0,0,D
+2020-10-24,Tsarsko Selo,Lokomotiv Plovdiv,0,3,A
+2020-10-24,Levski Sofia,Cherno More Varna,1,2,A
+2020-10-25,CSKA 1948,Slavia Sofia,5,1,H
+2020-10-25,Arda Kardzhali,CSKA Sofia,1,1,D
+2020-10-25,Montana,Ludogorets,1,3,A
+2020-10-26,Botev Plovdiv,Botev Vratsa,2,0,H
+2020-10-26,Etar Veliko Tarnovo,Beroe,2,3,A
+2020-10-30,Cherno More Varna,CSKA 1948,1,2,A
+2020-10-30,Lokomotiv Plovdiv,Montana,2,2,D
+2020-10-31,Beroe,Arda Kardzhali,0,1,A
+2020-11-01,CSKA Sofia,Tsarsko Selo,1,0,H
+2020-11-01,Ludogorets,Levski Sofia,1,0,H
+2020-11-02,Botev Vratsa,Etar Veliko Tarnovo,5,1,H
+2020-11-07,Botev Plovdiv,Cherno More Varna,0,0,D
+2020-11-08,Etar Veliko Tarnovo,Arda Kardzhali,0,0,D
+2020-11-08,Montana,CSKA Sofia,1,2,A
+2020-11-08,CSKA 1948,Ludogorets,0,3,A
+2020-11-21,Slavia Sofia,Etar Veliko Tarnovo,0,0,D
+2020-11-22,Cherno More Varna,Botev Vratsa,2,1,H
+2020-11-22,Lokomotiv Plovdiv,CSKA 1948,1,1,D
+2020-11-23,Arda Kardzhali,Tsarsko Selo,2,0,H
+2020-11-27,Cherno More Varna,Slavia Sofia,3,2,H
+2020-11-28,Arda Kardzhali,Montana,3,0,H
+2020-11-28,Lokomotiv Plovdiv,Botev Plovdiv,6,0,H
+2020-11-29,Ludogorets,Botev Vratsa,2,1,H
+2020-11-29,CSKA Sofia,CSKA 1948,2,0,H
+2020-12-01,Etar Veliko Tarnovo,Tsarsko Selo,1,0,H
+2020-12-02,Slavia Sofia,Botev Plovdiv,0,0,D
+2020-12-02,Levski Sofia,Lokomotiv Plovdiv,1,0,H
+2020-12-04,Cherno More Varna,Etar Veliko Tarnovo,0,1,A
+2020-12-05,CSKA 1948,Beroe,1,0,H
+2020-12-05,Levski Sofia,Arda Kardzhali,1,2,A
+2020-12-06,Botev Vratsa,Lokomotiv Plovdiv,0,1,A
+2020-12-06,Botev Plovdiv,CSKA Sofia,0,3,A
+2020-12-06,Slavia Sofia,Ludogorets,0,2,A
+2020-12-07,Montana,Tsarsko Selo,3,4,A
+2020-12-09,Beroe,Levski Sofia,2,1,H
+2020-12-10,Botev Vratsa,Slavia Sofia,1,2,A
+2020-12-11,Arda Kardzhali,CSKA 1948,1,1,D
+2020-12-12,Beroe,Botev Plovdiv,3,0,H
+2020-12-12,Tsarsko Selo,Levski Sofia,2,2,D
+2020-12-13,CSKA Sofia,Botev Vratsa,2,1,H
+2020-12-13,Ludogorets,Cherno More Varna,1,0,H
+2020-12-14,Lokomotiv Plovdiv,Slavia Sofia,2,0,H
+2020-12-15,Etar Veliko Tarnovo,Montana,0,0,D
+2020-12-16,Tsarsko Selo,Beroe,0,2,A
+2020-12-17,Arda Kardzhali,Ludogorets,2,2,D
+2020-12-18,CSKA Sofia,Levski Sofia,1,0,H
+2020-12-19,Beroe,Montana,0,0,D
+2020-12-20,Ludogorets,Botev Plovdiv,2,1,H
+2021-02-12,Botev Plovdiv,Arda Kardzhali,0,2,A
+2021-02-13,Botev Vratsa,Beroe,1,2,A
+2021-02-13,Cherno More Varna,Lokomotiv Plovdiv,0,0,D
+2021-02-13,Slavia Sofia,CSKA Sofia,0,1,A
+2021-02-14,CSKA 1948,Tsarsko Selo,2,1,H
+2021-02-14,Levski Sofia,Montana,2,0,H
+2021-02-15,Ludogorets,Etar Veliko Tarnovo,6,0,H
+2021-02-19,Montana,CSKA 1948,1,0,H
+2021-02-20,Arda Kardzhali,Botev Vratsa,3,2,H
+2021-02-20,Lokomotiv Plovdiv,Ludogorets,3,2,H
+2021-02-20,CSKA Sofia,Cherno More Varna,1,0,H
+2021-02-21,Beroe,Slavia Sofia,1,1,D
+2021-02-21,Etar Veliko Tarnovo,Levski Sofia,0,0,D
+2021-02-22,Tsarsko Selo,Botev Plovdiv,2,2,D
+2021-02-26,Lokomotiv Plovdiv,Etar Veliko Tarnovo,1,1,D
+2021-02-27,Slavia Sofia,Arda Kardzhali,3,2,H
+2021-02-27,Ludogorets,CSKA Sofia,1,0,H
+2021-02-27,Cherno More Varna,Beroe,2,1,H
+2021-02-28,Botev Vratsa,Tsarsko Selo,0,3,A
+2021-02-28,Botev Plovdiv,Montana,1,1,D
+2021-02-28,CSKA 1948,Levski Sofia,0,0,D
+2021-03-06,Arda Kardzhali,Cherno More Varna,1,0,H
+2021-03-06,CSKA Sofia,Lokomotiv Plovdiv,0,0,D
+2021-03-07,Etar Veliko Tarnovo,CSKA 1948,3,1,H
+2021-03-07,Beroe,Ludogorets,1,4,A
+2021-03-07,Levski Sofia,Botev Plovdiv,2,2,D
+2021-03-08,Tsarsko Selo,Slavia Sofia,2,0,H
+2021-03-09,Montana,Botev Vratsa,0,1,A
+2021-03-12,Ludogorets,Arda Kardzhali,1,0,H
+2021-03-12,Lokomotiv Plovdiv,Beroe,1,1,D
+2021-03-13,Slavia Sofia,Montana,2,1,H
+2021-03-13,Botev Plovdiv,CSKA 1948,3,2,H
+2021-03-13,Botev Vratsa,Levski Sofia,1,3,A
+2021-03-14,CSKA Sofia,Etar Veliko Tarnovo,1,0,H
+2021-03-15,Cherno More Varna,Tsarsko Selo,1,0,H
+2021-03-19,Etar Veliko Tarnovo,Botev Plovdiv,0,0,D
+2021-03-20,Montana,Cherno More Varna,1,1,D
+2021-03-20,Arda Kardzhali,Lokomotiv Plovdiv,0,2,A
+2021-03-20,Tsarsko Selo,Ludogorets,1,1,D
+2021-03-21,CSKA 1948,Botev Vratsa,1,0,H
+2021-03-21,Beroe,CSKA Sofia,1,0,H
+2021-03-21,Levski Sofia,Slavia Sofia,1,0,H
+2021-04-08,Botev Vratsa,Botev Plovdiv,1,2,A
+2021-04-08,Lokomotiv Plovdiv,Tsarsko Selo,2,0,H
+2021-04-09,Slavia Sofia,CSKA 1948,1,3,A
+2021-04-10,Ludogorets,Montana,1,0,H
+2021-04-10,CSKA Sofia,Arda Kardzhali,1,1,D
+2021-04-11,Cherno More Varna,Levski Sofia,0,0,D
+2021-04-12,Beroe,Etar Veliko Tarnovo,1,2,A
+2021-04-15,Montana,Lokomotiv Plovdiv,0,1,A
+2021-04-16,Etar Veliko Tarnovo,Botev Vratsa,0,0,D
+2021-04-16,CSKA 1948,Cherno More Varna,0,0,D
+2021-04-17,Botev Plovdiv,Slavia Sofia,0,1,A
+2021-04-17,Arda Kardzhali,Beroe,1,0,H
+2021-04-18,Tsarsko Selo,CSKA Sofia,2,1,H
+2021-04-18,Levski Sofia,Ludogorets,0,3,A
+2021-04-20,Slavia Sofia,Botev Vratsa,0,2,A
+2021-04-20,Arda Kardzhali,Etar Veliko Tarnovo,3,2,H
+2021-04-20,Cherno More Varna,Botev Plovdiv,1,0,H
+2021-04-21,Beroe,Tsarsko Selo,0,1,A
+2021-04-21,CSKA Sofia,Montana,6,0,H
+2021-04-21,Lokomotiv Plovdiv,Levski Sofia,1,0,H
+2021-04-22,Ludogorets,CSKA 1948,4,0,H
+2021-04-23,Botev Vratsa,Cherno More Varna,0,1,A
+2021-04-24,Etar Veliko Tarnovo,Slavia Sofia,1,1,D
+2021-04-24,Montana,Beroe,1,1,D
+2021-04-25,Levski Sofia,CSKA Sofia,0,2,A
+2021-04-25,Tsarsko Selo,Arda Kardzhali,4,0,H
+2021-04-26,CSKA 1948,Lokomotiv Plovdiv,1,0,H
+2021-04-26,Botev Plovdiv,Ludogorets,0,2,A
+2021-05-03,Botev Vratsa,Etar Veliko Tarnovo,2,0,H
+2021-05-03,Slavia Sofia,Montana,1,1,D
+2021-05-03,CSKA Sofia,Arda Kardzhali,1,0,H
+2021-05-04,Ludogorets,Beroe,3,1,H
+2021-05-05,Cherno More Varna,Botev Plovdiv,3,1,H
+2021-05-05,Tsarsko Selo,Levski Sofia,0,2,A
+2021-05-06,Montana,Etar Veliko Tarnovo,1,0,H
+2021-05-06,Slavia Sofia,Botev Vratsa,2,0,H
+2021-05-07,Beroe,Arda Kardzhali,0,2,A
+2021-05-08,Ludogorets,Lokomotiv Plovdiv,1,2,A
+2021-05-09,Cherno More Varna,Tsarsko Selo,3,3,D
+2021-05-09,Botev Plovdiv,Levski Sofia,0,1,A
+2021-05-10,Botev Vratsa,Montana,1,0,H
+2021-05-10,Etar Veliko Tarnovo,Slavia Sofia,0,3,A
+2021-05-11,Lokomotiv Plovdiv,Beroe,0,0,D
+2021-05-12,Arda Kardzhali,CSKA 1948,0,0,D
+2021-05-12,CSKA Sofia,Ludogorets,4,1,H
+2021-05-13,Tsarsko Selo,Botev Plovdiv,0,0,D
+2021-05-13,Levski Sofia,Cherno More Varna,2,1,H
+2021-05-14,Etar Veliko Tarnovo,Botev Vratsa,2,0,H
+2021-05-14,Montana,Slavia Sofia,0,2,A
+2021-05-15,Ludogorets,Arda Kardzhali,4,1,H
+2021-05-15,Lokomotiv Plovdiv,CSKA Sofia,2,0,H
+2021-05-16,Beroe,CSKA 1948,3,3,D
+2021-05-17,Botev Plovdiv,Cherno More Varna,1,1,D
+2021-05-17,Levski Sofia,Tsarsko Selo,1,1,D
+2021-05-18,Etar Veliko Tarnovo,Montana,1,2,A
+2021-05-18,Botev Vratsa,Slavia Sofia,1,1,D
+2021-05-19,Lokomotiv Plovdiv,CSKA 1948,0,0,D
+2021-05-20,Tsarsko Selo,Cherno More Varna,0,1,A
+2021-05-20,Levski Sofia,Botev Plovdiv,1,2,A
+2021-05-21,Slavia Sofia,Etar Veliko Tarnovo,0,2,A
+2021-05-21,Montana,Botev Vratsa,1,1,D
+2021-05-22,CSKA 1948,CSKA Sofia,1,0,H
+2021-05-23,Botev Plovdiv,Tsarsko Selo,5,0,H
+2021-05-23,Cherno More Varna,Levski Sofia,1,2,A
+2021-05-26,CSKA Sofia,Beroe,2,0,H
+2021-05-26,CSKA 1948,Ludogorets,3,1,H
+2021-05-26,Arda Kardzhali,Lokomotiv Plovdiv,3,3,D
+2021-05-28,Botev Vratsa,Septemvri Sofia,1,0,H
+2021-05-30,Arda Kardzhali,Cherno More Varna,1,0,H

@@ -1,0 +1,165 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2025-07-18,Radomlje,Aluminij,1,2,A
+2025-07-19,Primorje,NK Domzale,3,2,H
+2025-07-19,Olimpija Ljubljana,Mura,1,0,H
+2025-07-20,Maribor,Celje,1,2,A
+2025-07-20,Koper,Bravo,2,1,H
+2025-07-26,Bravo,Mura,2,0,H
+2025-07-26,Aluminij,Olimpija Ljubljana,0,3,A
+2025-07-27,NK Domzale,Maribor,1,2,A
+2025-07-27,Celje,Radomlje,2,0,H
+2025-07-28,Koper,Primorje,2,0,H
+2025-08-01,Radomlje,NK Domzale,2,0,H
+2025-08-02,Mura,Aluminij,1,1,D
+2025-08-02,Primorje,Bravo,1,3,A
+2025-08-03,Maribor,Koper,2,2,D
+2025-08-03,Olimpija Ljubljana,Celje,0,5,A
+2025-08-09,Bravo,Aluminij,1,2,A
+2025-08-09,Koper,Radomlje,1,2,A
+2025-08-10,NK Domzale,Olimpija Ljubljana,1,3,A
+2025-08-10,Celje,Mura,3,0,H
+2025-08-10,Primorje,Maribor,0,2,A
+2025-08-15,Radomlje,Primorje,3,1,H
+2025-08-16,Mura,NK Domzale,3,0,H
+2025-08-16,Maribor,Bravo,3,3,D
+2025-08-17,Olimpija Ljubljana,Koper,1,3,A
+2025-08-17,Aluminij,Celje,2,3,A
+2025-08-22,NK Domzale,Aluminij,0,2,A
+2025-08-23,Koper,Mura,2,1,H
+2025-08-23,Maribor,Radomlje,5,1,H
+2025-08-24,Primorje,Olimpija Ljubljana,1,1,D
+2025-08-24,Bravo,Celje,0,5,A
+2025-08-29,Aluminij,Koper,1,0,H
+2025-08-30,Radomlje,Bravo,0,6,A
+2025-08-31,Mura,Primorje,2,2,D
+2025-08-31,Celje,NK Domzale,4,1,H
+2025-08-31,Olimpija Ljubljana,Maribor,1,0,H
+2025-09-13,Radomlje,Olimpija Ljubljana,3,2,H
+2025-09-13,Maribor,Mura,1,0,H
+2025-09-14,Primorje,Aluminij,4,1,H
+2025-09-14,Koper,Celje,3,3,D
+2025-09-14,Bravo,NK Domzale,1,1,D
+2025-09-19,Aluminij,Maribor,2,3,A
+2025-09-20,Olimpija Ljubljana,Bravo,1,2,A
+2025-09-20,NK Domzale,Koper,1,3,A
+2025-09-21,Mura,Radomlje,0,0,D
+2025-09-21,Primorje,Celje,2,3,A
+2025-09-26,Aluminij,Radomlje,2,1,H
+2025-09-27,NK Domzale,Primorje,1,0,H
+2025-09-27,Celje,Maribor,3,0,H
+2025-09-28,Bravo,Koper,4,2,H
+2025-09-28,Mura,Olimpija Ljubljana,0,2,A
+2025-10-03,Olimpija Ljubljana,Aluminij,1,1,D
+2025-10-04,Mura,Bravo,1,1,D
+2025-10-04,Maribor,NK Domzale,3,0,H
+2025-10-05,Primorje,Koper,2,1,H
+2025-10-05,Radomlje,Celje,0,3,A
+2025-10-17,Aluminij,Mura,2,2,D
+2025-10-18,NK Domzale,Radomlje,1,1,D
+2025-10-18,Celje,Olimpija Ljubljana,0,0,D
+2025-10-19,Bravo,Primorje,3,0,H
+2025-10-19,Koper,Maribor,1,0,H
+2025-10-24,Aluminij,Bravo,1,3,A
+2025-10-25,Radomlje,Koper,1,1,D
+2025-10-25,Maribor,Primorje,4,0,H
+2025-10-26,Olimpija Ljubljana,NK Domzale,1,2,A
+2025-10-26,Mura,Celje,2,1,H
+2025-11-01,Bravo,Maribor,2,3,A
+2025-11-01,Celje,Aluminij,2,1,H
+2025-11-02,Koper,Olimpija Ljubljana,1,0,H
+2025-11-02,Primorje,Radomlje,1,2,A
+2025-11-03,NK Domzale,Mura,3,3,D
+2025-11-07,Mura,Koper,3,2,H
+2025-11-07,Olimpija Ljubljana,Primorje,2,0,H
+2025-11-08,Aluminij,NK Domzale,3,1,H
+2025-11-08,Radomlje,Maribor,1,1,D
+2025-11-09,Celje,Bravo,0,0,D
+2025-11-22,Koper,Aluminij,4,1,H
+2025-11-22,NK Domzale,Celje,0,2,A
+2025-11-23,Maribor,Olimpija Ljubljana,1,1,D
+2025-11-23,Primorje,Mura,1,0,H
+2025-11-24,Bravo,Radomlje,0,4,A
+2025-11-28,Aluminij,Primorje,0,0,D
+2025-11-29,Mura,Maribor,0,1,A
+2025-11-29,Olimpija Ljubljana,Radomlje,2,1,H
+2025-11-30,NK Domzale,Bravo,1,0,H
+2025-11-30,Celje,Koper,1,1,D
+2025-12-05,Koper,NK Domzale,2,1,H
+2025-12-06,Maribor,Aluminij,2,3,A
+2025-12-06,Radomlje,Mura,3,1,H
+2025-12-07,Bravo,Olimpija Ljubljana,2,1,H
+2025-12-07,Celje,Primorje,4,1,H
+2026-01-30,Radomlje,Aluminij,2,1,H
+2026-01-31,Olimpija Ljubljana,Mura,1,0,H
+2026-01-31,Koper,Bravo,6,2,H
+2026-02-01,Maribor,Celje,3,3,D
+2026-02-03,Koper,Primorje,2,1,H
+2026-02-03,Bravo,Mura,0,2,A
+2026-02-04,Celje,Radomlje,3,1,H
+2026-02-05,Aluminij,Olimpija Ljubljana,1,2,A
+2026-02-07,Primorje,Bravo,3,2,H
+2026-02-08,Mura,Aluminij,0,3,A
+2026-02-08,Olimpija Ljubljana,Celje,3,1,H
+2026-02-08,Maribor,Koper,2,0,H
+2026-02-14,Celje,Mura,5,1,H
+2026-02-15,Primorje,Maribor,0,2,A
+2026-02-15,Koper,Radomlje,2,2,D
+2026-02-16,Bravo,Aluminij,2,1,H
+2026-02-21,Olimpija Ljubljana,Koper,3,3,D
+2026-02-21,Radomlje,Primorje,2,1,H
+2026-02-22,Maribor,Bravo,2,0,H
+2026-02-28,Primorje,Olimpija Ljubljana,0,2,A
+2026-02-28,Maribor,Radomlje,2,2,D
+2026-03-01,Koper,Mura,3,0,H
+2026-03-01,Bravo,Celje,1,0,H
+2026-03-05,Aluminij,Celje,2,1,H
+2026-03-07,Mura,Primorje,3,1,H
+2026-03-08,Olimpija Ljubljana,Maribor,0,0,D
+2026-03-08,Aluminij,Koper,2,4,A
+2026-03-09,Radomlje,Bravo,1,3,A
+2026-03-14,Radomlje,Olimpija Ljubljana,1,2,A
+2026-03-14,Maribor,Mura,3,0,H
+2026-03-15,Koper,Celje,0,1,A
+2026-03-15,Primorje,Aluminij,2,0,H
+2026-03-20,Aluminij,Maribor,1,1,D
+2026-03-21,Mura,Radomlje,2,0,H
+2026-03-21,Olimpija Ljubljana,Bravo,1,2,A
+2026-03-22,Celje,Primorje,5,1,H
+2026-04-03,Aluminij,Radomlje,1,2,A
+2026-04-04,Mura,Olimpija Ljubljana,0,0,D
+2026-04-04,Bravo,Koper,1,1,D
+2026-04-04,Celje,Maribor,1,0,H
+2026-04-10,Primorje,Koper,0,4,A
+2026-04-11,Olimpija Ljubljana,Aluminij,2,1,H
+2026-04-11,Mura,Bravo,1,2,A
+2026-04-11,Radomlje,Celje,1,3,A
+2026-04-14,Koper,Maribor,3,1,H
+2026-04-15,Bravo,Primorje,2,1,H
+2026-04-15,Celje,Olimpija Ljubljana,2,0,H
+2026-04-16,Aluminij,Mura,2,1,H
+2026-04-18,Radomlje,Koper,0,3,A
+2026-04-18,Maribor,Primorje,2,0,H
+2026-04-19,Mura,Celje,0,2,A
+2026-04-19,Aluminij,Bravo,0,1,A
+2026-04-25,Koper,Olimpija Ljubljana,3,2,H
+2026-04-26,Primorje,Radomlje,2,3,A
+2026-04-26,Celje,Aluminij,5,0,H
+2026-04-26,Bravo,Maribor,3,0,H
+2026-05-02,Olimpija Ljubljana,Primorje,3,0,H
+2026-05-02,Celje,Bravo,2,3,A
+2026-05-03,Mura,Koper,0,1,A
+2026-05-03,Radomlje,Maribor,2,1,H
+2026-05-09,Bravo,Radomlje,2,1,H
+2026-05-09,Koper,Aluminij,1,0,H
+2026-05-10,Primorje,Mura,0,2,A
+2026-05-16,Celje,Koper,1,2,A
+2026-05-16,Aluminij,Primorje,0,0,D
+2026-05-17,Mura,Maribor,2,1,H
+2026-05-17,Olimpija Ljubljana,Radomlje,2,1,H
+2026-05-22,Radomlje,Mura,3,2,H
+2026-05-22,Primorje,Celje,0,4,A
+2026-05-23,Maribor,Aluminij,3,0,H
+2026-05-23,Bravo,Olimpija Ljubljana,2,1,H
+2026-05-27,Primorje,Nafta,0,0,D
+2026-05-31,Nafta,Primorje,1,0,H
+2026-05-09,Maribor,Olimpija Ljubljana,0,3,A

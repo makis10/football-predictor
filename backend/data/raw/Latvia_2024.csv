@@ -1,0 +1,181 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2024-03-08,Auda,Rigas FS,1,2,A
+2024-03-09,FK Liepaja,Tukums,0,2,A
+2024-03-09,FS Jelgava,BFC Daugavpils,0,0,D
+2024-03-10,Grobina,Riga,0,1,A
+2024-03-10,Metta / LU,Valmiera / BSS,0,2,A
+2024-03-15,Rigas FS,Valmiera / BSS,0,1,A
+2024-03-16,Metta / LU,FK Liepaja,2,0,H
+2024-03-16,Riga,Auda,1,0,H
+2024-03-16,BFC Daugavpils,Grobina,2,0,H
+2024-03-17,FS Jelgava,Tukums,2,3,A
+2024-03-29,FS Jelgava,Metta / LU,0,1,A
+2024-03-30,FK Liepaja,Rigas FS,0,3,A
+2024-03-30,BFC Daugavpils,Tukums,3,1,H
+2024-03-31,Grobina,Auda,1,1,D
+2024-03-31,Valmiera / BSS,Riga,2,1,H
+2024-04-03,Metta / LU,BFC Daugavpils,0,1,A
+2024-04-03,Rigas FS,FS Jelgava,5,1,H
+2024-04-04,Tukums,Grobina,2,0,H
+2024-04-04,Riga,FK Liepaja,4,0,H
+2024-04-05,Auda,Valmiera / BSS,3,1,H
+2024-04-07,BFC Daugavpils,Rigas FS,1,1,D
+2024-04-08,Tukums,Metta / LU,0,0,D
+2024-04-08,Riga,FS Jelgava,2,0,H
+2024-04-09,Valmiera / BSS,Grobina,1,1,D
+2024-04-09,FK Liepaja,Auda,1,0,H
+2024-04-12,Riga,BFC Daugavpils,2,0,H
+2024-04-12,Rigas FS,Tukums,5,0,H
+2024-04-13,Grobina,Metta / LU,3,0,H
+2024-04-13,FS Jelgava,Auda,0,0,D
+2024-04-14,Valmiera / BSS,FK Liepaja,0,1,A
+2024-04-16,Tukums,Riga,2,1,H
+2024-04-17,Auda,BFC Daugavpils,1,0,H
+2024-04-17,Rigas FS,Metta / LU,2,0,H
+2024-04-18,Grobina,FK Liepaja,3,2,H
+2024-04-18,FS Jelgava,Valmiera / BSS,0,3,A
+2024-04-21,Metta / LU,Riga,1,2,A
+2024-04-21,Auda,Tukums,2,0,H
+2024-04-22,Valmiera / BSS,BFC Daugavpils,0,1,A
+2024-04-23,Grobina,Rigas FS,0,4,A
+2024-04-23,FK Liepaja,FS Jelgava,0,1,A
+2024-04-26,Metta / LU,Auda,1,3,A
+2024-04-27,Tukums,Valmiera / BSS,1,2,A
+2024-04-27,Riga,Rigas FS,1,2,A
+2024-04-28,BFC Daugavpils,FK Liepaja,0,0,D
+2024-04-28,FS Jelgava,Grobina,2,1,H
+2024-05-01,Rigas FS,Auda,2,1,H
+2024-05-01,Metta / LU,Valmiera / BSS,1,1,D
+2024-05-02,Tukums,FK Liepaja,0,0,D
+2024-05-02,Riga,Grobina,2,0,H
+2024-05-03,BFC Daugavpils,FS Jelgava,1,0,H
+2024-05-05,Valmiera / BSS,Rigas FS,2,0,H
+2024-05-05,Auda,Riga,1,2,A
+2024-05-06,FK Liepaja,Metta / LU,1,2,A
+2024-05-07,Grobina,BFC Daugavpils,1,3,A
+2024-05-07,Tukums,FS Jelgava,2,1,H
+2024-05-10,Rigas FS,FK Liepaja,4,1,H
+2024-05-10,Riga,Valmiera / BSS,1,1,D
+2024-05-11,Metta / LU,FS Jelgava,3,0,H
+2024-05-11,Grobina,Auda,2,2,D
+2024-05-12,BFC Daugavpils,Tukums,4,1,H
+2024-05-14,FK Liepaja,Riga,1,1,D
+2024-05-15,Valmiera / BSS,Auda,2,1,H
+2024-05-15,FS Jelgava,Rigas FS,1,2,A
+2024-05-16,Tukums,Grobina,1,2,A
+2024-05-16,BFC Daugavpils,Metta / LU,4,0,H
+2024-05-19,FS Jelgava,Riga,1,5,A
+2024-05-19,Auda,FK Liepaja,1,1,D
+2024-05-20,Grobina,Valmiera / BSS,0,2,A
+2024-05-20,Rigas FS,BFC Daugavpils,5,0,H
+2024-05-21,Metta / LU,Tukums,1,1,D
+2024-05-23,Auda,FS Jelgava,0,1,A
+2024-05-24,BFC Daugavpils,Riga,0,2,A
+2024-05-24,FK Liepaja,Valmiera / BSS,0,3,A
+2024-05-25,Metta / LU,Grobina,1,1,D
+2024-05-25,Tukums,Rigas FS,0,1,A
+2024-05-28,Valmiera / BSS,FS Jelgava,4,0,H
+2024-05-28,BFC Daugavpils,Auda,0,3,A
+2024-05-29,FK Liepaja,Grobina,3,0,H
+2024-05-29,Metta / LU,Rigas FS,0,6,A
+2024-05-29,Riga,Tukums,3,0,H
+2024-06-01,BFC Daugavpils,Valmiera / BSS,1,6,A
+2024-06-02,FS Jelgava,FK Liepaja,1,1,D
+2024-06-02,Tukums,Auda,1,4,A
+2024-06-02,Rigas FS,Grobina,5,0,H
+2024-06-02,Riga,Metta / LU,5,0,H
+2024-06-14,Valmiera / BSS,Tukums,6,1,H
+2024-06-15,FK Liepaja,BFC Daugavpils,1,1,D
+2024-06-16,Grobina,FS Jelgava,4,2,H
+2024-06-16,Auda,Metta / LU,4,0,H
+2024-06-16,Rigas FS,Riga,2,2,D
+2024-06-20,Tukums,FK Liepaja,2,1,H
+2024-06-20,Valmiera / BSS,Metta / LU,3,0,H
+2024-06-21,BFC Daugavpils,FS Jelgava,3,0,H
+2024-06-21,Auda,Rigas FS,1,3,A
+2024-06-22,Grobina,Riga,0,6,A
+2024-06-25,FK Liepaja,Metta / LU,1,5,A
+2024-06-26,Riga,Auda,1,0,H
+2024-06-26,FS Jelgava,Tukums,0,0,D
+2024-06-26,Rigas FS,Valmiera / BSS,4,1,H
+2024-06-27,Grobina,BFC Daugavpils,3,0,H
+2024-07-01,FS Jelgava,Metta / LU,1,0,H
+2024-07-01,FK Liepaja,Rigas FS,1,3,A
+2024-07-02,Valmiera / BSS,Riga,2,2,D
+2024-07-02,Auda,Grobina,0,1,A
+2024-07-03,Tukums,BFC Daugavpils,1,2,A
+2024-07-05,Rigas FS,FS Jelgava,7,0,H
+2024-07-06,Auda,Valmiera / BSS,0,1,A
+2024-07-07,Metta / LU,BFC Daugavpils,3,2,H
+2024-07-07,FK Liepaja,Riga,0,3,A
+2024-07-08,Grobina,Tukums,2,1,H
+2024-07-19,Riga,FS Jelgava,6,1,H
+2024-07-21,Valmiera / BSS,Grobina,0,0,D
+2024-07-21,Auda,FK Liepaja,2,0,H
+2024-07-22,Metta / LU,Tukums,0,0,D
+2024-07-27,Tukums,Rigas FS,1,4,A
+2024-07-27,Grobina,Metta / LU,1,2,A
+2024-07-28,FK Liepaja,Valmiera / BSS,0,0,D
+2024-07-28,FS Jelgava,Auda,1,3,A
+2024-07-28,Riga,BFC Daugavpils,1,0,H
+2024-08-03,FK Liepaja,Grobina,0,1,A
+2024-08-04,FS Jelgava,Valmiera / BSS,0,4,A
+2024-08-04,Tukums,Riga,0,5,A
+2024-08-04,Auda,BFC Daugavpils,1,0,H
+2024-08-04,Rigas FS,Metta / LU,5,1,H
+2024-08-10,Metta / LU,Riga,2,4,A
+2024-08-10,FK Liepaja,FS Jelgava,3,0,H
+2024-08-11,Valmiera / BSS,BFC Daugavpils,4,1,H
+2024-08-11,Rigas FS,Grobina,3,0,H
+2024-08-23,Grobina,FS Jelgava,2,3,A
+2024-08-24,Tukums,Valmiera / BSS,3,2,H
+2024-08-24,BFC Daugavpils,FK Liepaja,0,2,A
+2024-08-25,Metta / LU,Auda,0,4,A
+2024-08-25,Riga,Rigas FS,0,0,D
+2024-08-31,Valmiera / BSS,Metta / LU,4,0,H
+2024-08-31,Riga,Grobina,6,1,H
+2024-09-01,FS Jelgava,BFC Daugavpils,0,0,D
+2024-09-01,FK Liepaja,Tukums,3,1,H
+2024-09-13,Valmiera / BSS,Rigas FS,1,2,A
+2024-09-14,BFC Daugavpils,Grobina,4,0,H
+2024-09-14,Auda,Riga,2,2,D
+2024-09-15,Tukums,FS Jelgava,3,3,D
+2024-09-15,Metta / LU,FK Liepaja,1,2,A
+2024-09-17,Rigas FS,BFC Daugavpils,4,1,H
+2024-09-19,Riga,Valmiera / BSS,1,0,H
+2024-09-20,Rigas FS,FK Liepaja,2,0,H
+2024-09-21,Tukums,BFC Daugavpils,0,0,D
+2024-09-22,Metta / LU,FS Jelgava,2,0,H
+2024-09-22,Auda,Grobina,2,0,H
+2024-09-27,BFC Daugavpils,Metta / LU,1,1,D
+2024-09-28,Valmiera / BSS,Auda,2,3,A
+2024-09-28,Grobina,Tukums,1,2,A
+2024-09-29,Riga,FK Liepaja,1,0,H
+2024-09-30,FS Jelgava,Rigas FS,0,2,A
+2024-10-02,Auda,Tukums,1,1,D
+2024-10-04,Grobina,Valmiera / BSS,1,4,A
+2024-10-05,FK Liepaja,Auda,2,1,H
+2024-10-05,FS Jelgava,Riga,0,2,A
+2024-10-06,Tukums,Metta / LU,0,1,A
+2024-10-06,BFC Daugavpils,Rigas FS,0,3,A
+2024-10-17,Rigas FS,Auda,1,2,A
+2024-10-19,BFC Daugavpils,Riga,0,5,A
+2024-10-20,Valmiera / BSS,FK Liepaja,0,1,A
+2024-10-20,Metta / LU,Grobina,2,1,H
+2024-10-20,Rigas FS,Tukums,4,1,H
+2024-10-21,Auda,FS Jelgava,3,0,H
+2024-10-26,Grobina,FK Liepaja,1,3,A
+2024-10-26,Valmiera / BSS,FS Jelgava,3,2,H
+2024-10-26,BFC Daugavpils,Auda,1,2,A
+2024-10-27,Riga,Tukums,10,1,H
+2024-10-28,Metta / LU,Rigas FS,1,2,A
+2024-11-03,Grobina,Rigas FS,0,2,A
+2024-11-03,Tukums,Auda,0,3,A
+2024-11-03,BFC Daugavpils,Valmiera / BSS,3,3,D
+2024-11-03,Riga,Metta / LU,4,0,H
+2024-11-03,FS Jelgava,FK Liepaja,2,2,D
+2024-11-09,FK Liepaja,BFC Daugavpils,3,3,D
+2024-11-09,Auda,Metta / LU,5,0,H
+2024-11-09,Valmiera / BSS,Tukums,2,3,A
+2024-11-09,FS Jelgava,Grobina,2,0,H
+2024-11-10,Rigas FS,Riga,1,2,A

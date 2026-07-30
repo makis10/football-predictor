@@ -1,0 +1,133 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2019-04-26,Valur Reykjavik,Vikingur Reykjavik,3,3,D
+2019-04-27,Grindavik,Breidablik,0,2,A
+2019-04-27,IBV Vestmannaeyjar,Fylkir,0,3,A
+2019-04-27,FH hafnarfjordur,HK Kopavogur,2,0,H
+2019-04-27,IA Akranes,KA Akureyri,3,1,H
+2019-04-27,Stjarnan,KR Reykjavik,1,1,D
+2019-05-04,HK Kopavogur,Breidablik,2,2,D
+2019-05-05,KA Akureyri,Valur Reykjavik,1,0,H
+2019-05-05,KR Reykjavik,IBV Vestmannaeyjar,3,0,H
+2019-05-05,Fylkir,IA Akranes,2,2,D
+2019-05-05,Grindavik,Stjarnan,1,1,D
+2019-05-06,Vikingur Reykjavik,FH hafnarfjordur,1,1,D
+2019-05-10,FH hafnarfjordur,KA Akureyri,3,2,H
+2019-05-10,Stjarnan,HK Kopavogur,1,0,H
+2019-05-10,Breidablik,Vikingur Reykjavik,3,1,H
+2019-05-11,IBV Vestmannaeyjar,Grindavik,2,2,D
+2019-05-11,Valur Reykjavik,IA Akranes,1,2,A
+2019-05-12,KR Reykjavik,Fylkir,1,1,D
+2019-05-15,KA Akureyri,Breidablik,0,1,A
+2019-05-15,Vikingur Reykjavik,Stjarnan,3,4,A
+2019-05-15,IA Akranes,FH hafnarfjordur,2,0,H
+2019-05-16,HK Kopavogur,IBV Vestmannaeyjar,2,0,H
+2019-05-16,Fylkir,Valur Reykjavik,0,1,A
+2019-05-16,Grindavik,KR Reykjavik,2,1,H
+2019-05-19,IBV Vestmannaeyjar,Vikingur Reykjavik,1,1,D
+2019-05-19,Stjarnan,KA Akureyri,0,2,A
+2019-05-19,Breidablik,IA Akranes,0,1,A
+2019-05-20,FH hafnarfjordur,Valur Reykjavik,3,2,H
+2019-05-20,KR Reykjavik,HK Kopavogur,3,2,H
+2019-05-20,Grindavik,Fylkir,1,0,H
+2019-05-25,HK Kopavogur,Grindavik,0,0,D
+2019-05-25,KA Akureyri,IBV Vestmannaeyjar,2,0,H
+2019-05-25,Vikingur Reykjavik,KR Reykjavik,0,1,A
+2019-05-26,IA Akranes,Stjarnan,2,0,H
+2019-05-26,Fylkir,FH hafnarfjordur,2,2,D
+2019-05-26,Valur Reykjavik,Breidablik,0,1,A
+2019-06-01,Grindavik,Vikingur Reykjavik,0,0,D
+2019-06-02,IBV Vestmannaeyjar,IA Akranes,3,2,H
+2019-06-02,KR Reykjavik,KA Akureyri,1,0,H
+2019-06-02,Breidablik,FH hafnarfjordur,4,1,H
+2019-06-02,Stjarnan,Valur Reykjavik,2,1,H
+2019-06-02,HK Kopavogur,Fylkir,1,2,A
+2019-06-14,Fylkir,Breidablik,4,3,H
+2019-06-14,FH hafnarfjordur,Stjarnan,2,2,D
+2019-06-14,Vikingur Reykjavik,HK Kopavogur,2,1,H
+2019-06-15,Valur Reykjavik,IBV Vestmannaeyjar,5,1,H
+2019-06-15,IA Akranes,KR Reykjavik,1,3,A
+2019-06-15,KA Akureyri,Grindavik,2,1,H
+2019-06-18,Stjarnan,Breidablik,1,3,A
+2019-06-19,KR Reykjavik,Valur Reykjavik,3,2,H
+2019-06-22,Breidablik,IBV Vestmannaeyjar,3,1,H
+2019-06-22,IA Akranes,HK Kopavogur,0,2,A
+2019-06-23,Valur Reykjavik,Grindavik,1,0,H
+2019-06-23,Stjarnan,Fylkir,5,1,H
+2019-06-23,KA Akureyri,Vikingur Reykjavik,3,4,A
+2019-06-23,FH hafnarfjordur,KR Reykjavik,1,2,A
+2019-06-30,IBV Vestmannaeyjar,Stjarnan,0,2,A
+2019-06-30,Fylkir,KA Akureyri,3,2,H
+2019-06-30,HK Kopavogur,Valur Reykjavik,1,2,A
+2019-07-01,KR Reykjavik,Breidablik,2,0,H
+2019-07-01,Grindavik,FH hafnarfjordur,0,0,D
+2019-07-01,Vikingur Reykjavik,IA Akranes,0,0,D
+2019-07-04,Valur Reykjavik,KA Akureyri,3,1,H
+2019-07-05,Stjarnan,Grindavik,0,0,D
+2019-07-06,IA Akranes,Fylkir,2,0,H
+2019-07-06,IBV Vestmannaeyjar,KR Reykjavik,1,2,A
+2019-07-07,Breidablik,HK Kopavogur,1,2,A
+2019-07-08,FH hafnarfjordur,Vikingur Reykjavik,1,0,H
+2019-07-13,IBV Vestmannaeyjar,FH hafnarfjordur,1,2,A
+2019-07-14,HK Kopavogur,KA Akureyri,2,1,H
+2019-07-15,Grindavik,IA Akranes,1,1,D
+2019-07-15,Vikingur Reykjavik,Fylkir,1,1,D
+2019-07-21,Fylkir,IBV Vestmannaeyjar,3,0,H
+2019-07-21,KA Akureyri,IA Akranes,1,1,D
+2019-07-21,KR Reykjavik,Stjarnan,2,2,D
+2019-07-21,Vikingur Reykjavik,Valur Reykjavik,2,2,D
+2019-07-22,Breidablik,Grindavik,0,0,D
+2019-07-22,HK Kopavogur,FH hafnarfjordur,2,0,H
+2019-07-28,Grindavik,IBV Vestmannaeyjar,2,1,H
+2019-07-28,KA Akureyri,FH hafnarfjordur,1,0,H
+2019-07-28,Fylkir,KR Reykjavik,1,4,A
+2019-07-28,IA Akranes,Valur Reykjavik,1,2,A
+2019-07-29,Vikingur Reykjavik,Breidablik,3,2,H
+2019-07-29,HK Kopavogur,Stjarnan,1,1,D
+2019-08-03,IBV Vestmannaeyjar,HK Kopavogur,0,1,A
+2019-08-06,FH hafnarfjordur,IA Akranes,1,0,H
+2019-08-06,KR Reykjavik,Grindavik,5,2,H
+2019-08-07,Breidablik,KA Akureyri,4,0,H
+2019-08-07,Valur Reykjavik,Fylkir,1,0,H
+2019-08-07,Stjarnan,Vikingur Reykjavik,2,1,H
+2019-08-11,KA Akureyri,Stjarnan,4,2,H
+2019-08-11,Vikingur Reykjavik,IBV Vestmannaeyjar,3,1,H
+2019-08-11,IA Akranes,Breidablik,1,2,A
+2019-08-11,HK Kopavogur,KR Reykjavik,4,1,H
+2019-08-11,Valur Reykjavik,FH hafnarfjordur,2,3,A
+2019-08-12,Fylkir,Grindavik,2,1,H
+2019-08-18,IBV Vestmannaeyjar,KA Akureyri,1,1,D
+2019-08-18,Grindavik,HK Kopavogur,1,1,D
+2019-08-18,FH hafnarfjordur,Fylkir,2,1,H
+2019-08-18,Stjarnan,IA Akranes,3,1,H
+2019-08-19,KR Reykjavik,Vikingur Reykjavik,1,0,H
+2019-08-19,Breidablik,Valur Reykjavik,3,3,D
+2019-08-24,IA Akranes,IBV Vestmannaeyjar,2,1,H
+2019-08-25,KA Akureyri,KR Reykjavik,0,0,D
+2019-08-25,Vikingur Reykjavik,Grindavik,1,0,H
+2019-08-26,FH hafnarfjordur,Breidablik,2,4,A
+2019-08-26,Fylkir,HK Kopavogur,3,2,H
+2019-08-26,Valur Reykjavik,Stjarnan,2,2,D
+2019-08-31,Grindavik,KA Akureyri,0,2,A
+2019-08-31,Stjarnan,FH hafnarfjordur,1,3,A
+2019-09-01,IBV Vestmannaeyjar,Valur Reykjavik,2,1,H
+2019-09-01,HK Kopavogur,Vikingur Reykjavik,1,3,A
+2019-09-01,KR Reykjavik,IA Akranes,2,0,H
+2019-09-01,Breidablik,Fylkir,4,3,H
+2019-09-15,KA Akureyri,HK Kopavogur,1,1,D
+2019-09-16,IA Akranes,Grindavik,1,1,D
+2019-09-16,Valur Reykjavik,KR Reykjavik,0,1,A
+2019-09-16,Breidablik,Stjarnan,1,1,D
+2019-09-18,FH hafnarfjordur,IBV Vestmannaeyjar,6,4,H
+2019-09-18,Fylkir,Vikingur Reykjavik,3,1,H
+2019-09-22,Fylkir,Stjarnan,1,4,A
+2019-09-22,IBV Vestmannaeyjar,Breidablik,1,1,D
+2019-09-22,KR Reykjavik,FH hafnarfjordur,3,2,H
+2019-09-22,Grindavik,Valur Reykjavik,2,2,D
+2019-09-22,Vikingur Reykjavik,KA Akureyri,2,3,A
+2019-09-22,HK Kopavogur,IA Akranes,1,1,D
+2019-09-28,FH hafnarfjordur,Grindavik,3,0,H
+2019-09-28,KA Akureyri,Fylkir,4,2,H
+2019-09-28,Valur Reykjavik,HK Kopavogur,2,0,H
+2019-09-28,Stjarnan,IBV Vestmannaeyjar,3,2,H
+2019-09-28,Breidablik,KR Reykjavik,1,2,A
+2019-09-28,IA Akranes,Vikingur Reykjavik,1,5,A

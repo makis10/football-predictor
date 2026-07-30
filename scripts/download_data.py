@@ -41,6 +41,14 @@ LEAGUES = {
     "GreekSL":      "G1",
     "PrimeiraLiga": "P1",
     "Eredivisie":   "N1",
+    # Added 2026-07-30 so UEFA qualifying ties stop landing on "Insufficient
+    # data". Names are COUNTRY-based on purpose: the local names collide with
+    # leagues we already carry (Austria's top flight is also "Bundesliga",
+    # Denmark's and Romania's are both "Superliga"), and load_raw_csvs() keys
+    # the league off the filename prefix.
+    "Belgium":      "B1",
+    "Turkey":       "T1",
+    "Scotland":     "SC0",
 }
 
 # Seasons to download (folder name on the site, e.g. "2324" → 2023/24)
@@ -92,18 +100,69 @@ def download_csv(league_name: str, league_code: str, season: str,
 # columns (PSCH/PSCD/PSCA = Pinnacle closing). No shots / cards / referee.
 # Seasons are CALENDAR years (Brazil plays Apr–Dec). We convert to our per-season
 # file layout + main-league column names so load_raw_csvs() ingests it unchanged.
+#
+# `division` is required whenever the country file carries more than one tier —
+# SWZ.csv holds both "Super League" and "Challenge League", and without the
+# filter the second division would be silently folded into the same club
+# histories. Values are compared stripped: several files carry a trailing space
+# ("Superliga ", "Allsvenskan ") on some rows and not others.
+#
+# `season` says how the upstream Season column is written. Both shapes are in
+# play — summer leagues use a calendar year ("2024"), winter leagues a split
+# year ("2024/2025") — and the original converter accepted only digits, so a
+# split-season country would have parsed to ZERO rows without a word of warning.
 NEW_LEAGUES = {
-    "BrazilSerieA": "https://www.football-data.co.uk/new/BRA.csv",
+    "BrazilSerieA": {"url": "https://www.football-data.co.uk/new/BRA.csv", "season": "calendar"},
+    "Denmark":      {"url": "https://www.football-data.co.uk/new/DNK.csv", "season": "split",
+                     "division": "Superliga"},
+    "Sweden":       {"url": "https://www.football-data.co.uk/new/SWE.csv", "season": "calendar",
+                     "division": "Allsvenskan"},
+    "Norway":       {"url": "https://www.football-data.co.uk/new/NOR.csv", "season": "calendar",
+                     "division": "Eliteserien"},
+    "Poland":       {"url": "https://www.football-data.co.uk/new/POL.csv", "season": "split",
+                     "division": "Ekstraklasa"},
+    "Austria":      {"url": "https://www.football-data.co.uk/new/AUT.csv", "season": "split",
+                     "division": "Bundesliga"},
+    "Switzerland":  {"url": "https://www.football-data.co.uk/new/SWZ.csv", "season": "split",
+                     "division": "Super League"},
+    "Romania":      {"url": "https://www.football-data.co.uk/new/ROU.csv", "season": "split",
+                     "division": "Superliga"},
+    "Ireland":      {"url": "https://www.football-data.co.uk/new/IRL.csv", "season": "calendar",
+                     "division": "Premier Division"},
+    "Finland":      {"url": "https://www.football-data.co.uk/new/FIN.csv", "season": "calendar",
+                     "division": "Veikkausliiga"},
 }
 NEW_MIN_SEASON = 2012
 
 
-def download_new_league(league_name: str, url: str) -> bool:
+def _parse_new_season(raw: str, mode: str) -> str | None:
+    """Upstream Season → our filename suffix, or None to skip the row.
+
+    calendar: "2024"      → "2024"   (summer leagues: Brazil, Scandinavia, …)
+    split:    "2024/2025"  → "2425"   (winter leagues — matches the main-set
+                                       naming already on disk, e.g. EPL_2425)
+    """
+    raw = (raw or "").strip()
+    if mode == "calendar":
+        return raw if raw.isdigit() and int(raw) >= NEW_MIN_SEASON else None
+    start, _, end = raw.partition("/")
+    if not (start.isdigit() and end.isdigit()):
+        return None
+    if int(start) < NEW_MIN_SEASON:
+        return None
+    return f"{start[-2:]}{end[-2:]}"
+
+
+def download_new_league(league_name: str, spec: dict) -> bool:
     """Download a /new/-format CSV and split it into per-season files in the
     main-league schema (BrazilSerieA_2024.csv, …). Always refreshed — the
     upstream file grows in place, and one 600 KB download is cheap."""
     import csv
     import io
+
+    url = spec["url"]
+    season_mode = spec.get("season", "calendar")
+    division = spec.get("division")
 
     try:
         resp = requests.get(url, timeout=30)
@@ -114,9 +173,14 @@ def download_new_league(league_name: str, url: str) -> bool:
 
     text = resp.content.decode("utf-8-sig", errors="replace")
     by_season: dict[str, list[dict]] = {}
+    skipped_division = 0
     for row in csv.DictReader(io.StringIO(text)):
-        season = (row.get("Season") or "").strip()
-        if not season.isdigit() or int(season) < NEW_MIN_SEASON:
+        # Trailing spaces appear on some rows only — compare stripped.
+        if division and (row.get("League") or "").strip() != division:
+            skipped_division += 1
+            continue
+        season = _parse_new_season(row.get("Season", ""), season_mode)
+        if season is None:
             continue
         if not (row.get("Home") and row.get("Away") and row.get("Res")):
             continue  # unplayed / malformed row
@@ -141,7 +205,15 @@ def download_new_league(league_name: str, url: str) -> bool:
             w.writeheader()
             w.writerows(rows)
     total = sum(len(r) for r in by_season.values())
-    print(f"  [ok]    {league_name}: {total:,} matches → {len(by_season)} season files")
+    if total == 0:
+        # Loud, because the failure mode this guards is silence: a changed
+        # Season format or a renamed division writes no files and the league
+        # simply never appears in training.
+        print(f"  [ERR]   {league_name}: 0 matches parsed — check the "
+              f"'season'/'division' spec against {url}")
+        return False
+    extra = f", {skipped_division:,} rows in other divisions" if skipped_division else ""
+    print(f"  [ok]    {league_name}: {total:,} matches → {len(by_season)} season files{extra}")
     return True
 
 
@@ -169,8 +241,8 @@ def main():
             time.sleep(0.3)  # be polite to the server
 
     print("\nNew-format leagues (always refreshed):")
-    for league_name, url in NEW_LEAGUES.items():
-        if download_new_league(league_name, url):
+    for league_name, spec in NEW_LEAGUES.items():
+        if download_new_league(league_name, spec):
             ok += 1
         else:
             failed += 1

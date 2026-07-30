@@ -1,0 +1,381 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2018-07-27,Ajaccio,Estac Troyes,0,1,A
+2018-07-27,Clermont Foot,Chateauroux,0,0,D
+2018-07-27,Gazelec FC Ajaccio,Paris FC,1,1,D
+2018-07-27,Grenoble,Sochaux,1,0,H
+2018-07-27,Nancy,Beziers,0,2,A
+2018-07-27,Orleans,Lens,0,2,A
+2018-07-27,RED Star FC 93,Niort,1,2,A
+2018-07-27,Valenciennes,Auxerre,3,1,H
+2018-07-28,Lorient,Le Havre,0,0,D
+2018-07-30,Stade Brestois 29,Metz,0,1,A
+2018-08-03,Auxerre,Gazelec FC Ajaccio,2,3,A
+2018-08-03,Beziers,Ajaccio,0,1,A
+2018-08-03,Estac Troyes,Stade Brestois 29,1,2,A
+2018-08-03,Le Havre,Grenoble,1,1,D
+2018-08-03,Metz,Orleans,5,1,H
+2018-08-03,Niort,Clermont Foot,4,2,H
+2018-08-03,Paris FC,Nancy,2,0,H
+2018-08-03,Sochaux,Valenciennes,0,1,A
+2018-08-04,Lens,RED Star FC 93,1,0,H
+2018-08-06,Chateauroux,Lorient,1,2,A
+2018-08-10,Ajaccio,Sochaux,2,3,A
+2018-08-10,Gazelec FC Ajaccio,Lorient,1,3,A
+2018-08-10,Grenoble,Niort,1,0,H
+2018-08-10,Nancy,Lens,0,3,A
+2018-08-10,Orleans,Auxerre,0,3,A
+2018-08-10,RED Star FC 93,Le Havre,0,1,A
+2018-08-10,Valenciennes,Chateauroux,1,1,D
+2018-08-10,Stade Brestois 29,Paris FC,1,1,D
+2018-08-10,Estac Troyes,Beziers,0,1,A
+2018-08-11,Clermont Foot,Metz,2,3,A
+2018-08-17,Lorient,Valenciennes,3,1,H
+2018-08-17,Gazelec FC Ajaccio,Grenoble,2,0,H
+2018-08-17,Chateauroux,RED Star FC 93,1,1,D
+2018-08-17,Auxerre,Nancy,1,0,H
+2018-08-17,Le Havre,Clermont Foot,0,0,D
+2018-08-17,Niort,Orleans,1,1,D
+2018-08-17,Paris FC,Beziers,1,0,H
+2018-08-17,Sochaux,Stade Brestois 29,2,0,H
+2018-08-18,Lens,Estac Troyes,2,0,H
+2018-08-20,Metz,Ajaccio,3,1,H
+2018-08-24,Ajaccio,Lorient,0,0,D
+2018-08-24,Clermont Foot,Sochaux,1,0,H
+2018-08-24,Grenoble,Chateauroux,0,0,D
+2018-08-24,Nancy,Niort,0,1,A
+2018-08-24,Orleans,Paris FC,4,0,H
+2018-08-24,RED Star FC 93,Auxerre,1,0,H
+2018-08-24,Stade Brestois 29,Le Havre,1,0,H
+2018-08-24,Estac Troyes,Metz,0,1,A
+2018-08-27,Valenciennes,Gazelec FC Ajaccio,0,0,D
+2018-08-31,Gazelec FC Ajaccio,RED Star FC 93,2,1,H
+2018-08-31,Valenciennes,Clermont Foot,0,4,A
+2018-08-31,Chateauroux,Nancy,1,0,H
+2018-08-31,Auxerre,Stade Brestois 29,0,2,A
+2018-08-31,Le Havre,Orleans,3,1,H
+2018-08-31,Niort,Ajaccio,2,0,H
+2018-08-31,Paris FC,Estac Troyes,2,0,H
+2018-08-31,Sochaux,Beziers,1,0,H
+2018-09-01,Metz,Lens,2,0,H
+2018-09-03,Lorient,Grenoble,1,0,H
+2018-09-14,Ajaccio,Paris FC,0,0,D
+2018-09-14,Clermont Foot,Auxerre,2,0,H
+2018-09-14,Grenoble,Valenciennes,4,2,H
+2018-09-14,Nancy,Le Havre,0,1,A
+2018-09-14,Orleans,Chateauroux,2,0,H
+2018-09-14,RED Star FC 93,Lorient,0,3,A
+2018-09-14,Stade Brestois 29,Gazelec FC Ajaccio,4,1,H
+2018-09-14,Estac Troyes,Niort,2,0,H
+2018-09-15,Lens,Sochaux,2,0,H
+2018-09-17,Beziers,Metz,1,3,A
+2018-09-21,Lorient,Clermont Foot,0,0,D
+2018-09-21,Gazelec FC Ajaccio,Nancy,0,1,A
+2018-09-21,Grenoble,Stade Brestois 29,1,2,A
+2018-09-21,Valenciennes,RED Star FC 93,4,1,H
+2018-09-21,Chateauroux,Beziers,2,0,H
+2018-09-21,Auxerre,Ajaccio,0,0,D
+2018-09-21,Le Havre,Estac Troyes,1,1,D
+2018-09-21,Sochaux,Orleans,0,1,A
+2018-09-22,Paris FC,Metz,2,1,H
+2018-09-24,Niort,Lens,1,2,A
+2018-09-28,Ajaccio,Valenciennes,3,1,H
+2018-09-28,Clermont Foot,Gazelec FC Ajaccio,1,1,D
+2018-09-28,Nancy,Sochaux,0,0,D
+2018-09-28,Orleans,Lorient,2,0,H
+2018-09-28,RED Star FC 93,Grenoble,2,3,A
+2018-09-28,Stade Brestois 29,Chateauroux,5,1,H
+2018-09-28,Beziers,Niort,1,1,D
+2018-09-28,Lens,Paris FC,0,0,D
+2018-09-29,Metz,Le Havre,0,1,A
+2018-10-01,Estac Troyes,Auxerre,1,0,H
+2018-10-02,Beziers,Lens,0,0,D
+2018-10-05,Lorient,Nancy,4,1,H
+2018-10-05,Gazelec FC Ajaccio,Orleans,0,2,A
+2018-10-05,Grenoble,Clermont Foot,1,0,H
+2018-10-05,RED Star FC 93,Ajaccio,2,0,H
+2018-10-05,Valenciennes,Stade Brestois 29,1,3,A
+2018-10-05,Chateauroux,Estac Troyes,0,3,A
+2018-10-05,Le Havre,Beziers,2,3,A
+2018-10-05,Niort,Paris FC,1,0,H
+2018-10-06,Auxerre,Lens,1,2,A
+2018-10-08,Sochaux,Metz,1,2,A
+2018-10-19,Ajaccio,Le Havre,3,2,H
+2018-10-19,Clermont Foot,RED Star FC 93,0,0,D
+2018-10-19,Nancy,Grenoble,1,2,A
+2018-10-19,Orleans,Valenciennes,1,0,H
+2018-10-19,Auxerre,Beziers,2,0,H
+2018-10-19,Estac Troyes,Sochaux,1,2,A
+2018-10-19,Metz,Niort,3,0,H
+2018-10-19,Paris FC,Chateauroux,0,0,D
+2018-10-20,Stade Brestois 29,Lorient,3,2,H
+2018-10-22,Lens,Gazelec FC Ajaccio,5,0,H
+2018-10-26,Lorient,Metz,0,0,D
+2018-10-26,Gazelec FC Ajaccio,Beziers,0,1,A
+2018-10-26,Grenoble,Estac Troyes,0,2,A
+2018-10-26,RED Star FC 93,Orleans,0,4,A
+2018-10-26,Valenciennes,Nancy,1,1,D
+2018-10-26,Chateauroux,Ajaccio,2,2,D
+2018-10-26,Auxerre,Paris FC,0,2,A
+2018-10-26,Sochaux,Niort,0,3,A
+2018-10-27,Le Havre,Lens,2,1,H
+2018-10-29,Clermont Foot,Stade Brestois 29,2,2,D
+2018-11-02,Ajaccio,Gazelec FC Ajaccio,1,2,A
+2018-11-02,Nancy,Clermont Foot,0,1,A
+2018-11-02,Stade Brestois 29,RED Star FC 93,1,1,D
+2018-11-02,Paris FC,Sochaux,0,0,D
+2018-11-03,Orleans,Grenoble,0,3,A
+2018-11-03,Beziers,Lorient,0,1,A
+2018-11-03,Estac Troyes,Valenciennes,4,2,H
+2018-11-03,Niort,Le Havre,1,0,H
+2018-11-03,Lens,Chateauroux,0,1,A
+2018-11-05,Metz,Auxerre,0,1,A
+2018-11-09,Lorient,Paris FC,2,1,H
+2018-11-09,Clermont Foot,Orleans,3,0,H
+2018-11-09,Gazelec FC Ajaccio,Estac Troyes,2,1,H
+2018-11-09,Grenoble,Ajaccio,2,0,H
+2018-11-09,RED Star FC 93,Beziers,0,3,A
+2018-11-09,Chateauroux,Metz,1,2,A
+2018-11-09,Auxerre,Niort,0,0,D
+2018-11-09,Le Havre,Sochaux,3,2,H
+2018-11-10,Valenciennes,Lens,4,2,H
+2018-11-12,Stade Brestois 29,Nancy,2,1,H
+2018-11-23,Ajaccio,Clermont Foot,0,0,D
+2018-11-23,Nancy,RED Star FC 93,1,0,H
+2018-11-23,Orleans,Stade Brestois 29,0,0,D
+2018-11-23,Beziers,Valenciennes,1,1,D
+2018-11-23,Estac Troyes,Lorient,2,0,H
+2018-11-23,Niort,Chateauroux,0,1,A
+2018-11-23,Paris FC,Le Havre,1,0,H
+2018-11-23,Sochaux,Auxerre,1,4,A
+2018-11-24,Lens,Grenoble,0,0,D
+2018-11-26,Metz,Gazelec FC Ajaccio,1,0,H
+2018-11-30,Lorient,Lens,2,2,D
+2018-11-30,Clermont Foot,Beziers,2,0,H
+2018-11-30,Gazelec FC Ajaccio,Niort,0,1,A
+2018-11-30,Orleans,Nancy,1,2,A
+2018-11-30,RED Star FC 93,Estac Troyes,0,3,A
+2018-11-30,Valenciennes,Paris FC,0,0,D
+2018-11-30,Stade Brestois 29,Ajaccio,2,0,H
+2018-11-30,Chateauroux,Sochaux,1,0,H
+2018-11-30,Le Havre,Auxerre,1,1,D
+2018-12-01,Grenoble,Metz,1,1,D
+2018-12-03,Auxerre,Lorient,0,0,D
+2018-12-04,Ajaccio,Nancy,1,1,D
+2018-12-04,Beziers,Grenoble,0,3,A
+2018-12-04,Estac Troyes,Orleans,3,2,H
+2018-12-04,Le Havre,Chateauroux,2,1,H
+2018-12-04,Metz,RED Star FC 93,2,0,H
+2018-12-04,Niort,Valenciennes,1,0,H
+2018-12-04,Paris FC,Clermont Foot,3,0,H
+2018-12-04,Sochaux,Gazelec FC Ajaccio,2,0,H
+2018-12-04,Lens,Stade Brestois 29,2,1,H
+2018-12-14,Lorient,Niort,1,1,D
+2018-12-14,Gazelec FC Ajaccio,Le Havre,1,1,D
+2018-12-14,Grenoble,Paris FC,0,1,A
+2018-12-14,Nancy,Estac Troyes,1,1,D
+2018-12-14,Orleans,Ajaccio,1,3,A
+2018-12-14,RED Star FC 93,Sochaux,3,0,H
+2018-12-14,Stade Brestois 29,Beziers,3,0,H
+2018-12-14,Chateauroux,Auxerre,0,0,D
+2018-12-15,Clermont Foot,Lens,0,0,D
+2018-12-17,Valenciennes,Metz,0,2,A
+2018-12-21,Chateauroux,Gazelec FC Ajaccio,0,1,A
+2018-12-21,Auxerre,Grenoble,4,0,H
+2018-12-21,Beziers,Orleans,1,2,A
+2018-12-21,Estac Troyes,Clermont Foot,0,1,A
+2018-12-21,Niort,Stade Brestois 29,1,1,D
+2018-12-21,Paris FC,RED Star FC 93,1,1,D
+2018-12-22,Sochaux,Lorient,1,0,H
+2018-12-22,Lens,Ajaccio,1,2,A
+2019-01-11,Lorient,Chateauroux,2,1,H
+2019-01-11,Ajaccio,Beziers,2,1,H
+2019-01-11,Clermont Foot,Niort,3,2,H
+2019-01-11,Gazelec FC Ajaccio,Auxerre,0,4,A
+2019-01-11,Nancy,Paris FC,1,2,A
+2019-01-11,Orleans,Metz,0,1,A
+2019-01-11,Valenciennes,Sochaux,1,0,H
+2019-01-12,Grenoble,Le Havre,0,0,D
+2019-01-12,Stade Brestois 29,Estac Troyes,1,1,D
+2019-01-14,RED Star FC 93,Lens,1,0,H
+2019-01-15,Le Havre,Valenciennes,4,3,H
+2019-01-18,Lorient,Gazelec FC Ajaccio,0,1,A
+2019-01-18,Chateauroux,Valenciennes,1,1,D
+2019-01-18,Auxerre,Orleans,3,0,H
+2019-01-18,Beziers,Estac Troyes,0,0,D
+2019-01-18,Metz,Clermont Foot,1,2,A
+2019-01-18,Sochaux,Ajaccio,0,0,D
+2019-01-19,Lens,Nancy,2,1,H
+2019-01-19,Niort,Grenoble,1,1,D
+2019-01-21,Paris FC,Stade Brestois 29,0,1,A
+2019-01-21,Le Havre,RED Star FC 93,1,0,H
+2019-01-25,Ajaccio,Metz,0,0,D
+2019-01-25,Grenoble,Gazelec FC Ajaccio,1,1,D
+2019-01-25,Nancy,Auxerre,1,0,H
+2019-01-25,RED Star FC 93,Chateauroux,1,3,A
+2019-01-25,Valenciennes,Lorient,1,2,A
+2019-01-26,Orleans,Niort,1,0,H
+2019-01-26,Stade Brestois 29,Sochaux,1,0,H
+2019-01-28,Clermont Foot,Le Havre,0,0,D
+2019-01-28,Beziers,Paris FC,0,1,A
+2019-01-28,Estac Troyes,Lens,1,0,H
+2019-01-29,Metz,Nancy,3,0,H
+2019-02-01,Lorient,Ajaccio,1,0,H
+2019-02-01,Chateauroux,Grenoble,2,2,D
+2019-02-01,Auxerre,RED Star FC 93,0,0,D
+2019-02-01,Le Havre,Stade Brestois 29,1,1,D
+2019-02-01,Metz,Estac Troyes,1,1,D
+2019-02-01,Niort,Nancy,1,1,D
+2019-02-01,Paris FC,Orleans,0,0,D
+2019-02-01,Sochaux,Clermont Foot,2,1,H
+2019-02-04,Gazelec FC Ajaccio,Valenciennes,0,0,D
+2019-02-04,Lens,Beziers,3,0,H
+2019-02-08,Ajaccio,Niort,1,0,H
+2019-02-08,Clermont Foot,Valenciennes,0,1,A
+2019-02-08,Grenoble,Lorient,0,1,A
+2019-02-08,Nancy,Chateauroux,0,1,A
+2019-02-08,Orleans,Le Havre,1,1,D
+2019-02-08,RED Star FC 93,Gazelec FC Ajaccio,1,1,D
+2019-02-08,Beziers,Sochaux,0,0,D
+2019-02-08,Estac Troyes,Paris FC,0,1,A
+2019-02-09,Lens,Metz,0,0,D
+2019-02-11,Stade Brestois 29,Auxerre,1,0,H
+2019-02-15,Lorient,RED Star FC 93,2,1,H
+2019-02-15,Gazelec FC Ajaccio,Stade Brestois 29,1,1,D
+2019-02-15,Valenciennes,Grenoble,3,2,H
+2019-02-15,Chateauroux,Orleans,1,2,A
+2019-02-15,Auxerre,Clermont Foot,1,0,H
+2019-02-15,Le Havre,Nancy,0,2,A
+2019-02-15,Niort,Estac Troyes,1,1,D
+2019-02-15,Paris FC,Ajaccio,1,1,D
+2019-02-17,Sochaux,Lens,0,1,A
+2019-02-18,Metz,Beziers,1,0,H
+2019-02-22,Ajaccio,Auxerre,2,1,H
+2019-02-22,Clermont Foot,Lorient,0,1,A
+2019-02-22,Nancy,Gazelec FC Ajaccio,3,1,H
+2019-02-22,Orleans,Sochaux,2,0,H
+2019-02-22,RED Star FC 93,Valenciennes,1,0,H
+2019-02-22,Stade Brestois 29,Grenoble,3,1,H
+2019-02-22,Beziers,Chateauroux,1,1,D
+2019-02-22,Estac Troyes,Le Havre,2,1,H
+2019-02-22,Metz,Paris FC,2,0,H
+2019-02-25,Lens,Niort,4,1,H
+2019-03-01,Gazelec FC Ajaccio,Clermont Foot,0,3,A
+2019-03-01,Grenoble,RED Star FC 93,2,0,H
+2019-03-01,Valenciennes,Ajaccio,4,0,H
+2019-03-01,Chateauroux,Stade Brestois 29,2,2,D
+2019-03-01,Auxerre,Estac Troyes,0,2,A
+2019-03-01,Niort,Beziers,0,0,D
+2019-03-01,Sochaux,Nancy,0,4,A
+2019-03-02,Lorient,Orleans,1,3,A
+2019-03-03,Paris FC,Lens,2,0,H
+2019-03-04,Le Havre,Metz,2,2,D
+2019-03-08,Ajaccio,RED Star FC 93,0,0,D
+2019-03-08,Clermont Foot,Grenoble,1,1,D
+2019-03-08,Nancy,Lorient,3,2,H
+2019-03-08,Orleans,Gazelec FC Ajaccio,2,2,D
+2019-03-08,Stade Brestois 29,Valenciennes,2,5,A
+2019-03-08,Beziers,Le Havre,1,1,D
+2019-03-08,Estac Troyes,Chateauroux,1,0,H
+2019-03-08,Paris FC,Niort,0,0,D
+2019-03-09,Lens,Auxerre,2,0,H
+2019-03-11,Metz,Sochaux,1,1,D
+2019-03-15,Grenoble,Nancy,1,0,H
+2019-03-15,RED Star FC 93,Clermont Foot,0,4,A
+2019-03-15,Valenciennes,Orleans,1,4,A
+2019-03-15,Chateauroux,Paris FC,0,1,A
+2019-03-15,Beziers,Auxerre,1,0,H
+2019-03-15,Le Havre,Ajaccio,3,1,H
+2019-03-15,Niort,Metz,0,3,A
+2019-03-15,Sochaux,Estac Troyes,0,0,D
+2019-03-16,Lorient,Stade Brestois 29,1,1,D
+2019-03-18,Gazelec FC Ajaccio,Lens,1,0,H
+2019-03-29,Ajaccio,Chateauroux,1,1,D
+2019-03-29,Nancy,Valenciennes,0,2,A
+2019-03-29,Orleans,RED Star FC 93,2,2,D
+2019-03-29,Stade Brestois 29,Clermont Foot,0,0,D
+2019-03-29,Beziers,Gazelec FC Ajaccio,0,0,D
+2019-03-29,Estac Troyes,Grenoble,2,1,H
+2019-03-29,Niort,Sochaux,0,1,A
+2019-03-29,Paris FC,Auxerre,3,0,H
+2019-03-31,Metz,Lorient,2,1,H
+2019-04-01,Lens,Le Havre,0,0,D
+2019-04-05,Lorient,Beziers,3,1,H
+2019-04-05,Clermont Foot,Nancy,2,3,A
+2019-04-05,Gazelec FC Ajaccio,Ajaccio,1,0,H
+2019-04-05,Grenoble,Orleans,0,4,A
+2019-04-05,RED Star FC 93,Stade Brestois 29,0,2,A
+2019-04-05,Valenciennes,Estac Troyes,0,1,A
+2019-04-05,Le Havre,Niort,0,0,D
+2019-04-05,Sochaux,Paris FC,1,0,H
+2019-04-06,Auxerre,Metz,0,0,D
+2019-04-08,Chateauroux,Lens,0,0,D
+2019-04-12,Ajaccio,Grenoble,1,2,A
+2019-04-12,Nancy,Stade Brestois 29,2,3,A
+2019-04-12,Orleans,Clermont Foot,2,1,H
+2019-04-12,Beziers,RED Star FC 93,1,3,A
+2019-04-12,Estac Troyes,Gazelec FC Ajaccio,1,0,H
+2019-04-12,Metz,Chateauroux,2,1,H
+2019-04-12,Niort,Auxerre,0,0,D
+2019-04-12,Sochaux,Le Havre,1,3,A
+2019-04-12,Lens,Valenciennes,0,0,D
+2019-04-15,Paris FC,Lorient,2,2,D
+2019-04-19,Lorient,Estac Troyes,0,3,A
+2019-04-19,Clermont Foot,Ajaccio,0,0,D
+2019-04-19,Gazelec FC Ajaccio,Metz,0,2,A
+2019-04-19,RED Star FC 93,Nancy,1,1,D
+2019-04-19,Valenciennes,Beziers,5,6,A
+2019-04-19,Stade Brestois 29,Orleans,3,1,H
+2019-04-19,Chateauroux,Niort,2,1,H
+2019-04-19,Auxerre,Sochaux,1,0,H
+2019-04-19,Le Havre,Paris FC,2,1,H
+2019-04-20,Grenoble,Lens,0,2,A
+2019-04-22,Paris FC,Valenciennes,0,0,D
+2019-04-23,Ajaccio,Stade Brestois 29,0,2,A
+2019-04-23,Nancy,Orleans,1,0,H
+2019-04-23,Auxerre,Le Havre,0,1,A
+2019-04-23,Beziers,Clermont Foot,1,1,D
+2019-04-23,Estac Troyes,RED Star FC 93,2,0,H
+2019-04-23,Metz,Grenoble,1,1,D
+2019-04-23,Niort,Gazelec FC Ajaccio,1,1,D
+2019-04-23,Sochaux,Chateauroux,0,0,D
+2019-04-23,Lens,Lorient,0,1,A
+2019-04-26,Clermont Foot,Paris FC,1,1,D
+2019-04-26,Gazelec FC Ajaccio,Sochaux,0,2,A
+2019-04-26,Grenoble,Beziers,4,2,H
+2019-04-26,Nancy,Ajaccio,1,0,H
+2019-04-26,Orleans,Estac Troyes,0,1,A
+2019-04-26,RED Star FC 93,Metz,1,2,A
+2019-04-26,Valenciennes,Niort,1,2,A
+2019-04-26,Chateauroux,Le Havre,1,0,H
+2019-04-27,Stade Brestois 29,Lens,2,0,H
+2019-04-29,Lorient,Auxerre,2,2,D
+2019-05-03,Ajaccio,Orleans,1,0,H
+2019-05-03,Auxerre,Chateauroux,1,2,A
+2019-05-03,Beziers,Stade Brestois 29,1,0,H
+2019-05-03,Estac Troyes,Nancy,2,1,H
+2019-05-03,Le Havre,Gazelec FC Ajaccio,2,2,D
+2019-05-03,Metz,Valenciennes,3,0,H
+2019-05-03,Paris FC,Grenoble,1,0,H
+2019-05-03,Sochaux,RED Star FC 93,1,2,A
+2019-05-04,Lens,Clermont Foot,1,0,H
+2019-05-06,Niort,Lorient,2,2,D
+2019-05-10,Lorient,Sochaux,0,0,D
+2019-05-10,Ajaccio,Lens,0,2,A
+2019-05-10,Clermont Foot,Estac Troyes,2,4,A
+2019-05-10,Gazelec FC Ajaccio,Chateauroux,1,2,A
+2019-05-10,Grenoble,Auxerre,0,0,D
+2019-05-10,Nancy,Metz,1,0,H
+2019-05-10,Orleans,Beziers,0,0,D
+2019-05-10,RED Star FC 93,Paris FC,0,1,A
+2019-05-10,Valenciennes,Le Havre,1,0,H
+2019-05-10,Stade Brestois 29,Niort,3,0,H
+2019-05-17,Chateauroux,Clermont Foot,2,2,D
+2019-05-17,Auxerre,Valenciennes,1,1,D
+2019-05-17,Beziers,Nancy,3,0,H
+2019-05-17,Estac Troyes,Ajaccio,0,0,D
+2019-05-17,Le Havre,Lorient,2,3,A
+2019-05-17,Metz,Stade Brestois 29,1,0,H
+2019-05-17,Niort,RED Star FC 93,1,0,H
+2019-05-17,Paris FC,Gazelec FC Ajaccio,1,0,H
+2019-05-17,Sochaux,Grenoble,3,1,H
+2019-05-17,Lens,Orleans,5,2,H

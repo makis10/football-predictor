@@ -1,0 +1,196 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2022-08-12,Airbus UK,Aberystwyth Town,1,2,A
+2022-08-13,Cardiff MET,GAP Connah S Quay FC,2,0,H
+2022-08-13,Newtown AFC,The New Saints,0,0,D
+2022-08-13,Haverfordwest County AFC,Caernarfon Town,1,0,H
+2022-08-13,Pontypridd Town,Flint Town United,0,1,A
+2022-08-14,Penybont,Bala Town,2,0,H
+2022-08-19,GAP Connah S Quay FC,Airbus UK,1,0,H
+2022-08-19,Newtown AFC,Flint Town United,0,2,A
+2022-08-20,Bala Town,Haverfordwest County AFC,1,1,D
+2022-08-20,The New Saints,Penybont,1,0,H
+2022-08-20,Caernarfon Town,Pontypridd Town,2,0,H
+2022-08-20,Aberystwyth Town,Cardiff MET,0,4,A
+2022-08-26,Bala Town,Newtown AFC,3,0,H
+2022-08-26,The New Saints,GAP Connah S Quay FC,2,1,H
+2022-08-27,Caernarfon Town,Cardiff MET,5,1,H
+2022-08-27,Penybont,Flint Town United,2,1,H
+2022-08-27,Pontypridd Town,Aberystwyth Town,2,1,H
+2022-08-27,Haverfordwest County AFC,Airbus UK,3,0,H
+2022-08-30,Cardiff MET,Pontypridd Town,3,0,H
+2022-08-30,GAP Connah S Quay FC,Bala Town,1,0,H
+2022-08-30,Newtown AFC,Caernarfon Town,2,1,H
+2022-08-30,Penybont,Haverfordwest County AFC,3,2,H
+2022-08-30,Airbus UK,Flint Town United,1,3,A
+2022-08-30,Aberystwyth Town,The New Saints,0,2,A
+2022-09-02,Caernarfon Town,Airbus UK,3,1,H
+2022-09-02,Aberystwyth Town,Bala Town,1,4,A
+2022-09-03,Cardiff MET,Flint Town United,1,0,H
+2022-09-03,GAP Connah S Quay FC,Penybont,2,0,H
+2022-09-03,Pontypridd Town,The New Saints,0,2,A
+2022-09-03,Haverfordwest County AFC,Newtown AFC,2,3,A
+2022-09-16,Aberystwyth Town,GAP Connah S Quay FC,2,1,H
+2022-09-17,Cardiff MET,The New Saints,0,7,A
+2022-09-17,Caernarfon Town,Haverfordwest County AFC,2,1,H
+2022-09-17,Pontypridd Town,Airbus UK,1,0,H
+2022-09-17,Flint Town United,Bala Town,1,1,D
+2022-09-17,Newtown AFC,Penybont,2,3,A
+2022-09-23,Penybont,Aberystwyth Town,3,1,H
+2022-09-23,Airbus UK,Newtown AFC,4,4,D
+2022-09-24,Bala Town,Cardiff MET,2,0,H
+2022-09-24,GAP Connah S Quay FC,Pontypridd Town,1,0,H
+2022-09-24,Haverfordwest County AFC,Flint Town United,1,1,D
+2022-09-27,The New Saints,Flint Town United,6,2,H
+2022-09-27,Caernarfon Town,GAP Connah S Quay FC,0,2,A
+2022-09-27,Newtown AFC,Bala Town,0,2,A
+2022-09-27,Penybont,Pontypridd Town,1,1,D
+2022-09-27,Haverfordwest County AFC,Cardiff MET,1,0,H
+2022-09-27,Aberystwyth Town,Airbus UK,2,1,H
+2022-09-30,The New Saints,Newtown AFC,4,1,H
+2022-09-30,Airbus UK,Bala Town,0,6,A
+2022-10-01,Cardiff MET,Aberystwyth Town,2,1,H
+2022-10-01,GAP Connah S Quay FC,Haverfordwest County AFC,1,0,H
+2022-10-01,Pontypridd Town,Caernarfon Town,3,1,H
+2022-10-01,Flint Town United,Penybont,1,1,D
+2022-10-14,Caernarfon Town,Flint Town United,2,0,H
+2022-10-14,Pontypridd Town,Newtown AFC,1,4,A
+2022-10-14,Aberystwyth Town,Haverfordwest County AFC,2,1,H
+2022-10-15,Bala Town,The New Saints,0,5,A
+2022-10-15,GAP Connah S Quay FC,Cardiff MET,2,0,H
+2022-10-15,Airbus UK,Penybont,0,3,A
+2022-10-21,Caernarfon Town,Aberystwyth Town,2,1,H
+2022-10-22,The New Saints,Pontypridd Town,2,0,H
+2022-10-22,Newtown AFC,Cardiff MET,0,1,A
+2022-10-22,Penybont,GAP Connah S Quay FC,0,1,A
+2022-10-22,Haverfordwest County AFC,Bala Town,1,4,A
+2022-10-22,Flint Town United,Airbus UK,1,0,H
+2022-10-25,The New Saints,Caernarfon Town,3,0,H
+2022-10-28,GAP Connah S Quay FC,Newtown AFC,3,1,H
+2022-10-28,Aberystwyth Town,Flint Town United,2,1,H
+2022-10-29,Bala Town,Penybont,1,1,D
+2022-10-29,Cardiff MET,Caernarfon Town,0,3,A
+2022-10-29,Haverfordwest County AFC,The New Saints,1,3,A
+2022-10-29,Airbus UK,Pontypridd Town,0,4,A
+2022-11-04,Bala Town,Aberystwyth Town,3,0,H
+2022-11-05,Newtown AFC,Airbus UK,2,1,H
+2022-11-05,Caernarfon Town,Penybont,0,2,A
+2022-11-05,Flint Town United,Haverfordwest County AFC,0,1,A
+2022-11-05,The New Saints,Cardiff MET,4,0,H
+2022-11-06,Pontypridd Town,GAP Connah S Quay FC,0,5,A
+2022-11-18,GAP Connah S Quay FC,Caernarfon Town,3,3,D
+2022-11-18,Aberystwyth Town,Pontypridd Town,2,1,H
+2022-11-19,Cardiff MET,Bala Town,1,0,H
+2022-11-19,Airbus UK,Haverfordwest County AFC,1,2,A
+2022-11-19,Flint Town United,Newtown AFC,1,4,A
+2022-11-19,Penybont,The New Saints,0,0,D
+2022-12-02,Bala Town,Flint Town United,1,0,H
+2022-12-02,The New Saints,Aberystwyth Town,11,0,H
+2022-12-02,Caernarfon Town,Newtown AFC,2,3,A
+2022-12-02,Pontypridd Town,Cardiff MET,0,1,A
+2022-12-02,Haverfordwest County AFC,Penybont,2,1,H
+2022-12-02,Airbus UK,GAP Connah S Quay FC,1,2,A
+2022-12-10,Flint Town United,Cardiff MET,1,1,D
+2022-12-11,Newtown AFC,Haverfordwest County AFC,2,0,H
+2022-12-16,Cardiff MET,Haverfordwest County AFC,2,0,H
+2022-12-16,Newtown AFC,Pontypridd Town,4,2,H
+2022-12-20,GAP Connah S Quay FC,Aberystwyth Town,3,0,H
+2022-12-22,Cardiff MET,Newtown AFC,2,1,H
+2022-12-23,Bala Town,Airbus UK,2,1,H
+2022-12-23,GAP Connah S Quay FC,The New Saints,1,1,D
+2022-12-23,Pontypridd Town,Penybont,0,1,A
+2022-12-23,Haverfordwest County AFC,Aberystwyth Town,3,1,H
+2022-12-23,Flint Town United,Caernarfon Town,2,1,H
+2022-12-26,Aberystwyth Town,Newtown AFC,1,2,A
+2022-12-26,The New Saints,Airbus UK,7,0,H
+2022-12-26,Caernarfon Town,Bala Town,1,5,A
+2022-12-26,GAP Connah S Quay FC,Flint Town United,2,0,H
+2022-12-26,Penybont,Cardiff MET,1,3,A
+2022-12-26,Pontypridd Town,Haverfordwest County AFC,3,2,H
+2022-12-30,Newtown AFC,Aberystwyth Town,6,1,H
+2022-12-30,Bala Town,Caernarfon Town,3,0,H
+2022-12-30,Cardiff MET,Penybont,0,0,D
+2022-12-31,Haverfordwest County AFC,Pontypridd Town,1,1,D
+2022-12-31,Airbus UK,The New Saints,0,8,A
+2022-12-31,Flint Town United,GAP Connah S Quay FC,0,0,D
+2023-01-03,Caernarfon Town,The New Saints,0,1,A
+2023-01-03,Penybont,Airbus UK,2,0,H
+2023-01-03,Pontypridd Town,Bala Town,2,1,H
+2023-01-06,Flint Town United,Aberystwyth Town,1,1,D
+2023-01-07,Penybont,Caernarfon Town,5,1,H
+2023-01-07,Bala Town,Pontypridd Town,3,0,H
+2023-01-07,The New Saints,Haverfordwest County AFC,3,1,H
+2023-01-07,Newtown AFC,GAP Connah S Quay FC,0,0,D
+2023-01-07,Airbus UK,Cardiff MET,0,2,A
+2023-01-10,Bala Town,GAP Connah S Quay FC,0,0,D
+2023-01-10,Airbus UK,Caernarfon Town,0,3,A
+2023-01-10,Flint Town United,The New Saints,1,8,A
+2023-01-10,Aberystwyth Town,Penybont,0,3,A
+2023-01-21,Aberystwyth Town,Caernarfon Town,2,1,H
+2023-01-21,Cardiff MET,Airbus UK,3,1,H
+2023-01-21,Flint Town United,Pontypridd Town,4,1,H
+2023-01-28,Penybont,Newtown AFC,3,0,H
+2023-01-31,The New Saints,Bala Town,3,0,H
+2023-01-31,Haverfordwest County AFC,GAP Connah S Quay FC,2,1,H
+2023-02-11,Cardiff MET,The New Saints,3,2,H
+2023-02-11,Bala Town,Penybont,0,0,D
+2023-02-11,Caernarfon Town,Haverfordwest County AFC,2,0,H
+2023-02-11,Newtown AFC,GAP Connah S Quay FC,1,1,D
+2023-02-11,Pontypridd Town,Airbus UK,4,0,H
+2023-02-11,Flint Town United,Aberystwyth Town,5,0,H
+2023-02-17,Airbus UK,Caernarfon Town,0,2,A
+2023-02-17,Penybont,Cardiff MET,2,1,H
+2023-02-18,Aberystwyth Town,Pontypridd Town,3,3,D
+2023-02-18,The New Saints,Newtown AFC,1,0,H
+2023-02-18,GAP Connah S Quay FC,Bala Town,1,1,D
+2023-02-18,Haverfordwest County AFC,Flint Town United,3,1,H
+2023-02-24,Caernarfon Town,Flint Town United,2,2,D
+2023-02-24,Airbus UK,Aberystwyth Town,1,7,A
+2023-02-25,The New Saints,Penybont,1,1,D
+2023-02-25,GAP Connah S Quay FC,Cardiff MET,2,1,H
+2023-02-25,Newtown AFC,Bala Town,3,2,H
+2023-02-25,Pontypridd Town,Haverfordwest County AFC,2,1,H
+2023-03-10,Cardiff MET,Newtown AFC,0,0,D
+2023-03-11,Aberystwyth Town,Haverfordwest County AFC,0,1,A
+2023-03-11,Penybont,GAP Connah S Quay FC,1,1,D
+2023-03-11,Pontypridd Town,Caernarfon Town,1,0,H
+2023-03-11,Flint Town United,Airbus UK,2,1,H
+2023-03-13,The New Saints,Bala Town,2,1,H
+2023-03-17,Caernarfon Town,Aberystwyth Town,0,1,A
+2023-03-17,GAP Connah S Quay FC,The New Saints,0,0,D
+2023-03-18,Bala Town,Cardiff MET,0,0,D
+2023-03-18,Newtown AFC,Penybont,0,1,A
+2023-03-18,Haverfordwest County AFC,Airbus UK,4,0,H
+2023-03-18,Flint Town United,Pontypridd Town,0,0,D
+2023-03-24,GAP Connah S Quay FC,Newtown AFC,2,0,H
+2023-03-25,Aberystwyth Town,Flint Town United,1,0,H
+2023-03-25,The New Saints,Cardiff MET,7,1,H
+2023-03-25,Penybont,Bala Town,2,2,D
+2023-03-25,Haverfordwest County AFC,Caernarfon Town,2,2,D
+2023-03-25,Airbus UK,Pontypridd Town,0,3,A
+2023-03-31,Bala Town,GAP Connah S Quay FC,1,2,A
+2023-03-31,Cardiff MET,Penybont,2,3,A
+2023-03-31,Caernarfon Town,Airbus UK,4,0,H
+2023-04-01,Newtown AFC,The New Saints,0,5,A
+2023-04-01,Flint Town United,Haverfordwest County AFC,0,2,A
+2023-04-01,Pontypridd Town,Aberystwyth Town,1,1,D
+2023-04-07,Bala Town,Newtown AFC,1,2,A
+2023-04-07,Haverfordwest County AFC,Pontypridd Town,2,0,H
+2023-04-08,Aberystwyth Town,Airbus UK,1,1,D
+2023-04-08,Cardiff MET,GAP Connah S Quay FC,0,2,A
+2023-04-08,Penybont,The New Saints,2,5,A
+2023-04-14,Bala Town,The New Saints,0,2,A
+2023-04-14,Airbus UK,Flint Town United,1,3,A
+2023-04-15,Caernarfon Town,Pontypridd Town,1,2,A
+2023-04-15,GAP Connah S Quay FC,Penybont,0,0,D
+2023-04-15,Newtown AFC,Cardiff MET,1,2,A
+2023-04-15,Haverfordwest County AFC,Aberystwyth Town,1,1,D
+2023-04-19,Flint Town United,Caernarfon Town,2,3,A
+2023-04-22,Aberystwyth Town,Caernarfon Town,3,2,H
+2023-04-22,Cardiff MET,Bala Town,2,1,H
+2023-04-22,The New Saints,GAP Connah S Quay FC,4,1,H
+2023-04-22,Penybont,Newtown AFC,2,1,H
+2023-04-22,Pontypridd Town,Flint Town United,3,2,H
+2023-04-22,Airbus UK,Haverfordwest County AFC,1,4,A
+2023-05-05,Bala Town,Newtown AFC,2,4,A
+2023-05-06,Cardiff MET,Haverfordwest County AFC,0,0,D
+2023-05-13,Newtown AFC,Haverfordwest County AFC,1,1,D

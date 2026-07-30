@@ -1,0 +1,343 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2018-08-24,Brescia,Perugia,1,1,D
+2018-08-25,Salernitana,Palermo,0,0,D
+2018-08-25,Venezia,Spezia,1,0,H
+2018-08-25,Cremonese,Pescara,1,1,D
+2018-08-26,Hellas Verona,Padova,1,1,D
+2018-08-26,Ascoli,Cosenza,1,1,D
+2018-08-26,Cittadella,Crotone,3,0,H
+2018-08-26,Foggia,Carpi,4,2,H
+2018-08-27,Benevento,Lecce,3,3,D
+2018-08-31,Palermo,Cremonese,2,2,D
+2018-09-01,Spezia,Brescia,3,2,H
+2018-09-01,Carpi,Cittadella,0,1,A
+2018-09-01,Padova,Venezia,1,0,H
+2018-09-01,Cosenza,Hellas Verona,0,3,A
+2018-09-02,Pescara,Livorno,2,1,H
+2018-09-02,Crotone,Foggia,4,1,H
+2018-09-02,Perugia,Ascoli,2,0,H
+2018-09-02,Lecce,Salernitana,2,2,D
+2018-09-14,Venezia,Benevento,2,3,A
+2018-09-15,Ascoli,Lecce,1,0,H
+2018-09-15,Cittadella,Cosenza,2,0,H
+2018-09-15,Brescia,Pescara,1,1,D
+2018-09-15,Cremonese,Spezia,2,0,H
+2018-09-16,Hellas Verona,Carpi,4,1,H
+2018-09-16,Salernitana,Padova,3,0,H
+2018-09-16,Foggia,Palermo,1,2,A
+2018-09-17,Livorno,Crotone,0,1,A
+2018-09-21,Benevento,Salernitana,4,0,H
+2018-09-22,Crotone,Hellas Verona,1,2,A
+2018-09-22,Spezia,Cittadella,1,0,H
+2018-09-22,Carpi,Brescia,1,1,D
+2018-09-22,Palermo,Perugia,4,1,H
+2018-09-22,Pescara,Foggia,1,0,H
+2018-09-22,Lecce,Venezia,2,1,H
+2018-09-22,Cosenza,Livorno,1,1,D
+2018-09-23,Padova,Cremonese,1,1,D
+2018-09-25,Hellas Verona,Spezia,2,1,H
+2018-09-25,Cittadella,Benevento,0,1,A
+2018-09-25,Salernitana,Ascoli,1,1,D
+2018-09-25,Brescia,Palermo,2,1,H
+2018-09-25,Perugia,Carpi,0,1,A
+2018-09-25,Pescara,Crotone,2,1,H
+2018-09-25,Livorno,Lecce,0,3,A
+2018-09-26,Cremonese,Cosenza,2,0,H
+2018-09-26,Foggia,Padova,2,1,H
+2018-09-28,Crotone,Brescia,2,2,D
+2018-09-29,Salernitana,Hellas Verona,1,0,H
+2018-09-29,Spezia,Carpi,2,1,H
+2018-09-29,Lecce,Cittadella,1,1,D
+2018-09-29,Venezia,Livorno,1,1,D
+2018-09-30,Ascoli,Cremonese,0,0,D
+2018-09-30,Cosenza,Perugia,1,1,D
+2018-09-30,Benevento,Foggia,1,3,A
+2018-10-02,Padova,Pescara,2,2,D
+2018-10-05,Hellas Verona,Lecce,0,2,A
+2018-10-06,Carpi,Cosenza,1,1,D
+2018-10-06,Cremonese,Salernitana,0,0,D
+2018-10-06,Foggia,Ascoli,3,2,H
+2018-10-06,Pescara,Benevento,2,1,H
+2018-10-06,Perugia,Venezia,1,0,H
+2018-10-07,Brescia,Padova,4,1,H
+2018-10-07,Livorno,Spezia,1,3,A
+2018-10-07,Palermo,Crotone,1,0,H
+2018-10-19,Spezia,Pescara,1,3,A
+2018-10-20,Ascoli,Carpi,1,0,H
+2018-10-20,Cittadella,Brescia,2,2,D
+2018-10-20,Cosenza,Foggia,2,0,H
+2018-10-20,Crotone,Padova,2,1,H
+2018-10-21,Salernitana,Perugia,2,1,H
+2018-10-21,Venezia,Hellas Verona,1,1,D
+2018-10-21,Lecce,Palermo,1,2,A
+2018-10-22,Benevento,Livorno,1,0,H
+2018-10-26,Palermo,Venezia,1,1,D
+2018-10-27,Benevento,Cremonese,2,1,H
+2018-10-27,Brescia,Cosenza,1,0,H
+2018-10-27,Foggia,Lecce,2,2,D
+2018-10-27,Pescara,Cittadella,0,1,A
+2018-10-27,Livorno,Ascoli,1,0,H
+2018-10-27,Padova,Spezia,0,0,D
+2018-10-27,Hellas Verona,Perugia,2,1,H
+2018-10-28,Crotone,Salernitana,1,1,D
+2018-10-30,Ascoli,Hellas Verona,1,0,H
+2018-10-30,Cittadella,Foggia,1,1,D
+2018-10-30,Carpi,Palermo,0,3,A
+2018-10-30,Cremonese,Venezia,0,1,A
+2018-10-30,Perugia,Padova,3,2,H
+2018-10-30,Cosenza,Pescara,1,1,D
+2018-10-31,Salernitana,Livorno,3,1,H
+2018-10-31,Lecce,Crotone,1,0,H
+2018-11-02,Hellas Verona,Cremonese,1,1,D
+2018-11-03,Foggia,Brescia,2,2,D
+2018-11-03,Palermo,Cosenza,2,1,H
+2018-11-03,Padova,Cittadella,0,0,D
+2018-11-03,Benevento,Ascoli,1,2,A
+2018-11-04,Crotone,Carpi,1,1,D
+2018-11-04,Venezia,Salernitana,1,0,H
+2018-11-04,Livorno,Perugia,2,3,A
+2018-11-05,Pescara,Lecce,4,2,H
+2018-11-09,Perugia,Crotone,2,1,H
+2018-11-10,Ascoli,Padova,2,3,A
+2018-11-10,Salernitana,Spezia,1,0,H
+2018-11-10,Carpi,Benevento,2,2,D
+2018-11-10,Cremonese,Livorno,1,0,H
+2018-11-10,Cosenza,Lecce,2,3,A
+2018-11-11,Cittadella,Venezia,3,2,H
+2018-11-11,Brescia,Hellas Verona,4,2,H
+2018-11-11,Palermo,Pescara,3,0,H
+2018-11-18,Spezia,Benevento,3,1,H
+2018-11-23,Hellas Verona,Palermo,1,1,D
+2018-11-24,Venezia,Brescia,2,1,H
+2018-11-24,Livorno,Cittadella,0,0,D
+2018-11-24,Padova,Carpi,0,1,A
+2018-11-24,Benevento,Perugia,2,1,H
+2018-11-25,Spezia,Foggia,0,0,D
+2018-11-25,Pescara,Ascoli,1,1,D
+2018-11-25,Lecce,Cremonese,2,0,H
+2018-11-26,Crotone,Cosenza,0,1,A
+2018-11-30,Palermo,Benevento,0,0,D
+2018-12-01,Cittadella,Salernitana,3,1,H
+2018-12-01,Cremonese,Crotone,1,0,H
+2018-12-01,Cosenza,Padova,2,1,H
+2018-12-01,Ascoli,Spezia,3,1,H
+2018-12-02,Brescia,Livorno,2,0,H
+2018-12-02,Carpi,Lecce,0,1,A
+2018-12-02,Perugia,Pescara,2,1,H
+2018-12-03,Foggia,Venezia,1,1,D
+2018-12-07,Pescara,Carpi,2,0,H
+2018-12-08,Padova,Palermo,1,3,A
+2018-12-08,Spezia,Cosenza,4,0,H
+2018-12-08,Venezia,Ascoli,1,0,H
+2018-12-08,Lecce,Perugia,0,0,D
+2018-12-09,Cremonese,Cittadella,0,0,D
+2018-12-09,Livorno,Foggia,3,1,H
+2018-12-09,Benevento,Hellas Verona,0,1,A
+2018-12-10,Salernitana,Brescia,1,3,A
+2018-12-14,Foggia,Cremonese,3,1,H
+2018-12-15,Ascoli,Cittadella,1,1,D
+2018-12-15,Palermo,Livorno,1,1,D
+2018-12-15,Perugia,Spezia,1,1,D
+2018-12-16,Crotone,Venezia,1,1,D
+2018-12-16,Carpi,Salernitana,3,2,H
+2018-12-16,Cosenza,Benevento,0,0,D
+2018-12-16,Brescia,Lecce,2,1,H
+2018-12-17,Hellas Verona,Pescara,3,1,H
+2018-12-21,Ascoli,Brescia,1,1,D
+2018-12-22,Cremonese,Carpi,1,2,A
+2018-12-22,Livorno,Hellas Verona,0,0,D
+2018-12-23,Salernitana,Foggia,1,0,H
+2018-12-23,Cittadella,Perugia,2,2,D
+2018-12-23,Venezia,Cosenza,0,1,A
+2018-12-23,Lecce,Padova,3,2,H
+2018-12-23,Spezia,Palermo,1,1,D
+2018-12-23,Benevento,Crotone,3,0,H
+2018-12-26,Brescia,Cremonese,3,2,H
+2018-12-26,Carpi,Livorno,1,4,A
+2018-12-27,Pescara,Venezia,1,0,H
+2018-12-27,Crotone,Spezia,0,3,A
+2018-12-27,Hellas Verona,Cittadella,4,0,H
+2018-12-27,Palermo,Ascoli,3,0,H
+2018-12-27,Perugia,Foggia,3,0,H
+2018-12-27,Padova,Benevento,0,1,A
+2018-12-27,Cosenza,Salernitana,0,0,D
+2018-12-30,Foggia,Hellas Verona,2,2,D
+2018-12-30,Ascoli,Crotone,3,2,H
+2018-12-30,Cittadella,Palermo,0,1,A
+2018-12-30,Salernitana,Pescara,2,4,A
+2018-12-30,Venezia,Carpi,1,1,D
+2018-12-30,Cremonese,Perugia,4,0,H
+2018-12-30,Benevento,Brescia,1,1,D
+2018-12-30,Livorno,Padova,1,1,D
+2018-12-30,Spezia,Lecce,1,1,D
+2019-01-18,Palermo,Salernitana,1,2,A
+2019-01-19,Crotone,Cittadella,0,0,D
+2019-01-19,Carpi,Foggia,0,2,A
+2019-01-19,Lecce,Benevento,1,1,D
+2019-01-19,Perugia,Brescia,0,2,A
+2019-01-20,Padova,Hellas Verona,3,0,H
+2019-01-20,Cosenza,Ascoli,0,0,D
+2019-01-20,Pescara,Cremonese,0,0,D
+2019-01-21,Spezia,Venezia,1,1,D
+2019-01-25,Foggia,Crotone,0,2,A
+2019-01-26,Ascoli,Perugia,0,3,A
+2019-01-26,Cittadella,Carpi,3,1,H
+2019-01-26,Cremonese,Palermo,2,0,H
+2019-01-26,Salernitana,Lecce,1,2,A
+2019-01-27,Venezia,Padova,2,1,H
+2019-01-27,Livorno,Pescara,0,0,D
+2019-01-27,Brescia,Spezia,4,4,D
+2019-01-28,Hellas Verona,Cosenza,2,2,D
+2019-02-02,Carpi,Hellas Verona,1,1,D
+2019-02-02,Padova,Salernitana,0,0,D
+2019-02-02,Cosenza,Cittadella,2,0,H
+2019-02-02,Spezia,Cremonese,2,0,H
+2019-02-03,Crotone,Livorno,1,1,D
+2019-02-03,Benevento,Venezia,3,0,H
+2019-02-03,Pescara,Brescia,1,5,A
+2019-02-04,Palermo,Foggia,0,0,D
+2019-02-08,Salernitana,Benevento,0,1,A
+2019-02-09,Cittadella,Spezia,0,1,A
+2019-02-09,Cremonese,Padova,0,0,D
+2019-02-09,Perugia,Palermo,1,2,A
+2019-02-09,Brescia,Carpi,3,1,H
+2019-02-10,Foggia,Pescara,1,1,D
+2019-02-10,Livorno,Cosenza,2,0,H
+2019-02-10,Hellas Verona,Crotone,1,1,D
+2019-02-11,Venezia,Lecce,1,1,D
+2019-02-15,Palermo,Brescia,1,1,D
+2019-02-16,Benevento,Cittadella,1,0,H
+2019-02-16,Carpi,Perugia,0,1,A
+2019-02-16,Padova,Foggia,1,1,D
+2019-02-16,Ascoli,Salernitana,2,4,A
+2019-02-17,Lecce,Livorno,3,2,H
+2019-02-17,Cosenza,Cremonese,2,0,H
+2019-02-17,Spezia,Hellas Verona,1,2,A
+2019-02-18,Crotone,Pescara,0,2,A
+2019-02-22,Hellas Verona,Salernitana,1,0,H
+2019-02-23,Cittadella,Lecce,4,1,H
+2019-02-23,Brescia,Crotone,2,0,H
+2019-02-23,Carpi,Spezia,3,2,H
+2019-02-23,Cremonese,Ascoli,0,1,A
+2019-02-23,Perugia,Cosenza,0,1,A
+2019-02-23,Pescara,Padova,2,0,H
+2019-02-23,Foggia,Benevento,1,1,D
+2019-02-24,Livorno,Venezia,1,0,H
+2019-02-26,Benevento,Pescara,2,1,H
+2019-02-26,Crotone,Palermo,3,0,H
+2019-02-26,Ascoli,Foggia,2,2,D
+2019-02-26,Salernitana,Cremonese,2,0,H
+2019-02-26,Lecce,Hellas Verona,2,1,H
+2019-02-26,Padova,Brescia,1,1,D
+2019-02-26,Cosenza,Carpi,1,0,H
+2019-02-27,Venezia,Perugia,2,3,A
+2019-02-27,Spezia,Livorno,3,0,H
+2019-03-01,Foggia,Cosenza,1,0,H
+2019-03-02,Brescia,Cittadella,0,1,A
+2019-03-02,Carpi,Ascoli,1,1,D
+2019-03-02,Padova,Crotone,0,0,D
+2019-03-02,Palermo,Lecce,2,1,H
+2019-03-03,Perugia,Salernitana,3,1,H
+2019-03-03,Pescara,Spezia,2,0,H
+2019-03-03,Hellas Verona,Venezia,1,0,H
+2019-03-04,Livorno,Benevento,2,0,H
+2019-03-08,Perugia,Hellas Verona,1,2,A
+2019-03-09,Cittadella,Pescara,4,1,H
+2019-03-09,Lecce,Foggia,1,0,H
+2019-03-09,Cosenza,Brescia,2,3,A
+2019-03-09,Spezia,Padova,0,2,A
+2019-03-10,Ascoli,Livorno,1,1,D
+2019-03-10,Cremonese,Benevento,1,0,H
+2019-03-10,Salernitana,Crotone,0,2,A
+2019-03-11,Venezia,Palermo,1,1,D
+2019-03-15,Pescara,Cosenza,1,1,D
+2019-03-16,Benevento,Spezia,2,3,A
+2019-03-16,Foggia,Cittadella,1,1,D
+2019-03-16,Livorno,Salernitana,1,0,H
+2019-03-16,Padova,Perugia,0,1,A
+2019-03-16,Hellas Verona,Ascoli,1,1,D
+2019-03-17,Venezia,Cremonese,1,1,D
+2019-03-17,Palermo,Carpi,4,1,H
+2019-03-17,Crotone,Lecce,2,2,D
+2019-03-23,Lecce,Ascoli,7,0,H
+2019-03-29,Cremonese,Hellas Verona,1,1,D
+2019-03-30,Ascoli,Benevento,2,2,D
+2019-03-30,Cittadella,Padova,1,1,D
+2019-03-30,Salernitana,Venezia,1,1,D
+2019-03-30,Carpi,Crotone,1,2,A
+2019-03-30,Perugia,Livorno,3,1,H
+2019-03-30,Cosenza,Palermo,1,1,D
+2019-03-30,Brescia,Foggia,2,1,H
+2019-03-31,Lecce,Pescara,2,0,H
+2019-04-02,Crotone,Perugia,2,0,H
+2019-04-02,Hellas Verona,Brescia,2,2,D
+2019-04-02,Benevento,Carpi,3,1,H
+2019-04-02,Spezia,Salernitana,2,1,H
+2019-04-02,Venezia,Cittadella,1,1,D
+2019-04-02,Livorno,Cremonese,1,3,A
+2019-04-02,Padova,Ascoli,1,2,A
+2019-04-03,Lecce,Cosenza,3,1,H
+2019-04-03,Pescara,Palermo,3,2,H
+2019-04-05,Brescia,Venezia,2,0,H
+2019-04-06,Cittadella,Livorno,4,0,H
+2019-04-06,Carpi,Padova,2,1,H
+2019-04-06,Foggia,Spezia,1,0,H
+2019-04-06,Perugia,Benevento,2,4,A
+2019-04-07,Ascoli,Pescara,2,1,H
+2019-04-07,Cremonese,Lecce,2,0,H
+2019-04-07,Cosenza,Crotone,1,0,H
+2019-04-08,Palermo,Hellas Verona,1,0,H
+2019-04-12,Pescara,Perugia,1,1,D
+2019-04-13,Crotone,Cremonese,0,0,D
+2019-04-13,Salernitana,Cittadella,4,2,H
+2019-04-13,Lecce,Carpi,4,1,H
+2019-04-13,Venezia,Foggia,1,0,H
+2019-04-14,Spezia,Ascoli,3,2,H
+2019-04-14,Padova,Cosenza,0,0,D
+2019-04-14,Benevento,Palermo,1,2,A
+2019-04-15,Livorno,Brescia,0,1,A
+2019-04-22,Hellas Verona,Benevento,0,3,A
+2019-04-22,Brescia,Salernitana,3,0,H
+2019-04-22,Ascoli,Venezia,1,0,H
+2019-04-22,Cittadella,Cremonese,1,3,A
+2019-04-22,Carpi,Pescara,0,0,D
+2019-04-22,Foggia,Livorno,2,2,D
+2019-04-22,Palermo,Padova,1,1,D
+2019-04-22,Perugia,Lecce,1,2,A
+2019-04-22,Cosenza,Spezia,1,0,H
+2019-04-26,Benevento,Cosenza,4,2,H
+2019-04-27,Salernitana,Carpi,2,5,A
+2019-04-27,Venezia,Crotone,1,4,A
+2019-04-27,Pescara,Hellas Verona,1,1,D
+2019-04-27,Livorno,Palermo,2,2,D
+2019-04-27,Spezia,Perugia,1,1,D
+2019-04-28,Cittadella,Ascoli,2,2,D
+2019-04-28,Cremonese,Foggia,1,0,H
+2019-04-28,Lecce,Brescia,1,0,H
+2019-05-01,Palermo,Spezia,2,2,D
+2019-05-01,Crotone,Benevento,1,0,H
+2019-05-01,Hellas Verona,Livorno,2,3,A
+2019-05-01,Carpi,Cremonese,1,2,A
+2019-05-01,Foggia,Salernitana,3,1,H
+2019-05-01,Perugia,Cittadella,0,0,D
+2019-05-01,Padova,Lecce,2,1,H
+2019-05-01,Cosenza,Venezia,1,1,D
+2019-05-01,Brescia,Ascoli,1,0,H
+2019-05-04,Ascoli,Palermo,1,2,A
+2019-05-04,Spezia,Crotone,2,0,H
+2019-05-04,Venezia,Pescara,2,2,D
+2019-05-04,Cremonese,Brescia,0,0,D
+2019-05-04,Cittadella,Hellas Verona,3,0,H
+2019-05-05,Benevento,Padova,3,3,D
+2019-05-05,Livorno,Carpi,1,0,H
+2019-05-05,Salernitana,Cosenza,1,2,A
+2019-05-06,Foggia,Perugia,1,0,H
+2019-05-11,Crotone,Ascoli,3,0,H
+2019-05-11,Hellas Verona,Foggia,2,1,H
+2019-05-11,Brescia,Benevento,2,3,A
+2019-05-11,Carpi,Venezia,2,3,A
+2019-05-11,Palermo,Cittadella,2,2,D
+2019-05-11,Perugia,Cremonese,3,1,H
+2019-05-11,Pescara,Salernitana,2,0,H
+2019-05-11,Lecce,Spezia,2,1,H
+2019-05-11,Padova,Livorno,1,1,D

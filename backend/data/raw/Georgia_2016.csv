@@ -1,0 +1,96 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2016-08-07,Chikhura Sachkhere,Dinamo Tbilisi,0,0,D
+2016-08-07,Dinamo Batumi,Samtredia,1,1,D
+2016-08-07,Sioni,Saburtalo,1,2,A
+2016-08-07,Guria,Tskhinvali,0,0,D
+2016-08-07,Zugdidi,Kolkheti Poti,0,1,A
+2016-08-07,Torpedo Kutaisi,Shukura,0,0,D
+2016-08-13,Lokomotivi Tbilisi,Torpedo Kutaisi,0,0,D
+2016-08-13,Shukura,Chikhura Sachkhere,1,3,A
+2016-08-13,Dinamo Tbilisi,Guria,3,0,H
+2016-08-14,Samtredia,Sioni,4,1,H
+2016-08-14,Dila,Zugdidi,4,1,H
+2016-08-14,Kolkheti Poti,Dinamo Batumi,0,5,A
+2016-08-20,Chikhura Sachkhere,Lokomotivi Tbilisi,3,2,H
+2016-08-20,Dinamo Batumi,Dila,3,1,H
+2016-08-20,Saburtalo,Samtredia,2,2,D
+2016-08-20,Sioni,Kolkheti Poti,0,2,A
+2016-08-20,Guria,Shukura,0,0,D
+2016-08-21,Tskhinvali,Dinamo Tbilisi,2,4,A
+2016-08-27,Dila,Sioni,2,1,H
+2016-08-27,Lokomotivi Tbilisi,Guria,2,1,H
+2016-08-27,Kolkheti Poti,Saburtalo,1,0,H
+2016-08-27,Shukura,Tskhinvali,1,3,A
+2016-08-27,Zugdidi,Dinamo Batumi,0,2,A
+2016-08-27,Torpedo Kutaisi,Chikhura Sachkhere,0,3,A
+2016-09-10,Sioni,Zugdidi,4,1,H
+2016-09-10,Guria,Torpedo Kutaisi,2,1,H
+2016-09-10,Tskhinvali,Lokomotivi Tbilisi,1,2,A
+2016-09-11,Samtredia,Kolkheti Poti,2,0,H
+2016-09-11,Dinamo Tbilisi,Shukura,1,1,D
+2016-09-11,Saburtalo,Dila,2,1,H
+2016-09-17,Chikhura Sachkhere,Guria,1,2,A
+2016-09-17,Dinamo Batumi,Sioni,0,0,D
+2016-09-17,Dila,Samtredia,1,2,A
+2016-09-17,Lokomotivi Tbilisi,Dinamo Tbilisi,0,0,D
+2016-09-17,Torpedo Kutaisi,Tskhinvali,3,1,H
+2016-09-18,Zugdidi,Saburtalo,1,0,H
+2016-09-24,Saburtalo,Dinamo Batumi,0,0,D
+2016-09-25,Shukura,Lokomotivi Tbilisi,0,1,A
+2016-09-25,Samtredia,Zugdidi,1,0,H
+2016-09-25,Kolkheti Poti,Dila,0,1,A
+2016-09-25,Tskhinvali,Chikhura Sachkhere,1,2,A
+2016-09-25,Dinamo Tbilisi,Torpedo Kutaisi,0,0,D
+2016-10-01,Shukura,Torpedo Kutaisi,2,1,H
+2016-10-01,Tskhinvali,Guria,2,1,H
+2016-10-01,Dinamo Tbilisi,Chikhura Sachkhere,1,2,A
+2016-10-02,Samtredia,Dinamo Batumi,1,1,D
+2016-10-02,Saburtalo,Sioni,1,1,D
+2016-10-02,Kolkheti Poti,Zugdidi,2,0,H
+2016-10-15,Chikhura Sachkhere,Shukura,1,1,D
+2016-10-15,Dinamo Batumi,Kolkheti Poti,0,1,A
+2016-10-15,Sioni,Samtredia,0,3,A
+2016-10-15,Guria,Dinamo Tbilisi,0,2,A
+2016-10-15,Torpedo Kutaisi,Lokomotivi Tbilisi,3,0,H
+2016-10-16,Zugdidi,Dila,1,0,H
+2016-10-22,Dila,Dinamo Batumi,0,0,D
+2016-10-22,Shukura,Guria,3,1,H
+2016-10-23,Samtredia,Saburtalo,3,0,H
+2016-10-23,Lokomotivi Tbilisi,Chikhura Sachkhere,1,4,A
+2016-10-23,Kolkheti Poti,Sioni,1,0,H
+2016-10-23,Dinamo Tbilisi,Tskhinvali,0,0,D
+2016-10-29,Chikhura Sachkhere,Torpedo Kutaisi,2,1,H
+2016-10-29,Guria,Lokomotivi Tbilisi,1,0,H
+2016-10-29,Saburtalo,Kolkheti Poti,6,1,H
+2016-10-30,Dinamo Batumi,Zugdidi,5,0,H
+2016-10-30,Sioni,Dila,2,0,H
+2016-10-30,Tskhinvali,Shukura,0,0,D
+2016-11-05,Dila,Saburtalo,0,0,D
+2016-11-05,Kolkheti Poti,Samtredia,1,3,A
+2016-11-06,Lokomotivi Tbilisi,Tskhinvali,2,0,H
+2016-11-06,Shukura,Dinamo Tbilisi,0,1,A
+2016-11-06,Zugdidi,Sioni,0,3,A
+2016-11-06,Torpedo Kutaisi,Guria,5,0,H
+2016-11-18,Guria,Chikhura Sachkhere,0,2,A
+2016-11-18,Tskhinvali,Torpedo Kutaisi,1,2,A
+2016-11-18,Dinamo Tbilisi,Lokomotivi Tbilisi,4,0,H
+2016-11-19,Samtredia,Dila,0,2,A
+2016-11-20,Sioni,Dinamo Batumi,0,3,A
+2016-11-20,Saburtalo,Zugdidi,3,1,H
+2016-11-26,Torpedo Kutaisi,Dinamo Tbilisi,0,1,A
+2016-11-26,Chikhura Sachkhere,Tskhinvali,4,1,H
+2016-11-26,Dinamo Batumi,Saburtalo,0,1,A
+2016-11-26,Dila,Kolkheti Poti,1,0,H
+2016-11-26,Lokomotivi Tbilisi,Shukura,1,1,D
+2016-11-26,Zugdidi,Samtredia,0,5,A
+2016-11-30,Saburtalo,Dinamo Tbilisi,0,0,D
+2016-11-30,Torpedo Kutaisi,Dinamo Batumi,2,1,H
+2016-12-01,Sioni,Shukura,4,3,H
+2016-12-01,Guria,Dila,0,2,A
+2016-12-03,Samtredia,Chikhura Sachkhere,2,0,H
+2016-12-04,Dinamo Batumi,Torpedo Kutaisi,1,0,H
+2016-12-04,Dinamo Tbilisi,Saburtalo,1,0,H
+2016-12-06,Dila,Guria,0,0,D
+2016-12-06,Shukura,Sioni,2,0,H
+2016-12-10,Dinamo Batumi,Dinamo Tbilisi,1,0,H
+2016-12-11,Chikhura Sachkhere,Samtredia,2,2,D

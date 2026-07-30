@@ -1,0 +1,192 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2016-07-22,Shakhtar Donetsk,Zirka,4,1,H
+2016-07-23,Stal Kamianske,Karpaty,0,3,A
+2016-07-23,Dynamo Kyiv,Oleksandria,5,1,H
+2016-07-23,Vorskla Poltava,Chornomorets,1,0,H
+2016-07-24,Zorya Luhansk,Olimpik Donetsk,3,0,H
+2016-07-24,Dnipro Dnipropetrovsk,Volyn,5,0,H
+2016-07-30,Volyn,Olimpik Donetsk,2,2,D
+2016-07-30,Chornomorets,Shakhtar Donetsk,1,4,A
+2016-07-30,Zirka,Zorya Luhansk,1,1,D
+2016-07-31,Dnipro Dnipropetrovsk,Stal Kamianske,1,1,D
+2016-07-31,Karpaty,Dynamo Kyiv,0,2,A
+2016-07-31,Oleksandria,Vorskla Poltava,3,2,H
+2016-08-06,Stal Kamianske,Volyn,1,0,H
+2016-08-06,Dynamo Kyiv,Dnipro Dnipropetrovsk,1,0,H
+2016-08-07,Olimpik Donetsk,Zirka,4,2,H
+2016-08-07,Shakhtar Donetsk,Oleksandria,1,0,H
+2016-08-07,Zorya Luhansk,Chornomorets,4,0,H
+2016-08-07,Vorskla Poltava,Karpaty,1,1,D
+2016-08-12,Karpaty,Shakhtar Donetsk,2,3,A
+2016-08-13,Volyn,Zirka,1,0,H
+2016-08-13,Oleksandria,Zorya Luhansk,0,1,A
+2016-08-13,Dnipro Dnipropetrovsk,Vorskla Poltava,1,1,D
+2016-08-14,Chornomorets,Olimpik Donetsk,3,0,H
+2016-08-14,Stal Kamianske,Dynamo Kyiv,1,2,A
+2016-08-20,Olimpik Donetsk,Oleksandria,0,2,A
+2016-08-20,Dynamo Kyiv,Volyn,2,1,H
+2016-08-21,Shakhtar Donetsk,Dnipro Dnipropetrovsk,4,0,H
+2016-08-21,Zorya Luhansk,Karpaty,2,1,H
+2016-08-21,Vorskla Poltava,Stal Kamianske,0,0,D
+2016-08-21,Zirka,Chornomorets,0,1,A
+2016-08-26,Dnipro Dnipropetrovsk,Zorya Luhansk,2,0,H
+2016-08-27,Volyn,Chornomorets,0,1,A
+2016-08-27,Dynamo Kyiv,Vorskla Poltava,0,2,A
+2016-08-28,Karpaty,Olimpik Donetsk,0,2,A
+2016-08-28,Oleksandria,Zirka,4,0,H
+2016-08-28,Stal Kamianske,Shakhtar Donetsk,0,1,A
+2016-09-09,Shakhtar Donetsk,Dynamo Kyiv,1,1,D
+2016-09-10,Zorya Luhansk,Stal Kamianske,2,2,D
+2016-09-11,Zirka,Karpaty,1,0,H
+2016-09-11,Vorskla Poltava,Volyn,2,1,H
+2016-09-11,Chornomorets,Oleksandria,1,0,H
+2016-09-11,Olimpik Donetsk,Dnipro Dnipropetrovsk,3,0,H
+2016-09-17,Stal Kamianske,Olimpik Donetsk,2,3,A
+2016-09-17,Karpaty,Chornomorets,0,0,D
+2016-09-17,Dnipro Dnipropetrovsk,Zirka,0,1,A
+2016-09-18,Volyn,Oleksandria,1,1,D
+2016-09-18,Dynamo Kyiv,Zorya Luhansk,0,1,A
+2016-09-18,Vorskla Poltava,Shakhtar Donetsk,0,1,A
+2016-09-24,Olimpik Donetsk,Dynamo Kyiv,0,4,A
+2016-09-24,Shakhtar Donetsk,Volyn,3,0,H
+2016-09-24,Zorya Luhansk,Vorskla Poltava,2,1,H
+2016-09-25,Zirka,Stal Kamianske,0,0,D
+2016-09-25,Chornomorets,Dnipro Dnipropetrovsk,0,0,D
+2016-09-25,Oleksandria,Karpaty,3,2,H
+2016-10-01,Stal Kamianske,Chornomorets,1,2,A
+2016-10-01,Vorskla Poltava,Olimpik Donetsk,1,2,A
+2016-10-01,Dnipro Dnipropetrovsk,Oleksandria,1,4,A
+2016-10-02,Volyn,Karpaty,1,1,D
+2016-10-02,Shakhtar Donetsk,Zorya Luhansk,1,0,H
+2016-10-02,Dynamo Kyiv,Zirka,2,0,H
+2016-10-15,Zorya Luhansk,Volyn,2,0,H
+2016-10-15,Olimpik Donetsk,Shakhtar Donetsk,1,1,D
+2016-10-15,Chornomorets,Dynamo Kyiv,1,1,D
+2016-10-16,Oleksandria,Stal Kamianske,2,0,H
+2016-10-16,Zirka,Vorskla Poltava,2,0,H
+2016-10-16,Karpaty,Dnipro Dnipropetrovsk,1,1,D
+2016-10-22,Karpaty,Stal Kamianske,0,1,A
+2016-10-22,Volyn,Dnipro Dnipropetrovsk,3,0,H
+2016-10-23,Oleksandria,Dynamo Kyiv,1,1,D
+2016-10-23,Olimpik Donetsk,Zorya Luhansk,0,2,A
+2016-10-23,Chornomorets,Vorskla Poltava,1,2,A
+2016-10-23,Zirka,Shakhtar Donetsk,0,3,A
+2016-10-29,Olimpik Donetsk,Volyn,2,1,H
+2016-10-29,Shakhtar Donetsk,Chornomorets,2,0,H
+2016-10-29,Dynamo Kyiv,Karpaty,4,1,H
+2016-10-30,Zorya Luhansk,Zirka,2,1,H
+2016-10-30,Vorskla Poltava,Oleksandria,2,2,D
+2016-10-30,Stal Kamianske,Dnipro Dnipropetrovsk,1,1,D
+2016-11-04,Volyn,Stal Kamianske,0,1,A
+2016-11-05,Zirka,Olimpik Donetsk,1,2,A
+2016-11-05,Karpaty,Vorskla Poltava,1,0,H
+2016-11-06,Chornomorets,Zorya Luhansk,0,0,D
+2016-11-06,Oleksandria,Shakhtar Donetsk,1,2,A
+2016-11-06,Dnipro Dnipropetrovsk,Dynamo Kyiv,1,2,A
+2016-11-19,Zorya Luhansk,Oleksandria,1,2,A
+2016-11-19,Olimpik Donetsk,Chornomorets,1,0,H
+2016-11-19,Shakhtar Donetsk,Karpaty,2,1,H
+2016-11-19,Dynamo Kyiv,Stal Kamianske,2,1,H
+2016-11-20,Zirka,Volyn,2,0,H
+2016-11-20,Vorskla Poltava,Dnipro Dnipropetrovsk,1,2,A
+2016-11-26,Chornomorets,Zirka,2,1,H
+2016-11-26,Stal Kamianske,Vorskla Poltava,0,1,A
+2016-11-26,Volyn,Dynamo Kyiv,1,4,A
+2016-11-27,Oleksandria,Olimpik Donetsk,1,1,D
+2016-11-27,Karpaty,Zorya Luhansk,2,2,D
+2016-11-27,Dnipro Dnipropetrovsk,Shakhtar Donetsk,0,2,A
+2016-12-03,Vorskla Poltava,Dynamo Kyiv,2,2,D
+2016-12-03,Chornomorets,Volyn,0,0,D
+2016-12-03,Zorya Luhansk,Dnipro Dnipropetrovsk,2,3,A
+2016-12-04,Shakhtar Donetsk,Stal Kamianske,2,0,H
+2016-12-04,Zirka,Oleksandria,1,1,D
+2016-12-09,Dnipro Dnipropetrovsk,Olimpik Donetsk,1,1,D
+2016-12-10,Volyn,Vorskla Poltava,0,1,A
+2016-12-11,Karpaty,Zirka,2,3,A
+2016-12-11,Oleksandria,Chornomorets,2,1,H
+2016-12-11,Stal Kamianske,Zorya Luhansk,0,2,A
+2016-12-12,Dynamo Kyiv,Shakhtar Donetsk,3,4,A
+2017-02-25,Zorya Luhansk,Dynamo Kyiv,1,2,A
+2017-02-25,Olimpik Donetsk,Stal Kamianske,0,0,D
+2017-02-25,Oleksandria,Volyn,6,0,H
+2017-02-26,Chornomorets,Karpaty,1,0,H
+2017-02-26,Zirka,Dnipro Dnipropetrovsk,1,1,D
+2017-02-26,Shakhtar Donetsk,Vorskla Poltava,2,1,H
+2017-03-04,Dnipro Dnipropetrovsk,Chornomorets,1,1,D
+2017-03-04,Dynamo Kyiv,Olimpik Donetsk,1,0,H
+2017-03-05,Karpaty,Oleksandria,1,0,H
+2017-03-05,Vorskla Poltava,Zorya Luhansk,1,2,A
+2017-03-05,Volyn,Shakhtar Donetsk,0,1,A
+2017-03-05,Stal Kamianske,Zirka,3,0,H
+2017-03-11,Olimpik Donetsk,Vorskla Poltava,3,2,H
+2017-03-11,Chornomorets,Stal Kamianske,0,1,A
+2017-03-11,Karpaty,Volyn,2,1,H
+2017-03-11,Oleksandria,Dnipro Dnipropetrovsk,0,0,D
+2017-03-12,Zirka,Dynamo Kyiv,2,0,H
+2017-03-12,Zorya Luhansk,Shakhtar Donetsk,1,2,A
+2017-03-17,Dnipro Dnipropetrovsk,Karpaty,0,0,D
+2017-03-17,Shakhtar Donetsk,Olimpik Donetsk,1,1,D
+2017-03-17,Dynamo Kyiv,Chornomorets,2,1,H
+2017-03-18,Stal Kamianske,Oleksandria,4,1,H
+2017-03-18,Vorskla Poltava,Zirka,0,0,D
+2017-03-19,Volyn,Zorya Luhansk,0,1,A
+2017-03-26,Olimpik Donetsk,Karpaty,0,0,D
+2017-04-01,Dnipro Dnipropetrovsk,Zirka,1,0,H
+2017-04-01,Vorskla Poltava,Volyn,2,0,H
+2017-04-01,Chornomorets,Olimpik Donetsk,0,0,D
+2017-04-02,Karpaty,Stal Kamianske,2,0,H
+2017-04-02,Oleksandria,Dynamo Kyiv,1,4,A
+2017-04-02,Zorya Luhansk,Shakhtar Donetsk,1,2,A
+2017-04-08,Stal Kamianske,Volyn,2,0,H
+2017-04-08,Zirka,Vorskla Poltava,1,0,H
+2017-04-09,Karpaty,Dnipro Dnipropetrovsk,2,2,D
+2017-04-09,Oleksandria,Zorya Luhansk,0,0,D
+2017-04-09,Shakhtar Donetsk,Chornomorets,1,2,A
+2017-04-09,Dynamo Kyiv,Olimpik Donetsk,4,0,H
+2017-04-14,Zorya Luhansk,Dynamo Kyiv,0,1,A
+2017-04-15,Vorskla Poltava,Karpaty,0,0,D
+2017-04-15,Olimpik Donetsk,Shakhtar Donetsk,0,4,A
+2017-04-15,Dnipro Dnipropetrovsk,Stal Kamianske,0,0,D
+2017-04-16,Volyn,Zirka,1,0,H
+2017-04-16,Chornomorets,Oleksandria,1,0,H
+2017-04-21,Dynamo Kyiv,Shakhtar Donetsk,0,1,A
+2017-04-22,Oleksandria,Olimpik Donetsk,1,0,H
+2017-04-22,Dnipro Dnipropetrovsk,Vorskla Poltava,2,0,H
+2017-04-23,Stal Kamianske,Zirka,1,0,H
+2017-04-23,Karpaty,Volyn,1,0,H
+2017-04-23,Zorya Luhansk,Chornomorets,1,2,A
+2017-04-29,Zirka,Karpaty,3,2,H
+2017-04-29,Vorskla Poltava,Stal Kamianske,2,0,H
+2017-04-30,Olimpik Donetsk,Zorya Luhansk,1,1,D
+2017-04-30,Volyn,Dnipro Dnipropetrovsk,0,1,A
+2017-04-30,Shakhtar Donetsk,Oleksandria,1,0,H
+2017-04-30,Chornomorets,Dynamo Kyiv,1,4,A
+2017-05-05,Volyn,Vorskla Poltava,0,1,A
+2017-05-06,Olimpik Donetsk,Chornomorets,1,0,H
+2017-05-06,Shakhtar Donetsk,Zorya Luhansk,3,2,H
+2017-05-07,Stal Kamianske,Karpaty,2,1,H
+2017-05-07,Zirka,Dnipro Dnipropetrovsk,1,1,D
+2017-05-07,Dynamo Kyiv,Oleksandria,6,0,H
+2017-05-12,Volyn,Stal Kamianske,0,1,A
+2017-05-13,Zorya Luhansk,Oleksandria,1,0,H
+2017-05-13,Olimpik Donetsk,Dynamo Kyiv,2,1,H
+2017-05-13,Chornomorets,Shakhtar Donetsk,0,3,A
+2017-05-14,Vorskla Poltava,Zirka,1,1,D
+2017-05-14,Dnipro Dnipropetrovsk,Karpaty,2,3,A
+2017-05-20,Zirka,Volyn,2,0,H
+2017-05-20,Stal Kamianske,Dnipro Dnipropetrovsk,0,1,A
+2017-05-21,Karpaty,Vorskla Poltava,0,1,A
+2017-05-21,Shakhtar Donetsk,Olimpik Donetsk,1,1,D
+2017-05-21,Dynamo Kyiv,Zorya Luhansk,1,2,A
+2017-05-21,Oleksandria,Chornomorets,1,1,D
+2017-05-26,Olimpik Donetsk,Oleksandria,0,0,D
+2017-05-26,Chornomorets,Zorya Luhansk,0,1,A
+2017-05-26,Shakhtar Donetsk,Dynamo Kyiv,2,3,A
+2017-05-27,Vorskla Poltava,Dnipro Dnipropetrovsk,1,0,H
+2017-05-27,Volyn,Karpaty,0,1,A
+2017-05-27,Zirka,Stal Kamianske,0,1,A
+2017-05-31,Karpaty,Zirka,2,1,H
+2017-05-31,Stal Kamianske,Vorskla Poltava,0,0,D
+2017-05-31,Dynamo Kyiv,Chornomorets,2,1,H
+2017-05-31,Zorya Luhansk,Olimpik Donetsk,2,0,H
+2017-05-31,Oleksandria,Shakhtar Donetsk,1,1,D

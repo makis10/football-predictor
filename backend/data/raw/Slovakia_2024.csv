@@ -1,0 +1,198 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2024-07-27,Podbrezova,Zilina,0,0,D
+2024-07-27,Skalica,Zemplin Michalovce,0,0,D
+2024-07-27,Komarno,Slovan Bratislava,1,4,A
+2024-07-28,Spartak Trnava,AS Trencin,0,0,D
+2024-07-28,Ruzomberok,Dukla Banska Bystrica,1,1,D
+2024-07-28,FK Kosice,Dunajska Streda,2,2,D
+2024-08-03,AS Trencin,FK Kosice,2,0,H
+2024-08-03,Dukla Banska Bystrica,Skalica,1,1,D
+2024-08-03,Slovan Bratislava,Podbrezova,1,0,H
+2024-08-04,Dunajska Streda,Komarno,2,0,H
+2024-08-04,Zemplin Michalovce,Spartak Trnava,0,0,D
+2024-08-10,Zilina,Zemplin Michalovce,3,1,H
+2024-08-10,FK Kosice,Podbrezova,3,0,H
+2024-08-11,Ruzomberok,AS Trencin,1,0,H
+2024-08-11,Dukla Banska Bystrica,Dunajska Streda,1,0,H
+2024-08-17,Slovan Bratislava,FK Kosice,2,1,H
+2024-08-17,Podbrezova,Skalica,7,1,H
+2024-08-17,Zemplin Michalovce,Dunajska Streda,0,3,A
+2024-08-17,AS Trencin,Dukla Banska Bystrica,2,2,D
+2024-08-18,Spartak Trnava,Zilina,0,0,D
+2024-08-24,FK Kosice,Komarno,0,1,A
+2024-08-24,Skalica,Spartak Trnava,1,2,A
+2024-08-24,Zilina,AS Trencin,4,1,H
+2024-08-25,Ruzomberok,Zemplin Michalovce,2,2,D
+2024-08-25,Dukla Banska Bystrica,Slovan Bratislava,0,2,A
+2024-08-31,Komarno,Zemplin Michalovce,1,3,A
+2024-08-31,Skalica,FK Kosice,0,0,D
+2024-08-31,Podbrezova,Dukla Banska Bystrica,1,1,D
+2024-09-01,Slovan Bratislava,Zilina,0,5,A
+2024-09-01,Spartak Trnava,Ruzomberok,2,2,D
+2024-09-14,Zemplin Michalovce,AS Trencin,1,1,D
+2024-09-14,Zilina,Skalica,3,2,H
+2024-09-14,Dukla Banska Bystrica,Komarno,2,3,A
+2024-09-14,Dunajska Streda,Slovan Bratislava,1,2,A
+2024-09-15,Ruzomberok,Podbrezova,1,0,H
+2024-09-15,FK Kosice,Spartak Trnava,1,1,D
+2024-09-17,AS Trencin,Dunajska Streda,0,3,A
+2024-09-21,FK Kosice,Zilina,1,2,A
+2024-09-21,Komarno,AS Trencin,2,1,H
+2024-09-21,Skalica,Dunajska Streda,1,3,A
+2024-09-21,Slovan Bratislava,Ruzomberok,2,1,H
+2024-09-22,Spartak Trnava,Dukla Banska Bystrica,1,0,H
+2024-09-22,Podbrezova,Zemplin Michalovce,4,1,H
+2024-09-24,Komarno,Ruzomberok,1,2,A
+2024-09-27,Zemplin Michalovce,Slovan Bratislava,2,4,A
+2024-09-28,AS Trencin,Podbrezova,1,1,D
+2024-09-28,Dukla Banska Bystrica,FK Kosice,2,3,A
+2024-09-28,Dunajska Streda,Spartak Trnava,0,0,D
+2024-09-29,Ruzomberok,Skalica,1,2,A
+2024-09-29,Zilina,Komarno,2,1,H
+2024-10-05,Podbrezova,Spartak Trnava,0,4,A
+2024-10-05,FK Kosice,Ruzomberok,2,1,H
+2024-10-05,Skalica,Komarno,3,0,H
+2024-10-05,Slovan Bratislava,AS Trencin,1,1,D
+2024-10-06,Dunajska Streda,Zilina,0,3,A
+2024-10-06,Dukla Banska Bystrica,Zemplin Michalovce,1,0,H
+2024-10-19,AS Trencin,Skalica,2,1,H
+2024-10-19,Ruzomberok,Dunajska Streda,1,1,D
+2024-10-19,Zemplin Michalovce,FK Kosice,3,2,H
+2024-10-19,Spartak Trnava,Slovan Bratislava,0,1,A
+2024-10-20,Zilina,Dukla Banska Bystrica,2,0,H
+2024-10-20,Komarno,Podbrezova,1,2,A
+2024-10-26,Zilina,Podbrezova,2,2,D
+2024-10-26,Dukla Banska Bystrica,Ruzomberok,2,1,H
+2024-10-26,Dunajska Streda,FK Kosice,1,3,A
+2024-10-27,AS Trencin,Spartak Trnava,2,3,A
+2024-10-27,Zemplin Michalovce,Skalica,2,1,H
+2024-10-29,Dunajska Streda,Podbrezova,3,0,H
+2024-10-29,Zilina,Ruzomberok,3,1,H
+2024-10-30,Skalica,Slovan Bratislava,2,3,A
+2024-10-30,Spartak Trnava,Komarno,3,2,H
+2024-11-02,Spartak Trnava,Zemplin Michalovce,3,1,H
+2024-11-02,FK Kosice,AS Trencin,0,0,D
+2024-11-02,Komarno,Dunajska Streda,0,1,A
+2024-11-02,Podbrezova,Slovan Bratislava,1,3,A
+2024-11-03,Ruzomberok,Zilina,1,0,H
+2024-11-03,Skalica,Dukla Banska Bystrica,1,0,H
+2024-11-09,AS Trencin,Ruzomberok,0,0,D
+2024-11-09,Slovan Bratislava,Skalica,3,1,H
+2024-11-09,Zemplin Michalovce,Zilina,1,1,D
+2024-11-09,Komarno,Spartak Trnava,1,2,A
+2024-11-10,Dunajska Streda,Dukla Banska Bystrica,0,0,D
+2024-11-10,Podbrezova,FK Kosice,0,0,D
+2024-11-22,FK Kosice,Slovan Bratislava,1,1,D
+2024-11-23,Dunajska Streda,Zemplin Michalovce,0,1,A
+2024-11-23,Dukla Banska Bystrica,AS Trencin,6,1,H
+2024-11-23,Skalica,Podbrezova,1,2,A
+2024-11-23,Zilina,Spartak Trnava,3,1,H
+2024-11-24,Ruzomberok,Komarno,1,3,A
+2024-11-30,AS Trencin,Zilina,2,4,A
+2024-11-30,Spartak Trnava,Skalica,2,0,H
+2024-11-30,Zemplin Michalovce,Ruzomberok,4,2,H
+2024-11-30,Podbrezova,Dunajska Streda,0,0,D
+2024-12-01,Slovan Bratislava,Dukla Banska Bystrica,3,1,H
+2024-12-01,Komarno,FK Kosice,1,1,D
+2024-12-04,Slovan Bratislava,Komarno,6,0,H
+2024-12-07,Ruzomberok,Spartak Trnava,0,2,A
+2024-12-07,Zemplin Michalovce,Komarno,0,0,D
+2024-12-07,Dukla Banska Bystrica,Podbrezova,0,2,A
+2024-12-07,Zilina,Slovan Bratislava,2,1,H
+2024-12-08,Dunajska Streda,AS Trencin,3,3,D
+2024-12-08,FK Kosice,Skalica,1,1,D
+2024-12-14,AS Trencin,Zemplin Michalovce,0,0,D
+2024-12-14,Spartak Trnava,FK Kosice,1,0,H
+2024-12-14,Podbrezova,Ruzomberok,2,0,H
+2024-12-14,Slovan Bratislava,Dunajska Streda,2,1,H
+2024-12-15,Komarno,Dukla Banska Bystrica,3,0,H
+2024-12-15,Skalica,Zilina,0,0,D
+2025-02-08,Dunajska Streda,Skalica,3,1,H
+2025-02-08,Zemplin Michalovce,Podbrezova,2,2,D
+2025-02-08,Dukla Banska Bystrica,Spartak Trnava,1,4,A
+2025-02-08,Zilina,FK Kosice,0,2,A
+2025-02-09,AS Trencin,Komarno,1,0,H
+2025-02-09,Ruzomberok,Slovan Bratislava,1,5,A
+2025-02-15,Podbrezova,AS Trencin,2,1,H
+2025-02-15,FK Kosice,Dukla Banska Bystrica,4,0,H
+2025-02-15,Slovan Bratislava,Zemplin Michalovce,1,1,D
+2025-02-16,Spartak Trnava,Dunajska Streda,1,1,D
+2025-02-16,Skalica,Ruzomberok,1,0,H
+2025-02-22,AS Trencin,Slovan Bratislava,1,1,D
+2025-02-22,Ruzomberok,FK Kosice,2,1,H
+2025-02-22,Komarno,Skalica,0,0,D
+2025-02-22,Zilina,Dunajska Streda,1,1,D
+2025-02-23,Spartak Trnava,Podbrezova,1,1,D
+2025-02-23,Zemplin Michalovce,Dukla Banska Bystrica,1,0,H
+2025-02-25,Komarno,Zilina,1,0,H
+2025-03-01,Slovan Bratislava,Spartak Trnava,0,1,A
+2025-03-01,Dunajska Streda,Ruzomberok,3,0,H
+2025-03-01,Podbrezova,Komarno,2,2,D
+2025-03-01,Dukla Banska Bystrica,Zilina,1,2,A
+2025-03-01,FK Kosice,Zemplin Michalovce,3,2,H
+2025-03-01,Skalica,AS Trencin,0,0,D
+2025-03-08,Ruzomberok,Komarno,0,1,A
+2025-03-08,Zilina,Podbrezova,0,0,D
+2025-03-08,Dukla Banska Bystrica,Skalica,0,2,A
+2025-03-08,Spartak Trnava,Dunajska Streda,1,1,D
+2025-03-09,AS Trencin,Zemplin Michalovce,3,2,H
+2025-03-09,FK Kosice,Slovan Bratislava,2,3,A
+2025-03-15,Zemplin Michalovce,Ruzomberok,2,1,H
+2025-03-15,Skalica,AS Trencin,1,0,H
+2025-03-15,Dunajska Streda,Zilina,3,1,H
+2025-03-16,Slovan Bratislava,Spartak Trnava,1,1,D
+2025-03-16,Podbrezova,FK Kosice,0,1,A
+2025-03-16,Komarno,Dukla Banska Bystrica,2,1,H
+2025-03-29,Slovan Bratislava,Podbrezova,3,1,H
+2025-03-29,Ruzomberok,Skalica,3,2,H
+2025-03-29,Dukla Banska Bystrica,AS Trencin,2,3,A
+2025-03-29,FK Kosice,Dunajska Streda,2,2,D
+2025-03-30,Spartak Trnava,Zilina,2,4,A
+2025-03-30,Komarno,Zemplin Michalovce,0,1,A
+2025-04-05,AS Trencin,Komarno,1,0,H
+2025-04-05,Dunajska Streda,Podbrezova,1,1,D
+2025-04-05,Skalica,Zemplin Michalovce,1,0,H
+2025-04-05,Zilina,Slovan Bratislava,0,5,A
+2025-04-06,Ruzomberok,Dukla Banska Bystrica,1,2,A
+2025-04-06,FK Kosice,Spartak Trnava,2,1,H
+2025-04-12,AS Trencin,Ruzomberok,2,2,D
+2025-04-12,Podbrezova,Spartak Trnava,1,2,A
+2025-04-12,Zemplin Michalovce,Dukla Banska Bystrica,3,3,D
+2025-04-12,Slovan Bratislava,Dunajska Streda,2,2,D
+2025-04-13,Komarno,Skalica,1,1,D
+2025-04-19,Podbrezova,Zilina,1,1,D
+2025-04-19,Zemplin Michalovce,AS Trencin,3,2,H
+2025-04-19,Skalica,Ruzomberok,1,0,H
+2025-04-19,Spartak Trnava,Slovan Bratislava,2,3,A
+2025-04-20,Dunajska Streda,FK Kosice,3,2,H
+2025-04-20,Dukla Banska Bystrica,Komarno,0,1,A
+2025-04-23,Zilina,FK Kosice,0,0,D
+2025-04-25,AS Trencin,Dukla Banska Bystrica,2,2,D
+2025-04-26,Ruzomberok,Zemplin Michalovce,1,0,H
+2025-04-26,FK Kosice,Podbrezova,1,1,D
+2025-04-26,Dunajska Streda,Slovan Bratislava,2,1,H
+2025-04-27,Zilina,Spartak Trnava,2,1,H
+2025-04-27,Skalica,Komarno,0,1,A
+2025-05-03,Podbrezova,Dunajska Streda,2,0,H
+2025-05-03,Zemplin Michalovce,Skalica,2,4,A
+2025-05-03,Komarno,AS Trencin,0,0,D
+2025-05-03,Slovan Bratislava,Zilina,4,3,H
+2025-05-04,Spartak Trnava,FK Kosice,0,1,A
+2025-05-04,Dukla Banska Bystrica,Ruzomberok,0,2,A
+2025-05-10,Podbrezova,Slovan Bratislava,1,3,A
+2025-05-10,Ruzomberok,AS Trencin,1,0,H
+2025-05-10,Skalica,Dukla Banska Bystrica,3,1,H
+2025-05-10,FK Kosice,Zilina,3,2,H
+2025-05-11,Dunajska Streda,Spartak Trnava,1,0,H
+2025-05-11,Zemplin Michalovce,Komarno,4,5,A
+2025-05-17,AS Trencin,Skalica,2,0,H
+2025-05-17,Slovan Bratislava,FK Kosice,1,0,H
+2025-05-17,Spartak Trnava,Podbrezova,2,1,H
+2025-05-17,Zilina,Dunajska Streda,0,1,A
+2025-05-17,Dukla Banska Bystrica,Zemplin Michalovce,2,3,A
+2025-05-17,Komarno,Ruzomberok,1,2,A
+2025-05-20,Dunajska Streda,Zemplin Michalovce,2,1,H
+2025-05-20,Zlate Moravce,AS Trencin,1,1,D
+2025-05-20,FK Kosice,Podbrezova,2,2,D
+2025-05-23,Dunajska Streda,Podbrezova,3,2,H
+2025-05-24,AS Trencin,Zlate Moravce,4,2,H

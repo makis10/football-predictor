@@ -78,10 +78,42 @@ def _adjust_prediction_embed(match_id: int, pred, league: "str | None" = None) -
         insufficient_data=bool(getattr(pred, "insufficient_data", False)),
     )
 
+_known_teams_cache: frozenset[str] | None = None
+
+
+def _known_teams() -> frozenset[str]:
+    """Clubs we hold real CSV history for. Cached for the process lifetime.
+
+    Reuses the snapshot the predictions router already builds and caches, so
+    this costs nothing beyond the first call. Frozen into a set because
+    snapshot["elo"] is a defaultdict — membership testing it directly would
+    insert every club asked about and report them all as known.
+    """
+    global _known_teams_cache
+    if _known_teams_cache is None:
+        try:
+            from backend.app.routers.predictions import _get_snapshot
+            _known_teams_cache = frozenset(_get_snapshot().get("elo", {}))
+        except Exception:
+            return frozenset()          # never break a listing over a label
+    return _known_teams_cache
+
+
+def _unknown_sides(home: str, away: str) -> list[str]:
+    from backend.app.ml.features import snapshot_name
+    known = _known_teams()
+    if not known:
+        return []
+    return [t for t in (home, away) if snapshot_name(t, known) not in known]
+
+
 VALID_LEAGUES = {
     "EPL", "LaLiga", "SerieA", "Bundesliga", "Ligue1", "GreekSL", "CL", "EL", "ECL",
     "Championship", "LeagueOne", "PrimeiraLiga", "Eredivisie", "BrazilSerieA",
     "ClubFriendly",
+    # 2026-07-30 expansion — country-named to avoid colliding with leagues we
+    # already carry (Austria's top flight is also called "Bundesliga").
+    "Belgium", "Turkey", "Scotland", "Denmark", "Sweden", "Norway", "Poland", "Austria", "Switzerland", "Romania", "Ireland", "Finland",
 }
 
 
@@ -268,6 +300,8 @@ def list_matches(
         resp = MatchResponse.model_validate(match)
         if resp.prediction is not None and match.prediction is not None:
             resp.prediction = _adjust_prediction_embed(match.id, match.prediction, match.league)
+            if resp.prediction.insufficient_data:
+                resp.unknown_teams = _unknown_sides(match.home_team, match.away_team)
         responses.append(resp)
     return responses
 

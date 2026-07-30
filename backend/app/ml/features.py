@@ -65,7 +65,53 @@ LEAGUE_STAKES: dict[str, dict[str, int]] = {
     "LeagueOne":    {"cl": 2,  "relegation": 4},
     "PrimeiraLiga": {"cl": 3,  "relegation": 3},
     "BrazilSerieA": {"cl": 4,  "relegation": 4},   # Libertadores top 4; bottom 4 drop
+    # 2026-07-30 expansion. European slots are the UEFA-coefficient allocation
+    # for each country; relegation counts include play-off places.
+    "Belgium":      {"cl": 3,  "relegation": 2},
+    "Turkey":       {"cl": 3,  "relegation": 3},
+    "Scotland":     {"cl": 3,  "relegation": 1},
+    "Denmark":      {"cl": 3,  "relegation": 2},
+    "Sweden":       {"cl": 3,  "relegation": 2},
+    "Norway":       {"cl": 3,  "relegation": 2},
+    "Poland":       {"cl": 3,  "relegation": 3},
+    "Austria":      {"cl": 3,  "relegation": 1},
+    "Switzerland":  {"cl": 3,  "relegation": 1},
+    "Romania":      {"cl": 3,  "relegation": 2},
+    "Ireland":      {"cl": 3,  "relegation": 1},
+    "Finland":      {"cl": 3,  "relegation": 2},
 }
+
+# Leagues that get a one-hot dummy in the feature vector.
+#
+# Single source of truth on purpose: this list was duplicated in two
+# `known_leagues = [...]` locals AND written out by hand a third time in
+# FEATURE_COLS / DRAW_FEATURE_COLS. Adding a league to some of those and not
+# the others produces a column that is always zero — no error, just a feature
+# that silently does nothing.
+# Leagues loaded for CONTEXT only — see scripts/import_history_apifootball.py.
+# Their matches build Elo, form and H2H for clubs that later appear in a
+# competition we do price (a promoted side, a European qualifier), then train.py
+# drops them before fitting. Deliberately NOT in ONE_HOT_LEAGUES: a league we
+# never predict has no fixture to put a dummy on.
+HISTORY_ONLY_LEAGUES = frozenset({
+    # second tiers of leagues we predict
+    "Greece2", "GreeceFL", "Turkey2", "Belgium2", "Germany2", "France2",
+    "Portugal2", "Spain2", "Italy2", "Netherlands2",
+    # foreign top flights that only reach us through European qualifying
+    "Croatia", "Czechia", "Hungary", "Serbia", "Ukraine", "Israel",
+    "Bulgaria", "Cyprus", "Slovenia", "Slovakia", "Bosnia", "Estonia",
+    "Latvia", "Lithuania", "Armenia", "Georgia", "Azerbaijan", "Kazakhstan",
+    "Belarus", "Albania", "Kosovo", "NMacedonia", "Moldova", "FaroeIslands",
+    "Iceland", "Malta", "NorthernIreland", "Wales", "Andorra", "Luxembourg",
+    "Montenegro", "Gibraltar",
+})
+
+ONE_HOT_LEAGUES = [
+    "EPL", "LaLiga", "SerieA", "Bundesliga", "Ligue1", "GreekSL", "BrazilSerieA",
+    "Belgium", "Turkey", "Scotland", "Denmark", "Sweden", "Norway",
+    "Poland", "Austria", "Switzerland", "Romania", "Ireland", "Finland",
+]
+LEAGUE_DUMMY_COLS = [f"league_{lg}" for lg in ONE_HOT_LEAGUES]
 
 # Minimum referee-observed matches before we trust the rolling stats.
 # Below this threshold all three ref features are returned as NaN.
@@ -414,6 +460,9 @@ def load_raw_csvs(raw_dir: str) -> pd.DataFrame:
 # "Bury"/"Shrewsbury" look similar but are different clubs and must stay apart.
 _CSV_TEAM_CANON: dict[str, str] = {
     "OFI": "OFI Crete",
+    # Romania: the source file switched spelling mid-history, which otherwise
+    # splits one club's Elo and form across two half-strength records.
+    "Din. Bucuresti": "Dinamo Bucuresti",
 }
 
 
@@ -575,7 +624,7 @@ def build_features(
     ref_draws:     dict[str, int]   = defaultdict(int)
     ref_cards:     dict[str, float] = defaultdict(float)
 
-    known_leagues = ["EPL", "LaLiga", "SerieA", "Bundesliga", "Ligue1", "GreekSL", "BrazilSerieA"]
+    known_leagues = ONE_HOT_LEAGUES
 
     feature_rows = []
 
@@ -1310,6 +1359,23 @@ def build_team_snapshot(history_df: pd.DataFrame) -> dict:
 # that actually differ are listed here.  add new ones whenever fetch_upcoming
 # stores a name that doesn't match the CSV convention.
 _SNAP_NAME_MAP: dict[str, str] = {
+    # ── 2026-07-30 league expansion (Belgium, Turkey, Scotland, Denmark,
+    # Sweden, Norway, Poland, Austria, Switzerland, Romania, Ireland, Finland).
+    # Our fixture sources carry the full legal name, football-data.co.uk the
+    # short one. Every entry below was produced by the exact-slug or
+    # affix-only rule in scripts/team_resolver.py — NOT by similarity scoring,
+    # which proposed "Velež" (Bosnia) → "Vejle" (Denmark) at 0.80.
+    "Beşiktaş":          "Besiktas",
+    "Fenerbahçe":        "Fenerbahce",
+    "FC Midtjylland":    "Midtjylland",
+    "FC Nordsjaelland":  "Nordsjaelland",
+    "FC ST. Gallen":     "St. Gallen",
+    "FC Sion":           "Sion",
+    "FC Thun":           "Thun",
+    "FC Vaduz":          "Vaduz",
+    "Gais":              "GAIS",
+    "Hammarby FF":       "Hammarby",
+    "IFK Goteborg":      "Goteborg",
     # Serie A
     "AC Milan":          "Milan",
     # Bundesliga
@@ -1349,6 +1415,47 @@ _SNAP_NAME_MAP: dict[str, str] = {
     "Aris Thessalonikis":  "Aris",
 }
 
+_SNAP_SLUG_INDEX: tuple[int, dict[str, str]] | None = None
+
+
+def snapshot_name(name: str, known) -> str:
+    """A fixture's team name → the spelling the Elo snapshot uses.
+
+    Exact match, then the alias table, then an ACCENT-INSENSITIVE slug lookup.
+    That last step is what stops this table growing without bound: the fixture
+    feeds carry "Železničar Pančevo", "Žilina", "Hradec Králové", "Çorum FK",
+    while the CSV history spells them without diacritics. Thirteen clubs were
+    invisible to the model for exactly that reason after the 2026-07-30 history
+    import — one slug index fixes the whole class instead of thirteen aliases,
+    and every future one too.
+
+    `known` is the snapshot's team set; the index is rebuilt when it changes.
+    """
+    global _SNAP_SLUG_INDEX
+    if name in known:
+        return name
+    mapped = _SNAP_NAME_MAP.get(name)
+    if mapped and mapped in known:
+        return mapped
+    if _SNAP_SLUG_INDEX is None or _SNAP_SLUG_INDEX[0] != len(known):
+        # Ambiguous slugs are dropped rather than guessed — two clubs whose
+        # names differ only by accent would otherwise silently merge.
+        counts: dict[str, int] = {}
+        idx: dict[str, str] = {}
+        for t in known:
+            s = _slug_name(t)
+            counts[s] = counts.get(s, 0) + 1
+            idx[s] = t
+        _SNAP_SLUG_INDEX = (len(known), {s: t for s, t in idx.items() if counts[s] == 1})
+    return _SNAP_SLUG_INDEX[1].get(_slug_name(mapped or name), mapped or name)
+
+
+def _slug_name(s: str) -> str:
+    import re
+    import unicodedata
+    ascii_s = unicodedata.normalize("NFKD", s or "").encode("ascii", "ignore").decode("ascii")
+    return re.sub(r"[^a-z0-9]", "", ascii_s.lower())
+
 
 def compute_match_features(
     snapshot: dict,
@@ -1370,8 +1477,12 @@ def compute_match_features(
     """
     s = snapshot
     # Translate DB names → CSV names so snapshot lookups find real Elo/stats
-    h = _SNAP_NAME_MAP.get(home_team, home_team)
-    a = _SNAP_NAME_MAP.get(away_team, away_team)
+    # Accent-insensitive too — the fixture feeds spell clubs with diacritics
+    # the CSV history doesn't carry, and an unresolved name silently gets the
+    # 1500 default instead of its real rating.
+    _known = snapshot.get("elo", {})
+    h = snapshot_name(home_team, _known)
+    a = snapshot_name(away_team, _known)
 
     # Warn when neither the original nor the mapped name is in the Elo snapshot —
     # this means the team will silently default to Elo=1500 (ELO_START).
@@ -1523,7 +1634,7 @@ def compute_match_features(
         feat["season_phase"]            = np.nan
         feat["days_since_season_start"] = np.nan
 
-    known_leagues = ["EPL", "LaLiga", "SerieA", "Bundesliga", "Ligue1", "GreekSL", "BrazilSerieA"]
+    known_leagues = ONE_HOT_LEAGUES
     for lg in known_leagues:
         feat[f"league_{lg}"] = 1 if league == lg else 0
 
@@ -1809,10 +1920,9 @@ FEATURE_COLS = [
     "h2h_btts_rate",      "h2h_over25_rate",
     # Season phase (F) — early / mid / late season signal
     "season_week",        "season_phase",   "days_since_season_start",
-    # League
-    "league_EPL",         "league_LaLiga",  "league_SerieA",
-    "league_Bundesliga",  "league_Ligue1",  "league_GreekSL",
-    "league_BrazilSerieA",
+    # League — generated from ONE_HOT_LEAGUES so the dummies and the feature
+    # list can never drift apart.
+    *LEAGUE_DUMMY_COLS,
     # European competition schedule (0 when no data / team not in Europe)
     "h_eur_fatigue",      "a_eur_fatigue",
     "h_eur_away",         "a_eur_away",

@@ -40,7 +40,8 @@ SQUADS   = ROOT / "backend" / "data" / "raw" / "international" / "squad_strength
 # no statistics for their domestic micro-leagues, so absence is expected until
 # they play a covered European tie.
 DOMESTIC = {"EPL", "Championship", "LeagueOne", "LaLiga", "SerieA", "Bundesliga",
-            "Ligue1", "GreekSL", "PrimeiraLiga", "Eredivisie", "BrazilSerieA"}
+            "Ligue1", "GreekSL", "PrimeiraLiga", "Eredivisie", "BrazilSerieA",
+            "Belgium", "Turkey", "Scotland", "Denmark", "Sweden", "Norway", "Poland", "Austria", "Switzerland", "Romania", "Ireland", "Finland"}
 EURO     = {"CL", "EL", "ECL"}
 TRACKED  = DOMESTIC | EURO
 

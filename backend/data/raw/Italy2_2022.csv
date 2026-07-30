@@ -1,0 +1,391 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2022-08-12,Parma,Bari,2,2,D
+2022-08-13,Cittadella,Pisa,4,3,H
+2022-08-13,Palermo,Perugia,2,0,H
+2022-08-13,como,Cagliari,1,1,D
+2022-08-14,Spal,Reggina,1,3,A
+2022-08-14,Benevento,Nuova Cosenza,0,1,A
+2022-08-14,Ascoli,Ternana,2,1,H
+2022-08-14,Venezia,Genoa,1,2,A
+2022-08-14,Brescia,Sudtirol,2,0,H
+2022-08-14,Modena,Frosinone,0,1,A
+2022-08-19,Bari,Palermo,1,1,D
+2022-08-20,Genoa,Benevento,0,0,D
+2022-08-20,Ascoli,Spal,1,1,D
+2022-08-20,Perugia,Parma,0,0,D
+2022-08-21,Cagliari,Cittadella,2,1,H
+2022-08-21,Frosinone,Brescia,3,0,H
+2022-08-21,Ternana,Reggina,1,0,H
+2022-08-21,Pisa,como,2,2,D
+2022-08-21,Sudtirol,Venezia,1,2,A
+2022-08-21,Nuova Cosenza,Modena,2,1,H
+2022-08-27,Spal,Cagliari,1,0,H
+2022-08-27,Palermo,Ascoli,2,3,A
+2022-08-27,Modena,Ternana,4,1,H
+2022-08-28,Benevento,Frosinone,2,1,H
+2022-08-28,Cittadella,Venezia,1,1,D
+2022-08-28,Parma,Nuova Cosenza,1,0,H
+2022-08-28,Perugia,Bari,1,3,A
+2022-08-28,Pisa,Genoa,0,1,A
+2022-08-28,Reggina,Sudtirol,4,0,H
+2022-08-29,como,Brescia,0,1,A
+2022-09-02,Cagliari,Modena,1,0,H
+2022-09-03,Ascoli,Cittadella,0,0,D
+2022-09-03,Bari,Spal,2,2,D
+2022-09-03,Frosinone,como,2,0,H
+2022-09-03,Ternana,Nuova Cosenza,1,1,D
+2022-09-03,Venezia,Benevento,0,2,A
+2022-09-03,Brescia,Perugia,2,1,H
+2022-09-03,Reggina,Palermo,3,0,H
+2022-09-03,Genoa,Parma,3,3,D
+2022-09-04,Sudtirol,Pisa,2,1,H
+2022-09-09,Palermo,Genoa,1,0,H
+2022-09-10,Benevento,Cagliari,0,2,A
+2022-09-10,Cittadella,Frosinone,1,0,H
+2022-09-10,Parma,Ternana,2,3,A
+2022-09-10,Pisa,Reggina,0,1,A
+2022-09-10,como,Sudtirol,0,2,A
+2022-09-10,Modena,Brescia,1,3,A
+2022-09-10,Nuova Cosenza,Bari,0,1,A
+2022-09-10,Perugia,Ascoli,1,0,H
+2022-09-11,Spal,Venezia,2,0,H
+2022-09-16,Brescia,Benevento,1,0,H
+2022-09-17,Cagliari,Bari,0,1,A
+2022-09-17,Ascoli,Parma,1,3,A
+2022-09-17,Frosinone,Palermo,1,0,H
+2022-09-17,Venezia,Pisa,1,1,D
+2022-09-17,como,Spal,3,3,D
+2022-09-17,Sudtirol,Nuova Cosenza,1,1,D
+2022-09-17,Reggina,Cittadella,3,0,H
+2022-09-17,Genoa,Modena,1,0,H
+2022-09-18,Ternana,Perugia,1,0,H
+2022-09-30,Nuova Cosenza,como,3,1,H
+2022-10-01,Cagliari,Venezia,1,4,A
+2022-10-01,Spal,Genoa,0,2,A
+2022-10-01,Bari,Brescia,6,2,H
+2022-10-01,Cittadella,Ternana,0,2,A
+2022-10-01,Palermo,Sudtirol,0,1,A
+2022-10-01,Parma,Frosinone,2,1,H
+2022-10-01,Modena,Reggina,1,0,H
+2022-10-01,Perugia,Pisa,1,3,A
+2022-10-02,Benevento,Ascoli,1,1,D
+2022-10-07,Genoa,Cagliari,0,0,D
+2022-10-08,Ascoli,Modena,1,2,A
+2022-10-08,Ternana,Palermo,3,0,H
+2022-10-08,Venezia,Bari,1,2,A
+2022-10-08,Brescia,Cittadella,1,1,D
+2022-10-08,Pisa,Parma,0,0,D
+2022-10-08,Frosinone,Spal,2,0,H
+2022-10-08,Reggina,Nuova Cosenza,3,0,H
+2022-10-09,como,Perugia,1,0,H
+2022-10-09,Sudtirol,Benevento,1,1,D
+2022-10-14,Venezia,Frosinone,1,3,A
+2022-10-15,Cagliari,Brescia,2,1,H
+2022-10-15,Benevento,Ternana,2,3,A
+2022-10-15,Cittadella,Spal,0,0,D
+2022-10-15,Palermo,Pisa,3,3,D
+2022-10-15,Parma,Reggina,2,0,H
+2022-10-15,Modena,como,5,1,H
+2022-10-15,Nuova Cosenza,Genoa,1,2,A
+2022-10-15,Bari,Ascoli,0,2,A
+2022-10-16,Perugia,Sudtirol,1,2,A
+2022-10-22,Spal,Nuova Cosenza,5,0,H
+2022-10-22,Frosinone,Bari,1,0,H
+2022-10-22,Brescia,Venezia,1,1,D
+2022-10-22,como,Benevento,2,1,H
+2022-10-22,Sudtirol,Parma,1,0,H
+2022-10-22,Reggina,Perugia,2,3,A
+2022-10-22,Ternana,Genoa,1,2,A
+2022-10-23,Palermo,Cittadella,0,0,D
+2022-10-23,Pisa,Modena,4,2,H
+2022-10-24,Ascoli,Cagliari,2,1,H
+2022-10-28,Bari,Ternana,0,0,D
+2022-10-29,Cagliari,Reggina,1,1,D
+2022-10-29,Spal,Sudtirol,1,1,D
+2022-10-29,Benevento,Pisa,0,0,D
+2022-10-29,Venezia,Ascoli,0,2,A
+2022-10-29,Parma,como,1,0,H
+2022-10-29,Modena,Palermo,0,2,A
+2022-10-29,Nuova Cosenza,Frosinone,1,2,A
+2022-10-29,Genoa,Brescia,1,1,D
+2022-10-30,Perugia,Cittadella,0,2,A
+2022-11-05,Benevento,Bari,1,1,D
+2022-11-05,Cittadella,Modena,0,0,D
+2022-11-05,Ternana,Spal,0,0,D
+2022-11-05,Brescia,Ascoli,1,1,D
+2022-11-05,Pisa,Nuova Cosenza,3,1,H
+2022-11-05,Sudtirol,Cagliari,2,2,D
+2022-11-05,Frosinone,Perugia,1,0,H
+2022-11-05,Palermo,Parma,1,0,H
+2022-11-06,como,Venezia,1,0,H
+2022-11-07,Reggina,Genoa,2,1,H
+2022-11-11,Ascoli,Frosinone,0,1,A
+2022-11-12,Cagliari,Pisa,1,1,D
+2022-11-12,Spal,Benevento,1,2,A
+2022-11-12,Bari,Sudtirol,2,2,D
+2022-11-12,Venezia,Reggina,1,2,A
+2022-11-12,Parma,Cittadella,3,1,H
+2022-11-12,Modena,Perugia,1,1,D
+2022-11-12,Nuova Cosenza,Palermo,3,2,H
+2022-11-12,Ternana,Brescia,0,0,D
+2022-11-13,Genoa,como,1,1,D
+2022-11-26,Parma,Modena,1,2,A
+2022-11-26,Pisa,Ternana,3,1,H
+2022-11-27,Reggina,Benevento,2,2,D
+2022-11-27,Cittadella,Nuova Cosenza,1,1,D
+2022-11-27,Frosinone,Cagliari,2,2,D
+2022-11-27,Brescia,Spal,2,0,H
+2022-11-27,Perugia,Genoa,1,0,H
+2022-11-27,como,Bari,1,1,D
+2022-11-27,Sudtirol,Ascoli,2,2,D
+2022-11-27,Palermo,Venezia,0,1,A
+2022-12-03,Venezia,Ternana,2,1,H
+2022-12-03,Cagliari,Parma,1,1,D
+2022-12-04,Spal,Modena,2,3,A
+2022-12-04,Genoa,Cittadella,0,1,A
+2022-12-04,Ascoli,como,3,3,D
+2022-12-04,Bari,Pisa,0,0,D
+2022-12-04,Brescia,Reggina,0,2,A
+2022-12-04,Sudtirol,Frosinone,1,1,D
+2022-12-04,Nuova Cosenza,Perugia,0,0,D
+2022-12-04,Benevento,Palermo,0,1,A
+2022-12-07,Ternana,Cagliari,1,0,H
+2022-12-08,Parma,Benevento,0,1,A
+2022-12-08,Genoa,Sudtirol,2,0,H
+2022-12-08,Cittadella,Bari,0,3,A
+2022-12-08,Perugia,Spal,0,0,D
+2022-12-08,Modena,Venezia,2,2,D
+2022-12-08,Reggina,Frosinone,0,3,A
+2022-12-08,Nuova Cosenza,Brescia,1,1,D
+2022-12-08,Pisa,Ascoli,2,0,H
+2022-12-08,Palermo,como,0,0,D
+2022-12-11,Cagliari,Perugia,3,2,H
+2022-12-11,Spal,Palermo,1,1,D
+2022-12-11,Benevento,Cittadella,1,0,H
+2022-12-11,Ascoli,Genoa,0,0,D
+2022-12-11,Venezia,Nuova Cosenza,2,0,H
+2022-12-11,como,Reggina,0,1,A
+2022-12-11,Sudtirol,Ternana,0,0,D
+2022-12-11,Bari,Modena,4,1,H
+2022-12-11,Frosinone,Pisa,0,0,D
+2022-12-12,Brescia,Parma,0,2,A
+2022-12-17,Pisa,Brescia,3,0,H
+2022-12-17,Reggina,Bari,0,0,D
+2022-12-18,Cittadella,Sudtirol,0,2,A
+2022-12-18,Ternana,como,0,3,A
+2022-12-18,Parma,Spal,0,1,A
+2022-12-18,Modena,Benevento,1,1,D
+2022-12-18,Nuova Cosenza,Ascoli,1,3,A
+2022-12-18,Palermo,Cagliari,2,1,H
+2022-12-18,Genoa,Frosinone,1,0,H
+2022-12-19,Perugia,Venezia,2,1,H
+2022-12-26,Brescia,Palermo,1,1,D
+2022-12-26,Cagliari,Nuova Cosenza,2,0,H
+2022-12-26,Spal,Pisa,0,1,A
+2022-12-26,Benevento,Perugia,0,2,A
+2022-12-26,Ascoli,Reggina,0,1,A
+2022-12-26,Venezia,Parma,2,2,D
+2022-12-26,como,Cittadella,2,0,H
+2022-12-26,Sudtirol,Modena,0,2,A
+2022-12-26,Frosinone,Ternana,3,0,H
+2022-12-26,Bari,Genoa,1,2,A
+2023-01-14,Cagliari,como,2,0,H
+2023-01-14,Bari,Parma,4,0,H
+2023-01-14,Perugia,Palermo,3,3,D
+2023-01-14,Pisa,Cittadella,1,2,A
+2023-01-14,Reggina,Spal,0,1,A
+2023-01-14,Frosinone,Modena,2,1,H
+2023-01-15,Sudtirol,Brescia,1,0,H
+2023-01-15,Ternana,Ascoli,1,0,H
+2023-01-15,Nuova Cosenza,Benevento,1,1,D
+2023-01-16,Genoa,Venezia,1,0,H
+2023-01-20,Palermo,Bari,1,0,H
+2023-01-21,Spal,Ascoli,1,1,D
+2023-01-21,Benevento,Genoa,1,2,A
+2023-01-21,Venezia,Sudtirol,0,1,A
+2023-01-21,Parma,Perugia,2,0,H
+2023-01-21,como,Pisa,2,2,D
+2023-01-21,Modena,Nuova Cosenza,2,0,H
+2023-01-21,Reggina,Ternana,2,1,H
+2023-01-21,Cittadella,Cagliari,0,0,D
+2023-01-22,Brescia,Frosinone,1,3,A
+2023-01-27,Cagliari,Spal,2,1,H
+2023-01-28,Bari,Perugia,0,2,A
+2023-01-28,Ternana,Modena,2,1,H
+2023-01-28,Venezia,Cittadella,1,1,D
+2023-01-28,Brescia,como,0,1,A
+2023-01-28,Sudtirol,Reggina,2,1,H
+2023-01-28,Nuova Cosenza,Parma,1,0,H
+2023-01-28,Genoa,Pisa,0,0,D
+2023-01-29,Ascoli,Palermo,1,2,A
+2023-01-29,Frosinone,Benevento,1,0,H
+2023-02-03,Modena,Cagliari,2,0,H
+2023-02-04,Spal,Bari,3,4,A
+2023-02-04,Benevento,Venezia,1,2,A
+2023-02-04,Cittadella,Ascoli,3,0,H
+2023-02-04,Perugia,Brescia,4,0,H
+2023-02-04,Pisa,Sudtirol,0,1,A
+2023-02-04,Nuova Cosenza,Ternana,0,0,D
+2023-02-04,como,Frosinone,0,2,A
+2023-02-05,Palermo,Reggina,2,1,H
+2023-02-05,Parma,Genoa,2,0,H
+2023-02-10,Genoa,Palermo,2,0,H
+2023-02-11,Cagliari,Benevento,1,0,H
+2023-02-11,Frosinone,Cittadella,3,0,H
+2023-02-11,Venezia,Spal,2,1,H
+2023-02-11,Brescia,Modena,0,1,A
+2023-02-11,Sudtirol,como,1,1,D
+2023-02-11,Reggina,Pisa,0,2,A
+2023-02-11,Ascoli,Perugia,1,0,H
+2023-02-11,Ternana,Parma,1,1,D
+2023-02-12,Bari,Nuova Cosenza,2,1,H
+2023-02-17,Pisa,Venezia,1,1,D
+2023-02-18,Spal,como,1,1,D
+2023-02-18,Benevento,Brescia,1,0,H
+2023-02-18,Cittadella,Reggina,3,2,H
+2023-02-18,Palermo,Frosinone,1,1,D
+2023-02-18,Parma,Ascoli,0,1,A
+2023-02-18,Nuova Cosenza,Sudtirol,0,0,D
+2023-02-18,Bari,Cagliari,1,1,D
+2023-02-18,Perugia,Ternana,3,0,H
+2023-02-19,Modena,Genoa,2,2,D
+2023-02-24,Frosinone,Parma,3,4,A
+2023-02-24,Pisa,Perugia,2,1,H
+2023-02-25,Ternana,Cittadella,1,2,A
+2023-02-25,Venezia,Cagliari,0,0,D
+2023-02-25,Brescia,Bari,0,2,A
+2023-02-25,como,Nuova Cosenza,5,1,H
+2023-02-25,Sudtirol,Palermo,1,1,D
+2023-02-25,Reggina,Modena,2,1,H
+2023-02-25,Genoa,Spal,3,0,H
+2023-02-26,Ascoli,Benevento,0,0,D
+2023-02-28,Palermo,Ternana,0,0,D
+2023-02-28,Parma,Pisa,0,1,A
+2023-02-28,Nuova Cosenza,Reggina,2,1,H
+2023-03-01,Cagliari,Genoa,0,0,D
+2023-03-01,Spal,Frosinone,0,2,A
+2023-03-01,Benevento,Sudtirol,0,2,A
+2023-03-01,Bari,Venezia,1,0,H
+2023-03-01,Cittadella,Brescia,0,0,D
+2023-03-01,Perugia,como,0,0,D
+2023-03-01,Modena,Ascoli,0,1,A
+2023-03-04,Pisa,Palermo,1,1,D
+2023-03-04,Reggina,Parma,0,1,A
+2023-03-05,Spal,Cittadella,2,1,H
+2023-03-05,Ascoli,Bari,0,1,A
+2023-03-05,Frosinone,Venezia,3,0,H
+2023-03-05,Ternana,Benevento,2,2,D
+2023-03-05,Brescia,Cagliari,1,1,D
+2023-03-05,como,Modena,1,0,H
+2023-03-05,Sudtirol,Perugia,2,1,H
+2023-03-06,Genoa,Nuova Cosenza,4,0,H
+2023-03-10,Cagliari,Ascoli,4,1,H
+2023-03-11,Benevento,como,0,0,D
+2023-03-11,Cittadella,Palermo,3,3,D
+2023-03-11,Venezia,Brescia,1,1,D
+2023-03-11,Parma,Sudtirol,0,0,D
+2023-03-11,Modena,Pisa,1,0,H
+2023-03-11,Bari,Frosinone,0,0,D
+2023-03-12,Genoa,Ternana,1,0,H
+2023-03-12,Nuova Cosenza,Spal,1,0,H
+2023-03-17,Palermo,Modena,5,2,H
+2023-03-18,Ascoli,Venezia,0,1,A
+2023-03-18,Cittadella,Perugia,0,2,A
+2023-03-18,Frosinone,Nuova Cosenza,0,1,A
+2023-03-18,Brescia,Genoa,0,3,A
+2023-03-18,Pisa,Benevento,2,0,H
+2023-03-18,como,Parma,2,0,H
+2023-03-18,Sudtirol,Spal,2,0,H
+2023-03-18,Reggina,Cagliari,0,4,A
+2023-03-19,Ternana,Bari,1,0,H
+2023-03-31,Genoa,Reggina,1,0,H
+2023-04-01,Cagliari,Sudtirol,1,1,D
+2023-04-01,Spal,Ternana,1,1,D
+2023-04-01,Ascoli,Brescia,4,3,H
+2023-04-01,Venezia,como,3,2,H
+2023-04-01,Parma,Palermo,2,1,H
+2023-04-01,Nuova Cosenza,Pisa,1,0,H
+2023-04-01,Bari,Benevento,2,0,H
+2023-04-01,Perugia,Frosinone,1,1,D
+2023-04-02,Modena,Cittadella,0,0,D
+2023-04-05,Perugia,Reggina,1,3,A
+2023-04-10,Benevento,Spal,1,3,A
+2023-04-10,Cittadella,Parma,0,1,A
+2023-04-10,Frosinone,Ascoli,2,0,H
+2023-04-10,Brescia,Ternana,1,0,H
+2023-04-10,Perugia,Modena,0,1,A
+2023-04-10,como,Genoa,2,2,D
+2023-04-10,Sudtirol,Bari,0,1,A
+2023-04-10,Reggina,Venezia,1,0,H
+2023-04-10,Pisa,Cagliari,0,0,D
+2023-04-10,Palermo,Nuova Cosenza,0,0,D
+2023-04-14,Modena,Parma,1,1,D
+2023-04-15,Spal,Brescia,2,2,D
+2023-04-15,Genoa,Perugia,2,0,H
+2023-04-15,Benevento,Reggina,1,1,D
+2023-04-15,Ascoli,Sudtirol,1,0,H
+2023-04-15,Bari,como,2,2,D
+2023-04-15,Venezia,Palermo,3,2,H
+2023-04-15,Nuova Cosenza,Cittadella,1,1,D
+2023-04-15,Cagliari,Frosinone,0,0,D
+2023-04-16,Ternana,Pisa,2,1,H
+2023-04-21,Reggina,Brescia,1,2,A
+2023-04-22,Cittadella,Genoa,0,1,A
+2023-04-22,Frosinone,Sudtirol,0,0,D
+2023-04-22,Parma,Cagliari,2,1,H
+2023-04-22,Perugia,Nuova Cosenza,0,0,D
+2023-04-22,como,Ascoli,1,1,D
+2023-04-22,Modena,Spal,0,0,D
+2023-04-22,Palermo,Benevento,1,1,D
+2023-04-23,Ternana,Venezia,1,4,A
+2023-04-23,Pisa,Bari,1,2,A
+2023-04-30,Cagliari,Ternana,2,1,H
+2023-04-30,Spal,Perugia,1,1,D
+2023-05-01,como,Palermo,1,1,D
+2023-05-01,Benevento,Parma,2,2,D
+2023-05-01,Ascoli,Pisa,2,1,H
+2023-05-01,Bari,Cittadella,1,1,D
+2023-05-01,Brescia,Nuova Cosenza,2,1,H
+2023-05-01,Sudtirol,Genoa,0,0,D
+2023-05-01,Venezia,Modena,5,0,H
+2023-05-01,Frosinone,Reggina,3,1,H
+2023-05-05,Perugia,Cagliari,0,5,A
+2023-05-06,Genoa,Ascoli,2,1,H
+2023-05-06,Cittadella,Benevento,3,1,H
+2023-05-06,Ternana,Sudtirol,0,1,A
+2023-05-06,Pisa,Frosinone,1,3,A
+2023-05-06,Modena,Bari,1,1,D
+2023-05-06,Reggina,como,2,1,H
+2023-05-06,Nuova Cosenza,Venezia,1,1,D
+2023-05-06,Palermo,Spal,2,1,H
+2023-05-07,Parma,Brescia,2,0,H
+2023-05-13,Cagliari,Palermo,2,1,H
+2023-05-13,Spal,Parma,0,1,A
+2023-05-13,Benevento,Modena,2,1,H
+2023-05-13,Ascoli,Nuova Cosenza,1,1,D
+2023-05-13,Bari,Reggina,1,0,H
+2023-05-13,Venezia,Perugia,3,2,H
+2023-05-13,Brescia,Pisa,1,1,D
+2023-05-13,como,Ternana,3,1,H
+2023-05-13,Sudtirol,Cittadella,1,1,D
+2023-05-13,Frosinone,Genoa,3,2,H
+2023-05-19,Genoa,Bari,4,3,H
+2023-05-19,Cittadella,como,0,0,D
+2023-05-19,Ternana,Frosinone,2,3,A
+2023-05-19,Palermo,Brescia,2,2,D
+2023-05-19,Parma,Venezia,2,1,H
+2023-05-19,Perugia,Benevento,3,2,H
+2023-05-19,Pisa,Spal,1,2,A
+2023-05-19,Modena,Sudtirol,2,1,H
+2023-05-19,Reggina,Ascoli,1,0,H
+2023-05-19,Nuova Cosenza,Cagliari,0,1,A
+2023-05-25,Cosenza,Brescia,1,0,H
+2023-05-26,Sudtirol,Reggina,1,0,H
+2023-05-27,Cagliari,Venezia,2,1,H
+2023-05-29,Sudtirol,Bari,1,0,H
+2023-05-30,Cagliari,Parma,3,2,H
+2023-06-01,Brescia,Cosenza,1,1,D
+2023-06-02,Bari,Sudtirol,1,0,H
+2023-06-03,Parma,Cagliari,0,0,D
+2023-06-08,Cagliari,Bari,1,1,D
+2023-06-11,Bari,Cagliari,0,1,A

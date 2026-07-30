@@ -1,0 +1,185 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2020-09-19,Zejtun Corinthians,Santa Lucia,2,2,D
+2020-09-19,Mosta,Gudja United,2,2,D
+2020-09-20,Lija Athletic,Senglea Athletic,4,0,H
+2020-09-20,Tarxien Rainbows,Balzan FC,0,1,A
+2020-09-20,Floriana,Gzira United,2,1,H
+2020-09-20,Sliema Wanderers,Hibernians,3,1,H
+2020-09-21,Hamrun Spartans,Sirens,5,1,H
+2020-09-21,Valletta FC,Birkirkara,4,2,H
+2020-09-25,Senglea Athletic,Zejtun Corinthians,1,1,D
+2020-09-25,Sirens,Sliema Wanderers,0,0,D
+2020-09-26,Birkirkara,Mosta,0,3,A
+2020-09-26,Gudja United,Lija Athletic,2,0,H
+2020-09-26,Balzan FC,Valletta FC,0,1,A
+2020-09-26,Gzira United,Tarxien Rainbows,1,1,D
+2020-09-27,Santa Lucia,Hamrun Spartans,1,4,A
+2020-09-27,Hibernians,Floriana,3,1,H
+2020-09-30,Lija Athletic,Birkirkara,0,0,D
+2020-09-30,Tarxien Rainbows,Hibernians,0,1,A
+2020-09-30,Valletta FC,Gzira United,1,3,A
+2020-09-30,Hamrun Spartans,Senglea Athletic,3,0,H
+2020-10-01,Floriana,Sirens,3,2,H
+2020-10-01,Mosta,Balzan FC,3,3,D
+2020-10-01,Zejtun Corinthians,Gudja United,0,1,A
+2020-10-01,Sliema Wanderers,Santa Lucia,3,1,H
+2020-10-16,Gzira United,Mosta,6,1,H
+2020-10-16,Santa Lucia,Floriana,2,1,H
+2020-10-17,Balzan FC,Lija Athletic,1,0,H
+2020-10-17,Birkirkara,Zejtun Corinthians,2,3,A
+2020-10-17,Gudja United,Hamrun Spartans,0,1,A
+2020-10-18,Hibernians,Valletta FC,1,1,D
+2020-10-18,Senglea Athletic,Sliema Wanderers,0,2,A
+2020-10-20,Lija Athletic,Gzira United,0,3,A
+2020-10-20,Tarxien Rainbows,Santa Lucia,0,2,A
+2020-10-20,Zejtun Corinthians,Balzan FC,0,0,D
+2020-10-20,Hamrun Spartans,Birkirkara,0,2,A
+2020-10-21,Floriana,Senglea Athletic,1,0,H
+2020-10-21,Mosta,Hibernians,2,3,A
+2020-10-21,Sliema Wanderers,Gudja United,1,2,A
+2020-10-24,Senglea Athletic,Tarxien Rainbows,0,5,A
+2020-10-24,Gzira United,Zejtun Corinthians,2,1,H
+2020-10-25,Santa Lucia,Valletta FC,1,1,D
+2020-10-25,Hibernians,Lija Athletic,8,1,H
+2020-10-25,Gudja United,Floriana,1,2,A
+2020-10-26,Balzan FC,Hamrun Spartans,2,2,D
+2020-10-26,Birkirkara,Sliema Wanderers,1,2,A
+2020-10-30,Mosta,Santa Lucia,1,0,H
+2020-10-30,Zejtun Corinthians,Hibernians,2,3,A
+2020-10-31,Hamrun Spartans,Gzira United,2,2,D
+2020-10-31,Tarxien Rainbows,Gudja United,0,5,A
+2020-11-01,Sliema Wanderers,Balzan FC,3,1,H
+2020-11-01,Valletta FC,Senglea Athletic,2,1,H
+2020-11-07,Sirens,Tarxien Rainbows,2,2,D
+2020-11-15,Lija Athletic,Sirens,0,2,A
+2020-11-20,Santa Lucia,Lija Athletic,3,2,H
+2020-11-20,Sirens,Zejtun Corinthians,0,4,A
+2020-11-21,Gzira United,Sliema Wanderers,3,2,H
+2020-11-21,Gudja United,Valletta FC,0,0,D
+2020-11-21,Hibernians,Hamrun Spartans,2,2,D
+2020-11-22,Balzan FC,Floriana,0,0,D
+2020-11-22,Senglea Athletic,Mosta,1,3,A
+2020-11-24,Valletta FC,Sirens,1,1,D
+2020-11-28,Birkirkara,Gudja United,3,0,H
+2020-11-28,Hibernians,Sirens,1,2,A
+2020-11-28,Gzira United,Santa Lucia,2,2,D
+2020-11-28,Sliema Wanderers,Lija Athletic,4,1,H
+2020-11-29,Balzan FC,Senglea Athletic,1,1,D
+2020-11-29,Hamrun Spartans,Zejtun Corinthians,4,0,H
+2020-11-29,Floriana,Mosta,0,2,A
+2020-11-29,Tarxien Rainbows,Valletta FC,3,1,H
+2020-12-02,Birkirkara,Tarxien Rainbows,3,0,H
+2020-12-04,Lija Athletic,Hamrun Spartans,2,2,D
+2020-12-04,Gudja United,Balzan FC,3,2,H
+2020-12-05,Santa Lucia,Hibernians,0,3,A
+2020-12-05,Mosta,Tarxien Rainbows,1,0,H
+2020-12-05,Zejtun Corinthians,Sliema Wanderers,2,4,A
+2020-12-05,Sirens,Gzira United,1,0,H
+2020-12-06,Valletta FC,Floriana,0,3,A
+2020-12-06,Senglea Athletic,Birkirkara,1,2,A
+2020-12-08,Sirens,Santa Lucia,0,2,A
+2020-12-08,Sliema Wanderers,Hamrun Spartans,0,2,A
+2020-12-08,Gzira United,Hibernians,0,1,A
+2020-12-08,Zejtun Corinthians,Lija Athletic,2,0,H
+2020-12-09,Birkirkara,Balzan FC,2,2,D
+2020-12-09,Senglea Athletic,Gudja United,0,2,A
+2020-12-09,Mosta,Valletta FC,2,2,D
+2020-12-12,Balzan FC,Gzira United,0,2,A
+2020-12-12,Gudja United,Sirens,1,3,A
+2020-12-12,Lija Athletic,Mosta,1,1,D
+2020-12-13,Hibernians,Birkirkara,0,1,A
+2020-12-13,Floriana,Sliema Wanderers,0,1,A
+2020-12-14,Valletta FC,Zejtun Corinthians,2,1,H
+2020-12-14,Santa Lucia,Senglea Athletic,4,1,H
+2020-12-18,Lija Athletic,Valletta FC,1,2,A
+2020-12-18,Tarxien Rainbows,Sliema Wanderers,1,2,A
+2020-12-19,Birkirkara,Gzira United,1,1,D
+2020-12-19,Hamrun Spartans,Floriana,3,1,H
+2020-12-19,Mosta,Zejtun Corinthians,3,0,H
+2020-12-20,Hibernians,Balzan FC,2,1,H
+2020-12-20,Santa Lucia,Gudja United,3,2,H
+2020-12-22,Floriana,Birkirkara,2,5,A
+2020-12-22,Sirens,Mosta,2,2,D
+2020-12-23,Hamrun Spartans,Tarxien Rainbows,5,0,H
+2021-01-05,Sirens,Birkirkara,2,4,A
+2021-01-05,Balzan FC,Santa Lucia,1,1,D
+2021-01-06,Gzira United,Senglea Athletic,4,0,H
+2021-01-06,Sliema Wanderers,Mosta,1,3,A
+2021-01-07,Zejtun Corinthians,Tarxien Rainbows,3,1,H
+2021-01-09,Hibernians,Senglea Athletic,3,0,H
+2021-01-09,Balzan FC,Sirens,1,0,H
+2021-01-10,Santa Lucia,Birkirkara,0,0,D
+2021-01-10,Floriana,Zejtun Corinthians,0,0,D
+2021-01-10,Hamrun Spartans,Mosta,3,1,H
+2021-01-12,Senglea Athletic,Sirens,0,1,A
+2021-01-13,Tarxien Rainbows,Floriana,2,2,D
+2021-01-15,Sirens,Hamrun Spartans,0,1,A
+2021-01-16,Gzira United,Floriana,4,1,H
+2021-01-16,Hibernians,Sliema Wanderers,1,0,H
+2021-01-16,Balzan FC,Tarxien Rainbows,0,1,A
+2021-01-17,Santa Lucia,Zejtun Corinthians,1,1,D
+2021-01-22,Tarxien Rainbows,Gzira United,0,2,A
+2021-01-22,Valletta FC,Balzan FC,1,0,H
+2021-01-23,Lija Athletic,Gudja United,0,1,A
+2021-01-23,Floriana,Hibernians,1,1,D
+2021-01-23,Zejtun Corinthians,Senglea Athletic,3,1,H
+2021-01-23,Sliema Wanderers,Sirens,1,3,A
+2021-01-24,Mosta,Birkirkara,0,1,A
+2021-01-24,Hamrun Spartans,Santa Lucia,2,2,D
+2021-01-27,Gudja United,Hibernians,1,4,A
+2021-01-27,Valletta FC,Hamrun Spartans,0,3,A
+2021-01-27,Floriana,Lija Athletic,1,2,A
+2021-01-29,Balzan FC,Mosta,4,1,H
+2021-01-29,Santa Lucia,Sliema Wanderers,0,1,A
+2021-01-30,Hibernians,Tarxien Rainbows,2,0,H
+2021-01-30,Sirens,Floriana,2,1,H
+2021-01-30,Gudja United,Zejtun Corinthians,0,1,A
+2021-01-30,Senglea Athletic,Hamrun Spartans,0,1,A
+2021-01-31,Gzira United,Valletta FC,2,0,H
+2021-01-31,Birkirkara,Lija Athletic,4,1,H
+2021-02-03,Gudja United,Gzira United,1,1,D
+2021-02-03,Valletta FC,Sliema Wanderers,0,0,D
+2021-02-03,Lija Athletic,Tarxien Rainbows,2,0,H
+2021-02-05,Zejtun Corinthians,Birkirkara,0,3,A
+2021-02-05,Floriana,Santa Lucia,1,1,D
+2021-02-06,Lija Athletic,Balzan FC,1,1,D
+2021-02-06,Tarxien Rainbows,Sirens,3,1,H
+2021-02-06,Mosta,Gzira United,1,2,A
+2021-02-06,Sliema Wanderers,Senglea Athletic,3,1,H
+2021-02-07,Valletta FC,Hibernians,1,4,A
+2021-02-07,Hamrun Spartans,Gudja United,3,1,H
+2021-02-13,Birkirkara,Hamrun Spartans,0,2,A
+2021-02-13,Hibernians,Mosta,2,0,H
+2021-02-13,Santa Lucia,Tarxien Rainbows,7,0,H
+2021-02-13,Senglea Athletic,Floriana,0,2,A
+2021-02-14,Gzira United,Lija Athletic,1,0,H
+2021-02-14,Sirens,Valletta FC,0,1,A
+2021-02-14,Gudja United,Sliema Wanderers,1,1,D
+2021-02-17,Senglea Athletic,Lija Athletic,1,3,A
+2021-02-17,Birkirkara,Valletta FC,2,0,H
+2021-02-17,Gudja United,Mosta,0,1,A
+2021-02-20,Sliema Wanderers,Birkirkara,2,2,D
+2021-02-20,Tarxien Rainbows,Senglea Athletic,4,2,H
+2021-02-20,Zejtun Corinthians,Gzira United,0,4,A
+2021-02-20,Floriana,Gudja United,1,0,H
+2021-02-21,Valletta FC,Santa Lucia,1,0,H
+2021-02-21,Lija Athletic,Hibernians,0,5,A
+2021-02-21,Mosta,Sirens,0,0,D
+2021-02-21,Hamrun Spartans,Balzan FC,3,2,H
+2021-02-26,Gudja United,Tarxien Rainbows,0,2,A
+2021-02-26,Sirens,Lija Athletic,1,1,D
+2021-02-27,Birkirkara,Floriana,2,0,H
+2021-02-27,Santa Lucia,Mosta,2,3,A
+2021-02-27,Gzira United,Hamrun Spartans,1,2,A
+2021-02-27,Hibernians,Zejtun Corinthians,2,0,H
+2021-02-28,Balzan FC,Sliema Wanderers,5,1,H
+2021-02-28,Senglea Athletic,Valletta FC,1,3,A
+2021-03-06,Floriana,Balzan FC,0,0,D
+2021-03-06,Hamrun Spartans,Hibernians,1,0,H
+2021-03-06,Tarxien Rainbows,Birkirkara,0,3,A
+2021-03-06,Lija Athletic,Santa Lucia,3,1,H
+2021-03-06,Mosta,Senglea Athletic,5,1,H
+2021-03-06,Sliema Wanderers,Gzira United,2,0,H
+2021-03-07,Zejtun Corinthians,Sirens,1,1,D
+2021-03-07,Valletta FC,Gudja United,2,4,A
+2021-03-10,Balzan FC,Zejtun Corinthians,3,1,H

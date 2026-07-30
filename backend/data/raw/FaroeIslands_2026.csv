@@ -1,0 +1,82 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2026-03-07,AB,B68,2,0,H
+2026-03-08,B36 Torshavn,EB / Streymur,2,1,H
+2026-03-08,NSI Runavik,Vikingur Gota,1,0,H
+2026-03-08,07 Vestur,KI Klaksvik,1,5,A
+2026-03-08,Skala,HB Torshavn,1,2,A
+2026-03-13,Vikingur Gota,B36 Torshavn,0,0,D
+2026-03-15,KI Klaksvik,NSI Runavik,1,1,D
+2026-03-15,HB Torshavn,07 Vestur,2,0,H
+2026-03-15,EB / Streymur,AB,0,3,A
+2026-03-15,B68,Skala,2,1,H
+2026-03-20,EB / Streymur,KI Klaksvik,0,0,D
+2026-03-21,B36 Torshavn,B68,6,0,H
+2026-03-21,07 Vestur,Skala,1,0,H
+2026-03-21,NSI Runavik,AB,2,1,H
+2026-04-01,Vikingur Gota,HB Torshavn,2,1,H
+2026-04-04,B68,NSI Runavik,1,2,A
+2026-04-06,KI Klaksvik,Vikingur Gota,1,0,H
+2026-04-06,AB,07 Vestur,2,0,H
+2026-04-06,Skala,EB / Streymur,1,2,A
+2026-04-06,HB Torshavn,B36 Torshavn,2,2,D
+2026-04-11,B36 Torshavn,Skala,0,0,D
+2026-04-11,KI Klaksvik,B68,6,1,H
+2026-04-12,Vikingur Gota,AB,4,0,H
+2026-04-12,NSI Runavik,07 Vestur,2,0,H
+2026-04-12,EB / Streymur,HB Torshavn,1,2,A
+2026-04-19,B68,HB Torshavn,3,1,H
+2026-04-20,NSI Runavik,EB / Streymur,1,0,H
+2026-04-20,07 Vestur,B36 Torshavn,0,1,A
+2026-04-20,AB,KI Klaksvik,1,1,D
+2026-04-20,Skala,Vikingur Gota,0,0,D
+2026-04-26,Vikingur Gota,B68,2,2,D
+2026-04-26,EB / Streymur,07 Vestur,0,2,A
+2026-04-26,AB,B36 Torshavn,1,4,A
+2026-04-26,Skala,NSI Runavik,3,3,D
+2026-04-26,HB Torshavn,KI Klaksvik,0,2,A
+2026-05-03,KI Klaksvik,Skala,0,0,D
+2026-05-03,HB Torshavn,AB,1,1,D
+2026-05-03,B68,EB / Streymur,1,1,D
+2026-05-04,Vikingur Gota,07 Vestur,0,0,D
+2026-05-04,B36 Torshavn,NSI Runavik,2,0,H
+2026-05-08,NSI Runavik,HB Torshavn,2,1,H
+2026-05-09,B36 Torshavn,KI Klaksvik,1,1,D
+2026-05-10,EB / Streymur,Vikingur Gota,1,1,D
+2026-05-10,07 Vestur,B68,0,2,A
+2026-05-10,Skala,AB,1,0,H
+2026-05-17,Skala,B36 Torshavn,1,2,A
+2026-05-17,07 Vestur,NSI Runavik,1,6,A
+2026-05-17,B68,KI Klaksvik,1,4,A
+2026-05-18,HB Torshavn,EB / Streymur,3,4,A
+2026-05-18,AB,Vikingur Gota,2,3,A
+2026-05-25,Vikingur Gota,Skala,2,1,H
+2026-05-25,KI Klaksvik,AB,2,1,H
+2026-05-25,EB / Streymur,NSI Runavik,0,1,A
+2026-05-25,B36 Torshavn,07 Vestur,1,0,H
+2026-05-26,B68,HB Torshavn,0,1,A
+2026-05-29,Skala,07 Vestur,2,1,H
+2026-05-30,HB Torshavn,Vikingur Gota,0,0,D
+2026-05-30,KI Klaksvik,EB / Streymur,2,1,H
+2026-05-30,AB,NSI Runavik,3,2,H
+2026-05-30,B68,B36 Torshavn,4,4,D
+2026-06-13,07 Vestur,Vikingur Gota,2,3,A
+2026-06-13,NSI Runavik,B36 Torshavn,3,0,H
+2026-06-14,EB / Streymur,B68,2,0,H
+2026-06-14,Skala,KI Klaksvik,1,4,A
+2026-06-14,AB,HB Torshavn,3,1,H
+2026-06-19,Vikingur Gota,KI Klaksvik,2,2,D
+2026-06-20,EB / Streymur,Skala,1,1,D
+2026-06-20,NSI Runavik,B68,1,0,H
+2026-06-21,B36 Torshavn,HB Torshavn,0,3,A
+2026-06-21,07 Vestur,AB,2,0,H
+2026-06-28,KI Klaksvik,07 Vestur,0,1,A
+2026-06-28,EB / Streymur,B36 Torshavn,2,2,D
+2026-06-29,Vikingur Gota,NSI Runavik,3,3,D
+2026-06-29,HB Torshavn,Skala,4,1,H
+2026-06-29,B68,AB,0,1,A
+2026-07-03,NSI Runavik,KI Klaksvik,0,0,D
+2026-07-04,B36 Torshavn,Vikingur Gota,0,2,A
+2026-07-04,AB,EB / Streymur,1,2,A
+2026-07-04,Skala,B68,1,0,H
+2026-07-05,07 Vestur,HB Torshavn,1,4,A
+2026-07-28,B36 Torshavn,AB,1,0,H

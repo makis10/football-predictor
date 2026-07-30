@@ -1,0 +1,386 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2025-08-08,Umraniyespor,Manisa F.K.,2,1,H
+2025-08-09,Erzurumspor FK,Sivasspor,2,0,H
+2025-08-09,Istanbulspor,Serik Spor,0,0,D
+2025-08-09,Hatayspor,Keciorengucu,1,3,A
+2025-08-09,Igdr FK,Saryer,2,1,H
+2025-08-10,Bandrmaspor,Sakaryaspor,1,1,D
+2025-08-10,Boluspor,Vanspor FK,2,3,A
+2025-08-10,Bodrum FK,Pendikspor,1,1,D
+2025-08-10,Corum FK,Amed,2,0,H
+2025-08-11,Esenler Erokspor,Adana Demirspor,2,2,D
+2025-08-15,Serik Spor,Umraniyespor,1,0,H
+2025-08-16,Keciorengucu,Istanbulspor,0,0,D
+2025-08-16,Saryer,Boluspor,1,1,D
+2025-08-16,Adana Demirspor,Corum FK,0,3,A
+2025-08-16,Pendikspor,Bandrmaspor,2,0,H
+2025-08-17,Sivasspor,Bodrum FK,1,1,D
+2025-08-17,Vanspor FK,Esenler Erokspor,1,0,H
+2025-08-17,Manisa F.K.,Hatayspor,2,1,H
+2025-08-17,Sakaryaspor,Igdr FK,3,2,H
+2025-08-18,Amed,Erzurumspor FK,2,2,D
+2025-08-22,Corum FK,Saryer,2,1,H
+2025-08-23,Bandrmaspor,Adana Demirspor,4,0,H
+2025-08-23,Esenler Erokspor,Serik Spor,5,0,H
+2025-08-23,Bodrum FK,Sakaryaspor,3,1,H
+2025-08-23,Igdr FK,Vanspor FK,0,0,D
+2025-08-24,Erzurumspor FK,Pendikspor,3,3,D
+2025-08-24,Boluspor,Keciorengucu,2,1,H
+2025-08-24,Umraniyespor,Hatayspor,1,1,D
+2025-08-24,Amed,Sivasspor,4,2,H
+2025-08-25,Istanbulspor,Manisa F.K.,1,1,D
+2025-08-29,Vanspor FK,Bandrmaspor,1,2,A
+2025-08-29,Saryer,Erzurumspor FK,0,2,A
+2025-08-30,Umraniyespor,Esenler Erokspor,0,2,A
+2025-08-30,Sakaryaspor,Boluspor,1,4,A
+2025-08-30,Hatayspor,Istanbulspor,1,1,D
+2025-08-30,Manisa F.K.,Igdr FK,1,1,D
+2025-08-31,Keciorengucu,Corum FK,1,2,A
+2025-08-31,Pendikspor,Sivasspor,2,1,H
+2025-08-31,Adana Demirspor,Amed,1,8,A
+2025-08-31,Serik Spor,Bodrum FK,2,4,A
+2025-09-12,Esenler Erokspor,Hatayspor,4,1,H
+2025-09-12,Bodrum FK,Adana Demirspor,3,1,H
+2025-09-13,Boluspor,Manisa F.K.,2,0,H
+2025-09-13,Istanbulspor,Umraniyespor,4,0,H
+2025-09-13,Sivasspor,Saryer,1,0,H
+2025-09-13,Corum FK,Vanspor FK,0,0,D
+2025-09-14,Bandrmaspor,Keciorengucu,1,1,D
+2025-09-14,Igdr FK,Serik Spor,1,2,A
+2025-09-14,Amed,Pendikspor,2,1,H
+2025-09-15,Erzurumspor FK,Sakaryaspor,1,1,D
+2025-09-19,Serik Spor,Bandrmaspor,1,0,H
+2025-09-19,Umraniyespor,Igdr FK,0,1,A
+2025-09-19,Istanbulspor,Corum FK,3,1,H
+2025-09-19,Hatayspor,Boluspor,2,2,D
+2025-09-20,Keciorengucu,Bodrum FK,2,1,H
+2025-09-20,Vanspor FK,Sivasspor,0,0,D
+2025-09-20,Adana Demirspor,Erzurumspor FK,0,3,A
+2025-09-20,Manisa F.K.,Esenler Erokspor,3,4,A
+2025-09-21,Saryer,Pendikspor,0,2,A
+2025-09-21,Sakaryaspor,Amed,2,1,H
+2025-09-23,Boluspor,Umraniyespor,0,1,A
+2025-09-23,Corum FK,Serik Spor,1,1,D
+2025-09-23,Igdr FK,Hatayspor,4,2,H
+2025-09-24,Bandrmaspor,Manisa F.K.,1,4,A
+2025-09-24,Erzurumspor FK,Keciorengucu,1,1,D
+2025-09-24,Bodrum FK,Vanspor FK,2,0,H
+2025-09-24,Esenler Erokspor,Istanbulspor,5,0,H
+2025-09-25,Sivasspor,Adana Demirspor,5,0,H
+2025-09-25,Amed,Saryer,2,0,H
+2025-09-25,Pendikspor,Sakaryaspor,4,1,H
+2025-09-27,Esenler Erokspor,Igdr FK,2,3,A
+2025-09-27,Umraniyespor,Corum FK,1,1,D
+2025-09-28,Istanbulspor,Boluspor,1,1,D
+2025-09-28,Manisa F.K.,Bodrum FK,0,4,A
+2025-09-28,Hatayspor,Bandrmaspor,0,3,A
+2025-09-28,Serik Spor,Erzurumspor FK,1,1,D
+2025-09-29,Keciorengucu,Pendikspor,0,0,D
+2025-09-29,Vanspor FK,Amed,3,0,H
+2025-09-29,Adana Demirspor,Saryer,0,3,A
+2025-10-03,Boluspor,Esenler Erokspor,1,3,A
+2025-10-03,Corum FK,Manisa F.K.,3,1,H
+2025-10-04,Bandrmaspor,Umraniyespor,2,1,H
+2025-10-04,Pendikspor,Adana Demirspor,3,0,H
+2025-10-04,Erzurumspor FK,Vanspor FK,1,1,D
+2025-10-04,Amed,Keciorengucu,4,1,H
+2025-10-05,Saryer,Sakaryaspor,1,2,A
+2025-10-05,Sivasspor,Serik Spor,0,0,D
+2025-10-05,Igdr FK,Istanbulspor,2,1,H
+2025-10-05,Bodrum FK,Hatayspor,5,0,H
+2025-10-17,Umraniyespor,Saryer,1,3,A
+2025-10-18,Manisa F.K.,Erzurumspor FK,1,1,D
+2025-10-18,Vanspor FK,Pendikspor,1,1,D
+2025-10-18,Adana Demirspor,Sakaryaspor,0,6,A
+2025-10-18,Hatayspor,Corum FK,1,4,A
+2025-10-19,Keciorengucu,Sivasspor,0,0,D
+2025-10-19,Igdr FK,Boluspor,1,1,D
+2025-10-19,Esenler Erokspor,Bodrum FK,1,1,D
+2025-10-20,Serik Spor,Amed,1,2,A
+2025-10-20,Istanbulspor,Bandrmaspor,1,1,D
+2025-10-24,Erzurumspor FK,Umraniyespor,2,0,H
+2025-10-24,Sivasspor,Hatayspor,1,1,D
+2025-10-25,Adana Demirspor,Vanspor FK,2,4,A
+2025-10-25,Saryer,Manisa F.K.,0,0,D
+2025-10-25,Pendikspor,Serik Spor,4,0,H
+2025-10-25,Sakaryaspor,Keciorengucu,1,0,H
+2025-10-26,Bandrmaspor,Esenler Erokspor,0,0,D
+2025-10-26,Amed,Istanbulspor,0,0,D
+2025-10-26,Corum FK,Boluspor,0,0,D
+2025-10-26,Bodrum FK,Igdr FK,2,0,H
+2025-10-31,Hatayspor,Erzurumspor FK,0,3,A
+2025-11-01,Keciorengucu,Saryer,3,0,H
+2025-11-01,Umraniyespor,Sivasspor,1,0,H
+2025-11-01,Serik Spor,Adana Demirspor,4,0,H
+2025-11-02,Istanbulspor,Pendikspor,0,0,D
+2025-11-02,Manisa F.K.,Amed,0,3,A
+2025-11-02,Boluspor,Bodrum FK,3,0,H
+2025-11-02,Vanspor FK,Sakaryaspor,3,2,H
+2025-11-03,Igdr FK,Bandrmaspor,1,1,D
+2025-11-03,Esenler Erokspor,Corum FK,3,1,H
+2025-11-07,Saryer,Vanspor FK,2,1,H
+2025-11-07,Bodrum FK,Istanbulspor,5,0,H
+2025-11-08,Sivasspor,Manisa F.K.,3,2,H
+2025-11-08,Bandrmaspor,Boluspor,1,0,H
+2025-11-08,Sakaryaspor,Serik Spor,2,3,A
+2025-11-08,Amed,Hatayspor,2,1,H
+2025-11-09,Erzurumspor FK,Esenler Erokspor,1,1,D
+2025-11-09,Adana Demirspor,Keciorengucu,2,7,A
+2025-11-09,Pendikspor,Umraniyespor,3,0,H
+2025-11-09,Corum FK,Igdr FK,3,1,H
+2025-11-21,Manisa F.K.,Adana Demirspor,5,0,H
+2025-11-22,Hatayspor,Pendikspor,0,1,A
+2025-11-22,Bandrmaspor,Corum FK,1,0,H
+2025-11-22,Boluspor,Amed,4,1,H
+2025-11-22,Istanbulspor,Sakaryaspor,3,3,D
+2025-11-23,Umraniyespor,Bodrum FK,1,0,H
+2025-11-23,Igdr FK,Erzurumspor FK,2,1,H
+2025-11-23,Vanspor FK,Keciorengucu,1,1,D
+2025-11-23,Esenler Erokspor,Sivasspor,2,1,H
+2025-11-24,Serik Spor,Saryer,3,0,H
+2025-11-28,Amed,Esenler Erokspor,2,1,H
+2025-11-28,Pendikspor,Manisa F.K.,2,0,H
+2025-11-29,Erzurumspor FK,Istanbulspor,4,0,H
+2025-11-29,Keciorengucu,Igdr FK,1,2,A
+2025-11-29,Vanspor FK,Serik Spor,0,1,A
+2025-11-29,Sakaryaspor,Umraniyespor,1,1,D
+2025-11-30,Sivasspor,Boluspor,1,0,H
+2025-11-30,Saryer,Bandrmaspor,1,0,H
+2025-11-30,Bodrum FK,Corum FK,4,0,H
+2025-12-01,Adana Demirspor,Hatayspor,3,3,D
+2025-12-06,Serik Spor,Keciorengucu,1,3,A
+2025-12-06,Umraniyespor,Amed,3,4,A
+2025-12-06,Esenler Erokspor,Sakaryaspor,4,1,H
+2025-12-07,Boluspor,Erzurumspor FK,2,0,H
+2025-12-07,Igdr FK,Adana Demirspor,4,1,H
+2025-12-07,Manisa F.K.,Vanspor FK,2,1,H
+2025-12-07,Istanbulspor,Sivasspor,2,1,H
+2025-12-08,Hatayspor,Saryer,0,3,A
+2025-12-08,Bandrmaspor,Bodrum FK,2,0,H
+2025-12-08,Corum FK,Pendikspor,2,0,H
+2025-12-12,Adana Demirspor,Boluspor,1,6,A
+2025-12-13,Saryer,Istanbulspor,1,2,A
+2025-12-13,Serik Spor,Manisa F.K.,0,1,A
+2025-12-13,Sivasspor,Corum FK,1,1,D
+2025-12-13,Amed,Bandrmaspor,2,1,H
+2025-12-14,Erzurumspor FK,Bodrum FK,2,2,D
+2025-12-14,Keciorengucu,Esenler Erokspor,1,1,D
+2025-12-14,Vanspor FK,Umraniyespor,0,1,A
+2025-12-14,Pendikspor,Igdr FK,1,1,D
+2025-12-15,Sakaryaspor,Hatayspor,3,0,H
+2025-12-19,Esenler Erokspor,Saryer,1,1,D
+2025-12-20,Bandrmaspor,Erzurumspor FK,0,2,A
+2025-12-20,Igdr FK,Sivasspor,1,1,D
+2025-12-20,Boluspor,Pendikspor,1,2,A
+2025-12-20,Manisa F.K.,Keciorengucu,2,2,D
+2025-12-21,Hatayspor,Serik Spor,1,1,D
+2025-12-21,Umraniyespor,Adana Demirspor,5,0,H
+2025-12-21,Corum FK,Sakaryaspor,2,0,H
+2025-12-21,Istanbulspor,Vanspor FK,1,3,A
+2025-12-22,Bodrum FK,Amed,0,0,D
+2025-12-26,Sakaryaspor,Manisa F.K.,0,2,A
+2025-12-27,Sivasspor,Bandrmaspor,2,0,H
+2025-12-27,Saryer,Bodrum FK,1,0,H
+2025-12-27,Vanspor FK,Hatayspor,4,0,H
+2025-12-27,Pendikspor,Esenler Erokspor,0,0,D
+2025-12-28,Keciorengucu,Umraniyespor,3,1,H
+2025-12-28,Serik Spor,Boluspor,1,4,A
+2025-12-28,Erzurumspor FK,Corum FK,1,0,H
+2025-12-28,Amed,Igdr FK,3,0,H
+2025-12-29,Adana Demirspor,Istanbulspor,1,5,A
+2026-01-09,Vanspor FK,Boluspor,0,1,A
+2026-01-09,Amed,Corum FK,1,0,H
+2026-01-10,Serik Spor,Istanbulspor,0,3,A
+2026-01-10,Adana Demirspor,Esenler Erokspor,0,5,A
+2026-01-10,Sakaryaspor,Bandrmaspor,1,1,D
+2026-01-11,Keciorengucu,Hatayspor,5,0,H
+2026-01-11,Saryer,Igdr FK,1,0,H
+2026-01-11,Sivasspor,Erzurumspor FK,0,2,A
+2026-01-11,Pendikspor,Bodrum FK,0,0,D
+2026-01-12,Manisa F.K.,Umraniyespor,1,0,H
+2026-01-16,Corum FK,Adana Demirspor,4,1,H
+2026-01-17,Hatayspor,Manisa F.K.,2,2,D
+2026-01-17,Bandrmaspor,Pendikspor,4,1,H
+2026-01-17,Esenler Erokspor,Vanspor FK,0,0,D
+2026-01-18,Erzurumspor FK,Amed,2,0,H
+2026-01-18,Boluspor,Saryer,1,2,A
+2026-01-18,Umraniyespor,Serik Spor,5,0,H
+2026-01-19,Igdr FK,Sakaryaspor,1,0,H
+2026-01-19,Istanbulspor,Keciorengucu,2,2,D
+2026-01-19,Bodrum FK,Sivasspor,1,2,A
+2026-01-23,Adana Demirspor,Bandrmaspor,0,3,A
+2026-01-24,Keciorengucu,Boluspor,5,1,H
+2026-01-24,Serik Spor,Esenler Erokspor,0,3,A
+2026-01-24,Vanspor FK,Igdr FK,3,0,H
+2026-01-24,Pendikspor,Erzurumspor FK,1,2,A
+2026-01-25,Hatayspor,Umraniyespor,0,2,A
+2026-01-25,Saryer,Corum FK,1,2,A
+2026-01-25,Sivasspor,Amed,1,1,D
+2026-01-25,Manisa F.K.,Istanbulspor,1,0,H
+2026-01-26,Sakaryaspor,Bodrum FK,0,2,A
+2026-01-30,Istanbulspor,Hatayspor,1,0,H
+2026-01-31,Erzurumspor FK,Saryer,4,0,H
+2026-01-31,Igdr FK,Manisa F.K.,0,0,D
+2026-01-31,Corum FK,Keciorengucu,1,0,H
+2026-01-31,Bodrum FK,Serik Spor,3,0,H
+2026-02-01,Sivasspor,Pendikspor,0,0,D
+2026-02-01,Bandrmaspor,Vanspor FK,2,0,H
+2026-02-01,Boluspor,Sakaryaspor,2,0,H
+2026-02-01,Amed,Adana Demirspor,7,0,H
+2026-02-02,Esenler Erokspor,Umraniyespor,1,0,H
+2026-02-07,Hatayspor,Esenler Erokspor,0,5,A
+2026-02-07,Saryer,Sivasspor,1,0,H
+2026-02-07,Vanspor FK,Corum FK,3,1,H
+2026-02-07,Pendikspor,Amed,0,2,A
+2026-02-08,Keciorengucu,Bandrmaspor,3,1,H
+2026-02-08,Serik Spor,Igdr FK,1,3,A
+2026-02-08,Adana Demirspor,Bodrum FK,0,5,A
+2026-02-08,Umraniyespor,Istanbulspor,0,0,D
+2026-02-08,Manisa F.K.,Boluspor,4,1,H
+2026-02-09,Sakaryaspor,Erzurumspor FK,0,1,A
+2026-02-13,Igdr FK,Umraniyespor,1,1,D
+2026-02-13,Boluspor,Hatayspor,3,1,H
+2026-02-13,Corum FK,Istanbulspor,2,3,A
+2026-02-13,Esenler Erokspor,Manisa F.K.,3,1,H
+2026-02-14,Erzurumspor FK,Adana Demirspor,7,0,H
+2026-02-14,Bandrmaspor,Serik Spor,0,3,A
+2026-02-14,Sivasspor,Vanspor FK,3,3,D
+2026-02-14,Bodrum FK,Keciorengucu,4,3,H
+2026-02-15,Amed,Sakaryaspor,1,1,D
+2026-02-15,Pendikspor,Saryer,2,0,H
+2026-02-17,Hatayspor,Igdr FK,0,2,A
+2026-02-17,Umraniyespor,Boluspor,4,2,H
+2026-02-17,Istanbulspor,Esenler Erokspor,1,4,A
+2026-02-18,Keciorengucu,Erzurumspor FK,1,2,A
+2026-02-18,Serik Spor,Corum FK,2,3,A
+2026-02-18,Manisa F.K.,Bandrmaspor,3,2,H
+2026-02-19,Adana Demirspor,Sivasspor,1,1,D
+2026-02-19,Saryer,Amed,1,1,D
+2026-02-19,Vanspor FK,Bodrum FK,3,1,H
+2026-02-19,Sakaryaspor,Pendikspor,0,2,A
+2026-02-21,Igdr FK,Esenler Erokspor,0,3,A
+2026-02-21,Boluspor,Istanbulspor,0,1,A
+2026-02-22,Erzurumspor FK,Serik Spor,4,0,H
+2026-02-22,Bandrmaspor,Hatayspor,4,0,H
+2026-02-22,Corum FK,Umraniyespor,2,0,H
+2026-02-22,Bodrum FK,Manisa F.K.,1,2,A
+2026-02-23,Sivasspor,Sakaryaspor,4,1,H
+2026-02-23,Saryer,Adana Demirspor,5,0,H
+2026-02-23,Pendikspor,Keciorengucu,0,1,A
+2026-02-23,Amed,Vanspor FK,1,0,H
+2026-02-27,Esenler Erokspor,Boluspor,2,0,H
+2026-02-27,Istanbulspor,Igdr FK,1,2,A
+2026-02-28,Hatayspor,Bodrum FK,1,3,A
+2026-02-28,Vanspor FK,Erzurumspor FK,0,3,A
+2026-02-28,Keciorengucu,Amed,2,2,D
+2026-03-01,Adana Demirspor,Pendikspor,0,5,A
+2026-03-01,Serik Spor,Sivasspor,0,1,A
+2026-03-01,Umraniyespor,Bandrmaspor,1,2,A
+2026-03-01,Sakaryaspor,Saryer,0,0,D
+2026-03-02,Manisa F.K.,Corum FK,0,1,A
+2026-03-06,Saryer,Umraniyespor,1,2,A
+2026-03-06,Pendikspor,Vanspor FK,1,1,D
+2026-03-06,Sakaryaspor,Adana Demirspor,4,0,H
+2026-03-07,Sivasspor,Keciorengucu,0,1,A
+2026-03-07,Erzurumspor FK,Manisa F.K.,8,1,H
+2026-03-07,Bandrmaspor,Istanbulspor,1,0,H
+2026-03-07,Corum FK,Hatayspor,3,1,H
+2026-03-07,Amed,Serik Spor,1,0,H
+2026-03-08,Boluspor,Igdr FK,2,0,H
+2026-03-08,Bodrum FK,Esenler Erokspor,3,4,A
+2026-03-10,Vanspor FK,Adana Demirspor,1,0,H
+2026-03-10,Serik Spor,Pendikspor,3,4,A
+2026-03-10,Manisa F.K.,Saryer,3,0,H
+2026-03-11,Hatayspor,Sivasspor,1,2,A
+2026-03-11,Istanbulspor,Amed,0,4,A
+2026-03-11,Umraniyespor,Erzurumspor FK,3,1,H
+2026-03-11,Keciorengucu,Sakaryaspor,1,1,D
+2026-03-12,Igdr FK,Bodrum FK,2,3,A
+2026-03-12,Boluspor,Corum FK,1,2,A
+2026-03-12,Esenler Erokspor,Bandrmaspor,1,1,D
+2026-03-14,Adana Demirspor,Serik Spor,1,4,A
+2026-03-14,Pendikspor,Istanbulspor,1,1,D
+2026-03-15,Sivasspor,Umraniyespor,1,0,H
+2026-03-15,Erzurumspor FK,Hatayspor,3,0,H
+2026-03-15,Sakaryaspor,Vanspor FK,2,1,H
+2026-03-15,Saryer,Keciorengucu,3,1,H
+2026-03-15,Amed,Manisa F.K.,2,0,H
+2026-03-16,Bandrmaspor,Igdr FK,0,0,D
+2026-03-16,Corum FK,Esenler Erokspor,2,1,H
+2026-03-16,Bodrum FK,Boluspor,2,0,H
+2026-03-21,Boluspor,Bandrmaspor,0,0,D
+2026-03-21,Serik Spor,Sakaryaspor,2,0,H
+2026-03-21,Keciorengucu,Adana Demirspor,7,0,H
+2026-03-21,Manisa F.K.,Sivasspor,0,1,A
+2026-03-21,Umraniyespor,Pendikspor,0,0,D
+2026-03-22,Vanspor FK,Saryer,0,0,D
+2026-03-22,Hatayspor,Amed,0,3,A
+2026-03-22,Istanbulspor,Bodrum FK,0,1,A
+2026-03-22,Igdr FK,Corum FK,0,2,A
+2026-03-22,Esenler Erokspor,Erzurumspor FK,0,2,A
+2026-04-03,Adana Demirspor,Manisa F.K.,2,1,H
+2026-04-03,Pendikspor,Hatayspor,4,1,H
+2026-04-03,Bodrum FK,Umraniyespor,1,0,H
+2026-04-03,Corum FK,Bandrmaspor,0,1,A
+2026-04-04,Keciorengucu,Vanspor FK,3,0,H
+2026-04-04,Saryer,Serik Spor,3,0,H
+2026-04-04,Erzurumspor FK,Igdr FK,2,1,H
+2026-04-04,Sakaryaspor,Istanbulspor,2,2,D
+2026-04-05,Sivasspor,Esenler Erokspor,1,3,A
+2026-04-05,Amed,Boluspor,6,1,H
+2026-04-07,Hatayspor,Adana Demirspor,4,0,H
+2026-04-07,Bandrmaspor,Saryer,0,0,D
+2026-04-07,Manisa F.K.,Pendikspor,2,0,H
+2026-04-07,Corum FK,Bodrum FK,1,1,D
+2026-04-08,Serik Spor,Vanspor FK,1,6,A
+2026-04-08,Igdr FK,Keciorengucu,0,1,A
+2026-04-08,Umraniyespor,Sakaryaspor,2,0,H
+2026-04-09,Boluspor,Sivasspor,1,2,A
+2026-04-09,Istanbulspor,Erzurumspor FK,0,1,A
+2026-04-09,Esenler Erokspor,Amed,1,1,D
+2026-04-11,Saryer,Hatayspor,4,0,H
+2026-04-11,Pendikspor,Corum FK,1,1,D
+2026-04-11,Bodrum FK,Bandrmaspor,0,0,D
+2026-04-12,Vanspor FK,Manisa F.K.,0,1,A
+2026-04-12,Adana Demirspor,Igdr FK,1,6,A
+2026-04-12,Keciorengucu,Serik Spor,0,0,D
+2026-04-13,Sivasspor,Istanbulspor,1,3,A
+2026-04-13,Erzurumspor FK,Boluspor,2,0,H
+2026-04-13,Amed,Umraniyespor,2,2,D
+2026-04-13,Sakaryaspor,Esenler Erokspor,1,2,A
+2026-04-18,Hatayspor,Sakaryaspor,1,1,D
+2026-04-19,Boluspor,Adana Demirspor,6,0,H
+2026-04-19,Umraniyespor,Vanspor FK,1,2,A
+2026-04-19,Istanbulspor,Saryer,3,1,H
+2026-04-19,Bodrum FK,Erzurumspor FK,1,1,D
+2026-04-19,Bandrmaspor,Amed,2,0,H
+2026-04-19,Manisa F.K.,Serik Spor,1,0,H
+2026-04-19,Corum FK,Sivasspor,3,1,H
+2026-04-19,Esenler Erokspor,Keciorengucu,1,0,H
+2026-04-19,Igdr FK,Pendikspor,1,1,D
+2026-04-25,Vanspor FK,Istanbulspor,1,3,A
+2026-04-25,Serik Spor,Hatayspor,4,2,H
+2026-04-25,Adana Demirspor,Umraniyespor,1,3,A
+2026-04-26,Sivasspor,Igdr FK,2,1,H
+2026-04-26,Erzurumspor FK,Bandrmaspor,1,1,D
+2026-04-26,Amed,Bodrum FK,1,1,D
+2026-04-26,Keciorengucu,Manisa F.K.,2,1,H
+2026-04-26,Pendikspor,Boluspor,2,0,H
+2026-04-26,Sakaryaspor,Corum FK,0,4,A
+2026-04-26,Saryer,Esenler Erokspor,1,0,H
+2026-05-01,Hatayspor,Vanspor FK,3,1,H
+2026-05-01,Boluspor,Serik Spor,3,1,H
+2026-05-01,Istanbulspor,Adana Demirspor,8,1,H
+2026-05-01,Manisa F.K.,Sakaryaspor,5,0,H
+2026-05-02,Umraniyespor,Keciorengucu,1,4,A
+2026-05-02,Bodrum FK,Saryer,0,1,A
+2026-05-02,Bandrmaspor,Sivasspor,1,0,H
+2026-05-02,Corum FK,Erzurumspor FK,1,1,D
+2026-05-02,Esenler Erokspor,Pendikspor,1,1,D
+2026-05-02,Igdr FK,Amed,3,3,D
+2026-05-07,Bodrum FK,Pendikspor,2,0,H
+2026-05-07,Corum FK,Keciorengucu,1,0,H
+2026-05-11,Bodrum FK,Corum FK,1,0,H
+2026-05-15,Corum FK,Bodrum FK,1,0,H
+2026-05-24,Esenler Erokspor,Corum FK,0,2,A
+2025-09-29,Sakaryaspor,Sivasspor,0,3,A

@@ -1,0 +1,397 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2022-11-04,Veria,PAOK II,1,1,D
+2022-11-05,Apollon Smirnis,AEK Athens II,1,0,H
+2022-11-05,Panserraikos,Thesprotos,1,1,D
+2022-11-05,Episkopi,Olympiakos Piraeus II,1,1,D
+2022-11-06,Kalamata,Irodotos,2,0,H
+2022-11-06,Larisa,Iraklis Larissa,3,0,H
+2022-11-06,Kissamikos,Panachaiki FC,1,2,A
+2022-11-06,Apollon Pontou,Xanthi FC,0,1,A
+2022-11-06,Egaleo,OF Ierapetra,0,2,A
+2022-11-06,Makedonikos Neapolis,Niki Volos,2,0,H
+2022-11-06,Ilioupoli,Kifisia,0,2,A
+2022-11-06,Iraklis 1908,Almopos,1,1,D
+2022-11-07,Panathinaikos II,Apollon Larissa FC,5,2,H
+2022-11-11,Niki Volos,Veria,1,1,D
+2022-11-11,PAOK II,Larisa,1,0,H
+2022-11-12,Olympiakos Piraeus II,Kalamata,0,2,A
+2022-11-12,Apollon Larissa FC,Makedonikos Neapolis,1,0,H
+2022-11-12,AEK Athens II,Ilioupoli,0,0,D
+2022-11-13,Panachaiki FC,Episkopi,2,1,H
+2022-11-13,Irodotos,Apollon Smirnis,0,1,A
+2022-11-13,OF Ierapetra,PAO Rouf,4,0,H
+2022-11-13,Thesprotos,Panathinaikos II,2,2,D
+2022-11-13,Diagoras,Anagennisi Karditsas,0,2,A
+2022-11-13,Iraklis Larissa,Apollon Pontou,0,1,A
+2022-11-13,Kifisia,Egaleo,2,0,H
+2022-11-14,Almopos,Panserraikos,0,1,A
+2022-11-14,Proodeftiki,Kallithea,0,1,A
+2022-11-18,Kalamata,Panachaiki FC,0,0,D
+2022-11-19,Panserraikos,Iraklis 1908,0,2,A
+2022-11-19,Larisa,Niki Volos,1,0,H
+2022-11-20,Veria,Apollon Larissa FC,1,2,A
+2022-11-20,Apollon Pontou,PAOK II,1,2,A
+2022-11-20,Episkopi,Kissamikos,0,2,A
+2022-11-20,Egaleo,AEK Athens II,1,1,D
+2022-11-20,Makedonikos Neapolis,Thesprotos,2,0,H
+2022-11-20,Ilioupoli,Irodotos,3,0,H
+2022-11-21,Anagennisi Karditsas,Iraklis Larissa,2,0,H
+2022-11-21,Panathinaikos II,Almopos,1,1,D
+2022-11-21,Kallithea,OF Ierapetra,2,1,H
+2022-11-23,Ergotelis,Proodeftiki,0,1,A
+2022-11-25,Iraklis 1908,Panathinaikos II,2,3,A
+2022-11-26,PAOK II,Anagennisi Karditsas,2,0,H
+2022-11-26,Apollon Larissa FC,Larisa,0,2,A
+2022-11-26,AEK Athens II,PAO Rouf,3,1,H
+2022-11-26,Olympiakos Piraeus II,Ilioupoli,0,1,A
+2022-11-27,Kissamikos,Kalamata,1,0,H
+2022-11-27,Panachaiki FC,Apollon Smirnis,0,0,D
+2022-11-27,Irodotos,Egaleo,0,1,A
+2022-11-27,Niki Volos,Apollon Pontou,3,0,H
+2022-11-27,Thesprotos,Veria,1,1,D
+2022-11-27,Almopos,Makedonikos Neapolis,0,0,D
+2022-11-27,Iraklis Larissa,Diagoras,0,1,A
+2022-11-28,OF Ierapetra,Proodeftiki,2,1,H
+2022-11-28,Kifisia,Kallithea,2,0,H
+2022-12-02,PAO Rouf,Irodotos,1,2,A
+2022-12-02,Ilioupoli,Panachaiki FC,2,1,H
+2022-12-03,Apollon Smirnis,Kissamikos,1,0,H
+2022-12-03,Anagennisi Karditsas,Niki Volos,1,0,H
+2022-12-03,Egaleo,Olympiakos Piraeus II,0,0,D
+2022-12-03,Makedonikos Neapolis,Iraklis 1908,2,0,H
+2022-12-04,Kalamata,Episkopi,1,0,H
+2022-12-04,Larisa,Thesprotos,2,0,H
+2022-12-04,Veria,Almopos,1,0,H
+2022-12-04,Diagoras,PAOK II,2,3,A
+2022-12-04,Proodeftiki,Kifisia,0,4,A
+2022-12-04,Panathinaikos II,Panserraikos,0,1,A
+2022-12-05,Apollon Pontou,Apollon Larissa FC,0,1,A
+2022-12-05,Kallithea,AEK Athens II,3,0,H
+2022-12-07,Apollon Smirnis,Olympiakos Piraeus II,1,0,H
+2022-12-07,PAO Rouf,Kifisia,1,3,A
+2022-12-09,Iraklis 1908,Veria,1,1,D
+2022-12-10,Kifisia,OF Ierapetra,1,0,H
+2022-12-10,Irodotos,Kallithea,1,2,A
+2022-12-11,Kissamikos,Ilioupoli,1,0,H
+2022-12-11,Panserraikos,Makedonikos Neapolis,2,0,H
+2022-12-11,Apollon Larissa FC,Anagennisi Karditsas,0,3,A
+2022-12-11,Panachaiki FC,Egaleo,1,0,H
+2022-12-11,Niki Volos,Diagoras,3,0,H
+2022-12-11,Thesprotos,Apollon Pontou,2,3,A
+2022-12-11,Almopos,Larisa,0,2,A
+2022-12-11,PAOK II,Iraklis Larissa,3,0,H
+2022-12-12,Episkopi,Apollon Smirnis,0,1,A
+2022-12-12,Olympiakos Piraeus II,PAO Rouf,2,0,H
+2022-12-12,AEK Athens II,Proodeftiki,3,0,H
+2022-12-16,Makedonikos Neapolis,Panathinaikos II,1,1,D
+2022-12-17,OF Ierapetra,AEK Athens II,3,2,H
+2022-12-18,Larisa,Iraklis 1908,0,2,A
+2022-12-18,Egaleo,Kissamikos,0,0,D
+2022-12-18,Iraklis Larissa,Niki Volos,0,1,A
+2022-12-18,Proodeftiki,Irodotos,1,0,H
+2022-12-18,Ilioupoli,Episkopi,0,0,D
+2022-12-18,Apollon Smirnis,Kalamata,0,2,A
+2022-12-19,Diagoras,Apollon Larissa FC,5,0,H
+2022-12-19,Veria,Panserraikos,1,3,A
+2022-12-19,Anagennisi Karditsas,Thesprotos,1,0,H
+2022-12-19,Apollon Pontou,Almopos,0,1,A
+2022-12-19,PAO Rouf,Panachaiki FC,0,1,A
+2022-12-19,Kallithea,Olympiakos Piraeus II,2,1,H
+2022-12-22,Episkopi,Egaleo,0,1,A
+2022-12-22,Kissamikos,PAO Rouf,4,0,H
+2022-12-22,Panserraikos,Larisa,2,1,H
+2022-12-22,Apollon Larissa FC,Iraklis Larissa,0,2,A
+2022-12-22,Panachaiki FC,Kallithea,0,0,D
+2022-12-22,Irodotos,OF Ierapetra,0,1,A
+2022-12-22,Kalamata,Ilioupoli,0,1,A
+2022-12-22,Niki Volos,PAOK II,2,0,H
+2022-12-22,Thesprotos,Diagoras,1,4,A
+2022-12-22,Almopos,Anagennisi Karditsas,1,0,H
+2022-12-22,Iraklis 1908,Apollon Pontou,2,0,H
+2022-12-22,Olympiakos Piraeus II,Proodeftiki,1,0,H
+2022-12-22,Panathinaikos II,Veria,1,2,A
+2022-12-22,AEK Athens II,Kifisia,0,1,A
+2023-01-03,Anagennisi Karditsas,Iraklis 1908,1,0,H
+2023-01-03,Apollon Pontou,Panserraikos,0,2,A
+2023-01-03,PAOK II,Apollon Larissa FC,6,1,H
+2023-01-04,Larisa,Panathinaikos II,2,2,D
+2023-01-04,Kallithea,Kissamikos,2,1,H
+2023-01-04,Kifisia,Irodotos,2,0,H
+2023-01-04,OF Ierapetra,Olympiakos Piraeus II,2,0,H
+2023-01-04,Diagoras,Almopos,1,1,D
+2023-01-04,Iraklis Larissa,Thesprotos,1,0,H
+2023-01-04,Proodeftiki,Panachaiki FC,0,1,A
+2023-01-04,PAO Rouf,Episkopi,3,0,H
+2023-01-04,Ilioupoli,Apollon Smirnis,1,2,A
+2023-01-04,Egaleo,Kalamata,1,1,D
+2023-01-05,Veria,Makedonikos Neapolis,1,2,A
+2023-01-06,Panserraikos,Anagennisi Karditsas,2,0,H
+2023-01-07,Olympiakos Piraeus II,Kifisia,0,3,A
+2023-01-07,Episkopi,Kallithea,0,3,A
+2023-01-07,Kalamata,PAO Rouf,3,0,H
+2023-01-07,Panathinaikos II,Apollon Pontou,0,0,D
+2023-01-08,Apollon Smirnis,Egaleo,0,0,D
+2023-01-08,Kissamikos,Proodeftiki,2,0,H
+2023-01-08,Apollon Larissa FC,Niki Volos,1,4,A
+2023-01-08,Panachaiki FC,OF Ierapetra,2,0,H
+2023-01-08,Thesprotos,PAOK II,0,1,A
+2023-01-08,Almopos,Iraklis Larissa,0,0,D
+2023-01-08,Makedonikos Neapolis,Larisa,1,3,A
+2023-01-09,Iraklis 1908,Diagoras,2,1,H
+2023-01-13,AEK Athens II,Olympiakos Piraeus II,1,2,A
+2023-01-14,Kifisia,Panachaiki FC,3,0,H
+2023-01-14,Anagennisi Karditsas,Panathinaikos II,0,2,A
+2023-01-15,Larisa,Veria,1,0,H
+2023-01-15,Niki Volos,Thesprotos,2,0,H
+2023-01-15,OF Ierapetra,Kissamikos,2,0,H
+2023-01-15,Diagoras,Panserraikos,0,1,A
+2023-01-15,Egaleo,Ilioupoli,1,1,D
+2023-01-15,Iraklis Larissa,Iraklis 1908,0,3,A
+2023-01-15,PAO Rouf,Apollon Smirnis,1,4,A
+2023-01-15,PAOK II,Almopos,0,1,A
+2023-01-16,Apollon Pontou,Makedonikos Neapolis,3,1,H
+2023-01-16,Kallithea,Kalamata,2,1,H
+2023-01-17,Proodeftiki,Episkopi,1,0,H
+2023-01-20,Makedonikos Neapolis,Anagennisi Karditsas,0,0,D
+2023-01-21,Iraklis 1908,PAOK II,1,0,H
+2023-01-21,Panachaiki FC,AEK Athens II,4,0,H
+2023-01-21,Kalamata,Proodeftiki,1,1,D
+2023-01-22,Veria,Apollon Pontou,2,0,H
+2023-01-22,Kissamikos,Kifisia,0,0,D
+2023-01-22,Panserraikos,Iraklis Larissa,4,0,H
+2023-01-22,Episkopi,OF Ierapetra,0,3,A
+2023-01-22,Almopos,Niki Volos,2,2,D
+2023-01-22,Ilioupoli,PAO Rouf,3,1,H
+2023-01-22,Panathinaikos II,Diagoras,4,2,H
+2023-01-23,Thesprotos,Apollon Larissa FC,6,0,H
+2023-01-23,Apollon Smirnis,Kallithea,1,1,D
+2023-01-24,Olympiakos Piraeus II,Irodotos,4,0,H
+2023-01-27,AEK Athens II,Kissamikos,0,1,A
+2023-01-28,PAOK II,Panserraikos,0,1,A
+2023-01-28,Iraklis Larissa,Panathinaikos II,1,0,H
+2023-01-29,Anagennisi Karditsas,Veria,1,0,H
+2023-01-29,Apollon Larissa FC,Almopos,0,0,D
+2023-01-29,Apollon Pontou,Larisa,0,3,A
+2023-01-29,Irodotos,Panachaiki FC,0,2,A
+2023-01-29,Kifisia,Episkopi,6,0,H
+2023-01-29,Niki Volos,Iraklis 1908,1,0,H
+2023-01-29,OF Ierapetra,Kalamata,0,0,D
+2023-01-29,Diagoras,Makedonikos Neapolis,0,0,D
+2023-01-29,Proodeftiki,Apollon Smirnis,0,3,A
+2023-01-30,PAO Rouf,Egaleo,1,3,A
+2023-01-30,Kallithea,Ilioupoli,3,0,H
+2023-02-18,Apollon Larissa FC,Panathinaikos II,0,3,A
+2023-03-10,Panathinaikos II,PAOK II,1,4,A
+2023-03-10,Kalamata,Kifisia,1,2,A
+2023-03-11,Larisa,Anagennisi Karditsas,0,1,A
+2023-03-11,Panachaiki FC,Olympiakos Piraeus II,2,1,H
+2023-03-11,Episkopi,AEK Athens II,1,0,H
+2023-03-12,Veria,Diagoras,0,2,A
+2023-03-12,Kissamikos,Irodotos,0,0,D
+2023-03-12,Egaleo,Kallithea,1,1,D
+2023-03-12,Almopos,Thesprotos,1,1,D
+2023-03-12,Makedonikos Neapolis,Iraklis Larissa,2,3,A
+2023-03-12,Ilioupoli,Proodeftiki,1,1,D
+2023-03-12,Iraklis 1908,Apollon Larissa FC,6,0,H
+2023-03-13,Apollon Smirnis,OF Ierapetra,1,1,D
+2023-03-13,Panserraikos,Niki Volos,2,0,H
+2023-03-17,AEK Athens II,Kalamata,0,0,D
+2023-03-18,PAOK II,Makedonikos Neapolis,3,3,D
+2023-03-18,Niki Volos,Panathinaikos II,0,0,D
+2023-03-18,Iraklis Larissa,Veria,2,1,H
+2023-03-18,Olympiakos Piraeus II,Kissamikos,2,0,H
+2023-03-19,Anagennisi Karditsas,Apollon Pontou,2,0,H
+2023-03-19,Kallithea,PAO Rouf,3,1,H
+2023-03-19,Apollon Larissa FC,Panserraikos,0,3,A
+2023-03-19,Irodotos,Episkopi,0,1,A
+2023-03-19,OF Ierapetra,Ilioupoli,1,1,D
+2023-03-19,Thesprotos,Iraklis 1908,1,4,A
+2023-03-19,Diagoras,Larisa,1,0,H
+2023-03-19,Proodeftiki,Egaleo,0,2,A
+2023-03-20,Kifisia,Apollon Smirnis,2,3,A
+2023-03-24,Proodeftiki,PAO Rouf,2,1,H
+2023-03-24,Almopos,Iraklis 1908,2,0,H
+2023-03-25,AEK Athens II,Apollon Smirnis,0,2,A
+2023-03-26,Panachaiki FC,Kissamikos,0,0,D
+2023-03-26,Irodotos,Kalamata,1,2,A
+2023-03-26,Niki Volos,Makedonikos Neapolis,2,0,H
+2023-03-26,OF Ierapetra,Egaleo,0,0,D
+2023-03-26,Thesprotos,Panserraikos,0,2,A
+2023-03-26,Diagoras,Apollon Pontou,0,1,A
+2023-03-26,Iraklis Larissa,Larisa,0,3,A
+2023-03-27,Kifisia,Ilioupoli,2,0,H
+2023-03-29,Irodotos,AEK Athens II,0,4,A
+2023-03-31,Kallithea,Proodeftiki,1,0,H
+2023-03-31,Larisa,PAOK II,3,2,H
+2023-04-01,Panserraikos,Almopos,2,0,H
+2023-04-01,Kalamata,Olympiakos Piraeus II,4,0,H
+2023-04-01,Ilioupoli,AEK Athens II,3,1,H
+2023-04-01,Panathinaikos II,Thesprotos,1,1,D
+2023-04-02,Apollon Smirnis,Irodotos,5,2,H
+2023-04-02,Veria,Niki Volos,0,2,A
+2023-04-02,Apollon Pontou,Iraklis Larissa,1,0,H
+2023-04-02,Episkopi,Panachaiki FC,0,0,D
+2023-04-02,PAO Rouf,OF Ierapetra,1,1,D
+2023-04-03,Anagennisi Karditsas,Diagoras,4,1,H
+2023-04-03,Egaleo,Kifisia,0,3,A
+2023-04-04,Thesprotos,Makedonikos Neapolis,1,1,D
+2023-04-04,Almopos,Panathinaikos II,0,0,D
+2023-04-05,Kissamikos,Episkopi,3,2,H
+2023-04-05,Panachaiki FC,Kalamata,0,2,A
+2023-04-05,Irodotos,Ilioupoli,0,2,A
+2023-04-05,OF Ierapetra,Kallithea,0,1,A
+2023-04-05,PAOK II,Apollon Pontou,1,1,D
+2023-04-05,Iraklis 1908,Panserraikos,2,0,H
+2023-04-05,Olympiakos Piraeus II,Apollon Smirnis,0,0,D
+2023-04-06,Kifisia,PAO Rouf,4,1,H
+2023-04-06,Iraklis Larissa,Anagennisi Karditsas,0,2,A
+2023-04-06,AEK Athens II,Egaleo,3,1,H
+2023-04-07,Niki Volos,Larisa,1,2,A
+2023-04-07,Makedonikos Neapolis,Almopos,1,0,H
+2023-04-08,Apollon Smirnis,Panachaiki FC,1,0,H
+2023-04-08,Ilioupoli,Olympiakos Piraeus II,1,0,H
+2023-04-09,Kalamata,Kissamikos,1,1,D
+2023-04-09,Veria,Thesprotos,3,0,H
+2023-04-09,Diagoras,Iraklis Larissa,0,0,D
+2023-04-09,Proodeftiki,OF Ierapetra,1,2,A
+2023-04-10,Anagennisi Karditsas,PAOK II,1,2,A
+2023-04-10,Apollon Pontou,Niki Volos,2,2,D
+2023-04-10,PAO Rouf,AEK Athens II,1,1,D
+2023-04-10,Panathinaikos II,Iraklis 1908,1,1,D
+2023-04-10,Kallithea,Kifisia,3,3,D
+2023-04-12,Olympiakos Piraeus II,Episkopi,3,0,H
+2023-04-13,PAOK II,Veria,1,1,D
+2023-04-18,Panachaiki FC,Ilioupoli,2,2,D
+2023-04-18,Olympiakos Piraeus II,Egaleo,2,1,H
+2023-04-18,PAOK II,Diagoras,3,3,D
+2023-04-19,Kissamikos,Apollon Smirnis,2,0,H
+2023-04-19,Episkopi,Kalamata,1,2,A
+2023-04-19,Kifisia,Proodeftiki,1,1,D
+2023-04-19,Niki Volos,Anagennisi Karditsas,1,1,D
+2023-04-19,Thesprotos,Larisa,0,2,A
+2023-04-19,Almopos,Veria,2,0,H
+2023-04-19,Iraklis 1908,Makedonikos Neapolis,0,0,D
+2023-04-19,AEK Athens II,Kallithea,1,3,A
+2023-04-19,Panserraikos,Panathinaikos II,2,0,H
+2023-04-21,PAO Rouf,Olympiakos Piraeus II,1,2,A
+2023-04-21,Egaleo,Panachaiki FC,0,2,A
+2023-04-22,Veria,Iraklis 1908,1,2,A
+2023-04-22,Iraklis Larissa,PAOK II,1,4,A
+2023-04-22,Proodeftiki,AEK Athens II,0,0,D
+2023-04-23,Apollon Smirnis,Episkopi,3,1,H
+2023-04-23,Larisa,Almopos,2,0,H
+2023-04-23,Apollon Pontou,Thesprotos,0,1,A
+2023-04-23,Diagoras,Niki Volos,1,2,A
+2023-04-24,OF Ierapetra,Kifisia,0,1,A
+2023-04-24,Makedonikos Neapolis,Panserraikos,0,1,A
+2023-04-24,Ilioupoli,Kissamikos,0,0,D
+2023-04-28,Panserraikos,Veria,2,0,H
+2023-04-29,AEK Athens II,OF Ierapetra,0,1,A
+2023-04-29,Kissamikos,Egaleo,2,1,H
+2023-04-29,Panachaiki FC,PAO Rouf,1,0,H
+2023-04-29,Episkopi,Ilioupoli,0,1,A
+2023-04-29,Kalamata,Apollon Smirnis,0,0,D
+2023-04-29,Thesprotos,Anagennisi Karditsas,0,0,D
+2023-04-29,Almopos,Apollon Pontou,0,0,D
+2023-04-29,Olympiakos Piraeus II,Kallithea,5,4,H
+2023-04-29,Iraklis 1908,Larisa,1,1,D
+2023-04-30,Niki Volos,Iraklis Larissa,1,0,H
+2023-05-01,Panathinaikos II,Makedonikos Neapolis,1,1,D
+2023-05-02,Anagennisi Karditsas,Almopos,2,2,D
+2023-05-02,Apollon Pontou,Iraklis 1908,0,5,A
+2023-05-03,Kallithea,Panachaiki FC,3,1,H
+2023-05-03,Egaleo,Episkopi,2,3,A
+2023-05-03,Proodeftiki,Olympiakos Piraeus II,0,1,A
+2023-05-03,Ilioupoli,Kalamata,0,1,A
+2023-05-03,Larisa,Panserraikos,0,0,D
+2023-05-03,PAO Rouf,Kissamikos,0,3,A
+2023-05-04,Veria,Panathinaikos II,1,1,D
+2023-05-04,Kifisia,AEK Athens II,3,0,H
+2023-05-04,PAOK II,Niki Volos,3,1,H
+2023-05-04,Diagoras,Thesprotos,2,3,A
+2023-05-05,Iraklis 1908,Anagennisi Karditsas,1,1,D
+2023-05-06,Panserraikos,Apollon Pontou,3,0,H
+2023-05-06,Olympiakos Piraeus II,OF Ierapetra,3,2,H
+2023-05-07,Apollon Smirnis,Ilioupoli,2,4,A
+2023-05-07,Panachaiki FC,Proodeftiki,0,1,A
+2023-05-08,Kissamikos,Kallithea,0,0,D
+2023-05-08,Episkopi,PAO Rouf,2,3,A
+2023-05-08,Kalamata,Egaleo,0,2,A
+2023-05-08,Thesprotos,Iraklis Larissa,0,0,D
+2023-05-08,Almopos,Diagoras,0,0,D
+2023-05-08,Makedonikos Neapolis,Veria,0,1,A
+2023-05-08,Panathinaikos II,Larisa,2,1,H
+2023-05-12,Egaleo,Apollon Smirnis,0,0,D
+2023-05-13,Anagennisi Karditsas,Panserraikos,0,0,D
+2023-05-13,Kallithea,Episkopi,2,0,H
+2023-05-13,Apollon Pontou,Panathinaikos II,2,1,H
+2023-05-13,PAO Rouf,Kalamata,0,1,A
+2023-05-13,PAOK II,Thesprotos,2,1,H
+2023-05-14,Proodeftiki,Kissamikos,1,2,A
+2023-05-14,Larisa,Makedonikos Neapolis,2,0,H
+2023-05-14,Iraklis Larissa,Almopos,0,0,D
+2023-05-15,OF Ierapetra,Panachaiki FC,2,1,H
+2023-05-15,Kifisia,Olympiakos Piraeus II,0,0,D
+2023-05-15,Diagoras,Iraklis 1908,2,2,D
+2023-05-19,Veria,Larisa,1,3,A
+2023-05-19,Apollon Smirnis,PAO Rouf,1,0,H
+2023-05-19,Kissamikos,OF Ierapetra,1,1,D
+2023-05-19,Episkopi,Proodeftiki,0,3,A
+2023-05-19,Kalamata,Kallithea,0,1,A
+2023-05-19,Thesprotos,Niki Volos,0,1,A
+2023-05-19,Almopos,PAOK II,0,0,D
+2023-05-19,Makedonikos Neapolis,Apollon Pontou,1,2,A
+2023-05-19,Ilioupoli,Egaleo,2,3,A
+2023-05-19,Iraklis 1908,Iraklis Larissa,4,1,H
+2023-05-19,Panathinaikos II,Anagennisi Karditsas,2,2,D
+2023-05-22,Panachaiki FC,Kifisia,1,2,A
+2023-05-22,Panserraikos,Diagoras,3,1,H
+2023-05-22,Olympiakos Piraeus II,AEK Athens II,1,1,D
+2023-05-26,PAOK II,Iraklis 1908,0,3,A
+2023-05-27,Kallithea,Apollon Smirnis,3,0,H
+2023-05-27,Diagoras,Panathinaikos II,4,1,H
+2023-05-28,Anagennisi Karditsas,Makedonikos Neapolis,2,1,H
+2023-05-28,Niki Volos,Almopos,0,0,D
+2023-05-28,OF Ierapetra,Episkopi,2,0,H
+2023-05-28,Iraklis Larissa,Panserraikos,2,0,H
+2023-05-28,Proodeftiki,Kalamata,1,2,A
+2023-05-28,PAO Rouf,Ilioupoli,2,2,D
+2023-05-28,AEK Athens II,Panachaiki FC,4,1,H
+2023-05-29,Kifisia,Kissamikos,0,3,A
+2023-05-29,Apollon Pontou,Veria,0,0,D
+2023-05-31,Panserraikos,PAOK II,0,0,D
+2023-06-02,Kissamikos,AEK Athens II,1,1,D
+2023-06-02,Kalamata,OF Ierapetra,3,0,H
+2023-06-03,Iraklis 1908,Niki Volos,1,1,D
+2023-06-03,Panathinaikos II,Iraklis Larissa,3,1,H
+2023-06-03,Apollon Smirnis,Proodeftiki,3,0,H
+2023-06-04,Larisa,Apollon Pontou,1,0,H
+2023-06-04,Episkopi,Kifisia,1,5,A
+2023-06-04,Egaleo,PAO Rouf,2,1,H
+2023-06-04,Ilioupoli,Kallithea,1,0,H
+2023-06-04,Veria,Anagennisi Karditsas,1,0,H
+2023-06-05,Makedonikos Neapolis,Diagoras,1,0,H
+2023-06-10,Anagennisi Karditsas,Larisa,2,2,D
+2023-06-10,Niki Volos,Panserraikos,3,0,H
+2023-06-10,Thesprotos,Almopos,0,5,A
+2023-06-10,Diagoras,Veria,1,0,H
+2023-06-10,Iraklis Larissa,Makedonikos Neapolis,0,0,D
+2023-06-10,PAOK II,Panathinaikos II,3,1,H
+2023-06-11,Kallithea,Egaleo,2,0,H
+2023-06-11,Kifisia,Kalamata,1,1,D
+2023-06-11,OF Ierapetra,Apollon Smirnis,0,1,A
+2023-06-11,Proodeftiki,Ilioupoli,3,2,H
+2023-06-11,AEK Athens II,Episkopi,0,0,D
+2023-06-11,Olympiakos Piraeus II,Panachaiki FC,4,2,H
+2023-06-17,Larisa,Diagoras,5,0,H
+2023-06-17,Veria,Iraklis Larissa,3,0,H
+2023-06-17,Apollon Pontou,Anagennisi Karditsas,1,0,H
+2023-06-17,Makedonikos Neapolis,PAOK II,3,1,H
+2023-06-17,Iraklis 1908,Thesprotos,5,1,H
+2023-06-17,Panathinaikos II,Niki Volos,0,2,A
+2023-06-18,Apollon Smirnis,Kifisia,0,0,D
+2023-06-18,Kissamikos,Olympiakos Piraeus II,4,2,H
+2023-06-18,Kalamata,AEK Athens II,0,1,A
+2023-06-18,Egaleo,Proodeftiki,1,1,D
+2023-06-18,PAO Rouf,Kallithea,1,2,A
+2023-06-18,Ilioupoli,OF Ierapetra,2,3,A

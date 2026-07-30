@@ -1,0 +1,189 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2019-07-28,Vorskla Poltava,Zorya Luhansk,0,1,A
+2019-07-30,Desna,Lviv,1,2,A
+2019-07-30,Kolos Kovalivka,FC Mariupol,2,1,H
+2019-07-31,Oleksandria,Shakhtar Donetsk,1,3,A
+2019-07-31,Dnipro-1,Olimpik Donetsk,2,0,H
+2019-07-31,Karpaty,Dynamo Kyiv,0,2,A
+2019-08-03,FC Mariupol,Oleksandria,2,1,H
+2019-08-03,Desna,Vorskla Poltava,2,0,H
+2019-08-03,Lviv,Dynamo Kyiv,0,3,A
+2019-08-04,Olimpik Donetsk,Kolos Kovalivka,0,1,A
+2019-08-04,Shakhtar Donetsk,Karpaty,3,0,H
+2019-08-04,Zorya Luhansk,Dnipro-1,1,1,D
+2019-08-10,Dynamo Kyiv,Shakhtar Donetsk,1,2,A
+2019-08-10,Vorskla Poltava,Lviv,3,2,H
+2019-08-10,Oleksandria,Olimpik Donetsk,2,1,H
+2019-08-11,Dnipro-1,Desna,0,1,A
+2019-08-11,Kolos Kovalivka,Zorya Luhansk,1,3,A
+2019-08-11,Karpaty,FC Mariupol,1,1,D
+2019-08-17,Vorskla Poltava,Dnipro-1,1,1,D
+2019-08-17,Desna,Kolos Kovalivka,0,0,D
+2019-08-18,Olimpik Donetsk,Karpaty,1,3,A
+2019-08-18,Zorya Luhansk,Oleksandria,1,2,A
+2019-08-18,Lviv,Shakhtar Donetsk,0,2,A
+2019-08-24,Kolos Kovalivka,Vorskla Poltava,0,3,A
+2019-08-24,Oleksandria,Desna,0,3,A
+2019-08-24,Dynamo Kyiv,Olimpik Donetsk,1,1,D
+2019-08-25,Karpaty,Zorya Luhansk,0,1,A
+2019-08-25,Shakhtar Donetsk,FC Mariupol,5,1,H
+2019-08-26,Dnipro-1,Lviv,2,3,A
+2019-08-30,Desna,Karpaty,0,0,D
+2019-08-31,Vorskla Poltava,Oleksandria,0,1,A
+2019-08-31,Dnipro-1,Kolos Kovalivka,2,1,H
+2019-08-31,Lviv,FC Mariupol,0,1,A
+2019-09-01,Olimpik Donetsk,Shakhtar Donetsk,0,4,A
+2019-09-01,Zorya Luhansk,Dynamo Kyiv,2,2,D
+2019-09-14,Oleksandria,Dnipro-1,2,0,H
+2019-09-14,Shakhtar Donetsk,Zorya Luhansk,4,3,H
+2019-09-14,Karpaty,Vorskla Poltava,2,1,H
+2019-09-15,FC Mariupol,Olimpik Donetsk,1,1,D
+2019-09-15,Dynamo Kyiv,Desna,1,2,A
+2019-09-15,Kolos Kovalivka,Lviv,1,0,H
+2019-09-20,Dnipro-1,Karpaty,2,0,H
+2019-09-21,Lviv,Olimpik Donetsk,0,1,A
+2019-09-21,Zorya Luhansk,FC Mariupol,0,0,D
+2019-09-22,Desna,Shakhtar Donetsk,0,1,A
+2019-09-22,Vorskla Poltava,Dynamo Kyiv,0,5,A
+2019-09-22,Kolos Kovalivka,Oleksandria,1,1,D
+2019-09-25,FC Mariupol,Dynamo Kyiv,0,1,A
+2019-09-27,Shakhtar Donetsk,Vorskla Poltava,4,0,H
+2019-09-28,Karpaty,Kolos Kovalivka,1,2,A
+2019-09-28,Oleksandria,Lviv,2,0,H
+2019-09-29,FC Mariupol,Desna,0,4,A
+2019-09-29,Dynamo Kyiv,Dnipro-1,2,0,H
+2019-09-29,Olimpik Donetsk,Zorya Luhansk,0,5,A
+2019-10-05,Vorskla Poltava,FC Mariupol,1,1,D
+2019-10-05,Desna,Olimpik Donetsk,1,0,H
+2019-10-05,Lviv,Zorya Luhansk,0,0,D
+2019-10-06,Dnipro-1,Shakhtar Donetsk,0,2,A
+2019-10-06,Kolos Kovalivka,Dynamo Kyiv,0,4,A
+2019-10-06,Oleksandria,Karpaty,2,1,H
+2019-10-18,Shakhtar Donetsk,Kolos Kovalivka,6,0,H
+2019-10-19,Karpaty,Lviv,0,0,D
+2019-10-19,Zorya Luhansk,Desna,2,1,H
+2019-10-20,FC Mariupol,Dnipro-1,1,0,H
+2019-10-20,Dynamo Kyiv,Oleksandria,1,0,H
+2019-10-20,Olimpik Donetsk,Vorskla Poltava,2,0,H
+2019-10-26,FC Mariupol,Kolos Kovalivka,2,0,H
+2019-10-26,Zorya Luhansk,Vorskla Poltava,4,0,H
+2019-10-26,Olimpik Donetsk,Dnipro-1,3,2,H
+2019-10-27,Lviv,Desna,1,4,A
+2019-10-27,Shakhtar Donetsk,Oleksandria,0,0,D
+2019-10-27,Dynamo Kyiv,Karpaty,1,1,D
+2019-11-02,Vorskla Poltava,Desna,0,1,A
+2019-11-02,Karpaty,Shakhtar Donetsk,0,3,A
+2019-11-03,Oleksandria,FC Mariupol,3,1,H
+2019-11-03,Dnipro-1,Zorya Luhansk,1,4,A
+2019-11-03,Dynamo Kyiv,Lviv,4,0,H
+2019-11-03,Kolos Kovalivka,Olimpik Donetsk,1,2,A
+2019-11-09,FC Mariupol,Karpaty,2,2,D
+2019-11-09,Desna,Dnipro-1,1,1,D
+2019-11-09,Lviv,Vorskla Poltava,2,0,H
+2019-11-10,Zorya Luhansk,Kolos Kovalivka,2,0,H
+2019-11-10,Shakhtar Donetsk,Dynamo Kyiv,1,0,H
+2019-11-10,Olimpik Donetsk,Oleksandria,0,0,D
+2019-11-22,Shakhtar Donetsk,Lviv,4,1,H
+2019-11-23,Oleksandria,Zorya Luhansk,1,0,H
+2019-11-23,Dnipro-1,Vorskla Poltava,1,0,H
+2019-11-24,Karpaty,Olimpik Donetsk,1,2,A
+2019-11-24,Kolos Kovalivka,Desna,2,0,H
+2019-11-24,Dynamo Kyiv,FC Mariupol,3,0,H
+2019-11-30,Zorya Luhansk,Karpaty,2,0,H
+2019-11-30,Lviv,Dnipro-1,0,2,A
+2019-11-30,Vorskla Poltava,Kolos Kovalivka,1,0,H
+2019-12-01,FC Mariupol,Shakhtar Donetsk,1,1,D
+2019-12-01,Desna,Oleksandria,2,0,H
+2019-12-01,Olimpik Donetsk,Dynamo Kyiv,1,3,A
+2019-12-06,Shakhtar Donetsk,Olimpik Donetsk,3,0,H
+2019-12-07,Oleksandria,Vorskla Poltava,3,0,H
+2019-12-07,Kolos Kovalivka,Dnipro-1,4,0,H
+2019-12-08,FC Mariupol,Lviv,0,0,D
+2019-12-08,Karpaty,Desna,2,6,A
+2019-12-08,Dynamo Kyiv,Zorya Luhansk,1,2,A
+2019-12-14,Lviv,Kolos Kovalivka,3,2,H
+2019-12-14,Zorya Luhansk,Shakhtar Donetsk,1,2,A
+2019-12-14,Olimpik Donetsk,FC Mariupol,1,2,A
+2019-12-15,Vorskla Poltava,Karpaty,2,1,H
+2019-12-15,Desna,Dynamo Kyiv,0,1,A
+2019-12-15,Dnipro-1,Oleksandria,1,2,A
+2020-02-22,FC Mariupol,Zorya Luhansk,1,2,A
+2020-02-22,Dynamo Kyiv,Vorskla Poltava,2,1,H
+2020-02-23,Karpaty,Dnipro-1,1,1,D
+2020-02-23,Oleksandria,Kolos Kovalivka,1,2,A
+2020-02-23,Shakhtar Donetsk,Desna,1,0,H
+2020-02-23,Olimpik Donetsk,Lviv,0,1,A
+2020-02-28,Dnipro-1,Dynamo Kyiv,3,1,H
+2020-02-29,Desna,FC Mariupol,4,0,H
+2020-02-29,Lviv,Oleksandria,1,1,D
+2020-02-29,Kolos Kovalivka,Karpaty,2,1,H
+2020-03-01,Zorya Luhansk,Olimpik Donetsk,1,0,H
+2020-03-01,Vorskla Poltava,Shakhtar Donetsk,1,0,H
+2020-03-03,Dynamo Kyiv,Kolos Kovalivka,2,0,H
+2020-03-04,FC Mariupol,Vorskla Poltava,3,0,H
+2020-03-04,Zorya Luhansk,Lviv,2,0,H
+2020-03-04,Olimpik Donetsk,Desna,1,2,A
+2020-03-04,Shakhtar Donetsk,Dnipro-1,4,1,H
+2020-03-04,Karpaty,Oleksandria,0,4,A
+2020-03-07,Vorskla Poltava,Olimpik Donetsk,1,0,H
+2020-03-07,Desna,Zorya Luhansk,1,0,H
+2020-03-07,Oleksandria,Dynamo Kyiv,1,3,A
+2020-03-08,Lviv,Karpaty,0,0,D
+2020-03-08,Dnipro-1,FC Mariupol,3,0,H
+2020-03-08,Kolos Kovalivka,Shakhtar Donetsk,3,4,A
+2020-03-14,Lviv,Karpaty,1,1,D
+2020-03-14,Oleksandria,Kolos Kovalivka,4,2,H
+2020-03-14,Dnipro-1,FC Mariupol,2,0,H
+2020-03-15,Zorya Luhansk,Shakhtar Donetsk,1,0,H
+2020-03-15,Dynamo Kyiv,Desna,1,1,D
+2020-03-15,Olimpik Donetsk,Vorskla Poltava,1,1,D
+2020-05-30,Kolos Kovalivka,Desna,0,2,A
+2020-05-30,Oleksandria,Zorya Luhansk,1,0,H
+2020-05-30,Dnipro-1,Olimpik Donetsk,3,1,H
+2020-05-31,Vorskla Poltava,Lviv,1,1,D
+2020-05-31,Shakhtar Donetsk,Dynamo Kyiv,3,1,H
+2020-06-06,Shakhtar Donetsk,Desna,3,2,H
+2020-06-06,Zorya Luhansk,Kolos Kovalivka,1,0,H
+2020-06-07,Olimpik Donetsk,FC Mariupol,2,2,D
+2020-06-07,Dynamo Kyiv,Oleksandria,5,1,H
+2020-06-07,Lviv,Dnipro-1,1,2,A
+2020-06-13,FC Mariupol,Vorskla Poltava,1,1,D
+2020-06-13,Zorya Luhansk,Dynamo Kyiv,1,3,A
+2020-06-13,Olimpik Donetsk,Lviv,2,0,H
+2020-06-14,Kolos Kovalivka,Shakhtar Donetsk,0,1,A
+2020-06-14,Oleksandria,Desna,1,5,A
+2020-06-19,FC Mariupol,Lviv,3,0,H
+2020-06-19,Vorskla Poltava,Dnipro-1,2,0,H
+2020-06-20,Shakhtar Donetsk,Oleksandria,3,2,H
+2020-06-21,Desna,Zorya Luhansk,1,2,A
+2020-06-22,Dynamo Kyiv,Kolos Kovalivka,2,1,H
+2020-06-27,Karpaty,Lviv,1,1,D
+2020-06-27,Kolos Kovalivka,Oleksandria,2,1,H
+2020-06-27,Shakhtar Donetsk,Zorya Luhansk,0,0,D
+2020-06-28,FC Mariupol,Dnipro-1,2,1,H
+2020-06-28,Vorskla Poltava,Olimpik Donetsk,0,0,D
+2020-06-28,Desna,Dynamo Kyiv,3,2,H
+2020-07-03,Lviv,Vorskla Poltava,2,2,D
+2020-07-04,Dynamo Kyiv,Shakhtar Donetsk,2,3,A
+2020-07-05,Desna,Kolos Kovalivka,5,1,H
+2020-07-05,Zorya Luhansk,Oleksandria,2,2,D
+2020-07-05,Olimpik Donetsk,Dnipro-1,0,2,A
+2020-07-11,Kolos Kovalivka,Zorya Luhansk,0,2,A
+2020-07-11,Dnipro-1,Lviv,3,2,H
+2020-07-12,FC Mariupol,Olimpik Donetsk,1,4,A
+2020-07-12,Desna,Shakhtar Donetsk,2,4,A
+2020-07-12,Oleksandria,Dynamo Kyiv,2,2,D
+2020-07-15,Shakhtar Donetsk,Kolos Kovalivka,2,0,H
+2020-07-16,Vorskla Poltava,FC Mariupol,1,2,A
+2020-07-16,Lviv,Olimpik Donetsk,1,5,A
+2020-07-16,Dynamo Kyiv,Zorya Luhansk,3,1,H
+2020-07-16,Desna,Oleksandria,1,3,A
+2020-07-19,Lviv,FC Mariupol,0,2,A
+2020-07-19,Dnipro-1,Vorskla Poltava,3,0,H
+2020-07-19,Zorya Luhansk,Desna,1,1,D
+2020-07-19,Oleksandria,Shakhtar Donetsk,2,2,D
+2020-07-19,Kolos Kovalivka,Dynamo Kyiv,2,0,H
+2020-07-25,Kolos Kovalivka,Dnipro-1,4,1,H
+2020-07-25,Oleksandria,FC Mariupol,1,2,A
+2020-07-29,Kolos Kovalivka,FC Mariupol,1,0,H
+2020-07-19,Olimpik Donetsk,Karpaty,0,0,D

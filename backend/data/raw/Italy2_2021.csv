@@ -1,0 +1,391 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2021-08-20,Frosinone,Parma,2,2,D
+2021-08-21,Pordenone,Perugia,0,1,A
+2021-08-21,Cittadella,Vicenza Virtus,1,0,H
+2021-08-22,Ternana,Brescia,0,2,A
+2021-08-22,Reggina,Monza,0,0,D
+2021-08-22,Crotone,como,2,2,D
+2021-08-22,Benevento,Alessandria,4,3,H
+2021-08-22,Ascoli,Nuova Cosenza,1,0,H
+2021-08-22,Cremonese,Lecce,3,0,H
+2021-08-22,Pisa,Spal,1,0,H
+2021-08-27,Pisa,Alessandria,2,0,H
+2021-08-27,Brescia,Nuova Cosenza,5,1,H
+2021-08-28,Vicenza Virtus,Frosinone,0,2,A
+2021-08-28,Perugia,Ascoli,2,3,A
+2021-08-29,Cittadella,Crotone,4,2,H
+2021-08-29,Spal,Pordenone,5,0,H
+2021-08-29,Parma,Benevento,1,0,H
+2021-08-29,Lecce,como,1,1,D
+2021-08-29,Monza,Cremonese,1,0,H
+2021-08-29,Reggina,Ternana,3,2,H
+2021-09-10,Benevento,Lecce,0,0,D
+2021-09-11,Spal,Monza,1,1,D
+2021-09-11,Frosinone,Perugia,0,0,D
+2021-09-11,Alessandria,Brescia,1,3,A
+2021-09-11,como,Ascoli,0,1,A
+2021-09-11,Ternana,Pisa,1,4,A
+2021-09-11,Crotone,Reggina,1,1,D
+2021-09-12,Nuova Cosenza,Vicenza Virtus,2,1,H
+2021-09-12,Cremonese,Cittadella,2,0,H
+2021-09-12,Pordenone,Parma,0,4,A
+2021-09-17,como,Frosinone,0,2,A
+2021-09-17,Brescia,Crotone,2,2,D
+2021-09-18,Ascoli,Benevento,0,2,A
+2021-09-18,Perugia,Nuova Cosenza,1,1,D
+2021-09-18,Lecce,Alessandria,3,2,H
+2021-09-18,Monza,Ternana,1,1,D
+2021-09-18,Reggina,Spal,2,1,H
+2021-09-18,Vicenza Virtus,Pisa,1,3,A
+2021-09-18,Cittadella,Pordenone,1,0,H
+2021-09-19,Parma,Cremonese,1,2,A
+2021-09-20,Frosinone,Brescia,2,2,D
+2021-09-21,Benevento,Cittadella,4,1,H
+2021-09-21,Alessandria,Ascoli,1,3,A
+2021-09-21,Spal,Vicenza Virtus,3,2,H
+2021-09-21,Crotone,Lecce,0,3,A
+2021-09-21,Pisa,Monza,2,1,H
+2021-09-21,Pordenone,Reggina,1,1,D
+2021-09-21,Nuova Cosenza,como,2,0,H
+2021-09-22,Ternana,Parma,3,1,H
+2021-09-22,Cremonese,Perugia,0,3,A
+2021-09-25,Ascoli,Brescia,2,3,A
+2021-09-25,Cittadella,Lecce,1,2,A
+2021-09-25,como,Benevento,1,1,D
+2021-09-25,Monza,Pordenone,3,1,H
+2021-09-25,Reggina,Frosinone,0,0,D
+2021-09-25,Nuova Cosenza,Crotone,1,0,H
+2021-09-26,Perugia,Alessandria,1,1,D
+2021-09-26,Parma,Pisa,1,1,D
+2021-09-26,Ternana,Spal,1,0,H
+2021-09-26,Vicenza Virtus,Cremonese,0,1,A
+2021-10-01,Lecce,Monza,3,0,H
+2021-10-02,Crotone,Ascoli,2,2,D
+2021-10-02,Frosinone,Cittadella,0,1,A
+2021-10-02,Cremonese,Ternana,2,0,H
+2021-10-02,Alessandria,Nuova Cosenza,1,0,H
+2021-10-02,Pisa,Reggina,2,0,H
+2021-10-02,Spal,Parma,2,2,D
+2021-10-03,Brescia,como,2,4,A
+2021-10-03,Pordenone,Vicenza Virtus,2,4,A
+2021-10-03,Benevento,Perugia,0,0,D
+2021-10-16,Crotone,Pisa,2,1,H
+2021-10-16,Ascoli,Lecce,1,1,D
+2021-10-16,Pordenone,Ternana,1,3,A
+2021-10-16,Vicenza Virtus,Reggina,0,1,A
+2021-10-16,Perugia,Brescia,1,0,H
+2021-10-16,Nuova Cosenza,Frosinone,1,1,D
+2021-10-16,como,Alessandria,2,0,H
+2021-10-17,Cremonese,Benevento,1,1,D
+2021-10-17,Parma,Monza,0,0,D
+2021-10-17,Cittadella,Spal,0,0,D
+2021-10-22,Alessandria,Crotone,1,0,H
+2021-10-23,Benevento,Nuova Cosenza,3,0,H
+2021-10-23,Ternana,Vicenza Virtus,5,0,H
+2021-10-23,Lecce,Perugia,0,0,D
+2021-10-23,Monza,Cittadella,1,0,H
+2021-10-23,Frosinone,Ascoli,2,1,H
+2021-10-23,Brescia,Cremonese,1,0,H
+2021-10-24,Pisa,Pordenone,1,1,D
+2021-10-24,Reggina,Parma,2,1,H
+2021-10-24,Spal,como,1,1,D
+2021-10-27,Nuova Cosenza,Ternana,3,1,H
+2021-10-27,Vicenza Virtus,Monza,1,1,D
+2021-10-28,Ascoli,Spal,0,1,A
+2021-10-28,Brescia,Lecce,1,1,D
+2021-10-28,Alessandria,Frosinone,1,1,D
+2021-10-28,Crotone,Benevento,0,2,A
+2021-10-28,Cittadella,Parma,1,2,A
+2021-10-28,Cremonese,Pisa,1,1,D
+2021-10-28,Perugia,Reggina,0,2,A
+2021-10-28,como,Pordenone,1,0,H
+2021-11-01,Benevento,Brescia,0,1,A
+2021-11-01,Spal,Perugia,1,2,A
+2021-11-01,Frosinone,Crotone,2,1,H
+2021-11-01,Ternana,como,1,2,A
+2021-11-01,Lecce,Nuova Cosenza,3,1,H
+2021-11-01,Monza,Alessandria,1,0,H
+2021-11-01,Reggina,Cittadella,0,1,A
+2021-11-01,Parma,Vicenza Virtus,1,0,H
+2021-11-01,Pisa,Ascoli,1,1,D
+2021-11-01,Pordenone,Cremonese,2,2,D
+2021-11-05,Nuova Cosenza,Reggina,0,1,A
+2021-11-06,Ascoli,Vicenza Virtus,2,1,H
+2021-11-06,Cremonese,Spal,1,1,D
+2021-11-06,Alessandria,Ternana,0,2,A
+2021-11-06,como,Perugia,4,1,H
+2021-11-06,Brescia,Pordenone,1,0,H
+2021-11-06,Benevento,Frosinone,1,4,A
+2021-11-07,Lecce,Parma,4,0,H
+2021-11-07,Crotone,Monza,1,1,D
+2021-11-07,Cittadella,Pisa,2,0,H
+2021-11-20,Spal,Alessandria,2,3,A
+2021-11-20,Frosinone,Lecce,0,0,D
+2021-11-20,Ternana,Cittadella,1,1,D
+2021-11-20,Pordenone,Ascoli,0,1,A
+2021-11-20,Perugia,Crotone,2,0,H
+2021-11-20,Vicenza Virtus,Brescia,2,3,A
+2021-11-21,Parma,Nuova Cosenza,1,1,D
+2021-11-21,Reggina,Cremonese,1,2,A
+2021-11-21,Monza,como,3,2,H
+2021-11-21,Pisa,Benevento,1,0,H
+2021-11-26,Crotone,Vicenza Virtus,0,1,A
+2021-11-26,Lecce,Ternana,3,3,D
+2021-11-27,Benevento,Reggina,4,0,H
+2021-11-27,Ascoli,Monza,1,1,D
+2021-11-27,Frosinone,Pordenone,2,2,D
+2021-11-27,Alessandria,Cremonese,1,0,H
+2021-11-27,Nuova Cosenza,Spal,0,1,A
+2021-11-27,Brescia,Pisa,0,1,A
+2021-11-27,Perugia,Cittadella,1,1,D
+2021-11-28,como,Parma,1,1,D
+2021-11-29,Ternana,Crotone,1,0,H
+2021-11-30,Cremonese,Frosinone,1,1,D
+2021-11-30,Pisa,Perugia,1,1,D
+2021-11-30,Spal,Lecce,1,3,A
+2021-11-30,Pordenone,Alessandria,2,0,H
+2021-11-30,Monza,Nuova Cosenza,4,1,H
+2021-11-30,Vicenza Virtus,Benevento,2,3,A
+2021-11-30,Reggina,Ascoli,1,2,A
+2021-12-01,Parma,Brescia,0,1,A
+2021-12-01,Cittadella,como,2,2,D
+2021-12-03,Perugia,Vicenza Virtus,1,0,H
+2021-12-04,Crotone,Spal,1,2,A
+2021-12-04,Benevento,Pordenone,2,1,H
+2021-12-04,Frosinone,Ternana,1,1,D
+2021-12-04,Nuova Cosenza,Cremonese,0,2,A
+2021-12-04,Lecce,Reggina,2,0,H
+2021-12-05,Ascoli,Parma,0,0,D
+2021-12-05,como,Pisa,0,1,A
+2021-12-05,Brescia,Monza,0,2,A
+2021-12-05,Alessandria,Cittadella,0,1,A
+2021-12-10,Cremonese,Crotone,3,2,H
+2021-12-10,Ternana,Benevento,0,2,A
+2021-12-11,Spal,Brescia,0,2,A
+2021-12-11,Cittadella,Ascoli,2,0,H
+2021-12-11,Pordenone,Nuova Cosenza,1,1,D
+2021-12-11,Monza,Frosinone,3,2,H
+2021-12-11,Pisa,Lecce,1,0,H
+2021-12-12,Parma,Perugia,1,1,D
+2021-12-12,Vicenza Virtus,como,0,1,A
+2021-12-12,Reggina,Alessandria,0,4,A
+2021-12-18,Crotone,Pordenone,4,1,H
+2021-12-18,Ascoli,Cremonese,1,4,A
+2021-12-18,como,Reggina,1,1,D
+2021-12-18,Nuova Cosenza,Pisa,0,2,A
+2021-12-18,Frosinone,Spal,4,0,H
+2021-12-19,Brescia,Cittadella,1,1,D
+2021-12-19,Alessandria,Parma,0,2,A
+2021-12-19,Perugia,Ternana,1,1,D
+2022-01-13,Benevento,Monza,3,1,H
+2022-01-14,Ternana,Ascoli,2,4,A
+2022-01-15,Cremonese,como,2,0,H
+2022-01-15,Reggina,Brescia,0,2,A
+2022-01-15,Pisa,Frosinone,1,3,A
+2022-01-16,Spal,Benevento,1,1,D
+2022-01-16,Pordenone,Lecce,0,1,A
+2022-01-16,Monza,Perugia,2,2,D
+2022-01-21,Parma,Frosinone,0,1,A
+2022-01-22,Spal,Pisa,0,0,D
+2022-01-22,Brescia,Ternana,1,1,D
+2022-01-22,Alessandria,Benevento,2,0,H
+2022-01-22,como,Crotone,1,1,D
+2022-01-22,Monza,Reggina,1,0,H
+2022-01-22,Nuova Cosenza,Ascoli,1,3,A
+2022-01-22,Perugia,Pordenone,0,1,A
+2022-01-23,Vicenza Virtus,Cittadella,3,3,D
+2022-01-23,Lecce,Cremonese,2,1,H
+2022-01-26,Lecce,Vicenza Virtus,2,1,H
+2022-01-30,Cittadella,Nuova Cosenza,1,1,D
+2022-01-30,Parma,Crotone,1,1,D
+2022-01-30,Vicenza Virtus,Alessandria,2,1,H
+2022-02-05,Crotone,Cittadella,0,0,D
+2022-02-05,Benevento,Parma,0,0,D
+2022-02-05,Ternana,Reggina,2,0,H
+2022-02-05,Alessandria,Pisa,1,1,D
+2022-02-05,como,Lecce,1,1,D
+2022-02-05,Nuova Cosenza,Brescia,0,0,D
+2022-02-05,Frosinone,Vicenza Virtus,2,0,H
+2022-02-05,Ascoli,Perugia,0,1,A
+2022-02-06,Cremonese,Monza,3,2,H
+2022-02-06,Pordenone,Spal,1,1,D
+2022-02-12,Cittadella,Cremonese,0,2,A
+2022-02-12,Parma,Pordenone,4,1,H
+2022-02-12,Pisa,Ternana,0,0,D
+2022-02-12,Monza,Spal,4,0,H
+2022-02-12,Vicenza Virtus,Nuova Cosenza,0,0,D
+2022-02-12,Perugia,Frosinone,3,0,H
+2022-02-12,Reggina,Crotone,1,0,H
+2022-02-13,Ascoli,como,1,1,D
+2022-02-13,Brescia,Alessandria,1,1,D
+2022-02-13,Lecce,Benevento,1,1,D
+2022-02-15,Spal,Reggina,1,3,A
+2022-02-15,Ternana,Monza,0,1,A
+2022-02-15,Cremonese,Parma,3,1,H
+2022-02-15,Pisa,Vicenza Virtus,2,2,D
+2022-02-15,Pordenone,Cittadella,0,1,A
+2022-02-15,Nuova Cosenza,Perugia,1,2,A
+2022-02-16,Crotone,Brescia,0,1,A
+2022-02-16,Benevento,Ascoli,0,2,A
+2022-02-16,Frosinone,como,1,2,A
+2022-02-16,Alessandria,Lecce,1,1,D
+2022-02-19,Ascoli,Alessandria,3,0,H
+2022-02-19,Parma,Ternana,2,3,A
+2022-02-19,Monza,Pisa,1,2,A
+2022-02-19,Vicenza Virtus,Spal,1,1,D
+2022-02-19,Reggina,Pordenone,2,0,H
+2022-02-19,Perugia,Cremonese,0,0,D
+2022-02-20,Cittadella,Benevento,0,1,A
+2022-02-20,Brescia,Frosinone,2,2,D
+2022-02-20,Lecce,Crotone,3,0,H
+2022-02-20,como,Nuova Cosenza,2,1,H
+2022-02-22,Spal,Ternana,5,1,H
+2022-02-22,Cremonese,Vicenza Virtus,0,0,D
+2022-02-22,Pisa,Parma,0,0,D
+2022-02-22,Pordenone,Monza,1,4,A
+2022-02-22,Alessandria,Perugia,1,2,A
+2022-02-23,Crotone,Nuova Cosenza,3,3,D
+2022-02-23,Benevento,como,5,0,H
+2022-02-23,Frosinone,Reggina,3,0,H
+2022-02-23,Brescia,Ascoli,2,0,H
+2022-02-23,Lecce,Cittadella,1,2,A
+2022-02-26,Ternana,Cremonese,1,2,A
+2022-02-26,Parma,Spal,4,0,H
+2022-02-26,como,Brescia,1,1,D
+2022-02-26,Vicenza Virtus,Pordenone,1,0,H
+2022-02-26,Nuova Cosenza,Alessandria,2,1,H
+2022-02-26,Perugia,Benevento,0,1,A
+2022-02-27,Ascoli,Crotone,2,1,H
+2022-02-27,Cittadella,Frosinone,3,0,H
+2022-02-27,Monza,Lecce,0,1,A
+2022-02-27,Reggina,Pisa,1,0,H
+2022-03-01,Benevento,Cremonese,1,1,D
+2022-03-01,Ternana,Pordenone,1,0,H
+2022-03-01,Brescia,Perugia,2,1,H
+2022-03-01,Alessandria,como,1,1,D
+2022-03-02,Spal,Cittadella,0,0,D
+2022-03-02,Frosinone,Nuova Cosenza,1,0,H
+2022-03-02,Pisa,Crotone,3,2,H
+2022-03-02,Lecce,Ascoli,3,1,H
+2022-03-02,Monza,Parma,1,1,D
+2022-03-02,Reggina,Vicenza Virtus,3,1,H
+2022-03-05,Cittadella,Monza,1,2,A
+2022-03-05,Parma,Reggina,1,1,D
+2022-03-05,Pordenone,Pisa,0,1,A
+2022-03-05,como,Spal,0,2,A
+2022-03-05,Cremonese,Brescia,2,1,H
+2022-03-06,Crotone,Alessandria,0,0,D
+2022-03-06,Ascoli,Frosinone,1,1,D
+2022-03-06,Perugia,Lecce,1,1,D
+2022-03-06,Vicenza Virtus,Ternana,3,1,H
+2022-03-11,Parma,Cittadella,1,1,D
+2022-03-12,Ternana,Nuova Cosenza,2,0,H
+2022-03-12,Lecce,Brescia,1,1,D
+2022-03-12,Reggina,Perugia,0,1,A
+2022-03-12,Spal,Ascoli,1,2,A
+2022-03-12,Benevento,Crotone,3,1,H
+2022-03-12,Frosinone,Alessandria,3,0,H
+2022-03-12,Pordenone,como,1,1,D
+2022-03-12,Monza,Vicenza Virtus,4,0,H
+2022-03-13,Pisa,Cremonese,3,0,H
+2022-03-15,Crotone,Frosinone,2,0,H
+2022-03-15,Cittadella,Reggina,0,0,D
+2022-03-15,Brescia,Benevento,2,2,D
+2022-03-15,como,Ternana,1,1,D
+2022-03-15,Vicenza Virtus,Parma,0,1,A
+2022-03-15,Nuova Cosenza,Lecce,2,2,D
+2022-03-15,Alessandria,Monza,0,3,A
+2022-03-16,Ascoli,Pisa,2,0,H
+2022-03-16,Cremonese,Pordenone,2,1,H
+2022-03-16,Perugia,Spal,1,1,D
+2022-03-19,Ternana,Alessandria,3,0,H
+2022-03-19,Parma,Lecce,0,0,D
+2022-03-19,Monza,Crotone,1,0,H
+2022-03-19,Reggina,Nuova Cosenza,1,0,H
+2022-03-19,Frosinone,Benevento,2,0,H
+2022-03-20,Perugia,como,0,1,A
+2022-03-20,Pisa,Cittadella,1,0,H
+2022-03-20,Vicenza Virtus,Ascoli,2,0,H
+2022-03-20,Spal,Cremonese,0,2,A
+2022-03-20,Pordenone,Brescia,1,1,D
+2022-04-02,Ascoli,Pordenone,1,0,H
+2022-04-02,Cittadella,Ternana,1,2,A
+2022-04-02,Cremonese,Reggina,1,1,D
+2022-04-02,Lecce,Frosinone,1,0,H
+2022-04-02,Alessandria,Spal,2,2,D
+2022-04-02,Nuova Cosenza,Parma,1,3,A
+2022-04-02,Benevento,Pisa,5,1,H
+2022-04-03,Crotone,Perugia,1,1,D
+2022-04-03,Brescia,Vicenza Virtus,2,0,H
+2022-04-03,como,Monza,2,0,H
+2022-04-05,Spal,Nuova Cosenza,2,2,D
+2022-04-05,Ternana,Lecce,1,4,A
+2022-04-05,Cremonese,Alessandria,2,1,H
+2022-04-05,Pordenone,Frosinone,2,0,H
+2022-04-05,Reggina,Benevento,0,3,A
+2022-04-06,Parma,como,4,3,H
+2022-04-06,Cittadella,Perugia,0,0,D
+2022-04-06,Pisa,Brescia,0,0,D
+2022-04-06,Monza,Ascoli,2,0,H
+2022-04-06,Vicenza Virtus,Crotone,1,1,D
+2022-04-09,Lecce,Spal,1,0,H
+2022-04-09,Alessandria,Pordenone,2,0,H
+2022-04-09,como,Cittadella,1,2,A
+2022-04-09,Frosinone,Cremonese,2,1,H
+2022-04-10,Benevento,Vicenza Virtus,1,0,H
+2022-04-10,Crotone,Ternana,1,2,A
+2022-04-10,Ascoli,Reggina,2,0,H
+2022-04-10,Nuova Cosenza,Monza,0,2,A
+2022-04-10,Perugia,Pisa,1,1,D
+2022-04-11,Brescia,Parma,1,0,H
+2022-04-14,Nuova Cosenza,Benevento,1,0,H
+2022-04-18,Spal,Crotone,1,1,D
+2022-04-18,Cremonese,Nuova Cosenza,3,1,H
+2022-04-18,Pordenone,Benevento,1,4,A
+2022-04-18,Vicenza Virtus,Perugia,1,2,A
+2022-04-18,Reggina,Lecce,1,0,H
+2022-04-18,Cittadella,Alessandria,1,2,A
+2022-04-18,Ternana,Frosinone,4,4,D
+2022-04-18,Parma,Ascoli,0,1,A
+2022-04-18,Pisa,como,3,1,H
+2022-04-18,Monza,Brescia,1,1,D
+2022-04-25,Ascoli,Cittadella,0,0,D
+2022-04-25,Crotone,Cremonese,3,1,H
+2022-04-25,Frosinone,Monza,4,1,H
+2022-04-25,Lecce,Pisa,2,0,H
+2022-04-25,Alessandria,Reggina,0,0,D
+2022-04-25,Nuova Cosenza,Pordenone,3,1,H
+2022-04-25,Benevento,Ternana,1,2,A
+2022-04-25,Brescia,Spal,1,1,D
+2022-04-25,como,Vicenza Virtus,0,2,A
+2022-04-25,Perugia,Parma,2,1,H
+2022-04-30,Spal,Frosinone,3,0,H
+2022-04-30,Cittadella,Brescia,1,0,H
+2022-04-30,Ternana,Perugia,1,0,H
+2022-04-30,Cremonese,Ascoli,0,1,A
+2022-04-30,Parma,Alessandria,2,2,D
+2022-04-30,Pisa,Nuova Cosenza,1,1,D
+2022-04-30,Pordenone,Crotone,3,3,D
+2022-04-30,Monza,Benevento,3,0,H
+2022-04-30,Vicenza Virtus,Lecce,2,1,H
+2022-04-30,Reggina,como,1,4,A
+2022-05-06,Crotone,Parma,0,1,A
+2022-05-06,Benevento,Spal,1,2,A
+2022-05-06,Ascoli,Ternana,4,1,H
+2022-05-06,Frosinone,Pisa,1,2,A
+2022-05-06,Brescia,Reggina,3,0,H
+2022-05-06,Perugia,Monza,1,0,H
+2022-05-06,Lecce,Pordenone,1,0,H
+2022-05-06,Alessandria,Vicenza Virtus,0,1,A
+2022-05-06,como,Cremonese,1,2,A
+2022-05-06,Nuova Cosenza,Cittadella,1,0,H
+2022-05-12,Vicenza Virtus,Nuova Cosenza,1,0,H
+2022-05-13,Ascoli,Benevento,0,1,A
+2022-05-14,Brescia,Perugia,3,2,H
+2022-05-17,Benevento,Pisa,1,0,H
+2022-05-18,Brescia,Monza,1,2,A
+2022-05-20,Nuova Cosenza,Vicenza Virtus,2,0,H
+2022-05-21,Pisa,Benevento,1,0,H
+2022-05-22,Monza,Brescia,2,1,H
+2022-05-26,Monza,Pisa,2,1,H
+2022-05-29,Pisa,Monza,3,4,A

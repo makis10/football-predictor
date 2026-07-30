@@ -1,0 +1,136 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2023-03-04,07 Vestur,IF II,1,0,H
+2023-03-05,Vikingur Gota,B36 Torshavn,0,3,A
+2023-03-05,KI Klaksvik,TB,7,1,H
+2023-03-05,HB Torshavn,B68,4,1,H
+2023-03-05,EB / Streymur,AB,2,0,H
+2023-04-01,Vikingur Gota,TB,7,0,H
+2023-04-02,KI Klaksvik,EB / Streymur,1,0,H
+2023-04-02,07 Vestur,B68,1,1,D
+2023-04-02,IF II,AB,2,0,H
+2023-04-03,B36 Torshavn,HB Torshavn,0,2,A
+2023-04-08,B36 Torshavn,B68,2,0,H
+2023-04-08,IF II,Vikingur Gota,0,1,A
+2023-04-08,EB / Streymur,TB,2,1,H
+2023-04-08,07 Vestur,KI Klaksvik,1,3,A
+2023-04-08,HB Torshavn,AB,4,0,H
+2023-04-12,TB,HB Torshavn,0,0,D
+2023-04-12,AB,KI Klaksvik,0,2,A
+2023-04-12,B36 Torshavn,07 Vestur,3,2,H
+2023-04-12,B68,Vikingur Gota,3,3,D
+2023-04-12,IF II,EB / Streymur,3,0,H
+2023-04-16,KI Klaksvik,Vikingur Gota,2,0,H
+2023-04-16,HB Torshavn,IF II,4,1,H
+2023-04-16,AB,B36 Torshavn,0,2,A
+2023-04-16,TB,07 Vestur,2,1,H
+2023-04-16,B68,EB / Streymur,0,0,D
+2023-04-25,HB Torshavn,Vikingur Gota,1,1,D
+2023-04-26,TB,IF II,0,1,A
+2023-04-26,EB / Streymur,B36 Torshavn,1,2,A
+2023-04-26,AB,07 Vestur,1,2,A
+2023-04-26,B68,KI Klaksvik,0,5,A
+2023-04-30,B36 Torshavn,KI Klaksvik,2,3,A
+2023-04-30,Vikingur Gota,EB / Streymur,1,0,H
+2023-04-30,07 Vestur,HB Torshavn,1,3,A
+2023-04-30,AB,TB,0,0,D
+2023-04-30,IF II,B68,1,3,A
+2023-05-05,07 Vestur,Vikingur Gota,1,2,A
+2023-05-05,EB / Streymur,HB Torshavn,0,3,A
+2023-05-05,B68,AB,1,0,H
+2023-05-05,TB,B36 Torshavn,0,4,A
+2023-05-06,KI Klaksvik,IF II,1,0,H
+2023-05-14,HB Torshavn,KI Klaksvik,0,1,A
+2023-05-14,EB / Streymur,07 Vestur,0,5,A
+2023-05-14,B68,TB,1,1,D
+2023-05-14,B36 Torshavn,IF II,5,1,H
+2023-05-15,Vikingur Gota,AB,5,0,H
+2023-05-20,EB / Streymur,IF II,2,1,H
+2023-05-21,HB Torshavn,TB,4,0,H
+2023-05-21,07 Vestur,KI Klaksvik,0,3,A
+2023-05-21,AB,Vikingur Gota,0,4,A
+2023-05-21,B68,B36 Torshavn,0,1,A
+2023-05-24,Vikingur Gota,HB Torshavn,0,2,A
+2023-05-24,KI Klaksvik,B36 Torshavn,2,1,H
+2023-05-29,Vikingur Gota,B68,1,1,D
+2023-05-29,07 Vestur,TB,2,0,H
+2023-05-29,IF II,KI Klaksvik,1,7,A
+2023-05-29,B36 Torshavn,AB,2,1,H
+2023-05-29,HB Torshavn,EB / Streymur,6,1,H
+2023-06-03,KI Klaksvik,AB,2,1,H
+2023-06-04,B36 Torshavn,Vikingur Gota,2,1,H
+2023-06-04,EB / Streymur,TB,0,1,A
+2023-06-04,IF II,07 Vestur,1,2,A
+2023-06-04,B68,HB Torshavn,0,2,A
+2023-06-10,07 Vestur,Vikingur Gota,3,2,H
+2023-06-10,KI Klaksvik,TB,1,0,H
+2023-06-10,EB / Streymur,B68,2,0,H
+2023-06-10,HB Torshavn,B36 Torshavn,1,0,H
+2023-06-11,AB,IF II,2,0,H
+2023-06-24,TB,AB,3,2,H
+2023-06-25,Vikingur Gota,IF II,5,0,H
+2023-06-25,B36 Torshavn,EB / Streymur,2,1,H
+2023-06-25,07 Vestur,HB Torshavn,2,1,H
+2023-06-25,B68,KI Klaksvik,1,2,A
+2023-07-01,IF II,B36 Torshavn,0,3,A
+2023-07-01,AB,07 Vestur,2,0,H
+2023-07-01,TB,B68,2,1,H
+2023-07-02,KI Klaksvik,HB Torshavn,2,0,H
+2023-07-02,EB / Streymur,Vikingur Gota,0,2,A
+2023-07-27,AB,B68,3,1,H
+2023-07-27,07 Vestur,EB / Streymur,3,1,H
+2023-07-29,TB,IF II,1,2,A
+2023-08-05,B68,IF II,3,1,H
+2023-08-06,HB Torshavn,AB,5,0,H
+2023-08-06,TB,Vikingur Gota,0,2,A
+2023-08-07,07 Vestur,B36 Torshavn,2,2,D
+2023-08-11,Vikingur Gota,KI Klaksvik,2,1,H
+2023-08-12,AB,EB / Streymur,1,3,A
+2023-08-13,B36 Torshavn,TB,4,0,H
+2023-08-13,IF II,HB Torshavn,2,7,A
+2023-08-13,B68,07 Vestur,2,3,A
+2023-08-19,HB Torshavn,IF II,3,1,H
+2023-08-20,Vikingur Gota,TB,1,0,H
+2023-08-20,KI Klaksvik,07 Vestur,1,1,D
+2023-08-20,EB / Streymur,AB,4,1,H
+2023-08-21,B36 Torshavn,B68,2,0,H
+2023-08-27,KI Klaksvik,EB / Streymur,3,2,H
+2023-08-27,07 Vestur,B68,0,1,A
+2023-08-27,AB,HB Torshavn,2,4,A
+2023-08-27,IF II,Vikingur Gota,1,7,A
+2023-08-27,TB,B36 Torshavn,0,3,A
+2023-08-31,B68,TB,1,1,D
+2023-08-31,07 Vestur,EB / Streymur,1,1,D
+2023-09-01,Vikingur Gota,AB,5,0,H
+2023-09-02,B36 Torshavn,IF II,1,0,H
+2023-09-15,HB Torshavn,KI Klaksvik,1,2,A
+2023-09-16,IF II,07 Vestur,0,3,A
+2023-09-17,EB / Streymur,B36 Torshavn,0,3,A
+2023-09-17,AB,TB,3,0,H
+2023-09-18,KI Klaksvik,B68,1,1,D
+2023-09-19,HB Torshavn,Vikingur Gota,1,2,A
+2023-09-24,IF II,AB,3,1,H
+2023-09-24,Vikingur Gota,07 Vestur,3,1,H
+2023-09-24,B68,EB / Streymur,2,2,D
+2023-09-24,TB,KI Klaksvik,1,5,A
+2023-09-25,B36 Torshavn,HB Torshavn,0,0,D
+2023-09-27,EB / Streymur,KI Klaksvik,0,2,A
+2023-09-30,07 Vestur,AB,2,1,H
+2023-09-30,HB Torshavn,B68,3,3,D
+2023-10-01,Vikingur Gota,B36 Torshavn,6,0,H
+2023-10-01,KI Klaksvik,IF II,5,0,H
+2023-10-01,TB,EB / Streymur,0,1,A
+2023-10-08,B36 Torshavn,07 Vestur,3,1,H
+2023-10-08,AB,KI Klaksvik,1,1,D
+2023-10-08,B68,Vikingur Gota,0,3,A
+2023-10-08,IF II,EB / Streymur,0,0,D
+2023-10-08,TB,HB Torshavn,1,4,A
+2023-10-22,Vikingur Gota,EB / Streymur,8,0,H
+2023-10-22,B36 Torshavn,KI Klaksvik,0,0,D
+2023-10-22,HB Torshavn,07 Vestur,2,0,H
+2023-10-22,B68,AB,2,2,D
+2023-10-22,IF II,TB,1,0,H
+2023-10-29,KI Klaksvik,Vikingur Gota,1,2,A
+2023-10-29,EB / Streymur,HB Torshavn,0,1,A
+2023-10-29,AB,B36 Torshavn,3,2,H
+2023-10-29,IF II,B68,0,0,D
+2023-10-29,TB,07 Vestur,0,1,A

@@ -1,0 +1,241 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2019-07-19,FK Vozdovac,TSC Backa Topola,1,2,A
+2019-07-20,FK Spartak Zdrepceva KRV,RAD,2,1,H
+2019-07-20,FK Crvena Zvezda,Javor,2,0,H
+2019-07-20,Mladost Lucani,Radnik Surdulica,2,1,H
+2019-07-20,Vojvodina,Macva,3,1,H
+2019-07-20,Cukaricki,Napredak,1,0,H
+2019-07-21,Indjija,FK Partizan,0,1,A
+2019-07-21,Radnicki NIS,Proleter Novi SAD,3,0,H
+2019-07-27,TSC Backa Topola,Mladost Lucani,5,1,H
+2019-07-27,FK Crvena Zvezda,Radnicki NIS,2,0,H
+2019-07-27,Macva,Indjija,2,2,D
+2019-07-27,Proleter Novi SAD,FK Vozdovac,2,2,D
+2019-07-27,Radnik Surdulica,FK Spartak Zdrepceva KRV,4,0,H
+2019-07-28,Napredak,Vojvodina,0,2,A
+2019-08-02,Mladost Lucani,Proleter Novi SAD,1,1,D
+2019-08-03,Indjija,Napredak,1,0,H
+2019-08-03,Vojvodina,RAD,5,0,H
+2019-08-03,Radnicki NIS,Javor,2,1,H
+2019-08-04,FK Partizan,Macva,4,0,H
+2019-08-04,FK Spartak Zdrepceva KRV,TSC Backa Topola,1,2,A
+2019-08-04,Cukaricki,Radnik Surdulica,1,0,H
+2019-08-09,FK Crvena Zvezda,Mladost Lucani,2,0,H
+2019-08-10,TSC Backa Topola,Cukaricki,1,0,H
+2019-08-10,Radnicki NIS,FK Vozdovac,2,1,H
+2019-08-10,Javor,Macva,3,1,H
+2019-08-10,RAD,Indjija,1,0,H
+2019-08-11,Napredak,FK Partizan,2,2,D
+2019-08-11,Proleter Novi SAD,FK Spartak Zdrepceva KRV,0,1,A
+2019-08-11,Radnik Surdulica,Vojvodina,0,4,A
+2019-08-16,FK Vozdovac,Javor,2,1,H
+2019-08-17,Indjija,Radnik Surdulica,2,1,H
+2019-08-17,Mladost Lucani,Radnicki NIS,1,1,D
+2019-08-17,FK Spartak Zdrepceva KRV,FK Crvena Zvezda,2,3,A
+2019-08-17,Cukaricki,Proleter Novi SAD,2,1,H
+2019-08-18,FK Partizan,RAD,3,0,H
+2019-08-18,Vojvodina,TSC Backa Topola,2,2,D
+2019-08-18,Macva,Napredak,0,1,A
+2019-08-24,Proleter Novi SAD,Vojvodina,0,1,A
+2019-08-24,Javor,Napredak,2,2,D
+2019-08-24,FK Vozdovac,Mladost Lucani,2,0,H
+2019-08-24,RAD,Macva,2,0,H
+2019-08-25,Radnicki NIS,FK Spartak Zdrepceva KRV,2,1,H
+2019-08-25,TSC Backa Topola,Indjija,2,0,H
+2019-08-28,RAD,Cukaricki,2,3,A
+2019-08-31,Vojvodina,FK Crvena Zvezda,1,2,A
+2019-08-31,FK Spartak Zdrepceva KRV,FK Vozdovac,2,1,H
+2019-08-31,Macva,Radnik Surdulica,1,1,D
+2019-09-01,Indjija,Proleter Novi SAD,1,2,A
+2019-09-01,FK Partizan,TSC Backa Topola,1,1,D
+2019-09-01,Mladost Lucani,Javor,3,3,D
+2019-09-01,Napredak,RAD,4,0,H
+2019-09-01,Cukaricki,Radnicki NIS,1,0,H
+2019-09-13,Radnicki NIS,Vojvodina,1,2,A
+2019-09-14,FK Crvena Zvezda,Indjija,2,1,H
+2019-09-14,Javor,RAD,3,0,H
+2019-09-14,Radnik Surdulica,Napredak,1,4,A
+2019-09-14,FK Vozdovac,Cukaricki,2,2,D
+2019-09-14,Proleter Novi SAD,FK Partizan,0,3,A
+2019-09-15,Mladost Lucani,FK Spartak Zdrepceva KRV,2,0,H
+2019-09-15,TSC Backa Topola,Macva,0,0,D
+2019-09-21,Indjija,Radnicki NIS,0,1,A
+2019-09-21,FK Spartak Zdrepceva KRV,Javor,1,0,H
+2019-09-21,Napredak,TSC Backa Topola,1,3,A
+2019-09-21,Cukaricki,Mladost Lucani,1,0,H
+2019-09-21,RAD,Radnik Surdulica,0,1,A
+2019-09-21,Vojvodina,FK Vozdovac,1,2,A
+2019-09-21,Macva,Proleter Novi SAD,0,1,A
+2019-09-22,FK Partizan,FK Crvena Zvezda,2,0,H
+2019-09-25,Javor,FK Partizan,0,2,A
+2019-09-25,FK Vozdovac,FK Crvena Zvezda,1,3,A
+2019-09-28,Radnicki NIS,FK Partizan,1,4,A
+2019-09-28,FK Crvena Zvezda,Macva,3,1,H
+2019-09-29,Mladost Lucani,Vojvodina,1,2,A
+2019-09-29,Proleter Novi SAD,Napredak,2,0,H
+2019-09-29,TSC Backa Topola,RAD,2,0,H
+2019-09-29,FK Spartak Zdrepceva KRV,Cukaricki,0,1,A
+2019-09-29,FK Vozdovac,Indjija,4,1,H
+2019-09-30,Javor,Radnik Surdulica,0,0,D
+2019-10-04,Vojvodina,FK Spartak Zdrepceva KRV,2,0,H
+2019-10-05,Macva,Radnicki NIS,0,1,A
+2019-10-05,Cukaricki,Javor,2,0,H
+2019-10-05,Radnik Surdulica,TSC Backa Topola,1,0,H
+2019-10-05,RAD,Proleter Novi SAD,1,1,D
+2019-10-06,Indjija,Mladost Lucani,0,2,A
+2019-10-06,Napredak,FK Crvena Zvezda,0,1,A
+2019-10-06,FK Partizan,FK Vozdovac,1,2,A
+2019-10-18,Cukaricki,Vojvodina,0,0,D
+2019-10-18,FK Crvena Zvezda,RAD,3,1,H
+2019-10-19,Mladost Lucani,FK Partizan,1,0,H
+2019-10-19,FK Spartak Zdrepceva KRV,Indjija,3,0,H
+2019-10-19,Radnicki NIS,Napredak,4,1,H
+2019-10-19,Proleter Novi SAD,Radnik Surdulica,2,1,H
+2019-10-19,Javor,TSC Backa Topola,3,2,H
+2019-10-19,FK Vozdovac,Macva,2,0,H
+2019-10-25,Napredak,FK Vozdovac,1,1,D
+2019-10-26,Radnik Surdulica,FK Crvena Zvezda,0,5,A
+2019-10-26,Vojvodina,Javor,2,2,D
+2019-10-26,Macva,Mladost Lucani,0,1,A
+2019-10-26,RAD,Radnicki NIS,1,2,A
+2019-10-27,Indjija,Cukaricki,1,3,A
+2019-10-27,FK Partizan,FK Spartak Zdrepceva KRV,4,0,H
+2019-10-27,TSC Backa Topola,Proleter Novi SAD,1,1,D
+2019-10-30,Radnicki NIS,Radnik Surdulica,0,2,A
+2019-10-30,Cukaricki,FK Partizan,2,1,H
+2019-10-30,FK Crvena Zvezda,TSC Backa Topola,3,1,H
+2019-10-30,Mladost Lucani,Napredak,0,1,A
+2019-10-30,Vojvodina,Indjija,1,0,H
+2019-10-30,FK Spartak Zdrepceva KRV,Macva,3,1,H
+2019-10-30,Javor,Proleter Novi SAD,1,0,H
+2019-10-30,FK Vozdovac,RAD,2,1,H
+2019-11-02,FK Partizan,Vojvodina,4,0,H
+2019-11-02,Proleter Novi SAD,FK Crvena Zvezda,0,2,A
+2019-11-03,Indjija,Javor,2,3,A
+2019-11-03,Macva,Cukaricki,0,0,D
+2019-11-03,TSC Backa Topola,Radnicki NIS,2,0,H
+2019-11-03,Napredak,FK Spartak Zdrepceva KRV,0,1,A
+2019-11-03,Radnik Surdulica,FK Vozdovac,2,2,D
+2019-11-03,RAD,Mladost Lucani,0,0,D
+2019-11-09,Napredak,Cukaricki,3,1,H
+2019-11-09,Radnik Surdulica,Mladost Lucani,0,1,A
+2019-11-09,RAD,FK Spartak Zdrepceva KRV,2,0,H
+2019-11-09,Macva,Vojvodina,0,1,A
+2019-11-10,TSC Backa Topola,FK Vozdovac,2,2,D
+2019-11-10,Javor,FK Crvena Zvezda,1,1,D
+2019-11-10,FK Partizan,Indjija,3,0,H
+2019-11-22,FK Partizan,Javor,6,2,H
+2019-11-23,Mladost Lucani,TSC Backa Topola,0,3,A
+2019-11-23,Radnicki NIS,FK Crvena Zvezda,0,2,A
+2019-11-23,Cukaricki,RAD,2,0,H
+2019-11-23,FK Vozdovac,Proleter Novi SAD,2,0,H
+2019-11-23,Vojvodina,Napredak,2,1,H
+2019-11-24,Indjija,Macva,0,0,D
+2019-11-24,FK Spartak Zdrepceva KRV,Radnik Surdulica,3,1,H
+2019-11-29,Proleter Novi SAD,Mladost Lucani,0,1,A
+2019-11-29,TSC Backa Topola,FK Spartak Zdrepceva KRV,2,2,D
+2019-11-30,Javor,Radnicki NIS,0,7,A
+2019-11-30,Napredak,Indjija,1,3,A
+2019-11-30,Radnik Surdulica,Cukaricki,3,3,D
+2019-11-30,RAD,Vojvodina,1,2,A
+2019-11-30,FK Crvena Zvezda,FK Vozdovac,2,0,H
+2019-12-01,Macva,FK Partizan,0,2,A
+2019-12-04,Indjija,RAD,1,0,H
+2019-12-04,Mladost Lucani,FK Crvena Zvezda,0,1,A
+2019-12-04,Cukaricki,TSC Backa Topola,2,1,H
+2019-12-04,FK Vozdovac,Radnicki NIS,1,0,H
+2019-12-04,FK Partizan,Napredak,2,3,A
+2019-12-04,Vojvodina,Radnik Surdulica,1,0,H
+2019-12-04,FK Spartak Zdrepceva KRV,Proleter Novi SAD,4,1,H
+2019-12-04,Macva,Javor,2,1,H
+2019-12-07,FK Crvena Zvezda,FK Spartak Zdrepceva KRV,3,1,H
+2019-12-08,RAD,FK Partizan,1,2,A
+2019-12-08,Radnicki NIS,Mladost Lucani,3,0,H
+2019-12-08,Proleter Novi SAD,Cukaricki,2,1,H
+2019-12-08,TSC Backa Topola,Vojvodina,2,0,H
+2019-12-08,Javor,FK Vozdovac,1,2,A
+2019-12-08,Napredak,Macva,2,1,H
+2019-12-08,Radnik Surdulica,Indjija,2,0,H
+2019-12-14,Proleter Novi SAD,Radnicki NIS,1,1,D
+2019-12-15,Radnik Surdulica,FK Partizan,1,2,A
+2019-12-15,FK Crvena Zvezda,Cukaricki,3,1,H
+2020-02-15,Indjija,TSC Backa Topola,1,1,D
+2020-02-15,Cukaricki,FK Crvena Zvezda,0,2,A
+2020-02-15,Mladost Lucani,FK Vozdovac,2,1,H
+2020-02-15,Napredak,Javor,1,1,D
+2020-02-15,Vojvodina,Proleter Novi SAD,1,0,H
+2020-02-15,Macva,RAD,1,0,H
+2020-02-16,FK Partizan,Radnik Surdulica,3,0,H
+2020-02-16,FK Spartak Zdrepceva KRV,Radnicki NIS,1,1,D
+2020-02-21,FK Vozdovac,FK Spartak Zdrepceva KRV,2,3,A
+2020-02-21,Javor,Mladost Lucani,1,2,A
+2020-02-22,Radnicki NIS,Cukaricki,2,0,H
+2020-02-22,Proleter Novi SAD,Indjija,1,0,H
+2020-02-22,TSC Backa Topola,FK Partizan,1,1,D
+2020-02-22,Radnik Surdulica,Macva,2,2,D
+2020-02-22,RAD,Napredak,2,0,H
+2020-02-22,FK Crvena Zvezda,Vojvodina,2,0,H
+2020-02-26,FK Spartak Zdrepceva KRV,Mladost Lucani,3,1,H
+2020-02-26,Indjija,FK Crvena Zvezda,1,1,D
+2020-02-26,FK Partizan,Proleter Novi SAD,3,1,H
+2020-02-26,Vojvodina,Radnicki NIS,3,0,H
+2020-02-26,Macva,TSC Backa Topola,0,1,A
+2020-02-26,Napredak,Radnik Surdulica,0,1,A
+2020-02-26,Cukaricki,FK Vozdovac,2,1,H
+2020-02-26,RAD,Javor,1,1,D
+2020-03-01,FK Vozdovac,Vojvodina,1,2,A
+2020-03-01,Mladost Lucani,Cukaricki,1,0,H
+2020-03-01,Radnicki NIS,Indjija,2,1,H
+2020-03-01,Proleter Novi SAD,Macva,1,1,D
+2020-03-01,TSC Backa Topola,Napredak,2,1,H
+2020-03-01,Javor,FK Spartak Zdrepceva KRV,2,2,D
+2020-03-01,Radnik Surdulica,RAD,1,0,H
+2020-03-01,FK Crvena Zvezda,FK Partizan,0,0,D
+2020-03-06,Cukaricki,FK Spartak Zdrepceva KRV,4,1,H
+2020-03-07,Vojvodina,Mladost Lucani,2,1,H
+2020-03-07,Macva,FK Crvena Zvezda,0,3,A
+2020-03-07,Napredak,Proleter Novi SAD,0,0,D
+2020-03-07,Radnik Surdulica,Javor,2,0,H
+2020-03-07,RAD,TSC Backa Topola,3,4,A
+2020-03-07,FK Partizan,Radnicki NIS,1,0,H
+2020-03-08,Indjija,FK Vozdovac,3,0,H
+2020-03-14,TSC Backa Topola,Radnik Surdulica,2,1,H
+2020-03-14,FK Vozdovac,FK Partizan,1,2,A
+2020-03-14,Mladost Lucani,Indjija,2,1,H
+2020-03-14,FK Spartak Zdrepceva KRV,Vojvodina,0,0,D
+2020-03-14,Radnicki NIS,Macva,3,1,H
+2020-03-14,Javor,Cukaricki,2,2,D
+2020-03-14,FK Crvena Zvezda,Napredak,3,0,H
+2020-03-14,Proleter Novi SAD,RAD,5,0,H
+2020-05-29,Indjija,FK Spartak Zdrepceva KRV,1,2,A
+2020-05-29,Vojvodina,Cukaricki,1,1,D
+2020-05-29,RAD,FK Crvena Zvezda,0,5,A
+2020-05-30,Radnik Surdulica,Proleter Novi SAD,1,1,D
+2020-05-30,FK Partizan,Mladost Lucani,4,1,H
+2020-05-30,Napredak,Radnicki NIS,1,1,D
+2020-05-31,TSC Backa Topola,Javor,6,1,H
+2020-05-31,Macva,FK Vozdovac,0,1,A
+2020-06-05,Proleter Novi SAD,TSC Backa Topola,1,3,A
+2020-06-05,FK Vozdovac,Napredak,1,0,H
+2020-06-06,Javor,Vojvodina,1,3,A
+2020-06-06,FK Spartak Zdrepceva KRV,FK Partizan,3,2,H
+2020-06-06,FK Crvena Zvezda,Radnik Surdulica,4,1,H
+2020-06-06,Cukaricki,Indjija,0,1,A
+2020-06-07,Radnicki NIS,RAD,4,3,H
+2020-06-07,Mladost Lucani,Macva,2,1,H
+2020-06-12,Proleter Novi SAD,Javor,2,2,D
+2020-06-12,RAD,FK Vozdovac,0,2,A
+2020-06-13,Macva,FK Spartak Zdrepceva KRV,1,4,A
+2020-06-13,Napredak,Mladost Lucani,1,0,H
+2020-06-13,Radnik Surdulica,Radnicki NIS,2,4,A
+2020-06-14,Indjija,Vojvodina,2,0,H
+2020-06-14,TSC Backa Topola,FK Crvena Zvezda,2,1,H
+2020-06-14,FK Partizan,Cukaricki,4,1,H
+2020-06-18,Mladost Lucani,RAD,2,0,H
+2020-06-18,FK Vozdovac,Radnik Surdulica,1,1,D
+2020-06-19,FK Spartak Zdrepceva KRV,Napredak,0,2,A
+2020-06-19,Vojvodina,FK Partizan,1,0,H
+2020-06-19,Radnicki NIS,TSC Backa Topola,3,1,H
+2020-06-20,Javor,Indjija,5,0,H
+2020-06-20,Cukaricki,Macva,3,1,H
+2020-06-20,FK Crvena Zvezda,Proleter Novi SAD,2,1,H

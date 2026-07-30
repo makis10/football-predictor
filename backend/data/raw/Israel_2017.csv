@@ -1,0 +1,241 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2017-08-19,Ashdod,Maccabi Petah Tikva,1,2,A
+2017-08-19,Hapoel Ra'anana,Ironi Kiryat Shmona,0,0,D
+2017-08-19,Hapoel Haifa,Hapoel Ashkelon,3,1,H
+2017-08-19,Hapoel Beer Sheva,Maccabi Netanya,1,1,D
+2017-08-20,Hapoel Acre,Bnei Sakhnin,1,2,A
+2017-08-20,Maccabi Tel Aviv,Beitar Jerusalem,0,3,A
+2017-08-21,Bnei Yehuda,Maccabi Haifa,2,0,H
+2017-08-26,Bnei Sakhnin,Hapoel Ra'anana,2,1,H
+2017-08-26,Hapoel Ashkelon,Bnei Yehuda,1,1,D
+2017-08-26,Maccabi Netanya,Hapoel Acre,2,2,D
+2017-08-26,Maccabi Petah Tikva,Hapoel Haifa,0,2,A
+2017-08-27,Ironi Kiryat Shmona,Maccabi Tel Aviv,1,2,A
+2017-08-27,Maccabi Haifa,Hapoel Beer Sheva,3,1,H
+2017-08-28,Beitar Jerusalem,Ashdod,4,1,H
+2017-09-09,Maccabi Tel Aviv,Bnei Sakhnin,2,0,H
+2017-09-09,Hapoel Haifa,Bnei Yehuda,2,1,H
+2017-09-09,Ashdod,Ironi Kiryat Shmona,0,2,A
+2017-09-09,Hapoel Beer Sheva,Hapoel Ashkelon,1,0,H
+2017-09-10,Hapoel Ra'anana,Maccabi Netanya,0,3,A
+2017-09-10,Hapoel Acre,Maccabi Haifa,2,0,H
+2017-09-11,Maccabi Petah Tikva,Beitar Jerusalem,1,2,A
+2017-09-16,Ironi Kiryat Shmona,Maccabi Petah Tikva,3,1,H
+2017-09-16,Maccabi Haifa,Hapoel Ra'anana,4,2,H
+2017-09-16,Hapoel Ashkelon,Hapoel Acre,2,1,H
+2017-09-16,Beitar Jerusalem,Hapoel Haifa,3,3,D
+2017-09-17,Bnei Sakhnin,Ashdod,0,0,D
+2017-09-17,Bnei Yehuda,Hapoel Beer Sheva,0,1,A
+2017-09-18,Maccabi Netanya,Maccabi Tel Aviv,2,3,A
+2017-09-23,Hapoel Acre,Bnei Yehuda,1,1,D
+2017-09-23,Hapoel Ra'anana,Hapoel Ashkelon,0,3,A
+2017-09-23,Ashdod,Maccabi Netanya,0,3,A
+2017-09-23,Hapoel Haifa,Hapoel Beer Sheva,1,1,D
+2017-09-24,Maccabi Petah Tikva,Bnei Sakhnin,1,0,H
+2017-09-24,Maccabi Tel Aviv,Maccabi Haifa,0,0,D
+2017-09-25,Beitar Jerusalem,Ironi Kiryat Shmona,1,1,D
+2017-10-01,Bnei Yehuda,Hapoel Ra'anana,1,0,H
+2017-10-01,Maccabi Haifa,Ashdod,1,0,H
+2017-10-01,Ironi Kiryat Shmona,Hapoel Haifa,0,1,A
+2017-10-01,Hapoel Ashkelon,Maccabi Tel Aviv,2,2,D
+2017-10-02,Maccabi Netanya,Maccabi Petah Tikva,4,0,H
+2017-10-02,Bnei Sakhnin,Beitar Jerusalem,3,2,H
+2017-10-14,Maccabi Petah Tikva,Maccabi Haifa,2,2,D
+2017-10-14,Hapoel Haifa,Hapoel Acre,4,0,H
+2017-10-14,Ashdod,Hapoel Ashkelon,1,1,D
+2017-10-14,Hapoel Ra'anana,Hapoel Beer Sheva,1,3,A
+2017-10-15,Ironi Kiryat Shmona,Bnei Sakhnin,0,0,D
+2017-10-15,Maccabi Tel Aviv,Bnei Yehuda,2,0,H
+2017-10-16,Beitar Jerusalem,Maccabi Netanya,4,1,H
+2017-10-21,Bnei Yehuda,Ashdod,1,2,A
+2017-10-21,Hapoel Acre,Hapoel Ra'anana,0,2,A
+2017-10-21,Maccabi Netanya,Ironi Kiryat Shmona,3,1,H
+2017-10-21,Maccabi Haifa,Beitar Jerusalem,1,2,A
+2017-10-22,Hapoel Ashkelon,Maccabi Petah Tikva,1,3,A
+2017-10-22,Bnei Sakhnin,Hapoel Haifa,0,1,A
+2017-10-23,Hapoel Beer Sheva,Maccabi Tel Aviv,2,1,H
+2017-10-28,Bnei Sakhnin,Maccabi Netanya,0,0,D
+2017-10-28,Hapoel Haifa,Hapoel Ra'anana,2,0,H
+2017-10-28,Ironi Kiryat Shmona,Maccabi Haifa,1,0,H
+2017-10-28,Beitar Jerusalem,Hapoel Ashkelon,2,0,H
+2017-10-29,Maccabi Tel Aviv,Hapoel Acre,5,2,H
+2017-10-29,Ashdod,Hapoel Beer Sheva,1,3,A
+2017-10-30,Maccabi Petah Tikva,Bnei Yehuda,1,2,A
+2017-11-04,Hapoel Acre,Ashdod,1,0,H
+2017-11-04,Maccabi Netanya,Hapoel Haifa,2,0,H
+2017-11-04,Bnei Yehuda,Beitar Jerusalem,3,2,H
+2017-11-05,Maccabi Petah Tikva,Hapoel Beer Sheva,0,2,A
+2017-11-05,Hapoel Ra'anana,Maccabi Tel Aviv,0,1,A
+2017-11-05,Maccabi Haifa,Bnei Sakhnin,2,0,H
+2017-11-06,Hapoel Ashkelon,Ironi Kiryat Shmona,0,0,D
+2017-11-18,Hapoel Beer Sheva,Hapoel Acre,3,1,H
+2017-11-25,Bnei Sakhnin,Hapoel Ashkelon,2,1,H
+2017-11-25,Ironi Kiryat Shmona,Bnei Yehuda,2,1,H
+2017-11-25,Hapoel Acre,Maccabi Petah Tikva,0,3,A
+2017-11-25,Maccabi Netanya,Maccabi Haifa,1,1,D
+2017-11-26,Ashdod,Hapoel Ra'anana,0,1,A
+2017-11-26,Hapoel Haifa,Maccabi Tel Aviv,2,2,D
+2017-11-27,Beitar Jerusalem,Hapoel Beer Sheva,2,2,D
+2017-12-02,Maccabi Tel Aviv,Ashdod,1,1,D
+2017-12-02,Bnei Yehuda,Bnei Sakhnin,3,0,H
+2017-12-02,Hapoel Ashkelon,Maccabi Netanya,1,1,D
+2017-12-02,Hapoel Acre,Beitar Jerusalem,1,3,A
+2017-12-03,Hapoel Ra'anana,Maccabi Petah Tikva,0,0,D
+2017-12-03,Hapoel Beer Sheva,Ironi Kiryat Shmona,3,1,H
+2017-12-04,Hapoel Haifa,Maccabi Haifa,1,0,H
+2017-12-09,Maccabi Netanya,Bnei Yehuda,1,2,A
+2017-12-09,Ashdod,Hapoel Haifa,1,1,D
+2017-12-09,Maccabi Haifa,Hapoel Ashkelon,1,1,D
+2017-12-09,Beitar Jerusalem,Hapoel Ra'anana,3,2,H
+2017-12-10,Ironi Kiryat Shmona,Hapoel Acre,4,0,H
+2017-12-10,Bnei Sakhnin,Hapoel Beer Sheva,1,3,A
+2017-12-11,Maccabi Petah Tikva,Maccabi Tel Aviv,0,0,D
+2017-12-16,Maccabi Petah Tikva,Ashdod,1,1,D
+2017-12-16,Bnei Sakhnin,Hapoel Acre,2,1,H
+2017-12-16,Hapoel Ashkelon,Hapoel Haifa,0,0,D
+2017-12-16,Maccabi Haifa,Bnei Yehuda,0,2,A
+2017-12-17,Ironi Kiryat Shmona,Hapoel Ra'anana,0,2,A
+2017-12-17,Maccabi Netanya,Hapoel Beer Sheva,1,0,H
+2017-12-18,Beitar Jerusalem,Maccabi Tel Aviv,1,2,A
+2017-12-23,Hapoel Acre,Maccabi Netanya,0,3,A
+2017-12-23,Bnei Yehuda,Hapoel Ashkelon,3,1,H
+2017-12-23,Hapoel Haifa,Maccabi Petah Tikva,2,0,H
+2017-12-23,Maccabi Tel Aviv,Ironi Kiryat Shmona,2,1,H
+2017-12-24,Hapoel Ra'anana,Bnei Sakhnin,1,1,D
+2017-12-24,Ashdod,Beitar Jerusalem,1,3,A
+2017-12-25,Hapoel Beer Sheva,Maccabi Haifa,2,0,H
+2017-12-30,Bnei Yehuda,Hapoel Haifa,0,1,A
+2017-12-30,Maccabi Haifa,Hapoel Acre,0,1,A
+2017-12-30,Maccabi Netanya,Hapoel Ra'anana,2,2,D
+2017-12-30,Beitar Jerusalem,Maccabi Petah Tikva,1,0,H
+2017-12-31,Ironi Kiryat Shmona,Ashdod,1,2,A
+2017-12-31,Hapoel Ashkelon,Hapoel Beer Sheva,0,1,A
+2018-01-01,Bnei Sakhnin,Maccabi Tel Aviv,0,1,A
+2018-01-08,Hapoel Acre,Hapoel Ashkelon,0,1,A
+2018-01-08,Ashdod,Bnei Sakhnin,1,2,A
+2018-01-08,Hapoel Haifa,Beitar Jerusalem,0,2,A
+2018-01-09,Maccabi Petah Tikva,Ironi Kiryat Shmona,2,0,H
+2018-01-09,Hapoel Beer Sheva,Bnei Yehuda,0,0,D
+2018-01-09,Maccabi Tel Aviv,Maccabi Netanya,3,0,H
+2018-01-10,Hapoel Ra'anana,Maccabi Haifa,0,3,A
+2018-01-13,Bnei Yehuda,Hapoel Acre,2,1,H
+2018-01-13,Bnei Sakhnin,Maccabi Petah Tikva,0,2,A
+2018-01-13,Maccabi Netanya,Ashdod,2,2,D
+2018-01-13,Ironi Kiryat Shmona,Beitar Jerusalem,1,1,D
+2018-01-14,Hapoel Ashkelon,Hapoel Ra'anana,0,1,A
+2018-01-14,Hapoel Beer Sheva,Hapoel Haifa,1,1,D
+2018-01-15,Maccabi Haifa,Maccabi Tel Aviv,1,3,A
+2018-01-20,Hapoel Haifa,Ironi Kiryat Shmona,0,2,A
+2018-01-20,Hapoel Ra'anana,Bnei Yehuda,1,1,D
+2018-01-20,Ashdod,Maccabi Haifa,0,0,D
+2018-01-20,Hapoel Acre,Hapoel Beer Sheva,0,1,A
+2018-01-21,Maccabi Petah Tikva,Maccabi Netanya,1,1,D
+2018-01-21,Maccabi Tel Aviv,Hapoel Ashkelon,3,1,H
+2018-01-22,Beitar Jerusalem,Bnei Sakhnin,4,2,H
+2018-01-27,Hapoel Acre,Hapoel Haifa,0,1,A
+2018-01-27,Hapoel Ashkelon,Ashdod,1,2,A
+2018-01-27,Maccabi Haifa,Maccabi Petah Tikva,1,1,D
+2018-01-27,Hapoel Beer Sheva,Hapoel Ra'anana,3,1,H
+2018-01-28,Bnei Sakhnin,Ironi Kiryat Shmona,1,2,A
+2018-01-28,Bnei Yehuda,Maccabi Tel Aviv,0,0,D
+2018-01-29,Maccabi Netanya,Beitar Jerusalem,2,1,H
+2018-02-03,Hapoel Haifa,Bnei Sakhnin,1,0,H
+2018-02-03,Hapoel Ra'anana,Hapoel Acre,0,1,A
+2018-02-03,Ironi Kiryat Shmona,Maccabi Netanya,1,2,A
+2018-02-03,Beitar Jerusalem,Maccabi Haifa,3,1,H
+2018-02-04,Ashdod,Bnei Yehuda,1,1,D
+2018-02-04,Maccabi Tel Aviv,Hapoel Beer Sheva,1,0,H
+2018-02-05,Maccabi Petah Tikva,Hapoel Ashkelon,3,0,H
+2018-02-10,Hapoel Ra'anana,Hapoel Haifa,1,1,D
+2018-02-10,Bnei Yehuda,Maccabi Petah Tikva,2,1,H
+2018-02-10,Maccabi Haifa,Ironi Kiryat Shmona,4,0,H
+2018-02-10,Hapoel Ashkelon,Beitar Jerusalem,1,3,A
+2018-02-11,Maccabi Netanya,Bnei Sakhnin,1,1,D
+2018-02-11,Hapoel Acre,Maccabi Tel Aviv,0,2,A
+2018-02-12,Hapoel Beer Sheva,Ashdod,2,0,H
+2018-02-17,Maccabi Tel Aviv,Hapoel Ra'anana,0,1,A
+2018-02-17,Ashdod,Hapoel Acre,3,2,H
+2018-02-17,Bnei Sakhnin,Maccabi Haifa,1,0,H
+2018-02-17,Hapoel Beer Sheva,Maccabi Petah Tikva,3,0,H
+2018-02-18,Ironi Kiryat Shmona,Hapoel Ashkelon,1,0,H
+2018-02-18,Hapoel Haifa,Maccabi Netanya,2,0,H
+2018-02-19,Beitar Jerusalem,Bnei Yehuda,2,0,H
+2018-02-24,Hapoel Ra'anana,Ashdod,2,1,H
+2018-02-24,Hapoel Ashkelon,Bnei Sakhnin,0,2,A
+2018-02-24,Maccabi Haifa,Maccabi Netanya,1,2,A
+2018-02-24,Maccabi Tel Aviv,Hapoel Haifa,4,0,H
+2018-02-25,Bnei Yehuda,Ironi Kiryat Shmona,1,0,H
+2018-02-25,Hapoel Beer Sheva,Beitar Jerusalem,1,1,D
+2018-02-26,Maccabi Petah Tikva,Hapoel Acre,2,1,H
+2018-03-03,Maccabi Petah Tikva,Hapoel Ra'anana,3,2,H
+2018-03-03,Bnei Sakhnin,Bnei Yehuda,2,2,D
+2018-03-03,Maccabi Netanya,Hapoel Ashkelon,2,0,H
+2018-03-03,Ashdod,Maccabi Tel Aviv,0,0,D
+2018-03-04,Ironi Kiryat Shmona,Hapoel Beer Sheva,0,1,A
+2018-03-04,Beitar Jerusalem,Hapoel Acre,3,0,H
+2018-03-05,Maccabi Haifa,Hapoel Haifa,0,3,A
+2018-03-10,Bnei Yehuda,Maccabi Netanya,0,1,A
+2018-03-10,Hapoel Haifa,Ashdod,1,0,H
+2018-03-10,Hapoel Ashkelon,Maccabi Haifa,0,0,D
+2018-03-10,Hapoel Beer Sheva,Bnei Sakhnin,2,0,H
+2018-03-11,Hapoel Acre,Ironi Kiryat Shmona,0,3,A
+2018-03-11,Hapoel Ra'anana,Beitar Jerusalem,0,2,A
+2018-03-12,Maccabi Tel Aviv,Maccabi Petah Tikva,2,0,H
+2018-03-17,Maccabi Haifa,Hapoel Acre,4,0,H
+2018-03-17,Ironi Kiryat Shmona,Hapoel Ashkelon,1,1,D
+2018-03-17,Bnei Sakhnin,Ashdod,2,1,H
+2018-03-17,Beitar Jerusalem,Maccabi Netanya,2,0,H
+2018-03-18,Maccabi Petah Tikva,Hapoel Ra'anana,1,3,A
+2018-03-18,Hapoel Beer Sheva,Bnei Yehuda,1,0,H
+2018-03-18,Maccabi Tel Aviv,Hapoel Haifa,1,2,A
+2018-04-03,Maccabi Netanya,Maccabi Tel Aviv,4,1,H
+2018-04-04,Bnei Yehuda,Hapoel Haifa,3,0,H
+2018-04-04,Hapoel Beer Sheva,Beitar Jerusalem,3,1,H
+2018-04-07,Maccabi Petah Tikva,Ironi Kiryat Shmona,2,0,H
+2018-04-07,Hapoel Ra'anana,Hapoel Acre,1,1,D
+2018-04-07,Hapoel Ashkelon,Bnei Sakhnin,2,0,H
+2018-04-07,Ashdod,Maccabi Haifa,2,1,H
+2018-04-08,Hapoel Haifa,Maccabi Netanya,1,1,D
+2018-04-08,Beitar Jerusalem,Bnei Yehuda,1,1,D
+2018-04-09,Maccabi Tel Aviv,Hapoel Beer Sheva,0,1,A
+2018-04-14,Hapoel Acre,Ashdod,1,1,D
+2018-04-14,Ironi Kiryat Shmona,Hapoel Ra'anana,0,1,A
+2018-04-14,Bnei Yehuda,Maccabi Netanya,1,3,A
+2018-04-14,Maccabi Haifa,Hapoel Ashkelon,2,1,H
+2018-04-15,Bnei Sakhnin,Maccabi Petah Tikva,2,2,D
+2018-04-15,Hapoel Beer Sheva,Hapoel Haifa,2,2,D
+2018-04-16,Beitar Jerusalem,Maccabi Tel Aviv,3,2,H
+2018-04-21,Ironi Kiryat Shmona,Bnei Sakhnin,2,0,H
+2018-04-21,Maccabi Petah Tikva,Maccabi Haifa,0,1,A
+2018-04-21,Hapoel Ashkelon,Hapoel Acre,0,2,A
+2018-04-21,Maccabi Tel Aviv,Bnei Yehuda,2,0,H
+2018-04-22,Maccabi Netanya,Hapoel Beer Sheva,1,5,A
+2018-04-23,Hapoel Ra'anana,Ashdod,1,0,H
+2018-04-23,Hapoel Haifa,Beitar Jerusalem,0,1,A
+2018-04-28,Hapoel Acre,Maccabi Petah Tikva,2,1,H
+2018-04-28,Maccabi Haifa,Ironi Kiryat Shmona,1,2,A
+2018-04-28,Bnei Sakhnin,Hapoel Ra'anana,1,3,A
+2018-04-28,Bnei Yehuda,Hapoel Beer Sheva,1,1,D
+2018-04-29,Ashdod,Hapoel Ashkelon,1,0,H
+2018-04-29,Hapoel Haifa,Maccabi Tel Aviv,2,2,D
+2018-04-30,Maccabi Netanya,Beitar Jerusalem,4,1,H
+2018-05-05,Ironi Kiryat Shmona,Hapoel Acre,4,0,H
+2018-05-05,Hapoel Haifa,Bnei Yehuda,2,1,H
+2018-05-05,Bnei Sakhnin,Maccabi Haifa,1,1,D
+2018-05-05,Beitar Jerusalem,Hapoel Beer Sheva,1,4,A
+2018-05-06,Hapoel Ra'anana,Hapoel Ashkelon,4,0,H
+2018-05-06,Maccabi Petah Tikva,Ashdod,2,1,H
+2018-05-07,Maccabi Tel Aviv,Maccabi Netanya,2,0,H
+2018-05-12,Maccabi Netanya,Hapoel Haifa,2,1,H
+2018-05-12,Bnei Yehuda,Beitar Jerusalem,3,3,D
+2018-05-12,Hapoel Beer Sheva,Maccabi Tel Aviv,0,1,A
+2018-05-13,Maccabi Haifa,Hapoel Ra'anana,2,0,H
+2018-05-13,Hapoel Acre,Bnei Sakhnin,1,2,A
+2018-05-13,Hapoel Ashkelon,Maccabi Petah Tikva,0,2,A
+2018-05-13,Ashdod,Ironi Kiryat Shmona,1,2,A
+2018-05-15,Hapoel Haifa,Hapoel Beer Sheva,1,4,A
+2018-05-15,Maccabi Tel Aviv,Beitar Jerusalem,3,1,H
+2018-05-16,Maccabi Netanya,Bnei Yehuda,0,5,A
+2018-05-21,Hapoel Beer Sheva,Maccabi Netanya,6,1,H
+2018-05-21,Beitar Jerusalem,Hapoel Haifa,1,1,D
+2018-05-21,Bnei Yehuda,Maccabi Tel Aviv,0,2,A

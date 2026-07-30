@@ -1,0 +1,145 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2019-03-09,Jelgava,Riga,0,1,A
+2019-03-09,BFC Daugavpils,Metta / LU,1,0,H
+2019-03-10,FK Ventspils,Spartaks Jurmala,2,1,H
+2019-03-10,Rigas FS,FK Liepaja,2,0,H
+2019-03-15,Metta / LU,Riga,1,2,A
+2019-03-16,Spartaks Jurmala,Rigas FS,2,3,A
+2019-03-16,Jelgava,FK Ventspils,2,1,H
+2019-03-17,Valmiera / BSS,BFC Daugavpils,2,0,H
+2019-03-30,Rigas FS,Jelgava,2,1,H
+2019-03-30,FK Liepaja,Spartaks Jurmala,0,1,A
+2019-03-31,Riga,Valmiera / BSS,0,1,A
+2019-03-31,FK Ventspils,Metta / LU,2,0,H
+2019-04-05,Jelgava,FK Liepaja,1,2,A
+2019-04-05,Metta / LU,Rigas FS,1,2,A
+2019-04-06,BFC Daugavpils,Riga,0,1,A
+2019-04-06,Valmiera / BSS,FK Ventspils,1,1,D
+2019-04-09,Spartaks Jurmala,Jelgava,1,2,A
+2019-04-09,FK Liepaja,Metta / LU,2,1,H
+2019-04-10,FK Ventspils,BFC Daugavpils,1,1,D
+2019-04-10,Valmiera / BSS,Rigas FS,0,2,A
+2019-04-14,Metta / LU,Spartaks Jurmala,3,0,H
+2019-04-14,Valmiera / BSS,FK Liepaja,1,0,H
+2019-04-14,Riga,FK Ventspils,2,0,H
+2019-04-15,BFC Daugavpils,Rigas FS,0,1,A
+2019-04-19,Spartaks Jurmala,Valmiera / BSS,2,0,H
+2019-04-19,FK Liepaja,BFC Daugavpils,2,3,A
+2019-04-19,Jelgava,Metta / LU,1,2,A
+2019-04-20,Rigas FS,Riga,3,1,H
+2019-04-23,BFC Daugavpils,Spartaks Jurmala,4,1,H
+2019-04-23,Valmiera / BSS,Jelgava,0,0,D
+2019-04-24,FK Ventspils,Rigas FS,2,0,H
+2019-04-24,Riga,FK Liepaja,1,0,H
+2019-04-27,Metta / LU,Valmiera / BSS,1,4,A
+2019-04-27,Jelgava,BFC Daugavpils,1,0,H
+2019-04-28,Spartaks Jurmala,Riga,0,4,A
+2019-04-28,FK Ventspils,FK Liepaja,1,1,D
+2019-05-03,Metta / LU,BFC Daugavpils,0,1,A
+2019-05-03,Riga,Jelgava,1,1,D
+2019-05-04,Spartaks Jurmala,FK Ventspils,4,3,H
+2019-05-04,FK Liepaja,Rigas FS,0,0,D
+2019-05-07,BFC Daugavpils,Valmiera / BSS,1,0,H
+2019-05-07,Riga,Metta / LU,2,1,H
+2019-05-08,FK Ventspils,Jelgava,1,1,D
+2019-05-08,Rigas FS,Spartaks Jurmala,0,0,D
+2019-05-12,Jelgava,Rigas FS,0,0,D
+2019-05-12,Spartaks Jurmala,FK Liepaja,1,0,H
+2019-05-12,Metta / LU,FK Ventspils,2,1,H
+2019-05-13,Valmiera / BSS,Riga,1,0,H
+2019-05-17,Rigas FS,Metta / LU,2,2,D
+2019-05-17,FK Liepaja,Jelgava,1,0,H
+2019-05-18,FK Ventspils,Valmiera / BSS,2,2,D
+2019-05-18,BFC Daugavpils,Riga,0,3,A
+2019-05-21,Jelgava,Spartaks Jurmala,0,3,A
+2019-05-21,Metta / LU,FK Liepaja,1,2,A
+2019-05-22,BFC Daugavpils,FK Ventspils,0,3,A
+2019-05-22,Rigas FS,Valmiera / BSS,0,1,A
+2019-05-25,Spartaks Jurmala,Metta / LU,1,0,H
+2019-05-26,FK Liepaja,Valmiera / BSS,1,0,H
+2019-05-26,FK Ventspils,Riga,1,0,H
+2019-05-27,Rigas FS,BFC Daugavpils,3,2,H
+2019-05-31,Valmiera / BSS,Spartaks Jurmala,1,2,A
+2019-05-31,Metta / LU,Jelgava,2,1,H
+2019-06-01,BFC Daugavpils,FK Liepaja,1,0,H
+2019-06-01,Riga,Rigas FS,2,0,H
+2019-06-15,Jelgava,Valmiera / BSS,0,1,A
+2019-06-15,Rigas FS,FK Ventspils,4,1,H
+2019-06-15,FK Liepaja,Riga,1,2,A
+2019-06-16,Spartaks Jurmala,BFC Daugavpils,3,0,H
+2019-06-20,FK Liepaja,FK Ventspils,4,0,H
+2019-06-21,BFC Daugavpils,Jelgava,0,2,A
+2019-06-21,Valmiera / BSS,Metta / LU,0,2,A
+2019-06-21,Riga,Spartaks Jurmala,6,1,H
+2019-06-25,FK Ventspils,Spartaks Jurmala,2,2,D
+2019-06-25,Rigas FS,FK Liepaja,1,2,A
+2019-06-26,BFC Daugavpils,Metta / LU,0,0,D
+2019-06-26,Riga,Jelgava,0,1,A
+2019-06-29,Spartaks Jurmala,Rigas FS,1,0,H
+2019-06-30,Valmiera / BSS,BFC Daugavpils,1,1,D
+2019-06-30,Jelgava,FK Ventspils,1,2,A
+2019-06-30,Metta / LU,Riga,0,4,A
+2019-07-04,Riga,Valmiera / BSS,0,0,D
+2019-07-05,FK Liepaja,Spartaks Jurmala,2,2,D
+2019-07-06,FK Ventspils,Metta / LU,2,1,H
+2019-07-06,Rigas FS,Jelgava,2,0,H
+2019-07-20,Riga,BFC Daugavpils,4,0,H
+2019-07-21,Metta / LU,Rigas FS,1,1,D
+2019-07-21,FK Ventspils,Valmiera / BSS,2,2,D
+2019-07-21,Jelgava,FK Liepaja,0,0,D
+2019-07-27,Spartaks Jurmala,Jelgava,1,2,A
+2019-07-28,FK Ventspils,BFC Daugavpils,3,0,H
+2019-07-28,Metta / LU,FK Liepaja,2,3,A
+2019-07-28,Rigas FS,Valmiera / BSS,1,0,H
+2019-08-03,Metta / LU,Spartaks Jurmala,1,1,D
+2019-08-04,Valmiera / BSS,FK Liepaja,2,1,H
+2019-08-05,BFC Daugavpils,Rigas FS,0,1,A
+2019-08-10,Spartaks Jurmala,Valmiera / BSS,3,0,H
+2019-08-10,Jelgava,Metta / LU,1,0,H
+2019-08-11,FK Liepaja,BFC Daugavpils,1,2,A
+2019-08-11,Rigas FS,Riga,1,2,A
+2019-08-17,Valmiera / BSS,Jelgava,3,1,H
+2019-08-17,BFC Daugavpils,Spartaks Jurmala,2,3,A
+2019-08-18,FK Ventspils,Rigas FS,3,0,H
+2019-08-18,Riga,FK Liepaja,1,0,H
+2019-08-24,FK Liepaja,FK Ventspils,1,2,A
+2019-08-25,Jelgava,BFC Daugavpils,2,2,D
+2019-08-25,Spartaks Jurmala,Riga,2,4,A
+2019-08-25,Metta / LU,Valmiera / BSS,0,0,D
+2019-08-30,Metta / LU,BFC Daugavpils,1,0,H
+2019-08-30,FK Liepaja,Rigas FS,3,3,D
+2019-08-31,Spartaks Jurmala,FK Ventspils,0,1,A
+2019-09-14,FK Ventspils,Jelgava,1,1,D
+2019-09-14,BFC Daugavpils,Valmiera / BSS,2,2,D
+2019-09-14,Riga,Metta / LU,5,0,H
+2019-09-15,Rigas FS,Spartaks Jurmala,6,0,H
+2019-09-18,Riga,FK Ventspils,0,0,D
+2019-09-21,Jelgava,Rigas FS,1,1,D
+2019-09-21,Spartaks Jurmala,FK Liepaja,4,2,H
+2019-09-22,Metta / LU,FK Ventspils,3,3,D
+2019-09-22,Valmiera / BSS,Riga,0,1,A
+2019-09-29,Valmiera / BSS,FK Ventspils,2,0,H
+2019-09-29,FK Liepaja,Jelgava,3,1,H
+2019-09-30,Riga,BFC Daugavpils,2,0,H
+2019-09-30,Rigas FS,Metta / LU,6,1,H
+2019-10-05,FK Liepaja,Metta / LU,2,1,H
+2019-10-05,Jelgava,Spartaks Jurmala,5,2,H
+2019-10-05,BFC Daugavpils,FK Ventspils,1,1,D
+2019-10-05,Valmiera / BSS,Rigas FS,1,3,A
+2019-10-19,FK Ventspils,Riga,2,1,H
+2019-10-19,Rigas FS,BFC Daugavpils,2,0,H
+2019-10-20,Spartaks Jurmala,Metta / LU,2,2,D
+2019-10-20,FK Liepaja,Valmiera / BSS,2,3,A
+2019-10-23,Jelgava,Riga,0,0,D
+2019-10-27,BFC Daugavpils,FK Liepaja,1,0,H
+2019-10-27,Valmiera / BSS,Spartaks Jurmala,3,0,H
+2019-10-30,Metta / LU,Jelgava,0,3,A
+2019-10-30,Riga,Rigas FS,1,1,D
+2019-11-03,Spartaks Jurmala,BFC Daugavpils,2,0,H
+2019-11-03,FK Liepaja,Riga,2,2,D
+2019-11-03,Jelgava,Valmiera / BSS,0,0,D
+2019-11-03,Rigas FS,FK Ventspils,2,1,H
+2019-11-09,FK Ventspils,FK Liepaja,0,1,A
+2019-11-09,BFC Daugavpils,Jelgava,2,2,D
+2019-11-09,Valmiera / BSS,Metta / LU,3,3,D
+2019-11-09,Riga,Spartaks Jurmala,4,1,H

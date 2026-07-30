@@ -1,0 +1,183 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2023-03-03,FK Trakai,Siauliai,0,1,A
+2023-03-04,Suduva Marijampole,Kauno Zalgiris,2,4,A
+2023-03-04,Hegelmann Litauen,Dainava,3,0,H
+2023-03-05,Banga,Panevezys,0,4,A
+2023-03-05,FK Zalgiris Vilnius,Dziugas Telsiai,2,3,A
+2023-03-10,Kauno Zalgiris,Siauliai,0,0,D
+2023-03-11,Suduva Marijampole,Hegelmann Litauen,2,0,H
+2023-03-11,FK Zalgiris Vilnius,Banga,1,0,H
+2023-03-12,Dziugas Telsiai,Dainava,0,1,A
+2023-03-12,FK Trakai,Panevezys,0,4,A
+2023-03-14,Siauliai,Hegelmann Litauen,3,1,H
+2023-03-14,Kauno Zalgiris,FK Zalgiris Vilnius,1,1,D
+2023-03-15,Banga,Dziugas Telsiai,2,0,H
+2023-03-15,Suduva Marijampole,Panevezys,0,2,A
+2023-03-15,FK Trakai,Dainava,0,0,D
+2023-03-18,Hegelmann Litauen,Dziugas Telsiai,2,0,H
+2023-03-18,Dainava,Banga,2,1,H
+2023-03-19,Panevezys,Kauno Zalgiris,2,1,H
+2023-03-19,Siauliai,Suduva Marijampole,3,0,H
+2023-03-19,FK Zalgiris Vilnius,FK Trakai,1,0,H
+2023-03-31,Banga,Hegelmann Litauen,0,5,A
+2023-04-01,Panevezys,Siauliai,3,1,H
+2023-04-01,Dziugas Telsiai,FK Trakai,1,1,D
+2023-04-01,FK Zalgiris Vilnius,Suduva Marijampole,4,0,H
+2023-04-02,Dainava,Kauno Zalgiris,0,0,D
+2023-04-04,Hegelmann Litauen,Panevezys,2,4,A
+2023-04-04,Siauliai,FK Zalgiris Vilnius,1,0,H
+2023-04-05,Kauno Zalgiris,Dziugas Telsiai,3,1,H
+2023-04-05,FK Trakai,Banga,0,0,D
+2023-04-05,Suduva Marijampole,Dainava,2,0,H
+2023-04-08,Panevezys,FK Zalgiris Vilnius,0,0,D
+2023-04-08,Dainava,Siauliai,0,0,D
+2023-04-09,Hegelmann Litauen,FK Trakai,0,1,A
+2023-04-09,Dziugas Telsiai,Suduva Marijampole,0,2,A
+2023-04-09,Banga,Kauno Zalgiris,0,2,A
+2023-04-14,Suduva Marijampole,Banga,0,2,A
+2023-04-15,Panevezys,Dainava,0,0,D
+2023-04-15,Siauliai,Dziugas Telsiai,2,0,H
+2023-04-15,Kauno Zalgiris,FK Trakai,3,1,H
+2023-04-16,FK Zalgiris Vilnius,Hegelmann Litauen,1,0,H
+2023-04-18,Banga,Siauliai,0,1,A
+2023-04-18,FK Trakai,Suduva Marijampole,1,0,H
+2023-04-19,Dziugas Telsiai,Panevezys,0,3,A
+2023-04-19,Hegelmann Litauen,Kauno Zalgiris,3,2,H
+2023-04-19,Dainava,FK Zalgiris Vilnius,0,2,A
+2023-04-22,Siauliai,FK Trakai,1,1,D
+2023-04-23,Dziugas Telsiai,FK Zalgiris Vilnius,0,2,A
+2023-04-23,Dainava,Hegelmann Litauen,1,0,H
+2023-04-23,Kauno Zalgiris,Suduva Marijampole,3,0,H
+2023-04-24,Panevezys,Banga,2,0,H
+2023-04-28,Hegelmann Litauen,Suduva Marijampole,6,0,H
+2023-04-29,Panevezys,FK Trakai,3,1,H
+2023-04-29,Dainava,Dziugas Telsiai,2,2,D
+2023-04-29,Siauliai,Kauno Zalgiris,1,0,H
+2023-04-30,Banga,FK Zalgiris Vilnius,0,2,A
+2023-05-02,Dziugas Telsiai,Hegelmann Litauen,2,0,H
+2023-05-02,Suduva Marijampole,Siauliai,0,2,A
+2023-05-03,Banga,Dainava,2,1,H
+2023-05-03,FK Trakai,FK Zalgiris Vilnius,0,2,A
+2023-05-04,Kauno Zalgiris,Panevezys,0,1,A
+2023-05-12,Hegelmann Litauen,Siauliai,2,3,A
+2023-05-13,Dainava,FK Trakai,5,0,H
+2023-05-13,Panevezys,Suduva Marijampole,0,0,D
+2023-05-14,Dziugas Telsiai,Banga,1,2,A
+2023-05-14,FK Zalgiris Vilnius,Kauno Zalgiris,2,1,H
+2023-05-19,Hegelmann Litauen,Banga,5,0,H
+2023-05-20,Suduva Marijampole,FK Zalgiris Vilnius,2,1,H
+2023-05-20,Kauno Zalgiris,Dainava,1,0,H
+2023-05-21,FK Trakai,Dziugas Telsiai,1,1,D
+2023-05-21,Siauliai,Panevezys,0,0,D
+2023-05-26,Suduva Marijampole,Dziugas Telsiai,1,0,H
+2023-05-27,Siauliai,Dainava,2,0,H
+2023-05-27,FK Trakai,Hegelmann Litauen,0,4,A
+2023-05-28,Kauno Zalgiris,Banga,0,0,D
+2023-05-28,FK Zalgiris Vilnius,Panevezys,2,1,H
+2023-06-02,Dziugas Telsiai,Kauno Zalgiris,0,0,D
+2023-06-03,Dainava,Suduva Marijampole,2,1,H
+2023-06-03,Banga,FK Trakai,1,1,D
+2023-06-03,Panevezys,Hegelmann Litauen,1,0,H
+2023-06-04,FK Zalgiris Vilnius,Siauliai,2,2,D
+2023-06-06,Banga,Suduva Marijampole,1,0,H
+2023-06-06,FK Trakai,Kauno Zalgiris,1,1,D
+2023-06-07,Dziugas Telsiai,Siauliai,1,1,D
+2023-06-07,Dainava,Panevezys,0,1,A
+2023-06-07,Hegelmann Litauen,FK Zalgiris Vilnius,0,1,A
+2023-06-10,Suduva Marijampole,FK Trakai,0,0,D
+2023-06-10,Siauliai,Banga,1,1,D
+2023-06-11,FK Zalgiris Vilnius,Dainava,0,0,D
+2023-06-11,Panevezys,Dziugas Telsiai,4,0,H
+2023-06-22,Dziugas Telsiai,FK Zalgiris Vilnius,1,2,A
+2023-06-22,Kauno Zalgiris,Suduva Marijampole,1,1,D
+2023-06-24,Hegelmann Litauen,Dainava,0,0,D
+2023-06-24,Siauliai,FK Trakai,2,0,H
+2023-06-25,Banga,Panevezys,0,1,A
+2023-06-27,Kauno Zalgiris,FK Zalgiris Vilnius,2,5,A
+2023-06-28,Siauliai,Hegelmann Litauen,1,3,A
+2023-06-30,Panevezys,FK Trakai,1,0,H
+2023-07-01,Dziugas Telsiai,Dainava,2,1,H
+2023-07-02,Kauno Zalgiris,Siauliai,3,2,H
+2023-07-02,Suduva Marijampole,Hegelmann Litauen,0,1,A
+2023-07-02,Banga,FK Zalgiris Vilnius,1,4,A
+2023-07-06,FK Zalgiris Vilnius,FK Trakai,3,0,H
+2023-07-07,Panevezys,Kauno Zalgiris,3,0,H
+2023-07-08,Dziugas Telsiai,Hegelmann Litauen,1,2,A
+2023-07-08,Siauliai,Suduva Marijampole,3,2,H
+2023-07-09,Dainava,Banga,0,1,A
+2023-07-14,Banga,Dziugas Telsiai,0,1,A
+2023-07-16,FK Trakai,Dainava,1,3,A
+2023-07-18,Banga,Kauno Zalgiris,1,1,D
+2023-07-21,FK Zalgiris Vilnius,Suduva Marijampole,4,0,H
+2023-07-22,Dainava,Kauno Zalgiris,1,1,D
+2023-07-23,Dziugas Telsiai,FK Trakai,2,2,D
+2023-07-24,Panevezys,Siauliai,2,0,H
+2023-07-25,Banga,Hegelmann Litauen,0,3,A
+2023-07-28,Dainava,Siauliai,1,2,A
+2023-07-29,Dziugas Telsiai,Suduva Marijampole,1,1,D
+2023-07-30,Hegelmann Litauen,FK Trakai,1,0,H
+2023-07-30,FK Zalgiris Vilnius,Panevezys,1,2,A
+2023-08-04,Suduva Marijampole,Dainava,2,0,H
+2023-08-05,FK Trakai,Banga,0,1,A
+2023-08-06,Siauliai,FK Zalgiris Vilnius,0,0,D
+2023-08-06,Kauno Zalgiris,Dziugas Telsiai,0,0,D
+2023-08-07,Panevezys,Hegelmann Litauen,2,2,D
+2023-08-11,Suduva Marijampole,Banga,1,0,H
+2023-08-11,Siauliai,Dziugas Telsiai,0,1,A
+2023-08-13,Panevezys,Dainava,2,0,H
+2023-08-13,Kauno Zalgiris,FK Trakai,3,2,H
+2023-08-13,FK Zalgiris Vilnius,Hegelmann Litauen,4,0,H
+2023-08-18,FK Trakai,Suduva Marijampole,1,2,A
+2023-08-19,Dziugas Telsiai,Panevezys,0,3,A
+2023-08-19,Banga,Siauliai,1,1,D
+2023-08-20,Dainava,FK Zalgiris Vilnius,0,2,A
+2023-08-20,Hegelmann Litauen,Kauno Zalgiris,1,1,D
+2023-08-25,FK Trakai,Siauliai,0,1,A
+2023-08-26,Suduva Marijampole,Kauno Zalgiris,2,6,A
+2023-08-26,Dainava,Hegelmann Litauen,1,2,A
+2023-08-27,Panevezys,Banga,2,0,H
+2023-08-27,FK Zalgiris Vilnius,Dziugas Telsiai,4,1,H
+2023-09-02,FK Trakai,Panevezys,0,2,A
+2023-09-02,Hegelmann Litauen,Suduva Marijampole,2,0,H
+2023-09-02,Dainava,Dziugas Telsiai,1,0,H
+2023-09-03,Siauliai,Kauno Zalgiris,1,1,D
+2023-09-03,FK Zalgiris Vilnius,Banga,1,0,H
+2023-09-16,Suduva Marijampole,Panevezys,0,1,A
+2023-09-16,Banga,Dainava,1,0,H
+2023-09-17,Hegelmann Litauen,Dziugas Telsiai,1,1,D
+2023-09-17,FK Trakai,FK Zalgiris Vilnius,2,6,A
+2023-09-22,Dainava,FK Trakai,0,1,A
+2023-09-23,Dziugas Telsiai,Banga,0,1,A
+2023-09-23,Panevezys,Suduva Marijampole,2,1,H
+2023-09-24,Hegelmann Litauen,Siauliai,3,1,H
+2023-09-24,FK Zalgiris Vilnius,Kauno Zalgiris,0,2,A
+2023-09-28,Kauno Zalgiris,Dainava,1,1,D
+2023-09-29,Hegelmann Litauen,Banga,1,0,H
+2023-09-30,Suduva Marijampole,FK Zalgiris Vilnius,0,2,A
+2023-09-30,FK Trakai,Dziugas Telsiai,0,0,D
+2023-10-07,Kauno Zalgiris,Banga,3,1,H
+2023-10-07,Suduva Marijampole,Dziugas Telsiai,0,0,D
+2023-10-07,FK Trakai,Hegelmann Litauen,2,3,A
+2023-10-08,Siauliai,Dainava,0,0,D
+2023-10-08,Panevezys,FK Zalgiris Vilnius,2,0,H
+2023-10-20,Dainava,Suduva Marijampole,1,2,A
+2023-10-21,Dziugas Telsiai,Kauno Zalgiris,0,2,A
+2023-10-21,Hegelmann Litauen,Panevezys,0,0,D
+2023-10-21,Banga,FK Trakai,1,2,A
+2023-10-22,FK Zalgiris Vilnius,Siauliai,2,2,D
+2023-10-25,Suduva Marijampole,Siauliai,2,0,H
+2023-10-25,Kauno Zalgiris,Panevezys,1,1,D
+2023-10-29,Kauno Zalgiris,Hegelmann Litauen,4,0,H
+2023-10-30,Siauliai,Panevezys,1,1,D
+2023-11-03,Banga,Suduva Marijampole,1,0,H
+2023-11-04,Dziugas Telsiai,Siauliai,3,3,D
+2023-11-04,Hegelmann Litauen,FK Zalgiris Vilnius,2,0,H
+2023-11-05,Dainava,Panevezys,1,2,A
+2023-11-05,FK Trakai,Kauno Zalgiris,1,3,A
+2023-11-12,FK Zalgiris Vilnius,Dainava,1,0,H
+2023-11-12,Suduva Marijampole,FK Trakai,0,3,A
+2023-11-12,Siauliai,Banga,3,0,H
+2023-11-12,Kauno Zalgiris,Hegelmann Litauen,4,2,H
+2023-11-12,Panevezys,Dziugas Telsiai,0,0,D
+2023-11-18,Be1 NFA,Dziugas Telsiai,1,1,D
+2023-11-25,Dziugas Telsiai,Be1 NFA,1,0,H

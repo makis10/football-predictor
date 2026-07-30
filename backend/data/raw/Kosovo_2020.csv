@@ -1,0 +1,181 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2020-09-18,Trepca'89,Arberia,0,2,A
+2020-09-19,Prishtina,Drenica Skenderaj,3,0,H
+2020-09-19,Besa Peje,Ballkani,1,4,A
+2020-09-20,Feronikeli,Gjilani,4,0,H
+2020-09-22,Drenica Skenderaj,Besa Peje,2,1,H
+2020-09-22,Arberia,Prishtina,1,1,D
+2020-09-23,Ballkani,Feronikeli,3,2,H
+2020-09-23,Llapi,Gjilani,0,1,A
+2020-09-25,Besa Peje,Arberia,0,3,A
+2020-09-26,Trepca'89,Llapi,1,0,H
+2020-09-26,Feronikeli,Drenica Skenderaj,2,2,D
+2020-09-27,Gjilani,Ballkani,0,0,D
+2020-09-29,Arberia,Feronikeli,0,0,D
+2020-09-30,Trepca'89,Prishtina,1,0,H
+2020-09-30,Drita,Besa Peje,3,1,H
+2020-09-30,Llapi,Ballkani,1,3,A
+2020-10-01,Drenica Skenderaj,Gjilani,0,0,D
+2020-10-03,Besa Peje,Trepca'89,2,1,H
+2020-10-04,Feronikeli,Drita,1,2,A
+2020-10-04,Prishtina,Llapi,0,0,D
+2020-10-04,Ballkani,Drenica Skenderaj,5,0,H
+2020-10-05,Gjilani,Arberia,3,1,H
+2020-10-14,Drita,Trepca'89,1,0,H
+2020-10-16,Arberia,Ballkani,2,4,A
+2020-10-17,Prishtina,Besa Peje,4,0,H
+2020-10-17,Llapi,Drenica Skenderaj,0,1,A
+2020-10-18,Drita,Gjilani,0,0,D
+2020-10-18,Trepca'89,Feronikeli,0,0,D
+2020-10-20,Drenica Skenderaj,Arberia,0,1,A
+2020-10-20,Besa Peje,Llapi,2,2,D
+2020-10-21,Feronikeli,Prishtina,1,2,A
+2020-10-21,Ballkani,Drita,2,0,H
+2020-10-21,Gjilani,Trepca'89,0,0,D
+2020-10-24,Drita,Drenica Skenderaj,4,1,H
+2020-10-24,Llapi,Arberia,2,0,H
+2020-10-24,Besa Peje,Feronikeli,1,1,D
+2020-10-25,Prishtina,Gjilani,0,2,A
+2020-10-25,Trepca'89,Ballkani,4,3,H
+2020-10-27,Feronikeli,Llapi,1,0,H
+2020-10-27,Arberia,Drita,0,1,A
+2020-10-28,Ballkani,Prishtina,2,1,H
+2020-10-28,Gjilani,Besa Peje,1,0,H
+2020-10-28,Drenica Skenderaj,Trepca'89,2,1,H
+2020-10-31,Ballkani,Besa Peje,4,1,H
+2020-10-31,Gjilani,Feronikeli,0,0,D
+2020-10-31,Arberia,Trepca'89,1,2,A
+2020-11-01,Drenica Skenderaj,Prishtina,1,0,H
+2020-11-01,Llapi,Drita,1,2,A
+2020-11-04,Prishtina,Arberia,1,0,H
+2020-11-04,Trepca'89,Drita,0,1,A
+2020-11-04,Besa Peje,Drenica Skenderaj,0,0,D
+2020-11-05,Feronikeli,Ballkani,1,1,D
+2020-11-05,Gjilani,Llapi,2,0,H
+2020-11-10,Drita,Prishtina,0,0,D
+2020-11-10,Drenica Skenderaj,Feronikeli,1,0,H
+2020-11-10,Llapi,Trepca'89,5,0,H
+2020-11-11,Arberia,Besa Peje,1,0,H
+2020-11-21,Feronikeli,Arberia,1,0,H
+2020-11-21,Gjilani,Drenica Skenderaj,1,0,H
+2020-11-21,Besa Peje,Drita,1,4,A
+2020-11-22,Prishtina,Trepca'89,4,2,H
+2020-11-22,Ballkani,Llapi,4,2,H
+2020-11-24,Drita,Feronikeli,1,1,D
+2020-11-24,Arberia,Gjilani,1,0,H
+2020-11-25,Trepca'89,Besa Peje,4,2,H
+2020-11-25,Llapi,Prishtina,0,2,A
+2020-11-26,Drenica Skenderaj,Ballkani,1,2,A
+2020-11-28,Besa Peje,Prishtina,0,2,A
+2020-11-29,Feronikeli,Trepca'89,2,0,H
+2020-11-29,Gjilani,Drita,2,3,A
+2020-11-30,Ballkani,Arberia,2,1,H
+2020-11-30,Drenica Skenderaj,Llapi,0,1,A
+2020-12-03,Drita,Llapi,1,0,H
+2020-12-04,Prishtina,Feronikeli,0,0,D
+2020-12-05,Trepca'89,Gjilani,3,0,H
+2020-12-05,Arberia,Drenica Skenderaj,1,0,H
+2020-12-06,Llapi,Besa Peje,2,0,H
+2020-12-06,Drita,Ballkani,2,1,H
+2020-12-09,Feronikeli,Besa Peje,3,0,H
+2020-12-09,Gjilani,Prishtina,0,3,A
+2020-12-09,Drenica Skenderaj,Drita,0,3,A
+2020-12-10,Ballkani,Trepca'89,2,0,H
+2020-12-10,Arberia,Llapi,1,2,A
+2020-12-12,Besa Peje,Gjilani,1,2,A
+2020-12-13,Llapi,Feronikeli,3,2,H
+2020-12-13,Prishtina,Ballkani,2,1,H
+2020-12-14,Trepca'89,Drenica Skenderaj,0,0,D
+2020-12-14,Drita,Arberia,1,1,D
+2020-12-19,Ballkani,Gjilani,0,4,A
+2020-12-20,Prishtina,Drita,1,1,D
+2021-02-13,Prishtina,Drenica Skenderaj,3,1,H
+2021-02-13,Drita,Llapi,1,0,H
+2021-02-13,Besa Peje,Ballkani,0,3,A
+2021-02-15,Trepca'89,Arberia,1,1,D
+2021-02-15,Feronikeli,Gjilani,1,1,D
+2021-02-19,Arberia,Prishtina,0,4,A
+2021-02-20,Drita,Trepca'89,1,2,A
+2021-02-20,Drenica Skenderaj,Besa Peje,0,0,D
+2021-02-21,Ballkani,Feronikeli,1,0,H
+2021-02-21,Llapi,Gjilani,3,1,H
+2021-02-24,Prishtina,Drita,2,0,H
+2021-02-24,Trepca'89,Llapi,1,0,H
+2021-02-24,Gjilani,Ballkani,1,1,D
+2021-02-25,Feronikeli,Drenica Skenderaj,1,3,A
+2021-02-25,Besa Peje,Arberia,0,3,A
+2021-02-27,Trepca'89,Prishtina,1,2,A
+2021-02-28,Drita,Besa Peje,3,1,H
+2021-02-28,Llapi,Ballkani,1,0,H
+2021-03-01,Drenica Skenderaj,Gjilani,0,0,D
+2021-03-01,Arberia,Feronikeli,0,3,A
+2021-03-05,Ballkani,Drenica Skenderaj,2,1,H
+2021-03-05,Besa Peje,Trepca'89,1,2,A
+2021-03-06,Prishtina,Llapi,2,0,H
+2021-03-06,Gjilani,Arberia,1,1,D
+2021-03-07,Feronikeli,Drita,0,1,A
+2021-03-10,Prishtina,Besa Peje,5,1,H
+2021-03-10,Trepca'89,Feronikeli,0,0,D
+2021-03-10,Llapi,Drenica Skenderaj,3,3,D
+2021-03-11,Drita,Gjilani,2,0,H
+2021-03-11,Arberia,Ballkani,2,6,A
+2021-03-13,Feronikeli,Prishtina,2,0,H
+2021-03-13,Besa Peje,Llapi,1,4,A
+2021-03-14,Gjilani,Trepca'89,2,1,H
+2021-03-14,Drenica Skenderaj,Arberia,1,1,D
+2021-03-14,Ballkani,Drita,0,0,D
+2021-03-20,Drita,Drenica Skenderaj,1,1,D
+2021-03-20,Besa Peje,Feronikeli,2,1,H
+2021-03-21,Llapi,Arberia,4,3,H
+2021-03-21,Trepca'89,Ballkani,0,2,A
+2021-03-30,Prishtina,Gjilani,0,0,D
+2021-04-03,Drenica Skenderaj,Trepca'89,2,0,H
+2021-04-03,Arberia,Drita,1,3,A
+2021-04-04,Feronikeli,Llapi,4,0,H
+2021-04-04,Ballkani,Prishtina,0,1,A
+2021-04-05,Gjilani,Besa Peje,5,1,H
+2021-04-09,Arberia,Trepca'89,0,1,A
+2021-04-10,Ballkani,Besa Peje,4,1,H
+2021-04-10,Gjilani,Feronikeli,1,0,H
+2021-04-11,Drenica Skenderaj,Prishtina,0,1,A
+2021-04-11,Llapi,Drita,2,4,A
+2021-04-16,Besa Peje,Drenica Skenderaj,1,2,A
+2021-04-17,Prishtina,Arberia,2,0,H
+2021-04-17,Gjilani,Llapi,0,2,A
+2021-04-18,Trepca'89,Drita,0,1,A
+2021-04-18,Feronikeli,Ballkani,0,2,A
+2021-04-24,Drenica Skenderaj,Feronikeli,1,1,D
+2021-04-24,Arberia,Besa Peje,2,1,H
+2021-04-25,Ballkani,Gjilani,1,0,H
+2021-04-25,Drita,Prishtina,1,2,A
+2021-04-25,Llapi,Trepca'89,2,1,H
+2021-04-27,Feronikeli,Arberia,0,1,A
+2021-04-28,Prishtina,Trepca'89,3,1,H
+2021-04-28,Ballkani,Llapi,1,0,H
+2021-04-28,Gjilani,Drenica Skenderaj,0,0,D
+2021-04-28,Besa Peje,Drita,1,1,D
+2021-05-01,Trepca'89,Besa Peje,1,1,D
+2021-05-01,Drita,Feronikeli,3,1,H
+2021-05-01,Arberia,Gjilani,3,4,A
+2021-05-02,Drenica Skenderaj,Ballkani,2,1,H
+2021-05-02,Llapi,Prishtina,1,3,A
+2021-05-05,Feronikeli,Trepca'89,3,0,H
+2021-05-05,Gjilani,Drita,1,1,D
+2021-05-05,Besa Peje,Prishtina,0,3,A
+2021-05-06,Ballkani,Arberia,2,3,A
+2021-05-06,Drenica Skenderaj,Llapi,4,2,H
+2021-05-09,Prishtina,Feronikeli,2,1,H
+2021-05-09,Trepca'89,Gjilani,2,1,H
+2021-05-09,Drita,Ballkani,1,1,D
+2021-05-09,Llapi,Besa Peje,1,0,H
+2021-05-09,Arberia,Drenica Skenderaj,1,1,D
+2021-05-16,Feronikeli,Besa Peje,3,1,H
+2021-05-16,Ballkani,Trepca'89,4,3,H
+2021-05-16,Gjilani,Prishtina,1,2,A
+2021-05-16,Drenica Skenderaj,Drita,0,3,A
+2021-05-16,Arberia,Llapi,3,2,H
+2021-05-23,Prishtina,Ballkani,2,5,A
+2021-05-23,Trepca'89,Drenica Skenderaj,2,1,H
+2021-05-23,Drita,Arberia,2,0,H
+2021-05-23,Llapi,Feronikeli,1,1,D
+2021-05-23,Besa Peje,Gjilani,1,0,H

@@ -1,0 +1,200 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2025-08-15,Karvan,Qabala,1,1,D
+2025-08-16,Imisli FK,Turan,0,1,A
+2025-08-16,Neftchi Baku,Samax FK,1,1,D
+2025-08-17,Sumqayt,Kapaz,3,0,H
+2025-08-19,Zira,Araz,1,1,D
+2025-08-22,Imisli FK,Neftchi Baku,0,0,D
+2025-08-22,Qarabag,Sumqayt,0,1,A
+2025-08-23,Kapaz,Karvan,2,3,A
+2025-08-24,Samax FK,Sabah FA,1,2,A
+2025-08-24,Turan,Araz,1,2,A
+2025-08-25,Qabala,Zira,1,2,A
+2025-08-29,Sumqayt,Samax FK,1,1,D
+2025-08-29,Neftchi Baku,Turan,0,1,A
+2025-08-30,Zira,Kapaz,5,0,H
+2025-08-30,Araz,Qabala,2,1,H
+2025-08-31,Karvan,Qarabag,0,2,A
+2025-08-31,Sabah FA,Imisli FK,0,1,A
+2025-09-12,Kapaz,Araz,0,2,A
+2025-09-12,Qarabag,Zira,1,1,D
+2025-09-13,Turan,Qabala,1,0,H
+2025-09-14,Samax FK,Karvan,3,0,H
+2025-09-14,Neftchi Baku,Sabah FA,0,0,D
+2025-09-19,Karvan,Imisli FK,0,3,A
+2025-09-19,Zira,Samax FK,2,1,H
+2025-09-20,Qabala,Kapaz,3,0,H
+2025-09-20,Sabah FA,Turan,2,0,H
+2025-09-21,Araz,Qarabag,0,5,A
+2025-09-21,Sumqayt,Neftchi Baku,0,2,A
+2025-09-26,Imisli FK,Zira,1,1,D
+2025-09-26,Qarabag,Qabala,2,0,H
+2025-09-27,Samax FK,Araz,1,1,D
+2025-09-27,Neftchi Baku,Karvan,0,0,D
+2025-09-28,Turan,Kapaz,3,0,H
+2025-09-28,Sabah FA,Sumqayt,1,1,D
+2025-10-03,Araz,Imisli FK,2,0,H
+2025-10-03,Zira,Neftchi Baku,2,2,D
+2025-10-04,Qarabag,Kapaz,1,0,H
+2025-10-04,Sumqayt,Turan,0,3,A
+2025-10-05,Karvan,Sabah FA,0,2,A
+2025-10-05,Qabala,Samax FK,0,1,A
+2025-10-17,Samax FK,Kapaz,1,4,A
+2025-10-17,Turan,Qarabag,1,2,A
+2025-10-18,Imisli FK,Qabala,2,2,D
+2025-10-18,Sumqayt,Karvan,4,1,H
+2025-10-19,Sabah FA,Zira,3,0,H
+2025-10-19,Neftchi Baku,Araz,2,2,D
+2025-10-24,Karvan,Turan,1,2,A
+2025-10-24,Kapaz,Imisli FK,0,3,A
+2025-10-25,Araz,Sabah FA,2,2,D
+2025-10-25,Zira,Sumqayt,1,0,H
+2025-10-26,Qabala,Neftchi Baku,0,2,A
+2025-10-26,Qarabag,Samax FK,0,0,D
+2025-10-31,Qarabag,Imisli FK,2,0,H
+2025-11-01,Karvan,Zira,2,3,A
+2025-11-01,Neftchi Baku,Kapaz,5,1,H
+2025-11-02,Turan,Samax FK,2,1,H
+2025-11-02,Sumqayt,Araz,3,2,H
+2025-11-03,Sabah FA,Qabala,1,0,H
+2025-11-07,Samax FK,Imisli FK,1,0,H
+2025-11-07,Qabala,Sumqayt,0,2,A
+2025-11-08,Araz,Karvan,2,1,H
+2025-11-08,Zira,Turan,0,0,D
+2025-11-09,Kapaz,Sabah FA,1,3,A
+2025-11-09,Qarabag,Neftchi Baku,2,0,H
+2025-11-21,Karvan,Kapaz,1,2,A
+2025-11-21,Sumqayt,Qarabag,2,4,A
+2025-11-22,Araz,Turan,1,1,D
+2025-11-22,Zira,Qabala,1,0,H
+2025-11-23,Sabah FA,Samax FK,0,0,D
+2025-11-23,Neftchi Baku,Imisli FK,2,3,A
+2025-11-28,Kapaz,Zira,0,2,A
+2025-11-28,Turan,Neftchi Baku,0,0,D
+2025-11-29,Imisli FK,Sabah FA,0,3,A
+2025-11-29,Qarabag,Karvan,2,0,H
+2025-11-30,Samax FK,Sumqayt,1,2,A
+2025-11-30,Qabala,Araz,2,1,H
+2025-12-06,Zira,Qarabag,1,1,D
+2025-12-07,Karvan,Samax FK,0,3,A
+2025-12-08,Sabah FA,Neftchi Baku,2,0,H
+2025-12-09,Araz,Kapaz,2,0,H
+2025-12-09,Sumqayt,Imisli FK,1,0,H
+2025-12-13,Samax FK,Zira,2,1,H
+2025-12-13,Turan,Sabah FA,1,3,A
+2025-12-14,Kapaz,Qabala,1,0,H
+2025-12-14,Qarabag,Araz,5,1,H
+2025-12-15,Imisli FK,Karvan,1,1,D
+2025-12-15,Neftchi Baku,Sumqayt,2,2,D
+2025-12-18,Sabah FA,Qarabag,2,1,H
+2025-12-19,Kapaz,Turan,0,2,A
+2025-12-20,Karvan,Neftchi Baku,1,2,A
+2025-12-20,Zira,Imisli FK,0,0,D
+2025-12-21,Qabala,Qarabag,1,2,A
+2025-12-21,Araz,Samax FK,2,0,H
+2025-12-22,Sumqayt,Sabah FA,1,3,A
+2026-01-23,Imisli FK,Araz,2,2,D
+2026-01-23,Neftchi Baku,Zira,0,0,D
+2026-01-24,Samax FK,Qabala,0,4,A
+2026-01-24,Qarabag,Kapaz,0,2,A
+2026-01-25,Turan,Sumqayt,2,1,H
+2026-01-25,Sabah FA,Karvan,4,1,H
+2026-01-30,Karvan,Sumqayt,0,2,A
+2026-01-30,Qabala,Imisli FK,3,2,H
+2026-01-31,Kapaz,Samax FK,0,2,A
+2026-01-31,Zira,Sabah FA,1,3,A
+2026-02-01,Araz,Neftchi Baku,0,4,A
+2026-02-01,Qarabag,Turan,1,0,H
+2026-02-08,Sabah FA,Araz,4,1,H
+2026-02-08,Sumqayt,Zira,2,3,A
+2026-02-09,Imisli FK,Kapaz,0,0,D
+2026-02-09,Turan,Karvan,1,0,H
+2026-02-10,Samax FK,Qarabag,1,2,A
+2026-02-10,Neftchi Baku,Qabala,1,0,H
+2026-02-14,Imisli FK,Qarabag,0,1,A
+2026-02-14,Zira,Karvan,1,0,H
+2026-02-15,Kapaz,Neftchi Baku,1,3,A
+2026-02-15,Araz,Sumqayt,1,0,H
+2026-02-16,Samax FK,Turan,0,0,D
+2026-02-16,Qabala,Sabah FA,0,1,A
+2026-02-20,Turan,Zira,2,0,H
+2026-02-20,Sumqayt,Qabala,0,0,D
+2026-02-21,Karvan,Araz,0,2,A
+2026-02-22,Imisli FK,Samax FK,0,0,D
+2026-02-22,Sabah FA,Kapaz,1,0,H
+2026-02-24,Qabala,Turan,0,3,A
+2026-02-27,Kapaz,Sumqayt,3,0,H
+2026-02-27,Araz,Zira,0,1,A
+2026-02-28,Samax FK,Neftchi Baku,2,2,D
+2026-02-28,Qabala,Karvan,1,1,D
+2026-03-01,Turan,Imisli FK,0,0,D
+2026-03-01,Qarabag,Sabah FA,3,3,D
+2026-03-07,Karvan,Sumqayt,1,1,D
+2026-03-08,Samax FK,Imisli FK,0,0,D
+2026-03-08,Qarabag,Araz,6,0,H
+2026-03-09,Zira,Kapaz,2,2,D
+2026-03-09,Neftchi Baku,Turan,0,1,A
+2026-03-10,Sabah FA,Qabala,7,1,H
+2026-03-13,Araz,Karvan,2,1,H
+2026-03-13,Sumqayt,Samax FK,0,1,A
+2026-03-14,Imisli FK,Sabah FA,0,5,A
+2026-03-14,Zira,Qarabag,1,3,A
+2026-03-15,Kapaz,Turan,1,1,D
+2026-03-15,Qabala,Neftchi Baku,1,3,A
+2026-03-18,Samax FK,Araz,0,1,A
+2026-03-19,Karvan,Zira,0,1,A
+2026-03-19,Sabah FA,Sumqayt,3,1,H
+2026-03-20,Kapaz,Qarabag,1,0,H
+2026-03-20,Neftchi Baku,Imisli FK,6,0,H
+2026-03-21,Turan,Qabala,3,2,H
+2026-04-05,Kapaz,Qabala,0,2,A
+2026-04-05,Sumqayt,Neftchi Baku,1,3,A
+2026-04-06,Qarabag,Karvan,7,0,H
+2026-04-07,Imisli FK,Turan,1,1,D
+2026-04-07,Zira,Samax FK,1,1,D
+2026-04-07,Araz,Sabah FA,2,4,A
+2026-04-10,Karvan,Kapaz,4,1,H
+2026-04-11,Samax FK,Qarabag,0,0,D
+2026-04-11,Sabah FA,Zira,2,2,D
+2026-04-11,Neftchi Baku,Araz,2,1,H
+2026-04-12,Qabala,Imisli FK,0,1,A
+2026-04-12,Turan,Sumqayt,2,1,H
+2026-04-17,Araz,Turan,0,3,A
+2026-04-17,Zira,Neftchi Baku,1,1,D
+2026-04-18,Karvan,Samax FK,1,0,H
+2026-04-18,Qarabag,Sabah FA,0,1,A
+2026-04-19,Kapaz,Imisli FK,0,1,A
+2026-04-19,Sumqayt,Qabala,1,0,H
+2026-04-25,Imisli FK,Sumqayt,0,2,A
+2026-04-25,Qabala,Araz,1,1,D
+2026-04-26,Samax FK,Kapaz,2,0,H
+2026-04-26,Neftchi Baku,Qarabag,1,5,A
+2026-04-27,Turan,Zira,1,1,D
+2026-04-27,Sabah FA,Karvan,2,0,H
+2026-04-30,Neftchi Baku,Qarabag,2,1,H
+2026-05-02,Kapaz,Sumqayt,2,1,H
+2026-05-02,Araz,Imisli FK,0,1,A
+2026-05-03,Samax FK,Sabah FA,0,3,A
+2026-05-03,Zira,Qabala,1,0,H
+2026-05-04,Qarabag,Turan,2,1,H
+2026-05-05,Karvan,Neftchi Baku,0,3,A
+2026-05-08,Imisli FK,Zira,0,0,D
+2026-05-08,Sabah FA,Kapaz,0,1,A
+2026-05-09,Qabala,Qarabag,1,1,D
+2026-05-09,Sumqayt,Araz,2,1,H
+2026-05-10,Turan,Karvan,1,0,H
+2026-05-10,Neftchi Baku,Samax FK,3,0,H
+2026-05-15,Karvan,Qabala,1,2,A
+2026-05-15,Araz,Kapaz,2,0,H
+2026-05-16,Qarabag,Imisli FK,3,0,H
+2026-05-16,Samax FK,Turan,3,2,H
+2026-05-17,Zira,Sumqayt,2,1,H
+2026-05-17,Sabah FA,Neftchi Baku,1,2,A
+2026-05-21,Qabala,Samax FK,3,1,H
+2026-05-22,Turan,Sabah FA,1,2,A
+2026-05-22,Sumqayt,Qarabag,3,4,A
+2026-05-23,Kapaz,Neftchi Baku,0,1,A
+2026-05-23,Araz,Zira,3,2,H
+2026-05-24,Imisli FK,Karvan,1,1,D
+2026-05-28,Qabala,Mingcevir,2,0,H
+2025-09-13,Imisli FK,Sumqayt,0,3,A

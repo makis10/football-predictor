@@ -1,0 +1,224 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2021-07-23,Tsarsko Selo,Cherno More Varna,0,0,D
+2021-07-23,Beroe,Lokomotiv Sofia,1,0,H
+2021-07-24,Botev Plovdiv,Pirin Blagoevgrad,2,1,H
+2021-07-24,Levski Sofia,Slavia Sofia,1,2,A
+2021-07-25,CSKA 1948,CSKA Sofia,2,4,A
+2021-07-25,Lokomotiv Plovdiv,Ludogorets,1,3,A
+2021-07-26,Botev Vratsa,Arda Kardzhali,0,0,D
+2021-07-30,Slavia Sofia,Tsarsko Selo,0,0,D
+2021-07-31,Botev Vratsa,Levski Sofia,2,0,H
+2021-07-31,Ludogorets,CSKA 1948,3,0,H
+2021-08-01,Lokomotiv Sofia,Lokomotiv Plovdiv,1,0,H
+2021-08-02,Cherno More Varna,Botev Plovdiv,2,0,H
+2021-08-02,Pirin Blagoevgrad,Beroe,2,3,A
+2021-08-06,Tsarsko Selo,Botev Vratsa,1,2,A
+2021-08-06,CSKA 1948,Lokomotiv Sofia,1,1,D
+2021-08-07,Botev Plovdiv,Slavia Sofia,1,0,H
+2021-08-07,Beroe,Cherno More Varna,0,2,A
+2021-08-08,Levski Sofia,Arda Kardzhali,0,2,A
+2021-08-13,Pirin Blagoevgrad,CSKA 1948,4,1,H
+2021-08-14,Slavia Sofia,Beroe,3,2,H
+2021-08-14,Levski Sofia,Tsarsko Selo,3,1,H
+2021-08-16,Cherno More Varna,Lokomotiv Plovdiv,0,0,D
+2021-08-16,Botev Vratsa,Botev Plovdiv,1,1,D
+2021-08-20,Tsarsko Selo,Arda Kardzhali,1,0,H
+2021-08-20,Botev Plovdiv,Levski Sofia,3,1,H
+2021-08-21,CSKA 1948,Cherno More Varna,2,3,A
+2021-08-21,Ludogorets,Lokomotiv Sofia,5,0,H
+2021-08-22,Lokomotiv Plovdiv,Slavia Sofia,0,1,A
+2021-08-22,CSKA Sofia,Pirin Blagoevgrad,1,0,H
+2021-08-23,Beroe,Botev Vratsa,1,0,H
+2021-08-26,Tsarsko Selo,Botev Plovdiv,0,0,D
+2021-08-27,Slavia Sofia,CSKA 1948,2,1,H
+2021-08-27,Arda Kardzhali,Lokomotiv Sofia,1,1,D
+2021-08-28,Botev Vratsa,Lokomotiv Plovdiv,0,0,D
+2021-08-28,Levski Sofia,Beroe,2,1,H
+2021-08-29,Cherno More Varna,CSKA Sofia,0,1,A
+2021-08-29,Pirin Blagoevgrad,Ludogorets,1,3,A
+2021-09-10,Lokomotiv Sofia,Pirin Blagoevgrad,2,1,H
+2021-09-11,Ludogorets,Cherno More Varna,2,0,H
+2021-09-11,CSKA Sofia,Slavia Sofia,1,1,D
+2021-09-12,CSKA 1948,Botev Vratsa,5,1,H
+2021-09-12,Lokomotiv Plovdiv,Levski Sofia,2,2,D
+2021-09-13,Beroe,Tsarsko Selo,1,0,H
+2021-09-13,Botev Plovdiv,Arda Kardzhali,2,1,H
+2021-09-17,Tsarsko Selo,Lokomotiv Plovdiv,0,2,A
+2021-09-17,Arda Kardzhali,Pirin Blagoevgrad,3,0,H
+2021-09-17,Botev Plovdiv,Beroe,2,1,H
+2021-09-18,Cherno More Varna,Lokomotiv Sofia,1,1,D
+2021-09-18,Levski Sofia,CSKA 1948,0,0,D
+2021-09-19,Botev Vratsa,CSKA Sofia,2,4,A
+2021-09-19,Slavia Sofia,Ludogorets,1,0,H
+2021-09-24,Beroe,Arda Kardzhali,1,1,D
+2021-09-25,Lokomotiv Plovdiv,Botev Plovdiv,1,1,D
+2021-09-25,CSKA 1948,Tsarsko Selo,1,0,H
+2021-09-26,CSKA Sofia,Levski Sofia,2,1,H
+2021-09-26,Ludogorets,Botev Vratsa,3,1,H
+2021-09-27,Pirin Blagoevgrad,Cherno More Varna,2,2,D
+2021-09-27,Lokomotiv Sofia,Slavia Sofia,1,0,H
+2021-10-01,Botev Plovdiv,CSKA 1948,3,1,H
+2021-10-01,Beroe,Lokomotiv Plovdiv,1,0,H
+2021-10-02,Botev Vratsa,Lokomotiv Sofia,2,2,D
+2021-10-02,Slavia Sofia,Pirin Blagoevgrad,1,1,D
+2021-10-02,Arda Kardzhali,Cherno More Varna,0,3,A
+2021-10-03,Tsarsko Selo,CSKA Sofia,1,2,A
+2021-10-03,Levski Sofia,Ludogorets,2,4,A
+2021-10-15,Pirin Blagoevgrad,Botev Vratsa,3,1,H
+2021-10-15,Lokomotiv Plovdiv,Arda Kardzhali,0,0,D
+2021-10-16,Ludogorets,Tsarsko Selo,4,0,H
+2021-10-16,Lokomotiv Sofia,Levski Sofia,1,2,A
+2021-10-17,Cherno More Varna,Slavia Sofia,1,1,D
+2021-10-17,CSKA Sofia,Botev Plovdiv,3,2,H
+2021-10-18,CSKA 1948,Beroe,1,0,H
+2021-10-19,Lokomotiv Plovdiv,Pirin Blagoevgrad,2,1,H
+2021-10-22,Tsarsko Selo,Lokomotiv Sofia,2,0,H
+2021-10-22,Lokomotiv Plovdiv,CSKA 1948,2,1,H
+2021-10-23,Botev Vratsa,Cherno More Varna,0,0,D
+2021-10-23,Arda Kardzhali,Slavia Sofia,1,1,D
+2021-10-23,Levski Sofia,Pirin Blagoevgrad,3,0,H
+2021-10-24,Beroe,CSKA Sofia,0,0,D
+2021-10-25,Botev Plovdiv,Ludogorets,1,3,A
+2021-10-30,Slavia Sofia,Botev Vratsa,1,0,H
+2021-10-30,Lokomotiv Sofia,Botev Plovdiv,0,0,D
+2021-10-30,Cherno More Varna,Levski Sofia,1,0,H
+2021-10-31,Pirin Blagoevgrad,Tsarsko Selo,2,1,H
+2021-10-31,CSKA Sofia,Lokomotiv Plovdiv,1,3,A
+2021-10-31,Ludogorets,Beroe,2,0,H
+2021-11-01,CSKA 1948,Arda Kardzhali,2,3,A
+2021-11-05,Lokomotiv Sofia,Beroe,0,3,A
+2021-11-06,Cherno More Varna,Tsarsko Selo,1,1,D
+2021-11-06,Pirin Blagoevgrad,Botev Plovdiv,0,1,A
+2021-11-06,Slavia Sofia,Levski Sofia,0,1,A
+2021-11-07,Arda Kardzhali,Botev Vratsa,3,2,H
+2021-11-07,Ludogorets,Lokomotiv Plovdiv,1,0,H
+2021-11-08,CSKA Sofia,CSKA 1948,1,0,H
+2021-11-19,Beroe,Pirin Blagoevgrad,1,1,D
+2021-11-20,Tsarsko Selo,Slavia Sofia,2,5,A
+2021-11-20,Botev Plovdiv,Cherno More Varna,0,2,A
+2021-11-20,CSKA Sofia,Arda Kardzhali,2,1,H
+2021-11-21,CSKA 1948,Ludogorets,2,0,H
+2021-11-21,Lokomotiv Plovdiv,Lokomotiv Sofia,2,1,H
+2021-11-22,Levski Sofia,Botev Vratsa,0,0,D
+2021-11-26,Botev Vratsa,Tsarsko Selo,0,0,D
+2021-11-26,Slavia Sofia,Botev Plovdiv,0,0,D
+2021-11-26,Cherno More Varna,Beroe,1,0,H
+2021-11-27,Pirin Blagoevgrad,Lokomotiv Plovdiv,2,3,A
+2021-11-27,Arda Kardzhali,Levski Sofia,0,0,D
+2021-11-28,Lokomotiv Sofia,CSKA 1948,2,2,D
+2021-11-29,Ludogorets,CSKA Sofia,2,0,H
+2021-11-30,Botev Plovdiv,Botev Vratsa,2,1,H
+2021-11-30,Beroe,Slavia Sofia,2,1,H
+2021-12-01,Lokomotiv Plovdiv,Cherno More Varna,1,1,D
+2021-12-01,Tsarsko Selo,Levski Sofia,0,1,A
+2021-12-02,CSKA 1948,Pirin Blagoevgrad,1,0,H
+2021-12-02,Ludogorets,Arda Kardzhali,4,1,H
+2021-12-02,CSKA Sofia,Lokomotiv Sofia,2,0,H
+2021-12-04,Botev Vratsa,Beroe,1,0,H
+2021-12-04,Levski Sofia,Botev Plovdiv,2,0,H
+2021-12-05,Slavia Sofia,Lokomotiv Plovdiv,1,1,D
+2021-12-05,Lokomotiv Sofia,Ludogorets,2,4,A
+2021-12-05,Pirin Blagoevgrad,CSKA Sofia,1,1,D
+2021-12-06,Cherno More Varna,CSKA 1948,2,0,H
+2021-12-06,Arda Kardzhali,Tsarsko Selo,2,0,H
+2021-12-10,Lokomotiv Plovdiv,Botev Vratsa,2,4,A
+2021-12-11,Lokomotiv Sofia,Arda Kardzhali,2,0,H
+2021-12-11,CSKA 1948,Slavia Sofia,1,1,D
+2021-12-11,Botev Plovdiv,Tsarsko Selo,2,1,H
+2021-12-12,CSKA Sofia,Cherno More Varna,2,0,H
+2021-12-12,Beroe,Levski Sofia,1,1,D
+2021-12-13,Ludogorets,Pirin Blagoevgrad,3,5,A
+2021-12-16,Arda Kardzhali,CSKA Sofia,2,2,D
+2021-12-20,CSKA Sofia,Ludogorets,1,0,H
+2022-02-13,Arda Kardzhali,Ludogorets,0,4,A
+2022-02-13,Lokomotiv Sofia,CSKA Sofia,1,1,D
+2022-02-18,Arda Kardzhali,Botev Plovdiv,0,2,A
+2022-02-19,Levski Sofia,Lokomotiv Plovdiv,2,1,H
+2022-02-19,Botev Vratsa,CSKA 1948,0,4,A
+2022-02-20,Tsarsko Selo,Beroe,1,2,A
+2022-02-20,Cherno More Varna,Ludogorets,1,2,A
+2022-02-20,Slavia Sofia,CSKA Sofia,2,3,A
+2022-02-21,Pirin Blagoevgrad,Lokomotiv Sofia,2,1,H
+2022-02-25,Lokomotiv Plovdiv,Tsarsko Selo,1,0,H
+2022-02-25,CSKA Sofia,Botev Vratsa,4,0,H
+2022-02-26,Beroe,Botev Plovdiv,1,1,D
+2022-02-26,CSKA 1948,Levski Sofia,0,2,A
+2022-02-26,Ludogorets,Slavia Sofia,3,1,H
+2022-02-27,Lokomotiv Sofia,Cherno More Varna,0,3,A
+2022-02-28,Pirin Blagoevgrad,Arda Kardzhali,1,0,H
+2022-03-04,Tsarsko Selo,CSKA 1948,0,2,A
+2022-03-05,Cherno More Varna,Pirin Blagoevgrad,1,1,D
+2022-03-05,Botev Plovdiv,Lokomotiv Plovdiv,2,1,H
+2022-03-06,Levski Sofia,CSKA Sofia,0,0,D
+2022-03-07,Arda Kardzhali,Beroe,1,0,H
+2022-03-07,Botev Vratsa,Ludogorets,1,2,A
+2022-03-07,Slavia Sofia,Lokomotiv Sofia,3,0,H
+2022-03-11,CSKA 1948,Botev Plovdiv,2,2,D
+2022-03-12,Lokomotiv Sofia,Botev Vratsa,1,0,H
+2022-03-12,Cherno More Varna,Arda Kardzhali,2,0,H
+2022-03-12,CSKA Sofia,Tsarsko Selo,0,0,D
+2022-03-13,Lokomotiv Plovdiv,Beroe,2,0,H
+2022-03-13,Ludogorets,Levski Sofia,2,1,H
+2022-03-14,Pirin Blagoevgrad,Slavia Sofia,0,0,D
+2022-03-18,Arda Kardzhali,Lokomotiv Plovdiv,5,1,H
+2022-03-19,Beroe,CSKA 1948,1,0,H
+2022-03-19,Tsarsko Selo,Ludogorets,1,1,D
+2022-03-19,Levski Sofia,Lokomotiv Sofia,1,0,H
+2022-03-20,Botev Vratsa,Pirin Blagoevgrad,0,3,A
+2022-03-20,Botev Plovdiv,CSKA Sofia,2,0,H
+2022-03-20,Slavia Sofia,Cherno More Varna,0,1,A
+2022-04-02,Slavia Sofia,Arda Kardzhali,1,0,H
+2022-04-02,CSKA Sofia,Beroe,1,0,H
+2022-04-03,CSKA 1948,Lokomotiv Plovdiv,4,0,H
+2022-04-03,Pirin Blagoevgrad,Levski Sofia,0,3,A
+2022-04-03,Ludogorets,Botev Plovdiv,3,0,H
+2022-04-04,Cherno More Varna,Botev Vratsa,5,0,H
+2022-04-04,Lokomotiv Sofia,Tsarsko Selo,2,1,H
+2022-04-08,Botev Vratsa,Slavia Sofia,2,1,H
+2022-04-08,Lokomotiv Plovdiv,CSKA Sofia,2,0,H
+2022-04-09,Beroe,Ludogorets,0,1,A
+2022-04-09,Levski Sofia,Cherno More Varna,2,0,H
+2022-04-10,Arda Kardzhali,CSKA 1948,0,0,D
+2022-04-10,Botev Plovdiv,Lokomotiv Sofia,2,0,H
+2022-04-11,Tsarsko Selo,Pirin Blagoevgrad,1,0,H
+2022-04-15,Lokomotiv Plovdiv,Arda Kardzhali,0,0,D
+2022-04-15,Beroe,CSKA 1948,1,0,H
+2022-04-16,Botev Plovdiv,Cherno More Varna,1,0,H
+2022-04-17,CSKA Sofia,Levski Sofia,0,0,D
+2022-04-17,Ludogorets,Slavia Sofia,4,1,H
+2022-04-18,Pirin Blagoevgrad,Tsarsko Selo,0,2,A
+2022-04-18,Lokomotiv Sofia,Botev Vratsa,1,0,H
+2022-04-21,Lokomotiv Plovdiv,Beroe,1,1,D
+2022-04-22,Arda Kardzhali,CSKA 1948,3,6,A
+2022-04-25,Tsarsko Selo,Botev Vratsa,1,1,D
+2022-04-25,Pirin Blagoevgrad,Lokomotiv Sofia,2,1,H
+2022-04-29,Beroe,Arda Kardzhali,2,2,D
+2022-04-29,CSKA 1948,Lokomotiv Plovdiv,1,0,H
+2022-04-30,Levski Sofia,Botev Plovdiv,2,0,H
+2022-04-30,Ludogorets,CSKA Sofia,5,0,H
+2022-05-01,Slavia Sofia,Cherno More Varna,1,1,D
+2022-05-02,Botev Vratsa,Pirin Blagoevgrad,0,1,A
+2022-05-02,Lokomotiv Sofia,Tsarsko Selo,0,0,D
+2022-05-06,Botev Plovdiv,Ludogorets,1,2,A
+2022-05-06,Cherno More Varna,Levski Sofia,0,1,A
+2022-05-06,CSKA Sofia,Slavia Sofia,3,1,H
+2022-05-07,Arda Kardzhali,Lokomotiv Plovdiv,4,4,D
+2022-05-07,CSKA 1948,Beroe,2,2,D
+2022-05-08,Botev Vratsa,Lokomotiv Sofia,1,1,D
+2022-05-08,Tsarsko Selo,Pirin Blagoevgrad,3,0,H
+2022-05-13,CSKA 1948,Arda Kardzhali,5,1,H
+2022-05-13,Beroe,Lokomotiv Plovdiv,1,0,H
+2022-05-14,Ludogorets,Cherno More Varna,1,0,H
+2022-05-16,Botev Vratsa,Tsarsko Selo,0,0,D
+2022-05-16,Lokomotiv Sofia,Pirin Blagoevgrad,1,0,H
+2022-05-19,CSKA Sofia,Botev Plovdiv,0,0,D
+2022-05-19,Slavia Sofia,Levski Sofia,1,2,A
+2022-05-20,Lokomotiv Plovdiv,CSKA 1948,1,1,D
+2022-05-20,Arda Kardzhali,Beroe,1,0,H
+2022-05-21,Tsarsko Selo,Lokomotiv Sofia,1,1,D
+2022-05-21,Pirin Blagoevgrad,Botev Vratsa,3,5,A
+2022-05-22,Botev Plovdiv,Slavia Sofia,2,1,H
+2022-05-22,Levski Sofia,Ludogorets,0,1,A
+2022-05-22,Cherno More Varna,CSKA Sofia,0,0,D
+2022-05-27,Botev Vratsa,Etar Veliko Tarnovo,3,2,H
+2022-05-28,Botev Plovdiv,Beroe,2,1,H

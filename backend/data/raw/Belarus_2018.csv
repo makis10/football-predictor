@@ -1,0 +1,241 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2018-03-30,Fc Luch Minsk,FC Minsk,0,0,D
+2018-03-30,Neman,FC Vitebsk,1,1,D
+2018-03-31,FC Gomel,FC Slutsk,0,0,D
+2018-03-31,Shakhter Soligorsk,Dinamo Brest,0,0,D
+2018-03-31,Dinamo Minsk,Torpedo Zhodino,2,1,H
+2018-04-01,FC Isloch Minsk R.,Torpedo Minsk,1,1,D
+2018-04-01,Gorodeya,FC Dnepr Mogilev,1,2,A
+2018-04-01,Bate Borisov,Smolevichi-Sti,1,0,H
+2018-04-05,Dinamo Brest,Fc Luch Minsk,2,1,H
+2018-04-05,FC Slutsk,Neman,1,1,D
+2018-04-06,FC Minsk,Bate Borisov,0,2,A
+2018-04-06,Torpedo Zhodino,Smolevichi-Sti,1,0,H
+2018-04-06,FC Dnepr Mogilev,FC Gomel,1,0,H
+2018-04-07,Torpedo Minsk,Gorodeya,1,0,H
+2018-04-07,FC Vitebsk,Shakhter Soligorsk,2,1,H
+2018-04-07,Dinamo Minsk,FC Isloch Minsk R.,0,0,D
+2018-04-13,Fc Luch Minsk,FC Vitebsk,0,2,A
+2018-04-13,Shakhter Soligorsk,FC Slutsk,0,1,A
+2018-04-14,Neman,FC Dnepr Mogilev,0,0,D
+2018-04-14,Bate Borisov,Dinamo Brest,2,0,H
+2018-04-14,FC Isloch Minsk R.,Torpedo Zhodino,0,0,D
+2018-04-15,Smolevichi-Sti,FC Minsk,1,1,D
+2018-04-15,FC Gomel,Torpedo Minsk,0,0,D
+2018-04-15,Gorodeya,Dinamo Minsk,0,2,A
+2018-04-21,Fc Luch Minsk,FC Slutsk,0,3,A
+2018-04-21,Dinamo Minsk,FC Gomel,2,1,H
+2018-04-21,Torpedo Zhodino,FC Minsk,2,1,H
+2018-04-22,Torpedo Minsk,Neman,0,1,A
+2018-04-22,FC Isloch Minsk R.,Gorodeya,0,0,D
+2018-04-22,Dinamo Brest,Smolevichi-Sti,2,2,D
+2018-04-23,FC Dnepr Mogilev,Shakhter Soligorsk,1,1,D
+2018-04-23,FC Vitebsk,Bate Borisov,0,1,A
+2018-04-27,FC Minsk,Dinamo Brest,3,3,D
+2018-04-27,FC Gomel,FC Isloch Minsk R.,1,2,A
+2018-04-28,Shakhter Soligorsk,Torpedo Minsk,1,0,H
+2018-04-28,Bate Borisov,FC Slutsk,3,1,H
+2018-04-28,Neman,Dinamo Minsk,0,2,A
+2018-04-28,Fc Luch Minsk,FC Dnepr Mogilev,2,0,H
+2018-04-29,Smolevichi-Sti,FC Vitebsk,1,1,D
+2018-04-29,Gorodeya,Torpedo Zhodino,1,1,D
+2018-05-04,FC Slutsk,Smolevichi-Sti,1,0,H
+2018-05-05,FC Vitebsk,FC Minsk,1,0,H
+2018-05-05,Torpedo Minsk,Fc Luch Minsk,0,1,A
+2018-05-05,Gorodeya,FC Gomel,0,0,D
+2018-05-06,Dinamo Minsk,Shakhter Soligorsk,0,0,D
+2018-05-06,Torpedo Zhodino,Dinamo Brest,2,0,H
+2018-05-06,FC Isloch Minsk R.,Neman,1,2,A
+2018-05-07,FC Dnepr Mogilev,Bate Borisov,0,1,A
+2018-05-11,FC Minsk,FC Slutsk,0,2,A
+2018-05-12,Smolevichi-Sti,FC Dnepr Mogilev,2,1,H
+2018-05-12,FC Gomel,Torpedo Zhodino,0,0,D
+2018-05-12,Dinamo Brest,FC Vitebsk,3,1,H
+2018-05-13,Shakhter Soligorsk,FC Isloch Minsk R.,3,0,H
+2018-05-13,Neman,Gorodeya,1,0,H
+2018-05-13,Bate Borisov,Torpedo Minsk,2,0,H
+2018-05-14,Fc Luch Minsk,Dinamo Minsk,1,3,A
+2018-05-20,FC Dnepr Mogilev,FC Minsk,0,0,D
+2018-05-20,Torpedo Minsk,Smolevichi-Sti,0,0,D
+2018-05-21,FC Vitebsk,Torpedo Zhodino,2,0,H
+2018-05-21,FC Gomel,Neman,0,2,A
+2018-05-22,Gorodeya,Shakhter Soligorsk,0,1,A
+2018-05-22,FC Isloch Minsk R.,Fc Luch Minsk,1,1,D
+2018-05-23,FC Slutsk,Dinamo Brest,1,1,D
+2018-05-23,Dinamo Minsk,Bate Borisov,0,1,A
+2018-05-26,FC Minsk,Torpedo Minsk,6,1,H
+2018-05-27,Smolevichi-Sti,Dinamo Minsk,0,2,A
+2018-05-27,Shakhter Soligorsk,FC Gomel,2,1,H
+2018-05-27,Fc Luch Minsk,Gorodeya,1,1,D
+2018-05-28,Bate Borisov,FC Isloch Minsk R.,1,1,D
+2018-05-28,Neman,Torpedo Zhodino,1,0,H
+2018-05-29,FC Vitebsk,FC Slutsk,2,0,H
+2018-05-29,Dinamo Brest,FC Dnepr Mogilev,1,1,D
+2018-06-01,Dinamo Minsk,FC Minsk,1,0,H
+2018-06-01,Neman,Shakhter Soligorsk,0,1,A
+2018-06-02,Torpedo Minsk,Dinamo Brest,1,1,D
+2018-06-02,FC Dnepr Mogilev,FC Vitebsk,0,1,A
+2018-06-02,FC Gomel,Fc Luch Minsk,1,0,H
+2018-06-02,Gorodeya,Bate Borisov,2,1,H
+2018-06-03,FC Isloch Minsk R.,Smolevichi-Sti,1,0,H
+2018-06-03,Torpedo Zhodino,FC Slutsk,2,0,H
+2018-06-11,Smolevichi-Sti,Gorodeya,2,0,H
+2018-06-11,Fc Luch Minsk,Neman,1,2,A
+2018-06-12,FC Slutsk,FC Dnepr Mogilev,5,0,H
+2018-06-12,FC Minsk,FC Isloch Minsk R.,0,1,A
+2018-06-12,FC Vitebsk,Torpedo Minsk,2,0,H
+2018-06-13,Shakhter Soligorsk,Torpedo Zhodino,1,0,H
+2018-06-13,Bate Borisov,FC Gomel,3,0,H
+2018-06-13,Dinamo Brest,Dinamo Minsk,1,1,D
+2018-06-16,Torpedo Minsk,FC Slutsk,0,1,A
+2018-06-16,Gorodeya,FC Minsk,1,2,A
+2018-06-17,Shakhter Soligorsk,Fc Luch Minsk,4,0,H
+2018-06-17,Torpedo Zhodino,FC Dnepr Mogilev,1,0,H
+2018-06-17,Neman,Bate Borisov,2,3,A
+2018-06-18,Dinamo Minsk,FC Vitebsk,1,1,D
+2018-06-18,FC Gomel,Smolevichi-Sti,0,2,A
+2018-06-18,FC Isloch Minsk R.,Dinamo Brest,0,1,A
+2018-06-22,FC Dnepr Mogilev,Torpedo Minsk,1,2,A
+2018-06-23,Smolevichi-Sti,Neman,0,1,A
+2018-06-23,FC Minsk,FC Gomel,0,2,A
+2018-06-24,FC Slutsk,Dinamo Minsk,0,1,A
+2018-06-24,Bate Borisov,Shakhter Soligorsk,0,0,D
+2018-06-24,Fc Luch Minsk,Torpedo Zhodino,1,3,A
+2018-06-25,FC Vitebsk,FC Isloch Minsk R.,2,0,H
+2018-06-25,Dinamo Brest,Gorodeya,5,2,H
+2018-06-29,Fc Luch Minsk,Bate Borisov,1,2,A
+2018-06-29,FC Gomel,Dinamo Brest,0,6,A
+2018-06-30,FC Isloch Minsk R.,FC Slutsk,0,1,A
+2018-06-30,Torpedo Zhodino,Torpedo Minsk,1,0,H
+2018-06-30,Neman,FC Minsk,2,2,D
+2018-07-01,Gorodeya,FC Vitebsk,1,1,D
+2018-07-01,Dinamo Minsk,FC Dnepr Mogilev,2,1,H
+2018-07-01,Shakhter Soligorsk,Smolevichi-Sti,1,0,H
+2018-07-06,Bate Borisov,Torpedo Zhodino,2,1,H
+2018-07-07,FC Minsk,Shakhter Soligorsk,0,0,D
+2018-07-07,Dinamo Minsk,Torpedo Minsk,1,0,H
+2018-07-07,Dinamo Brest,Neman,1,0,H
+2018-07-08,FC Vitebsk,FC Gomel,1,0,H
+2018-07-08,Smolevichi-Sti,Fc Luch Minsk,1,1,D
+2018-07-08,FC Slutsk,Gorodeya,1,0,H
+2018-07-09,FC Dnepr Mogilev,FC Isloch Minsk R.,0,0,D
+2018-07-13,FC Slutsk,FC Gomel,0,1,A
+2018-07-14,FC Minsk,Fc Luch Minsk,3,1,H
+2018-07-14,Smolevichi-Sti,Bate Borisov,2,3,A
+2018-07-14,FC Vitebsk,Neman,5,1,H
+2018-07-15,Torpedo Minsk,FC Isloch Minsk R.,1,1,D
+2018-07-15,FC Dnepr Mogilev,Gorodeya,1,2,A
+2018-07-16,Dinamo Brest,Shakhter Soligorsk,1,3,A
+2018-07-20,Neman,FC Slutsk,0,3,A
+2018-07-20,Bate Borisov,FC Minsk,2,0,H
+2018-07-21,Fc Luch Minsk,Dinamo Brest,1,1,D
+2018-07-21,FC Gomel,FC Dnepr Mogilev,2,0,H
+2018-07-21,Gorodeya,Torpedo Minsk,0,0,D
+2018-07-22,FC Isloch Minsk R.,Dinamo Minsk,0,1,A
+2018-07-23,Smolevichi-Sti,Torpedo Zhodino,1,2,A
+2018-08-17,FC Dnepr Mogilev,Neman,0,0,D
+2018-08-18,FC Minsk,Smolevichi-Sti,0,0,D
+2018-08-18,Torpedo Zhodino,FC Isloch Minsk R.,2,1,H
+2018-08-19,FC Vitebsk,Fc Luch Minsk,2,0,H
+2018-08-19,FC Slutsk,Shakhter Soligorsk,1,3,A
+2018-08-19,Dinamo Minsk,Gorodeya,0,2,A
+2018-08-20,Torpedo Minsk,FC Gomel,1,2,A
+2018-08-24,FC Minsk,Torpedo Zhodino,0,0,D
+2018-08-25,Gorodeya,FC Isloch Minsk R.,2,0,H
+2018-08-25,Bate Borisov,FC Vitebsk,1,1,D
+2018-08-25,Neman,Torpedo Minsk,1,0,H
+2018-08-26,Smolevichi-Sti,Dinamo Brest,1,0,H
+2018-08-26,Shakhter Soligorsk,FC Dnepr Mogilev,3,1,H
+2018-08-26,FC Gomel,Dinamo Minsk,0,0,D
+2018-08-27,FC Slutsk,Fc Luch Minsk,1,0,H
+2018-08-31,Torpedo Zhodino,Gorodeya,0,1,A
+2018-08-31,FC Vitebsk,Smolevichi-Sti,4,0,H
+2018-09-01,FC Dnepr Mogilev,Fc Luch Minsk,0,0,D
+2018-09-01,FC Isloch Minsk R.,FC Gomel,0,1,A
+2018-09-01,Dinamo Brest,FC Minsk,2,1,H
+2018-09-02,Torpedo Minsk,Shakhter Soligorsk,2,3,A
+2018-09-02,FC Slutsk,Bate Borisov,0,1,A
+2018-09-02,Dinamo Minsk,Neman,1,0,H
+2018-09-14,Fc Luch Minsk,Torpedo Minsk,3,1,H
+2018-09-15,FC Minsk,FC Vitebsk,1,3,A
+2018-09-15,Shakhter Soligorsk,Dinamo Minsk,0,0,D
+2018-09-15,Bate Borisov,FC Dnepr Mogilev,3,1,H
+2018-09-16,Smolevichi-Sti,FC Slutsk,1,2,A
+2018-09-16,Neman,FC Isloch Minsk R.,6,0,H
+2018-09-16,Dinamo Brest,Torpedo Zhodino,2,0,H
+2018-09-17,FC Gomel,Gorodeya,2,0,H
+2018-09-21,FC Dnepr Mogilev,Smolevichi-Sti,0,1,A
+2018-09-22,FC Isloch Minsk R.,Shakhter Soligorsk,1,0,H
+2018-09-22,FC Slutsk,FC Minsk,0,1,A
+2018-09-22,FC Vitebsk,Dinamo Brest,0,1,A
+2018-09-22,Torpedo Zhodino,FC Gomel,1,0,H
+2018-09-23,Dinamo Minsk,Fc Luch Minsk,3,2,H
+2018-09-24,Gorodeya,Neman,0,2,A
+2018-09-26,Torpedo Minsk,Bate Borisov,0,3,A
+2018-09-28,Fc Luch Minsk,FC Isloch Minsk R.,1,1,D
+2018-09-29,FC Minsk,FC Dnepr Mogilev,4,0,H
+2018-09-29,Shakhter Soligorsk,Gorodeya,1,0,H
+2018-09-30,Smolevichi-Sti,Torpedo Minsk,0,2,A
+2018-09-30,Dinamo Brest,FC Slutsk,4,0,H
+2018-09-30,Torpedo Zhodino,FC Vitebsk,2,0,H
+2018-09-30,Bate Borisov,Dinamo Minsk,2,1,H
+2018-10-01,Neman,FC Gomel,2,0,H
+2018-10-05,Torpedo Minsk,FC Minsk,1,0,H
+2018-10-05,Gorodeya,Fc Luch Minsk,1,1,D
+2018-10-06,FC Slutsk,FC Vitebsk,0,2,A
+2018-10-06,FC Dnepr Mogilev,Dinamo Brest,1,4,A
+2018-10-06,FC Gomel,Shakhter Soligorsk,0,3,A
+2018-10-07,FC Isloch Minsk R.,Bate Borisov,2,1,H
+2018-10-07,Torpedo Zhodino,Neman,3,0,H
+2018-10-07,Dinamo Minsk,Smolevichi-Sti,2,0,H
+2018-10-19,FC Vitebsk,FC Dnepr Mogilev,3,1,H
+2018-10-20,FC Minsk,Dinamo Minsk,3,3,D
+2018-10-20,Bate Borisov,Gorodeya,3,2,H
+2018-10-20,Shakhter Soligorsk,Neman,1,0,H
+2018-10-21,FC Slutsk,Torpedo Zhodino,0,3,A
+2018-10-21,Smolevichi-Sti,FC Isloch Minsk R.,0,1,A
+2018-10-21,Dinamo Brest,Torpedo Minsk,2,0,H
+2018-10-22,Fc Luch Minsk,FC Gomel,1,0,H
+2018-10-26,FC Isloch Minsk R.,FC Minsk,0,3,A
+2018-10-26,FC Dnepr Mogilev,FC Slutsk,2,0,H
+2018-10-27,Torpedo Minsk,FC Vitebsk,0,1,A
+2018-10-27,Gorodeya,Smolevichi-Sti,4,1,H
+2018-10-27,Neman,Fc Luch Minsk,0,0,D
+2018-10-28,Torpedo Zhodino,Shakhter Soligorsk,1,0,H
+2018-10-28,Dinamo Minsk,Dinamo Brest,1,1,D
+2018-10-28,FC Gomel,Bate Borisov,0,1,A
+2018-10-31,Shakhter Soligorsk,FC Vitebsk,2,1,H
+2018-10-31,Torpedo Zhodino,Dinamo Minsk,0,0,D
+2018-10-31,Dinamo Brest,Bate Borisov,1,3,A
+2018-11-02,FC Minsk,Gorodeya,0,5,A
+2018-11-03,FC Vitebsk,Dinamo Minsk,0,1,A
+2018-11-03,Dinamo Brest,FC Isloch Minsk R.,3,1,H
+2018-11-04,FC Slutsk,Torpedo Minsk,1,3,A
+2018-11-04,FC Dnepr Mogilev,Torpedo Zhodino,0,3,A
+2018-11-04,Bate Borisov,Neman,1,0,H
+2018-11-04,Fc Luch Minsk,Shakhter Soligorsk,1,1,D
+2018-11-05,Smolevichi-Sti,FC Gomel,1,1,D
+2018-11-09,Gorodeya,Dinamo Brest,1,0,H
+2018-11-09,Dinamo Minsk,FC Slutsk,2,0,H
+2018-11-10,FC Isloch Minsk R.,FC Vitebsk,0,1,A
+2018-11-10,FC Gomel,FC Minsk,0,2,A
+2018-11-10,Neman,Smolevichi-Sti,1,1,D
+2018-11-11,Torpedo Minsk,FC Dnepr Mogilev,3,0,H
+2018-11-11,Torpedo Zhodino,Fc Luch Minsk,0,0,D
+2018-11-21,Shakhter Soligorsk,Bate Borisov,3,0,H
+2018-11-24,FC Slutsk,FC Isloch Minsk R.,0,1,A
+2018-11-24,FC Minsk,Neman,1,2,A
+2018-11-24,Smolevichi-Sti,Shakhter Soligorsk,0,2,A
+2018-11-24,FC Vitebsk,Gorodeya,1,0,H
+2018-11-24,Torpedo Minsk,Torpedo Zhodino,0,2,A
+2018-11-24,FC Dnepr Mogilev,Dinamo Minsk,0,3,A
+2018-11-24,Dinamo Brest,FC Gomel,0,0,D
+2018-11-24,Bate Borisov,Fc Luch Minsk,4,1,H
+2018-12-02,Torpedo Minsk,Dinamo Minsk,0,3,A
+2018-12-02,Torpedo Zhodino,Bate Borisov,2,2,D
+2018-12-02,Neman,Dinamo Brest,0,3,A
+2018-12-02,FC Gomel,FC Vitebsk,1,3,A
+2018-12-02,Gorodeya,FC Slutsk,2,0,H
+2018-12-02,FC Isloch Minsk R.,FC Dnepr Mogilev,3,2,H
+2018-12-02,Shakhter Soligorsk,FC Minsk,4,0,H
+2018-12-02,Fc Luch Minsk,Smolevichi-Sti,1,1,D

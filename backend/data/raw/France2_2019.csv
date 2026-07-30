@@ -1,0 +1,281 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2019-07-26,Guingamp,Grenoble,3,3,D
+2019-07-26,Ajaccio,Le Havre,2,2,D
+2019-07-26,Clermont Foot,Chateauroux,3,0,H
+2019-07-26,Nancy,Orleans,0,0,D
+2019-07-26,Niort,Estac Troyes,0,2,A
+2019-07-26,Sochaux,Caen,0,0,D
+2019-07-26,Chambly Thelle FC,Valenciennes,1,0,H
+2019-07-26,Rodez,Auxerre,2,0,H
+2019-07-27,Le Mans,Lens,1,2,A
+2019-07-29,Lorient,Paris FC,3,0,H
+2019-08-02,Grenoble,Ajaccio,0,1,A
+2019-08-02,Orleans,Chambly Thelle FC,0,1,A
+2019-08-02,Valenciennes,Nancy,1,1,D
+2019-08-02,Chateauroux,Rodez,0,0,D
+2019-08-02,Auxerre,Le Mans,2,0,H
+2019-08-02,Estac Troyes,Clermont Foot,1,2,A
+2019-08-02,Le Havre,Niort,1,1,D
+2019-08-02,Paris FC,Sochaux,1,1,D
+2019-08-03,Lens,Guingamp,2,0,H
+2019-08-05,Caen,Lorient,1,2,A
+2019-08-09,Guingamp,Orleans,1,0,H
+2019-08-09,Ajaccio,Caen,1,2,A
+2019-08-09,Nancy,Lorient,1,1,D
+2019-08-09,Estac Troyes,Le Havre,1,2,A
+2019-08-09,Niort,Chateauroux,3,0,H
+2019-08-09,Sochaux,Auxerre,1,0,H
+2019-08-09,Chambly Thelle FC,Grenoble,0,0,D
+2019-08-09,Le Mans,Valenciennes,1,2,A
+2019-08-09,Rodez,Paris FC,2,1,H
+2019-08-10,Clermont Foot,Lens,1,1,D
+2019-08-16,Caen,Chambly Thelle FC,0,0,D
+2019-08-16,Lorient,Sochaux,1,0,H
+2019-08-16,Grenoble,Estac Troyes,1,1,D
+2019-08-16,Nancy,Le Mans,2,1,H
+2019-08-16,Orleans,Clermont Foot,0,1,A
+2019-08-16,Valenciennes,Rodez,1,0,H
+2019-08-16,Chateauroux,Ajaccio,0,1,A
+2019-08-16,Paris FC,Niort,0,1,A
+2019-08-17,Lens,Le Havre,1,3,A
+2019-08-19,Auxerre,Guingamp,2,2,D
+2019-08-23,Ajaccio,Paris FC,1,0,H
+2019-08-23,Clermont Foot,Auxerre,1,1,D
+2019-08-23,Le Havre,Grenoble,3,1,H
+2019-08-23,Niort,Caen,1,1,D
+2019-08-23,Sochaux,Nancy,3,0,H
+2019-08-23,Chambly Thelle FC,Chateauroux,0,0,D
+2019-08-23,Le Mans,Lorient,1,2,A
+2019-08-23,Rodez,Orleans,3,3,D
+2019-08-24,Estac Troyes,Lens,2,0,H
+2019-08-26,Guingamp,Valenciennes,0,1,A
+2019-08-30,Caen,Le Havre,0,3,A
+2019-08-30,Nancy,Rodez,1,1,D
+2019-08-30,Orleans,Niort,0,1,A
+2019-08-30,Valenciennes,Clermont Foot,1,0,H
+2019-08-30,Chateauroux,Estac Troyes,0,1,A
+2019-08-30,Auxerre,Ajaccio,3,1,H
+2019-08-30,Le Mans,Sochaux,2,0,H
+2019-08-31,Lorient,Guingamp,0,1,A
+2019-09-02,Paris FC,Chambly Thelle FC,0,3,A
+2019-09-02,Grenoble,Lens,2,2,D
+2019-09-13,Guingamp,Nancy,1,1,D
+2019-09-13,Ajaccio,Orleans,0,0,D
+2019-09-13,Estac Troyes,Caen,2,1,H
+2019-09-13,Le Havre,Paris FC,0,0,D
+2019-09-13,Niort,Grenoble,0,1,A
+2019-09-13,Sochaux,Valenciennes,0,0,D
+2019-09-13,Chambly Thelle FC,Auxerre,1,4,A
+2019-09-13,Rodez,Le Mans,4,1,H
+2019-09-14,Clermont Foot,Lorient,0,2,A
+2019-09-16,Lens,Chateauroux,1,0,H
+2019-09-20,Nancy,Chambly Thelle FC,3,0,H
+2019-09-20,Orleans,Le Havre,2,2,D
+2019-09-20,Valenciennes,Niort,1,1,D
+2019-09-20,Chateauroux,Grenoble,1,1,D
+2019-09-20,Auxerre,Estac Troyes,1,2,A
+2019-09-20,Paris FC,Clermont Foot,0,2,A
+2019-09-20,Sochaux,Guingamp,3,1,H
+2019-09-20,Le Mans,Ajaccio,2,4,A
+2019-09-21,Caen,Lens,0,2,A
+2019-09-23,Lorient,Rodez,2,1,H
+2019-09-27,Ajaccio,Valenciennes,2,0,H
+2019-09-27,Clermont Foot,Nancy,2,2,D
+2019-09-27,Grenoble,Caen,1,0,H
+2019-09-27,Estac Troyes,Orleans,1,2,A
+2019-09-27,Le Havre,Chateauroux,0,1,A
+2019-09-27,Niort,Auxerre,2,2,D
+2019-09-27,Chambly Thelle FC,Lorient,0,1,A
+2019-09-27,Rodez,Sochaux,0,2,A
+2019-09-28,Lens,Paris FC,2,1,H
+2019-09-30,Guingamp,Le Mans,3,0,H
+2019-10-04,Caen,Chateauroux,1,1,D
+2019-10-04,Guingamp,Rodez,4,1,H
+2019-10-04,Lorient,Ajaccio,0,0,D
+2019-10-04,Nancy,Niort,2,1,H
+2019-10-04,Valenciennes,Grenoble,0,2,A
+2019-10-04,Paris FC,Estac Troyes,1,0,H
+2019-10-04,Sochaux,Clermont Foot,4,0,H
+2019-10-04,Le Mans,Chambly Thelle FC,1,0,H
+2019-10-05,Auxerre,Le Havre,2,0,H
+2019-10-07,Orleans,Lens,1,4,A
+2019-10-18,Caen,Valenciennes,0,0,D
+2019-10-18,Ajaccio,Nancy,0,0,D
+2019-10-18,Clermont Foot,Rodez,0,1,A
+2019-10-18,Grenoble,Orleans,0,0,D
+2019-10-18,Chateauroux,Paris FC,0,1,A
+2019-10-18,Estac Troyes,Le Mans,2,1,H
+2019-10-18,Niort,Guingamp,0,0,D
+2019-10-18,Chambly Thelle FC,Sochaux,0,0,D
+2019-10-19,Le Havre,Lorient,2,2,D
+2019-10-21,Lens,Auxerre,0,0,D
+2019-10-25,Guingamp,Clermont Foot,1,2,A
+2019-10-25,Nancy,Lens,0,0,D
+2019-10-25,Orleans,Chateauroux,1,1,D
+2019-10-25,Auxerre,Grenoble,0,1,A
+2019-10-25,Paris FC,Caen,2,4,A
+2019-10-25,Sochaux,Ajaccio,0,2,A
+2019-10-25,Le Mans,Niort,1,0,H
+2019-10-25,Rodez,Chambly Thelle FC,2,0,H
+2019-10-26,Lorient,Estac Troyes,0,1,A
+2019-10-28,Valenciennes,Le Havre,0,0,D
+2019-11-01,Caen,Orleans,2,1,H
+2019-11-01,Ajaccio,Rodez,1,0,H
+2019-11-01,Chateauroux,Auxerre,1,0,H
+2019-11-01,Estac Troyes,Valenciennes,1,0,H
+2019-11-01,Chambly Thelle FC,Guingamp,1,5,A
+2019-11-02,Clermont Foot,Le Mans,0,1,A
+2019-11-02,Grenoble,Paris FC,0,0,D
+2019-11-02,Niort,Sochaux,0,2,A
+2019-11-02,Lens,Lorient,1,0,H
+2019-11-04,Le Havre,Nancy,1,1,D
+2019-11-08,Lorient,Niort,4,1,H
+2019-11-08,Nancy,Estac Troyes,0,0,D
+2019-11-08,Orleans,Paris FC,0,1,A
+2019-11-08,Valenciennes,Chateauroux,0,1,A
+2019-11-08,Auxerre,Caen,1,1,D
+2019-11-08,Sochaux,Le Havre,2,0,H
+2019-11-08,Chambly Thelle FC,Clermont Foot,0,1,A
+2019-11-08,Le Mans,Grenoble,0,0,D
+2019-11-09,Guingamp,Ajaccio,1,1,D
+2019-11-11,Rodez,Lens,1,2,A
+2019-11-22,Caen,Le Mans,3,3,D
+2019-11-22,Ajaccio,Clermont Foot,1,1,D
+2019-11-22,Grenoble,Nancy,1,1,D
+2019-11-22,Orleans,Valenciennes,0,1,A
+2019-11-22,Chateauroux,Lorient,1,3,A
+2019-11-22,Estac Troyes,Chambly Thelle FC,0,4,A
+2019-11-22,Niort,Rodez,2,1,H
+2019-11-22,Paris FC,Auxerre,2,0,H
+2019-11-23,Lens,Sochaux,4,0,H
+2019-11-25,Le Havre,Guingamp,4,0,H
+2019-11-29,Guingamp,Caen,1,1,D
+2019-11-29,Lorient,Grenoble,2,1,H
+2019-11-29,Clermont Foot,Niort,1,0,H
+2019-11-29,Nancy,Paris FC,2,0,H
+2019-11-29,Valenciennes,Lens,2,0,H
+2019-11-29,Auxerre,Orleans,2,2,D
+2019-11-29,Chambly Thelle FC,Ajaccio,0,2,A
+2019-11-29,Le Mans,Chateauroux,1,2,A
+2019-11-29,Rodez,Le Havre,1,2,A
+2019-11-30,Sochaux,Estac Troyes,0,1,A
+2019-12-02,Caen,Nancy,1,0,H
+2019-12-03,Grenoble,Clermont Foot,1,1,D
+2019-12-03,Orleans,Lorient,0,4,A
+2019-12-03,Chateauroux,Sochaux,1,1,D
+2019-12-03,Auxerre,Valenciennes,1,1,D
+2019-12-03,Estac Troyes,Rodez,1,0,H
+2019-12-03,Le Havre,Le Mans,2,0,H
+2019-12-03,Niort,Ajaccio,0,1,A
+2019-12-03,Paris FC,Guingamp,0,3,A
+2019-12-03,Lens,Chambly Thelle FC,3,0,H
+2019-12-13,Lorient,Auxerre,1,0,H
+2019-12-13,Clermont Foot,Le Havre,2,1,H
+2019-12-13,Nancy,Chateauroux,2,1,H
+2019-12-13,Valenciennes,Paris FC,1,0,H
+2019-12-13,Sochaux,Grenoble,1,1,D
+2019-12-13,Le Mans,Orleans,3,2,H
+2019-12-13,Rodez,Caen,2,1,H
+2019-12-13,Chambly Thelle FC,Niort,3,2,H
+2019-12-14,Ajaccio,Lens,1,2,A
+2019-12-16,Guingamp,Estac Troyes,0,1,A
+2019-12-20,Caen,Clermont Foot,0,0,D
+2019-12-20,Grenoble,Rodez,2,1,H
+2019-12-20,Orleans,Sochaux,1,0,H
+2019-12-20,Valenciennes,Lorient,3,0,H
+2019-12-20,Chateauroux,Guingamp,1,5,A
+2019-12-20,Auxerre,Nancy,0,0,D
+2019-12-20,Le Havre,Chambly Thelle FC,1,1,D
+2019-12-21,Paris FC,Le Mans,0,3,A
+2019-12-21,Lens,Niort,1,0,H
+2019-12-21,Estac Troyes,Ajaccio,2,1,H
+2020-01-10,Ajaccio,Grenoble,3,1,H
+2020-01-10,Clermont Foot,Estac Troyes,3,2,H
+2020-01-10,Nancy,Valenciennes,1,0,H
+2020-01-10,Niort,Le Havre,0,1,A
+2020-01-10,Sochaux,Paris FC,1,1,D
+2020-01-10,Le Mans,Auxerre,0,1,A
+2020-01-10,Rodez,Chateauroux,1,2,A
+2020-01-10,Chambly Thelle FC,Orleans,1,0,H
+2020-01-13,Lorient,Caen,2,1,H
+2020-01-18,Guingamp,Lens,1,1,D
+2020-01-24,Caen,Ajaccio,0,1,A
+2020-01-24,Lorient,Nancy,2,1,H
+2020-01-24,Grenoble,Chambly Thelle FC,0,0,D
+2020-01-24,Orleans,Guingamp,2,0,H
+2020-01-24,Valenciennes,Le Mans,1,0,H
+2020-01-24,Chateauroux,Niort,1,1,D
+2020-01-24,Auxerre,Sochaux,2,1,H
+2020-01-24,Paris FC,Rodez,0,0,D
+2020-01-25,Lens,Clermont Foot,1,1,D
+2020-01-27,Le Havre,Estac Troyes,1,0,H
+2020-01-31,Guingamp,Auxerre,1,0,H
+2020-01-31,Ajaccio,Chateauroux,0,1,A
+2020-01-31,Clermont Foot,Orleans,3,1,H
+2020-01-31,Estac Troyes,Grenoble,1,2,A
+2020-01-31,Le Havre,Lens,0,0,D
+2020-01-31,Niort,Paris FC,4,4,D
+2020-01-31,Chambly Thelle FC,Caen,0,1,A
+2020-01-31,Le Mans,Nancy,1,1,D
+2020-01-31,Rodez,Valenciennes,1,1,D
+2020-02-01,Sochaux,Lorient,0,4,A
+2020-02-03,Grenoble,Le Havre,1,1,D
+2020-02-04,Caen,Niort,4,3,H
+2020-02-04,Lorient,Le Mans,4,2,H
+2020-02-04,Nancy,Sochaux,1,1,D
+2020-02-04,Orleans,Rodez,1,2,A
+2020-02-04,Valenciennes,Guingamp,0,0,D
+2020-02-04,Chateauroux,Chambly Thelle FC,0,3,A
+2020-02-04,Auxerre,Clermont Foot,0,0,D
+2020-02-04,Paris FC,Ajaccio,2,3,A
+2020-02-04,Lens,Estac Troyes,1,0,H
+2020-02-07,Ajaccio,Auxerre,2,3,A
+2020-02-07,Clermont Foot,Valenciennes,3,1,H
+2020-02-07,Estac Troyes,Chateauroux,2,0,H
+2020-02-07,Le Havre,Caen,1,1,D
+2020-02-07,Niort,Orleans,2,0,H
+2020-02-07,Sochaux,Le Mans,1,0,H
+2020-02-07,Chambly Thelle FC,Paris FC,1,2,A
+2020-02-07,Rodez,Nancy,1,1,D
+2020-02-08,Guingamp,Lorient,2,1,H
+2020-02-10,Lens,Grenoble,0,0,D
+2020-02-14,Caen,Estac Troyes,0,1,A
+2020-02-14,Grenoble,Niort,3,1,H
+2020-02-14,Orleans,Ajaccio,0,3,A
+2020-02-14,Valenciennes,Sochaux,3,2,H
+2020-02-14,Auxerre,Chambly Thelle FC,0,0,D
+2020-02-14,Paris FC,Le Havre,1,0,H
+2020-02-14,Le Mans,Rodez,0,0,D
+2020-02-15,Lorient,Clermont Foot,0,1,A
+2020-02-15,Nancy,Guingamp,0,1,A
+2020-02-17,Chateauroux,Lens,3,2,H
+2020-02-21,Guingamp,Sochaux,1,1,D
+2020-02-21,Ajaccio,Le Mans,2,0,H
+2020-02-21,Clermont Foot,Paris FC,0,1,A
+2020-02-21,Grenoble,Chateauroux,0,1,A
+2020-02-21,Le Havre,Orleans,1,2,A
+2020-02-21,Niort,Valenciennes,1,0,H
+2020-02-21,Chambly Thelle FC,Nancy,2,1,H
+2020-02-21,Rodez,Lorient,0,1,A
+2020-02-22,Lens,Caen,1,4,A
+2020-02-24,Estac Troyes,Auxerre,3,1,H
+2020-02-28,Caen,Grenoble,2,0,H
+2020-02-28,Nancy,Clermont Foot,1,2,A
+2020-02-28,Orleans,Estac Troyes,0,2,A
+2020-02-28,Valenciennes,Ajaccio,0,0,D
+2020-02-28,Chateauroux,Le Havre,0,3,A
+2020-02-28,Auxerre,Niort,3,1,H
+2020-02-28,Sochaux,Rodez,1,1,D
+2020-02-28,Le Mans,Guingamp,2,1,H
+2020-02-29,Lorient,Chambly Thelle FC,1,2,A
+2020-03-02,Paris FC,Lens,0,2,A
+2020-03-06,Clermont Foot,Sochaux,2,0,H
+2020-03-06,Grenoble,Valenciennes,1,3,A
+2020-03-06,Chateauroux,Caen,2,1,H
+2020-03-06,Estac Troyes,Paris FC,1,1,D
+2020-03-06,Le Havre,Auxerre,1,0,H
+2020-03-06,Niort,Nancy,1,1,D
+2020-03-06,Chambly Thelle FC,Le Mans,2,2,D
+2020-03-06,Rodez,Guingamp,2,1,H
+2020-03-07,Ajaccio,Lorient,1,0,H
+2020-03-09,Lens,Orleans,1,0,H

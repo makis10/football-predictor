@@ -1,0 +1,381 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2016-08-05,De Graafschap,FC Eindhoven,4,1,H
+2016-08-05,NAC Breda,Jong Utrecht,4,1,H
+2016-08-05,VVV Venlo,Cambuur,2,1,H
+2016-08-05,Fortuna Sittard,Achilles 29,2,1,H
+2016-08-05,Dordrecht,FC OSS,1,1,D
+2016-08-05,FC Volendam,Almere City FC,1,1,D
+2016-08-05,Helmond Sport,MVV,2,2,D
+2016-08-08,Jong PSV U21,Den Bosch,5,4,H
+2016-08-08,Waalwijk,Telstar,1,0,H
+2016-08-08,Jong Ajax,Emmen,1,1,D
+2016-08-12,Emmen,Waalwijk,1,0,H
+2016-08-12,MVV,VVV Venlo,1,2,A
+2016-08-12,Almere City FC,Jong Ajax,1,4,A
+2016-08-12,Cambuur,Jong PSV U21,1,1,D
+2016-08-12,Den Bosch,De Graafschap,2,1,H
+2016-08-12,FC Eindhoven,FC Volendam,0,1,A
+2016-08-12,FC OSS,Helmond Sport,3,1,H
+2016-08-12,Telstar,Fortuna Sittard,1,1,D
+2016-08-12,Achilles 29,NAC Breda,1,2,A
+2016-08-15,Jong Utrecht,Dordrecht,1,1,D
+2016-08-19,De Graafschap,Jong Utrecht,3,1,H
+2016-08-19,NAC Breda,MVV,1,2,A
+2016-08-19,VVV Venlo,FC OSS,2,0,H
+2016-08-19,Fortuna Sittard,Almere City FC,2,1,H
+2016-08-19,Dordrecht,Cambuur,0,1,A
+2016-08-19,Jong PSV U21,Emmen,1,0,H
+2016-08-19,FC Volendam,Telstar,3,0,H
+2016-08-19,Waalwijk,FC Eindhoven,1,2,A
+2016-08-19,Helmond Sport,Achilles 29,1,2,A
+2016-08-19,Jong Ajax,Den Bosch,5,2,H
+2016-08-22,VVV Venlo,Jong PSV U21,1,2,A
+2016-08-22,Emmen,Almere City FC,2,0,H
+2016-08-22,Dordrecht,NAC Breda,1,2,A
+2016-08-22,MVV,FC OSS,3,0,H
+2016-08-22,Cambuur,De Graafschap,1,1,D
+2016-08-22,Den Bosch,FC Volendam,2,5,A
+2016-08-22,FC Eindhoven,Achilles 29,2,1,H
+2016-08-22,Jong Ajax,Fortuna Sittard,2,1,H
+2016-08-22,Telstar,Helmond Sport,4,2,H
+2016-08-22,Jong Utrecht,Waalwijk,1,3,A
+2016-08-26,De Graafschap,VVV Venlo,0,2,A
+2016-08-26,NAC Breda,Den Bosch,0,0,D
+2016-08-26,Fortuna Sittard,Dordrecht,3,2,H
+2016-08-26,Jong PSV U21,Jong Utrecht,2,0,H
+2016-08-26,FC Volendam,Emmen,0,1,A
+2016-08-26,Waalwijk,Jong Ajax,3,2,H
+2016-08-26,Almere City FC,FC Eindhoven,4,0,H
+2016-08-26,FC OSS,Telstar,0,2,A
+2016-08-26,Helmond Sport,Cambuur,1,0,H
+2016-08-28,Achilles 29,MVV,2,3,A
+2016-09-09,NAC Breda,Jong PSV U21,1,1,D
+2016-09-09,VVV Venlo,FC Volendam,0,1,A
+2016-09-09,Emmen,Helmond Sport,1,2,A
+2016-09-09,Dordrecht,Waalwijk,1,1,D
+2016-09-09,Cambuur,Almere City FC,4,1,H
+2016-09-09,Den Bosch,FC OSS,2,1,H
+2016-09-09,FC Eindhoven,MVV,1,1,D
+2016-09-09,Telstar,De Graafschap,2,1,H
+2016-09-12,Jong Ajax,Achilles 29,7,1,H
+2016-09-12,Jong Utrecht,Fortuna Sittard,3,0,H
+2016-09-16,De Graafschap,Emmen,3,0,H
+2016-09-16,Fortuna Sittard,Cambuur,3,0,H
+2016-09-16,Jong PSV U21,Dordrecht,3,2,H
+2016-09-16,MVV,Jong Ajax,1,0,H
+2016-09-16,FC Volendam,Jong Utrecht,2,2,D
+2016-09-16,Waalwijk,NAC Breda,2,4,A
+2016-09-16,Almere City FC,Den Bosch,4,1,H
+2016-09-16,FC OSS,FC Eindhoven,6,2,H
+2016-09-16,Helmond Sport,VVV Venlo,2,1,H
+2016-09-16,Achilles 29,Telstar,1,2,A
+2016-09-23,NAC Breda,De Graafschap,1,0,H
+2016-09-23,VVV Venlo,Jong Utrecht,2,0,H
+2016-09-23,Emmen,Den Bosch,3,0,H
+2016-09-23,Almere City FC,MVV,2,1,H
+2016-09-23,Cambuur,Achilles 29,3,1,H
+2016-09-23,Helmond Sport,Waalwijk,1,1,D
+2016-09-23,Telstar,FC Eindhoven,1,4,A
+2016-09-24,Dordrecht,FC Volendam,1,0,H
+2016-09-26,Jong PSV U21,Fortuna Sittard,3,0,H
+2016-09-26,Jong Ajax,FC OSS,7,0,H
+2016-09-30,De Graafschap,Dordrecht,2,3,A
+2016-09-30,Fortuna Sittard,Emmen,2,2,D
+2016-09-30,MVV,Cambuur,2,1,H
+2016-09-30,FC Volendam,NAC Breda,2,1,H
+2016-09-30,Waalwijk,Jong PSV U21,1,1,D
+2016-09-30,Den Bosch,Telstar,0,0,D
+2016-09-30,FC Eindhoven,Jong Ajax,2,1,H
+2016-09-30,FC OSS,Almere City FC,2,3,A
+2016-09-30,Jong Utrecht,Helmond Sport,1,0,H
+2016-09-30,Achilles 29,VVV Venlo,0,3,A
+2016-10-14,Fortuna Sittard,VVV Venlo,2,0,H
+2016-10-14,Almere City FC,Jong PSV U21,1,0,H
+2016-10-14,Den Bosch,Cambuur,3,1,H
+2016-10-14,FC Eindhoven,Emmen,0,1,A
+2016-10-14,FC OSS,Waalwijk,2,5,A
+2016-10-14,Helmond Sport,FC Volendam,2,0,H
+2016-10-14,Telstar,NAC Breda,2,0,H
+2016-10-14,Achilles 29,Jong Utrecht,1,1,D
+2016-10-16,MVV,Dordrecht,2,1,H
+2016-10-17,Jong Ajax,De Graafschap,4,2,H
+2016-10-21,De Graafschap,Helmond Sport,2,4,A
+2016-10-21,NAC Breda,Fortuna Sittard,3,1,H
+2016-10-21,VVV Venlo,Den Bosch,3,1,H
+2016-10-21,Emmen,Telstar,0,0,D
+2016-10-21,Dordrecht,Almere City FC,1,4,A
+2016-10-21,Jong PSV U21,FC Eindhoven,4,1,H
+2016-10-21,FC Volendam,Jong Ajax,1,1,D
+2016-10-21,Waalwijk,Achilles 29,2,0,H
+2016-10-21,Jong Utrecht,MVV,1,2,A
+2016-10-21,Cambuur,FC OSS,4,2,H
+2016-10-28,MVV,FC Volendam,1,2,A
+2016-10-28,Almere City FC,Helmond Sport,1,0,H
+2016-10-28,Den Bosch,Jong Utrecht,1,0,H
+2016-10-28,FC OSS,NAC Breda,3,4,A
+2016-10-28,Telstar,Jong PSV U21,0,0,D
+2016-10-28,Achilles 29,De Graafschap,0,0,D
+2016-10-30,Fortuna Sittard,Waalwijk,0,1,A
+2016-10-30,Emmen,Dordrecht,2,1,H
+2016-10-30,FC Eindhoven,Cambuur,2,0,H
+2016-10-31,Jong Ajax,VVV Venlo,0,4,A
+2016-11-04,De Graafschap,Fortuna Sittard,5,0,H
+2016-11-04,VVV Venlo,Dordrecht,3,1,H
+2016-11-04,MVV,Telstar,2,1,H
+2016-11-04,Waalwijk,Den Bosch,0,2,A
+2016-11-04,Almere City FC,Achilles 29,1,0,H
+2016-11-04,Cambuur,FC Volendam,2,1,H
+2016-11-04,FC Eindhoven,Jong Utrecht,2,1,H
+2016-11-04,FC OSS,Emmen,2,2,D
+2016-11-04,Helmond Sport,Jong PSV U21,1,0,H
+2016-11-04,Jong Ajax,NAC Breda,2,1,H
+2016-11-18,NAC Breda,VVV Venlo,0,0,D
+2016-11-18,Fortuna Sittard,MVV,2,3,A
+2016-11-18,Emmen,Cambuur,0,1,A
+2016-11-18,Dordrecht,Helmond Sport,1,4,A
+2016-11-18,FC Volendam,Waalwijk,1,1,D
+2016-11-18,Den Bosch,FC Eindhoven,0,2,A
+2016-11-18,Telstar,Almere City FC,3,6,A
+2016-11-18,Achilles 29,FC OSS,1,2,A
+2016-11-21,Jong PSV U21,De Graafschap,1,0,H
+2016-11-21,Jong Utrecht,Jong Ajax,2,2,D
+2016-11-25,MVV,Den Bosch,3,0,H
+2016-11-25,FC Volendam,Jong PSV U21,1,0,H
+2016-11-25,Waalwijk,De Graafschap,2,1,H
+2016-11-25,Almere City FC,VVV Venlo,0,2,A
+2016-11-25,Cambuur,NAC Breda,3,1,H
+2016-11-25,FC Eindhoven,Dordrecht,2,1,H
+2016-11-25,FC OSS,Jong Utrecht,4,2,H
+2016-11-25,Helmond Sport,Fortuna Sittard,1,0,H
+2016-11-25,Jong Ajax,Telstar,2,1,H
+2016-11-25,Achilles 29,Emmen,0,4,A
+2016-11-28,De Graafschap,FC Volendam,1,1,D
+2016-11-28,NAC Breda,Helmond Sport,0,0,D
+2016-11-28,VVV Venlo,Waalwijk,4,0,H
+2016-11-28,Fortuna Sittard,FC Eindhoven,1,1,D
+2016-11-28,Emmen,MVV,0,0,D
+2016-11-28,Dordrecht,Jong Ajax,0,2,A
+2016-11-28,Jong PSV U21,FC OSS,2,4,A
+2016-11-28,Den Bosch,Achilles 29,2,1,H
+2016-11-28,Telstar,Cambuur,0,3,A
+2016-11-28,Jong Utrecht,Almere City FC,1,1,D
+2016-12-02,De Graafschap,FC OSS,3,5,A
+2016-12-02,NAC Breda,Almere City FC,3,1,H
+2016-12-02,VVV Venlo,Telstar,1,1,D
+2016-12-02,Dordrecht,Den Bosch,2,2,D
+2016-12-02,Jong PSV U21,Achilles 29,4,0,H
+2016-12-02,FC Volendam,Fortuna Sittard,3,0,H
+2016-12-02,Waalwijk,MVV,2,0,H
+2016-12-02,Cambuur,Jong Ajax,1,3,A
+2016-12-02,Helmond Sport,FC Eindhoven,3,0,H
+2016-12-02,Jong Utrecht,Emmen,3,1,H
+2016-12-09,Emmen,VVV Venlo,1,2,A
+2016-12-09,MVV,De Graafschap,2,0,H
+2016-12-09,Almere City FC,Waalwijk,6,2,H
+2016-12-09,Cambuur,Jong Utrecht,4,2,H
+2016-12-09,Den Bosch,Helmond Sport,1,1,D
+2016-12-09,FC Eindhoven,NAC Breda,6,2,H
+2016-12-09,FC OSS,Fortuna Sittard,3,1,H
+2016-12-09,Jong Ajax,Jong PSV U21,1,0,H
+2016-12-09,Telstar,Dordrecht,0,0,D
+2016-12-09,Achilles 29,FC Volendam,0,6,A
+2016-12-16,De Graafschap,Almere City FC,4,1,H
+2016-12-16,NAC Breda,Emmen,3,1,H
+2016-12-16,VVV Venlo,FC Eindhoven,1,0,H
+2016-12-16,Fortuna Sittard,Den Bosch,0,4,A
+2016-12-16,Dordrecht,Achilles 29,3,0,H
+2016-12-16,FC Volendam,FC OSS,3,1,H
+2016-12-16,Helmond Sport,Jong Ajax,2,4,A
+2016-12-18,Waalwijk,Cambuur,2,2,D
+2016-12-19,Jong PSV U21,MVV,0,0,D
+2016-12-19,Jong Utrecht,Telstar,2,1,H
+2017-01-13,Emmen,Jong Ajax,0,0,D
+2017-01-13,MVV,Helmond Sport,2,0,H
+2017-01-13,Almere City FC,FC Volendam,2,2,D
+2017-01-13,Cambuur,VVV Venlo,0,2,A
+2017-01-13,FC Eindhoven,De Graafschap,2,1,H
+2017-01-13,Telstar,Waalwijk,0,4,A
+2017-01-13,Achilles 29,Fortuna Sittard,0,1,A
+2017-01-13,Den Bosch,Jong PSV U21,0,0,D
+2017-01-13,FC OSS,Dordrecht,4,2,H
+2017-01-16,Jong Utrecht,NAC Breda,0,2,A
+2017-01-20,De Graafschap,Den Bosch,0,3,A
+2017-01-20,NAC Breda,Achilles 29,2,0,H
+2017-01-20,Fortuna Sittard,Telstar,1,1,D
+2017-01-20,Dordrecht,Jong Utrecht,3,0,H
+2017-01-20,FC Volendam,FC Eindhoven,3,1,H
+2017-01-20,Waalwijk,Emmen,1,1,D
+2017-01-20,Helmond Sport,FC OSS,3,1,H
+2017-01-21,Jong PSV U21,Cambuur,0,2,A
+2017-01-22,VVV Venlo,MVV,2,1,H
+2017-01-27,Emmen,Jong PSV U21,1,1,D
+2017-01-27,MVV,NAC Breda,1,1,D
+2017-01-27,Almere City FC,Fortuna Sittard,2,0,H
+2017-01-27,Den Bosch,Jong Ajax,1,2,A
+2017-01-27,FC Eindhoven,Waalwijk,3,0,H
+2017-01-27,FC OSS,VVV Venlo,0,3,A
+2017-01-27,Telstar,FC Volendam,0,1,A
+2017-01-27,Achilles 29,Helmond Sport,1,2,A
+2017-01-28,Cambuur,Dordrecht,3,0,H
+2017-01-30,Jong Ajax,Almere City FC,6,3,H
+2017-01-30,Jong Utrecht,De Graafschap,3,2,H
+2017-02-03,VVV Venlo,De Graafschap,4,1,H
+2017-02-03,Emmen,FC Volendam,3,1,H
+2017-02-03,Dordrecht,Fortuna Sittard,2,2,D
+2017-02-03,MVV,Achilles 29,0,0,D
+2017-02-03,Cambuur,Helmond Sport,3,0,H
+2017-02-03,Den Bosch,NAC Breda,2,1,H
+2017-02-03,FC Eindhoven,Almere City FC,4,1,H
+2017-02-03,Jong Ajax,Waalwijk,4,1,H
+2017-02-03,Telstar,FC OSS,3,1,H
+2017-02-03,Jong Utrecht,Jong PSV U21,0,2,A
+2017-02-06,De Graafschap,Cambuur,3,0,H
+2017-02-06,NAC Breda,Dordrecht,1,0,H
+2017-02-06,Fortuna Sittard,Jong Ajax,5,2,H
+2017-02-06,Jong PSV U21,VVV Venlo,2,1,H
+2017-02-06,FC Volendam,Den Bosch,2,1,H
+2017-02-06,Waalwijk,Jong Utrecht,1,2,A
+2017-02-06,Almere City FC,Emmen,3,1,H
+2017-02-06,FC OSS,MVV,0,3,A
+2017-02-06,Helmond Sport,Telstar,3,4,A
+2017-02-06,Achilles 29,FC Eindhoven,4,3,H
+2017-02-10,NAC Breda,Waalwijk,2,3,A
+2017-02-10,VVV Venlo,Helmond Sport,7,0,H
+2017-02-10,Emmen,De Graafschap,2,0,H
+2017-02-10,Dordrecht,Jong PSV U21,2,3,A
+2017-02-10,Cambuur,Fortuna Sittard,1,1,D
+2017-02-10,Den Bosch,Almere City FC,1,3,A
+2017-02-10,FC Eindhoven,FC OSS,1,2,A
+2017-02-10,Telstar,Achilles 29,1,1,D
+2017-02-13,Jong Utrecht,FC Volendam,2,4,A
+2017-02-14,Jong Ajax,MVV,1,1,D
+2017-02-17,De Graafschap,Telstar,2,1,H
+2017-02-17,Fortuna Sittard,Jong Utrecht,4,1,H
+2017-02-17,FC Volendam,VVV Venlo,0,1,A
+2017-02-17,Waalwijk,Dordrecht,2,1,H
+2017-02-17,Almere City FC,Cambuur,0,1,A
+2017-02-17,FC OSS,Den Bosch,1,1,D
+2017-02-17,Helmond Sport,Emmen,1,3,A
+2017-02-17,Achilles 29,Jong Ajax,2,3,A
+2017-02-19,MVV,FC Eindhoven,0,0,D
+2017-02-20,Jong PSV U21,NAC Breda,2,0,H
+2017-02-24,NAC Breda,FC Volendam,1,0,H
+2017-02-24,VVV Venlo,Achilles 29,4,0,H
+2017-02-24,Emmen,Fortuna Sittard,2,3,A
+2017-02-24,Dordrecht,De Graafschap,0,3,A
+2017-02-24,Jong PSV U21,Waalwijk,4,1,H
+2017-02-24,Almere City FC,FC OSS,3,3,D
+2017-02-24,Cambuur,MVV,4,0,H
+2017-02-24,Helmond Sport,Jong Utrecht,1,1,D
+2017-02-24,Jong Ajax,FC Eindhoven,1,1,D
+2017-02-24,Telstar,Den Bosch,2,0,H
+2017-03-03,De Graafschap,NAC Breda,2,1,H
+2017-03-03,Fortuna Sittard,Jong PSV U21,0,0,D
+2017-03-03,MVV,Almere City FC,2,2,D
+2017-03-03,FC Volendam,Dordrecht,1,1,D
+2017-03-03,Waalwijk,Helmond Sport,5,2,H
+2017-03-03,Den Bosch,Emmen,1,1,D
+2017-03-03,FC Eindhoven,Telstar,4,2,H
+2017-03-03,FC OSS,Jong Ajax,0,3,A
+2017-03-05,Achilles 29,Cambuur,0,3,A
+2017-03-06,Jong Utrecht,VVV Venlo,0,0,D
+2017-03-10,De Graafschap,Jong Ajax,3,2,H
+2017-03-10,NAC Breda,Telstar,1,0,H
+2017-03-10,VVV Venlo,Fortuna Sittard,4,1,H
+2017-03-10,Emmen,FC Eindhoven,2,0,H
+2017-03-10,Dordrecht,MVV,0,1,A
+2017-03-10,Jong PSV U21,Almere City FC,0,1,A
+2017-03-10,FC Volendam,Helmond Sport,1,0,H
+2017-03-10,Waalwijk,FC OSS,3,0,H
+2017-03-10,Cambuur,Den Bosch,0,1,A
+2017-03-10,Jong Utrecht,Achilles 29,0,1,A
+2017-03-13,Fortuna Sittard,NAC Breda,0,2,A
+2017-03-13,MVV,Jong Utrecht,4,1,H
+2017-03-13,Almere City FC,Dordrecht,3,0,H
+2017-03-13,Den Bosch,VVV Venlo,0,2,A
+2017-03-13,FC Eindhoven,Jong PSV U21,0,5,A
+2017-03-13,FC OSS,Cambuur,2,7,A
+2017-03-13,Helmond Sport,De Graafschap,0,2,A
+2017-03-13,Jong Ajax,FC Volendam,1,1,D
+2017-03-13,Telstar,Emmen,2,2,D
+2017-03-13,Achilles 29,Waalwijk,2,3,A
+2017-03-17,NAC Breda,Jong Ajax,4,3,H
+2017-03-17,Fortuna Sittard,De Graafschap,3,2,H
+2017-03-17,Emmen,FC OSS,2,0,H
+2017-03-17,Dordrecht,VVV Venlo,5,2,H
+2017-03-17,Jong PSV U21,Helmond Sport,3,0,H
+2017-03-17,Den Bosch,Waalwijk,1,1,D
+2017-03-17,Telstar,MVV,1,1,D
+2017-03-17,Jong Utrecht,FC Eindhoven,3,1,H
+2017-03-17,Achilles 29,Almere City FC,3,3,D
+2017-03-19,FC Volendam,Cambuur,1,1,D
+2017-03-31,De Graafschap,Jong PSV U21,2,1,H
+2017-03-31,VVV Venlo,NAC Breda,0,4,A
+2017-03-31,Waalwijk,FC Volendam,1,4,A
+2017-03-31,Almere City FC,Telstar,2,0,H
+2017-03-31,Cambuur,Emmen,1,0,H
+2017-03-31,FC Eindhoven,Den Bosch,4,2,H
+2017-03-31,FC OSS,Achilles 29,4,0,H
+2017-03-31,Helmond Sport,Dordrecht,1,0,H
+2017-04-02,MVV,Fortuna Sittard,1,1,D
+2017-04-03,Jong Ajax,Jong Utrecht,2,0,H
+2017-04-07,De Graafschap,Waalwijk,4,0,H
+2017-04-07,NAC Breda,Cambuur,0,2,A
+2017-04-07,VVV Venlo,Almere City FC,3,2,H
+2017-04-07,Fortuna Sittard,Helmond Sport,4,1,H
+2017-04-07,Emmen,Achilles 29,1,0,H
+2017-04-07,Dordrecht,FC Eindhoven,1,1,D
+2017-04-07,Den Bosch,MVV,2,1,H
+2017-04-07,Telstar,Jong Ajax,1,3,A
+2017-04-10,Jong PSV U21,FC Volendam,2,0,H
+2017-04-10,Jong Utrecht,FC OSS,2,1,H
+2017-04-14,MVV,Emmen,2,2,D
+2017-04-14,FC Volendam,De Graafschap,2,2,D
+2017-04-14,Waalwijk,VVV Venlo,1,2,A
+2017-04-14,Almere City FC,Jong Utrecht,2,1,H
+2017-04-14,Cambuur,Telstar,5,1,H
+2017-04-14,FC Eindhoven,Fortuna Sittard,3,1,H
+2017-04-14,FC OSS,Jong PSV U21,2,0,H
+2017-04-14,Helmond Sport,NAC Breda,2,1,H
+2017-04-14,Jong Ajax,Dordrecht,1,0,H
+2017-04-14,Achilles 29,Den Bosch,2,1,H
+2017-04-17,De Graafschap,MVV,2,0,H
+2017-04-17,NAC Breda,FC Eindhoven,3,3,D
+2017-04-17,VVV Venlo,Emmen,0,0,D
+2017-04-17,Fortuna Sittard,FC OSS,2,0,H
+2017-04-17,Dordrecht,Telstar,0,2,A
+2017-04-17,Jong PSV U21,Jong Ajax,3,1,H
+2017-04-17,FC Volendam,Achilles 29,1,2,A
+2017-04-17,Waalwijk,Almere City FC,1,1,D
+2017-04-17,Helmond Sport,Den Bosch,2,0,H
+2017-04-17,Jong Utrecht,Cambuur,0,2,A
+2017-04-21,Emmen,NAC Breda,0,0,D
+2017-04-21,MVV,Jong PSV U21,2,2,D
+2017-04-21,Almere City FC,De Graafschap,1,2,A
+2017-04-21,Cambuur,Waalwijk,5,0,H
+2017-04-21,Den Bosch,Fortuna Sittard,1,1,D
+2017-04-21,FC Eindhoven,VVV Venlo,0,0,D
+2017-04-21,FC OSS,FC Volendam,2,2,D
+2017-04-21,Jong Ajax,Helmond Sport,2,0,H
+2017-04-21,Telstar,Jong Utrecht,3,1,H
+2017-04-21,Achilles 29,Dordrecht,2,2,D
+2017-04-25,Jong Utrecht,Den Bosch,5,0,H
+2017-04-28,De Graafschap,Achilles 29,3,3,D
+2017-04-28,NAC Breda,FC OSS,4,1,H
+2017-04-28,VVV Venlo,Jong Ajax,1,4,A
+2017-04-28,Dordrecht,Emmen,0,4,A
+2017-04-28,Jong PSV U21,Telstar,1,0,H
+2017-04-28,FC Volendam,MVV,3,1,H
+2017-04-28,Waalwijk,Fortuna Sittard,3,0,H
+2017-04-28,Cambuur,FC Eindhoven,4,1,H
+2017-04-28,Helmond Sport,Almere City FC,1,1,D
+2017-05-05,Fortuna Sittard,FC Volendam,3,0,H
+2017-05-05,Emmen,Jong Utrecht,0,3,A
+2017-05-05,MVV,Waalwijk,1,1,D
+2017-05-05,Almere City FC,NAC Breda,0,2,A
+2017-05-05,Den Bosch,Dordrecht,1,0,H
+2017-05-05,FC Eindhoven,Helmond Sport,2,2,D
+2017-05-05,FC OSS,De Graafschap,2,1,H
+2017-05-05,Jong Ajax,Cambuur,2,1,H
+2017-05-05,Telstar,VVV Venlo,1,2,A
+2017-05-05,Achilles 29,Jong PSV U21,1,5,A

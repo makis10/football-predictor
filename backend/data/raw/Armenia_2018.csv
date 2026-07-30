@@ -1,0 +1,145 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2018-08-04,FC Urartu,Shirak,0,0,D
+2018-08-04,Lori,Ararat-Armenia,0,2,A
+2018-08-05,Ararat,Alashkert,0,1,A
+2018-08-11,FC Noah,FC Urartu,1,0,H
+2018-08-11,Ararat-Armenia,Ararat,1,2,A
+2018-08-12,Shirak,Lori,1,1,D
+2018-08-18,Lori,FC Noah,3,2,H
+2018-08-19,Ararat,Shirak,0,0,D
+2018-08-19,Gandzasar,Alashkert,0,1,A
+2018-08-19,Pyunik Yerevan,Ararat-Armenia,3,1,H
+2018-08-22,FC Noah,Ararat,1,1,D
+2018-08-22,FC Urartu,Lori,1,3,A
+2018-08-22,Shirak,Pyunik Yerevan,1,2,A
+2018-08-22,Ararat-Armenia,Gandzasar,0,0,D
+2018-08-25,Ararat,FC Urartu,2,4,A
+2018-08-25,Gandzasar,Shirak,1,1,D
+2018-08-26,Alashkert,Ararat-Armenia,1,3,A
+2018-08-26,Pyunik Yerevan,FC Noah,2,0,H
+2018-08-29,FC Noah,Gandzasar,2,2,D
+2018-08-29,Shirak,Alashkert,0,0,D
+2018-08-29,FC Urartu,Pyunik Yerevan,4,2,H
+2018-08-29,Lori,Ararat,1,0,H
+2018-09-01,Alashkert,FC Noah,6,0,H
+2018-09-01,Pyunik Yerevan,Lori,0,3,A
+2018-09-01,FC Urartu,Gandzasar,1,0,H
+2018-09-01,Ararat-Armenia,Shirak,3,1,H
+2018-09-15,FC Noah,Ararat-Armenia,1,1,D
+2018-09-15,Lori,Gandzasar,3,0,H
+2018-09-16,Ararat,Pyunik Yerevan,1,3,A
+2018-09-16,FC Urartu,Alashkert,1,0,H
+2018-09-19,Alashkert,Pyunik Yerevan,1,2,A
+2018-09-22,Alashkert,Lori,2,1,H
+2018-09-22,Gandzasar,Ararat,4,0,H
+2018-09-23,Shirak,FC Noah,3,0,H
+2018-09-23,Ararat-Armenia,FC Urartu,1,3,A
+2018-09-29,Shirak,FC Urartu,0,0,D
+2018-09-29,Ararat-Armenia,Lori,0,0,D
+2018-09-30,Alashkert,Ararat,2,1,H
+2018-09-30,Gandzasar,Pyunik Yerevan,1,2,A
+2018-10-03,Pyunik Yerevan,Gandzasar,0,1,A
+2018-10-07,FC Urartu,FC Noah,2,1,H
+2018-10-07,Lori,Shirak,3,1,H
+2018-10-07,Ararat,Ararat-Armenia,0,1,A
+2018-10-07,Pyunik Yerevan,Alashkert,0,1,A
+2018-10-20,FC Noah,Lori,2,3,A
+2018-10-20,Shirak,Ararat,1,0,H
+2018-10-21,Alashkert,Gandzasar,1,0,H
+2018-10-21,Ararat-Armenia,Pyunik Yerevan,0,0,D
+2018-10-27,Ararat,FC Noah,0,0,D
+2018-10-27,Gandzasar,Ararat-Armenia,0,0,D
+2018-10-28,Lori,FC Urartu,1,3,A
+2018-10-28,Pyunik Yerevan,Shirak,1,1,D
+2018-10-31,FC Noah,Pyunik Yerevan,0,0,D
+2018-10-31,Ararat,FC Urartu,0,1,A
+2018-10-31,Shirak,Gandzasar,2,0,H
+2018-10-31,Ararat-Armenia,Alashkert,0,1,A
+2018-11-03,Alashkert,Shirak,1,0,H
+2018-11-03,Gandzasar,FC Noah,0,2,A
+2018-11-04,Pyunik Yerevan,FC Urartu,2,0,H
+2018-11-04,Ararat,Lori,2,2,D
+2018-11-11,FC Noah,Alashkert,0,0,D
+2018-11-11,Lori,Pyunik Yerevan,0,1,A
+2018-11-11,Shirak,Ararat-Armenia,1,0,H
+2018-11-11,Gandzasar,FC Urartu,3,0,H
+2018-11-24,Alashkert,FC Urartu,1,0,H
+2018-11-24,Ararat-Armenia,FC Noah,3,1,H
+2018-11-25,Gandzasar,Lori,2,0,H
+2018-11-25,Pyunik Yerevan,Ararat,0,1,A
+2018-11-28,FC Urartu,Ararat-Armenia,0,3,A
+2018-11-28,Ararat,Gandzasar,0,2,A
+2018-11-28,FC Noah,Shirak,0,1,A
+2018-11-28,Lori,Alashkert,1,1,D
+2018-12-01,FC Urartu,Shirak,4,0,H
+2018-12-01,Lori,Ararat-Armenia,0,1,A
+2018-12-02,Pyunik Yerevan,Gandzasar,1,3,A
+2018-12-02,Ararat,Alashkert,1,0,H
+2019-03-02,Alashkert,Pyunik Yerevan,1,2,A
+2019-03-02,Ararat-Armenia,Ararat,4,1,H
+2019-03-03,FC Noah,FC Urartu,1,1,D
+2019-03-03,Shirak,Lori,0,0,D
+2019-03-06,Gandzasar,Alashkert,2,4,A
+2019-03-06,Pyunik Yerevan,Ararat-Armenia,0,3,A
+2019-03-06,Ararat,Shirak,0,2,A
+2019-03-06,Lori,FC Noah,2,0,H
+2019-03-09,Ararat-Armenia,Gandzasar,2,0,H
+2019-03-10,FC Noah,Ararat,0,0,D
+2019-03-10,Shirak,Pyunik Yerevan,0,2,A
+2019-03-11,FC Urartu,Lori,0,0,D
+2019-03-15,Gandzasar,Shirak,0,0,D
+2019-03-16,Pyunik Yerevan,FC Noah,1,0,H
+2019-03-17,Alashkert,Ararat-Armenia,0,1,A
+2019-03-17,FC Urartu,Ararat,3,1,H
+2019-03-30,Shirak,Alashkert,1,1,D
+2019-03-31,FC Urartu,Pyunik Yerevan,1,1,D
+2019-03-31,Lori,Ararat,2,2,D
+2019-04-01,FC Noah,Gandzasar,2,0,H
+2019-04-06,Gandzasar,FC Urartu,1,2,A
+2019-04-07,Alashkert,FC Noah,1,0,H
+2019-04-07,Pyunik Yerevan,Lori,1,2,A
+2019-04-08,Ararat-Armenia,Shirak,2,2,D
+2019-04-10,FC Urartu,Alashkert,2,0,H
+2019-04-10,Lori,Gandzasar,0,0,D
+2019-04-11,Ararat,Pyunik Yerevan,1,2,A
+2019-04-11,FC Noah,Ararat-Armenia,1,3,A
+2019-04-14,Alashkert,Lori,0,1,A
+2019-04-14,Gandzasar,Ararat,1,0,H
+2019-04-15,Ararat-Armenia,FC Urartu,1,1,D
+2019-04-15,Shirak,FC Noah,0,0,D
+2019-04-19,Alashkert,Ararat,2,0,H
+2019-04-19,Ararat-Armenia,Lori,3,0,H
+2019-04-19,Shirak,FC Urartu,0,0,D
+2019-04-20,Gandzasar,Pyunik Yerevan,0,1,A
+2019-04-26,Ararat,Ararat-Armenia,2,6,A
+2019-04-27,Pyunik Yerevan,Alashkert,1,0,H
+2019-04-27,FC Urartu,FC Noah,3,0,H
+2019-04-28,Lori,Shirak,2,2,D
+2019-05-01,Alashkert,Gandzasar,2,0,H
+2019-05-01,Ararat-Armenia,Pyunik Yerevan,1,4,A
+2019-05-01,FC Noah,Lori,2,1,H
+2019-05-02,Shirak,Ararat,3,0,H
+2019-05-04,Gandzasar,Ararat-Armenia,2,1,H
+2019-05-04,Lori,FC Urartu,1,3,A
+2019-05-05,Pyunik Yerevan,Shirak,2,0,H
+2019-05-06,Ararat,FC Noah,2,1,H
+2019-05-10,FC Noah,Pyunik Yerevan,0,3,A
+2019-05-10,FC Urartu,Ararat,1,1,D
+2019-05-11,Shirak,Gandzasar,0,0,D
+2019-05-12,Ararat-Armenia,Alashkert,2,1,H
+2019-05-14,Gandzasar,FC Noah,0,1,A
+2019-05-14,Ararat,Lori,1,0,H
+2019-05-15,Alashkert,Shirak,1,0,H
+2019-05-15,Pyunik Yerevan,FC Urartu,1,1,D
+2019-05-18,FC Urartu,Gandzasar,0,5,A
+2019-05-19,Shirak,Ararat-Armenia,0,1,A
+2019-05-19,FC Noah,Alashkert,1,1,D
+2019-05-20,Lori,Pyunik Yerevan,2,2,D
+2019-05-24,Alashkert,FC Urartu,1,1,D
+2019-05-24,Ararat-Armenia,FC Noah,2,0,H
+2019-05-25,Gandzasar,Lori,1,1,D
+2019-05-26,Pyunik Yerevan,Ararat,2,1,H
+2019-05-30,FC Urartu,Ararat-Armenia,0,1,A
+2019-05-30,Ararat,Gandzasar,1,7,A
+2019-05-30,FC Noah,Shirak,3,2,H
+2019-05-30,Lori,Alashkert,3,2,H

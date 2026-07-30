@@ -1,0 +1,200 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2025-08-16,Valletta FC,Birkirkara,0,0,D
+2025-08-16,Zabbar St. Patrick,Sliema Wanderers,1,2,A
+2025-08-17,Marsaxlokk,Mosta,3,1,H
+2025-08-17,Tarxien Rainbows,Hamrun Spartans,1,1,D
+2025-08-17,Naxxar Lions,Floriana,1,3,A
+2025-08-18,Hibernians,Gzira United,5,3,H
+2025-08-22,Sliema Wanderers,Mosta,0,1,A
+2025-08-23,Tarxien Rainbows,Floriana,0,1,A
+2025-08-23,Birkirkara,Gzira United,0,0,D
+2025-08-24,Zabbar St. Patrick,Hibernians,2,2,D
+2025-08-24,Naxxar Lions,Marsaxlokk,0,1,A
+2025-08-31,Hamrun Spartans,Valletta FC,1,1,D
+2025-09-12,Floriana,Gzira United,1,1,D
+2025-09-12,Valletta FC,Marsaxlokk,3,1,H
+2025-09-13,Hamrun Spartans,Mosta,2,0,H
+2025-09-13,Hibernians,Birkirkara,2,1,H
+2025-09-13,Zabbar St. Patrick,Naxxar Lions,1,1,D
+2025-09-13,Sliema Wanderers,Tarxien Rainbows,1,0,H
+2025-09-16,Zabbar St. Patrick,Hamrun Spartans,0,1,A
+2025-09-16,Floriana,Valletta FC,0,2,A
+2025-09-16,Naxxar Lions,Tarxien Rainbows,2,3,A
+2025-09-16,Sliema Wanderers,Birkirkara,2,2,D
+2025-09-17,Marsaxlokk,Gzira United,2,0,H
+2025-09-17,Mosta,Hibernians,2,2,D
+2025-09-20,Hamrun Spartans,Gzira United,0,0,D
+2025-09-20,Marsaxlokk,Floriana,1,2,A
+2025-09-20,Hibernians,Naxxar Lions,2,0,H
+2025-09-20,Tarxien Rainbows,Zabbar St. Patrick,1,1,D
+2025-09-21,Sliema Wanderers,Valletta FC,1,1,D
+2025-09-21,Birkirkara,Mosta,2,0,H
+2025-09-23,Marsaxlokk,Hamrun Spartans,0,2,A
+2025-09-23,Tarxien Rainbows,Hibernians,1,3,A
+2025-09-24,Birkirkara,Naxxar Lions,1,0,H
+2025-09-24,Sliema Wanderers,Gzira United,2,0,H
+2025-09-24,Valletta FC,Mosta,4,1,H
+2025-09-24,Floriana,Zabbar St. Patrick,3,1,H
+2025-09-27,Hamrun Spartans,Hibernians,2,0,H
+2025-09-27,Mosta,Floriana,0,1,A
+2025-09-28,Zabbar St. Patrick,Gzira United,2,0,H
+2025-09-28,Marsaxlokk,Birkirkara,0,0,D
+2025-09-28,Tarxien Rainbows,Valletta FC,1,2,A
+2025-09-28,Sliema Wanderers,Naxxar Lions,0,4,A
+2025-10-02,Mosta,Gzira United,3,4,A
+2025-10-02,Tarxien Rainbows,Marsaxlokk,0,2,A
+2025-10-03,Hibernians,Floriana,0,1,A
+2025-10-03,Zabbar St. Patrick,Birkirkara,0,2,A
+2025-10-05,Sliema Wanderers,Hamrun Spartans,2,0,H
+2025-10-05,Naxxar Lions,Valletta FC,0,1,A
+2025-10-24,Mosta,Zabbar St. Patrick,1,1,D
+2025-10-24,Gzira United,Tarxien Rainbows,3,1,H
+2025-10-25,Valletta FC,Hibernians,1,0,H
+2025-10-25,Floriana,Birkirkara,2,0,H
+2025-10-26,Sliema Wanderers,Marsaxlokk,1,1,D
+2025-10-26,Naxxar Lions,Hamrun Spartans,1,1,D
+2025-10-28,Valletta FC,Gzira United,1,1,D
+2025-10-28,Tarxien Rainbows,Birkirkara,0,4,A
+2025-10-29,Hibernians,Sliema Wanderers,2,3,A
+2025-10-29,Floriana,Hamrun Spartans,1,3,A
+2025-10-29,Mosta,Naxxar Lions,3,0,H
+2025-10-29,Marsaxlokk,Zabbar St. Patrick,1,0,H
+2025-11-01,Birkirkara,Hamrun Spartans,0,2,A
+2025-11-01,Hibernians,Marsaxlokk,2,2,D
+2025-11-01,Floriana,Sliema Wanderers,2,2,D
+2025-11-02,Valletta FC,Zabbar St. Patrick,0,2,A
+2025-11-02,Tarxien Rainbows,Mosta,0,1,A
+2025-11-03,Gzira United,Naxxar Lions,2,1,H
+2025-11-22,Hamrun Spartans,Valletta FC,1,0,H
+2025-11-23,Floriana,Marsaxlokk,2,1,H
+2025-11-23,Sliema Wanderers,Birkirkara,2,1,H
+2025-11-24,Gzira United,Mosta,1,0,H
+2025-11-24,Zabbar St. Patrick,Tarxien Rainbows,2,2,D
+2025-11-25,Hibernians,Naxxar Lions,1,1,D
+2025-12-11,Gzira United,Naxxar Lions,3,1,H
+2025-12-12,Mosta,Zabbar St. Patrick,1,1,D
+2025-12-12,Hibernians,Tarxien Rainbows,1,0,H
+2025-12-13,Floriana,Birkirkara,2,0,H
+2025-12-14,Hamrun Spartans,Marsaxlokk,1,3,A
+2025-12-14,Valletta FC,Sliema Wanderers,1,2,A
+2025-12-18,Hibernians,Zabbar St. Patrick,3,3,D
+2025-12-19,Gzira United,Tarxien Rainbows,2,1,H
+2025-12-19,Mosta,Naxxar Lions,2,3,A
+2025-12-20,Valletta FC,Marsaxlokk,1,0,H
+2025-12-20,Floriana,Sliema Wanderers,2,1,H
+2025-12-21,Hamrun Spartans,Birkirkara,6,1,H
+2026-01-06,Hibernians,Gzira United,4,1,H
+2026-01-06,Sliema Wanderers,Marsaxlokk,0,0,D
+2026-01-07,Valletta FC,Birkirkara,2,0,H
+2026-01-07,Floriana,Hamrun Spartans,0,2,A
+2026-01-08,Mosta,Tarxien Rainbows,2,2,D
+2026-01-08,Zabbar St. Patrick,Naxxar Lions,1,2,A
+2026-01-10,Floriana,Valletta FC,0,0,D
+2026-01-10,Hamrun Spartans,Sliema Wanderers,1,0,H
+2026-01-11,Gzira United,Zabbar St. Patrick,0,2,A
+2026-01-11,Hibernians,Mosta,0,2,A
+2026-01-11,Naxxar Lions,Tarxien Rainbows,1,0,H
+2026-01-11,Marsaxlokk,Birkirkara,2,1,H
+2026-01-16,Sliema Wanderers,Zabbar St. Patrick,1,0,H
+2026-01-16,Mosta,Valletta FC,0,5,A
+2026-01-17,Floriana,Naxxar Lions,3,1,H
+2026-01-17,Hamrun Spartans,Tarxien Rainbows,2,1,H
+2026-01-18,Gzira United,Marsaxlokk,3,0,H
+2026-01-18,Birkirkara,Hibernians,3,0,H
+2026-01-23,Naxxar Lions,Zabbar St. Patrick,2,1,H
+2026-01-24,Valletta FC,Hamrun Spartans,0,0,D
+2026-01-25,Marsaxlokk,Tarxien Rainbows,2,1,H
+2026-01-25,Sliema Wanderers,Hibernians,1,3,A
+2026-01-25,Floriana,Mosta,2,1,H
+2026-01-25,Gzira United,Birkirkara,2,0,H
+2026-01-31,Tarxien Rainbows,Gzira United,1,2,A
+2026-01-31,Birkirkara,Marsaxlokk,0,1,A
+2026-01-31,Hamrun Spartans,Sliema Wanderers,2,0,H
+2026-01-31,Hibernians,Mosta,1,0,H
+2026-02-01,Valletta FC,Naxxar Lions,4,2,H
+2026-02-01,Zabbar St. Patrick,Floriana,0,3,A
+2026-02-03,Marsaxlokk,Sliema Wanderers,1,1,D
+2026-02-03,Gzira United,Hamrun Spartans,0,0,D
+2026-02-03,Birkirkara,Tarxien Rainbows,5,0,H
+2026-02-04,Naxxar Lions,Mosta,5,0,H
+2026-02-04,Valletta FC,Floriana,0,0,D
+2026-02-04,Hibernians,Zabbar St. Patrick,2,1,H
+2026-02-07,Hibernians,Tarxien Rainbows,1,1,D
+2026-02-07,Zabbar St. Patrick,Marsaxlokk,1,2,A
+2026-02-07,Hamrun Spartans,Naxxar Lions,4,0,H
+2026-02-08,Gzira United,Floriana,1,2,A
+2026-02-08,Birkirkara,Valletta FC,1,0,H
+2026-02-08,Mosta,Sliema Wanderers,0,1,A
+2026-02-13,Gzira United,Valletta FC,0,2,A
+2026-02-13,Hamrun Spartans,Zabbar St. Patrick,0,0,D
+2026-02-14,Mosta,Birkirkara,0,0,D
+2026-02-14,Naxxar Lions,Sliema Wanderers,1,1,D
+2026-02-15,Floriana,Tarxien Rainbows,2,0,H
+2026-02-15,Marsaxlokk,Hibernians,2,1,H
+2026-02-17,Zabbar St. Patrick,Valletta FC,0,0,D
+2026-02-17,Naxxar Lions,Gzira United,4,2,H
+2026-02-17,Birkirkara,Sliema Wanderers,1,1,D
+2026-02-18,Hibernians,Hamrun Spartans,0,1,A
+2026-02-18,Floriana,Marsaxlokk,0,0,D
+2026-02-18,Mosta,Tarxien Rainbows,0,1,A
+2026-02-21,Birkirkara,Zabbar St. Patrick,0,3,A
+2026-02-21,Valletta FC,Sliema Wanderers,0,1,A
+2026-02-21,Tarxien Rainbows,Naxxar Lions,1,2,A
+2026-02-22,Gzira United,Mosta,1,0,H
+2026-02-22,Floriana,Hibernians,4,1,H
+2026-02-23,Hamrun Spartans,Marsaxlokk,2,0,H
+2026-02-28,Mosta,Marsaxlokk,1,2,A
+2026-02-28,Tarxien Rainbows,Sliema Wanderers,1,1,D
+2026-02-28,Gzira United,Zabbar St. Patrick,1,1,D
+2026-02-28,Hibernians,Valletta FC,1,1,D
+2026-03-01,Naxxar Lions,Birkirkara,0,0,D
+2026-03-01,Hamrun Spartans,Floriana,1,1,D
+2026-03-07,Gzira United,Hibernians,1,0,H
+2026-03-07,Zabbar St. Patrick,Mosta,5,3,H
+2026-03-07,Sliema Wanderers,Floriana,0,1,A
+2026-03-08,Hamrun Spartans,Birkirkara,3,0,H
+2026-03-08,Valletta FC,Tarxien Rainbows,3,1,H
+2026-03-08,Marsaxlokk,Naxxar Lions,1,1,D
+2026-03-14,Birkirkara,Floriana,2,2,D
+2026-03-14,Naxxar Lions,Hibernians,2,1,H
+2026-03-14,Sliema Wanderers,Gzira United,2,1,H
+2026-03-14,Marsaxlokk,Valletta FC,1,1,D
+2026-03-15,Tarxien Rainbows,Zabbar St. Patrick,1,1,D
+2026-03-15,Mosta,Hamrun Spartans,2,1,H
+2026-04-10,Sliema Wanderers,Hibernians,1,1,D
+2026-04-11,Birkirkara,Zabbar St. Patrick,1,0,H
+2026-04-11,Naxxar Lions,Floriana,0,1,A
+2026-04-11,Tarxien Rainbows,Mosta,2,2,D
+2026-04-11,Marsaxlokk,Hamrun Spartans,3,2,H
+2026-04-12,Valletta FC,Gzira United,2,1,H
+2026-04-14,Sliema Wanderers,Birkirkara,1,0,H
+2026-04-14,Tarxien Rainbows,Hibernians,3,2,H
+2026-04-15,Naxxar Lions,Valletta FC,1,1,D
+2026-04-15,Hamrun Spartans,Gzira United,0,1,A
+2026-04-15,Mosta,Zabbar St. Patrick,2,1,H
+2026-04-15,Marsaxlokk,Floriana,1,3,A
+2026-04-18,Hibernians,Birkirkara,0,0,D
+2026-04-18,Floriana,Valletta FC,2,0,H
+2026-04-19,Tarxien Rainbows,Zabbar St. Patrick,3,3,D
+2026-04-19,Marsaxlokk,Gzira United,2,1,H
+2026-04-19,Mosta,Sliema Wanderers,2,2,D
+2026-04-19,Hamrun Spartans,Naxxar Lions,3,0,H
+2026-04-24,Tarxien Rainbows,Birkirkara,0,0,D
+2026-04-24,Hibernians,Mosta,2,0,H
+2026-04-25,Floriana,Hamrun Spartans,1,4,A
+2026-04-26,Zabbar St. Patrick,Sliema Wanderers,1,1,D
+2026-04-26,Marsaxlokk,Valletta FC,1,0,H
+2026-04-26,Gzira United,Naxxar Lions,0,0,D
+2026-04-30,Birkirkara,Mosta,1,1,D
+2026-04-30,Zabbar St. Patrick,Hibernians,3,0,H
+2026-04-30,Tarxien Rainbows,Sliema Wanderers,2,1,H
+2026-04-30,Gzira United,Floriana,0,1,A
+2026-05-02,Valletta FC,Hamrun Spartans,2,1,H
+2026-05-02,Marsaxlokk,Naxxar Lions,3,2,H
+2026-05-05,Zabbar St. Patrick,Tarxien Rainbows,2,3,A
+2026-05-09,Valletta FC,Floriana,0,0,D
+2026-05-09,Marsaxlokk,Hamrun Spartans,2,1,H
+2026-05-10,Naxxar Lions,Mosta,0,1,A
+2026-05-10,Zabbar St. Patrick,Tarxien Rainbows,2,0,H
+2026-05-15,Valletta FC,Hamrun Spartans,0,2,A
+2026-05-16,Floriana,Marsaxlokk,2,1,H

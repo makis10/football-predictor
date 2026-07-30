@@ -1,0 +1,217 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2019-08-10,Nacional,Chaves,3,0,H
+2019-08-10,Varzim,Oliveirense,0,0,D
+2019-08-10,Farense,Casa Pia,3,1,H
+2019-08-10,Mafra,Cova De Piedade,3,2,H
+2019-08-11,Academica,Leixoes,3,2,H
+2019-08-11,Feirense,Vilafranquense,2,0,H
+2019-08-11,Benfica B,Estoril,2,1,H
+2019-08-11,Penafiel,Academico Viseu,0,2,A
+2019-08-11,SC Covilha,FC Porto B,2,0,H
+2019-08-17,Academico Viseu,Academica,0,0,D
+2019-08-17,Oliveirense,SC Covilha,0,2,A
+2019-08-17,Chaves,Mafra,2,1,H
+2019-08-17,Casa Pia,Penafiel,1,2,A
+2019-08-18,Estoril,Farense,1,2,A
+2019-08-18,Cova De Piedade,Feirense,2,1,H
+2019-08-18,FC Porto B,Varzim,1,1,D
+2019-08-18,Leixoes,Nacional,1,1,D
+2019-08-18,Vilafranquense,Benfica B,4,0,H
+2019-08-23,Benfica B,Oliveirense,2,1,H
+2019-08-24,Academica,Chaves,1,2,A
+2019-08-24,Feirense,Academico Viseu,0,0,D
+2019-08-24,Penafiel,Cova De Piedade,3,0,H
+2019-08-24,SC Covilha,Vilafranquense,1,0,H
+2019-08-25,Farense,FC Porto B,1,3,A
+2019-08-25,Nacional,Mafra,0,0,D
+2019-08-25,Varzim,Leixoes,0,1,A
+2019-08-25,Casa Pia,Estoril,0,1,A
+2019-08-31,Leixoes,Feirense,2,2,D
+2019-08-31,FC Porto B,Casa Pia,0,0,D
+2019-08-31,Vilafranquense,Nacional,1,2,A
+2019-08-31,Cova De Piedade,Benfica B,2,0,H
+2019-09-01,Estoril,Varzim,3,1,H
+2019-09-01,Oliveirense,Farense,0,1,A
+2019-09-01,Mafra,Academica,1,0,H
+2019-09-01,Chaves,Penafiel,2,1,H
+2019-09-01,Academico Viseu,SC Covilha,1,3,A
+2019-09-13,Benfica B,Academico Viseu,0,0,D
+2019-09-14,Estoril,FC Porto B,2,1,H
+2019-09-14,Varzim,Cova De Piedade,2,1,H
+2019-09-14,Feirense,Chaves,1,0,H
+2019-09-14,Farense,Vilafranquense,3,0,H
+2019-09-15,Academica,Nacional,1,2,A
+2019-09-15,SC Covilha,Leixoes,2,3,A
+2019-09-15,Penafiel,Mafra,2,1,H
+2019-09-15,Casa Pia,Oliveirense,1,3,A
+2019-09-21,Oliveirense,FC Porto B,0,0,D
+2019-09-21,Chaves,SC Covilha,2,3,A
+2019-09-21,Nacional,Penafiel,2,1,H
+2019-09-21,Academico Viseu,Farense,1,0,H
+2019-09-22,Leixoes,Benfica B,1,0,H
+2019-09-22,Cova De Piedade,Casa Pia,0,1,A
+2019-09-22,Mafra,Varzim,1,1,D
+2019-09-22,Academica,Feirense,1,1,D
+2019-09-22,Vilafranquense,Estoril,1,4,A
+2019-10-05,Nacional,FC Porto B,4,1,H
+2019-10-05,Academica,Benfica B,1,0,H
+2019-10-12,Chaves,Estoril,2,0,H
+2019-10-12,Leixoes,Casa Pia,1,0,H
+2019-10-13,Cova De Piedade,Farense,0,2,A
+2019-10-13,Vilafranquense,Oliveirense,3,2,H
+2019-10-26,Penafiel,Academica,0,0,D
+2019-10-26,Benfica B,Nacional,1,0,H
+2019-10-26,FC Porto B,Vilafranquense,1,1,D
+2019-10-26,Feirense,Mafra,1,2,A
+2019-10-26,Casa Pia,Academico Viseu,2,3,A
+2019-10-27,SC Covilha,Cova De Piedade,1,0,H
+2019-10-27,Estoril,Oliveirense,3,0,H
+2019-10-27,Farense,Leixoes,1,0,H
+2019-10-27,Varzim,Chaves,2,1,H
+2019-10-30,Nacional,Varzim,1,1,D
+2019-10-30,Academico Viseu,FC Porto B,0,2,A
+2019-11-02,SC Covilha,Penafiel,0,0,D
+2019-11-02,Casa Pia,Vilafranquense,3,2,H
+2019-11-03,Farense,Mafra,2,1,H
+2019-11-03,FC Porto B,Leixoes,1,3,A
+2019-11-03,Feirense,Nacional,1,1,D
+2019-11-03,Benfica B,Chaves,1,3,A
+2019-11-03,Estoril,Academico Viseu,3,1,H
+2019-11-03,Oliveirense,Cova De Piedade,2,0,H
+2019-11-03,Varzim,Academica,2,1,H
+2019-11-09,Mafra,FC Porto B,3,1,H
+2019-11-09,Academica,Farense,1,2,A
+2019-11-09,Feirense,Varzim,1,2,A
+2019-11-09,Leixoes,Oliveirense,3,2,H
+2019-11-10,Penafiel,Benfica B,1,1,D
+2019-11-10,Nacional,SC Covilha,1,0,H
+2019-11-10,Academico Viseu,Vilafranquense,0,2,A
+2019-11-10,Cova De Piedade,Estoril,0,2,A
+2019-11-10,Chaves,Casa Pia,2,0,H
+2019-11-16,Varzim,Farense,1,3,A
+2019-11-16,Penafiel,Feirense,0,0,D
+2019-11-17,Mafra,SC Covilha,2,2,D
+2019-11-29,SC Covilha,Feirense,1,2,A
+2019-11-30,Farense,Chaves,1,0,H
+2019-11-30,Vilafranquense,Academica,3,2,H
+2019-11-30,Estoril,Leixoes,1,1,D
+2019-11-30,Varzim,Penafiel,1,0,H
+2019-12-01,Casa Pia,Nacional,0,1,A
+2019-12-01,Benfica B,Mafra,2,2,D
+2019-12-01,FC Porto B,Cova De Piedade,4,1,H
+2019-12-07,Penafiel,FC Porto B,2,2,D
+2019-12-07,Nacional,Farense,1,0,H
+2019-12-07,Cova De Piedade,Vilafranquense,0,0,D
+2019-12-07,Chaves,Oliveirense,0,2,A
+2019-12-08,Feirense,Benfica B,1,1,D
+2019-12-08,Academica,Casa Pia,3,1,H
+2019-12-08,Leixoes,Academico Viseu,0,1,A
+2019-12-08,Mafra,Estoril,3,1,H
+2019-12-08,Varzim,SC Covilha,1,0,H
+2019-12-13,Academico Viseu,Cova De Piedade,4,1,H
+2019-12-13,FC Porto B,Chaves,1,1,D
+2019-12-13,Benfica B,Varzim,3,3,D
+2019-12-14,Estoril,Nacional,1,2,A
+2019-12-14,Casa Pia,Mafra,0,1,A
+2019-12-14,Vilafranquense,Leixoes,1,1,D
+2019-12-15,Oliveirense,Penafiel,2,1,H
+2019-12-15,Farense,Feirense,1,0,H
+2019-12-15,SC Covilha,Academica,1,2,A
+2019-12-21,Leixoes,Cova De Piedade,0,0,D
+2019-12-22,Oliveirense,Academico Viseu,2,0,H
+2019-12-28,Penafiel,Estoril,1,0,H
+2019-12-28,Academica,Oliveirense,4,3,H
+2019-12-29,SC Covilha,Benfica B,2,2,D
+2019-12-29,Feirense,Casa Pia,1,1,D
+2019-12-29,Mafra,Academico Viseu,1,1,D
+2019-12-29,Chaves,Vilafranquense,2,1,H
+2020-01-04,Leixoes,Penafiel,0,1,A
+2020-01-04,Oliveirense,Mafra,1,3,A
+2020-01-04,Cova De Piedade,Chaves,0,2,A
+2020-01-04,Estoril,Feirense,0,2,A
+2020-01-05,Farense,Benfica B,0,3,A
+2020-01-05,Academico Viseu,Nacional,0,0,D
+2020-01-05,FC Porto B,Academica,1,3,A
+2020-01-05,Casa Pia,SC Covilha,1,4,A
+2020-01-05,Vilafranquense,Varzim,0,3,A
+2020-01-10,Varzim,Academico Viseu,1,2,A
+2020-01-11,Feirense,FC Porto B,1,0,H
+2020-01-11,Benfica B,Casa Pia,4,0,H
+2020-01-11,SC Covilha,Estoril,1,0,H
+2020-01-11,Chaves,Leixoes,0,0,D
+2020-01-12,Penafiel,Farense,3,0,H
+2020-01-12,Nacional,Oliveirense,0,0,D
+2020-01-12,Mafra,Vilafranquense,1,1,D
+2020-01-12,Academica,Cova De Piedade,3,0,H
+2020-01-18,Estoril,Academica,1,0,H
+2020-01-18,Oliveirense,Feirense,1,1,D
+2020-01-18,FC Porto B,Benfica B,2,1,H
+2020-01-18,Leixoes,Mafra,0,2,A
+2020-01-19,Farense,SC Covilha,0,0,D
+2020-01-19,Academico Viseu,Chaves,0,0,D
+2020-01-19,Cova De Piedade,Nacional,3,1,H
+2020-01-19,Casa Pia,Varzim,2,2,D
+2020-01-19,Vilafranquense,Penafiel,1,1,D
+2020-01-26,Chaves,Nacional,0,2,A
+2020-01-26,Cova De Piedade,Mafra,1,1,D
+2020-01-26,Oliveirense,Varzim,4,0,H
+2020-01-26,Academico Viseu,Penafiel,1,0,H
+2020-01-26,FC Porto B,SC Covilha,4,2,H
+2020-01-26,Leixoes,Academica,1,1,D
+2020-01-26,Casa Pia,Farense,0,2,A
+2020-01-26,Vilafranquense,Feirense,1,1,D
+2020-01-27,Estoril,Benfica B,1,0,H
+2020-01-30,Academica,Academico Viseu,2,0,H
+2020-02-01,Farense,Estoril,0,2,A
+2020-02-01,Mafra,Chaves,1,0,H
+2020-02-01,Penafiel,Casa Pia,1,1,D
+2020-02-02,Nacional,Leixoes,1,0,H
+2020-02-02,Varzim,FC Porto B,0,2,A
+2020-02-02,Feirense,Cova De Piedade,2,1,H
+2020-02-02,Benfica B,Vilafranquense,4,0,H
+2020-02-03,SC Covilha,Oliveirense,1,0,H
+2020-02-08,Mafra,Nacional,1,1,D
+2020-02-08,Academico Viseu,Feirense,0,1,A
+2020-02-08,Cova De Piedade,Penafiel,2,2,D
+2020-02-08,Leixoes,Varzim,1,0,H
+2020-02-09,Oliveirense,Benfica B,5,0,H
+2020-02-09,Chaves,Academica,1,2,A
+2020-02-09,FC Porto B,Farense,1,1,D
+2020-02-09,Vilafranquense,SC Covilha,1,0,H
+2020-02-09,Estoril,Casa Pia,4,1,H
+2020-02-15,Academica,Mafra,0,0,D
+2020-02-15,Nacional,Vilafranquense,5,1,H
+2020-02-15,Varzim,Estoril,3,0,H
+2020-02-15,Feirense,Leixoes,1,0,H
+2020-02-16,Casa Pia,FC Porto B,1,3,A
+2020-02-16,Benfica B,Cova De Piedade,2,0,H
+2020-02-16,SC Covilha,Academico Viseu,0,1,A
+2020-02-16,Farense,Oliveirense,3,1,H
+2020-02-17,Penafiel,Chaves,0,0,D
+2020-02-21,Vilafranquense,Farense,0,3,A
+2020-02-22,Leixoes,SC Covilha,0,0,D
+2020-02-22,Oliveirense,Casa Pia,2,1,H
+2020-02-22,FC Porto B,Estoril,1,1,D
+2020-02-22,Chaves,Feirense,1,2,A
+2020-02-23,Academico Viseu,Benfica B,1,1,D
+2020-02-23,Cova De Piedade,Varzim,1,2,A
+2020-02-23,Mafra,Penafiel,1,0,H
+2020-02-23,Nacional,Academica,1,0,H
+2020-02-28,Benfica B,Leixoes,0,1,A
+2020-02-29,Farense,Academico Viseu,3,1,H
+2020-02-29,Penafiel,Nacional,1,1,D
+2020-02-29,Feirense,Academica,1,0,H
+2020-03-01,Varzim,Mafra,2,1,H
+2020-03-01,SC Covilha,Chaves,0,2,A
+2020-03-01,Estoril,Vilafranquense,2,0,H
+2020-03-01,FC Porto B,Oliveirense,1,2,A
+2020-03-01,Casa Pia,Cova De Piedade,1,1,D
+2020-03-05,Academica,Penafiel,3,0,H
+2020-03-07,Vilafranquense,FC Porto B,3,2,H
+2020-03-07,Oliveirense,Estoril,1,1,D
+2020-03-07,Mafra,Feirense,0,1,A
+2020-03-08,Nacional,Benfica B,3,1,H
+2020-03-08,Academico Viseu,Casa Pia,1,0,H
+2020-03-08,Cova De Piedade,SC Covilha,2,1,H
+2020-03-08,Chaves,Varzim,1,1,D
+2020-03-09,Leixoes,Farense,1,1,D

@@ -1,0 +1,127 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2018-08-03,Lommel United,Union St. Gilloise,1,0,H
+2018-08-04,OH Leuven,KV Mechelen,1,1,D
+2018-08-04,KVC Westerlo,Roeselare,2,1,H
+2018-08-05,Tubize,Beerschot VA,3,3,D
+2018-08-10,Beerschot VA,KVC Westerlo,1,1,D
+2018-08-11,Roeselare,KV Mechelen,2,2,D
+2018-08-11,Lommel United,Tubize,2,2,D
+2018-08-12,Union St. Gilloise,OH Leuven,1,2,A
+2018-08-17,KV Mechelen,Lommel United,1,2,A
+2018-08-18,KVC Westerlo,Union St. Gilloise,1,3,A
+2018-08-18,Tubize,Roeselare,0,0,D
+2018-08-19,OH Leuven,Beerschot VA,1,1,D
+2018-08-31,Beerschot VA,Union St. Gilloise,1,0,H
+2018-09-01,OH Leuven,KVC Westerlo,1,3,A
+2018-09-01,Roeselare,Lommel United,2,2,D
+2018-09-02,KV Mechelen,Tubize,1,0,H
+2018-09-08,Lommel United,OH Leuven,1,1,D
+2018-09-08,KVC Westerlo,Tubize,2,1,H
+2018-09-09,Union St. Gilloise,KV Mechelen,2,2,D
+2018-09-09,Roeselare,Beerschot VA,2,1,H
+2018-09-14,Beerschot VA,KV Mechelen,1,0,H
+2018-09-15,Tubize,OH Leuven,3,1,H
+2018-09-15,Union St. Gilloise,Roeselare,2,0,H
+2018-09-16,KVC Westerlo,Lommel United,4,1,H
+2018-09-21,Tubize,Union St. Gilloise,0,2,A
+2018-09-22,Beerschot VA,Lommel United,1,3,A
+2018-09-22,OH Leuven,Roeselare,0,2,A
+2018-09-23,KV Mechelen,KVC Westerlo,2,0,H
+2018-09-28,Roeselare,Tubize,2,1,H
+2018-09-29,KVC Westerlo,Beerschot VA,1,2,A
+2018-09-29,Lommel United,KV Mechelen,0,3,A
+2018-09-30,OH Leuven,Union St. Gilloise,1,3,A
+2018-10-05,KV Mechelen,OH Leuven,3,0,H
+2018-10-06,Lommel United,Roeselare,3,1,H
+2018-10-06,Beerschot VA,Tubize,1,0,H
+2018-10-07,Union St. Gilloise,KVC Westerlo,2,0,H
+2018-10-19,KVC Westerlo,OH Leuven,0,1,A
+2018-10-20,Roeselare,Union St. Gilloise,1,1,D
+2018-10-20,Tubize,Lommel United,0,2,A
+2018-10-21,KV Mechelen,Beerschot VA,3,0,H
+2018-10-26,Beerschot VA,OH Leuven,3,1,H
+2018-10-27,Union St. Gilloise,Tubize,3,2,H
+2018-10-27,KV Mechelen,Roeselare,3,0,H
+2018-10-28,Lommel United,KVC Westerlo,0,1,A
+2018-10-30,Tubize,KV Mechelen,0,3,A
+2018-10-30,Union St. Gilloise,Beerschot VA,2,0,H
+2018-10-31,Roeselare,KVC Westerlo,0,1,A
+2018-11-03,OH Leuven,Tubize,4,1,H
+2018-11-03,Beerschot VA,Roeselare,2,1,H
+2018-11-04,Union St. Gilloise,Lommel United,1,1,D
+2018-11-04,KVC Westerlo,KV Mechelen,0,3,A
+2018-11-09,Lommel United,Beerschot VA,1,2,A
+2018-11-09,Tubize,KVC Westerlo,2,0,H
+2018-11-09,Roeselare,OH Leuven,0,4,A
+2018-11-09,KV Mechelen,Union St. Gilloise,2,1,H
+2018-11-16,OH Leuven,Union St. Gilloise,1,2,A
+2018-11-17,Tubize,Roeselare,3,2,H
+2018-11-17,KV Mechelen,Lommel United,3,2,H
+2018-11-18,KVC Westerlo,Beerschot VA,1,2,A
+2018-11-23,Roeselare,KV Mechelen,0,0,D
+2018-11-24,Lommel United,Tubize,1,0,H
+2018-11-24,Union St. Gilloise,KVC Westerlo,0,0,D
+2018-11-25,Beerschot VA,OH Leuven,3,2,H
+2018-11-30,KV Mechelen,Beerschot VA,1,1,D
+2018-12-01,KVC Westerlo,Roeselare,2,0,H
+2018-12-01,OH Leuven,Lommel United,3,1,H
+2018-12-02,Tubize,Union St. Gilloise,2,0,H
+2018-12-04,OH Leuven,Lommel United,1,2,A
+2018-12-07,Roeselare,OH Leuven,3,1,H
+2018-12-08,Beerschot VA,Tubize,5,2,H
+2018-12-08,KVC Westerlo,KV Mechelen,1,3,A
+2018-12-09,Lommel United,Union St. Gilloise,0,2,A
+2018-12-14,OH Leuven,KV Mechelen,1,3,A
+2018-12-15,Lommel United,Roeselare,0,1,A
+2018-12-15,Tubize,KVC Westerlo,0,0,D
+2018-12-16,Union St. Gilloise,Beerschot VA,1,1,D
+2018-12-21,KVC Westerlo,OH Leuven,0,0,D
+2018-12-22,KV Mechelen,Tubize,3,1,H
+2018-12-22,Beerschot VA,Lommel United,3,0,H
+2018-12-23,Roeselare,Union St. Gilloise,1,1,D
+2019-01-11,Lommel United,KVC Westerlo,2,1,H
+2019-01-12,Roeselare,Beerschot VA,1,2,A
+2019-01-13,Union St. Gilloise,KV Mechelen,1,2,A
+2019-01-13,OH Leuven,Tubize,0,2,A
+2019-01-18,KV Mechelen,Roeselare,2,2,D
+2019-01-19,Tubize,Lommel United,0,0,D
+2019-01-19,Beerschot VA,KVC Westerlo,1,1,D
+2019-01-20,Union St. Gilloise,OH Leuven,2,1,H
+2019-01-25,Roeselare,Tubize,0,1,A
+2019-01-26,KVC Westerlo,Union St. Gilloise,2,0,H
+2019-01-26,Beerschot VA,KV Mechelen,0,0,D
+2019-01-27,Lommel United,OH Leuven,2,3,A
+2019-02-01,OH Leuven,Roeselare,0,1,A
+2019-02-02,KV Mechelen,KVC Westerlo,3,0,H
+2019-02-03,Tubize,Beerschot VA,1,3,A
+2019-02-06,Union St. Gilloise,Lommel United,1,0,H
+2019-02-08,KVC Westerlo,Tubize,1,0,H
+2019-02-09,Roeselare,Lommel United,4,2,H
+2019-02-09,KV Mechelen,OH Leuven,2,1,H
+2019-02-10,Beerschot VA,Union St. Gilloise,3,1,H
+2019-02-15,Tubize,KV Mechelen,0,3,A
+2019-02-16,OH Leuven,KVC Westerlo,3,0,H
+2019-02-16,Union St. Gilloise,Roeselare,1,2,A
+2019-02-17,Lommel United,Beerschot VA,0,2,A
+2019-02-22,KVC Westerlo,Lommel United,2,2,D
+2019-02-23,Beerschot VA,Roeselare,1,1,D
+2019-02-23,KV Mechelen,Union St. Gilloise,0,5,A
+2019-02-24,Tubize,OH Leuven,1,3,A
+2019-03-03,Lommel United,KV Mechelen,1,1,D
+2019-03-03,OH Leuven,Beerschot VA,2,2,D
+2019-03-03,Roeselare,KVC Westerlo,1,1,D
+2019-03-03,Union St. Gilloise,Tubize,1,0,H
+2019-03-09,Beerschot VA,KV Mechelen,0,0,D
+2019-03-16,KV Mechelen,Beerschot VA,2,1,H
+2019-03-22,Lommel United,OH Leuven,0,2,A
+2019-03-24,Tubize,Roeselare,1,1,D
+2019-03-29,OH Leuven,Tubize,0,1,A
+2019-03-31,Roeselare,Lommel United,0,1,A
+2019-04-05,Tubize,Lommel United,1,1,D
+2019-04-07,Roeselare,OH Leuven,2,2,D
+2019-04-12,Lommel United,Tubize,3,0,H
+2019-04-14,OH Leuven,Roeselare,3,0,H
+2019-04-19,Tubize,OH Leuven,0,3,A
+2019-04-21,Lommel United,Roeselare,0,1,A
+2019-04-26,OH Leuven,Lommel United,1,0,H
+2019-04-26,Roeselare,Tubize,4,0,H

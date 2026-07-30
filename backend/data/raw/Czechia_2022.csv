@@ -1,0 +1,281 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2022-07-30,Zlin,Mlada Boleslav,0,0,D
+2022-07-30,Banik Ostrava,Sigma Olomouc,0,3,A
+2022-07-30,Zbrojovka Brno,Slovacko,2,2,D
+2022-07-30,Teplice,Plzen,2,2,D
+2022-07-31,FK Jablonec,Bohemians 1905,0,3,A
+2022-07-31,Hradec Kralove,Slavia Praha,1,0,H
+2022-07-31,Pardubice,Ceske Budejovice,0,2,A
+2022-07-31,Sparta Praha,Slovan Liberec,1,2,A
+2022-08-06,Plzen,Pardubice,2,1,H
+2022-08-06,Slovan Liberec,Teplice,5,1,H
+2022-08-06,Sigma Olomouc,Zbrojovka Brno,0,2,A
+2022-08-06,Bohemians 1905,Banik Ostrava,3,3,D
+2022-08-07,Mlada Boleslav,FK Jablonec,2,2,D
+2022-08-07,Slovacko,Hradec Kralove,1,0,H
+2022-08-07,Ceske Budejovice,Sparta Praha,0,2,A
+2022-08-07,Slavia Praha,Zlin,4,1,H
+2022-08-13,Banik Ostrava,Zlin,3,1,H
+2022-08-13,Teplice,Bohemians 1905,0,1,A
+2022-08-13,Zbrojovka Brno,Mlada Boleslav,3,1,H
+2022-08-13,Hradec Kralove,Plzen,1,2,A
+2022-08-14,FK Jablonec,Slavia Praha,2,3,A
+2022-08-14,Pardubice,Slovan Liberec,2,1,H
+2022-08-14,Ceske Budejovice,Slovacko,2,2,D
+2022-08-14,Sparta Praha,Sigma Olomouc,2,0,H
+2022-08-20,Banik Ostrava,Teplice,1,2,A
+2022-08-20,Mlada Boleslav,Sparta Praha,1,3,A
+2022-08-21,Zlin,FK Jablonec,2,2,D
+2022-08-21,Slovan Liberec,Ceske Budejovice,1,1,D
+2022-08-21,Sigma Olomouc,Slovacko,1,2,A
+2022-08-21,Slavia Praha,Pardubice,7,0,H
+2022-08-22,Bohemians 1905,Hradec Kralove,1,2,A
+2022-08-27,FK Jablonec,Banik Ostrava,1,1,D
+2022-08-27,Teplice,Zlin,0,0,D
+2022-08-27,Pardubice,Mlada Boleslav,0,3,A
+2022-08-27,Ceske Budejovice,Plzen,0,1,A
+2022-08-27,Sparta Praha,Bohemians 1905,1,1,D
+2022-08-28,Slovacko,Slovan Liberec,1,2,A
+2022-08-28,Hradec Kralove,Sigma Olomouc,1,0,H
+2022-08-28,Zbrojovka Brno,Slavia Praha,0,4,A
+2022-08-30,Zlin,Pardubice,2,1,H
+2022-08-30,Bohemians 1905,Ceske Budejovice,1,2,A
+2022-08-30,FK Jablonec,Sparta Praha,1,1,D
+2022-08-31,Plzen,Slovacko,3,0,H
+2022-08-31,Mlada Boleslav,Hradec Kralove,1,2,A
+2022-08-31,Sigma Olomouc,Slovan Liberec,1,1,D
+2022-08-31,Banik Ostrava,Zbrojovka Brno,1,2,A
+2022-08-31,Slavia Praha,Teplice,6,0,H
+2022-09-03,Slovan Liberec,Plzen,0,1,A
+2022-09-03,Teplice,FK Jablonec,3,2,H
+2022-09-03,Ceske Budejovice,Mlada Boleslav,0,2,A
+2022-09-03,Sparta Praha,Zlin,0,0,D
+2022-09-04,Hradec Kralove,Banik Ostrava,0,0,D
+2022-09-04,Pardubice,Sigma Olomouc,0,2,A
+2022-09-04,Zbrojovka Brno,Bohemians 1905,1,2,A
+2022-09-04,Slovacko,Slavia Praha,1,1,D
+2022-09-10,Zlin,Zbrojovka Brno,2,3,A
+2022-09-10,Sigma Olomouc,Plzen,2,3,A
+2022-09-10,Teplice,Sparta Praha,2,2,D
+2022-09-11,Mlada Boleslav,Slovacko,1,1,D
+2022-09-11,FK Jablonec,Hradec Kralove,3,0,H
+2022-09-11,Banik Ostrava,Pardubice,3,0,H
+2022-09-11,Bohemians 1905,Slovan Liberec,0,2,A
+2022-09-11,Slavia Praha,Ceske Budejovice,6,1,H
+2022-09-17,Slovan Liberec,Mlada Boleslav,1,3,A
+2022-09-17,Zbrojovka Brno,Teplice,2,2,D
+2022-09-17,Ceske Budejovice,Sigma Olomouc,0,3,A
+2022-09-17,Sparta Praha,Banik Ostrava,1,1,D
+2022-09-18,Slovacko,FK Jablonec,0,2,A
+2022-09-18,Hradec Kralove,Zlin,0,0,D
+2022-09-18,Pardubice,Bohemians 1905,0,1,A
+2022-09-18,Plzen,Slavia Praha,3,0,H
+2022-10-01,Mlada Boleslav,Sigma Olomouc,1,1,D
+2022-10-01,Banik Ostrava,Ceske Budejovice,1,2,A
+2022-10-01,Bohemians 1905,Plzen,1,1,D
+2022-10-01,Sparta Praha,Hradec Kralove,2,1,H
+2022-10-02,Zlin,Slovacko,0,2,A
+2022-10-02,FK Jablonec,Zbrojovka Brno,3,1,H
+2022-10-02,Teplice,Pardubice,5,1,H
+2022-10-02,Slavia Praha,Slovan Liberec,3,0,H
+2022-10-08,Hradec Kralove,Teplice,4,1,H
+2022-10-08,Pardubice,FK Jablonec,1,0,H
+2022-10-08,Zbrojovka Brno,Sparta Praha,0,4,A
+2022-10-08,Plzen,Mlada Boleslav,2,0,H
+2022-10-09,Slovan Liberec,Banik Ostrava,0,0,D
+2022-10-09,Slovacko,Bohemians 1905,2,4,A
+2022-10-09,Ceske Budejovice,Zlin,2,2,D
+2022-10-09,Sigma Olomouc,Slavia Praha,2,0,H
+2022-10-15,Bohemians 1905,Sigma Olomouc,1,1,D
+2022-10-15,Teplice,Ceske Budejovice,0,2,A
+2022-10-15,Hradec Kralove,Zbrojovka Brno,2,1,H
+2022-10-15,Sparta Praha,Pardubice,5,2,H
+2022-10-16,Banik Ostrava,Slovacko,3,1,H
+2022-10-16,Zlin,Slovan Liberec,2,1,H
+2022-10-16,FK Jablonec,Plzen,0,3,A
+2022-10-16,Slavia Praha,Mlada Boleslav,2,1,H
+2022-10-22,Slovan Liberec,FK Jablonec,2,0,H
+2022-10-22,Sigma Olomouc,Zlin,2,1,H
+2022-10-22,Pardubice,Zbrojovka Brno,1,3,A
+2022-10-22,Plzen,Banik Ostrava,3,1,H
+2022-10-23,Ceske Budejovice,Hradec Kralove,0,3,A
+2022-10-23,Mlada Boleslav,Bohemians 1905,4,3,H
+2022-10-23,Slovacko,Teplice,2,1,H
+2022-10-23,Slavia Praha,Sparta Praha,4,0,H
+2022-10-29,FK Jablonec,Ceske Budejovice,3,0,H
+2022-10-29,Banik Ostrava,Mlada Boleslav,3,1,H
+2022-10-29,Hradec Kralove,Pardubice,1,3,A
+2022-10-29,Zlin,Plzen,0,3,A
+2022-10-30,Bohemians 1905,Slavia Praha,1,4,A
+2022-10-30,Teplice,Sigma Olomouc,2,1,H
+2022-10-30,Zbrojovka Brno,Slovan Liberec,3,0,H
+2022-11-05,Sigma Olomouc,FK Jablonec,3,0,H
+2022-11-05,Bohemians 1905,Zlin,3,2,H
+2022-11-05,Ceske Budejovice,Zbrojovka Brno,3,2,H
+2022-11-05,Plzen,Sparta Praha,0,1,A
+2022-11-06,Mlada Boleslav,Teplice,3,0,H
+2022-11-06,Slovan Liberec,Hradec Kralove,2,0,H
+2022-11-06,Slovacko,Pardubice,1,0,H
+2022-11-06,Slavia Praha,Banik Ostrava,3,1,H
+2022-11-09,Plzen,Zbrojovka Brno,4,0,H
+2022-11-09,Sparta Praha,Slovacko,4,0,H
+2022-11-12,FK Jablonec,Mlada Boleslav,1,2,A
+2022-11-12,Banik Ostrava,Bohemians 1905,4,1,H
+2022-11-12,Teplice,Slovan Liberec,2,1,H
+2022-11-12,Sparta Praha,Ceske Budejovice,1,0,H
+2022-11-13,Hradec Kralove,Slovacko,1,2,A
+2022-11-13,Pardubice,Plzen,1,1,D
+2022-11-13,Zbrojovka Brno,Sigma Olomouc,2,3,A
+2022-11-13,Zlin,Slavia Praha,0,4,A
+2023-01-28,Plzen,Hradec Kralove,1,2,A
+2023-01-28,Bohemians 1905,Teplice,2,0,H
+2023-01-28,Slovacko,Ceske Budejovice,1,0,H
+2023-01-28,Sigma Olomouc,Sparta Praha,1,1,D
+2023-01-29,Slavia Praha,FK Jablonec,5,1,H
+2023-01-29,Mlada Boleslav,Zbrojovka Brno,0,0,D
+2023-01-29,Slovan Liberec,Pardubice,1,1,D
+2023-01-29,Zlin,Banik Ostrava,1,1,D
+2023-02-04,FK Jablonec,Zlin,2,2,D
+2023-02-04,Slovacko,Sigma Olomouc,0,0,D
+2023-02-04,Teplice,Banik Ostrava,0,5,A
+2023-02-04,Pardubice,Slavia Praha,0,2,A
+2023-02-05,Hradec Kralove,Bohemians 1905,0,2,A
+2023-02-05,Zbrojovka Brno,Plzen,1,3,A
+2023-02-05,Ceske Budejovice,Slovan Liberec,0,2,A
+2023-02-05,Sparta Praha,Mlada Boleslav,4,1,H
+2023-02-11,Zlin,Teplice,2,1,H
+2023-02-11,Slovan Liberec,Slovacko,0,1,A
+2023-02-11,Banik Ostrava,FK Jablonec,1,2,A
+2023-02-11,Slavia Praha,Zbrojovka Brno,2,0,H
+2023-02-12,Plzen,Ceske Budejovice,2,1,H
+2023-02-12,Mlada Boleslav,Pardubice,0,1,A
+2023-02-12,Sigma Olomouc,Hradec Kralove,2,2,D
+2023-02-12,Bohemians 1905,Sparta Praha,2,6,A
+2023-02-18,Slovan Liberec,Sigma Olomouc,2,2,D
+2023-02-18,Hradec Kralove,Mlada Boleslav,0,1,A
+2023-02-18,Zbrojovka Brno,Banik Ostrava,2,1,H
+2023-02-18,Teplice,Slavia Praha,1,1,D
+2023-02-19,Slovacko,Plzen,2,0,H
+2023-02-19,Pardubice,Zlin,2,1,H
+2023-02-19,Ceske Budejovice,Bohemians 1905,1,0,H
+2023-02-19,Sparta Praha,FK Jablonec,3,0,H
+2023-02-25,Zlin,Sparta Praha,2,3,A
+2023-02-25,Mlada Boleslav,Ceske Budejovice,2,2,D
+2023-02-25,Bohemians 1905,Zbrojovka Brno,1,1,D
+2023-02-25,Plzen,Slovan Liberec,2,1,H
+2023-02-26,Slavia Praha,Slovacko,2,0,H
+2023-02-26,FK Jablonec,Teplice,4,1,H
+2023-02-26,Sigma Olomouc,Pardubice,2,2,D
+2023-02-26,Banik Ostrava,Hradec Kralove,0,2,A
+2023-03-04,Plzen,Sigma Olomouc,1,1,D
+2023-03-04,Hradec Kralove,FK Jablonec,1,4,A
+2023-03-04,Pardubice,Banik Ostrava,1,1,D
+2023-03-04,Zbrojovka Brno,Zlin,1,1,D
+2023-03-04,Sparta Praha,Teplice,4,1,H
+2023-03-05,Slovan Liberec,Bohemians 1905,1,3,A
+2023-03-05,Slovacko,Mlada Boleslav,2,1,H
+2023-03-05,Ceske Budejovice,Slavia Praha,1,0,H
+2023-03-11,Zlin,Hradec Kralove,2,2,D
+2023-03-11,Sigma Olomouc,Ceske Budejovice,3,0,H
+2023-03-11,Banik Ostrava,Sparta Praha,0,3,A
+2023-03-11,Slavia Praha,Plzen,2,1,H
+2023-03-12,Mlada Boleslav,Slovan Liberec,4,0,H
+2023-03-12,Teplice,Zbrojovka Brno,1,1,D
+2023-03-12,Bohemians 1905,Pardubice,2,0,H
+2023-03-18,Sigma Olomouc,Mlada Boleslav,2,0,H
+2023-03-18,Hradec Kralove,Sparta Praha,0,2,A
+2023-03-18,Ceske Budejovice,Banik Ostrava,2,1,H
+2023-03-18,Slovan Liberec,Slavia Praha,2,2,D
+2023-03-19,Slovacko,Zlin,3,0,H
+2023-03-19,Pardubice,Teplice,3,1,H
+2023-03-19,Zbrojovka Brno,FK Jablonec,1,2,A
+2023-03-19,Plzen,Bohemians 1905,1,2,A
+2023-04-01,Zlin,Ceske Budejovice,5,1,H
+2023-04-01,Mlada Boleslav,Plzen,0,0,D
+2023-04-01,Banik Ostrava,Slovan Liberec,0,0,D
+2023-04-01,Slavia Praha,Sigma Olomouc,4,0,H
+2023-04-02,Sparta Praha,Zbrojovka Brno,3,1,H
+2023-04-02,FK Jablonec,Pardubice,1,0,H
+2023-04-02,Teplice,Hradec Kralove,1,0,H
+2023-04-02,Bohemians 1905,Slovacko,1,0,H
+2023-04-05,FK Jablonec,Slovacko,1,1,D
+2023-04-08,Slovan Liberec,Zlin,2,1,H
+2023-04-08,Slovacko,Banik Ostrava,0,1,A
+2023-04-08,Zbrojovka Brno,Hradec Kralove,1,2,A
+2023-04-08,Plzen,FK Jablonec,3,2,H
+2023-04-09,Mlada Boleslav,Slavia Praha,1,1,D
+2023-04-09,Sigma Olomouc,Bohemians 1905,2,2,D
+2023-04-09,Ceske Budejovice,Teplice,0,3,A
+2023-04-09,Pardubice,Sparta Praha,0,2,A
+2023-04-15,Zlin,Sigma Olomouc,0,1,A
+2023-04-15,FK Jablonec,Slovan Liberec,1,1,D
+2023-04-15,Teplice,Slovacko,1,3,A
+2023-04-15,Sparta Praha,Slavia Praha,3,3,D
+2023-04-16,Bohemians 1905,Mlada Boleslav,4,0,H
+2023-04-16,Hradec Kralove,Ceske Budejovice,2,1,H
+2023-04-16,Zbrojovka Brno,Pardubice,2,1,H
+2023-04-16,Banik Ostrava,Plzen,2,1,H
+2023-04-22,Mlada Boleslav,Banik Ostrava,1,0,H
+2023-04-22,Sigma Olomouc,Teplice,1,2,A
+2023-04-22,Slovacko,Sparta Praha,1,1,D
+2023-04-22,Pardubice,Hradec Kralove,1,0,H
+2023-04-22,Slavia Praha,Bohemians 1905,3,0,H
+2023-04-23,Slovan Liberec,Zbrojovka Brno,3,1,H
+2023-04-23,Ceske Budejovice,FK Jablonec,5,1,H
+2023-04-23,Plzen,Zlin,4,0,H
+2023-04-25,Teplice,Mlada Boleslav,1,1,D
+2023-04-25,Pardubice,Slovacko,3,1,H
+2023-04-25,Banik Ostrava,Slavia Praha,0,2,A
+2023-04-26,Zlin,Bohemians 1905,4,1,H
+2023-04-26,FK Jablonec,Sigma Olomouc,2,2,D
+2023-04-26,Hradec Kralove,Slovan Liberec,1,2,A
+2023-04-26,Zbrojovka Brno,Ceske Budejovice,1,1,D
+2023-04-26,Sparta Praha,Plzen,2,1,H
+2023-04-30,Slavia Praha,Hradec Kralove,1,1,D
+2023-04-30,Plzen,Teplice,1,1,D
+2023-04-30,Mlada Boleslav,Zlin,1,1,D
+2023-04-30,Slovan Liberec,Sparta Praha,1,3,A
+2023-04-30,Sigma Olomouc,Banik Ostrava,1,4,A
+2023-04-30,Bohemians 1905,FK Jablonec,4,1,H
+2023-04-30,Slovacko,Zbrojovka Brno,1,0,H
+2023-04-30,Ceske Budejovice,Pardubice,3,1,H
+2023-05-06,Zlin,FK Jablonec,1,1,D
+2023-05-06,Banik Ostrava,Zbrojovka Brno,4,0,H
+2023-05-06,Teplice,Pardubice,1,0,H
+2023-05-06,Plzen,Slovacko,2,2,D
+2023-05-07,Mlada Boleslav,Hradec Kralove,0,0,D
+2023-05-07,Sigma Olomouc,Sparta Praha,0,1,A
+2023-05-07,Ceske Budejovice,Slovan Liberec,3,2,H
+2023-05-07,Slavia Praha,Bohemians 1905,6,0,H
+2023-05-13,Plzen,Sigma Olomouc,1,3,A
+2023-05-13,Slovan Liberec,Ceske Budejovice,4,0,H
+2023-05-13,Hradec Kralove,Mlada Boleslav,2,0,H
+2023-05-13,Sparta Praha,Slavia Praha,3,2,H
+2023-05-14,FK Jablonec,Banik Ostrava,1,1,D
+2023-05-14,Teplice,Zlin,2,1,H
+2023-05-14,Zbrojovka Brno,Pardubice,0,2,A
+2023-05-14,Bohemians 1905,Slovacko,0,0,D
+2023-05-20,Sparta Praha,Bohemians 1905,2,1,H
+2023-05-20,Slovacko,Sigma Olomouc,2,2,D
+2023-05-20,Slavia Praha,Plzen,2,1,H
+2023-05-21,FK Jablonec,Zbrojovka Brno,1,0,H
+2023-05-21,Banik Ostrava,Teplice,2,1,H
+2023-05-21,Hradec Kralove,Slovan Liberec,0,4,A
+2023-05-21,Pardubice,Zlin,1,2,A
+2023-05-23,Plzen,Bohemians 1905,0,2,A
+2023-05-23,Sigma Olomouc,Slavia Praha,2,3,A
+2023-05-23,Slovacko,Sparta Praha,0,0,D
+2023-05-24,Zlin,Banik Ostrava,2,1,H
+2023-05-24,Teplice,Zbrojovka Brno,1,1,D
+2023-05-24,Pardubice,FK Jablonec,2,0,H
+2023-05-26,Slovan Liberec,Hradec Kralove,2,3,A
+2023-05-27,Slavia Praha,Slovacko,4,0,H
+2023-05-27,Sparta Praha,Plzen,0,1,A
+2023-05-27,Bohemians 1905,Sigma Olomouc,0,1,A
+2023-05-28,FK Jablonec,Teplice,0,2,A
+2023-05-28,Banik Ostrava,Pardubice,2,4,A
+2023-05-28,Zbrojovka Brno,Zlin,0,0,D
+2023-06-01,Zlin,Vyskov,1,0,H
+2023-06-01,Pribram,Pardubice,0,2,A
+2023-06-04,Pardubice,Pribram,0,0,D
+2023-06-04,Vyskov,Zlin,0,0,D

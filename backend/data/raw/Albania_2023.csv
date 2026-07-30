@@ -1,0 +1,186 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2023-08-26,Egnatia Rrogozhine,Skenderbeu Korce,0,1,A
+2023-08-26,Vllaznia Shkoder,FK Kukesi,3,1,H
+2023-08-27,Laci,Erzeni Shijak,3,3,D
+2023-08-27,Dinamo Tirana,Tirana,2,3,A
+2023-09-01,Erzeni Shijak,Vllaznia Shkoder,2,2,D
+2023-09-01,Skenderbeu Korce,Dinamo Tirana,1,0,H
+2023-09-02,Teuta Durres,Tirana,2,2,D
+2023-09-03,FK Kukesi,Egnatia Rrogozhine,0,4,A
+2023-09-03,Partizani,Laci,1,0,H
+2023-09-13,Egnatia Rrogozhine,Erzeni Shijak,4,3,H
+2023-09-13,Dinamo Tirana,FK Kukesi,2,1,H
+2023-09-14,Tirana,Skenderbeu Korce,3,1,H
+2023-09-14,Vllaznia Shkoder,Partizani,0,0,D
+2023-09-15,Laci,Teuta Durres,6,1,H
+2023-09-17,Erzeni Shijak,Dinamo Tirana,2,1,H
+2023-09-18,FK Kukesi,Tirana,1,2,A
+2023-09-18,Partizani,Egnatia Rrogozhine,1,1,D
+2023-09-19,Laci,Vllaznia Shkoder,2,1,H
+2023-09-19,Teuta Durres,Skenderbeu Korce,1,0,H
+2023-09-22,Tirana,Erzeni Shijak,0,1,A
+2023-09-22,Dinamo Tirana,Partizani,1,3,A
+2023-09-23,Egnatia Rrogozhine,Laci,2,1,H
+2023-09-23,Skenderbeu Korce,FK Kukesi,0,1,A
+2023-09-23,Vllaznia Shkoder,Teuta Durres,2,0,H
+2023-09-27,Erzeni Shijak,Skenderbeu Korce,1,2,A
+2023-09-27,Vllaznia Shkoder,Egnatia Rrogozhine,0,2,A
+2023-09-27,Teuta Durres,FK Kukesi,0,0,D
+2023-09-28,Laci,Dinamo Tirana,0,1,A
+2023-10-01,Egnatia Rrogozhine,Teuta Durres,0,1,A
+2023-10-01,Skenderbeu Korce,Partizani,1,0,H
+2023-10-02,FK Kukesi,Erzeni Shijak,2,1,H
+2023-10-02,Dinamo Tirana,Vllaznia Shkoder,1,1,D
+2023-10-03,Tirana,Laci,0,3,A
+2023-10-06,Egnatia Rrogozhine,Dinamo Tirana,3,0,H
+2023-10-07,Vllaznia Shkoder,Tirana,0,1,A
+2023-10-08,Laci,Skenderbeu Korce,2,0,H
+2023-10-08,Partizani,FK Kukesi,4,3,H
+2023-10-08,Teuta Durres,Erzeni Shijak,0,1,A
+2023-10-19,Partizani,Tirana,2,1,H
+2023-10-21,Skenderbeu Korce,Vllaznia Shkoder,0,2,A
+2023-10-22,FK Kukesi,Laci,1,0,H
+2023-10-22,Dinamo Tirana,Teuta Durres,2,3,A
+2023-10-23,Tirana,Egnatia Rrogozhine,2,3,A
+2023-10-23,Erzeni Shijak,Partizani,1,2,A
+2023-10-27,FK Kukesi,Vllaznia Shkoder,1,0,H
+2023-10-27,Erzeni Shijak,Laci,0,0,D
+2023-10-28,Tirana,Dinamo Tirana,1,1,D
+2023-10-28,Skenderbeu Korce,Egnatia Rrogozhine,1,1,D
+2023-10-28,Teuta Durres,Partizani,0,1,A
+2023-10-31,Egnatia Rrogozhine,FK Kukesi,2,1,H
+2023-10-31,Dinamo Tirana,Skenderbeu Korce,2,1,H
+2023-11-01,Tirana,Teuta Durres,2,0,H
+2023-11-01,Laci,Partizani,0,1,A
+2023-11-01,Vllaznia Shkoder,Erzeni Shijak,1,1,D
+2023-11-04,Erzeni Shijak,Egnatia Rrogozhine,0,1,A
+2023-11-05,FK Kukesi,Dinamo Tirana,0,0,D
+2023-11-05,Skenderbeu Korce,Tirana,1,1,D
+2023-11-05,Teuta Durres,Laci,1,1,D
+2023-11-06,Partizani,Vllaznia Shkoder,4,1,H
+2023-11-23,Egnatia Rrogozhine,Partizani,1,1,D
+2023-11-23,Dinamo Tirana,Erzeni Shijak,1,0,H
+2023-11-23,Tirana,FK Kukesi,3,2,H
+2023-11-24,Skenderbeu Korce,Teuta Durres,3,1,H
+2023-11-24,Vllaznia Shkoder,Laci,0,0,D
+2023-11-27,Erzeni Shijak,Tirana,1,0,H
+2023-11-27,Partizani,Dinamo Tirana,0,0,D
+2023-11-28,FK Kukesi,Skenderbeu Korce,2,2,D
+2023-11-28,Laci,Egnatia Rrogozhine,0,2,A
+2023-11-28,Teuta Durres,Vllaznia Shkoder,0,1,A
+2023-12-02,Egnatia Rrogozhine,Vllaznia Shkoder,3,0,H
+2023-12-02,Skenderbeu Korce,Erzeni Shijak,1,0,H
+2023-12-03,FK Kukesi,Teuta Durres,0,0,D
+2023-12-03,Dinamo Tirana,Laci,2,0,H
+2023-12-03,Tirana,Partizani,1,1,D
+2023-12-07,Partizani,Teuta Durres,1,1,D
+2023-12-10,Laci,Tirana,2,2,D
+2023-12-10,Erzeni Shijak,FK Kukesi,0,0,D
+2023-12-10,Vllaznia Shkoder,Dinamo Tirana,3,1,H
+2023-12-11,Partizani,Skenderbeu Korce,1,1,D
+2023-12-11,Teuta Durres,Egnatia Rrogozhine,2,2,D
+2023-12-16,FK Kukesi,Partizani,1,1,D
+2023-12-16,Dinamo Tirana,Egnatia Rrogozhine,1,2,A
+2023-12-17,Tirana,Vllaznia Shkoder,0,1,A
+2023-12-17,Erzeni Shijak,Teuta Durres,0,0,D
+2023-12-17,Skenderbeu Korce,Laci,0,1,A
+2023-12-22,Teuta Durres,Dinamo Tirana,1,2,A
+2023-12-22,Vllaznia Shkoder,Skenderbeu Korce,5,0,H
+2023-12-23,Laci,FK Kukesi,1,1,D
+2023-12-24,Egnatia Rrogozhine,Tirana,0,5,A
+2023-12-24,Partizani,Erzeni Shijak,1,2,A
+2024-01-12,Dinamo Tirana,Tirana,2,3,A
+2024-01-13,Egnatia Rrogozhine,Skenderbeu Korce,1,0,H
+2024-01-13,Partizani,Teuta Durres,1,0,H
+2024-01-14,Laci,Erzeni Shijak,0,0,D
+2024-01-14,Vllaznia Shkoder,FK Kukesi,1,0,H
+2024-01-19,FK Kukesi,Egnatia Rrogozhine,1,4,A
+2024-01-19,Teuta Durres,Tirana,2,2,D
+2024-01-20,Erzeni Shijak,Vllaznia Shkoder,0,1,A
+2024-01-20,Partizani,Laci,1,2,A
+2024-01-28,Laci,Teuta Durres,1,1,D
+2024-01-28,Tirana,Skenderbeu Korce,3,4,A
+2024-01-28,Vllaznia Shkoder,Partizani,1,1,D
+2024-01-29,Egnatia Rrogozhine,Erzeni Shijak,3,2,H
+2024-01-29,Dinamo Tirana,FK Kukesi,3,2,H
+2024-02-03,FK Kukesi,Tirana,2,3,A
+2024-02-03,Partizani,Egnatia Rrogozhine,1,1,D
+2024-02-03,Teuta Durres,Skenderbeu Korce,3,0,H
+2024-02-04,Laci,Vllaznia Shkoder,1,1,D
+2024-02-04,Erzeni Shijak,Dinamo Tirana,0,4,A
+2024-02-10,Egnatia Rrogozhine,Laci,0,0,D
+2024-02-10,Dinamo Tirana,Partizani,2,1,H
+2024-02-10,Vllaznia Shkoder,Teuta Durres,2,1,H
+2024-02-11,Skenderbeu Korce,FK Kukesi,1,0,H
+2024-02-11,Tirana,Erzeni Shijak,1,1,D
+2024-02-16,Teuta Durres,FK Kukesi,1,0,H
+2024-02-16,Partizani,Tirana,2,1,H
+2024-02-17,Laci,Dinamo Tirana,1,1,D
+2024-02-17,Erzeni Shijak,Skenderbeu Korce,0,3,A
+2024-02-17,Vllaznia Shkoder,Egnatia Rrogozhine,2,1,H
+2024-02-21,Skenderbeu Korce,Dinamo Tirana,0,1,A
+2024-02-25,FK Kukesi,Erzeni Shijak,1,2,A
+2024-02-25,Egnatia Rrogozhine,Teuta Durres,0,0,D
+2024-02-25,Skenderbeu Korce,Partizani,1,0,H
+2024-02-26,Tirana,Laci,1,1,D
+2024-02-26,Dinamo Tirana,Vllaznia Shkoder,0,1,A
+2024-03-01,Laci,Skenderbeu Korce,0,1,A
+2024-03-01,Egnatia Rrogozhine,Dinamo Tirana,1,1,D
+2024-03-01,Partizani,FK Kukesi,3,0,H
+2024-03-02,Teuta Durres,Erzeni Shijak,3,0,H
+2024-03-02,Vllaznia Shkoder,Tirana,3,1,H
+2024-03-10,Erzeni Shijak,Partizani,0,4,A
+2024-03-10,Tirana,Egnatia Rrogozhine,1,1,D
+2024-03-11,FK Kukesi,Laci,1,0,H
+2024-03-11,Skenderbeu Korce,Vllaznia Shkoder,0,1,A
+2024-03-16,Erzeni Shijak,Laci,0,0,D
+2024-03-16,Skenderbeu Korce,Egnatia Rrogozhine,2,0,H
+2024-03-16,Teuta Durres,Partizani,1,0,H
+2024-03-17,FK Kukesi,Vllaznia Shkoder,2,0,H
+2024-03-17,Tirana,Dinamo Tirana,3,2,H
+2024-03-29,Egnatia Rrogozhine,FK Kukesi,1,0,H
+2024-03-29,Tirana,Teuta Durres,1,2,A
+2024-03-29,Vllaznia Shkoder,Erzeni Shijak,1,1,D
+2024-03-30,Laci,Partizani,1,1,D
+2024-03-30,Dinamo Tirana,Skenderbeu Korce,2,0,H
+2024-04-03,Dinamo Tirana,Teuta Durres,1,0,H
+2024-04-07,FK Kukesi,Dinamo Tirana,1,1,D
+2024-04-07,Teuta Durres,Laci,0,1,A
+2024-04-07,Partizani,Vllaznia Shkoder,0,0,D
+2024-04-08,Skenderbeu Korce,Tirana,0,0,D
+2024-04-08,Erzeni Shijak,Egnatia Rrogozhine,1,0,H
+2024-04-13,Tirana,FK Kukesi,1,0,H
+2024-04-13,Skenderbeu Korce,Teuta Durres,0,1,A
+2024-04-13,Vllaznia Shkoder,Laci,1,2,A
+2024-04-14,Egnatia Rrogozhine,Partizani,2,1,H
+2024-04-14,Dinamo Tirana,Erzeni Shijak,2,0,H
+2024-04-19,FK Kukesi,Skenderbeu Korce,0,2,A
+2024-04-19,Erzeni Shijak,Tirana,0,2,A
+2024-04-20,Laci,Egnatia Rrogozhine,1,2,A
+2024-04-20,Partizani,Dinamo Tirana,2,0,H
+2024-04-20,Teuta Durres,Vllaznia Shkoder,0,0,D
+2024-04-27,Skenderbeu Korce,Erzeni Shijak,1,0,H
+2024-04-27,Dinamo Tirana,Laci,0,0,D
+2024-04-28,FK Kukesi,Teuta Durres,0,2,A
+2024-04-28,Egnatia Rrogozhine,Vllaznia Shkoder,0,1,A
+2024-04-28,Tirana,Partizani,1,2,A
+2024-05-04,Partizani,Skenderbeu Korce,1,0,H
+2024-05-04,Laci,Tirana,1,0,H
+2024-05-04,Teuta Durres,Egnatia Rrogozhine,1,0,H
+2024-05-04,Erzeni Shijak,FK Kukesi,3,3,D
+2024-05-04,Vllaznia Shkoder,Dinamo Tirana,1,0,H
+2024-05-08,FK Kukesi,Partizani,0,1,A
+2024-05-08,Skenderbeu Korce,Laci,1,1,D
+2024-05-08,Tirana,Vllaznia Shkoder,0,0,D
+2024-05-08,Dinamo Tirana,Egnatia Rrogozhine,0,1,A
+2024-05-08,Erzeni Shijak,Teuta Durres,0,3,A
+2024-05-11,Partizani,Erzeni Shijak,4,0,H
+2024-05-11,Laci,FK Kukesi,2,0,H
+2024-05-11,Teuta Durres,Dinamo Tirana,1,0,H
+2024-05-11,Egnatia Rrogozhine,Tirana,0,3,A
+2024-05-11,Vllaznia Shkoder,Skenderbeu Korce,1,5,A
+2024-05-17,Partizani,Skenderbeu Korce,1,0,H
+2024-05-19,Laci,Flamurtari,3,1,H
+2024-05-19,Egnatia Rrogozhine,Vllaznia Shkoder,0,0,D
+2024-05-24,Skenderbeu Korce,Vllaznia Shkoder,3,2,H
+2024-05-26,Partizani,Egnatia Rrogozhine,0,1,A

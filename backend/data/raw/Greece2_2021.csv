@@ -1,0 +1,548 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2021-12-04,Olympiakos Volos,Pierikos,0,1,A
+2022-01-23,Thesprotos,Iraklis 1908,1,5,A
+2022-02-06,Almopos,Iraklis 1908,0,2,A
+2022-02-13,Olympiakos Volos,Panserraikos,1,2,A
+2022-03-23,Apollon Pontou,Olympiakos Volos,1,0,H
+2022-04-20,Pierikos,Olympiakos Volos,2,2,D
+2022-04-17,Iraklis 1908,Thesprotos,6,0,H
+2022-05-01,Iraklis 1908,Almopos,6,0,H
+2021-11-06,Olympiakos Piraeus II,PAOK II,3,1,H
+2021-11-06,Panserraikos,Olympiakos Volos,2,2,D
+2021-11-07,Apollon Larissa FC,Trikala,3,3,D
+2021-11-07,Iraklis 1908,Niki Volos,0,0,D
+2021-11-07,Veria,Almopos,1,0,H
+2021-11-07,Apollon Pontou,Kavala,3,0,H
+2021-11-07,Anagennisi Karditsas,Thesprotos,1,0,H
+2021-11-07,Pierikos,Xanthi FC,1,1,D
+2021-11-14,Thesprotos,Pierikos,1,0,H
+2022-04-20,Kavala,Anagennisi Karditsas,3,1,H
+2021-11-14,Almopos,Apollon Pontou,2,0,H
+2021-11-13,Niki Volos,Veria,2,2,D
+2021-11-14,Olympiakos Volos,Iraklis 1908,1,1,D
+2021-11-13,PAOK II,Panserraikos,1,1,D
+2021-12-08,Trikala,Olympiakos Piraeus II,0,0,D
+2021-11-14,Larisa,Apollon Larissa FC,2,0,H
+2021-11-20,Olympiakos Piraeus II,Larisa,1,0,H
+2021-11-20,Panserraikos,Trikala,1,1,D
+2021-11-20,Iraklis 1908,PAOK II,0,0,D
+2021-11-21,Veria,Olympiakos Volos,3,0,H
+2021-11-21,Apollon Pontou,Niki Volos,0,0,D
+2021-11-21,Anagennisi Karditsas,Almopos,4,0,H
+2021-11-21,Pierikos,Kavala,7,0,H
+2021-11-21,Xanthi FC,Thesprotos,1,0,H
+2021-11-24,Kavala,Xanthi FC,0,6,A
+2021-11-24,Almopos,Pierikos,3,1,H
+2021-11-25,Niki Volos,Anagennisi Karditsas,1,0,H
+2021-11-24,Olympiakos Volos,Apollon Pontou,3,2,H
+2021-11-24,PAOK II,Veria,1,2,A
+2021-11-24,Trikala,Iraklis 1908,0,0,D
+2021-11-24,Larisa,Panserraikos,2,0,H
+2021-11-24,Apollon Larissa FC,Olympiakos Piraeus II,2,2,D
+2021-11-27,Panserraikos,Apollon Larissa FC,1,0,H
+2021-11-28,Iraklis 1908,Larisa,1,1,D
+2021-11-28,Veria,Trikala,1,0,H
+2021-11-28,Apollon Pontou,PAOK II,0,3,A
+2021-11-28,Anagennisi Karditsas,Olympiakos Volos,4,0,H
+2021-11-28,Pierikos,Niki Volos,0,3,A
+2021-11-28,Xanthi FC,Almopos,2,0,H
+2021-11-28,Thesprotos,Kavala,7,0,H
+2021-12-05,Almopos,Thesprotos,1,0,H
+2021-12-05,Niki Volos,Xanthi FC,0,1,A
+2021-12-05,PAOK II,Anagennisi Karditsas,2,1,H
+2021-12-05,Trikala,Apollon Pontou,2,0,H
+2021-12-05,Larisa,Veria,1,1,D
+2021-12-04,Apollon Larissa FC,Iraklis 1908,0,1,A
+2021-12-05,Olympiakos Piraeus II,Panserraikos,2,1,H
+2021-12-12,Iraklis 1908,Olympiakos Piraeus II,0,0,D
+2021-12-11,Veria,Apollon Larissa FC,5,1,H
+2021-12-11,Apollon Pontou,Larisa,1,3,A
+2021-12-12,Anagennisi Karditsas,Trikala,4,2,H
+2021-12-11,Pierikos,PAOK II,0,0,D
+2021-12-11,Xanthi FC,Olympiakos Volos,2,0,H
+2021-12-11,Thesprotos,Niki Volos,2,0,H
+2021-12-11,Kavala,Almopos,0,6,A
+2021-12-16,Niki Volos,Kavala,7,0,H
+2021-12-15,Olympiakos Volos,Thesprotos,0,1,A
+2021-12-15,PAOK II,Xanthi FC,0,1,A
+2021-12-15,Trikala,Pierikos,1,0,H
+2021-12-15,Larisa,Anagennisi Karditsas,0,0,D
+2021-12-15,Apollon Larissa FC,Apollon Pontou,0,2,A
+2021-12-15,Olympiakos Piraeus II,Veria,1,1,D
+2021-12-15,Panserraikos,Iraklis 1908,2,0,H
+2021-12-18,Veria,Panserraikos,3,0,H
+2021-12-18,Apollon Pontou,Olympiakos Piraeus II,0,0,D
+2021-12-19,Anagennisi Karditsas,Apollon Larissa FC,1,0,H
+2021-12-19,Pierikos,Larisa,0,0,D
+2021-12-19,Xanthi FC,Trikala,5,0,H
+2021-12-19,Thesprotos,PAOK II,1,1,D
+2021-12-19,Kavala,Olympiakos Volos,0,5,A
+2022-01-19,Almopos,Niki Volos,0,0,D
+2021-12-29,Olympiakos Volos,Almopos,1,1,D
+2022-02-09,PAOK II,Kavala,1,1,D
+2021-12-29,Trikala,Thesprotos,2,1,H
+2021-12-29,Larisa,Xanthi FC,4,0,H
+2021-12-29,Apollon Larissa FC,Pierikos,0,0,D
+2021-12-29,Olympiakos Piraeus II,Anagennisi Karditsas,0,1,A
+2021-12-29,Panserraikos,Apollon Pontou,2,4,A
+2021-12-29,Iraklis 1908,Veria,1,0,H
+2022-01-19,Apollon Pontou,Iraklis 1908,1,1,D
+2022-02-02,Anagennisi Karditsas,Panserraikos,1,0,H
+2022-01-19,Pierikos,Olympiakos Piraeus II,1,2,A
+2022-01-26,Xanthi FC,Apollon Larissa FC,0,0,D
+2022-01-19,Thesprotos,Larisa,0,0,D
+2022-01-26,Kavala,Trikala,1,0,H
+2022-01-26,Almopos,PAOK II,1,2,A
+2022-01-27,Niki Volos,Olympiakos Volos,1,0,H
+2022-02-02,PAOK II,Niki Volos,2,2,D
+2022-02-02,Trikala,Almopos,1,0,H
+2022-02-02,Larisa,Kavala,3,0,H
+2022-02-02,Apollon Larissa FC,Thesprotos,2,1,H
+2022-02-02,Olympiakos Piraeus II,Xanthi FC,1,1,D
+2022-01-26,Panserraikos,Pierikos,1,1,D
+2022-02-23,Iraklis 1908,Anagennisi Karditsas,1,1,D
+2022-01-26,Veria,Apollon Pontou,5,0,H
+2022-03-02,Anagennisi Karditsas,Veria,5,2,H
+2022-02-02,Pierikos,Iraklis 1908,2,2,D
+2022-02-09,Xanthi FC,Panserraikos,0,0,D
+2022-01-12,Thesprotos,Olympiakos Piraeus II,2,1,H
+2022-01-12,Kavala,Apollon Larissa FC,0,0,D
+2022-01-12,Almopos,Larisa,0,1,A
+2022-01-13,Niki Volos,Trikala,3,0,H
+2022-03-02,Olympiakos Volos,PAOK II,3,1,H
+2022-02-09,Trikala,Olympiakos Volos,1,2,A
+2022-01-16,Larisa,Niki Volos,1,0,H
+2022-01-16,Apollon Larissa FC,Almopos,1,1,D
+2022-01-15,Olympiakos Piraeus II,Kavala,2,2,D
+2022-01-16,Panserraikos,Thesprotos,2,2,D
+2022-03-03,Iraklis 1908,Xanthi FC,1,0,H
+2022-01-16,Veria,Pierikos,4,1,H
+2022-03-16,Apollon Pontou,Anagennisi Karditsas,1,1,D
+2022-01-23,Pierikos,Apollon Pontou,1,0,H
+2022-01-22,Xanthi FC,Veria,0,3,A
+2022-01-23,Kavala,Panserraikos,2,2,D
+2022-01-22,Almopos,Olympiakos Piraeus II,3,0,H
+2022-01-22,Niki Volos,Apollon Larissa FC,0,2,A
+2022-01-23,Olympiakos Volos,Larisa,1,2,A
+2022-03-17,PAOK II,Trikala,3,0,H
+2022-01-29,Larisa,PAOK II,0,0,D
+2022-01-30,Apollon Larissa FC,Olympiakos Volos,1,1,D
+2022-01-30,Olympiakos Piraeus II,Niki Volos,2,0,H
+2022-01-30,Panserraikos,Almopos,1,3,A
+2022-01-30,Iraklis 1908,Kavala,1,2,A
+2022-01-30,Veria,Thesprotos,2,1,H
+2022-01-30,Apollon Pontou,Xanthi FC,0,0,D
+2022-01-30,Anagennisi Karditsas,Pierikos,2,0,H
+2022-02-06,Xanthi FC,Anagennisi Karditsas,5,2,H
+2022-02-06,Thesprotos,Apollon Pontou,1,2,A
+2022-02-06,Kavala,Veria,0,2,A
+2022-02-05,Niki Volos,Panserraikos,1,0,H
+2022-02-05,Olympiakos Volos,Olympiakos Piraeus II,2,3,A
+2022-02-05,PAOK II,Apollon Larissa FC,3,0,H
+2022-02-06,Trikala,Larisa,0,1,A
+2022-02-13,Trikala,Apollon Larissa FC,0,1,A
+2022-02-13,PAOK II,Olympiakos Piraeus II,1,0,H
+2022-02-12,Niki Volos,Iraklis 1908,1,1,D
+2022-02-12,Almopos,Veria,1,2,A
+2022-02-13,Kavala,Apollon Pontou,3,0,H
+2022-02-13,Thesprotos,Anagennisi Karditsas,0,0,D
+2022-02-13,Xanthi FC,Pierikos,3,0,H
+2022-02-16,Pierikos,Thesprotos,0,3,A
+2022-02-16,Anagennisi Karditsas,Kavala,1,0,H
+2022-02-16,Apollon Pontou,Almopos,1,1,D
+2022-02-16,Veria,Niki Volos,1,0,H
+2022-02-16,Iraklis 1908,Olympiakos Volos,4,0,H
+2022-02-16,Panserraikos,PAOK II,1,2,A
+2022-02-16,Olympiakos Piraeus II,Trikala,2,0,H
+2022-02-16,Apollon Larissa FC,Larisa,0,2,A
+2022-02-19,Larisa,Olympiakos Piraeus II,2,1,H
+2022-02-20,Trikala,Panserraikos,1,1,D
+2022-02-20,PAOK II,Iraklis 1908,0,0,D
+2022-03-16,Olympiakos Volos,Veria,0,2,A
+2022-02-20,Niki Volos,Apollon Pontou,1,0,H
+2022-02-20,Almopos,Anagennisi Karditsas,1,0,H
+2022-02-20,Kavala,Pierikos,1,2,A
+2022-02-20,Thesprotos,Xanthi FC,0,0,D
+2022-02-28,Xanthi FC,Kavala,0,0,D
+2022-02-27,Pierikos,Almopos,2,2,D
+2022-02-27,Anagennisi Karditsas,Niki Volos,0,0,D
+2022-02-26,Veria,PAOK II,2,1,H
+2022-02-27,Iraklis 1908,Trikala,0,1,A
+2022-02-27,Panserraikos,Larisa,0,1,A
+2022-02-26,Olympiakos Piraeus II,Apollon Larissa FC,0,1,A
+2022-03-06,Apollon Larissa FC,Panserraikos,1,0,H
+2022-03-06,Larisa,Iraklis 1908,3,0,H
+2022-03-06,Trikala,Veria,1,2,A
+2022-03-06,PAOK II,Apollon Pontou,2,1,H
+2022-03-06,Olympiakos Volos,Anagennisi Karditsas,0,1,A
+2022-03-05,Niki Volos,Pierikos,2,0,H
+2022-03-06,Almopos,Xanthi FC,2,2,D
+2022-03-06,Kavala,Thesprotos,1,1,D
+2022-03-09,Thesprotos,Almopos,0,3,A
+2022-03-09,Xanthi FC,Niki Volos,0,0,D
+2022-03-10,Anagennisi Karditsas,PAOK II,1,0,H
+2022-03-09,Apollon Pontou,Trikala,3,0,H
+2022-03-09,Veria,Larisa,1,1,D
+2022-03-09,Iraklis 1908,Apollon Larissa FC,4,0,H
+2022-03-09,Panserraikos,Olympiakos Piraeus II,4,0,H
+2022-03-12,Olympiakos Piraeus II,Iraklis 1908,0,0,D
+2022-03-13,Apollon Larissa FC,Veria,0,1,A
+2022-03-13,Larisa,Apollon Pontou,0,0,D
+2022-03-13,Trikala,Anagennisi Karditsas,0,3,A
+2022-03-24,PAOK II,Pierikos,1,1,D
+2022-03-12,Olympiakos Volos,Xanthi FC,1,0,H
+2022-03-13,Niki Volos,Thesprotos,3,1,H
+2022-03-13,Almopos,Kavala,1,1,D
+2022-03-20,Kavala,Niki Volos,0,2,A
+2022-03-20,Thesprotos,Olympiakos Volos,1,1,D
+2022-03-20,Xanthi FC,PAOK II,3,0,H
+2022-03-20,Pierikos,Trikala,3,0,H
+2022-03-19,Anagennisi Karditsas,Larisa,2,3,A
+2022-03-20,Apollon Pontou,Apollon Larissa FC,1,1,D
+2022-03-19,Veria,Olympiakos Piraeus II,1,0,H
+2022-03-20,Iraklis 1908,Panserraikos,1,1,D
+2022-03-26,Panserraikos,Veria,0,1,A
+2022-04-20,Olympiakos Piraeus II,Apollon Pontou,2,0,H
+2022-03-27,Apollon Larissa FC,Anagennisi Karditsas,2,1,H
+2022-03-27,Larisa,Pierikos,1,0,H
+2022-03-26,Trikala,Xanthi FC,1,1,D
+2022-03-27,PAOK II,Thesprotos,0,0,D
+2022-03-27,Olympiakos Volos,Kavala,0,2,A
+2022-03-26,Niki Volos,Almopos,1,0,H
+2022-03-30,Almopos,Olympiakos Volos,0,0,D
+2022-03-30,Kavala,PAOK II,1,1,D
+2022-03-30,Thesprotos,Trikala,2,0,H
+2022-03-30,Xanthi FC,Larisa,2,0,H
+2022-03-30,Pierikos,Apollon Larissa FC,3,2,H
+2022-04-23,Anagennisi Karditsas,Olympiakos Piraeus II,0,1,A
+2022-03-30,Apollon Pontou,Panserraikos,1,0,H
+2022-03-30,Veria,Iraklis 1908,3,1,H
+2022-04-03,Iraklis 1908,Apollon Pontou,0,3,A
+2022-04-03,Panserraikos,Anagennisi Karditsas,2,1,H
+2022-04-02,Olympiakos Piraeus II,Pierikos,3,0,H
+2022-04-03,Apollon Larissa FC,Xanthi FC,0,0,D
+2022-04-03,Larisa,Thesprotos,1,0,H
+2022-04-03,Trikala,Kavala,0,2,A
+2022-04-02,PAOK II,Almopos,0,1,A
+2022-04-02,Olympiakos Volos,Niki Volos,1,2,A
+2022-04-06,Niki Volos,PAOK II,2,1,H
+2022-04-06,Almopos,Trikala,3,0,H
+2022-04-06,Kavala,Larisa,0,1,A
+2022-04-06,Thesprotos,Apollon Larissa FC,1,1,D
+2022-04-06,Xanthi FC,Olympiakos Piraeus II,2,1,H
+2022-04-06,Pierikos,Panserraikos,1,1,D
+2022-04-06,Anagennisi Karditsas,Iraklis 1908,0,3,A
+2022-04-06,Apollon Pontou,Veria,0,0,D
+2022-04-10,Veria,Anagennisi Karditsas,2,0,H
+2022-04-10,Iraklis 1908,Pierikos,4,2,H
+2022-04-10,Panserraikos,Xanthi FC,0,0,D
+2022-04-09,Olympiakos Piraeus II,Thesprotos,4,0,H
+2022-04-10,Apollon Larissa FC,Kavala,0,1,A
+2022-04-10,Larisa,Almopos,2,1,H
+2022-04-10,Trikala,Niki Volos,0,3,A
+2022-04-10,PAOK II,Olympiakos Volos,2,1,H
+2022-04-13,Olympiakos Volos,Trikala,2,0,H
+2022-04-14,Niki Volos,Larisa,1,1,D
+2022-04-13,Almopos,Apollon Larissa FC,2,2,D
+2022-04-13,Kavala,Olympiakos Piraeus II,0,0,D
+2022-04-13,Thesprotos,Panserraikos,3,0,H
+2022-04-13,Xanthi FC,Iraklis 1908,3,3,D
+2022-04-13,Pierikos,Veria,2,1,H
+2022-04-13,Anagennisi Karditsas,Apollon Pontou,2,1,H
+2022-04-17,Apollon Pontou,Pierikos,1,0,H
+2022-04-17,Veria,Xanthi FC,0,0,D
+2022-04-17,Panserraikos,Kavala,2,0,H
+2022-04-16,Olympiakos Piraeus II,Almopos,2,1,H
+2022-04-17,Apollon Larissa FC,Niki Volos,1,0,H
+2022-04-17,Larisa,Olympiakos Volos,0,0,D
+2022-04-16,Trikala,PAOK II,0,6,A
+2022-04-27,PAOK II,Larisa,2,0,H
+2022-04-27,Olympiakos Volos,Apollon Larissa FC,2,1,H
+2022-04-27,Niki Volos,Olympiakos Piraeus II,0,1,A
+2022-04-27,Almopos,Panserraikos,0,1,A
+2022-04-27,Kavala,Iraklis 1908,1,1,D
+2022-04-27,Thesprotos,Veria,1,3,A
+2022-04-27,Xanthi FC,Apollon Pontou,2,1,H
+2022-04-27,Pierikos,Anagennisi Karditsas,2,2,D
+2022-05-01,Anagennisi Karditsas,Xanthi FC,4,0,H
+2022-05-01,Apollon Pontou,Thesprotos,0,0,D
+2022-05-01,Veria,Kavala,2,1,H
+2022-05-01,Panserraikos,Niki Volos,0,0,D
+2022-05-01,Olympiakos Piraeus II,Olympiakos Volos,3,2,H
+2022-05-01,Apollon Larissa FC,PAOK II,2,1,H
+2022-05-01,Larisa,Trikala,3,0,H
+2021-11-06,Rodos,Ergotelis,1,0,H
+2021-12-22,Kallithea,Zakynthos,2,0,H
+2021-11-07,Egaleo,Kissamikos,1,1,D
+2021-11-07,Irodotos,Diagoras,1,2,A
+2021-11-07,Levadiakos,Asteras Vlachioti,2,1,H
+2021-11-07,Episkopi,AE Karaiskakis,0,1,A
+2021-11-07,Kifisia,Panathinaikos II,2,0,H
+2021-11-07,AEK Athens II,Kalamata,1,0,H
+2021-11-14,Panathinaikos II,AEK Athens II,0,2,A
+2021-11-13,AE Karaiskakis,Kifisia,0,2,A
+2021-11-14,Ergotelis,Episkopi,1,0,H
+2021-11-14,Asteras Vlachioti,Rodos,0,0,D
+2021-11-14,Diagoras,Levadiakos,1,1,D
+2021-11-14,Kissamikos,Irodotos,0,0,D
+2021-11-13,Zakynthos,Egaleo,0,1,A
+2021-11-13,OF Ierapetra,Kallithea,1,2,A
+2021-11-20,Egaleo,OF Ierapetra,2,0,H
+2021-11-20,Irodotos,Zakynthos,2,0,H
+2021-11-20,Levadiakos,Kissamikos,1,1,D
+2021-11-21,Rodos,Diagoras,3,0,H
+2021-11-20,Episkopi,Asteras Vlachioti,0,1,A
+2021-11-20,Kifisia,Ergotelis,1,2,A
+2021-11-20,AEK Athens II,AE Karaiskakis,2,1,H
+2021-11-20,Kalamata,Panathinaikos II,1,2,A
+2021-11-24,AE Karaiskakis,Kalamata,0,1,A
+2021-11-24,Ergotelis,AEK Athens II,0,0,D
+2021-11-24,Asteras Vlachioti,Kifisia,0,1,A
+2021-11-24,Diagoras,Episkopi,1,0,H
+2021-11-24,Kissamikos,Rodos,2,2,D
+2021-11-24,Zakynthos,Levadiakos,0,3,A
+2021-11-24,OF Ierapetra,Irodotos,1,1,D
+2021-11-24,Kallithea,Egaleo,1,0,H
+2021-11-28,Irodotos,Kallithea,0,2,A
+2021-11-28,Levadiakos,OF Ierapetra,3,1,H
+2021-11-28,Rodos,Zakynthos,4,0,H
+2021-11-28,Episkopi,Kissamikos,1,1,D
+2021-11-28,Kifisia,Diagoras,0,0,D
+2021-12-22,AEK Athens II,Asteras Vlachioti,1,0,H
+2021-11-27,Kalamata,Ergotelis,2,0,H
+2021-11-27,Panathinaikos II,AE Karaiskakis,2,2,D
+2021-12-04,Ergotelis,Panathinaikos II,1,0,H
+2022-01-19,Asteras Vlachioti,Kalamata,0,0,D
+2021-12-04,Diagoras,AEK Athens II,0,1,A
+2021-12-05,Kissamikos,Kifisia,3,0,H
+2021-12-05,Zakynthos,Episkopi,0,3,A
+2021-12-05,OF Ierapetra,Rodos,1,1,D
+2021-12-05,Kallithea,Levadiakos,0,1,A
+2021-12-04,Egaleo,Irodotos,2,0,H
+2021-12-11,Levadiakos,Egaleo,1,0,H
+2022-02-02,Rodos,Kallithea,0,1,A
+2021-12-11,Episkopi,OF Ierapetra,0,1,A
+2022-01-19,Kifisia,Zakynthos,3,0,H
+2021-12-12,AEK Athens II,Kissamikos,1,0,H
+2021-12-11,Kalamata,Diagoras,2,0,H
+2021-12-12,Panathinaikos II,Asteras Vlachioti,2,0,H
+2021-12-11,AE Karaiskakis,Ergotelis,3,2,H
+2021-12-15,Asteras Vlachioti,AE Karaiskakis,1,1,D
+2021-12-15,Diagoras,Panathinaikos II,1,2,A
+2021-12-15,Kissamikos,Kalamata,1,2,A
+2021-12-15,Zakynthos,AEK Athens II,0,0,D
+2021-12-15,OF Ierapetra,Kifisia,2,1,H
+2022-02-09,Kallithea,Episkopi,0,2,A
+2021-12-15,Egaleo,Rodos,3,1,H
+2021-12-15,Irodotos,Levadiakos,0,1,A
+2021-12-19,Rodos,Irodotos,1,0,H
+2021-12-19,Episkopi,Egaleo,1,1,D
+2021-12-19,Kifisia,Kallithea,1,0,H
+2021-12-19,AEK Athens II,OF Ierapetra,2,2,D
+2021-12-19,Kalamata,Zakynthos,5,0,H
+2021-12-18,Panathinaikos II,Kissamikos,0,2,A
+2021-12-19,AE Karaiskakis,Diagoras,0,0,D
+2021-12-19,Ergotelis,Asteras Vlachioti,0,0,D
+2022-01-20,Diagoras,Ergotelis,0,2,A
+2021-12-29,Kissamikos,AE Karaiskakis,4,0,H
+2021-12-29,Zakynthos,Panathinaikos II,0,1,A
+2021-12-29,OF Ierapetra,Kalamata,0,2,A
+2021-12-29,Kallithea,AEK Athens II,1,0,H
+2021-12-29,Egaleo,Kifisia,1,0,H
+2022-01-19,Irodotos,Episkopi,0,1,A
+2021-12-29,Levadiakos,Rodos,5,0,H
+2022-01-05,Episkopi,Levadiakos,0,0,D
+2022-02-02,Kifisia,Irodotos,2,0,H
+2022-01-19,AEK Athens II,Egaleo,1,1,D
+2022-02-23,Kalamata,Kallithea,2,2,D
+2022-01-19,Panathinaikos II,OF Ierapetra,3,1,H
+2022-01-26,AE Karaiskakis,Zakynthos,0,2,A
+2022-02-02,Ergotelis,Kissamikos,0,0,D
+2022-02-02,Asteras Vlachioti,Diagoras,2,0,H
+2022-02-09,Kissamikos,Asteras Vlachioti,3,1,H
+2022-02-23,Zakynthos,Ergotelis,2,0,H
+2022-02-02,OF Ierapetra,AE Karaiskakis,5,1,H
+2022-01-08,Kallithea,Panathinaikos II,1,0,H
+2022-02-02,Egaleo,Kalamata,1,2,A
+2022-02-09,Irodotos,AEK Athens II,1,0,H
+2022-02-09,Levadiakos,Kifisia,1,1,D
+2022-02-23,Rodos,Episkopi,0,0,D
+2022-03-02,Kifisia,Rodos,1,0,H
+2022-01-12,AEK Athens II,Levadiakos,2,1,H
+2022-01-12,Kalamata,Irodotos,2,0,H
+2022-02-09,Panathinaikos II,Egaleo,0,1,A
+2022-03-02,AE Karaiskakis,Kallithea,1,0,H
+2022-01-12,Ergotelis,OF Ierapetra,1,3,A
+2022-01-12,Asteras Vlachioti,Zakynthos,3,0,H
+2022-01-12,Diagoras,Kissamikos,2,2,D
+2022-01-16,Zakynthos,Diagoras,0,2,A
+2022-01-16,OF Ierapetra,Asteras Vlachioti,3,1,H
+2022-01-16,Kallithea,Ergotelis,3,2,H
+2022-01-16,Egaleo,AE Karaiskakis,1,0,H
+2022-01-15,Irodotos,Panathinaikos II,0,0,D
+2022-01-16,Levadiakos,Kalamata,3,0,H
+2022-03-16,Rodos,AEK Athens II,1,0,H
+2022-01-16,Episkopi,Kifisia,1,0,H
+2022-01-23,AEK Athens II,Episkopi,1,0,H
+2022-02-09,Kalamata,Rodos,3,1,H
+2022-01-23,Panathinaikos II,Levadiakos,1,3,A
+2022-01-23,AE Karaiskakis,Irodotos,2,1,H
+2022-01-23,Ergotelis,Egaleo,1,0,H
+2022-01-23,Asteras Vlachioti,Kallithea,0,2,A
+2022-01-23,Diagoras,OF Ierapetra,0,0,D
+2022-01-23,Kissamikos,Zakynthos,5,1,H
+2022-01-30,OF Ierapetra,Kissamikos,0,0,D
+2022-01-30,Kallithea,Diagoras,1,0,H
+2022-01-29,Egaleo,Asteras Vlachioti,1,0,H
+2022-01-30,Irodotos,Ergotelis,1,2,A
+2022-01-30,Levadiakos,AE Karaiskakis,3,0,H
+2022-01-30,Rodos,Panathinaikos II,0,0,D
+2022-01-30,Episkopi,Kalamata,0,0,D
+2022-01-30,Kifisia,AEK Athens II,2,1,H
+2022-02-06,Kalamata,Kifisia,0,1,A
+2022-02-05,Panathinaikos II,Episkopi,1,2,A
+2022-02-06,AE Karaiskakis,Rodos,2,1,H
+2022-02-05,Ergotelis,Levadiakos,1,0,H
+2022-02-06,Asteras Vlachioti,Irodotos,1,3,A
+2022-02-06,Diagoras,Egaleo,1,1,D
+2022-02-06,Kissamikos,Kallithea,0,0,D
+2022-03-16,Zakynthos,OF Ierapetra,1,1,D
+2022-02-13,Zakynthos,Kallithea,1,2,A
+2022-02-13,Kissamikos,Egaleo,1,0,H
+2022-02-13,Diagoras,Irodotos,1,1,D
+2022-02-13,Asteras Vlachioti,Levadiakos,1,2,A
+2022-02-13,Ergotelis,Rodos,0,1,A
+2022-02-13,AE Karaiskakis,Episkopi,0,0,D
+2022-02-12,Panathinaikos II,Kifisia,1,0,H
+2022-02-12,Kalamata,AEK Athens II,0,0,D
+2022-02-16,AEK Athens II,Panathinaikos II,0,1,A
+2022-02-16,Kifisia,AE Karaiskakis,0,0,D
+2022-02-16,Episkopi,Ergotelis,1,0,H
+2022-02-16,Rodos,Asteras Vlachioti,0,1,A
+2022-02-16,Levadiakos,Diagoras,4,0,H
+2022-02-16,Irodotos,Kissamikos,2,2,D
+2022-02-16,Egaleo,Zakynthos,2,1,H
+2022-02-16,Kallithea,OF Ierapetra,1,2,A
+2022-02-20,OF Ierapetra,Egaleo,0,1,A
+2022-02-20,Zakynthos,Irodotos,1,0,H
+2022-02-20,Kissamikos,Levadiakos,3,1,H
+2022-02-20,Diagoras,Rodos,1,0,H
+2022-02-20,Asteras Vlachioti,Episkopi,0,0,D
+2022-02-20,Ergotelis,Kifisia,2,1,H
+2022-02-19,AE Karaiskakis,AEK Athens II,0,1,A
+2022-02-20,Panathinaikos II,Kalamata,1,2,A
+2022-02-27,Kalamata,AE Karaiskakis,2,0,H
+2022-02-26,AEK Athens II,Ergotelis,1,1,D
+2022-02-27,Kifisia,Asteras Vlachioti,2,1,H
+2022-02-27,Episkopi,Diagoras,1,0,H
+2022-02-27,Rodos,Kissamikos,0,1,A
+2022-02-27,Levadiakos,Zakynthos,4,0,H
+2022-02-27,Irodotos,OF Ierapetra,2,1,H
+2022-02-27,Egaleo,Kallithea,0,0,D
+2022-03-06,Kallithea,Irodotos,3,0,H
+2022-03-05,OF Ierapetra,Levadiakos,0,1,A
+2022-03-06,Zakynthos,Rodos,5,0,H
+2022-03-06,Kissamikos,Episkopi,1,0,H
+2022-03-06,Diagoras,Kifisia,0,2,A
+2022-03-05,Asteras Vlachioti,AEK Athens II,1,1,D
+2022-03-06,Ergotelis,Kalamata,2,0,H
+2022-03-05,AE Karaiskakis,Panathinaikos II,1,1,D
+2022-03-09,Panathinaikos II,Ergotelis,0,0,D
+2022-03-09,Kalamata,Asteras Vlachioti,1,0,H
+2022-03-09,AEK Athens II,Diagoras,0,1,A
+2022-03-09,Kifisia,Kissamikos,1,0,H
+2022-03-09,Episkopi,Zakynthos,1,0,H
+2022-03-09,Rodos,OF Ierapetra,1,2,A
+2022-03-23,Levadiakos,Kallithea,1,1,D
+2022-03-09,Irodotos,Egaleo,3,0,H
+2022-04-20,Egaleo,Levadiakos,1,2,A
+2022-03-13,Kallithea,Rodos,2,0,H
+2022-03-13,OF Ierapetra,Episkopi,0,1,A
+2022-03-13,Zakynthos,Kifisia,1,1,D
+2022-03-12,Kissamikos,AEK Athens II,2,1,H
+2022-03-13,Diagoras,Kalamata,0,1,A
+2022-03-12,Asteras Vlachioti,Panathinaikos II,3,1,H
+2022-03-13,Ergotelis,AE Karaiskakis,0,0,D
+2022-03-20,AE Karaiskakis,Asteras Vlachioti,0,1,A
+2022-03-19,Panathinaikos II,Diagoras,3,0,H
+2022-03-20,Kalamata,Kissamikos,1,1,D
+2022-03-19,AEK Athens II,Zakynthos,1,0,H
+2022-03-20,Kifisia,OF Ierapetra,2,1,H
+2022-03-20,Episkopi,Kallithea,1,1,D
+2022-03-20,Rodos,Egaleo,0,1,A
+2022-03-20,Levadiakos,Irodotos,6,0,H
+2022-03-27,Irodotos,Rodos,0,0,D
+2022-03-26,Egaleo,Episkopi,1,1,D
+2022-03-27,Kallithea,Kifisia,1,0,H
+2022-04-20,OF Ierapetra,AEK Athens II,1,2,A
+2022-03-27,Zakynthos,Kalamata,1,1,D
+2022-03-26,Kissamikos,Panathinaikos II,2,0,H
+2022-03-26,Diagoras,AE Karaiskakis,0,1,A
+2022-03-26,Asteras Vlachioti,Ergotelis,4,0,H
+2022-03-30,Ergotelis,Diagoras,0,1,A
+2022-03-30,AE Karaiskakis,Kissamikos,1,2,A
+2022-03-30,Panathinaikos II,Zakynthos,1,1,D
+2022-03-30,Kalamata,OF Ierapetra,4,0,H
+2022-04-23,AEK Athens II,Kallithea,0,3,A
+2022-03-30,Kifisia,Egaleo,1,0,H
+2022-03-30,Episkopi,Irodotos,1,0,H
+2022-03-30,Rodos,Levadiakos,0,4,A
+2022-04-03,Levadiakos,Episkopi,1,0,H
+2022-04-03,Irodotos,Kifisia,3,2,H
+2022-04-02,Egaleo,AEK Athens II,1,1,D
+2022-04-03,Kallithea,Kalamata,0,0,D
+2022-04-02,OF Ierapetra,Panathinaikos II,2,0,H
+2022-04-03,Zakynthos,AE Karaiskakis,2,0,H
+2022-04-03,Kissamikos,Ergotelis,0,0,D
+2022-04-03,Diagoras,Asteras Vlachioti,2,0,H
+2022-04-06,Asteras Vlachioti,Kissamikos,0,0,D
+2022-04-06,Ergotelis,Zakynthos,1,0,H
+2022-04-06,AE Karaiskakis,OF Ierapetra,2,3,A
+2022-04-06,Panathinaikos II,Kallithea,0,0,D
+2022-04-06,Kalamata,Egaleo,3,0,H
+2022-04-06,AEK Athens II,Irodotos,3,1,H
+2022-04-06,Kifisia,Levadiakos,1,4,A
+2022-04-06,Episkopi,Rodos,4,2,H
+2022-04-10,Rodos,Kifisia,1,3,A
+2022-04-09,Levadiakos,AEK Athens II,2,2,D
+2022-04-10,Irodotos,Kalamata,2,1,H
+2022-04-09,Egaleo,Panathinaikos II,2,1,H
+2022-04-10,Kallithea,AE Karaiskakis,4,2,H
+2022-04-10,OF Ierapetra,Ergotelis,1,2,A
+2022-04-10,Zakynthos,Asteras Vlachioti,1,1,D
+2022-04-10,Kissamikos,Diagoras,2,0,H
+2022-04-13,Diagoras,Zakynthos,2,0,H
+2022-04-13,Asteras Vlachioti,OF Ierapetra,4,1,H
+2022-04-13,Ergotelis,Kallithea,0,2,A
+2022-04-13,AE Karaiskakis,Egaleo,3,1,H
+2022-04-13,Panathinaikos II,Irodotos,1,2,A
+2022-04-13,Kalamata,Levadiakos,1,0,H
+2022-04-13,AEK Athens II,Rodos,5,0,H
+2022-04-13,Kifisia,Episkopi,0,1,A
+2022-04-16,Episkopi,AEK Athens II,1,3,A
+2022-04-17,Rodos,Kalamata,0,3,A
+2022-04-16,Levadiakos,Panathinaikos II,3,0,H
+2022-04-17,Irodotos,AE Karaiskakis,0,0,D
+2022-04-16,Egaleo,Ergotelis,2,0,H
+2022-04-17,Kallithea,Asteras Vlachioti,5,1,H
+2022-04-17,OF Ierapetra,Diagoras,2,2,D
+2022-04-17,Zakynthos,Kissamikos,3,1,H
+2022-04-27,Kissamikos,OF Ierapetra,2,0,H
+2022-04-27,Diagoras,Kallithea,0,0,D
+2022-04-27,Asteras Vlachioti,Egaleo,2,1,H
+2022-04-27,Ergotelis,Irodotos,0,1,A
+2022-04-27,AE Karaiskakis,Levadiakos,0,3,A
+2022-04-27,Panathinaikos II,Rodos,3,0,H
+2022-04-27,Kalamata,Episkopi,5,0,H
+2022-04-27,AEK Athens II,Kifisia,2,2,D
+2022-05-01,Kifisia,Kalamata,1,2,A
+2022-05-01,Episkopi,Panathinaikos II,3,2,H
+2022-05-01,Rodos,AE Karaiskakis,3,0,H
+2022-05-01,Levadiakos,Ergotelis,1,0,H
+2022-05-01,Irodotos,Asteras Vlachioti,2,1,H
+2022-05-01,Egaleo,Diagoras,1,2,A
+2022-05-01,Kallithea,Kissamikos,3,1,H
+2022-05-01,OF Ierapetra,Zakynthos,5,1,H
+2021-12-22,Apollon Pontou,Kavala,7,0,H
+2022-05-08,Veria,Levadiakos,0,1,A
+2022-05-15,Levadiakos,Veria,1,0,H

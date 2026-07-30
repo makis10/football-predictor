@@ -1,0 +1,185 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2024-08-04,Mornar,Otrant-Olympic,0,1,A
+2024-08-04,Arsenal Tivat,Jedinstvo,2,1,H
+2024-08-04,Bokelj,Jezero,2,0,H
+2024-08-04,Sutjeska,Decic,1,1,D
+2024-08-06,Buducnost Podgorica,Petrovac,2,1,H
+2024-08-11,Buducnost Podgorica,Sutjeska,1,1,D
+2024-08-11,Jedinstvo,Bokelj,0,1,A
+2024-08-11,Petrovac,Otrant-Olympic,3,2,H
+2024-08-17,Arsenal Tivat,Buducnost Podgorica,0,2,A
+2024-08-17,Sutjeska,Petrovac,0,2,A
+2024-08-17,Mornar,Jedinstvo,1,2,A
+2024-08-17,Otrant-Olympic,Jezero,3,1,H
+2024-08-18,Bokelj,Decic,0,1,A
+2024-08-21,Sutjeska,Arsenal Tivat,1,2,A
+2024-08-21,Petrovac,Jezero,1,1,D
+2024-08-21,Decic,Mornar,1,0,H
+2024-08-21,Jedinstvo,Otrant-Olympic,1,0,H
+2024-08-21,Buducnost Podgorica,Bokelj,4,0,H
+2024-08-25,Arsenal Tivat,Petrovac,1,1,D
+2024-08-25,Mornar,Buducnost Podgorica,0,2,A
+2024-08-25,Bokelj,Sutjeska,0,3,A
+2024-08-25,Jezero,Jedinstvo,1,0,H
+2024-08-25,Otrant-Olympic,Decic,2,2,D
+2024-08-31,Arsenal Tivat,Bokelj,1,1,D
+2024-08-31,Petrovac,Jedinstvo,3,1,H
+2024-08-31,Buducnost Podgorica,Otrant-Olympic,1,1,D
+2024-08-31,Decic,Jezero,1,0,H
+2024-08-31,Sutjeska,Mornar,1,1,D
+2024-09-14,Bokelj,Petrovac,0,1,A
+2024-09-14,Jedinstvo,Decic,1,1,D
+2024-09-14,Mornar,Arsenal Tivat,4,0,H
+2024-09-14,Otrant-Olympic,Sutjeska,1,3,A
+2024-09-15,Jezero,Buducnost Podgorica,0,2,A
+2024-09-18,Decic,Arsenal Tivat,1,3,A
+2024-09-18,Jezero,Mornar,2,2,D
+2024-09-22,Arsenal Tivat,Otrant-Olympic,0,0,D
+2024-09-22,Sutjeska,Jezero,2,1,H
+2024-09-22,Buducnost Podgorica,Jedinstvo,4,0,H
+2024-09-22,Bokelj,Mornar,2,0,H
+2024-09-22,Petrovac,Decic,0,1,A
+2024-09-27,Decic,Buducnost Podgorica,0,2,A
+2024-09-28,Jedinstvo,Sutjeska,2,0,H
+2024-09-28,Jezero,Arsenal Tivat,0,0,D
+2024-09-28,Otrant-Olympic,Bokelj,1,2,A
+2024-09-29,Mornar,Petrovac,0,2,A
+2024-10-02,Jedinstvo,Arsenal Tivat,3,2,H
+2024-10-02,Jezero,Bokelj,0,0,D
+2024-10-02,Otrant-Olympic,Mornar,1,2,A
+2024-10-02,Decic,Sutjeska,0,0,D
+2024-10-06,Arsenal Tivat,Decic,0,0,D
+2024-10-06,Bokelj,Jedinstvo,1,2,A
+2024-10-06,Mornar,Jezero,2,0,H
+2024-10-06,Otrant-Olympic,Petrovac,0,1,A
+2024-10-06,Sutjeska,Buducnost Podgorica,0,1,A
+2024-10-19,Jedinstvo,Mornar,1,2,A
+2024-10-19,Petrovac,Sutjeska,1,0,H
+2024-10-19,Jezero,Otrant-Olympic,1,0,H
+2024-10-19,Decic,Bokelj,1,2,A
+2024-10-19,Buducnost Podgorica,Arsenal Tivat,2,1,H
+2024-10-23,Arsenal Tivat,Sutjeska,0,1,A
+2024-10-23,Mornar,Decic,1,1,D
+2024-10-23,Jezero,Petrovac,0,1,A
+2024-10-23,Otrant-Olympic,Jedinstvo,2,1,H
+2024-10-23,Bokelj,Buducnost Podgorica,2,1,H
+2024-10-27,Jedinstvo,Jezero,1,1,D
+2024-10-27,Sutjeska,Bokelj,0,2,A
+2024-10-27,Petrovac,Arsenal Tivat,0,0,D
+2024-10-27,Decic,Otrant-Olympic,0,0,D
+2024-10-27,Buducnost Podgorica,Mornar,0,1,A
+2024-11-02,Jedinstvo,Petrovac,3,2,H
+2024-11-02,Otrant-Olympic,Buducnost Podgorica,0,3,A
+2024-11-02,Bokelj,Arsenal Tivat,1,2,A
+2024-11-02,Jezero,Decic,1,1,D
+2024-11-02,Mornar,Sutjeska,2,1,H
+2024-11-09,Buducnost Podgorica,Jezero,1,1,D
+2024-11-10,Arsenal Tivat,Mornar,4,0,H
+2024-11-10,Decic,Jedinstvo,4,0,H
+2024-11-10,Sutjeska,Otrant-Olympic,0,0,D
+2024-11-10,Petrovac,Bokelj,1,0,H
+2024-11-23,Mornar,Bokelj,1,1,D
+2024-11-23,Decic,Petrovac,1,0,H
+2024-11-23,Jedinstvo,Buducnost Podgorica,0,2,A
+2024-11-24,Otrant-Olympic,Arsenal Tivat,0,2,A
+2024-11-25,Jezero,Sutjeska,0,1,A
+2024-11-27,Petrovac,Buducnost Podgorica,1,4,A
+2024-12-01,Sutjeska,Jedinstvo,3,0,H
+2024-12-01,Petrovac,Mornar,4,2,H
+2024-12-01,Arsenal Tivat,Jezero,0,1,A
+2024-12-01,Bokelj,Otrant-Olympic,1,0,H
+2024-12-01,Buducnost Podgorica,Decic,3,1,H
+2024-12-07,Sutjeska,Decic,1,1,D
+2024-12-07,Arsenal Tivat,Jedinstvo,1,1,D
+2024-12-07,Bokelj,Jezero,2,1,H
+2024-12-07,Buducnost Podgorica,Petrovac,3,1,H
+2024-12-07,Mornar,Otrant-Olympic,1,0,H
+2025-02-22,Jedinstvo,Bokelj,0,1,A
+2025-02-22,Jezero,Mornar,1,2,A
+2025-02-22,Decic,Arsenal Tivat,0,0,D
+2025-02-22,Petrovac,Otrant-Olympic,2,1,H
+2025-02-22,Buducnost Podgorica,Sutjeska,2,0,H
+2025-02-26,Sutjeska,Petrovac,0,3,A
+2025-02-26,Mornar,Jedinstvo,1,1,D
+2025-02-26,Arsenal Tivat,Buducnost Podgorica,1,5,A
+2025-02-26,Otrant-Olympic,Jezero,1,0,H
+2025-03-02,Sutjeska,Arsenal Tivat,2,0,H
+2025-03-02,Petrovac,Jezero,2,1,H
+2025-03-02,Jedinstvo,Otrant-Olympic,2,0,H
+2025-03-02,Decic,Mornar,2,0,H
+2025-03-02,Buducnost Podgorica,Bokelj,3,1,H
+2025-03-08,Arsenal Tivat,Petrovac,1,2,A
+2025-03-08,Jezero,Jedinstvo,3,2,H
+2025-03-08,Bokelj,Sutjeska,1,2,A
+2025-03-08,Otrant-Olympic,Decic,2,0,H
+2025-03-08,Mornar,Buducnost Podgorica,1,2,A
+2025-03-12,Sutjeska,Mornar,1,1,D
+2025-03-12,Arsenal Tivat,Bokelj,1,0,H
+2025-03-12,Petrovac,Jedinstvo,0,0,D
+2025-03-12,Decic,Jezero,1,2,A
+2025-03-12,Buducnost Podgorica,Otrant-Olympic,5,1,H
+2025-03-16,Jedinstvo,Decic,1,1,D
+2025-03-16,Jezero,Buducnost Podgorica,3,3,D
+2025-03-16,Mornar,Arsenal Tivat,1,0,H
+2025-03-16,Otrant-Olympic,Sutjeska,0,2,A
+2025-03-16,Bokelj,Petrovac,0,4,A
+2025-03-24,Bokelj,Decic,0,1,A
+2025-03-29,Bokelj,Mornar,0,2,A
+2025-03-29,Sutjeska,Jezero,2,1,H
+2025-03-29,Arsenal Tivat,Otrant-Olympic,2,1,H
+2025-03-29,Petrovac,Decic,0,0,D
+2025-03-29,Buducnost Podgorica,Jedinstvo,5,2,H
+2025-04-02,Mornar,Petrovac,1,1,D
+2025-04-02,Jedinstvo,Sutjeska,2,1,H
+2025-04-02,Jezero,Arsenal Tivat,2,0,H
+2025-04-02,Otrant-Olympic,Bokelj,0,1,A
+2025-04-02,Decic,Buducnost Podgorica,1,1,D
+2025-04-06,Decic,Sutjeska,0,1,A
+2025-04-06,Jedinstvo,Arsenal Tivat,0,1,A
+2025-04-06,Otrant-Olympic,Mornar,6,2,H
+2025-04-06,Petrovac,Buducnost Podgorica,3,3,D
+2025-04-11,Sutjeska,Buducnost Podgorica,1,3,A
+2025-04-12,Arsenal Tivat,Decic,1,0,H
+2025-04-12,Mornar,Jezero,0,1,A
+2025-04-12,Bokelj,Jedinstvo,1,1,D
+2025-04-12,Otrant-Olympic,Petrovac,2,1,H
+2025-04-20,Petrovac,Sutjeska,1,0,H
+2025-04-20,Jedinstvo,Mornar,3,0,H
+2025-04-20,Jezero,Otrant-Olympic,2,2,D
+2025-04-20,Decic,Bokelj,1,0,H
+2025-04-20,Buducnost Podgorica,Arsenal Tivat,5,0,H
+2025-04-26,Arsenal Tivat,Sutjeska,1,1,D
+2025-04-26,Mornar,Decic,0,2,A
+2025-04-26,Jezero,Petrovac,1,1,D
+2025-04-26,Otrant-Olympic,Jedinstvo,2,2,D
+2025-04-26,Bokelj,Buducnost Podgorica,0,4,A
+2025-04-30,Jezero,Bokelj,0,2,A
+2025-05-04,Buducnost Podgorica,Mornar,3,0,H
+2025-05-04,Sutjeska,Bokelj,1,0,H
+2025-05-04,Petrovac,Arsenal Tivat,2,0,H
+2025-05-04,Decic,Otrant-Olympic,2,2,D
+2025-05-04,Jedinstvo,Jezero,1,0,H
+2025-05-10,Mornar,Sutjeska,0,2,A
+2025-05-10,Bokelj,Arsenal Tivat,1,1,D
+2025-05-10,Jedinstvo,Petrovac,2,1,H
+2025-05-10,Jezero,Decic,1,1,D
+2025-05-10,Otrant-Olympic,Buducnost Podgorica,0,1,A
+2025-05-14,Buducnost Podgorica,Jezero,2,3,A
+2025-05-14,Sutjeska,Otrant-Olympic,2,0,H
+2025-05-14,Petrovac,Bokelj,0,1,A
+2025-05-14,Arsenal Tivat,Mornar,1,1,D
+2025-05-14,Decic,Jedinstvo,2,2,D
+2025-05-18,Mornar,Bokelj,4,1,H
+2025-05-18,Decic,Petrovac,1,1,D
+2025-05-18,Jedinstvo,Buducnost Podgorica,1,3,A
+2025-05-18,Jezero,Sutjeska,2,0,H
+2025-05-18,Otrant-Olympic,Arsenal Tivat,4,1,H
+2025-05-24,Buducnost Podgorica,Decic,0,0,D
+2025-05-24,Sutjeska,Jedinstvo,3,3,D
+2025-05-24,Petrovac,Mornar,0,2,A
+2025-05-24,Arsenal Tivat,Jezero,0,0,D
+2025-05-24,Bokelj,Otrant-Olympic,1,5,A
+2025-05-30,Lovcen,Arsenal Tivat,0,0,D
+2025-05-30,Jezero,Rudar,1,0,H
+2025-06-04,Arsenal Tivat,Lovcen,4,0,H
+2025-06-04,Rudar,Jezero,0,1,A

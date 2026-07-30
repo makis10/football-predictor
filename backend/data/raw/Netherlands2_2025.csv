@@ -1,0 +1,393 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2025-08-08,De Graafschap,VVV Venlo,3,2,H
+2025-08-08,Dordrecht,Cambuur,1,0,H
+2025-08-08,Den Bosch,Jong Ajax,2,0,H
+2025-08-08,FC Eindhoven,Jong Utrecht,1,0,H
+2025-08-08,FC OSS,MVV,4,0,H
+2025-08-10,Helmond Sport,Roda,1,3,A
+2025-08-10,ADO Den Haag,Willem II,5,1,H
+2025-08-11,Jong PSV U21,Emmen,3,1,H
+2025-08-11,Jong AZ,Waalwijk,2,3,A
+2025-08-15,VVV Venlo,Jong PSV U21,0,2,A
+2025-08-15,Roda,De Graafschap,1,0,H
+2025-08-15,Waalwijk,Helmond Sport,1,1,D
+2025-08-15,Cambuur,FC OSS,1,0,H
+2025-08-16,MVV,Dordrecht,0,1,A
+2025-08-17,Emmen,Almere City FC,1,4,A
+2025-08-17,Willem II,FC Eindhoven,0,1,A
+2025-08-18,Jong Ajax,Jong AZ,4,1,H
+2025-08-18,Jong Utrecht,ADO Den Haag,2,2,D
+2025-08-22,De Graafschap,MVV,0,1,A
+2025-08-22,Almere City FC,Willem II,0,1,A
+2025-08-22,FC Eindhoven,Waalwijk,1,0,H
+2025-08-22,Helmond Sport,Emmen,2,0,H
+2025-08-23,Dordrecht,Jong PSV U21,1,2,A
+2025-08-24,VVV Venlo,Roda,3,1,H
+2025-08-24,Den Bosch,FC OSS,5,2,H
+2025-08-25,Jong AZ,Cambuur,0,1,A
+2025-08-25,Jong Utrecht,Jong Ajax,4,3,H
+2025-08-29,Willem II,Jong Utrecht,2,1,H
+2025-08-29,ADO Den Haag,Helmond Sport,2,0,H
+2025-08-29,Emmen,Den Bosch,3,1,H
+2025-08-29,Jong PSV U21,Jong AZ,1,0,H
+2025-08-29,Roda,FC Eindhoven,0,0,D
+2025-08-29,FC OSS,Dordrecht,0,3,A
+2025-08-29,Jong Ajax,MVV,0,0,D
+2025-08-30,Waalwijk,Almere City FC,2,0,H
+2025-08-31,Cambuur,VVV Venlo,3,1,H
+2025-09-05,De Graafschap,Emmen,2,3,A
+2025-09-06,Cambuur,Willem II,2,2,D
+2025-09-12,De Graafschap,Willem II,1,1,D
+2025-09-12,Emmen,FC OSS,1,1,D
+2025-09-12,MVV,Cambuur,0,1,A
+2025-09-12,Roda,Jong Ajax,3,3,D
+2025-09-12,Jong AZ,Vitesse,4,0,H
+2025-09-12,Almere City FC,Jong PSV U21,2,4,A
+2025-09-12,Den Bosch,Dordrecht,3,3,D
+2025-09-12,FC Eindhoven,ADO Den Haag,0,1,A
+2025-09-12,Jong Utrecht,Waalwijk,2,0,H
+2025-09-13,VVV Venlo,Helmond Sport,2,1,H
+2025-09-15,Dordrecht,Jong AZ,1,1,D
+2025-09-15,Jong PSV U21,Roda,0,1,A
+2025-09-15,Almere City FC,FC Eindhoven,5,0,H
+2025-09-15,Jong Ajax,ADO Den Haag,1,3,A
+2025-09-16,MVV,Den Bosch,2,4,A
+2025-09-16,Waalwijk,Vitesse,1,1,D
+2025-09-16,FC OSS,VVV Venlo,2,1,H
+2025-09-16,Helmond Sport,Jong Utrecht,2,1,H
+2025-09-19,Willem II,Jong Ajax,1,0,H
+2025-09-19,ADO Den Haag,Almere City FC,2,1,H
+2025-09-19,Emmen,Dordrecht,2,0,H
+2025-09-19,Roda,Waalwijk,1,4,A
+2025-09-19,FC Eindhoven,FC OSS,3,4,A
+2025-09-20,Vitesse,Helmond Sport,3,1,H
+2025-09-21,VVV Venlo,MVV,1,0,H
+2025-09-22,Jong PSV U21,Den Bosch,3,0,H
+2025-09-22,Jong AZ,De Graafschap,1,3,A
+2025-09-22,Jong Utrecht,Cambuur,2,4,A
+2025-09-26,Dordrecht,De Graafschap,1,1,D
+2025-09-26,MVV,Emmen,1,0,H
+2025-09-26,Waalwijk,ADO Den Haag,1,3,A
+2025-09-26,Almere City FC,Jong Utrecht,4,0,H
+2025-09-26,Cambuur,Jong PSV U21,5,3,H
+2025-09-26,Den Bosch,Jong AZ,2,3,A
+2025-09-26,FC OSS,Roda,1,2,A
+2025-09-26,Helmond Sport,FC Eindhoven,1,0,H
+2025-09-26,Jong Ajax,VVV Venlo,2,4,A
+2025-09-27,Vitesse,Willem II,1,2,A
+2025-09-29,ADO Den Haag,FC OSS,5,1,H
+2025-09-29,De Graafschap,Almere City FC,3,2,H
+2025-09-29,Jong PSV U21,MVV,2,2,D
+2025-09-29,Roda,Cambuur,1,1,D
+2025-09-29,Waalwijk,Jong Ajax,2,1,H
+2025-09-30,Willem II,Helmond Sport,1,0,H
+2025-09-30,VVV Venlo,Den Bosch,0,1,A
+2025-09-30,Emmen,Vitesse,2,4,A
+2025-09-30,FC Eindhoven,Dordrecht,2,2,D
+2025-09-30,Jong Utrecht,Jong AZ,0,0,D
+2025-10-03,Willem II,Roda,1,2,A
+2025-10-03,Vitesse,Jong Utrecht,2,0,H
+2025-10-03,Dordrecht,VVV Venlo,2,0,H
+2025-10-03,MVV,FC Eindhoven,3,1,H
+2025-10-03,Jong AZ,ADO Den Haag,0,4,A
+2025-10-03,Cambuur,Emmen,3,2,H
+2025-10-03,Den Bosch,Waalwijk,2,2,D
+2025-10-03,FC OSS,Jong PSV U21,1,1,D
+2025-10-03,Helmond Sport,Almere City FC,2,1,H
+2025-10-03,Jong Ajax,De Graafschap,2,2,D
+2025-10-06,Vitesse,Den Bosch,1,2,A
+2025-10-10,Almere City FC,Vitesse,2,2,D
+2025-10-11,Emmen,FC Eindhoven,6,0,H
+2025-10-11,Cambuur,De Graafschap,2,0,H
+2025-10-17,Waalwijk,Willem II,2,3,A
+2025-10-17,ADO Den Haag,Dordrecht,3,0,H
+2025-10-17,VVV Venlo,Emmen,4,0,H
+2025-10-17,Roda,Den Bosch,6,0,H
+2025-10-17,Almere City FC,Cambuur,1,1,D
+2025-10-17,FC Eindhoven,Vitesse,0,4,A
+2025-10-17,Helmond Sport,Jong AZ,4,2,H
+2025-10-17,Jong Ajax,Jong PSV U21,2,2,D
+2025-10-17,Jong Utrecht,MVV,3,1,H
+2025-10-18,De Graafschap,FC OSS,1,1,D
+2025-10-20,Dordrecht,Waalwijk,1,2,A
+2025-10-20,Jong PSV U21,ADO Den Haag,0,3,A
+2025-10-20,Roda,Almere City FC,2,0,H
+2025-10-20,Jong AZ,Willem II,4,0,H
+2025-10-21,VVV Venlo,Jong Utrecht,0,1,A
+2025-10-21,MVV,Vitesse,3,2,H
+2025-10-21,Den Bosch,Helmond Sport,1,0,H
+2025-10-21,FC OSS,Jong Ajax,1,1,D
+2025-10-24,De Graafschap,Jong PSV U21,3,2,H
+2025-10-24,Vitesse,Roda,2,2,D
+2025-10-24,Waalwijk,Cambuur,4,2,H
+2025-10-24,Almere City FC,Jong AZ,1,3,A
+2025-10-24,FC Eindhoven,VVV Venlo,0,1,A
+2025-10-24,Helmond Sport,Dordrecht,1,2,A
+2025-10-24,Jong Ajax,Emmen,0,1,A
+2025-10-24,Jong Utrecht,FC OSS,0,0,D
+2025-10-25,ADO Den Haag,Den Bosch,2,1,H
+2025-10-26,Willem II,MVV,2,2,D
+2025-10-31,VVV Venlo,Vitesse,1,2,A
+2025-10-31,Den Bosch,De Graafschap,1,2,A
+2025-10-31,FC OSS,Helmond Sport,0,3,A
+2025-11-01,Roda,Jong Utrecht,1,1,D
+2025-11-01,Cambuur,Jong Ajax,4,1,H
+2025-11-02,Emmen,Waalwijk,2,2,D
+2025-11-02,MVV,ADO Den Haag,3,4,A
+2025-11-03,Dordrecht,Almere City FC,0,1,A
+2025-11-03,Jong PSV U21,Willem II,2,1,H
+2025-11-03,Jong AZ,FC Eindhoven,0,2,A
+2025-11-07,Willem II,FC OSS,1,1,D
+2025-11-07,ADO Den Haag,Roda,4,0,H
+2025-11-07,Vitesse,Cambuur,0,4,A
+2025-11-07,Jong AZ,VVV Venlo,0,2,A
+2025-11-07,Almere City FC,MVV,4,0,H
+2025-11-07,FC Eindhoven,Den Bosch,1,3,A
+2025-11-07,Jong Ajax,Dordrecht,0,0,D
+2025-11-07,Jong Utrecht,Emmen,1,2,A
+2025-11-08,Helmond Sport,Jong PSV U21,2,3,A
+2025-11-09,Waalwijk,De Graafschap,1,4,A
+2025-11-15,FC Eindhoven,Cambuur,3,3,D
+2025-11-15,Willem II,Emmen,1,1,D
+2025-11-21,De Graafschap,Helmond Sport,3,1,H
+2025-11-21,VVV Venlo,Willem II,0,2,A
+2025-11-21,Dordrecht,Vitesse,1,1,D
+2025-11-21,Jong PSV U21,Jong Utrecht,3,3,D
+2025-11-21,MVV,Jong AZ,1,3,A
+2025-11-21,Cambuur,ADO Den Haag,2,0,H
+2025-11-21,Den Bosch,Almere City FC,5,2,H
+2025-11-21,FC OSS,Waalwijk,0,0,D
+2025-11-21,Jong Ajax,FC Eindhoven,1,3,A
+2025-11-22,Emmen,Roda,1,1,D
+2025-11-24,Jong AZ,FC OSS,0,1,A
+2025-11-24,Almere City FC,VVV Venlo,3,0,H
+2025-11-24,Helmond Sport,Jong Ajax,2,1,H
+2025-11-24,Jong Utrecht,Den Bosch,3,2,H
+2025-11-25,ADO Den Haag,De Graafschap,3,2,H
+2025-11-25,Vitesse,Jong PSV U21,3,1,H
+2025-11-25,Roda,Dordrecht,1,2,A
+2025-11-25,Waalwijk,MVV,1,0,H
+2025-11-28,VVV Venlo,ADO Den Haag,0,3,A
+2025-11-28,Emmen,Jong AZ,4,2,H
+2025-11-28,Dordrecht,Jong Utrecht,1,2,A
+2025-11-28,Cambuur,Helmond Sport,0,0,D
+2025-11-28,Den Bosch,Willem II,2,1,H
+2025-11-29,FC OSS,Almere City FC,1,2,A
+2025-11-30,MVV,Roda,0,0,D
+2025-11-30,De Graafschap,FC Eindhoven,2,0,H
+2025-12-01,Jong PSV U21,Waalwijk,3,1,H
+2025-12-01,Jong Ajax,Vitesse,2,0,H
+2025-12-04,Vitesse,De Graafschap,1,2,A
+2025-12-05,ADO Den Haag,Emmen,2,1,H
+2025-12-05,Roda,Jong AZ,2,3,A
+2025-12-05,Waalwijk,VVV Venlo,1,2,A
+2025-12-05,Almere City FC,Jong Ajax,3,2,H
+2025-12-05,Cambuur,Den Bosch,2,1,H
+2025-12-05,FC Eindhoven,Jong PSV U21,4,0,H
+2025-12-05,Helmond Sport,MVV,2,4,A
+2025-12-06,Willem II,Dordrecht,2,0,H
+2025-12-07,Vitesse,FC OSS,0,0,D
+2025-12-08,Jong Utrecht,De Graafschap,2,3,A
+2025-12-10,Vitesse,Waalwijk,2,1,H
+2025-12-12,Willem II,Cambuur,0,1,A
+2025-12-12,De Graafschap,Roda,2,3,A
+2025-12-12,Emmen,Helmond Sport,4,1,H
+2025-12-12,Dordrecht,FC Eindhoven,3,4,A
+2025-12-12,Jong PSV U21,Almere City FC,2,3,A
+2025-12-12,MVV,Jong Ajax,2,1,H
+2025-12-12,Jong AZ,Jong Utrecht,1,4,A
+2025-12-12,Den Bosch,VVV Venlo,0,1,A
+2025-12-12,FC OSS,ADO Den Haag,3,4,A
+2025-12-19,ADO Den Haag,Jong PSV U21,1,2,A
+2025-12-19,VVV Venlo,Dordrecht,3,1,H
+2025-12-19,Cambuur,MVV,4,0,H
+2025-12-19,FC Eindhoven,Jong AZ,3,2,H
+2025-12-20,FC OSS,De Graafschap,2,3,A
+2025-12-20,Almere City FC,Emmen,4,2,H
+2025-12-21,Den Bosch,Vitesse,2,0,H
+2025-12-21,Helmond Sport,Willem II,2,2,D
+2025-12-22,Jong Ajax,Waalwijk,0,2,A
+2025-12-22,Jong Utrecht,Roda,1,3,A
+2026-01-12,Jong AZ,Jong Ajax,1,2,A
+2026-01-16,ADO Den Haag,Cambuur,1,2,A
+2026-01-16,VVV Venlo,Jong AZ,1,3,A
+2026-01-16,Helmond Sport,Vitesse,2,2,D
+2026-01-17,FC OSS,Emmen,4,0,H
+2026-01-18,Den Bosch,MVV,1,2,A
+2026-01-18,Waalwijk,Dordrecht,1,1,D
+2026-01-18,Almere City FC,De Graafschap,2,0,H
+2026-01-18,FC Eindhoven,Willem II,0,2,A
+2026-01-19,Jong Ajax,Roda,2,2,D
+2026-01-19,Jong Utrecht,Jong PSV U21,5,3,H
+2026-01-23,Willem II,VVV Venlo,2,1,H
+2026-01-23,De Graafschap,Waalwijk,2,4,A
+2026-01-23,Vitesse,ADO Den Haag,2,1,H
+2026-01-23,Dordrecht,Den Bosch,3,2,H
+2026-01-23,MVV,Jong Utrecht,2,2,D
+2026-01-23,Roda,FC OSS,1,2,A
+2026-01-26,ADO Den Haag,Vitesse,0,0,D
+2026-01-26,De Graafschap,Den Bosch,1,1,D
+2026-01-26,Jong PSV U21,Helmond Sport,4,0,H
+2026-01-26,Roda,VVV Venlo,2,2,D
+2026-01-26,Waalwijk,Jong Utrecht,2,2,D
+2026-01-26,Jong AZ,Almere City FC,3,4,A
+2026-01-30,ADO Den Haag,Jong AZ,1,4,A
+2026-01-30,Vitesse,Dordrecht,1,2,A
+2026-01-30,Waalwijk,FC OSS,2,0,H
+2026-01-30,Almere City FC,Roda,1,2,A
+2026-01-30,Den Bosch,Emmen,1,1,D
+2026-01-30,FC Eindhoven,MVV,5,0,H
+2026-01-31,Helmond Sport,De Graafschap,0,0,D
+2026-02-02,Vitesse,FC Eindhoven,1,1,D
+2026-02-02,Jong PSV U21,Cambuur,3,2,H
+2026-02-02,MVV,Almere City FC,1,1,D
+2026-02-02,Jong Ajax,Willem II,2,1,H
+2026-02-02,Jong Utrecht,VVV Venlo,2,2,D
+2026-02-03,Dordrecht,Helmond Sport,3,0,H
+2026-02-06,De Graafschap,Jong Ajax,4,0,H
+2026-02-06,MVV,Jong PSV U21,2,1,H
+2026-02-06,Roda,ADO Den Haag,0,3,A
+2026-02-06,FC OSS,Vitesse,1,2,A
+2026-02-06,Helmond Sport,Den Bosch,2,0,H
+2026-02-07,VVV Venlo,FC Eindhoven,1,0,H
+2026-02-08,Willem II,Waalwijk,2,1,H
+2026-02-09,Jong PSV U21,FC OSS,2,0,H
+2026-02-09,Jong AZ,Dordrecht,1,2,A
+2026-02-12,Den Bosch,FC Eindhoven,2,1,H
+2026-02-13,ADO Den Haag,MVV,3,0,H
+2026-02-13,Dordrecht,Emmen,1,0,H
+2026-02-13,Jong PSV U21,De Graafschap,1,2,A
+2026-02-13,Waalwijk,Roda,1,2,A
+2026-02-13,Almere City FC,Helmond Sport,0,1,A
+2026-02-13,FC OSS,Jong AZ,0,3,A
+2026-02-14,Vitesse,VVV Venlo,2,2,D
+2026-02-16,Jong Ajax,Cambuur,1,2,A
+2026-02-16,Jong Utrecht,Willem II,1,1,D
+2026-02-20,Willem II,Vitesse,3,0,H
+2026-02-20,De Graafschap,Jong Utrecht,1,0,H
+2026-02-20,VVV Venlo,FC OSS,1,1,D
+2026-02-20,Emmen,Jong PSV U21,2,3,A
+2026-02-20,Dordrecht,Jong Ajax,0,1,A
+2026-02-20,Cambuur,Waalwijk,1,1,D
+2026-02-20,Helmond Sport,ADO Den Haag,1,3,A
+2026-02-21,FC Eindhoven,Almere City FC,3,2,H
+2026-02-22,Roda,MVV,2,0,H
+2026-02-23,Emmen,Jong Ajax,0,0,D
+2026-02-23,Jong AZ,Den Bosch,2,2,D
+2026-02-24,Willem II,ADO Den Haag,0,1,A
+2026-02-24,Cambuur,FC Eindhoven,2,1,H
+2026-02-27,ADO Den Haag,VVV Venlo,1,0,H
+2026-02-27,Vitesse,Jong AZ,2,0,H
+2026-02-27,Emmen,Willem II,0,3,A
+2026-02-27,Jong PSV U21,Dordrecht,1,1,D
+2026-02-27,MVV,De Graafschap,3,3,D
+2026-02-27,Waalwijk,FC Eindhoven,2,1,H
+2026-02-27,Den Bosch,Roda,2,2,D
+2026-02-27,FC OSS,Cambuur,1,2,A
+2026-02-27,Jong Ajax,Helmond Sport,5,1,H
+2026-02-27,Jong Utrecht,Almere City FC,2,3,A
+2026-03-02,Emmen,Jong Utrecht,1,0,H
+2026-03-03,Cambuur,Almere City FC,3,2,H
+2026-03-06,VVV Venlo,Waalwijk,0,3,A
+2026-03-06,Dordrecht,MVV,1,1,D
+2026-03-06,Roda,Jong PSV U21,0,2,A
+2026-03-06,FC Eindhoven,Jong Ajax,2,1,H
+2026-03-06,Helmond Sport,FC OSS,1,1,D
+2026-03-07,Almere City FC,ADO Den Haag,1,0,H
+2026-03-08,De Graafschap,Vitesse,1,4,A
+2026-03-08,Willem II,Den Bosch,1,1,D
+2026-03-08,Cambuur,Jong Utrecht,1,0,H
+2026-03-09,Jong AZ,Emmen,2,3,A
+2026-03-13,Vitesse,Almere City FC,1,3,A
+2026-03-13,Emmen,ADO Den Haag,0,1,A
+2026-03-13,Jong PSV U21,FC Eindhoven,1,2,A
+2026-03-13,MVV,VVV Venlo,2,1,H
+2026-03-13,Waalwijk,Jong AZ,2,1,H
+2026-03-13,Cambuur,Roda,1,1,D
+2026-03-13,FC OSS,Willem II,1,3,A
+2026-03-13,Jong Ajax,Den Bosch,3,2,H
+2026-03-13,Jong Utrecht,Helmond Sport,1,0,H
+2026-03-14,De Graafschap,Dordrecht,2,1,H
+2026-03-16,Roda,Vitesse,0,1,A
+2026-03-16,Jong AZ,MVV,1,1,D
+2026-03-16,Den Bosch,Jong PSV U21,1,0,H
+2026-03-16,Helmond Sport,Cambuur,0,1,A
+2026-03-17,ADO Den Haag,Jong Utrecht,1,0,H
+2026-03-17,VVV Venlo,Jong Ajax,0,1,A
+2026-03-17,Dordrecht,FC OSS,2,2,D
+2026-03-17,Almere City FC,Waalwijk,2,2,D
+2026-03-20,Emmen,VVV Venlo,2,2,D
+2026-03-20,Jong PSV U21,Vitesse,0,2,A
+2026-03-20,Roda,Helmond Sport,1,1,D
+2026-03-20,Cambuur,Jong AZ,3,4,A
+2026-03-20,FC OSS,FC Eindhoven,2,1,H
+2026-03-20,Jong Ajax,Almere City FC,0,2,A
+2026-03-20,Jong Utrecht,Dordrecht,3,1,H
+2026-03-21,Waalwijk,Den Bosch,2,3,A
+2026-03-22,De Graafschap,ADO Den Haag,1,2,A
+2026-03-22,MVV,Willem II,0,5,A
+2026-03-24,Emmen,Cambuur,2,4,A
+2026-03-28,Willem II,De Graafschap,0,2,A
+2026-03-28,FC Eindhoven,Emmen,1,0,H
+2026-04-03,Willem II,Jong PSV U21,1,0,H
+2026-04-03,ADO Den Haag,Jong Ajax,4,2,H
+2026-04-03,Vitesse,Emmen,3,3,D
+2026-04-03,VVV Venlo,Cambuur,3,0,H
+2026-04-03,Dordrecht,Roda,0,3,A
+2026-04-03,MVV,Waalwijk,1,3,A
+2026-04-03,Jong AZ,Helmond Sport,2,0,H
+2026-04-03,Almere City FC,FC OSS,3,2,H
+2026-04-03,FC Eindhoven,De Graafschap,2,2,D
+2026-04-06,Helmond Sport,Waalwijk,2,2,D
+2026-04-06,Almere City FC,Den Bosch,1,2,A
+2026-04-06,ADO Den Haag,FC Eindhoven,4,0,H
+2026-04-06,De Graafschap,Jong AZ,5,0,H
+2026-04-06,Vitesse,Jong Ajax,6,1,H
+2026-04-06,Emmen,MVV,2,1,H
+2026-04-06,Roda,Willem II,0,1,A
+2026-04-06,Cambuur,Dordrecht,1,1,D
+2026-04-06,FC OSS,Jong Utrecht,3,1,H
+2026-04-06,Jong PSV U21,VVV Venlo,1,0,H
+2026-04-10,MVV,Helmond Sport,0,0,D
+2026-04-10,Waalwijk,Emmen,5,0,H
+2026-04-10,Den Bosch,Cambuur,1,1,D
+2026-04-10,FC Eindhoven,Roda,1,3,A
+2026-04-11,VVV Venlo,De Graafschap,3,3,D
+2026-04-12,Dordrecht,ADO Den Haag,1,0,H
+2026-04-12,Willem II,Almere City FC,2,1,H
+2026-04-13,Jong AZ,Jong PSV U21,0,2,A
+2026-04-13,Jong Ajax,FC OSS,1,2,A
+2026-04-13,Jong Utrecht,Vitesse,0,3,A
+2026-04-17,Willem II,Jong AZ,3,0,H
+2026-04-17,ADO Den Haag,Waalwijk,5,1,H
+2026-04-17,De Graafschap,Cambuur,3,1,H
+2026-04-17,Vitesse,MVV,0,0,D
+2026-04-17,Jong PSV U21,Jong Ajax,0,1,A
+2026-04-17,Roda,Emmen,2,2,D
+2026-04-17,Almere City FC,Dordrecht,4,1,H
+2026-04-17,FC OSS,Den Bosch,4,2,H
+2026-04-17,Helmond Sport,VVV Venlo,2,0,H
+2026-04-17,Jong Utrecht,FC Eindhoven,3,0,H
+2026-04-20,Den Bosch,Jong Utrecht,1,1,D
+2026-04-24,VVV Venlo,Almere City FC,3,1,H
+2026-04-24,Emmen,De Graafschap,1,0,H
+2026-04-24,Dordrecht,Willem II,1,2,A
+2026-04-24,MVV,FC OSS,0,2,A
+2026-04-24,Waalwijk,Jong PSV U21,4,1,H
+2026-04-24,Jong AZ,Roda,2,0,H
+2026-04-24,Cambuur,Vitesse,2,1,H
+2026-04-24,Den Bosch,ADO Den Haag,1,3,A
+2026-04-24,FC Eindhoven,Helmond Sport,1,0,H
+2026-04-24,Jong Ajax,Jong Utrecht,0,2,A
+2026-04-28,Roda,Waalwijk,1,1,D
+2026-04-29,Den Bosch,Almere City FC,2,3,A
+2026-05-01,Waalwijk,Roda,1,1,D
+2026-05-02,Almere City FC,Den Bosch,3,0,H
+2026-05-05,Waalwijk,Willem II,0,1,A
+2026-05-06,Almere City FC,De Graafschap,3,1,H
+2026-05-09,Willem II,Waalwijk,1,1,D
+2026-05-09,De Graafschap,Almere City FC,2,2,D
+2026-05-13,Almere City FC,Willem II,0,1,A
+2026-05-16,Willem II,Almere City FC,2,0,H
+2026-05-20,Willem II,FC Volendam,1,2,A
+2026-05-23,FC Volendam,Willem II,1,2,A

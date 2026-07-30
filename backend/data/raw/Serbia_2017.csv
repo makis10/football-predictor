@@ -1,0 +1,297 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2017-07-21,Vojvodina,Cukaricki,1,0,H
+2017-07-22,FK Partizan,Macva,6,1,H
+2017-07-22,Mladost Lucani,Zemun,1,1,D
+2017-07-22,FK Spartak Zdrepceva KRV,Backa,2,1,H
+2017-07-22,Javor,Borac Cacak,1,0,H
+2017-07-22,Napredak,RAD,2,2,D
+2017-07-22,FK Vozdovac,Radnik Surdulica,0,0,D
+2017-07-23,FK Crvena Zvezda,Radnicki NIS,3,0,H
+2017-07-29,Macva,Zemun,1,0,H
+2017-07-29,Backa,FK Vozdovac,0,3,A
+2017-07-29,FK Partizan,Javor,2,1,H
+2017-07-29,Borac Cacak,FK Spartak Zdrepceva KRV,0,4,A
+2017-07-29,Cukaricki,Napredak,2,0,H
+2017-07-29,Radnik Surdulica,Vojvodina,0,4,A
+2017-07-30,RAD,FK Crvena Zvezda,0,2,A
+2017-08-04,Napredak,Radnik Surdulica,1,2,A
+2017-08-05,Zemun,Radnicki NIS,1,2,A
+2017-08-05,Mladost Lucani,RAD,2,1,H
+2017-08-05,Vojvodina,Backa,1,0,H
+2017-08-05,Javor,Macva,0,4,A
+2017-08-05,FK Vozdovac,Borac Cacak,2,1,H
+2017-08-06,FK Spartak Zdrepceva KRV,FK Partizan,0,1,A
+2017-08-06,FK Crvena Zvezda,Cukaricki,3,0,H
+2017-08-09,Macva,Radnicki NIS,1,2,A
+2017-08-09,Backa,Napredak,1,4,A
+2017-08-09,FK Partizan,FK Vozdovac,1,3,A
+2017-08-09,Borac Cacak,Vojvodina,0,2,A
+2017-08-09,Cukaricki,Mladost Lucani,1,0,H
+2017-08-09,RAD,Zemun,2,0,H
+2017-08-10,Javor,FK Spartak Zdrepceva KRV,1,1,D
+2017-08-10,Radnik Surdulica,FK Crvena Zvezda,0,5,A
+2017-08-13,FK Crvena Zvezda,Backa,3,1,H
+2017-08-13,Zemun,Cukaricki,2,0,H
+2017-08-13,Vojvodina,FK Partizan,0,1,A
+2017-08-13,Radnicki NIS,RAD,2,0,H
+2017-08-13,Napredak,Borac Cacak,3,1,H
+2017-08-14,Mladost Lucani,Radnik Surdulica,0,0,D
+2017-08-14,FK Spartak Zdrepceva KRV,Macva,3,2,H
+2017-08-14,FK Vozdovac,Javor,1,0,H
+2017-08-19,Macva,RAD,1,2,A
+2017-08-19,Backa,Mladost Lucani,1,0,H
+2017-08-19,FK Spartak Zdrepceva KRV,FK Vozdovac,0,0,D
+2017-08-19,Javor,Vojvodina,0,1,A
+2017-08-19,Cukaricki,Radnicki NIS,0,0,D
+2017-08-20,Radnik Surdulica,Zemun,0,1,A
+2017-08-23,Radnicki NIS,Mladost Lucani,2,1,H
+2017-08-25,RAD,Cukaricki,0,1,A
+2017-08-26,Zemun,Backa,1,1,D
+2017-08-26,Mladost Lucani,Borac Cacak,4,1,H
+2017-08-26,Vojvodina,FK Spartak Zdrepceva KRV,0,5,A
+2017-08-26,Radnicki NIS,Radnik Surdulica,2,2,D
+2017-08-26,Napredak,Javor,2,1,H
+2017-08-26,FK Vozdovac,Macva,0,2,A
+2017-08-27,FK Crvena Zvezda,FK Partizan,0,0,D
+2017-09-08,Macva,Cukaricki,0,2,A
+2017-09-09,Backa,Radnicki NIS,1,1,D
+2017-09-09,FK Spartak Zdrepceva KRV,Napredak,2,1,H
+2017-09-09,Borac Cacak,Zemun,0,0,D
+2017-09-09,Javor,FK Crvena Zvezda,0,2,A
+2017-09-09,Radnik Surdulica,RAD,3,1,H
+2017-09-09,FK Partizan,Mladost Lucani,3,0,H
+2017-09-10,FK Vozdovac,Vojvodina,1,1,D
+2017-09-13,Radnicki NIS,Borac Cacak,1,0,H
+2017-09-13,Napredak,FK Vozdovac,1,2,A
+2017-09-13,Cukaricki,Radnik Surdulica,1,2,A
+2017-09-13,Mladost Lucani,Javor,3,0,H
+2017-09-13,Vojvodina,Macva,1,0,H
+2017-09-13,RAD,Backa,0,0,D
+2017-09-16,Vojvodina,Napredak,3,1,H
+2017-09-17,Macva,Radnik Surdulica,4,0,H
+2017-09-17,Backa,Cukaricki,2,3,A
+2017-09-17,FK Spartak Zdrepceva KRV,Mladost Lucani,3,3,D
+2017-09-17,FK Vozdovac,FK Crvena Zvezda,0,2,A
+2017-09-17,FK Partizan,Radnicki NIS,3,1,H
+2017-09-17,Borac Cacak,RAD,3,1,H
+2017-09-17,Javor,Zemun,0,1,A
+2017-09-20,Borac Cacak,FK Crvena Zvezda,0,2,A
+2017-09-20,FK Partizan,Napredak,1,1,D
+2017-09-24,Zemun,FK Spartak Zdrepceva KRV,1,1,D
+2017-09-24,FK Crvena Zvezda,Vojvodina,2,0,H
+2017-09-24,Mladost Lucani,FK Vozdovac,1,3,A
+2017-09-24,Radnicki NIS,Javor,1,0,H
+2017-09-24,Napredak,Macva,3,1,H
+2017-09-24,Cukaricki,Borac Cacak,2,0,H
+2017-09-24,Radnik Surdulica,Backa,3,1,H
+2017-09-24,RAD,FK Partizan,2,4,A
+2017-09-29,Vojvodina,Mladost Lucani,2,0,H
+2017-09-30,Macva,Backa,1,1,D
+2017-09-30,FK Spartak Zdrepceva KRV,Radnicki NIS,4,2,H
+2017-09-30,Borac Cacak,Radnik Surdulica,3,1,H
+2017-09-30,Javor,RAD,3,2,H
+2017-09-30,FK Vozdovac,Zemun,6,1,H
+2017-10-01,Napredak,FK Crvena Zvezda,1,0,H
+2017-10-01,FK Partizan,Cukaricki,0,0,D
+2017-10-14,Zemun,Vojvodina,0,0,D
+2017-10-14,FK Crvena Zvezda,Macva,4,0,H
+2017-10-14,Radnicki NIS,FK Vozdovac,1,1,D
+2017-10-14,Cukaricki,Javor,0,0,D
+2017-10-14,RAD,FK Spartak Zdrepceva KRV,0,2,A
+2017-10-15,Radnik Surdulica,FK Partizan,0,2,A
+2017-10-15,Backa,Borac Cacak,1,0,H
+2017-10-15,Mladost Lucani,Napredak,2,1,H
+2017-10-20,Vojvodina,Radnicki NIS,1,1,D
+2017-10-21,FK Spartak Zdrepceva KRV,Cukaricki,0,0,D
+2017-10-21,Macva,Borac Cacak,1,0,H
+2017-10-21,Javor,Radnik Surdulica,1,0,H
+2017-10-21,Napredak,Zemun,2,1,H
+2017-10-21,FK Vozdovac,RAD,3,0,H
+2017-10-22,FK Partizan,Backa,3,1,H
+2017-10-22,FK Crvena Zvezda,Mladost Lucani,2,1,H
+2017-10-25,Zemun,FK Partizan,1,3,A
+2017-10-25,FK Crvena Zvezda,FK Spartak Zdrepceva KRV,1,0,H
+2017-10-28,RAD,Vojvodina,0,3,A
+2017-10-29,Zemun,FK Crvena Zvezda,0,1,A
+2017-10-29,Backa,Javor,2,1,H
+2017-10-29,Mladost Lucani,Macva,2,0,H
+2017-10-29,Radnicki NIS,Napredak,1,3,A
+2017-10-29,Borac Cacak,FK Partizan,1,2,A
+2017-10-29,Cukaricki,FK Vozdovac,2,1,H
+2017-10-29,Radnik Surdulica,FK Spartak Zdrepceva KRV,5,1,H
+2017-11-03,Cukaricki,Vojvodina,2,1,H
+2017-11-04,Borac Cacak,Javor,2,1,H
+2017-11-04,Backa,FK Spartak Zdrepceva KRV,0,2,A
+2017-11-04,Radnik Surdulica,FK Vozdovac,1,0,H
+2017-11-04,RAD,Napredak,1,0,H
+2017-11-05,Macva,FK Partizan,1,3,A
+2017-11-05,Zemun,Mladost Lucani,0,0,D
+2017-11-05,Radnicki NIS,FK Crvena Zvezda,0,4,A
+2017-11-17,Mladost Lucani,Radnicki NIS,2,2,D
+2017-11-18,FK Crvena Zvezda,RAD,6,1,H
+2017-11-18,Vojvodina,Radnik Surdulica,0,0,D
+2017-11-18,Napredak,Cukaricki,1,2,A
+2017-11-18,FK Vozdovac,Backa,2,0,H
+2017-11-19,Zemun,Macva,1,0,H
+2017-11-19,Javor,FK Partizan,0,2,A
+2017-11-19,FK Spartak Zdrepceva KRV,Borac Cacak,3,1,H
+2017-11-24,Borac Cacak,FK Vozdovac,0,0,D
+2017-11-25,Macva,Javor,1,1,D
+2017-11-25,Backa,Vojvodina,1,0,H
+2017-11-25,Radnik Surdulica,Napredak,2,3,A
+2017-11-25,RAD,Mladost Lucani,1,0,H
+2017-11-25,Radnicki NIS,Zemun,4,1,H
+2017-11-26,Cukaricki,FK Crvena Zvezda,1,2,A
+2017-11-26,FK Partizan,FK Spartak Zdrepceva KRV,1,1,D
+2017-11-29,Zemun,RAD,2,0,H
+2017-11-29,FK Vozdovac,FK Partizan,0,1,A
+2017-11-29,Mladost Lucani,Cukaricki,1,1,D
+2017-11-29,Vojvodina,Borac Cacak,0,1,A
+2017-11-29,FK Spartak Zdrepceva KRV,Javor,4,0,H
+2017-11-29,Radnicki NIS,Macva,3,0,H
+2017-11-29,Napredak,Backa,1,1,D
+2017-11-29,FK Crvena Zvezda,Radnik Surdulica,5,0,H
+2017-12-02,Backa,FK Crvena Zvezda,2,2,D
+2017-12-03,Macva,FK Spartak Zdrepceva KRV,1,0,H
+2017-12-03,Javor,FK Vozdovac,0,3,A
+2017-12-03,FK Partizan,Vojvodina,1,1,D
+2017-12-03,Radnik Surdulica,Mladost Lucani,3,4,A
+2017-12-04,Borac Cacak,Napredak,3,3,D
+2017-12-04,RAD,Radnicki NIS,2,3,A
+2017-12-04,Cukaricki,Zemun,4,1,H
+2017-12-08,FK Vozdovac,FK Spartak Zdrepceva KRV,2,3,A
+2017-12-09,Vojvodina,Javor,0,3,A
+2017-12-09,Radnicki NIS,Cukaricki,1,0,H
+2017-12-09,Zemun,Radnik Surdulica,0,1,A
+2017-12-09,RAD,Macva,0,2,A
+2017-12-09,Mladost Lucani,Backa,1,0,H
+2017-12-10,Napredak,FK Partizan,2,1,H
+2017-12-10,FK Crvena Zvezda,Borac Cacak,3,0,H
+2017-12-13,Backa,Zemun,1,0,H
+2017-12-13,FK Spartak Zdrepceva KRV,Vojvodina,1,1,D
+2017-12-13,Borac Cacak,Mladost Lucani,1,2,A
+2017-12-13,Javor,Napredak,0,1,A
+2017-12-13,Cukaricki,RAD,3,0,H
+2017-12-13,Radnik Surdulica,Radnicki NIS,0,2,A
+2017-12-13,Macva,FK Vozdovac,1,1,D
+2017-12-13,FK Partizan,FK Crvena Zvezda,1,1,D
+2018-02-16,Napredak,FK Spartak Zdrepceva KRV,4,3,H
+2018-02-17,Zemun,Borac Cacak,3,0,H
+2018-02-17,FK Crvena Zvezda,Javor,3,0,H
+2018-02-17,Vojvodina,FK Vozdovac,2,0,H
+2018-02-17,Cukaricki,Macva,2,0,H
+2018-02-17,RAD,Radnik Surdulica,1,1,D
+2018-02-18,Radnicki NIS,Backa,4,0,H
+2018-02-18,Mladost Lucani,FK Partizan,1,2,A
+2018-02-23,FK Vozdovac,Napredak,3,2,H
+2018-02-24,Backa,RAD,2,1,H
+2018-02-24,Macva,Vojvodina,1,1,D
+2018-02-24,Borac Cacak,Radnicki NIS,1,1,D
+2018-02-24,Javor,Mladost Lucani,3,0,H
+2018-02-24,Radnik Surdulica,Cukaricki,0,0,D
+2018-02-25,FK Spartak Zdrepceva KRV,FK Crvena Zvezda,1,2,A
+2018-02-25,FK Partizan,Zemun,1,1,D
+2018-03-03,Zemun,Javor,0,2,A
+2018-03-03,Radnicki NIS,FK Partizan,1,0,H
+2018-03-03,Napredak,Vojvodina,1,0,H
+2018-03-03,Cukaricki,Backa,5,0,H
+2018-03-03,Radnik Surdulica,Macva,2,1,H
+2018-03-03,RAD,Borac Cacak,5,0,H
+2018-03-03,FK Crvena Zvezda,FK Vozdovac,2,1,H
+2018-03-03,Mladost Lucani,FK Spartak Zdrepceva KRV,2,0,H
+2018-03-07,FK Spartak Zdrepceva KRV,Zemun,1,2,A
+2018-03-07,Macva,Napredak,1,0,H
+2018-03-07,Borac Cacak,Cukaricki,2,2,D
+2018-03-07,Javor,Radnicki NIS,1,3,A
+2018-03-07,FK Vozdovac,Mladost Lucani,0,0,D
+2018-03-07,Backa,Radnik Surdulica,4,2,H
+2018-03-07,FK Partizan,RAD,3,1,H
+2018-03-07,Vojvodina,FK Crvena Zvezda,1,2,A
+2018-03-11,Mladost Lucani,Vojvodina,0,3,A
+2018-03-11,Zemun,FK Vozdovac,3,0,H
+2018-03-11,Backa,Macva,2,1,H
+2018-03-11,Cukaricki,FK Partizan,0,2,A
+2018-03-11,Radnicki NIS,FK Spartak Zdrepceva KRV,0,2,A
+2018-03-11,Radnik Surdulica,Borac Cacak,1,0,H
+2018-03-11,RAD,Javor,2,0,H
+2018-03-11,FK Crvena Zvezda,Napredak,1,1,D
+2018-03-16,FK Vozdovac,Radnicki NIS,2,1,H
+2018-03-18,FK Partizan,Radnik Surdulica,2,0,H
+2018-03-18,Vojvodina,Zemun,0,3,A
+2018-03-18,Borac Cacak,Backa,2,1,H
+2018-03-18,Javor,Cukaricki,3,3,D
+2018-03-18,FK Spartak Zdrepceva KRV,RAD,2,0,H
+2018-03-18,Macva,FK Crvena Zvezda,0,2,A
+2018-03-18,Napredak,Mladost Lucani,0,0,D
+2018-03-30,RAD,FK Vozdovac,0,1,A
+2018-03-31,Radnicki NIS,Vojvodina,1,1,D
+2018-03-31,Zemun,Napredak,1,1,D
+2018-03-31,Borac Cacak,Macva,2,0,H
+2018-03-31,Radnik Surdulica,Javor,1,0,H
+2018-03-31,Backa,FK Partizan,1,2,A
+2018-04-01,Mladost Lucani,FK Crvena Zvezda,2,5,A
+2018-04-01,Cukaricki,FK Spartak Zdrepceva KRV,4,1,H
+2018-04-05,FK Partizan,Borac Cacak,5,0,H
+2018-04-05,FK Crvena Zvezda,Zemun,3,1,H
+2018-04-05,Vojvodina,RAD,2,1,H
+2018-04-05,FK Spartak Zdrepceva KRV,Radnik Surdulica,3,1,H
+2018-04-05,Macva,Mladost Lucani,2,1,H
+2018-04-05,Javor,Backa,2,1,H
+2018-04-05,Napredak,Radnicki NIS,3,1,H
+2018-04-05,FK Vozdovac,Cukaricki,0,0,D
+2018-04-13,Zemun,Backa,3,0,H
+2018-04-14,Cukaricki,Radnicki NIS,2,3,A
+2018-04-14,Mladost Lucani,RAD,1,1,D
+2018-04-14,Macva,Borac Cacak,2,0,H
+2018-04-14,Radnik Surdulica,Javor,0,0,D
+2018-04-14,FK Crvena Zvezda,FK Partizan,2,1,H
+2018-04-15,Napredak,Vojvodina,1,0,H
+2018-04-15,FK Spartak Zdrepceva KRV,FK Vozdovac,1,0,H
+2018-04-20,FK Vozdovac,Napredak,1,0,H
+2018-04-21,Javor,Zemun,1,0,H
+2018-04-21,RAD,Radnik Surdulica,2,1,H
+2018-04-21,Radnicki NIS,FK Crvena Zvezda,1,3,A
+2018-04-22,Borac Cacak,Mladost Lucani,0,2,A
+2018-04-22,Backa,Macva,1,1,D
+2018-04-22,Vojvodina,FK Spartak Zdrepceva KRV,0,2,A
+2018-04-22,FK Partizan,Cukaricki,2,1,H
+2018-04-25,Zemun,Borac Cacak,2,1,H
+2018-04-25,FK Crvena Zvezda,Cukaricki,3,0,H
+2018-04-25,Mladost Lucani,Javor,3,1,H
+2018-04-25,FK Spartak Zdrepceva KRV,Napredak,2,1,H
+2018-04-25,Macva,RAD,0,0,D
+2018-04-25,Radnik Surdulica,Backa,2,0,H
+2018-04-25,FK Vozdovac,Vojvodina,2,1,H
+2018-04-26,FK Partizan,Radnicki NIS,3,1,H
+2018-04-29,Zemun,Mladost Lucani,0,0,D
+2018-04-29,Napredak,FK Crvena Zvezda,0,2,A
+2018-04-29,Vojvodina,FK Partizan,2,1,H
+2018-04-29,Radnicki NIS,FK Vozdovac,3,0,H
+2018-04-29,Macva,Radnik Surdulica,2,1,H
+2018-04-29,Javor,Borac Cacak,3,0,H
+2018-04-29,Cukaricki,FK Spartak Zdrepceva KRV,3,0,H
+2018-04-29,RAD,Backa,2,0,H
+2018-05-04,Mladost Lucani,Macva,0,0,D
+2018-05-05,Borac Cacak,RAD,1,2,A
+2018-05-05,Radnik Surdulica,Zemun,2,1,H
+2018-05-05,Backa,Javor,4,0,H
+2018-05-05,FK Partizan,Napredak,2,2,D
+2018-05-05,Radnicki NIS,Vojvodina,5,0,H
+2018-05-05,Cukaricki,FK Vozdovac,2,1,H
+2018-05-05,FK Crvena Zvezda,FK Spartak Zdrepceva KRV,4,0,H
+2018-05-13,Vojvodina,FK Crvena Zvezda,1,2,A
+2018-05-13,Napredak,Cukaricki,3,2,H
+2018-05-13,Mladost Lucani,Backa,1,3,A
+2018-05-13,FK Spartak Zdrepceva KRV,Radnicki NIS,2,0,H
+2018-05-13,Macva,Javor,1,2,A
+2018-05-13,Borac Cacak,Radnik Surdulica,2,0,H
+2018-05-13,FK Vozdovac,FK Partizan,2,1,H
+2018-05-13,RAD,Zemun,3,2,H
+2018-05-17,Zemun,Macva,1,1,D
+2018-05-17,Javor,RAD,1,1,D
+2018-05-17,Radnik Surdulica,Mladost Lucani,3,1,H
+2018-05-17,Backa,Borac Cacak,3,2,H
+2018-05-17,FK Partizan,FK Spartak Zdrepceva KRV,2,0,H
+2018-05-17,Radnicki NIS,Napredak,4,1,H
+2018-05-17,Cukaricki,Vojvodina,1,6,A
+2018-05-19,FK Crvena Zvezda,FK Vozdovac,5,1,H

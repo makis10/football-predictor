@@ -1,0 +1,296 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2024-07-19,Cherno More Varna,CSKA 1948,0,0,D
+2024-07-19,Levski Krumovgrad,Slavia Sofia,1,0,H
+2024-07-20,Lokomotiv Plovdiv,Arda Kardzhali,1,0,H
+2024-07-20,Lokomotiv Sofia,Levski Sofia,1,6,A
+2024-07-21,Botev Vratsa,Botev Plovdiv,1,3,A
+2024-07-21,Ludogorets,CSKA Sofia,1,0,H
+2024-07-22,Hebar 1918,Spartak Varna,0,2,A
+2024-07-22,Septemvri Sofia,Beroe,0,1,A
+2024-07-26,Arda Kardzhali,Levski Krumovgrad,1,0,H
+2024-07-26,Levski Sofia,Botev Vratsa,4,0,H
+2024-07-27,CSKA Sofia,Hebar 1918,3,1,H
+2024-07-28,CSKA 1948,Spartak Varna,2,2,D
+2024-07-28,Botev Plovdiv,Lokomotiv Plovdiv,2,2,D
+2024-07-29,Beroe,Lokomotiv Sofia,0,0,D
+2024-07-29,Cherno More Varna,Septemvri Sofia,2,0,H
+2024-08-02,Hebar 1918,Slavia Sofia,1,1,D
+2024-08-02,Lokomotiv Plovdiv,Levski Sofia,0,2,A
+2024-08-03,Spartak Varna,CSKA Sofia,3,0,H
+2024-08-03,Ludogorets,Arda Kardzhali,5,1,H
+2024-08-04,Lokomotiv Sofia,Cherno More Varna,2,1,H
+2024-08-04,Levski Krumovgrad,Botev Plovdiv,0,1,A
+2024-08-05,Botev Vratsa,Beroe,1,2,A
+2024-08-09,Slavia Sofia,Spartak Varna,3,1,H
+2024-08-09,Arda Kardzhali,Hebar 1918,2,1,H
+2024-08-10,Beroe,Lokomotiv Plovdiv,0,2,A
+2024-08-10,Levski Sofia,Levski Krumovgrad,3,0,H
+2024-08-12,Septemvri Sofia,Lokomotiv Sofia,0,1,A
+2024-08-12,Cherno More Varna,Botev Vratsa,2,1,H
+2024-08-16,Spartak Varna,Arda Kardzhali,1,0,H
+2024-08-16,Levski Krumovgrad,Beroe,0,1,A
+2024-08-17,CSKA Sofia,Slavia Sofia,0,1,A
+2024-08-17,Ludogorets,Levski Sofia,1,0,H
+2024-08-18,Lokomotiv Sofia,CSKA 1948,0,0,D
+2024-08-18,Hebar 1918,Botev Plovdiv,0,1,A
+2024-08-19,Botev Vratsa,Septemvri Sofia,2,0,H
+2024-08-19,Lokomotiv Plovdiv,Cherno More Varna,1,2,A
+2024-08-23,Lokomotiv Sofia,Botev Vratsa,0,1,A
+2024-08-23,Levski Sofia,Hebar 1918,1,0,H
+2024-08-24,Arda Kardzhali,CSKA Sofia,2,1,H
+2024-08-24,Botev Plovdiv,Spartak Varna,0,1,A
+2024-08-25,CSKA 1948,Slavia Sofia,2,0,H
+2024-08-25,Beroe,Ludogorets,0,1,A
+2024-08-26,Septemvri Sofia,Lokomotiv Plovdiv,2,3,A
+2024-08-26,Cherno More Varna,Levski Krumovgrad,3,0,H
+2024-08-30,Slavia Sofia,Arda Kardzhali,1,1,D
+2024-08-30,Botev Vratsa,CSKA 1948,0,3,A
+2024-08-30,CSKA Sofia,Botev Plovdiv,0,1,A
+2024-08-31,Spartak Varna,Levski Sofia,0,0,D
+2024-08-31,Levski Krumovgrad,Septemvri Sofia,2,0,H
+2024-09-01,Lokomotiv Plovdiv,Lokomotiv Sofia,1,1,D
+2024-09-01,Hebar 1918,Beroe,3,1,H
+2024-09-01,Ludogorets,Cherno More Varna,0,0,D
+2024-09-13,Lokomotiv Plovdiv,Hebar 1918,3,3,D
+2024-09-13,Botev Vratsa,Spartak Varna,1,1,D
+2024-09-14,Septemvri Sofia,Slavia Sofia,3,2,H
+2024-09-14,Beroe,Botev Plovdiv,0,1,A
+2024-09-15,Cherno More Varna,Arda Kardzhali,1,1,D
+2024-09-15,CSKA 1948,Levski Sofia,2,4,A
+2024-09-15,Levski Krumovgrad,Ludogorets,0,3,A
+2024-09-16,Lokomotiv Sofia,CSKA Sofia,0,3,A
+2024-09-18,Slavia Sofia,Ludogorets,0,1,A
+2024-09-19,Lokomotiv Plovdiv,CSKA 1948,0,2,A
+2024-09-20,Hebar 1918,Septemvri Sofia,1,2,A
+2024-09-21,CSKA Sofia,Beroe,1,0,H
+2024-09-21,Ludogorets,Lokomotiv Sofia,2,0,H
+2024-09-22,Slavia Sofia,Levski Sofia,0,1,A
+2024-09-22,Spartak Varna,Cherno More Varna,0,2,A
+2024-09-23,Levski Krumovgrad,Botev Vratsa,3,0,H
+2024-09-23,Arda Kardzhali,Botev Plovdiv,1,0,H
+2024-09-25,Septemvri Sofia,CSKA 1948,1,1,D
+2024-09-27,Lokomotiv Sofia,Hebar 1918,0,0,D
+2024-09-27,Beroe,Slavia Sofia,1,0,H
+2024-09-28,Lokomotiv Plovdiv,Levski Krumovgrad,0,2,A
+2024-09-28,Cherno More Varna,CSKA Sofia,0,0,D
+2024-09-29,CSKA 1948,Botev Plovdiv,0,1,A
+2024-09-29,Levski Sofia,Arda Kardzhali,2,1,H
+2024-09-29,Botev Vratsa,Ludogorets,0,2,A
+2024-09-30,Septemvri Sofia,Spartak Varna,0,1,A
+2024-10-04,Levski Krumovgrad,CSKA 1948,1,1,D
+2024-10-04,Arda Kardzhali,Beroe,1,1,D
+2024-10-04,Slavia Sofia,Cherno More Varna,1,0,H
+2024-10-05,CSKA Sofia,Septemvri Sofia,0,1,A
+2024-10-05,Botev Plovdiv,Levski Sofia,1,0,H
+2024-10-06,Hebar 1918,Botev Vratsa,1,1,D
+2024-10-06,Spartak Varna,Lokomotiv Sofia,3,2,H
+2024-10-06,Ludogorets,Lokomotiv Plovdiv,1,0,H
+2024-10-18,Beroe,Spartak Varna,3,0,H
+2024-10-18,Botev Vratsa,Lokomotiv Plovdiv,0,0,D
+2024-10-19,Lokomotiv Sofia,Levski Krumovgrad,0,0,D
+2024-10-19,Levski Sofia,CSKA Sofia,1,0,H
+2024-10-19,Botev Plovdiv,Slavia Sofia,1,0,H
+2024-10-20,Cherno More Varna,Hebar 1918,1,0,H
+2024-10-20,Septemvri Sofia,Ludogorets,0,2,A
+2024-10-21,CSKA 1948,Arda Kardzhali,1,2,A
+2024-10-23,Spartak Varna,Lokomotiv Plovdiv,1,0,H
+2024-10-24,Slavia Sofia,Lokomotiv Sofia,3,2,H
+2024-10-24,CSKA Sofia,Botev Vratsa,2,0,H
+2024-10-25,Arda Kardzhali,Septemvri Sofia,2,1,H
+2024-10-25,Botev Plovdiv,Cherno More Varna,1,0,H
+2024-10-25,Levski Sofia,Beroe,0,2,A
+2024-10-26,Hebar 1918,Levski Krumovgrad,0,0,D
+2024-10-28,Ludogorets,CSKA 1948,3,0,H
+2024-11-01,Botev Vratsa,Slavia Sofia,3,2,H
+2024-11-02,Lokomotiv Sofia,Arda Kardzhali,0,2,A
+2024-11-02,Lokomotiv Plovdiv,CSKA Sofia,2,2,D
+2024-11-02,Levski Krumovgrad,Spartak Varna,0,1,A
+2024-11-03,CSKA 1948,Beroe,1,1,D
+2024-11-03,Ludogorets,Hebar 1918,3,0,H
+2024-11-03,Cherno More Varna,Levski Sofia,2,1,H
+2024-11-04,Septemvri Sofia,Botev Plovdiv,1,0,H
+2024-11-07,CSKA 1948,CSKA Sofia,1,3,A
+2024-11-08,Arda Kardzhali,Botev Vratsa,2,0,H
+2024-11-08,Botev Plovdiv,Lokomotiv Sofia,2,0,H
+2024-11-09,Slavia Sofia,Lokomotiv Plovdiv,2,1,H
+2024-11-09,Beroe,Cherno More Varna,0,1,A
+2024-11-09,Levski Sofia,Septemvri Sofia,2,3,A
+2024-11-10,Hebar 1918,CSKA 1948,1,1,D
+2024-11-10,CSKA Sofia,Levski Krumovgrad,2,2,D
+2024-11-10,Spartak Varna,Ludogorets,1,3,A
+2024-11-22,Spartak Varna,Hebar 1918,4,0,H
+2024-11-23,Arda Kardzhali,Lokomotiv Plovdiv,4,2,H
+2024-11-23,Botev Plovdiv,Botev Vratsa,3,1,H
+2024-11-23,Levski Sofia,Lokomotiv Sofia,2,0,H
+2024-11-24,Beroe,Septemvri Sofia,2,0,H
+2024-11-24,CSKA 1948,Cherno More Varna,0,4,A
+2024-11-24,CSKA Sofia,Ludogorets,2,2,D
+2024-11-25,Slavia Sofia,Levski Krumovgrad,0,1,A
+2024-11-29,Spartak Varna,CSKA 1948,1,1,D
+2024-11-29,Septemvri Sofia,Cherno More Varna,1,2,A
+2024-11-30,Lokomotiv Sofia,Beroe,2,1,H
+2024-11-30,Botev Vratsa,Levski Sofia,0,2,A
+2024-11-30,Hebar 1918,CSKA Sofia,0,1,A
+2024-12-01,Lokomotiv Plovdiv,Botev Plovdiv,0,1,A
+2024-12-01,Levski Krumovgrad,Arda Kardzhali,0,0,D
+2024-12-01,Ludogorets,Slavia Sofia,2,0,H
+2024-12-03,CSKA 1948,Septemvri Sofia,2,0,H
+2024-12-03,Cherno More Varna,Lokomotiv Sofia,4,0,H
+2024-12-03,CSKA Sofia,Spartak Varna,3,1,H
+2024-12-04,Beroe,Botev Vratsa,5,1,H
+2024-12-04,Arda Kardzhali,Ludogorets,0,4,A
+2024-12-04,Levski Sofia,Lokomotiv Plovdiv,2,1,H
+2024-12-05,Slavia Sofia,Hebar 1918,3,2,H
+2024-12-05,Botev Plovdiv,Levski Krumovgrad,1,0,H
+2024-12-07,Lokomotiv Plovdiv,Beroe,1,2,A
+2024-12-07,Botev Vratsa,Cherno More Varna,2,3,A
+2024-12-07,CSKA Sofia,CSKA 1948,2,2,D
+2024-12-08,Lokomotiv Sofia,Septemvri Sofia,1,2,A
+2024-12-08,Levski Krumovgrad,Levski Sofia,0,2,A
+2024-12-08,Ludogorets,Botev Plovdiv,3,0,H
+2024-12-09,Hebar 1918,Arda Kardzhali,0,2,A
+2024-12-09,Spartak Varna,Slavia Sofia,1,3,A
+2024-12-19,Botev Plovdiv,Ludogorets,2,4,A
+2025-02-07,Arda Kardzhali,Spartak Varna,2,2,D
+2025-02-08,Septemvri Sofia,Botev Vratsa,2,2,D
+2025-02-08,Cherno More Varna,Lokomotiv Plovdiv,1,2,A
+2025-02-08,Slavia Sofia,CSKA Sofia,1,0,H
+2025-02-09,CSKA 1948,Lokomotiv Sofia,1,4,A
+2025-02-09,Botev Plovdiv,Hebar 1918,1,1,D
+2025-02-09,Levski Sofia,Ludogorets,2,1,H
+2025-02-10,Beroe,Levski Krumovgrad,0,0,D
+2025-02-14,Botev Vratsa,Lokomotiv Sofia,0,3,A
+2025-02-15,Levski Krumovgrad,Cherno More Varna,1,1,D
+2025-02-15,Spartak Varna,Botev Plovdiv,1,0,H
+2025-02-15,Hebar 1918,Levski Sofia,1,4,A
+2025-02-16,Lokomotiv Plovdiv,Septemvri Sofia,0,1,A
+2025-02-16,Ludogorets,Beroe,2,1,H
+2025-02-16,CSKA Sofia,Arda Kardzhali,2,0,H
+2025-02-17,Slavia Sofia,CSKA 1948,1,1,D
+2025-02-21,CSKA 1948,Botev Vratsa,1,0,H
+2025-02-21,Beroe,Hebar 1918,2,1,H
+2025-02-21,Levski Sofia,Spartak Varna,2,0,H
+2025-02-22,Arda Kardzhali,Slavia Sofia,1,1,D
+2025-02-22,Botev Plovdiv,CSKA Sofia,0,3,A
+2025-02-22,Cherno More Varna,Ludogorets,1,1,D
+2025-02-23,Lokomotiv Sofia,Lokomotiv Plovdiv,0,1,A
+2025-02-24,Septemvri Sofia,Levski Krumovgrad,1,0,H
+2025-03-01,Levski Krumovgrad,Lokomotiv Sofia,0,2,A
+2025-03-01,Lokomotiv Plovdiv,Botev Vratsa,1,0,H
+2025-03-01,Spartak Varna,Beroe,0,3,A
+2025-03-02,CSKA Sofia,Levski Sofia,2,2,D
+2025-03-02,Hebar 1918,Cherno More Varna,0,1,A
+2025-03-03,Arda Kardzhali,CSKA 1948,1,0,H
+2025-03-03,Slavia Sofia,Botev Plovdiv,3,2,H
+2025-03-03,Ludogorets,Septemvri Sofia,0,0,D
+2025-03-07,Botev Vratsa,Levski Krumovgrad,0,0,D
+2025-03-08,CSKA 1948,Lokomotiv Plovdiv,2,1,H
+2025-03-08,Beroe,CSKA Sofia,0,2,A
+2025-03-08,Cherno More Varna,Spartak Varna,1,1,D
+2025-03-09,Botev Plovdiv,Arda Kardzhali,1,1,D
+2025-03-09,Levski Sofia,Slavia Sofia,3,3,D
+2025-03-09,Lokomotiv Sofia,Ludogorets,1,2,A
+2025-03-10,Septemvri Sofia,Hebar 1918,6,1,H
+2025-03-14,Slavia Sofia,Beroe,2,1,H
+2025-03-14,Levski Krumovgrad,Lokomotiv Plovdiv,0,0,D
+2025-03-15,Hebar 1918,Lokomotiv Sofia,2,1,H
+2025-03-15,Ludogorets,Botev Vratsa,3,0,H
+2025-03-15,CSKA Sofia,Cherno More Varna,1,1,D
+2025-03-16,Spartak Varna,Septemvri Sofia,4,2,H
+2025-03-16,Botev Plovdiv,CSKA 1948,0,5,A
+2025-03-16,Arda Kardzhali,Levski Sofia,1,1,D
+2025-03-28,Lokomotiv Sofia,Spartak Varna,2,1,H
+2025-03-28,Botev Vratsa,Hebar 1918,1,0,H
+2025-03-29,CSKA 1948,Levski Krumovgrad,4,1,H
+2025-03-29,Cherno More Varna,Slavia Sofia,1,1,D
+2025-03-29,Septemvri Sofia,CSKA Sofia,0,1,A
+2025-03-30,Beroe,Arda Kardzhali,1,4,A
+2025-03-30,Lokomotiv Plovdiv,Ludogorets,1,0,H
+2025-03-30,Levski Sofia,Botev Plovdiv,1,1,D
+2025-04-01,Spartak Varna,Botev Vratsa,1,0,H
+2025-04-01,Slavia Sofia,Septemvri Sofia,2,3,A
+2025-04-02,Arda Kardzhali,Cherno More Varna,4,0,H
+2025-04-02,Botev Plovdiv,Beroe,0,0,D
+2025-04-02,CSKA Sofia,Lokomotiv Sofia,1,0,H
+2025-04-03,Hebar 1918,Lokomotiv Plovdiv,0,0,D
+2025-04-03,Ludogorets,Levski Krumovgrad,3,0,H
+2025-04-03,Levski Sofia,CSKA 1948,2,0,H
+2025-04-05,Cherno More Varna,Botev Plovdiv,1,1,D
+2025-04-05,Botev Vratsa,CSKA Sofia,1,1,D
+2025-04-06,Levski Krumovgrad,Hebar 1918,1,0,H
+2025-04-06,Lokomotiv Sofia,Slavia Sofia,3,2,H
+2025-04-06,Beroe,Levski Sofia,0,1,A
+2025-04-07,Septemvri Sofia,Arda Kardzhali,0,4,A
+2025-04-07,Lokomotiv Plovdiv,Spartak Varna,1,2,A
+2025-04-07,CSKA 1948,Ludogorets,1,3,A
+2025-04-11,Spartak Varna,Levski Krumovgrad,1,0,H
+2025-04-11,Beroe,CSKA 1948,2,0,H
+2025-04-12,Botev Plovdiv,Septemvri Sofia,3,0,H
+2025-04-12,CSKA Sofia,Lokomotiv Plovdiv,2,0,H
+2025-04-13,Arda Kardzhali,Lokomotiv Sofia,5,0,H
+2025-04-13,Levski Sofia,Cherno More Varna,1,2,A
+2025-04-14,Slavia Sofia,Botev Vratsa,4,2,H
+2025-04-14,Hebar 1918,Ludogorets,0,2,A
+2025-04-18,Lokomotiv Sofia,Botev Plovdiv,1,1,D
+2025-04-18,Cherno More Varna,Beroe,1,1,D
+2025-04-18,Levski Krumovgrad,CSKA Sofia,1,0,H
+2025-04-19,Botev Vratsa,Arda Kardzhali,3,1,H
+2025-04-19,Lokomotiv Plovdiv,Slavia Sofia,0,1,A
+2025-04-19,Ludogorets,Spartak Varna,2,1,H
+2025-04-21,Septemvri Sofia,Levski Sofia,0,1,A
+2025-04-21,CSKA 1948,Hebar 1918,1,3,A
+2025-04-25,Slavia Sofia,Hebar 1918,3,2,H
+2025-04-25,Lokomotiv Sofia,Levski Krumovgrad,3,0,H
+2025-04-26,Spartak Varna,CSKA Sofia,0,1,A
+2025-04-26,Levski Sofia,Arda Kardzhali,1,1,D
+2025-04-27,Botev Plovdiv,Beroe,1,1,D
+2025-04-27,Ludogorets,Cherno More Varna,2,0,H
+2025-04-28,Septemvri Sofia,Lokomotiv Plovdiv,2,0,H
+2025-04-28,CSKA 1948,Botev Vratsa,0,1,A
+2025-05-01,Hebar 1918,Levski Krumovgrad,1,3,A
+2025-05-02,Botev Vratsa,Septemvri Sofia,3,2,H
+2025-05-02,Slavia Sofia,CSKA 1948,0,1,A
+2025-05-02,Lokomotiv Plovdiv,Lokomotiv Sofia,1,1,D
+2025-05-03,Beroe,CSKA Sofia,0,3,A
+2025-05-03,Ludogorets,Levski Sofia,1,1,D
+2025-05-04,Cherno More Varna,Arda Kardzhali,1,1,D
+2025-05-04,Botev Plovdiv,Spartak Varna,3,2,H
+2025-05-06,Levski Krumovgrad,Lokomotiv Plovdiv,0,4,A
+2025-05-06,Septemvri Sofia,Slavia Sofia,3,1,H
+2025-05-07,CSKA 1948,Hebar 1918,0,0,D
+2025-05-07,Lokomotiv Sofia,Botev Vratsa,3,0,H
+2025-05-09,Arda Kardzhali,Ludogorets,1,1,D
+2025-05-09,CSKA Sofia,Botev Plovdiv,3,0,H
+2025-05-10,Slavia Sofia,Lokomotiv Sofia,0,0,D
+2025-05-10,Spartak Varna,Beroe,1,2,A
+2025-05-10,Levski Sofia,Cherno More Varna,2,0,H
+2025-05-11,Hebar 1918,Lokomotiv Plovdiv,1,2,A
+2025-05-11,Botev Vratsa,Levski Krumovgrad,1,0,H
+2025-05-11,CSKA 1948,Septemvri Sofia,2,0,H
+2025-05-13,Cherno More Varna,Ludogorets,2,0,H
+2025-05-13,CSKA Sofia,Spartak Varna,5,0,H
+2025-05-14,Lokomotiv Sofia,CSKA 1948,2,1,H
+2025-05-14,Beroe,Botev Plovdiv,0,6,A
+2025-05-14,Arda Kardzhali,Levski Sofia,0,3,A
+2025-05-15,Levski Krumovgrad,Slavia Sofia,0,1,A
+2025-05-15,Lokomotiv Plovdiv,Botev Vratsa,1,3,A
+2025-05-15,Septemvri Sofia,Hebar 1918,1,0,H
+2025-05-17,CSKA Sofia,Beroe,2,1,H
+2025-05-17,Levski Sofia,Ludogorets,2,2,D
+2025-05-18,Spartak Varna,Botev Plovdiv,2,1,H
+2025-05-18,Arda Kardzhali,Cherno More Varna,0,0,D
+2025-05-19,CSKA 1948,Levski Krumovgrad,2,0,H
+2025-05-19,Slavia Sofia,Lokomotiv Plovdiv,1,2,A
+2025-05-20,Hebar 1918,Botev Vratsa,1,0,H
+2025-05-20,Septemvri Sofia,Lokomotiv Sofia,0,2,A
+2025-05-25,Lokomotiv Plovdiv,CSKA 1948,0,1,A
+2025-05-25,Botev Vratsa,Slavia Sofia,2,1,H
+2025-05-25,Lokomotiv Sofia,Hebar 1918,3,0,H
+2025-05-25,Levski Krumovgrad,Septemvri Sofia,1,2,A
+2025-05-26,Ludogorets,Arda Kardzhali,2,2,D
+2025-05-26,Cherno More Varna,Levski Sofia,0,0,D
+2025-05-26,Botev Plovdiv,CSKA Sofia,0,4,A
+2025-05-26,Beroe,Spartak Varna,3,1,H
+2025-05-29,Botev Vratsa,Pirin Blagoevgrad,1,0,H
+2025-05-30,Lokomotiv Plovdiv,Marek,3,0,H
+2025-05-31,Arda Kardzhali,CSKA Sofia,1,1,D

@@ -1,0 +1,181 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2018-08-11,Shkendija,Vardar Skopje,2,2,D
+2018-08-11,FK Rabotnicki,Renova,3,4,A
+2018-08-12,Akademija Pandev,Makedonija GjP,2,1,H
+2018-08-12,Pobeda,Belasica,1,0,H
+2018-08-12,Sileks,Shkupi 1927,1,1,D
+2018-08-18,FK Rabotnicki,Sileks,2,1,H
+2018-08-19,Shkupi 1927,Pobeda,0,0,D
+2018-08-19,Makedonija GjP,Shkendija,0,0,D
+2018-08-19,Belasica,Akademija Pandev,0,2,A
+2018-08-19,Renova,Vardar Skopje,0,1,A
+2018-08-26,Vardar Skopje,Makedonija GjP,1,0,H
+2018-08-26,Akademija Pandev,Shkupi 1927,1,0,H
+2018-08-26,Pobeda,FK Rabotnicki,0,2,A
+2018-08-26,Sileks,Renova,1,0,H
+2018-08-27,Shkendija,Belasica,4,1,H
+2018-09-01,Belasica,Vardar Skopje,1,1,D
+2018-09-01,Renova,Makedonija GjP,1,1,D
+2018-09-01,Sileks,Pobeda,0,0,D
+2018-09-01,FK Rabotnicki,Akademija Pandev,1,0,H
+2018-09-02,Shkupi 1927,Shkendija,1,2,A
+2018-09-16,Vardar Skopje,Shkupi 1927,2,1,H
+2018-09-16,Shkendija,FK Rabotnicki,6,2,H
+2018-09-16,Akademija Pandev,Sileks,3,0,H
+2018-09-16,Makedonija GjP,Belasica,0,0,D
+2018-09-16,Pobeda,Renova,1,0,H
+2018-09-22,FK Rabotnicki,Vardar Skopje,0,2,A
+2018-09-23,Shkupi 1927,Makedonija GjP,2,1,H
+2018-09-23,Pobeda,Akademija Pandev,2,4,A
+2018-09-23,Renova,Belasica,0,2,A
+2018-09-23,Sileks,Shkendija,1,2,A
+2018-09-26,Vardar Skopje,Sileks,1,0,H
+2018-09-26,Shkendija,Pobeda,0,2,A
+2018-09-26,Akademija Pandev,Renova,0,2,A
+2018-09-26,Makedonija GjP,FK Rabotnicki,3,0,H
+2018-09-26,Belasica,Shkupi 1927,1,0,H
+2018-09-29,FK Rabotnicki,Belasica,1,1,D
+2018-09-29,Akademija Pandev,Shkendija,0,0,D
+2018-09-29,Pobeda,Vardar Skopje,0,1,A
+2018-09-29,Renova,Shkupi 1927,2,0,H
+2018-09-29,Sileks,Makedonija GjP,1,1,D
+2018-10-06,Vardar Skopje,Akademija Pandev,3,0,H
+2018-10-06,Shkendija,Renova,2,2,D
+2018-10-06,Shkupi 1927,FK Rabotnicki,1,1,D
+2018-10-06,Makedonija GjP,Pobeda,1,0,H
+2018-10-06,Belasica,Sileks,1,1,D
+2018-10-21,Vardar Skopje,Shkendija,0,2,A
+2018-10-21,Shkupi 1927,Sileks,2,0,H
+2018-10-21,Makedonija GjP,Akademija Pandev,1,0,H
+2018-10-21,Belasica,Pobeda,2,1,H
+2018-10-21,Renova,FK Rabotnicki,0,2,A
+2018-10-28,Vardar Skopje,Renova,0,0,D
+2018-10-28,Shkendija,Makedonija GjP,5,1,H
+2018-10-28,Akademija Pandev,Belasica,3,0,H
+2018-10-28,Pobeda,Shkupi 1927,2,0,H
+2018-10-28,Sileks,FK Rabotnicki,2,0,H
+2018-10-31,FK Rabotnicki,Pobeda,3,1,H
+2018-10-31,Shkupi 1927,Akademija Pandev,1,0,H
+2018-10-31,Makedonija GjP,Vardar Skopje,1,3,A
+2018-10-31,Belasica,Shkendija,0,2,A
+2018-10-31,Renova,Sileks,1,1,D
+2018-11-04,Vardar Skopje,Belasica,1,1,D
+2018-11-04,Shkendija,Shkupi 1927,3,0,H
+2018-11-04,Akademija Pandev,FK Rabotnicki,1,0,H
+2018-11-04,Makedonija GjP,Renova,1,2,A
+2018-11-04,Pobeda,Sileks,2,0,H
+2018-11-10,FK Rabotnicki,Shkendija,1,2,A
+2018-11-10,Shkupi 1927,Vardar Skopje,1,0,H
+2018-11-10,Belasica,Makedonija GjP,1,4,A
+2018-11-10,Renova,Pobeda,2,1,H
+2018-11-10,Sileks,Akademija Pandev,1,0,H
+2018-11-22,Vardar Skopje,FK Rabotnicki,0,1,A
+2018-11-22,Shkendija,Sileks,5,0,H
+2018-11-22,Akademija Pandev,Pobeda,2,1,H
+2018-11-22,Makedonija GjP,Shkupi 1927,2,2,D
+2018-11-22,Belasica,Renova,3,1,H
+2018-11-25,FK Rabotnicki,Makedonija GjP,5,1,H
+2018-11-25,Shkupi 1927,Belasica,1,0,H
+2018-11-25,Pobeda,Shkendija,0,2,A
+2018-11-25,Renova,Akademija Pandev,1,1,D
+2018-11-25,Sileks,Vardar Skopje,0,1,A
+2018-11-28,Vardar Skopje,Pobeda,3,0,H
+2018-11-28,Shkendija,Akademija Pandev,0,1,A
+2018-11-28,Shkupi 1927,Renova,1,1,D
+2018-11-28,Makedonija GjP,Sileks,1,1,D
+2018-11-28,Belasica,FK Rabotnicki,1,2,A
+2018-12-02,FK Rabotnicki,Shkupi 1927,0,2,A
+2018-12-02,Akademija Pandev,Vardar Skopje,0,0,D
+2018-12-02,Pobeda,Makedonija GjP,0,2,A
+2018-12-02,Renova,Shkendija,0,3,A
+2018-12-02,Sileks,Belasica,1,0,H
+2019-02-17,Shkendija,Vardar Skopje,1,0,H
+2019-02-17,FK Rabotnicki,Renova,1,1,D
+2019-02-17,Akademija Pandev,Makedonija GjP,3,0,H
+2019-02-17,Pobeda,Belasica,1,1,D
+2019-02-17,Sileks,Shkupi 1927,2,2,D
+2019-02-24,FK Rabotnicki,Sileks,1,1,D
+2019-02-24,Shkupi 1927,Pobeda,3,0,H
+2019-02-24,Makedonija GjP,Shkendija,1,1,D
+2019-02-24,Belasica,Akademija Pandev,0,1,A
+2019-02-24,Renova,Vardar Skopje,4,0,H
+2019-03-03,Vardar Skopje,Makedonija GjP,3,1,H
+2019-03-03,Shkendija,Belasica,3,0,H
+2019-03-03,Akademija Pandev,Shkupi 1927,0,2,A
+2019-03-03,Pobeda,FK Rabotnicki,0,1,A
+2019-03-03,Sileks,Renova,0,0,D
+2019-03-10,FK Rabotnicki,Akademija Pandev,1,2,A
+2019-03-10,Shkupi 1927,Shkendija,1,0,H
+2019-03-10,Belasica,Vardar Skopje,0,0,D
+2019-03-10,Renova,Makedonija GjP,0,0,D
+2019-03-10,Sileks,Pobeda,1,0,H
+2019-03-16,Vardar Skopje,Shkupi 1927,1,0,H
+2019-03-16,Shkendija,FK Rabotnicki,1,0,H
+2019-03-16,Akademija Pandev,Sileks,2,0,H
+2019-03-16,Makedonija GjP,Belasica,2,1,H
+2019-03-16,Pobeda,Renova,2,3,A
+2019-03-28,FK Rabotnicki,Vardar Skopje,0,2,A
+2019-03-28,Shkupi 1927,Makedonija GjP,0,1,A
+2019-03-28,Renova,Belasica,3,2,H
+2019-03-28,Sileks,Shkendija,0,3,A
+2019-03-31,Vardar Skopje,Sileks,1,0,H
+2019-03-31,Shkendija,Pobeda,5,2,H
+2019-03-31,Akademija Pandev,Renova,2,1,H
+2019-03-31,Makedonija GjP,FK Rabotnicki,1,1,D
+2019-03-31,Belasica,Shkupi 1927,2,0,H
+2019-04-03,FK Rabotnicki,Belasica,1,1,D
+2019-04-03,Akademija Pandev,Shkendija,0,1,A
+2019-04-03,Pobeda,Vardar Skopje,0,0,D
+2019-04-03,Renova,Shkupi 1927,1,0,H
+2019-04-03,Sileks,Makedonija GjP,1,1,D
+2019-04-07,Vardar Skopje,Akademija Pandev,1,1,D
+2019-04-07,Shkendija,Renova,2,1,H
+2019-04-07,Shkupi 1927,FK Rabotnicki,1,2,A
+2019-04-07,Makedonija GjP,Pobeda,3,0,H
+2019-04-07,Belasica,Sileks,0,1,A
+2019-04-14,Vardar Skopje,Shkendija,0,0,D
+2019-04-14,Shkupi 1927,Sileks,2,1,H
+2019-04-14,Makedonija GjP,Akademija Pandev,1,1,D
+2019-04-14,Belasica,Pobeda,1,1,D
+2019-04-14,Renova,FK Rabotnicki,1,2,A
+2019-04-20,Vardar Skopje,Renova,2,0,H
+2019-04-20,Shkendija,Makedonija GjP,4,2,H
+2019-04-20,Akademija Pandev,Belasica,0,2,A
+2019-04-20,Pobeda,Shkupi 1927,0,3,A
+2019-04-20,Sileks,FK Rabotnicki,1,0,H
+2019-04-24,FK Rabotnicki,Pobeda,1,2,A
+2019-04-24,Shkupi 1927,Akademija Pandev,1,0,H
+2019-04-24,Makedonija GjP,Vardar Skopje,0,2,A
+2019-04-24,Belasica,Shkendija,2,1,H
+2019-04-24,Renova,Sileks,1,0,H
+2019-04-27,Vardar Skopje,Belasica,1,1,D
+2019-04-27,Shkendija,Shkupi 1927,5,1,H
+2019-04-27,Akademija Pandev,FK Rabotnicki,3,1,H
+2019-04-27,Makedonija GjP,Renova,3,1,H
+2019-04-27,Pobeda,Sileks,0,1,A
+2019-04-30,Pobeda,Akademija Pandev,1,3,A
+2019-05-04,FK Rabotnicki,Shkendija,0,1,A
+2019-05-04,Shkupi 1927,Vardar Skopje,2,2,D
+2019-05-04,Belasica,Makedonija GjP,3,1,H
+2019-05-04,Renova,Pobeda,9,1,H
+2019-05-04,Sileks,Akademija Pandev,3,0,H
+2019-05-08,Vardar Skopje,FK Rabotnicki,1,1,D
+2019-05-08,Shkendija,Sileks,0,0,D
+2019-05-08,Akademija Pandev,Pobeda,4,0,H
+2019-05-08,Makedonija GjP,Shkupi 1927,1,0,H
+2019-05-08,Belasica,Renova,3,2,H
+2019-05-12,FK Rabotnicki,Makedonija GjP,2,0,H
+2019-05-12,Shkupi 1927,Belasica,2,2,D
+2019-05-12,Pobeda,Shkendija,1,4,A
+2019-05-12,Renova,Akademija Pandev,1,1,D
+2019-05-12,Sileks,Vardar Skopje,1,0,H
+2019-05-19,Vardar Skopje,Pobeda,6,0,H
+2019-05-19,Shkendija,Akademija Pandev,4,1,H
+2019-05-19,Shkupi 1927,Renova,2,2,D
+2019-05-19,Makedonija GjP,Sileks,2,0,H
+2019-05-19,Belasica,FK Rabotnicki,0,1,A
+2019-05-26,FK Rabotnicki,Shkupi 1927,1,2,A
+2019-05-26,Akademija Pandev,Vardar Skopje,1,1,D
+2019-05-26,Pobeda,Makedonija GjP,1,3,A
+2019-05-26,Renova,Shkendija,3,2,H
+2019-05-26,Sileks,Belasica,2,1,H

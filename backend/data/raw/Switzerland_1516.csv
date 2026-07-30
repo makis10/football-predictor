@@ -1,0 +1,181 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,PSH,PSD,PSA
+18/07/2015,Luzern,Sion,2,2,D,2.31,3.44,3.31
+18/07/2015,Zurich,Young Boys,1,1,D,2.86,3.48,2.58
+19/07/2015,Basel,Vaduz,2,0,H,1.42,4.93,8.38
+19/07/2015,Thun,Grasshoppers,3,5,A,2.71,3.44,2.74
+19/07/2015,St. Gallen,Lugano,2,0,H,2.07,3.82,3.56
+25/07/2015,Young Boys,Luzern,1,1,D,2.15,3.62,3.52
+25/07/2015,Grasshoppers,Basel,2,3,A,3.27,3.62,2.26
+26/07/2015,Lugano,Thun,2,3,A,2.63,3.66,2.69
+26/07/2015,Sion,St. Gallen,1,0,H,1.74,3.96,5.05
+26/07/2015,Vaduz,Zurich,2,2,D,3.84,3.56,2.07
+01/08/2015,Basel,Sion,3,0,H,2.16,3.45,3.72
+01/08/2015,St. Gallen,Young Boys,1,1,D,2.54,3.58,2.85
+02/08/2015,Lugano,Vaduz,1,0,H,2.2,3.75,3.29
+02/08/2015,Thun,Luzern,0,1,A,2.82,3.55,2.57
+02/08/2015,Zurich,Grasshoppers,2,3,A,2.93,3.51,2.47
+08/08/2015,Grasshoppers,Lugano,6,1,H,1.76,4.13,4.67
+08/08/2015,Luzern,Basel,1,3,A,3.03,3.66,2.37
+09/08/2015,St. Gallen,Zurich,0,2,A,2.3,3.59,3.22
+09/08/2015,Vaduz,Sion,1,1,D,4.55,3.5,1.93
+09/08/2015,Young Boys,Thun,3,1,H,1.91,3.78,4.24
+12/08/2015,Basel,Thun,3,1,H,1.38,5.27,9.07
+12/08/2015,Young Boys,Lugano,0,1,A,1.6,4.6,5.44
+12/08/2015,Luzern,St. Gallen,0,1,A,1.78,4.06,4.64
+13/08/2015,Sion,Zurich,3,1,H,2,3.7,3.92
+13/08/2015,Vaduz,Grasshoppers,3,3,D,3.68,3.64,2.09
+22/08/2015,Lugano,Basel,1,3,A,3.96,4.03,1.91
+22/08/2015,Zurich,Luzern,2,5,A,2.47,3.6,2.92
+23/08/2015,St. Gallen,Grasshoppers,0,2,A,2.97,3.8,2.35
+23/08/2015,Thun,Vaduz,1,0,H,1.81,3.86,4.7
+23/08/2015,Sion,Young Boys,1,3,A,1.83,3.92,4.49
+29/08/2015,Lugano,Luzern,0,1,A,3.48,3.86,2.09
+29/08/2015,Vaduz,St. Gallen,1,0,H,3.01,3.5,2.45
+30/08/2015,Thun,Sion,0,2,A,3.25,3.27,2.43
+30/08/2015,Basel,Zurich,3,1,H,1.66,4.04,5.68
+30/08/2015,Grasshoppers,Young Boys,3,2,H,1.98,3.78,3.91
+12/09/2015,Basel,St. Gallen,2,1,H,1.35,5.84,8.71
+12/09/2015,Young Boys,Vaduz,4,0,H,1.56,4.62,6.06
+13/09/2015,Luzern,Grasshoppers,3,3,D,2.13,3.89,3.36
+13/09/2015,Zurich,Thun,3,3,D,1.87,3.79,4.43
+13/09/2015,Sion,Lugano,3,0,H,1.51,4.6,6.82
+22/09/2015,Lugano,Zurich,0,0,D,3.02,3.7,2.36
+22/09/2015,St. Gallen,Thun,1,0,H,2.21,3.66,3.35
+23/09/2015,Grasshoppers,Sion,2,0,H,2.73,3.74,2.55
+23/09/2015,Vaduz,Luzern,1,2,A,4.49,3.98,1.81
+23/09/2015,Young Boys,Basel,4,3,H,3.01,3.71,2.36
+26/09/2015,Grasshoppers,St. Gallen,1,1,D,1.73,4.2,4.79
+26/09/2015,Basel,Lugano,3,1,H,1.25,7.14,12.16
+27/09/2015,Sion,Vaduz,0,1,A,1.45,4.78,7.95
+27/09/2015,Thun,Young Boys,0,1,A,3.19,3.56,2.32
+27/09/2015,Luzern,Zurich,1,0,H,2.07,3.8,3.56
+03/10/2015,Vaduz,Thun,1,1,D,2.99,3.41,2.52
+03/10/2015,Luzern,Lugano,2,2,D,1.54,4.92,5.73
+04/10/2015,St. Gallen,Sion,1,1,D,2.74,3.43,2.72
+04/10/2015,Young Boys,Grasshoppers,3,1,H,2.22,3.72,3.26
+04/10/2015,Zurich,Basel,2,2,D,3.65,3.7,2.08
+17/10/2015,Grasshoppers,Luzern,1,0,H,2.24,3.76,3.19
+17/10/2015,Vaduz,Young Boys,1,1,D,4.94,3.97,1.75
+18/10/2015,Sion,Basel,0,2,A,2.97,3.61,2.43
+18/10/2015,Thun,Zurich,5,1,H,2.82,3.47,2.62
+18/10/2015,Lugano,St. Gallen,3,1,H,2.26,3.68,3.22
+24/10/2015,Luzern,Vaduz,1,1,D,1.47,4.71,7.45
+24/10/2015,Zurich,St. Gallen,2,2,D,1.88,3.81,4.33
+25/10/2015,Sion,Grasshoppers,3,2,H,2.15,3.63,3.51
+25/10/2015,Thun,Lugano,2,1,H,1.88,3.84,4.26
+25/10/2015,Basel,Young Boys,1,0,H,1.75,4.08,4.79
+31/10/2015,Grasshoppers,Thun,1,2,A,2.03,3.79,3.73
+31/10/2015,Vaduz,Basel,1,2,A,6.88,4.48,1.52
+01/11/2015,Lugano,Sion,3,0,H,3.18,3.6,2.31
+01/11/2015,Young Boys,Zurich,1,1,D,2.09,3.8,3.52
+01/11/2015,St. Gallen,Luzern,1,0,H,3.26,3.66,2.24
+07/11/2015,Zurich,Vaduz,1,1,D,1.69,4.14,5.22
+07/11/2015,Lugano,Young Boys,1,1,D,3.11,3.76,2.29
+08/11/2015,Sion,Luzern,2,0,H,2.69,3.52,2.71
+08/11/2015,Thun,St. Gallen,0,2,A,1.96,3.84,3.93
+08/11/2015,Basel,Grasshoppers,2,3,A,1.72,4.14,4.9
+21/11/2015,Grasshoppers,Vaduz,2,0,H,2.12,3.68,3.56
+21/11/2015,Luzern,Thun,1,0,H,1.76,3.91,4.95
+22/11/2015,St. Gallen,Basel,2,1,H,4.75,4.05,1.76
+22/11/2015,Zurich,Lugano,5,3,H,1.8,4,4.55
+22/11/2015,Young Boys,Sion,1,1,D,1.89,3.84,4.22
+28/11/2015,Vaduz,Lugano,1,1,D,2.4,3.61,3.02
+28/11/2015,Young Boys,St. Gallen,2,1,H,1.56,4.5,6.17
+29/11/2015,Basel,Luzern,3,0,H,1.78,4.15,4.53
+29/11/2015,Sion,Thun,1,2,A,2.43,3.35,3.17
+29/11/2015,Grasshoppers,Zurich,5,0,H,2.5,3.7,2.82
+05/12/2015,Zurich,Sion,1,0,H,2.17,3.52,3.57
+05/12/2015,Luzern,Young Boys,3,1,H,2.42,3.62,2.97
+06/12/2015,Lugano,Grasshoppers,4,1,H,3.19,3.87,2.21
+06/12/2015,St. Gallen,Vaduz,2,2,D,2.04,3.64,3.84
+06/12/2015,Thun,Basel,0,2,A,4.13,3.85,1.91
+06/02/2016,Lugano,Vaduz,2,5,A,2.11,3.66,3.59
+06/02/2016,Young Boys,Grasshoppers,1,1,D,1.69,4.37,4.88
+07/02/2016,St. Gallen,Thun,1,2,A,2.43,3.53,3.03
+07/02/2016,Zurich,Sion,0,1,A,2.44,3.49,3.05
+07/02/2016,Basel,Luzern,3,0,H,1.66,4.17,5.51
+13/02/2016,Thun,Lugano,2,1,H,1.78,4.04,4.62
+13/02/2016,Vaduz,Young Boys,1,1,D,3.39,3.81,2.14
+14/02/2016,Grasshoppers,Basel,0,4,A,3.79,3.83,2
+14/02/2016,Luzern,Zurich,1,2,A,1.78,3.99,4.74
+20/02/2016,Lugano,Zurich,0,0,D,2.87,3.57,2.56
+20/02/2016,Young Boys,Thun,2,1,H,1.65,4.23,5.45
+21/02/2016,Basel,Vaduz,5,1,H,1.5,4.76,6.68
+21/02/2016,Grasshoppers,Sion,3,0,H,2.13,3.7,3.5
+21/02/2016,Luzern,St. Gallen,0,1,A,1.83,3.93,4.44
+27/02/2016,Sion,Luzern,3,1,H,2.46,3.48,3.02
+27/02/2016,Zurich,Young Boys,0,1,A,2.95,3.46,2.52
+28/02/2016,Thun,Basel,1,1,D,4.09,3.69,1.96
+28/02/2016,Vaduz,Grasshoppers,1,1,D,3.68,3.55,2.13
+28/02/2016,St. Gallen,Lugano,3,3,D,1.91,3.86,4.12
+05/03/2016,Zurich,Thun,0,0,D,2.21,3.42,3.57
+06/03/2016,Sion,Vaduz,2,0,H,1.99,3.49,4.23
+06/03/2016,Young Boys,Luzern,5,2,H,1.76,4.05,4.73
+07/03/2016,St. Gallen,Grasshoppers,2,0,H,3,3.49,2.47
+12/03/2016,Vaduz,Thun,0,0,D,2.51,3.44,2.98
+12/03/2016,Luzern,Lugano,2,1,H,1.73,4.2,4.78
+13/03/2016,Basel,St. Gallen,4,2,H,1.42,5.05,8.15
+13/03/2016,Young Boys,Sion,3,2,H,1.82,3.83,4.69
+13/03/2016,Grasshoppers,Zurich,4,2,H,2.7,3.54,2.69
+19/03/2016,Thun,Luzern,1,1,D,2.29,3.55,3.25
+19/03/2016,St. Gallen,Young Boys,2,3,A,3.85,3.6,2.05
+20/03/2016,Grasshoppers,Lugano,0,1,A,1.62,4.48,5.4
+20/03/2016,Vaduz,Zurich,0,3,A,2.98,3.26,2.61
+20/03/2016,Sion,Basel,0,1,A,4.33,3.74,1.9
+02/04/2016,Luzern,Vaduz,5,1,H,1.54,4.69,6.17
+02/04/2016,Zurich,St. Gallen,4,0,H,1.79,3.91,4.75
+03/04/2016,Lugano,Sion,0,6,A,2.86,3.57,2.53
+03/04/2016,Thun,Grasshoppers,2,1,H,2.56,3.46,2.89
+03/04/2016,Basel,Young Boys,2,0,H,1.82,3.96,4.5
+09/04/2016,Young Boys,Lugano,7,0,H,1.34,6.09,8.52
+09/04/2016,Grasshoppers,Luzern,1,1,D,2.31,3.79,3.05
+10/04/2016,Basel,Zurich,2,2,D,1.57,4.46,6.12
+10/04/2016,Sion,Thun,2,1,H,1.75,3.87,5.15
+10/04/2016,Vaduz,St. Gallen,3,0,H,2.79,3.46,2.65
+13/04/2016,Lugano,Basel,1,4,A,4.63,4.17,1.76
+13/04/2016,Sion,St. Gallen,1,1,D,1.45,4.81,7.74
+16/04/2016,Sion,Grasshoppers,2,1,H,1.97,3.76,3.99
+16/04/2016,Zurich,Luzern,0,1,A,2.45,3.66,2.93
+17/04/2016,Lugano,Thun,2,1,H,2.95,3.88,2.34
+17/04/2016,Young Boys,Vaduz,5,4,H,1.29,6.46,10.72
+17/04/2016,St. Gallen,Basel,0,7,A,5.45,4.35,1.63
+19/04/2016,Zurich,Grasshoppers,1,1,D,2.74,3.59,2.62
+20/04/2016,Basel,Lugano,3,0,H,1.2,8.17,14.94
+20/04/2016,St. Gallen,Sion,2,1,H,3.68,3.62,2.09
+20/04/2016,Luzern,Young Boys,2,3,A,2.58,3.66,2.75
+21/04/2016,Thun,Vaduz,2,2,D,2,3.77,3.83
+23/04/2016,Sion,Lugano,3,1,H,1.44,5.14,7.23
+23/04/2016,Grasshoppers,St. Gallen,2,0,H,1.63,4.4,5.45
+24/04/2016,Luzern,Thun,3,0,H,1.67,4.23,5.3
+24/04/2016,Young Boys,Zurich,3,0,H,1.68,4.23,5.12
+24/04/2016,Vaduz,Basel,0,0,D,6.33,4.71,1.53
+30/04/2016,Grasshoppers,Young Boys,1,2,A,3.22,3.77,2.23
+30/04/2016,Basel,Sion,2,1,H,1.65,4.41,5.21
+01/05/2016,St. Gallen,Vaduz,1,3,A,2.41,3.65,2.97
+01/05/2016,Thun,Zurich,4,0,H,2.84,3.52,2.57
+01/05/2016,Lugano,Luzern,1,1,D,4.57,4.3,1.75
+07/05/2016,Thun,St. Gallen,2,2,D,1.81,3.94,4.56
+07/05/2016,Zurich,Basel,2,3,A,3.11,3.61,2.35
+08/05/2016,Lugano,Grasshoppers,0,1,A,3.63,3.97,2.01
+08/05/2016,Vaduz,Luzern,1,2,A,3.29,3.74,2.2
+08/05/2016,Sion,Young Boys,2,1,H,2.79,3.59,2.58
+10/05/2016,Basel,Thun,1,1,D,1.46,5.13,6.92
+11/05/2016,Luzern,Grasshoppers,3,0,H,2.22,3.7,3.29
+11/05/2016,Vaduz,Sion,2,0,H,3.49,3.68,2.14
+11/05/2016,Zurich,Lugano,0,4,A,1.58,4.61,5.73
+12/05/2016,Young Boys,St. Gallen,3,1,H,1.33,6.07,9.37
+16/05/2016,Grasshoppers,Vaduz,1,2,A,1.6,4.57,5.54
+16/05/2016,Lugano,Young Boys,1,3,A,3.77,4.19,1.92
+16/05/2016,Luzern,Basel,4,0,H,2.33,3.99,2.68
+16/05/2016,St. Gallen,Zurich,3,0,H,3.01,3.64,2.39
+16/05/2016,Thun,Sion,1,1,D,3.39,3.77,2.15
+22/05/2016,Grasshoppers,Thun,0,0,D,1.5,4.88,6.5
+22/05/2016,Sion,Zurich,2,2,D,1.72,4.15,4.9
+22/05/2016,St. Gallen,Luzern,1,4,A,4.72,4.29,1.72
+22/05/2016,Vaduz,Lugano,0,0,D,2.05,3.82,3.63
+22/05/2016,Young Boys,Basel,2,3,A,1.91,4.32,3.71
+25/05/2016,Basel,Grasshoppers,0,1,A,2.01,4.15,3.48
+25/05/2016,Lugano,St. Gallen,3,0,H,1.51,5.08,6.05
+25/05/2016,Luzern,Sion,2,2,D,2.02,3.93,3.64
+25/05/2016,Thun,Young Boys,0,3,A,3.19,3.95,2.18
+25/05/2016,Zurich,Vaduz,3,1,H,1.46,5.15,6.95

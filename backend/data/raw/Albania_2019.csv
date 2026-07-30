@@ -1,0 +1,182 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2019-08-23,FK Kukesi,Partizani,1,0,H
+2019-08-24,Vllaznia Shkoder,Laci,1,0,H
+2019-08-24,Skenderbeu Korce,Flamurtari,1,0,H
+2019-08-24,Tirana,Luftetari Gjirokaster,3,0,H
+2019-08-24,Teuta Durres,Bylis,1,0,H
+2019-08-27,Tirana,Teuta Durres,0,0,D
+2019-08-28,Laci,Skenderbeu Korce,1,2,A
+2019-08-28,Luftetari Gjirokaster,Partizani,0,1,A
+2019-08-28,Bylis,Vllaznia Shkoder,0,0,D
+2019-08-28,Flamurtari,FK Kukesi,0,3,A
+2019-08-31,Teuta Durres,Luftetari Gjirokaster,3,1,H
+2019-08-31,Vllaznia Shkoder,Tirana,0,2,A
+2019-09-01,FK Kukesi,Laci,1,1,D
+2019-09-01,Skenderbeu Korce,Bylis,0,3,A
+2019-09-01,Partizani,Flamurtari,1,0,H
+2019-09-14,Tirana,Skenderbeu Korce,3,1,H
+2019-09-14,Luftetari Gjirokaster,Flamurtari,2,1,H
+2019-09-14,Teuta Durres,Vllaznia Shkoder,0,0,D
+2019-09-15,Laci,Partizani,1,0,H
+2019-09-15,Bylis,FK Kukesi,2,1,H
+2019-09-21,Skenderbeu Korce,Teuta Durres,1,0,H
+2019-09-21,Partizani,Bylis,1,1,D
+2019-09-21,FK Kukesi,Tirana,2,1,H
+2019-09-22,Flamurtari,Laci,3,3,D
+2019-09-22,Vllaznia Shkoder,Luftetari Gjirokaster,0,0,D
+2019-09-28,Luftetari Gjirokaster,Laci,1,1,D
+2019-09-28,Teuta Durres,FK Kukesi,1,0,H
+2019-09-28,Bylis,Flamurtari,5,0,H
+2019-09-28,Vllaznia Shkoder,Skenderbeu Korce,4,0,H
+2019-09-29,Tirana,Partizani,1,2,A
+2019-10-05,Skenderbeu Korce,Luftetari Gjirokaster,2,0,H
+2019-10-05,Partizani,Teuta Durres,1,1,D
+2019-10-05,Flamurtari,Tirana,2,2,D
+2019-10-06,Laci,Bylis,0,0,D
+2019-10-06,FK Kukesi,Vllaznia Shkoder,1,2,A
+2019-10-18,Teuta Durres,Flamurtari,1,0,H
+2019-10-19,Luftetari Gjirokaster,Bylis,1,1,D
+2019-10-19,Skenderbeu Korce,FK Kukesi,0,0,D
+2019-10-19,Tirana,Laci,2,1,H
+2019-10-19,Vllaznia Shkoder,Partizani,1,3,A
+2019-10-23,FK Kukesi,Luftetari Gjirokaster,4,1,H
+2019-10-23,Laci,Teuta Durres,3,0,H
+2019-10-23,Bylis,Tirana,3,1,H
+2019-10-23,Flamurtari,Vllaznia Shkoder,1,3,A
+2019-10-24,Partizani,Skenderbeu Korce,3,1,H
+2019-10-27,Laci,Vllaznia Shkoder,3,0,H
+2019-10-27,Luftetari Gjirokaster,Tirana,0,3,A
+2019-10-27,Bylis,Teuta Durres,0,0,D
+2019-10-28,Partizani,FK Kukesi,0,0,D
+2019-10-28,Flamurtari,Skenderbeu Korce,1,1,D
+2019-11-02,Skenderbeu Korce,Laci,1,4,A
+2019-11-02,Teuta Durres,Tirana,1,1,D
+2019-11-03,FK Kukesi,Flamurtari,1,0,H
+2019-11-03,Partizani,Luftetari Gjirokaster,2,0,H
+2019-11-04,Vllaznia Shkoder,Bylis,0,1,A
+2019-11-08,Tirana,Vllaznia Shkoder,0,0,D
+2019-11-09,Luftetari Gjirokaster,Teuta Durres,0,0,D
+2019-11-09,Bylis,Skenderbeu Korce,2,3,A
+2019-11-10,Laci,FK Kukesi,1,0,H
+2019-11-10,Flamurtari,Partizani,1,1,D
+2019-11-23,FK Kukesi,Bylis,2,1,H
+2019-11-23,Flamurtari,Luftetari Gjirokaster,1,1,D
+2019-11-23,Skenderbeu Korce,Tirana,2,1,H
+2019-11-24,Vllaznia Shkoder,Teuta Durres,0,0,D
+2019-11-25,Partizani,Laci,1,0,H
+2019-12-07,Luftetari Gjirokaster,Vllaznia Shkoder,0,2,A
+2019-12-07,Bylis,Partizani,2,1,H
+2019-12-07,Tirana,FK Kukesi,1,3,A
+2019-12-08,Laci,Flamurtari,3,0,H
+2019-12-08,Teuta Durres,Skenderbeu Korce,1,0,H
+2019-12-13,Partizani,Tirana,1,2,A
+2019-12-14,Laci,Luftetari Gjirokaster,4,0,H
+2019-12-14,Flamurtari,Bylis,2,2,D
+2019-12-14,FK Kukesi,Teuta Durres,4,0,H
+2019-12-14,Skenderbeu Korce,Vllaznia Shkoder,0,1,A
+2019-12-18,Luftetari Gjirokaster,Skenderbeu Korce,2,0,H
+2019-12-18,Teuta Durres,Partizani,1,0,H
+2019-12-18,Bylis,Laci,1,0,H
+2019-12-18,Vllaznia Shkoder,FK Kukesi,1,2,A
+2019-12-18,Tirana,Flamurtari,2,0,H
+2019-12-22,Laci,Tirana,1,2,A
+2019-12-22,Bylis,Luftetari Gjirokaster,1,0,H
+2019-12-22,FK Kukesi,Skenderbeu Korce,1,1,D
+2019-12-22,Partizani,Vllaznia Shkoder,1,0,H
+2019-12-23,Flamurtari,Teuta Durres,1,3,A
+2020-01-21,Vllaznia Shkoder,Flamurtari,2,0,H
+2020-01-21,Skenderbeu Korce,Partizani,3,2,H
+2020-01-21,Teuta Durres,Laci,0,1,A
+2020-01-22,Luftetari Gjirokaster,FK Kukesi,0,0,D
+2020-01-22,Tirana,Bylis,2,1,H
+2020-01-25,Skenderbeu Korce,Flamurtari,1,0,H
+2020-01-25,Vllaznia Shkoder,Laci,0,0,D
+2020-01-26,Tirana,Luftetari Gjirokaster,5,1,H
+2020-01-26,Teuta Durres,Bylis,1,0,H
+2020-01-26,FK Kukesi,Partizani,1,0,H
+2020-02-02,Luftetari Gjirokaster,Partizani,0,3,A
+2020-02-02,Tirana,Teuta Durres,2,1,H
+2020-02-02,Flamurtari,FK Kukesi,1,4,A
+2020-02-03,Laci,Skenderbeu Korce,1,0,H
+2020-02-03,Bylis,Vllaznia Shkoder,2,2,D
+2020-02-07,Vllaznia Shkoder,Tirana,0,1,A
+2020-02-08,FK Kukesi,Laci,3,1,H
+2020-02-08,Skenderbeu Korce,Bylis,1,1,D
+2020-02-08,Partizani,Flamurtari,2,0,H
+2020-02-08,Teuta Durres,Luftetari Gjirokaster,1,1,D
+2020-02-15,Tirana,Skenderbeu Korce,1,1,D
+2020-02-16,Laci,Partizani,1,3,A
+2020-02-16,Luftetari Gjirokaster,Flamurtari,0,1,A
+2020-02-16,Bylis,FK Kukesi,1,1,D
+2020-02-16,Teuta Durres,Vllaznia Shkoder,3,1,H
+2020-02-21,FK Kukesi,Tirana,1,2,A
+2020-02-22,Flamurtari,Laci,1,3,A
+2020-02-22,Vllaznia Shkoder,Luftetari Gjirokaster,4,0,H
+2020-02-22,Skenderbeu Korce,Teuta Durres,3,2,H
+2020-02-22,Partizani,Bylis,2,2,D
+2020-02-28,Tirana,Partizani,5,1,H
+2020-02-29,Luftetari Gjirokaster,Laci,0,2,A
+2020-02-29,Bylis,Flamurtari,0,0,D
+2020-02-29,Vllaznia Shkoder,Skenderbeu Korce,0,1,A
+2020-02-29,Teuta Durres,FK Kukesi,2,2,D
+2020-03-04,Laci,Bylis,2,1,H
+2020-03-04,FK Kukesi,Vllaznia Shkoder,0,0,D
+2020-03-04,Skenderbeu Korce,Luftetari Gjirokaster,2,0,H
+2020-03-04,Partizani,Teuta Durres,0,1,A
+2020-03-04,Flamurtari,Tirana,0,2,A
+2020-03-08,Luftetari Gjirokaster,Bylis,1,1,D
+2020-03-08,Teuta Durres,Flamurtari,1,1,D
+2020-03-08,Tirana,Laci,1,0,H
+2020-03-09,Skenderbeu Korce,FK Kukesi,2,1,H
+2020-03-09,Vllaznia Shkoder,Partizani,1,0,H
+2020-06-03,FK Kukesi,Luftetari Gjirokaster,2,1,H
+2020-06-03,Laci,Teuta Durres,1,1,D
+2020-06-03,Flamurtari,Vllaznia Shkoder,1,3,A
+2020-06-03,Bylis,Tirana,1,3,A
+2020-06-03,Partizani,Skenderbeu Korce,1,2,A
+2020-06-07,Partizani,FK Kukesi,1,3,A
+2020-06-07,Laci,Vllaznia Shkoder,5,2,H
+2020-06-07,Luftetari Gjirokaster,Tirana,0,5,A
+2020-06-07,Flamurtari,Skenderbeu Korce,0,1,A
+2020-06-07,Bylis,Teuta Durres,1,0,H
+2020-06-14,Partizani,Luftetari Gjirokaster,8,1,H
+2020-06-15,FK Kukesi,Flamurtari,4,1,H
+2020-06-15,Vllaznia Shkoder,Bylis,2,2,D
+2020-06-15,Skenderbeu Korce,Laci,1,1,D
+2020-06-15,Teuta Durres,Tirana,1,0,H
+2020-06-19,Tirana,Vllaznia Shkoder,3,0,H
+2020-06-19,Flamurtari,Partizani,1,2,A
+2020-06-20,Laci,FK Kukesi,2,0,H
+2020-06-20,Luftetari Gjirokaster,Teuta Durres,1,5,A
+2020-06-20,Bylis,Skenderbeu Korce,1,0,H
+2020-06-27,Partizani,Laci,1,0,H
+2020-06-27,Flamurtari,Luftetari Gjirokaster,6,1,H
+2020-06-28,FK Kukesi,Bylis,1,0,H
+2020-06-28,Vllaznia Shkoder,Teuta Durres,0,3,A
+2020-06-28,Skenderbeu Korce,Tirana,1,2,A
+2020-07-05,Laci,Flamurtari,2,1,H
+2020-07-05,Luftetari Gjirokaster,Vllaznia Shkoder,0,1,A
+2020-07-06,Tirana,FK Kukesi,1,2,A
+2020-07-06,Bylis,Partizani,1,1,D
+2020-07-06,Teuta Durres,Skenderbeu Korce,1,0,H
+2020-07-10,Flamurtari,Bylis,2,3,A
+2020-07-10,Partizani,Tirana,1,1,D
+2020-07-11,Laci,Luftetari Gjirokaster,3,1,H
+2020-07-11,FK Kukesi,Teuta Durres,3,0,H
+2020-07-11,Skenderbeu Korce,Vllaznia Shkoder,2,1,H
+2020-07-18,Tirana,Flamurtari,2,0,H
+2020-07-18,Luftetari Gjirokaster,Skenderbeu Korce,0,1,A
+2020-07-19,Bylis,Laci,0,3,A
+2020-07-19,Teuta Durres,Partizani,0,0,D
+2020-07-19,Vllaznia Shkoder,FK Kukesi,1,0,H
+2020-07-24,Partizani,Vllaznia Shkoder,3,0,H
+2020-07-24,Laci,Tirana,3,1,H
+2020-07-24,Flamurtari,Teuta Durres,2,3,A
+2020-07-24,Bylis,Luftetari Gjirokaster,2,0,H
+2020-07-24,FK Kukesi,Skenderbeu Korce,0,0,D
+2020-07-29,Luftetari Gjirokaster,FK Kukesi,2,5,A
+2020-07-29,Vllaznia Shkoder,Flamurtari,1,1,D
+2020-07-29,Tirana,Bylis,1,1,D
+2020-07-29,Skenderbeu Korce,Partizani,4,1,H
+2020-07-29,Teuta Durres,Laci,2,3,A
+2020-08-02,Vllaznia Shkoder,Beselidhja Lezhe,3,1,H

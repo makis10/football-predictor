@@ -1,0 +1,191 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2025-08-22,Vllaznia Shkoder,Egnatia Rrogozhine,2,0,H
+2025-08-23,Bylis,Tirana,0,0,D
+2025-08-23,AF Elbasani,Flamurtari,1,0,H
+2025-08-24,Partizani,Vora,1,0,H
+2025-08-30,Flamurtari,Bylis,3,3,D
+2025-08-30,Partizani,Teuta Durres,0,0,D
+2025-08-30,Egnatia Rrogozhine,AF Elbasani,1,1,D
+2025-08-31,Vora,Tirana,3,1,H
+2025-08-31,Dinamo Tirana,Vllaznia Shkoder,3,1,H
+2025-09-13,Tirana,Flamurtari,1,1,D
+2025-09-13,Bylis,Egnatia Rrogozhine,0,1,A
+2025-09-13,Vllaznia Shkoder,Partizani,4,1,H
+2025-09-14,Teuta Durres,Vora,1,1,D
+2025-09-14,AF Elbasani,Dinamo Tirana,1,0,H
+2025-09-17,Teuta Durres,Dinamo Tirana,1,0,H
+2025-09-20,Partizani,AF Elbasani,0,1,A
+2025-09-20,Egnatia Rrogozhine,Tirana,2,0,H
+2025-09-21,Dinamo Tirana,Bylis,0,0,D
+2025-09-21,Vora,Flamurtari,1,0,H
+2025-09-21,Teuta Durres,Vllaznia Shkoder,1,1,D
+2025-09-27,Tirana,Dinamo Tirana,1,2,A
+2025-09-27,Bylis,Partizani,3,1,H
+2025-09-27,AF Elbasani,Teuta Durres,0,0,D
+2025-09-28,Flamurtari,Egnatia Rrogozhine,1,2,A
+2025-09-28,Vllaznia Shkoder,Vora,2,0,H
+2025-10-03,Partizani,Tirana,0,3,A
+2025-10-04,Dinamo Tirana,Flamurtari,2,0,H
+2025-10-04,Vllaznia Shkoder,AF Elbasani,1,0,H
+2025-10-05,Vora,Egnatia Rrogozhine,0,1,A
+2025-10-05,Teuta Durres,Bylis,1,0,H
+2025-10-18,Bylis,Vllaznia Shkoder,0,1,A
+2025-10-18,Tirana,Teuta Durres,0,0,D
+2025-10-18,Egnatia Rrogozhine,Dinamo Tirana,0,0,D
+2025-10-19,Flamurtari,Partizani,0,1,A
+2025-10-19,AF Elbasani,Vora,1,2,A
+2025-10-24,Vora,Dinamo Tirana,0,2,A
+2025-10-24,Vllaznia Shkoder,Tirana,3,1,H
+2025-10-24,AF Elbasani,Bylis,2,1,H
+2025-10-25,Partizani,Egnatia Rrogozhine,0,0,D
+2025-10-25,Teuta Durres,Flamurtari,3,2,H
+2025-10-28,Bylis,Vora,2,1,H
+2025-10-28,Egnatia Rrogozhine,Teuta Durres,1,0,H
+2025-10-29,Flamurtari,Vllaznia Shkoder,1,0,H
+2025-10-29,Tirana,AF Elbasani,1,4,A
+2025-10-29,Dinamo Tirana,Partizani,2,0,H
+2025-11-03,Tirana,Bylis,0,2,A
+2025-11-03,Flamurtari,AF Elbasani,0,1,A
+2025-11-03,Dinamo Tirana,Teuta Durres,0,0,D
+2025-11-04,Egnatia Rrogozhine,Vllaznia Shkoder,2,2,D
+2025-11-04,Vora,Partizani,0,0,D
+2025-11-07,Bylis,Flamurtari,0,1,A
+2025-11-08,Tirana,Vora,0,2,A
+2025-11-08,Vllaznia Shkoder,Dinamo Tirana,1,0,H
+2025-11-09,Teuta Durres,Partizani,2,3,A
+2025-11-09,AF Elbasani,Egnatia Rrogozhine,1,0,H
+2025-11-22,Egnatia Rrogozhine,Bylis,5,1,H
+2025-11-22,Vora,Teuta Durres,0,1,A
+2025-11-22,Dinamo Tirana,AF Elbasani,1,1,D
+2025-11-23,Partizani,Vllaznia Shkoder,1,1,D
+2025-11-23,Flamurtari,Tirana,1,1,D
+2025-11-28,Vllaznia Shkoder,Teuta Durres,0,1,A
+2025-11-28,AF Elbasani,Partizani,0,0,D
+2025-11-29,Tirana,Egnatia Rrogozhine,0,1,A
+2025-11-29,Bylis,Dinamo Tirana,0,0,D
+2025-11-29,Flamurtari,Vora,1,1,D
+2025-12-03,Partizani,Bylis,1,0,H
+2025-12-03,Teuta Durres,AF Elbasani,0,0,D
+2025-12-03,Dinamo Tirana,Tirana,6,2,H
+2025-12-04,Egnatia Rrogozhine,Flamurtari,0,1,A
+2025-12-04,Vora,Vllaznia Shkoder,0,0,D
+2025-12-07,Bylis,Teuta Durres,1,1,D
+2025-12-07,Tirana,Partizani,0,2,A
+2025-12-08,Egnatia Rrogozhine,Vora,2,0,H
+2025-12-08,Flamurtari,Dinamo Tirana,0,3,A
+2025-12-08,AF Elbasani,Vllaznia Shkoder,1,0,H
+2025-12-13,Partizani,Flamurtari,2,1,H
+2025-12-13,Vora,AF Elbasani,0,1,A
+2025-12-13,Teuta Durres,Tirana,1,1,D
+2025-12-14,Vllaznia Shkoder,Bylis,1,1,D
+2025-12-14,Dinamo Tirana,Egnatia Rrogozhine,1,2,A
+2025-12-19,Dinamo Tirana,Vora,2,1,H
+2025-12-19,Egnatia Rrogozhine,Partizani,2,1,H
+2025-12-19,Flamurtari,Teuta Durres,2,2,D
+2025-12-20,Tirana,Vllaznia Shkoder,1,1,D
+2025-12-20,Bylis,AF Elbasani,3,2,H
+2025-12-23,Partizani,Dinamo Tirana,1,3,A
+2025-12-23,Teuta Durres,Egnatia Rrogozhine,0,1,A
+2025-12-24,Vora,Bylis,4,1,H
+2025-12-24,Vllaznia Shkoder,Flamurtari,3,2,H
+2025-12-24,AF Elbasani,Tirana,1,1,D
+2026-01-14,Bylis,Tirana,0,1,A
+2026-01-14,Vllaznia Shkoder,Egnatia Rrogozhine,1,0,H
+2026-01-14,AF Elbasani,Flamurtari,1,1,D
+2026-01-15,Partizani,Vora,0,1,A
+2026-01-15,Teuta Durres,Dinamo Tirana,0,0,D
+2026-01-18,Flamurtari,Bylis,3,0,H
+2026-01-18,Egnatia Rrogozhine,AF Elbasani,2,2,D
+2026-01-19,Vora,Tirana,1,1,D
+2026-01-19,Partizani,Teuta Durres,2,1,H
+2026-01-19,Dinamo Tirana,Vllaznia Shkoder,0,2,A
+2026-01-24,Bylis,Egnatia Rrogozhine,2,2,D
+2026-01-24,Vllaznia Shkoder,Partizani,1,0,H
+2026-01-25,Tirana,Flamurtari,1,0,H
+2026-01-25,Teuta Durres,Vora,1,1,D
+2026-01-25,AF Elbasani,Dinamo Tirana,2,0,H
+2026-01-31,Vora,Flamurtari,0,0,D
+2026-01-31,Partizani,AF Elbasani,2,2,D
+2026-01-31,Dinamo Tirana,Bylis,0,0,D
+2026-02-01,Teuta Durres,Vllaznia Shkoder,0,1,A
+2026-02-01,Egnatia Rrogozhine,Tirana,0,1,A
+2026-02-06,Bylis,Partizani,1,2,A
+2026-02-06,Vllaznia Shkoder,Vora,1,0,H
+2026-02-06,AF Elbasani,Teuta Durres,2,1,H
+2026-02-06,Flamurtari,Egnatia Rrogozhine,0,1,A
+2026-02-07,Tirana,Dinamo Tirana,1,1,D
+2026-02-14,Vora,Egnatia Rrogozhine,1,1,D
+2026-02-14,Teuta Durres,Bylis,2,1,H
+2026-02-15,Partizani,Tirana,2,0,H
+2026-02-15,Dinamo Tirana,Flamurtari,1,1,D
+2026-02-15,Vllaznia Shkoder,AF Elbasani,2,1,H
+2026-02-20,Egnatia Rrogozhine,Dinamo Tirana,1,0,H
+2026-02-21,Bylis,Vllaznia Shkoder,2,1,H
+2026-02-21,AF Elbasani,Vora,2,1,H
+2026-02-22,Tirana,Teuta Durres,0,1,A
+2026-02-22,Flamurtari,Partizani,1,2,A
+2026-02-27,Vllaznia Shkoder,Tirana,3,1,H
+2026-02-28,Vora,Dinamo Tirana,1,2,A
+2026-02-28,Partizani,Egnatia Rrogozhine,2,0,H
+2026-02-28,AF Elbasani,Bylis,1,1,D
+2026-02-28,Teuta Durres,Flamurtari,1,1,D
+2026-03-08,Tirana,AF Elbasani,0,1,A
+2026-03-08,Bylis,Vora,1,0,H
+2026-03-08,Flamurtari,Vllaznia Shkoder,1,0,H
+2026-03-09,Dinamo Tirana,Partizani,0,2,A
+2026-03-09,Egnatia Rrogozhine,Teuta Durres,4,2,H
+2026-03-13,Egnatia Rrogozhine,Vllaznia Shkoder,0,0,D
+2026-03-14,Tirana,Bylis,1,0,H
+2026-03-14,Flamurtari,AF Elbasani,1,2,A
+2026-03-15,Vora,Partizani,2,2,D
+2026-03-15,Dinamo Tirana,Teuta Durres,0,1,A
+2026-03-20,AF Elbasani,Egnatia Rrogozhine,0,0,D
+2026-03-21,Bylis,Flamurtari,2,1,H
+2026-03-21,Teuta Durres,Partizani,2,2,D
+2026-03-21,Vllaznia Shkoder,Dinamo Tirana,0,0,D
+2026-03-22,Tirana,Vora,3,0,H
+2026-04-03,Flamurtari,Tirana,1,1,D
+2026-04-04,Partizani,Vllaznia Shkoder,0,2,A
+2026-04-04,Egnatia Rrogozhine,Bylis,3,0,H
+2026-04-04,Dinamo Tirana,AF Elbasani,4,1,H
+2026-04-05,Vora,Teuta Durres,1,0,H
+2026-04-11,Flamurtari,Vora,1,1,D
+2026-04-12,Tirana,Egnatia Rrogozhine,3,1,H
+2026-04-12,Vllaznia Shkoder,Teuta Durres,1,0,H
+2026-04-13,Bylis,Dinamo Tirana,1,1,D
+2026-04-13,AF Elbasani,Partizani,3,0,H
+2026-04-18,Egnatia Rrogozhine,Flamurtari,0,2,A
+2026-04-18,Vora,Vllaznia Shkoder,0,0,D
+2026-04-18,Teuta Durres,AF Elbasani,1,2,A
+2026-04-18,Dinamo Tirana,Tirana,1,1,D
+2026-04-19,Partizani,Bylis,1,1,D
+2026-04-25,Tirana,Partizani,2,1,H
+2026-04-26,Bylis,Teuta Durres,2,0,H
+2026-04-26,Egnatia Rrogozhine,Vora,0,2,A
+2026-04-27,Flamurtari,Dinamo Tirana,3,1,H
+2026-04-27,AF Elbasani,Vllaznia Shkoder,3,1,H
+2026-05-02,Partizani,Flamurtari,1,4,A
+2026-05-02,Teuta Durres,Tirana,0,1,A
+2026-05-02,Dinamo Tirana,Egnatia Rrogozhine,2,0,H
+2026-05-02,Vllaznia Shkoder,Bylis,0,2,A
+2026-05-02,Vora,AF Elbasani,4,2,H
+2026-05-06,Tirana,Vllaznia Shkoder,1,0,H
+2026-05-06,Flamurtari,Teuta Durres,1,1,D
+2026-05-06,Bylis,AF Elbasani,2,1,H
+2026-05-06,Dinamo Tirana,Vora,2,2,D
+2026-05-06,Egnatia Rrogozhine,Partizani,2,0,H
+2026-05-07,Iliria Fushe-Kruje,Besa Kavaje,0,2,A
+2026-05-07,Pogradeci,Kastrioti Kruje,3,0,H
+2026-05-10,Partizani,Dinamo Tirana,2,1,H
+2026-05-10,Teuta Durres,Egnatia Rrogozhine,3,2,H
+2026-05-10,Vllaznia Shkoder,Flamurtari,2,0,H
+2026-05-10,Vora,Bylis,5,2,H
+2026-05-10,AF Elbasani,Tirana,1,3,A
+2026-05-11,Pogradeci,Besa Kavaje,1,0,H
+2026-05-16,Teuta Durres,Pogradeci,1,0,H
+2026-05-16,Vllaznia Shkoder,Dinamo Tirana,0,2,A
+2026-05-17,AF Elbasani,Egnatia Rrogozhine,0,4,A
+2026-05-23,Vllaznia Shkoder,Egnatia Rrogozhine,1,2,A
+2026-05-24,AF Elbasani,Dinamo Tirana,3,0,H
+2026-05-31,Egnatia Rrogozhine,Dinamo Tirana,2,0,H
+2026-05-31,Vllaznia Shkoder,AF Elbasani,1,2,A

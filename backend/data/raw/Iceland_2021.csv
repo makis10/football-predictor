@@ -1,0 +1,133 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2021-04-30,Valur Reykjavik,IA Akranes,2,0,H
+2021-05-01,HK Kopavogur,KA Akureyri,0,0,D
+2021-05-01,Fylkir,FH hafnarfjordur,0,2,A
+2021-05-01,Stjarnan,Leiknir R.,0,0,D
+2021-05-02,Breidablik,KR Reykjavik,0,2,A
+2021-05-02,Vikingur Reykjavik,Keflavik,1,0,H
+2021-05-07,KR Reykjavik,KA Akureyri,1,3,A
+2021-05-08,IA Akranes,Vikingur Reykjavik,1,1,D
+2021-05-08,HK Kopavogur,Fylkir,2,2,D
+2021-05-08,Leiknir R.,Breidablik,3,3,D
+2021-05-09,Keflavik,Stjarnan,2,0,H
+2021-05-09,FH hafnarfjordur,Valur Reykjavik,1,1,D
+2021-05-12,KA Akureyri,Leiknir R.,3,0,H
+2021-05-12,Fylkir,KR Reykjavik,1,1,D
+2021-05-13,FH hafnarfjordur,IA Akranes,5,1,H
+2021-05-13,Valur Reykjavik,HK Kopavogur,3,2,H
+2021-05-13,Stjarnan,Vikingur Reykjavik,2,3,A
+2021-05-13,Breidablik,Keflavik,4,0,H
+2021-05-16,Vikingur Reykjavik,Breidablik,3,0,H
+2021-05-16,Leiknir R.,Fylkir,3,0,H
+2021-05-17,Keflavik,KA Akureyri,1,4,A
+2021-05-17,KR Reykjavik,Valur Reykjavik,2,3,A
+2021-05-17,IA Akranes,Stjarnan,0,0,D
+2021-05-17,HK Kopavogur,FH hafnarfjordur,1,3,A
+2021-05-21,KA Akureyri,Vikingur Reykjavik,0,1,A
+2021-05-21,HK Kopavogur,IA Akranes,1,3,A
+2021-05-21,Breidablik,Stjarnan,4,0,H
+2021-05-21,Fylkir,Keflavik,4,2,H
+2021-05-21,Valur Reykjavik,Leiknir R.,1,0,H
+2021-05-22,FH hafnarfjordur,KR Reykjavik,0,2,A
+2021-05-24,Keflavik,Valur Reykjavik,1,2,A
+2021-05-24,Stjarnan,KA Akureyri,0,1,A
+2021-05-24,IA Akranes,Breidablik,2,3,A
+2021-05-25,KR Reykjavik,HK Kopavogur,1,1,D
+2021-05-25,Vikingur Reykjavik,Fylkir,2,2,D
+2021-05-25,Leiknir R.,FH hafnarfjordur,2,1,H
+2021-05-30,Fylkir,Stjarnan,1,1,D
+2021-05-30,KR Reykjavik,IA Akranes,3,1,H
+2021-05-30,HK Kopavogur,Leiknir R.,2,1,H
+2021-06-07,Valur Reykjavik,Vikingur Reykjavik,1,1,D
+2021-06-12,Breidablik,Fylkir,2,0,H
+2021-06-12,Stjarnan,Valur Reykjavik,2,1,H
+2021-06-12,Vikingur Reykjavik,FH hafnarfjordur,2,0,H
+2021-06-14,Leiknir R.,KR Reykjavik,0,2,A
+2021-06-16,Keflavik,HK Kopavogur,2,0,H
+2021-06-16,IA Akranes,KA Akureyri,0,2,A
+2021-06-16,FH hafnarfjordur,Stjarnan,1,1,D
+2021-06-16,Valur Reykjavik,Breidablik,3,1,H
+2021-06-20,KA Akureyri,Valur Reykjavik,0,1,A
+2021-06-20,Fylkir,IA Akranes,3,1,H
+2021-06-20,Stjarnan,HK Kopavogur,2,1,H
+2021-06-20,Keflavik,Leiknir R.,1,0,H
+2021-06-20,Breidablik,FH hafnarfjordur,4,0,H
+2021-06-21,Vikingur Reykjavik,KR Reykjavik,1,1,D
+2021-06-27,FH hafnarfjordur,KA Akureyri,1,1,D
+2021-06-27,Valur Reykjavik,Fylkir,1,1,D
+2021-06-27,HK Kopavogur,Breidablik,2,3,A
+2021-06-28,KR Reykjavik,Stjarnan,1,2,A
+2021-06-28,IA Akranes,Keflavik,2,2,D
+2021-06-28,Leiknir R.,Vikingur Reykjavik,2,1,H
+2021-07-01,Valur Reykjavik,FH hafnarfjordur,2,0,H
+2021-07-03,Stjarnan,Keflavik,2,3,A
+2021-07-03,Breidablik,Leiknir R.,4,0,H
+2021-07-05,KA Akureyri,KR Reykjavik,1,2,A
+2021-07-05,Vikingur Reykjavik,IA Akranes,1,0,H
+2021-07-09,Fylkir,HK Kopavogur,1,2,A
+2021-07-12,KR Reykjavik,Keflavik,1,0,H
+2021-07-12,Leiknir R.,IA Akranes,2,0,H
+2021-07-13,Fylkir,KA Akureyri,2,1,H
+2021-07-13,HK Kopavogur,Vikingur Reykjavik,0,0,D
+2021-07-17,IA Akranes,Valur Reykjavik,2,1,H
+2021-07-18,KA Akureyri,HK Kopavogur,2,0,H
+2021-07-18,FH hafnarfjordur,Fylkir,1,0,H
+2021-07-18,KR Reykjavik,Breidablik,1,1,D
+2021-07-19,Keflavik,Vikingur Reykjavik,1,2,A
+2021-07-19,Leiknir R.,Stjarnan,2,0,H
+2021-07-25,IA Akranes,FH hafnarfjordur,0,3,A
+2021-07-25,Leiknir R.,KA Akureyri,0,1,A
+2021-07-25,Keflavik,Breidablik,2,0,H
+2021-07-25,Vikingur Reykjavik,Stjarnan,3,2,H
+2021-07-25,HK Kopavogur,Valur Reykjavik,0,3,A
+2021-07-26,KR Reykjavik,Fylkir,4,0,H
+2021-08-02,Breidablik,Vikingur Reykjavik,4,0,H
+2021-08-03,KA Akureyri,Keflavik,2,1,H
+2021-08-03,Fylkir,Leiknir R.,0,0,D
+2021-08-04,FH hafnarfjordur,HK Kopavogur,2,4,A
+2021-08-04,Valur Reykjavik,KR Reykjavik,1,0,H
+2021-08-04,Stjarnan,IA Akranes,4,0,H
+2021-08-08,Vikingur Reykjavik,KA Akureyri,2,2,D
+2021-08-08,Leiknir R.,Valur Reykjavik,1,0,H
+2021-08-08,Keflavik,Fylkir,1,1,D
+2021-08-08,KR Reykjavik,FH hafnarfjordur,1,1,D
+2021-08-08,IA Akranes,HK Kopavogur,4,1,H
+2021-08-09,Stjarnan,Breidablik,1,3,A
+2021-08-15,KA Akureyri,Stjarnan,2,1,H
+2021-08-15,FH hafnarfjordur,Leiknir R.,5,0,H
+2021-08-15,Valur Reykjavik,Keflavik,2,1,H
+2021-08-16,Fylkir,Vikingur Reykjavik,0,3,A
+2021-08-16,Breidablik,IA Akranes,2,1,H
+2021-08-16,HK Kopavogur,KR Reykjavik,0,1,A
+2021-08-21,Keflavik,FH hafnarfjordur,0,5,A
+2021-08-21,Breidablik,KA Akureyri,2,0,H
+2021-08-22,Vikingur Reykjavik,Valur Reykjavik,2,1,H
+2021-08-23,Leiknir R.,HK Kopavogur,0,0,D
+2021-08-23,Stjarnan,Fylkir,2,0,H
+2021-08-25,FH hafnarfjordur,Keflavik,0,0,D
+2021-08-25,KA Akureyri,Breidablik,0,2,A
+2021-08-25,IA Akranes,KR Reykjavik,0,2,A
+2021-08-28,Valur Reykjavik,Stjarnan,1,2,A
+2021-08-29,KA Akureyri,IA Akranes,3,0,H
+2021-08-29,FH hafnarfjordur,Vikingur Reykjavik,1,2,A
+2021-08-29,KR Reykjavik,Leiknir R.,2,1,H
+2021-08-29,Fylkir,Breidablik,0,7,A
+2021-08-29,HK Kopavogur,Keflavik,1,0,H
+2021-09-11,Keflavik,KR Reykjavik,0,2,A
+2021-09-11,KA Akureyri,Fylkir,2,0,H
+2021-09-11,IA Akranes,Leiknir R.,3,1,H
+2021-09-11,Vikingur Reykjavik,HK Kopavogur,3,0,H
+2021-09-11,Breidablik,Valur Reykjavik,3,0,H
+2021-09-13,Stjarnan,FH hafnarfjordur,0,4,A
+2021-09-19,IA Akranes,Fylkir,5,0,H
+2021-09-19,Leiknir R.,Keflavik,0,1,A
+2021-09-19,FH hafnarfjordur,Breidablik,1,0,H
+2021-09-19,KR Reykjavik,Vikingur Reykjavik,1,2,A
+2021-09-19,Valur Reykjavik,KA Akureyri,1,4,A
+2021-09-20,HK Kopavogur,Stjarnan,1,0,H
+2021-09-25,Fylkir,Valur Reykjavik,0,6,A
+2021-09-25,Keflavik,IA Akranes,2,3,A
+2021-09-25,KA Akureyri,FH hafnarfjordur,2,2,D
+2021-09-25,Stjarnan,KR Reykjavik,0,2,A
+2021-09-25,Breidablik,HK Kopavogur,3,0,H
+2021-09-25,Vikingur Reykjavik,Leiknir R.,2,0,H

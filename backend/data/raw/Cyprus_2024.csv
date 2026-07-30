@@ -1,0 +1,241 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2024-08-23,Omonia Aradippou,Anorthosis,0,0,D
+2024-08-24,Omonia 29is Maiou,AEL,2,4,A
+2024-08-24,Karmiotissa,Aris,1,3,A
+2024-08-25,Apollon Limassol,AEK Larnaca,1,2,A
+2024-08-25,Omonia Nicosia,Ethnikos Achna,3,0,H
+2024-08-30,Aris,Omonia 29is Maiou,1,0,H
+2024-08-31,Anorthosis,Apollon Limassol,1,2,A
+2024-08-31,AEL,Omonia Aradippou,1,0,H
+2024-08-31,Enosis,Karmiotissa,0,1,A
+2024-09-01,AEK Larnaca,Pafos,0,2,A
+2024-09-01,Apoel Nicosia,Ethnikos Achna,1,3,A
+2024-09-01,Nea Salamis,Omonia Nicosia,2,3,A
+2024-09-14,Pafos,Anorthosis,3,1,H
+2024-09-14,Ethnikos Achna,Nea Salamis,2,3,A
+2024-09-14,Karmiotissa,Apoel Nicosia,0,3,A
+2024-09-15,Omonia 29is Maiou,Enosis,0,1,A
+2024-09-15,Apollon Limassol,AEL,3,0,H
+2024-09-15,Omonia Aradippou,Aris,0,3,A
+2024-09-16,Omonia Nicosia,AEK Larnaca,1,0,H
+2024-09-18,Enosis,Apoel Nicosia,0,4,A
+2024-09-18,Pafos,Nea Salamis,4,0,H
+2024-09-20,Karmiotissa,Omonia 29is Maiou,1,1,D
+2024-09-21,Anorthosis,Omonia Nicosia,1,0,H
+2024-09-21,Aris,Apollon Limassol,0,0,D
+2024-09-22,AEK Larnaca,Ethnikos Achna,2,2,D
+2024-09-22,Apoel Nicosia,Nea Salamis,3,1,H
+2024-09-22,AEL,Pafos,1,3,A
+2024-09-23,Enosis,Omonia Aradippou,0,2,A
+2024-09-27,Nea Salamis,AEK Larnaca,1,3,A
+2024-09-27,Omonia Nicosia,AEL,3,1,H
+2024-09-28,Ethnikos Achna,Anorthosis,2,2,D
+2024-09-28,Omonia Aradippou,Karmiotissa,1,1,D
+2024-09-29,Apollon Limassol,Enosis,3,1,H
+2024-09-29,Pafos,Aris,1,1,D
+2024-09-29,Omonia 29is Maiou,Apoel Nicosia,0,0,D
+2024-10-04,Karmiotissa,Apollon Limassol,2,0,H
+2024-10-05,Omonia 29is Maiou,Omonia Aradippou,1,2,A
+2024-10-05,Anorthosis,Nea Salamis,3,1,H
+2024-10-05,AEL,Ethnikos Achna,5,2,H
+2024-10-06,Enosis,Pafos,1,2,A
+2024-10-06,Aris,Omonia Nicosia,2,0,H
+2024-10-06,Apoel Nicosia,AEK Larnaca,0,1,A
+2024-10-19,Omonia Nicosia,Enosis,0,1,A
+2024-10-19,Omonia Aradippou,Apoel Nicosia,0,5,A
+2024-10-19,Pafos,Karmiotissa,4,0,H
+2024-10-20,Ethnikos Achna,Aris,1,2,A
+2024-10-20,Apollon Limassol,Omonia 29is Maiou,2,0,H
+2024-10-20,AEK Larnaca,Anorthosis,1,0,H
+2024-10-21,Nea Salamis,AEL,0,2,A
+2024-10-26,Enosis,Ethnikos Achna,1,1,D
+2024-10-26,Aris,Nea Salamis,2,1,H
+2024-10-27,Omonia Aradippou,Apollon Limassol,0,1,A
+2024-10-27,AEL,AEK Larnaca,1,1,D
+2024-10-28,Karmiotissa,Omonia Nicosia,2,6,A
+2024-10-28,Omonia 29is Maiou,Pafos,1,2,A
+2024-10-28,Apoel Nicosia,Anorthosis,2,0,H
+2024-11-01,Nea Salamis,Enosis,1,0,H
+2024-11-02,Apollon Limassol,Apoel Nicosia,0,0,D
+2024-11-02,Omonia Nicosia,Omonia 29is Maiou,1,1,D
+2024-11-03,Pafos,Omonia Aradippou,4,0,H
+2024-11-03,Ethnikos Achna,Karmiotissa,3,2,H
+2024-11-03,AEK Larnaca,Aris,2,0,H
+2024-11-04,Anorthosis,AEL,1,0,H
+2024-11-08,Omonia 29is Maiou,Ethnikos Achna,1,2,A
+2024-11-09,Enosis,AEK Larnaca,0,0,D
+2024-11-09,Karmiotissa,Nea Salamis,2,2,D
+2024-11-09,Aris,Anorthosis,3,0,H
+2024-11-10,Omonia Aradippou,Omonia Nicosia,3,5,A
+2024-11-10,Apollon Limassol,Pafos,0,1,A
+2024-11-10,Apoel Nicosia,AEL,4,0,H
+2024-11-23,Pafos,Apoel Nicosia,2,1,H
+2024-11-23,Nea Salamis,Omonia 29is Maiou,0,1,A
+2024-11-23,Omonia Nicosia,Apollon Limassol,3,1,H
+2024-11-24,Ethnikos Achna,Omonia Aradippou,0,0,D
+2024-11-24,Anorthosis,Enosis,3,2,H
+2024-11-24,AEL,Aris,0,3,A
+2024-11-25,AEK Larnaca,Karmiotissa,2,0,H
+2024-11-30,Enosis,AEL,0,0,D
+2024-11-30,Karmiotissa,Anorthosis,1,1,D
+2024-11-30,Apollon Limassol,Ethnikos Achna,2,2,D
+2024-12-01,Omonia Aradippou,Nea Salamis,1,0,H
+2024-12-01,Omonia 29is Maiou,AEK Larnaca,1,5,A
+2024-12-02,Apoel Nicosia,Aris,1,2,A
+2024-12-02,Pafos,Omonia Nicosia,0,1,A
+2024-12-06,Aris,Enosis,2,1,H
+2024-12-06,AEK Larnaca,Omonia Aradippou,1,0,H
+2024-12-07,Omonia Nicosia,Apoel Nicosia,2,2,D
+2024-12-07,Anorthosis,Omonia 29is Maiou,2,0,H
+2024-12-08,AEL,Karmiotissa,4,0,H
+2024-12-08,Nea Salamis,Apollon Limassol,1,0,H
+2024-12-08,Ethnikos Achna,Pafos,0,2,A
+2024-12-13,Aris,Karmiotissa,1,1,D
+2024-12-14,AEL,Omonia 29is Maiou,1,1,D
+2024-12-14,Anorthosis,Omonia Aradippou,3,0,H
+2024-12-15,AEK Larnaca,Apollon Limassol,4,0,H
+2024-12-15,Apoel Nicosia,Enosis,2,0,H
+2024-12-15,Ethnikos Achna,Omonia Nicosia,1,0,H
+2024-12-16,Nea Salamis,Pafos,0,2,A
+2024-12-21,Omonia 29is Maiou,Aris,0,3,A
+2024-12-21,Karmiotissa,Enosis,2,0,H
+2024-12-21,Apollon Limassol,Anorthosis,2,0,H
+2024-12-22,Omonia Aradippou,AEL,2,2,D
+2024-12-22,Pafos,AEK Larnaca,0,1,A
+2024-12-22,Omonia Nicosia,Nea Salamis,3,0,H
+2024-12-23,Ethnikos Achna,Apoel Nicosia,2,2,D
+2025-01-02,Anorthosis,Pafos,0,2,A
+2025-01-02,AEL,Apollon Limassol,0,1,A
+2025-01-03,Enosis,Omonia 29is Maiou,2,1,H
+2025-01-03,Aris,Omonia Aradippou,2,0,H
+2025-01-03,AEK Larnaca,Omonia Nicosia,0,3,A
+2025-01-04,Apoel Nicosia,Karmiotissa,3,0,H
+2025-01-04,Nea Salamis,Ethnikos Achna,0,3,A
+2025-01-06,Pafos,AEL,4,0,H
+2025-01-07,Omonia Aradippou,Enosis,2,0,H
+2025-01-07,Apollon Limassol,Aris,1,1,D
+2025-01-07,Omonia Nicosia,Anorthosis,0,2,A
+2025-01-08,Omonia 29is Maiou,Karmiotissa,1,2,A
+2025-01-08,Ethnikos Achna,AEK Larnaca,2,2,D
+2025-01-08,Nea Salamis,Apoel Nicosia,1,1,D
+2025-01-11,Enosis,Apollon Limassol,0,1,A
+2025-01-11,Aris,Pafos,1,0,H
+2025-01-12,AEK Larnaca,Nea Salamis,2,0,H
+2025-01-12,Apoel Nicosia,Omonia 29is Maiou,4,0,H
+2025-01-12,AEL,Omonia Nicosia,0,4,A
+2025-01-13,Karmiotissa,Omonia Aradippou,3,1,H
+2025-01-13,Anorthosis,Ethnikos Achna,2,1,H
+2025-01-18,Apollon Limassol,Karmiotissa,3,0,H
+2025-01-18,Nea Salamis,Anorthosis,0,4,A
+2025-01-19,Ethnikos Achna,AEL,0,0,D
+2025-01-19,Pafos,Enosis,2,0,H
+2025-01-19,Omonia Nicosia,Aris,0,0,D
+2025-01-20,AEK Larnaca,Apoel Nicosia,2,1,H
+2025-01-21,Omonia Aradippou,Omonia 29is Maiou,1,0,H
+2025-01-24,AEL,Nea Salamis,0,0,D
+2025-01-24,Enosis,Omonia Nicosia,0,2,A
+2025-01-25,Omonia 29is Maiou,Apollon Limassol,2,1,H
+2025-01-25,Anorthosis,AEK Larnaca,2,2,D
+2025-01-26,Apoel Nicosia,Omonia Aradippou,7,0,H
+2025-01-26,Karmiotissa,Pafos,0,2,A
+2025-01-26,Aris,Ethnikos Achna,6,1,H
+2025-02-01,Nea Salamis,Aris,2,2,D
+2025-02-01,Omonia Nicosia,Karmiotissa,3,0,H
+2025-02-02,Ethnikos Achna,Enosis,0,1,A
+2025-02-02,Apollon Limassol,Omonia Aradippou,1,0,H
+2025-02-02,AEK Larnaca,AEL,2,0,H
+2025-02-03,Pafos,Omonia 29is Maiou,2,1,H
+2025-02-03,Anorthosis,Apoel Nicosia,2,2,D
+2025-02-07,Omonia 29is Maiou,Omonia Nicosia,2,3,A
+2025-02-08,Apoel Nicosia,Apollon Limassol,0,0,D
+2025-02-08,Omonia Aradippou,Pafos,0,2,A
+2025-02-08,AEL,Anorthosis,0,1,A
+2025-02-09,Karmiotissa,Ethnikos Achna,0,0,D
+2025-02-09,Enosis,Nea Salamis,2,0,H
+2025-02-09,Aris,AEK Larnaca,1,1,D
+2025-02-14,Nea Salamis,Karmiotissa,2,1,H
+2025-02-14,AEK Larnaca,Enosis,4,1,H
+2025-02-15,Ethnikos Achna,Omonia 29is Maiou,1,0,H
+2025-02-15,Anorthosis,Aris,0,3,A
+2025-02-16,Omonia Nicosia,Omonia Aradippou,3,1,H
+2025-02-16,Pafos,Apollon Limassol,1,0,H
+2025-02-16,AEL,Apoel Nicosia,1,2,A
+2025-02-22,Karmiotissa,AEK Larnaca,0,3,A
+2025-02-22,Omonia 29is Maiou,Nea Salamis,2,1,H
+2025-02-23,Omonia Aradippou,Ethnikos Achna,2,2,D
+2025-02-23,Aris,AEL,4,0,H
+2025-02-24,Apollon Limassol,Omonia Nicosia,1,1,D
+2025-02-24,Apoel Nicosia,Pafos,0,2,A
+2025-02-24,Enosis,Anorthosis,2,2,D
+2025-02-28,Ethnikos Achna,Apollon Limassol,0,1,A
+2025-02-28,Anorthosis,Karmiotissa,1,2,A
+2025-02-28,AEL,Enosis,2,1,H
+2025-03-01,Nea Salamis,Omonia Aradippou,2,3,A
+2025-03-01,Aris,Apoel Nicosia,3,0,H
+2025-03-01,Omonia Nicosia,Pafos,2,1,H
+2025-03-02,AEK Larnaca,Omonia 29is Maiou,2,0,H
+2025-03-07,Karmiotissa,AEL,2,1,H
+2025-03-08,Apollon Limassol,Nea Salamis,1,1,D
+2025-03-08,Apoel Nicosia,Omonia Nicosia,2,1,H
+2025-03-08,Omonia 29is Maiou,Anorthosis,0,0,D
+2025-03-09,Enosis,Aris,1,2,A
+2025-03-09,Pafos,Ethnikos Achna,0,0,D
+2025-03-09,Omonia Aradippou,AEK Larnaca,2,0,H
+2025-03-14,Anorthosis,Omonia 29is Maiou,4,2,H
+2025-03-15,Karmiotissa,Enosis,0,2,A
+2025-03-15,Aris,Apoel Nicosia,1,0,H
+2025-03-15,Omonia Aradippou,AEL,1,2,A
+2025-03-16,Ethnikos Achna,Nea Salamis,1,1,D
+2025-03-16,Apollon Limassol,Pafos,1,2,A
+2025-03-16,Omonia Nicosia,AEK Larnaca,1,1,D
+2025-03-29,Apoel Nicosia,Apollon Limassol,1,1,D
+2025-03-29,AEK Larnaca,Aris,1,1,D
+2025-03-29,Pafos,Omonia Nicosia,3,1,H
+2025-03-30,Omonia 29is Maiou,AEL,0,3,A
+2025-03-30,Enosis,Omonia Aradippou,1,0,H
+2025-03-30,Nea Salamis,Karmiotissa,0,0,D
+2025-03-31,Anorthosis,Ethnikos Achna,2,0,H
+2025-04-01,Apollon Limassol,Omonia Nicosia,3,1,H
+2025-04-02,Aris,Pafos,0,1,A
+2025-04-02,Apoel Nicosia,AEK Larnaca,0,1,A
+2025-04-05,Ethnikos Achna,Omonia 29is Maiou,3,1,H
+2025-04-05,Karmiotissa,Anorthosis,0,1,A
+2025-04-05,AEL,Enosis,2,0,H
+2025-04-06,Apollon Limassol,AEK Larnaca,1,1,D
+2025-04-06,Pafos,Apoel Nicosia,0,1,A
+2025-04-06,Omonia Nicosia,Aris,2,1,H
+2025-04-07,Omonia Aradippou,Nea Salamis,0,2,A
+2025-04-11,Ethnikos Achna,Karmiotissa,2,1,H
+2025-04-12,Anorthosis,Omonia Aradippou,1,2,A
+2025-04-12,Nea Salamis,AEL,1,3,A
+2025-04-12,Omonia 29is Maiou,Enosis,0,2,A
+2025-04-13,AEK Larnaca,Pafos,2,2,D
+2025-04-13,Apoel Nicosia,Omonia Nicosia,1,1,D
+2025-04-13,Aris,Apollon Limassol,2,1,H
+2025-04-22,AEK Larnaca,Omonia Nicosia,1,1,D
+2025-04-22,Apoel Nicosia,Aris,2,1,H
+2025-04-22,Pafos,Apollon Limassol,2,0,H
+2025-04-25,AEL,Anorthosis,1,3,A
+2025-04-26,Apollon Limassol,Apoel Nicosia,0,0,D
+2025-04-26,Omonia Nicosia,Pafos,3,0,H
+2025-04-27,Aris,AEK Larnaca,1,0,H
+2025-04-28,Enosis,Nea Salamis,2,2,D
+2025-04-28,Karmiotissa,Omonia 29is Maiou,2,0,H
+2025-04-28,Omonia Aradippou,Ethnikos Achna,2,1,H
+2025-05-03,Ethnikos Achna,AEL,2,0,H
+2025-05-04,AEK Larnaca,Apoel Nicosia,3,0,H
+2025-05-04,Omonia Nicosia,Apollon Limassol,1,0,H
+2025-05-04,Pafos,Aris,4,0,H
+2025-05-05,Anorthosis,Enosis,1,2,A
+2025-05-05,Karmiotissa,Omonia Aradippou,1,0,H
+2025-05-05,Omonia 29is Maiou,Nea Salamis,0,1,A
+2025-05-09,Nea Salamis,Anorthosis,2,4,A
+2025-05-11,AEL,Karmiotissa,1,0,H
+2025-05-11,Enosis,Ethnikos Achna,4,2,H
+2025-05-11,Omonia Aradippou,Omonia 29is Maiou,4,1,H
+2025-05-12,AEK Larnaca,Apollon Limassol,3,0,H
+2025-05-12,Apoel Nicosia,Pafos,1,1,D
+2025-05-12,Aris,Omonia Nicosia,3,3,D
+2025-05-18,Pafos,AEK Larnaca,2,0,H
+2025-05-18,Apollon Limassol,Aris,2,3,A
+2025-05-18,Omonia Nicosia,Apoel Nicosia,2,1,H

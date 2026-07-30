@@ -1,0 +1,182 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2021-09-10,Teuta Durres,Partizani,1,0,H
+2021-09-11,Tirana,Skenderbeu Korce,4,2,H
+2021-09-11,Laci,Vllaznia Shkoder,3,5,A
+2021-09-12,Kastrioti Kruje,Dinamo Tirana,0,2,A
+2021-09-12,Egnatia Rrogozhine,FK Kukesi,1,3,A
+2021-09-17,Dinamo Tirana,Laci,1,1,D
+2021-09-18,Skenderbeu Korce,Partizani,1,1,D
+2021-09-18,Vllaznia Shkoder,Teuta Durres,1,1,D
+2021-09-19,Tirana,Egnatia Rrogozhine,1,1,D
+2021-09-19,FK Kukesi,Kastrioti Kruje,3,1,H
+2021-09-25,Kastrioti Kruje,Tirana,1,1,D
+2021-09-25,Teuta Durres,Dinamo Tirana,0,0,D
+2021-09-26,Partizani,Vllaznia Shkoder,1,1,D
+2021-09-27,Laci,FK Kukesi,2,2,D
+2021-09-27,Egnatia Rrogozhine,Skenderbeu Korce,1,1,D
+2021-10-01,Dinamo Tirana,Partizani,1,1,D
+2021-10-02,Egnatia Rrogozhine,Kastrioti Kruje,2,1,H
+2021-10-02,Skenderbeu Korce,Vllaznia Shkoder,0,0,D
+2021-10-03,Tirana,Laci,2,0,H
+2021-10-03,FK Kukesi,Teuta Durres,2,3,A
+2021-10-16,Laci,Egnatia Rrogozhine,0,1,A
+2021-10-16,Kastrioti Kruje,Skenderbeu Korce,2,0,H
+2021-10-17,Partizani,FK Kukesi,1,1,D
+2021-10-17,Teuta Durres,Tirana,2,3,A
+2021-10-18,Vllaznia Shkoder,Dinamo Tirana,6,3,H
+2021-10-23,Kastrioti Kruje,Laci,0,1,A
+2021-10-23,Egnatia Rrogozhine,Teuta Durres,0,1,A
+2021-10-24,FK Kukesi,Vllaznia Shkoder,2,0,H
+2021-10-24,Skenderbeu Korce,Dinamo Tirana,0,1,A
+2021-10-25,Tirana,Partizani,1,0,H
+2021-10-29,Dinamo Tirana,FK Kukesi,0,1,A
+2021-10-30,Laci,Skenderbeu Korce,2,0,H
+2021-10-30,Vllaznia Shkoder,Tirana,0,2,A
+2021-10-31,Partizani,Egnatia Rrogozhine,1,1,D
+2021-10-31,Teuta Durres,Kastrioti Kruje,1,1,D
+2021-11-06,Skenderbeu Korce,FK Kukesi,2,1,H
+2021-11-06,Tirana,Dinamo Tirana,4,0,H
+2021-11-07,Laci,Teuta Durres,2,0,H
+2021-11-07,Kastrioti Kruje,Partizani,0,2,A
+2021-11-08,Egnatia Rrogozhine,Vllaznia Shkoder,1,1,D
+2021-11-20,Vllaznia Shkoder,Kastrioti Kruje,3,1,H
+2021-11-20,Partizani,Laci,1,1,D
+2021-11-21,Teuta Durres,Skenderbeu Korce,2,2,D
+2021-11-22,Dinamo Tirana,Egnatia Rrogozhine,1,1,D
+2021-11-22,FK Kukesi,Tirana,2,1,H
+2021-11-26,Partizani,Teuta Durres,2,1,H
+2021-11-27,Skenderbeu Korce,Tirana,0,0,D
+2021-11-27,Vllaznia Shkoder,Laci,1,0,H
+2021-11-28,FK Kukesi,Egnatia Rrogozhine,2,0,H
+2021-11-28,Dinamo Tirana,Kastrioti Kruje,1,0,H
+2021-12-03,Laci,Dinamo Tirana,5,0,H
+2021-12-03,Teuta Durres,Vllaznia Shkoder,1,1,D
+2021-12-04,Kastrioti Kruje,FK Kukesi,1,6,A
+2021-12-04,Egnatia Rrogozhine,Tirana,0,2,A
+2021-12-04,Partizani,Skenderbeu Korce,2,1,H
+2021-12-07,Tirana,Kastrioti Kruje,3,0,H
+2021-12-07,Dinamo Tirana,Teuta Durres,0,1,A
+2021-12-08,Skenderbeu Korce,Egnatia Rrogozhine,2,0,H
+2021-12-08,Vllaznia Shkoder,Partizani,1,0,H
+2021-12-09,FK Kukesi,Laci,1,2,A
+2021-12-12,Kastrioti Kruje,Egnatia Rrogozhine,1,0,H
+2021-12-12,Vllaznia Shkoder,Skenderbeu Korce,2,0,H
+2021-12-13,Teuta Durres,FK Kukesi,0,0,D
+2021-12-13,Partizani,Dinamo Tirana,1,0,H
+2021-12-14,Laci,Tirana,1,0,H
+2021-12-17,Dinamo Tirana,Vllaznia Shkoder,0,0,D
+2021-12-18,Skenderbeu Korce,Kastrioti Kruje,2,1,H
+2021-12-19,Egnatia Rrogozhine,Laci,0,2,A
+2021-12-19,FK Kukesi,Partizani,2,1,H
+2021-12-19,Tirana,Teuta Durres,2,1,H
+2021-12-22,Laci,Kastrioti Kruje,2,0,H
+2021-12-22,Dinamo Tirana,Skenderbeu Korce,0,0,D
+2021-12-23,Teuta Durres,Egnatia Rrogozhine,1,2,A
+2021-12-23,Vllaznia Shkoder,FK Kukesi,1,1,D
+2021-12-23,Partizani,Tirana,1,2,A
+2022-01-15,Skenderbeu Korce,Laci,0,0,D
+2022-01-15,Tirana,Vllaznia Shkoder,0,0,D
+2022-01-16,Kastrioti Kruje,Teuta Durres,2,0,H
+2022-01-16,Egnatia Rrogozhine,Partizani,0,3,A
+2022-01-19,FK Kukesi,Dinamo Tirana,0,1,A
+2022-01-21,Vllaznia Shkoder,Egnatia Rrogozhine,1,1,D
+2022-01-22,Partizani,Kastrioti Kruje,0,0,D
+2022-01-22,Teuta Durres,Laci,2,4,A
+2022-01-23,FK Kukesi,Skenderbeu Korce,1,0,H
+2022-01-24,Dinamo Tirana,Tirana,0,1,A
+2022-01-30,Kastrioti Kruje,Vllaznia Shkoder,0,1,A
+2022-01-30,Tirana,FK Kukesi,4,0,H
+2022-01-31,Laci,Partizani,1,0,H
+2022-01-31,Egnatia Rrogozhine,Dinamo Tirana,1,1,D
+2022-01-31,Skenderbeu Korce,Teuta Durres,0,1,A
+2022-02-05,Kastrioti Kruje,Dinamo Tirana,2,0,H
+2022-02-05,Tirana,Skenderbeu Korce,3,2,H
+2022-02-05,Teuta Durres,Partizani,0,4,A
+2022-02-06,Laci,Vllaznia Shkoder,1,0,H
+2022-02-06,Egnatia Rrogozhine,FK Kukesi,0,2,A
+2022-02-13,FK Kukesi,Kastrioti Kruje,4,0,H
+2022-02-13,Vllaznia Shkoder,Teuta Durres,4,2,H
+2022-02-14,Skenderbeu Korce,Partizani,1,2,A
+2022-02-14,Dinamo Tirana,Laci,0,1,A
+2022-02-14,Tirana,Egnatia Rrogozhine,2,0,H
+2022-02-19,Egnatia Rrogozhine,Skenderbeu Korce,2,0,H
+2022-02-19,Partizani,Vllaznia Shkoder,1,1,D
+2022-02-20,Laci,FK Kukesi,3,0,H
+2022-02-20,Kastrioti Kruje,Tirana,2,1,H
+2022-02-20,Teuta Durres,Dinamo Tirana,1,0,H
+2022-02-25,Skenderbeu Korce,Vllaznia Shkoder,2,2,D
+2022-02-25,Dinamo Tirana,Partizani,0,0,D
+2022-02-26,Egnatia Rrogozhine,Kastrioti Kruje,2,1,H
+2022-02-26,FK Kukesi,Teuta Durres,1,1,D
+2022-02-26,Tirana,Laci,4,1,H
+2022-03-02,Partizani,FK Kukesi,5,0,H
+2022-03-02,Teuta Durres,Tirana,0,2,A
+2022-03-03,Laci,Egnatia Rrogozhine,0,0,D
+2022-03-03,Kastrioti Kruje,Skenderbeu Korce,1,0,H
+2022-03-03,Vllaznia Shkoder,Dinamo Tirana,2,1,H
+2022-03-05,Tirana,Partizani,0,0,D
+2022-03-07,Kastrioti Kruje,Laci,1,1,D
+2022-03-07,Egnatia Rrogozhine,Teuta Durres,0,1,A
+2022-03-07,FK Kukesi,Vllaznia Shkoder,0,0,D
+2022-03-08,Skenderbeu Korce,Dinamo Tirana,0,1,A
+2022-03-12,Partizani,Egnatia Rrogozhine,2,2,D
+2022-03-12,Vllaznia Shkoder,Tirana,1,2,A
+2022-03-13,Laci,Skenderbeu Korce,0,0,D
+2022-03-13,Dinamo Tirana,FK Kukesi,0,2,A
+2022-03-13,Teuta Durres,Kastrioti Kruje,0,1,A
+2022-03-19,Kastrioti Kruje,Partizani,1,0,H
+2022-03-19,Egnatia Rrogozhine,Vllaznia Shkoder,3,0,H
+2022-03-19,Tirana,Dinamo Tirana,1,0,H
+2022-03-20,Laci,Teuta Durres,0,1,A
+2022-03-20,Skenderbeu Korce,FK Kukesi,1,1,D
+2022-04-02,FK Kukesi,Tirana,0,0,D
+2022-04-02,Dinamo Tirana,Egnatia Rrogozhine,0,2,A
+2022-04-03,Teuta Durres,Skenderbeu Korce,0,0,D
+2022-04-04,Partizani,Laci,2,1,H
+2022-04-04,Vllaznia Shkoder,Kastrioti Kruje,1,2,A
+2022-04-09,FK Kukesi,Egnatia Rrogozhine,1,1,D
+2022-04-09,Partizani,Teuta Durres,3,1,H
+2022-04-09,Vllaznia Shkoder,Laci,0,0,D
+2022-04-10,Skenderbeu Korce,Tirana,0,4,A
+2022-04-11,Dinamo Tirana,Kastrioti Kruje,0,1,A
+2022-04-16,Kastrioti Kruje,FK Kukesi,1,0,H
+2022-04-16,Egnatia Rrogozhine,Tirana,0,3,A
+2022-04-17,Laci,Dinamo Tirana,2,1,H
+2022-04-17,Partizani,Skenderbeu Korce,0,0,D
+2022-04-17,Teuta Durres,Vllaznia Shkoder,1,1,D
+2022-04-23,Vllaznia Shkoder,Partizani,0,0,D
+2022-04-23,FK Kukesi,Laci,0,0,D
+2022-04-24,Skenderbeu Korce,Egnatia Rrogozhine,0,1,A
+2022-04-24,Tirana,Kastrioti Kruje,0,1,A
+2022-04-24,Dinamo Tirana,Teuta Durres,0,1,A
+2022-04-29,Partizani,Dinamo Tirana,3,1,H
+2022-04-29,Laci,Tirana,1,0,H
+2022-04-29,Teuta Durres,FK Kukesi,4,1,H
+2022-04-30,Kastrioti Kruje,Egnatia Rrogozhine,2,1,H
+2022-04-30,Vllaznia Shkoder,Skenderbeu Korce,1,0,H
+2022-05-03,FK Kukesi,Partizani,1,2,A
+2022-05-04,Skenderbeu Korce,Kastrioti Kruje,2,0,H
+2022-05-04,Tirana,Teuta Durres,1,1,D
+2022-05-04,Egnatia Rrogozhine,Laci,0,2,A
+2022-05-05,Dinamo Tirana,Vllaznia Shkoder,0,0,D
+2022-05-07,Partizani,Tirana,1,2,A
+2022-05-08,Laci,Kastrioti Kruje,4,1,H
+2022-05-09,Teuta Durres,Egnatia Rrogozhine,3,1,H
+2022-05-09,Dinamo Tirana,Skenderbeu Korce,1,1,D
+2022-05-09,Vllaznia Shkoder,FK Kukesi,2,1,H
+2022-05-14,FK Kukesi,Dinamo Tirana,2,1,H
+2022-05-14,Skenderbeu Korce,Laci,1,2,A
+2022-05-14,Tirana,Vllaznia Shkoder,3,1,H
+2022-05-14,Kastrioti Kruje,Teuta Durres,0,1,A
+2022-05-14,Egnatia Rrogozhine,Partizani,0,1,A
+2022-05-21,FK Kukesi,Skenderbeu Korce,1,0,H
+2022-05-21,Partizani,Kastrioti Kruje,4,0,H
+2022-05-21,Teuta Durres,Laci,2,1,H
+2022-05-21,Dinamo Tirana,Tirana,2,1,H
+2022-05-21,Vllaznia Shkoder,Egnatia Rrogozhine,3,1,H
+2022-05-26,Skenderbeu Korce,Teuta Durres,0,0,D
+2022-05-26,Tirana,FK Kukesi,2,3,A
+2022-05-26,Laci,Partizani,3,4,A
+2022-05-26,Kastrioti Kruje,Vllaznia Shkoder,1,3,A
+2022-05-26,Egnatia Rrogozhine,Dinamo Tirana,1,1,D
+2022-05-31,Egnatia Rrogozhine,Korabi Peshkopi,2,0,H

@@ -31,6 +31,8 @@ BASE = "http://localhost:8000"
 LEAGUES = [
     "EPL", "LaLiga", "SerieA", "Bundesliga", "Ligue1", "Championship",
     "LeagueOne", "GreekSL", "Eredivisie", "PrimeiraLiga", "BrazilSerieA",
+    "Belgium", "Turkey", "Scotland", "Denmark", "Sweden", "Norway",
+    "Poland", "Austria", "Switzerland", "Romania", "Ireland", "Finland",
     # UEFA: both endpoints 404 until the league phase is drawn (during the
     # summer qualifying rounds there is no table and no field to project).
     "CL", "EL", "ECL",

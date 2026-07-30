@@ -1,0 +1,381 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2020-07-31,FK Spartak Zdrepceva KRV,FK Zlatibor,3,0,H
+2020-07-31,TSC Backa Topola,Vojvodina,2,2,D
+2020-07-31,Mladost Lucani,Javor,2,1,H
+2020-08-01,Napredak,FK Partizan,1,3,A
+2020-08-01,FK Crvena Zvezda,Novi Pazar,3,0,H
+2020-08-01,Radnicki NIS,Metalac GM,3,0,H
+2020-08-01,Macva,Backa,1,0,H
+2020-08-01,Proleter Novi SAD,RAD,2,0,H
+2020-08-01,Cukaricki,Indjija,3,0,H
+2020-08-01,FK Vozdovac,Radnik Surdulica,1,3,A
+2020-08-05,Indjija,FK Vozdovac,0,1,A
+2020-08-05,Novi Pazar,FK Partizan,3,2,H
+2020-08-05,FK Crvena Zvezda,Radnicki NIS,3,0,H
+2020-08-05,Metalac GM,Macva,2,1,H
+2020-08-05,FK Zlatibor,Proleter Novi SAD,0,2,A
+2020-08-05,Javor,Napredak,3,0,H
+2020-08-05,Radnik Surdulica,Mladost Lucani,2,3,A
+2020-08-05,Backa,FK Spartak Zdrepceva KRV,1,3,A
+2020-08-05,RAD,TSC Backa Topola,1,3,A
+2020-08-05,Vojvodina,Cukaricki,2,2,D
+2020-08-09,Macva,FK Crvena Zvezda,0,3,A
+2020-08-09,Mladost Lucani,Indjija,2,0,H
+2020-08-09,FK Spartak Zdrepceva KRV,Metalac GM,4,1,H
+2020-08-09,Radnicki NIS,Novi Pazar,2,1,H
+2020-08-09,TSC Backa Topola,FK Zlatibor,5,1,H
+2020-08-09,Napredak,Radnik Surdulica,2,1,H
+2020-08-09,FK Partizan,Javor,4,0,H
+2020-08-09,Proleter Novi SAD,Backa,1,1,D
+2020-08-09,Cukaricki,RAD,3,0,H
+2020-08-09,FK Vozdovac,Vojvodina,1,3,A
+2020-08-14,FK Crvena Zvezda,FK Spartak Zdrepceva KRV,3,2,H
+2020-08-15,Indjija,Napredak,1,0,H
+2020-08-15,Radnicki NIS,Macva,1,0,H
+2020-08-15,Novi Pazar,Javor,2,3,A
+2020-08-15,FK Zlatibor,Cukaricki,1,5,A
+2020-08-15,Radnik Surdulica,FK Partizan,0,2,A
+2020-08-16,Backa,TSC Backa Topola,1,1,D
+2020-08-16,Vojvodina,Mladost Lucani,3,0,H
+2020-08-16,Metalac GM,Proleter Novi SAD,1,1,D
+2020-08-16,RAD,FK Vozdovac,1,3,A
+2020-08-21,Proleter Novi SAD,FK Crvena Zvezda,0,1,A
+2020-08-21,TSC Backa Topola,Metalac GM,2,3,A
+2020-08-22,FK Spartak Zdrepceva KRV,Radnicki NIS,2,0,H
+2020-08-22,Javor,Radnik Surdulica,2,1,H
+2020-08-22,Cukaricki,Backa,1,0,H
+2020-08-22,FK Partizan,Indjija,5,0,H
+2020-08-23,Napredak,Vojvodina,0,1,A
+2020-08-23,Mladost Lucani,RAD,1,0,H
+2020-08-23,Macva,Novi Pazar,1,1,D
+2020-08-23,FK Vozdovac,FK Zlatibor,1,1,D
+2020-08-28,Indjija,Javor,3,2,H
+2020-08-28,Metalac GM,Cukaricki,0,0,D
+2020-08-29,RAD,Napredak,3,1,H
+2020-08-29,Radnicki NIS,Proleter Novi SAD,2,0,H
+2020-08-29,Novi Pazar,Radnik Surdulica,0,0,D
+2020-08-29,FK Zlatibor,Mladost Lucani,1,0,H
+2020-08-29,Backa,FK Vozdovac,2,1,H
+2020-08-30,Vojvodina,FK Partizan,3,2,H
+2020-08-30,Macva,FK Spartak Zdrepceva KRV,0,4,A
+2020-08-30,FK Crvena Zvezda,TSC Backa Topola,5,0,H
+2020-09-11,Cukaricki,FK Crvena Zvezda,1,3,A
+2020-09-12,FK Spartak Zdrepceva KRV,Novi Pazar,1,1,D
+2020-09-12,TSC Backa Topola,Radnicki NIS,1,3,A
+2020-09-12,Radnik Surdulica,Indjija,0,2,A
+2020-09-12,FK Vozdovac,Metalac GM,4,0,H
+2020-09-12,FK Partizan,RAD,3,0,H
+2020-09-13,Mladost Lucani,Backa,2,1,H
+2020-09-13,Proleter Novi SAD,Macva,0,0,D
+2020-09-13,Javor,Vojvodina,2,1,H
+2020-09-13,Napredak,FK Zlatibor,1,1,D
+2020-09-18,Vojvodina,Radnik Surdulica,2,0,H
+2020-09-19,Radnicki NIS,Cukaricki,0,0,D
+2020-09-19,Metalac GM,Mladost Lucani,1,1,D
+2020-09-19,Backa,Napredak,0,0,D
+2020-09-20,FK Spartak Zdrepceva KRV,Proleter Novi SAD,1,2,A
+2020-09-20,Novi Pazar,Indjija,1,0,H
+2020-09-20,RAD,Javor,1,0,H
+2020-09-20,FK Zlatibor,FK Partizan,0,1,A
+2020-09-20,FK Crvena Zvezda,FK Vozdovac,6,0,H
+2020-09-21,Macva,TSC Backa Topola,1,4,A
+2020-09-25,FK Vozdovac,Radnicki NIS,5,0,H
+2020-09-26,TSC Backa Topola,FK Spartak Zdrepceva KRV,3,0,H
+2020-09-26,Javor,FK Zlatibor,1,1,D
+2020-09-26,Cukaricki,Macva,4,0,H
+2020-09-26,Radnik Surdulica,RAD,4,2,H
+2020-09-26,Mladost Lucani,FK Crvena Zvezda,0,4,A
+2020-09-27,Proleter Novi SAD,Novi Pazar,1,0,H
+2020-09-27,Napredak,Metalac GM,1,2,A
+2020-09-28,Indjija,Vojvodina,0,2,A
+2020-09-28,FK Partizan,Backa,2,1,H
+2020-10-02,Radnicki NIS,Mladost Lucani,1,1,D
+2020-10-03,FK Spartak Zdrepceva KRV,Cukaricki,4,2,H
+2020-10-03,Macva,FK Vozdovac,0,2,A
+2020-10-03,Novi Pazar,Vojvodina,3,1,H
+2020-10-03,Backa,Javor,2,2,D
+2020-10-03,Metalac GM,FK Partizan,1,1,D
+2020-10-04,Proleter Novi SAD,TSC Backa Topola,1,0,H
+2020-10-04,FK Zlatibor,Radnik Surdulica,1,4,A
+2020-10-04,RAD,Indjija,2,1,H
+2020-10-04,FK Crvena Zvezda,Napredak,3,0,H
+2020-10-16,Vojvodina,RAD,4,1,H
+2020-10-16,TSC Backa Topola,Novi Pazar,7,0,H
+2020-10-16,Cukaricki,Proleter Novi SAD,1,2,A
+2020-10-16,Radnik Surdulica,Backa,1,0,H
+2020-10-17,Indjija,FK Zlatibor,1,0,H
+2020-10-17,Mladost Lucani,Macva,2,1,H
+2020-10-17,Javor,Metalac GM,1,3,A
+2020-10-17,Napredak,Radnicki NIS,0,0,D
+2020-10-17,FK Vozdovac,FK Spartak Zdrepceva KRV,2,1,H
+2020-10-18,FK Partizan,FK Crvena Zvezda,1,1,D
+2020-10-25,Novi Pazar,RAD,2,1,H
+2020-10-25,FK Zlatibor,Vojvodina,0,2,A
+2020-10-25,Backa,Indjija,1,2,A
+2020-10-25,Macva,Napredak,1,2,A
+2020-10-25,Proleter Novi SAD,FK Vozdovac,1,1,D
+2020-10-25,FK Crvena Zvezda,Javor,0,0,D
+2020-10-26,FK Spartak Zdrepceva KRV,Mladost Lucani,1,0,H
+2020-10-26,Radnicki NIS,FK Partizan,1,0,H
+2020-10-26,TSC Backa Topola,Cukaricki,0,0,D
+2020-10-26,Metalac GM,Radnik Surdulica,1,1,D
+2020-10-30,Vojvodina,Backa,3,1,H
+2020-10-31,Indjija,Metalac GM,0,1,A
+2020-10-31,Cukaricki,Novi Pazar,4,0,H
+2020-10-31,FK Vozdovac,TSC Backa Topola,2,0,H
+2020-10-31,RAD,FK Zlatibor,0,2,A
+2020-10-31,FK Partizan,Macva,2,0,H
+2020-11-01,Mladost Lucani,Proleter Novi SAD,0,0,D
+2020-11-01,Javor,Radnicki NIS,1,0,H
+2020-11-01,Napredak,FK Spartak Zdrepceva KRV,1,1,D
+2020-11-01,Radnik Surdulica,FK Crvena Zvezda,1,4,A
+2020-11-06,Metalac GM,Vojvodina,3,3,D
+2020-11-07,Proleter Novi SAD,Napredak,1,0,H
+2020-11-07,Novi Pazar,FK Zlatibor,1,2,A
+2020-11-07,Backa,RAD,0,1,A
+2020-11-07,Radnicki NIS,Radnik Surdulica,0,1,A
+2020-11-07,Macva,Javor,1,0,H
+2020-11-07,TSC Backa Topola,Mladost Lucani,5,0,H
+2020-11-07,Cukaricki,FK Vozdovac,3,2,H
+2020-11-07,FK Spartak Zdrepceva KRV,FK Partizan,1,2,A
+2020-11-08,FK Crvena Zvezda,Indjija,3,2,H
+2020-11-20,Mladost Lucani,Cukaricki,1,1,D
+2020-11-20,Javor,FK Spartak Zdrepceva KRV,1,3,A
+2020-11-20,Radnik Surdulica,Macva,3,0,H
+2020-11-21,Indjija,Radnicki NIS,1,0,H
+2020-11-21,Napredak,TSC Backa Topola,2,1,H
+2020-11-21,FK Vozdovac,Novi Pazar,1,1,D
+2020-11-21,FK Partizan,Proleter Novi SAD,1,0,H
+2020-11-22,FK Zlatibor,Backa,1,0,H
+2020-11-22,Vojvodina,FK Crvena Zvezda,0,2,A
+2020-11-28,Macva,Indjija,3,0,H
+2020-11-29,Novi Pazar,Backa,0,0,D
+2020-11-29,Metalac GM,FK Zlatibor,2,0,H
+2020-11-29,Cukaricki,Napredak,3,0,H
+2020-11-29,FK Vozdovac,Mladost Lucani,3,2,H
+2020-11-29,TSC Backa Topola,FK Partizan,0,4,A
+2020-11-29,FK Crvena Zvezda,RAD,3,0,H
+2020-11-30,FK Spartak Zdrepceva KRV,Radnik Surdulica,0,0,D
+2020-11-30,Radnicki NIS,Vojvodina,0,1,A
+2020-11-30,Proleter Novi SAD,Javor,2,1,H
+2020-12-03,RAD,Metalac GM,1,1,D
+2020-12-04,Napredak,FK Vozdovac,3,1,H
+2020-12-05,Vojvodina,Macva,1,0,H
+2020-12-05,FK Partizan,Cukaricki,1,0,H
+2020-12-06,Indjija,FK Spartak Zdrepceva KRV,3,4,A
+2020-12-06,Mladost Lucani,Novi Pazar,3,2,H
+2020-12-06,Radnik Surdulica,Proleter Novi SAD,2,0,H
+2020-12-06,FK Zlatibor,FK Crvena Zvezda,0,1,A
+2020-12-07,Backa,Metalac GM,3,1,H
+2020-12-07,RAD,Radnicki NIS,0,1,A
+2020-12-11,Mladost Lucani,Napredak,0,0,D
+2020-12-11,Proleter Novi SAD,Indjija,1,0,H
+2020-12-11,TSC Backa Topola,Radnik Surdulica,1,3,A
+2020-12-11,Cukaricki,Javor,3,0,H
+2020-12-12,FK Spartak Zdrepceva KRV,Vojvodina,0,1,A
+2020-12-12,Radnicki NIS,FK Zlatibor,2,1,H
+2020-12-12,Macva,RAD,0,1,A
+2020-12-12,Novi Pazar,Metalac GM,1,0,H
+2020-12-12,FK Vozdovac,FK Partizan,0,2,A
+2020-12-13,FK Crvena Zvezda,Backa,2,0,H
+2020-12-16,FK Partizan,Mladost Lucani,4,0,H
+2020-12-16,FK Zlatibor,Macva,0,1,A
+2020-12-16,Backa,Radnicki NIS,1,2,A
+2020-12-16,RAD,FK Spartak Zdrepceva KRV,0,1,A
+2020-12-16,Metalac GM,FK Crvena Zvezda,0,1,A
+2020-12-16,Javor,FK Vozdovac,3,1,H
+2020-12-16,Napredak,Novi Pazar,0,0,D
+2020-12-16,Radnik Surdulica,Cukaricki,0,1,A
+2020-12-17,Indjija,TSC Backa Topola,0,3,A
+2020-12-17,Vojvodina,Proleter Novi SAD,2,0,H
+2020-12-20,Javor,TSC Backa Topola,1,2,A
+2021-02-05,Vojvodina,TSC Backa Topola,0,1,A
+2021-02-06,Indjija,Cukaricki,0,1,A
+2021-02-06,Metalac GM,Radnicki NIS,1,1,D
+2021-02-06,FK Zlatibor,FK Spartak Zdrepceva KRV,1,1,D
+2021-02-06,Radnik Surdulica,FK Vozdovac,1,1,D
+2021-02-06,FK Partizan,Napredak,3,0,H
+2021-02-07,Novi Pazar,FK Crvena Zvezda,1,3,A
+2021-02-07,Javor,Mladost Lucani,4,1,H
+2021-02-07,Backa,Macva,2,0,H
+2021-02-07,RAD,Proleter Novi SAD,1,0,H
+2021-02-12,FK Spartak Zdrepceva KRV,Backa,1,0,H
+2021-02-12,Proleter Novi SAD,FK Zlatibor,2,2,D
+2021-02-12,TSC Backa Topola,RAD,0,0,D
+2021-02-12,Napredak,Javor,1,1,D
+2021-02-12,FK Partizan,Novi Pazar,4,1,H
+2021-02-12,Cukaricki,Vojvodina,3,3,D
+2021-02-13,Mladost Lucani,Radnik Surdulica,2,2,D
+2021-02-13,Macva,Metalac GM,2,1,H
+2021-02-13,FK Vozdovac,Indjija,1,1,D
+2021-02-13,Radnicki NIS,FK Crvena Zvezda,0,1,A
+2021-02-16,FK Zlatibor,TSC Backa Topola,0,1,A
+2021-02-16,RAD,Cukaricki,0,2,A
+2021-02-17,Indjija,Mladost Lucani,1,0,H
+2021-02-17,Javor,FK Partizan,0,1,A
+2021-02-17,Vojvodina,FK Vozdovac,2,0,H
+2021-02-17,Novi Pazar,Radnicki NIS,3,1,H
+2021-02-17,Radnik Surdulica,Napredak,2,1,H
+2021-02-17,Backa,Proleter Novi SAD,0,2,A
+2021-02-17,Metalac GM,FK Spartak Zdrepceva KRV,3,0,H
+2021-02-20,Cukaricki,FK Zlatibor,2,0,H
+2021-02-21,FK Partizan,Radnik Surdulica,3,0,H
+2021-02-21,Mladost Lucani,Vojvodina,1,1,D
+2021-02-21,Proleter Novi SAD,Metalac GM,1,2,A
+2021-02-21,Napredak,Indjija,1,0,H
+2021-02-21,FK Spartak Zdrepceva KRV,FK Crvena Zvezda,1,2,A
+2021-02-22,Macva,Radnicki NIS,0,2,A
+2021-02-22,TSC Backa Topola,Backa,3,0,H
+2021-02-22,Javor,Novi Pazar,1,0,H
+2021-02-22,FK Vozdovac,RAD,0,1,A
+2021-02-26,Indjija,FK Partizan,0,6,A
+2021-02-26,Vojvodina,Napredak,1,0,H
+2021-02-27,Radnicki NIS,FK Spartak Zdrepceva KRV,0,1,A
+2021-02-27,Novi Pazar,Macva,4,0,H
+2021-02-27,Radnik Surdulica,Javor,2,0,H
+2021-02-27,Backa,Cukaricki,1,2,A
+2021-02-27,Metalac GM,TSC Backa Topola,0,0,D
+2021-02-27,FK Zlatibor,FK Vozdovac,0,0,D
+2021-02-27,RAD,Mladost Lucani,0,1,A
+2021-02-28,FK Crvena Zvezda,Proleter Novi SAD,4,0,H
+2021-03-02,FK Partizan,Vojvodina,2,0,H
+2021-03-03,Mladost Lucani,FK Zlatibor,0,2,A
+2021-03-03,Napredak,RAD,0,2,A
+2021-03-03,Cukaricki,Metalac GM,2,0,H
+2021-03-03,Radnik Surdulica,Novi Pazar,4,1,H
+2021-03-03,FK Vozdovac,Backa,2,1,H
+2021-03-03,FK Spartak Zdrepceva KRV,Macva,3,2,H
+2021-03-03,Proleter Novi SAD,Radnicki NIS,2,1,H
+2021-03-03,TSC Backa Topola,FK Crvena Zvezda,1,3,A
+2021-03-03,Javor,Indjija,1,1,D
+2021-03-07,Indjija,Radnik Surdulica,0,1,A
+2021-03-07,Vojvodina,Javor,2,0,H
+2021-03-07,Radnicki NIS,TSC Backa Topola,2,0,H
+2021-03-07,Macva,Proleter Novi SAD,3,1,H
+2021-03-07,Novi Pazar,FK Spartak Zdrepceva KRV,2,1,H
+2021-03-07,Metalac GM,FK Vozdovac,2,1,H
+2021-03-07,RAD,FK Partizan,0,5,A
+2021-03-07,FK Crvena Zvezda,Cukaricki,2,0,H
+2021-03-08,Backa,Mladost Lucani,1,1,D
+2021-03-08,FK Zlatibor,Napredak,1,2,A
+2021-03-11,FK Crvena Zvezda,Macva,4,0,H
+2021-03-13,Cukaricki,Radnicki NIS,0,0,D
+2021-03-14,Mladost Lucani,Metalac GM,1,1,D
+2021-03-14,Indjija,Novi Pazar,1,0,H
+2021-03-14,Javor,RAD,1,1,D
+2021-03-14,Napredak,Backa,2,1,H
+2021-03-15,Proleter Novi SAD,FK Spartak Zdrepceva KRV,2,0,H
+2021-03-15,TSC Backa Topola,Macva,3,0,H
+2021-03-15,Radnik Surdulica,Vojvodina,2,2,D
+2021-03-15,FK Vozdovac,FK Crvena Zvezda,1,4,A
+2021-03-15,FK Partizan,FK Zlatibor,5,1,H
+2021-03-19,Metalac GM,Napredak,2,2,D
+2021-03-20,FK Spartak Zdrepceva KRV,TSC Backa Topola,2,2,D
+2021-03-20,Radnicki NIS,FK Vozdovac,0,1,A
+2021-03-20,FK Zlatibor,Javor,0,2,A
+2021-03-20,Backa,FK Partizan,0,4,A
+2021-03-20,FK Crvena Zvezda,Mladost Lucani,4,1,H
+2021-03-21,Vojvodina,Indjija,2,1,H
+2021-03-21,Macva,Cukaricki,1,2,A
+2021-03-21,Novi Pazar,Proleter Novi SAD,5,0,H
+2021-03-21,RAD,Radnik Surdulica,2,0,H
+2021-04-02,Mladost Lucani,Radnicki NIS,4,1,H
+2021-04-02,Vojvodina,Novi Pazar,1,0,H
+2021-04-02,TSC Backa Topola,Proleter Novi SAD,2,0,H
+2021-04-02,FK Vozdovac,Macva,0,0,D
+2021-04-02,Cukaricki,FK Spartak Zdrepceva KRV,5,1,H
+2021-04-03,Indjija,RAD,1,0,H
+2021-04-03,Javor,Backa,1,1,D
+2021-04-03,Radnik Surdulica,FK Zlatibor,2,1,H
+2021-04-03,Napredak,FK Crvena Zvezda,1,4,A
+2021-04-03,FK Partizan,Metalac GM,3,0,H
+2021-04-06,FK Spartak Zdrepceva KRV,FK Vozdovac,3,0,H
+2021-04-06,Macva,Mladost Lucani,0,2,A
+2021-04-06,Proleter Novi SAD,Cukaricki,0,1,A
+2021-04-06,Novi Pazar,TSC Backa Topola,2,1,H
+2021-04-07,Radnicki NIS,Napredak,1,2,A
+2021-04-07,Backa,Radnik Surdulica,0,2,A
+2021-04-07,RAD,Vojvodina,2,0,H
+2021-04-07,FK Crvena Zvezda,FK Partizan,1,0,H
+2021-04-08,Metalac GM,Javor,1,2,A
+2021-04-08,FK Zlatibor,Indjija,2,2,D
+2021-04-10,Mladost Lucani,FK Spartak Zdrepceva KRV,1,0,H
+2021-04-10,Cukaricki,TSC Backa Topola,0,0,D
+2021-04-10,FK Vozdovac,Proleter Novi SAD,1,1,D
+2021-04-11,Javor,FK Crvena Zvezda,1,5,A
+2021-04-11,FK Partizan,Radnicki NIS,2,0,H
+2021-04-12,Indjija,Backa,1,0,H
+2021-04-12,Vojvodina,FK Zlatibor,2,1,H
+2021-04-12,Napredak,Macva,2,0,H
+2021-04-12,Radnik Surdulica,Metalac GM,1,2,A
+2021-04-12,RAD,Novi Pazar,3,2,H
+2021-04-16,Backa,Vojvodina,1,2,A
+2021-04-16,Macva,FK Partizan,1,2,A
+2021-04-17,FK Crvena Zvezda,Radnik Surdulica,2,1,H
+2021-04-18,Novi Pazar,Cukaricki,1,3,A
+2021-04-18,Metalac GM,Indjija,0,0,D
+2021-04-18,FK Zlatibor,RAD,1,2,A
+2021-04-18,FK Spartak Zdrepceva KRV,Napredak,0,2,A
+2021-04-18,Radnicki NIS,Javor,0,0,D
+2021-04-18,Proleter Novi SAD,Mladost Lucani,0,1,A
+2021-04-18,TSC Backa Topola,FK Vozdovac,4,1,H
+2021-04-23,FK Zlatibor,Novi Pazar,0,1,A
+2021-04-24,Mladost Lucani,TSC Backa Topola,2,1,H
+2021-04-24,Javor,Macva,2,0,H
+2021-04-24,Napredak,Proleter Novi SAD,5,0,H
+2021-04-24,FK Vozdovac,Cukaricki,2,1,H
+2021-04-24,RAD,Backa,3,0,H
+2021-04-25,Vojvodina,Metalac GM,1,2,A
+2021-04-25,Radnik Surdulica,Radnicki NIS,0,0,D
+2021-04-25,Indjija,FK Crvena Zvezda,1,5,A
+2021-04-25,FK Partizan,FK Spartak Zdrepceva KRV,2,1,H
+2021-04-28,Novi Pazar,FK Vozdovac,0,2,A
+2021-04-28,Cukaricki,Mladost Lucani,4,2,H
+2021-04-28,Backa,FK Zlatibor,0,1,A
+2021-04-29,FK Spartak Zdrepceva KRV,Javor,0,2,A
+2021-04-29,Radnicki NIS,Indjija,2,0,H
+2021-04-29,Macva,Radnik Surdulica,0,5,A
+2021-04-29,TSC Backa Topola,Napredak,1,3,A
+2021-04-29,Metalac GM,RAD,3,0,H
+2021-04-29,Proleter Novi SAD,FK Partizan,1,3,A
+2021-04-29,FK Crvena Zvezda,Vojvodina,1,0,H
+2021-05-04,Mladost Lucani,FK Vozdovac,1,0,H
+2021-05-04,Javor,Proleter Novi SAD,1,1,D
+2021-05-04,Napredak,Cukaricki,1,0,H
+2021-05-04,Radnik Surdulica,FK Spartak Zdrepceva KRV,2,0,H
+2021-05-04,Backa,Novi Pazar,0,1,A
+2021-05-05,FK Partizan,TSC Backa Topola,3,1,H
+2021-05-05,Vojvodina,Radnicki NIS,0,0,D
+2021-05-05,Indjija,Macva,2,2,D
+2021-05-05,FK Zlatibor,Metalac GM,1,0,H
+2021-05-05,RAD,FK Crvena Zvezda,2,2,D
+2021-05-08,Proleter Novi SAD,Radnik Surdulica,3,0,H
+2021-05-08,Novi Pazar,Mladost Lucani,4,1,H
+2021-05-08,FK Vozdovac,Napredak,4,2,H
+2021-05-09,FK Spartak Zdrepceva KRV,Indjija,1,0,H
+2021-05-09,Radnicki NIS,RAD,2,2,D
+2021-05-09,Macva,Vojvodina,2,5,A
+2021-05-09,TSC Backa Topola,Javor,2,1,H
+2021-05-09,Metalac GM,Backa,3,0,H
+2021-05-09,Cukaricki,FK Partizan,0,2,A
+2021-05-09,FK Crvena Zvezda,FK Zlatibor,6,1,H
+2021-05-14,Vojvodina,FK Spartak Zdrepceva KRV,1,1,D
+2021-05-14,Radnik Surdulica,TSC Backa Topola,0,3,A
+2021-05-14,Backa,FK Crvena Zvezda,0,5,A
+2021-05-15,Indjija,Proleter Novi SAD,0,5,A
+2021-05-15,Metalac GM,Novi Pazar,1,1,D
+2021-05-15,FK Zlatibor,Radnicki NIS,0,0,D
+2021-05-15,Javor,Cukaricki,1,2,A
+2021-05-15,Napredak,Mladost Lucani,2,0,H
+2021-05-15,RAD,Macva,7,1,H
+2021-05-15,FK Partizan,FK Vozdovac,3,0,H
+2021-05-18,Macva,FK Zlatibor,1,0,H
+2021-05-18,TSC Backa Topola,Indjija,2,1,H
+2021-05-18,Cukaricki,Radnik Surdulica,2,1,H
+2021-05-18,Mladost Lucani,FK Partizan,1,0,H
+2021-05-19,FK Crvena Zvezda,Metalac GM,5,1,H
+2021-05-19,FK Spartak Zdrepceva KRV,RAD,1,1,D
+2021-05-19,Radnicki NIS,Backa,5,1,H
+2021-05-19,Proleter Novi SAD,Vojvodina,2,0,H
+2021-05-19,Novi Pazar,Napredak,2,1,H
+2021-05-19,FK Vozdovac,Javor,0,0,D

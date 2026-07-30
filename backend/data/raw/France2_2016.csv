@@ -1,0 +1,381 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2016-07-29,Nimes,Laval,0,0,D
+2016-07-29,Gazelec FC Ajaccio,Stade Brestois 29,0,0,D
+2016-07-29,Orleans,Le Havre,0,1,A
+2016-07-29,Valenciennes,Clermont Foot,2,0,H
+2016-07-29,Estac Troyes,Sochaux,1,3,A
+2016-07-29,Niort,Lens,0,0,D
+2016-07-29,Bourg-en-bresse 01,Strasbourg,0,0,D
+2016-07-29,Tours,Ajaccio,0,0,D
+2016-07-30,RED Star FC 93,Auxerre,0,0,D
+2016-08-01,Amiens,Reims,1,1,D
+2016-08-05,Reims,Bourg-en-bresse 01,1,0,H
+2016-08-05,Ajaccio,Estac Troyes,2,1,H
+2016-08-05,Clermont Foot,RED Star FC 93,0,0,D
+2016-08-05,Stade Brestois 29,Orleans,2,1,H
+2016-08-05,Auxerre,Gazelec FC Ajaccio,1,2,A
+2016-08-05,Le Havre,Nimes,1,0,H
+2016-08-05,Sochaux,Valenciennes,0,0,D
+2016-08-05,Lens,Tours,2,2,D
+2016-08-05,Laval,Niort,1,1,D
+2016-08-06,Strasbourg,Amiens,1,0,H
+2016-08-12,Amiens,Niort,2,0,H
+2016-08-12,Clermont Foot,Sochaux,1,2,A
+2016-08-12,Gazelec FC Ajaccio,Le Havre,1,1,D
+2016-08-12,Orleans,Ajaccio,2,0,H
+2016-08-12,RED Star FC 93,Stade Brestois 29,0,3,A
+2016-08-12,Estac Troyes,Laval,1,0,H
+2016-08-12,Bourg-en-bresse 01,Auxerre,2,4,A
+2016-08-12,Tours,Strasbourg,1,3,A
+2016-08-13,Valenciennes,Reims,0,0,D
+2016-08-15,Nimes,Lens,0,2,A
+2016-08-19,Strasbourg,Nimes,1,1,D
+2016-08-19,Ajaccio,Bourg-en-bresse 01,3,1,H
+2016-08-19,Stade Brestois 29,Valenciennes,3,2,H
+2016-08-19,Auxerre,Clermont Foot,0,1,A
+2016-08-19,Le Havre,Estac Troyes,1,3,A
+2016-08-19,Niort,Tours,1,4,A
+2016-08-19,Sochaux,Orleans,0,0,D
+2016-08-19,Laval,Gazelec FC Ajaccio,0,1,A
+2016-08-20,Lens,Amiens,0,1,A
+2016-08-22,Reims,RED Star FC 93,2,1,H
+2016-08-26,Nimes,Amiens,2,3,A
+2016-08-26,Clermont Foot,Ajaccio,2,1,H
+2016-08-26,Gazelec FC Ajaccio,Strasbourg,1,1,D
+2016-08-26,Orleans,Auxerre,0,0,D
+2016-08-26,Valenciennes,Laval,2,0,H
+2016-08-26,Estac Troyes,Lens,1,1,D
+2016-08-26,Bourg-en-bresse 01,Niort,2,2,D
+2016-08-26,Tours,Reims,1,1,D
+2016-08-27,RED Star FC 93,Le Havre,0,0,D
+2016-08-29,Sochaux,Stade Brestois 29,2,2,D
+2016-09-09,Amiens,Tours,3,1,H
+2016-09-09,Reims,Gazelec FC Ajaccio,2,0,H
+2016-09-09,Ajaccio,RED Star FC 93,1,2,A
+2016-09-09,Stade Brestois 29,Clermont Foot,0,2,A
+2016-09-09,Auxerre,Sochaux,0,0,D
+2016-09-09,Niort,Nimes,1,3,A
+2016-09-09,Lens,Bourg-en-bresse 01,1,1,D
+2016-09-09,Laval,Orleans,3,1,H
+2016-09-10,Le Havre,Valenciennes,2,2,D
+2016-09-12,Strasbourg,Estac Troyes,2,0,H
+2016-09-16,Clermont Foot,Lens,1,1,D
+2016-09-16,Orleans,Strasbourg,3,1,H
+2016-09-16,RED Star FC 93,Laval,1,0,H
+2016-09-16,Valenciennes,Ajaccio,1,1,D
+2016-09-16,Estac Troyes,Niort,1,1,D
+2016-09-16,Sochaux,Reims,1,1,D
+2016-09-16,Bourg-en-bresse 01,Le Havre,2,1,H
+2016-09-16,Tours,Nimes,1,3,A
+2016-09-17,Stade Brestois 29,Auxerre,1,0,H
+2016-09-19,Strasbourg,RED Star FC 93,0,0,D
+2016-09-20,Amiens,Valenciennes,0,0,D
+2016-09-20,Nimes,Estac Troyes,2,2,D
+2016-09-20,Reims,Clermont Foot,2,1,H
+2016-09-20,Ajaccio,Auxerre,2,0,H
+2016-09-20,Le Havre,Stade Brestois 29,1,1,D
+2016-09-20,Niort,Gazelec FC Ajaccio,0,0,D
+2016-09-20,Lens,Orleans,4,2,H
+2016-09-20,Tours,Bourg-en-bresse 01,0,2,A
+2016-09-20,Laval,Sochaux,1,1,D
+2016-09-23,Clermont Foot,Strasbourg,0,0,D
+2016-09-23,Gazelec FC Ajaccio,Nimes,0,2,A
+2016-09-23,Orleans,Amiens,1,2,A
+2016-09-23,RED Star FC 93,Niort,0,1,A
+2016-09-23,Auxerre,Le Havre,0,1,A
+2016-09-23,Estac Troyes,Tours,3,1,H
+2016-09-23,Sochaux,Ajaccio,1,0,H
+2016-09-23,Bourg-en-bresse 01,Laval,0,0,D
+2016-09-24,Valenciennes,Lens,1,2,A
+2016-09-26,Stade Brestois 29,Reims,2,1,H
+2016-09-27,Gazelec FC Ajaccio,Amiens,1,1,D
+2016-09-30,Amiens,Estac Troyes,0,1,A
+2016-09-30,Nimes,Bourg-en-bresse 01,0,0,D
+2016-09-30,Reims,Auxerre,3,0,H
+2016-09-30,Ajaccio,Stade Brestois 29,1,1,D
+2016-09-30,Niort,Orleans,1,0,H
+2016-09-30,Lens,RED Star FC 93,2,0,H
+2016-09-30,Tours,Gazelec FC Ajaccio,0,3,A
+2016-09-30,Laval,Clermont Foot,1,1,D
+2016-10-01,Strasbourg,Valenciennes,2,4,A
+2016-10-03,Le Havre,Sochaux,2,1,H
+2016-10-14,Ajaccio,Reims,1,0,H
+2016-10-14,Clermont Foot,Le Havre,1,3,A
+2016-10-14,Orleans,Tours,0,0,D
+2016-10-14,RED Star FC 93,Nimes,3,3,D
+2016-10-14,Valenciennes,Niort,3,1,H
+2016-10-14,Auxerre,Laval,2,0,H
+2016-10-14,Estac Troyes,Gazelec FC Ajaccio,1,0,H
+2016-10-14,Bourg-en-bresse 01,Amiens,2,4,A
+2016-10-15,Stade Brestois 29,Strasbourg,2,1,H
+2016-10-17,Sochaux,Lens,1,0,H
+2016-10-21,Nimes,Sochaux,0,0,D
+2016-10-21,Strasbourg,Auxerre,2,1,H
+2016-10-21,Gazelec FC Ajaccio,Orleans,2,0,H
+2016-10-21,Estac Troyes,Bourg-en-bresse 01,1,0,H
+2016-10-21,Le Havre,Ajaccio,2,0,H
+2016-10-21,Niort,Clermont Foot,2,1,H
+2016-10-21,Tours,Valenciennes,4,1,H
+2016-10-21,Laval,Stade Brestois 29,0,1,A
+2016-10-22,Lens,Reims,1,1,D
+2016-10-24,Amiens,RED Star FC 93,0,0,D
+2016-10-28,Reims,Le Havre,1,0,H
+2016-10-28,Ajaccio,Laval,1,3,A
+2016-10-28,Orleans,Estac Troyes,1,1,D
+2016-10-28,RED Star FC 93,Tours,3,1,H
+2016-10-28,Valenciennes,Nimes,2,3,A
+2016-10-28,Bourg-en-bresse 01,Gazelec FC Ajaccio,1,0,H
+2016-10-29,Clermont Foot,Amiens,1,0,H
+2016-10-29,Auxerre,Niort,0,4,A
+2016-10-29,Sochaux,Strasbourg,1,2,A
+2016-10-31,Stade Brestois 29,Lens,1,2,A
+2016-11-04,Amiens,Auxerre,0,0,D
+2016-11-04,Nimes,Clermont Foot,1,1,D
+2016-11-04,Gazelec FC Ajaccio,RED Star FC 93,2,1,H
+2016-11-04,Estac Troyes,Valenciennes,2,0,H
+2016-11-04,Niort,Sochaux,2,0,H
+2016-11-04,Bourg-en-bresse 01,Orleans,0,0,D
+2016-11-04,Tours,Stade Brestois 29,0,1,A
+2016-11-04,Laval,Le Havre,0,2,A
+2016-11-05,Strasbourg,Reims,1,2,A
+2016-11-07,Lens,Ajaccio,1,1,D
+2016-11-18,Reims,Laval,0,2,A
+2016-11-18,Ajaccio,Strasbourg,2,0,H
+2016-11-18,Clermont Foot,Gazelec FC Ajaccio,3,1,H
+2016-11-18,Orleans,Nimes,2,1,H
+2016-11-18,RED Star FC 93,Estac Troyes,1,2,A
+2016-11-18,Valenciennes,Bourg-en-bresse 01,3,3,D
+2016-11-18,Auxerre,Lens,1,1,D
+2016-11-18,Sochaux,Tours,2,1,H
+2016-11-19,Le Havre,Amiens,0,0,D
+2016-11-21,Stade Brestois 29,Niort,2,3,A
+2016-11-25,Nimes,Reims,3,0,H
+2016-11-25,Strasbourg,Laval,1,0,H
+2016-11-25,Gazelec FC Ajaccio,Sochaux,0,1,A
+2016-11-25,Orleans,Valenciennes,0,2,A
+2016-11-25,Estac Troyes,Clermont Foot,1,0,H
+2016-11-25,Niort,Ajaccio,1,1,D
+2016-11-25,Lens,Le Havre,1,0,H
+2016-11-25,Bourg-en-bresse 01,RED Star FC 93,4,1,H
+2016-11-25,Tours,Auxerre,2,1,H
+2016-11-26,Amiens,Stade Brestois 29,3,0,H
+2016-11-28,Reims,Niort,1,0,H
+2016-11-29,Ajaccio,Amiens,1,1,D
+2016-11-29,Clermont Foot,Tours,0,0,D
+2016-11-29,RED Star FC 93,Orleans,1,0,H
+2016-11-29,Valenciennes,Gazelec FC Ajaccio,0,0,D
+2016-11-29,Stade Brestois 29,Estac Troyes,2,1,H
+2016-11-29,Auxerre,Nimes,2,0,H
+2016-11-29,Le Havre,Strasbourg,0,1,A
+2016-11-29,Sochaux,Bourg-en-bresse 01,1,1,D
+2016-11-29,Laval,Lens,0,1,A
+2016-12-09,Amiens,Sochaux,0,1,A
+2016-12-09,Nimes,Stade Brestois 29,1,2,A
+2016-12-09,Gazelec FC Ajaccio,Ajaccio,4,1,H
+2016-12-09,RED Star FC 93,Valenciennes,2,2,D
+2016-12-09,Estac Troyes,Auxerre,1,1,D
+2016-12-09,Niort,Le Havre,1,1,D
+2016-12-09,Bourg-en-bresse 01,Clermont Foot,1,1,D
+2016-12-09,Tours,Laval,1,1,D
+2016-12-10,Strasbourg,Lens,3,1,H
+2016-12-12,Orleans,Reims,2,2,D
+2016-12-16,Strasbourg,Niort,3,0,H
+2016-12-16,Ajaccio,Nimes,1,2,A
+2016-12-16,Clermont Foot,Orleans,3,0,H
+2016-12-16,Stade Brestois 29,Bourg-en-bresse 01,0,0,D
+2016-12-16,Auxerre,Valenciennes,1,1,D
+2016-12-16,Le Havre,Tours,0,2,A
+2016-12-16,Sochaux,RED Star FC 93,2,0,H
+2016-12-16,Laval,Amiens,2,2,D
+2016-12-17,Lens,Gazelec FC Ajaccio,2,1,H
+2016-12-19,Reims,Estac Troyes,2,0,H
+2017-01-13,Nimes,Le Havre,0,0,D
+2017-01-13,Gazelec FC Ajaccio,Auxerre,2,0,H
+2017-01-13,Orleans,Stade Brestois 29,0,1,A
+2017-01-13,RED Star FC 93,Clermont Foot,1,3,A
+2017-01-13,Estac Troyes,Ajaccio,1,2,A
+2017-01-13,Niort,Laval,2,2,D
+2017-01-13,Bourg-en-bresse 01,Reims,1,0,H
+2017-01-13,Tours,Lens,2,3,A
+2017-01-14,Amiens,Strasbourg,4,3,H
+2017-01-16,Valenciennes,Sochaux,2,1,H
+2017-01-20,Reims,Valenciennes,0,0,D
+2017-01-20,Ajaccio,Orleans,1,0,H
+2017-01-20,Auxerre,Bourg-en-bresse 01,0,2,A
+2017-01-20,Le Havre,Gazelec FC Ajaccio,1,2,A
+2017-01-20,Niort,Amiens,2,1,H
+2017-01-20,Sochaux,Clermont Foot,3,3,D
+2017-01-20,Laval,Estac Troyes,1,0,H
+2017-01-21,Lens,Nimes,1,3,A
+2017-01-23,Stade Brestois 29,RED Star FC 93,0,1,A
+2017-01-27,Nimes,Strasbourg,2,2,D
+2017-01-27,Clermont Foot,Auxerre,0,1,A
+2017-01-27,Gazelec FC Ajaccio,Laval,1,1,D
+2017-01-27,Orleans,Sochaux,1,0,H
+2017-01-27,Valenciennes,Stade Brestois 29,0,1,A
+2017-01-27,Estac Troyes,Le Havre,2,1,H
+2017-01-27,Bourg-en-bresse 01,Ajaccio,3,2,H
+2017-01-27,Tours,Niort,0,0,D
+2017-01-28,Amiens,Lens,2,1,H
+2017-01-30,RED Star FC 93,Reims,0,1,A
+2017-02-03,Amiens,Nimes,1,2,A
+2017-02-03,Reims,Tours,1,1,D
+2017-02-03,Strasbourg,Gazelec FC Ajaccio,2,0,H
+2017-02-03,Ajaccio,Clermont Foot,2,1,H
+2017-02-03,Le Havre,RED Star FC 93,1,1,D
+2017-02-03,Niort,Bourg-en-bresse 01,3,2,H
+2017-02-03,Lens,Estac Troyes,0,0,D
+2017-02-03,Laval,Valenciennes,0,0,D
+2017-02-04,Stade Brestois 29,Sochaux,2,0,H
+2017-02-04,Auxerre,Orleans,0,2,A
+2017-02-06,RED Star FC 93,Ajaccio,2,0,H
+2017-02-06,Valenciennes,Le Havre,0,0,D
+2017-02-07,Nimes,Niort,3,0,H
+2017-02-07,Clermont Foot,Stade Brestois 29,1,1,D
+2017-02-07,Gazelec FC Ajaccio,Reims,1,1,D
+2017-02-07,Orleans,Laval,2,1,H
+2017-02-07,Estac Troyes,Strasbourg,4,0,H
+2017-02-07,Sochaux,Auxerre,0,1,A
+2017-02-07,Bourg-en-bresse 01,Lens,0,0,D
+2017-02-07,Tours,Amiens,0,3,A
+2017-02-10,Amiens,Gazelec FC Ajaccio,4,0,H
+2017-02-10,Nimes,Tours,1,1,D
+2017-02-10,Ajaccio,Valenciennes,3,2,H
+2017-02-10,Auxerre,Stade Brestois 29,3,1,H
+2017-02-10,Le Havre,Bourg-en-bresse 01,3,0,H
+2017-02-10,Niort,Estac Troyes,3,2,H
+2017-02-10,Laval,RED Star FC 93,1,1,D
+2017-02-11,Reims,Sochaux,0,1,A
+2017-02-13,Strasbourg,Orleans,3,2,H
+2017-02-13,Lens,Clermont Foot,3,1,H
+2017-02-17,Clermont Foot,Reims,0,1,A
+2017-02-17,Gazelec FC Ajaccio,Niort,1,0,H
+2017-02-17,RED Star FC 93,Strasbourg,1,1,D
+2017-02-17,Valenciennes,Amiens,1,1,D
+2017-02-17,Auxerre,Ajaccio,1,0,H
+2017-02-17,Estac Troyes,Nimes,0,0,D
+2017-02-17,Sochaux,Laval,1,1,D
+2017-02-17,Bourg-en-bresse 01,Tours,3,2,H
+2017-02-18,Stade Brestois 29,Le Havre,2,0,H
+2017-02-20,Orleans,Lens,2,1,H
+2017-02-21,Strasbourg,Tours,4,2,H
+2017-02-24,Amiens,Orleans,0,2,A
+2017-02-24,Nimes,Gazelec FC Ajaccio,1,1,D
+2017-02-24,Strasbourg,Clermont Foot,0,2,A
+2017-02-24,Ajaccio,Sochaux,0,0,D
+2017-02-24,Le Havre,Auxerre,1,0,H
+2017-02-24,Niort,RED Star FC 93,2,3,A
+2017-02-24,Tours,Estac Troyes,0,0,D
+2017-02-24,Laval,Bourg-en-bresse 01,2,4,A
+2017-02-25,Lens,Valenciennes,2,0,H
+2017-02-27,Reims,Stade Brestois 29,1,1,D
+2017-03-03,Clermont Foot,Laval,1,1,D
+2017-03-03,Gazelec FC Ajaccio,Tours,2,2,D
+2017-03-03,RED Star FC 93,Lens,2,3,A
+2017-03-03,Stade Brestois 29,Ajaccio,1,2,A
+2017-03-03,Auxerre,Reims,1,2,A
+2017-03-03,Sochaux,Le Havre,0,1,A
+2017-03-03,Bourg-en-bresse 01,Nimes,0,1,A
+2017-03-04,Orleans,Niort,1,1,D
+2017-03-04,Estac Troyes,Amiens,4,0,H
+2017-03-06,Valenciennes,Strasbourg,2,1,H
+2017-03-10,Amiens,Bourg-en-bresse 01,2,1,H
+2017-03-10,Nimes,RED Star FC 93,2,0,H
+2017-03-10,Reims,Ajaccio,3,0,H
+2017-03-10,Gazelec FC Ajaccio,Estac Troyes,3,1,H
+2017-03-10,Le Havre,Clermont Foot,0,1,A
+2017-03-10,Niort,Valenciennes,2,1,H
+2017-03-10,Tours,Orleans,3,1,H
+2017-03-10,Laval,Auxerre,0,0,D
+2017-03-11,Strasbourg,Stade Brestois 29,4,1,H
+2017-03-13,Lens,Sochaux,2,1,H
+2017-03-17,Ajaccio,Le Havre,0,0,D
+2017-03-17,Clermont Foot,Niort,0,1,A
+2017-03-17,Orleans,Gazelec FC Ajaccio,1,1,D
+2017-03-17,RED Star FC 93,Amiens,0,1,A
+2017-03-17,Valenciennes,Tours,0,4,A
+2017-03-17,Stade Brestois 29,Laval,3,0,H
+2017-03-17,Sochaux,Nimes,2,1,H
+2017-03-17,Bourg-en-bresse 01,Estac Troyes,2,4,A
+2017-03-18,Reims,Lens,0,2,A
+2017-03-20,Auxerre,Strasbourg,0,2,A
+2017-03-31,Amiens,Clermont Foot,0,1,A
+2017-03-31,Nimes,Valenciennes,1,0,H
+2017-03-31,Gazelec FC Ajaccio,Bourg-en-bresse 01,2,3,A
+2017-03-31,Estac Troyes,Orleans,4,2,H
+2017-03-31,Le Havre,Reims,1,1,D
+2017-03-31,Niort,Auxerre,1,0,H
+2017-03-31,Tours,RED Star FC 93,3,1,H
+2017-03-31,Laval,Ajaccio,1,1,D
+2017-04-01,Lens,Stade Brestois 29,0,2,A
+2017-04-03,Strasbourg,Sochaux,2,0,H
+2017-04-07,Clermont Foot,Nimes,2,3,A
+2017-04-07,Orleans,Bourg-en-bresse 01,1,0,H
+2017-04-07,Valenciennes,Estac Troyes,2,0,H
+2017-04-07,Stade Brestois 29,Tours,1,1,D
+2017-04-07,Auxerre,Amiens,1,0,H
+2017-04-07,Le Havre,Laval,2,0,H
+2017-04-07,Sochaux,Niort,2,2,D
+2017-04-08,Reims,Strasbourg,1,1,D
+2017-04-08,RED Star FC 93,Gazelec FC Ajaccio,0,3,A
+2017-04-10,Ajaccio,Lens,3,6,A
+2017-04-14,Amiens,Le Havre,2,0,H
+2017-04-14,Nimes,Orleans,2,0,H
+2017-04-14,Gazelec FC Ajaccio,Clermont Foot,4,4,D
+2017-04-14,Estac Troyes,RED Star FC 93,3,2,H
+2017-04-14,Niort,Stade Brestois 29,0,3,A
+2017-04-14,Bourg-en-bresse 01,Valenciennes,0,2,A
+2017-04-14,Tours,Sochaux,3,1,H
+2017-04-14,Laval,Reims,5,2,H
+2017-04-15,Lens,Auxerre,0,1,A
+2017-04-17,Strasbourg,Ajaccio,4,2,H
+2017-04-21,Reims,Nimes,1,1,D
+2017-04-21,Ajaccio,Niort,3,1,H
+2017-04-21,Clermont Foot,Estac Troyes,1,1,D
+2017-04-21,RED Star FC 93,Bourg-en-bresse 01,4,1,H
+2017-04-21,Valenciennes,Orleans,4,0,H
+2017-04-21,Auxerre,Tours,1,1,D
+2017-04-21,Sochaux,Gazelec FC Ajaccio,1,2,A
+2017-04-21,Laval,Strasbourg,1,2,A
+2017-04-22,Stade Brestois 29,Amiens,2,3,A
+2017-04-24,Le Havre,Lens,1,0,H
+2017-04-28,Amiens,Ajaccio,2,1,H
+2017-04-28,Nimes,Auxerre,0,1,A
+2017-04-28,Strasbourg,Le Havre,2,0,H
+2017-04-28,Gazelec FC Ajaccio,Valenciennes,1,0,H
+2017-04-28,Orleans,RED Star FC 93,4,0,H
+2017-04-28,Niort,Reims,0,3,A
+2017-04-28,Bourg-en-bresse 01,Sochaux,0,1,A
+2017-04-28,Tours,Clermont Foot,3,0,H
+2017-04-29,Estac Troyes,Stade Brestois 29,1,0,H
+2017-05-01,Lens,Laval,2,0,H
+2017-05-05,Reims,Orleans,0,2,A
+2017-05-05,Clermont Foot,Bourg-en-bresse 01,2,3,A
+2017-05-05,Valenciennes,RED Star FC 93,0,0,D
+2017-05-05,Auxerre,Estac Troyes,2,3,A
+2017-05-05,Le Havre,Niort,0,0,D
+2017-05-05,Sochaux,Amiens,1,2,A
+2017-05-05,Laval,Tours,1,3,A
+2017-05-06,Stade Brestois 29,Nimes,2,3,A
+2017-05-08,Ajaccio,Gazelec FC Ajaccio,1,0,H
+2017-05-08,Lens,Strasbourg,1,1,D
+2017-05-12,Amiens,Laval,3,0,H
+2017-05-12,Nimes,Ajaccio,3,1,H
+2017-05-12,Gazelec FC Ajaccio,Lens,0,4,A
+2017-05-12,Orleans,Clermont Foot,2,2,D
+2017-05-12,RED Star FC 93,Sochaux,1,1,D
+2017-05-12,Valenciennes,Auxerre,0,0,D
+2017-05-12,Estac Troyes,Reims,2,0,H
+2017-05-12,Niort,Strasbourg,2,2,D
+2017-05-12,Bourg-en-bresse 01,Stade Brestois 29,1,2,A
+2017-05-12,Tours,Le Havre,0,4,A
+2017-05-19,Reims,Amiens,1,2,A
+2017-05-19,Strasbourg,Bourg-en-bresse 01,2,1,H
+2017-05-19,Ajaccio,Tours,3,2,H
+2017-05-19,Clermont Foot,Valenciennes,1,0,H
+2017-05-19,Stade Brestois 29,Gazelec FC Ajaccio,6,2,H
+2017-05-19,Auxerre,RED Star FC 93,1,0,H
+2017-05-19,Le Havre,Orleans,4,1,H
+2017-05-19,Sochaux,Estac Troyes,2,3,A
+2017-05-19,Lens,Niort,3,1,H
+2017-05-19,Laval,Nimes,1,2,A

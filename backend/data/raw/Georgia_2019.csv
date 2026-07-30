@@ -1,0 +1,181 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2019-03-01,Saburtalo,Dinamo Batumi,1,0,H
+2019-03-02,Lokomotivi Tbilisi,Rustavi,4,1,H
+2019-03-02,Torpedo Kutaisi,Sioni,3,2,H
+2019-03-03,Dinamo Tbilisi,Chikhura Sachkhere,2,0,H
+2019-03-03,Dila,WIT Georgia,0,1,A
+2019-03-05,Lokomotivi Tbilisi,Saburtalo,1,3,A
+2019-03-05,Dinamo Batumi,Torpedo Kutaisi,0,2,A
+2019-03-06,Sioni,Dinamo Tbilisi,2,1,H
+2019-03-06,Rustavi,WIT Georgia,0,0,D
+2019-03-06,Chikhura Sachkhere,Dila,1,1,D
+2019-03-09,Torpedo Kutaisi,Lokomotivi Tbilisi,0,2,A
+2019-03-10,Dinamo Tbilisi,Dinamo Batumi,0,1,A
+2019-03-10,Saburtalo,Rustavi,2,1,H
+2019-03-11,WIT Georgia,Chikhura Sachkhere,1,1,D
+2019-03-11,Dila,Sioni,0,0,D
+2019-03-15,Saburtalo,Torpedo Kutaisi,3,0,H
+2019-03-16,Rustavi,Chikhura Sachkhere,1,1,D
+2019-03-16,Dinamo Batumi,Dila,1,0,H
+2019-03-17,Sioni,WIT Georgia,1,0,H
+2019-03-17,Lokomotivi Tbilisi,Dinamo Tbilisi,0,4,A
+2019-03-30,Chikhura Sachkhere,Sioni,5,0,H
+2019-03-30,Dila,Lokomotivi Tbilisi,3,1,H
+2019-03-30,WIT Georgia,Dinamo Batumi,0,1,A
+2019-03-31,Torpedo Kutaisi,Rustavi,2,0,H
+2019-03-31,Dinamo Tbilisi,Saburtalo,4,2,H
+2019-04-02,Lokomotivi Tbilisi,WIT Georgia,0,1,A
+2019-04-02,Dinamo Batumi,Chikhura Sachkhere,0,0,D
+2019-04-03,Torpedo Kutaisi,Dinamo Tbilisi,0,0,D
+2019-04-03,Rustavi,Sioni,1,1,D
+2019-04-03,Saburtalo,Dila,2,1,H
+2019-04-06,Chikhura Sachkhere,Lokomotivi Tbilisi,1,0,H
+2019-04-07,Sioni,Dinamo Batumi,2,4,A
+2019-04-07,Dinamo Tbilisi,Rustavi,3,1,H
+2019-04-07,Dila,Torpedo Kutaisi,0,2,A
+2019-04-08,WIT Georgia,Saburtalo,0,3,A
+2019-04-12,Dinamo Tbilisi,Dila,1,0,H
+2019-04-12,Lokomotivi Tbilisi,Sioni,1,2,A
+2019-04-13,Torpedo Kutaisi,WIT Georgia,2,1,H
+2019-04-13,Rustavi,Dinamo Batumi,0,2,A
+2019-04-13,Saburtalo,Chikhura Sachkhere,2,3,A
+2019-04-20,Sioni,Saburtalo,2,3,A
+2019-04-20,Dila,Rustavi,2,1,H
+2019-04-20,Dinamo Batumi,Lokomotivi Tbilisi,2,1,H
+2019-04-21,Chikhura Sachkhere,Torpedo Kutaisi,0,0,D
+2019-04-21,WIT Georgia,Dinamo Tbilisi,1,0,H
+2019-04-24,Rustavi,Lokomotivi Tbilisi,0,2,A
+2019-04-24,Dinamo Batumi,Saburtalo,4,2,H
+2019-04-25,Sioni,Torpedo Kutaisi,2,1,H
+2019-04-25,Chikhura Sachkhere,Dinamo Tbilisi,2,2,D
+2019-04-25,WIT Georgia,Dila,0,1,A
+2019-05-04,Torpedo Kutaisi,Dinamo Batumi,3,2,H
+2019-05-04,Dinamo Tbilisi,Sioni,5,1,H
+2019-05-04,WIT Georgia,Rustavi,2,3,A
+2019-05-05,Dila,Chikhura Sachkhere,2,0,H
+2019-05-05,Saburtalo,Lokomotivi Tbilisi,1,0,H
+2019-05-10,Lokomotivi Tbilisi,Torpedo Kutaisi,1,3,A
+2019-05-10,Rustavi,Saburtalo,3,1,H
+2019-05-11,Sioni,Dila,2,1,H
+2019-05-11,Chikhura Sachkhere,WIT Georgia,1,0,H
+2019-05-11,Dinamo Batumi,Dinamo Tbilisi,3,2,H
+2019-05-14,Torpedo Kutaisi,Saburtalo,2,3,A
+2019-05-14,WIT Georgia,Sioni,0,1,A
+2019-05-15,Chikhura Sachkhere,Rustavi,0,0,D
+2019-05-15,Dila,Dinamo Batumi,1,0,H
+2019-05-15,Dinamo Tbilisi,Lokomotivi Tbilisi,1,3,A
+2019-05-19,Sioni,Chikhura Sachkhere,0,5,A
+2019-05-19,Lokomotivi Tbilisi,Dila,1,0,H
+2019-05-19,Dinamo Batumi,WIT Georgia,2,0,H
+2019-05-20,Rustavi,Torpedo Kutaisi,2,4,A
+2019-05-20,Saburtalo,Dinamo Tbilisi,2,0,H
+2019-05-23,Chikhura Sachkhere,Dinamo Batumi,1,2,A
+2019-05-23,WIT Georgia,Lokomotivi Tbilisi,0,3,A
+2019-05-24,Sioni,Rustavi,3,3,D
+2019-05-24,Dinamo Tbilisi,Torpedo Kutaisi,2,1,H
+2019-05-24,Dila,Saburtalo,1,1,D
+2019-05-28,Torpedo Kutaisi,Dila,3,3,D
+2019-05-28,Rustavi,Dinamo Tbilisi,0,1,A
+2019-05-28,Saburtalo,WIT Georgia,3,0,H
+2019-05-29,Lokomotivi Tbilisi,Chikhura Sachkhere,2,0,H
+2019-05-29,Dinamo Batumi,Sioni,5,1,H
+2019-06-01,Dila,Dinamo Tbilisi,2,3,A
+2019-06-01,WIT Georgia,Torpedo Kutaisi,3,0,H
+2019-06-02,Sioni,Lokomotivi Tbilisi,0,0,D
+2019-06-02,Dinamo Batumi,Rustavi,2,1,H
+2019-06-02,Chikhura Sachkhere,Saburtalo,0,0,D
+2019-06-14,Rustavi,Dila,2,1,H
+2019-06-14,Saburtalo,Sioni,2,1,H
+2019-06-15,Torpedo Kutaisi,Chikhura Sachkhere,5,3,H
+2019-06-15,Lokomotivi Tbilisi,Dinamo Batumi,1,0,H
+2019-06-16,Dinamo Tbilisi,WIT Georgia,2,1,H
+2019-06-22,Torpedo Kutaisi,Sioni,7,0,H
+2019-06-22,Lokomotivi Tbilisi,Rustavi,1,1,D
+2019-06-22,Saburtalo,Dinamo Batumi,0,0,D
+2019-06-23,Dinamo Tbilisi,Chikhura Sachkhere,1,0,H
+2019-06-23,Dila,WIT Georgia,2,0,H
+2019-06-25,Lokomotivi Tbilisi,Saburtalo,1,0,H
+2019-06-25,Dinamo Batumi,Torpedo Kutaisi,2,2,D
+2019-06-26,Chikhura Sachkhere,Dila,4,1,H
+2019-06-27,Sioni,Dinamo Tbilisi,0,3,A
+2019-06-27,Rustavi,WIT Georgia,1,0,H
+2019-07-02,Torpedo Kutaisi,Lokomotivi Tbilisi,0,2,A
+2019-07-02,WIT Georgia,Chikhura Sachkhere,0,0,D
+2019-07-02,Saburtalo,Rustavi,2,2,D
+2019-07-03,Dila,Sioni,2,0,H
+2019-07-03,Dinamo Tbilisi,Dinamo Batumi,2,1,H
+2019-08-03,Sioni,WIT Georgia,1,0,H
+2019-08-04,Dinamo Batumi,Dila,0,0,D
+2019-08-04,Lokomotivi Tbilisi,Dinamo Tbilisi,0,6,A
+2019-08-06,Rustavi,Chikhura Sachkhere,1,0,H
+2019-08-10,Dila,Lokomotivi Tbilisi,0,1,A
+2019-08-10,WIT Georgia,Dinamo Batumi,0,3,A
+2019-08-11,Torpedo Kutaisi,Rustavi,0,1,A
+2019-08-11,Chikhura Sachkhere,Sioni,2,2,D
+2019-08-16,Lokomotivi Tbilisi,WIT Georgia,1,1,D
+2019-08-17,Rustavi,Sioni,2,1,H
+2019-08-17,Dinamo Batumi,Chikhura Sachkhere,2,0,H
+2019-08-20,Torpedo Kutaisi,Dinamo Tbilisi,0,1,A
+2019-08-20,Saburtalo,Dila,3,0,H
+2019-08-23,Sioni,Dinamo Batumi,0,4,A
+2019-08-24,Chikhura Sachkhere,Lokomotivi Tbilisi,3,2,H
+2019-08-24,Dila,Torpedo Kutaisi,2,2,D
+2019-08-25,WIT Georgia,Saburtalo,0,0,D
+2019-08-25,Dinamo Tbilisi,Rustavi,2,2,D
+2019-08-29,Dinamo Tbilisi,Dila,5,0,H
+2019-08-30,Lokomotivi Tbilisi,Sioni,1,1,D
+2019-08-31,Torpedo Kutaisi,WIT Georgia,1,0,H
+2019-08-31,Rustavi,Dinamo Batumi,0,2,A
+2019-09-01,Saburtalo,Chikhura Sachkhere,1,0,H
+2019-09-12,Sioni,Saburtalo,1,3,A
+2019-09-12,Chikhura Sachkhere,Torpedo Kutaisi,1,1,D
+2019-09-14,Dila,Rustavi,0,0,D
+2019-09-14,Dinamo Batumi,Lokomotivi Tbilisi,2,1,H
+2019-09-15,WIT Georgia,Dinamo Tbilisi,0,3,A
+2019-09-16,Saburtalo,Torpedo Kutaisi,1,1,D
+2019-09-20,Rustavi,Lokomotivi Tbilisi,2,1,H
+2019-09-20,Sioni,Torpedo Kutaisi,2,0,H
+2019-09-20,Dinamo Batumi,Saburtalo,1,0,H
+2019-09-21,Chikhura Sachkhere,Dinamo Tbilisi,0,2,A
+2019-09-21,WIT Georgia,Dila,0,2,A
+2019-09-28,Saburtalo,Lokomotivi Tbilisi,4,0,H
+2019-09-28,Dinamo Tbilisi,Sioni,1,1,D
+2019-09-29,Torpedo Kutaisi,Dinamo Batumi,1,2,A
+2019-09-29,WIT Georgia,Rustavi,0,0,D
+2019-09-29,Dila,Chikhura Sachkhere,2,1,H
+2019-10-02,Dinamo Tbilisi,Saburtalo,2,1,H
+2019-10-05,Sioni,Dila,0,4,A
+2019-10-05,Lokomotivi Tbilisi,Torpedo Kutaisi,2,0,H
+2019-10-06,Chikhura Sachkhere,WIT Georgia,2,1,H
+2019-10-06,Rustavi,Saburtalo,0,3,A
+2019-10-06,Dinamo Batumi,Dinamo Tbilisi,1,1,D
+2019-10-19,Torpedo Kutaisi,Saburtalo,0,2,A
+2019-10-19,Dinamo Tbilisi,Lokomotivi Tbilisi,0,1,A
+2019-10-20,Chikhura Sachkhere,Rustavi,3,2,H
+2019-10-20,WIT Georgia,Sioni,0,0,D
+2019-10-20,Dila,Dinamo Batumi,0,0,D
+2019-10-25,Dinamo Batumi,WIT Georgia,1,1,D
+2019-10-26,Sioni,Chikhura Sachkhere,2,1,H
+2019-10-27,Rustavi,Torpedo Kutaisi,2,0,H
+2019-10-27,Saburtalo,Dinamo Tbilisi,0,0,D
+2019-10-27,Lokomotivi Tbilisi,Dila,1,0,H
+2019-11-01,Chikhura Sachkhere,Dinamo Batumi,2,0,H
+2019-11-02,Sioni,Rustavi,2,1,H
+2019-11-02,WIT Georgia,Lokomotivi Tbilisi,0,2,A
+2019-11-03,Dila,Saburtalo,2,0,H
+2019-11-03,Dinamo Tbilisi,Torpedo Kutaisi,2,1,H
+2019-11-08,Dinamo Batumi,Sioni,2,0,H
+2019-11-09,Rustavi,Dinamo Tbilisi,0,2,A
+2019-11-09,Saburtalo,WIT Georgia,3,1,H
+2019-11-09,Lokomotivi Tbilisi,Chikhura Sachkhere,0,2,A
+2019-11-10,Torpedo Kutaisi,Dila,1,1,D
+2019-11-24,Chikhura Sachkhere,Saburtalo,1,3,A
+2019-11-24,Dinamo Batumi,Rustavi,2,1,H
+2019-11-24,Dila,Dinamo Tbilisi,1,2,A
+2019-11-24,Sioni,Lokomotivi Tbilisi,1,2,A
+2019-11-24,WIT Georgia,Torpedo Kutaisi,0,2,A
+2019-11-30,Rustavi,Dila,2,2,D
+2019-11-30,Saburtalo,Sioni,5,1,H
+2019-12-01,Torpedo Kutaisi,Chikhura Sachkhere,1,2,A
+2019-12-01,Dinamo Tbilisi,WIT Georgia,2,0,H
+2019-12-01,Lokomotivi Tbilisi,Dinamo Batumi,2,1,H

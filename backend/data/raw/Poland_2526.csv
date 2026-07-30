@@ -1,0 +1,307 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,PSH,PSD,PSA
+18/07/2025,Jagiellonia,Termalica B-B.,0,4,A,1.64,4.27,5.05
+18/07/2025,Lech Poznan,Cracovia,1,4,A,1.64,4.4,4.9
+19/07/2025,Widzew Lodz,Zaglebie,1,0,H,1.87,3.42,4.7
+19/07/2025,Wisla Plock,Korona Kielce,2,0,H,2.55,3.19,3.01
+19/07/2025,GKS Katowice,Rakow,0,1,A,3.71,3.53,2.05
+20/07/2025,Gornik Zabrze,Lechia Gdansk,2,1,H,2.05,3.76,3.51
+20/07/2025,Motor Lublin,Arka Gdynia,1,0,H,2.67,3.61,2.59
+20/07/2025,Radomiak Radom,Pogon Szczecin,5,1,H,2.81,3.39,2.58
+25/07/2025,Cracovia,Termalica B-B.,2,0,H,1.91,3.66,4.11
+25/07/2025,Arka Gdynia,Radomiak Radom,1,1,D,2.76,3.2,2.75
+26/07/2025,Piast Gliwice,Gornik Zabrze,0,1,A,2.61,3.22,2.9
+26/07/2025,Pogon Szczecin,Motor Lublin,4,1,H,1.63,4.33,5.05
+26/07/2025,Lechia Gdansk,Lech Poznan,3,4,A,3.27,3.82,2.12
+27/07/2025,Rakow,Wisla Plock,1,2,A,1.59,3.88,6.34
+27/07/2025,Jagiellonia,Widzew Lodz,3,2,H,2.01,3.66,3.7
+27/07/2025,Korona Kielce,Legia,0,2,A,4.15,3.81,1.85
+28/07/2025,GKS Katowice,Zaglebie,2,2,D,2.3,3.39,3.24
+01/08/2025,Zaglebie,Korona Kielce,1,1,D,2.4,3.32,3.11
+01/08/2025,Wisla Plock,Piast Gliwice,2,0,H,2.57,3.18,2.99
+02/08/2025,Termalica B-B.,Pogon Szczecin,1,1,D,3.19,3.62,2.23
+02/08/2025,Widzew Lodz,GKS Katowice,3,0,H,1.97,3.86,3.66
+02/08/2025,Lech Poznan,Gornik Zabrze,2,1,H,1.76,3.81,4.76
+03/08/2025,Cracovia,Lechia Gdansk,2,2,D,1.86,3.76,4.2
+03/08/2025,Radomiak Radom,Rakow,3,1,H,3.16,3.36,2.36
+03/08/2025,Legia,Arka Gdynia,0,0,D,1.48,4.83,6.2
+08/08/2025,Korona Kielce,Radomiak Radom,3,0,H,2.56,3.43,2.81
+08/08/2025,Gornik Zabrze,Termalica B-B.,0,1,A,2.04,3.7,3.57
+09/08/2025,Arka Gdynia,Pogon Szczecin,2,1,H,2.5,3.56,2.79
+09/08/2025,Widzew Lodz,Wisla Plock,1,1,D,2.08,3.41,3.75
+10/08/2025,Jagiellonia,Cracovia,5,2,H,1.95,3.6,4
+10/08/2025,Legia,GKS Katowice,3,1,H,1.4,5.37,6.88
+11/08/2025,Lechia Gdansk,Motor Lublin,3,3,D,2.32,3.62,3.02
+15/08/2025,Zaglebie,Lechia Gdansk,6,2,H,2.32,3.97,2.81
+15/08/2025,Cracovia,Widzew Lodz,1,0,H,2.48,3.26,3.04
+16/08/2025,Motor Lublin,Piast Gliwice,0,0,D,2.49,3.34,2.97
+16/08/2025,GKS Katowice,Arka Gdynia,4,1,H,2.35,3.58,2.99
+16/08/2025,Lech Poznan,Korona Kielce,1,1,D,1.73,4.1,4.55
+17/08/2025,Pogon Szczecin,Gornik Zabrze,0,3,A,2.14,3.59,3.41
+17/08/2025,Radomiak Radom,Jagiellonia,1,2,A,2.55,3.53,2.75
+17/08/2025,Termalica B-B.,Rakow,2,3,A,3.83,3.57,2
+17/08/2025,Wisla Plock,Legia,1,0,H,3.15,3.6,2.25
+22/08/2025,Radomiak Radom,Termalica B-B.,1,1,D,2.28,3.61,3.1
+22/08/2025,Widzew Lodz,Pogon Szczecin,1,2,A,1.98,3.74,3.72
+23/08/2025,Korona Kielce,Motor Lublin,2,0,H,1.98,3.62,3.86
+23/08/2025,Gornik Zabrze,GKS Katowice,3,0,H,1.76,4.01,4.45
+24/08/2025,Piast Gliwice,Cracovia,0,0,D,2.36,3.07,3.46
+24/08/2025,Lechia Gdansk,Arka Gdynia,1,0,H,2.04,3.87,3.45
+25/08/2025,Wisla Plock,Zaglebie,2,1,H,2.13,3.5,3.51
+29/08/2025,Arka Gdynia,Wisla Plock,1,0,H,2.83,3.12,2.74
+29/08/2025,GKS Katowice,Radomiak Radom,3,2,H,2.21,3.63,3.21
+30/08/2025,Termalica B-B.,Korona Kielce,1,3,A,2.54,3.54,2.75
+30/08/2025,Zaglebie,Piast Gliwice,2,2,D,2.63,3.1,2.99
+30/08/2025,Gornik Zabrze,Motor Lublin,0,1,A,1.57,4.44,5.53
+31/08/2025,Jagiellonia,Lechia Gdansk,2,0,H,1.69,4.27,4.58
+31/08/2025,Lech Poznan,Widzew Lodz,2,1,H,1.83,3.98,4.09
+31/08/2025,Cracovia,Legia,2,1,H,2.74,3.57,2.54
+31/08/2025,Pogon Szczecin,Rakow,2,0,H,2.99,3.42,2.43
+12/09/2025,Lechia Gdansk,GKS Katowice,2,0,H,2.3,3.67,3.01
+12/09/2025,Lech Poznan,Zaglebie,1,2,A,1.6,4.42,5.23
+13/09/2025,Korona Kielce,Pogon Szczecin,1,0,H,2.24,3.64,3.14
+13/09/2025,Piast Gliwice,Jagiellonia,1,1,D,2.38,3.26,3.21
+14/09/2025,Motor Lublin,Termalica B-B.,1,1,D,2.12,3.8,3.29
+14/09/2025,Legia,Radomiak Radom,4,1,H,1.5,4.48,6.41
+14/09/2025,Widzew Lodz,Arka Gdynia,2,0,H,1.6,3.96,6.05
+15/09/2025,Rakow,Gornik Zabrze,0,1,A,1.88,3.64,4.29
+19/09/2025,GKS Katowice,Cracovia,0,3,A,2.52,3.34,2.91
+19/09/2025,Wisla Plock,Jagiellonia,0,1,A,2.82,3.23,2.67
+20/09/2025,Radomiak Radom,Piast Gliwice,1,0,H,2.63,3.14,2.95
+20/09/2025,Arka Gdynia,Korona Kielce,0,0,D,2.82,3.31,2.62
+20/09/2025,Termalica B-B.,Lech Poznan,0,2,A,3.43,3.94,2.02
+20/09/2025,Rakow,Legia,1,1,D,2.4,3.47,3
+21/09/2025,Zaglebie,Motor Lublin,2,2,D,2.07,3.82,3.4
+21/09/2025,Pogon Szczecin,Lechia Gdansk,3,4,A,1.99,3.85,3.6
+21/09/2025,Gornik Zabrze,Widzew Lodz,3,2,H,2.04,3.45,3.84
+24/09/2025,Rakow,Lech Poznan,2,2,D,2.05,3.52,3.73
+24/09/2025,Legia,Jagiellonia,0,0,D,1.77,3.98,4.42
+26/09/2025,Wisla Plock,GKS Katowice,1,1,D,1.99,3.72,3.71
+27/09/2025,Korona Kielce,Lechia Gdansk,3,0,H,1.95,3.62,3.97
+27/09/2025,Piast Gliwice,Termalica B-B.,4,2,H,1.87,3.59,4.39
+27/09/2025,Cracovia,Gornik Zabrze,1,1,D,2.51,3.23,3.03
+28/09/2025,Widzew Lodz,Rakow,0,1,A,2.65,3.29,2.8
+28/09/2025,Lech Poznan,Jagiellonia,2,2,D,1.95,3.86,3.72
+28/09/2025,Legia,Pogon Szczecin,1,0,H,1.61,4.35,5.18
+29/09/2025,Zaglebie,Arka Gdynia,4,0,H,2.14,3.25,3.77
+29/09/2025,Motor Lublin,Radomiak Radom,2,2,D,2.27,3.58,3.13
+03/10/2025,Lechia Gdansk,Wisla Plock,1,1,D,2.55,3.17,3.03
+03/10/2025,Pogon Szczecin,Piast Gliwice,2,1,H,2.04,3.7,3.59
+04/10/2025,Termalica B-B.,Widzew Lodz,2,4,A,2.9,3.62,2.39
+04/10/2025,Radomiak Radom,Zaglebie,3,1,H,2.38,3.43,3.05
+04/10/2025,Arka Gdynia,Cracovia,2,1,H,3.41,3.03,2.41
+05/10/2025,Jagiellonia,Korona Kielce,3,1,H,2.1,3.57,3.52
+05/10/2025,Rakow,Motor Lublin,2,0,H,1.53,4.51,5.88
+05/10/2025,GKS Katowice,Lech Poznan,0,1,A,3.14,3.96,2.13
+05/10/2025,Gornik Zabrze,Legia,3,1,H,2.83,3.44,2.54
+17/10/2025,Motor Lublin,GKS Katowice,2,5,A,2.31,3.72,2.96
+17/10/2025,Widzew Lodz,Radomiak Radom,3,2,H,1.88,3.76,4.09
+18/10/2025,Korona Kielce,Gornik Zabrze,1,1,D,2.64,3.16,2.91
+18/10/2025,Jagiellonia,Arka Gdynia,4,0,H,1.62,4.19,5.33
+18/10/2025,Cracovia,Rakow,2,0,H,3.02,3.1,2.6
+19/10/2025,Piast Gliwice,Lechia Gdansk,1,2,A,2.18,3.52,3.36
+19/10/2025,Lech Poznan,Pogon Szczecin,2,2,D,1.72,4.22,4.48
+19/10/2025,Zaglebie,Legia,3,1,H,3.77,3.86,1.93
+20/10/2025,Wisla Plock,Termalica B-B.,3,1,H,1.95,3.6,3.98
+24/10/2025,Termalica B-B.,Zaglebie,1,1,D,2.44,3.48,2.8
+24/10/2025,Motor Lublin,Widzew Lodz,3,0,H,2.81,3.5,2.42
+25/10/2025,Arka Gdynia,Piast Gliwice,2,1,H,2.69,3.06,2.8
+25/10/2025,Pogon Szczecin,Cracovia,2,1,H,2.13,3.56,3.28
+25/10/2025,GKS Katowice,Korona Kielce,1,0,H,2.44,3.27,2.95
+26/10/2025,Rakow,Lechia Gdansk,2,1,H,1.57,4.14,5.38
+26/10/2025,Gornik Zabrze,Jagiellonia,2,1,H,2.05,3.26,3.81
+26/10/2025,Legia,Lech Poznan,0,0,D,2.03,3.8,3.32
+27/10/2025,Radomiak Radom,Wisla Plock,1,1,D,2.31,3.37,3.07
+31/10/2025,Termalica B-B.,GKS Katowice,0,3,A,,,
+31/10/2025,Piast Gliwice,Korona Kielce,0,0,D,,,
+02/11/2025,Gornik Zabrze,Arka Gdynia,5,1,H,,,
+02/11/2025,Lech Poznan,Motor Lublin,2,2,D,,,
+02/11/2025,Jagiellonia,Rakow,1,2,A,,,
+02/11/2025,Widzew Lodz,Legia,1,1,D,,,
+03/11/2025,Lechia Gdansk,Radomiak Radom,1,2,A,,,
+03/11/2025,Wisla Plock,Pogon Szczecin,2,0,H,,,
+03/11/2025,Cracovia,Zaglebie,0,0,D,,,
+07/11/2025,Radomiak Radom,Cracovia,3,0,H,,,
+07/11/2025,Zaglebie,Gornik Zabrze,2,0,H,,,
+08/11/2025,Lechia Gdansk,Widzew Lodz,2,1,H,,,
+08/11/2025,Motor Lublin,Wisla Plock,1,1,D,,,
+08/11/2025,GKS Katowice,Piast Gliwice,1,3,A,,,
+09/11/2025,Korona Kielce,Rakow,1,4,A,,,
+09/11/2025,Legia,Termalica B-B.,1,2,A,,,
+09/11/2025,Pogon Szczecin,Jagiellonia,1,2,A,,,
+09/11/2025,Arka Gdynia,Lech Poznan,3,1,H,,,
+21/11/2025,Termalica B-B.,Arka Gdynia,2,0,H,,,
+21/11/2025,Gornik Zabrze,Wisla Plock,1,1,D,,,
+22/11/2025,Cracovia,Motor Lublin,1,2,A,,,
+22/11/2025,Rakow,Piast Gliwice,1,3,A,,,
+22/11/2025,Legia,Lechia Gdansk,2,2,D,,,
+23/11/2025,Lech Poznan,Radomiak Radom,4,1,H,,,
+23/11/2025,Widzew Lodz,Korona Kielce,1,3,A,,,
+24/11/2025,Pogon Szczecin,Zaglebie,5,1,H,,,
+28/11/2025,Piast Gliwice,Widzew Lodz,0,2,A,,,
+28/11/2025,Radomiak Radom,Gornik Zabrze,4,0,H,,,
+29/11/2025,Lechia Gdansk,Termalica B-B.,5,1,H,,,
+29/11/2025,Korona Kielce,Cracovia,0,1,A,,,
+29/11/2025,GKS Katowice,Pogon Szczecin,2,0,H,,,
+30/11/2025,Arka Gdynia,Rakow,1,4,A,,,
+30/11/2025,Zaglebie,Jagiellonia,0,0,D,,,
+30/11/2025,Wisla Plock,Lech Poznan,0,0,D,,,
+01/12/2025,Motor Lublin,Legia,1,1,D,,,
+04/12/2025,Wisla Plock,Cracovia,0,0,D,,,
+05/12/2025,Lechia Gdansk,Gornik Zabrze,5,2,H,,,
+06/12/2025,Arka Gdynia,Motor Lublin,1,0,H,,,
+06/12/2025,Pogon Szczecin,Radomiak Radom,2,2,D,,,
+06/12/2025,Zaglebie,Widzew Lodz,2,1,H,,,
+06/12/2025,Piast Gliwice,Legia,2,0,H,,,
+07/12/2025,Termalica B-B.,Jagiellonia,2,1,H,,,
+07/12/2025,Cracovia,Lech Poznan,2,2,D,,,
+07/12/2025,Rakow,GKS Katowice,1,0,H,,,
+08/12/2025,Korona Kielce,Wisla Plock,1,1,D,,,
+14/12/2025,Rakow,Zaglebie,0,1,A,,,
+14/12/2025,Motor Lublin,Jagiellonia,1,1,D,,,
+14/12/2025,Legia,Piast Gliwice,0,1,A,,,
+30/01/2026,Zaglebie,GKS Katowice,0,2,A,,,
+31/01/2026,Gornik Zabrze,Piast Gliwice,2,1,H,,,
+31/01/2026,Widzew Lodz,Jagiellonia,1,3,A,,,
+31/01/2026,Lech Poznan,Lechia Gdansk,1,3,A,,,
+01/02/2026,Motor Lublin,Pogon Szczecin,2,1,H,,,
+01/02/2026,Wisla Plock,Rakow,2,1,H,,,
+01/02/2026,Legia,Korona Kielce,1,2,A,,,
+02/02/2026,Termalica B-B.,Cracovia,0,1,A,,,
+03/02/2026,Piast Gliwice,Lech Poznan,1,0,H,,,
+06/02/2026,Korona Kielce,Zaglebie,1,2,A,,,
+06/02/2026,Lechia Gdansk,Cracovia,1,1,D,,,
+07/02/2026,Arka Gdynia,Legia,2,2,D,,,
+07/02/2026,Jagiellonia,Motor Lublin,4,1,H,,,
+07/02/2026,Gornik Zabrze,Lech Poznan,0,1,A,,,
+08/02/2026,Pogon Szczecin,Termalica B-B.,1,1,D,,,
+08/02/2026,Rakow,Radomiak Radom,0,0,D,,,
+08/02/2026,GKS Katowice,Widzew Lodz,1,0,H,,,
+09/02/2026,Piast Gliwice,Wisla Plock,1,0,H,,,
+13/02/2026,Radomiak Radom,Korona Kielce,0,2,A,,,
+13/02/2026,GKS Katowice,Legia,1,1,D,,,
+14/02/2026,Cracovia,Jagiellonia,0,0,D,,,
+14/02/2026,Zaglebie,Rakow,0,0,D,,,
+14/02/2026,Wisla Plock,Widzew Lodz,0,2,A,,,
+15/02/2026,Motor Lublin,Lechia Gdansk,2,3,A,,,
+15/02/2026,Pogon Szczecin,Arka Gdynia,1,0,H,,,
+15/02/2026,Lech Poznan,Piast Gliwice,3,0,H,,,
+16/02/2026,Termalica B-B.,Gornik Zabrze,1,1,D,,,
+20/02/2026,Piast Gliwice,Motor Lublin,1,2,A,,,
+20/02/2026,Widzew Lodz,Cracovia,0,0,D,,,
+21/02/2026,Rakow,Termalica B-B.,1,0,H,,,
+21/02/2026,Gornik Zabrze,Pogon Szczecin,0,1,A,,,
+21/02/2026,Legia,Wisla Plock,2,1,H,,,
+22/02/2026,Arka Gdynia,GKS Katowice,2,1,H,,,
+22/02/2026,Jagiellonia,Radomiak Radom,1,1,D,,,
+22/02/2026,Korona Kielce,Lech Poznan,1,2,A,,,
+23/02/2026,Lechia Gdansk,Zaglebie,0,2,A,,,
+27/02/2026,Cracovia,Piast Gliwice,2,3,A,,,
+27/02/2026,Arka Gdynia,Lechia Gdansk,2,2,D,,,
+28/02/2026,Pogon Szczecin,Widzew Lodz,1,0,H,,,
+28/02/2026,Motor Lublin,Korona Kielce,2,0,H,,,
+28/02/2026,GKS Katowice,Gornik Zabrze,3,1,H,,,
+01/03/2026,Termalica B-B.,Radomiak Radom,1,1,D,,,
+01/03/2026,Jagiellonia,Legia,2,2,D,,,
+01/03/2026,Lech Poznan,Rakow,4,3,H,,,
+02/03/2026,Zaglebie,Wisla Plock,2,0,H,,,
+05/03/2026,Radomiak Radom,Arka Gdynia,3,1,H,,,
+06/03/2026,Lechia Gdansk,Jagiellonia,3,0,H,,,
+07/03/2026,Korona Kielce,Termalica B-B.,2,1,H,,,
+07/03/2026,Piast Gliwice,Zaglebie,1,3,A,,,
+07/03/2026,Widzew Lodz,Lech Poznan,2,1,H,,,
+08/03/2026,Motor Lublin,Gornik Zabrze,0,0,D,,,
+08/03/2026,Radomiak Radom,GKS Katowice,0,1,A,,,
+08/03/2026,Rakow,Pogon Szczecin,2,0,H,,,
+08/03/2026,Legia,Cracovia,1,0,H,,,
+09/03/2026,Wisla Plock,Arka Gdynia,0,3,A,,,
+13/03/2026,Termalica B-B.,Motor Lublin,1,2,A,,,
+13/03/2026,Radomiak Radom,Legia,1,1,D,,,
+14/03/2026,Jagiellonia,Piast Gliwice,1,2,A,,,
+14/03/2026,GKS Katowice,Lechia Gdansk,2,0,H,,,
+14/03/2026,Cracovia,Wisla Plock,1,2,A,,,
+15/03/2026,Arka Gdynia,Widzew Lodz,0,0,D,,,
+15/03/2026,Zaglebie,Lech Poznan,0,1,A,,,
+15/03/2026,Gornik Zabrze,Rakow,3,1,H,,,
+16/03/2026,Pogon Szczecin,Korona Kielce,2,1,H,,,
+17/03/2026,Jagiellonia,GKS Katowice,2,1,H,,,
+20/03/2026,Piast Gliwice,Radomiak Radom,3,1,H,,,
+20/03/2026,Motor Lublin,Zaglebie,1,0,H,,,
+21/03/2026,Cracovia,GKS Katowice,1,0,H,,,
+21/03/2026,Lechia Gdansk,Pogon Szczecin,2,1,H,,,
+21/03/2026,Jagiellonia,Wisla Plock,1,2,A,,,
+22/03/2026,Korona Kielce,Arka Gdynia,3,0,H,,,
+22/03/2026,Lech Poznan,Termalica B-B.,4,1,H,,,
+22/03/2026,Widzew Lodz,Gornik Zabrze,0,0,D,,,
+22/03/2026,Legia,Rakow,1,1,D,,,
+04/04/2026,GKS Katowice,Wisla Plock,1,0,H,,,
+04/04/2026,Rakow,Widzew Lodz,1,1,D,,,
+04/04/2026,Gornik Zabrze,Cracovia,3,0,H,,,
+04/04/2026,Jagiellonia,Lech Poznan,0,0,D,,,
+06/04/2026,Termalica B-B.,Piast Gliwice,3,2,H,,,
+06/04/2026,Radomiak Radom,Motor Lublin,1,1,D,,,
+06/04/2026,Pogon Szczecin,Legia,0,2,A,,,
+06/04/2026,Lechia Gdansk,Korona Kielce,4,2,H,,,
+07/04/2026,Arka Gdynia,Zaglebie,3,1,H,,,
+10/04/2026,Wisla Plock,Lechia Gdansk,1,0,H,,,
+10/04/2026,Korona Kielce,Jagiellonia,1,1,D,,,
+11/04/2026,Widzew Lodz,Termalica B-B.,1,0,H,,,
+11/04/2026,Zaglebie,Radomiak Radom,1,0,H,,,
+11/04/2026,Legia,Gornik Zabrze,1,1,D,,,
+12/04/2026,Cracovia,Arka Gdynia,2,2,D,,,
+12/04/2026,Motor Lublin,Rakow,1,1,D,,,
+12/04/2026,Lech Poznan,GKS Katowice,3,3,D,,,
+13/04/2026,Piast Gliwice,Pogon Szczecin,0,2,A,,,
+17/04/2026,GKS Katowice,Motor Lublin,3,2,H,,,
+17/04/2026,Legia,Zaglebie,1,0,H,,,
+18/04/2026,Radomiak Radom,Widzew Lodz,2,1,H,,,
+18/04/2026,Gornik Zabrze,Korona Kielce,1,0,H,,,
+18/04/2026,Pogon Szczecin,Lech Poznan,1,2,A,,,
+19/04/2026,Termalica B-B.,Wisla Plock,1,3,A,,,
+19/04/2026,Rakow,Cracovia,4,1,H,,,
+19/04/2026,Arka Gdynia,Jagiellonia,0,3,A,,,
+20/04/2026,Lechia Gdansk,Piast Gliwice,1,1,D,,,
+24/04/2026,Zaglebie,Termalica B-B.,1,2,A,,,
+24/04/2026,Jagiellonia,Gornik Zabrze,1,2,A,,,
+25/04/2026,Korona Kielce,GKS Katowice,1,1,D,,,
+25/04/2026,Lechia Gdansk,Rakow,1,2,A,,,
+25/04/2026,Cracovia,Pogon Szczecin,1,1,D,,,
+26/04/2026,Wisla Plock,Radomiak Radom,0,1,A,,,
+26/04/2026,Widzew Lodz,Motor Lublin,2,0,H,,,
+26/04/2026,Lech Poznan,Legia,4,0,H,,,
+27/04/2026,Piast Gliwice,Arka Gdynia,4,1,H,,,
+01/05/2026,Korona Kielce,Piast Gliwice,1,1,D,,,
+01/05/2026,Legia,Widzew Lodz,1,0,H,,,
+02/05/2026,Motor Lublin,Lech Poznan,0,1,A,,,
+03/05/2026,GKS Katowice,Termalica B-B.,5,1,H,,,
+03/05/2026,Zaglebie,Cracovia,0,0,D,,,
+03/05/2026,Pogon Szczecin,Wisla Plock,3,0,H,,,
+04/05/2026,Radomiak Radom,Lechia Gdansk,3,1,H,,,
+08/05/2026,Rakow,Korona Kielce,2,0,H,,,
+08/05/2026,Lech Poznan,Arka Gdynia,1,1,D,,,
+09/05/2026,Widzew Lodz,Lechia Gdansk,3,1,H,,,
+09/05/2026,Jagiellonia,Pogon Szczecin,3,2,H,,,
+09/05/2026,Gornik Zabrze,Zaglebie,0,2,A,,,
+10/05/2026,Piast Gliwice,GKS Katowice,0,0,D,,,
+10/05/2026,Wisla Plock,Motor Lublin,0,4,A,,,
+10/05/2026,Termalica B-B.,Legia,0,1,A,,,
+11/05/2026,Cracovia,Radomiak Radom,0,0,D,,,
+13/05/2026,Arka Gdynia,Gornik Zabrze,0,0,D,,,
+13/05/2026,Rakow,Jagiellonia,0,2,A,,,
+15/05/2026,Zaglebie,Pogon Szczecin,0,1,A,,,
+15/05/2026,Korona Kielce,Widzew Lodz,1,0,H,,,
+16/05/2026,Motor Lublin,Cracovia,3,3,D,,,
+16/05/2026,Wisla Plock,Gornik Zabrze,0,1,A,,,
+16/05/2026,Radomiak Radom,Lech Poznan,1,3,A,,,
+17/05/2026,Piast Gliwice,Rakow,1,3,A,,,
+17/05/2026,GKS Katowice,Jagiellonia,2,2,D,,,
+17/05/2026,Lechia Gdansk,Legia,1,2,A,,,
+18/05/2026,Arka Gdynia,Termalica B-B.,2,3,A,,,
+23/05/2026,Cracovia,Korona Kielce,1,1,D,,,
+23/05/2026,Gornik Zabrze,Radomiak Radom,6,2,H,,,
+23/05/2026,Jagiellonia,Zaglebie,1,0,H,,,
+23/05/2026,Lech Poznan,Wisla Plock,2,2,D,,,
+23/05/2026,Legia,Motor Lublin,4,0,H,,,
+23/05/2026,Pogon Szczecin,GKS Katowice,1,1,D,,,
+23/05/2026,Rakow,Arka Gdynia,3,0,H,,,
+23/05/2026,Termalica B-B.,Lechia Gdansk,3,2,H,,,
+23/05/2026,Widzew Lodz,Piast Gliwice,2,1,H,,,

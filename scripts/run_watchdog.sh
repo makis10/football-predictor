@@ -28,6 +28,47 @@ mkdir -p "$LOG_DIR"
 
 cd "$PROJ_DIR"
 
+# GATE_ALERT_URL lives in .env; without it send_alert falls back to a local
+# macOS notification, which nobody sees when they're away from the Mac.
+set -a
+# shellcheck disable=SC1091
+source "$PROJ_DIR/.env" 2>/dev/null || true
+set +a
+# shellcheck disable=SC1091
+source "$PROJ_DIR/scripts/_alert.sh"
+
+# ── Dead-man's switch for the daily pipeline ─────────────────────────────────
+# run_daily.sh can only alert about failures it survives to report. If launchd
+# never fires it, the Mac is asleep at 06:00, or the job dies mid-run, the log
+# simply stops — and nothing notices. This watchdog already wakes every 5 min,
+# so it is the natural place to notice that the last completed run is too old.
+#
+# 26 h, not 24 h: a run takes ~20 min and launchd can drift after a wake, so a
+# 24 h threshold would false-alarm on healthy days. Alerts at most once a day
+# (stamp file) — a stuck pipeline shouldn't push 288 notifications.
+DAILY_LOG="$LOG_DIR/daily.log"
+STALE_STAMP="$LOG_DIR/.daily-stale-alerted"
+if [ -f "$DAILY_LOG" ]; then
+    last_complete=$(grep 'Daily run complete at' "$DAILY_LOG" | tail -1 \
+                    | sed -E 's/.*complete at //')
+    if [ -n "$last_complete" ]; then
+        last_epoch=$(date -j -f '%Y-%m-%d %H:%M:%S' "$last_complete" +%s 2>/dev/null || echo 0)
+        age_h=$(( ( $(date +%s) - last_epoch ) / 3600 ))
+        if [ "$last_epoch" -gt 0 ] && [ "$age_h" -ge 26 ]; then
+            # Alerted within the last 24 h already? Then stay quiet.
+            if [ ! -f "$STALE_STAMP" ] || [ "$(find "$STALE_STAMP" -mtime +1 2>/dev/null)" ]; then
+                echo "── $(date '+%Y-%m-%d %H:%M:%S') daily pipeline stale (${age_h}h since last completed run)" >> "$LOG"
+                send_alert "Football Predictor: daily pipeline stale" \
+                    "Τελευταίο ολοκληρωμένο daily run πριν ${age_h} ώρες (${last_complete}). Δεν τρέχει το pipeline — δες daily.log." \
+                    high "rotating_light,clock2"
+                touch "$STALE_STAMP"
+            fi
+        elif [ -f "$STALE_STAMP" ]; then
+            rm -f "$STALE_STAMP"   # recovered — re-arm for the next outage
+        fi
+    fi
+fi
+
 # Healthy? Then stay quiet — this runs 288 times a day.
 # curl already prints "000" when it can't connect, and exits non-zero doing so —
 # a `|| echo 000` fallback would concatenate into "000000".
@@ -51,7 +92,8 @@ if ! docker info >/dev/null 2>&1; then
     # shellcheck disable=SC1091
     source "$PROJ_DIR/scripts/wait_docker.sh"
     wait_for_docker "$LOG" || {
-        osascript -e 'display notification "Docker δεν ξεκινά — το site είναι κάτω" with title "🔴 Football Predictor" sound name "Basso"' 2>/dev/null || true
+        send_alert "Football Predictor: site down" \
+            "Docker δεν ξεκινά — το site είναι κάτω." urgent "rotating_light"
         exit 1
     }
 fi
@@ -71,8 +113,11 @@ done
 
 if [ "$code" = "200" ]; then
     echo "   recovered at $(date '+%H:%M:%S')" >> "$LOG"
-    osascript -e 'display notification "Το site είχε πέσει και επανήλθε αυτόματα" with title "⚠️ Football Predictor" sound name "Basso"' 2>/dev/null || true
+    send_alert "Football Predictor: recovered" \
+        "Το site είχε πέσει και επανήλθε αυτόματα." default "warning"
 else
     echo "   STILL DOWN (HTTP $code) after restart" >> "$LOG"
-    osascript -e 'display notification "Το site είναι κάτω και δεν επανέρχεται — χρειάζεται έλεγχος" with title "🔴 Football Predictor" sound name "Basso"' 2>/dev/null || true
+    send_alert "Football Predictor: site down" \
+        "Το site είναι κάτω (HTTP $code) και δεν επανέρχεται μετά από restart — χρειάζεται έλεγχος." \
+        urgent "rotating_light"
 fi

@@ -1,0 +1,181 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2016-08-07,Pobeda,Pelister,0,2,A
+2016-08-07,Bregalnica Stip,Renova,1,1,D
+2016-08-07,Vardar Skopje,Shkupi 1927,1,1,D
+2016-08-08,Shkendija,Sileks,2,1,H
+2016-08-10,Makedonija GjP,FK Rabotnicki,0,4,A
+2016-08-14,Vardar Skopje,Shkendija,3,0,H
+2016-08-14,Pelister,Bregalnica Stip,3,0,H
+2016-08-14,Shkupi 1927,FK Rabotnicki,0,1,A
+2016-08-14,Renova,Makedonija GjP,1,0,H
+2016-08-14,Sileks,Pobeda,2,1,H
+2016-08-21,FK Rabotnicki,Renova,1,0,H
+2016-08-21,Makedonija GjP,Pelister,2,2,D
+2016-08-21,Pobeda,Vardar Skopje,0,1,A
+2016-08-21,Bregalnica Stip,Sileks,0,2,A
+2016-08-27,Vardar Skopje,Bregalnica Stip,5,1,H
+2016-08-27,Pelister,FK Rabotnicki,3,0,H
+2016-08-27,Shkupi 1927,Renova,0,0,D
+2016-08-27,Sileks,Makedonija GjP,1,1,D
+2016-08-28,Shkendija,Pobeda,3,1,H
+2016-09-10,FK Rabotnicki,Sileks,3,1,H
+2016-09-11,Makedonija GjP,Vardar Skopje,0,4,A
+2016-09-11,Pobeda,Shkupi 1927,2,1,H
+2016-09-11,Renova,Pelister,2,0,H
+2016-09-11,Bregalnica Stip,Shkendija,1,1,D
+2016-09-17,Shkupi 1927,Pelister,2,1,H
+2016-09-18,Vardar Skopje,FK Rabotnicki,1,0,H
+2016-09-18,Shkendija,Makedonija GjP,3,0,H
+2016-09-18,Pobeda,Bregalnica Stip,0,0,D
+2016-09-18,Sileks,Renova,0,0,D
+2016-09-24,FK Rabotnicki,Shkendija,1,3,A
+2016-09-25,Pelister,Sileks,0,0,D
+2016-09-25,Makedonija GjP,Pobeda,1,1,D
+2016-09-25,Renova,Vardar Skopje,0,0,D
+2016-09-25,Bregalnica Stip,Shkupi 1927,1,0,H
+2016-09-28,Vardar Skopje,Pelister,1,1,D
+2016-09-28,Shkendija,Renova,1,1,D
+2016-09-28,Shkupi 1927,Sileks,1,1,D
+2016-09-28,Pobeda,FK Rabotnicki,2,1,H
+2016-09-28,Bregalnica Stip,Makedonija GjP,1,2,A
+2016-10-01,FK Rabotnicki,Bregalnica Stip,1,1,D
+2016-10-02,Pelister,Shkendija,1,2,A
+2016-10-02,Makedonija GjP,Shkupi 1927,0,1,A
+2016-10-02,Renova,Pobeda,1,1,D
+2016-10-02,Sileks,Vardar Skopje,1,3,A
+2016-10-15,FK Rabotnicki,Makedonija GjP,2,1,H
+2016-10-16,Pelister,Pobeda,2,0,H
+2016-10-16,Shkupi 1927,Vardar Skopje,0,0,D
+2016-10-16,Renova,Bregalnica Stip,1,0,H
+2016-10-16,Sileks,Shkendija,1,3,A
+2016-10-23,Shkendija,Vardar Skopje,0,2,A
+2016-10-23,FK Rabotnicki,Shkupi 1927,3,1,H
+2016-10-23,Makedonija GjP,Renova,2,1,H
+2016-10-23,Pobeda,Sileks,1,1,D
+2016-10-23,Bregalnica Stip,Pelister,0,0,D
+2016-10-26,Shkendija,Shkupi 1927,0,1,A
+2016-10-30,Pelister,Makedonija GjP,1,0,H
+2016-10-30,Shkupi 1927,Shkendija,0,0,D
+2016-10-30,Renova,FK Rabotnicki,1,1,D
+2016-10-30,Sileks,Bregalnica Stip,1,0,H
+2016-10-30,Vardar Skopje,Pobeda,2,1,H
+2016-11-05,FK Rabotnicki,Pelister,0,1,A
+2016-11-05,Makedonija GjP,Sileks,1,1,D
+2016-11-05,Pobeda,Shkendija,1,2,A
+2016-11-05,Renova,Shkupi 1927,1,0,H
+2016-11-05,Bregalnica Stip,Vardar Skopje,0,1,A
+2016-11-16,Vardar Skopje,Makedonija GjP,4,1,H
+2016-11-16,Shkendija,Bregalnica Stip,5,2,H
+2016-11-16,Pelister,Renova,1,0,H
+2016-11-16,Shkupi 1927,Pobeda,1,1,D
+2016-11-16,Sileks,FK Rabotnicki,2,1,H
+2016-11-20,FK Rabotnicki,Vardar Skopje,3,0,H
+2016-11-20,Pelister,Shkupi 1927,2,0,H
+2016-11-20,Makedonija GjP,Shkendija,0,4,A
+2016-11-20,Renova,Sileks,2,2,D
+2016-11-20,Bregalnica Stip,Pobeda,2,3,A
+2016-11-27,Vardar Skopje,Renova,1,0,H
+2016-11-27,Shkendija,FK Rabotnicki,2,2,D
+2016-11-27,Shkupi 1927,Bregalnica Stip,1,1,D
+2016-11-27,Pobeda,Makedonija GjP,0,0,D
+2016-11-27,Sileks,Pelister,0,0,D
+2016-11-30,FK Rabotnicki,Pobeda,3,1,H
+2016-11-30,Pelister,Vardar Skopje,4,0,H
+2016-11-30,Makedonija GjP,Bregalnica Stip,2,2,D
+2016-11-30,Renova,Shkendija,1,2,A
+2016-11-30,Sileks,Shkupi 1927,1,0,H
+2016-12-04,Vardar Skopje,Sileks,1,1,D
+2016-12-04,Shkendija,Pelister,1,0,H
+2016-12-04,Shkupi 1927,Makedonija GjP,0,2,A
+2016-12-04,Pobeda,Renova,0,2,A
+2016-12-04,Bregalnica Stip,FK Rabotnicki,0,0,D
+2017-02-19,Vardar Skopje,Shkupi 1927,3,0,H
+2017-02-19,Shkendija,Sileks,2,0,H
+2017-02-19,Makedonija GjP,FK Rabotnicki,0,3,A
+2017-02-19,Pobeda,Pelister,2,2,D
+2017-02-19,Bregalnica Stip,Renova,0,1,A
+2017-02-25,Pelister,Bregalnica Stip,2,1,H
+2017-02-26,Vardar Skopje,Shkendija,3,1,H
+2017-02-26,Shkupi 1927,FK Rabotnicki,1,1,D
+2017-02-26,Renova,Makedonija GjP,2,2,D
+2017-02-26,Sileks,Pobeda,2,0,H
+2017-03-04,FK Rabotnicki,Renova,0,0,D
+2017-03-05,Shkendija,Shkupi 1927,0,0,D
+2017-03-05,Makedonija GjP,Pelister,1,2,A
+2017-03-05,Pobeda,Vardar Skopje,2,1,H
+2017-03-05,Bregalnica Stip,Sileks,3,3,D
+2017-03-12,Vardar Skopje,Bregalnica Stip,2,0,H
+2017-03-12,Shkendija,Pobeda,4,0,H
+2017-03-12,Pelister,FK Rabotnicki,0,1,A
+2017-03-12,Shkupi 1927,Renova,3,2,H
+2017-03-12,Sileks,Makedonija GjP,4,2,H
+2017-03-18,FK Rabotnicki,Sileks,2,0,H
+2017-03-18,Makedonija GjP,Vardar Skopje,0,5,A
+2017-03-18,Pobeda,Shkupi 1927,1,1,D
+2017-03-18,Renova,Pelister,2,1,H
+2017-03-18,Bregalnica Stip,Shkendija,1,3,A
+2017-04-02,Vardar Skopje,FK Rabotnicki,2,0,H
+2017-04-02,Shkendija,Makedonija GjP,5,1,H
+2017-04-02,Shkupi 1927,Pelister,1,0,H
+2017-04-02,Pobeda,Bregalnica Stip,0,0,D
+2017-04-02,Sileks,Renova,3,0,H
+2017-04-05,FK Rabotnicki,Shkendija,1,0,H
+2017-04-05,Pelister,Sileks,0,0,D
+2017-04-05,Makedonija GjP,Pobeda,0,0,D
+2017-04-05,Renova,Vardar Skopje,0,1,A
+2017-04-05,Bregalnica Stip,Shkupi 1927,3,0,H
+2017-04-09,Vardar Skopje,Pelister,3,1,H
+2017-04-09,Shkendija,Renova,1,1,D
+2017-04-09,Shkupi 1927,Sileks,3,1,H
+2017-04-09,Pobeda,FK Rabotnicki,0,0,D
+2017-04-09,Bregalnica Stip,Makedonija GjP,1,0,H
+2017-04-15,FK Rabotnicki,Bregalnica Stip,3,1,H
+2017-04-15,Pelister,Shkendija,0,1,A
+2017-04-15,Makedonija GjP,Shkupi 1927,0,0,D
+2017-04-15,Renova,Pobeda,1,0,H
+2017-04-15,Sileks,Vardar Skopje,0,1,A
+2017-04-22,FK Rabotnicki,Makedonija GjP,1,1,D
+2017-04-23,Pelister,Pobeda,1,0,H
+2017-04-23,Shkupi 1927,Vardar Skopje,0,2,A
+2017-04-23,Renova,Bregalnica Stip,4,0,H
+2017-04-23,Sileks,Shkendija,1,1,D
+2017-04-26,Shkendija,Vardar Skopje,3,1,H
+2017-04-26,Makedonija GjP,Renova,1,3,A
+2017-04-26,Pobeda,Sileks,1,0,H
+2017-04-26,Bregalnica Stip,Pelister,1,1,D
+2017-04-27,FK Rabotnicki,Shkupi 1927,0,1,A
+2017-04-30,Vardar Skopje,Pobeda,4,0,H
+2017-04-30,Pelister,Makedonija GjP,3,1,H
+2017-04-30,Shkupi 1927,Shkendija,1,1,D
+2017-04-30,Renova,FK Rabotnicki,1,1,D
+2017-04-30,Sileks,Bregalnica Stip,3,2,H
+2017-05-03,FK Rabotnicki,Pelister,1,1,D
+2017-05-03,Makedonija GjP,Sileks,0,1,A
+2017-05-03,Pobeda,Shkendija,1,0,H
+2017-05-03,Renova,Shkupi 1927,2,1,H
+2017-05-03,Bregalnica Stip,Vardar Skopje,3,3,D
+2017-05-07,Vardar Skopje,Makedonija GjP,6,0,H
+2017-05-07,Shkendija,Bregalnica Stip,3,0,H
+2017-05-07,Pelister,Renova,3,0,H
+2017-05-07,Shkupi 1927,Pobeda,1,2,A
+2017-05-07,Sileks,FK Rabotnicki,0,2,A
+2017-05-13,Pelister,Shkupi 1927,1,0,H
+2017-05-14,FK Rabotnicki,Vardar Skopje,2,2,D
+2017-05-14,Makedonija GjP,Shkendija,2,3,A
+2017-05-14,Renova,Sileks,1,0,H
+2017-05-14,Bregalnica Stip,Pobeda,1,2,A
+2017-05-21,Vardar Skopje,Renova,2,0,H
+2017-05-21,Shkendija,FK Rabotnicki,2,2,D
+2017-05-21,Shkupi 1927,Bregalnica Stip,3,0,H
+2017-05-21,Pobeda,Makedonija GjP,4,2,H
+2017-05-21,Sileks,Pelister,3,3,D
+2017-05-28,FK Rabotnicki,Pobeda,0,3,A
+2017-05-28,Pelister,Vardar Skopje,2,3,A
+2017-05-28,Makedonija GjP,Bregalnica Stip,5,3,H
+2017-05-28,Renova,Shkendija,4,4,D
+2017-05-28,Sileks,Shkupi 1927,1,0,H
+2017-05-31,Vardar Skopje,Sileks,0,0,D
+2017-05-31,Shkendija,Pelister,3,1,H
+2017-05-31,Shkupi 1927,Makedonija GjP,1,1,D
+2017-05-31,Pobeda,Renova,0,3,A
+2017-05-31,Bregalnica Stip,FK Rabotnicki,6,2,H

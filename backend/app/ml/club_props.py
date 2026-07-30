@@ -36,6 +36,15 @@ NAME_OVERRIDES = {
     "Sparta": "Sparta Rotterdam",
     # Friendly opponents stored via their tracked-league rivals' fixtures
     "Graafschap": "De Graafschap",
+    # Brazil Serie A — CSV names vs API-Football names
+    "Botafogo RJ": "Botafogo", "Bragantino": "RB Bragantino",
+    "Vasco": "Vasco DA Gama", "Athletico-PR": "Atletico Paranaense",
+    # German lower divisions / relegated sides — API keeps the club prefix
+    "Augsburg": "FC Augsburg", "Darmstadt": "SV Darmstadt 98",
+    "Heidenheim": "1. FC Heidenheim", "Ingolstadt": "FC Ingolstadt 04",
+    "Kaiserslautern": "1. FC Kaiserslautern", "Nurnberg": "1. FC Nürnberg",
+    "Espanol": "Espanyol", "Nijmegen": "NEC Nijmegen",
+    "Peterboro": "Peterborough", "Sp Braga": "SC Braga",
 }
 
 

@@ -1,0 +1,312 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2023-08-11,Boluspor,Adanaspor,0,2,A
+2023-08-12,Keciorengucu,Eyupspor,0,1,A
+2023-08-12,Giresunspor,Bodrum FK,0,1,A
+2023-08-12,Kocaelispor,Manisa F.K.,0,2,A
+2023-08-13,Genclerbirligi S.K.,Umraniyespor,2,1,H
+2023-08-13,Beykoz Anadolu,Corum FK,0,3,A
+2023-08-13,Erzurumspor FK,Bandrmaspor,1,1,D
+2023-08-13,Goztepe,Sakaryaspor,0,1,A
+2023-08-14,Sanlurfaspor,Altay,2,1,H
+2023-08-18,Corum FK,Giresunspor,0,2,A
+2023-08-19,Bodrum FK,Erzurumspor FK,0,0,D
+2023-08-19,Umraniyespor,Goztepe,0,0,D
+2023-08-19,Adanaspor,Sanlurfaspor,1,2,A
+2023-08-20,Bandrmaspor,Boluspor,0,0,D
+2023-08-20,Manisa F.K.,Keciorengucu,0,0,D
+2023-08-20,Sakaryaspor,Genclerbirligi S.K.,0,0,D
+2023-08-20,Altay,Beykoz Anadolu,1,0,H
+2023-08-21,Eyupspor,Kocaelispor,2,0,H
+2023-08-25,Erzurumspor FK,Manisa F.K.,1,2,A
+2023-08-26,Genclerbirligi S.K.,Bodrum FK,1,0,H
+2023-08-26,Beykoz Anadolu,Eyupspor,0,5,A
+2023-08-26,Sakaryaspor,Umraniyespor,1,1,D
+2023-08-26,Goztepe,Corum FK,1,2,A
+2023-08-27,Keciorengucu,Adanaspor,1,0,H
+2023-08-27,Boluspor,Sanlurfaspor,1,1,D
+2023-08-27,Kocaelispor,Altay,3,2,H
+2023-08-28,Giresunspor,Bandrmaspor,0,1,A
+2023-09-01,Adanaspor,Kocaelispor,0,2,A
+2023-09-02,Bandrmaspor,Sakaryaspor,3,1,H
+2023-09-02,Boluspor,Keciorengucu,0,0,D
+2023-09-02,Manisa F.K.,Beykoz Anadolu,4,0,H
+2023-09-02,Eyupspor,Giresunspor,3,1,H
+2023-09-03,Bodrum FK,Umraniyespor,4,0,H
+2023-09-03,Corum FK,Genclerbirligi S.K.,0,1,A
+2023-09-03,Altay,Goztepe,0,1,A
+2023-09-03,Sanlurfaspor,Erzurumspor FK,0,0,D
+2023-09-16,Erzurumspor FK,Altay,4,0,H
+2023-09-16,Keciorengucu,Sanlurfaspor,2,0,H
+2023-09-16,Umraniyespor,Corum FK,0,3,A
+2023-09-16,Kocaelispor,Boluspor,2,1,H
+2023-09-17,Giresunspor,Manisa F.K.,0,0,D
+2023-09-17,Beykoz Anadolu,Adanaspor,2,1,H
+2023-09-17,Goztepe,Bandrmaspor,1,1,D
+2023-09-17,Genclerbirligi S.K.,Eyupspor,1,3,A
+2023-09-18,Sakaryaspor,Bodrum FK,0,2,A
+2023-09-22,Boluspor,Beykoz Anadolu,2,1,H
+2023-09-22,Eyupspor,Umraniyespor,2,0,H
+2023-09-23,Keciorengucu,Giresunspor,3,1,H
+2023-09-23,Manisa F.K.,Goztepe,0,1,A
+2023-09-23,Corum FK,Sakaryaspor,1,0,H
+2023-09-24,Bandrmaspor,Genclerbirligi S.K.,4,1,H
+2023-09-24,Adanaspor,Erzurumspor FK,1,0,H
+2023-09-24,Sanlurfaspor,Kocaelispor,0,2,A
+2023-09-25,Altay,Bodrum FK,1,1,D
+2023-09-29,Umraniyespor,Bandrmaspor,0,1,A
+2023-09-30,Beykoz Anadolu,Sanlurfaspor,1,1,D
+2023-09-30,Giresunspor,Altay,0,0,D
+2023-09-30,Genclerbirligi S.K.,Manisa F.K.,1,1,D
+2023-10-01,Erzurumspor FK,Boluspor,1,0,H
+2023-10-01,Bodrum FK,Corum FK,2,1,H
+2023-10-01,Kocaelispor,Keciorengucu,3,0,H
+2023-10-01,Sakaryaspor,Eyupspor,2,0,H
+2023-10-02,Goztepe,Adanaspor,1,0,H
+2023-10-06,Kocaelispor,Erzurumspor FK,1,1,D
+2023-10-07,Bandrmaspor,Corum FK,0,0,D
+2023-10-07,Manisa F.K.,Sakaryaspor,1,1,D
+2023-10-07,Sanlurfaspor,Genclerbirligi S.K.,1,2,A
+2023-10-07,Eyupspor,Bodrum FK,3,0,H
+2023-10-08,Keciorengucu,Beykoz Anadolu,0,2,A
+2023-10-08,Adanaspor,Giresunspor,4,2,H
+2023-10-08,Boluspor,Goztepe,0,2,A
+2023-10-08,Altay,Umraniyespor,0,3,A
+2023-10-21,Erzurumspor FK,Keciorengucu,0,1,A
+2023-10-21,Beykoz Anadolu,Kocaelispor,1,2,A
+2023-10-21,Sakaryaspor,Adanaspor,2,0,H
+2023-10-21,Goztepe,Sanlurfaspor,3,0,H
+2023-10-22,Bodrum FK,Bandrmaspor,2,1,H
+2023-10-22,Giresunspor,Boluspor,0,1,A
+2023-10-22,Umraniyespor,Manisa F.K.,3,2,H
+2023-10-22,Corum FK,Eyupspor,2,3,A
+2023-10-23,Genclerbirligi S.K.,Altay,3,0,H
+2023-10-27,Sanlurfaspor,Giresunspor,0,0,D
+2023-10-28,Keciorengucu,Goztepe,0,1,A
+2023-10-28,Beykoz Anadolu,Erzurumspor FK,0,1,A
+2023-10-28,Boluspor,Bodrum FK,2,1,H
+2023-10-28,Kocaelispor,Genclerbirligi S.K.,2,2,D
+2023-10-29,Manisa F.K.,Corum FK,2,2,D
+2023-10-29,Adanaspor,Umraniyespor,1,0,H
+2023-10-29,Altay,Sakaryaspor,1,2,A
+2023-10-29,Eyupspor,Bandrmaspor,0,1,A
+2023-11-03,Sakaryaspor,Sanlurfaspor,1,1,D
+2023-11-04,Corum FK,Keciorengucu,2,3,A
+2023-11-04,Genclerbirligi S.K.,Boluspor,0,0,D
+2023-11-04,Goztepe,Kocaelispor,0,1,A
+2023-11-05,Bodrum FK,Manisa F.K.,2,0,H
+2023-11-05,Bandrmaspor,Altay,2,0,H
+2023-11-05,Giresunspor,Erzurumspor FK,1,0,H
+2023-11-05,Eyupspor,Adanaspor,4,1,H
+2023-11-06,Umraniyespor,Beykoz Anadolu,1,1,D
+2023-11-10,Adanaspor,Genclerbirligi S.K.,0,2,A
+2023-11-11,Keciorengucu,Bodrum FK,1,1,D
+2023-11-11,Beykoz Anadolu,Giresunspor,3,1,H
+2023-11-11,Sanlurfaspor,Umraniyespor,0,1,A
+2023-11-11,Altay,Eyupspor,1,7,A
+2023-11-12,Boluspor,Sakaryaspor,2,3,A
+2023-11-12,Manisa F.K.,Bandrmaspor,0,2,A
+2023-11-12,Erzurumspor FK,Goztepe,3,2,H
+2023-11-12,Kocaelispor,Corum FK,2,1,H
+2023-11-24,Sakaryaspor,Erzurumspor FK,2,2,D
+2023-11-25,Bodrum FK,Adanaspor,0,1,A
+2023-11-25,Bandrmaspor,Sanlurfaspor,0,1,A
+2023-11-25,Umraniyespor,Boluspor,1,2,A
+2023-11-25,Giresunspor,Kocaelispor,1,4,A
+2023-11-26,Corum FK,Altay,3,0,H
+2023-11-26,Eyupspor,Manisa F.K.,2,1,H
+2023-11-26,Goztepe,Beykoz Anadolu,2,0,H
+2023-11-27,Genclerbirligi S.K.,Keciorengucu,1,1,D
+2023-12-01,Adanaspor,Corum FK,0,3,A
+2023-12-01,Kocaelispor,Umraniyespor,0,3,A
+2023-12-02,Keciorengucu,Sakaryaspor,1,3,A
+2023-12-02,Beykoz Anadolu,Bandrmaspor,1,1,D
+2023-12-02,Boluspor,Eyupspor,0,3,A
+2023-12-02,Sanlurfaspor,Bodrum FK,0,2,A
+2023-12-03,Manisa F.K.,Altay,3,0,H
+2023-12-03,Erzurumspor FK,Genclerbirligi S.K.,1,1,D
+2023-12-03,Goztepe,Giresunspor,3,0,H
+2023-12-09,Bodrum FK,Beykoz Anadolu,1,1,D
+2023-12-09,Bandrmaspor,Kocaelispor,0,3,A
+2023-12-09,Umraniyespor,Keciorengucu,2,0,H
+2023-12-09,Sakaryaspor,Giresunspor,3,1,H
+2023-12-10,Manisa F.K.,Adanaspor,1,1,D
+2023-12-10,Corum FK,Erzurumspor FK,4,1,H
+2023-12-10,Genclerbirligi S.K.,Goztepe,0,3,A
+2023-12-10,Eyupspor,Sanlurfaspor,4,0,H
+2023-12-11,Altay,Boluspor,0,1,A
+2023-12-19,Beykoz Anadolu,Sakaryaspor,1,3,A
+2023-12-19,Giresunspor,Genclerbirligi S.K.,0,1,A
+2023-12-19,Kocaelispor,Bodrum FK,1,1,D
+2023-12-20,Erzurumspor FK,Umraniyespor,1,1,D
+2023-12-20,Keciorengucu,Bandrmaspor,1,3,A
+2023-12-20,Adanaspor,Altay,0,1,A
+2023-12-20,Goztepe,Eyupspor,5,1,H
+2023-12-21,Boluspor,Manisa F.K.,1,0,H
+2023-12-21,Sanlurfaspor,Corum FK,1,1,D
+2023-12-23,Genclerbirligi S.K.,Beykoz Anadolu,0,2,A
+2023-12-23,Sakaryaspor,Kocaelispor,3,1,H
+2023-12-24,Bodrum FK,Goztepe,3,0,H
+2023-12-24,Bandrmaspor,Adanaspor,2,3,A
+2023-12-24,Umraniyespor,Giresunspor,2,1,H
+2023-12-24,Altay,Keciorengucu,2,1,H
+2023-12-25,Manisa F.K.,Sanlurfaspor,1,1,D
+2023-12-25,Corum FK,Boluspor,2,0,H
+2023-12-25,Eyupspor,Erzurumspor FK,3,0,H
+2024-01-12,Sakaryaspor,Goztepe,1,2,A
+2024-01-13,Bodrum FK,Giresunspor,4,0,H
+2024-01-13,Bandrmaspor,Erzurumspor FK,0,0,D
+2024-01-13,Adanaspor,Boluspor,1,1,D
+2024-01-13,Eyupspor,Keciorengucu,2,0,H
+2024-01-14,Manisa F.K.,Kocaelispor,2,1,H
+2024-01-14,Corum FK,Beykoz Anadolu,2,1,H
+2024-01-14,Umraniyespor,Genclerbirligi S.K.,1,1,D
+2024-01-15,Altay,Sanlurfaspor,1,0,H
+2024-01-19,Giresunspor,Corum FK,0,3,A
+2024-01-20,Erzurumspor FK,Bodrum FK,1,0,H
+2024-01-20,Boluspor,Bandrmaspor,2,1,H
+2024-01-20,Kocaelispor,Eyupspor,2,1,H
+2024-01-21,Keciorengucu,Manisa F.K.,1,1,D
+2024-01-21,Beykoz Anadolu,Altay,2,0,H
+2024-01-21,Sanlurfaspor,Adanaspor,4,0,H
+2024-01-21,Genclerbirligi S.K.,Sakaryaspor,3,1,H
+2024-01-22,Goztepe,Umraniyespor,4,1,H
+2024-01-26,Adanaspor,Keciorengucu,1,2,A
+2024-01-27,Manisa F.K.,Erzurumspor FK,0,2,A
+2024-01-27,Corum FK,Goztepe,1,1,D
+2024-01-27,Eyupspor,Beykoz Anadolu,4,0,H
+2024-01-28,Bodrum FK,Genclerbirligi S.K.,1,0,H
+2024-01-28,Bandrmaspor,Giresunspor,6,0,H
+2024-01-28,Umraniyespor,Sakaryaspor,1,1,D
+2024-01-28,Altay,Kocaelispor,0,2,A
+2024-01-29,Sanlurfaspor,Boluspor,0,1,A
+2024-02-02,Sakaryaspor,Bandrmaspor,1,0,H
+2024-02-03,Umraniyespor,Bodrum FK,1,2,A
+2024-02-03,Keciorengucu,Boluspor,1,2,A
+2024-02-03,Kocaelispor,Adanaspor,1,0,H
+2024-02-03,Goztepe,Altay,4,0,H
+2024-02-04,Erzurumspor FK,Sanlurfaspor,2,0,H
+2024-02-04,Beykoz Anadolu,Manisa F.K.,2,1,H
+2024-02-04,Genclerbirligi S.K.,Corum FK,0,0,D
+2024-02-04,Giresunspor,Eyupspor,0,0,D
+2024-02-09,Corum FK,Umraniyespor,0,1,A
+2024-02-10,Bodrum FK,Sakaryaspor,0,0,D
+2024-02-10,Sanlurfaspor,Keciorengucu,0,1,A
+2024-02-10,Altay,Erzurumspor FK,0,0,D
+2024-02-11,Adanaspor,Beykoz Anadolu,2,1,H
+2024-02-11,Bandrmaspor,Goztepe,0,2,A
+2024-02-11,Boluspor,Kocaelispor,1,1,D
+2024-02-11,Manisa F.K.,Giresunspor,2,0,H
+2024-02-12,Eyupspor,Genclerbirligi S.K.,1,0,H
+2024-02-16,Goztepe,Manisa F.K.,0,0,D
+2024-02-17,Beykoz Anadolu,Boluspor,1,2,A
+2024-02-17,Giresunspor,Keciorengucu,0,1,A
+2024-02-17,Kocaelispor,Sanlurfaspor,0,1,A
+2024-02-18,Erzurumspor FK,Adanaspor,1,0,H
+2024-02-18,Bodrum FK,Altay,3,0,H
+2024-02-18,Sakaryaspor,Corum FK,3,1,H
+2024-02-18,Umraniyespor,Eyupspor,1,3,A
+2024-02-19,Genclerbirligi S.K.,Bandrmaspor,0,1,A
+2024-02-23,Altay,Giresunspor,1,0,H
+2024-02-24,Bandrmaspor,Umraniyespor,4,1,H
+2024-02-24,Corum FK,Bodrum FK,2,1,H
+2024-02-24,Adanaspor,Goztepe,0,3,A
+2024-02-25,Boluspor,Erzurumspor FK,1,0,H
+2024-02-25,Keciorengucu,Kocaelispor,2,2,D
+2024-02-25,Manisa F.K.,Genclerbirligi S.K.,1,1,D
+2024-02-25,Eyupspor,Sakaryaspor,3,2,H
+2024-02-26,Sanlurfaspor,Beykoz Anadolu,0,0,D
+2024-03-01,Umraniyespor,Altay,2,0,H
+2024-03-02,Bodrum FK,Eyupspor,0,1,A
+2024-03-02,Beykoz Anadolu,Keciorengucu,1,1,D
+2024-03-02,Erzurumspor FK,Kocaelispor,0,0,D
+2024-03-02,Sakaryaspor,Manisa F.K.,2,0,H
+2024-03-03,Giresunspor,Adanaspor,0,1,A
+2024-03-03,Goztepe,Boluspor,2,0,H
+2024-03-03,Corum FK,Bandrmaspor,0,0,D
+2024-03-04,Genclerbirligi S.K.,Sanlurfaspor,1,1,D
+2024-03-08,Boluspor,Giresunspor,2,1,H
+2024-03-09,Bandrmaspor,Bodrum FK,0,0,D
+2024-03-09,Adanaspor,Sakaryaspor,0,0,D
+2024-03-09,Eyupspor,Corum FK,0,1,A
+2024-03-10,Altay,Genclerbirligi S.K.,0,4,A
+2024-03-10,Keciorengucu,Erzurumspor FK,0,2,A
+2024-03-10,Sanlurfaspor,Goztepe,0,1,A
+2024-03-10,Kocaelispor,Beykoz Anadolu,1,2,A
+2024-03-11,Manisa F.K.,Umraniyespor,3,2,H
+2024-03-15,Genclerbirligi S.K.,Kocaelispor,2,0,H
+2024-03-16,Bandrmaspor,Eyupspor,2,3,A
+2024-03-16,Corum FK,Manisa F.K.,4,3,H
+2024-03-16,Goztepe,Keciorengucu,0,0,D
+2024-03-17,Erzurumspor FK,Beykoz Anadolu,1,0,H
+2024-03-17,Bodrum FK,Boluspor,1,1,D
+2024-03-17,Giresunspor,Sanlurfaspor,0,6,A
+2024-03-17,Umraniyespor,Adanaspor,2,0,H
+2024-03-17,Sakaryaspor,Altay,2,0,H
+2024-04-02,Keciorengucu,Corum FK,1,2,A
+2024-04-02,Sanlurfaspor,Sakaryaspor,2,0,H
+2024-04-02,Boluspor,Genclerbirligi S.K.,1,2,A
+2024-04-02,Manisa F.K.,Bodrum FK,0,1,A
+2024-04-03,Beykoz Anadolu,Umraniyespor,1,1,D
+2024-04-03,Adanaspor,Eyupspor,1,0,H
+2024-04-03,Altay,Bandrmaspor,0,6,A
+2024-04-03,Kocaelispor,Goztepe,3,2,H
+2024-04-04,Erzurumspor FK,Giresunspor,2,1,H
+2024-04-06,Bodrum FK,Keciorengucu,0,0,D
+2024-04-06,Umraniyespor,Sanlurfaspor,0,1,A
+2024-04-06,Sakaryaspor,Boluspor,2,0,H
+2024-04-07,Bandrmaspor,Manisa F.K.,1,1,D
+2024-04-07,Corum FK,Kocaelispor,1,1,D
+2024-04-07,Genclerbirligi S.K.,Adanaspor,1,1,D
+2024-04-07,Eyupspor,Altay,4,1,H
+2024-04-08,Giresunspor,Beykoz Anadolu,0,3,A
+2024-04-08,Goztepe,Erzurumspor FK,3,0,H
+2024-04-12,Manisa F.K.,Eyupspor,2,2,D
+2024-04-13,Keciorengucu,Genclerbirligi S.K.,2,1,H
+2024-04-13,Boluspor,Umraniyespor,1,0,H
+2024-04-13,Altay,Corum FK,1,3,A
+2024-04-14,Beykoz Anadolu,Goztepe,1,1,D
+2024-04-14,Sanlurfaspor,Bandrmaspor,1,1,D
+2024-04-14,Kocaelispor,Giresunspor,2,0,H
+2024-04-15,Erzurumspor FK,Sakaryaspor,0,0,D
+2024-04-15,Adanaspor,Bodrum FK,1,1,D
+2024-04-19,Altay,Manisa F.K.,0,2,A
+2024-04-20,Bandrmaspor,Beykoz Anadolu,1,1,D
+2024-04-20,Giresunspor,Goztepe,0,3,A
+2024-04-20,Eyupspor,Boluspor,0,0,D
+2024-04-21,Bodrum FK,Sanlurfaspor,2,1,H
+2024-04-21,Genclerbirligi S.K.,Erzurumspor FK,2,0,H
+2024-04-21,Corum FK,Adanaspor,2,0,H
+2024-04-21,Sakaryaspor,Keciorengucu,2,1,H
+2024-04-22,Umraniyespor,Kocaelispor,1,0,H
+2024-04-28,Goztepe,Genclerbirligi S.K.,2,0,H
+2024-04-28,Erzurumspor FK,Corum FK,2,1,H
+2024-04-28,Adanaspor,Manisa F.K.,1,1,D
+2024-04-28,Boluspor,Altay,3,1,H
+2024-04-28,Giresunspor,Sakaryaspor,2,3,A
+2024-04-28,Keciorengucu,Umraniyespor,4,2,H
+2024-04-28,Beykoz Anadolu,Bodrum FK,0,0,D
+2024-04-28,Sanlurfaspor,Eyupspor,1,3,A
+2024-04-28,Kocaelispor,Bandrmaspor,3,1,H
+2024-05-04,Eyupspor,Goztepe,0,3,A
+2024-05-05,Genclerbirligi S.K.,Giresunspor,1,0,H
+2024-05-05,Altay,Adanaspor,0,2,A
+2024-05-05,Umraniyespor,Erzurumspor FK,2,0,H
+2024-05-05,Bodrum FK,Kocaelispor,3,0,H
+2024-05-05,Bandrmaspor,Keciorengucu,2,1,H
+2024-05-05,Manisa F.K.,Boluspor,1,0,H
+2024-05-05,Sakaryaspor,Beykoz Anadolu,0,2,A
+2024-05-05,Corum FK,Sanlurfaspor,1,1,D
+2024-05-10,Keciorengucu,Altay,1,1,D
+2024-05-10,Giresunspor,Umraniyespor,1,2,A
+2024-05-11,Goztepe,Bodrum FK,1,1,D
+2024-05-11,Erzurumspor FK,Eyupspor,0,4,A
+2024-05-11,Adanaspor,Bandrmaspor,1,0,H
+2024-05-11,Boluspor,Corum FK,2,1,H
+2024-05-11,Beykoz Anadolu,Genclerbirligi S.K.,1,1,D
+2024-05-11,Sanlurfaspor,Manisa F.K.,2,0,H
+2024-05-11,Kocaelispor,Sakaryaspor,0,2,A
+2024-05-16,Bodrum FK,Boluspor,2,0,H
+2024-05-16,Corum FK,Kocaelispor,2,1,H
+2024-05-20,Corum FK,Bodrum FK,1,1,D
+2024-05-24,Bodrum FK,Corum FK,0,0,D
+2024-05-30,Sakaryaspor,Bodrum FK,1,3,A

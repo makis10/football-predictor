@@ -1,0 +1,136 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2017-03-12,Vikingur Gota,B36 Torshavn,1,1,D
+2017-03-12,NSI Runavik,EB / Streymur,1,1,D
+2017-03-12,KI Klaksvik,Skala,0,0,D
+2017-03-12,HB Torshavn,07 Vestur,2,0,H
+2017-03-12,TB / FCS / Royn,IF II,2,1,H
+2017-03-19,Skala,HB Torshavn,0,0,D
+2017-03-19,B36 Torshavn,KI Klaksvik,1,1,D
+2017-03-19,NSI Runavik,Vikingur Gota,0,1,A
+2017-03-19,07 Vestur,TB / FCS / Royn,0,1,A
+2017-03-19,IF II,EB / Streymur,3,1,H
+2017-04-08,B36 Torshavn,NSI Runavik,2,2,D
+2017-04-09,Vikingur Gota,Skala,1,0,H
+2017-04-09,IF II,HB Torshavn,0,0,D
+2017-04-09,07 Vestur,KI Klaksvik,0,2,A
+2017-04-09,EB / Streymur,TB / FCS / Royn,1,0,H
+2017-04-17,KI Klaksvik,NSI Runavik,2,2,D
+2017-04-17,HB Torshavn,B36 Torshavn,2,2,D
+2017-04-17,EB / Streymur,Vikingur Gota,1,5,A
+2017-04-17,IF II,07 Vestur,0,1,A
+2017-04-17,TB / FCS / Royn,Skala,2,0,H
+2017-04-22,Skala,IF II,0,0,D
+2017-04-23,TB / FCS / Royn,B36 Torshavn,3,2,H
+2017-04-23,Vikingur Gota,KI Klaksvik,2,2,D
+2017-04-23,NSI Runavik,HB Torshavn,1,0,H
+2017-04-23,EB / Streymur,07 Vestur,0,2,A
+2017-04-29,B36 Torshavn,IF II,4,0,H
+2017-04-30,TB / FCS / Royn,NSI Runavik,1,3,A
+2017-04-30,KI Klaksvik,EB / Streymur,1,0,H
+2017-04-30,HB Torshavn,Vikingur Gota,2,2,D
+2017-04-30,07 Vestur,Skala,1,1,D
+2017-05-06,HB Torshavn,TB / FCS / Royn,2,1,H
+2017-05-06,EB / Streymur,B36 Torshavn,0,0,D
+2017-05-06,Vikingur Gota,07 Vestur,2,2,D
+2017-05-06,NSI Runavik,Skala,1,1,D
+2017-05-06,KI Klaksvik,IF II,3,1,H
+2017-05-14,TB / FCS / Royn,KI Klaksvik,1,2,A
+2017-05-14,NSI Runavik,07 Vestur,4,0,H
+2017-05-14,EB / Streymur,HB Torshavn,1,0,H
+2017-05-14,IF II,Vikingur Gota,1,1,D
+2017-05-14,Skala,B36 Torshavn,2,2,D
+2017-05-20,NSI Runavik,IF II,3,0,H
+2017-05-21,Vikingur Gota,TB / FCS / Royn,3,0,H
+2017-05-21,B36 Torshavn,07 Vestur,4,0,H
+2017-05-21,KI Klaksvik,HB Torshavn,1,0,H
+2017-05-21,Skala,EB / Streymur,3,2,H
+2017-05-28,Vikingur Gota,Skala,4,0,H
+2017-05-28,KI Klaksvik,07 Vestur,1,0,H
+2017-05-28,HB Torshavn,IF II,4,2,H
+2017-05-28,TB / FCS / Royn,EB / Streymur,1,2,A
+2017-05-29,NSI Runavik,B36 Torshavn,1,1,D
+2017-06-02,Skala,KI Klaksvik,1,2,A
+2017-06-03,B36 Torshavn,Vikingur Gota,3,5,A
+2017-06-03,EB / Streymur,NSI Runavik,0,3,A
+2017-06-03,IF II,TB / FCS / Royn,0,4,A
+2017-06-03,07 Vestur,HB Torshavn,1,4,A
+2017-06-14,B36 Torshavn,HB Torshavn,2,2,D
+2017-06-14,NSI Runavik,KI Klaksvik,2,2,D
+2017-06-14,07 Vestur,IF II,3,2,H
+2017-06-14,Skala,TB / FCS / Royn,2,2,D
+2017-06-14,EB / Streymur,Vikingur Gota,0,1,A
+2017-06-18,Vikingur Gota,NSI Runavik,1,2,A
+2017-06-18,KI Klaksvik,B36 Torshavn,1,5,A
+2017-06-18,HB Torshavn,Skala,1,2,A
+2017-06-18,IF II,EB / Streymur,1,2,A
+2017-06-18,TB / FCS / Royn,07 Vestur,3,1,H
+2017-06-23,EB / Streymur,B36 Torshavn,1,2,A
+2017-06-23,07 Vestur,Vikingur Gota,2,4,A
+2017-06-23,IF II,KI Klaksvik,1,4,A
+2017-06-23,Skala,NSI Runavik,2,1,H
+2017-06-23,TB / FCS / Royn,HB Torshavn,0,0,D
+2017-07-21,Vikingur Gota,IF II,4,0,H
+2017-07-22,07 Vestur,NSI Runavik,0,7,A
+2017-07-23,B36 Torshavn,Skala,2,1,H
+2017-07-23,KI Klaksvik,TB / FCS / Royn,4,1,H
+2017-07-23,EB / Streymur,HB Torshavn,2,1,H
+2017-07-27,TB / FCS / Royn,Vikingur Gota,0,3,A
+2017-07-27,IF II,NSI Runavik,0,3,A
+2017-07-27,Skala,EB / Streymur,1,1,D
+2017-07-28,B36 Torshavn,07 Vestur,2,0,H
+2017-07-29,HB Torshavn,KI Klaksvik,2,1,H
+2017-08-06,Vikingur Gota,HB Torshavn,1,3,A
+2017-08-06,B36 Torshavn,IF II,4,2,H
+2017-08-06,NSI Runavik,TB / FCS / Royn,4,0,H
+2017-08-06,EB / Streymur,KI Klaksvik,2,1,H
+2017-08-06,Skala,07 Vestur,0,1,A
+2017-08-11,KI Klaksvik,Vikingur Gota,1,1,D
+2017-08-12,IF II,Skala,0,1,A
+2017-08-12,TB / FCS / Royn,B36 Torshavn,0,1,A
+2017-08-12,HB Torshavn,NSI Runavik,4,1,H
+2017-08-12,07 Vestur,EB / Streymur,2,2,D
+2017-08-16,B36 Torshavn,NSI Runavik,2,0,H
+2017-08-20,Vikingur Gota,B36 Torshavn,4,2,H
+2017-08-20,NSI Runavik,EB / Streymur,3,2,H
+2017-08-20,HB Torshavn,07 Vestur,3,0,H
+2017-08-20,Skala,KI Klaksvik,1,2,A
+2017-08-20,TB / FCS / Royn,IF II,1,0,H
+2017-08-24,EB / Streymur,TB / FCS / Royn,2,2,D
+2017-08-24,IF II,HB Torshavn,2,1,H
+2017-08-24,Skala,Vikingur Gota,1,2,A
+2017-08-24,07 Vestur,KI Klaksvik,1,1,D
+2017-09-10,Vikingur Gota,07 Vestur,3,1,H
+2017-09-10,B36 Torshavn,EB / Streymur,1,0,H
+2017-09-10,NSI Runavik,Skala,3,4,A
+2017-09-10,KI Klaksvik,IF II,4,0,H
+2017-09-10,HB Torshavn,TB / FCS / Royn,3,1,H
+2017-09-16,HB Torshavn,Vikingur Gota,1,2,A
+2017-09-16,TB / FCS / Royn,NSI Runavik,0,0,D
+2017-09-16,07 Vestur,Skala,5,0,H
+2017-09-16,IF II,B36 Torshavn,1,5,A
+2017-09-16,KI Klaksvik,EB / Streymur,6,0,H
+2017-09-20,Vikingur Gota,KI Klaksvik,0,0,D
+2017-09-20,B36 Torshavn,TB / FCS / Royn,3,0,H
+2017-09-20,NSI Runavik,HB Torshavn,2,3,A
+2017-09-20,EB / Streymur,07 Vestur,3,0,H
+2017-09-20,Skala,IF II,2,1,H
+2017-09-24,Vikingur Gota,TB / FCS / Royn,2,3,A
+2017-09-24,KI Klaksvik,HB Torshavn,0,0,D
+2017-09-24,07 Vestur,B36 Torshavn,4,3,H
+2017-09-24,EB / Streymur,Skala,1,2,A
+2017-09-24,IF II,NSI Runavik,0,2,A
+2017-10-01,HB Torshavn,EB / Streymur,2,3,A
+2017-10-01,07 Vestur,NSI Runavik,2,3,A
+2017-10-01,IF II,Vikingur Gota,1,5,A
+2017-10-01,Skala,B36 Torshavn,2,3,A
+2017-10-01,TB / FCS / Royn,KI Klaksvik,0,0,D
+2017-10-15,B36 Torshavn,KI Klaksvik,1,3,A
+2017-10-15,NSI Runavik,Vikingur Gota,2,1,H
+2017-10-15,07 Vestur,TB / FCS / Royn,3,1,H
+2017-10-15,EB / Streymur,IF II,2,4,A
+2017-10-15,Skala,HB Torshavn,0,0,D
+2017-10-21,Vikingur Gota,EB / Streymur,1,2,A
+2017-10-21,KI Klaksvik,NSI Runavik,3,1,H
+2017-10-21,HB Torshavn,B36 Torshavn,1,1,D
+2017-10-21,IF II,07 Vestur,1,5,A
+2017-10-21,TB / FCS / Royn,Skala,0,2,A

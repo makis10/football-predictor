@@ -1,0 +1,193 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2017-07-16,FC Mariupol,Veres Rivne,0,0,D
+2017-07-16,Karpaty,Zirka,1,1,D
+2017-07-16,Zorya Luhansk,Stal Kamianske,0,1,A
+2017-07-16,Oleksandria,Olimpik Donetsk,0,2,A
+2017-07-18,Dynamo Kyiv,Chornomorets,2,1,H
+2017-07-18,Vorskla Poltava,Shakhtar Donetsk,0,3,A
+2017-07-22,Chornomorets,Stal Kamianske,0,1,A
+2017-07-22,Veres Rivne,Oleksandria,0,0,D
+2017-07-22,Shakhtar Donetsk,Dynamo Kyiv,0,1,A
+2017-07-23,Karpaty,Vorskla Poltava,1,3,A
+2017-07-23,Zorya Luhansk,FC Mariupol,1,1,D
+2017-07-23,Zirka,Olimpik Donetsk,0,0,D
+2017-07-29,Stal Kamianske,Shakhtar Donetsk,1,2,A
+2017-07-29,Dynamo Kyiv,Karpaty,5,0,H
+2017-07-29,Vorskla Poltava,Zirka,2,1,H
+2017-07-30,FC Mariupol,Chornomorets,3,0,H
+2017-07-30,Olimpik Donetsk,Veres Rivne,0,0,D
+2017-07-30,Oleksandria,Zorya Luhansk,1,1,D
+2017-08-05,Karpaty,Stal Kamianske,3,1,H
+2017-08-05,Shakhtar Donetsk,FC Mariupol,3,1,H
+2017-08-06,Chornomorets,Oleksandria,2,2,D
+2017-08-06,Zirka,Veres Rivne,1,3,A
+2017-08-06,Zorya Luhansk,Olimpik Donetsk,0,2,A
+2017-08-06,Vorskla Poltava,Dynamo Kyiv,0,0,D
+2017-08-11,Dynamo Kyiv,Zirka,3,0,H
+2017-08-12,Veres Rivne,Zorya Luhansk,0,1,A
+2017-08-12,Stal Kamianske,Vorskla Poltava,0,1,A
+2017-08-12,Oleksandria,Shakhtar Donetsk,1,2,A
+2017-08-13,FC Mariupol,Karpaty,3,0,H
+2017-08-13,Olimpik Donetsk,Chornomorets,1,0,H
+2017-08-19,Shakhtar Donetsk,Olimpik Donetsk,2,0,H
+2017-08-19,Chornomorets,Veres Rivne,0,1,A
+2017-08-20,Karpaty,Oleksandria,0,0,D
+2017-08-20,Zirka,Zorya Luhansk,2,1,H
+2017-08-20,Dynamo Kyiv,Stal Kamianske,4,1,H
+2017-08-20,Vorskla Poltava,FC Mariupol,1,0,H
+2017-08-26,Stal Kamianske,Zirka,0,1,A
+2017-08-26,Olimpik Donetsk,Karpaty,0,0,D
+2017-08-27,FC Mariupol,Dynamo Kyiv,3,0,H
+2017-08-27,Veres Rivne,Shakhtar Donetsk,1,2,A
+2017-08-27,Zorya Luhansk,Chornomorets,5,0,H
+2017-08-27,Oleksandria,Vorskla Poltava,0,1,A
+2017-09-09,Shakhtar Donetsk,Zorya Luhansk,3,1,H
+2017-09-09,Vorskla Poltava,Olimpik Donetsk,1,1,D
+2017-09-10,Zirka,Chornomorets,0,1,A
+2017-09-10,Karpaty,Veres Rivne,1,6,A
+2017-09-10,Stal Kamianske,FC Mariupol,0,1,A
+2017-09-10,Dynamo Kyiv,Oleksandria,3,0,H
+2017-09-16,Oleksandria,Stal Kamianske,4,1,H
+2017-09-16,FC Mariupol,Zirka,1,0,H
+2017-09-16,Veres Rivne,Vorskla Poltava,1,0,H
+2017-09-17,Zorya Luhansk,Karpaty,0,0,D
+2017-09-17,Olimpik Donetsk,Dynamo Kyiv,1,2,A
+2017-09-17,Chornomorets,Shakhtar Donetsk,0,0,D
+2017-09-23,Zirka,Shakhtar Donetsk,2,4,A
+2017-09-23,Dynamo Kyiv,Veres Rivne,0,0,D
+2017-09-24,Stal Kamianske,Olimpik Donetsk,1,1,D
+2017-09-24,FC Mariupol,Oleksandria,1,1,D
+2017-09-24,Vorskla Poltava,Zorya Luhansk,1,1,D
+2017-09-24,Karpaty,Chornomorets,1,1,D
+2017-09-30,Olimpik Donetsk,FC Mariupol,3,2,H
+2017-09-30,Oleksandria,Zirka,0,0,D
+2017-10-01,Chornomorets,Vorskla Poltava,0,3,A
+2017-10-01,Shakhtar Donetsk,Karpaty,2,0,H
+2017-10-01,Veres Rivne,Stal Kamianske,1,1,D
+2017-10-01,Zorya Luhansk,Dynamo Kyiv,4,4,D
+2017-10-13,Shakhtar Donetsk,Vorskla Poltava,3,2,H
+2017-10-14,Veres Rivne,FC Mariupol,1,1,D
+2017-10-14,Stal Kamianske,Zorya Luhansk,0,1,A
+2017-10-15,Zirka,Karpaty,0,0,D
+2017-10-15,Olimpik Donetsk,Oleksandria,1,0,H
+2017-10-15,Chornomorets,Dynamo Kyiv,2,1,H
+2017-10-21,Olimpik Donetsk,Zirka,1,0,H
+2017-10-21,Oleksandria,Veres Rivne,1,1,D
+2017-10-21,Vorskla Poltava,Karpaty,0,1,A
+2017-10-22,Stal Kamianske,Chornomorets,1,1,D
+2017-10-22,FC Mariupol,Zorya Luhansk,2,5,A
+2017-10-22,Dynamo Kyiv,Shakhtar Donetsk,0,0,D
+2017-10-28,Shakhtar Donetsk,Stal Kamianske,1,1,D
+2017-10-29,Zirka,Vorskla Poltava,1,0,H
+2017-10-29,Zorya Luhansk,Oleksandria,2,2,D
+2017-10-29,Veres Rivne,Olimpik Donetsk,1,1,D
+2017-10-29,Karpaty,Dynamo Kyiv,1,1,D
+2017-10-30,Chornomorets,FC Mariupol,0,0,D
+2017-11-04,Veres Rivne,Zirka,0,0,D
+2017-11-04,Oleksandria,Chornomorets,0,0,D
+2017-11-05,FC Mariupol,Shakhtar Donetsk,1,3,A
+2017-11-05,Stal Kamianske,Karpaty,0,0,D
+2017-11-05,Dynamo Kyiv,Vorskla Poltava,2,1,H
+2017-11-05,Olimpik Donetsk,Zorya Luhansk,3,3,D
+2017-11-17,Shakhtar Donetsk,Oleksandria,1,2,A
+2017-11-18,Zorya Luhansk,Veres Rivne,1,1,D
+2017-11-18,Zirka,Dynamo Kyiv,0,2,A
+2017-11-18,Karpaty,FC Mariupol,0,1,A
+2017-11-19,Vorskla Poltava,Stal Kamianske,1,1,D
+2017-11-19,Chornomorets,Olimpik Donetsk,2,1,H
+2017-11-25,FC Mariupol,Vorskla Poltava,0,1,A
+2017-11-25,Olimpik Donetsk,Shakhtar Donetsk,2,4,A
+2017-11-26,Veres Rivne,Chornomorets,3,1,H
+2017-11-26,Oleksandria,Karpaty,3,0,H
+2017-11-26,Zorya Luhansk,Zirka,1,0,H
+2017-11-26,Stal Kamianske,Dynamo Kyiv,0,2,A
+2017-12-02,Chornomorets,Zorya Luhansk,1,1,D
+2017-12-02,Shakhtar Donetsk,Veres Rivne,2,0,H
+2017-12-03,Zirka,Stal Kamianske,1,0,H
+2017-12-03,Vorskla Poltava,Oleksandria,3,1,H
+2017-12-03,Dynamo Kyiv,FC Mariupol,5,1,H
+2017-12-09,FC Mariupol,Stal Kamianske,4,2,H
+2017-12-09,Chornomorets,Zirka,3,3,D
+2017-12-09,Veres Rivne,Karpaty,2,2,D
+2017-12-09,Olimpik Donetsk,Vorskla Poltava,1,4,A
+2017-12-10,Oleksandria,Dynamo Kyiv,0,0,D
+2017-12-10,Zorya Luhansk,Shakhtar Donetsk,2,1,H
+2018-02-16,Shakhtar Donetsk,Chornomorets,5,0,H
+2018-02-17,Stal Kamianske,Oleksandria,2,0,H
+2018-02-17,Vorskla Poltava,Veres Rivne,1,0,H
+2018-02-18,Karpaty,Zorya Luhansk,0,2,A
+2018-02-18,Zirka,FC Mariupol,0,3,A
+2018-02-18,Dynamo Kyiv,Olimpik Donetsk,1,0,H
+2018-02-21,Karpaty,Olimpik Donetsk,2,1,H
+2018-02-24,Chornomorets,Karpaty,0,0,D
+2018-02-24,Oleksandria,FC Mariupol,1,0,H
+2018-02-25,Zorya Luhansk,Vorskla Poltava,3,0,H
+2018-02-25,Olimpik Donetsk,Stal Kamianske,2,0,H
+2018-02-25,Shakhtar Donetsk,Zirka,5,0,H
+2018-02-25,Veres Rivne,Dynamo Kyiv,3,1,H
+2018-03-03,Vorskla Poltava,Chornomorets,2,1,H
+2018-03-04,FC Mariupol,Olimpik Donetsk,1,0,H
+2018-03-04,Stal Kamianske,Veres Rivne,0,1,A
+2018-03-04,Dynamo Kyiv,Zorya Luhansk,3,2,H
+2018-03-04,Karpaty,Shakhtar Donetsk,0,3,A
+2018-03-06,Zirka,Oleksandria,0,0,D
+2018-03-09,Vorskla Poltava,Shakhtar Donetsk,0,3,A
+2018-03-10,Zirka,Stal Kamianske,1,2,A
+2018-03-10,Oleksandria,Chornomorets,0,0,D
+2018-03-11,Karpaty,Olimpik Donetsk,0,3,A
+2018-03-11,FC Mariupol,Zorya Luhansk,0,0,D
+2018-03-11,Dynamo Kyiv,Veres Rivne,1,0,H
+2018-03-17,Chornomorets,Stal Kamianske,0,1,A
+2018-03-17,Olimpik Donetsk,Zirka,0,1,A
+2018-03-18,Oleksandria,Karpaty,1,1,D
+2018-03-18,Veres Rivne,Zorya Luhansk,0,1,A
+2018-03-18,Shakhtar Donetsk,FC Mariupol,3,0,H
+2018-03-18,Dynamo Kyiv,Vorskla Poltava,4,0,H
+2018-03-31,Karpaty,Chornomorets,3,1,H
+2018-03-31,Zirka,Oleksandria,0,0,D
+2018-03-31,Vorskla Poltava,Veres Rivne,0,0,D
+2018-04-01,FC Mariupol,Dynamo Kyiv,2,3,A
+2018-04-01,Zorya Luhansk,Shakhtar Donetsk,0,3,A
+2018-04-01,Stal Kamianske,Olimpik Donetsk,0,0,D
+2018-04-07,Dynamo Kyiv,Zorya Luhansk,4,0,H
+2018-04-07,Veres Rivne,Shakhtar Donetsk,0,2,A
+2018-04-07,Chornomorets,Olimpik Donetsk,3,1,H
+2018-04-07,Oleksandria,Stal Kamianske,2,0,H
+2018-04-07,Vorskla Poltava,FC Mariupol,1,0,H
+2018-04-09,Karpaty,Zirka,2,1,H
+2018-04-14,FC Mariupol,Veres Rivne,2,0,H
+2018-04-14,Shakhtar Donetsk,Dynamo Kyiv,0,1,A
+2018-04-15,Olimpik Donetsk,Oleksandria,0,0,D
+2018-04-15,Zirka,Chornomorets,2,1,H
+2018-04-15,Zorya Luhansk,Vorskla Poltava,0,3,A
+2018-04-15,Stal Kamianske,Karpaty,0,1,A
+2018-04-21,Chornomorets,Oleksandria,1,3,A
+2018-04-21,Stal Kamianske,Zirka,1,1,D
+2018-04-21,Shakhtar Donetsk,Vorskla Poltava,4,2,H
+2018-04-22,Zorya Luhansk,FC Mariupol,3,1,H
+2018-04-22,Olimpik Donetsk,Karpaty,0,2,A
+2018-04-22,Veres Rivne,Dynamo Kyiv,1,4,A
+2018-04-27,FC Mariupol,Shakhtar Donetsk,0,1,A
+2018-04-28,Karpaty,Oleksandria,1,2,A
+2018-04-28,Zirka,Olimpik Donetsk,2,0,H
+2018-04-28,Stal Kamianske,Chornomorets,1,2,A
+2018-04-29,Zorya Luhansk,Veres Rivne,1,0,H
+2018-04-29,Vorskla Poltava,Dynamo Kyiv,0,1,A
+2018-05-04,Dynamo Kyiv,FC Mariupol,1,1,D
+2018-05-05,Veres Rivne,Vorskla Poltava,0,0,D
+2018-05-05,Chornomorets,Karpaty,1,1,D
+2018-05-05,Shakhtar Donetsk,Zorya Luhansk,2,1,H
+2018-05-06,Olimpik Donetsk,Stal Kamianske,0,2,A
+2018-05-06,Oleksandria,Zirka,1,0,H
+2018-05-12,Zirka,Karpaty,1,1,D
+2018-05-12,Olimpik Donetsk,Chornomorets,1,0,H
+2018-05-12,Stal Kamianske,Oleksandria,1,2,A
+2018-05-13,Shakhtar Donetsk,Veres Rivne,1,0,H
+2018-05-13,Zorya Luhansk,Dynamo Kyiv,0,1,A
+2018-05-13,FC Mariupol,Vorskla Poltava,1,1,D
+2018-05-19,Chornomorets,Zirka,1,0,H
+2018-05-19,Karpaty,Stal Kamianske,3,0,H
+2018-05-19,Oleksandria,Olimpik Donetsk,2,0,H
+2018-05-19,Dynamo Kyiv,Shakhtar Donetsk,2,1,H
+2018-05-20,Vorskla Poltava,Zorya Luhansk,2,0,H
+2018-05-20,Veres Rivne,FC Mariupol,1,1,D

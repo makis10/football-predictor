@@ -1,0 +1,381 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2017-08-06,SC Covilha,Sporting CP B,1,2,A
+2017-08-06,Nacional,Penafiel,1,1,D
+2017-08-06,Academico Viseu,Academica,2,1,H
+2017-08-06,Cova De Piedade,Santa Clara,1,2,A
+2017-08-06,Famalicao,Arouca,2,0,H
+2017-08-06,FC Porto B,GIL Vicente,1,2,A
+2017-08-06,SC Braga B,U. Madeira,1,1,D
+2017-08-06,Real,Leixoes,4,1,H
+2017-08-06,Varzim,Guimaraes B,3,0,H
+2017-08-08,Oliveirense,Benfica B,2,1,H
+2017-08-12,Academica,SC Braga B,2,0,H
+2017-08-12,Sporting CP B,Academico Viseu,1,2,A
+2017-08-13,Arouca,FC Porto B,2,2,D
+2017-08-13,Santa Clara,SC Covilha,2,1,H
+2017-08-13,Leixoes,Varzim,2,1,H
+2017-08-13,GIL Vicente,Cova De Piedade,1,2,A
+2017-08-13,U. Madeira,Real,2,0,H
+2017-08-13,Benfica B,Nacional,2,2,D
+2017-08-13,Guimaraes B,Oliveirense,0,0,D
+2017-08-13,Penafiel,Famalicao,1,1,D
+2017-08-19,SC Braga B,Santa Clara,0,2,A
+2017-08-19,Famalicao,Benfica B,0,0,D
+2017-08-19,Oliveirense,Nacional,0,2,A
+2017-08-19,SC Covilha,Guimaraes B,2,1,H
+2017-08-19,Varzim,GIL Vicente,1,1,D
+2017-08-19,Academico Viseu,Leixoes,3,0,H
+2017-08-19,Cova De Piedade,Arouca,3,0,H
+2017-08-19,FC Porto B,Penafiel,3,1,H
+2017-08-19,U. Madeira,Academica,3,0,H
+2017-08-20,Real,Sporting CP B,1,2,A
+2017-08-23,Nacional,Famalicao,3,0,H
+2017-08-23,Leixoes,FC Porto B,1,0,H
+2017-08-23,Sporting CP B,Cova De Piedade,2,1,H
+2017-08-23,GIL Vicente,U. Madeira,1,0,H
+2017-08-23,Santa Clara,Academica,3,1,H
+2017-08-23,Benfica B,Varzim,2,1,H
+2017-08-23,Penafiel,SC Braga B,2,1,H
+2017-08-23,Arouca,Academico Viseu,0,0,D
+2017-08-27,Academico Viseu,Benfica B,1,0,H
+2017-08-27,SC Covilha,Nacional,0,1,A
+2017-08-27,Famalicao,Oliveirense,1,0,H
+2017-08-27,FC Porto B,Santa Clara,1,0,H
+2017-08-27,U. Madeira,Sporting CP B,2,2,D
+2017-08-27,Real,Arouca,0,1,A
+2017-08-27,Varzim,Penafiel,3,0,H
+2017-08-27,Cova De Piedade,Guimaraes B,0,1,A
+2017-08-28,SC Braga B,Leixoes,2,2,D
+2017-08-28,Academica,GIL Vicente,1,1,D
+2017-09-03,Oliveirense,SC Covilha,2,2,D
+2017-09-03,Guimaraes B,Real,4,3,H
+2017-09-08,Benfica B,Real,3,0,H
+2017-09-09,Oliveirense,FC Porto B,1,2,A
+2017-09-09,Guimaraes B,Academica,0,3,A
+2017-09-09,Santa Clara,U. Madeira,2,1,H
+2017-09-10,Nacional,Academico Viseu,2,0,H
+2017-09-10,Penafiel,Cova De Piedade,1,0,H
+2017-09-10,Famalicao,Varzim,3,1,H
+2017-09-10,Leixoes,SC Covilha,2,1,H
+2017-09-10,Sporting CP B,GIL Vicente,0,1,A
+2017-09-10,Arouca,SC Braga B,0,0,D
+2017-09-16,Academica,Sporting CP B,4,2,H
+2017-09-16,FC Porto B,Nacional,2,1,H
+2017-09-16,SC Braga B,Oliveirense,1,1,D
+2017-09-17,Cova De Piedade,Benfica B,2,0,H
+2017-09-17,SC Covilha,Famalicao,1,1,D
+2017-09-17,Varzim,Arouca,0,0,D
+2017-09-17,Academico Viseu,Guimaraes B,2,1,H
+2017-09-17,GIL Vicente,Santa Clara,1,2,A
+2017-09-17,U. Madeira,Leixoes,0,2,A
+2017-09-17,Real,Penafiel,3,1,H
+2017-09-20,Arouca,Sporting CP B,2,0,H
+2017-09-27,Benfica B,SC Covilha,1,1,D
+2017-09-27,Guimaraes B,U. Madeira,1,1,D
+2017-09-27,FC Porto B,Cova De Piedade,2,0,H
+2017-09-27,Santa Clara,Varzim,1,2,A
+2017-09-27,Famalicao,SC Braga B,1,1,D
+2017-09-30,SC Covilha,Arouca,1,0,H
+2017-09-30,Varzim,Oliveirense,0,1,A
+2017-09-30,Academico Viseu,FC Porto B,4,1,H
+2017-09-30,Cova De Piedade,Leixoes,2,0,H
+2017-09-30,GIL Vicente,Guimaraes B,3,0,H
+2017-09-30,U. Madeira,Penafiel,0,0,D
+2017-09-30,Real,Famalicao,1,1,D
+2017-09-30,Academica,Benfica B,1,2,A
+2017-09-30,Sporting CP B,Santa Clara,4,3,H
+2017-10-01,SC Braga B,Nacional,5,4,H
+2017-10-07,Nacional,Real,0,4,A
+2017-10-07,Oliveirense,Academico Viseu,2,1,H
+2017-10-07,Penafiel,Academica,0,0,D
+2017-10-08,Leixoes,GIL Vicente,2,0,H
+2017-10-21,Penafiel,Sporting CP B,4,1,H
+2017-10-21,Nacional,Cova De Piedade,2,1,H
+2017-10-21,Oliveirense,Real,1,1,D
+2017-10-21,Famalicao,Academico Viseu,0,1,A
+2017-10-21,Leixoes,Academica,1,0,H
+2017-10-21,SC Braga B,SC Covilha,0,1,A
+2017-10-22,Arouca,GIL Vicente,1,0,H
+2017-10-22,Benfica B,U. Madeira,2,1,H
+2017-10-22,Santa Clara,Guimaraes B,1,0,H
+2017-10-22,FC Porto B,Varzim,3,0,H
+2017-10-25,Nacional,Sporting CP B,1,1,D
+2017-10-28,GIL Vicente,Benfica B,4,0,H
+2017-10-28,Guimaraes B,Famalicao,1,2,A
+2017-10-28,Real,SC Braga B,1,3,A
+2017-10-28,Academica,Arouca,4,1,H
+2017-10-29,SC Covilha,FC Porto B,2,1,H
+2017-10-29,Varzim,Nacional,0,0,D
+2017-10-29,Cova De Piedade,Academico Viseu,0,0,D
+2017-10-29,Sporting CP B,Leixoes,1,1,D
+2017-10-29,U. Madeira,Oliveirense,1,0,H
+2017-10-29,Santa Clara,Penafiel,1,2,A
+2017-11-01,Benfica B,Santa Clara,1,3,A
+2017-11-01,FC Porto B,Real,3,1,H
+2017-11-01,Oliveirense,Academica,0,2,A
+2017-11-01,Academico Viseu,SC Covilha,0,0,D
+2017-11-01,Arouca,U. Madeira,1,0,H
+2017-11-01,SC Braga B,Varzim,1,0,H
+2017-11-05,U. Madeira,FC Porto B,1,2,A
+2017-11-05,Benfica B,Penafiel,3,4,A
+2017-11-05,Varzim,SC Covilha,0,0,D
+2017-11-05,Academica,Nacional,1,0,H
+2017-11-05,Cova De Piedade,SC Braga B,0,2,A
+2017-11-05,Sporting CP B,Oliveirense,2,0,H
+2017-11-05,Real,Academico Viseu,0,1,A
+2017-11-05,Santa Clara,Leixoes,1,1,D
+2017-11-05,GIL Vicente,Famalicao,1,2,A
+2017-11-06,Guimaraes B,Arouca,1,2,A
+2017-11-12,Varzim,U. Madeira,3,1,H
+2017-11-12,Leixoes,Guimaraes B,3,2,H
+2017-11-12,Famalicao,Cova De Piedade,3,0,H
+2017-11-18,Penafiel,GIL Vicente,0,0,D
+2017-11-25,Famalicao,Sporting CP B,6,0,H
+2017-11-25,SC Braga B,GIL Vicente,1,1,D
+2017-11-25,Nacional,U. Madeira,2,1,H
+2017-11-26,Leixoes,Benfica B,0,0,D
+2017-11-26,Oliveirense,Cova De Piedade,1,1,D
+2017-11-26,Penafiel,Guimaraes B,2,1,H
+2017-11-26,SC Covilha,Real,0,0,D
+2017-11-26,Academico Viseu,Varzim,0,0,D
+2017-11-26,Arouca,Santa Clara,2,0,H
+2017-11-26,FC Porto B,Academica,1,2,A
+2017-12-01,Benfica B,Arouca,1,0,H
+2017-12-02,GIL Vicente,Oliveirense,1,2,A
+2017-12-02,Guimaraes B,SC Braga B,3,1,H
+2017-12-02,Sporting CP B,FC Porto B,3,0,H
+2017-12-03,U. Madeira,Academico Viseu,5,3,H
+2017-12-03,Penafiel,Leixoes,1,1,D
+2017-12-03,Varzim,Real,1,0,H
+2017-12-03,Academica,Famalicao,1,1,D
+2017-12-03,Cova De Piedade,SC Covilha,1,0,H
+2017-12-03,Santa Clara,Nacional,1,1,D
+2017-12-09,Famalicao,Santa Clara,5,2,H
+2017-12-09,Real,Academica,3,4,A
+2017-12-10,SC Covilha,U. Madeira,2,0,H
+2017-12-10,Oliveirense,Penafiel,2,1,H
+2017-12-10,Varzim,Cova De Piedade,2,2,D
+2017-12-10,Academico Viseu,SC Braga B,2,1,H
+2017-12-10,Arouca,Leixoes,2,1,H
+2017-12-10,FC Porto B,Guimaraes B,1,0,H
+2017-12-10,Nacional,GIL Vicente,1,1,D
+2017-12-10,Benfica B,Sporting CP B,2,1,H
+2017-12-16,GIL Vicente,Academico Viseu,0,0,D
+2017-12-16,Guimaraes B,Benfica B,1,0,H
+2017-12-16,Cova De Piedade,Real,1,0,H
+2017-12-16,SC Braga B,FC Porto B,1,2,A
+2017-12-16,Sporting CP B,Varzim,1,0,H
+2017-12-17,Leixoes,Nacional,2,2,D
+2017-12-17,Penafiel,Arouca,2,0,H
+2017-12-17,Academica,SC Covilha,2,0,H
+2017-12-17,Santa Clara,Oliveirense,0,0,D
+2017-12-17,U. Madeira,Famalicao,3,0,H
+2017-12-21,SC Covilha,GIL Vicente,3,0,H
+2017-12-21,Academico Viseu,Penafiel,1,4,A
+2017-12-21,Sporting CP B,Guimaraes B,1,2,A
+2017-12-21,Real,Santa Clara,1,1,D
+2017-12-21,Benfica B,SC Braga B,1,0,H
+2017-12-21,Famalicao,FC Porto B,0,3,A
+2017-12-21,Oliveirense,Leixoes,1,1,D
+2017-12-22,Nacional,Arouca,2,2,D
+2017-12-22,Cova De Piedade,Academica,2,1,H
+2018-01-06,Leixoes,Famalicao,1,0,H
+2018-01-06,Guimaraes B,Nacional,2,3,A
+2018-01-06,SC Braga B,Sporting CP B,0,0,D
+2018-01-06,GIL Vicente,Real,0,0,D
+2018-01-06,U. Madeira,Cova De Piedade,1,0,H
+2018-01-06,Santa Clara,Academico Viseu,0,0,D
+2018-01-06,FC Porto B,Benfica B,3,1,H
+2018-01-06,Academica,Varzim,1,0,H
+2018-01-07,Penafiel,SC Covilha,0,1,A
+2018-01-07,Arouca,Oliveirense,3,0,H
+2018-01-13,Academica,Academico Viseu,1,1,D
+2018-01-13,Sporting CP B,SC Covilha,0,1,A
+2018-01-13,Benfica B,Oliveirense,3,2,H
+2018-01-14,GIL Vicente,FC Porto B,0,1,A
+2018-01-14,Guimaraes B,Varzim,2,1,H
+2018-01-14,Penafiel,Nacional,0,3,A
+2018-01-14,Arouca,Famalicao,1,0,H
+2018-01-14,Leixoes,Real,3,0,H
+2018-01-14,U. Madeira,SC Braga B,1,1,D
+2018-01-14,Santa Clara,Cova De Piedade,1,0,H
+2018-01-19,Oliveirense,Guimaraes B,1,2,A
+2018-01-20,Academico Viseu,Sporting CP B,1,1,D
+2018-01-20,Nacional,Benfica B,2,0,H
+2018-01-20,Cova De Piedade,GIL Vicente,2,0,H
+2018-01-21,Real,U. Madeira,3,1,H
+2018-01-21,SC Covilha,Santa Clara,1,0,H
+2018-01-21,Varzim,Leixoes,1,1,D
+2018-01-21,FC Porto B,Arouca,1,1,D
+2018-01-21,SC Braga B,Academica,0,3,A
+2018-01-21,Famalicao,Penafiel,1,2,A
+2018-01-29,Guimaraes B,SC Covilha,3,0,H
+2018-01-29,Arouca,Cova De Piedade,0,0,D
+2018-01-29,Sporting CP B,Real,2,1,H
+2018-01-29,Academica,U. Madeira,4,2,H
+2018-01-29,GIL Vicente,Varzim,0,1,A
+2018-01-30,Benfica B,Famalicao,5,0,H
+2018-01-30,Santa Clara,SC Braga B,0,0,D
+2018-01-31,Penafiel,FC Porto B,1,0,H
+2018-01-31,Leixoes,Academico Viseu,1,1,D
+2018-02-04,Academica,Santa Clara,0,1,A
+2018-02-04,SC Covilha,Oliveirense,1,1,D
+2018-02-04,Varzim,Benfica B,1,3,A
+2018-02-04,Academico Viseu,Arouca,1,3,A
+2018-02-04,Cova De Piedade,Sporting CP B,3,1,H
+2018-02-04,FC Porto B,Leixoes,2,1,H
+2018-02-04,SC Braga B,Penafiel,0,0,D
+2018-02-04,U. Madeira,GIL Vicente,0,0,D
+2018-02-04,Real,Guimaraes B,1,3,A
+2018-02-04,Famalicao,Nacional,3,2,H
+2018-02-10,Penafiel,Varzim,2,3,A
+2018-02-11,GIL Vicente,Academica,0,4,A
+2018-02-11,Nacional,SC Covilha,1,1,D
+2018-02-11,Guimaraes B,Cova De Piedade,1,0,H
+2018-02-11,Oliveirense,Famalicao,2,0,H
+2018-02-11,Arouca,Real,1,0,H
+2018-02-11,Leixoes,SC Braga B,1,1,D
+2018-02-11,Sporting CP B,U. Madeira,0,1,A
+2018-02-11,Santa Clara,FC Porto B,2,0,H
+2018-02-11,Benfica B,Academico Viseu,1,5,A
+2018-02-17,GIL Vicente,Sporting CP B,0,0,D
+2018-02-17,SC Braga B,Arouca,1,3,A
+2018-02-17,Academica,Guimaraes B,1,2,A
+2018-02-18,Real,Benfica B,5,1,H
+2018-02-18,FC Porto B,Oliveirense,1,2,A
+2018-02-18,SC Covilha,Leixoes,0,2,A
+2018-02-18,Varzim,Famalicao,2,0,H
+2018-02-18,Academico Viseu,Nacional,3,3,D
+2018-02-18,Cova De Piedade,Penafiel,1,3,A
+2018-02-18,U. Madeira,Santa Clara,0,1,A
+2018-02-24,Famalicao,SC Covilha,1,0,H
+2018-02-24,Oliveirense,SC Braga B,2,3,A
+2018-02-24,Sporting CP B,Academica,2,2,D
+2018-02-25,Guimaraes B,Academico Viseu,0,0,D
+2018-02-25,Penafiel,Real,1,0,H
+2018-02-25,Arouca,Varzim,1,2,A
+2018-02-25,Leixoes,U. Madeira,0,1,A
+2018-02-25,Santa Clara,GIL Vicente,2,1,H
+2018-02-25,Benfica B,Cova De Piedade,1,1,D
+2018-03-01,Nacional,Oliveirense,2,1,H
+2018-03-03,Sporting CP B,Arouca,0,2,A
+2018-03-04,SC Covilha,Benfica B,1,3,A
+2018-03-04,Varzim,Santa Clara,1,1,D
+2018-03-04,Academico Viseu,Oliveirense,0,2,A
+2018-03-04,Academica,Penafiel,1,1,D
+2018-03-04,Cova De Piedade,FC Porto B,2,2,D
+2018-03-04,SC Braga B,Famalicao,1,0,H
+2018-03-04,GIL Vicente,Leixoes,2,1,H
+2018-03-04,U. Madeira,Guimaraes B,1,1,D
+2018-03-07,Nacional,FC Porto B,6,0,H
+2018-03-09,Benfica B,Academica,0,4,A
+2018-03-10,Penafiel,U. Madeira,2,0,H
+2018-03-10,Nacional,SC Braga B,2,1,H
+2018-03-10,Oliveirense,Varzim,0,0,D
+2018-03-10,Arouca,SC Covilha,2,2,D
+2018-03-10,Leixoes,Cova De Piedade,4,0,H
+2018-03-10,Santa Clara,Sporting CP B,4,0,H
+2018-03-10,Guimaraes B,GIL Vicente,2,0,H
+2018-03-10,Famalicao,Real,2,0,H
+2018-03-11,FC Porto B,Academico Viseu,0,1,A
+2018-03-14,Academica,Leixoes,2,1,H
+2018-03-14,Sporting CP B,Penafiel,3,4,A
+2018-03-14,U. Madeira,Benfica B,0,4,A
+2018-03-14,Cova De Piedade,Nacional,1,1,D
+2018-03-17,SC Braga B,Real,1,2,A
+2018-03-17,Famalicao,Guimaraes B,1,1,D
+2018-03-18,Penafiel,Santa Clara,3,0,H
+2018-03-18,Nacional,Varzim,3,0,H
+2018-03-18,Oliveirense,U. Madeira,2,1,H
+2018-03-18,Academico Viseu,Cova De Piedade,1,0,H
+2018-03-18,Arouca,Academica,1,0,H
+2018-03-18,FC Porto B,SC Covilha,3,0,H
+2018-03-18,Leixoes,Sporting CP B,1,1,D
+2018-03-18,Benfica B,GIL Vicente,1,2,A
+2018-03-21,Real,Nacional,2,4,A
+2018-03-25,Guimaraes B,Santa Clara,0,2,A
+2018-03-25,SC Covilha,SC Braga B,1,0,H
+2018-03-25,Real,Oliveirense,1,0,H
+2018-03-25,Academico Viseu,Famalicao,0,1,A
+2018-03-25,GIL Vicente,Arouca,0,3,A
+2018-03-30,SC Covilha,Academico Viseu,1,3,A
+2018-03-30,Guimaraes B,Leixoes,2,2,D
+2018-03-31,Real,FC Porto B,0,0,D
+2018-03-31,Varzim,SC Braga B,1,1,D
+2018-03-31,Cova De Piedade,Famalicao,1,0,H
+2018-03-31,Sporting CP B,Nacional,2,3,A
+2018-03-31,GIL Vicente,Penafiel,2,1,H
+2018-03-31,U. Madeira,Arouca,0,0,D
+2018-03-31,Santa Clara,Benfica B,3,2,H
+2018-03-31,Academica,Oliveirense,0,2,A
+2018-04-04,Varzim,FC Porto B,3,1,H
+2018-04-06,SC Braga B,Cova De Piedade,1,0,H
+2018-04-07,Nacional,Academica,1,0,H
+2018-04-07,Oliveirense,Sporting CP B,4,2,H
+2018-04-07,Penafiel,Benfica B,1,1,D
+2018-04-07,SC Covilha,Varzim,2,0,H
+2018-04-07,Academico Viseu,Real,2,2,D
+2018-04-07,Arouca,Guimaraes B,0,1,A
+2018-04-07,Famalicao,GIL Vicente,2,0,H
+2018-04-07,Leixoes,Santa Clara,1,0,H
+2018-04-07,FC Porto B,U. Madeira,2,1,H
+2018-04-11,Guimaraes B,Penafiel,1,1,D
+2018-04-11,Varzim,Academico Viseu,0,1,A
+2018-04-11,Cova De Piedade,Oliveirense,3,2,H
+2018-04-11,Sporting CP B,Famalicao,1,1,D
+2018-04-11,GIL Vicente,SC Braga B,1,2,A
+2018-04-11,Real,SC Covilha,3,0,H
+2018-04-11,Santa Clara,Arouca,0,0,D
+2018-04-11,Benfica B,Leixoes,1,2,A
+2018-04-11,U. Madeira,Nacional,1,3,A
+2018-04-15,Nacional,Santa Clara,3,3,D
+2018-04-15,Academico Viseu,U. Madeira,1,3,A
+2018-04-15,Oliveirense,GIL Vicente,1,1,D
+2018-04-15,SC Covilha,Cova De Piedade,0,0,D
+2018-04-15,Arouca,Benfica B,1,0,H
+2018-04-15,Famalicao,Academica,1,2,A
+2018-04-15,Leixoes,Penafiel,1,0,H
+2018-04-15,SC Braga B,Guimaraes B,3,1,H
+2018-04-15,Real,Varzim,1,2,A
+2018-04-16,FC Porto B,Sporting CP B,0,2,A
+2018-04-21,Academica,Real,1,0,H
+2018-04-21,U. Madeira,SC Covilha,1,0,H
+2018-04-22,GIL Vicente,Nacional,0,0,D
+2018-04-22,Santa Clara,Famalicao,2,0,H
+2018-04-22,Penafiel,Oliveirense,1,0,H
+2018-04-22,Cova De Piedade,Varzim,1,1,D
+2018-04-22,Leixoes,Arouca,2,2,D
+2018-04-22,SC Braga B,Academico Viseu,2,2,D
+2018-04-23,Sporting CP B,Benfica B,1,2,A
+2018-04-25,Academica,FC Porto B,1,0,H
+2018-04-28,Nacional,Leixoes,2,1,H
+2018-04-29,Oliveirense,Santa Clara,1,2,A
+2018-04-29,Benfica B,Guimaraes B,0,1,A
+2018-04-29,SC Covilha,Academica,0,1,A
+2018-04-29,Varzim,Sporting CP B,2,0,H
+2018-04-29,Academico Viseu,GIL Vicente,1,0,H
+2018-04-29,Arouca,Penafiel,1,4,A
+2018-04-29,Famalicao,U. Madeira,1,2,A
+2018-04-29,FC Porto B,SC Braga B,0,4,A
+2018-04-29,Real,Cova De Piedade,2,3,A
+2018-05-02,Guimaraes B,FC Porto B,0,1,A
+2018-05-05,Penafiel,Academico Viseu,0,1,A
+2018-05-05,Academica,Cova De Piedade,1,2,A
+2018-05-05,FC Porto B,Famalicao,3,2,H
+2018-05-06,Arouca,Nacional,0,1,A
+2018-05-06,Guimaraes B,Sporting CP B,0,1,A
+2018-05-06,Leixoes,Oliveirense,0,1,A
+2018-05-06,SC Braga B,Benfica B,1,1,D
+2018-05-06,GIL Vicente,SC Covilha,0,1,A
+2018-05-06,U. Madeira,Varzim,2,1,H
+2018-05-06,Santa Clara,Real,3,0,H
+2018-05-12,Benfica B,FC Porto B,3,0,H
+2018-05-12,Oliveirense,Arouca,3,1,H
+2018-05-12,SC Covilha,Penafiel,1,1,D
+2018-05-12,Varzim,Academica,1,0,H
+2018-05-12,Academico Viseu,Santa Clara,2,1,H
+2018-05-12,Cova De Piedade,U. Madeira,3,2,H
+2018-05-12,Famalicao,Leixoes,1,1,D
+2018-05-12,Sporting CP B,SC Braga B,1,0,H
+2018-05-13,Nacional,Guimaraes B,0,0,D
+2018-05-13,Real,GIL Vicente,1,1,D

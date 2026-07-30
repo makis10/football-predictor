@@ -1,0 +1,113 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2015-08-01,FC Urartu,Mika,1,1,D
+2015-08-01,Pyunik Yerevan,Alashkert,1,2,A
+2015-08-02,Ararat,Ulisses,2,0,H
+2015-08-02,Shirak,Gandzasar,2,1,H
+2015-08-08,Alashkert,Gandzasar,0,0,D
+2015-08-08,Pyunik Yerevan,FC Urartu,5,1,H
+2015-08-09,Shirak,Ulisses,3,2,H
+2015-08-09,Mika,Ararat,0,1,A
+2015-08-15,Gandzasar,Ulisses,3,0,H
+2015-08-15,Shirak,Mika,2,0,H
+2015-08-16,FC Urartu,Alashkert,2,2,D
+2015-08-16,Ararat,Pyunik Yerevan,1,1,D
+2015-08-22,Alashkert,Ulisses,4,0,H
+2015-08-22,Mika,Gandzasar,2,3,A
+2015-08-23,FC Urartu,Ararat,3,0,H
+2015-08-23,Pyunik Yerevan,Shirak,3,0,H
+2015-08-29,Ararat,Alashkert,1,2,A
+2015-08-29,Shirak,FC Urartu,1,1,D
+2015-08-30,Gandzasar,Pyunik Yerevan,1,1,D
+2015-08-30,Ulisses,Mika,0,2,A
+2015-09-12,Alashkert,Mika,2,0,H
+2015-09-12,Ararat,Shirak,0,2,A
+2015-09-13,FC Urartu,Gandzasar,0,1,A
+2015-09-13,Pyunik Yerevan,Ulisses,2,0,H
+2015-09-19,Shirak,Alashkert,1,2,A
+2015-09-19,Ulisses,FC Urartu,2,2,D
+2015-09-20,Mika,Pyunik Yerevan,1,0,H
+2015-09-20,Gandzasar,Ararat,1,0,H
+2015-09-26,Gandzasar,Shirak,1,1,D
+2015-09-26,Ulisses,Ararat,1,2,A
+2015-09-27,Alashkert,Pyunik Yerevan,1,4,A
+2015-09-27,Mika,FC Urartu,1,0,H
+2015-10-03,Gandzasar,Alashkert,2,2,D
+2015-10-03,FC Urartu,Pyunik Yerevan,0,1,A
+2015-10-04,Ulisses,Shirak,0,1,A
+2015-10-05,Ararat,Mika,2,1,H
+2015-10-17,Mika,Shirak,0,1,A
+2015-10-17,Ulisses,Gandzasar,0,0,D
+2015-10-18,Alashkert,FC Urartu,3,0,H
+2015-10-18,Pyunik Yerevan,Ararat,0,1,A
+2015-10-24,Ararat,FC Urartu,0,0,D
+2015-10-24,Shirak,Pyunik Yerevan,0,2,A
+2015-10-25,Ulisses,Alashkert,0,3,A
+2015-10-25,Gandzasar,Mika,2,1,H
+2015-10-31,Alashkert,Ararat,1,1,D
+2015-10-31,FC Urartu,Shirak,1,1,D
+2015-11-01,Mika,Ulisses,1,0,H
+2015-11-01,Pyunik Yerevan,Gandzasar,4,0,H
+2015-11-07,Mika,Alashkert,0,1,A
+2015-11-07,FC Urartu,Gandzasar,1,1,D
+2015-11-08,Ulisses,Pyunik Yerevan,1,4,A
+2015-11-08,Shirak,Ararat,0,1,A
+2015-11-21,Alashkert,Shirak,2,0,H
+2015-11-21,Ararat,Gandzasar,2,2,D
+2015-11-21,FC Urartu,Ulisses,5,1,H
+2015-11-22,Pyunik Yerevan,Mika,2,1,H
+2015-11-28,Ararat,Ulisses,3,1,H
+2015-11-28,Pyunik Yerevan,Alashkert,0,0,D
+2015-11-29,FC Urartu,Mika,1,1,D
+2015-11-29,Shirak,Gandzasar,2,1,H
+2016-03-02,Alashkert,Gandzasar,3,0,H
+2016-03-02,Pyunik Yerevan,FC Urartu,1,2,A
+2016-03-03,Mika,Ararat,1,1,D
+2016-03-03,Ulisses,Shirak,0,3,A
+2016-03-12,FC Urartu,Alashkert,2,0,H
+2016-03-12,Shirak,Mika,0,1,A
+2016-03-13,Gandzasar,Ulisses,3,0,H
+2016-03-13,Ararat,Pyunik Yerevan,1,2,A
+2016-03-19,Alashkert,Ulisses,3,0,H
+2016-03-19,Mika,Gandzasar,2,0,H
+2016-03-20,FC Urartu,Ararat,2,2,D
+2016-03-20,Pyunik Yerevan,Shirak,1,1,D
+2016-03-27,Ulisses,Mika,0,3,A
+2016-04-02,Ararat,Shirak,1,1,D
+2016-04-02,Alashkert,Mika,2,1,H
+2016-04-03,Gandzasar,FC Urartu,2,1,H
+2016-04-03,Pyunik Yerevan,Ulisses,3,0,H
+2016-04-06,Gandzasar,Pyunik Yerevan,1,0,H
+2016-04-06,Ararat,Alashkert,0,0,D
+2016-04-06,Shirak,FC Urartu,3,1,H
+2016-04-09,Shirak,Alashkert,2,1,H
+2016-04-09,Ulisses,FC Urartu,0,3,A
+2016-04-10,Gandzasar,Ararat,0,0,D
+2016-04-10,Mika,Pyunik Yerevan,0,0,D
+2016-04-16,Alashkert,Pyunik Yerevan,3,0,H
+2016-04-16,Gandzasar,Shirak,0,0,D
+2016-04-17,Mika,FC Urartu,0,0,D
+2016-04-17,Ulisses,Ararat,0,3,A
+2016-04-23,Gandzasar,Alashkert,2,2,D
+2016-04-23,FC Urartu,Pyunik Yerevan,1,1,D
+2016-04-23,Ararat,Mika,0,4,A
+2016-04-24,Shirak,Ulisses,3,0,H
+2016-04-30,Alashkert,FC Urartu,2,1,H
+2016-04-30,Mika,Shirak,1,4,A
+2016-04-30,Pyunik Yerevan,Ararat,0,0,D
+2016-04-30,Ulisses,Gandzasar,0,3,A
+2016-05-08,Gandzasar,Mika,3,1,H
+2016-05-08,Shirak,Pyunik Yerevan,1,1,D
+2016-05-08,Ararat,FC Urartu,1,2,A
+2016-05-08,Ulisses,Alashkert,0,3,A
+2016-05-14,Alashkert,Ararat,0,1,A
+2016-05-14,FC Urartu,Shirak,0,1,A
+2016-05-15,Mika,Ulisses,3,0,H
+2016-05-15,Pyunik Yerevan,Gandzasar,0,0,D
+2016-05-18,Alashkert,Shirak,2,3,A
+2016-05-18,Pyunik Yerevan,Mika,2,1,H
+2016-05-18,FC Urartu,Ulisses,3,0,H
+2016-05-18,Ararat,Gandzasar,0,2,A
+2016-05-22,Gandzasar,FC Urartu,0,0,D
+2016-05-22,Shirak,Ararat,2,1,H
+2016-05-22,Mika,Alashkert,0,2,A
+2016-05-22,Ulisses,Pyunik Yerevan,0,3,A

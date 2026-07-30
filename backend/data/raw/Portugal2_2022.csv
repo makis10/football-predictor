@@ -1,0 +1,309 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2022-08-06,Farense,Torreense,2,1,H
+2022-08-06,Nacional,Tondela,0,1,A
+2022-08-06,Oliveirense,Mafra,3,1,H
+2022-08-06,Trofense,Belenenses,3,2,H
+2022-08-06,Benfica B,Academico Viseu,1,1,D
+2022-08-07,Feirense,Estrela,1,1,D
+2022-08-07,Moreirense,Vilafranquense,1,0,H
+2022-08-07,FC Porto B,SC Covilha,0,1,A
+2022-08-08,Penafiel,Leixoes,0,0,D
+2022-08-12,Tondela,Benfica B,1,1,D
+2022-08-13,SC Covilha,Feirense,0,2,A
+2022-08-13,Torreense,Nacional,0,2,A
+2022-08-13,Estrela,Farense,1,1,D
+2022-08-14,Academico Viseu,Moreirense,1,3,A
+2022-08-14,Belenenses,FC Porto B,2,3,A
+2022-08-14,Vilafranquense,Oliveirense,2,1,H
+2022-08-15,Mafra,Penafiel,3,0,H
+2022-08-15,Leixoes,Trofense,1,0,H
+2022-08-17,Benfica B,Estrela,1,2,A
+2022-08-19,Tondela,SC Covilha,1,1,D
+2022-08-20,Farense,Academico Viseu,2,2,D
+2022-08-20,Moreirense,Torreense,3,0,H
+2022-08-20,Trofense,Vilafranquense,1,3,A
+2022-08-21,Feirense,Leixoes,1,1,D
+2022-08-21,Nacional,Mafra,0,2,A
+2022-08-21,FC Porto B,Oliveirense,2,0,H
+2022-08-22,Penafiel,Belenenses,3,3,D
+2022-08-26,Vilafranquense,Feirense,1,0,H
+2022-08-27,Academico Viseu,Tondela,2,2,D
+2022-08-27,Belenenses,Moreirense,2,3,A
+2022-08-27,SC Covilha,Penafiel,0,2,A
+2022-08-28,Leixoes,Nacional,3,0,H
+2022-08-28,Torreense,Benfica B,0,0,D
+2022-08-28,Estrela,FC Porto B,1,1,D
+2022-08-28,Oliveirense,Trofense,1,1,D
+2022-08-29,Mafra,Farense,0,3,A
+2022-09-03,Benfica B,Leixoes,2,1,H
+2022-09-03,Academico Viseu,Torreense,1,2,A
+2022-09-03,Moreirense,Oliveirense,4,1,H
+2022-09-03,FC Porto B,Vilafranquense,0,1,A
+2022-09-04,Penafiel,Trofense,3,0,H
+2022-09-04,Feirense,Mafra,0,0,D
+2022-09-04,Nacional,Belenenses,1,3,A
+2022-09-04,Farense,SC Covilha,2,2,D
+2022-09-05,Tondela,Estrela,1,1,D
+2022-09-09,Oliveirense,Penafiel,1,1,D
+2022-09-10,Vilafranquense,Benfica B,3,2,H
+2022-09-10,Mafra,FC Porto B,0,1,A
+2022-09-11,Belenenses,Feirense,1,1,D
+2022-09-11,SC Covilha,Nacional,1,2,A
+2022-09-11,Leixoes,Farense,0,1,A
+2022-09-11,Torreense,Tondela,0,3,A
+2022-09-11,Trofense,Moreirense,0,3,A
+2022-09-12,Estrela,Academico Viseu,2,1,H
+2022-09-16,Tondela,Belenenses,3,1,H
+2022-09-17,Academico Viseu,Mafra,2,0,H
+2022-09-17,Penafiel,Moreirense,1,1,D
+2022-09-17,FC Porto B,Torreense,2,0,H
+2022-09-18,Benfica B,SC Covilha,4,0,H
+2022-09-18,Farense,Vilafranquense,2,1,H
+2022-09-18,Nacional,Trofense,0,1,A
+2022-09-18,Estrela,Leixoes,2,2,D
+2022-09-19,Feirense,Oliveirense,3,2,H
+2022-10-07,Belenenses,Farense,2,3,A
+2022-10-08,Leixoes,FC Porto B,0,0,D
+2022-10-08,Oliveirense,Benfica B,2,2,D
+2022-10-08,Vilafranquense,Penafiel,0,1,A
+2022-10-08,Torreense,Estrela,1,0,H
+2022-10-09,SC Covilha,Academico Viseu,2,3,A
+2022-10-09,Moreirense,Nacional,3,1,H
+2022-10-09,Mafra,Tondela,1,1,D
+2022-10-10,Trofense,Feirense,0,3,A
+2022-10-15,Estrela,SC Covilha,2,1,H
+2022-10-18,Benfica B,Mafra,5,1,H
+2022-10-18,Torreense,Belenenses,0,1,A
+2022-10-18,Feirense,Moreirense,1,2,A
+2022-10-19,Academico Viseu,Leixoes,2,2,D
+2022-10-19,FC Porto B,Penafiel,0,0,D
+2022-10-19,Nacional,Vilafranquense,1,1,D
+2022-10-19,Tondela,Oliveirense,1,3,A
+2022-10-22,SC Covilha,Torreense,0,3,A
+2022-10-22,Belenenses,Benfica B,0,2,A
+2022-10-23,Trofense,FC Porto B,0,3,A
+2022-10-23,Oliveirense,Nacional,0,0,D
+2022-10-23,Penafiel,Feirense,0,1,A
+2022-10-23,Moreirense,Farense,3,2,H
+2022-10-23,Mafra,Estrela,2,2,D
+2022-10-23,Vilafranquense,Academico Viseu,1,3,A
+2022-10-24,Leixoes,Tondela,1,1,D
+2022-10-29,Torreense,Mafra,0,1,A
+2022-10-29,Nacional,Penafiel,1,1,D
+2022-10-29,FC Porto B,Feirense,0,0,D
+2022-10-29,Benfica B,Moreirense,2,1,H
+2022-10-30,Academico Viseu,Belenenses,2,1,H
+2022-10-30,Farense,Oliveirense,2,0,H
+2022-10-30,SC Covilha,Leixoes,1,2,A
+2022-10-30,Tondela,Trofense,0,0,D
+2022-10-31,Estrela,Vilafranquense,1,1,D
+2022-11-04,Mafra,SC Covilha,3,2,H
+2022-11-05,Moreirense,FC Porto B,3,2,H
+2022-11-05,Leixoes,Torreense,1,0,H
+2022-11-05,Vilafranquense,Tondela,1,1,D
+2022-11-05,Penafiel,Farense,0,2,A
+2022-11-05,Oliveirense,Academico Viseu,1,1,D
+2022-11-06,Feirense,Nacional,1,1,D
+2022-11-06,Belenenses,Estrela,1,3,A
+2022-11-07,Trofense,Benfica B,1,2,A
+2022-11-11,Torreense,Vilafranquense,0,1,A
+2022-11-12,Estrela,Oliveirense,1,0,H
+2022-11-12,Farense,Feirense,0,0,D
+2022-11-12,Nacional,FC Porto B,4,0,H
+2022-11-12,Benfica B,Penafiel,1,2,A
+2022-11-13,Academico Viseu,Trofense,3,1,H
+2022-11-13,SC Covilha,Belenenses,1,1,D
+2022-11-14,Tondela,Moreirense,1,1,D
+2022-11-14,Mafra,Leixoes,1,1,D
+2022-11-16,Farense,Trofense,3,1,H
+2022-12-23,Vilafranquense,Mafra,3,3,D
+2022-12-23,Feirense,Tondela,1,1,D
+2022-12-28,FC Porto B,Farense,4,0,H
+2022-12-29,Belenenses,Leixoes,2,0,H
+2022-12-29,Nacional,Benfica B,2,0,H
+2022-12-30,Oliveirense,SC Covilha,2,0,H
+2022-12-30,Trofense,Torreense,0,1,A
+2022-12-31,Penafiel,Academico Viseu,1,2,A
+2022-12-31,Moreirense,Estrela,0,0,D
+2023-01-05,Leixoes,Moreirense,0,1,A
+2023-01-07,Academico Viseu,FC Porto B,2,1,H
+2023-01-07,Farense,Nacional,1,0,H
+2023-01-07,Mafra,Belenenses,0,1,A
+2023-01-07,Torreense,Oliveirense,1,1,D
+2023-01-08,SC Covilha,Vilafranquense,0,0,D
+2023-01-08,Benfica B,Feirense,3,6,A
+2023-01-08,Estrela,Trofense,2,2,D
+2023-01-09,Tondela,Penafiel,0,1,A
+2023-01-13,Moreirense,Mafra,4,2,H
+2023-01-14,Penafiel,Torreense,0,0,D
+2023-01-14,Trofense,SC Covilha,2,0,H
+2023-01-14,Vilafranquense,Leixoes,2,0,H
+2023-01-15,Feirense,Academico Viseu,1,1,D
+2023-01-15,Nacional,Estrela,0,1,A
+2023-01-15,Farense,Benfica B,5,2,H
+2023-01-15,FC Porto B,Tondela,1,1,D
+2023-01-15,Oliveirense,Belenenses,2,1,H
+2023-01-21,Academico Viseu,Nacional,1,1,D
+2023-01-21,Belenenses,Vilafranquense,0,3,A
+2023-01-21,Leixoes,Oliveirense,1,2,A
+2023-01-21,Mafra,Trofense,1,0,H
+2023-01-22,SC Covilha,Moreirense,0,0,D
+2023-01-22,Tondela,Farense,1,0,H
+2023-01-22,Benfica B,FC Porto B,2,2,D
+2023-01-22,Estrela,Penafiel,3,0,H
+2023-01-23,Torreense,Feirense,4,2,H
+2023-01-29,Torreense,Farense,1,0,H
+2023-01-29,SC Covilha,FC Porto B,1,2,A
+2023-01-29,Tondela,Nacional,1,0,H
+2023-01-29,Vilafranquense,Moreirense,1,2,A
+2023-01-29,Mafra,Oliveirense,2,3,A
+2023-01-29,Estrela,Feirense,4,1,H
+2023-01-29,Leixoes,Penafiel,2,1,H
+2023-01-30,Belenenses,Trofense,1,1,D
+2023-01-31,Academico Viseu,Benfica B,2,0,H
+2023-02-03,Farense,Estrela,2,2,D
+2023-02-04,Oliveirense,Vilafranquense,2,2,D
+2023-02-04,Moreirense,Academico Viseu,1,0,H
+2023-02-04,Nacional,Torreense,3,1,H
+2023-02-04,FC Porto B,Belenenses,1,2,A
+2023-02-05,Penafiel,Mafra,1,0,H
+2023-02-05,Benfica B,Tondela,2,1,H
+2023-02-05,Trofense,Leixoes,0,1,A
+2023-02-06,Feirense,SC Covilha,0,2,A
+2023-02-10,Torreense,Moreirense,1,0,H
+2023-02-11,Leixoes,Feirense,0,1,A
+2023-02-11,Estrela,Benfica B,2,1,H
+2023-02-11,SC Covilha,Tondela,1,0,H
+2023-02-11,Vilafranquense,Trofense,0,1,A
+2023-02-12,Oliveirense,FC Porto B,2,1,H
+2023-02-12,Academico Viseu,Farense,2,0,H
+2023-02-13,Belenenses,Penafiel,2,2,D
+2023-02-13,Mafra,Nacional,3,3,D
+2023-02-17,Tondela,Academico Viseu,1,1,D
+2023-02-18,Penafiel,SC Covilha,1,1,D
+2023-02-18,Trofense,Oliveirense,2,1,H
+2023-02-18,Feirense,Vilafranquense,1,2,A
+2023-02-18,FC Porto B,Estrela,1,2,A
+2023-02-19,Nacional,Leixoes,1,2,A
+2023-02-19,Moreirense,Belenenses,4,1,H
+2023-02-19,Benfica B,Torreense,1,2,A
+2023-02-19,Farense,Mafra,1,0,H
+2023-02-24,Trofense,Penafiel,1,2,A
+2023-02-25,Torreense,Academico Viseu,1,2,A
+2023-02-25,Leixoes,Benfica B,1,1,D
+2023-02-25,Oliveirense,Moreirense,2,2,D
+2023-02-26,Mafra,Feirense,1,1,D
+2023-02-26,Vilafranquense,FC Porto B,1,2,A
+2023-02-26,Belenenses,Nacional,0,1,A
+2023-02-26,SC Covilha,Farense,1,0,H
+2023-02-26,Estrela,Tondela,0,0,D
+2023-03-04,Benfica B,Vilafranquense,0,2,A
+2023-03-04,Penafiel,Oliveirense,1,1,D
+2023-03-04,Moreirense,Trofense,1,0,H
+2023-03-04,Tondela,Torreense,1,1,D
+2023-03-05,Farense,Leixoes,1,0,H
+2023-03-05,Nacional,SC Covilha,2,0,H
+2023-03-05,Academico Viseu,Estrela,1,1,D
+2023-03-05,Feirense,Belenenses,0,1,A
+2023-03-05,FC Porto B,Mafra,1,1,D
+2023-03-10,Moreirense,Penafiel,3,1,H
+2023-03-11,Vilafranquense,Farense,1,1,D
+2023-03-11,Torreense,FC Porto B,3,0,H
+2023-03-11,Trofense,Nacional,2,2,D
+2023-03-11,Oliveirense,Feirense,0,1,A
+2023-03-12,SC Covilha,Benfica B,2,1,H
+2023-03-12,Mafra,Academico Viseu,2,0,H
+2023-03-12,Belenenses,Tondela,0,2,A
+2023-03-12,Leixoes,Estrela,1,1,D
+2023-03-18,Estrela,Torreense,1,0,H
+2023-03-18,Feirense,Trofense,1,0,H
+2023-03-18,Nacional,Moreirense,0,2,A
+2023-03-19,Tondela,Mafra,1,2,A
+2023-03-19,Benfica B,Oliveirense,2,0,H
+2023-03-19,Academico Viseu,SC Covilha,1,0,H
+2023-03-19,Penafiel,Vilafranquense,1,1,D
+2023-03-19,Farense,Belenenses,4,0,H
+2023-03-19,FC Porto B,Leixoes,4,0,H
+2023-04-01,Trofense,Farense,2,1,H
+2023-04-01,Mafra,Benfica B,1,1,D
+2023-04-01,Moreirense,Feirense,0,0,D
+2023-04-01,Oliveirense,Tondela,0,0,D
+2023-04-02,Belenenses,Torreense,1,3,A
+2023-04-02,Leixoes,Academico Viseu,2,3,A
+2023-04-02,SC Covilha,Estrela,0,2,A
+2023-04-02,Vilafranquense,Nacional,4,0,H
+2023-04-03,Penafiel,FC Porto B,1,2,A
+2023-04-07,Nacional,Oliveirense,0,3,A
+2023-04-07,Farense,Moreirense,3,1,H
+2023-04-07,Estrela,Mafra,2,2,D
+2023-04-08,Benfica B,Belenenses,0,1,A
+2023-04-08,Academico Viseu,Vilafranquense,2,0,H
+2023-04-08,Tondela,Leixoes,2,3,A
+2023-04-08,Feirense,Penafiel,2,1,H
+2023-04-08,FC Porto B,Trofense,4,2,H
+2023-04-08,Torreense,SC Covilha,3,1,H
+2023-04-14,Oliveirense,Farense,1,2,A
+2023-04-15,Belenenses,Academico Viseu,1,1,D
+2023-04-15,Trofense,Tondela,1,2,A
+2023-04-15,Leixoes,SC Covilha,3,2,H
+2023-04-15,Mafra,Torreense,1,0,H
+2023-04-16,Moreirense,Benfica B,7,4,H
+2023-04-16,Feirense,FC Porto B,3,0,H
+2023-04-16,Penafiel,Nacional,3,0,H
+2023-04-17,Vilafranquense,Estrela,0,1,A
+2023-04-21,Nacional,Feirense,0,0,D
+2023-04-22,Academico Viseu,Oliveirense,1,4,A
+2023-04-22,Torreense,Leixoes,2,0,H
+2023-04-22,Farense,Penafiel,2,1,H
+2023-04-23,Tondela,Vilafranquense,1,0,H
+2023-04-23,Estrela,Belenenses,2,0,H
+2023-04-23,FC Porto B,Moreirense,0,0,D
+2023-04-24,Benfica B,Trofense,0,0,D
+2023-04-24,SC Covilha,Mafra,1,2,A
+2023-04-28,Oliveirense,Estrela,1,2,A
+2023-04-29,Feirense,Farense,1,2,A
+2023-04-29,Vilafranquense,Torreense,2,0,H
+2023-04-29,Moreirense,Tondela,2,1,H
+2023-04-30,Belenenses,SC Covilha,0,1,A
+2023-04-30,Leixoes,Mafra,0,2,A
+2023-04-30,FC Porto B,Nacional,1,1,D
+2023-04-30,Penafiel,Benfica B,0,3,A
+2023-04-30,Trofense,Academico Viseu,1,0,H
+2023-05-05,Leixoes,Belenenses,0,2,A
+2023-05-06,Mafra,Vilafranquense,2,1,H
+2023-05-06,SC Covilha,Oliveirense,2,1,H
+2023-05-06,Tondela,Feirense,1,1,D
+2023-05-06,Estrela,Moreirense,2,4,A
+2023-05-07,Benfica B,Nacional,1,2,A
+2023-05-07,Torreense,Trofense,0,0,D
+2023-05-07,Academico Viseu,Penafiel,0,0,D
+2023-05-07,Farense,FC Porto B,2,0,H
+2023-05-12,Trofense,Estrela,2,2,D
+2023-05-13,Belenenses,Mafra,2,2,D
+2023-05-13,Feirense,Benfica B,1,2,A
+2023-05-14,Nacional,Farense,0,1,A
+2023-05-14,Penafiel,Tondela,1,0,H
+2023-05-14,Moreirense,Leixoes,4,2,H
+2023-05-14,FC Porto B,Academico Viseu,3,1,H
+2023-05-14,Vilafranquense,SC Covilha,0,0,D
+2023-05-15,Oliveirense,Torreense,3,1,H
+2023-05-19,Benfica B,Farense,0,1,A
+2023-05-19,Leixoes,Vilafranquense,2,0,H
+2023-05-20,SC Covilha,Trofense,0,2,A
+2023-05-20,Academico Viseu,Feirense,2,1,H
+2023-05-20,Belenenses,Oliveirense,2,1,H
+2023-05-21,Estrela,Nacional,0,1,A
+2023-05-21,Mafra,Moreirense,0,2,A
+2023-05-21,Torreense,Penafiel,5,1,H
+2023-05-22,Tondela,FC Porto B,0,1,A
+2023-05-25,Moreirense,SC Covilha,6,4,H
+2023-05-26,Feirense,Torreense,4,1,H
+2023-05-27,Penafiel,Estrela,2,4,A
+2023-05-27,FC Porto B,Benfica B,3,1,H
+2023-05-28,Oliveirense,Leixoes,4,3,H
+2023-05-28,Nacional,Academico Viseu,3,2,H
+2023-05-28,Vilafranquense,Belenenses,1,1,D
+2023-05-28,Trofense,Mafra,1,2,A
+2023-05-28,Farense,Tondela,3,1,H
+2023-06-03,Vilaverdense,Belenenses,1,1,D
+2023-06-11,Belenenses,Vilaverdense,0,1,A

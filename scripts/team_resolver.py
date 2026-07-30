@@ -189,6 +189,61 @@ _COUNTS_CACHE: dict[str, int] | None = None
 # in here: it keeps its own name and is priced from default features, which is
 # honest. Mapping it onto a similar-looking club would be far worse.
 COMMON_ALIASES: dict[str, str] = {
+    # ── 2026-07-30 league expansion (Belgium, Turkey, Scotland, Denmark,
+    # Sweden, Norway, Poland, Austria, Switzerland, Romania, Ireland, Finland).
+    # These live here rather than in the fetcher that needed them first: the
+    # SAME club arrives from the domestic feed and from the European one, and a
+    # fetcher-local map left "Hearts" and "Heart Of Midlothian" as two clubs.
+    # Checked against each league's own CSV team list. Two pairs are left
+    # deliberately uncollapsed because they are different clubs that read alike:
+    # Romania's "Univ. Craiova" vs "U Craiova 1948", Poland's "Wisla" (Kraków)
+    # vs "Wisla Plock". Newly promoted sides with no history (Lommel, SK
+    # Beveren, Amed, Erzurumspor, Çorum) stay unmapped on purpose.
+    # Belgium
+    "KVC Westerlo": "Westerlo", "OH Leuven": "Oud-Heverlee Leuven",
+    "Standard Liege": "Standard", "Union St. Gilloise": "St. Gilloise",
+    "Zulte Waregem": "Waregem",
+    # Turkey — the CSV still files Başakşehir under its old municipal name
+    "Başakşehir": "Buyuksehyr",
+    # Accents and legal-form prefixes the European feed carries but the CSVs
+    # don't. These MUST live here and not only in features._SNAP_NAME_MAP: the
+    # snapshot map fixes the model's lookup, but leaves the DB holding two
+    # spellings of one club, which is two fixtures and two cards on the site.
+    # Greek feeds disagree on the suffix, which had Kalamata in the DB twice.
+    "Kalamata FC": "Kalamata",
+    # Abbreviation, not an affix — the rule can't bridge "Acad." → "Academico".
+    "Acad. Viseu": "Academico Viseu",
+    "Beşiktaş": "Besiktas", "Fenerbahçe": "Fenerbahce",
+    "FC Midtjylland": "Midtjylland", "FC Nordsjaelland": "Nordsjaelland",
+    "FC ST. Gallen": "St. Gallen", "FC Vaduz": "Vaduz",
+    "Gais": "GAIS", "Hammarby FF": "Hammarby",
+    # Scotland
+    "Dundee Utd": "Dundee United", "Heart Of Midlothian": "Hearts",
+    # Sweden
+    "AIK Stockholm": "AIK", "Djurgardens IF": "Djurgarden",
+    "IFK Goteborg": "Goteborg", "Mjallby AIF": "Mjallby",
+    # Poland
+    "Cracovia Krakow": "Cracovia", "Legia Warszawa": "Legia",
+    "Raków Częstochowa": "Rakow", "Wisla Krakow": "Wisla",
+    "Zaglebie Lubin": "Zaglebie",
+    # Austria — WSG Wattens renamed itself WSG Tirol
+    "Austria Lustenau": "A. Lustenau", "Lask Linz": "LASK",
+    "Rapid Vienna": "SK Rapid", "Red Bull Salzburg": "Salzburg",
+    "SCR Altach": "Altach", "WSG Wattens": "Tirol",
+    "TSV Hartberg": "Hartberg",
+    # Switzerland
+    "BSC Young Boys": "Young Boys", "FC Sion": "Sion", "FC Thun": "Thun",
+    # Romania
+    "Arges Pitesti": "FC Arges", "CFR 1907 Cluj": "CFR Cluj",
+    "Corvinul Hunedoara": "Corvinul", "Csikszereda": "Csikszereda M. Ciuc",
+    "Petrolul Ploiesti": "Petrolul", "Rapid": "FC Rapid Bucuresti",
+    "Sepsi OSK Sfantu Gheorghe": "Sepsi Sf. Gheorghe",
+    "Universitatea Cluj": "U. Cluj", "Universitatea Craiova": "Univ. Craiova",
+    # Ireland
+    "Drogheda United": "Drogheda", "Galway United": "Galway",
+    "St Patrick's Athl.": "St. Patricks",
+    # Finland
+    "HJK Helsinki": "HJK", "Turku PS": "TPS", "FF Jaro": "Jaro",
     # Portugal
     "Braga":              "Sp Braga",
     "SC Braga":           "Sp Braga",
@@ -235,6 +290,10 @@ _AFFIXES = {
     "sv", "tsv", "tsg", "vfb", "vfl", "vfr", "fsv", "msv", "spvgg", "borussia",
     "ssc", "ss", "as", "ogc", "osc", "losc", "calcio",
     "fk", "sk", "nk", "hnk", "bk", "if", "ik", "gks", "mfk", "cp",
+    # Nordic club affixes — added with the 2026-07-30 league expansion.
+    # "ff" = Fotbollsförening (Hammarby FF), "ifk" = Idrottsföreningen
+    # Kamraterna (IFK Göteborg). Both are legal-form noise, never the club.
+    "ff", "ifk",
 }
 
 

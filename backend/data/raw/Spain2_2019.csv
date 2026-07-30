@@ -1,0 +1,469 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2019-08-17,Lugo,Extremadura,0,0,D
+2019-08-17,Racing Santander,Malaga,0,1,A
+2019-08-17,Almeria,Albacete,3,0,H
+2019-08-17,Elche,Fuenlabrada,0,2,A
+2019-08-17,Rayo Vallecano,Mirandes,2,2,D
+2019-08-17,Zaragoza,Tenerife,2,0,H
+2019-08-18,Deportivo La Coruna,Oviedo,3,2,H
+2019-08-18,Numancia,Alcorcon,0,1,A
+2019-08-18,Girona,Sporting Gijon,1,1,D
+2019-08-18,Las Palmas,Huesca,0,1,A
+2019-08-18,Cadiz,Ponferradina,3,1,H
+2019-08-23,Albacete,Girona,1,0,H
+2019-08-24,Oviedo,Lugo,1,1,D
+2019-08-24,Racing Santander,Almeria,1,1,D
+2019-08-24,Mirandes,Cadiz,1,2,A
+2019-08-24,Alcorcon,Elche,1,2,A
+2019-08-24,Malaga,Las Palmas,1,1,D
+2019-08-25,Sporting Gijon,Rayo Vallecano,1,1,D
+2019-08-25,Ponferradina,Zaragoza,1,1,D
+2019-08-25,Huesca,Deportivo La Coruna,3,1,H
+2019-08-25,Tenerife,Numancia,3,2,H
+2019-08-25,Extremadura,Fuenlabrada,1,2,A
+2019-08-30,Zaragoza,Elche,1,0,H
+2019-08-31,Numancia,Mirandes,2,0,H
+2019-08-31,Fuenlabrada,Oviedo,2,1,H
+2019-08-31,Almeria,Huesca,1,0,H
+2019-08-31,Las Palmas,Racing Santander,2,2,D
+2019-09-01,Lugo,Alcorcon,2,4,A
+2019-09-01,Rayo Vallecano,Deportivo La Coruna,3,1,H
+2019-09-01,Sporting Gijon,Albacete,2,0,H
+2019-09-01,Girona,Malaga,1,0,H
+2019-09-01,Ponferradina,Tenerife,4,0,H
+2019-09-01,Cadiz,Extremadura,2,1,H
+2019-09-06,Racing Santander,Cadiz,1,2,A
+2019-09-07,Deportivo La Coruna,Albacete,0,1,A
+2019-09-07,Malaga,Almeria,0,1,A
+2019-09-07,Extremadura,Numancia,0,0,D
+2019-09-07,Fuenlabrada,Ponferradina,1,1,D
+2019-09-07,Tenerife,Las Palmas,0,0,D
+2019-09-08,Huesca,Sporting Gijon,1,0,H
+2019-09-08,Girona,Rayo Vallecano,3,1,H
+2019-09-08,Elche,Lugo,1,1,D
+2019-09-08,Mirandes,Oviedo,2,1,H
+2019-09-08,Alcorcon,Zaragoza,0,3,A
+2019-09-13,Rayo Vallecano,Racing Santander,2,0,H
+2019-09-14,Numancia,Huesca,1,0,H
+2019-09-14,Mirandes,Malaga,1,1,D
+2019-09-14,Las Palmas,Almeria,0,3,A
+2019-09-14,Cadiz,Girona,2,0,H
+2019-09-14,Ponferradina,Alcorcon,1,1,D
+2019-09-15,Albacete,Tenerife,0,4,A
+2019-09-15,Oviedo,Elche,0,2,A
+2019-09-15,Zaragoza,Extremadura,3,1,H
+2019-09-15,Lugo,Fuenlabrada,2,0,H
+2019-09-15,Sporting Gijon,Deportivo La Coruna,1,1,D
+2019-09-17,Malaga,Rayo Vallecano,1,1,D
+2019-09-17,Almeria,Girona,3,1,H
+2019-09-17,Racing Santander,Mirandes,4,0,H
+2019-09-17,Alcorcon,Cadiz,3,0,H
+2019-09-18,Lugo,Ponferradina,2,2,D
+2019-09-18,Huesca,Albacete,0,1,A
+2019-09-18,Deportivo La Coruna,Numancia,3,3,D
+2019-09-19,Oviedo,Extremadura,1,1,D
+2019-09-19,Elche,Tenerife,1,1,D
+2019-09-19,Las Palmas,Sporting Gijon,1,0,H
+2019-09-20,Mirandes,Alcorcon,2,2,D
+2019-09-21,Cadiz,Deportivo La Coruna,0,0,D
+2019-09-21,Zaragoza,Lugo,0,0,D
+2019-09-21,Rayo Vallecano,Almeria,1,1,D
+2019-09-21,Albacete,Malaga,1,0,H
+2019-09-22,Ponferradina,Oviedo,2,1,H
+2019-09-22,Girona,Las Palmas,1,0,H
+2019-09-22,Numancia,Elche,1,1,D
+2019-09-22,Sporting Gijon,Racing Santander,1,1,D
+2019-09-22,Tenerife,Fuenlabrada,0,1,A
+2019-09-22,Extremadura,Huesca,0,1,A
+2019-09-27,Las Palmas,Albacete,3,2,H
+2019-09-28,Fuenlabrada,Rayo Vallecano,2,2,D
+2019-09-28,Alcorcon,Extremadura,0,2,A
+2019-09-28,Huesca,Girona,1,0,H
+2019-09-28,Elche,Ponferradina,1,0,H
+2019-09-28,Racing Santander,Numancia,0,0,D
+2019-09-29,Malaga,Sporting Gijon,0,0,D
+2019-09-29,Almeria,Cadiz,1,2,A
+2019-09-29,Oviedo,Zaragoza,2,2,D
+2019-09-29,Deportivo La Coruna,Mirandes,1,1,D
+2019-09-29,Lugo,Tenerife,1,4,A
+2019-10-01,Numancia,Fuenlabrada,1,0,H
+2019-10-01,Albacete,Racing Santander,0,0,D
+2019-10-01,Extremadura,Elche,2,0,H
+2019-10-01,Rayo Vallecano,Alcorcon,1,1,D
+2019-10-02,Cadiz,Huesca,1,0,H
+2019-10-02,Mirandes,Lugo,1,1,D
+2019-10-02,Tenerife,Oviedo,0,1,A
+2019-10-02,Ponferradina,Las Palmas,0,2,A
+2019-10-03,Sporting Gijon,Almeria,4,2,H
+2019-10-03,Zaragoza,Malaga,2,2,D
+2019-10-03,Girona,Deportivo La Coruna,3,1,H
+2019-10-04,Alcorcon,Albacete,0,1,A
+2019-10-05,Lugo,Las Palmas,0,2,A
+2019-10-05,Elche,Rayo Vallecano,1,1,D
+2019-10-05,Ponferradina,Mirandes,2,0,H
+2019-10-05,Tenerife,Extremadura,1,2,A
+2019-10-06,Fuenlabrada,Sporting Gijon,2,0,H
+2019-10-06,Oviedo,Numancia,1,1,D
+2019-10-06,Zaragoza,Cadiz,0,2,A
+2019-10-06,Deportivo La Coruna,Almeria,0,0,D
+2019-10-06,Huesca,Malaga,2,0,H
+2019-10-06,Racing Santander,Girona,0,3,A
+2019-10-11,Rayo Vallecano,Tenerife,2,1,H
+2019-10-12,Girona,Elche,0,2,A
+2019-10-12,Almeria,Lugo,0,0,D
+2019-10-12,Sporting Gijon,Alcorcon,1,3,A
+2019-10-12,Malaga,Cadiz,1,2,A
+2019-10-12,Extremadura,Ponferradina,1,1,D
+2019-10-13,Mirandes,Fuenlabrada,2,1,H
+2019-10-13,Numancia,Zaragoza,0,1,A
+2019-10-13,Albacete,Oviedo,1,2,A
+2019-10-13,Huesca,Racing Santander,1,1,D
+2019-10-13,Las Palmas,Deportivo La Coruna,3,0,H
+2019-10-16,Fuenlabrada,Zaragoza,2,1,H
+2019-10-18,Cadiz,Las Palmas,2,0,H
+2019-10-19,Alcorcon,Almeria,2,2,D
+2019-10-19,Ponferradina,Numancia,1,1,D
+2019-10-19,Lugo,Huesca,3,2,H
+2019-10-19,Elche,Sporting Gijon,0,1,A
+2019-10-19,Extremadura,Rayo Vallecano,0,3,A
+2019-10-20,Fuenlabrada,Albacete,0,1,A
+2019-10-20,Deportivo La Coruna,Malaga,0,2,A
+2019-10-20,Oviedo,Girona,4,2,H
+2019-10-20,Tenerife,Racing Santander,3,3,D
+2019-10-20,Zaragoza,Mirandes,1,2,A
+2019-10-25,Albacete,Cadiz,1,0,H
+2019-10-26,Rayo Vallecano,Ponferradina,1,3,A
+2019-10-26,Mirandes,Tenerife,0,0,D
+2019-10-26,Racing Santander,Deportivo La Coruna,1,1,D
+2019-10-26,Malaga,Oviedo,2,1,H
+2019-10-26,Numancia,Lugo,3,1,H
+2019-10-27,Girona,Alcorcon,0,0,D
+2019-10-27,Sporting Gijon,Zaragoza,4,0,H
+2019-10-27,Las Palmas,Fuenlabrada,1,3,A
+2019-10-27,Huesca,Elche,2,0,H
+2019-10-27,Almeria,Extremadura,3,2,H
+2019-11-01,Numancia,Albacete,1,0,H
+2019-11-01,Cadiz,Sporting Gijon,3,1,H
+2019-11-01,Ponferradina,Malaga,1,0,H
+2019-11-01,Oviedo,Almeria,0,0,D
+2019-11-02,Fuenlabrada,Deportivo La Coruna,1,1,D
+2019-11-02,Alcorcon,Racing Santander,1,0,H
+2019-11-02,Tenerife,Huesca,0,0,D
+2019-11-03,Extremadura,Girona,1,3,A
+2019-11-03,Lugo,Rayo Vallecano,1,0,H
+2019-11-03,Zaragoza,Las Palmas,3,0,H
+2019-11-03,Elche,Mirandes,4,2,H
+2019-11-08,Girona,Tenerife,1,0,H
+2019-11-09,Huesca,Oviedo,3,1,H
+2019-11-09,Mirandes,Extremadura,2,0,H
+2019-11-09,Albacete,Lugo,0,1,A
+2019-11-09,Sporting Gijon,Numancia,0,1,A
+2019-11-09,Las Palmas,Alcorcon,1,1,D
+2019-11-10,Deportivo La Coruna,Elche,1,3,A
+2019-11-10,Almeria,Zaragoza,1,1,D
+2019-11-10,Malaga,Fuenlabrada,0,0,D
+2019-11-10,Racing Santander,Ponferradina,2,2,D
+2019-11-10,Rayo Vallecano,Cadiz,1,1,D
+2019-11-16,Fuenlabrada,Huesca,3,2,H
+2019-11-16,Extremadura,Deportivo La Coruna,2,0,H
+2019-11-16,Numancia,Rayo Vallecano,2,2,D
+2019-11-16,Elche,Almeria,1,1,D
+2019-11-16,Zaragoza,Albacete,0,1,A
+2019-11-17,Ponferradina,Girona,1,1,D
+2019-11-17,Alcorcon,Malaga,1,0,H
+2019-11-17,Oviedo,Sporting Gijon,0,0,D
+2019-11-17,Lugo,Racing Santander,1,1,D
+2019-11-17,Mirandes,Las Palmas,2,1,H
+2019-11-17,Tenerife,Cadiz,1,1,D
+2019-11-22,Sporting Gijon,Tenerife,0,2,A
+2019-11-23,Rayo Vallecano,Zaragoza,0,1,A
+2019-11-23,Deportivo La Coruna,Alcorcon,0,0,D
+2019-11-23,Racing Santander,Extremadura,3,0,H
+2019-11-23,Huesca,Ponferradina,2,0,H
+2019-11-24,Almeria,Numancia,2,0,H
+2019-11-24,Malaga,Elche,3,3,D
+2019-11-24,Albacete,Mirandes,1,2,A
+2019-11-24,Las Palmas,Oviedo,3,1,H
+2019-11-24,Girona,Fuenlabrada,2,0,H
+2019-11-24,Cadiz,Lugo,2,1,H
+2019-11-29,Numancia,Malaga,0,0,D
+2019-11-30,Alcorcon,Huesca,0,2,A
+2019-11-30,Mirandes,Sporting Gijon,0,0,D
+2019-11-30,Tenerife,Almeria,1,3,A
+2019-11-30,Ponferradina,Albacete,1,1,D
+2019-11-30,Zaragoza,Girona,3,3,D
+2019-12-01,Fuenlabrada,Cadiz,1,0,H
+2019-12-01,Oviedo,Rayo Vallecano,2,1,H
+2019-12-01,Lugo,Deportivo La Coruna,0,0,D
+2019-12-01,Elche,Racing Santander,2,0,H
+2019-12-01,Extremadura,Las Palmas,0,1,A
+2019-12-06,Albacete,Extremadura,1,1,D
+2019-12-06,Racing Santander,Fuenlabrada,2,2,D
+2019-12-06,Alcorcon,Oviedo,1,3,A
+2019-12-06,Malaga,Tenerife,2,0,H
+2019-12-07,Huesca,Rayo Vallecano,0,2,A
+2019-12-07,Sporting Gijon,Ponferradina,1,0,H
+2019-12-07,Almeria,Mirandes,3,1,H
+2019-12-08,Girona,Lugo,3,1,H
+2019-12-08,Deportivo La Coruna,Zaragoza,1,3,A
+2019-12-08,Las Palmas,Numancia,3,1,H
+2019-12-08,Cadiz,Elche,0,0,D
+2019-12-13,Numancia,Girona,2,0,H
+2019-12-14,Mirandes,Huesca,2,0,H
+2019-12-14,Tenerife,Alcorcon,0,0,D
+2019-12-14,Ponferradina,Deportivo La Coruna,2,0,H
+2019-12-14,Zaragoza,Racing Santander,2,0,H
+2019-12-15,Extremadura,Malaga,0,0,D
+2019-12-15,Oviedo,Cadiz,0,2,A
+2019-12-15,Lugo,Sporting Gijon,1,2,A
+2019-12-15,Elche,Las Palmas,2,3,A
+2019-12-15,Fuenlabrada,Almeria,2,2,D
+2019-12-20,Deportivo La Coruna,Tenerife,2,1,H
+2019-12-21,Malaga,Lugo,1,1,D
+2019-12-21,Albacete,Elche,0,1,A
+2019-12-21,Las Palmas,Rayo Vallecano,1,1,D
+2019-12-21,Sporting Gijon,Extremadura,0,1,A
+2019-12-21,Racing Santander,Oviedo,1,1,D
+2019-12-21,Cadiz,Numancia,2,4,A
+2019-12-22,Almeria,Ponferradina,2,3,A
+2019-12-22,Huesca,Zaragoza,2,1,H
+2019-12-22,Alcorcon,Fuenlabrada,1,1,D
+2019-12-22,Girona,Mirandes,0,3,A
+2020-01-03,Extremadura,Alcorcon,0,0,D
+2020-01-04,Fuenlabrada,Las Palmas,0,0,D
+2020-01-04,Ponferradina,Cadiz,0,0,D
+2020-01-04,Lugo,Almeria,0,4,A
+2020-01-04,Tenerife,Albacete,4,2,H
+2020-01-04,Elche,Huesca,1,1,D
+2020-01-04,Mirandes,Racing Santander,0,0,D
+2020-01-05,Numancia,Deportivo La Coruna,0,1,A
+2020-01-05,Rayo Vallecano,Girona,1,0,H
+2020-01-05,Oviedo,Malaga,1,1,D
+2020-01-07,Zaragoza,Sporting Gijon,2,0,H
+2020-01-14,Albacete,Fuenlabrada,1,1,D
+2020-01-14,Sporting Gijon,Elche,1,0,H
+2020-01-14,Malaga,Ponferradina,1,0,H
+2020-01-14,Las Palmas,Zaragoza,0,1,A
+2020-01-15,Alcorcon,Numancia,2,2,D
+2020-01-15,Huesca,Tenerife,2,1,H
+2020-01-15,Rayo Vallecano,Lugo,1,0,H
+2020-01-15,Cadiz,Mirandes,3,3,D
+2020-01-16,Deportivo La Coruna,Racing Santander,2,1,H
+2020-01-16,Girona,Extremadura,3,1,H
+2020-01-16,Almeria,Oviedo,2,0,H
+2020-01-17,Fuenlabrada,Malaga,0,0,D
+2020-01-18,Numancia,Sporting Gijon,2,0,H
+2020-01-18,Lugo,Albacete,1,0,H
+2020-01-18,Ponferradina,Rayo Vallecano,1,1,D
+2020-01-19,Elche,Alcorcon,1,1,D
+2020-01-19,Deportivo La Coruna,Cadiz,1,0,H
+2020-01-19,Oviedo,Huesca,1,1,D
+2020-01-19,Racing Santander,Las Palmas,1,1,D
+2020-01-19,Tenerife,Girona,1,0,H
+2020-01-19,Extremadura,Almeria,1,2,A
+2020-01-24,Cadiz,Racing Santander,1,0,H
+2020-01-25,Huesca,Lugo,2,1,H
+2020-01-25,Sporting Gijon,Fuenlabrada,1,0,H
+2020-01-25,Las Palmas,Tenerife,0,0,D
+2020-01-25,Zaragoza,Numancia,1,0,H
+2020-01-26,Malaga,Mirandes,2,2,D
+2020-01-26,Albacete,Deportivo La Coruna,0,1,A
+2020-01-26,Almeria,Elche,0,2,A
+2020-01-26,Alcorcon,Ponferradina,3,1,H
+2020-01-26,Rayo Vallecano,Extremadura,1,1,D
+2020-01-26,Girona,Oviedo,1,1,D
+2020-01-31,Tenerife,Sporting Gijon,2,1,H
+2020-02-01,Extremadura,Lugo,1,0,H
+2020-02-01,Deportivo La Coruna,Las Palmas,2,1,H
+2020-02-01,Ponferradina,Huesca,3,1,H
+2020-02-01,Elche,Malaga,2,0,H
+2020-02-02,Fuenlabrada,Girona,0,1,A
+2020-02-02,Cadiz,Zaragoza,1,1,D
+2020-02-02,Numancia,Almeria,1,1,D
+2020-02-02,Mirandes,Rayo Vallecano,0,0,D
+2020-02-02,Oviedo,Albacete,3,1,H
+2020-02-02,Racing Santander,Alcorcon,1,1,D
+2020-02-07,Almeria,Racing Santander,0,1,A
+2020-02-08,Girona,Huesca,1,0,H
+2020-02-08,Extremadura,Tenerife,2,4,A
+2020-02-08,Las Palmas,Cadiz,1,2,A
+2020-02-08,Zaragoza,Fuenlabrada,0,0,D
+2020-02-09,Alcorcon,Deportivo La Coruna,0,1,A
+2020-02-09,Albacete,Ponferradina,1,1,D
+2020-02-09,Sporting Gijon,Mirandes,2,2,D
+2020-02-09,Lugo,Elche,2,2,D
+2020-02-09,Rayo Vallecano,Oviedo,1,1,D
+2020-02-09,Malaga,Numancia,2,1,H
+2020-02-14,Deportivo La Coruna,Girona,2,2,D
+2020-02-15,Huesca,Almeria,3,2,H
+2020-02-15,Numancia,Las Palmas,1,1,D
+2020-02-15,Oviedo,Alcorcon,1,2,A
+2020-02-15,Elche,Zaragoza,1,2,A
+2020-02-16,Mirandes,Albacete,1,1,D
+2020-02-16,Fuenlabrada,Lugo,0,1,A
+2020-02-16,Cadiz,Malaga,0,1,A
+2020-02-16,Racing Santander,Sporting Gijon,0,2,A
+2020-02-16,Ponferradina,Extremadura,0,0,D
+2020-02-16,Tenerife,Rayo Vallecano,0,0,D
+2020-02-19,Mirandes,Zaragoza,1,1,D
+2020-02-21,Sporting Gijon,Cadiz,1,0,H
+2020-02-22,Alcorcon,Las Palmas,1,1,D
+2020-02-22,Almeria,Fuenlabrada,0,0,D
+2020-02-22,Girona,Ponferradina,2,0,H
+2020-02-22,Tenerife,Elche,1,0,H
+2020-02-22,Albacete,Numancia,2,1,H
+2020-02-23,Lugo,Oviedo,1,0,H
+2020-02-23,Zaragoza,Deportivo La Coruna,3,1,H
+2020-02-23,Malaga,Racing Santander,2,0,H
+2020-02-23,Extremadura,Mirandes,3,2,H
+2020-02-23,Rayo Vallecano,Huesca,2,0,H
+2020-02-28,Las Palmas,Malaga,1,1,D
+2020-02-29,Huesca,Extremadura,2,2,D
+2020-02-29,Ponferradina,Sporting Gijon,1,0,H
+2020-02-29,Cadiz,Almeria,2,1,H
+2020-02-29,Albacete,Rayo Vallecano,1,1,D
+2020-02-29,Racing Santander,Zaragoza,2,2,D
+2020-03-01,Mirandes,Girona,1,1,D
+2020-03-01,Deportivo La Coruna,Lugo,0,0,D
+2020-03-01,Elche,Numancia,2,0,H
+2020-03-01,Oviedo,Tenerife,1,0,H
+2020-03-01,Fuenlabrada,Alcorcon,3,4,A
+2020-03-06,Lugo,Cadiz,1,1,D
+2020-03-07,Girona,Albacete,1,1,D
+2020-03-07,Extremadura,Oviedo,1,2,A
+2020-03-07,Numancia,Racing Santander,1,2,A
+2020-03-07,Huesca,Fuenlabrada,2,0,H
+2020-03-07,Almeria,Deportivo La Coruna,4,0,H
+2020-03-08,Rayo Vallecano,Elche,2,3,A
+2020-03-08,Malaga,Zaragoza,0,1,A
+2020-03-08,Alcorcon,Mirandes,1,2,A
+2020-03-08,Sporting Gijon,Las Palmas,4,0,H
+2020-03-08,Tenerife,Ponferradina,1,0,H
+2020-06-10,Rayo Vallecano,Albacete,1,0,H
+2020-06-12,Malaga,Huesca,1,3,A
+2020-06-12,Elche,Extremadura,1,1,D
+2020-06-12,Fuenlabrada,Tenerife,1,0,H
+2020-06-12,Oviedo,Ponferradina,0,0,D
+2020-06-13,Racing Santander,Lugo,1,2,A
+2020-06-13,Las Palmas,Girona,0,0,D
+2020-06-13,Zaragoza,Alcorcon,1,3,A
+2020-06-14,Deportivo La Coruna,Sporting Gijon,0,0,D
+2020-06-14,Mirandes,Numancia,2,1,H
+2020-06-14,Albacete,Almeria,0,1,A
+2020-06-14,Cadiz,Rayo Vallecano,1,1,D
+2020-06-15,Ponferradina,Elche,2,1,H
+2020-06-15,Tenerife,Malaga,0,0,D
+2020-06-16,Lugo,Zaragoza,1,3,A
+2020-06-16,Girona,Racing Santander,0,0,D
+2020-06-17,Oviedo,Deportivo La Coruna,2,2,D
+2020-06-17,Almeria,Las Palmas,0,1,A
+2020-06-17,Extremadura,Albacete,0,1,A
+2020-06-17,Rayo Vallecano,Fuenlabrada,1,0,H
+2020-06-18,Numancia,Cadiz,1,2,A
+2020-06-18,Huesca,Mirandes,1,2,A
+2020-06-18,Alcorcon,Sporting Gijon,0,2,A
+2020-06-19,Elche,Girona,1,0,H
+2020-06-20,Deportivo La Coruna,Rayo Vallecano,3,3,D
+2020-06-20,Las Palmas,Lugo,1,0,H
+2020-06-20,Zaragoza,Almeria,0,2,A
+2020-06-20,Malaga,Extremadura,1,1,D
+2020-06-21,Mirandes,Ponferradina,1,2,A
+2020-06-21,Racing Santander,Tenerife,1,2,A
+2020-06-21,Albacete,Huesca,2,2,D
+2020-06-21,Cadiz,Alcorcon,1,1,D
+2020-06-21,Fuenlabrada,Numancia,2,0,H
+2020-06-22,Sporting Gijon,Oviedo,0,1,A
+2020-06-23,Lugo,Malaga,0,0,D
+2020-06-23,Elche,Deportivo La Coruna,0,1,A
+2020-06-23,Extremadura,Zaragoza,1,2,A
+2020-06-24,Girona,Numancia,2,0,H
+2020-06-24,Tenerife,Mirandes,4,1,H
+2020-06-24,Huesca,Cadiz,1,1,D
+2020-06-24,Albacete,Las Palmas,0,0,D
+2020-06-24,Ponferradina,Racing Santander,1,1,D
+2020-06-25,Almeria,Alcorcon,0,1,A
+2020-06-25,Rayo Vallecano,Sporting Gijon,1,1,D
+2020-06-25,Oviedo,Fuenlabrada,0,0,D
+2020-06-27,Deportivo La Coruna,Ponferradina,2,1,H
+2020-06-27,Las Palmas,Elche,1,1,D
+2020-06-27,Cadiz,Tenerife,0,2,A
+2020-06-27,Racing Santander,Albacete,1,2,A
+2020-06-28,Sporting Gijon,Lugo,2,0,H
+2020-06-28,Mirandes,Almeria,2,2,D
+2020-06-28,Malaga,Girona,2,0,H
+2020-06-28,Numancia,Oviedo,1,0,H
+2020-06-28,Fuenlabrada,Extremadura,1,1,D
+2020-06-29,Alcorcon,Rayo Vallecano,3,2,H
+2020-06-29,Zaragoza,Huesca,0,1,A
+2020-06-30,Tenerife,Deportivo La Coruna,1,1,D
+2020-06-30,Elche,Cadiz,0,0,D
+2020-07-01,Lugo,Numancia,3,1,H
+2020-07-01,Oviedo,Mirandes,1,0,H
+2020-07-01,Almeria,Sporting Gijon,1,0,H
+2020-07-01,Extremadura,Racing Santander,3,1,H
+2020-07-01,Ponferradina,Fuenlabrada,0,3,A
+2020-07-02,Huesca,Las Palmas,1,0,H
+2020-07-02,Albacete,Alcorcon,1,1,D
+2020-07-02,Rayo Vallecano,Malaga,0,0,D
+2020-07-03,Girona,Zaragoza,1,0,H
+2020-07-04,Numancia,Extremadura,1,0,H
+2020-07-04,Racing Santander,Elche,1,2,A
+2020-07-04,Almeria,Tenerife,1,2,A
+2020-07-04,Cadiz,Oviedo,2,0,H
+2020-07-04,Fuenlabrada,Mirandes,2,2,D
+2020-07-05,Deportivo La Coruna,Huesca,2,1,H
+2020-07-05,Las Palmas,Ponferradina,3,0,H
+2020-07-05,Malaga,Albacete,0,0,D
+2020-07-05,Alcorcon,Lugo,2,2,D
+2020-07-06,Sporting Gijon,Girona,0,0,D
+2020-07-06,Zaragoza,Rayo Vallecano,2,4,A
+2020-07-07,Mirandes,Elche,1,0,H
+2020-07-07,Fuenlabrada,Racing Santander,1,0,H
+2020-07-07,Extremadura,Cadiz,0,1,A
+2020-07-08,Malaga,Deportivo La Coruna,1,0,H
+2020-07-08,Oviedo,Las Palmas,2,1,H
+2020-07-08,Huesca,Alcorcon,2,1,H
+2020-07-08,Ponferradina,Lugo,0,1,A
+2020-07-09,Albacete,Sporting Gijon,1,1,D
+2020-07-09,Rayo Vallecano,Numancia,3,2,H
+2020-07-09,Girona,Almeria,1,0,H
+2020-07-09,Tenerife,Zaragoza,1,1,D
+2020-07-11,Racing Santander,Huesca,1,0,H
+2020-07-11,Las Palmas,Mirandes,1,0,H
+2020-07-11,Cadiz,Fuenlabrada,0,1,A
+2020-07-12,Deportivo La Coruna,Extremadura,2,3,A
+2020-07-12,Lugo,Girona,2,2,D
+2020-07-12,Numancia,Ponferradina,1,0,H
+2020-07-12,Zaragoza,Oviedo,2,4,A
+2020-07-13,Almeria,Rayo Vallecano,3,2,H
+2020-07-13,Sporting Gijon,Malaga,2,1,H
+2020-07-13,Alcorcon,Tenerife,0,0,D
+2020-07-13,Elche,Albacete,2,0,H
+2020-07-17,Malaga,Alcorcon,2,0,H
+2020-07-17,Girona,Cadiz,2,1,H
+2020-07-17,Oviedo,Racing Santander,1,0,H
+2020-07-17,Tenerife,Lugo,1,2,A
+2020-07-17,Albacete,Zaragoza,4,1,H
+2020-07-17,Huesca,Numancia,3,0,H
+2020-07-17,Rayo Vallecano,Las Palmas,2,2,D
+2020-07-17,Mirandes,Deportivo La Coruna,1,0,H
+2020-07-17,Extremadura,Sporting Gijon,2,0,H
+2020-07-17,Fuenlabrada,Elche,3,1,H
+2020-07-17,Ponferradina,Almeria,2,1,H
+2020-07-20,Las Palmas,Extremadura,5,1,H
+2020-07-20,Alcorcon,Girona,2,0,H
+2020-07-20,Lugo,Mirandes,2,1,H
+2020-07-20,Numancia,Tenerife,2,1,H
+2020-07-20,Almeria,Malaga,0,0,D
+2020-07-20,Cadiz,Albacete,0,1,A
+2020-07-20,Sporting Gijon,Huesca,0,1,A
+2020-07-20,Zaragoza,Ponferradina,2,1,H
+2020-07-20,Elche,Oviedo,2,1,H
+2020-07-20,Racing Santander,Rayo Vallecano,1,2,A
+2020-08-07,Deportivo La Coruna,Fuenlabrada,2,1,H
+2020-08-13,Girona,Almeria,1,0,H
+2020-08-13,Elche,Zaragoza,0,0,D
+2020-08-16,Almeria,Girona,1,2,A
+2020-08-16,Zaragoza,Elche,0,1,A
+2020-08-20,Elche,Girona,0,0,D
+2020-08-23,Girona,Elche,0,1,A

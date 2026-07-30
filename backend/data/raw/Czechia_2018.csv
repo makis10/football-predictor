@@ -1,0 +1,278 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2018-07-20,Dukla Praha,Plzen,1,3,A
+2018-07-21,Zlin,Mlada Boleslav,3,2,H
+2018-07-21,Slovan Liberec,Karvina,1,0,H
+2018-07-21,Pribram,Teplice,1,1,D
+2018-07-21,Sparta Praha,Opava,2,0,H
+2018-07-22,Bohemians 1905,Slovacko,2,1,H
+2018-07-22,Sigma Olomouc,Slavia Praha,0,3,A
+2018-07-23,Banik Ostrava,FK Jablonec,1,0,H
+2018-07-27,Mlada Boleslav,Sigma Olomouc,0,4,A
+2018-07-28,Opava,Zlin,1,2,A
+2018-07-28,Pribram,Bohemians 1905,4,2,H
+2018-07-28,Slovacko,Banik Ostrava,2,1,H
+2018-07-28,Slavia Praha,Karvina,4,0,H
+2018-07-29,Teplice,Dukla Praha,5,2,H
+2018-07-29,FK Jablonec,Sparta Praha,1,2,A
+2018-07-30,Plzen,Slovan Liberec,1,0,H
+2018-08-03,Slavia Praha,Opava,3,1,H
+2018-08-04,Zlin,FK Jablonec,1,1,D
+2018-08-04,Slovan Liberec,Teplice,2,2,D
+2018-08-04,Banik Ostrava,Pribram,3,0,H
+2018-08-04,Sigma Olomouc,Plzen,0,1,A
+2018-08-05,Karvina,Mlada Boleslav,3,4,A
+2018-08-05,Sparta Praha,Slovacko,1,0,H
+2018-08-06,Dukla Praha,Bohemians 1905,0,1,A
+2018-08-10,Mlada Boleslav,Slavia Praha,0,1,A
+2018-08-11,FK Jablonec,Karvina,4,1,H
+2018-08-11,Opava,Slovan Liberec,1,1,D
+2018-08-11,Pribram,Dukla Praha,4,0,H
+2018-08-11,Plzen,Zlin,1,0,H
+2018-08-12,Slovacko,Sigma Olomouc,3,1,H
+2018-08-12,Teplice,Sparta Praha,0,4,A
+2018-08-13,Bohemians 1905,Banik Ostrava,0,1,A
+2018-08-17,Dukla Praha,Slovacko,1,2,A
+2018-08-18,Zlin,Teplice,1,0,H
+2018-08-18,Mlada Boleslav,Opava,6,1,H
+2018-08-18,Slovan Liberec,Bohemians 1905,1,1,D
+2018-08-18,Slavia Praha,FK Jablonec,0,2,A
+2018-08-19,Karvina,Plzen,0,1,A
+2018-08-19,Sparta Praha,Pribram,2,2,D
+2018-08-20,Sigma Olomouc,Banik Ostrava,1,4,A
+2018-08-24,Bohemians 1905,Sparta Praha,1,1,D
+2018-08-25,Banik Ostrava,Dukla Praha,2,0,H
+2018-08-25,Opava,Karvina,1,3,A
+2018-08-25,Pribram,Slovan Liberec,1,3,A
+2018-08-25,Teplice,Slavia Praha,0,3,A
+2018-08-26,Plzen,Mlada Boleslav,6,1,H
+2018-08-26,FK Jablonec,Sigma Olomouc,3,0,H
+2018-08-27,Slovacko,Zlin,0,4,A
+2018-08-31,Sparta Praha,Dukla Praha,2,0,H
+2018-09-01,Slovan Liberec,Banik Ostrava,0,0,D
+2018-09-01,Zlin,Pribram,3,0,H
+2018-09-01,Mlada Boleslav,Teplice,1,1,D
+2018-09-01,Opava,FK Jablonec,2,0,H
+2018-09-01,Slavia Praha,Plzen,4,0,H
+2018-09-02,Karvina,Slovacko,2,1,H
+2018-09-02,Sigma Olomouc,Bohemians 1905,2,3,A
+2018-09-14,Bohemians 1905,Zlin,0,1,A
+2018-09-15,Pribram,Sigma Olomouc,1,0,H
+2018-09-15,Plzen,Opava,1,0,H
+2018-09-16,FK Jablonec,Mlada Boleslav,0,3,A
+2018-09-16,Dukla Praha,Slovan Liberec,2,0,H
+2018-09-16,Teplice,Karvina,2,1,H
+2018-09-16,Slovacko,Slavia Praha,1,3,A
+2018-09-17,Banik Ostrava,Sparta Praha,0,1,A
+2018-09-21,Zlin,Banik Ostrava,1,2,A
+2018-09-22,Sigma Olomouc,Dukla Praha,1,0,H
+2018-09-22,Mlada Boleslav,Slovacko,5,1,H
+2018-09-22,Karvina,Pribram,4,1,H
+2018-09-22,Opava,Teplice,2,0,H
+2018-09-22,Sparta Praha,Slovan Liberec,4,1,H
+2018-09-23,Slavia Praha,Bohemians 1905,1,0,H
+2018-09-24,FK Jablonec,Plzen,3,0,H
+2018-09-28,Bohemians 1905,Karvina,0,0,D
+2018-09-28,Plzen,Sparta Praha,1,0,H
+2018-09-29,Dukla Praha,Zlin,1,1,D
+2018-09-29,Pribram,Mlada Boleslav,3,0,H
+2018-09-29,Slovacko,Opava,0,2,A
+2018-09-29,Slovan Liberec,Sigma Olomouc,3,0,H
+2018-09-30,Banik Ostrava,Slavia Praha,2,1,H
+2018-09-30,Teplice,FK Jablonec,1,2,A
+2018-10-05,Zlin,Slovan Liberec,0,1,A
+2018-10-06,Mlada Boleslav,Banik Ostrava,2,2,D
+2018-10-06,Sigma Olomouc,Sparta Praha,1,0,H
+2018-10-07,Plzen,Teplice,1,0,H
+2018-10-07,FK Jablonec,Slovacko,2,0,H
+2018-10-07,Karvina,Dukla Praha,0,2,A
+2018-10-07,Opava,Bohemians 1905,0,1,A
+2018-10-07,Slavia Praha,Pribram,4,1,H
+2018-10-19,Bohemians 1905,Plzen,2,2,D
+2018-10-20,Sigma Olomouc,Zlin,1,1,D
+2018-10-20,Banik Ostrava,Karvina,1,1,D
+2018-10-20,Pribram,FK Jablonec,0,6,A
+2018-10-20,Slovacko,Teplice,0,2,A
+2018-10-21,Dukla Praha,Opava,1,0,H
+2018-10-21,Slovan Liberec,Slavia Praha,0,1,A
+2018-10-22,Sparta Praha,Mlada Boleslav,4,1,H
+2018-10-26,Teplice,Banik Ostrava,0,1,A
+2018-10-27,Mlada Boleslav,Bohemians 1905,3,0,H
+2018-10-27,Karvina,Sigma Olomouc,2,3,A
+2018-10-27,Opava,Pribram,5,0,H
+2018-10-27,Zlin,Sparta Praha,1,0,H
+2018-10-28,Plzen,Slovacko,2,1,H
+2018-10-28,FK Jablonec,Slovan Liberec,0,0,D
+2018-10-29,Slavia Praha,Dukla Praha,4,1,H
+2018-11-02,Bohemians 1905,Teplice,2,3,A
+2018-11-03,Banik Ostrava,Plzen,0,1,A
+2018-11-03,Zlin,Karvina,2,1,H
+2018-11-03,Sigma Olomouc,Opava,2,2,D
+2018-11-03,Dukla Praha,FK Jablonec,2,6,A
+2018-11-03,Pribram,Slovacko,0,3,A
+2018-11-04,Sparta Praha,Slavia Praha,2,2,D
+2018-11-05,Slovan Liberec,Mlada Boleslav,1,0,H
+2018-11-09,Mlada Boleslav,Dukla Praha,0,0,D
+2018-11-10,Karvina,Sparta Praha,1,3,A
+2018-11-10,Slovacko,Slovan Liberec,0,1,A
+2018-11-11,Opava,Banik Ostrava,2,1,H
+2018-11-11,Plzen,Pribram,1,1,D
+2018-11-11,FK Jablonec,Bohemians 1905,3,1,H
+2018-11-11,Teplice,Sigma Olomouc,0,0,D
+2018-11-11,Slavia Praha,Zlin,3,1,H
+2018-11-23,Slovan Liberec,Plzen,1,1,D
+2018-11-23,Dukla Praha,Teplice,1,0,H
+2018-11-24,Karvina,Slavia Praha,1,3,A
+2018-11-24,Zlin,Opava,2,0,H
+2018-11-24,Banik Ostrava,Slovacko,0,3,A
+2018-11-24,Bohemians 1905,Pribram,2,2,D
+2018-11-25,Sigma Olomouc,Mlada Boleslav,0,4,A
+2018-11-25,Sparta Praha,FK Jablonec,0,0,D
+2018-11-30,Teplice,Slovan Liberec,1,0,H
+2018-12-01,Mlada Boleslav,Karvina,1,1,D
+2018-12-01,Slovacko,Sparta Praha,2,1,H
+2018-12-02,Bohemians 1905,Dukla Praha,0,0,D
+2018-12-02,Pribram,Banik Ostrava,0,2,A
+2018-12-02,Plzen,Sigma Olomouc,2,0,H
+2018-12-03,FK Jablonec,Zlin,4,0,H
+2018-12-03,Opava,Slavia Praha,2,3,A
+2018-12-07,Zlin,Plzen,0,2,A
+2018-12-07,Dukla Praha,Pribram,1,2,A
+2018-12-08,Sigma Olomouc,Slovacko,1,0,H
+2018-12-08,Banik Ostrava,Bohemians 1905,2,0,H
+2018-12-08,Karvina,FK Jablonec,2,1,H
+2018-12-08,Slavia Praha,Mlada Boleslav,3,2,H
+2018-12-09,Sparta Praha,Teplice,0,1,A
+2018-12-10,Slovan Liberec,Opava,1,2,A
+2018-12-14,Banik Ostrava,Sigma Olomouc,0,0,D
+2018-12-15,Bohemians 1905,Slovan Liberec,0,0,D
+2018-12-15,Opava,Mlada Boleslav,2,1,H
+2018-12-15,Slovacko,Dukla Praha,1,0,H
+2018-12-15,Teplice,Zlin,2,1,H
+2018-12-15,Pribram,Sparta Praha,1,1,D
+2018-12-16,Plzen,Karvina,2,1,H
+2018-12-17,FK Jablonec,Slavia Praha,0,2,A
+2019-02-08,Sigma Olomouc,FK Jablonec,1,2,A
+2019-02-08,Dukla Praha,Banik Ostrava,1,1,D
+2019-02-09,Zlin,Slovacko,0,1,A
+2019-02-09,Mlada Boleslav,Plzen,1,1,D
+2019-02-09,Slovan Liberec,Pribram,4,0,H
+2019-02-09,Karvina,Opava,1,1,D
+2019-02-09,Slavia Praha,Teplice,2,0,H
+2019-02-10,Sparta Praha,Bohemians 1905,1,0,H
+2019-02-15,Teplice,Mlada Boleslav,0,2,A
+2019-02-16,Bohemians 1905,Sigma Olomouc,0,1,A
+2019-02-16,Pribram,Zlin,3,2,H
+2019-02-16,Slovacko,Karvina,2,0,H
+2019-02-16,Banik Ostrava,Slovan Liberec,2,1,H
+2019-02-17,FK Jablonec,Opava,2,2,D
+2019-02-17,Plzen,Slavia Praha,2,0,H
+2019-02-18,Dukla Praha,Sparta Praha,2,3,A
+2019-02-22,Slovan Liberec,Dukla Praha,2,0,H
+2019-02-23,Zlin,Bohemians 1905,0,2,A
+2019-02-23,Sigma Olomouc,Pribram,2,0,H
+2019-02-23,Karvina,Teplice,1,1,D
+2019-02-23,Mlada Boleslav,FK Jablonec,1,0,H
+2019-02-24,Sparta Praha,Banik Ostrava,3,2,H
+2019-02-25,Slavia Praha,Slovacko,4,0,H
+2019-02-25,Opava,Plzen,1,2,A
+2019-03-01,Banik Ostrava,Zlin,1,2,A
+2019-03-02,Plzen,FK Jablonec,1,0,H
+2019-03-02,Dukla Praha,Sigma Olomouc,0,4,A
+2019-03-02,Pribram,Karvina,2,1,H
+2019-03-02,Slovacko,Mlada Boleslav,1,1,D
+2019-03-02,Slovan Liberec,Sparta Praha,0,1,A
+2019-03-03,Bohemians 1905,Slavia Praha,0,3,A
+2019-03-03,Teplice,Opava,3,2,H
+2019-03-08,FK Jablonec,Teplice,2,1,H
+2019-03-09,Zlin,Dukla Praha,2,1,H
+2019-03-09,Mlada Boleslav,Pribram,2,0,H
+2019-03-09,Karvina,Bohemians 1905,0,3,A
+2019-03-09,Opava,Slovacko,2,2,D
+2019-03-09,Sparta Praha,Plzen,4,0,H
+2019-03-10,Slavia Praha,Banik Ostrava,4,0,H
+2019-03-11,Sigma Olomouc,Slovan Liberec,2,1,H
+2019-03-15,Dukla Praha,Karvina,2,1,H
+2019-03-15,Teplice,Plzen,2,1,H
+2019-03-16,Banik Ostrava,Mlada Boleslav,1,1,D
+2019-03-16,Slovan Liberec,Zlin,1,0,H
+2019-03-16,Slovacko,FK Jablonec,0,0,D
+2019-03-16,Sparta Praha,Sigma Olomouc,2,1,H
+2019-03-17,Bohemians 1905,Opava,0,0,D
+2019-03-17,Pribram,Slavia Praha,0,2,A
+2019-03-29,Karvina,Banik Ostrava,2,0,H
+2019-03-30,Zlin,Sigma Olomouc,0,2,A
+2019-03-30,Mlada Boleslav,Sparta Praha,2,1,H
+2019-03-30,Opava,Dukla Praha,2,0,H
+2019-03-30,Teplice,Slovacko,2,0,H
+2019-03-30,Slavia Praha,Slovan Liberec,1,1,D
+2019-03-31,FK Jablonec,Pribram,3,0,H
+2019-03-31,Plzen,Bohemians 1905,3,2,H
+2019-04-05,Pribram,Opava,3,1,H
+2019-04-06,Dukla Praha,Slavia Praha,1,5,A
+2019-04-07,Slovan Liberec,FK Jablonec,0,0,D
+2019-04-07,Sigma Olomouc,Karvina,3,2,H
+2019-04-07,Banik Ostrava,Teplice,3,1,H
+2019-04-07,Bohemians 1905,Mlada Boleslav,0,0,D
+2019-04-07,Slovacko,Plzen,0,1,A
+2019-04-08,Sparta Praha,Zlin,2,0,H
+2019-04-12,Teplice,Bohemians 1905,1,2,A
+2019-04-13,Karvina,Zlin,2,0,H
+2019-04-13,Opava,Sigma Olomouc,2,1,H
+2019-04-13,Slovacko,Pribram,2,0,H
+2019-04-13,Plzen,Banik Ostrava,2,1,H
+2019-04-14,FK Jablonec,Dukla Praha,2,1,H
+2019-04-14,Slavia Praha,Sparta Praha,1,1,D
+2019-04-15,Mlada Boleslav,Slovan Liberec,1,2,A
+2019-04-21,Zlin,Slavia Praha,1,0,H
+2019-04-21,Sparta Praha,Karvina,1,3,A
+2019-04-21,Slovan Liberec,Slovacko,3,2,H
+2019-04-21,Sigma Olomouc,Teplice,2,0,H
+2019-04-21,Banik Ostrava,Opava,2,0,H
+2019-04-21,Bohemians 1905,FK Jablonec,1,0,H
+2019-04-21,Dukla Praha,Mlada Boleslav,2,2,D
+2019-04-21,Pribram,Plzen,1,1,D
+2019-04-27,Slavia Praha,Sigma Olomouc,2,1,H
+2019-04-27,Plzen,Dukla Praha,4,0,H
+2019-04-27,Mlada Boleslav,Zlin,3,0,H
+2019-04-27,FK Jablonec,Banik Ostrava,4,0,H
+2019-04-27,Karvina,Slovan Liberec,2,1,H
+2019-04-27,Opava,Sparta Praha,0,3,A
+2019-04-27,Slovacko,Bohemians 1905,1,1,D
+2019-04-27,Teplice,Pribram,0,0,D
+2019-05-03,Zlin,Sigma Olomouc,1,0,H
+2019-05-03,Dukla Praha,Bohemians 1905,1,1,D
+2019-05-03,Teplice,Mlada Boleslav,0,8,A
+2019-05-04,Sparta Praha,Banik Ostrava,3,0,H
+2019-05-04,Slovan Liberec,Slavia Praha,0,0,D
+2019-05-05,Opava,Karvina,1,0,H
+2019-05-05,Slovacko,Pribram,5,1,H
+2019-05-05,Plzen,FK Jablonec,2,1,H
+2019-05-11,Bohemians 1905,Slovacko,0,0,D
+2019-05-11,Opava,Dukla Praha,3,2,H
+2019-05-11,Pribram,Karvina,1,0,H
+2019-05-11,FK Jablonec,Banik Ostrava,2,0,H
+2019-05-11,Sparta Praha,Slovan Liberec,1,0,H
+2019-05-12,Mlada Boleslav,Teplice,1,1,D
+2019-05-12,Sigma Olomouc,Zlin,3,2,H
+2019-05-12,Slavia Praha,Plzen,3,1,H
+2019-05-14,Bohemians 1905,Pribram,1,4,A
+2019-05-14,Karvina,Dukla Praha,3,0,H
+2019-05-14,Slovacko,Opava,4,1,H
+2019-05-14,Banik Ostrava,Slovan Liberec,0,1,A
+2019-05-15,Plzen,Sparta Praha,4,0,H
+2019-05-15,Slavia Praha,FK Jablonec,2,1,H
+2019-05-17,Zlin,Mlada Boleslav,3,1,H
+2019-05-18,Dukla Praha,Slovacko,0,0,D
+2019-05-18,Karvina,Bohemians 1905,0,1,A
+2019-05-18,Opava,Pribram,2,1,H
+2019-05-19,Sparta Praha,FK Jablonec,2,0,H
+2019-05-19,Slovan Liberec,Plzen,0,2,A
+2019-05-19,Banik Ostrava,Slavia Praha,0,0,D
+2019-05-24,Mlada Boleslav,Zlin,3,0,H
+2019-05-25,Bohemians 1905,Opava,1,1,D
+2019-05-25,Pribram,Dukla Praha,3,2,H
+2019-05-25,Slovacko,Karvina,2,0,H
+2019-05-26,Slavia Praha,Sparta Praha,2,1,H
+2019-05-26,Plzen,Banik Ostrava,1,1,D
+2019-05-26,FK Jablonec,Slovan Liberec,1,0,H
+2019-06-01,Banik Ostrava,Mlada Boleslav,0,1,A
