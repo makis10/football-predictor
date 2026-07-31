@@ -1,5 +1,5 @@
 {
-"as_of": "2026-07-30",
+"as_of": "2026-07-31",
 "count": 589,
 "clubs": {
 "Arsenal": {
@@ -1022,12 +1022,12 @@
 "country": "SUI",
 "level": 1
 },
-"Bolton": {
+"Cardiff": {
 "elo": 1468.63,
 "country": "ENG",
 "level": 2
 },
-"Cardiff": {
+"Bolton": {
 "elo": 1468.63,
 "country": "ENG",
 "level": 2
@@ -1827,12 +1827,12 @@
 "country": "ISR",
 "level": 1
 },
-"Horsens": {
+"Lyngby": {
 "elo": 1347.07,
 "country": "DEN",
 "level": 1
 },
-"Lyngby": {
+"Horsens": {
 "elo": 1347.07,
 "country": "DEN",
 "level": 1
@@ -2212,16 +2212,6 @@
 "country": "ROM",
 "level": 1
 },
-"Kolos": {
-"elo": 1274.75,
-"country": "UKR",
-"level": 1
-},
-"Zorya": {
-"elo": 1274.75,
-"country": "UKR",
-"level": 1
-},
 "Karpaty": {
 "elo": 1274.75,
 "country": "UKR",
@@ -2238,6 +2228,16 @@
 "level": 1
 },
 "FC Kharkiv": {
+"elo": 1274.75,
+"country": "UKR",
+"level": 1
+},
+"Kolos": {
+"elo": 1274.75,
+"country": "UKR",
+"level": 1
+},
+"Zorya": {
 "elo": 1274.75,
 "country": "UKR",
 "level": 1
@@ -2807,12 +2807,12 @@
 "country": "NIR",
 "level": 0
 },
-"Marsaxlokk": {
+"Valletta": {
 "elo": 1058.55,
 "country": "MLT",
 "level": 0
 },
-"Valletta": {
+"Marsaxlokk": {
 "elo": 1058.55,
 "country": "MLT",
 "level": 0

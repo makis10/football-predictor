@@ -22,6 +22,14 @@ from urllib.parse import urlparse
 
 TIMEOUT = 8
 
+# Where the scheduled jobs write on the HOST.
+#
+# Left as a literal "~" on purpose: this module runs inside the container, where
+# expanduser() would resolve to the container's home and hand the reader a path
+# that doesn't exist on their Mac. The tilde is correct in the shell they will
+# actually paste it into.
+HOST_LOG_DIR = os.environ.get("ALERT_LOG_DIR", "~/Library/Logs/football-predictor")
+
 
 def _is_ntfy(url: str) -> bool:
     host = (urlparse(url).hostname or "").lower()
@@ -35,14 +43,23 @@ def post_alert(
     priority: str = "default",   # ntfy: min|low|default|high|urgent
     tags: str | None = None,     # ntfy: comma-separated emoji shortcodes
     click: str | None = None,    # ntfy: URL opened when the notification is tapped
+    log: str | None = "daily.log",  # which log to read; None to omit
 ) -> bool:
     """POST `message` to GATE_ALERT_URL. Returns True when it was sent.
 
     No GATE_ALERT_URL configured → no-op returning False (callers still log).
+
+    `log` appends a ready-to-paste tail command. An alert that says what broke
+    but not where to read about it leaves you hunting through ~/Library/Logs at
+    the worst possible moment. Paths are the HOST's — these run in a container,
+    but the person reading the alert is at the Mac.
     """
     url = os.environ.get("GATE_ALERT_URL")
     if not url:
         return False
+
+    if log:
+        message = f"{message}\n\n📄 tail -120 {HOST_LOG_DIR}/{log}"
 
     try:
         import requests

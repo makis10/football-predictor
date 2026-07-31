@@ -82,6 +82,17 @@ set -a
 source .env 2>/dev/null || true
 set +a
 
+# ── Wait for Docker to be ready ──────────────────────────────────────────────
+# MUST come before anything that shells into a container. launchd fires this on
+# wake, when Docker Desktop is often still starting: on 2026-07-31 the
+# pre-flight below ran first, got "failed to connect to the docker API", and
+# set API_FOOTBALL_OK=0 — disabling every API-Football step for the whole run
+# — while the very next line waited for the daemon and found it ready.
+# shellcheck disable=SC1091
+source "$PROJ_DIR/scripts/wait_docker.sh"
+echo "" >> "$LOG"
+wait_for_docker "$LOG" || exit 1
+
 # ── API-Football pre-flight ──────────────────────────────────────────────────
 # The account is IP-whitelisted and this connection has a dynamic IP. When it
 # rotates, every API-Football call returns {"errors":{"Ip":...}} with HTTP 200 —
@@ -117,13 +128,6 @@ fi
 WC_ACTIVE="${WC_ACTIVE:-0}"
 
 # ── 0. Back up the database BEFORE any mutation ──────────────────────────────
-# ── Wait for Docker to be ready ──────────────────────────────────────────────
-# Guards against launchd firing this job on wake before Docker Desktop is up.
-# shellcheck disable=SC1091
-source "$PROJ_DIR/scripts/wait_docker.sh"
-echo "" >> "$LOG"
-wait_for_docker "$LOG" || exit 1
-
 # A daily snapshot of everything that can't be regenerated (users, bets, the
 # value ledger, settled results) — taken first so today's --force/retrain can
 # never leave us without a restore point.
@@ -205,17 +209,6 @@ docker compose exec -T backend \
     2>&1 | tee -a "$LOG" || echo "  [warn] history import failed — continuing" | tee -a "$LOG"
 else echo "  [skip] API-Football blocked." | tee -a "$LOG"; fi
 
-# ── 4d. Reconcile fixtures duplicated by club-name drift ─────────────────────
-# Two feeds spelling one club differently write two rows for the same match
-# (two predictions, two cards, split Elo). Adding an alias fixes future
-# ingests; this merges what was already written. Safe by construction — it
-# refuses any group where more than one row carries a result.
-echo "" >> "$LOG"
-echo "[4d/6] Reconciling duplicate fixtures …" | tee -a "$LOG"
-docker compose exec -T backend \
-    python scripts/dedupe_fixtures.py --apply \
-    2>&1 | tee -a "$LOG" || echo "  [warn] fixture dedupe failed — continuing" | tee -a "$LOG"
-
 # ── 5. Refresh European fixtures (CL/EL/ECL, incl. qualifiers — API-Football) ─
 # Ingest-only: upcoming ties are inserted and finished ones get their score.
 # Predictions come from step 6 (compute_predictions.py), the single canonical
@@ -255,6 +248,22 @@ echo "[5c/6] Refreshing ClubElo cold-start ratings …" | tee -a "$LOG"
 docker compose exec -T backend \
     python scripts/fetch_clubelo.py \
     2>&1 | tee -a "$LOG" || echo "  [warn] ClubElo fetch failed — cold-start seeding disabled this run" | tee -a "$LOG"
+
+# ── 5d. Reconcile fixtures duplicated by club-name drift ─────────────────────
+# Two feeds spelling one club differently write two rows for the same match
+# (two predictions, two cards, split Elo). Adding an alias fixes future
+# ingests; this merges what was already written. Safe by construction — it
+# refuses any group where more than one row carries a result.
+#
+# Placed AFTER every fixture-ingestion step and BEFORE predictions. It used
+# to sit at 4d, so a duplicate written by the European or friendlies fetch
+# below survived the whole day and got priced twice — "Jagiellonia v
+# Rangers" and "Jagiellonia v Ranger's" each had their own card.
+echo "" >> "$LOG"
+echo "[5d/6] Reconciling duplicate fixtures …" | tee -a "$LOG"
+docker compose exec -T backend \
+    python scripts/dedupe_fixtures.py --apply \
+    2>&1 | tee -a "$LOG" || echo "  [warn] fixture dedupe failed — continuing" | tee -a "$LOG"
 
 # ── 6. Compute any missing predictions ───────────────────────────────────────
 echo "" >> "$LOG"
@@ -630,14 +639,27 @@ fi
 
 # ── Data-completeness healthcheck ────────────────────────────────────────────
 # Audits every ingestion seam (team ids, stats coverage, name maps, club form,
-# odds match rate) for fixtures in the next 7 days. ALERT lines land in the log
-# and flip overall_failed so the heartbeat is skipped and the monitor fires —
-# silent "—" panels on match pages have shipped more than once.
+# odds match rate) for fixtures in the next 7 days. It exits 1 whenever ANY
+# alert is raised — silent "—" panels on match pages have shipped more than once.
+#
+# Its result is tracked SEPARATELY from overall_failed, because the two answer
+# different questions:
+#
+#   overall_failed  → did the pipeline actually run?      (dead-man's switch)
+#   health_alerts   → is the data complete?               (quality signal)
+#
+# They used to be one flag, and that silently disarmed the dead-man's switch:
+# the heartbeat fires only on a fully clean run, so with 12 leagues added in
+# July 2026 there was almost always some alert and the ping NEVER went out —
+# 0 in the entire log. healthchecks.io would have shown "down" forever while
+# the pipeline completed happily in 20 minutes, and would never have told us
+# about the one case that matters: the run not happening at all.
 echo "" >> "$LOG"
 echo "[health] Data-completeness check …" | tee -a "$LOG"
+health_alerts=0
 docker compose exec -T backend \
     python scripts/check_data_completeness.py --days 7 \
-    2>&1 | tee -a "$LOG" || _fail $LINENO
+    2>&1 | tee -a "$LOG" || health_alerts=1
 
 # ── Run summary ──────────────────────────────────────────────────────────────
 # Turn the recorded $LINENO list back into the step headers a human recognises,
@@ -666,33 +688,55 @@ if [ "$overall_failed" -ne 0 ]; then
 else
     echo "[ok] all steps completed" >> "$LOG"
 fi
+# Reported on its own line so a reader (and `grep`) can tell "the run broke"
+# apart from "the run was fine, the data has gaps".
+if [ "${health_alerts:-0}" -ne 0 ]; then
+    echo "[warn] data completeness: alerts raised (does NOT block the heartbeat)" >> "$LOG"
+else
+    echo "[ok] data completeness: no alerts" >> "$LOG"
+fi
 
 # ── Alerting ─────────────────────────────────────────────────────────────────
-# Two independent mechanisms, because they catch different failures:
+# THREE independent signals, because they answer different questions:
 #
-#  1. A push alert when THIS run failed — tells us what broke, off-machine
-#     (GATE_ALERT_URL, the same sink the gate and pre-flight already use).
-#  2. A dead-man's-switch ping when it succeeded — catches the failures this
-#     script can never report itself: launchd not firing, the Mac asleep at
-#     06:00, the job dying before it reaches this line. Set HEARTBEAT_URL in
-#     .env (healthchecks.io or similar) to arm it; no-op when unset, in which
-#     case run_watchdog.sh's staleness check is the only such cover.
+#  1. Run failed  → push alert naming the broken steps (GATE_ALERT_URL, the
+#     same sink the gate and pre-flight already use).
+#  2. Run succeeded → dead-man's-switch ping. This is the ONLY thing that
+#     catches the failures this script can never report itself: launchd not
+#     firing, the Mac asleep at 06:00, the job dying before it reaches here.
+#     Set HEARTBEAT_URL in .env (healthchecks.io or similar); no-op when unset,
+#     in which case run_watchdog.sh's staleness check is the only such cover.
+#  3. Data incomplete → its own push, and deliberately NOT tied to (2). A
+#     missing club id is worth knowing about; it is not a reason to tell the
+#     monitor the pipeline is dead.
 # shellcheck disable=SC1091
 source "$PROJ_DIR/scripts/_alert.sh"
 
+_health_verdict=$(tail -n "+$((RUN_START_LINE + 1))" "$LOG" \
+    | grep -E '^(OK|FAIL) — ' | tail -1)
+
 if [ "$overall_failed" -ne 0 ]; then
-    _health_verdict=$(tail -n "+$((RUN_START_LINE + 1))" "$LOG" \
-        | grep -E '^(OK|FAIL) — ' | tail -1)
     send_alert "Football Predictor: daily run failed" \
         "$(printf 'Run %s\n%s\n\nFailed steps:\n%s' \
              "$(date '+%Y-%m-%d %H:%M')" \
              "${_health_verdict:-health check did not report}" \
              "$(_name_steps "$failed_lines")")" \
-        high "rotating_light,soccer"
+        high "rotating_light,soccer" "$LOG"
 elif [ -n "${HEARTBEAT_URL:-}" ]; then
     # -o /dev/null: healthchecks.io answers with a bare "OK" that would otherwise
     # be appended mid-line into the log.
     curl -fsS -o /dev/null -m 10 --retry 3 "$HEARTBEAT_URL" 2>> "$LOG" \
         && echo "✓ heartbeat sent" >> "$LOG" \
         || echo "[warn] heartbeat ping failed" >> "$LOG"
+fi
+
+# Data-quality push. Fires whether or not the run itself failed — but only once
+# a day's worth of noise is worth a notification, so it rides the same "default"
+# priority rather than waking anyone up.
+if [ "${health_alerts:-0}" -ne 0 ]; then
+    echo "[warn] data-completeness alerts raised — see the health section above" >> "$LOG"
+    send_alert "Football Predictor: data incomplete" \
+        "$(printf '%s\n\nΤο pipeline έτρεξε κανονικά — αυτό αφορά κενά δεδομένων (team ids, stats, ονόματα).' \
+             "${_health_verdict:-health check did not report}")" \
+        default "mag,soccer" "$LOG"
 fi

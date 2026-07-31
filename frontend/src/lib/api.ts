@@ -561,7 +561,9 @@ export const LEAGUES = [
   { code: "Norway",       label: "Eliteserien",        flag: "🇳🇴" },
   { code: "Poland",       label: "Ekstraklasa",        flag: "🇵🇱" },
   { code: "Austria",      label: "Bundesliga (AT)",    flag: "🇦🇹" },
-  { code: "Switzerland",  label: "Super League",       flag: "🇨🇭" },
+  // Suffixed like Austria's: Greece's top flight is also "Super League", and
+  // two identical chips in the league filter are indistinguishable to a reader.
+  { code: "Switzerland",  label: "Super League (CH)",   flag: "🇨🇭" },
   { code: "Romania",      label: "Liga I",             flag: "🇷🇴" },
   { code: "Ireland",      label: "Premier Division",   flag: "🇮🇪" },
   { code: "Finland",      label: "Veikkausliiga",      flag: "🇫🇮" },

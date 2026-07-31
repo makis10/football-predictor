@@ -297,8 +297,12 @@ def _predictable(home: str, away: str) -> bool:
     prediction is worse than serving nothing, so those fixtures stay behind
     'Insufficient data' (the fixture, competition and kick-off still show).
     """
+    # Same resolver as _has_history above. These two drifted once already: the
+    # slug fallback was added to one and not the other, so "Çorum FK" and
+    # "Egnatia Rrogozhinë" counted as known for the feature vector but were
+    # still flagged insufficient_data on the card.
     def ok(t: str) -> bool:
-        return t in _KNOWN_TEAMS or _SNAP_NAME_MAP.get(t, t) in _KNOWN_TEAMS
+        return snapshot_name(t, _KNOWN_TEAMS) in _KNOWN_TEAMS
     return ok(home) and ok(away)
 
 european_df = load_european_data(EUROPEAN_DIR)

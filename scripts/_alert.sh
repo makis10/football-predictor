@@ -14,15 +14,42 @@
 # No GATE_ALERT_URL → silent no-op, so a fresh checkout without .env still runs.
 # ──────────────────────────────────────────────────────────────────────────────
 
-# send_alert <title> <message> [priority] [tags]
+ALERT_LOG_DIR="${ALERT_LOG_DIR:-$HOME/Library/Logs/football-predictor}"
+
+# send_alert <title> <message> [priority] [tags] [logfile]
 #   priority: min|low|default|high|urgent   (ntfy)
 #   tags:     comma-separated emoji shortcodes, e.g. "warning,soccer"
+#   logfile:  bare name ("daily.log") or an absolute path — WHERE TO LOOK.
+#
+# An alert that says what broke but not where to read about it sends you
+# hunting through ~/Library/Logs by hand at the worst moment. The path goes in
+# the macOS notification's SUBTITLE (its own line, and it survives in
+# Notification Center) and is appended to the phone push, which has room for
+# the ready-to-paste tail command.
 send_alert() {
     local title="$1" message="$2" priority="${3:-default}" tags="${4:-warning}"
+    local logfile="${5:-}" logpath="" subtitle=""
+
+    if [ -n "$logfile" ]; then
+        case "$logfile" in
+            /*) logpath="$logfile" ;;
+            *)  logpath="$ALERT_LOG_DIR/$logfile" ;;
+        esac
+        subtitle="📄 $logpath"
+    fi
 
     # Also post to the local screen — free, and useful when sitting at the Mac.
-    osascript -e "display notification \"${message//\"/\'}\" with title \"${title//\"/\'}\" sound name \"Basso\"" \
+    local subtitle_clause=""
+    [ -n "$subtitle" ] && subtitle_clause=" subtitle \"${subtitle//\"/\'}\""
+    osascript -e "display notification \"${message//\"/\'}\" with title \"${title//\"/\'}\"${subtitle_clause} sound name \"Basso\"" \
         2>/dev/null || true
+
+    # Phone push gets the command itself — nothing to remember or reconstruct.
+    if [ -n "$logpath" ]; then
+        message="$message
+
+📄 tail -120 $logpath"
+    fi
 
     [ -n "${GATE_ALERT_URL:-}" ] || return 0
 

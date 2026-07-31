@@ -59,8 +59,8 @@ if [ -f "$DAILY_LOG" ]; then
             if [ ! -f "$STALE_STAMP" ] || [ "$(find "$STALE_STAMP" -mtime +1 2>/dev/null)" ]; then
                 echo "── $(date '+%Y-%m-%d %H:%M:%S') daily pipeline stale (${age_h}h since last completed run)" >> "$LOG"
                 send_alert "Football Predictor: daily pipeline stale" \
-                    "Τελευταίο ολοκληρωμένο daily run πριν ${age_h} ώρες (${last_complete}). Δεν τρέχει το pipeline — δες daily.log." \
-                    high "rotating_light,clock2"
+                    "Τελευταίο ολοκληρωμένο daily run πριν ${age_h} ώρες (${last_complete}). Δεν τρέχει το pipeline." \
+                    high "rotating_light,clock2" "daily.log"
                 touch "$STALE_STAMP"
             fi
         elif [ -f "$STALE_STAMP" ]; then
@@ -93,7 +93,7 @@ if ! docker info >/dev/null 2>&1; then
     source "$PROJ_DIR/scripts/wait_docker.sh"
     wait_for_docker "$LOG" || {
         send_alert "Football Predictor: site down" \
-            "Docker δεν ξεκινά — το site είναι κάτω." urgent "rotating_light"
+            "Docker δεν ξεκινά — το site είναι κάτω." urgent "rotating_light" "watchdog.log"
         exit 1
     }
 fi
@@ -114,10 +114,10 @@ done
 if [ "$code" = "200" ]; then
     echo "   recovered at $(date '+%H:%M:%S')" >> "$LOG"
     send_alert "Football Predictor: recovered" \
-        "Το site είχε πέσει και επανήλθε αυτόματα." default "warning"
+        "Το site είχε πέσει και επανήλθε αυτόματα." default "warning" "watchdog.log"
 else
     echo "   STILL DOWN (HTTP $code) after restart" >> "$LOG"
     send_alert "Football Predictor: site down" \
         "Το site είναι κάτω (HTTP $code) και δεν επανέρχεται μετά από restart — χρειάζεται έλεγχος." \
-        urgent "rotating_light"
+        urgent "rotating_light" "watchdog.log"
 fi

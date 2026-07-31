@@ -14,37 +14,92 @@ import unicodedata
 HALF_LIFE_DAYS = 540.0
 _MAX_AGE_DAYS = 365 * 3
 
-# our DB name → API-Football name, where a slug match can't bridge them.
-NAME_OVERRIDES = {
-    "Man City": "Manchester City", "Man United": "Manchester United",
-    "Nott'm Forest": "Nottingham Forest", "Sheffield United": "Sheffield Utd",
-    "Spurs": "Tottenham", "Paris SG": "Paris Saint Germain",
-    "Ath Bilbao": "Athletic Club", "Ath Madrid": "Atletico Madrid",
-    "Betis": "Real Betis", "Sociedad": "Real Sociedad",
-    "Bayern Munich": "Bayern München", "Dortmund": "Borussia Dortmund",
-    "Stuttgart": "VfB Stuttgart", "Ein Frankfurt": "Eintracht Frankfurt",
-    "Greuther Furth": "SpVgg Greuther Fürth", "Leverkusen": "Bayer Leverkusen",
-    "Mainz": "FSV Mainz 05", "Wolfsburg": "VfL Wolfsburg",
-    "Hoffenheim": "1899 Hoffenheim", "Gladbach": "Borussia Mönchengladbach",
-    # GreekSL — API names carry city suffixes / different spellings
-    "AEK": "AEK Athens FC", "Olympiakos": "Olympiakos Piraeus",
-    "Aris": "Aris Thessalonikis", "Levadeiakos": "Levadiakos",
-    "OFI Crete": "OFI",
-    # Eredivisie — API prefixes (PEC/ADO/Fortuna/…) that the slug can't bridge
-    "Zwolle": "PEC Zwolle", "Den Haag": "ADO Den Haag",
-    "Sittard": "Fortuna Sittard", "Go Ahead": "GO Ahead Eagles",
-    "Sparta": "Sparta Rotterdam",
-    # Friendly opponents stored via their tracked-league rivals' fixtures
-    "Graafschap": "De Graafschap",
-    # Brazil Serie A — CSV names vs API-Football names
-    "Botafogo RJ": "Botafogo", "Bragantino": "RB Bragantino",
-    "Vasco": "Vasco DA Gama", "Athletico-PR": "Atletico Paranaense",
-    # German lower divisions / relegated sides — API keeps the club prefix
-    "Augsburg": "FC Augsburg", "Darmstadt": "SV Darmstadt 98",
-    "Heidenheim": "1. FC Heidenheim", "Ingolstadt": "FC Ingolstadt 04",
-    "Kaiserslautern": "1. FC Kaiserslautern", "Nurnberg": "1. FC Nürnberg",
-    "Espanol": "Espanyol", "Nijmegen": "NEC Nijmegen",
-    "Peterboro": "Peterborough", "Sp Braga": "SC Braga",
+# our DB name → the exact name API-Football uses (= the name stored in
+# team_match_stats / player_match_stats rows).
+#
+# ONE table, imported by both sides. It used to exist twice — here for reading
+# and again in scripts/fetch_club_team_stats.py for writing — and they drifted:
+# the 2026-07-30 expansion was added only to the writer, so stats WERE ingested
+# for Sion, Thun, LASK, Rakow, Univ. Craiova and CFR Cluj but the match page
+# could not find them and showed "—" for cards and corners.
+#
+# Several entries here are load-bearing against a WRONG match, not just a
+# missing one, because club_props' containment fallback would otherwise guess:
+#   Rakow   — "rakow" is a substring of "krakow" (Wisla/Cracovia Krakow)
+#   Wisla   — Wisła Kraków and Wisła Płock are different clubs
+#   LASK    — "lask" is a substring of "Slask Wroclaw"
+#   CFR Cluj / U. Cluj — two different Cluj clubs
+NAME_OVERRIDES: dict[str, str] = {
+    'AC Milan': 'AC Milan',
+    'AEK': 'AEK Athens FC',
+    'Accrington': 'Accrington ST',
+    'Almere City': 'Almere City FC',
+    'Aris': 'Aris Thessalonikis',
+    'Ath Bilbao': 'Athletic Club',
+    'Ath Madrid': 'Atletico Madrid',
+    'Athletico-PR': 'Atletico Paranaense',
+    'Augsburg': 'FC Augsburg',
+    'Basel': 'FC Basel 1893',
+    'Bayern Munich': 'Bayern München',
+    'Betis': 'Real Betis',
+    'Bochum': 'VfL Bochum',
+    'Botafogo RJ': 'Botafogo',
+    'Bragantino': 'RB Bragantino',
+    'CFR Cluj': 'CFR 1907 Cluj',
+    'Darmstadt': 'SV Darmstadt 98',
+    'Den Haag': 'ADO Den Haag',
+    'Dortmund': 'Borussia Dortmund',
+    'Ein Frankfurt': 'Eintracht Frankfurt',
+    'Espanol': 'Espanyol',
+    'Gladbach': 'Borussia Mönchengladbach',
+    'Go Ahead': 'GO Ahead Eagles',
+    'Graafschap': 'De Graafschap',
+    'Greuther Furth': 'SpVgg Greuther Fürth',
+    'Heidenheim': '1. FC Heidenheim',
+    'Hoffenheim': '1899 Hoffenheim',
+    'Horsens': 'AC Horsens',
+    'Ingolstadt': 'FC Ingolstadt 04',
+    'Inter': 'Inter',
+    'Ipswich': 'Ipswich',
+    'Jaro': 'FF Jaro',
+    'Kaiserslautern': '1. FC Kaiserslautern',
+    'LASK': 'Lask Linz',
+    'Leganes': 'Leganes',
+    'Levadeiakos': 'Levadiakos',
+    'Leverkusen': 'Bayer Leverkusen',
+    'Luzern': 'FC Luzern',
+    'Mainz': 'FSV Mainz 05',
+    'Man City': 'Manchester City',
+    'Man United': 'Manchester United',
+    'Nijmegen': 'NEC Nijmegen',
+    "Nott'm Forest": 'Nottingham Forest',
+    'Nurnberg': '1. FC Nürnberg',
+    'OFI Crete': 'OFI',
+    'Olympiakos': 'Olympiakos Piraeus',
+    'PAOK': 'PAOK',
+    'Paris SG': 'Paris Saint Germain',
+    'Peterboro': 'Peterborough',
+    'Rakow': 'Raków Częstochowa',
+    'Sepsi Sf. Gheorghe': 'Sepsi OSK Sfantu Gheorghe',
+    'Sheffield United': 'Sheffield Utd',
+    'Sion': 'FC Sion',
+    'Sittard': 'Fortuna Sittard',
+    'Sociedad': 'Real Sociedad',
+    'Sp Braga': 'SC Braga',
+    'Sparta': 'Sparta Rotterdam',
+    'Spurs': 'Tottenham',
+    'Stuttgart': 'VfB Stuttgart',
+    'Thun': 'FC Thun',
+    'U. Cluj': 'Universitatea Cluj',
+    'Univ. Craiova': 'Universitatea Craiova',
+    'Vasco': 'Vasco DA Gama',
+    'Volendam': 'FC Volendam',
+    'Widzew Lodz': 'Widzew Łódź',
+    'Wisla': 'Wisla Krakow',
+    'Wolfsburg': 'VfL Wolfsburg',
+    'Wolves': 'Wolves',
+    'Zurich': 'FC Zurich',
+    'Zwolle': 'PEC Zwolle',
 }
 
 

@@ -50,41 +50,11 @@ from backend.app.ml.odds_analysis_service import _LEAGUE_API_SPORTS_ID  # noqa: 
 
 LEAGUE_IDS = dict(_LEAGUE_API_SPORTS_ID)
 
-# our DB name → API-Football name, where the slug match can't bridge them.
-NAME_OVERRIDES = {
-    "Man City": "Manchester City", "Man United": "Manchester United",
-    "Nott'm Forest": "Nottingham Forest", "Sheffield United": "Sheffield Utd",
-    "Ipswich": "Ipswich", "Wolves": "Wolves", "Spurs": "Tottenham",
-    "Paris SG": "Paris Saint Germain", "Ath Bilbao": "Athletic Club",
-    "Ath Madrid": "Atletico Madrid", "Betis": "Real Betis",
-    "Sociedad": "Real Sociedad", "Inter": "Inter", "AC Milan": "AC Milan",
-    "Bayern Munich": "Bayern München", "Dortmund": "Borussia Dortmund",
-    "Stuttgart": "VfB Stuttgart", "Ein Frankfurt": "Eintracht Frankfurt",
-    "Greuther Furth": "SpVgg Greuther Fürth", "Leverkusen": "Bayer Leverkusen",
-    "Mainz": "FSV Mainz 05", "Wolfsburg": "VfL Wolfsburg",
-    "Hoffenheim": "1899 Hoffenheim", "Gladbach": "Borussia Mönchengladbach",
-    "AEK": "AEK Athens FC", "PAOK": "PAOK", "Leganes": "Leganes",
-    # GreekSL — API names carry city suffixes / different spellings
-    "Olympiakos": "Olympiakos Piraeus", "Aris": "Aris Thessalonikis",
-    "Levadeiakos": "Levadiakos", "OFI Crete": "OFI",
-    # Eredivisie — API prefixes (PEC/ADO/Fortuna/…) that the slug can't bridge
-    "Zwolle": "PEC Zwolle", "Den Haag": "ADO Den Haag",
-    "Sittard": "Fortuna Sittard", "Go Ahead": "GO Ahead Eagles",
-    "Sparta": "Sparta Rotterdam",
-    # Friendly opponents / lower divisions — resolved via /teams?search fallback
-    "Graafschap": "De Graafschap", "Volendam": "FC Volendam",
-    "Bochum": "VfL Bochum", "Almere City": "Almere City FC",
-    "Accrington": "Accrington ST",
-    # Brazil Serie A — CSV names vs API-Football names
-    "Botafogo RJ": "Botafogo", "Bragantino": "RB Bragantino",
-    "Vasco": "Vasco DA Gama", "Athletico-PR": "Atletico Paranaense",
-    # German lower divisions / relegated sides — API keeps the club prefix
-    "Augsburg": "FC Augsburg", "Darmstadt": "SV Darmstadt 98",
-    "Heidenheim": "1. FC Heidenheim", "Ingolstadt": "FC Ingolstadt 04",
-    "Kaiserslautern": "1. FC Kaiserslautern", "Nurnberg": "1. FC Nürnberg",
-    "Espanol": "Espanyol", "Nijmegen": "NEC Nijmegen",
-    "Peterboro": "Peterborough", "Sp Braga": "SC Braga",
-}
+# our DB name → API-Football name. Imported, NOT redefined: this table lived
+# here AND in club_props.py, and the copies drifted — the July 2026 expansion
+# was added only here, so stats were written for Sion/Thun/LASK/Rakow that the
+# match page then couldn't find. One table, both directions.
+from backend.app.ml.club_props import NAME_OVERRIDES  # noqa: E402
 
 
 def _slug(name: str) -> str:
