@@ -26,6 +26,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 from scripts._http_retry import get_with_retry  # noqa: E402
+from scripts.team_resolver import COMMON_ALIASES, is_youth_side  # noqa: E402
 
 API_BASE = "https://v3.football.api-sports.io"
 API_KEY  = os.getenv("API_SPORTS_KEY", "")
@@ -37,12 +38,17 @@ ID_CACHE = ROOT / "backend" / "data" / "models" / "club_team_ids.json"
 # needs slug guessing for teams we ingest.
 NAME_MAP = ROOT / "backend" / "data" / "models" / "club_name_map.json"
 
-# our league code → API-Football league id (mirrors odds_analysis_service).
-LEAGUE_IDS = {
-    "EPL": 39, "Championship": 40, "LeagueOne": 41, "LaLiga": 140, "SerieA": 135,
-    "Bundesliga": 78, "Ligue1": 61, "GreekSL": 197, "PrimeiraLiga": 94,
-    "Eredivisie": 88, "BrazilSerieA": 71, "CL": 2, "EL": 3, "ECL": 848,
-}
+# our league code → API-Football league id.
+#
+# Read from odds_analysis_service instead of restating it: this copy was missing
+# the twelve leagues added on 2026-07-30, so every one of their clubs fell
+# through to the per-team /teams?search fallback — 177 search calls in a run
+# that normally makes 54, and the ones that still missed showed up as 50
+# "no API id" alerts. One league sweep costs a single request and resolves the
+# whole division.
+from backend.app.ml.odds_analysis_service import _LEAGUE_API_SPORTS_ID  # noqa: E402
+
+LEAGUE_IDS = dict(_LEAGUE_API_SPORTS_ID)
 
 # our DB name → API-Football name, where the slug match can't bridge them.
 NAME_OVERRIDES = {
@@ -142,6 +148,14 @@ def build_id_cache(our_teams: set[str], season: int, budget: Budget) -> dict:
     override_slug = {_slug(k): _slug(v) for k, v in NAME_OVERRIDES.items()}
     # invert: API-slug we should accept for each our-name
     api_alias = {_slug(v): k for k, v in NAME_OVERRIDES.items()}
+    # team_resolver.COMMON_ALIASES already records the same pairs in the other
+    # direction (API name → our CSV name) for the fixture feeds. Reuse it rather
+    # than restating thirty entries here: after the 2026-07-30 expansion the
+    # league sweep was missing AIK, Basel, Hearts, Legia, Göteborg, HJK, LASK …
+    # purely because this map didn't know what the other one already did.
+    for api_name, our_name in COMMON_ALIASES.items():
+        if our_name in our_teams:
+            api_alias.setdefault(_slug(api_name), our_name)
 
     cache: dict[str, int] = {}
     matched, unmatched = set(), []
@@ -183,6 +197,14 @@ def build_id_cache(our_teams: set[str], season: int, budget: Budget) -> dict:
                 resp = _get("/teams", {"search": term}, budget).get("response", [])
             except Exception as e:
                 print(f"  [warn] /teams search '{term}': {e}"); continue
+            # Youth, reserve and WOMEN'S sides are different teams at the same
+            # club and must never stand in for the senior men's side — their
+            # match stats would land on the first team's cards/corners. A
+            # /teams?search for "SK Rapid" returns "SK Rapid W" as its ONLY hit,
+            # so the single-result shortcut below accepted it without question
+            # (and did: the cache pointed SK Rapid at the women's team, CFR Cluj
+            # at its reserves).
+            resp = [t for t in resp if not is_youth_side(t["team"]["name"])]
             hit = next((t for t in resp if _slug(t["team"]["name"]) == tslug), None)
             if hit is None and i == 0 and len(resp) == 1:
                 hit = resp[0]  # unambiguous single result for the exact name

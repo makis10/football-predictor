@@ -46,6 +46,11 @@ _YOUTH_SUFFIX = re.compile(
     r"|acad(?:emy)?"
     r"|youth"
     r"|jr|junior[s]?"
+    # Women's sides — same trap as youth: a different team at the same club.
+    # API-Football suffixes them " W"; other feeds spell it out. Without this,
+    # a /teams?search for "SK Rapid" returned "SK Rapid W" as its only hit and
+    # the id cache pointed the men's club at the women's team's match stats.
+    r"|w|women|womens|ladies|feminin[ea]?|femenino|femminile|frauen"
     r")\s*$",
     re.IGNORECASE,
 )
