@@ -9,6 +9,7 @@ from sqlalchemy.orm import Session
 
 from backend.app.cache import CACHE_MISS, cache_get, cache_set
 from backend.app.database import get_db
+from backend.app.display_names import display_name
 from backend.app.ml.predict import confidence_for
 from backend.app.models.match import Match
 from backend.app.models.odds_history import OddsHistory
@@ -648,7 +649,7 @@ def get_postmortem(match_id: int, db: Session = Depends(get_db)):
 
     prompt = f"""Post-mortem ανάλυση αποτυχημένης πρόβλεψης ποδοσφαίρου. Γράψε ΜΟΝΟ στα ελληνικά, 3-4 προτάσεις, χωρίς εισαγωγή.
 
-Αγώνας: {match.home_team} vs {match.away_team} ({match.league}, {match.match_date})
+Αγώνας: {display_name(match.home_team)} vs {display_name(match.away_team)} ({match.league}, {match.match_date})
 Σκορ: {score}
 Λάθος πρόβλεψη — {" | ".join(verdict_parts)}{events_block}
 

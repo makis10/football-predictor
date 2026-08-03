@@ -1,0 +1,310 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2021-07-30,Odra Opole,Miedz Legnica,1,4,A
+2021-07-30,Korona Kielce,SKRA Czestochowa,2,0,H
+2021-07-30,Tychy 71,KS odz,1,1,D
+2021-07-31,GKS Katowice,Resovia Rzeszow,2,2,D
+2021-07-31,Jastrzebie,Puszcza Niepoomice,0,2,A
+2021-07-31,Arka Gdynia,Zaglebie Sosnowiec,1,1,D
+2021-08-01,Widzew odz,Sandecja Nowy Sacz,3,0,H
+2021-08-01,Gornik Polkowice,Podbeskidzie,1,1,D
+2021-08-01,Stomil Olsztyn,Chrobry Gogow,1,2,A
+2021-08-06,Resovia Rzeszow,Tychy 71,1,0,H
+2021-08-06,Podbeskidzie,Odra Opole,0,3,A
+2021-08-07,Miedz Legnica,GKS Katowice,1,0,H
+2021-08-07,Gornik Polkowice,Sandecja Nowy Sacz,0,2,A
+2021-08-07,Arka Gdynia,Chrobry Gogow,0,2,A
+2021-08-08,Zaglebie Sosnowiec,Widzew odz,1,2,A
+2021-08-08,Jastrzebie,Stomil Olsztyn,1,0,H
+2021-08-08,KS odz,SKRA Czestochowa,3,2,H
+2021-08-09,Korona Kielce,Puszcza Niepoomice,3,1,H
+2021-08-12,Resovia Rzeszow,SKRA Czestochowa,0,1,A
+2021-08-13,Puszcza Niepoomice,KS odz,0,2,A
+2021-08-13,Tychy 71,Miedz Legnica,0,3,A
+2021-08-14,Korona Kielce,Jastrzebie,2,1,H
+2021-08-14,Stomil Olsztyn,Arka Gdynia,0,1,A
+2021-08-14,GKS Katowice,Podbeskidzie,2,2,D
+2021-08-15,Widzew odz,Chrobry Gogow,2,0,H
+2021-08-15,Gornik Polkowice,Zaglebie Sosnowiec,2,4,A
+2021-08-15,Odra Opole,Sandecja Nowy Sacz,1,2,A
+2021-08-17,Miedz Legnica,SKRA Czestochowa,1,1,D
+2021-08-17,Resovia Rzeszow,Puszcza Niepoomice,1,1,D
+2021-08-17,Podbeskidzie,Tychy 71,0,0,D
+2021-08-18,Stomil Olsztyn,Korona Kielce,0,1,A
+2021-08-18,KS odz,Jastrzebie,2,2,D
+2021-08-18,Arka Gdynia,Widzew odz,3,1,H
+2021-08-19,Odra Opole,Zaglebie Sosnowiec,1,0,H
+2021-08-19,Gornik Polkowice,Chrobry Gogow,0,0,D
+2021-08-19,GKS Katowice,Sandecja Nowy Sacz,0,0,D
+2021-08-20,Puszcza Niepoomice,Miedz Legnica,0,1,A
+2021-08-21,Jastrzebie,Resovia Rzeszow,1,1,D
+2021-08-21,Korona Kielce,KS odz,1,0,H
+2021-08-21,Widzew odz,Stomil Olsztyn,2,0,H
+2021-08-22,GKS Katowice,Zaglebie Sosnowiec,3,2,H
+2021-08-22,Gornik Polkowice,Arka Gdynia,2,1,H
+2021-08-22,Tychy 71,Sandecja Nowy Sacz,2,1,H
+2021-08-23,Odra Opole,Chrobry Gogow,1,0,H
+2021-08-23,Podbeskidzie,SKRA Czestochowa,1,0,H
+2021-08-27,Resovia Rzeszow,Korona Kielce,0,1,A
+2021-08-27,Stomil Olsztyn,KS odz,0,3,A
+2021-08-28,Arka Gdynia,Odra Opole,3,0,H
+2021-08-28,Widzew odz,Gornik Polkowice,4,2,H
+2021-08-28,Miedz Legnica,Jastrzebie,1,1,D
+2021-08-29,Chrobry Gogow,GKS Katowice,4,0,H
+2021-08-29,Podbeskidzie,Puszcza Niepoomice,4,0,H
+2021-08-29,Zaglebie Sosnowiec,Tychy 71,1,2,A
+2021-09-03,Korona Kielce,Miedz Legnica,0,0,D
+2021-09-04,Zaglebie Sosnowiec,SKRA Czestochowa,0,0,D
+2021-09-05,KS odz,Resovia Rzeszow,0,3,A
+2021-09-05,Jastrzebie,Podbeskidzie,0,1,A
+2021-09-05,Odra Opole,Widzew odz,0,0,D
+2021-09-10,Chrobry Gogow,SKRA Czestochowa,0,1,A
+2021-09-10,Widzew odz,GKS Katowice,3,1,H
+2021-09-11,Podbeskidzie,Korona Kielce,2,3,A
+2021-09-11,Jastrzebie,Sandecja Nowy Sacz,0,3,A
+2021-09-11,Miedz Legnica,KS odz,0,2,A
+2021-09-12,Arka Gdynia,Tychy 71,0,1,A
+2021-09-12,Zaglebie Sosnowiec,Puszcza Niepoomice,1,2,A
+2021-09-12,Gornik Polkowice,Odra Opole,1,1,D
+2021-09-13,Stomil Olsztyn,Resovia Rzeszow,4,2,H
+2021-09-15,Puszcza Niepoomice,Sandecja Nowy Sacz,1,2,A
+2021-09-16,GKS Katowice,Arka Gdynia,2,4,A
+2021-09-16,Tychy 71,Chrobry Gogow,1,0,H
+2021-09-16,Gornik Polkowice,Stomil Olsztyn,2,2,D
+2021-09-17,Jastrzebie,Zaglebie Sosnowiec,1,1,D
+2021-09-18,KS odz,Podbeskidzie,1,2,A
+2021-09-18,Korona Kielce,Sandecja Nowy Sacz,0,1,A
+2021-09-19,Tychy 71,Widzew odz,1,1,D
+2021-09-19,Odra Opole,Stomil Olsztyn,2,0,H
+2021-09-19,Puszcza Niepoomice,Chrobry Gogow,2,2,D
+2021-09-20,SKRA Czestochowa,Arka Gdynia,2,1,H
+2021-09-20,Gornik Polkowice,GKS Katowice,1,1,D
+2021-09-24,Widzew odz,SKRA Czestochowa,4,0,H
+2021-09-24,Gornik Polkowice,Tychy 71,0,1,A
+2021-09-25,Odra Opole,GKS Katowice,4,2,H
+2021-09-25,Arka Gdynia,Puszcza Niepoomice,2,0,H
+2021-09-25,Chrobry Gogow,Jastrzebie,2,0,H
+2021-09-26,Podbeskidzie,Resovia Rzeszow,2,0,H
+2021-09-26,Stomil Olsztyn,Miedz Legnica,3,0,H
+2021-09-26,Sandecja Nowy Sacz,KS odz,0,1,A
+2021-09-27,Zaglebie Sosnowiec,Korona Kielce,0,0,D
+2021-10-01,Miedz Legnica,Podbeskidzie,4,2,H
+2021-10-01,KS odz,Zaglebie Sosnowiec,0,1,A
+2021-10-02,Puszcza Niepoomice,Widzew odz,0,1,A
+2021-10-02,Korona Kielce,Chrobry Gogow,2,2,D
+2021-10-02,Resovia Rzeszow,Sandecja Nowy Sacz,0,1,A
+2021-10-03,Tychy 71,Odra Opole,2,1,H
+2021-10-03,Gornik Polkowice,SKRA Czestochowa,0,0,D
+2021-10-03,GKS Katowice,Stomil Olsztyn,2,1,H
+2021-10-04,Jastrzebie,Arka Gdynia,1,5,A
+2021-10-08,Arka Gdynia,Korona Kielce,0,0,D
+2021-10-09,GKS Katowice,Tychy 71,2,2,D
+2021-10-10,Zaglebie Sosnowiec,Resovia Rzeszow,0,1,A
+2021-10-10,Sandecja Nowy Sacz,Miedz Legnica,1,3,A
+2021-10-10,Widzew odz,Jastrzebie,3,1,H
+2021-10-15,Puszcza Niepoomice,Odra Opole,3,0,H
+2021-10-15,Korona Kielce,Widzew odz,0,1,A
+2021-10-16,Resovia Rzeszow,Chrobry Gogow,3,0,H
+2021-10-16,Jastrzebie,Gornik Polkowice,3,1,H
+2021-10-16,Miedz Legnica,Zaglebie Sosnowiec,4,0,H
+2021-10-16,Podbeskidzie,Sandecja Nowy Sacz,0,1,A
+2021-10-16,SKRA Czestochowa,GKS Katowice,0,0,D
+2021-10-17,KS odz,Arka Gdynia,1,0,H
+2021-10-18,Tychy 71,Stomil Olsztyn,1,2,A
+2021-10-19,Resovia Rzeszow,Miedz Legnica,0,2,A
+2021-10-20,Gornik Polkowice,Puszcza Niepoomice,0,1,A
+2021-10-20,Odra Opole,SKRA Czestochowa,1,0,H
+2021-10-21,Stomil Olsztyn,Podbeskidzie,2,4,A
+2021-10-22,Chrobry Gogow,Miedz Legnica,0,0,D
+2021-10-23,Gornik Polkowice,Korona Kielce,2,2,D
+2021-10-23,Arka Gdynia,Resovia Rzeszow,2,0,H
+2021-10-23,GKS Katowice,Puszcza Niepoomice,1,0,H
+2021-10-23,Tychy 71,SKRA Czestochowa,0,0,D
+2021-10-24,Zaglebie Sosnowiec,Podbeskidzie,2,2,D
+2021-10-24,Odra Opole,Jastrzebie,2,2,D
+2021-10-24,Widzew odz,KS odz,2,2,D
+2021-10-25,Stomil Olsztyn,Sandecja Nowy Sacz,1,2,A
+2021-10-29,Stomil Olsztyn,SKRA Czestochowa,0,1,A
+2021-10-29,Korona Kielce,Odra Opole,2,1,H
+2021-10-30,Jastrzebie,GKS Katowice,0,0,D
+2021-10-30,Resovia Rzeszow,Widzew odz,1,0,H
+2021-10-30,KS odz,Gornik Polkowice,1,1,D
+2021-10-31,Miedz Legnica,Arka Gdynia,1,0,H
+2021-10-31,Sandecja Nowy Sacz,Zaglebie Sosnowiec,1,1,D
+2021-10-31,Podbeskidzie,Chrobry Gogow,2,1,H
+2021-10-31,Puszcza Niepoomice,Tychy 71,2,2,D
+2021-11-05,Odra Opole,KS odz,3,0,H
+2021-11-05,Puszcza Niepoomice,SKRA Czestochowa,1,2,A
+2021-11-05,Arka Gdynia,Podbeskidzie,1,0,H
+2021-11-06,GKS Katowice,Korona Kielce,1,0,H
+2021-11-06,Chrobry Gogow,Sandecja Nowy Sacz,1,0,H
+2021-11-06,Tychy 71,Jastrzebie,4,1,H
+2021-11-07,Widzew odz,Miedz Legnica,1,1,D
+2021-11-07,Stomil Olsztyn,Zaglebie Sosnowiec,3,1,H
+2021-11-07,Resovia Rzeszow,Gornik Polkowice,0,0,D
+2021-11-12,Resovia Rzeszow,Odra Opole,3,3,D
+2021-11-12,Puszcza Niepoomice,Stomil Olsztyn,0,2,A
+2021-11-13,KS odz,GKS Katowice,1,0,H
+2021-11-13,Podbeskidzie,Widzew odz,4,0,H
+2021-11-14,Jastrzebie,SKRA Czestochowa,0,1,A
+2021-11-14,Sandecja Nowy Sacz,Arka Gdynia,3,1,H
+2021-11-15,Miedz Legnica,Gornik Polkowice,3,1,H
+2021-11-17,Sandecja Nowy Sacz,SKRA Czestochowa,0,1,A
+2021-11-19,Puszcza Niepoomice,Jastrzebie,0,0,D
+2021-11-19,Miedz Legnica,Odra Opole,2,0,H
+2021-11-20,Zaglebie Sosnowiec,Arka Gdynia,1,0,H
+2021-11-20,Podbeskidzie,Gornik Polkowice,4,0,H
+2021-11-20,SKRA Czestochowa,Korona Kielce,1,4,A
+2021-11-21,KS odz,Tychy 71,2,0,H
+2021-11-21,Chrobry Gogow,Stomil Olsztyn,2,0,H
+2021-11-22,Sandecja Nowy Sacz,Widzew odz,2,2,D
+2021-11-24,Zaglebie Sosnowiec,Chrobry Gogow,3,2,H
+2021-11-24,Korona Kielce,Tychy 71,0,1,A
+2021-11-26,GKS Katowice,Miedz Legnica,2,3,A
+2021-11-26,SKRA Czestochowa,KS odz,0,0,D
+2021-11-26,Odra Opole,Podbeskidzie,1,1,D
+2021-11-27,Chrobry Gogow,Arka Gdynia,1,0,H
+2021-11-27,Puszcza Niepoomice,Korona Kielce,5,2,H
+2021-11-28,Tychy 71,Resovia Rzeszow,0,1,A
+2021-11-28,Sandecja Nowy Sacz,Gornik Polkowice,1,1,D
+2021-11-28,Widzew odz,Zaglebie Sosnowiec,3,2,H
+2021-12-01,Chrobry Gogow,KS odz,1,0,H
+2021-12-01,Resovia Rzeszow,GKS Katowice,2,2,D
+2021-12-03,Zaglebie Sosnowiec,Gornik Polkowice,5,0,H
+2021-12-03,Miedz Legnica,Tychy 71,2,0,H
+2021-12-04,Podbeskidzie,GKS Katowice,1,2,A
+2021-12-04,SKRA Czestochowa,Resovia Rzeszow,0,1,A
+2021-12-05,Arka Gdynia,Stomil Olsztyn,6,0,H
+2021-12-05,Chrobry Gogow,Widzew odz,0,0,D
+2021-12-05,Jastrzebie,Korona Kielce,0,2,A
+2021-12-06,Sandecja Nowy Sacz,Odra Opole,1,2,A
+2022-02-25,Zaglebie Sosnowiec,Odra Opole,1,1,D
+2022-02-25,Widzew odz,Arka Gdynia,2,5,A
+2022-02-26,Korona Kielce,Stomil Olsztyn,1,1,D
+2022-02-26,Puszcza Niepoomice,Resovia Rzeszow,1,0,H
+2022-02-26,Jastrzebie,KS odz,1,1,D
+2022-02-27,Tychy 71,Podbeskidzie,0,0,D
+2022-02-27,Sandecja Nowy Sacz,GKS Katowice,1,1,D
+2022-02-27,Chrobry Gogow,Gornik Polkowice,2,0,H
+2022-02-28,SKRA Czestochowa,Miedz Legnica,0,2,A
+2022-03-04,Stomil Olsztyn,Widzew odz,0,2,A
+2022-03-04,Zaglebie Sosnowiec,GKS Katowice,0,1,A
+2022-03-05,KS odz,Korona Kielce,0,0,D
+2022-03-05,Resovia Rzeszow,Jastrzebie,1,0,H
+2022-03-05,Sandecja Nowy Sacz,Tychy 71,2,3,A
+2022-03-06,Miedz Legnica,Puszcza Niepoomice,3,1,H
+2022-03-06,Arka Gdynia,Gornik Polkowice,2,0,H
+2022-03-06,Chrobry Gogow,Odra Opole,1,0,H
+2022-03-07,SKRA Czestochowa,Podbeskidzie,1,1,D
+2022-03-09,KS odz,Puszcza Niepoomice,2,0,H
+2022-03-11,SKRA Czestochowa,Sandecja Nowy Sacz,0,0,D
+2022-03-11,Tychy 71,Zaglebie Sosnowiec,2,1,H
+2022-03-12,Odra Opole,Arka Gdynia,1,3,A
+2022-03-12,KS odz,Stomil Olsztyn,0,2,A
+2022-03-12,Jastrzebie,Miedz Legnica,0,2,A
+2022-03-13,Korona Kielce,Resovia Rzeszow,2,1,H
+2022-03-13,Puszcza Niepoomice,Podbeskidzie,4,2,H
+2022-03-13,Gornik Polkowice,Widzew odz,0,0,D
+2022-03-14,GKS Katowice,Chrobry Gogow,0,0,D
+2022-03-16,Stomil Olsztyn,Jastrzebie,0,3,A
+2022-03-18,Miedz Legnica,Korona Kielce,1,1,D
+2022-03-18,Widzew odz,Odra Opole,0,1,A
+2022-03-19,Chrobry Gogow,Tychy 71,2,0,H
+2022-03-19,Sandecja Nowy Sacz,Puszcza Niepoomice,1,0,H
+2022-03-19,Arka Gdynia,GKS Katowice,2,2,D
+2022-03-20,Resovia Rzeszow,KS odz,1,2,A
+2022-03-20,Podbeskidzie,Jastrzebie,0,0,D
+2022-03-20,Stomil Olsztyn,Gornik Polkowice,0,4,A
+2022-03-20,SKRA Czestochowa,Zaglebie Sosnowiec,1,2,A
+2022-03-25,KS odz,Miedz Legnica,0,1,A
+2022-04-01,Sandecja Nowy Sacz,Korona Kielce,2,2,D
+2022-04-01,Podbeskidzie,KS odz,1,1,D
+2022-04-02,Miedz Legnica,Resovia Rzeszow,2,1,H
+2022-04-02,Stomil Olsztyn,Odra Opole,1,2,A
+2022-04-02,GKS Katowice,Gornik Polkowice,1,2,A
+2022-04-02,Zaglebie Sosnowiec,Jastrzebie,2,1,H
+2022-04-03,Chrobry Gogow,Puszcza Niepoomice,2,2,D
+2022-04-03,Widzew odz,Tychy 71,2,1,H
+2022-04-03,Arka Gdynia,SKRA Czestochowa,3,2,H
+2022-04-05,Sandecja Nowy Sacz,Jastrzebie,2,0,H
+2022-04-05,Resovia Rzeszow,Stomil Olsztyn,1,1,D
+2022-04-05,Korona Kielce,Podbeskidzie,2,1,H
+2022-04-06,Odra Opole,Gornik Polkowice,1,1,D
+2022-04-06,Puszcza Niepoomice,Zaglebie Sosnowiec,1,1,D
+2022-04-06,GKS Katowice,Widzew odz,0,2,A
+2022-04-07,SKRA Czestochowa,Chrobry Gogow,2,2,D
+2022-04-07,Tychy 71,Arka Gdynia,0,2,A
+2022-04-08,Resovia Rzeszow,Podbeskidzie,1,1,D
+2022-04-08,KS odz,Sandecja Nowy Sacz,3,2,H
+2022-04-09,Korona Kielce,Zaglebie Sosnowiec,2,1,H
+2022-04-09,Miedz Legnica,Stomil Olsztyn,1,2,A
+2022-04-10,Puszcza Niepoomice,Arka Gdynia,2,3,A
+2022-04-10,Jastrzebie,Chrobry Gogow,4,2,H
+2022-04-10,SKRA Czestochowa,Widzew odz,2,2,D
+2022-04-10,GKS Katowice,Odra Opole,1,3,A
+2022-04-11,Tychy 71,Gornik Polkowice,1,1,D
+2022-04-14,Arka Gdynia,Jastrzebie,3,2,H
+2022-04-14,Sandecja Nowy Sacz,Resovia Rzeszow,0,0,D
+2022-04-14,Podbeskidzie,Miedz Legnica,1,1,D
+2022-04-16,Chrobry Gogow,Korona Kielce,1,1,D
+2022-04-16,SKRA Czestochowa,Gornik Polkowice,2,2,D
+2022-04-16,Zaglebie Sosnowiec,KS odz,0,0,D
+2022-04-16,Widzew odz,Puszcza Niepoomice,1,0,H
+2022-04-19,Odra Opole,Tychy 71,1,1,D
+2022-04-19,Stomil Olsztyn,GKS Katowice,0,1,A
+2022-04-22,Resovia Rzeszow,Zaglebie Sosnowiec,0,0,D
+2022-04-22,KS odz,Chrobry Gogow,0,1,A
+2022-04-23,Korona Kielce,Arka Gdynia,1,2,A
+2022-04-23,Jastrzebie,Widzew odz,0,2,A
+2022-04-23,Puszcza Niepoomice,Gornik Polkowice,3,0,H
+2022-04-23,Miedz Legnica,Sandecja Nowy Sacz,0,0,D
+2022-04-24,Tychy 71,GKS Katowice,1,1,D
+2022-04-24,SKRA Czestochowa,Odra Opole,2,2,D
+2022-04-24,Podbeskidzie,Stomil Olsztyn,0,1,A
+2022-04-26,Zaglebie Sosnowiec,Miedz Legnica,1,2,A
+2022-04-26,Chrobry Gogow,Resovia Rzeszow,3,3,D
+2022-04-26,Widzew odz,Korona Kielce,1,2,A
+2022-04-27,GKS Katowice,SKRA Czestochowa,3,0,H
+2022-04-27,Gornik Polkowice,Jastrzebie,1,0,H
+2022-04-27,Arka Gdynia,KS odz,2,0,H
+2022-04-28,Odra Opole,Puszcza Niepoomice,1,2,A
+2022-04-28,Sandecja Nowy Sacz,Podbeskidzie,0,1,A
+2022-04-28,Stomil Olsztyn,Tychy 71,2,1,H
+2022-04-30,Miedz Legnica,Chrobry Gogow,1,0,H
+2022-04-30,Korona Kielce,Gornik Polkowice,2,1,H
+2022-05-01,Podbeskidzie,Zaglebie Sosnowiec,0,2,A
+2022-05-01,Jastrzebie,Odra Opole,1,3,A
+2022-05-01,Resovia Rzeszow,Arka Gdynia,4,1,H
+2022-05-01,Puszcza Niepoomice,GKS Katowice,1,1,D
+2022-05-02,Sandecja Nowy Sacz,Stomil Olsztyn,1,0,H
+2022-05-02,SKRA Czestochowa,Tychy 71,1,0,H
+2022-05-03,KS odz,Widzew odz,0,1,A
+2022-05-06,SKRA Czestochowa,Stomil Olsztyn,0,0,D
+2022-05-06,Odra Opole,Korona Kielce,3,1,H
+2022-05-07,Tychy 71,Puszcza Niepoomice,3,1,H
+2022-05-07,Widzew odz,Resovia Rzeszow,1,4,A
+2022-05-07,GKS Katowice,Jastrzebie,3,1,H
+2022-05-08,Arka Gdynia,Miedz Legnica,0,2,A
+2022-05-08,Gornik Polkowice,KS odz,0,2,A
+2022-05-08,Chrobry Gogow,Podbeskidzie,1,3,A
+2022-05-09,Zaglebie Sosnowiec,Sandecja Nowy Sacz,3,3,D
+2022-05-13,SKRA Czestochowa,Puszcza Niepoomice,1,2,A
+2022-05-13,Podbeskidzie,Arka Gdynia,1,1,D
+2022-05-14,Korona Kielce,GKS Katowice,1,2,A
+2022-05-14,Jastrzebie,Tychy 71,3,2,H
+2022-05-14,Zaglebie Sosnowiec,Stomil Olsztyn,0,0,D
+2022-05-15,Miedz Legnica,Widzew odz,1,0,H
+2022-05-15,Sandecja Nowy Sacz,Chrobry Gogow,0,0,D
+2022-05-15,KS odz,Odra Opole,0,4,A
+2022-05-16,Gornik Polkowice,Resovia Rzeszow,3,0,H
+2022-05-22,Arka Gdynia,Sandecja Nowy Sacz,2,1,H
+2022-05-22,Chrobry Gogow,Zaglebie Sosnowiec,4,0,H
+2022-05-22,GKS Katowice,KS odz,2,0,H
+2022-05-22,Odra Opole,Resovia Rzeszow,0,3,A
+2022-05-22,Stomil Olsztyn,Puszcza Niepoomice,1,0,H
+2022-05-22,Tychy 71,Korona Kielce,1,1,D
+2022-05-22,SKRA Czestochowa,Jastrzebie,1,1,D
+2022-05-22,Widzew odz,Podbeskidzie,2,1,H
+2022-05-22,Gornik Polkowice,Miedz Legnica,0,1,A
+2022-05-26,Korona Kielce,Odra Opole,3,0,H
+2022-05-26,Arka Gdynia,Chrobry Gogow,0,2,A
+2022-05-29,Korona Kielce,Chrobry Gogow,3,2,H

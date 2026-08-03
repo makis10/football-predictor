@@ -1,0 +1,232 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2019-08-02,CSM Resita,Universitatea Cluj,2,0,H
+2019-08-03,ACS Sirineasa,Sportul Snagov,2,1,H
+2019-08-03,Turris-Oltul T. Magurele,Pandurii TG JIU,2,0,H
+2019-08-03,Uta Arad,Dunarea Calarasi,3,0,H
+2019-08-03,FC Politehnica Timisoara,CS Mioveni,0,1,A
+2019-08-03,Rapid,Farul Constanta,0,0,D
+2019-08-04,SCM Gloria Buzau,Csikszereda,1,0,H
+2019-08-04,Metaloglobus,Petrolul Ploiesti,1,2,A
+2019-08-06,Arges Pitesti,Ripensia Timisoara,1,2,A
+2019-08-10,Pandurii TG JIU,FC Politehnica Timisoara,0,3,A
+2019-08-10,CS Mioveni,CSM Resita,1,1,D
+2019-08-10,Farul Constanta,Dunarea Calarasi,1,0,H
+2019-08-10,Ripensia Timisoara,SCM Gloria Buzau,1,2,A
+2019-08-10,Csikszereda,Metaloglobus,3,0,H
+2019-08-10,Rapid,Concordia,3,1,H
+2019-08-11,Sportul Snagov,Arges Pitesti,0,3,A
+2019-08-11,Universitatea Cluj,ACS Sirineasa,3,0,H
+2019-08-12,Petrolul Ploiesti,Uta Arad,0,3,A
+2019-08-17,Uta Arad,Csikszereda,3,0,H
+2019-08-17,ACS Sirineasa,CS Mioveni,0,1,A
+2019-08-17,Metaloglobus,Ripensia Timisoara,3,0,H
+2019-08-17,CSM Resita,Pandurii TG JIU,3,1,H
+2019-08-17,SCM Gloria Buzau,Sportul Snagov,7,0,H
+2019-08-17,Arges Pitesti,Universitatea Cluj,1,0,H
+2019-08-18,Concordia,Farul Constanta,2,1,H
+2019-08-18,Dunarea Calarasi,Petrolul Ploiesti,1,3,A
+2019-08-20,Turris-Oltul T. Magurele,Rapid,3,1,H
+2019-08-24,Concordia,Turris-Oltul T. Magurele,0,3,A
+2019-08-24,Pandurii TG JIU,ACS Sirineasa,0,0,D
+2019-08-24,Ripensia Timisoara,Uta Arad,2,1,H
+2019-08-24,Sportul Snagov,Metaloglobus,0,3,A
+2019-08-24,Csikszereda,Dunarea Calarasi,1,1,D
+2019-08-24,Rapid,FC Politehnica Timisoara,1,0,H
+2019-08-25,Universitatea Cluj,SCM Gloria Buzau,0,2,A
+2019-08-26,Farul Constanta,Petrolul Ploiesti,0,0,D
+2019-08-27,CS Mioveni,Arges Pitesti,2,0,H
+2019-08-31,Dunarea Calarasi,Ripensia Timisoara,1,1,D
+2019-08-31,Uta Arad,Sportul Snagov,4,0,H
+2019-08-31,FC Politehnica Timisoara,Concordia,0,0,D
+2019-08-31,SCM Gloria Buzau,CS Mioveni,0,2,A
+2019-08-31,Metaloglobus,Universitatea Cluj,2,0,H
+2019-09-01,CSM Resita,Rapid,1,2,A
+2019-09-01,Turris-Oltul T. Magurele,Farul Constanta,2,0,H
+2019-09-02,Arges Pitesti,Pandurii TG JIU,2,1,H
+2019-09-06,CS Mioveni,Metaloglobus,2,2,D
+2019-09-07,Concordia,CSM Resita,2,1,H
+2019-09-07,Pandurii TG JIU,SCM Gloria Buzau,0,0,D
+2019-09-07,Sportul Snagov,Dunarea Calarasi,0,2,A
+2019-09-07,Turris-Oltul T. Magurele,FC Politehnica Timisoara,2,0,H
+2019-09-07,Rapid,ACS Sirineasa,1,2,A
+2019-09-07,Ripensia Timisoara,Petrolul Ploiesti,0,1,A
+2019-09-08,Farul Constanta,Csikszereda,2,0,H
+2019-09-14,ACS Sirineasa,Concordia,0,0,D
+2019-09-14,Metaloglobus,Pandurii TG JIU,0,1,A
+2019-09-14,CSM Resita,Turris-Oltul T. Magurele,1,1,D
+2019-09-14,Csikszereda,Ripensia Timisoara,2,2,D
+2019-09-14,Dunarea Calarasi,Universitatea Cluj,0,3,A
+2019-09-14,FC Politehnica Timisoara,Farul Constanta,0,0,D
+2019-09-15,Uta Arad,CS Mioveni,1,1,D
+2019-09-15,Arges Pitesti,Rapid,0,2,A
+2019-09-16,Petrolul Ploiesti,Sportul Snagov,1,1,D
+2019-09-20,Universitatea Cluj,Petrolul Ploiesti,4,0,H
+2019-09-21,Pandurii TG JIU,Uta Arad,2,5,A
+2019-09-21,CS Mioveni,Dunarea Calarasi,1,1,D
+2019-09-21,Sportul Snagov,Csikszereda,0,1,A
+2019-09-21,Turris-Oltul T. Magurele,ACS Sirineasa,2,0,H
+2019-09-21,Concordia,Arges Pitesti,1,1,D
+2019-09-21,FC Politehnica Timisoara,CSM Resita,0,0,D
+2019-09-22,Rapid,SCM Gloria Buzau,3,2,H
+2019-09-23,Farul Constanta,Ripensia Timisoara,1,0,H
+2019-09-27,Csikszereda,Universitatea Cluj,1,1,D
+2019-09-28,Dunarea Calarasi,Pandurii TG JIU,4,0,H
+2019-09-28,ACS Sirineasa,FC Politehnica Timisoara,1,4,A
+2019-09-28,CSM Resita,Farul Constanta,2,1,H
+2019-09-28,SCM Gloria Buzau,Concordia,2,1,H
+2019-09-28,Arges Pitesti,Turris-Oltul T. Magurele,3,2,H
+2019-09-29,Ripensia Timisoara,Sportul Snagov,3,1,H
+2019-09-29,Metaloglobus,Rapid,0,0,D
+2019-10-01,Petrolul Ploiesti,CS Mioveni,0,0,D
+2019-10-05,Concordia,Metaloglobus,1,1,D
+2019-10-05,CS Mioveni,Csikszereda,3,0,H
+2019-10-05,Farul Constanta,Sportul Snagov,1,0,H
+2019-10-05,CSM Resita,ACS Sirineasa,1,7,A
+2019-10-05,Pandurii TG JIU,Petrolul Ploiesti,0,1,A
+2019-10-05,FC Politehnica Timisoara,Arges Pitesti,3,0,H
+2019-10-06,Universitatea Cluj,Ripensia Timisoara,1,1,D
+2019-10-08,Turris-Oltul T. Magurele,SCM Gloria Buzau,2,1,H
+2019-10-12,Ripensia Timisoara,CS Mioveni,0,5,A
+2019-10-12,ACS Sirineasa,Farul Constanta,2,1,H
+2019-10-12,Metaloglobus,Turris-Oltul T. Magurele,1,0,H
+2019-10-13,Sportul Snagov,Universitatea Cluj,1,1,D
+2019-10-13,Csikszereda,Pandurii TG JIU,2,2,D
+2019-10-16,Concordia,Dunarea Calarasi,1,0,H
+2019-10-16,Pandurii TG JIU,Ripensia Timisoara,0,0,D
+2019-10-16,CS Mioveni,Sportul Snagov,2,1,H
+2019-10-16,Farul Constanta,Universitatea Cluj,3,2,H
+2019-10-16,ACS Sirineasa,Arges Pitesti,2,1,H
+2019-10-16,FC Politehnica Timisoara,Metaloglobus,1,1,D
+2019-10-16,CSM Resita,SCM Gloria Buzau,2,1,H
+2019-10-16,Rapid,Petrolul Ploiesti,1,0,H
+2019-10-16,Turris-Oltul T. Magurele,Uta Arad,1,1,D
+2019-10-19,Dunarea Calarasi,Turris-Oltul T. Magurele,3,2,H
+2019-10-19,Metaloglobus,CSM Resita,1,0,H
+2019-10-19,Sportul Snagov,Pandurii TG JIU,3,2,H
+2019-10-19,SCM Gloria Buzau,ACS Sirineasa,0,0,D
+2019-10-19,Petrolul Ploiesti,Concordia,3,0,H
+2019-10-19,Csikszereda,Rapid,1,0,H
+2019-10-20,Uta Arad,FC Politehnica Timisoara,1,0,H
+2019-10-20,Universitatea Cluj,CS Mioveni,2,2,D
+2019-10-21,Arges Pitesti,Farul Constanta,2,2,D
+2019-10-25,Pandurii TG JIU,Universitatea Cluj,0,1,A
+2019-10-26,Concordia,Csikszereda,1,0,H
+2019-10-26,Farul Constanta,CS Mioveni,2,0,H
+2019-10-26,ACS Sirineasa,Metaloglobus,1,0,H
+2019-10-26,Rapid,Ripensia Timisoara,0,0,D
+2019-10-26,FC Politehnica Timisoara,Dunarea Calarasi,1,1,D
+2019-10-27,CSM Resita,Uta Arad,2,3,A
+2019-10-28,Arges Pitesti,SCM Gloria Buzau,3,1,H
+2019-11-01,Csikszereda,Turris-Oltul T. Magurele,1,0,H
+2019-11-02,Dunarea Calarasi,CSM Resita,2,1,H
+2019-11-02,CS Mioveni,Pandurii TG JIU,4,0,H
+2019-11-02,Ripensia Timisoara,Concordia,2,1,H
+2019-11-02,Metaloglobus,Arges Pitesti,0,0,D
+2019-11-02,SCM Gloria Buzau,Farul Constanta,2,0,H
+2019-11-02,Petrolul Ploiesti,FC Politehnica Timisoara,1,0,H
+2019-11-03,Sportul Snagov,Rapid,3,2,H
+2019-11-03,Uta Arad,ACS Sirineasa,2,0,H
+2019-11-05,SCM Gloria Buzau,FC Politehnica Timisoara,0,1,A
+2019-11-05,Petrolul Ploiesti,Csikszereda,1,0,H
+2019-11-06,Arges Pitesti,CSM Resita,3,2,H
+2019-11-06,Universitatea Cluj,Uta Arad,1,1,D
+2019-11-08,Turris-Oltul T. Magurele,Ripensia Timisoara,3,3,D
+2019-11-09,Concordia,Sportul Snagov,2,0,H
+2019-11-09,Farul Constanta,Pandurii TG JIU,5,0,H
+2019-11-09,ACS Sirineasa,Dunarea Calarasi,1,3,A
+2019-11-09,CSM Resita,Petrolul Ploiesti,1,1,D
+2019-11-09,SCM Gloria Buzau,Metaloglobus,1,2,A
+2019-11-09,FC Politehnica Timisoara,Csikszereda,1,0,H
+2019-11-09,Arges Pitesti,Uta Arad,0,0,D
+2019-11-10,Rapid,Universitatea Cluj,1,1,D
+2019-11-12,Petrolul Ploiesti,ACS Sirineasa,3,1,H
+2019-11-13,Dunarea Calarasi,Arges Pitesti,1,2,A
+2019-11-13,Uta Arad,SCM Gloria Buzau,3,0,H
+2019-11-13,Ripensia Timisoara,FC Politehnica Timisoara,1,1,D
+2019-11-13,Metaloglobus,Farul Constanta,1,0,H
+2019-11-13,Sportul Snagov,Turris-Oltul T. Magurele,2,3,A
+2019-11-13,Csikszereda,CSM Resita,1,0,H
+2019-11-13,Universitatea Cluj,Concordia,2,1,H
+2019-11-13,CS Mioveni,Rapid,1,5,A
+2019-11-16,ACS Sirineasa,Csikszereda,1,1,D
+2019-11-16,CSM Resita,Ripensia Timisoara,1,2,A
+2019-11-16,SCM Gloria Buzau,Dunarea Calarasi,3,1,H
+2019-11-16,Rapid,Pandurii TG JIU,4,0,H
+2019-11-16,FC Politehnica Timisoara,Sportul Snagov,2,0,H
+2019-11-17,Concordia,CS Mioveni,1,1,D
+2019-11-17,Arges Pitesti,Petrolul Ploiesti,1,1,D
+2019-11-17,Metaloglobus,Uta Arad,1,1,D
+2019-11-17,Turris-Oltul T. Magurele,Universitatea Cluj,1,1,D
+2019-11-20,Rapid,Uta Arad,2,0,H
+2019-11-20,Turris-Oltul T. Magurele,Petrolul Ploiesti,1,1,D
+2019-11-23,Dunarea Calarasi,Metaloglobus,3,1,H
+2019-11-23,Pandurii TG JIU,Concordia,0,0,D
+2019-11-23,Ripensia Timisoara,ACS Sirineasa,0,0,D
+2019-11-23,Sportul Snagov,CSM Resita,3,3,D
+2019-11-23,Csikszereda,Arges Pitesti,0,0,D
+2019-11-23,Universitatea Cluj,FC Politehnica Timisoara,0,0,D
+2019-11-24,Uta Arad,Farul Constanta,1,0,H
+2019-11-25,Petrolul Ploiesti,SCM Gloria Buzau,0,1,A
+2019-11-26,Uta Arad,Concordia,1,0,H
+2019-11-26,CS Mioveni,Turris-Oltul T. Magurele,5,2,H
+2019-11-27,Dunarea Calarasi,Rapid,0,0,D
+2019-11-30,CS Mioveni,FC Politehnica Timisoara,0,1,A
+2019-11-30,Ripensia Timisoara,Arges Pitesti,1,2,A
+2019-11-30,Sportul Snagov,ACS Sirineasa,0,3,A
+2019-11-30,Csikszereda,SCM Gloria Buzau,1,1,D
+2019-11-30,Farul Constanta,Rapid,3,1,H
+2019-11-30,Universitatea Cluj,CSM Resita,1,1,D
+2019-11-30,Pandurii TG JIU,Turris-Oltul T. Magurele,0,1,A
+2019-12-01,Dunarea Calarasi,Uta Arad,1,0,H
+2019-12-02,Petrolul Ploiesti,Metaloglobus,0,0,D
+2019-12-06,Arges Pitesti,Sportul Snagov,3,0,H
+2019-12-07,Metaloglobus,Csikszereda,3,0,H
+2019-12-07,CSM Resita,CS Mioveni,0,1,A
+2019-12-07,SCM Gloria Buzau,Ripensia Timisoara,3,3,D
+2019-12-07,Dunarea Calarasi,Farul Constanta,1,1,D
+2019-12-07,FC Politehnica Timisoara,Pandurii TG JIU,1,0,H
+2019-12-07,Concordia,Rapid,1,3,A
+2019-12-08,Uta Arad,Petrolul Ploiesti,3,0,H
+2019-12-08,ACS Sirineasa,Universitatea Cluj,1,1,D
+2020-02-21,Universitatea Cluj,Arges Pitesti,1,1,D
+2020-02-22,CS Mioveni,ACS Sirineasa,0,2,A
+2020-02-22,Farul Constanta,Concordia,3,1,H
+2020-02-22,Ripensia Timisoara,Metaloglobus,3,0,H
+2020-02-22,Sportul Snagov,SCM Gloria Buzau,0,3,A
+2020-02-22,Petrolul Ploiesti,Dunarea Calarasi,2,0,H
+2020-02-22,Pandurii TG JIU,CSM Resita,1,4,A
+2020-02-24,Csikszereda,Uta Arad,0,6,A
+2020-02-25,Rapid,Turris-Oltul T. Magurele,0,0,D
+2020-02-29,Dunarea Calarasi,Csikszereda,2,1,H
+2020-02-29,Uta Arad,Ripensia Timisoara,3,0,H
+2020-02-29,ACS Sirineasa,Pandurii TG JIU,4,0,H
+2020-02-29,Metaloglobus,Sportul Snagov,3,0,H
+2020-02-29,Turris-Oltul T. Magurele,Concordia,2,1,H
+2020-02-29,Petrolul Ploiesti,Farul Constanta,0,0,D
+2020-03-01,FC Politehnica Timisoara,Rapid,0,0,D
+2020-03-01,Arges Pitesti,CS Mioveni,1,1,D
+2020-03-01,SCM Gloria Buzau,Universitatea Cluj,2,2,D
+2020-03-06,CS Mioveni,SCM Gloria Buzau,0,0,D
+2020-03-07,Concordia,FC Politehnica Timisoara,2,1,H
+2020-03-07,Ripensia Timisoara,Dunarea Calarasi,1,1,D
+2020-03-07,Sportul Snagov,Uta Arad,0,3,A
+2020-03-07,Farul Constanta,Turris-Oltul T. Magurele,0,1,A
+2020-03-07,Universitatea Cluj,Metaloglobus,1,2,A
+2020-03-07,Pandurii TG JIU,Arges Pitesti,0,4,A
+2020-03-08,Rapid,CSM Resita,0,1,A
+2020-03-08,Csikszereda,Petrolul Ploiesti,1,2,A
+2020-07-03,Turris-Oltul T. Magurele,Arges Pitesti,0,0,D
+2020-07-07,CS Mioveni,Rapid,0,0,D
+2020-07-09,Uta Arad,Turris-Oltul T. Magurele,3,4,A
+2020-07-11,Petrolul Ploiesti,Rapid,0,0,D
+2020-07-15,Uta Arad,Petrolul Ploiesti,1,1,D
+2020-07-20,CS Mioveni,Uta Arad,0,2,A
+2020-07-21,Rapid,Arges Pitesti,1,2,A
+2020-07-21,Turris-Oltul T. Magurele,Petrolul Ploiesti,0,0,D
+2020-07-24,Arges Pitesti,CS Mioveni,2,3,A
+2020-07-26,Uta Arad,Rapid,1,2,A
+2020-07-28,Turris-Oltul T. Magurele,CS Mioveni,0,1,A
+2020-07-28,Petrolul Ploiesti,Arges Pitesti,1,2,A
+2020-08-02,Arges Pitesti,Uta Arad,1,1,D
+2020-08-02,CS Mioveni,Petrolul Ploiesti,1,2,A
+2020-08-02,Rapid,Turris-Oltul T. Magurele,1,1,D

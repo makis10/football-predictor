@@ -1,0 +1,245 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2020-06-16,GIF Sundsvall,Umea FC,3,1,H
+2020-06-16,AFC Eskilstuna,Vasteras SK FK,0,1,A
+2020-06-16,Halmstad,Trelleborg,0,1,A
+2020-06-16,Gais,Jonkopings Sodra,1,0,H
+2020-06-16,Akropolis,Dalkurd FF,0,0,D
+2020-06-17,Ljungskile SK,Orgryte IS,2,3,A
+2020-06-17,Degerfors IF,IK brage,4,1,H
+2020-06-17,Osters IF,Norrby IF,2,1,H
+2020-06-21,Norrby IF,Gais,3,0,H
+2020-06-21,Umea FC,Akropolis,1,1,D
+2020-06-21,Vasteras SK FK,Degerfors IF,2,2,D
+2020-06-22,IK brage,GIF Sundsvall,1,2,A
+2020-06-23,Dalkurd FF,AFC Eskilstuna,5,0,H
+2020-06-23,Trelleborg,Osters IF,0,1,A
+2020-06-23,Jonkopings Sodra,Ljungskile SK,2,1,H
+2020-06-23,Orgryte IS,Halmstad,0,3,A
+2020-06-27,AFC Eskilstuna,Umea FC,1,3,A
+2020-06-27,Akropolis,Orgryte IS,2,0,H
+2020-06-27,GIF Sundsvall,Dalkurd FF,1,1,D
+2020-06-27,Halmstad,Jonkopings Sodra,3,0,H
+2020-06-27,Osters IF,Vasteras SK FK,0,0,D
+2020-06-28,Gais,IK brage,0,1,A
+2020-06-28,Degerfors IF,Norrby IF,0,1,A
+2020-06-28,Ljungskile SK,Trelleborg,2,0,H
+2020-07-03,Trelleborg,GIF Sundsvall,1,1,D
+2020-07-03,Jonkopings Sodra,Akropolis,3,1,H
+2020-07-04,Dalkurd FF,Degerfors IF,1,2,A
+2020-07-04,Umea FC,Osters IF,0,0,D
+2020-07-04,Orgryte IS,AFC Eskilstuna,2,1,H
+2020-07-04,Norrby IF,Ljungskile SK,2,2,D
+2020-07-04,IK brage,Halmstad,0,0,D
+2020-07-05,Vasteras SK FK,Gais,2,2,D
+2020-07-07,AFC Eskilstuna,Jonkopings Sodra,3,2,H
+2020-07-07,Degerfors IF,Umea FC,1,0,H
+2020-07-07,Akropolis,Trelleborg,2,2,D
+2020-07-08,GIF Sundsvall,Vasteras SK FK,3,1,H
+2020-07-08,Halmstad,Norrby IF,3,0,H
+2020-07-08,Ljungskile SK,IK brage,1,3,A
+2020-07-08,Gais,Dalkurd FF,2,1,H
+2020-07-08,Osters IF,Orgryte IS,2,0,H
+2020-07-11,Jonkopings Sodra,Degerfors IF,0,1,A
+2020-07-11,Orgryte IS,GIF Sundsvall,0,2,A
+2020-07-12,Umea FC,Halmstad,0,1,A
+2020-07-12,AFC Eskilstuna,IK brage,1,2,A
+2020-07-12,Vasteras SK FK,Ljungskile SK,2,1,H
+2020-07-13,Dalkurd FF,Osters IF,1,1,D
+2020-07-13,Trelleborg,Gais,2,0,H
+2020-07-13,Norrby IF,Akropolis,1,1,D
+2020-07-18,Ljungskile SK,Dalkurd FF,2,2,D
+2020-07-18,GIF Sundsvall,Norrby IF,0,0,D
+2020-07-18,Gais,Umea FC,1,1,D
+2020-07-18,Degerfors IF,Trelleborg,1,0,H
+2020-07-18,Osters IF,Jonkopings Sodra,1,3,A
+2020-07-19,IK brage,Orgryte IS,3,2,H
+2020-07-19,Halmstad,AFC Eskilstuna,2,1,H
+2020-07-20,Akropolis,Vasteras SK FK,2,0,H
+2020-07-24,AFC Eskilstuna,Gais,2,0,H
+2020-07-24,Orgryte IS,Degerfors IF,1,1,D
+2020-07-25,Umea FC,Ljungskile SK,3,1,H
+2020-07-25,Osters IF,GIF Sundsvall,1,1,D
+2020-07-25,Vasteras SK FK,Norrby IF,1,2,A
+2020-07-25,Trelleborg,Dalkurd FF,4,1,H
+2020-07-25,Jonkopings Sodra,IK brage,2,0,H
+2020-07-25,Halmstad,Akropolis,2,3,A
+2020-07-29,Dalkurd FF,Orgryte IS,0,0,D
+2020-07-29,Jonkopings Sodra,GIF Sundsvall,3,3,D
+2020-07-29,Gais,Ljungskile SK,1,1,D
+2020-07-29,Degerfors IF,Osters IF,3,1,H
+2020-07-29,Norrby IF,AFC Eskilstuna,0,0,D
+2020-07-29,Vasteras SK FK,Halmstad,2,3,A
+2020-07-30,Trelleborg,Umea FC,1,1,D
+2020-07-30,IK brage,Akropolis,1,1,D
+2020-08-01,GIF Sundsvall,Degerfors IF,1,4,A
+2020-08-01,AFC Eskilstuna,Osters IF,1,1,D
+2020-08-01,Ljungskile SK,Halmstad,0,0,D
+2020-08-02,Norrby IF,Jonkopings Sodra,1,2,A
+2020-08-02,Akropolis,Gais,2,2,D
+2020-08-03,Umea FC,Dalkurd FF,1,2,A
+2020-08-03,Orgryte IS,Vasteras SK FK,2,1,H
+2020-08-03,IK brage,Trelleborg,3,0,H
+2020-08-07,GIF Sundsvall,Ljungskile SK,5,2,H
+2020-08-07,Osters IF,Akropolis,0,1,A
+2020-08-07,Vasteras SK FK,IK brage,2,1,H
+2020-08-08,Degerfors IF,AFC Eskilstuna,5,0,H
+2020-08-08,Dalkurd FF,Norrby IF,2,2,D
+2020-08-08,Jonkopings Sodra,Umea FC,1,0,H
+2020-08-08,Halmstad,Gais,0,0,D
+2020-08-09,Orgryte IS,Trelleborg,2,1,H
+2020-08-11,Halmstad,Osters IF,2,0,H
+2020-08-11,Akropolis,GIF Sundsvall,1,1,D
+2020-08-12,Trelleborg,Vasteras SK FK,1,0,H
+2020-08-12,Jonkopings Sodra,Dalkurd FF,2,1,H
+2020-08-12,Ljungskile SK,AFC Eskilstuna,2,1,H
+2020-08-12,Gais,Degerfors IF,0,0,D
+2020-08-12,IK brage,Norrby IF,1,1,D
+2020-08-13,Umea FC,Orgryte IS,2,2,D
+2020-08-15,Dalkurd FF,Halmstad,1,1,D
+2020-08-15,GIF Sundsvall,Gais,3,0,H
+2020-08-15,Osters IF,IK brage,4,2,H
+2020-08-16,Degerfors IF,Ljungskile SK,4,1,H
+2020-08-16,Vasteras SK FK,Umea FC,2,0,H
+2020-08-16,Norrby IF,Trelleborg,1,3,A
+2020-08-17,AFC Eskilstuna,Akropolis,1,2,A
+2020-08-18,Orgryte IS,Jonkopings Sodra,2,0,H
+2020-08-22,Umea FC,Norrby IF,1,1,D
+2020-08-22,Halmstad,GIF Sundsvall,1,0,H
+2020-08-22,Gais,Orgryte IS,0,0,D
+2020-08-23,Jonkopings Sodra,Vasteras SK FK,1,1,D
+2020-08-23,Trelleborg,AFC Eskilstuna,1,1,D
+2020-08-23,Ljungskile SK,Osters IF,0,2,A
+2020-08-24,IK brage,Dalkurd FF,2,1,H
+2020-08-24,Akropolis,Degerfors IF,1,1,D
+2020-08-29,Dalkurd FF,Vasteras SK FK,3,2,H
+2020-08-29,Degerfors IF,Halmstad,0,2,A
+2020-08-29,Trelleborg,Jonkopings Sodra,0,2,A
+2020-08-29,AFC Eskilstuna,GIF Sundsvall,3,2,H
+2020-08-29,Osters IF,Gais,4,1,H
+2020-08-30,IK brage,Umea FC,0,1,A
+2020-08-30,Akropolis,Ljungskile SK,1,0,H
+2020-08-31,Norrby IF,Orgryte IS,2,0,H
+2020-09-04,Gais,Trelleborg,2,1,H
+2020-09-05,Ljungskile SK,Akropolis,2,1,H
+2020-09-05,GIF Sundsvall,Osters IF,1,2,A
+2020-09-05,Jonkopings Sodra,AFC Eskilstuna,3,0,H
+2020-09-05,Orgryte IS,Norrby IF,2,0,H
+2020-09-06,Umea FC,IK brage,1,1,D
+2020-09-06,Vasteras SK FK,Dalkurd FF,1,0,H
+2020-09-07,Halmstad,Degerfors IF,1,4,A
+2020-09-11,Dalkurd FF,Umea FC,0,0,D
+2020-09-11,Trelleborg,IK brage,0,1,A
+2020-09-11,Orgryte IS,Ljungskile SK,4,0,H
+2020-09-11,Akropolis,Osters IF,2,2,D
+2020-09-12,Gais,GIF Sundsvall,3,1,H
+2020-09-12,AFC Eskilstuna,Halmstad,0,3,A
+2020-09-12,Degerfors IF,Jonkopings Sodra,4,2,H
+2020-09-13,Norrby IF,Vasteras SK FK,3,1,H
+2020-09-15,Osters IF,Trelleborg,1,0,H
+2020-09-16,GIF Sundsvall,Akropolis,1,2,A
+2020-09-16,Jonkopings Sodra,Orgryte IS,2,0,H
+2020-09-16,Halmstad,Umea FC,4,0,H
+2020-09-16,Degerfors IF,Dalkurd FF,2,1,H
+2020-09-16,IK brage,Gais,2,1,H
+2020-09-17,Ljungskile SK,Norrby IF,1,1,D
+2020-09-17,Vasteras SK FK,AFC Eskilstuna,0,1,A
+2020-09-19,Trelleborg,Orgryte IS,1,1,D
+2020-09-19,Jonkopings Sodra,Osters IF,4,1,H
+2020-09-20,Dalkurd FF,IK brage,1,1,D
+2020-09-20,Akropolis,Halmstad,1,1,D
+2020-09-21,AFC Eskilstuna,Ljungskile SK,0,0,D
+2020-09-21,Gais,Vasteras SK FK,1,0,H
+2020-09-21,Umea FC,Degerfors IF,0,6,A
+2020-09-22,Norrby IF,GIF Sundsvall,0,1,A
+2020-09-26,Norrby IF,Degerfors IF,0,2,A
+2020-09-26,Dalkurd FF,Akropolis,1,1,D
+2020-09-26,Halmstad,Ljungskile SK,2,0,H
+2020-09-26,IK brage,Osters IF,1,2,A
+2020-09-26,Vasteras SK FK,Jonkopings Sodra,2,2,D
+2020-09-27,GIF Sundsvall,Trelleborg,2,1,H
+2020-09-27,Umea FC,AFC Eskilstuna,0,3,A
+2020-09-28,Orgryte IS,Gais,0,2,A
+2020-10-03,GIF Sundsvall,AFC Eskilstuna,2,3,A
+2020-10-03,Jonkopings Sodra,Halmstad,1,0,H
+2020-10-03,Orgryte IS,IK brage,1,3,A
+2020-10-04,Osters IF,Dalkurd FF,2,1,H
+2020-10-04,Ljungskile SK,Gais,1,2,A
+2020-10-04,Akropolis,Umea FC,3,3,D
+2020-10-05,Trelleborg,Norrby IF,2,2,D
+2020-10-05,Degerfors IF,Vasteras SK FK,4,1,H
+2020-10-10,Trelleborg,Akropolis,1,1,D
+2020-10-10,Umea FC,Jonkopings Sodra,1,2,A
+2020-10-10,Dalkurd FF,Ljungskile SK,2,0,H
+2020-10-10,Gais,Halmstad,1,3,A
+2020-10-10,IK brage,Degerfors IF,0,0,D
+2020-10-11,Vasteras SK FK,GIF Sundsvall,3,2,H
+2020-10-11,Norrby IF,Osters IF,0,2,A
+2020-10-12,Vasby UnitedAFC Eskilstuna,Orgryte IS,1,0,H
+2020-10-16,Gais,Norrby IF,3,3,D
+2020-10-16,Akropolis,AFC Eskilstuna,3,2,H
+2020-10-16,Umea FC,Trelleborg,0,1,A
+2020-10-17,Halmstad,IK brage,2,0,H
+2020-10-17,Osters IF,Degerfors IF,2,0,H
+2020-10-17,GIF Sundsvall,Jonkopings Sodra,3,2,H
+2020-10-17,Ljungskile SK,Vasteras SK FK,0,2,A
+2020-10-17,Orgryte IS,Dalkurd FF,1,2,A
+2020-10-21,Dalkurd FF,GIF Sundsvall,1,3,A
+2020-10-21,AFC Eskilstuna,Trelleborg,3,2,H
+2020-10-21,Degerfors IF,Orgryte IS,2,0,H
+2020-10-21,Norrby IF,Halmstad,0,2,A
+2020-10-21,Osters IF,Umea FC,2,0,H
+2020-10-21,Vasteras SK FK,Akropolis,2,1,H
+2020-10-22,Jonkopings Sodra,Gais,1,0,H
+2020-10-22,IK brage,Ljungskile SK,0,1,A
+2020-10-24,Halmstad,Vasteras SK FK,2,1,H
+2020-10-24,Orgryte IS,Osters IF,4,1,H
+2020-10-25,AFC Eskilstuna,Dalkurd FF,0,1,A
+2020-10-25,Akropolis,Norrby IF,1,3,A
+2020-10-25,Trelleborg,Degerfors IF,1,1,D
+2020-10-26,Ljungskile SK,GIF Sundsvall,0,0,D
+2020-10-26,IK brage,Jonkopings Sodra,1,4,A
+2020-10-26,Umea FC,Gais,3,0,H
+2020-10-31,Degerfors IF,Akropolis,3,2,H
+2020-10-31,Dalkurd FF,Jonkopings Sodra,1,1,D
+2020-10-31,GIF Sundsvall,Orgryte IS,4,1,H
+2020-10-31,Osters IF,Halmstad,0,3,A
+2020-11-01,Ljungskile SK,Umea FC,0,0,D
+2020-11-01,Vasteras SK FK,Trelleborg,3,1,H
+2020-11-02,Gais,AFC Eskilstuna,2,0,H
+2020-11-02,Norrby IF,IK brage,1,4,A
+2020-11-07,IK brage,Vasteras SK FK,0,3,A
+2020-11-07,Halmstad,Dalkurd FF,4,0,H
+2020-11-07,Jonkopings Sodra,Norrby IF,1,0,H
+2020-11-07,Orgryte IS,Akropolis,0,1,A
+2020-11-07,Degerfors IF,Gais,2,1,H
+2020-11-08,Osters IF,AFC Eskilstuna,2,1,H
+2020-11-08,Trelleborg,Ljungskile SK,1,0,H
+2020-11-09,Umea FC,GIF Sundsvall,1,0,H
+2020-11-21,Dalkurd FF,Trelleborg,0,1,A
+2020-11-21,GIF Sundsvall,Halmstad,0,6,A
+2020-11-21,AFC Eskilstuna,Degerfors IF,2,0,H
+2020-11-21,Gais,Osters IF,0,1,A
+2020-11-21,Norrby IF,Umea FC,6,0,H
+2020-11-21,Ljungskile SK,Jonkopings Sodra,0,1,A
+2020-11-22,Vasteras SK FK,Orgryte IS,0,3,A
+2020-11-22,Akropolis,IK brage,2,1,H
+2020-11-28,Jonkopings Sodra,Trelleborg,2,1,H
+2020-11-28,Halmstad,Orgryte IS,1,0,H
+2020-11-28,Gais,Akropolis,1,1,D
+2020-11-28,Degerfors IF,GIF Sundsvall,2,5,A
+2020-11-28,Osters IF,Ljungskile SK,0,1,A
+2020-11-28,Umea FC,Vasteras SK FK,0,0,D
+2020-11-29,Norrby IF,Dalkurd FF,2,0,H
+2020-11-29,IK brage,AFC Eskilstuna,1,3,A
+2020-12-05,Dalkurd FF,Gais,0,1,A
+2020-12-05,Trelleborg,Halmstad,2,4,A
+2020-12-05,GIF Sundsvall,IK brage,0,1,A
+2020-12-05,AFC Eskilstuna,Norrby IF,1,0,H
+2020-12-05,Ljungskile SK,Degerfors IF,0,3,A
+2020-12-05,Orgryte IS,Umea FC,1,1,D
+2020-12-05,Vasteras SK FK,Osters IF,2,1,H
+2020-12-05,Akropolis,Jonkopings Sodra,1,1,D
+2020-12-09,IF Brommapojkarna,Trelleborg,1,1,D
+2020-12-09,Landskrona BoIS,Dalkurd FF,2,0,H
+2020-12-13,Dalkurd FF,Landskrona BoIS,1,1,D
+2020-12-13,Trelleborg,IF Brommapojkarna,1,1,D

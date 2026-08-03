@@ -14,11 +14,12 @@ from backend.app.ml.club_player_props import club_player_props
 from backend.app.ml.national.player_props import PlayerRate, compute_props
 
 
-def _rate(pid, name, team, apps=5, exp_min=90.0, g90=0.5):
+def _rate(pid, name, team, apps=5, exp_min=90.0, g90=0.5, position=None):
     return PlayerRate(
         player_id=pid, player=name, team=team,
         g90=g90, sot90=1.0, ast90=0.2,
         exp_minutes=exp_min, wmin=exp_min * apps, apps=apps,
+        position=position,
     )
 
 
@@ -99,3 +100,67 @@ def test_compute_props_requires_min_apps():
     three = compute_props([_rate(1, "P", "T", apps=3)], team_xg=1.5)
     assert two == []          # apps < min_apps → excluded
     assert len(three) == 1    # apps == min_apps → included
+
+
+def test_goalkeepers_excluded_from_scorer_props():
+    """A keeper must never surface in an anytime-scorer list — these are
+    goal/SoT markets and keepers score about once per 160,000 minutes."""
+    outfield = _rate(1, "Striker", "T", position="F")
+    keeper   = _rate(2, "Keeper",  "T", position="G")
+    out = compute_props([outfield, keeper], team_xg=1.5)
+    assert [p["player"] for p in out] == ["Striker"]
+
+
+def test_keeper_share_does_not_dilute_outfield_xg():
+    """Keepers used to absorb part of team_xg in the normalisation, deflating
+    the real scorers' numbers — dropping them must hand that share back."""
+    striker = _rate(1, "Striker", "T", position="F")
+    keeper  = _rate(2, "Keeper",  "T", position="G")
+    alone = compute_props([striker], team_xg=1.5)[0]
+    with_gk = compute_props([striker, keeper], team_xg=1.5)[0]
+    assert with_gk["exp_goals"] == alone["exp_goals"]
+
+
+def test_unknown_position_still_included():
+    """Position is nullable in player_match_stats — an unknown position must
+    not silently drop a player from the props."""
+    out = compute_props([_rate(1, "P", "T", position=None)], team_xg=1.5)
+    assert len(out) == 1
+
+
+def test_roster_filter_drops_transferred_player(monkeypatch, tmp_path):
+    """A player in the match log but no longer in the club's squad must be
+    dropped — the log alone can never correct a transfer."""
+    import backend.app.ml.club_player_props as cpp
+
+    squads = tmp_path / "club_squads.json"
+    squads.write_text('{"Home FC": {"team_id": 1, "player_ids": [1]}}')
+    monkeypatch.setattr(cpp, "_SQUADS_PATH", squads)
+    monkeypatch.setattr(cpp, "_squads_cache", None)
+
+    _patch(monkeypatch,
+           {"Home API": [_rate(1, "Stayed", "Home API"),
+                         _rate(2, "Transferred", "Home API")]},
+           {"Home FC": "Home API"})
+    match = SimpleNamespace(home_team="Home FC", away_team="Away FC",
+                            home_goals=None, away_goals=None, match_date="2026-08-04")
+    out = club_player_props(_FakeDB(), match, SimpleNamespace(
+        poisson_lambda_home=1.5, poisson_lambda_away=1.5))
+    assert [p["player_name"] for p in out["teams"]["Home FC"]] == ["Stayed"]
+
+
+def test_missing_squad_file_leaves_props_unfiltered(monkeypatch, tmp_path):
+    """No roster data must mean "no filter", never "filter everyone out"."""
+    import backend.app.ml.club_player_props as cpp
+
+    monkeypatch.setattr(cpp, "_SQUADS_PATH", tmp_path / "does_not_exist.json")
+    monkeypatch.setattr(cpp, "_squads_cache", None)
+
+    _patch(monkeypatch,
+           {"Home API": [_rate(1, "A", "Home API"), _rate(2, "B", "Home API")]},
+           {"Home FC": "Home API"})
+    match = SimpleNamespace(home_team="Home FC", away_team="Away FC",
+                            home_goals=None, away_goals=None, match_date="2026-08-04")
+    out = club_player_props(_FakeDB(), match, SimpleNamespace(
+        poisson_lambda_home=1.5, poisson_lambda_away=1.5))
+    assert len(out["teams"]["Home FC"]) == 2

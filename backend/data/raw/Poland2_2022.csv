@@ -1,0 +1,310 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2022-07-15,Nieciecza,Odra Opole,2,1,H
+2022-07-15,Ruch Chorzow,SKRA Czestochowa,0,0,D
+2022-07-16,Chojniczanka Chojnice,Tychy 71,2,2,D
+2022-07-16,Wisla Krakow,Sandecja Nowy Sacz,0,0,D
+2022-07-16,KS odz,GKS Katowice,0,2,A
+2022-07-17,Podbeskidzie,Arka Gdynia,0,1,A
+2022-07-17,Puszcza Niepoomice,Gornik eczna,1,0,H
+2022-07-17,Stal Rzeszow,Chrobry Gogow,3,3,D
+2022-07-18,Zaglebie Sosnowiec,Resovia Rzeszow,2,1,H
+2022-07-22,SKRA Czestochowa,Chojniczanka Chojnice,2,0,H
+2022-07-22,Resovia Rzeszow,Wisla Krakow,0,2,A
+2022-07-23,Puszcza Niepoomice,Stal Rzeszow,2,1,H
+2022-07-23,Arka Gdynia,Zaglebie Sosnowiec,0,0,D
+2022-07-23,Chrobry Gogow,Ruch Chorzow,0,2,A
+2022-07-24,Tychy 71,KS odz,0,1,A
+2022-07-24,Gornik eczna,Sandecja Nowy Sacz,1,1,D
+2022-07-24,GKS Katowice,Nieciecza,3,3,D
+2022-07-25,Odra Opole,Podbeskidzie,1,2,A
+2022-07-29,Resovia Rzeszow,Sandecja Nowy Sacz,0,0,D
+2022-07-29,Odra Opole,Zaglebie Sosnowiec,1,4,A
+2022-07-30,KS odz,SKRA Czestochowa,2,1,H
+2022-07-30,Wisla Krakow,Arka Gdynia,1,0,H
+2022-07-30,Ruch Chorzow,Puszcza Niepoomice,2,0,H
+2022-07-31,Podbeskidzie,GKS Katowice,1,0,H
+2022-07-31,Stal Rzeszow,Gornik eczna,1,0,H
+2022-07-31,Chojniczanka Chojnice,Chrobry Gogow,0,2,A
+2022-08-01,Nieciecza,Tychy 71,0,2,A
+2022-08-05,Arka Gdynia,Sandecja Nowy Sacz,1,1,D
+2022-08-05,Odra Opole,Wisla Krakow,0,1,A
+2022-08-06,Gornik eczna,Resovia Rzeszow,1,1,D
+2022-08-06,GKS Katowice,Zaglebie Sosnowiec,3,1,H
+2022-08-06,Chrobry Gogow,KS odz,2,3,A
+2022-08-07,Tychy 71,Podbeskidzie,1,4,A
+2022-08-07,SKRA Czestochowa,Nieciecza,0,2,A
+2022-08-07,Puszcza Niepoomice,Chojniczanka Chojnice,3,2,H
+2022-08-08,Stal Rzeszow,Ruch Chorzow,2,3,A
+2022-08-09,Odra Opole,Sandecja Nowy Sacz,4,2,H
+2022-08-09,Wisla Krakow,GKS Katowice,2,1,H
+2022-08-10,Zaglebie Sosnowiec,Tychy 71,1,0,H
+2022-08-10,Podbeskidzie,SKRA Czestochowa,0,1,A
+2022-08-10,Resovia Rzeszow,Arka Gdynia,1,3,A
+2022-08-10,KS odz,Puszcza Niepoomice,2,0,H
+2022-08-11,Chojniczanka Chojnice,Stal Rzeszow,1,1,D
+2022-08-11,Nieciecza,Chrobry Gogow,3,1,H
+2022-08-11,Ruch Chorzow,Gornik eczna,1,1,D
+2022-08-12,GKS Katowice,Sandecja Nowy Sacz,0,0,D
+2022-08-13,SKRA Czestochowa,Zaglebie Sosnowiec,1,0,H
+2022-08-13,Tychy 71,Wisla Krakow,3,1,H
+2022-08-13,Odra Opole,Resovia Rzeszow,1,1,D
+2022-08-14,Stal Rzeszow,KS odz,1,0,H
+2022-08-14,Gornik eczna,Arka Gdynia,1,2,A
+2022-08-14,Chrobry Gogow,Podbeskidzie,0,1,A
+2022-08-15,Puszcza Niepoomice,Nieciecza,0,0,D
+2022-08-15,Ruch Chorzow,Chojniczanka Chojnice,1,1,D
+2022-08-19,Chojniczanka Chojnice,Gornik eczna,2,1,H
+2022-08-19,KS odz,Ruch Chorzow,2,0,H
+2022-08-20,Podbeskidzie,Puszcza Niepoomice,0,1,A
+2022-08-20,Wisla Krakow,SKRA Czestochowa,3,0,H
+2022-08-20,Nieciecza,Stal Rzeszow,2,1,H
+2022-08-21,Arka Gdynia,Odra Opole,1,2,A
+2022-08-21,Zaglebie Sosnowiec,Chrobry Gogow,1,2,A
+2022-08-21,Resovia Rzeszow,GKS Katowice,0,1,A
+2022-08-22,Sandecja Nowy Sacz,Tychy 71,0,5,A
+2022-08-26,Puszcza Niepoomice,Zaglebie Sosnowiec,0,0,D
+2022-08-26,Chrobry Gogow,Wisla Krakow,2,1,H
+2022-08-27,Gornik eczna,Odra Opole,4,1,H
+2022-08-27,Stal Rzeszow,Podbeskidzie,5,0,H
+2022-08-27,Ruch Chorzow,Nieciecza,2,1,H
+2022-08-27,Chojniczanka Chojnice,KS odz,1,0,H
+2022-08-28,GKS Katowice,Arka Gdynia,0,1,A
+2022-08-28,SKRA Czestochowa,Sandecja Nowy Sacz,0,0,D
+2022-08-28,Tychy 71,Resovia Rzeszow,1,1,D
+2022-09-02,Zaglebie Sosnowiec,Stal Rzeszow,1,0,H
+2022-09-02,Wisla Krakow,Puszcza Niepoomice,2,3,A
+2022-09-03,Sandecja Nowy Sacz,Chrobry Gogow,0,1,A
+2022-09-03,Nieciecza,Chojniczanka Chojnice,2,2,D
+2022-09-03,Resovia Rzeszow,SKRA Czestochowa,1,2,A
+2022-09-04,Podbeskidzie,Ruch Chorzow,0,1,A
+2022-09-04,Arka Gdynia,Tychy 71,5,0,H
+2022-09-05,Odra Opole,GKS Katowice,0,1,A
+2022-09-05,KS odz,Gornik eczna,3,2,H
+2022-09-09,Tychy 71,Odra Opole,2,0,H
+2022-09-09,Ruch Chorzow,Zaglebie Sosnowiec,2,0,H
+2022-09-10,SKRA Czestochowa,Arka Gdynia,1,2,A
+2022-09-10,Stal Rzeszow,Wisla Krakow,2,1,H
+2022-09-10,Gornik eczna,GKS Katowice,2,2,D
+2022-09-11,KS odz,Nieciecza,1,1,D
+2022-09-11,Puszcza Niepoomice,Sandecja Nowy Sacz,5,2,H
+2022-09-11,Chojniczanka Chojnice,Podbeskidzie,2,3,A
+2022-09-12,Chrobry Gogow,Resovia Rzeszow,1,1,D
+2022-09-15,Sandecja Nowy Sacz,Stal Rzeszow,0,1,A
+2022-09-16,Arka Gdynia,Chrobry Gogow,3,4,A
+2022-09-16,Wisla Krakow,Ruch Chorzow,1,1,D
+2022-09-17,GKS Katowice,Tychy 71,1,1,D
+2022-09-17,Nieciecza,Gornik eczna,2,2,D
+2022-09-17,Resovia Rzeszow,Puszcza Niepoomice,2,1,H
+2022-09-18,Podbeskidzie,KS odz,1,1,D
+2022-09-18,Zaglebie Sosnowiec,Chojniczanka Chojnice,1,1,D
+2022-09-18,Odra Opole,SKRA Czestochowa,1,0,H
+2022-09-30,KS odz,Zaglebie Sosnowiec,1,1,D
+2022-09-30,Chojniczanka Chojnice,Wisla Krakow,1,0,H
+2022-10-01,SKRA Czestochowa,GKS Katowice,0,1,A
+2022-10-01,Stal Rzeszow,Resovia Rzeszow,3,4,A
+2022-10-01,Gornik eczna,Tychy 71,3,2,H
+2022-10-02,Ruch Chorzow,Sandecja Nowy Sacz,2,1,H
+2022-10-02,Puszcza Niepoomice,Arka Gdynia,2,0,H
+2022-10-02,Nieciecza,Podbeskidzie,2,2,D
+2022-10-03,Chrobry Gogow,Odra Opole,2,2,D
+2022-10-07,Sandecja Nowy Sacz,Chojniczanka Chojnice,2,1,H
+2022-10-07,Wisla Krakow,KS odz,2,2,D
+2022-10-08,GKS Katowice,Chrobry Gogow,1,0,H
+2022-10-08,Podbeskidzie,Gornik eczna,1,0,H
+2022-10-08,Resovia Rzeszow,Ruch Chorzow,1,1,D
+2022-10-09,Arka Gdynia,Stal Rzeszow,2,2,D
+2022-10-09,Tychy 71,SKRA Czestochowa,5,0,H
+2022-10-09,Odra Opole,Puszcza Niepoomice,2,3,A
+2022-10-10,Zaglebie Sosnowiec,Nieciecza,2,1,H
+2022-10-14,Chojniczanka Chojnice,Resovia Rzeszow,1,2,A
+2022-10-14,KS odz,Sandecja Nowy Sacz,1,0,H
+2022-10-15,Puszcza Niepoomice,GKS Katowice,1,1,D
+2022-10-15,Gornik eczna,SKRA Czestochowa,3,0,H
+2022-10-15,Nieciecza,Wisla Krakow,0,0,D
+2022-10-15,Podbeskidzie,Zaglebie Sosnowiec,2,2,D
+2022-10-16,Ruch Chorzow,Arka Gdynia,2,4,A
+2022-10-16,Chrobry Gogow,Tychy 71,4,1,H
+2022-10-16,Stal Rzeszow,Odra Opole,4,2,H
+2022-10-21,Odra Opole,Ruch Chorzow,1,1,D
+2022-10-22,Sandecja Nowy Sacz,Nieciecza,1,1,D
+2022-10-22,Wisla Krakow,Podbeskidzie,3,3,D
+2022-10-22,Arka Gdynia,Chojniczanka Chojnice,2,1,H
+2022-10-23,Tychy 71,Puszcza Niepoomice,2,3,A
+2022-10-23,Resovia Rzeszow,KS odz,0,3,A
+2022-10-23,Zaglebie Sosnowiec,Gornik eczna,2,2,D
+2022-10-24,SKRA Czestochowa,Chrobry Gogow,1,2,A
+2022-10-24,GKS Katowice,Stal Rzeszow,0,0,D
+2022-10-28,Nieciecza,Resovia Rzeszow,3,0,H
+2022-10-28,Zaglebie Sosnowiec,Wisla Krakow,1,2,A
+2022-10-29,Podbeskidzie,Sandecja Nowy Sacz,2,0,H
+2022-10-29,Ruch Chorzow,GKS Katowice,1,0,H
+2022-10-29,Stal Rzeszow,Tychy 71,1,2,A
+2022-10-30,KS odz,Arka Gdynia,3,1,H
+2022-10-30,Chojniczanka Chojnice,Odra Opole,1,2,A
+2022-10-30,Gornik eczna,Chrobry Gogow,0,2,A
+2022-10-31,Puszcza Niepoomice,SKRA Czestochowa,3,0,H
+2022-11-04,Sandecja Nowy Sacz,Zaglebie Sosnowiec,4,1,H
+2022-11-04,Wisla Krakow,Gornik eczna,1,2,A
+2022-11-05,Odra Opole,KS odz,1,2,A
+2022-11-05,Resovia Rzeszow,Podbeskidzie,2,2,D
+2022-11-05,Tychy 71,Ruch Chorzow,2,2,D
+2022-11-05,GKS Katowice,Chojniczanka Chojnice,3,0,H
+2022-11-06,Arka Gdynia,Nieciecza,1,2,A
+2022-11-06,Chrobry Gogow,Puszcza Niepoomice,1,0,H
+2022-11-06,SKRA Czestochowa,Stal Rzeszow,0,1,A
+2022-11-11,Tychy 71,Chojniczanka Chojnice,1,1,D
+2022-11-11,GKS Katowice,KS odz,1,5,A
+2022-11-12,Odra Opole,Nieciecza,1,2,A
+2022-11-12,Arka Gdynia,Podbeskidzie,2,2,D
+2022-11-12,SKRA Czestochowa,Ruch Chorzow,1,1,D
+2022-11-13,Sandecja Nowy Sacz,Wisla Krakow,1,1,D
+2022-11-13,Chrobry Gogow,Stal Rzeszow,3,3,D
+2022-11-13,Gornik eczna,Puszcza Niepoomice,2,2,D
+2022-11-13,Resovia Rzeszow,Zaglebie Sosnowiec,2,2,D
+2023-02-10,Sandecja Nowy Sacz,Gornik eczna,3,0,H
+2023-02-10,Wisla Krakow,Resovia Rzeszow,2,0,H
+2023-02-11,Stal Rzeszow,Puszcza Niepoomice,1,0,H
+2023-02-11,Ruch Chorzow,Chrobry Gogow,1,0,H
+2023-02-11,Zaglebie Sosnowiec,Arka Gdynia,1,2,A
+2023-02-12,KS odz,Tychy 71,1,1,D
+2023-02-12,Nieciecza,GKS Katowice,1,1,D
+2023-02-12,Podbeskidzie,Odra Opole,0,0,D
+2023-02-13,Chojniczanka Chojnice,SKRA Czestochowa,2,0,H
+2023-02-17,Tychy 71,Nieciecza,0,1,A
+2023-02-17,Puszcza Niepoomice,Ruch Chorzow,0,1,A
+2023-02-18,Gornik eczna,Stal Rzeszow,1,0,H
+2023-02-18,Arka Gdynia,Wisla Krakow,1,3,A
+2023-02-18,Zaglebie Sosnowiec,Odra Opole,0,2,A
+2023-02-19,GKS Katowice,Podbeskidzie,1,1,D
+2023-02-19,SKRA Czestochowa,KS odz,1,2,A
+2023-02-19,Chrobry Gogow,Chojniczanka Chojnice,3,1,H
+2023-02-20,Sandecja Nowy Sacz,Resovia Rzeszow,1,1,D
+2023-02-24,Resovia Rzeszow,Gornik eczna,1,0,H
+2023-02-24,Wisla Krakow,Odra Opole,2,1,H
+2023-02-25,Podbeskidzie,Tychy 71,1,0,H
+2023-02-25,Zaglebie Sosnowiec,GKS Katowice,2,1,H
+2023-02-25,KS odz,Chrobry Gogow,5,2,H
+2023-02-26,Ruch Chorzow,Stal Rzeszow,2,0,H
+2023-02-26,Sandecja Nowy Sacz,Arka Gdynia,0,3,A
+2023-02-26,Chojniczanka Chojnice,Puszcza Niepoomice,1,1,D
+2023-02-27,Nieciecza,SKRA Czestochowa,1,0,H
+2023-03-03,Arka Gdynia,Resovia Rzeszow,4,0,H
+2023-03-03,Puszcza Niepoomice,KS odz,1,0,H
+2023-03-04,Chrobry Gogow,Nieciecza,0,2,A
+2023-03-04,GKS Katowice,Wisla Krakow,1,3,A
+2023-03-04,Tychy 71,Zaglebie Sosnowiec,1,0,H
+2023-03-05,Gornik eczna,Ruch Chorzow,1,1,D
+2023-03-05,Stal Rzeszow,Chojniczanka Chojnice,3,1,H
+2023-03-05,SKRA Czestochowa,Podbeskidzie,1,0,H
+2023-03-06,Sandecja Nowy Sacz,Odra Opole,0,2,A
+2023-03-10,Podbeskidzie,Chrobry Gogow,6,0,H
+2023-03-10,Chojniczanka Chojnice,Ruch Chorzow,0,1,A
+2023-03-11,Sandecja Nowy Sacz,GKS Katowice,1,1,D
+2023-03-11,Wisla Krakow,Tychy 71,2,1,H
+2023-03-12,KS odz,Stal Rzeszow,1,0,H
+2023-03-12,Zaglebie Sosnowiec,SKRA Czestochowa,0,1,A
+2023-03-12,Resovia Rzeszow,Odra Opole,2,0,H
+2023-03-13,Arka Gdynia,Gornik eczna,0,1,A
+2023-03-17,SKRA Czestochowa,Wisla Krakow,0,3,A
+2023-03-18,Gornik eczna,Chojniczanka Chojnice,0,0,D
+2023-03-18,Puszcza Niepoomice,Podbeskidzie,1,1,D
+2023-03-18,GKS Katowice,Resovia Rzeszow,0,1,A
+2023-03-19,Ruch Chorzow,KS odz,3,3,D
+2023-03-19,Chrobry Gogow,Zaglebie Sosnowiec,0,0,D
+2023-03-19,Odra Opole,Arka Gdynia,1,1,D
+2023-03-19,Tychy 71,Sandecja Nowy Sacz,2,3,A
+2023-03-19,Stal Rzeszow,Nieciecza,2,2,D
+2023-03-31,Sandecja Nowy Sacz,SKRA Czestochowa,1,2,A
+2023-03-31,Nieciecza,Ruch Chorzow,2,1,H
+2023-04-01,Odra Opole,Gornik eczna,0,1,A
+2023-04-01,Wisla Krakow,Chrobry Gogow,4,1,H
+2023-04-01,Arka Gdynia,GKS Katowice,2,2,D
+2023-04-02,KS odz,Chojniczanka Chojnice,2,1,H
+2023-04-02,Zaglebie Sosnowiec,Puszcza Niepoomice,1,1,D
+2023-04-02,Podbeskidzie,Stal Rzeszow,2,2,D
+2023-04-03,Resovia Rzeszow,Tychy 71,0,1,A
+2023-04-06,Chojniczanka Chojnice,Nieciecza,0,0,D
+2023-04-06,Chrobry Gogow,Sandecja Nowy Sacz,0,0,D
+2023-04-06,Ruch Chorzow,Podbeskidzie,2,2,D
+2023-04-08,SKRA Czestochowa,Resovia Rzeszow,0,5,A
+2023-04-08,Tychy 71,Arka Gdynia,2,2,D
+2023-04-08,Puszcza Niepoomice,Wisla Krakow,2,1,H
+2023-04-08,Stal Rzeszow,Zaglebie Sosnowiec,6,0,H
+2023-04-11,GKS Katowice,Odra Opole,0,2,A
+2023-04-11,Gornik eczna,KS odz,1,1,D
+2023-04-12,Nieciecza,Puszcza Niepoomice,2,1,H
+2023-04-14,Resovia Rzeszow,Chrobry Gogow,1,1,D
+2023-04-14,Wisla Krakow,Stal Rzeszow,3,1,H
+2023-04-15,Odra Opole,Tychy 71,3,0,H
+2023-04-15,Zaglebie Sosnowiec,Ruch Chorzow,2,0,H
+2023-04-15,GKS Katowice,Gornik eczna,2,0,H
+2023-04-16,Nieciecza,KS odz,2,2,D
+2023-04-16,Arka Gdynia,SKRA Czestochowa,0,1,A
+2023-04-16,Podbeskidzie,Chojniczanka Chojnice,4,1,H
+2023-04-17,Sandecja Nowy Sacz,Puszcza Niepoomice,2,3,A
+2023-04-21,Chrobry Gogow,Arka Gdynia,0,3,A
+2023-04-21,KS odz,Podbeskidzie,2,1,H
+2023-04-22,SKRA Czestochowa,Odra Opole,1,1,D
+2023-04-22,Ruch Chorzow,Wisla Krakow,2,0,H
+2023-04-22,Puszcza Niepoomice,Resovia Rzeszow,0,0,D
+2023-04-23,Tychy 71,GKS Katowice,0,3,A
+2023-04-23,Chojniczanka Chojnice,Zaglebie Sosnowiec,0,0,D
+2023-04-23,Gornik eczna,Nieciecza,2,1,H
+2023-04-24,Stal Rzeszow,Sandecja Nowy Sacz,3,0,H
+2023-04-28,GKS Katowice,SKRA Czestochowa,0,1,A
+2023-04-28,Zaglebie Sosnowiec,KS odz,1,0,H
+2023-04-29,Tychy 71,Gornik eczna,2,1,H
+2023-04-29,Wisla Krakow,Chojniczanka Chojnice,3,0,H
+2023-04-29,Resovia Rzeszow,Stal Rzeszow,1,2,A
+2023-04-30,Sandecja Nowy Sacz,Ruch Chorzow,0,1,A
+2023-04-30,Podbeskidzie,Nieciecza,2,2,D
+2023-04-30,Arka Gdynia,Puszcza Niepoomice,1,1,D
+2023-05-01,Odra Opole,Chrobry Gogow,1,0,H
+2023-05-05,Chojniczanka Chojnice,Sandecja Nowy Sacz,2,0,H
+2023-05-05,KS odz,Wisla Krakow,3,2,H
+2023-05-06,Puszcza Niepoomice,Odra Opole,1,0,H
+2023-05-06,Ruch Chorzow,Resovia Rzeszow,1,3,A
+2023-05-06,Gornik eczna,Podbeskidzie,3,3,D
+2023-05-07,Stal Rzeszow,Arka Gdynia,2,1,H
+2023-05-07,SKRA Czestochowa,Tychy 71,0,1,A
+2023-05-07,Chrobry Gogow,GKS Katowice,0,0,D
+2023-05-08,Nieciecza,Zaglebie Sosnowiec,2,0,H
+2023-05-12,SKRA Czestochowa,Gornik eczna,0,1,A
+2023-05-12,Wisla Krakow,Nieciecza,2,1,H
+2023-05-13,GKS Katowice,Puszcza Niepoomice,2,2,D
+2023-05-13,Arka Gdynia,Ruch Chorzow,0,2,A
+2023-05-13,Odra Opole,Stal Rzeszow,2,0,H
+2023-05-14,Sandecja Nowy Sacz,KS odz,1,0,H
+2023-05-14,Tychy 71,Chrobry Gogow,2,2,D
+2023-05-14,Resovia Rzeszow,Chojniczanka Chojnice,3,1,H
+2023-05-15,Zaglebie Sosnowiec,Podbeskidzie,1,0,H
+2023-05-19,Chojniczanka Chojnice,Arka Gdynia,1,3,A
+2023-05-19,Ruch Chorzow,Odra Opole,3,0,H
+2023-05-20,Nieciecza,Sandecja Nowy Sacz,3,0,H
+2023-05-20,Podbeskidzie,Wisla Krakow,0,3,A
+2023-05-20,Stal Rzeszow,GKS Katowice,1,1,D
+2023-05-21,KS odz,Resovia Rzeszow,2,1,H
+2023-05-21,Gornik eczna,Zaglebie Sosnowiec,0,0,D
+2023-05-21,Puszcza Niepoomice,Tychy 71,2,1,H
+2023-05-22,Chrobry Gogow,SKRA Czestochowa,1,0,H
+2023-05-26,Sandecja Nowy Sacz,Podbeskidzie,0,3,A
+2023-05-26,Arka Gdynia,KS odz,1,1,D
+2023-05-27,Resovia Rzeszow,Nieciecza,1,2,A
+2023-05-27,GKS Katowice,Ruch Chorzow,2,1,H
+2023-05-27,Chrobry Gogow,Gornik eczna,1,1,D
+2023-05-28,Wisla Krakow,Zaglebie Sosnowiec,1,2,A
+2023-05-28,Odra Opole,Chojniczanka Chojnice,1,1,D
+2023-05-28,Tychy 71,Stal Rzeszow,0,0,D
+2023-05-29,SKRA Czestochowa,Puszcza Niepoomice,0,3,A
+2023-06-03,Zaglebie Sosnowiec,Sandecja Nowy Sacz,1,1,D
+2023-06-03,Chojniczanka Chojnice,GKS Katowice,3,3,D
+2023-06-03,Nieciecza,Arka Gdynia,2,1,H
+2023-06-03,Podbeskidzie,Resovia Rzeszow,4,3,H
+2023-06-03,Puszcza Niepoomice,Chrobry Gogow,0,1,A
+2023-06-03,KS odz,Odra Opole,1,0,H
+2023-06-03,Gornik eczna,Wisla Krakow,0,3,A
+2023-06-03,Ruch Chorzow,Tychy 71,1,0,H
+2023-06-03,Stal Rzeszow,SKRA Czestochowa,2,1,H
+2023-06-06,Wisla Krakow,Puszcza Niepoomice,1,4,A
+2023-06-06,Nieciecza,Stal Rzeszow,2,0,H
+2023-06-11,Nieciecza,Puszcza Niepoomice,2,3,A

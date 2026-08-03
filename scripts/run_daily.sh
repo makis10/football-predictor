@@ -297,6 +297,21 @@ else echo "  [skip] API-Football blocked." | tee -a "$LOG"; fi
 echo "" >> "$LOG"
 echo "[8b/9] Ingesting club team + player stats (props source) …" | tee -a "$LOG"
 if [ "$API_FOOTBALL_OK" -eq 1 ]; then
+# Current squads FIRST — cheap (~1 request per team with an upcoming fixture)
+# and correctness-critical. player_match_stats is a match log, not a roster, so
+# without this a transferred player keeps showing in his old club's props, and
+# during a transfer window no new match data can ever correct it.
+# Deliberately ahead of the two heavy ingests below (1200 + 2000 requests): a
+# stale roster produces WRONG output, while a day of missing match stats only
+# delays data.
+# Weekly refresh: the script self-skips while the file is fresh, so this line
+# runs daily but only spends quota once a week. --max-age-days 6, not 7, so a
+# run firing slightly early can't skip itself into a 2-week gap.
+# Cap sits above the team count so a run is never silently truncated; the script
+# fetches soonest-fixture-first and says so when it does truncate.
+docker compose exec -T backend \
+    python scripts/fetch_club_squads.py --days-ahead 7 --max-age-days 6 --max-requests 700 \
+    2>&1 | tee -a "$LOG" || echo "  [warn] club squads incomplete — some rosters may be stale" | tee -a "$LOG"
 docker compose exec -T backend \
     python scripts/fetch_club_team_stats.py --days-ahead 7 --last 8 --max-requests 1200 \
     2>&1 | tee -a "$LOG" || echo "  [warn] club team stats failed — continuing" | tee -a "$LOG"
@@ -661,6 +676,18 @@ docker compose exec -T backend \
     python scripts/check_data_completeness.py --days 7 \
     2>&1 | tee -a "$LOG" || health_alerts=1
 
+# Club identity. Ingestion is what introduces new spellings, so this belongs
+# next to the completeness check rather than in CI alone: a promoted club
+# arriving under the second tier's name splits its Elo the same day, and a name
+# already used in another country fuses two clubs' ratings silently. Both are
+# invisible in the output — the site keeps serving confident predictions built
+# on half a history. Advisory, like the check above: it never fails the run.
+echo "" >> "$LOG"
+echo "[health] Club-identity audit …" | tee -a "$LOG"
+docker compose exec -T backend \
+    python scripts/audit_team_identity.py \
+    2>&1 | tee -a "$LOG" || health_alerts=1
+
 # ── Run summary ──────────────────────────────────────────────────────────────
 # Turn the recorded $LINENO list back into the step headers a human recognises,
 # so "one or more steps failed" names them instead of sending anyone log-diving.
@@ -713,7 +740,7 @@ fi
 source "$PROJ_DIR/scripts/_alert.sh"
 
 _health_verdict=$(tail -n "+$((RUN_START_LINE + 1))" "$LOG" \
-    | grep -E '^(OK|FAIL) — ' | tail -1)
+    | grep -E '^DATA (OK|GAPS) — ' | tail -1)
 
 if [ "$overall_failed" -ne 0 ]; then
     send_alert "Football Predictor: daily run failed" \

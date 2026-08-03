@@ -46,7 +46,9 @@ NAME_MAP = ROOT / "backend" / "data" / "models" / "club_name_map.json"
 # that normally makes 54, and the ones that still missed showed up as 50
 # "no API id" alerts. One league sweep costs a single request and resolves the
 # whole division.
-from backend.app.ml.odds_analysis_service import _LEAGUE_API_SPORTS_ID  # noqa: E402
+from backend.app.ml.odds_analysis_service import (  # noqa: E402
+    _LEAGUE_API_SPORTS_ID, LEAGUE_COUNTRY,
+)
 
 LEAGUE_IDS = dict(_LEAGUE_API_SPORTS_ID)
 
@@ -112,7 +114,9 @@ def _to_int(v):
         return None
 
 
-def build_id_cache(our_teams: set[str], season: int, budget: Budget) -> dict:
+def build_id_cache(our_teams: set[str], season: int, budget: Budget,
+                   roster_out: set | None = None, search_missing: bool = True,
+                   team_league: dict[str, str] | None = None) -> dict:
     """Map our team names → API-Football team ids, league by league."""
     slug_to_name = {_slug(t): t for t in our_teams}
     override_slug = {_slug(k): _slug(v) for k, v in NAME_OVERRIDES.items()}
@@ -128,6 +132,7 @@ def build_id_cache(our_teams: set[str], season: int, budget: Budget) -> dict:
             api_alias.setdefault(_slug(api_name), our_name)
 
     cache: dict[str, int] = {}
+    league_roster: set[int] = set()   # every team id seen in a tracked league
     matched, unmatched = set(), []
     for code, lid in LEAGUE_IDS.items():
         if not budget.ok():
@@ -145,6 +150,9 @@ def build_id_cache(our_teams: set[str], season: int, budget: Budget) -> dict:
             print(f"  [warn] /teams {code}: {e}"); continue
         for t in resp:
             api_name = t["team"]["name"]; api_id = t["team"]["id"]
+            league_roster.add(api_id)
+            if roster_out is not None:
+                roster_out.add(api_id)
             aslug = _slug(api_name)
             our = slug_to_name.get(aslug) or api_alias.get(aslug)
             if our:
@@ -154,7 +162,7 @@ def build_id_cache(our_teams: set[str], season: int, budget: Budget) -> dict:
     # opponents from lower divisions, e.g. Chesterfield, De Graafschap). Only
     # accept a result whose slug matches the target (or its override) exactly —
     # a fuzzy hit on the wrong club would poison the cache.
-    for team in sorted(our_teams - matched):
+    for team in sorted(our_teams - matched) if search_missing else []:
         if not budget.ok():
             break
         target = NAME_OVERRIDES.get(team, team)
@@ -175,6 +183,14 @@ def build_id_cache(our_teams: set[str], season: int, budget: Budget) -> dict:
             # (and did: the cache pointed SK Rapid at the women's team, CFR Cluj
             # at its reserves).
             resp = [t for t in resp if not is_youth_side(t["team"]["name"])]
+            # A club that plays in a league we know belongs to that league's
+            # country. Without this the search happily returns "Porto" from
+            # BRAZIL for Portugal's Porto, "Milan" from Gambia, "Roma" from
+            # Slovenia — all accepted, all wrong, none detectable downstream.
+            want_country = LEAGUE_COUNTRY.get((team_league or {}).get(team, ""))
+            if want_country:
+                resp = [t for t in resp
+                        if (t["team"].get("country") or "") == want_country]
             hit = next((t for t in resp if _slug(t["team"]["name"]) == tslug), None)
             if hit is None and i == 0 and len(resp) == 1:
                 hit = resp[0]  # unambiguous single result for the exact name
@@ -218,26 +234,65 @@ def main() -> None:
         # Teams playing in the upcoming window (club leagues only).
         hi = (date.today() + timedelta(days=args.days_ahead)).isoformat()
         rows = db.execute(text(
-            "SELECT DISTINCT home_team FROM matches WHERE home_goals IS NULL "
+            "SELECT DISTINCT home_team, league FROM matches WHERE home_goals IS NULL "
             "AND match_date BETWEEN :lo AND :hi "
-            "UNION SELECT DISTINCT away_team FROM matches WHERE away_goals IS NULL "
+            "UNION SELECT DISTINCT away_team, league FROM matches WHERE away_goals IS NULL "
             "AND match_date BETWEEN :lo AND :hi"
         ), {"lo": date.today().isoformat(), "hi": hi}).fetchall()
         target = sorted({r[0] for r in rows})
+        # Only clubs playing in a league we sweep can be checked against a
+        # roster; a friendly opponent from an untracked division legitimately
+        # has an id that appears in no roster.
+        team_league = {t: lg for t, lg in rows if lg in LEAGUE_IDS}
         print(f"{len(target)} club teams with upcoming fixtures.")
 
-        # Team-id cache (rebuild if asked or missing).
-        cache = {}
-        if ID_CACHE.exists() and not args.refresh_ids:
-            cache = json.loads(ID_CACHE.read_text())
+        # Team-id cache. `known` is every club we have EVER resolved; `cache` is
+        # what we keep. --refresh-ids distrusts the stored ids but must still
+        # re-resolve the same clubs, otherwise the cache silently shrinks to
+        # whatever happens to have a fixture in the next --days-ahead days:
+        # running it on 2026-08-02 cut 530 entries to 303 and turned 5
+        # "no API id" alerts into 74.
+        known = json.loads(ID_CACHE.read_text()) if ID_CACHE.exists() else {}
+        cache = {} if args.refresh_ids else dict(known)
         # Treat null-valued entries as missing too: earlier runs cached
         # unresolved teams as None, which permanently blocked re-resolution
         # (the Greek league outage — see 2026-07-11).
         missing = [t for t in target if cache.get(t) is None]
-        if missing or args.refresh_ids:
-            cache = {**cache, **build_id_cache(set(target) | set(cache), season, budget)}
-            ID_CACHE.parent.mkdir(parents=True, exist_ok=True)
-            ID_CACHE.write_text(json.dumps(cache, indent=2, ensure_ascii=False))
+        # The league sweep runs on EVERY run, not just when something is
+        # missing: it is ~26 requests against a 7,500/day plan, and it is the
+        # only thing that can catch an id already sitting in the cache pointing
+        # at the wrong club. A poisoned entry is never "missing", so gating the
+        # sweep on `missing` made the guard below unreachable in normal use —
+        # which is exactly how "Milan" spent days pointing at a Gambian club.
+        # The EXPENSIVE part (per-team /teams?search for everything the sweep
+        # couldn't place) stays conditional.
+        roster: set = set()
+        resolved = build_id_cache(set(target) | set(known), season, budget, roster,
+                                  search_missing=bool(missing or args.refresh_ids),
+                                  team_league=team_league)
+        # Freshly resolved ids win; anything the sweep couldn't reach this
+        # run keeps its previous id rather than vanishing.
+        cache = {**known, **cache, **resolved}
+        ID_CACHE.parent.mkdir(parents=True, exist_ok=True)
+        ID_CACHE.write_text(json.dumps(cache, indent=2, ensure_ascii=False))
+
+        # ── Wrong-club guard ──────────────────────────────────────────────
+        # /teams?search matches on name alone, so a club with the SAME NAME
+        # in another country is a perfectly good hit and nothing downstream
+        # can tell: "Porto" resolved to a Brazilian club, "Milan" to a
+        # Gambian one, "Roma" to a Slovenian one, "Lugano" to an Argentinian
+        # one. Their stats would simply have been someone else's.
+        #
+        # Only clubs that PLAY in a league we sweep are checked — a friendly
+        # opponent from an untracked division has an id in no roster and
+        # that is fine. Free: the sweep already fetched every roster.
+        if roster:
+            wrong = {t: cache[t] for t, lg in team_league.items()
+                     if cache.get(t) and cache[t] not in roster}
+            if wrong:
+                print(f"  [alert] {len(wrong)} club(s) in a TRACKED league resolved to an "
+                      f"id that is in no roster — almost certainly a same-name club "
+                      f"abroad. Add a NAME_OVERRIDES entry: {wrong}")
 
         have = {r[0] for r in db.execute(
             text("SELECT DISTINCT fixture_id FROM team_match_stats")).fetchall()}

@@ -1,0 +1,245 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2023-04-01,GIF Sundsvall,Landskrona BoIS,2,0,H
+2023-04-01,IK brage,Vasteras SK FK,1,2,A
+2023-04-02,Trelleborg,Gefle IF,0,1,A
+2023-04-02,Utsikten,Skovde AIK,1,0,H
+2023-04-02,Ostersunds FK,Gais,1,1,D
+2023-04-03,Jonkopings Sodra,Orebro SK,0,0,D
+2023-04-03,Orgryte IS,AFC Eskilstuna,2,2,D
+2023-04-04,Helsingborg,Osters IF,0,1,A
+2023-04-07,Gais,IK brage,3,0,H
+2023-04-09,Landskrona BoIS,Utsikten,1,3,A
+2023-04-09,Orebro SK,Ostersunds FK,0,0,D
+2023-04-09,Skovde AIK,Jonkopings Sodra,3,3,D
+2023-04-10,Gefle IF,Helsingborg,1,0,H
+2023-04-10,Osters IF,Trelleborg,5,2,H
+2023-04-10,Vasteras SK FK,Orgryte IS,0,0,D
+2023-04-10,AFC Eskilstuna,GIF Sundsvall,0,1,A
+2023-04-15,Helsingborg,Vasteras SK FK,0,1,A
+2023-04-15,Osters IF,AFC Eskilstuna,3,0,H
+2023-04-15,Landskrona BoIS,Skovde AIK,2,0,H
+2023-04-15,Orebro SK,IK brage,0,2,A
+2023-04-16,Utsikten,Gais,1,2,A
+2023-04-17,Trelleborg,Orgryte IS,2,0,H
+2023-04-17,Jonkopings Sodra,Gefle IF,2,1,H
+2023-04-18,GIF Sundsvall,Ostersunds FK,0,3,A
+2023-04-22,AFC Eskilstuna,Trelleborg,1,0,H
+2023-04-22,Gais,Landskrona BoIS,2,0,H
+2023-04-22,IK brage,Helsingborg,1,0,H
+2023-04-23,Gefle IF,Utsikten,1,1,D
+2023-04-24,GIF Sundsvall,Osters IF,2,3,A
+2023-04-24,Ostersunds FK,Skovde AIK,2,1,H
+2023-04-24,Orgryte IS,Jonkopings Sodra,2,2,D
+2023-04-25,Vasteras SK FK,Orebro SK,3,0,H
+2023-04-29,Osters IF,Ostersunds FK,0,1,A
+2023-04-29,Jonkopings Sodra,Vasteras SK FK,2,1,H
+2023-04-29,Landskrona BoIS,Gefle IF,1,0,H
+2023-04-30,Skovde AIK,IK brage,0,0,D
+2023-04-30,Orebro SK,AFC Eskilstuna,3,0,H
+2023-05-01,Trelleborg,GIF Sundsvall,3,4,A
+2023-05-01,Utsikten,Orgryte IS,2,1,H
+2023-05-02,Helsingborg,Gais,2,1,H
+2023-05-05,AFC Eskilstuna,Utsikten,1,1,D
+2023-05-06,Ostersunds FK,Jonkopings Sodra,3,3,D
+2023-05-06,Gefle IF,Vasteras SK FK,0,3,A
+2023-05-07,Skovde AIK,Orebro SK,1,2,A
+2023-05-07,Gais,Trelleborg,2,1,H
+2023-05-08,Orgryte IS,Osters IF,2,2,D
+2023-05-08,IK brage,GIF Sundsvall,2,0,H
+2023-05-09,Landskrona BoIS,Helsingborg,2,1,H
+2023-05-12,Jonkopings Sodra,AFC Eskilstuna,2,3,A
+2023-05-13,Osters IF,Gais,1,2,A
+2023-05-13,Vasteras SK FK,Landskrona BoIS,0,0,D
+2023-05-14,Utsikten,IK brage,4,1,H
+2023-05-14,Gefle IF,Skovde AIK,4,1,H
+2023-05-15,Trelleborg,Ostersunds FK,1,0,H
+2023-05-15,GIF Sundsvall,Helsingborg,1,1,D
+2023-05-16,Orebro SK,Orgryte IS,0,0,D
+2023-05-19,IK brage,Gefle IF,1,1,D
+2023-05-20,Landskrona BoIS,Orebro SK,3,2,H
+2023-05-20,Gais,Jonkopings Sodra,0,1,A
+2023-05-20,Skovde AIK,Trelleborg,2,3,A
+2023-05-21,AFC Eskilstuna,Ostersunds FK,1,1,D
+2023-05-21,Helsingborg,Utsikten,0,1,A
+2023-05-22,Vasteras SK FK,Osters IF,2,1,H
+2023-05-23,Orgryte IS,GIF Sundsvall,1,0,H
+2023-05-26,AFC Eskilstuna,Gais,0,0,D
+2023-05-26,Osters IF,Landskrona BoIS,2,1,H
+2023-05-27,Jonkopings Sodra,IK brage,4,1,H
+2023-05-27,Trelleborg,Vasteras SK FK,3,2,H
+2023-05-27,GIF Sundsvall,Skovde AIK,2,0,H
+2023-05-27,Orgryte IS,Gefle IF,3,1,H
+2023-05-28,Ostersunds FK,Utsikten,1,2,A
+2023-05-28,Orebro SK,Helsingborg,1,1,D
+2023-05-31,Gefle IF,GIF Sundsvall,1,3,A
+2023-05-31,IK brage,Ostersunds FK,2,1,H
+2023-05-31,Landskrona BoIS,Trelleborg,1,1,D
+2023-05-31,Utsikten,Orebro SK,2,1,H
+2023-06-01,Jonkopings Sodra,Osters IF,2,3,A
+2023-06-01,Helsingborg,Skovde AIK,0,0,D
+2023-06-01,Gais,Orgryte IS,0,1,A
+2023-06-01,Vasteras SK FK,AFC Eskilstuna,0,0,D
+2023-06-04,Osters IF,Utsikten,0,1,A
+2023-06-04,Orebro SK,Gefle IF,2,0,H
+2023-06-04,Ostersunds FK,Vasteras SK FK,1,2,A
+2023-06-05,Trelleborg,IK brage,1,0,H
+2023-06-05,Skovde AIK,AFC Eskilstuna,1,0,H
+2023-06-06,GIF Sundsvall,Gais,0,3,A
+2023-06-06,Helsingborg,Jonkopings Sodra,2,2,D
+2023-06-06,Orgryte IS,Landskrona BoIS,0,1,A
+2023-06-10,Gefle IF,Osters IF,3,2,H
+2023-06-10,Vasteras SK FK,Skovde AIK,4,0,H
+2023-06-10,Jonkopings Sodra,Trelleborg,3,1,H
+2023-06-10,Utsikten,GIF Sundsvall,5,0,H
+2023-06-11,AFC Eskilstuna,Helsingborg,0,1,A
+2023-06-11,IK brage,Landskrona BoIS,2,1,H
+2023-06-11,Ostersunds FK,Orgryte IS,2,1,H
+2023-06-11,Gais,Orebro SK,4,0,H
+2023-07-07,Orebro SK,Osters IF,1,1,D
+2023-07-07,Landskrona BoIS,Jonkopings Sodra,1,1,D
+2023-07-08,GIF Sundsvall,Vasteras SK FK,1,3,A
+2023-07-08,Gefle IF,AFC Eskilstuna,2,0,H
+2023-07-09,IK brage,Orgryte IS,4,1,H
+2023-07-09,Skovde AIK,Gais,0,0,D
+2023-07-10,Trelleborg,Utsikten,0,3,A
+2023-07-10,Helsingborg,Ostersunds FK,1,0,H
+2023-07-14,Osters IF,Skovde AIK,2,1,H
+2023-07-15,Jonkopings Sodra,GIF Sundsvall,1,0,H
+2023-07-15,Orgryte IS,Helsingborg,1,2,A
+2023-07-15,Vasteras SK FK,Utsikten,1,0,H
+2023-07-15,Ostersunds FK,Landskrona BoIS,4,1,H
+2023-07-16,AFC Eskilstuna,IK brage,2,1,H
+2023-07-16,Gais,Gefle IF,1,1,D
+2023-07-17,Orebro SK,Trelleborg,0,0,D
+2023-07-22,Landskrona BoIS,AFC Eskilstuna,1,2,A
+2023-07-22,GIF Sundsvall,Orebro SK,2,2,D
+2023-07-22,Gefle IF,Ostersunds FK,2,2,D
+2023-07-22,Skovde AIK,Orgryte IS,2,0,H
+2023-07-23,Utsikten,Jonkopings Sodra,2,1,H
+2023-07-23,IK brage,Osters IF,1,2,A
+2023-07-24,Helsingborg,Trelleborg,1,3,A
+2023-07-24,Gais,Vasteras SK FK,0,2,A
+2023-07-28,AFC Eskilstuna,Skovde AIK,3,0,H
+2023-07-29,Ostersunds FK,GIF Sundsvall,1,1,D
+2023-07-29,Orgryte IS,IK brage,1,1,D
+2023-07-29,Osters IF,Jonkopings Sodra,4,0,H
+2023-07-30,Trelleborg,Landskrona BoIS,0,3,A
+2023-07-30,Vasteras SK FK,Gefle IF,1,0,H
+2023-07-31,Orebro SK,Gais,0,0,D
+2023-07-31,Utsikten,Helsingborg,1,1,D
+2023-08-05,AFC Eskilstuna,Osters IF,1,1,D
+2023-08-05,Jonkopings Sodra,Utsikten,0,2,A
+2023-08-05,Gefle IF,IK brage,2,0,H
+2023-08-05,Landskrona BoIS,Ostersunds FK,0,1,A
+2023-08-06,Skovde AIK,Vasteras SK FK,0,2,A
+2023-08-06,Gais,GIF Sundsvall,3,3,D
+2023-08-07,Trelleborg,Orebro SK,2,2,D
+2023-08-08,Helsingborg,Orgryte IS,2,3,A
+2023-08-12,IK brage,Gais,0,4,A
+2023-08-12,Ostersunds FK,AFC Eskilstuna,1,1,D
+2023-08-12,Osters IF,Gefle IF,1,2,A
+2023-08-12,Utsikten,Landskrona BoIS,5,1,H
+2023-08-13,GIF Sundsvall,Trelleborg,1,1,D
+2023-08-13,Vasteras SK FK,Helsingborg,3,2,H
+2023-08-14,Orebro SK,Jonkopings Sodra,3,0,H
+2023-08-14,Orgryte IS,Skovde AIK,1,2,A
+2023-08-18,Gais,AFC Eskilstuna,3,0,H
+2023-08-18,Utsikten,Vasteras SK FK,4,0,H
+2023-08-19,Landskrona BoIS,IK brage,3,0,H
+2023-08-19,Skovde AIK,GIF Sundsvall,2,0,H
+2023-08-19,Jonkopings Sodra,Helsingborg,2,2,D
+2023-08-19,Gefle IF,Orebro SK,2,1,H
+2023-08-20,Trelleborg,Osters IF,1,3,A
+2023-08-20,Orgryte IS,Ostersunds FK,2,2,D
+2023-08-26,Orebro SK,Vasteras SK FK,1,1,D
+2023-08-27,IK brage,Utsikten,3,0,H
+2023-08-27,Ostersunds FK,Trelleborg,2,2,D
+2023-08-27,Osters IF,Orgryte IS,2,0,H
+2023-08-28,GIF Sundsvall,Jonkopings Sodra,3,2,H
+2023-08-28,AFC Eskilstuna,Gefle IF,2,1,H
+2023-08-28,Gais,Skovde AIK,3,1,H
+2023-08-29,Helsingborg,Landskrona BoIS,1,2,A
+2023-09-01,Orgryte IS,Orebro SK,0,3,A
+2023-09-02,Landskrona BoIS,Gais,2,1,H
+2023-09-02,Utsikten,Ostersunds FK,0,0,D
+2023-09-02,Gefle IF,Jonkopings Sodra,1,0,H
+2023-09-02,Vasteras SK FK,IK brage,0,0,D
+2023-09-02,Skovde AIK,Osters IF,1,2,A
+2023-09-03,Trelleborg,AFC Eskilstuna,2,0,H
+2023-09-03,Helsingborg,GIF Sundsvall,3,2,H
+2023-09-16,AFC Eskilstuna,Orgryte IS,1,3,A
+2023-09-16,Ostersunds FK,Gefle IF,2,2,D
+2023-09-16,IK brage,Trelleborg,1,1,D
+2023-09-17,Gais,Helsingborg,4,1,H
+2023-09-17,GIF Sundsvall,Utsikten,1,0,H
+2023-09-17,Orebro SK,Skovde AIK,5,3,H
+2023-09-18,Jonkopings Sodra,Landskrona BoIS,1,2,A
+2023-09-18,Osters IF,Vasteras SK FK,2,2,D
+2023-09-22,Helsingborg,AFC Eskilstuna,1,0,H
+2023-09-22,IK brage,Orebro SK,2,1,H
+2023-09-23,Landskrona BoIS,Osters IF,2,2,D
+2023-09-23,Jonkopings Sodra,Orgryte IS,2,1,H
+2023-09-23,Gefle IF,Gais,0,6,A
+2023-09-23,Vasteras SK FK,GIF Sundsvall,2,0,H
+2023-09-23,Skovde AIK,Ostersunds FK,5,1,H
+2023-09-24,Utsikten,Trelleborg,2,3,A
+2023-09-27,Ostersunds FK,IK brage,2,0,H
+2023-09-27,AFC Eskilstuna,Vasteras SK FK,1,2,A
+2023-09-27,Osters IF,Helsingborg,1,1,D
+2023-09-27,Skovde AIK,Landskrona BoIS,4,2,H
+2023-09-28,Orebro SK,Utsikten,5,1,H
+2023-09-28,Trelleborg,Jonkopings Sodra,2,1,H
+2023-09-28,GIF Sundsvall,Gefle IF,2,2,D
+2023-09-28,Orgryte IS,Gais,1,4,A
+2023-10-01,Vasteras SK FK,Trelleborg,3,0,H
+2023-10-02,Jonkopings Sodra,Ostersunds FK,1,1,D
+2023-10-02,IK brage,Skovde AIK,3,2,H
+2023-10-02,Utsikten,AFC Eskilstuna,1,1,D
+2023-10-03,Helsingborg,Orebro SK,4,1,H
+2023-10-03,Gefle IF,Orgryte IS,0,1,A
+2023-10-03,Gais,Osters IF,1,0,H
+2023-10-03,Landskrona BoIS,GIF Sundsvall,2,2,D
+2023-10-07,Osters IF,Orebro SK,3,0,H
+2023-10-07,Vasteras SK FK,Jonkopings Sodra,3,1,H
+2023-10-07,Skovde AIK,Gefle IF,3,1,H
+2023-10-07,Ostersunds FK,Helsingborg,1,0,H
+2023-10-08,Trelleborg,Gais,0,6,A
+2023-10-08,AFC Eskilstuna,Landskrona BoIS,0,1,A
+2023-10-08,GIF Sundsvall,IK brage,1,2,A
+2023-10-08,Orgryte IS,Utsikten,2,2,D
+2023-10-21,Gais,Ostersunds FK,2,1,H
+2023-10-21,Helsingborg,Gefle IF,0,0,D
+2023-10-22,Landskrona BoIS,Vasteras SK FK,0,1,A
+2023-10-22,Orgryte IS,Trelleborg,0,2,A
+2023-10-22,IK brage,AFC Eskilstuna,4,0,H
+2023-10-23,Jonkopings Sodra,Skovde AIK,2,2,D
+2023-10-24,Orebro SK,GIF Sundsvall,0,1,A
+2023-10-24,Utsikten,Osters IF,2,1,H
+2023-10-28,Gefle IF,Landskrona BoIS,3,3,D
+2023-10-28,Trelleborg,Helsingborg,0,0,D
+2023-10-28,Ostersunds FK,Orebro SK,4,3,H
+2023-10-28,AFC Eskilstuna,Jonkopings Sodra,2,2,D
+2023-10-29,Osters IF,IK brage,1,0,H
+2023-10-29,Vasteras SK FK,Gais,2,1,H
+2023-10-29,Skovde AIK,Utsikten,2,0,H
+2023-10-30,GIF Sundsvall,Orgryte IS,1,0,H
+2023-11-03,Utsikten,Gefle IF,0,0,D
+2023-11-04,Ostersunds FK,Osters IF,1,2,A
+2023-11-04,Helsingborg,IK brage,2,0,H
+2023-11-04,Orgryte IS,Vasteras SK FK,1,0,H
+2023-11-04,Orebro SK,Landskrona BoIS,4,0,H
+2023-11-05,Jonkopings Sodra,Gais,0,2,A
+2023-11-05,Trelleborg,Skovde AIK,2,2,D
+2023-11-05,GIF Sundsvall,AFC Eskilstuna,1,1,D
+2023-11-11,AFC Eskilstuna,Orebro SK,3,0,H
+2023-11-11,Gefle IF,Trelleborg,1,1,D
+2023-11-11,Gais,Utsikten,0,1,A
+2023-11-11,Osters IF,GIF Sundsvall,4,0,H
+2023-11-11,IK brage,Jonkopings Sodra,4,0,H
+2023-11-11,Landskrona BoIS,Orgryte IS,1,2,A
+2023-11-11,Vasteras SK FK,Ostersunds FK,0,2,A
+2023-11-11,Skovde AIK,Helsingborg,1,0,H
+2023-11-23,Falkenbergs FF,Skovde AIK,2,2,D
+2023-11-23,United Nordic,Orgryte IS,0,1,A
+2023-11-26,Skovde AIK,Falkenbergs FF,3,0,H
+2023-11-26,Orgryte IS,United Nordic,1,0,H

@@ -2,25 +2,25 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2018-07-20,Aluminij,Celje,2,1,H
 2018-07-21,Mura,Triglav,1,1,D
 2018-07-21,Gorica,Olimpija Ljubljana,2,0,H
-2018-07-22,Rudar,Maribor,0,5,A
+2018-07-22,Rudar Velenje,Maribor,0,5,A
 2018-07-22,NK Domzale,Krsko,2,0,H
 2018-07-27,Celje,Gorica,2,2,D
 2018-07-28,Triglav,Aluminij,1,3,A
 2018-07-29,Maribor,Mura,0,0,D
-2018-07-29,NK Domzale,Rudar,3,1,H
+2018-07-29,NK Domzale,Rudar Velenje,3,1,H
 2018-07-29,Krsko,Olimpija Ljubljana,0,0,D
 2018-08-05,Aluminij,Maribor,2,5,A
 2018-08-05,Mura,NK Domzale,5,1,H
 2018-08-05,Olimpija Ljubljana,Celje,2,2,D
-2018-08-06,Rudar,Krsko,1,1,D
+2018-08-06,Rudar Velenje,Krsko,1,1,D
 2018-08-06,Gorica,Triglav,1,1,D
 2018-08-11,Krsko,Celje,1,1,D
 2018-08-12,Triglav,Olimpija Ljubljana,0,4,A
 2018-08-12,Maribor,Gorica,5,0,H
 2018-08-12,NK Domzale,Aluminij,3,1,H
-2018-08-13,Rudar,Mura,3,2,H
+2018-08-13,Rudar Velenje,Mura,3,2,H
 2018-08-18,Celje,Triglav,1,3,A
-2018-08-18,Aluminij,Rudar,3,0,H
+2018-08-18,Aluminij,Rudar Velenje,3,0,H
 2018-08-19,Mura,Krsko,0,1,A
 2018-08-19,Gorica,NK Domzale,1,0,H
 2018-08-19,Olimpija Ljubljana,Maribor,0,3,A
@@ -28,38 +28,38 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2018-08-26,Mura,Aluminij,3,2,H
 2018-08-26,NK Domzale,Olimpija Ljubljana,1,2,A
 2018-08-26,Maribor,Celje,1,1,D
-2018-08-29,Rudar,Gorica,0,2,A
+2018-08-29,Rudar Velenje,Gorica,0,2,A
 2018-08-31,Aluminij,Krsko,1,0,H
 2018-08-31,Celje,NK Domzale,0,0,D
 2018-09-02,Triglav,Maribor,1,5,A
 2018-09-02,Gorica,Mura,2,2,D
-2018-09-02,Olimpija Ljubljana,Rudar,5,0,H
+2018-09-02,Olimpija Ljubljana,Rudar Velenje,5,0,H
 2018-09-15,Aluminij,Gorica,0,0,D
-2018-09-15,Rudar,Celje,0,1,A
+2018-09-15,Rudar Velenje,Celje,0,1,A
 2018-09-15,Krsko,Maribor,0,2,A
 2018-09-16,Mura,Olimpija Ljubljana,0,2,A
 2018-09-16,NK Domzale,Triglav,1,2,A
 2018-09-22,Gorica,Krsko,1,0,H
 2018-09-22,Maribor,NK Domzale,2,2,D
-2018-09-23,Triglav,Rudar,1,2,A
+2018-09-23,Triglav,Rudar Velenje,1,2,A
 2018-09-23,Celje,Mura,1,0,H
 2018-09-23,Olimpija Ljubljana,Aluminij,3,1,H
 2018-09-26,Krsko,NK Domzale,0,4,A
 2018-09-27,Triglav,Mura,3,0,H
-2018-09-27,Maribor,Rudar,3,0,H
+2018-09-27,Maribor,Rudar Velenje,3,0,H
 2018-09-27,Celje,Aluminij,1,1,D
 2018-09-27,Olimpija Ljubljana,Gorica,2,2,D
 2018-09-30,Mura,Maribor,4,1,H
-2018-09-30,Rudar,NK Domzale,2,1,H
+2018-09-30,Rudar Velenje,NK Domzale,2,1,H
 2018-09-30,Olimpija Ljubljana,Krsko,1,1,D
 2018-10-01,Gorica,Celje,1,1,D
 2018-10-01,Aluminij,Triglav,2,0,H
-2018-10-05,Krsko,Rudar,0,0,D
+2018-10-05,Krsko,Rudar Velenje,0,0,D
 2018-10-06,NK Domzale,Mura,2,2,D
 2018-10-06,Maribor,Aluminij,2,1,H
 2018-10-06,Celje,Olimpija Ljubljana,1,3,A
 2018-10-07,Triglav,Gorica,2,4,A
-2018-10-20,Mura,Rudar,2,1,H
+2018-10-20,Mura,Rudar Velenje,2,1,H
 2018-10-20,Gorica,Maribor,0,3,A
 2018-10-20,Aluminij,NK Domzale,0,0,D
 2018-10-21,Celje,Krsko,2,1,H
@@ -67,8 +67,8 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2018-10-27,Triglav,Celje,1,2,A
 2018-10-27,Maribor,Olimpija Ljubljana,1,2,A
 2018-10-28,Krsko,Mura,2,0,H
-2018-10-28,Rudar,Aluminij,3,2,H
-2018-11-03,Gorica,Rudar,2,2,D
+2018-10-28,Rudar Velenje,Aluminij,3,2,H
+2018-11-03,Gorica,Rudar Velenje,2,2,D
 2018-11-04,Triglav,Krsko,4,3,H
 2018-11-04,Celje,Maribor,0,5,A
 2018-11-04,Olimpija Ljubljana,NK Domzale,4,4,D
@@ -77,10 +77,10 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2018-11-10,Mura,Gorica,1,0,H
 2018-11-10,Maribor,Triglav,4,1,H
 2018-11-11,NK Domzale,Celje,1,1,D
-2018-11-11,Rudar,Olimpija Ljubljana,1,2,A
+2018-11-11,Rudar Velenje,Olimpija Ljubljana,1,2,A
 2018-11-11,Krsko,Aluminij,1,3,A
 2018-11-23,Olimpija Ljubljana,Mura,2,2,D
-2018-11-24,Celje,Rudar,2,0,H
+2018-11-24,Celje,Rudar Velenje,2,0,H
 2018-11-24,Maribor,Krsko,3,0,H
 2018-11-25,Triglav,NK Domzale,1,4,A
 2018-11-25,Gorica,Aluminij,0,1,A
@@ -88,8 +88,8 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2018-12-01,NK Domzale,Maribor,1,2,A
 2018-12-01,Krsko,Gorica,1,0,H
 2018-12-02,Mura,Celje,0,1,A
-2018-12-02,Rudar,Triglav,3,1,H
-2018-12-07,Rudar,Maribor,1,3,A
+2018-12-02,Rudar Velenje,Triglav,3,1,H
+2018-12-07,Rudar Velenje,Maribor,1,3,A
 2018-12-08,Gorica,Olimpija Ljubljana,1,3,A
 2018-12-08,NK Domzale,Krsko,2,1,H
 2018-12-09,Mura,Triglav,0,0,D
@@ -97,39 +97,39 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2019-02-23,Celje,Gorica,4,3,H
 2019-02-23,Maribor,Mura,1,1,D
 2019-02-24,Triglav,Aluminij,3,0,H
-2019-02-24,NK Domzale,Rudar,6,2,H
+2019-02-24,NK Domzale,Rudar Velenje,6,2,H
 2019-02-24,Krsko,Olimpija Ljubljana,1,4,A
 2019-03-02,Mura,NK Domzale,0,0,D
 2019-03-02,Olimpija Ljubljana,Celje,2,0,H
 2019-03-03,Aluminij,Maribor,0,1,A
-2019-03-03,Rudar,Krsko,1,0,H
+2019-03-03,Rudar Velenje,Krsko,1,0,H
 2019-03-03,Gorica,Triglav,1,2,A
 2019-03-09,Triglav,Olimpija Ljubljana,2,1,H
 2019-03-09,Maribor,Gorica,2,1,H
 2019-03-10,Krsko,Celje,1,1,D
-2019-03-10,Rudar,Mura,1,0,H
+2019-03-10,Rudar Velenje,Mura,1,0,H
 2019-03-10,NK Domzale,Aluminij,3,0,H
 2019-03-16,Celje,Triglav,4,0,H
 2019-03-16,Mura,Krsko,5,0,H
 2019-03-16,Olimpija Ljubljana,Maribor,0,0,D
-2019-03-17,Aluminij,Rudar,4,0,H
+2019-03-17,Aluminij,Rudar Velenje,4,0,H
 2019-03-17,Gorica,NK Domzale,2,1,H
 2019-03-30,NK Domzale,Olimpija Ljubljana,1,3,A
 2019-03-30,Maribor,Celje,1,1,D
-2019-03-30,Rudar,Gorica,2,2,D
+2019-03-30,Rudar Velenje,Gorica,2,2,D
 2019-03-31,Krsko,Triglav,1,3,A
 2019-03-31,Mura,Aluminij,3,0,H
 2019-04-06,Triglav,Maribor,1,2,A
 2019-04-06,Celje,NK Domzale,2,3,A
 2019-04-07,Gorica,Mura,0,1,A
-2019-04-07,Olimpija Ljubljana,Rudar,3,3,D
+2019-04-07,Olimpija Ljubljana,Rudar Velenje,3,3,D
 2019-04-07,Aluminij,Krsko,1,1,D
-2019-04-10,Rudar,Celje,0,3,A
+2019-04-10,Rudar Velenje,Celje,0,3,A
 2019-04-10,Krsko,Maribor,0,1,A
 2019-04-10,NK Domzale,Triglav,6,1,H
 2019-04-11,Aluminij,Gorica,3,1,H
 2019-04-11,Mura,Olimpija Ljubljana,0,0,D
-2019-04-13,Triglav,Rudar,0,4,A
+2019-04-13,Triglav,Rudar Velenje,0,4,A
 2019-04-13,Maribor,NK Domzale,1,0,H
 2019-04-14,Celje,Mura,0,2,A
 2019-04-14,Olimpija Ljubljana,Aluminij,2,0,H
@@ -137,9 +137,9 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2019-04-19,Olimpija Ljubljana,Gorica,3,1,H
 2019-04-19,Celje,Aluminij,1,0,H
 2019-04-20,Triglav,Mura,2,1,H
-2019-04-20,Maribor,Rudar,3,1,H
+2019-04-20,Maribor,Rudar Velenje,3,1,H
 2019-04-22,Krsko,NK Domzale,1,2,A
-2019-04-27,Rudar,NK Domzale,1,2,A
+2019-04-27,Rudar Velenje,NK Domzale,1,2,A
 2019-04-27,Aluminij,Triglav,2,1,H
 2019-04-28,Gorica,Celje,4,0,H
 2019-04-28,Mura,Maribor,2,2,D
@@ -148,34 +148,34 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2019-05-01,Maribor,Aluminij,1,1,D
 2019-05-02,Triglav,Gorica,1,1,D
 2019-05-02,Celje,Olimpija Ljubljana,1,0,H
-2019-05-02,Krsko,Rudar,1,2,A
+2019-05-02,Krsko,Rudar Velenje,1,2,A
 2019-05-04,Aluminij,NK Domzale,0,3,A
-2019-05-05,Mura,Rudar,3,3,D
+2019-05-05,Mura,Rudar Velenje,3,3,D
 2019-05-05,Gorica,Maribor,1,3,A
 2019-05-05,Olimpija Ljubljana,Triglav,4,2,H
 2019-05-06,Celje,Krsko,0,0,D
 2019-05-10,NK Domzale,Gorica,2,1,H
-2019-05-10,Rudar,Aluminij,3,0,H
+2019-05-10,Rudar Velenje,Aluminij,3,0,H
 2019-05-11,Krsko,Mura,0,3,A
 2019-05-11,Maribor,Olimpija Ljubljana,0,3,A
 2019-05-12,Triglav,Celje,0,3,A
-2019-05-14,Gorica,Rudar,1,2,A
+2019-05-14,Gorica,Rudar Velenje,1,2,A
 2019-05-15,Triglav,Krsko,3,1,H
 2019-05-15,Olimpija Ljubljana,NK Domzale,1,4,A
 2019-05-15,Aluminij,Mura,0,1,A
 2019-05-15,Celje,Maribor,1,3,A
-2019-05-18,Rudar,Olimpija Ljubljana,1,2,A
+2019-05-18,Rudar Velenje,Olimpija Ljubljana,1,2,A
 2019-05-18,Maribor,Triglav,3,3,D
 2019-05-18,Mura,Gorica,3,0,H
 2019-05-18,NK Domzale,Celje,1,1,D
 2019-05-19,Krsko,Aluminij,1,3,A
 2019-05-22,Maribor,Krsko,2,0,H
 2019-05-22,Olimpija Ljubljana,Mura,1,0,H
-2019-05-22,Celje,Rudar,0,2,A
+2019-05-22,Celje,Rudar Velenje,0,2,A
 2019-05-22,Gorica,Aluminij,0,0,D
 2019-05-22,Triglav,NK Domzale,1,4,A
 2019-05-25,NK Domzale,Maribor,2,1,H
 2019-05-25,Mura,Celje,1,1,D
 2019-05-25,Aluminij,Olimpija Ljubljana,1,0,H
-2019-05-25,Rudar,Triglav,2,2,D
+2019-05-25,Rudar Velenje,Triglav,2,2,D
 2019-05-25,Krsko,Gorica,3,2,H

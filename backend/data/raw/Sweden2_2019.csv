@@ -1,0 +1,241 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2019-03-30,IF Brommapojkarna,Vasteras SK FK,1,2,A
+2019-03-30,Trelleborg,Gais,2,2,D
+2019-03-30,Orgryte IS,Norrby IF,1,1,D
+2019-03-30,Mjallby AIF,Varbergs BoIS FC,0,1,A
+2019-03-31,Osters IF,Dalkurd FF,0,0,D
+2019-03-31,Syrianska FC,Degerfors IF,1,4,A
+2019-04-01,IK brage,IK Frej,2,0,H
+2019-04-02,Jonkopings Sodra,Halmstad,0,1,A
+2019-04-05,Gais,Osters IF,1,1,D
+2019-04-06,Degerfors IF,Jonkopings Sodra,2,1,H
+2019-04-06,Halmstad,Orgryte IS,1,3,A
+2019-04-07,Dalkurd FF,IF Brommapojkarna,0,4,A
+2019-04-07,Varbergs BoIS FC,Trelleborg,3,1,H
+2019-04-07,IK Frej,Syrianska FC,0,3,A
+2019-04-08,Norrby IF,Mjallby AIF,2,1,H
+2019-04-09,Vasteras SK FK,IK brage,1,1,D
+2019-04-12,Jonkopings Sodra,Dalkurd FF,1,0,H
+2019-04-13,Mjallby AIF,Vasteras SK FK,2,1,H
+2019-04-13,IK brage,Halmstad,2,0,H
+2019-04-14,IF Brommapojkarna,Gais,1,2,A
+2019-04-14,Syrianska FC,Varbergs BoIS FC,1,5,A
+2019-04-15,Trelleborg,Norrby IF,1,1,D
+2019-04-15,Orgryte IS,IK Frej,2,0,H
+2019-04-16,Osters IF,Degerfors IF,1,1,D
+2019-04-19,Gais,IK brage,0,3,A
+2019-04-20,Degerfors IF,Orgryte IS,1,2,A
+2019-04-21,Norrby IF,Jonkopings Sodra,1,7,A
+2019-04-21,Dalkurd FF,Mjallby AIF,2,1,H
+2019-04-22,Vasteras SK FK,Trelleborg,0,0,D
+2019-04-22,Halmstad,Syrianska FC,2,2,D
+2019-04-22,IK Frej,Osters IF,3,2,H
+2019-04-22,Varbergs BoIS FC,IF Brommapojkarna,3,0,H
+2019-04-26,Orgryte IS,Vasteras SK FK,0,2,A
+2019-04-27,Mjallby AIF,Degerfors IF,1,0,H
+2019-04-27,IF Brommapojkarna,Halmstad,2,1,H
+2019-04-27,Jonkopings Sodra,IK Frej,1,1,D
+2019-04-28,Trelleborg,Dalkurd FF,2,0,H
+2019-04-28,IK brage,Varbergs BoIS FC,1,2,A
+2019-04-28,Syrianska FC,Gais,0,0,D
+2019-04-29,Osters IF,Norrby IF,0,1,A
+2019-05-03,Norrby IF,IF Brommapojkarna,2,0,H
+2019-05-04,Mjallby AIF,Orgryte IS,2,1,H
+2019-05-04,Vasteras SK FK,Varbergs BoIS FC,1,2,A
+2019-05-05,Gais,Jonkopings Sodra,1,0,H
+2019-05-05,Halmstad,Osters IF,0,1,A
+2019-05-06,Dalkurd FF,Syrianska FC,4,1,H
+2019-05-06,IK Frej,Trelleborg,3,3,D
+2019-05-07,Degerfors IF,IK brage,1,0,H
+2019-05-10,Gais,IK Frej,0,1,A
+2019-05-11,Trelleborg,Halmstad,0,1,A
+2019-05-11,IF Brommapojkarna,Degerfors IF,2,3,A
+2019-05-11,Varbergs BoIS FC,Dalkurd FF,2,0,H
+2019-05-11,Orgryte IS,Jonkopings Sodra,1,1,D
+2019-05-12,Osters IF,Vasteras SK FK,0,0,D
+2019-05-12,Syrianska FC,Mjallby AIF,1,2,A
+2019-05-12,IK brage,Norrby IF,0,0,D
+2019-05-14,Halmstad,Gais,1,2,A
+2019-05-15,IK Frej,IF Brommapojkarna,1,1,D
+2019-05-15,Orgryte IS,Varbergs BoIS FC,1,1,D
+2019-05-15,Mjallby AIF,Trelleborg,2,1,H
+2019-05-16,Dalkurd FF,IK brage,1,3,A
+2019-05-16,Jonkopings Sodra,Osters IF,2,0,H
+2019-05-16,Degerfors IF,Norrby IF,0,0,D
+2019-05-16,Vasteras SK FK,Syrianska FC,0,0,D
+2019-05-18,Varbergs BoIS FC,Halmstad,1,0,H
+2019-05-19,Trelleborg,Orgryte IS,2,1,H
+2019-05-19,Norrby IF,IK Frej,3,0,H
+2019-05-19,Osters IF,Mjallby AIF,0,1,A
+2019-05-20,IF Brommapojkarna,Jonkopings Sodra,0,2,A
+2019-05-20,IK brage,Syrianska FC,1,0,H
+2019-05-21,Gais,Vasteras SK FK,1,1,D
+2019-05-21,Degerfors IF,Dalkurd FF,1,2,A
+2019-05-25,Halmstad,Degerfors IF,3,0,H
+2019-05-25,IK Frej,Varbergs BoIS FC,1,1,D
+2019-05-25,Syrianska FC,IF Brommapojkarna,1,0,H
+2019-05-25,Jonkopings Sodra,IK brage,2,0,H
+2019-05-26,Mjallby AIF,Gais,2,0,H
+2019-05-26,Trelleborg,Osters IF,1,1,D
+2019-05-27,Vasteras SK FK,Norrby IF,1,3,A
+2019-05-28,Dalkurd FF,Orgryte IS,3,2,H
+2019-06-01,Halmstad,Vasteras SK FK,0,0,D
+2019-06-01,Degerfors IF,IK Frej,2,3,A
+2019-06-01,Norrby IF,Dalkurd FF,0,0,D
+2019-06-01,Mjallby AIF,Jonkopings Sodra,1,0,H
+2019-06-02,Varbergs BoIS FC,Gais,2,1,H
+2019-06-02,IF Brommapojkarna,Trelleborg,2,3,A
+2019-06-03,Osters IF,IK brage,2,2,D
+2019-06-04,Orgryte IS,Syrianska FC,2,0,H
+2019-06-08,Trelleborg,Degerfors IF,0,0,D
+2019-06-08,IF Brommapojkarna,Mjallby AIF,1,1,D
+2019-06-08,Vasteras SK FK,IK Frej,2,0,H
+2019-06-09,Dalkurd FF,Halmstad,1,0,H
+2019-06-11,IK brage,Orgryte IS,0,1,A
+2019-06-14,Syrianska FC,Jonkopings Sodra,2,1,H
+2019-06-15,IK Frej,Dalkurd FF,1,3,A
+2019-06-15,Varbergs BoIS FC,Norrby IF,3,2,H
+2019-06-15,Osters IF,IF Brommapojkarna,2,2,D
+2019-06-15,IK brage,Trelleborg,2,0,H
+2019-06-15,Degerfors IF,Vasteras SK FK,3,2,H
+2019-06-16,Halmstad,Mjallby AIF,2,0,H
+2019-06-17,Orgryte IS,Gais,1,0,H
+2019-06-19,Jonkopings Sodra,Varbergs BoIS FC,3,1,H
+2019-06-23,Jonkopings Sodra,Trelleborg,2,0,H
+2019-06-23,Mjallby AIF,IK brage,1,2,A
+2019-06-23,IF Brommapojkarna,Orgryte IS,0,0,D
+2019-06-23,Halmstad,IK Frej,4,1,H
+2019-06-24,Gais,Degerfors IF,0,3,A
+2019-06-24,Norrby IF,Syrianska FC,3,2,H
+2019-06-24,Osters IF,Varbergs BoIS FC,1,1,D
+2019-06-25,Dalkurd FF,Vasteras SK FK,1,6,A
+2019-07-10,Varbergs BoIS FC,Degerfors IF,1,0,H
+2019-07-13,Trelleborg,Syrianska FC,1,2,A
+2019-07-13,IK Frej,Mjallby AIF,1,2,A
+2019-07-13,Orgryte IS,Osters IF,2,0,H
+2019-07-13,IK brage,IF Brommapojkarna,3,1,H
+2019-07-14,Gais,Dalkurd FF,1,5,A
+2019-07-14,Norrby IF,Halmstad,0,1,A
+2019-07-16,Vasteras SK FK,Jonkopings Sodra,2,2,D
+2019-07-20,Dalkurd FF,Varbergs BoIS FC,1,0,H
+2019-07-20,IF Brommapojkarna,Norrby IF,3,1,H
+2019-07-20,Syrianska FC,IK brage,0,2,A
+2019-07-20,Degerfors IF,Gais,0,1,A
+2019-07-20,IK Frej,Orgryte IS,1,1,D
+2019-07-21,Mjallby AIF,Halmstad,2,0,H
+2019-07-21,Osters IF,Trelleborg,0,2,A
+2019-07-23,Jonkopings Sodra,Vasteras SK FK,2,1,H
+2019-07-24,Gais,Norrby IF,1,0,H
+2019-07-25,Halmstad,IF Brommapojkarna,2,2,D
+2019-07-27,Trelleborg,IK Frej,1,0,H
+2019-07-27,Gais,Syrianska FC,0,1,A
+2019-07-27,Norrby IF,Osters IF,3,1,H
+2019-07-27,IK brage,Mjallby AIF,1,2,A
+2019-07-27,Jonkopings Sodra,Degerfors IF,1,1,D
+2019-07-28,Vasteras SK FK,Dalkurd FF,1,1,D
+2019-07-28,Varbergs BoIS FC,Orgryte IS,1,2,A
+2019-07-31,Syrianska FC,Osters IF,1,1,D
+2019-08-01,Mjallby AIF,Norrby IF,1,1,D
+2019-08-03,Dalkurd FF,Jonkopings Sodra,0,2,A
+2019-08-03,Degerfors IF,Varbergs BoIS FC,3,1,H
+2019-08-03,IF Brommapojkarna,IK brage,1,2,A
+2019-08-04,IK Frej,Vasteras SK FK,1,1,D
+2019-08-04,Syrianska FC,Trelleborg,2,2,D
+2019-08-04,Osters IF,Gais,2,1,H
+2019-08-06,Orgryte IS,Halmstad,3,1,H
+2019-08-09,Varbergs BoIS FC,IK Frej,2,2,D
+2019-08-10,Halmstad,Dalkurd FF,2,0,H
+2019-08-10,Norrby IF,Degerfors IF,1,0,H
+2019-08-11,Trelleborg,IF Brommapojkarna,1,1,D
+2019-08-11,IK brage,Osters IF,5,1,H
+2019-08-11,Gais,Mjallby AIF,1,2,A
+2019-08-11,Vasteras SK FK,Orgryte IS,2,0,H
+2019-08-12,Jonkopings Sodra,Syrianska FC,3,1,H
+2019-08-16,IK Frej,Jonkopings Sodra,1,3,A
+2019-08-17,Vasteras SK FK,Halmstad,2,3,A
+2019-08-17,Orgryte IS,Mjallby AIF,1,1,D
+2019-08-17,Syrianska FC,Norrby IF,4,4,D
+2019-08-17,Degerfors IF,Trelleborg,2,2,D
+2019-08-18,Dalkurd FF,Gais,3,0,H
+2019-08-18,IF Brommapojkarna,Osters IF,1,1,D
+2019-08-19,Varbergs BoIS FC,IK brage,0,0,D
+2019-08-24,Syrianska FC,Vasteras SK FK,1,2,A
+2019-08-25,IK Frej,Degerfors IF,2,3,A
+2019-08-25,Osters IF,Orgryte IS,1,3,A
+2019-08-25,Mjallby AIF,Dalkurd FF,3,2,H
+2019-08-25,Gais,IF Brommapojkarna,2,0,H
+2019-08-26,Trelleborg,Varbergs BoIS FC,0,1,A
+2019-08-26,Norrby IF,IK brage,1,3,A
+2019-08-27,Halmstad,Jonkopings Sodra,1,2,A
+2019-08-30,IK brage,Gais,1,1,D
+2019-08-31,Degerfors IF,Halmstad,2,1,H
+2019-08-31,Mjallby AIF,IK Frej,2,1,H
+2019-08-31,Varbergs BoIS FC,Osters IF,0,0,D
+2019-09-01,IF Brommapojkarna,Syrianska FC,1,1,D
+2019-09-01,Jonkopings Sodra,Orgryte IS,5,2,H
+2019-09-01,Dalkurd FF,Norrby IF,3,1,H
+2019-09-01,Trelleborg,Vasteras SK FK,2,1,H
+2019-09-13,Gais,Halmstad,1,1,D
+2019-09-14,Orgryte IS,Trelleborg,0,1,A
+2019-09-14,Syrianska FC,IK Frej,0,3,A
+2019-09-14,Osters IF,Jonkopings Sodra,0,2,A
+2019-09-15,IK brage,Dalkurd FF,3,1,H
+2019-09-15,Norrby IF,Varbergs BoIS FC,1,1,D
+2019-09-16,Vasteras SK FK,IF Brommapojkarna,1,2,A
+2019-09-17,Degerfors IF,Mjallby AIF,2,1,H
+2019-09-20,IK Frej,Gais,1,0,H
+2019-09-20,Orgryte IS,IK brage,3,2,H
+2019-09-21,Varbergs BoIS FC,Syrianska FC,5,0,H
+2019-09-21,Dalkurd FF,Osters IF,2,1,H
+2019-09-21,Jonkopings Sodra,Norrby IF,0,2,A
+2019-09-22,Mjallby AIF,IF Brommapojkarna,0,2,A
+2019-09-22,Vasteras SK FK,Degerfors IF,1,0,H
+2019-09-22,Halmstad,Trelleborg,3,0,H
+2019-09-24,Gais,Orgryte IS,0,0,D
+2019-09-24,Varbergs BoIS FC,Jonkopings Sodra,0,0,D
+2019-09-25,Trelleborg,Mjallby AIF,0,3,A
+2019-09-25,IF Brommapojkarna,IK Frej,0,3,A
+2019-09-25,Syrianska FC,Dalkurd FF,1,2,A
+2019-09-25,Norrby IF,Vasteras SK FK,1,0,H
+2019-09-25,Osters IF,Halmstad,1,0,H
+2019-09-26,IK brage,Degerfors IF,1,2,A
+2019-09-28,Orgryte IS,IF Brommapojkarna,3,2,H
+2019-09-29,Dalkurd FF,Trelleborg,3,2,H
+2019-09-29,Halmstad,Varbergs BoIS FC,3,2,H
+2019-09-29,Vasteras SK FK,Osters IF,1,2,A
+2019-09-30,IK Frej,IK brage,2,3,A
+2019-09-30,Degerfors IF,Syrianska FC,2,0,H
+2019-10-01,Jonkopings Sodra,Mjallby AIF,0,0,D
+2019-10-01,Norrby IF,Gais,0,1,A
+2019-10-05,Varbergs BoIS FC,Vasteras SK FK,4,0,H
+2019-10-05,Mjallby AIF,Osters IF,3,2,H
+2019-10-05,Degerfors IF,IF Brommapojkarna,2,1,H
+2019-10-06,Dalkurd FF,IK Frej,1,1,D
+2019-10-06,Halmstad,Norrby IF,3,0,H
+2019-10-06,Syrianska FC,Orgryte IS,1,0,H
+2019-10-06,Trelleborg,IK brage,2,2,D
+2019-10-06,Jonkopings Sodra,Gais,1,2,A
+2019-10-18,IK Frej,Halmstad,0,3,A
+2019-10-19,Gais,Varbergs BoIS FC,0,1,A
+2019-10-19,IF Brommapojkarna,Dalkurd FF,2,1,H
+2019-10-19,Vasteras SK FK,Mjallby AIF,2,2,D
+2019-10-20,IK brage,Jonkopings Sodra,3,1,H
+2019-10-20,Norrby IF,Trelleborg,4,0,H
+2019-10-21,Osters IF,Syrianska FC,4,0,H
+2019-10-22,Orgryte IS,Degerfors IF,1,1,D
+2019-10-25,IK Frej,Norrby IF,1,0,H
+2019-10-26,Trelleborg,Jonkopings Sodra,2,3,A
+2019-10-26,Degerfors IF,Osters IF,2,0,H
+2019-10-26,Vasteras SK FK,Gais,4,1,H
+2019-10-27,Halmstad,IK brage,3,2,H
+2019-10-27,IF Brommapojkarna,Varbergs BoIS FC,1,1,D
+2019-10-28,Orgryte IS,Dalkurd FF,0,0,D
+2019-10-28,Mjallby AIF,Syrianska FC,2,0,H
+2019-11-03,Dalkurd FF,Degerfors IF,1,3,A
+2019-11-03,Jonkopings Sodra,IF Brommapojkarna,2,2,D
+2019-11-03,Syrianska FC,Halmstad,0,2,A
+2019-11-03,Gais,Trelleborg,0,0,D
+2019-11-03,Varbergs BoIS FC,Mjallby AIF,1,1,D
+2019-11-03,Norrby IF,Orgryte IS,4,4,D
+2019-11-03,Osters IF,IK Frej,4,0,H
+2019-11-03,IK brage,Vasteras SK FK,2,1,H

@@ -1,0 +1,241 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2017-04-01,Helsingborg,Trelleborg,1,0,H
+2017-04-01,Dalkurd FF,IF Brommapojkarna,0,0,D
+2017-04-02,Falkenbergs FF,Osters IF,0,2,A
+2017-04-02,Syrianska FC,Degerfors IF,2,3,A
+2017-04-02,IFK Varnamo,Atvidabergs FF,4,0,H
+2017-04-02,IK Frej,Gefle IF,2,2,D
+2017-04-02,Norrby IF,Gais,0,0,D
+2017-04-03,Orgryte IS,Varbergs BoIS FC,2,1,H
+2017-04-07,Gefle IF,IFK Varnamo,2,5,A
+2017-04-08,Degerfors IF,Norrby IF,2,0,H
+2017-04-08,IF Brommapojkarna,Orgryte IS,3,0,H
+2017-04-08,Gais,Dalkurd FF,0,1,A
+2017-04-09,Varbergs BoIS FC,Helsingborg,3,3,D
+2017-04-09,Trelleborg,Falkenbergs FF,2,2,D
+2017-04-10,Atvidabergs FF,IK Frej,1,2,A
+2017-04-10,Osters IF,Syrianska FC,2,1,H
+2017-04-14,Orgryte IS,Atvidabergs FF,2,1,H
+2017-04-16,Dalkurd FF,Varbergs BoIS FC,0,0,D
+2017-04-16,Syrianska FC,Gais,2,1,H
+2017-04-16,Norrby IF,Trelleborg,1,1,D
+2017-04-17,Helsingborg,Gefle IF,1,1,D
+2017-04-17,IK Frej,Osters IF,0,1,A
+2017-04-17,Falkenbergs FF,Degerfors IF,1,1,D
+2017-04-18,IFK Varnamo,IF Brommapojkarna,0,1,A
+2017-04-21,Gefle IF,Syrianska FC,1,0,H
+2017-04-22,Gais,Helsingborg,0,0,D
+2017-04-22,Varbergs BoIS FC,IK Frej,2,1,H
+2017-04-22,Osters IF,Dalkurd FF,1,2,A
+2017-04-22,Degerfors IF,IFK Varnamo,0,1,A
+2017-04-23,Atvidabergs FF,Falkenbergs FF,1,1,D
+2017-04-23,IF Brommapojkarna,Norrby IF,3,0,H
+2017-04-24,Trelleborg,Orgryte IS,6,0,H
+2017-04-28,Falkenbergs FF,Gais,1,2,A
+2017-04-29,Dalkurd FF,Gefle IF,3,0,H
+2017-04-30,IK Frej,IF Brommapojkarna,1,3,A
+2017-04-30,Syrianska FC,Varbergs BoIS FC,1,1,D
+2017-05-01,Orgryte IS,Osters IF,1,1,D
+2017-05-01,Norrby IF,Atvidabergs FF,0,3,A
+2017-05-01,Helsingborg,Degerfors IF,3,0,H
+2017-05-02,IFK Varnamo,Trelleborg,0,4,A
+2017-05-05,IF Brommapojkarna,Osters IF,4,1,H
+2017-05-05,Gais,IFK Varnamo,2,1,H
+2017-05-06,Trelleborg,Syrianska FC,1,1,D
+2017-05-06,Degerfors IF,Dalkurd FF,3,1,H
+2017-05-07,Varbergs BoIS FC,Norrby IF,2,0,H
+2017-05-07,IK Frej,Orgryte IS,2,2,D
+2017-05-08,Gefle IF,Falkenbergs FF,2,4,A
+2017-05-08,Atvidabergs FF,Helsingborg,1,2,A
+2017-05-11,Orgryte IS,Gais,0,0,D
+2017-05-12,Syrianska FC,Atvidabergs FF,3,0,H
+2017-05-13,Helsingborg,IK Frej,2,2,D
+2017-05-13,Falkenbergs FF,IF Brommapojkarna,2,1,H
+2017-05-13,Dalkurd FF,Trelleborg,3,0,H
+2017-05-14,Osters IF,Degerfors IF,1,1,D
+2017-05-14,IFK Varnamo,Varbergs BoIS FC,0,0,D
+2017-05-15,Norrby IF,Gefle IF,3,2,H
+2017-05-16,IF Brommapojkarna,Syrianska FC,2,1,H
+2017-05-17,Dalkurd FF,IFK Varnamo,3,1,H
+2017-05-17,Trelleborg,IK Frej,2,1,H
+2017-05-17,Orgryte IS,Falkenbergs FF,2,1,H
+2017-05-17,Varbergs BoIS FC,Gais,7,1,H
+2017-05-17,Degerfors IF,Atvidabergs FF,1,2,A
+2017-05-18,Helsingborg,Norrby IF,3,2,H
+2017-05-18,Gefle IF,Osters IF,1,3,A
+2017-05-20,Atvidabergs FF,Trelleborg,1,1,D
+2017-05-20,IF Brommapojkarna,Varbergs BoIS FC,3,0,H
+2017-05-21,Falkenbergs FF,Dalkurd FF,2,0,H
+2017-05-21,IK Frej,Degerfors IF,0,0,D
+2017-05-21,IFK Varnamo,Norrby IF,1,2,A
+2017-05-21,Syrianska FC,Orgryte IS,2,0,H
+2017-05-22,Osters IF,Helsingborg,1,2,A
+2017-05-23,Gais,Gefle IF,1,0,H
+2017-05-25,Orgryte IS,IFK Varnamo,2,0,H
+2017-05-27,Dalkurd FF,Atvidabergs FF,3,0,H
+2017-05-27,Varbergs BoIS FC,Falkenbergs FF,3,5,A
+2017-05-27,Norrby IF,IK Frej,3,0,H
+2017-05-27,Degerfors IF,Gais,2,1,H
+2017-05-28,Trelleborg,Osters IF,4,1,H
+2017-05-28,Gefle IF,IF Brommapojkarna,1,3,A
+2017-05-29,Helsingborg,Syrianska FC,3,1,H
+2017-06-01,Atvidabergs FF,Varbergs BoIS FC,2,1,H
+2017-06-03,IF Brommapojkarna,Degerfors IF,1,0,H
+2017-06-03,IFK Varnamo,IK Frej,3,0,H
+2017-06-03,Osters IF,Norrby IF,2,1,H
+2017-06-03,Syrianska FC,Dalkurd FF,0,3,A
+2017-06-04,Gefle IF,Orgryte IS,0,1,A
+2017-06-04,Falkenbergs FF,Helsingborg,1,1,D
+2017-06-05,Gais,Trelleborg,1,0,H
+2017-06-10,IK Frej,Falkenbergs FF,2,0,H
+2017-06-10,Degerfors IF,Gefle IF,2,0,H
+2017-06-10,Norrby IF,Syrianska FC,1,1,D
+2017-06-10,Varbergs BoIS FC,Trelleborg,0,0,D
+2017-06-11,Gais,Atvidabergs FF,0,1,A
+2017-06-11,Osters IF,IFK Varnamo,1,2,A
+2017-06-12,Helsingborg,IF Brommapojkarna,0,4,A
+2017-06-12,Orgryte IS,Dalkurd FF,1,0,H
+2017-06-17,IF Brommapojkarna,Gais,3,2,H
+2017-06-17,Atvidabergs FF,Osters IF,1,1,D
+2017-06-17,IFK Varnamo,Falkenbergs FF,1,1,D
+2017-06-17,Varbergs BoIS FC,Degerfors IF,4,0,H
+2017-06-17,Syrianska FC,IK Frej,4,2,H
+2017-06-18,Dalkurd FF,Helsingborg,5,0,H
+2017-06-18,Norrby IF,Orgryte IS,5,1,H
+2017-06-19,Trelleborg,Gefle IF,0,1,A
+2017-06-22,Orgryte IS,Degerfors IF,1,2,A
+2017-06-25,Gefle IF,Atvidabergs FF,0,1,A
+2017-06-25,Falkenbergs FF,Syrianska FC,3,1,H
+2017-06-25,IK Frej,Gais,0,1,A
+2017-06-25,Osters IF,Varbergs BoIS FC,5,2,H
+2017-06-26,Dalkurd FF,Norrby IF,4,1,H
+2017-06-26,Trelleborg,IF Brommapojkarna,3,1,H
+2017-06-26,IFK Varnamo,Helsingborg,1,1,D
+2017-07-22,Atvidabergs FF,IF Brommapojkarna,0,5,A
+2017-07-22,Varbergs BoIS FC,Gefle IF,2,0,H
+2017-07-22,Degerfors IF,Trelleborg,2,3,A
+2017-07-22,Norrby IF,Falkenbergs FF,0,3,A
+2017-07-22,Helsingborg,Orgryte IS,1,0,H
+2017-07-23,IK Frej,Dalkurd FF,0,3,A
+2017-07-23,Syrianska FC,IFK Varnamo,1,5,A
+2017-07-24,Gais,Osters IF,2,2,D
+2017-07-29,Trelleborg,IFK Varnamo,2,1,H
+2017-07-29,IF Brommapojkarna,IK Frej,0,1,A
+2017-07-29,Gefle IF,Gais,2,1,H
+2017-07-29,Syrianska FC,Helsingborg,1,2,A
+2017-07-29,Dalkurd FF,Degerfors IF,1,1,D
+2017-07-30,Osters IF,Atvidabergs FF,3,0,H
+2017-07-30,Falkenbergs FF,Varbergs BoIS FC,2,1,H
+2017-07-31,Orgryte IS,Norrby IF,2,1,H
+2017-08-04,Degerfors IF,Orgryte IS,3,0,H
+2017-08-05,Gais,Falkenbergs FF,1,1,D
+2017-08-05,Varbergs BoIS FC,Osters IF,1,3,A
+2017-08-05,Norrby IF,Helsingborg,3,2,H
+2017-08-05,IK Frej,Syrianska FC,2,3,A
+2017-08-06,Atvidabergs FF,Dalkurd FF,1,4,A
+2017-08-06,IF Brommapojkarna,Trelleborg,3,0,H
+2017-08-06,IFK Varnamo,Gefle IF,2,2,D
+2017-08-08,Syrianska FC,Norrby IF,3,4,A
+2017-08-08,Osters IF,Gais,2,0,H
+2017-08-09,Dalkurd FF,IK Frej,3,2,H
+2017-08-09,Falkenbergs FF,IFK Varnamo,2,0,H
+2017-08-09,Gefle IF,Varbergs BoIS FC,2,0,H
+2017-08-09,Orgryte IS,IF Brommapojkarna,0,2,A
+2017-08-10,Trelleborg,Degerfors IF,2,1,H
+2017-08-10,Helsingborg,Atvidabergs FF,0,0,D
+2017-08-12,Osters IF,Gefle IF,1,1,D
+2017-08-12,Gais,Syrianska FC,2,1,H
+2017-08-13,Varbergs BoIS FC,IF Brommapojkarna,1,1,D
+2017-08-13,IFK Varnamo,Dalkurd FF,1,1,D
+2017-08-14,Atvidabergs FF,Orgryte IS,0,0,D
+2017-08-14,IK Frej,Helsingborg,4,0,H
+2017-08-15,Trelleborg,Norrby IF,5,1,H
+2017-08-15,Degerfors IF,Falkenbergs FF,1,1,D
+2017-08-18,Orgryte IS,IK Frej,1,3,A
+2017-08-19,Syrianska FC,Osters IF,2,1,H
+2017-08-19,Degerfors IF,Varbergs BoIS FC,1,0,H
+2017-08-20,IF Brommapojkarna,IFK Varnamo,2,1,H
+2017-08-20,Helsingborg,Gais,1,0,H
+2017-08-20,Falkenbergs FF,Atvidabergs FF,2,0,H
+2017-08-20,Norrby IF,Dalkurd FF,0,3,A
+2017-08-21,Gefle IF,Trelleborg,1,2,A
+2017-08-26,IK Frej,Norrby IF,1,2,A
+2017-08-26,Dalkurd FF,Orgryte IS,2,1,H
+2017-08-27,Varbergs BoIS FC,Syrianska FC,3,1,H
+2017-08-27,IF Brommapojkarna,Falkenbergs FF,1,5,A
+2017-08-28,Atvidabergs FF,Gefle IF,0,2,A
+2017-08-28,IFK Varnamo,Osters IF,2,1,H
+2017-08-28,Gais,Degerfors IF,1,0,H
+2017-08-29,Trelleborg,Helsingborg,1,1,D
+2017-09-01,Osters IF,IK Frej,1,0,H
+2017-09-02,Degerfors IF,IF Brommapojkarna,3,2,H
+2017-09-02,Falkenbergs FF,Gefle IF,0,4,A
+2017-09-03,Syrianska FC,Trelleborg,0,2,A
+2017-09-04,Atvidabergs FF,IFK Varnamo,1,3,A
+2017-09-04,Gais,Orgryte IS,1,1,D
+2017-09-04,Norrby IF,Varbergs BoIS FC,1,1,D
+2017-09-05,Helsingborg,Dalkurd FF,2,2,D
+2017-09-08,Degerfors IF,Osters IF,1,1,D
+2017-09-09,IK Frej,Atvidabergs FF,1,0,H
+2017-09-09,Varbergs BoIS FC,IFK Varnamo,2,1,H
+2017-09-09,Dalkurd FF,Falkenbergs FF,1,1,D
+2017-09-10,Gefle IF,Norrby IF,3,2,H
+2017-09-10,Orgryte IS,Syrianska FC,3,0,H
+2017-09-11,Trelleborg,Gais,2,0,H
+2017-09-12,IF Brommapojkarna,Helsingborg,1,1,D
+2017-09-16,Atvidabergs FF,Syrianska FC,0,1,A
+2017-09-16,Gefle IF,Dalkurd FF,0,1,A
+2017-09-17,Falkenbergs FF,Orgryte IS,1,1,D
+2017-09-17,IFK Varnamo,Degerfors IF,2,1,H
+2017-09-17,Norrby IF,IF Brommapojkarna,1,0,H
+2017-09-18,Helsingborg,Varbergs BoIS FC,2,0,H
+2017-09-18,Osters IF,Trelleborg,0,1,A
+2017-09-19,Gais,IK Frej,1,0,H
+2017-09-23,Degerfors IF,IK Frej,3,1,H
+2017-09-23,IF Brommapojkarna,Atvidabergs FF,3,1,H
+2017-09-23,Varbergs BoIS FC,Dalkurd FF,1,0,H
+2017-09-24,Syrianska FC,Gefle IF,1,2,A
+2017-09-24,Norrby IF,Osters IF,0,2,A
+2017-09-24,Helsingborg,Falkenbergs FF,0,0,D
+2017-09-25,IFK Varnamo,Gais,2,0,H
+2017-09-26,Orgryte IS,Trelleborg,2,0,H
+2017-09-29,Falkenbergs FF,Norrby IF,1,4,A
+2017-09-30,Osters IF,Orgryte IS,1,1,D
+2017-09-30,IK Frej,IFK Varnamo,5,0,H
+2017-09-30,Gais,IF Brommapojkarna,0,0,D
+2017-10-01,Dalkurd FF,Syrianska FC,4,2,H
+2017-10-01,Atvidabergs FF,Degerfors IF,1,3,A
+2017-10-02,Trelleborg,Varbergs BoIS FC,1,1,D
+2017-10-02,Gefle IF,Helsingborg,2,1,H
+2017-10-14,Norrby IF,Degerfors IF,2,0,H
+2017-10-14,Dalkurd FF,Osters IF,1,2,A
+2017-10-14,IK Frej,Varbergs BoIS FC,1,0,H
+2017-10-15,Atvidabergs FF,Gais,3,2,H
+2017-10-15,Falkenbergs FF,Trelleborg,1,1,D
+2017-10-16,Helsingborg,IFK Varnamo,1,2,A
+2017-10-16,Orgryte IS,Gefle IF,1,1,D
+2017-10-17,Syrianska FC,IF Brommapojkarna,0,2,A
+2017-10-21,Gefle IF,IK Frej,3,0,H
+2017-10-21,Gais,Norrby IF,2,1,H
+2017-10-21,Varbergs BoIS FC,Orgryte IS,0,0,D
+2017-10-21,Degerfors IF,Helsingborg,1,1,D
+2017-10-22,Trelleborg,Atvidabergs FF,4,0,H
+2017-10-22,Osters IF,Falkenbergs FF,1,1,D
+2017-10-23,IFK Varnamo,Syrianska FC,6,1,H
+2017-10-24,IF Brommapojkarna,Dalkurd FF,1,0,H
+2017-10-27,IK Frej,Trelleborg,2,2,D
+2017-10-28,Dalkurd FF,Gais,1,0,H
+2017-10-28,Varbergs BoIS FC,Atvidabergs FF,3,0,H
+2017-10-29,Gefle IF,Degerfors IF,1,1,D
+2017-10-29,Orgryte IS,Helsingborg,0,3,A
+2017-10-29,Syrianska FC,Falkenbergs FF,1,2,A
+2017-10-30,Norrby IF,IFK Varnamo,2,3,A
+2017-10-30,Osters IF,IF Brommapojkarna,0,0,D
+2017-11-04,Trelleborg,Dalkurd FF,2,2,D
+2017-11-04,IF Brommapojkarna,Gefle IF,4,1,H
+2017-11-04,Helsingborg,Osters IF,0,2,A
+2017-11-04,Falkenbergs FF,IK Frej,3,1,H
+2017-11-04,Atvidabergs FF,Norrby IF,0,1,A
+2017-11-04,IFK Varnamo,Orgryte IS,2,1,H
+2017-11-04,Gais,Varbergs BoIS FC,3,0,H
+2017-11-04,Degerfors IF,Syrianska FC,3,1,H

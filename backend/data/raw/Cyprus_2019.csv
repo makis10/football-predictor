@@ -6,14 +6,14 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2019-08-30,Paphos,AEK Larnaca,0,2,A
 2019-08-31,Omonia Nicosia,Nea Salamis,2,0,H
 2019-08-31,AEL,Enosis,2,0,H
-2019-09-01,Olympiakos,Doxa,1,1,D
+2019-09-01,Olympiakos Nicosia,Doxa,1,1,D
 2019-09-14,Apoel Nicosia,AEL,3,0,H
 2019-09-14,Apollon Limassol,Paphos,3,2,H
 2019-09-15,AEK Larnaca,Omonia Nicosia,2,2,D
 2019-09-15,Doxa,Ethnikos Achna,1,1,D
 2019-09-15,Enosis,Anorthosis,1,2,A
-2019-09-16,Nea Salamis,Olympiakos,3,2,H
-2019-09-20,Olympiakos,AEK Larnaca,2,2,D
+2019-09-16,Nea Salamis,Olympiakos Nicosia,3,2,H
+2019-09-20,Olympiakos Nicosia,AEK Larnaca,2,2,D
 2019-09-21,Omonia Nicosia,Apollon Limassol,1,0,H
 2019-09-21,AEL,Doxa,1,0,H
 2019-09-22,Anorthosis,Paphos,2,0,H
@@ -25,14 +25,14 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2019-10-05,Paphos,Omonia Nicosia,2,1,H
 2019-10-05,Doxa,Enosis,1,3,A
 2019-10-05,Nea Salamis,AEL,3,2,H
-2019-10-06,Apollon Limassol,Olympiakos,3,1,H
+2019-10-06,Apollon Limassol,Olympiakos Nicosia,3,1,H
 2019-10-19,Apoel Nicosia,Doxa,2,0,H
 2019-10-19,Ethnikos Achna,Apollon Limassol,1,0,H
 2019-10-20,Enosis,Nea Salamis,0,1,A
 2019-10-20,Anorthosis,Omonia Nicosia,0,0,D
-2019-10-20,Olympiakos,Paphos,1,1,D
+2019-10-20,Olympiakos Nicosia,Paphos,1,1,D
 2019-10-21,AEL,AEK Larnaca,1,1,D
-2019-10-25,Omonia Nicosia,Olympiakos,1,1,D
+2019-10-25,Omonia Nicosia,Olympiakos Nicosia,1,1,D
 2019-10-26,Paphos,Ethnikos Achna,1,1,D
 2019-10-26,Apollon Limassol,AEL,1,2,A
 2019-10-27,AEK Larnaca,Enosis,4,4,D
@@ -42,21 +42,21 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2019-11-02,Apoel Nicosia,AEK Larnaca,0,0,D
 2019-11-02,Ethnikos Achna,Omonia Nicosia,1,2,A
 2019-11-03,Enosis,Apollon Limassol,0,3,A
-2019-11-03,Anorthosis,Olympiakos,4,0,H
+2019-11-03,Anorthosis,Olympiakos Nicosia,4,0,H
 2019-11-04,AEL,Paphos,2,0,H
 2019-11-08,AEK Larnaca,Doxa,2,1,H
 2019-11-09,Omonia Nicosia,AEL,1,0,H
 2019-11-09,Nea Salamis,Anorthosis,2,2,D
 2019-11-10,Paphos,Enosis,1,1,D
-2019-11-10,Olympiakos,Ethnikos Achna,4,0,H
+2019-11-10,Olympiakos Nicosia,Ethnikos Achna,4,0,H
 2019-11-10,Apollon Limassol,Apoel Nicosia,1,1,D
 2019-11-23,Nea Salamis,AEK Larnaca,1,0,H
 2019-11-23,Apoel Nicosia,Paphos,3,0,H
 2019-11-23,Enosis,Omonia Nicosia,0,2,A
-2019-11-24,AEL,Olympiakos,0,0,D
+2019-11-24,AEL,Olympiakos Nicosia,0,0,D
 2019-11-24,Anorthosis,Ethnikos Achna,2,1,H
 2019-11-25,Doxa,Apollon Limassol,0,1,A
-2019-11-29,Olympiakos,Enosis,0,0,D
+2019-11-29,Olympiakos Nicosia,Enosis,0,0,D
 2019-11-30,AEK Larnaca,Anorthosis,1,2,A
 2019-11-30,Ethnikos Achna,AEL,0,1,A
 2019-12-01,Paphos,Doxa,0,1,A
@@ -64,11 +64,11 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2019-12-02,Omonia Nicosia,Apoel Nicosia,0,0,D
 2019-12-06,Paphos,Nea Salamis,1,0,H
 2019-12-07,Anorthosis,AEL,2,0,H
-2019-12-07,Olympiakos,Apoel Nicosia,2,0,H
+2019-12-07,Olympiakos Nicosia,Apoel Nicosia,2,0,H
 2019-12-08,Omonia Nicosia,Doxa,2,0,H
 2019-12-08,Apollon Limassol,AEK Larnaca,3,1,H
 2019-12-09,Ethnikos Achna,Enosis,2,2,D
-2019-12-13,Doxa,Olympiakos,2,6,A
+2019-12-13,Doxa,Olympiakos Nicosia,2,6,A
 2019-12-14,AEK Larnaca,Paphos,1,0,H
 2019-12-14,Apollon Limassol,Anorthosis,2,0,H
 2019-12-15,Enosis,AEL,2,2,D
@@ -76,24 +76,24 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2019-12-16,Apoel Nicosia,Ethnikos Achna,2,0,H
 2019-12-20,Anorthosis,Enosis,5,1,H
 2019-12-21,AEL,Apoel Nicosia,2,1,H
-2019-12-22,Olympiakos,Nea Salamis,0,3,A
+2019-12-22,Olympiakos Nicosia,Nea Salamis,0,3,A
 2019-12-22,Omonia Nicosia,AEK Larnaca,3,2,H
 2019-12-22,Ethnikos Achna,Doxa,1,1,D
 2020-01-03,Doxa,AEL,2,2,D
-2020-01-04,AEK Larnaca,Olympiakos,0,0,D
+2020-01-04,AEK Larnaca,Olympiakos Nicosia,0,0,D
 2020-01-04,Apollon Limassol,Omonia Nicosia,2,1,H
 2020-01-05,Apoel Nicosia,Enosis,4,0,H
 2020-01-05,Nea Salamis,Ethnikos Achna,3,2,H
 2020-01-06,Paphos,Anorthosis,0,3,A
-2020-01-08,Apoel Nicosia,Olympiakos,4,2,H
+2020-01-08,Apoel Nicosia,Olympiakos Nicosia,4,2,H
 2020-01-10,Omonia Nicosia,Paphos,0,0,D
 2020-01-11,AEL,Nea Salamis,1,2,A
 2020-01-11,Ethnikos Achna,AEK Larnaca,2,5,A
 2020-01-12,Anorthosis,Apoel Nicosia,1,0,H
-2020-01-12,Olympiakos,Apollon Limassol,0,2,A
+2020-01-12,Olympiakos Nicosia,Apollon Limassol,0,2,A
 2020-01-13,Enosis,Doxa,1,0,H
 2020-01-15,Ethnikos Achna,Apoel Nicosia,0,0,D
-2020-01-25,Paphos,Olympiakos,1,1,D
+2020-01-25,Paphos,Olympiakos Nicosia,1,1,D
 2020-01-25,AEK Larnaca,AEL,3,1,H
 2020-01-25,Doxa,Apoel Nicosia,0,3,A
 2020-01-26,Apollon Limassol,Ethnikos Achna,3,2,H
@@ -101,19 +101,19 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2020-01-26,Nea Salamis,Enosis,1,1,D
 2020-02-01,Anorthosis,Doxa,3,0,H
 2020-02-01,Ethnikos Achna,Paphos,0,3,A
-2020-02-01,Olympiakos,Omonia Nicosia,0,2,A
+2020-02-01,Olympiakos Nicosia,Omonia Nicosia,0,2,A
 2020-02-02,AEL,Apollon Limassol,2,0,H
 2020-02-02,Apoel Nicosia,Nea Salamis,2,1,H
 2020-02-03,Enosis,AEK Larnaca,2,1,H
 2020-02-05,Apoel Nicosia,Anorthosis,0,0,D
-2020-02-08,Olympiakos,Anorthosis,2,1,H
+2020-02-08,Olympiakos Nicosia,Anorthosis,2,1,H
 2020-02-08,AEK Larnaca,Apoel Nicosia,1,0,H
 2020-02-09,Omonia Nicosia,Ethnikos Achna,1,2,A
 2020-02-09,Apollon Limassol,Enosis,0,1,A
 2020-02-09,Paphos,AEL,2,0,H
 2020-02-10,Nea Salamis,Doxa,0,1,A
 2020-02-12,Paphos,Apollon Limassol,3,2,H
-2020-02-14,Ethnikos Achna,Olympiakos,0,1,A
+2020-02-14,Ethnikos Achna,Olympiakos Nicosia,0,1,A
 2020-02-15,Apoel Nicosia,Apollon Limassol,4,1,H
 2020-02-15,Enosis,Paphos,1,1,D
 2020-02-16,Anorthosis,Nea Salamis,3,2,H
@@ -124,16 +124,16 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2020-02-23,Paphos,Apoel Nicosia,2,0,H
 2020-02-23,Ethnikos Achna,Anorthosis,5,0,H
 2020-02-23,AEK Larnaca,Nea Salamis,0,0,D
-2020-02-23,Olympiakos,AEL,1,1,D
+2020-02-23,Olympiakos Nicosia,AEL,1,1,D
 2020-02-29,AEL,Ethnikos Achna,4,1,H
 2020-02-29,Doxa,Paphos,0,4,A
 2020-02-29,Nea Salamis,Apollon Limassol,1,3,A
 2020-03-01,Anorthosis,AEK Larnaca,1,2,A
-2020-03-01,Enosis,Olympiakos,3,0,H
+2020-03-01,Enosis,Olympiakos Nicosia,3,0,H
 2020-03-02,Apoel Nicosia,Omonia Nicosia,0,0,D
 2020-03-07,Nea Salamis,Ethnikos Achna,2,2,D
 2020-03-07,AEL,Omonia Nicosia,0,3,A
-2020-03-07,Enosis,Olympiakos,1,1,D
+2020-03-07,Enosis,Olympiakos Nicosia,1,1,D
 2020-03-08,Anorthosis,AEK Larnaca,3,0,H
 2020-03-08,Apollon Limassol,Apoel Nicosia,1,1,D
 2020-03-09,Doxa,Pafos,2,0,H

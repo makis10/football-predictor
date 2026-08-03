@@ -1,7 +1,9 @@
 from datetime import date
 from typing import Any, Dict, List, Optional
 
-from pydantic import BaseModel
+from pydantic import BaseModel, field_validator
+
+from backend.app.display_names import display_name
 
 
 class WinProbabilities(BaseModel):
@@ -27,6 +29,13 @@ class PredictionResponse(BaseModel):
     model_version: str
     confidence: str
     insufficient_data: bool = False     # both teams unknown → not a real prediction
+
+    # Stored names are join keys; the reader gets the club's own spelling.
+    # See app.display_names — response-only, never written back.
+    @field_validator("home_team", "away_team")
+    @classmethod
+    def _spell_for_the_reader(cls, v: str) -> str:
+        return display_name(v) or v
 
     model_config = {"from_attributes": True, "protected_namespaces": ()}
 
@@ -131,6 +140,13 @@ class AnalysisResponse(BaseModel):
     match_id:          int
     home_team:         str
     away_team:         str
+
+    # Stored names are join keys; the reader gets the club's own spelling.
+    # See app.display_names — response-only, never written back.
+    @field_validator("home_team", "away_team")
+    @classmethod
+    def _spell_for_the_reader(cls, v: str) -> str:
+        return display_name(v) or v
     model:             ModelProbs
     bookmakers:        Optional[BookmakerData] = None
     injuries:          Optional[InjuryData]    = None

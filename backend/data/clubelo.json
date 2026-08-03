@@ -1,6 +1,6 @@
 {
-"as_of": "2026-07-31",
-"count": 589,
+"as_of": "2026-08-03",
+"count": 591,
 "clubs": {
 "Arsenal": {
 "elo": 2063.76,
@@ -1022,12 +1022,12 @@
 "country": "SUI",
 "level": 1
 },
-"Cardiff": {
+"Bolton": {
 "elo": 1468.63,
 "country": "ENG",
 "level": 2
 },
-"Bolton": {
+"Cardiff": {
 "elo": 1468.63,
 "country": "ENG",
 "level": 2
@@ -1802,17 +1802,17 @@
 "country": "KAZ",
 "level": 0
 },
+"Kortrijk": {
+"elo": 1350.14,
+"country": "BEL",
+"level": 1
+},
 "Lommel": {
 "elo": 1350.14,
 "country": "BEL",
 "level": 1
 },
 "Beveren": {
-"elo": 1350.14,
-"country": "BEL",
-"level": 1
-},
-"Kortrijk": {
 "elo": 1350.14,
 "country": "BEL",
 "level": 1
@@ -1887,12 +1887,12 @@
 "country": "RUS",
 "level": 1
 },
-"Wisla": {
+"Slask": {
 "elo": 1338.52,
 "country": "POL",
 "level": 1
 },
-"Slask": {
+"Wisla": {
 "elo": 1338.52,
 "country": "POL",
 "level": 1
@@ -1977,17 +1977,17 @@
 "country": "SVN",
 "level": 1
 },
+"Cambuur": {
+"elo": 1317.29,
+"country": "NED",
+"level": 1
+},
 "Willem II": {
 "elo": 1317.29,
 "country": "NED",
 "level": 1
 },
 "Den Haag": {
-"elo": 1317.29,
-"country": "NED",
-"level": 1
-},
-"Cambuur": {
 "elo": 1317.29,
 "country": "NED",
 "level": 1
@@ -2212,56 +2212,6 @@
 "country": "ROM",
 "level": 1
 },
-"Karpaty": {
-"elo": 1274.75,
-"country": "UKR",
-"level": 1
-},
-"Kryvbas": {
-"elo": 1274.75,
-"country": "UKR",
-"level": 1
-},
-"Veres": {
-"elo": 1274.75,
-"country": "UKR",
-"level": 1
-},
-"FC Kharkiv": {
-"elo": 1274.75,
-"country": "UKR",
-"level": 1
-},
-"Kolos": {
-"elo": 1274.75,
-"country": "UKR",
-"level": 1
-},
-"Zorya": {
-"elo": 1274.75,
-"country": "UKR",
-"level": 1
-},
-"Polissya Zhytomyr": {
-"elo": 1274.75,
-"country": "UKR",
-"level": 1
-},
-"Obolon Kyiv": {
-"elo": 1274.75,
-"country": "UKR",
-"level": 1
-},
-"Episentr": {
-"elo": 1274.75,
-"country": "UKR",
-"level": 1
-},
-"Chernomorets": {
-"elo": 1274.75,
-"country": "UKR",
-"level": 1
-},
 "Tobol": {
 "elo": 1273.34,
 "country": "KAZ",
@@ -2325,6 +2275,66 @@
 "Aberdeen": {
 "elo": 1258.2,
 "country": "SCO",
+"level": 1
+},
+"Polissya Zhytomyr": {
+"elo": 1257.33,
+"country": "UKR",
+"level": 1
+},
+"Karpaty": {
+"elo": 1257.33,
+"country": "UKR",
+"level": 1
+},
+"Kryvbas": {
+"elo": 1257.33,
+"country": "UKR",
+"level": 1
+},
+"Kolos": {
+"elo": 1257.33,
+"country": "UKR",
+"level": 1
+},
+"Zorya": {
+"elo": 1257.33,
+"country": "UKR",
+"level": 1
+},
+"Veres": {
+"elo": 1257.33,
+"country": "UKR",
+"level": 1
+},
+"Obolon Kyiv": {
+"elo": 1257.33,
+"country": "UKR",
+"level": 1
+},
+"Episentr": {
+"elo": 1257.33,
+"country": "UKR",
+"level": 1
+},
+"Chernomorets": {
+"elo": 1257.33,
+"country": "UKR",
+"level": 1
+},
+"FC Kharkiv": {
+"elo": 1257.33,
+"country": "UKR",
+"level": 1
+},
+"Shakhtar": {
+"elo": 1257.33,
+"country": "UKR",
+"level": 1
+},
+"Kudrivka": {
+"elo": 1257.33,
+"country": "UKR",
 "level": 1
 },
 "Oergryte": {
@@ -2437,17 +2447,17 @@
 "country": "MAC",
 "level": 0
 },
+"Corvinul Hunedoara": {
+"elo": 1223.71,
+"country": "ROM",
+"level": 1
+},
 "Voluntari": {
 "elo": 1223.71,
 "country": "ROM",
 "level": 1
 },
 "Sepsi": {
-"elo": 1223.71,
-"country": "ROM",
-"level": 1
-},
-"Corvinul Hunedoara": {
 "elo": 1223.71,
 "country": "ROM",
 "level": 1
@@ -2587,16 +2597,6 @@
 "country": "ISR",
 "level": 1
 },
-"Dynamo Kyiv": {
-"elo": 1170.24,
-"country": "UKR",
-"level": 0
-},
-"LNZ": {
-"elo": 1170.24,
-"country": "UKR",
-"level": 0
-},
 "Zalgiris Vilnius": {
 "elo": 1167.5,
 "country": "LIT",
@@ -2610,6 +2610,11 @@
 "Botev Vratsa": {
 "elo": 1165.69,
 "country": "BUL",
+"level": 1
+},
+"Rudes Zagreb": {
+"elo": 1163.89,
+"country": "CRO",
 "level": 1
 },
 "Torpedo Kutaisi": {
@@ -2652,15 +2657,20 @@
 "country": "GEO",
 "level": 0
 },
+"Dynamo Kyiv": {
+"elo": 1148.74,
+"country": "UKR",
+"level": 0
+},
+"LNZ": {
+"elo": 1148.74,
+"country": "UKR",
+"level": 0
+},
 "Vllaznia": {
 "elo": 1145.86,
 "country": "ALB",
 "level": 0
-},
-"Vukovar": {
-"elo": 1141.32,
-"country": "CRO",
-"level": 1
 },
 "Mura": {
 "elo": 1140.62,
@@ -2852,12 +2862,12 @@
 "country": "FAR",
 "level": 0
 },
-"Macva Sabac": {
+"Zemun": {
 "elo": 1049.02,
 "country": "SRB",
 "level": 1
 },
-"Zemun": {
+"Macva Sabac": {
 "elo": 1049.02,
 "country": "SRB",
 "level": 1

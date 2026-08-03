@@ -56,8 +56,28 @@ _YOUTH_SUFFIX = re.compile(
 )
 
 
+# Senior clubs whose real name ends in something the pattern above reads as a
+# youth or reserve marker. Without an exception the resolver refuses to match
+# them, so they never get an API id (no cards, corners or player props), and
+# `same_club()` treats their fixtures as a club playing itself.
+#
+# Every one of these plays a first division in our history, which is how
+# test_no_first_division_club_reads_as_a_reserve_side finds them: reserve sides
+# are confined to second tiers, so a non-senior name in a top flight is always
+# a false positive, never a real B team.
+_NOT_YOUTH = {
+    "willem ii",        # Eredivisie — named after King William II
+    "inverness c",      # Inverness Caledonian Thistle, Scottish top flight
+    "puskas academy",   # Puskás Akadémia FC — "Academy" is the club's own name
+    "boca juniors",     # both the Gibraltar and the Argentine club
+    "if ii",            # ÍF Fuglafjørður, 8 Faroese top-flight seasons
+}
+
+
 def strip_youth(name: str) -> tuple[str, bool]:
     """('Fiorentina U20') → ('Fiorentina', True). Idempotent for senior sides."""
+    if (name or "").strip().lower() in _NOT_YOUTH:
+        return name, False
     stripped = _YOUTH_SUFFIX.sub("", name).strip()
     if stripped and stripped != name:
         return stripped, True
@@ -189,11 +209,51 @@ _COUNTS_CACHE: dict[str, int] | None = None
 # fetcher's private map left the others generating phantom teams.
 #
 # Only entries where the club VERIFIABLY exists in the training CSVs under the
-# target name. A club we genuinely have no history for (Elversberg, Le Mans,
-# Academico Viseu, Kalamata — newly promoted or lower-division) belongs nowhere
-# in here: it keeps its own name and is priced from default features, which is
-# honest. Mapping it onto a similar-looking club would be far worse.
+# target name. A club we genuinely have no history for (Le Mans, Academico
+# Viseu, Kalamata — newly promoted or lower-division) belongs nowhere in here:
+# it keeps its own name and is priced from default features, which is honest.
+# Mapping it onto a similar-looking club would be far worse.
+#
+# "Verifiably" means grepping the CSVs for the club, NOT for the feed's
+# spelling of it — see the Elversberg entry below for what the weaker check
+# costs.
 COMMON_ALIASES: dict[str, str] = {
+    # ── 2026-08-03: promoted side whose CSV name carries a legal-form affix ──
+    #
+    # Elversberg was listed above, for three months, as a club we have no
+    # history for. We have 102 matches of it — the 2. Bundesliga CSVs file it
+    # as "SV Elversberg", and only the bare feed spelling was ever searched
+    # for. Promotion then put it in the Bundesliga under the bare name, with
+    # 1500 Elo and default features: Schalke 04 vs Elversberg priced
+    # 0.378/0.304/0.319, a promoted side reading as mid-table.
+    #
+    # build_resolver() bridges this pair unaided (rule 4, spelling drift), but
+    # fetch_upcoming.py — the only fixture writer that resolved through
+    # canonical() alone — never ran it. That gap is closed there too, so the
+    # next promoted "SV/1. FC/VfL <town>" doesn't need its own line here.
+    "Elversberg": "SV Elversberg",
+
+    # ── 2026-08-03: fixture-feed spellings that had no CSV counterpart ───────
+    #
+    # Found by asking what each stored name would be PRINTED as: seven pairs
+    # collapsed onto one label, which meant the database was already holding
+    # the same club twice — once under our ASCII training-data name and once
+    # under the feed's accented one. The second copy carries no history at all,
+    # so a European tie priced off it ran on default features.
+    #
+    # Direction is feed spelling → the name the CSVs use, as everywhere here.
+    "Egnatia Rrogozhinë": "Egnatia Rrogozhine",
+    "Hradec Králové": "Hradec Kralove",
+    "Kauno Žalgiris": "Kauno Zalgiris",
+    "Rīgas FS": "Rigas FS",
+    "Çorum FK": "Corum FK",
+    "Sporting CP": "Sp Lisbon",
+    # Glasgow Rangers. Andorra's FC Ranger's is renamed at the source
+    # (league_registry.NAME_DISAMBIGUATION), so this spelling is unambiguous.
+    "Ranger's": "Rangers",
+    # Fixture-feed short form; the CSVs have always said NAC Breda.
+    "NAC": "NAC Breda",
+
     # ── 2026-07-30 league expansion (Belgium, Turkey, Scotland, Denmark,
     # Sweden, Norway, Poland, Austria, Switzerland, Romania, Ireland, Finland).
     # These live here rather than in the fetcher that needed them first: the
@@ -221,7 +281,10 @@ COMMON_ALIASES: dict[str, str] = {
     "Beşiktaş": "Besiktas", "Fenerbahçe": "Fenerbahce",
     "FC Midtjylland": "Midtjylland", "FC Nordsjaelland": "Nordsjaelland",
     "FC ST. Gallen": "St. Gallen", "FC Vaduz": "Vaduz",
-    "Gais": "GAIS", "Hammarby FF": "Hammarby",
+    # "Gais" → "GAIS" removed 2026-08-03: the Sweden2 import made "Gais" the
+    # fatter spelling, features._CSV_TEAM_CANON folds GAIS into it, and the
+    # alias now pointed at a name the CSVs no longer hold.
+    "Hammarby FF": "Hammarby",
     # Scotland
     "Dundee Utd": "Dundee United", "Heart Of Midlothian": "Hearts",
     # Sweden
@@ -240,7 +303,10 @@ COMMON_ALIASES: dict[str, str] = {
     "BSC Young Boys": "Young Boys", "FC Sion": "Sion", "FC Thun": "Thun",
     # Romania
     "Arges Pitesti": "FC Arges", "CFR 1907 Cluj": "CFR Cluj",
-    "Corvinul Hunedoara": "Corvinul", "Csikszereda": "Csikszereda M. Ciuc",
+    # "Corvinul Hunedoara" → "Corvinul" removed 2026-08-03: the Romania2 import
+    # brought 86 rows under the full name, so it is now the canonical one and
+    # the feed spelling needs no alias at all.
+    "Csikszereda": "Csikszereda M. Ciuc",
     "Petrolul Ploiesti": "Petrolul", "Rapid": "FC Rapid Bucuresti",
     "Sepsi OSK Sfantu Gheorghe": "Sepsi Sf. Gheorghe",
     "Universitatea Cluj": "U. Cluj", "Universitatea Craiova": "Univ. Craiova",
@@ -261,7 +327,7 @@ COMMON_ALIASES: dict[str, str] = {
     "Deportivo":          "La Coruna",        # Deportivo La Coruña
     # Germany
     "Schalke":            "Schalke 04",
-    "SC Paderborn":       "Paderborn",
+    "SC Paderborn":       "SC Paderborn 07",   # canonical since 2026-08-02
     # Netherlands
     "NEC Nijmegen":       "Nijmegen",
     "Go Ahead":           "Go Ahead Eagles",
@@ -274,13 +340,41 @@ COMMON_ALIASES: dict[str, str] = {
     "Aris Thessaloniki":  "Aris",
     "Aris Thessalonikis": "Aris",
     "PAOK Thessaloniki":  "PAOK",
-    "Iraklis FC":         "Iraklis",
+    "Iraklis FC":         "Iraklis 1908",      # canonical since 2026-08-02
     "Volos NPS":          "Volos NFC",
     # ⚠ "OFI" is ALSO in the CSVs (1 match) while "OFI Crete" holds the club's
     # real 97-match history — so the membership guard could not see it was a
     # duplicate. Pin the thin spelling onto the fat one.
     "OFI":                "OFI Crete",
 }
+
+
+_ALIAS_CACHE: dict[str, str] | None = None
+
+
+def alias_map() -> dict[str, str]:
+    """`COMMON_ALIASES` plus every spelling `_CSV_TEAM_CANON` folds away.
+
+    Both tables answer "which club is this string", and the fixture side needs
+    both. When "Bochum" and "Vfl Bochum" were merged in the training data,
+    `known_team_names()` — which loads the CSVs through the canonicaliser —
+    stopped containing "Bochum", so the fixture feed's "Bochum" resolved to
+    nothing and its next match would have rendered as an insufficient-data
+    card. Every merge has that effect on whichever spelling loses.
+
+    COMMON_ALIASES wins on a conflict: it is curated per feed, while the canon
+    table only knows what the CSVs contain.
+    """
+    global _ALIAS_CACHE
+    if _ALIAS_CACHE is None:
+        from backend.app.ml.features import _CSV_TEAM_CANON
+        _ALIAS_CACHE = {**_CSV_TEAM_CANON, **COMMON_ALIASES}
+    return _ALIAS_CACHE
+
+
+def canonical(name: str) -> str:
+    """The single spelling the training data uses for this club."""
+    return alias_map().get((name or "").strip(), name)
 
 
 # Legal / corporate affixes that decorate a club name without changing which
@@ -343,7 +437,7 @@ def build_resolver(known_teams: set[str], team_map: dict[str, str] | None = None
     # Caller's map wins over the shared aliases (a fetcher may know that its
     # feed means something different by the same string), but every caller
     # inherits COMMON_ALIASES so one source's fix covers the others too.
-    team_map = {**COMMON_ALIASES, **(team_map or {})}
+    team_map = {**alias_map(), **(team_map or {})}
     slug_to_name = {_slug(t): t for t in known_teams}
     cache: dict[str, str | None] = {}
 

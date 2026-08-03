@@ -1,0 +1,241 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2018-03-31,Vasby United,IK brage,0,0,D
+2018-04-01,Gais,Jonkopings Sodra,2,1,H
+2018-04-01,Osters IF,Degerfors IF,2,2,D
+2018-04-01,Landskrona BoIS,Falkenbergs FF,2,3,A
+2018-04-02,Gefle IF,IFK Varnamo,2,1,H
+2018-04-02,IK Frej,Norrby IF,2,2,D
+2018-04-03,Varbergs BoIS FC,Orgryte IS,0,2,A
+2018-04-07,Degerfors IF,Halmstad,1,2,A
+2018-04-07,Falkenbergs FF,Vasby United,2,0,H
+2018-04-07,Jonkopings Sodra,Landskrona BoIS,0,2,A
+2018-04-08,Helsingborg,Osters IF,3,1,H
+2018-04-08,Orgryte IS,IK Frej,2,1,H
+2018-04-08,Norrby IF,Varbergs BoIS FC,2,1,H
+2018-04-09,IK brage,Gefle IF,4,2,H
+2018-04-11,IFK Varnamo,Gais,1,2,A
+2018-04-14,IK Frej,Helsingborg,1,5,A
+2018-04-14,Gefle IF,Degerfors IF,0,1,A
+2018-04-15,Gais,Falkenbergs FF,0,2,A
+2018-04-15,Osters IF,IK brage,1,2,A
+2018-04-15,Vasby United,IFK Varnamo,4,0,H
+2018-04-16,Halmstad,Norrby IF,0,2,A
+2018-04-16,Varbergs BoIS FC,Jonkopings Sodra,2,1,H
+2018-04-17,Landskrona BoIS,Orgryte IS,2,2,D
+2018-04-20,IK brage,Gais,1,1,D
+2018-04-21,Orgryte IS,Halmstad,2,0,H
+2018-04-21,Degerfors IF,Landskrona BoIS,2,1,H
+2018-04-22,Jonkopings Sodra,Osters IF,0,1,A
+2018-04-22,Falkenbergs FF,IK Frej,3,1,H
+2018-04-22,Norrby IF,Gefle IF,0,2,A
+2018-04-24,Helsingborg,Vasby United,0,2,A
+2018-04-24,IFK Varnamo,Varbergs BoIS FC,2,0,H
+2018-04-27,Gais,Gefle IF,0,0,D
+2018-04-28,Landskrona BoIS,IFK Varnamo,2,0,H
+2018-04-28,Osters IF,Orgryte IS,1,3,A
+2018-04-29,IK brage,Helsingborg,1,1,D
+2018-04-29,IK Frej,Varbergs BoIS FC,2,3,A
+2018-04-30,Vasby United,Degerfors IF,3,0,H
+2018-05-01,Halmstad,Falkenbergs FF,1,1,D
+2018-05-01,Norrby IF,Jonkopings Sodra,1,2,A
+2018-05-04,IK Frej,Vasby United,0,2,A
+2018-05-05,Degerfors IF,Orgryte IS,0,1,A
+2018-05-05,Jonkopings Sodra,IK brage,0,0,D
+2018-05-06,Varbergs BoIS FC,Landskrona BoIS,1,0,H
+2018-05-06,Falkenbergs FF,Osters IF,0,2,A
+2018-05-07,Gefle IF,Halmstad,1,3,A
+2018-05-07,IFK Varnamo,Norrby IF,0,0,D
+2018-05-08,Helsingborg,Gais,2,1,H
+2018-05-11,Orgryte IS,Gefle IF,3,1,H
+2018-05-12,Jonkopings Sodra,IK Frej,1,0,H
+2018-05-12,Vasby United,Varbergs BoIS FC,2,2,D
+2018-05-12,IK brage,Falkenbergs FF,3,4,A
+2018-05-13,Osters IF,IFK Varnamo,0,0,D
+2018-05-13,Halmstad,Gais,1,0,H
+2018-05-14,Norrby IF,Degerfors IF,1,3,A
+2018-05-15,Landskrona BoIS,Helsingborg,1,1,D
+2018-05-18,Gefle IF,Jonkopings Sodra,1,2,A
+2018-05-18,Gais,Vasby United,0,1,A
+2018-05-19,Falkenbergs FF,Norrby IF,0,0,D
+2018-05-19,Degerfors IF,IK brage,2,2,D
+2018-05-19,IK Frej,Landskrona BoIS,2,1,H
+2018-05-19,Varbergs BoIS FC,Osters IF,1,2,A
+2018-05-20,IFK Varnamo,Halmstad,1,3,A
+2018-05-20,Helsingborg,Orgryte IS,2,0,H
+2018-05-22,Osters IF,Gais,1,3,A
+2018-05-23,Jonkopings Sodra,Degerfors IF,2,2,D
+2018-05-23,IK Frej,IK brage,0,0,D
+2018-05-23,Orgryte IS,IFK Varnamo,4,0,H
+2018-05-23,Landskrona BoIS,Halmstad,0,0,D
+2018-05-24,Vasby United,Gefle IF,1,1,D
+2018-05-24,Norrby IF,Helsingborg,0,1,A
+2018-05-25,Falkenbergs FF,Varbergs BoIS FC,3,2,H
+2018-05-26,IK brage,Orgryte IS,3,1,H
+2018-05-27,Halmstad,Osters IF,3,0,H
+2018-05-27,Gais,IK Frej,2,1,H
+2018-05-28,Vasby United,Norrby IF,4,0,H
+2018-05-28,Helsingborg,Jonkopings Sodra,1,0,H
+2018-05-28,Gefle IF,Landskrona BoIS,1,5,A
+2018-05-29,IFK Varnamo,Falkenbergs FF,1,4,A
+2018-05-29,Varbergs BoIS FC,Degerfors IF,0,1,A
+2018-06-02,IK Frej,Osters IF,3,2,H
+2018-06-02,Varbergs BoIS FC,Halmstad,2,3,A
+2018-06-02,Norrby IF,IK brage,2,0,H
+2018-06-02,Degerfors IF,IFK Varnamo,4,1,H
+2018-06-03,Landskrona BoIS,Gais,1,1,D
+2018-06-03,Orgryte IS,Falkenbergs FF,1,1,D
+2018-06-04,Jonkopings Sodra,Vasby United,0,0,D
+2018-06-05,Gefle IF,Helsingborg,1,1,D
+2018-06-09,Halmstad,IK Frej,2,2,D
+2018-06-09,Osters IF,Norrby IF,3,0,H
+2018-06-09,IK brage,Varbergs BoIS FC,1,0,H
+2018-06-09,Vasby United,Landskrona BoIS,2,0,H
+2018-06-10,Falkenbergs FF,Gefle IF,3,0,H
+2018-06-10,Helsingborg,Degerfors IF,4,1,H
+2018-06-11,IFK Varnamo,Jonkopings Sodra,0,1,A
+2018-06-12,Gais,Orgryte IS,4,4,D
+2018-06-14,Halmstad,Helsingborg,2,1,H
+2018-06-16,IFK Varnamo,IK Frej,1,2,A
+2018-06-16,Landskrona BoIS,IK brage,1,2,A
+2018-06-16,Gefle IF,Osters IF,2,4,A
+2018-06-16,Orgryte IS,Norrby IF,1,2,A
+2018-06-17,Jonkopings Sodra,Falkenbergs FF,1,3,A
+2018-06-17,Halmstad,Vasby United,2,1,H
+2018-06-18,Gais,Degerfors IF,1,1,D
+2018-06-19,Varbergs BoIS FC,Helsingborg,3,3,D
+2018-06-24,Varbergs BoIS FC,Gais,2,2,D
+2018-06-24,Norrby IF,Landskrona BoIS,1,0,H
+2018-06-24,Helsingborg,IFK Varnamo,1,0,H
+2018-06-24,IK Frej,Gefle IF,0,0,D
+2018-06-24,Osters IF,Vasby United,0,0,D
+2018-06-25,Degerfors IF,Falkenbergs FF,0,2,A
+2018-06-25,IK brage,Halmstad,3,2,H
+2018-06-26,Orgryte IS,Jonkopings Sodra,1,2,A
+2018-06-30,Jonkopings Sodra,Halmstad,1,1,D
+2018-06-30,IFK Varnamo,IK brage,2,3,A
+2018-06-30,Gais,Norrby IF,4,1,H
+2018-06-30,Gefle IF,Varbergs BoIS FC,2,2,D
+2018-06-30,Degerfors IF,IK Frej,3,1,H
+2018-07-01,Falkenbergs FF,Helsingborg,2,3,A
+2018-07-01,Landskrona BoIS,Osters IF,2,3,A
+2018-07-02,Vasby United,Orgryte IS,0,0,D
+2018-07-28,Varbergs BoIS FC,Falkenbergs FF,0,3,A
+2018-07-28,Norrby IF,Osters IF,0,2,A
+2018-07-28,IK brage,IFK Varnamo,0,1,A
+2018-07-28,IK Frej,Gais,3,1,H
+2018-07-29,Landskrona BoIS,Gefle IF,3,1,H
+2018-07-29,Jonkopings Sodra,Helsingborg,1,3,A
+2018-07-30,Orgryte IS,Vasby United,0,0,D
+2018-07-31,Halmstad,Degerfors IF,2,1,H
+2018-08-02,Helsingborg,Norrby IF,2,0,H
+2018-08-04,Osters IF,Varbergs BoIS FC,1,1,D
+2018-08-04,Degerfors IF,Jonkopings Sodra,2,1,H
+2018-08-05,Gefle IF,IK Frej,2,5,A
+2018-08-05,Vasby United,Halmstad,2,1,H
+2018-08-06,IFK Varnamo,Landskrona BoIS,1,1,D
+2018-08-06,Gais,IK brage,1,1,D
+2018-08-07,Falkenbergs FF,Orgryte IS,1,1,D
+2018-08-10,Landskrona BoIS,Degerfors IF,1,2,A
+2018-08-11,Halmstad,Gefle IF,1,2,A
+2018-08-11,Varbergs BoIS FC,Vasby United,1,1,D
+2018-08-11,IK brage,Osters IF,0,4,A
+2018-08-12,IK Frej,Falkenbergs FF,3,2,H
+2018-08-12,Norrby IF,Gais,1,1,D
+2018-08-13,Jonkopings Sodra,IFK Varnamo,1,3,A
+2018-08-14,Orgryte IS,Helsingborg,1,4,A
+2018-08-17,Falkenbergs FF,Halmstad,1,0,H
+2018-08-18,Vasby United,Jonkopings Sodra,1,0,H
+2018-08-19,Gais,Varbergs BoIS FC,0,2,A
+2018-08-19,Helsingborg,Landskrona BoIS,2,0,H
+2018-08-20,Gefle IF,IK brage,0,2,A
+2018-08-20,IFK Varnamo,Orgryte IS,2,1,H
+2018-08-20,Degerfors IF,Norrby IF,2,1,H
+2018-08-20,Osters IF,IK Frej,2,0,H
+2018-08-25,Helsingborg,Gefle IF,3,0,H
+2018-08-26,IK Frej,Halmstad,1,5,A
+2018-08-26,IK brage,Landskrona BoIS,5,1,H
+2018-08-26,Falkenbergs FF,Degerfors IF,4,1,H
+2018-08-26,Norrby IF,Vasby United,0,2,A
+2018-08-27,Jonkopings Sodra,Varbergs BoIS FC,4,2,H
+2018-08-27,IFK Varnamo,Osters IF,1,0,H
+2018-08-28,Orgryte IS,Gais,1,3,A
+2018-09-01,IK brage,IK Frej,1,0,H
+2018-09-01,Degerfors IF,Helsingborg,1,1,D
+2018-09-02,Landskrona BoIS,Norrby IF,1,1,D
+2018-09-02,Halmstad,Jonkopings Sodra,1,0,H
+2018-09-03,Vasby United,Gais,2,1,H
+2018-09-03,Varbergs BoIS FC,IFK Varnamo,2,2,D
+2018-09-03,Osters IF,Falkenbergs FF,2,3,A
+2018-09-04,Gefle IF,Orgryte IS,0,1,A
+2018-09-08,Jonkopings Sodra,Gefle IF,1,0,H
+2018-09-08,Degerfors IF,Vasby United,2,2,D
+2018-09-09,Norrby IF,IK Frej,3,2,H
+2018-09-09,Orgryte IS,Osters IF,1,0,H
+2018-09-11,Falkenbergs FF,Landskrona BoIS,1,2,A
+2018-09-12,Gais,IFK Varnamo,1,2,A
+2018-09-14,Halmstad,Varbergs BoIS FC,1,1,D
+2018-09-15,IK brage,Norrby IF,2,3,A
+2018-09-15,Vasby United,Helsingborg,0,0,D
+2018-09-16,Gefle IF,Falkenbergs FF,0,3,A
+2018-09-16,IFK Varnamo,Degerfors IF,1,2,A
+2018-09-17,IK Frej,Orgryte IS,2,1,H
+2018-09-17,Osters IF,Jonkopings Sodra,0,0,D
+2018-09-18,Gais,Halmstad,1,2,A
+2018-09-18,Landskrona BoIS,Varbergs BoIS FC,0,2,A
+2018-09-19,Helsingborg,IK brage,4,1,H
+2018-09-22,Degerfors IF,Gais,1,1,D
+2018-09-23,Falkenbergs FF,Jonkopings Sodra,2,0,H
+2018-09-23,Varbergs BoIS FC,Gefle IF,1,2,A
+2018-09-23,Helsingborg,IK Frej,1,0,H
+2018-09-23,Orgryte IS,IK brage,4,1,H
+2018-09-24,Vasby United,Osters IF,3,0,H
+2018-09-24,Norrby IF,IFK Varnamo,2,1,H
+2018-09-25,Halmstad,Landskrona BoIS,2,1,H
+2018-09-28,Falkenbergs FF,IK brage,3,2,H
+2018-09-29,Gais,Helsingborg,1,1,D
+2018-09-29,Degerfors IF,Varbergs BoIS FC,0,1,A
+2018-09-30,Osters IF,Gefle IF,0,0,D
+2018-09-30,Landskrona BoIS,IK Frej,3,4,A
+2018-09-30,Norrby IF,Halmstad,3,2,H
+2018-10-01,IFK Varnamo,Vasby United,0,0,D
+2018-10-02,Jonkopings Sodra,Orgryte IS,2,2,D
+2018-10-05,IK brage,Vasby United,0,0,D
+2018-10-06,Osters IF,Landskrona BoIS,5,0,H
+2018-10-06,Halmstad,IFK Varnamo,0,3,A
+2018-10-07,Varbergs BoIS FC,Norrby IF,4,0,H
+2018-10-07,Helsingborg,Falkenbergs FF,1,0,H
+2018-10-08,Gefle IF,Gais,1,0,H
+2018-10-08,IK Frej,Jonkopings Sodra,1,1,D
+2018-10-09,Orgryte IS,Degerfors IF,2,0,H
+2018-10-19,Norrby IF,Orgryte IS,0,1,A
+2018-10-20,Gais,Landskrona BoIS,3,1,H
+2018-10-20,Degerfors IF,Osters IF,1,3,A
+2018-10-21,Vasby United,Falkenbergs FF,1,0,H
+2018-10-21,IK brage,Jonkopings Sodra,3,2,H
+2018-10-22,IFK Varnamo,Gefle IF,3,2,H
+2018-10-22,Varbergs BoIS FC,IK Frej,1,2,A
+2018-10-23,Helsingborg,Halmstad,1,1,D
+2018-10-26,Landskrona BoIS,Vasby United,0,0,D
+2018-10-27,Osters IF,Helsingborg,4,4,D
+2018-10-27,IK Frej,Degerfors IF,2,2,D
+2018-10-28,Halmstad,IK brage,1,0,H
+2018-10-28,Falkenbergs FF,IFK Varnamo,3,0,H
+2018-10-29,Jonkopings Sodra,Gais,2,0,H
+2018-10-29,Gefle IF,Norrby IF,3,1,H
+2018-10-30,Orgryte IS,Varbergs BoIS FC,5,2,H
+2018-11-02,Norrby IF,Falkenbergs FF,2,2,D
+2018-11-03,Halmstad,Orgryte IS,1,2,A
+2018-11-03,Degerfors IF,Gefle IF,4,0,H
+2018-11-03,Landskrona BoIS,Jonkopings Sodra,1,2,A
+2018-11-03,Vasby United,IK Frej,2,2,D
+2018-11-04,IFK Varnamo,Helsingborg,1,0,H
+2018-11-05,Gais,Osters IF,1,1,D
+2018-11-05,Varbergs BoIS FC,IK brage,1,2,A
+2018-11-10,Jonkopings Sodra,Norrby IF,0,0,D
+2018-11-10,Helsingborg,Varbergs BoIS FC,3,1,H
+2018-11-10,Falkenbergs FF,Gais,0,2,A
+2018-11-10,Gefle IF,Vasby United,2,2,D
+2018-11-10,IK Frej,IFK Varnamo,1,0,H
+2018-11-10,Orgryte IS,Landskrona BoIS,4,0,H
+2018-11-10,Osters IF,Halmstad,1,4,A
+2018-11-10,IK brage,Degerfors IF,1,1,D

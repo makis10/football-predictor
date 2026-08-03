@@ -4,12 +4,12 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2025-03-15,FC Gomel,Torpedo Zhodino,1,1,D
 2025-03-15,Neman,Molodechno-DYuSSh 4,3,0,H
 2025-03-15,FC Vitebsk,Bate Borisov,0,1,A
-2025-03-16,Arsenal,Dinamo Brest,1,1,D
+2025-03-16,Arsenal Dzyarzhynsk,Dinamo Brest,1,1,D
 2025-03-16,FC Slutsk,ML Vitebsk,0,1,A
 2025-03-16,Dinamo Minsk,Smorgon,1,0,H
 2025-03-28,Slavia Mozyr,Molodechno-DYuSSh 4,4,1,H
 2025-03-28,Bate Borisov,FC Isloch Minsk R.,0,1,A
-2025-03-29,ML Vitebsk,Arsenal,2,2,D
+2025-03-29,ML Vitebsk,Arsenal Dzyarzhynsk,2,2,D
 2025-03-29,FC Slutsk,Smorgon,2,0,H
 2025-03-29,FC Minsk,FC Vitebsk,2,1,H
 2025-03-30,Torpedo Zhodino,Dinamo Minsk,0,0,D
@@ -20,12 +20,12 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2025-04-05,Molodechno-DYuSSh 4,Bate Borisov,0,1,A
 2025-04-05,FC Vitebsk,Naftan,2,0,H
 2025-04-06,FC Isloch Minsk R.,FC Minsk,1,1,D
-2025-04-06,Arsenal,Smorgon,1,1,D
+2025-04-06,Arsenal Dzyarzhynsk,Smorgon,1,1,D
 2025-04-06,FC Gomel,Slavia Mozyr,0,1,A
 2025-04-11,FC Vitebsk,FC Isloch Minsk R.,3,3,D
 2025-04-11,Neman,FC Slutsk,2,1,H
 2025-04-12,Naftan,ML Vitebsk,0,3,A
-2025-04-12,Torpedo Zhodino,Arsenal,2,1,H
+2025-04-12,Torpedo Zhodino,Arsenal Dzyarzhynsk,2,1,H
 2025-04-12,Bate Borisov,FC Gomel,0,0,D
 2025-04-13,FC Minsk,Molodechno-DYuSSh 4,3,2,H
 2025-04-13,Slavia Mozyr,Dinamo Minsk,3,0,H
@@ -33,13 +33,13 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2025-04-18,FC Slutsk,Slavia Mozyr,1,2,A
 2025-04-18,FC Minsk,FC Gomel,1,0,H
 2025-04-19,Molodechno-DYuSSh 4,FC Vitebsk,0,4,A
-2025-04-19,Arsenal,Neman,0,3,A
+2025-04-19,Arsenal Dzyarzhynsk,Neman,0,3,A
 2025-04-19,FC Isloch Minsk R.,Naftan,3,0,H
 2025-04-19,Dinamo Minsk,Bate Borisov,2,1,H
 2025-04-21,ML Vitebsk,Smorgon,3,1,H
 2025-04-21,Dinamo Brest,Torpedo Zhodino,0,0,D
 2025-04-25,Bate Borisov,FC Slutsk,2,0,H
-2025-04-25,Slavia Mozyr,Arsenal,1,1,D
+2025-04-25,Slavia Mozyr,Arsenal Dzyarzhynsk,1,1,D
 2025-04-26,Naftan,Smorgon,3,1,H
 2025-04-26,FC Vitebsk,FC Gomel,2,0,H
 2025-04-26,Neman,Dinamo Brest,0,1,A
@@ -47,14 +47,14 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2025-04-27,Torpedo Zhodino,ML Vitebsk,1,1,D
 2025-04-27,Dinamo Minsk,FC Minsk,4,1,H
 2025-05-02,Molodechno-DYuSSh 4,Naftan,0,2,A
-2025-05-02,Arsenal,Bate Borisov,0,1,A
+2025-05-02,Arsenal Dzyarzhynsk,Bate Borisov,0,1,A
 2025-05-03,Dinamo Minsk,FC Vitebsk,2,1,H
 2025-05-03,Smorgon,Torpedo Zhodino,0,1,A
 2025-05-03,ML Vitebsk,Neman,1,0,H
 2025-05-03,Dinamo Brest,Slavia Mozyr,3,1,H
 2025-05-04,FC Gomel,FC Isloch Minsk R.,0,0,D
 2025-05-04,FC Slutsk,FC Minsk,1,2,A
-2025-05-10,FC Minsk,Arsenal,2,2,D
+2025-05-10,FC Minsk,Arsenal Dzyarzhynsk,2,2,D
 2025-05-10,Molodechno-DYuSSh 4,FC Gomel,0,1,A
 2025-05-10,Bate Borisov,Dinamo Brest,2,4,A
 2025-05-11,FC Vitebsk,FC Slutsk,4,1,H
@@ -68,11 +68,11 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2025-05-17,FC Slutsk,FC Isloch Minsk R.,1,1,D
 2025-05-17,Dinamo Brest,FC Minsk,5,0,H
 2025-05-17,Dinamo Minsk,Molodechno-DYuSSh 4,3,2,H
-2025-05-18,Arsenal,FC Vitebsk,1,1,D
+2025-05-18,Arsenal Dzyarzhynsk,FC Vitebsk,1,1,D
 2025-05-18,ML Vitebsk,Bate Borisov,2,1,H
 2025-05-20,Naftan,Neman,1,3,A
 2025-05-20,Slavia Mozyr,Torpedo Zhodino,1,0,H
-2025-05-23,FC Isloch Minsk R.,Arsenal,4,0,H
+2025-05-23,FC Isloch Minsk R.,Arsenal Dzyarzhynsk,4,0,H
 2025-05-23,FC Vitebsk,Dinamo Brest,1,3,A
 2025-05-25,FC Minsk,ML Vitebsk,1,2,A
 2025-05-25,Molodechno-DYuSSh 4,FC Slutsk,0,1,A
@@ -85,9 +85,9 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2025-05-31,ML Vitebsk,FC Vitebsk,2,0,H
 2025-06-01,FC Slutsk,FC Gomel,0,3,A
 2025-06-01,Smorgon,FC Minsk,0,2,A
-2025-06-01,Arsenal,Molodechno-DYuSSh 4,3,0,H
+2025-06-01,Arsenal Dzyarzhynsk,Molodechno-DYuSSh 4,3,0,H
 2025-06-13,Molodechno-DYuSSh 4,Dinamo Brest,0,1,A
-2025-06-13,FC Gomel,Arsenal,0,2,A
+2025-06-13,FC Gomel,Arsenal Dzyarzhynsk,0,2,A
 2025-06-14,FC Minsk,Torpedo Zhodino,1,5,A
 2025-06-14,FC Slutsk,Dinamo Minsk,0,1,A
 2025-06-14,Dinamo Minsk,FC Slutsk,0,1,A
@@ -101,7 +101,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2025-06-21,FC Slutsk,Naftan,1,0,H
 2025-06-21,Dinamo Brest,FC Gomel,0,1,A
 2025-06-21,ML Vitebsk,Molodechno-DYuSSh 4,0,0,D
-2025-06-22,Arsenal,Dinamo Minsk,2,1,H
+2025-06-22,Arsenal Dzyarzhynsk,Dinamo Minsk,2,1,H
 2025-06-22,Neman,FC Minsk,2,1,H
 2025-06-22,Torpedo Zhodino,FC Vitebsk,3,2,H
 2025-06-27,Molodechno-DYuSSh 4,Smorgon,2,1,H
@@ -111,7 +111,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2025-06-28,FC Gomel,ML Vitebsk,0,2,A
 2025-06-28,Dinamo Minsk,Dinamo Brest,5,0,H
 2025-06-29,Naftan,Bate Borisov,2,2,D
-2025-06-29,FC Slutsk,Arsenal,0,3,A
+2025-06-29,FC Slutsk,Arsenal Dzyarzhynsk,0,3,A
 2025-07-03,ML Vitebsk,Dinamo Minsk,2,0,H
 2025-07-04,Torpedo Zhodino,Molodechno-DYuSSh 4,4,1,H
 2025-07-04,Dinamo Brest,FC Slutsk,3,0,H
@@ -119,20 +119,20 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2025-07-05,Smorgon,FC Gomel,3,1,H
 2025-07-05,Slavia Mozyr,FC Vitebsk,4,0,H
 2025-07-05,Bate Borisov,FC Minsk,0,2,A
-2025-07-06,Arsenal,Naftan,0,1,A
+2025-07-06,Arsenal Dzyarzhynsk,Naftan,0,1,A
 2025-08-01,Bate Borisov,FC Vitebsk,1,5,A
 2025-08-02,Naftan,FC Minsk,0,3,A
 2025-08-02,Slavia Mozyr,FC Isloch Minsk R.,1,1,D
-2025-08-02,Dinamo Brest,Arsenal,1,1,D
+2025-08-02,Dinamo Brest,Arsenal Dzyarzhynsk,1,1,D
 2025-08-03,ML Vitebsk,FC Slutsk,1,0,H
 2025-08-08,Molodechno-DYuSSh 4,Slavia Mozyr,0,2,A
 2025-08-09,Smorgon,FC Slutsk,0,0,D
 2025-08-09,FC Isloch Minsk R.,Bate Borisov,2,0,H
 2025-08-09,FC Vitebsk,FC Minsk,1,2,A
 2025-08-10,Dinamo Brest,Naftan,2,0,H
-2025-08-10,Arsenal,ML Vitebsk,0,4,A
+2025-08-10,Arsenal Dzyarzhynsk,ML Vitebsk,0,4,A
 2025-08-10,Dinamo Minsk,Torpedo Zhodino,4,0,H
-2025-08-15,Smorgon,Arsenal,1,1,D
+2025-08-15,Smorgon,Arsenal Dzyarzhynsk,1,1,D
 2025-08-15,Slavia Mozyr,FC Gomel,2,1,H
 2025-08-16,Bate Borisov,Molodechno-DYuSSh 4,2,1,H
 2025-08-16,Naftan,FC Vitebsk,3,0,H
@@ -143,7 +143,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2025-08-22,ML Vitebsk,Naftan,2,0,H
 2025-08-23,Smorgon,Dinamo Brest,1,0,H
 2025-08-23,Molodechno-DYuSSh 4,FC Minsk,1,3,A
-2025-08-23,Arsenal,Torpedo Zhodino,1,1,D
+2025-08-23,Arsenal Dzyarzhynsk,Torpedo Zhodino,1,1,D
 2025-08-24,FC Isloch Minsk R.,FC Vitebsk,3,0,H
 2025-08-24,Dinamo Minsk,Slavia Mozyr,3,1,H
 2025-08-29,Naftan,FC Isloch Minsk R.,2,2,D
@@ -154,7 +154,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2025-08-30,Bate Borisov,Dinamo Minsk,2,2,D
 2025-08-30,Torpedo Zhodino,Dinamo Brest,2,0,H
 2025-09-10,Molodechno-DYuSSh 4,Neman,3,2,H
-2025-09-12,Arsenal,Slavia Mozyr,1,0,H
+2025-09-12,Arsenal Dzyarzhynsk,Slavia Mozyr,1,0,H
 2025-09-13,Smorgon,Naftan,1,1,D
 2025-09-13,FC Slutsk,Bate Borisov,0,3,A
 2025-09-13,ML Vitebsk,Torpedo Zhodino,0,1,A
@@ -167,13 +167,13 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2025-09-20,FC Isloch Minsk R.,FC Gomel,1,1,D
 2025-09-20,FC Vitebsk,Dinamo Minsk,1,2,A
 2025-09-20,Neman,ML Vitebsk,3,1,H
-2025-09-21,Bate Borisov,Arsenal,0,0,D
+2025-09-21,Bate Borisov,Arsenal Dzyarzhynsk,0,0,D
 2025-09-21,Slavia Mozyr,Dinamo Brest,0,1,A
 2025-09-21,FC Minsk,FC Slutsk,3,0,H
 2025-09-24,Smorgon,Dinamo Minsk,1,2,A
 2025-09-24,FC Gomel,Neman,3,1,H
 2025-09-25,Torpedo Zhodino,Naftan,4,2,H
-2025-09-26,Arsenal,FC Minsk,1,1,D
+2025-09-26,Arsenal Dzyarzhynsk,FC Minsk,1,1,D
 2025-09-27,FC Slutsk,FC Vitebsk,0,1,A
 2025-09-27,Dinamo Brest,Bate Borisov,3,0,H
 2025-09-27,ML Vitebsk,Slavia Mozyr,2,3,A
@@ -185,12 +185,12 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2025-10-04,Naftan,FC Gomel,5,3,H
 2025-10-04,Molodechno-DYuSSh 4,Dinamo Minsk,1,3,A
 2025-10-04,Neman,Torpedo Zhodino,1,1,D
-2025-10-04,FC Vitebsk,Arsenal,1,0,H
+2025-10-04,FC Vitebsk,Arsenal Dzyarzhynsk,1,0,H
 2025-10-05,FC Isloch Minsk R.,FC Slutsk,0,0,D
 2025-10-05,Slavia Mozyr,Smorgon,3,1,H
-2025-10-10,Neman,Arsenal,1,0,H
+2025-10-10,Neman,Arsenal Dzyarzhynsk,1,0,H
 2025-10-15,FC Slutsk,Neman,2,1,H
-2025-10-17,Arsenal,FC Isloch Minsk R.,0,1,A
+2025-10-17,Arsenal Dzyarzhynsk,FC Isloch Minsk R.,0,1,A
 2025-10-17,Dinamo Brest,FC Vitebsk,2,1,H
 2025-10-18,Smorgon,Bate Borisov,1,0,H
 2025-10-18,Torpedo Zhodino,Slavia Mozyr,3,2,H
@@ -204,7 +204,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2025-10-25,FC Gomel,FC Slutsk,4,1,H
 2025-10-25,Bate Borisov,Torpedo Zhodino,1,0,H
 2025-10-26,FC Isloch Minsk R.,Dinamo Brest,1,1,D
-2025-10-26,Molodechno-DYuSSh 4,Arsenal,0,1,A
+2025-10-26,Molodechno-DYuSSh 4,Arsenal Dzyarzhynsk,0,1,A
 2025-10-26,FC Vitebsk,ML Vitebsk,0,1,A
 2025-10-29,Torpedo Zhodino,FC Gomel,0,1,A
 2025-10-29,Neman,Dinamo Minsk,0,0,D
@@ -212,7 +212,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2025-11-01,Smorgon,FC Vitebsk,0,2,A
 2025-11-01,Slavia Mozyr,Naftan,2,0,H
 2025-11-01,ML Vitebsk,FC Isloch Minsk R.,3,1,H
-2025-11-02,Arsenal,FC Gomel,0,0,D
+2025-11-02,Arsenal Dzyarzhynsk,FC Gomel,0,0,D
 2025-11-02,Dinamo Minsk,FC Slutsk,3,1,H
 2025-11-02,Neman,Bate Borisov,0,2,A
 2025-11-02,Torpedo Zhodino,FC Minsk,0,1,A
@@ -220,12 +220,12 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2025-11-07,FC Gomel,Dinamo Brest,3,0,H
 2025-11-08,Naftan,FC Slutsk,1,2,A
 2025-11-08,FC Minsk,Neman,1,4,A
-2025-11-08,Dinamo Minsk,Arsenal,1,0,H
+2025-11-08,Dinamo Minsk,Arsenal Dzyarzhynsk,1,0,H
 2025-11-09,FC Isloch Minsk R.,Smorgon,0,0,D
 2025-11-09,Bate Borisov,Slavia Mozyr,1,1,D
 2025-11-09,FC Vitebsk,Torpedo Zhodino,1,1,D
 2025-11-22,Neman,FC Vitebsk,3,1,H
-2025-11-22,Arsenal,FC Slutsk,2,1,H
+2025-11-22,Arsenal Dzyarzhynsk,FC Slutsk,2,1,H
 2025-11-23,Bate Borisov,Naftan,5,0,H
 2025-11-23,Smorgon,Molodechno-DYuSSh 4,1,0,H
 2025-11-23,Torpedo Zhodino,FC Isloch Minsk R.,0,0,D
@@ -237,7 +237,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2025-11-29,FC Gomel,Smorgon,3,1,H
 2025-11-29,FC Isloch Minsk R.,Neman,2,0,H
 2025-11-29,Dinamo Minsk,ML Vitebsk,1,1,D
-2025-11-29,Naftan,Arsenal,2,0,H
+2025-11-29,Naftan,Arsenal Dzyarzhynsk,2,0,H
 2025-11-30,FC Minsk,Bate Borisov,2,0,H
 2025-11-30,Molodechno-DYuSSh 4,Torpedo Zhodino,1,2,A
 2025-12-03,Smorgon,Belshina,1,0,H

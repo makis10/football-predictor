@@ -1,0 +1,381 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2020-08-07,Cuiaba,Brasil DE Pelotas,0,0,D
+2020-08-08,Confianca,Parana,2,2,D
+2020-08-08,Juventude,CRB,2,1,H
+2020-08-08,Operario-PR,Figueirense,3,1,H
+2020-08-09,Cruzeiro,Botafogo SP,2,1,H
+2020-08-09,Vitoria,Sampaio Correa,1,0,H
+2020-08-09,Ponte Preta,America Mineiro,0,1,A
+2020-08-09,Avai,Nautico Recife,3,1,H
+2020-08-09,CSA,Guarani Campinas,1,0,H
+2020-08-09,Oeste,Chapecoense-sc,0,0,D
+2020-08-11,Brasil DE Pelotas,Ponte Preta,1,1,D
+2020-08-11,Sampaio Correa,Juventude,0,1,A
+2020-08-11,Botafogo SP,Confianca,2,0,H
+2020-08-11,Parana,Avai,1,0,H
+2020-08-11,Guarani Campinas,Cruzeiro,2,3,A
+2020-08-12,America Mineiro,Cuiaba,0,1,A
+2020-08-12,Figueirense,Vitoria,0,0,D
+2020-08-12,Nautico Recife,Operario-PR,0,0,D
+2020-08-12,CRB,Oeste,1,0,H
+2020-08-14,America Mineiro,Operario-PR,1,1,D
+2020-08-14,Ponte Preta,Vitoria,3,3,D
+2020-08-15,Parana,Juventude,3,1,H
+2020-08-15,Botafogo SP,Guarani Campinas,0,1,A
+2020-08-15,Brasil DE Pelotas,Oeste,1,1,D
+2020-08-16,Nautico Recife,CRB,1,1,D
+2020-08-16,Chapecoense-sc,Sampaio Correa,1,0,H
+2020-08-16,Figueirense,Cruzeiro,0,1,A
+2020-08-17,Juventude,America Mineiro,0,0,D
+2020-08-18,Avai,Botafogo SP,0,1,A
+2020-08-18,Operario-PR,CSA,3,0,H
+2020-08-18,Oeste,Ponte Preta,1,3,A
+2020-08-19,Guarani Campinas,Parana,1,2,A
+2020-08-19,CRB,Brasil DE Pelotas,1,0,H
+2020-08-19,Cuiaba,Confianca,1,0,H
+2020-08-20,Vitoria,Nautico Recife,0,0,D
+2020-08-21,Cruzeiro,Chapecoense-sc,0,1,A
+2020-08-21,America Mineiro,Oeste,2,1,H
+2020-08-22,Ponte Preta,CSA,2,1,H
+2020-08-22,Avai,Cuiaba,0,2,A
+2020-08-22,Nautico Recife,Juventude,3,3,D
+2020-08-22,Botafogo SP,Figueirense,0,1,A
+2020-08-23,CRB,Vitoria,2,2,D
+2020-08-23,Parana,Operario-PR,0,0,D
+2020-08-23,Confianca,Cruzeiro,1,1,D
+2020-08-24,Chapecoense-sc,Guarani Campinas,2,0,H
+2020-08-28,Oeste,Avai,0,2,A
+2020-08-28,Cuiaba,Chapecoense-sc,2,1,H
+2020-08-29,Guarani Campinas,Nautico Recife,1,2,A
+2020-08-29,Juventude,Botafogo SP,0,0,D
+2020-08-29,Vitoria,Parana,1,0,H
+2020-08-30,Cruzeiro,America Mineiro,1,2,A
+2020-08-30,Figueirense,Confianca,0,0,D
+2020-08-30,Sampaio Correa,Ponte Preta,1,2,A
+2020-08-31,CSA,CRB,0,2,A
+2020-08-31,Operario-PR,Brasil DE Pelotas,2,1,H
+2020-08-31,Guarani Campinas,Oeste,1,1,D
+2020-09-01,Botafogo SP,Cuiaba,1,1,D
+2020-09-01,Parana,Ponte Preta,2,1,H
+2020-09-01,Chapecoense-sc,Juventude,1,0,H
+2020-09-02,Nautico Recife,Figueirense,1,0,H
+2020-09-02,Confianca,Vitoria,1,0,H
+2020-09-02,America Mineiro,CSA,2,1,H
+2020-09-02,Avai,Operario-PR,2,0,H
+2020-09-03,CRB,Sampaio Correa,2,2,D
+2020-09-03,Brasil DE Pelotas,Cruzeiro,1,0,H
+2020-09-04,Figueirense,Parana,0,1,A
+2020-09-05,Ponte Preta,Botafogo SP,1,0,H
+2020-09-05,Oeste,Juventude,1,3,A
+2020-09-05,Vitoria,Cuiaba,4,2,H
+2020-09-05,CSA,Confianca,1,1,D
+2020-09-06,Brasil DE Pelotas,Nautico Recife,2,1,H
+2020-09-06,Sampaio Correa,America Mineiro,1,0,H
+2020-09-06,Operario-PR,Guarani Campinas,1,2,A
+2020-09-06,Chapecoense-sc,Avai,1,0,H
+2020-09-07,Cruzeiro,CRB,1,1,D
+2020-09-08,Juventude,Confianca,3,1,H
+2020-09-09,Cuiaba,Figueirense,0,0,D
+2020-09-09,Parana,America Mineiro,0,1,A
+2020-09-11,Avai,Ponte Preta,0,1,A
+2020-09-12,Cruzeiro,Vitoria,1,0,H
+2020-09-12,Guarani Campinas,Brasil DE Pelotas,0,0,D
+2020-09-12,Sampaio Correa,Operario-PR,0,1,A
+2020-09-13,Nautico Recife,Botafogo SP,3,1,H
+2020-09-13,Oeste,CSA,2,1,H
+2020-09-14,Parana,CRB,2,0,H
+2020-09-14,Juventude,Vitoria,1,1,D
+2020-09-15,Confianca,Avai,2,2,D
+2020-09-16,CSA,Cuiaba,1,2,A
+2020-09-18,Confianca,Guarani Campinas,1,0,H
+2020-09-19,Nautico Recife,Chapecoense-sc,1,1,D
+2020-09-19,America Mineiro,Figueirense,0,1,A
+2020-09-20,Ponte Preta,Operario-PR,1,1,D
+2020-09-20,CSA,Cruzeiro,3,1,H
+2020-09-20,Cuiaba,Oeste,3,0,H
+2020-09-20,Avai,Sampaio Correa,2,5,A
+2020-09-21,Botafogo SP,Brasil DE Pelotas,0,1,A
+2020-09-22,Operario-PR,Cuiaba,1,1,D
+2020-09-25,Chapecoense-sc,America Mineiro,0,0,D
+2020-09-25,Botafogo SP,CRB,1,2,A
+2020-09-26,Cruzeiro,Avai,0,1,A
+2020-09-26,Figueirense,Guarani Campinas,2,2,D
+2020-09-26,CSA,Juventude,3,2,H
+2020-09-26,Vitoria,Oeste,3,1,H
+2020-09-26,Brasil DE Pelotas,Parana,1,1,D
+2020-09-27,Ponte Preta,Confianca,2,1,H
+2020-09-28,CRB,America Mineiro,0,0,D
+2020-09-29,Vitoria,CSA,0,1,A
+2020-09-29,Avai,Figueirense,1,0,H
+2020-09-29,Juventude,Operario-PR,1,0,H
+2020-09-29,Oeste,Botafogo SP,0,1,A
+2020-09-30,Parana,Chapecoense-sc,1,1,D
+2020-09-30,Guarani Campinas,Sampaio Correa,1,1,D
+2020-09-30,Cuiaba,Nautico Recife,1,0,H
+2020-09-30,Confianca,Brasil DE Pelotas,1,1,D
+2020-09-30,Cruzeiro,Ponte Preta,3,0,H
+2020-10-02,Figueirense,Oeste,4,1,H
+2020-10-02,CRB,Avai,3,1,H
+2020-10-02,Operario-PR,Vitoria,1,1,D
+2020-10-03,Botafogo SP,Parana,1,0,H
+2020-10-03,America Mineiro,Guarani Campinas,0,0,D
+2020-10-03,Nautico Recife,Confianca,0,1,A
+2020-10-03,Brasil DE Pelotas,Chapecoense-sc,0,1,A
+2020-10-03,Sampaio Correa,CSA,1,0,H
+2020-10-04,Ponte Preta,Juventude,1,3,A
+2020-10-04,Cuiaba,Cruzeiro,1,0,H
+2020-10-05,Oeste,Operario-PR,0,1,A
+2020-10-06,Chapecoense-sc,Botafogo SP,1,0,H
+2020-10-06,Confianca,CRB,1,0,H
+2020-10-06,Parana,Nautico Recife,0,0,D
+2020-10-06,Vitoria,America Mineiro,1,2,A
+2020-10-06,Avai,Brasil DE Pelotas,2,1,H
+2020-10-06,CSA,Figueirense,3,0,H
+2020-10-06,Juventude,Cuiaba,1,1,D
+2020-10-07,Ponte Preta,Guarani Campinas,2,0,H
+2020-10-08,Cruzeiro,Sampaio Correa,1,2,A
+2020-10-09,Figueirense,Chapecoense-sc,0,0,D
+2020-10-09,Operario-PR,Confianca,1,1,D
+2020-10-09,Cuiaba,Ponte Preta,2,1,H
+2020-10-09,America Mineiro,Nautico Recife,2,0,H
+2020-10-10,Juventude,Brasil DE Pelotas,1,2,A
+2020-10-10,Vitoria,Avai,1,2,A
+2020-10-10,Guarani Campinas,CRB,3,1,H
+2020-10-10,CSA,Parana,4,0,H
+2020-10-11,Oeste,Cruzeiro,0,0,D
+2020-10-11,Sampaio Correa,Botafogo SP,2,0,H
+2020-10-12,Nautico Recife,Ponte Preta,0,2,A
+2020-10-13,Avai,CSA,1,1,D
+2020-10-14,Guarani Campinas,Cuiaba,1,0,H
+2020-10-14,Sampaio Correa,Figueirense,3,0,H
+2020-10-14,CRB,Chapecoense-sc,0,1,A
+2020-10-16,Botafogo SP,America Mineiro,1,2,A
+2020-10-17,Cruzeiro,Juventude,0,0,D
+2020-10-17,Chapecoense-sc,Vitoria,1,1,D
+2020-10-17,Confianca,Oeste,3,1,H
+2020-10-17,Brasil DE Pelotas,Figueirense,0,0,D
+2020-10-17,CRB,Operario-PR,4,1,H
+2020-10-18,Parana,Sampaio Correa,0,0,D
+2020-10-20,America Mineiro,Brasil DE Pelotas,3,1,H
+2020-10-20,Oeste,Nautico Recife,0,1,A
+2020-10-20,CSA,Botafogo SP,1,0,H
+2020-10-20,Juventude,Avai,3,0,H
+2020-10-21,Ponte Preta,Chapecoense-sc,0,5,A
+2020-10-21,Operario-PR,Cruzeiro,0,1,A
+2020-10-21,Figueirense,CRB,2,0,H
+2020-10-22,Sampaio Correa,Confianca,1,3,A
+2020-10-22,Cuiaba,Parana,3,3,D
+2020-10-23,Vitoria,Guarani Campinas,1,1,D
+2020-10-23,Brasil DE Pelotas,CSA,1,1,D
+2020-10-24,Chapecoense-sc,Operario-PR,1,0,H
+2020-10-24,CRB,Ponte Preta,1,0,H
+2020-10-24,Sampaio Correa,Cuiaba,3,0,H
+2020-10-25,America Mineiro,Confianca,2,1,H
+2020-10-25,Nautico Recife,Cruzeiro,1,1,D
+2020-10-25,Figueirense,Juventude,1,1,D
+2020-10-25,Guarani Campinas,Avai,2,1,H
+2020-10-25,Botafogo SP,Vitoria,2,1,H
+2020-10-27,Parana,Oeste,4,0,H
+2020-10-27,Chapecoense-sc,CSA,0,0,D
+2020-10-30,Vitoria,Brasil DE Pelotas,0,0,D
+2020-10-31,Cruzeiro,Parana,2,0,H
+2020-10-31,Oeste,Sampaio Correa,0,3,A
+2020-10-31,Confianca,Chapecoense-sc,0,2,A
+2020-10-31,Avai,America Mineiro,1,0,H
+2020-10-31,Operario-PR,Botafogo SP,0,0,D
+2020-11-01,CSA,Nautico Recife,3,1,H
+2020-11-01,Cuiaba,CRB,3,0,H
+2020-11-01,Juventude,Guarani Campinas,1,0,H
+2020-11-02,Ponte Preta,Figueirense,2,1,H
+2020-11-03,Brasil DE Pelotas,Sampaio Correa,0,0,D
+2020-11-06,Guarani Campinas,CSA,2,1,H
+2020-11-06,Nautico Recife,Avai,2,2,D
+2020-11-06,Botafogo SP,Cruzeiro,0,1,A
+2020-11-07,Parana,Confianca,1,1,D
+2020-11-07,Brasil DE Pelotas,Cuiaba,3,0,H
+2020-11-07,Figueirense,Operario-PR,0,1,A
+2020-11-07,America Mineiro,Ponte Preta,1,1,D
+2020-11-08,Chapecoense-sc,Oeste,0,0,D
+2020-11-08,Sampaio Correa,Vitoria,2,1,H
+2020-11-08,CRB,Juventude,0,1,A
+2020-11-09,Cruzeiro,Guarani Campinas,3,3,D
+2020-11-10,CSA,Chapecoense-sc,0,1,A
+2020-11-11,Confianca,Botafogo SP,1,0,H
+2020-11-13,Vitoria,Figueirense,3,0,H
+2020-11-13,Ponte Preta,Brasil DE Pelotas,1,1,D
+2020-11-13,Operario-PR,Nautico Recife,3,1,H
+2020-11-13,Avai,Parana,2,1,H
+2020-11-13,Oeste,CRB,1,2,A
+2020-11-14,Juventude,Sampaio Correa,2,3,A
+2020-11-15,Cuiaba,America Mineiro,0,0,D
+2020-11-17,Sampaio Correa,Nautico Recife,2,1,H
+2020-11-20,Vitoria,Ponte Preta,0,0,D
+2020-11-20,Avai,Confianca,1,0,H
+2020-11-20,Guarani Campinas,Botafogo SP,2,1,H
+2020-11-20,Juventude,Parana,5,0,H
+2020-11-20,Sampaio Correa,Chapecoense-sc,1,3,A
+2020-11-21,Cruzeiro,Figueirense,1,1,D
+2020-11-21,Oeste,Brasil DE Pelotas,2,1,H
+2020-11-21,Operario-PR,America Mineiro,0,1,A
+2020-11-21,CRB,Nautico Recife,2,1,H
+2020-11-21,Cuiaba,CSA,0,1,A
+2020-11-23,Figueirense,Sampaio Correa,1,2,A
+2020-11-23,Botafogo SP,Avai,0,1,A
+2020-11-24,Parana,Guarani Campinas,1,2,A
+2020-11-24,Ponte Preta,Oeste,1,0,H
+2020-11-24,CSA,Operario-PR,1,0,H
+2020-11-24,Confianca,Cuiaba,2,0,H
+2020-11-25,America Mineiro,Juventude,2,1,H
+2020-11-25,Chapecoense-sc,Cruzeiro,0,1,A
+2020-11-25,Brasil DE Pelotas,CRB,2,1,H
+2020-11-25,Nautico Recife,Vitoria,0,0,D
+2020-11-27,Figueirense,Botafogo SP,0,0,D
+2020-11-27,Oeste,America Mineiro,1,1,D
+2020-11-27,Sampaio Correa,Brasil DE Pelotas,0,1,A
+2020-11-27,Operario-PR,Parana,1,0,H
+2020-11-28,Cruzeiro,Confianca,1,2,A
+2020-11-28,Cuiaba,Avai,2,1,H
+2020-11-28,CSA,Ponte Preta,2,1,H
+2020-11-28,Vitoria,CRB,2,1,H
+2020-11-29,Guarani Campinas,Chapecoense-sc,2,0,H
+2020-11-29,Juventude,Nautico Recife,1,0,H
+2020-11-30,Brasil DE Pelotas,Operario-PR,0,0,D
+2020-11-30,Avai,Oeste,0,3,A
+2020-12-01,Chapecoense-sc,Cuiaba,1,0,H
+2020-12-01,CRB,CSA,0,0,D
+2020-12-01,Nautico Recife,Guarani Campinas,2,0,H
+2020-12-01,Confianca,Figueirense,1,1,D
+2020-12-02,Parana,Vitoria,1,4,A
+2020-12-02,Ponte Preta,Sampaio Correa,1,1,D
+2020-12-02,Botafogo SP,Juventude,1,1,D
+2020-12-03,America Mineiro,Cruzeiro,1,2,A
+2020-12-04,Operario-PR,Avai,1,1,D
+2020-12-04,Oeste,Guarani Campinas,0,1,A
+2020-12-04,Vitoria,Confianca,2,3,A
+2020-12-05,Ponte Preta,Parana,2,1,H
+2020-12-05,Juventude,Chapecoense-sc,1,1,D
+2020-12-05,CSA,America Mineiro,0,1,A
+2020-12-05,Sampaio Correa,CRB,3,0,H
+2020-12-06,Cruzeiro,Brasil DE Pelotas,4,1,H
+2020-12-06,Cuiaba,Botafogo SP,2,0,H
+2020-12-06,Figueirense,Nautico Recife,2,0,H
+2020-12-08,Juventude,Oeste,2,2,D
+2020-12-08,Guarani Campinas,Operario-PR,3,0,H
+2020-12-08,America Mineiro,Sampaio Correa,2,1,H
+2020-12-08,Botafogo SP,Ponte Preta,2,1,H
+2020-12-09,Avai,Chapecoense-sc,0,2,A
+2020-12-09,CRB,Cruzeiro,0,0,D
+2020-12-09,Cuiaba,Vitoria,3,3,D
+2020-12-09,Confianca,CSA,1,5,A
+2020-12-09,Parana,Figueirense,0,2,A
+2020-12-11,Nautico Recife,Brasil DE Pelotas,1,0,H
+2020-12-11,Operario-PR,Sampaio Correa,1,1,D
+2020-12-11,Ponte Preta,Avai,1,2,A
+2020-12-11,CSA,Oeste,2,1,H
+2020-12-12,Vitoria,Cruzeiro,0,1,A
+2020-12-12,Figueirense,Cuiaba,1,0,H
+2020-12-12,America Mineiro,Parana,1,0,H
+2020-12-12,Confianca,Juventude,0,1,A
+2020-12-13,Chapecoense-sc,CRB,3,2,H
+2020-12-13,Botafogo SP,Nautico Recife,1,1,D
+2020-12-13,Brasil DE Pelotas,Guarani Campinas,3,1,H
+2020-12-14,Operario-PR,Ponte Preta,1,0,H
+2020-12-15,Oeste,Cuiaba,0,2,A
+2020-12-15,Sampaio Correa,Avai,0,1,A
+2020-12-16,Cruzeiro,CSA,1,1,D
+2020-12-16,Vitoria,Juventude,1,0,H
+2020-12-16,Brasil DE Pelotas,Botafogo SP,0,0,D
+2020-12-16,Chapecoense-sc,Nautico Recife,0,0,D
+2020-12-16,Guarani Campinas,Confianca,1,0,H
+2020-12-17,Figueirense,America Mineiro,1,2,A
+2020-12-18,CRB,Parana,0,2,A
+2020-12-18,Oeste,Vitoria,2,1,H
+2020-12-18,Juventude,CSA,1,0,H
+2020-12-18,Avai,Cruzeiro,1,1,D
+2020-12-19,Cuiaba,Operario-PR,2,0,H
+2020-12-19,Nautico Recife,Sampaio Correa,1,0,H
+2020-12-19,Confianca,Ponte Preta,1,2,A
+2020-12-20,America Mineiro,Chapecoense-sc,2,2,D
+2020-12-20,Guarani Campinas,Figueirense,2,2,D
+2020-12-20,CRB,Botafogo SP,1,0,H
+2020-12-21,Parana,Brasil DE Pelotas,0,1,A
+2020-12-22,Operario-PR,Juventude,3,0,H
+2020-12-22,CSA,Vitoria,3,0,H
+2020-12-23,Ponte Preta,Cruzeiro,2,1,H
+2020-12-23,Nautico Recife,Cuiaba,2,0,H
+2020-12-23,Sampaio Correa,Guarani Campinas,0,1,A
+2020-12-23,Botafogo SP,Oeste,1,1,D
+2020-12-26,Figueirense,Avai,2,0,H
+2020-12-26,America Mineiro,CRB,1,0,H
+2020-12-28,Brasil DE Pelotas,Confianca,1,0,H
+2020-12-28,Chapecoense-sc,Parana,2,0,H
+2020-12-29,Avai,CRB,0,1,A
+2020-12-30,Cruzeiro,Cuiaba,0,0,D
+2020-12-30,Juventude,Ponte Preta,2,1,H
+2021-01-02,CSA,Sampaio Correa,2,1,H
+2021-01-02,Oeste,Figueirense,2,1,H
+2021-01-03,Guarani Campinas,America Mineiro,0,1,A
+2021-01-03,Chapecoense-sc,Brasil DE Pelotas,0,0,D
+2021-01-03,Vitoria,Operario-PR,1,1,D
+2021-01-04,Parana,Botafogo SP,1,1,D
+2021-01-04,Confianca,Nautico Recife,2,0,H
+2021-01-05,Guarani Campinas,Ponte Preta,1,1,D
+2021-01-06,Cuiaba,Juventude,1,0,H
+2021-01-08,Brasil DE Pelotas,Avai,0,1,A
+2021-01-08,CRB,Confianca,2,0,H
+2021-01-08,Nautico Recife,Parana,2,1,H
+2021-01-08,Operario-PR,Oeste,2,0,H
+2021-01-09,Figueirense,CSA,0,0,D
+2021-01-09,Sampaio Correa,Cruzeiro,0,1,A
+2021-01-09,America Mineiro,Vitoria,4,0,H
+2021-01-10,Botafogo SP,Chapecoense-sc,3,0,H
+2021-01-11,Ponte Preta,Cuiaba,2,2,D
+2021-01-11,CRB,Guarani Campinas,2,0,H
+2021-01-11,Confianca,Operario-PR,1,2,A
+2021-01-12,Parana,CSA,2,0,H
+2021-01-12,Brasil DE Pelotas,Juventude,2,1,H
+2021-01-12,Nautico Recife,America Mineiro,0,0,D
+2021-01-12,Botafogo SP,Sampaio Correa,2,1,H
+2021-01-13,Chapecoense-sc,Figueirense,2,1,H
+2021-01-13,Avai,Vitoria,2,2,D
+2021-01-14,Cruzeiro,Oeste,0,1,A
+2021-01-14,Operario-PR,CRB,3,2,H
+2021-01-15,Cuiaba,Guarani Campinas,4,0,H
+2021-01-15,Figueirense,Brasil DE Pelotas,3,0,H
+2021-01-15,Sampaio Correa,Parana,2,1,H
+2021-01-16,America Mineiro,Botafogo SP,1,1,D
+2021-01-16,CSA,Avai,1,1,D
+2021-01-16,Juventude,Cruzeiro,1,0,H
+2021-01-17,Oeste,Confianca,0,1,A
+2021-01-17,Vitoria,Chapecoense-sc,0,0,D
+2021-01-17,Ponte Preta,Nautico Recife,2,0,H
+2021-01-19,Brasil DE Pelotas,America Mineiro,0,0,D
+2021-01-19,Avai,Juventude,5,2,H
+2021-01-19,CRB,Figueirense,5,1,H
+2021-01-19,Botafogo SP,CSA,1,3,A
+2021-01-19,Confianca,Sampaio Correa,0,1,A
+2021-01-20,Parana,Cuiaba,0,2,A
+2021-01-20,Guarani Campinas,Vitoria,1,2,A
+2021-01-20,Nautico Recife,Oeste,4,1,H
+2021-01-21,Cruzeiro,Operario-PR,2,1,H
+2021-01-21,Chapecoense-sc,Ponte Preta,1,0,H
+2021-01-22,Juventude,Figueirense,2,1,H
+2021-01-22,CSA,Brasil DE Pelotas,1,1,D
+2021-01-23,Cuiaba,Sampaio Correa,1,3,A
+2021-01-23,Confianca,America Mineiro,0,0,D
+2021-01-23,Avai,Guarani Campinas,2,1,H
+2021-01-24,Cruzeiro,Nautico Recife,0,0,D
+2021-01-24,Ponte Preta,CRB,3,1,H
+2021-01-25,Operario-PR,Chapecoense-sc,2,0,H
+2021-01-26,Oeste,Parana,1,0,H
+2021-01-27,Vitoria,Botafogo SP,1,0,H
+2021-01-29,Figueirense,Ponte Preta,2,7,A
+2021-01-29,Sampaio Correa,Oeste,1,0,H
+2021-01-29,CRB,Cuiaba,4,1,H
+2021-01-29,Botafogo SP,Operario-PR,0,1,A
+2021-01-30,Parana,Cruzeiro,0,0,D
+2021-01-30,America Mineiro,Avai,2,1,H
+2021-01-30,Chapecoense-sc,Confianca,3,1,H
+2021-01-30,Guarani Campinas,Juventude,0,1,A
+2021-01-30,Brasil DE Pelotas,Vitoria,0,1,A
+2021-01-30,Nautico Recife,CSA,1,1,D

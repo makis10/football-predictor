@@ -1,7 +1,9 @@
 from datetime import date, datetime, time
 from typing import Optional
 
-from pydantic import BaseModel
+from pydantic import BaseModel, field_validator
+
+from backend.app.display_names import display_name, display_names
 
 
 class PredictionEmbed(BaseModel):
@@ -30,6 +32,14 @@ class MatchBase(BaseModel):
     away_team: str
     round: Optional[str] = None           # e.g. "1st Qualifying Round" (European ties only)
 
+    # The stored name is a join key, not a label — see app.display_names. This
+    # is a response-only model (nothing is created through MatchBase), so
+    # rewriting here cannot leak a display spelling back into the database.
+    @field_validator("home_team", "away_team")
+    @classmethod
+    def _spell_for_the_reader(cls, v: str) -> str:
+        return display_name(v) or v
+
 
 class MatchResponse(MatchBase):
     id: int
@@ -42,5 +52,10 @@ class MatchResponse(MatchBase):
     # is flagged insufficient_data, so the card can say WHICH club is missing
     # instead of calling a PAOK or Benfica tie "unknown teams".
     unknown_teams: list[str] = []
+
+    @field_validator("unknown_teams")
+    @classmethod
+    def _spell_unknowns_for_the_reader(cls, v: list[str]) -> list[str]:
+        return display_names(v)
 
     model_config = {"from_attributes": True}

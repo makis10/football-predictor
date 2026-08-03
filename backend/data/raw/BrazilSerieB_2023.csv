@@ -1,0 +1,381 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2023-04-14,Guarani Campinas,Avai,4,1,H
+2023-04-15,Ituano,Ceara,2,0,H
+2023-04-15,Vila Nova,Novorizontino,2,1,H
+2023-04-15,Sampaio Correa,Atletico Goianiense,3,3,D
+2023-04-15,Mirassol,Chapecoense-sc,1,0,H
+2023-04-15,Juventude,Botafogo SP,1,2,A
+2023-04-16,Criciuma,Tombense,2,0,H
+2023-04-16,Londrina,ABC,1,0,H
+2023-04-16,Vitoria,Ponte Preta,3,0,H
+2023-04-21,Atletico Goianiense,CRB,2,1,H
+2023-04-21,Botafogo SP,Sampaio Correa,1,0,H
+2023-04-22,Ponte Preta,Criciuma,1,2,A
+2023-04-22,Tombense,Ituano,3,0,H
+2023-04-22,Avai,Mirassol,1,0,H
+2023-04-22,Novorizontino,Juventude,1,0,H
+2023-04-22,Ceara,Guarani Campinas,0,3,A
+2023-04-23,Chapecoense-sc,Londrina,3,0,H
+2023-04-23,ABC,Vitoria,0,3,A
+2023-04-28,Vitoria,Londrina,2,0,H
+2023-04-28,Criciuma,Avai,1,0,H
+2023-04-29,Guarani Campinas,Ituano,1,0,H
+2023-04-29,Sampaio Correa,Mirassol,1,3,A
+2023-04-29,Chapecoense-sc,Ponte Preta,1,1,D
+2023-04-29,Botafogo SP,CRB,2,0,H
+2023-04-29,Tombense,Atletico Goianiense,1,1,D
+2023-04-30,Novorizontino,Sport Recife,0,0,D
+2023-04-30,ABC,Ceara,1,2,A
+2023-04-30,Vila Nova,Juventude,1,0,H
+2023-05-01,Londrina,Criciuma,1,1,D
+2023-05-02,Ponte Preta,Botafogo SP,2,0,H
+2023-05-02,CRB,Sampaio Correa,0,0,D
+2023-05-03,Atletico Goianiense,Chapecoense-sc,2,1,H
+2023-05-03,Juventude,Guarani Campinas,1,0,H
+2023-05-03,Ituano,ABC,3,0,H
+2023-05-03,Mirassol,Novorizontino,0,2,A
+2023-05-04,Avai,Vila Nova,0,3,A
+2023-05-06,Botafogo SP,Vitoria,0,3,A
+2023-05-06,Criciuma,Ituano,2,1,H
+2023-05-06,Sampaio Correa,Juventude,2,1,H
+2023-05-06,Tombense,Avai,0,1,A
+2023-05-06,Mirassol,Vila Nova,1,1,D
+2023-05-06,Chapecoense-sc,Novorizontino,1,1,D
+2023-05-06,CRB,ABC,1,1,D
+2023-05-07,Ponte Preta,Ceara,0,0,D
+2023-05-07,Sport Recife,Guarani Campinas,2,0,H
+2023-05-08,Atletico Goianiense,Londrina,2,1,H
+2023-05-10,Ceara,Vitoria,0,2,A
+2023-05-11,Sport Recife,Tombense,3,2,H
+2023-05-12,Vila Nova,Criciuma,0,0,D
+2023-05-13,Avai,Chapecoense-sc,1,4,A
+2023-05-13,Juventude,Mirassol,0,1,A
+2023-05-13,Guarani Campinas,Sampaio Correa,2,0,H
+2023-05-13,Novorizontino,CRB,0,1,A
+2023-05-13,Ceara,Tombense,2,0,H
+2023-05-14,Londrina,Ponte Preta,3,0,H
+2023-05-14,Vitoria,Atletico Goianiense,2,3,A
+2023-05-14,ABC,Botafogo SP,1,2,A
+2023-05-14,Ituano,Sport Recife,1,1,D
+2023-05-19,Tombense,Londrina,0,2,A
+2023-05-19,Mirassol,Vitoria,2,0,H
+2023-05-20,Atletico Goianiense,Avai,0,0,D
+2023-05-20,Sport Recife,Botafogo SP,3,0,H
+2023-05-20,Sampaio Correa,ABC,1,0,H
+2023-05-20,Ituano,Novorizontino,0,2,A
+2023-05-21,Chapecoense-sc,Juventude,0,2,A
+2023-05-21,Criciuma,Ceara,1,2,A
+2023-05-21,Ponte Preta,Guarani Campinas,1,1,D
+2023-05-21,CRB,Vila Nova,0,3,A
+2023-05-23,Botafogo SP,Mirassol,1,0,H
+2023-05-24,ABC,Tombense,1,0,H
+2023-05-24,Novorizontino,Avai,2,0,H
+2023-05-24,Vitoria,CRB,1,0,H
+2023-05-24,Vila Nova,Ituano,1,0,H
+2023-05-24,Londrina,Ceara,1,3,A
+2023-05-24,Juventude,Atletico Goianiense,3,0,H
+2023-05-25,Guarani Campinas,Chapecoense-sc,3,3,D
+2023-05-25,Criciuma,Sport Recife,1,0,H
+2023-05-25,Sampaio Correa,Ponte Preta,0,0,D
+2023-05-27,CRB,Juventude,1,2,A
+2023-05-27,Ituano,Londrina,3,1,H
+2023-05-27,Avai,Vitoria,1,1,D
+2023-05-27,Atletico Goianiense,Botafogo SP,1,1,D
+2023-05-28,Ponte Preta,Vila Nova,1,0,H
+2023-05-28,Ceara,Novorizontino,0,3,A
+2023-05-28,Mirassol,Criciuma,1,0,H
+2023-05-28,Sport Recife,ABC,4,1,H
+2023-05-28,Tombense,Guarani Campinas,1,1,D
+2023-05-29,Chapecoense-sc,Sampaio Correa,0,1,A
+2023-06-02,Ceara,Chapecoense-sc,2,0,H
+2023-06-02,Botafogo SP,Tombense,0,0,D
+2023-06-03,Vitoria,Ituano,3,0,H
+2023-06-03,Criciuma,Atletico Goianiense,3,0,H
+2023-06-03,Juventude,Avai,3,2,H
+2023-06-03,ABC,Novorizontino,0,1,A
+2023-06-03,Mirassol,Ponte Preta,1,0,H
+2023-06-03,Vila Nova,Sampaio Correa,3,0,H
+2023-06-04,Guarani Campinas,CRB,0,1,A
+2023-06-04,Londrina,Sport Recife,1,2,A
+2023-06-06,Chapecoense-sc,Vila Nova,0,1,A
+2023-06-06,Ponte Preta,ABC,0,0,D
+2023-06-06,Tombense,Vitoria,1,2,A
+2023-06-07,Atletico Goianiense,Ceara,0,3,A
+2023-06-07,Botafogo SP,Ituano,0,2,A
+2023-06-07,Sport Recife,Avai,2,1,H
+2023-06-07,Sampaio Correa,Londrina,2,0,H
+2023-06-07,Novorizontino,Guarani Campinas,1,0,H
+2023-06-08,CRB,Mirassol,2,0,H
+2023-06-08,Criciuma,Juventude,0,1,A
+2023-06-10,ABC,Chapecoense-sc,1,1,D
+2023-06-10,Vila Nova,Guarani Campinas,0,0,D
+2023-06-10,Ituano,Atletico Goianiense,1,1,D
+2023-06-10,Novorizontino,Sampaio Correa,1,0,H
+2023-06-10,Ceara,CRB,1,3,A
+2023-06-11,Ponte Preta,Sport Recife,1,1,D
+2023-06-11,Londrina,Mirassol,1,2,A
+2023-06-11,Avai,Botafogo SP,1,1,D
+2023-06-11,Vitoria,Criciuma,0,1,A
+2023-06-11,Juventude,Tombense,1,2,A
+2023-06-18,Sport Recife,Vila Nova,1,0,H
+2023-06-21,CRB,Ituano,2,2,D
+2023-06-23,Sport Recife,Juventude,3,0,H
+2023-06-23,Atletico Goianiense,Ponte Preta,1,0,H
+2023-06-24,Botafogo SP,Vila Nova,0,3,A
+2023-06-24,Avai,Londrina,0,0,D
+2023-06-24,Chapecoense-sc,Criciuma,1,1,D
+2023-06-24,Tombense,Novorizontino,1,2,A
+2023-06-25,Mirassol,ABC,3,2,H
+2023-06-25,Sampaio Correa,Ceara,1,1,D
+2023-06-25,Guarani Campinas,Vitoria,2,0,H
+2023-06-27,Chapecoense-sc,Sport Recife,1,1,D
+2023-06-27,Criciuma,CRB,2,1,H
+2023-06-28,Vila Nova,Tombense,1,0,H
+2023-06-28,Novorizontino,Botafogo SP,0,1,A
+2023-06-28,Ceara,Avai,0,0,D
+2023-06-28,ABC,Atletico Goianiense,1,1,D
+2023-06-29,Vitoria,Sampaio Correa,2,1,H
+2023-06-29,Guarani Campinas,Mirassol,2,1,H
+2023-06-29,Londrina,Juventude,1,2,A
+2023-06-29,Ituano,Ponte Preta,0,1,A
+2023-07-01,Tombense,Chapecoense-sc,4,2,H
+2023-07-01,Atletico Goianiense,Vila Nova,1,1,D
+2023-07-01,Avai,ABC,0,2,A
+2023-07-01,Sampaio Correa,Criciuma,0,2,A
+2023-07-01,CRB,Londrina,2,1,H
+2023-07-02,Juventude,Vitoria,1,0,H
+2023-07-02,Sport Recife,Ceara,2,0,H
+2023-07-02,Ponte Preta,Novorizontino,1,0,H
+2023-07-03,Mirassol,Ituano,0,1,A
+2023-07-03,Botafogo SP,Guarani Campinas,1,0,H
+2023-07-05,CRB,Sport Recife,2,0,H
+2023-07-07,Novorizontino,Atletico Goianiense,2,2,D
+2023-07-08,Ceara,Botafogo SP,3,0,H
+2023-07-08,Guarani Campinas,Londrina,2,1,H
+2023-07-08,ABC,Criciuma,0,1,A
+2023-07-08,Avai,Ponte Preta,0,1,A
+2023-07-08,Ituano,Juventude,1,1,D
+2023-07-08,Tombense,Sampaio Correa,0,1,A
+2023-07-09,Chapecoense-sc,CRB,2,1,H
+2023-07-09,Sport Recife,Mirassol,0,0,D
+2023-07-10,Vila Nova,Vitoria,1,0,H
+2023-07-13,Criciuma,Guarani Campinas,1,1,D
+2023-07-15,Atletico Goianiense,Sport Recife,3,1,H
+2023-07-15,Sampaio Correa,Ituano,0,0,D
+2023-07-15,Juventude,ABC,1,1,D
+2023-07-15,Ponte Preta,Tombense,0,1,A
+2023-07-15,Londrina,Vila Nova,1,0,H
+2023-07-16,Mirassol,Ceara,1,1,D
+2023-07-16,Vitoria,Novorizontino,2,1,H
+2023-07-17,Botafogo SP,Criciuma,1,0,H
+2023-07-18,Tombense,CRB,2,1,H
+2023-07-18,Chapecoense-sc,Ituano,1,0,H
+2023-07-19,Ponte Preta,Juventude,0,0,D
+2023-07-19,Atletico Goianiense,Mirassol,2,2,D
+2023-07-19,Novorizontino,Londrina,3,0,H
+2023-07-20,Sport Recife,Vitoria,1,2,A
+2023-07-20,Ceara,Vila Nova,1,0,H
+2023-07-20,Avai,Sampaio Correa,2,0,H
+2023-07-20,ABC,Guarani Campinas,0,1,A
+2023-07-21,CRB,Ponte Preta,1,0,H
+2023-07-22,Mirassol,Tombense,2,0,H
+2023-07-22,Criciuma,Novorizontino,0,1,A
+2023-07-22,Vila Nova,ABC,1,1,D
+2023-07-22,Ituano,Avai,0,1,A
+2023-07-23,Guarani Campinas,Atletico Goianiense,1,0,H
+2023-07-23,Juventude,Ceara,1,0,H
+2023-07-23,Sampaio Correa,Sport Recife,1,2,A
+2023-07-24,Vitoria,Chapecoense-sc,1,0,H
+2023-07-24,Londrina,Botafogo SP,1,2,A
+2023-07-28,Ceara,Ituano,1,1,D
+2023-07-29,Sport Recife,CRB,2,0,H
+2023-07-29,Chapecoense-sc,Mirassol,0,1,A
+2023-07-29,Botafogo SP,Juventude,0,2,A
+2023-07-29,Avai,Guarani Campinas,1,2,A
+2023-07-29,ABC,Londrina,0,0,D
+2023-07-29,Atletico Goianiense,Sampaio Correa,2,2,D
+2023-07-30,Tombense,Criciuma,2,2,D
+2023-07-30,Novorizontino,Vila Nova,3,1,H
+2023-07-30,Ponte Preta,Vitoria,2,2,D
+2023-08-01,Sampaio Correa,Botafogo SP,0,0,D
+2023-08-01,Mirassol,Avai,2,2,D
+2023-08-02,CRB,Atletico Goianiense,2,1,H
+2023-08-02,Criciuma,Ponte Preta,2,1,H
+2023-08-02,Ituano,Tombense,1,0,H
+2023-08-03,Vitoria,ABC,2,0,H
+2023-08-03,Guarani Campinas,Ceara,0,0,D
+2023-08-03,Vila Nova,Sport Recife,0,1,A
+2023-08-03,Londrina,Chapecoense-sc,1,1,D
+2023-08-03,Juventude,Novorizontino,1,0,H
+2023-08-05,Mirassol,Sampaio Correa,0,0,D
+2023-08-05,Avai,Criciuma,1,0,H
+2023-08-05,CRB,Botafogo SP,0,0,D
+2023-08-05,Ituano,Guarani Campinas,1,1,D
+2023-08-05,Sport Recife,Novorizontino,1,0,H
+2023-08-06,Ponte Preta,Chapecoense-sc,1,0,H
+2023-08-06,Ceara,ABC,1,0,H
+2023-08-07,Juventude,Vila Nova,0,2,A
+2023-08-07,Atletico Goianiense,Tombense,3,2,H
+2023-08-07,Londrina,Vitoria,2,0,H
+2023-08-11,Novorizontino,Mirassol,2,1,H
+2023-08-12,Tombense,Sport Recife,0,0,D
+2023-08-12,Criciuma,Londrina,2,0,H
+2023-08-12,Sampaio Correa,CRB,1,1,D
+2023-08-12,Botafogo SP,Ponte Preta,0,0,D
+2023-08-12,Vila Nova,Avai,1,1,D
+2023-08-13,Chapecoense-sc,Atletico Goianiense,0,1,A
+2023-08-13,Guarani Campinas,Juventude,0,1,A
+2023-08-13,Vitoria,Ceara,1,0,H
+2023-08-14,ABC,Ituano,1,1,D
+2023-08-17,Londrina,Atletico Goianiense,0,2,A
+2023-08-18,Vila Nova,Mirassol,2,0,H
+2023-08-18,Vitoria,Botafogo SP,2,0,H
+2023-08-19,Guarani Campinas,Sport Recife,3,1,H
+2023-08-19,Avai,Tombense,4,2,H
+2023-08-19,ABC,CRB,1,2,A
+2023-08-19,Ituano,Criciuma,3,0,H
+2023-08-19,Juventude,Sampaio Correa,0,0,D
+2023-08-20,Novorizontino,Chapecoense-sc,1,2,A
+2023-08-20,Ceara,Ponte Preta,1,1,D
+2023-08-22,Mirassol,Juventude,0,1,A
+2023-08-23,Criciuma,Vila Nova,1,0,H
+2023-08-23,CRB,Avai,1,1,D
+2023-08-24,Botafogo SP,Chapecoense-sc,1,2,A
+2023-08-25,Ponte Preta,Londrina,1,0,H
+2023-08-26,Sport Recife,Ituano,1,2,A
+2023-08-26,Sampaio Correa,Guarani Campinas,1,1,D
+2023-08-26,Tombense,Ceara,2,2,D
+2023-08-26,CRB,Novorizontino,1,0,H
+2023-08-27,Chapecoense-sc,Avai,0,0,D
+2023-08-27,Atletico Goianiense,Vitoria,0,0,D
+2023-08-28,Botafogo SP,ABC,0,0,D
+2023-08-30,Novorizontino,Ituano,2,0,H
+2023-09-01,Juventude,Chapecoense-sc,0,0,D
+2023-09-01,Vitoria,Mirassol,0,0,D
+2023-09-02,Londrina,Tombense,1,1,D
+2023-09-02,Avai,Atletico Goianiense,0,2,A
+2023-09-02,Ceara,Criciuma,1,0,H
+2023-09-02,ABC,Sampaio Correa,1,1,D
+2023-09-02,Guarani Campinas,Ponte Preta,1,0,H
+2023-09-03,Vila Nova,CRB,0,1,A
+2023-09-03,Botafogo SP,Sport Recife,1,1,D
+2023-09-06,Chapecoense-sc,Guarani Campinas,0,1,A
+2023-09-07,Ceara,Londrina,3,1,H
+2023-09-07,Tombense,ABC,3,0,H
+2023-09-08,Ituano,Vila Nova,1,2,A
+2023-09-09,Ponte Preta,Sampaio Correa,0,0,D
+2023-09-09,Mirassol,Botafogo SP,1,0,H
+2023-09-09,Sport Recife,Criciuma,3,3,D
+2023-09-10,Atletico Goianiense,Juventude,3,0,H
+2023-09-10,CRB,Vitoria,6,0,H
+2023-09-11,Avai,Novorizontino,1,0,H
+2023-09-14,Londrina,Ituano,2,2,D
+2023-09-15,Vila Nova,Ponte Preta,1,1,D
+2023-09-16,ABC,Sport Recife,0,1,A
+2023-09-16,Criciuma,Mirassol,2,1,H
+2023-09-16,Sampaio Correa,Chapecoense-sc,2,0,H
+2023-09-16,Botafogo SP,Atletico Goianiense,1,0,H
+2023-09-16,Juventude,CRB,3,1,H
+2023-09-17,Guarani Campinas,Tombense,3,0,H
+2023-09-17,Vitoria,Avai,3,0,H
+2023-09-19,Novorizontino,Ceara,4,1,H
+2023-09-20,Sampaio Correa,Vila Nova,2,1,H
+2023-09-22,Ponte Preta,Mirassol,0,3,A
+2023-09-23,Atletico Goianiense,Criciuma,3,1,H
+2023-09-23,Ituano,Vitoria,0,2,A
+2023-09-23,Chapecoense-sc,Ceara,1,1,D
+2023-09-23,CRB,Guarani Campinas,1,0,H
+2023-09-23,Tombense,Botafogo SP,0,0,D
+2023-09-23,Sport Recife,Londrina,4,0,H
+2023-09-25,Avai,Juventude,0,2,A
+2023-09-26,Novorizontino,ABC,2,1,H
+2023-09-28,Mirassol,CRB,1,0,H
+2023-09-29,Londrina,Sampaio Correa,1,0,H
+2023-09-29,Avai,Sport Recife,2,2,D
+2023-09-30,Vitoria,Tombense,1,0,H
+2023-09-30,Juventude,Criciuma,1,0,H
+2023-09-30,Guarani Campinas,Novorizontino,2,1,H
+2023-09-30,Ituano,Botafogo SP,1,1,D
+2023-09-30,ABC,Ponte Preta,2,0,H
+2023-10-01,Vila Nova,Chapecoense-sc,0,0,D
+2023-10-01,Ceara,Atletico Goianiense,0,1,A
+2023-10-03,Mirassol,Londrina,2,0,H
+2023-10-05,Chapecoense-sc,ABC,0,0,D
+2023-10-07,Atletico Goianiense,Ituano,1,0,H
+2023-10-07,CRB,Ceara,2,0,H
+2023-10-07,Tombense,Juventude,1,1,D
+2023-10-07,Sampaio Correa,Novorizontino,1,1,D
+2023-10-07,Botafogo SP,Avai,0,1,A
+2023-10-07,Guarani Campinas,Vila Nova,1,1,D
+2023-10-08,Criciuma,Vitoria,1,0,H
+2023-10-09,Sport Recife,Ponte Preta,3,3,D
+2023-10-11,ABC,Mirassol,1,2,A
+2023-10-12,Vila Nova,Botafogo SP,3,1,H
+2023-10-14,Criciuma,Chapecoense-sc,1,2,A
+2023-10-14,Ituano,CRB,0,0,D
+2023-10-14,Novorizontino,Tombense,0,0,D
+2023-10-14,Ceara,Sampaio Correa,0,0,D
+2023-10-15,Ponte Preta,Atletico Goianiense,0,2,A
+2023-10-15,Vitoria,Guarani Campinas,2,0,H
+2023-10-15,Londrina,Avai,1,1,D
+2023-10-16,Juventude,Sport Recife,2,2,D
+2023-10-19,Atletico Goianiense,ABC,3,1,H
+2023-10-19,Tombense,Vila Nova,2,1,H
+2023-10-20,Sampaio Correa,Vitoria,0,1,A
+2023-10-21,Mirassol,Guarani Campinas,0,0,D
+2023-10-21,CRB,Criciuma,0,1,A
+2023-10-21,Botafogo SP,Novorizontino,2,0,H
+2023-10-21,Juventude,Londrina,2,2,D
+2023-10-22,Sport Recife,Chapecoense-sc,2,1,H
+2023-10-22,Avai,Ceara,1,0,H
+2023-10-23,Ponte Preta,Ituano,0,0,D
+2023-10-27,ABC,Avai,1,1,D
+2023-10-28,Guarani Campinas,Botafogo SP,0,1,A
+2023-10-28,Novorizontino,Ponte Preta,2,0,H
+2023-10-28,Criciuma,Sampaio Correa,3,0,H
+2023-10-28,Ituano,Mirassol,0,0,D
+2023-10-28,Ceara,Sport Recife,2,1,H
+2023-10-28,Vila Nova,Atletico Goianiense,2,1,H
+2023-10-29,Londrina,CRB,1,1,D
+2023-10-29,Vitoria,Juventude,0,0,D
+2023-10-30,Chapecoense-sc,Tombense,1,2,A
+2023-11-01,Atletico Goianiense,Novorizontino,2,2,D
+2023-11-03,Mirassol,Sport Recife,2,1,H
+2023-11-04,Londrina,Guarani Campinas,0,0,D
+2023-11-04,Juventude,Ituano,2,1,H
+2023-11-04,Ponte Preta,Avai,0,1,A
+2023-11-04,Botafogo SP,Ceara,2,2,D
+2023-11-04,Sampaio Correa,Tombense,1,2,A
+2023-11-05,Vitoria,Vila Nova,1,1,D
+2023-11-07,CRB,Chapecoense-sc,3,2,H
+2023-11-08,Criciuma,ABC,1,0,H
+2023-11-10,Vila Nova,Londrina,4,1,H
+2023-11-11,Sport Recife,Atletico Goianiense,0,0,D
+2023-11-11,Ituano,Sampaio Correa,2,1,H
+2023-11-11,Chapecoense-sc,Botafogo SP,2,0,H
+2023-11-11,Avai,CRB,1,1,D
+2023-11-11,Tombense,Ponte Preta,0,1,A
+2023-11-12,Ceara,Mirassol,2,0,H
+2023-11-12,Novorizontino,Vitoria,1,2,A
+2023-11-14,Guarani Campinas,Criciuma,1,1,D
+2023-11-15,ABC,Juventude,0,0,D
+2023-11-17,Ituano,Chapecoense-sc,0,0,D
+2023-11-18,Londrina,Novorizontino,0,1,A
+2023-11-18,Vitoria,Sport Recife,1,0,H
+2023-11-18,Criciuma,Botafogo SP,3,0,H
+2023-11-18,Vila Nova,Ceara,3,1,H
+2023-11-18,Juventude,Ponte Preta,0,0,D
+2023-11-18,Mirassol,Atletico Goianiense,4,1,H
+2023-11-19,Guarani Campinas,ABC,2,3,A
+2023-11-19,CRB,Tombense,2,0,H
+2023-11-20,Sampaio Correa,Avai,4,0,H
+2023-11-25,Sport Recife,Sampaio Correa,4,1,H
+2023-11-25,Ceara,Juventude,1,3,A
+2023-11-25,Chapecoense-sc,Vitoria,3,1,H
+2023-11-25,Ponte Preta,CRB,3,0,H
+2023-11-25,Atletico Goianiense,Guarani Campinas,3,0,H
+2023-11-25,Avai,Ituano,0,0,D
+2023-11-25,ABC,Vila Nova,3,2,H
+2023-11-25,Tombense,Mirassol,0,1,A
+2023-11-25,Botafogo SP,Londrina,0,1,A
+2023-11-25,Novorizontino,Criciuma,2,0,H

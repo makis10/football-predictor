@@ -1,0 +1,310 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2025-07-18,Slask Wroclaw,Wieczysta Krakow,1,1,D
+2025-07-18,KS odz,Znicz Pruszkow,1,0,H
+2025-07-19,Pogon Grod. Mazowiecki,Stal Rzeszow,2,1,H
+2025-07-19,Gornik eczna,Polonia Bytom,0,3,A
+2025-07-19,Tychy 71,Miedz Legnica,4,3,H
+2025-07-20,Stal Mielec,Wisla Krakow,0,4,A
+2025-07-20,Chrobry Gogow,Odra Opole,3,0,H
+2025-07-20,Pogon Siedlce,Polonia Warszawa,1,1,D
+2025-07-21,Puszcza Niepoomice,Ruch Chorzow,1,1,D
+2025-07-25,Znicz Pruszkow,Stal Mielec,4,5,A
+2025-07-25,Stal Rzeszow,Slask Wroclaw,2,1,H
+2025-07-26,Wisla Krakow,KS odz,5,0,H
+2025-07-26,Puszcza Niepoomice,Pogon Grod. Mazowiecki,1,1,D
+2025-07-26,Chrobry Gogow,Polonia Bytom,0,1,A
+2025-07-27,Wieczysta Krakow,Pogon Siedlce,2,1,H
+2025-07-27,Ruch Chorzow,Gornik eczna,2,1,H
+2025-07-27,Polonia Warszawa,Tychy 71,1,2,A
+2025-07-28,Odra Opole,Miedz Legnica,2,1,H
+2025-08-01,Wieczysta Krakow,Znicz Pruszkow,4,0,H
+2025-08-01,KS odz,Polonia Bytom,5,0,H
+2025-08-02,Pogon Grod. Mazowiecki,Miedz Legnica,4,0,H
+2025-08-02,Stal Rzeszow,Chrobry Gogow,2,2,D
+2025-08-02,Stal Mielec,Polonia Warszawa,1,3,A
+2025-08-03,Slask Wroclaw,Ruch Chorzow,3,1,H
+2025-08-03,Pogon Siedlce,Odra Opole,0,1,A
+2025-08-03,Gornik eczna,Puszcza Niepoomice,2,2,D
+2025-08-04,Tychy 71,Wisla Krakow,3,4,A
+2025-08-08,Ruch Chorzow,Pogon Siedlce,0,2,A
+2025-08-08,Slask Wroclaw,Miedz Legnica,3,1,H
+2025-08-09,Chrobry Gogow,KS odz,2,1,H
+2025-08-09,Stal Mielec,Gornik eczna,1,1,D
+2025-08-09,Polonia Bytom,Stal Rzeszow,0,1,A
+2025-08-10,Wisla Krakow,Pogon Grod. Mazowiecki,3,2,H
+2025-08-10,Odra Opole,Tychy 71,0,0,D
+2025-08-10,Znicz Pruszkow,Polonia Warszawa,1,4,A
+2025-08-11,Puszcza Niepoomice,Wieczysta Krakow,0,1,A
+2025-08-15,KS odz,Stal Mielec,2,0,H
+2025-08-15,Polonia Warszawa,Ruch Chorzow,0,0,D
+2025-08-16,Chrobry Gogow,Miedz Legnica,2,2,D
+2025-08-16,Stal Rzeszow,Puszcza Niepoomice,2,2,D
+2025-08-16,Pogon Grod. Mazowiecki,Znicz Pruszkow,4,1,H
+2025-08-17,Odra Opole,Slask Wroclaw,1,1,D
+2025-08-17,Tychy 71,Gornik eczna,2,2,D
+2025-08-17,Pogon Siedlce,Polonia Bytom,2,0,H
+2025-08-19,Miedz Legnica,KS odz,2,1,H
+2025-08-19,Polonia Warszawa,Wieczysta Krakow,1,6,A
+2025-08-19,Znicz Pruszkow,Wisla Krakow,0,7,A
+2025-08-20,Chrobry Gogow,Slask Wroclaw,1,2,A
+2025-08-20,Polonia Bytom,Pogon Grod. Mazowiecki,3,0,H
+2025-08-20,Ruch Chorzow,Stal Rzeszow,4,0,H
+2025-08-21,Puszcza Niepoomice,Tychy 71,1,2,A
+2025-08-21,Stal Mielec,Odra Opole,2,1,H
+2025-08-21,Gornik eczna,Pogon Siedlce,1,1,D
+2025-08-23,KS odz,Polonia Warszawa,2,2,D
+2025-08-23,Stal Rzeszow,Miedz Legnica,1,2,A
+2025-08-23,Pogon Grod. Mazowiecki,Chrobry Gogow,1,1,D
+2025-08-24,Odra Opole,Znicz Pruszkow,0,2,A
+2025-08-24,Wisla Krakow,Slask Wroclaw,5,0,H
+2025-08-24,Ruch Chorzow,Polonia Bytom,1,1,D
+2025-08-24,Pogon Siedlce,Puszcza Niepoomice,0,0,D
+2025-08-25,Wieczysta Krakow,Gornik eczna,2,2,D
+2025-08-25,Tychy 71,Stal Mielec,0,1,A
+2025-08-29,Slask Wroclaw,Tychy 71,2,1,H
+2025-08-29,Miedz Legnica,Wisla Krakow,2,0,H
+2025-08-30,Polonia Bytom,Wieczysta Krakow,4,2,H
+2025-08-30,Gornik eczna,Stal Rzeszow,0,4,A
+2025-08-30,Znicz Pruszkow,Pogon Siedlce,0,1,A
+2025-08-30,Polonia Warszawa,Pogon Grod. Mazowiecki,2,1,H
+2025-08-31,Stal Mielec,Ruch Chorzow,2,2,D
+2025-08-31,Odra Opole,KS odz,1,1,D
+2025-08-31,Puszcza Niepoomice,Chrobry Gogow,0,0,D
+2025-09-12,Tychy 71,Polonia Bytom,1,2,A
+2025-09-12,Chrobry Gogow,Pogon Siedlce,2,1,H
+2025-09-13,Slask Wroclaw,Puszcza Niepoomice,2,0,H
+2025-09-13,Wisla Krakow,Odra Opole,2,2,D
+2025-09-13,Stal Rzeszow,Znicz Pruszkow,1,0,H
+2025-09-14,Miedz Legnica,Polonia Warszawa,1,1,D
+2025-09-14,Ruch Chorzow,KS odz,2,1,H
+2025-09-14,Pogon Grod. Mazowiecki,Gornik eczna,3,3,D
+2025-09-15,Wieczysta Krakow,Stal Mielec,2,0,H
+2025-09-19,Odra Opole,Stal Rzeszow,2,1,H
+2025-09-19,Stal Mielec,Pogon Grod. Mazowiecki,1,2,A
+2025-09-20,Pogon Siedlce,Slask Wroclaw,2,3,A
+2025-09-20,Polonia Bytom,Miedz Legnica,4,0,H
+2025-09-20,Polonia Warszawa,Puszcza Niepoomice,1,2,A
+2025-09-21,Gornik eczna,Wisla Krakow,1,2,A
+2025-09-21,Znicz Pruszkow,Tychy 71,4,0,H
+2025-09-21,KS odz,Wieczysta Krakow,0,0,D
+2025-09-22,Ruch Chorzow,Chrobry Gogow,2,1,H
+2025-09-26,Slask Wroclaw,Polonia Warszawa,1,1,D
+2025-09-27,Puszcza Niepoomice,Odra Opole,1,1,D
+2025-09-27,Tychy 71,Pogon Siedlce,1,3,A
+2025-09-27,Stal Rzeszow,Stal Mielec,3,2,H
+2025-09-28,Miedz Legnica,Znicz Pruszkow,2,1,H
+2025-09-28,Wieczysta Krakow,Ruch Chorzow,4,2,H
+2025-09-28,Chrobry Gogow,Gornik eczna,2,0,H
+2025-09-29,Pogon Grod. Mazowiecki,KS odz,3,0,H
+2025-09-29,Wisla Krakow,Polonia Bytom,1,0,H
+2025-10-02,Wieczysta Krakow,Wisla Krakow,1,1,D
+2025-10-03,Stal Mielec,Chrobry Gogow,1,2,A
+2025-10-03,Polonia Warszawa,Stal Rzeszow,2,3,A
+2025-10-04,Pogon Siedlce,Pogon Grod. Mazowiecki,1,2,A
+2025-10-04,Znicz Pruszkow,Slask Wroclaw,2,1,H
+2025-10-04,Polonia Bytom,Puszcza Niepoomice,1,1,D
+2025-10-05,Odra Opole,Wieczysta Krakow,2,0,H
+2025-10-05,KS odz,Tychy 71,3,1,H
+2025-10-05,Gornik eczna,Miedz Legnica,2,0,H
+2025-10-05,Wisla Krakow,Ruch Chorzow,3,0,H
+2025-10-17,Pogon Grod. Mazowiecki,Ruch Chorzow,2,2,D
+2025-10-17,Miedz Legnica,Pogon Siedlce,2,2,D
+2025-10-18,Chrobry Gogow,Polonia Warszawa,2,0,H
+2025-10-18,Tychy 71,Wieczysta Krakow,3,3,D
+2025-10-18,Stal Rzeszow,KS odz,1,4,A
+2025-10-19,Polonia Bytom,Odra Opole,0,0,D
+2025-10-19,Slask Wroclaw,Stal Mielec,2,1,H
+2025-10-19,Gornik eczna,Znicz Pruszkow,1,1,D
+2025-10-20,Puszcza Niepoomice,Wisla Krakow,0,3,A
+2025-10-24,Znicz Pruszkow,Puszcza Niepoomice,0,3,A
+2025-10-24,Odra Opole,Ruch Chorzow,1,1,D
+2025-10-25,Slask Wroclaw,Gornik eczna,3,1,H
+2025-10-25,Pogon Siedlce,KS odz,3,1,H
+2025-10-25,Polonia Warszawa,Polonia Bytom,2,1,H
+2025-10-26,Tychy 71,Chrobry Gogow,0,1,A
+2025-10-26,Wisla Krakow,Stal Rzeszow,2,1,H
+2025-10-26,Stal Mielec,Miedz Legnica,1,2,A
+2025-10-27,Wieczysta Krakow,Pogon Grod. Mazowiecki,2,3,A
+2025-10-31,Gornik eczna,Polonia Warszawa,1,2,A
+2025-10-31,Ruch Chorzow,Tychy 71,2,1,H
+2025-11-02,Stal Rzeszow,Pogon Siedlce,1,1,D
+2025-11-02,Chrobry Gogow,Wisla Krakow,0,1,A
+2025-11-02,Polonia Bytom,Znicz Pruszkow,2,0,H
+2025-11-02,Miedz Legnica,Wieczysta Krakow,3,2,H
+2025-11-03,KS odz,Slask Wroclaw,2,1,H
+2025-11-03,Pogon Grod. Mazowiecki,Odra Opole,2,1,H
+2025-11-05,Puszcza Niepoomice,Stal Mielec,1,1,D
+2025-11-07,Ruch Chorzow,Miedz Legnica,3,1,H
+2025-11-07,Znicz Pruszkow,Chrobry Gogow,0,2,A
+2025-11-08,Wisla Krakow,Polonia Warszawa,1,2,A
+2025-11-08,Stal Mielec,Pogon Siedlce,0,0,D
+2025-11-08,KS odz,Puszcza Niepoomice,0,3,A
+2025-11-08,Wieczysta Krakow,Stal Rzeszow,1,2,A
+2025-11-09,Odra Opole,Gornik eczna,3,1,H
+2025-11-09,Slask Wroclaw,Polonia Bytom,2,3,A
+2025-11-09,Tychy 71,Pogon Grod. Mazowiecki,1,2,A
+2025-11-21,Puszcza Niepoomice,Miedz Legnica,1,3,A
+2025-11-21,Pogon Grod. Mazowiecki,Slask Wroclaw,2,2,D
+2025-11-22,Chrobry Gogow,Wieczysta Krakow,1,2,A
+2025-11-22,Stal Rzeszow,Tychy 71,2,1,H
+2025-11-22,Polonia Bytom,Stal Mielec,4,1,H
+2025-11-23,Ruch Chorzow,Znicz Pruszkow,1,2,A
+2025-11-23,Pogon Siedlce,Wisla Krakow,0,0,D
+2025-11-23,Gornik eczna,KS odz,1,2,A
+2025-11-23,Polonia Warszawa,Odra Opole,1,0,H
+2025-11-28,Polonia Bytom,Gornik eczna,2,2,D
+2025-11-28,Miedz Legnica,Tychy 71,6,1,H
+2025-11-29,Odra Opole,Chrobry Gogow,0,2,A
+2025-11-29,Ruch Chorzow,Puszcza Niepoomice,2,0,H
+2025-11-29,Polonia Warszawa,Pogon Siedlce,2,0,H
+2025-11-30,Znicz Pruszkow,KS odz,1,1,D
+2025-11-30,Wieczysta Krakow,Slask Wroclaw,3,3,D
+2025-11-30,Wisla Krakow,Stal Mielec,3,0,H
+2025-12-01,Stal Rzeszow,Pogon Grod. Mazowiecki,1,0,H
+2025-12-05,Tychy 71,Polonia Warszawa,1,1,D
+2025-12-06,Miedz Legnica,Odra Opole,2,1,H
+2025-12-06,Pogon Siedlce,Wieczysta Krakow,0,2,A
+2025-12-06,Pogon Grod. Mazowiecki,Puszcza Niepoomice,1,1,D
+2025-12-07,Stal Mielec,Znicz Pruszkow,1,2,A
+2025-12-07,KS odz,Wisla Krakow,1,1,D
+2025-12-07,Polonia Bytom,Chrobry Gogow,2,0,H
+2025-12-07,Gornik eczna,Ruch Chorzow,0,1,A
+2025-12-08,Slask Wroclaw,Stal Rzeszow,1,1,D
+2026-02-06,Odra Opole,Pogon Siedlce,1,0,H
+2026-02-06,Wisla Krakow,Tychy 71,3,1,H
+2026-02-07,Miedz Legnica,Pogon Grod. Mazowiecki,1,1,D
+2026-02-07,Znicz Pruszkow,Wieczysta Krakow,2,3,A
+2026-02-07,Polonia Bytom,KS odz,2,3,A
+2026-02-08,Polonia Warszawa,Stal Mielec,5,2,H
+2026-02-08,Ruch Chorzow,Slask Wroclaw,2,2,D
+2026-02-08,Puszcza Niepoomice,Gornik eczna,2,1,H
+2026-02-09,Chrobry Gogow,Stal Rzeszow,1,1,D
+2026-02-13,Gornik eczna,Stal Mielec,1,1,D
+2026-02-13,Pogon Siedlce,Ruch Chorzow,2,1,H
+2026-02-14,Miedz Legnica,Slask Wroclaw,3,1,H
+2026-02-14,KS odz,Chrobry Gogow,1,3,A
+2026-02-14,Polonia Warszawa,Znicz Pruszkow,0,0,D
+2026-02-15,Stal Rzeszow,Polonia Bytom,3,1,H
+2026-02-15,Pogon Grod. Mazowiecki,Wisla Krakow,1,1,D
+2026-02-15,Wieczysta Krakow,Puszcza Niepoomice,3,1,H
+2026-02-16,Tychy 71,Odra Opole,1,1,D
+2026-02-20,Gornik eczna,Tychy 71,1,0,H
+2026-02-20,Wisla Krakow,Wieczysta Krakow,1,1,D
+2026-02-21,Miedz Legnica,Chrobry Gogow,0,1,A
+2026-02-21,Ruch Chorzow,Polonia Warszawa,2,3,A
+2026-02-21,Znicz Pruszkow,Pogon Grod. Mazowiecki,0,0,D
+2026-02-22,Puszcza Niepoomice,Stal Rzeszow,4,1,H
+2026-02-22,Slask Wroclaw,Odra Opole,3,0,H
+2026-02-22,Polonia Bytom,Pogon Siedlce,1,1,D
+2026-02-23,Stal Mielec,KS odz,1,2,A
+2026-02-27,Pogon Siedlce,Gornik eczna,1,1,D
+2026-02-27,Stal Rzeszow,Ruch Chorzow,0,1,A
+2026-02-28,Slask Wroclaw,Chrobry Gogow,2,1,H
+2026-02-28,KS odz,Miedz Legnica,0,0,D
+2026-02-28,Pogon Grod. Mazowiecki,Polonia Bytom,2,1,H
+2026-03-01,Tychy 71,Puszcza Niepoomice,1,2,A
+2026-03-01,Wisla Krakow,Znicz Pruszkow,1,1,D
+2026-03-01,Odra Opole,Stal Mielec,0,2,A
+2026-03-02,Wieczysta Krakow,Polonia Warszawa,1,2,A
+2026-03-06,Puszcza Niepoomice,Pogon Siedlce,3,0,H
+2026-03-06,Stal Mielec,Tychy 71,4,0,H
+2026-03-07,Miedz Legnica,Stal Rzeszow,2,1,H
+2026-03-07,Chrobry Gogow,Pogon Grod. Mazowiecki,3,0,H
+2026-03-07,Gornik eczna,Wieczysta Krakow,0,3,A
+2026-03-08,Znicz Pruszkow,Odra Opole,2,3,A
+2026-03-08,Polonia Bytom,Ruch Chorzow,0,1,A
+2026-03-09,Polonia Warszawa,KS odz,0,1,A
+2026-03-13,Chrobry Gogow,Puszcza Niepoomice,1,2,A
+2026-03-13,Wisla Krakow,Miedz Legnica,3,2,H
+2026-03-14,Ruch Chorzow,Stal Mielec,2,1,H
+2026-03-14,Stal Rzeszow,Gornik eczna,1,1,D
+2026-03-14,Pogon Grod. Mazowiecki,Polonia Warszawa,3,2,H
+2026-03-15,Pogon Siedlce,Znicz Pruszkow,1,0,H
+2026-03-15,Tychy 71,Slask Wroclaw,2,4,A
+2026-03-15,KS odz,Odra Opole,1,1,D
+2026-03-20,Znicz Pruszkow,Stal Rzeszow,2,3,A
+2026-03-20,Gornik eczna,Pogon Grod. Mazowiecki,3,0,H
+2026-03-21,Odra Opole,Wisla Krakow,1,1,D
+2026-03-21,KS odz,Ruch Chorzow,2,2,D
+2026-03-21,Puszcza Niepoomice,Slask Wroclaw,1,1,D
+2026-03-21,Polonia Bytom,Tychy 71,1,1,D
+2026-03-21,Polonia Warszawa,Miedz Legnica,1,1,D
+2026-03-22,Stal Mielec,Wieczysta Krakow,3,1,H
+2026-03-22,Pogon Siedlce,Chrobry Gogow,1,2,A
+2026-04-04,Slask Wroclaw,Pogon Siedlce,1,0,H
+2026-04-04,Tychy 71,Znicz Pruszkow,0,1,A
+2026-04-04,Wieczysta Krakow,KS odz,0,2,A
+2026-04-06,Wisla Krakow,Gornik eczna,3,2,H
+2026-04-06,Stal Rzeszow,Odra Opole,0,1,A
+2026-04-06,Puszcza Niepoomice,Polonia Warszawa,2,1,H
+2026-04-06,Chrobry Gogow,Ruch Chorzow,1,1,D
+2026-04-06,Pogon Grod. Mazowiecki,Stal Mielec,1,2,A
+2026-04-07,Miedz Legnica,Polonia Bytom,1,1,D
+2026-04-10,Polonia Warszawa,Slask Wroclaw,0,4,A
+2026-04-10,Odra Opole,Puszcza Niepoomice,1,0,H
+2026-04-11,Stal Mielec,Stal Rzeszow,3,1,H
+2026-04-11,Gornik eczna,Chrobry Gogow,1,0,H
+2026-04-11,Ruch Chorzow,Wieczysta Krakow,0,2,A
+2026-04-12,Pogon Siedlce,Tychy 71,0,1,A
+2026-04-12,Polonia Bytom,Wisla Krakow,1,1,D
+2026-04-12,Znicz Pruszkow,Miedz Legnica,1,2,A
+2026-04-17,Chrobry Gogow,Stal Mielec,2,1,H
+2026-04-17,Stal Rzeszow,Polonia Warszawa,0,2,A
+2026-04-18,Slask Wroclaw,Znicz Pruszkow,2,2,D
+2026-04-18,Puszcza Niepoomice,Polonia Bytom,2,1,H
+2026-04-18,Tychy 71,KS odz,3,2,H
+2026-04-18,Wieczysta Krakow,Odra Opole,0,0,D
+2026-04-19,Ruch Chorzow,Wisla Krakow,1,1,D
+2026-04-19,Pogon Grod. Mazowiecki,Pogon Siedlce,0,2,A
+2026-04-20,Miedz Legnica,Gornik eczna,0,2,A
+2026-04-23,Wieczysta Krakow,Polonia Bytom,4,3,H
+2026-04-24,Znicz Pruszkow,Gornik eczna,2,2,D
+2026-04-24,Wisla Krakow,Puszcza Niepoomice,2,2,D
+2026-04-25,KS odz,Stal Rzeszow,2,1,H
+2026-04-25,Stal Mielec,Slask Wroclaw,2,3,A
+2026-04-25,Pogon Siedlce,Miedz Legnica,2,0,H
+2026-04-25,Polonia Warszawa,Chrobry Gogow,1,0,H
+2026-04-26,Wieczysta Krakow,Tychy 71,2,0,H
+2026-04-26,Odra Opole,Polonia Bytom,0,2,A
+2026-04-27,Ruch Chorzow,Pogon Grod. Mazowiecki,2,2,D
+2026-05-01,Puszcza Niepoomice,Znicz Pruszkow,1,0,H
+2026-05-01,Gornik eczna,Slask Wroclaw,0,4,A
+2026-05-02,Miedz Legnica,Stal Mielec,1,0,H
+2026-05-02,KS odz,Pogon Siedlce,4,0,H
+2026-05-02,Pogon Grod. Mazowiecki,Wieczysta Krakow,1,4,A
+2026-05-03,Ruch Chorzow,Odra Opole,2,0,H
+2026-05-03,Chrobry Gogow,Tychy 71,3,2,H
+2026-05-03,Stal Rzeszow,Wisla Krakow,1,2,A
+2026-05-04,Polonia Bytom,Polonia Warszawa,3,2,H
+2026-05-07,KS odz,Pogon Grod. Mazowiecki,3,2,H
+2026-05-08,Wisla Krakow,Chrobry Gogow,2,0,H
+2026-05-09,Stal Mielec,Puszcza Niepoomice,1,1,D
+2026-05-09,Znicz Pruszkow,Polonia Bytom,1,4,A
+2026-05-09,Wieczysta Krakow,Miedz Legnica,0,1,A
+2026-05-10,Polonia Warszawa,Gornik eczna,2,1,H
+2026-05-10,Tychy 71,Ruch Chorzow,0,4,A
+2026-05-10,Pogon Siedlce,Stal Rzeszow,1,2,A
+2026-05-11,Slask Wroclaw,KS odz,2,2,D
+2026-05-11,Odra Opole,Pogon Grod. Mazowiecki,3,1,H
+2026-05-15,Pogon Siedlce,Stal Mielec,1,3,A
+2026-05-15,Polonia Warszawa,Wisla Krakow,0,1,A
+2026-05-16,Chrobry Gogow,Znicz Pruszkow,3,2,H
+2026-05-16,Gornik eczna,Odra Opole,0,2,A
+2026-05-16,Stal Rzeszow,Wieczysta Krakow,1,5,A
+2026-05-17,Miedz Legnica,Ruch Chorzow,1,2,A
+2026-05-17,Pogon Grod. Mazowiecki,Tychy 71,0,0,D
+2026-05-17,Polonia Bytom,Slask Wroclaw,1,3,A
+2026-05-18,Puszcza Niepoomice,KS odz,1,0,H
+2026-05-24,Miedz Legnica,Puszcza Niepoomice,2,1,H
+2026-05-24,Slask Wroclaw,Pogon Grod. Mazowiecki,0,0,D
+2026-05-24,Wisla Krakow,Pogon Siedlce,2,0,H
+2026-05-24,Odra Opole,Polonia Warszawa,1,2,A
+2026-05-24,Stal Mielec,Polonia Bytom,4,1,H
+2026-05-24,Tychy 71,Stal Rzeszow,3,3,D
+2026-05-24,KS odz,Gornik eczna,3,1,H
+2026-05-24,Znicz Pruszkow,Ruch Chorzow,3,2,H
+2026-05-24,Wieczysta Krakow,Chrobry Gogow,1,1,D
+2026-05-28,Chrobry Gogow,KS odz,1,1,D
+2026-05-28,Wieczysta Krakow,Polonia Warszawa,3,2,H
+2026-05-31,Wieczysta Krakow,Chrobry Gogow,2,1,H
+2026-03-07,Slask Wroclaw,Wisla Krakow,3,0,H

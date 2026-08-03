@@ -56,11 +56,11 @@ TEAM_MAP: dict[str, str] = {
 def map_team(name: str) -> str:
     """Odds-API name → our CSV name, falling back to the cross-source alias
     table (the Greek clubs are spelled three different ways across our feeds)."""
-    from scripts.team_resolver import COMMON_ALIASES
+    from scripts.team_resolver import canonical
 
     if name in TEAM_MAP:
         return TEAM_MAP[name]
-    return COMMON_ALIASES.get(name, name)
+    return canonical(name)
 
 
 def infer_season(d: date) -> str:

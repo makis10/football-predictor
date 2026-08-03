@@ -1,0 +1,201 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2026-03-21,Vila Nova,CRB,2,2,D
+2026-03-21,Ceara,Sao Bernardo,1,1,D
+2026-03-21,Operario-PR,Atletico Goianiense,1,0,H
+2026-03-21,Botafogo SP,Fortaleza EC,4,0,H
+2026-03-21,Cuiaba,Sport Recife,0,0,D
+2026-03-22,Avai,Juventude,2,0,H
+2026-03-22,Nautico Recife,Criciuma,0,1,A
+2026-03-22,Goias,America Mineiro,3,1,H
+2026-03-22,Athletic Club,Ponte Preta,2,1,H
+2026-03-22,Novorizontino,Londrina,1,3,A
+2026-03-31,Juventude,Novorizontino,0,0,D
+2026-03-31,Fortaleza EC,Cuiaba,0,0,D
+2026-04-01,America Mineiro,Botafogo SP,1,2,A
+2026-04-01,Sport Recife,Vila Nova,1,1,D
+2026-04-01,Atletico Goianiense,Nautico Recife,1,2,A
+2026-04-01,Londrina,Goias,2,2,D
+2026-04-02,Ponte Preta,Ceara,1,1,D
+2026-04-02,Criciuma,Athletic Club,1,1,D
+2026-04-02,CRB,Avai,0,1,A
+2026-04-02,Sao Bernardo,Operario-PR,1,2,A
+2026-04-04,Fortaleza EC,Juventude,2,1,H
+2026-04-04,Nautico Recife,Ponte Preta,1,0,H
+2026-04-04,Cuiaba,Ceara,0,2,A
+2026-04-04,Vila Nova,Atletico Goianiense,2,1,H
+2026-04-04,Londrina,Sport Recife,1,2,A
+2026-04-05,Avai,Operario-PR,0,0,D
+2026-04-05,Novorizontino,CRB,1,1,D
+2026-04-05,Athletic Club,America Mineiro,1,1,D
+2026-04-05,Botafogo SP,Sao Bernardo,1,2,A
+2026-04-07,Goias,Criciuma,1,0,H
+2026-04-10,Criciuma,Botafogo SP,1,0,H
+2026-04-11,Juventude,Goias,2,0,H
+2026-04-11,Sport Recife,Avai,2,2,D
+2026-04-11,Ponte Preta,Vila Nova,0,1,A
+2026-04-11,Ceara,Nautico Recife,1,0,H
+2026-04-12,America Mineiro,Novorizontino,0,3,A
+2026-04-12,Operario-PR,Cuiaba,0,0,D
+2026-04-12,Sao Bernardo,Fortaleza EC,0,1,A
+2026-04-12,CRB,Athletic Club,2,3,A
+2026-04-12,Atletico Goianiense,Londrina,2,1,H
+2026-04-18,America Mineiro,Sport Recife,0,0,D
+2026-04-18,Nautico Recife,Sao Bernardo,0,3,A
+2026-04-18,Vila Nova,Operario-PR,2,1,H
+2026-04-18,Avai,Ponte Preta,1,2,A
+2026-04-18,CRB,Juventude,0,1,A
+2026-04-19,Londrina,Ceara,0,0,D
+2026-04-19,Botafogo SP,Atletico Goianiense,1,1,D
+2026-04-19,Goias,Cuiaba,0,2,A
+2026-04-19,Fortaleza EC,Criciuma,3,2,H
+2026-04-19,Novorizontino,Athletic Club,2,1,H
+2026-04-23,Cuiaba,Botafogo SP,1,1,D
+2026-04-24,Ponte Preta,America Mineiro,1,0,H
+2026-04-25,Sport Recife,Novorizontino,1,0,H
+2026-04-26,Juventude,Londrina,1,0,H
+2026-04-26,Sao Bernardo,Goias,1,0,H
+2026-04-26,Ceara,Vila Nova,3,3,D
+2026-04-26,Operario-PR,Fortaleza EC,0,0,D
+2026-04-26,Criciuma,CRB,3,1,H
+2026-04-26,Atletico Goianiense,Avai,2,1,H
+2026-04-27,Athletic Club,Nautico Recife,0,1,A
+2026-05-02,Botafogo SP,Nautico Recife,1,1,D
+2026-05-02,Cuiaba,Criciuma,1,1,D
+2026-05-02,Fortaleza EC,Goias,4,1,H
+2026-05-03,Operario-PR,Londrina,3,0,H
+2026-05-03,Sao Bernardo,Ponte Preta,3,0,H
+2026-05-03,Sport Recife,Ceara,2,0,H
+2026-05-03,Atletico Goianiense,Juventude,0,0,D
+2026-05-03,America Mineiro,CRB,1,2,A
+2026-05-03,Avai,Novorizontino,3,3,D
+2026-05-04,Vila Nova,Athletic Club,1,1,D
+2026-05-09,Goias,Vila Nova,1,0,H
+2026-05-09,Athletic Club,Cuiaba,0,0,D
+2026-05-09,Ponte Preta,Sport Recife,1,3,A
+2026-05-09,Ceara,Atletico Goianiense,0,1,A
+2026-05-09,CRB,Operario-PR,3,0,H
+2026-05-10,Juventude,Criciuma,0,0,D
+2026-05-10,Nautico Recife,America Mineiro,4,0,H
+2026-05-10,Avai,Fortaleza EC,0,0,D
+2026-05-10,Novorizontino,Botafogo SP,1,0,H
+2026-05-12,Londrina,Sao Bernardo,1,3,A
+2026-05-16,Operario-PR,Nautico Recife,2,6,A
+2026-05-16,Sao Bernardo,America Mineiro,1,1,D
+2026-05-16,Goias,Botafogo SP,1,0,H
+2026-05-16,Cuiaba,Novorizontino,0,0,D
+2026-05-17,Athletic Club,Juventude,1,1,D
+2026-05-17,Vila Nova,Avai,2,0,H
+2026-05-17,Ceara,Fortaleza EC,2,1,H
+2026-05-17,Criciuma,Atletico Goianiense,1,1,D
+2026-05-17,Sport Recife,CRB,1,2,A
+2026-05-18,Ponte Preta,Londrina,1,4,A
+2026-05-22,Nautico Recife,Cuiaba,1,0,H
+2026-05-23,Novorizontino,Ceara,2,1,H
+2026-05-23,Fortaleza EC,Londrina,3,0,H
+2026-05-23,Juventude,Sport Recife,0,1,A
+2026-05-24,Atletico Goianiense,Sao Bernardo,0,1,A
+2026-05-24,CRB,Ponte Preta,4,2,H
+2026-05-24,America Mineiro,Vila Nova,1,2,A
+2026-05-24,Avai,Goias,0,2,A
+2026-05-24,Operario-PR,Criciuma,1,1,D
+2026-05-25,Botafogo SP,Athletic Club,1,2,A
+2026-05-30,Juventude,America Mineiro,3,0,H
+2026-05-30,Atletico Goianiense,Goias,1,1,D
+2026-05-30,Avai,Criciuma,1,2,A
+2026-05-30,Athletic Club,Fortaleza EC,1,0,H
+2026-05-30,Sport Recife,Nautico Recife,2,0,H
+2026-05-31,Londrina,Vila Nova,0,1,A
+2026-05-31,Sao Bernardo,Novorizontino,1,1,D
+2026-05-31,Ceara,Operario-PR,1,2,A
+2026-05-31,Cuiaba,CRB,2,0,H
+2026-06-01,Ponte Preta,Botafogo SP,0,0,D
+2026-06-05,Operario-PR,Juventude,2,1,H
+2026-06-06,Criciuma,Londrina,1,0,H
+2026-06-07,CRB,Sao Bernardo,2,3,A
+2026-06-08,America Mineiro,Atletico Goianiense,1,2,A
+2026-06-08,Vila Nova,Botafogo SP,1,0,H
+2026-06-09,Ponte Preta,Cuiaba,1,2,A
+2026-06-09,Nautico Recife,Fortaleza EC,0,1,A
+2026-06-10,Ceara,Avai,2,1,H
+2026-06-10,Goias,Novorizontino,0,4,A
+2026-06-11,Sport Recife,Athletic Club,1,1,D
+2026-06-12,Atletico Goianiense,CRB,3,3,D
+2026-06-14,Juventude,Ponte Preta,3,0,H
+2026-06-14,Sao Bernardo,Sport Recife,0,0,D
+2026-06-14,Athletic Club,Goias,1,1,D
+2026-06-14,Cuiaba,Vila Nova,1,0,H
+2026-06-14,Botafogo SP,Operario-PR,2,1,H
+2026-06-14,Novorizontino,Nautico Recife,2,2,D
+2026-06-16,Criciuma,Ceara,1,1,D
+2026-06-16,Londrina,Avai,3,2,H
+2026-06-16,Fortaleza EC,America Mineiro,0,3,A
+2026-06-19,Sport Recife,Atletico Goianiense,1,1,D
+2026-06-20,Londrina,Athletic Club,2,0,H
+2026-06-20,Ceara,Botafogo SP,0,1,A
+2026-06-20,Vila Nova,Nautico Recife,4,3,H
+2026-06-21,Avai,Cuiaba,1,0,H
+2026-06-21,CRB,Fortaleza EC,1,1,D
+2026-06-21,Sao Bernardo,Juventude,0,1,A
+2026-06-21,Goias,Operario-PR,0,3,A
+2026-06-22,Ponte Preta,Novorizontino,0,2,A
+2026-06-23,America Mineiro,Criciuma,0,1,A
+2026-06-25,Cuiaba,Londrina,2,2,D
+2026-06-26,Novorizontino,Vila Nova,2,1,H
+2026-06-27,Operario-PR,America Mineiro,1,0,H
+2026-06-27,Criciuma,Sao Bernardo,1,0,H
+2026-06-28,Atletico Goianiense,Ponte Preta,2,0,H
+2026-06-28,Juventude,Ceara,2,0,H
+2026-06-28,Athletic Club,Avai,1,0,H
+2026-06-28,Fortaleza EC,Sport Recife,2,1,H
+2026-06-28,Nautico Recife,Goias,0,1,A
+2026-06-30,Botafogo SP,CRB,0,1,A
+2026-07-02,Cuiaba,America Mineiro,1,0,H
+2026-07-03,Fortaleza EC,Ponte Preta,2,0,H
+2026-07-04,Criciuma,Sport Recife,1,0,H
+2026-07-04,Londrina,CRB,5,0,H
+2026-07-04,Novorizontino,Atletico Goianiense,3,0,H
+2026-07-04,Goias,Ceara,2,0,H
+2026-07-05,Nautico Recife,Juventude,0,0,D
+2026-07-06,Vila Nova,Sao Bernardo,2,1,H
+2026-07-06,Botafogo SP,Avai,3,1,H
+2026-07-07,Athletic Club,Operario-PR,0,1,A
+2026-07-08,Ponte Preta,Criciuma,1,2,A
+2026-07-10,Juventude,Vila Nova,1,0,H
+2026-07-10,Sport Recife,Botafogo SP,3,3,D
+2026-07-12,Operario-PR,Novorizontino,2,1,H
+2026-07-12,Avai,Nautico Recife,2,0,H
+2026-07-12,Sao Bernardo,Cuiaba,2,2,D
+2026-07-12,Atletico Goianiense,Fortaleza EC,1,0,H
+2026-07-12,CRB,Goias,2,2,D
+2026-07-13,America Mineiro,Londrina,1,1,D
+2026-07-13,Ceara,Athletic Club,0,0,D
+2026-07-16,CRB,Nautico Recife,2,1,H
+2026-07-17,America Mineiro,Ceara,1,1,D
+2026-07-17,Juventude,Cuiaba,2,0,H
+2026-07-17,Sao Bernardo,Avai,1,1,D
+2026-07-18,Londrina,Botafogo SP,0,0,D
+2026-07-18,Fortaleza EC,Novorizontino,1,0,H
+2026-07-18,Sport Recife,Operario-PR,2,2,D
+2026-07-18,Ponte Preta,Goias,1,2,A
+2026-07-18,Criciuma,Vila Nova,2,0,H
+2026-07-18,Atletico Goianiense,Athletic Club,0,0,D
+2026-07-21,Avai,America Mineiro,2,1,H
+2026-07-21,Novorizontino,Criciuma,0,1,A
+2026-07-22,Vila Nova,Fortaleza EC,2,1,H
+2026-07-22,Ceara,CRB,0,1,A
+2026-07-22,Operario-PR,Ponte Preta,3,2,H
+2026-07-22,Goias,Sport Recife,1,1,D
+2026-07-23,Nautico Recife,Londrina,2,1,H
+2026-07-23,Athletic Club,Sao Bernardo,2,1,H
+2026-07-23,Cuiaba,Atletico Goianiense,0,1,A
+2026-07-24,Botafogo SP,Juventude,4,2,H
+2026-07-26,Criciuma,Nautico Recife,0,0,D
+2026-07-26,Sao Bernardo,Ceara,3,4,A
+2026-07-26,America Mineiro,Goias,1,0,H
+2026-07-26,Londrina,Novorizontino,1,4,A
+2026-07-27,Sport Recife,Cuiaba,1,1,D
+2026-07-27,Atletico Goianiense,Operario-PR,3,1,H
+2026-07-27,CRB,Vila Nova,2,0,H
+2026-07-28,Ponte Preta,Athletic Club,1,1,D
+2026-07-28,Juventude,Avai,1,0,H
+2026-07-29,Fortaleza EC,Botafogo SP,1,0,H

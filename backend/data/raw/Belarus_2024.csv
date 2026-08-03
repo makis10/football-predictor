@@ -4,10 +4,10 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2024-03-16,FC Minsk,Bate Borisov,0,1,A
 2024-03-16,Neman,Naftan,2,1,H
 2024-03-16,Dinamo Minsk,Smorgon,5,0,H
-2024-03-17,Arsenal,Torpedo Zhodino,0,1,A
+2024-03-17,Arsenal Dzyarzhynsk,Torpedo Zhodino,0,1,A
 2024-03-17,FC Slutsk,FC Gomel,1,1,D
 2024-03-17,Shakhter Soligorsk,FC Vitebsk,1,0,H
-2024-03-29,FC Dnepr Mogilev,Arsenal,0,0,D
+2024-03-29,FC Dnepr Mogilev,Arsenal Dzyarzhynsk,0,0,D
 2024-03-29,Dinamo Brest,Smorgon,4,1,H
 2024-03-30,Naftan,Bate Borisov,0,0,D
 2024-03-30,FC Vitebsk,Slavia Mozyr,2,3,A
@@ -15,7 +15,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2024-03-31,FC Gomel,Neman,2,3,A
 2024-03-31,Torpedo Zhodino,FC Slutsk,1,0,H
 2024-03-31,FC Minsk,Dinamo Minsk,0,0,D
-2024-04-05,Arsenal,FC Vitebsk,1,1,D
+2024-04-05,Arsenal Dzyarzhynsk,FC Vitebsk,1,1,D
 2024-04-05,FC Minsk,Smorgon,2,3,A
 2024-04-06,FC Slutsk,FC Dnepr Mogilev,0,1,A
 2024-04-06,Bate Borisov,FC Gomel,1,3,A
@@ -26,7 +26,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2024-04-12,FC Vitebsk,FC Slutsk,2,0,H
 2024-04-13,FC Dnepr Mogilev,Neman,0,2,A
 2024-04-13,FC Gomel,Dinamo Minsk,0,1,A
-2024-04-13,FC Isloch Minsk R.,Arsenal,0,2,A
+2024-04-13,FC Isloch Minsk R.,Arsenal Dzyarzhynsk,0,2,A
 2024-04-13,Torpedo Zhodino,Bate Borisov,2,0,H
 2024-04-14,Naftan,Smorgon,1,1,D
 2024-04-14,Shakhter Soligorsk,Slavia Mozyr,1,3,A
@@ -34,7 +34,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2024-04-19,Smorgon,FC Gomel,2,2,D
 2024-04-19,Bate Borisov,FC Dnepr Mogilev,1,1,D
 2024-04-20,FC Minsk,Naftan,1,1,D
-2024-04-20,Arsenal,Shakhter Soligorsk,2,0,H
+2024-04-20,Arsenal Dzyarzhynsk,Shakhter Soligorsk,2,0,H
 2024-04-20,Slavia Mozyr,Dinamo Brest,1,1,D
 2024-04-21,FC Slutsk,FC Isloch Minsk R.,1,3,A
 2024-04-21,Dinamo Minsk,Torpedo Zhodino,0,0,D
@@ -45,7 +45,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2024-04-27,Torpedo Zhodino,Smorgon,2,0,H
 2024-04-27,FC Dnepr Mogilev,Dinamo Minsk,0,2,A
 2024-04-28,FC Gomel,FC Minsk,2,0,H
-2024-04-28,Slavia Mozyr,Arsenal,3,0,H
+2024-04-28,Slavia Mozyr,Arsenal Dzyarzhynsk,3,0,H
 2024-04-28,Shakhter Soligorsk,FC Slutsk,1,2,A
 2024-05-01,Smorgon,FC Dnepr Mogilev,0,0,D
 2024-05-02,Dinamo Minsk,FC Vitebsk,1,1,D
@@ -54,17 +54,17 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2024-05-03,Bate Borisov,FC Isloch Minsk R.,1,1,D
 2024-05-04,Naftan,FC Gomel,0,2,A
 2024-05-04,FC Slutsk,Slavia Mozyr,1,0,H
-2024-05-04,Arsenal,Dinamo Brest,0,2,A
+2024-05-04,Arsenal Dzyarzhynsk,Dinamo Brest,0,2,A
 2024-05-10,FC Vitebsk,Smorgon,0,1,A
 2024-05-10,FC Dnepr Mogilev,FC Minsk,1,1,D
-2024-05-11,Arsenal,FC Slutsk,1,0,H
+2024-05-11,Arsenal Dzyarzhynsk,FC Slutsk,1,0,H
 2024-05-11,Shakhter Soligorsk,Bate Borisov,1,3,A
 2024-05-11,Dinamo Brest,FC Gomel,1,1,D
 2024-05-12,FC Isloch Minsk R.,Dinamo Minsk,0,1,A
 2024-05-12,Torpedo Zhodino,Naftan,2,1,H
 2024-05-12,Slavia Mozyr,Neman,0,1,A
 2024-05-16,Smorgon,FC Isloch Minsk R.,1,1,D
-2024-05-16,Neman,Arsenal,1,0,H
+2024-05-16,Neman,Arsenal Dzyarzhynsk,1,0,H
 2024-05-17,FC Slutsk,Dinamo Brest,1,4,A
 2024-05-17,Bate Borisov,Slavia Mozyr,1,0,H
 2024-05-18,Naftan,FC Dnepr Mogilev,2,1,H
@@ -75,7 +75,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2024-05-21,FC Slutsk,Neman,2,0,H
 2024-05-24,FC Vitebsk,Naftan,2,0,H
 2024-05-24,Dinamo Brest,Torpedo Zhodino,0,1,A
-2024-05-26,Arsenal,Bate Borisov,2,0,H
+2024-05-26,Arsenal Dzyarzhynsk,Bate Borisov,2,0,H
 2024-05-26,Shakhter Soligorsk,Smorgon,2,2,D
 2024-05-26,Slavia Mozyr,Dinamo Minsk,1,1,D
 2024-05-27,FC Dnepr Mogilev,FC Gomel,0,1,A
@@ -83,7 +83,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2024-05-31,Smorgon,Slavia Mozyr,3,3,D
 2024-05-31,Bate Borisov,FC Slutsk,6,0,H
 2024-06-01,Naftan,FC Isloch Minsk R.,2,1,H
-2024-06-01,Arsenal,Dinamo Minsk,1,2,A
+2024-06-01,Arsenal Dzyarzhynsk,Dinamo Minsk,1,2,A
 2024-06-01,Neman,Dinamo Brest,2,0,H
 2024-06-02,Torpedo Zhodino,FC Dnepr Mogilev,4,2,H
 2024-06-02,FC Gomel,FC Vitebsk,0,0,D
@@ -92,13 +92,13 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2024-06-15,FC Slutsk,Dinamo Minsk,0,5,A
 2024-06-15,Dinamo Brest,FC Dnepr Mogilev,6,1,H
 2024-06-15,Neman,Bate Borisov,1,0,H
-2024-06-16,Arsenal,Smorgon,2,0,H
+2024-06-16,Arsenal Dzyarzhynsk,Smorgon,2,0,H
 2024-06-16,Shakhter Soligorsk,Naftan,0,0,D
 2024-06-16,Slavia Mozyr,FC Minsk,1,1,D
 2024-06-21,Smorgon,FC Slutsk,4,1,H
 2024-06-21,FC Gomel,Shakhter Soligorsk,1,2,A
 2024-06-22,Naftan,Slavia Mozyr,0,1,A
-2024-06-22,FC Minsk,Arsenal,1,2,A
+2024-06-22,FC Minsk,Arsenal Dzyarzhynsk,1,2,A
 2024-06-22,Bate Borisov,Dinamo Brest,3,1,H
 2024-06-23,FC Dnepr Mogilev,FC Vitebsk,1,2,A
 2024-06-23,Torpedo Zhodino,FC Isloch Minsk R.,1,0,H
@@ -110,12 +110,12 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2024-06-29,Bate Borisov,Dinamo Minsk,0,2,A
 2024-06-30,FC Slutsk,FC Minsk,1,0,H
 2024-06-30,FC Isloch Minsk R.,FC Dnepr Mogilev,1,1,D
-2024-06-30,Arsenal,Naftan,0,3,A
+2024-06-30,Arsenal Dzyarzhynsk,Naftan,0,3,A
 2024-07-04,Dinamo Minsk,Dinamo Brest,1,0,H
 2024-07-05,Torpedo Zhodino,Slavia Mozyr,3,0,H
 2024-07-06,Smorgon,Bate Borisov,0,0,D
 2024-07-06,FC Vitebsk,FC Isloch Minsk R.,0,1,A
-2024-07-06,FC Gomel,Arsenal,5,0,H
+2024-07-06,FC Gomel,Arsenal Dzyarzhynsk,5,0,H
 2024-07-07,FC Minsk,Neman,0,2,A
 2024-07-07,Naftan,FC Slutsk,1,4,A
 2024-07-07,FC Dnepr Mogilev,Shakhter Soligorsk,2,3,A
@@ -124,23 +124,23 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2024-08-03,FC Gomel,FC Slutsk,1,2,A
 2024-08-03,FC Dnepr Mogilev,Slavia Mozyr,1,2,A
 2024-08-04,Dinamo Brest,FC Isloch Minsk R.,3,2,H
-2024-08-04,Torpedo Zhodino,Arsenal,1,1,D
+2024-08-04,Torpedo Zhodino,Arsenal Dzyarzhynsk,1,1,D
 2024-08-09,Slavia Mozyr,FC Vitebsk,1,2,A
 2024-08-10,Bate Borisov,Naftan,1,1,D
 2024-08-10,Smorgon,Dinamo Brest,0,2,A
 2024-08-10,Shakhter Soligorsk,FC Isloch Minsk R.,0,1,A
 2024-08-11,FC Slutsk,Torpedo Zhodino,1,0,H
-2024-08-11,Arsenal,FC Dnepr Mogilev,3,1,H
+2024-08-11,Arsenal Dzyarzhynsk,FC Dnepr Mogilev,3,1,H
 2024-08-11,Neman,FC Gomel,1,1,D
 2024-08-16,Dinamo Brest,Shakhter Soligorsk,3,0,H
-2024-08-16,FC Vitebsk,Arsenal,0,0,D
+2024-08-16,FC Vitebsk,Arsenal Dzyarzhynsk,0,0,D
 2024-08-17,FC Isloch Minsk R.,Slavia Mozyr,0,0,D
 2024-08-17,FC Dnepr Mogilev,FC Slutsk,2,3,A
 2024-08-17,Torpedo Zhodino,Neman,1,4,A
 2024-08-18,Smorgon,FC Minsk,1,1,D
 2024-08-18,FC Gomel,Bate Borisov,2,0,H
 2024-08-23,FC Slutsk,FC Vitebsk,2,0,H
-2024-08-23,Arsenal,FC Isloch Minsk R.,3,1,H
+2024-08-23,Arsenal Dzyarzhynsk,FC Isloch Minsk R.,3,1,H
 2024-08-24,FC Minsk,Dinamo Brest,3,2,H
 2024-08-24,Smorgon,Naftan,1,0,H
 2024-08-24,Slavia Mozyr,Shakhter Soligorsk,0,1,A
@@ -149,14 +149,14 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2024-08-30,Dinamo Brest,Slavia Mozyr,3,0,H
 2024-08-30,FC Gomel,Smorgon,2,1,H
 2024-08-31,Naftan,FC Minsk,0,2,A
-2024-08-31,Shakhter Soligorsk,Arsenal,0,3,A
+2024-08-31,Shakhter Soligorsk,Arsenal Dzyarzhynsk,0,3,A
 2024-08-31,FC Vitebsk,Neman,0,1,A
 2024-09-01,FC Isloch Minsk R.,FC Slutsk,0,0,D
 2024-09-01,FC Dnepr Mogilev,Bate Borisov,1,1,D
 2024-09-12,Dinamo Minsk,FC Gomel,2,0,H
 2024-09-13,FC Slutsk,Shakhter Soligorsk,0,0,D
 2024-09-14,Smorgon,Torpedo Zhodino,0,4,A
-2024-09-14,Arsenal,Slavia Mozyr,1,1,D
+2024-09-14,Arsenal Dzyarzhynsk,Slavia Mozyr,1,1,D
 2024-09-14,Neman,FC Isloch Minsk R.,0,3,A
 2024-09-15,Naftan,Dinamo Brest,3,6,A
 2024-09-15,Bate Borisov,FC Vitebsk,1,0,H
@@ -169,12 +169,12 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2024-09-21,Slavia Mozyr,FC Slutsk,0,0,D
 2024-09-22,FC Isloch Minsk R.,Bate Borisov,1,2,A
 2024-09-22,FC Dnepr Mogilev,Smorgon,2,1,H
-2024-09-22,Dinamo Brest,Arsenal,2,1,H
+2024-09-22,Dinamo Brest,Arsenal Dzyarzhynsk,2,1,H
 2024-09-24,Dinamo Minsk,FC Minsk,2,0,H
 2024-09-25,Naftan,Neman,0,0,D
 2024-09-27,Bate Borisov,Shakhter Soligorsk,1,1,D
 2024-09-27,FC Gomel,Dinamo Brest,2,1,H
-2024-09-28,FC Slutsk,Arsenal,1,1,D
+2024-09-28,FC Slutsk,Arsenal Dzyarzhynsk,1,1,D
 2024-09-28,Smorgon,FC Vitebsk,0,3,A
 2024-09-28,Dinamo Minsk,FC Isloch Minsk R.,2,0,H
 2024-09-29,Naftan,Torpedo Zhodino,1,1,D
@@ -185,7 +185,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2024-10-05,FC Isloch Minsk R.,Smorgon,3,2,H
 2024-10-05,Torpedo Zhodino,FC Gomel,2,2,D
 2024-10-05,Slavia Mozyr,Bate Borisov,2,3,A
-2024-10-06,Arsenal,Neman,0,4,A
+2024-10-06,Arsenal Dzyarzhynsk,Neman,0,4,A
 2024-10-06,FC Dnepr Mogilev,Naftan,0,3,A
 2024-10-06,Shakhter Soligorsk,Dinamo Minsk,0,3,A
 2024-10-13,Naftan,Dinamo Minsk,1,2,A
@@ -193,7 +193,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2024-10-19,Naftan,FC Vitebsk,0,4,A
 2024-10-19,Neman,FC Slutsk,2,0,H
 2024-10-19,Dinamo Minsk,Slavia Mozyr,2,0,H
-2024-10-20,Bate Borisov,Arsenal,3,2,H
+2024-10-20,Bate Borisov,Arsenal Dzyarzhynsk,3,2,H
 2024-10-20,FC Minsk,FC Isloch Minsk R.,3,2,H
 2024-10-20,FC Gomel,FC Dnepr Mogilev,1,1,D
 2024-10-20,Torpedo Zhodino,Dinamo Brest,3,1,H
@@ -204,19 +204,19 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2024-10-27,FC Isloch Minsk R.,Naftan,3,0,H
 2024-10-27,FC Vitebsk,FC Gomel,0,1,A
 2024-10-27,Shakhter Soligorsk,FC Minsk,0,1,A
-2024-10-29,Dinamo Minsk,Arsenal,2,0,H
+2024-10-29,Dinamo Minsk,Arsenal Dzyarzhynsk,2,0,H
 2024-11-01,FC Dnepr Mogilev,Dinamo Brest,0,3,A
 2024-11-02,FC Minsk,Slavia Mozyr,1,1,D
 2024-11-02,Bate Borisov,Neman,0,3,A
 2024-11-02,Dinamo Minsk,FC Slutsk,2,0,H
 2024-11-02,Torpedo Zhodino,FC Vitebsk,3,0,H
 2024-11-03,Naftan,Shakhter Soligorsk,0,0,D
-2024-11-03,Smorgon,Arsenal,1,0,H
+2024-11-03,Smorgon,Arsenal Dzyarzhynsk,1,0,H
 2024-11-03,FC Gomel,FC Isloch Minsk R.,0,0,D
 2024-11-08,FC Vitebsk,FC Dnepr Mogilev,2,1,H
 2024-11-08,Slavia Mozyr,Naftan,1,0,H
 2024-11-09,FC Slutsk,Smorgon,0,0,D
-2024-11-09,Arsenal,FC Minsk,0,0,D
+2024-11-09,Arsenal Dzyarzhynsk,FC Minsk,0,0,D
 2024-11-09,Dinamo Brest,Bate Borisov,2,0,H
 2024-11-10,FC Isloch Minsk R.,Torpedo Zhodino,0,1,A
 2024-11-10,Shakhter Soligorsk,FC Gomel,1,2,A
@@ -225,14 +225,14 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2024-11-23,Smorgon,Neman,0,0,D
 2024-11-23,FC Minsk,FC Slutsk,0,1,A
 2024-11-23,FC Dnepr Mogilev,FC Isloch Minsk R.,1,3,A
-2024-11-24,Naftan,Arsenal,0,0,D
+2024-11-24,Naftan,Arsenal Dzyarzhynsk,0,0,D
 2024-11-24,FC Vitebsk,Dinamo Brest,2,0,H
 2024-11-24,FC Gomel,Slavia Mozyr,0,0,D
 2024-11-25,Dinamo Minsk,Bate Borisov,1,0,H
 2024-11-26,Torpedo Zhodino,Shakhter Soligorsk,1,0,H
 2024-11-28,Bate Borisov,Smorgon,7,4,H
 2024-11-30,FC Slutsk,Naftan,0,1,A
-2024-11-30,Arsenal,FC Gomel,1,0,H
+2024-11-30,Arsenal Dzyarzhynsk,FC Gomel,1,0,H
 2024-12-01,Neman,FC Minsk,4,0,H
 2024-12-01,Shakhter Soligorsk,FC Dnepr Mogilev,1,2,A
 2024-12-01,Slavia Mozyr,Torpedo Zhodino,0,2,A

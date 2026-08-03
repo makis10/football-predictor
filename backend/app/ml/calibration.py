@@ -112,24 +112,39 @@ def fit_calibrators(
     cal_g_acc = (cal_over_pred == y_cal_goals).mean()
     print(f"  [calibration] Goals   — raw acc: {raw_g_acc:.3f}  calibrated acc: {cal_g_acc:.3f}")
 
-    # ── Goals model — per-league calibrators ──────────────────────────────────
+    # ── Goals model — per-league calibrators (DISABLED 2026-08-03) ────────────
+    #
+    # Measured on the held-out test split (7,194 matches the calibrators never
+    # saw), Over-2.5 log-loss:
+    #
+    #     raw model            0.6832
+    #     global isotonic      0.6844
+    #     + per-league         0.7168      ← this layer, +0.0324
+    #
+    # 20 of 23 leagues got worse, 3 better. Romania went 0.6968 → 1.0592.
+    # Switzerland +0.107, Norway +0.125.
+    #
+    # The cause is the sample size. `min_league_samples = 80` binary outcomes is
+    # nowhere near enough for isotonic regression, which is non-parametric and
+    # will happily interpolate the noise: the fitted curves were 10-15 step
+    # functions whose plateaus reached exactly 0.000 and 1.000 — a calibrator
+    # asserting a 0% chance of Over 2.5 — and 0.74% of test predictions landed
+    # on one of those pins, which is where most of the log-loss went.
+    #
+    # It was not a self-contained loss. Romania's raw 0.476 was pushed to 0.392,
+    # which contradicts a BTTS of 0.529 (few goals, yet both teams score); the
+    # coherence projection in poisson.project_probs_coherent then resolved the
+    # contradiction by moving the mass into the draw, and all 114 upcoming Liga I
+    # fixtures came out at a 0.372 draw probability against a 0.278 base rate.
+    # The draw looked like the bug for a while. It was the symptom.
+    #
+    # Reviving this needs a genuine held-out check per league — fit on part of
+    # the calibration window, keep the calibrator only if it beats the global one
+    # on the rest — plus clipping away from 0 and 1. With a one-season window no
+    # league has the rows for that, which is the honest answer for now.
     league_goals_cals: dict[str, IsotonicRegression] = {}
-    if cal_df is not None and "League" in cal_df.columns:
-        leagues = cal_df["League"].values
-        for league in np.unique(leagues):
-            mask = leagues == league
-            if mask.sum() < min_league_samples:
-                continue
-            iso_l = IsotonicRegression(out_of_bounds="clip")
-            iso_l.fit(raw_over[mask], y_cal_goals[mask].astype(float))
-            league_goals_cals[league] = iso_l
-            # Log per-league improvement
-            raw_l_acc = (raw_over_pred[mask] == y_cal_goals[mask]).mean()
-            cal_l_acc = ((iso_l.predict(raw_over[mask]) >= 0.5).astype(int) == y_cal_goals[mask]).mean()
-            print(f"  [calibration] {league:<12} — "
-                  f"n={mask.sum():4d}  raw={raw_l_acc:.3f}  cal={cal_l_acc:.3f}")
-        if league_goals_cals:
-            print(f"  [calibration] {len(league_goals_cals)} per-league goals calibrators fitted.")
+    print("  [calibration] per-league goals calibrators disabled "
+          "(measured +0.0324 log-loss on held-out test; see comment)")
 
     return result_cals, goals_cal, league_goals_cals
 

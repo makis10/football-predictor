@@ -1,0 +1,320 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2025-08-02,FC Voluntari,Metalul Buzau,2,1,H
+2025-08-02,Concordia,Muscelul Campulung Elite,2,0,H
+2025-08-02,ASA Targu Mures,Corvinul Hunedoara,0,0,D
+2025-08-02,CS Afumati,FC Bacau,3,2,H
+2025-08-02,CSM Resita,CSM Satu Mare,2,1,H
+2025-08-02,Slatina,Gloria Bistrita,0,0,D
+2025-08-02,Tunari,CSA Steaua Bucuresti,1,3,A
+2025-08-02,CS Dinamo Bucuresti,Dumbravita,1,2,A
+2025-08-02,Bihor Oradea,Viitorul Selimbar,1,0,H
+2025-08-05,Politehnica Iasi,Ceahlaul Piatra Neamt,0,1,A
+2025-08-08,CSM Satu Mare,Bihor Oradea,1,4,A
+2025-08-08,CSA Steaua Bucuresti,Concordia,4,1,H
+2025-08-09,FC Voluntari,Slatina,1,0,H
+2025-08-09,Ceahlaul Piatra Neamt,Tunari,1,1,D
+2025-08-09,Viitorul Selimbar,ASA Targu Mures,1,3,A
+2025-08-09,Dumbravita,CSM Resita,1,3,A
+2025-08-09,Muscelul Campulung Elite,CS Dinamo Bucuresti,2,3,A
+2025-08-09,Gloria Bistrita,CS Afumati,1,1,D
+2025-08-09,Metalul Buzau,Sepsi OSK Sfantu Gheorghe,0,0,D
+2025-08-10,Corvinul Hunedoara,Chindia Targoviste,1,0,H
+2025-08-12,FC Bacau,Politehnica Iasi,1,2,A
+2025-08-15,Bihor Oradea,Dumbravita,3,2,H
+2025-08-16,Chindia Targoviste,Viitorul Selimbar,3,1,H
+2025-08-16,ASA Targu Mures,CSM Satu Mare,4,0,H
+2025-08-16,CS Afumati,FC Voluntari,0,1,A
+2025-08-16,CSM Resita,Muscelul Campulung Elite,7,0,H
+2025-08-16,Slatina,Metalul Buzau,2,3,A
+2025-08-16,CS Dinamo Bucuresti,CSA Steaua Bucuresti,0,0,D
+2025-08-17,Concordia,Ceahlaul Piatra Neamt,8,0,H
+2025-08-17,Tunari,FC Bacau,1,2,A
+2025-08-18,Sepsi OSK Sfantu Gheorghe,Corvinul Hunedoara,0,2,A
+2025-08-19,Politehnica Iasi,Gloria Bistrita,3,0,H
+2025-08-22,Viitorul Selimbar,Sepsi OSK Sfantu Gheorghe,0,2,A
+2025-08-23,Ceahlaul Piatra Neamt,CS Dinamo Bucuresti,3,0,H
+2025-08-23,Metalul Buzau,Corvinul Hunedoara,0,1,A
+2025-08-23,Slatina,CS Afumati,0,2,A
+2025-08-23,CSA Steaua Bucuresti,CSM Resita,2,1,H
+2025-08-23,Dumbravita,ASA Targu Mures,2,3,A
+2025-08-23,Muscelul Campulung Elite,Bihor Oradea,2,1,H
+2025-08-23,FC Bacau,Concordia,1,1,D
+2025-08-23,Gloria Bistrita,Tunari,2,2,D
+2025-08-23,FC Voluntari,Politehnica Iasi,0,0,D
+2025-08-24,CSM Satu Mare,Chindia Targoviste,2,4,A
+2025-08-30,Concordia,Gloria Bistrita,2,0,H
+2025-08-30,Politehnica Iasi,Slatina,1,1,D
+2025-08-30,ASA Targu Mures,Muscelul Campulung Elite,3,0,H
+2025-08-30,CS Afumati,Metalul Buzau,0,2,A
+2025-08-30,CSM Resita,Ceahlaul Piatra Neamt,0,2,A
+2025-08-30,Tunari,FC Voluntari,2,1,H
+2025-08-30,Bihor Oradea,CSA Steaua Bucuresti,4,2,H
+2025-08-30,Sepsi OSK Sfantu Gheorghe,CSM Satu Mare,1,0,H
+2025-08-31,Corvinul Hunedoara,Viitorul Selimbar,3,2,H
+2025-08-31,CS Dinamo Bucuresti,FC Bacau,1,1,D
+2025-09-02,Chindia Targoviste,Dumbravita,2,0,H
+2025-09-11,FC Voluntari,Concordia,1,0,H
+2025-09-11,CSA Steaua Bucuresti,ASA Targu Mures,2,1,H
+2025-09-12,Ceahlaul Piatra Neamt,Bihor Oradea,0,3,A
+2025-09-13,Metalul Buzau,Viitorul Selimbar,1,0,H
+2025-09-13,Slatina,Tunari,1,1,D
+2025-09-13,Dumbravita,Sepsi OSK Sfantu Gheorghe,1,2,A
+2025-09-13,Muscelul Campulung Elite,Chindia Targoviste,1,1,D
+2025-09-13,FC Bacau,CSM Resita,0,0,D
+2025-09-13,Gloria Bistrita,CS Dinamo Bucuresti,2,1,H
+2025-09-13,CS Afumati,Politehnica Iasi,2,0,H
+2025-09-14,CSM Satu Mare,Corvinul Hunedoara,2,4,A
+2025-09-19,Bihor Oradea,FC Bacau,2,0,H
+2025-09-20,Concordia,Slatina,1,2,A
+2025-09-20,Sepsi OSK Sfantu Gheorghe,Muscelul Campulung Elite,2,0,H
+2025-09-20,CSM Resita,Gloria Bistrita,2,1,H
+2025-09-20,Tunari,CS Afumati,0,2,A
+2025-09-20,Viitorul Selimbar,CSM Satu Mare,1,1,D
+2025-09-20,CS Dinamo Bucuresti,FC Voluntari,0,0,D
+2025-09-20,Corvinul Hunedoara,Dumbravita,3,1,H
+2025-09-20,Politehnica Iasi,Metalul Buzau,2,1,H
+2025-09-21,ASA Targu Mures,Ceahlaul Piatra Neamt,3,0,H
+2025-09-23,Chindia Targoviste,CSA Steaua Bucuresti,3,0,H
+2025-09-27,FC Voluntari,CSM Resita,3,2,H
+2025-09-27,Politehnica Iasi,Tunari,2,0,H
+2025-09-27,CS Afumati,Concordia,1,2,A
+2025-09-27,Metalul Buzau,CSM Satu Mare,0,1,A
+2025-09-27,Slatina,CS Dinamo Bucuresti,2,0,H
+2025-09-27,Dumbravita,Viitorul Selimbar,1,1,D
+2025-09-27,Muscelul Campulung Elite,Corvinul Hunedoara,0,1,A
+2025-09-27,Gloria Bistrita,Bihor Oradea,1,3,A
+2025-09-27,FC Bacau,ASA Targu Mures,3,0,H
+2025-09-28,Ceahlaul Piatra Neamt,Chindia Targoviste,0,0,D
+2025-09-30,CSA Steaua Bucuresti,Sepsi OSK Sfantu Gheorghe,2,1,H
+2025-10-03,Bihor Oradea,FC Voluntari,1,1,D
+2025-10-04,Concordia,Politehnica Iasi,2,0,H
+2025-10-04,Chindia Targoviste,FC Bacau,4,0,H
+2025-10-04,CSM Resita,Slatina,2,0,H
+2025-10-04,Tunari,Metalul Buzau,2,4,A
+2025-10-04,Viitorul Selimbar,Muscelul Campulung Elite,5,0,H
+2025-10-04,CSM Satu Mare,Dumbravita,1,4,A
+2025-10-04,CS Dinamo Bucuresti,CS Afumati,0,0,D
+2025-10-04,Corvinul Hunedoara,CSA Steaua Bucuresti,0,0,D
+2025-10-05,Sepsi OSK Sfantu Gheorghe,Ceahlaul Piatra Neamt,1,0,H
+2025-10-07,ASA Targu Mures,Gloria Bistrita,3,0,H
+2025-10-17,Politehnica Iasi,CS Dinamo Bucuresti,1,1,D
+2025-10-18,FC Voluntari,ASA Targu Mures,3,3,D
+2025-10-18,CS Afumati,CSM Resita,2,3,A
+2025-10-18,Metalul Buzau,Dumbravita,5,1,H
+2025-10-18,Tunari,Concordia,1,1,D
+2025-10-18,CSA Steaua Bucuresti,Viitorul Selimbar,4,3,H
+2025-10-18,Muscelul Campulung Elite,CSM Satu Mare,3,0,H
+2025-10-18,FC Bacau,Sepsi OSK Sfantu Gheorghe,0,2,A
+2025-10-18,Gloria Bistrita,Chindia Targoviste,3,1,H
+2025-10-18,Ceahlaul Piatra Neamt,Corvinul Hunedoara,2,3,A
+2025-10-19,Slatina,Bihor Oradea,2,0,H
+2025-10-25,Concordia,Metalul Buzau,1,2,A
+2025-10-25,Sepsi OSK Sfantu Gheorghe,Gloria Bistrita,1,1,D
+2025-10-25,ASA Targu Mures,Slatina,3,2,H
+2025-10-25,CSM Resita,Politehnica Iasi,0,1,A
+2025-10-25,Viitorul Selimbar,Ceahlaul Piatra Neamt,3,1,H
+2025-10-25,Dumbravita,Muscelul Campulung Elite,0,0,D
+2025-10-25,CSM Satu Mare,CSA Steaua Bucuresti,1,4,A
+2025-10-25,CS Dinamo Bucuresti,Tunari,3,1,H
+2025-10-25,Corvinul Hunedoara,FC Bacau,2,0,H
+2025-10-25,Chindia Targoviste,FC Voluntari,0,2,A
+2025-10-26,Bihor Oradea,CS Afumati,2,1,H
+2025-10-31,Politehnica Iasi,Bihor Oradea,2,1,H
+2025-11-01,Ceahlaul Piatra Neamt,CSM Satu Mare,1,0,H
+2025-11-01,Metalul Buzau,Muscelul Campulung Elite,4,0,H
+2025-11-01,Slatina,Chindia Targoviste,1,1,D
+2025-11-01,Tunari,CSM Resita,0,1,A
+2025-11-01,FC Bacau,Viitorul Selimbar,1,1,D
+2025-11-01,Gloria Bistrita,Corvinul Hunedoara,0,1,A
+2025-11-01,CS Afumati,ASA Targu Mures,2,1,H
+2025-11-02,Concordia,CS Dinamo Bucuresti,2,1,H
+2025-11-02,CSA Steaua Bucuresti,Dumbravita,0,1,A
+2025-11-04,FC Voluntari,Sepsi OSK Sfantu Gheorghe,1,2,A
+2025-11-08,Sepsi OSK Sfantu Gheorghe,Slatina,3,2,H
+2025-11-08,CSM Resita,Concordia,1,0,H
+2025-11-08,Viitorul Selimbar,Gloria Bistrita,3,1,H
+2025-11-08,Dumbravita,Ceahlaul Piatra Neamt,1,1,D
+2025-11-08,CSM Satu Mare,FC Bacau,0,1,A
+2025-11-08,CS Dinamo Bucuresti,Metalul Buzau,0,2,A
+2025-11-08,Bihor Oradea,Tunari,0,0,D
+2025-11-08,Muscelul Campulung Elite,CSA Steaua Bucuresti,0,1,A
+2025-11-08,Corvinul Hunedoara,FC Voluntari,0,0,D
+2025-11-10,ASA Targu Mures,Politehnica Iasi,4,0,H
+2025-11-11,Chindia Targoviste,CS Afumati,2,3,A
+2025-11-20,Concordia,Bihor Oradea,1,0,H
+2025-11-22,FC Voluntari,Viitorul Selimbar,0,0,D
+2025-11-22,Ceahlaul Piatra Neamt,Muscelul Campulung Elite,3,0,H
+2025-11-22,Metalul Buzau,CSA Steaua Bucuresti,1,1,D
+2025-11-22,Tunari,ASA Targu Mures,1,2,A
+2025-11-22,CS Dinamo Bucuresti,CSM Resita,1,1,D
+2025-11-22,FC Bacau,Dumbravita,1,0,H
+2025-11-22,Gloria Bistrita,CSM Satu Mare,0,1,A
+2025-11-22,Slatina,Corvinul Hunedoara,0,1,A
+2025-11-23,CS Afumati,Sepsi OSK Sfantu Gheorghe,2,2,D
+2025-11-25,Politehnica Iasi,Chindia Targoviste,1,0,H
+2025-11-28,ASA Targu Mures,Concordia,0,0,D
+2025-11-29,Chindia Targoviste,Tunari,3,0,H
+2025-11-29,Viitorul Selimbar,Slatina,1,2,A
+2025-11-29,CSA Steaua Bucuresti,Ceahlaul Piatra Neamt,2,0,H
+2025-11-29,Dumbravita,Gloria Bistrita,2,1,H
+2025-11-29,CSM Satu Mare,FC Voluntari,0,1,A
+2025-11-29,Muscelul Campulung Elite,FC Bacau,0,0,D
+2025-11-29,Bihor Oradea,CS Dinamo Bucuresti,5,0,H
+2025-11-29,Corvinul Hunedoara,CS Afumati,3,2,H
+2025-11-30,CSM Resita,Metalul Buzau,2,0,H
+2025-12-01,Sepsi OSK Sfantu Gheorghe,Politehnica Iasi,1,0,H
+2025-12-05,Concordia,Chindia Targoviste,0,1,A
+2025-12-06,FC Voluntari,Dumbravita,3,1,H
+2025-12-06,CS Afumati,Viitorul Selimbar,1,0,H
+2025-12-06,Slatina,CSM Satu Mare,3,1,H
+2025-12-06,CS Dinamo Bucuresti,ASA Targu Mures,0,2,A
+2025-12-06,FC Bacau,CSA Steaua Bucuresti,3,2,H
+2025-12-06,Gloria Bistrita,Muscelul Campulung Elite,6,0,H
+2025-12-06,CSM Resita,Bihor Oradea,2,3,A
+2025-12-07,Metalul Buzau,Ceahlaul Piatra Neamt,2,1,H
+2025-12-07,Tunari,Sepsi OSK Sfantu Gheorghe,0,2,A
+2025-12-07,Politehnica Iasi,Corvinul Hunedoara,0,0,D
+2025-12-12,Sepsi OSK Sfantu Gheorghe,Concordia,3,1,H
+2025-12-13,Chindia Targoviste,CS Dinamo Bucuresti,2,0,H
+2025-12-13,Ceahlaul Piatra Neamt,FC Bacau,1,5,A
+2025-12-13,Viitorul Selimbar,Politehnica Iasi,2,1,H
+2025-12-13,CSA Steaua Bucuresti,Gloria Bistrita,1,2,A
+2025-12-13,Dumbravita,Slatina,1,2,A
+2025-12-13,CSM Satu Mare,CS Afumati,2,1,H
+2025-12-13,Corvinul Hunedoara,Tunari,3,0,H
+2025-12-13,Muscelul Campulung Elite,FC Voluntari,0,2,A
+2025-12-13,ASA Targu Mures,CSM Resita,0,2,A
+2025-12-14,Bihor Oradea,Metalul Buzau,2,1,H
+2026-02-19,FC Voluntari,CSA Steaua Bucuresti,2,0,H
+2026-02-21,Politehnica Iasi,CSM Satu Mare,2,0,H
+2026-02-21,CSM Resita,Chindia Targoviste,2,3,A
+2026-02-21,Metalul Buzau,FC Bacau,0,1,A
+2026-02-21,Slatina,Muscelul Campulung Elite,0,0,D
+2026-02-21,Gloria Bistrita,Ceahlaul Piatra Neamt,2,0,H
+2026-02-21,CS Dinamo Bucuresti,Sepsi OSK Sfantu Gheorghe,1,2,A
+2026-02-21,CS Afumati,Dumbravita,0,1,A
+2026-02-22,Tunari,Viitorul Selimbar,1,0,H
+2026-02-22,Bihor Oradea,ASA Targu Mures,2,1,H
+2026-02-24,Concordia,Corvinul Hunedoara,0,2,A
+2026-02-26,CSA Steaua Bucuresti,Slatina,2,1,H
+2026-02-28,Sepsi OSK Sfantu Gheorghe,CSM Resita,5,0,H
+2026-02-28,Ceahlaul Piatra Neamt,FC Voluntari,1,5,A
+2026-02-28,Viitorul Selimbar,Concordia,1,0,H
+2026-02-28,Dumbravita,Politehnica Iasi,1,0,H
+2026-02-28,CSM Satu Mare,Tunari,1,1,D
+2026-02-28,Corvinul Hunedoara,CS Dinamo Bucuresti,2,2,D
+2026-02-28,Muscelul Campulung Elite,CS Afumati,0,3,A
+2026-02-28,FC Bacau,Gloria Bistrita,1,1,D
+2026-02-28,ASA Targu Mures,Metalul Buzau,1,0,H
+2026-03-01,Chindia Targoviste,Bihor Oradea,1,0,H
+2026-03-06,FC Voluntari,FC Bacau,1,2,A
+2026-03-07,Concordia,CSM Satu Mare,4,2,H
+2026-03-07,Politehnica Iasi,Muscelul Campulung Elite,6,1,H
+2026-03-07,CS Afumati,CSA Steaua Bucuresti,0,1,A
+2026-03-07,Slatina,Ceahlaul Piatra Neamt,2,1,H
+2026-03-07,CS Dinamo Bucuresti,Viitorul Selimbar,4,1,H
+2026-03-07,Bihor Oradea,Sepsi OSK Sfantu Gheorghe,2,2,D
+2026-03-07,Tunari,Dumbravita,1,1,D
+2026-03-08,Metalul Buzau,Gloria Bistrita,1,4,A
+2026-03-08,CSM Resita,Corvinul Hunedoara,1,3,A
+2026-03-09,ASA Targu Mures,Chindia Targoviste,0,2,A
+2026-03-14,Sepsi OSK Sfantu Gheorghe,ASA Targu Mures,0,0,D
+2026-03-14,Chindia Targoviste,Metalul Buzau,2,3,A
+2026-03-14,Ceahlaul Piatra Neamt,CS Afumati,1,2,A
+2026-03-14,Viitorul Selimbar,CSM Resita,1,1,D
+2026-03-14,CSA Steaua Bucuresti,Politehnica Iasi,3,1,H
+2026-03-14,Dumbravita,Concordia,1,0,H
+2026-03-14,CSM Satu Mare,CS Dinamo Bucuresti,2,0,H
+2026-03-14,Corvinul Hunedoara,Bihor Oradea,2,1,H
+2026-03-14,Muscelul Campulung Elite,Tunari,1,3,A
+2026-03-14,FC Bacau,Slatina,3,2,H
+2026-03-14,Gloria Bistrita,FC Voluntari,1,0,H
+2026-03-21,Concordia,Dumbravita,1,0,H
+2026-03-21,Politehnica Iasi,Ceahlaul Piatra Neamt,3,0,H
+2026-03-21,ASA Targu Mures,Muscelul Campulung Elite,6,1,H
+2026-03-21,CS Afumati,Viitorul Selimbar,0,1,A
+2026-03-21,CSM Resita,CSM Satu Mare,2,0,H
+2026-03-21,Metalul Buzau,CS Dinamo Bucuresti,4,2,H
+2026-03-21,FC Bacau,Tunari,1,0,H
+2026-03-21,Gloria Bistrita,Slatina,1,2,A
+2026-03-21,Corvinul Hunedoara,CSA Steaua Bucuresti,1,0,H
+2026-03-22,FC Voluntari,Chindia Targoviste,5,1,H
+2026-03-22,Sepsi OSK Sfantu Gheorghe,Bihor Oradea,3,0,H
+2026-04-02,CSA Steaua Bucuresti,Chindia Targoviste,2,0,H
+2026-04-03,Bihor Oradea,FC Voluntari,0,2,A
+2026-04-04,ASA Targu Mures,Metalul Buzau,1,4,A
+2026-04-04,CSM Resita,FC Bacau,1,0,H
+2026-04-04,Ceahlaul Piatra Neamt,Gloria Bistrita,0,3,A
+2026-04-04,Tunari,CS Afumati,0,4,A
+2026-04-04,Viitorul Selimbar,Concordia,0,2,A
+2026-04-04,CSM Satu Mare,Dumbravita,3,2,H
+2026-04-04,CS Dinamo Bucuresti,Politehnica Iasi,0,1,A
+2026-04-04,Muscelul Campulung Elite,Slatina,0,4,A
+2026-04-04,Corvinul Hunedoara,Sepsi OSK Sfantu Gheorghe,0,1,A
+2026-04-10,Concordia,Tunari,1,1,D
+2026-04-10,Politehnica Iasi,ASA Targu Mures,0,1,A
+2026-04-10,CS Afumati,CSM Resita,1,1,D
+2026-04-10,Metalul Buzau,Muscelul Campulung Elite,1,0,H
+2026-04-10,Slatina,Ceahlaul Piatra Neamt,1,1,D
+2026-04-10,Dumbravita,Viitorul Selimbar,0,0,D
+2026-04-10,FC Bacau,CSM Satu Mare,1,3,A
+2026-04-10,Gloria Bistrita,CS Dinamo Bucuresti,0,2,A
+2026-04-10,Chindia Targoviste,Bihor Oradea,1,3,A
+2026-04-10,FC Voluntari,Corvinul Hunedoara,1,0,H
+2026-04-11,Sepsi OSK Sfantu Gheorghe,CSA Steaua Bucuresti,2,0,H
+2026-04-14,Corvinul Hunedoara,Chindia Targoviste,2,0,H
+2026-04-15,Sepsi OSK Sfantu Gheorghe,FC Voluntari,1,1,D
+2026-04-15,CSA Steaua Bucuresti,Bihor Oradea,3,1,H
+2026-04-18,ASA Targu Mures,Gloria Bistrita,1,1,D
+2026-04-18,CSM Resita,Concordia,1,2,A
+2026-04-18,Metalul Buzau,Politehnica Iasi,2,0,H
+2026-04-18,Tunari,Dumbravita,2,1,H
+2026-04-18,CSM Satu Mare,Viitorul Selimbar,4,0,H
+2026-04-18,CS Dinamo Bucuresti,Slatina,1,2,A
+2026-04-18,Muscelul Campulung Elite,Ceahlaul Piatra Neamt,3,3,D
+2026-04-18,FC Bacau,CS Afumati,3,1,H
+2026-04-18,Chindia Targoviste,Sepsi OSK Sfantu Gheorghe,0,1,A
+2026-04-19,FC Voluntari,CSA Steaua Bucuresti,2,0,H
+2026-04-19,Bihor Oradea,Corvinul Hunedoara,1,3,A
+2026-04-23,Bihor Oradea,Sepsi OSK Sfantu Gheorghe,3,2,H
+2026-04-25,Concordia,FC Bacau,2,0,H
+2026-04-25,Politehnica Iasi,Muscelul Campulung Elite,1,0,H
+2026-04-25,Chindia Targoviste,FC Voluntari,1,2,A
+2026-04-25,CS Afumati,CSM Satu Mare,1,3,A
+2026-04-25,Ceahlaul Piatra Neamt,CS Dinamo Bucuresti,0,2,A
+2026-04-25,Slatina,ASA Targu Mures,0,0,D
+2026-04-25,Viitorul Selimbar,Tunari,1,2,A
+2026-04-25,Dumbravita,CSM Resita,2,0,H
+2026-04-25,Gloria Bistrita,Metalul Buzau,0,1,A
+2026-04-25,CSA Steaua Bucuresti,Corvinul Hunedoara,1,3,A
+2026-04-30,FC Voluntari,Bihor Oradea,2,1,H
+2026-05-01,Chindia Targoviste,CSA Steaua Bucuresti,1,2,A
+2026-05-02,Politehnica Iasi,Gloria Bistrita,2,2,D
+2026-05-02,ASA Targu Mures,Ceahlaul Piatra Neamt,4,0,H
+2026-05-02,CS Afumati,Concordia,1,0,H
+2026-05-02,CSM Resita,Viitorul Selimbar,0,2,A
+2026-05-02,Metalul Buzau,Slatina,1,3,A
+2026-05-02,CSM Satu Mare,Tunari,1,1,D
+2026-05-02,Muscelul Campulung Elite,CS Dinamo Bucuresti,0,1,A
+2026-05-02,FC Bacau,Dumbravita,1,0,H
+2026-05-02,Sepsi OSK Sfantu Gheorghe,Corvinul Hunedoara,2,1,H
+2026-05-05,Bihor Oradea,Chindia Targoviste,3,1,H
+2026-05-06,Corvinul Hunedoara,FC Voluntari,2,0,H
+2026-05-07,CSA Steaua Bucuresti,Sepsi OSK Sfantu Gheorghe,0,2,A
+2026-05-09,Concordia,CSM Satu Mare,2,2,D
+2026-05-09,Ceahlaul Piatra Neamt,Metalul Buzau,0,3,A
+2026-05-09,Slatina,Politehnica Iasi,1,0,H
+2026-05-09,Tunari,CSM Resita,3,1,H
+2026-05-09,Viitorul Selimbar,FC Bacau,4,1,H
+2026-05-09,Dumbravita,CS Afumati,1,0,H
+2026-05-09,CS Dinamo Bucuresti,ASA Targu Mures,1,3,A
+2026-05-09,Gloria Bistrita,Muscelul Campulung Elite,3,0,H
+2026-05-09,Chindia Targoviste,Corvinul Hunedoara,1,0,H
+2026-05-10,Bihor Oradea,CSA Steaua Bucuresti,3,3,D
+2026-05-12,FC Voluntari,Sepsi OSK Sfantu Gheorghe,2,0,H
+2026-05-16,Sepsi OSK Sfantu Gheorghe,Chindia Targoviste,1,1,D
+2026-05-16,CSA Steaua Bucuresti,FC Voluntari,2,4,A
+2026-05-16,CS Dinamo Bucuresti,Viitorul Selimbar,1,1,D
+2026-05-16,Corvinul Hunedoara,Bihor Oradea,1,1,D
+2026-05-23,Viitorul Selimbar,CS Dinamo Bucuresti,2,0,H
+2025-08-03,Chindia Targoviste,Sepsi OSK Sfantu Gheorghe,3,0,H

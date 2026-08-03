@@ -2,25 +2,25 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2023-07-22,Mladost DG,Buducnost Podgorica,2,1,H
 2023-07-22,Petrovac,Mornar,0,0,D
 2023-07-22,Decic,Jedinstvo,2,1,H
-2023-07-23,Rudar,Arsenal Tivat,0,1,A
+2023-07-23,Rudar Pljevlja,Arsenal Tivat,0,1,A
 2023-07-23,Jezero,Sutjeska,0,1,A
 2023-07-29,Petrovac,Mladost DG,1,0,H
-2023-07-29,Jedinstvo,Rudar,1,0,H
+2023-07-29,Jedinstvo,Rudar Pljevlja,1,0,H
 2023-07-30,Mornar,Sutjeska,1,1,D
 2023-07-30,Arsenal Tivat,Jezero,2,2,D
-2023-08-05,Rudar,Buducnost Podgorica,0,4,A
+2023-08-05,Rudar Pljevlja,Buducnost Podgorica,0,4,A
 2023-08-05,Jezero,Jedinstvo,1,0,H
 2023-08-05,Mladost DG,Mornar,1,1,D
 2023-08-06,Sutjeska,Arsenal Tivat,2,2,D
 2023-08-06,Decic,Petrovac,1,2,A
 2023-08-09,Buducnost Podgorica,Decic,1,1,D
 2023-08-12,Mornar,Arsenal Tivat,0,1,A
-2023-08-12,Petrovac,Rudar,2,0,H
+2023-08-12,Petrovac,Rudar Pljevlja,2,0,H
 2023-08-13,Buducnost Podgorica,Jezero,1,1,D
 2023-08-13,Jedinstvo,Sutjeska,0,0,D
 2023-08-13,Mladost DG,Decic,0,2,A
 2023-08-20,Arsenal Tivat,Jedinstvo,2,2,D
-2023-08-20,Rudar,Mladost DG,0,0,D
+2023-08-20,Rudar Pljevlja,Mladost DG,0,0,D
 2023-08-20,Sutjeska,Buducnost Podgorica,1,2,A
 2023-08-20,Decic,Mornar,3,1,H
 2023-08-20,Jezero,Petrovac,2,0,H
@@ -28,28 +28,28 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2023-08-26,Petrovac,Sutjeska,1,1,D
 2023-08-26,Buducnost Podgorica,Arsenal Tivat,2,0,H
 2023-08-26,Mornar,Jedinstvo,4,3,H
-2023-08-26,Decic,Rudar,0,1,A
-2023-09-03,Rudar,Mornar,0,0,D
+2023-08-26,Decic,Rudar Pljevlja,0,1,A
+2023-09-03,Rudar Pljevlja,Mornar,0,0,D
 2023-09-03,Arsenal Tivat,Petrovac,2,2,D
 2023-09-03,Jedinstvo,Buducnost Podgorica,1,4,A
 2023-09-03,Jezero,Decic,0,0,D
 2023-09-03,Sutjeska,Mladost DG,3,3,D
-2023-09-16,Rudar,Jezero,0,1,A
+2023-09-16,Rudar Pljevlja,Jezero,0,1,A
 2023-09-16,Petrovac,Jedinstvo,1,1,D
 2023-09-16,Mladost DG,Arsenal Tivat,2,1,H
 2023-09-16,Mornar,Buducnost Podgorica,0,0,D
 2023-09-17,Decic,Sutjeska,0,4,A
-2023-09-23,Sutjeska,Rudar,1,0,H
+2023-09-23,Sutjeska,Rudar Pljevlja,1,0,H
 2023-09-23,Arsenal Tivat,Decic,0,1,A
 2023-09-23,Jezero,Mornar,0,1,A
 2023-09-23,Jedinstvo,Mladost DG,2,1,H
 2023-09-23,Buducnost Podgorica,Petrovac,2,1,H
-2023-09-27,Arsenal Tivat,Rudar,2,0,H
+2023-09-27,Arsenal Tivat,Rudar Pljevlja,2,0,H
 2023-09-27,Sutjeska,Jezero,1,1,D
 2023-09-27,Jedinstvo,Decic,0,1,A
 2023-09-27,Buducnost Podgorica,Mladost DG,2,2,D
 2023-09-27,Mornar,Petrovac,0,0,D
-2023-10-01,Rudar,Jedinstvo,2,2,D
+2023-10-01,Rudar Pljevlja,Jedinstvo,2,2,D
 2023-10-01,Sutjeska,Mornar,0,1,A
 2023-10-01,Decic,Buducnost Podgorica,2,0,H
 2023-10-01,Jezero,Arsenal Tivat,1,1,D
@@ -58,19 +58,19 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2023-10-07,Jedinstvo,Jezero,2,3,A
 2023-10-07,Mornar,Mladost DG,2,1,H
 2023-10-07,Petrovac,Decic,2,3,A
-2023-10-08,Buducnost Podgorica,Rudar,2,0,H
+2023-10-08,Buducnost Podgorica,Rudar Pljevlja,2,0,H
 2023-10-21,Sutjeska,Jedinstvo,2,0,H
-2023-10-21,Rudar,Petrovac,1,0,H
+2023-10-21,Rudar Pljevlja,Petrovac,1,0,H
 2023-10-21,Arsenal Tivat,Mornar,2,2,D
 2023-10-21,Decic,Mladost DG,4,1,H
 2023-10-22,Jezero,Buducnost Podgorica,1,3,A
 2023-10-28,Jedinstvo,Arsenal Tivat,3,2,H
 2023-10-28,Petrovac,Jezero,0,0,D
 2023-10-28,Mornar,Decic,0,1,A
-2023-10-28,Mladost DG,Rudar,0,1,A
+2023-10-28,Mladost DG,Rudar Pljevlja,0,1,A
 2023-10-28,Buducnost Podgorica,Sutjeska,1,0,H
 2023-11-04,Jezero,Mladost DG,2,0,H
-2023-11-05,Rudar,Decic,0,1,A
+2023-11-05,Rudar Pljevlja,Decic,0,1,A
 2023-11-05,Arsenal Tivat,Buducnost Podgorica,1,1,D
 2023-11-05,Jedinstvo,Mornar,1,1,D
 2023-11-05,Sutjeska,Petrovac,3,2,H
@@ -78,28 +78,28 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2023-11-11,Petrovac,Arsenal Tivat,1,1,D
 2023-11-11,Mladost DG,Sutjeska,1,1,D
 2023-11-11,Decic,Jezero,0,0,D
-2023-11-13,Mornar,Rudar,2,1,H
+2023-11-13,Mornar,Rudar Pljevlja,2,1,H
 2023-11-26,Arsenal Tivat,Mladost DG,0,2,A
 2023-11-26,Buducnost Podgorica,Mornar,4,3,H
 2023-11-26,Sutjeska,Decic,1,1,D
-2023-11-27,Jezero,Rudar,4,1,H
+2023-11-27,Jezero,Rudar Pljevlja,4,1,H
 2023-11-28,Jedinstvo,Petrovac,1,1,D
-2023-12-02,Rudar,Sutjeska,1,2,A
+2023-12-02,Rudar Pljevlja,Sutjeska,1,2,A
 2023-12-02,Decic,Arsenal Tivat,0,1,A
 2023-12-02,Mladost DG,Jedinstvo,2,0,H
 2023-12-02,Petrovac,Buducnost Podgorica,2,2,D
 2023-12-04,Mornar,Jezero,2,1,H
-2023-12-09,Rudar,Arsenal Tivat,2,0,H
+2023-12-09,Rudar Pljevlja,Arsenal Tivat,2,0,H
 2023-12-09,Decic,Jedinstvo,3,1,H
 2023-12-09,Petrovac,Mornar,0,0,D
 2023-12-10,Mladost DG,Buducnost Podgorica,1,3,A
 2023-12-10,Jezero,Sutjeska,0,0,D
 2024-02-17,Arsenal Tivat,Jezero,3,1,H
-2024-02-17,Jedinstvo,Rudar,1,0,H
+2024-02-17,Jedinstvo,Rudar Pljevlja,1,0,H
 2024-02-17,Petrovac,Mladost DG,3,2,H
 2024-02-18,Mornar,Sutjeska,1,0,H
 2024-02-18,Buducnost Podgorica,Decic,2,2,D
-2024-02-24,Rudar,Buducnost Podgorica,3,0,H
+2024-02-24,Rudar Pljevlja,Buducnost Podgorica,3,0,H
 2024-02-24,Jezero,Jedinstvo,0,3,A
 2024-02-24,Sutjeska,Arsenal Tivat,1,1,D
 2024-02-24,Mladost DG,Mornar,1,2,A
@@ -107,9 +107,9 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2024-02-28,Jedinstvo,Sutjeska,0,1,A
 2024-02-28,Mladost DG,Decic,0,3,A
 2024-02-28,Mornar,Arsenal Tivat,0,0,D
-2024-02-28,Petrovac,Rudar,1,1,D
+2024-02-28,Petrovac,Rudar Pljevlja,1,1,D
 2024-02-28,Buducnost Podgorica,Jezero,0,1,A
-2024-03-03,Rudar,Mladost DG,1,2,A
+2024-03-03,Rudar Pljevlja,Mladost DG,1,2,A
 2024-03-03,Jezero,Petrovac,0,2,A
 2024-03-03,Arsenal Tivat,Jedinstvo,1,1,D
 2024-03-03,Decic,Mornar,0,1,A
@@ -117,39 +117,39 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2024-03-09,Petrovac,Sutjeska,1,2,A
 2024-03-09,Mladost DG,Jezero,0,1,A
 2024-03-09,Mornar,Jedinstvo,0,0,D
-2024-03-09,Decic,Rudar,3,1,H
+2024-03-09,Decic,Rudar Pljevlja,3,1,H
 2024-03-10,Buducnost Podgorica,Arsenal Tivat,6,0,H
-2024-03-13,Rudar,Mornar,0,0,D
+2024-03-13,Rudar Pljevlja,Mornar,0,0,D
 2024-03-13,Sutjeska,Mladost DG,2,1,H
 2024-03-13,Arsenal Tivat,Petrovac,1,1,D
 2024-03-13,Jedinstvo,Buducnost Podgorica,1,2,A
 2024-03-13,Jezero,Decic,1,1,D
 2024-03-17,Mladost DG,Arsenal Tivat,1,2,A
-2024-03-17,Rudar,Jezero,0,1,A
+2024-03-17,Rudar Pljevlja,Jezero,0,1,A
 2024-03-17,Decic,Sutjeska,0,0,D
 2024-03-17,Petrovac,Jedinstvo,1,0,H
 2024-03-17,Mornar,Buducnost Podgorica,1,0,H
-2024-03-30,Sutjeska,Rudar,2,1,H
+2024-03-30,Sutjeska,Rudar Pljevlja,2,1,H
 2024-03-30,Arsenal Tivat,Decic,0,2,A
 2024-03-30,Jedinstvo,Mladost DG,0,0,D
 2024-03-30,Jezero,Mornar,3,1,H
 2024-03-30,Buducnost Podgorica,Petrovac,2,0,H
-2024-04-03,Arsenal Tivat,Rudar,4,2,H
+2024-04-03,Arsenal Tivat,Rudar Pljevlja,4,2,H
 2024-04-03,Jedinstvo,Decic,0,2,A
 2024-04-03,Sutjeska,Jezero,2,1,H
 2024-04-03,Mornar,Petrovac,1,0,H
 2024-04-03,Buducnost Podgorica,Mladost DG,1,2,A
 2024-04-07,Sutjeska,Mornar,2,0,H
-2024-04-07,Rudar,Jedinstvo,1,1,D
+2024-04-07,Rudar Pljevlja,Jedinstvo,1,1,D
 2024-04-07,Jezero,Arsenal Tivat,4,0,H
 2024-04-08,Mladost DG,Petrovac,0,0,D
 2024-04-09,Decic,Buducnost Podgorica,1,1,D
 2024-04-13,Jedinstvo,Jezero,2,0,H
-2024-04-13,Buducnost Podgorica,Rudar,3,1,H
+2024-04-13,Buducnost Podgorica,Rudar Pljevlja,3,1,H
 2024-04-13,Petrovac,Decic,2,1,H
 2024-04-13,Mornar,Mladost DG,5,1,H
 2024-04-14,Arsenal Tivat,Sutjeska,1,0,H
-2024-04-21,Rudar,Petrovac,1,0,H
+2024-04-21,Rudar Pljevlja,Petrovac,1,0,H
 2024-04-21,Arsenal Tivat,Mornar,1,2,A
 2024-04-21,Sutjeska,Jedinstvo,3,1,H
 2024-04-21,Decic,Mladost DG,2,0,H
@@ -157,15 +157,15 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2024-04-27,Buducnost Podgorica,Sutjeska,2,2,D
 2024-04-27,Petrovac,Jezero,2,1,H
 2024-04-27,Jedinstvo,Arsenal Tivat,1,1,D
-2024-04-27,Mladost DG,Rudar,1,0,H
+2024-04-27,Mladost DG,Rudar Pljevlja,1,0,H
 2024-04-27,Mornar,Decic,1,1,D
-2024-05-04,Rudar,Decic,0,4,A
+2024-05-04,Rudar Pljevlja,Decic,0,4,A
 2024-05-04,Arsenal Tivat,Buducnost Podgorica,0,4,A
 2024-05-04,Jedinstvo,Mornar,3,4,A
 2024-05-04,Jezero,Mladost DG,0,1,A
 2024-05-04,Sutjeska,Petrovac,0,1,A
 2024-05-12,Buducnost Podgorica,Jedinstvo,2,0,H
-2024-05-12,Mornar,Rudar,3,0,H
+2024-05-12,Mornar,Rudar Pljevlja,3,0,H
 2024-05-12,Petrovac,Arsenal Tivat,2,2,D
 2024-05-12,Decic,Jezero,2,0,H
 2024-05-12,Mladost DG,Sutjeska,3,2,H
@@ -173,8 +173,8 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2024-05-18,Sutjeska,Decic,0,1,A
 2024-05-18,Arsenal Tivat,Mladost DG,3,1,H
 2024-05-18,Jedinstvo,Petrovac,4,2,H
-2024-05-18,Jezero,Rudar,2,1,H
-2024-05-25,Rudar,Sutjeska,2,1,H
+2024-05-18,Jezero,Rudar Pljevlja,2,1,H
+2024-05-25,Rudar Pljevlja,Sutjeska,2,1,H
 2024-05-25,Mornar,Jezero,1,0,H
 2024-05-25,Petrovac,Buducnost Podgorica,3,1,H
 2024-05-25,Decic,Arsenal Tivat,3,1,H

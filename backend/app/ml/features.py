@@ -97,6 +97,11 @@ HISTORY_ONLY_LEAGUES = frozenset({
     # second tiers of leagues we predict
     "Greece2", "GreeceFL", "Turkey2", "Belgium2", "Germany2", "France2",
     "Portugal2", "Spain2", "Italy2", "Netherlands2",
+    # 2026-08-03: the four still missing after the Elversberg sweep. Each left a
+    # promoted club priced off 1-21 historical rows — Corvinul averaged a 0.387
+    # draw probability across 14 Liga I fixtures, the same collapse the
+    # cold-start note in compute_predictions._predictable describes.
+    "Poland2", "Romania2", "Sweden2", "BrazilSerieB",
     # foreign top flights that only reach us through European qualifying
     "Croatia", "Czechia", "Hungary", "Serbia", "Ukraine", "Israel",
     "Bulgaria", "Cyprus", "Slovenia", "Slovakia", "Bosnia", "Estonia",
@@ -463,6 +468,165 @@ _CSV_TEAM_CANON: dict[str, str] = {
     # Romania: the source file switched spelling mid-history, which otherwise
     # splits one club's Elo and form across two half-strength records.
     "Din. Bucuresti": "Dinamo Bucuresti",
+    # 2026-08-02: found by checking which of our names resolve to the SAME
+    # API-Football id. Each pair is one club filed under two spellings, and the
+    # thin side (2–7 matches against 73–106) was a phantom with default-ish
+    # features. Direction is always thin → fat: the fat name is what the CSV
+    # history and the fixture feeds overwhelmingly use.
+    "VfB Stuttgart": "Stuttgart",     # 3 vs 106
+    "como": "Como",                   # 2 vs 81 — a case difference, nothing more
+    "Espanyol": "Espanol",            # 2 vs 83
+    "1. FC Koln": "FC Koln",          # 2 vs 73
+    "NEC Nijmegen": "Nijmegen",       # 7 vs 7 — Eredivisie CSVs use the short name
+    # Second batch, surfaced by the same shared-id check once the first was
+    # fixed. Counts are matches in the CSV history either side of the arrow;
+    # the winner is whichever spelling the sources actually settled on, which
+    # is not always the fuller name (Turkey's files say "Goztep").
+    "Deportivo La Coruna": "La Coruna",      # 170 → 228
+    "Levadiakos": "Levadeiakos",             # 111 → 348
+    "Iraklis": "Iraklis 1908",               # 120 → 142
+    "KV Mechelen": "Mechelen",               #  30 → 491
+    "Rayo Vallecano": "Vallecano",           # 172 → 418
+    "FC Schalke 04": "Schalke 04",           # 136 → 408
+    "Paderborn": "SC Paderborn 07",          #  68 → 272
+    "Goztepe": "Goztep",                     # 139 → 250
+    # ── 2026-08-02, third batch: the second-tier imports ─────────────────────
+    #
+    # Found by scripts/audit_team_identity.py rather than by shared ids, which
+    # only sees clubs that resolved. The cause is one mismatch: the top-flight
+    # CSVs come from football-data.co.uk and the second-tier ones from
+    # API-Football, and the two disagree about almost every German, Dutch,
+    # Belgian, Turkish and Greek club name. So every club that has been
+    # relegated or promoted since 2015 was filed twice — its Elo, its form and
+    # its rolling features split down the middle at the moment it changed
+    # division, which is exactly when they matter most.
+    #
+    # Direction is always thin → fat, and 97 candidates were reviewed
+    # club-by-club before landing here: 15 turned out to be genuinely different
+    # clubs and are listed in league_registry.KNOWN_DISTINCT instead.
+    "SC Freiburg": "Freiburg",                    #  34 → 510
+    "Zulte Waregem": "Waregem",                   #  61 → 437
+    "PEC Zwolle": "Zwolle",                       #  38 → 434
+    "Hellas Verona": "Verona",                    #  78 → 418
+    "Aris Thessalonikis": "Aris",                 #  68 → 398
+    "PAS Giannina": "Giannina",                   #  74 → 383
+    "Genclerbirligi S.K.": "Genclerbirligi",      # 176 → 380
+    "Granada CF": "Granada",                      # 210 → 380
+    "Hertha BSC": "Hertha",                       #  68 → 374
+    "Hertha Berlin": "Hertha",                    #  34 → 374
+    "ADO Den Haag": "Den Haag",                   # 190 → 366
+    "GIL Vicente": "Gil Vicente",                 #  80 → 362
+    "Greuther Furth": "SpVgg Greuther Furth",     #  68 → 342
+    "Apollon Smirnis": "Apollon",                 # 116 → 160
+    "Graafschap": "De Graafschap",                # 136 → 335
+    "Xanthi FC": "Xanthi",                        #  60 → 311
+    "St Pauli": "FC St. Pauli",                   # 102 → 306
+    "KVC Westerlo": "Westerlo",                   # 146 → 303
+    "Almere City": "Almere City FC",              #  68 → 301
+    "AS Eupen": "Eupen",                          #  60 → 287
+    "Nurnberg": "FC Nurnberg",                    # 170 → 274
+    "1. FC Nurnberg": "FC Nurnberg",              #  68 → 274
+    "Braunschweig": "Eintracht Braunschweig",     #  34 → 274
+    "Hannover": "Hannover 96",                    # 272 → 272
+    "Heidenheim": "FC Heidenheim",                # 102 → 272
+    "Darmstadt": "SV Darmstadt 98",               # 102 → 272
+    "GO Ahead Eagles": "Go Ahead Eagles",         # 143 → 272
+    "Gaziantep FK": "Gaziantep",                  # 142 → 256
+    "Ad. Demirspor": "Adana Demirspor",           # 148 → 250
+    "Balikesirspor": "Balkesirspor",              #  34 → 242
+    "Bielefeld": "Arminia Bielefeld",             #  68 → 240
+    "Kardemir Karabukspor": "Karabukspor",        #  68 → 238
+    "Athens Kallithea": "Kallithea",              #  35 → 237
+    "FC Emmen": "Emmen",                          # 128 → 228
+    "Santander": "Racing Santander",              #  76 → 212
+    "Bochum": "Vfl Bochum",                       # 136 → 204
+    "VfL Bochum": "Vfl Bochum",                   #  34 → 204
+    "SSV Jahn Regensburg": "Jahn Regensburg",     #  34 → 206
+    "Union St. Gilloise": "St. Gilloise",         # 146 → 188
+    "Fatih Karagumruk": "Karagumruk",             #  76 → 186
+    "AOK Kerkyra": "Kerkyra",                     #  84 → 184
+    "Ruch Chorzow": "Ruch",                       #  34 → 178
+    "Kaiserslautern": "FC Kaiserslautern",        #  68 → 172
+    "1. FC Kaiserslautern": "FC Kaiserslautern",  #  68 → 172
+    "Clermont": "Clermont Foot",                  # 110 → 288
+    "Troyes": "Estac Troyes",                     # 190 → 248
+    "Mouscron-Peruwelz": "Mouscron",              #  60 → 153
+    "Royal Excel Mouscron": "Mouscron",           #  28 → 153
+    "Cosenza": "Nuova Cosenza",                   # 114 → 154
+    "Elazigspor": "Elazgspor",                    #  68 → 138
+    "Seraing": "Seraing United",                  #  68 → 119
+    "Ingolstadt": "FC Ingolstadt 04",             #  68 → 106
+    "1. FC Magdeburg": "FC Magdeburg",            #  68 → 102
+    "Leiria": "Uniao de Leiria",                  #  60 → 102
+    "Olympiakos Volou": "Olympiakos Volos",       #  30 → 107
+    "AEL Kallonis": "Kallonis",                   #  34 →  98
+    "TB / FCS / Royn": "TB",                      #  56 → 187 — a 2017-18 joint
+                                                  # Suduroy side on TB's licence
+    "Kayseri Erciyesspor": "Erciyesspor",         #  34 →  68
+    "Ham-Kam": "HamKam",                          #  50 →  84
+    "Connah's Quay": "GAP Connah S Quay FC",      #  10 → 338
+    "Osters": "Oster",                            #  30 →  32
+    "Victoria": "Victoria Bardar",                #  10 →  29
+    "Oguzsport": "Gagauziya-Oguzsport",           #   2 →  13
+    # Malta's CSVs are latin-1 and the accents survive, so both spellings of
+    # the same club are live strings.
+    "Pieta Hotspurs": "Pietà Hotspurs",           #  26 →  26
+    "Santa Lucia": "Santa Lucía",                 #  43 →  79
+    # ── 2026-08-03: names football-data.co.uk truncates to fit a column ──────
+    #
+    # Missed by the first sweep, whose edit-distance rule has a three-character
+    # length guard: "forsittard" and "fortunasittard" differ by four. The audit
+    # now has a truncated-words rule, and these are what it found. Hamburger SV
+    # is the costly one — relegated in 2018, promoted in 2025, so the split ran
+    # through seven seasons of a Bundesliga club's history.
+    "Hamburger SV": "Hamburg",                    # 238 → 306
+    "Fortuna Sittard": "For Sittard",             #  76 → 264
+    "Stade Brestois 29": "Brest",                 # 153 → 358
+
+    # ── 2026-08-03, fourth batch: the Poland2 / Romania2 / Sweden2 /
+    # BrazilSerieB import ────────────────────────────────────────────────────
+    #
+    # Identical cause to the second-tier batch above, one country group later:
+    # the top flights come from football-data.co.uk and the new second tiers
+    # from API-Football, and the two disagree about the legal-form affix on
+    # almost every Swedish, Polish, Romanian and Brazilian club. Every side
+    # promoted or relegated since 2015 was filed twice, split exactly at the
+    # division change.
+    #
+    # `scripts/audit_team_identity.py` proposed 48 merges after the import.
+    # These are the 16 that touch a club with an upcoming fixture — the rest
+    # are historical-only and still need the club-by-club pass. Direction is
+    # thin → fat, and each was checked to be one club in two divisions rather
+    # than two clubs (leagues and seasons printed either side of the arrow).
+    "Orgryte": "Orgryte IS",                      #  14 Sweden  → 304 Sweden2
+    "GAIS": "Gais",                               # 105 Sweden  → 212 Sweden2
+    "Degerfors": "Degerfors IF",                  # 134 Sweden  → 180 Sweden2
+    "Vasteras SK": "Vasteras SK FK",              #  44 Sweden  → 180 Sweden2
+    "Kalmar FF": "Kalmar",                        #  30 Sweden2 → 408 Sweden
+    "Mjallby AIF": "Mjallby",                     #  30 Sweden2 → 284 Sweden
+    "IF Brommapojkarna": "Brommapojkarna",        #  92 Sweden2 → 196 Sweden
+    "Rakow Czestochowa": "Rakow",                 #  34 Poland2 → 238 Poland
+    "Widzew odz": "Widzew Lodz",                  #  68 Poland2 → 204 Poland
+    "Corvinul": "Corvinul Hunedoara",             #   2 Romania → 86 Romania2
+    "Petrolul Ploiesti": "Petrolul",              # 120 Rom2    → 300 Romania
+    "Vasco DA Gama": "Vasco",                     # 114 BraB    → 400 BraA
+    "Chapecoense-sc": "Chapecoense-SC",           # 190 BraB    → 285 BraA
+    # Wisła Kraków, relegated to the I Liga in 2022. Poland's other Wisła —
+    # Wisla Plock — keeps its own name and its 351 rows; the two never share a
+    # season under one spelling.
+    "Wisla Krakow": "Wisla",                      # 138 Poland2 → 354 Poland
+    # Rapid București. Austria's Rapid is filed as "SK Rapid" in every season
+    # of its CSVs, so bare "Rapid" is unambiguously the Romanian club.
+    "Rapid": "FC Rapid Bucuresti",                #  58 Rom2    → 270 Romania
+    # Universitatea Cluj, in the Liga II from 2016 to 2022. Its only top-flight
+    # rows in those years are two-match baraj ties, which is why the audit had
+    # to learn the difference between a play-off and a division.
+    "Universitatea Cluj": "U. Cluj",              # 116 Rom2    → 268 Romania
+    # Botafogo-RJ, whose bare-name rows are Série B 2015 and 2021 — precisely
+    # the two seasons it spent relegated, and precisely the two missing from
+    # its Série A record. Botafogo-SP is a different club and stays separate
+    # (see league_registry.KNOWN_DISTINCT).
+    "Botafogo": "Botafogo RJ",                    #  76 BraB    → 476 BraA
 }
 
 
@@ -1373,7 +1537,9 @@ _SNAP_NAME_MAP: dict[str, str] = {
     "FC Sion":           "Sion",
     "FC Thun":           "Thun",
     "FC Vaduz":          "Vaduz",
-    "Gais":              "GAIS",
+    # "Gais" → "GAIS" was here until the Sweden2 import made "Gais" the fatter
+    # spelling (212 rows against 105) and _CSV_TEAM_CANON folded GAIS into it.
+    # The entry now pointed at a name the CSVs no longer contain.
     "Hammarby FF":       "Hammarby",
     "IFK Goteborg":      "Goteborg",
     # Serie A

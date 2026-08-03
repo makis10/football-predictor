@@ -1,7 +1,7 @@
 Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2025-10-11,Esperanca d'Andorra,Inter Club d'Escaldes,1,2,A
-2025-10-12,Ranger's,Carroi,3,0,H
-2025-10-18,Ranger's,Atletic Club d'Escaldes,2,1,H
+2025-10-12,Ranger's Andorra,Carroi,3,0,H
+2025-10-18,Ranger's Andorra,Atletic Club d'Escaldes,2,1,H
 2025-10-19,Penya Encarnada,Carroi,2,1,H
 2025-10-19,FC Santa Coloma,UE Santa Coloma,1,0,H
 2025-10-19,Ordino,Esperanca d'Andorra,1,1,D
@@ -10,13 +10,13 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2025-10-25,Inter Club d'Escaldes,Ordino,2,1,H
 2025-10-26,Atletic Club d'Escaldes,FC Santa Coloma,2,2,D
 2025-10-26,Carroi,Pas de la Casa,0,0,D
-2025-10-26,Esperanca d'Andorra,Ranger's,0,2,A
+2025-10-26,Esperanca d'Andorra,Ranger's Andorra,0,2,A
 2025-10-26,UE Santa Coloma,Penya Encarnada,1,1,D
 2025-10-29,Atletic Club d'Escaldes,Carroi,3,0,H
-2025-10-29,Inter Club d'Escaldes,Ranger's,1,1,D
+2025-10-29,Inter Club d'Escaldes,Ranger's Andorra,1,1,D
 2025-11-01,Penya Encarnada,Atletic Club d'Escaldes,0,2,A
 2025-11-02,Inter Club d'Escaldes,Carroi,3,1,H
-2025-11-02,Ordino,Ranger's,0,2,A
+2025-11-02,Ordino,Ranger's Andorra,0,2,A
 2025-11-02,Pas de la Casa,UE Santa Coloma,0,3,A
 2025-11-02,FC Santa Coloma,Esperanca d'Andorra,0,0,D
 2025-11-05,UE Santa Coloma,Atletic Club d'Escaldes,2,0,H
@@ -24,26 +24,26 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2025-11-09,Ordino,Carroi,3,1,H
 2025-11-09,UE Santa Coloma,Inter Club d'Escaldes,4,1,H
 2025-11-09,Esperanca d'Andorra,Penya Encarnada,0,1,A
-2025-11-09,Ranger's,FC Santa Coloma,0,0,D
+2025-11-09,Ranger's Andorra,FC Santa Coloma,0,0,D
 2025-11-16,Carroi,Esperanca d'Andorra,2,1,H
 2025-11-23,Carroi,UE Santa Coloma,0,5,A
-2025-11-23,Penya Encarnada,Ranger's,1,3,A
+2025-11-23,Penya Encarnada,Ranger's Andorra,1,3,A
 2025-11-23,Inter Club d'Escaldes,Atletic Club d'Escaldes,1,0,H
 2025-11-23,FC Santa Coloma,Ordino,3,1,H
 2025-11-26,FC Santa Coloma,Inter Club d'Escaldes,1,3,A
 2025-11-26,Esperanca d'Andorra,UE Santa Coloma,0,4,A
 2025-11-27,Ordino,Atletic Club d'Escaldes,0,0,D
-2025-11-30,Ranger's,Esperanca d'Andorra,3,1,H
+2025-11-30,Ranger's Andorra,Esperanca d'Andorra,3,1,H
 2025-11-30,UE Santa Coloma,Carroi,0,0,D
 2025-11-30,Penya Encarnada,FC Santa Coloma,0,6,A
 2025-11-30,Atletic Club d'Escaldes,Ordino,1,0,H
 2025-12-06,Inter Club d'Escaldes,Carroi,2,0,H
 2025-12-07,Ordino,Penya Encarnada,2,4,A
 2025-12-07,Esperanca d'Andorra,Atletic Club d'Escaldes,0,1,A
-2025-12-07,UE Santa Coloma,Ranger's,2,1,H
-2025-12-10,UE Santa Coloma,Ranger's,1,0,H
+2025-12-07,UE Santa Coloma,Ranger's Andorra,2,1,H
+2025-12-10,UE Santa Coloma,Ranger's Andorra,1,0,H
 2025-12-10,Atletic Club d'Escaldes,Esperanca d'Andorra,3,0,H
-2025-12-14,Ranger's,Inter Club d'Escaldes,0,1,A
+2025-12-14,Ranger's Andorra,Inter Club d'Escaldes,0,1,A
 2025-12-14,UE Santa Coloma,Esperanca d'Andorra,7,0,H
 2025-12-14,FC Santa Coloma,Carroi,7,0,H
 2025-12-14,Atletic Club d'Escaldes,Penya Encarnada,2,0,H
@@ -52,12 +52,12 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2025-12-20,Carroi,Ordino,3,1,H
 2025-12-21,Atletic Club d'Escaldes,UE Santa Coloma,1,2,A
 2025-12-21,Inter Club d'Escaldes,Esperanca d'Andorra,2,0,H
-2025-12-21,FC Santa Coloma,Ranger's,2,0,H
+2025-12-21,FC Santa Coloma,Ranger's Andorra,2,0,H
 2026-01-17,Inter Club d'Escaldes,UE Santa Coloma,2,1,H
 2026-01-18,Esperanca d'Andorra,FC Santa Coloma,0,2,A
 2026-01-18,Carroi,Penya Encarnada,0,0,D
-2026-01-18,Ranger's,Ordino,4,0,H
-2026-01-24,Ranger's,Penya Encarnada,4,0,H
+2026-01-18,Ranger's Andorra,Ordino,4,0,H
+2026-01-24,Ranger's Andorra,Penya Encarnada,4,0,H
 2026-01-25,Esperanca d'Andorra,Ordino,1,2,A
 2026-01-25,Atletic Club d'Escaldes,Inter Club d'Escaldes,0,1,A
 2026-01-25,FC Santa Coloma,UE Santa Coloma,1,2,A
@@ -68,20 +68,20 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2026-02-07,Penya Encarnada,UE Santa Coloma,2,1,H
 2026-02-08,Atletic Club d'Escaldes,FC Santa Coloma,2,3,A
 2026-02-08,Ordino,Inter Club d'Escaldes,0,2,A
-2026-02-08,Carroi,Ranger's,0,3,A
-2026-02-14,Atletic Club d'Escaldes,Ranger's,0,2,A
+2026-02-08,Carroi,Ranger's Andorra,0,3,A
+2026-02-14,Atletic Club d'Escaldes,Ranger's Andorra,0,2,A
 2026-02-14,Penya Encarnada,Inter Club d'Escaldes,0,1,A
 2026-02-15,Esperanca d'Andorra,Carroi,0,0,D
 2026-02-15,Ordino,FC Santa Coloma,2,1,H
 2026-02-22,FC Santa Coloma,Atletic Club d'Escaldes,3,0,H
 2026-02-22,Penya Encarnada,Carroi,0,0,D
 2026-02-22,UE Santa Coloma,Ordino,2,1,H
-2026-02-22,Esperanca d'Andorra,Ranger's,1,1,D
+2026-02-22,Esperanca d'Andorra,Ranger's Andorra,1,1,D
 2026-02-28,Atletic Club d'Escaldes,Esperanca d'Andorra,2,1,H
-2026-03-01,Ranger's,UE Santa Coloma,1,2,A
+2026-03-01,Ranger's Andorra,UE Santa Coloma,1,2,A
 2026-03-01,Inter Club d'Escaldes,Penya Encarnada,2,1,H
 2026-03-01,Carroi,FC Santa Coloma,0,2,A
-2026-03-07,Ordino,Ranger's,1,2,A
+2026-03-07,Ordino,Ranger's Andorra,1,2,A
 2026-03-08,FC Santa Coloma,Inter Club d'Escaldes,3,2,H
 2026-03-08,Esperanca d'Andorra,Carroi,4,1,H
 2026-03-08,UE Santa Coloma,Atletic Club d'Escaldes,0,0,D
@@ -89,25 +89,25 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2026-03-22,Atletic Club d'Escaldes,Ordino,0,0,D
 2026-03-22,Carroi,UE Santa Coloma,0,0,D
 2026-03-22,Inter Club d'Escaldes,Esperanca d'Andorra,0,2,A
-2026-04-11,Ranger's,Atletic Club d'Escaldes,3,1,H
+2026-04-11,Ranger's Andorra,Atletic Club d'Escaldes,3,1,H
 2026-04-11,Ordino,Carroi,5,0,H
 2026-04-12,UE Santa Coloma,Inter Club d'Escaldes,1,1,D
 2026-04-13,Esperanca d'Andorra,Penya Encarnada,0,1,A
 2026-04-18,Penya Encarnada,UE Santa Coloma,0,2,A
-2026-04-19,Carroi,Ranger's,1,2,A
+2026-04-19,Carroi,Ranger's Andorra,1,2,A
 2026-04-19,FC Santa Coloma,Esperanca d'Andorra,4,0,H
 2026-04-19,Inter Club d'Escaldes,Ordino,4,0,H
 2026-04-25,UE Santa Coloma,FC Santa Coloma,0,0,D
-2026-04-25,Ranger's,Inter Club d'Escaldes,3,5,A
+2026-04-25,Ranger's Andorra,Inter Club d'Escaldes,3,5,A
 2026-04-26,Atletic Club d'Escaldes,Carroi,3,0,H
 2026-04-26,Ordino,Penya Encarnada,0,1,A
 2026-05-10,FC Santa Coloma,Ordino,0,1,A
 2026-05-10,Inter Club d'Escaldes,Atletic Club d'Escaldes,3,1,H
-2026-05-10,Penya Encarnada,Ranger's,1,2,A
+2026-05-10,Penya Encarnada,Ranger's Andorra,1,2,A
 2026-05-10,Esperanca d'Andorra,UE Santa Coloma,0,3,A
 2026-05-16,Ordino,Esperanca d'Andorra,2,2,D
 2026-05-16,Carroi,Inter Club d'Escaldes,2,1,H
-2026-05-16,Ranger's,FC Santa Coloma,2,0,H
+2026-05-16,Ranger's Andorra,FC Santa Coloma,2,0,H
 2026-05-17,Atletic Club d'Escaldes,Penya Encarnada,2,0,H
 2026-05-23,Sporting Escaldes,Esperanca d'Andorra,1,3,A
 2026-05-27,Esperanca d'Andorra,Sporting Escaldes,2,0,H

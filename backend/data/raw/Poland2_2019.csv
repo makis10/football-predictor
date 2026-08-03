@@ -1,0 +1,310 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2019-07-26,Olimpia Grudziadz,Chrobry Gogow,5,0,H
+2019-07-26,Stal Mielec,Warta Poznan,2,1,H
+2019-07-27,Miedz Legnica,Odra Opole,0,0,D
+2019-07-27,Radomiak Radom,Tychy 71,2,1,H
+2019-07-27,Zaglebie Sosnowiec,Podbeskidzie,1,1,D
+2019-07-27,Puszcza Niepoomice,Jastrzebie,0,0,D
+2019-07-27,Bechatow,Stomil Olsztyn,3,0,H
+2019-07-27,Wigry Suwaki,Chojniczanka Chojnice,1,1,D
+2019-07-27,Nieciecza,Sandecja Nowy Sacz,3,0,H
+2019-08-02,Chrobry Gogow,Nieciecza,0,1,A
+2019-08-02,Sandecja Nowy Sacz,Miedz Legnica,1,2,A
+2019-08-02,Stal Mielec,Wigry Suwaki,1,1,D
+2019-08-02,Odra Opole,Puszcza Niepoomice,0,1,A
+2019-08-03,Warta Poznan,Bechatow,1,0,H
+2019-08-03,Zaglebie Sosnowiec,Olimpia Grudziadz,0,1,A
+2019-08-03,Radomiak Radom,Stomil Olsztyn,2,1,H
+2019-08-03,Jastrzebie,Tychy 71,2,1,H
+2019-08-04,Chojniczanka Chojnice,Podbeskidzie,0,1,A
+2019-08-09,Olimpia Grudziadz,Chojniczanka Chojnice,3,5,A
+2019-08-09,Stomil Olsztyn,Jastrzebie,2,1,H
+2019-08-10,Miedz Legnica,Chrobry Gogow,2,1,H
+2019-08-10,Tychy 71,Odra Opole,4,1,H
+2019-08-10,Puszcza Niepoomice,Sandecja Nowy Sacz,1,2,A
+2019-08-10,Bechatow,Radomiak Radom,3,0,H
+2019-08-10,Nieciecza,Zaglebie Sosnowiec,2,0,H
+2019-08-11,Podbeskidzie,Stal Mielec,4,1,H
+2019-08-11,Wigry Suwaki,Warta Poznan,1,2,A
+2019-08-16,Odra Opole,Stomil Olsztyn,0,1,A
+2019-08-16,Chrobry Gogow,Puszcza Niepoomice,0,1,A
+2019-08-16,Sandecja Nowy Sacz,Tychy 71,1,0,H
+2019-08-16,Stal Mielec,Olimpia Grudziadz,2,0,H
+2019-08-16,Chojniczanka Chojnice,Nieciecza,1,0,H
+2019-08-17,Zaglebie Sosnowiec,Miedz Legnica,1,0,H
+2019-08-17,Radomiak Radom,Warta Poznan,0,2,A
+2019-08-17,Wigry Suwaki,Podbeskidzie,1,0,H
+2019-08-17,Jastrzebie,Bechatow,1,1,D
+2019-08-21,Warta Poznan,Podbeskidzie,2,1,H
+2019-08-21,Radomiak Radom,Jastrzebie,2,2,D
+2019-08-21,Puszcza Niepoomice,Zaglebie Sosnowiec,0,2,A
+2019-08-21,Tychy 71,Chrobry Gogow,5,1,H
+2019-08-21,Bechatow,Odra Opole,1,0,H
+2019-08-21,Olimpia Grudziadz,Wigry Suwaki,1,2,A
+2019-08-21,Chojniczanka Chojnice,Miedz Legnica,0,3,A
+2019-08-21,Nieciecza,Stal Mielec,1,2,A
+2019-08-21,Stomil Olsztyn,Sandecja Nowy Sacz,1,0,H
+2019-08-24,Podbeskidzie,Olimpia Grudziadz,2,1,H
+2019-08-24,Chrobry Gogow,Stomil Olsztyn,0,0,D
+2019-08-24,Odra Opole,Radomiak Radom,0,0,D
+2019-08-25,Zaglebie Sosnowiec,Tychy 71,1,2,A
+2019-08-25,Warta Poznan,Jastrzebie,1,1,D
+2019-08-25,Sandecja Nowy Sacz,Bechatow,2,1,H
+2019-08-25,Chojniczanka Chojnice,Puszcza Niepoomice,0,1,A
+2019-08-25,Wigry Suwaki,Nieciecza,1,0,H
+2019-08-26,Stal Mielec,Miedz Legnica,1,0,H
+2019-08-30,Stomil Olsztyn,Zaglebie Sosnowiec,1,3,A
+2019-08-30,Chojniczanka Chojnice,Tychy 71,1,1,D
+2019-08-31,Olimpia Grudziadz,Warta Poznan,2,1,H
+2019-08-31,Radomiak Radom,Sandecja Nowy Sacz,1,0,H
+2019-08-31,Jastrzebie,Odra Opole,2,0,H
+2019-08-31,Nieciecza,Podbeskidzie,2,2,D
+2019-09-01,Miedz Legnica,Wigry Suwaki,2,1,H
+2019-09-01,Bechatow,Chrobry Gogow,1,2,A
+2019-09-01,Puszcza Niepoomice,Stal Mielec,0,1,A
+2019-09-06,Chrobry Gogow,Radomiak Radom,0,2,A
+2019-09-07,Chojniczanka Chojnice,Stomil Olsztyn,1,3,A
+2019-09-07,Wigry Suwaki,Puszcza Niepoomice,2,3,A
+2019-09-07,Sandecja Nowy Sacz,Jastrzebie,1,1,D
+2019-09-08,Zaglebie Sosnowiec,Bechatow,1,1,D
+2019-09-13,Chojniczanka Chojnice,Bechatow,3,0,H
+2019-09-13,Odra Opole,Sandecja Nowy Sacz,1,1,D
+2019-09-13,Stomil Olsztyn,Stal Mielec,1,0,H
+2019-09-14,Radomiak Radom,Zaglebie Sosnowiec,2,1,H
+2019-09-14,Puszcza Niepoomice,Podbeskidzie,0,1,A
+2019-09-14,Tychy 71,Wigry Suwaki,2,1,H
+2019-09-14,Jastrzebie,Chrobry Gogow,1,0,H
+2019-09-14,Nieciecza,Warta Poznan,1,1,D
+2019-09-15,Miedz Legnica,Olimpia Grudziadz,2,2,D
+2019-09-18,Stal Mielec,Tychy 71,1,2,A
+2019-09-18,Olimpia Grudziadz,Nieciecza,1,0,H
+2019-09-18,Podbeskidzie,Miedz Legnica,2,1,H
+2019-09-18,Warta Poznan,Odra Opole,3,0,H
+2019-09-20,Wigry Suwaki,Stomil Olsztyn,0,0,D
+2019-09-21,Stal Mielec,Bechatow,1,0,H
+2019-09-21,Zaglebie Sosnowiec,Jastrzebie,2,4,A
+2019-09-21,Chojniczanka Chojnice,Radomiak Radom,1,3,A
+2019-09-21,Chrobry Gogow,Odra Opole,3,2,H
+2019-09-21,Sandecja Nowy Sacz,Warta Poznan,1,2,A
+2019-09-21,Nieciecza,Miedz Legnica,0,1,A
+2019-09-22,Podbeskidzie,Tychy 71,2,2,D
+2019-09-22,Olimpia Grudziadz,Puszcza Niepoomice,1,1,D
+2019-09-27,Sandecja Nowy Sacz,Chrobry Gogow,3,2,H
+2019-09-28,Radomiak Radom,Stal Mielec,2,0,H
+2019-09-28,Tychy 71,Olimpia Grudziadz,2,3,A
+2019-09-28,Stomil Olsztyn,Podbeskidzie,1,0,H
+2019-09-29,Warta Poznan,Miedz Legnica,2,1,H
+2019-09-29,Puszcza Niepoomice,Nieciecza,0,3,A
+2019-09-29,Bechatow,Wigry Suwaki,3,0,H
+2019-09-29,Chojniczanka Chojnice,Jastrzebie,3,1,H
+2019-09-29,Odra Opole,Zaglebie Sosnowiec,1,1,D
+2019-10-04,Miedz Legnica,Puszcza Niepoomice,1,0,H
+2019-10-04,Stal Mielec,Jastrzebie,3,1,H
+2019-10-05,Wigry Suwaki,Radomiak Radom,1,4,A
+2019-10-05,Chrobry Gogow,Warta Poznan,0,0,D
+2019-10-05,Zaglebie Sosnowiec,Sandecja Nowy Sacz,3,1,H
+2019-10-05,Chojniczanka Chojnice,Odra Opole,1,2,A
+2019-10-05,Podbeskidzie,Bechatow,4,0,H
+2019-10-05,Nieciecza,Tychy 71,4,3,H
+2019-10-06,Olimpia Grudziadz,Stomil Olsztyn,1,0,H
+2019-10-11,Stomil Olsztyn,Nieciecza,1,1,D
+2019-10-11,Sandecja Nowy Sacz,Chojniczanka Chojnice,4,4,D
+2019-10-12,Radomiak Radom,Podbeskidzie,1,3,A
+2019-10-12,Bechatow,Olimpia Grudziadz,1,0,H
+2019-10-18,Chrobry Gogow,Chojniczanka Chojnice,1,0,H
+2019-10-18,Puszcza Niepoomice,Tychy 71,2,1,H
+2019-10-18,Wigry Suwaki,Odra Opole,1,0,H
+2019-10-18,Stal Mielec,Sandecja Nowy Sacz,5,1,H
+2019-10-18,Miedz Legnica,Stomil Olsztyn,4,1,H
+2019-10-19,Olimpia Grudziadz,Radomiak Radom,2,2,D
+2019-10-19,Warta Poznan,Zaglebie Sosnowiec,2,3,A
+2019-10-19,Podbeskidzie,Jastrzebie,0,2,A
+2019-10-19,Nieciecza,Bechatow,2,1,H
+2019-10-22,Tychy 71,Miedz Legnica,4,1,H
+2019-10-22,Jastrzebie,Wigry Suwaki,1,0,H
+2019-10-22,Puszcza Niepoomice,Warta Poznan,0,2,A
+2019-10-23,Chrobry Gogow,Zaglebie Sosnowiec,3,0,H
+2019-10-24,Odra Opole,Stal Mielec,1,0,H
+2019-10-25,Stomil Olsztyn,Puszcza Niepoomice,0,0,D
+2019-10-25,Sandecja Nowy Sacz,Wigry Suwaki,1,0,H
+2019-10-25,Bechatow,Miedz Legnica,1,1,D
+2019-10-26,Radomiak Radom,Nieciecza,1,0,H
+2019-10-26,Jastrzebie,Olimpia Grudziadz,2,0,H
+2019-10-26,Zaglebie Sosnowiec,Chojniczanka Chojnice,3,3,D
+2019-10-26,Tychy 71,Warta Poznan,1,1,D
+2019-10-27,Chrobry Gogow,Stal Mielec,1,0,H
+2019-10-27,Odra Opole,Podbeskidzie,0,2,A
+2019-11-02,Miedz Legnica,Radomiak Radom,3,1,H
+2019-11-02,Olimpia Grudziadz,Odra Opole,3,1,H
+2019-11-02,Nieciecza,Jastrzebie,2,2,D
+2019-11-03,Podbeskidzie,Sandecja Nowy Sacz,3,1,H
+2019-11-03,Warta Poznan,Chojniczanka Chojnice,2,0,H
+2019-11-03,Puszcza Niepoomice,Bechatow,1,4,A
+2019-11-03,Tychy 71,Stomil Olsztyn,1,0,H
+2019-11-03,Wigry Suwaki,Chrobry Gogow,1,1,D
+2019-11-03,Stal Mielec,Zaglebie Sosnowiec,1,1,D
+2019-11-08,Sandecja Nowy Sacz,Olimpia Grudziadz,3,1,H
+2019-11-09,Stomil Olsztyn,Warta Poznan,1,3,A
+2019-11-09,Radomiak Radom,Puszcza Niepoomice,1,1,D
+2019-11-09,Chojniczanka Chojnice,Stal Mielec,0,2,A
+2019-11-09,Jastrzebie,Miedz Legnica,2,2,D
+2019-11-09,Odra Opole,Nieciecza,2,0,H
+2019-11-09,Bechatow,Tychy 71,1,4,A
+2019-11-09,Zaglebie Sosnowiec,Wigry Suwaki,2,0,H
+2019-11-10,Chrobry Gogow,Podbeskidzie,1,1,D
+2019-11-16,Podbeskidzie,Zaglebie Sosnowiec,4,1,H
+2019-11-16,Stomil Olsztyn,Bechatow,0,1,A
+2019-11-16,Chojniczanka Chojnice,Wigry Suwaki,1,3,A
+2019-11-16,Sandecja Nowy Sacz,Nieciecza,2,2,D
+2019-11-16,Tychy 71,Radomiak Radom,2,2,D
+2019-11-17,Warta Poznan,Stal Mielec,0,2,A
+2019-11-22,Wigry Suwaki,Stal Mielec,0,3,A
+2019-11-22,Miedz Legnica,Sandecja Nowy Sacz,1,3,A
+2019-11-22,Podbeskidzie,Chojniczanka Chojnice,2,1,H
+2019-11-22,Puszcza Niepoomice,Odra Opole,1,2,A
+2019-11-23,Bechatow,Warta Poznan,1,2,A
+2019-11-23,Olimpia Grudziadz,Zaglebie Sosnowiec,2,1,H
+2019-11-23,Nieciecza,Chrobry Gogow,4,0,H
+2019-11-23,Tychy 71,Jastrzebie,2,2,D
+2019-11-24,Stomil Olsztyn,Radomiak Radom,0,0,D
+2019-11-26,Jastrzebie,Puszcza Niepoomice,1,1,D
+2019-11-27,Odra Opole,Miedz Legnica,3,0,H
+2019-11-27,Chrobry Gogow,Olimpia Grudziadz,2,2,D
+2019-11-29,Zaglebie Sosnowiec,Nieciecza,1,0,H
+2019-11-30,Stal Mielec,Podbeskidzie,2,1,H
+2019-11-30,Jastrzebie,Stomil Olsztyn,1,2,A
+2019-11-30,Chojniczanka Chojnice,Olimpia Grudziadz,1,3,A
+2019-11-30,Sandecja Nowy Sacz,Puszcza Niepoomice,0,1,A
+2019-12-01,Radomiak Radom,Bechatow,2,0,H
+2019-12-01,Warta Poznan,Wigry Suwaki,3,0,H
+2019-12-01,Odra Opole,Tychy 71,0,0,D
+2019-12-01,Chrobry Gogow,Miedz Legnica,0,2,A
+2020-02-29,Miedz Legnica,Zaglebie Sosnowiec,0,2,A
+2020-02-29,Tychy 71,Sandecja Nowy Sacz,2,2,D
+2020-02-29,Bechatow,Jastrzebie,0,0,D
+2020-02-29,Stomil Olsztyn,Odra Opole,4,2,H
+2020-02-29,Nieciecza,Chojniczanka Chojnice,1,2,A
+2020-03-01,Olimpia Grudziadz,Stal Mielec,0,5,A
+2020-03-01,Podbeskidzie,Wigry Suwaki,4,0,H
+2020-03-01,Puszcza Niepoomice,Chrobry Gogow,1,3,A
+2020-03-02,Warta Poznan,Radomiak Radom,3,0,H
+2020-03-06,Odra Opole,Bechatow,1,0,H
+2020-03-07,Chrobry Gogow,Tychy 71,5,1,H
+2020-03-07,Jastrzebie,Radomiak Radom,3,2,H
+2020-03-07,Miedz Legnica,Chojniczanka Chojnice,5,2,H
+2020-03-07,Zaglebie Sosnowiec,Puszcza Niepoomice,3,5,A
+2020-03-07,Sandecja Nowy Sacz,Stomil Olsztyn,3,0,H
+2020-03-08,Stal Mielec,Nieciecza,0,3,A
+2020-03-08,Wigry Suwaki,Olimpia Grudziadz,1,2,A
+2020-03-09,Podbeskidzie,Warta Poznan,2,0,H
+2020-06-02,Puszcza Niepoomice,Chojniczanka Chojnice,1,0,H
+2020-06-02,Stomil Olsztyn,Chrobry Gogow,0,0,D
+2020-06-02,Bechatow,Sandecja Nowy Sacz,0,3,A
+2020-06-02,Nieciecza,Wigry Suwaki,1,0,H
+2020-06-02,Miedz Legnica,Stal Mielec,1,2,A
+2020-06-03,Jastrzebie,Warta Poznan,1,2,A
+2020-06-03,Olimpia Grudziadz,Podbeskidzie,1,2,A
+2020-06-04,Radomiak Radom,Odra Opole,0,0,D
+2020-06-04,Tychy 71,Zaglebie Sosnowiec,1,1,D
+2020-06-05,Wigry Suwaki,Miedz Legnica,1,1,D
+2020-06-05,Stal Mielec,Puszcza Niepoomice,0,0,D
+2020-06-05,Chrobry Gogow,Bechatow,1,0,H
+2020-06-06,Podbeskidzie,Nieciecza,1,0,H
+2020-06-06,Warta Poznan,Olimpia Grudziadz,2,0,H
+2020-06-07,Zaglebie Sosnowiec,Stomil Olsztyn,2,1,H
+2020-06-07,Tychy 71,Chojniczanka Chojnice,1,2,A
+2020-06-07,Odra Opole,Jastrzebie,1,2,A
+2020-06-07,Sandecja Nowy Sacz,Radomiak Radom,1,2,A
+2020-06-12,Nieciecza,Olimpia Grudziadz,3,3,D
+2020-06-12,Puszcza Niepoomice,Wigry Suwaki,2,1,H
+2020-06-12,Jastrzebie,Sandecja Nowy Sacz,1,2,A
+2020-06-12,Miedz Legnica,Podbeskidzie,2,2,D
+2020-06-13,Radomiak Radom,Chrobry Gogow,2,0,H
+2020-06-13,Odra Opole,Warta Poznan,2,0,H
+2020-06-13,Stomil Olsztyn,Chojniczanka Chojnice,1,0,H
+2020-06-13,Bechatow,Zaglebie Sosnowiec,2,1,H
+2020-06-14,Tychy 71,Stal Mielec,2,4,A
+2020-06-16,Chrobry Gogow,Jastrzebie,0,0,D
+2020-06-16,Podbeskidzie,Puszcza Niepoomice,2,2,D
+2020-06-16,Sandecja Nowy Sacz,Odra Opole,1,1,D
+2020-06-17,Zaglebie Sosnowiec,Radomiak Radom,2,2,D
+2020-06-17,Bechatow,Chojniczanka Chojnice,1,1,D
+2020-06-17,Warta Poznan,Nieciecza,1,3,A
+2020-06-17,Olimpia Grudziadz,Miedz Legnica,1,2,A
+2020-06-18,Stal Mielec,Stomil Olsztyn,1,0,H
+2020-06-18,Wigry Suwaki,Tychy 71,0,1,A
+2020-06-19,Odra Opole,Chrobry Gogow,1,0,H
+2020-06-20,Miedz Legnica,Nieciecza,0,1,A
+2020-06-20,Puszcza Niepoomice,Olimpia Grudziadz,0,1,A
+2020-06-20,Jastrzebie,Zaglebie Sosnowiec,1,3,A
+2020-06-20,Radomiak Radom,Chojniczanka Chojnice,3,1,H
+2020-06-21,Tychy 71,Podbeskidzie,1,1,D
+2020-06-21,Bechatow,Stal Mielec,2,1,H
+2020-06-21,Stomil Olsztyn,Wigry Suwaki,1,0,H
+2020-06-21,Warta Poznan,Sandecja Nowy Sacz,2,0,H
+2020-06-26,Chrobry Gogow,Sandecja Nowy Sacz,1,0,H
+2020-06-26,Nieciecza,Puszcza Niepoomice,1,3,A
+2020-06-26,Jastrzebie,Chojniczanka Chojnice,1,3,A
+2020-06-26,Zaglebie Sosnowiec,Odra Opole,1,3,A
+2020-06-27,Miedz Legnica,Warta Poznan,0,0,D
+2020-06-27,Olimpia Grudziadz,Tychy 71,2,4,A
+2020-06-27,Stal Mielec,Radomiak Radom,2,0,H
+2020-06-28,Wigry Suwaki,Bechatow,2,4,A
+2020-06-28,Podbeskidzie,Stomil Olsztyn,2,0,H
+2020-06-30,Odra Opole,Chojniczanka Chojnice,0,0,D
+2020-06-30,Sandecja Nowy Sacz,Zaglebie Sosnowiec,1,1,D
+2020-06-30,Warta Poznan,Chrobry Gogow,1,2,A
+2020-06-30,Jastrzebie,Stal Mielec,1,2,A
+2020-07-01,Puszcza Niepoomice,Miedz Legnica,0,1,A
+2020-07-01,Tychy 71,Nieciecza,1,0,H
+2020-07-02,Radomiak Radom,Wigry Suwaki,3,1,H
+2020-07-02,Bechatow,Podbeskidzie,1,1,D
+2020-07-02,Stomil Olsztyn,Olimpia Grudziadz,2,0,H
+2020-07-03,Chojniczanka Chojnice,Sandecja Nowy Sacz,2,1,H
+2020-07-03,Zaglebie Sosnowiec,Chrobry Gogow,0,2,A
+2020-07-04,Miedz Legnica,Tychy 71,2,2,D
+2020-07-04,Stal Mielec,Odra Opole,1,1,D
+2020-07-04,Warta Poznan,Puszcza Niepoomice,1,2,A
+2020-07-05,Podbeskidzie,Radomiak Radom,4,2,H
+2020-07-05,Nieciecza,Stomil Olsztyn,2,0,H
+2020-07-05,Wigry Suwaki,Jastrzebie,2,0,H
+2020-07-05,Olimpia Grudziadz,Bechatow,1,2,A
+2020-07-10,Odra Opole,Wigry Suwaki,1,0,H
+2020-07-10,Sandecja Nowy Sacz,Stal Mielec,2,1,H
+2020-07-10,Chojniczanka Chojnice,Chrobry Gogow,3,4,A
+2020-07-10,Zaglebie Sosnowiec,Warta Poznan,0,2,A
+2020-07-11,Jastrzebie,Podbeskidzie,0,3,A
+2020-07-11,Tychy 71,Puszcza Niepoomice,0,1,A
+2020-07-11,Stomil Olsztyn,Miedz Legnica,1,2,A
+2020-07-12,Radomiak Radom,Olimpia Grudziadz,2,0,H
+2020-07-12,Bechatow,Nieciecza,0,2,A
+2020-07-14,Chojniczanka Chojnice,Zaglebie Sosnowiec,1,3,A
+2020-07-14,Wigry Suwaki,Sandecja Nowy Sacz,1,0,H
+2020-07-14,Warta Poznan,Tychy 71,2,2,D
+2020-07-14,Stal Mielec,Chrobry Gogow,1,0,H
+2020-07-15,Puszcza Niepoomice,Stomil Olsztyn,0,0,D
+2020-07-15,Podbeskidzie,Odra Opole,4,3,H
+2020-07-15,Nieciecza,Radomiak Radom,1,1,D
+2020-07-16,Miedz Legnica,Bechatow,3,0,H
+2020-07-16,Olimpia Grudziadz,Jastrzebie,0,0,D
+2020-07-17,Zaglebie Sosnowiec,Stal Mielec,0,3,A
+2020-07-17,Chrobry Gogow,Wigry Suwaki,4,1,H
+2020-07-18,Stomil Olsztyn,Tychy 71,2,1,H
+2020-07-18,Sandecja Nowy Sacz,Podbeskidzie,1,0,H
+2020-07-18,Chojniczanka Chojnice,Warta Poznan,1,2,A
+2020-07-19,Bechatow,Puszcza Niepoomice,0,0,D
+2020-07-19,Radomiak Radom,Miedz Legnica,3,0,H
+2020-07-19,Jastrzebie,Nieciecza,0,0,D
+2020-07-19,Odra Opole,Olimpia Grudziadz,1,0,H
+2020-07-25,Miedz Legnica,Jastrzebie,1,1,D
+2020-07-25,Nieciecza,Odra Opole,1,0,H
+2020-07-25,Podbeskidzie,Chrobry Gogow,0,1,A
+2020-07-25,Puszcza Niepoomice,Radomiak Radom,4,0,H
+2020-07-25,Stal Mielec,Chojniczanka Chojnice,4,1,H
+2020-07-25,Tychy 71,Bechatow,1,0,H
+2020-07-25,Warta Poznan,Stomil Olsztyn,1,2,A
+2020-07-25,Wigry Suwaki,Zaglebie Sosnowiec,0,2,A
+2020-07-25,Olimpia Grudziadz,Sandecja Nowy Sacz,0,0,D
+2020-07-28,Radomiak Radom,Miedz Legnica,3,1,H
+2020-07-28,Warta Poznan,Nieciecza,1,0,H
+2020-07-31,Warta Poznan,Radomiak Radom,2,0,H

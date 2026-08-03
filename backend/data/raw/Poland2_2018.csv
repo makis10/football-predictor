@@ -1,0 +1,307 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2018-07-20,Garbarnia Krakow,Stal Mielec,0,2,A
+2018-07-20,Chrobry Gogow,KS odz,0,1,A
+2018-07-20,Chojniczanka Chojnice,Sandecja Nowy Sacz,3,3,D
+2018-07-21,Nieciecza,Bytovia Bytow,1,2,A
+2018-07-21,Odra Opole,Tychy 71,2,1,H
+2018-07-21,GKS Katowice,Podbeskidzie,0,1,A
+2018-07-21,Rakow Czestochowa,Puszcza Niepoomice,3,0,H
+2018-07-21,Jastrzebie,Wigry Suwaki,1,2,A
+2018-07-27,Warta Poznan,Garbarnia Krakow,1,1,D
+2018-07-28,Bytovia Bytow,Stomil Olsztyn,0,0,D
+2018-07-28,Wigry Suwaki,Chojniczanka Chojnice,1,1,D
+2018-07-28,KS odz,GKS Katowice,0,1,A
+2018-07-28,Odra Opole,Sandecja Nowy Sacz,1,0,H
+2018-07-28,Podbeskidzie,Nieciecza,1,2,A
+2018-07-28,Tychy 71,Chrobry Gogow,1,1,D
+2018-07-28,Rakow Czestochowa,Jastrzebie,2,2,D
+2018-07-29,Puszcza Niepoomice,Stal Mielec,1,0,H
+2018-08-03,Odra Opole,Wigry Suwaki,2,2,D
+2018-08-03,Chojniczanka Chojnice,Rakow Czestochowa,2,1,H
+2018-08-03,GKS Katowice,Tychy 71,1,1,D
+2018-08-04,Jastrzebie,Puszcza Niepoomice,0,2,A
+2018-08-04,Nieciecza,KS odz,1,1,D
+2018-08-04,Warta Poznan,Stal Mielec,1,0,H
+2018-08-04,Chrobry Gogow,Sandecja Nowy Sacz,0,0,D
+2018-08-04,Podbeskidzie,Stomil Olsztyn,1,3,A
+2018-08-05,Garbarnia Krakow,Bytovia Bytow,0,3,A
+2018-08-10,Rakow Czestochowa,Odra Opole,1,0,H
+2018-08-11,Bytovia Bytow,Stal Mielec,1,2,A
+2018-08-11,Wigry Suwaki,Chrobry Gogow,0,1,A
+2018-08-11,KS odz,Stomil Olsztyn,1,0,H
+2018-08-11,Jastrzebie,Chojniczanka Chojnice,0,0,D
+2018-08-11,Podbeskidzie,Garbarnia Krakow,0,0,D
+2018-08-11,Puszcza Niepoomice,Warta Poznan,0,1,A
+2018-08-11,Tychy 71,Nieciecza,2,1,H
+2018-08-11,Sandecja Nowy Sacz,GKS Katowice,1,0,H
+2018-08-17,Nieciecza,Sandecja Nowy Sacz,1,1,D
+2018-08-17,Odra Opole,Jastrzebie,1,2,A
+2018-08-17,Tychy 71,Stomil Olsztyn,0,3,A
+2018-08-17,Chojniczanka Chojnice,Puszcza Niepoomice,1,1,D
+2018-08-17,Stal Mielec,Podbeskidzie,0,1,A
+2018-08-18,Garbarnia Krakow,KS odz,3,2,H
+2018-08-18,Chrobry Gogow,Rakow Czestochowa,0,1,A
+2018-08-18,GKS Katowice,Wigry Suwaki,2,0,H
+2018-08-22,KS odz,Stal Mielec,0,2,A
+2018-08-22,Podbeskidzie,Warta Poznan,4,1,H
+2018-08-22,Wigry Suwaki,Nieciecza,3,2,H
+2018-08-22,Puszcza Niepoomice,Bytovia Bytow,1,3,A
+2018-08-22,Sandecja Nowy Sacz,Stomil Olsztyn,1,0,H
+2018-08-22,Chojniczanka Chojnice,Odra Opole,4,1,H
+2018-08-22,Jastrzebie,Chrobry Gogow,0,0,D
+2018-08-22,Rakow Czestochowa,GKS Katowice,2,0,H
+2018-08-22,Tychy 71,Garbarnia Krakow,5,0,H
+2018-08-25,Bytovia Bytow,Podbeskidzie,1,1,D
+2018-08-25,Warta Poznan,KS odz,0,2,A
+2018-08-25,GKS Katowice,Jastrzebie,0,1,A
+2018-08-26,Garbarnia Krakow,Sandecja Nowy Sacz,0,1,A
+2018-08-26,Odra Opole,Puszcza Niepoomice,1,1,D
+2018-08-26,Wigry Suwaki,Stomil Olsztyn,2,0,H
+2018-08-26,Chrobry Gogow,Chojniczanka Chojnice,2,0,H
+2018-08-26,Nieciecza,Rakow Czestochowa,0,1,A
+2018-08-27,Stal Mielec,Tychy 71,1,1,D
+2018-08-31,Odra Opole,Chrobry Gogow,3,0,H
+2018-08-31,Wigry Suwaki,Garbarnia Krakow,2,1,H
+2018-09-01,Rakow Czestochowa,Stomil Olsztyn,2,0,H
+2018-09-01,KS odz,Bytovia Bytow,2,3,A
+2018-09-01,Chojniczanka Chojnice,GKS Katowice,2,1,H
+2018-09-01,Jastrzebie,Nieciecza,4,2,H
+2018-09-01,Tychy 71,Warta Poznan,1,0,H
+2018-09-01,Puszcza Niepoomice,Podbeskidzie,3,2,H
+2018-09-01,Sandecja Nowy Sacz,Stal Mielec,2,0,H
+2018-09-05,Warta Poznan,Bytovia Bytow,2,2,D
+2018-09-08,Bytovia Bytow,Tychy 71,4,1,H
+2018-09-08,Warta Poznan,Sandecja Nowy Sacz,1,3,A
+2018-09-09,Garbarnia Krakow,Rakow Czestochowa,1,1,D
+2018-09-14,Puszcza Niepoomice,KS odz,0,2,A
+2018-09-14,Wigry Suwaki,Warta Poznan,1,1,D
+2018-09-14,Chrobry Gogow,GKS Katowice,2,0,H
+2018-09-14,Odra Opole,Nieciecza,4,1,H
+2018-09-15,Tychy 71,Podbeskidzie,2,2,D
+2018-09-15,Jastrzebie,Garbarnia Krakow,1,2,A
+2018-09-15,Chojniczanka Chojnice,Stomil Olsztyn,2,1,H
+2018-09-15,Sandecja Nowy Sacz,Bytovia Bytow,1,1,D
+2018-09-16,Rakow Czestochowa,Stal Mielec,1,1,D
+2018-09-19,Chrobry Gogow,Puszcza Niepoomice,2,3,A
+2018-09-19,Nieciecza,Chojniczanka Chojnice,2,1,H
+2018-09-19,GKS Katowice,Odra Opole,2,2,D
+2018-09-19,Jastrzebie,Stomil Olsztyn,2,1,H
+2018-09-19,Podbeskidzie,KS odz,0,3,A
+2018-09-19,Stal Mielec,Wigry Suwaki,0,0,D
+2018-09-22,Warta Poznan,Rakow Czestochowa,0,2,A
+2018-09-22,Garbarnia Krakow,Chojniczanka Chojnice,1,2,A
+2018-09-22,Bytovia Bytow,Wigry Suwaki,1,1,D
+2018-09-22,KS odz,Tychy 71,0,0,D
+2018-09-22,Nieciecza,Chrobry Gogow,1,2,A
+2018-09-22,Stal Mielec,Jastrzebie,0,0,D
+2018-09-22,Stomil Olsztyn,Odra Opole,2,1,H
+2018-09-23,Podbeskidzie,Sandecja Nowy Sacz,1,1,D
+2018-09-23,GKS Katowice,Puszcza Niepoomice,1,1,D
+2018-09-28,Chrobry Gogow,Stomil Olsztyn,2,0,H
+2018-09-29,Odra Opole,Garbarnia Krakow,3,0,H
+2018-09-29,Jastrzebie,Warta Poznan,0,0,D
+2018-09-29,GKS Katowice,Nieciecza,1,2,A
+2018-09-29,Rakow Czestochowa,Bytovia Bytow,2,1,H
+2018-09-30,Wigry Suwaki,Podbeskidzie,0,5,A
+2018-09-30,Puszcza Niepoomice,Tychy 71,1,0,H
+2018-09-30,Sandecja Nowy Sacz,KS odz,0,0,D
+2018-09-30,Chojniczanka Chojnice,Stal Mielec,2,2,D
+2018-10-03,Stomil Olsztyn,Warta Poznan,0,1,A
+2018-10-05,Stal Mielec,Odra Opole,1,1,D
+2018-10-06,Warta Poznan,Chojniczanka Chojnice,1,1,D
+2018-10-06,KS odz,Wigry Suwaki,2,1,H
+2018-10-06,Bytovia Bytow,Jastrzebie,1,2,A
+2018-10-06,Garbarnia Krakow,Chrobry Gogow,0,1,A
+2018-10-06,Nieciecza,Puszcza Niepoomice,2,2,D
+2018-10-06,Podbeskidzie,Rakow Czestochowa,0,0,D
+2018-10-06,Tychy 71,Sandecja Nowy Sacz,0,1,A
+2018-10-06,Stomil Olsztyn,GKS Katowice,0,1,A
+2018-10-13,Wigry Suwaki,Tychy 71,2,2,D
+2018-10-13,Chojniczanka Chojnice,Bytovia Bytow,1,1,D
+2018-10-13,Chrobry Gogow,Stal Mielec,0,0,D
+2018-10-19,Garbarnia Krakow,Nieciecza,1,3,A
+2018-10-19,Sandecja Nowy Sacz,Wigry Suwaki,2,0,H
+2018-10-19,Stal Mielec,GKS Katowice,2,0,H
+2018-10-20,KS odz,Jastrzebie,2,0,H
+2018-10-20,Stomil Olsztyn,Puszcza Niepoomice,2,2,D
+2018-10-20,Bytovia Bytow,Odra Opole,1,1,D
+2018-10-20,Tychy 71,Rakow Czestochowa,0,0,D
+2018-10-20,Podbeskidzie,Chojniczanka Chojnice,2,1,H
+2018-10-21,Warta Poznan,Chrobry Gogow,2,1,H
+2018-10-23,GKS Katowice,Garbarnia Krakow,1,2,A
+2018-10-24,Puszcza Niepoomice,Sandecja Nowy Sacz,1,0,H
+2018-10-24,Rakow Czestochowa,KS odz,1,1,D
+2018-10-24,Jastrzebie,Podbeskidzie,2,1,H
+2018-10-24,Nieciecza,Stomil Olsztyn,1,1,D
+2018-10-24,Odra Opole,Warta Poznan,2,1,H
+2018-10-26,Chrobry Gogow,Bytovia Bytow,0,0,D
+2018-10-27,GKS Katowice,Warta Poznan,0,2,A
+2018-10-27,Odra Opole,Podbeskidzie,0,1,A
+2018-10-27,Stomil Olsztyn,Garbarnia Krakow,1,0,H
+2018-10-27,Rakow Czestochowa,Sandecja Nowy Sacz,2,0,H
+2018-10-28,Nieciecza,Stal Mielec,1,2,A
+2018-10-28,Chojniczanka Chojnice,KS odz,1,2,A
+2018-10-28,Puszcza Niepoomice,Wigry Suwaki,1,1,D
+2018-10-28,Jastrzebie,Tychy 71,1,1,D
+2018-11-02,Tychy 71,Chojniczanka Chojnice,0,1,A
+2018-11-03,Warta Poznan,Nieciecza,1,2,A
+2018-11-03,KS odz,Odra Opole,5,1,H
+2018-11-03,Wigry Suwaki,Rakow Czestochowa,0,3,A
+2018-11-03,Bytovia Bytow,GKS Katowice,2,2,D
+2018-11-03,Stal Mielec,Stomil Olsztyn,4,0,H
+2018-11-03,Garbarnia Krakow,Puszcza Niepoomice,0,1,A
+2018-11-03,Sandecja Nowy Sacz,Jastrzebie,1,1,D
+2018-11-04,Podbeskidzie,Chrobry Gogow,3,0,H
+2018-11-09,Tychy 71,Odra Opole,4,2,H
+2018-11-10,Warta Poznan,Stomil Olsztyn,0,1,A
+2018-11-10,KS odz,Chrobry Gogow,2,0,H
+2018-11-10,Bytovia Bytow,Nieciecza,2,2,D
+2018-11-10,Stal Mielec,Garbarnia Krakow,6,1,H
+2018-11-10,Sandecja Nowy Sacz,Chojniczanka Chojnice,2,0,H
+2018-11-10,Podbeskidzie,GKS Katowice,0,2,A
+2018-11-10,Wigry Suwaki,Jastrzebie,1,3,A
+2018-11-11,Puszcza Niepoomice,Rakow Czestochowa,1,3,A
+2018-11-17,Garbarnia Krakow,Warta Poznan,2,1,H
+2018-11-17,Chrobry Gogow,Tychy 71,0,1,A
+2018-11-17,Stomil Olsztyn,Bytovia Bytow,3,2,H
+2018-11-17,Jastrzebie,Rakow Czestochowa,1,5,A
+2018-11-23,Stal Mielec,Warta Poznan,2,0,H
+2018-11-23,Rakow Czestochowa,Chojniczanka Chojnice,1,0,H
+2018-11-24,KS odz,Nieciecza,1,1,D
+2018-11-24,Bytovia Bytow,Garbarnia Krakow,1,1,D
+2018-11-24,Puszcza Niepoomice,Jastrzebie,2,0,H
+2018-11-24,Stomil Olsztyn,Podbeskidzie,0,2,A
+2018-11-24,Sandecja Nowy Sacz,Chrobry Gogow,1,0,H
+2018-11-24,Tychy 71,GKS Katowice,4,0,H
+2018-11-28,GKS Katowice,KS odz,1,1,D
+2018-11-28,Nieciecza,Podbeskidzie,1,0,H
+2018-11-28,Sandecja Nowy Sacz,Odra Opole,2,0,H
+2018-11-28,Chojniczanka Chojnice,Wigry Suwaki,3,1,H
+2018-11-28,Stal Mielec,Puszcza Niepoomice,1,0,H
+2018-12-01,Warta Poznan,Puszcza Niepoomice,2,0,H
+2018-12-01,Chrobry Gogow,Wigry Suwaki,0,2,A
+2018-12-01,Garbarnia Krakow,Podbeskidzie,0,2,A
+2018-12-01,Nieciecza,Tychy 71,3,1,H
+2018-12-01,Stomil Olsztyn,KS odz,2,2,D
+2018-12-02,Odra Opole,Rakow Czestochowa,0,2,A
+2018-12-02,GKS Katowice,Sandecja Nowy Sacz,0,0,D
+2018-12-02,Stal Mielec,Bytovia Bytow,2,1,H
+2018-12-03,Chojniczanka Chojnice,Jastrzebie,1,1,D
+2019-02-27,Wigry Suwaki,Odra Opole,2,3,A
+2019-03-01,Rakow Czestochowa,Chrobry Gogow,1,0,H
+2019-03-02,Podbeskidzie,Stal Mielec,0,2,A
+2019-03-02,Bytovia Bytow,Warta Poznan,0,0,D
+2019-03-02,Stomil Olsztyn,Tychy 71,2,0,H
+2019-03-02,Jastrzebie,Odra Opole,3,1,H
+2019-03-02,Puszcza Niepoomice,Chojniczanka Chojnice,0,2,A
+2019-03-02,Sandecja Nowy Sacz,Nieciecza,0,0,D
+2019-03-02,KS odz,Garbarnia Krakow,3,0,H
+2019-03-03,Wigry Suwaki,GKS Katowice,2,0,H
+2019-03-08,Odra Opole,Chojniczanka Chojnice,3,0,H
+2019-03-08,Stal Mielec,KS odz,0,1,A
+2019-03-09,Bytovia Bytow,Puszcza Niepoomice,0,0,D
+2019-03-09,Stomil Olsztyn,Sandecja Nowy Sacz,0,0,D
+2019-03-09,Garbarnia Krakow,Tychy 71,0,3,A
+2019-03-09,Chrobry Gogow,Jastrzebie,1,0,H
+2019-03-09,GKS Katowice,Rakow Czestochowa,0,3,A
+2019-03-09,Nieciecza,Wigry Suwaki,1,0,H
+2019-03-10,Warta Poznan,Podbeskidzie,4,3,H
+2019-03-15,Tychy 71,Stal Mielec,1,1,D
+2019-03-16,Stomil Olsztyn,Wigry Suwaki,2,1,H
+2019-03-16,Chojniczanka Chojnice,Chrobry Gogow,1,2,A
+2019-03-16,Jastrzebie,GKS Katowice,1,2,A
+2019-03-16,Sandecja Nowy Sacz,Garbarnia Krakow,0,1,A
+2019-03-16,KS odz,Warta Poznan,3,0,H
+2019-03-16,Podbeskidzie,Bytovia Bytow,3,1,H
+2019-03-17,Puszcza Niepoomice,Odra Opole,0,0,D
+2019-03-17,Rakow Czestochowa,Nieciecza,1,0,H
+2019-03-23,Stomil Olsztyn,Rakow Czestochowa,1,1,D
+2019-03-23,Garbarnia Krakow,Wigry Suwaki,0,0,D
+2019-03-24,Warta Poznan,Tychy 71,1,1,D
+2019-03-29,KS odz,Podbeskidzie,3,0,H
+2019-03-29,Puszcza Niepoomice,Chrobry Gogow,3,0,H
+2019-03-30,Wigry Suwaki,Stal Mielec,0,1,A
+2019-03-30,Chojniczanka Chojnice,Nieciecza,1,1,D
+2019-03-30,Sandecja Nowy Sacz,Warta Poznan,2,1,H
+2019-03-30,Odra Opole,GKS Katowice,0,4,A
+2019-03-30,Rakow Czestochowa,Garbarnia Krakow,1,0,H
+2019-03-30,Stomil Olsztyn,Jastrzebie,1,1,D
+2019-03-30,Tychy 71,Bytovia Bytow,1,0,H
+2019-04-03,Stal Mielec,Sandecja Nowy Sacz,0,0,D
+2019-04-03,Bytovia Bytow,KS odz,0,2,A
+2019-04-03,Chrobry Gogow,Odra Opole,1,2,A
+2019-04-03,Nieciecza,Jastrzebie,0,0,D
+2019-04-03,Podbeskidzie,Puszcza Niepoomice,3,1,H
+2019-04-03,GKS Katowice,Chojniczanka Chojnice,2,2,D
+2019-04-06,Stal Mielec,Rakow Czestochowa,3,1,H
+2019-04-06,Bytovia Bytow,Sandecja Nowy Sacz,1,1,D
+2019-04-06,Warta Poznan,Wigry Suwaki,1,0,H
+2019-04-06,Stomil Olsztyn,Chojniczanka Chojnice,0,0,D
+2019-04-07,Garbarnia Krakow,Jastrzebie,0,1,A
+2019-04-07,GKS Katowice,Chrobry Gogow,2,2,D
+2019-04-07,Podbeskidzie,Tychy 71,2,0,H
+2019-04-07,Nieciecza,Odra Opole,3,0,H
+2019-04-07,KS odz,Puszcza Niepoomice,0,1,A
+2019-04-12,Jastrzebie,Stal Mielec,1,0,H
+2019-04-13,Wigry Suwaki,Bytovia Bytow,4,2,H
+2019-04-13,Chojniczanka Chojnice,Garbarnia Krakow,5,1,H
+2019-04-13,Odra Opole,Stomil Olsztyn,2,2,D
+2019-04-13,Tychy 71,KS odz,0,2,A
+2019-04-13,Chrobry Gogow,Nieciecza,0,1,A
+2019-04-13,Sandecja Nowy Sacz,Podbeskidzie,2,0,H
+2019-04-14,Rakow Czestochowa,Warta Poznan,3,0,H
+2019-04-14,Puszcza Niepoomice,GKS Katowice,1,2,A
+2019-04-18,Bytovia Bytow,Rakow Czestochowa,2,2,D
+2019-04-18,Podbeskidzie,Wigry Suwaki,3,3,D
+2019-04-18,Stomil Olsztyn,Chrobry Gogow,0,2,A
+2019-04-19,KS odz,Sandecja Nowy Sacz,2,0,H
+2019-04-20,Garbarnia Krakow,Odra Opole,0,0,D
+2019-04-20,Warta Poznan,Jastrzebie,0,0,D
+2019-04-20,Nieciecza,GKS Katowice,1,1,D
+2019-04-20,Stal Mielec,Chojniczanka Chojnice,4,2,H
+2019-04-20,Tychy 71,Puszcza Niepoomice,3,0,H
+2019-04-24,Wigry Suwaki,KS odz,1,1,D
+2019-04-24,Rakow Czestochowa,Podbeskidzie,2,0,H
+2019-04-24,Chrobry Gogow,Garbarnia Krakow,3,0,H
+2019-04-24,Jastrzebie,Bytovia Bytow,4,0,H
+2019-04-24,Odra Opole,Stal Mielec,1,1,D
+2019-04-24,Puszcza Niepoomice,Nieciecza,1,0,H
+2019-04-24,Sandecja Nowy Sacz,Tychy 71,1,3,A
+2019-04-24,Chojniczanka Chojnice,Warta Poznan,0,2,A
+2019-04-24,GKS Katowice,Stomil Olsztyn,1,1,D
+2019-04-27,Bytovia Bytow,Chojniczanka Chojnice,2,1,H
+2019-04-27,KS odz,Rakow Czestochowa,2,0,H
+2019-04-27,Stomil Olsztyn,Nieciecza,3,0,H
+2019-04-28,Warta Poznan,Odra Opole,2,1,H
+2019-04-28,Sandecja Nowy Sacz,Puszcza Niepoomice,2,1,H
+2019-04-28,Podbeskidzie,Jastrzebie,2,2,D
+2019-04-28,Tychy 71,Wigry Suwaki,5,0,H
+2019-04-28,Stal Mielec,Chrobry Gogow,5,1,H
+2019-04-29,Garbarnia Krakow,GKS Katowice,0,2,A
+2019-05-01,Tychy 71,Jastrzebie,2,1,H
+2019-05-03,Chrobry Gogow,Warta Poznan,1,1,D
+2019-05-03,GKS Katowice,Stal Mielec,0,2,A
+2019-05-04,Rakow Czestochowa,Tychy 71,0,0,D
+2019-05-04,Odra Opole,Bytovia Bytow,2,1,H
+2019-05-04,Nieciecza,Garbarnia Krakow,1,0,H
+2019-05-04,Jastrzebie,KS odz,0,2,A
+2019-05-05,Wigry Suwaki,Sandecja Nowy Sacz,1,2,A
+2019-05-05,Chojniczanka Chojnice,Podbeskidzie,2,2,D
+2019-05-05,Puszcza Niepoomice,Stomil Olsztyn,1,2,A
+2019-05-11,Warta Poznan,GKS Katowice,0,1,A
+2019-05-11,Bytovia Bytow,Chrobry Gogow,1,1,D
+2019-05-11,Garbarnia Krakow,Stomil Olsztyn,0,2,A
+2019-05-11,Podbeskidzie,Odra Opole,3,1,H
+2019-05-11,Sandecja Nowy Sacz,Rakow Czestochowa,2,2,D
+2019-05-11,Stal Mielec,Nieciecza,5,4,H
+2019-05-11,Wigry Suwaki,Puszcza Niepoomice,2,1,H
+2019-05-11,KS odz,Chojniczanka Chojnice,2,0,H
+2019-05-17,Chojniczanka Chojnice,Tychy 71,4,1,H
+2019-05-18,Chrobry Gogow,Podbeskidzie,1,1,D
+2019-05-18,GKS Katowice,Bytovia Bytow,1,2,A
+2019-05-18,Jastrzebie,Sandecja Nowy Sacz,5,0,H
+2019-05-18,Nieciecza,Warta Poznan,1,0,H
+2019-05-18,Odra Opole,KS odz,3,3,D
+2019-05-18,Puszcza Niepoomice,Garbarnia Krakow,3,2,H
+2019-05-18,Rakow Czestochowa,Wigry Suwaki,1,2,A
+2019-05-18,Stomil Olsztyn,Stal Mielec,2,5,A

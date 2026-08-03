@@ -83,37 +83,37 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2025-11-30,Dacia-Buiucani,Sheriff Tiraspol,0,4,A
 2025-11-30,Spartanii Selemet,Petrocub,0,8,A
 2025-11-30,CSF Balti,Milsami Orhei,2,1,H
-2026-03-06,Floresti,Iskra,3,1,H
+2026-03-06,Floresti,Iskra Ribnita,3,1,H
 2026-03-07,Spartanii Selemet,Sireti,0,2,A
 2026-03-07,FC Stauceni,Politehnica UTM,1,1,D
 2026-03-07,Milsami Orhei,Zimbru,0,0,D
 2026-03-08,Petrocub,Dacia-Buiucani,3,0,H
 2026-03-08,CSF Balti,Sheriff Tiraspol,0,1,A
-2026-03-13,Iskra,FC Stauceni,0,0,D
+2026-03-13,Iskra Ribnita,FC Stauceni,0,0,D
 2026-03-14,Zimbru,Dacia-Buiucani,3,2,H
 2026-03-14,Sireti,Politehnica UTM,1,1,D
 2026-03-14,Spartanii Selemet,Floresti,2,2,D
 2026-03-14,Sheriff Tiraspol,Petrocub,1,0,H
 2026-03-15,Milsami Orhei,CSF Balti,0,0,D
 2026-03-19,Floresti,Sireti,0,2,A
-2026-03-20,Politehnica UTM,Iskra,2,1,H
+2026-03-20,Politehnica UTM,Iskra Ribnita,2,1,H
 2026-03-20,FC Stauceni,Spartanii Selemet,1,3,A
 2026-03-20,Sheriff Tiraspol,Dacia-Buiucani,2,0,H
 2026-03-21,CSF Balti,Zimbru,0,2,A
 2026-03-21,Petrocub,Milsami Orhei,2,0,H
 2026-04-03,Floresti,FC Stauceni,1,0,H
-2026-04-04,Sireti,Iskra,4,0,H
+2026-04-04,Sireti,Iskra Ribnita,4,0,H
 2026-04-04,Spartanii Selemet,Politehnica UTM,1,1,D
 2026-04-04,Milsami Orhei,Dacia-Buiucani,1,0,H
 2026-04-05,CSF Balti,Petrocub,0,2,A
 2026-04-05,Zimbru,Sheriff Tiraspol,2,2,D
-2026-04-10,Iskra,Spartanii Selemet,1,1,D
+2026-04-10,Iskra Ribnita,Spartanii Selemet,1,1,D
 2026-04-10,FC Stauceni,Sireti,1,1,D
 2026-04-11,Dacia-Buiucani,CSF Balti,1,2,A
 2026-04-11,Politehnica UTM,Floresti,2,0,H
 2026-04-11,Sheriff Tiraspol,Milsami Orhei,3,1,H
 2026-04-11,Petrocub,Zimbru,3,0,H
-2026-04-17,Iskra,Floresti,1,1,D
+2026-04-17,Iskra Ribnita,Floresti,1,1,D
 2026-04-17,Politehnica UTM,FC Stauceni,5,1,H
 2026-04-18,Dacia-Buiucani,Petrocub,1,2,A
 2026-04-18,Sireti,Spartanii Selemet,0,1,A
@@ -121,34 +121,34 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2026-04-18,Zimbru,Milsami Orhei,3,1,H
 2026-04-24,Politehnica UTM,Sireti,3,1,H
 2026-04-25,Floresti,Spartanii Selemet,1,2,A
-2026-04-25,FC Stauceni,Iskra,0,0,D
+2026-04-25,FC Stauceni,Iskra Ribnita,0,0,D
 2026-04-25,Dacia-Buiucani,Zimbru,0,3,A
 2026-04-26,CSF Balti,Milsami Orhei,1,0,H
 2026-04-26,Petrocub,Sheriff Tiraspol,1,0,H
-2026-05-01,Iskra,Politehnica UTM,0,2,A
+2026-05-01,Iskra Ribnita,Politehnica UTM,0,2,A
 2026-05-01,Spartanii Selemet,FC Stauceni,5,2,H
 2026-05-02,Sireti,Floresti,1,0,H
 2026-05-02,Zimbru,CSF Balti,4,1,H
 2026-05-02,Milsami Orhei,Petrocub,0,3,A
 2026-05-03,Dacia-Buiucani,Sheriff Tiraspol,1,2,A
 2026-05-04,Politehnica UTM,Spartanii Selemet,2,0,H
-2026-05-05,Iskra,Sireti,3,0,H
+2026-05-05,Iskra Ribnita,Sireti,3,0,H
 2026-05-05,FC Stauceni,Floresti,0,0,D
 2026-05-06,FCM Ungheni,Victoria Bardar,4,2,H
 2026-05-06,Univer Comrat,Oguzsport,2,3,A
 2026-05-09,Floresti,Politehnica UTM,1,1,D
 2026-05-09,Sireti,FC Stauceni,4,3,H
-2026-05-09,Spartanii Selemet,Iskra,0,2,A
+2026-05-09,Spartanii Selemet,Iskra Ribnita,0,2,A
 2026-05-09,Dacia-Buiucani,Milsami Orhei,1,2,A
 2026-05-10,Petrocub,CSF Balti,3,0,H
 2026-05-10,Sheriff Tiraspol,Zimbru,1,0,H
-2026-05-16,Iskra,FC Stauceni,3,1,H
+2026-05-16,Iskra Ribnita,FC Stauceni,3,1,H
 2026-05-16,Floresti,FCM Ungheni,5,4,H
 2026-05-16,Sireti,Oguzsport,5,2,H
 2026-05-16,Spartanii Selemet,Falesti,3,0,H
 2026-05-17,Milsami Orhei,Sheriff Tiraspol,0,0,D
 2026-05-17,Zimbru,Petrocub,1,1,D
 2026-05-17,CSF Balti,Dacia-Buiucani,0,0,D
-2026-05-20,Sireti,Iskra,1,0,H
+2026-05-20,Sireti,Iskra Ribnita,1,0,H
 2026-05-20,Spartanii Selemet,Floresti,1,4,A
 2026-05-27,Sireti,Floresti,1,0,H

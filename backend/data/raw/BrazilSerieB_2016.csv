@@ -1,0 +1,381 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2016-05-13,Vila Nova,Bragantino,3,1,H
+2016-05-13,Oeste,Atletico Goianiense,0,1,A
+2016-05-14,Tupi,Goias,0,1,A
+2016-05-14,Ceara,Paysandu,2,2,D
+2016-05-14,Brasil DE Pelotas,Parana,2,0,H
+2016-05-14,Londrina,CRB,0,1,A
+2016-05-14,Sampaio Correa,Vasco DA Gama,0,4,A
+2016-05-14,Criciuma,Nautico Recife,1,0,H
+2016-05-15,Bahia,Avai,2,1,H
+2016-05-15,Luverdense,Joinville,1,1,D
+2016-05-17,Bragantino,Luverdense,0,1,A
+2016-05-18,Nautico Recife,Vila Nova,3,2,H
+2016-05-20,Atletico Goianiense,Brasil DE Pelotas,1,0,H
+2016-05-20,Goias,Londrina,1,1,D
+2016-05-21,Joinville,Criciuma,0,0,D
+2016-05-21,Vasco DA Gama,Tupi,1,0,H
+2016-05-21,Avai,Sampaio Correa,2,0,H
+2016-05-21,Paysandu,Oeste,1,1,D
+2016-05-21,Parana,Bahia,0,0,D
+2016-05-21,CRB,Ceara,0,3,A
+2016-05-24,Ceara,Atletico Goianiense,0,1,A
+2016-05-24,Brasil DE Pelotas,Bragantino,2,0,H
+2016-05-24,Oeste,CRB,2,1,H
+2016-05-24,Londrina,Nautico Recife,1,0,H
+2016-05-24,Sampaio Correa,Parana,1,2,A
+2016-05-25,Criciuma,Goias,3,1,H
+2016-05-25,Vila Nova,Vasco DA Gama,0,2,A
+2016-05-25,Luverdense,Avai,1,1,D
+2016-05-25,Tupi,Paysandu,5,1,H
+2016-05-25,Bahia,Joinville,1,0,H
+2016-05-27,CRB,Criciuma,2,1,H
+2016-05-27,Parana,Oeste,2,1,H
+2016-05-27,Goias,Brasil DE Pelotas,1,1,D
+2016-05-28,Nautico Recife,Sampaio Correa,5,0,H
+2016-05-28,Atletico Goianiense,Vila Nova,2,1,H
+2016-05-28,Avai,Ceara,4,2,H
+2016-05-28,Joinville,Londrina,1,1,D
+2016-05-28,Vasco DA Gama,Bahia,4,3,H
+2016-05-29,Paysandu,Luverdense,2,1,H
+2016-05-29,Bragantino,Tupi,2,1,H
+2016-05-31,Bahia,Nautico Recife,0,0,D
+2016-05-31,Ceara,Goias,2,1,H
+2016-05-31,Criciuma,Avai,1,0,H
+2016-05-31,Brasil DE Pelotas,Paysandu,1,0,H
+2016-05-31,Vila Nova,CRB,1,2,A
+2016-05-31,Londrina,Parana,1,1,D
+2016-05-31,Sampaio Correa,Bragantino,0,0,D
+2016-06-01,Oeste,Vasco DA Gama,1,1,D
+2016-06-01,Luverdense,Atletico Goianiense,3,2,H
+2016-06-01,Tupi,Joinville,1,2,A
+2016-06-03,Bahia,Paysandu,3,0,H
+2016-06-03,Brasil DE Pelotas,Luverdense,1,1,D
+2016-06-03,Vila Nova,Parana,0,0,D
+2016-06-04,Nautico Recife,Joinville,2,0,H
+2016-06-04,Oeste,Criciuma,1,0,H
+2016-06-04,Londrina,Tupi,1,0,H
+2016-06-04,Sampaio Correa,Ceara,2,3,A
+2016-06-04,Vasco DA Gama,Goias,1,0,H
+2016-06-05,Atletico Goianiense,Bragantino,1,0,H
+2016-06-05,Avai,CRB,2,1,H
+2016-06-07,Parana,Atletico Goianiense,0,0,D
+2016-06-07,Criciuma,Brasil DE Pelotas,3,0,H
+2016-06-07,CRB,Sampaio Correa,2,1,H
+2016-06-07,Paysandu,Nautico Recife,1,3,A
+2016-06-07,Bragantino,Avai,1,0,H
+2016-06-07,Tupi,Oeste,0,1,A
+2016-06-08,Ceara,Londrina,1,0,H
+2016-06-08,Goias,Bahia,0,2,A
+2016-06-08,Luverdense,Vila Nova,0,2,A
+2016-06-08,Joinville,Vasco DA Gama,0,2,A
+2016-06-10,Bahia,CRB,3,0,H
+2016-06-10,Goias,Oeste,1,1,D
+2016-06-10,Sampaio Correa,Criciuma,1,0,H
+2016-06-11,Brasil DE Pelotas,Tupi,1,0,H
+2016-06-11,Avai,Joinville,0,1,A
+2016-06-11,Londrina,Vila Nova,1,0,H
+2016-06-11,Nautico Recife,Parana,5,1,H
+2016-06-11,Atletico Goianiense,Vasco DA Gama,2,1,H
+2016-06-12,Luverdense,Ceara,2,0,H
+2016-06-12,Bragantino,Paysandu,0,0,D
+2016-06-14,Parana,Goias,2,0,H
+2016-06-14,Vasco DA Gama,Nautico Recife,3,2,H
+2016-06-14,Criciuma,Bahia,3,2,H
+2016-06-14,Vila Nova,Sampaio Correa,1,0,H
+2016-06-14,Oeste,Londrina,1,1,D
+2016-06-14,Joinville,Atletico Goianiense,0,0,D
+2016-06-14,Tupi,Luverdense,0,0,D
+2016-06-15,Ceara,Brasil DE Pelotas,3,0,H
+2016-06-15,CRB,Bragantino,2,1,H
+2016-06-15,Paysandu,Avai,1,0,H
+2016-06-17,Joinville,Ceara,1,1,D
+2016-06-18,Parana,Luverdense,1,2,A
+2016-06-18,Sampaio Correa,Brasil DE Pelotas,1,1,D
+2016-06-18,Goias,Avai,2,0,H
+2016-06-18,Bahia,Londrina,1,2,A
+2016-06-18,Criciuma,Tupi,2,2,D
+2016-06-18,Atletico Goianiense,CRB,1,2,A
+2016-06-18,Nautico Recife,Bragantino,1,1,D
+2016-06-18,Vasco DA Gama,Paysandu,0,2,A
+2016-06-19,Oeste,Vila Nova,1,3,A
+2016-06-21,Ceara,Oeste,1,0,H
+2016-06-21,Avai,Atletico Goianiense,1,1,D
+2016-06-21,CRB,Parana,1,1,D
+2016-06-21,Londrina,Vasco DA Gama,0,1,A
+2016-06-21,Paysandu,Joinville,1,0,H
+2016-06-21,Tupi,Bahia,2,1,H
+2016-06-22,Brasil DE Pelotas,Nautico Recife,0,0,D
+2016-06-22,Vila Nova,Criciuma,2,3,A
+2016-06-22,Luverdense,Sampaio Correa,0,0,D
+2016-06-22,Bragantino,Goias,0,1,A
+2016-06-24,Criciuma,Bragantino,1,1,D
+2016-06-24,Paysandu,Atletico Goianiense,0,0,D
+2016-06-25,Brasil DE Pelotas,Bahia,2,1,H
+2016-06-25,Luverdense,Londrina,2,1,H
+2016-06-25,Parana,Joinville,1,0,H
+2016-06-25,Vila Nova,Goias,1,1,D
+2016-06-25,Ceara,Nautico Recife,2,1,H
+2016-06-25,CRB,Vasco DA Gama,1,2,A
+2016-06-26,Oeste,Sampaio Correa,1,0,H
+2016-06-26,Tupi,Avai,1,1,D
+2016-06-27,Atletico Goianiense,Criciuma,1,0,H
+2016-06-28,Bahia,Oeste,2,0,H
+2016-06-28,Avai,Vila Nova,3,1,H
+2016-06-28,Londrina,Brasil DE Pelotas,1,0,H
+2016-06-28,Joinville,CRB,1,3,A
+2016-06-28,Vasco DA Gama,Parana,1,2,A
+2016-06-28,Sampaio Correa,Tupi,3,1,H
+2016-06-28,Nautico Recife,Luverdense,1,0,H
+2016-06-29,Goias,Paysandu,0,0,D
+2016-06-29,Bragantino,Ceara,1,1,D
+2016-07-01,Sampaio Correa,Paysandu,0,0,D
+2016-07-01,Vila Nova,Tupi,1,0,H
+2016-07-02,Londrina,Criciuma,2,2,D
+2016-07-02,Brasil DE Pelotas,Joinville,2,0,H
+2016-07-02,Atletico Goianiense,Nautico Recife,3,0,H
+2016-07-02,Luverdense,Oeste,0,1,A
+2016-07-02,Bragantino,Parana,0,1,A
+2016-07-02,Avai,Vasco DA Gama,2,1,H
+2016-07-02,Ceara,Bahia,1,0,H
+2016-07-03,CRB,Goias,2,1,H
+2016-07-05,Parana,Avai,0,0,D
+2016-07-06,Bahia,Vila Nova,0,1,A
+2016-07-08,Criciuma,Luverdense,2,2,D
+2016-07-09,Tupi,Ceara,2,1,H
+2016-07-09,Oeste,Bragantino,1,3,A
+2016-07-09,Goias,Atletico Goianiense,2,2,D
+2016-07-09,Nautico Recife,CRB,1,3,A
+2016-07-09,Joinville,Sampaio Correa,2,0,H
+2016-07-09,Vasco DA Gama,Brasil DE Pelotas,2,0,H
+2016-07-10,Paysandu,Londrina,0,0,D
+2016-07-12,Atletico Goianiense,Londrina,1,2,A
+2016-07-13,Parana,Paysandu,0,0,D
+2016-07-15,CRB,Tupi,3,0,H
+2016-07-15,Avai,Oeste,1,1,D
+2016-07-16,Sampaio Correa,Bahia,0,0,D
+2016-07-16,Ceara,Criciuma,1,0,H
+2016-07-16,Brasil DE Pelotas,Vila Nova,2,2,D
+2016-07-16,Goias,Nautico Recife,4,2,H
+2016-07-16,Luverdense,Vasco DA Gama,1,1,D
+2016-07-17,Bragantino,Joinville,2,0,H
+2016-07-19,Oeste,Brasil DE Pelotas,1,1,D
+2016-07-20,Joinville,Goias,2,1,H
+2016-07-22,Criciuma,Parana,3,2,H
+2016-07-23,Nautico Recife,Avai,3,1,H
+2016-07-23,Vila Nova,Ceara,3,4,A
+2016-07-23,Tupi,Atletico Goianiense,1,0,H
+2016-07-23,Vasco DA Gama,Bragantino,2,1,H
+2016-07-23,Bahia,Luverdense,1,0,H
+2016-07-24,Londrina,Sampaio Correa,1,1,D
+2016-07-24,Paysandu,CRB,2,2,D
+2016-07-26,Goias,Luverdense,1,1,D
+2016-07-27,Avai,Londrina,1,0,H
+2016-07-29,CRB,Brasil DE Pelotas,1,2,A
+2016-07-30,Nautico Recife,Tupi,1,0,H
+2016-07-30,Joinville,Oeste,0,1,A
+2016-07-30,Bragantino,Bahia,1,0,H
+2016-07-30,Paysandu,Vila Nova,2,2,D
+2016-07-30,Parana,Ceara,1,1,D
+2016-07-31,Vasco DA Gama,Criciuma,2,1,H
+2016-07-31,Atletico Goianiense,Sampaio Correa,4,1,H
+2016-08-02,Criciuma,Paysandu,0,3,A
+2016-08-02,Brasil DE Pelotas,Avai,3,0,H
+2016-08-02,Vila Nova,Joinville,2,1,H
+2016-08-02,Londrina,Bragantino,2,0,H
+2016-08-03,Ceara,Vasco DA Gama,0,0,D
+2016-08-03,Oeste,Nautico Recife,0,0,D
+2016-08-03,Luverdense,CRB,0,0,D
+2016-08-03,Tupi,Parana,2,0,H
+2016-08-16,Bahia,Atletico Goianiense,1,1,D
+2016-08-16,Sampaio Correa,Goias,0,0,D
+2016-08-19,Atletico Goianiense,Oeste,1,1,D
+2016-08-19,Parana,Brasil DE Pelotas,0,2,A
+2016-08-19,Bragantino,Vila Nova,2,2,D
+2016-08-19,Joinville,Luverdense,1,1,D
+2016-08-20,CRB,Londrina,0,1,A
+2016-08-20,Nautico Recife,Criciuma,0,1,A
+2016-08-20,Vasco DA Gama,Sampaio Correa,1,1,D
+2016-08-20,Avai,Bahia,0,3,A
+2016-08-21,Paysandu,Ceara,2,0,H
+2016-08-21,Goias,Tupi,2,1,H
+2016-08-23,Sampaio Correa,Avai,1,2,A
+2016-08-23,Brasil DE Pelotas,Atletico Goianiense,0,1,A
+2016-08-24,Londrina,Goias,0,1,A
+2016-08-26,Criciuma,Joinville,0,1,A
+2016-08-27,Ceara,CRB,1,1,D
+2016-08-27,Oeste,Paysandu,1,0,H
+2016-08-27,Vila Nova,Nautico Recife,0,2,A
+2016-08-27,Tupi,Vasco DA Gama,2,2,D
+2016-08-27,Bahia,Parana,3,0,H
+2016-08-28,Luverdense,Bragantino,4,0,H
+2016-08-29,Atletico Goianiense,Ceara,2,2,D
+2016-08-30,Parana,Sampaio Correa,1,0,H
+2016-08-30,Avai,Luverdense,2,1,H
+2016-08-30,Paysandu,Tupi,0,3,A
+2016-08-30,Joinville,Bahia,1,1,D
+2016-08-30,Vasco DA Gama,Vila Nova,1,2,A
+2016-08-30,CRB,Oeste,3,1,H
+2016-08-30,Nautico Recife,Londrina,0,2,A
+2016-08-31,Goias,Criciuma,1,1,D
+2016-08-31,Bragantino,Brasil DE Pelotas,0,2,A
+2016-09-02,Brasil DE Pelotas,Goias,2,1,H
+2016-09-03,Luverdense,Paysandu,3,1,H
+2016-09-03,Vila Nova,Atletico Goianiense,0,0,D
+2016-09-03,Oeste,Parana,3,3,D
+2016-09-03,Tupi,Bragantino,0,1,A
+2016-09-03,Bahia,Vasco DA Gama,1,0,H
+2016-09-03,Londrina,Joinville,1,0,H
+2016-09-04,Criciuma,CRB,1,1,D
+2016-09-04,Sampaio Correa,Nautico Recife,4,3,H
+2016-09-04,Ceara,Avai,0,0,D
+2016-09-06,Atletico Goianiense,Luverdense,2,0,H
+2016-09-06,Bragantino,Sampaio Correa,2,1,H
+2016-09-09,Joinville,Tupi,1,1,D
+2016-09-10,Paysandu,Brasil DE Pelotas,1,1,D
+2016-09-10,Parana,Londrina,2,1,H
+2016-09-10,Avai,Criciuma,3,0,H
+2016-09-10,Vasco DA Gama,Oeste,3,2,H
+2016-09-10,Nautico Recife,Bahia,0,0,D
+2016-09-10,Goias,Ceara,2,0,H
+2016-09-11,CRB,Vila Nova,1,2,A
+2016-09-13,Parana,Vila Nova,1,2,A
+2016-09-13,CRB,Avai,1,2,A
+2016-09-13,Paysandu,Bahia,2,1,H
+2016-09-13,Joinville,Nautico Recife,0,0,D
+2016-09-13,Tupi,Londrina,1,1,D
+2016-09-13,Criciuma,Oeste,4,0,H
+2016-09-13,Bragantino,Atletico Goianiense,1,2,A
+2016-09-14,Ceara,Sampaio Correa,0,1,A
+2016-09-14,Goias,Vasco DA Gama,1,1,D
+2016-09-14,Luverdense,Brasil DE Pelotas,1,0,H
+2016-09-16,Brasil DE Pelotas,Criciuma,1,2,A
+2016-09-16,Vila Nova,Luverdense,0,0,D
+2016-09-17,Vasco DA Gama,Joinville,2,0,H
+2016-09-17,Atletico Goianiense,Parana,2,0,H
+2016-09-17,Avai,Bragantino,2,0,H
+2016-09-17,Sampaio Correa,CRB,1,1,D
+2016-09-17,Londrina,Ceara,1,1,D
+2016-09-17,Nautico Recife,Paysandu,3,1,H
+2016-09-17,Bahia,Goias,4,2,H
+2016-09-18,Oeste,Tupi,0,0,D
+2016-09-21,Ceara,Luverdense,0,0,D
+2016-09-23,Criciuma,Sampaio Correa,1,0,H
+2016-09-23,Joinville,Avai,0,1,A
+2016-09-24,Oeste,Goias,1,2,A
+2016-09-24,Parana,Nautico Recife,1,2,A
+2016-09-24,CRB,Bahia,2,2,D
+2016-09-24,Vasco DA Gama,Atletico Goianiense,2,0,H
+2016-09-24,Vila Nova,Londrina,1,2,A
+2016-09-24,Tupi,Brasil DE Pelotas,1,1,D
+2016-09-26,Paysandu,Bragantino,3,0,H
+2016-09-27,Atletico Goianiense,Joinville,1,1,D
+2016-09-28,Brasil DE Pelotas,Ceara,2,1,H
+2016-09-30,Goias,Parana,4,0,H
+2016-09-30,Bahia,Criciuma,2,0,H
+2016-09-30,Luverdense,Tupi,2,1,H
+2016-10-01,Avai,Paysandu,2,0,H
+2016-10-01,Bragantino,CRB,1,2,A
+2016-10-01,Nautico Recife,Vasco DA Gama,3,1,H
+2016-10-01,Londrina,Oeste,3,0,H
+2016-10-04,Londrina,Bahia,1,0,H
+2016-10-04,Bragantino,Nautico Recife,0,1,A
+2016-10-04,Tupi,Criciuma,0,2,A
+2016-10-04,Ceara,Joinville,2,1,H
+2016-10-04,Vila Nova,Oeste,1,0,H
+2016-10-04,CRB,Atletico Goianiense,1,2,A
+2016-10-05,Brasil DE Pelotas,Sampaio Correa,1,1,D
+2016-10-05,Avai,Goias,2,0,H
+2016-10-05,Paysandu,Vasco DA Gama,3,1,H
+2016-10-05,Luverdense,Parana,3,2,H
+2016-10-07,Criciuma,Vila Nova,1,0,H
+2016-10-07,Goias,Bragantino,2,1,H
+2016-10-08,Nautico Recife,Brasil DE Pelotas,2,0,H
+2016-10-08,Atletico Goianiense,Avai,3,0,H
+2016-10-08,Sampaio Correa,Luverdense,2,0,H
+2016-10-08,Joinville,Paysandu,0,0,D
+2016-10-08,Oeste,Ceara,1,1,D
+2016-10-08,Vasco DA Gama,Londrina,1,0,H
+2016-10-09,Parana,CRB,5,3,H
+2016-10-09,Bahia,Tupi,4,0,H
+2016-10-10,Bragantino,Criciuma,2,0,H
+2016-10-11,Sampaio Correa,Oeste,1,1,D
+2016-10-14,Atletico Goianiense,Paysandu,2,1,H
+2016-10-15,Bahia,Brasil DE Pelotas,1,0,H
+2016-10-15,Avai,Tupi,1,0,H
+2016-10-15,Goias,Vila Nova,1,2,A
+2016-10-15,Joinville,Parana,1,0,H
+2016-10-15,Vasco DA Gama,CRB,1,2,A
+2016-10-15,Londrina,Luverdense,1,1,D
+2016-10-15,Nautico Recife,Ceara,1,0,H
+2016-10-18,Vila Nova,Avai,1,2,A
+2016-10-18,Brasil DE Pelotas,Londrina,0,1,A
+2016-10-21,Ceara,Bragantino,2,0,H
+2016-10-21,Luverdense,Nautico Recife,2,1,H
+2016-10-22,Oeste,Bahia,1,1,D
+2016-10-22,Parana,Vasco DA Gama,0,1,A
+2016-10-22,Paysandu,Goias,1,1,D
+2016-10-22,Tupi,Sampaio Correa,1,1,D
+2016-10-22,Criciuma,Atletico Goianiense,1,2,A
+2016-10-22,CRB,Joinville,2,1,H
+2016-10-25,Oeste,Luverdense,1,1,D
+2016-10-25,Sampaio Correa,Vila Nova,0,3,A
+2016-10-25,Goias,CRB,3,0,H
+2016-10-26,Vasco DA Gama,Avai,0,0,D
+2016-10-28,Criciuma,Londrina,1,1,D
+2016-10-28,Parana,Bragantino,4,1,H
+2016-10-28,Nautico Recife,Atletico Goianiense,2,1,H
+2016-10-28,Joinville,Brasil DE Pelotas,1,1,D
+2016-10-29,Bahia,Ceara,3,1,H
+2016-10-29,Paysandu,Sampaio Correa,2,1,H
+2016-10-29,Tupi,Vila Nova,1,0,H
+2016-11-01,Londrina,Paysandu,0,0,D
+2016-11-01,Luverdense,Criciuma,2,1,H
+2016-11-04,Vila Nova,Bahia,0,1,A
+2016-11-05,Brasil DE Pelotas,Vasco DA Gama,2,1,H
+2016-11-05,Ceara,Tupi,2,1,H
+2016-11-05,Atletico Goianiense,Goias,4,2,H
+2016-11-05,Sampaio Correa,Joinville,1,2,A
+2016-11-05,CRB,Nautico Recife,1,0,H
+2016-11-05,Avai,Parana,1,0,H
+2016-11-05,Bragantino,Oeste,0,0,D
+2016-11-08,Criciuma,Ceara,2,3,A
+2016-11-08,Oeste,Avai,0,0,D
+2016-11-08,Tupi,CRB,3,4,A
+2016-11-08,Vila Nova,Brasil DE Pelotas,3,1,H
+2016-11-08,Bahia,Sampaio Correa,1,0,H
+2016-11-08,Vasco DA Gama,Luverdense,1,1,D
+2016-11-08,Londrina,Atletico Goianiense,2,3,A
+2016-11-08,Paysandu,Parana,1,1,D
+2016-11-08,Nautico Recife,Goias,1,0,H
+2016-11-08,Joinville,Bragantino,1,1,D
+2016-11-11,CRB,Paysandu,0,1,A
+2016-11-11,Goias,Joinville,3,2,H
+2016-11-12,Bragantino,Vasco DA Gama,1,2,A
+2016-11-12,Parana,Criciuma,1,2,A
+2016-11-12,Ceara,Vila Nova,2,3,A
+2016-11-12,Brasil DE Pelotas,Oeste,1,1,D
+2016-11-12,Avai,Nautico Recife,3,0,H
+2016-11-12,Sampaio Correa,Londrina,1,3,A
+2016-11-12,Atletico Goianiense,Tupi,5,3,H
+2016-11-12,Luverdense,Bahia,2,2,D
+2016-11-18,Oeste,Joinville,0,2,A
+2016-11-18,Luverdense,Goias,1,0,H
+2016-11-19,Criciuma,Vasco DA Gama,1,0,H
+2016-11-19,Londrina,Avai,0,1,A
+2016-11-19,Tupi,Nautico Recife,1,4,A
+2016-11-19,Bahia,Bragantino,3,2,H
+2016-11-19,Vila Nova,Paysandu,2,2,D
+2016-11-19,Sampaio Correa,Atletico Goianiense,0,1,A
+2016-11-19,Ceara,Parana,1,1,D
+2016-11-19,Brasil DE Pelotas,CRB,1,0,H
+2016-11-22,Goias,Sampaio Correa,2,1,H
+2016-11-25,Parana,Tupi,0,2,A
+2016-11-25,Paysandu,Criciuma,1,2,A
+2016-11-26,Vasco DA Gama,Ceara,2,1,H
+2016-11-26,Atletico Goianiense,Bahia,2,1,H
+2016-11-26,Avai,Brasil DE Pelotas,1,1,D
+2016-11-26,CRB,Luverdense,3,0,H
+2016-11-26,Nautico Recife,Oeste,0,2,A
+2016-11-26,Bragantino,Londrina,0,1,A
+2016-11-26,Joinville,Vila Nova,4,2,H

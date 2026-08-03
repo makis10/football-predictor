@@ -29,12 +29,33 @@ import numpy as np
 import pandas as pd
 
 HALF_LIFE_DAYS = 540.0          # form recency
-PRIOR_G90      = 0.18           # league-wide outfield goal rate (per 90)
+PRIOR_G90      = 0.18           # fallback when a player's position is unknown
 PRIOR_SOT90    = 0.55
 PRIOR_AST90    = 0.13
 SHRINK_MINUTES = 360.0          # pseudo-minutes of prior evidence (≈4 matches)
 MIN_WEIGHTED_MIN = 90.0         # below this we basically return the prior
 AVG_TEAM_GOALS = 1.35           # reference for assist scaling
+
+# Position-specific priors — the shrinkage pulls every player toward these, so a
+# single flat "outfield" prior handed goalkeepers a striker-ish goal rate. With
+# ~360 pseudo-minutes of prior evidence a keeper who has never scored still came
+# out at ~0.076 g90 (≈6.5% anytime-scorer), and over-primed defenders quietly
+# stole expected goals from the actual forwards in the team_xg normalisation.
+#
+# Measured over player_match_stats (rolling 3-year window, the same span
+# load_player_rates reads). Goalkeepers: 3 goals in 482,509 minutes.
+POSITION_PRIORS: dict[str, tuple[float, float, float]] = {
+    #      g90,    sot90,  ast90
+    "F": (0.3220, 0.9268, 0.1402),
+    "M": (0.1353, 0.4586, 0.1178),
+    "D": (0.0455, 0.1586, 0.0517),
+    "G": (0.0006, 0.0007, 0.0037),
+}
+
+# Positions that never belong in an anytime-scorer / shots-on-target market.
+# Keepers score roughly once per 160,000 minutes; listing one as a "likely
+# scorer" is noise even once the prior above is correct.
+NON_SCORING_POSITIONS = frozenset({"G"})
 
 
 @dataclass
@@ -48,6 +69,7 @@ class PlayerRate:
     exp_minutes: float          # expected minutes next match (recent avg, capped)
     wmin: float                 # weighted minutes of evidence
     apps: int
+    position: str | None = None  # "G"/"D"/"M"/"F" — drives the shrinkage prior
 
 
 def _shrink(weighted_events: float, weighted_minutes: float, prior_per90: float) -> float:
@@ -91,8 +113,8 @@ def load_player_rates(
     """
     from sqlalchemy import bindparam, text
 
-    sql = ("SELECT player_id, player_name, team, match_date, minutes, goals, shots_on, assists "
-           "FROM player_match_stats")
+    sql = ("SELECT player_id, player_name, team, match_date, minutes, goals, shots_on, assists, "
+           "position FROM player_match_stats")
     params: dict = {}
     if teams:
         stmt = text(sql + " WHERE team IN :teams").bindparams(
@@ -106,7 +128,7 @@ def load_player_rates(
 
     club_form = load_club_form(db)
 
-    df = pd.DataFrame(rows, columns=["pid", "player", "team", "date", "min", "g", "sot", "a"])
+    df = pd.DataFrame(rows, columns=["pid", "player", "team", "date", "min", "g", "sot", "a", "pos"])
     df["date"] = pd.to_datetime(df["date"], errors="coerce")
     df = df.dropna(subset=["date"])
     df["min"] = df["min"].fillna(0).clip(lower=0)
@@ -124,17 +146,25 @@ def load_player_rates(
         wast = float((g["a"]   * g["w"]).sum())
         # expected minutes = recency-weighted average minutes, capped at 90
         exp_min = float(min(90.0, (g["min"] * g["w"]).sum() / max(g["w"].sum(), 1e-9)))
-        # Per-player prior = club-season rate when known, else positional constant.
+        # Most recent non-null position — a player's listed role can vary by
+        # fixture, and the latest one best reflects how he is being used now.
+        pos_series = g.sort_values("date")["pos"].dropna()
+        position = str(pos_series.iloc[-1]) if len(pos_series) else None
+        # Per-player prior = club-season rate when known, else the positional
+        # baseline (falling back to the flat constants for unknown positions).
+        base_g, base_sot, base_ast = POSITION_PRIORS.get(
+            position or "", (PRIOR_G90, PRIOR_SOT90, PRIOR_AST90))
         cf = club_form.get(int(pid))
-        prior_g   = cf["g90"]   if cf and cf["g90"]   is not None else PRIOR_G90
-        prior_sot = cf["sot90"] if cf and cf["sot90"] is not None else PRIOR_SOT90
-        prior_ast = cf["ast90"] if cf and cf["ast90"] is not None else PRIOR_AST90
+        prior_g   = cf["g90"]   if cf and cf["g90"]   is not None else base_g
+        prior_sot = cf["sot90"] if cf and cf["sot90"] is not None else base_sot
+        prior_ast = cf["ast90"] if cf and cf["ast90"] is not None else base_ast
         out.setdefault(team, []).append(PlayerRate(
             player_id=int(pid), player=player, team=team,
             g90=_shrink(wg, wmin, prior_g),
             sot90=_shrink(wsot, wmin, prior_sot),
             ast90=_shrink(wast, wmin, prior_ast),
             exp_minutes=exp_min, wmin=wmin, apps=int(len(g)),
+            position=position,
         ))
     return out
 
@@ -223,7 +253,16 @@ def compute_props(
     Goal share: a player's shrunk g90 weighted by expected minutes, normalised
     across the squad, then × team_xg → expected goals this match.
     """
-    pool = [r for r in rates if r.exp_minutes >= min_exp_minutes and r.apps >= min_apps]
+    # Goalkeepers are excluded outright: these are anytime-scorer / shots-on-
+    # target markets, and a keeper in that list is noise. Keeping them in also
+    # distorted the normalisation below, since their share of `tot` was taken
+    # straight out of the forwards' expected goals.
+    pool = [
+        r for r in rates
+        if r.exp_minutes >= min_exp_minutes
+        and r.apps >= min_apps
+        and r.position not in NON_SCORING_POSITIONS
+    ]
     if not pool:
         return []
 

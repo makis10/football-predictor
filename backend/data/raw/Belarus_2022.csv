@@ -4,11 +4,11 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2022-03-19,Neman,Torpedo Zhodino,2,0,H
 2022-03-19,Dinamo Brest,Shakhter Soligorsk,1,1,D
 2022-03-19,FC Isloch Minsk R.,FC Slutsk,1,2,A
-2022-03-20,Arsenal,FC Gomel,1,2,A
+2022-03-20,Arsenal Dzyarzhynsk,FC Gomel,1,2,A
 2022-03-20,Belshina,FC Dnepr Mogilev,0,0,D
 2022-03-20,Slavia Mozyr,Bate Borisov,0,3,A
 2022-04-02,FC Slutsk,Neman,0,0,D
-2022-04-02,Dinamo Minsk,Arsenal,1,1,D
+2022-04-02,Dinamo Minsk,Arsenal Dzyarzhynsk,1,1,D
 2022-04-02,Belshina,Bate Borisov,0,3,A
 2022-04-02,Dinamo Brest,FC Isloch Minsk R.,2,2,D
 2022-04-03,FC Vitebsk,FC Minsk,1,1,D
@@ -21,17 +21,17 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2022-04-10,Neman,Dinamo Brest,2,1,H
 2022-04-10,FC Dnepr Mogilev,Bate Borisov,0,3,A
 2022-04-10,FC Isloch Minsk R.,Shakhter Soligorsk,1,1,D
-2022-04-11,Arsenal,FC Vitebsk,0,0,D
+2022-04-11,Arsenal Dzyarzhynsk,FC Vitebsk,0,0,D
 2022-04-11,Belshina,FC Gomel,2,3,A
 2022-04-15,FC Slutsk,FC Minsk,2,4,A
 2022-04-16,FC Isloch Minsk R.,Neman,1,1,D
-2022-04-16,Torpedo Zhodino,Arsenal,1,0,H
+2022-04-16,Torpedo Zhodino,Arsenal Dzyarzhynsk,1,0,H
 2022-04-16,Shakhter Soligorsk,Bate Borisov,0,1,A
 2022-04-16,Dinamo Minsk,Belshina,0,0,D
 2022-04-17,FC Vitebsk,Slavia Mozyr,0,3,A
 2022-04-17,FC Gomel,FC Dnepr Mogilev,3,1,H
 2022-04-17,Dinamo Brest,FC Energetik-Bgu Minsk,1,2,A
-2022-04-21,Arsenal,FC Slutsk,1,1,D
+2022-04-21,Arsenal Dzyarzhynsk,FC Slutsk,1,1,D
 2022-04-22,Belshina,FC Vitebsk,2,2,D
 2022-04-22,Neman,Shakhter Soligorsk,1,1,D
 2022-04-22,Bate Borisov,FC Gomel,2,1,H
@@ -42,12 +42,12 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2022-04-30,Torpedo Zhodino,Belshina,1,3,A
 2022-04-30,FC Slutsk,Slavia Mozyr,1,0,H
 2022-05-01,FC Isloch Minsk R.,FC Minsk,2,0,H
-2022-05-01,Dinamo Brest,Arsenal,0,0,D
+2022-05-01,Dinamo Brest,Arsenal Dzyarzhynsk,0,0,D
 2022-05-02,FC Vitebsk,FC Dnepr Mogilev,2,1,H
 2022-05-02,Neman,FC Energetik-Bgu Minsk,1,4,A
 2022-05-02,Shakhter Soligorsk,FC Gomel,1,0,H
 2022-05-02,Dinamo Minsk,Bate Borisov,2,2,D
-2022-05-07,Arsenal,FC Isloch Minsk R.,1,3,A
+2022-05-07,Arsenal Dzyarzhynsk,FC Isloch Minsk R.,1,3,A
 2022-05-07,FC Dnepr Mogilev,Torpedo Zhodino,0,1,A
 2022-05-07,Belshina,FC Slutsk,0,2,A
 2022-05-07,Slavia Mozyr,Dinamo Brest,3,1,H
@@ -62,14 +62,14 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2022-05-14,Shakhter Soligorsk,Dinamo Minsk,1,0,H
 2022-05-15,FC Isloch Minsk R.,Slavia Mozyr,0,2,A
 2022-05-15,FC Slutsk,FC Dnepr Mogilev,2,2,D
-2022-05-15,Neman,Arsenal,2,0,H
+2022-05-15,Neman,Arsenal Dzyarzhynsk,2,0,H
 2022-05-20,FC Minsk,Shakhter Soligorsk,1,0,H
-2022-05-20,Arsenal,FC Energetik-Bgu Minsk,0,2,A
+2022-05-20,Arsenal Dzyarzhynsk,FC Energetik-Bgu Minsk,0,2,A
 2022-05-21,Belshina,FC Isloch Minsk R.,2,1,H
 2022-05-22,FC Dnepr Mogilev,Dinamo Brest,2,0,H
 2022-05-22,Slavia Mozyr,Neman,1,1,D
 2022-05-22,Dinamo Minsk,FC Vitebsk,2,1,H
-2022-05-26,FC Minsk,Arsenal,2,0,H
+2022-05-26,FC Minsk,Arsenal Dzyarzhynsk,2,0,H
 2022-05-27,FC Isloch Minsk R.,FC Dnepr Mogilev,3,2,H
 2022-05-27,FC Slutsk,FC Gomel,2,2,D
 2022-05-28,Dinamo Brest,Bate Borisov,0,3,A
@@ -82,7 +82,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2022-06-18,FC Dnepr Mogilev,Neman,1,3,A
 2022-06-18,Bate Borisov,FC Isloch Minsk R.,0,1,A
 2022-06-18,Dinamo Minsk,FC Slutsk,1,1,D
-2022-06-19,Arsenal,Shakhter Soligorsk,1,2,A
+2022-06-19,Arsenal Dzyarzhynsk,Shakhter Soligorsk,1,2,A
 2022-06-19,FC Gomel,Dinamo Brest,1,0,H
 2022-06-19,Slavia Mozyr,FC Minsk,4,2,H
 2022-06-25,FC Isloch Minsk R.,FC Gomel,1,1,D
@@ -91,11 +91,11 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2022-06-25,Neman,Bate Borisov,0,0,D
 2022-06-26,FC Minsk,Belshina,2,4,A
 2022-06-26,Dinamo Brest,Dinamo Minsk,1,3,A
-2022-06-26,Arsenal,Slavia Mozyr,3,2,H
+2022-06-26,Arsenal Dzyarzhynsk,Slavia Mozyr,3,2,H
 2022-06-27,FC Energetik-Bgu Minsk,FC Dnepr Mogilev,1,1,D
 2022-06-29,Bate Borisov,FC Slutsk,4,0,H
 2022-06-29,FC Gomel,Torpedo Zhodino,1,0,H
-2022-07-02,Belshina,Arsenal,1,0,H
+2022-07-02,Belshina,Arsenal Dzyarzhynsk,1,0,H
 2022-07-02,Dinamo Minsk,FC Isloch Minsk R.,1,2,A
 2022-07-03,FC Vitebsk,Dinamo Brest,0,1,A
 2022-07-03,Bate Borisov,FC Energetik-Bgu Minsk,1,1,D
@@ -106,9 +106,9 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2022-07-08,Slavia Mozyr,Belshina,2,0,H
 2022-07-09,FC Energetik-Bgu Minsk,FC Gomel,0,0,D
 2022-07-09,FC Minsk,Bate Borisov,2,2,D
-2022-07-10,Arsenal,FC Dnepr Mogilev,1,0,H
+2022-07-10,Arsenal Dzyarzhynsk,FC Dnepr Mogilev,1,0,H
 2022-07-10,Dinamo Brest,Torpedo Zhodino,0,1,A
-2022-07-15,Bate Borisov,Arsenal,1,2,A
+2022-07-15,Bate Borisov,Arsenal Dzyarzhynsk,1,2,A
 2022-07-15,FC Gomel,FC Minsk,0,3,A
 2022-07-16,FC Vitebsk,Neman,2,2,D
 2022-07-16,Torpedo Zhodino,FC Isloch Minsk R.,0,1,A
@@ -121,7 +121,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2022-08-06,FC Slutsk,FC Isloch Minsk R.,2,4,A
 2022-08-06,Torpedo Zhodino,Neman,2,2,D
 2022-08-06,FC Dnepr Mogilev,Belshina,4,3,H
-2022-08-07,FC Gomel,Arsenal,4,1,H
+2022-08-07,FC Gomel,Arsenal Dzyarzhynsk,4,1,H
 2022-08-07,Bate Borisov,Slavia Mozyr,4,0,H
 2022-08-07,Dinamo Minsk,FC Minsk,3,1,H
 2022-08-12,Torpedo Zhodino,FC Energetik-Bgu Minsk,4,0,H
@@ -130,17 +130,17 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2022-08-13,FC Minsk,FC Vitebsk,2,0,H
 2022-08-13,Slavia Mozyr,FC Gomel,0,1,A
 2022-08-14,Bate Borisov,Belshina,2,2,D
-2022-08-14,Arsenal,Dinamo Minsk,0,1,A
+2022-08-14,Arsenal Dzyarzhynsk,Dinamo Minsk,0,1,A
 2022-08-15,FC Dnepr Mogilev,Shakhter Soligorsk,0,7,A
 2022-08-19,Torpedo Zhodino,FC Minsk,1,1,D
 2022-08-20,FC Slutsk,FC Energetik-Bgu Minsk,1,2,A
-2022-08-20,FC Vitebsk,Arsenal,3,0,H
+2022-08-20,FC Vitebsk,Arsenal Dzyarzhynsk,3,0,H
 2022-08-20,FC Gomel,Belshina,0,3,A
 2022-08-21,Bate Borisov,FC Dnepr Mogilev,2,1,H
 2022-08-21,Dinamo Minsk,Slavia Mozyr,0,0,D
 2022-08-21,Shakhter Soligorsk,FC Isloch Minsk R.,1,0,H
 2022-08-22,Dinamo Brest,Neman,0,0,D
-2022-08-26,Arsenal,Torpedo Zhodino,1,2,A
+2022-08-26,Arsenal Dzyarzhynsk,Torpedo Zhodino,1,2,A
 2022-08-27,FC Minsk,FC Slutsk,1,0,H
 2022-08-27,FC Energetik-Bgu Minsk,Dinamo Brest,0,0,D
 2022-08-27,Belshina,Dinamo Minsk,0,0,D
@@ -149,7 +149,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2022-08-28,FC Dnepr Mogilev,FC Gomel,0,4,A
 2022-08-28,Bate Borisov,Shakhter Soligorsk,0,2,A
 2022-08-31,Neman,Dinamo Minsk,2,3,A
-2022-09-02,FC Slutsk,Arsenal,1,0,H
+2022-09-02,FC Slutsk,Arsenal Dzyarzhynsk,1,0,H
 2022-09-02,Dinamo Brest,FC Minsk,3,1,H
 2022-09-03,FC Isloch Minsk R.,FC Energetik-Bgu Minsk,2,3,A
 2022-09-03,FC Vitebsk,Belshina,2,2,D
@@ -157,7 +157,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2022-09-04,Dinamo Minsk,FC Dnepr Mogilev,4,0,H
 2022-09-04,Shakhter Soligorsk,Neman,2,2,D
 2022-09-04,FC Gomel,Bate Borisov,0,1,A
-2022-09-09,Arsenal,Dinamo Brest,0,2,A
+2022-09-09,Arsenal Dzyarzhynsk,Dinamo Brest,0,2,A
 2022-09-09,Slavia Mozyr,FC Slutsk,1,1,D
 2022-09-10,FC Minsk,FC Isloch Minsk R.,1,5,A
 2022-09-10,FC Dnepr Mogilev,FC Vitebsk,2,1,H
@@ -169,7 +169,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2022-09-16,FC Vitebsk,Bate Borisov,1,1,D
 2022-09-16,Shakhter Soligorsk,FC Energetik-Bgu Minsk,0,1,A
 2022-09-17,FC Slutsk,Belshina,0,0,D
-2022-09-17,FC Isloch Minsk R.,Arsenal,2,1,H
+2022-09-17,FC Isloch Minsk R.,Arsenal Dzyarzhynsk,2,1,H
 2022-09-17,Dinamo Brest,Slavia Mozyr,1,3,A
 2022-09-18,Torpedo Zhodino,FC Dnepr Mogilev,1,0,H
 2022-09-18,Neman,FC Minsk,1,1,D
@@ -178,7 +178,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2022-10-01,Belshina,Dinamo Brest,2,2,D
 2022-10-01,Dinamo Minsk,Shakhter Soligorsk,1,0,H
 2022-10-01,Bate Borisov,Torpedo Zhodino,1,1,D
-2022-10-02,Arsenal,Neman,1,1,D
+2022-10-02,Arsenal Dzyarzhynsk,Neman,1,1,D
 2022-10-02,FC Minsk,FC Energetik-Bgu Minsk,0,0,D
 2022-10-02,Slavia Mozyr,FC Isloch Minsk R.,0,1,A
 2022-10-07,Dinamo Brest,FC Dnepr Mogilev,4,0,H
@@ -186,10 +186,10 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2022-10-08,Torpedo Zhodino,FC Gomel,1,1,D
 2022-10-08,FC Vitebsk,Dinamo Minsk,0,0,D
 2022-10-08,Shakhter Soligorsk,FC Minsk,2,1,H
-2022-10-09,FC Energetik-Bgu Minsk,Arsenal,0,1,A
+2022-10-09,FC Energetik-Bgu Minsk,Arsenal Dzyarzhynsk,0,1,A
 2022-10-09,FC Isloch Minsk R.,Belshina,2,0,H
 2022-10-09,Neman,Slavia Mozyr,2,0,H
-2022-10-14,Arsenal,FC Minsk,0,0,D
+2022-10-14,Arsenal Dzyarzhynsk,FC Minsk,0,0,D
 2022-10-14,Dinamo Minsk,Torpedo Zhodino,2,2,D
 2022-10-14,FC Vitebsk,Shakhter Soligorsk,0,5,A
 2022-10-14,Slavia Mozyr,FC Energetik-Bgu Minsk,0,1,A
@@ -199,13 +199,13 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2022-10-15,Bate Borisov,Dinamo Brest,4,1,H
 2022-10-18,FC Minsk,Slavia Mozyr,5,0,H
 2022-10-18,Torpedo Zhodino,FC Vitebsk,1,0,H
-2022-10-18,Shakhter Soligorsk,Arsenal,3,0,H
+2022-10-18,Shakhter Soligorsk,Arsenal Dzyarzhynsk,3,0,H
 2022-10-19,FC Energetik-Bgu Minsk,Belshina,3,1,H
 2022-10-19,FC Slutsk,Dinamo Minsk,0,5,A
 2022-10-19,Dinamo Brest,FC Gomel,1,1,D
 2022-10-20,FC Isloch Minsk R.,Bate Borisov,0,0,D
 2022-10-20,Neman,FC Dnepr Mogilev,2,0,H
-2022-10-22,Slavia Mozyr,Arsenal,1,1,D
+2022-10-22,Slavia Mozyr,Arsenal Dzyarzhynsk,1,1,D
 2022-10-23,Belshina,FC Minsk,2,2,D
 2022-10-23,Dinamo Minsk,Dinamo Brest,0,0,D
 2022-10-23,FC Vitebsk,FC Slutsk,0,1,A
@@ -219,13 +219,13 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2022-10-29,Shakhter Soligorsk,Slavia Mozyr,1,1,D
 2022-10-30,FC Slutsk,Torpedo Zhodino,1,1,D
 2022-10-30,FC Minsk,FC Dnepr Mogilev,1,0,H
-2022-10-30,Arsenal,Belshina,0,0,D
+2022-10-30,Arsenal Dzyarzhynsk,Belshina,0,0,D
 2022-10-30,Neman,FC Gomel,3,0,H
 2022-11-02,Dinamo Minsk,FC Energetik-Bgu Minsk,1,4,A
 2022-11-02,Shakhter Soligorsk,Dinamo Brest,2,0,H
 2022-11-06,FC Slutsk,Shakhter Soligorsk,0,1,A
 2022-11-06,FC Vitebsk,FC Isloch Minsk R.,1,3,A
-2022-11-06,FC Dnepr Mogilev,Arsenal,0,1,A
+2022-11-06,FC Dnepr Mogilev,Arsenal Dzyarzhynsk,0,1,A
 2022-11-06,Torpedo Zhodino,Dinamo Brest,0,0,D
 2022-11-06,Bate Borisov,FC Minsk,3,2,H
 2022-11-06,FC Gomel,FC Energetik-Bgu Minsk,1,2,A
@@ -238,6 +238,6 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2022-11-12,Shakhter Soligorsk,Belshina,4,1,H
 2022-11-12,Slavia Mozyr,FC Dnepr Mogilev,5,0,H
 2022-11-12,FC Energetik-Bgu Minsk,Dinamo Minsk,1,3,A
-2022-11-12,Arsenal,Bate Borisov,0,2,A
-2022-11-16,Arsenal,ML Vitebsk,3,2,H
-2022-11-20,ML Vitebsk,Arsenal,3,1,H
+2022-11-12,Arsenal Dzyarzhynsk,Bate Borisov,0,2,A
+2022-11-16,Arsenal Dzyarzhynsk,ML Vitebsk,3,2,H
+2022-11-20,ML Vitebsk,Arsenal Dzyarzhynsk,3,1,H

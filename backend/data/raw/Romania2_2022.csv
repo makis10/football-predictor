@@ -1,0 +1,264 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2022-08-04,Progresul Spartac,Dinamo Bucuresti,0,1,A
+2022-08-05,Unirea Slobozia,Minaur Baia Mare,3,0,H
+2022-08-06,Concordia,Slatina,0,3,A
+2022-08-06,ACS Sirineasa,Dumbravita,0,1,A
+2022-08-06,SCM Gloria Buzau,Ripensia Timisoara,1,0,H
+2022-08-06,Unirea Dej,Csikszereda,2,1,H
+2022-08-06,Viitorul Selimbar,Brasov Steagul Renaste,1,0,H
+2022-08-06,Otelul,Politehnica Iasi,0,0,D
+2022-08-06,FC Politehnica Timisoara,Unirea Constanta,1,0,H
+2022-08-09,CSA Steaua Bucuresti,Metaloglobus,1,1,D
+2022-08-12,Csikszereda,Concordia,0,1,A
+2022-08-13,Politehnica Iasi,ACS Sirineasa,2,0,H
+2022-08-13,Ripensia Timisoara,Unirea Slobozia,1,2,A
+2022-08-13,Viitorul Selimbar,FC Politehnica Timisoara,4,0,H
+2022-08-13,Dumbravita,Unirea Dej,1,2,A
+2022-08-13,Unirea Constanta,Progresul Spartac,0,3,A
+2022-08-13,Metaloglobus,SCM Gloria Buzau,1,3,A
+2022-08-14,Brasov Steagul Renaste,Minaur Baia Mare,1,1,D
+2022-08-15,Slatina,CSA Steaua Bucuresti,1,2,A
+2022-08-16,Dinamo Bucuresti,Otelul,1,3,A
+2022-08-20,Concordia,Dumbravita,2,2,D
+2022-08-20,FC Politehnica Timisoara,Brasov Steagul Renaste,0,0,D
+2022-08-20,Minaur Baia Mare,Ripensia Timisoara,1,1,D
+2022-08-20,Unirea Dej,Politehnica Iasi,1,2,A
+2022-08-20,Unirea Slobozia,Metaloglobus,1,0,H
+2022-08-20,SCM Gloria Buzau,Slatina,1,1,D
+2022-08-20,Progresul Spartac,Viitorul Selimbar,1,2,A
+2022-08-20,ACS Sirineasa,Dinamo Bucuresti,2,0,H
+2022-08-21,Otelul,Unirea Constanta,3,2,H
+2022-08-23,CSA Steaua Bucuresti,Csikszereda,0,4,A
+2022-08-26,Viitorul Selimbar,Otelul,1,1,D
+2022-08-27,Politehnica Iasi,Concordia,2,1,H
+2022-08-27,Metaloglobus,Minaur Baia Mare,0,1,A
+2022-08-27,FC Politehnica Timisoara,Progresul Spartac,0,1,A
+2022-08-27,Slatina,Unirea Slobozia,1,1,D
+2022-08-27,Brasov Steagul Renaste,Ripensia Timisoara,1,0,H
+2022-08-27,Dinamo Bucuresti,Unirea Dej,2,3,A
+2022-08-27,Unirea Constanta,ACS Sirineasa,2,1,H
+2022-08-28,Csikszereda,SCM Gloria Buzau,3,2,H
+2022-08-29,Dumbravita,CSA Steaua Bucuresti,0,3,A
+2022-09-02,CSA Steaua Bucuresti,Politehnica Iasi,2,1,H
+2022-09-03,Ripensia Timisoara,Metaloglobus,2,1,H
+2022-09-03,ACS Sirineasa,Viitorul Selimbar,1,0,H
+2022-09-03,Minaur Baia Mare,Slatina,2,1,H
+2022-09-03,Progresul Spartac,Brasov Steagul Renaste,2,1,H
+2022-09-03,Unirea Dej,Unirea Constanta,2,1,H
+2022-09-03,Unirea Slobozia,Csikszereda,0,1,A
+2022-09-03,Otelul,FC Politehnica Timisoara,1,0,H
+2022-09-04,Concordia,Dinamo Bucuresti,0,1,A
+2022-09-05,SCM Gloria Buzau,Dumbravita,2,1,H
+2022-09-09,Progresul Spartac,Otelul,0,0,D
+2022-09-09,Dinamo Bucuresti,CSA Steaua Bucuresti,1,2,A
+2022-09-10,Politehnica Iasi,SCM Gloria Buzau,1,0,H
+2022-09-10,FC Politehnica Timisoara,ACS Sirineasa,0,1,A
+2022-09-10,Slatina,Ripensia Timisoara,3,0,H
+2022-09-10,Viitorul Selimbar,Unirea Dej,1,1,D
+2022-09-10,Dumbravita,Unirea Slobozia,2,4,A
+2022-09-10,Unirea Constanta,Concordia,0,3,A
+2022-09-10,Brasov Steagul Renaste,Metaloglobus,1,0,H
+2022-09-11,Csikszereda,Minaur Baia Mare,3,0,H
+2022-09-17,Concordia,Viitorul Selimbar,0,1,A
+2022-09-17,ACS Sirineasa,Progresul Spartac,1,0,H
+2022-09-17,Metaloglobus,Slatina,0,1,A
+2022-09-17,Minaur Baia Mare,Dumbravita,3,4,A
+2022-09-17,Unirea Dej,FC Politehnica Timisoara,2,2,D
+2022-09-18,Ripensia Timisoara,Csikszereda,0,0,D
+2022-09-18,SCM Gloria Buzau,Dinamo Bucuresti,2,1,H
+2022-09-18,Otelul,Brasov Steagul Renaste,2,1,H
+2022-09-18,Unirea Slobozia,Politehnica Iasi,0,0,D
+2022-10-01,Politehnica Iasi,Minaur Baia Mare,2,0,H
+2022-10-01,Progresul Spartac,Unirea Dej,2,2,D
+2022-10-01,Dumbravita,Ripensia Timisoara,1,0,H
+2022-10-01,Viitorul Selimbar,CSA Steaua Bucuresti,1,1,D
+2022-10-02,FC Politehnica Timisoara,Concordia,1,4,A
+2022-10-02,Csikszereda,Metaloglobus,2,0,H
+2022-10-02,Otelul,ACS Sirineasa,2,1,H
+2022-10-02,Brasov Steagul Renaste,Slatina,0,0,D
+2022-10-03,Unirea Constanta,SCM Gloria Buzau,3,1,H
+2022-10-04,Dinamo Bucuresti,Unirea Slobozia,1,0,H
+2022-10-08,Concordia,Progresul Spartac,2,0,H
+2022-10-08,Ripensia Timisoara,Politehnica Iasi,3,1,H
+2022-10-08,ACS Sirineasa,Brasov Steagul Renaste,2,3,A
+2022-10-08,Metaloglobus,Dumbravita,1,0,H
+2022-10-08,Slatina,Csikszereda,2,0,H
+2022-10-08,Unirea Slobozia,Unirea Constanta,3,0,H
+2022-10-08,CSA Steaua Bucuresti,FC Politehnica Timisoara,3,1,H
+2022-10-08,Unirea Dej,Otelul,2,0,H
+2022-10-09,Minaur Baia Mare,Dinamo Bucuresti,1,1,D
+2022-10-11,SCM Gloria Buzau,Viitorul Selimbar,1,0,H
+2022-10-14,Brasov Steagul Renaste,Csikszereda,1,1,D
+2022-10-15,Politehnica Iasi,Metaloglobus,1,0,H
+2022-10-15,ACS Sirineasa,Unirea Dej,1,2,A
+2022-10-15,Viitorul Selimbar,Unirea Slobozia,1,1,D
+2022-10-15,Dumbravita,Slatina,2,1,H
+2022-10-15,Unirea Constanta,Minaur Baia Mare,1,0,H
+2022-10-15,Dinamo Bucuresti,Ripensia Timisoara,1,0,H
+2022-10-16,FC Politehnica Timisoara,SCM Gloria Buzau,1,1,D
+2022-10-17,Progresul Spartac,CSA Steaua Bucuresti,0,3,A
+2022-10-17,Otelul,Concordia,1,0,H
+2022-10-21,Slatina,Politehnica Iasi,1,0,H
+2022-10-22,Concordia,ACS Sirineasa,2,0,H
+2022-10-22,Ripensia Timisoara,Unirea Constanta,4,0,H
+2022-10-22,Csikszereda,Dumbravita,3,0,H
+2022-10-22,Unirea Dej,Brasov Steagul Renaste,2,1,H
+2022-10-22,Metaloglobus,Dinamo Bucuresti,1,2,A
+2022-10-23,Minaur Baia Mare,Viitorul Selimbar,3,0,H
+2022-10-23,Unirea Slobozia,FC Politehnica Timisoara,0,0,D
+2022-10-24,SCM Gloria Buzau,Progresul Spartac,0,0,D
+2022-10-25,CSA Steaua Bucuresti,Otelul,1,0,H
+2022-10-27,Dinamo Bucuresti,Slatina,0,0,D
+2022-10-29,Politehnica Iasi,Csikszereda,0,0,D
+2022-10-29,FC Politehnica Timisoara,Minaur Baia Mare,1,1,D
+2022-10-29,Progresul Spartac,Unirea Slobozia,1,4,A
+2022-10-29,Viitorul Selimbar,Ripensia Timisoara,0,0,D
+2022-10-29,Unirea Constanta,Metaloglobus,1,3,A
+2022-10-29,ACS Sirineasa,CSA Steaua Bucuresti,4,3,H
+2022-10-29,Unirea Dej,Concordia,1,1,D
+2022-10-30,Brasov Steagul Renaste,Dumbravita,4,0,H
+2022-11-01,Otelul,SCM Gloria Buzau,1,1,D
+2022-11-03,Csikszereda,Dinamo Bucuresti,0,0,D
+2022-11-05,Concordia,Brasov Steagul Renaste,0,1,A
+2022-11-05,Ripensia Timisoara,FC Politehnica Timisoara,1,0,H
+2022-11-05,Metaloglobus,Viitorul Selimbar,2,0,H
+2022-11-05,Minaur Baia Mare,Progresul Spartac,2,2,D
+2022-11-05,Slatina,Unirea Constanta,0,1,A
+2022-11-05,Dumbravita,Politehnica Iasi,0,3,A
+2022-11-05,Unirea Slobozia,Otelul,1,0,H
+2022-11-06,SCM Gloria Buzau,ACS Sirineasa,3,1,H
+2022-11-07,CSA Steaua Bucuresti,Unirea Dej,2,0,H
+2022-11-11,Concordia,CSA Steaua Bucuresti,0,1,A
+2022-11-12,ACS Sirineasa,Unirea Slobozia,0,4,A
+2022-11-12,FC Politehnica Timisoara,Metaloglobus,1,2,A
+2022-11-12,Progresul Spartac,Ripensia Timisoara,1,1,D
+2022-11-12,Unirea Dej,SCM Gloria Buzau,2,3,A
+2022-11-12,Viitorul Selimbar,Slatina,0,0,D
+2022-11-12,Unirea Constanta,Csikszereda,1,2,A
+2022-11-12,Brasov Steagul Renaste,Politehnica Iasi,2,2,D
+2022-11-13,Dinamo Bucuresti,Dumbravita,4,1,H
+2022-11-15,Otelul,Minaur Baia Mare,1,0,H
+2022-11-25,SCM Gloria Buzau,Concordia,0,1,A
+2022-11-26,Metaloglobus,Progresul Spartac,3,0,H
+2022-11-26,Minaur Baia Mare,ACS Sirineasa,1,2,A
+2022-11-26,Slatina,FC Politehnica Timisoara,0,0,D
+2022-11-26,Dumbravita,Unirea Constanta,2,0,H
+2022-11-26,Unirea Slobozia,Unirea Dej,1,1,D
+2022-11-26,Politehnica Iasi,Dinamo Bucuresti,1,0,H
+2022-11-27,Ripensia Timisoara,Otelul,0,1,A
+2022-11-27,CSA Steaua Bucuresti,Brasov Steagul Renaste,0,1,A
+2022-11-28,Csikszereda,Viitorul Selimbar,1,2,A
+2022-12-01,CSA Steaua Bucuresti,SCM Gloria Buzau,1,1,D
+2022-12-02,Concordia,Unirea Slobozia,1,0,H
+2022-12-03,ACS Sirineasa,Ripensia Timisoara,3,1,H
+2022-12-03,FC Politehnica Timisoara,Csikszereda,2,1,H
+2022-12-03,Otelul,Metaloglobus,3,0,H
+2022-12-03,Progresul Spartac,Slatina,1,1,D
+2022-12-03,Unirea Dej,Minaur Baia Mare,1,1,D
+2022-12-03,Viitorul Selimbar,Dumbravita,0,3,A
+2022-12-03,Unirea Constanta,Politehnica Iasi,1,2,A
+2022-12-03,Brasov Steagul Renaste,Dinamo Bucuresti,0,2,A
+2023-02-23,SCM Gloria Buzau,Brasov Steagul Renaste,1,1,D
+2023-02-24,Unirea Slobozia,CSA Steaua Bucuresti,2,2,D
+2023-02-25,Politehnica Iasi,Viitorul Selimbar,4,1,H
+2023-02-25,Ripensia Timisoara,Unirea Dej,1,2,A
+2023-02-25,Metaloglobus,ACS Sirineasa,0,0,D
+2023-02-25,Csikszereda,Progresul Spartac,2,2,D
+2023-02-25,Dumbravita,FC Politehnica Timisoara,3,1,H
+2023-02-25,Slatina,Otelul,0,0,D
+2023-02-26,Minaur Baia Mare,Concordia,0,1,A
+2023-02-27,Dinamo Bucuresti,Unirea Constanta,6,0,H
+2023-03-03,Otelul,Csikszereda,1,0,H
+2023-03-04,Concordia,Ripensia Timisoara,2,1,H
+2023-03-04,ACS Sirineasa,Slatina,0,1,A
+2023-03-04,Progresul Spartac,Dumbravita,0,0,D
+2023-03-04,Brasov Steagul Renaste,Unirea Constanta,5,2,H
+2023-03-04,Unirea Dej,Metaloglobus,1,1,D
+2023-03-04,Viitorul Selimbar,Dinamo Bucuresti,1,2,A
+2023-03-04,FC Politehnica Timisoara,Politehnica Iasi,1,3,A
+2023-03-05,CSA Steaua Bucuresti,Minaur Baia Mare,3,0,H
+2023-03-07,SCM Gloria Buzau,Unirea Slobozia,3,1,H
+2023-03-12,Dinamo Bucuresti,FC Politehnica Timisoara,1,1,D
+2023-03-12,Politehnica Iasi,Progresul Spartac,3,1,H
+2023-03-12,Ripensia Timisoara,CSA Steaua Bucuresti,0,2,A
+2023-03-12,Metaloglobus,Concordia,2,1,H
+2023-03-12,Csikszereda,ACS Sirineasa,1,2,A
+2023-03-12,Minaur Baia Mare,SCM Gloria Buzau,1,1,D
+2023-03-12,Slatina,Unirea Dej,1,1,D
+2023-03-12,Unirea Slobozia,Brasov Steagul Renaste,2,2,D
+2023-03-12,Dumbravita,Otelul,1,1,D
+2023-03-12,Unirea Constanta,Viitorul Selimbar,0,3,A
+2023-03-16,CSA Steaua Bucuresti,Unirea Dej,3,0,H
+2023-03-18,Ripensia Timisoara,Concordia,1,2,A
+2023-03-18,Csikszereda,Slatina,2,0,H
+2023-03-18,Minaur Baia Mare,FC Politehnica Timisoara,2,1,H
+2023-03-18,Unirea Slobozia,Viitorul Selimbar,2,3,A
+2023-03-18,Unirea Constanta,Dumbravita,0,2,A
+2023-03-18,Brasov Steagul Renaste,ACS Sirineasa,3,1,H
+2023-03-19,Dinamo Bucuresti,SCM Gloria Buzau,1,1,D
+2023-03-19,Otelul,Politehnica Iasi,1,2,A
+2023-03-30,Otelul,CSA Steaua Bucuresti,3,2,H
+2023-03-31,Politehnica Iasi,SCM Gloria Buzau,1,1,D
+2023-04-01,ACS Sirineasa,Unirea Constanta,7,2,H
+2023-04-01,Metaloglobus,Minaur Baia Mare,0,0,D
+2023-04-01,Progresul Spartac,Brasov Steagul Renaste,1,4,A
+2023-04-01,Slatina,Unirea Slobozia,0,0,D
+2023-04-01,Dumbravita,Ripensia Timisoara,2,0,H
+2023-04-02,FC Politehnica Timisoara,Csikszereda,2,1,H
+2023-04-02,Unirea Dej,Dinamo Bucuresti,0,3,A
+2023-04-07,Dinamo Bucuresti,Otelul,3,0,H
+2023-04-08,Concordia,Dumbravita,3,1,H
+2023-04-08,Ripensia Timisoara,ACS Sirineasa,1,1,D
+2023-04-08,Csikszereda,Metaloglobus,2,1,H
+2023-04-08,Unirea Slobozia,FC Politehnica Timisoara,1,2,A
+2023-04-08,Viitorul Selimbar,Slatina,2,0,H
+2023-04-08,Unirea Constanta,Progresul Spartac,0,9,A
+2023-04-08,SCM Gloria Buzau,Unirea Dej,0,0,D
+2023-04-11,CSA Steaua Bucuresti,Politehnica Iasi,2,2,D
+2023-04-13,Otelul,SCM Gloria Buzau,1,0,H
+2023-04-14,ACS Sirineasa,Concordia,1,0,H
+2023-04-14,Metaloglobus,Unirea Slobozia,3,3,D
+2023-04-14,FC Politehnica Timisoara,Viitorul Selimbar,0,1,A
+2023-04-14,Minaur Baia Mare,Csikszereda,1,1,D
+2023-04-14,Progresul Spartac,Ripensia Timisoara,1,0,H
+2023-04-14,Brasov Steagul Renaste,Unirea Constanta,9,0,H
+2023-04-15,Politehnica Iasi,Unirea Dej,0,0,D
+2023-04-18,CSA Steaua Bucuresti,Dinamo Bucuresti,2,0,H
+2023-04-21,Unirea Dej,Otelul,0,1,A
+2023-04-22,Concordia,Progresul Spartac,1,0,H
+2023-04-22,Ripensia Timisoara,Brasov Steagul Renaste,0,3,A
+2023-04-22,Slatina,FC Politehnica Timisoara,1,0,H
+2023-04-22,Unirea Slobozia,Minaur Baia Mare,0,0,D
+2023-04-22,Viitorul Selimbar,Metaloglobus,1,2,A
+2023-04-22,Dumbravita,ACS Sirineasa,4,0,H
+2023-04-22,SCM Gloria Buzau,CSA Steaua Bucuresti,1,0,H
+2023-04-25,Dinamo Bucuresti,Politehnica Iasi,1,3,A
+2023-04-29,Metaloglobus,Slatina,1,0,H
+2023-04-29,Csikszereda,Unirea Slobozia,3,1,H
+2023-04-29,Minaur Baia Mare,Viitorul Selimbar,0,1,A
+2023-04-29,Progresul Spartac,Dumbravita,3,2,H
+2023-04-29,Unirea Constanta,Ripensia Timisoara,2,0,H
+2023-04-29,Brasov Steagul Renaste,Concordia,2,2,D
+2023-04-29,Unirea Dej,CSA Steaua Bucuresti,1,1,D
+2023-05-01,SCM Gloria Buzau,Dinamo Bucuresti,2,2,D
+2023-05-02,Politehnica Iasi,Otelul,2,0,H
+2023-05-06,Concordia,Unirea Constanta,0,1,A
+2023-05-06,ACS Sirineasa,Progresul Spartac,0,1,A
+2023-05-06,FC Politehnica Timisoara,Metaloglobus,0,5,A
+2023-05-06,Slatina,Minaur Baia Mare,1,0,H
+2023-05-06,Viitorul Selimbar,Csikszereda,1,3,A
+2023-05-06,Dumbravita,Brasov Steagul Renaste,1,2,A
+2023-05-06,Dinamo Bucuresti,Unirea Dej,0,0,D
+2023-05-07,SCM Gloria Buzau,Politehnica Iasi,1,1,D
+2023-05-07,CSA Steaua Bucuresti,Otelul,1,1,D
+2023-05-10,Politehnica Iasi,CSA Steaua Bucuresti,5,1,H
+2023-05-11,Unirea Dej,SCM Gloria Buzau,1,0,H
+2023-05-11,Otelul,Dinamo Bucuresti,0,2,A
+2023-05-13,Metaloglobus,Progresul Spartac,1,1,D
+2023-05-15,Unirea Dej,Politehnica Iasi,0,0,D
+2023-05-15,Dinamo Bucuresti,CSA Steaua Bucuresti,3,0,H
+2023-05-16,SCM Gloria Buzau,Otelul,1,0,H
+2023-05-20,Progresul Spartac,Metaloglobus,0,0,D
+2023-05-21,Politehnica Iasi,Dinamo Bucuresti,4,1,H
+2023-05-21,Otelul,Unirea Dej,1,0,H
+2023-05-21,CSA Steaua Bucuresti,SCM Gloria Buzau,4,2,H

@@ -1,0 +1,280 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2020-08-29,Metaloglobus,Pandurii TG JIU,3,0,H
+2020-08-29,FC Politehnica Timisoara,CS Mioveni,0,0,D
+2020-08-29,Comuna Recea,Csikszereda,0,1,A
+2020-08-29,Slatina,Dunarea Calarasi,0,1,A
+2020-08-29,Unirea Slobozia,Turris-Oltul T. Magurele,1,0,H
+2020-08-29,SCM Gloria Buzau,Concordia,1,1,D
+2020-08-30,ACS Sirineasa,Rapid,1,3,A
+2020-08-31,Aerostar Bacau,Universitatea Cluj,0,1,A
+2020-09-01,Petrolul Ploiesti,Farul Constanta,1,2,A
+2020-09-05,Concordia,Unirea Slobozia,3,1,H
+2020-09-05,Dunarea Calarasi,Comuna Recea,3,0,H
+2020-09-05,Turris-Oltul T. Magurele,Metaloglobus,2,2,D
+2020-09-05,Farul Constanta,Aerostar Bacau,1,0,H
+2020-09-05,Rapid,Pandurii TG JIU,2,1,H
+2020-09-05,Csikszereda,U Craiova 1948,1,1,D
+2020-09-06,CSM Resita,Petrolul Ploiesti,0,4,A
+2020-09-06,CS Mioveni,SCM Gloria Buzau,0,0,D
+2020-09-07,Universitatea Cluj,FC Politehnica Timisoara,0,1,A
+2020-09-08,ACS Sirineasa,Slatina,2,1,H
+2020-09-09,U Craiova 1948,Ripensia Timisoara,4,1,H
+2020-09-12,Pandurii TG JIU,Turris-Oltul T. Magurele,0,5,A
+2020-09-12,Aerostar Bacau,CSM Resita,0,1,A
+2020-09-12,Metaloglobus,Concordia,1,1,D
+2020-09-12,Comuna Recea,ACS Sirineasa,3,4,A
+2020-09-12,Unirea Slobozia,CS Mioveni,0,0,D
+2020-09-12,Slatina,Rapid,0,3,A
+2020-09-12,U Craiova 1948,Dunarea Calarasi,2,1,H
+2020-09-13,SCM Gloria Buzau,Universitatea Cluj,2,1,H
+2020-09-14,FC Politehnica Timisoara,Farul Constanta,2,1,H
+2020-09-15,Petrolul Ploiesti,Ripensia Timisoara,5,0,H
+2020-09-19,Concordia,Pandurii TG JIU,4,0,H
+2020-09-19,CS Mioveni,Metaloglobus,0,1,A
+2020-09-19,Farul Constanta,SCM Gloria Buzau,2,2,D
+2020-09-19,Ripensia Timisoara,Aerostar Bacau,2,0,H
+2020-09-19,CSM Resita,FC Politehnica Timisoara,0,0,D
+2020-09-19,Slatina,Comuna Recea,2,0,H
+2020-09-19,Rapid,Turris-Oltul T. Magurele,1,1,D
+2020-09-20,ACS Sirineasa,U Craiova 1948,2,4,A
+2020-09-21,Csikszereda,Petrolul Ploiesti,1,2,A
+2020-09-22,Universitatea Cluj,Unirea Slobozia,3,1,H
+2020-09-26,Pandurii TG JIU,CS Mioveni,1,2,A
+2020-09-26,Aerostar Bacau,Csikszereda,3,2,H
+2020-09-26,FC Politehnica Timisoara,Ripensia Timisoara,2,0,H
+2020-09-26,SCM Gloria Buzau,CSM Resita,0,1,A
+2020-09-26,Turris-Oltul T. Magurele,Concordia,3,2,H
+2020-09-26,Comuna Recea,Rapid,2,1,H
+2020-09-26,Petrolul Ploiesti,Dunarea Calarasi,0,1,A
+2020-09-27,Metaloglobus,Universitatea Cluj,0,0,D
+2020-09-29,U Craiova 1948,Slatina,2,1,H
+2020-10-02,Rapid,Concordia,4,2,H
+2020-10-03,Dunarea Calarasi,Aerostar Bacau,3,2,H
+2020-10-03,Farul Constanta,Metaloglobus,1,2,A
+2020-10-03,Ripensia Timisoara,SCM Gloria Buzau,2,1,H
+2020-10-03,ACS Sirineasa,Petrolul Ploiesti,1,1,D
+2020-10-03,CSM Resita,Unirea Slobozia,0,3,A
+2020-10-03,Csikszereda,FC Politehnica Timisoara,2,0,H
+2020-10-03,Comuna Recea,U Craiova 1948,3,3,D
+2020-10-05,Universitatea Cluj,Pandurii TG JIU,2,0,H
+2020-10-06,CS Mioveni,Turris-Oltul T. Magurele,0,0,D
+2020-10-10,Metaloglobus,CSM Resita,0,0,D
+2020-10-10,Unirea Slobozia,Ripensia Timisoara,2,0,H
+2020-10-10,Concordia,CS Mioveni,0,1,A
+2020-10-10,U Craiova 1948,Rapid,5,0,H
+2020-10-12,Turris-Oltul T. Magurele,Universitatea Cluj,1,4,A
+2020-10-14,Unirea Slobozia,Farul Constanta,0,2,A
+2020-10-16,Universitatea Cluj,Concordia,1,1,D
+2020-10-17,Dunarea Calarasi,SCM Gloria Buzau,0,2,A
+2020-10-17,Ripensia Timisoara,Metaloglobus,0,2,A
+2020-10-17,ACS Sirineasa,FC Politehnica Timisoara,0,1,A
+2020-10-17,CSM Resita,Pandurii TG JIU,1,2,A
+2020-10-17,Csikszereda,Unirea Slobozia,0,1,A
+2020-10-17,Slatina,Aerostar Bacau,2,1,H
+2020-10-17,Farul Constanta,Turris-Oltul T. Magurele,0,2,A
+2020-10-18,Comuna Recea,Petrolul Ploiesti,1,2,A
+2020-10-24,Pandurii TG JIU,Ripensia Timisoara,1,2,A
+2020-10-24,Aerostar Bacau,Comuna Recea,2,3,A
+2020-10-24,Metaloglobus,Csikszereda,2,1,H
+2020-10-24,FC Politehnica Timisoara,Slatina,1,0,H
+2020-10-24,Turris-Oltul T. Magurele,CSM Resita,4,1,H
+2020-10-24,Unirea Slobozia,Dunarea Calarasi,2,2,D
+2020-10-24,Concordia,Farul Constanta,1,2,A
+2020-10-25,Petrolul Ploiesti,U Craiova 1948,0,1,A
+2020-10-26,CS Mioveni,Universitatea Cluj,0,1,A
+2020-10-28,Pandurii TG JIU,Farul Constanta,0,1,A
+2020-10-28,Aerostar Bacau,ACS Sirineasa,0,3,A
+2020-10-28,FC Politehnica Timisoara,Dunarea Calarasi,1,1,D
+2020-10-28,SCM Gloria Buzau,Csikszereda,0,1,A
+2020-10-28,Petrolul Ploiesti,Slatina,1,1,D
+2020-10-29,Rapid,CS Mioveni,0,3,A
+2020-10-31,Dunarea Calarasi,Metaloglobus,1,0,H
+2020-10-31,Ripensia Timisoara,Turris-Oltul T. Magurele,4,2,H
+2020-10-31,ACS Sirineasa,Unirea Slobozia,3,1,H
+2020-10-31,Comuna Recea,FC Politehnica Timisoara,3,3,D
+2020-10-31,Slatina,SCM Gloria Buzau,0,2,A
+2020-11-01,Farul Constanta,CS Mioveni,1,1,D
+2020-11-03,U Craiova 1948,Aerostar Bacau,0,0,D
+2020-11-04,SCM Gloria Buzau,ACS Sirineasa,2,1,H
+2020-11-06,Petrolul Ploiesti,Rapid,2,0,H
+2020-11-07,Concordia,Ripensia Timisoara,0,1,A
+2020-11-07,Pandurii TG JIU,Dunarea Calarasi,1,2,A
+2020-11-07,CS Mioveni,CSM Resita,1,0,H
+2020-11-07,Metaloglobus,ACS Sirineasa,1,2,A
+2020-11-07,Turris-Oltul T. Magurele,Csikszereda,0,0,D
+2020-11-07,FC Politehnica Timisoara,U Craiova 1948,0,0,D
+2020-11-11,Csikszereda,Pandurii TG JIU,1,1,D
+2020-11-12,CSM Resita,Concordia,1,0,H
+2020-11-14,ACS Sirineasa,Pandurii TG JIU,4,3,H
+2020-11-14,Comuna Recea,Unirea Slobozia,2,0,H
+2020-11-14,Slatina,Metaloglobus,1,0,H
+2020-11-14,CSM Resita,Universitatea Cluj,2,1,H
+2020-11-15,Csikszereda,Concordia,1,0,H
+2020-11-15,Rapid,Farul Constanta,2,1,H
+2020-11-15,U Craiova 1948,SCM Gloria Buzau,1,1,D
+2020-11-16,Petrolul Ploiesti,Aerostar Bacau,1,4,A
+2020-11-18,SCM Gloria Buzau,Comuna Recea,2,0,H
+2020-11-18,Unirea Slobozia,Slatina,0,3,A
+2020-11-19,Rapid,Universitatea Cluj,1,0,H
+2020-11-21,Concordia,Dunarea Calarasi,2,1,H
+2020-11-21,Pandurii TG JIU,Slatina,2,1,H
+2020-11-21,CS Mioveni,Csikszereda,1,1,D
+2020-11-21,Farul Constanta,CSM Resita,1,0,H
+2020-11-21,Metaloglobus,Comuna Recea,2,0,H
+2020-11-21,Turris-Oltul T. Magurele,ACS Sirineasa,0,0,D
+2020-11-21,Unirea Slobozia,U Craiova 1948,0,0,D
+2020-11-21,FC Politehnica Timisoara,Petrolul Ploiesti,1,0,H
+2020-11-22,Aerostar Bacau,Rapid,2,3,A
+2020-11-24,U Craiova 1948,Metaloglobus,1,0,H
+2020-11-25,Dunarea Calarasi,CS Mioveni,1,0,H
+2020-11-25,Aerostar Bacau,FC Politehnica Timisoara,2,2,D
+2020-11-25,ACS Sirineasa,Concordia,1,0,H
+2020-11-25,Comuna Recea,Pandurii TG JIU,2,0,H
+2020-11-25,Slatina,Turris-Oltul T. Magurele,2,1,H
+2020-11-25,Petrolul Ploiesti,SCM Gloria Buzau,1,1,D
+2020-11-26,Csikszereda,Universitatea Cluj,2,1,H
+2020-11-26,Rapid,CSM Resita,0,0,D
+2020-12-01,Dunarea Calarasi,Turris-Oltul T. Magurele,1,1,D
+2020-12-02,Ripensia Timisoara,CS Mioveni,0,3,A
+2020-12-02,Universitatea Cluj,Farul Constanta,0,3,A
+2020-12-05,Concordia,Slatina,3,2,H
+2020-12-05,Pandurii TG JIU,U Craiova 1948,2,3,A
+2020-12-05,Farul Constanta,Csikszereda,0,2,A
+2020-12-05,CSM Resita,Ripensia Timisoara,2,0,H
+2020-12-05,SCM Gloria Buzau,Aerostar Bacau,1,1,D
+2020-12-05,Turris-Oltul T. Magurele,Comuna Recea,1,1,D
+2020-12-05,Unirea Slobozia,Petrolul Ploiesti,0,3,A
+2020-12-06,CS Mioveni,ACS Sirineasa,1,2,A
+2020-12-06,FC Politehnica Timisoara,Rapid,0,2,A
+2020-12-08,Universitatea Cluj,Dunarea Calarasi,2,1,H
+2020-12-11,Universitatea Cluj,Ripensia Timisoara,1,0,H
+2020-12-14,Ripensia Timisoara,Farul Constanta,1,0,H
+2021-02-18,FC Politehnica Timisoara,SCM Gloria Buzau,2,0,H
+2021-02-18,ACS Sirineasa,Universitatea Cluj,1,2,A
+2021-02-20,Aerostar Bacau,Unirea Slobozia,0,2,A
+2021-02-20,Csikszereda,CSM Resita,2,0,H
+2021-02-20,Comuna Recea,Concordia,0,0,D
+2021-02-20,Dunarea Calarasi,Farul Constanta,1,1,D
+2021-02-21,Rapid,Ripensia Timisoara,2,2,D
+2021-02-21,Slatina,CS Mioveni,0,1,A
+2021-02-23,Petrolul Ploiesti,Metaloglobus,1,0,H
+2021-02-25,SCM Gloria Buzau,Rapid,0,0,D
+2021-02-26,Universitatea Cluj,Slatina,2,1,H
+2021-02-27,CS Mioveni,Comuna Recea,1,1,D
+2021-02-27,Ripensia Timisoara,Csikszereda,1,1,D
+2021-02-27,Metaloglobus,Aerostar Bacau,3,0,H
+2021-02-27,CSM Resita,Dunarea Calarasi,0,1,A
+2021-02-27,Unirea Slobozia,FC Politehnica Timisoara,0,0,D
+2021-02-28,Farul Constanta,ACS Sirineasa,1,0,H
+2021-02-28,Pandurii TG JIU,Petrolul Ploiesti,0,4,A
+2021-03-02,Concordia,U Craiova 1948,0,0,D
+2021-03-06,Aerostar Bacau,Pandurii TG JIU,1,1,D
+2021-03-06,SCM Gloria Buzau,Unirea Slobozia,2,0,H
+2021-03-06,Slatina,Farul Constanta,1,1,D
+2021-03-06,Rapid,Csikszereda,1,3,A
+2021-03-07,Dunarea Calarasi,Ripensia Timisoara,2,2,D
+2021-03-07,ACS Sirineasa,CSM Resita,2,1,H
+2021-03-07,FC Politehnica Timisoara,Metaloglobus,1,0,H
+2021-03-08,Comuna Recea,Universitatea Cluj,1,0,H
+2021-03-09,U Craiova 1948,CS Mioveni,1,2,A
+2021-03-11,Concordia,Petrolul Ploiesti,0,0,D
+2021-03-12,Universitatea Cluj,U Craiova 1948,1,0,H
+2021-03-13,Pandurii TG JIU,FC Politehnica Timisoara,1,1,D
+2021-03-13,Farul Constanta,Comuna Recea,3,2,H
+2021-03-13,Ripensia Timisoara,ACS Sirineasa,0,2,A
+2021-03-13,Metaloglobus,SCM Gloria Buzau,5,1,H
+2021-03-13,CSM Resita,Slatina,1,1,D
+2021-03-14,Csikszereda,Dunarea Calarasi,0,1,A
+2021-03-14,Unirea Slobozia,Rapid,2,1,H
+2021-03-20,Aerostar Bacau,Concordia,0,1,A
+2021-03-20,SCM Gloria Buzau,Pandurii TG JIU,1,1,D
+2021-03-20,Comuna Recea,CSM Resita,6,0,H
+2021-03-20,Slatina,Ripensia Timisoara,0,1,A
+2021-03-20,Unirea Slobozia,Metaloglobus,0,1,A
+2021-03-20,Petrolul Ploiesti,CS Mioveni,0,1,A
+2021-03-21,Rapid,Dunarea Calarasi,4,0,H
+2021-03-22,ACS Sirineasa,Csikszereda,0,0,D
+2021-03-23,U Craiova 1948,Farul Constanta,0,0,D
+2021-03-28,Concordia,FC Politehnica Timisoara,2,0,H
+2021-03-28,Dunarea Calarasi,ACS Sirineasa,2,1,H
+2021-03-28,Pandurii TG JIU,Unirea Slobozia,1,0,H
+2021-03-28,CS Mioveni,Aerostar Bacau,5,1,H
+2021-03-28,Ripensia Timisoara,Comuna Recea,0,0,D
+2021-03-28,Universitatea Cluj,Petrolul Ploiesti,1,2,A
+2021-03-28,Metaloglobus,Rapid,2,4,A
+2021-03-28,CSM Resita,U Craiova 1948,0,2,A
+2021-03-28,Csikszereda,Slatina,1,0,H
+2021-04-01,CS Mioveni,U Craiova 1948,0,0,D
+2021-04-03,Concordia,Unirea Slobozia,1,1,D
+2021-04-03,Farul Constanta,Ripensia Timisoara,1,1,D
+2021-04-03,ACS Sirineasa,SCM Gloria Buzau,2,4,A
+2021-04-03,CSM Resita,Petrolul Ploiesti,0,1,A
+2021-04-03,Comuna Recea,Pandurii TG JIU,5,0,H
+2021-04-03,Dunarea Calarasi,FC Politehnica Timisoara,0,0,D
+2021-04-04,Slatina,Universitatea Cluj,2,4,A
+2021-04-06,Csikszereda,Rapid,0,1,A
+2021-04-10,Pandurii TG JIU,Slatina,2,3,A
+2021-04-10,Aerostar Bacau,CSM Resita,0,2,A
+2021-04-10,Ripensia Timisoara,Comuna Recea,2,1,H
+2021-04-10,Metaloglobus,Farul Constanta,1,0,H
+2021-04-10,Unirea Slobozia,ACS Sirineasa,3,1,H
+2021-04-10,CS Mioveni,Csikszereda,0,0,D
+2021-04-10,U Craiova 1948,FC Politehnica Timisoara,1,0,H
+2021-04-11,Petrolul Ploiesti,Concordia,0,1,A
+2021-04-11,Rapid,Dunarea Calarasi,4,1,H
+2021-04-13,Csikszereda,U Craiova 1948,1,2,A
+2021-04-14,Comuna Recea,Metaloglobus,3,1,H
+2021-04-14,Slatina,Ripensia Timisoara,0,0,D
+2021-04-14,Dunarea Calarasi,CS Mioveni,1,5,A
+2021-04-14,Concordia,Aerostar Bacau,3,1,H
+2021-04-14,Universitatea Cluj,Pandurii TG JIU,1,1,D
+2021-04-14,SCM Gloria Buzau,Unirea Slobozia,0,0,D
+2021-04-15,FC Politehnica Timisoara,Rapid,1,2,A
+2021-04-17,Aerostar Bacau,ACS Sirineasa,1,5,A
+2021-04-17,Farul Constanta,Comuna Recea,3,1,H
+2021-04-17,Metaloglobus,Slatina,1,0,H
+2021-04-17,CSM Resita,Concordia,2,0,H
+2021-04-17,Petrolul Ploiesti,SCM Gloria Buzau,1,1,D
+2021-04-18,Ripensia Timisoara,Universitatea Cluj,2,1,H
+2021-04-19,CS Mioveni,FC Politehnica Timisoara,4,0,H
+2021-04-19,Csikszereda,Dunarea Calarasi,1,2,A
+2021-04-19,U Craiova 1948,Rapid,1,0,H
+2021-04-21,ACS Sirineasa,Petrolul Ploiesti,1,3,A
+2021-04-23,SCM Gloria Buzau,Aerostar Bacau,3,0,H
+2021-04-24,Pandurii TG JIU,Ripensia Timisoara,0,3,A
+2021-04-24,Universitatea Cluj,Metaloglobus,2,0,H
+2021-04-24,Slatina,Farul Constanta,1,3,A
+2021-04-24,FC Politehnica Timisoara,Csikszereda,0,1,A
+2021-04-24,Rapid,CS Mioveni,1,1,D
+2021-04-25,ACS Sirineasa,CSM Resita,4,3,H
+2021-04-25,Unirea Slobozia,Petrolul Ploiesti,1,1,D
+2021-04-26,Dunarea Calarasi,U Craiova 1948,1,1,D
+2021-04-30,Concordia,ACS Sirineasa,0,2,A
+2021-04-30,Aerostar Bacau,Unirea Slobozia,2,2,D
+2021-04-30,Metaloglobus,Pandurii TG JIU,3,1,H
+2021-04-30,CSM Resita,SCM Gloria Buzau,1,1,D
+2021-04-30,Comuna Recea,Slatina,5,2,H
+2021-04-30,FC Politehnica Timisoara,Dunarea Calarasi,2,1,H
+2021-04-30,U Craiova 1948,CS Mioveni,4,2,H
+2021-05-01,Farul Constanta,Universitatea Cluj,1,3,A
+2021-05-01,Rapid,Csikszereda,2,0,H
+2021-05-07,Csikszereda,CS Mioveni,2,2,D
+2021-05-07,FC Politehnica Timisoara,U Craiova 1948,2,1,H
+2021-05-07,SCM Gloria Buzau,Concordia,0,3,A
+2021-05-07,Dunarea Calarasi,Rapid,3,2,H
+2021-05-08,Pandurii TG JIU,Farul Constanta,1,2,A
+2021-05-08,Ripensia Timisoara,Metaloglobus,1,0,H
+2021-05-08,Petrolul Ploiesti,Aerostar Bacau,2,0,H
+2021-05-08,Universitatea Cluj,Comuna Recea,2,3,A
+2021-05-08,Unirea Slobozia,CSM Resita,1,0,H
+2021-05-12,CS Mioveni,Dunarea Calarasi,1,1,D
+2021-05-13,U Craiova 1948,Csikszereda,0,0,D
+2021-05-13,Rapid,FC Politehnica Timisoara,1,0,H
+2021-05-15,Comuna Recea,Unirea Slobozia,2,0,H
+2021-05-17,Dunarea Calarasi,Csikszereda,0,2,A
+2021-05-17,FC Politehnica Timisoara,CS Mioveni,2,2,D
+2021-05-17,Rapid,U Craiova 1948,1,3,A
+2021-05-22,Unirea Slobozia,Comuna Recea,3,0,H
+2021-05-23,CS Mioveni,Rapid,1,0,H
+2021-05-23,Csikszereda,FC Politehnica Timisoara,2,2,D
+2021-05-23,U Craiova 1948,Dunarea Calarasi,0,0,D

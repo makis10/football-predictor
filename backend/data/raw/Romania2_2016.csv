@@ -1,0 +1,338 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2016-08-06,Dunarea Calarasi,Dacia Unirea Braila,1,2,A
+2016-08-06,Sepsi OSK Sfantu Gheorghe,FC Brasov,2,3,A
+2016-08-06,Juventus Bucuresti,CS Mioveni,4,1,H
+2016-08-06,Uta Arad,CSM Ramnicu Valcea,2,2,D
+2016-08-06,CS Balotesti,ACS Berceni,4,1,H
+2016-08-06,FC Politehnica Timisoara,Chindia Targoviste,3,4,A
+2016-08-06,CS Afumati,Cs Soimii Pancota,16,0,H
+2016-08-06,Olimpia Satu Mare,Sportul Snagov,5,0,H
+2016-08-06,CS Unirea Tarlungeni,ACS Foresta Suceava,4,1,H
+2016-08-12,CSM Ramnicu Valcea,FC Politehnica Timisoara,0,0,D
+2016-08-13,Chindia Targoviste,CS Balotesti,1,0,H
+2016-08-13,CS Mioveni,Olimpia Satu Mare,1,0,H
+2016-08-13,Dacia Unirea Braila,CS Unirea Tarlungeni,2,0,H
+2016-08-13,CS Luceafarul Oradea,CS Afumati,1,0,H
+2016-08-13,FC Clinceni,ACS Berceni,5,0,H
+2016-08-13,Sportul Snagov,Dunarea Calarasi,0,4,A
+2016-08-13,ACS Foresta Suceava,Uta Arad,0,2,A
+2016-08-13,Cs Soimii Pancota,Sepsi OSK Sfantu Gheorghe,0,7,A
+2016-08-14,FC Brasov,Juventus Bucuresti,1,0,H
+2016-08-19,Olimpia Satu Mare,FC Brasov,1,1,D
+2016-08-20,Sepsi OSK Sfantu Gheorghe,CS Luceafarul Oradea,1,0,H
+2016-08-20,Juventus Bucuresti,Cs Soimii Pancota,18,0,H
+2016-08-20,CS Balotesti,CSM Ramnicu Valcea,1,1,D
+2016-08-20,CS Afumati,FC Clinceni,3,2,H
+2016-08-20,CS Unirea Tarlungeni,Sportul Snagov,2,0,H
+2016-08-20,ACS Berceni,Chindia Targoviste,0,1,A
+2016-08-20,Dunarea Calarasi,CS Mioveni,0,0,D
+2016-08-20,Uta Arad,Dacia Unirea Braila,3,0,H
+2016-08-21,FC Politehnica Timisoara,ACS Foresta Suceava,2,3,A
+2016-08-24,CS Luceafarul Oradea,FC Clinceni,1,2,A
+2016-08-27,CS Mioveni,CS Unirea Tarlungeni,1,0,H
+2016-08-27,CS Luceafarul Oradea,Juventus Bucuresti,0,1,A
+2016-08-27,FC Clinceni,Chindia Targoviste,0,2,A
+2016-08-27,Sportul Snagov,Uta Arad,0,1,A
+2016-08-27,ACS Foresta Suceava,CS Balotesti,4,1,H
+2016-08-27,CS Afumati,Sepsi OSK Sfantu Gheorghe,1,1,D
+2016-08-27,Cs Soimii Pancota,Olimpia Satu Mare,0,9,A
+2016-08-27,Dacia Unirea Braila,FC Politehnica Timisoara,4,1,H
+2016-08-28,FC Brasov,Dunarea Calarasi,3,0,H
+2016-08-29,CSM Ramnicu Valcea,ACS Berceni,2,0,H
+2016-09-03,Dunarea Calarasi,Cs Soimii Pancota,2,0,H
+2016-09-03,Sepsi OSK Sfantu Gheorghe,FC Clinceni,3,0,H
+2016-09-03,CS Balotesti,Dacia Unirea Braila,1,1,D
+2016-09-03,Olimpia Satu Mare,CS Luceafarul Oradea,1,0,H
+2016-09-03,ACS Berceni,ACS Foresta Suceava,0,1,A
+2016-09-03,Uta Arad,CS Mioveni,0,0,D
+2016-09-03,Chindia Targoviste,CSM Ramnicu Valcea,3,0,H
+2016-09-03,Juventus Bucuresti,CS Afumati,2,0,H
+2016-09-03,FC Politehnica Timisoara,Sportul Snagov,2,0,H
+2016-09-04,CS Unirea Tarlungeni,FC Brasov,0,0,D
+2016-09-09,FC Brasov,Uta Arad,3,2,H
+2016-09-10,Sepsi OSK Sfantu Gheorghe,Juventus Bucuresti,0,0,D
+2016-09-10,CS Mioveni,FC Politehnica Timisoara,3,0,H
+2016-09-10,CS Luceafarul Oradea,Dunarea Calarasi,1,1,D
+2016-09-10,Sportul Snagov,CS Balotesti,2,1,H
+2016-09-10,ACS Foresta Suceava,Chindia Targoviste,3,1,H
+2016-09-10,CS Afumati,Olimpia Satu Mare,3,0,H
+2016-09-10,Cs Soimii Pancota,CS Unirea Tarlungeni,1,4,A
+2016-09-10,Dacia Unirea Braila,ACS Berceni,4,1,H
+2016-09-11,FC Clinceni,CSM Ramnicu Valcea,2,1,H
+2016-09-16,Juventus Bucuresti,FC Clinceni,3,0,H
+2016-09-17,Dunarea Calarasi,CS Afumati,1,0,H
+2016-09-17,Uta Arad,Cs Soimii Pancota,6,0,H
+2016-09-17,CS Balotesti,CS Mioveni,1,1,D
+2016-09-17,Olimpia Satu Mare,Sepsi OSK Sfantu Gheorghe,3,0,H
+2016-09-17,CS Unirea Tarlungeni,CS Luceafarul Oradea,0,1,A
+2016-09-17,ACS Berceni,Sportul Snagov,1,2,A
+2016-09-17,CSM Ramnicu Valcea,ACS Foresta Suceava,0,2,A
+2016-09-17,FC Politehnica Timisoara,FC Brasov,1,1,D
+2016-09-18,Chindia Targoviste,Dacia Unirea Braila,2,0,H
+2016-09-20,CS Luceafarul Oradea,Uta Arad,0,1,A
+2016-09-20,Juventus Bucuresti,Olimpia Satu Mare,1,0,H
+2016-09-21,FC Clinceni,ACS Foresta Suceava,3,3,D
+2016-09-21,Dacia Unirea Braila,CSM Ramnicu Valcea,0,1,A
+2016-09-21,Sepsi OSK Sfantu Gheorghe,Dunarea Calarasi,3,0,H
+2016-09-21,CS Mioveni,ACS Berceni,4,1,H
+2016-09-21,Sportul Snagov,Chindia Targoviste,0,2,A
+2016-09-21,CS Afumati,CS Unirea Tarlungeni,2,2,D
+2016-09-21,FC Brasov,CS Balotesti,4,2,H
+2016-09-21,Cs Soimii Pancota,FC Politehnica Timisoara,0,3,A
+2016-09-24,Uta Arad,CS Afumati,2,1,H
+2016-09-24,CS Balotesti,Cs Soimii Pancota,2,0,H
+2016-09-24,ACS Foresta Suceava,Dacia Unirea Braila,4,0,H
+2016-09-24,Olimpia Satu Mare,FC Clinceni,3,2,H
+2016-09-24,CS Unirea Tarlungeni,Sepsi OSK Sfantu Gheorghe,1,1,D
+2016-09-24,CSM Ramnicu Valcea,Sportul Snagov,5,2,H
+2016-09-24,FC Politehnica Timisoara,CS Luceafarul Oradea,1,3,A
+2016-09-25,ACS Berceni,FC Brasov,2,4,A
+2016-09-25,Dunarea Calarasi,Juventus Bucuresti,1,2,A
+2016-09-25,Chindia Targoviste,CS Mioveni,0,2,A
+2016-09-30,Juventus Bucuresti,CS Unirea Tarlungeni,6,0,H
+2016-10-01,Sepsi OSK Sfantu Gheorghe,Uta Arad,4,1,H
+2016-10-01,CS Luceafarul Oradea,CS Balotesti,0,1,A
+2016-10-01,Sportul Snagov,ACS Foresta Suceava,1,2,A
+2016-10-01,CS Afumati,FC Politehnica Timisoara,2,0,H
+2016-10-01,Olimpia Satu Mare,Dunarea Calarasi,2,2,D
+2016-10-01,Cs Soimii Pancota,ACS Berceni,0,0,D
+2016-10-01,FC Clinceni,Dacia Unirea Braila,3,1,H
+2016-10-02,FC Brasov,Chindia Targoviste,2,0,H
+2016-10-03,CS Mioveni,CSM Ramnicu Valcea,1,0,H
+2016-10-08,Dunarea Calarasi,FC Clinceni,0,0,D
+2016-10-08,Chindia Targoviste,Cs Soimii Pancota,6,0,H
+2016-10-08,Dacia Unirea Braila,Sportul Snagov,2,1,H
+2016-10-08,CS Balotesti,CS Afumati,0,1,A
+2016-10-08,CS Unirea Tarlungeni,Olimpia Satu Mare,0,2,A
+2016-10-08,ACS Berceni,CS Luceafarul Oradea,0,1,A
+2016-10-08,FC Politehnica Timisoara,Sepsi OSK Sfantu Gheorghe,0,1,A
+2016-10-08,Uta Arad,Juventus Bucuresti,0,1,A
+2016-10-09,ACS Foresta Suceava,CS Mioveni,2,1,H
+2016-10-09,CSM Ramnicu Valcea,FC Brasov,1,1,D
+2016-10-14,FC Brasov,ACS Foresta Suceava,2,1,H
+2016-10-15,Dunarea Calarasi,CS Unirea Tarlungeni,1,0,H
+2016-10-15,Sepsi OSK Sfantu Gheorghe,CS Balotesti,0,0,D
+2016-10-15,Juventus Bucuresti,FC Politehnica Timisoara,5,0,H
+2016-10-15,CS Luceafarul Oradea,Chindia Targoviste,2,0,H
+2016-10-15,FC Clinceni,Sportul Snagov,2,3,A
+2016-10-15,CS Afumati,ACS Berceni,4,0,H
+2016-10-15,Cs Soimii Pancota,CSM Ramnicu Valcea,0,3,A
+2016-10-15,CS Mioveni,Dacia Unirea Braila,2,0,H
+2016-10-16,Olimpia Satu Mare,Uta Arad,3,0,H
+2016-10-21,CS Unirea Tarlungeni,FC Clinceni,2,2,D
+2016-10-22,Dacia Unirea Braila,FC Brasov,1,0,H
+2016-10-22,Sportul Snagov,CS Mioveni,0,0,D
+2016-10-22,ACS Foresta Suceava,Cs Soimii Pancota,14,0,H
+2016-10-22,ACS Berceni,Sepsi OSK Sfantu Gheorghe,0,1,A
+2016-10-22,CSM Ramnicu Valcea,CS Luceafarul Oradea,3,0,H
+2016-10-22,CS Balotesti,Juventus Bucuresti,0,2,A
+2016-10-22,Uta Arad,Dunarea Calarasi,1,0,H
+2016-10-22,FC Politehnica Timisoara,Olimpia Satu Mare,1,1,D
+2016-10-23,Chindia Targoviste,CS Afumati,1,0,H
+2016-10-28,Juventus Bucuresti,ACS Berceni,5,0,H
+2016-10-29,Dunarea Calarasi,FC Politehnica Timisoara,2,3,A
+2016-10-29,FC Clinceni,CS Mioveni,1,4,A
+2016-10-29,FC Brasov,Sportul Snagov,2,0,H
+2016-10-29,Sepsi OSK Sfantu Gheorghe,Chindia Targoviste,2,1,H
+2016-10-30,CS Afumati,CSM Ramnicu Valcea,3,1,H
+2016-10-30,Olimpia Satu Mare,CS Balotesti,2,1,H
+2016-10-30,CS Unirea Tarlungeni,Uta Arad,2,4,A
+2016-10-31,CS Luceafarul Oradea,ACS Foresta Suceava,2,0,H
+2016-11-05,CS Balotesti,Dunarea Calarasi,0,3,A
+2016-11-05,ACS Foresta Suceava,CS Afumati,0,2,A
+2016-11-05,ACS Berceni,Olimpia Satu Mare,1,7,A
+2016-11-05,CSM Ramnicu Valcea,Sepsi OSK Sfantu Gheorghe,0,1,A
+2016-11-05,Chindia Targoviste,Juventus Bucuresti,0,0,D
+2016-11-05,FC Politehnica Timisoara,CS Unirea Tarlungeni,2,0,H
+2016-11-06,Uta Arad,FC Clinceni,3,2,H
+2016-11-06,Dacia Unirea Braila,CS Luceafarul Oradea,1,0,H
+2016-11-07,CS Mioveni,FC Brasov,0,1,A
+2016-11-12,Dunarea Calarasi,ACS Berceni,3,0,H
+2016-11-12,CS Luceafarul Oradea,Sportul Snagov,3,1,H
+2016-11-12,FC Clinceni,FC Brasov,2,1,H
+2016-11-12,CS Afumati,Dacia Unirea Braila,1,1,D
+2016-11-12,CS Unirea Tarlungeni,CS Balotesti,1,3,A
+2016-11-12,Juventus Bucuresti,CSM Ramnicu Valcea,0,0,D
+2016-11-12,Olimpia Satu Mare,Chindia Targoviste,1,0,H
+2016-11-13,Sepsi OSK Sfantu Gheorghe,ACS Foresta Suceava,6,1,H
+2016-11-13,Uta Arad,FC Politehnica Timisoara,1,1,D
+2016-11-19,Dacia Unirea Braila,Sepsi OSK Sfantu Gheorghe,0,1,A
+2016-11-19,CS Balotesti,Uta Arad,2,4,A
+2016-11-19,Sportul Snagov,CS Afumati,1,2,A
+2016-11-19,CSM Ramnicu Valcea,Olimpia Satu Mare,0,0,D
+2016-11-19,Chindia Targoviste,Dunarea Calarasi,5,0,H
+2016-11-19,CS Mioveni,CS Luceafarul Oradea,1,2,A
+2016-11-19,FC Politehnica Timisoara,FC Clinceni,0,1,A
+2016-11-20,ACS Foresta Suceava,Juventus Bucuresti,1,2,A
+2016-11-22,CS Luceafarul Oradea,FC Brasov,1,2,A
+2016-11-23,CS Afumati,CS Mioveni,1,2,A
+2016-11-23,Dunarea Calarasi,CSM Ramnicu Valcea,1,0,H
+2016-11-23,Sepsi OSK Sfantu Gheorghe,Sportul Snagov,3,2,H
+2016-11-23,Juventus Bucuresti,Dacia Unirea Braila,1,0,H
+2016-11-23,FC Politehnica Timisoara,CS Balotesti,4,1,H
+2016-11-23,Olimpia Satu Mare,ACS Foresta Suceava,3,0,H
+2016-11-23,CS Unirea Tarlungeni,Chindia Targoviste,1,1,D
+2016-11-26,CS Mioveni,Sepsi OSK Sfantu Gheorghe,2,0,H
+2016-11-26,Dacia Unirea Braila,Olimpia Satu Mare,0,1,A
+2016-11-26,CS Balotesti,FC Clinceni,1,3,A
+2016-11-26,Sportul Snagov,Juventus Bucuresti,1,2,A
+2016-11-26,CSM Ramnicu Valcea,CS Unirea Tarlungeni,1,0,H
+2016-11-26,ACS Foresta Suceava,Dunarea Calarasi,1,1,D
+2016-11-27,Chindia Targoviste,Uta Arad,0,3,A
+2016-11-28,FC Brasov,CS Afumati,2,0,H
+2016-12-02,CS Mioveni,Juventus Bucuresti,1,0,H
+2016-12-03,Dacia Unirea Braila,Dunarea Calarasi,2,1,H
+2016-12-03,Sportul Snagov,Olimpia Satu Mare,4,0,H
+2016-12-03,ACS Foresta Suceava,CS Unirea Tarlungeni,4,1,H
+2016-12-03,CSM Ramnicu Valcea,Uta Arad,0,1,A
+2016-12-03,FC Clinceni,CS Luceafarul Oradea,1,3,A
+2016-12-03,FC Brasov,Sepsi OSK Sfantu Gheorghe,1,1,D
+2016-12-04,Chindia Targoviste,FC Politehnica Timisoara,2,0,H
+2016-12-09,CS Afumati,CS Luceafarul Oradea,0,0,D
+2016-12-10,Dunarea Calarasi,Sportul Snagov,3,0,H
+2016-12-10,Juventus Bucuresti,FC Brasov,2,1,H
+2016-12-10,CS Balotesti,Chindia Targoviste,3,2,H
+2016-12-10,Olimpia Satu Mare,CS Mioveni,1,0,H
+2016-12-10,CS Unirea Tarlungeni,Dacia Unirea Braila,0,3,A
+2016-12-10,FC Politehnica Timisoara,CSM Ramnicu Valcea,1,1,D
+2016-12-11,Uta Arad,ACS Foresta Suceava,1,0,H
+2017-02-24,CS Mioveni,Dunarea Calarasi,2,2,D
+2017-02-25,CS Luceafarul Oradea,Sepsi OSK Sfantu Gheorghe,1,2,A
+2017-02-25,FC Clinceni,CS Afumati,1,0,H
+2017-02-25,Sportul Snagov,CS Unirea Tarlungeni,3,0,H
+2017-02-25,ACS Foresta Suceava,FC Politehnica Timisoara,2,2,D
+2017-02-25,CSM Ramnicu Valcea,CS Balotesti,0,3,A
+2017-02-25,FC Brasov,Olimpia Satu Mare,1,2,A
+2017-02-26,Dacia Unirea Braila,Uta Arad,2,1,H
+2017-03-04,Sepsi OSK Sfantu Gheorghe,CS Afumati,3,0,H
+2017-03-04,Chindia Targoviste,FC Clinceni,3,1,H
+2017-03-04,CS Balotesti,ACS Foresta Suceava,2,0,H
+2017-03-04,CS Unirea Tarlungeni,CS Mioveni,0,3,A
+2017-03-04,ACS Berceni,CSM Ramnicu Valcea,3,0,H
+2017-03-04,Juventus Bucuresti,CS Luceafarul Oradea,2,1,H
+2017-03-04,Dunarea Calarasi,FC Brasov,1,1,D
+2017-03-04,FC Politehnica Timisoara,Dacia Unirea Braila,1,1,D
+2017-03-06,Uta Arad,Sportul Snagov,4,0,H
+2017-03-10,CS Mioveni,Uta Arad,0,2,A
+2017-03-11,Dacia Unirea Braila,CS Balotesti,1,1,D
+2017-03-11,CS Luceafarul Oradea,Olimpia Satu Mare,2,2,D
+2017-03-11,Sportul Snagov,FC Politehnica Timisoara,0,2,A
+2017-03-11,FC Brasov,CS Unirea Tarlungeni,3,0,H
+2017-03-11,CSM Ramnicu Valcea,Chindia Targoviste,0,3,A
+2017-03-11,CS Afumati,Juventus Bucuresti,1,3,A
+2017-03-12,FC Clinceni,Sepsi OSK Sfantu Gheorghe,1,2,A
+2017-03-17,Olimpia Satu Mare,CS Afumati,0,1,A
+2017-03-18,Dunarea Calarasi,CS Luceafarul Oradea,3,2,H
+2017-03-18,Juventus Bucuresti,Sepsi OSK Sfantu Gheorghe,3,1,H
+2017-03-18,CS Balotesti,Sportul Snagov,3,1,H
+2017-03-18,CS Unirea Tarlungeni,Cs Soimii Pancota,0,3,A
+2017-03-18,CSM Ramnicu Valcea,FC Clinceni,0,3,A
+2017-03-18,Chindia Targoviste,ACS Foresta Suceava,2,1,H
+2017-03-18,FC Politehnica Timisoara,CS Mioveni,1,2,A
+2017-03-19,Uta Arad,FC Brasov,1,2,A
+2017-03-25,CS Mioveni,CS Balotesti,3,0,H
+2017-03-25,Dacia Unirea Braila,Chindia Targoviste,0,2,A
+2017-03-25,CS Luceafarul Oradea,CS Unirea Tarlungeni,3,0,H
+2017-03-25,ACS Foresta Suceava,CSM Ramnicu Valcea,3,0,H
+2017-03-25,CS Afumati,Dunarea Calarasi,1,2,A
+2017-03-25,Sepsi OSK Sfantu Gheorghe,Olimpia Satu Mare,3,1,H
+2017-03-26,FC Clinceni,Juventus Bucuresti,0,7,A
+2017-03-27,FC Brasov,FC Politehnica Timisoara,2,0,H
+2017-04-01,Chindia Targoviste,Sportul Snagov,4,0,H
+2017-04-01,CS Balotesti,FC Brasov,2,2,D
+2017-04-01,ACS Foresta Suceava,FC Clinceni,2,0,H
+2017-04-01,CS Unirea Tarlungeni,CS Afumati,0,3,A
+2017-04-01,CSM Ramnicu Valcea,Dacia Unirea Braila,0,3,A
+2017-04-01,Olimpia Satu Mare,Juventus Bucuresti,1,3,A
+2017-04-02,Uta Arad,CS Luceafarul Oradea,0,0,D
+2017-04-03,Dunarea Calarasi,Sepsi OSK Sfantu Gheorghe,0,0,D
+2017-04-07,CS Mioveni,Chindia Targoviste,2,0,H
+2017-04-08,Sepsi OSK Sfantu Gheorghe,CS Unirea Tarlungeni,3,0,H
+2017-04-08,Dacia Unirea Braila,ACS Foresta Suceava,4,1,H
+2017-04-08,CS Luceafarul Oradea,FC Politehnica Timisoara,4,1,H
+2017-04-08,Sportul Snagov,CSM Ramnicu Valcea,3,0,H
+2017-04-08,Juventus Bucuresti,Dunarea Calarasi,1,0,H
+2017-04-08,CS Afumati,Uta Arad,0,0,D
+2017-04-09,FC Clinceni,Olimpia Satu Mare,1,0,H
+2017-04-12,Dunarea Calarasi,Olimpia Satu Mare,2,0,H
+2017-04-13,Chindia Targoviste,FC Brasov,4,0,H
+2017-04-14,CS Balotesti,CS Luceafarul Oradea,2,1,H
+2017-04-14,Dacia Unirea Braila,FC Clinceni,1,0,H
+2017-04-14,FC Politehnica Timisoara,CS Afumati,2,1,H
+2017-04-14,ACS Foresta Suceava,Sportul Snagov,2,1,H
+2017-04-15,CS Unirea Tarlungeni,Juventus Bucuresti,0,3,A
+2017-04-15,CSM Ramnicu Valcea,CS Mioveni,0,3,A
+2017-04-15,Uta Arad,Sepsi OSK Sfantu Gheorghe,2,1,H
+2017-04-21,Sepsi OSK Sfantu Gheorghe,FC Politehnica Timisoara,2,1,H
+2017-04-22,Juventus Bucuresti,Uta Arad,1,2,A
+2017-04-22,Sportul Snagov,Dacia Unirea Braila,3,0,H
+2017-04-22,CS Afumati,CS Balotesti,1,0,H
+2017-04-22,Olimpia Satu Mare,CS Unirea Tarlungeni,3,0,H
+2017-04-22,FC Brasov,CSM Ramnicu Valcea,3,0,H
+2017-04-22,CS Mioveni,ACS Foresta Suceava,2,2,D
+2017-04-23,FC Clinceni,Dunarea Calarasi,1,4,A
+2017-04-25,Uta Arad,Olimpia Satu Mare,2,0,H
+2017-04-26,CS Unirea Tarlungeni,Dunarea Calarasi,0,3,A
+2017-04-26,CSM Ramnicu Valcea,Cs Soimii Pancota,0,3,A
+2017-04-26,FC Politehnica Timisoara,Juventus Bucuresti,2,1,H
+2017-04-26,Chindia Targoviste,CS Luceafarul Oradea,2,1,H
+2017-04-26,Dacia Unirea Braila,CS Mioveni,1,0,H
+2017-04-26,Sportul Snagov,FC Clinceni,1,1,D
+2017-04-26,ACS Foresta Suceava,FC Brasov,0,0,D
+2017-04-27,CS Balotesti,Sepsi OSK Sfantu Gheorghe,0,2,A
+2017-04-29,CS Mioveni,Sportul Snagov,5,1,H
+2017-04-29,CS Luceafarul Oradea,CSM Ramnicu Valcea,3,0,H
+2017-04-29,FC Clinceni,CS Unirea Tarlungeni,3,0,H
+2017-04-29,CS Afumati,Chindia Targoviste,2,1,H
+2017-04-29,Olimpia Satu Mare,FC Politehnica Timisoara,1,1,D
+2017-04-30,Juventus Bucuresti,CS Balotesti,3,1,H
+2017-04-30,Dunarea Calarasi,Uta Arad,1,0,H
+2017-05-02,FC Brasov,Dacia Unirea Braila,1,2,A
+2017-05-05,CS Balotesti,Olimpia Satu Mare,1,0,H
+2017-05-05,CS Mioveni,FC Clinceni,3,2,H
+2017-05-06,Uta Arad,CS Unirea Tarlungeni,3,0,H
+2017-05-06,ACS Foresta Suceava,CS Luceafarul Oradea,2,0,H
+2017-05-06,CSM Ramnicu Valcea,CS Afumati,0,3,A
+2017-05-06,Sportul Snagov,FC Brasov,1,1,D
+2017-05-06,FC Politehnica Timisoara,Dunarea Calarasi,4,1,H
+2017-05-07,Chindia Targoviste,Sepsi OSK Sfantu Gheorghe,1,1,D
+2017-05-12,Juventus Bucuresti,Chindia Targoviste,2,1,H
+2017-05-12,FC Brasov,CS Mioveni,0,0,D
+2017-05-13,Dunarea Calarasi,CS Balotesti,2,1,H
+2017-05-13,Sepsi OSK Sfantu Gheorghe,CSM Ramnicu Valcea,3,0,H
+2017-05-13,CS Luceafarul Oradea,Dacia Unirea Braila,4,1,H
+2017-05-13,CS Afumati,ACS Foresta Suceava,6,0,H
+2017-05-13,CS Unirea Tarlungeni,FC Politehnica Timisoara,0,3,A
+2017-05-14,FC Clinceni,Uta Arad,0,6,A
+2017-05-19,Chindia Targoviste,Olimpia Satu Mare,1,0,H
+2017-05-20,Dacia Unirea Braila,CS Afumati,1,5,A
+2017-05-20,CS Balotesti,CS Unirea Tarlungeni,3,0,H
+2017-05-20,Sportul Snagov,CS Luceafarul Oradea,1,3,A
+2017-05-20,FC Brasov,FC Clinceni,0,2,A
+2017-05-20,CSM Ramnicu Valcea,Juventus Bucuresti,0,3,A
+2017-05-20,ACS Foresta Suceava,Sepsi OSK Sfantu Gheorghe,2,4,A
+2017-05-21,FC Politehnica Timisoara,Uta Arad,0,3,A
+2017-05-23,Juventus Bucuresti,ACS Foresta Suceava,5,1,H
+2017-05-23,Sepsi OSK Sfantu Gheorghe,Dacia Unirea Braila,3,0,H
+2017-05-24,Olimpia Satu Mare,CSM Ramnicu Valcea,3,0,H
+2017-05-24,CS Luceafarul Oradea,CS Mioveni,2,1,H
+2017-05-24,Dunarea Calarasi,Chindia Targoviste,3,1,H
+2017-05-24,FC Clinceni,FC Politehnica Timisoara,2,2,D
+2017-05-24,CS Afumati,Sportul Snagov,5,2,H
+2017-05-25,Uta Arad,CS Balotesti,1,2,A
+2017-05-28,Chindia Targoviste,CS Unirea Tarlungeni,3,0,H
+2017-05-28,Dacia Unirea Braila,Juventus Bucuresti,0,3,A
+2017-05-28,CS Balotesti,FC Politehnica Timisoara,3,2,H
+2017-05-28,ACS Foresta Suceava,Olimpia Satu Mare,0,4,A
+2017-05-28,CSM Ramnicu Valcea,Dunarea Calarasi,0,3,A
+2017-05-28,Sportul Snagov,Sepsi OSK Sfantu Gheorghe,0,1,A
+2017-05-28,CS Mioveni,CS Afumati,1,3,A
+2017-05-29,FC Brasov,CS Luceafarul Oradea,1,1,D
+2017-05-31,Juventus Bucuresti,Sportul Snagov,3,0,H
+2017-05-31,Olimpia Satu Mare,Dacia Unirea Braila,7,0,H
+2017-06-01,FC Clinceni,CS Balotesti,1,1,D
+2017-06-03,Dunarea Calarasi,ACS Foresta Suceava,3,0,H
+2017-06-03,CS Unirea Tarlungeni,CSM Ramnicu Valcea,0,3,A
+2017-06-03,CS Afumati,FC Brasov,2,1,H
+2017-06-03,Sepsi OSK Sfantu Gheorghe,CS Mioveni,1,1,D
+2017-06-03,Uta Arad,Chindia Targoviste,2,2,D

@@ -188,7 +188,12 @@ def main() -> None:
     except Exception:
         pass
 
-    print(f"\n{'FAIL' if alerts else 'OK'} — {len(alerts)} alert(s), {len(warns)} warning(s)")
+    # Wording matters here: this verdict is about DATA COMPLETENESS, not about
+    # whether the pipeline ran. It stopped gating the heartbeat on 2026-07-31,
+    # but kept printing "FAIL", so a run that completed every step still ended
+    # with a red-looking line and a push that read as another failure.
+    print(f"\n{'DATA GAPS' if alerts else 'DATA OK'} — "
+          f"{len(alerts)} alert(s), {len(warns)} warning(s)")
     sys.exit(1 if alerts else 0)
 
 

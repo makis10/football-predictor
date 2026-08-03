@@ -1,0 +1,310 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2023-07-21,Arka Gdynia,Nieciecza,2,2,D
+2023-07-21,Motor Lublin,Zaglebie Sosnowiec,3,2,H
+2023-07-22,Chrobry Gogow,Lechia Gdansk,2,4,A
+2023-07-22,Gornik eczna,Wisla Krakow,2,2,D
+2023-07-22,Polonia Warszawa,Tychy 71,2,3,A
+2023-07-23,Podbeskidzie,Wisla Plock,1,1,D
+2023-07-23,Znicz Pruszkow,Resovia Rzeszow,2,0,H
+2023-07-23,Miedz Legnica,GKS Katowice,1,0,H
+2023-07-24,Stal Rzeszow,Odra Opole,2,5,A
+2023-07-28,Gornik eczna,Arka Gdynia,0,0,D
+2023-07-28,Lechia Gdansk,Motor Lublin,0,1,A
+2023-07-29,Podbeskidzie,Znicz Pruszkow,1,1,D
+2023-07-29,Zaglebie Sosnowiec,Wisla Plock,1,1,D
+2023-07-29,Nieciecza,Miedz Legnica,1,4,A
+2023-07-30,Polonia Warszawa,Wisla Krakow,2,3,A
+2023-07-30,Odra Opole,Resovia Rzeszow,3,0,H
+2023-07-30,Stal Rzeszow,Tychy 71,1,2,A
+2023-07-31,GKS Katowice,Chrobry Gogow,3,1,H
+2023-08-04,Znicz Pruszkow,Zaglebie Sosnowiec,1,0,H
+2023-08-04,Wisla Plock,Lechia Gdansk,1,1,D
+2023-08-05,Miedz Legnica,Gornik eczna,0,0,D
+2023-08-05,Wisla Krakow,Stal Rzeszow,0,0,D
+2023-08-05,Chrobry Gogow,Nieciecza,0,5,A
+2023-08-06,Motor Lublin,GKS Katowice,1,1,D
+2023-08-06,Odra Opole,Tychy 71,0,2,A
+2023-08-07,Arka Gdynia,Polonia Warszawa,2,3,A
+2023-08-07,Resovia Rzeszow,Podbeskidzie,1,1,D
+2023-08-11,Gornik eczna,Chrobry Gogow,3,1,H
+2023-08-11,GKS Katowice,Wisla Plock,4,1,H
+2023-08-12,Odra Opole,Podbeskidzie,1,0,H
+2023-08-12,Tychy 71,Wisla Krakow,1,0,H
+2023-08-12,Zaglebie Sosnowiec,Resovia Rzeszow,0,1,A
+2023-08-13,Lechia Gdansk,Znicz Pruszkow,1,0,H
+2023-08-13,Stal Rzeszow,Arka Gdynia,2,3,A
+2023-08-13,Nieciecza,Motor Lublin,0,2,A
+2023-08-14,Polonia Warszawa,Miedz Legnica,3,4,A
+2023-08-18,Podbeskidzie,Zaglebie Sosnowiec,2,1,H
+2023-08-18,Wisla Krakow,Odra Opole,1,3,A
+2023-08-19,Wisla Plock,Nieciecza,3,1,H
+2023-08-19,Motor Lublin,Gornik eczna,0,1,A
+2023-08-19,Chrobry Gogow,Polonia Warszawa,0,3,A
+2023-08-20,Arka Gdynia,Tychy 71,2,0,H
+2023-08-20,Miedz Legnica,Stal Rzeszow,2,1,H
+2023-08-20,Resovia Rzeszow,Lechia Gdansk,2,0,H
+2023-08-21,Znicz Pruszkow,GKS Katowice,0,2,A
+2023-08-25,Tychy 71,Miedz Legnica,0,0,D
+2023-08-25,Lechia Gdansk,Podbeskidzie,3,0,H
+2023-08-26,GKS Katowice,Resovia Rzeszow,3,0,H
+2023-08-26,Polonia Warszawa,Motor Lublin,0,1,A
+2023-08-26,Gornik eczna,Wisla Plock,1,0,H
+2023-08-27,Wisla Krakow,Arka Gdynia,5,1,H
+2023-08-27,Stal Rzeszow,Chrobry Gogow,2,1,H
+2023-08-27,Nieciecza,Znicz Pruszkow,1,0,H
+2023-08-28,Odra Opole,Zaglebie Sosnowiec,0,0,D
+2023-09-01,Resovia Rzeszow,Nieciecza,0,4,A
+2023-09-01,Miedz Legnica,Wisla Krakow,1,1,D
+2023-09-02,Odra Opole,Arka Gdynia,1,0,H
+2023-09-02,Wisla Plock,Polonia Warszawa,3,0,H
+2023-09-02,Znicz Pruszkow,Gornik eczna,0,1,A
+2023-09-03,Zaglebie Sosnowiec,Lechia Gdansk,5,2,H
+2023-09-03,Podbeskidzie,GKS Katowice,1,1,D
+2023-09-03,Chrobry Gogow,Tychy 71,2,1,H
+2023-09-03,Motor Lublin,Stal Rzeszow,3,2,H
+2023-09-15,Stal Rzeszow,Wisla Plock,0,1,A
+2023-09-15,GKS Katowice,Zaglebie Sosnowiec,0,1,A
+2023-09-16,Polonia Warszawa,Znicz Pruszkow,0,1,A
+2023-09-16,Wisla Krakow,Chrobry Gogow,1,1,D
+2023-09-16,Odra Opole,Lechia Gdansk,0,0,D
+2023-09-17,Tychy 71,Motor Lublin,2,0,H
+2023-09-17,Nieciecza,Podbeskidzie,2,2,D
+2023-09-17,Arka Gdynia,Miedz Legnica,2,1,H
+2023-09-18,Gornik eczna,Resovia Rzeszow,3,1,H
+2023-09-22,Miedz Legnica,Odra Opole,1,2,A
+2023-09-22,Podbeskidzie,Gornik eczna,1,1,D
+2023-09-22,Lechia Gdansk,GKS Katowice,5,1,H
+2023-09-23,Resovia Rzeszow,Polonia Warszawa,1,1,D
+2023-09-23,Motor Lublin,Wisla Krakow,1,4,A
+2023-09-23,Chrobry Gogow,Arka Gdynia,1,0,H
+2023-09-24,Wisla Plock,Tychy 71,4,1,H
+2023-09-24,Znicz Pruszkow,Stal Rzeszow,1,2,A
+2023-09-24,Zaglebie Sosnowiec,Nieciecza,1,3,A
+2023-09-29,Polonia Warszawa,Podbeskidzie,2,0,H
+2023-09-29,Arka Gdynia,Motor Lublin,2,0,H
+2023-09-30,Miedz Legnica,Chrobry Gogow,1,1,D
+2023-09-30,Odra Opole,GKS Katowice,1,0,H
+2023-09-30,Stal Rzeszow,Resovia Rzeszow,2,1,H
+2023-10-01,Wisla Krakow,Wisla Plock,0,0,D
+2023-10-01,Nieciecza,Lechia Gdansk,0,0,D
+2023-10-01,Tychy 71,Znicz Pruszkow,2,1,H
+2023-10-02,Gornik eczna,Zaglebie Sosnowiec,1,1,D
+2023-10-06,Chrobry Gogow,Odra Opole,0,0,D
+2023-10-06,Lechia Gdansk,Gornik eczna,1,1,D
+2023-10-07,Podbeskidzie,Stal Rzeszow,0,1,A
+2023-10-07,Wisla Krakow,Znicz Pruszkow,6,2,H
+2023-10-07,Wisla Plock,Arka Gdynia,0,3,A
+2023-10-08,Motor Lublin,Miedz Legnica,1,3,A
+2023-10-08,Resovia Rzeszow,Tychy 71,2,0,H
+2023-10-08,Zaglebie Sosnowiec,Polonia Warszawa,0,2,A
+2023-10-08,GKS Katowice,Nieciecza,0,0,D
+2023-10-20,Chrobry Gogow,Motor Lublin,0,1,A
+2023-10-20,Wisla Krakow,Resovia Rzeszow,4,1,H
+2023-10-21,Stal Rzeszow,Zaglebie Sosnowiec,0,0,D
+2023-10-21,Tychy 71,Podbeskidzie,3,0,H
+2023-10-21,Miedz Legnica,Wisla Plock,4,0,H
+2023-10-22,Odra Opole,Nieciecza,2,1,H
+2023-10-22,Gornik eczna,GKS Katowice,1,1,D
+2023-10-23,Arka Gdynia,Znicz Pruszkow,2,0,H
+2023-10-27,Wisla Plock,Chrobry Gogow,2,1,H
+2023-10-27,GKS Katowice,Polonia Warszawa,0,2,A
+2023-10-27,Podbeskidzie,Wisla Krakow,2,1,H
+2023-10-28,Lechia Gdansk,Stal Rzeszow,2,1,H
+2023-10-28,Zaglebie Sosnowiec,Tychy 71,0,1,A
+2023-10-28,Nieciecza,Gornik eczna,3,0,H
+2023-10-29,Motor Lublin,Odra Opole,2,0,H
+2023-10-29,Resovia Rzeszow,Arka Gdynia,1,2,A
+2023-10-30,Znicz Pruszkow,Miedz Legnica,1,1,D
+2023-10-31,Polonia Warszawa,Lechia Gdansk,0,1,A
+2023-11-03,Miedz Legnica,Resovia Rzeszow,1,2,A
+2023-11-03,Wisla Krakow,Zaglebie Sosnowiec,0,0,D
+2023-11-04,Arka Gdynia,Podbeskidzie,1,0,H
+2023-11-04,Odra Opole,Gornik eczna,0,3,A
+2023-11-04,Polonia Warszawa,Nieciecza,1,1,D
+2023-11-05,Tychy 71,Lechia Gdansk,1,3,A
+2023-11-05,Stal Rzeszow,GKS Katowice,2,2,D
+2023-11-05,Motor Lublin,Wisla Plock,2,2,D
+2023-11-06,Chrobry Gogow,Znicz Pruszkow,1,0,H
+2023-11-10,Znicz Pruszkow,Motor Lublin,1,0,H
+2023-11-10,Lechia Gdansk,Wisla Krakow,0,0,D
+2023-11-11,Gornik eczna,Polonia Warszawa,0,0,D
+2023-11-11,Wisla Plock,Odra Opole,2,0,H
+2023-11-11,Nieciecza,Stal Rzeszow,1,2,A
+2023-11-12,GKS Katowice,Tychy 71,1,0,H
+2023-11-12,Resovia Rzeszow,Chrobry Gogow,0,1,A
+2023-11-12,Zaglebie Sosnowiec,Arka Gdynia,1,3,A
+2023-11-12,Podbeskidzie,Miedz Legnica,0,0,D
+2023-11-24,Chrobry Gogow,Podbeskidzie,3,0,H
+2023-11-24,Arka Gdynia,Lechia Gdansk,1,0,H
+2023-11-25,Stal Rzeszow,Gornik eczna,3,0,H
+2023-11-25,Wisla Krakow,GKS Katowice,3,2,H
+2023-11-25,Motor Lublin,Resovia Rzeszow,3,2,H
+2023-11-26,Odra Opole,Polonia Warszawa,3,0,H
+2023-11-26,Wisla Plock,Znicz Pruszkow,0,1,A
+2023-11-26,Miedz Legnica,Zaglebie Sosnowiec,2,0,H
+2023-11-27,Tychy 71,Nieciecza,3,2,H
+2023-12-01,Polonia Warszawa,Stal Rzeszow,2,2,D
+2023-12-01,Nieciecza,Wisla Krakow,2,1,H
+2023-12-02,GKS Katowice,Arka Gdynia,1,1,D
+2023-12-03,Lechia Gdansk,Miedz Legnica,2,0,H
+2023-12-03,Znicz Pruszkow,Odra Opole,1,0,H
+2023-12-08,Tychy 71,Polonia Warszawa,1,0,H
+2023-12-08,Zaglebie Sosnowiec,Motor Lublin,0,4,A
+2023-12-09,Wisla Plock,Podbeskidzie,2,1,H
+2023-12-09,Lechia Gdansk,Chrobry Gogow,1,0,H
+2023-12-09,Resovia Rzeszow,Znicz Pruszkow,1,2,A
+2023-12-10,Wisla Krakow,Gornik eczna,4,0,H
+2023-12-10,Odra Opole,Stal Rzeszow,1,1,D
+2023-12-11,Nieciecza,Arka Gdynia,2,1,H
+2023-12-15,Resovia Rzeszow,Odra Opole,1,0,H
+2023-12-15,Wisla Plock,Zaglebie Sosnowiec,2,0,H
+2023-12-16,Chrobry Gogow,GKS Katowice,1,4,A
+2023-12-16,Arka Gdynia,Gornik eczna,0,0,D
+2023-12-16,Motor Lublin,Lechia Gdansk,1,0,H
+2023-12-17,Wisla Krakow,Polonia Warszawa,2,1,H
+2023-12-17,Znicz Pruszkow,Podbeskidzie,0,1,A
+2023-12-17,Tychy 71,Stal Rzeszow,2,0,H
+2023-12-18,Miedz Legnica,Nieciecza,2,2,D
+2023-12-19,Zaglebie Sosnowiec,Chrobry Gogow,1,2,A
+2024-02-10,Resovia Rzeszow,Wisla Plock,2,2,D
+2024-02-16,Gornik eczna,Miedz Legnica,0,0,D
+2024-02-16,Tychy 71,Odra Opole,2,0,H
+2024-02-17,Podbeskidzie,Resovia Rzeszow,2,2,D
+2024-02-17,Polonia Warszawa,Arka Gdynia,0,3,A
+2024-02-17,Lechia Gdansk,Wisla Plock,3,1,H
+2024-02-18,Stal Rzeszow,Wisla Krakow,1,2,A
+2024-02-18,Nieciecza,Chrobry Gogow,1,1,D
+2024-02-18,Zaglebie Sosnowiec,Znicz Pruszkow,0,1,A
+2024-02-19,GKS Katowice,Motor Lublin,2,0,H
+2024-02-20,Gornik eczna,Tychy 71,2,0,H
+2024-02-23,Miedz Legnica,Polonia Warszawa,2,1,H
+2024-02-23,Wisla Krakow,Tychy 71,0,1,A
+2024-02-24,Podbeskidzie,Odra Opole,1,2,A
+2024-02-24,Wisla Plock,GKS Katowice,2,1,H
+2024-02-24,Motor Lublin,Nieciecza,1,0,H
+2024-02-25,Arka Gdynia,Stal Rzeszow,5,1,H
+2024-02-25,Znicz Pruszkow,Lechia Gdansk,0,2,A
+2024-02-25,Resovia Rzeszow,Zaglebie Sosnowiec,1,0,H
+2024-02-26,Chrobry Gogow,Gornik eczna,0,1,A
+2024-02-27,GKS Katowice,Miedz Legnica,2,0,H
+2024-02-28,Podbeskidzie,Motor Lublin,1,2,A
+2024-03-01,Stal Rzeszow,Miedz Legnica,1,3,A
+2024-03-01,Tychy 71,Arka Gdynia,0,1,A
+2024-03-02,GKS Katowice,Znicz Pruszkow,3,1,H
+2024-03-02,Nieciecza,Wisla Plock,2,2,D
+2024-03-02,Odra Opole,Wisla Krakow,1,2,A
+2024-03-03,Gornik eczna,Motor Lublin,1,1,D
+2024-03-03,Polonia Warszawa,Chrobry Gogow,1,1,D
+2024-03-03,Zaglebie Sosnowiec,Podbeskidzie,0,0,D
+2024-03-04,Lechia Gdansk,Resovia Rzeszow,4,0,H
+2024-03-08,Znicz Pruszkow,Nieciecza,2,0,H
+2024-03-08,Arka Gdynia,Wisla Krakow,1,1,D
+2024-03-09,Chrobry Gogow,Stal Rzeszow,2,1,H
+2024-03-09,Motor Lublin,Polonia Warszawa,1,1,D
+2024-03-09,Miedz Legnica,Tychy 71,2,2,D
+2024-03-10,Podbeskidzie,Lechia Gdansk,1,2,A
+2024-03-10,Resovia Rzeszow,GKS Katowice,0,2,A
+2024-03-10,Zaglebie Sosnowiec,Odra Opole,1,1,D
+2024-03-11,Wisla Plock,Gornik eczna,2,1,H
+2024-03-15,Lechia Gdansk,Zaglebie Sosnowiec,4,0,H
+2024-03-15,Polonia Warszawa,Wisla Plock,2,2,D
+2024-03-15,Wisla Krakow,Miedz Legnica,2,0,H
+2024-03-16,Nieciecza,Resovia Rzeszow,1,4,A
+2024-03-16,Tychy 71,Chrobry Gogow,1,2,A
+2024-03-16,Stal Rzeszow,Motor Lublin,2,1,H
+2024-03-17,Arka Gdynia,Odra Opole,2,2,D
+2024-03-17,GKS Katowice,Podbeskidzie,5,0,H
+2024-03-17,Gornik eczna,Znicz Pruszkow,1,1,D
+2024-03-30,Resovia Rzeszow,Gornik eczna,2,3,A
+2024-03-30,Miedz Legnica,Arka Gdynia,0,1,A
+2024-03-30,Chrobry Gogow,Wisla Krakow,3,2,H
+2024-03-30,Podbeskidzie,Nieciecza,2,1,H
+2024-04-01,Znicz Pruszkow,Polonia Warszawa,0,0,D
+2024-04-01,Zaglebie Sosnowiec,GKS Katowice,0,4,A
+2024-04-01,Motor Lublin,Tychy 71,1,1,D
+2024-04-02,Wisla Plock,Stal Rzeszow,1,2,A
+2024-04-02,Lechia Gdansk,Odra Opole,2,1,H
+2024-04-05,Gornik eczna,Podbeskidzie,2,0,H
+2024-04-05,Arka Gdynia,Chrobry Gogow,2,1,H
+2024-04-06,Nieciecza,Zaglebie Sosnowiec,1,1,D
+2024-04-06,Tychy 71,Wisla Plock,0,1,A
+2024-04-06,Odra Opole,Miedz Legnica,0,0,D
+2024-04-07,Wisla Krakow,Motor Lublin,1,3,A
+2024-04-07,GKS Katowice,Lechia Gdansk,1,0,H
+2024-04-07,Stal Rzeszow,Znicz Pruszkow,2,0,H
+2024-04-08,Polonia Warszawa,Resovia Rzeszow,1,0,H
+2024-04-12,Zaglebie Sosnowiec,Gornik eczna,0,1,A
+2024-04-12,Resovia Rzeszow,Stal Rzeszow,0,2,A
+2024-04-12,Motor Lublin,Arka Gdynia,2,2,D
+2024-04-13,GKS Katowice,Odra Opole,1,3,A
+2024-04-13,Wisla Plock,Wisla Krakow,1,1,D
+2024-04-13,Chrobry Gogow,Miedz Legnica,0,0,D
+2024-04-14,Lechia Gdansk,Nieciecza,3,1,H
+2024-04-14,Znicz Pruszkow,Tychy 71,2,3,A
+2024-04-14,Podbeskidzie,Polonia Warszawa,1,2,A
+2024-04-19,Stal Rzeszow,Podbeskidzie,2,2,D
+2024-04-19,Polonia Warszawa,Zaglebie Sosnowiec,3,3,D
+2024-04-19,Znicz Pruszkow,Wisla Krakow,2,3,A
+2024-04-20,Tychy 71,Resovia Rzeszow,1,3,A
+2024-04-20,Gornik eczna,Lechia Gdansk,0,1,A
+2024-04-20,Odra Opole,Chrobry Gogow,3,0,H
+2024-04-21,Arka Gdynia,Wisla Plock,2,0,H
+2024-04-21,Miedz Legnica,Motor Lublin,2,0,H
+2024-04-21,Nieciecza,GKS Katowice,2,2,D
+2024-04-23,Zaglebie Sosnowiec,Stal Rzeszow,0,1,A
+2024-04-23,Podbeskidzie,Tychy 71,0,2,A
+2024-04-23,Resovia Rzeszow,Wisla Krakow,1,1,D
+2024-04-24,Wisla Plock,Miedz Legnica,2,1,H
+2024-04-24,Znicz Pruszkow,Arka Gdynia,2,0,H
+2024-04-24,Lechia Gdansk,Polonia Warszawa,1,0,H
+2024-04-25,Nieciecza,Odra Opole,0,1,A
+2024-04-25,Motor Lublin,Chrobry Gogow,1,1,D
+2024-04-25,GKS Katowice,Gornik eczna,0,0,D
+2024-04-26,Wisla Krakow,Podbeskidzie,3,1,H
+2024-04-27,Stal Rzeszow,Lechia Gdansk,4,2,H
+2024-04-27,Tychy 71,Zaglebie Sosnowiec,2,0,H
+2024-04-28,Arka Gdynia,Resovia Rzeszow,3,2,H
+2024-04-28,Miedz Legnica,Znicz Pruszkow,1,2,A
+2024-04-28,Polonia Warszawa,GKS Katowice,1,2,A
+2024-04-28,Gornik eczna,Nieciecza,0,1,A
+2024-04-29,Chrobry Gogow,Wisla Plock,0,2,A
+2024-04-29,Odra Opole,Motor Lublin,0,2,A
+2024-05-03,Gornik eczna,Odra Opole,1,0,H
+2024-05-03,Podbeskidzie,Arka Gdynia,0,0,D
+2024-05-04,Resovia Rzeszow,Miedz Legnica,1,1,D
+2024-05-04,Lechia Gdansk,Tychy 71,3,0,H
+2024-05-04,GKS Katowice,Stal Rzeszow,8,0,H
+2024-05-05,Nieciecza,Polonia Warszawa,2,2,D
+2024-05-05,Wisla Plock,Motor Lublin,1,0,H
+2024-05-05,Znicz Pruszkow,Chrobry Gogow,1,1,D
+2024-05-06,Zaglebie Sosnowiec,Wisla Krakow,1,1,D
+2024-05-10,Motor Lublin,Znicz Pruszkow,3,3,D
+2024-05-10,Tychy 71,GKS Katowice,2,3,A
+2024-05-11,Chrobry Gogow,Resovia Rzeszow,1,1,D
+2024-05-11,Wisla Krakow,Lechia Gdansk,3,4,A
+2024-05-11,Stal Rzeszow,Nieciecza,4,2,H
+2024-05-12,Arka Gdynia,Zaglebie Sosnowiec,1,0,H
+2024-05-12,Odra Opole,Wisla Plock,3,0,H
+2024-05-12,Polonia Warszawa,Gornik eczna,0,2,A
+2024-05-13,Miedz Legnica,Podbeskidzie,6,1,H
+2024-05-17,Znicz Pruszkow,Wisla Plock,2,1,H
+2024-05-17,Resovia Rzeszow,Motor Lublin,1,3,A
+2024-05-18,Zaglebie Sosnowiec,Miedz Legnica,1,2,A
+2024-05-18,GKS Katowice,Wisla Krakow,5,2,H
+2024-05-18,Gornik eczna,Stal Rzeszow,1,3,A
+2024-05-19,Polonia Warszawa,Odra Opole,1,1,D
+2024-05-19,Nieciecza,Tychy 71,6,1,H
+2024-05-19,Lechia Gdansk,Arka Gdynia,2,1,H
+2024-05-20,Podbeskidzie,Chrobry Gogow,0,1,A
+2024-05-26,Miedz Legnica,Lechia Gdansk,4,1,H
+2024-05-26,Wisla Krakow,Nieciecza,0,3,A
+2024-05-26,Wisla Plock,Resovia Rzeszow,1,2,A
+2024-05-26,Arka Gdynia,GKS Katowice,0,1,A
+2024-05-26,Chrobry Gogow,Zaglebie Sosnowiec,2,0,H
+2024-05-26,Odra Opole,Znicz Pruszkow,2,0,H
+2024-05-26,Tychy 71,Gornik eczna,0,1,A
+2024-05-26,Stal Rzeszow,Polonia Warszawa,1,2,A
+2024-05-26,Motor Lublin,Podbeskidzie,2,1,H
+2024-05-30,Motor Lublin,Gornik eczna,0,0,D
+2024-05-30,Arka Gdynia,Odra Opole,4,2,H
+2024-06-02,Arka Gdynia,Motor Lublin,1,2,A

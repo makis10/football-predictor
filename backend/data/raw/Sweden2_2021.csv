@@ -1,0 +1,245 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2021-04-10,Falkenbergs FF,Gais,0,1,A
+2021-04-10,Landskrona BoIS,IFK Varnamo,2,0,H
+2021-04-11,Orgryte IS,Osters IF,0,1,A
+2021-04-11,Akropolis,IK brage,1,1,D
+2021-04-11,Trelleborg,Norrby IF,2,1,H
+2021-04-11,Jonkopings Sodra,Vasalund,5,1,H
+2021-04-12,Vasteras SK FK,AFC Eskilstuna,0,0,D
+2021-04-13,GIF Sundsvall,Helsingborg,2,2,D
+2021-04-17,AFC Eskilstuna,Akropolis,3,0,H
+2021-04-17,Gais,Vasteras SK FK,1,0,H
+2021-04-17,IK brage,Falkenbergs FF,0,1,A
+2021-04-17,Vasalund,Trelleborg,2,2,D
+2021-04-18,Osters IF,Landskrona BoIS,1,1,D
+2021-04-18,IFK Varnamo,GIF Sundsvall,2,1,H
+2021-04-19,Norrby IF,Jonkopings Sodra,2,0,H
+2021-04-20,Helsingborg,Orgryte IS,4,1,H
+2021-04-24,Trelleborg,Orgryte IS,1,1,D
+2021-04-24,GIF Sundsvall,Norrby IF,2,0,H
+2021-04-24,IFK Varnamo,IK brage,1,0,H
+2021-04-24,Osters IF,Falkenbergs FF,2,1,H
+2021-04-25,Landskrona BoIS,Akropolis,1,1,D
+2021-04-25,AFC Eskilstuna,Gais,0,0,D
+2021-04-26,Vasteras SK FK,Vasalund,2,1,H
+2021-04-27,Jonkopings Sodra,Helsingborg,0,0,D
+2021-05-01,Norrby IF,Landskrona BoIS,1,1,D
+2021-05-01,Falkenbergs FF,IFK Varnamo,0,3,A
+2021-05-01,Akropolis,GIF Sundsvall,1,1,D
+2021-05-01,Orgryte IS,Vasteras SK FK,1,1,D
+2021-05-02,Vasalund,IK brage,1,0,H
+2021-05-02,Helsingborg,AFC Eskilstuna,1,0,H
+2021-05-03,Jonkopings Sodra,Trelleborg,1,1,D
+2021-05-04,Gais,Osters IF,3,2,H
+2021-05-08,Landskrona BoIS,AFC Eskilstuna,1,0,H
+2021-05-08,Falkenbergs FF,Orgryte IS,3,2,H
+2021-05-08,Vasteras SK FK,Jonkopings Sodra,2,1,H
+2021-05-09,Vasalund,Norrby IF,0,1,A
+2021-05-09,IK brage,Helsingborg,0,0,D
+2021-05-10,Trelleborg,Akropolis,1,1,D
+2021-05-10,IFK Varnamo,Gais,1,0,H
+2021-05-11,Osters IF,GIF Sundsvall,0,2,A
+2021-05-15,Akropolis,Orgryte IS,0,1,A
+2021-05-15,GIF Sundsvall,Vasalund,3,2,H
+2021-05-15,IK brage,Norrby IF,1,2,A
+2021-05-15,Helsingborg,Osters IF,0,1,A
+2021-05-16,AFC Eskilstuna,Jonkopings Sodra,1,0,H
+2021-05-17,Vasteras SK FK,IFK Varnamo,0,0,D
+2021-05-18,Gais,Trelleborg,2,3,A
+2021-05-18,Landskrona BoIS,Falkenbergs FF,2,1,H
+2021-05-19,Helsingborg,Norrby IF,0,2,A
+2021-05-22,Jonkopings Sodra,Landskrona BoIS,3,1,H
+2021-05-22,Orgryte IS,GIF Sundsvall,0,2,A
+2021-05-23,Gais,Helsingborg,0,1,A
+2021-05-23,Osters IF,IK brage,1,2,A
+2021-05-23,Norrby IF,AFC Eskilstuna,2,1,H
+2021-05-23,Falkenbergs FF,Vasalund,0,3,A
+2021-05-24,Trelleborg,Vasteras SK FK,0,1,A
+2021-05-24,IFK Varnamo,Akropolis,1,0,H
+2021-05-29,Landskrona BoIS,Orgryte IS,1,1,D
+2021-05-29,AFC Eskilstuna,Trelleborg,3,2,H
+2021-05-29,Akropolis,Falkenbergs FF,1,0,H
+2021-05-29,Norrby IF,Gais,0,2,A
+2021-05-30,Vasalund,Osters IF,1,0,H
+2021-05-31,Vasteras SK FK,IK brage,2,2,D
+2021-06-01,GIF Sundsvall,Jonkopings Sodra,1,2,A
+2021-06-05,IK brage,AFC Eskilstuna,1,0,H
+2021-06-05,Trelleborg,GIF Sundsvall,1,0,H
+2021-06-05,Osters IF,Norrby IF,0,0,D
+2021-06-05,Orgryte IS,IFK Varnamo,0,0,D
+2021-06-06,Falkenbergs FF,Vasteras SK FK,2,1,H
+2021-06-07,Jonkopings Sodra,Akropolis,4,1,H
+2021-06-08,Gais,Landskrona BoIS,1,3,A
+2021-06-12,AFC Eskilstuna,Falkenbergs FF,1,1,D
+2021-06-12,Vasteras SK FK,Osters IF,0,0,D
+2021-06-12,Orgryte IS,Jonkopings Sodra,0,0,D
+2021-06-12,Landskrona BoIS,IK brage,2,1,H
+2021-06-12,Akropolis,Vasalund,3,2,H
+2021-06-13,IFK Varnamo,Trelleborg,0,1,A
+2021-06-15,GIF Sundsvall,Gais,2,0,H
+2021-06-19,IK brage,Orgryte IS,1,3,A
+2021-06-19,Norrby IF,IFK Varnamo,2,0,H
+2021-06-19,Osters IF,AFC Eskilstuna,2,0,H
+2021-06-19,Jonkopings Sodra,Gais,1,0,H
+2021-06-19,Vasalund,Landskrona BoIS,0,3,A
+2021-06-20,Trelleborg,Falkenbergs FF,2,1,H
+2021-06-21,GIF Sundsvall,Vasteras SK FK,1,0,H
+2021-07-11,Helsingborg,Akropolis,1,0,H
+2021-07-17,Akropolis,Norrby IF,0,3,A
+2021-07-17,Gais,IK brage,0,2,A
+2021-07-17,Landskrona BoIS,Trelleborg,4,2,H
+2021-07-17,IFK Varnamo,Osters IF,2,0,H
+2021-07-18,AFC Eskilstuna,GIF Sundsvall,2,0,H
+2021-07-18,Vasteras SK FK,Helsingborg,0,4,A
+2021-07-19,Orgryte IS,Vasalund,3,1,H
+2021-07-20,Falkenbergs FF,Jonkopings Sodra,2,3,A
+2021-07-22,Helsingborg,IFK Varnamo,2,3,A
+2021-07-24,IK brage,Trelleborg,0,1,A
+2021-07-24,Landskrona BoIS,GIF Sundsvall,2,0,H
+2021-07-25,AFC Eskilstuna,Orgryte IS,4,0,H
+2021-07-25,IFK Varnamo,Vasalund,1,0,H
+2021-07-26,Gais,Akropolis,1,1,D
+2021-07-26,Norrby IF,Vasteras SK FK,4,1,H
+2021-07-27,Helsingborg,Falkenbergs FF,4,0,H
+2021-07-27,Osters IF,Jonkopings Sodra,1,0,H
+2021-07-31,Trelleborg,Helsingborg,2,0,H
+2021-07-31,Vasalund,AFC Eskilstuna,4,2,H
+2021-08-01,Falkenbergs FF,Norrby IF,1,1,D
+2021-08-01,Vasteras SK FK,Landskrona BoIS,3,1,H
+2021-08-02,GIF Sundsvall,IK brage,3,3,D
+2021-08-02,Jonkopings Sodra,IFK Varnamo,0,3,A
+2021-08-03,Orgryte IS,Gais,1,0,H
+2021-08-03,Akropolis,Osters IF,1,0,H
+2021-08-04,Vasalund,Helsingborg,0,1,A
+2021-08-07,Falkenbergs FF,GIF Sundsvall,1,1,D
+2021-08-07,IFK Varnamo,AFC Eskilstuna,1,1,D
+2021-08-08,IK brage,Jonkopings Sodra,3,2,H
+2021-08-09,Gais,Vasalund,2,0,H
+2021-08-09,Norrby IF,Orgryte IS,2,1,H
+2021-08-09,Vasteras SK FK,Akropolis,2,3,A
+2021-08-10,Helsingborg,Landskrona BoIS,2,1,H
+2021-08-10,Osters IF,Trelleborg,0,0,D
+2021-08-14,Jonkopings Sodra,Osters IF,2,1,H
+2021-08-14,GIF Sundsvall,IFK Varnamo,2,0,H
+2021-08-14,Orgryte IS,IK brage,1,1,D
+2021-08-14,Akropolis,Helsingborg,0,3,A
+2021-08-14,AFC Eskilstuna,Norrby IF,4,1,H
+2021-08-15,Landskrona BoIS,Vasteras SK FK,1,0,H
+2021-08-15,Trelleborg,Gais,1,0,H
+2021-08-15,Vasalund,Falkenbergs FF,3,1,H
+2021-08-21,IFK Varnamo,Landskrona BoIS,2,0,H
+2021-08-21,IK brage,Vasteras SK FK,3,3,D
+2021-08-22,Falkenbergs FF,Trelleborg,1,0,H
+2021-08-22,GIF Sundsvall,AFC Eskilstuna,3,1,H
+2021-08-22,Osters IF,Orgryte IS,0,0,D
+2021-08-23,Helsingborg,Vasalund,0,0,D
+2021-08-23,Norrby IF,Akropolis,0,1,A
+2021-08-24,Gais,Jonkopings Sodra,0,1,A
+2021-08-28,AFC Eskilstuna,IK brage,2,1,H
+2021-08-28,Landskrona BoIS,Helsingborg,0,1,A
+2021-08-28,Vasteras SK FK,Falkenbergs FF,1,3,A
+2021-08-29,Orgryte IS,Norrby IF,2,2,D
+2021-08-29,Vasalund,Gais,3,4,A
+2021-08-30,Akropolis,IFK Varnamo,1,2,A
+2021-08-31,Trelleborg,Osters IF,1,0,H
+2021-09-04,Falkenbergs FF,Akropolis,3,3,D
+2021-09-04,IK brage,Landskrona BoIS,1,0,H
+2021-09-05,Norrby IF,Vasalund,0,0,D
+2021-09-06,GIF Sundsvall,Orgryte IS,0,1,A
+2021-09-06,Osters IF,Vasteras SK FK,1,1,D
+2021-09-11,Trelleborg,IK brage,3,1,H
+2021-09-11,Orgryte IS,Akropolis,3,1,H
+2021-09-11,Jonkopings Sodra,Falkenbergs FF,2,1,H
+2021-09-11,Landskrona BoIS,Gais,2,1,H
+2021-09-11,Vasteras SK FK,Norrby IF,1,1,D
+2021-09-11,AFC Eskilstuna,Helsingborg,2,2,D
+2021-09-12,Osters IF,IFK Varnamo,2,0,H
+2021-09-13,Vasalund,GIF Sundsvall,1,2,A
+2021-09-14,Helsingborg,Trelleborg,1,1,D
+2021-09-16,IFK Varnamo,Jonkopings Sodra,2,0,H
+2021-09-18,Norrby IF,Trelleborg,1,1,D
+2021-09-18,AFC Eskilstuna,Vasalund,1,2,A
+2021-09-18,IK brage,Gais,1,4,A
+2021-09-18,GIF Sundsvall,Landskrona BoIS,1,0,H
+2021-09-19,Akropolis,Vasteras SK FK,0,2,A
+2021-09-19,Falkenbergs FF,Osters IF,0,2,A
+2021-09-20,IFK Varnamo,Orgryte IS,1,1,D
+2021-09-21,Helsingborg,Jonkopings Sodra,3,0,H
+2021-09-24,Orgryte IS,AFC Eskilstuna,2,2,D
+2021-09-25,Gais,Falkenbergs FF,0,0,D
+2021-09-25,Landskrona BoIS,Norrby IF,1,0,H
+2021-09-25,Vasteras SK FK,GIF Sundsvall,1,2,A
+2021-09-25,Vasalund,Akropolis,0,1,A
+2021-09-25,Jonkopings Sodra,IK brage,0,0,D
+2021-09-26,Osters IF,Helsingborg,2,1,H
+2021-09-26,Trelleborg,IFK Varnamo,2,3,A
+2021-09-29,GIF Sundsvall,Trelleborg,2,0,H
+2021-09-29,Falkenbergs FF,Landskrona BoIS,2,1,H
+2021-09-29,Gais,Orgryte IS,2,1,H
+2021-09-29,Norrby IF,Helsingborg,2,2,D
+2021-09-29,Akropolis,Jonkopings Sodra,1,1,D
+2021-09-30,AFC Eskilstuna,Osters IF,1,1,D
+2021-09-30,IFK Varnamo,Vasteras SK FK,3,2,H
+2021-09-30,IK brage,Vasalund,3,0,H
+2021-10-03,Akropolis,AFC Eskilstuna,1,0,H
+2021-10-03,Jonkopings Sodra,Norrby IF,0,1,A
+2021-10-03,Helsingborg,GIF Sundsvall,1,2,A
+2021-10-03,Orgryte IS,Falkenbergs FF,1,1,D
+2021-10-04,IK brage,Osters IF,2,2,D
+2021-10-04,Vasalund,IFK Varnamo,1,1,D
+2021-10-05,Trelleborg,Landskrona BoIS,2,2,D
+2021-10-05,Vasteras SK FK,Gais,3,0,H
+2021-10-14,Jonkopings Sodra,GIF Sundsvall,1,1,D
+2021-10-16,Gais,IFK Varnamo,1,2,A
+2021-10-16,AFC Eskilstuna,Vasteras SK FK,0,1,A
+2021-10-17,Norrby IF,IK brage,2,3,A
+2021-10-18,GIF Sundsvall,Akropolis,3,0,H
+2021-10-18,Orgryte IS,Trelleborg,2,2,D
+2021-10-18,Osters IF,Vasalund,3,2,H
+2021-10-19,Falkenbergs FF,Helsingborg,1,4,A
+2021-10-19,Landskrona BoIS,Jonkopings Sodra,2,0,H
+2021-10-21,Gais,AFC Eskilstuna,2,3,A
+2021-10-23,Vasalund,Vasteras SK FK,0,1,A
+2021-10-23,Jonkopings Sodra,Orgryte IS,0,2,A
+2021-10-23,Norrby IF,Osters IF,0,0,D
+2021-10-24,Akropolis,Landskrona BoIS,1,0,H
+2021-10-24,IK brage,GIF Sundsvall,0,0,D
+2021-10-25,IFK Varnamo,Falkenbergs FF,3,2,H
+2021-10-26,Trelleborg,AFC Eskilstuna,4,0,H
+2021-10-26,Helsingborg,Gais,0,1,A
+2021-10-30,Vasteras SK FK,Orgryte IS,2,2,D
+2021-10-31,Akropolis,Trelleborg,3,1,H
+2021-10-31,Helsingborg,IK brage,3,0,H
+2021-10-31,Vasalund,Jonkopings Sodra,1,1,D
+2021-11-01,AFC Eskilstuna,IFK Varnamo,0,2,A
+2021-11-01,Gais,Norrby IF,1,4,A
+2021-11-02,GIF Sundsvall,Falkenbergs FF,1,1,D
+2021-11-02,Landskrona BoIS,Osters IF,1,4,A
+2021-11-06,Trelleborg,Vasalund,1,2,A
+2021-11-06,IFK Varnamo,Helsingborg,3,1,H
+2021-11-06,Jonkopings Sodra,Vasteras SK FK,0,0,D
+2021-11-06,Orgryte IS,Landskrona BoIS,3,2,H
+2021-11-07,Falkenbergs FF,AFC Eskilstuna,3,4,A
+2021-11-07,Norrby IF,GIF Sundsvall,1,4,A
+2021-11-07,Osters IF,Gais,1,0,H
+2021-11-07,IK brage,Akropolis,2,0,H
+2021-11-20,GIF Sundsvall,Osters IF,1,1,D
+2021-11-20,Orgryte IS,Helsingborg,1,1,D
+2021-11-20,IK brage,IFK Varnamo,3,1,H
+2021-11-20,Norrby IF,Falkenbergs FF,1,0,H
+2021-11-20,Landskrona BoIS,Vasalund,3,1,H
+2021-11-20,Vasteras SK FK,Trelleborg,1,1,D
+2021-11-21,Jonkopings Sodra,AFC Eskilstuna,1,2,A
+2021-11-21,Akropolis,Gais,0,0,D
+2021-11-27,Trelleborg,Jonkopings Sodra,1,3,A
+2021-11-27,AFC Eskilstuna,Landskrona BoIS,1,0,H
+2021-11-27,Helsingborg,Vasteras SK FK,2,2,D
+2021-11-27,Falkenbergs FF,IK brage,1,2,A
+2021-11-27,IFK Varnamo,Norrby IF,1,2,A
+2021-11-27,Gais,GIF Sundsvall,2,1,H
+2021-11-27,Osters IF,Akropolis,2,1,H
+2021-11-27,Vasalund,Orgryte IS,1,2,A
+2021-12-02,Dalkurd FF,Gais,2,1,H
+2021-12-02,Skovde AIK,Akropolis,3,0,H
+2021-12-05,Akropolis,Skovde AIK,0,0,D
+2021-12-05,Gais,Dalkurd FF,1,1,D

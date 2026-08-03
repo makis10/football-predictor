@@ -49,6 +49,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
+from backend.app.ml.league_registry import disambiguate  # noqa: E402
 from scripts._http_retry import get_with_retry  # noqa: E402
 
 API_BASE = "https://v3.football.api-sports.io"
@@ -77,6 +78,16 @@ LEAGUES: dict[str, int] = {
     "Spain2":       141,
     "Italy2":       136,
     "Netherlands2":  89,
+    # 2026-08-03. Same gap as the ten above, found by sweeping every upcoming
+    # fixture against the CSV team counts: these four promoted sides were being
+    # priced off almost nothing, and — unlike Elversberg — they slipped past
+    # _predictable(), because 1 historical row is enough to count as "known".
+    # Ids read off /leagues per country, never guessed: Poland 106 is the
+    # Ekstraklasa we already predict, 107 is the I Liga underneath it.
+    "Poland2":      107,   # I Liga (Wieczysta Krakow) — API holds 2018+
+    "Romania2":     284,   # Liga II (Corvinul) — 2016+
+    "Sweden2":      114,   # Superettan (Orgryte) — 2016+
+    "BrazilSerieB":  72,   # Serie B (Remo) — 2012+
     # ── Foreign top flights: history for European qualifying opponents ──
     "Croatia":      210, "Czechia":      345, "Hungary":     271,
     "Serbia":       286, "Ukraine":      333, "Israel":      383,
@@ -214,10 +225,16 @@ def main() -> None:
                 hg, ag = g.get("home"), g.get("away")
                 if hg is None or ag is None:
                     continue
+                # disambiguate() before storing: API-Football calls the
+                # Belarusian club "Arsenal" and the Cypriot one "Olympiakos",
+                # exactly as it calls Arsenal FC and Olympiacos Piraeus, and a
+                # bare string cannot hold both. See league_registry.
                 rows.append({
                     "Date":     fx["date"][:10],
-                    "HomeTeam": _ascii(entry["teams"]["home"]["name"]).strip(),
-                    "AwayTeam": _ascii(entry["teams"]["away"]["name"]).strip(),
+                    "HomeTeam": disambiguate(
+                        name, _ascii(entry["teams"]["home"]["name"]).strip()),
+                    "AwayTeam": disambiguate(
+                        name, _ascii(entry["teams"]["away"]["name"]).strip()),
                     "FTHG":     int(hg),
                     "FTAG":     int(ag),
                     "FTR":      "H" if hg > ag else ("A" if ag > hg else "D"),

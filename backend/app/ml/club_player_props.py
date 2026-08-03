@@ -15,11 +15,50 @@ For FINISHED matches each prop is settled against player_match_stats actuals.
 """
 from __future__ import annotations
 
+import json
+import os
 from datetime import datetime, timedelta
+from pathlib import Path
 
 # Club goal environment for the Elo→λ fallback (national uses 2.65; club scoring
 # runs a touch higher). Only used when the model's Poisson λ are unavailable.
 MU_TOTAL, ELO_SCALE = 2.70, 220.0
+
+# Current-squad roster, written by scripts/fetch_club_squads.py.
+_SQUADS_PATH = Path(__file__).resolve().parents[2] / "data" / "models" / "club_squads.json"
+
+_squads_cache: tuple[float, dict] | None = None
+
+
+def _load_squads() -> dict:
+    """{our_team_name: set(player_id)} of current squads, or {} when unavailable.
+
+    player_match_stats is a match log, not a roster, so a transferred player
+    keeps appearing for his old club — for a whole transfer window there is no
+    new match data that could ever correct it. This file is the roster source
+    of truth; teams absent from it are left unfiltered.
+
+    Cached in-process and invalidated on mtime, so a refreshed file is picked up
+    without a restart.
+    """
+    global _squads_cache
+    try:
+        mtime = os.path.getmtime(_SQUADS_PATH)
+    except OSError:
+        return {}
+    if _squads_cache and _squads_cache[0] == mtime:
+        return _squads_cache[1]
+    try:
+        raw = json.loads(_SQUADS_PATH.read_text())
+    except Exception:
+        return {}
+    squads = {
+        team: {int(p) for p in entry.get("player_ids", [])}
+        for team, entry in raw.items()
+        if entry.get("player_ids")
+    }
+    _squads_cache = (mtime, squads)
+    return squads
 
 
 def _date_window(d, days: int = 1) -> tuple[str, str]:
@@ -56,12 +95,20 @@ def club_player_props(db, match, prediction=None) -> dict:
     # Only this fixture's two clubs — the table holds every national + club
     # player log, and scanning all of it per request cost ~2.4 s.
     rates = load_player_rates(db, teams=[t for t in (ah, aa) if t])
+    squads = _load_squads()
     teams: dict[str, list[dict]] = {}
     for our_name, api_name, team_xg in ((match.home_team, ah, lam_h), (match.away_team, aa, lam_a)):
         if not api_name:
             continue
+        # Restrict to the current squad so players who have since transferred
+        # away don't keep appearing off the back of last season's match log.
+        # Teams missing from club_squads.json are left unfiltered.
+        team_rates = rates.get(api_name, [])
+        roster = squads.get(our_name)
+        if roster:
+            team_rates = [r for r in team_rates if r.player_id in roster]
         props = []
-        for p in compute_props(rates.get(api_name, []), team_xg):
+        for p in compute_props(team_rates, team_xg):
             props.append({
                 "team":        our_name,
                 "player_name": p["player"],

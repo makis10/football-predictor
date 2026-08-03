@@ -53,10 +53,7 @@ def main() -> None:
 
     from backend.app.database import SessionLocal
     from backend.app.models.match import Match
-    from scripts.team_resolver import COMMON_ALIASES
-
-    def canon(t: str) -> str:
-        return COMMON_ALIASES.get(t, t)
+    from scripts.team_resolver import canonical as canon
 
     db = SessionLocal()
     try:

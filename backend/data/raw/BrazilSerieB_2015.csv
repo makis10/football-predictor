@@ -1,0 +1,381 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2015-05-08,ABC,Oeste,0,1,A
+2015-05-08,Atletico Goianiense,BOA,1,0,H
+2015-05-09,Parana,Ceara,1,0,H
+2015-05-09,Mogi Mirim,Criciuma,1,2,A
+2015-05-09,Vitoria,Sampaio Correa,0,2,A
+2015-05-09,Macae,Santa Cruz,2,0,H
+2015-05-09,America Mineiro,Bahia,1,1,D
+2015-05-09,Nautico Recife,Luverdense,1,0,H
+2015-05-10,Paysandu,Botafogo,0,1,A
+2015-05-10,CRB,Bragantino,2,0,H
+2015-05-15,Bahia,Mogi Mirim,4,1,H
+2015-05-15,Sampaio Correa,Macae,3,1,H
+2015-05-15,Santa Cruz,Parana,4,1,H
+2015-05-16,Criciuma,ABC,0,2,A
+2015-05-16,Botafogo,CRB,4,1,H
+2015-05-16,Bragantino,Paysandu,1,0,H
+2015-05-16,BOA,Nautico Recife,0,1,A
+2015-05-16,Oeste,Vitoria,1,2,A
+2015-05-17,Ceara,Atletico Goianiense,2,0,H
+2015-05-17,Luverdense,America Mineiro,1,0,H
+2015-05-19,Macae,Oeste,4,2,H
+2015-05-20,Nautico Recife,Criciuma,2,0,H
+2015-05-22,Vitoria,Bragantino,4,1,H
+2015-05-23,Mogi Mirim,Sampaio Correa,1,1,D
+2015-05-23,America Mineiro,Santa Cruz,4,1,H
+2015-05-23,Parana,BOA,1,1,D
+2015-05-23,Paysandu,Ceara,2,1,H
+2015-05-23,Atletico Goianiense,Botafogo,0,0,D
+2015-05-24,ABC,Luverdense,1,1,D
+2015-05-24,CRB,Bahia,0,3,A
+2015-05-26,Ceara,CRB,1,1,D
+2015-05-29,Bragantino,America Mineiro,0,1,A
+2015-05-29,Santa Cruz,ABC,0,1,A
+2015-05-30,Bahia,Parana,1,0,H
+2015-05-30,Botafogo,Vitoria,2,0,H
+2015-05-30,BOA,Paysandu,0,1,A
+2015-05-30,Criciuma,Atletico Goianiense,1,0,H
+2015-05-30,Sampaio Correa,Nautico Recife,1,1,D
+2015-05-31,Luverdense,Macae,1,2,A
+2015-05-31,Oeste,Mogi Mirim,0,0,D
+2015-06-02,Vitoria,Criciuma,2,1,H
+2015-06-02,Mogi Mirim,BOA,0,2,A
+2015-06-02,America Mineiro,Sampaio Correa,1,0,H
+2015-06-02,Paysandu,Santa Cruz,2,1,H
+2015-06-02,Nautico Recife,Ceara,2,0,H
+2015-06-02,ABC,Bragantino,1,1,D
+2015-06-03,Macae,Bahia,0,0,D
+2015-06-03,Parana,Botafogo,1,2,A
+2015-06-03,Atletico Goianiense,Luverdense,0,1,A
+2015-06-03,CRB,Oeste,3,0,H
+2015-06-05,Vitoria,Atletico Goianiense,3,1,H
+2015-06-05,Nautico Recife,America Mineiro,2,1,H
+2015-06-06,Botafogo,Mogi Mirim,3,0,H
+2015-06-06,Bragantino,Bahia,2,0,H
+2015-06-06,Criciuma,Macae,0,3,A
+2015-06-06,Ceara,Sampaio Correa,1,3,A
+2015-06-06,Luverdense,Santa Cruz,2,2,D
+2015-06-07,BOA,Oeste,1,2,A
+2015-06-07,Paysandu,Parana,2,1,H
+2015-06-07,CRB,ABC,0,1,A
+2015-06-09,Parana,Luverdense,1,0,H
+2015-06-10,Oeste,Botafogo,0,1,A
+2015-06-12,Sampaio Correa,Criciuma,3,1,H
+2015-06-12,ABC,Paysandu,0,2,A
+2015-06-13,Santa Cruz,BOA,0,0,D
+2015-06-13,Bahia,Ceara,1,0,H
+2015-06-13,Mogi Mirim,Vitoria,1,1,D
+2015-06-13,Atletico Goianiense,Nautico Recife,2,0,H
+2015-06-14,Macae,Bragantino,2,5,A
+2015-06-14,America Mineiro,CRB,1,0,H
+2015-06-16,Nautico Recife,Paysandu,1,1,D
+2015-06-17,Luverdense,Criciuma,0,1,A
+2015-06-19,Parana,Mogi Mirim,3,1,H
+2015-06-19,Sampaio Correa,Bahia,0,0,D
+2015-06-20,Botafogo,BOA,1,1,D
+2015-06-20,Vitoria,ABC,2,0,H
+2015-06-20,America Mineiro,Atletico Goianiense,1,0,H
+2015-06-20,Ceara,Santa Cruz,3,3,D
+2015-06-21,Bragantino,Oeste,3,1,H
+2015-06-21,CRB,Macae,3,1,H
+2015-06-23,Criciuma,America Mineiro,2,2,D
+2015-06-24,Paysandu,Vitoria,1,0,H
+2015-06-27,Atletico Goianiense,Parana,1,1,D
+2015-06-27,Oeste,Ceara,2,0,H
+2015-06-27,Bahia,Luverdense,1,0,H
+2015-06-27,Macae,Botafogo,4,2,H
+2015-06-27,Mogi Mirim,CRB,0,1,A
+2015-06-27,Santa Cruz,Sampaio Correa,1,0,H
+2015-06-27,ABC,Nautico Recife,3,3,D
+2015-06-28,BOA,Bragantino,3,0,H
+2015-06-30,Paysandu,Atletico Goianiense,2,0,H
+2015-07-01,Luverdense,Ceara,3,0,H
+2015-07-03,Parana,Criciuma,0,0,D
+2015-07-04,Botafogo,Sampaio Correa,5,0,H
+2015-07-04,Vitoria,Bahia,4,1,H
+2015-07-04,Bragantino,Santa Cruz,1,2,A
+2015-07-04,Nautico Recife,Oeste,2,1,H
+2015-07-04,ABC,Macae,1,1,D
+2015-07-05,America Mineiro,Mogi Mirim,3,1,H
+2015-07-05,CRB,BOA,1,1,D
+2015-07-07,Bahia,Paysandu,2,0,H
+2015-07-07,Macae,America Mineiro,1,1,D
+2015-07-07,Mogi Mirim,Nautico Recife,2,1,H
+2015-07-07,BOA,Vitoria,0,0,D
+2015-07-07,Criciuma,Bragantino,1,0,H
+2015-07-07,Sampaio Correa,Luverdense,3,1,H
+2015-07-07,Atletico Goianiense,ABC,1,2,A
+2015-07-07,Oeste,Parana,1,0,H
+2015-07-08,Santa Cruz,CRB,2,1,H
+2015-07-08,Ceara,Botafogo,0,0,D
+2015-07-10,Macae,Paysandu,2,1,H
+2015-07-10,Ceara,Criciuma,1,1,D
+2015-07-10,Atletico Goianiense,Mogi Mirim,1,1,D
+2015-07-11,Bragantino,Botafogo,1,0,H
+2015-07-11,America Mineiro,ABC,2,1,H
+2015-07-11,Parana,Vitoria,0,1,A
+2015-07-11,Sampaio Correa,BOA,3,0,H
+2015-07-11,Nautico Recife,Santa Cruz,2,1,H
+2015-07-11,CRB,Luverdense,0,0,D
+2015-07-12,Bahia,Oeste,1,0,H
+2015-07-14,Mogi Mirim,Macae,3,1,H
+2015-07-14,ABC,Parana,1,4,A
+2015-07-18,Vitoria,CRB,3,1,H
+2015-07-18,Luverdense,Bragantino,2,1,H
+2015-07-18,Botafogo,Nautico Recife,1,0,H
+2015-07-18,Criciuma,Bahia,2,1,H
+2015-07-18,Paysandu,Sampaio Correa,1,1,D
+2015-07-18,Santa Cruz,Atletico Goianiense,3,0,H
+2015-07-19,BOA,Ceara,0,0,D
+2015-07-19,Oeste,America Mineiro,3,1,H
+2015-07-21,Macae,Parana,0,0,D
+2015-07-24,America Mineiro,BOA,2,0,H
+2015-07-25,Bragantino,Atletico Goianiense,0,1,A
+2015-07-25,Bahia,Botafogo,1,1,D
+2015-07-25,Criciuma,Santa Cruz,0,0,D
+2015-07-25,Sampaio Correa,ABC,3,2,H
+2015-07-25,Nautico Recife,Vitoria,2,1,H
+2015-07-25,CRB,Paysandu,3,0,H
+2015-07-26,Ceara,Mogi Mirim,2,3,A
+2015-07-26,Luverdense,Oeste,1,1,D
+2015-07-28,Vitoria,Macae,0,0,D
+2015-07-28,Mogi Mirim,Bragantino,2,3,A
+2015-07-28,BOA,Luverdense,2,1,H
+2015-07-28,Parana,Nautico Recife,2,0,H
+2015-07-28,Paysandu,America Mineiro,2,0,H
+2015-07-28,Santa Cruz,Bahia,3,1,H
+2015-07-28,ABC,Ceara,0,1,A
+2015-07-28,Oeste,Sampaio Correa,1,0,H
+2015-07-29,Botafogo,Criciuma,0,0,D
+2015-07-29,Atletico Goianiense,CRB,1,0,H
+2015-07-31,BOA,Criciuma,1,1,D
+2015-08-01,Paysandu,Mogi Mirim,1,1,D
+2015-08-01,ABC,Bahia,0,3,A
+2015-08-01,Vitoria,America Mineiro,1,1,D
+2015-08-01,Botafogo,Luverdense,0,0,D
+2015-08-01,Parana,CRB,0,0,D
+2015-08-01,Nautico Recife,Macae,1,1,D
+2015-08-01,Atletico Goianiense,Sampaio Correa,3,1,H
+2015-08-01,Oeste,Santa Cruz,1,0,H
+2015-08-02,Bragantino,Ceara,3,0,H
+2015-08-05,America Mineiro,Parana,2,0,H
+2015-08-05,Sampaio Correa,Bragantino,2,0,H
+2015-08-07,Criciuma,Oeste,3,2,H
+2015-08-07,Luverdense,Paysandu,1,0,H
+2015-08-08,Bahia,BOA,4,1,H
+2015-08-08,Macae,Atletico Goianiense,0,1,A
+2015-08-08,Santa Cruz,Botafogo,1,0,H
+2015-08-08,Ceara,Vitoria,1,2,A
+2015-08-08,CRB,Nautico Recife,1,0,H
+2015-08-09,Mogi Mirim,ABC,2,2,D
+2015-08-11,Bahia,Nautico Recife,1,1,D
+2015-08-11,Criciuma,Paysandu,1,0,H
+2015-08-11,Sampaio Correa,CRB,1,0,H
+2015-08-11,Santa Cruz,Mogi Mirim,2,1,H
+2015-08-11,Ceara,America Mineiro,0,2,A
+2015-08-11,Oeste,Atletico Goianiense,0,0,D
+2015-08-11,Luverdense,Vitoria,0,2,A
+2015-08-12,Botafogo,ABC,3,1,H
+2015-08-12,Bragantino,Parana,2,1,H
+2015-08-12,BOA,Macae,2,1,H
+2015-08-14,Vitoria,Santa Cruz,2,1,H
+2015-08-14,Parana,Sampaio Correa,1,0,H
+2015-08-15,Atletico Goianiense,Bahia,1,1,D
+2015-08-15,America Mineiro,Botafogo,1,2,A
+2015-08-15,Paysandu,Oeste,3,1,H
+2015-08-15,Nautico Recife,Bragantino,3,1,H
+2015-08-15,ABC,BOA,0,1,A
+2015-08-15,CRB,Criciuma,3,1,H
+2015-08-16,Macae,Ceara,1,2,A
+2015-08-16,Mogi Mirim,Luverdense,1,1,D
+2015-08-21,Criciuma,Mogi Mirim,0,0,D
+2015-08-22,Santa Cruz,Macae,1,0,H
+2015-08-22,Bahia,America Mineiro,1,1,D
+2015-08-22,Bragantino,CRB,2,1,H
+2015-08-22,BOA,Atletico Goianiense,2,2,D
+2015-08-22,Sampaio Correa,Vitoria,1,0,H
+2015-08-22,Luverdense,Nautico Recife,5,1,H
+2015-08-22,Oeste,ABC,1,1,D
+2015-08-23,Botafogo,Paysandu,2,3,A
+2015-08-23,Ceara,Parana,4,3,H
+2015-08-25,Vitoria,Oeste,1,1,D
+2015-08-26,ABC,Criciuma,2,2,D
+2015-08-28,America Mineiro,Luverdense,1,2,A
+2015-08-29,CRB,Botafogo,2,1,H
+2015-08-29,Macae,Sampaio Correa,1,1,D
+2015-08-29,Parana,Santa Cruz,3,2,H
+2015-08-29,Paysandu,Bragantino,2,0,H
+2015-08-29,Nautico Recife,BOA,1,0,H
+2015-08-29,Atletico Goianiense,Ceara,3,2,H
+2015-08-30,Mogi Mirim,Bahia,1,1,D
+2015-09-01,Criciuma,Nautico Recife,1,0,H
+2015-09-01,Ceara,Paysandu,0,0,D
+2015-09-01,Bahia,CRB,3,2,H
+2015-09-01,Bragantino,Vitoria,2,1,H
+2015-09-01,BOA,Parana,1,2,A
+2015-09-01,Sampaio Correa,Mogi Mirim,3,1,H
+2015-09-01,Santa Cruz,America Mineiro,2,1,H
+2015-09-01,Luverdense,ABC,1,1,D
+2015-09-02,Botafogo,Atletico Goianiense,4,0,H
+2015-09-02,Oeste,Macae,1,2,A
+2015-09-04,Mogi Mirim,Oeste,0,0,D
+2015-09-04,Nautico Recife,Sampaio Correa,1,1,D
+2015-09-04,ABC,Santa Cruz,1,1,D
+2015-09-04,CRB,Ceara,1,3,A
+2015-09-05,Macae,Luverdense,1,3,A
+2015-09-05,Parana,Bahia,1,0,H
+2015-09-05,Vitoria,Botafogo,1,2,A
+2015-09-06,America Mineiro,Bragantino,1,2,A
+2015-09-06,Paysandu,BOA,3,0,H
+2015-09-22,Atletico Goianiense,Criciuma,0,0,D
+2015-09-07,Oeste,CRB,0,0,D
+2015-09-07,Ceara,Nautico Recife,1,0,H
+2015-09-08,Sampaio Correa,America Mineiro,0,2,A
+2015-09-08,Bahia,Macae,1,0,H
+2015-09-08,Botafogo,Parana,2,1,H
+2015-09-08,Bragantino,ABC,3,1,H
+2015-09-08,BOA,Mogi Mirim,0,1,A
+2015-09-08,Criciuma,Vitoria,2,3,A
+2015-09-08,Santa Cruz,Paysandu,1,2,A
+2015-09-08,Luverdense,Atletico Goianiense,1,1,D
+2015-09-11,Bahia,Bragantino,3,2,H
+2015-09-11,Parana,Paysandu,1,1,D
+2015-09-11,Oeste,BOA,2,1,H
+2015-09-12,Mogi Mirim,Botafogo,0,3,A
+2015-09-12,America Mineiro,Nautico Recife,2,1,H
+2015-09-12,Sampaio Correa,Ceara,1,0,H
+2015-09-12,Santa Cruz,Luverdense,2,0,H
+2015-09-12,ABC,CRB,0,0,D
+2015-09-12,Atletico Goianiense,Vitoria,0,0,D
+2015-09-13,Macae,Criciuma,1,1,D
+2015-09-15,Bragantino,Macae,2,2,D
+2015-09-15,Ceara,Bahia,2,2,D
+2015-09-15,Vitoria,Mogi Mirim,4,1,H
+2015-09-15,Criciuma,Sampaio Correa,1,1,D
+2015-09-15,Paysandu,ABC,3,2,H
+2015-09-15,Nautico Recife,Atletico Goianiense,1,1,D
+2015-09-15,Luverdense,Parana,2,0,H
+2015-09-15,CRB,America Mineiro,1,0,H
+2015-09-16,Botafogo,Oeste,1,1,D
+2015-09-16,BOA,Santa Cruz,1,3,A
+2015-09-18,ABC,Vitoria,0,0,D
+2015-09-18,Atletico Goianiense,America Mineiro,1,1,D
+2015-09-19,BOA,Botafogo,0,1,A
+2015-09-19,Bahia,Sampaio Correa,1,1,D
+2015-09-19,Mogi Mirim,Parana,1,2,A
+2015-09-19,Paysandu,Nautico Recife,0,1,A
+2015-09-19,Santa Cruz,Ceara,2,1,H
+2015-09-19,Oeste,Bragantino,1,1,D
+2015-09-20,Macae,CRB,0,0,D
+2015-09-20,Criciuma,Luverdense,0,1,A
+2015-09-22,Botafogo,Macae,2,1,H
+2015-09-22,Bragantino,BOA,2,1,H
+2015-09-26,America Mineiro,Criciuma,2,1,H
+2015-09-26,Vitoria,Paysandu,3,1,H
+2015-09-26,Sampaio Correa,Santa Cruz,0,0,D
+2015-09-26,Nautico Recife,ABC,3,0,H
+2015-09-26,Ceara,Oeste,1,1,D
+2015-09-26,CRB,Mogi Mirim,2,1,H
+2015-09-27,Parana,Atletico Goianiense,1,2,A
+2015-09-27,Luverdense,Bahia,2,2,D
+2015-09-30,Santa Cruz,Bragantino,3,1,H
+2015-09-30,Ceara,Luverdense,0,1,A
+2015-10-02,Criciuma,Parana,0,0,D
+2015-10-03,Sampaio Correa,Botafogo,2,2,D
+2015-10-03,Bahia,Vitoria,1,3,A
+2015-10-03,Macae,ABC,3,1,H
+2015-10-03,BOA,CRB,1,3,A
+2015-10-03,Atletico Goianiense,Paysandu,2,1,H
+2015-10-03,Oeste,Nautico Recife,2,0,H
+2015-10-04,Mogi Mirim,America Mineiro,1,2,A
+2015-10-06,Bragantino,Criciuma,2,0,H
+2015-10-06,America Mineiro,Macae,1,0,H
+2015-10-06,Parana,Oeste,1,1,D
+2015-10-06,Nautico Recife,Mogi Mirim,1,0,H
+2015-10-06,ABC,Atletico Goianiense,1,1,D
+2015-10-06,CRB,Santa Cruz,3,2,H
+2015-10-07,Paysandu,Bahia,0,0,D
+2015-10-07,Luverdense,Sampaio Correa,2,1,H
+2015-10-10,Vitoria,BOA,2,1,H
+2015-10-20,Botafogo,Ceara,0,1,A
+2015-10-16,BOA,Sampaio Correa,2,2,D
+2015-10-17,Vitoria,Parana,1,1,D
+2015-10-17,Botafogo,Bragantino,4,0,H
+2015-10-17,Mogi Mirim,Atletico Goianiense,0,2,A
+2015-10-17,Criciuma,Ceara,3,0,H
+2015-10-17,Santa Cruz,Nautico Recife,1,3,A
+2015-10-17,ABC,America Mineiro,4,2,H
+2015-10-17,Oeste,Bahia,0,1,A
+2015-10-18,Paysandu,Macae,1,1,D
+2015-10-18,Luverdense,CRB,2,0,H
+2015-10-20,Bahia,Criciuma,1,0,H
+2015-10-23,Macae,Mogi Mirim,1,0,H
+2015-10-23,America Mineiro,Oeste,2,1,H
+2015-10-24,Sampaio Correa,Paysandu,2,0,H
+2015-10-24,Nautico Recife,Botafogo,1,4,A
+2015-10-24,Atletico Goianiense,Santa Cruz,0,0,D
+2015-10-24,CRB,Vitoria,0,0,D
+2015-10-24,Bragantino,Luverdense,3,2,H
+2015-10-24,Ceara,BOA,2,1,H
+2015-10-27,Parana,ABC,0,0,D
+2015-10-27,BOA,America Mineiro,1,2,A
+2015-10-27,Oeste,Luverdense,1,0,H
+2015-10-27,Santa Cruz,Criciuma,2,0,H
+2015-10-30,Parana,Macae,3,0,H
+2015-10-30,Atletico Goianiense,Bragantino,0,1,A
+2015-10-31,Vitoria,Nautico Recife,2,3,A
+2015-10-31,Botafogo,Bahia,1,0,H
+2015-10-31,Mogi Mirim,Ceara,0,2,A
+2015-10-31,Paysandu,CRB,5,1,H
+2015-10-31,ABC,Sampaio Correa,2,3,A
+2015-11-03,Bragantino,Mogi Mirim,3,1,H
+2015-11-03,America Mineiro,Paysandu,3,1,H
+2015-11-06,Ceara,ABC,3,0,H
+2015-11-06,Luverdense,BOA,2,0,H
+2015-11-07,Bahia,Santa Cruz,1,2,A
+2015-11-07,Macae,Vitoria,0,2,A
+2015-11-07,Criciuma,Botafogo,1,0,H
+2015-11-07,Nautico Recife,Parana,2,0,H
+2015-11-07,Sampaio Correa,Oeste,1,1,D
+2015-11-07,CRB,Atletico Goianiense,4,1,H
+2015-11-10,Macae,Nautico Recife,1,1,D
+2015-11-10,Mogi Mirim,Paysandu,1,1,D
+2015-11-10,America Mineiro,Vitoria,4,0,H
+2015-11-10,Criciuma,BOA,3,0,H
+2015-11-10,Bahia,ABC,2,2,D
+2015-11-10,Sampaio Correa,Atletico Goianiense,2,0,H
+2015-11-10,Santa Cruz,Oeste,3,1,H
+2015-11-10,Ceara,Bragantino,3,0,H
+2015-11-10,Luverdense,Botafogo,0,1,A
+2015-11-10,CRB,Parana,2,0,H
+2015-11-13,Paysandu,Luverdense,3,2,H
+2015-11-13,ABC,Mogi Mirim,3,1,H
+2015-11-13,Oeste,Criciuma,1,1,D
+2015-11-14,Vitoria,Ceara,1,0,H
+2015-11-14,Botafogo,Santa Cruz,0,3,A
+2015-11-14,Bragantino,Sampaio Correa,3,0,H
+2015-11-14,BOA,Bahia,3,0,H
+2015-11-14,Nautico Recife,CRB,1,1,D
+2015-11-14,Parana,America Mineiro,1,0,H
+2015-11-14,Atletico Goianiense,Macae,3,4,A
+2015-11-20,Atletico Goianiense,Oeste,3,1,H
+2015-11-20,Macae,BOA,1,1,D
+2015-11-20,ABC,Botafogo,1,2,A
+2015-11-21,Vitoria,Luverdense,3,0,H
+2015-11-21,Mogi Mirim,Santa Cruz,0,3,A
+2015-11-21,America Mineiro,Ceara,1,1,D
+2015-11-21,Parana,Bragantino,0,2,A
+2015-11-21,Paysandu,Criciuma,1,0,H
+2015-11-21,Nautico Recife,Bahia,1,0,H
+2015-11-21,CRB,Sampaio Correa,2,1,H
+2015-11-24,BOA,ABC,2,0,H
+2015-11-27,Criciuma,CRB,2,1,H
+2015-11-27,Luverdense,Mogi Mirim,2,0,H
+2015-11-28,Bahia,Atletico Goianiense,1,0,H
+2015-11-28,Botafogo,America Mineiro,0,0,D
+2015-11-28,Bragantino,Nautico Recife,0,2,A
+2015-11-28,Sampaio Correa,Parana,1,1,D
+2015-11-28,Santa Cruz,Vitoria,3,1,H
+2015-11-28,Ceara,Macae,1,0,H
+2015-11-28,Oeste,Paysandu,0,0,D

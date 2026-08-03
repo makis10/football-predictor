@@ -1,0 +1,381 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2025-04-04,Goias,Amazonas,1,0,H
+2025-04-05,Criciuma,Operario-PR,1,2,A
+2025-04-05,Paysandu,Atletico Paranaense,1,2,A
+2025-04-05,CRB,Chapecoense-sc,1,0,H
+2025-04-05,Coritiba,Vila Nova,1,0,H
+2025-04-05,America Mineiro,Botafogo SP,1,0,H
+2025-04-06,Volta Redonda,Cuiaba,0,1,A
+2025-04-06,Ferroviaria,Remo,1,1,D
+2025-04-06,Avai,Novorizontino,1,1,D
+2025-04-07,Atletico Goianiense,Athletic Club,4,2,H
+2025-04-10,Atletico Paranaense,Criciuma,2,1,H
+2025-04-11,Cuiaba,Avai,2,2,D
+2025-04-12,Chapecoense-sc,Coritiba,1,2,A
+2025-04-12,Vila Nova,Paysandu,1,0,H
+2025-04-12,Novorizontino,Volta Redonda,1,0,H
+2025-04-12,Amazonas,Ferroviaria,0,0,D
+2025-04-12,Operario-PR,Goias,1,2,A
+2025-04-13,Remo,America Mineiro,2,0,H
+2025-04-13,Athletic Club,CRB,1,2,A
+2025-04-13,Botafogo SP,Atletico Goianiense,1,1,D
+2025-04-15,Cuiaba,Atletico Paranaense,2,1,H
+2025-04-16,Avai,Operario-PR,1,0,H
+2025-04-16,Paysandu,Chapecoense-sc,0,2,A
+2025-04-17,Coritiba,Novorizontino,0,0,D
+2025-04-17,Goias,Vila Nova,2,2,D
+2025-04-17,Criciuma,Athletic Club,4,0,H
+2025-04-17,CRB,Volta Redonda,1,0,H
+2025-04-17,Botafogo SP,Remo,2,2,D
+2025-04-18,Ferroviaria,Atletico Goianiense,2,0,H
+2025-04-18,America Mineiro,Amazonas,3,1,H
+2025-04-19,Operario-PR,Paysandu,0,0,D
+2025-04-20,Vila Nova,Botafogo SP,2,0,H
+2025-04-20,Chapecoense-sc,Athletic Club,1,0,H
+2025-04-20,Atletico Paranaense,CRB,2,0,H
+2025-04-20,America Mineiro,Goias,1,0,H
+2025-04-21,Amazonas,Avai,0,2,A
+2025-04-21,Novorizontino,Criciuma,1,1,D
+2025-04-22,Remo,Coritiba,1,0,H
+2025-04-22,Atletico Goianiense,Cuiaba,1,1,D
+2025-04-22,Volta Redonda,Ferroviaria,0,0,D
+2025-04-25,Novorizontino,Atletico Paranaense,2,1,H
+2025-04-25,Criciuma,Remo,1,1,D
+2025-04-26,Vila Nova,Chapecoense-sc,1,0,H
+2025-04-26,Coritiba,Operario-PR,2,0,H
+2025-04-26,Avai,America Mineiro,3,0,H
+2025-04-27,Athletic Club,Volta Redonda,2,1,H
+2025-04-27,Amazonas,Atletico Goianiense,1,1,D
+2025-04-27,Paysandu,CRB,1,1,D
+2025-04-27,Cuiaba,Ferroviaria,1,0,H
+2025-04-28,Botafogo SP,Goias,0,1,A
+2025-05-03,Ferroviaria,Coritiba,2,1,H
+2025-05-03,Remo,Amazonas,1,0,H
+2025-05-03,Volta Redonda,Paysandu,1,0,H
+2025-05-04,Atletico Goianiense,Novorizontino,1,0,H
+2025-05-04,Chapecoense-sc,Criciuma,2,1,H
+2025-05-04,Atletico Paranaense,Botafogo SP,1,4,A
+2025-05-04,Operario-PR,America Mineiro,1,0,H
+2025-05-05,Goias,Avai,2,1,H
+2025-05-06,CRB,Cuiaba,1,1,D
+2025-05-07,Athletic Club,Vila Nova,0,1,A
+2025-05-09,Atletico Paranaense,Chapecoense-sc,1,1,D
+2025-05-10,Avai,Atletico Goianiense,0,0,D
+2025-05-10,Goias,Coritiba,1,0,H
+2025-05-11,Criciuma,Volta Redonda,0,0,D
+2025-05-11,Cuiaba,Operario-PR,2,3,A
+2025-05-11,Novorizontino,Ferroviaria,2,2,D
+2025-05-12,Botafogo SP,Athletic Club,0,3,A
+2025-05-13,Amazonas,CRB,1,1,D
+2025-05-14,Remo,Vila Nova,2,0,H
+2025-05-14,America Mineiro,Paysandu,2,2,D
+2025-05-16,Ferroviaria,Avai,1,1,D
+2025-05-16,Chapecoense-sc,Cuiaba,2,1,H
+2025-05-17,Operario-PR,Botafogo SP,3,0,H
+2025-05-17,Vila Nova,Atletico Paranaense,2,1,H
+2025-05-17,Athletic Club,Novorizontino,0,2,A
+2025-05-18,Atletico Goianiense,Remo,1,1,D
+2025-05-18,CRB,Criciuma,1,0,H
+2025-05-18,Paysandu,Goias,0,0,D
+2025-05-19,Volta Redonda,Amazonas,1,1,D
+2025-05-20,Coritiba,America Mineiro,1,0,H
+2025-05-24,Goias,Ferroviaria,2,0,H
+2025-05-24,Atletico Paranaense,Athletic Club,1,0,H
+2025-05-24,Remo,Volta Redonda,1,1,D
+2025-05-24,Avai,Chapecoense-sc,2,1,H
+2025-05-25,Novorizontino,Paysandu,3,1,H
+2025-05-25,Amazonas,Operario-PR,2,0,H
+2025-05-26,Criciuma,Coritiba,0,1,A
+2025-05-26,Botafogo SP,CRB,2,1,H
+2025-05-27,Cuiaba,Vila Nova,1,0,H
+2025-05-27,America Mineiro,Atletico Goianiense,2,1,H
+2025-05-30,Ferroviaria,Botafogo SP,1,1,D
+2025-05-30,Vila Nova,Novorizontino,0,1,A
+2025-05-31,Coritiba,Avai,2,1,H
+2025-05-31,Atletico Goianiense,Goias,1,2,A
+2025-05-31,Athletic Club,Cuiaba,0,2,A
+2025-06-01,Operario-PR,Atletico Paranaense,2,2,D
+2025-06-01,CRB,Remo,2,0,H
+2025-06-01,Volta Redonda,America Mineiro,1,0,H
+2025-06-02,Chapecoense-sc,Amazonas,4,0,H
+2025-06-03,Paysandu,Criciuma,0,1,A
+2025-06-05,Botafogo SP,Coritiba,0,0,D
+2025-06-06,Novorizontino,Chapecoense-sc,1,0,H
+2025-06-07,Cuiaba,Paysandu,1,0,H
+2025-06-07,America Mineiro,Ferroviaria,1,2,A
+2025-06-07,Avai,CRB,1,0,H
+2025-06-08,Goias,Volta Redonda,2,0,H
+2025-06-08,Atletico Paranaense,Atletico Goianiense,0,1,A
+2025-06-08,Remo,Operario-PR,2,1,H
+2025-06-09,Criciuma,Vila Nova,1,0,H
+2025-06-09,Amazonas,Athletic Club,1,0,H
+2025-06-13,Vila Nova,America Mineiro,0,3,A
+2025-06-14,Paysandu,Botafogo SP,1,0,H
+2025-06-14,CRB,Goias,2,0,H
+2025-06-14,Atletico Paranaense,Remo,2,1,H
+2025-06-14,Athletic Club,Operario-PR,2,1,H
+2025-06-15,Atletico Goianiense,Coritiba,0,0,D
+2025-06-15,Novorizontino,Cuiaba,3,0,H
+2025-06-15,Criciuma,Amazonas,3,2,H
+2025-06-16,Chapecoense-sc,Ferroviaria,2,1,H
+2025-06-17,Volta Redonda,Avai,1,1,D
+2025-06-20,Botafogo SP,Chapecoense-sc,1,0,H
+2025-06-21,America Mineiro,Criciuma,1,1,D
+2025-06-21,Avai,Atletico Paranaense,1,2,A
+2025-06-21,Remo,Paysandu,0,1,A
+2025-06-21,Ferroviaria,CRB,1,0,H
+2025-06-22,Atletico Goianiense,Volta Redonda,2,0,H
+2025-06-22,Coritiba,Cuiaba,2,0,H
+2025-06-22,Amazonas,Vila Nova,2,1,H
+2025-06-23,Operario-PR,Novorizontino,2,0,H
+2025-06-24,Goias,Athletic Club,1,2,A
+2025-06-27,CRB,America Mineiro,1,2,A
+2025-06-27,Criciuma,Avai,1,2,A
+2025-06-28,Vila Nova,Atletico Goianiense,1,0,H
+2025-06-28,Atletico Paranaense,Coritiba,0,1,A
+2025-06-29,Volta Redonda,Operario-PR,1,0,H
+2025-06-29,Athletic Club,Remo,1,2,A
+2025-06-29,Chapecoense-sc,Goias,1,2,A
+2025-06-29,Novorizontino,Amazonas,1,1,D
+2025-06-30,Paysandu,Ferroviaria,2,1,H
+2025-07-01,Cuiaba,Botafogo SP,0,1,A
+2025-07-04,Atletico Goianiense,CRB,2,1,H
+2025-07-04,Coritiba,Volta Redonda,2,0,H
+2025-07-05,Remo,Cuiaba,0,0,D
+2025-07-05,Avai,Paysandu,0,0,D
+2025-07-05,Amazonas,Atletico Paranaense,0,1,A
+2025-07-06,Ferroviaria,Vila Nova,1,3,A
+2025-07-06,Botafogo SP,Novorizontino,0,0,D
+2025-07-07,Operario-PR,Chapecoense-sc,1,2,A
+2025-07-08,America Mineiro,Athletic Club,0,1,A
+2025-07-08,Goias,Criciuma,1,1,D
+2025-07-11,CRB,Coritiba,0,1,A
+2025-07-11,Vila Nova,Operario-PR,0,0,D
+2025-07-12,Novorizontino,America Mineiro,3,1,H
+2025-07-12,Paysandu,Atletico Goianiense,2,2,D
+2025-07-12,Atletico Paranaense,Goias,0,1,A
+2025-07-13,Criciuma,Ferroviaria,2,1,H
+2025-07-13,Chapecoense-sc,Remo,1,1,D
+2025-07-14,Athletic Club,Avai,4,0,H
+2025-07-15,Botafogo SP,Volta Redonda,0,0,D
+2025-07-15,Cuiaba,Amazonas,3,1,H
+2025-07-17,Operario-PR,CRB,1,1,D
+2025-07-18,Remo,Novorizontino,1,1,D
+2025-07-18,Atletico Goianiense,Criciuma,0,1,A
+2025-07-19,Ferroviaria,Athletic Club,1,2,A
+2025-07-19,Goias,Cuiaba,3,1,H
+2025-07-19,Avai,Vila Nova,1,1,D
+2025-07-19,Coritiba,Paysandu,2,5,A
+2025-07-19,Volta Redonda,Atletico Paranaense,3,2,H
+2025-07-20,Amazonas,Botafogo SP,3,0,H
+2025-07-20,America Mineiro,Chapecoense-sc,0,1,A
+2025-07-22,Operario-PR,Atletico Goianiense,3,0,H
+2025-07-22,Atletico Paranaense,Ferroviaria,1,1,D
+2025-07-23,Athletic Club,Coritiba,1,1,D
+2025-07-23,Vila Nova,CRB,2,0,H
+2025-07-23,Chapecoense-sc,Volta Redonda,4,2,H
+2025-07-23,Novorizontino,Goias,1,0,H
+2025-07-24,Cuiaba,America Mineiro,3,1,H
+2025-07-24,Amazonas,Paysandu,1,1,D
+2025-07-24,Botafogo SP,Criciuma,0,2,A
+2025-07-25,Remo,Avai,2,1,H
+2025-07-26,Ferroviaria,Operario-PR,0,0,D
+2025-07-26,CRB,Novorizontino,4,0,H
+2025-07-27,Coritiba,Amazonas,1,1,D
+2025-07-27,Volta Redonda,Vila Nova,2,1,H
+2025-07-27,America Mineiro,Atletico Paranaense,2,2,D
+2025-07-27,Atletico Goianiense,Chapecoense-sc,0,0,D
+2025-07-28,Avai,Botafogo SP,5,0,H
+2025-07-29,Paysandu,Athletic Club,1,1,D
+2025-07-29,Criciuma,Cuiaba,1,0,H
+2025-07-30,Goias,Remo,1,1,D
+2025-08-01,Vila Nova,Coritiba,1,2,A
+2025-08-01,Remo,Ferroviaria,0,2,A
+2025-08-02,Operario-PR,Criciuma,1,0,H
+2025-08-02,Botafogo SP,America Mineiro,2,1,H
+2025-08-02,Amazonas,Goias,2,2,D
+2025-08-03,Chapecoense-sc,CRB,3,2,H
+2025-08-03,Novorizontino,Avai,1,1,D
+2025-08-03,Atletico Paranaense,Paysandu,1,1,D
+2025-08-04,Athletic Club,Atletico Goianiense,1,1,D
+2025-08-05,Cuiaba,Volta Redonda,2,0,H
+2025-08-08,Ferroviaria,Amazonas,2,1,H
+2025-08-09,Coritiba,Chapecoense-sc,0,0,D
+2025-08-09,America Mineiro,Remo,0,1,A
+2025-08-09,Goias,Operario-PR,2,1,H
+2025-08-09,Volta Redonda,Novorizontino,0,0,D
+2025-08-10,Avai,Cuiaba,2,0,H
+2025-08-10,Atletico Goianiense,Botafogo SP,2,0,H
+2025-08-11,Criciuma,Atletico Paranaense,4,2,H
+2025-08-12,Paysandu,Vila Nova,0,1,A
+2025-08-12,CRB,Athletic Club,1,0,H
+2025-08-15,Novorizontino,Coritiba,1,2,A
+2025-08-15,Amazonas,America Mineiro,2,2,D
+2025-08-16,Remo,Botafogo SP,1,1,D
+2025-08-16,Vila Nova,Goias,2,0,H
+2025-08-16,Atletico Paranaense,Cuiaba,1,1,D
+2025-08-17,Chapecoense-sc,Paysandu,2,0,H
+2025-08-17,Atletico Goianiense,Ferroviaria,1,3,A
+2025-08-18,Volta Redonda,CRB,0,1,A
+2025-08-19,Athletic Club,Criciuma,1,1,D
+2025-08-19,Operario-PR,Avai,0,0,D
+2025-08-22,Athletic Club,Chapecoense-sc,0,4,A
+2025-08-23,Criciuma,Novorizontino,2,0,H
+2025-08-23,Coritiba,Remo,0,0,D
+2025-08-23,Goias,America Mineiro,1,0,H
+2025-08-23,CRB,Atletico Paranaense,0,1,A
+2025-08-24,Paysandu,Operario-PR,1,2,A
+2025-08-24,Ferroviaria,Volta Redonda,0,0,D
+2025-08-24,Cuiaba,Atletico Goianiense,2,2,D
+2025-08-25,Botafogo SP,Vila Nova,2,0,H
+2025-08-26,Avai,Amazonas,1,2,A
+2025-08-29,Remo,Criciuma,0,1,A
+2025-08-29,Operario-PR,Coritiba,1,0,H
+2025-08-30,CRB,Paysandu,2,0,H
+2025-08-30,Goias,Botafogo SP,2,3,A
+2025-08-30,Atletico Paranaense,Novorizontino,2,1,H
+2025-08-31,Atletico Goianiense,Amazonas,2,0,H
+2025-08-31,Volta Redonda,Athletic Club,0,2,A
+2025-09-01,Chapecoense-sc,Vila Nova,2,2,D
+2025-09-02,Ferroviaria,Cuiaba,2,2,D
+2025-09-02,America Mineiro,Avai,2,0,H
+2025-09-05,Amazonas,Remo,1,3,A
+2025-09-05,Paysandu,Volta Redonda,1,2,A
+2025-09-06,Coritiba,Ferroviaria,4,0,H
+2025-09-06,Botafogo SP,Atletico Paranaense,1,3,A
+2025-09-07,Criciuma,Chapecoense-sc,2,0,H
+2025-09-07,America Mineiro,Operario-PR,1,1,D
+2025-09-07,Avai,Goias,2,1,H
+2025-09-08,Novorizontino,Atletico Goianiense,1,1,D
+2025-09-08,Cuiaba,CRB,1,0,H
+2025-09-09,Vila Nova,Athletic Club,1,1,D
+2025-09-12,Volta Redonda,Criciuma,0,0,D
+2025-09-13,Coritiba,Goias,0,0,D
+2025-09-13,Paysandu,America Mineiro,0,0,D
+2025-09-13,Vila Nova,Remo,1,1,D
+2025-09-14,Operario-PR,Cuiaba,1,1,D
+2025-09-14,Athletic Club,Botafogo SP,2,0,H
+2025-09-15,Ferroviaria,Novorizontino,1,2,A
+2025-09-16,CRB,Amazonas,2,0,H
+2025-09-16,Atletico Goianiense,Avai,2,1,H
+2025-09-17,Chapecoense-sc,Atletico Paranaense,2,3,A
+2025-09-18,Botafogo SP,Operario-PR,1,1,D
+2025-09-19,Novorizontino,Athletic Club,1,0,H
+2025-09-20,Goias,Paysandu,1,0,H
+2025-09-20,Avai,Ferroviaria,2,2,D
+2025-09-20,Amazonas,Volta Redonda,1,0,H
+2025-09-20,Remo,Atletico Goianiense,0,1,A
+2025-09-21,America Mineiro,Coritiba,1,0,H
+2025-09-21,Criciuma,CRB,1,0,H
+2025-09-21,Atletico Paranaense,Vila Nova,2,0,H
+2025-09-21,Cuiaba,Chapecoense-sc,1,0,H
+2025-09-23,Paysandu,Novorizontino,0,1,A
+2025-09-24,Ferroviaria,Goias,1,1,D
+2025-09-24,Vila Nova,Cuiaba,2,2,D
+2025-09-24,CRB,Botafogo SP,3,2,H
+2025-09-24,Athletic Club,Atletico Paranaense,0,3,A
+2025-09-24,Operario-PR,Amazonas,2,1,H
+2025-09-25,Volta Redonda,Remo,2,1,H
+2025-09-25,Coritiba,Criciuma,0,2,A
+2025-09-26,Atletico Goianiense,America Mineiro,1,0,H
+2025-09-26,Chapecoense-sc,Avai,0,1,A
+2025-09-27,Atletico Paranaense,Operario-PR,1,0,H
+2025-09-28,Criciuma,Paysandu,2,4,A
+2025-09-28,Novorizontino,Vila Nova,1,1,D
+2025-09-28,Remo,CRB,4,2,H
+2025-09-28,Botafogo SP,Ferroviaria,1,2,A
+2025-09-28,Cuiaba,Athletic Club,2,1,H
+2025-09-29,Amazonas,Chapecoense-sc,1,3,A
+2025-09-29,America Mineiro,Volta Redonda,2,1,H
+2025-09-29,Avai,Coritiba,0,2,A
+2025-10-01,Goias,Atletico Goianiense,0,0,D
+2025-10-02,Paysandu,Cuiaba,1,1,D
+2025-10-03,Vila Nova,Criciuma,1,1,D
+2025-10-03,Athletic Club,Amazonas,2,2,D
+2025-10-04,Coritiba,Botafogo SP,2,0,H
+2025-10-04,CRB,Avai,1,0,H
+2025-10-04,Chapecoense-sc,Novorizontino,1,0,H
+2025-10-04,Volta Redonda,Goias,0,0,D
+2025-10-04,Ferroviaria,America Mineiro,1,3,A
+2025-10-05,Operario-PR,Remo,0,1,A
+2025-10-05,Atletico Goianiense,Atletico Paranaense,3,0,H
+2025-10-07,Amazonas,Criciuma,2,1,H
+2025-10-08,Goias,CRB,1,2,A
+2025-10-08,Botafogo SP,Paysandu,1,0,H
+2025-10-08,Cuiaba,Novorizontino,0,1,A
+2025-10-08,Operario-PR,Athletic Club,1,4,A
+2025-10-09,Avai,Volta Redonda,3,0,H
+2025-10-09,America Mineiro,Vila Nova,1,1,D
+2025-10-09,Ferroviaria,Chapecoense-sc,0,1,A
+2025-10-09,Coritiba,Atletico Goianiense,2,1,H
+2025-10-10,Remo,Atletico Paranaense,2,1,H
+2025-10-11,Athletic Club,Goias,1,1,D
+2025-10-12,Novorizontino,Operario-PR,3,0,H
+2025-10-12,Criciuma,America Mineiro,2,1,H
+2025-10-12,Vila Nova,Amazonas,1,0,H
+2025-10-12,Cuiaba,Coritiba,1,0,H
+2025-10-13,Volta Redonda,Atletico Goianiense,3,0,H
+2025-10-14,CRB,Ferroviaria,2,2,D
+2025-10-14,Chapecoense-sc,Botafogo SP,1,1,D
+2025-10-14,Paysandu,Remo,2,3,A
+2025-10-15,Atletico Paranaense,Avai,1,1,D
+2025-10-17,Amazonas,Novorizontino,0,0,D
+2025-10-18,Atletico Goianiense,Vila Nova,1,0,H
+2025-10-18,America Mineiro,CRB,1,1,D
+2025-10-18,Remo,Athletic Club,3,1,H
+2025-10-19,Avai,Criciuma,1,1,D
+2025-10-19,Operario-PR,Volta Redonda,2,1,H
+2025-10-19,Coritiba,Atletico Paranaense,0,0,D
+2025-10-19,Botafogo SP,Cuiaba,2,2,D
+2025-10-19,Goias,Chapecoense-sc,1,3,A
+2025-10-20,Ferroviaria,Paysandu,2,2,D
+2025-10-24,Novorizontino,Botafogo SP,1,1,D
+2025-10-25,Cuiaba,Remo,1,3,A
+2025-10-25,Volta Redonda,Coritiba,0,1,A
+2025-10-25,Athletic Club,America Mineiro,0,2,A
+2025-10-25,Paysandu,Avai,1,2,A
+2025-10-25,Criciuma,Goias,1,2,A
+2025-10-26,CRB,Atletico Goianiense,2,1,H
+2025-10-26,Vila Nova,Ferroviaria,2,2,D
+2025-10-27,Chapecoense-sc,Operario-PR,2,0,H
+2025-10-28,Atletico Paranaense,Amazonas,2,0,H
+2025-10-31,Atletico Goianiense,Paysandu,2,1,H
+2025-10-31,Coritiba,CRB,0,0,D
+2025-11-01,Ferroviaria,Criciuma,0,0,D
+2025-11-01,Goias,Atletico Paranaense,0,1,A
+2025-11-01,Avai,Athletic Club,2,1,H
+2025-11-02,Amazonas,Cuiaba,2,0,H
+2025-11-02,Remo,Chapecoense-sc,1,1,D
+2025-11-02,Operario-PR,Vila Nova,2,2,D
+2025-11-03,America Mineiro,Novorizontino,2,2,D
+2025-11-03,Volta Redonda,Botafogo SP,0,1,A
+2025-11-07,Athletic Club,Ferroviaria,2,1,H
+2025-11-08,Cuiaba,Goias,0,1,A
+2025-11-08,Novorizontino,Remo,1,1,D
+2025-11-08,Atletico Paranaense,Volta Redonda,2,0,H
+2025-11-08,Vila Nova,Avai,2,2,D
+2025-11-09,Criciuma,Atletico Goianiense,1,0,H
+2025-11-09,CRB,Operario-PR,2,2,D
+2025-11-09,Paysandu,Coritiba,1,2,A
+2025-11-10,Chapecoense-sc,America Mineiro,0,1,A
+2025-11-10,Botafogo SP,Amazonas,1,0,H
+2025-11-14,Paysandu,Amazonas,2,2,D
+2025-11-15,Atletico Goianiense,Operario-PR,0,0,D
+2025-11-15,Avai,Remo,3,1,H
+2025-11-15,CRB,Vila Nova,2,0,H
+2025-11-15,Coritiba,Athletic Club,0,0,D
+2025-11-15,Volta Redonda,Chapecoense-sc,1,1,D
+2025-11-16,America Mineiro,Cuiaba,1,1,D
+2025-11-16,Criciuma,Botafogo SP,2,0,H
+2025-11-16,Goias,Novorizontino,1,0,H
+2025-11-16,Ferroviaria,Atletico Paranaense,1,2,A
+2025-11-19,Vila Nova,Volta Redonda,2,2,D
+2025-11-22,Novorizontino,CRB,3,0,H
+2025-11-23,Chapecoense-sc,Atletico Goianiense,1,0,H
+2025-11-23,Atletico Paranaense,America Mineiro,1,0,H
+2025-11-23,Cuiaba,Criciuma,1,0,H
+2025-11-23,Remo,Goias,3,1,H
+2025-11-23,Operario-PR,Ferroviaria,2,1,H
+2025-11-23,Botafogo SP,Avai,0,0,D
+2025-11-23,Amazonas,Coritiba,1,2,A
+2025-11-23,Athletic Club,Paysandu,2,1,H

@@ -1,6 +1,6 @@
 Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2026-03-07,Okzhetpes,Yelimay Semey,1,1,D
-2026-03-07,Altay,Kairat Almaty,0,1,A
+2026-03-07,Altai Oskemen,Kairat Almaty,0,1,A
 2026-03-07,Aktobe,FK Tobol Kostanay,4,1,H
 2026-03-07,Ordabasy,Irtysh,2,2,D
 2026-03-08,Kyzyl-Zhar,Kaspiy,2,1,H
@@ -8,7 +8,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2026-03-08,Kaisar,Zhenys,1,1,D
 2026-03-08,FC Astana,Zhetysu,4,1,H
 2026-03-16,Ulytau,Kyzyl-Zhar,1,0,H
-2026-03-16,Yelimay Semey,Altay,1,1,D
+2026-03-16,Yelimay Semey,Altai Oskemen,1,1,D
 2026-03-16,FK Tobol Kostanay,Zhetysu,2,2,D
 2026-03-16,Kairat Almaty,Aktobe,1,0,H
 2026-03-16,Kaisar,FC Astana,0,0,D
@@ -22,8 +22,8 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2026-03-21,Okzhetpes,Ulytau,2,1,H
 2026-03-21,Zhetysu,Kairat Almaty,0,0,D
 2026-03-21,Aktobe,Yelimay Semey,1,4,A
-2026-03-22,Altay,Kaspiy,0,0,D
-2026-04-04,Irtysh,Altay,1,0,H
+2026-03-22,Altai Oskemen,Kaspiy,0,0,D
+2026-04-04,Irtysh,Altai Oskemen,1,0,H
 2026-04-04,Yelimay Semey,FK Tobol Kostanay,1,0,H
 2026-04-04,Kaisar,Kyzyl-Zhar,0,0,D
 2026-04-04,Ordabasy,Atyrau,1,1,D
@@ -36,7 +36,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2026-04-11,FK Tobol Kostanay,Kairat Almaty,1,1,D
 2026-04-11,FC Astana,Ordabasy,1,1,D
 2026-04-12,Okzhetpes,Irtysh,2,1,H
-2026-04-12,Altay,Ulytau,1,2,A
+2026-04-12,Altai Oskemen,Ulytau,1,2,A
 2026-04-12,Kyzyl-Zhar,Zhenys,4,0,H
 2026-04-12,Aktobe,Kaspiy,1,0,H
 2026-04-18,Irtysh,Zhetysu,1,2,A
@@ -46,9 +46,9 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2026-04-19,Ulytau,FK Tobol Kostanay,2,1,H
 2026-04-19,Atyrau,Kyzyl-Zhar,0,1,A
 2026-04-19,Zhenys,Aktobe,1,0,H
-2026-04-19,Kaisar,Altay,1,1,D
+2026-04-19,Kaisar,Altai Oskemen,1,1,D
 2026-04-25,Okzhetpes,Kaisar,1,1,D
-2026-04-25,Altay,Zhenys,0,0,D
+2026-04-25,Altai Oskemen,Zhenys,0,0,D
 2026-04-25,Kyzyl-Zhar,Ordabasy,1,2,A
 2026-04-25,Aktobe,Irtysh,1,0,H
 2026-04-26,Zhetysu,Ulytau,2,0,H
@@ -59,7 +59,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2026-05-02,Irtysh,Kairat Almaty,0,1,A
 2026-05-02,Kaisar,Zhetysu,1,1,D
 2026-05-03,Ulytau,Yelimay Semey,1,0,H
-2026-05-03,Atyrau,Altay,1,0,H
+2026-05-03,Atyrau,Altai Oskemen,1,0,H
 2026-05-03,Zhenys,FK Tobol Kostanay,1,0,H
 2026-05-03,Kaspiy,FC Astana,1,0,H
 2026-05-03,Ordabasy,Aktobe,2,0,H
@@ -70,17 +70,17 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2026-05-09,FC Astana,Kyzyl-Zhar,2,1,H
 2026-05-09,FK Tobol Kostanay,Irtysh,1,0,H
 2026-05-10,Ulytau,Kairat Almaty,1,1,D
-2026-05-10,Altay,Ordabasy,0,0,D
+2026-05-10,Altai Oskemen,Ordabasy,0,0,D
 2026-05-10,Aktobe,Kaisar,3,0,H
 2026-05-16,Ulytau,Kaspiy,1,0,H
 2026-05-16,Okzhetpes,FC Astana,1,0,H
 2026-05-16,Irtysh,Yelimay Semey,2,2,D
-2026-05-17,Kyzyl-Zhar,Altay,1,2,A
+2026-05-17,Kyzyl-Zhar,Altai Oskemen,1,2,A
 2026-05-17,Zhenys,Kairat Almaty,1,2,A
 2026-05-17,Aktobe,Atyrau,1,1,D
 2026-05-17,Kaisar,FK Tobol Kostanay,2,1,H
 2026-05-17,Ordabasy,Zhetysu,2,1,H
-2026-05-22,Altay,Okzhetpes,0,1,A
+2026-05-22,Altai Oskemen,Okzhetpes,0,1,A
 2026-05-22,FC Astana,Ulytau,3,0,H
 2026-05-22,Kaspiy,Irtysh,2,2,D
 2026-05-23,Zhetysu,Atyrau,0,0,D
@@ -88,7 +88,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2026-05-23,Kairat Almaty,Kaisar,0,0,D
 2026-05-23,Aktobe,Kyzyl-Zhar,0,0,D
 2026-05-23,FK Tobol Kostanay,Ordabasy,0,3,A
-2026-05-27,Altay,FC Astana,1,1,D
+2026-05-27,Altai Oskemen,FC Astana,1,1,D
 2026-05-27,Irtysh,Ulytau,1,1,D
 2026-05-28,Okzhetpes,Aktobe,2,2,D
 2026-05-28,Kyzyl-Zhar,Zhetysu,3,2,H
@@ -103,9 +103,9 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2026-06-14,FC Astana,Irtysh,2,0,H
 2026-06-14,Yelimay Semey,Ordabasy,1,3,A
 2026-06-14,Kaspiy,Kaisar,1,2,A
-2026-06-14,Aktobe,Altay,2,0,H
+2026-06-14,Aktobe,Altai Oskemen,2,0,H
 2026-06-17,Kairat Almaty,Kyzyl-Zhar,3,0,H
-2026-06-20,Altay,Zhetysu,3,3,D
+2026-06-20,Altai Oskemen,Zhetysu,3,3,D
 2026-06-20,Zhenys,Irtysh,0,0,D
 2026-06-20,Ordabasy,Kaspiy,2,0,H
 2026-06-20,Kaisar,Ulytau,0,0,D
@@ -118,19 +118,19 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2026-06-27,Yelimay Semey,Kyzyl-Zhar,2,0,H
 2026-06-27,Kaspiy,Atyrau,2,0,H
 2026-06-28,Irtysh,Kaisar,1,2,A
-2026-06-28,FK Tobol Kostanay,Altay,3,1,H
+2026-06-28,FK Tobol Kostanay,Altai Oskemen,3,1,H
 2026-06-28,Ulytau,Ordabasy,0,1,A
 2026-06-28,Zhenys,FC Astana,2,2,D
 2026-07-02,Kairat Almaty,Okzhetpes,5,0,H
 2026-07-03,FC Astana,Zhenys,1,0,H
-2026-07-04,Altay,FK Tobol Kostanay,1,0,H
+2026-07-04,Altai Oskemen,FK Tobol Kostanay,1,0,H
 2026-07-04,Kyzyl-Zhar,Yelimay Semey,0,1,A
 2026-07-05,Aktobe,Zhetysu,2,1,H
 2026-07-05,Atyrau,Kaspiy,1,2,A
 2026-07-05,Ordabasy,Ulytau,1,0,H
 2026-07-05,Kaisar,Irtysh,0,0,D
 2026-07-11,Irtysh,Zhenys,0,1,A
-2026-07-11,Zhetysu,Altay,0,1,A
+2026-07-11,Zhetysu,Altai Oskemen,0,1,A
 2026-07-11,Kaspiy,Ordabasy,3,2,H
 2026-07-12,Ulytau,Kaisar,1,0,H
 2026-07-12,FC Astana,Aktobe,3,2,H
@@ -140,13 +140,20 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 2026-07-18,Zhenys,Ulytau,1,1,D
 2026-07-18,Kaisar,Kaspiy,1,1,D
 2026-07-18,Atyrau,Kairat Almaty,1,3,A
-2026-07-19,Altay,Aktobe,2,4,A
+2026-07-19,Altai Oskemen,Aktobe,2,4,A
 2026-07-19,Ordabasy,Yelimay Semey,3,1,H
 2026-07-25,Zhetysu,Kyzyl-Zhar,1,2,A
 2026-07-25,Ulytau,Irtysh,1,2,A
 2026-07-25,Aktobe,Okzhetpes,2,1,H
 2026-07-26,FK Tobol Kostanay,Atyrau,1,0,H
-2026-07-26,FC Astana,Altay,4,1,H
+2026-07-26,FC Astana,Altai Oskemen,4,1,H
 2026-07-26,Kairat Almaty,Ordabasy,2,1,H
 2026-07-26,Yelimay Semey,Kaisar,1,1,D
 2026-07-26,Kaspiy,Zhenys,3,2,H
+2026-08-01,Irtysh,Kaspiy,3,2,H
+2026-08-01,Kyzyl-Zhar,Aktobe,3,1,H
+2026-08-01,Atyrau,Zhetysu,1,1,D
+2026-08-02,Okzhetpes,Altai Oskemen,4,1,H
+2026-08-02,Zhenys,Yelimay Semey,0,0,D
+2026-08-02,Ulytau,FC Astana,0,2,A
+2026-08-02,Ordabasy,FK Tobol Kostanay,2,0,H

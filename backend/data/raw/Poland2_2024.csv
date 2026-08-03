@@ -1,0 +1,310 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2024-07-19,Polonia Warszawa,Znicz Pruszkow,0,1,A
+2024-07-19,Odra Opole,Ruch Chorzow,0,2,A
+2024-07-20,Nieciecza,Warta Poznan,3,0,H
+2024-07-20,Pogon Siedlce,Chrobry Gogow,1,2,A
+2024-07-20,Stal Stalowa Wola,Gornik eczna,0,1,A
+2024-07-21,Wisla Plock,Kotwica Koobrzeg,1,1,D
+2024-07-21,Tychy 71,Miedz Legnica,2,2,D
+2024-07-22,Stal Rzeszow,Arka Gdynia,1,0,H
+2024-07-26,Miedz Legnica,Stal Stalowa Wola,4,2,H
+2024-07-26,Kotwica Koobrzeg,Tychy 71,0,0,D
+2024-07-27,Chrobry Gogow,Nieciecza,0,4,A
+2024-07-27,Gornik eczna,Stal Rzeszow,2,1,H
+2024-07-27,Warta Poznan,Wisla Plock,1,2,A
+2024-07-28,Odra Opole,Pogon Siedlce,4,1,H
+2024-07-28,Wisla Krakow,Polonia Warszawa,0,0,D
+2024-07-28,Ruch Chorzow,Znicz Pruszkow,0,0,D
+2024-07-29,Arka Gdynia,KS odz,2,1,H
+2024-08-02,Tychy 71,Warta Poznan,1,1,D
+2024-08-02,Ruch Chorzow,Pogon Siedlce,1,1,D
+2024-08-03,Stal Stalowa Wola,Kotwica Koobrzeg,0,2,A
+2024-08-03,Wisla Plock,Chrobry Gogow,2,1,H
+2024-08-03,Polonia Warszawa,Arka Gdynia,0,3,A
+2024-08-04,Stal Rzeszow,Miedz Legnica,1,0,H
+2024-08-04,Znicz Pruszkow,Wisla Krakow,2,1,H
+2024-08-04,Nieciecza,Odra Opole,3,0,H
+2024-08-05,KS odz,Gornik eczna,1,1,D
+2024-08-09,Chrobry Gogow,Tychy 71,0,0,D
+2024-08-09,Arka Gdynia,Znicz Pruszkow,1,1,D
+2024-08-10,Gornik eczna,Polonia Warszawa,3,1,H
+2024-08-10,Warta Poznan,Stal Stalowa Wola,1,0,H
+2024-08-10,Miedz Legnica,KS odz,1,0,H
+2024-08-11,Pogon Siedlce,Nieciecza,1,2,A
+2024-08-11,Odra Opole,Wisla Plock,1,2,A
+2024-08-11,Kotwica Koobrzeg,Stal Rzeszow,1,3,A
+2024-08-12,Wisla Krakow,Ruch Chorzow,3,1,H
+2024-08-16,Stal Stalowa Wola,Chrobry Gogow,1,1,D
+2024-08-16,KS odz,Kotwica Koobrzeg,0,2,A
+2024-08-17,Polonia Warszawa,Miedz Legnica,0,1,A
+2024-08-17,Stal Rzeszow,Warta Poznan,4,0,H
+2024-08-17,Tychy 71,Odra Opole,0,0,D
+2024-08-18,Znicz Pruszkow,Gornik eczna,2,3,A
+2024-08-18,Nieciecza,Ruch Chorzow,1,1,D
+2024-08-18,Wisla Plock,Pogon Siedlce,1,0,H
+2024-08-19,Wisla Krakow,Arka Gdynia,2,2,D
+2024-08-20,Kotwica Koobrzeg,Polonia Warszawa,1,0,H
+2024-08-20,Chrobry Gogow,Stal Rzeszow,1,3,A
+2024-08-20,Warta Poznan,KS odz,2,4,A
+2024-08-21,Nieciecza,Wisla Plock,4,2,H
+2024-08-21,Odra Opole,Stal Stalowa Wola,2,1,H
+2024-08-21,Pogon Siedlce,Tychy 71,0,1,A
+2024-08-22,Miedz Legnica,Znicz Pruszkow,4,0,H
+2024-08-22,Arka Gdynia,Ruch Chorzow,1,1,D
+2024-08-23,Polonia Warszawa,Warta Poznan,2,0,H
+2024-08-24,Stal Stalowa Wola,Pogon Siedlce,1,3,A
+2024-08-24,Stal Rzeszow,Odra Opole,2,2,D
+2024-08-24,Tychy 71,Nieciecza,0,2,A
+2024-08-25,Znicz Pruszkow,Kotwica Koobrzeg,4,0,H
+2024-08-25,KS odz,Chrobry Gogow,3,0,H
+2024-08-25,Arka Gdynia,Gornik eczna,1,2,A
+2024-08-26,Wisla Plock,Ruch Chorzow,3,2,H
+2024-08-30,Odra Opole,KS odz,0,1,A
+2024-08-30,Miedz Legnica,Arka Gdynia,1,2,A
+2024-08-30,Chrobry Gogow,Polonia Warszawa,1,2,A
+2024-08-31,Warta Poznan,Znicz Pruszkow,1,1,D
+2024-08-31,Wisla Plock,Tychy 71,0,0,D
+2024-08-31,Ruch Chorzow,Gornik eczna,3,2,H
+2024-09-01,Nieciecza,Stal Stalowa Wola,3,0,H
+2024-09-01,Kotwica Koobrzeg,Wisla Krakow,1,1,D
+2024-09-01,Pogon Siedlce,Stal Rzeszow,1,1,D
+2024-09-13,KS odz,Pogon Siedlce,2,0,H
+2024-09-13,Wisla Krakow,Warta Poznan,0,1,A
+2024-09-14,Stal Stalowa Wola,Wisla Plock,1,3,A
+2024-09-14,Polonia Warszawa,Odra Opole,3,0,H
+2024-09-14,Stal Rzeszow,Nieciecza,1,2,A
+2024-09-15,Arka Gdynia,Kotwica Koobrzeg,5,0,H
+2024-09-15,Gornik eczna,Miedz Legnica,1,2,A
+2024-09-16,Tychy 71,Ruch Chorzow,0,1,A
+2024-09-16,Znicz Pruszkow,Chrobry Gogow,2,3,A
+2024-09-17,KS odz,Wisla Krakow,3,1,H
+2024-09-20,Wisla Plock,Stal Rzeszow,1,1,D
+2024-09-21,Warta Poznan,Arka Gdynia,0,1,A
+2024-09-21,Nieciecza,KS odz,2,2,D
+2024-09-21,Kotwica Koobrzeg,Gornik eczna,1,1,D
+2024-09-22,Miedz Legnica,Ruch Chorzow,3,0,H
+2024-09-22,Tychy 71,Stal Stalowa Wola,0,0,D
+2024-09-22,Pogon Siedlce,Polonia Warszawa,2,4,A
+2024-09-27,Wisla Krakow,Odra Opole,5,0,H
+2024-09-28,Znicz Pruszkow,Pogon Siedlce,1,0,H
+2024-09-28,Gornik eczna,Warta Poznan,1,1,D
+2024-09-29,Arka Gdynia,Chrobry Gogow,2,0,H
+2024-09-29,Polonia Warszawa,Nieciecza,0,1,A
+2024-09-29,Miedz Legnica,Kotwica Koobrzeg,1,1,D
+2024-09-29,Stal Stalowa Wola,Ruch Chorzow,2,0,H
+2024-09-30,Stal Rzeszow,Tychy 71,5,1,H
+2024-09-30,KS odz,Wisla Plock,0,1,A
+2024-10-02,Odra Opole,Znicz Pruszkow,1,1,D
+2024-10-04,Warta Poznan,Miedz Legnica,1,4,A
+2024-10-04,Ruch Chorzow,Kotwica Koobrzeg,1,0,H
+2024-10-05,Stal Stalowa Wola,Stal Rzeszow,2,2,D
+2024-10-05,Wisla Plock,Polonia Warszawa,4,1,H
+2024-10-05,Pogon Siedlce,Wisla Krakow,1,3,A
+2024-10-06,Chrobry Gogow,Gornik eczna,1,1,D
+2024-10-06,Odra Opole,Arka Gdynia,0,6,A
+2024-10-06,Tychy 71,KS odz,0,3,A
+2024-10-06,Nieciecza,Znicz Pruszkow,1,2,A
+2024-10-18,Gornik eczna,Odra Opole,2,2,D
+2024-10-18,Wisla Krakow,Nieciecza,2,0,H
+2024-10-19,Kotwica Koobrzeg,Warta Poznan,0,1,A
+2024-10-19,Miedz Legnica,Chrobry Gogow,1,0,H
+2024-10-19,Znicz Pruszkow,Wisla Plock,2,2,D
+2024-10-20,Polonia Warszawa,Tychy 71,2,1,H
+2024-10-20,Arka Gdynia,Pogon Siedlce,2,1,H
+2024-10-20,KS odz,Stal Stalowa Wola,0,0,D
+2024-10-21,Stal Rzeszow,Ruch Chorzow,0,2,A
+2024-10-22,Gornik eczna,Wisla Krakow,1,0,H
+2024-10-25,Chrobry Gogow,Kotwica Koobrzeg,3,2,H
+2024-10-25,Ruch Chorzow,Warta Poznan,2,1,H
+2024-10-26,Odra Opole,Miedz Legnica,0,2,A
+2024-10-26,Stal Rzeszow,KS odz,2,4,A
+2024-10-26,Nieciecza,Arka Gdynia,2,1,H
+2024-10-26,Pogon Siedlce,Gornik eczna,1,1,D
+2024-10-27,Wisla Plock,Wisla Krakow,1,3,A
+2024-10-27,Stal Stalowa Wola,Polonia Warszawa,1,1,D
+2024-10-28,Tychy 71,Znicz Pruszkow,1,1,D
+2024-11-02,Znicz Pruszkow,Stal Stalowa Wola,0,1,A
+2024-11-02,Kotwica Koobrzeg,Odra Opole,0,1,A
+2024-11-02,Gornik eczna,Nieciecza,0,2,A
+2024-11-02,Arka Gdynia,Wisla Plock,2,0,H
+2024-11-03,Miedz Legnica,Pogon Siedlce,4,1,H
+2024-11-03,KS odz,Ruch Chorzow,0,1,A
+2024-11-03,Warta Poznan,Chrobry Gogow,1,0,H
+2024-11-04,Polonia Warszawa,Stal Rzeszow,1,0,H
+2024-11-04,Wisla Krakow,Tychy 71,0,0,D
+2024-11-07,Ruch Chorzow,Chrobry Gogow,5,0,H
+2024-11-08,Pogon Siedlce,Kotwica Koobrzeg,2,1,H
+2024-11-08,KS odz,Polonia Warszawa,0,0,D
+2024-11-09,Tychy 71,Arka Gdynia,1,1,D
+2024-11-09,Odra Opole,Warta Poznan,0,0,D
+2024-11-09,Nieciecza,Miedz Legnica,1,1,D
+2024-11-10,Stal Stalowa Wola,Wisla Krakow,1,5,A
+2024-11-10,Wisla Plock,Gornik eczna,2,2,D
+2024-11-10,Stal Rzeszow,Znicz Pruszkow,2,1,H
+2024-11-16,Chrobry Gogow,Wisla Krakow,0,3,A
+2024-11-22,Kotwica Koobrzeg,Nieciecza,0,5,A
+2024-11-22,Wisla Krakow,Stal Rzeszow,1,1,D
+2024-11-23,Chrobry Gogow,Odra Opole,1,1,D
+2024-11-23,Gornik eczna,Tychy 71,2,2,D
+2024-11-23,Znicz Pruszkow,KS odz,2,2,D
+2024-11-24,Warta Poznan,Pogon Siedlce,2,1,H
+2024-11-24,Polonia Warszawa,Ruch Chorzow,1,0,H
+2024-11-24,Arka Gdynia,Stal Stalowa Wola,5,1,H
+2024-11-25,Miedz Legnica,Wisla Plock,2,2,D
+2024-11-29,Znicz Pruszkow,Polonia Warszawa,2,1,H
+2024-11-29,Ruch Chorzow,Odra Opole,6,0,H
+2024-11-30,Miedz Legnica,Tychy 71,1,3,A
+2024-11-30,Kotwica Koobrzeg,Wisla Plock,2,0,H
+2024-11-30,Wisla Krakow,KS odz,2,1,H
+2024-12-01,Chrobry Gogow,Pogon Siedlce,1,0,H
+2024-12-01,Warta Poznan,Nieciecza,0,1,A
+2024-12-01,Gornik eczna,Stal Stalowa Wola,2,0,H
+2024-12-02,Arka Gdynia,Stal Rzeszow,2,1,H
+2024-12-06,Stal Stalowa Wola,Miedz Legnica,0,2,A
+2024-12-06,Polonia Warszawa,Wisla Krakow,2,0,H
+2024-12-07,Tychy 71,Kotwica Koobrzeg,4,0,H
+2024-12-07,Nieciecza,Chrobry Gogow,3,2,H
+2024-12-07,Stal Rzeszow,Gornik eczna,0,3,A
+2024-12-08,Pogon Siedlce,Odra Opole,0,1,A
+2024-12-08,Znicz Pruszkow,Ruch Chorzow,2,3,A
+2024-12-08,Wisla Plock,Warta Poznan,4,0,H
+2024-12-09,KS odz,Arka Gdynia,0,2,A
+2024-12-12,Wisla Krakow,Miedz Legnica,1,1,D
+2025-02-14,Odra Opole,Nieciecza,2,2,D
+2025-02-14,Arka Gdynia,Polonia Warszawa,0,0,D
+2025-02-15,Kotwica Koobrzeg,Stal Stalowa Wola,1,1,D
+2025-02-15,Wisla Krakow,Znicz Pruszkow,0,1,A
+2025-02-15,Miedz Legnica,Stal Rzeszow,3,3,D
+2025-02-16,Warta Poznan,Tychy 71,1,3,A
+2025-02-16,Gornik eczna,KS odz,2,2,D
+2025-02-16,Chrobry Gogow,Wisla Plock,0,0,D
+2025-02-17,Pogon Siedlce,Ruch Chorzow,1,1,D
+2025-02-21,Polonia Warszawa,Gornik eczna,2,1,H
+2025-02-21,Stal Rzeszow,Kotwica Koobrzeg,1,0,H
+2025-02-22,Ruch Chorzow,Wisla Krakow,0,5,A
+2025-02-22,Nieciecza,Pogon Siedlce,1,1,D
+2025-02-22,Znicz Pruszkow,Arka Gdynia,0,1,A
+2025-02-23,Tychy 71,Chrobry Gogow,3,1,H
+2025-02-23,KS odz,Miedz Legnica,0,1,A
+2025-02-23,Wisla Plock,Odra Opole,2,1,H
+2025-02-24,Stal Stalowa Wola,Warta Poznan,0,0,D
+2025-02-28,Pogon Siedlce,Wisla Plock,1,3,A
+2025-02-28,Arka Gdynia,Wisla Krakow,2,2,D
+2025-03-01,Warta Poznan,Stal Rzeszow,0,1,A
+2025-03-01,Odra Opole,Tychy 71,1,5,A
+2025-03-01,Gornik eczna,Znicz Pruszkow,1,2,A
+2025-03-02,Chrobry Gogow,Stal Stalowa Wola,2,0,H
+2025-03-02,Miedz Legnica,Polonia Warszawa,2,3,A
+2025-03-02,Kotwica Koobrzeg,KS odz,0,0,D
+2025-03-03,Ruch Chorzow,Nieciecza,2,2,D
+2025-03-07,KS odz,Warta Poznan,3,1,H
+2025-03-07,Tychy 71,Pogon Siedlce,2,0,H
+2025-03-08,Znicz Pruszkow,Miedz Legnica,2,1,H
+2025-03-08,Stal Stalowa Wola,Odra Opole,0,0,D
+2025-03-08,Ruch Chorzow,Arka Gdynia,0,1,A
+2025-03-09,Polonia Warszawa,Kotwica Koobrzeg,2,2,D
+2025-03-09,Wisla Krakow,Gornik eczna,1,0,H
+2025-03-09,Stal Rzeszow,Chrobry Gogow,0,0,D
+2025-03-10,Wisla Plock,Nieciecza,3,0,H
+2025-03-14,Miedz Legnica,Wisla Krakow,2,1,H
+2025-03-14,Chrobry Gogow,KS odz,1,2,A
+2025-03-15,Nieciecza,Tychy 71,2,1,H
+2025-03-15,Ruch Chorzow,Wisla Plock,0,0,D
+2025-03-15,Warta Poznan,Polonia Warszawa,1,2,A
+2025-03-16,Pogon Siedlce,Stal Stalowa Wola,0,0,D
+2025-03-16,Gornik eczna,Arka Gdynia,0,1,A
+2025-03-16,Kotwica Koobrzeg,Znicz Pruszkow,0,0,D
+2025-03-28,Znicz Pruszkow,Warta Poznan,0,0,D
+2025-03-28,Wisla Krakow,Kotwica Koobrzeg,2,1,H
+2025-03-29,Gornik eczna,Ruch Chorzow,2,0,H
+2025-03-29,Polonia Warszawa,Chrobry Gogow,4,2,H
+2025-03-29,KS odz,Odra Opole,1,2,A
+2025-03-30,Stal Stalowa Wola,Nieciecza,3,3,D
+2025-03-30,Arka Gdynia,Miedz Legnica,2,0,H
+2025-03-30,Stal Rzeszow,Pogon Siedlce,2,4,A
+2025-03-31,Tychy 71,Wisla Plock,2,1,H
+2025-04-04,Miedz Legnica,Gornik eczna,0,2,A
+2025-04-04,Chrobry Gogow,Znicz Pruszkow,3,2,H
+2025-04-04,Kotwica Koobrzeg,Arka Gdynia,0,1,A
+2025-04-05,Wisla Plock,Stal Stalowa Wola,2,1,H
+2025-04-05,Odra Opole,Polonia Warszawa,0,1,A
+2025-04-05,Warta Poznan,Wisla Krakow,0,1,A
+2025-04-06,Nieciecza,Stal Rzeszow,3,1,H
+2025-04-06,Ruch Chorzow,Tychy 71,0,1,A
+2025-04-06,Pogon Siedlce,KS odz,1,1,D
+2025-04-08,Znicz Pruszkow,Odra Opole,2,1,H
+2025-04-08,Gornik eczna,Kotwica Koobrzeg,3,0,H
+2025-04-08,Arka Gdynia,Warta Poznan,3,0,H
+2025-04-09,Wisla Krakow,Chrobry Gogow,2,1,H
+2025-04-09,Stal Stalowa Wola,Tychy 71,0,1,A
+2025-04-09,Polonia Warszawa,Pogon Siedlce,2,1,H
+2025-04-10,KS odz,Nieciecza,1,2,A
+2025-04-10,Stal Rzeszow,Wisla Plock,0,1,A
+2025-04-10,Ruch Chorzow,Miedz Legnica,1,2,A
+2025-04-11,Warta Poznan,Gornik eczna,0,2,A
+2025-04-12,Pogon Siedlce,Znicz Pruszkow,2,1,H
+2025-04-12,Chrobry Gogow,Arka Gdynia,2,2,D
+2025-04-13,Wisla Plock,KS odz,3,0,H
+2025-04-13,Odra Opole,Wisla Krakow,1,2,A
+2025-04-13,Ruch Chorzow,Stal Stalowa Wola,1,3,A
+2025-04-13,Kotwica Koobrzeg,Miedz Legnica,0,0,D
+2025-04-14,Nieciecza,Polonia Warszawa,0,3,A
+2025-04-14,Tychy 71,Stal Rzeszow,1,0,H
+2025-04-19,Stal Rzeszow,Stal Stalowa Wola,2,2,D
+2025-04-19,Arka Gdynia,Odra Opole,1,0,H
+2025-04-19,Wisla Krakow,Pogon Siedlce,1,0,H
+2025-04-19,Polonia Warszawa,Wisla Plock,0,0,D
+2025-04-21,Gornik eczna,Chrobry Gogow,1,0,H
+2025-04-21,Znicz Pruszkow,Nieciecza,0,1,A
+2025-04-21,KS odz,Tychy 71,1,3,A
+2025-04-21,Miedz Legnica,Warta Poznan,3,2,H
+2025-04-22,Kotwica Koobrzeg,Ruch Chorzow,3,4,A
+2025-04-23,Odra Opole,Stal Rzeszow,3,0,H
+2025-04-25,Stal Stalowa Wola,KS odz,0,1,A
+2025-04-25,Nieciecza,Wisla Krakow,2,2,D
+2025-04-26,Warta Poznan,Kotwica Koobrzeg,0,1,A
+2025-04-26,Tychy 71,Polonia Warszawa,1,1,D
+2025-04-26,Pogon Siedlce,Arka Gdynia,1,1,D
+2025-04-27,Odra Opole,Gornik eczna,0,0,D
+2025-04-27,Ruch Chorzow,Stal Rzeszow,3,0,H
+2025-04-27,Chrobry Gogow,Miedz Legnica,1,1,D
+2025-04-28,Wisla Plock,Znicz Pruszkow,2,3,A
+2025-05-02,Gornik eczna,Pogon Siedlce,1,3,A
+2025-05-02,Wisla Krakow,Wisla Plock,1,3,A
+2025-05-03,Warta Poznan,Ruch Chorzow,0,2,A
+2025-05-03,Polonia Warszawa,Stal Stalowa Wola,2,3,A
+2025-05-03,Znicz Pruszkow,Tychy 71,2,2,D
+2025-05-04,Miedz Legnica,Odra Opole,2,1,H
+2025-05-04,Arka Gdynia,Nieciecza,2,1,H
+2025-05-04,KS odz,Stal Rzeszow,5,0,H
+2025-05-05,Kotwica Koobrzeg,Chrobry Gogow,2,1,H
+2025-05-09,Stal Stalowa Wola,Znicz Pruszkow,0,5,A
+2025-05-09,Tychy 71,Wisla Krakow,0,2,A
+2025-05-10,Stal Rzeszow,Polonia Warszawa,1,2,A
+2025-05-10,Pogon Siedlce,Miedz Legnica,3,0,H
+2025-05-10,Ruch Chorzow,KS odz,1,3,A
+2025-05-11,Chrobry Gogow,Warta Poznan,2,1,H
+2025-05-11,Nieciecza,Gornik eczna,3,1,H
+2025-05-11,Odra Opole,Kotwica Koobrzeg,4,2,H
+2025-05-12,Wisla Plock,Arka Gdynia,1,0,H
+2025-05-16,Wisla Krakow,Stal Stalowa Wola,5,0,H
+2025-05-17,Kotwica Koobrzeg,Pogon Siedlce,1,1,D
+2025-05-17,Polonia Warszawa,KS odz,0,1,A
+2025-05-17,Gornik eczna,Wisla Plock,2,2,D
+2025-05-18,Warta Poznan,Odra Opole,1,0,H
+2025-05-18,Arka Gdynia,Tychy 71,2,2,D
+2025-05-18,Znicz Pruszkow,Stal Rzeszow,2,0,H
+2025-05-19,Miedz Legnica,Nieciecza,1,4,A
+2025-05-19,Chrobry Gogow,Ruch Chorzow,2,2,D
+2025-05-25,Wisla Plock,Miedz Legnica,2,1,H
+2025-05-25,Nieciecza,Kotwica Koobrzeg,2,1,H
+2025-05-25,Odra Opole,Chrobry Gogow,0,2,A
+2025-05-25,Tychy 71,Gornik eczna,3,1,H
+2025-05-25,KS odz,Znicz Pruszkow,2,3,A
+2025-05-25,Pogon Siedlce,Warta Poznan,2,1,H
+2025-05-25,Ruch Chorzow,Polonia Warszawa,1,1,D
+2025-05-25,Stal Rzeszow,Wisla Krakow,0,3,A
+2025-05-25,Stal Stalowa Wola,Arka Gdynia,0,3,A
+2025-05-29,Wisla Plock,Polonia Warszawa,2,1,H
+2025-05-29,Wisla Krakow,Miedz Legnica,0,1,A
+2025-06-01,Wisla Plock,Miedz Legnica,2,0,H

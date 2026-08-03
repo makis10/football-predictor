@@ -1,0 +1,263 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2023-08-05,ACS Sirineasa,Arges Pitesti,0,0,D
+2023-08-05,Metaloglobus,Viitorul Selimbar,0,1,A
+2023-08-05,CSM Resita,Unirea Slobozia,0,1,A
+2023-08-05,Csikszereda,Concordia,0,3,A
+2023-08-05,Tunari,Slatina,1,3,A
+2023-08-05,Unirea Dej,Alexandria,1,0,H
+2023-08-06,Corvinul Hunedoara,Ceahlaul Piatra Neamt,2,1,H
+2023-08-08,CS Mioveni,SCM Gloria Buzau,0,0,D
+2023-08-08,Chindia Targoviste,CSA Steaua Bucuresti,1,1,D
+2023-08-12,Concordia,Alexandria,0,1,A
+2023-08-12,Csikszereda,Progresul Spartac,3,0,H
+2023-08-12,SCM Gloria Buzau,Tunari,2,1,H
+2023-08-12,Unirea Slobozia,ACS Sirineasa,1,1,D
+2023-08-12,Viitorul Selimbar,Unirea Dej,2,0,H
+2023-08-12,Dumbravita,Corvinul Hunedoara,0,0,D
+2023-08-12,Slatina,Chindia Targoviste,0,0,D
+2023-08-12,CSA Steaua Bucuresti,Metaloglobus,1,1,D
+2023-08-13,Ceahlaul Piatra Neamt,CSM Resita,4,0,H
+2023-08-14,Arges Pitesti,CS Mioveni,0,0,D
+2023-08-19,ACS Sirineasa,Ceahlaul Piatra Neamt,0,2,A
+2023-08-19,Metaloglobus,Slatina,1,1,D
+2023-08-19,CSM Resita,Dumbravita,2,1,H
+2023-08-19,Alexandria,Viitorul Selimbar,0,1,A
+2023-08-19,Progresul Spartac,Concordia,0,6,A
+2023-08-19,Corvinul Hunedoara,Csikszereda,2,0,H
+2023-08-20,CS Mioveni,Unirea Slobozia,1,1,D
+2023-08-20,Tunari,Arges Pitesti,1,1,D
+2023-08-20,Unirea Dej,CSA Steaua Bucuresti,2,6,A
+2023-08-22,Chindia Targoviste,SCM Gloria Buzau,1,1,D
+2023-08-26,Concordia,Viitorul Selimbar,0,1,A
+2023-08-26,Arges Pitesti,Chindia Targoviste,0,2,A
+2023-08-26,Csikszereda,CSM Resita,1,1,D
+2023-08-26,SCM Gloria Buzau,Metaloglobus,1,0,H
+2023-08-26,Ceahlaul Piatra Neamt,CS Mioveni,0,1,A
+2023-08-26,Slatina,Unirea Dej,1,2,A
+2023-08-26,Unirea Slobozia,Tunari,3,1,H
+2023-08-26,Dumbravita,ACS Sirineasa,1,1,D
+2023-08-27,Progresul Spartac,Corvinul Hunedoara,1,2,A
+2023-08-27,CSA Steaua Bucuresti,Alexandria,1,1,D
+2023-09-02,ACS Sirineasa,Csikszereda,1,1,D
+2023-09-02,CSM Resita,Progresul Spartac,0,0,D
+2023-09-02,Alexandria,Slatina,0,1,A
+2023-09-02,Corvinul Hunedoara,Concordia,2,2,D
+2023-09-02,Unirea Dej,SCM Gloria Buzau,2,4,A
+2023-09-03,Chindia Targoviste,Unirea Slobozia,0,1,A
+2023-09-03,CS Mioveni,Dumbravita,0,1,A
+2023-09-03,Metaloglobus,Arges Pitesti,1,1,D
+2023-09-03,Tunari,Ceahlaul Piatra Neamt,0,1,A
+2023-09-05,Viitorul Selimbar,CSA Steaua Bucuresti,3,2,H
+2023-09-12,Progresul Spartac,Dumbravita,1,3,A
+2023-09-14,Concordia,CSA Steaua Bucuresti,0,0,D
+2023-09-16,Csikszereda,CS Mioveni,0,0,D
+2023-09-16,SCM Gloria Buzau,Alexandria,1,0,H
+2023-09-16,Progresul Spartac,ACS Sirineasa,1,2,A
+2023-09-16,Slatina,Viitorul Selimbar,0,0,D
+2023-09-16,Unirea Slobozia,Metaloglobus,2,0,H
+2023-09-16,Dumbravita,Tunari,6,1,H
+2023-09-16,Corvinul Hunedoara,CSM Resita,2,0,H
+2023-09-18,Arges Pitesti,Unirea Dej,2,0,H
+2023-09-19,Ceahlaul Piatra Neamt,Chindia Targoviste,1,1,D
+2023-09-22,Viitorul Selimbar,SCM Gloria Buzau,2,1,H
+2023-09-23,Chindia Targoviste,Dumbravita,4,0,H
+2023-09-23,CS Mioveni,Progresul Spartac,3,1,H
+2023-09-23,ACS Sirineasa,Corvinul Hunedoara,2,1,H
+2023-09-23,Metaloglobus,Ceahlaul Piatra Neamt,2,1,H
+2023-09-23,CSM Resita,Concordia,3,2,H
+2023-09-23,Alexandria,Arges Pitesti,0,4,A
+2023-09-23,Tunari,Csikszereda,1,0,H
+2023-09-24,Unirea Dej,Unirea Slobozia,0,0,D
+2023-09-25,CSA Steaua Bucuresti,Slatina,1,1,D
+2023-09-29,Ceahlaul Piatra Neamt,Unirea Dej,1,0,H
+2023-09-30,Concordia,Slatina,1,0,H
+2023-09-30,CSM Resita,ACS Sirineasa,1,1,D
+2023-09-30,Csikszereda,Chindia Targoviste,1,0,H
+2023-09-30,Progresul Spartac,Tunari,1,2,A
+2023-09-30,Dumbravita,Metaloglobus,1,1,D
+2023-09-30,Arges Pitesti,Viitorul Selimbar,0,0,D
+2023-10-01,Unirea Slobozia,Alexandria,1,0,H
+2023-10-01,SCM Gloria Buzau,CSA Steaua Bucuresti,4,4,D
+2023-10-02,Corvinul Hunedoara,CS Mioveni,0,2,A
+2023-10-05,CSA Steaua Bucuresti,Arges Pitesti,3,1,H
+2023-10-07,Chindia Targoviste,Progresul Spartac,3,0,H
+2023-10-07,CS Mioveni,CSM Resita,2,1,H
+2023-10-07,ACS Sirineasa,Concordia,2,2,D
+2023-10-07,Metaloglobus,Csikszereda,0,0,D
+2023-10-07,Alexandria,Ceahlaul Piatra Neamt,2,2,D
+2023-10-07,Unirea Dej,Dumbravita,0,1,A
+2023-10-07,Slatina,SCM Gloria Buzau,1,2,A
+2023-10-08,Viitorul Selimbar,Unirea Slobozia,0,1,A
+2023-10-09,Tunari,Corvinul Hunedoara,1,1,D
+2023-10-20,Ceahlaul Piatra Neamt,Viitorul Selimbar,0,0,D
+2023-10-21,CSM Resita,Tunari,1,1,D
+2023-10-21,Csikszereda,Unirea Dej,1,0,H
+2023-10-21,Progresul Spartac,Metaloglobus,0,1,A
+2023-10-21,Dumbravita,Alexandria,2,0,H
+2023-10-21,Unirea Slobozia,CSA Steaua Bucuresti,1,0,H
+2023-10-22,ACS Sirineasa,CS Mioveni,1,0,H
+2023-10-22,Corvinul Hunedoara,Chindia Targoviste,2,1,H
+2023-10-23,Concordia,SCM Gloria Buzau,1,0,H
+2023-10-24,Arges Pitesti,Slatina,1,1,D
+2023-10-26,CSA Steaua Bucuresti,Ceahlaul Piatra Neamt,3,1,H
+2023-10-28,Chindia Targoviste,CSM Resita,4,1,H
+2023-10-28,CS Mioveni,Concordia,1,1,D
+2023-10-28,Metaloglobus,Corvinul Hunedoara,1,2,A
+2023-10-28,Alexandria,Csikszereda,1,2,A
+2023-10-28,Tunari,ACS Sirineasa,0,0,D
+2023-10-28,Unirea Dej,Progresul Spartac,1,0,H
+2023-10-28,Viitorul Selimbar,Dumbravita,1,0,H
+2023-10-29,SCM Gloria Buzau,Arges Pitesti,0,2,A
+2023-10-30,Slatina,Unirea Slobozia,1,0,H
+2023-11-04,CS Mioveni,Tunari,4,0,H
+2023-11-04,ACS Sirineasa,Chindia Targoviste,0,0,D
+2023-11-04,CSM Resita,Metaloglobus,5,0,H
+2023-11-04,Ceahlaul Piatra Neamt,Slatina,4,0,H
+2023-11-04,Dumbravita,CSA Steaua Bucuresti,0,0,D
+2023-11-04,Corvinul Hunedoara,Unirea Dej,4,0,H
+2023-11-04,Concordia,Arges Pitesti,1,0,H
+2023-11-05,Progresul Spartac,Alexandria,1,3,A
+2023-11-05,Csikszereda,Viitorul Selimbar,1,2,A
+2023-11-06,Unirea Slobozia,SCM Gloria Buzau,0,1,A
+2023-11-09,Chindia Targoviste,CS Mioveni,0,2,A
+2023-11-10,SCM Gloria Buzau,Ceahlaul Piatra Neamt,1,1,D
+2023-11-10,Arges Pitesti,Unirea Slobozia,0,1,A
+2023-11-11,Metaloglobus,ACS Sirineasa,2,1,H
+2023-11-11,Alexandria,Corvinul Hunedoara,0,2,A
+2023-11-11,Slatina,Dumbravita,3,0,H
+2023-11-11,Tunari,Concordia,1,1,D
+2023-11-11,Unirea Dej,CSM Resita,1,3,A
+2023-11-11,Viitorul Selimbar,Progresul Spartac,2,1,H
+2023-11-13,CSA Steaua Bucuresti,Csikszereda,1,0,H
+2023-11-23,Ceahlaul Piatra Neamt,Arges Pitesti,2,0,H
+2023-11-24,Dumbravita,SCM Gloria Buzau,0,1,A
+2023-11-25,CS Mioveni,Metaloglobus,0,2,A
+2023-11-25,CSM Resita,Alexandria,3,1,H
+2023-11-25,Csikszereda,Slatina,1,0,H
+2023-11-25,Progresul Spartac,CSA Steaua Bucuresti,1,6,A
+2023-11-25,Tunari,Chindia Targoviste,0,2,A
+2023-11-26,ACS Sirineasa,Unirea Dej,2,1,H
+2023-11-26,Corvinul Hunedoara,Viitorul Selimbar,0,0,D
+2023-11-28,Concordia,Unirea Slobozia,0,0,D
+2023-11-30,Viitorul Selimbar,CSM Resita,2,2,D
+2023-11-30,CSA Steaua Bucuresti,Corvinul Hunedoara,0,1,A
+2023-11-30,Arges Pitesti,Dumbravita,2,0,H
+2023-12-01,SCM Gloria Buzau,Csikszereda,0,2,A
+2023-12-02,Metaloglobus,Tunari,3,3,D
+2023-12-02,Alexandria,ACS Sirineasa,0,1,A
+2023-12-02,Slatina,Progresul Spartac,1,0,H
+2023-12-02,Unirea Dej,CS Mioveni,0,1,A
+2023-12-02,Unirea Slobozia,Ceahlaul Piatra Neamt,2,1,H
+2023-12-03,Chindia Targoviste,Concordia,1,1,D
+2024-02-22,Concordia,Ceahlaul Piatra Neamt,1,2,A
+2024-02-24,CS Mioveni,Alexandria,1,0,H
+2024-02-24,CSM Resita,CSA Steaua Bucuresti,3,1,H
+2024-02-24,Tunari,Unirea Dej,0,1,A
+2024-02-24,Dumbravita,Unirea Slobozia,0,2,A
+2024-02-24,Corvinul Hunedoara,Slatina,3,0,H
+2024-02-24,Chindia Targoviste,Metaloglobus,0,0,D
+2024-02-25,Progresul Spartac,SCM Gloria Buzau,1,5,A
+2024-02-25,ACS Sirineasa,Viitorul Selimbar,0,3,A
+2024-02-26,Csikszereda,Arges Pitesti,2,1,H
+2024-03-01,SCM Gloria Buzau,Corvinul Hunedoara,2,1,H
+2024-03-02,Arges Pitesti,Progresul Spartac,1,0,H
+2024-03-02,Metaloglobus,Concordia,2,0,H
+2024-03-02,Alexandria,Tunari,0,1,A
+2024-03-02,Ceahlaul Piatra Neamt,Dumbravita,2,0,H
+2024-03-02,Slatina,CSM Resita,0,0,D
+2024-03-02,Unirea Dej,Chindia Targoviste,1,3,A
+2024-03-02,Unirea Slobozia,Csikszereda,0,1,A
+2024-03-03,Viitorul Selimbar,CS Mioveni,1,0,H
+2024-03-05,CSA Steaua Bucuresti,ACS Sirineasa,5,0,H
+2024-03-07,Concordia,Dumbravita,0,2,A
+2024-03-09,Chindia Targoviste,Alexandria,3,0,H
+2024-03-09,ACS Sirineasa,Slatina,1,2,A
+2024-03-09,Metaloglobus,Unirea Dej,2,1,H
+2024-03-09,CSM Resita,SCM Gloria Buzau,2,0,H
+2024-03-09,Tunari,Viitorul Selimbar,0,0,D
+2024-03-09,Corvinul Hunedoara,Arges Pitesti,2,0,H
+2024-03-10,Progresul Spartac,Unirea Slobozia,0,2,A
+2024-03-10,Csikszereda,Ceahlaul Piatra Neamt,2,0,H
+2024-03-11,CS Mioveni,CSA Steaua Bucuresti,2,0,H
+2024-03-16,Arges Pitesti,CSM Resita,1,0,H
+2024-03-16,SCM Gloria Buzau,ACS Sirineasa,5,0,H
+2024-03-16,Alexandria,Metaloglobus,1,1,D
+2024-03-16,Ceahlaul Piatra Neamt,Progresul Spartac,4,0,H
+2024-03-16,Slatina,CS Mioveni,0,0,D
+2024-03-16,Unirea Dej,Concordia,0,2,A
+2024-03-16,Unirea Slobozia,Corvinul Hunedoara,3,1,H
+2024-03-16,Viitorul Selimbar,Chindia Targoviste,2,1,H
+2024-03-16,CSA Steaua Bucuresti,Tunari,2,1,H
+2024-03-16,Dumbravita,Csikszereda,1,1,D
+2024-03-28,Corvinul Hunedoara,SCM Gloria Buzau,1,1,D
+2024-03-30,Concordia,Progresul Spartac,1,0,H
+2024-03-30,ACS Sirineasa,CSA Steaua Bucuresti,0,2,A
+2024-03-30,CSM Resita,Unirea Dej,1,1,D
+2024-03-30,Alexandria,Dumbravita,3,1,H
+2024-03-30,Ceahlaul Piatra Neamt,Metaloglobus,1,2,A
+2024-03-30,Tunari,Chindia Targoviste,2,3,A
+2024-03-30,Unirea Slobozia,CS Mioveni,1,0,H
+2024-04-01,Csikszereda,Viitorul Selimbar,2,0,H
+2024-04-04,CS Mioveni,SCM Gloria Buzau,1,1,D
+2024-04-06,Chindia Targoviste,Concordia,0,1,A
+2024-04-06,Arges Pitesti,Ceahlaul Piatra Neamt,4,1,H
+2024-04-06,Metaloglobus,Alexandria,0,0,D
+2024-04-06,Progresul Spartac,ACS Sirineasa,1,3,A
+2024-04-06,Slatina,Tunari,1,1,D
+2024-04-06,Dumbravita,CSM Resita,1,0,H
+2024-04-06,Viitorul Selimbar,Corvinul Hunedoara,0,0,D
+2024-04-07,Unirea Slobozia,Csikszereda,2,0,H
+2024-04-10,Csikszereda,CS Mioveni,1,1,D
+2024-04-10,Corvinul Hunedoara,Unirea Slobozia,1,0,H
+2024-04-11,SCM Gloria Buzau,Viitorul Selimbar,0,0,D
+2024-04-13,Concordia,Slatina,3,2,H
+2024-04-13,ACS Sirineasa,Chindia Targoviste,1,0,H
+2024-04-13,CSM Resita,Metaloglobus,2,1,H
+2024-04-13,Alexandria,Arges Pitesti,0,2,A
+2024-04-13,Unirea Dej,Dumbravita,2,0,H
+2024-04-13,CSA Steaua Bucuresti,Progresul Spartac,4,1,H
+2024-04-13,Csikszereda,Corvinul Hunedoara,2,1,H
+2024-04-14,Unirea Slobozia,SCM Gloria Buzau,1,1,D
+2024-04-15,CS Mioveni,Viitorul Selimbar,0,0,D
+2024-04-20,Chindia Targoviste,CSA Steaua Bucuresti,0,0,D
+2024-04-20,Arges Pitesti,CSM Resita,0,1,A
+2024-04-20,Metaloglobus,Unirea Dej,0,1,A
+2024-04-20,Ceahlaul Piatra Neamt,Alexandria,4,0,H
+2024-04-20,Slatina,ACS Sirineasa,2,0,H
+2024-04-20,Tunari,Concordia,1,2,A
+2024-04-20,Corvinul Hunedoara,CS Mioveni,2,0,H
+2024-04-21,Viitorul Selimbar,Unirea Slobozia,1,2,A
+2024-04-21,SCM Gloria Buzau,Csikszereda,1,0,H
+2024-04-24,Viitorul Selimbar,Csikszereda,2,2,D
+2024-04-24,CS Mioveni,Unirea Slobozia,0,1,A
+2024-04-25,SCM Gloria Buzau,Corvinul Hunedoara,2,2,D
+2024-04-27,ACS Sirineasa,Tunari,1,2,A
+2024-04-27,CSM Resita,Ceahlaul Piatra Neamt,3,2,H
+2024-04-27,Unirea Dej,Arges Pitesti,1,0,H
+2024-04-27,CSA Steaua Bucuresti,Slatina,2,0,H
+2024-04-27,Dumbravita,Metaloglobus,0,2,A
+2024-04-27,Csikszereda,Unirea Slobozia,0,1,A
+2024-04-28,SCM Gloria Buzau,CS Mioveni,1,0,H
+2024-04-28,Progresul Spartac,Chindia Targoviste,0,2,A
+2024-04-29,Corvinul Hunedoara,Viitorul Selimbar,3,1,H
+2024-05-02,CS Mioveni,Csikszereda,3,1,H
+2024-05-03,Concordia,ACS Sirineasa,1,1,D
+2024-05-03,Arges Pitesti,Dumbravita,1,0,H
+2024-05-03,Alexandria,CSM Resita,2,4,A
+2024-05-03,Ceahlaul Piatra Neamt,Unirea Dej,1,1,D
+2024-05-03,Slatina,Progresul Spartac,4,0,H
+2024-05-03,Tunari,CSA Steaua Bucuresti,1,2,A
+2024-05-03,Viitorul Selimbar,SCM Gloria Buzau,2,1,H
+2024-05-04,Unirea Slobozia,Corvinul Hunedoara,1,0,H
+2024-05-07,SCM Gloria Buzau,Unirea Slobozia,3,0,H
+2024-05-08,Viitorul Selimbar,CS Mioveni,2,2,D
+2024-05-08,Corvinul Hunedoara,Csikszereda,3,1,H
+2024-05-11,Chindia Targoviste,Slatina,3,0,H
+2024-05-11,Metaloglobus,Arges Pitesti,1,1,D
+2024-05-11,Progresul Spartac,Tunari,3,1,H
+2024-05-11,Unirea Dej,Alexandria,1,0,H
+2024-05-11,CSA Steaua Bucuresti,Concordia,2,0,H
+2024-05-11,Dumbravita,Ceahlaul Piatra Neamt,1,1,D
+2024-05-11,CS Mioveni,Corvinul Hunedoara,3,1,H
+2024-05-11,Csikszereda,SCM Gloria Buzau,0,1,A
+2024-05-11,Unirea Slobozia,Viitorul Selimbar,0,0,D

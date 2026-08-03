@@ -1,0 +1,310 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2020-08-28,Jastrzebie,Arka Gdynia,0,4,A
+2020-08-28,Odra Opole,KS odz,0,4,A
+2020-08-29,Radomiak Radom,Widzew odz,4,1,H
+2020-08-29,Miedz Legnica,Sandecja Nowy Sacz,3,1,H
+2020-08-29,Gornik eczna,Bechatow,3,0,H
+2020-08-29,Puszcza Niepoomice,Resovia Rzeszow,0,3,A
+2020-08-29,Tychy 71,Stomil Olsztyn,0,0,D
+2020-08-29,Nieciecza,Zaglebie Sosnowiec,1,0,H
+2020-08-30,Chrobry Gogow,Korona Kielce,1,1,D
+2020-09-04,Arka Gdynia,Puszcza Niepoomice,3,2,H
+2020-09-05,Korona Kielce,Jastrzebie,3,2,H
+2020-09-05,Sandecja Nowy Sacz,Nieciecza,0,1,A
+2020-09-05,Bechatow,Miedz Legnica,1,0,H
+2020-09-06,Zaglebie Sosnowiec,Tychy 71,3,0,H
+2020-09-06,Gornik eczna,Resovia Rzeszow,2,0,H
+2020-09-10,Chrobry Gogow,Widzew odz,3,0,H
+2020-09-11,Jastrzebie,Radomiak Radom,0,1,A
+2020-09-11,Miedz Legnica,Resovia Rzeszow,4,0,H
+2020-09-11,Puszcza Niepoomice,Korona Kielce,0,0,D
+2020-09-11,Odra Opole,Zaglebie Sosnowiec,1,0,H
+2020-09-12,KS odz,Stomil Olsztyn,3,0,H
+2020-09-12,Tychy 71,Sandecja Nowy Sacz,2,0,H
+2020-09-12,Nieciecza,Bechatow,2,0,H
+2020-09-16,Chrobry Gogow,Radomiak Radom,1,2,A
+2020-09-16,Widzew odz,KS odz,0,2,A
+2020-09-16,Stomil Olsztyn,Odra Opole,0,1,A
+2020-09-18,Arka Gdynia,Miedz Legnica,4,0,H
+2020-09-19,Widzew odz,Stomil Olsztyn,2,0,H
+2020-09-19,Sandecja Nowy Sacz,Odra Opole,1,2,A
+2020-09-19,Zaglebie Sosnowiec,KS odz,1,2,A
+2020-09-19,Chrobry Gogow,Jastrzebie,1,0,H
+2020-09-19,Bechatow,Tychy 71,1,1,D
+2020-09-19,Nieciecza,Resovia Rzeszow,2,0,H
+2020-09-20,Korona Kielce,Gornik eczna,0,2,A
+2020-09-25,Jastrzebie,Widzew odz,0,1,A
+2020-09-25,Nieciecza,Arka Gdynia,0,1,A
+2020-09-25,Tychy 71,Resovia Rzeszow,2,1,H
+2020-09-25,Odra Opole,Bechatow,1,0,H
+2020-09-25,Stomil Olsztyn,Zaglebie Sosnowiec,1,0,H
+2020-09-26,Miedz Legnica,Korona Kielce,1,1,D
+2020-09-26,Gornik eczna,Radomiak Radom,2,1,H
+2020-09-27,KS odz,Sandecja Nowy Sacz,4,1,H
+2020-09-27,Puszcza Niepoomice,Chrobry Gogow,2,0,H
+2020-09-29,Widzew odz,Zaglebie Sosnowiec,1,1,D
+2020-09-29,Arka Gdynia,Tychy 71,0,2,A
+2020-09-30,Sandecja Nowy Sacz,Stomil Olsztyn,1,4,A
+2020-09-30,Chrobry Gogow,Gornik eczna,1,1,D
+2020-09-30,Korona Kielce,Nieciecza,0,3,A
+2020-09-30,Odra Opole,Resovia Rzeszow,1,0,H
+2020-09-30,Puszcza Niepoomice,Jastrzebie,2,1,H
+2020-09-30,Bechatow,KS odz,1,3,A
+2020-09-30,Radomiak Radom,Miedz Legnica,0,2,A
+2020-10-03,Zaglebie Sosnowiec,Sandecja Nowy Sacz,3,0,H
+2020-10-03,Tychy 71,Korona Kielce,0,1,A
+2020-10-03,Miedz Legnica,Chrobry Gogow,2,2,D
+2020-10-04,Puszcza Niepoomice,Widzew odz,1,0,H
+2020-10-04,KS odz,Resovia Rzeszow,2,1,H
+2020-10-04,Odra Opole,Arka Gdynia,0,0,D
+2020-10-04,Stomil Olsztyn,Bechatow,0,0,D
+2020-10-04,Nieciecza,Radomiak Radom,3,2,H
+2020-10-09,Widzew odz,Sandecja Nowy Sacz,2,1,H
+2020-10-09,Miedz Legnica,Jastrzebie,1,1,D
+2020-10-10,Arka Gdynia,KS odz,0,0,D
+2020-10-10,Stomil Olsztyn,Resovia Rzeszow,1,1,D
+2020-10-10,Bechatow,Zaglebie Sosnowiec,1,0,H
+2020-10-11,Korona Kielce,Odra Opole,0,2,A
+2020-10-16,Miedz Legnica,Puszcza Niepoomice,1,1,D
+2020-10-16,Nieciecza,Jastrzebie,2,0,H
+2020-10-16,Odra Opole,Radomiak Radom,1,1,D
+2020-10-16,Tychy 71,Chrobry Gogow,4,0,H
+2020-10-17,Gornik eczna,Widzew odz,0,0,D
+2020-10-17,Stomil Olsztyn,Arka Gdynia,1,1,D
+2020-10-18,Sandecja Nowy Sacz,Bechatow,0,0,D
+2020-10-21,Radomiak Radom,Puszcza Niepoomice,2,0,H
+2020-10-21,Gornik eczna,Arka Gdynia,2,0,H
+2020-10-23,Tychy 71,Jastrzebie,3,1,H
+2020-10-25,Gornik eczna,Miedz Legnica,1,0,H
+2020-10-28,Radomiak Radom,Tychy 71,2,2,D
+2020-11-04,Chrobry Gogow,Nieciecza,0,2,A
+2020-11-04,Zaglebie Sosnowiec,Resovia Rzeszow,0,2,A
+2020-11-06,Miedz Legnica,Widzew odz,1,1,D
+2020-11-06,Stomil Olsztyn,Radomiak Radom,0,1,A
+2020-11-07,Nieciecza,Gornik eczna,2,1,H
+2020-11-07,Odra Opole,Jastrzebie,0,2,A
+2020-11-07,KS odz,Chrobry Gogow,4,0,H
+2020-11-07,Zaglebie Sosnowiec,Korona Kielce,1,3,A
+2020-11-07,Bechatow,Resovia Rzeszow,3,0,H
+2020-11-08,Tychy 71,Puszcza Niepoomice,1,1,D
+2020-11-08,Sandecja Nowy Sacz,Arka Gdynia,1,5,A
+2020-11-10,Widzew odz,Bechatow,0,0,D
+2020-11-11,Gornik eczna,Jastrzebie,2,1,H
+2020-11-11,KS odz,Korona Kielce,2,0,H
+2020-11-13,Arka Gdynia,Bechatow,1,2,A
+2020-11-13,Chrobry Gogow,Stomil Olsztyn,3,0,H
+2020-11-14,Jastrzebie,KS odz,0,3,A
+2020-11-14,Puszcza Niepoomice,Odra Opole,1,0,H
+2020-11-14,Widzew odz,Resovia Rzeszow,2,0,H
+2020-11-14,Radomiak Radom,Zaglebie Sosnowiec,0,0,D
+2020-11-14,Korona Kielce,Sandecja Nowy Sacz,1,0,H
+2020-11-15,Miedz Legnica,Nieciecza,2,3,A
+2020-11-15,Gornik eczna,Tychy 71,1,1,D
+2020-11-18,Resovia Rzeszow,Sandecja Nowy Sacz,0,0,D
+2020-11-18,Puszcza Niepoomice,Gornik eczna,1,0,H
+2020-11-18,Chrobry Gogow,Odra Opole,2,3,A
+2020-11-18,Arka Gdynia,Zaglebie Sosnowiec,2,0,H
+2020-11-18,Korona Kielce,Stomil Olsztyn,1,3,A
+2020-11-18,Radomiak Radom,KS odz,1,0,H
+2020-11-20,Nieciecza,Widzew odz,2,0,H
+2020-11-21,Resovia Rzeszow,Arka Gdynia,1,2,A
+2020-11-21,Stomil Olsztyn,Jastrzebie,0,1,A
+2020-11-21,Zaglebie Sosnowiec,Chrobry Gogow,1,2,A
+2020-11-21,Tychy 71,Miedz Legnica,0,2,A
+2020-11-21,Bechatow,Korona Kielce,0,1,A
+2020-11-22,Odra Opole,Gornik eczna,1,1,D
+2020-11-22,Sandecja Nowy Sacz,Radomiak Radom,1,1,D
+2020-11-22,KS odz,Puszcza Niepoomice,4,4,D
+2020-11-25,Puszcza Niepoomice,Nieciecza,0,0,D
+2020-11-27,Miedz Legnica,Odra Opole,4,2,H
+2020-11-27,Gornik eczna,KS odz,2,0,H
+2020-11-28,Jastrzebie,Zaglebie Sosnowiec,2,1,H
+2020-11-28,Puszcza Niepoomice,Stomil Olsztyn,0,2,A
+2020-11-28,Nieciecza,Tychy 71,0,0,D
+2020-11-28,Chrobry Gogow,Sandecja Nowy Sacz,0,2,A
+2020-11-28,Korona Kielce,Resovia Rzeszow,1,0,H
+2020-11-28,Radomiak Radom,Bechatow,2,0,H
+2020-11-29,Widzew odz,Arka Gdynia,2,1,H
+2020-12-01,Stomil Olsztyn,Gornik eczna,2,1,H
+2020-12-01,KS odz,Miedz Legnica,3,4,A
+2020-12-02,Zaglebie Sosnowiec,Puszcza Niepoomice,2,0,H
+2020-12-02,Bechatow,Chrobry Gogow,1,2,A
+2020-12-03,Arka Gdynia,Korona Kielce,1,0,H
+2020-12-03,Tychy 71,Widzew odz,2,1,H
+2020-12-04,Miedz Legnica,Stomil Olsztyn,2,2,D
+2020-12-05,Jastrzebie,Bechatow,3,2,H
+2020-12-05,Nieciecza,KS odz,2,0,H
+2020-12-05,Chrobry Gogow,Resovia Rzeszow,3,0,H
+2020-12-06,Puszcza Niepoomice,Sandecja Nowy Sacz,0,1,A
+2020-12-06,Radomiak Radom,Arka Gdynia,0,0,D
+2020-12-06,Gornik eczna,Zaglebie Sosnowiec,4,1,H
+2020-12-06,Tychy 71,Odra Opole,2,0,H
+2020-12-09,Resovia Rzeszow,Radomiak Radom,0,0,D
+2020-12-09,Sandecja Nowy Sacz,Jastrzebie,3,0,H
+2020-12-09,Nieciecza,Odra Opole,1,1,D
+2020-12-12,Resovia Rzeszow,Jastrzebie,1,2,A
+2020-12-12,Stomil Olsztyn,Nieciecza,1,4,A
+2020-12-12,Bechatow,Puszcza Niepoomice,0,2,A
+2020-12-12,Arka Gdynia,Chrobry Gogow,1,1,D
+2020-12-12,Zaglebie Sosnowiec,Miedz Legnica,0,2,A
+2020-12-13,Korona Kielce,Radomiak Radom,0,2,A
+2020-12-13,Sandecja Nowy Sacz,Gornik eczna,1,1,D
+2021-02-20,KS odz,Tychy 71,0,3,A
+2021-02-20,Widzew odz,Korona Kielce,2,0,H
+2021-02-26,Resovia Rzeszow,Puszcza Niepoomice,2,1,H
+2021-02-26,Arka Gdynia,Jastrzebie,1,0,H
+2021-02-26,Widzew odz,Radomiak Radom,1,1,D
+2021-02-27,KS odz,Odra Opole,2,1,H
+2021-02-27,Sandecja Nowy Sacz,Miedz Legnica,2,0,H
+2021-02-27,Stomil Olsztyn,Tychy 71,1,2,A
+2021-02-27,Zaglebie Sosnowiec,Nieciecza,1,1,D
+2021-02-27,Bechatow,Gornik eczna,1,2,A
+2021-02-28,Korona Kielce,Chrobry Gogow,2,2,D
+2021-03-05,Odra Opole,Stomil Olsztyn,1,2,A
+2021-03-05,Miedz Legnica,Bechatow,3,0,H
+2021-03-05,Nieciecza,Sandecja Nowy Sacz,2,2,D
+2021-03-06,KS odz,Widzew odz,2,2,D
+2021-03-06,Resovia Rzeszow,Gornik eczna,0,2,A
+2021-03-06,Jastrzebie,Korona Kielce,2,0,H
+2021-03-06,Radomiak Radom,Chrobry Gogow,1,2,A
+2021-03-07,Tychy 71,Zaglebie Sosnowiec,3,1,H
+2021-03-07,Puszcza Niepoomice,Arka Gdynia,4,0,H
+2021-03-10,Odra Opole,Widzew odz,0,0,D
+2021-03-12,Bechatow,Nieciecza,1,2,A
+2021-03-13,Arka Gdynia,Gornik eczna,0,2,A
+2021-03-13,Sandecja Nowy Sacz,Tychy 71,2,1,H
+2021-03-13,Stomil Olsztyn,KS odz,0,2,A
+2021-03-13,Resovia Rzeszow,Miedz Legnica,0,0,D
+2021-03-13,Zaglebie Sosnowiec,Odra Opole,0,2,A
+2021-03-13,Korona Kielce,Puszcza Niepoomice,1,0,H
+2021-03-13,Radomiak Radom,Jastrzebie,2,0,H
+2021-03-14,Widzew odz,Chrobry Gogow,1,0,H
+2021-03-19,Odra Opole,Sandecja Nowy Sacz,1,1,D
+2021-03-19,Gornik eczna,Korona Kielce,0,1,A
+2021-03-20,Miedz Legnica,Arka Gdynia,1,2,A
+2021-03-20,Jastrzebie,Chrobry Gogow,0,1,A
+2021-03-20,Resovia Rzeszow,Nieciecza,3,1,H
+2021-03-20,Tychy 71,Bechatow,0,0,D
+2021-03-20,KS odz,Zaglebie Sosnowiec,0,0,D
+2021-03-21,Stomil Olsztyn,Widzew odz,0,1,A
+2021-03-26,Korona Kielce,Miedz Legnica,0,0,D
+2021-03-27,Radomiak Radom,Gornik eczna,3,0,H
+2021-03-27,Sandecja Nowy Sacz,KS odz,2,1,H
+2021-03-27,Resovia Rzeszow,Tychy 71,0,0,D
+2021-03-27,Zaglebie Sosnowiec,Stomil Olsztyn,2,1,H
+2021-03-27,Chrobry Gogow,Puszcza Niepoomice,0,2,A
+2021-03-27,Bechatow,Odra Opole,1,1,D
+2021-03-28,Widzew odz,Jastrzebie,2,0,H
+2021-04-01,Gornik eczna,Chrobry Gogow,3,0,H
+2021-04-01,Tychy 71,Arka Gdynia,1,0,H
+2021-04-03,Miedz Legnica,Radomiak Radom,0,1,A
+2021-04-03,Jastrzebie,Puszcza Niepoomice,1,2,A
+2021-04-03,Resovia Rzeszow,Odra Opole,1,1,D
+2021-04-03,Stomil Olsztyn,Sandecja Nowy Sacz,0,5,A
+2021-04-03,Zaglebie Sosnowiec,Widzew odz,3,0,H
+2021-04-03,KS odz,Bechatow,1,0,H
+2021-04-09,Widzew odz,Puszcza Niepoomice,0,0,D
+2021-04-10,Korona Kielce,Tychy 71,1,0,H
+2021-04-10,Resovia Rzeszow,KS odz,1,0,H
+2021-04-10,Jastrzebie,Gornik eczna,1,1,D
+2021-04-10,Sandecja Nowy Sacz,Zaglebie Sosnowiec,2,1,H
+2021-04-10,Bechatow,Stomil Olsztyn,2,3,A
+2021-04-11,Arka Gdynia,Odra Opole,1,1,D
+2021-04-11,Chrobry Gogow,Miedz Legnica,0,0,D
+2021-04-14,Puszcza Niepoomice,Radomiak Radom,0,4,A
+2021-04-16,KS odz,Arka Gdynia,1,2,A
+2021-04-17,Gornik eczna,Puszcza Niepoomice,0,0,D
+2021-04-17,Resovia Rzeszow,Stomil Olsztyn,1,0,H
+2021-04-17,Sandecja Nowy Sacz,Widzew odz,3,1,H
+2021-04-18,Zaglebie Sosnowiec,Bechatow,1,1,D
+2021-04-18,Odra Opole,Korona Kielce,1,0,H
+2021-04-20,Tychy 71,Radomiak Radom,1,0,H
+2021-04-21,Arka Gdynia,Nieciecza,1,1,D
+2021-04-23,Bechatow,Sandecja Nowy Sacz,0,2,A
+2021-04-23,Widzew odz,Gornik eczna,0,0,D
+2021-04-24,Korona Kielce,KS odz,1,2,A
+2021-04-24,Chrobry Gogow,Tychy 71,1,0,H
+2021-04-24,Jastrzebie,Nieciecza,0,0,D
+2021-04-24,Resovia Rzeszow,Zaglebie Sosnowiec,1,2,A
+2021-04-24,Radomiak Radom,Odra Opole,1,0,H
+2021-04-25,Arka Gdynia,Stomil Olsztyn,2,0,H
+2021-04-27,Miedz Legnica,Gornik eczna,1,0,H
+2021-04-27,Bechatow,Widzew odz,2,3,A
+2021-04-28,Sandecja Nowy Sacz,Resovia Rzeszow,1,1,D
+2021-04-28,Stomil Olsztyn,Korona Kielce,2,0,H
+2021-04-28,Zaglebie Sosnowiec,Arka Gdynia,2,3,A
+2021-04-28,Odra Opole,Chrobry Gogow,3,1,H
+2021-04-28,KS odz,Radomiak Radom,1,1,D
+2021-04-28,Nieciecza,Puszcza Niepoomice,4,0,H
+2021-04-29,Jastrzebie,Tychy 71,0,1,A
+2021-04-30,Widzew odz,Miedz Legnica,0,0,D
+2021-05-01,Chrobry Gogow,KS odz,1,0,H
+2021-05-01,Korona Kielce,Zaglebie Sosnowiec,1,0,H
+2021-05-02,Resovia Rzeszow,Bechatow,1,3,A
+2021-05-02,Jastrzebie,Odra Opole,3,0,H
+2021-05-02,Gornik eczna,Nieciecza,3,3,D
+2021-05-02,Puszcza Niepoomice,Tychy 71,0,1,A
+2021-05-02,Radomiak Radom,Stomil Olsztyn,1,0,H
+2021-05-05,Jastrzebie,Miedz Legnica,1,2,A
+2021-05-05,Nieciecza,Korona Kielce,6,2,H
+2021-05-07,Odra Opole,Puszcza Niepoomice,1,0,H
+2021-05-07,Zaglebie Sosnowiec,Radomiak Radom,0,1,A
+2021-05-07,Tychy 71,Gornik eczna,3,1,H
+2021-05-08,Bechatow,Arka Gdynia,0,3,A
+2021-05-08,Sandecja Nowy Sacz,Korona Kielce,2,1,H
+2021-05-08,Stomil Olsztyn,Chrobry Gogow,1,2,A
+2021-05-08,Nieciecza,Miedz Legnica,0,2,A
+2021-05-09,Resovia Rzeszow,Widzew odz,2,0,H
+2021-05-09,KS odz,Jastrzebie,1,1,D
+2021-05-12,Radomiak Radom,Nieciecza,0,1,A
+2021-05-14,Arka Gdynia,Resovia Rzeszow,1,0,H
+2021-05-15,Miedz Legnica,Tychy 71,2,3,A
+2021-05-15,Gornik eczna,Odra Opole,1,1,D
+2021-05-15,Korona Kielce,Bechatow,3,0,H
+2021-05-15,Chrobry Gogow,Zaglebie Sosnowiec,1,0,H
+2021-05-15,Jastrzebie,Stomil Olsztyn,2,0,H
+2021-05-16,Widzew odz,Nieciecza,1,1,D
+2021-05-16,Radomiak Radom,Sandecja Nowy Sacz,3,0,H
+2021-05-16,Puszcza Niepoomice,KS odz,2,3,A
+2021-05-19,Arka Gdynia,Sandecja Nowy Sacz,3,0,H
+2021-05-19,Nieciecza,Chrobry Gogow,0,0,D
+2021-05-19,Puszcza Niepoomice,Miedz Legnica,0,1,A
+2021-05-21,Bechatow,Radomiak Radom,0,1,A
+2021-05-22,Zaglebie Sosnowiec,Jastrzebie,3,0,H
+2021-05-22,Tychy 71,Nieciecza,0,2,A
+2021-05-22,Stomil Olsztyn,Puszcza Niepoomice,2,1,H
+2021-05-22,KS odz,Gornik eczna,3,1,H
+2021-05-22,Odra Opole,Miedz Legnica,2,1,H
+2021-05-23,Arka Gdynia,Widzew odz,0,0,D
+2021-05-23,Resovia Rzeszow,Korona Kielce,1,1,D
+2021-05-23,Sandecja Nowy Sacz,Chrobry Gogow,1,1,D
+2021-05-28,Widzew odz,Tychy 71,0,2,A
+2021-05-29,Miedz Legnica,KS odz,3,0,H
+2021-05-29,Chrobry Gogow,Bechatow,0,1,A
+2021-05-29,Korona Kielce,Arka Gdynia,3,3,D
+2021-05-29,Jastrzebie,Sandecja Nowy Sacz,1,1,D
+2021-05-29,Radomiak Radom,Resovia Rzeszow,3,1,H
+2021-05-30,Odra Opole,Nieciecza,1,0,H
+2021-05-30,Gornik eczna,Stomil Olsztyn,1,1,D
+2021-05-30,Puszcza Niepoomice,Zaglebie Sosnowiec,0,4,A
+2021-06-04,Korona Kielce,Widzew odz,1,1,D
+2021-06-04,KS odz,Nieciecza,3,2,H
+2021-06-05,Arka Gdynia,Radomiak Radom,0,2,A
+2021-06-05,Bechatow,Jastrzebie,0,2,A
+2021-06-05,Resovia Rzeszow,Chrobry Gogow,1,0,H
+2021-06-05,Stomil Olsztyn,Miedz Legnica,1,1,D
+2021-06-06,Zaglebie Sosnowiec,Gornik eczna,0,1,A
+2021-06-06,Odra Opole,Tychy 71,1,5,A
+2021-06-06,Sandecja Nowy Sacz,Puszcza Niepoomice,2,1,H
+2021-06-13,Miedz Legnica,Zaglebie Sosnowiec,1,1,D
+2021-06-13,Chrobry Gogow,Arka Gdynia,0,3,A
+2021-06-13,Jastrzebie,Resovia Rzeszow,2,1,H
+2021-06-13,Nieciecza,Stomil Olsztyn,0,0,D
+2021-06-13,Puszcza Niepoomice,Bechatow,2,0,H
+2021-06-13,Tychy 71,KS odz,1,1,D
+2021-06-13,Radomiak Radom,Korona Kielce,2,0,H
+2021-06-13,Gornik eczna,Sandecja Nowy Sacz,3,0,H
+2021-06-13,Widzew odz,Odra Opole,2,1,H
+2021-06-16,Tychy 71,Gornik eczna,1,1,D
+2021-06-16,Arka Gdynia,KS odz,0,1,A
+2021-06-20,KS odz,Gornik eczna,0,1,A

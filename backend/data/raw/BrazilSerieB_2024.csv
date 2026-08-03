@@ -1,0 +1,381 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2024-04-19,Botafogo SP,America Mineiro,1,1,D
+2024-04-19,Novorizontino,CRB,2,1,H
+2024-04-20,Operario-PR,Avai,1,0,H
+2024-04-20,Chapecoense-sc,Ituano,3,1,H
+2024-04-20,Santos,Paysandu,2,0,H
+2024-04-20,Amazonas,Sport Recife,2,3,A
+2024-04-20,Ceara,Goias,1,1,D
+2024-04-21,Ponte Preta,Coritiba,1,1,D
+2024-04-23,Vila Nova,Guarani Campinas,2,0,H
+2024-04-24,Brusque,Mirassol,3,1,H
+2024-04-26,Sport Recife,Vila Nova,2,0,H
+2024-04-26,Ituano,Operario-PR,0,2,A
+2024-04-26,Avai,Santos,0,2,A
+2024-04-27,Guarani Campinas,Chapecoense-sc,0,1,A
+2024-04-27,CRB,Amazonas,0,0,D
+2024-04-27,Paysandu,Botafogo SP,1,1,D
+2024-04-27,America Mineiro,Novorizontino,2,0,H
+2024-04-28,Coritiba,Brusque,1,0,H
+2024-04-28,Goias,Ponte Preta,3,0,H
+2024-04-29,Mirassol,Ceara,3,2,H
+2024-05-03,Paysandu,Avai,0,0,D
+2024-05-04,Coritiba,Sport Recife,0,1,A
+2024-05-04,Chapecoense-sc,America Mineiro,2,2,D
+2024-05-04,Vila Nova,Operario-PR,1,0,H
+2024-05-05,Ituano,Novorizontino,1,3,A
+2024-05-05,Brusque,Goias,0,2,A
+2024-05-06,Ceara,CRB,2,2,D
+2024-05-06,Ponte Preta,Amazonas,3,0,H
+2024-05-07,Santos,Guarani Campinas,4,1,H
+2024-05-08,Botafogo SP,Mirassol,0,0,D
+2024-05-09,America Mineiro,Vila Nova,3,1,H
+2024-05-10,Novorizontino,Ceara,0,3,A
+2024-05-11,CRB,Chapecoense-sc,2,0,H
+2024-05-11,Goias,Ituano,2,0,H
+2024-05-11,Sport Recife,Brusque,4,1,H
+2024-05-11,Guarani Campinas,Botafogo SP,2,0,H
+2024-05-11,Operario-PR,Ponte Preta,1,1,D
+2024-05-11,Amazonas,Santos,1,0,H
+2024-05-12,Avai,Coritiba,1,0,H
+2024-05-12,Mirassol,Paysandu,2,1,H
+2024-05-14,Vila Nova,Novorizontino,2,1,H
+2024-05-14,Avai,CRB,2,1,H
+2024-05-15,Coritiba,Guarani Campinas,1,0,H
+2024-05-15,Botafogo SP,Chapecoense-sc,0,0,D
+2024-05-15,America Mineiro,Mirassol,0,0,D
+2024-05-15,Brusque,Operario-PR,0,0,D
+2024-05-15,Ituano,Sport Recife,1,0,H
+2024-05-16,Ceara,Amazonas,2,1,H
+2024-05-16,Ponte Preta,Santos,1,2,A
+2024-05-16,Paysandu,Goias,1,1,D
+2024-05-17,CRB,Vila Nova,1,0,H
+2024-05-18,Novorizontino,Coritiba,0,0,D
+2024-05-18,Amazonas,Paysandu,1,1,D
+2024-05-18,Goias,Botafogo SP,4,0,H
+2024-05-19,Sport Recife,Avai,1,2,A
+2024-05-19,Santos,Brusque,4,0,H
+2024-05-19,Operario-PR,Ceara,0,0,D
+2024-05-19,Mirassol,Ituano,2,0,H
+2024-05-21,Guarani Campinas,America Mineiro,1,2,A
+2024-05-21,Chapecoense-sc,Ponte Preta,0,0,D
+2024-05-25,America Mineiro,Santos,2,1,H
+2024-05-26,Guarani Campinas,Paysandu,0,0,D
+2024-05-26,Ituano,Ponte Preta,2,0,H
+2024-05-26,Vila Nova,Brusque,2,2,D
+2024-05-26,Ceara,Chapecoense-sc,2,1,H
+2024-05-27,Coritiba,Operario-PR,3,0,H
+2024-05-28,Botafogo SP,Novorizontino,0,1,A
+2024-05-28,Avai,Goias,2,0,H
+2024-05-28,Amazonas,Mirassol,1,0,H
+2024-05-31,Ceara,Coritiba,1,0,H
+2024-06-01,Goias,Sport Recife,3,0,H
+2024-06-01,Brusque,Novorizontino,0,0,D
+2024-06-02,Chapecoense-sc,Vila Nova,1,1,D
+2024-06-02,Ponte Preta,CRB,4,2,H
+2024-06-02,Ituano,Avai,0,1,A
+2024-06-03,Santos,Botafogo SP,1,2,A
+2024-06-04,Operario-PR,Amazonas,1,0,H
+2024-06-04,Mirassol,Guarani Campinas,3,0,H
+2024-06-05,Paysandu,America Mineiro,2,0,H
+2024-06-07,Coritiba,Ituano,4,2,H
+2024-06-08,Novorizontino,Santos,3,1,H
+2024-06-08,Guarani Campinas,Operario-PR,0,1,A
+2024-06-08,Amazonas,Brusque,2,1,H
+2024-06-09,Avai,Chapecoense-sc,0,0,D
+2024-06-09,America Mineiro,Ponte Preta,2,0,H
+2024-06-10,Vila Nova,Ceara,3,2,H
+2024-06-11,Sport Recife,Paysandu,1,0,H
+2024-06-11,Mirassol,Goias,1,0,H
+2024-06-14,Amazonas,Chapecoense-sc,0,1,A
+2024-06-15,Avai,Guarani Campinas,3,2,H
+2024-06-15,America Mineiro,CRB,2,1,H
+2024-06-15,Ponte Preta,Novorizontino,1,0,H
+2024-06-15,Ituano,Paysandu,3,5,A
+2024-06-15,Operario-PR,Santos,1,0,H
+2024-06-16,Botafogo SP,Vila Nova,1,0,H
+2024-06-16,Brusque,Ceara,1,0,H
+2024-06-16,Sport Recife,Mirassol,1,0,H
+2024-06-16,Goias,Coritiba,1,1,D
+2024-06-18,Chapecoense-sc,Operario-PR,0,1,A
+2024-06-19,Novorizontino,Amazonas,1,1,D
+2024-06-19,Paysandu,CRB,1,1,D
+2024-06-19,Guarani Campinas,Ituano,3,3,D
+2024-06-20,Botafogo SP,Ponte Preta,2,0,H
+2024-06-20,Coritiba,America Mineiro,1,0,H
+2024-06-20,Brusque,Avai,0,0,D
+2024-06-20,Santos,Goias,2,0,H
+2024-06-21,Ceara,Sport Recife,0,0,D
+2024-06-21,Vila Nova,Mirassol,1,0,H
+2024-06-22,CRB,Guarani Campinas,1,0,H
+2024-06-22,Operario-PR,Botafogo SP,0,1,A
+2024-06-23,Ituano,Brusque,1,1,D
+2024-06-23,Chapecoense-sc,Paysandu,1,2,A
+2024-06-23,Vila Nova,Goias,1,0,H
+2024-06-25,Sport Recife,Novorizontino,1,2,A
+2024-06-26,Ponte Preta,Ceara,3,1,H
+2024-06-26,Amazonas,Coritiba,1,0,H
+2024-06-26,America Mineiro,Avai,1,1,D
+2024-06-26,Mirassol,Santos,0,0,D
+2024-06-29,Coritiba,Vila Nova,1,1,D
+2024-06-29,Botafogo SP,Sport Recife,1,1,D
+2024-06-30,Ceara,Ituano,4,2,H
+2024-06-30,Avai,Amazonas,1,1,D
+2024-06-30,Paysandu,Operario-PR,1,1,D
+2024-06-30,Guarani Campinas,Ponte Preta,1,1,D
+2024-07-02,CRB,Brusque,1,1,D
+2024-07-02,Goias,America Mineiro,2,1,H
+2024-07-02,Santos,Chapecoense-sc,1,0,H
+2024-07-02,Novorizontino,Mirassol,1,1,D
+2024-07-06,Brusque,Ponte Preta,0,0,D
+2024-07-06,America Mineiro,Operario-PR,2,0,H
+2024-07-06,Goias,Chapecoense-sc,1,2,A
+2024-07-06,Ceara,Santos,0,1,A
+2024-07-07,Coritiba,Paysandu,1,1,D
+2024-07-07,Ituano,Botafogo SP,3,2,H
+2024-07-07,Guarani Campinas,Sport Recife,0,1,A
+2024-07-08,Avai,Novorizontino,0,1,A
+2024-07-09,Amazonas,Vila Nova,1,2,A
+2024-07-10,Mirassol,CRB,1,0,H
+2024-07-13,Botafogo SP,Amazonas,0,1,A
+2024-07-13,Paysandu,Ceara,2,1,H
+2024-07-13,Novorizontino,Guarani Campinas,1,1,D
+2024-07-13,Sport Recife,America Mineiro,1,1,D
+2024-07-13,CRB,Coritiba,2,1,H
+2024-07-13,Ponte Preta,Mirassol,4,2,H
+2024-07-14,Vila Nova,Avai,2,1,H
+2024-07-15,Chapecoense-sc,Brusque,1,1,D
+2024-07-15,Santos,Ituano,2,0,H
+2024-07-17,CRB,Botafogo SP,4,1,H
+2024-07-18,Operario-PR,Goias,2,0,H
+2024-07-18,Vila Nova,Santos,1,1,D
+2024-07-19,Novorizontino,Chapecoense-sc,1,0,H
+2024-07-20,Coritiba,Mirassol,0,1,A
+2024-07-20,America Mineiro,Amazonas,0,0,D
+2024-07-20,CRB,Ituano,1,0,H
+2024-07-20,Paysandu,Ponte Preta,1,0,H
+2024-07-20,Avai,Ceara,0,1,A
+2024-07-21,Guarani Campinas,Goias,2,3,A
+2024-07-21,Botafogo SP,Brusque,2,2,D
+2024-07-22,Santos,Coritiba,4,0,H
+2024-07-23,Mirassol,Avai,0,0,D
+2024-07-24,Ituano,America Mineiro,0,0,D
+2024-07-24,Ponte Preta,Vila Nova,2,0,H
+2024-07-24,Chapecoense-sc,Sport Recife,1,1,D
+2024-07-24,Operario-PR,Novorizontino,0,0,D
+2024-07-25,Brusque,Paysandu,1,0,H
+2024-07-25,Amazonas,Guarani Campinas,1,1,D
+2024-07-26,Ceara,Botafogo SP,4,1,H
+2024-07-26,Goias,CRB,1,1,D
+2024-07-27,Ituano,Vila Nova,0,0,D
+2024-07-27,Coritiba,Chapecoense-sc,1,0,H
+2024-07-27,Mirassol,Operario-PR,1,0,H
+2024-07-27,Sport Recife,Ponte Preta,3,1,H
+2024-07-28,Guarani Campinas,Brusque,1,0,H
+2024-07-28,America Mineiro,Ceara,2,2,D
+2024-07-28,CRB,Santos,1,1,D
+2024-07-29,Paysandu,Novorizontino,1,3,A
+2024-07-31,Avai,Botafogo SP,1,1,D
+2024-08-03,Santos,Sport Recife,1,1,D
+2024-08-03,Botafogo SP,Coritiba,2,0,H
+2024-08-03,Brusque,America Mineiro,0,0,D
+2024-08-04,Amazonas,Ituano,1,0,H
+2024-08-04,Ponte Preta,Avai,1,0,H
+2024-08-04,Operario-PR,CRB,2,0,H
+2024-08-04,Novorizontino,Goias,2,1,H
+2024-08-05,Chapecoense-sc,Mirassol,0,1,A
+2024-08-06,Vila Nova,Paysandu,2,2,D
+2024-08-07,Ceara,Guarani Campinas,3,1,H
+2024-08-09,Paysandu,Santos,0,3,A
+2024-08-10,Mirassol,Brusque,2,0,H
+2024-08-10,America Mineiro,Botafogo SP,3,1,H
+2024-08-10,Sport Recife,Amazonas,3,2,H
+2024-08-10,Ituano,Chapecoense-sc,2,1,H
+2024-08-10,Avai,Operario-PR,1,0,H
+2024-08-11,Coritiba,Ponte Preta,1,1,D
+2024-08-11,CRB,Novorizontino,0,1,A
+2024-08-12,Guarani Campinas,Vila Nova,2,0,H
+2024-08-13,Goias,Ceara,2,1,H
+2024-08-16,Operario-PR,Ituano,1,2,A
+2024-08-17,Vila Nova,Sport Recife,2,0,H
+2024-08-17,Novorizontino,America Mineiro,1,1,D
+2024-08-17,Chapecoense-sc,Guarani Campinas,0,4,A
+2024-08-17,Santos,Avai,0,1,A
+2024-08-17,Ceara,Mirassol,1,2,A
+2024-08-17,Amazonas,CRB,2,0,H
+2024-08-17,Ponte Preta,Goias,1,1,D
+2024-08-18,Brusque,Coritiba,0,1,A
+2024-08-18,Botafogo SP,Paysandu,1,1,D
+2024-08-21,Amazonas,Ponte Preta,2,1,H
+2024-08-21,Operario-PR,Vila Nova,2,3,A
+2024-08-21,Novorizontino,Ituano,1,0,H
+2024-08-21,CRB,Ceara,0,2,A
+2024-08-22,Goias,Brusque,4,1,H
+2024-08-22,America Mineiro,Chapecoense-sc,0,0,D
+2024-08-22,Guarani Campinas,Santos,1,1,D
+2024-08-22,Mirassol,Botafogo SP,1,2,A
+2024-08-22,Avai,Paysandu,1,0,H
+2024-08-23,Sport Recife,Coritiba,0,1,A
+2024-08-24,Ponte Preta,Operario-PR,0,1,A
+2024-08-24,Santos,Amazonas,0,0,D
+2024-08-24,Ituano,Goias,1,0,H
+2024-08-25,Chapecoense-sc,CRB,0,0,D
+2024-08-25,Vila Nova,America Mineiro,1,0,H
+2024-08-26,Paysandu,Mirassol,0,0,D
+2024-08-27,Ceara,Novorizontino,1,0,H
+2024-08-28,Brusque,Sport Recife,1,0,H
+2024-08-28,Coritiba,Avai,1,0,H
+2024-08-31,Santos,Ponte Preta,2,2,D
+2024-08-31,Chapecoense-sc,Botafogo SP,1,1,D
+2024-08-31,Novorizontino,Vila Nova,2,0,H
+2024-08-31,CRB,Avai,1,2,A
+2024-09-01,Amazonas,Ceara,1,1,D
+2024-09-01,Goias,Paysandu,1,1,D
+2024-09-03,Operario-PR,Brusque,0,0,D
+2024-09-03,Sport Recife,Ituano,3,2,H
+2024-09-04,Guarani Campinas,Coritiba,2,1,H
+2024-09-04,Mirassol,America Mineiro,1,0,H
+2024-09-04,Vila Nova,CRB,1,0,H
+2024-09-06,Paysandu,Amazonas,0,1,A
+2024-09-07,Brusque,Santos,0,1,A
+2024-09-07,Ituano,Mirassol,3,2,H
+2024-09-08,Ceara,Operario-PR,2,1,H
+2024-09-08,America Mineiro,Guarani Campinas,3,0,H
+2024-09-08,Coritiba,Novorizontino,2,2,D
+2024-09-08,Avai,Sport Recife,0,2,A
+2024-09-09,Botafogo SP,Goias,1,0,H
+2024-09-10,Ponte Preta,Chapecoense-sc,0,2,A
+2024-09-12,CRB,Sport Recife,1,1,D
+2024-09-14,Ponte Preta,Ituano,1,4,A
+2024-09-14,Goias,Avai,2,1,H
+2024-09-14,Paysandu,Guarani Campinas,2,1,H
+2024-09-14,Brusque,Vila Nova,3,1,H
+2024-09-14,Mirassol,Amazonas,0,0,D
+2024-09-14,Novorizontino,Botafogo SP,2,0,H
+2024-09-15,Santos,America Mineiro,2,1,H
+2024-09-15,Operario-PR,Coritiba,2,1,H
+2024-09-15,Sport Recife,CRB,2,0,H
+2024-09-15,Chapecoense-sc,Ceara,2,1,H
+2024-09-18,Guarani Campinas,Mirassol,1,0,H
+2024-09-18,Avai,Ituano,2,0,H
+2024-09-18,Novorizontino,Brusque,1,0,H
+2024-09-19,Amazonas,Operario-PR,2,1,H
+2024-09-19,America Mineiro,Paysandu,2,0,H
+2024-09-19,Coritiba,Ceara,3,1,H
+2024-09-19,Sport Recife,Goias,1,1,D
+2024-09-19,Vila Nova,Chapecoense-sc,3,2,H
+2024-09-20,Botafogo SP,Santos,0,1,A
+2024-09-20,CRB,Ponte Preta,0,1,A
+2024-09-21,Goias,Mirassol,0,1,A
+2024-09-21,Ituano,Coritiba,0,1,A
+2024-09-22,Chapecoense-sc,Avai,1,0,H
+2024-09-22,Ceara,Vila Nova,4,0,H
+2024-09-23,Paysandu,Sport Recife,0,1,A
+2024-09-24,Santos,Novorizontino,1,1,D
+2024-09-24,Brusque,Amazonas,1,0,H
+2024-09-25,Ponte Preta,America Mineiro,0,2,A
+2024-09-25,Botafogo SP,CRB,0,0,D
+2024-09-25,Operario-PR,Guarani Campinas,1,0,H
+2024-09-27,Chapecoense-sc,Amazonas,2,0,H
+2024-09-28,Coritiba,Goias,0,0,D
+2024-09-28,Paysandu,Ituano,1,0,H
+2024-09-28,Vila Nova,Botafogo SP,1,1,D
+2024-09-28,Santos,Operario-PR,1,0,H
+2024-09-28,Ceara,Brusque,1,0,H
+2024-09-29,CRB,America Mineiro,2,1,H
+2024-09-29,Mirassol,Sport Recife,0,0,D
+2024-10-01,Novorizontino,Ponte Preta,2,1,H
+2024-10-01,Guarani Campinas,Avai,0,0,D
+2024-10-04,Operario-PR,Chapecoense-sc,3,2,H
+2024-10-04,CRB,Paysandu,3,2,H
+2024-10-05,Avai,Brusque,0,0,D
+2024-10-05,Amazonas,Novorizontino,1,0,H
+2024-10-05,Ponte Preta,Botafogo SP,1,0,H
+2024-10-05,Ituano,Guarani Campinas,1,0,H
+2024-10-05,Mirassol,Vila Nova,1,0,H
+2024-10-05,America Mineiro,Coritiba,2,1,H
+2024-10-08,Sport Recife,Ceara,2,1,H
+2024-10-08,Goias,Santos,3,1,H
+2024-10-09,Botafogo SP,Guarani Campinas,3,2,H
+2024-10-10,Paysandu,Chapecoense-sc,2,0,H
+2024-10-11,Novorizontino,Sport Recife,1,3,A
+2024-10-12,Avai,America Mineiro,2,2,D
+2024-10-12,Ceara,Ponte Preta,1,0,H
+2024-10-12,Santos,Mirassol,3,2,H
+2024-10-13,Botafogo SP,Operario-PR,0,0,D
+2024-10-13,Coritiba,Amazonas,3,1,H
+2024-10-13,Goias,Vila Nova,0,1,A
+2024-10-14,Brusque,Ituano,1,0,H
+2024-10-15,Guarani Campinas,CRB,2,1,H
+2024-10-16,Chapecoense-sc,Santos,3,2,H
+2024-10-17,Sport Recife,Operario-PR,1,2,A
+2024-10-17,America Mineiro,Goias,2,2,D
+2024-10-19,Amazonas,Avai,2,1,H
+2024-10-19,Vila Nova,Coritiba,0,3,A
+2024-10-19,Ituano,Ceara,1,2,A
+2024-10-19,Mirassol,Novorizontino,1,0,H
+2024-10-19,Brusque,CRB,1,2,A
+2024-10-20,Operario-PR,Paysandu,1,1,D
+2024-10-20,Ponte Preta,Guarani Campinas,0,1,A
+2024-10-21,Sport Recife,Botafogo SP,3,1,H
+2024-10-21,Chapecoense-sc,Goias,0,4,A
+2024-10-23,Vila Nova,Amazonas,1,0,H
+2024-10-23,Novorizontino,Avai,2,0,H
+2024-10-23,Santos,Ceara,1,0,H
+2024-10-23,CRB,Mirassol,0,1,A
+2024-10-23,Botafogo SP,Ituano,0,1,A
+2024-10-24,Operario-PR,America Mineiro,1,0,H
+2024-10-24,Ponte Preta,Brusque,2,0,H
+2024-10-24,Paysandu,Coritiba,2,1,H
+2024-10-25,Sport Recife,Guarani Campinas,4,0,H
+2024-10-26,Avai,Vila Nova,3,0,H
+2024-10-26,Goias,Amazonas,1,0,H
+2024-10-26,Ceara,Paysandu,2,1,H
+2024-10-26,Mirassol,Ponte Preta,3,0,H
+2024-10-28,Coritiba,CRB,2,1,H
+2024-10-28,Ituano,Santos,0,2,A
+2024-10-29,America Mineiro,Sport Recife,2,1,H
+2024-10-29,Goias,Operario-PR,3,0,H
+2024-10-29,Brusque,Chapecoense-sc,0,1,A
+2024-10-30,Guarani Campinas,Novorizontino,0,2,A
+2024-10-30,Amazonas,Botafogo SP,0,1,A
+2024-11-02,Santos,Vila Nova,3,0,H
+2024-11-02,Chapecoense-sc,Novorizontino,0,2,A
+2024-11-02,Goias,Guarani Campinas,1,0,H
+2024-11-03,Ceara,Avai,2,0,H
+2024-11-04,Operario-PR,Sport Recife,2,1,H
+2024-11-05,Ponte Preta,Paysandu,1,2,A
+2024-11-05,Ituano,CRB,1,2,A
+2024-11-05,Amazonas,America Mineiro,1,0,H
+2024-11-06,Brusque,Botafogo SP,0,1,A
+2024-11-06,Mirassol,Coritiba,4,1,H
+2024-11-09,CRB,Goias,0,1,A
+2024-11-09,Novorizontino,Operario-PR,0,1,A
+2024-11-10,Sport Recife,Chapecoense-sc,1,1,D
+2024-11-10,Avai,Mirassol,0,0,D
+2024-11-11,Vila Nova,Ponte Preta,2,1,H
+2024-11-12,Coritiba,Santos,0,2,A
+2024-11-12,Paysandu,Brusque,1,0,H
+2024-11-12,America Mineiro,Ituano,3,2,H
+2024-11-13,Guarani Campinas,Amazonas,0,0,D
+2024-11-13,Botafogo SP,Ceara,1,4,A
+2024-11-15,Operario-PR,Mirassol,1,1,D
+2024-11-16,Novorizontino,Paysandu,1,1,D
+2024-11-16,Amazonas,Goias,0,4,A
+2024-11-17,Vila Nova,Ituano,3,4,A
+2024-11-17,Ponte Preta,Sport Recife,0,4,A
+2024-11-17,Brusque,Guarani Campinas,2,1,H
+2024-11-17,Santos,CRB,0,2,A
+2024-11-17,Chapecoense-sc,Coritiba,2,1,H
+2024-11-19,Botafogo SP,Avai,1,3,A
+2024-11-19,Ceara,America Mineiro,1,0,H
+2024-11-22,Coritiba,Botafogo SP,1,3,A
+2024-11-22,Avai,Ponte Preta,2,1,H
+2024-11-23,Ituano,Amazonas,0,1,A
+2024-11-24,CRB,Operario-PR,1,1,D
+2024-11-24,Paysandu,Vila Nova,2,1,H
+2024-11-24,Sport Recife,Santos,2,1,H
+2024-11-24,America Mineiro,Brusque,3,0,H
+2024-11-24,Guarani Campinas,Ceara,0,0,D
+2024-11-24,Goias,Novorizontino,1,0,H
+2024-11-24,Mirassol,Chapecoense-sc,1,0,H

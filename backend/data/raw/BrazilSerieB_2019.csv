@@ -1,0 +1,381 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2019-04-26,Brasil DE Pelotas,Bragantino,0,1,A
+2019-04-26,Operario-PR,America Mineiro,1,0,H
+2019-04-27,Sport Recife,Oeste,1,1,D
+2019-04-27,Sao Bento,Atletico Goianiense,1,3,A
+2019-04-27,Botafogo SP,Vitoria,3,1,H
+2019-04-27,Guarani Campinas,Figueirense,0,0,D
+2019-04-27,Criciuma,Cuiaba,0,1,A
+2019-04-28,Vila Nova,Parana,1,1,D
+2019-04-28,CRB,Londrina,1,2,A
+2019-04-29,Coritiba,Ponte Preta,2,0,H
+2019-05-01,America Mineiro,Botafogo SP,0,1,A
+2019-05-01,Oeste,Guarani Campinas,2,0,H
+2019-05-03,Ponte Preta,Criciuma,1,1,D
+2019-05-03,Londrina,Brasil DE Pelotas,1,0,H
+2019-05-04,Atletico Goianiense,Coritiba,1,1,D
+2019-05-04,Figueirense,Sao Bento,2,2,D
+2019-05-04,Vitoria,Vila Nova,2,1,H
+2019-05-04,Parana,CRB,1,0,H
+2019-05-04,Cuiaba,Operario-PR,2,1,H
+2019-05-06,Bragantino,Sport Recife,1,1,D
+2019-05-09,Sao Bento,Botafogo SP,0,1,A
+2019-05-10,Coritiba,Londrina,0,0,D
+2019-05-10,Bragantino,Atletico Goianiense,3,0,H
+2019-05-11,Vila Nova,Ponte Preta,0,0,D
+2019-05-11,Criciuma,America Mineiro,0,0,D
+2019-05-11,Sport Recife,Figueirense,0,0,D
+2019-05-11,Brasil DE Pelotas,CRB,0,2,A
+2019-05-11,Cuiaba,Parana,1,1,D
+2019-05-11,Operario-PR,Oeste,0,0,D
+2019-05-13,Guarani Campinas,Vitoria,3,2,H
+2019-05-14,Oeste,Cuiaba,1,1,D
+2019-05-15,Figueirense,Brasil DE Pelotas,1,0,H
+2019-05-17,Atletico Goianiense,Criciuma,3,1,H
+2019-05-18,Ponte Preta,Operario-PR,1,0,H
+2019-05-18,Londrina,Bragantino,1,0,H
+2019-05-18,Parana,Guarani Campinas,0,0,D
+2019-05-18,Vitoria,Sao Bento,1,3,A
+2019-05-18,Botafogo SP,Vila Nova,0,1,A
+2019-05-19,America Mineiro,Sport Recife,1,2,A
+2019-05-20,CRB,Coritiba,1,0,H
+2019-05-21,Criciuma,Guarani Campinas,1,0,H
+2019-05-22,Bragantino,Figueirense,2,0,H
+2019-05-24,CRB,Vila Nova,1,1,D
+2019-05-25,Sport Recife,Londrina,3,2,H
+2019-05-25,Coritiba,Cuiaba,2,1,H
+2019-05-25,Ponte Preta,Parana,4,2,H
+2019-05-25,Sao Bento,Oeste,1,0,H
+2019-05-25,Brasil DE Pelotas,America Mineiro,2,1,H
+2019-05-25,Operario-PR,Botafogo SP,0,2,A
+2019-05-26,Atletico Goianiense,Vitoria,1,1,D
+2019-05-28,Operario-PR,Sport Recife,2,1,H
+2019-05-29,Guarani Campinas,Brasil DE Pelotas,1,2,A
+2019-05-31,Figueirense,Atletico Goianiense,1,0,H
+2019-05-31,Sao Bento,CRB,1,2,A
+2019-06-01,Vitoria,Bragantino,0,2,A
+2019-06-01,Parana,Oeste,0,0,D
+2019-06-01,Vila Nova,Londrina,0,1,A
+2019-06-01,Botafogo SP,Criciuma,1,0,H
+2019-06-01,Cuiaba,Ponte Preta,1,3,A
+2019-06-03,America Mineiro,Coritiba,1,1,D
+2019-06-04,Bragantino,Sao Bento,2,0,H
+2019-06-06,Atletico Goianiense,Guarani Campinas,1,0,H
+2019-06-07,Londrina,Cuiaba,1,0,H
+2019-06-08,Ponte Preta,Botafogo SP,0,0,D
+2019-06-08,Oeste,Figueirense,0,0,D
+2019-06-08,Criciuma,Vila Nova,1,1,D
+2019-06-08,Brasil DE Pelotas,Operario-PR,1,0,H
+2019-06-08,Coritiba,Parana,2,3,A
+2019-06-08,Sport Recife,Vitoria,3,1,H
+2019-06-08,CRB,America Mineiro,1,3,A
+2019-06-10,Londrina,Ponte Preta,1,3,A
+2019-06-11,Figueirense,Botafogo SP,2,1,H
+2019-06-11,Brasil DE Pelotas,Criciuma,0,1,A
+2019-06-11,Vila Nova,Sao Bento,1,0,H
+2019-06-11,Oeste,Vitoria,3,0,H
+2019-06-11,Bragantino,America Mineiro,2,0,H
+2019-06-11,Cuiaba,Atletico Goianiense,0,1,A
+2019-06-12,Parana,Operario-PR,1,0,H
+2019-06-12,Sport Recife,CRB,1,0,H
+2019-06-12,Guarani Campinas,Coritiba,0,1,A
+2019-07-08,Sao Bento,Sport Recife,2,2,D
+2019-07-09,Vitoria,Cuiaba,0,1,A
+2019-07-10,Criciuma,Coritiba,2,1,H
+2019-07-12,CRB,Guarani Campinas,2,1,H
+2019-07-13,Ponte Preta,Oeste,3,2,H
+2019-07-13,America Mineiro,Figueirense,0,4,A
+2019-07-13,Atletico Goianiense,Vila Nova,2,0,H
+2019-07-13,Botafogo SP,Brasil DE Pelotas,2,3,A
+2019-07-13,Parana,Bragantino,2,1,H
+2019-07-13,Operario-PR,Londrina,2,0,H
+2019-07-15,Cuiaba,Sport Recife,1,1,D
+2019-07-16,Coritiba,Sao Bento,2,1,H
+2019-07-17,Ponte Preta,Atletico Goianiense,0,0,D
+2019-07-19,Brasil DE Pelotas,Parana,0,1,A
+2019-07-19,Figueirense,Londrina,1,1,D
+2019-07-20,Vitoria,Criciuma,2,0,H
+2019-07-20,Oeste,Bragantino,0,0,D
+2019-07-20,Vila Nova,America Mineiro,1,1,D
+2019-07-20,Operario-PR,CRB,2,1,H
+2019-07-20,Botafogo SP,Guarani Campinas,0,0,D
+2019-07-22,Sport Recife,Brasil DE Pelotas,0,0,D
+2019-07-23,Figueirense,Parana,0,1,A
+2019-07-23,Guarani Campinas,Cuiaba,0,1,A
+2019-07-23,Coritiba,Vila Nova,2,0,H
+2019-07-23,Sao Bento,Operario-PR,1,1,D
+2019-07-23,Atletico Goianiense,Botafogo SP,1,2,A
+2019-07-23,Bragantino,Ponte Preta,2,1,H
+2019-07-24,America Mineiro,Oeste,0,0,D
+2019-07-24,CRB,Criciuma,2,0,H
+2019-07-24,Londrina,Vitoria,3,1,H
+2019-07-26,America Mineiro,Atletico Goianiense,0,1,A
+2019-07-26,Operario-PR,Coritiba,1,1,D
+2019-07-26,Guarani Campinas,Sao Bento,2,1,H
+2019-07-26,Botafogo SP,CRB,0,2,A
+2019-07-27,Parana,Sport Recife,0,1,A
+2019-07-27,Criciuma,Figueirense,1,1,D
+2019-07-27,Vitoria,Ponte Preta,2,1,H
+2019-07-27,Oeste,Londrina,1,0,H
+2019-07-27,Vila Nova,Bragantino,0,1,A
+2019-07-27,Cuiaba,Brasil DE Pelotas,1,1,D
+2019-07-29,Sport Recife,Guarani Campinas,1,1,D
+2019-07-29,Coritiba,Botafogo SP,3,2,H
+2019-07-30,Figueirense,Vitoria,1,1,D
+2019-07-30,Brasil DE Pelotas,Vila Nova,0,2,A
+2019-07-30,Londrina,Parana,3,0,H
+2019-07-30,Ponte Preta,America Mineiro,0,1,A
+2019-07-30,Atletico Goianiense,Operario-PR,4,2,H
+2019-07-30,CRB,Oeste,2,2,D
+2019-07-30,Sao Bento,Criciuma,1,0,H
+2019-07-31,Bragantino,Cuiaba,2,2,D
+2019-08-02,Sport Recife,Coritiba,1,1,D
+2019-08-02,Londrina,Atletico Goianiense,1,1,D
+2019-08-02,Botafogo SP,Oeste,3,2,H
+2019-08-03,Guarani Campinas,Bragantino,1,0,H
+2019-08-03,Brasil DE Pelotas,Vitoria,1,0,H
+2019-08-03,Criciuma,Operario-PR,1,2,A
+2019-08-03,Sao Bento,Ponte Preta,0,0,D
+2019-08-03,Parana,America Mineiro,0,0,D
+2019-08-03,CRB,Cuiaba,0,1,A
+2019-08-03,Vila Nova,Figueirense,0,0,D
+2019-08-06,Atletico Goianiense,CRB,0,1,A
+2019-08-07,America Mineiro,Londrina,4,3,H
+2019-08-09,Oeste,Brasil DE Pelotas,1,1,D
+2019-08-09,Operario-PR,Vila Nova,1,0,H
+2019-08-10,Bragantino,Botafogo SP,0,0,D
+2019-08-10,Coritiba,Figueirense,2,0,H
+2019-08-10,Vitoria,Parana,2,0,H
+2019-08-10,Cuiaba,Sao Bento,3,2,H
+2019-08-11,Ponte Preta,Guarani Campinas,1,0,H
+2019-08-11,Criciuma,Sport Recife,1,0,H
+2019-08-12,Bragantino,Operario-PR,4,0,H
+2019-08-13,Atletico Goianiense,Oeste,2,0,H
+2019-08-14,Coritiba,Brasil DE Pelotas,2,0,H
+2019-08-16,Figueirense,Ponte Preta,0,1,A
+2019-08-16,Londrina,Criciuma,1,1,D
+2019-08-17,Guarani Campinas,Vila Nova,0,2,A
+2019-08-17,Sao Bento,Parana,2,1,H
+2019-08-17,Sport Recife,Botafogo SP,3,0,H
+2019-08-17,America Mineiro,Cuiaba,2,1,H
+2019-08-18,CRB,Vitoria,0,1,A
+2019-08-19,Criciuma,Bragantino,0,2,A
+2019-08-19,Oeste,Coritiba,0,2,A
+2019-08-20,Brasil DE Pelotas,Sao Bento,2,1,H
+2019-08-20,Operario-PR,Guarani Campinas,1,0,H
+2019-08-20,Botafogo SP,Londrina,2,1,H
+2019-08-20,Parana,Atletico Goianiense,0,0,D
+2019-08-21,Vila Nova,Sport Recife,0,2,A
+2019-08-21,Cuiaba,Figueirense,3,0,H
+2019-08-21,Vitoria,America Mineiro,0,0,D
+2019-08-22,Ponte Preta,CRB,0,1,A
+2019-08-23,Bragantino,Coritiba,1,1,D
+2019-08-23,Atletico Goianiense,Brasil DE Pelotas,0,0,D
+2019-08-24,Cuiaba,Botafogo SP,2,0,H
+2019-08-24,Parana,Criciuma,0,0,D
+2019-08-24,Vitoria,Operario-PR,0,0,D
+2019-08-24,Oeste,Vila Nova,1,1,D
+2019-08-24,Londrina,Sao Bento,2,4,A
+2019-08-24,Figueirense,CRB,2,2,D
+2019-08-24,Ponte Preta,Sport Recife,2,2,D
+2019-08-25,America Mineiro,Guarani Campinas,3,2,H
+2019-08-27,CRB,Bragantino,0,3,A
+2019-08-27,Brasil DE Pelotas,Ponte Preta,1,0,H
+2019-08-27,Vila Nova,Cuiaba,0,0,D
+2019-08-27,Coritiba,Vitoria,1,1,D
+2019-08-27,Botafogo SP,Parana,0,1,A
+2019-08-27,Criciuma,Oeste,3,1,H
+2019-08-27,Operario-PR,Figueirense,1,0,H
+2019-08-28,Sport Recife,Atletico Goianiense,1,1,D
+2019-08-28,Guarani Campinas,Londrina,1,0,H
+2019-08-28,Sao Bento,America Mineiro,0,2,A
+2019-08-30,Parana,Vila Nova,1,1,D
+2019-08-31,Vitoria,Botafogo SP,0,0,D
+2019-08-31,Cuiaba,Criciuma,0,0,D
+2019-08-31,Oeste,Sport Recife,0,0,D
+2019-08-31,Figueirense,Guarani Campinas,0,1,A
+2019-08-31,Ponte Preta,Coritiba,1,0,H
+2019-08-31,Atletico Goianiense,Sao Bento,1,0,H
+2019-08-31,Londrina,CRB,0,1,A
+2019-08-31,America Mineiro,Operario-PR,0,0,D
+2019-08-31,Bragantino,Brasil DE Pelotas,2,1,H
+2019-09-03,Brasil DE Pelotas,Londrina,1,0,H
+2019-09-03,Vila Nova,Vitoria,0,2,A
+2019-09-04,Criciuma,Ponte Preta,0,0,D
+2019-09-05,CRB,Parana,1,2,A
+2019-09-06,Sao Bento,Figueirense,0,0,D
+2019-09-07,Botafogo SP,America Mineiro,0,0,D
+2019-09-07,Guarani Campinas,Oeste,2,3,A
+2019-09-07,Operario-PR,Cuiaba,2,1,H
+2019-09-07,Sport Recife,Bragantino,2,1,H
+2019-09-08,Coritiba,Atletico Goianiense,1,2,A
+2019-09-10,CRB,Brasil DE Pelotas,3,1,H
+2019-09-11,America Mineiro,Criciuma,2,1,H
+2019-09-13,Ponte Preta,Vila Nova,0,1,A
+2019-09-13,Botafogo SP,Sao Bento,1,0,H
+2019-09-13,Oeste,Operario-PR,3,0,H
+2019-09-14,Atletico Goianiense,Bragantino,1,1,D
+2019-09-14,Londrina,Coritiba,2,1,H
+2019-09-14,Vitoria,Guarani Campinas,0,1,A
+2019-09-14,Parana,Cuiaba,0,0,D
+2019-09-15,Figueirense,Sport Recife,1,2,A
+2019-09-16,Operario-PR,Ponte Preta,2,1,H
+2019-09-17,Vila Nova,Botafogo SP,0,2,A
+2019-09-18,Sao Bento,Vitoria,2,0,H
+2019-09-20,Brasil DE Pelotas,Figueirense,2,2,D
+2019-09-20,Criciuma,Atletico Goianiense,0,1,A
+2019-09-21,Sport Recife,America Mineiro,0,2,A
+2019-09-21,Guarani Campinas,Parana,1,0,H
+2019-09-21,Bragantino,Londrina,4,1,H
+2019-09-21,Coritiba,CRB,0,2,A
+2019-09-21,Cuiaba,Oeste,2,0,H
+2019-09-24,Guarani Campinas,Criciuma,1,0,H
+2019-09-24,Londrina,Sport Recife,1,2,A
+2019-09-24,Botafogo SP,Operario-PR,1,1,D
+2019-09-24,America Mineiro,Brasil DE Pelotas,2,0,H
+2019-09-24,Vila Nova,CRB,2,2,D
+2019-09-24,Oeste,Sao Bento,2,1,H
+2019-09-25,Vitoria,Atletico Goianiense,0,0,D
+2019-09-25,Figueirense,Bragantino,0,3,A
+2019-09-25,Parana,Ponte Preta,1,1,D
+2019-09-27,Londrina,Vila Nova,0,1,A
+2019-09-27,Brasil DE Pelotas,Guarani Campinas,0,0,D
+2019-09-28,Atletico Goianiense,Figueirense,2,0,H
+2019-09-28,Criciuma,Botafogo SP,2,0,H
+2019-09-28,Ponte Preta,Cuiaba,3,0,H
+2019-09-28,Coritiba,America Mineiro,2,1,H
+2019-09-28,Sport Recife,Operario-PR,3,1,H
+2019-09-28,Oeste,Parana,1,1,D
+2019-09-29,CRB,Sao Bento,1,1,D
+2019-09-29,Bragantino,Vitoria,2,0,H
+2019-09-30,Guarani Campinas,Atletico Goianiense,2,0,H
+2019-10-01,Vila Nova,Criciuma,1,1,D
+2019-10-03,America Mineiro,CRB,1,0,H
+2019-10-04,Vitoria,Sport Recife,2,2,D
+2019-10-04,Figueirense,Oeste,1,2,A
+2019-10-05,Sao Bento,Bragantino,0,3,A
+2019-10-05,Botafogo SP,Ponte Preta,4,1,H
+2019-10-05,Parana,Coritiba,2,0,H
+2019-10-05,Cuiaba,Londrina,0,1,A
+2019-10-05,Operario-PR,Brasil DE Pelotas,1,2,A
+2019-10-07,CRB,Sport Recife,1,1,D
+2019-10-07,Sao Bento,Vila Nova,3,1,H
+2019-10-08,Coritiba,Guarani Campinas,1,0,H
+2019-10-08,Operario-PR,Parana,0,1,A
+2019-10-08,Botafogo SP,Figueirense,0,0,D
+2019-10-08,Vitoria,Oeste,3,1,H
+2019-10-08,Criciuma,Brasil DE Pelotas,2,2,D
+2019-10-08,Atletico Goianiense,Cuiaba,1,1,D
+2019-10-09,America Mineiro,Bragantino,2,0,H
+2019-10-09,Ponte Preta,Londrina,3,1,H
+2019-10-11,Sport Recife,Sao Bento,2,0,H
+2019-10-11,Brasil DE Pelotas,Botafogo SP,1,0,H
+2019-10-11,Vila Nova,Atletico Goianiense,1,1,D
+2019-10-12,Guarani Campinas,CRB,1,0,H
+2019-10-12,Oeste,Ponte Preta,1,1,D
+2019-10-12,Cuiaba,Vitoria,1,3,A
+2019-10-12,Coritiba,Criciuma,1,0,H
+2019-10-12,Londrina,Operario-PR,1,2,A
+2019-10-12,Bragantino,Parana,2,0,H
+2019-10-12,Figueirense,America Mineiro,2,1,H
+2019-10-14,Sport Recife,Cuiaba,2,0,H
+2019-10-14,Guarani Campinas,Botafogo SP,0,2,A
+2019-10-14,Atletico Goianiense,Ponte Preta,0,0,D
+2019-10-15,Parana,Brasil DE Pelotas,1,0,H
+2019-10-15,Criciuma,Vitoria,1,1,D
+2019-10-15,Londrina,Figueirense,0,0,D
+2019-10-15,America Mineiro,Vila Nova,2,0,H
+2019-10-15,CRB,Operario-PR,0,0,D
+2019-10-16,Sao Bento,Coritiba,1,2,A
+2019-10-16,Bragantino,Oeste,2,2,D
+2019-10-17,Botafogo SP,Atletico Goianiense,0,0,D
+2019-10-18,Cuiaba,Guarani Campinas,2,1,H
+2019-10-18,Criciuma,CRB,0,1,A
+2019-10-19,Vitoria,Londrina,0,1,A
+2019-10-19,Ponte Preta,Bragantino,1,1,D
+2019-10-19,Vila Nova,Coritiba,2,2,D
+2019-10-19,Oeste,America Mineiro,0,1,A
+2019-10-19,Parana,Figueirense,0,1,A
+2019-10-19,Operario-PR,Sao Bento,2,1,H
+2019-10-20,Brasil DE Pelotas,Sport Recife,0,0,D
+2019-10-23,Sport Recife,Parana,2,1,H
+2019-10-24,CRB,Botafogo SP,1,0,H
+2019-10-25,Coritiba,Operario-PR,0,0,D
+2019-10-25,Atletico Goianiense,America Mineiro,2,2,D
+2019-10-25,Londrina,Oeste,0,2,A
+2019-10-26,Bragantino,Vila Nova,3,1,H
+2019-10-26,Figueirense,Criciuma,2,2,D
+2019-10-26,Brasil DE Pelotas,Cuiaba,0,0,D
+2019-10-26,Sao Bento,Guarani Campinas,1,1,D
+2019-10-27,Ponte Preta,Vitoria,1,2,A
+2019-10-28,Parana,Londrina,1,0,H
+2019-10-29,Vila Nova,Brasil DE Pelotas,0,2,A
+2019-10-30,Cuiaba,Coritiba,3,3,D
+2019-10-31,Guarani Campinas,Sport Recife,1,0,H
+2019-11-01,Botafogo SP,Coritiba,0,1,A
+2019-11-01,Operario-PR,Atletico Goianiense,1,1,D
+2019-11-02,Cuiaba,Bragantino,2,0,H
+2019-11-02,Vitoria,Figueirense,2,2,D
+2019-11-02,Oeste,CRB,3,3,D
+2019-11-02,America Mineiro,Ponte Preta,0,0,D
+2019-11-02,Criciuma,Sao Bento,1,1,D
+2019-11-04,Coritiba,Sport Recife,0,0,D
+2019-11-05,Oeste,Botafogo SP,0,2,A
+2019-11-05,Atletico Goianiense,Londrina,2,1,H
+2019-11-05,America Mineiro,Parana,0,2,A
+2019-11-05,Vitoria,Brasil DE Pelotas,3,0,H
+2019-11-05,Figueirense,Vila Nova,0,0,D
+2019-11-05,Operario-PR,Criciuma,1,0,H
+2019-11-06,Ponte Preta,Sao Bento,1,1,D
+2019-11-06,Bragantino,Guarani Campinas,3,1,H
+2019-11-06,Cuiaba,CRB,5,1,H
+2019-11-08,Parana,Vitoria,0,0,D
+2019-11-08,Botafogo SP,Bragantino,2,3,A
+2019-11-08,Vila Nova,Operario-PR,0,0,D
+2019-11-08,Londrina,America Mineiro,0,1,A
+2019-11-09,Figueirense,Coritiba,1,1,D
+2019-11-09,Sao Bento,Cuiaba,1,2,A
+2019-11-09,Sport Recife,Criciuma,1,0,H
+2019-11-09,Guarani Campinas,Ponte Preta,0,0,D
+2019-11-09,Brasil DE Pelotas,Oeste,2,2,D
+2019-11-09,CRB,Atletico Goianiense,2,1,H
+2019-11-12,Cuiaba,America Mineiro,0,2,A
+2019-11-12,Vitoria,CRB,2,2,D
+2019-11-12,Brasil DE Pelotas,Coritiba,0,2,A
+2019-11-12,Oeste,Atletico Goianiense,0,4,A
+2019-11-12,Ponte Preta,Figueirense,1,3,A
+2019-11-12,Criciuma,Londrina,2,0,H
+2019-11-13,Parana,Sao Bento,2,1,H
+2019-11-13,Operario-PR,Bragantino,0,2,A
+2019-11-13,Vila Nova,Guarani Campinas,1,1,D
+2019-11-14,Botafogo SP,Sport Recife,0,2,A
+2019-11-15,America Mineiro,Vitoria,2,1,H
+2019-11-15,Bragantino,Criciuma,1,1,D
+2019-11-16,Atletico Goianiense,Parana,1,0,H
+2019-11-16,Guarani Campinas,Operario-PR,1,0,H
+2019-11-16,CRB,Ponte Preta,2,0,H
+2019-11-16,Coritiba,Oeste,1,0,H
+2019-11-16,Londrina,Botafogo SP,1,1,D
+2019-11-17,Sport Recife,Vila Nova,0,0,D
+2019-11-17,Sao Bento,Brasil DE Pelotas,3,1,H
+2019-11-17,Figueirense,Cuiaba,0,0,D
+2019-11-19,Criciuma,Parana,1,1,D
+2019-11-20,Operario-PR,Vitoria,1,2,A
+2019-11-20,Vila Nova,Oeste,1,1,D
+2019-11-21,Sport Recife,Ponte Preta,2,1,H
+2019-11-21,Sao Bento,Londrina,4,1,H
+2019-11-22,Brasil DE Pelotas,Atletico Goianiense,2,2,D
+2019-11-22,CRB,Figueirense,0,0,D
+2019-11-23,Guarani Campinas,America Mineiro,0,1,A
+2019-11-23,Botafogo SP,Cuiaba,0,0,D
+2019-11-24,Coritiba,Bragantino,1,0,H
+2019-11-26,Ponte Preta,Brasil DE Pelotas,4,0,H
+2019-11-29,Parana,Botafogo SP,3,3,D
+2019-11-30,Oeste,Criciuma,1,2,A
+2019-11-30,America Mineiro,Sao Bento,1,2,A
+2019-11-30,Vitoria,Coritiba,1,2,A
+2019-11-30,Figueirense,Operario-PR,1,1,D
+2019-11-30,Atletico Goianiense,Sport Recife,0,0,D
+2019-11-30,Londrina,Guarani Campinas,2,0,H
+2019-11-30,Bragantino,CRB,2,0,H
+2019-11-30,Cuiaba,Vila Nova,1,2,A

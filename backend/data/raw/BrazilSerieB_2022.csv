@@ -1,0 +1,381 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2022-04-08,Vasco DA Gama,Vila Nova,1,1,D
+2022-04-08,Brusque,Guarani Campinas,1,0,H
+2022-04-09,Bahia,Cruzeiro,2,0,H
+2022-04-09,Chapecoense-sc,Ituano,1,1,D
+2022-04-09,Ponte Preta,Gremio,0,0,D
+2022-04-09,Sport Recife,Sampaio Correa,1,0,H
+2022-04-10,Tombense,Operario-PR,1,1,D
+2022-04-10,Londrina,Nautico Recife,2,0,H
+2022-04-12,Vila Nova,Novorizontino,0,0,D
+2022-04-13,Cruzeiro,Brusque,1,0,H
+2022-04-14,Criciuma,Londrina,1,0,H
+2022-04-15,Gremio,Chapecoense-sc,0,1,A
+2022-04-16,Nautico Recife,Bahia,0,1,A
+2022-04-16,Operario-PR,Ponte Preta,2,0,H
+2022-04-16,Ituano,CSA,0,0,D
+2022-04-16,Sampaio Correa,Tombense,1,1,D
+2022-04-16,Guarani Campinas,Sport Recife,0,0,D
+2022-04-16,CRB,Vasco DA Gama,1,1,D
+2022-04-21,Gremio,Guarani Campinas,3,1,H
+2022-04-21,Londrina,Novorizontino,1,1,D
+2022-04-22,CSA,Bahia,1,1,D
+2022-04-23,Chapecoense-sc,Vasco DA Gama,0,0,D
+2022-04-23,Criciuma,Sport Recife,1,1,D
+2022-04-23,Ponte Preta,CRB,1,0,H
+2022-04-23,Sampaio Correa,Brusque,3,1,H
+2022-04-23,Tombense,Cruzeiro,1,1,D
+2022-04-23,Ituano,Vila Nova,3,1,H
+2022-04-24,Nautico Recife,Operario-PR,2,0,H
+2022-04-26,Sport Recife,Ituano,1,0,H
+2022-04-26,Novorizontino,Chapecoense-sc,0,3,A
+2022-04-26,Vila Nova,Tombense,1,1,D
+2022-04-26,Brusque,CSA,2,0,H
+2022-04-27,Bahia,Sampaio Correa,1,0,H
+2022-04-27,Cruzeiro,Londrina,1,0,H
+2022-04-27,CRB,Nautico Recife,1,2,A
+2022-04-27,Operario-PR,Gremio,0,1,A
+2022-04-28,Guarani Campinas,Criciuma,1,0,H
+2022-04-28,Vasco DA Gama,Ponte Preta,1,0,H
+2022-04-29,Londrina,Vila Nova,2,2,D
+2022-04-30,Ituano,Bahia,1,0,H
+2022-04-30,CSA,Sport Recife,1,0,H
+2022-04-30,Gremio,CRB,2,0,H
+2022-04-30,Sampaio Correa,Operario-PR,1,1,D
+2022-04-30,Chapecoense-sc,Cruzeiro,0,2,A
+2022-04-30,Ponte Preta,Brusque,2,0,H
+2022-05-01,Criciuma,Novorizontino,1,1,D
+2022-05-01,Tombense,Vasco DA Gama,1,1,D
+2022-05-03,Bahia,Londrina,4,0,H
+2022-05-04,Nautico Recife,Guarani Campinas,1,1,D
+2022-05-04,Novorizontino,CRB,3,1,H
+2022-05-05,CSA,Criciuma,1,1,D
+2022-05-06,Brusque,Chapecoense-sc,0,0,D
+2022-05-06,Vila Nova,Nautico Recife,2,0,H
+2022-05-07,Sport Recife,Tombense,2,0,H
+2022-05-07,Operario-PR,Criciuma,2,0,H
+2022-05-07,Vasco DA Gama,CSA,1,0,H
+2022-05-07,Novorizontino,Ituano,2,1,H
+2022-05-08,Cruzeiro,Gremio,1,0,H
+2022-05-08,Guarani Campinas,Ponte Preta,0,0,D
+2022-05-09,CRB,Sampaio Correa,2,1,H
+2022-05-13,Ponte Preta,Novorizontino,0,1,A
+2022-05-14,Chapecoense-sc,Sport Recife,0,1,A
+2022-05-14,Criciuma,CRB,3,0,H
+2022-05-14,Londrina,Brusque,2,1,H
+2022-05-14,Tombense,Guarani Campinas,1,1,D
+2022-05-14,Sampaio Correa,Vila Nova,2,0,H
+2022-05-14,CSA,Operario-PR,0,0,D
+2022-05-15,Vasco DA Gama,Bahia,1,0,H
+2022-05-15,Nautico Recife,Cruzeiro,0,1,A
+2022-05-16,Ituano,Gremio,1,1,D
+2022-05-18,Novorizontino,Sport Recife,0,0,D
+2022-05-19,CRB,Londrina,1,0,H
+2022-05-19,Gremio,Criciuma,0,0,D
+2022-05-19,Vila Nova,Chapecoense-sc,0,0,D
+2022-05-20,Guarani Campinas,Vasco DA Gama,0,0,D
+2022-05-20,Nautico Recife,CSA,1,1,D
+2022-05-20,Brusque,Tombense,1,0,H
+2022-05-21,Bahia,Ponte Preta,2,1,H
+2022-05-21,Operario-PR,Ituano,3,2,H
+2022-05-22,Cruzeiro,Sampaio Correa,2,0,H
+2022-05-24,Sport Recife,CRB,0,1,A
+2022-05-25,Ponte Preta,Chapecoense-sc,0,0,D
+2022-05-25,Londrina,Operario-PR,2,1,H
+2022-05-26,Vasco DA Gama,Brusque,2,0,H
+2022-05-27,Ituano,Nautico Recife,0,0,D
+2022-05-27,Tombense,Bahia,1,0,H
+2022-05-28,Criciuma,Cruzeiro,0,1,A
+2022-05-28,CSA,Novorizontino,2,1,H
+2022-05-28,Sampaio Correa,Guarani Campinas,2,1,H
+2022-05-29,Vila Nova,Gremio,0,0,D
+2022-06-02,CRB,CSA,0,0,D
+2022-06-02,Vasco DA Gama,Gremio,0,0,D
+2022-06-03,Sport Recife,Ponte Preta,2,1,H
+2022-06-03,Guarani Campinas,Vila Nova,1,1,D
+2022-06-04,Operario-PR,Cruzeiro,1,2,A
+2022-06-04,Bahia,Criciuma,2,1,H
+2022-06-04,Novorizontino,Sampaio Correa,0,0,D
+2022-06-04,Brusque,Nautico Recife,1,2,A
+2022-06-04,Tombense,Ituano,2,1,H
+2022-06-06,Guarani Campinas,Operario-PR,0,3,A
+2022-06-07,Vila Nova,Brusque,0,2,A
+2022-06-07,Londrina,Tombense,1,1,D
+2022-06-07,Nautico Recife,Vasco DA Gama,2,3,A
+2022-06-07,Criciuma,Sampaio Correa,3,1,H
+2022-06-07,Ituano,Ponte Preta,1,2,A
+2022-06-08,Gremio,Novorizontino,2,0,H
+2022-06-08,CSA,Chapecoense-sc,1,1,D
+2022-06-08,Cruzeiro,CRB,2,0,H
+2022-06-09,Bahia,Sport Recife,1,0,H
+2022-06-10,Sampaio Correa,Nautico Recife,2,0,H
+2022-06-11,Chapecoense-sc,Criciuma,2,3,A
+2022-06-11,Brusque,Ituano,0,1,A
+2022-06-11,Ponte Preta,Londrina,1,2,A
+2022-06-11,CRB,Vila Nova,1,0,H
+2022-06-11,Operario-PR,Bahia,0,1,A
+2022-06-12,Novorizontino,Guarani Campinas,1,2,A
+2022-06-12,Vasco DA Gama,Cruzeiro,1,0,H
+2022-06-12,Tombense,CSA,2,1,H
+2022-06-13,Sport Recife,Gremio,0,0,D
+2022-06-14,Bahia,Chapecoense-sc,0,1,A
+2022-06-16,Cruzeiro,Ponte Preta,2,0,H
+2022-06-16,Vila Nova,Operario-PR,0,0,D
+2022-06-17,Criciuma,Brusque,0,1,A
+2022-06-18,CRB,Ituano,1,1,D
+2022-06-18,Gremio,Sampaio Correa,2,0,H
+2022-06-18,Londrina,Vasco DA Gama,0,1,A
+2022-06-18,Novorizontino,Tombense,1,3,A
+2022-06-18,Nautico Recife,Sport Recife,1,1,D
+2022-06-19,Guarani Campinas,CSA,0,0,D
+2022-06-21,Chapecoense-sc,CRB,1,2,A
+2022-06-24,Ponte Preta,Sampaio Correa,0,0,D
+2022-06-24,CSA,Gremio,1,1,D
+2022-06-24,Vasco DA Gama,Operario-PR,3,0,H
+2022-06-24,Londrina,Guarani Campinas,3,1,H
+2022-06-25,Criciuma,Vila Nova,1,0,H
+2022-06-25,Bahia,Novorizontino,0,1,A
+2022-06-25,Sport Recife,Brusque,0,0,D
+2022-06-26,Tombense,Nautico Recife,1,1,D
+2022-06-27,Sampaio Correa,CSA,2,0,H
+2022-06-27,Operario-PR,Chapecoense-sc,2,1,H
+2022-06-28,Gremio,Londrina,1,0,H
+2022-06-28,Brusque,Bahia,0,2,A
+2022-06-29,Cruzeiro,Sport Recife,2,1,H
+2022-06-29,Guarani Campinas,Ituano,0,2,A
+2022-06-29,Vila Nova,Ponte Preta,1,1,D
+2022-06-29,Nautico Recife,Criciuma,1,1,D
+2022-06-30,CRB,Tombense,0,0,D
+2022-06-30,Novorizontino,Vasco DA Gama,2,0,H
+2022-07-01,Chapecoense-sc,Sampaio Correa,3,1,H
+2022-07-02,Cruzeiro,Vila Nova,2,0,H
+2022-07-02,Brusque,Operario-PR,2,0,H
+2022-07-02,Londrina,CSA,0,0,D
+2022-07-02,Ituano,Criciuma,1,2,A
+2022-07-02,Nautico Recife,Novorizontino,3,1,H
+2022-07-02,CRB,Guarani Campinas,1,1,D
+2022-07-03,Ponte Preta,Tombense,0,0,D
+2022-07-03,Bahia,Gremio,0,0,D
+2022-07-03,Vasco DA Gama,Sport Recife,0,0,D
+2022-07-05,Chapecoense-sc,Londrina,0,3,A
+2022-07-05,Ituano,Cruzeiro,1,1,D
+2022-07-06,Operario-PR,CRB,2,3,A
+2022-07-07,Novorizontino,Brusque,1,0,H
+2022-07-07,CSA,Ponte Preta,0,1,A
+2022-07-08,Vila Nova,Bahia,1,1,D
+2022-07-09,Gremio,Nautico Recife,2,0,H
+2022-07-09,Guarani Campinas,Cruzeiro,1,0,H
+2022-07-09,Sport Recife,Londrina,2,0,H
+2022-07-09,Criciuma,Vasco DA Gama,0,1,A
+2022-07-09,Tombense,Chapecoense-sc,2,1,H
+2022-07-09,Sampaio Correa,Ituano,2,0,H
+2022-07-14,Operario-PR,Sport Recife,0,0,D
+2022-07-15,Criciuma,Ponte Preta,1,1,D
+2022-07-16,Vila Nova,CSA,1,2,A
+2022-07-16,Ituano,Londrina,0,0,D
+2022-07-16,CRB,Brusque,1,1,D
+2022-07-16,Gremio,Tombense,3,0,H
+2022-07-16,Sampaio Correa,Vasco DA Gama,3,1,H
+2022-07-16,Guarani Campinas,Bahia,0,2,A
+2022-07-17,Cruzeiro,Novorizontino,2,1,H
+2022-07-17,Nautico Recife,Chapecoense-sc,1,2,A
+2022-07-18,Sport Recife,Vila Nova,0,0,D
+2022-07-19,Bahia,CRB,1,1,D
+2022-07-19,Londrina,Sampaio Correa,1,0,H
+2022-07-19,Brusque,Gremio,1,1,D
+2022-07-19,Tombense,Criciuma,1,0,H
+2022-07-20,Vasco DA Gama,Ituano,1,1,D
+2022-07-20,Chapecoense-sc,Guarani Campinas,0,0,D
+2022-07-20,Ponte Preta,Nautico Recife,1,0,H
+2022-07-20,CSA,Cruzeiro,1,1,D
+2022-07-21,Novorizontino,Operario-PR,2,1,H
+2022-07-23,Sampaio Correa,Sport Recife,4,1,H
+2022-07-23,Cruzeiro,Bahia,1,0,H
+2022-07-23,Gremio,Ponte Preta,2,1,H
+2022-07-23,Vila Nova,Vasco DA Gama,1,0,H
+2022-07-23,Nautico Recife,Londrina,1,2,A
+2022-07-23,Ituano,Chapecoense-sc,1,0,H
+2022-07-23,CRB,Novorizontino,2,1,H
+2022-07-24,Guarani Campinas,Brusque,1,1,D
+2022-07-25,Criciuma,CSA,2,1,H
+2022-07-25,Operario-PR,Tombense,0,0,D
+2022-07-26,Chapecoense-sc,Gremio,0,0,D
+2022-07-28,Vasco DA Gama,CRB,4,0,H
+2022-07-29,Sport Recife,Guarani Campinas,2,1,H
+2022-07-29,Bahia,Nautico Recife,3,0,H
+2022-07-30,Tombense,Sampaio Correa,3,0,H
+2022-07-30,Brusque,Cruzeiro,0,0,D
+2022-07-30,Londrina,Criciuma,1,1,D
+2022-07-30,Novorizontino,Vila Nova,1,1,D
+2022-07-30,Ponte Preta,Operario-PR,3,0,H
+2022-07-30,CSA,Ituano,1,3,A
+2022-07-31,Vasco DA Gama,Chapecoense-sc,0,0,D
+2022-08-03,Sport Recife,Criciuma,1,1,D
+2022-08-04,Brusque,Sampaio Correa,1,1,D
+2022-08-05,CRB,Ponte Preta,1,1,D
+2022-08-05,Vila Nova,Ituano,1,1,D
+2022-08-05,Operario-PR,Nautico Recife,1,0,H
+2022-08-06,Guarani Campinas,Gremio,1,2,A
+2022-08-06,Bahia,CSA,1,0,H
+2022-08-06,Cruzeiro,Tombense,2,0,H
+2022-08-06,Novorizontino,Londrina,0,1,A
+2022-08-09,Gremio,Operario-PR,5,1,H
+2022-08-09,Ituano,Sport Recife,4,1,H
+2022-08-09,Ponte Preta,Vasco DA Gama,3,1,H
+2022-08-09,CSA,Brusque,1,0,H
+2022-08-10,Londrina,Cruzeiro,1,2,A
+2022-08-10,Sampaio Correa,Bahia,2,0,H
+2022-08-10,Tombense,Vila Nova,0,0,D
+2022-08-10,Chapecoense-sc,Novorizontino,2,2,D
+2022-08-10,Nautico Recife,CRB,2,1,H
+2022-08-11,Criciuma,Guarani Campinas,0,0,D
+2022-08-12,Vila Nova,Londrina,0,0,D
+2022-08-13,Bahia,Ituano,2,0,H
+2022-08-13,Brusque,Ponte Preta,2,1,H
+2022-08-13,Vasco DA Gama,Tombense,3,1,H
+2022-08-13,Operario-PR,Sampaio Correa,1,1,D
+2022-08-13,Sport Recife,CSA,4,0,H
+2022-08-13,Cruzeiro,Chapecoense-sc,1,1,D
+2022-08-13,Guarani Campinas,Nautico Recife,1,0,H
+2022-08-13,CRB,Gremio,2,0,H
+2022-08-14,Novorizontino,Criciuma,3,1,H
+2022-08-16,Londrina,Bahia,1,1,D
+2022-08-17,Criciuma,Operario-PR,2,0,H
+2022-08-18,CSA,Vasco DA Gama,2,0,H
+2022-08-19,Tombense,Sport Recife,1,0,H
+2022-08-19,Ituano,Novorizontino,1,0,H
+2022-08-20,Nautico Recife,Vila Nova,1,2,A
+2022-08-20,Ponte Preta,Guarani Campinas,1,0,H
+2022-08-20,Chapecoense-sc,Brusque,1,0,H
+2022-08-20,Sampaio Correa,CRB,1,2,A
+2022-08-21,Gremio,Cruzeiro,2,2,D
+2022-08-24,Sport Recife,Chapecoense-sc,1,0,H
+2022-08-25,Vila Nova,Sampaio Correa,0,0,D
+2022-08-26,Novorizontino,Ponte Preta,1,1,D
+2022-08-26,Gremio,Ituano,0,1,A
+2022-08-26,Brusque,Londrina,0,1,A
+2022-08-27,Cruzeiro,Nautico Recife,4,0,H
+2022-08-27,Guarani Campinas,Tombense,2,1,H
+2022-08-27,CRB,Criciuma,0,0,D
+2022-08-27,Operario-PR,CSA,0,0,D
+2022-08-28,Bahia,Vasco DA Gama,2,1,H
+2022-08-29,Chapecoense-sc,Vila Nova,1,2,A
+2022-08-30,Londrina,CRB,1,0,H
+2022-08-30,Sampaio Correa,Cruzeiro,1,1,D
+2022-08-30,Sport Recife,Novorizontino,1,0,H
+2022-08-30,Ituano,Operario-PR,0,0,D
+2022-08-31,Criciuma,Gremio,2,0,H
+2022-08-31,CSA,Nautico Recife,2,0,H
+2022-08-31,Tombense,Brusque,1,0,H
+2022-08-31,Vasco DA Gama,Guarani Campinas,2,1,H
+2022-09-01,Ponte Preta,Bahia,2,0,H
+2022-09-02,Nautico Recife,Ituano,2,0,H
+2022-09-03,Gremio,Vila Nova,2,1,H
+2022-09-03,Novorizontino,CSA,1,1,D
+2022-09-03,Guarani Campinas,Sampaio Correa,3,0,H
+2022-09-03,Brusque,Vasco DA Gama,1,0,H
+2022-09-03,CRB,Sport Recife,2,0,H
+2022-09-03,Bahia,Tombense,3,1,H
+2022-09-03,Chapecoense-sc,Ponte Preta,3,0,H
+2022-09-03,Operario-PR,Londrina,1,0,H
+2022-09-04,Cruzeiro,Criciuma,1,1,D
+2022-09-07,Vila Nova,Guarani Campinas,2,1,H
+2022-09-07,Ponte Preta,Sport Recife,1,0,H
+2022-09-08,Sampaio Correa,Novorizontino,2,1,H
+2022-09-08,Criciuma,Bahia,0,0,D
+2022-09-09,Cruzeiro,Operario-PR,1,0,H
+2022-09-10,Nautico Recife,Brusque,1,0,H
+2022-09-10,Ituano,Tombense,3,0,H
+2022-09-10,CSA,CRB,1,1,D
+2022-09-10,Londrina,Chapecoense-sc,2,1,H
+2022-09-11,Gremio,Vasco DA Gama,2,1,H
+2022-09-12,Sport Recife,Bahia,1,0,H
+2022-09-13,Operario-PR,Guarani Campinas,0,1,A
+2022-09-14,Ponte Preta,Ituano,1,1,D
+2022-09-16,Vasco DA Gama,Nautico Recife,4,1,H
+2022-09-17,Tombense,Londrina,1,1,D
+2022-09-17,Novorizontino,Gremio,2,0,H
+2022-09-17,Chapecoense-sc,CSA,1,0,H
+2022-09-17,Brusque,Vila Nova,0,1,A
+2022-09-17,Sampaio Correa,Criciuma,1,1,D
+2022-09-17,CRB,Cruzeiro,0,2,A
+2022-09-20,Gremio,Sport Recife,3,0,H
+2022-09-21,Guarani Campinas,Novorizontino,2,0,H
+2022-09-22,Cruzeiro,Vasco DA Gama,3,0,H
+2022-09-23,Vila Nova,CRB,1,0,H
+2022-09-23,Nautico Recife,Sampaio Correa,1,3,A
+2022-09-24,Londrina,Ponte Preta,0,2,A
+2022-09-24,Ituano,Brusque,2,0,H
+2022-09-24,Bahia,Operario-PR,2,2,D
+2022-09-25,Criciuma,Chapecoense-sc,2,0,H
+2022-09-26,CSA,Tombense,2,0,H
+2022-09-28,Ponte Preta,Cruzeiro,1,4,A
+2022-09-29,Sport Recife,Nautico Recife,2,1,H
+2022-09-29,Tombense,Novorizontino,2,0,H
+2022-09-30,Vasco DA Gama,Londrina,1,1,D
+2022-09-30,CSA,Guarani Campinas,1,2,A
+2022-09-30,Sampaio Correa,Gremio,2,1,H
+2022-09-30,Operario-PR,Vila Nova,1,1,D
+2022-10-01,Chapecoense-sc,Bahia,3,1,H
+2022-10-01,Brusque,Criciuma,0,2,A
+2022-10-01,Ituano,CRB,1,0,H
+2022-10-03,Guarani Campinas,Londrina,1,0,H
+2022-10-03,Sampaio Correa,Ponte Preta,2,1,H
+2022-10-04,Gremio,CSA,2,0,H
+2022-10-04,Vila Nova,Criciuma,1,0,H
+2022-10-04,CRB,Chapecoense-sc,2,1,H
+2022-10-04,Brusque,Sport Recife,0,1,A
+2022-10-04,Operario-PR,Vasco DA Gama,2,3,A
+2022-10-05,Nautico Recife,Tombense,4,3,H
+2022-10-05,Novorizontino,Bahia,1,1,D
+2022-10-06,Cruzeiro,Ituano,1,1,D
+2022-10-07,Criciuma,Nautico Recife,2,1,H
+2022-10-08,CSA,Sampaio Correa,0,0,D
+2022-10-08,Chapecoense-sc,Operario-PR,1,1,D
+2022-10-08,Bahia,Brusque,1,0,H
+2022-10-08,Londrina,Gremio,1,1,D
+2022-10-08,Vasco DA Gama,Novorizontino,3,0,H
+2022-10-08,Tombense,CRB,1,2,A
+2022-10-08,Ituano,Guarani Campinas,2,1,H
+2022-10-08,Ponte Preta,Vila Nova,1,1,D
+2022-10-09,Sport Recife,Cruzeiro,3,1,H
+2022-10-11,Guarani Campinas,CRB,1,0,H
+2022-10-12,Sampaio Correa,Chapecoense-sc,2,1,H
+2022-10-14,Operario-PR,Brusque,0,0,D
+2022-10-14,CSA,Londrina,0,1,A
+2022-10-14,Vila Nova,Cruzeiro,1,0,H
+2022-10-15,Novorizontino,Nautico Recife,6,0,H
+2022-10-15,Tombense,Ponte Preta,0,0,D
+2022-10-15,Criciuma,Ituano,3,0,H
+2022-10-16,Sport Recife,Vasco DA Gama,1,1,D
+2022-10-16,Gremio,Bahia,1,1,D
+2022-10-18,Brusque,Novorizontino,2,2,D
+2022-10-19,Cruzeiro,Guarani Campinas,0,1,A
+2022-10-21,Ponte Preta,CSA,0,2,A
+2022-10-21,Chapecoense-sc,Tombense,3,2,H
+2022-10-22,CRB,Operario-PR,2,1,H
+2022-10-22,Bahia,Vila Nova,1,1,D
+2022-10-22,Vasco DA Gama,Criciuma,2,1,H
+2022-10-22,Londrina,Sport Recife,2,1,H
+2022-10-22,Ituano,Sampaio Correa,1,0,H
+2022-10-23,Nautico Recife,Gremio,0,3,A
+2022-10-25,Brusque,CRB,0,0,D
+2022-10-26,CSA,Vila Nova,1,0,H
+2022-10-27,Novorizontino,Cruzeiro,1,4,A
+2022-10-28,Vasco DA Gama,Sampaio Correa,2,3,A
+2022-10-28,Bahia,Guarani Campinas,1,1,D
+2022-10-28,Sport Recife,Operario-PR,5,1,H
+2022-10-28,Londrina,Ituano,0,2,A
+2022-10-28,Tombense,Gremio,2,2,D
+2022-10-29,Ponte Preta,Criciuma,1,1,D
+2022-10-29,Chapecoense-sc,Nautico Recife,1,0,H
+2022-11-03,Gremio,Brusque,3,0,H
+2022-11-05,Nautico Recife,Ponte Preta,0,1,A
+2022-11-05,Criciuma,Tombense,2,0,H
+2022-11-05,Sampaio Correa,Londrina,2,1,H
+2022-11-06,Guarani Campinas,Chapecoense-sc,1,0,H
+2022-11-06,Cruzeiro,CSA,3,2,H
+2022-11-06,Vila Nova,Sport Recife,0,0,D
+2022-11-06,CRB,Bahia,1,2,A
+2022-11-06,Operario-PR,Novorizontino,0,3,A
+2022-11-06,Ituano,Vasco DA Gama,0,1,A

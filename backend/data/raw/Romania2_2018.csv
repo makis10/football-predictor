@@ -1,0 +1,381 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2018-08-03,Universitatea Cluj,Metaloglobus,2,0,H
+2018-08-04,Arges Pitesti,CS Balotesti,2,0,H
+2018-08-04,Aerostar Bacau,Pandurii TG JIU,0,1,A
+2018-08-04,CS Mioveni,FC Clinceni,2,1,H
+2018-08-04,Dacia Unirea Braila,Ripensia Timisoara,1,2,A
+2018-08-04,ACS Sirineasa,CS Luceafarul Oradea,4,0,H
+2018-08-04,Farul Constanta,ACS Poli Timisoara,4,1,H
+2018-08-04,Petrolul Ploiesti,Sportul Snagov,0,0,D
+2018-08-05,Juventus Bucuresti,Uta Arad,2,0,H
+2018-08-05,FC Politehnica Timisoara,Chindia Targoviste,0,1,A
+2018-08-10,CS Balotesti,Petrolul Ploiesti,0,3,A
+2018-08-11,ACS Sirineasa,FC Politehnica Timisoara,2,1,H
+2018-08-11,CS Luceafarul Oradea,Ripensia Timisoara,2,2,D
+2018-08-11,FC Clinceni,Juventus Bucuresti,5,0,H
+2018-08-11,Metaloglobus,Aerostar Bacau,1,1,D
+2018-08-11,Sportul Snagov,CS Mioveni,2,0,H
+2018-08-11,Uta Arad,Farul Constanta,4,2,H
+2018-08-11,Pandurii TG JIU,Arges Pitesti,1,1,D
+2018-08-12,ACS Poli Timisoara,Dacia Unirea Braila,2,2,D
+2018-08-13,Chindia Targoviste,Universitatea Cluj,2,1,H
+2018-08-17,CS Mioveni,CS Balotesti,3,0,H
+2018-08-17,Petrolul Ploiesti,Pandurii TG JIU,2,1,H
+2018-08-18,Juventus Bucuresti,Sportul Snagov,1,3,A
+2018-08-18,Dacia Unirea Braila,Uta Arad,0,0,D
+2018-08-18,Farul Constanta,FC Clinceni,1,4,A
+2018-08-18,Aerostar Bacau,Chindia Targoviste,0,2,A
+2018-08-18,Ripensia Timisoara,ACS Poli Timisoara,2,3,A
+2018-08-19,Arges Pitesti,Metaloglobus,2,0,H
+2018-08-19,Universitatea Cluj,ACS Sirineasa,3,0,H
+2018-08-19,FC Politehnica Timisoara,CS Luceafarul Oradea,0,0,D
+2018-08-24,Metaloglobus,Petrolul Ploiesti,1,0,H
+2018-08-25,Uta Arad,Ripensia Timisoara,2,1,H
+2018-08-25,Pandurii TG JIU,CS Mioveni,2,0,H
+2018-08-25,ACS Sirineasa,Aerostar Bacau,4,3,H
+2018-08-25,CS Balotesti,Juventus Bucuresti,1,1,D
+2018-08-25,CS Luceafarul Oradea,ACS Poli Timisoara,4,2,H
+2018-08-25,FC Clinceni,Dacia Unirea Braila,7,0,H
+2018-08-25,Chindia Targoviste,Arges Pitesti,1,1,D
+2018-08-26,Sportul Snagov,Farul Constanta,1,0,H
+2018-08-26,FC Politehnica Timisoara,Universitatea Cluj,1,0,H
+2018-09-01,Juventus Bucuresti,Pandurii TG JIU,2,2,D
+2018-09-01,Aerostar Bacau,FC Politehnica Timisoara,1,2,A
+2018-09-01,CS Mioveni,Metaloglobus,5,0,H
+2018-09-01,Dacia Unirea Braila,Sportul Snagov,0,3,A
+2018-09-01,ACS Poli Timisoara,Uta Arad,0,3,A
+2018-09-02,Farul Constanta,CS Balotesti,2,0,H
+2018-09-02,Ripensia Timisoara,FC Clinceni,0,3,A
+2018-09-03,Universitatea Cluj,CS Luceafarul Oradea,2,0,H
+2018-09-04,Arges Pitesti,ACS Sirineasa,0,0,D
+2018-09-07,Chindia Targoviste,CS Mioveni,0,2,A
+2018-09-08,CS Balotesti,Dacia Unirea Braila,2,2,D
+2018-09-08,CS Luceafarul Oradea,Uta Arad,0,1,A
+2018-09-08,FC Clinceni,ACS Poli Timisoara,1,0,H
+2018-09-08,Metaloglobus,Juventus Bucuresti,2,3,A
+2018-09-08,Sportul Snagov,Ripensia Timisoara,1,1,D
+2018-09-08,ACS Sirineasa,Petrolul Ploiesti,0,3,A
+2018-09-09,Pandurii TG JIU,Farul Constanta,5,3,H
+2018-09-09,FC Politehnica Timisoara,Arges Pitesti,2,3,A
+2018-09-10,Universitatea Cluj,Aerostar Bacau,3,2,H
+2018-09-12,Petrolul Ploiesti,Chindia Targoviste,2,0,H
+2018-09-15,Juventus Bucuresti,Chindia Targoviste,2,2,D
+2018-09-15,CS Mioveni,ACS Sirineasa,2,1,H
+2018-09-15,Dacia Unirea Braila,Pandurii TG JIU,0,4,A
+2018-09-15,Farul Constanta,Metaloglobus,1,2,A
+2018-09-15,Ripensia Timisoara,CS Balotesti,2,1,H
+2018-09-15,Uta Arad,FC Clinceni,0,1,A
+2018-09-16,ACS Poli Timisoara,Sportul Snagov,1,2,A
+2018-09-16,Aerostar Bacau,CS Luceafarul Oradea,3,1,H
+2018-09-16,Petrolul Ploiesti,FC Politehnica Timisoara,2,0,H
+2018-09-17,Arges Pitesti,Universitatea Cluj,2,1,H
+2018-09-20,Sportul Snagov,Uta Arad,2,1,H
+2018-09-22,Pandurii TG JIU,Ripensia Timisoara,5,2,H
+2018-09-22,Aerostar Bacau,Arges Pitesti,1,0,H
+2018-09-22,ACS Sirineasa,Juventus Bucuresti,2,1,H
+2018-09-22,CS Balotesti,ACS Poli Timisoara,2,0,H
+2018-09-22,Metaloglobus,Dacia Unirea Braila,2,2,D
+2018-09-22,CS Luceafarul Oradea,FC Clinceni,1,0,H
+2018-09-22,FC Politehnica Timisoara,CS Mioveni,1,0,H
+2018-09-23,Chindia Targoviste,Farul Constanta,5,1,H
+2018-09-23,Universitatea Cluj,Petrolul Ploiesti,3,2,H
+2018-09-28,Petrolul Ploiesti,Aerostar Bacau,5,0,H
+2018-09-29,Juventus Bucuresti,FC Politehnica Timisoara,1,1,D
+2018-09-29,Dacia Unirea Braila,Chindia Targoviste,0,1,A
+2018-09-29,Ripensia Timisoara,Metaloglobus,0,1,A
+2018-09-29,FC Clinceni,Sportul Snagov,0,1,A
+2018-09-29,CS Mioveni,Universitatea Cluj,1,1,D
+2018-09-29,ACS Poli Timisoara,Pandurii TG JIU,1,1,D
+2018-09-29,Uta Arad,CS Balotesti,0,2,A
+2018-09-30,Arges Pitesti,CS Luceafarul Oradea,3,0,H
+2018-09-30,Farul Constanta,ACS Sirineasa,1,0,H
+2018-10-04,Arges Pitesti,Petrolul Ploiesti,3,0,H
+2018-10-05,CS Balotesti,FC Clinceni,1,3,A
+2018-10-05,Pandurii TG JIU,Uta Arad,1,2,A
+2018-10-06,Chindia Targoviste,Ripensia Timisoara,4,2,H
+2018-10-06,Aerostar Bacau,CS Mioveni,0,3,A
+2018-10-06,ACS Sirineasa,Dacia Unirea Braila,4,0,H
+2018-10-06,CS Luceafarul Oradea,Sportul Snagov,1,1,D
+2018-10-06,Metaloglobus,ACS Poli Timisoara,1,0,H
+2018-10-06,FC Politehnica Timisoara,Farul Constanta,1,0,H
+2018-10-07,Universitatea Cluj,Juventus Bucuresti,1,1,D
+2018-10-09,FC Clinceni,Pandurii TG JIU,4,1,H
+2018-10-09,Petrolul Ploiesti,CS Luceafarul Oradea,6,2,H
+2018-10-10,Sportul Snagov,CS Balotesti,4,1,H
+2018-10-10,Juventus Bucuresti,Aerostar Bacau,3,0,H
+2018-10-10,ACS Poli Timisoara,Chindia Targoviste,1,3,A
+2018-10-10,Uta Arad,Metaloglobus,6,1,H
+2018-10-10,Dacia Unirea Braila,FC Politehnica Timisoara,0,2,A
+2018-10-10,Ripensia Timisoara,ACS Sirineasa,1,1,D
+2018-10-10,Farul Constanta,Universitatea Cluj,0,3,A
+2018-10-10,CS Mioveni,Arges Pitesti,0,1,A
+2018-10-13,Arges Pitesti,Juventus Bucuresti,1,1,D
+2018-10-13,Aerostar Bacau,Farul Constanta,2,2,D
+2018-10-13,ACS Sirineasa,ACS Poli Timisoara,3,0,H
+2018-10-13,CS Luceafarul Oradea,CS Balotesti,4,1,H
+2018-10-13,Metaloglobus,FC Clinceni,0,1,A
+2018-10-13,Pandurii TG JIU,Sportul Snagov,2,0,H
+2018-10-13,Universitatea Cluj,Dacia Unirea Braila,6,1,H
+2018-10-14,Chindia Targoviste,Uta Arad,4,2,H
+2018-10-14,FC Politehnica Timisoara,Ripensia Timisoara,0,1,A
+2018-10-17,Petrolul Ploiesti,CS Mioveni,0,0,D
+2018-10-18,Ripensia Timisoara,Universitatea Cluj,1,1,D
+2018-10-20,ACS Poli Timisoara,FC Politehnica Timisoara,1,2,A
+2018-10-20,Uta Arad,ACS Sirineasa,1,1,D
+2018-10-20,CS Mioveni,CS Luceafarul Oradea,2,1,H
+2018-10-20,Dacia Unirea Braila,Aerostar Bacau,3,3,D
+2018-10-20,CS Balotesti,Pandurii TG JIU,2,1,H
+2018-10-20,Sportul Snagov,Metaloglobus,3,0,H
+2018-10-20,FC Clinceni,Chindia Targoviste,0,1,A
+2018-10-21,Farul Constanta,Arges Pitesti,3,1,H
+2018-10-21,Juventus Bucuresti,Petrolul Ploiesti,1,2,A
+2018-10-25,Universitatea Cluj,ACS Poli Timisoara,4,0,H
+2018-10-26,CS Mioveni,Juventus Bucuresti,2,1,H
+2018-10-27,Arges Pitesti,Dacia Unirea Braila,4,1,H
+2018-10-27,Aerostar Bacau,Ripensia Timisoara,2,0,H
+2018-10-27,ACS Sirineasa,FC Clinceni,0,1,A
+2018-10-27,Metaloglobus,CS Balotesti,1,0,H
+2018-10-27,FC Politehnica Timisoara,Uta Arad,1,3,A
+2018-10-27,CS Luceafarul Oradea,Pandurii TG JIU,1,0,H
+2018-10-28,Chindia Targoviste,Sportul Snagov,4,1,H
+2018-10-29,Petrolul Ploiesti,Farul Constanta,2,1,H
+2018-11-02,Ripensia Timisoara,Arges Pitesti,1,1,D
+2018-11-03,Juventus Bucuresti,CS Luceafarul Oradea,3,1,H
+2018-11-03,ACS Poli Timisoara,Aerostar Bacau,1,2,A
+2018-11-03,Pandurii TG JIU,Metaloglobus,1,2,A
+2018-11-03,CS Balotesti,Chindia Targoviste,1,4,A
+2018-11-03,FC Clinceni,FC Politehnica Timisoara,2,0,H
+2018-11-03,Sportul Snagov,ACS Sirineasa,2,0,H
+2018-11-03,Dacia Unirea Braila,Petrolul Ploiesti,2,3,A
+2018-11-03,Farul Constanta,CS Mioveni,0,3,A
+2018-11-04,Uta Arad,Universitatea Cluj,0,4,A
+2018-11-09,CS Mioveni,Dacia Unirea Braila,4,0,H
+2018-11-09,Petrolul Ploiesti,Ripensia Timisoara,1,0,H
+2018-11-10,Juventus Bucuresti,Farul Constanta,3,0,H
+2018-11-10,Arges Pitesti,ACS Poli Timisoara,5,0,H
+2018-11-10,Aerostar Bacau,Uta Arad,1,0,H
+2018-11-10,ACS Sirineasa,CS Balotesti,3,0,H
+2018-11-10,CS Luceafarul Oradea,Metaloglobus,3,0,H
+2018-11-10,Chindia Targoviste,Pandurii TG JIU,2,1,H
+2018-11-11,Universitatea Cluj,FC Clinceni,3,0,H
+2018-11-12,FC Politehnica Timisoara,Sportul Snagov,1,2,A
+2018-11-17,Pandurii TG JIU,ACS Sirineasa,2,0,H
+2018-11-17,Dacia Unirea Braila,Juventus Bucuresti,2,1,H
+2018-11-17,Farul Constanta,CS Luceafarul Oradea,5,0,H
+2018-11-17,Ripensia Timisoara,CS Mioveni,1,1,D
+2018-11-17,CS Balotesti,FC Politehnica Timisoara,1,0,H
+2018-11-17,FC Clinceni,Aerostar Bacau,2,1,H
+2018-11-17,Metaloglobus,Chindia Targoviste,0,0,D
+2018-11-17,ACS Poli Timisoara,Petrolul Ploiesti,0,1,A
+2018-11-18,Sportul Snagov,Universitatea Cluj,0,0,D
+2018-11-18,Uta Arad,Arges Pitesti,1,2,A
+2018-11-22,Petrolul Ploiesti,Uta Arad,2,2,D
+2018-11-23,CS Mioveni,ACS Poli Timisoara,1,1,D
+2018-11-23,Arges Pitesti,FC Clinceni,1,0,H
+2018-11-24,Juventus Bucuresti,Ripensia Timisoara,1,1,D
+2018-11-24,Aerostar Bacau,Sportul Snagov,0,2,A
+2018-11-24,ACS Sirineasa,Metaloglobus,2,1,H
+2018-11-24,CS Luceafarul Oradea,Chindia Targoviste,0,0,D
+2018-11-24,Farul Constanta,Dacia Unirea Braila,2,0,H
+2018-11-24,FC Politehnica Timisoara,Pandurii TG JIU,1,1,D
+2018-11-25,Universitatea Cluj,CS Balotesti,0,0,D
+2018-11-27,FC Clinceni,Petrolul Ploiesti,2,1,H
+2018-11-28,CS Balotesti,Aerostar Bacau,1,1,D
+2018-11-28,ACS Poli Timisoara,Juventus Bucuresti,0,0,D
+2018-11-28,Uta Arad,CS Mioveni,2,1,H
+2018-11-28,Pandurii TG JIU,Universitatea Cluj,1,5,A
+2018-11-28,Dacia Unirea Braila,CS Luceafarul Oradea,1,1,D
+2018-11-28,Metaloglobus,FC Politehnica Timisoara,0,1,A
+2018-11-28,Sportul Snagov,Arges Pitesti,1,0,H
+2018-11-28,Ripensia Timisoara,Farul Constanta,1,0,H
+2018-11-29,Chindia Targoviste,ACS Sirineasa,2,2,D
+2018-12-01,Uta Arad,Juventus Bucuresti,1,1,D
+2018-12-01,Pandurii TG JIU,Aerostar Bacau,2,0,H
+2018-12-01,Ripensia Timisoara,Dacia Unirea Braila,2,0,H
+2018-12-01,CS Balotesti,Arges Pitesti,4,0,H
+2018-12-01,FC Clinceni,CS Mioveni,2,1,H
+2018-12-01,Sportul Snagov,Petrolul Ploiesti,0,1,A
+2018-12-01,ACS Poli Timisoara,Farul Constanta,3,0,H
+2018-12-02,CS Luceafarul Oradea,ACS Sirineasa,2,1,H
+2018-12-02,Metaloglobus,Universitatea Cluj,0,1,A
+2018-12-02,Chindia Targoviste,FC Politehnica Timisoara,2,1,H
+2018-12-07,Arges Pitesti,Pandurii TG JIU,3,1,H
+2018-12-07,Universitatea Cluj,Chindia Targoviste,3,1,H
+2018-12-08,Juventus Bucuresti,FC Clinceni,0,2,A
+2018-12-08,Aerostar Bacau,Metaloglobus,9,1,H
+2018-12-08,CS Mioveni,Sportul Snagov,0,4,A
+2018-12-08,Dacia Unirea Braila,ACS Poli Timisoara,2,0,H
+2018-12-08,Ripensia Timisoara,CS Luceafarul Oradea,2,0,H
+2018-12-08,Farul Constanta,Uta Arad,1,1,D
+2018-12-08,FC Politehnica Timisoara,ACS Sirineasa,0,0,D
+2018-12-09,Petrolul Ploiesti,CS Balotesti,5,1,H
+2019-02-22,Chindia Targoviste,Aerostar Bacau,3,2,H
+2019-02-23,ACS Poli Timisoara,Ripensia Timisoara,1,0,H
+2019-02-23,Uta Arad,Dacia Unirea Braila,3,0,H
+2019-02-23,CS Balotesti,CS Mioveni,0,2,A
+2019-02-23,CS Luceafarul Oradea,FC Politehnica Timisoara,0,0,D
+2019-02-23,FC Clinceni,Farul Constanta,1,0,H
+2019-02-23,Metaloglobus,Arges Pitesti,1,0,H
+2019-02-23,Sportul Snagov,Juventus Bucuresti,2,1,H
+2019-02-23,ACS Sirineasa,Universitatea Cluj,0,2,A
+2019-02-24,Pandurii TG JIU,Petrolul Ploiesti,0,2,A
+2019-03-01,Arges Pitesti,Chindia Targoviste,0,1,A
+2019-03-02,Juventus Bucuresti,CS Balotesti,1,2,A
+2019-03-02,ACS Poli Timisoara,CS Luceafarul Oradea,1,1,D
+2019-03-02,Aerostar Bacau,ACS Sirineasa,1,1,D
+2019-03-02,CS Mioveni,Pandurii TG JIU,2,2,D
+2019-03-02,Dacia Unirea Braila,FC Clinceni,0,2,A
+2019-03-02,Farul Constanta,Sportul Snagov,1,2,A
+2019-03-02,Ripensia Timisoara,Uta Arad,1,0,H
+2019-03-03,Petrolul Ploiesti,Metaloglobus,1,1,D
+2019-03-04,Universitatea Cluj,FC Politehnica Timisoara,1,0,H
+2019-03-09,Uta Arad,ACS Poli Timisoara,2,1,H
+2019-03-09,Pandurii TG JIU,Juventus Bucuresti,0,2,A
+2019-03-09,ACS Sirineasa,Arges Pitesti,0,0,D
+2019-03-09,CS Balotesti,Farul Constanta,0,1,A
+2019-03-09,Metaloglobus,CS Mioveni,2,0,H
+2019-03-09,Sportul Snagov,Dacia Unirea Braila,1,0,H
+2019-03-09,FC Politehnica Timisoara,Aerostar Bacau,1,2,A
+2019-03-10,FC Clinceni,Ripensia Timisoara,1,1,D
+2019-03-10,CS Luceafarul Oradea,Universitatea Cluj,1,3,A
+2019-03-10,Chindia Targoviste,Petrolul Ploiesti,0,0,D
+2019-03-15,CS Mioveni,Chindia Targoviste,1,4,A
+2019-03-16,Juventus Bucuresti,Metaloglobus,1,1,D
+2019-03-16,ACS Poli Timisoara,FC Clinceni,1,3,A
+2019-03-16,Uta Arad,CS Luceafarul Oradea,0,3,A
+2019-03-16,Arges Pitesti,FC Politehnica Timisoara,0,0,D
+2019-03-16,Dacia Unirea Braila,CS Balotesti,1,0,H
+2019-03-16,Farul Constanta,Pandurii TG JIU,2,0,H
+2019-03-16,Aerostar Bacau,Universitatea Cluj,1,2,A
+2019-03-17,Ripensia Timisoara,Sportul Snagov,1,2,A
+2019-03-19,Petrolul Ploiesti,ACS Sirineasa,2,0,H
+2019-03-23,Pandurii TG JIU,Dacia Unirea Braila,5,2,H
+2019-03-23,CS Balotesti,Ripensia Timisoara,0,2,A
+2019-03-23,CS Luceafarul Oradea,Aerostar Bacau,4,0,H
+2019-03-23,Metaloglobus,Farul Constanta,2,1,H
+2019-03-23,FC Clinceni,Uta Arad,2,0,H
+2019-03-24,ACS Sirineasa,CS Mioveni,0,0,D
+2019-03-24,Sportul Snagov,ACS Poli Timisoara,0,0,D
+2019-03-24,Chindia Targoviste,Juventus Bucuresti,4,2,H
+2019-03-24,FC Politehnica Timisoara,Petrolul Ploiesti,3,0,H
+2019-03-24,Universitatea Cluj,Arges Pitesti,0,0,D
+2019-03-29,CS Mioveni,FC Politehnica Timisoara,1,0,H
+2019-03-30,Juventus Bucuresti,ACS Sirineasa,0,0,D
+2019-03-30,ACS Poli Timisoara,CS Balotesti,3,1,H
+2019-03-30,Arges Pitesti,Aerostar Bacau,2,1,H
+2019-03-30,Dacia Unirea Braila,Metaloglobus,2,2,D
+2019-03-30,Ripensia Timisoara,Pandurii TG JIU,2,1,H
+2019-03-30,FC Clinceni,CS Luceafarul Oradea,5,0,H
+2019-03-30,Farul Constanta,Chindia Targoviste,1,0,H
+2019-03-30,Petrolul Ploiesti,Universitatea Cluj,1,0,H
+2019-03-31,Uta Arad,Sportul Snagov,3,1,H
+2019-04-05,Chindia Targoviste,Dacia Unirea Braila,3,0,H
+2019-04-06,Pandurii TG JIU,ACS Poli Timisoara,1,1,D
+2019-04-06,ACS Sirineasa,Farul Constanta,0,1,A
+2019-04-06,CS Balotesti,Uta Arad,1,3,A
+2019-04-06,CS Luceafarul Oradea,Arges Pitesti,1,2,A
+2019-04-06,Metaloglobus,Ripensia Timisoara,1,1,D
+2019-04-06,FC Politehnica Timisoara,Juventus Bucuresti,1,1,D
+2019-04-06,Universitatea Cluj,CS Mioveni,1,2,A
+2019-04-07,Sportul Snagov,FC Clinceni,0,2,A
+2019-04-07,Aerostar Bacau,Petrolul Ploiesti,0,2,A
+2019-04-09,Juventus Bucuresti,Universitatea Cluj,2,6,A
+2019-04-10,FC Clinceni,CS Balotesti,4,0,H
+2019-04-10,ACS Poli Timisoara,Metaloglobus,1,0,H
+2019-04-10,Uta Arad,Pandurii TG JIU,3,3,D
+2019-04-10,CS Mioveni,Aerostar Bacau,2,0,H
+2019-04-10,Dacia Unirea Braila,ACS Sirineasa,3,1,H
+2019-04-10,Farul Constanta,FC Politehnica Timisoara,1,1,D
+2019-04-10,Sportul Snagov,CS Luceafarul Oradea,2,4,A
+2019-04-10,Petrolul Ploiesti,Arges Pitesti,1,2,A
+2019-04-11,Ripensia Timisoara,Chindia Targoviste,0,2,A
+2019-04-13,Pandurii TG JIU,FC Clinceni,0,2,A
+2019-04-13,Aerostar Bacau,Juventus Bucuresti,2,1,H
+2019-04-13,CS Balotesti,Sportul Snagov,0,0,D
+2019-04-13,Universitatea Cluj,Farul Constanta,2,1,H
+2019-04-14,ACS Sirineasa,Ripensia Timisoara,2,3,A
+2019-04-14,Metaloglobus,Uta Arad,3,0,H
+2019-04-14,Chindia Targoviste,ACS Poli Timisoara,1,0,H
+2019-04-14,CS Luceafarul Oradea,Petrolul Ploiesti,3,1,H
+2019-04-14,FC Politehnica Timisoara,Dacia Unirea Braila,4,0,H
+2019-04-15,Arges Pitesti,CS Mioveni,2,0,H
+2019-04-20,Juventus Bucuresti,Arges Pitesti,1,0,H
+2019-04-20,ACS Poli Timisoara,ACS Sirineasa,1,1,D
+2019-04-20,Farul Constanta,Aerostar Bacau,2,1,H
+2019-04-20,CS Balotesti,CS Luceafarul Oradea,0,0,D
+2019-04-20,FC Clinceni,Metaloglobus,1,0,H
+2019-04-20,Sportul Snagov,Pandurii TG JIU,3,2,H
+2019-04-20,Uta Arad,Chindia Targoviste,2,2,D
+2019-04-20,Ripensia Timisoara,FC Politehnica Timisoara,0,1,A
+2019-04-21,Dacia Unirea Braila,Universitatea Cluj,0,8,A
+2019-04-23,CS Mioveni,Petrolul Ploiesti,1,2,A
+2019-04-25,Chindia Targoviste,FC Clinceni,1,0,H
+2019-04-26,Pandurii TG JIU,CS Balotesti,4,0,H
+2019-04-26,Aerostar Bacau,Dacia Unirea Braila,9,0,H
+2019-04-26,ACS Sirineasa,Uta Arad,2,2,D
+2019-04-26,CS Luceafarul Oradea,CS Mioveni,2,2,D
+2019-04-26,Metaloglobus,Sportul Snagov,1,0,H
+2019-04-26,Universitatea Cluj,Ripensia Timisoara,2,3,A
+2019-04-26,FC Politehnica Timisoara,ACS Poli Timisoara,0,1,A
+2019-04-27,Petrolul Ploiesti,Juventus Bucuresti,1,3,A
+2019-04-28,Arges Pitesti,Farul Constanta,0,1,A
+2019-05-04,Juventus Bucuresti,CS Mioveni,1,0,H
+2019-05-04,Pandurii TG JIU,CS Luceafarul Oradea,0,0,D
+2019-05-04,Dacia Unirea Braila,Arges Pitesti,0,2,A
+2019-05-04,CS Balotesti,Metaloglobus,0,3,A
+2019-05-04,FC Clinceni,ACS Sirineasa,3,1,H
+2019-05-04,Uta Arad,FC Politehnica Timisoara,0,2,A
+2019-05-04,Ripensia Timisoara,Aerostar Bacau,1,0,H
+2019-05-04,Farul Constanta,Petrolul Ploiesti,0,3,A
+2019-05-05,ACS Poli Timisoara,Universitatea Cluj,0,3,A
+2019-05-06,Sportul Snagov,Chindia Targoviste,0,1,A
+2019-05-09,CS Mioveni,Farul Constanta,0,2,A
+2019-05-10,Arges Pitesti,Ripensia Timisoara,2,1,H
+2019-05-11,Aerostar Bacau,ACS Poli Timisoara,1,0,H
+2019-05-11,Petrolul Ploiesti,Dacia Unirea Braila,9,1,H
+2019-05-11,ACS Sirineasa,Sportul Snagov,3,3,D
+2019-05-11,CS Luceafarul Oradea,Juventus Bucuresti,1,0,H
+2019-05-11,Metaloglobus,Pandurii TG JIU,6,0,H
+2019-05-11,Chindia Targoviste,CS Balotesti,6,0,H
+2019-05-11,FC Politehnica Timisoara,FC Clinceni,2,2,D
+2019-05-12,Universitatea Cluj,Uta Arad,3,0,H
+2019-05-14,Pandurii TG JIU,Chindia Targoviste,0,2,A
+2019-05-15,Metaloglobus,CS Luceafarul Oradea,0,1,A
+2019-05-15,CS Balotesti,ACS Sirineasa,1,4,A
+2019-05-15,Sportul Snagov,FC Politehnica Timisoara,2,0,H
+2019-05-15,Farul Constanta,Juventus Bucuresti,0,0,D
+2019-05-15,ACS Poli Timisoara,Arges Pitesti,1,0,H
+2019-05-15,Uta Arad,Aerostar Bacau,2,1,H
+2019-05-15,Dacia Unirea Braila,CS Mioveni,0,6,A
+2019-05-16,FC Clinceni,Universitatea Cluj,0,0,D
+2019-05-16,Ripensia Timisoara,Petrolul Ploiesti,0,2,A
+2019-05-18,Arges Pitesti,Uta Arad,2,1,H
+2019-05-18,FC Politehnica Timisoara,CS Balotesti,4,3,H
+2019-05-18,CS Luceafarul Oradea,Farul Constanta,5,0,H
+2019-05-18,Juventus Bucuresti,Dacia Unirea Braila,5,2,H
+2019-05-19,Aerostar Bacau,FC Clinceni,0,3,A
+2019-05-19,CS Mioveni,Ripensia Timisoara,4,1,H
+2019-05-19,ACS Sirineasa,Pandurii TG JIU,1,2,A
+2019-05-19,Chindia Targoviste,Metaloglobus,2,1,H
+2019-05-20,Petrolul Ploiesti,ACS Poli Timisoara,1,0,H
+2019-05-21,Universitatea Cluj,Sportul Snagov,1,0,H
+2019-05-24,FC Clinceni,Arges Pitesti,2,1,H
+2019-05-25,ACS Poli Timisoara,CS Mioveni,1,4,A
+2019-05-25,Pandurii TG JIU,FC Politehnica Timisoara,1,0,H
+2019-05-25,Dacia Unirea Braila,Farul Constanta,0,2,A
+2019-05-25,Ripensia Timisoara,Juventus Bucuresti,1,1,D
+2019-05-25,Metaloglobus,ACS Sirineasa,3,0,H
+2019-05-25,Sportul Snagov,Aerostar Bacau,1,0,H
+2019-05-25,CS Balotesti,Universitatea Cluj,0,2,A
+2019-05-25,Chindia Targoviste,CS Luceafarul Oradea,4,1,H
+2019-05-26,Uta Arad,Petrolul Ploiesti,2,4,A
+2019-05-31,Farul Constanta,Ripensia Timisoara,1,1,D
+2019-05-31,Aerostar Bacau,CS Balotesti,7,2,H
+2019-05-31,CS Mioveni,Uta Arad,3,0,H
+2019-06-01,Juventus Bucuresti,ACS Poli Timisoara,3,1,H
+2019-06-01,FC Politehnica Timisoara,Metaloglobus,2,0,H
+2019-06-01,CS Luceafarul Oradea,Dacia Unirea Braila,6,0,H
+2019-06-01,Arges Pitesti,Sportul Snagov,3,2,H
+2019-06-01,Petrolul Ploiesti,FC Clinceni,2,3,A
+2019-06-01,Universitatea Cluj,Pandurii TG JIU,2,0,H
+2019-06-01,ACS Sirineasa,Chindia Targoviste,0,2,A

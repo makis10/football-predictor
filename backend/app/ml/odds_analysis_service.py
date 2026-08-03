@@ -102,6 +102,38 @@ LEAGUE_SPORT_KEY_ALTS: dict[str, list[str]] = {
 _ACTIVE_SPORT_KEY: dict[str, str] = {}
 
 
+# league → the country API-Football files it under.
+#
+# Team names are not unique across the world: "Porto" is a club in Brazil as
+# well as Portugal, "Milan" one in Gambia, "Roma" one in Slovenia, "Lugano" one
+# in Argentina. A /teams?search hit on the bare name is therefore ambiguous, and
+# every one of those four was silently accepted into the id cache. Knowing which
+# country a league belongs to turns the search from a guess into a lookup.
+LEAGUE_COUNTRY: dict[str, str] = {
+    "EPL": "England", "Championship": "England", "LeagueOne": "England",
+    "LaLiga": "Spain", "SerieA": "Italy", "Bundesliga": "Germany",
+    "Ligue1": "France", "GreekSL": "Greece", "PrimeiraLiga": "Portugal",
+    "Eredivisie": "Netherlands", "BrazilSerieA": "Brazil",
+    "Belgium": "Belgium", "Turkey": "Turkey", "Scotland": "Scotland",
+    "Denmark": "Denmark", "Sweden": "Sweden", "Norway": "Norway",
+    "Poland": "Poland", "Austria": "Austria", "Switzerland": "Switzerland",
+    "Romania": "Romania", "Ireland": "Ireland", "Finland": "Finland",
+    # CL/EL/ECL are deliberately absent: their clubs come from everywhere, so
+    # there is no country to check against.
+}
+
+
+def _display(name: str) -> str:
+    """The club's own spelling, for text a human reads.
+
+    The narrative is shown to the user, so it must not say "Goztep". Imported
+    lazily: display_names is presentation-layer and this module is imported by
+    the training scripts too.
+    """
+    from backend.app.display_names import display_name
+    return display_name(name) or name
+
+
 def _sport_keys_for(league: str) -> list[str]:
     primary = LEAGUE_SPORT_KEY.get(league)
     return ([primary] if primary else []) + LEAGUE_SPORT_KEY_ALTS.get(league, [])
@@ -1730,7 +1762,7 @@ def _get_llm_analysis(
             "Δεν υπάρχουν δεδομένα τραυματιών — μην αναφέρεις τραυματισμούς."
         )
 
-    prompt = f"""Είσαι αναλυτής αθλητικού στοιχήματος. Ανάλυσε τον αγώνα {home_team} vs {away_team} ({league}).
+    prompt = f"""Είσαι αναλυτής αθλητικού στοιχήματος. Ανάλυσε τον αγώνα {_display(home_team)} vs {_display(away_team)} ({league}).
 
 Πιθανότητες μοντέλου ML (XGBoost, εκπαιδευμένο σε ιστορικά δεδομένα):
   Νίκη γηπεδούχου: {_pct(model_probs.get('home_win'))}

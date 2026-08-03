@@ -1,0 +1,381 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2018-04-13,Fortaleza EC,Guarani Campinas,2,1,H
+2018-04-13,Oeste,CRB,2,0,H
+2018-04-13,Atletico Goianiense,Criciuma,3,2,H
+2018-04-14,Figueirense,Juventude,2,1,H
+2018-04-14,Brasil DE Pelotas,Sao Bento,1,1,D
+2018-04-14,Vila Nova,Avai,1,0,H
+2018-04-14,Londrina,BOA,1,0,H
+2018-04-14,CSA,Goias,2,1,H
+2018-04-14,Sampaio Correa,Coritiba,2,0,H
+2018-04-15,Ponte Preta,Paysandu,0,1,A
+2018-04-17,BOA,Fortaleza EC,0,2,A
+2018-04-18,Coritiba,Atletico Goianiense,1,0,H
+2018-04-20,Juventude,Oeste,1,1,D
+2018-04-20,Sao Bento,CSA,2,1,H
+2018-04-21,Paysandu,Londrina,1,0,H
+2018-04-21,Guarani Campinas,Sampaio Correa,2,0,H
+2018-04-21,Avai,Brasil DE Pelotas,2,2,D
+2018-04-21,CRB,Vila Nova,0,1,A
+2018-04-21,Goias,Figueirense,0,2,A
+2018-04-21,Criciuma,Ponte Preta,0,1,A
+2018-04-24,Atletico Goianiense,Guarani Campinas,3,2,H
+2018-04-25,Fortaleza EC,CRB,3,1,H
+2018-04-27,Figueirense,BOA,2,0,H
+2018-04-27,CSA,Oeste,5,1,H
+2018-04-28,Coritiba,Criciuma,2,1,H
+2018-04-28,Vila Nova,Sampaio Correa,3,1,H
+2018-04-28,Paysandu,Brasil DE Pelotas,2,1,H
+2018-04-28,Juventude,Avai,1,3,A
+2018-04-28,Ponte Preta,Londrina,0,1,A
+2018-04-29,Sao Bento,Goias,1,1,D
+2018-05-01,Criciuma,CSA,1,3,A
+2018-05-01,BOA,Juventude,1,2,A
+2018-05-01,Brasil DE Pelotas,Figueirense,1,0,H
+2018-05-01,Londrina,Fortaleza EC,1,1,D
+2018-05-04,Sampaio Correa,Paysandu,1,1,D
+2018-05-04,CRB,Atletico Goianiense,3,1,H
+2018-05-05,Oeste,Coritiba,1,1,D
+2018-05-05,Avai,Sao Bento,1,1,D
+2018-05-05,Goias,Vila Nova,1,3,A
+2018-05-05,Guarani Campinas,Ponte Preta,2,3,A
+2018-05-07,Sampaio Correa,CRB,2,3,A
+2018-05-08,Guarani Campinas,Criciuma,1,0,H
+2018-05-09,Coritiba,Brasil DE Pelotas,1,0,H
+2018-05-11,Juventude,Paysandu,1,1,D
+2018-05-12,Atletico Goianiense,Londrina,0,0,D
+2018-05-12,Figueirense,Avai,0,1,A
+2018-05-12,CSA,BOA,1,0,H
+2018-05-12,Sao Bento,Oeste,1,0,H
+2018-05-12,Fortaleza EC,Goias,3,0,H
+2018-05-13,Vila Nova,Ponte Preta,0,0,D
+2018-05-15,CRB,Avai,0,4,A
+2018-05-16,Criciuma,Juventude,0,0,D
+2018-05-18,Goias,Guarani Campinas,1,1,D
+2018-05-19,Figueirense,Fortaleza EC,1,3,A
+2018-05-19,Ponte Preta,Atletico Goianiense,1,3,A
+2018-05-19,Oeste,Vila Nova,2,0,H
+2018-05-19,Londrina,CSA,1,2,A
+2018-05-19,Paysandu,Sao Bento,1,1,D
+2018-05-19,BOA,Coritiba,1,1,D
+2018-05-20,Brasil DE Pelotas,Sampaio Correa,1,2,A
+2018-05-22,CSA,Figueirense,1,4,A
+2018-05-23,Fortaleza EC,Criciuma,2,0,H
+2018-05-25,Atletico Goianiense,Oeste,2,2,D
+2018-05-25,Avai,Paysandu,3,1,H
+2018-05-26,Coritiba,Vila Nova,2,0,H
+2018-05-26,Brasil DE Pelotas,Londrina,3,0,H
+2018-05-26,Goias,BOA,1,2,A
+2018-05-26,Sao Bento,Juventude,2,2,D
+2018-05-27,Guarani Campinas,CRB,2,0,H
+2018-05-28,Sampaio Correa,Ponte Preta,1,0,H
+2018-05-29,Sao Bento,Figueirense,1,1,D
+2018-05-30,Londrina,Coritiba,3,2,H
+2018-06-01,Juventude,Guarani Campinas,1,0,H
+2018-06-01,Vila Nova,CSA,0,1,A
+2018-06-02,Avai,Criciuma,0,1,A
+2018-06-02,Paysandu,BOA,2,0,H
+2018-06-02,Atletico Goianiense,Goias,1,3,A
+2018-06-02,CRB,Brasil DE Pelotas,1,1,D
+2018-06-02,Fortaleza EC,Sampaio Correa,1,0,H
+2018-06-02,Ponte Preta,Oeste,1,1,D
+2018-06-05,Figueirense,Londrina,1,1,D
+2018-06-05,Criciuma,Paysandu,4,1,H
+2018-06-05,Coritiba,CRB,1,0,H
+2018-06-05,Juventude,Atletico Goianiense,2,2,D
+2018-06-05,CSA,Guarani Campinas,1,2,A
+2018-06-05,BOA,Sao Bento,2,2,D
+2018-06-05,Sampaio Correa,Avai,1,1,D
+2018-06-06,Ponte Preta,Goias,2,1,H
+2018-06-06,Vila Nova,Fortaleza EC,0,0,D
+2018-06-06,Oeste,Brasil DE Pelotas,0,0,D
+2018-06-08,Londrina,Juventude,0,1,A
+2018-06-08,Goias,Paysandu,2,1,H
+2018-06-09,Avai,Coritiba,2,0,H
+2018-06-09,Guarani Campinas,Vila Nova,1,1,D
+2018-06-09,Criciuma,BOA,1,1,D
+2018-06-09,CSA,CRB,0,0,D
+2018-06-09,Sampaio Correa,Oeste,2,0,H
+2018-06-09,Sao Bento,Fortaleza EC,2,1,H
+2018-06-09,Atletico Goianiense,Figueirense,3,4,A
+2018-06-10,Brasil DE Pelotas,Ponte Preta,0,2,A
+2018-06-11,Juventude,Coritiba,1,1,D
+2018-06-12,Londrina,Goias,1,3,A
+2018-06-12,Figueirense,Sampaio Correa,1,0,H
+2018-06-15,Guarani Campinas,Sao Bento,0,0,D
+2018-06-15,Fortaleza EC,Brasil DE Pelotas,2,0,H
+2018-06-15,BOA,Avai,0,2,A
+2018-06-16,CRB,Ponte Preta,2,0,H
+2018-06-16,Vila Nova,Atletico Goianiense,0,0,D
+2018-06-16,Oeste,Criciuma,2,2,D
+2018-06-17,Paysandu,CSA,0,0,D
+2018-06-19,Ponte Preta,CSA,1,1,D
+2018-06-20,Avai,Guarani Campinas,3,3,D
+2018-06-21,Brasil DE Pelotas,Criciuma,1,0,H
+2018-06-22,Goias,Juventude,1,1,D
+2018-06-23,Coritiba,Figueirense,1,1,D
+2018-06-23,BOA,Vila Nova,0,2,A
+2018-06-23,Fortaleza EC,Oeste,1,2,A
+2018-06-23,Sampaio Correa,Atletico Goianiense,2,3,A
+2018-06-23,Sao Bento,Londrina,0,1,A
+2018-06-24,CRB,Paysandu,1,1,D
+2018-06-26,Juventude,Vila Nova,0,1,A
+2018-06-26,Oeste,Avai,1,0,H
+2018-06-27,Goias,CRB,2,1,H
+2018-06-29,CSA,Coritiba,2,2,D
+2018-06-29,Atletico Goianiense,Brasil DE Pelotas,2,1,H
+2018-06-30,Guarani Campinas,BOA,1,1,D
+2018-06-30,Figueirense,Ponte Preta,0,2,A
+2018-06-30,Criciuma,Sao Bento,1,0,H
+2018-06-30,Paysandu,Fortaleza EC,0,1,A
+2018-07-01,Londrina,Sampaio Correa,1,1,D
+2018-07-04,Coritiba,Paysandu,2,0,H
+2018-07-04,Atletico Goianiense,BOA,2,0,H
+2018-07-04,Avai,Goias,0,1,A
+2018-07-04,CRB,Sao Bento,1,0,H
+2018-07-05,Oeste,Guarani Campinas,0,1,A
+2018-07-05,Brasil DE Pelotas,CSA,0,2,A
+2018-07-05,Vila Nova,Londrina,1,1,D
+2018-07-06,Criciuma,Figueirense,1,1,D
+2018-07-08,Ponte Preta,Fortaleza EC,2,0,H
+2018-07-09,Guarani Campinas,Coritiba,2,1,H
+2018-07-09,Figueirense,Oeste,1,2,A
+2018-07-12,Londrina,Avai,1,2,A
+2018-07-12,Paysandu,Vila Nova,1,2,A
+2018-07-13,Brasil DE Pelotas,Juventude,1,1,D
+2018-07-13,Goias,Criciuma,2,1,H
+2018-07-13,BOA,CRB,0,1,A
+2018-07-14,CSA,Sampaio Correa,1,0,H
+2018-07-14,Fortaleza EC,Atletico Goianiense,0,1,A
+2018-07-14,Sao Bento,Ponte Preta,0,2,A
+2018-07-17,Avai,Atletico Goianiense,0,0,D
+2018-07-17,Vila Nova,Brasil DE Pelotas,0,0,D
+2018-07-17,Sampaio Correa,Juventude,0,0,D
+2018-07-18,Guarani Campinas,Figueirense,2,3,A
+2018-07-20,Criciuma,Londrina,2,1,H
+2018-07-20,Sampaio Correa,Goias,1,3,A
+2018-07-21,CSA,Fortaleza EC,0,0,D
+2018-07-21,Coritiba,Sao Bento,2,2,D
+2018-07-21,Juventude,CRB,1,0,H
+2018-07-21,Oeste,Paysandu,2,2,D
+2018-07-21,BOA,Ponte Preta,2,1,H
+2018-07-23,Atletico Goianiense,CSA,2,2,D
+2018-07-24,Figueirense,Vila Nova,2,1,H
+2018-07-24,Brasil DE Pelotas,BOA,2,0,H
+2018-07-24,Londrina,Oeste,3,0,H
+2018-07-24,Goias,Coritiba,0,1,A
+2018-07-24,Ponte Preta,Juventude,0,1,A
+2018-07-24,CRB,Criciuma,0,0,D
+2018-07-24,Paysandu,Guarani Campinas,1,0,H
+2018-07-25,Fortaleza EC,Avai,1,1,D
+2018-07-25,Sao Bento,Sampaio Correa,2,1,H
+2018-07-27,Avai,CSA,0,0,D
+2018-07-28,Paysandu,Figueirense,2,0,H
+2018-07-28,Guarani Campinas,Brasil DE Pelotas,2,1,H
+2018-07-28,CRB,Londrina,1,1,D
+2018-07-28,Goias,Oeste,1,0,H
+2018-07-28,Juventude,Fortaleza EC,0,3,A
+2018-07-28,Sao Bento,Atletico Goianiense,2,1,H
+2018-07-28,Criciuma,Vila Nova,1,0,H
+2018-07-28,Coritiba,Ponte Preta,0,0,D
+2018-07-29,BOA,Sampaio Correa,3,1,H
+2018-07-31,Figueirense,CRB,0,0,D
+2018-08-01,Atletico Goianiense,Paysandu,1,0,H
+2018-08-03,Londrina,Guarani Campinas,1,2,A
+2018-08-03,Oeste,BOA,1,1,D
+2018-08-04,CSA,Juventude,1,0,H
+2018-08-04,Brasil DE Pelotas,Goias,1,0,H
+2018-08-04,Vila Nova,Sao Bento,1,0,H
+2018-08-04,Fortaleza EC,Coritiba,2,1,H
+2018-08-04,Ponte Preta,Avai,2,2,D
+2018-08-05,Sampaio Correa,Criciuma,0,1,A
+2018-08-07,Avai,Vila Nova,1,0,H
+2018-08-08,Paysandu,Ponte Preta,0,4,A
+2018-08-10,Goias,CSA,3,0,H
+2018-08-10,BOA,Londrina,1,0,H
+2018-08-11,Coritiba,Sampaio Correa,0,0,D
+2018-08-11,Guarani Campinas,Fortaleza EC,2,3,A
+2018-08-11,Criciuma,Atletico Goianiense,1,1,D
+2018-08-11,CRB,Oeste,0,1,A
+2018-08-11,Sao Bento,Brasil DE Pelotas,1,1,D
+2018-08-11,Juventude,Figueirense,0,0,D
+2018-08-14,Brasil DE Pelotas,Avai,1,1,D
+2018-08-15,Ponte Preta,Criciuma,3,1,H
+2018-08-17,Londrina,Paysandu,2,1,H
+2018-08-17,Vila Nova,CRB,0,0,D
+2018-08-18,Figueirense,Goias,1,2,A
+2018-08-18,Oeste,Juventude,0,0,D
+2018-08-18,Atletico Goianiense,Coritiba,1,0,H
+2018-08-18,Fortaleza EC,BOA,2,1,H
+2018-08-18,Sampaio Correa,Guarani Campinas,0,2,A
+2018-08-19,CSA,Sao Bento,1,0,H
+2018-08-21,Criciuma,Coritiba,2,2,D
+2018-08-21,Brasil DE Pelotas,Paysandu,0,0,D
+2018-08-21,Avai,Juventude,1,0,H
+2018-08-21,Londrina,Ponte Preta,1,0,H
+2018-08-21,CRB,Fortaleza EC,2,1,H
+2018-08-21,Goias,Sao Bento,2,1,H
+2018-08-21,BOA,Figueirense,0,2,A
+2018-08-22,Guarani Campinas,Atletico Goianiense,2,0,H
+2018-08-22,Oeste,CSA,2,1,H
+2018-08-22,Sampaio Correa,Vila Nova,0,0,D
+2018-08-24,Figueirense,Brasil DE Pelotas,1,1,D
+2018-08-24,Coritiba,Oeste,0,2,A
+2018-08-25,Atletico Goianiense,CRB,1,0,H
+2018-08-25,Ponte Preta,Guarani Campinas,0,0,D
+2018-08-25,Vila Nova,Goias,3,0,H
+2018-08-25,Paysandu,Sampaio Correa,0,1,A
+2018-08-25,CSA,Criciuma,3,0,H
+2018-08-25,Sao Bento,Avai,0,1,A
+2018-08-25,Fortaleza EC,Londrina,2,1,H
+2018-08-26,Juventude,BOA,0,0,D
+2018-08-27,Brasil DE Pelotas,Coritiba,0,1,A
+2018-08-28,Criciuma,Guarani Campinas,0,0,D
+2018-08-28,Oeste,Sao Bento,0,1,A
+2018-08-31,Londrina,Atletico Goianiense,4,1,H
+2018-08-31,Paysandu,Juventude,3,3,D
+2018-09-01,Ponte Preta,Vila Nova,1,1,D
+2018-09-01,CRB,Sampaio Correa,2,1,H
+2018-09-01,Avai,Figueirense,0,1,A
+2018-09-01,Goias,Fortaleza EC,3,1,H
+2018-09-02,BOA,CSA,3,0,H
+2018-09-03,Vila Nova,Oeste,1,1,D
+2018-09-04,Guarani Campinas,Goias,0,2,A
+2018-09-04,Atletico Goianiense,Ponte Preta,2,0,H
+2018-09-04,Avai,CRB,1,0,H
+2018-09-04,Coritiba,BOA,2,1,H
+2018-09-04,CSA,Londrina,4,1,H
+2018-09-04,Juventude,Criciuma,0,1,A
+2018-09-04,Sao Bento,Paysandu,1,0,H
+2018-09-05,Fortaleza EC,Figueirense,2,2,D
+2018-09-05,Sampaio Correa,Brasil DE Pelotas,1,2,A
+2018-09-07,Oeste,Atletico Goianiense,1,2,A
+2018-09-07,CRB,Guarani Campinas,1,1,D
+2018-09-07,BOA,Goias,1,0,H
+2018-09-07,Paysandu,Avai,2,1,H
+2018-09-08,Figueirense,CSA,1,2,A
+2018-09-08,Criciuma,Fortaleza EC,2,0,H
+2018-09-08,Londrina,Brasil DE Pelotas,1,0,H
+2018-09-08,Juventude,Sao Bento,0,2,A
+2018-09-08,Ponte Preta,Sampaio Correa,0,0,D
+2018-09-09,Vila Nova,Coritiba,2,1,H
+2018-09-11,CSA,Vila Nova,1,2,A
+2018-09-14,Guarani Campinas,Juventude,1,0,H
+2018-09-14,Coritiba,Londrina,0,1,A
+2018-09-14,Figueirense,Sao Bento,2,2,D
+2018-09-15,Sampaio Correa,Fortaleza EC,1,0,H
+2018-09-15,Criciuma,Avai,3,2,H
+2018-09-15,Brasil DE Pelotas,CRB,1,0,H
+2018-09-15,BOA,Paysandu,1,1,D
+2018-09-15,Goias,Atletico Goianiense,2,1,H
+2018-09-16,Oeste,Ponte Preta,0,0,D
+2018-09-18,Atletico Goianiense,Juventude,0,1,A
+2018-09-19,Londrina,Figueirense,2,0,H
+2018-09-21,Goias,Ponte Preta,2,2,D
+2018-09-21,CRB,Coritiba,1,1,D
+2018-09-21,Sao Bento,BOA,0,0,D
+2018-09-22,Fortaleza EC,Vila Nova,2,0,H
+2018-09-22,Brasil DE Pelotas,Oeste,1,3,A
+2018-09-22,Paysandu,Criciuma,1,1,D
+2018-09-22,Guarani Campinas,CSA,1,0,H
+2018-09-23,Avai,Sampaio Correa,3,1,H
+2018-09-25,Fortaleza EC,Sao Bento,2,1,H
+2018-09-26,Ponte Preta,Brasil DE Pelotas,0,1,A
+2018-09-27,Juventude,Londrina,0,0,D
+2018-09-28,Paysandu,Goias,2,3,A
+2018-09-29,Vila Nova,Guarani Campinas,1,1,D
+2018-09-29,Figueirense,Atletico Goianiense,2,2,D
+2018-09-29,Oeste,Sampaio Correa,0,0,D
+2018-09-29,CRB,CSA,0,0,D
+2018-09-29,Coritiba,Avai,1,0,H
+2018-09-30,BOA,Criciuma,1,2,A
+2018-10-02,Sampaio Correa,Figueirense,1,0,H
+2018-10-02,Criciuma,Oeste,0,0,D
+2018-10-02,Goias,Londrina,0,0,D
+2018-10-03,CSA,Paysandu,1,0,H
+2018-10-05,Sao Bento,Guarani Campinas,1,0,H
+2018-10-05,Brasil DE Pelotas,Fortaleza EC,0,1,A
+2018-10-05,Avai,BOA,2,0,H
+2018-10-06,Coritiba,Juventude,2,1,H
+2018-10-06,Atletico Goianiense,Vila Nova,2,2,D
+2018-10-06,Ponte Preta,CRB,1,0,H
+2018-10-09,Paysandu,CRB,1,1,D
+2018-10-10,Criciuma,Brasil DE Pelotas,0,1,A
+2018-10-12,Juventude,Goias,3,5,A
+2018-10-12,Atletico Goianiense,Sampaio Correa,1,2,A
+2018-10-13,CSA,Ponte Preta,1,2,A
+2018-10-13,Guarani Campinas,Avai,1,2,A
+2018-10-13,Vila Nova,BOA,2,0,H
+2018-10-13,Oeste,Fortaleza EC,0,0,D
+2018-10-13,Figueirense,Coritiba,2,2,D
+2018-10-14,Londrina,Sao Bento,2,1,H
+2018-10-16,Coritiba,CSA,1,1,D
+2018-10-17,Brasil DE Pelotas,Atletico Goianiense,1,2,A
+2018-10-19,CRB,Goias,2,0,H
+2018-10-19,Sao Bento,Criciuma,0,0,D
+2018-10-20,Ponte Preta,Figueirense,2,1,H
+2018-10-20,Vila Nova,Juventude,1,0,H
+2018-10-20,Avai,Oeste,1,1,D
+2018-10-20,BOA,Guarani Campinas,2,1,H
+2018-10-20,Fortaleza EC,Paysandu,1,0,H
+2018-10-21,Sampaio Correa,Londrina,1,2,A
+2018-10-23,CSA,Brasil DE Pelotas,2,0,H
+2018-10-26,Londrina,Vila Nova,3,2,H
+2018-10-26,Juventude,Sampaio Correa,1,0,H
+2018-10-26,Fortaleza EC,Ponte Preta,1,1,D
+2018-10-27,Goias,Avai,0,3,A
+2018-10-27,Figueirense,Criciuma,3,2,H
+2018-10-27,Guarani Campinas,Oeste,1,1,D
+2018-10-27,BOA,Atletico Goianiense,0,2,A
+2018-10-27,Sao Bento,CRB,1,0,H
+2018-10-27,Paysandu,Coritiba,1,1,D
+2018-11-01,Criciuma,Goias,2,2,D
+2018-11-02,Juventude,Brasil DE Pelotas,0,1,A
+2018-11-02,Ponte Preta,Sao Bento,2,1,H
+2018-11-02,Vila Nova,Paysandu,0,0,D
+2018-11-02,Oeste,Figueirense,0,0,D
+2018-11-03,Sampaio Correa,CSA,2,3,A
+2018-11-03,Avai,Londrina,1,1,D
+2018-11-03,CRB,BOA,2,1,H
+2018-11-03,Atletico Goianiense,Fortaleza EC,1,2,A
+2018-11-03,Coritiba,Guarani Campinas,0,2,A
+2018-11-05,Goias,Sampaio Correa,1,0,H
+2018-11-06,Brasil DE Pelotas,Vila Nova,5,0,H
+2018-11-06,Atletico Goianiense,Avai,2,2,D
+2018-11-06,Londrina,Criciuma,4,2,H
+2018-11-06,Ponte Preta,BOA,1,0,H
+2018-11-06,Sao Bento,Coritiba,5,2,H
+2018-11-06,Figueirense,Guarani Campinas,0,0,D
+2018-11-06,CRB,Juventude,2,0,H
+2018-11-06,Paysandu,Oeste,4,3,H
+2018-11-06,Fortaleza EC,CSA,1,1,D
+2018-11-09,Vila Nova,Figueirense,3,1,H
+2018-11-09,Juventude,Ponte Preta,0,1,A
+2018-11-09,BOA,Brasil DE Pelotas,0,1,A
+2018-11-09,Coritiba,Goias,1,0,H
+2018-11-10,Criciuma,CRB,3,3,D
+2018-11-10,Oeste,Londrina,0,0,D
+2018-11-10,CSA,Atletico Goianiense,0,0,D
+2018-11-10,Avai,Fortaleza EC,0,1,A
+2018-11-10,Sampaio Correa,Sao Bento,2,1,H
+2018-11-10,Guarani Campinas,Paysandu,0,2,A
+2018-11-13,Figueirense,Paysandu,2,3,A
+2018-11-13,Ponte Preta,Coritiba,2,0,H
+2018-11-15,Fortaleza EC,Juventude,4,1,H
+2018-11-16,Atletico Goianiense,Sao Bento,1,0,H
+2018-11-16,Londrina,CRB,1,2,A
+2018-11-17,Brasil DE Pelotas,Guarani Campinas,1,1,D
+2018-11-17,CSA,Avai,0,1,A
+2018-11-17,Sampaio Correa,BOA,1,0,H
+2018-11-17,Vila Nova,Criciuma,2,2,D
+2018-11-17,Oeste,Goias,1,3,A
+2018-11-23,Coritiba,Fortaleza EC,1,0,H
+2018-11-24,Guarani Campinas,Londrina,1,0,H
+2018-11-24,Criciuma,Sampaio Correa,2,0,H
+2018-11-24,Avai,Ponte Preta,0,0,D
+2018-11-24,CRB,Figueirense,2,1,H
+2018-11-24,Paysandu,Atletico Goianiense,2,5,A
+2018-11-24,Goias,Brasil DE Pelotas,0,1,A
+2018-11-24,Juventude,CSA,0,4,A
+2018-11-24,BOA,Oeste,0,0,D
+2018-11-24,Sao Bento,Vila Nova,2,2,D

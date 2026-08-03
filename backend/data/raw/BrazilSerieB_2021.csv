@@ -1,0 +1,381 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2021-05-28,Brasil DE Pelotas,Londrina,0,0,D
+2021-05-28,Guarani Campinas,Vitoria,1,1,D
+2021-05-29,Vila Nova,Botafogo,1,1,D
+2021-05-29,Nautico Recife,CSA,1,0,H
+2021-05-29,Vasco DA Gama,Operario-PR,0,2,A
+2021-05-29,CRB,Remo,2,2,D
+2021-05-29,Confianca,Cruzeiro,3,1,H
+2021-05-29,Coritiba,Avai,2,0,H
+2021-05-30,Brusque,Ponte Preta,2,1,H
+2021-05-31,Sampaio Correa,Goias,0,0,D
+2021-06-01,Operario-PR,Guarani Campinas,2,5,A
+2021-06-04,Goias,Confianca,2,0,H
+2021-06-05,Londrina,Brusque,0,1,A
+2021-06-05,CSA,Sampaio Correa,0,0,D
+2021-06-05,Remo,Brasil DE Pelotas,1,0,H
+2021-06-06,Botafogo,Coritiba,2,0,H
+2021-06-06,Ponte Preta,Vasco DA Gama,1,1,D
+2021-06-06,Cruzeiro,CRB,3,4,A
+2021-06-06,Avai,Vila Nova,1,1,D
+2021-06-07,Vitoria,Nautico Recife,0,1,A
+2021-06-11,Sampaio Correa,Ponte Preta,1,0,H
+2021-06-12,Guarani Campinas,Nautico Recife,1,3,A
+2021-06-12,CRB,Confianca,3,2,H
+2021-06-12,Brasil DE Pelotas,Vasco DA Gama,1,2,A
+2021-06-12,Vila Nova,CSA,1,0,H
+2021-06-13,Cruzeiro,Goias,1,1,D
+2021-06-13,Botafogo,Remo,3,0,H
+2021-06-13,Avai,Brusque,1,2,A
+2021-06-13,Vitoria,Operario-PR,0,0,D
+2021-06-13,Coritiba,Londrina,1,1,D
+2021-06-15,CSA,Guarani Campinas,1,1,D
+2021-06-15,Nautico Recife,Vila Nova,2,0,H
+2021-06-16,Goias,CRB,1,0,H
+2021-06-16,Confianca,Brasil DE Pelotas,1,1,D
+2021-06-16,Remo,Vitoria,0,0,D
+2021-06-16,Operario-PR,Sampaio Correa,1,0,H
+2021-06-16,Vasco DA Gama,Avai,0,2,A
+2021-06-17,Ponte Preta,Cruzeiro,0,1,A
+2021-06-17,Londrina,Botafogo,2,2,D
+2021-06-19,Brasil DE Pelotas,Goias,2,1,H
+2021-06-19,Vasco DA Gama,CRB,3,0,H
+2021-06-19,Guarani Campinas,Ponte Preta,1,0,H
+2021-06-19,Vitoria,Brusque,3,1,H
+2021-06-19,Operario-PR,Cruzeiro,2,1,H
+2021-06-20,Vila Nova,Coritiba,0,1,A
+2021-06-20,Sampaio Correa,Confianca,3,1,H
+2021-06-20,Nautico Recife,Botafogo,3,1,H
+2021-06-20,CSA,Londrina,1,0,H
+2021-06-22,Brusque,Sampaio Correa,0,0,D
+2021-06-22,Confianca,Vila Nova,1,0,H
+2021-06-22,Ponte Preta,Operario-PR,0,0,D
+2021-06-22,Goias,Avai,3,0,H
+2021-06-23,CRB,Brasil DE Pelotas,2,1,H
+2021-06-23,Coritiba,Vitoria,1,0,H
+2021-06-23,Remo,Guarani Campinas,0,0,D
+2021-06-23,Londrina,Nautico Recife,0,0,D
+2021-06-25,Cruzeiro,Vasco DA Gama,2,1,H
+2021-06-25,Avai,CRB,1,0,H
+2021-06-25,Guarani Campinas,Coritiba,0,2,A
+2021-06-25,Brasil DE Pelotas,Ponte Preta,1,1,D
+2021-06-26,Vila Nova,Goias,0,0,D
+2021-06-26,Operario-PR,Confianca,0,0,D
+2021-06-26,Sampaio Correa,Botafogo,2,0,H
+2021-06-26,Vitoria,Londrina,1,2,A
+2021-06-27,Nautico Recife,Remo,1,1,D
+2021-06-27,CSA,Cruzeiro,2,1,H
+2021-06-28,Vasco DA Gama,Brusque,2,1,H
+2021-06-28,Operario-PR,Vila Nova,1,2,A
+2021-06-29,Confianca,Coritiba,0,1,A
+2021-06-30,CRB,Nautico Recife,1,1,D
+2021-06-30,Remo,Sampaio Correa,0,2,A
+2021-06-30,Ponte Preta,CSA,2,1,H
+2021-06-30,Brusque,Brasil DE Pelotas,1,0,H
+2021-06-30,Cruzeiro,Guarani Campinas,3,3,D
+2021-06-30,Londrina,Avai,1,3,A
+2021-06-30,Goias,Vasco DA Gama,1,0,H
+2021-07-01,Botafogo,Vitoria,1,0,H
+2021-07-02,Coritiba,Remo,2,1,H
+2021-07-02,Nautico Recife,Operario-PR,5,0,H
+2021-07-03,Vasco DA Gama,Confianca,1,0,H
+2021-07-03,CSA,CRB,0,1,A
+2021-07-03,Brasil DE Pelotas,Cruzeiro,0,0,D
+2021-07-03,Sampaio Correa,Londrina,1,0,H
+2021-07-04,Avai,Botafogo,1,1,D
+2021-07-04,Vitoria,Goias,1,1,D
+2021-07-04,Vila Nova,Ponte Preta,0,0,D
+2021-07-04,Guarani Campinas,Brusque,4,1,H
+2021-07-06,Cruzeiro,Coritiba,0,0,D
+2021-07-06,Ponte Preta,Avai,0,0,D
+2021-07-07,CRB,Botafogo,2,1,H
+2021-07-09,Remo,Vila Nova,0,1,A
+2021-07-09,Vasco DA Gama,Sampaio Correa,1,0,H
+2021-07-09,Londrina,Guarani Campinas,0,1,A
+2021-07-10,Goias,Nautico Recife,0,1,A
+2021-07-10,Operario-PR,Brasil DE Pelotas,2,1,H
+2021-07-10,Botafogo,Cruzeiro,3,3,D
+2021-07-10,Confianca,Vitoria,1,1,D
+2021-07-11,Brusque,CSA,2,3,A
+2021-07-12,Nautico Recife,Ponte Preta,1,1,D
+2021-07-13,Vila Nova,Brasil DE Pelotas,0,0,D
+2021-07-13,Guarani Campinas,CRB,1,0,H
+2021-07-13,Avai,Confianca,2,1,H
+2021-07-14,Vitoria,Sampaio Correa,2,2,D
+2021-07-14,Coritiba,Vasco DA Gama,1,1,D
+2021-07-14,Londrina,Operario-PR,1,2,A
+2021-07-14,CSA,Goias,0,1,A
+2021-07-15,Remo,Brusque,2,1,H
+2021-07-16,Confianca,Guarani Campinas,1,4,A
+2021-07-17,Sampaio Correa,Coritiba,2,3,A
+2021-07-17,Brasil DE Pelotas,Vitoria,1,0,H
+2021-07-17,Goias,Londrina,0,0,D
+2021-07-17,Cruzeiro,Avai,0,3,A
+2021-07-17,Ponte Preta,Remo,1,2,A
+2021-07-17,Brusque,Botafogo,2,1,H
+2021-07-17,Operario-PR,CSA,0,2,A
+2021-07-18,Vasco DA Gama,Nautico Recife,1,1,D
+2021-07-18,CRB,Vila Nova,2,1,H
+2021-07-20,Botafogo,Goias,0,2,A
+2021-07-20,Guarani Campinas,Sampaio Correa,0,0,D
+2021-07-20,Londrina,Confianca,0,0,D
+2021-07-20,Remo,Cruzeiro,1,0,H
+2021-07-21,Vitoria,Ponte Preta,1,0,H
+2021-07-21,Vila Nova,Brusque,0,1,A
+2021-07-22,CSA,Vasco DA Gama,2,2,D
+2021-07-22,Nautico Recife,Brasil DE Pelotas,2,1,H
+2021-07-22,Coritiba,CRB,1,1,D
+2021-07-23,Avai,Operario-PR,1,0,H
+2021-07-23,Londrina,Remo,1,0,H
+2021-07-23,Ponte Preta,Goias,2,1,H
+2021-07-24,Vila Nova,Cruzeiro,0,0,D
+2021-07-24,Confianca,Botafogo,0,1,A
+2021-07-24,Nautico Recife,Brusque,1,1,D
+2021-07-25,Vasco DA Gama,Guarani Campinas,4,1,H
+2021-07-25,CSA,Vitoria,2,1,H
+2021-07-25,Operario-PR,Coritiba,1,0,H
+2021-07-25,Avai,Brasil DE Pelotas,1,1,D
+2021-07-25,Sampaio Correa,CRB,2,3,A
+2021-07-28,Botafogo,CSA,2,0,H
+2021-07-28,Avai,Remo,1,0,H
+2021-07-30,Goias,Operario-PR,1,0,H
+2021-07-30,Coritiba,Nautico Recife,3,1,H
+2021-07-31,Cruzeiro,Londrina,2,2,D
+2021-07-31,Guarani Campinas,Vila Nova,1,4,A
+2021-07-31,Vitoria,Avai,0,0,D
+2021-07-31,Brasil DE Pelotas,Sampaio Correa,1,2,A
+2021-08-01,Botafogo,Vasco DA Gama,2,0,H
+2021-08-01,Brusque,Confianca,3,0,H
+2021-08-01,CRB,Ponte Preta,1,1,D
+2021-08-01,Remo,CSA,1,0,H
+2021-08-03,Brusque,Coritiba,0,0,D
+2021-08-06,Remo,Operario-PR,0,1,A
+2021-08-06,Guarani Campinas,Brasil DE Pelotas,2,0,H
+2021-08-06,Coritiba,Goias,1,1,D
+2021-08-07,Brusque,Cruzeiro,1,2,A
+2021-08-07,Nautico Recife,Confianca,0,4,A
+2021-08-07,CSA,Avai,0,0,D
+2021-08-07,Vitoria,Vasco DA Gama,0,1,A
+2021-08-08,Vila Nova,Sampaio Correa,0,2,A
+2021-08-08,Botafogo,Ponte Preta,2,0,H
+2021-08-08,Londrina,CRB,0,2,A
+2021-08-10,Avai,Guarani Campinas,0,1,A
+2021-08-10,Confianca,CSA,0,2,A
+2021-08-11,Vasco DA Gama,Vila Nova,1,0,H
+2021-08-11,Goias,Remo,1,1,D
+2021-08-11,Brasil DE Pelotas,Coritiba,0,2,A
+2021-08-11,Cruzeiro,Vitoria,2,2,D
+2021-08-11,Ponte Preta,Londrina,2,1,H
+2021-08-12,Sampaio Correa,Nautico Recife,2,0,H
+2021-08-12,CRB,Brusque,3,0,H
+2021-08-13,Operario-PR,Botafogo,1,0,H
+2021-08-13,Goias,Guarani Campinas,2,1,H
+2021-08-14,Remo,Vasco DA Gama,2,1,H
+2021-08-14,Cruzeiro,Sampaio Correa,1,1,D
+2021-08-14,Ponte Preta,Confianca,4,2,H
+2021-08-14,CSA,Coritiba,3,0,H
+2021-08-14,Avai,Nautico Recife,2,0,H
+2021-08-15,Londrina,Vila Nova,1,0,H
+2021-08-15,Vitoria,CRB,1,1,D
+2021-08-15,Botafogo,Brasil DE Pelotas,1,0,H
+2021-08-15,Operario-PR,Brusque,1,1,D
+2021-08-17,Nautico Recife,Cruzeiro,0,1,A
+2021-08-17,Confianca,Remo,1,2,A
+2021-08-18,Coritiba,Ponte Preta,2,0,H
+2021-08-18,Sampaio Correa,Avai,0,2,A
+2021-08-18,Guarani Campinas,Botafogo,1,1,D
+2021-08-18,Vila Nova,Vitoria,0,0,D
+2021-08-19,Vasco DA Gama,Londrina,1,2,A
+2021-08-19,CRB,Operario-PR,0,0,D
+2021-08-19,Brusque,Goias,0,1,A
+2021-08-20,Brasil DE Pelotas,CSA,0,1,A
+2021-08-20,Avai,Coritiba,1,2,A
+2021-08-21,Cruzeiro,Confianca,1,0,H
+2021-08-21,Vitoria,Guarani Campinas,1,0,H
+2021-08-21,Operario-PR,Vasco DA Gama,2,0,H
+2021-08-22,Remo,CRB,1,2,A
+2021-08-22,Botafogo,Vila Nova,3,2,H
+2021-08-22,Goias,Sampaio Correa,2,2,D
+2021-08-22,Londrina,Brasil DE Pelotas,0,0,D
+2021-08-22,Ponte Preta,Brusque,3,0,H
+2021-08-24,Guarani Campinas,Operario-PR,3,0,H
+2021-08-25,CSA,Nautico Recife,0,1,A
+2021-08-25,Vila Nova,Avai,1,0,H
+2021-08-26,Confianca,Goias,1,2,A
+2021-08-27,Brasil DE Pelotas,Remo,1,1,D
+2021-08-28,Coritiba,Botafogo,0,1,A
+2021-08-28,Brusque,Londrina,0,0,D
+2021-08-29,Sampaio Correa,CSA,2,0,H
+2021-08-29,Vasco DA Gama,Ponte Preta,2,0,H
+2021-08-29,CRB,Cruzeiro,0,0,D
+2021-08-29,Nautico Recife,Vitoria,1,1,D
+2021-09-01,Confianca,CRB,1,2,A
+2021-09-02,Londrina,Coritiba,2,3,A
+2021-09-03,Vasco DA Gama,Brasil DE Pelotas,1,1,D
+2021-09-03,Ponte Preta,Sampaio Correa,3,2,H
+2021-09-03,Brusque,Avai,0,0,D
+2021-09-04,CSA,Vila Nova,1,1,D
+2021-09-04,Operario-PR,Vitoria,0,1,A
+2021-09-04,Nautico Recife,Guarani Campinas,1,1,D
+2021-09-04,Remo,Botafogo,0,1,A
+2021-09-06,Avai,Vasco DA Gama,3,1,H
+2021-09-07,Brasil DE Pelotas,Confianca,1,1,D
+2021-09-07,Guarani Campinas,CSA,1,0,H
+2021-09-07,Coritiba,Brusque,4,0,H
+2021-09-08,Goias,Cruzeiro,1,1,D
+2021-09-10,Vitoria,Remo,1,2,A
+2021-09-11,Vila Nova,Nautico Recife,1,0,H
+2021-09-11,Cruzeiro,Ponte Preta,1,0,H
+2021-09-11,Botafogo,Londrina,4,0,H
+2021-09-11,Sampaio Correa,Operario-PR,0,0,D
+2021-09-12,CRB,Goias,0,1,A
+2021-09-16,Cruzeiro,Operario-PR,1,1,D
+2021-09-16,CRB,Vasco DA Gama,1,1,D
+2021-09-17,Remo,Avai,2,1,H
+2021-09-17,Brusque,Vitoria,0,0,D
+2021-09-17,Coritiba,Vila Nova,1,0,H
+2021-09-17,Confianca,Sampaio Correa,2,0,H
+2021-09-18,Ponte Preta,Guarani Campinas,0,0,D
+2021-09-18,Botafogo,Nautico Recife,3,1,H
+2021-09-18,Londrina,CSA,0,2,A
+2021-09-18,Goias,Brasil DE Pelotas,2,1,H
+2021-09-19,Vasco DA Gama,Cruzeiro,1,1,D
+2021-09-21,Guarani Campinas,Remo,2,0,H
+2021-09-21,Brasil DE Pelotas,CRB,0,1,A
+2021-09-21,Avai,Goias,1,0,H
+2021-09-21,Sampaio Correa,Brusque,2,2,D
+2021-09-22,Vila Nova,Confianca,0,0,D
+2021-09-22,Nautico Recife,Londrina,1,2,A
+2021-09-22,Vitoria,Coritiba,0,0,D
+2021-09-23,Operario-PR,Ponte Preta,1,2,A
+2021-09-23,CSA,Botafogo,2,0,H
+2021-09-24,Goias,Vila Nova,1,2,A
+2021-09-24,Remo,Nautico Recife,1,0,H
+2021-09-25,Brusque,Vasco DA Gama,0,1,A
+2021-09-25,Londrina,Vitoria,1,0,H
+2021-09-25,Confianca,Operario-PR,1,0,H
+2021-09-25,CRB,Avai,1,2,A
+2021-09-26,Coritiba,Guarani Campinas,1,0,H
+2021-09-26,Cruzeiro,CSA,1,2,A
+2021-09-26,Botafogo,Sampaio Correa,2,0,H
+2021-09-26,Ponte Preta,Brasil DE Pelotas,1,0,H
+2021-09-27,Vasco DA Gama,Goias,2,0,H
+2021-09-28,Avai,Londrina,2,0,H
+2021-09-28,Nautico Recife,CRB,1,3,A
+2021-09-29,Vila Nova,Operario-PR,2,1,H
+2021-09-29,Coritiba,Confianca,1,1,D
+2021-09-29,Guarani Campinas,Cruzeiro,1,1,D
+2021-09-29,Brasil DE Pelotas,Brusque,0,2,A
+2021-09-30,Vitoria,Botafogo,0,0,D
+2021-09-30,CSA,Ponte Preta,2,1,H
+2021-10-01,Sampaio Correa,Remo,1,1,D
+2021-10-02,Operario-PR,Nautico Recife,1,2,A
+2021-10-02,Goias,Vitoria,3,0,H
+2021-10-02,Brusque,Guarani Campinas,2,0,H
+2021-10-02,CRB,CSA,0,0,D
+2021-10-02,Botafogo,Avai,1,2,A
+2021-10-03,Ponte Preta,Vila Nova,1,1,D
+2021-10-03,Cruzeiro,Brasil DE Pelotas,2,0,H
+2021-10-03,Confianca,Vasco DA Gama,1,2,A
+2021-10-03,Londrina,Sampaio Correa,3,1,H
+2021-10-04,Remo,Coritiba,0,0,D
+2021-10-05,Avai,Ponte Preta,1,1,D
+2021-10-06,Nautico Recife,Goias,3,2,H
+2021-10-06,Brasil DE Pelotas,Operario-PR,1,0,H
+2021-10-08,Botafogo,CRB,2,0,H
+2021-10-08,Vila Nova,Remo,1,0,H
+2021-10-09,Coritiba,Cruzeiro,0,3,A
+2021-10-09,Guarani Campinas,Londrina,3,0,H
+2021-10-09,Vitoria,Confianca,0,1,A
+2021-10-10,CSA,Brusque,4,1,H
+2021-10-10,Sampaio Correa,Vasco DA Gama,1,0,H
+2021-10-12,Sampaio Correa,Vitoria,0,1,A
+2021-10-13,Cruzeiro,Botafogo,0,0,D
+2021-10-15,Brusque,Remo,3,1,H
+2021-10-15,CRB,Guarani Campinas,2,2,D
+2021-10-16,Goias,CSA,3,1,H
+2021-10-16,Brasil DE Pelotas,Vila Nova,2,2,D
+2021-10-16,Ponte Preta,Nautico Recife,2,3,A
+2021-10-16,Vasco DA Gama,Coritiba,2,1,H
+2021-10-16,Operario-PR,Londrina,0,0,D
+2021-10-17,Confianca,Avai,3,1,H
+2021-10-18,Vila Nova,CRB,0,0,D
+2021-10-19,Londrina,Goias,0,0,D
+2021-10-20,Coritiba,Sampaio Correa,3,0,H
+2021-10-20,Botafogo,Brusque,3,0,H
+2021-10-22,Guarani Campinas,Confianca,1,2,A
+2021-10-23,Avai,Cruzeiro,1,0,H
+2021-10-23,Vitoria,Brasil DE Pelotas,4,0,H
+2021-10-23,CSA,Operario-PR,2,4,A
+2021-10-24,Nautico Recife,Vasco DA Gama,2,2,D
+2021-10-24,Remo,Ponte Preta,0,1,A
+2021-10-24,Brusque,Vila Nova,2,3,A
+2021-10-26,CRB,Coritiba,1,1,D
+2021-10-27,Goias,Botafogo,1,1,D
+2021-10-28,Sampaio Correa,Guarani Campinas,0,1,A
+2021-10-29,Cruzeiro,Remo,1,3,A
+2021-10-29,Brasil DE Pelotas,Nautico Recife,3,2,H
+2021-10-29,Operario-PR,Avai,2,1,H
+2021-10-30,Vasco DA Gama,CSA,1,3,A
+2021-10-30,Ponte Preta,Vitoria,0,0,D
+2021-10-30,Confianca,Londrina,0,2,A
+2021-10-31,Cruzeiro,Vila Nova,1,1,D
+2021-11-02,Vitoria,CSA,0,1,A
+2021-11-02,Brasil DE Pelotas,Avai,0,1,A
+2021-11-02,Remo,Londrina,0,1,A
+2021-11-02,Brusque,Nautico Recife,4,3,H
+2021-11-03,Goias,Ponte Preta,2,2,D
+2021-11-03,Coritiba,Operario-PR,3,1,H
+2021-11-03,Botafogo,Confianca,1,0,H
+2021-11-04,Guarani Campinas,Vasco DA Gama,1,0,H
+2021-11-05,CRB,Sampaio Correa,1,0,H
+2021-11-05,CSA,Remo,2,0,H
+2021-11-05,Avai,Vitoria,1,1,D
+2021-11-06,Londrina,Cruzeiro,0,1,A
+2021-11-06,Nautico Recife,Coritiba,2,1,H
+2021-11-06,Operario-PR,Goias,1,1,D
+2021-11-06,Confianca,Brusque,3,2,H
+2021-11-07,Vasco DA Gama,Botafogo,0,4,A
+2021-11-07,Vila Nova,Guarani Campinas,2,2,D
+2021-11-07,Sampaio Correa,Brasil DE Pelotas,2,1,H
+2021-11-07,Ponte Preta,CRB,1,0,H
+2021-11-08,Avai,CSA,1,1,D
+2021-11-09,Operario-PR,Remo,2,1,H
+2021-11-09,Confianca,Nautico Recife,0,0,D
+2021-11-10,Cruzeiro,Brusque,2,0,H
+2021-11-10,Brasil DE Pelotas,Guarani Campinas,0,1,A
+2021-11-11,Vasco DA Gama,Vitoria,0,3,A
+2021-11-11,CRB,Londrina,1,0,H
+2021-11-11,Goias,Coritiba,2,1,H
+2021-11-11,Ponte Preta,Botafogo,0,0,D
+2021-11-11,Sampaio Correa,Vila Nova,3,0,H
+2021-11-13,CSA,Confianca,0,0,D
+2021-11-13,Guarani Campinas,Avai,4,0,H
+2021-11-14,Coritiba,Brasil DE Pelotas,2,1,H
+2021-11-14,Vitoria,Cruzeiro,3,0,H
+2021-11-15,Botafogo,Operario-PR,2,1,H
+2021-11-15,Londrina,Ponte Preta,2,1,H
+2021-11-15,Brusque,CRB,1,0,H
+2021-11-15,Vila Nova,Vasco DA Gama,2,2,D
+2021-11-15,Nautico Recife,Sampaio Correa,2,1,H
+2021-11-15,Remo,Goias,0,1,A
+2021-11-19,Sampaio Correa,Cruzeiro,1,1,D
+2021-11-19,Vasco DA Gama,Remo,2,2,D
+2021-11-19,Brusque,Operario-PR,2,0,H
+2021-11-20,Vila Nova,Londrina,2,1,H
+2021-11-20,Confianca,Ponte Preta,0,1,A
+2021-11-21,Brasil DE Pelotas,Botafogo,0,1,A
+2021-11-21,Coritiba,CSA,0,1,A
+2021-11-21,Nautico Recife,Avai,1,2,A
+2021-11-22,CRB,Vitoria,3,1,H
+2021-11-22,Guarani Campinas,Goias,0,2,A
+2021-11-25,Cruzeiro,Nautico Recife,0,0,D
+2021-11-26,Ponte Preta,Coritiba,3,2,H
+2021-11-28,Botafogo,Guarani Campinas,2,2,D
+2021-11-28,Vitoria,Vila Nova,0,1,A
+2021-11-28,Avai,Sampaio Correa,2,1,H
+2021-11-28,Londrina,Vasco DA Gama,3,0,H
+2021-11-28,CSA,Brasil DE Pelotas,4,0,H
+2021-11-28,Goias,Brusque,2,2,D
+2021-11-28,Remo,Confianca,0,0,D
+2021-11-28,Operario-PR,CRB,2,1,H

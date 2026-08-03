@@ -11,6 +11,8 @@ from typing import List, Optional
 
 from fastapi import APIRouter, Depends, Header, HTTPException, status
 from pydantic import BaseModel, field_validator
+
+from backend.app.display_names import display_name
 from sqlalchemy import text
 from sqlalchemy.orm import Session
 
@@ -98,6 +100,13 @@ class TrackedMatchOut(BaseModel):
     match_id:   int
     home_team:  str
     away_team:  str
+
+    # Same as every other response model: stored key in, club spelling out.
+    @field_validator("home_team", "away_team")
+    @classmethod
+    def _spell_for_the_reader(cls, v: str) -> str:
+        return display_name(v) or v
+
     league:     str
     match_date: str
     tracked_at: str

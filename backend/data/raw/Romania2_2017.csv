@@ -1,0 +1,381 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2017-08-04,ASA Targu Mures,Stiinta Miroslava,2,1,H
+2017-08-05,AFC Hermannstadt,CS Balotesti,3,0,H
+2017-08-05,Chindia Targoviste,Uta Arad,0,1,A
+2017-08-05,Arges Pitesti,Pandurii TG JIU,0,0,D
+2017-08-05,CS Mioveni,CS Afumati,4,0,H
+2017-08-05,Dacia Unirea Braila,FC Politehnica Timisoara,2,3,A
+2017-08-05,Ripensia Timisoara,ACS Foresta Suceava,16,0,H
+2017-08-05,CS Luceafarul Oradea,Sportul Snagov,1,1,D
+2017-08-05,FC Clinceni,Dunarea Calarasi,4,1,H
+2017-08-05,Metaloglobus,Olimpia Satu Mare,0,1,A
+2017-08-11,Stiinta Miroslava,Dacia Unirea Braila,4,4,D
+2017-08-12,Dunarea Calarasi,CS Mioveni,1,1,D
+2017-08-12,Uta Arad,Metaloglobus,0,0,D
+2017-08-12,Pandurii TG JIU,Chindia Targoviste,3,3,D
+2017-08-12,CS Luceafarul Oradea,Ripensia Timisoara,1,2,A
+2017-08-12,Sportul Snagov,CS Balotesti,1,0,H
+2017-08-12,ACS Foresta Suceava,ASA Targu Mures,0,6,A
+2017-08-12,CS Afumati,AFC Hermannstadt,0,1,A
+2017-08-12,Olimpia Satu Mare,FC Clinceni,1,1,D
+2017-08-12,FC Politehnica Timisoara,Arges Pitesti,2,1,H
+2017-08-18,ASA Targu Mures,CS Luceafarul Oradea,3,2,H
+2017-08-18,CS Mioveni,Olimpia Satu Mare,3,0,H
+2017-08-18,Arges Pitesti,Stiinta Miroslava,3,0,H
+2017-08-19,AFC Hermannstadt,Dunarea Calarasi,2,1,H
+2017-08-19,Chindia Targoviste,FC Politehnica Timisoara,2,0,H
+2017-08-19,Dacia Unirea Braila,ACS Foresta Suceava,9,1,H
+2017-08-19,Ripensia Timisoara,Sportul Snagov,2,0,H
+2017-08-19,CS Balotesti,CS Afumati,0,0,D
+2017-08-19,Metaloglobus,Pandurii TG JIU,2,3,A
+2017-08-19,FC Clinceni,Uta Arad,0,3,A
+2017-08-22,Ripensia Timisoara,ASA Targu Mures,3,2,H
+2017-08-23,Dunarea Calarasi,CS Balotesti,2,1,H
+2017-08-23,Uta Arad,CS Mioveni,1,1,D
+2017-08-23,Pandurii TG JIU,FC Clinceni,1,2,A
+2017-08-23,CS Luceafarul Oradea,Dacia Unirea Braila,3,4,A
+2017-08-23,Sportul Snagov,CS Afumati,2,0,H
+2017-08-23,FC Politehnica Timisoara,Metaloglobus,0,2,A
+2017-08-23,ACS Foresta Suceava,Arges Pitesti,0,2,A
+2017-08-23,Olimpia Satu Mare,AFC Hermannstadt,2,0,H
+2017-08-23,Stiinta Miroslava,Chindia Targoviste,0,9,A
+2017-08-26,Chindia Targoviste,ACS Foresta Suceava,6,0,H
+2017-08-26,ASA Targu Mures,Sportul Snagov,1,1,D
+2017-08-26,Arges Pitesti,CS Luceafarul Oradea,3,0,H
+2017-08-26,Dacia Unirea Braila,Ripensia Timisoara,2,2,D
+2017-08-26,CS Balotesti,Olimpia Satu Mare,2,0,H
+2017-08-26,FC Clinceni,FC Politehnica Timisoara,2,3,A
+2017-08-26,Metaloglobus,Stiinta Miroslava,1,2,A
+2017-08-26,CS Afumati,Dunarea Calarasi,0,1,A
+2017-08-26,AFC Hermannstadt,Uta Arad,2,0,H
+2017-08-28,CS Mioveni,Pandurii TG JIU,0,4,A
+2017-09-01,ASA Targu Mures,Dacia Unirea Braila,2,1,H
+2017-09-02,Uta Arad,CS Balotesti,2,2,D
+2017-09-02,Ripensia Timisoara,Arges Pitesti,1,1,D
+2017-09-02,CS Luceafarul Oradea,Chindia Targoviste,2,1,H
+2017-09-02,Sportul Snagov,Dunarea Calarasi,0,1,A
+2017-09-02,ACS Foresta Suceava,Metaloglobus,1,1,D
+2017-09-02,Olimpia Satu Mare,CS Afumati,0,2,A
+2017-09-02,Stiinta Miroslava,FC Clinceni,1,2,A
+2017-09-02,FC Politehnica Timisoara,CS Mioveni,1,0,H
+2017-09-03,Pandurii TG JIU,AFC Hermannstadt,1,3,A
+2017-09-08,Arges Pitesti,ASA Targu Mures,1,2,A
+2017-09-09,Dunarea Calarasi,Olimpia Satu Mare,5,1,H
+2017-09-09,Chindia Targoviste,Ripensia Timisoara,1,0,H
+2017-09-09,CS Mioveni,Stiinta Miroslava,5,1,H
+2017-09-09,Dacia Unirea Braila,Sportul Snagov,0,1,A
+2017-09-09,CS Balotesti,Pandurii TG JIU,0,2,A
+2017-09-09,FC Clinceni,ACS Foresta Suceava,2,0,H
+2017-09-09,Metaloglobus,CS Luceafarul Oradea,1,0,H
+2017-09-09,CS Afumati,Uta Arad,2,0,H
+2017-09-09,AFC Hermannstadt,FC Politehnica Timisoara,1,0,H
+2017-09-16,Pandurii TG JIU,CS Afumati,1,1,D
+2017-09-16,Ripensia Timisoara,Metaloglobus,4,1,H
+2017-09-16,CS Luceafarul Oradea,FC Clinceni,1,1,D
+2017-09-16,Sportul Snagov,Olimpia Satu Mare,2,0,H
+2017-09-16,ACS Foresta Suceava,CS Mioveni,2,0,H
+2017-09-16,Stiinta Miroslava,AFC Hermannstadt,1,3,A
+2017-09-16,Dacia Unirea Braila,Arges Pitesti,3,1,H
+2017-09-16,Uta Arad,Dunarea Calarasi,0,1,A
+2017-09-16,FC Politehnica Timisoara,CS Balotesti,2,2,D
+2017-09-18,ASA Targu Mures,Chindia Targoviste,0,0,D
+2017-09-23,AFC Hermannstadt,ACS Foresta Suceava,2,0,H
+2017-09-23,Dunarea Calarasi,Pandurii TG JIU,3,1,H
+2017-09-23,Arges Pitesti,Sportul Snagov,1,0,H
+2017-09-23,CS Mioveni,CS Luceafarul Oradea,3,2,H
+2017-09-23,CS Balotesti,Stiinta Miroslava,1,2,A
+2017-09-23,FC Clinceni,Ripensia Timisoara,2,1,H
+2017-09-23,Metaloglobus,ASA Targu Mures,4,0,H
+2017-09-23,CS Afumati,FC Politehnica Timisoara,2,1,H
+2017-09-23,Olimpia Satu Mare,Uta Arad,1,0,H
+2017-09-24,Chindia Targoviste,Dacia Unirea Braila,2,0,H
+2017-09-28,ASA Targu Mures,FC Clinceni,1,1,D
+2017-09-30,Pandurii TG JIU,Olimpia Satu Mare,0,1,A
+2017-09-30,Arges Pitesti,Chindia Targoviste,0,0,D
+2017-09-30,Dacia Unirea Braila,Metaloglobus,2,1,H
+2017-09-30,Ripensia Timisoara,CS Mioveni,0,1,A
+2017-09-30,CS Luceafarul Oradea,AFC Hermannstadt,0,0,D
+2017-09-30,Sportul Snagov,Uta Arad,0,0,D
+2017-09-30,ACS Foresta Suceava,CS Balotesti,2,1,H
+2017-09-30,Stiinta Miroslava,CS Afumati,0,0,D
+2017-09-30,FC Politehnica Timisoara,Dunarea Calarasi,0,1,A
+2017-10-07,Dunarea Calarasi,Stiinta Miroslava,6,0,H
+2017-10-07,Chindia Targoviste,Sportul Snagov,1,0,H
+2017-10-07,CS Balotesti,CS Luceafarul Oradea,2,2,D
+2017-10-07,FC Clinceni,Dacia Unirea Braila,2,1,H
+2017-10-07,Metaloglobus,Arges Pitesti,1,1,D
+2017-10-07,CS Afumati,ACS Foresta Suceava,2,2,D
+2017-10-07,Olimpia Satu Mare,FC Politehnica Timisoara,0,2,A
+2017-10-07,AFC Hermannstadt,Ripensia Timisoara,2,0,H
+2017-10-08,Uta Arad,Pandurii TG JIU,2,2,D
+2017-10-09,CS Mioveni,ASA Targu Mures,2,1,H
+2017-10-14,Chindia Targoviste,Metaloglobus,3,0,H
+2017-10-14,Arges Pitesti,FC Clinceni,1,1,D
+2017-10-14,Dacia Unirea Braila,CS Mioveni,2,2,D
+2017-10-14,Ripensia Timisoara,CS Balotesti,1,2,A
+2017-10-14,CS Luceafarul Oradea,CS Afumati,1,2,A
+2017-10-14,Sportul Snagov,Pandurii TG JIU,0,0,D
+2017-10-14,ACS Foresta Suceava,Dunarea Calarasi,0,2,A
+2017-10-14,Stiinta Miroslava,Olimpia Satu Mare,2,1,H
+2017-10-15,FC Politehnica Timisoara,Uta Arad,2,1,H
+2017-10-17,ASA Targu Mures,AFC Hermannstadt,2,2,D
+2017-10-21,Dunarea Calarasi,CS Luceafarul Oradea,1,0,H
+2017-10-21,Uta Arad,Stiinta Miroslava,3,0,H
+2017-10-21,Pandurii TG JIU,FC Politehnica Timisoara,1,1,D
+2017-10-21,CS Balotesti,ASA Targu Mures,2,6,A
+2017-10-21,FC Clinceni,Chindia Targoviste,0,2,A
+2017-10-21,Metaloglobus,Sportul Snagov,2,1,H
+2017-10-21,CS Afumati,Ripensia Timisoara,2,0,H
+2017-10-21,Olimpia Satu Mare,ACS Foresta Suceava,2,0,H
+2017-10-21,CS Mioveni,Arges Pitesti,0,0,D
+2017-10-22,AFC Hermannstadt,Dacia Unirea Braila,3,2,H
+2017-10-28,ASA Targu Mures,CS Afumati,0,1,A
+2017-10-28,Dacia Unirea Braila,CS Balotesti,2,2,D
+2017-10-28,CS Luceafarul Oradea,Olimpia Satu Mare,2,1,H
+2017-10-28,Metaloglobus,FC Clinceni,0,0,D
+2017-10-28,Sportul Snagov,FC Politehnica Timisoara,1,0,H
+2017-10-28,ACS Foresta Suceava,Uta Arad,2,3,A
+2017-10-28,Stiinta Miroslava,Pandurii TG JIU,1,1,D
+2017-10-28,Ripensia Timisoara,Dunarea Calarasi,1,1,D
+2017-10-28,Arges Pitesti,AFC Hermannstadt,0,0,D
+2017-10-29,Chindia Targoviste,CS Mioveni,3,0,H
+2017-11-04,Uta Arad,CS Luceafarul Oradea,2,3,A
+2017-11-04,Pandurii TG JIU,ACS Foresta Suceava,0,1,A
+2017-11-04,CS Mioveni,Metaloglobus,0,1,A
+2017-11-04,CS Balotesti,Arges Pitesti,1,0,H
+2017-11-04,FC Clinceni,Sportul Snagov,2,1,H
+2017-11-04,CS Afumati,Dacia Unirea Braila,2,0,H
+2017-11-04,Olimpia Satu Mare,Ripensia Timisoara,1,1,D
+2017-11-04,Dunarea Calarasi,ASA Targu Mures,3,0,H
+2017-11-04,FC Politehnica Timisoara,Stiinta Miroslava,1,0,H
+2017-11-05,AFC Hermannstadt,Chindia Targoviste,0,0,D
+2017-11-08,Chindia Targoviste,CS Balotesti,4,1,H
+2017-11-08,ASA Targu Mures,Olimpia Satu Mare,4,2,H
+2017-11-08,Arges Pitesti,CS Afumati,2,1,H
+2017-11-08,Dacia Unirea Braila,Dunarea Calarasi,1,1,D
+2017-11-08,CS Luceafarul Oradea,Pandurii TG JIU,3,1,H
+2017-11-08,FC Clinceni,CS Mioveni,3,1,H
+2017-11-08,Metaloglobus,AFC Hermannstadt,0,3,A
+2017-11-08,Sportul Snagov,Stiinta Miroslava,1,0,H
+2017-11-08,ACS Foresta Suceava,FC Politehnica Timisoara,2,2,D
+2017-11-08,Ripensia Timisoara,Uta Arad,1,1,D
+2017-11-11,Uta Arad,ASA Targu Mures,1,2,A
+2017-11-11,Pandurii TG JIU,Ripensia Timisoara,1,1,D
+2017-11-11,CS Balotesti,Metaloglobus,2,0,H
+2017-11-11,CS Afumati,Chindia Targoviste,0,0,D
+2017-11-11,Olimpia Satu Mare,Dacia Unirea Braila,3,2,H
+2017-11-11,Stiinta Miroslava,ACS Foresta Suceava,0,1,A
+2017-11-11,CS Mioveni,Sportul Snagov,2,2,D
+2017-11-12,Dunarea Calarasi,Arges Pitesti,2,1,H
+2017-11-12,AFC Hermannstadt,FC Clinceni,2,0,H
+2017-11-12,FC Politehnica Timisoara,CS Luceafarul Oradea,2,0,H
+2017-11-18,ASA Targu Mures,Pandurii TG JIU,4,1,H
+2017-11-18,Dacia Unirea Braila,Uta Arad,3,4,A
+2017-11-18,Ripensia Timisoara,FC Politehnica Timisoara,0,2,A
+2017-11-18,CS Luceafarul Oradea,Stiinta Miroslava,1,1,D
+2017-11-18,Metaloglobus,CS Afumati,0,3,A
+2017-11-18,Sportul Snagov,ACS Foresta Suceava,2,0,H
+2017-11-18,Chindia Targoviste,Dunarea Calarasi,2,2,D
+2017-11-18,Arges Pitesti,Olimpia Satu Mare,2,1,H
+2017-11-19,FC Clinceni,CS Balotesti,5,2,H
+2017-11-20,CS Mioveni,AFC Hermannstadt,1,1,D
+2017-11-24,Stiinta Miroslava,Ripensia Timisoara,3,0,H
+2017-11-25,Uta Arad,Arges Pitesti,0,1,A
+2017-11-25,Pandurii TG JIU,Dacia Unirea Braila,3,3,D
+2017-11-25,ACS Foresta Suceava,CS Luceafarul Oradea,3,0,H
+2017-11-25,CS Afumati,FC Clinceni,1,0,H
+2017-11-25,Olimpia Satu Mare,Chindia Targoviste,1,3,A
+2017-11-25,Dunarea Calarasi,Metaloglobus,1,0,H
+2017-11-25,FC Politehnica Timisoara,ASA Targu Mures,3,0,H
+2017-11-25,AFC Hermannstadt,Sportul Snagov,2,0,H
+2017-11-26,CS Balotesti,CS Mioveni,0,3,A
+2017-12-02,Pandurii TG JIU,Arges Pitesti,1,5,A
+2017-12-02,Sportul Snagov,CS Luceafarul Oradea,0,3,A
+2017-12-02,FC Politehnica Timisoara,Dacia Unirea Braila,2,1,H
+2017-12-02,ACS Foresta Suceava,Ripensia Timisoara,1,2,A
+2017-12-02,Olimpia Satu Mare,Metaloglobus,2,0,H
+2017-12-02,Stiinta Miroslava,ASA Targu Mures,5,0,H
+2017-12-02,Dunarea Calarasi,FC Clinceni,4,0,H
+2017-12-02,CS Afumati,CS Mioveni,2,1,H
+2017-12-03,Uta Arad,Chindia Targoviste,2,1,H
+2017-12-03,CS Balotesti,AFC Hermannstadt,0,3,A
+2017-12-08,CS Mioveni,Dunarea Calarasi,1,3,A
+2017-12-09,ASA Targu Mures,ACS Foresta Suceava,2,5,A
+2017-12-09,Dacia Unirea Braila,Stiinta Miroslava,1,4,A
+2017-12-09,Ripensia Timisoara,CS Luceafarul Oradea,4,4,D
+2017-12-09,CS Balotesti,Sportul Snagov,1,0,H
+2017-12-09,FC Clinceni,Olimpia Satu Mare,4,1,H
+2017-12-09,Metaloglobus,Uta Arad,0,0,D
+2017-12-09,AFC Hermannstadt,CS Afumati,0,0,D
+2017-12-09,Arges Pitesti,FC Politehnica Timisoara,2,0,H
+2017-12-10,Chindia Targoviste,Pandurii TG JIU,1,0,H
+2018-02-24,Uta Arad,FC Clinceni,1,3,A
+2018-02-24,Pandurii TG JIU,Metaloglobus,1,0,H
+2018-02-24,CS Luceafarul Oradea,ASA Targu Mures,3,0,H
+2018-02-24,ACS Foresta Suceava,Dacia Unirea Braila,1,0,H
+2018-02-24,Olimpia Satu Mare,CS Mioveni,0,3,A
+2018-02-24,Stiinta Miroslava,Arges Pitesti,2,3,A
+2018-02-24,Sportul Snagov,Ripensia Timisoara,1,1,D
+2018-02-24,FC Politehnica Timisoara,Chindia Targoviste,1,2,A
+2018-02-25,CS Afumati,CS Balotesti,4,1,H
+2018-02-25,Dunarea Calarasi,AFC Hermannstadt,0,0,D
+2018-03-03,AFC Hermannstadt,Olimpia Satu Mare,3,0,H
+2018-03-10,Pandurii TG JIU,CS Mioveni,2,1,H
+2018-03-10,CS Luceafarul Oradea,Arges Pitesti,3,2,H
+2018-03-10,Sportul Snagov,ASA Targu Mures,3,0,H
+2018-03-10,ACS Foresta Suceava,Chindia Targoviste,1,1,D
+2018-03-10,Olimpia Satu Mare,CS Balotesti,0,3,A
+2018-03-10,Stiinta Miroslava,Metaloglobus,1,1,D
+2018-03-10,Dunarea Calarasi,CS Afumati,2,1,H
+2018-03-10,FC Politehnica Timisoara,FC Clinceni,2,2,D
+2018-03-11,Ripensia Timisoara,Dacia Unirea Braila,2,1,H
+2018-03-11,Uta Arad,AFC Hermannstadt,1,1,D
+2018-03-17,Arges Pitesti,Ripensia Timisoara,2,1,H
+2018-03-17,Dacia Unirea Braila,ASA Targu Mures,3,0,H
+2018-03-17,CS Balotesti,Uta Arad,2,2,D
+2018-03-17,FC Clinceni,Stiinta Miroslava,0,0,D
+2018-03-17,Metaloglobus,ACS Foresta Suceava,2,1,H
+2018-03-17,CS Afumati,Olimpia Satu Mare,3,0,H
+2018-03-17,Dunarea Calarasi,Sportul Snagov,2,0,H
+2018-03-18,AFC Hermannstadt,Pandurii TG JIU,1,0,H
+2018-03-18,Chindia Targoviste,CS Luceafarul Oradea,2,1,H
+2018-03-19,CS Mioveni,FC Politehnica Timisoara,1,1,D
+2018-03-24,ASA Targu Mures,Arges Pitesti,0,3,A
+2018-03-24,CS Luceafarul Oradea,Metaloglobus,2,0,H
+2018-03-24,ACS Foresta Suceava,FC Clinceni,0,1,A
+2018-03-24,Olimpia Satu Mare,Dunarea Calarasi,0,3,A
+2018-03-24,Stiinta Miroslava,CS Mioveni,1,0,H
+2018-03-24,Ripensia Timisoara,Chindia Targoviste,2,3,A
+2018-03-25,Uta Arad,CS Afumati,2,1,H
+2018-03-25,FC Politehnica Timisoara,AFC Hermannstadt,0,1,A
+2018-03-27,Chindia Targoviste,Stiinta Miroslava,2,0,H
+2018-03-28,ASA Targu Mures,Ripensia Timisoara,0,3,A
+2018-03-28,Arges Pitesti,ACS Foresta Suceava,0,2,A
+2018-03-28,Dacia Unirea Braila,CS Luceafarul Oradea,1,1,D
+2018-03-28,FC Clinceni,Pandurii TG JIU,3,1,H
+2018-03-28,Metaloglobus,FC Politehnica Timisoara,0,5,A
+2018-03-28,CS Balotesti,Dunarea Calarasi,1,2,A
+2018-03-28,CS Afumati,Sportul Snagov,1,1,D
+2018-03-28,CS Mioveni,Uta Arad,1,1,D
+2018-03-31,Chindia Targoviste,ASA Targu Mures,3,0,H
+2018-03-31,CS Mioveni,ACS Foresta Suceava,2,0,H
+2018-03-31,CS Balotesti,FC Politehnica Timisoara,2,1,H
+2018-03-31,FC Clinceni,CS Luceafarul Oradea,1,2,A
+2018-03-31,Metaloglobus,Ripensia Timisoara,2,1,H
+2018-03-31,Olimpia Satu Mare,Sportul Snagov,0,3,A
+2018-03-31,AFC Hermannstadt,Stiinta Miroslava,1,0,H
+2018-03-31,CS Afumati,Pandurii TG JIU,2,1,H
+2018-04-01,Arges Pitesti,Dacia Unirea Braila,1,0,H
+2018-04-01,Dunarea Calarasi,Uta Arad,2,1,H
+2018-04-05,Dacia Unirea Braila,Chindia Targoviste,1,0,H
+2018-04-05,Sportul Snagov,Arges Pitesti,1,2,A
+2018-04-06,Uta Arad,Olimpia Satu Mare,3,0,H
+2018-04-06,ASA Targu Mures,Metaloglobus,0,3,A
+2018-04-06,Ripensia Timisoara,FC Clinceni,3,3,D
+2018-04-06,CS Luceafarul Oradea,CS Mioveni,0,1,A
+2018-04-06,Stiinta Miroslava,CS Balotesti,1,2,A
+2018-04-06,Pandurii TG JIU,Dunarea Calarasi,0,3,A
+2018-04-06,FC Politehnica Timisoara,CS Afumati,2,1,H
+2018-04-06,ACS Foresta Suceava,AFC Hermannstadt,0,3,A
+2018-04-12,Pandurii TG JIU,CS Balotesti,1,1,D
+2018-04-12,Sportul Snagov,Dacia Unirea Braila,3,1,H
+2018-04-13,Dunarea Calarasi,FC Politehnica Timisoara,2,0,H
+2018-04-13,CS Mioveni,Ripensia Timisoara,1,2,A
+2018-04-14,FC Clinceni,ASA Targu Mures,3,0,H
+2018-04-14,CS Afumati,Stiinta Miroslava,1,1,D
+2018-04-14,Olimpia Satu Mare,Pandurii TG JIU,0,3,A
+2018-04-14,AFC Hermannstadt,CS Luceafarul Oradea,4,0,H
+2018-04-15,Uta Arad,Sportul Snagov,1,4,A
+2018-04-15,CS Balotesti,ACS Foresta Suceava,3,1,H
+2018-04-15,Metaloglobus,Dacia Unirea Braila,0,1,A
+2018-04-15,Chindia Targoviste,Arges Pitesti,2,4,A
+2018-04-20,Dacia Unirea Braila,FC Clinceni,5,2,H
+2018-04-20,Ripensia Timisoara,AFC Hermannstadt,0,1,A
+2018-04-21,ASA Targu Mures,CS Mioveni,0,3,A
+2018-04-21,Pandurii TG JIU,Uta Arad,1,1,D
+2018-04-21,CS Luceafarul Oradea,CS Balotesti,4,1,H
+2018-04-21,FC Politehnica Timisoara,Olimpia Satu Mare,3,0,H
+2018-04-21,ACS Foresta Suceava,CS Afumati,0,1,A
+2018-04-21,Stiinta Miroslava,Dunarea Calarasi,0,1,A
+2018-04-21,Arges Pitesti,Metaloglobus,3,0,H
+2018-04-22,Sportul Snagov,Chindia Targoviste,1,2,A
+2018-04-24,Uta Arad,FC Politehnica Timisoara,3,0,H
+2018-04-24,FC Clinceni,Arges Pitesti,2,4,A
+2018-04-25,CS Balotesti,Ripensia Timisoara,3,1,H
+2018-04-25,CS Afumati,CS Luceafarul Oradea,2,1,H
+2018-04-25,AFC Hermannstadt,ASA Targu Mures,3,0,H
+2018-04-25,Dunarea Calarasi,ACS Foresta Suceava,3,1,H
+2018-04-25,Pandurii TG JIU,Sportul Snagov,1,1,D
+2018-04-25,CS Mioveni,Dacia Unirea Braila,0,1,A
+2018-04-25,Metaloglobus,Chindia Targoviste,1,1,D
+2018-04-25,Olimpia Satu Mare,Stiinta Miroslava,0,3,A
+2018-04-28,ASA Targu Mures,CS Balotesti,0,3,A
+2018-04-28,Ripensia Timisoara,CS Afumati,2,1,H
+2018-04-28,Sportul Snagov,Metaloglobus,2,0,H
+2018-04-28,ACS Foresta Suceava,Olimpia Satu Mare,3,0,H
+2018-04-28,Stiinta Miroslava,Uta Arad,1,2,A
+2018-04-28,Dacia Unirea Braila,AFC Hermannstadt,0,6,A
+2018-04-28,FC Politehnica Timisoara,Pandurii TG JIU,1,1,D
+2018-04-29,Chindia Targoviste,FC Clinceni,1,0,H
+2018-04-29,CS Luceafarul Oradea,Dunarea Calarasi,1,2,A
+2018-05-01,Arges Pitesti,CS Mioveni,0,1,A
+2018-05-05,Uta Arad,ACS Foresta Suceava,8,1,H
+2018-05-05,Pandurii TG JIU,Stiinta Miroslava,1,0,H
+2018-05-05,CS Balotesti,Dacia Unirea Braila,2,1,H
+2018-05-05,CS Afumati,ASA Targu Mures,3,0,H
+2018-05-05,Olimpia Satu Mare,CS Luceafarul Oradea,0,3,A
+2018-05-05,Dunarea Calarasi,Ripensia Timisoara,3,1,H
+2018-05-05,AFC Hermannstadt,Arges Pitesti,1,0,H
+2018-05-05,FC Politehnica Timisoara,Sportul Snagov,1,0,H
+2018-05-06,FC Clinceni,Metaloglobus,4,1,H
+2018-05-08,CS Mioveni,Chindia Targoviste,2,2,D
+2018-05-12,ASA Targu Mures,Dunarea Calarasi,0,3,A
+2018-05-12,Arges Pitesti,CS Balotesti,2,3,A
+2018-05-12,Ripensia Timisoara,Olimpia Satu Mare,3,0,H
+2018-05-12,CS Luceafarul Oradea,Uta Arad,3,2,H
+2018-05-12,Metaloglobus,CS Mioveni,2,1,H
+2018-05-12,Sportul Snagov,FC Clinceni,1,1,D
+2018-05-12,ACS Foresta Suceava,Pandurii TG JIU,3,2,H
+2018-05-12,Stiinta Miroslava,FC Politehnica Timisoara,2,1,H
+2018-05-13,Chindia Targoviste,AFC Hermannstadt,1,1,D
+2018-05-13,Dacia Unirea Braila,CS Afumati,1,2,A
+2018-05-16,Stiinta Miroslava,Sportul Snagov,2,3,A
+2018-05-16,AFC Hermannstadt,Metaloglobus,0,0,D
+2018-05-16,CS Balotesti,Chindia Targoviste,0,0,D
+2018-05-16,Uta Arad,Ripensia Timisoara,2,3,A
+2018-05-16,Pandurii TG JIU,CS Luceafarul Oradea,1,1,D
+2018-05-16,FC Politehnica Timisoara,ACS Foresta Suceava,2,0,H
+2018-05-16,CS Afumati,Arges Pitesti,1,1,D
+2018-05-16,Olimpia Satu Mare,ASA Targu Mures,0,3,A
+2018-05-17,Dunarea Calarasi,Dacia Unirea Braila,2,0,H
+2018-05-17,CS Mioveni,FC Clinceni,1,1,D
+2018-05-19,ASA Targu Mures,Uta Arad,0,3,A
+2018-05-19,Dacia Unirea Braila,Olimpia Satu Mare,3,0,H
+2018-05-19,Ripensia Timisoara,Pandurii TG JIU,1,2,A
+2018-05-19,Metaloglobus,CS Balotesti,5,1,H
+2018-05-19,Chindia Targoviste,CS Afumati,2,1,H
+2018-05-20,CS Luceafarul Oradea,FC Politehnica Timisoara,2,1,H
+2018-05-20,Sportul Snagov,CS Mioveni,0,1,A
+2018-05-20,ACS Foresta Suceava,Stiinta Miroslava,2,3,A
+2018-05-20,FC Clinceni,AFC Hermannstadt,0,1,A
+2018-05-21,Arges Pitesti,Dunarea Calarasi,2,0,H
+2018-05-26,Uta Arad,Dacia Unirea Braila,1,5,A
+2018-05-26,Pandurii TG JIU,ASA Targu Mures,3,0,H
+2018-05-26,ACS Foresta Suceava,Sportul Snagov,0,11,A
+2018-05-26,CS Afumati,Metaloglobus,2,1,H
+2018-05-26,Olimpia Satu Mare,Arges Pitesti,0,3,A
+2018-05-26,Stiinta Miroslava,CS Luceafarul Oradea,1,4,A
+2018-05-26,Dunarea Calarasi,Chindia Targoviste,0,0,D
+2018-05-26,FC Politehnica Timisoara,Ripensia Timisoara,2,1,H
+2018-05-27,CS Balotesti,FC Clinceni,1,4,A
+2018-05-30,AFC Hermannstadt,CS Mioveni,2,1,H
+2018-06-01,CS Luceafarul Oradea,ACS Foresta Suceava,3,0,H
+2018-06-01,Arges Pitesti,Uta Arad,1,0,H
+2018-06-02,Chindia Targoviste,Olimpia Satu Mare,3,0,H
+2018-06-02,ASA Targu Mures,FC Politehnica Timisoara,0,3,A
+2018-06-02,Ripensia Timisoara,Stiinta Miroslava,3,2,H
+2018-06-02,FC Clinceni,CS Afumati,0,2,A
+2018-06-02,CS Mioveni,CS Balotesti,3,1,H
+2018-06-02,Dacia Unirea Braila,Pandurii TG JIU,1,1,D
+2018-06-02,Metaloglobus,Dunarea Calarasi,0,2,A
+2018-06-02,Sportul Snagov,AFC Hermannstadt,0,2,A

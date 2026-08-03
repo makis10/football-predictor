@@ -1,0 +1,290 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2024-08-03,Concordia,CS Afumati,2,4,A
+2024-08-03,CS Mioveni,Unirea Ungheni,0,0,D
+2024-08-03,Metaloglobus,Chindia Targoviste,3,2,H
+2024-08-03,Focsani,Muscelul Campulung Elite,2,0,H
+2024-08-03,Slatina,FC Voluntari,1,1,D
+2024-08-03,Dumbravita,Metalul Buzau,3,1,H
+2024-08-03,Bihor Oradea,ACS Sirineasa,0,0,D
+2024-08-04,Csikszereda,Ceahlaul Piatra Neamt,3,1,H
+2024-08-06,CSM Resita,U Craiova 1948,2,0,H
+2024-08-06,CSA Steaua Bucuresti,Arges Pitesti,0,0,D
+2024-08-09,FC Voluntari,Concordia,1,1,D
+2024-08-10,ACS Sirineasa,Csikszereda,1,4,A
+2024-08-10,CS Afumati,CS Mioveni,0,1,A
+2024-08-10,CSM Resita,Dumbravita,1,1,D
+2024-08-10,Ceahlaul Piatra Neamt,Slatina,0,3,A
+2024-08-10,Metalul Buzau,CSA Steaua Bucuresti,0,1,A
+2024-08-10,Viitorul Selimbar,Metaloglobus,3,1,H
+2024-08-10,Muscelul Campulung Elite,Bihor Oradea,2,1,H
+2024-08-11,U Craiova 1948,Chindia Targoviste,1,0,H
+2024-08-12,Arges Pitesti,Focsani,2,0,H
+2024-08-17,Concordia,Ceahlaul Piatra Neamt,0,2,A
+2024-08-17,CS Mioveni,FC Voluntari,0,1,A
+2024-08-17,Metaloglobus,Unirea Ungheni,3,0,H
+2024-08-17,Csikszereda,Muscelul Campulung Elite,4,1,H
+2024-08-17,Slatina,ACS Sirineasa,3,1,H
+2024-08-17,Dumbravita,U Craiova 1948,1,2,A
+2024-08-18,Focsani,Metalul Buzau,0,3,A
+2024-08-19,Chindia Targoviste,Viitorul Selimbar,2,1,H
+2024-08-20,Bihor Oradea,Arges Pitesti,1,0,H
+2024-08-20,CSA Steaua Bucuresti,CSM Resita,2,2,D
+2024-08-23,U Craiova 1948,Viitorul Selimbar,1,1,D
+2024-08-24,CS Afumati,Metaloglobus,2,1,H
+2024-08-24,CSM Resita,Focsani,1,0,H
+2024-08-24,Ceahlaul Piatra Neamt,CS Mioveni,2,0,H
+2024-08-24,Metalul Buzau,Bihor Oradea,1,2,A
+2024-08-24,Dumbravita,CSA Steaua Bucuresti,0,1,A
+2024-08-24,Unirea Ungheni,Chindia Targoviste,0,1,A
+2024-08-24,Muscelul Campulung Elite,Slatina,0,5,A
+2024-08-25,ACS Sirineasa,Concordia,0,2,A
+2024-08-25,FC Voluntari,Corvinul Hunedoara,2,0,H
+2024-08-26,Arges Pitesti,Csikszereda,0,1,A
+2024-08-30,Bihor Oradea,CSM Resita,2,3,A
+2024-08-31,Concordia,Muscelul Campulung Elite,1,0,H
+2024-08-31,CS Mioveni,ACS Sirineasa,2,0,H
+2024-08-31,Metaloglobus,FC Voluntari,2,1,H
+2024-08-31,Focsani,Dumbravita,0,1,A
+2024-08-31,Viitorul Selimbar,Unirea Ungheni,0,0,D
+2024-09-01,Slatina,Arges Pitesti,0,0,D
+2024-09-01,Corvinul Hunedoara,Ceahlaul Piatra Neamt,1,1,D
+2024-09-02,CSA Steaua Bucuresti,U Craiova 1948,0,0,D
+2024-09-03,Csikszereda,Metalul Buzau,4,2,H
+2024-09-03,Chindia Targoviste,CS Afumati,0,1,A
+2024-09-12,U Craiova 1948,Unirea Ungheni,2,0,H
+2024-09-14,ACS Sirineasa,Corvinul Hunedoara,1,3,A
+2024-09-14,CS Afumati,Viitorul Selimbar,1,0,H
+2024-09-14,Ceahlaul Piatra Neamt,Metaloglobus,0,1,A
+2024-09-14,Metalul Buzau,Slatina,1,0,H
+2024-09-14,CSA Steaua Bucuresti,Focsani,1,0,H
+2024-09-14,Dumbravita,Bihor Oradea,1,0,H
+2024-09-14,Muscelul Campulung Elite,CS Mioveni,1,0,H
+2024-09-15,FC Voluntari,Chindia Targoviste,4,1,H
+2024-09-16,Arges Pitesti,Concordia,3,2,H
+2024-09-17,CSM Resita,Csikszereda,2,3,A
+2024-09-18,Corvinul Hunedoara,Viitorul Selimbar,1,0,H
+2024-09-19,Bihor Oradea,CSA Steaua Bucuresti,0,1,A
+2024-09-20,Chindia Targoviste,Ceahlaul Piatra Neamt,0,1,A
+2024-09-21,Concordia,Metalul Buzau,1,0,H
+2024-09-21,CS Mioveni,Arges Pitesti,1,1,D
+2024-09-21,Metaloglobus,ACS Sirineasa,7,0,H
+2024-09-21,Viitorul Selimbar,FC Voluntari,0,0,D
+2024-09-21,Unirea Ungheni,CS Afumati,0,0,D
+2024-09-21,Corvinul Hunedoara,Muscelul Campulung Elite,3,0,H
+2024-09-21,Focsani,U Craiova 1948,1,1,D
+2024-09-23,Slatina,CSM Resita,4,0,H
+2024-09-24,Csikszereda,Dumbravita,1,0,H
+2024-09-25,Unirea Ungheni,Corvinul Hunedoara,1,2,A
+2024-09-28,FC Voluntari,Unirea Ungheni,1,3,A
+2024-09-28,ACS Sirineasa,Chindia Targoviste,0,3,A
+2024-09-28,CSM Resita,Concordia,3,1,H
+2024-09-28,Ceahlaul Piatra Neamt,Viitorul Selimbar,3,2,H
+2024-09-28,Focsani,Bihor Oradea,0,3,A
+2024-09-28,Metalul Buzau,CS Mioveni,4,0,H
+2024-09-28,Dumbravita,Slatina,2,4,A
+2024-09-28,Muscelul Campulung Elite,Metaloglobus,0,3,A
+2024-09-28,Arges Pitesti,Corvinul Hunedoara,0,1,A
+2024-09-29,U Craiova 1948,CS Afumati,0,3,A
+2024-09-30,CSA Steaua Bucuresti,Csikszereda,0,0,D
+2024-10-05,Concordia,Dumbravita,0,0,D
+2024-10-05,Chindia Targoviste,Muscelul Campulung Elite,4,0,H
+2024-10-05,CS Mioveni,CSM Resita,0,1,A
+2024-10-05,Metaloglobus,Arges Pitesti,1,2,A
+2024-10-05,CS Afumati,FC Voluntari,0,1,A
+2024-10-05,Slatina,CSA Steaua Bucuresti,1,1,D
+2024-10-05,Viitorul Selimbar,ACS Sirineasa,3,0,H
+2024-10-05,Unirea Ungheni,Ceahlaul Piatra Neamt,1,1,D
+2024-10-05,Corvinul Hunedoara,Metalul Buzau,0,1,A
+2024-10-07,Bihor Oradea,U Craiova 1948,1,1,D
+2024-10-07,Csikszereda,Focsani,1,0,H
+2024-10-17,CSA Steaua Bucuresti,Concordia,2,1,H
+2024-10-18,Arges Pitesti,Chindia Targoviste,2,1,H
+2024-10-19,Ceahlaul Piatra Neamt,CS Afumati,3,0,H
+2024-10-19,Focsani,Slatina,1,0,H
+2024-10-19,Metalul Buzau,Metaloglobus,2,2,D
+2024-10-19,Dumbravita,CS Mioveni,2,1,H
+2024-10-19,Muscelul Campulung Elite,Viitorul Selimbar,0,4,A
+2024-10-19,CSM Resita,Corvinul Hunedoara,1,0,H
+2024-10-20,Bihor Oradea,Csikszereda,0,1,A
+2024-10-21,U Craiova 1948,FC Voluntari,0,0,D
+2024-10-25,Viitorul Selimbar,Arges Pitesti,0,0,D
+2024-10-26,FC Voluntari,Ceahlaul Piatra Neamt,2,1,H
+2024-10-26,Concordia,Focsani,1,0,H
+2024-10-26,Chindia Targoviste,Metalul Buzau,0,0,D
+2024-10-26,CS Mioveni,CSA Steaua Bucuresti,0,4,A
+2024-10-26,Metaloglobus,CSM Resita,1,0,H
+2024-10-26,Slatina,Bihor Oradea,0,0,D
+2024-10-26,Unirea Ungheni,Muscelul Campulung Elite,2,1,H
+2024-10-26,Corvinul Hunedoara,Dumbravita,0,0,D
+2024-10-27,Csikszereda,U Craiova 1948,2,0,H
+2024-11-01,Bihor Oradea,Concordia,0,4,A
+2024-11-01,CSA Steaua Bucuresti,Corvinul Hunedoara,3,0,H
+2024-11-02,Arges Pitesti,Unirea Ungheni,2,0,H
+2024-11-02,CSM Resita,Chindia Targoviste,1,1,D
+2024-11-02,Focsani,CS Mioveni,1,0,H
+2024-11-02,Dumbravita,Metaloglobus,0,2,A
+2024-11-02,Muscelul Campulung Elite,CS Afumati,1,2,A
+2024-11-02,U Craiova 1948,Ceahlaul Piatra Neamt,2,4,A
+2024-11-03,Metalul Buzau,Viitorul Selimbar,2,0,H
+2024-11-05,Csikszereda,Slatina,5,1,H
+2024-11-06,Corvinul Hunedoara,CS Afumati,2,0,H
+2024-11-07,Viitorul Selimbar,CSM Resita,0,3,A
+2024-11-09,FC Voluntari,Muscelul Campulung Elite,3,0,H
+2024-11-09,Chindia Targoviste,Dumbravita,3,1,H
+2024-11-09,CS Mioveni,Bihor Oradea,2,1,H
+2024-11-09,CS Afumati,Arges Pitesti,1,1,D
+2024-11-09,Unirea Ungheni,Metalul Buzau,0,0,D
+2024-11-09,Corvinul Hunedoara,Focsani,3,2,H
+2024-11-10,Slatina,U Craiova 1948,1,2,A
+2024-11-11,Metaloglobus,CSA Steaua Bucuresti,0,0,D
+2024-11-12,Concordia,Csikszereda,2,1,H
+2024-11-21,Arges Pitesti,FC Voluntari,1,0,H
+2024-11-23,CSM Resita,Unirea Ungheni,3,2,H
+2024-11-23,Csikszereda,CS Mioveni,1,0,H
+2024-11-23,Focsani,Metaloglobus,0,1,A
+2024-11-23,Slatina,Concordia,1,2,A
+2024-11-23,Dumbravita,Viitorul Selimbar,2,3,A
+2024-11-23,Muscelul Campulung Elite,Ceahlaul Piatra Neamt,0,0,D
+2024-11-23,Metalul Buzau,CS Afumati,1,0,H
+2024-11-24,Bihor Oradea,Corvinul Hunedoara,1,2,A
+2024-11-26,CSA Steaua Bucuresti,Chindia Targoviste,1,1,D
+2024-11-28,Ceahlaul Piatra Neamt,Arges Pitesti,0,0,D
+2024-11-30,FC Voluntari,Metalul Buzau,1,1,D
+2024-11-30,Chindia Targoviste,Focsani,1,1,D
+2024-11-30,CS Mioveni,Slatina,1,8,A
+2024-11-30,Metaloglobus,Bihor Oradea,1,0,H
+2024-11-30,CS Afumati,CSM Resita,3,2,H
+2024-11-30,Unirea Ungheni,Dumbravita,1,0,H
+2024-11-30,Corvinul Hunedoara,Csikszereda,1,1,D
+2024-12-01,Viitorul Selimbar,CSA Steaua Bucuresti,0,1,A
+2024-12-01,Concordia,U Craiova 1948,0,2,A
+2024-12-06,Bihor Oradea,Chindia Targoviste,1,0,H
+2024-12-06,U Craiova 1948,Muscelul Campulung Elite,2,0,H
+2024-12-07,Concordia,CS Mioveni,9,0,H
+2024-12-07,Focsani,Viitorul Selimbar,2,1,H
+2024-12-07,Slatina,Corvinul Hunedoara,1,0,H
+2024-12-07,Dumbravita,CS Afumati,0,1,A
+2024-12-07,CSM Resita,FC Voluntari,0,2,A
+2024-12-08,Metalul Buzau,Ceahlaul Piatra Neamt,2,0,H
+2024-12-08,CSA Steaua Bucuresti,Unirea Ungheni,2,1,H
+2024-12-10,Csikszereda,Metaloglobus,2,1,H
+2024-12-14,FC Voluntari,Dumbravita,1,0,H
+2024-12-14,Chindia Targoviste,Csikszereda,2,3,A
+2024-12-14,CS Mioveni,U Craiova 1948,0,3,A
+2024-12-14,CS Afumati,CSA Steaua Bucuresti,0,4,A
+2024-12-14,Viitorul Selimbar,Bihor Oradea,1,1,D
+2024-12-14,Unirea Ungheni,Focsani,1,1,D
+2024-12-14,Muscelul Campulung Elite,Arges Pitesti,1,3,A
+2024-12-14,Ceahlaul Piatra Neamt,CSM Resita,0,2,A
+2024-12-15,Corvinul Hunedoara,Concordia,1,1,D
+2024-12-16,Metaloglobus,Slatina,0,1,A
+2025-02-22,Concordia,Metaloglobus,2,3,A
+2025-02-22,Focsani,CS Afumati,0,0,D
+2025-02-22,Metalul Buzau,Muscelul Campulung Elite,0,1,A
+2025-02-22,Slatina,Chindia Targoviste,0,0,D
+2025-02-22,Dumbravita,Ceahlaul Piatra Neamt,1,2,A
+2025-02-22,Bihor Oradea,Unirea Ungheni,0,2,A
+2025-02-22,CSA Steaua Bucuresti,FC Voluntari,2,1,H
+2025-02-25,Csikszereda,Viitorul Selimbar,1,0,H
+2025-02-25,U Craiova 1948,Arges Pitesti,0,1,A
+2025-02-27,Ceahlaul Piatra Neamt,CSA Steaua Bucuresti,1,1,D
+2025-03-01,FC Voluntari,Focsani,0,0,D
+2025-03-01,Chindia Targoviste,Concordia,1,1,D
+2025-03-01,CS Afumati,Bihor Oradea,1,2,A
+2025-03-01,Viitorul Selimbar,Slatina,2,1,H
+2025-03-01,Unirea Ungheni,Csikszereda,1,0,H
+2025-03-01,Muscelul Campulung Elite,CSM Resita,0,3,A
+2025-03-01,Arges Pitesti,Metalul Buzau,0,0,D
+2025-03-02,Corvinul Hunedoara,U Craiova 1948,0,0,D
+2025-03-08,Concordia,Viitorul Selimbar,2,2,D
+2025-03-08,Focsani,Ceahlaul Piatra Neamt,0,1,A
+2025-03-08,Slatina,Unirea Ungheni,0,1,A
+2025-03-08,Dumbravita,Muscelul Campulung Elite,1,0,H
+2025-03-08,Corvinul Hunedoara,Metaloglobus,0,1,A
+2025-03-08,Bihor Oradea,FC Voluntari,2,4,A
+2025-03-08,CSM Resita,Arges Pitesti,0,0,D
+2025-03-09,U Craiova 1948,Metalul Buzau,3,1,H
+2025-03-09,Csikszereda,CS Afumati,3,1,H
+2025-03-15,FC Voluntari,Csikszereda,2,1,H
+2025-03-15,Chindia Targoviste,Corvinul Hunedoara,0,1,A
+2025-03-15,Arges Pitesti,Dumbravita,2,1,H
+2025-03-15,Metaloglobus,U Craiova 1948,3,2,H
+2025-03-15,CS Afumati,Slatina,1,2,A
+2025-03-15,Ceahlaul Piatra Neamt,Bihor Oradea,1,1,D
+2025-03-15,Metalul Buzau,CSM Resita,0,2,A
+2025-03-15,Unirea Ungheni,Concordia,3,1,H
+2025-03-15,Muscelul Campulung Elite,CSA Steaua Bucuresti,0,1,A
+2025-03-27,Metaloglobus,CSM Resita,0,4,A
+2025-03-27,Csikszereda,FC Voluntari,2,0,H
+2025-03-29,Concordia,Chindia Targoviste,2,1,H
+2025-03-29,CS Afumati,Muscelul Campulung Elite,3,0,H
+2025-03-29,Metalul Buzau,Bihor Oradea,1,2,A
+2025-03-29,Slatina,Viitorul Selimbar,2,0,H
+2025-03-29,U Craiova 1948,Focsani,2,1,H
+2025-03-29,Unirea Ungheni,Dumbravita,1,0,H
+2025-03-30,CSA Steaua Bucuresti,Arges Pitesti,1,2,A
+2025-04-03,Csikszereda,CSA Steaua Bucuresti,0,0,D
+2025-04-05,Ceahlaul Piatra Neamt,CS Afumati,2,1,H
+2025-04-05,Focsani,Unirea Ungheni,3,0,H
+2025-04-05,Viitorul Selimbar,Concordia,2,0,H
+2025-04-05,Dumbravita,Metalul Buzau,0,1,A
+2025-04-05,Corvinul Hunedoara,U Craiova 1948,2,1,H
+2025-04-05,Muscelul Campulung Elite,Slatina,0,3,A
+2025-04-05,Arges Pitesti,Metaloglobus,1,0,H
+2025-04-06,FC Voluntari,CSM Resita,1,1,D
+2025-04-08,Metaloglobus,Csikszereda,0,1,A
+2025-04-09,CSA Steaua Bucuresti,FC Voluntari,3,2,H
+2025-04-09,CSM Resita,Arges Pitesti,0,1,A
+2025-04-12,Concordia,Muscelul Campulung Elite,1,4,A
+2025-04-12,Chindia Targoviste,Viitorul Selimbar,2,2,D
+2025-04-12,Metalul Buzau,Focsani,3,0,H
+2025-04-12,Slatina,Ceahlaul Piatra Neamt,0,0,D
+2025-04-12,Unirea Ungheni,Corvinul Hunedoara,0,3,A
+2025-04-12,Bihor Oradea,Dumbravita,3,1,H
+2025-04-12,CSA Steaua Bucuresti,Metaloglobus,3,1,H
+2025-04-13,Csikszereda,CSM Resita,1,1,D
+2025-04-15,FC Voluntari,Arges Pitesti,0,0,D
+2025-04-17,CSM Resita,CSA Steaua Bucuresti,0,2,A
+2025-04-18,Metaloglobus,FC Voluntari,0,0,D
+2025-04-18,CS Afumati,Slatina,1,1,D
+2025-04-18,Ceahlaul Piatra Neamt,Concordia,1,1,D
+2025-04-18,Focsani,Bihor Oradea,1,1,D
+2025-04-18,U Craiova 1948,Unirea Ungheni,2,0,H
+2025-04-18,Corvinul Hunedoara,Metalul Buzau,5,0,H
+2025-04-18,Muscelul Campulung Elite,Chindia Targoviste,1,1,D
+2025-04-19,Arges Pitesti,Csikszereda,3,0,H
+2025-04-24,Arges Pitesti,CSA Steaua Bucuresti,4,2,H
+2025-04-25,CSM Resita,Metaloglobus,1,1,D
+2025-04-26,Concordia,CS Afumati,4,0,H
+2025-04-26,Chindia Targoviste,Ceahlaul Piatra Neamt,3,2,H
+2025-04-26,Metalul Buzau,U Craiova 1948,2,1,H
+2025-04-26,Viitorul Selimbar,Muscelul Campulung Elite,4,1,H
+2025-04-26,Dumbravita,Focsani,0,0,D
+2025-04-26,Bihor Oradea,Corvinul Hunedoara,2,4,A
+2025-04-26,FC Voluntari,Csikszereda,2,0,H
+2025-04-29,Metaloglobus,Arges Pitesti,2,1,H
+2025-04-30,CSA Steaua Bucuresti,Csikszereda,0,0,D
+2025-04-30,CSM Resita,FC Voluntari,1,1,D
+2025-05-02,U Craiova 1948,Bihor Oradea,0,3,A
+2025-05-03,CS Afumati,Chindia Targoviste,0,2,A
+2025-05-03,Ceahlaul Piatra Neamt,Viitorul Selimbar,1,2,A
+2025-05-03,Slatina,Concordia,3,1,H
+2025-05-03,Unirea Ungheni,Metalul Buzau,2,2,D
+2025-05-03,Corvinul Hunedoara,Dumbravita,0,1,A
+2025-05-04,FC Voluntari,CSA Steaua Bucuresti,3,0,H
+2025-05-05,Csikszereda,Metaloglobus,2,3,A
+2025-05-06,Arges Pitesti,CSM Resita,3,0,H
+2025-05-10,Chindia Targoviste,Slatina,1,1,D
+2025-05-10,Focsani,Corvinul Hunedoara,1,2,A
+2025-05-10,Viitorul Selimbar,CS Afumati,3,0,H
+2025-05-10,Dumbravita,U Craiova 1948,3,0,H
+2025-05-10,Bihor Oradea,Unirea Ungheni,3,1,H
+2025-05-10,Muscelul Campulung Elite,Ceahlaul Piatra Neamt,2,4,A
+2025-05-10,CSM Resita,Csikszereda,1,1,D
+2025-05-11,Metaloglobus,CSA Steaua Bucuresti,0,3,A
+2025-05-13,Arges Pitesti,FC Voluntari,0,0,D
+2025-05-17,Dumbravita,Chindia Targoviste,0,1,A
+2025-05-18,FC Voluntari,Metaloglobus,1,0,H
+2025-05-18,Csikszereda,Arges Pitesti,0,4,A
+2025-05-18,CSA Steaua Bucuresti,CSM Resita,0,2,A
+2025-05-24,Chindia Targoviste,Dumbravita,3,2,H

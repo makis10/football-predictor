@@ -1,0 +1,136 @@
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+2026-04-03,Helsingborg,Osters IF,4,1,H
+2026-04-04,IFK Norrkoping,IFK Varnamo,6,0,H
+2026-04-05,Norrby IF,IK brage,0,1,A
+2026-04-06,GIF Sundsvall,United Nordic,3,2,H
+2026-04-06,Falkenbergs FF,Ljungskile SK,1,1,D
+2026-04-06,Orebro SK,Landskrona BoIS,1,0,H
+2026-04-06,Varbergs BoIS FC,Ostersunds FK,1,2,A
+2026-04-07,Oddevold,Sandviken,2,2,D
+2026-04-11,Ljungskile SK,IFK Norrkoping,0,1,A
+2026-04-11,Osters IF,Orebro SK,0,0,D
+2026-04-11,United Nordic,Helsingborg,3,1,H
+2026-04-11,Ostersunds FK,Norrby IF,1,1,D
+2026-04-12,IK brage,Oddevold,3,4,A
+2026-04-12,Landskrona BoIS,Falkenbergs FF,1,2,A
+2026-04-12,Sandviken,Varbergs BoIS FC,2,2,D
+2026-04-14,IFK Varnamo,GIF Sundsvall,3,0,H
+2026-04-18,Varbergs BoIS FC,United Nordic,4,1,H
+2026-04-18,Sandviken,IFK Varnamo,0,1,A
+2026-04-18,Landskrona BoIS,Ljungskile SK,1,0,H
+2026-04-19,Norrby IF,Falkenbergs FF,2,2,D
+2026-04-19,Helsingborg,Ostersunds FK,2,1,H
+2026-04-20,Oddevold,Osters IF,1,2,A
+2026-04-20,GIF Sundsvall,IK brage,1,2,A
+2026-04-21,Orebro SK,IFK Norrkoping,2,1,H
+2026-04-24,Ljungskile SK,Helsingborg,4,1,H
+2026-04-25,Osters IF,Ostersunds FK,1,0,H
+2026-04-25,Falkenbergs FF,GIF Sundsvall,1,0,H
+2026-04-25,Orebro SK,Norrby IF,1,1,D
+2026-04-25,United Nordic,Sandviken,2,1,H
+2026-04-26,IFK Varnamo,Oddevold,3,1,H
+2026-04-26,IK brage,Varbergs BoIS FC,2,2,D
+2026-04-28,IFK Norrkoping,Landskrona BoIS,1,3,A
+2026-05-02,Ljungskile SK,United Nordic,0,2,A
+2026-05-02,Varbergs BoIS FC,Orebro SK,0,0,D
+2026-05-02,Sandviken,Norrby IF,2,2,D
+2026-05-02,GIF Sundsvall,Oddevold,1,3,A
+2026-05-03,Ostersunds FK,IFK Varnamo,3,2,H
+2026-05-03,Helsingborg,IK brage,2,0,H
+2026-05-04,Landskrona BoIS,Osters IF,2,2,D
+2026-05-05,Falkenbergs FF,IFK Norrkoping,1,0,H
+2026-05-08,Orebro SK,IK brage,0,3,A
+2026-05-08,Varbergs BoIS FC,IFK Varnamo,3,2,H
+2026-05-09,Ostersunds FK,Falkenbergs FF,2,2,D
+2026-05-09,Oddevold,Landskrona BoIS,1,1,D
+2026-05-09,United Nordic,Osters IF,4,2,H
+2026-05-09,Norrby IF,Helsingborg,3,3,D
+2026-05-09,GIF Sundsvall,IFK Norrkoping,1,3,A
+2026-05-09,Sandviken,Ljungskile SK,1,0,H
+2026-05-12,IFK Varnamo,Orebro SK,0,1,A
+2026-05-12,Landskrona BoIS,Norrby IF,1,1,D
+2026-05-13,IFK Norrkoping,United Nordic,1,1,D
+2026-05-13,Helsingborg,Oddevold,2,2,D
+2026-05-13,Falkenbergs FF,Varbergs BoIS FC,0,3,A
+2026-05-13,Osters IF,Sandviken,1,0,H
+2026-05-13,IK brage,Ostersunds FK,2,4,A
+2026-05-14,Ljungskile SK,GIF Sundsvall,1,0,H
+2026-05-16,IK brage,IFK Norrkoping,0,0,D
+2026-05-17,Ostersunds FK,Sandviken,2,1,H
+2026-05-17,Osters IF,Ljungskile SK,1,4,A
+2026-05-17,United Nordic,Falkenbergs FF,1,4,A
+2026-05-17,IFK Varnamo,Norrby IF,2,2,D
+2026-05-18,GIF Sundsvall,Landskrona BoIS,2,1,H
+2026-05-18,Oddevold,Orebro SK,4,1,H
+2026-05-19,Helsingborg,Varbergs BoIS FC,1,3,A
+2026-05-23,Norrby IF,Ljungskile SK,2,1,H
+2026-05-23,Oddevold,Ostersunds FK,1,0,H
+2026-05-23,United Nordic,IK brage,1,0,H
+2026-05-23,Falkenbergs FF,IFK Varnamo,3,1,H
+2026-05-24,Varbergs BoIS FC,GIF Sundsvall,1,0,H
+2026-05-24,Sandviken,Landskrona BoIS,0,1,A
+2026-05-25,IFK Norrkoping,Osters IF,2,0,H
+2026-05-26,Orebro SK,Helsingborg,1,2,A
+2026-05-30,Ljungskile SK,Varbergs BoIS FC,1,3,A
+2026-05-30,Landskrona BoIS,IK brage,2,2,D
+2026-05-30,GIF Sundsvall,Sandviken,0,3,A
+2026-05-30,Falkenbergs FF,Oddevold,2,1,H
+2026-05-30,Osters IF,Norrby IF,2,1,H
+2026-05-31,IFK Varnamo,United Nordic,0,2,A
+2026-05-31,Ostersunds FK,Orebro SK,3,2,H
+2026-05-31,Helsingborg,IFK Norrkoping,0,2,A
+2026-06-09,Osters IF,IFK Varnamo,3,0,H
+2026-06-09,IK brage,Ljungskile SK,2,2,D
+2026-06-09,Sandviken,Falkenbergs FF,4,2,H
+2026-06-09,Oddevold,IFK Norrkoping,1,2,A
+2026-06-09,United Nordic,Ostersunds FK,1,1,D
+2026-06-10,Orebro SK,GIF Sundsvall,0,1,A
+2026-06-10,Varbergs BoIS FC,Norrby IF,2,0,H
+2026-06-11,Helsingborg,Landskrona BoIS,0,3,A
+2026-06-14,Norrby IF,Oddevold,0,2,A
+2026-06-14,Falkenbergs FF,Orebro SK,1,1,D
+2026-06-14,Ljungskile SK,Ostersunds FK,1,1,D
+2026-06-14,Sandviken,IK brage,3,2,H
+2026-06-15,GIF Sundsvall,Osters IF,0,4,A
+2026-06-15,IFK Norrkoping,Varbergs BoIS FC,2,0,H
+2026-06-16,IFK Varnamo,Helsingborg,0,1,A
+2026-06-16,Landskrona BoIS,United Nordic,2,0,H
+2026-06-21,Helsingborg,GIF Sundsvall,5,2,H
+2026-06-21,Osters IF,Falkenbergs FF,1,3,A
+2026-06-21,IK brage,IFK Varnamo,5,1,H
+2026-06-21,Ostersunds FK,IFK Norrkoping,0,2,A
+2026-06-21,Norrby IF,United Nordic,0,0,D
+2026-06-22,Varbergs BoIS FC,Landskrona BoIS,2,3,A
+2026-06-22,Oddevold,Ljungskile SK,0,0,D
+2026-06-22,Orebro SK,Sandviken,1,1,D
+2026-06-26,IK brage,Falkenbergs FF,2,4,A
+2026-06-27,Ljungskile SK,Orebro SK,3,2,H
+2026-06-27,Varbergs BoIS FC,Osters IF,2,1,H
+2026-06-27,GIF Sundsvall,Ostersunds FK,0,2,A
+2026-06-27,United Nordic,Oddevold,3,3,D
+2026-06-28,IFK Norrkoping,Norrby IF,0,1,A
+2026-06-28,Landskrona BoIS,IFK Varnamo,1,0,H
+2026-06-28,Sandviken,Helsingborg,4,2,H
+2026-07-18,Oddevold,Varbergs BoIS FC,2,4,A
+2026-07-18,Ostersunds FK,Landskrona BoIS,2,0,H
+2026-07-18,Osters IF,IK brage,3,2,H
+2026-07-19,IFK Norrkoping,Sandviken,3,0,H
+2026-07-19,IFK Varnamo,Ljungskile SK,2,3,A
+2026-07-19,United Nordic,Orebro SK,2,0,H
+2026-07-20,Norrby IF,GIF Sundsvall,3,1,H
+2026-07-21,Falkenbergs FF,Helsingborg,2,3,A
+2026-07-25,IFK Varnamo,IK brage,0,0,D
+2026-07-26,GIF Sundsvall,Falkenbergs FF,1,2,A
+2026-07-26,Ljungskile SK,Sandviken,2,1,H
+2026-07-26,Norrby IF,Ostersunds FK,2,2,D
+2026-07-27,Orebro SK,Oddevold,0,0,D
+2026-07-27,Osters IF,Varbergs BoIS FC,3,0,H
+2026-07-28,Helsingborg,United Nordic,1,1,D
+2026-07-28,Landskrona BoIS,IFK Norrkoping,0,1,A
+2026-07-31,Oddevold,Norrby IF,0,0,D
+2026-08-01,Ostersunds FK,Osters IF,1,0,H
+2026-08-01,Varbergs BoIS FC,Falkenbergs FF,2,1,H
+2026-08-01,Sandviken,GIF Sundsvall,5,0,H
+2026-08-01,IFK Norrkoping,Helsingborg,2,0,H
+2026-08-01,IK brage,Landskrona BoIS,2,1,H
+2026-08-02,United Nordic,Ljungskile SK,2,2,D
