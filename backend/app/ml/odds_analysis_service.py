@@ -20,6 +20,8 @@ Flow:
 """
 from __future__ import annotations
 
+import re
+
 import logging
 import os
 import time
@@ -121,6 +123,27 @@ LEAGUE_COUNTRY: dict[str, str] = {
     # CL/EL/ECL are deliberately absent: their clubs come from everywhere, so
     # there is no country to check against.
 }
+
+
+def _with_history_only_leagues(base: dict[str, str]) -> dict[str, str]:
+    """Extend the map with every league the training data holds.
+
+    Restricting this to the leagues we predict left the second tiers and the
+    foreign top flights country-blind, and Brazil's Athletic Club — of São João
+    del-Rei, in Série B — was accepted into the id cache as Athletic Bilbao,
+    id 531. Both then asked API-Football for the same club's cards and corners.
+
+    The registry is the authority on where a league is played; the entries
+    above win where the two overlap, and CL/EL/ECL are in neither, so they stay
+    uncountried as intended.
+    """
+    from backend.app.ml.league_registry import LEAGUE_COUNTRY_TIER
+
+    return {**{lg: country for lg, (country, _) in LEAGUE_COUNTRY_TIER.items()},
+            **base}
+
+
+LEAGUE_COUNTRY = _with_history_only_leagues(LEAGUE_COUNTRY)
 
 
 def _display(name: str) -> str:
@@ -715,6 +738,10 @@ def _format_injuries(injury_data: Optional[dict], home_team: str, away_team: str
 # quotes were never fresher than LEAGUE_ODDS_TTL anyway.
 CACHE_TTL      = int(os.getenv("ANALYSIS_CACHE_TTL", "3600"))  # 1 h — Groq analysis
 LEAGUE_ODDS_TTL = 1800  # 30 min — league odds batch
+# A league that came back empty is re-tried far sooner: an empty blob is
+# usually a transient failure, and caching it for the full TTL silently
+# removes the bookmaker panel from every fixture in that league.
+EMPTY_ODDS_TTL  = 120   # 2 min
 
 # Don't suggest a market when bookmakers price it below this probability.
 # At <10% implied probability (~10.00 odds) the model almost certainly lacks
@@ -938,14 +965,75 @@ def _slug(name: str) -> str:
     """
     import re
     import unicodedata
-    # Decompose accented characters then drop the combining marks
-    nfkd = unicodedata.normalize("NFKD", name.lower())
+    # NFKD only splits a letter from a COMBINING mark. Letters that carry the
+    # stroke or ligature in the glyph itself — ł ø đ ħ ŧ ß æ œ — decompose to
+    # nothing and are then dropped entirely, which does not merely lose an
+    # accent, it deletes a consonant: "Wisła Kraków" became "wisakrakow", whose
+    # tail is "rakow", so Wisła Kraków matched Raków Częstochowa and its own
+    # fixture matched nothing. Transliterate those first.
+    lowered = name.lower().translate(_UNDECOMPOSABLE)
+    nfkd = unicodedata.normalize("NFKD", lowered)
     ascii_name = nfkd.encode("ascii", "ignore").decode("ascii")
     return re.sub(r"[^a-z0-9]", "", ascii_name)
 
 
+_UNDECOMPOSABLE = str.maketrans({
+    "ł": "l", "ø": "o", "đ": "d", "ð": "d", "ħ": "h", "ŧ": "t",
+    "ß": "ss", "æ": "ae", "œ": "oe", "þ": "th", "ı": "i", "ŀ": "l",
+})
+
+
 # Common name variants: our DB name → list of possible API name substrings
 _ALIASES: dict[str, list[str]] = {
+    # ── 2026-08-04: found by scripts/check_odds_seam.py ──────────────────────
+    #
+    # Every one of these is a fixture served with no odds, no EV and no value
+    # gate, because `_teams_match` could not tie the odds feed's name to ours.
+    # The daily health check only ever reported the total ("49% matched"), so
+    # the individual clubs were invisible; the new script lists them by asking
+    # The Odds API's free /events endpoint what it calls each side.
+    #
+    # Two are self-inflicted: merging "Fortuna Sittard" into "For Sittard" and
+    # keeping "St. Gilloise" left our stored name further from the feed's than
+    # it had been. A merge is not finished until the odds seam is re-checked.
+    "For Sittard":      ["fortunasittard"],
+    "St. Gilloise":     ["unionsaintgilloise"],
+    "Sp Lisbon":        ["sportinglisbon"],
+    "Lommel United":    ["lommelsk"],
+    "Sparta Praha":     ["spartaprague"],
+    "Austria Vienna":   ["austriawien"],
+    "SK Rapid":         ["rapidwien"],
+    "QPR":              ["queensparkrangers"],
+    "AEK":              ["aekathens"],
+    "Iraklis 1908":     ["iraklisfc"],
+    "Racing Santander": ["realracingclubdesantander"],
+    "Sarpsborg 08":     ["sarpsborgfk"],
+    # Two of our Polish names are a bare prefix of the club's real name, and the
+    # leftover ("lubin", "krakow") is a city, not corporate noise — so the
+    # containment rule correctly refuses them and an alias is required. Both
+    # matter: "Zaglebie" must not reach Zagłębie Sosnowiec and "Wisla" must not
+    # reach Wisła Płock, and each of those is a different club.
+    "Zaglebie":         ["zaglebielubin"],
+    "Wisla":            ["wislakrakow"],
+    # Names the feed decorates on BOTH sides, or spells with a different stem,
+    # so no run of whole words equals ours.
+    "A. Lustenau":      ["austrialustenau"],
+    "Hamburg":          ["hamburgersv"],
+    "West Brom":        ["westbromwichalbion"],
+    "Halmstad":         ["halmstadsbk"],
+    # Broken by the 2026-08-04 merges themselves — the surviving spelling is
+    # further from the feed's than the one that was folded away. This is the
+    # standing hazard: every merge must be followed by check_odds_seam.py.
+    "Waasland-Beveren": ["skbeveren"],
+    "Gornik Z.":        ["gornikzabrze"],
+    "Buyuksehyr":       ["basaksehir", "istanbulbasaksehir"],
+    "Erzurumspor FK":   ["erzurumbb"],
+    # Finnish clubs are three-letter initialisms to us and initialism-plus-town
+    # to the feed.
+    "HJK":              ["hjkhelsinki"],
+    "SJK":              ["sjkseinajoki"],
+    "TPS":              ["tpsturku"],
+    "VPS":              ["vpsvaasa"],
     "Man City":        ["manchestercity", "mancity"],
     "Man United":      ["manchesterunited", "manunited"],
     "Nott'm Forest":   ["nottinghamforest", "nottmforest"],
@@ -1024,6 +1112,42 @@ _ALIASES: dict[str, list[str]] = {
 }
 
 
+_KNOWN_CLUB_SLUGS: dict[str, str] | None = None
+
+
+def _club_by_slug() -> dict[str, str]:
+    """slug → the club we hold under that exact name.
+
+    Built from the training data, cached for the process.
+    """
+    global _KNOWN_CLUB_SLUGS
+    if _KNOWN_CLUB_SLUGS is None:
+        try:
+            from scripts.team_resolver import known_team_names
+            _KNOWN_CLUB_SLUGS = {_slug(n): n for n in known_team_names() if _slug(n)}
+        except Exception:                      # no CSVs in this checkout
+            _KNOWN_CLUB_SLUGS = {}
+    return _KNOWN_CLUB_SLUGS
+
+
+def _words(name: str) -> list[str]:
+    """Slugged words, so containment can be checked at word boundaries."""
+    return [w for w in (_slug(part) for part in re.split(r"[^0-9A-Za-zÀ-ÿŁłØøĐđ]+", name)) if w]
+
+
+def _is_run_of(slug: str, words: list[str]) -> bool:
+    """Is `slug` one or more CONSECUTIVE whole words of `words`?"""
+    for i in range(len(words)):
+        acc = ""
+        for j in range(i, len(words)):
+            acc += words[j]
+            if acc == slug:
+                return True
+            if len(acc) > len(slug):
+                break
+    return False
+
+
 def _teams_match(api_name: str, db_name: str) -> bool:
     """Fuzzy match: slug equality OR alias substring check OR difflib ratio."""
     api_slug = _slug(api_name)
@@ -1032,13 +1156,29 @@ def _teams_match(api_name: str, db_name: str) -> bool:
     # Direct slug match
     if api_slug == db_slug:
         return True
+
+    # If the feed's name IS one of our clubs, it cannot be a fuzzy spelling of
+    # a different one. Nothing below knows that Rangers and Angers, or Paris FC
+    # and Aris, are separate clubs — the containment and difflib rules see only
+    # letters, and in a friendly or a European tie the two really do meet. We
+    # already hold both clubs by name; this is the one place that fact was
+    # never used.
+    owner = _club_by_slug().get(api_slug)
+    if owner is not None and _slug(owner) != db_slug:
+        return False
     # Substring containment (handles "FC Barcelona" vs "Barcelona", "AS Roma"
     # vs "Roma"). Guard against false positives: only when BOTH slugs are ≥ 4
     # chars, so a stray 1–3 char slug can't match half the league.
     if len(api_slug) >= 4 and len(db_slug) >= 4:
-        if api_slug.startswith(db_slug) or db_slug.startswith(api_slug):
-            return True
-        if db_slug in api_slug or api_slug in db_slug:
+        # Containment, but only on WORD boundaries of the longer name. A club
+        # that really is the other one plus decoration always contains it as
+        # whole words — "FC Barcelona", "Birmingham City", "AS Roma". Matching
+        # raw letters instead put "Aris" inside "Paris FC" (p-aris-fc), "Rakow"
+        # inside "Wisla Krakow", and "AEK" inside "AE Kifisia FC", each a
+        # different club.
+        api_words = _words(api_name)
+        db_words  = _words(db_name)
+        if _is_run_of(db_slug, api_words) or _is_run_of(api_slug, db_words):
             return True
     # Alias table
     for alias_list in _ALIASES.get(db_name, []):
@@ -1107,7 +1247,21 @@ def _fetch_league_games_cached(league: str) -> list:
             games = body
             break
 
-    cache_set(f"league_odds:{league}", games, LEAGUE_ODDS_TTL)
+    if games:
+        cache_set(f"league_odds:{league}", games, LEAGUE_ODDS_TTL)
+    else:
+        # An empty result is almost never the truth — it is a timeout, a 5xx or
+        # a momentarily-inactive sport key. Cached for the full 30 minutes it
+        # blanks the bookmaker panel for EVERY fixture in the league, with no
+        # error anywhere: on 2026-08-04 the Eredivisie blob held zero games
+        # while the same request, made by hand, returned nine.
+        #
+        # Cache it briefly instead: short enough that a blip heals on the next
+        # page view, long enough that a genuinely dead league is not re-fetched
+        # once per viewer.
+        log.warning(f"[odds] No games for {league} — caching the miss for "
+                    f"{EMPTY_ODDS_TTL}s only, not {LEAGUE_ODDS_TTL}s")
+        cache_set(f"league_odds:{league}", games, EMPTY_ODDS_TTL)
     return games
 
 
@@ -1799,11 +1953,25 @@ SUGGESTED: <market name> @ <decimal odds>
         client = Groq(api_key=GROQ_API_KEY, timeout=20.0)
         msg = client.chat.completions.create(
             model=GROQ_MODEL,
-            max_tokens=450,
+            # gpt-oss-120b is a REASONING model: its hidden chain of thought is
+            # billed against max_tokens before a single word of the answer is
+            # emitted. At the old 450 it spent 448 on reasoning, returned
+            # finish_reason="length" with content="", and this function cached
+            # that empty string for 24 hours — 91 of 184 narratives on the site
+            # were blank, with no error anywhere because the call was a 200.
+            # "low" cuts reasoning to ~7 tokens; the ceiling is headroom.
+            reasoning_effort="low",
+            max_tokens=900,
             temperature=0.3,
             messages=[{"role": "user", "content": prompt}],
         )
-        raw_text = msg.choices[0].message.content.strip()
+        raw_text = (msg.choices[0].message.content or "").strip()
+        if not raw_text:
+            # Empty content is a failure, not an answer. Raising routes it to
+            # the 5-minute cache below instead of the 24-hour one, so a blank
+            # narrative can never outlive the cause.
+            finish = msg.choices[0].finish_reason
+            raise RuntimeError(f"empty completion (finish_reason={finish})")
 
         # Split analysis from SUGGESTED line
         lines = raw_text.splitlines()

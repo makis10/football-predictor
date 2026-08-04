@@ -627,6 +627,91 @@ _CSV_TEAM_CANON: dict[str, str] = {
     # its Série A record. Botafogo-SP is a different club and stays separate
     # (see league_registry.KNOWN_DISTINCT).
     "Botafogo": "Botafogo RJ",                    #  76 BraB    → 476 BraA
+
+    # ── 2026-08-04: the historical-only remainder of that same import ────────
+    #
+    # The 41 the note above left for a club-by-club pass. Each was checked
+    # against the club's real history, because Romanian and Swedish football
+    # are full of bankruptcies and phoenix clubs that look identical to a
+    # feed-naming split from the data alone. Five were genuinely two clubs and
+    # are recorded in league_registry.KNOWN_DISTINCT instead.
+    #
+    # Three needed our own season data to settle: Poli Timisoara, Dacia Unirea
+    # Braila and SCM Gloria Buzau each have a dissolved namesake, and in all
+    # three the dissolved entity turns out to predate our files entirely, so
+    # both spellings sit inside the surviving club. Gloria Buzau's apparent
+    # 2022 overlap is its two-leg promotion play-off, filed in the Liga I
+    # season file — the case PLAYOFF_TIE exists for.
+    "IFK Norrkoping": "Norrkoping",                     #   17 → 420
+    "Politehnica Iasi": "Poli Iasi",                    #   82 → 381
+    "FC Astra Giurgiu": "Astra",                        #   25 → 319
+    "AFC Hermannstadt": "FC Hermannstadt",              #   67 → 279
+    "Trelleborgs": "Trelleborg",                        #   32 → 272
+    "Orebro SK": "Orebro",                              #  139 → 270
+    "Fortaleza EC": "Fortaleza",                        #   58 → 266
+    "Volendam": "FC Volendam",                          #  102 → 259
+    "Oster": "Osters IF",                               #   32 → 257
+    "Osters": "Osters IF",                              #   30 → 257
+    "Brage": "IK brage",                                #    2 → 257
+    "Nautico": "Nautico Recife",                        #   76 → 248
+    "Uta Arad": "UTA Arad",                             #  139 → 244
+    "Metaloglobus Bucharest": "Metaloglobus",           #   39 → 233
+    "Mioveni": "CS Mioveni",                            #   84 → 215
+    "GIF Sundsvall": "Sundsvall",                       #  169 → 214
+    "Legnica": "Miedz Legnica",                         #   71 → 209
+    "Puszcza": "Puszcza Niepoomice",                    #   68 → 208
+    "Landskrona": "Landskrona BoIS",                    #    2 → 199
+    "Varberg": "Varbergs BoIS FC",                      #  122 → 197
+    "Ostersunds FK": "Ostersunds",                      #  141 → 180
+    "Jonkopings": "Jonkopings Sodra",                   #   64 → 180
+    "Pandurii TG JIU": "Pandurii",                      #  125 → 178
+    "Sandecja Nowy S.": "Sandecja Nowy Sacz",           #   37 → 170
+    "Csikszereda M. Ciuc": "Csikszereda",               #   43 → 163
+    "ACS Poli Timisoara": "Poli Timisoara",             #   38 → 156
+    "Dalkurd": "Dalkurd FF",                            #   30 → 154
+    "Falkenbergs FF": "Falkenbergs",                    #  141 → 152
+    "Gefle IF": "Gefle",                                #  120 → 152
+    "Calarasi": "Dunarea Calarasi",                     #   44 → 152
+    "Varnamo": "IFK Varnamo",                           #  122 → 137
+    "Gloria Buzau": "SCM Gloria Buzau",                 #   41 → 131
+    "Atvidabergs FF": "Atvidabergs",                    #   60 → 120
+    "Braila": "Dacia Unirea Braila",                    #   25 → 111
+    "Syrianska": "Syrianska FC",                        #   60 → 90
+    "Ljungskile": "Ljungskile SK",                      #    2 → 77
+
+    # ── 2026-08-04, abbreviation splits ─────────────────────────────────────
+    #
+    # A state code or an initial standing in for a word — the audit could not
+    # see these until it learned that "same words but one, and that one is an
+    # abbreviation" is a naming pattern. Two of them were blocking bookmaker
+    # odds: the feed says "Atletico Paranaense" and "Erzurum BB", and both were
+    # sitting in our data as a SECOND club rather than as the one the fixture
+    # belongs to.
+    "Saint Etienne": "St Etienne",                #  111 → 480
+    "Sp Gijon": "Sporting Gijon",                 #  152 → 382
+    "Atletico GO": "Atletico Goianiense",         #  228 → 248
+    "Gornik Zabrze": "Gornik Z.",                 #  112 → 341
+    "America MG": "America Mineiro",              #  190 → 248
+    "Uniao Madeira": "U. Madeira",                #   34 →  80
+    "Erzurum BB": "Erzurumspor FK",               #   74 → 254
+    # Club Athletico Paranaense added the "h" to its name in 2018, so the
+    # old and new spellings differ in the middle of the first word AND in
+    # the second — no token, truncation or edit-distance rule reaches it.
+    # Found only because the odds feed says "Atletico Paranaense" while
+    # our fixtures say "Athletico-PR", and the seam check asked why.
+    "Atletico Paranaense": "Athletico-PR",        #   38 → 477
+
+    # ── 2026-08-04, last of the batch — confirmed by Makis ──────────────────
+    #
+    # Each is one club the two feeds spell differently, and the rule could not
+    # settle them from the data alone: every one sits either side of a
+    # promotion or a rename, so there is no season where both appear and
+    # nothing to contradict a phoenix-club reading either.
+    "SK Beveren": "Waasland-Beveren",             # 153 Belgium2 → 273 Belgium
+    "FC Clinceni": "Academica Clinceni",          # 111 Romania2 → 118 Romania
+    "Zaria Balti": "CSF Balti",                   #  76 → 135 Moldova
+    "Mladost DG": "Mladost Ljeskopolje",          #  75 → 105 Montenegro
+    "CSM Satu Mare": "Olimpia Satu Mare",         #  28 →  74 Romania2
 }
 
 

@@ -216,12 +216,19 @@ def chat(req: ChatRequest, request: Request, db: Session = Depends(get_db)):
         from groq import Groq
         client  = Groq(api_key=GROQ_API_KEY, timeout=25.0)
         resp    = client.chat.completions.create(
-            model       = GROQ_MODEL,
-            max_tokens  = 450,  # was 700 — chat answers don't need essays
-            temperature = 0.4,
-            messages    = messages,
+            model            = GROQ_MODEL,
+            # Reasoning tokens come out of max_tokens first — the same budget
+            # that silently emptied the match narratives. See the fix in
+            # odds_analysis_service._get_llm_analysis.
+            reasoning_effort = "low",
+            max_tokens       = 900,  # answers stay short; this is headroom
+            temperature      = 0.4,
+            messages         = messages,
         )
-        reply = resp.choices[0].message.content.strip()
+        reply = (resp.choices[0].message.content or "").strip()
+        if not reply:
+            raise RuntimeError(
+                f"empty completion (finish_reason={resp.choices[0].finish_reason})")
     except Exception as e:
         log.error("Groq chat request failed: %s", e)
         raise HTTPException(status_code=503, detail="LLM service temporarily unavailable.")

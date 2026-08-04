@@ -68,7 +68,14 @@ TEAM_MAP: dict[str, str] = {
 
 
 def map_team(name: str) -> str:
-    return TEAM_MAP.get(name, name)
+    """Feed name → the spelling the training data uses.
+
+    See update_results.map_team: the local table first, the project-wide
+    canonicaliser second, so a merged-away spelling can never be written back.
+    """
+    from scripts.team_resolver import canonical
+
+    return canonical(TEAM_MAP.get(name, name))
 
 
 def fetch_scores(api_key: str, days_from: int) -> list[dict]:

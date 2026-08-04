@@ -1,5 +1,5 @@
 {
-"as_of": "2026-08-03",
+"as_of": "2026-08-04",
 "count": 591,
 "clubs": {
 "Arsenal": {
@@ -1802,17 +1802,17 @@
 "country": "KAZ",
 "level": 0
 },
+"Beveren": {
+"elo": 1350.14,
+"country": "BEL",
+"level": 1
+},
 "Kortrijk": {
 "elo": 1350.14,
 "country": "BEL",
 "level": 1
 },
 "Lommel": {
-"elo": 1350.14,
-"country": "BEL",
-"level": 1
-},
-"Beveren": {
 "elo": 1350.14,
 "country": "BEL",
 "level": 1
@@ -1977,17 +1977,17 @@
 "country": "SVN",
 "level": 1
 },
-"Cambuur": {
-"elo": 1317.29,
-"country": "NED",
-"level": 1
-},
 "Willem II": {
 "elo": 1317.29,
 "country": "NED",
 "level": 1
 },
 "Den Haag": {
+"elo": 1317.29,
+"country": "NED",
+"level": 1
+},
+"Cambuur": {
 "elo": 1317.29,
 "country": "NED",
 "level": 1
@@ -2277,6 +2277,11 @@
 "country": "SCO",
 "level": 1
 },
+"Shakhtar": {
+"elo": 1257.33,
+"country": "UKR",
+"level": 1
+},
 "Polissya Zhytomyr": {
 "elo": 1257.33,
 "country": "UKR",
@@ -2317,22 +2322,17 @@
 "country": "UKR",
 "level": 1
 },
+"Kudrivka": {
+"elo": 1257.33,
+"country": "UKR",
+"level": 1
+},
 "Chernomorets": {
 "elo": 1257.33,
 "country": "UKR",
 "level": 1
 },
 "FC Kharkiv": {
-"elo": 1257.33,
-"country": "UKR",
-"level": 1
-},
-"Shakhtar": {
-"elo": 1257.33,
-"country": "UKR",
-"level": 1
-},
-"Kudrivka": {
 "elo": 1257.33,
 "country": "UKR",
 "level": 1
@@ -2862,12 +2862,12 @@
 "country": "FAR",
 "level": 0
 },
-"Zemun": {
+"Macva Sabac": {
 "elo": 1049.02,
 "country": "SRB",
 "level": 1
 },
-"Macva Sabac": {
+"Zemun": {
 "elo": 1049.02,
 "country": "SRB",
 "level": 1

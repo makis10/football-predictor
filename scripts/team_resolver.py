@@ -253,6 +253,20 @@ COMMON_ALIASES: dict[str, str] = {
     "Ranger's": "Rangers",
     # Fixture-feed short form; the CSVs have always said NAC Breda.
     "NAC": "NAC Breda",
+    # ── 2026-08-04: dead ends in the results feeds' own TEAM_MAPs ────────────
+    #
+    # `update_results.py` and `update_european_results.py` each keep a local
+    # map for their feed's quirks, and six of those entries pointed at a club
+    # name the CSVs have never contained — so a finished match written under
+    # one matched no fixture and settled nothing. Found by running every
+    # TEAM_MAP key through the resolver and checking the result exists; both
+    # mappers now fall through to `canonical`, which is what these fix.
+    "AC Milan": "Milan",
+    "Bayer Leverkusen": "Leverkusen",
+    "Coventry City": "Coventry",
+    "Hull City": "Hull",
+    "RKC Waalwijk": "Waalwijk",
+    "Sheffield Wednesday": "Sheffield Weds",
 
     # ── 2026-07-30 league expansion (Belgium, Turkey, Scotland, Denmark,
     # Sweden, Norway, Poland, Austria, Switzerland, Romania, Ireland, Finland).
@@ -306,7 +320,10 @@ COMMON_ALIASES: dict[str, str] = {
     # "Corvinul Hunedoara" → "Corvinul" removed 2026-08-03: the Romania2 import
     # brought 86 rows under the full name, so it is now the canonical one and
     # the feed spelling needs no alias at all.
-    "Csikszereda": "Csikszereda M. Ciuc",
+    # "Csikszereda" → "Csikszereda M. Ciuc" removed 2026-08-04: the club-by-club
+    # pass merged the two the other way (163 rows vs 43), so this alias pointed
+    # at a name that no longer exists and every Csikszereda fixture would have
+    # been filed under a club with no history.
     "Petrolul Ploiesti": "Petrolul", "Rapid": "FC Rapid Bucuresti",
     "Sepsi OSK Sfantu Gheorghe": "Sepsi Sf. Gheorghe",
     "Universitatea Cluj": "U. Cluj", "Universitatea Craiova": "Univ. Craiova",
