@@ -113,7 +113,18 @@ TEAM_MAP: dict[str, str] = {
 
 
 def map_team(short_name: str) -> str:
-    return TEAM_MAP.get(short_name, short_name)
+    """Feed name → the spelling the training data uses.
+
+    The local TEAM_MAP is this feed's own quirks; `canonical` then applies the
+    project-wide tables on top. Both steps are needed and the order matters:
+    entries here can point at a name that has since been merged away — this map
+    still says "FC Volendam" → "Volendam", which was right until the two were
+    canonicalised the other way round — and the second step corrects it instead
+    of writing a fixture under a club name that no longer exists.
+    """
+    from scripts.team_resolver import canonical
+
+    return canonical(TEAM_MAP.get(short_name, short_name))
 
 
 def fetch_finished(api_key: str, days_back: int) -> list[dict]:

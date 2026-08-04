@@ -84,6 +84,12 @@ NAME_DISAMBIGUATION: dict[tuple[str, str], str] = {
     # against Aberdeen, St Mirren, Motherwell and Falkirk — were filed as the
     # Andorran club, to be priced off Andorran form.
     ("Andorra", "Ranger's"): "Ranger's Andorra",
+    # Not an ambiguous name but a malformed one: the feed glued the club's
+    # former and current names together into a single cell. One row, and the
+    # club it belongs to is not in doubt — AFC Eskilstuna played Superettan in
+    # 2020 and Örgryte's opponent that day was them. Handled here so a re-import
+    # of Sweden2_2020 cannot bring it back.
+    ("Sweden2", "Vasby UnitedAFC Eskilstuna"): "AFC Eskilstuna",
 }
 
 
@@ -152,6 +158,34 @@ KNOWN_DISTINCT: frozenset[tuple[str, str]] = frozenset({
     # this line the audit keeps proposing the Ribeirão Preto club instead.
     ("Botafogo", "Botafogo SP"),
     ("Botafogo RJ", "Botafogo SP"),
+    # ── 2026-08-04, from the historical remainder of that same import ───────
+    # Romanian phoenix clubs. The original was liquidated in each case and the
+    # side playing today inherited nothing but the name, so the two strings sit
+    # either side of a multi-season hole — which is also exactly what one club
+    # looks like when two feeds spell it differently. Only club history
+    # separates them.
+    ("Targu Mures", "ASA Targu Mures"),      # ASA 2013 dissolved 2018;
+                                             # AFC ASA re-established 2021
+    ("Bistrita", "Gloria Bistrita"),         # ACF Gloria bankrupt 2015; FC
+                                             # Gloria Bistrița-Năsăud born 2018
+    ("Ceahlaul", "Ceahlaul Piatra Neamt"),   # FC Ceahlăul dissolved 2016; CSM
+                                             # Ceahlăul restarted in Liga V
+    # Hammarby Talang FF is a separate feeder club: Hammarby IF bought IK Frej
+    # Täby's senior team in 2021 and rebranded it to inherit Frej's league
+    # place. Merging would put a third-tier side's results on the Allsvenskan
+    # club's Elo.
+    ("Hammarby", "Hammarby Talang"),
+    # ── 2026-08-04, false positives of the abbreviation rule ────────────────
+    # Same first word, different town or different club entirely.
+    ("Atletico Goianiense", "Athletico-PR"),         # Goiânia vs Curitiba
+    ("Unirea Dej", "Unirea Ungheni"),                # two different towns
+    ("Vorskla Poltava", "SK Poltava"),               # two Poltava clubs
+    ("NFK Minsk", "Torpedo Minsk"),
+    ("Metal Kharkiv", "FC Kharkiv"),
+    ("Aerostar Bacau", "FC Bacau"),
+    # FC Dnipro Dnipropetrovsk was liquidated in 2019; SC Dnipro-1 was founded
+    # separately in 2017 and is not its legal successor.
+    ("Dnipro-1", "Dnipro Dnipropetrovsk"),
 })
 
 

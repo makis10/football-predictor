@@ -100,6 +100,44 @@ def _truncated_words(short: list[str], long_: list[str]) -> bool:
     return shortened
 
 
+def _abbreviated_word(a: list[str], b: list[str]) -> bool:
+    """Same words but one, and that one is an abbreviation of the other.
+
+    "Atletico GO" / "Atletico Goianiense", "Gornik Z." / "Gornik Zabrze",
+    "America MG" / "America Mineiro" — a state code or an initial standing in
+    for a word. The truncated-words rule cannot see these because "go" is not a
+    prefix of "goianiense" in any useful sense, and a plain shared-prefix rule
+    is far too loose: "Hapoel" alone would pair Tel Aviv with Acre.
+
+    Requiring the same word COUNT and exactly one differing position, with the
+    short side at most three characters, keeps it to real abbreviations.
+    """
+    # At least two words, or the "shared" part is nothing at all and every
+    # three-letter club in the data pairs with every long one: CRB with
+    # Nautico, AIK with Brage.
+    if len(a) != len(b) or len(a) < 2:
+        return False
+    diff = [(x, y) for x, y in zip(a, b) if x != y]
+    if len(diff) != 1:
+        return False
+    x, y = diff[0]
+    short, long_ = sorted((x, y), key=len)
+    return len(short) <= 3 and len(long_) >= 4
+
+
+def _canon(name: str) -> str:
+    """Follow features._CSV_TEAM_CANON to the spelling the model actually uses."""
+    from backend.app.ml.features import _CSV_TEAM_CANON
+
+    seen = {name}
+    while name in _CSV_TEAM_CANON:
+        name = _CSV_TEAM_CANON[name]
+        if name in seen:
+            break
+        seen.add(name)
+    return name
+
+
 class Corpus:
     """Every name in the CSVs, with where it played, when, and against whom."""
 
@@ -157,7 +195,10 @@ class Corpus:
     # ── the rule ──────────────────────────────────────────────────────────────
     def verdict(self, a: str, b: str) -> tuple[bool, str]:
         """(same_club, why)."""
-        if are_known_distinct(a, b):
+        # KNOWN_DISTINCT names CLUBS, not spellings, so resolve both sides
+        # through the canon table first: "Atletico GO" and "Atletico Paranaense"
+        # are recorded as distinct under their surviving names.
+        if are_known_distinct(a, b) or are_known_distinct(_canon(a), _canon(b)):
             return False, "reviewed: two clubs (league_registry.KNOWN_DISTINCT)"
         if b in self.opponents[a]:
             return False, "they played each other"
@@ -226,7 +267,17 @@ class Corpus:
                 if _truncated_words(tx, ty) or _truncated_words(ty, tx):
                     pairs.add(tuple(sorted((x, y))))
                     continue
+                # A long shared prefix. The truncated-words rule needs every
+                # word of the short name to line up, so it missed pairs whose
+                # LAST word differs — "Erzurum BB" / "Erzurumspor FK" and
+                # "Atletico GO" / "Atletico Goianiense" both stayed split, and
+                # each is one club. False candidates from a shared city name
+                # ("Atletico MG" / "Atletico GO") are what the verdict rule is
+                # for: those two played each other.
                 sy = _slug(y)
+                if _abbreviated_word(tx, ty):
+                    pairs.add(tuple(sorted((x, y))))
+                    continue
                 if (len(sx) >= 5 and len(sy) >= 5 and abs(len(sx) - len(sy)) <= 3
                         and difflib.SequenceMatcher(None, sx, sy).ratio() >= 0.88):
                     pairs.add(tuple(sorted((x, y))))

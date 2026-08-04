@@ -688,6 +688,18 @@ docker compose exec -T backend \
     python scripts/audit_team_identity.py \
     2>&1 | tee -a "$LOG" || health_alerts=1
 
+# Odds seam. The completeness check reports it as a bare percentage ("only 49%
+# of tracked-league predictions matched odds"), which says something is wrong
+# but never which club — 27 were unmatched on 2026-08-04 and each one was a
+# fixture served with no odds, no EV and no value gate. This names them by
+# asking The Odds API's /events endpoint what it calls each side. That endpoint
+# returns no prices and costs no quota, so it is safe to run every day.
+echo "" >> "$LOG"
+echo "[health] Odds-seam check …" | tee -a "$LOG"
+docker compose exec -T backend \
+    python scripts/check_odds_seam.py \
+    2>&1 | tee -a "$LOG" || health_alerts=1
+
 # ── Run summary ──────────────────────────────────────────────────────────────
 # Turn the recorded $LINENO list back into the step headers a human recognises,
 # so "one or more steps failed" names them instead of sending anyone log-diving.

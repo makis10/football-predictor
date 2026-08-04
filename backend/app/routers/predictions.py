@@ -660,11 +660,18 @@ def get_postmortem(match_id: int, db: Session = Depends(get_db)):
         client = Groq(api_key=GROQ_API_KEY)
         msg = client.chat.completions.create(
             model=GROQ_MODEL,
-            max_tokens=300,
+            # Reasoning tokens are billed against max_tokens before the answer
+            # starts, so 300 was spent thinking and the reply came back empty.
+            # See the same fix in odds_analysis_service._get_llm_analysis.
+            reasoning_effort="low",
+            max_tokens=800,
             temperature=0.35,
             messages=[{"role": "user", "content": prompt}],
         )
-        text = msg.choices[0].message.content.strip()
+        text = (msg.choices[0].message.content or "").strip()
+        if not text:
+            raise RuntimeError(
+                f"empty completion (finish_reason={msg.choices[0].finish_reason})")
     except Exception as e:
         import logging
         logging.getLogger("predictions").error("postmortem Groq call failed for match %s: %s", match_id, e)
