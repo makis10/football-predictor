@@ -712,6 +712,11 @@ _CSV_TEAM_CANON: dict[str, str] = {
     "Zaria Balti": "CSF Balti",                   #  76 → 135 Moldova
     "Mladost DG": "Mladost Ljeskopolje",          #  75 → 105 Montenegro
     "CSM Satu Mare": "Olimpia Satu Mare",         #  28 →  74 Romania2
+
+    # ── 2026-08-08 ──────────────────────────────────────────────────────────
+    # The Germany2 feed switched to the club's full name this season, so one
+    # 2026 row arrived as "1. FC Heidenheim" against 272 as "FC Heidenheim".
+    "1. FC Heidenheim": "FC Heidenheim",           #   1 → 272
 }
 
 

@@ -192,8 +192,14 @@ def map_team(short_name: str) -> str:
     global _RESOLVER
     from scripts.team_resolver import build_resolver, canonical, known_team_names
 
+    # canonical() on the way OUT, not just on the fallback. A TEAM_MAP entry is
+    # written for the feed's quirk of the day and then outlives a merge: nine of
+    # them still named clubs the training data had folded away, so every
+    # Eredivisie fixture came back as "NEC Nijmegen" and every Primeira one as
+    # "Vitoria SC" — names with no history, priced off default features, and
+    # re-created by this fetcher the morning after each cleanup.
     if short_name in TEAM_MAP:
-        return TEAM_MAP[short_name]
+        return canonical(TEAM_MAP[short_name])
     mapped = canonical(short_name)
     if mapped != short_name:
         return mapped

@@ -98,10 +98,22 @@ done
 
 # ── launchd's own view ────────────────────────────────────────────────────────
 echo
-echo "${bold}launchd${off} ${dim}(pid '-' = idle; exit ≠ 0 = last run failed)${off}"
+echo "${bold}launchd${off} ${dim}(● = running now · ✓ = idle, last run clean · ✗ = idle, last run failed)${off}"
+# A running job is healthy whatever its last exit code was. cloudflared has
+# KeepAlive, so it dies and is restarted whenever the Mac wakes before the
+# network is up — one DNS timeout, back in a second — and reporting that stale
+# exit code as ✗ made a self-healing job look broken every single day.
 launchctl list 2>/dev/null | grep football | while read -r pid exit label; do
-    mark="${grn}✓${off}"; [ "$exit" != "0" ] && mark="${red}✗${off}"
-    printf "  %b %-40s pid=%-6s exit=%s\n" "$mark" "${label#com.football-predictor.}" "$pid" "$exit"
+    name="${label#com.football-predictor.}"
+    if [ "$pid" != "-" ]; then
+        mark="${grn}●${off}"; note="${dim}(running)${off}"
+        [ "$exit" != "0" ] && note="${dim}(running · restarted after exit $exit)${off}"
+    elif [ "$exit" = "0" ]; then
+        mark="${grn}✓${off}"; note=""
+    else
+        mark="${red}✗${off}"; note="${red}last run failed (exit $exit)${off}"
+    fi
+    printf "  %b %-34s pid=%-6s %b\n" "$mark" "$name" "$pid" "$note"
 done
 
 echo

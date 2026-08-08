@@ -58,8 +58,14 @@ def map_team(name: str) -> str:
     table (the Greek clubs are spelled three different ways across our feeds)."""
     from scripts.team_resolver import canonical
 
+    # canonical() on the way OUT, not just on the fallback. A TEAM_MAP entry is
+    # written for the feed's quirk of the day and then outlives a merge: nine of
+    # them still named clubs the training data had folded away, so every
+    # Eredivisie fixture came back as "NEC Nijmegen" and every Primeira one as
+    # "Vitoria SC" — names with no history, priced off default features, and
+    # re-created by this fetcher the morning after each cleanup.
     if name in TEAM_MAP:
-        return TEAM_MAP[name]
+        return canonical(TEAM_MAP[name])
     return canonical(name)
 
 

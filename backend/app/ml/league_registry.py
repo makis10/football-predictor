@@ -175,6 +175,11 @@ KNOWN_DISTINCT: frozenset[tuple[str, str]] = frozenset({
     # place. Merging would put a third-tier side's results on the Allsvenskan
     # club's Elo.
     ("Hammarby", "Hammarby Talang"),
+    # FK BSK Banja Luka (founded 1932, API-Football id 21736) against FK
+    # Borac Banja Luka (1926, id 3364). Same city, two clubs — BSK reached
+    # the Bosnian top flight in 2026 and arrived with a single row, which
+    # is exactly what a feed-naming split also looks like.
+    ("Borac Banja Luka", "BSK Banja Luka"),
     # ── 2026-08-04, false positives of the abbreviation rule ────────────────
     # Same first word, different town or different club entirely.
     ("Atletico Goianiense", "Athletico-PR"),         # Goiânia vs Curitiba

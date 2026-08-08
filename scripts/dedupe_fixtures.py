@@ -61,10 +61,15 @@ def main() -> None:
             Match.match_date >= date.today() - timedelta(days=args.days_back)
         ).all()
 
+        # The key is the tie, NOT the ordered pair: a fixture written before the
+        # draw settled the venue and again afterwards differs only by which
+        # side is home. Four such pairs sat in the DB on 2026-08-07 — the site
+        # listed "Pafos v RB Salzburg" and "RB Salzburg v Pafos" on the same
+        # day, with different predictions on each.
         groups: dict[tuple, list[Match]] = defaultdict(list)
         for m in rows:
-            groups[(m.league, m.match_date,
-                    _slug(canon(m.home_team)), _slug(canon(m.away_team)))].append(m)
+            sides = frozenset((_slug(canon(m.home_team)), _slug(canon(m.away_team))))
+            groups[(m.league, m.match_date, sides)].append(m)
 
         dupes = {k: v for k, v in groups.items() if len(v) > 1}
         if not dupes:

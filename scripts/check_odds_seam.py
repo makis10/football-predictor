@@ -39,17 +39,35 @@ EVENTS_URL = "https://api.the-odds-api.com/v4/sports/{key}/events"
 SPORTS_URL = "https://api.the-odds-api.com/v4/sports/"
 
 
-def _active_keys(api_key: str) -> set[str]:
-    r = requests.get(SPORTS_URL, params={"apiKey": api_key, "all": "true"}, timeout=20)
-    r.raise_for_status()
+def _active_keys(api_key: str) -> set[str] | None:
+    """Sport keys with a live market, or None if the listing is unreachable."""
+    try:
+        r = requests.get(SPORTS_URL, params={"apiKey": api_key, "all": "true"},
+                         timeout=20)
+        r.raise_for_status()
+    except requests.RequestException as exc:
+        print(f"could not list sports: {type(exc).__name__}")
+        return None
     return {s["key"] for s in r.json() if s.get("active")}
 
 
-def _events(sport_key: str, api_key: str) -> list[dict]:
-    r = requests.get(EVENTS_URL.format(key=sport_key),
-                     params={"apiKey": api_key}, timeout=20)
+def _events(sport_key: str, api_key: str) -> list[dict] | None:
+    """Upcoming events for a sport key, or None when the request failed.
+
+    None and [] must stay distinguishable: an empty list means the market has
+    no fixtures, a failure means we learned nothing. Returning [] for both let
+    a single read timeout report every club in the league as unmatched — and,
+    worse, the bare exception killed the health step outright.
+    """
+    try:
+        r = requests.get(EVENTS_URL.format(key=sport_key),
+                         params={"apiKey": api_key}, timeout=20)
+    except requests.RequestException as exc:
+        print(f"  [warn] {sport_key}: {type(exc).__name__} — skipped")
+        return None
     if r.status_code != 200:
-        return []
+        print(f"  [warn] {sport_key}: HTTP {r.status_code} — skipped")
+        return None
     body = r.json()
     return body if isinstance(body, list) else []
 
@@ -84,9 +102,12 @@ def main() -> int:
         ours[m.league].update((m.home_team, m.away_team))
 
     active = _active_keys(api_key)
+    if active is None:
+        return 0                       # unknown, not a failure to act on
     leagues = [args.league] if args.league else sorted(ours)
     unmatched: dict[str, set[str]] = collections.defaultdict(set)
     no_market: list[str] = []
+    unreachable: list[str] = []
 
     for league in leagues:
         keys = [LEAGUE_SPORT_KEY.get(league)] + LEAGUE_SPORT_KEY_ALTS.get(league, [])
@@ -96,7 +117,11 @@ def main() -> int:
             no_market.append(f"{league} ({keys[0] if keys else 'no sport key at all'})")
             continue
         for key in live:
-            for event in _events(key, api_key):
+            events = _events(key, api_key)
+            if events is None:
+                unreachable.append(f"{league} ({key})")
+                continue
+            for event in events:
                 for side in ("home_team", "away_team"):
                     api_name = event.get(side) or ""
                     if not api_name:
@@ -109,6 +134,12 @@ def main() -> int:
         for entry in no_market:
             print(f"  {entry}")
         print("  (nothing to fix here — these fixtures cannot carry odds)\n")
+
+    if unreachable:
+        print(f"── could not be checked ({len(unreachable)}) " + "─" * 34)
+        for entry in unreachable:
+            print(f"  {entry}")
+        print("  (a request failed — these are unknown, not clean)\n")
 
     total = sum(len(v) for v in unmatched.values())
     print(f"── odds-feed names we fail to match ({total}) " + "─" * 30)

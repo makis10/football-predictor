@@ -114,6 +114,51 @@ def _to_int(v):
         return None
 
 
+_HISTORY_COUNTRY: dict[str, str] | None = None
+
+
+def _country_from_history(team: str) -> str:
+    """The country a club plays in according to the TRAINING data.
+
+    The fixture league is the first source, but a club whose only upcoming
+    match is a friendly has no country there — ClubFriendly draws from
+    everywhere. That is how Brazil's Athletic Club, of Serie B, was searched
+    unfiltered and cached as Athletic Bilbao, id 531. The CSVs know which
+    league it plays; this reads that.
+
+    A club appearing in more than one country's files gets no answer rather
+    than a guess.
+    """
+    global _HISTORY_COUNTRY
+    if _HISTORY_COUNTRY is None:
+        import collections
+        import csv
+        import glob
+
+        from backend.app.ml.league_registry import LEAGUE_COUNTRY_TIER
+
+        seen: dict[str, set[str]] = collections.defaultdict(set)
+        raw = os.path.join(ROOT, "backend", "data", "raw")
+        for path in glob.glob(os.path.join(raw, "*.csv")):
+            league = os.path.basename(path)[:-4].rpartition("_")[0]
+            entry = LEAGUE_COUNTRY_TIER.get(league)
+            if not entry:
+                continue
+            with open(path, newline="", encoding="latin-1") as fh:
+                reader = csv.DictReader(fh)
+                cols = reader.fieldnames or []
+                home = "home_team" if "home_team" in cols else "HomeTeam"
+                away = "away_team" if "away_team" in cols else "AwayTeam"
+                if home not in cols or away not in cols:
+                    continue
+                for row in reader:
+                    for name in (row.get(home), row.get(away)):
+                        if name:
+                            seen[name.strip()].add(entry[0])
+        _HISTORY_COUNTRY = {n: next(iter(cs)) for n, cs in seen.items() if len(cs) == 1}
+    return _HISTORY_COUNTRY.get(team, "")
+
+
 def build_id_cache(our_teams: set[str], season: int, budget: Budget,
                    roster_out: set | None = None, search_missing: bool = True,
                    team_league: dict[str, str] | None = None) -> dict:
@@ -155,7 +200,18 @@ def build_id_cache(our_teams: set[str], season: int, budget: Budget,
                 roster_out.add(api_id)
             aslug = _slug(api_name)
             our = slug_to_name.get(aslug) or api_alias.get(aslug)
+            # `slug_to_name` spans every club we hold, not just this league's,
+            # so a roster name that collides with a club elsewhere lands on the
+            # wrong one: La Liga's "Athletic Club" is Bilbao, and it was being
+            # filed against Brazil's Athletic Club of Serie B — the same
+            # collision the /teams?search path already guards against.
             if our:
+                api_country = (t["team"].get("country") or "").strip()
+                our_country = _country_from_history(our)
+                if api_country and our_country and api_country != our_country:
+                    print(f"  [skip] {api_name} ({api_country}) is not our "
+                          f"{our!r} ({our_country})")
+                    continue
                 cache[our] = api_id
                 matched.add(our)
     # Fallback: /teams?search= for teams outside the tracked leagues (friendly
@@ -187,7 +243,8 @@ def build_id_cache(our_teams: set[str], season: int, budget: Budget,
             # country. Without this the search happily returns "Porto" from
             # BRAZIL for Portugal's Porto, "Milan" from Gambia, "Roma" from
             # Slovenia — all accepted, all wrong, none detectable downstream.
-            want_country = LEAGUE_COUNTRY.get((team_league or {}).get(team, ""))
+            want_country = (LEAGUE_COUNTRY.get((team_league or {}).get(team, ""))
+                            or _country_from_history(team))
             if want_country:
                 resp = [t for t in resp
                         if (t["team"].get("country") or "") == want_country]

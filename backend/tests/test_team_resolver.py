@@ -32,13 +32,34 @@ def _resolve():
 # ── 1. corporate affixes: same club ──────────────────────────────────────────
 
 def test_corporate_affix_still_resolves_to_the_same_club():
+    """"1. FC", "SC", "AFC", "Calcio" decorate a name without changing the club.
+
+    Asserted against the CANONICAL spelling rather than a literal, because a
+    merge moves it: "1. FC Heidenheim" resolved to "Heidenheim" until the club
+    was merged onto "FC Heidenheim", and this test then failed on a resolver
+    that was doing exactly the right thing.
+    """
+    from backend.app.ml.features import _CSV_TEAM_CANON
+
+    def canon(name):
+        seen = {name}
+        while name in _CSV_TEAM_CANON:
+            name = _CSV_TEAM_CANON[name]
+            if name in seen:
+                break
+            seen.add(name)
+        return name
+
     r = _resolve()
-    assert r("1. FC Heidenheim") == "Heidenheim"
-    assert r("1899 Hoffenheim") == "Hoffenheim"
-    assert r("SC Freiburg") == "Freiburg"
-    assert r("AFC Bournemouth") == "Bournemouth"
-    assert r("Borussia Dortmund") == "Dortmund"
-    assert r("Cagliari Calcio") == "Cagliari"
+    for decorated, plain in (("1. FC Heidenheim", "Heidenheim"),
+                             ("1899 Hoffenheim", "Hoffenheim"),
+                             ("SC Freiburg", "Freiburg"),
+                             ("AFC Bournemouth", "Bournemouth"),
+                             ("Borussia Dortmund", "Dortmund"),
+                             ("Cagliari Calcio", "Cagliari")):
+        assert r(decorated) == canon(plain), (
+            f"{decorated!r} should resolve to the club stored as "
+            f"{canon(plain)!r}, got {r(decorated)!r}")
 
 
 def test_spelling_drift_resolves():

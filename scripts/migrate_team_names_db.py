@@ -35,6 +35,7 @@ def main() -> int:
     from scripts.team_resolver import alias_map
 
     renames = {src: dst for src, dst in alias_map().items() if src != dst}
+    renames.update(_accent_folds())
     changes: collections.Counter = collections.Counter()
 
     db = SessionLocal()
@@ -61,7 +62,76 @@ def main() -> int:
           f"across {len(rows)} fixture(s)")
     for label, n in sorted(changes.items(), key=lambda kv: -kv[1]):
         print(f"  {n:5d}  {label}")
+
+    _migrate_id_cache(renames, args.dry_run)
     return 0
+
+
+def _accent_folds() -> dict[str, str]:
+    """DB names that are an accented spelling of a club we hold.
+
+    The fixture feeds write "Velež" and "Žilina"; the history importer strips
+    the accents, so the training data says "Velez" and "Zilina". Nothing bridged
+    the two, and the consequences were silent and doubled: `update_results`
+    matches team names with `==`, so those fixtures could never be scored, and
+    the model had no history for them either, so they were served as
+    insufficient-data cards.
+
+    Only folds where the ASCII form is a name we actually hold — an accented
+    name with no ASCII counterpart is a club we simply do not know.
+    """
+    import unicodedata
+
+    from backend.app.database import SessionLocal
+    from backend.app.models.match import Match
+    from scripts.team_resolver import known_team_names
+
+    known = set(known_team_names())
+    db = SessionLocal()
+    try:
+        rows = db.query(Match.home_team, Match.away_team).all()
+    finally:
+        db.close()
+
+    folds: dict[str, str] = {}
+    for home, away in rows:
+        for name in (home, away):
+            if not name or name in known or name in folds:
+                continue
+            ascii_name = (unicodedata.normalize("NFKD", name)
+                          .encode("ascii", "ignore").decode())
+            if ascii_name and ascii_name != name and ascii_name in known:
+                folds[name] = ascii_name
+    return folds
+
+
+def _migrate_id_cache(renames: dict[str, str], dry_run: bool) -> None:
+    """Move cached API-Football ids onto the surviving club name.
+
+    `club_team_ids.json` is keyed by OUR name, so a merge orphans the id: after
+    "SK Beveren" folded into "Waasland-Beveren" the id sat under a name nothing
+    looks up any more, and the daily check reported the club as having no API
+    id at all — no cards, no corners, no player props.
+    """
+    import json
+    import os
+
+    path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                        "backend", "data", "models", "club_team_ids.json")
+    if not os.path.isfile(path):
+        return
+    cache = json.load(open(path))
+    moved: list[str] = []
+    for old_name, new_name in renames.items():
+        if old_name in cache and cache[old_name] and not cache.get(new_name):
+            cache[new_name] = cache[old_name]
+            moved.append(f"{old_name} → {new_name} (id {cache[old_name]})")
+        cache.pop(old_name, None)
+    print(f"\n{'would move' if dry_run else 'moved'} {len(moved)} cached id(s)")
+    for label in moved:
+        print(f"  {label}")
+    if not dry_run:
+        json.dump(cache, open(path, "w"), ensure_ascii=False, indent=1)
 
 
 if __name__ == "__main__":

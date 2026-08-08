@@ -492,8 +492,13 @@ export default async function StatsPage({ searchParams }: PageProps) {
         <LeagueTable rows={s.by_league} />
       </section>
 
-      {/* ── International — By Tournament ─────────────────────────────────── */}
-      {nationalStats && nationalStats.by_tournament.length > 0 && (
+      {/* ── International — By Tournament ───────────────────────────────────
+          Only on the all-leagues view. Picking a club league is a request to
+          see THAT league, and this table answers a different question — on
+          /stats?league=EPL it put 51 AFC Asian Cup games under a Premier
+          League heading. The International filter has its own view above, with
+          its own copy of this table. */}
+      {!league && nationalStats && nationalStats.by_tournament.length > 0 && (
         <section>
           <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-3">
             {t("stats.intlByTournament")}
