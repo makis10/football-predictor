@@ -25,6 +25,71 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: "2026-08-08-club-names",
+    date: "2026-08-08",
+    tag: "improvement",
+    title: {
+      en: "Clubs now show their real names",
+      el: "Οι ομάδες εμφανίζονται πλέον με το σωστό τους όνομα",
+    },
+    body: {
+      en: "Göztepe, Beşiktaş, Raków, VfB Stuttgart, Rayo Vallecano, Deportivo La Coruña and about 145 others were displayed under the abbreviated, accent-stripped spelling our data sources use. They now appear as they are actually written.",
+      el: "Göztepe, Beşiktaş, Raków, VfB Stuttgart, Rayo Vallecano, Deportivo La Coruña και άλλες ~145 εμφανίζονταν με τη συντομευμένη γραφή χωρίς τόνους που χρησιμοποιούν οι πηγές μας. Τώρα φαίνονται όπως γράφονται πραγματικά.",
+    },
+  },
+  {
+    id: "2026-08-08-one-club-one-record",
+    date: "2026-08-08",
+    tag: "fix",
+    title: {
+      en: "One club, one record — better predictions",
+      el: "Μία ομάδα, ένα ιστορικό — καλύτερες προβλέψεις",
+    },
+    body: {
+      en: "Our two data sources spelled the same club differently, so 143 clubs had their history split in two — exactly at the moment they were promoted or relegated. Each half was rated on a fraction of its real record. Their form and strength ratings are now computed from the full history.",
+      el: "Οι δύο πηγές μας έγραφαν την ίδια ομάδα αλλιώς, οπότε 143 σύλλογοι είχαν το ιστορικό τους κομμένο στα δύο — ακριβώς τη στιγμή που ανέβαιναν ή έπεφταν κατηγορία. Κάθε κομμάτι βαθμολογούνταν με ένα μέρος της πραγματικής του πορείας. Η φόρμα και η δυναμική τους υπολογίζονται πλέον από όλο το ιστορικό.",
+    },
+  },
+  {
+    id: "2026-08-08-duplicate-fixtures",
+    date: "2026-08-08",
+    tag: "fix",
+    title: {
+      en: "Duplicate and phantom fixtures removed",
+      el: "Αφαιρέθηκαν διπλοί και ανύπαρκτοι αγώνες",
+    },
+    body: {
+      en: "A few European ties appeared twice with the sides swapped, each carrying its own prediction, and one listed a club that was not even in the competition. They are gone, and the check that finds them now runs every day.",
+      el: "Κάποιες ευρωπαϊκές αναμετρήσεις εμφανίζονταν δύο φορές με αντίστροφη έδρα, η καθεμία με δική της πρόβλεψη, και μία έδειχνε ομάδα που δεν συμμετείχε καν στη διοργάνωση. Αφαιρέθηκαν, και ο έλεγχος που τις εντοπίζει τρέχει πλέον καθημερινά.",
+    },
+  },
+  {
+    id: "2026-08-08-more-odds",
+    date: "2026-08-08",
+    tag: "improvement",
+    title: {
+      en: "Bookmaker odds on more matches",
+      el: "Αποδόσεις bookmaker σε περισσότερους αγώνες",
+    },
+    body: {
+      en: "Twenty-seven clubs were named differently by the odds feed than by us, so their matches were served with no odds, no expected value and no value check. All but one are matched now.",
+      el: "Είκοσι επτά σύλλογοι ονομάζονταν αλλιώς από το feed αποδόσεων απ' ό,τι από εμάς, οπότε οι αγώνες τους σερβίρονταν χωρίς αποδόσεις, χωρίς EV και χωρίς έλεγχο αξίας. Όλοι πλην ενός ταιριάζουν πλέον.",
+    },
+  },
+  {
+    id: "2026-08-08-ai-analysis",
+    date: "2026-08-08",
+    tag: "fix",
+    title: {
+      en: "AI analysis is back on every match",
+      el: "Η ανάλυση AI επέστρεψε σε κάθε αγώνα",
+    },
+    body: {
+      en: "About half the match analyses were coming back empty — the model was spending its whole budget on reasoning before writing a word, and the blank answer was then cached for a day. Fixed, and an empty answer is no longer stored.",
+      el: "Περίπου οι μισές αναλύσεις έβγαιναν κενές — το μοντέλο ξόδευε όλο του το budget σκεπτόμενο πριν γράψει λέξη, και η κενή απάντηση αποθηκευόταν για μια μέρα. Διορθώθηκε, και μια κενή απάντηση δεν αποθηκεύεται πλέον.",
+    },
+  },
+  {
     id: "2026-07-19-bilingual",
     date: "2026-07-19",
     tag: "new",

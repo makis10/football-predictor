@@ -4,6 +4,117 @@ Notable changes to Football Predictor. Format loosely follows
 [Keep a Changelog](https://keepachangelog.com/); dates are `YYYY-MM-DD`.
 History before this file was introduced lives in `git log`.
 
+## 2026-08-08
+
+### Fixed
+- **One club filed under two names — 143 clubs.** The top-flight CSVs come from
+  football-data.co.uk and the imported second tiers from API-Football, and the
+  two disagree about almost every club name (`Freiburg`/`SC Freiburg`,
+  `Hamburg`/`Hamburger SV`, `Verona`/`Hellas Verona`). Every club promoted or
+  relegated since 2015 was therefore filed twice, and its Elo, form and rolling
+  features split **exactly at the division change** — the moment they matter
+  most. Adding Sweden2/Romania2/Poland2/BrazilSerieB re-created the same split
+  one country group later.
+  `scripts/audit_team_identity.py` now runs the rule that decides it: two
+  spellings are one club unless they played each other, sit in different
+  countries, each played a full season in one table, or were in different
+  divisions at once. It runs daily beside the completeness check, because
+  **ingestion is what introduces new spellings** — this is upkeep, not a
+  one-off. 143 merges in `features._CSV_TEAM_CANON`; 34 look-alikes that are
+  genuinely separate clubs recorded in `league_registry.KNOWN_DISTINCT` so the
+  audit cannot re-propose fusing them.
+- **One name holding two clubs — 7 cases.** `Arsenal` was Arsenal FC *and* FC
+  Arsenal Dzyarzhynsk of Belarus; `Olympiakos` was Piraeus *and* Nicosia; also
+  `Aris`, `Altay`, `Flamurtari`, `Iskra`, `Rudar`. Their results were fused into
+  a single rating, and two of them are clubs we serve predictions for. The
+  non-predicted side is renamed at the source
+  (`league_registry.NAME_DISAMBIGUATION`), so the displayed name is untouched.
+  Montenegro's files also label Rudar Pljevlja "Rudar Velenje" for four
+  seasons — a source error; NK Rudar Velenje is Slovenian.
+- **`_slug` deleted letters.** NFKD splits a letter from a *combining* mark, but
+  ł ø đ ħ ß æ œ carry the stroke in the glyph and decompose to nothing, so they
+  were dropped outright: "Wisła Kraków" became `wisakrakow`, whose tail is
+  `rakow`. It therefore matched **Raków Częstochowa**, and its own fixture
+  matched nothing.
+- **The odds matcher confused different clubs.** Containment was a raw substring
+  test, so "Aris" sat inside "P-aris-FC" and "AEK" inside "AE-K-ifisia FC"; and
+  nothing used the fact that we already hold both clubs by name, so Rangers and
+  Angers — who meet in the Europa League — scored 0.92 on difflib. Containment
+  is now a run of whole words, and a feed name that *is* one of our clubs can no
+  longer be fuzzy-matched onto a different one.
+- **An empty odds response was cached for the full 30 minutes.** One read
+  timeout blanked the bookmaker panel for every fixture in that league with no
+  error logged anywhere — the Eredivisie held zero games while the same request
+  by hand returned nine. Empty results now expire in 2 minutes.
+- **Blank AI analyses, cached for a day.** `gpt-oss-120b` is a reasoning model:
+  its hidden chain of thought is billed against `max_tokens` before a word of
+  the answer is emitted. At 450 it spent 448 reasoning and returned
+  `finish_reason="length"` with `content=""` — a 200 response, so no error path
+  fired, and the empty string was cached for 24 hours. 91 of 184 narratives were
+  blank. All three Groq call sites now pass `reasoning_effort="low"` with room
+  to answer, and an empty completion is treated as a failure.
+- **Seven fixtures that never happened**, three of them upcoming and served with
+  confident-looking predictions: `Jagiellonia v Angers` (the tie was against
+  Rangers), and three ties stored twice with the sides swapped. Deleted after
+  checking each against API-Football. `dedupe_fixtures.py` now keys on the tie
+  rather than the ordered pair, so a reversed duplicate is caught on the next
+  run.
+- **Results that could never be written.** `update_results` matches team names
+  with `==`, and the fixture feeds write `Velež`, `Žilina`,
+  `Atlètic Club d'Escaldes` with their accents while the history importer strips
+  them. Those fixtures could not be scored *and* had no history for the model.
+  `migrate_team_names_db.py` folds an accented DB name onto the ASCII spelling
+  when that spelling is a club we hold.
+- **Merged-away names re-created every morning.** `fetch_upcoming.py` and
+  `fetch_greek_fixtures.py` each keep a private `TEAM_MAP` and returned its
+  value directly, so `canonical()` never saw it — nine entries still named
+  clubs that had been merged away, and every Eredivisie fixture came back as
+  "NEC Nijmegen". The two results updaters had the same shape, and six of *their*
+  entries pointed at clubs the CSVs have never contained, so those finished
+  matches settled nothing.
+- **Cached API ids orphaned by a merge.** `club_team_ids.json` is keyed by our
+  name, so eight clubs lost their id when the name that held it was folded away
+  — no cards, corners or player props for any of them. The DB migration moves
+  them now.
+- **Wrong-country ids, both paths.** The `/teams?search` fallback was made
+  country-aware in an earlier pass; the league-roster sweep was not, and it
+  looks names up in a map spanning every club we hold — so La Liga's "Athletic
+  Club" (Bilbao) was filed against Brazil's Athletic Club of Série B. The club's
+  country now falls back to the training data when the fixture league has none,
+  which is the case for a club whose only match is a friendly.
+- **`/stats?league=EPL` rendered the international by-tournament table**, putting
+  51 AFC Asian Cup games under a Premier League heading. It belongs to the
+  all-leagues view; the International filter has its own copy.
+- **`status.sh` reported a healthy job as failed.** cloudflared has `KeepAlive`
+  and dies whenever the Mac wakes before the network is up — one DNS timeout,
+  restarted a second later. Its stale exit code was rendered as ✗ every day.
+  Running-now and last-exit are separate now.
+- **Two high-severity frontend advisories.** postcss ≤ 8.5.17 (path traversal
+  via `sourceMappingURL` auto-loading) → 8.5.26 across all four copies; sharp
+  < 0.35.0 (four libvips CVEs) → 0.35.3, which needed `next` 16.2.12 → 16.3.0
+  since 16.2 pins `^0.34.5`.
+
+### Added
+- `scripts/audit_team_identity.py` — the identity rule, run daily.
+- `scripts/check_odds_seam.py` — names the clubs the odds feed spells
+  differently, instead of reporting a bare percentage. Uses The Odds API's free
+  `/events` endpoint, so it costs no quota.
+- `backend/app/ml/league_registry.py` — country and tier per league,
+  `NAME_DISAMBIGUATION`, `KNOWN_DISTINCT`.
+- `backend/app/display_names.py` — the club's public spelling, applied only at
+  the API edge. The stored string stays exactly what the training data holds;
+  145 entries (`Goztep` → Göztepe, `Vfl Bochum` → VfL Bochum).
+- `scripts/migrate_team_names_db.py`, `scripts/disambiguate_existing_csvs.py`.
+- `backend/tests/test_team_name_mapping.py` (22), `test_odds_matching.py` (43),
+  `test_llm_calls.py` (9). The odds suite is built around the invariant that no
+  two clubs we hold may ever match each other — verified non-vacuous by
+  disabling the guard and watching it fail.
+
+### Changed
+- Backend suite 176 → **243 tests**; frontend 50.
+- Odds coverage on tracked-league predictions 49% → **59%**; unmatched feed
+  names 27 → **1** (Akhisarspor, relegated out of our data in 2019).
+
 ## 2026-07-27
 
 ### Fixed

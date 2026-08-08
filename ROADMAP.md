@@ -313,6 +313,68 @@ components, `useT()` για client, flag toggle στο header. Αντικατέ�
 
 ---
 
+## 🟤 Phase 6 — Ταυτότητα συλλόγων & odds seam (2026-08)
+
+Δεν ήταν σχεδιασμένη φάση. Ξεκίνησε από μία ερώτηση — «γιατί κάποιοι αγώνες δεν
+έχουν αποδόσεις;» — και αποκάλυψε ότι το **όνομα ομάδας** ήταν αδύναμο σημείο σε
+όλο το pipeline: Elo, φόρμα, ids, fixtures και αποδόσεις κλειδώνουν πάνω σε ένα
+σκέτο string που τέσσερα feeds το γράφουν τέσσερις διαφορετικούς τρόπους.
+
+### ✅ 6.1 · Κανόνας ταυτότητας + καθημερινό audit — υλοποιήθηκε 2026-08-02→08
+
+- `scripts/audit_team_identity.py`: **μία ομάδα ή δύο;** έπαιξαν μεταξύ τους →
+  δύο· άλλη χώρα → δύο· πλήρης σεζόν η καθεμία στον ίδιο πίνακα → δύο· ίδια
+  σεζόν, άλλη κατηγορία → δύο· αλλιώς μία με δύο γραφές.
+- **143 συγχωνεύσεις** στο `_CSV_TEAM_CANON` — κάθε σύλλογος που ανέβηκε ή έπεσε
+  κατηγορία από το 2015 ήταν καταχωρημένος δύο φορές, με το Elo και τη φόρμα του
+  κομμένα **ακριβώς** στην αλλαγή κατηγορίας.
+- **34 look-alikes** στο `KNOWN_DISTINCT` — χρεοκοπημένος σύλλογος και ο διάδοχός
+  του μοιάζουν πανομοιότυποι με feed split· κρίνονται με ιστορία συλλόγου, όχι
+  με τον κανόνα.
+- **7 ονόματα που κρατούσαν δύο συλλόγους** (Arsenal, Olympiakos, Aris, Altay,
+  Flamurtari, Iskra, Rudar) — μετονομασία της μη-προβλεπόμενης πλευράς στην πηγή.
+- Τρέχει **καθημερινά** στο `run_daily.sh`: κάθε νέο import ξαναδημιουργεί τα
+  splits, οπότε είναι συντήρηση, όχι μία φορά.
+
+### ✅ 6.2 · Odds seam — υλοποιήθηκε 2026-08-07
+
+- `scripts/check_odds_seam.py`: **ονομάζει** τους συλλόγους που το feed γράφει
+  αλλιώς, αντί για σκέτο ποσοστό. Χρησιμοποιεί το δωρεάν `/events`, μηδέν quota.
+- Ξεχωρίζει τρεις αιτίες που απ' έξω φαίνονται ίδιες: δεν υπάρχει αγορά · δεν
+  άνοιξαν ακόμα οι μπουκ · αστοχία ονόματος (η μόνη ενεργήσιμη).
+- Άστοχα ονόματα **27 → 1**· κάλυψη αποδόσεων 49% → **59%**.
+
+### ✅ 6.3 · Επίπεδο εμφάνισης — υλοποιήθηκε 2026-08-03
+
+- `app/display_names.py`: 145 σωστές δημόσιες γραφές (Göztepe, Beşiktaş,
+  VfB Stuttgart, Rayo Vallecano), **μονόδρομες** και **μόνο στην άκρη του API**.
+- Το αποθηκευμένο string μένει ό,τι έχει το training data — μετονομασία του
+  κλειδιού θα σήμαινε ταυτόχρονη επανεγγραφή 800 CSV, id cache και fixtures.
+
+### ✅ 6.4 · Δίχτυα ασφαλείας — υλοποιήθηκαν 2026-08-04→08
+
+- Backend suite **176 → 243**. Κεντρική αναλλοίωτη: *κανένας από τους συλλόγους
+  που κρατάμε δεν επιτρέπεται να ταιριάξει με άλλον* — επαληθευμένη ότι **δεν
+  είναι κούφια** (απενεργοποίηση του guard → 5 αποτυχίες).
+- `test_llm_calls.py`: κάθε κλήση Groq περνά `reasoning_effort`, `max_tokens ≥
+  600`, και δεν διαβάζει `.content.strip()` κατευθείαν — 91 από 184 αναλύσεις
+  έβγαιναν κενές και αποθηκεύονταν για μια μέρα.
+- `dedupe_fixtures.py` κλειδώνει στην **αναμετρηση**, όχι στο ζεύγος με σειρά.
+- `migrate_team_names_db.py`: μετά από κάθε merge — fixture rows, accent folds,
+  cached API ids.
+
+### 🔜 6.5 · Τι μένει
+
+| # | Θέμα | Κατάσταση |
+|---|---|---|
+| 1 | **7 σύλλογοι χωρίς props** (`Kasimpasa`, `Stoke`, `Odense`, `Oud-Heverlee Leuven`, `SJK`, `TPS`, `Waasland-Beveren`, `Widzew Lodz`) — το API-Football δεν τους δένει με το όνομά μας· θέλουν `NAME_OVERRIDES` ένα-ένα | 🟡 Ανοιχτό |
+| 2 | **Δυναμική IP** — το API-Football είναι IP-whitelisted και η IP αλλάζει· το pre-flight το πιάνει και στέλνει ntfy alert, αλλά το whitelist είναι χειροκίνητο | 🟡 Ανοιχτό (μετριασμένο) |
+| 3 | **`caffeinate`** — ο Mac κοιμάται στις 06:00 και το launchd μεταθέτει το daily· 30 λεπτά δουλειάς γίνονται 3,5 ώρες σε σπασμένα κομμάτια | ⛔ Απορρίφθηκε από τον χρήστη |
+| 4 | **Rotation στα logs του tunnel** — 11 MB stderr, 7 MB stdout, χωρίς rotation | 🟡 Ανοιχτό (ακίνδυνο) |
+| 5 | **Off-machine backups** — ο μόνος εναπομείνας κίνδυνος ολικής απώλειας | 🟡 Ανοιχτό |
+
+---
+
 ## Προτεινόμενη σειρά υλοποίησης
 
 | # | Feature | Status | Πολυπλοκότητα | Impact |
@@ -346,7 +408,7 @@ components, `useT()` για client, flag toggle στο header. Αντικατέ�
 
 | Layer | Technology |
 |---|---|
-| Frontend | Next.js 16 App Router · Tailwind CSS · TypeScript |
+| Frontend | Next.js 16.3 App Router · Tailwind CSS 4 · TypeScript |
 | Backend | FastAPI · Python 3.13 · SQLAlchemy · Alembic |
 | ML | XGBoost · LightGBM · scikit-learn · pandas · NumPy |
 | Database | PostgreSQL 16 |
@@ -357,4 +419,4 @@ components, `useT()` για client, flag toggle στο header. Αντικατέ�
 | Injury Data | API-Football / api-sports.io (100 req/day free) |
 | xG Data | understat.com (scraped) |
 | Analytics | self-hosted umami |
-| Infrastructure | Docker Compose · Cloudflare tunnel (aitipster.net) · macOS launchd (5 services: tunnel, daily@06:00, odds-poll@3h, prematch@15:00, results-poll) · GitHub Actions CI |
+| Infrastructure | Docker Compose · Cloudflare tunnel (aitipster.net) · macOS launchd (7 services: tunnel, daily@06:00, prematch@15:00, odds-poll@3h, results-poll@2h, warmup@50min, watchdog@5min) · GitHub Actions CI |

@@ -13,6 +13,7 @@ Built with **XGBoost + Pi-Ratings + Poisson expected-goals** (clubs) and a **tal
 - **Honest evaluation** — CLV vs closing line, fair-value (de-vig) ROI, calibration plots, and a methodology-cutoff banner when metrics blend model generations.
 - **Ops** — daily `pg_dump` backups with rotation, dead-man's-switch heartbeats on every cron pipeline, per-IP rate limiting on LLM endpoints, self-hosted umami analytics, GitHub Actions CI (pytest + tsc + vitest + build).
 - **Resilient data plumbing** — volunteer dataset (martj42) for 150 years of history with an authoritative API-Football overlay for live-tournament scores & penalty shoot-outs.
+- **Club identity as an invariant, not a chore** — a team is a bare string keyed on by Elo, form, ids and every fixture row, and four feeds spell it four ways. A daily audit decides *one club or two* from the data itself (did they play each other, same country, same season, same division), a second check names the clubs the odds feed spells differently, and 243 backend tests hold the result — including the assertion that no two clubs we hold can ever match each other.
 
 ---
 
@@ -27,12 +28,13 @@ Built with **XGBoost + Pi-Ratings + Poisson expected-goals** (clubs) and a **tal
 7. [National Teams (International)](#national-teams-international)
 8. [Seeding the Database](#seeding-the-database)
 9. [Live Fixtures & Daily Automation](#live-fixtures--daily-automation)
-10. [Public Tunnel (Cloudflare)](#public-tunnel-cloudflare)
-11. [API Reference](#api-reference)
-12. [Model Deep-Dive](#model-deep-dive)
-13. [Adjusting & Improving the Model](#adjusting--improving-the-model)
-14. [Project Structure](#project-structure)
-15. [Troubleshooting](#troubleshooting)
+10. [Club identity & the odds seam](#club-identity--the-odds-seam)
+11. [Public Tunnel (Cloudflare)](#public-tunnel-cloudflare)
+12. [API Reference](#api-reference)
+13. [Model Deep-Dive](#model-deep-dive)
+14. [Adjusting & Improving the Model](#adjusting--improving-the-model)
+15. [Project Structure](#project-structure)
+16. [Troubleshooting](#troubleshooting)
 
 ---
 
@@ -549,7 +551,7 @@ API-Football free tier: 100 req/day. Only leagues with injury support (EPL, LaLi
 
 ### Daily automation (macOS launchd)
 
-Two launchd jobs are defined in `launchd/` and installed via the install script:
+Seven launchd jobs are defined in `launchd/` and installed via the install script:
 
 | Job                                  | Schedule                                 | What it does                                                                                                                                                                                                                                                  |
 | ------------------------------------ | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -557,8 +559,27 @@ Two launchd jobs are defined in `launchd/` and installed via the install script:
 | `com.football-predictor.prematch`    | Every day at **15:00**                   | Runs `compute_predictions.py --force-today` — refreshes predictions for today's unstarted matches using closing-line odds (~2h before typical evening kick-offs, the sharpest market signal).                                                                  |
 | `com.football-predictor.odds-poll`   | Every **3 hours**                        | Snapshots current bookmaker odds into the `odds_history` table. Powers odds movement arrows (↑/↓) on match detail pages. (`odds_drift_*` / `is_steam_*` are display-only — excluded from the market-independent model.)                                                              |
 | `com.football-predictor.cloudflared` | Always (KeepAlive)                       | Keeps the Cloudflare tunnel (aitipster.net) alive across reboots.                                                                                                                                                                                             |
+| `com.football-predictor.results-poll` | Every **2 hours**                       | Runs `run_results_poll.sh` — fills final scores between daily runs, so settled matches reach the ROI tracker the same evening.                                                                                                                                 |
+| `com.football-predictor.warmup`      | Every **50 minutes**                     | Runs `run_warmup.sh` — re-primes the analysis / standings / projection caches before their TTLs lapse, so a visitor never pays the cold-start cost.                                                                                                            |
+| `com.football-predictor.watchdog`    | Every **5 minutes**                      | Runs `run_watchdog.sh` — checks the stack is answering and restarts what is not.                                                                                                                                                                              |
+
+`run_daily.sh` closes with three **advisory** health checks — they report and
+alert, but never fail the run or block the heartbeat:
+
+| Check                   | Script                          | Answers                                                                     |
+| ----------------------- | ------------------------------- | --------------------------------------------------------------------------- |
+| Data completeness       | `check_data_completeness.py`    | Which clubs are missing stats, ids, Elo or odds                              |
+| Club identity           | `audit_team_identity.py`        | Is any club filed under two names, or any name holding two clubs             |
+| Odds seam               | `check_odds_seam.py`            | Which clubs the odds feed spells differently from us (free `/events`, no quota) |
+
+See [Club identity & the odds seam](#club-identity--the-odds-seam) for what they
+protect against and how to act on their output.
 
 Logs: `~/Library/Logs/football-predictor/`
+
+`./scripts/status.sh` prints what is running, how the last run of each job
+ended, and which steps failed — by name, not by line number. `-f` follows a run
+live.
 
 > **macOS TCC note:** The launchd daily job calls a wrapper at `~/bin/football-predictor-daily.sh` rather than the script inside `~/Documents/` directly. This avoids the `Operation not permitted` error macOS imposes when `launchd` tries to access files inside protected folders without Full Disk Access.
 
@@ -579,6 +600,136 @@ launchctl start com.football-predictor.daily
 # or directly:
 bash scripts/run_daily.sh
 ```
+
+---
+
+## Club identity & the odds seam
+
+A team is a **bare string** in this project. Elo, rolling form, the id cache,
+every alias table and every fixture row are keyed on it. Four feeds spell that
+string four different ways, which produces two failures — both silent, both
+corrupting predictions rather than crashing anything.
+
+### The two failures
+
+**One club, two names.** The top-flight CSVs come from football-data.co.uk, the
+imported second tiers from API-Football, and the two disagree about almost every
+name. `Freiburg` and `SC Freiburg` are one club; filed apart, its history splits
+**exactly at the promotion or relegation** that moved it between the two files —
+the moment its form matters most. Each half then runs on a fraction of the real
+record, and the thinner one on near-default features.
+
+**One name, two clubs.** `Arsenal` is a club in Belarus as well as England;
+`Olympiakos` one in Cyprus as well as Greece. Their results fuse into a single
+rating, and nothing downstream can tell them apart again.
+
+### The rule
+
+`scripts/audit_team_identity.py` decides it, strongest evidence first:
+
+1. they played each other → **two clubs** (no club plays itself)
+2. different country → two clubs
+3. a full season each in one league table → two clubs
+4. same season, different division → two clubs (a B side, or a namesake)
+5. otherwise, same country → **one club, two spellings**
+
+```bash
+python scripts/audit_team_identity.py          # report
+python scripts/audit_team_identity.py --json   # machine-readable
+```
+
+Two traps the rule needs to survive:
+
+- **Season tokens use two encodings.** `2021` is the 2020/21 season in the
+  football-data.co.uk files and 2021/22 in the API-Football imports. Read raw,
+  Schalke appears in the Bundesliga and the 2. Bundesliga at once. The encoding
+  is decided per league by majority vote (`league_registry.season_scheme`).
+- **A promotion play-off is filed in the top flight's season file**, so a
+  second-tier club shows up in two divisions in one year without having been in
+  two. `PLAYOFF_TIE = 3` requires a real presence on both sides: Volendam has 2
+  rows in Netherlands2 2025 against 34 in the Eredivisie.
+
+### What the rule cannot decide
+
+A liquidated club and the phoenix that replaced it look **identical** to a
+feed-naming split — same name, same country, a multi-season hole between them.
+Romanian and Swedish football are full of both. Those are settled on club
+history and recorded in `league_registry.KNOWN_DISTINCT` (34 pairs) so the audit
+never re-proposes fusing them. Merging two real clubs is the one mistake here
+that cannot be undone from the data; leaving one club split is recoverable.
+
+### Where each fact lives
+
+| Table                                        | Answers                                                            |
+| -------------------------------------------- | ------------------------------------------------------------------ |
+| `features._CSV_TEAM_CANON`                    | which spelling a club's history is filed under (143 merges)        |
+| `team_resolver.COMMON_ALIASES`                | every feed's spelling → our name                                   |
+| `league_registry.LEAGUE_COUNTRY_TIER`         | where each league is played, and at what level                     |
+| `league_registry.NAME_DISAMBIGUATION`         | per-league renames for a name that holds two clubs                 |
+| `league_registry.KNOWN_DISTINCT`              | look-alikes that are genuinely separate clubs                      |
+| `odds_analysis_service._ALIASES`              | the odds feed's spelling → our name                                |
+| `app.display_names.DISPLAY_NAMES`             | the club's public spelling, applied only at the API edge           |
+
+`display_names` is deliberately **one-way and edge-only**. The stored string
+stays exactly what the training data holds; the API rewrites it on the way out
+via a pydantic validator. Renaming the key instead would mean rewriting 800 CSVs,
+the id cache and the fixture table together, and any missed corner would split a
+club again.
+
+### After a merge
+
+A merge is not finished when `_CSV_TEAM_CANON` is edited. The losing spelling
+stops existing, so everything keyed on it has to follow:
+
+```bash
+python scripts/migrate_team_names_db.py --dry-run   # fixture rows + cached ids
+python scripts/migrate_team_names_db.py
+python scripts/dedupe_fixtures.py --apply           # rows that now collide
+python -m backend.app.ml.train                      # history changed
+python scripts/compute_predictions.py --force
+python scripts/check_odds_seam.py                   # the seam moved — re-check
+```
+
+That last step matters: merging `Fortuna Sittard` into `For Sittard` moved our
+stored name **further** from the odds feed's, and those fixtures silently lost
+their odds.
+
+### The odds seam
+
+A fixture only carries bookmaker odds if `_teams_match` can tie our name to The
+Odds API's. When it cannot, the match is served with no odds, no EV and no value
+gate. `check_odds_seam.py` names the clubs responsible instead of reporting a
+bare percentage, and costs no quota:
+
+```bash
+python scripts/check_odds_seam.py
+python scripts/check_odds_seam.py --league Eredivisie
+```
+
+It separates three causes that look the same from the outside:
+
+- **no active market** — The Odds API has no key at all for Romania or club
+  friendlies, and the Europa/Conference keys go inactive outside the league
+  phase. Nothing to fix.
+- **not posted yet** — coverage is ~80–90% inside three days, ~30% at 8–14 days,
+  ~4% beyond. Always bucket by days-to-kickoff before concluding anything.
+- **a name we fail to match** — the only actionable one. Add a slug to
+  `_ALIASES` under our name for the club.
+
+### Guarantees under test
+
+`backend/tests/test_team_name_mapping.py` and `test_odds_matching.py` hold the
+invariants: no club filed under two names, no name in two countries, no two
+clubs we hold matching each other, no two stored names printing identically. The
+matching suite is built around that third one and was verified non-vacuous by
+disabling the guard and watching it fail.
+
+⚠ **Neither net alone is sufficient.** The identity audit reads the CSVs, so it
+covers the history; the seam check reads the fixture feed. Athletico
+Paranaense's 2018 spelling change (`Atletico Paranaense` → `Athletico-PR`)
+differs in the middle of the first word *and* the second, so no naming rule
+reached it — it surfaced only because the odds seam asked why the feed's name
+matched nothing.
 
 ---
 
@@ -1089,6 +1240,7 @@ football-predictor/
 │       │   ├── predictions.py         # GET /predictions/{id}, /analysis, /postmortem
 │       │   ├── stats.py               # GET /stats — accuracy, ROI, EV series, calibration
 │       │   └── chat.py                # POST /chat — Groq GPT-OSS-120B (3-day context, Redis cached)
+│       ├── display_names.py           # club's public spelling — applied at the API edge only
 │       └── ml/
 │           ├── features.py            # build_features, build_team_snapshot, FEATURE_COLS (124)
 │           ├── train.py               # XGBoost training (tree_method=hist, nthread=-1, 4 models)
@@ -1100,6 +1252,7 @@ football-predictor/
 │           ├── poisson.py             # Poisson EG model (Dixon & Coles 1997)
 │           ├── european.py            # European competition congestion features
 │           ├── injury_adjustment.py   # Position-aware serve-time prob shift (Attacker/Defender/GK/Mid)
+│           ├── league_registry.py     # country + tier per league, NAME_DISAMBIGUATION, KNOWN_DISTINCT
 │           └── odds_analysis_service.py  # The Odds API + Groq (Greek) + API-Football injuries w/ squad positions
 │
 ├── frontend/
@@ -1144,11 +1297,24 @@ football-predictor/
 │   ├── compute_predictions.py         # Batch ML predictions + live odds injection + bm_odds storage
 │   ├── warmup_injuries.py             # Pre-warm Redis injury cache (next N days, skips existing)
 │   ├── optimize_pi_params.py          # Bayesian optimization of PI_C/K/BASE/DECAY via scipy differential_evolution
-│   └── run_daily.sh                   # Daily: results → fixtures → predictions → warm injuries → clear cache
+│   ├── team_resolver.py               # THE name seam: COMMON_ALIASES, canonical(), youth/reserve guard
+│   ├── audit_team_identity.py         # One club or two? Runs the identity rule (daily health step)
+│   ├── check_odds_seam.py             # Names the clubs the odds feed spells differently (free /events)
+│   ├── check_data_completeness.py     # Missing stats / ids / Elo / odds (daily health step)
+│   ├── migrate_team_names_db.py       # After a merge: fixture rows, accent folds, cached ids
+│   ├── disambiguate_existing_csvs.py  # One-off: apply NAME_DISAMBIGUATION to files already on disk
+│   ├── dedupe_fixtures.py             # One tie stored twice — keyed on the tie, not the ordered pair
+│   ├── status.sh                      # What is running, how the last run of each job ended (-f follows)
+│   └── run_daily.sh                   # Daily: results → fixtures → predictions → warm injuries → health checks
 │
 ├── launchd/
 │   ├── com.football-predictor.cloudflared.plist  # Cloudflare tunnel (KeepAlive)
 │   ├── com.football-predictor.daily.plist   # Daily refresh at 06:00 (RunAtLoad=true)
+│   ├── com.football-predictor.prematch.plist     # 15:00 — re-price today on closing lines
+│   ├── com.football-predictor.odds-poll.plist    # Every 3h — odds_history snapshots
+│   ├── com.football-predictor.results-poll.plist # Every 2h — final scores between daily runs
+│   ├── com.football-predictor.warmup.plist       # Every 50min — re-prime caches before TTL
+│   ├── com.football-predictor.watchdog.plist     # Every 5min — is the stack answering
 │   ├── CLOUDFLARED_SETUP.md                 # One-time tunnel setup guide
 │   ├── install.sh                           # Substitute placeholders + load services
 │   └── uninstall.sh                         # Unload + remove services
