@@ -74,8 +74,8 @@ export default function TrackButton({ matchId }: Props) {
           w-7 h-7 rounded-full flex items-center justify-center text-base
           transition-all
           ${tracked
-            ? "bg-green-500/20 text-green-400 hover:bg-red-500/20 hover:text-red-400"
-            : "bg-pitch-700/60 text-gray-400 hover:bg-green-500/20 hover:text-green-400 opacity-40 hover:opacity-100 md:opacity-0 md:group-hover:opacity-100"
+            ? "bg-win/20 text-win hover:bg-lose/20 hover:text-lose"
+            : "bg-ink-600/60 text-chalk-2 hover:bg-win/20 hover:text-win opacity-40 hover:opacity-100 md:opacity-0 md:group-hover:opacity-100"
           }
           ${loading ? "opacity-50 cursor-not-allowed" : ""}
         `}
@@ -83,7 +83,7 @@ export default function TrackButton({ matchId }: Props) {
         {tracked ? "🔖" : "＋"}
       </button>
       {error && (
-        <span className="absolute top-10 right-2 z-20 text-xs text-red-400 bg-pitch-900/90 rounded px-1 py-0.5 max-w-[120px] text-right">
+        <span className="absolute top-10 right-2 z-20 text-xs text-lose bg-ink-800/90 rounded px-1 py-0.5 max-w-[120px] text-right">
           {error}
         </span>
       )}

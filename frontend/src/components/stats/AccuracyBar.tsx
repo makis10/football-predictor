@@ -8,19 +8,19 @@ interface AccuracyBarProps {
 export function AccuracyBar({
   label,
   value,
-  color = "bg-green-500",
+  color = "bg-win",
   showPct = true,
 }: AccuracyBarProps) {
   const pct = Math.round(value * 100);
   return (
     <div className="space-y-1">
       <div className="flex justify-between text-sm">
-        <span className="text-gray-400">{label}</span>
+        <span className="text-chalk-2">{label}</span>
         {showPct && (
-          <span className="font-semibold text-gray-200">{pct}%</span>
+          <span className="font-semibold text-chalk">{pct}%</span>
         )}
       </div>
-      <div className="h-2 w-full rounded-full bg-pitch-700 overflow-hidden">
+      <div className="h-2 w-full rounded-full bg-ink-600 overflow-hidden">
         <div
           className={`h-full rounded-full ${color} transition-all`}
           style={{ width: `${pct}%` }}

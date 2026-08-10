@@ -68,7 +68,9 @@ describe("MatchCard", () => {
     expect(screen.getByText("Arsenal")).toBeDefined();
     expect(screen.getByText("Chelsea")).toBeDefined();
     // 0.55 is the highest of the three → "Home", shown with its own number.
-    expect(screen.getByText(/Home\s*55%/)).toBeDefined();
+    // Label and percentage are separate nodes (they sit at opposite ends of
+    // the bar), so match against the card text rather than a single element.
+    expect(screen.getByRole("link").textContent).toMatch(/Home\s*55%/);
   });
 
   it("picks the outcome the model rates highest, not the stored suggestion", () => {
@@ -79,8 +81,9 @@ describe("MatchCard", () => {
     m.prediction!.away_win_prob = 0.55;
     m.prediction!.suggested_market = "Home Win @ 1.80";
     render(<MatchCard match={m} t={t} />);
-    expect(screen.getByText(/Away\s*55%/)).toBeDefined();
-    expect(screen.queryByText(/Home\s*55%/)).toBeNull();
+    const card = screen.getByRole("link").textContent ?? "";
+    expect(card).toMatch(/Away\s*55%/);
+    expect(card).not.toMatch(/Home\s*55%/);
   });
 
   it("never shows an expected-value badge", () => {
@@ -123,7 +126,9 @@ describe("MatchCard", () => {
   it("shows the score once the match is played", () => {
     const m = match({ home_goals: 2, away_goals: 1, result: "H" });
     const { container } = render(<MatchCard match={m} t={t} />);
-    expect(container.textContent).toContain("2 – 1");
+    // Tight en dash: "2–1" is how a scoreline is set, and the spaced form
+    // wrapped awkwardly between the two team names on a narrow card.
+    expect(container.textContent).toContain("2–1");
   });
 
   it("renders a fixture with no prediction at all without crashing", () => {

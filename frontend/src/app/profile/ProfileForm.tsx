@@ -62,19 +62,19 @@ export default function ProfileForm({ profile }: { profile: Profile }) {
     <form onSubmit={handleSave} className="space-y-5">
       {/* Name */}
       <div>
-        <label className="block text-xs text-gray-400 mb-1">Display name</label>
+        <label className="block text-xs text-chalk-2 mb-1">Display name</label>
         <input
           type="text"
           value={name}
           onChange={(e) => setName(e.target.value)}
           placeholder="Your name"
-          className="w-full rounded-lg border border-pitch-600 bg-pitch-800 px-3 py-2 text-sm text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500"
+          className="w-full rounded-lg border border-line bg-ink-700 px-3 py-2 text-sm text-chalk placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-win"
         />
       </div>
 
       {/* Preferred leagues */}
       <div>
-        <label className="block text-xs text-gray-400 mb-2">Preferred leagues</label>
+        <label className="block text-xs text-chalk-2 mb-2">Preferred leagues</label>
         <div className="flex flex-wrap gap-2">
           {ALL_LEAGUES.map((lg) => {
             const active = leagues.includes(lg.value);
@@ -86,8 +86,8 @@ export default function ProfileForm({ profile }: { profile: Profile }) {
                 className={`
                   text-xs px-3 py-1.5 rounded-full border transition-colors
                   ${active
-                    ? "border-green-500 bg-green-500/20 text-green-400"
-                    : "border-pitch-600 bg-pitch-800 text-gray-400 hover:border-gray-500"
+                    ? "border-win bg-win/20 text-win"
+                    : "border-line bg-ink-700 text-chalk-2 hover:border-line"
                   }
                 `}
               >
@@ -96,19 +96,19 @@ export default function ProfileForm({ profile }: { profile: Profile }) {
             );
           })}
         </div>
-        <p className="text-xs text-gray-600 mt-1">
+        <p className="text-xs text-chalk-3 mt-1">
           {leagues.length === 0 ? "All leagues shown" : `${leagues.length} selected`}
         </p>
       </div>
 
       {error && (
-        <p className="text-xs text-red-400">{error}</p>
+        <p className="text-xs text-lose">{error}</p>
       )}
 
       <button
         type="submit"
         disabled={saving}
-        className="w-full rounded-xl bg-green-600 hover:bg-green-500 disabled:opacity-50 px-4 py-2.5 text-sm font-medium text-white transition-colors"
+        className="w-full rounded-xl bg-win hover:bg-win disabled:opacity-50 px-4 py-2.5 text-sm font-medium text-chalk transition-colors"
       >
         {saving ? "Saving…" : saved ? "✓ Saved!" : "Save changes"}
       </button>

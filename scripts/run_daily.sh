@@ -349,9 +349,11 @@ docker compose exec -T backend \
 if [ "$WC_ACTIVE" = "1" ]; then
     echo "" >> "$LOG"
     echo "[national 1c/7] Overlaying live WC results from API-Football …" | tee -a "$LOG"
+    if [ "$API_FOOTBALL_OK" -eq 1 ]; then
     docker compose exec -T backend \
         python scripts/fetch_wc_results.py \
         2>&1 | tee -a "$LOG" || _fail $LINENO
+    else echo "  [skip] API-Football blocked." | tee -a "$LOG"; fi
 fi
 
 # Daily full retrain — during a live tournament the model self-corrects every
@@ -396,9 +398,11 @@ echo "[national 4b/7] Refreshing squad strength (weekly) …" | tee -a "$LOG"
 # Club season = year it started (European seasons start in July; before July
 # we're still in the previous season, e.g. June 2026 → 2025/26 → season 2025).
 SQUAD_SEASON=$(date +%Y); [ "$(date +%m)" -lt 7 ] && SQUAD_SEASON=$((SQUAD_SEASON - 1))
+if [ "$API_FOOTBALL_OK" -eq 1 ]; then
 docker compose exec -T backend \
     python scripts/fetch_squad_strength.py --season "$SQUAD_SEASON" --max-age-days 6 --max-requests 1700 \
     2>&1 | tee -a "$LOG" || _fail $LINENO
+else echo "  [skip] API-Football blocked." | tee -a "$LOG"; fi
 
 echo "" >> "$LOG"
 echo "[national 5/7] Generating international predictions …" | tee -a "$LOG"
@@ -425,17 +429,21 @@ docker compose exec -T backend \
 # leaving "what we caught" blank). Pro plan = 7500/day, so 2500 is safe.
 echo "" >> "$LOG"
 echo "[national 7a/7] Ingesting player match stats (API-Football) …" | tee -a "$LOG"
+if [ "$API_FOOTBALL_OK" -eq 1 ]; then
 docker compose exec -T backend \
     python scripts/fetch_player_stats.py --wc-only --last 5 --max-requests 2500 \
     2>&1 | tee -a "$LOG" || _fail $LINENO
+else echo "  [skip] API-Football blocked." | tee -a "$LOG"; fi
 
 # Ingest team match stats (corners / shots / possession) from /fixtures/statistics
 # — corners aren't in /fixtures/players, so this is a separate cheap pull.
 echo "" >> "$LOG"
 echo "[national 7a1/7] Ingesting team match stats (API-Football) …" | tee -a "$LOG"
+if [ "$API_FOOTBALL_OK" -eq 1 ]; then
 docker compose exec -T backend \
     python scripts/fetch_match_statistics.py --wc-only --last 5 --max-requests 1500 \
     2>&1 | tee -a "$LOG" || _fail $LINENO
+else echo "  [skip] API-Football blocked." | tee -a "$LOG"; fi
 
 # Ingest current-season CLUB form per player (/players) — the empirical-Bayes
 # prior for the prop rates, so low-cap players regress toward real club form
@@ -443,9 +451,11 @@ docker compose exec -T backend \
 # refreshed, so the cost amortises across days (1 request/player, budget-capped).
 echo "" >> "$LOG"
 echo "[national 7a2/7] Ingesting player club form (API-Football) …" | tee -a "$LOG"
+if [ "$API_FOOTBALL_OK" -eq 1 ]; then
 docker compose exec -T backend \
     python scripts/fetch_club_form.py --wc-only --max-requests 1500 \
     2>&1 | tee -a "$LOG" || _fail $LINENO
+else echo "  [skip] API-Football blocked." | tee -a "$LOG"; fi
 
 # Recompute player props (anytime scorer / SoT / assist) for upcoming fixtures
 # from the freshly-ingested stats + club-form priors + the refreshed Elo snapshot.
@@ -471,9 +481,11 @@ if [ "$WC_ACTIVE" = "1" ]; then
     # file is < 7 days old, so it only spends API-Football quota once a week.
     echo "" >> "$LOG"
     echo "[national 7c/7] Refreshing WC squads (weekly) …" | tee -a "$LOG"
+    if [ "$API_FOOTBALL_OK" -eq 1 ]; then
     docker compose exec -T backend \
         python scripts/fetch_wc_squads.py --max-age-days 7 \
         2>&1 | tee -a "$LOG" || _fail $LINENO
+    else echo "  [skip] API-Football blocked." | tee -a "$LOG"; fi
 
     # Sync same-day goals from player_match_stats into goalscorers.csv so the
     # Golden Boot below reflects today's scorers immediately (martj42 lags ~1 day).
@@ -487,9 +499,11 @@ if [ "$WC_ACTIVE" = "1" ]; then
     # one cheap request; lets the simulation drop unavailable golden-boot scorers.
     echo "" >> "$LOG"
     echo "[national 7c2/7] Fetching player availability (injuries/suspensions) …" | tee -a "$LOG"
+    if [ "$API_FOOTBALL_OK" -eq 1 ]; then
     docker compose exec -T backend \
         python scripts/fetch_availability.py \
         2>&1 | tee -a "$LOG" || _fail $LINENO
+    else echo "  [skip] API-Football blocked." | tee -a "$LOG"; fi
 
     # World Cup Monte Carlo simulation (champion/finalist/group/golden-boot).
     echo "" >> "$LOG"
@@ -513,6 +527,17 @@ if [ "$(date +%d)" = "01" ]; then
         python scripts/recalibrate.py \
         2>&1 | tee -a "$LOG" || _fail $LINENO
 fi
+
+# Cut today's accumulator slips and settle finished ones. Needs no external
+# API — it reads predictions already in the DB — so it runs whether or not
+# API-Football is reachable. Placed after predictions/odds so the slips are cut
+# from today's numbers, and before the cache clear below so the page serves them
+# immediately.
+echo "" >> "$LOG"
+echo "[9a/9] Cutting today's tickets …" | tee -a "$LOG"
+docker compose exec -T backend \
+    python scripts/generate_tickets.py --replace \
+    2>&1 | tee -a "$LOG" || echo "  [warn] ticket generation failed — the page falls back to the previous day" | tee -a "$LOG"
 
 echo "" >> "$LOG"
 echo "[9/9] Clearing stats cache …" | tee -a "$LOG"
@@ -607,12 +632,14 @@ if [ "$DAY_OF_WEEK" -eq 1 ]; then
     [ "$MONTH" -lt 7 ] && CURRENT_SEASON=$((CURRENT_SEASON - 1))
     echo "" >> "$LOG"
     echo "[8b/10] Refreshing CL/EL/ECL/Eredivisie/PrimeiraLiga/Championship xG for season ${CURRENT_SEASON} …" | tee -a "$LOG"
+    if [ "$API_FOOTBALL_OK" -eq 1 ]; then
     docker compose exec -T backend \
         python scripts/download_xg_apifootball.py \
             --leagues CL EL ECL Eredivisie PrimeiraLiga Championship \
             --seasons "${CURRENT_SEASON}" \
             --force \
         2>&1 | tee -a "$LOG" || _fail $LINENO
+    else echo "  [skip] API-Football blocked." | tee -a "$LOG"; fi
 
     # 9. Retrain both models (takes ~2-3 min)
     echo "" >> "$LOG"
@@ -672,9 +699,16 @@ fi
 echo "" >> "$LOG"
 echo "[health] Data-completeness check …" | tee -a "$LOG"
 health_alerts=0
+# Skipped when API-Football is blocked: the check reads the same API, so every
+# gap it reports would be an artefact of the block, not a real data problem.
+# Alerting on those buries the one alert that matters (the pre-flight's) under
+# dozens of derived ones — which is exactly what happened on 2026-08-09
+# ("DATA GAPS — 11 alerts, 35 warnings" on a run whose only fault was the IP).
+if [ "$API_FOOTBALL_OK" -eq 1 ]; then
 docker compose exec -T backend \
     python scripts/check_data_completeness.py --days 7 \
     2>&1 | tee -a "$LOG" || health_alerts=1
+else echo "  [skip] API-Football blocked — gap report would be noise." | tee -a "$LOG"; fi
 
 # Club identity. Ingestion is what introduces new spellings, so this belongs
 # next to the completeness check rather than in CI alone: a promoted club

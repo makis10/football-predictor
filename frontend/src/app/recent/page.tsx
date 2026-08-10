@@ -5,8 +5,9 @@ import { Suspense } from "react";
 import Link from "next/link";
 import { getMatches, getPastNationalMatches, formatLongDate, athensDate, canonicalLeagueCode, INTERNATIONAL_LEAGUE, type Match } from "@/lib/api";
 import { accuracySummary, gradeMatch, hasResult } from "@/lib/matchGrade";
-import LeagueFilter from "@/components/LeagueFilter";
+import FilterBar from "@/components/FilterBar";
 import RecentResultCard from "@/components/RecentResultCard";
+import { getServerT } from "@/lib/i18n-server";
 
 const _shiftDays = (iso: string, n: number) =>
   new Date(new Date(`${iso}T00:00:00Z`).getTime() + n * 86_400_000).toISOString().slice(0, 10);
@@ -71,7 +72,7 @@ async function RecentGrid({ league, page }: { league?: string; page: number }) {
     }
   } catch {
     return (
-      <div className="text-center py-16 text-gray-500">
+      <div className="text-center py-16 text-chalk-3">
         <p className="text-4xl mb-3">⚠️</p>
         <p className="font-medium">Could not reach the API.</p>
       </div>
@@ -80,7 +81,7 @@ async function RecentGrid({ league, page }: { league?: string; page: number }) {
 
   if (matches.length === 0) {
     return (
-      <div className="text-center py-16 text-gray-500">
+      <div className="text-center py-16 text-chalk-3">
         <p className="text-4xl mb-3">📅</p>
         <p className="font-medium">No matches found for this period.</p>
       </div>
@@ -106,32 +107,32 @@ async function RecentGrid({ league, page }: { league?: string; page: number }) {
     <div className="space-y-8">
       {/* Accuracy summary */}
       {accuracy !== null && (
-        <div className="p-4 rounded-xl bg-pitch-800 border border-pitch-700 space-y-3">
+        <div className="p-4 rounded-xl bg-ink-700 border border-line space-y-3">
           {/* Top row: overall % + correct/partial/wrong counts */}
           <div className="flex items-center gap-6 flex-wrap">
             <div className="text-center min-w-[56px]">
-              <p className="text-3xl font-black text-white">{accuracy}%</p>
-              <p className="text-xs text-gray-400 mt-0.5">Both correct</p>
+              <p className="text-3xl font-black text-chalk">{accuracy}%</p>
+              <p className="text-xs text-chalk-2 mt-0.5">Both correct</p>
             </div>
-            <div className="h-10 w-px bg-pitch-600 hidden sm:block" />
+            <div className="h-10 w-px bg-ink-600 hidden sm:block" />
             <div className="flex gap-4 text-sm flex-wrap">
               <span className="flex items-center gap-1.5">
-                <span className="w-2.5 h-2.5 rounded-full bg-green-500 inline-block" />
-                <span className="text-green-400 font-bold">{acc.correct}</span>
-                <span className="text-gray-500">correct</span>
+                <span className="w-2.5 h-2.5 rounded-full bg-win inline-block" />
+                <span className="text-win font-bold">{acc.correct}</span>
+                <span className="text-chalk-3">correct</span>
               </span>
               <span className="flex items-center gap-1.5">
-                <span className="w-2.5 h-2.5 rounded-full bg-amber-500 inline-block" />
-                <span className="text-amber-400 font-bold">{acc.partial}</span>
-                <span className="text-gray-500">partial</span>
+                <span className="w-2.5 h-2.5 rounded-full bg-est inline-block" />
+                <span className="text-est font-bold">{acc.partial}</span>
+                <span className="text-chalk-3">partial</span>
               </span>
               <span className="flex items-center gap-1.5">
-                <span className="w-2.5 h-2.5 rounded-full bg-red-500 inline-block" />
-                <span className="text-red-400 font-bold">{acc.wrong}</span>
-                <span className="text-gray-500">wrong</span>
+                <span className="w-2.5 h-2.5 rounded-full bg-lose inline-block" />
+                <span className="text-lose font-bold">{acc.wrong}</span>
+                <span className="text-chalk-3">wrong</span>
               </span>
               {noPred > 0 && (
-                <span className="text-gray-600 text-xs self-center">
+                <span className="text-chalk-3 text-xs self-center">
                   {noPred} without prediction
                 </span>
               )}
@@ -140,32 +141,32 @@ async function RecentGrid({ league, page }: { league?: string; page: number }) {
 
           {/* Bottom row: split by prediction type */}
           {(resultAccuracy !== null || goalsAccuracy !== null) && (
-            <div className="flex items-center gap-3 pt-1 border-t border-pitch-700 flex-wrap">
-              <span className="text-xs text-gray-500 mr-1">Breakdown:</span>
+            <div className="flex items-center gap-3 pt-1 border-t border-line flex-wrap">
+              <span className="text-xs text-chalk-3 mr-1">Breakdown:</span>
               {resultAccuracy !== null && (
-                <span className="flex items-center gap-2 bg-pitch-700 rounded-lg px-3 py-1.5">
-                  <span className="text-xs text-gray-400">Result (1×2)</span>
+                <span className="flex items-center gap-2 bg-ink-600 rounded-lg px-3 py-1.5">
+                  <span className="text-xs text-chalk-2">Result (1×2)</span>
                   <span className={`text-sm font-bold ${
-                    resultAccuracy >= 50 ? "text-green-400" :
-                    resultAccuracy >= 40 ? "text-amber-400" : "text-red-400"
+                    resultAccuracy >= 50 ? "text-win" :
+                    resultAccuracy >= 40 ? "text-est" : "text-lose"
                   }`}>
                     {resultAccuracy}%
                   </span>
-                  <span className="text-xs text-gray-600">
+                  <span className="text-xs text-chalk-3">
                     {acc.resultCorrect}/{acc.total}
                   </span>
                 </span>
               )}
               {goalsAccuracy !== null && (
-                <span className="flex items-center gap-2 bg-pitch-700 rounded-lg px-3 py-1.5">
-                  <span className="text-xs text-gray-400">Goals (O/U)</span>
+                <span className="flex items-center gap-2 bg-ink-600 rounded-lg px-3 py-1.5">
+                  <span className="text-xs text-chalk-2">Goals (O/U)</span>
                   <span className={`text-sm font-bold ${
-                    goalsAccuracy >= 55 ? "text-green-400" :
-                    goalsAccuracy >= 45 ? "text-amber-400" : "text-red-400"
+                    goalsAccuracy >= 55 ? "text-win" :
+                    goalsAccuracy >= 45 ? "text-est" : "text-lose"
                   }`}>
                     {goalsAccuracy}%
                   </span>
-                  <span className="text-xs text-gray-600">
+                  <span className="text-xs text-chalk-3">
                     {acc.goalsCorrect}/{acc.total}
                   </span>
                 </span>
@@ -184,15 +185,15 @@ async function RecentGrid({ league, page }: { league?: string; page: number }) {
         return (
           <div key={dateStr} className="space-y-3">
             {/* Date header */}
-            <div className="flex items-center justify-between border-b border-pitch-700 pb-2">
-              <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
+            <div className="flex items-center justify-between border-b border-line pb-2">
+              <h2 className="text-sm font-semibold text-chalk-2 uppercase tracking-wider">
                 {formatLongDate(dateStr)}
               </h2>
               {dayWithPred.length > 0 && (
-                <span className="text-xs text-gray-500">
+                <span className="text-xs text-chalk-3">
                   {dayCorrect.length}/{dayWithPred.length} correct
                   {dayPartial.length > 0 && (
-                    <span className="text-amber-600 ml-1">· {dayPartial.length} partial</span>
+                    <span className="text-est ml-1">· {dayPartial.length} partial</span>
                   )}
                 </span>
               )}
@@ -212,6 +213,7 @@ async function RecentGrid({ league, page }: { league?: string; page: number }) {
 
 export default async function RecentResultsPage({ searchParams }: PageProps) {
   const sp = await searchParams;
+  const t = await getServerT();
   // Resolve to the canonical code (case-insensitive); a league we don't cover
   // renders an honest "not supported" panel instead of the API's 400 being
   // swallowed and misreported as a connectivity error.
@@ -230,23 +232,28 @@ export default async function RecentResultsPage({ searchParams }: PageProps) {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-2xl font-bold tracking-tight text-white">
-          Recent Results
+        <h1 className="font-display text-2xl font-extrabold tracking-tight text-chalk">
+          {t("recent.title")}
         </h1>
-        <p className="text-sm text-gray-500 mt-1">
-          Predictions vs. actual results.{" "}
-          <span className="text-green-500">Green</span> = both correct,{" "}
-          <span className="text-amber-500">amber</span> = one of two correct,{" "}
-          <span className="text-red-500">red</span> = both wrong.
+        <p className="mt-1 text-sm text-chalk-2">
+          {t("recent.subtitle")}{" "}
+          <span className="text-win">{t("recent.legendBoth")}</span>{" "}
+          <span className="text-est">{t("recent.legendOne")}</span>{" "}
+          <span className="text-lose">{t("recent.legendNone")}</span>
         </p>
       </div>
 
       <Suspense>
-        <LeagueFilter active={sp.league} basePath="/recent" />
+        <FilterBar
+            activeLeague={sp.league}
+            counts={[]}
+            showRefine={false}
+            basePath="/recent"
+          />
       </Suspense>
 
       {unknownLeague ? (
-        <div className="text-center py-16 text-gray-500">
+        <div className="text-center py-16 text-chalk-3">
           <p className="text-4xl mb-3">🔍</p>
           <p className="font-medium">
             League &ldquo;{unknownLeague}&rdquo; isn&apos;t covered (yet).
@@ -258,7 +265,7 @@ export default async function RecentResultsPage({ searchParams }: PageProps) {
           fallback={
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
               {Array.from({ length: 8 }).map((_, i) => (
-                <div key={i} className="rounded-xl h-36 animate-pulse bg-pitch-800" />
+                <div key={i} className="rounded-xl h-36 animate-pulse bg-ink-700" />
               ))}
             </div>
           }
@@ -272,15 +279,15 @@ export default async function RecentResultsPage({ searchParams }: PageProps) {
         {page > 1 && (
           <Link
             href={buildHref(page - 1)}
-            className="px-4 py-2 text-sm rounded-lg bg-pitch-800 text-gray-300 hover:bg-pitch-700 transition-colors"
+            className="px-4 py-2 text-sm rounded-lg bg-ink-700 text-chalk-2 hover:bg-ink-600 transition-colors"
           >
             ← Newer
           </Link>
         )}
-        <span className="text-xs text-gray-600 px-2">{pageLabel(page)}</span>
+        <span className="text-xs text-chalk-3 px-2">{pageLabel(page)}</span>
         <Link
           href={buildHref(page + 1)}
-          className="px-4 py-2 text-sm rounded-lg bg-pitch-800 text-gray-300 hover:bg-pitch-700 transition-colors"
+          className="px-4 py-2 text-sm rounded-lg bg-ink-700 text-chalk-2 hover:bg-ink-600 transition-colors"
         >
           Older →
         </Link>

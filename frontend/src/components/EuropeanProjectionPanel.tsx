@@ -8,10 +8,10 @@ function pct(v: number): string {
 }
 
 function tone(v: number): string {
-  if (v < 0.005) return "text-gray-600";
-  if (v >= 0.15) return "text-amber-300";
-  if (v >= 0.05) return "text-amber-500/80";
-  return "text-gray-500";
+  if (v < 0.005) return "text-chalk-3";
+  if (v >= 0.15) return "text-est";
+  if (v >= 0.05) return "text-est/80";
+  return "text-chalk-3";
 }
 
 /**
@@ -29,12 +29,12 @@ export default function EuropeanProjectionPanel({ proj, t }: { proj: EuropeanPro
     <div className="card p-5 space-y-3">
       <div>
         <div className="flex items-baseline justify-between gap-3">
-          <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
+          <h2 className="text-sm font-semibold text-chalk-2 uppercase tracking-wider">
             {t("proj.eu.title")}
           </h2>
-          <span className="text-[11px] text-gray-600 tabular-nums">{proj.season}</span>
+          <span className="text-[11px] text-chalk-3 tabular-nums">{proj.season}</span>
         </div>
-        <p className="text-[11px] text-gray-600 mt-1 leading-relaxed">
+        <p className="text-[11px] text-chalk-3 mt-1 leading-relaxed">
           {t("proj.eu.desc", { sims: proj.sims.toLocaleString(), n: proj.matches_remaining })}
         </p>
       </div>
@@ -42,7 +42,7 @@ export default function EuropeanProjectionPanel({ proj, t }: { proj: EuropeanPro
       <div className="overflow-x-auto">
         <table className="w-full text-sm">
           <thead>
-            <tr className="text-[10px] uppercase tracking-wide text-gray-500">
+            <tr className="text-[10px] uppercase tracking-wide text-chalk-3">
               <th className="py-1.5 pr-2 text-left font-medium">{t("proj.team")}</th>
               <th className="py-1.5 px-2 text-right font-medium">{t("proj.eu.win")}</th>
               <th className="py-1.5 px-2 text-right font-medium">{t("proj.eu.final")}</th>
@@ -51,15 +51,15 @@ export default function EuropeanProjectionPanel({ proj, t }: { proj: EuropeanPro
           </thead>
           <tbody>
             {contenders.map((row) => (
-              <tr key={row.team} className="border-t border-pitch-800">
-                <td className="py-1.5 pr-2 text-gray-200 truncate max-w-[10rem]">{row.team}</td>
+              <tr key={row.team} className="border-t border-line-soft">
+                <td className="py-1.5 pr-2 text-chalk truncate max-w-[10rem]">{row.team}</td>
                 <td className={`py-1.5 px-2 text-right tabular-nums font-semibold ${tone(row.p_champion)}`}>
                   {pct(row.p_champion)}
                 </td>
-                <td className="py-1.5 px-2 text-right tabular-nums text-gray-400">
+                <td className="py-1.5 px-2 text-right tabular-nums text-chalk-2">
                   {pct(row.p_final)}
                 </td>
-                <td className="py-1.5 pl-2 text-right tabular-nums text-gray-500">
+                <td className="py-1.5 pl-2 text-right tabular-nums text-chalk-3">
                   {pct(row.p_r16)}
                 </td>
               </tr>
@@ -69,7 +69,7 @@ export default function EuropeanProjectionPanel({ proj, t }: { proj: EuropeanPro
       </div>
 
       {rest > 0 && (
-        <p className="text-[11px] text-gray-600">
+        <p className="text-[11px] text-chalk-3">
           {t("proj.eu.more", { n: rest })}
         </p>
       )}

@@ -54,6 +54,15 @@ def post_alert(
     the worst possible moment. Paths are the HOST's — these run in a container,
     but the person reading the alert is at the Mac.
     """
+    # Never page a human from a test run. The regression test for the no-EV
+    # narrative policy feeds the guard the exact banned paragraph on purpose, so
+    # every `pytest` invocation fired a real "Match narrative broke the no-EV
+    # policy" push at the owner's phone — four of them inside fifteen minutes on
+    # 2026-08-09, for a match that was fine. An alert channel that cries wolf
+    # during CI is an alert channel that gets muted, which costs the real one.
+    if os.environ.get("PYTEST_CURRENT_TEST") or "PYTEST_VERSION" in os.environ:
+        return False
+
     url = os.environ.get("GATE_ALERT_URL")
     if not url:
         return False

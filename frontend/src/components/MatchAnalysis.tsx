@@ -23,8 +23,8 @@ const MOVEMENT_THRESHOLD = 0.03;
 function MovementArrow({ delta }: { delta?: number | null }) {
   if (delta == null || Math.abs(delta) < MOVEMENT_THRESHOLD) return null;
   return delta > 0
-    ? <span className="text-green-400 text-[10px] ml-0.5" title={`+${delta.toFixed(2)} (drifted out)`}>↑</span>
-    : <span className="text-red-400 text-[10px] ml-0.5"   title={`${delta.toFixed(2)} (steam move)`}>↓</span>;
+    ? <span className="text-win text-[10px] ml-0.5" title={`+${delta.toFixed(2)} (drifted out)`}>↑</span>
+    : <span className="text-lose text-[10px] ml-0.5"   title={`${delta.toFixed(2)} (steam move)`}>↓</span>;
 }
 
 function ProbBar({
@@ -46,35 +46,35 @@ function ProbBar({
 
   return (
     <div className="space-y-1">
-      <div className="flex items-center justify-between text-xs text-gray-400">
+      <div className="flex items-center justify-between text-xs text-chalk-2">
         <span>{label}</span>
         <div className="flex items-center gap-2">
           {/* Model probability — always white, labelled "ML" when bookmaker is also shown */}
           {modelPct != null && (
             <span className="flex items-center gap-1">
               {bmPct != null && (
-                <span className="text-[10px] text-gray-600 font-medium">ML</span>
+                <span className="text-[10px] text-chalk-3 font-medium">ML</span>
               )}
-              <span className="font-semibold text-white">{modelPct}%</span>
+              <span className="font-semibold text-chalk">{modelPct}%</span>
             </span>
           )}
           {/* Bookmaker probability — grey, always labelled "BM" */}
           {bmPct != null && (
             <span className="flex items-center gap-1">
-              <span className="text-[10px] text-gray-600 font-medium">BM</span>
-              <span className="text-gray-400">{bmPct}%</span>
+              <span className="text-[10px] text-chalk-3 font-medium">BM</span>
+              <span className="text-chalk-2">{bmPct}%</span>
               <MovementArrow delta={movementDelta} />
             </span>
           )}
           {/* Edge indicator */}
           {diff != null && (
             <span
-              className={`text-[10px] font-mono px-1 rounded ${
+              className={`text-[10px] font-data px-1 rounded ${
                 diff > 2
-                  ? "bg-green-500/20 text-green-400"
+                  ? "bg-win/20 text-win"
                   : diff < -2
-                  ? "bg-red-500/20 text-red-400"
-                  : "bg-gray-700 text-gray-500"
+                  ? "bg-lose/20 text-lose"
+                  : "bg-ink-600 text-chalk-3"
               }`}
             >
               {diff > 0 ? "+" : ""}{diff}pp
@@ -82,7 +82,7 @@ function ProbBar({
           )}
         </div>
       </div>
-      <div className="relative h-2 rounded-full bg-pitch-800 overflow-hidden">
+      <div className="relative h-2 rounded-full bg-ink-700 overflow-hidden">
         {/* Model bar */}
         {modelPct != null && (
           <div
@@ -93,8 +93,11 @@ function ProbBar({
         {/* Bookmaker line */}
         {bmPct != null && (
           <div
-            className="absolute top-0 h-full w-0.5 bg-white/50"
-            style={{ left: `${bmPct}%` }}
+            /* The market's number as a tick across our bar, so the comparison is
+               positional rather than two numbers to subtract in your head. Uses
+               the flood token: a hardcoded white tick vanished on the light theme. */
+            className="absolute top-0 h-full w-0.5"
+            style={{ left: `${bmPct}%`, backgroundColor: "var(--color-flood)" }}
           />
         )}
       </div>
@@ -105,18 +108,18 @@ function ProbBar({
 function Skeleton() {
   return (
     <div className="card p-5 space-y-4 animate-pulse">
-      <div className="h-4 w-48 bg-pitch-700 rounded" />
+      <div className="h-4 w-48 bg-ink-600 rounded" />
       <div className="space-y-3">
         {[1, 2, 3].map((i) => (
           <div key={i} className="space-y-1">
-            <div className="h-3 w-full bg-pitch-700 rounded" />
-            <div className="h-2 w-full bg-pitch-800 rounded" />
+            <div className="h-3 w-full bg-ink-600 rounded" />
+            <div className="h-2 w-full bg-ink-700 rounded" />
           </div>
         ))}
       </div>
       <div className="space-y-2 pt-2">
-        <div className="h-3 w-full bg-pitch-700 rounded" />
-        <div className="h-3 w-3/4 bg-pitch-700 rounded" />
+        <div className="h-3 w-full bg-ink-600 rounded" />
+        <div className="h-3 w-3/4 bg-ink-600 rounded" />
       </div>
     </div>
   );
@@ -146,12 +149,12 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
   if (status === "unauthenticated") {
     return (
       <div className="card p-5 text-center space-y-2">
-        <p className="text-sm text-gray-300">
+        <p className="text-sm text-chalk-2">
           {t("ma.lockedCta")}
         </p>
         <Link
           href="/register"
-          className="inline-block px-4 py-2 rounded-lg bg-green-600 hover:bg-green-500 text-white text-sm font-semibold transition-colors"
+          className="inline-block px-4 py-2 rounded-lg bg-win hover:bg-win text-chalk text-sm font-semibold transition-colors"
         >
           {t("ma.signup")}
         </Link>
@@ -174,11 +177,11 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
     <div className="card p-5 space-y-4">
       {/* Header */}
       <div className="flex items-center justify-between">
-        <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
+        <h2 className="font-display text-sm font-extrabold uppercase tracking-[0.14em] text-chalk-3">
           Bookmaker Comparison
         </h2>
         {data.has_odds_data && data.bookmakers && (
-          <span className="text-xs text-gray-600">
+          <span className="text-xs text-chalk-3">
             {data.bookmakers.num_bookmakers} bookmakers ·{" "}
             {data.bookmakers.bookmakers.slice(0, 2).join(", ")}
             {data.bookmakers.bookmakers.length > 2 ? "…" : ""}
@@ -190,26 +193,26 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
       {mov && [mov.home_delta, mov.draw_delta, mov.away_delta, mov.over_delta].some(
         (d) => d != null && Math.abs(d) >= MOVEMENT_THRESHOLD
       ) && (
-        <div className="flex items-center gap-1.5 text-xs text-gray-500">
+        <div className="flex items-center gap-1.5 text-xs text-chalk-3">
           <span>📈 Odds movement</span>
           {mov.snapshot_age_hours != null && (
-            <span className="text-gray-600">(vs {mov.snapshot_age_hours}h ago)</span>
+            <span className="text-chalk-3">(vs {mov.snapshot_age_hours}h ago)</span>
           )}
-          <span className="text-gray-700">·</span>
-          <span className="text-[10px] text-gray-600">↑ drifted out · ↓ steam move</span>
+          <span className="text-chalk-3">·</span>
+          <span className="text-[10px] text-chalk-3">↑ drifted out · ↓ steam move</span>
         </div>
       )}
 
       {/* Tab switcher */}
-      <div className="flex gap-1 bg-pitch-800 rounded-lg p-1 text-xs">
+      <div className="flex gap-1 bg-ink-700 rounded-lg p-1 text-xs">
         {(["model", "bookmakers"] as const).map((t) => (
           <button
             key={t}
             onClick={() => setTab(t)}
             className={`flex-1 py-1.5 px-2 rounded-md transition-colors capitalize ${
               tab === t
-                ? "bg-pitch-700 text-white font-medium"
-                : "text-gray-500 hover:text-gray-300"
+                ? "bg-ink-600 text-chalk font-medium"
+                : "text-chalk-3 hover:text-chalk-2"
             }`}
           >
             {t === "model" ? `Our model (XGBoost)` : "Bookmaker consensus"}
@@ -221,58 +224,58 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
       <div className="space-y-2">
         {/* Column header — only when both model and bookmaker values are shown */}
         {tab === "model" && data.has_odds_data && (
-          <div className="flex justify-end gap-3 text-[10px] text-gray-600 pb-0.5 border-b border-pitch-700/50">
+          <div className="flex justify-end gap-3 text-[10px] text-chalk-3 pb-0.5 border-b border-line/50">
             <span className="font-medium">ML = our model</span>
             <span className="font-medium">BM = bookmakers</span>
             <span>│ bar = ML · line = BM</span>
           </div>
         )}
-        <p className="text-xs text-gray-500 uppercase tracking-wider">
+        <p className="text-xs text-chalk-3 uppercase tracking-wider">
           1×2 Probabilities
         </p>
 
         {tab === "model" ? (
           <>
-            <ProbBar label="Home win" model={m.home_win} bm={bm?.home_win} color="bg-emerald-500" movementDelta={mov?.home_delta} />
-            <ProbBar label="Draw"     model={m.draw}     bm={bm?.draw}     color="bg-amber-500"  movementDelta={mov?.draw_delta} />
-            <ProbBar label="Away win" model={m.away_win} bm={bm?.away_win} color="bg-sky-500"    movementDelta={mov?.away_delta} />
+            <ProbBar label="Home win" model={m.home_win} bm={bm?.home_win} color="bg-win" movementDelta={mov?.home_delta} />
+            <ProbBar label="Draw"     model={m.draw}     bm={bm?.draw}     color="bg-est"  movementDelta={mov?.draw_delta} />
+            <ProbBar label="Away win" model={m.away_win} bm={bm?.away_win} color="bg-chalk-2"    movementDelta={mov?.away_delta} />
 
             {/* Over / Under 2.5 */}
-            <p className="text-xs text-gray-600 uppercase tracking-wider pt-1">
+            <p className="text-xs text-chalk-3 uppercase tracking-wider pt-1">
               Over / Under 2.5
             </p>
             <ProbBar
               label={`Over 2.5${ro?.over_2_5 ? ` @ ${ro.over_2_5}` : ""}`}
               model={m.over_2_5}
               bm={bm?.over_2_5}
-              color="bg-orange-500"
+              color="bg-est"
               movementDelta={mov?.over_delta}
             />
             <ProbBar
               label={`Under 2.5${ro?.under_2_5 ? ` @ ${ro.under_2_5}` : ""}`}
               model={1 - m.over_2_5}
               bm={bm?.under_2_5}
-              color="bg-sky-600"
+              color="bg-chalk-2"
               movementDelta={mov?.over_delta != null ? -mov.over_delta : null}
             />
 
             {/* GG / NG */}
             {m.btts != null && (
               <>
-                <p className="text-xs text-gray-600 uppercase tracking-wider pt-1">
+                <p className="text-xs text-chalk-3 uppercase tracking-wider pt-1">
                   GG / NG (Both teams to score)
                 </p>
                 <ProbBar
                   label={`GG${ro?.btts_yes ? ` @ ${ro.btts_yes}` : ""}`}
                   model={m.btts}
                   bm={bm?.btts_yes}
-                  color="bg-emerald-500"
+                  color="bg-win"
                 />
                 <ProbBar
                   label={`NG${ro?.btts_no ? ` @ ${ro.btts_no}` : ""}`}
                   model={1 - m.btts}
                   bm={bm?.btts_no}
-                  color="bg-rose-500"
+                  color="bg-lose"
                 />
               </>
             )}
@@ -281,14 +284,14 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
           <>
             {bm ? (
               <>
-                <ProbBar label="Home win" model={bm.home_win} bm={null} color="bg-emerald-500" />
-                <ProbBar label="Draw"     model={bm.draw}     bm={null} color="bg-amber-500" />
-                <ProbBar label="Away win" model={bm.away_win} bm={null} color="bg-sky-500" />
+                <ProbBar label="Home win" model={bm.home_win} bm={null} color="bg-win" />
+                <ProbBar label="Draw"     model={bm.draw}     bm={null} color="bg-est" />
+                <ProbBar label="Away win" model={bm.away_win} bm={null} color="bg-chalk-2" />
 
                 {/* Over / Under 2.5 */}
                 {(bm.over_2_5 != null || bm.under_2_5 != null) && (
                   <>
-                    <p className="text-xs text-gray-600 uppercase tracking-wider pt-1">
+                    <p className="text-xs text-chalk-3 uppercase tracking-wider pt-1">
                       Over / Under 2.5
                     </p>
                     {bm.over_2_5 != null && (
@@ -296,7 +299,7 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
                         label={`Over 2.5${ro?.over_2_5 ? ` @ ${ro.over_2_5}` : ""}`}
                         model={bm.over_2_5}
                         bm={null}
-                        color="bg-orange-500"
+                        color="bg-est"
                       />
                     )}
                     {bm.under_2_5 != null && (
@@ -304,7 +307,7 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
                         label={`Under 2.5${ro?.under_2_5 ? ` @ ${ro.under_2_5}` : ""}`}
                         model={bm.under_2_5}
                         bm={null}
-                        color="bg-sky-600"
+                        color="bg-chalk-2"
                       />
                     )}
                   </>
@@ -313,7 +316,7 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
                 {/* GG / NG */}
                 {(bm.btts_yes != null || bm.btts_no != null) && (
                   <>
-                    <p className="text-xs text-gray-600 uppercase tracking-wider pt-1">
+                    <p className="text-xs text-chalk-3 uppercase tracking-wider pt-1">
                       GG / NG (Both teams to score)
                     </p>
                     {bm.btts_yes != null && (
@@ -321,7 +324,7 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
                         label={`GG${ro?.btts_yes ? ` @ ${ro.btts_yes}` : ""}`}
                         model={bm.btts_yes}
                         bm={null}
-                        color="bg-emerald-500"
+                        color="bg-win"
                       />
                     )}
                     {bm.btts_no != null && (
@@ -329,14 +332,14 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
                         label={`NG${ro?.btts_no ? ` @ ${ro.btts_no}` : ""}`}
                         model={bm.btts_no}
                         bm={null}
-                        color="bg-rose-500"
+                        color="bg-lose"
                       />
                     )}
                   </>
                 )}
               </>
             ) : (
-              <p className="text-sm text-gray-500 py-2">
+              <p className="text-sm text-chalk-3 py-2">
                 No bookmaker odds available for this match.
               </p>
             )}
@@ -358,7 +361,7 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
 
         // mini bar: filled width proportional to probability
         const MiniBar = ({ prob, color }: { prob: number; color: string }) => (
-          <div className="flex-1 h-1.5 bg-pitch-700 rounded-full overflow-hidden">
+          <div className="flex-1 h-1.5 bg-ink-600 rounded-full overflow-hidden">
             <div className={`h-full ${color} rounded-full`} style={{ width: `${Math.round(prob * 100)}%` }} />
           </div>
         );
@@ -366,14 +369,14 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
         return (
           <>
             {/* Goals Lines — always visible */}
-            <div className="border-t border-pitch-700 pt-3 space-y-2">
+            <div className="border-t border-line pt-3 space-y-2">
               <div className="flex items-center gap-2 flex-wrap">
-                <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider">
+                <p className="text-xs font-semibold text-chalk-2 uppercase tracking-wider">
                   Goals Lines
                 </p>
-                <span className="text-[10px] text-gray-600">(Poisson model)</span>
+                <span className="text-[10px] text-chalk-3">(Poisson model)</span>
                 {modelsDisagree && (
-                  <span className="text-[10px] text-amber-500/80 border border-amber-500/30 rounded px-1.5 py-0.5">
+                  <span className="text-[10px] text-est/80 border border-est/30 rounded px-1.5 py-0.5">
                     {t("ma.poissonGap", { pp: Math.round(modelGap * 100) })}
                   </span>
                 )}
@@ -384,23 +387,23 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
                   { label: "2.5", under: ps.under_2_5, over: ps.over_2_5, highlight: true },
                   { label: "3.5", under: ps.under_3_5, over: ps.over_3_5 },
                 ].map(({ label, under, over, highlight }) => (
-                  <div key={label} className={`flex items-center gap-2 text-xs rounded px-1.5 py-1 ${highlight ? "bg-pitch-700/50" : ""}`}>
-                    <span className={`w-6 text-right font-mono shrink-0 ${highlight ? "text-white font-semibold" : "text-gray-500"}`}>
+                  <div key={label} className={`flex items-center gap-2 text-xs rounded px-1.5 py-1 ${highlight ? "bg-ink-600/50" : ""}`}>
+                    <span className={`w-6 text-right font-data shrink-0 ${highlight ? "text-chalk font-semibold" : "text-chalk-3"}`}>
                       {label}
                     </span>
-                    <span className="text-gray-500 w-12 text-right shrink-0">{pct(under)} U</span>
-                    <MiniBar prob={under} color="bg-sky-600" />
-                    <div className="w-px h-3 bg-pitch-600 shrink-0" />
-                    <MiniBar prob={over}  color="bg-orange-500" />
-                    <span className="text-gray-500 w-12 shrink-0">O {pct(over)}</span>
+                    <span className="text-chalk-3 w-12 text-right shrink-0">{pct(under)} U</span>
+                    <MiniBar prob={under} color="bg-chalk-2" />
+                    <div className="w-px h-3 bg-ink-600 shrink-0" />
+                    <MiniBar prob={over}  color="bg-est" />
+                    <span className="text-chalk-3 w-12 shrink-0">O {pct(over)}</span>
                   </div>
                 ))}
               </div>
             </div>
 
             {/* Team Goals — always visible */}
-            <div className="border-t border-pitch-700 pt-3 space-y-2">
-              <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider">
+            <div className="border-t border-line pt-3 space-y-2">
+              <p className="text-xs font-semibold text-chalk-2 uppercase tracking-wider">
                 Team Goals (scores 2+)
               </p>
               <div className="space-y-1.5">
@@ -409,18 +412,18 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
                   { team: awayTeam, over: ps.away_over_1_5, under: ps.away_under_1_5 },
                 ].map(({ team, over, under }) => (
                   <div key={team} className="flex items-center gap-2 text-xs">
-                    <span className="text-gray-400 w-28 truncate shrink-0">{team}</span>
-                    <MiniBar prob={over}  color="bg-violet-500" />
-                    <span className="text-gray-400 shrink-0">{pct(over)}</span>
-                    <span className="text-gray-600 shrink-0 text-[10px]">/ {pct(under)} no</span>
+                    <span className="text-chalk-2 w-28 truncate shrink-0">{team}</span>
+                    <MiniBar prob={over}  color="bg-chalk-2" />
+                    <span className="text-chalk-2 shrink-0">{pct(over)}</span>
+                    <span className="text-chalk-3 shrink-0 text-[10px]">/ {pct(under)} no</span>
                   </div>
                 ))}
               </div>
             </div>
 
             {/* Advanced Stats — always expanded, hidden when models disagree */}
-            {!modelsDisagree && <div className="border-t border-pitch-700 pt-3">
-              <span className="text-xs font-semibold text-gray-400 uppercase tracking-wider">
+            {!modelsDisagree && <div className="border-t border-line pt-3">
+              <span className="text-xs font-semibold text-chalk-2 uppercase tracking-wider">
                 {t("ma.analyticStats")}
               </span>
 
@@ -446,11 +449,11 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
                     return (
                       <div className="space-y-2">
                         <div className="flex items-center gap-2 flex-wrap">
-                          <p className="text-xs text-gray-500 uppercase tracking-wider">{t("ma.likelyScores")}</p>
+                          <p className="text-xs text-chalk-3 uppercase tracking-wider">{t("ma.likelyScores")}</p>
                           {topComboScore && (
-                            <span className="text-xs bg-teal-500/15 border border-teal-500/25 text-teal-400 rounded px-1.5 py-0.5">
+                            <span className="text-xs bg-win/15 border border-win/25 text-win rounded px-1.5 py-0.5">
                               ⭐ {topComboScore.score} ({pct(topComboScore.prob)})
-                              <span className="text-teal-600 ml-1">· {topCombo.label}</span>
+                              <span className="text-win ml-1">· {topCombo.label}</span>
                             </span>
                           )}
                         </div>
@@ -463,18 +466,18 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
                                 key={score}
                                 className={`flex flex-col items-center rounded-lg border py-2 px-1 ${
                                   isTopCombo
-                                    ? "border-teal-500/40 bg-teal-500/10"
-                                    : "border-pitch-600"
+                                    ? "border-win/40 bg-win/10"
+                                    : "border-line"
                                 }`}
-                                style={!isTopCombo ? { backgroundColor: `rgba(251,191,36,${Math.min(prob * 2, 0.15)})` } : {}}
+                                style={!isTopCombo ? { backgroundColor: `color-mix(in srgb, var(--color-est) ${Math.round(Math.min(prob * 2, 0.15) * 100)}%, transparent)` } : {}}
                               >
-                                <span className="text-sm font-semibold text-white font-mono">{score}</span>
-                                <span className="text-[11px] text-gray-400">{pct(prob)}</span>
+                                <span className="text-sm font-semibold text-chalk font-data">{score}</span>
+                                <span className="text-[11px] text-chalk-2">{pct(prob)}</span>
                               </div>
                             );
                           })}
                         </div>
-                        <p className="text-[10px] text-gray-600">
+                        <p className="text-[10px] text-chalk-3">
                           {t("ma.teal")}
                         </p>
                       </div>
@@ -483,7 +486,7 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
 
                   {/* Combo Markets — 2 groups side by side */}
                   <div className="space-y-2">
-                    <p className="text-xs text-gray-500 uppercase tracking-wider">{t("ma.comboMarkets")}</p>
+                    <p className="text-xs text-chalk-3 uppercase tracking-wider">{t("ma.comboMarkets")}</p>
                     <div className="grid grid-cols-2 gap-x-4 gap-y-1.5">
                       {/* Left col: GG-based combos */}
                       {[
@@ -493,9 +496,9 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
                         { label: `${awayTeam} + GG`,  prob: ps.away_win_and_btts },
                       ].map(({ label, prob }) => (
                         <div key={label} className="flex items-center gap-1.5 text-xs col-span-1">
-                          <span className="text-gray-400 w-28 truncate shrink-0">{label}</span>
-                          <MiniBar prob={prob} color="bg-teal-500" />
-                          <span className="text-gray-400 shrink-0 w-7 text-right">{pct(prob)}</span>
+                          <span className="text-chalk-2 w-28 truncate shrink-0">{label}</span>
+                          <MiniBar prob={prob} color="bg-win" />
+                          <span className="text-chalk-2 shrink-0 w-7 text-right">{pct(prob)}</span>
                         </div>
                       ))}
                       {/* Right col: Clean-sheet combos (aligns with 1-0 / 0-1 scenarios) */}
@@ -505,11 +508,11 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
                       ].map(({ label, prob, note }) => (
                         <div key={label} className="flex items-center gap-1.5 text-xs col-span-1">
                           <div className="flex flex-col w-28 shrink-0">
-                            <span className="text-gray-400 truncate">{label}</span>
-                            <span className="text-[10px] text-gray-600">{note}</span>
+                            <span className="text-chalk-2 truncate">{label}</span>
+                            <span className="text-[10px] text-chalk-3">{note}</span>
                           </div>
-                          <MiniBar prob={prob} color="bg-violet-500" />
-                          <span className="text-gray-400 shrink-0 w-7 text-right">{pct(prob)}</span>
+                          <MiniBar prob={prob} color="bg-chalk-2" />
+                          <span className="text-chalk-2 shrink-0 w-7 text-right">{pct(prob)}</span>
                         </div>
                       ))}
                     </div>
@@ -522,8 +525,8 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
 
       {/* Injuries & suspensions */}
       {data.has_injury_data && data.injuries && (
-        <div className="border-t border-pitch-700 pt-3 space-y-2">
-          <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider">
+        <div className="border-t border-line pt-3 space-y-2">
+          <p className="text-xs font-semibold text-chalk-2 uppercase tracking-wider">
             Injuries &amp; Suspensions
           </p>
           <div className="grid grid-cols-2 gap-3">
@@ -531,23 +534,23 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
               const players = data.injuries![side];
               return (
                 <div key={side} className="space-y-1">
-                  <p className="text-xs text-gray-500 font-medium">{teamName}</p>
+                  <p className="text-xs text-chalk-3 font-medium">{teamName}</p>
                   {players.length === 0 ? (
-                    <p className="text-xs text-gray-600 italic">No issues reported</p>
+                    <p className="text-xs text-chalk-3 italic">No issues reported</p>
                   ) : (
                     players.map((p: InjuredPlayer, i: number) => (
                       <div key={i} className="flex items-start gap-1.5">
                         <span className={`mt-0.5 text-xs shrink-0 ${
-                          p.type === "Suspended"   ? "text-red-400"
-                          : p.type === "Questionable" ? "text-amber-400"
-                          : "text-orange-400"
+                          p.type === "Suspended"   ? "text-lose"
+                          : p.type === "Questionable" ? "text-est"
+                          : "text-est"
                         }`}>
                           {p.type === "Suspended" ? "🟥" : p.type === "Questionable" ? "🟡" : "🚑"}
                         </span>
-                        <span className="text-xs text-gray-300 leading-tight">
+                        <span className="text-xs text-chalk-2 leading-tight">
                           <span className="font-medium">{p.name}</span>
                           {p.reason && (
-                            <span className="text-gray-500 ml-1">({p.reason})</span>
+                            <span className="text-chalk-3 ml-1">({p.reason})</span>
                           )}
                         </span>
                       </div>
@@ -561,14 +564,14 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
       )}
 
       {/* AI analysis */}
-      <div className="border-t border-pitch-700 pt-3 space-y-2">
+      <div className="border-t border-line pt-3 space-y-2">
         <div className="flex items-center gap-2">
-          <span className="text-xs font-semibold text-gray-400 uppercase tracking-wider">
+          <span className="text-xs font-semibold text-chalk-2 uppercase tracking-wider">
             {t("ma.aiAnalysis")}
           </span>
-          <span className="text-xs text-gray-600">(gpt-oss-120b · Groq)</span>
+          <span className="text-xs text-chalk-3">(gpt-oss-120b · Groq)</span>
         </div>
-        <p className="text-sm text-gray-300 leading-relaxed">{data.analysis}</p>
+        <p className="text-sm text-chalk-2 leading-relaxed">{data.analysis}</p>
 
         {/* Picks row — blue (high probability) + green (value bet) */}
         {(() => {
@@ -597,15 +600,15 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
             <div className="mt-2 flex flex-wrap gap-2">
               {/* Blue — highest-probability outcome */}
               {topOdds != null && (
-                <div className="inline-flex items-center gap-2 bg-sky-500/10 border border-sky-500/20 rounded-lg px-3 py-2">
-                  <span className="text-sky-400 text-xs">📊</span>
+                <div className="inline-flex items-center gap-2 bg-chalk-2/10 border border-chalk-2/20 rounded-lg px-3 py-2">
+                  <span className="text-chalk-2 text-xs">📊</span>
                   <div className="flex flex-col leading-tight">
-                    <span className="text-[10px] text-sky-500 font-semibold uppercase tracking-wide">
+                    <span className="text-[10px] text-chalk-2 font-semibold uppercase tracking-wide">
                       {t("ma.mostLikely")}
                     </span>
-                    <span className="text-sm text-sky-300 font-medium">
+                    <span className="text-sm text-chalk-2 font-medium">
                       {topPick.label}{" "}
-                      <span className="text-sky-500 text-xs">
+                      <span className="text-chalk-2 text-xs">
                         ({Math.round(topPick.prob * 100)}%)
                       </span>{" "}
                       @ {topOdds}
@@ -620,13 +623,13 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
                   ? data.suggested_markets
                   : data.suggested_market ? [data.suggested_market] : [];
                 return markets.map((market, idx) => (
-                  <div key={market} className="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/20 rounded-lg px-3 py-2">
-                    <span className="text-emerald-400 text-xs">💡</span>
+                  <div key={market} className="inline-flex items-center gap-2 bg-win/10 border border-win/20 rounded-lg px-3 py-2">
+                    <span className="text-win text-xs">💡</span>
                     <div className="flex flex-col leading-tight">
-                      <span className="text-[10px] text-emerald-500 font-semibold uppercase tracking-wide">
+                      <span className="text-[10px] text-win font-semibold uppercase tracking-wide">
                         {idx === 0 ? "Value Bet" : "Alt. Value Bet"}
                       </span>
-                      <span className="text-sm text-emerald-400 font-medium">
+                      <span className="text-sm text-win font-medium">
                         {market}
                       </span>
                     </div>
@@ -639,19 +642,19 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
 
         {/* Watch markets — model edge, not yet a proven suggestion (shadow-tracked) */}
         {data.watch_markets && data.watch_markets.length > 0 && (
-          <div className="mt-2 rounded-lg border border-amber-500/20 bg-amber-500/5 px-3 py-2">
+          <div className="mt-2 rounded-lg border border-est/20 bg-est/5 px-3 py-2">
             <div className="flex items-center gap-1.5 mb-1.5">
-              <span className="text-amber-400 text-xs">📈</span>
-              <span className="text-[10px] text-amber-500 font-semibold uppercase tracking-wide">
+              <span className="text-est text-xs">📈</span>
+              <span className="text-[10px] text-est font-semibold uppercase tracking-wide">
                 {t("ma.watched")}
               </span>
             </div>
             <div className="flex flex-wrap gap-2">
               {data.watch_markets.map((w) => (
-                <span key={w.market} className="inline-flex items-center gap-1.5 text-sm text-amber-300/90">
+                <span key={w.market} className="inline-flex items-center gap-1.5 text-sm text-est/90">
                   <span className="font-medium">{w.market}</span>
                   {/* EV is return-per-stake; model/market are probabilities. Never mix them. */}
-                  <span className="text-amber-500 text-xs">
+                  <span className="text-est text-xs">
                     (EV {w.ev_pct >= 0 ? "+" : ""}{w.ev_pct.toFixed(0)}%
                     {w.model_pct != null && w.market_pct != null
                       ? t("ma.modelVs", { m: Math.round(w.model_pct), k: Math.round(w.market_pct) })
@@ -662,7 +665,7 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
                 </span>
               ))}
             </div>
-            <p className="text-[11px] text-gray-500 mt-1.5 leading-snug">
+            <p className="text-[11px] text-chalk-3 mt-1.5 leading-snug">
               {t("ma.watchNote")}
             </p>
           </div>
@@ -671,7 +674,7 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
 
       {/* Disclaimer */}
       {!isPast && (
-        <p className="text-xs text-gray-600 pt-1">
+        <p className="text-xs text-chalk-3 pt-1">
           ⚠ This is not financial advice. Predictions are for entertainment only.
         </p>
       )}
@@ -683,20 +686,20 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
     {/* Expected cards — team props (club + national), same block both pages. */}
     {(data.exp_home_cards != null || data.exp_away_cards != null) && (
       <div className="card p-5">
-        <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-3">
+        <h2 className="mb-3 font-display text-sm font-extrabold uppercase tracking-[0.14em] text-chalk-3">
           🟨 Expected Cards
         </h2>
         <div className="flex items-center justify-between gap-4">
           <div className="text-left">
-            <p className="text-2xl font-bold text-gray-100 tabular-nums">{data.exp_home_cards?.toFixed(1) ?? "—"}</p>
-            <p className="text-xs text-gray-500">{homeTeam}</p>
+            <p className="text-2xl font-bold text-chalk tabular-nums">{data.exp_home_cards?.toFixed(1) ?? "—"}</p>
+            <p className="text-xs text-chalk-3">{homeTeam}</p>
           </div>
-          <span className="text-xs text-gray-600 tabular-nums">
+          <span className="text-xs text-chalk-3 tabular-nums">
             total ≈ {((data.exp_home_cards ?? 0) + (data.exp_away_cards ?? 0)).toFixed(1)}
           </span>
           <div className="text-right">
-            <p className="text-2xl font-bold text-gray-100 tabular-nums">{data.exp_away_cards?.toFixed(1) ?? "—"}</p>
-            <p className="text-xs text-gray-500">{awayTeam}</p>
+            <p className="text-2xl font-bold text-chalk tabular-nums">{data.exp_away_cards?.toFixed(1) ?? "—"}</p>
+            <p className="text-xs text-chalk-3">{awayTeam}</p>
           </div>
         </div>
       </div>
@@ -705,24 +708,24 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
     {/* Expected corners — team props (club + national). */}
     {(data.exp_home_corners != null || data.exp_away_corners != null) && (
       <div className="card p-5">
-        <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-3">
+        <h2 className="mb-3 font-display text-sm font-extrabold uppercase tracking-[0.14em] text-chalk-3">
           🚩 Expected Corners
         </h2>
         <div className="flex items-center justify-between gap-4">
           <div className="text-left">
-            <p className="text-2xl font-bold text-gray-100 tabular-nums">{data.exp_home_corners?.toFixed(1) ?? "—"}</p>
-            <p className="text-xs text-gray-500">{homeTeam}</p>
+            <p className="text-2xl font-bold text-chalk tabular-nums">{data.exp_home_corners?.toFixed(1) ?? "—"}</p>
+            <p className="text-xs text-chalk-3">{homeTeam}</p>
           </div>
-          <span className="text-xs text-gray-600 tabular-nums">
+          <span className="text-xs text-chalk-3 tabular-nums">
             total ≈ {((data.exp_home_corners ?? 0) + (data.exp_away_corners ?? 0)).toFixed(1)}
           </span>
           <div className="text-right">
-            <p className="text-2xl font-bold text-gray-100 tabular-nums">{data.exp_away_corners?.toFixed(1) ?? "—"}</p>
-            <p className="text-xs text-gray-500">{awayTeam}</p>
+            <p className="text-2xl font-bold text-chalk tabular-nums">{data.exp_away_corners?.toFixed(1) ?? "—"}</p>
+            <p className="text-xs text-chalk-3">{awayTeam}</p>
           </div>
         </div>
         {data.corners_over_9_5_prob != null && (
-          <p className="text-center text-xs text-gray-500 mt-2">
+          <p className="text-center text-xs text-chalk-3 mt-2">
             Over 9.5 corners: {Math.round(data.corners_over_9_5_prob * 100)}%
           </p>
         )}
@@ -733,22 +736,22 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
         them, so both detail pages present the same block. */}
     {(data.h_elo != null || data.a_elo != null) && (
       <div className="card p-5">
-        <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-3">
+        <h2 className="mb-3 font-display text-sm font-extrabold uppercase tracking-[0.14em] text-chalk-3">
           Elo Ratings
         </h2>
         <div className="flex items-center justify-between gap-4">
           <div className="text-left">
-            <p className="text-2xl font-bold text-gray-100 tabular-nums">
+            <p className="text-2xl font-bold text-chalk tabular-nums">
               {data.h_elo != null ? Math.round(data.h_elo) : "—"}
             </p>
-            <p className="text-xs text-gray-500">{homeTeam}</p>
+            <p className="text-xs text-chalk-3">{homeTeam}</p>
           </div>
-          <span className="text-xs text-gray-600">vs</span>
+          <span className="text-xs text-chalk-3">vs</span>
           <div className="text-right">
-            <p className="text-2xl font-bold text-gray-100 tabular-nums">
+            <p className="text-2xl font-bold text-chalk tabular-nums">
               {data.a_elo != null ? Math.round(data.a_elo) : "—"}
             </p>
-            <p className="text-xs text-gray-500">{awayTeam}</p>
+            <p className="text-xs text-chalk-3">{awayTeam}</p>
           </div>
         </div>
       </div>

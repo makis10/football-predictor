@@ -37,11 +37,11 @@ function TypingIndicator() {
   return (
     <div className="flex items-end gap-2 justify-start">
       <span className="text-lg">🤖</span>
-      <div className="bg-pitch-700 rounded-2xl rounded-bl-sm px-4 py-2.5 flex gap-1 items-center">
+      <div className="bg-ink-600 rounded-2xl rounded-bl-sm px-4 py-2.5 flex gap-1 items-center">
         {[0, 1, 2].map((i) => (
           <span
             key={i}
-            className="w-1.5 h-1.5 rounded-full bg-gray-400 animate-bounce"
+            className="w-1.5 h-1.5 rounded-full bg-chalk-2 animate-bounce"
             style={{ animationDelay: `${i * 0.15}s` }}
           />
         ))}
@@ -145,8 +145,8 @@ export default function ChatBox() {
           flex items-center justify-center
           transition-all duration-200
           ${open
-            ? "bg-pitch-700 text-gray-300 hover:bg-pitch-600"
-            : "bg-green-600 text-white hover:bg-green-500"
+            ? "bg-ink-600 text-chalk-2 hover:bg-ink-600"
+            : "bg-win text-chalk hover:bg-win"
           }
         `}
       >
@@ -162,21 +162,21 @@ export default function ChatBox() {
             h-[520px]
             flex flex-col
             rounded-2xl shadow-2xl
-            border border-pitch-700
-            bg-pitch-900
+            border border-line
+            bg-ink-800
             overflow-hidden
           "
         >
           {/* Header */}
-          <div className="flex items-center gap-2 px-4 py-3 border-b border-pitch-700 bg-pitch-800 shrink-0">
+          <div className="flex items-center gap-2 px-4 py-3 border-b border-line bg-ink-700 shrink-0">
             <span className="text-lg">⚽</span>
             <div className="flex-1 min-w-0">
-              <p className="text-sm font-semibold text-white leading-none">Prediction Assistant</p>
-              <p className="text-[10px] text-gray-500 mt-0.5">Llama 3.3 70B · Groq</p>
+              <p className="text-sm font-semibold text-chalk leading-none">Prediction Assistant</p>
+              <p className="text-[10px] text-chalk-3 mt-0.5">Llama 3.3 70B · Groq</p>
             </div>
             <button
               onClick={() => setOpen(false)}
-              className="text-gray-500 hover:text-gray-300 transition-colors p-1"
+              className="text-chalk-3 hover:text-chalk-2 transition-colors p-1"
             >
               <IconClose />
             </button>
@@ -186,7 +186,7 @@ export default function ChatBox() {
           <div className="flex-1 overflow-y-auto px-3 py-3 space-y-3">
             {messages.length === 0 && !loading && (
               <div className="space-y-3">
-                <p className="text-xs text-gray-500 text-center pt-2">
+                <p className="text-xs text-chalk-3 text-center pt-2">
                   {t("chat.askMe")}
                 </p>
                 <div className="flex flex-col gap-1.5">
@@ -195,9 +195,9 @@ export default function ChatBox() {
                       key={key}
                       onClick={() => sendMessage(t(key))}
                       className="
-                        text-left text-xs text-gray-300 px-3 py-2 rounded-xl
-                        bg-pitch-800 hover:bg-pitch-700 border border-pitch-700
-                        hover:border-green-700 transition-colors
+                        text-left text-xs text-chalk-2 px-3 py-2 rounded-xl
+                        bg-ink-700 hover:bg-ink-600 border border-line
+                        hover:border-win/40 transition-colors
                       "
                     >
                       {t(key)}
@@ -219,8 +219,8 @@ export default function ChatBox() {
                   className={`
                     max-w-[85%] rounded-2xl px-3.5 py-2.5 text-sm leading-relaxed whitespace-pre-wrap
                     ${msg.role === "user"
-                      ? "bg-green-700 text-white rounded-br-sm"
-                      : "bg-pitch-700 text-gray-200 rounded-bl-sm"
+                      ? "bg-win/15 text-chalk rounded-br-sm"
+                      : "bg-ink-600 text-chalk rounded-bl-sm"
                     }
                   `}
                 >
@@ -235,7 +235,7 @@ export default function ChatBox() {
           </div>
 
           {/* Input area */}
-          <div className="shrink-0 border-t border-pitch-700 bg-pitch-800 p-3">
+          <div className="shrink-0 border-t border-line bg-ink-700 p-3">
             <div className="flex items-end gap-2">
               <textarea
                 ref={inputRef}
@@ -245,9 +245,9 @@ export default function ChatBox() {
                 placeholder={t("chat.placeholder")}
                 rows={1}
                 className="
-                  flex-1 resize-none rounded-xl bg-pitch-700 border border-pitch-600
-                  text-sm text-gray-200 placeholder-gray-600
-                  px-3 py-2 focus:outline-none focus:border-green-600
+                  flex-1 resize-none rounded-xl bg-ink-600 border border-line
+                  text-sm text-chalk placeholder-gray-600
+                  px-3 py-2 focus:outline-none focus:border-win
                   max-h-28 overflow-y-auto
                 "
                 style={{ lineHeight: "1.4" }}
@@ -258,8 +258,8 @@ export default function ChatBox() {
                 disabled={loading || !input.trim()}
                 className="
                   shrink-0 w-9 h-9 rounded-xl
-                  bg-green-600 hover:bg-green-500 disabled:bg-pitch-700
-                  text-white disabled:text-gray-600
+                  bg-win hover:bg-win disabled:bg-ink-600
+                  text-chalk disabled:text-chalk-3
                   flex items-center justify-center
                   transition-colors
                 "
@@ -267,7 +267,7 @@ export default function ChatBox() {
                 <IconSend />
               </button>
             </div>
-            <p className="text-[10px] text-gray-700 mt-1.5 text-center">
+            <p className="text-[10px] text-chalk-3 mt-1.5 text-center">
               {t("chat.enterHint")}
             </p>
           </div>

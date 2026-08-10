@@ -35,21 +35,21 @@ export default function SettleBetButton({ betId }: Props) {
       <button
         onClick={() => settle("win")}
         disabled={loading}
-        className="rounded px-2 py-1 text-xs font-semibold bg-green-500/20 text-green-400 hover:bg-green-500/40 disabled:opacity-40 transition-colors"
+        className="rounded px-2 py-1 text-xs font-semibold bg-win/20 text-win hover:bg-win/40 disabled:opacity-40 transition-colors"
       >
         W
       </button>
       <button
         onClick={() => settle("loss")}
         disabled={loading}
-        className="rounded px-2 py-1 text-xs font-semibold bg-red-500/20 text-red-400 hover:bg-red-500/40 disabled:opacity-40 transition-colors"
+        className="rounded px-2 py-1 text-xs font-semibold bg-lose/20 text-lose hover:bg-lose/40 disabled:opacity-40 transition-colors"
       >
         L
       </button>
       <button
         onClick={() => settle("void")}
         disabled={loading}
-        className="rounded px-2 py-1 text-xs font-semibold bg-pitch-700 text-gray-400 hover:bg-pitch-600 disabled:opacity-40 transition-colors"
+        className="rounded px-2 py-1 text-xs font-semibold bg-ink-600 text-chalk-2 hover:bg-ink-600 disabled:opacity-40 transition-colors"
       >
         V
       </button>

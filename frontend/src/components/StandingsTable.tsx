@@ -28,10 +28,10 @@ export default function StandingsTable({ table, t }: { table: Standings; t: TFun
   return (
     <div className="card p-5 space-y-3">
       <div className="flex items-baseline justify-between gap-3">
-        <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
+        <h2 className="text-sm font-semibold text-chalk-2 uppercase tracking-wider">
           {t("st.title")}
         </h2>
-        <span className="text-[11px] text-gray-600 tabular-nums">
+        <span className="text-[11px] text-chalk-3 tabular-nums">
           {table.season}
           {table.is_final && ` · ${t("st.final")}`}
         </span>
@@ -40,7 +40,7 @@ export default function StandingsTable({ table, t }: { table: Standings; t: TFun
       <div className="overflow-x-auto">
         <table className="w-full text-sm">
           <thead>
-            <tr className="text-[10px] uppercase tracking-wide text-gray-500">
+            <tr className="text-[10px] uppercase tracking-wide text-chalk-3">
               <th className="py-1.5 pr-2 text-left font-medium">#</th>
               <th className="py-1.5 pr-2 text-left font-medium">{t("st.team")}</th>
               <th className="py-1.5 px-1.5 text-right font-medium">{t("st.p")}</th>
@@ -57,34 +57,34 @@ export default function StandingsTable({ table, t }: { table: Standings; t: TFun
               // an off-by-one in the UI's own position maths.
               const tint =
                 r.zone === "top"
-                  ? "bg-green-500/10"
+                  ? "bg-win/10"
                   : r.zone === "playoff"
-                    ? "bg-amber-500/10"
+                    ? "bg-est/10"
                     : r.zone === "bottom"
-                      ? "bg-rose-500/10"
+                      ? "bg-lose/10"
                       : "";
               const bar =
                 r.zone === "top"
-                  ? "border-l-2 border-green-500"
+                  ? "border-l-2 border-win"
                   : r.zone === "playoff"
-                    ? "border-l-2 border-amber-500"
+                    ? "border-l-2 border-est"
                     : r.zone === "bottom"
-                      ? "border-l-2 border-rose-500"
+                      ? "border-l-2 border-lose"
                       : "border-l-2 border-transparent";
               return (
-                <tr key={r.team} className={`${tint} border-t border-pitch-800`}>
-                  <td className={`py-1.5 pr-2 tabular-nums text-gray-500 ${bar} pl-2`}>
+                <tr key={r.team} className={`${tint} border-t border-line-soft`}>
+                  <td className={`py-1.5 pr-2 tabular-nums text-chalk-3 ${bar} pl-2`}>
                     {r.position}
                   </td>
-                  <td className="py-1.5 pr-2 text-gray-200 truncate max-w-[9rem]">{r.team}</td>
-                  <td className="py-1.5 px-1.5 text-right tabular-nums text-gray-500">{r.played}</td>
-                  <td className="py-1.5 px-1.5 text-right tabular-nums text-gray-500 hidden sm:table-cell">{r.won}</td>
-                  <td className="py-1.5 px-1.5 text-right tabular-nums text-gray-500 hidden sm:table-cell">{r.drawn}</td>
-                  <td className="py-1.5 px-1.5 text-right tabular-nums text-gray-500 hidden sm:table-cell">{r.lost}</td>
-                  <td className="py-1.5 px-1.5 text-right tabular-nums text-gray-400">
+                  <td className="py-1.5 pr-2 text-chalk truncate max-w-[9rem]">{r.team}</td>
+                  <td className="py-1.5 px-1.5 text-right tabular-nums text-chalk-3">{r.played}</td>
+                  <td className="py-1.5 px-1.5 text-right tabular-nums text-chalk-3 hidden sm:table-cell">{r.won}</td>
+                  <td className="py-1.5 px-1.5 text-right tabular-nums text-chalk-3 hidden sm:table-cell">{r.drawn}</td>
+                  <td className="py-1.5 px-1.5 text-right tabular-nums text-chalk-3 hidden sm:table-cell">{r.lost}</td>
+                  <td className="py-1.5 px-1.5 text-right tabular-nums text-chalk-2">
                     {r.goal_diff > 0 ? `+${r.goal_diff}` : r.goal_diff}
                   </td>
-                  <td className="py-1.5 pl-1.5 text-right tabular-nums font-semibold text-gray-100">
+                  <td className="py-1.5 pl-1.5 text-right tabular-nums font-semibold text-chalk">
                     {r.points}
                   </td>
                 </tr>
@@ -94,22 +94,22 @@ export default function StandingsTable({ table, t }: { table: Standings; t: TFun
         </table>
       </div>
 
-      <div className="flex flex-wrap gap-x-4 gap-y-1 text-[11px] text-gray-500 pt-1">
+      <div className="flex flex-wrap gap-x-4 gap-y-1 text-[11px] text-chalk-3 pt-1">
         {table.top_n > 0 && (
           <span className="flex items-center gap-1.5">
-            <span className="w-2 h-2 rounded-sm bg-green-500/70" />
+            <span className="w-2 h-2 rounded-sm bg-win/70" />
             {zoneLabel(table.top_zone, t)}
           </span>
         )}
         {table.playoff_zone && (
           <span className="flex items-center gap-1.5">
-            <span className="w-2 h-2 rounded-sm bg-amber-500/70" />
+            <span className="w-2 h-2 rounded-sm bg-est/70" />
             {zoneLabel(table.playoff_zone, t)}
           </span>
         )}
         {(table.bottom_n > 0 || table.playoff_zone) && (
           <span className="flex items-center gap-1.5">
-            <span className="w-2 h-2 rounded-sm bg-rose-500/70" />
+            <span className="w-2 h-2 rounded-sm bg-lose/70" />
             {zoneLabel(table.bottom_zone, t)}
           </span>
         )}

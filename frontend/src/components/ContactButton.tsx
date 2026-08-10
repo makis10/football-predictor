@@ -70,7 +70,7 @@ export default function ContactButton() {
           }
           setOpen(true);
         }}
-        className="shrink-0 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-pitch-700 hover:bg-pitch-600 text-gray-200 text-xs font-medium transition-colors"
+        className="shrink-0 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-ink-600 hover:bg-ink-600 text-chalk text-xs font-medium transition-colors"
         title={t("contact.title")}
       >
         ✉️ Contact
@@ -78,16 +78,16 @@ export default function ContactButton() {
 
       {open && mounted && createPortal(
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-scrim backdrop-blur-sm p-4"
           onClick={close}
         >
           <div
-            className="w-full max-w-md rounded-xl border border-pitch-700 bg-pitch-900 p-5 shadow-xl"
+            className="w-full max-w-md rounded-xl border border-line bg-ink-800 p-5 shadow-xl"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-center justify-between mb-3">
-              <h2 className="text-sm font-semibold text-white">{t("contact.heading")}</h2>
-              <button onClick={close} className="text-gray-500 hover:text-white text-lg leading-none">
+              <h2 className="text-sm font-semibold text-chalk">{t("contact.heading")}</h2>
+              <button onClick={close} className="text-chalk-3 hover:text-chalk text-lg leading-none">
                 ×
               </button>
             </div>
@@ -95,17 +95,17 @@ export default function ContactButton() {
             {sent ? (
               <div className="py-6 text-center space-y-2">
                 <p className="text-3xl">✅</p>
-                <p className="text-sm text-gray-200">{t("contact.thanks")}</p>
+                <p className="text-sm text-chalk">{t("contact.thanks")}</p>
                 <button
                   onClick={close}
-                  className="mt-2 px-4 py-1.5 rounded-lg bg-green-600 hover:bg-green-500 text-white text-xs font-medium"
+                  className="mt-2 px-4 py-1.5 rounded-lg bg-win hover:bg-win text-chalk text-xs font-medium"
                 >
                   {t("contact.close")}
                 </button>
               </div>
             ) : (
               <>
-                <p className="text-xs text-gray-500 mb-2 leading-relaxed">
+                <p className="text-xs text-chalk-3 mb-2 leading-relaxed">
                   {t("contact.blurb")}
                 </p>
                 <textarea
@@ -115,23 +115,23 @@ export default function ContactButton() {
                   rows={5}
                   autoFocus
                   placeholder={t("contact.placeholder")}
-                  className="w-full rounded-lg bg-pitch-800 border border-pitch-700 px-3 py-2 text-sm text-gray-100 placeholder-gray-600 focus:outline-none focus:border-green-600 resize-none"
+                  className="w-full rounded-lg bg-ink-700 border border-line px-3 py-2 text-sm text-chalk placeholder-gray-600 focus:outline-none focus:border-win resize-none"
                 />
                 <div className="flex items-center justify-between mt-1">
-                  <span className="text-[10px] text-gray-600">{message.length}/2000</span>
-                  {error && <span className="text-xs text-red-400">{error}</span>}
+                  <span className="text-[10px] text-chalk-3">{message.length}/2000</span>
+                  {error && <span className="text-xs text-lose">{error}</span>}
                 </div>
                 <div className="flex justify-end gap-2 mt-3">
                   <button
                     onClick={close}
-                    className="px-3 py-1.5 rounded-lg bg-pitch-700 hover:bg-pitch-600 text-gray-300 text-xs"
+                    className="px-3 py-1.5 rounded-lg bg-ink-600 hover:bg-ink-600 text-chalk-2 text-xs"
                   >
                     {t("contact.cancel")}
                   </button>
                   <button
                     onClick={submit}
                     disabled={sending}
-                    className="px-4 py-1.5 rounded-lg bg-green-600 hover:bg-green-500 disabled:opacity-50 text-white text-xs font-medium"
+                    className="px-4 py-1.5 rounded-lg bg-win hover:bg-win disabled:opacity-50 text-chalk text-xs font-medium"
                   >
                     {sending ? t("contact.sending") : t("contact.send")}
                   </button>

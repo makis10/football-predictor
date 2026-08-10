@@ -1770,6 +1770,47 @@ def _best_ev_market(
     return results[0] if results else None
 
 
+# Claims the match narrative must never make, as they appear in the shipped text.
+# Two families, both of which actually reached the site:
+#   1. EV / expected-value framing — retired as a reader-facing claim because
+#      selecting on model-vs-market disagreement selects the model's own errors.
+#   2. "there is no value / no edge here" — stated as fact when the real reason a
+#      market was dropped is that it has not earned a place in the proven set.
+_NARRATIVE_BANNED = (
+    "ev +", "ev −", "ev -", "expected value", "αναμενόμενη αξία",
+    "θετικό ev", "αρνητικό ev",
+    "δεν προσφέρουν θετική αξία", "δεν προσφέρει θετική αξία",
+    "καμία αξία", "χωρίς αξία", "δεν υπάρχει edge", "no positive value",
+)
+
+
+def _warn_if_narrative_breaks_policy(text: str, home_team: str, away_team: str) -> list[str]:
+    """Detect retired claims in a generated narrative. Alerts; never blocks.
+
+    Returns the list of matched phrases (empty when clean) so tests can assert on
+    it directly.
+    """
+    if not text:
+        return []
+    low = text.lower()
+    hits = [p for p in _NARRATIVE_BANNED if p in low]
+    if hits:
+        log.error(
+            "[narrative-policy] %s vs %s — banned claim(s) %s in: %s",
+            home_team, away_team, hits, text[:300],
+        )
+        try:
+            from backend.app.alerting import post_alert
+            post_alert(
+                f"{home_team} vs {away_team}\nBanned claim(s): {', '.join(hits)}\n\n{text[:300]}",
+                title="Match narrative broke the no-EV policy",
+                priority="high", tags="warning",
+            )
+        except Exception:  # noqa: BLE001 — alerting must never break serving
+            pass
+    return hits
+
+
 def _get_llm_analysis(
     home_team: str,
     away_team: str,
@@ -1820,73 +1861,105 @@ def _get_llm_analysis(
         ev = _compute_ev(model_probs, bm_data)
         best_market = _best_ev_market(ev, raw, fair_probs=fp, model_probs=model_probs)
 
-        def _ev_str(label: str) -> str:
-            v = ev.get(label)
-            if v is None:
-                return "N/A"
-            sign = "+" if v >= 0 else ""
-            return f"{sign}{v*100:.1f}%"
-
-        # Build BTTS section only when bookmaker odds are available
+        # NO EV in the prompt. EV = model_prob × odds − 1 is a *betting claim*,
+        # and this project retired it as one: selecting on model-minus-market
+        # disagreement selects the model's own largest errors (EV-picked 32.1%
+        # vs plain argmax 52.6% over 470 settled fixtures — see the rationale in
+        # scripts/compute_predictions.py and scripts/eval_gate_power.py §2b).
+        # compute_predictions.py stopped writing ev_score and the match card
+        # dropped its "⚡ EV +x%" badge for that reason; this prompt was the one
+        # surface the decision never reached, so the narrative kept opening with
+        # "EV +24.2%" on fixtures the gate had already declined to suggest.
+        #
+        # The de-vigged bookmaker probabilities stay — comparing our number to
+        # the market's is honest context. Turning that gap into a percentage
+        # return is the part that reads as advice, so the LLM never sees it.
         btts_line = ""
         if fp.get("btts_yes") is not None or fp.get("btts_no") is not None:
             btts_line = (
                 f"\n  GG (both score): {_pct(fp.get('btts_yes'))}  "
-                f"(avg odds {raw.get('btts_yes','—')}, EV {_ev_str('GG')})"
+                f"(avg odds {raw.get('btts_yes','—')})"
                 f"\n  NG (not both):   {_pct(fp.get('btts_no'))}  "
-                f"(avg odds {raw.get('btts_no','—')}, EV {_ev_str('NG')})"
+                f"(avg odds {raw.get('btts_no','—')})"
             )
 
         bm_section = (
             f"Bookmaker consensus ({bm_data['num_bookmakers']} bookmakers, vig removed):\n"
-            f"  Home Win: {_pct(fp.get('home_win'))}  (avg odds {raw.get('home_win','—')}, EV {_ev_str('Home Win')})\n"
-            f"  Draw:     {_pct(fp.get('draw'))}  (avg odds {raw.get('draw','—')}, EV {_ev_str('Draw')})\n"
-            f"  Away Win: {_pct(fp.get('away_win'))}  (avg odds {raw.get('away_win','—')}, EV {_ev_str('Away Win')})\n"
-            f"  Over 2.5: {_pct(fp.get('over_2_5'))}  (avg odds {raw.get('over_2_5','—')}, EV {_ev_str('Over 2.5')})\n"
-            f"  Under 2.5:{_pct(fp.get('under_2_5'))}  (avg odds {raw.get('under_2_5','—')}, EV {_ev_str('Under 2.5')})"
+            f"  Home Win: {_pct(fp.get('home_win'))}  (avg odds {raw.get('home_win','—')})\n"
+            f"  Draw:     {_pct(fp.get('draw'))}  (avg odds {raw.get('draw','—')})\n"
+            f"  Away Win: {_pct(fp.get('away_win'))}  (avg odds {raw.get('away_win','—')})\n"
+            f"  Over 2.5: {_pct(fp.get('over_2_5'))}  (avg odds {raw.get('over_2_5','—')})\n"
+            f"  Under 2.5:{_pct(fp.get('under_2_5'))}  (avg odds {raw.get('under_2_5','—')})"
             f"{btts_line}\n"
             f"  Sources: {', '.join(bm_data.get('bookmakers', []))}"
         )
     else:
         bm_section = "No bookmaker odds available for this match."
 
-    # Tell Claude which market to suggest (computed deterministically from EV).
-    # Two-tier EV filter applied before we arrive here:
-    #   • Model's own top-pick market requires EV ≥ 5% (bookmakers rarely misprice
-    #     clear favourites enough to offer real value at tight odds).
-    #   • Alternative markets (not the model's top pick) require EV ≥ 3% — a
-    #     non-obvious value bet is worth surfacing even at a smaller edge.
-    #   • Any market with bookmaker-implied probability < 10% is excluded regardless.
+    # The pick every other surface shows (match card, Top Picks, predictions row):
+    # the model's most likely 1×2 outcome. Derived here from the SAME served
+    # probabilities the caller passed in, so the narrative cannot contradict the
+    # probability bars rendered directly above it.
+    _1x2 = {
+        "Home Win": model_probs.get("home_win"),
+        "Draw":     model_probs.get("draw"),
+        "Away Win": model_probs.get("away_win"),
+    }
+    _1x2 = {k: v for k, v in _1x2.items() if v is not None}
+    model_pick = max(_1x2, key=_1x2.get) if _1x2 else None
+
+    # What the narrative is allowed to claim.
+    #
+    # The previous version of this branch asserted a premise that was simply
+    # false. When `best_market` is None it told the LLM "their odds offer no
+    # value, say so explicitly" — but a market is far more often dropped by the
+    # SUGGESTABLE_MARKETS track-record filter than for lack of value. On
+    # Groningen–Utrecht (match 18037) Away Win cleared every EV and probability
+    # filter and was excluded *only* because "Away Win" has not earned its place
+    # in the proven set. The model, handed both the EV table and that
+    # instruction, faithfully wrote both — "EV +24.2%" and "no positive value"
+    # in the same paragraph. Never state a reason we have not verified.
     if best_market:
         suggested_rule = (
-            f"The market with the highest positive expected value is: {best_market}.\n"
-            f"Your SUGGESTED line MUST use this market exactly as written.\n"
-            f"If this market is NOT the match result that corresponds to the model's "
-            f"highest-probability team, explicitly say so in your analysis — e.g. "
-            f"'While [team] is our top pick, their odds are already priced in by bookmakers; "
-            f"the better value lies in [suggested market].' "
-            f"Do NOT suggest markets with bookmaker-implied probability below 10%."
+            f"A market has cleared our staking filters: {best_market}.\n"
+            f"End your answer with the SUGGESTED line described below, using this "
+            f"market exactly as written.\n"
+            f"If it is NOT the model's own top pick ({model_pick}), say so plainly."
         )
     else:
         suggested_rule = (
-            "No PROVEN market clears both EV and probability filters. "
-            "Omit the SUGGESTED line entirely — do not invent a suggestion. "
-            "If a team is a clear model favourite but their odds offer no value, "
-            "say so explicitly in your analysis."
+            f"Our pick for this match is {model_pick} — the outcome the model rates "
+            f"most likely. It is a prediction, NOT a betting tip.\n"
+            f"Do NOT output a SUGGESTED line and do NOT recommend backing anything.\n"
+            f"Do NOT claim the odds 'offer no value' or that there is 'no edge' — we "
+            f"have not measured that here, and saying it would be inventing a reason."
         )
+
+    # The output-format line used to be unconditional: the prompt demanded a
+    # "SUGGESTED: <market> @ <odds>" line in the very same breath as telling the
+    # model to omit it, so the two halves of the prompt contradicted each other.
+    # It is now branched on the same condition as suggested_rule.
+    suggested_line_rule = (
+        "4) Μετά, σε ΝΕΑ ΓΡΑΜΜΗ, γράψε ΑΚΡΙΒΩΣ (στα αγγλικά, αμετάβλητο format):\n"
+        "SUGGESTED: <market name> @ <decimal odds>"
+        if best_market else
+        "Μην γράψεις γραμμή SUGGESTED."
+    )
 
     # Watch markets — a real model edge that is NOT a proven suggestion yet.
     # The model must NOT claim 'no value anywhere' when these exist; it should
     # name them and explain they're being tracked, not yet trusted to stake.
     watch_section = ""
     if watch_markets:
-        # EV is return-per-stake, not a probability — state both so the LLM
-        # doesn't narrate "the model gives it 55%" when 55% is the EV.
+        # Probabilities only — no EV percentage. The prompt forbids the LLM from
+        # quoting EV; feeding it one here would be the same contradiction that
+        # produced the "EV +24.2% … no positive value" paragraph. The disagreement
+        # is expressible without it: model N% vs market M% says the same thing
+        # without reading as a promised return.
         items = ", ".join(
-            f"{w['market']} (EV {w['ev_pct']:+.0f}% per unit staked; model "
-            f"{w['model_pct']:.0f}% vs market {w['market_pct']:.0f}%)"
+            f"{w['market']} (μοντέλο {w['model_pct']:.0f}% vs αγορά {w['market_pct']:.0f}%)"
             if w.get("model_pct") is not None and w.get("market_pct") is not None
-            else f"{w['market']} (EV {w['ev_pct']:+.0f}% per unit staked)"
+            else f"{w['market']}"
             for w in watch_markets
         )
         watch_section = (
@@ -1931,22 +2004,23 @@ def _get_llm_analysis(
 
 {injury_rule}
 
-Αναμενόμενη αξία (EV) = πιθανότητα_μοντέλου × απόδοση_bookmaker − 1. \
-Θετικό EV σημαίνει ότι το μοντέλο πιστεύει ότι η έκβαση είναι υποτιμημένη από τα γραφεία. \
 Σημείωση: το μοντέλο βασίζεται σε ομαδικά στατιστικά και ΔΕΝ λαμβάνει υπόψη \
 απουσίες μεμονωμένων παικτών.
 
 {suggested_rule}
 {watch_section}
 
-Γράψε ακριβώς 2-3 προτάσεις στα ΕΛΛΗΝΙΚΑ: περιέγραψε τη μεγαλύτερη απόκλιση \
-μοντέλου-bookmakers, ανέφερε τους τραυματίες/αποκλεισμένους (αν υπάρχουν στη λίστα), \
-και εξήγησε σύντομα γιατί η προτεινόμενη αγορά έχει το καλύτερο συνδυασμό \
-πλεονεκτήματος και απόδοσης. \
-Μετά, σε ΝΕΑ ΓΡΑΜΜΗ, γράψε ΑΚΡΙΒΩΣ (στα αγγλικά, αμετάβλητο format):
-SUGGESTED: <market name> @ <decimal odds>
-
-Να είσαι αναλυτικός, όχι διαφημιστικός. Χωρίς εισαγωγικές φράσεις."""
+Γράψε ακριβώς 2-3 προτάσεις στα ΕΛΛΗΝΙΚΑ:
+1) Τι δείχνει η πρόβλεψη του μοντέλου για τον αγώνα (ποιο αποτέλεσμα θεωρεί \
+πιθανότερο και πόσο καθαρά).
+2) Πώς συγκρίνεται με την εκτίμηση των bookmakers — απλή παράθεση των δύο \
+ποσοστών όπου διαφέρουν αισθητά.
+3) Τους τραυματίες/αποκλεισμένους, μόνο αν υπάρχουν στη λίστα.
+{suggested_line_rule}
+ΑΠΑΓΟΡΕΥΕΤΑΙ: να υπολογίσεις ή να αναφέρεις expected value / EV / «αξία» / \
+απόδοση επένδυσης, και να προτρέψεις σε στοίχημα. Περιγράφεις πρόβλεψη, \
+δεν δίνεις συμβουλή. Να είσαι αναλυτικός, όχι διαφημιστικός. \
+Χωρίς εισαγωγικές φράσεις."""
 
     try:
         from groq import Groq
@@ -1990,6 +2064,15 @@ SUGGESTED: <market name> @ <decimal odds>
             "text":              " ".join(analysis_lines),
             "suggested_market":  suggested,
         }
+        # Last line of defence. The prompt no longer contains EV, but a prompt is
+        # a request, not a guarantee — a model revision or a future edit can put
+        # the claim back. This checks the SHIPPED SENTENCE, so it catches drift
+        # the prompt-level tests cannot see.
+        #
+        # It alerts, it does not block: refusing to serve would recreate the
+        # blank-narrative outage (91 of 184 matches, cached for 24 h) that the
+        # empty-completion guard above exists to prevent. Loud beats closed.
+        _warn_if_narrative_breaks_policy(result["text"], home_team, away_team)
         cache_set(_nkey, result, 24 * 3600)
         return result
 

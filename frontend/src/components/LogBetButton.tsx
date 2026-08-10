@@ -68,12 +68,12 @@ export default function LogBetButton({ matchId, suggestedMarket }: Props) {
   return (
     <div className="w-full">
       {result === "ok" && (
-        <div className="rounded-lg bg-green-900/30 border border-green-700 px-4 py-2 text-sm text-green-300 mb-3">
+        <div className="rounded-lg bg-win/10 border border-win/40 px-4 py-2 text-sm text-win mb-3">
           Bet logged. Settle it from My ROI after the match.
         </div>
       )}
       {result === "err" && (
-        <div className="rounded-lg bg-red-900/30 border border-red-700 px-4 py-2 text-sm text-red-300 mb-3">
+        <div className="rounded-lg bg-lose/10 border border-lose/40 px-4 py-2 text-sm text-lose mb-3">
           {errMsg}
         </div>
       )}
@@ -81,26 +81,26 @@ export default function LogBetButton({ matchId, suggestedMarket }: Props) {
       {!open ? (
         <button
           onClick={() => { setOpen(true); setResult(null); }}
-          className="w-full rounded-xl border border-pitch-600 bg-pitch-800 hover:bg-pitch-700 px-4 py-2.5 text-sm font-medium text-gray-300 transition-colors text-left flex items-center gap-2"
+          className="w-full rounded-xl border border-line bg-ink-700 hover:bg-ink-600 px-4 py-2.5 text-sm font-medium text-chalk-2 transition-colors text-left flex items-center gap-2"
         >
           <span>🎯</span> Log a bet on this match
         </button>
       ) : (
-        <form onSubmit={handleSubmit} className="rounded-xl border border-pitch-600 bg-pitch-800 p-4 space-y-3">
+        <form onSubmit={handleSubmit} className="rounded-xl border border-line bg-ink-700 p-4 space-y-3">
           <div className="flex items-center justify-between">
-            <p className="text-sm font-semibold text-white">🎯 Log bet</p>
-            <button type="button" onClick={() => setOpen(false)} className="text-gray-500 hover:text-gray-300 text-xs">
+            <p className="text-sm font-semibold text-chalk">🎯 Log bet</p>
+            <button type="button" onClick={() => setOpen(false)} className="text-chalk-3 hover:text-chalk-2 text-xs">
               Cancel
             </button>
           </div>
 
           <div className="grid grid-cols-1 gap-3">
             <div>
-              <label className="block text-xs text-gray-400 mb-1">Market</label>
+              <label className="block text-xs text-chalk-2 mb-1">Market</label>
               <select
                 value={market}
                 onChange={(e) => setMarket(e.target.value)}
-                className="w-full rounded-lg border border-pitch-600 bg-pitch-900 px-3 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-green-500"
+                className="w-full rounded-lg border border-line bg-ink-800 px-3 py-2 text-sm text-chalk focus:outline-none focus:ring-2 focus:ring-win"
               >
                 {MARKETS.map((m) => (
                   <option key={m.value} value={m.value}>{m.label}</option>
@@ -110,7 +110,7 @@ export default function LogBetButton({ matchId, suggestedMarket }: Props) {
 
             <div className="grid grid-cols-2 gap-3">
               <div>
-                <label className="block text-xs text-gray-400 mb-1">Odds</label>
+                <label className="block text-xs text-chalk-2 mb-1">Odds</label>
                 <input
                   type="number"
                   step="0.01"
@@ -119,11 +119,11 @@ export default function LogBetButton({ matchId, suggestedMarket }: Props) {
                   value={odds}
                   onChange={(e) => setOdds(e.target.value)}
                   placeholder="e.g. 2.10"
-                  className="w-full rounded-lg border border-pitch-600 bg-pitch-900 px-3 py-2 text-sm text-white placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-green-500"
+                  className="w-full rounded-lg border border-line bg-ink-800 px-3 py-2 text-sm text-chalk placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-win"
                 />
               </div>
               <div>
-                <label className="block text-xs text-gray-400 mb-1">Stake (units)</label>
+                <label className="block text-xs text-chalk-2 mb-1">Stake (units)</label>
                 <input
                   type="number"
                   step="any"
@@ -131,7 +131,7 @@ export default function LogBetButton({ matchId, suggestedMarket }: Props) {
                   required
                   value={stake}
                   onChange={(e) => setStake(e.target.value)}
-                  className="w-full rounded-lg border border-pitch-600 bg-pitch-900 px-3 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-green-500"
+                  className="w-full rounded-lg border border-line bg-ink-800 px-3 py-2 text-sm text-chalk focus:outline-none focus:ring-2 focus:ring-win"
                 />
               </div>
             </div>
@@ -140,7 +140,7 @@ export default function LogBetButton({ matchId, suggestedMarket }: Props) {
           <button
             type="submit"
             disabled={loading || !odds}
-            className="w-full rounded-xl bg-green-600 hover:bg-green-500 disabled:opacity-50 px-4 py-2 text-sm font-medium text-white transition-colors"
+            className="w-full rounded-xl bg-win hover:bg-win disabled:opacity-50 px-4 py-2 text-sm font-medium text-chalk transition-colors"
           >
             {loading ? "Saving…" : "Log bet"}
           </button>

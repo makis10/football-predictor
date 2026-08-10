@@ -25,18 +25,18 @@ export default async function MarketRecordPage({ searchParams }: PageProps) {
 
   const tabCls = (active: boolean) =>
     `px-3 py-1.5 rounded-lg text-sm font-medium ${
-      active ? "bg-pitch-700 text-gray-100" : "text-gray-400 hover:text-gray-200"
+      active ? "bg-ink-600 text-chalk" : "text-chalk-2 hover:text-chalk"
     }`;
 
   return (
     <div className="space-y-6">
       <div>
         <h1 className="text-2xl font-bold">Market Record</h1>
-        <div className="mt-3 inline-flex gap-1 rounded-xl border border-pitch-700 bg-pitch-900 p-1">
+        <div className="mt-3 inline-flex gap-1 rounded-xl border border-line bg-ink-800 p-1">
           <a href="/admin/markets?source=national" className={tabCls(source === "national")}>National</a>
           <a href="/admin/markets?source=club" className={tabCls(source === "club")}>Club</a>
         </div>
-        <p className="text-sm text-gray-500 mt-3">
+        <p className="text-sm text-chalk-3 mt-3">
           Shadow-tracked new-model record per market ({source}), over the most-recent{" "}
           {data?.rolling_window ?? 40} settled tickets (rolling window — old results age out,
           so a demoted market can recover on recent form). A market promotes to a headline
@@ -48,13 +48,13 @@ export default async function MarketRecordPage({ searchParams }: PageProps) {
       </div>
 
       {!data || data.markets.length === 0 ? (
-        <div className="rounded-xl border border-pitch-700 bg-pitch-900 p-8 text-center text-gray-500">
+        <div className="rounded-xl border border-line bg-ink-800 p-8 text-center text-chalk-3">
           {t("markets.empty")}
         </div>
       ) : (
-        <div className="overflow-x-auto rounded-xl border border-pitch-700">
+        <div className="overflow-x-auto rounded-xl border border-line">
           <table className="w-full text-sm">
-            <thead className="bg-pitch-800 text-gray-400 text-xs uppercase tracking-wide">
+            <thead className="bg-ink-700 text-chalk-2 text-xs uppercase tracking-wide">
               <tr>
                 <th className="text-left px-4 py-2">Market</th>
                 <th className="text-center px-3 py-2">Status</th>
@@ -64,34 +64,34 @@ export default async function MarketRecordPage({ searchParams }: PageProps) {
                 <th className="text-right px-4 py-2">To promote</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-pitch-800">
+            <tbody className="divide-y divide-line-soft">
               {data.markets.map((m) => (
-                <tr key={m.market} className="hover:bg-pitch-800/40">
-                  <td className="px-4 py-2 font-medium text-gray-100">{m.market}</td>
+                <tr key={m.market} className="hover:bg-ink-700/40">
+                  <td className="px-4 py-2 font-medium text-chalk">{m.market}</td>
                   <td className="px-3 py-2 text-center">
                     {m.demoted ? (
-                      <span className="text-[11px] px-2 py-0.5 rounded-full bg-rose-900/40 text-rose-300">demoted</span>
+                      <span className="text-[11px] px-2 py-0.5 rounded-full bg-lose/10 text-lose">demoted</span>
                     ) : m.is_base ? (
-                      <span className="text-[11px] px-2 py-0.5 rounded-full bg-sky-900/40 text-sky-300">base</span>
+                      <span className="text-[11px] px-2 py-0.5 rounded-full bg-chalk-2/10 text-chalk-2">base</span>
                     ) : m.proven ? (
-                      <span className="text-[11px] px-2 py-0.5 rounded-full bg-green-900/40 text-green-300">proven</span>
+                      <span className="text-[11px] px-2 py-0.5 rounded-full bg-win/10 text-win">proven</span>
                     ) : (
-                      <span className="text-[11px] px-2 py-0.5 rounded-full bg-amber-900/40 text-amber-300">watch</span>
+                      <span className="text-[11px] px-2 py-0.5 rounded-full bg-est/10 text-est">watch</span>
                     )}
                   </td>
-                  <td className="px-3 py-2 text-right tabular-nums text-gray-300">
+                  <td className="px-3 py-2 text-right tabular-nums text-chalk-2">
                     {m.settled}
-                    <span className="text-gray-600 text-xs"> / {m.tracked_total}</span>
+                    <span className="text-chalk-3 text-xs"> / {m.tracked_total}</span>
                   </td>
-                  <td className="px-3 py-2 text-right tabular-nums text-gray-400">
+                  <td className="px-3 py-2 text-right tabular-nums text-chalk-2">
                     {m.win_pct == null ? "—" : `${Math.round(m.win_pct * 100)}%`}
                   </td>
                   <td className={`px-3 py-2 text-right tabular-nums font-semibold ${
-                    m.roi_pct == null ? "text-gray-500" : m.roi_pct >= 0 ? "text-emerald-400" : "text-rose-400"
+                    m.roi_pct == null ? "text-chalk-3" : m.roi_pct >= 0 ? "text-win" : "text-lose"
                   }`}>
                     {fmtRoi(m.roi_pct)}
                   </td>
-                  <td className="px-4 py-2 text-right tabular-nums text-gray-500">
+                  <td className="px-4 py-2 text-right tabular-nums text-chalk-3">
                     {m.is_base || m.proven ? "—" : m.samples_to_promote}
                   </td>
                 </tr>
@@ -101,7 +101,7 @@ export default async function MarketRecordPage({ searchParams }: PageProps) {
         </div>
       )}
 
-      <p className="text-xs text-gray-600">
+      <p className="text-xs text-chalk-3">
         “watch” markets are shown to users as unproven and recorded here; once the data clears
         the bar they auto-promote to real suggestions. “demoted” base markets are treated as
         watch until their cumulative record recovers. ROI is at the recorded (opening) odds.

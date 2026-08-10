@@ -119,6 +119,19 @@ NAME_OVERRIDES: dict[str, str] = {
     'Wolves': 'Wolves',
     'Zurich': 'FC Zurich',
     'Zwolle': 'PEC Zwolle',
+
+    # 2026-08-10, raised by the daily completeness check on the leagues added in
+    # August (Turkey, Denmark, Belgium, Finland) plus one long-standing
+    # Championship gap. Every one of these already HAS ingested stats — they sit
+    # in team_match_stats under the API's spelling and the read side could not
+    # find them, so the cards/corners panel rendered "—" on a club we cover.
+    # Row counts waiting at the time of the fix are noted per line.
+    'Kasimpasa':           'Kasımpaşa',        # 4 rows
+    'Nordsjaelland':       'FC Nordsjaelland', # 7 rows
+    'Oud-Heverlee Leuven': 'OH Leuven',        # 2 rows
+    'Stoke':               'Stoke City',       # 6 rows
+    'TPS':                 'Turku PS',         # 4 rows
+    'Waasland-Beveren':    'SK Beveren',       # 1 row
 }
 
 

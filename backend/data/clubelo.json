@@ -1,10 +1,15 @@
 {
-"as_of": "2026-08-08",
-"count": 588,
+"as_of": "2026-08-10",
+"count": 594,
 "clubs": {
 "Arsenal": {
 "elo": 2063.76,
 "country": "ENG",
+"level": 1
+},
+"Bayern": {
+"elo": 2000.87,
+"country": "GER",
 "level": 1
 },
 "Man City": {
@@ -102,6 +107,11 @@
 "country": "ENG",
 "level": 1
 },
+"Porto": {
+"elo": 1805.95,
+"country": "POR",
+"level": 1
+},
 "Leverkusen": {
 "elo": 1804.03,
 "country": "GER",
@@ -150,6 +160,11 @@
 "Lens": {
 "elo": 1767.04,
 "country": "FRA",
+"level": 1
+},
+"Stuttgart": {
+"elo": 1763.83,
+"country": "GER",
 "level": 1
 },
 "Atalanta": {
@@ -667,6 +682,11 @@
 "country": "ENG",
 "level": 2
 },
+"Castellon": {
+"elo": 1546.33,
+"country": "ESP",
+"level": 2
+},
 "Depor": {
 "elo": 1546.31,
 "country": "ESP",
@@ -1017,12 +1037,12 @@
 "country": "SUI",
 "level": 1
 },
-"Cardiff": {
+"Bolton": {
 "elo": 1468.63,
 "country": "ENG",
 "level": 2
 },
-"Bolton": {
+"Cardiff": {
 "elo": 1468.63,
 "country": "ENG",
 "level": 2
@@ -1197,6 +1217,11 @@
 "country": "SWE",
 "level": 1
 },
+"Alverca": {
+"elo": 1443.63,
+"country": "POR",
+"level": 1
+},
 "Levski": {
 "elo": 1441.25,
 "country": "BUL",
@@ -1290,6 +1315,11 @@
 "Modena": {
 "elo": 1429.02,
 "country": "ITA",
+"level": 2
+},
+"Sociedad B": {
+"elo": 1428.48,
+"country": "ESP",
 "level": 2
 },
 "Casa Pia": {
@@ -1792,7 +1822,7 @@
 "country": "KAZ",
 "level": 0
 },
-"Kortrijk": {
+"Beveren": {
 "elo": 1350.29,
 "country": "BEL",
 "level": 1
@@ -1802,7 +1832,7 @@
 "country": "BEL",
 "level": 1
 },
-"Beveren": {
+"Kortrijk": {
 "elo": 1350.29,
 "country": "BEL",
 "level": 1
@@ -1967,12 +1997,12 @@
 "country": "SVN",
 "level": 1
 },
-"Cambuur": {
+"Willem II": {
 "elo": 1317.29,
 "country": "NED",
 "level": 1
 },
-"Willem II": {
+"Cambuur": {
 "elo": 1317.29,
 "country": "NED",
 "level": 1
@@ -2262,66 +2292,6 @@
 "country": "SCO",
 "level": 1
 },
-"Kolos": {
-"elo": 1257.33,
-"country": "UKR",
-"level": 1
-},
-"Chernomorets": {
-"elo": 1257.33,
-"country": "UKR",
-"level": 1
-},
-"Shakhtar": {
-"elo": 1257.33,
-"country": "UKR",
-"level": 1
-},
-"Polissya Zhytomyr": {
-"elo": 1257.33,
-"country": "UKR",
-"level": 1
-},
-"Karpaty": {
-"elo": 1257.33,
-"country": "UKR",
-"level": 1
-},
-"Kryvbas": {
-"elo": 1257.33,
-"country": "UKR",
-"level": 1
-},
-"Zorya": {
-"elo": 1257.33,
-"country": "UKR",
-"level": 1
-},
-"Veres": {
-"elo": 1257.33,
-"country": "UKR",
-"level": 1
-},
-"Obolon Kyiv": {
-"elo": 1257.33,
-"country": "UKR",
-"level": 1
-},
-"Episentr": {
-"elo": 1257.33,
-"country": "UKR",
-"level": 1
-},
-"Kudrivka": {
-"elo": 1257.33,
-"country": "UKR",
-"level": 1
-},
-"FC Kharkiv": {
-"elo": 1257.33,
-"country": "UKR",
-"level": 1
-},
 "Oergryte": {
 "elo": 1257.3,
 "country": "SWE",
@@ -2366,6 +2336,76 @@
 "elo": 1242.5,
 "country": "KOS",
 "level": 0
+},
+"Shakhtar": {
+"elo": 1241.82,
+"country": "UKR",
+"level": 1
+},
+"Kryvbas": {
+"elo": 1241.82,
+"country": "UKR",
+"level": 1
+},
+"Kolos": {
+"elo": 1241.82,
+"country": "UKR",
+"level": 1
+},
+"Zorya": {
+"elo": 1241.82,
+"country": "UKR",
+"level": 1
+},
+"Veres": {
+"elo": 1241.82,
+"country": "UKR",
+"level": 1
+},
+"Obolon Kyiv": {
+"elo": 1241.82,
+"country": "UKR",
+"level": 1
+},
+"Episentr": {
+"elo": 1241.82,
+"country": "UKR",
+"level": 1
+},
+"Kudrivka": {
+"elo": 1241.82,
+"country": "UKR",
+"level": 1
+},
+"Chernomorets": {
+"elo": 1241.82,
+"country": "UKR",
+"level": 1
+},
+"Polissya Zhytomyr": {
+"elo": 1241.82,
+"country": "UKR",
+"level": 1
+},
+"LNZ": {
+"elo": 1241.82,
+"country": "UKR",
+"level": 1
+},
+"Karpaty": {
+"elo": 1241.82,
+"country": "UKR",
+"level": 1
+},
+"FC Kharkiv": {
+"elo": 1241.82,
+"country": "UKR",
+"level": 1
+},
+"Dynamo Kyiv": {
+"elo": 1241.82,
+"country": "UKR",
+"level": 1
 },
 "Shelbourne": {
 "elo": 1240.87,
@@ -2640,16 +2680,6 @@
 "Saburtalo": {
 "elo": 1149.44,
 "country": "GEO",
-"level": 0
-},
-"Dynamo Kyiv": {
-"elo": 1148.74,
-"country": "UKR",
-"level": 0
-},
-"LNZ": {
-"elo": 1148.74,
-"country": "UKR",
 "level": 0
 },
 "Vllaznia": {

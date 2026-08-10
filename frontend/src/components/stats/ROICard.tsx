@@ -13,15 +13,15 @@ function fmt(n: number, decimals = 2) {
 }
 
 function roiColor(pct: number) {
-  if (pct > 2)  return "text-green-400";
-  if (pct > -2) return "text-yellow-400";
-  return "text-red-400";
+  if (pct > 2)  return "text-win";
+  if (pct > -2) return "text-est";
+  return "text-lose";
 }
 
 function pnlColor(n: number) {
-  if (n > 0) return "text-green-400";
-  if (n < 0) return "text-red-400";
-  return "text-gray-400";
+  if (n > 0) return "text-win";
+  if (n < 0) return "text-lose";
+  return "text-chalk-2";
 }
 
 function euro(n: number) {
@@ -52,13 +52,13 @@ function MarketRow({
   // Money lost purely to the bookmaker margin on this market.
   const vig = fairPnl != null ? pnl - fairPnl : null;
   return (
-    <div className="flex items-center justify-between py-2 border-b border-pitch-700/50 last:border-0">
+    <div className="flex items-center justify-between py-2 border-b border-line/50 last:border-0">
       <div>
-        <p className="text-sm text-gray-300 font-medium">{label}</p>
-        <p className="text-xs text-gray-500">
+        <p className="text-sm text-chalk-2 font-medium">{label}</p>
+        <p className="text-xs text-chalk-3">
           {t("roi.betsStaked", { bets, staked: fmt(staked) })}
           {vig != null && (
-            <span className="text-gray-600"> · {t("roi.vig", { amt: euro(vig) })}</span>
+            <span className="text-chalk-3"> · {t("roi.vig", { amt: euro(vig) })}</span>
           )}
         </p>
       </div>
@@ -72,7 +72,7 @@ function MarketRow({
           </p>
         </div>
         {fairPnl != null && fairRoiPct != null && (
-          <div className="min-w-[72px] border-l border-pitch-700/50 pl-3">
+          <div className="min-w-[72px] border-l border-line/50 pl-3">
             <p className={`text-sm font-bold ${pnlColor(fairPnl)}`}>
               {euro(fairPnl)}
             </p>
@@ -90,14 +90,14 @@ export function ROICard({ roi, bttsStats, clv, t }: Props) {
   const hasStrategy = roi.strategy_bets > 0;
 
   return (
-    <div className="rounded-xl border border-pitch-700 bg-pitch-800/60 p-5 space-y-4">
+    <div className="rounded-xl border border-line bg-ink-700/60 p-5 space-y-4">
       {/* Header — Strategy ROI is the headline number */}
       <div className="flex items-start justify-between">
         <div>
-          <h3 className="text-sm font-semibold text-gray-300">
+          <h3 className="text-sm font-semibold text-chalk-2">
             {t("roi.header")}
           </h3>
-          <p className="text-xs text-gray-500 mt-0.5">
+          <p className="text-xs text-chalk-3 mt-0.5">
             {hasStrategy
               ? t("roi.subtitle", { stake: roi.stake_per_bet, n: roi.strategy_bets })
               : t("roi.noStrategy")}
@@ -117,18 +117,18 @@ export function ROICard({ roi, bttsStats, clv, t }: Props) {
 
       {/* CLV — the fastest reliable edge signal */}
       {clv && clv.bets > 0 && (
-        <div className="flex items-center justify-between rounded-lg bg-pitch-900/60 px-3 py-2">
+        <div className="flex items-center justify-between rounded-lg bg-ink-800/60 px-3 py-2">
           <div>
-            <p className="text-xs text-gray-400 font-medium">{t("roi.clvTitle")}</p>
-            <p className="text-[10px] text-gray-600">
+            <p className="text-xs text-chalk-2 font-medium">{t("roi.clvTitle")}</p>
+            <p className="text-[10px] text-chalk-3">
               {t("roi.clvSub", { n: clv.bets })}
             </p>
           </div>
           <div className="text-right">
-            <p className={`text-sm font-bold ${clv.avg_clv_pct > 0 ? "text-green-400" : "text-red-400"}`}>
+            <p className={`text-sm font-bold ${clv.avg_clv_pct > 0 ? "text-win" : "text-lose"}`}>
               {clv.avg_clv_pct >= 0 ? "+" : ""}{fmt(clv.avg_clv_pct)}%
             </p>
-            <p className="text-[10px] text-gray-500">
+            <p className="text-[10px] text-chalk-3">
               {t("roi.beatClose", { pct: fmt(clv.beat_close_pct, 0) })}
             </p>
           </div>
@@ -137,13 +137,13 @@ export function ROICard({ roi, bttsStats, clv, t }: Props) {
 
       {/* Fair-value (vig removed) — the honest model-quality headline */}
       {roi.fair_available && (
-        <div className="rounded-lg border border-green-700/40 bg-green-950/20 px-4 py-3">
+        <div className="rounded-lg border border-win/40 bg-win/10 px-4 py-3">
           <div className="flex items-center justify-between">
             <div>
-              <p className="text-sm font-semibold text-green-300">
+              <p className="text-sm font-semibold text-win">
                 {t("roi.fairTitle")}
               </p>
-              <p className="text-[11px] text-gray-400 mt-0.5">
+              <p className="text-[11px] text-chalk-2 mt-0.5">
                 {t("roi.fairSub")}
               </p>
             </div>
@@ -154,7 +154,7 @@ export function ROICard({ roi, bttsStats, clv, t }: Props) {
               <p className={`text-xs font-semibold ${roiColor(roi.total_roi_fair_pct)}`}>
                 {roi.total_roi_fair_pct >= 0 ? "+" : ""}{fmt(roi.total_roi_fair_pct)}% {t("roi.fairSuffix")}
               </p>
-              <p className="text-[11px] text-gray-500 mt-0.5">
+              <p className="text-[11px] text-chalk-3 mt-0.5">
                 {t("roi.vsWithVig", { amt: fmt(Math.abs(roi.total_pnl)), pct: fmt(roi.total_roi_pct) })}
               </p>
             </div>
@@ -163,8 +163,8 @@ export function ROICard({ roi, bttsStats, clv, t }: Props) {
       )}
 
       {/* Model baseline — bet-everything, expected ≈ −vig */}
-      <div className="flex items-baseline justify-between border-t border-pitch-700/50 pt-3">
-        <p className="text-xs text-gray-500 font-medium">
+      <div className="flex items-baseline justify-between border-t border-line/50 pt-3">
+        <p className="text-xs text-chalk-3 font-medium">
           {t("roi.modelBaseline", { n: roi.total_bets })}
         </p>
         <div className="flex items-center gap-4 text-right">
@@ -172,7 +172,7 @@ export function ROICard({ roi, bttsStats, clv, t }: Props) {
             {euro(roi.total_pnl)} · {roi.total_roi_pct >= 0 ? "+" : ""}{fmt(roi.total_roi_pct)}%
           </p>
           {roi.fair_available && (
-            <p className={`text-xs font-semibold ${roiColor(roi.total_roi_fair_pct)} min-w-[72px] border-l border-pitch-700/50 pl-3`}>
+            <p className={`text-xs font-semibold ${roiColor(roi.total_roi_fair_pct)} min-w-[72px] border-l border-line/50 pl-3`}>
               {euro(roi.total_pnl_fair)} · {roi.total_roi_fair_pct >= 0 ? "+" : ""}{fmt(roi.total_roi_fair_pct)}%
             </p>
           )}
@@ -181,7 +181,7 @@ export function ROICard({ roi, bttsStats, clv, t }: Props) {
 
       {/* Column headers for the per-market breakdown */}
       {roi.fair_available && (
-        <div className="flex items-center justify-end gap-4 text-[10px] uppercase tracking-wide text-gray-600 -mb-1">
+        <div className="flex items-center justify-end gap-4 text-[10px] uppercase tracking-wide text-chalk-3 -mb-1">
           <span className="min-w-[72px] text-right">{t("roi.colWithVig")}</span>
           <span className="min-w-[72px] text-right pl-3">{t("roi.colModelFair")}</span>
         </div>
@@ -223,14 +223,14 @@ export function ROICard({ roi, bttsStats, clv, t }: Props) {
               fairRoiPct={roi.fair_available ? roi.btts_roi_fair_pct : undefined}
             />
           ) : (
-            <div className="flex items-center justify-between py-2 border-b border-pitch-700/50">
+            <div className="flex items-center justify-between py-2 border-b border-line/50">
               <div>
-                <p className="text-sm text-gray-300 font-medium">{t("roi.market.btts")}</p>
-                <p className="text-xs text-gray-600">
+                <p className="text-sm text-chalk-2 font-medium">{t("roi.market.btts")}</p>
+                <p className="text-xs text-chalk-3">
                   {t("roi.bttsPending")}
                 </p>
               </div>
-              <p className="text-xs text-gray-600 italic">{t("roi.pending")}</p>
+              <p className="text-xs text-chalk-3 italic">{t("roi.pending")}</p>
             </div>
           )
         )}
@@ -238,24 +238,24 @@ export function ROICard({ roi, bttsStats, clv, t }: Props) {
 
       {/* Total decomposition: real loss = model contribution − vig paid */}
       {roi.fair_available && (
-        <div className="rounded-lg bg-pitch-900/60 px-4 py-3 space-y-1.5 text-sm">
+        <div className="rounded-lg bg-ink-800/60 px-4 py-3 space-y-1.5 text-sm">
           <div className="flex items-center justify-between">
-            <span className="text-gray-400">{t("roi.decomp.real")}</span>
+            <span className="text-chalk-2">{t("roi.decomp.real")}</span>
             <span className={`font-bold ${pnlColor(roi.total_pnl)}`}>{euro(roi.total_pnl)}</span>
           </div>
-          <div className="flex items-center justify-between border-t border-pitch-700/50 pt-1.5">
-            <span className="text-gray-400">{t("roi.decomp.model")}</span>
+          <div className="flex items-center justify-between border-t border-line/50 pt-1.5">
+            <span className="text-chalk-2">{t("roi.decomp.model")}</span>
             <span className={`font-semibold ${pnlColor(roi.total_pnl_fair)}`}>{euro(roi.total_pnl_fair)}</span>
           </div>
           <div className="flex items-center justify-between">
-            <span className="text-gray-400">{t("roi.decomp.vig")}</span>
-            <span className="font-semibold text-red-400">{euro(roi.total_pnl - roi.total_pnl_fair)}</span>
+            <span className="text-chalk-2">{t("roi.decomp.vig")}</span>
+            <span className="font-semibold text-lose">{euro(roi.total_pnl - roi.total_pnl_fair)}</span>
           </div>
         </div>
       )}
 
       {/* Disclaimer */}
-      <p className="text-[10px] text-gray-600 leading-relaxed">
+      <p className="text-[10px] text-chalk-3 leading-relaxed">
         {t("roi.disclaimer")}
       </p>
     </div>

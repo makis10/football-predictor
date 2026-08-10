@@ -45,11 +45,11 @@ export function EVChart({ series }: Props) {
 
   if (series.length < 2) {
     return (
-      <div className="rounded-xl border border-pitch-700 bg-pitch-800/60 p-6 text-center">
-        <p className="text-sm text-gray-500">
+      <div className="rounded-xl border border-line bg-ink-700/60 p-6 text-center">
+        <p className="text-sm text-chalk-3">
           {t("ev.empty")}
         </p>
-        <p className="text-xs text-gray-600 mt-1">
+        <p className="text-xs text-chalk-3 mt-1">
           {t("ev.emptySub")}
         </p>
       </div>
@@ -95,18 +95,18 @@ export function EVChart({ series }: Props) {
   const hoverPoint = hoverIdx !== null ? series[hoverIdx] : null;
 
   return (
-    <div className="rounded-xl border border-pitch-700 bg-pitch-800/60 p-5 space-y-3">
+    <div className="rounded-xl border border-line bg-ink-700/60 p-5 space-y-3">
       <div className="flex items-center justify-between flex-wrap gap-2">
         <div>
-          <h3 className="text-sm font-semibold text-gray-300">{t("ev.title")}</h3>
-          <p className="text-xs text-gray-500 mt-0.5">{t("ev.flatStake", { n: series.length })}</p>
+          <h3 className="text-sm font-semibold text-chalk-2">{t("ev.title")}</h3>
+          <p className="text-xs text-chalk-3 mt-0.5">{t("ev.flatStake", { n: series.length })}</p>
         </div>
         {/* Legend — P&L colour matches the line (green=profit, red=loss) */}
         {(() => {
           const lastPnl = series[series.length - 1]?.cumulative_pnl ?? 0;
           const pnlColor = lastPnl >= 0 ? "#4ade80" : "#f87171";
           return (
-            <div className="flex items-center gap-4 text-xs text-gray-400">
+            <div className="flex items-center gap-4 text-xs text-chalk-2">
               <span className="flex items-center gap-1.5">
                 <svg width="20" height="4"><line x1="0" y1="2" x2="20" y2="2" stroke="#a78bfa" strokeWidth="2" strokeDasharray="4 2"/></svg>
                 {t("ev.expectedValue")}
@@ -128,16 +128,16 @@ export function EVChart({ series }: Props) {
 
       {/* Hover tooltip */}
       {hoverPoint && (
-        <div className="flex gap-6 text-xs bg-pitch-700 rounded-lg px-3 py-2">
-          <span className="text-gray-400">{hoverPoint.date}</span>
+        <div className="flex gap-6 text-xs bg-ink-600 rounded-lg px-3 py-2">
+          <span className="text-chalk-2">{hoverPoint.date}</span>
           <span className="text-purple-400">
             EV: {hoverPoint.cumulative_ev >= 0 ? "+" : ""}€{hoverPoint.cumulative_ev.toFixed(2)}
           </span>
-          <span className={hoverPoint.cumulative_pnl >= 0 ? "text-green-400" : "text-red-400"}>
+          <span className={hoverPoint.cumulative_pnl >= 0 ? "text-win" : "text-lose"}>
             P&L: {hoverPoint.cumulative_pnl >= 0 ? "+" : ""}€{hoverPoint.cumulative_pnl.toFixed(2)}
           </span>
           {hasFair && (
-            <span className="text-amber-400">
+            <span className="text-est">
               Fair: {hoverPoint.cumulative_pnl_fair >= 0 ? "+" : ""}€{hoverPoint.cumulative_pnl_fair.toFixed(2)}
             </span>
           )}

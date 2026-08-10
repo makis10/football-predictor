@@ -126,12 +126,35 @@ def prune_vanished(
     and only the given leagues; fixtures beyond the horizon, other leagues,
     past matches, and anything seen in this run are never touched, so user
     tracking and predictions on live fixtures survive.
+
+    CALLER CONTRACT: `leagues` must contain ONLY leagues this run actually
+    received fixtures for, and `touched_ids` the rows it matched. An empty
+    response is not evidence that a league's fixtures were cancelled — it is
+    almost always the feed declining to answer.
+
+    2026-08-09: football-data.org returned "0 fixtures" for PrimeiraLiga,
+    Eredivisie and CL while answering normally for the other seven leagues. The
+    caller passed all ten league codes regardless, so every unplayed fixture of
+    those three inside a 60-day window was deleted as "vanished" — 129 real
+    matches, including a Groningen–Utrecht kicking off three hours later. The
+    two guards below make that unrepeatable even if a caller gets it wrong.
     """
     from datetime import date as _date
 
     from sqlalchemy import delete
 
     from backend.app.models.match import Match
+
+    # Guard 1 — the landmine. `notin_(empty)` is a no-op, so the WHERE collapsed
+    # to `True` and the statement became "delete every unplayed fixture of these
+    # leagues in the window". Nothing seen means nothing to reconcile against.
+    if not touched_ids:
+        print("  Prune skipped: this run matched no fixtures at all "
+              "(treating as a feed failure, not mass cancellation).")
+        return 0
+
+    if not leagues:
+        return 0
 
     today = _date.today()
     result = db.execute(
@@ -140,7 +163,7 @@ def prune_vanished(
         .where(Match.match_date >= today)
         .where(Match.match_date <= today + timedelta(days=horizon_days))
         .where(Match.league.in_(leagues))
-        .where(Match.id.notin_(touched_ids) if touched_ids else True)
+        .where(Match.id.notin_(touched_ids))
     )
     db.commit()
     if result.rowcount:

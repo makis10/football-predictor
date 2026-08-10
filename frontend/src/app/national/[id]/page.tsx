@@ -35,10 +35,10 @@ function HitPill({
 }) {
   if (hit == null) return null;
   const tone = hit
-    ? "bg-green-500/20 text-green-400"
+    ? "bg-win/20 text-win"
     : partial
-    ? "bg-amber-500/20 text-amber-400"
-    : "bg-rose-500/20 text-rose-400";
+    ? "bg-est/20 text-est"
+    : "bg-lose/20 text-lose";
   const icon = hit ? "✓" : partial ? "◐" : "✗";
   return (
     <span className={`badge font-semibold ${tone}`}>
@@ -86,12 +86,12 @@ export default async function NationalMatchDetailPage({ params }: Props) {
       <div className="max-w-2xl mx-auto space-y-6">
         <BackLink fallback="/" label="← Back" />
         <div className="card p-6 space-y-1 text-center">
-          <p className="text-xs text-gray-500">
+          <p className="text-xs text-chalk-3">
             🏆 {prediction.tournament} · {formatDate(prediction.match_date)}
             {kickoffTime ? ` · ${kickoffTime}` : ""}
           </p>
-          <p className="text-lg font-semibold text-gray-100">
-            {prediction.home_team} <span className="text-gray-600">vs</span> {prediction.away_team}
+          <p className="text-lg font-semibold text-chalk">
+            {prediction.home_team} <span className="text-chalk-3">vs</span> {prediction.away_team}
           </p>
         </div>
         <LockedDetailPanel home={prediction.home_team} away={prediction.away_team} t={t} />
@@ -106,9 +106,9 @@ export default async function NationalMatchDetailPage({ params }: Props) {
 
       {/* Match header card */}
       <div className="card p-6 space-y-4">
-        <div className="flex items-center justify-between text-sm text-gray-500">
+        <div className="flex items-center justify-between text-sm text-chalk-3">
           <span>🏆 {prediction.tournament}</span>
-          <span className="badge bg-pitch-800 text-gray-400 tabular-nums">
+          <span className="badge bg-ink-700 text-chalk-2 tabular-nums">
             {formatDate(prediction.match_date)}
             {kickoffTime ? ` · ${kickoffTime}` : ""}
           </span>
@@ -116,32 +116,32 @@ export default async function NationalMatchDetailPage({ params }: Props) {
 
         <div className="flex items-center gap-4">
           <div className="flex-1 text-center space-y-1">
-            <p className="text-xl font-bold text-white leading-tight">
+            <p className="text-xl font-bold text-chalk leading-tight">
               {prediction.home_team}
             </p>
-            <p className="text-xs text-gray-500">{prediction.neutral ? "Neutral" : "Home"}</p>
+            <p className="text-xs text-chalk-3">{prediction.neutral ? "Neutral" : "Home"}</p>
           </div>
 
           <div className="text-center shrink-0">
             {hasResult ? (
               <>
-                <p className="text-4xl font-black tabular-nums text-white">
+                <p className="text-4xl font-black tabular-nums text-chalk">
                   {prediction.actual_home_goals} – {prediction.actual_away_goals}
                 </p>
-                <p className={`text-xs font-medium mt-1 ${isCorrect ? "text-green-400" : "text-red-400"}`}>
+                <p className={`text-xs font-medium mt-1 ${isCorrect ? "text-win" : "text-lose"}`}>
                   {isCorrect ? "✓ Correct" : "✗ Wrong"} · Pred: {prediction.prediction}
                 </p>
               </>
             ) : (
-              <p className="text-2xl font-bold text-gray-600">vs</p>
+              <p className="text-2xl font-bold text-chalk-3">vs</p>
             )}
           </div>
 
           <div className="flex-1 text-center space-y-1">
-            <p className="text-xl font-bold text-white leading-tight">
+            <p className="text-xl font-bold text-chalk leading-tight">
               {prediction.away_team}
             </p>
-            <p className="text-xs text-gray-500">Away</p>
+            <p className="text-xs text-chalk-3">Away</p>
           </div>
         </div>
       </div>
@@ -173,7 +173,7 @@ export default async function NationalMatchDetailPage({ params }: Props) {
         <>
           {/* Win / Draw / Loss */}
           <div className="card p-5 space-y-3">
-            <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
+            <h2 className="text-sm font-semibold text-chalk-2 uppercase tracking-wider">
               Win · Draw · Loss
             </h2>
             <WinProbabilityBars
@@ -188,14 +188,14 @@ export default async function NationalMatchDetailPage({ params }: Props) {
           {/* Goals */}
           <div className="card p-5 space-y-3">
             <div className="flex items-center justify-between">
-              <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
+              <h2 className="text-sm font-semibold text-chalk-2 uppercase tracking-wider">
                 Goals · Over / Under 2.5
               </h2>
               <span
                 className={`badge font-semibold ${
                   prediction.over_2_5_prob > 0.5
-                    ? "bg-orange-500/20 text-orange-400"
-                    : "bg-sky-600/20 text-sky-400"
+                    ? "bg-est/20 text-est"
+                    : "bg-chalk-2/20 text-chalk-2"
                 }`}
               >
                 {prediction.over_2_5_prob > 0.5 ? "OVER" : "UNDER"} 2.5
@@ -208,14 +208,14 @@ export default async function NationalMatchDetailPage({ params }: Props) {
           {prediction.btts_prob != null && (
             <div className="card p-5 space-y-3">
               <div className="flex items-center justify-between">
-                <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
+                <h2 className="text-sm font-semibold text-chalk-2 uppercase tracking-wider">
                   GG / NG · Both Teams to Score
                 </h2>
                 <span
                   className={`badge font-semibold ${
                     prediction.btts_prob >= 0.5
-                      ? "bg-emerald-500/20 text-emerald-400"
-                      : "bg-rose-500/20 text-rose-400"
+                      ? "bg-win/20 text-win"
+                      : "bg-lose/20 text-lose"
                   }`}
                 >
                   {prediction.btts_prob >= 0.5 ? "GG" : "NG"}
@@ -231,22 +231,22 @@ export default async function NationalMatchDetailPage({ params }: Props) {
           above (same as club); here it's kept for FINISHED matches only. */}
       {hasEnded && (prediction.h_elo != null || prediction.a_elo != null) && (
         <div className="card p-5 space-y-3">
-          <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
+          <h2 className="text-sm font-semibold text-chalk-2 uppercase tracking-wider">
             Elo Ratings
           </h2>
           <div className="flex items-center justify-between text-sm">
             <div className="text-center">
-              <p className="text-white font-bold text-lg tabular-nums">
+              <p className="text-chalk font-bold text-lg tabular-nums">
                 {prediction.h_elo != null ? Math.round(prediction.h_elo) : "—"}
               </p>
-              <p className="text-gray-500 text-xs">{prediction.home_team}</p>
+              <p className="text-chalk-3 text-xs">{prediction.home_team}</p>
             </div>
-            <span className="text-gray-600">vs</span>
+            <span className="text-chalk-3">vs</span>
             <div className="text-center">
-              <p className="text-white font-bold text-lg tabular-nums">
+              <p className="text-chalk font-bold text-lg tabular-nums">
                 {prediction.a_elo != null ? Math.round(prediction.a_elo) : "—"}
               </p>
-              <p className="text-gray-500 text-xs">{prediction.away_team}</p>
+              <p className="text-chalk-3 text-xs">{prediction.away_team}</p>
             </div>
           </div>
         </div>
@@ -257,7 +257,7 @@ export default async function NationalMatchDetailPage({ params }: Props) {
       {hasEnded && (prediction.exp_home_cards != null || prediction.exp_away_cards != null) && (
         <div className="card p-5 space-y-3">
           <div className="flex items-center justify-between">
-            <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
+            <h2 className="text-sm font-semibold text-chalk-2 uppercase tracking-wider">
               🟨 Expected Cards
             </h2>
             {/* Not a market call — an estimate-accuracy check (|pred − actual| ≤ 1.5).
@@ -271,30 +271,30 @@ export default async function NationalMatchDetailPage({ params }: Props) {
           </div>
           <div className="flex items-center justify-between text-sm">
             <div className="text-center">
-              <p className="text-white font-bold text-lg tabular-nums">
+              <p className="text-chalk font-bold text-lg tabular-nums">
                 {prediction.exp_home_cards != null ? prediction.exp_home_cards.toFixed(1) : "—"}
               </p>
-              <p className="text-gray-500 text-xs">{prediction.home_team}</p>
+              <p className="text-chalk-3 text-xs">{prediction.home_team}</p>
             </div>
-            <span className="text-gray-600 text-xs">
+            <span className="text-chalk-3 text-xs">
               total ≈ {(((prediction.exp_home_cards ?? 0) + (prediction.exp_away_cards ?? 0)) || 0).toFixed(1)}
             </span>
             <div className="text-center">
-              <p className="text-white font-bold text-lg tabular-nums">
+              <p className="text-chalk font-bold text-lg tabular-nums">
                 {prediction.exp_away_cards != null ? prediction.exp_away_cards.toFixed(1) : "—"}
               </p>
-              <p className="text-gray-500 text-xs">{prediction.away_team}</p>
+              <p className="text-chalk-3 text-xs">{prediction.away_team}</p>
             </div>
           </div>
           {hasResult && (prediction.actual_home_cards != null || prediction.actual_away_cards != null) && (
-            <div className="flex items-center justify-between text-xs border-t border-pitch-700 pt-2">
-              <span className="tabular-nums text-emerald-400 font-semibold">
+            <div className="flex items-center justify-between text-xs border-t border-line pt-2">
+              <span className="tabular-nums text-win font-semibold">
                 {prediction.actual_home_cards ?? "—"}
               </span>
-              <span className="text-gray-500">
+              <span className="text-chalk-3">
                 {t("nat.actualTotal", { n: ((prediction.actual_home_cards ?? 0) + (prediction.actual_away_cards ?? 0)).toFixed(0) })}
               </span>
-              <span className="tabular-nums text-emerald-400 font-semibold">
+              <span className="tabular-nums text-win font-semibold">
                 {prediction.actual_away_cards ?? "—"}
               </span>
             </div>
@@ -307,7 +307,7 @@ export default async function NationalMatchDetailPage({ params }: Props) {
       {hasEnded && (prediction.exp_home_corners != null || prediction.exp_away_corners != null) && (
         <div className="card p-5 space-y-3">
           <div className="flex items-center justify-between">
-            <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
+            <h2 className="text-sm font-semibold text-chalk-2 uppercase tracking-wider">
               🚩 Expected Corners
             </h2>
             {hasResult && prediction.corners_hit != null && (
@@ -316,35 +316,35 @@ export default async function NationalMatchDetailPage({ params }: Props) {
           </div>
           <div className="flex items-center justify-between text-sm">
             <div className="text-center">
-              <p className="text-white font-bold text-lg tabular-nums">
+              <p className="text-chalk font-bold text-lg tabular-nums">
                 {prediction.exp_home_corners != null ? prediction.exp_home_corners.toFixed(1) : "—"}
               </p>
-              <p className="text-gray-500 text-xs">{prediction.home_team}</p>
+              <p className="text-chalk-3 text-xs">{prediction.home_team}</p>
             </div>
-            <span className="text-gray-600 text-xs">
+            <span className="text-chalk-3 text-xs">
               total ≈ {(((prediction.exp_home_corners ?? 0) + (prediction.exp_away_corners ?? 0)) || 0).toFixed(1)}
             </span>
             <div className="text-center">
-              <p className="text-white font-bold text-lg tabular-nums">
+              <p className="text-chalk font-bold text-lg tabular-nums">
                 {prediction.exp_away_corners != null ? prediction.exp_away_corners.toFixed(1) : "—"}
               </p>
-              <p className="text-gray-500 text-xs">{prediction.away_team}</p>
+              <p className="text-chalk-3 text-xs">{prediction.away_team}</p>
             </div>
           </div>
           {prediction.corners_over_9_5_prob != null && (
-            <p className="text-center text-gray-500 text-xs">
+            <p className="text-center text-chalk-3 text-xs">
               Over 9.5 corners: {(prediction.corners_over_9_5_prob * 100).toFixed(0)}%
             </p>
           )}
           {hasResult && (prediction.actual_home_corners != null || prediction.actual_away_corners != null) && (
-            <div className="flex items-center justify-between text-xs border-t border-pitch-700 pt-2">
-              <span className="tabular-nums text-emerald-400 font-semibold">
+            <div className="flex items-center justify-between text-xs border-t border-line pt-2">
+              <span className="tabular-nums text-win font-semibold">
                 {prediction.actual_home_corners ?? "—"}
               </span>
-              <span className="text-gray-500">
+              <span className="text-chalk-3">
                 {t("nat.actualTotal", { n: (prediction.actual_home_corners ?? 0) + (prediction.actual_away_corners ?? 0) })}
               </span>
-              <span className="tabular-nums text-emerald-400 font-semibold">
+              <span className="tabular-nums text-win font-semibold">
                 {prediction.actual_away_corners ?? "—"}
               </span>
             </div>
@@ -358,12 +358,12 @@ export default async function NationalMatchDetailPage({ params }: Props) {
       {hasEnded && prediction.top_scores && prediction.top_scores.length > 0 && (
         <div className="card p-5 space-y-3">
           <div className="flex items-center justify-between">
-            <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
+            <h2 className="text-sm font-semibold text-chalk-2 uppercase tracking-wider">
               {t("nat.likelyScores")}
             </h2>
             <div className="flex items-center gap-2">
               {prediction.most_likely_score && (
-                <span className="badge bg-pitch-800 text-gray-300 font-semibold tabular-nums">
+                <span className="badge bg-ink-700 text-chalk-2 font-semibold tabular-nums">
                   {prediction.most_likely_score}
                 </span>
               )}
@@ -379,9 +379,9 @@ export default async function NationalMatchDetailPage({ params }: Props) {
             </div>
           </div>
           {hasResult && (
-            <p className="text-xs text-gray-500">
+            <p className="text-xs text-chalk-3">
               {t("nat.actualScore")}{" "}
-              <span className="tabular-nums text-emerald-400 font-semibold">
+              <span className="tabular-nums text-win font-semibold">
                 {prediction.actual_home_goals}-{prediction.actual_away_goals}
               </span>
             </p>
@@ -395,19 +395,19 @@ export default async function NationalMatchDetailPage({ params }: Props) {
                 <div key={s.score} className="flex items-center gap-3 text-sm">
                   <span
                     className={`w-10 tabular-nums font-medium ${
-                      isActual ? "text-emerald-400" : "text-gray-200"
+                      isActual ? "text-win" : "text-chalk"
                     }`}
                   >
                     {s.score}
                     {isActual ? " ✓" : ""}
                   </span>
-                  <div className="flex-1 h-2 rounded-full bg-pitch-800 overflow-hidden">
+                  <div className="flex-1 h-2 rounded-full bg-ink-700 overflow-hidden">
                     <div
-                      className={`h-full rounded-full ${isActual ? "bg-emerald-400" : "bg-green-500/60"}`}
+                      className={`h-full rounded-full ${isActual ? "bg-win" : "bg-win/60"}`}
                       style={{ width: `${Math.min(100, (s.prob / prediction.top_scores![0].prob) * 100)}%` }}
                     />
                   </div>
-                  <span className="w-12 text-right tabular-nums text-gray-400">
+                  <span className="w-12 text-right tabular-nums text-chalk-2">
                     {Math.round(s.prob * 100)}%
                   </span>
                 </div>
@@ -420,7 +420,7 @@ export default async function NationalMatchDetailPage({ params }: Props) {
       {/* Player props (scorer / SoT / assist) */}
       <PlayerPropsPanel teams={propTeams} t={t} />
 
-      <p className="text-xs text-gray-600 text-center px-4">
+      <p className="text-xs text-chalk-3 text-center px-4">
         Predictions are for entertainment only.
       </p>
     </div>

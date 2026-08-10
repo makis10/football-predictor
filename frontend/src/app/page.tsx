@@ -20,9 +20,7 @@ import StandingsTable from "@/components/StandingsTable";
 import LeagueProjectionPanel from "@/components/LeagueProjectionPanel";
 import EuropeanProjectionPanel from "@/components/EuropeanProjectionPanel";
 import { getSession } from "@/lib/auth";
-import LeagueFilter from "@/components/LeagueFilter";
-import OddsFilter from "@/components/OddsFilter";
-import ConfidenceFilter from "@/components/ConfidenceFilter";
+import FilterBar, { type LeagueCount } from "@/components/FilterBar";
 import TopPicks from "@/components/TopPicks";
 import { getServerT } from "@/lib/i18n-server";
 
@@ -78,7 +76,7 @@ async function UpcomingGrid({
     }
   } catch {
     return (
-      <div className="col-span-full text-center py-16 text-gray-500">
+      <div className="col-span-full text-center py-16 text-chalk-3">
         <p className="text-4xl mb-3">⚠️</p>
         <p className="font-medium">Could not reach the API.</p>
         <p className="text-sm mt-1">Make sure the backend is running on port 8000.</p>
@@ -112,9 +110,9 @@ async function UpcomingGrid({
 
   if (matches.length === 0) {
     return (
-      <div className="col-span-full text-center py-16 text-gray-500">
+      <div className="col-span-full text-center py-16 text-chalk-3">
         <p className="text-4xl mb-3">📅</p>
-        <p className="font-medium">No upcoming fixtures found.</p>
+        <p className="font-medium text-chalk-2">{t("home.empty")}</p>
         <p className="text-sm mt-1 font-mono text-xs">
           docker compose exec backend python scripts/import_fixtures.py
         </p>
@@ -137,7 +135,7 @@ async function UpcomingGrid({
 
       {Object.entries(byDate).map(([dateStr, dayMatches]) => (
         <div key={dateStr} className="col-span-full space-y-4">
-          <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider border-b border-pitch-700 pb-2">
+          <h2 className="border-b border-line pb-2 font-display text-sm font-extrabold uppercase tracking-[0.14em] text-chalk-3">
             {formatLongDate(dateStr, "en-GB")}
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
@@ -186,6 +184,38 @@ async function LeagueStandings({ league }: { league: string }) {
   );
 }
 
+/**
+ * Fixture counts per league for the filter bar.
+ *
+ * Deliberately ignores the ACTIVE filters. Counting only what survives the
+ * current selection would zero out every other chip the moment one is picked,
+ * so the bar would stop answering the question it exists to answer — "is there
+ * anything on in the Bundesliga tonight" — precisely when the reader is browsing.
+ * Predictions are not requested; only the league field is used.
+ */
+async function getLeagueCounts(): Promise<LeagueCount[]> {
+  try {
+    const [club, national] = await Promise.all([
+      getMatches(undefined, 200, 0, "upcoming", false, undefined, undefined, DAYS_AHEAD),
+      getUpcomingNationalMatches(athensDate(0), athensDate(DAYS_AHEAD - 1), 200).catch(
+        () => [] as { league: string }[],
+      ),
+    ]);
+    const tally = new Map<string, number>();
+    for (const m of [...club, ...national]) {
+      if (!m.league) continue;
+      tally.set(m.league, (tally.get(m.league) ?? 0) + 1);
+    }
+    return [...tally.entries()]
+      .map(([code, count]) => ({ code, count }))
+      .sort((a, b) => b.count - a.count || a.code.localeCompare(b.code));
+  } catch {
+    // The bar still renders, just without counts — a filter row is not worth
+    // failing the whole page over.
+    return [];
+  }
+}
+
 export default async function HomePage({ searchParams }: PageProps) {
   const sp = await searchParams;
   // Resolve to the canonical code (case-insensitive). A league we don't cover
@@ -200,47 +230,44 @@ export default async function HomePage({ searchParams }: PageProps) {
   // rest of the fixtures render locked with a register CTA.
   const session = await getSession();
   const locked = !session;
+  const t = await getServerT();
+  const leagueCounts = await getLeagueCounts();
 
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-2xl font-bold tracking-tight text-white">
-          Upcoming Fixtures
+        <h1 className="font-display text-2xl font-extrabold tracking-tight text-chalk">
+          {t("home.title")}
         </h1>
-        <p className="text-sm text-gray-500 mt-1">
-          Model predictions for the next {DAYS_AHEAD} days across every major league,
-          European cup, friendly &amp; international.
+        <p className="mt-1 max-w-2xl text-sm text-chalk-2">
+          {t("home.subtitle", { days: DAYS_AHEAD })}
         </p>
       </div>
 
       <Suspense>
-        <LeagueFilter active={sp.league} />
+        <FilterBar
+          activeLeague={sp.league}
+          activeOdds={minOdds}
+          activeConfidence={minConfidence}
+          counts={leagueCounts}
+        />
       </Suspense>
-
-      <div className="flex flex-wrap gap-x-6 gap-y-2">
-        <Suspense>
-          <OddsFilter active={minOdds} />
-        </Suspense>
-        <Suspense>
-          <ConfidenceFilter active={minConfidence} />
-        </Suspense>
-      </div>
 
       <div className="space-y-8">
         {unknownLeague ? (
-          <div className="col-span-full text-center py-16 text-gray-500">
-            <p className="text-4xl mb-3">🔍</p>
-            <p className="font-medium">
-              League &ldquo;{unknownLeague}&rdquo; isn&apos;t covered (yet).
+          <div className="col-span-full py-16 text-center text-chalk-3">
+            <p className="mb-3 text-4xl">🔍</p>
+            <p className="font-medium text-chalk-2">
+              {t("home.unknownLeague", { league: unknownLeague })}
             </p>
-            <p className="text-sm mt-1">Pick one of the leagues above.</p>
+            <p className="mt-1 text-sm">{t("home.unknownLeagueHint")}</p>
           </div>
         ) : (
           <Suspense
             fallback={
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
                 {Array.from({ length: 8 }).map((_, i) => (
-                  <div key={i} className="card p-4 h-36 animate-pulse bg-pitch-800" />
+                  <div key={i} className="card p-4 h-36 animate-pulse bg-ink-700" />
                 ))}
               </div>
             }
@@ -254,7 +281,7 @@ export default async function HomePage({ searchParams }: PageProps) {
           never for the "International" pseudo-league (national teams have no
           table). Streams in separately so it can't delay the fixture grid. */}
       {league && league !== INTERNATIONAL_LEAGUE && (
-        <Suspense fallback={<div className="card p-5 h-64 animate-pulse bg-pitch-800" />}>
+        <Suspense fallback={<div className="card p-5 h-64 animate-pulse bg-ink-700" />}>
           <LeagueStandings league={league} />
         </Suspense>
       )}

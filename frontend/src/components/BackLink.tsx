@@ -21,7 +21,7 @@ export default function BackLink({
   return (
     <button
       onClick={onClick}
-      className="inline-flex items-center gap-1.5 text-sm text-gray-500 hover:text-gray-300 transition-colors"
+      className="inline-flex items-center gap-1.5 text-sm text-chalk-3 hover:text-chalk-2 transition-colors"
     >
       {label}
     </button>

@@ -73,10 +73,10 @@ export default async function ProjectionsPage() {
   return (
     <div className="max-w-3xl mx-auto space-y-6">
       <div>
-        <h1 className="text-2xl font-bold tracking-tight text-white">
+        <h1 className="text-2xl font-bold tracking-tight text-chalk">
           {t("projPage.title")}
         </h1>
-        <p className="text-sm text-gray-500 mt-1">
+        <p className="text-sm text-chalk-3 mt-1">
           {t("projPage.desc")}
         </p>
       </div>

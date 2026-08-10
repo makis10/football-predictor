@@ -44,65 +44,65 @@ export default function RegisterPage() {
   return (
     <div className="min-h-[70vh] flex items-center justify-center">
       <div className="w-full max-w-sm">
-        <div className="rounded-2xl border border-pitch-700 bg-pitch-900 p-8 space-y-6">
+        <div className="rounded-2xl border border-line bg-ink-800 p-8 space-y-6">
           <div className="text-center">
             <span className="text-4xl">⚽</span>
             <h1 className="mt-2 text-xl font-bold">Create account</h1>
-            <p className="text-sm text-gray-500 mt-1">Football Predictor</p>
+            <p className="text-sm text-chalk-3 mt-1">Football Predictor</p>
           </div>
 
           {error && (
-            <div className="rounded-lg bg-red-900/40 border border-red-700 px-4 py-2 text-sm text-red-300">
+            <div className="rounded-lg bg-lose/10 border border-lose/40 px-4 py-2 text-sm text-lose">
               {error}
             </div>
           )}
 
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-              <label className="block text-xs text-gray-400 mb-1">Name (optional)</label>
+              <label className="block text-xs text-chalk-2 mb-1">Name (optional)</label>
               <input
                 type="text"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="w-full rounded-lg border border-pitch-600 bg-pitch-800 px-3 py-2 text-sm text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500"
+                className="w-full rounded-lg border border-line bg-ink-700 px-3 py-2 text-sm text-chalk placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-win"
                 placeholder="Your name"
               />
             </div>
             <div>
-              <label className="block text-xs text-gray-400 mb-1">Email</label>
+              <label className="block text-xs text-chalk-2 mb-1">Email</label>
               <input
                 type="email"
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full rounded-lg border border-pitch-600 bg-pitch-800 px-3 py-2 text-sm text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500"
+                className="w-full rounded-lg border border-line bg-ink-700 px-3 py-2 text-sm text-chalk placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-win"
                 placeholder="you@example.com"
               />
             </div>
             <div>
-              <label className="block text-xs text-gray-400 mb-1">Password</label>
+              <label className="block text-xs text-chalk-2 mb-1">Password</label>
               <input
                 type="password"
                 required
                 minLength={8}
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="w-full rounded-lg border border-pitch-600 bg-pitch-800 px-3 py-2 text-sm text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500"
+                className="w-full rounded-lg border border-line bg-ink-700 px-3 py-2 text-sm text-chalk placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-win"
                 placeholder="Min 8 characters"
               />
             </div>
             <button
               type="submit"
               disabled={loading}
-              className="w-full rounded-xl bg-green-600 hover:bg-green-500 disabled:opacity-50 px-4 py-2.5 text-sm font-medium text-white transition-colors"
+              className="w-full rounded-xl bg-win hover:bg-win disabled:opacity-50 px-4 py-2.5 text-sm font-medium text-chalk transition-colors"
             >
               {loading ? "Creating account…" : "Create account"}
             </button>
           </form>
 
-          <p className="text-center text-xs text-gray-500">
+          <p className="text-center text-xs text-chalk-3">
             Already have an account?{" "}
-            <Link href="/login" className="text-green-400 hover:text-green-300">
+            <Link href="/login" className="text-win hover:text-win">
               Sign in
             </Link>
           </p>

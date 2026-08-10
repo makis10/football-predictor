@@ -628,15 +628,15 @@ export function athensDate(offsetDays = 0): string {
 }
 
 export function confidenceColor(confidence: string): string {
-  if (confidence === "high")   return "text-green-400";
-  if (confidence === "medium") return "text-yellow-400";
-  return "text-gray-400";
+  if (confidence === "high")   return "text-win";
+  if (confidence === "medium") return "text-est";
+  return "text-chalk-2";
 }
 
 export function confidenceDot(confidence: string): string {
-  if (confidence === "high")   return "bg-green-400";
-  if (confidence === "medium") return "bg-yellow-400";
-  return "bg-gray-500";
+  if (confidence === "high")   return "bg-win";
+  if (confidence === "medium") return "bg-est";
+  return "bg-chalk-2";
 }
 
 // All date/time rendering is locked to Greece so output is identical whether
@@ -1343,4 +1343,107 @@ export interface WcReview {
 
 export async function getWcReview(): Promise<WcReview> {
   return apiFetch<WcReview>("/national/wc-review");
+}
+
+// ── Tickets (suggested accumulators) ─────────────────────────────────────────
+
+export interface TicketLeg {
+  match_id: number;
+  /** Stable market code: "1" | "X" | "2" | "1X" | "X2" | "12" |
+   *  "O1.5" | "U1.5" | "O2.5" | "U2.5" | "O3.5" | "U3.5" | "GG" | "NG" */
+  market: string;
+  prob: number;
+  odds: number;
+  /** true → `odds` is our own fair price; no bookmaker prices this market. */
+  estimated: boolean;
+  won: boolean | null;
+  league: string;
+  home_team: string;
+  away_team: string;
+  match_date: string;
+  kickoff_time: string | null;
+  home_goals: number | null;
+  away_goals: number | null;
+}
+
+export interface Ticket {
+  id: number;
+  /** safe | treble | fourfold | fivefold | longshot */
+  profile: string;
+  generated_for: string;
+  horizon_days: number;
+  total_odds: number;
+  combined_prob: number;
+  num_legs: number;
+  outcome: "won" | "lost" | null;
+  legs: TicketLeg[];
+}
+
+export interface TicketProfileRecord {
+  profile: string;
+  settled: number;
+  won: number;
+  hit_rate: number;
+  staked: number;
+  returned: number;
+  roi_pct: number;
+}
+
+export interface TicketsResponse {
+  generated_for: string | null;
+  horizon_days: number | null;
+  tickets: Ticket[];
+  profiles_total: number;
+  profiles_built: number;
+  record: TicketProfileRecord[];
+  overall: TicketProfileRecord | null;
+}
+
+export async function getTickets(): Promise<TicketsResponse> {
+  const res = await fetch(`${API_URL}/tickets`, { cache: "no-store" });
+  if (!res.ok) throw new Error(`Tickets → ${res.status} ${res.statusText}`);
+  return res.json() as Promise<TicketsResponse>;
+}
+
+/**
+ * SERVER-SIDE ONLY. The browser proxy is deny-by-default (see
+ * app/api/proxy/[...path]/route.ts), so calling this from a "use client"
+ * component returns 401 for signed-out visitors. Fetch it in a server
+ * component, like /tickets does.
+ */
+export async function getSettledTickets(days = 30): Promise<{ tickets: Ticket[] }> {
+  const res = await fetch(`${API_URL}/tickets/history?days=${days}`, {
+    cache: "no-store",
+  });
+  if (!res.ok) throw new Error(`Ticket history → ${res.status}`);
+  return res.json() as Promise<{ tickets: Ticket[] }>;
+}
+
+/**
+ * Human label for a market code. Team names are needed because "1X" reads as
+ * "Sturm or draw" to a punter, not as an algebraic code.
+ */
+export function marketLabel(
+  market: string,
+  home: string,
+  away: string,
+  t: (k: string, v?: Record<string, string | number>) => string,
+): string {
+  switch (market) {
+    case "1":    return home;
+    case "2":    return away;
+    case "X":    return t("ticket.market.draw");
+    case "1X":   return t("ticket.market.orDraw", { team: home });
+    case "X2":   return t("ticket.market.orDraw", { team: away });
+    case "12":   return t("ticket.market.noDraw");
+    case "GG":   return t("ticket.market.gg");
+    case "NG":   return t("ticket.market.ng");
+    case "O1.5": return t("ticket.market.over", { line: "1.5" });
+    case "U1.5": return t("ticket.market.under", { line: "1.5" });
+    case "O2.5": return t("ticket.market.over", { line: "2.5" });
+    case "U2.5": return t("ticket.market.under", { line: "2.5" });
+    case "O3.5": return t("ticket.market.over", { line: "3.5" });
+    case "U3.5": return t("ticket.market.under", { line: "3.5" });
+    default:     return market;
+  }
 }

@@ -25,11 +25,11 @@ const marketLabel: Record<string, string> = {
 };
 
 function confidenceColor(c: string | null) {
-  if (!c) return "text-gray-500";
+  if (!c) return "text-chalk-3";
   const m = c.toLowerCase();
-  if (m.includes("high"))   return "text-green-400";
-  if (m.includes("medium")) return "text-yellow-400";
-  return "text-red-400";
+  if (m.includes("high"))   return "text-win";
+  if (m.includes("medium")) return "text-est";
+  return "text-lose";
 }
 
 export default async function MyMatchesPage() {
@@ -52,17 +52,17 @@ export default async function MyMatchesPage() {
     return (
       <Link
         href={`/matches/${m.match_id}`}
-        className="flex items-center gap-4 px-4 py-3 rounded-xl border border-pitch-700 bg-pitch-900 hover:border-gray-600 transition-colors"
+        className="flex items-center gap-4 px-4 py-3 rounded-xl border border-line bg-ink-800 hover:border-line transition-colors"
       >
         <span className="text-base shrink-0">{leagueFlag(m.league)}</span>
         <div className="flex-1 min-w-0">
-          <p className="text-sm font-medium text-white truncate">
-            {m.home_team} <span className="text-gray-500">vs</span> {m.away_team}
+          <p className="text-sm font-medium text-chalk truncate">
+            {m.home_team} <span className="text-chalk-3">vs</span> {m.away_team}
           </p>
-          <p className="text-xs text-gray-500">{leagueLabel(m.league)} · {date}</p>
+          <p className="text-xs text-chalk-3">{leagueLabel(m.league)} · {date}</p>
         </div>
         {mkt && (
-          <span className="shrink-0 text-xs px-2 py-0.5 rounded-full bg-green-500/20 text-green-400 font-medium">
+          <span className="shrink-0 text-xs px-2 py-0.5 rounded-full bg-win/20 text-win font-medium">
             ⚡ {mkt}
           </span>
         )}
@@ -79,18 +79,18 @@ export default async function MyMatchesPage() {
     <div className="max-w-2xl mx-auto space-y-8">
       <div>
         <h1 className="text-2xl font-bold">🔖 My Matches</h1>
-        <p className="text-sm text-gray-500 mt-1">Matches you're tracking</p>
+        <p className="text-sm text-chalk-3 mt-1">Matches you're tracking</p>
       </div>
 
       {matches.length === 0 && (
-        <div className="rounded-xl border border-pitch-700 bg-pitch-900 px-6 py-12 text-center">
-          <p className="text-gray-400">No tracked matches yet.</p>
-          <p className="text-sm text-gray-600 mt-1">
+        <div className="rounded-xl border border-line bg-ink-800 px-6 py-12 text-center">
+          <p className="text-chalk-2">No tracked matches yet.</p>
+          <p className="text-sm text-chalk-3 mt-1">
             Click the bookmark icon on any match card to start tracking.
           </p>
           <Link
             href="/"
-            className="inline-block mt-4 px-4 py-2 rounded-lg bg-green-600 hover:bg-green-500 text-sm font-medium text-white transition-colors"
+            className="inline-block mt-4 px-4 py-2 rounded-lg bg-win hover:bg-win text-sm font-medium text-chalk transition-colors"
           >
             Browse matches
           </Link>
@@ -99,14 +99,14 @@ export default async function MyMatchesPage() {
 
       {upcoming.length > 0 && (
         <section className="space-y-2">
-          <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">Upcoming</h2>
+          <h2 className="text-sm font-semibold text-chalk-2 uppercase tracking-wider">Upcoming</h2>
           {upcoming.map((m) => <MatchRow key={m.match_id} m={m} />)}
         </section>
       )}
 
       {past.length > 0 && (
         <section className="space-y-2">
-          <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">Past</h2>
+          <h2 className="text-sm font-semibold text-chalk-2 uppercase tracking-wider">Past</h2>
           {past.map((m) => <MatchRow key={m.match_id} m={m} />)}
         </section>
       )}

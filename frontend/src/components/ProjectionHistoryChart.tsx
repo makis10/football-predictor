@@ -33,10 +33,10 @@ export default function ProjectionHistoryChart({
   if (snapshots.length < 2) {
     return (
       <div className="card p-5">
-        <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-2">
+        <h2 className="text-sm font-semibold text-chalk-2 uppercase tracking-wider mb-2">
           {t("hist.title")}
         </h2>
-        <p className="text-[11px] text-gray-600 leading-relaxed">
+        <p className="text-[11px] text-chalk-3 leading-relaxed">
           {t("hist.empty")}
         </p>
       </div>
@@ -68,8 +68,8 @@ export default function ProjectionHistoryChart({
 
   return (
     <div className="card p-5 space-y-3">
-      <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
-        {t("hist.title")} {anyMarket && <span className="text-[11px] text-gray-600 normal-case">{t("hist.legend")}</span>}
+      <h2 className="text-sm font-semibold text-chalk-2 uppercase tracking-wider">
+        {t("hist.title")} {anyMarket && <span className="text-[11px] text-chalk-3 normal-case">{t("hist.legend")}</span>}
       </h2>
       <div className="overflow-x-auto">
         <svg viewBox={`0 0 ${W} ${H}`} className="w-full" style={{ minWidth: 420 }}>
@@ -110,7 +110,7 @@ export default function ProjectionHistoryChart({
       </div>
       <div className="flex flex-wrap gap-x-4 gap-y-1">
         {teams.map((team, ti) => (
-          <span key={team} className="flex items-center gap-1.5 text-[11px] text-gray-400">
+          <span key={team} className="flex items-center gap-1.5 text-[11px] text-chalk-2">
             <span className="w-2.5 h-2.5 rounded-sm" style={{ background: COLORS[ti % COLORS.length] }} />
             {team}
           </span>

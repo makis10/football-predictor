@@ -6,19 +6,19 @@ interface StatCardProps {
 }
 
 const accentClasses = {
-  green:  "text-green-400",
-  blue:   "text-blue-400",
-  yellow: "text-yellow-400",
-  red:    "text-red-400",
-  gray:   "text-gray-300",
+  green:  "text-win",
+  blue:   "text-chalk-2",
+  yellow: "text-est",
+  red:    "text-lose",
+  gray:   "text-chalk-2",
 };
 
 export function StatCard({ label, value, sub, accent = "gray" }: StatCardProps) {
   return (
-    <div className="rounded-xl border border-pitch-700 bg-pitch-800/60 p-4">
-      <p className="text-xs text-gray-500 uppercase tracking-wide mb-1">{label}</p>
+    <div className="rounded-xl border border-line bg-ink-700/60 p-4">
+      <p className="text-xs text-chalk-3 uppercase tracking-wide mb-1">{label}</p>
       <p className={`text-2xl font-bold ${accentClasses[accent]}`}>{value}</p>
-      {sub && <p className="text-xs text-gray-500 mt-0.5">{sub}</p>}
+      {sub && <p className="text-xs text-chalk-3 mt-0.5">{sub}</p>}
     </div>
   );
 }

@@ -35,13 +35,13 @@ export function WcChampionHistoryChart({ snapshots, topN = 6 }: Props) {
 
   if (snapshots.length < 2) {
     return (
-      <div className="rounded-xl border border-pitch-700 bg-pitch-800/60 p-6 text-center">
-        <p className="text-sm text-gray-500">
+      <div className="rounded-xl border border-line bg-ink-700/60 p-6 text-center">
+        <p className="text-sm text-chalk-3">
           📉 Champion-odds history will appear after a few daily simulations.
         </p>
-        <p className="text-xs text-gray-600 mt-1">
+        <p className="text-xs text-chalk-3 mt-1">
           One snapshot is stored per day each time{" "}
-          <code className="font-mono bg-pitch-700 px-1 rounded">simulate_wc.py --save-json</code> runs.
+          <code className="font-mono bg-ink-600 px-1 rounded">simulate_wc.py --save-json</code> runs.
         </p>
       </div>
     );
@@ -77,15 +77,15 @@ export function WcChampionHistoryChart({ snapshots, topN = 6 }: Props) {
   const hoverSnap = hoverIdx !== null ? snapshots[hoverIdx] : null;
 
   return (
-    <div className="rounded-xl border border-pitch-700 bg-pitch-800/60 p-5 space-y-3">
+    <div className="rounded-xl border border-line bg-ink-700/60 p-5 space-y-3">
       <div className="flex items-center justify-between flex-wrap gap-2">
         <div>
-          <h3 className="text-sm font-semibold text-gray-300">📉 Champion odds over time</h3>
-          <p className="text-xs text-gray-500 mt-0.5">
+          <h3 className="text-sm font-semibold text-chalk-2">📉 Champion odds over time</h3>
+          <p className="text-xs text-chalk-3 mt-0.5">
             Model title probability · {snapshots.length} daily snapshots
           </p>
         </div>
-        <div className="flex items-center gap-3 text-xs text-gray-400 flex-wrap">
+        <div className="flex items-center gap-3 text-xs text-chalk-2 flex-wrap">
           {teams.map((team, ti) => (
             <span key={team} className="flex items-center gap-1.5">
               <svg width="20" height="4">
@@ -98,8 +98,8 @@ export function WcChampionHistoryChart({ snapshots, topN = 6 }: Props) {
       </div>
 
       {hoverSnap && (
-        <div className="flex gap-4 text-xs bg-pitch-700 rounded-lg px-3 py-2 flex-wrap">
-          <span className="text-gray-400">{hoverSnap.date}</span>
+        <div className="flex gap-4 text-xs bg-ink-600 rounded-lg px-3 py-2 flex-wrap">
+          <span className="text-chalk-2">{hoverSnap.date}</span>
           {teams.map((team, ti) => {
             const v = hoverSnap.teams.find((t) => t.team === team)?.win_pct;
             return (

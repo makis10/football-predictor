@@ -25,6 +25,45 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: "2026-08-11-light-theme",
+    date: "2026-08-11",
+    tag: "new",
+    title: {
+      en: "Light theme",
+      el: "Φωτεινό θέμα",
+    },
+    body: {
+      en: "A sun/moon switch next to the language flags. Your choice is remembered and applied before the page paints, so there is no flash of the wrong theme. Both themes were checked against WCAG AA on every surface — which turned up one colour in the existing dark theme that had been failing all along: captions sitting on chips and bar tracks measured 2.95:1, below even the large-text minimum. Fixed.",
+      el: "Διακόπτης ήλιος/φεγγάρι δίπλα στις σημαίες. Η επιλογή σου θυμάται και εφαρμόζεται πριν ζωγραφιστεί η σελίδα, οπότε δεν βλέπεις αναλαμπή λάθος θέματος. Και τα δύο θέματα ελέγχθηκαν με WCAG AA σε κάθε επιφάνεια — κάτι που αποκάλυψε ένα χρώμα του υπάρχοντος σκούρου θέματος που αποτύγχανε από πάντα: οι λεζάντες πάνω σε chips και μπάρες μετρούσαν 2.95:1, κάτω κι από το όριο για μεγάλο κείμενο. Διορθώθηκε.",
+    },
+  },
+  {
+    id: "2026-08-10-redesign",
+    date: "2026-08-10",
+    tag: "improvement",
+    title: {
+      en: "Redesigned — and it finally works on a phone",
+      el: "Ανασχεδιασμός — και επιτέλους δουλεύει στο κινητό",
+    },
+    body: {
+      en: "The header used to force the page 740px wide on a 375px screen, so every page scrolled sideways or rendered at half size on a phone. The links now live in a menu and nothing overflows. The 42 filter buttons that sat above the first fixture are down to a single row showing only leagues that actually have games, with counts. And every probability now carries a hatched band showing how certain we are: a 55% pick we mean and a 55% pick we do not no longer look identical.",
+      el: "Το header επέβαλλε πλάτος 740px σε οθόνη 375px, οπότε κάθε σελίδα έσερνε πλάγια ή έδειχνε στο μισό μέγεθος στο κινητό. Τα links μπήκαν σε μενού και τίποτα δεν ξεχειλίζει. Τα 42 κουμπιά φίλτρων πάνω από τον πρώτο αγώνα έγιναν μία γραμμή με μόνο τις λίγκες που έχουν όντως παιχνίδια, με μετρητές. Και κάθε πιθανότητα έχει πλέον ριγέ ζώνη που δείχνει πόσο σίγουροι είμαστε: ένα 55% που το εννοούμε κι ένα 55% που δεν το εννοούμε δεν φαίνονται πια ίδια.",
+    },
+  },
+  {
+    id: "2026-08-10-tickets",
+    date: "2026-08-10",
+    tag: "new",
+    title: {
+      en: "New: ready-made accumulator tickets",
+      el: "Νέο: έτοιμα δελτία παρολί",
+    },
+    body: {
+      en: "A new Tickets tab turns the day's picks into five filled-in betting slips — a banker built from many short prices, a treble, a four-fold, a five-fold and a long shot. Legs can be 1X2, double chance, over/under 1.5–3.5 or both-teams-to-score, and every slip shows its total odds next to its honest chance of landing. Selections are ranked purely by our model's probability, never by how the odds compare. Every slip is stored when it is cut and graded once its matches finish, so the track record on the page is real.",
+      el: "Νέα καρτέλα Δελτία: οι επιλογές της ημέρας γίνονται πέντε έτοιμα δελτία — ένα «σίγουρο» με πολλά μικρά σκέλη, μια τριάδα, μια τετράδα, μια πεντάδα και ένα ρίσκο. Τα σκέλη μπορεί να είναι 1Χ2, διπλή ευκαιρία, over/under 1.5–3.5 ή GG/NG, και κάθε δελτίο δείχνει τη συνολική απόδοση δίπλα στην πραγματική πιθανότητα επιτυχίας. Οι επιλογές κατατάσσονται μόνο με βάση την πιθανότητα του μοντέλου μας, ποτέ με βάση τη σύγκριση με τις αποδόσεις. Κάθε δελτίο αποθηκεύεται όπως βγήκε και βαθμολογείται μόλις τελειώσουν οι αγώνες του, οπότε το ιστορικό στη σελίδα είναι αληθινό.",
+    },
+  },
+  {
     id: "2026-08-08-club-names",
     date: "2026-08-08",
     tag: "improvement",

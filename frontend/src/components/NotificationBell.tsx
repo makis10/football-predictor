@@ -15,9 +15,9 @@ import { useT, useLang } from "@/components/LanguageProvider";
 const STORAGE_KEY = "fp_changelog_last_read_id";
 
 const TAG_STYLE: Record<ChangeTag, string> = {
-  new:         "bg-green-900/40 text-green-300 border-green-700/40",
-  improvement: "bg-sky-900/40 text-sky-300 border-sky-700/40",
-  fix:         "bg-amber-900/40 text-amber-300 border-amber-700/40",
+  new:         "bg-win/10 text-win border-win/40",
+  improvement: "bg-chalk-2/10 text-chalk-2 border-chalk-2/40",
+  fix:         "bg-est/10 text-est border-est/40",
 };
 
 const TAG_KEY: Record<ChangeTag, string> = {
@@ -67,7 +67,7 @@ export default function NotificationBell() {
       <button
         onClick={toggle}
         aria-label={t("bell.aria")}
-        className="relative flex items-center justify-center w-9 h-9 rounded-full text-gray-400 hover:text-white hover:bg-pitch-800 transition-colors"
+        className="relative flex items-center justify-center w-9 h-9 rounded-full text-chalk-2 hover:text-chalk hover:bg-ink-700 transition-colors"
       >
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
           strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -75,7 +75,7 @@ export default function NotificationBell() {
           <path d="M13.73 21a2 2 0 0 1-3.46 0" />
         </svg>
         {unread > 0 && (
-          <span className="absolute -top-0.5 -right-0.5 min-w-[18px] h-[18px] px-1 rounded-full bg-green-600 text-white text-[10px] font-bold flex items-center justify-center">
+          <span className="absolute -top-0.5 -right-0.5 min-w-[18px] h-[18px] px-1 rounded-full bg-win text-chalk text-[10px] font-bold flex items-center justify-center">
             {unread > 9 ? "9+" : unread}
           </span>
         )}
@@ -90,23 +90,23 @@ export default function NotificationBell() {
           style={{ position: "fixed", top: 0, right: 0, bottom: 0, left: 0 }}
         >
           {/* Backdrop */}
-          <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" onClick={() => setOpen(false)} />
+          <div className="absolute inset-0 bg-scrim backdrop-blur-sm" onClick={() => setOpen(false)} />
           {/* Centered modal — wide, height-capped, internal scroll.
               Critical layout (height cap + flex) is set inline so it can't be
               dropped by a Tailwind arbitrary-value / purge quirk in the build. */}
           <div
-            className="relative z-10 w-full max-w-2xl rounded-2xl border border-pitch-700 bg-pitch-900 shadow-2xl"
+            className="relative z-10 w-full max-w-2xl rounded-2xl border border-line bg-ink-800 shadow-2xl"
             style={{ display: "flex", flexDirection: "column", maxHeight: "85vh" }}
           >
-            <div className="flex items-start justify-between gap-3 px-5 py-4 border-b border-pitch-700" style={{ flexShrink: 0 }}>
+            <div className="flex items-start justify-between gap-3 px-5 py-4 border-b border-line" style={{ flexShrink: 0 }}>
               <div>
-                <p className="text-base font-semibold text-white">{t("bell.title")}</p>
-                <p className="text-xs text-gray-500">{t("bell.subtitle")}</p>
+                <p className="text-base font-semibold text-chalk">{t("bell.title")}</p>
+                <p className="text-xs text-chalk-3">{t("bell.subtitle")}</p>
               </div>
               <button
                 onClick={() => setOpen(false)}
                 aria-label={t("bell.close")}
-                className="shrink-0 w-8 h-8 flex items-center justify-center rounded-lg text-gray-400 hover:text-white hover:bg-pitch-800 transition-colors"
+                className="shrink-0 w-8 h-8 flex items-center justify-center rounded-lg text-chalk-2 hover:text-chalk hover:bg-ink-700 transition-colors"
               >
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                   strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -115,7 +115,7 @@ export default function NotificationBell() {
               </button>
             </div>
             <ul
-              className="divide-y divide-pitch-800"
+              className="divide-y divide-line-soft"
               style={{ flex: "1 1 auto", minHeight: 0, overflowY: "auto" }}
             >
               {CHANGELOG.map((e) => (
@@ -124,10 +124,10 @@ export default function NotificationBell() {
                     <span className={`text-[10px] uppercase tracking-wide font-semibold px-1.5 py-0.5 rounded border ${TAG_STYLE[e.tag]}`}>
                       {t(TAG_KEY[e.tag])}
                     </span>
-                    <span className="text-[11px] text-gray-500">{fmtDate(e.date)}</span>
+                    <span className="text-[11px] text-chalk-3">{fmtDate(e.date)}</span>
                   </div>
-                  <p className="text-sm font-medium text-gray-100">{e.title[lang]}</p>
-                  <p className="text-xs text-gray-400 mt-0.5 leading-relaxed">{e.body[lang]}</p>
+                  <p className="text-sm font-medium text-chalk">{e.title[lang]}</p>
+                  <p className="text-xs text-chalk-2 mt-0.5 leading-relaxed">{e.body[lang]}</p>
                 </li>
               ))}
             </ul>

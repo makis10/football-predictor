@@ -11,6 +11,7 @@
 import { cookies } from "next/headers";
 
 import { LOCALE_COOKIE, type Lang, type TFunc, getT, normalizeLang } from "./i18n";
+import { THEME_COOKIE, type Theme, normalizeTheme } from "./theme";
 
 export async function getServerLang(): Promise<Lang> {
   const store = await cookies();
@@ -19,4 +20,10 @@ export async function getServerLang(): Promise<Lang> {
 
 export async function getServerT(): Promise<TFunc> {
   return getT(await getServerLang());
+}
+
+/** Theme for the current request, so <html data-theme> is right on first paint. */
+export async function getServerTheme(): Promise<Theme> {
+  const store = await cookies();
+  return normalizeTheme(store.get(THEME_COOKIE)?.value);
 }

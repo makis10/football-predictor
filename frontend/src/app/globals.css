@@ -1,34 +1,169 @@
 @import "tailwindcss";
 
-/* Tailwind v4 CSS-first theme (replaces tailwind.config.js theme.extend). */
+/* ─────────────────────────────────────────────────────────────────────────────
+   Design tokens — Tailwind v4 CSS-first theme.
+
+   The rule that shapes all of this: HUE CARRIES MEANING, NOTHING ELSE.
+
+   Before this file, the app used 98 distinct colour utilities across 14 hues —
+   green AND emerald AND teal all meaning "good", amber AND yellow AND orange all
+   meaning "caution", sky/blue/indigo/violet/purple used interchangeably as
+   decoration. Nothing said which was which, so every new component picked a
+   fresh one and the palette drifted further. Here there are exactly three signal
+   hues, each with one job, and the brand itself is NOT a hue — it is light: the
+   `flood` highlight along the top edge of a surface, the way a pitch is defined
+   by the lamps above it rather than by paint.
+
+   That frees green to mean "this landed" instead of also meaning "this is our
+   logo colour", which is why the old cards read as muddy.
+   ───────────────────────────────────────────────────────────────────────────── */
 @theme {
-  --color-pitch-950: #07090f;
-  --color-pitch-900: #0d1117;
-  --color-pitch-800: #161b27;
-  --color-pitch-700: #1e2535;
-  --font-sans: "Inter", system-ui, sans-serif;
+  /* Ground — floodlit night. Cooler and bluer than the old #07090f, which read
+     as a terminal shell rather than a sky. */
+  --color-ink-900: #080b14;   /* page */
+  --color-ink-800: #0f1421;   /* surface / card */
+  --color-ink-700: #181f30;   /* raised: bar tracks, inputs, chips */
+  --color-ink-600: #212a3e;   /* raised + hover */
+
+  --color-line:      #2b3549; /* structural border */
+  --color-line-soft: #1e2637; /* card border — quieter than the structure */
+
+  /* Chalk — pitch markings. The text ramp. */
+  --color-chalk:   #f2f5fa;   /* primary */
+  --color-chalk-2: #9aa4ba;   /* secondary */
+  --color-chalk-3: #7986a5;   /* tertiary / captions.
+     Was #5e6880, which measured 2.95:1 on ink-700 — below even the
+     large-text floor. Captions on chips and bar tracks were the worst hit. */
+
+  /* Signal — three meanings, and only these three.
+     win  = the outcome happened / the slip landed
+     lose = it did not
+     est  = this number is our own estimate, not a market price (also: caution) */
+  --color-win:  #3ddc97;
+  --color-lose: #ff6b6b;
+  --color-est:  #f5b942;
+
+  /* The brand mark: the floodlight spill along a lit edge, and the chalk
+     hatching of the confidence band. A token, not a literal, because in the
+     light theme "lit from above" inverts into a soft shadow. */
+  --color-flood: rgba(242, 245, 250, 0.5);
+
+  /* Modal scrim. Dark in both themes on purpose — it dims the page behind a
+     dialog — but lighter on the light theme, where a 60% black veil reads
+     as a power cut. */
+  --color-scrim: rgba(3, 5, 10, 0.62);
+
+
+  /* Type — three roles.
+     display: the product's voice (headings, team names, ticket titles)
+     body:    quiet, does the reading work
+     data:    every probability, price, score and percentage
+
+     All three carry full Greek. That is a hard constraint here, not a nicety —
+     the site is bilingual, and it eliminated most of the obvious choices:
+     Rubik, IBM Plex Mono, Space Grotesk, Figtree, Onest, Sora and Outfit all
+     ship Latin/Cyrillic but no Greek. Verified against the Google Fonts API,
+     not assumed. */
+  --font-display: var(--font-manrope), system-ui, sans-serif;
+  --font-sans:    var(--font-inter), system-ui, sans-serif;
+  --font-data:    var(--font-jetbrains), ui-monospace, monospace;
 }
+
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Light theme.
+
+   Tailwind v4 compiles every utility to `var(--color-*)`, so overriding those
+   variables under a selector re-themes the entire app without a single `dark:`
+   variant or a second class on any element. The token names keep their meaning:
+   `ink-900` is still "the page", `chalk` is still "primary text" — they just
+   stop being dark and light respectively.
+
+   Two things genuinely invert rather than lighten:
+     • flood — "lit from above" becomes a soft shadow, or every card gets a
+       white hairline on white and the edge disappears.
+     • the signal hues — #3ddc97 is legible on near-black and unreadable on
+       white. These are the darker cuts, checked to ≥4.5:1 against ink-900.
+   ───────────────────────────────────────────────────────────────────────────── */
+:root[data-theme="light"] {
+  --color-ink-900: #f6f7fa;   /* page */
+  --color-ink-800: #ffffff;   /* surface / card */
+  --color-ink-700: #eef1f6;   /* raised */
+  --color-ink-600: #e2e7ef;   /* raised + hover */
+
+  --color-line:      #d3dae6;
+  --color-line-soft: #e6eaf1;
+
+  --color-chalk:   #101625;
+  --color-chalk-2: #46506a;
+  --color-chalk-3: #5f6878;
+
+  --color-win:  #07764a;   /* 5.01:1 on ink-700, the worst light-theme case */
+  --color-lose: #c62c2c;
+  --color-est:  #8a5d05;
+
+  --color-flood: rgba(16, 22, 37, 0.14);
+  --color-scrim: rgba(16, 22, 37, 0.42);
+}
+
+/* The one place a colour is chosen for legibility rather than meaning: text
+   printed ON a filled signal bar. On the dark theme the fill is bright and the
+   label must go dark; on the light theme the fill is dark and it must go light. */
+:root { --color-on-signal: #080b14; }
+:root[data-theme="light"] { --color-on-signal: #ffffff; }
 
 @layer base {
   html {
-    @apply bg-pitch-950 text-gray-100 antialiased;
+    @apply bg-ink-900 text-chalk antialiased;
+    color-scheme: dark;
+  }
+  /* Without this the browser keeps painting native controls, the caret and the
+     overscroll gutter in dark, which shows through as black edges on a white page. */
+  html[data-theme="light"] {
+    color-scheme: light;
+  }
+
+  /* Numbers are the content of this product. Tabular figures everywhere they
+     appear so two rows of a table can be compared by eye without reading. */
+  .font-data,
+  [class*="font-data"] {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum";
   }
 
   ::-webkit-scrollbar { width: 6px; }
-  ::-webkit-scrollbar-track { @apply bg-pitch-900; }
-  ::-webkit-scrollbar-thumb { @apply bg-gray-700 rounded-full; }
+  ::-webkit-scrollbar-track { @apply bg-ink-800; }
+  ::-webkit-scrollbar-thumb { @apply bg-line rounded-full; }
 }
 
 @layer components {
+  /* The floodlight edge — the brand mark, such as it is. One gradient hairline
+     across the top of a surface. Costs nothing, needs no logo colour, and reads
+     as "lit from above" rather than "box with a border". */
   .card {
-    @apply bg-pitch-900 border border-pitch-700 rounded-xl;
+    @apply relative overflow-hidden rounded-xl border border-line-soft bg-ink-800;
   }
+  .card::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto;
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      var(--color-flood) 22%,
+      var(--color-flood) 78%,
+      transparent
+    );
+  }
+  /* Opt out on nested surfaces, where a second lit edge reads as a seam. */
+  .card-flat::before { display: none; }
 
   .badge {
-    @apply inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium;
+    @apply inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-xs font-medium;
   }
 
   .prob-bar-track {
-    @apply h-2 w-full rounded-full bg-pitch-800 overflow-hidden;
+    @apply h-2 w-full overflow-hidden rounded-full bg-ink-700;
   }
 }

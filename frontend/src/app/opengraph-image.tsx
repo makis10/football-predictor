@@ -1,6 +1,11 @@
 import { ImageResponse } from "next/og";
 
 // Node runtime — plays well with `output: standalone` self-hosting.
+//
+// COLOURS ARE LITERAL HERE ON PURPOSE. This renders to a PNG through satori,
+// which has no document and therefore no CSS custom properties — `var(--color-…)`
+// resolves to nothing and the card comes out black. The values below mirror the
+// dark theme in globals.css by hand; if the palette moves, move them too.
 export const runtime = "nodejs";
 export const alt = "Football Predictor — market-independent ML football predictions";
 export const size = { width: 1200, height: 630 };
@@ -17,18 +22,18 @@ export default function OpengraphImage() {
           flexDirection: "column",
           justifyContent: "center",
           padding: "80px",
-          background: "linear-gradient(135deg, #0a0f0a 0%, #0f1a14 55%, #10241a 100%)",
-          color: "#f3f4f6",
+          background: "linear-gradient(135deg, #080b14 0%, #0f1421 55%, #181f30 100%)",
+          color: "#f2f5fa",
           fontFamily: "sans-serif",
         }}
       >
-        <div style={{ fontSize: 30, color: "#4ade80", letterSpacing: 2, marginBottom: 12 }}>
+        <div style={{ fontSize: 30, color: "#3ddc97", letterSpacing: 2, marginBottom: 12 }}>
           ⚽ FOOTBALL PREDICTOR
         </div>
         <div style={{ fontSize: 68, fontWeight: 800, lineHeight: 1.05, maxWidth: 980 }}>
           Market-independent ML football predictions
         </div>
-        <div style={{ fontSize: 30, color: "#9ca3af", marginTop: 24, maxWidth: 900 }}>
+        <div style={{ fontSize: 30, color: "#9aa4ba", marginTop: 24, maxWidth: 900 }}>
           1×2 · goals · BTTS · correct score · player props · live World Cup simulation
         </div>
         <div
@@ -37,10 +42,10 @@ export default function OpengraphImage() {
             gap: 16,
             marginTop: 40,
             fontSize: 24,
-            color: "#d1d5db",
+            color: "#9aa4ba",
           }}
         >
-          <span style={{ background: "#14532d", padding: "8px 18px", borderRadius: 12 }}>
+          <span style={{ background: "#181f30", padding: "8px 18px", borderRadius: 12 }}>
             Transparent accuracy
           </span>
           <span style={{ background: "#1e3a5f", padding: "8px 18px", borderRadius: 12 }}>

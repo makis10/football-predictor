@@ -16,6 +16,14 @@ services:
     volumes:
       - ./backend:/app/backend   # live Python changes without rebuild
       - ./scripts:/app/scripts
+      # Read-only, and only so the cross-stack guards in the test suite see the
+      # CURRENT frontend. Several tests assert that backend concepts and the
+      # pages rendering them agree (every ticket profile has both translations;
+      # no payout is rendered without its probability). CI runs pytest on a
+      # plain checkout so it reads the real tree — without this mount the same
+      # tests read the stale copy baked into the image at `COPY . .` and fail
+      # locally for a reason that has nothing to do with the code.
+      - ./frontend/src:/app/frontend/src:ro
     command: >
       sh -c "alembic upgrade head &&
              uvicorn backend.app.main:app --host 0.0.0.0 --port 8000 --reload"

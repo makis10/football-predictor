@@ -57,11 +57,15 @@ describe("deployed site", () => {
     if (!reachable) return;
     // A league added to the backend but not to LEAGUES renders as "Belgium"
     // rather than "Pro League" — visible, ugly, and easy to miss in review.
+    // The bar now lists only leagues that actually have fixtures in the window
+    // — on a quiet midweek that is a handful — and parks the rest behind a
+    // drawer whose markup is not server-rendered. So the count assertion is a
+    // liveness check, not a census; the raw-code check below is the real guard.
     const rendered = LEAGUES.filter((l) => home.includes(l.label));
     expect(
       rendered.length,
-      "hardly any league labels found — did the filter row change?",
-    ).toBeGreaterThan(5);
+      "no league labels at all — did the filter row stop rendering?",
+    ).toBeGreaterThan(0);
 
     const rawCodes = LEAGUES
       .filter((l) => l.label !== l.code)

@@ -22,8 +22,8 @@ interface UserStats {
 }
 
 const providerBadge: Record<string, string> = {
-  google:      "bg-blue-500/20 text-blue-400",
-  credentials: "bg-gray-500/20 text-gray-400",
+  google:      "bg-chalk-2/20 text-chalk-2",
+  credentials: "bg-chalk-2/20 text-chalk-2",
 };
 
 export default function AdminUserTable({ users }: { users: UserStats[] }) {
@@ -72,23 +72,23 @@ export default function AdminUserTable({ users }: { users: UserStats[] }) {
     <div className="space-y-3">
       {/* Delete toolbar */}
       {selected.size > 0 && (
-        <div className="flex items-center gap-3 px-4 py-2 rounded-lg bg-red-900/20 border border-red-800">
-          <span className="text-sm text-red-300 flex-1">
+        <div className="flex items-center gap-3 px-4 py-2 rounded-lg bg-lose/10 border border-lose/40">
+          <span className="text-sm text-lose flex-1">
             {selected.size} user{selected.size > 1 ? "s" : ""} selected
           </span>
           {confirm ? (
             <>
-              <span className="text-sm text-red-300">Sure?</span>
+              <span className="text-sm text-lose">Sure?</span>
               <button
                 onClick={handleDelete}
                 disabled={deleting}
-                className="rounded-lg px-3 py-1 text-sm font-semibold bg-red-600 hover:bg-red-500 text-white disabled:opacity-50 transition-colors"
+                className="rounded-lg px-3 py-1 text-sm font-semibold bg-lose hover:bg-lose text-chalk disabled:opacity-50 transition-colors"
               >
                 {deleting ? "Deleting…" : "Yes, delete"}
               </button>
               <button
                 onClick={() => setConfirm(false)}
-                className="rounded-lg px-3 py-1 text-sm text-gray-400 hover:text-white transition-colors"
+                className="rounded-lg px-3 py-1 text-sm text-chalk-2 hover:text-chalk transition-colors"
               >
                 Cancel
               </button>
@@ -97,7 +97,7 @@ export default function AdminUserTable({ users }: { users: UserStats[] }) {
             <button
               onClick={handleDelete}
               disabled={deleting}
-              className="rounded-lg px-3 py-1 text-sm font-semibold bg-red-600 hover:bg-red-500 text-white disabled:opacity-50 transition-colors"
+              className="rounded-lg px-3 py-1 text-sm font-semibold bg-lose hover:bg-lose text-chalk disabled:opacity-50 transition-colors"
             >
               🗑 Delete selected
             </button>
@@ -105,17 +105,17 @@ export default function AdminUserTable({ users }: { users: UserStats[] }) {
         </div>
       )}
 
-      <div className="rounded-xl border border-pitch-700 bg-pitch-900 overflow-hidden">
+      <div className="rounded-xl border border-line bg-ink-800 overflow-hidden">
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
-              <tr className="border-b border-pitch-700 text-gray-500 text-xs uppercase tracking-wider">
+              <tr className="border-b border-line text-chalk-3 text-xs uppercase tracking-wider">
                 <th className="px-4 py-3 text-left w-8">
                   <input
                     type="checkbox"
                     checked={allSelected}
                     onChange={toggleAll}
-                    className="rounded border-pitch-600 bg-pitch-800 accent-red-500"
+                    className="rounded border-line bg-ink-700 accent-lose"
                   />
                 </th>
                 <th className="px-4 py-3 text-left">User</th>
@@ -131,7 +131,7 @@ export default function AdminUserTable({ users }: { users: UserStats[] }) {
                 <th className="px-4 py-3 text-right">ROI</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-pitch-700">
+            <tbody className="divide-y divide-line">
               {users.map((u) => {
                 const isMe        = String(u.id) === String(userId);
                 const canDelete   = !u.is_admin && !isMe;
@@ -143,12 +143,12 @@ export default function AdminUserTable({ users }: { users: UserStats[] }) {
                 const winRate = u.bets_count > 0
                   ? Math.round((u.bets_won / u.bets_count) * 100)
                   : null;
-                const roiColor = u.roi_pct > 0 ? "text-green-400" : u.roi_pct < 0 ? "text-red-400" : "text-gray-500";
+                const roiColor = u.roi_pct > 0 ? "text-win" : u.roi_pct < 0 ? "text-lose" : "text-chalk-3";
 
                 return (
                   <tr
                     key={u.id}
-                    className={`transition-colors ${isSelected ? "bg-red-900/10" : "hover:bg-pitch-800/50"}`}
+                    className={`transition-colors ${isSelected ? "bg-lose/10" : "hover:bg-ink-700/50"}`}
                   >
                     <td className="px-4 py-3">
                       {canDelete ? (
@@ -156,7 +156,7 @@ export default function AdminUserTable({ users }: { users: UserStats[] }) {
                           type="checkbox"
                           checked={isSelected}
                           onChange={() => toggle(u.id)}
-                          className="rounded border-pitch-600 bg-pitch-800 accent-red-500"
+                          className="rounded border-line bg-ink-700 accent-lose"
                         />
                       ) : (
                         <span className="w-4 h-4 block" />
@@ -164,78 +164,78 @@ export default function AdminUserTable({ users }: { users: UserStats[] }) {
                     </td>
                     <td className="px-4 py-3">
                       <div className="flex items-center gap-2">
-                        <div className="w-7 h-7 rounded-full bg-green-800 flex items-center justify-center text-xs font-bold text-white shrink-0">
+                        <div className="w-7 h-7 rounded-full bg-win/15 flex items-center justify-center text-xs font-bold text-chalk shrink-0">
                           {(u.name ?? u.email ?? "?").charAt(0).toUpperCase() || "?"}
                         </div>
                         <div className="min-w-0">
-                          <p className="font-medium text-white truncate max-w-[160px]">
-                            {u.name ?? <span className="text-gray-500 italic">—</span>}
+                          <p className="font-medium text-chalk truncate max-w-[160px]">
+                            {u.name ?? <span className="text-chalk-3 italic">—</span>}
                             {u.is_admin && (
-                              <span className="ml-1.5 text-[10px] px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-400 font-semibold">
+                              <span className="ml-1.5 text-[10px] px-1.5 py-0.5 rounded bg-est/20 text-est font-semibold">
                                 ADMIN
                               </span>
                             )}
                             {isMe && (
-                              <span className="ml-1.5 text-[10px] px-1.5 py-0.5 rounded bg-pitch-700 text-gray-400">
+                              <span className="ml-1.5 text-[10px] px-1.5 py-0.5 rounded bg-ink-600 text-chalk-2">
                                 you
                               </span>
                             )}
                           </p>
-                          <p className="text-xs text-gray-500 truncate max-w-[160px]">{u.email}</p>
+                          <p className="text-xs text-chalk-3 truncate max-w-[160px]">{u.email}</p>
                         </div>
                       </div>
                     </td>
                     <td className="px-4 py-3">
-                      <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${providerBadge[u.provider ?? ""] ?? "bg-gray-500/20 text-gray-400"}`}>
+                      <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${providerBadge[u.provider ?? ""] ?? "bg-chalk-2/20 text-chalk-2"}`}>
                         {u.provider ?? "—"}
                       </span>
                     </td>
-                    <td className="px-4 py-3 text-gray-400 text-xs">{joined}</td>
-                    <td className="px-4 py-3 text-gray-400 text-xs">
+                    <td className="px-4 py-3 text-chalk-2 text-xs">{joined}</td>
+                    <td className="px-4 py-3 text-chalk-2 text-xs">
                       {u.last_login_at
                         ? new Date(u.last_login_at).toLocaleDateString("el-GR", {
                             day: "numeric", month: "short", year: "numeric",
                             timeZone: "Europe/Athens",
                           })
-                        : <span className="text-gray-600">—</span>}
+                        : <span className="text-chalk-3">—</span>}
                     </td>
-                    <td className="px-4 py-3 text-gray-400 text-xs">
+                    <td className="px-4 py-3 text-chalk-2 text-xs">
                       {u.last_seen_at
                         ? new Date(u.last_seen_at).toLocaleString("el-GR", {
                             day: "numeric", month: "short", hour: "2-digit", minute: "2-digit",
                             hour12: false, timeZone: "Europe/Athens",
                           })
-                        : <span className="text-gray-600">—</span>}
+                        : <span className="text-chalk-3">—</span>}
                     </td>
                     <td className="px-4 py-3 text-right tabular-nums text-xs">
                       {u.login_count > 0
-                        ? <span className="text-white font-medium">{u.login_count}</span>
-                        : <span className="text-gray-600">0</span>}
+                        ? <span className="text-chalk font-medium">{u.login_count}</span>
+                        : <span className="text-chalk-3">0</span>}
                     </td>
                     <td className="px-4 py-3 text-right tabular-nums">
                       {u.tracked_count > 0
-                        ? <span className="text-white font-medium">{u.tracked_count}</span>
-                        : <span className="text-gray-600">—</span>}
+                        ? <span className="text-chalk font-medium">{u.tracked_count}</span>
+                        : <span className="text-chalk-3">—</span>}
                     </td>
                     <td className="px-4 py-3 text-right tabular-nums">
                       {u.bets_count > 0
-                        ? <span className="text-white font-medium">{u.bets_count}</span>
-                        : <span className="text-gray-600">—</span>}
+                        ? <span className="text-chalk font-medium">{u.bets_count}</span>
+                        : <span className="text-chalk-3">—</span>}
                     </td>
                     <td className="px-4 py-3 text-right tabular-nums text-xs">
                       {winRate !== null
-                        ? <span className="text-green-400">{winRate}%</span>
-                        : <span className="text-gray-600">—</span>}
+                        ? <span className="text-win">{winRate}%</span>
+                        : <span className="text-chalk-3">—</span>}
                     </td>
                     <td className={`px-4 py-3 text-right tabular-nums text-xs ${roiColor}`}>
                       {u.bets_count > 0
                         ? `${u.total_profit >= 0 ? "+" : ""}${u.total_profit.toFixed(2)}u`
-                        : <span className="text-gray-600">—</span>}
+                        : <span className="text-chalk-3">—</span>}
                     </td>
                     <td className={`px-4 py-3 text-right tabular-nums text-xs font-semibold ${roiColor}`}>
                       {u.bets_count > 0
                         ? `${u.roi_pct >= 0 ? "+" : ""}${u.roi_pct}%`
-                        : <span className="text-gray-600 font-normal">—</span>}
+                        : <span className="text-chalk-3 font-normal">—</span>}
                     </td>
                   </tr>
                 );

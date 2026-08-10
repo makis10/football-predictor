@@ -25,7 +25,7 @@ function scaleY(v: number) {
 export function BTTSCalibrationChart({ buckets }: Props) {
   if (buckets.length < 2) {
     return (
-      <p className="text-sm text-gray-500 text-center py-6">
+      <p className="text-sm text-chalk-3 text-center py-6">
         Not enough data for BTTS calibration chart yet.
         Requires predictions with Poisson λ values stored (post-migration 0006).
       </p>
@@ -41,11 +41,11 @@ export function BTTSCalibrationChart({ buckets }: Props) {
   const xTicks = [0.10, 0.30, 0.50, 0.70, 0.90];
 
   return (
-    <div className="rounded-xl border border-pitch-700 bg-pitch-800/60 p-4">
-      <p className="text-sm font-medium text-gray-300 mb-1">
+    <div className="rounded-xl border border-line bg-ink-700/60 p-4">
+      <p className="text-sm font-medium text-chalk-2 mb-1">
         BTTS Calibration — predicted GG probability vs actual GG rate
       </p>
-      <p className="text-xs text-gray-500 mb-3">
+      <p className="text-xs text-chalk-3 mb-3">
         Points near the diagonal = well calibrated. Derived from Poisson λ stored at prediction time.
       </p>
 
@@ -105,7 +105,7 @@ export function BTTSCalibrationChart({ buckets }: Props) {
         </g>
       </svg>
 
-      <div className="flex items-center gap-4 mt-2 text-xs text-gray-500">
+      <div className="flex items-center gap-4 mt-2 text-xs text-chalk-3">
         <span className="flex items-center gap-1">
           <svg width="20" height="8">
             <line x1={0} y1={4} x2={20} y2={4} stroke="#4a5568" strokeWidth={1.5} strokeDasharray="4 3" />
@@ -118,7 +118,7 @@ export function BTTSCalibrationChart({ buckets }: Props) {
           </svg>
           Model
         </span>
-        <span className="text-gray-600">· bubble size = sample count</span>
+        <span className="text-chalk-3">· bubble size = sample count</span>
       </div>
     </div>
   );

@@ -117,6 +117,9 @@ describe("TopPicks", () => {
     render(<TopPicks matches={[match("Arsenal", [0.1, 0.2, 0.7])]} t={t} />);
     const body = document.body.textContent ?? "";
     expect(body).toContain("70%");
-    expect(body).toMatch(/Away Win/i);
+    // Shares matchCard.pick* with the fixture card now: one name per outcome,
+    // and translated. The old labels here were hardcoded English.
+    expect(body).toMatch(new RegExp(t("matchCard.pickAway"), "i"));
+    expect(body).not.toMatch(new RegExp(t("matchCard.pickHome"), "i"));
   });
 });

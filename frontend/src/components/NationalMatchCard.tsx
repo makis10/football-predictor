@@ -7,15 +7,15 @@ interface Props {
 
 function confidenceBadgeClass(confidence: string): string {
   const c = confidence.toUpperCase();
-  if (c === "HIGH")   return "bg-green-500/20 text-green-400";
-  if (c === "MEDIUM") return "bg-yellow-500/20 text-yellow-400";
-  return "bg-gray-500/20 text-gray-400";
+  if (c === "HIGH")   return "bg-win/20 text-win";
+  if (c === "MEDIUM") return "bg-est/20 text-est";
+  return "bg-chalk-2/20 text-chalk-2";
 }
 
 function overBadgeClass(prob: number): string {
   return prob > 0.5
-    ? "bg-orange-500/20 text-orange-400"
-    : "bg-sky-600/20 text-sky-400";
+    ? "bg-est/20 text-est"
+    : "bg-chalk-2/20 text-chalk-2";
 }
 
 export default function NationalMatchCard({ prediction: p }: Props) {
@@ -30,28 +30,28 @@ export default function NationalMatchCard({ prediction: p }: Props) {
 
   return (
     <Link href={`/national/${p.id}`} className="block group">
-    <div className="card p-4 flex flex-col gap-3 h-full hover:border-gray-600 transition-colors">
+    <div className="card p-4 flex flex-col gap-3 h-full hover:border-line transition-colors">
       {/* Tournament + date row */}
-      <div className="flex items-center justify-between text-xs text-gray-500">
+      <div className="flex items-center justify-between text-xs text-chalk-3">
         <span className="truncate mr-2">🏆 {p.tournament}</span>
         <span className="shrink-0 tabular-nums">{dateLabel}</span>
       </div>
 
       {/* Teams + score */}
       <div className="flex items-center justify-between gap-2">
-        <span className="font-semibold text-sm text-gray-100 truncate flex-1">
+        <span className="font-semibold text-sm text-chalk truncate flex-1">
           {p.home_team}
         </span>
 
         {hasScore ? (
-          <span className="text-lg font-bold text-white shrink-0 tabular-nums">
+          <span className="text-lg font-bold text-chalk shrink-0 tabular-nums">
             {p.actual_home_goals} – {p.actual_away_goals}
           </span>
         ) : (
-          <span className="text-xs text-gray-600 shrink-0">vs</span>
+          <span className="text-xs text-chalk-3 shrink-0">vs</span>
         )}
 
-        <span className="font-semibold text-sm text-gray-100 truncate flex-1 text-right">
+        <span className="font-semibold text-sm text-chalk truncate flex-1 text-right">
           {p.away_team}
         </span>
       </div>
@@ -59,17 +59,17 @@ export default function NationalMatchCard({ prediction: p }: Props) {
       {/* Probability bar */}
       <div className="flex gap-1 h-1.5 rounded-full overflow-hidden">
         <div
-          className="bg-green-500 rounded-l-full"
+          className="bg-win rounded-l-full"
           style={{ width: `${Math.round(p.home_win_prob * 100)}%` }}
           title={`Home win ${Math.round(p.home_win_prob * 100)}%`}
         />
         <div
-          className="bg-gray-500"
+          className="bg-chalk-2"
           style={{ width: `${Math.round(p.draw_prob * 100)}%` }}
           title={`Draw ${Math.round(p.draw_prob * 100)}%`}
         />
         <div
-          className="bg-blue-500 rounded-r-full"
+          className="bg-chalk-2 rounded-r-full"
           style={{ width: `${Math.round(p.away_win_prob * 100)}%` }}
           title={`Away win ${Math.round(p.away_win_prob * 100)}%`}
         />
@@ -77,7 +77,7 @@ export default function NationalMatchCard({ prediction: p }: Props) {
 
       {/* Probabilities + badges row */}
       <div className="flex items-center justify-between text-xs">
-        <span className="text-gray-400 tabular-nums">
+        <span className="text-chalk-2 tabular-nums">
           {Math.round(p.home_win_prob * 100)}% ·{" "}
           {Math.round(p.draw_prob * 100)}% ·{" "}
           {Math.round(p.away_win_prob * 100)}%
@@ -85,7 +85,7 @@ export default function NationalMatchCard({ prediction: p }: Props) {
         <div className="flex items-center gap-1.5">
           {p.ev_score != null && p.ev_score > 0 && p.suggested_market && (
             <span
-              className="badge bg-emerald-500/20 text-emerald-400 font-semibold"
+              className="badge bg-win/20 text-win font-semibold"
               title={`${p.suggested_market} — expected value per unit staked (not a probability)`}
             >
               ⚡ EV +{Math.round(p.ev_score * 100)}%
@@ -102,14 +102,14 @@ export default function NationalMatchCard({ prediction: p }: Props) {
 
       {/* Bookmaker odds row (1X2) — only when available */}
       {p.bm_home_odds != null && (
-        <div className="flex items-center justify-between text-xs text-gray-500">
-          <span className="text-gray-600">Odds 1X2</span>
-          <span className="tabular-nums text-gray-400">
+        <div className="flex items-center justify-between text-xs text-chalk-3">
+          <span className="text-chalk-3">Odds 1X2</span>
+          <span className="tabular-nums text-chalk-2">
             {p.bm_home_odds?.toFixed(2) ?? "—"} ·{" "}
             {p.bm_draw_odds?.toFixed(2) ?? "—"} ·{" "}
             {p.bm_away_odds?.toFixed(2) ?? "—"}
             {p.num_bookmakers != null && (
-              <span className="text-gray-600"> ({p.num_bookmakers})</span>
+              <span className="text-chalk-3"> ({p.num_bookmakers})</span>
             )}
           </span>
         </div>
@@ -117,12 +117,12 @@ export default function NationalMatchCard({ prediction: p }: Props) {
 
       {/* Result row (only when played) */}
       {hasResult && (
-        <div className="flex items-center justify-between text-xs mt-auto pt-1 border-t border-pitch-700">
-          <span className={isCorrect ? "text-green-400 font-medium" : "text-red-400 font-medium"}>
+        <div className="flex items-center justify-between text-xs mt-auto pt-1 border-t border-line">
+          <span className={isCorrect ? "text-win font-medium" : "text-lose font-medium"}>
             {isCorrect ? "✓ Correct" : "✗ Wrong"}
           </span>
           {(p.h_elo != null || p.a_elo != null) && (
-            <span className="text-gray-600 tabular-nums">
+            <span className="text-chalk-3 tabular-nums">
               Elo: {p.h_elo != null ? Math.round(p.h_elo) : "—"} vs{" "}
               {p.a_elo != null ? Math.round(p.a_elo) : "—"}
             </span>
@@ -132,7 +132,7 @@ export default function NationalMatchCard({ prediction: p }: Props) {
 
       {/* Elo row for upcoming matches (when no result yet) */}
       {!hasResult && (p.h_elo != null || p.a_elo != null) && (
-        <div className="flex justify-end text-xs text-gray-600 tabular-nums mt-auto pt-1 border-t border-pitch-700">
+        <div className="flex justify-end text-xs text-chalk-3 tabular-nums mt-auto pt-1 border-t border-line">
           Elo: {p.h_elo != null ? Math.round(p.h_elo) : "—"} vs{" "}
           {p.a_elo != null ? Math.round(p.a_elo) : "—"}
         </div>

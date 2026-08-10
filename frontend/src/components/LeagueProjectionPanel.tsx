@@ -9,10 +9,10 @@ function pct(v: number): string {
 
 /** Colour a probability by how meaningful it is, so a 1% doesn't shout. */
 function tone(v: number, kind: "good" | "bad"): string {
-  if (v < 0.005) return "text-gray-600";
-  if (v >= 0.4) return kind === "good" ? "text-emerald-400" : "text-rose-400";
-  if (v >= 0.1) return kind === "good" ? "text-emerald-500/80" : "text-rose-500/80";
-  return "text-gray-500";
+  if (v < 0.005) return "text-chalk-3";
+  if (v >= 0.4) return kind === "good" ? "text-win" : "text-lose";
+  if (v >= 0.1) return kind === "good" ? "text-win/80" : "text-lose/80";
+  return "text-chalk-3";
 }
 
 /**
@@ -26,16 +26,16 @@ export default function LeagueProjectionPanel({ proj, t }: { proj: LeagueProject
     <div className="card p-5 space-y-3">
       <div>
         <div className="flex items-baseline justify-between gap-3">
-          <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
+          <h2 className="text-sm font-semibold text-chalk-2 uppercase tracking-wider">
             {t("proj.league.title")}
           </h2>
-          <span className="text-[11px] text-gray-600 tabular-nums">{proj.season}</span>
+          <span className="text-[11px] text-chalk-3 tabular-nums">{proj.season}</span>
         </div>
-        <p className="text-[11px] text-gray-600 mt-1 leading-relaxed">
+        <p className="text-[11px] text-chalk-3 mt-1 leading-relaxed">
           {t("proj.league.desc", { sims: proj.sims.toLocaleString(), n: proj.matches_remaining })}
         </p>
         {proj.note && (
-          <p className="text-[11px] text-gray-500 mt-1.5 leading-relaxed">
+          <p className="text-[11px] text-chalk-3 mt-1.5 leading-relaxed">
             ℹ️ {proj.note}
           </p>
         )}
@@ -44,7 +44,7 @@ export default function LeagueProjectionPanel({ proj, t }: { proj: LeagueProject
       <div className="overflow-x-auto">
         <table className="w-full text-sm">
           <thead>
-            <tr className="text-[10px] uppercase tracking-wide text-gray-500">
+            <tr className="text-[10px] uppercase tracking-wide text-chalk-3">
               <th className="py-1.5 pr-2 text-left font-medium">{t("proj.team")}</th>
               <th className="py-1.5 px-2 text-right font-medium">{t("proj.league.title2")}</th>
               <th className="py-1.5 px-2 text-right font-medium">{proj.top_zone}</th>
@@ -54,8 +54,8 @@ export default function LeagueProjectionPanel({ proj, t }: { proj: LeagueProject
           </thead>
           <tbody>
             {proj.teams.map((row) => (
-              <tr key={row.team} className="border-t border-pitch-800">
-                <td className="py-1.5 pr-2 text-gray-200 truncate max-w-[9rem]">{row.team}</td>
+              <tr key={row.team} className="border-t border-line-soft">
+                <td className="py-1.5 pr-2 text-chalk truncate max-w-[9rem]">{row.team}</td>
                 <td className={`py-1.5 px-2 text-right tabular-nums font-semibold ${tone(row.p_title, "good")}`}>
                   {pct(row.p_title)}
                 </td>
@@ -65,7 +65,7 @@ export default function LeagueProjectionPanel({ proj, t }: { proj: LeagueProject
                 <td className={`py-1.5 px-2 text-right tabular-nums ${tone(row.p_relegated, "bad")}`}>
                   {pct(row.p_relegated)}
                 </td>
-                <td className="py-1.5 pl-2 text-right tabular-nums text-gray-500">
+                <td className="py-1.5 pl-2 text-right tabular-nums text-chalk-3">
                   {row.exp_points.toFixed(0)}
                 </td>
               </tr>

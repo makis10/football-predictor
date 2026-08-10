@@ -44,7 +44,7 @@ export default async function AdminPage() {
     <div className="space-y-8">
       <div>
         <h1 className="text-2xl font-bold">Admin Panel</h1>
-        <p className="text-sm text-gray-500 mt-1">User management &amp; statistics</p>
+        <p className="text-sm text-chalk-3 mt-1">User management &amp; statistics</p>
       </div>
 
       {/* Summary cards */}
@@ -55,9 +55,9 @@ export default async function AdminPage() {
           { label: "Tracking matches", value: activeTrackers },
           { label: t("admin.newMessages"), value: unreadFeedback },
         ].map(({ label, value }) => (
-          <div key={label} className="rounded-xl border border-pitch-700 bg-pitch-900 p-4 text-center">
-            <p className="text-xs text-gray-500 mb-1">{label}</p>
-            <p className="text-2xl font-bold text-white">{value}</p>
+          <div key={label} className="rounded-xl border border-line bg-ink-800 p-4 text-center">
+            <p className="text-xs text-chalk-3 mb-1">{label}</p>
+            <p className="text-2xl font-bold text-chalk">{value}</p>
           </div>
         ))}
       </div>
@@ -66,19 +66,19 @@ export default async function AdminPage() {
       <div className="flex flex-wrap gap-3">
         <Link
           href="/admin/training"
-          className="rounded-lg border border-pitch-700 bg-pitch-900 hover:bg-pitch-800 px-4 py-2 text-sm text-gray-300 transition-colors"
+          className="rounded-lg border border-line bg-ink-800 hover:bg-ink-700 px-4 py-2 text-sm text-chalk-2 transition-colors"
         >
           Training History →
         </Link>
         <Link
           href="/admin/markets"
-          className="rounded-lg border border-pitch-700 bg-pitch-900 hover:bg-pitch-800 px-4 py-2 text-sm text-gray-300 transition-colors"
+          className="rounded-lg border border-line bg-ink-800 hover:bg-ink-700 px-4 py-2 text-sm text-chalk-2 transition-colors"
         >
           Market Record →
         </Link>
         <Link
           href="/admin/gate-changes"
-          className="rounded-lg border border-pitch-700 bg-pitch-900 hover:bg-pitch-800 px-4 py-2 text-sm text-gray-300 transition-colors"
+          className="rounded-lg border border-line bg-ink-800 hover:bg-ink-700 px-4 py-2 text-sm text-chalk-2 transition-colors"
         >
           Gate Changes →
         </Link>
@@ -92,7 +92,7 @@ export default async function AdminPage() {
         <h2 className="text-lg font-bold mb-3">
           {t("admin.userMessages")}
           {unreadFeedback > 0 && (
-            <span className="ml-2 text-xs px-2 py-0.5 rounded-full bg-green-500/20 text-green-400 align-middle">
+            <span className="ml-2 text-xs px-2 py-0.5 rounded-full bg-win/20 text-win align-middle">
               {t("admin.newBadge", { n: unreadFeedback })}
             </span>
           )}

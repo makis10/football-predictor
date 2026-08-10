@@ -81,12 +81,12 @@ function MetricCell({
   bad?: number;
 }) {
   const display = format === "pct" ? pct(value) : num(value);
-  let color = "text-gray-300";
+  let color = "text-chalk-2";
   if (value != null && good != null && bad != null) {
     if (good > bad) {
-      color = value >= good ? "text-emerald-400" : value <= bad ? "text-red-400" : "text-yellow-400";
+      color = value >= good ? "text-win" : value <= bad ? "text-lose" : "text-est";
     } else {
-      color = value <= good ? "text-emerald-400" : value >= bad ? "text-red-400" : "text-yellow-400";
+      color = value <= good ? "text-win" : value >= bad ? "text-lose" : "text-est";
     }
   }
   return <span className={color}>{display}</span>;
@@ -96,17 +96,17 @@ function RunCard({ run, isLatest }: { run: TrainingRun; isLatest: boolean }) {
   const { date: dateStr, time: timeStr } = fmtAthens(run.run_at);
 
   return (
-    <div className={`rounded-xl border p-5 space-y-4 ${isLatest ? "border-blue-500 bg-blue-950/30" : "border-pitch-700 bg-pitch-900"}`}>
+    <div className={`rounded-xl border p-5 space-y-4 ${isLatest ? "border-chalk-2 bg-chalk-2/10" : "border-line bg-ink-800"}`}>
       {/* Header */}
       <div className="flex items-center justify-between flex-wrap gap-2">
         <div>
-          <span className="text-white font-semibold">{dateStr}</span>
-          <span className="text-gray-500 text-sm ml-2">{timeStr}</span>
+          <span className="text-chalk font-semibold">{dateStr}</span>
+          <span className="text-chalk-3 text-sm ml-2">{timeStr}</span>
           {isLatest && (
-            <span className="ml-2 text-xs bg-blue-600 text-white px-2 py-0.5 rounded-full">latest</span>
+            <span className="ml-2 text-xs bg-chalk-2 text-chalk px-2 py-0.5 rounded-full">latest</span>
           )}
         </div>
-        <div className="text-xs text-gray-500">
+        <div className="text-xs text-chalk-3">
           v{run.model_version ?? "—"}
           {run.train_cutoff && (
             <span className="ml-2">
@@ -123,20 +123,20 @@ function RunCard({ run, isLatest }: { run: TrainingRun; isLatest: boolean }) {
           { label: "Cal rows",   value: run.n_cal?.toLocaleString() ?? "—" },
           { label: "Test rows",  value: run.n_test?.toLocaleString() ?? "—" },
         ].map(({ label, value }) => (
-          <div key={label} className="rounded-lg bg-pitch-800 p-3">
-            <p className="text-xs text-gray-500">{label}</p>
-            <p className="text-lg font-bold text-white">{value}</p>
+          <div key={label} className="rounded-lg bg-ink-700 p-3">
+            <p className="text-xs text-chalk-3">{label}</p>
+            <p className="text-lg font-bold text-chalk">{value}</p>
           </div>
         ))}
       </div>
 
       {/* Result model */}
       <div>
-        <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Result model (H/D/A)</p>
+        <p className="text-xs font-semibold text-chalk-2 uppercase tracking-wider mb-2">Result model (H/D/A)</p>
         <div className="overflow-x-auto">
           <table className="w-full text-sm text-center">
             <thead>
-              <tr className="text-gray-500 text-xs">
+              <tr className="text-chalk-3 text-xs">
                 <th className="pb-1 text-left"></th>
                 <th className="pb-1">Accuracy</th>
                 <th className="pb-1">Home recall</th>
@@ -149,7 +149,7 @@ function RunCard({ run, isLatest }: { run: TrainingRun; isLatest: boolean }) {
             </thead>
             <tbody>
               <tr>
-                <td className="text-left text-gray-400 text-xs pr-3">test set</td>
+                <td className="text-left text-chalk-2 text-xs pr-3">test set</td>
                 <td><MetricCell value={run.result_test_accuracy} good={0.53} bad={0.47} /></td>
                 <td><MetricCell value={run.result_home_recall}   good={0.65} bad={0.50} /></td>
                 <td><MetricCell value={run.result_draw_recall}   good={0.30} bad={0.15} /></td>
@@ -165,7 +165,7 @@ function RunCard({ run, isLatest }: { run: TrainingRun; isLatest: boolean }) {
 
       {/* Goals model */}
       <div>
-        <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Goals model (O/U 2.5)</p>
+        <p className="text-xs font-semibold text-chalk-2 uppercase tracking-wider mb-2">Goals model (O/U 2.5)</p>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-center text-sm">
           {[
             { label: "Accuracy",      v: run.goals_test_accuracy,  good: 0.58, bad: 0.52 },
@@ -173,8 +173,8 @@ function RunCard({ run, isLatest }: { run: TrainingRun; isLatest: boolean }) {
             { label: "Under recall",  v: run.goals_under_recall,   good: 0.60, bad: 0.45 },
             { label: "Over prec.",    v: run.goals_over_precision, good: 0.62, bad: 0.50 },
           ].map(({ label, v, good, bad }) => (
-            <div key={label} className="rounded-lg bg-pitch-800 p-2">
-              <p className="text-xs text-gray-500 mb-1">{label}</p>
+            <div key={label} className="rounded-lg bg-ink-700 p-2">
+              <p className="text-xs text-chalk-3 mb-1">{label}</p>
               <MetricCell value={v} good={good} bad={bad} />
             </div>
           ))}
@@ -183,14 +183,14 @@ function RunCard({ run, isLatest }: { run: TrainingRun; isLatest: boolean }) {
 
       {/* Draw calibration */}
       <div>
-        <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Draw specialist calibration</p>
+        <p className="text-xs font-semibold text-chalk-2 uppercase tracking-wider mb-2">Draw specialist calibration</p>
         <div className="grid grid-cols-3 gap-2 text-center text-sm">
-          <div className="rounded-lg bg-pitch-800 p-2">
-            <p className="text-xs text-gray-500 mb-1">Raw mean</p>
-            <span className="text-gray-300">{num(run.draw_raw_mean)}</span>
+          <div className="rounded-lg bg-ink-700 p-2">
+            <p className="text-xs text-chalk-3 mb-1">Raw mean</p>
+            <span className="text-chalk-2">{num(run.draw_raw_mean)}</span>
           </div>
-          <div className="rounded-lg bg-pitch-800 p-2">
-            <p className="text-xs text-gray-500 mb-1">Calibrated mean</p>
+          <div className="rounded-lg bg-ink-700 p-2">
+            <p className="text-xs text-chalk-3 mb-1">Calibrated mean</p>
             <MetricCell
               value={run.draw_cal_mean}
               format="num"
@@ -198,13 +198,13 @@ function RunCard({ run, isLatest }: { run: TrainingRun; isLatest: boolean }) {
               bad={run.draw_actual_rate != null ? run.draw_actual_rate - 0.01 : undefined}
             />
           </div>
-          <div className="rounded-lg bg-pitch-800 p-2">
-            <p className="text-xs text-gray-500 mb-1">Actual draw rate</p>
-            <span className="text-gray-300">{num(run.draw_actual_rate)}</span>
+          <div className="rounded-lg bg-ink-700 p-2">
+            <p className="text-xs text-chalk-3 mb-1">Actual draw rate</p>
+            <span className="text-chalk-2">{num(run.draw_actual_rate)}</span>
           </div>
         </div>
         {run.draw_cal_mean != null && run.draw_actual_rate != null && (
-          <p className={`text-xs mt-1 ${Math.abs(run.draw_cal_mean - run.draw_actual_rate) < 0.005 ? "text-emerald-400" : "text-yellow-400"}`}>
+          <p className={`text-xs mt-1 ${Math.abs(run.draw_cal_mean - run.draw_actual_rate) < 0.005 ? "text-win" : "text-est"}`}>
             {Math.abs(run.draw_cal_mean - run.draw_actual_rate) < 0.005
               ? "✓ Calibration ≈ actual draw rate"
               : `Δ = ${((run.draw_cal_mean - run.draw_actual_rate) * 100).toFixed(2)}pp vs actual`}
@@ -215,7 +215,7 @@ function RunCard({ run, isLatest }: { run: TrainingRun; isLatest: boolean }) {
       {/* BTTS */}
       {run.btts_test_accuracy != null && (
         <div>
-          <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">BTTS / Goal-No Goal (Poisson)</p>
+          <p className="text-xs font-semibold text-chalk-2 uppercase tracking-wider mb-2">BTTS / Goal-No Goal (Poisson)</p>
           <div className="grid grid-cols-2 sm:grid-cols-5 gap-2 text-center text-sm">
             {[
               { label: "Accuracy",    v: run.btts_test_accuracy, good: 0.62, bad: 0.55 },
@@ -224,8 +224,8 @@ function RunCard({ run, isLatest }: { run: TrainingRun; isLatest: boolean }) {
               { label: "GG prec.",    v: run.btts_gg_precision,  good: 0.65, bad: 0.52 },
               { label: "NG prec.",    v: run.btts_ng_precision,  good: 0.60, bad: 0.48 },
             ].map(({ label, v, good, bad }) => (
-              <div key={label} className="rounded-lg bg-pitch-800 p-2">
-                <p className="text-xs text-gray-500 mb-1">{label}</p>
+              <div key={label} className="rounded-lg bg-ink-700 p-2">
+                <p className="text-xs text-chalk-3 mb-1">{label}</p>
                 <MetricCell value={v} good={good} bad={bad} />
               </div>
             ))}
@@ -234,7 +234,7 @@ function RunCard({ run, isLatest }: { run: TrainingRun; isLatest: boolean }) {
       )}
 
       {run.notes && (
-        <p className="text-xs text-gray-500 italic">{run.notes}</p>
+        <p className="text-xs text-chalk-3 italic">{run.notes}</p>
       )}
     </div>
   );
@@ -243,9 +243,9 @@ function RunCard({ run, isLatest }: { run: TrainingRun; isLatest: boolean }) {
 function NationalMetricsCard({ m }: { m: NationalTrainingMetrics }) {
   if (!m.available) {
     return (
-      <div className="rounded-xl border border-pitch-700 bg-pitch-900 p-6 text-center text-gray-500 text-sm">
+      <div className="rounded-xl border border-line bg-ink-800 p-6 text-center text-chalk-3 text-sm">
         No metrics file found. Run{" "}
-        <code className="font-mono text-gray-400">python scripts/train_national.py</code>{" "}
+        <code className="font-mono text-chalk-2">python scripts/train_national.py</code>{" "}
         to generate metrics.
       </div>
     );
@@ -256,16 +256,16 @@ function NationalMetricsCard({ m }: { m: NationalTrainingMetrics }) {
   const trainedTimeStr = trained?.time ?? "";
 
   return (
-    <div className="rounded-xl border border-emerald-800 bg-emerald-950/20 p-5 space-y-4">
+    <div className="rounded-xl border border-win/40 bg-win/10 p-5 space-y-4">
       {/* Header */}
       <div className="flex items-center justify-between flex-wrap gap-2">
         <div>
-          <span className="text-white font-semibold">{trainedDateStr}</span>
-          <span className="text-gray-500 text-sm ml-2">{trainedTimeStr}</span>
-          <span className="ml-2 text-xs bg-emerald-700 text-white px-2 py-0.5 rounded-full">national</span>
+          <span className="text-chalk font-semibold">{trainedDateStr}</span>
+          <span className="text-chalk-3 text-sm ml-2">{trainedTimeStr}</span>
+          <span className="ml-2 text-xs bg-win/15 text-chalk px-2 py-0.5 rounded-full">national</span>
         </div>
         {m.test_start && (
-          <div className="text-xs text-gray-500">test from {m.test_start}</div>
+          <div className="text-xs text-chalk-3">test from {m.test_start}</div>
         )}
       </div>
 
@@ -276,20 +276,20 @@ function NationalMetricsCard({ m }: { m: NationalTrainingMetrics }) {
           { label: "Cal rows",   value: m.n_cal?.toLocaleString() ?? "—" },
           { label: "Test rows",  value: m.n_test?.toLocaleString() ?? "—" },
         ].map(({ label, value }) => (
-          <div key={label} className="rounded-lg bg-pitch-800 p-3">
-            <p className="text-xs text-gray-500">{label}</p>
-            <p className="text-lg font-bold text-white">{value}</p>
+          <div key={label} className="rounded-lg bg-ink-700 p-3">
+            <p className="text-xs text-chalk-3">{label}</p>
+            <p className="text-lg font-bold text-chalk">{value}</p>
           </div>
         ))}
       </div>
 
       {/* Result model */}
       <div>
-        <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Result model (H/D/A)</p>
+        <p className="text-xs font-semibold text-chalk-2 uppercase tracking-wider mb-2">Result model (H/D/A)</p>
         <div className="overflow-x-auto">
           <table className="w-full text-sm text-center">
             <thead>
-              <tr className="text-gray-500 text-xs">
+              <tr className="text-chalk-3 text-xs">
                 <th className="pb-1 text-left"></th>
                 <th className="pb-1">Accuracy</th>
                 <th className="pb-1">Home recall</th>
@@ -302,7 +302,7 @@ function NationalMetricsCard({ m }: { m: NationalTrainingMetrics }) {
             </thead>
             <tbody>
               <tr>
-                <td className="text-left text-gray-400 text-xs pr-3">test set</td>
+                <td className="text-left text-chalk-2 text-xs pr-3">test set</td>
                 <td><MetricCell value={m.result_accuracy        ?? null} good={0.50} bad={0.44} /></td>
                 <td><MetricCell value={m.result_home_recall     ?? null} good={0.65} bad={0.50} /></td>
                 <td><MetricCell value={m.result_draw_recall     ?? null} good={0.25} bad={0.10} /></td>
@@ -318,15 +318,15 @@ function NationalMetricsCard({ m }: { m: NationalTrainingMetrics }) {
 
       {/* Goals model */}
       <div>
-        <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Goals model (O/U 2.5)</p>
+        <p className="text-xs font-semibold text-chalk-2 uppercase tracking-wider mb-2">Goals model (O/U 2.5)</p>
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 text-center text-sm">
           {[
             { label: "Accuracy",     v: m.goals_accuracy    ?? null, good: 0.56, bad: 0.50 },
             { label: "Over recall",  v: m.goals_over_recall  ?? null, good: 0.65, bad: 0.50 },
             { label: "Under recall", v: m.goals_under_recall ?? null, good: 0.60, bad: 0.45 },
           ].map(({ label, v, good, bad }) => (
-            <div key={label} className="rounded-lg bg-pitch-800 p-2">
-              <p className="text-xs text-gray-500 mb-1">{label}</p>
+            <div key={label} className="rounded-lg bg-ink-700 p-2">
+              <p className="text-xs text-chalk-3 mb-1">{label}</p>
               <MetricCell value={v} good={good} bad={bad} />
             </div>
           ))}
@@ -335,15 +335,15 @@ function NationalMetricsCard({ m }: { m: NationalTrainingMetrics }) {
 
       {/* BTTS model */}
       <div>
-        <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">BTTS model</p>
+        <p className="text-xs font-semibold text-chalk-2 uppercase tracking-wider mb-2">BTTS model</p>
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 text-center text-sm">
           {[
             { label: "Accuracy",  v: m.btts_accuracy  ?? null, good: 0.60, bad: 0.53 },
             { label: "GG recall", v: m.btts_gg_recall ?? null, good: 0.65, bad: 0.50 },
             { label: "NG recall", v: m.btts_ng_recall ?? null, good: 0.60, bad: 0.45 },
           ].map(({ label, v, good, bad }) => (
-            <div key={label} className="rounded-lg bg-pitch-800 p-2">
-              <p className="text-xs text-gray-500 mb-1">{label}</p>
+            <div key={label} className="rounded-lg bg-ink-700 p-2">
+              <p className="text-xs text-chalk-3 mb-1">{label}</p>
               <MetricCell value={v} good={good} bad={bad} />
             </div>
           ))}
@@ -352,14 +352,14 @@ function NationalMetricsCard({ m }: { m: NationalTrainingMetrics }) {
 
       {/* Draw calibration */}
       <div>
-        <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Draw specialist calibration</p>
+        <p className="text-xs font-semibold text-chalk-2 uppercase tracking-wider mb-2">Draw specialist calibration</p>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-center text-sm">
-          <div className="rounded-lg bg-pitch-800 p-2">
-            <p className="text-xs text-gray-500 mb-1">Raw mean</p>
-            <span className="text-gray-300">{num(m.draw_raw_mean ?? null)}</span>
+          <div className="rounded-lg bg-ink-700 p-2">
+            <p className="text-xs text-chalk-3 mb-1">Raw mean</p>
+            <span className="text-chalk-2">{num(m.draw_raw_mean ?? null)}</span>
           </div>
-          <div className="rounded-lg bg-pitch-800 p-2">
-            <p className="text-xs text-gray-500 mb-1">Calibrated mean</p>
+          <div className="rounded-lg bg-ink-700 p-2">
+            <p className="text-xs text-chalk-3 mb-1">Calibrated mean</p>
             <MetricCell
               value={m.draw_cal_mean ?? null}
               format="num"
@@ -367,17 +367,17 @@ function NationalMetricsCard({ m }: { m: NationalTrainingMetrics }) {
               bad={m.draw_actual_rate != null ? m.draw_actual_rate - 0.01 : undefined}
             />
           </div>
-          <div className="rounded-lg bg-pitch-800 p-2">
-            <p className="text-xs text-gray-500 mb-1">Actual draw rate</p>
-            <span className="text-gray-300">{num(m.draw_actual_rate ?? null)}</span>
+          <div className="rounded-lg bg-ink-700 p-2">
+            <p className="text-xs text-chalk-3 mb-1">Actual draw rate</p>
+            <span className="text-chalk-2">{num(m.draw_actual_rate ?? null)}</span>
           </div>
-          <div className="rounded-lg bg-pitch-800 p-2">
-            <p className="text-xs text-gray-500 mb-1">Blend alpha</p>
-            <span className="text-gray-300">{num(m.draw_blend_alpha ?? null)}</span>
+          <div className="rounded-lg bg-ink-700 p-2">
+            <p className="text-xs text-chalk-3 mb-1">Blend alpha</p>
+            <span className="text-chalk-2">{num(m.draw_blend_alpha ?? null)}</span>
           </div>
         </div>
         {m.draw_cal_mean != null && m.draw_actual_rate != null && (
-          <p className={`text-xs mt-1 ${Math.abs(m.draw_cal_mean - m.draw_actual_rate) < 0.005 ? "text-emerald-400" : "text-yellow-400"}`}>
+          <p className={`text-xs mt-1 ${Math.abs(m.draw_cal_mean - m.draw_actual_rate) < 0.005 ? "text-win" : "text-est"}`}>
             {Math.abs(m.draw_cal_mean - m.draw_actual_rate) < 0.005
               ? "✓ Calibration ≈ actual draw rate"
               : `Δ = ${((m.draw_cal_mean - m.draw_actual_rate) * 100).toFixed(2)}pp vs actual`}
@@ -406,7 +406,7 @@ export default async function TrainingRunsPage() {
     <div className="space-y-8">
       <div>
         <h1 className="text-2xl font-bold">Training History</h1>
-        <p className="text-sm text-gray-500 mt-1">
+        <p className="text-sm text-chalk-3 mt-1">
           {t("adminTr.subtitle")}
         </p>
       </div>
@@ -414,8 +414,8 @@ export default async function TrainingRunsPage() {
       {/* National Team Model */}
       <section className="space-y-3">
         <div>
-          <h2 className="text-lg font-semibold text-white">National Team Model</h2>
-          <p className="text-xs text-gray-500">{t("adminTr.dailyRetrain")}</p>
+          <h2 className="text-lg font-semibold text-chalk">National Team Model</h2>
+          <p className="text-xs text-chalk-3">{t("adminTr.dailyRetrain")}</p>
         </div>
         <NationalMetricsCard m={nationalMetrics} />
       </section>
@@ -423,11 +423,11 @@ export default async function TrainingRunsPage() {
       {/* Club Model Training Runs */}
       <section className="space-y-3">
         <div>
-          <h2 className="text-lg font-semibold text-white">Club Model Training Runs</h2>
-          <p className="text-xs text-gray-500">{t("adminTr.weeklyRetrain")}</p>
+          <h2 className="text-lg font-semibold text-chalk">Club Model Training Runs</h2>
+          <p className="text-xs text-chalk-3">{t("adminTr.weeklyRetrain")}</p>
         </div>
         {runs.length === 0 ? (
-          <div className="rounded-xl border border-pitch-700 bg-pitch-900 p-8 text-center text-gray-500">
+          <div className="rounded-xl border border-line bg-ink-800 p-8 text-center text-chalk-3">
             {t("adminTr.noRuns")}
           </div>
         ) : (

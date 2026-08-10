@@ -389,7 +389,19 @@ def main():
         # and user-tracked matches) before re-inserting only its own.
         if not args.keep_existing:
             from scripts.fixture_upsert import prune_vanished
-            prune_vanished(db, list(COMPETITIONS.values()), touched_ids,
+
+            # Only leagues the feed ACTUALLY answered for. Passing the full
+            # COMPETITIONS list meant a league that returned zero fixtures had
+            # all of its upcoming matches deleted as "vanished" — see the
+            # 2026-08-09 incident documented in prune_vanished(). A silent empty
+            # response is a feed failure, not a mass cancellation.
+            leagues_seen = {f["league"] for f in fixtures if f.get("league")}
+            skipped = sorted(set(COMPETITIONS.values()) - leagues_seen)
+            if skipped:
+                print(f"  Prune scope excludes {skipped} — the feed returned no "
+                      f"fixtures for them this run, so we cannot tell cancelled "
+                      f"from unanswered.")
+            prune_vanished(db, sorted(leagues_seen), touched_ids,
                            horizon_days=args.days)
 
         if new_matches and not args.no_predictions:

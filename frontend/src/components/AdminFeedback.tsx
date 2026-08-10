@@ -29,7 +29,7 @@ export default function AdminFeedback({ items }: { items: FeedbackItem[] }) {
 
   if (feedback.length === 0) {
     return (
-      <div className="rounded-xl border border-pitch-700 bg-pitch-900 p-6 text-center text-sm text-gray-500">
+      <div className="rounded-xl border border-line bg-ink-800 p-6 text-center text-sm text-chalk-3">
         {t("fb.empty")}
       </div>
     );
@@ -41,34 +41,34 @@ export default function AdminFeedback({ items }: { items: FeedbackItem[] }) {
         <div
           key={f.id}
           className={`rounded-xl border p-4 ${
-            f.is_read ? "border-pitch-700 bg-pitch-900" : "border-green-700/50 bg-green-900/10"
+            f.is_read ? "border-line bg-ink-800" : "border-win/40 bg-win/10"
           }`}
         >
           <div className="flex items-start justify-between gap-3">
             <div className="min-w-0">
-              <p className="text-sm font-medium text-white truncate">
+              <p className="text-sm font-medium text-chalk truncate">
                 {f.user_name ?? f.user_email ?? "—"}
                 {!f.is_read && (
-                  <span className="ml-2 text-[10px] px-1.5 py-0.5 rounded bg-green-500/20 text-green-400 font-semibold align-middle">
+                  <span className="ml-2 text-[10px] px-1.5 py-0.5 rounded bg-win/20 text-win font-semibold align-middle">
                     {t("fb.new")}
                   </span>
                 )}
               </p>
-              {f.user_email && <p className="text-xs text-gray-500">{f.user_email}</p>}
+              {f.user_email && <p className="text-xs text-chalk-3">{f.user_email}</p>}
             </div>
-            <span className="text-[11px] text-gray-600 shrink-0 tabular-nums">
+            <span className="text-[11px] text-chalk-3 shrink-0 tabular-nums">
               {new Date(f.created_at).toLocaleString(lang === "el" ? "el-GR" : "en-GB", {
                 day: "numeric", month: "short", hour: "2-digit", minute: "2-digit",
                 hour12: false, timeZone: "Europe/Athens",
               })}
             </span>
           </div>
-          <p className="text-sm text-gray-200 mt-2 whitespace-pre-wrap break-words">{f.message}</p>
+          <p className="text-sm text-chalk mt-2 whitespace-pre-wrap break-words">{f.message}</p>
           <div className="flex items-center gap-3 mt-3">
             {f.user_email && (
               <a
                 href={`mailto:${f.user_email}?subject=Re: Football Predictor`}
-                className="text-xs text-sky-400 hover:text-sky-300"
+                className="text-xs text-chalk-2 hover:text-chalk-2"
               >
                 {t("fb.reply")}
               </a>
@@ -76,7 +76,7 @@ export default function AdminFeedback({ items }: { items: FeedbackItem[] }) {
             {!f.is_read && (
               <button
                 onClick={() => markRead(f.id)}
-                className="text-xs text-gray-400 hover:text-white"
+                className="text-xs text-chalk-2 hover:text-chalk"
               >
                 {t("fb.markRead")}
               </button>

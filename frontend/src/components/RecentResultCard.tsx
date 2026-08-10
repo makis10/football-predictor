@@ -46,21 +46,21 @@ export default function RecentResultCard({ match }: Props) {
 
   const bg =
     state === "correct"
-      ? "bg-green-950/60 border-green-700/50 hover:border-green-600"
+      ? "bg-win/10 border-win/40 hover:border-win"
       : state === "partial"
-      ? "bg-blue-950/60 border-blue-700/50 hover:border-blue-600"
+      ? "bg-chalk-2/10 border-chalk-2/40 hover:border-chalk-2"
       : state === "wrong"
-      ? "bg-red-950/60 border-red-700/50 hover:border-red-600"
-      : "bg-pitch-900 border-pitch-700 hover:border-gray-600";
+      ? "bg-lose/10 border-lose/40 hover:border-lose"
+      : "bg-ink-800 border-line hover:border-line";
 
   const badge =
     state === "correct"
-      ? "bg-green-500/20 text-green-400 border border-green-600/40"
+      ? "bg-win/20 text-win border border-win/40"
       : state === "partial"
-      ? "bg-amber-500/20 text-amber-400 border border-amber-600/40"
+      ? "bg-est/20 text-est border border-est/40"
       : state === "wrong"
-      ? "bg-red-500/20 text-red-400 border border-red-600/40"
-      : "bg-gray-700/30 text-gray-500";
+      ? "bg-lose/20 text-lose border border-lose/40"
+      : "bg-ink-600/30 text-chalk-3";
 
   const badgeLabel =
     state === "correct" ? "✓ Correct"
@@ -93,10 +93,10 @@ export default function RecentResultCard({ match }: Props) {
       <Link href={matchHref(match)} className="block p-4 pb-0">
         {/* League + correctness badge */}
         <div className="flex items-center justify-between">
-          <span className="flex items-center gap-1.5 text-xs text-gray-400">
+          <span className="flex items-center gap-1.5 text-xs text-chalk-2">
             {leagueFlag(match.league)} {leagueLabel(match.league)}
             {roundLabel(match.round) && (
-              <span className="badge bg-pitch-700 text-gray-400 text-[10px] px-1.5 py-0">
+              <span className="badge bg-ink-600 text-chalk-2 text-[10px] px-1.5 py-0">
                 {roundLabel(match.round)}
               </span>
             )}
@@ -106,58 +106,58 @@ export default function RecentResultCard({ match }: Props) {
               {badgeLabel}
             </span>
           ) : (
-            <span className="text-xs text-gray-600 italic">No prediction</span>
+            <span className="text-xs text-chalk-3 italic">No prediction</span>
           )}
         </div>
 
         {/* Teams + score */}
         <div className="flex items-center gap-3 mt-3">
-          <span className="flex-1 font-semibold text-white text-sm truncate">
+          <span className="flex-1 font-semibold text-chalk text-sm truncate">
             {match.home_team}
           </span>
           {match.home_goals != null && match.away_goals != null ? (
-            <span className="text-2xl font-black tabular-nums text-white shrink-0">
+            <span className="text-2xl font-black tabular-nums text-chalk shrink-0">
               {match.home_goals} – {match.away_goals}
             </span>
           ) : (
-            <span className="text-xs font-medium text-amber-500/80 shrink-0 px-2 py-1 rounded-lg bg-amber-500/10 border border-amber-600/20">
+            <span className="text-xs font-medium text-est/80 shrink-0 px-2 py-1 rounded-lg bg-est/10 border border-est/20">
               ⏳ Pending
             </span>
           )}
-          <span className="flex-1 font-semibold text-white text-sm truncate text-right">
+          <span className="flex-1 font-semibold text-chalk text-sm truncate text-right">
             {match.away_team}
           </span>
         </div>
 
         {/* Prediction detail */}
         {p && (
-          <div className="space-y-2 border-t border-white/5 pt-2 mt-3">
+          <div className="space-y-2 border-t border-line-soft pt-2 mt-3">
             {/* Probability bar */}
             <div className="flex gap-0.5 h-1.5 rounded-full overflow-hidden">
               <div
-                className="bg-green-500"
+                className="bg-win"
                 style={{ width: `${Math.round(p.home_win_prob * 100)}%` }}
               />
               <div
-                className="bg-gray-500"
+                className="bg-chalk-2"
                 style={{ width: `${Math.round(p.draw_prob * 100)}%` }}
               />
               <div
-                className="bg-blue-500"
+                className="bg-chalk-2"
                 style={{ width: `${Math.round(p.away_win_prob * 100)}%` }}
               />
             </div>
 
             {/* Predicted vs actual */}
             <div className="flex items-center justify-between text-xs">
-              <span className="text-gray-400">
+              <span className="text-chalk-2">
                 Predicted:{" "}
-                <span className="text-gray-200 font-medium">
+                <span className="text-chalk font-medium">
                   {predicted
                     ? outcomeLabel(predicted, match.home_team, match.away_team)
                     : "—"}
                 </span>
-                <span className="text-gray-600 ml-1 tabular-nums">
+                <span className="text-chalk-3 ml-1 tabular-nums">
                   ({predicted === "H"
                     ? Math.round(p.home_win_prob * 100)
                     : predicted === "D"
@@ -170,10 +170,10 @@ export default function RecentResultCard({ match }: Props) {
               <span
                 className={`text-xs px-1.5 py-0.5 rounded ${
                   goalsOk === true
-                    ? "text-green-400"
+                    ? "text-win"
                     : goalsOk === false
-                    ? "text-red-400"
-                    : "text-gray-600"
+                    ? "text-lose"
+                    : "text-chalk-3"
                 }`}
               >
                 {p.goals_prediction} 2.5{" "}
@@ -190,12 +190,12 @@ export default function RecentResultCard({ match }: Props) {
           <button
             onClick={handlePostmortem}
             disabled={loading}
-            className="w-full py-1.5 text-xs rounded-lg bg-red-500/10 text-red-400 hover:bg-red-500/20 transition-colors border border-red-700/30 disabled:opacity-50"
+            className="w-full py-1.5 text-xs rounded-lg bg-lose/10 text-lose hover:bg-lose/20 transition-colors border border-lose/40 disabled:opacity-50"
           >
             {loading ? t("recent.analyzing") : postmortem ? t("recent.closeAnalysis") : t("recent.whyFail")}
           </button>
           {postmortem && (
-            <p className="mt-2 text-xs text-gray-400 leading-relaxed border-t border-white/5 pt-2">
+            <p className="mt-2 text-xs text-chalk-2 leading-relaxed border-t border-line-soft pt-2">
               {postmortem}
             </p>
           )}

@@ -48,7 +48,7 @@ export default function ProjectionsBrowser({ items }: { items: CompetitionProjec
 
   if (items.length === 0) {
     return (
-      <div className="card p-8 text-center text-gray-500">
+      <div className="card p-8 text-center text-chalk-3">
         <p className="text-4xl mb-3">🔮</p>
         <p className="font-medium">{t("proj.empty.title")}</p>
         <p className="text-sm mt-1">
@@ -74,8 +74,8 @@ export default function ProjectionsBrowser({ items }: { items: CompetitionProjec
             onClick={() => setFilter(key)}
             className={`px-3 py-1.5 rounded-full text-sm transition-colors ${
               filter === key
-                ? "bg-green-600 text-white"
-                : "bg-pitch-800 text-gray-400 hover:text-gray-200"
+                ? "bg-win text-chalk"
+                : "bg-ink-700 text-chalk-2 hover:text-chalk"
             }`}
           >
             {t(`proj.filter.${key}`)}
@@ -92,8 +92,8 @@ export default function ProjectionsBrowser({ items }: { items: CompetitionProjec
             onClick={() => setSelected(i.league)}
             className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm transition-colors ${
               current?.league === i.league
-                ? "bg-pitch-700 text-white ring-1 ring-green-500/40"
-                : "bg-pitch-900 text-gray-400 hover:text-gray-200 border border-pitch-700"
+                ? "bg-ink-600 text-chalk ring-1 ring-win/40"
+                : "bg-ink-800 text-chalk-2 hover:text-chalk border border-line"
             }`}
           >
             <span>{leagueFlag(i.league)}</span>
@@ -116,12 +116,12 @@ export default function ProjectionsBrowser({ items }: { items: CompetitionProjec
           )}
           {current.table && <StandingsTable table={current.table} t={t} />}
           {!current.projection && !current.table && current.category === "european" && (
-            <div className="rounded-xl border border-pitch-700 bg-pitch-800/60 p-6 text-center space-y-2">
+            <div className="rounded-xl border border-line bg-ink-700/60 p-6 text-center space-y-2">
               <p className="text-2xl">🏆</p>
-              <p className="text-sm font-semibold text-gray-200">
+              <p className="text-sm font-semibold text-chalk">
                 {t("proj.eu.pending.title")}
               </p>
-              <p className="text-xs text-gray-500 leading-relaxed max-w-md mx-auto">
+              <p className="text-xs text-chalk-3 leading-relaxed max-w-md mx-auto">
                 {t("proj.eu.pending.body")}
               </p>
             </div>

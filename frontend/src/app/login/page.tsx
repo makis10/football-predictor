@@ -10,7 +10,7 @@ function OAuthError() {
   const err = params.get("error");
   if (!err) return null;
   return (
-    <div className="rounded-lg bg-red-900/40 border border-red-700 px-4 py-2 text-sm text-red-300">
+    <div className="rounded-lg bg-lose/10 border border-lose/40 px-4 py-2 text-sm text-lose">
       Authentication failed. Please try again.
     </div>
   );
@@ -44,11 +44,11 @@ function LoginForm() {
   const handleGoogle = () => signIn("google", { callbackUrl: "/" });
 
   return (
-    <div className="rounded-2xl border border-pitch-700 bg-pitch-900 p-8 space-y-6">
+    <div className="rounded-2xl border border-line bg-ink-800 p-8 space-y-6">
       <div className="text-center">
         <span className="text-4xl">⚽</span>
         <h1 className="mt-2 text-xl font-bold">Sign in</h1>
-        <p className="text-sm text-gray-500 mt-1">Football Predictor</p>
+        <p className="text-sm text-chalk-3 mt-1">Football Predictor</p>
       </div>
 
       {/* OAuth error from query param */}
@@ -58,7 +58,7 @@ function LoginForm() {
 
       {/* Credentials error */}
       {error && (
-        <div className="rounded-lg bg-red-900/40 border border-red-700 px-4 py-2 text-sm text-red-300">
+        <div className="rounded-lg bg-lose/10 border border-lose/40 px-4 py-2 text-sm text-lose">
           {error}
         </div>
       )}
@@ -66,7 +66,7 @@ function LoginForm() {
       {/* Google */}
       <button
         onClick={handleGoogle}
-        className="w-full flex items-center justify-center gap-3 rounded-xl border border-pitch-600 bg-pitch-800 hover:bg-pitch-700 px-4 py-2.5 text-sm font-medium transition-colors"
+        className="w-full flex items-center justify-center gap-3 rounded-xl border border-line bg-ink-700 hover:bg-ink-600 px-4 py-2.5 text-sm font-medium transition-colors"
       >
         <svg className="w-4 h-4" viewBox="0 0 24 24">
           <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
@@ -79,48 +79,48 @@ function LoginForm() {
 
       <div className="relative">
         <div className="absolute inset-0 flex items-center">
-          <div className="w-full border-t border-pitch-700" />
+          <div className="w-full border-t border-line" />
         </div>
-        <div className="relative flex justify-center text-xs text-gray-500">
-          <span className="bg-pitch-900 px-2">or</span>
+        <div className="relative flex justify-center text-xs text-chalk-3">
+          <span className="bg-ink-800 px-2">or</span>
         </div>
       </div>
 
       <form onSubmit={handleCredentials} className="space-y-4">
         <div>
-          <label className="block text-xs text-gray-400 mb-1">Email</label>
+          <label className="block text-xs text-chalk-2 mb-1">Email</label>
           <input
             type="email"
             required
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="w-full rounded-lg border border-pitch-600 bg-pitch-800 px-3 py-2 text-sm text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500"
+            className="w-full rounded-lg border border-line bg-ink-700 px-3 py-2 text-sm text-chalk placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-win"
             placeholder="you@example.com"
           />
         </div>
         <div>
-          <label className="block text-xs text-gray-400 mb-1">Password</label>
+          <label className="block text-xs text-chalk-2 mb-1">Password</label>
           <input
             type="password"
             required
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="w-full rounded-lg border border-pitch-600 bg-pitch-800 px-3 py-2 text-sm text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500"
+            className="w-full rounded-lg border border-line bg-ink-700 px-3 py-2 text-sm text-chalk placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-win"
             placeholder="••••••••"
           />
         </div>
         <button
           type="submit"
           disabled={loading}
-          className="w-full rounded-xl bg-green-600 hover:bg-green-500 disabled:opacity-50 px-4 py-2.5 text-sm font-medium text-white transition-colors"
+          className="w-full rounded-xl bg-win hover:bg-win disabled:opacity-50 px-4 py-2.5 text-sm font-medium text-chalk transition-colors"
         >
           {loading ? "Signing in…" : "Sign in"}
         </button>
       </form>
 
-      <p className="text-center text-xs text-gray-500">
+      <p className="text-center text-xs text-chalk-3">
         No account?{" "}
-        <Link href="/register" className="text-green-400 hover:text-green-300">
+        <Link href="/register" className="text-win hover:text-win">
           Create one
         </Link>
       </p>

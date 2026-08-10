@@ -35,6 +35,10 @@ class Prediction(Base):
     bm_draw_odds: Mapped[_Optional[float]] = mapped_column(Float, nullable=True)
     bm_away_odds: Mapped[_Optional[float]] = mapped_column(Float, nullable=True)
     bm_over_odds: Mapped[_Optional[float]] = mapped_column(Float, nullable=True)
+    # Under 2.5 price. Parsed off the feed all along but dropped before storage
+    # until migration 0032, which left Under 2.5 as the one mainstream market
+    # with no real price to quote on a ticket. NULL for pre-0032 rows.
+    bm_under_odds: Mapped[_Optional[float]] = mapped_column(Float, nullable=True)
 
     # Poisson λ parameters stored at prediction time — used to derive extended
     # stats (O/U 1.5 / 3.5, correct scores, combo markets) at serve-time.

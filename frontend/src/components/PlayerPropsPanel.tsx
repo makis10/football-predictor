@@ -22,19 +22,19 @@ function StatPill({
   actual?: number | null;
 }) {
   const color =
-    tone === "score" ? "text-green-400" : tone === "sot" ? "text-sky-300" : "text-amber-300";
+    tone === "score" ? "text-win" : tone === "sot" ? "text-chalk-2" : "text-est";
   const settled = hit != null;
   const tint = settled
     ? hit
-      ? "ring-1 ring-green-500/40 bg-green-500/10"
-      : "ring-1 ring-rose-500/25 bg-rose-500/5"
-    : "bg-pitch-900/60";
+      ? "ring-1 ring-win/40 bg-win/10"
+      : "ring-1 ring-lose/25 bg-lose/5"
+    : "bg-ink-800/60";
   return (
     <div className={`flex flex-col items-center rounded-md px-2 py-1 min-w-[3.6rem] ${tint}`}>
-      <span className="text-[9px] uppercase tracking-wide text-gray-500 leading-none">{label}</span>
+      <span className="text-[9px] uppercase tracking-wide text-chalk-3 leading-none">{label}</span>
       <span className={`text-sm font-semibold tabular-nums ${color}`}>{pct(value)}</span>
       {settled && (
-        <span className={`text-[9px] tabular-nums leading-none mt-0.5 ${hit ? "text-green-400" : "text-gray-500"}`}>
+        <span className={`text-[9px] tabular-nums leading-none mt-0.5 ${hit ? "text-win" : "text-chalk-3"}`}>
           {hit ? "✓" : "✗"}
           {actual != null ? ` ${actual}` : ""}
         </span>
@@ -60,7 +60,7 @@ function TeamPropsTable({ team, players, t }: { team: string; players: PlayerPro
   if (top.length === 0) return null;
   return (
     <div className="space-y-2">
-      <h3 className="text-xs font-semibold text-gray-300 uppercase tracking-wide border-b border-pitch-700 pb-1">
+      <h3 className="text-xs font-semibold text-chalk-2 uppercase tracking-wide border-b border-line pb-1">
         {team}
       </h3>
       {top.map((p) => {
@@ -70,9 +70,9 @@ function TeamPropsTable({ team, players, t }: { team: string; players: PlayerPro
             key={p.player_name}
             className={`flex items-center justify-between gap-2 ${dnp ? "opacity-40" : ""}`}
           >
-            <span className="text-sm text-gray-200 truncate flex-1 min-w-0">
+            <span className="text-sm text-chalk truncate flex-1 min-w-0">
               {p.player_name}
-              {dnp && <span className="text-[10px] text-gray-500"> · DNP</span>}
+              {dnp && <span className="text-[10px] text-chalk-3"> · DNP</span>}
             </span>
             <div className="flex gap-1 shrink-0">
               <StatPill label={t("props.score")} value={p.p_score} tone="score" hit={dnp ? null : p.score_hit} actual={p.actual_goals} />
@@ -93,14 +93,14 @@ export default function PlayerPropsPanel({ teams, t }: { teams: Record<string, P
   return (
     <div className="card p-5 space-y-4">
       <div>
-        <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
+        <h2 className="text-sm font-semibold text-chalk-2 uppercase tracking-wider">
           {t("props.title")}
         </h2>
-        <p className="text-[11px] text-gray-600 mt-1 leading-relaxed">
+        <p className="text-[11px] text-chalk-3 mt-1 leading-relaxed">
           {t("props.descPre")}{" "}
-          <span className="text-green-400">{t("props.score")}</span> {t("props.scoreDef")} ·{" "}
-          <span className="text-sky-300">{t("props.shots")}</span> {t("props.shotsDef")} ·{" "}
-          <span className="text-amber-300">{t("props.assist")}</span> {t("props.assistDef")}{" "}
+          <span className="text-win">{t("props.score")}</span> {t("props.scoreDef")} ·{" "}
+          <span className="text-chalk-2">{t("props.shots")}</span> {t("props.shotsDef")} ·{" "}
+          <span className="text-est">{t("props.assist")}</span> {t("props.assistDef")}{" "}
           {finished ? t("props.settledNote") : t("props.methodNote")}
         </p>
       </div>

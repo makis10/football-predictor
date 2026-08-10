@@ -10,23 +10,23 @@ function pct(v: number) {
 }
 
 function colorForAccuracy(v: number): string {
-  if (v >= 0.57) return "text-green-400";
-  if (v >= 0.48) return "text-yellow-400";
-  return "text-red-400";
+  if (v >= 0.57) return "text-win";
+  if (v >= 0.48) return "text-est";
+  return "text-lose";
 }
 
 export function LeagueTable({ rows }: LeagueTableProps) {
   if (rows.length === 0) {
     return (
-      <p className="text-sm text-gray-500 text-center py-6">No data yet.</p>
+      <p className="text-sm text-chalk-3 text-center py-6">No data yet.</p>
     );
   }
 
   return (
-    <div className="overflow-x-auto rounded-xl border border-pitch-700">
+    <div className="overflow-x-auto rounded-xl border border-line">
       <table className="w-full text-sm">
         <thead>
-          <tr className="bg-pitch-800 text-gray-400 text-xs uppercase tracking-wide">
+          <tr className="bg-ink-700 text-chalk-2 text-xs uppercase tracking-wide">
             <th className="px-4 py-3 text-left">League</th>
             <th className="px-4 py-3 text-right">Games</th>
             <th className="px-4 py-3 text-right">Result %</th>
@@ -34,17 +34,17 @@ export function LeagueTable({ rows }: LeagueTableProps) {
             <th className="px-4 py-3 text-right">Both %</th>
           </tr>
         </thead>
-        <tbody className="divide-y divide-pitch-700">
+        <tbody className="divide-y divide-line">
           {rows.map((r) => (
             <tr
               key={r.league}
-              className="hover:bg-pitch-800/50 transition-colors"
+              className="hover:bg-ink-700/50 transition-colors"
             >
-              <td className="px-4 py-3 font-medium text-gray-200">
+              <td className="px-4 py-3 font-medium text-chalk">
                 <span className="mr-2">{leagueFlag(r.league)}</span>
                 {leagueLabel(r.league)}
               </td>
-              <td className="px-4 py-3 text-right text-gray-400">{r.total}</td>
+              <td className="px-4 py-3 text-right text-chalk-2">{r.total}</td>
               <td className={`px-4 py-3 text-right font-semibold ${colorForAccuracy(r.result_accuracy)}`}>
                 {pct(r.result_accuracy)}
               </td>
