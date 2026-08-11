@@ -1,5 +1,5 @@
 {
-"as_of": "2026-08-10",
+"as_of": "2026-08-11",
 "count": 594,
 "clubs": {
 "Arsenal": {
@@ -2342,6 +2342,21 @@
 "country": "UKR",
 "level": 1
 },
+"Polissya Zhytomyr": {
+"elo": 1241.82,
+"country": "UKR",
+"level": 1
+},
+"LNZ": {
+"elo": 1241.82,
+"country": "UKR",
+"level": 1
+},
+"Karpaty": {
+"elo": 1241.82,
+"country": "UKR",
+"level": 1
+},
 "Kryvbas": {
 "elo": 1241.82,
 "country": "UKR",
@@ -2378,21 +2393,6 @@
 "level": 1
 },
 "Chernomorets": {
-"elo": 1241.82,
-"country": "UKR",
-"level": 1
-},
-"Polissya Zhytomyr": {
-"elo": 1241.82,
-"country": "UKR",
-"level": 1
-},
-"LNZ": {
-"elo": 1241.82,
-"country": "UKR",
-"level": 1
-},
-"Karpaty": {
 "elo": 1241.82,
 "country": "UKR",
 "level": 1
