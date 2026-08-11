@@ -418,3 +418,73 @@ def test_overrides_are_not_silently_identity_mapped_for_new_entries():
     of reading the feed. Just assert the table stays free of empty targets."""
     blank = [k for k, v in READ_OVERRIDES.items() if not v or not v.strip()]
     assert not blank, f"overrides with an empty target: {blank}"
+
+
+# ── Country equivalence in the club-stats id sweep ───────────────────────────
+
+def test_country_guard_compares_nations_not_spellings():
+    """The guard must not reject a club over a country's SPELLING.
+
+    It compares what API-Football calls a country against what our training data
+    calls it — two different vocabularies. A raw `!=` threw away ten correctly
+    identified clubs on every run: Sparta Praha, Jablonec, Hradec Kralove
+    ("Czech-Republic" vs our "Czechia"), Shkendija ("Macedonia"/"NMacedonia"),
+    KI Klaksvik and NSI Runavik ("Faroe-Islands"/"FaroeIslands"), Larne
+    ("Northern-Ireland"/"NorthernIreland"), plus Cardiff, Swansea and Vaduz,
+    who simply play in a neighbour's league.
+    """
+    import importlib.util
+    from pathlib import Path
+
+    root = Path(__file__).resolve().parents[2]
+    spec = importlib.util.spec_from_file_location(
+        "_fcts", root / "scripts" / "fetch_club_team_stats.py")
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+
+    same = [
+        ("Czech-Republic", "Czechia"),
+        ("Macedonia", "NMacedonia"),
+        ("Faroe-Islands", "FaroeIslands"),
+        ("Northern-Ireland", "NorthernIreland"),
+        ("Wales", "England"),            # Cardiff, Swansea, Wrexham
+        ("Liechtenstein", "Switzerland"),  # Vaduz
+    ]
+    for api, ours in same:
+        assert mod._same_country(api, ours), f"{api} should match {ours}"
+
+    # …and it must STILL reject the collision it was written for: La Liga's
+    # Athletic Club is not Brazil's Athletic Club of Serie B.
+    assert not mod._same_country("Spain", "Brazil")
+    assert not mod._same_country("Portugal", "Brazil")
+
+    # Missing information is not a contradiction.
+    assert mod._same_country("", "Spain")
+    assert mod._same_country("Spain", "")
+
+    # …and the sweep must actually USE it. Testing the helper alone passed
+    # happily while the call site still compared the two strings directly,
+    # which is the whole bug.
+    src = (Path(__file__).resolve().parents[2]
+           / "scripts" / "fetch_club_team_stats.py").read_text(encoding="utf-8")
+    assert "if not _same_country(api_country, our_country):" in src
+    assert "api_country != our_country" not in src
+
+
+def test_club_stats_sweep_cannot_starve_a_club_forever():
+    """Teams must not be walked in a fixed order against a request cap.
+
+    `target` was `sorted(...)` and the cap lands around "M", so every club later
+    in the alphabet was never processed on any run — Odense, Paide, SJK, Slovan
+    Bratislava and Valur Reykjavik alerted "no stored stats" every morning and
+    were right. Ordering by staleness alone is not enough either: ~150 clubs
+    share an empty key, so a stable sort still walks them A→Z.
+    """
+    from pathlib import Path
+
+    src = (Path(__file__).resolve().parents[2]
+           / "scripts" / "fetch_club_team_stats.py").read_text(encoding="utf-8")
+    assert "MAX(match_date)" in src, "sweep no longer orders by staleness"
+    assert "random.Random(date.today().toordinal())" in src, (
+        "no per-day rotation — clubs sharing a staleness key will starve again")
+    assert "target.sort(" in src and "target = sorted({r[0] for r in rows})" in src

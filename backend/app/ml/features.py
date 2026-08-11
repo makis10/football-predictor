@@ -717,6 +717,21 @@ _CSV_TEAM_CANON: dict[str, str] = {
     # The Germany2 feed switched to the club's full name this season, so one
     # 2026 row arrived as "1. FC Heidenheim" against 272 as "FC Heidenheim".
     "1. FC Heidenheim": "FC Heidenheim",           #   1 → 272
+
+    # ── 2026-08-11 ──────────────────────────────────────────────────────────
+    # Same feed change, second casualty: Wolfsburg went down and played its
+    # first 2. Bundesliga match on 08/08, which arrived as "VfL Wolfsburg"
+    # against 544 rows of Bundesliga history as "Wolfsburg". Relegation is
+    # exactly when a split hurts most — the club's entire record would sit on
+    # the wrong side of the division change, and the model would rate a
+    # relegated top-flight side off a single 0-0 draw.
+    #
+    # Expect more of these as the rest of the relegated clubs play their first
+    # match under the new spelling. The daily identity audit catches them
+    # within a day (it caught this one), which is why this stays an explicit
+    # table rather than an affix rule: "VfL X → X" would also merge clubs that
+    # merely share a town, and the training data is not the place to guess.
+    "VfL Wolfsburg": "Wolfsburg",                  #   1 → 544
 }
 
 

@@ -112,6 +112,7 @@ export default function MatchCard({ match, t }: Props) {
               confidence={p.confidence}
               tone={pick.tone}
               emphasis
+              t={t}
             />
 
             <div className="flex items-center justify-between gap-2 text-[11px]">

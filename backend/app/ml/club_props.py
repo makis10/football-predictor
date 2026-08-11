@@ -109,6 +109,19 @@ NAME_OVERRIDES: dict[str, str] = {
     'Spurs': 'Tottenham',
     'Stuttgart': 'VfB Stuttgart',
     'Thun': 'FC Thun',
+
+    # ── 2026-08-11 ──────────────────────────────────────────────────────────
+    # Six clubs the league sweep could not place. Every name below was read off
+    # the API-Football roster for the club's own league (/teams?league&season),
+    # not guessed and not fuzzy-matched — the accents and suffixes are exactly
+    # what the feed returns, and a near-miss here stores stats under a name the
+    # match page will never look up.
+    'Freiburg': 'SC Freiburg',
+    'Hamburg': 'Hamburger SV',
+    "M'gladbach": 'Borussia Mönchengladbach',
+    'Brest': 'Stade Brestois 29',
+    'Gaziantep': 'Gaziantep FK',
+    'Genclerbirligi': 'Gençlerbirliği S.K.',
     'U. Cluj': 'Universitatea Cluj',
     'Univ. Craiova': 'Universitatea Craiova',
     'Vasco': 'Vasco DA Gama',

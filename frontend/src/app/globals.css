@@ -53,6 +53,12 @@
      as a power cut. */
   --color-scrim: rgba(3, 5, 10, 0.62);
 
+  /* The picks row's highlight. Its own token because the same opacity does not
+     read the same on both grounds: 6% of a bright green over near-black is a
+     visible wash, 6% of a dark green over white is almost nothing. */
+  --color-pick-tint: rgba(61, 220, 151, 0.07);
+  --color-pick-edge: rgba(61, 220, 151, 0.28);
+
 
   /* Type — three roles.
      display: the product's voice (headings, team names, ticket titles)
@@ -104,6 +110,8 @@
 
   --color-flood: rgba(16, 22, 37, 0.14);
   --color-scrim: rgba(16, 22, 37, 0.42);
+  --color-pick-tint: rgba(7, 118, 74, 0.09);
+  --color-pick-edge: rgba(7, 118, 74, 0.30);
 }
 
 /* The one place a colour is chosen for legibility rather than meaning: text
@@ -158,6 +166,16 @@
   }
   /* Opt out on nested surfaces, where a second lit edge reads as a seam. */
   .card-flat::before { display: none; }
+
+  /* The day's picks. Green here is emphasis, not outcome — settled results live
+     on /tickets, a different component on a different page, so there is no
+     chance of reading an upcoming fixture as already won. Kept at a wash: the
+     row has to separate from the grid below it without shouting. */
+  .card-pick {
+    background-color: var(--color-pick-tint);
+    border-color: var(--color-pick-edge);
+  }
+  .card-pick:hover { border-color: var(--color-win); }
 
   .badge {
     @apply inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-xs font-medium;

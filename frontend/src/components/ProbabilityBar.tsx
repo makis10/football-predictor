@@ -79,7 +79,18 @@ export function ProbabilityBar({
         </span>
       </div>
 
-      <div className="relative h-2.5 w-full overflow-hidden rounded-full bg-ink-700">
+      <div
+        className="relative h-2.5 w-full overflow-hidden rounded-full bg-ink-700"
+        title={
+          band > 0 && t
+            ? t("pred.bandTitle", {
+                p: Math.round(pct),
+                lo: Math.round(lo),
+                hi: Math.round(hi),
+              })
+            : undefined
+        }
+      >
         <div
           className={`absolute inset-y-0 left-0 rounded-full ${TONE_FILL[tone]}`}
           style={{ width: `${pct}%` }}

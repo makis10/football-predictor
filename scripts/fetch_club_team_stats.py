@@ -19,6 +19,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import random
 import sys
 from datetime import date, timedelta
 from pathlib import Path
@@ -159,6 +160,54 @@ def _country_from_history(team: str) -> str:
     return _HISTORY_COUNTRY.get(team, "")
 
 
+# ── Country equivalence ──────────────────────────────────────────────────────
+# The guard below compares the country API-Football reports against the country
+# our training data says a club plays in. Those are two different vocabularies,
+# and a raw `!=` rejected ten correctly-identified clubs every run: we write
+# "Czechia", the API writes "Czech-Republic"; ours is "NMacedonia", theirs is
+# "Macedonia". Sparta Praha, Jablonec, Hradec Králové, Shkendija, KI Klaksvik
+# and NSÍ Runavík were all thrown away on spelling alone.
+_COUNTRY_ALIASES = {
+    "czech-republic": "czechia",
+    "macedonia": "nmacedonia",
+    "north-macedonia": "nmacedonia",
+    "faroe-islands": "faroeislands",
+    "northern-ireland": "northernireland",
+    "bosnia-and-herzegovina": "bosnia",
+    "republic-of-ireland": "ireland",
+}
+
+# Clubs that legitimately play outside their own country. The guard exists to
+# stop a same-name club abroad being mistaken for ours ("Porto" of Brazil), and
+# for that it has to be strict — but these are the real exceptions, and without
+# them Cardiff and Swansea, who have played in the English pyramid for decades,
+# were rejected as impostors.
+_PLAYS_ABROAD = {
+    ("wales", "england"),          # Cardiff, Swansea, Wrexham
+    ("liechtenstein", "switzerland"),  # Vaduz
+    ("monaco", "france"),
+    ("northernireland", "ireland"),    # Derry City
+    ("england", "scotland"),           # Berwick Rangers
+}
+
+
+def _country_key(name: str) -> str:
+    k = (name or "").strip().lower().replace(" ", "-")
+    return _COUNTRY_ALIASES.get(k, k.replace("-", ""))
+
+
+def _same_country(api_country: str, our_country: str) -> bool:
+    """True when the API's country and ours refer to the same football nation.
+
+    Returns True when either side is unknown: the guard should only ever fire on
+    a POSITIVE contradiction, never on missing information.
+    """
+    a, o = _country_key(api_country), _country_key(our_country)
+    if not a or not o:
+        return True
+    return a == o or (a, o) in _PLAYS_ABROAD or (o, a) in _PLAYS_ABROAD
+
+
 def build_id_cache(our_teams: set[str], season: int, budget: Budget,
                    roster_out: set | None = None, search_missing: bool = True,
                    team_league: dict[str, str] | None = None) -> dict:
@@ -208,7 +257,7 @@ def build_id_cache(our_teams: set[str], season: int, budget: Budget,
             if our:
                 api_country = (t["team"].get("country") or "").strip()
                 our_country = _country_from_history(our)
-                if api_country and our_country and api_country != our_country:
+                if not _same_country(api_country, our_country):
                     print(f"  [skip] {api_name} ({api_country}) is not our "
                           f"{our!r} ({our_country})")
                     continue
@@ -297,6 +346,33 @@ def main() -> None:
             "AND match_date BETWEEN :lo AND :hi"
         ), {"lo": date.today().isoformat(), "hi": hi}).fetchall()
         target = sorted({r[0] for r in rows})
+
+        # ── Staleness order, not alphabetical ─────────────────────────────
+        # `target` used to be walked A→Z against a 1,200-request cap. At ~9
+        # requests per club and ~365 clubs the cap is reached somewhere around
+        # "M", so every club later in the alphabet was never reached — not once,
+        # on any run. Odense, Paide, SJK, Slovan Bratislava and Valur Reykjavik
+        # alerted as "no stored stats" every single morning for exactly that
+        # reason, and the alert was right: the data was never coming.
+        #
+        # Ordering by how stale a club's stats are makes the cap a throttle
+        # instead of a wall. Clubs with nothing stored go first, then the
+        # longest-untouched; a club that got its stats yesterday goes last and
+        # loses nothing, because already-stored fixtures are skipped for free.
+        freshness = {
+            t: d for t, d in db.execute(text(
+                "SELECT team, MAX(match_date) FROM team_match_stats GROUP BY team"
+            )).fetchall()
+        }
+        # "" sorts before any ISO date, so never-seen clubs lead. Within a
+        # bucket the order ROTATES by date instead of staying alphabetical:
+        # ~150 clubs have nothing stored and share the same "" key, so a
+        # stable sort would still walk them A→Z and still stop at the same
+        # place every morning — the wall moved, it did not go away. Seeding
+        # on the date gives every club its turn within a couple of weeks,
+        # and keeps a single run reproducible if it has to be re-run.
+        rot = random.Random(date.today().toordinal())
+        target.sort(key=lambda t: (freshness.get(t) or "", rot.random()))
         # Only clubs playing in a league we sweep can be checked against a
         # roster; a friendly opponent from an untracked division legitimately
         # has an id that appears in no roster.

@@ -6,7 +6,7 @@
  * in a highlighted row above the fixture grid.
  */
 import Link from "next/link";
-import { ProbabilityBar } from "@/components/ProbabilityBar";
+import { ConfidenceLegend, ProbabilityBar } from "@/components/ProbabilityBar";
 import {
   Match,
   leagueFlag,
@@ -59,11 +59,14 @@ export default function TopPicks({ matches, t }: Props) {
 
   return (
     <section className="space-y-3">
-      <div className="flex flex-wrap items-baseline gap-2">
-        <h2 className="font-display text-sm font-extrabold uppercase tracking-[0.14em] text-chalk-3">
-          {t("topPicks.heading")}
-        </h2>
-        <span className="text-xs text-chalk-3">{t("topPicks.subtitle")}</span>
+      <div className="space-y-1.5">
+        <div className="flex flex-wrap items-baseline gap-2">
+          <h2 className="font-display text-sm font-extrabold uppercase tracking-[0.14em] text-chalk-3">
+            {t("topPicks.heading")}
+          </h2>
+          <span className="text-xs text-chalk-3">{t("topPicks.subtitle")}</span>
+        </div>
+        <ConfidenceLegend t={t} />
       </div>
 
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
@@ -81,7 +84,7 @@ export default function TopPicks({ matches, t }: Props) {
             <Link
               key={`${match.league}-${match.id}`}
               href={matchHref(match)}
-              className="card group space-y-2.5 p-4 transition-colors hover:border-line"
+              className="card card-pick group space-y-2.5 p-4 transition-colors"
             >
               {/* Rank sits IN the flow. As an absolutely-positioned badge it
                   landed on top of the kick-off time — a 10–12px overlap that
@@ -114,6 +117,8 @@ export default function TopPicks({ matches, t }: Props) {
                   confidence={p.confidence}
                   tone={pick.tone}
                   emphasis
+                  showRange
+                  t={t}
                 />
               )}
             </Link>
