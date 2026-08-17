@@ -38,3 +38,6 @@ Thumbs.db
 # IDE
 .vscode/
 .idea/
+
+# pytest JUnit report written by the CI summary step
+pytest-report.xml

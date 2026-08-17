@@ -28,7 +28,15 @@ jobs:
       - name: Install dependencies
         run: pip install -r backend/requirements.txt
       - name: Run tests
-        run: python -m pytest backend/tests/ -q
+        run: python -m pytest backend/tests/ -q --junitxml=pytest-report.xml
+
+      # vitest writes a job summary by itself, pytest does not — so the CI page
+      # used to show the frontend's test count and nothing else, as if 66 were
+      # the whole suite. `if: always()` so a failing run still reports which
+      # tests failed instead of only the count it never reached.
+      - name: Test summary
+        if: always()
+        run: python scripts/pytest_summary.py pytest-report.xml
 
   frontend:
     name: Frontend (tsc + build)
