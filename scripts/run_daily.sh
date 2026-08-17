@@ -753,6 +753,18 @@ docker compose exec -T backend \
     python scripts/check_odds_seam.py \
     2>&1 | tee -a "$LOG" || health_alerts=1
 
+# What the site is actually serving. These six assertions need a populated
+# database, so on a CI runner every one of them skips — the job goes green
+# without having checked any of them, and "no fixture is stored twice" was
+# among them on the very day one match reached the accumulator page twice.
+# Here they run against the real data, which is the only place they mean
+# anything. Advisory like the rest: it reports, it never fails the run.
+echo "" >> "$LOG"
+echo "[health] Serving-data assertions …" | tee -a "$LOG"
+docker compose exec -T backend \
+    python -m pytest backend/tests/test_live_data.py -q -rs \
+    2>&1 | tee -a "$LOG" || health_alerts=1
+
 # ── Run summary ──────────────────────────────────────────────────────────────
 # Turn the recorded $LINENO list back into the step headers a human recognises,
 # so "one or more steps failed" names them instead of sending anyone log-diving.

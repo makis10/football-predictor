@@ -26,7 +26,12 @@ frontend/tsconfig.tsbuildinfo
 
 # ML artefacts — NOTE: must be the data path specifically; a bare "models/"
 # also swallowed backend/app/models/ (the SQLAlchemy source code!) and broke CI.
-backend/data/models/
+backend/data/models/*
+# …except the two small JSON maps the test suite reads. Without them CI
+# silently skipped the four club-identity tests and the imputation one —
+# green, but not actually checking the thing that broke twice this month.
+!backend/data/models/club_team_ids.json
+!backend/data/models/impute_medians.json
 *.pkl
 *.joblib
 *.model

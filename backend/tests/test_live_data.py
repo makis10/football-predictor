@@ -142,6 +142,51 @@ def test_no_fixture_is_stored_twice(db):
     assert not dupes, "duplicate fixtures (run dedupe_fixtures.py):\n" + "\n".join(dupes[:10])
 
 
+def test_no_tie_is_stored_on_two_dates(db):
+    """The other shape of the same bug, and the one this test used to miss.
+
+    Keying on the exact date catches two spellings of a club on one day. It does
+    not catch one match held on two DIFFERENT days, which is what a postponement
+    beyond the reschedule window leaves behind, or two feeds disagreeing about
+    the kick-off. On 2026-08-17 six ties were stored that way; PAOK–Levadiakos
+    reached the day's accumulator as two separate legs and its probability was
+    multiplied by itself.
+
+    Ordered pair on purpose: a two-legged cup tie swaps the venue, so its second
+    leg is a different key and not a duplicate. Unsettled only — a played match
+    is the record. Same rule as check_data_completeness, so the daily health
+    report and this test can never disagree.
+    """
+    from backend.app.models.match import Match
+    from scripts.team_resolver import COMMON_ALIASES
+
+    def canon(t: str) -> str:
+        return re.sub(r"[^a-z0-9]", "", COMMON_ALIASES.get(t, t).lower())
+
+    rows = db.query(Match).filter(
+        Match.result.is_(None),
+        Match.match_date >= dt.date.today()).all()
+
+    by_pair: dict[tuple, list] = {}
+    for m in rows:
+        by_pair.setdefault(
+            (m.league, canon(m.home_team), canon(m.away_team)), []).append(m)
+
+    dupes = []
+    for (league, _h, _a), group in by_pair.items():
+        group.sort(key=lambda m: m.match_date)
+        for earlier, later in zip(group, group[1:]):
+            if 1 <= (later.match_date - earlier.match_date).days <= 21:
+                dupes.append(
+                    f"{league} {earlier.home_team} v {earlier.away_team}: "
+                    f"id {earlier.id} on {earlier.match_date} and "
+                    f"id {later.id} on {later.match_date}")
+
+    assert not dupes, (
+        "one match stored on two dates — one of them is stale and will never "
+        "be scored:\n" + "\n".join(dupes[:10]))
+
+
 def test_upcoming_fixtures_mostly_carry_a_usable_prediction(upcoming):
     """Coverage guard.
 
