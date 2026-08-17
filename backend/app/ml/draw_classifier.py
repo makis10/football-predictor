@@ -2,10 +2,38 @@
 Draw-specialist binary classifier.
 
 Draws are the hardest outcome to predict — they're the most stochastic and
-market odds are weakest at separating them from tight wins.  A dedicated binary
-classifier (target = 1 if draw, else 0) trained on draw-specific signals adds
-an orthogonal view that, when blended with the result model's raw draw
-probability, improves draw recall significantly.
+market odds are weakest at separating them from tight wins.  The intent was a
+dedicated binary classifier (target = 1 if draw, else 0) on draw-specific
+signals, giving an orthogonal view that blends with the result model.
+
+⚠ MEASURED 2026-08-15 — it is not orthogonal, and it does not help.
+
+On train.py's own held-out test split (7,249 matches, base draw rate 26.0%),
+replaying the saved artifacts:
+
+    correlation with the result model's calibrated draw prob   0.787
+    AUC — result model's calibrated draw prob                  0.5391
+    AUC — this specialist                                      0.5220
+    AUC of the blend, by alpha:  0.00 → 0.5391   (best)
+                                 0.25 → 0.5379   (what ships today)
+                                 1.00 → 0.5236
+    unconstrained logistic stack of both signals                0.5354
+
+It says nearly the same thing as the result model, slightly worse, so blending
+it in only dilutes: AUC falls monotonically as alpha rises, and the optimum for
+discrimination is alpha = 0.  An unconstrained stack of the two — fitted
+in-sample, so this is generous — still lands below the result model alone.
+
+alpha survives at 0.25 because train.py tunes it on BRIER, which is minimised
+near 0.30 (variance reduction from averaging) while AUC is maximised at 0. The
+two criteria disagree, and Brier is the one that runs.
+
+None of this changes the served predictions: argmax picks ZERO draws at every
+alpha from 0.00 to 1.00, because the first-stage isotonic caps draw at ~0.35
+while lifting mean home to ~0.44. Left in place because it is harmless and
+because removing it would need a retrain; documented so nobody builds on
+"orthogonal view" or "improves draw recall" — both were aspirations, not
+measurements. Reproduce with the AUC sweep, not with Brier.
 
 How it works:
   1. XGBClassifier binary: target = (result == Draw)

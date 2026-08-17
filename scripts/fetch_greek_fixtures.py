@@ -125,14 +125,21 @@ def insert_fixtures(db, fixtures: list[dict]) -> list:
     """Reschedule-aware upsert via the shared helper. Returns new Match objects.
 
     No pruning here: The Odds API feed only lists matches with active odds
-    (~8 days out), so absence from the feed doesn't mean cancelled."""
+    (~8 days out), so absence from the feed doesn't mean cancelled.
+
+    Corroborating, not authoritative. API-Football (step 4b of run_daily) is the
+    schedule of record for GreekSL; this feed exists because the Odds API's
+    Greek key is the one that stays alive out of season. When the two disagree
+    about a date this one defers — it had PAOK–Levadiakos on 22 Aug against
+    API-Football's (correct) 23rd, and because both rows survived, the day's
+    'safe' accumulator listed that single match as two independent legs."""
     # Greek SL is a training league — an unmapped Odds-API spelling becomes a
     # phantom team, so flag it (see the Bayer Leverkusen / AC Milan bug).
     from scripts.team_resolver import warn_unknown_teams
     warn_unknown_teams(fixtures, domestic=True)
 
     from scripts.fixture_upsert import upsert_fixtures
-    new_matches, _ = upsert_fixtures(db, fixtures)
+    new_matches, _ = upsert_fixtures(db, fixtures, authoritative=False)
     return new_matches
 
 

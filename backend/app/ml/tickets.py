@@ -15,10 +15,20 @@ Design rules, and why they are what they are:
     follow naturally, because model and market broadly agree about which games
     are coin-flips — we just never *select* on the gap.
 
-  • **One leg per match.** Two legs off the same fixture are correlated (Over
-    2.5 and GG move together), so multiplying them overstates the ticket's
-    chance. Different fixtures are close enough to independent for the product
-    rule to hold.
+  • **One leg per match — and per TIE, not per row.** Two legs off the same
+    fixture are correlated (Over 2.5 and GG move together), so multiplying them
+    overstates the ticket's chance. Different fixtures are close enough to
+    independent for the product rule to hold.
+
+    Keying that rule on `match_id` alone was not enough. A fixture can be stored
+    twice — two feeds disagreeing about the date, or a postponement that landed
+    outside the reschedule window — and then one real match arrives here as two
+    match_ids with two predictions. On 2026-08-17 the 'safe' slip listed
+    "PAOK v Levadiakos" twice, once per row, and multiplied a 78% by itself as
+    if the two were independent events. The fixture layer has since been fixed
+    (scripts/fixture_upsert.py), but the builder no longer relies on that being
+    true: legs are deduplicated by the TIE — league plus the two club names —
+    so a duplicate row costs a leg, never correctness.
 
   • **Leg count adapts to reach a target total odds.** A slip of five 1.10
     favourites pays 1.6× and nobody wants it. Each profile names the payout it
@@ -231,6 +241,26 @@ PROFILES: tuple[Profile, ...] = (
 # A fixture may carry at most this many of the five tickets. Reusing the single
 # best leg across all of them would mean one bad result loses the whole page.
 MAX_TICKETS_PER_MATCH = 2
+
+
+def tie_key(leg: Leg) -> tuple[str, frozenset]:
+    """What makes two legs the same real match.
+
+    The league plus the unordered pair of clubs, lightly normalised. Unordered
+    because a fixture written before the venue was settled and again afterwards
+    differs only in which side is listed at home — the same reason
+    scripts/dedupe_fixtures.py keys on a frozenset.
+
+    Falls back to the match id when the leg carries no team names (the pure-unit
+    tests construct Legs that way), so two anonymous legs are never merged.
+    """
+    def norm(s: str) -> str:
+        return "".join(ch for ch in (s or "").lower() if ch.isalnum())
+
+    home, away = norm(leg.home_team), norm(leg.away_team)
+    if not home and not away:
+        return (leg.league, frozenset((f"#{leg.match_id}",)))
+    return (leg.league, frozenset((home, away)))
 # Estimated-price legs are allowed but must stay a minority: a slip whose
 # headline payout is mostly our own arithmetic is not a slip anyone can place.
 MAX_ESTIMATED_FRACTION = 0.4
@@ -308,17 +338,22 @@ def build_tickets(
     it did not ask for — the page then shows three tickets and says why, which
     is the truth. Thin midweek cards genuinely do this.
     """
-    used_count: dict[int, int] = {}
-    # match_id → the market that fixture is already tipped at, page-wide.
-    committed: dict[int, str] = {}
+    # Keyed by TIE, not match_id: a match stored under two rows must still count
+    # as one fixture, both within a slip and across the page.
+    used_count: dict[tuple, int] = {}
+    # tie → the market that fixture is already tipped at, page-wide.
+    committed: dict[tuple, str] = {}
     tickets: list[Ticket] = []
 
     for p in profiles:
         pool: list[Leg] = []
         for mid, legs in legs_by_match.items():
-            if used_count.get(mid, 0) >= MAX_TICKETS_PER_MATCH:
+            if not legs:
                 continue
-            best = _best_leg_in_band(legs, p, committed.get(mid))
+            tie = tie_key(legs[0])
+            if used_count.get(tie, 0) >= MAX_TICKETS_PER_MATCH:
+                continue
+            best = _best_leg_in_band(legs, p, committed.get(tie))
             if best:
                 pool.append(best)
         # Highest model probability first — the only ranking signal we trust.
@@ -326,9 +361,15 @@ def build_tickets(
         pool.sort(key=lambda l: (-l.prob, l.match_id))
 
         chosen: list[Leg] = []
+        on_slip: set[tuple] = set()
         for leg in pool:
             if len(chosen) >= p.max_legs:
                 break
+            tie = tie_key(leg)
+            if tie in on_slip:
+                # Same real match reaching us as a second fixture row. Taking
+                # both would multiply one probability by itself.
+                continue
             if leg.estimated:
                 # Checked against the ticket we would END UP with, not the one
                 # we hold, so a 3-leg slip can never come out 2/3 estimated.
@@ -336,13 +377,15 @@ def build_tickets(
                 if would_be > MAX_ESTIMATED_FRACTION * max(len(chosen) + 1, p.min_legs):
                     continue
             chosen.append(leg)
+            on_slip.add(tie)
 
         if len(chosen) < p.min_legs:
             continue   # not enough eligible fixtures — no ticket
 
         tickets.append(Ticket(profile=p.key, legs=chosen))
         for leg in chosen:
-            used_count[leg.match_id] = used_count.get(leg.match_id, 0) + 1
-            committed.setdefault(leg.match_id, leg.market)
+            tie = tie_key(leg)
+            used_count[tie] = used_count.get(tie, 0) + 1
+            committed.setdefault(tie, leg.market)
 
     return tickets

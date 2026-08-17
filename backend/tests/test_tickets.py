@@ -28,6 +28,7 @@ from backend.app.ml.tickets import (
     build_tickets,
     candidate_legs,
     settle_market,
+    tie_key,
 )
 
 REPO = Path(__file__).resolve().parents[2]
@@ -163,6 +164,55 @@ def test_never_two_legs_from_the_same_match():
     for ticket in build_tickets(card):
         ids = [l.match_id for l in ticket.legs]
         assert len(ids) == len(set(ids)), f"{ticket.profile} reuses a fixture"
+
+
+def _named(match_id, home, away, league="GreekSL", market="1", prob=0.60, odds=1.70):
+    return Leg(match_id=match_id, market=market, prob=prob, odds=odds,
+               estimated=False, league=league, home_team=home, away_team=away)
+
+
+def test_one_match_stored_under_two_rows_still_yields_one_leg():
+    """2026-08-17: PAOK–Levadiakos was in the DB twice — The Odds API had it on
+    the 22nd, API-Football on the 23rd — so the 'safe' slip listed it as two
+    legs and multiplied 0.78 by itself. The fixture layer has been fixed, but a
+    duplicate row must cost a leg, never correctness."""
+    card = {
+        1: [_named(1, "PAOK", "Levadeiakos", prob=0.78, odds=1.10)],
+        2: [_named(2, "PAOK", "Levadeiakos", prob=0.78, odds=1.10)],   # same tie
+        3: [_named(3, "Club Brugge", "Cercle Brugge", "Belgium", prob=0.77, odds=1.09)],
+        4: [_named(4, "PSV Eindhoven", "Groningen", "Eredivisie", prob=0.76, odds=1.10)],
+        5: [_named(5, "Hull", "Man United", "EPL", prob=0.75, odds=1.12)],
+        6: [_named(6, "Lens", "Auxerre", "Ligue1", prob=0.74, odds=1.22)],
+        7: [_named(7, "Atalanta", "Sassuolo", "SerieA", prob=0.73, odds=1.12)],
+        8: [_named(8, "Man City", "Bournemouth", "EPL", prob=0.72, odds=1.17)],
+        9: [_named(9, "Fenerbahce", "Lyon", "EL", prob=0.71, odds=1.28)],
+        10: [_named(10, "Cambuur", "Feyenoord", "Eredivisie", prob=0.70, odds=1.28)],
+        11: [_named(11, "Tirol", "Salzburg", "Austria", prob=0.69, odds=1.30)],
+    }
+    for ticket in build_tickets(card):
+        ties = [tie_key(l) for l in ticket.legs]
+        assert len(ties) == len(set(ties)), (
+            f"{ticket.profile} carries the same match twice: "
+            f"{[(l.home_team, l.away_team) for l in ticket.legs]}"
+        )
+
+
+def test_the_same_tie_is_one_fixture_however_it_is_written():
+    """Venue undecided when the row was first written, settled afterwards — the
+    same reason dedupe_fixtures.py keys on an unordered pair."""
+    assert tie_key(_named(1, "PAOK", "Levadeiakos")) == \
+           tie_key(_named(2, "Levadeiakos", "PAOK"))
+    assert tie_key(_named(1, "PAOK", "Levadeiakos")) != \
+           tie_key(_named(2, "PAOK", "Panathinaikos"))
+    # Same clubs, different competition, is a different match.
+    assert tie_key(_named(1, "PAOK", "Levadeiakos")) != \
+           tie_key(_named(2, "PAOK", "Levadeiakos", league="GreekCup"))
+
+
+def test_legs_without_team_names_are_never_merged():
+    """The unit tests above build Legs with no clubs on them; falling back to
+    the match id keeps them distinct instead of collapsing the whole card."""
+    assert tie_key(_leg(1)) != tie_key(_leg(2))
 
 
 def test_a_match_is_capped_across_tickets():
@@ -363,3 +413,56 @@ def test_every_profile_has_both_translations():
         for suffix in ("", ".desc"):
             key = f'"tickets.profile.{p.key}{suffix}":'
             assert i18n.count(key) == 2, f"{key} needs an EN and an EL entry"
+
+
+def test_history_is_not_limited_to_settled_slips():
+    """A slip runs for up to seven days, so a settled-only history is empty for
+    most of a week — on 2026-08-12, with three days of slips on file, not one had
+    finished. The page then reads "no history" when the truth is "still running",
+    which is the opposite of the receipts it is meant to show."""
+    src = (REPO / "backend/app/routers/tickets.py").read_text(encoding="utf-8")
+    history = src[src.index("def settled_tickets("):]
+    assert "Ticket.outcome.isnot(None)" not in history, (
+        "history must include open slips, not just graded ones"
+    )
+    # Today's card is already the top of the page; history is what came before.
+    # Asserted on BEHAVIOUR, not on the literal expression: the window gained an
+    # offset for paging (`< until`, where until = today - offset_days), and a
+    # string match on `< today` failed while the rule it protects was intact.
+    assert "Ticket.generated_for <" in history, "history must exclude today's slips"
+    assert "generated_for >=" in history, "history must be bounded at the far end too"
+
+    # And the boundary itself, exercised rather than read: with no offset the
+    # upper bound has to BE today.
+    import re
+    assert re.search(r"until\s*=\s*today\s*-\s*timedelta\(days=offset_days\)", history), (
+        "the upper bound must collapse to today when offset_days is 0"
+    )
+
+
+def test_results_poll_grades_ticket_legs():
+    """Settlement used to run only in the daily job, so a leg whose match had
+    finished stayed ungraded for up to ~24h and the page showed stale progress
+    (verified: seven such legs on 2026-08-12). The 2-hourly poll that writes the
+    scores must grade them too."""
+    sh = (REPO / "scripts/run_results_poll.sh").read_text(encoding="utf-8")
+    assert "generate_tickets.py --settle-only" in sh
+    # --settle-only must never cut a fresh card: the slips are frozen on purpose.
+    assert "--replace" not in sh
+
+
+def test_history_ui_has_both_translations():
+    """A missing key renders the raw key to the reader in both languages."""
+    i18n = (REPO / "frontend/src/lib/i18n.ts").read_text(encoding="utf-8")
+    for key in ("title", "body", "count", "progress", "legend", "dead"):
+        needle = f'"tickets.history.{key}":'
+        assert i18n.count(needle) == 2, f"{needle} needs an EN and an EL entry"
+
+
+def test_outcome_type_admits_void():
+    """generate_tickets.py writes outcome="void" when a fixture on the slip was
+    deleted, and the backend types it as a bare Optional[str], so it reaches the
+    browser. While the TS union omitted it, `outcome === "void"` was a tsc error
+    and an exhaustive switch silently dropped the case."""
+    api = (REPO / "frontend/src/lib/api.ts").read_text(encoding="utf-8")
+    assert '"won" | "lost" | "void" | null' in api

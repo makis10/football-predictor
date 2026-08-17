@@ -23,6 +23,8 @@ import { useEffect, useId, useRef, useState } from "react";
 export interface NavItem {
   href: string;
   label: string;
+  /** Sub-items. Desktop shows a dropdown; the mobile drawer indents them. */
+  children?: { href: string; label: string }[];
 }
 
 export default function SiteNav({
@@ -35,13 +37,27 @@ export default function SiteNav({
   closeLabel: string;
 }) {
   const [open, setOpen] = useState(false);
+  const [menu, setMenu] = useState<string | null>(null);
   const pathname = usePathname();
   const panelId = useId();
   const triggerRef = useRef<HTMLButtonElement>(null);
 
-  // Navigating away must close the drawer — otherwise tapping a link leaves it
+  // Navigating away must close both — otherwise tapping a link leaves the panel
   // covering the page it just loaded.
-  useEffect(() => setOpen(false), [pathname]);
+  useEffect(() => {
+    setOpen(false);
+    setMenu(null);
+  }, [pathname]);
+
+  // A dropdown left open behind a click elsewhere is a stuck menu.
+  useEffect(() => {
+    if (!menu) return;
+    const onDown = (e: MouseEvent) => {
+      if (!(e.target as HTMLElement).closest("[data-nav-group]")) setMenu(null);
+    };
+    document.addEventListener("mousedown", onDown);
+    return () => document.removeEventListener("mousedown", onDown);
+  }, [menu]);
 
   // Esc closes and returns focus to the trigger, so keyboard users are not
   // stranded inside a panel they cannot see a way out of.
@@ -73,11 +89,53 @@ export default function SiteNav({
     <>
       {/* Desktop: inline. Hidden below md, where it would force the overflow. */}
       <nav className="ml-3 hidden items-center gap-1 md:flex">
-        {items.map((it) => (
-          <Link key={it.href} href={it.href} className={linkClass(it.href)}>
-            {it.label}
-          </Link>
-        ))}
+        {items.map((it) =>
+          it.children?.length ? (
+            <div key={it.href} className="relative" data-nav-group>
+              {/* The parent still navigates on click — a section with a submenu
+                  is a place, not just a folder. The caret opens the list. */}
+              <div className="flex items-center">
+                <Link href={it.href} className={linkClass(it.href)}>
+                  {it.label}
+                </Link>
+                <button
+                  type="button"
+                  onClick={() => setMenu(menu === it.href ? null : it.href)}
+                  aria-expanded={menu === it.href}
+                  aria-label={`${it.label} — ${openLabel}`}
+                  className="-ml-1 rounded-lg px-1 py-1.5 text-chalk-3 transition-colors hover:text-chalk"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
+                       stroke="currentColor" strokeWidth="3" strokeLinecap="round"
+                       strokeLinejoin="round" aria-hidden
+                       className={menu === it.href ? "rotate-180 transition-transform" : "transition-transform"}>
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                </button>
+              </div>
+
+              {menu === it.href && (
+                <div className="card card-flat absolute left-0 top-full z-30 mt-1 w-56 p-1">
+                  {it.children.map((c) => (
+                    <Link
+                      key={c.href}
+                      href={c.href}
+                      onClick={() => setMenu(null)}
+                      className="block rounded-md px-3 py-2 text-sm text-chalk-2
+                                 transition-colors hover:bg-ink-700 hover:text-chalk"
+                    >
+                      {c.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+          ) : (
+            <Link key={it.href} href={it.href} className={linkClass(it.href)}>
+              {it.label}
+            </Link>
+          ),
+        )}
       </nav>
 
       {/* Mobile trigger */}
@@ -118,9 +176,23 @@ export default function SiteNav({
       >
         <nav className="mx-auto flex max-w-6xl flex-col gap-0.5 px-4 py-3">
           {items.map((it) => (
-            <Link key={it.href} href={it.href} className={linkClass(it.href, true)}>
-              {it.label}
-            </Link>
+            <div key={it.href}>
+              <Link href={it.href} className={linkClass(it.href, true)}>
+                {it.label}
+              </Link>
+              {/* No collapsing on mobile: the drawer is already a disclosure,
+                  and nesting a second one costs a tap to reach two links. */}
+              {it.children?.map((c) => (
+                <Link
+                  key={c.href}
+                  href={c.href}
+                  className="ml-3 block rounded-lg border-l border-line px-3 py-2 text-sm
+                             text-chalk-2 transition-colors hover:bg-ink-700 hover:text-chalk"
+                >
+                  {c.label}
+                </Link>
+              ))}
+            </div>
           ))}
         </nav>
       </div>

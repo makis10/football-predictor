@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 # ──────────────────────────────────────────────────────────────────────────────
-# Odds-movement snapshot poller — runs every 3 hours via launchd.
+# Odds-movement snapshot poller — runs every 8 hours via launchd
+# (00:00 / 08:00 / 16:00). Which matches it actually re-prices on a given
+# run is decided per match by the tiers in poll_odds.py.
 #
 # Stores one odds_history row per upcoming match per cycle; the analysis page
 # diffs the last two snapshots to draw the "odds moved" arrows and stats derives

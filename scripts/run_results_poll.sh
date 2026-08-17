@@ -72,8 +72,23 @@ if [ "${WC_ACTIVE:-0}" = "1" ]; then
         >> "$LOG" 2>&1 || true
 fi
 
+# Grade the accumulator legs against the scores we just filled in. Settlement
+# also runs inside the daily job, but that is once a day — matches finish all
+# evening, so a slip's progress (and its final won/lost) sat up to ~24 h behind
+# the results on the very same page. Verified on 2026-08-12: seven legs whose
+# fixtures had finished were still ungraded. --settle-only never cuts a new
+# card, so this cannot disturb the frozen slips.
+docker compose exec -T backend \
+    python scripts/generate_tickets.py --settle-only \
+    >> "$LOG" 2>&1 || true
+
 # Refresh the dashboard so newly-settled matches appear immediately.
 curl -s -X POST "${_ADMIN_HDR[@]}" http://localhost:8000/stats/cache/clear >> "$LOG" 2>&1 || true
+
+# The tickets page reads a 5-minute Redis snapshot; drop it so a leg that just
+# graded shows up now rather than after the TTL.
+docker compose exec -T redis redis-cli --scan --pattern 'tickets:*' 2>/dev/null \
+    | tr -d '\r' | xargs -r docker compose exec -T redis redis-cli DEL >> "$LOG" 2>&1 || true
 
 # Dead-man's-switch heartbeat for the 2-hour poll (separate monitor from the
 # daily job). Set HEARTBEAT_POLL_URL in .env to enable; no-op when unset.

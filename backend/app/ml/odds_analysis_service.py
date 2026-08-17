@@ -37,6 +37,22 @@ ODDS_API_KEY   = os.getenv("ODDS_API_KEY", "")
 GROQ_API_KEY   = os.getenv("GROQ_API_KEY", "")
 API_SPORTS_KEY = os.getenv("API_SPORTS_KEY", "")  # api-football.com
 
+
+def _redact_key(exc: object) -> str:
+    """An exception message, with our credentials taken out of it.
+
+    requests puts the full request URL into the text of an HTTPError, and The
+    Odds API takes its key as a QUERY PARAMETER — so every failed call wrote the
+    live key into the log in plaintext. The month's credits ran out on
+    2026-08-17 and each of the 23 leagues logged it again, once per poll, into a
+    file that gets read, tailed and pasted around.
+    """
+    text = str(exc)
+    for secret in (ODDS_API_KEY, GROQ_API_KEY, API_SPORTS_KEY):
+        if secret:
+            text = text.replace(secret, "***")
+    return text
+
 # llama-3.3-70b-versatile is deprecated on GroqCloud (decommission 2026-08-16).
 # Default to its recommended replacement; override with the GROQ_MODEL env var
 # (e.g. "qwen/qwen3.6-27b" for a faster/cheaper option). Verify availability at
@@ -1043,10 +1059,25 @@ _ALIASES: dict[str, list[str]] = {
     "Newcastle":       ["newcastle"],
     "West Ham":        ["westham"],
     "Ath Bilbao":      ["athleticclub", "athleticbilbao"],
-    "Ath Madrid":      ["atleticomadrid", "atletico"],
+    # "atletico" was here until 2026-08-16 and had to go: this table is also
+    # walked UNDIRECTED by scripts/team_resolver.build_resolver, which asks
+    # every club whether an incoming name matches any of its aliases. A bare
+    # "atletico" claimed Osasuna, Paranaense, Nacional, Baleares, Sanluqueño,
+    # Tucumán, San Luis, Ottawa, Astorga, Tordesillas and Cristo Atlético.
+    # One of those was already written: "Ath Madrid v Cultural Leonesa" was
+    # really Atlético Astorga v Cultural Leonesa.
+    # Nothing is lost here: `_teams_match`'s own fallback already accepts an
+    # odds feed that says just "Atletico" via startswith(alias[:8]), and
+    # "atleticomadrid" covers the full spelling.
+    "Ath Madrid":      ["atleticomadrid"],
     "Barça":           ["barcelona", "fcbarcelona"],
     "Bayern Munich":   ["bayernmunchen", "bayernmunich", "fcbayern"],
-    "Ein Frankfurt":   ["eintrachtfrankfurt", "eintracht"],
+    # "eintracht" removed 2026-08-16 — a truncation of the entry beside it,
+    # and the resolver walks this table undirected. It claimed Eintracht
+    # Braunschweig, Trier and Norderstedt. One was already written: our
+    # "Ein Frankfurt v Southampton" (24 Jul) is really Braunschweig v
+    # Southampton, so Frankfurt carries a defeat it never played.
+    "Ein Frankfurt":   ["eintrachtfrankfurt"],
     "B. Dortmund":     ["borussiadortmund", "bvb"],
     "M'gladbach":      ["monchengladbach", "gladbach"],
     "Paris SG":        ["parissaint", "parissg", "psg"],
@@ -1062,7 +1093,9 @@ _ALIASES: dict[str, list[str]] = {
     # Greek Super League — The Odds API uses different names / spellings
     "Larisa":          ["ael"],           # AE Larissa → "AEL" on The Odds API
     "Levadeiakos":     ["levadiakos"],    # spelling: Levad-ei-akos vs Levad-i-akos
-    "Volos NFC":       ["volosfc", "volos"],  # API drops the "N" in NFC
+    # "volos" removed 2026-08-16: same truncation shape. "volosfc" still
+    # covers the API spelling, and our own name matches on an exact slug.
+    "Volos NFC":       ["volosfc"],  # API drops the "N" in NFC
     "Napoli":          ["sscnapoli"],
     "Juventus":        ["juventusfc"],
     "Fiorentina":      ["acffiorentina"],
@@ -1239,7 +1272,8 @@ def _fetch_league_games_cached(league: str) -> list:
             log.info(f"[odds] Fetched {len(body)} games for {league} "
                      f"via {sport_key}  (quota remaining: {remaining})")
         except Exception as e:
-            log.warning(f"[odds] League fetch failed for {league} ({sport_key}): {e}")
+            log.warning(f"[odds] League fetch failed for {league} ({sport_key}): "
+                        f"{_redact_key(e)}")
             continue
         if body:
             _ACTIVE_SPORT_KEY[league] = sport_key
@@ -1342,7 +1376,7 @@ def _fetch_event_btts(event_id: str, sport_key: str) -> dict:
     return result
 
 
-def fetch_all_league_odds(league: str) -> list:
+def fetch_all_league_odds(league: str, *, with_btts: bool = True) -> list:
     """
     Fetch odds for ALL upcoming matches in a league with ONE API call.
 
@@ -1359,8 +1393,19 @@ def fetch_all_league_odds(league: str) -> list:
 
     Used by compute_predictions.py to inject live bookmaker odds into the
     feature vector for upcoming matches — the two most important ML features.
-    BTTS is fetched via a per-event call (cached 30min) since the bulk endpoint
-    does not support the btts market.
+
+    The 1×2 / totals batch is ONE request for the whole league. BTTS is not
+    available on that endpoint (422 — it is an "additional market"), so it costs
+    a SEPARATE request PER GAME.  That is the single most expensive thing this
+    module does: a league returning 40 games costs 2 credits for the batch and
+    40 for its BTTS.
+
+    `with_btts=False` skips that entirely. poll_odds.py passes it because
+    `odds_history` has no BTTS column — every one of those credits was fetched,
+    parsed and then dropped on the floor, roughly 1,100 a day, which is what
+    exhausted a 20,000/month plan by the 13th. Callers that actually read
+    fair_probs["btts_*"] (compute_predictions) keep the default.
+
     Returns [] if API key missing, league unsupported, or request fails.
     """
     games = _fetch_league_games_cached(league)
@@ -1375,7 +1420,7 @@ def fetch_all_league_odds(league: str) -> list:
 
         # Fetch BTTS per-event (cached 30min — same cache as analysis page)
         event_id = game.get("id", "")
-        if event_id and sport_key:
+        if with_btts and event_id and sport_key:
             btts = _fetch_event_btts(event_id, sport_key)
             if btts:
                 fp["btts_yes"] = btts.get("fair_btts_yes")

@@ -178,16 +178,27 @@ def generate(db, *, replace: bool) -> tuple[int, int]:
               f"pass --replace to rebuild. Nothing to do.")
         return len(existing), existing[0].horizon_days
     if existing:
-        locked = [t for t in existing if t.outcome is not None]
+        # A VOID is not a result. The rule being protected here is "never
+        # rewrite a graded ticket", because turning a lost slip into a won one
+        # launders the record — but a void was never won or lost: it is what we
+        # do when a leg's fixture disappears underneath it (a duplicate row
+        # merged away, a cancelled match). Treating it as locked meant a data
+        # repair could leave the day showing a voided slip and no replacement,
+        # which is exactly what happened on 2026-08-17 after PAOK–Levadiakos
+        # was collapsed back into one fixture.
+        locked = [t for t in existing if t.outcome not in (None, "void")]
         if locked:
             # Should not happen the same day, but if it does, refuse rather
             # than overwrite a graded result.
             print(f"  [skip] {len(locked)} of today's tickets are already "
                   f"settled — refusing to rebuild the day.")
             return len(existing), existing[0].horizon_days
+        voided = sum(1 for t in existing if t.outcome == "void")
         db.execute(delete(Ticket).where(Ticket.generated_for == today))
         db.commit()
-        print(f"  Cleared {len(existing)} open ticket(s) for {today}.")
+        print(f"  Cleared {len(existing)} ticket(s) for {today}"
+              + (f" ({voided} voided by a deleted fixture)" if voided else "")
+              + ".")
 
     best: tuple[list, int, int] = ([], HORIZON_STEPS[0], 0)
     for horizon in HORIZON_STEPS:

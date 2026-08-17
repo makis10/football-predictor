@@ -1,8 +1,13 @@
+"use client";
+
 /**
  * One suggested accumulator, drawn as a betting slip.
  *
- * Server component — takes `t` rather than calling useT(), so the page can
- * render it during SSR like every other card in the app.
+ * Client component, and `t` comes from context rather than a prop. It has to
+ * be: TicketHistory opens a slip in a modal, and a server component cannot be
+ * rendered inside a client one. The alternative was a second full-slip layout
+ * living in the modal — the "same concept implemented twice with nothing
+ * asserting they agree" shape this codebase has been bitten by before.
  *
  * The three footer numbers are deliberately shown together: a payout with no
  * probability beside it is the thing that makes accumulators look better than
@@ -17,8 +22,9 @@ import {
   leagueFlag,
   leagueLabel,
   marketLabel,
+  matchHref,
 } from "@/lib/api";
-import type { TFunc } from "@/lib/i18n";
+import { useT } from "@/components/LanguageProvider";
 
 /* Risk rung, 1 (steadiest) to 5 (wildest).
    NOT expressed as a hue. In this system green means "it landed" and amber
@@ -49,7 +55,7 @@ function RungMeter({ rung }: { rung: number }) {
   );
 }
 
-function LegRow({ leg, t }: { leg: TicketLeg; t: TFunc }) {
+function LegRow({ leg, t }: { leg: TicketLeg; t: (k: string, v?: Record<string, string | number>) => string }) {
   const kickoff = formatKickoff(leg.match_date, leg.kickoff_time);
   const settled = leg.won !== null;
   const score =
@@ -80,7 +86,11 @@ function LegRow({ leg, t }: { leg: TicketLeg; t: TFunc }) {
         </p>
 
         <Link
-          href={`/matches/${leg.match_id}`}
+          /* matchHref, not a hardcoded /matches/ — national fixtures live at
+             /national/{id} and this would 404 on them. It reads as safe today
+             only because the international calendar is empty; it would have
+             broken the moment qualifiers resume. */
+          href={matchHref({ id: leg.match_id, league: leg.league } as Parameters<typeof matchHref>[0])}
           className="block text-sm text-chalk hover:text-win transition-colors truncate"
         >
           {leg.home_team} <span className="text-chalk-3">v</span> {leg.away_team}
@@ -108,7 +118,8 @@ function LegRow({ leg, t }: { leg: TicketLeg; t: TFunc }) {
   );
 }
 
-export default function TicketCard({ ticket, t }: { ticket: Ticket; t: TFunc }) {
+export default function TicketCard({ ticket }: { ticket: Ticket }) {
+  const t = useT();
   const rung = PROFILE_RUNG[ticket.profile] ?? 3;
   const estimated = ticket.legs.filter((l) => l.estimated).length;
 

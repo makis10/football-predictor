@@ -268,6 +268,23 @@ COMMON_ALIASES: dict[str, str] = {
     "RKC Waalwijk": "Waalwijk",
     "Sheffield Wednesday": "Sheffield Weds",
 
+    # ── 2026-08-17: football-data.org's Championship spellings ───────────────
+    #
+    # `update_results.py` matched its feed's names against ours with `==` and no
+    # alias layer, so every one of these silently failed and the fixture kept
+    # result=NULL for good — the CSV backfill that normally covers for it has no
+    # 2026/27 Championship file yet. Found because a reader saw Bolton v Preston
+    # sitting unsettled on three of his own accumulator slips while the real
+    # score (2-1) had been available from two sources for two days.
+    #
+    # "Lincoln City" → "Lincoln" is safe and is NOT the trap in this module's
+    # header: that warns about "Lincoln UNITED", a different club. Lincoln City
+    # is ours.
+    "Preston NE":     "Preston",
+    "Lincoln City":   "Lincoln",
+    "Derby County":   "Derby",
+    "Sheffield Utd":  "Sheffield United",
+
     # ── 2026-07-30 league expansion (Belgium, Turkey, Scotland, Denmark,
     # Sweden, Norway, Poland, Austria, Switzerland, Romania, Ireland, Finland).
     # These live here rather than in the fetcher that needed them first: the
@@ -412,6 +429,19 @@ _AFFIXES = {
     "ff", "ifk",
 }
 
+# LONGEST FIRST, and a tuple rather than the set above — the strip below takes
+# the FIRST affix that fits, so iteration order decides the answer.
+#
+# Iterating the set made this function non-deterministic ACROSS PROCESSES
+# (Python randomises string hashing per run), and the affix table contains
+# nested pairs: fc/afc/cfc, fk/ifk/mfk, sc/ssc, if/ifk, as/ss. "afc" strips to
+# "" via "afc" → True, or to "a" via "fc" → False, purely on which the set
+# happened to yield first. Measured 2026-08-16 over five runs of the same
+# input: "AFC Mansfield" resolved to Mansfield three times and to None twice,
+# "IFK Trelleborg" to Trelleborg three times and None twice — so a club's
+# fixtures could be ingested one day and silently skipped the next.
+_AFFIXES_ORDERED = tuple(sorted(_AFFIXES, key=lambda a: (-len(a), a)))
+
 
 def _leftover_is_affixes_only(leftover: str) -> bool:
     """True when what remains is just corporate noise ("1fc", "sc", "1899").
@@ -425,7 +455,7 @@ def _leftover_is_affixes_only(leftover: str) -> bool:
         changed = False
         if rest.isdigit():
             return True
-        for a in _AFFIXES:
+        for a in _AFFIXES_ORDERED:
             if rest.startswith(a):
                 rest, changed = rest[len(a):], True
                 break
@@ -480,6 +510,22 @@ def build_resolver(known_teams: set[str], team_map: dict[str, str] | None = None
                 if _leftover_is_affixes_only(api_slug.replace(team_slug, "", 1)):
                     best = max(best, 50.0 + len(team_slug))
             # (3) Curated aliases ("olympiquelyonnais" → Lyon).
+            #
+            #     Bare containment, deliberately — NOT rule (2)'s leftover
+            #     guard. An alias is a whole club identity, and the rest of the
+            #     official name trails off it: "tottenham" + "hotspur",
+            #     "wolverhampton" + "wanderers", "parissaint" + "germain".
+            #     Requiring the leftover to be corporate noise was tried on
+            #     2026-08-16 and silently unresolved Spurs, Wolves and PSG.
+            #
+            #     The safety therefore lives in the alias TABLE, not here: an
+            #     alias must identify exactly one club. `_ALIASES["Ath Madrid"]`
+            #     used to carry the bare word "atletico", which is a substring
+            #     of most of the Spanish-speaking football world — Osasuna,
+            #     Paranaense, Nacional, Baleares, Tucumán, Ottawa and the rest
+            #     all scored 50 + len("atletico") and won outright. That entry
+            #     is gone, and test_alias_containment.py fails if any alias
+            #     ever again matches two different clubs.
             for alias in _ALIASES.get(team, []):
                 if len(alias) >= 5 and alias in api_slug:
                     best = max(best, 50.0 + len(alias))

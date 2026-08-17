@@ -22,7 +22,11 @@ const CSS = path.join(SRC, "app/globals.css");
 // opengraph-image renders to a PNG through satori, which has no document and
 // therefore no CSS custom properties: `var(--color-…)` resolves to nothing and
 // the social card comes out black. Its literals mirror the dark theme by hand.
-const ALLOWED = /Chart|Calibration|ProjectionHistory|opengraph-image/;
+// global-error renders when the ROOT LAYOUT itself threw, so globals.css was
+// never applied and `var(--color-…)` resolves to nothing — the one file that
+// must inline its colours or show white-on-white to someone already having a
+// bad time.
+const ALLOWED = /Chart|Calibration|ProjectionHistory|opengraph-image|global-error/;
 
 // Third-party brand marks. PayPal's blue is PayPal's blue on a white page too,
 // and Google's "G" is a fixed four-colour logo — tokenising either would be

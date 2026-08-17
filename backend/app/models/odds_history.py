@@ -10,7 +10,12 @@ from backend.app.database import Base
 
 
 class OddsHistory(Base):
-    """One odds snapshot per poll cycle per match (every 3 hours)."""
+    """One odds snapshot per poll cycle per match.
+
+    Cadence is tiered, not fixed — poll_odds.py re-prices a match every run
+    inside 2 days of kickoff, daily inside 5, and every other day beyond that.
+    Note there is no BTTS column here: that market costs one request PER GAME
+    on The Odds API, so the poller deliberately does not fetch it."""
     __tablename__ = "odds_history"
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True)

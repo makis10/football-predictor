@@ -1375,7 +1375,13 @@ export interface Ticket {
   total_odds: number;
   combined_prob: number;
   num_legs: number;
-  outcome: "won" | "lost" | null;
+  /** null while any leg is unplayed. "void" when a fixture on the slip was
+   *  deleted after it was cut, so it can never be graded honestly — the
+   *  settlement script writes it (generate_tickets.py) and the backend types it
+   *  as a bare Optional[str], so it reaches the browser. Omitting it here made
+   *  `outcome === "void"` a tsc error and an exhaustive switch silently drop
+   *  the case. */
+  outcome: "won" | "lost" | "void" | null;
   legs: TicketLeg[];
 }
 
@@ -1405,16 +1411,22 @@ export async function getTickets(): Promise<TicketsResponse> {
   return res.json() as Promise<TicketsResponse>;
 }
 
-/**
- * SERVER-SIDE ONLY. The browser proxy is deny-by-default (see
- * app/api/proxy/[...path]/route.ts), so calling this from a "use client"
- * component returns 401 for signed-out visitors. Fetch it in a server
- * component, like /tickets does.
- */
-export async function getSettledTickets(days = 30): Promise<{ tickets: Ticket[] }> {
-  const res = await fetch(`${API_URL}/tickets/history?days=${days}`, {
-    cache: "no-store",
-  });
+/** Earlier slips, newest first — the receipts behind the track record.
+ *
+ * Returns open ones too, not just graded: a slip runs for up to seven days, so
+ * mid-week the settled-only view is empty even though several are live. The
+ * per-leg `won` field carries the progress.
+ *
+ * (A previous getSettledTickets() was deleted here as dead weight when no page
+ * called the endpoint. The history section is that page.) */
+export async function getTicketHistory(
+  days = 30,
+  offsetDays = 0,
+): Promise<{ tickets: Ticket[] }> {
+  const res = await fetch(
+    `${API_URL}/tickets/history?days=${days}&offset_days=${offsetDays}`,
+    { cache: "no-store" },
+  );
   if (!res.ok) throw new Error(`Ticket history → ${res.status}`);
   return res.json() as Promise<{ tickets: Ticket[] }>;
 }
@@ -1445,5 +1457,37 @@ export function marketLabel(
     case "O3.5": return t("ticket.market.over", { line: "3.5" });
     case "U3.5": return t("ticket.market.under", { line: "3.5" });
     default:     return market;
+  }
+}
+
+/**
+ * All-time accuracy for the footer disclaimer.
+ *
+ * The footer used to hardcode "~52% result / ~58% O/U" in the translation
+ * table. Live it was 50.6% / 56.7%, and 47.8% / 55.7% over the last 30 days —
+ * the site was advertising itself as better than it is, on the one project
+ * whose entire pitch is not doing that. A hardcoded number can only ever drift
+ * in the flattering direction, because nobody edits it when accuracy falls.
+ *
+ * Revalidated hourly rather than per-request: it renders on every page, and the
+ * number moves a fraction of a point a day. Returns null on failure, and the
+ * caller then omits the claim entirely — no figure is better than a stale one.
+ */
+export async function getFooterAccuracy(): Promise<
+  { result: number; goals: number; n: number } | null
+> {
+  try {
+    const res = await fetch(`${API_URL}/stats`, { next: { revalidate: 3600 } });
+    if (!res.ok) return null;
+    const s = (await res.json()) as StatsResponse;
+    const a = s.rolling?.all_time;
+    if (!a || !a.total) return null;
+    return {
+      result: Math.round(a.result_accuracy * 100),
+      goals: Math.round(a.goals_accuracy * 100),
+      n: a.total,
+    };
+  } catch {
+    return null;
   }
 }

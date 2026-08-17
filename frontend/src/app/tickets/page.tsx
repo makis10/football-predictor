@@ -6,9 +6,12 @@
  * a finished slip as still open.
  */
 import type { Metadata } from "next";
-import { formatDate, getTickets } from "@/lib/api";
+import { formatDate, getTicketHistory, getTickets, type Ticket } from "@/lib/api";
 import TicketCard from "@/components/TicketCard";
+import TicketHistory from "@/components/TicketHistory";
 import { getServerT } from "@/lib/i18n-server";
+import { getSession } from "@/lib/auth";
+import Link from "next/link";
 
 export const dynamic = "force-dynamic";
 
@@ -22,6 +25,7 @@ export const metadata: Metadata = {
 
 export default async function TicketsPage() {
   const t = await getServerT();
+  const session = await getSession();
 
   let data;
   try {
@@ -38,6 +42,15 @@ export default async function TicketsPage() {
 
   const { tickets, record, overall } = data;
   const hasRecord = Boolean(overall && overall.settled > 0);
+
+  // The receipts. Best-effort: a failure here must not take down today's card,
+  // which is the reason the page exists.
+  let history: Ticket[] = [];
+  try {
+    history = (await getTicketHistory(30)).tickets;
+  } catch {
+    /* leave empty — TicketHistory renders nothing */
+  }
 
   return (
     <div className="space-y-8">
@@ -80,7 +93,7 @@ export default async function TicketsPage() {
         <>
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 items-start">
             {tickets.map((ticket) => (
-              <TicketCard key={ticket.id} ticket={ticket} t={t} />
+              <TicketCard key={ticket.id} ticket={ticket} />
             ))}
           </div>
           {data.profiles_built < data.profiles_total && (
@@ -92,6 +105,18 @@ export default async function TicketsPage() {
             </p>
           )}
         </>
+      )}
+
+      {/* Every leg links to a match page, which is gated. Saying so here costs
+          one line and stops the reader discovering it by hitting a wall after
+          they were interested enough to click. */}
+      {!session && tickets.length > 0 && (
+        <p className="text-xs text-chalk-3">
+          {t("tickets.gate.note")}{" "}
+          <Link href="/register" className="text-chalk-2 underline underline-offset-2 hover:text-chalk">
+            {t("tickets.gate.cta")}
+          </Link>
+        </p>
       )}
 
       {/* Track record */}
@@ -133,17 +158,17 @@ export default async function TicketsPage() {
                     <td className="px-3 py-2 text-chalk-2">
                       {t(`tickets.profile.${r.profile}`)}
                     </td>
-                    <td className="px-3 py-2 text-right font-mono text-chalk-2 tabular-nums">
+                    <td className="px-3 py-2 text-right font-data text-chalk-2">
                       {r.settled}
                     </td>
-                    <td className="px-3 py-2 text-right font-mono text-chalk-2 tabular-nums">
+                    <td className="px-3 py-2 text-right font-data text-chalk-2">
                       {r.won}
                     </td>
-                    <td className="px-3 py-2 text-right font-mono text-chalk-2 tabular-nums">
+                    <td className="px-3 py-2 text-right font-data text-chalk-2">
                       {Math.round(r.hit_rate * 100)}%
                     </td>
                     <td
-                      className={`px-3 py-2 text-right font-mono tabular-nums ${
+                      className={`px-3 py-2 text-right font-data ${
                         r.roi_pct >= 0 ? "text-win" : "text-lose"
                       }`}
                     >
@@ -157,17 +182,17 @@ export default async function TicketsPage() {
                     <td className="px-3 py-2 text-chalk-2">
                       {t("tickets.record.overall")}
                     </td>
-                    <td className="px-3 py-2 text-right font-mono text-chalk-2 tabular-nums">
+                    <td className="px-3 py-2 text-right font-data text-chalk-2">
                       {overall.settled}
                     </td>
-                    <td className="px-3 py-2 text-right font-mono text-chalk-2 tabular-nums">
+                    <td className="px-3 py-2 text-right font-data text-chalk-2">
                       {overall.won}
                     </td>
-                    <td className="px-3 py-2 text-right font-mono text-chalk tabular-nums">
+                    <td className="px-3 py-2 text-right font-data text-chalk">
                       {Math.round(overall.hit_rate * 100)}%
                     </td>
                     <td
-                      className={`px-3 py-2 text-right font-mono tabular-nums ${
+                      className={`px-3 py-2 text-right font-data ${
                         overall.roi_pct >= 0 ? "text-win" : "text-lose"
                       }`}
                     >
@@ -181,6 +206,11 @@ export default async function TicketsPage() {
           </div>
         )}
       </section>
+
+      {/* The receipts behind that table — every earlier slip, settled or still
+          running. Rendered after the record so the aggregate reads first and
+          the individual slips back it up. */}
+      <TicketHistory tickets={history} />
     </div>
   );
 }

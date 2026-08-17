@@ -617,19 +617,29 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
                 </div>
               )}
 
-              {/* Green — value bet suggestions (up to 2) */}
+              {/* The model's pick.
+                  This said "Value Bet" until 2026-08-11, and had for months
+                  after the thing it named was removed. `suggested_market` is
+                  plain argmax now — the outcome the model rates highest, with
+                  the price attached — and compute_predictions.py says so in as
+                  many words: EV "turned out to be a poor guide to whether a
+                  pick lands", so ev_score is left NULL on purpose.
+                  "Value" claims the price is wrong. We do not measure that, the
+                  AI narrative is blocked at runtime from saying it, and the
+                  tickets page refuses to imply it. This badge was the last
+                  place the old framing survived. */}
               {(data.suggested_markets?.length > 0 || data.suggested_market) && (() => {
                 const markets = data.suggested_markets?.length > 0
                   ? data.suggested_markets
                   : data.suggested_market ? [data.suggested_market] : [];
                 return markets.map((market, idx) => (
-                  <div key={market} className="inline-flex items-center gap-2 bg-win/10 border border-win/20 rounded-lg px-3 py-2">
-                    <span className="text-win text-xs">💡</span>
+                  <div key={market} className="inline-flex items-center gap-2 rounded-lg border border-line bg-ink-700 px-3 py-2">
+                    <span className="text-xs text-chalk-2">◎</span>
                     <div className="flex flex-col leading-tight">
-                      <span className="text-[10px] text-win font-semibold uppercase tracking-wide">
-                        {idx === 0 ? "Value Bet" : "Alt. Value Bet"}
+                      <span className="text-[10px] font-semibold uppercase tracking-wide text-chalk-3">
+                        {idx === 0 ? t("analysis.modelPick") : t("analysis.modelPickAlt")}
                       </span>
-                      <span className="text-sm text-win font-medium">
+                      <span className="text-sm font-medium text-chalk">
                         {market}
                       </span>
                     </div>

@@ -135,6 +135,15 @@ echo "" >> "$LOG"
 echo "[0] Backing up database …" | tee -a "$LOG"
 bash "$PROJ_DIR/scripts/backup_db.sh" 2>&1 | tee -a "$LOG" || echo "  [warn] backup failed — continuing" | tee -a "$LOG"
 
+# Restore the dump we just took into a scratch database and count the rows.
+# backup_db.sh only checks the file is not suspiciously small, which a truncated
+# or mid-migration dump passes. This is the difference between having backups
+# and knowing you have backups.
+bash "$PROJ_DIR/scripts/verify_backup.sh" 2>&1 | tee -a "$LOG" \
+    || send_alert "Football Predictor: backup NOT restorable" \
+         "The nightly dump could not be restored into a scratch database, or came back short. Everything that cannot be regenerated — accounts, tracked bets, the value-bet ledger — is currently unprotected." \
+         urgent "rotating_light" "$LOG"
+
 # ── 1. Update domestic + CL results (football-data.org) ──────────────────────
 echo "[1/6] Updating domestic + CL match results …" | tee -a "$LOG"
 docker compose exec -T backend \
@@ -528,6 +537,16 @@ if [ "$(date +%d)" = "01" ]; then
         2>&1 | tee -a "$LOG" || _fail $LINENO
 fi
 
+# Settle fixtures the pollers' 7-day window left behind. Costs no API credits —
+# it reads the CSVs the model already trains on. Without it a missed result is
+# missed for ever: two matches had sat unresolved for 80+ days, silently absent
+# from every accuracy figure on /stats.
+echo "" >> "$LOG"
+echo "[8c/9] Settling stale fixtures from the CSVs …" | tee -a "$LOG"
+docker compose exec -T backend \
+    python scripts/settle_stale_fixtures.py \
+    2>&1 | tee -a "$LOG" || echo "  [warn] stale-fixture settle failed — continuing" | tee -a "$LOG"
+
 # Cut today's accumulator slips and settle finished ones. Needs no external
 # API — it reads predictions already in the DB — so it runs whether or not
 # API-Football is reachable. Placed after predictions/odds so the slips are cut
@@ -813,3 +832,20 @@ if [ "${health_alerts:-0}" -ne 0 ]; then
              "${_health_verdict:-health check did not report}")" \
         default "mag,soccer" "$LOG"
 fi
+
+# ── Log rotation ─────────────────────────────────────────────────────────────
+# Last, so nothing above is writing while a file is being truncated. Nothing had
+# ever rotated these: daily.log had reached 9.7MB / 100k lines spanning weeks,
+# which is how "check today's logs" turned into slicing by line number.
+echo "" >> "$LOG"
+echo "[maint] Refreshing planner statistics …" | tee -a "$LOG"
+# Autovacuum was not keeping up: `matches` had never been analyzed and the
+# planner believed it held 173 rows against a real 8,696, which is how a table
+# scan gets chosen over an index. Cheap, and it cannot drift again if it runs
+# every day.
+docker compose exec -T db psql -U "${POSTGRES_USER:-user}" -d "${POSTGRES_DB:-football_db}" \
+    -c "ANALYZE;" 2>&1 | tee -a "$LOG" || echo "  [warn] ANALYZE failed" | tee -a "$LOG"
+
+echo "" >> "$LOG"
+echo "[rotate] Log rotation …" | tee -a "$LOG"
+bash "$PROJ_DIR/scripts/rotate_logs.sh" 2>&1 | tee -a "$LOG" || true

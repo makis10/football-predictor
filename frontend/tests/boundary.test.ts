@@ -70,3 +70,35 @@ describe("server → client boundary", () => {
     expect(missing).toEqual([]);
   });
 });
+
+/**
+ * The footer must not state an accuracy figure it made up.
+ *
+ * It carried "~52% result / ~58% O/U" hardcoded in the translation table while
+ * the live numbers were 50.6% / 56.7% all-time and 47.8% / 55.7% over 30 days.
+ * A literal can only ever drift in the flattering direction, because nobody
+ * edits it downwards when accuracy falls — and this is the one project whose
+ * whole pitch is not doing that.
+ */
+describe("footer accuracy claim", () => {
+  const i18n = readFileSync(path.join(SRC, "lib/i18n.ts"), "utf8");
+
+  it("states no percentage of its own", () => {
+    const lines = i18n
+      .split("\n")
+      .filter((l) => /"footer\.(disclaimer|notFinancial)"/.test(l));
+    expect(lines.length, "footer strings not found — did the keys move?").toBe(4);
+    for (const line of lines) {
+      expect(line, `hardcoded figure in ${line.trim()}`).not.toMatch(/\d+\s*%/);
+    }
+  });
+
+  it("takes the numbers as parameters instead", () => {
+    for (const key of ["{result}", "{goals}", "{n}"]) {
+      expect(i18n, `footer.accuracy is missing ${key}`).toContain(key);
+    }
+    // …and the layout has to actually fetch them.
+    const layout = readFileSync(path.join(SRC, "app/layout.tsx"), "utf8");
+    expect(layout).toContain("getFooterAccuracy");
+  });
+});

@@ -192,6 +192,16 @@ def main() -> None:
         for pid, pname, teams, _last in todo:
             if not budget.ok():
                 print("  [budget] request cap reached — stopping."); break
+            # player_match_stats can carry player_id 0 when API-Football reports
+            # an appearance without identifying the player. /players rejects it
+            # ("The Id field cannot be 0"), and because the row never gets a
+            # rate it is exempt from the freshness skip above — so it was
+            # re-requested on EVERY run, spending a request and a retry each
+            # time to be told the same thing, and it can never be satisfied.
+            if not pid:
+                print(f"  [skip] {pname or 'unknown player'}: no API id "
+                      f"(player_id 0) — /players cannot be queried")
+                continue
             national_names = {(t or "").strip().lower() for t in (teams or [])}
             try:
                 data = _get("/players", {"id": pid, "season": season}, budget)

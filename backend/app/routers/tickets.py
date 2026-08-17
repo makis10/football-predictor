@@ -25,6 +25,14 @@ from backend.app.schemas.ticket import (
 
 router = APIRouter(prefix="/tickets", tags=["tickets"])
 
+# Deliberately NOT rate limited, unlike /matches/export and /predictions/*/analysis.
+# Those are expensive per call; this one serves a Redis-cached snapshot of five
+# rows that the daily job froze this morning. And a per-IP limit here would be
+# actively harmful: SSR reaches the backend server-to-server with no
+# X-Forwarded-For, so client_ip() falls back to the socket peer and EVERY
+# server-rendered page would share one bucket — the site would throttle itself
+# under exactly the traffic a limit is supposed to survive.
+#
 # Short TTL: the slips are frozen, but `outcome` flips as results land and a
 # reader refreshing after full time should see it.
 _TTL = 300
@@ -124,20 +132,36 @@ def current_tickets(db: Session = Depends(get_db)):
 @router.get("/history", response_model=SettledTicketsResponse)
 def settled_tickets(
     days: int = Query(30, ge=1, le=180),
+    offset_days: int = Query(0, ge=0, le=3650,
+                             description="Shift the window back by N days, for paging."),
     db: Session = Depends(get_db),
 ):
-    """Recently settled slips, newest first — the receipts behind the record."""
-    key = f"tickets:history:{days}"
+    """Every earlier slip, newest first — the receipts behind the record.
+
+    Deliberately NOT limited to settled slips. A card is cut with a horizon of
+    up to seven days, so a slip stays open long after the day it was published:
+    on 2026-08-12, with three days of slips on file, not one had finished and a
+    settled-only filter returned an empty list. That reads as "there is no
+    history" when the truth is "they are still running" — and it hides exactly
+    what a reader wants mid-week, which is how the open ones are tracking.
+
+    Today's slips are excluded because they are already the top of the page.
+    """
+    key = f"tickets:history:{days}:{offset_days}"
     cached = cache_get(key)
     if cached is not CACHE_MISS:
         return SettledTicketsResponse(**cached)
 
-    since = date.today() - timedelta(days=days)
+    # Paged by DAY, not by row: slips come in fives, so a row offset would cut
+    # a day in half and the reader would meet the same date on two pages.
+    today = date.today()
+    until = today - timedelta(days=offset_days)
+    since = until - timedelta(days=days)
     rows = list(db.scalars(
         select(Ticket)
         .options(selectinload(Ticket.legs))
-        .where(Ticket.outcome.isnot(None))
         .where(Ticket.generated_for >= since)
+        .where(Ticket.generated_for < until)
         .order_by(Ticket.generated_for.desc(), Ticket.id)
     ).all())
     matches = _load_matches(db, rows)

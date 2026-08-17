@@ -9,6 +9,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "",                            priority: 1.0, freq: "daily" },
     { path: "/stats",                      priority: 0.8, freq: "daily" },
     { path: "/recent",                     priority: 0.7, freq: "daily" },
+    // Both of these were live and public for weeks while absent here, so search
+    // engines had no way to find them. /tickets changes every morning when the
+    // daily job cuts new slips; /projections moves as results land.
+    { path: "/tickets",                    priority: 0.8, freq: "daily" },
+    { path: "/tickets/history",            priority: 0.5, freq: "daily" },
+    { path: "/projections",                priority: 0.6, freq: "daily" },
     // /national is intentionally absent: it 307s to / since the 2026 World Cup
     // ended, and a sitemap that advertises redirects gets the whole file
     // discounted. Re-add it when the next tournament goes live.

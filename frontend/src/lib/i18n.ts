@@ -53,6 +53,24 @@ const en: Table = {
   "nav.projections": "🔮 Projections",
   "nav.worldCup": "🏆 World Cup 2026",
   "nav.tickets": "🎟️ Tickets",
+  "nav.tickets.today": "Today\u2019s slips",
+  "nav.tickets.past": "Earlier slips",
+  "tickets.history.openCount": "{open} running · {dead} already dead",
+  "tickets.history.seeAll": "See every slip",
+  "tickets.history.pageTitle": "Ticket history",
+  "tickets.history.pageSubtitle": "Every slip we have published, newest first, exactly as it was cut.",
+  "tickets.history.legendWon": "Green = landed.",
+  "tickets.history.legendLost": "Red = lost.",
+  "tickets.history.backToToday": "Back to today\u2019s slips",
+  "tickets.history.stillOpen": "{n} still running",
+  "tickets.history.emptyPage": "No slips were published in this window.",
+  "tickets.history.unavailable": "The history could not be loaded right now.",
+  "tickets.history.windowRecent": "last {days} days",
+  "tickets.history.windowOlder": "{from}\u2013{to} days ago",
+  "tickets.history.newer": "Newer",
+  "tickets.history.older": "Older",
+  "tickets.history.modalTitle": "Slip as published",
+  "tickets.history.open": "Open the {profile} slip from {date}",
   "recent.title": "Recent Results",
   "recent.subtitle": "Predictions against what actually happened.",
   "recent.legendBoth": "Green = both correct,",
@@ -87,7 +105,20 @@ const en: Table = {
   "nav.stats": "📊 Stats",
 
   // Footer
-  "footer.disclaimer": "ML predictions for entertainment only · ~52% result / ~58% O/U accuracy ·",
+  "footer.disclaimer": "ML predictions for entertainment only ·",
+  "footer.accuracy": "{result}% result / {goals}% O/U over {n} settled matches ·",
+  "tickets.gate.note": "Opening a match from a slip needs a free account.",
+  "tickets.gate.cta": "Sign up \u2014 it takes a minute",
+  "error.notFound.title": "That page isn\u2019t here",
+  "error.notFound.body": "The link may be old, or the match has moved on. Everything that is on today is one tap away.",
+  "error.generic.title": "Something went wrong",
+  "error.generic.body": "This is usually one upstream call misbehaving, not the whole site. Try again \u2014 it normally works the second time.",
+  "error.retry": "Try again",
+  "error.toUpcoming": "Upcoming fixtures",
+  "error.toRecent": "Recent results",
+  "error.reference": "Reference",
+  "analysis.modelPick": "Model pick",
+  "analysis.modelPickAlt": "Alternative",
   "footer.notFinancial": "Not financial advice",
   "footer.coffee": "☕ Buy me a coffee",
 
@@ -517,6 +548,17 @@ const en: Table = {
   "tickets.record.hitRate": "Hit rate",
   "tickets.record.roi": "Return",
   "tickets.record.overall": "All slips",
+
+  // Earlier slips — the receipts behind the record.
+  "tickets.history.title": "Slips still running",
+  "tickets.history.body":
+    "Published on an earlier day and not finished yet — a slip is cut with a horizon of up to five days. Tap one to see it in full.",
+  "tickets.history.count": "{settled} settled · {open} still running",
+  "tickets.history.progress": "{landed}/{total}",
+  "tickets.history.legend":
+    "✓ landed · ✗ missed · • not played yet. A slip is graded only once every leg has been played.",
+  "tickets.history.dead":
+    "A leg has already missed, so this slip cannot return — it stays open until its remaining matches are played.",
 };
 
 const el: Table = {
@@ -527,6 +569,24 @@ const el: Table = {
   "nav.projections": "🔮 Προβλέψεις",
   "nav.worldCup": "🏆 Μουντιάλ 2026",
   "nav.tickets": "🎟️ Δελτία",
+  "nav.tickets.today": "Σημερινά δελτία",
+  "nav.tickets.past": "Παλαιότερα δελτία",
+  "tickets.history.openCount": "{open} τρέχουν · {dead} ήδη χαμένα",
+  "tickets.history.seeAll": "Δες όλα τα δελτία",
+  "tickets.history.pageTitle": "Ιστορικό δελτίων",
+  "tickets.history.pageSubtitle": "Κάθε δελτίο που έχουμε δημοσιεύσει, από τα πιο πρόσφατα, ακριβώς όπως κόπηκε.",
+  "tickets.history.legendWon": "Πράσινο = πέτυχε.",
+  "tickets.history.legendLost": "Κόκκινο = χάθηκε.",
+  "tickets.history.backToToday": "Πίσω στα σημερινά δελτία",
+  "tickets.history.stillOpen": "{n} τρέχουν ακόμα",
+  "tickets.history.emptyPage": "Δεν δημοσιεύτηκαν δελτία σε αυτό το διάστημα.",
+  "tickets.history.unavailable": "Το ιστορικό δεν φορτώθηκε αυτή τη στιγμή.",
+  "tickets.history.windowRecent": "τελευταίες {days} ημέρες",
+  "tickets.history.windowOlder": "{from}\u2013{to} ημέρες πριν",
+  "tickets.history.newer": "Νεότερα",
+  "tickets.history.older": "Παλαιότερα",
+  "tickets.history.modalTitle": "Το δελτίο όπως δημοσιεύτηκε",
+  "tickets.history.open": "Άνοιγμα του δελτίου {profile} της {date}",
   "recent.title": "Πρόσφατα Αποτελέσματα",
   "recent.subtitle": "Οι προβλέψεις απέναντι σε αυτό που όντως έγινε.",
   "recent.legendBoth": "Πράσινο = και τα δύο σωστά,",
@@ -561,7 +621,20 @@ const el: Table = {
   "nav.stats": "📊 Στατιστικά",
 
   // Footer
-  "footer.disclaimer": "Προβλέψεις ML μόνο για ψυχαγωγία · ~52% αποτέλεσμα / ~58% ακρίβεια O/U ·",
+  "footer.disclaimer": "Προβλέψεις ML μόνο για ψυχαγωγία ·",
+  "footer.accuracy": "{result}% αποτέλεσμα / {goals}% O/U σε {n} κριθέντες αγώνες ·",
+  "tickets.gate.note": "Για να ανοίξεις αγώνα από δελτίο χρειάζεται δωρεάν λογαριασμός.",
+  "tickets.gate.cta": "Κάνε εγγραφή — θέλει ένα λεπτό",
+  "error.notFound.title": "Αυτή η σελίδα δεν υπάρχει",
+  "error.notFound.body": "Ο σύνδεσμος μπορεί να είναι παλιός ή ο αγώνας να πέρασε. Ό,τι παίζεται σήμερα είναι ένα πάτημα μακριά.",
+  "error.generic.title": "Κάτι πήγε στραβά",
+  "error.generic.body": "Συνήθως φταίει μία κλήση προς τα έξω, όχι όλη η σελίδα. Δοκίμασε ξανά — τη δεύτερη φορά συνήθως δουλεύει.",
+  "error.retry": "Δοκίμασε ξανά",
+  "error.toUpcoming": "Προσεχείς αγώνες",
+  "error.toRecent": "Πρόσφατα αποτελέσματα",
+  "error.reference": "Κωδικός",
+  "analysis.modelPick": "Επιλογή μοντέλου",
+  "analysis.modelPickAlt": "Εναλλακτική",
   "footer.notFinancial": "Δεν αποτελεί οικονομική συμβουλή",
   "footer.coffee": "☕ Κέρνα με έναν καφέ",
 
@@ -988,6 +1061,17 @@ const el: Table = {
   "tickets.record.hitRate": "Ποσοστό",
   "tickets.record.roi": "Απόδοση",
   "tickets.record.overall": "Όλα τα δελτία",
+
+  // Παλαιότερα δελτία — οι αποδείξεις πίσω από το ιστορικό.
+  "tickets.history.title": "Δελτία σε εξέλιξη",
+  "tickets.history.body":
+    "Βγήκαν προηγούμενη μέρα και δεν έχουν κλείσει ακόμα — ένα δελτίο κόβεται με ορίζοντα έως πέντε ημερών. Πάτα ένα για να το δεις ολόκληρο.",
+  "tickets.history.count": "{settled} έκλεισαν · {open} τρέχουν ακόμα",
+  "tickets.history.progress": "{landed}/{total}",
+  "tickets.history.legend":
+    "✓ πέτυχε · ✗ έχασε · • δεν παίχτηκε ακόμα. Ένα δελτίο κρίνεται μόνο όταν παιχτούν όλα τα σκέλη του.",
+  "tickets.history.dead":
+    "Ένα σκέλος έχει ήδη χαθεί, οπότε αυτό το δελτίο δεν μπορεί να αποδώσει — μένει ανοιχτό μέχρι να παιχτούν οι υπόλοιποι αγώνες.",
 };
 
 export const messages: Record<Lang, Table> = { en, el };

@@ -193,16 +193,45 @@ def update_db(finished: list[dict]) -> tuple[int, int]:
     db = SessionLocal()
     updated = not_found = 0
     try:
+        # Names arrive already mapped (fetch_finished → map_team → canonical), so
+        # the lookup below is an exact match by design. What was missing is the
+        # REPORTING: when the feed's spelling has no alias, `canonical` returns it
+        # unchanged, nothing matches, and the old counter filed that under
+        # "already updated or not in our DB" — indistinguishable from routine
+        # noise. Four Championship results sat unsettled for two days on live
+        # accumulator slips that way ("Preston NE", "Lincoln City",
+        # "Derby County", "Sheffield Utd"), and the CSV backfill that usually
+        # covers for this has no 2026/27 Championship file yet.
+        unmatched: list[str] = []
         for f in finished:
+            home, away = f["home_team"], f["away_team"]
             match = db.scalars(
                 select(Match).where(
                     Match.match_date == f["match_date"],
-                    Match.home_team  == f["home_team"],
-                    Match.away_team  == f["away_team"],
+                    Match.home_team  == home,
+                    Match.away_team  == away,
                     Match.league     == f["league"],
                     Match.result.is_(None),         # only update unresolved
                 )
             ).first()
+
+            if not match:
+                # Distinguish "already had a result" from "we cannot find it at
+                # all" — the old counter lumped them together, which is why a
+                # permanent matching failure read as routine noise for months.
+                exists = db.scalars(
+                    select(Match).where(
+                        Match.match_date == f["match_date"],
+                        Match.home_team  == home,
+                        Match.away_team  == away,
+                        Match.league     == f["league"],
+                    )
+                ).first()
+                if not exists:
+                    unmatched.append(
+                        f"{f['league']} {f['match_date']} "
+                        f"{home!r} v {away!r}  {f['home_goals']}-{f['away_goals']}"
+                    )
 
             if match:
                 match.home_goals = f["home_goals"]
@@ -215,6 +244,15 @@ def update_db(finished: list[dict]) -> tuple[int, int]:
         db.commit()
     finally:
         db.close()
+
+    if unmatched:
+        # Loud, and named. A feed spelling we cannot tie to a fixture means that
+        # result is lost until someone adds the alias — silence here is what let
+        # four Championship games stay unsettled on live accumulator slips.
+        print(f"  [warn] {len(unmatched)} finished match(es) tie to NO fixture of "
+              f"ours — add the spelling to COMMON_ALIASES:")
+        for u in unmatched[:15]:
+            print(f"           {u}")
 
     return updated, not_found
 
@@ -243,7 +281,7 @@ def main():
     print("\nUpdating database …")
     updated, not_found = update_db(finished)
     print(f"  Updated:   {updated} matches")
-    print(f"  Not found: {not_found} (already updated or not in our DB)")
+    print(f"  Not found: {not_found} (already had a result, or unmatched — see above)")
     print("\nDone.")
 
 

@@ -45,6 +45,43 @@ DOMESTIC = {"EPL", "Championship", "LeagueOne", "LaLiga", "SerieA", "Bundesliga"
 EURO     = {"CL", "EL", "ECL"}
 TRACKED  = DOMESTIC | EURO
 
+# Clubs whose fixtures carry NO statistics upstream, verified against the API.
+#
+# These are not our bug and no amount of ingestion will fix them, so raising a
+# domestic-league ALERT every morning for one of them trains the reader to
+# ignore the whole report — which is how a real outage gets missed. They stay
+# VISIBLE as warnings, with the reason, rather than being silenced.
+#
+# Each entry records the check that put it here so it can be re-tested cheaply:
+#   GET /fixtures?team=<id>&last=4  →  GET /fixtures/statistics?fixture=<id>
+# and if the response now has 2 blocks, delete the line.
+NO_UPSTREAM_STATS = {
+    # 2026-08-11: api id 689, four consecutive finished Veikkausliiga fixtures
+    # (07 Aug, 03 Aug, 24 Jul, 18 Jul) all returned zero statistics blocks.
+    "SJK": "API-Football publishes no match statistics for this club (checked 2026-08-11)",
+
+    # 2026-08-16: both promoted into the Greek Super League this summer, so
+    # every match in their `--last 8` window is either a club friendly
+    # (league 667) or last season's Super League 2 (league 494) — neither is
+    # covered by /fixtures/statistics on this plan. Verified per club:
+    # /fixtures?team=17991&last=8 and team=5046 both return 8 fixtures with
+    # errors=[], and /fixtures/statistics on the newest returns 0 blocks.
+    # The ingestion is working; there is nothing upstream to ingest.
+    #
+    # EXPECTED TO SELF-HEAL: their first top-flight rounds are 22 Aug, and
+    # every other Greek Super League club does carry stats (PAOK 10 rows,
+    # Panathinaikos 9, Levadiakos 8 …). Re-check after a couple of league
+    # fixtures and delete these two entries — an entry left here after the
+    # data starts flowing would silence a real gap.
+    #   docker compose exec backend python scripts/check_data_completeness.py --days 7
+    "Iraklis 1908": "promoted 2026/27 — only friendlies + Super League 2 in "
+                    "range, neither carries statistics (checked 2026-08-16, "
+                    "re-check after 22 Aug)",
+    "Kalamata":     "promoted 2026/27 — only friendlies + Super League 2 in "
+                    "range, neither carries statistics (checked 2026-08-16, "
+                    "re-check after 22 Aug)",
+}
+
 alerts: list[str] = []
 warns:  list[str] = []
 
@@ -83,7 +120,14 @@ def main() -> None:
               f"({len(tracked_teams)} teams in tracked leagues)")
 
         def _severity(team: str):
-            """ALERT for domestic-league teams, warn for euro-qualifier-only ones."""
+            """ALERT for domestic-league teams, warn for euro-qualifier-only ones.
+
+            A club in NO_UPSTREAM_STATS is always a warn: the data does not
+            exist to ingest, so an alert would be asking someone to fix the
+            weather.
+            """
+            if team in NO_UPSTREAM_STATS:
+                return _warn
             return _alert if team_leagues.get(team, set()) & DOMESTIC else _warn
 
         # 1. club id cache
@@ -163,6 +207,35 @@ def main() -> None:
             if share < 0.50:
                 _warn(f"odds seam: only {share:.0%} of tracked-league predictions matched odds "
                       f"(check _ALIASES in odds_analysis_service)")
+
+        # 9. one match, two fixture rows, two dates
+        #
+        # dedupe_fixtures.py collapses same-DATE duplicates; this catches the
+        # other shape — the same tie held on two dates, which is what a
+        # postponement outside the reschedule window or two feeds disagreeing
+        # leaves behind. It is not cosmetic: on 2026-08-17 the day's 'safe'
+        # accumulator carried PAOK–Levadiakos as two independent legs and
+        # multiplied one probability by itself. The builder now dedupes by tie
+        # so that symptom cannot return, but the stale row is still a fixture
+        # advertised on a date it will not be played on, and its result never
+        # arrives. Ordered pair on purpose: a two-legged cup tie swaps the
+        # venue, so it is a different key, not a duplicate.
+        dupes = db.execute(text(
+            "SELECT a.league, a.home_team, a.away_team, "
+            "       a.id AS id_a, a.match_date AS date_a, "
+            "       b.id AS id_b, b.match_date AS date_b "
+            "FROM matches a JOIN matches b "
+            "  ON a.league = b.league AND a.home_team = b.home_team "
+            " AND a.away_team = b.away_team AND a.id < b.id "
+            "WHERE a.result IS NULL AND b.result IS NULL "
+            "  AND a.match_date >= :today "
+            "  AND ABS(b.match_date - a.match_date) BETWEEN 1 AND 21 "
+            "ORDER BY a.match_date"),
+            {"today": date.today()}).fetchall()
+        for d in dupes:
+            _alert(f"duplicate fixture: {d.league} {d.home_team} vs {d.away_team} "
+                   f"stored twice — id {d.id_a} on {d.date_a} and id {d.id_b} on "
+                   f"{d.date_b}; one is stale and will never be scored")
     finally:
         db.close()
 
@@ -185,6 +258,33 @@ def main() -> None:
                 _warn(f"API-Football quota at {used / cap:.0%} — ingestion may starve")
         elif r.get("errors"):
             _warn(f"API-Football status: {r['errors']}")
+    except Exception:
+        pass
+
+    # The Odds API credits. /sports is not billed, and its response headers
+    # carry the account's usage, so this costs nothing to ask.
+    #
+    # Worth an ALERT rather than a warning because running out is silent from
+    # the outside and looks like a bug: on 2026-08-17 the month's 20,000 credits
+    # were spent by 08:00, every /odds call came back 401 OUT_OF_USAGE_CREDITS,
+    # and the consequences showed up three layers away — no bookmaker price on
+    # any fixture past today, so nearly every accumulator leg fell back to our
+    # own fair odds, so the estimated-price cap could not be satisfied and the
+    # ladder cut two slips instead of five. Nothing on the page said why.
+    try:
+        r = _rq.get("https://api.the-odds-api.com/v4/sports/",
+                    params={"apiKey": os.getenv("ODDS_API_KEY", "")}, timeout=10)
+        used = r.headers.get("x-requests-used")
+        left = r.headers.get("x-requests-remaining")
+        if left is not None:
+            left_n, used_n = int(float(left)), int(float(used or 0))
+            print(f"[quota] The Odds API: {used_n:,} used, {left_n:,} remaining")
+            if left_n <= 0:
+                _alert("The Odds API is OUT OF CREDITS — every /odds call returns "
+                       "401, so no fixture can carry a bookmaker price and the "
+                       "ticket ladder falls back to estimated odds")
+            elif left_n < 500:
+                _warn(f"The Odds API down to {left_n:,} credits")
     except Exception:
         pass
 

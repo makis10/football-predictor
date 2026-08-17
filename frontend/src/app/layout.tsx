@@ -11,6 +11,7 @@ import LanguageToggle from "@/components/LanguageToggle";
 import SiteNav from "@/components/SiteNav";
 import ThemeToggle from "@/components/ThemeToggle";
 import { getServerLang, getServerTheme } from "@/lib/i18n-server";
+import { getFooterAccuracy } from "@/lib/api";
 import { getT } from "@/lib/i18n";
 
 /* Fonts, self-hosted at build time by next/font — no request to Google at
@@ -79,6 +80,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   const umamiId = process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID;
   const lang = await getServerLang();
   const theme = await getServerTheme();
+  const accuracy = await getFooterAccuracy();
   const t = getT(lang);
   return (
     <html
@@ -97,7 +99,11 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           {/* Header. `relative` anchors the mobile drawer, which renders
               absolutely against this row so opening it never widens the page. */}
           <header className="sticky top-0 z-40 relative border-b border-line bg-ink-800/80 backdrop-blur">
-            <div className="mx-auto flex h-14 max-w-6xl items-center gap-2 px-4 sm:gap-3">
+            {/* px-3 below sm, not px-4: the row is 3px over at 375px once the theme
+                toggle joined the controls group, and 8px of side padding is the
+                cheapest place to find it — every other element in here is either
+                a tap target at its minimum or the wordmark. */}
+            <div className="mx-auto flex h-14 max-w-6xl items-center gap-2 px-3 sm:gap-3 sm:px-4">
               <span className="text-xl sm:text-2xl">⚽</span>
               <Link
                 href="/"
@@ -111,7 +117,14 @@ export default async function RootLayout({ children }: { children: React.ReactNo
                 items={[
                   { href: "/", label: t("nav.upcoming") },
                   { href: "/recent", label: t("nav.recent") },
-                  { href: "/tickets", label: t("nav.tickets") },
+                  {
+                    href: "/tickets",
+                    label: t("nav.tickets"),
+                    children: [
+                      { href: "/tickets", label: t("nav.tickets.today") },
+                      { href: "/tickets/history", label: t("nav.tickets.past") },
+                    ],
+                  },
                   { href: "/projections", label: t("nav.projections") },
                   { href: "/stats", label: t("nav.stats") },
                 ]}
@@ -140,6 +153,15 @@ export default async function RootLayout({ children }: { children: React.ReactNo
             <div className="max-w-6xl mx-auto px-4 py-2 flex flex-col sm:flex-row items-center justify-between gap-2">
               <p className="text-[11px] text-chalk-3 text-center sm:text-left leading-tight">
                 {t("footer.disclaimer")}{" "}
+                {accuracy && (
+                  <>
+                    {t("footer.accuracy", {
+                      result: accuracy.result,
+                      goals: accuracy.goals,
+                      n: accuracy.n,
+                    })}{" "}
+                  </>
+                )}
                 <span className="text-chalk-3/70">{t("footer.notFinancial")}</span>
               </p>
               <div className="flex items-center gap-2 shrink-0">
