@@ -21,6 +21,7 @@ import time
 from datetime import date, datetime, timedelta, timezone
 
 import requests
+from backend.app.redaction import redact  # noqa: E402
 
 _PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 sys.path.insert(0, _PROJECT_ROOT)  # project root
@@ -264,7 +265,7 @@ def fetch_fixtures(api_key: str, days: int) -> list[dict]:
                     "season":       infer_season(match_d),
                 })
         except Exception as e:
-            print(f"ERROR: {e}")
+            print(f"ERROR: {redact(e)}")
 
         time.sleep(6)  # respect free-tier rate limit (10 req/min)
 

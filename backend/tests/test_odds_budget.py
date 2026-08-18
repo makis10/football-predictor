@@ -283,34 +283,22 @@ def test_launchd_schedule_matches_the_tiers():
 
 
 # ── Credentials must never reach the log ──────────────────────────────────────
-# The Odds API takes its key as a query parameter, and requests puts the whole
-# URL into the text of an HTTPError. When the month's credits ran out on
-# 2026-08-17 every league logged the live key in plaintext, once per poll.
+# The scrubbing itself lives in backend/app/redaction.py and is tested there.
+# This only pins the wrapper the odds service calls, because that is the call
+# site that leaked when The Odds API started returning 401 on 2026-08-17.
 
 def test_a_failed_odds_call_does_not_log_the_api_key(monkeypatch):
     import requests
 
     from backend.app.ml import odds_analysis_service as oas
 
-    monkeypatch.setattr(oas, "ODDS_API_KEY", "sekrit-odds-key")
+    monkeypatch.setenv("ODDS_API_KEY", "sekrit-odds-key-long-enough")
     exc = requests.HTTPError(
         "401 Client Error: Unauthorized for url: "
         "https://api.the-odds-api.com/v4/sports/soccer_epl/odds/"
-        "?apiKey=sekrit-odds-key&regions=eu")
+        "?apiKey=sekrit-odds-key-long-enough&regions=eu")
 
     text = oas._redact_key(exc)
 
-    assert "sekrit-odds-key" not in text
+    assert "sekrit-odds-key-long-enough" not in text
     assert "401" in text and "soccer_epl" in text, "redaction ate the diagnosis"
-
-
-def test_redaction_covers_every_key_we_hold(monkeypatch):
-    from backend.app.ml import odds_analysis_service as oas
-
-    monkeypatch.setattr(oas, "ODDS_API_KEY", "odds-key")
-    monkeypatch.setattr(oas, "GROQ_API_KEY", "groq-key")
-    monkeypatch.setattr(oas, "API_SPORTS_KEY", "sports-key")
-
-    text = oas._redact_key(Exception("odds-key groq-key sports-key"))
-
-    assert text == "*** *** ***"

@@ -20,6 +20,7 @@ import sys
 import time
 
 import requests
+from backend.app.redaction import redact  # noqa: E402
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))  # project root
 
@@ -131,10 +132,10 @@ def fetch_scores(api_key: str, days_from: int) -> list[dict]:
                         "result":     result,
                     })
                 except Exception as e:
-                    print(f"    [warn] Could not parse event: {e}")
+                    print(f"    [warn] Could not parse event: {redact(e)}")
 
         except Exception as e:
-            print(f"ERROR: {e}")
+            print(f"ERROR: {redact(e)}")
 
         time.sleep(2)  # be polite with the free-tier quota
 

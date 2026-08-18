@@ -24,6 +24,7 @@ import sys
 import time
 
 import pandas as pd
+from backend.app.redaction import redact  # noqa: E402
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))  # project root
 
@@ -57,7 +58,7 @@ def download_league_season(league_key: str, league_code: str, season: int) -> pd
     try:
         matches = asyncio.run(_fetch_league_season(league_key, season))
     except Exception as e:
-        print(f"    ERROR: {e}")
+        print(f"    ERROR: {redact(e)}")
         return None
 
     if not matches:

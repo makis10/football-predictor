@@ -39,19 +39,14 @@ API_SPORTS_KEY = os.getenv("API_SPORTS_KEY", "")  # api-football.com
 
 
 def _redact_key(exc: object) -> str:
-    """An exception message, with our credentials taken out of it.
+    """An exception message with our credentials taken out of it.
 
-    requests puts the full request URL into the text of an HTTPError, and The
-    Odds API takes its key as a QUERY PARAMETER — so every failed call wrote the
-    live key into the log in plaintext. The month's credits ran out on
-    2026-08-17 and each of the 23 leagues logged it again, once per poll, into a
-    file that gets read, tailed and pasted around.
+    Thin wrapper over backend.app.redaction.redact, kept because the same
+    scrubbing is needed from the fetch scripts, which must not import this
+    module (it pulls in pandas and the model artefacts).
     """
-    text = str(exc)
-    for secret in (ODDS_API_KEY, GROQ_API_KEY, API_SPORTS_KEY):
-        if secret:
-            text = text.replace(secret, "***")
-    return text
+    from backend.app.redaction import redact
+    return redact(exc)
 
 # llama-3.3-70b-versatile is deprecated on GroqCloud (decommission 2026-08-16).
 # Default to its recommended replacement; override with the GROQ_MODEL env var

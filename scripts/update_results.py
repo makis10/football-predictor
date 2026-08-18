@@ -19,6 +19,7 @@ import time
 from datetime import date, timedelta
 
 import requests
+from backend.app.redaction import redact  # noqa: E402
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))  # project root
 
@@ -174,7 +175,7 @@ def fetch_finished(api_key: str, days_back: int) -> list[dict]:
                     "result":     result,
                 })
         except Exception as e:
-            print(f"ERROR: {e}")
+            print(f"ERROR: {redact(e)}")
 
         time.sleep(6)  # free-tier rate limit: 10 req/min
 
