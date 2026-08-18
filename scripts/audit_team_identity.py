@@ -44,6 +44,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from backend.app.ml.league_registry import (  # noqa: E402
     LEAGUE_COUNTRY_TIER, are_known_distinct, season_scheme, start_year,
 )
+from scripts.team_resolver import is_youth_side  # noqa: E402
 
 RAW = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
                    "backend", "data", "raw")
@@ -200,6 +201,14 @@ class Corpus:
         # are recorded as distinct under their surviving names.
         if are_known_distinct(a, b) or are_known_distinct(_canon(a), _canon(b)):
             return False, "reviewed: two clubs (league_registry.KNOWN_DISTINCT)"
+        # A reserve side is never the first team, however close the names read.
+        # The resolver has always known this (team_resolver.is_youth_side), but
+        # the audit did not, so on 2026-08-18 it proposed folding
+        # "Celta de Vigo II" into "Celta" — one Segunda result would have landed
+        # on the first team's Elo. Acting on that suggestion is the whole risk:
+        # the audit is read by a human who then runs the merge.
+        if is_youth_side(a) != is_youth_side(b):
+            return False, "one is a reserve/youth side"
         if b in self.opponents[a]:
             return False, "they played each other"
         ca, cb = self.countries(a), self.countries(b)

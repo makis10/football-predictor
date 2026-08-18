@@ -449,3 +449,37 @@ def test_reserve_sides_stay_separate_from_their_first_team(id_cache):
     folded = {src: dst for src, dst in {**_CSV_TEAM_CANON, **_SNAP_NAME_MAP}.items()
               if is_youth_side(src) != is_youth_side(dst)}
     assert not folded, f"a reserve side is canonicalised onto a senior club: {folded}"
+
+
+# ── The identity audit must not propose merging a reserve side ────────────────
+# On 2026-08-18 the daily audit reported "one club still under two names:
+# 'Celta' (532) ← 'Celta de Vigo II' (1)". The resolver has always kept reserve
+# sides apart (is_youth_side); the audit did not know about them, and it is read
+# by a human who then runs the merge — one Segunda result onto the first team's
+# Elo.
+
+def test_the_audit_never_calls_a_reserve_side_the_first_team():
+    from scripts.audit_team_identity import Corpus
+
+    corpus = Corpus.__new__(Corpus)          # verdict() needs no corpus for this
+
+    for reserve, senior in (("Celta de Vigo II", "Celta"),
+                            ("Barcelona B", "Barcelona"),
+                            ("PAOK II", "PAOK"),
+                            ("Benfica B", "Benfica")):
+        same, why = corpus.verdict(reserve, senior)
+        assert not same, f"audit would merge {reserve} into {senior}"
+        assert "reserve" in why, why
+
+
+def test_the_guard_fires_on_a_mismatch_not_on_a_marker():
+    """It compares the two sides rather than looking for "II" in a name —
+    otherwise it would silently stop auditing Willem II, which is named after a
+    king and is a first team."""
+    from scripts.team_resolver import is_youth_side
+
+    assert is_youth_side("Willem II") is False
+    assert is_youth_side("Willem II Tilburg") is False
+    # Same value on both sides → the guard in Corpus.verdict does not trigger
+    # and the pair goes on to the country / division / head-to-head rules.
+    assert is_youth_side("Willem II") == is_youth_side("Willem II Tilburg")
