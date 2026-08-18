@@ -46,3 +46,6 @@ Thumbs.db
 
 # pytest JUnit report written by the CI summary step
 pytest-report.xml
+
+# Metered Odds API usage — regenerated continuously, not source
+backend/data/odds_usage.jsonl

@@ -759,6 +759,17 @@ docker compose exec -T backend \
 # among them on the very day one match reached the accumulator page twice.
 # Here they run against the real data, which is the only place they mean
 # anything. Advisory like the rest: it reports, it never fails the run.
+# What the month's Odds API credits are being spent on. The plan is 20,000 a
+# month and in August it was gone by the 13th, leaving 18 days with no odds, no
+# EV and no tickets — and nothing in the pipeline said so until the site was
+# already dark. A per-caller total costs nothing to print and makes the burn
+# visible while there is still budget left to protect.
+echo "" >> "$LOG"
+echo "[health] Odds API credit burn …" | tee -a "$LOG"
+docker compose exec -T backend \
+    python scripts/odds_budget_report.py --days 7 \
+    2>&1 | tee -a "$LOG" || true
+
 echo "" >> "$LOG"
 echo "[health] Serving-data assertions …" | tee -a "$LOG"
 docker compose exec -T backend \

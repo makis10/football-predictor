@@ -21,6 +21,7 @@ import time
 
 import requests
 from backend.app.redaction import redact  # noqa: E402
+from backend.app import odds_budget  # noqa: E402
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))  # project root
 
@@ -89,11 +90,11 @@ def fetch_scores(api_key: str, days_from: int) -> list[dict]:
         print(f"  Fetching {league_code} scores …", end=" ", flush=True)
 
         try:
-            resp = requests.get(url, params=params, timeout=15)
+            resp = odds_budget.get('european_scores', url, params=params, timeout=15)
             if resp.status_code == 429:
                 print("rate limited — waiting 65s …")
                 time.sleep(65)
-                resp = requests.get(url, params=params, timeout=15)
+                resp = odds_budget.get('european_scores', url, params=params, timeout=15)
             resp.raise_for_status()
 
             remaining = resp.headers.get("x-requests-remaining", "?")

@@ -19,13 +19,8 @@
     <key>StartCalendarInterval</key>
     <array>
         <dict><key>Hour</key><integer>0</integer><key>Minute</key><integer>0</integer></dict>
-        <dict><key>Hour</key><integer>3</integer><key>Minute</key><integer>0</integer></dict>
-        <dict><key>Hour</key><integer>6</integer><key>Minute</key><integer>0</integer></dict>
-        <dict><key>Hour</key><integer>9</integer><key>Minute</key><integer>0</integer></dict>
-        <dict><key>Hour</key><integer>12</integer><key>Minute</key><integer>0</integer></dict>
-        <dict><key>Hour</key><integer>15</integer><key>Minute</key><integer>0</integer></dict>
-        <dict><key>Hour</key><integer>18</integer><key>Minute</key><integer>0</integer></dict>
-        <dict><key>Hour</key><integer>21</integer><key>Minute</key><integer>0</integer></dict>
+        <dict><key>Hour</key><integer>8</integer><key>Minute</key><integer>0</integer></dict>
+        <dict><key>Hour</key><integer>16</integer><key>Minute</key><integer>0</integer></dict>
     </array>
 
     <key>WorkingDirectory</key>
@@ -46,6 +41,6 @@
     <string>__LOG_DIR__/odds-poll-stderr.log</string>
     <!-- No KeepAlive: this is a scheduled job (StartCalendarInterval). KeepAlive
          with SuccessfulExit=false would relaunch it on every failure → a
-         restart storm. The 3-hourly schedule is the only trigger. -->
+         restart storm. The 8-hourly schedule is the only trigger. -->
 </dict>
 </plist>

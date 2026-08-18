@@ -24,6 +24,11 @@ services:
       # tests read the stale copy baked into the image at `COPY . .` and fail
       # locally for a reason that has nothing to do with the code.
       - ./frontend/src:/app/frontend/src:ro
+      # Same reason, for the launchd schedules: the credit-budget test
+      # reads them to check the odds poll still runs 8-hourly. Without
+      # this it read the stale copy from the image and failed locally
+      # while passing in CI — which is the worst way round.
+      - ./launchd:/app/launchd:ro
     command: >
       sh -c "alembic upgrade head &&
              uvicorn backend.app.main:app --host 0.0.0.0 --port 8000 --reload"

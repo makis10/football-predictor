@@ -19,6 +19,7 @@ import sys
 from pathlib import Path
 
 import pandas as pd
+from backend.app import odds_budget  # noqa: E402
 
 ROOT     = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "backend" / "data" / "raw" / "international"
@@ -45,7 +46,8 @@ def _fetch_live_scores(sport_key: str) -> list[dict]:
     if not api_key:
         return []
     try:
-        resp = requests.get(
+        resp = odds_budget.get(
+            "national_scores",
             f"https://api.the-odds-api.com/v4/sports/{sport_key}/scores/",
             params={"apiKey": api_key, "daysFrom": 3},
             timeout=15,

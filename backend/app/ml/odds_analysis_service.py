@@ -31,6 +31,8 @@ import requests
 
 from backend.app.cache import CACHE_MISS, cache_get, cache_set
 
+from backend.app import odds_budget  # noqa: E402
+
 log = logging.getLogger("odds")
 
 ODDS_API_KEY   = os.getenv("ODDS_API_KEY", "")
@@ -226,7 +228,8 @@ def _fetch_national_games_cached(sport_key: str) -> list:
         return cached
 
     try:
-        resp = requests.get(
+        resp = odds_budget.get(
+            "national_league_odds",
             f"https://api.the-odds-api.com/v4/sports/{sport_key}/odds/",
             params={
                 "apiKey":     ODDS_API_KEY,
@@ -1244,7 +1247,8 @@ def _fetch_league_games_cached(league: str) -> list:
     games: list = []
     for sport_key in sport_keys:
         try:
-            resp = requests.get(
+            resp = odds_budget.get(
+                "club_league_odds",
                 f"https://api.the-odds-api.com/v4/sports/{sport_key}/odds/",
                 params={
                     "apiKey":     ODDS_API_KEY,
@@ -1314,7 +1318,8 @@ def _fetch_event_btts(event_id: str, sport_key: str) -> dict:
         return cached
 
     try:
-        resp = requests.get(
+        resp = odds_budget.get(
+            "event_btts",
             f"https://api.the-odds-api.com/v4/sports/{sport_key}/events/{event_id}/odds/",
             params={
                 "apiKey":     ODDS_API_KEY,
