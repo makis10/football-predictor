@@ -120,14 +120,26 @@ describe("premium surfaces are gated server-side", () => {
     expect(page).toMatch(/!session \?[\s\S]{0,400}LockedDetailPanel/);
   });
 
-  it("projections page gates before fetching anything", () => {
+  it("projections page shows the teaser and withholds the browser", () => {
+    // The teaser exists for SEO: this route was the biggest indexable surface
+    // and a bare lock traded all of it away. It renders the title race three
+    // deep; ProjectionsBrowser — the full field, Europe, relegation, expected
+    // points, history — must be behind the session check, not merely hidden.
     const page = readFileSync(path.join(SRC, "app/projections/page.tsx"), "utf8");
     expect(page).toContain("LockedDetailPanel");
-    const gateAt = page.indexOf("await getSession()");
-    const fetchAt = page.indexOf("getLeagueProjection(league)");
-    expect(gateAt).toBeGreaterThan(-1);
-    expect(fetchAt).toBeGreaterThan(-1);
-    expect(gateAt).toBeLessThan(fetchAt);
+    expect(page).toContain("ProjectionsTeaser");
+    expect(page).toMatch(/session \?[\s\S]{0,120}ProjectionsBrowser/);
+  });
+
+  it("the teaser renders at most three teams and only the title column", () => {
+    const teaser = readFileSync(path.join(SRC, "components/ProjectionsTeaser.tsx"), "utf8");
+    expect(teaser).toContain("TEASER_ROWS = 3");
+    expect(teaser).toContain("slice(0, TEASER_ROWS)");
+    // The withheld columns must not appear at all — rendering them faintly or
+    // behind a blur still ships the numbers.
+    for (const field of ["p_relegated", "p_top", "exp_points"]) {
+      expect(teaser, `${field} reaches the public HTML`).not.toContain(field);
+    }
   });
 
   it("the settled record stays public on both pages", () => {
