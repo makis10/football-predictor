@@ -1,6 +1,11 @@
 // Long-term projections live behind their own route so they're discoverable
-// (the home page only shows a table once you filter to a league). Public data —
-// results and model projections, no premium picks — so no freemium gate.
+// (the home page only shows a table once you filter to a league).
+//
+// Members-only since 2026-08-19. A title/relegation projection is a forecast we
+// sell, not a public fact, and it was the last premium surface still open. The
+// live league TABLES stay public — they are results, not predictions, and they
+// are reachable from the home page per league — so a logged-out visitor can
+// still check the site against reality before signing up.
 export const dynamic = "force-dynamic";
 
 import type { Metadata } from "next";
@@ -9,6 +14,8 @@ import ProjectionsBrowser, {
   type CompetitionProjection,
 } from "@/components/ProjectionsBrowser";
 import { getServerT } from "@/lib/i18n-server";
+import { getSession } from "@/lib/auth";
+import LockedDetailPanel from "@/components/LockedDetailPanel";
 
 export const metadata: Metadata = {
   title: "Long-term Projections | AI Tipster",
@@ -49,6 +56,28 @@ const COMPETITIONS: { league: string; category: "domestic" | "european" }[] = [
 
 export default async function ProjectionsPage() {
   const t = await getServerT();
+
+  // Gate BEFORE fetching: none of the projection numbers should reach the HTML
+  // for a logged-out visitor, and there is no point warming 26 competitions'
+  // Monte Carlo output for a page that will not render them.
+  if (!(await getSession())) {
+    return (
+      <div className="max-w-3xl mx-auto space-y-6">
+        <div>
+          <h1 className="text-2xl font-bold tracking-tight text-chalk">
+            {t("projPage.title")}
+          </h1>
+          <p className="text-sm text-chalk-3 mt-1">{t("projPage.desc")}</p>
+        </div>
+        <LockedDetailPanel
+          t={t}
+          title={t("locked.projections.title")}
+          body={t("locked.projections.body")}
+        />
+      </div>
+    );
+  }
+
   // Fetch every competition's table + projection in parallel. They're all
   // cached (re-primed by the daily warm-up), so this is cheap; a competition
   // that's out of season simply 404s and drops out below.

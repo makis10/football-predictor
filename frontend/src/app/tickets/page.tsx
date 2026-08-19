@@ -11,7 +11,7 @@ import TicketCard from "@/components/TicketCard";
 import TicketHistory from "@/components/TicketHistory";
 import { getServerT } from "@/lib/i18n-server";
 import { getSession } from "@/lib/auth";
-import Link from "next/link";
+import LockedDetailPanel from "@/components/LockedDetailPanel";
 
 export const dynamic = "force-dynamic";
 
@@ -83,7 +83,18 @@ export default async function TicketsPage() {
         </p>
       </section>
 
-      {tickets.length === 0 ? (
+      {/* Today's slips are members-only. Rendered server-side, so the legs,
+          prices and probabilities never reach the HTML for a logged-out
+          visitor. The settled record BELOW stays public on purpose: it is the
+          only evidence a stranger has that any of this works, and hiding it
+          would leave the gate asking them to take our word for it. */}
+      {!session ? (
+        <LockedDetailPanel
+          t={t}
+          title={t("locked.tickets.title")}
+          body={t("locked.tickets.body")}
+        />
+      ) : tickets.length === 0 ? (
         <div className="text-center py-16 text-chalk-3">
           <p className="text-4xl mb-4">🎟️</p>
           <p className="text-lg font-medium text-chalk-2">{t("tickets.empty.title")}</p>
@@ -110,14 +121,6 @@ export default async function TicketsPage() {
       {/* Every leg links to a match page, which is gated. Saying so here costs
           one line and stops the reader discovering it by hitting a wall after
           they were interested enough to click. */}
-      {!session && tickets.length > 0 && (
-        <p className="text-xs text-chalk-3">
-          {t("tickets.gate.note")}{" "}
-          <Link href="/register" className="text-chalk-2 underline underline-offset-2 hover:text-chalk">
-            {t("tickets.gate.cta")}
-          </Link>
-        </p>
-      )}
 
       {/* Track record */}
       <section className="space-y-3">
@@ -210,7 +213,11 @@ export default async function TicketsPage() {
       {/* The receipts behind that table — every earlier slip, settled or still
           running. Rendered after the record so the aggregate reads first and
           the individual slips back it up. */}
-      <TicketHistory tickets={history} />
+      {/* Open slips are premium: a slip cut two days ago with a seven-day
+          horizon is still bettable, so listing its legs here would hand a
+          logged-out visitor exactly what the gate above withholds. Settled
+          ones are the record and stay public. */}
+      <TicketHistory tickets={session ? history : history.filter((h) => h.outcome)} />
     </div>
   );
 }

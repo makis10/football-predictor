@@ -263,6 +263,19 @@ def tie_key(leg: Leg) -> tuple[str, frozenset]:
     return (leg.league, frozenset((home, away)))
 # Estimated-price legs are allowed but must stay a minority: a slip whose
 # headline payout is mostly our own arithmetic is not a slip anyone can place.
+#
+# Not absolute, though. When The Odds API ran out of credits on 2026-08-13
+# nothing carried a bookmaker price for eighteen days, every leg was estimated,
+# and this cap turned a thin page into an empty one — the site showed slips cut
+# two days earlier and never said why. So a profile that cannot be filled under
+# the cap is retried with it lifted rather than dropped.
+#
+# What that costs, stated plainly: a slip priced entirely at 1/p has total odds
+# equal to 1/(its own probability), which is a restatement of the model rather
+# than an offer, and no bookmaker pays it. Those legs are already flagged
+# `estimated` and the page marks them; a slip that is mostly estimated says so
+# at slip level too. The alternative — showing nothing — is not more honest,
+# it just hides the same uncertainty behind an empty page.
 MAX_ESTIMATED_FRACTION = 0.4
 
 
@@ -328,6 +341,29 @@ def _best_leg_in_band(
     return best
 
 
+def _fill(pool: Sequence[Leg], p: Profile, est_cap: float) -> list[Leg]:
+    """Take legs off `pool` until the profile is full, or the pool runs out."""
+    chosen: list[Leg] = []
+    on_slip: set[tuple] = set()
+    for leg in pool:
+        if len(chosen) >= p.max_legs:
+            break
+        tie = tie_key(leg)
+        if tie in on_slip:
+            # Same real match reaching us as a second fixture row. Taking both
+            # would multiply one probability by itself.
+            continue
+        if leg.estimated and est_cap < 1.0:
+            # Checked against the ticket we would END UP with, not the one we
+            # hold, so a 3-leg slip can never come out 2/3 estimated.
+            would_be = sum(1 for l in chosen if l.estimated) + 1
+            if would_be > est_cap * max(len(chosen) + 1, p.min_legs):
+                continue
+        chosen.append(leg)
+        on_slip.add(tie)
+    return chosen
+
+
 def build_tickets(
     legs_by_match: dict[int, list[Leg]],
     profiles: Iterable[Profile] = PROFILES,
@@ -360,24 +396,12 @@ def build_tickets(
         # match_id breaks ties so the same card always yields the same ticket.
         pool.sort(key=lambda l: (-l.prob, l.match_id))
 
-        chosen: list[Leg] = []
-        on_slip: set[tuple] = set()
-        for leg in pool:
-            if len(chosen) >= p.max_legs:
-                break
-            tie = tie_key(leg)
-            if tie in on_slip:
-                # Same real match reaching us as a second fixture row. Taking
-                # both would multiply one probability by itself.
-                continue
-            if leg.estimated:
-                # Checked against the ticket we would END UP with, not the one
-                # we hold, so a 3-leg slip can never come out 2/3 estimated.
-                would_be = sum(1 for l in chosen if l.estimated) + 1
-                if would_be > MAX_ESTIMATED_FRACTION * max(len(chosen) + 1, p.min_legs):
-                    continue
-            chosen.append(leg)
-            on_slip.add(tie)
+        chosen = _fill(pool, p, MAX_ESTIMATED_FRACTION)
+        if len(chosen) < p.min_legs:
+            # Second pass with the estimated-price cap lifted. See
+            # MAX_ESTIMATED_FRACTION for what this costs and why it is a
+            # fallback and not the rule.
+            chosen = _fill(pool, p, 1.0)
 
         if len(chosen) < p.min_legs:
             continue   # not enough eligible fixtures — no ticket

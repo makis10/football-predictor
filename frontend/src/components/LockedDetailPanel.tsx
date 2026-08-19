@@ -1,9 +1,14 @@
 /**
  * Locked match-detail panel — freemium gate for logged-out visitors.
  *
- * Rendered server-side INSTEAD of the prediction/analysis sections for
- * upcoming matches, so none of the premium numbers ever reach the HTML.
- * Finished matches stay public (they're the transparency/accuracy proof).
+ * Rendered server-side INSTEAD of the premium sections, so none of the gated
+ * numbers ever reach the HTML — the gate cannot be lifted with dev-tools.
+ *
+ * Used by three surfaces, all for the same reason: upcoming match detail,
+ * /tickets and /projections. What stays public everywhere is the record —
+ * finished matches, settled slips, real league tables. That is the accuracy
+ * proof, and gating it would hide the only evidence a visitor has that any of
+ * this works. Pass `title`/`body` to override the fixture-specific copy.
  */
 import Link from "next/link";
 import type { TFunc } from "@/lib/i18n";
@@ -12,20 +17,26 @@ export default function LockedDetailPanel({
   home,
   away,
   t,
+  title,
+  body,
 }: {
-  home: string;
-  away: string;
+  home?: string;
+  away?: string;
   t: TFunc;
+  /** Override the match-specific copy. Used by /tickets and /projections,
+   *  which are gated for the same reason but are not about one fixture. */
+  title?: string;
+  body?: string;
 }) {
   return (
     <div className="card p-8 text-center space-y-4">
       <p className="text-4xl">🔒</p>
       <div>
         <p className="text-lg font-semibold text-chalk">
-          {t("locked.detail.title", { home, away })}
+          {title ?? t("locked.detail.title", { home: home ?? "", away: away ?? "" })}
         </p>
         <p className="text-sm text-chalk-2 mt-2 max-w-md mx-auto">
-          {t("locked.detail.body")}
+          {body ?? t("locked.detail.body")}
         </p>
       </div>
       <div className="flex items-center justify-center gap-3">

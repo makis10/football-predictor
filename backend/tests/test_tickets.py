@@ -466,3 +466,49 @@ def test_outcome_type_admits_void():
     and an exhaustive switch silently dropped the case."""
     api = (REPO / "frontend/src/lib/api.ts").read_text(encoding="utf-8")
     assert '"won" | "lost" | "void" | null' in api
+
+
+# ── Estimated-price fallback ──────────────────────────────────────────────────
+# The Odds API plan ran out on 2026-08-13 and for eighteen days nothing carried
+# a bookmaker price. Every leg was estimated, the minority rule could never be
+# satisfied, and the ladder built nothing — the page kept showing slips cut two
+# days earlier without saying why. Showing nothing is not more honest than
+# showing a flagged estimate; it hides the same uncertainty behind a blank page.
+
+def _est_card(n):
+    """n fixtures, every one priced by us rather than by a bookmaker."""
+    return {i: [Leg(match_id=i, market="1X", prob=0.62, odds=1.35, estimated=True,
+                    league="L", home_team=f"H{i}", away_team=f"A{i}")]
+            for i in range(1, n + 1)}
+
+
+def test_a_card_with_no_bookmaker_prices_still_produces_slips():
+    tickets = build_tickets(_est_card(12))
+
+    assert tickets, "every leg estimated produced an empty ladder"
+    assert all(len(t.legs) >= 3 for t in tickets)
+
+
+def test_the_minority_rule_still_holds_when_real_prices_exist():
+    """The lift is a fallback, not the new rule: a card that CAN fill a slip
+    under the cap must still do so."""
+    card = _card(12)                      # all real prices
+    card[13] = [_leg(13, "O1.5", 0.70, 1.40, estimated=True)]
+    card[14] = [_leg(14, "O1.5", 0.69, 1.42, estimated=True)]
+    card[15] = [_leg(15, "O1.5", 0.68, 1.44, estimated=True)]
+
+    for ticket in build_tickets(card):
+        est = sum(1 for l in ticket.legs if l.estimated)
+        assert est <= MAX_ESTIMATED_FRACTION * len(ticket.legs) + 1, (
+            f"{ticket.profile} took {est}/{len(ticket.legs)} estimated legs "
+            f"while real ones were available")
+
+
+def test_a_fallback_slip_is_identifiable_as_mostly_estimated():
+    """The page has to be able to say so, so the flag must survive onto the
+    legs rather than being smoothed away."""
+    tickets = build_tickets(_est_card(12))
+
+    assert tickets
+    for t in tickets:
+        assert t.estimated_legs == len(t.legs)

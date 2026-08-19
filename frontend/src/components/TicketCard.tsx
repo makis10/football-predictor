@@ -204,13 +204,22 @@ export default function TicketCard({ ticket }: { ticket: Ticket }) {
         </div>
       </footer>
 
-      {estimated > 0 && (
+      {/* A slip that is MOSTLY our own prices is a different claim from one
+          with an estimated leg or two, and it needs saying at slip level: its
+          headline return is 1/(its own probability), which restates the model
+          rather than quoting an offer. Happens when no bookmaker is pricing
+          the card at all — see MAX_ESTIMATED_FRACTION in ml/tickets.py. */}
+      {estimated > ticket.legs.length / 2 ? (
+        <p className="px-4 pb-3 text-[11px] leading-snug font-medium text-est">
+          {t("tickets.estimatedSlip")}
+        </p>
+      ) : estimated > 0 ? (
         <p className="px-4 pb-3 text-[11px] leading-snug text-est/80">
           {t(estimated === 1
                ? "tickets.estimated.note.one"
                : "tickets.estimated.note.many", { n: estimated })}
         </p>
-      )}
+      ) : null}
     </article>
   );
 }

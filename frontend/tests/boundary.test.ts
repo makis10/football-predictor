@@ -102,3 +102,63 @@ describe("footer accuracy claim", () => {
     expect(layout).toContain("getFooterAccuracy");
   });
 });
+
+// ── Freemium gate ─────────────────────────────────────────────────────────────
+// Tickets and long-term projections went members-only on 2026-08-19. The gate
+// is only worth anything if it is rendered SERVER-side instead of the premium
+// content — a client-side hide still ships the numbers in the HTML, where any
+// visitor can read them from dev-tools.
+
+describe("premium surfaces are gated server-side", () => {
+  it("tickets page renders the lock instead of the slips", () => {
+    const page = readFileSync(path.join(SRC, "app/tickets/page.tsx"), "utf8");
+    expect(page).toContain("getSession");
+    expect(page).toContain("LockedDetailPanel");
+    // The lock must come before the slips in the same conditional, not beside
+    // them: `{session && <Slips/>}` next to `{!session && <Lock/>}` drifts
+    // apart the first time someone edits one branch.
+    expect(page).toMatch(/!session \?[\s\S]{0,400}LockedDetailPanel/);
+  });
+
+  it("projections page gates before fetching anything", () => {
+    const page = readFileSync(path.join(SRC, "app/projections/page.tsx"), "utf8");
+    expect(page).toContain("LockedDetailPanel");
+    const gateAt = page.indexOf("await getSession()");
+    const fetchAt = page.indexOf("getLeagueProjection(league)");
+    expect(gateAt).toBeGreaterThan(-1);
+    expect(fetchAt).toBeGreaterThan(-1);
+    expect(gateAt).toBeLessThan(fetchAt);
+  });
+
+  it("the settled record stays public on both pages", () => {
+    // The accuracy proof is the one thing a stranger can check us against.
+    // Gating it would leave the lock asking them to take our word for it.
+    const page = readFileSync(path.join(SRC, "app/tickets/page.tsx"), "utf8");
+    const gateAt = page.indexOf("locked.tickets.title");
+    const recordAt = page.indexOf("tickets.record.title");
+    expect(recordAt).toBeGreaterThan(gateAt);
+  });
+
+  it("every gate string exists in both languages", () => {
+    const i18n = readFileSync(path.join(SRC, "lib/i18n.ts"), "utf8");
+    for (const key of [
+      "locked.tickets.title", "locked.tickets.body",
+      "locked.projections.title", "locked.projections.body",
+      "tickets.estimatedSlip",
+    ]) {
+      const hits = i18n.split(`"${key}"`).length - 1;
+      expect(hits, `${key} appears ${hits}x, expected 2 (en + el)`).toBe(2);
+    }
+  });
+});
+
+describe("the ticket gate does not leak live slips through the history", () => {
+  it("open slips are withheld from logged-out visitors", () => {
+    // A slip is cut with a horizon of up to seven days, so an OPEN slip from
+    // two days ago is still bettable — listing its legs in the public history
+    // hands over exactly what the lock above withholds. Settled ones are the
+    // record and stay public.
+    const page = readFileSync(path.join(SRC, "app/tickets/page.tsx"), "utf8");
+    expect(page).toMatch(/TicketHistory[\s\S]{0,200}session \?[\s\S]{0,120}outcome/);
+  });
+});
