@@ -28,6 +28,11 @@ class Match(Base):
     # one league id: "1st Qualifying Round" / "League Phase - 3" / "Round of 16".
     # NULL for domestic leagues, which are a single round-robin throughout.
     round: Mapped[Optional[str]] = mapped_column(String(60), nullable=True, index=True)
+    # API-Football's own id for this fixture, when it came from that feed.
+    # Its /odds endpoint keys on this and returns no team names, so without it
+    # there is nothing to join bookmaker prices to. NULL means the fixture came
+    # from another source and API-Football cannot price it.
+    api_fixture_id: Mapped[Optional[int]] = mapped_column(Integer, nullable=True, index=True)
     home_team: Mapped[str] = mapped_column(String(100), index=True)
     away_team: Mapped[str] = mapped_column(String(100), index=True)
 

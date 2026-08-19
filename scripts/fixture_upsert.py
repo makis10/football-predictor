@@ -115,6 +115,11 @@ def upsert_fixtures(
             # table can't tell them apart from a qualifier.
             if f.get("round") and exists.round != f["round"]:
                 exists.round = f["round"]
+            # Same backfill for the API-Football fixture id: every row written
+            # before 0033 has NULL, and without it that fixture can never be
+            # priced from API-Football's /odds.
+            if f.get("api_fixture_id") and not exists.api_fixture_id:
+                exists.api_fixture_id = f["api_fixture_id"]
             skipped += 1
             touched_ids.add(exists.id)
             continue
@@ -148,6 +153,8 @@ def upsert_fixtures(
             old_date = candidate.match_date
             candidate.match_date   = f["match_date"]
             candidate.kickoff_time = f.get("kickoff_time")
+            if f.get("api_fixture_id"):
+                candidate.api_fixture_id = f["api_fixture_id"]
             rescheduled += 1
             touched_ids.add(candidate.id)
             print(f"  ↻ rescheduled {f['home_team']} vs {f['away_team']} "
@@ -161,6 +168,7 @@ def upsert_fixtures(
             league=f["league"],
             season=f["season"],
             round=f.get("round"),      # cups only; NULL for domestic leagues
+            api_fixture_id=f.get("api_fixture_id"),
             home_team=f["home_team"],
             away_team=f["away_team"],
         )

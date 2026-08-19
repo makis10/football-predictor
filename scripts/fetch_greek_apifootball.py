@@ -104,6 +104,7 @@ def main() -> None:
         home = resolve(entry["teams"]["home"]["name"]) or entry["teams"]["home"]["name"]
         away = resolve(entry["teams"]["away"]["name"]) or entry["teams"]["away"]["name"]
         base = {
+            "api_fixture_id": fx.get("id"),
             "match_date":   dt_utc.date(),
             "kickoff_time": dt_utc.time().replace(microsecond=0),
             "league":       LEAGUE_CODE,

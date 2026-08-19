@@ -552,6 +552,19 @@ docker compose exec -T backend \
 # API-Football is reachable. Placed after predictions/odds so the slips are cut
 # from today's numbers, and before the cache clear below so the page serves them
 # immediately.
+# Bookmaker odds from API-Football, for everything The Odds API did not price.
+# Two sources because one is not enough: The Odds API plan is 20,000 credits a
+# month and when it ran out on 2026-08-13 every fixture lost its price, so the
+# ladder below built nothing for the rest of the month. This runs second and
+# only fills the gaps, so it costs nothing when the primary source is healthy.
+echo "" >> "$LOG"
+echo "[8d/9] Filling missing odds from API-Football …" | tee -a "$LOG"
+if [ "$API_FOOTBALL_OK" -eq 1 ]; then
+docker compose exec -T backend \
+    python scripts/fetch_odds_apifootball.py --days 7 \
+    2>&1 | tee -a "$LOG" || _fail $LINENO
+else echo "  [skip] API-Football blocked." | tee -a "$LOG"; fi
+
 echo "" >> "$LOG"
 echo "[9a/9] Cutting today's tickets …" | tee -a "$LOG"
 docker compose exec -T backend \

@@ -173,6 +173,7 @@ def parse_fixtures(league_code: str, raw: list[dict], resolve) -> tuple[list[dic
             continue
 
         base = {
+            "api_fixture_id": fx.get("id"),
             "match_date":   dt_utc.date(),
             "kickoff_time": dt_utc.time().replace(microsecond=0),
             "league":       league_code,
