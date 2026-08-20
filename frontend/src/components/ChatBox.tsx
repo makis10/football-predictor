@@ -172,7 +172,7 @@ export default function ChatBox() {
             <span className="text-lg">⚽</span>
             <div className="flex-1 min-w-0">
               <p className="text-sm font-semibold text-chalk leading-none">Prediction Assistant</p>
-              <p className="text-[10px] text-chalk-3 mt-0.5">Llama 3.3 70B · Groq</p>
+              <p className="text-[10px] text-chalk-3 mt-0.5">gpt-oss-120b · Groq</p>
             </div>
             <button
               onClick={() => setOpen(false)}
