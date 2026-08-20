@@ -39,6 +39,7 @@ def main() -> int:
     by_day: dict[date, int] = collections.Counter()
     by_caller: dict[str, list[int]] = collections.defaultdict(lambda: [0, 0])
     free_calls = 0
+    refused = refused_cost = 0
 
     with open(PATH, encoding="utf-8") as fh:
         for line in fh:
@@ -50,6 +51,18 @@ def main() -> int:
             if day < cutoff:
                 continue
             cost = row.get("cost", 0)
+            status = row.get("status")
+            # A refused call is not a charged one. With the plan out of credits
+            # every request comes back 401 OUT_OF_USAGE_CREDITS and bills
+            # nothing — counting those as spend turns an outage into a fake
+            # overspend and would have argued for an upgrade nobody needs.
+            # They are still worth showing: they are what the same schedule
+            # WOULD cost once credits return.
+            billed = status is not None and 200 <= status < 300
+            if not billed:
+                refused += 1
+                refused_cost += cost
+                continue
             by_day[day] += cost
             slot = by_caller[row.get("caller", "?")]
             slot[0] += cost
@@ -58,7 +71,11 @@ def main() -> int:
                 free_calls += 1
 
     if not by_day:
-        print("Ledger is empty for that window.")
+        print(f"No BILLED calls in the last {args.days}d.")
+        if refused:
+            print(f"  {refused} call(s) were refused (would have cost "
+                  f"{refused_cost:,} credits on a live plan) — the account is "
+                  f"out of credits, so nothing was charged.")
         return 0
 
     print(f"── credits by caller (last {args.days}d) " + "─" * 28)
@@ -80,6 +97,9 @@ def main() -> int:
     print(f"  projected month: {mean * 31:,.0f}  "
           f"({'FITS' if mean * 31 <= PLAN_CREDITS else 'OVER BY '
               + format(mean * 31 - PLAN_CREDITS, ',.0f')})")
+    if refused:
+        print(f"\n  {refused} call(s) refused and NOT charged (would have been "
+              f"{refused_cost:,} credits on a live plan).")
     if free_calls:
         print(f"\n  ({free_calls} free call(s) recorded — /sports and /events "
               f"cost nothing and are not counted above)")

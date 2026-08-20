@@ -82,3 +82,59 @@ def test_the_scheduled_burn_fits_inside_the_plan():
     )
     assert per_day < DAILY_BUDGET, (
         f"scheduled burn is {per_day}/day against a budget of {DAILY_BUDGET:.0f}")
+
+
+# ── billed vs refused ─────────────────────────────────────────────────────────
+# With the plan out of credits every request comes back 401 and bills nothing.
+# The first version of the report counted those as spend, so the daily health
+# section showed "992 credits — OVER budget" on a day the account was charged
+# zero. That reads as an argument for an upgrade nobody needs.
+
+def _ledger(tmp_path, rows):
+    import json
+    p = tmp_path / "odds_usage.jsonl"
+    p.write_text("\n".join(json.dumps(r) for r in rows) + "\n", encoding="utf-8")
+    return str(p)
+
+
+def _row(status, cost=2, caller="club_league_odds"):
+    from datetime import datetime, timezone
+    return {"at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+            "caller": caller, "endpoint": "/sports/x/odds/",
+            "markets": "h2h,totals", "regions": "eu", "cost": cost,
+            "status": status}
+
+
+def test_refused_calls_are_not_counted_as_spend(tmp_path, monkeypatch, capsys):
+    import scripts.odds_budget_report as rep
+
+    monkeypatch.setattr(rep, "PATH", _ledger(tmp_path, [_row(401) for _ in range(50)]))
+    monkeypatch.setattr("sys.argv", ["odds_budget_report.py", "--days", "7"])
+    rep.main()
+
+    out = capsys.readouterr().out
+    assert "No BILLED calls" in out
+    assert "refused" in out
+    assert "OVER" not in out, "an outage was reported as an overspend"
+
+
+def test_refused_calls_still_report_what_they_would_have_cost(tmp_path, monkeypatch, capsys):
+    """Worth knowing: it is what the same schedule bills once credits return."""
+    import scripts.odds_budget_report as rep
+
+    monkeypatch.setattr(rep, "PATH", _ledger(tmp_path, [_row(401) for _ in range(10)]))
+    monkeypatch.setattr("sys.argv", ["odds_budget_report.py", "--days", "7"])
+    rep.main()
+
+    assert "20 credits" in capsys.readouterr().out
+
+
+def test_successful_calls_are_counted(tmp_path, monkeypatch, capsys):
+    import scripts.odds_budget_report as rep
+
+    monkeypatch.setattr(rep, "PATH", _ledger(tmp_path, [_row(200) for _ in range(10)]))
+    monkeypatch.setattr("sys.argv", ["odds_budget_report.py", "--days", "7"])
+    rep.main()
+
+    out = capsys.readouterr().out
+    assert "20" in out and "club_league_odds" in out
