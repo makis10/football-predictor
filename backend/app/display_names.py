@@ -191,6 +191,9 @@ DISPLAY_NAMES: dict[str, str] = {
     'Athletico-PR': 'Athletico Paranaense',
     'Sporting Gijon': 'Sporting Gijón',
     'Waasland-Beveren': 'SK Beveren',
+    # Renamed from Saburtalo Tbilisi in 2024. The join key stays under the
+    # old name so eleven seasons of history stay attached to the club.
+    'Saburtalo': 'Iberia 1999',
 }
 
 

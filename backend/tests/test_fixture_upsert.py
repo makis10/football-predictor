@@ -130,3 +130,70 @@ def test_the_window_covers_the_midweek_refix_leagues_actually_use():
 
     sig = inspect.signature(upsert_fixtures)
     assert sig.parameters["reschedule_window_days"].default >= 12
+
+
+def test_a_self_contradicting_feed_cannot_add_a_second_row(db):
+    """2026-08-23: The Odds API listed "Kifisia vs AEK" on BOTH the 29th and
+    the 30th in one response — the fixture had moved and the feed was showing
+    it at its old and new dates at once. The ambiguity guard read that as a
+    genuine double-header, skipped the reschedule branch, and inserted the
+    second one. A feed that is not the schedule of record never gets to add a
+    fixture for a tie we already hold, on any reasoning."""
+    upsert_fixtures(db, [_fixture(date(2026, 8, 29), "Kifisia", "AEK", "GreekSL")])
+    kept = _rows(db)[0].id
+
+    upsert_fixtures(db, [
+        _fixture(date(2026, 8, 29), "Kifisia", "AEK", "GreekSL"),
+        _fixture(date(2026, 8, 30), "Kifisia", "AEK", "GreekSL"),
+    ], authoritative=False)
+
+    rows = _rows(db)
+    assert len(rows) == 1, "the corroborating feed added a second row for one match"
+    assert rows[0].id == kept and rows[0].match_date == date(2026, 8, 29)
+
+
+def test_an_authoritative_feed_may_still_list_a_real_double_header(db):
+    """The guard exists for a reason: two friendlies between the same clubs at
+    the same ground inside the window are two matches, and collapsing them
+    would delete one."""
+    upsert_fixtures(db, [
+        _fixture(date(2026, 8, 22), league="ClubFriendly"),
+        _fixture(date(2026, 8, 29), league="ClubFriendly"),
+    ])
+
+    assert len(_rows(db)) == 2
+
+
+def test_the_feed_id_beats_both_the_name_and_the_date(db):
+    """The strongest signal available. A club renamed mid-season, or a fixture
+    moved further than the window, still resolves to the row we already have —
+    both Kifisia rows carried API-Football id 1593299 and we split them anyway."""
+    first = dict(_fixture(date(2026, 8, 29), "Kifisia", "AEK", "GreekSL"),
+                 api_fixture_id=1593299)
+    upsert_fixtures(db, [first])
+    original = _rows(db)[0].id
+
+    moved = dict(_fixture(date(2026, 10, 15), "Kifisia FC", "AEK Athens", "GreekSL"),
+                 api_fixture_id=1593299)
+    upsert_fixtures(db, [moved])
+
+    rows = _rows(db)
+    assert len(rows) == 1, "same fixture id produced two rows"
+    assert rows[0].id == original
+    assert rows[0].match_date == date(2026, 10, 15)
+
+
+def test_a_played_fixture_is_not_rewritten_by_its_feed_id(db):
+    """A settled result is the record; a late feed correction must not move it."""
+    row_in = dict(_fixture(date(2026, 8, 29), "Kifisia", "AEK", "GreekSL"),
+                  api_fixture_id=1593299)
+    upsert_fixtures(db, [row_in])
+    row = _rows(db)[0]
+    row.result, row.home_goals, row.away_goals = "H", 2, 1
+    db.commit()
+
+    upsert_fixtures(db, [dict(row_in, match_date=date(2026, 9, 30))])
+
+    rows = _rows(db)
+    assert len(rows) == 2, "a played match was moved by a feed id"
+    assert rows[0].result == "H"

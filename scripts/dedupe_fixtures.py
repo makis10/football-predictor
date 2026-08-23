@@ -68,6 +68,14 @@ def main() -> None:
         # day, with different predictions on each.
         groups: dict[tuple, list[Match]] = defaultdict(list)
         for m in rows:
+            # Same feed id is the same match, whatever the dates say. This is
+            # the one grouping that needs no date at all: on 2026-08-23
+            # "Kifisia vs AEK" sat on both the 29th and the 30th, and both rows
+            # carried API-Football id 1593299 — the day-keyed grouping below
+            # could never see it, and the daily alert had to catch it instead.
+            if m.api_fixture_id and m.result is None:
+                groups[(m.league, "apiid", m.api_fixture_id)].append(m)
+                continue
             sides = frozenset((_slug(canon(m.home_team)), _slug(canon(m.away_team))))
             groups[(m.league, m.match_date, sides)].append(m)
 
@@ -77,7 +85,7 @@ def main() -> None:
             return
 
         renamed = deleted = skipped = 0
-        for key, members in sorted(dupes.items(), key=lambda kv: kv[0][1]):
+        for key, members in sorted(dupes.items(), key=lambda kv: str(kv[0][1])):
             members.sort(key=lambda m: m.id)
             settled = [m for m in members if m.result is not None]
             if len(settled) > 1:
@@ -89,10 +97,21 @@ def main() -> None:
             # Prefer a settled row as the keeper (it carries the real outcome),
             # otherwise the oldest — the one other tables reference.
             keeper = settled[0] if settled else members[0]
+            # Grouped by feed id, the members disagree about the DATE and the
+            # newest row carries the correction the feed just published. Move
+            # the keeper onto it rather than keeping the stale day.
+            if key[1] == "apiid":
+                newest = max(members, key=lambda m: m.id)
+                if keeper.match_date != newest.match_date:
+                    print(f"    ↻ {keeper.match_date} → {newest.match_date} "
+                          f"(feed id {key[2]})")
+                    if args.apply:
+                        keeper.match_date   = newest.match_date
+                        keeper.kickoff_time = newest.kickoff_time
             losers = [m for m in members if m.id != keeper.id]
             want_h, want_a = canon(keeper.home_team), canon(keeper.away_team)
 
-            print(f"  {key[0]} {key[1]}: keep id={keeper.id} "
+            print(f"  {key[0]} {key[1] if key[1] != 'apiid' else f'fixture {key[2]}'}: keep id={keeper.id} "
                   f"({keeper.home_team!r} vs {keeper.away_team!r})"
                   + (f" → rename to ({want_h!r} vs {want_a!r})"
                      if (want_h, want_a) != (keeper.home_team, keeper.away_team) else "")

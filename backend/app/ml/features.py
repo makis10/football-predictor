@@ -732,6 +732,19 @@ _CSV_TEAM_CANON: dict[str, str] = {
     # table rather than an affix rule: "VfL X → X" would also merge clubs that
     # merely share a town, and the training data is not the place to guess.
     "VfL Wolfsburg": "Wolfsburg",                  #   1 → 544
+
+    # ── 2026-08-23 ──────────────────────────────────────────────────────────
+    # Not a spelling this time — a real RENAME. Saburtalo Tbilisi became FC
+    # Iberia 1999, and API-Football switched over for the 2026 season, so the
+    # club arrived under a new name carrying 20 rows against eleven seasons of
+    # Georgian history (2015–2025) under the old one. Both names resolved to
+    # the same API id 3502, which is how the identity test caught it.
+    #
+    # Folded the new name into the old because the JOIN KEY has to be the one
+    # the history is under — otherwise the club is a newcomer with a fortnight
+    # of form. What the site PRINTS is the current name, set in
+    # display_names.py; that split is the whole reason it exists.
+    "FC Iberia 1999": "Saburtalo",                 #  20 → 313
 }
 
 

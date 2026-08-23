@@ -124,29 +124,57 @@ def upsert_fixtures(
             touched_ids.add(exists.id)
             continue
 
-        # 2. Reschedule: same pairing, unresolved, nearby date
-        pair = (f["league"], f["home_team"], f["away_team"])
-        candidate = None
-        if pair not in ambiguous:
-            window = timedelta(days=reschedule_window_days)
-            candidate = db.scalars(
+        # 2a. Same feed id — the strongest signal there is. Immune to a
+        # renamed club and to any date change, however large. Only
+        # API-Football rows carry one.
+        if f.get("api_fixture_id"):
+            same_id = db.scalars(
                 select(Match).where(
-                    Match.home_team  == f["home_team"],
-                    Match.away_team  == f["away_team"],
-                    Match.league     == f["league"],
+                    Match.api_fixture_id == f["api_fixture_id"],
+                    Match.league == f["league"],
                     Match.result.is_(None),
-                    Match.match_date >= f["match_date"] - window,
-                    Match.match_date <= f["match_date"] + window,
                 )
             ).first()
-        if candidate is not None and not authoritative:
+            if same_id is not None:
+                if same_id.match_date != f["match_date"]:
+                    print(f"  ↻ rescheduled {f['home_team']} vs {f['away_team']} "
+                          f"({f['league']}): {same_id.match_date} → "
+                          f"{f['match_date']}  [same fixture id]")
+                    rescheduled += 1
+                same_id.match_date   = f["match_date"]
+                same_id.kickoff_time = f.get("kickoff_time")
+                touched_ids.add(same_id.id)
+                continue
+
+        # 2b. Reschedule: same pairing, unresolved, nearby date
+        pair = (f["league"], f["home_team"], f["away_team"])
+        window = timedelta(days=reschedule_window_days)
+        nearby = db.scalars(
+            select(Match).where(
+                Match.home_team  == f["home_team"],
+                Match.away_team  == f["away_team"],
+                Match.league     == f["league"],
+                Match.result.is_(None),
+                Match.match_date >= f["match_date"] - window,
+                Match.match_date <= f["match_date"] + window,
+            )
+        ).first()
+        # A corroborating feed defers whenever we already hold the tie —
+        # including when its own batch is self-contradictory. On 2026-08-23 The
+        # Odds API listed "Kifisia vs AEK" on BOTH the 29th and the 30th; the
+        # ambiguity guard below read that as a genuine double-header, skipped
+        # the reschedule branch, and inserted the second one. A feed that is
+        # not the schedule of record does not get to add a fixture for a tie we
+        # already have, on any reasoning.
+        candidate = nearby if pair not in ambiguous else None
+        if nearby is not None and not authoritative:
             # We hold this tie on another date from a source that outranks this
             # one. Moving it would corrupt a correct date; inserting would give
             # the fixture two rows and let one accumulator carry it twice.
             deferred += 1
-            touched_ids.add(candidate.id)
+            touched_ids.add(nearby.id)
             print(f"  = deferred {f['home_team']} vs {f['away_team']} "
-                  f"({f['league']}): keeping {candidate.match_date}, "
+                  f"({f['league']}): keeping {nearby.match_date}, "
                   f"feed says {f['match_date']}")
             continue
         if candidate is not None:
