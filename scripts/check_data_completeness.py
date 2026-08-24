@@ -232,6 +232,31 @@ def main() -> None:
             "  AND ABS(b.match_date - a.match_date) BETWEEN 1 AND 21 "
             "ORDER BY a.match_date"),
             {"today": date.today()}).fetchall()
+        # 10. one club name, two countries — in the DATABASE
+        #
+        # The club-identity audit reads the CSVs, so it can only see a fusion
+        # that exists in the training data. This one lived in the fixture table
+        # alone: "Vitoria SC" resolved to "Vitoria", which in our CSVs is the
+        # BRAZILIAN club, so twelve PrimeiraLiga fixtures were stored under it
+        # and priced off a Brazilian side's Elo while Portugal's Vitória SC sat
+        # under "Guimaraes" with 528 rows nobody was reading. Invisible to
+        # every check we had, for months.
+        from backend.app.ml.league_registry import LEAGUE_COUNTRY_TIER
+
+        rows = db.execute(text(
+            "SELECT home_team AS team, league FROM matches "
+            "UNION SELECT away_team AS team, league FROM matches")).fetchall()
+        countries: dict[str, set] = {}
+        for r in rows:
+            country = (LEAGUE_COUNTRY_TIER.get(r.league) or (None,))[0]
+            if country:
+                countries.setdefault(r.team, set()).add(country)
+        for team, seen in sorted(countries.items()):
+            if len(seen) > 1:
+                _alert(f"club identity: '{team}' plays in {sorted(seen)} — one "
+                       f"name, two countries; its Elo and form are the two "
+                       f"clubs averaged together")
+
         for d in dupes:
             _alert(f"duplicate fixture: {d.league} {d.home_team} vs {d.away_team} "
                    f"stored twice — id {d.id_a} on {d.date_a} and id {d.id_b} on "

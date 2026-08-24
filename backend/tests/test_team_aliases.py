@@ -19,7 +19,12 @@ from scripts.team_resolver import COMMON_ALIASES, build_resolver, known_team_nam
 CASES = [
     ("Braga",              "Sp Braga"),
     ("CD Nacional",        "Nacional"),
-    ("Vitoria SC",         "Vitoria"),
+    # Two different clubs, two countries. "Vitoria" in our CSVs is the
+    # BRAZILIAN club (479 rows, all BrazilSerieA/SerieB files); Portugal's
+    # Vitória SC is "Guimaraes" (528 rows). This case asserted the fusion, and
+    # production followed it: 12 PrimeiraLiga fixtures were stored under the
+    # Brazilian club's name and priced off its Elo.
+    ("Vitoria SC",         "Guimaraes"),
     ("Málaga",             "Malaga"),
     ("Schalke",            "Schalke 04"),
     ("NEC Nijmegen",       "Nijmegen"),

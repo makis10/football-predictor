@@ -694,6 +694,21 @@ if [ "$DAY_OF_WEEK" -eq 1 ]; then
         python scripts/compute_predictions.py --force \
         2>&1 | tee -a "$LOG" || _fail $LINENO
 
+    # --force DELETES every future prediction and rebuilds it, so the bookmaker
+    # odds go with it — and they are rebuilt from The Odds API, which has been
+    # out of credits since 2026-08-13. On Monday 2026-08-24 that took the card
+    # from 69% priced to 5% in one step, an hour after step 8d had filled it.
+    # Refilling here is cheap (one request per league-day, and only for what is
+    # actually missing) and it is the difference between a Monday with an
+    # accumulator ladder and a Monday without one.
+    echo "" >> "$LOG"
+    echo "[10b/12] Re-filling odds wiped by the force-recompute …" | tee -a "$LOG"
+    if [ "$API_FOOTBALL_OK" -eq 1 ]; then
+    docker compose exec -T backend \
+        python scripts/fetch_odds_apifootball.py --days 7 \
+        2>&1 | tee -a "$LOG" || _fail $LINENO
+    else echo "  [skip] API-Football blocked." | tee -a "$LOG"; fi
+
     echo "" >> "$LOG"
     echo "[11/12] Backfilling bm_odds from freshly-downloaded CSVs …" | tee -a "$LOG"
     docker compose exec -T backend \

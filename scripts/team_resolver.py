@@ -380,6 +380,27 @@ COMMON_ALIASES: dict[str, str] = {
     # real 97-match history — so the membership guard could not see it was a
     # duplicate. Pin the thin spelling onto the fat one.
     "OFI":                "OFI Crete",
+
+    # ── 2026-08-24 ──────────────────────────────────────────────────────────
+    # football-data.org's result feed calls it "Ipswich Town"; we hold 46 rows
+    # of the club as "Ipswich". The mapping already existed — in
+    # features._SNAP_NAME_MAP, which canonical() does not read. Two tables for
+    # the same job, agreeing on everything except the one that mattered: the
+    # 22 Aug Ipswich–Sunderland result had nowhere to land, and the fixture was
+    # never created either, so the match simply does not exist for us.
+    "Ipswich Town":       "Ipswich",
+
+    # The same split, found by generalising the test rather than waiting for
+    # each club to be the one that breaks. Every one of these already folded
+    # in features._SNAP_NAME_MAP and nowhere else, so a result arriving under
+    # the feed spelling would have had nowhere to land — exactly as Ipswich's
+    # did. Counts are CSV history on the surviving name.
+    "Vitoria SC":         "Guimaraes",         #   0 → 528
+    "NEC":                "Nijmegen",
+    "PSV":                "PSV Eindhoven",
+    "AZ":                 "AZ Alkmaar",
+    "Leicester City":     "Leicester",
+    "Oxford United":      "Oxford",            #   0 → 449
 }
 
 

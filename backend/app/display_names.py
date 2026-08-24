@@ -145,7 +145,8 @@ DISPLAY_NAMES: dict[str, str] = {
     'Univ. Craiova': 'Universitatea Craiova',
     'Valur Reykjavik': 'Valur',
     'Vfl Bochum': 'VfL Bochum',
-    'Vitoria': 'Vitória',
+    'Vitoria': 'Vitória',                 # the Brazilian club, Salvador
+    'Guimaraes': 'Vitória SC',            # the Portuguese one
     'Valerenga': 'Vålerenga',
     'Vikingur Gota': 'Víkingur Gøta',
     'Vikingur Reykjavik': 'Víkingur Reykjavík',

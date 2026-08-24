@@ -204,6 +204,10 @@ def update_db(finished: list[dict]) -> tuple[int, int]:
         # "Derby County", "Sheffield Utd"), and the CSV backfill that usually
         # covers for this has no 2026/27 Championship file yet.
         unmatched: list[str] = []
+        created = 0
+        from scripts.fetch_club_friendlies import infer_season
+        from scripts.team_resolver import known_team_names
+        known_teams = set(known_team_names())
         for f in finished:
             home, away = f["home_team"], f["away_team"]
             match = db.scalars(
@@ -229,10 +233,40 @@ def update_db(finished: list[dict]) -> tuple[int, int]:
                     )
                 ).first()
                 if not exists:
-                    unmatched.append(
-                        f"{f['league']} {f['match_date']} "
-                        f"{home!r} v {away!r}  {f['home_goals']}-{f['away_goals']}"
-                    )
+                    # The fixture was never ingested — football-data.org's
+                    # schedule window had moved past it by the time we first
+                    # asked, so the result has nowhere to land. Five matches
+                    # were in this state on 2026-08-24, the oldest from the
+                    # 8th: no Elo update for either club, and a league table
+                    # two games short, permanently.
+                    #
+                    # We know the league, the date, both clubs and the score,
+                    # so create the row and settle it. Only when BOTH clubs are
+                    # already known to us: inventing a club here is how phantom
+                    # teams get in, and a completed match nobody can look up is
+                    # worse than a missing one.
+                    if home in known_teams and away in known_teams:
+                        db.add(Match(
+                            match_date=f["match_date"],
+                            league=f["league"],
+                            season=infer_season(f["match_date"]),
+                            home_team=home,
+                            away_team=away,
+                            home_goals=f["home_goals"],
+                            away_goals=f["away_goals"],
+                            result=f["result"],
+                        ))
+                        created += 1
+                        print(f"  + created missing fixture: {f['league']} "
+                              f"{f['match_date']} {home} {f['home_goals']}-"
+                              f"{f['away_goals']} {away}")
+                    else:
+                        unknown = [n for n in (home, away) if n not in known_teams]
+                        unmatched.append(
+                            f"{f['league']} {f['match_date']} "
+                            f"{home!r} v {away!r}  {f['home_goals']}-{f['away_goals']}"
+                            f"   [unknown club: {', '.join(unknown)}]"
+                        )
 
             if match:
                 match.home_goals = f["home_goals"]
@@ -245,6 +279,9 @@ def update_db(finished: list[dict]) -> tuple[int, int]:
         db.commit()
     finally:
         db.close()
+
+    if created:
+        print(f"  Created:   {created} fixture(s) that only the result feed knew about")
 
     if unmatched:
         # Loud, and named. A feed spelling we cannot tie to a fixture means that

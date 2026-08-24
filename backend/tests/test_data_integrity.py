@@ -185,3 +185,33 @@ def test_no_club_in_the_snapshot_is_a_youth_or_womens_side(snapshot):
     assert len(offenders) < 25, (
         f"{len(offenders)} youth/reserve/women's sides in the Elo snapshot — "
         f"sample: {sorted(offenders)[:10]}")
+
+
+# ── One club name, two countries — in the DATABASE ───────────────────────────
+# The club-identity audit reads the CSVs, so it can only see a fusion that
+# exists in the training data. This one lived in the fixture table alone:
+# "Vitoria SC" resolved to "Vitoria", which in our CSVs is the BRAZILIAN club,
+# so twelve PrimeiraLiga fixtures were stored under it and priced off a
+# Brazilian side's Elo, while Portugal's Vitória SC sat under "Guimaraes" with
+# 528 rows nobody was reading. Every check we had reported 0/0/0.
+
+def test_the_health_check_looks_for_cross_country_names_in_the_db():
+    from pathlib import Path
+
+    src = (Path(__file__).resolve().parents[2] / "scripts" /
+           "check_data_completeness.py").read_text(encoding="utf-8")
+
+    assert "LEAGUE_COUNTRY_TIER" in src, \
+        "nothing compares a club's leagues against their countries"
+    assert "one name, two countries" in src.lower() or "two countries" in src
+
+
+def test_the_two_vitorias_are_different_clubs():
+    """Guarding the specific fusion, because the alias table asserted it as
+    correct for months and a future edit could restore it."""
+    from scripts.team_resolver import canonical
+
+    assert canonical("Vitoria SC") == "Guimaraes", \
+        "Portugal's Vitória SC folds onto the Brazilian club again"
+    assert canonical("Vitoria") != "Guimaraes", \
+        "the Brazilian club folds onto the Portuguese one"
