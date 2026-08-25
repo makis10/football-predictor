@@ -50,6 +50,30 @@ mkdir -p "$LOG_DIR"
 source "$PROJ_DIR/scripts/_lock.sh"
 acquire_lock "run_daily" || exit 0
 
+# ── Once a day, unless told otherwise ────────────────────────────────────────
+# The lock above stops two runs OVERLAPPING; it says nothing about a second run
+# hours after the first finished. On 2026-08-25 the pipeline ran twice — 06:00
+# and again at 10:16, alongside a watchdog Docker recovery — and that is enough
+# to exhaust the account on its own: one run costs 4,400–5,600 API-Football
+# requests against a 7,500/day cap, so the second one runs out partway and
+# every remaining step reports a failure it cannot do anything about.
+#
+# launchd coalesces missed calendar intervals after sleep, so a laptop that was
+# closed at 06:00 can fire this whenever it wakes — sometimes after a run that
+# already happened. A stamp file is the whole fix.
+#
+# FORCE_DAILY=1 overrides, for a deliberate re-run.
+DAILY_STAMP="$LOG_DIR/.daily-last-run-date"
+if [ "${FORCE_DAILY:-0}" != "1" ] && [ -f "$DAILY_STAMP" ] \
+   && [ "$(cat "$DAILY_STAMP" 2>/dev/null)" = "$(date '+%Y-%m-%d')" ]; then
+    echo "" >> "$LOG"
+    echo " $(date '+%Y-%m-%d %H:%M:%S')  Daily run SKIPPED — already ran today." >> "$LOG"
+    echo "   (a second full run costs another ~5,000 API-Football requests against" >> "$LOG"
+    echo "    a 7,500/day cap; set FORCE_DAILY=1 to override)" >> "$LOG"
+    exit 0
+fi
+date '+%Y-%m-%d' > "$DAILY_STAMP"
+
 echo "" >> "$LOG"
 echo "══════════════════════════════════════════" >> "$LOG"
 echo " $(date '+%Y-%m-%d %H:%M:%S')  Daily run" >> "$LOG"

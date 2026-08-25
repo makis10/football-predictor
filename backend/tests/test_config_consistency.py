@@ -549,3 +549,38 @@ def test_quota_exhaustion_never_exits_with_the_generic_failure_code():
     assert offenders == [], (
         "reports the daily cap but exits with the generic failure code, so the "
         "daily run pages instead of skipping: " + ", ".join(offenders))
+
+
+# ── One daily run per day ─────────────────────────────────────────────────────
+# The lock stops two runs OVERLAPPING; it says nothing about a second run hours
+# after the first finished. On 2026-08-25 the pipeline ran at 06:00 and again at
+# 10:16 (launchd coalesces missed calendar intervals after sleep), and that alone
+# exhausted the account: one run costs 4,400–5,600 API-Football requests against
+# a 7,500/day cap, so the second ran out partway and every remaining step
+# reported a failure nothing could act on until the reset.
+
+def _run_daily() -> str:
+    from pathlib import Path
+    return (Path(__file__).resolve().parents[2] / "scripts" /
+            "run_daily.sh").read_text(encoding="utf-8")
+
+
+def test_the_daily_run_refuses_to_run_twice_in_one_day():
+    body = _run_daily()
+
+    assert "DAILY_STAMP" in body, "nothing stops a second full run on the same day"
+    assert "already ran today" in body
+
+
+def test_the_same_day_guard_can_be_overridden_deliberately():
+    """A guard with no escape hatch gets deleted the first time someone needs a
+    re-run, which is worse than not having it."""
+    assert "FORCE_DAILY" in _run_daily()
+
+
+def test_the_guard_sits_after_the_lock_not_instead_of_it():
+    """They solve different problems: the lock is about concurrency, the stamp
+    about repetition. Losing either brings back a different bug."""
+    body = _run_daily()
+
+    assert body.index('acquire_lock "run_daily"') < body.index("DAILY_STAMP")
