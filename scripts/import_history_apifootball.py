@@ -50,7 +50,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
 from backend.app.ml.league_registry import disambiguate  # noqa: E402
-from scripts._http_retry import get_with_retry  # noqa: E402
+from scripts._http_retry import QuotaExhausted, get_with_retry  # noqa: E402
 
 API_BASE = "https://v3.football.api-sports.io"
 API_KEY = os.getenv("API_SPORTS_KEY", "")
@@ -146,7 +146,7 @@ def _get(path: str, params: dict, budget: Budget) -> dict:
         # Quota errors arrive as HTTP 200 with an errors dict — without this an
         # exhausted plan is indistinguishable from an empty season.
         if isinstance(errs, dict) and "requests" in errs:
-            raise SystemExit(f"[fatal] API-Football daily quota exhausted: {errs['requests']}")
+            raise QuotaExhausted(f"[fatal] API-Football daily quota exhausted: {errs['requests']}")
         raise RuntimeError(f"API-Football error: {errs}")
     return body
 

@@ -76,6 +76,49 @@ _fail() {
     failed_lines="${failed_lines}${failed_lines:+ }$1"
 }
 
+# API-Football answers its DAILY cap with exit code 4 (scripts/_http_retry.py).
+# That is the account being out of requests, not a broken step: on 2026-08-25 a
+# cap reached mid-run turned three healthy steps into an urgent "daily run
+# failed" push about a condition that clears itself at the reset, and — worse —
+# each later step spent another request to be told the same thing.
+#
+# _af_rc reads a step's exit code and decides: 4 turns off every remaining
+# API-Football step for this run and is reported as a skip; anything else
+# non-zero is a real failure and pages as before.
+#
+# Usage (PIPESTATUS[0] is the python exit code, not tee's):
+#     cmd 2>&1 | tee -a "$LOG"; _af_rc "${PIPESTATUS[0]}" $LINENO
+AF_QUOTA_RC=4
+af_quota_hit=0
+_af_rc() {
+    local rc=$1 line=$2
+    [ "$rc" -eq 0 ] && return 0
+    if [ "$rc" -eq "$AF_QUOTA_RC" ]; then
+        _af_quota_off
+        return 0
+    fi
+    _fail "$line"
+}
+
+# Same decision for the steps whose failure was only ever a warning: a quota
+# exit still switches the rest off, it just prints its own line instead of the
+# step's warning, which would read as a bug in that step.
+_af_soft() {
+    local rc=$1 msg=$2
+    [ "$rc" -eq 0 ] && return 0
+    if [ "$rc" -eq "$AF_QUOTA_RC" ]; then
+        _af_quota_off
+        return 0
+    fi
+    echo "  $msg" | tee -a "$LOG"
+}
+
+_af_quota_off() {
+    API_FOOTBALL_OK=0
+    af_quota_hit=1
+    echo "  [skip] API-Football out of daily requests — remaining API-Football steps disabled for this run." | tee -a "$LOG"
+}
+
 # Load env vars from .env so API keys are available on the host too
 set -a
 # shellcheck disable=SC1091
@@ -104,12 +147,22 @@ wait_for_docker "$LOG" || exit 1
 # API-Football step (they cannot succeed) but still run the rest — results from
 # The Odds API, predictions, projections and cache warming all work without it.
 API_FOOTBALL_OK=1
+# Set only when API-Football is genuinely unusable — a rotated IP, a bad key, a
+# dead plan. Deliberately NOT set by the daily cap: a capped account still holds
+# every row the health check reads, so its report stays meaningful.
+AF_BLOCKED=0
 echo "" >> "$LOG"
 echo "[0/9] API-Football pre-flight …" | tee -a "$LOG"
 docker compose exec -T backend python scripts/preflight_api_football.py 2>&1 | tee -a "$LOG"
 _preflight_rc=${PIPESTATUS[0]}
-if [ "$_preflight_rc" -ne 0 ]; then
+if [ "$_preflight_rc" -eq "$AF_QUOTA_RC" ]; then
+    # Out of daily requests, not broken — see _af_rc above.
     API_FOOTBALL_OK=0
+    af_quota_hit=1
+    echo "  [skip] API-Football out of daily requests — its steps are skipped this run." | tee -a "$LOG"
+elif [ "$_preflight_rc" -ne 0 ]; then
+    API_FOOTBALL_OK=0
+    AF_BLOCKED=1
     _fail $LINENO
     echo "  [skip] API-Football steps disabled for this run (pre-flight rc=$_preflight_rc)." | tee -a "$LOG"
 fi
@@ -188,7 +241,7 @@ echo "[4b/6] Refreshing Greek SL fixtures (API-Football) …" | tee -a "$LOG"
 if [ "$API_FOOTBALL_OK" -eq 1 ]; then
 docker compose exec -T backend \
     python scripts/fetch_greek_apifootball.py --days-ahead 120 --days-back 5 \
-    2>&1 | tee -a "$LOG" || echo "  [warn] Greek API-Football fetch failed — continuing" | tee -a "$LOG"
+    2>&1 | tee -a "$LOG"; _af_soft "${PIPESTATUS[0]}" "[warn] Greek API-Football fetch failed — continuing"
 else echo "  [skip] API-Football blocked." | tee -a "$LOG"; fi
 
 # ── 4c. The twelve expansion leagues (API-Football) ──────────────────────────
@@ -202,7 +255,7 @@ echo "[4c/6] Refreshing expansion-league fixtures (API-Football) …" | tee -a "
 if [ "$API_FOOTBALL_OK" -eq 1 ]; then
 docker compose exec -T backend \
     python scripts/fetch_domestic_apifootball.py --days-ahead 120 --days-back 5 \
-    2>&1 | tee -a "$LOG" || echo "  [warn] expansion-league fetch failed — continuing" | tee -a "$LOG"
+    2>&1 | tee -a "$LOG"; _af_soft "${PIPESTATUS[0]}" "[warn] expansion-league fetch failed — continuing"
 else echo "  [skip] API-Football blocked." | tee -a "$LOG"; fi
 
 # ── 4c2. History-only leagues (API-Football) ─────────────────────────────────
@@ -215,7 +268,7 @@ echo "[4c2/6] Refreshing history-only league seasons …" | tee -a "$LOG"
 if [ "$API_FOOTBALL_OK" -eq 1 ]; then
 docker compose exec -T backend \
     python scripts/import_history_apifootball.py \
-    2>&1 | tee -a "$LOG" || echo "  [warn] history import failed — continuing" | tee -a "$LOG"
+    2>&1 | tee -a "$LOG"; _af_soft "${PIPESTATUS[0]}" "[warn] history import failed — continuing"
 else echo "  [skip] API-Football blocked." | tee -a "$LOG"; fi
 
 # ── 5. Refresh European fixtures (CL/EL/ECL, incl. qualifiers — API-Football) ─
@@ -228,7 +281,7 @@ if [ "$API_FOOTBALL_OK" -eq 1 ]; then
 docker compose exec -T backend \
     python scripts/fetch_european_fixtures.py \
         --days-ahead 21 --days-back 5 \
-    2>&1 | tee -a "$LOG" || _fail $LINENO
+    2>&1 | tee -a "$LOG"; _af_rc "${PIPESTATUS[0]}" $LINENO
 else echo "  [skip] API-Football blocked." | tee -a "$LOG"; fi
 
 # ── 5b. Refresh club friendlies (API-Football league 667) ────────────────────
@@ -243,7 +296,7 @@ docker compose exec -T backend \
         --days-ahead 14 \
         --days-back 7 \
         --no-predictions \
-    2>&1 | tee -a "$LOG" || _fail $LINENO
+    2>&1 | tee -a "$LOG"; _af_rc "${PIPESTATUS[0]}" $LINENO
 else echo "  [skip] API-Football blocked." | tee -a "$LOG"; fi
 
 # ── 5c. Refresh ClubElo cold-start snapshot ──────────────────────────────────
@@ -293,7 +346,7 @@ echo "[8/9] Pre-warming injury cache for new fixtures …" | tee -a "$LOG"
 if [ "$API_FOOTBALL_OK" -eq 1 ]; then
 docker compose exec -T backend \
     python scripts/warmup_injuries.py --days 3 \
-    2>&1 | tee -a "$LOG" || _fail $LINENO
+    2>&1 | tee -a "$LOG"; _af_rc "${PIPESTATUS[0]}" $LINENO
 else echo "  [skip] API-Football blocked." | tee -a "$LOG"; fi
 
 # ── Club player/team props (parity with the national match pages) ────────────
@@ -320,13 +373,13 @@ if [ "$API_FOOTBALL_OK" -eq 1 ]; then
 # fetches soonest-fixture-first and says so when it does truncate.
 docker compose exec -T backend \
     python scripts/fetch_club_squads.py --days-ahead 7 --max-age-days 6 --max-requests 700 \
-    2>&1 | tee -a "$LOG" || echo "  [warn] club squads incomplete — some rosters may be stale" | tee -a "$LOG"
+    2>&1 | tee -a "$LOG"; _af_soft "${PIPESTATUS[0]}" "[warn] club squads incomplete — some rosters may be stale"
 docker compose exec -T backend \
     python scripts/fetch_club_team_stats.py --days-ahead 7 --last 8 --max-requests 1200 \
-    2>&1 | tee -a "$LOG" || echo "  [warn] club team stats failed — continuing" | tee -a "$LOG"
+    2>&1 | tee -a "$LOG"; _af_soft "${PIPESTATUS[0]}" "[warn] club team stats failed — continuing"
 docker compose exec -T backend \
     python scripts/fetch_club_player_stats.py --days-ahead 7 --last 8 --max-requests 2000 \
-    2>&1 | tee -a "$LOG" || echo "  [warn] club player stats failed — continuing" | tee -a "$LOG"
+    2>&1 | tee -a "$LOG"; _af_soft "${PIPESTATUS[0]}" "[warn] club player stats failed — continuing"
 else echo "  [skip] API-Football blocked." | tee -a "$LOG"; fi
 
 # ── National teams (international fixtures) ───────────────────────────────────
@@ -361,7 +414,7 @@ if [ "$WC_ACTIVE" = "1" ]; then
     if [ "$API_FOOTBALL_OK" -eq 1 ]; then
     docker compose exec -T backend \
         python scripts/fetch_wc_results.py \
-        2>&1 | tee -a "$LOG" || _fail $LINENO
+        2>&1 | tee -a "$LOG"; _af_rc "${PIPESTATUS[0]}" $LINENO
     else echo "  [skip] API-Football blocked." | tee -a "$LOG"; fi
 fi
 
@@ -410,7 +463,7 @@ SQUAD_SEASON=$(date +%Y); [ "$(date +%m)" -lt 7 ] && SQUAD_SEASON=$((SQUAD_SEASO
 if [ "$API_FOOTBALL_OK" -eq 1 ]; then
 docker compose exec -T backend \
     python scripts/fetch_squad_strength.py --season "$SQUAD_SEASON" --max-age-days 6 --max-requests 1700 \
-    2>&1 | tee -a "$LOG" || _fail $LINENO
+    2>&1 | tee -a "$LOG"; _af_rc "${PIPESTATUS[0]}" $LINENO
 else echo "  [skip] API-Football blocked." | tee -a "$LOG"; fi
 
 echo "" >> "$LOG"
@@ -441,7 +494,7 @@ echo "[national 7a/7] Ingesting player match stats (API-Football) …" | tee -a 
 if [ "$API_FOOTBALL_OK" -eq 1 ]; then
 docker compose exec -T backend \
     python scripts/fetch_player_stats.py --wc-only --last 5 --max-requests 2500 \
-    2>&1 | tee -a "$LOG" || _fail $LINENO
+    2>&1 | tee -a "$LOG"; _af_rc "${PIPESTATUS[0]}" $LINENO
 else echo "  [skip] API-Football blocked." | tee -a "$LOG"; fi
 
 # Ingest team match stats (corners / shots / possession) from /fixtures/statistics
@@ -451,7 +504,7 @@ echo "[national 7a1/7] Ingesting team match stats (API-Football) …" | tee -a "
 if [ "$API_FOOTBALL_OK" -eq 1 ]; then
 docker compose exec -T backend \
     python scripts/fetch_match_statistics.py --wc-only --last 5 --max-requests 1500 \
-    2>&1 | tee -a "$LOG" || _fail $LINENO
+    2>&1 | tee -a "$LOG"; _af_rc "${PIPESTATUS[0]}" $LINENO
 else echo "  [skip] API-Football blocked." | tee -a "$LOG"; fi
 
 # Ingest current-season CLUB form per player (/players) — the empirical-Bayes
@@ -463,7 +516,7 @@ echo "[national 7a2/7] Ingesting player club form (API-Football) …" | tee -a "
 if [ "$API_FOOTBALL_OK" -eq 1 ]; then
 docker compose exec -T backend \
     python scripts/fetch_club_form.py --wc-only --max-requests 1500 \
-    2>&1 | tee -a "$LOG" || _fail $LINENO
+    2>&1 | tee -a "$LOG"; _af_rc "${PIPESTATUS[0]}" $LINENO
 else echo "  [skip] API-Football blocked." | tee -a "$LOG"; fi
 
 # Recompute player props (anytime scorer / SoT / assist) for upcoming fixtures
@@ -493,7 +546,7 @@ if [ "$WC_ACTIVE" = "1" ]; then
     if [ "$API_FOOTBALL_OK" -eq 1 ]; then
     docker compose exec -T backend \
         python scripts/fetch_wc_squads.py --max-age-days 7 \
-        2>&1 | tee -a "$LOG" || _fail $LINENO
+        2>&1 | tee -a "$LOG"; _af_rc "${PIPESTATUS[0]}" $LINENO
     else echo "  [skip] API-Football blocked." | tee -a "$LOG"; fi
 
     # Sync same-day goals from player_match_stats into goalscorers.csv so the
@@ -511,7 +564,7 @@ if [ "$WC_ACTIVE" = "1" ]; then
     if [ "$API_FOOTBALL_OK" -eq 1 ]; then
     docker compose exec -T backend \
         python scripts/fetch_availability.py \
-        2>&1 | tee -a "$LOG" || _fail $LINENO
+        2>&1 | tee -a "$LOG"; _af_rc "${PIPESTATUS[0]}" $LINENO
     else echo "  [skip] API-Football blocked." | tee -a "$LOG"; fi
 
     # World Cup Monte Carlo simulation (champion/finalist/group/golden-boot).
@@ -562,7 +615,7 @@ echo "[8d/9] Filling missing odds from API-Football …" | tee -a "$LOG"
 if [ "$API_FOOTBALL_OK" -eq 1 ]; then
 docker compose exec -T backend \
     python scripts/fetch_odds_apifootball.py --days 7 \
-    2>&1 | tee -a "$LOG" || _fail $LINENO
+    2>&1 | tee -a "$LOG"; _af_rc "${PIPESTATUS[0]}" $LINENO
 else echo "  [skip] API-Football blocked." | tee -a "$LOG"; fi
 
 echo "" >> "$LOG"
@@ -670,7 +723,7 @@ if [ "$DAY_OF_WEEK" -eq 1 ]; then
             --leagues CL EL ECL Eredivisie PrimeiraLiga Championship \
             --seasons "${CURRENT_SEASON}" \
             --force \
-        2>&1 | tee -a "$LOG" || _fail $LINENO
+        2>&1 | tee -a "$LOG"; _af_rc "${PIPESTATUS[0]}" $LINENO
     else echo "  [skip] API-Football blocked." | tee -a "$LOG"; fi
 
     # 9. Retrain both models (takes ~2-3 min)
@@ -706,7 +759,7 @@ if [ "$DAY_OF_WEEK" -eq 1 ]; then
     if [ "$API_FOOTBALL_OK" -eq 1 ]; then
     docker compose exec -T backend \
         python scripts/fetch_odds_apifootball.py --days 7 \
-        2>&1 | tee -a "$LOG" || _fail $LINENO
+        2>&1 | tee -a "$LOG"; _af_rc "${PIPESTATUS[0]}" $LINENO
     else echo "  [skip] API-Football blocked." | tee -a "$LOG"; fi
 
     echo "" >> "$LOG"
@@ -751,7 +804,14 @@ health_alerts=0
 # Alerting on those buries the one alert that matters (the pre-flight's) under
 # dozens of derived ones — which is exactly what happened on 2026-08-09
 # ("DATA GAPS — 11 alerts, 35 warnings" on a run whose only fault was the IP).
-if [ "$API_FOOTBALL_OK" -eq 1 ]; then
+#
+# A daily cap is not that case, and is deliberately not gated out here: the
+# counts this check reports come from our own database, the Odds-API credit
+# alert it carries is the loudest signal we have, and the cap itself shows up
+# as its own "API-Football status" warning line. Gating on API_FOOTBALL_OK —
+# which a mid-run cap clears — would drop all of that on exactly the days it is
+# most worth reading.
+if [ "$AF_BLOCKED" -eq 0 ]; then
 docker compose exec -T backend \
     python scripts/check_data_completeness.py --days 7 \
     2>&1 | tee -a "$LOG" || health_alerts=1
@@ -830,6 +890,12 @@ if [ "$overall_failed" -ne 0 ]; then
     _name_steps "$failed_lines" >> "$LOG"
 else
     echo "[ok] all steps completed" >> "$LOG"
+fi
+# Its own line for the same reason as the completeness verdict below: "the
+# account ran out of requests" is a third state, distinct from both a break and
+# a clean run, and the reader needs to see it without grepping 1,500 lines.
+if [ "$af_quota_hit" -ne 0 ]; then
+    echo "[warn] API-Football out of daily requests — its steps were skipped (does NOT block the heartbeat)" >> "$LOG"
 fi
 # Reported on its own line so a reader (and `grep`) can tell "the run broke"
 # apart from "the run was fine, the data has gaps".

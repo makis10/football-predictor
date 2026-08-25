@@ -45,7 +45,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
-from scripts._http_retry import get_with_retry  # noqa: E402
+from scripts._http_retry import (  # noqa: E402
+    API_FOOTBALL_QUOTA_RC, QuotaExhausted, get_with_retry,
+)
 
 API_BASE = "https://v3.football.api-sports.io"
 API_KEY = os.getenv("API_SPORTS_KEY", "")
@@ -72,7 +74,7 @@ def _get(path, params, budget):
     # which would then wipe every player out of the props.
     if errs:
         if isinstance(errs, dict) and "requests" in errs:
-            raise SystemExit(f"[fatal] API-Football daily quota exhausted: {errs['requests']}")
+            raise QuotaExhausted(f"[fatal] API-Football daily quota exhausted: {errs['requests']}")
         raise RuntimeError(f"API-Football error: {errs}")
     return body
 
@@ -161,11 +163,11 @@ def main() -> None:
             tid = cache[team]
             try:
                 ids = fetch_squad(tid, budget)
-            except SystemExit as e:
+            except QuotaExhausted as e:
                 # Daily quota gone. Stop fetching, but fall through to the write
-                # below so the squads we did get are not thrown away.
+                # below so the squads we did get are not thrown away. The message
+                # is already on stdout — QuotaExhausted prints it.
                 quota_hit = str(e)
-                print(f"  {quota_hit}")
                 break
             except Exception as e:
                 print(f"  [warn] squad {team}: {e}"); n_fail += 1; continue
@@ -199,8 +201,10 @@ def main() -> None:
 
         if quota_hit:
             # Non-zero exit so the daily job's `|| warn` fires and the run is
-            # visibly incomplete rather than looking like a clean pass.
-            sys.exit(1)
+            # visibly incomplete rather than looking like a clean pass — but the
+            # quota-specific code, so run_daily.sh skips the remaining
+            # API-Football steps instead of paging about a broken pipeline.
+            sys.exit(API_FOOTBALL_QUOTA_RC)
     finally:
         db.close()
 

@@ -1128,6 +1128,19 @@ _ALIASES: dict[str, list[str]] = {
     # Saburtalo Tbilisi was renamed FC Iberia 1999 in 2024; our fixtures still
     # carry the old name.
     "Saburtalo":       ["iberia1999", "fciberia"],
+    # ── 2026-08-25: found by scripts/check_odds_seam.py ──────────────────────
+    # We file Vitória de Guimarães as "Guimaraes"; the feed calls it by the club
+    # name proper, "Vitória SC", which shares no whole word with ours. "SC" is
+    # Sport Clube, so both spellings are the one club, and neither of the other
+    # Vitórias we hold — Brazil's "Vitoria", the unrelated "Vitesse" — contains
+    # "vitoriasc".
+    #
+    # Caveat worth knowing: `_teams_match`'s startswith(alias[:8]) fallback makes
+    # this alias also accept a feed name beginning "vitorias", which would
+    # include Vitória Setúbal. We hold no Setúbal and it is not in the Primeira
+    # Liga, and the check only ever compares within one league's feed, so the
+    # two cannot meet today. Revisit if Setúbal is ever promoted or ingested.
+    "Guimaraes":       ["vitoriasc", "vitoriaguimaraes"],
     # ── National teams — martj42/DB name → The Odds API spelling ──────────────
     "United States":         ["usa", "unitedstates"],
     "Bosnia and Herzegovina":["bosnia"],

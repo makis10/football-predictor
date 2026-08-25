@@ -32,6 +32,9 @@ from pathlib import Path
 import requests
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+from scripts._http_retry import get_with_retry  # noqa: E402
+
 OUT_PATH = ROOT / "backend" / "data" / "clubelo.json"
 API_URL = "http://api.clubelo.com/{d}"
 TIMEOUT = 20
@@ -40,7 +43,9 @@ TIMEOUT = 20
 def fetch_snapshot(on_date: str) -> dict[str, dict]:
     """Return {club_name: {"elo": float, "country": str, "level": int}}."""
     url = API_URL.format(d=on_date)
-    resp = requests.get(url, timeout=TIMEOUT)
+    # Retried: the endpoint answers with a 502 or a read timeout often enough
+    # that a single attempt turns a blip into a skipped day of cold-start Elo.
+    resp = get_with_retry(url, timeout=TIMEOUT)
     resp.raise_for_status()
 
     out: dict[str, dict] = {}
@@ -67,6 +72,18 @@ def fetch_snapshot(on_date: str) -> dict[str, dict]:
     return out
 
 
+def _staleness() -> str:
+    """One line on the snapshot we are falling back to, and how old it is."""
+    try:
+        payload = json.loads(OUT_PATH.read_text())
+        as_of = date.fromisoformat(payload["as_of"])
+    except Exception:  # noqa: BLE001
+        return "no previous snapshot on disk — cold-start seeding is off entirely."
+    age = (date.today() - as_of).days
+    return (f"keeping the {as_of} snapshot ({payload.get('count', '?')} clubs), "
+            f"now {age} day(s) old.")
+
+
 def main() -> int:
     on_date = sys.argv[1] if len(sys.argv) > 1 else date.today().isoformat()
     try:
@@ -74,6 +91,11 @@ def main() -> int:
     except Exception as e:  # noqa: BLE001 — non-fatal by design
         print(f"[error] ClubElo fetch failed ({type(e).__name__}: {e}). "
               f"Leaving {OUT_PATH.name} untouched.")
+        # How stale the file we are keeping already is. Without this the log
+        # line is identical on day 1 and day 14 of an upstream outage, and the
+        # snapshot quietly ages out of usefulness — api.clubelo.com stopped
+        # answering on 2026-08-12 and nothing said so for thirteen runs.
+        print(f"  {_staleness()}")
         return 1
 
     if len(snap) < 100:

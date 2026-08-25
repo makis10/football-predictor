@@ -29,7 +29,7 @@ from pathlib import Path
 
 ROOT      = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
-from scripts._http_retry import get_with_retry  # noqa: E402
+from scripts._http_retry import QuotaExhausted, get_with_retry  # noqa: E402
 
 ID_CACHE  = ROOT / "backend" / "data" / "models" / "national" / "wc_team_ids.json"
 API_BASE  = "https://v3.football.api-sports.io"
@@ -89,7 +89,7 @@ def _get(path: str, params: dict, budget: Budget) -> dict:
     # without this check an exhausted quota silently looks like "0 fixtures".
     if errs:
         if isinstance(errs, dict) and "requests" in errs:
-            raise SystemExit(f"[fatal] API-Football daily quota exhausted: {errs['requests']}")
+            raise QuotaExhausted(f"[fatal] API-Football daily quota exhausted: {errs['requests']}")
         raise RuntimeError(f"API-Football error: {errs}")
     return body
 

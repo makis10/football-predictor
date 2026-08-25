@@ -383,7 +383,14 @@ def test_every_api_football_step_in_run_daily_is_behind_the_preflight_guard():
 
         for _ in range(opens):
             depth += 1
-        if opens and 'API_FOOTBALL_OK" -eq 1' in line:
+        # Two guards satisfy this, and they are not interchangeable elsewhere:
+        # API_FOOTBALL_OK is cleared by an IP block AND by the daily cap, while
+        # AF_BLOCKED marks only the "API-Football is unusable" case. A step
+        # whose output stays meaningful on a capped day (the completeness
+        # report reads our own database) may sit behind the narrower one — what
+        # this test enforces is that neither runs during an IP block.
+        if opens and ('API_FOOTBALL_OK" -eq 1' in line
+                      or 'AF_BLOCKED" -eq 0' in line):
             guard_depths.append(depth)
 
         hit = re.search(r"scripts/([a-z_0-9]+\.py)", line)
@@ -488,3 +495,57 @@ def test_club_stats_sweep_cannot_starve_a_club_forever():
     assert "random.Random(date.today().toordinal())" in src, (
         "no per-day rotation — clubs sharing a staleness key will starve again")
     assert "target.sort(" in src and "target = sorted({r[0] for r in rows})" in src
+
+
+def test_api_football_quota_exit_code_is_the_same_number_on_both_sides():
+    """The daily cap's exit code is agreed between Python and bash.
+
+    2026-08-25: API-Football hit its cap mid-run and three healthy steps —
+    player match stats, team match stats, club form — were reported as failures.
+    The run skipped its heartbeat and pushed an urgent alert about a condition
+    that clears itself at the next reset, while each later step spent another
+    request to be told the same thing.
+
+    The fix is a dedicated exit code: `QuotaExhausted` carries it, and
+    run_daily.sh's `_af_rc` reads it as "skip the rest of API-Football", not
+    "this step is broken". The number lives in two files, which is exactly the
+    drift this module exists to catch — a bash `AF_QUOTA_RC=5` against a Python
+    4 would silently restore the old paging behaviour.
+    """
+    from pathlib import Path
+
+    from scripts._http_retry import API_FOOTBALL_QUOTA_RC
+
+    src = (Path(__file__).resolve().parents[2]
+           / "scripts" / "run_daily.sh").read_text(encoding="utf-8")
+    assert f"AF_QUOTA_RC={API_FOOTBALL_QUOTA_RC}" in src, (
+        "run_daily.sh's AF_QUOTA_RC no longer matches "
+        f"_http_retry.API_FOOTBALL_QUOTA_RC ({API_FOOTBALL_QUOTA_RC})")
+
+
+def test_quota_exhaustion_never_exits_with_the_generic_failure_code():
+    """A script that reports the daily cap must also carry the quota exit code.
+
+    `raise SystemExit("...")` exits 1 — indistinguishable from a real crash, so
+    run_daily.sh pages for it and keeps calling the remaining API-Football
+    steps. A new fetch_* script copy-pasting the old line would reintroduce the
+    2026-08-25 alert without touching anything this test's neighbours check.
+
+    Either mechanism satisfies this: raise `QuotaExhausted`, or (when there is
+    partial work worth writing first) finish the writes and `sys.exit` with
+    `API_FOOTBALL_QUOTA_RC`. What must never happen is the message without one
+    of them.
+    """
+    from pathlib import Path
+
+    scripts_dir = Path(__file__).resolve().parents[2] / "scripts"
+    offenders = []
+    for p in sorted(scripts_dir.glob("*.py")):
+        src = p.read_text(encoding="utf-8", errors="ignore")
+        if "daily quota exhausted" not in src:
+            continue
+        if "QuotaExhausted" not in src and "API_FOOTBALL_QUOTA_RC" not in src:
+            offenders.append(p.name)
+    assert offenders == [], (
+        "reports the daily cap but exits with the generic failure code, so the "
+        "daily run pages instead of skipping: " + ", ".join(offenders))

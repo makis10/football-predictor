@@ -26,6 +26,10 @@ Exit codes:
     0  API reachable (prints remaining quota)
     2  IP not whitelisted  → whitelist the printed IP
     3  other API/auth error (bad key, plan expired, network down)
+    4  daily request cap reached → skip the API-Football steps, do NOT fail the
+       run. Nothing is broken and nothing can be done until the counter resets;
+       treating it as a failure pages at 06:00 about a condition that fixes
+       itself, and hides a genuine break behind the same alert.
 """
 from __future__ import annotations
 
@@ -110,6 +114,30 @@ def main() -> int:
                 click="https://dashboard.api-football.com",
             )
             return 2
+
+        if "requests" in errors:
+            # The daily cap. Every call — including /status itself — answers with
+            # this until the counter resets, so there is nothing to retry and
+            # nothing to fix by hand. Say so once, at "default" priority, and let
+            # the caller skip the API-Football steps.
+            banner([
+                "API-Football OUT OF DAILY REQUESTS",
+                "",
+                str(errors["requests"]),
+                "",
+                "API-Football steps are skipped for this run. They resume on",
+                "their own when the daily counter resets.",
+            ])
+            send_alert(
+                f"API-Football daily cap reached:\n\n{errors['requests']}\n\n"
+                "Today's club/player stats, injuries and squad refreshes are "
+                "skipped. Nothing to do — the counter resets on its own.",
+                title="API-Football out of daily requests",
+                priority="default",
+                tags="hourglass",
+                click="https://dashboard.api-football.com",
+            )
+            return 4
 
         banner(["API-Football PRE-FLIGHT FAILED", f"errors: {errors}"])
         send_alert(f"API-Football error: {errors}",

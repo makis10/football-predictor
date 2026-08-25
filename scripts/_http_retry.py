@@ -35,6 +35,30 @@ import requests
 DEFAULT_ATTEMPTS = 3
 DEFAULT_BACKOFF = 2.0  # seconds; doubles each retry
 
+# Exit code the fetch_* jobs use when API-Football refuses on its DAILY cap.
+# run_daily.sh treats it as "the account is out of requests" — skip the rest of
+# the API-Football steps — rather than "this step is broken", which pages and
+# suppresses the heartbeat. On 2026-08-25 a mid-run cap turned three healthy
+# steps into an urgent alert nobody could act on until the counter reset.
+API_FOOTBALL_QUOTA_RC = 4
+
+
+class QuotaExhausted(SystemExit):
+    """API-Football's daily cap, carried as its own exit code.
+
+    Python prints nothing when SystemExit carries an int, so the message is
+    echoed here — the log line is what a reader needs, and every raise site
+    would otherwise have to remember to print it first.
+    """
+
+    def __init__(self, msg: str) -> None:
+        self.msg = msg
+        print(msg, flush=True)
+        super().__init__(API_FOOTBALL_QUOTA_RC)
+
+    def __str__(self) -> str:
+        return self.msg
+
 # host → requests allowed per rolling minute.
 # API-Football Pro is documented at 300/min; 270 leaves headroom for the clock
 # skew between our timestamps and theirs, and for the fact that each script

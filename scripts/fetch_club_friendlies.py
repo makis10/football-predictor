@@ -49,7 +49,7 @@ from datetime import date, datetime, timedelta, timezone
 _PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 sys.path.insert(0, _PROJECT_ROOT)
 
-from scripts._http_retry import get_with_retry  # noqa: E402
+from scripts._http_retry import API_FOOTBALL_QUOTA_RC, get_with_retry  # noqa: E402
 from scripts.team_resolver import same_club  # noqa: E402
 
 API_BASE = "https://v3.football.api-sports.io"
@@ -89,8 +89,12 @@ def infer_season(d: date) -> str:
 
 # ── API-Football fetch ────────────────────────────────────────────────────────
 
-def fetch_friendlies(window_from: date, window_to: date) -> list[dict]:
+def fetch_friendlies(window_from: date, window_to: date) -> tuple[list[dict], str | None]:
     """All league-667 fixtures in the window (one request per calendar year).
+
+    Returns (fixtures, quota_message). A non-None message means the daily cap
+    was reached part-way: the caller should write what came back — a season we
+    did fetch is worth keeping — and then exit 4.
 
     NOTE: /fixtures is NOT paginated — it returns every match in the window
     in a single response, and rejects a `page` parameter outright
@@ -108,14 +112,23 @@ def fetch_friendlies(window_from: date, window_to: date) -> list[dict]:
                               params=params, timeout=20)
         resp.raise_for_status()
         data = resp.json()
-        if data.get("errors"):
-            print(f"  [error] API-Football (season {season}): {data['errors']}")
+        errs = data.get("errors")
+        if errs:
+            # The daily cap answers every remaining season identically, so
+            # `continue` would end this reporting an EMPTY friendly calendar
+            # rather than an unanswered one — and the caller would prune real
+            # fixtures on the strength of it.
+            if isinstance(errs, dict) and "requests" in errs:
+                msg = f"[fatal] API-Football daily quota exhausted: {errs['requests']}"
+                print(msg)
+                return fixtures, msg
+            print(f"  [error] API-Football (season {season}): {errs}")
             continue
         fixtures.extend(data.get("response", []))
         remaining = resp.headers.get("x-ratelimit-requests-remaining", "?")
         print(f"  season {season}: cumulative {len(fixtures)} fixture(s) "
               f"(quota remaining: {remaining})")
-    return fixtures
+    return fixtures, None
 
 
 # ── Team-name resolution against training data ───────────────────────────────
@@ -204,10 +217,10 @@ def main():
     window_to   = today + timedelta(days=args.days_ahead)
 
     print(f"Fetching club friendlies {window_from} → {window_to} …")
-    raw = fetch_friendlies(window_from, window_to)
+    raw, quota_hit = fetch_friendlies(window_from, window_to)
     if not raw:
         print("No friendlies returned — nothing to do.")
-        return
+        sys.exit(API_FOOTBALL_QUOTA_RC if quota_hit else 0)
 
     print("Loading training-data team names …")
     known = _known_teams()
@@ -297,8 +310,17 @@ def main():
         new_matches, touched_ids = upsert_fixtures(db, upcoming)
         # Friendlies get cancelled/moved constantly — drop unplayed rows the
         # feed no longer lists, strictly within the window we just fetched.
-        prune_vanished(db, [LEAGUE_CODE], touched_ids,
-                       horizon_days=args.days_ahead)
+        #
+        # Never on a quota-truncated fetch: "not in this list" would then mean
+        # "we ran out of requests before asking", and pruning on it deletes
+        # fixtures that are still scheduled. Same rule as a feed that answers
+        # for only part of a window — a partial answer is not a cancellation.
+        if quota_hit:
+            print("  [skip] prune — the fetch stopped at the daily cap, so this "
+                  "list is partial and absence proves nothing.")
+        else:
+            prune_vanished(db, [LEAGUE_CODE], touched_ids,
+                           horizon_days=args.days_ahead)
 
         print("\nFilling results for played friendlies …")
         n_res = update_results(db, played)
@@ -314,6 +336,8 @@ def main():
         db.close()
 
     print("\nDone.")
+    if quota_hit:
+        sys.exit(API_FOOTBALL_QUOTA_RC)
 
 
 if __name__ == "__main__":

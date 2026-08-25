@@ -8,3 +8,5 @@
 {"at": "2026-08-15T06:47:18+00:00", "source": "club", "promoted": ["Draw"], "demoted": [], "now": ["Draw", "NG"]}
 {"at": "2026-08-16T03:04:09+00:00", "source": "club", "promoted": ["Away Win", "Over 2.5"], "demoted": ["NG"], "now": ["Away Win", "Draw", "Over 2.5"]}
 {"at": "2026-08-17T09:05:05+00:00", "source": "club", "promoted": [], "demoted": ["Away Win"], "now": ["Draw", "Over 2.5"]}
+{"at": "2026-08-20T03:04:07+00:00", "source": "club", "promoted": ["Away Win"], "demoted": [], "now": ["Away Win", "Draw", "Over 2.5"]}
+{"at": "2026-08-23T03:04:07+00:00", "source": "club", "promoted": ["NG"], "demoted": ["Away Win"], "now": ["Draw", "NG", "Over 2.5"]}

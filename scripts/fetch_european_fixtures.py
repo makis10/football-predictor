@@ -46,7 +46,7 @@ from datetime import date, datetime, timedelta, timezone
 _PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 sys.path.insert(0, _PROJECT_ROOT)
 
-from scripts._http_retry import get_with_retry  # noqa: E402
+from scripts._http_retry import QuotaExhausted, get_with_retry  # noqa: E402
 from scripts.team_resolver import same_club  # noqa: E402
 
 API_BASE = "https://v3.football.api-sports.io"
@@ -128,8 +128,16 @@ def fetch_api_football_fixtures(
         except Exception as e:
             print(f"  {league_code}: ERROR fetching season {season} — {e}")
             continue
-        if data.get("errors"):
-            print(f"  {league_code}: API error (season {season}): {data['errors']}")
+        errs = data.get("errors")
+        if errs:
+            # The daily cap is not a per-season hiccup to skip past: every
+            # remaining season and competition would get the same answer, and
+            # `continue` would end the run reporting "0 fixture(s)" as if the
+            # calendar were empty. Exit 4 so run_daily.sh calls it a skip.
+            if isinstance(errs, dict) and "requests" in errs:
+                raise QuotaExhausted(
+                    f"[fatal] API-Football daily quota exhausted: {errs['requests']}")
+            print(f"  {league_code}: API error (season {season}): {errs}")
             continue
         raw.extend(data.get("response", []))
     print(f"  {league_code}: {len(raw)} fixture(s) from API-Football")
