@@ -10,7 +10,7 @@ Seams covered (each has silently failed at least once):
   2. team_match_stats            — tracked-league team with zero stats rows
   3. player_match_stats          — tracked-league team with zero player rows
   4. matches (club Elo source)   — team with no completed match (Elo=1500 default)
-  4b. clubelo.json               — cold-start rating file frozen by a dead fetch
+  4b. clubelo.json               — cold-start Elo snapshot gone stale (dead upstream)
   5. wc_team_ids.json            — null-poisoned national team ids
   6. squad_strength.json         — upcoming national team missing
   7. player_club_form            — share of players stuck without a club rate
@@ -36,6 +36,24 @@ WC_IDS   = ROOT / "backend" / "data" / "models" / "national" / "wc_team_ids.json
 SQUADS   = ROOT / "backend" / "data" / "raw" / "international" / "squad_strength.json"
 CLUBELO  = ROOT / "backend" / "data" / "clubelo.json"
 
+# How old the ClubElo snapshot may get before it is worth saying so. ClubElo
+# publishes daily, so a gap is always a failed fetch, never a quiet week
+# upstream. The pull is deliberately non-fatal in run_daily.sh (step 5c), which
+# is right — but it also means a dead upstream shows up only as one [error] line
+# buried mid-run, and cold-start Elo silently decays back toward the flat 1500
+# default. These thresholds put it in the summary instead.
+#
+# The site's own ratings settle a day or two behind the fixtures, so the warn
+# threshold is measuring our fetch, not their publishing cadence.
+CLUBELO_WARN_DAYS  = 3
+CLUBELO_ALERT_DAYS = 10
+
+# The fetch reads ~1,076 clubs across the UEFA federations. A snapshot far below
+# that parsed, passed fetch_clubelo's own floor, and still lost most of the
+# table — the failure mode a scraper has and an API does not, worth its own line
+# because the file's DATE would look perfectly healthy.
+CLUBELO_MIN_CLUBS = 400
+
 # Leagues whose teams SHOULD have stats coverage (mirrors fetch_club_team_stats).
 # DOMESTIC teams missing stats = ALERT (our ingestion is broken).
 # EURO-only teams (CL/EL/ECL qualifier minnows) = warn — API-Football often has
@@ -57,31 +75,17 @@ TRACKED  = DOMESTIC | EURO
 # Each entry records the check that put it here so it can be re-tested cheaply:
 #   GET /fixtures?team=<id>&last=4  →  GET /fixtures/statistics?fixture=<id>
 # and if the response now has 2 blocks, delete the line.
-NO_UPSTREAM_STATS = {
-    # 2026-08-11: api id 689, four consecutive finished Veikkausliiga fixtures
-    # (07 Aug, 03 Aug, 24 Jul, 18 Jul) all returned zero statistics blocks.
-    "SJK": "API-Football publishes no match statistics for this club (checked 2026-08-11)",
-
-    # 2026-08-16: both promoted into the Greek Super League this summer, so
-    # every match in their `--last 8` window is either a club friendly
-    # (league 667) or last season's Super League 2 (league 494) — neither is
-    # covered by /fixtures/statistics on this plan. Verified per club:
-    # /fixtures?team=17991&last=8 and team=5046 both return 8 fixtures with
-    # errors=[], and /fixtures/statistics on the newest returns 0 blocks.
-    # The ingestion is working; there is nothing upstream to ingest.
-    #
-    # EXPECTED TO SELF-HEAL: their first top-flight rounds are 22 Aug, and
-    # every other Greek Super League club does carry stats (PAOK 10 rows,
-    # Panathinaikos 9, Levadiakos 8 …). Re-check after a couple of league
-    # fixtures and delete these two entries — an entry left here after the
-    # data starts flowing would silence a real gap.
-    #   docker compose exec backend python scripts/check_data_completeness.py --days 7
-    "Iraklis 1908": "promoted 2026/27 — only friendlies + Super League 2 in "
-                    "range, neither carries statistics (checked 2026-08-16, "
-                    "re-check after 22 Aug)",
-    "Kalamata":     "promoted 2026/27 — only friendlies + Super League 2 in "
-                    "range, neither carries statistics (checked 2026-08-16, "
-                    "re-check after 22 Aug)",
+NO_UPSTREAM_STATS: dict[str, str] = {
+    # 2026-08-26: emptied. Every entry that lived here has started carrying
+    # stats, so keeping any of them would silence a real gap rather than
+    # explain an unfixable one — which is exactly what the note above warns
+    # against. Re-verified against the DB on 2026-08-26 with the stored name
+    # each check actually queries:
+    #   SJK           team_rows=2  player_rows=42  (was: no statistics at all)
+    #   Iraklis 1908  team_rows=1  player_rows=22  (self-healed after 22 Aug)
+    #   Kalamata      team_rows=1  player_rows=21  (self-healed after 22 Aug)
+    # The two Greek clubs were filed with an explicit "re-check after 22 Aug";
+    # this is that re-check.
 }
 
 alerts: list[str] = []
@@ -168,37 +172,46 @@ def main() -> None:
             if not n and lg in TRACKED:
                 _warn(f"club Elo: '{t}' ({lg}) has no completed match in DB — shows default 1500")
 
-        # 4b. the cold-start rating file those teams fall back to.
+        # 4b. ClubElo cold-start snapshot freshness
         #
-        # A stale clubelo.json is invisible from every other angle: the daily
-        # fetch is non-fatal by design, the pipeline stays green, predictions
-        # keep being served, and the only symptom is that cold-start teams
-        # quietly go back to a flat 1500. api.clubelo.com stopped answering on
-        # 2026-08-12 and thirteen runs passed before anyone noticed the file had
-        # not moved. The age is read from the FILE, never from the source that
-        # is suspected of being down.
-        try:
-            snap = json.loads(CLUBELO.read_text())
-            as_of = date.fromisoformat(snap["as_of"])
-            n_clubs = int(snap.get("count") or len(snap.get("clubs") or {}))
-        except Exception as exc:  # noqa: BLE001 — absent, empty or malformed
-            _alert(f"clubelo.json unreadable ({type(exc).__name__}) — every "
-                   f"cold-start team falls back to a flat Elo 1500")
+        # This is the fallback for exactly the teams flagged just above: the
+        # ones with no completed match, whose Elo would otherwise be a flat
+        # 1500. If the snapshot stops being refreshed, that fallback quietly
+        # stops describing the present — the ratings are still applied, they
+        # are just increasingly wrong — and nothing in this report said so.
+        # api.clubelo.com went dark on 2026-08-12 and the snapshot had aged two
+        # weeks before anyone noticed.
+        #
+        # The age is read from the FILE, never from the source that is suspected
+        # of being down.
+        if not CLUBELO.exists():
+            _warn("clubelo.json missing — cold-start Elo seeding is off entirely "
+                  "(cold-start teams fall back to a flat 1500)")
         else:
-            age = (date.today() - as_of).days
-            print(f"[clubelo] {n_clubs} clubs, rated {as_of} ({age}d old)")
-            # The site's ratings settle a couple of days behind the fixtures, so
-            # a few days is normal; a week means the fetch has been failing.
-            if age > 7:
-                _alert(f"clubelo.json is {age} days old (rated {as_of}) — the "
-                       f"fetch in run_daily.sh step 5c has been failing, and "
-                       f"cold-start teams are back on a flat Elo 1500")
-            elif age > 3:
-                _warn(f"clubelo.json is {age} days old (rated {as_of})")
-            if n_clubs < 400:
-                _warn(f"clubelo.json holds only {n_clubs} clubs — expected ~1,050 "
-                      f"across the UEFA federations; the page layout may have "
-                      f"changed under scripts/fetch_clubelo.py")
+            try:
+                snap = json.loads(CLUBELO.read_text())
+                as_of = date.fromisoformat(snap["as_of"])
+                n_clubs = int(snap.get("count") or len(snap.get("clubs") or {}))
+            except (OSError, ValueError, KeyError, TypeError) as e:
+                _warn(f"clubelo.json unreadable ({type(e).__name__}) — cold-start Elo "
+                      "seeding is off entirely")
+            else:
+                age = (date.today() - as_of).days
+                print(f"[clubelo] cold-start snapshot {as_of} ({n_clubs} clubs), {age} day(s) old")
+                if age >= CLUBELO_ALERT_DAYS:
+                    _alert(f"ClubElo snapshot is {age} days old (as of {as_of}) — "
+                           f"the fetch in run_daily.sh step 5c has been failing "
+                           f"every run since. Cold-start teams are seeded from "
+                           f"stale ratings; check whether clubelo.com moved the "
+                           f"table again (scripts/fetch_clubelo.py)")
+                elif age >= CLUBELO_WARN_DAYS:
+                    _warn(f"ClubElo snapshot is {age} days old (as of {as_of}) — "
+                          f"the daily fetch has failed for {age} run(s)")
+                # Fresh but thin: the page still parsed, so the date says nothing.
+                if n_clubs < CLUBELO_MIN_CLUBS:
+                    _warn(f"clubelo.json holds only {n_clubs} clubs — expected "
+                          f"~1,076 across the UEFA federations; clubelo.com may "
+                          f"have changed the table under scripts/fetch_clubelo.py")
 
         # 5+6. national seams
         nrows = db.execute(text(
