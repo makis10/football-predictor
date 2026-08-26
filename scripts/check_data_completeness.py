@@ -42,8 +42,17 @@ CLUBELO  = ROOT / "backend" / "data" / "clubelo.json"
 # is right — but it also means a dead upstream shows up only as one [error] line
 # buried mid-run, and cold-start Elo silently decays back toward the flat 1500
 # default. These thresholds put it in the summary instead.
+#
+# The site's own ratings settle a day or two behind the fixtures, so the warn
+# threshold is measuring our fetch, not their publishing cadence.
 CLUBELO_WARN_DAYS  = 3
 CLUBELO_ALERT_DAYS = 10
+
+# The fetch reads ~1,076 clubs across the UEFA federations. A snapshot far below
+# that parsed, passed fetch_clubelo's own floor, and still lost most of the
+# table — the failure mode a scraper has and an API does not, worth its own line
+# because the file's DATE would look perfectly healthy.
+CLUBELO_MIN_CLUBS = 400
 
 # Leagues whose teams SHOULD have stats coverage (mirrors fetch_club_team_stats).
 # DOMESTIC teams missing stats = ALERT (our ingestion is broken).
@@ -172,6 +181,9 @@ def main() -> None:
         # are just increasingly wrong — and nothing in this report said so.
         # api.clubelo.com went dark on 2026-08-12 and the snapshot had aged two
         # weeks before anyone noticed.
+        #
+        # The age is read from the FILE, never from the source that is suspected
+        # of being down.
         if not CLUBELO.exists():
             _warn("clubelo.json missing — cold-start Elo seeding is off entirely "
                   "(cold-start teams fall back to a flat 1500)")
@@ -179,7 +191,7 @@ def main() -> None:
             try:
                 snap = json.loads(CLUBELO.read_text())
                 as_of = date.fromisoformat(snap["as_of"])
-                n_clubs = snap.get("count", "?")
+                n_clubs = int(snap.get("count") or len(snap.get("clubs") or {}))
             except (OSError, ValueError, KeyError, TypeError) as e:
                 _warn(f"clubelo.json unreadable ({type(e).__name__}) — cold-start Elo "
                       "seeding is off entirely")
@@ -188,12 +200,18 @@ def main() -> None:
                 print(f"[clubelo] cold-start snapshot {as_of} ({n_clubs} clubs), {age} day(s) old")
                 if age >= CLUBELO_ALERT_DAYS:
                     _alert(f"ClubElo snapshot is {age} days old (as of {as_of}) — "
-                           f"api.clubelo.com has been failing every run since. "
-                           f"Cold-start teams are seeded from stale ratings; check "
-                           f"whether the endpoint moved (scripts/fetch_clubelo.py)")
+                           f"the fetch in run_daily.sh step 5c has been failing "
+                           f"every run since. Cold-start teams are seeded from "
+                           f"stale ratings; check whether clubelo.com moved the "
+                           f"table again (scripts/fetch_clubelo.py)")
                 elif age >= CLUBELO_WARN_DAYS:
                     _warn(f"ClubElo snapshot is {age} days old (as of {as_of}) — "
                           f"the daily fetch has failed for {age} run(s)")
+                # Fresh but thin: the page still parsed, so the date says nothing.
+                if n_clubs < CLUBELO_MIN_CLUBS:
+                    _warn(f"clubelo.json holds only {n_clubs} clubs — expected "
+                          f"~1,076 across the UEFA federations; clubelo.com may "
+                          f"have changed the table under scripts/fetch_clubelo.py")
 
         # 5+6. national seams
         nrows = db.execute(text(
