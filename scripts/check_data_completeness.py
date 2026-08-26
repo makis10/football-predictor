@@ -10,6 +10,7 @@ Seams covered (each has silently failed at least once):
   2. team_match_stats            — tracked-league team with zero stats rows
   3. player_match_stats          — tracked-league team with zero player rows
   4. matches (club Elo source)   — team with no completed match (Elo=1500 default)
+  4b. clubelo.json               — cold-start rating file frozen by a dead fetch
   5. wc_team_ids.json            — null-poisoned national team ids
   6. squad_strength.json         — upcoming national team missing
   7. player_club_form            — share of players stuck without a club rate
@@ -33,6 +34,7 @@ sys.path.insert(0, str(ROOT))
 CLUB_IDS = ROOT / "backend" / "data" / "models" / "club_team_ids.json"
 WC_IDS   = ROOT / "backend" / "data" / "models" / "national" / "wc_team_ids.json"
 SQUADS   = ROOT / "backend" / "data" / "raw" / "international" / "squad_strength.json"
+CLUBELO  = ROOT / "backend" / "data" / "clubelo.json"
 
 # Leagues whose teams SHOULD have stats coverage (mirrors fetch_club_team_stats).
 # DOMESTIC teams missing stats = ALERT (our ingestion is broken).
@@ -165,6 +167,38 @@ def main() -> None:
                 "AND home_goals IS NOT NULL"), {"t": t}).scalar()
             if not n and lg in TRACKED:
                 _warn(f"club Elo: '{t}' ({lg}) has no completed match in DB — shows default 1500")
+
+        # 4b. the cold-start rating file those teams fall back to.
+        #
+        # A stale clubelo.json is invisible from every other angle: the daily
+        # fetch is non-fatal by design, the pipeline stays green, predictions
+        # keep being served, and the only symptom is that cold-start teams
+        # quietly go back to a flat 1500. api.clubelo.com stopped answering on
+        # 2026-08-12 and thirteen runs passed before anyone noticed the file had
+        # not moved. The age is read from the FILE, never from the source that
+        # is suspected of being down.
+        try:
+            snap = json.loads(CLUBELO.read_text())
+            as_of = date.fromisoformat(snap["as_of"])
+            n_clubs = int(snap.get("count") or len(snap.get("clubs") or {}))
+        except Exception as exc:  # noqa: BLE001 — absent, empty or malformed
+            _alert(f"clubelo.json unreadable ({type(exc).__name__}) — every "
+                   f"cold-start team falls back to a flat Elo 1500")
+        else:
+            age = (date.today() - as_of).days
+            print(f"[clubelo] {n_clubs} clubs, rated {as_of} ({age}d old)")
+            # The site's ratings settle a couple of days behind the fixtures, so
+            # a few days is normal; a week means the fetch has been failing.
+            if age > 7:
+                _alert(f"clubelo.json is {age} days old (rated {as_of}) — the "
+                       f"fetch in run_daily.sh step 5c has been failing, and "
+                       f"cold-start teams are back on a flat Elo 1500")
+            elif age > 3:
+                _warn(f"clubelo.json is {age} days old (rated {as_of})")
+            if n_clubs < 400:
+                _warn(f"clubelo.json holds only {n_clubs} clubs — expected ~1,050 "
+                      f"across the UEFA federations; the page layout may have "
+                      f"changed under scripts/fetch_clubelo.py")
 
         # 5+6. national seams
         nrows = db.execute(text(

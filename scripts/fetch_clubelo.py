@@ -1,75 +1,290 @@
 #!/usr/bin/env python3
 """
-Fetch a daily ClubElo.com rating snapshot → backend/data/clubelo.json.
+Fetch a daily ClubElo rating snapshot → backend/data/clubelo.json.
 
 Why: our internal club Elo only knows teams that appear in our historical CSVs.
 A newly-promoted side, a lower-division cup/friendly opponent (e.g. Wrexham) or a
 European-qualifier minnow is absent, so `compute_match_features` silently defaults
-its Elo to 1500 (ELO_START) — i.e. treats it as a perfectly average team. ClubElo
-publishes a rating for ~600 clubs across Europe; seeding those into the snapshot for
-cold-start teams gives the model a real strength signal instead of a flat prior.
+its Elo to 1500 (ELO_START) — i.e. treats it as a perfectly average team. Seeding
+a real rating for those clubs gives the model a strength signal instead of a flat
+prior.
 
-The raw ClubElo scale (top club ~2060, wider spread than ours) is NOT injected
-directly — compute_predictions.py fits a linear ClubElo→our-Elo map on the overlap
-of teams present in both, so seeded values land on our trained distribution.
+The raw ClubElo scale is NOT injected directly — compute_predictions.py fits a
+linear ClubElo→our-Elo map on the overlap of teams present in both, so seeded
+values land on our trained distribution. That fit is re-run every day, which is
+why a change in the upstream scale (see below) needs no coefficient anywhere.
 
-API: http://api.clubelo.com/YYYY-MM-DD → CSV (Rank,Club,Country,Level,Elo,From,To).
-One unauthenticated GET, no key, refreshed at most once/day (cheap).
+── Source, and why it changed (2026-08-26) ───────────────────────────────────
+The CSV API this script used to call — http://api.clubelo.com/YYYY-MM-DD — died
+on 2026-08-12. It still completes a TCP handshake in ~70ms and then never answers
+the HTTP request; a 120s curl times out over both http and https. Thirteen daily
+runs kept the 2026-08-11 snapshot.
+
+The replacement is the clubelo.com home page itself, which is alive and rebuilt.
+Reading it needs care, because the obvious parts of it are the wrong parts:
+
+  · The Vega-Lite JSON blob embedded in the page (fields Name/Elo/FedURL/Level —
+    exactly the shape this script wants) is only the top-50 chart. /Ranking is
+    the same blob with 100. Federation pages like /ENG carry their top 25.
+    A scraper built on any of those would look like it worked while seeding
+    nothing that matters: `seed_cold_start` exists FOR the clubs no top-N list
+    contains — Andorran, Faroese, Gibraltarian, San Marinese qualifier fodder.
+  · The full table is in the HTML below the chart: an accordion, one section per
+    federation, each an <table class="ast"> of <td class="l">…name…</td>
+    <td class="r">Elo</td> rows grouped by "Level N (x teams)" headers. That is
+    1,900+ clubs across 90 federations in ONE request — more coverage than the
+    dead API had (594), including all four minnow federations.
+  · clubelo.com/YYYY-MM-DD 302s to /, and clubelo.com/YYYY-MM-DD/ is a 404, so
+    there is no historical fetch any more. Only "now" is available.
+
+Three things about the page's names have to be handled, or the seam matches
+nothing (see `_name_variants`): display names are truncated at 16 characters
+("Sportivo Trinidense" → "Sportivo Trinide"), the chart and the table disagree
+("Bayern München" vs the /Bayern link), and club-type tokens the shared `_slug`
+does not strip (KF, PFK, …) sit in front of names our fixtures spell bare
+("KF Ballkani" vs our "Ballkani").
+
+Scope: UEFA federations only. The page also carries CONMEBOL/CONCACAF/AFC/CAF
+clubs, which the dead API never did, and taking them costs more than it pays —
+they collide with clubs we actually predict. "Athletic Club" (ESP) against Brazil's
+"Athletic", "Newcastle" (ENG) against Australia's "Newcastle United", "Sporting"
+(POR) against Costa Rica's "Sporting FC". Under the loader's drop-on-ambiguity
+rule those collisions would silently delete Bilbao, Newcastle and Sporting CP
+from the map. Restricting to UEFA keeps the pre-outage contract and the name
+space clean; the cold-start population is European anyway.
+
+Request budget: one unauthenticated GET (~600KB), no key, once per daily run —
+same budget as the CSV API it replaces.
 
 Idempotent: rewrites clubelo.json each run. Network failure is non-fatal — the
 seeding path treats a missing/stale file as "no fallback" and behaves exactly as
-before (flat 1500).
+before (flat 1500). See run_daily.sh step 5c.
 """
 from __future__ import annotations
 
-import csv
-import io
+import argparse
+import html as html_mod
 import json
+import re
 import sys
 from datetime import date
 from pathlib import Path
-
-import requests
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from scripts._http_retry import get_with_retry  # noqa: E402
 
 OUT_PATH = ROOT / "backend" / "data" / "clubelo.json"
-API_URL = "http://api.clubelo.com/{d}"
-TIMEOUT = 20
+SOURCE_URL = "https://clubelo.com/"
+TIMEOUT = 30
+
+# Cloudflare fronts the site and the default python-requests agent is a common
+# thing to challenge. Ask as a browser would; this is one polite GET a day.
+HEADERS = {
+    "User-Agent": ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                   "AppleWebKit/537.36 (KHTML, like Gecko) "
+                   "Chrome/126.0 Safari/537.36"),
+    "Accept": "text/html,application/xhtml+xml",
+}
+
+# The 55 UEFA members, in the page's own three-letter codes. Note these are NOT
+# the codes the dead API used — it said FAR/LAT/LIT/ROM/SLK/MOL/MAC/MNT/BHZ where
+# the site now says FRO/LVA/LTU/ROU/SVK/MDA/MKD/MNE/BIH — so anything comparing
+# an old snapshot's `country` against a new one must translate first.
+UEFA_FEDERATIONS = frozenset({
+    "ALB", "AND", "ARM", "AUT", "AZE", "BEL", "BIH", "BLR", "BUL", "CRO",
+    "CYP", "CZE", "DEN", "ENG", "ESP", "EST", "FIN", "FRA", "FRO", "GEO",
+    "GER", "GIB", "GRE", "HUN", "IRL", "ISL", "ISR", "ITA", "KAZ", "KOS",
+    "LIE", "LTU", "LUX", "LVA", "MDA", "MKD", "MLT", "MNE", "NED", "NIR",
+    "NOR", "POL", "POR", "ROU", "RUS", "SCO", "SMR", "SRB", "SUI", "SVK",
+    "SVN", "SWE", "TUR", "UKR", "WAL",
+})
+
+# Below this the page did not render the way we parse it (a layout change, a
+# Cloudflare interstitial, a truncated response) and the old file is worth more
+# than what we just read. ~1,050 UEFA clubs is the steady state; the dead API's
+# whole European table was 594, so 400 still allows for real shrinkage upstream
+# while catching "we got the chart and none of the accordion".
+MIN_CLUBS = 400
+
+# Club-type tokens our shared `_slug` does NOT strip, which the page puts in
+# front of (or behind) names our fixtures spell bare. `_name_variants` also
+# strips any ≤3-character leading/trailing token generically; this list exists
+# for the longer ones. Kept short on purpose — every extra variant is another
+# chance to collide with a different club.
+_AFFIXES = frozenset({"kf", "nk", "hnk", "gnk", "pfk", "mfk", "fsk", "sfk"})
+
+# Names the page uses that no mechanical rule reaches from ours. Keyed by
+# (federation, page name) because the name alone is ambiguous — this is exactly
+# the case where it is: Gibraltar's "Lincoln" is our "Lincoln Red Imps FC", and
+# England's "Lincoln City" is a different club with the same first word.
+_EXTRA_NAMES: dict[tuple[str, str], list[str]] = {
+    ("GIB", "Lincoln"): ["Lincoln Red Imps"],
+    ("AZE", "Neftçi PFK"): ["Neftchi Baku", "Neftchi"],
+}
+
+# ── Page structure ────────────────────────────────────────────────────────────
+# One <div class="accordion-item"> per federation; the header links to /XXX, the
+# content is a table of club rows interrupted by "Level N" group headers.
+_ITEM = re.compile(
+    r'<div class="accordion-item">(.*?)(?=<div class="accordion-item">|\Z)', re.S)
+_FED = re.compile(r'<div class="accordion-header">\s*<a href="/?([A-Z]{3})"')
+_ROW = re.compile(r'<td class="l">(.*?)</td>\s*<td class="r">\s*([-\d.]+)\s*</td>', re.S)
+_LEVEL = re.compile(r"<i>\s*Level\s+(\d+)\s*\(")
+# The row's cell carries the club twice: a three-letter code for narrow screens
+# and the (16-char-truncated) name for wide ones.
+_DISPLAY = re.compile(r'<span class="Ast">(.*?)</span>', re.S)
+# Clubs with their own page also carry a link, whose slug is the untruncated
+# name — "/sportivo-trinidense" behind the displayed "Sportivo Trinide". Many
+# clubs, including most of the minnows, have no link at all.
+_HREF = re.compile(r'<a href="/([^"/]+)"><span class="NonAst"')
+# The site's own current-rating date, e.g. <h1><a href="/2026-08-24/"></a></h1>.
+# Two or three days behind today is normal — ratings settle after results do.
+_AS_OF = re.compile(r'<h1><a href="/(\d{4}-\d{2}-\d{2})/"')
+
+_TAGS = re.compile(r"<[^>]+>")
 
 
-def fetch_snapshot(on_date: str) -> dict[str, dict]:
-    """Return {club_name: {"elo": float, "country": str, "level": int}}."""
-    url = API_URL.format(d=on_date)
-    # Retried: the endpoint answers with a 502 or a read timeout often enough
-    # that a single attempt turns a blip into a skipped day of cold-start Elo.
-    resp = get_with_retry(url, timeout=TIMEOUT)
-    resp.raise_for_status()
+def _text(fragment: str) -> str:
+    return html_mod.unescape(_TAGS.sub("", fragment)).strip()
+
+
+def _name_variants(name: str, href: str | None, country: str) -> list[str]:
+    """Every spelling of one club worth indexing, best first.
+
+    The first two are authoritative (what the page displays, and the club's own
+    URL); the rest are derived guesses that only get used for a slug the
+    authoritative names did not already claim — see `load_clubelo`.
+    """
+    primary = [name]
+    if href:
+        # "/santos-fc_2" — the _N suffix is the site disambiguating two clubs
+        # that would otherwise share a URL, not part of the name.
+        primary.append(re.sub(r"_\d+$", "", href).replace("-", " "))
+
+    derived: list[str] = []
+    for base in primary:
+        tokens = base.split()
+        if len(tokens) < 2:
+            continue
+        # "KF Ballkani" → "Ballkani", "Neftçi PFK" → "Neftçi". Short tokens are
+        # club-type noise far more often than they are the name.
+        if len(tokens[0]) <= 3 or tokens[0].lower() in _AFFIXES:
+            derived.append(" ".join(tokens[1:]))
+        if len(tokens[-1]) <= 3 or tokens[-1].lower() in _AFFIXES:
+            derived.append(" ".join(tokens[:-1]))
+    derived.extend(_EXTRA_NAMES.get((country, name), ()))
+
+    out: list[str] = []
+    for v in primary + derived:
+        v = v.strip()
+        if v and v not in out:
+            out.append(v)
+    return out
+
+
+_RESERVE_SUFFIX = re.compile(r"\s+(?:II|III|B|C|U1\d|U2\d|Res)$")
+
+
+def _reserve_names(clubs: dict[str, dict]) -> set[str]:
+    """Names that are a first team's reserve/academy side.
+
+    ClubElo rates "Dortmund II", "Jong PSV", "Betis B" alongside their first
+    teams. We never predict them, and they actively hurt: "Betis B" reduces to
+    the same slug as "Betis", which under drop-on-ambiguity costs us Betis.
+
+    The test is deliberately relational, not a name pattern — a name only counts
+    as a reserve side when the first team it names is ALSO in the table, in the
+    same federation. Willem II is a first team in the Eredivisie and there is no
+    "Willem" above it, so it stays.
+    """
+    by_fed: dict[str, set[str]] = {}
+    for name, info in clubs.items():
+        by_fed.setdefault(info["country"], set()).add(name)
+
+    out: set[str] = set()
+    for name, info in clubs.items():
+        siblings = by_fed[info["country"]]
+        base = None
+        if name.startswith("Jong "):
+            base = name[len("Jong "):]
+        else:
+            m = _RESERVE_SUFFIX.search(name)
+            if m:
+                base = name[:m.start()]
+        if base and base != name and base in siblings:
+            out.add(name)
+    return out
+
+
+def parse_snapshot(page: str) -> tuple[str | None, dict[str, dict]]:
+    """Parse the clubelo.com home page → (as_of, {club: {...}}).
+
+    Pure: no network. `as_of` is the site's own rating date, None if the page
+    does not carry one. Values are {"elo", "country", "level", "aka"}.
+    """
+    raw: dict[str, dict] = {}
+    for item in _ITEM.findall(page):
+        fed_m = _FED.search(item)
+        if not fed_m:
+            # The confederation roll-ups (Europe, Africa, …) have no federation
+            # link and list national sides, not clubs.
+            continue
+        country = fed_m.group(1)
+        if country not in UEFA_FEDERATIONS:
+            continue
+
+        level = 0
+        for chunk in item.split("<tr>"):
+            level_m = _LEVEL.search(chunk)
+            if level_m:
+                level = int(level_m.group(1))
+                continue
+            row_m = _ROW.search(chunk)
+            if not row_m:
+                continue
+            cell, elo_raw = row_m.group(1), row_m.group(2)
+            name_m = _DISPLAY.search(cell)
+            if not name_m:
+                continue
+            name = _text(name_m.group(1))
+            if not name:
+                continue
+            try:
+                elo = float(elo_raw)
+            except ValueError:
+                continue
+            href_m = _HREF.search(cell)
+            # A club listed twice (it happens across level groups) keeps its
+            # higher rating, as the CSV parser this replaces did.
+            if name in raw and raw[name]["elo"] >= elo:
+                continue
+            raw[name] = {"elo": round(elo, 2), "country": country,
+                         "level": level, "href": href_m.group(1) if href_m else None}
+
+    for name in _reserve_names(raw):
+        del raw[name]
 
     out: dict[str, dict] = {}
-    reader = csv.DictReader(io.StringIO(resp.text))
-    for row in reader:
-        name = (row.get("Club") or "").strip()
-        elo_raw = (row.get("Elo") or "").strip()
-        if not name or not elo_raw:
-            continue
-        try:
-            elo = float(elo_raw)
-        except ValueError:
-            continue
-        try:
-            level = int((row.get("Level") or "0").strip())
-        except ValueError:
-            level = 0
-        # If a club appears twice (rare data quirk), keep the higher-rated row.
-        if name in out and out[name]["elo"] >= elo:
-            continue
-        out[name] = {"elo": round(elo, 2),
-                     "country": (row.get("Country") or "").strip(),
-                     "level": level}
-    return out
+    for name, info in raw.items():
+        # aka excludes the key itself; the loader indexes the key separately.
+        aka = [v for v in _name_variants(name, info["href"], info["country"])
+               if v != name]
+        entry = {"elo": info["elo"], "country": info["country"],
+                 "level": info["level"]}
+        if aka:
+            entry["aka"] = aka
+        out[name] = entry
+
+    as_of_m = _AS_OF.search(page)
+    return (as_of_m.group(1) if as_of_m else None), out
+
+
+def fetch_snapshot() -> tuple[str | None, dict[str, dict]]:
+    """One GET to clubelo.com, parsed. Raises on transport failure."""
+    resp = get_with_retry(SOURCE_URL, timeout=TIMEOUT, headers=HEADERS)
+    resp.raise_for_status()
+    return parse_snapshot(resp.text)
 
 
 def _staleness() -> str:
@@ -85,9 +300,23 @@ def _staleness() -> str:
 
 
 def main() -> int:
-    on_date = sys.argv[1] if len(sys.argv) > 1 else date.today().isoformat()
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument("--html", type=Path,
+                    help="parse a saved copy of the page instead of fetching "
+                         "(offline debugging; writes the snapshot as usual)")
+    ap.add_argument("date", nargs="?",
+                    help="accepted for compatibility and ignored — clubelo.com "
+                         "no longer serves historical snapshots")
+    args = ap.parse_args()
+    if args.date:
+        print(f"[warn] ignoring date '{args.date}': clubelo.com redirects every "
+              f"/YYYY-MM-DD to the current ratings.")
+
     try:
-        snap = fetch_snapshot(on_date)
+        if args.html:
+            as_of, snap = parse_snapshot(args.html.read_text(encoding="utf-8"))
+        else:
+            as_of, snap = fetch_snapshot()
     except Exception as e:  # noqa: BLE001 — non-fatal by design
         print(f"[error] ClubElo fetch failed ({type(e).__name__}: {e}). "
               f"Leaving {OUT_PATH.name} untouched.")
@@ -98,15 +327,25 @@ def main() -> int:
         print(f"  {_staleness()}")
         return 1
 
-    if len(snap) < 100:
-        print(f"[warn] only {len(snap)} clubs parsed — refusing to overwrite "
-              f"(likely a bad/empty response).")
+    if len(snap) < MIN_CLUBS:
+        print(f"[warn] only {len(snap)} UEFA clubs parsed (want ≥{MIN_CLUBS}) — "
+              f"refusing to overwrite. The page layout most likely changed; "
+              f"re-check the accordion selectors in parse_snapshot().")
+        print(f"  {_staleness()}")
         return 1
 
-    payload = {"as_of": on_date, "count": len(snap), "clubs": snap}
+    today = date.today().isoformat()
+    if as_of is None:
+        print("[warn] no rating date on the page — recording today's instead.")
+        as_of = today
+
+    payload = {"as_of": as_of, "fetched_on": today, "source": SOURCE_URL,
+               "count": len(snap), "clubs": snap}
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUT_PATH.write_text(json.dumps(payload, ensure_ascii=False, indent=0))
-    print(f"✓ ClubElo snapshot ({on_date}): {len(snap)} clubs → {OUT_PATH}")
+    feds = len({c["country"] for c in snap.values()})
+    print(f"✓ ClubElo snapshot (rated {as_of}, fetched {today}): "
+          f"{len(snap)} clubs across {feds} federations → {OUT_PATH}")
     return 0
 
 

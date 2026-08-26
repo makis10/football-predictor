@@ -329,6 +329,12 @@ else echo "  [skip] API-Football blocked." | tee -a "$LOG"; fi
 # sides, lower-division cup/friendly opponents, European-qualifier minnows —
 # instead of the flat 1500 default. Non-fatal: a failed/stale pull just disables
 # seeding (falls back to 1500), so it must not flip the pipeline health signal.
+#
+# Since 2026-08-26 this scrapes the clubelo.com home page rather than calling
+# api.clubelo.com, which has been dead since 2026-08-12. Scraping fails in a way
+# an API does not — silently, by parsing a redesigned page into nothing — so the
+# script refuses to overwrite the file below its club-count floor, and the
+# completeness check's step 4b alerts once the kept file ages past a week.
 echo "" >> "$LOG"
 echo "[5c/6] Refreshing ClubElo cold-start ratings …" | tee -a "$LOG"
 docker compose exec -T backend \
