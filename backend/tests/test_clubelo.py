@@ -7,6 +7,9 @@ layout change upstream fails here instead of silently seeding nothing.
 """
 import json
 from collections import defaultdict
+from pathlib import Path
+
+REPO_ROOT = Path(__file__).resolve().parents[2]
 
 from backend.app.ml.clubelo import (
     fit_clubelo_map,
@@ -69,6 +72,14 @@ PAGE = (
                + _row("Willem II", 1394, flag="NED")
                + _row("PSV", 1800, href="PSV", flag="NED")
                + _row("Jong PSV", 1350, flag="NED"))
+    # The shape that defeated the original reserve rule: the page spells the
+    # first team bare and its B side with a club-type prefix, so raw string
+    # equality never connects "SL Benfica B" to "Benfica".
+    + _section('<a href="POR">Portugal</a>',
+               _level(1, 1)
+               + _row("Benfica", 1818, href="Benfica", flag="POR")
+               + _level(3, 1)
+               + _row("SL Benfica B", 1407, flag="POR"))
     + _section('<a href="KOS">Kosovo</a>',
                _level(1, 1) + _row("KF Ballkani", 1356, flag="KOS"))
     + _section('<a href="GIB">Gibraltar</a>', _row("Lincoln", 1312, flag="GIB"))
@@ -373,3 +384,82 @@ def test_seed_without_names_still_matches_and_stays_safe():
                              ["Gornik Zabrze", "Ilves"], clubelo)
     assert "Gornik Zabrze" in seeded
     assert "Ilves" not in seeded
+
+
+# ── The 2026-08-26 reserve-alias fixes ───────────────────────────────────────
+# Five slugs in the 2026-08-24 snapshot resolved to a B side's rating under the
+# FIRST team's full name — slbenfica 1407 (Benfica is ~1818), sportingcp 1361,
+# sdeibar 1455, udalmeria 1381, cdalaves 1327. Two independent defects had to
+# line up: the reserve filter missed the club because the page spells the two
+# sides differently, and the alias generator then stripped the "B" and minted
+# the first team's name. Either fix alone closes the hole; both are kept because
+# each catches cases the other cannot.
+
+def test_reserve_side_is_dropped_even_when_the_page_spells_it_differently():
+    """The bug: "SL Benfica B" vs a table listing the first team as "Benfica".
+
+    Raw string equality asks whether "SL Benfica" is in the table. It is not —
+    only "Benfica" is — so all twelve such reserve sides survived the filter.
+    """
+    clubs = _parsed()
+    assert "SL Benfica B" not in clubs
+    assert clubs["Benfica"]["elo"] == 1818        # the first team is untouched
+
+
+def test_a_reserve_marker_is_never_stripped_into_the_first_teams_name():
+    """The second half of the same bug, and the one that made it dangerous.
+
+    `_name_variants` strips a short trailing token because the page writes
+    "Neftçi PFK" where we write "Neftçi". Applied to "SL Benfica B" that yields
+    "SL Benfica" — an alias claiming a slug the first team never spelled, so
+    nothing outranks it and the B side's rating wins the lookup.
+    """
+    from scripts.fetch_clubelo import _name_variants
+
+    for name in ("SL Benfica B", "AC Milan II", "Atletico B", "Dortmund III"):
+        base = name.rsplit(" ", 1)[0]
+        assert base not in _name_variants(name, None, "POR"), name
+    # The rule it must not break: genuine club-type noise is still stripped.
+    assert "Neftçi" in _name_variants("Neftçi PFK", None, "AZE")
+    assert "Ballkani" in _name_variants("KF Ballkani", None, "KOS")
+
+
+def test_no_surviving_entry_carries_an_alias_of_a_shorter_name():
+    """Belt and braces over the whole fixture: nothing that looks like a reserve
+    side may advertise a spelling with the marker removed."""
+    import re
+
+    marker = re.compile(r"\s+(?:II|III|B|C|U1\d|U2\d|Res)$", re.IGNORECASE)
+    for name, info in _parsed().items():
+        if not marker.search(name):
+            continue
+        for alias in info.get("aka") or []:
+            assert marker.search(alias), f"{name} aliases first team as {alias!r}"
+
+
+def test_first_teams_that_merely_look_like_reserves_survive():
+    """Willem II is an Eredivisie first team; Athletic Club B is not, and the
+    only rule that reaches it is raw-name equality, because `_slug` treats both
+    "athletic" and "club" as noise and the base slugs to the empty string."""
+    clubs = _parsed()
+    assert "Willem II" in clubs
+    assert clubs["Willem II"]["elo"] == 1394
+
+
+def test_min_clubs_floor_is_above_a_partial_render():
+    """400 could not do its job: the five biggest federations alone are ~452
+    clubs, so an accordion that rendered only its opening sections would clear
+    the floor and overwrite a good snapshot with a table missing every minnow —
+    exactly the clubs cold-start seeding exists for."""
+    from scripts.fetch_clubelo import MIN_CLUBS
+
+    assert MIN_CLUBS >= 800
+
+
+def test_snapshot_is_written_atomically():
+    """A plain write_text truncates first, so a crash mid-write leaves a JSON
+    the loader can only read as "no ratings at all" — silently disabling the
+    seam. Write to a temp path, then rename."""
+    src = (REPO_ROOT / "scripts" / "fetch_clubelo.py").read_text(encoding="utf-8")
+    assert "os.replace(" in src
+    assert "OUT_PATH.write_text(" not in src

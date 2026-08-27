@@ -65,6 +65,7 @@ from __future__ import annotations
 import argparse
 import html as html_mod
 import json
+import os
 import re
 import sys
 from datetime import date
@@ -102,10 +103,15 @@ UEFA_FEDERATIONS = frozenset({
 
 # Below this the page did not render the way we parse it (a layout change, a
 # Cloudflare interstitial, a truncated response) and the old file is worth more
-# than what we just read. ~1,050 UEFA clubs is the steady state; the dead API's
-# whole European table was 594, so 400 still allows for real shrinkage upstream
-# while catching "we got the chart and none of the accordion".
-MIN_CLUBS = 400
+# than what we just read. ~1,076 UEFA clubs is the steady state.
+#
+# 400 was too loose to do the job it was written for: the five biggest
+# federations alone (ESP+ITA+ENG+GER+FRA) are 452 clubs, so an accordion that
+# rendered only its opening sections would clear the floor and overwrite a good
+# snapshot with a table missing every minnow — precisely the clubs this seam
+# exists to rate. 800 still tolerates real shrinkage (a federation or two
+# dropping out) while refusing a partial render.
+MIN_CLUBS = 800
 
 # Club-type tokens our shared `_slug` does NOT strip, which the page puts in
 # front of (or behind) names our fixtures spell bare. `_name_variants` also
@@ -149,6 +155,15 @@ def _text(fragment: str) -> str:
     return html_mod.unescape(_TAGS.sub("", fragment)).strip()
 
 
+# A trailing token that marks a reserve/academy side rather than club-type noise.
+# `_name_variants` strips short trailing tokens ("Neftçi PFK" → "Neftçi"); doing
+# that to "SL Benfica B" yields "SL Benfica", i.e. an alias that impersonates the
+# FIRST TEAM. Five such aliases shipped in the 2026-08-24 snapshot — slbenfica,
+# sportingcp, sdeibar, udalmeria, cdalaves each resolved to the B side's rating —
+# and they were invisible only because we spell those clubs without the prefix.
+_RESERVE_TOKEN = re.compile(r"^(?:II|III|B|C|U1\d|U2\d|Res)$", re.IGNORECASE)
+
+
 def _name_variants(name: str, href: str | None, country: str) -> list[str]:
     """Every spelling of one club worth indexing, best first.
 
@@ -171,7 +186,8 @@ def _name_variants(name: str, href: str | None, country: str) -> list[str]:
         # club-type noise far more often than they are the name.
         if len(tokens[0]) <= 3 or tokens[0].lower() in _AFFIXES:
             derived.append(" ".join(tokens[1:]))
-        if len(tokens[-1]) <= 3 or tokens[-1].lower() in _AFFIXES:
+        if ((len(tokens[-1]) <= 3 or tokens[-1].lower() in _AFFIXES)
+                and not _RESERVE_TOKEN.match(tokens[-1])):
             derived.append(" ".join(tokens[:-1]))
     derived.extend(_EXTRA_NAMES.get((country, name), ()))
 
@@ -197,10 +213,29 @@ def _reserve_names(clubs: dict[str, dict]) -> set[str]:
     as a reserve side when the first team it names is ALSO in the table, in the
     same federation. Willem II is a first team in the Eredivisie and there is no
     "Willem" above it, so it stays.
+
+    The comparison is on SLUGS, and on every spelling of each sibling, because
+    the page does not name the two sides consistently: it lists the first team as
+    "Benfica" but its reserves as "SL Benfica B", "Sporting"/"Sporting CP B",
+    "Eibar"/"SD Eibar B", "Almería"/"UD Almería B", "Alavés"/"CD Alavés B",
+    "Celta"/"RC Celta B", "Milan"/"AC Milan II", "Porto"/"FC Porto B". Raw string
+    equality missed all twelve of them, so they stayed in the table and their
+    aliases went on to claim slugs the first teams never spelled that way.
     """
+    from backend.app.ml.clubelo import _slug
+
+    # Every slug any sibling answers to, per federation. Built from the same
+    # `_name_variants` the entries themselves get, because this runs BEFORE the
+    # aka lists are attached — reading info["aka"] here would see nothing.
     by_fed: dict[str, set[str]] = {}
+    by_fed_names: dict[str, set[str]] = {}
     for name, info in clubs.items():
-        by_fed.setdefault(info["country"], set()).add(name)
+        known = by_fed.setdefault(info["country"], set())
+        by_fed_names.setdefault(info["country"], set()).add(name)
+        for variant in _name_variants(name, info.get("href"), info["country"]):
+            v = _slug(variant)
+            if v:
+                known.add(v)
 
     out: set[str] = set()
     for name, info in clubs.items():
@@ -212,7 +247,23 @@ def _reserve_names(clubs: dict[str, dict]) -> set[str]:
             m = _RESERVE_SUFFIX.search(name)
             if m:
                 base = name[:m.start()]
-        if base and base != name and base in siblings:
+        if not base or base == name:
+            continue
+        # Two independent tests, because each catches what the other cannot.
+        #
+        # Raw name equality is what the original rule used, and it is still the
+        # only thing that reaches "Athletic Club B": `_slug` treats both
+        # "athletic" and "club" as noise, so the base slugs to the empty string
+        # and no slug comparison can ever match it.
+        if base in by_fed_names[info["country"]]:
+            out.add(name)
+            continue
+        # Slugged variants catch the reverse case — the page naming the two
+        # sides differently ("Benfica" but "SL Benfica B", "Sporting" but
+        # "Sporting CP B"), which raw equality missed for all twelve of them.
+        candidates = {_slug(v) for v in _name_variants(base, None, info["country"])}
+        candidates.discard("")
+        if candidates & siblings:
             out.add(name)
     return out
 
@@ -342,7 +393,13 @@ def main() -> int:
     payload = {"as_of": as_of, "fetched_on": today, "source": SOURCE_URL,
                "count": len(snap), "clubs": snap}
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    OUT_PATH.write_text(json.dumps(payload, ensure_ascii=False, indent=0))
+    # Write-then-rename: a plain write_text truncates the file first, so a crash
+    # or a full disk mid-write leaves a half-written JSON that the loader can
+    # only read as "no ratings at all". os.replace is atomic within a
+    # filesystem, so readers see either the old snapshot or the new one.
+    tmp = OUT_PATH.with_suffix(OUT_PATH.suffix + ".tmp")
+    tmp.write_text(json.dumps(payload, ensure_ascii=False, indent=0))
+    os.replace(tmp, OUT_PATH)
     feds = len({c["country"] for c in snap.values()})
     print(f"✓ ClubElo snapshot (rated {as_of}, fetched {today}): "
           f"{len(snap)} clubs across {feds} federations → {OUT_PATH}")
