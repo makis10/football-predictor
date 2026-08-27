@@ -1,8 +1,8 @@
 {
 "as_of": "2026-08-24",
-"fetched_on": "2026-08-26",
+"fetched_on": "2026-08-27",
 "source": "https://clubelo.com/",
-"count": 1076,
+"count": 1065,
 "clubs": {
 "Bayern München": {
 "elo": 2023.0,
@@ -1041,18 +1041,6 @@
 "country": "ESP",
 "level": 2
 },
-"RC Celta B": {
-"elo": 1568.0,
-"country": "ESP",
-"level": 2,
-"aka": [
-"rc celta b",
-"Celta B",
-"RC Celta",
-"celta b",
-"rc celta"
-]
-},
 "Eldense": {
 "elo": 1563.0,
 "country": "ESP",
@@ -1103,15 +1091,6 @@
 "elo": 1541.0,
 "country": "ESP",
 "level": 3
-},
-"Atletico B": {
-"elo": 1536.0,
-"country": "ESP",
-"level": 3,
-"aka": [
-"AtleticoB",
-"Atletico"
-]
 },
 "Zamora": {
 "elo": 1534.0,
@@ -1357,15 +1336,6 @@
 "country": "ESP",
 "level": 3
 },
-"SD Eibar B": {
-"elo": 1455.0,
-"country": "ESP",
-"level": 3,
-"aka": [
-"Eibar B",
-"SD Eibar"
-]
-},
 "Alcoyano": {
 "elo": 1454.0,
 "country": "ESP",
@@ -1475,14 +1445,6 @@
 "Marbella"
 ]
 },
-"Getafe CF B": {
-"elo": 1414.0,
-"country": "ESP",
-"level": 3,
-"aka": [
-"Getafe CF"
-]
-},
 "Orihuela": {
 "elo": 1405.0,
 "country": "ESP",
@@ -1533,15 +1495,6 @@
 "Navalcarnero"
 ]
 },
-"UD Almería B": {
-"elo": 1381.0,
-"country": "ESP",
-"level": 3,
-"aka": [
-"Almería B",
-"UD Almería"
-]
-},
 "Terrassa": {
 "elo": 1378.0,
 "country": "ESP",
@@ -1580,15 +1533,6 @@
 "level": 3,
 "aka": [
 "Gernika"
-]
-},
-"CD Alavés B": {
-"elo": 1327.0,
-"country": "ESP",
-"level": 3,
-"aka": [
-"Alavés B",
-"CD Alavés"
 ]
 },
 "Langreo": {
@@ -2278,14 +2222,6 @@
 "country": "ITA",
 "level": 3
 },
-"Inter II": {
-"elo": 1380.0,
-"country": "ITA",
-"level": 3,
-"aka": [
-"Inter"
-]
-},
 "Torres": {
 "elo": 1380.0,
 "country": "ITA",
@@ -2557,15 +2493,6 @@
 "country": "ITA",
 "level": 3
 },
-"AC Milan II": {
-"elo": 1279.0,
-"country": "ITA",
-"level": 3,
-"aka": [
-"Milan II",
-"AC Milan"
-]
-},
 "Pontedera": {
 "elo": 1278.0,
 "country": "ITA",
@@ -2727,15 +2654,6 @@
 "Futebol"
 ]
 },
-"SL Benfica B": {
-"elo": 1407.0,
-"country": "POR",
-"level": 2,
-"aka": [
-"Benfica B",
-"SL Benfica"
-]
-},
 "Chaves": {
 "elo": 1397.0,
 "country": "POR",
@@ -2745,15 +2663,6 @@
 "elo": 1397.0,
 "country": "POR",
 "level": 2
-},
-"FC Porto B": {
-"elo": 1385.0,
-"country": "POR",
-"level": 2,
-"aka": [
-"Porto B",
-"FC Porto"
-]
 },
 "Penafiel": {
 "elo": 1377.0,
@@ -2787,14 +2696,6 @@
 "elo": 1420.0,
 "country": "POR",
 "level": 2
-},
-"Sporting CP B": {
-"elo": 1361.0,
-"country": "POR",
-"level": 2,
-"aka": [
-"Sporting CP"
-]
 },
 "Pacos Ferreira": {
 "elo": 1354.0,
@@ -3571,10 +3472,7 @@
 "Willem II": {
 "elo": 1394.0,
 "country": "NED",
-"level": 1,
-"aka": [
-"Willem"
-]
+"level": 1
 },
 "Cambuur": {
 "elo": 1370.0,
