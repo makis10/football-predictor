@@ -564,3 +564,34 @@ def test_the_estimated_fallback_only_fires_on_a_wholly_unpriced_card():
         assert t.estimated_legs <= 0.5 * len(t.legs), (
             f"{t.profile}: {t.estimated_legs}/{len(t.legs)} invented while real "
             f"prices were available")
+
+
+# ── A leg postponed out of the slip's window ─────────────────────────────────
+# Jagiellonia–Pogoń moved from 16 Aug to 16 DECEMBER. Its two slips sat "still
+# running" on the page while every other slip from those days had been graded —
+# a 15 August accumulator advertised as live in September, and it would have
+# stayed there until Christmas. The old row predated the feed-id column, so
+# neither the 14-day reschedule window nor the id match could see the move.
+
+def test_a_slip_is_voided_when_a_leg_is_postponed_out_of_its_window():
+    from pathlib import Path
+
+    src = (Path(__file__).resolve().parents[2] / "scripts" /
+           "generate_tickets.py").read_text(encoding="utf-8")
+
+    assert "STALE_LEG_GRACE_DAYS" in src
+    assert "was postponed" in src, "a postponed leg no longer voids the slip"
+    # Void, not lost: nothing about the slip was wrong, it simply cannot be
+    # settled as offered, and grading it as a loss would be inventing a result.
+    block = src[src.index("stale_leg is not None"):][:400]
+    assert '"void"' in block
+
+
+def test_the_grace_period_allows_ordinary_rescheduling():
+    """A day or two of TV movement is normal and must not void anything; a
+    month is a different fixture in every way that matters to the reader."""
+    import importlib
+
+    gt = importlib.import_module("scripts.generate_tickets")
+
+    assert 3 <= gt.STALE_LEG_GRACE_DAYS <= 14

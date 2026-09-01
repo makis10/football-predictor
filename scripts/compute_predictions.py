@@ -557,6 +557,17 @@ for i, (mid, home, away, match_date, league) in enumerate(match_snapshots, 1):
         # artefact of the default feature vector, not an opinion about the game.
         _hist_ok = _has_history(home, away)
 
+        # Anchor first, then decide what to suggest. The suggestion is the
+        # served favourite, so it has to be computed from the served numbers —
+        # doing it the other way round put "Away Win" on a card whose bars
+        # showed Home ahead (Birmingham v Southampton, caught by
+        # test_the_suggested_market_matches_the_probability_bars).
+        served_h, served_d, served_a = anchor_to_market(
+            (home_win_p, draw_p, away_win_p),
+            (live_odds.get("raw_home"), live_odds.get("raw_draw"),
+             live_odds.get("raw_away")) if live_odds else None,
+        )
+
         # ── What we put in front of the reader ────────────────────────────────
         # The model's most likely 1x2 outcome — deliberately NOT the highest-EV
         # market. Measured over 470 settled fixtures (scripts/eval_gate_power.py
@@ -572,7 +583,7 @@ for i, (mid, home, away, match_date, league) in enumerate(match_snapshots, 1):
         # Needs no odds, so every fixture with history now carries a suggestion
         # instead of only the fraction the bookmaker has already priced.
         if _hist_ok:
-            _served = {"Home Win": home_win_p, "Draw": draw_p, "Away Win": away_win_p}
+            _served = {"Home Win": served_h, "Draw": served_d, "Away Win": served_a}
             _pick = max(_served, key=_served.get)
             _pick_odds = {
                 "Home Win": live_odds.get("raw_home") if live_odds else None,
@@ -626,12 +637,6 @@ for i, (mid, home, away, match_date, league) in enumerate(match_snapshots, 1):
         fail += 1
         print(f"  [warn] ML failed for {home} vs {away}: {e}", flush=True)
         continue
-
-    served_h, served_d, served_a = anchor_to_market(
-        (home_win_p, draw_p, away_win_p),
-        (live_odds.get("raw_home"), live_odds.get("raw_draw"),
-         live_odds.get("raw_away")) if live_odds else None,
-    )
 
     with engine.begin() as conn:
         res = conn.execute(

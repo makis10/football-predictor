@@ -43,6 +43,21 @@ def _slug(s: str) -> str:
     return re.sub(r"[^a-z0-9]", "", s.lower())
 
 
+# Two unsettled rows for the same ORDERED pairing are one fixture: in a
+# round-robin a club hosts another once a season, and a two-legged cup tie
+# swaps the venue, so the ordered pair stays unique either way.
+#
+# This is what catches the postponements no window can reach. Jagiellonia–Pogoń
+# moved from 16 Aug to 16 DECEMBER; the old row predated migration 0033 so it
+# carried no feed id, the 14-day reschedule could not span four months, and it
+# sat unplayable for ever — keeping two accumulators "still running" on the site
+# a fortnight after every other slip from those days had been graded.
+#
+# Friendlies are the exception: the same clubs really can meet twice at the same
+# ground in one pre-season.
+_REPEATABLE_PAIRINGS = {"ClubFriendly"}
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description="Merge duplicate fixtures caused by name drift")
     ap.add_argument("--days-back", type=int, default=45,
@@ -73,6 +88,15 @@ def main() -> None:
             # "Kifisia vs AEK" sat on both the 29th and the 30th, and both rows
             # carried API-Football id 1593299 — the day-keyed grouping below
             # could never see it, and the daily alert had to catch it instead.
+            if m.result is None and m.league not in _REPEATABLE_PAIRINGS:
+                # EVERY unsettled row gets a pairing key, including ones that
+                # carry a feed id. The stale row and the real fixture must land
+                # in the SAME group or they never meet — filing the id-carrying
+                # half under its id and the other half under its pairing was the
+                # first attempt at this, and it found nothing at all.
+                groups[(m.league, "pairing",
+                        _slug(canon(m.home_team)) + "|" + _slug(canon(m.away_team)))].append(m)
+                continue
             if m.api_fixture_id and m.result is None:
                 groups[(m.league, "apiid", m.api_fixture_id)].append(m)
                 continue
@@ -100,18 +124,23 @@ def main() -> None:
             # Grouped by feed id, the members disagree about the DATE and the
             # newest row carries the correction the feed just published. Move
             # the keeper onto it rather than keeping the stale day.
-            if key[1] == "apiid":
+            if key[1] in ("apiid", "pairing"):
                 newest = max(members, key=lambda m: m.id)
                 if keeper.match_date != newest.match_date:
                     print(f"    ↻ {keeper.match_date} → {newest.match_date} "
-                          f"(feed id {key[2]})")
+                          f"({key[1]} {key[2]})")
                     if args.apply:
                         keeper.match_date   = newest.match_date
                         keeper.kickoff_time = newest.kickoff_time
+                # Adopt the feed id too. Without it the surviving row is still
+                # the id-less one, so the next postponement past the reschedule
+                # window splits it again and we are back here.
+                if args.apply and newest.api_fixture_id and not keeper.api_fixture_id:
+                    keeper.api_fixture_id = newest.api_fixture_id
             losers = [m for m in members if m.id != keeper.id]
             want_h, want_a = canon(keeper.home_team), canon(keeper.away_team)
 
-            print(f"  {key[0]} {key[1] if key[1] != 'apiid' else f'fixture {key[2]}'}: keep id={keeper.id} "
+            print(f"  {key[0]} {key[1] if key[1] != 'apiid' else f'{key[1]} {key[2]}'}: keep id={keeper.id} "
                   f"({keeper.home_team!r} vs {keeper.away_team!r})"
                   + (f" → rename to ({want_h!r} vs {want_a!r})"
                      if (want_h, want_a) != (keeper.home_team, keeper.away_team) else "")

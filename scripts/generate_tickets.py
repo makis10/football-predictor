@@ -50,6 +50,11 @@ from backend.app.models.ticket import Ticket, TicketLeg     # noqa: E402
 # Widen only when the shorter card cannot fill the ladder.
 HORIZON_STEPS = (3, 5, 7)
 
+# How far past its own horizon a slip's leg may be pushed before the slip is
+# voided rather than left open. A day or two of TV rescheduling is normal; a
+# month is a different fixture in every way that matters to the reader.
+STALE_LEG_GRACE_DAYS = 7
+
 
 # ── Settling ──────────────────────────────────────────────────────────────────
 
@@ -86,6 +91,34 @@ def settle_open_tickets(db) -> tuple[int, int]:
                   f"{len(t.legs)} remain — a fixture was deleted.")
             continue
 
+        # A leg whose fixture has been POSTPONED out of the slip's own window
+        # is not the bet the reader was shown. Jagiellonia–Pogoń moved from 16
+        # Aug to 16 December, and the two slips carrying it sat "still running"
+        # on the page while every other slip from those days had long been
+        # graded — a 15 August accumulator advertised as live in September, and
+        # it would have stayed there until Christmas.
+        #
+        # The slip's own horizon is the standard: it was offered as "fixtures
+        # over the next N days", so a leg beyond that plus a week of ordinary
+        # rescheduling is a different proposition. Void, not lose — nothing
+        # about it was wrong, it simply cannot be settled as offered.
+        stale_leg = next(
+            (matches[l.match_id] for l in t.legs
+             if l.match_id in matches
+             and matches[l.match_id].result is None
+             and (matches[l.match_id].match_date - t.generated_for).days
+                 > (t.horizon_days or 7) + STALE_LEG_GRACE_DAYS),
+            None)
+        if stale_leg is not None:
+            t.outcome = "void"
+            t.settled_at = datetime.now(timezone.utc)
+            voided += 1
+            print(f"  [void] ticket {t.id} ({t.profile}) cut {t.generated_for}: "
+                  f"{stale_leg.home_team} v {stale_leg.away_team} was postponed "
+                  f"to {stale_leg.match_date} — beyond the slip's "
+                  f"{t.horizon_days}d horizon.")
+            continue
+
         all_done = True
         for leg in t.legs:
             m = matches.get(leg.match_id)
@@ -102,7 +135,7 @@ def settle_open_tickets(db) -> tuple[int, int]:
 
     db.commit()
     if voided:
-        print(f"  {voided} ticket(s) voided (deleted fixture).")
+        print(f"  {voided} ticket(s) voided (deleted or postponed fixture).")
     return settled, graded
 
 
