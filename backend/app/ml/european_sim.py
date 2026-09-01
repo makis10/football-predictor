@@ -136,9 +136,19 @@ def simulate_european(db, league: str, sims: int = DEFAULT_SIMS, seed: int = 424
             base_pts[h] += 1
             base_pts[a] += 1
 
-    from backend.app.ml.club_elo import club_elo
-    table = club_elo(db)
-    elo = {t: table.get(t, 1500.0) for t in teams}
+    # Cross-league strength, NOT our own Elo.
+    #
+    # club_elo() pools every league from a shared 1500 start, and the leagues
+    # barely play each other — so each is a closed pool where a dominant club
+    # climbs against opponents whose ratings never had a reason to fall. On
+    # 2026-09-01 that had Lincoln Red Imps of Gibraltar at 1847 against
+    # Juventus 1837 and Milan 1798, and the Europa League simulation duly
+    # produced Levski Sofia as a likelier winner than Milan.
+    #
+    # A competition that mixes 55 federations needs one scale for all of them,
+    # which is exactly what ClubElo maintains. See clubelo_ratings.
+    from backend.app.ml.clubelo_ratings import european_strength
+    elo = european_strength(list(teams))
 
     fixtures = [(h, a, *_lambdas(elo[h], elo[a])) for h, a in remaining]
 
