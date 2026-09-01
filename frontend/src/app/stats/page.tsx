@@ -264,6 +264,13 @@ export default async function StatsPage({ searchParams }: PageProps) {
       {/* Methodology cutoff — honest flag: all-time numbers mix two models */}
       {s.methodology && s.methodology.settled_before > 0 && (
         <div className="rounded-xl border border-est/40 bg-est/10 p-4 text-sm">
+          {/* How the published probabilities are produced. This sits ABOVE the
+              regime history on purpose: a reader comparing our accuracy with a
+              bookmaker's needs to know ours is partly theirs before they read
+              the number, not after. */}
+          <p className="font-semibold text-chalk mb-1">{t("stats.anchor.title")}</p>
+          <p className="text-xs leading-relaxed text-chalk-2 mb-4">{t("stats.anchor.body")}</p>
+
           <p className="font-semibold text-est mb-1">{t("stats.methodology.title", { cutoff: s.methodology.cutoff })}</p>
           <p className="text-chalk-2 leading-relaxed">
             {t("stats.methodology.body", {

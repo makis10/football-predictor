@@ -158,12 +158,58 @@ def reload_predict_models() -> None:
     logging.getLogger("predict").info("[predict] Model singletons cleared — will reload on next predict call.")
 
 
-# ── Market anchoring — REMOVED (2026-06-17) ───────────────────────────────────
-# Predictions are now 100% market-independent by directive. The served 1×2/Over
-# probabilities are the pure model output (calibration + draw blend only). The
-# bookmaker is used solely for downstream comparison (EV/value gate, ROI vs
-# sharps), never to shift our numbers. anchor_to_market() was deleted; callers
-# now serve the raw model probabilities directly.
+# ── Market anchoring — RESTORED at w=0.57 (2026-09-01) ────────────────────────
+# Removed on 2026-06-17 to make the predictions market-independent. Measured
+# again on 2026-09-01 with scripts/compare_anchoring.py, replaying every settled
+# match that carries both our raw probabilities and a de-vigged 1x2 line:
+#
+#     weight   hit rate   log loss        (238 matches, pure-model regime)
+#       0.00      51.7%     1.0274        what we served
+#       0.35      53.8%     1.0031
+#       0.57         ~54%    ~0.992       what we serve now
+#       1.00      54.6%     0.9826        the bookmaker alone
+#
+# Monotonic in both metrics: every step toward the market improves accuracy,
+# with no interior optimum where the model adds something. That is the finding,
+# and it is not a flattering one — but the site is a betting site, so the number
+# beside a pick has to be the most accurate one we can produce.
+#
+# What this costs, stated plainly: an anchored probability cannot beat the
+# market, because most of it IS the market. So the EV / value gate must NOT read
+# these numbers — it exists to measure model-vs-market disagreement, and fed an
+# anchored probability it would be comparing the market with itself and finding
+# an edge of approximately zero everywhere. It reads the raw_* columns instead,
+# which stay pure. Anchoring changes what we SHOW; it must not change what we
+# MEASURE.
+MARKET_ANCHOR_WEIGHT = 0.57
+
+
+def anchor_to_market(
+    model: tuple[float, float, float],
+    market_odds: tuple[float, float, float] | None,
+    weight: float = MARKET_ANCHOR_WEIGHT,
+) -> tuple[float, float, float]:
+    """Blend our 1x2 probabilities toward the bookmaker's de-vigged line.
+
+    `market_odds` is (home, draw, away) decimal odds, or None when the fixture
+    carries no price — in which case the model's own numbers are returned
+    untouched, which is the honest fallback and also what most of the card gets
+    on a thin midweek night.
+
+    De-vig by normalising the three implied probabilities: that removes the
+    bookmaker's margin and keeps the shape, so we anchor to their opinion rather
+    than to their pricing.
+    """
+    if not market_odds or any(not o or o <= 1.0 for o in market_odds):
+        return model
+    raw = [1.0 / float(o) for o in market_odds]
+    total = sum(raw)
+    if total <= 0:
+        return model
+    fair = [x / total for x in raw]
+    blended = [(1.0 - weight) * m + weight * k for m, k in zip(model, fair)]
+    s = sum(blended)
+    return (blended[0] / s, blended[1] / s, blended[2] / s)
 
 
 def _confidence(max_result_prob: float, over_prob: float = 0.5) -> str:

@@ -584,3 +584,63 @@ def test_the_guard_sits_after_the_lock_not_instead_of_it():
     body = _run_daily()
 
     assert body.index('acquire_lock "run_daily"') < body.index("DAILY_STAMP")
+
+
+# ── Market anchoring ─────────────────────────────────────────────────────────
+# Restored at w=0.57 on 2026-09-01 after scripts/compare_anchoring.py replayed
+# every settled match carrying both our raw probabilities and a de-vigged 1x2:
+# accuracy climbed monotonically toward the market, 51.7% -> 54.6%, with no
+# interior optimum. The site is a betting site, so the number beside a pick is
+# the most accurate one we can produce.
+
+def test_the_anchor_weight_is_the_measured_one():
+    from backend.app.ml.predict import MARKET_ANCHOR_WEIGHT
+
+    assert MARKET_ANCHOR_WEIGHT == 0.57
+
+
+def test_anchoring_leaves_a_fixture_without_a_price_alone():
+    """Most of a thin midweek card has no bookmaker line. Those keep the pure
+    model rather than being dropped or defaulted."""
+    from backend.app.ml.predict import anchor_to_market
+
+    model = (0.50, 0.25, 0.25)
+    assert anchor_to_market(model, None) == model
+    assert anchor_to_market(model, (0.0, 0.0, 0.0)) == model
+    assert anchor_to_market(model, (1.0, 3.0, 4.0)) == model   # 1.0 is not a price
+
+
+def test_anchoring_de_vigs_before_blending():
+    """We anchor to the bookmaker's OPINION, not their pricing. A 1x2 whose
+    implied probabilities sum to 1.08 must contribute 1.00 of belief."""
+    from backend.app.ml.predict import anchor_to_market
+
+    out = anchor_to_market((0.34, 0.33, 0.33), (2.10, 3.40, 3.70))
+
+    assert abs(sum(out) - 1.0) < 1e-9
+
+
+def test_the_value_gate_reads_the_unblended_model():
+    """The whole point of the gate is model-vs-market disagreement. Fed an
+    anchored probability it compares the market with itself and finds an edge of
+    roughly zero everywhere — silently, with no error to notice."""
+    from pathlib import Path
+
+    src = (Path(__file__).resolve().parents[2] / "backend" / "app" / "routers" /
+           "predictions.py").read_text(encoding="utf-8")
+    block = src[src.index("model_probs = {"):src.index("model_probs = {") + 500]
+
+    assert "raw_home_prob" in block, "EV is being fed the anchored numbers"
+    assert "raw_over_prob" in block
+
+
+def test_the_methodology_says_the_numbers_are_partly_the_market():
+    """Publishing 54% without saying most of it is the bookmaker's own line
+    would be the misleading version of this change."""
+    from pathlib import Path
+
+    i18n = (Path(__file__).resolve().parents[2] / "frontend" / "src" / "lib" /
+            "i18n.ts").read_text(encoding="utf-8")
+
+    assert i18n.count('"stats.anchor.body"') == 2, "missing in one language"
+    assert "57%" in i18n

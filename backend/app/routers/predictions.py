@@ -32,6 +32,16 @@ from backend.app.schemas.prediction import (
 
 router = APIRouter(prefix="/predictions", tags=["predictions"])
 
+def _first(*values):
+    """First value that is not None — used where a raw column may predate the
+    migration that added it."""
+    for v in values:
+        if v is not None:
+            return v
+    return None
+
+
+
 _RAW_DIR = os.path.join(os.path.dirname(__file__), "..", "..", "data", "raw")
 _history_df: pd.DataFrame | None = None
 _team_snapshot: dict | None = None
@@ -422,11 +432,23 @@ def get_match_analysis(match_id: int, request: Request, db: Session = Depends(ge
     if btts is not None and result_pred == "D" and goals_pred_str == "OVER" and btts < 0.5:
         btts = max(btts, 0.51)
 
+    # EV / value gate reads the RAW model output, never the served numbers.
+    #
+    # Since 2026-09-01 the served 1x2 is anchored to the bookmaker at w=0.57
+    # (predict.anchor_to_market) because that is measurably more accurate. But
+    # the value gate exists to find model-vs-market DISAGREEMENT — hand it an
+    # anchored probability and it compares the market with itself, finds an edge
+    # of roughly zero on everything, and quietly stops suggesting anything.
+    # raw_home_prob and friends are stored for exactly this reason.
+    #
+    # Falls back to the served numbers for rows written before the raw columns
+    # existed; those are all long settled, so the fallback is for safety, not
+    # for the live card.
     model_probs = {
-        "home_win": hw,
-        "draw":     d,
-        "away_win": aw,
-        "over_2_5": ov,
+        "home_win": _first(getattr(pred, "raw_home_prob", None), hw),
+        "draw":     _first(getattr(pred, "raw_draw_prob", None), d),
+        "away_win": _first(getattr(pred, "raw_away_prob", None), aw),
+        "over_2_5": _first(getattr(pred, "raw_over_prob", None), ov),
         "btts":     btts,
     }
 

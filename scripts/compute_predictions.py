@@ -32,6 +32,7 @@ from backend.app.database import SessionLocal, engine
 from backend.app.models.match import Match
 from backend.app.models.prediction import Prediction
 from backend.app.models.odds_history import OddsHistory
+from backend.app.ml.predict import anchor_to_market  # noqa: E402
 from backend.app.ml.features import (
     load_raw_csvs, build_team_snapshot, compute_match_features,
     FEATURE_COLS, RESULT_FEATURE_COLS, GOALS_FEATURE_COLS,
@@ -626,6 +627,12 @@ for i, (mid, home, away, match_date, league) in enumerate(match_snapshots, 1):
         print(f"  [warn] ML failed for {home} vs {away}: {e}", flush=True)
         continue
 
+    served_h, served_d, served_a = anchor_to_market(
+        (home_win_p, draw_p, away_win_p),
+        (live_odds.get("raw_home"), live_odds.get("raw_draw"),
+         live_odds.get("raw_away")) if live_odds else None,
+    )
+
     with engine.begin() as conn:
         res = conn.execute(
             text("""
@@ -653,9 +660,15 @@ for i, (mid, home, away, match_date, league) in enumerate(match_snapshots, 1):
             """),
             {
                 "match_id":         mid,
-                "home_win_prob":    round(home_win_p, 4),
-                "draw_prob":        round(draw_p, 4),
-                "away_win_prob":    round(away_win_p, 4),
+                # SERVED probabilities: anchored to the bookmaker at
+                # predict.MARKET_ANCHOR_WEIGHT when a price exists. The raw_*
+                # columns below stay pure — the EV / value gate reads those,
+                # because an anchored probability compared with the market is
+                # the market compared with itself. See the block above
+                # anchor_to_market() for the measurement behind the weight.
+                "home_win_prob":    round(served_h, 4),
+                "draw_prob":        round(served_d, 4),
+                "away_win_prob":    round(served_a, 4),
                 "over_2_5_prob":    round(over_p, 4),
                 "goals_prediction": goals_prediction,
                 "model_version":    MODEL_VERSION,
