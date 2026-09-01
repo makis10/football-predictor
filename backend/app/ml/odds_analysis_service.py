@@ -757,6 +757,23 @@ LEAGUE_ODDS_TTL = 1800  # 30 min — league odds batch
 # removes the bookmaker panel from every fixture in that league.
 EMPTY_ODDS_TTL  = 120   # 2 min
 
+# Both-teams-to-score is fetched PER EVENT and billed per fetch, so its cache
+# lifetime is a money decision, not a freshness one.
+#
+# It shared LEAGUE_ODDS_TTL (30 min) while the analysis warm-up runs every 50 —
+# so every pass was a guaranteed miss and paid again for every fixture on the
+# card. Measured on 2026-09-01, the first full day with credits: 574 of the
+# day's 788 credits, 73% of everything we spend, against a 645/day budget.
+# Nothing was wrong with the data; we were buying the same prices fourteen
+# times a day.
+#
+# Six hours, which must stay comfortably above the warm-up interval — that
+# relationship is the whole point and test_odds_credits pins it. A BTTS price
+# does not move meaningfully within a morning, and the movement chart reads
+# odds_history from the poll rather than this cache, so nothing downstream
+# depends on the shorter window.
+BTTS_ODDS_TTL   = 6 * 3600
+
 # Don't suggest a market when bookmakers price it below this probability.
 # At <10% implied probability (~10.00 odds) the model almost certainly lacks
 # context (squad quality, rotation, two-legged tie, etc.) that sharps have.
@@ -1380,7 +1397,7 @@ def _fetch_event_btts(event_id: str, sport_key: str) -> dict:
         log.info(f"[odds] BTTS fetch for event {event_id}  (quota remaining: {remaining})")
     except Exception as e:
         log.warning(f"[odds] BTTS fetch failed for event {event_id}: {e}")
-        cache_set(f"btts:{event_id}", {}, LEAGUE_ODDS_TTL)
+        cache_set(f"btts:{event_id}", {}, BTTS_ODDS_TTL)
         return {}
 
     btts_yes_odds: list[float] = []
@@ -1416,7 +1433,7 @@ def _fetch_event_btts(event_id: str, sport_key: str) -> dict:
     elif avg_no:
         result["raw_btts_no"] = round(avg_no, 2)
 
-    cache_set(f"btts:{event_id}", result, LEAGUE_ODDS_TTL)
+    cache_set(f"btts:{event_id}", result, BTTS_ODDS_TTL)
     return result
 
 

@@ -138,3 +138,50 @@ def test_successful_calls_are_counted(tmp_path, monkeypatch, capsys):
 
     out = capsys.readouterr().out
     assert "20" in out and "club_league_odds" in out
+
+
+# ── The per-event BTTS cache is a money decision ─────────────────────────────
+# BTTS is fetched PER EVENT and billed per fetch. It shared the 30-minute league
+# TTL while the analysis warm-up runs every 50 minutes, so every pass was a
+# guaranteed miss and paid again for every fixture on the card. Measured on
+# 2026-09-01, the first full day with credits: 574 of 788 credits — 73% of
+# everything spent — against a 645/day budget. Nothing was wrong with the data;
+# we were buying the same prices fourteen times a day.
+
+def _warmup_interval_minutes() -> int:
+    import plistlib
+
+    data = plistlib.loads(
+        (ROOT / "launchd" / "com.football-predictor.warmup.plist").read_bytes())
+    return data["StartInterval"] // 60
+
+
+def test_the_btts_cache_outlives_the_warm_up_that_reads_it():
+    """The relationship is the point, not the number. A TTL shorter than the
+    interval means every warm-up pass pays for prices it already had."""
+    from backend.app.ml.odds_analysis_service import BTTS_ODDS_TTL
+
+    assert BTTS_ODDS_TTL / 60 > _warmup_interval_minutes() * 2, (
+        f"BTTS cached {BTTS_ODDS_TTL/60:.0f} min against a "
+        f"{_warmup_interval_minutes()} min warm-up — it will miss every pass")
+
+
+def test_btts_no_longer_shares_the_league_batch_ttl():
+    """The league batch is one request for a whole competition; BTTS is one per
+    fixture. Sharing a lifetime tied them to the wrong cost model."""
+    from backend.app.ml.odds_analysis_service import (
+        BTTS_ODDS_TTL, LEAGUE_ODDS_TTL,
+    )
+
+    assert BTTS_ODDS_TTL != LEAGUE_ODDS_TTL
+
+
+def test_the_scheduled_burn_still_fits_with_btts_priced_in():
+    """Roughly: one BTTS fetch per fixture per TTL window, across a card of
+    ~60 warmed fixtures, plus the league sweeps already counted above."""
+    from backend.app.ml.odds_analysis_service import BTTS_ODDS_TTL
+
+    fetches_per_fixture_per_day = 24 * 3600 / BTTS_ODDS_TTL
+    btts_per_day = 60 * fetches_per_fixture_per_day
+
+    assert btts_per_day < 300, f"BTTS alone would cost {btts_per_day:.0f}/day"
