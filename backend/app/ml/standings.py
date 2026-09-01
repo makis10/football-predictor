@@ -67,18 +67,28 @@ BOTTOM_ZONE_LABEL = "Relegation"
 #   25–36 → eliminated
 # A UEFA season also contains a July qualifying knockout and a spring bracket
 # under the SAME league id, so the table must be built from league-phase
-# fixtures ONLY — hence the `round` column (migration 0030). API-Football names
-# those rounds "League Phase - 1" … "League Phase - 8".
+# fixtures ONLY — hence the `round` column (migration 0030).
+#
+# API-Football names those rounds "League Stage - 1" … "League Stage - 8". It
+# used to say "League Phase", which is UEFA's own wording and what this matched
+# on. When the 2026/27 draws landed on 2026-09-01 every fixture arrived as
+# "League Stage" instead, nothing matched, and all three competitions kept
+# showing "available after the league phase draw" on a page that had 108 ECL
+# fixtures sitting behind it. Both spellings are accepted, because neither is
+# ours to fix and the next rename should not cost another season's projections.
 EUROPEAN_STRUCTURE: dict[str, dict[str, int]] = {
     "CL":  {"direct": 8, "playoff": 24},
     "EL":  {"direct": 8, "playoff": 24},
     "ECL": {"direct": 8, "playoff": 24},
 }
-_LEAGUE_PHASE_PREFIX = "league phase"
+_LEAGUE_PHASE_PREFIXES = ("league phase", "league stage")
 
 
 def is_league_phase(round_name: str | None) -> bool:
-    return bool(round_name) and round_name.strip().lower().startswith(_LEAGUE_PHASE_PREFIX)
+    if not round_name:
+        return False
+    name = round_name.strip().lower()
+    return any(name.startswith(p) for p in _LEAGUE_PHASE_PREFIXES)
 
 # Tie-breakers after points. Most leagues: goal difference, then goals scored.
 # Brazil breaks ties on WINS first (CBF regulation), which reorders the table —

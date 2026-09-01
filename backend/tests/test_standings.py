@@ -100,3 +100,29 @@ def test_playoff_league_simulates_the_playoff_phase(monkeypatch):
     # regular rounds + 6 championship-group games, so the leader must project
     # clearly past the 26-round ceiling for a run-of-the-mill winner (~55).
     assert by["G01"]["exp_points"] > 50
+
+
+# ── The upstream renamed the league phase ─────────────────────────────────────
+# UEFA calls it the "league phase" and so did API-Football, which is what this
+# matched on. The 2026/27 draws landed on 2026-09-01 and every fixture arrived
+# as "League Stage - N" instead. Nothing matched, so all three competitions kept
+# showing "available after the league phase draw" while 108 ECL fixtures sat in
+# the database behind it.
+
+def test_both_spellings_of_the_league_phase_are_accepted():
+    from backend.app.ml.standings import is_league_phase
+
+    assert is_league_phase("League Stage - 1")
+    assert is_league_phase("League Phase - 8")
+    assert is_league_phase("league stage - 3")
+
+
+def test_the_knockout_and_qualifying_rounds_are_still_excluded():
+    """The whole point of the round column: a UEFA season stacks a July
+    qualifying knockout, the league phase and a spring bracket under one league
+    id, and a table built from all of them is meaningless."""
+    from backend.app.ml.standings import is_league_phase
+
+    for r in ("Group Stage", "Round of 16", "1st Qualifying Round",
+              "Quarter-finals", "Final", "", None):
+        assert not is_league_phase(r), r
