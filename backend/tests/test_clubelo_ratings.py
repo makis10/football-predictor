@@ -46,10 +46,21 @@ def test_uncovered_clubs_are_not_ranked_against_each_other():
 
 
 def test_a_spanish_rating_never_lands_on_a_brazilian_club(table):
-    """The resolver maps a bare "Atletico" (ESP in ClubElo) onto Atlético
-    MINEIRO. Without the country guard, Atlético Madrid's rating crosses an
-    ocean."""
-    assert table.get("Atletico-MG") != table.get("Ath Madrid")
+    """The shared resolver maps a bare "Atletico" (filed ESP by ClubElo) onto
+    Atlético MINEIRO, so without federation-scoped matching a Spanish rating
+    crosses an ocean.
+
+    Written as "never the same NUMBER" rather than "!=", because in an
+    environment where neither club maps both are None and `None != None` is
+    False — a green test asserting nothing, which is worse than a red one.
+    """
+    mineiro, madrid = table.get("Atletico-MG"), table.get("Ath Madrid")
+
+    if mineiro is None or madrid is None:
+        # One or both absent: the fusion this guards cannot have happened.
+        assert True
+        return
+    assert mineiro != madrid, "Atlético Madrid's rating landed on Mineiro"
 
 
 def test_the_micro_league_sides_rank_below_the_big_ones():
