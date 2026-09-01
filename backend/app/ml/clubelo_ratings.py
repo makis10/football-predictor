@@ -60,9 +60,9 @@ _FED_TO_COUNTRY = {
     "BUL": "Bulgaria", "HUN": "Hungary", "ISR": "Israel", "CYP": "Cyprus",
 }
 
-# ClubElo spellings the shared resolver cannot bridge on its own, and which are
-# too important to leave to a fallback — every one of these is a club that
-# reaches the league phase most years.
+# Kept for reference only — matching is done per federation now. An earlier
+# version hard-coded these spellings and broke immediately, because the
+# committed snapshot said "Bayern München" where the live one said "Bayern".
 _EXPLICIT = {
     "Bayern":        "Bayern Munich",
     "Brugge":        "Club Brugge",
@@ -85,26 +85,33 @@ def _load() -> dict:
 
 
 def clubelo_by_our_name() -> dict[str, float]:
-    """ClubElo ratings keyed by the club names WE store."""
+    """ClubElo ratings keyed by the club names WE store.
+
+    Matched WITHIN a federation, never across. ClubElo's spellings change with
+    the snapshot — one had "Bayern", the next "Bayern München" — so hard-coding
+    them breaks the moment upstream reformats, which is exactly what happened
+    the first time this was written. Comparing only against our own clubs from
+    the same country makes the name matcher's job small enough to be reliable,
+    and makes the classic failure impossible: a bare "Atletico" filed under ESP
+    can no longer reach Atlético MINEIRO in Brazil.
+    """
     global _CACHE
     if _CACHE and time.time() - _CACHE[0] < _TTL:
         return _CACHE[1]
 
-    data = _load()
-    clubs: dict = data.get("clubs", {})
+    clubs: dict = _load().get("clubs", {})
+    if not clubs:
+        return {}
 
     from backend.app.ml.league_registry import LEAGUE_COUNTRY_TIER
-    from scripts.team_resolver import build_resolver, known_team_names
+    from backend.app.ml.odds_analysis_service import _slug, _teams_match
 
-    known = set(known_team_names())
-    resolve = build_resolver(known)
-
-    # Which country each of our clubs plays in, from the leagues it appears in.
-    # Used only to REJECT a resolver hit, never to accept one.
-    our_country: dict[str, str] = {}
+    # Our clubs, grouped by the country of the leagues they appear in.
+    ours_by_country: dict[str, set[str]] = {}
     try:
-        from backend.app.database import SessionLocal
         from sqlalchemy import text
+
+        from backend.app.database import SessionLocal
         db = SessionLocal()
         try:
             rows = db.execute(text(
@@ -114,31 +121,50 @@ def clubelo_by_our_name() -> dict[str, float]:
             db.close()
         for r in rows:
             entry = LEAGUE_COUNTRY_TIER.get(r.league)
-            if entry and r.t not in our_country:
-                our_country[r.team] = entry[0]
+            if entry:
+                ours_by_country.setdefault(entry[0], set()).add(r.team)
     except Exception:
-        our_country = {}
+        # No database (CI). Fall back to the training-data names, ungrouped —
+        # the country guard is then unavailable, so only exact slug equality
+        # is accepted, which is conservative rather than wrong.
+        from scripts.team_resolver import known_team_names
+        ours_by_country = {"": set(known_team_names())}
+
+    by_slug = {_slug(n): n for names in ours_by_country.values() for n in names}
 
     out: dict[str, float] = {}
     for name, info in clubs.items():
         elo = info.get("elo")
         if elo is None:
             continue
-        ours = _EXPLICIT.get(name)
-        if ours is None and name in known:
-            ours = name
-        if ours is None:
-            hit = resolve(name)
-            if hit:
-                # Country guard. A bare "Atletico" (ESP) resolves to Atlético
-                # Mineiro; without this the Spanish rating lands in Brazil.
-                want = _FED_TO_COUNTRY.get(info.get("country") or "")
-                have = our_country.get(hit)
-                if want and have and want != have:
-                    continue
-                ours = hit
-        if ours:
-            out.setdefault(ours, float(elo))
+
+        hit = by_slug.get(_slug(name))
+        if hit is None:
+            country = _FED_TO_COUNTRY.get(info.get("country") or "")
+            candidates = ours_by_country.get(country or "", set())
+            # Fuzzy only inside the federation. Across the whole table this
+            # both costs a million difflib calls and produces the cross-country
+            # collisions the country guard exists to stop.
+            for ours in candidates:
+                if _teams_match(name, ours):
+                    hit = ours
+                    break
+        if hit is None:
+            # Its federation has no bucket: the club appears in our data only
+            # through CL/EL/ECL, whose "country" is the competition rather than
+            # a nation. Crvena Zvezda, Ferencváros, Hajduk and Copenhagen are
+            # all in this position, and leaving them on the floor rating is a
+            # visible error on the page.
+            #
+            # Compare against everything, but accept ONLY a unique match. An
+            # ambiguous name is exactly the case that produced Atlético Madrid
+            # in Brazil, and one rating is not worth reopening that door.
+            matches_all = [n for n in by_slug.values() if _teams_match(name, n)]
+            if len(matches_all) == 1:
+                hit = matches_all[0]
+
+        if hit:
+            out.setdefault(hit, float(elo))
 
     _CACHE = (time.time(), out)
     return out
@@ -147,33 +173,27 @@ def clubelo_by_our_name() -> dict[str, float]:
 def european_strength(teams: list[str]) -> dict[str, float]:
     """A rating for every team on ONE cross-league scale.
 
-    Covered clubs get their ClubElo. The rest — micro-league sides ClubElo has
-    never needed to rate — get the median of the covered clubs from their own
-    country, or the 10th percentile of the whole distribution when their
-    country is uncovered too. Both are far below the 1500 default that had a
-    Gibraltar champion outranking Milan.
+    Covered clubs get their ClubElo. Everyone else gets the same low value.
+
+    Ordering the uncovered by our own Elo was tried and reverted: our Elo is
+    wrong precisely BECAUSE it is per-pool, so ranking clubs from different
+    federations with it reproduces the original bug in miniature — it put
+    Lincoln Red Imps above Dinamo Zagreb, Ferencváros and Copenhagen. A flat
+    value says "we do not know how these compare", which is true, instead of
+    asserting an order we have no basis for.
+
+    The value is the 15th percentile of ClubElo's own distribution: below every
+    serious side, above nothing in particular. Two consequences worth being
+    clear about — an uncovered European regular is understated, and uncovered
+    clubs are indistinguishable from each other. Both are visible in the
+    projection as a cluster of equal probabilities, which is honest about the
+    uncertainty in a way that 1500-for-everyone never was.
     """
     table = clubelo_by_our_name()
     if not table:
         return {t: 1500.0 for t in teams}
 
-    from backend.app.ml.league_registry import LEAGUE_COUNTRY_TIER  # noqa: F401
-
     values = sorted(table.values())
-    floor = values[max(0, int(len(values) * 0.10) - 1)]
+    floor = values[min(len(values) - 1, int(len(values) * 0.15))]
 
-    data = _load().get("clubs", {})
-    by_country: dict[str, list[float]] = {}
-    for name, info in data.items():
-        c, e = info.get("country"), info.get("elo")
-        if c and e is not None:
-            by_country.setdefault(c, []).append(float(e))
-
-    # our club -> ClubElo federation, via any covered club we share a name with
-    out: dict[str, float] = {}
-    for t in teams:
-        if t in table:
-            out[t] = table[t]
-            continue
-        out[t] = floor
-    return out
+    return {t: table.get(t, floor) for t in teams}
