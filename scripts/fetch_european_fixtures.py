@@ -33,7 +33,7 @@ default features; those predictions are low-quality by construction.
 
 Usage:
   docker compose exec backend python scripts/fetch_european_fixtures.py
-  docker compose exec backend python scripts/fetch_european_fixtures.py --days-ahead 21 --days-back 5
+  docker compose exec backend python scripts/fetch_european_fixtures.py --days-ahead 120 --days-back 5
 """
 
 from __future__ import annotations
@@ -268,7 +268,14 @@ def main():
     parser = argparse.ArgumentParser(
         description="Fetch CL / EL / ECL fixtures + results (API-Football)"
     )
-    parser.add_argument("--days-ahead", type=int, default=21,
+    # 120, matching the domestic and Greek fetchers. 21 covered the qualifying
+    # rounds, which are drawn a fortnight ahead — but a LEAGUE PHASE is drawn
+    # once in late August for the whole autumn, and ECL's first matchday is in
+    # October. So on 2026-09-01 we held 184 CL and 144 EL fixtures and ZERO
+    # ECL ones, while The Odds API was already pricing them: eleven ECL clubs
+    # showed up in the odds-seam report as "names we fail to match", when the
+    # truth was that we had no fixture to match them to.
+    parser.add_argument("--days-ahead", type=int, default=120,
                         help="How far ahead to look for upcoming ties (default 21)")
     parser.add_argument("--days-back", type=int, default=5,
                         help="How far back to look for finished ties to score (default 5)")

@@ -193,3 +193,54 @@ def test_an_empty_league_is_retried_long_before_the_normal_ttl():
     assert "EMPTY_ODDS_TTL" in source, (
         "_fetch_league_games_cached no longer distinguishes an empty result "
         "from a real one")
+
+
+# ── The alias prefix arm, and the collision it used to allow ─────────────────
+# The arm exists so a feed that abbreviates ("Atletico" against our alias
+# "atleticomadrid") still matches. It did that by truncating the ALIAS to eight
+# characters, which is a much weaker claim: "universitateacraiova"[:8] is
+# "universi", and Universitatea CLUJ — a different Romanian club we also hold —
+# starts that way. Adding Craiova's alias under the old rule would have fused
+# the two, the same shared-prefix fusion that put twelve PrimeiraLiga fixtures
+# on a Brazilian club's Elo in August.
+
+def test_a_feed_that_abbreviates_still_matches():
+    assert _teams_match("Atletico", "Ath Madrid")
+
+
+def test_the_two_universitateas_never_claim_each_other():
+    assert _teams_match("Universitatea Craiova", "Univ. Craiova")
+    assert _teams_match("Universitatea Cluj", "U. Cluj")
+    assert not _teams_match("Universitatea Cluj", "Univ. Craiova")
+    assert not _teams_match("Universitatea Craiova", "U. Cluj")
+
+
+def test_the_two_brazilian_atleticos_stay_apart():
+    """Same league, one letter between them. The feed drops the H that we keep."""
+    assert _teams_match("Atletico Paranaense", "Athletico-PR")
+    assert _teams_match("Atletico Mineiro", "Atletico-MG")
+    assert not _teams_match("Atletico Mineiro", "Athletico-PR")
+    assert not _teams_match("Atletico Paranaense", "Atletico-MG")
+
+
+def test_a_short_feed_name_cannot_claim_a_club_it_merely_starts_like():
+    """Eight characters minimum on the feed side of the prefix arm."""
+    assert not _teams_match("Univer", "Univ. Craiova")
+
+
+def test_the_alias_table_has_no_duplicate_keys():
+    """A repeated key silently discards the earlier entry — which is what
+    happened when Athletico-PR's new spelling was added as a second block and
+    the existing one, further down the file, kept winning."""
+    import collections
+    import re
+    from pathlib import Path
+
+    from backend.app.ml import odds_analysis_service as oas
+    src = Path(oas.__file__).read_text(encoding="utf-8")
+    block = src[src.index("_ALIASES: dict[str, list[str]] = {"):]
+    block = block[:block.index("\n}\n")]
+    keys = re.findall(r'^\s*"([^"]+)":', block, re.M)
+    dups = {k: n for k, n in collections.Counter(keys).items() if n > 1}
+
+    assert not dups, f"duplicate alias keys silently drop entries: {dups}"

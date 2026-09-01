@@ -304,7 +304,7 @@ echo "[5/6] Refreshing European fixtures (CL/EL/ECL) …" | tee -a "$LOG"
 if [ "$API_FOOTBALL_OK" -eq 1 ]; then
 docker compose exec -T backend \
     python scripts/fetch_european_fixtures.py \
-        --days-ahead 21 --days-back 5 \
+        --days-ahead 120 --days-back 5 \
     2>&1 | tee -a "$LOG"; _af_rc "${PIPESTATUS[0]}" $LINENO
 else echo "  [skip] API-Football blocked." | tee -a "$LOG"; fi
 

@@ -1068,6 +1068,19 @@ _ALIASES: dict[str, list[str]] = {
     # odds feed that says just "Atletico" via startswith(alias[:8]), and
     # "atleticomadrid" covers the full spelling.
     "Ath Madrid":      ["atleticomadrid"],
+    # ── 2026-09-01: the European league phase opened and the feed began
+    # pricing clubs we had never seen it name. All three are the club proper
+    # against our shorthand.
+    #
+    # "universitateacraiova" is the reason the prefix arm above had to be
+    # fixed first: under the old alias[:8] rule it would also have claimed
+    # Universitatea Cluj.
+    "Univ. Craiova":       ["universitateacraiova"],
+    # Its neighbour, added at the same time: the fixed prefix rule keeps the
+    # two apart in both directions, which the old one could not have done.
+    "U. Cluj":             ["universitateacluj"],
+    "Egnatia Rrogozhine":  ["kfegnatia"],
+    "Plzen":               ["viktoriaplzen", "fcviktoriaplzen"],
     "Barça":           ["barcelona", "fcbarcelona"],
     "Bayern Munich":   ["bayernmunchen", "bayernmunich", "fcbayern"],
     # "eintracht" removed 2026-08-16 — a truncation of the entry beside it,
@@ -1110,7 +1123,10 @@ _ALIASES: dict[str, list[str]] = {
     "Monza":           ["acmonza"],
     # Brazil Serie A — The Odds API names vs our CSV names
     "Atletico-MG":     ["atleticomineiro", "atleticomg"],
-    "Athletico-PR":    ["athleticoparanaense", "athleticopr"],
+    # "atleticoparanaense" added 2026-09-01 — the Brazilian feed drops the H.
+    # Spelled out rather than a bare "atletico": Atlético MINEIRO is in the
+    # same league, and a shared prefix is how the wrong club gets claimed.
+    "Athletico-PR":    ["athleticoparanaense", "athleticopr", "atleticoparanaense"],
     "Botafogo RJ":     ["botafogo"],
     "Flamengo RJ":     ["flamengo"],
     "Vasco":           ["vascodagama"],
@@ -1224,9 +1240,24 @@ def _teams_match(api_name: str, db_name: str) -> bool:
         db_words  = _words(db_name)
         if _is_run_of(db_slug, api_words) or _is_run_of(api_slug, db_words):
             return True
-    # Alias table
-    for alias_list in _ALIASES.get(db_name, []):
-        if alias_list in api_slug or api_slug.startswith(alias_list[:8]):
+    # Alias table.
+    #
+    # The prefix arm is for a feed that abbreviates: it says "Atletico" where
+    # our alias is "atleticomadrid". So the FEED name must be a prefix of the
+    # ALIAS — the reverse, which this used to do by truncating the alias to
+    # eight characters, is a different and much weaker claim.
+    #
+    # It was also wrong. "universitateacraiova"[:8] is "universi", which any
+    # feed name starting that way satisfies — including "Universitatea Cluj",
+    # a different Romanian club we also hold. Adding Craiova's alias under the
+    # old rule would have fused the two, which is the same cross-country /
+    # same-prefix fusion that put twelve PrimeiraLiga fixtures on a Brazilian
+    # club's Elo in August.
+    #
+    # Eight characters minimum on the feed side, so a three-letter abbreviation
+    # cannot claim a club it merely starts like.
+    for alias in _ALIASES.get(db_name, []):
+        if alias in api_slug or (len(api_slug) >= 8 and alias.startswith(api_slug)):
             return True
     # Difflib fallback — catches near-identical spellings like
     # "Espanyol" vs "Espanol", "Athletico" vs "Atletico", etc.
