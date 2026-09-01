@@ -20,6 +20,14 @@ import { LEAGUES } from "@/lib/api";
 const BASE = process.env.SMOKE_URL ?? "https://aitipster.net";
 const TIMEOUT = 15_000;
 
+// Vitest's own per-test limit, which is NOT the fetch timeout above. It
+// defaulted to 5s while the fetch was allowed 15, so a page slower than five
+// seconds failed the test even though the request would have succeeded — and
+// /projections on a cold cache is exactly that page: it simulates 26
+// competitions at 10,000 runs each, and the daily warm-up is what normally
+// hides the cost. Two red builds came from this before the cause was clear.
+const TEST_TIMEOUT = TIMEOUT + 10_000;
+
 let reachable = false;
 let home = "";
 
@@ -42,7 +50,7 @@ describe("deployed site", () => {
     if (!reachable) return;
     expect(home.length).toBeGreaterThan(1_000);
     expect(home).toContain("Football Predictor");
-  });
+  }, TEST_TIMEOUT);
 
   it.each(["/stats", "/recent", "/projections", "/sitemap.xml", "/robots.txt"])(
     "serves %s",
@@ -71,7 +79,7 @@ describe("deployed site", () => {
       .filter((l) => l.label !== l.code)
       .filter((l) => home.includes(`>${l.code}<`));
     expect(rawCodes.map((l) => l.code), "leagues rendered as raw codes").toEqual([]);
-  });
+  }, TEST_TIMEOUT);
 
   it("shows a headline pick with a probability", () => {
     if (!reachable) return;
@@ -80,7 +88,7 @@ describe("deployed site", () => {
     // bookmaker rather than how likely the outcome was.
     expect(home).toMatch(/\d{1,3}%/);
     expect(home).not.toContain("EV +");
-  });
+  }, TEST_TIMEOUT);
 
   it("does not leak an error or a stack trace into the page", () => {
     if (!reachable) return;
@@ -88,14 +96,14 @@ describe("deployed site", () => {
                           "Cannot read properties of undefined"]) {
       expect(home, `page contains ${marker}`).not.toContain(marker);
     }
-  });
+  }, TEST_TIMEOUT);
 
   it("keeps redirect-only routes out of the sitemap", async () => {
     if (!reachable) return;
     const xml = await (await get("/sitemap.xml")).text();
     expect(xml).not.toContain("/national");
     expect(xml).toContain("<urlset");
-  });
+  }, TEST_TIMEOUT);
 
   it("reports whether it ran, so a silent skip is visible", () => {
     // Every assertion above no-ops when the site is unreachable. Without this
@@ -104,5 +112,5 @@ describe("deployed site", () => {
       console.warn(`[smoke] ${BASE} unreachable — deployed-site checks skipped`);
     }
     expect(typeof reachable).toBe("boolean");
-  });
+  }, TEST_TIMEOUT);
 });

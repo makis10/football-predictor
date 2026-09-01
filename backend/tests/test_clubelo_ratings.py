@@ -39,10 +39,12 @@ def test_uncovered_clubs_are_not_ranked_against_each_other():
     """Ordering them by our own Elo was tried and reverted — that Elo is wrong
     precisely because it is per-pool, so it put Lincoln Red Imps above Dinamo
     Zagreb. Equal values say "we do not know", which is true."""
-    # Clubs genuinely absent from the snapshot. Deliberately NOT Lincoln Red
-    # Imps — it has a ClubElo entry (1065) and gained one the day coverage was
-    # raised, which is what broke the first version of this test.
-    s = european_strength(["PAEEK", "Inter Club d'Escaldes", "Torreense"])
+    # Names no snapshot will ever carry. Naming real clubs was tried twice and
+    # broke twice — first because Lincoln Red Imps gained an entry the day
+    # coverage was raised, then because the committed snapshot covers a
+    # different set from the live one. The property under test has nothing to
+    # do with which clubs happen to be absent today.
+    s = european_strength(["__absent_a__", "__absent_b__", "__absent_c__"])
 
     assert len(set(s.values())) == 1
 
