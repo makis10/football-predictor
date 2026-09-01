@@ -390,6 +390,16 @@ COMMON_ALIASES: dict[str, str] = {
     # never created either, so the match simply does not exist for us.
     "Ipswich Town":       "Ipswich",
 
+    # ── 2026-09-01 ──────────────────────────────────────────────────────────
+    # Three clubs that reached the European league phase under a second
+    # spelling, each with NO history under it against a few hundred rows under
+    # the other. Found while raising ClubElo coverage: the thin spelling had no
+    # rating, so the club sat on the floor in the projection while its real
+    # entry went unused.
+    "Shaktar":            "Shakhtar Donetsk",   #   0 → 322
+    "Sl. Bratislava":     "Slovan Bratislava",  #   0 → 256
+    "Sabah FK":           "Sabah FA",           #   0 → 247
+
     # The same split, found by generalising the test rather than waiting for
     # each club to be the one that breaks. Every one of these already folded
     # in features._SNAP_NAME_MAP and nowhere else, so a result arriving under

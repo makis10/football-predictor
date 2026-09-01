@@ -47,6 +47,7 @@ _PATH = os.path.join(
     "data", "clubelo.json")
 _TTL = 3600
 _CACHE: tuple[float, dict] | None = None
+_CSV_LEAGUES: list | None = None
 
 # ClubElo's federation code → the country string our league registry uses.
 # Only the ones we actually need to check a resolver hit against.
@@ -60,9 +61,39 @@ _FED_TO_COUNTRY = {
     "BUL": "Bulgaria", "HUN": "Hungary", "ISR": "Israel", "CYP": "Cyprus",
 }
 
-# Kept for reference only — matching is done per federation now. An earlier
-# version hard-coded these spellings and broke immediately, because the
-# committed snapshot said "Bayern München" where the live one said "Bayern".
+# ClubElo spelling -> ours, for clubs the federation-scoped matcher still
+# cannot bridge. Each was checked against the snapshot's own country field
+# before being written here; the federation is in the comment so the next
+# reader can re-check without guessing.
+#
+# Deliberately NOT here, and why — every one of these looks like an easy win
+# and is a different club:
+#   Ararat (ARM)                 Ararat Yerevan, not Ararat-Armenia
+#   Escaldes / Atletic Club      two Andorran clubs, neither is Inter d'Escaldes
+#   AEK (GRE)                    not PAEEK, which is Cypriot
+# and OFI Crete, Torreense and PAEEK are simply absent from the snapshot.
+# A wrong rating is worse than a missing one: missing shows as the floor and
+# reads as uncertainty, wrong reads as fact.
+_CLUBELO_ALIASES = {
+    "Braga":             "Sp Braga",             # POR
+    "FC Kobenhavn":      "FC Copenhagen",        # DEN
+    "PSV":               "PSV Eindhoven",        # NED
+    "Paphos":            "Pafos",                # CYP
+    "Kuopio":            "KuPS",                 # FIN
+    "Atletico":          "Ath Madrid",           # ESP — never Atlético Mineiro
+    "Craiova":           "Univ. Craiova",        # ROM
+    "Sabah":             "Sabah FA",             # AZE
+    "Lincoln":           "Lincoln Red Imps FC",  # GIB — not Lincoln City
+    "Shakhtar":          "Shakhtar Donetsk",     # UKR
+    "Levski":            "Levski Sofia",         # BUL
+    "Sociedad B":        "Real Sociedad II",     # ESP — the reserve side
+    # Ambiguous inside their own federation, so the unique-match rule declines
+    # them and they need naming: "Brugge" also matches Cercle Brugge, "Omonia"
+    # also matches Omonia Aradippou.
+    "Brugge":            "Club Brugge",          # BEL
+    "Omonia":            "Omonia Nicosia",       # CYP
+    "Sporting":          "Sp Lisbon",            # POR — not Sporting Gijón
+}
 _EXPLICIT = {
     "Bayern":        "Bayern Munich",
     "Brugge":        "Club Brugge",
@@ -82,6 +113,32 @@ _EXPLICIT = {
 def _load() -> dict:
     with open(_PATH, encoding="utf-8") as fh:
         return json.load(fh)
+
+
+def _csv_team_leagues() -> list[tuple[str, str]]:
+    """(club, league) pairs from the training CSVs. Cached for the process.
+
+    Read through the same loader features.py uses, so the club names are the
+    canonical ones the rest of the system stores.
+    """
+    global _CSV_LEAGUES
+    if _CSV_LEAGUES is not None:
+        return _CSV_LEAGUES
+    try:
+        import os
+
+        from backend.app.ml.features import load_raw_csvs
+        raw = os.path.join(
+            os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),
+            "data", "raw")
+        df = load_raw_csvs(raw)
+        pairs = set()
+        for col in ("home_team", "away_team"):
+            pairs.update(zip(df[col], df["League"]))
+        _CSV_LEAGUES = sorted(pairs)
+    except Exception:
+        _CSV_LEAGUES = []
+    return _CSV_LEAGUES
 
 
 def clubelo_by_our_name() -> dict[str, float]:
@@ -124,11 +181,21 @@ def clubelo_by_our_name() -> dict[str, float]:
             if entry:
                 ours_by_country.setdefault(entry[0], set()).add(r.team)
     except Exception:
-        # No database (CI). Fall back to the training-data names, ungrouped —
-        # the country guard is then unavailable, so only exact slug equality
-        # is accepted, which is conservative rather than wrong.
-        from scripts.team_resolver import known_team_names
-        ours_by_country = {"": set(known_team_names())}
+        ours_by_country = {}
+
+    # The fixture table only knows a club's country if we track its domestic
+    # league. Crvena Zvezda, Ferencváros, Hajduk, Copenhagen and thirty others
+    # appear in our data ONLY through CL/EL/ECL, whose "country" is the
+    # competition — so they had no bucket, could never be matched inside one,
+    # and sat on the floor rating while being perfectly present in ClubElo.
+    #
+    # The training CSVs do know: we import Serbia, Croatia, Czechia, Hungary
+    # and the rest as history-only leagues precisely so these clubs have a
+    # record. Same source the model trains on, so no new dependency.
+    for team, league in _csv_team_leagues():
+        entry = LEAGUE_COUNTRY_TIER.get(league)
+        if entry:
+            ours_by_country.setdefault(entry[0], set()).add(team)
 
     by_slug = {_slug(n): n for names in ours_by_country.values() for n in names}
 
@@ -138,17 +205,21 @@ def clubelo_by_our_name() -> dict[str, float]:
         if elo is None:
             continue
 
-        hit = by_slug.get(_slug(name))
+        hit = _CLUBELO_ALIASES.get(name) or by_slug.get(_slug(name))
         if hit is None:
             country = _FED_TO_COUNTRY.get(info.get("country") or "")
             candidates = ours_by_country.get(country or "", set())
             # Fuzzy only inside the federation. Across the whole table this
             # both costs a million difflib calls and produces the cross-country
             # collisions the country guard exists to stop.
-            for ours in candidates:
-                if _teams_match(name, ours):
-                    hit = ours
-                    break
+            # UNIQUE match only. Taking the first was letting iteration order
+            # decide: "Brugge" matched both Club Brugge and Cercle Brugge, and
+            # whichever the set happened to yield first won the rating. Two
+            # candidates means we do not know, and the alias table below is
+            # where a known answer belongs.
+            found = [o for o in candidates if _teams_match(name, o)]
+            if len(found) == 1:
+                hit = found[0]
         if hit is None:
             # Its federation has no bucket: the club appears in our data only
             # through CL/EL/ECL, whose "country" is the competition rather than

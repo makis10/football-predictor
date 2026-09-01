@@ -39,8 +39,10 @@ def test_uncovered_clubs_are_not_ranked_against_each_other():
     """Ordering them by our own Elo was tried and reverted — that Elo is wrong
     precisely because it is per-pool, so it put Lincoln Red Imps above Dinamo
     Zagreb. Equal values say "we do not know", which is true."""
-    s = european_strength(["Lincoln Red Imps FC", "PAEEK",
-                           "Inter Club d'Escaldes"])
+    # Clubs genuinely absent from the snapshot. Deliberately NOT Lincoln Red
+    # Imps — it has a ClubElo entry (1065) and gained one the day coverage was
+    # raised, which is what broke the first version of this test.
+    s = european_strength(["PAEEK", "Inter Club d'Escaldes", "Torreense"])
 
     assert len(set(s.values())) == 1
 
@@ -93,3 +95,39 @@ def test_every_team_asked_for_gets_a_rating():
     strength = european_strength(teams)
 
     assert set(strength) == set(teams)
+
+
+# ── Coverage ─────────────────────────────────────────────────────────────────
+# An uncovered club gets the floor rating, which reads as "we do not know" and
+# is deliberately understated. Every club left on it is a European regular the
+# projection is quietly wrong about, so coverage is worth guarding.
+
+def test_the_alias_targets_are_clubs_we_actually_hold():
+    """An alias pointing at a name we do not store is dead weight that looks
+    like a fix — worse than the gap it was written to close."""
+    from backend.app.ml.clubelo_ratings import _CLUBELO_ALIASES
+    from scripts.team_resolver import known_team_names
+
+    known = set(known_team_names())
+    stale = {k: v for k, v in _CLUBELO_ALIASES.items() if v not in known}
+
+    assert not stale, f"aliases pointing nowhere: {stale}"
+
+
+def test_no_alias_folds_two_clubs_together():
+    """Two ClubElo entries resolving to one of our clubs means one of them is
+    wrong, and the wrong one might be the rating that gets used."""
+    from backend.app.ml.clubelo_ratings import _CLUBELO_ALIASES
+
+    targets = list(_CLUBELO_ALIASES.values())
+
+    assert len(targets) == len(set(targets)), "two entries map to one club"
+
+
+def test_a_reserve_side_keeps_its_own_rating():
+    """Sociedad B is a real ClubElo entry and must not inherit the first
+    team's — the same reserve-vs-first-team confusion the identity audit
+    guards against elsewhere."""
+    from backend.app.ml.clubelo_ratings import _CLUBELO_ALIASES
+
+    assert _CLUBELO_ALIASES.get("Sociedad B") == "Real Sociedad II"
