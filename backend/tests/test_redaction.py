@@ -18,16 +18,22 @@ from backend.app.redaction import redact
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 
 
+# The fixture below is a MADE-UP key. The first version of this test used the
+# real one, copied out of the log it was written to stop appearing in logs —
+# and committed it to a public repository, where it sat for a week. Redaction
+# tests are exactly the place that mistake is easiest to make.
+
+
 def test_a_failing_url_loses_the_key_but_keeps_the_diagnosis(monkeypatch):
-    monkeypatch.setenv("ODDS_API_KEY", "a416d9c713d6061931f6b087c569a22f")
+    monkeypatch.setenv("ODDS_API_KEY", "fake-key-for-this-test-only-0000")
     exc = Exception(
         "401 Client Error: Unauthorized for url: "
         "https://api.the-odds-api.com/v4/sports/soccer_greece_super_league/"
-        "scores/?apiKey=a416d9c713d6061931f6b087c569a22f&daysFrom=3")
+        "scores/?apiKey=fake-key-for-this-test-only-0000&daysFrom=3")
 
     out = redact(exc)
 
-    assert "a416d9c713d6061931f6b087c569a22f" not in out
+    assert "fake-key-for-this-test-only-0000" not in out
     assert "401" in out and "soccer_greece_super_league" in out
 
 
@@ -66,3 +72,25 @@ def test_no_fetch_script_prints_a_bare_exception(script):
     bare = re.findall(r'print\(f"[^"]*\{e\}[^"]*"\)', src)
 
     assert not bare, f"{script} prints a raw exception: {bare}"
+
+
+def test_no_test_hardcodes_a_real_looking_api_key():
+    """The mistake this file exists to prevent, made inside this file.
+
+    A 32-character hex string in the suite is either a real credential or
+    indistinguishable from one, and a redaction test is the likeliest place to
+    paste a live key by accident — the failing log line is right there.
+    """
+    import re
+    from pathlib import Path
+
+    tests = Path(__file__).resolve().parent
+    hexkey = re.compile(r"\b[0-9a-f]{32}\b")
+    offenders = {}
+    for path in tests.glob("test_*.py"):
+        hits = hexkey.findall(path.read_text(encoding="utf-8"))
+        if hits:
+            offenders[path.name] = hits[:3]
+
+    assert not offenders, (
+        f"32-char hex literals that look like live keys: {offenders}")
