@@ -206,6 +206,34 @@ def candidate_legs(
 
 # ── Ticket profiles ───────────────────────────────────────────────────────────
 
+# Markets whose stated probability survives contact with reality, measured on
+# every settled leg we have cut (2026-09-01, 469 legs):
+#
+#     market   n     model    actual     gap
+#     1X     238     80.1%     70.2%    -9.9      draw inside
+#     X2      83     72.1%     57.8%   -14.2      draw inside
+#     U2.5    12     55.9%      8.3%   -47.6
+#     U3.5    16     72.1%     62.5%    -9.6
+#     NG       8     45.4%     37.5%    -7.9
+#     ---------------------------------------
+#     12      31     80.4%     87.1%    +6.7      draw EXCLUDED
+#     O1.5    41     83.8%     85.4%    +1.5
+#     GG      11     62.3%     63.6%    +1.4
+#     O2.5    39     66.4%     66.7%    +0.2
+#
+# The split is not about long prices — it is the DRAW. Every market containing
+# a draw is overstated, "12" which excludes one is understated, and the goals
+# markets are near-perfect. That matches everything else this project has
+# measured about draws: the club Draw market runs -11.6% ROI and the national
+# one went 0 for 16.
+#
+# It also explains how the slips filled with the worst of them. Legs are ranked
+# by model probability, and a double chance is two outcomes added together —
+# arithmetically the biggest number on the card, every time. The ranking was not
+# choosing 1X because it was good, but because it was large.
+CALIBRATED_MARKETS = frozenset({MARKET_12, MARKET_O15, MARKET_O25, MARKET_GG})
+
+
 @dataclass(frozen=True)
 class Profile:
     key:           str
@@ -214,6 +242,9 @@ class Profile:
     odds_min:      float   # a leg must be priced in this range to be eligible …
     odds_max:      float   # … which is a READER PREFERENCE, not a signal (see below)
     min_leg_prob:  float   # … and we still have to think it more likely than this
+    # Restrict the slip to these markets. None means "any". Used by `longshot`,
+    # whose legs sit where a miscalibration hurts most.
+    markets:       Optional[frozenset] = None
 
 
 # The ladder is cut by LEG PRICE, because that is what decides whether a slip
@@ -235,7 +266,20 @@ PROFILES: tuple[Profile, ...] = (
     Profile("treble",   min_legs=3, max_legs=3,  odds_min=1.60, odds_max=3.50, min_leg_prob=0.40),
     Profile("fourfold", min_legs=4, max_legs=4,  odds_min=1.45, odds_max=3.00, min_leg_prob=0.42),
     Profile("fivefold", min_legs=5, max_legs=5,  odds_min=1.35, odds_max=2.60, min_leg_prob=0.45),
-    Profile("longshot", min_legs=4, max_legs=4,  odds_min=2.20, odds_max=6.00, min_leg_prob=0.28),
+    # Rebuilt 2026-09-01 after going 0 for 13.
+    #
+    # The old shape was four legs at 2.20-6.00 with a 0.28 probability floor,
+    # which selects precisely the region where the model is least reliable: its
+    # legs were priced at a stated 53.7% and landed 25.8%. A slip cannot recover
+    # from that, and the page was advertising a 6% chance that was really 1%.
+    #
+    # Length now comes from the NUMBER of legs rather than the length of each,
+    # and every leg must be a market whose stated probability has held up
+    # (CALIBRATED_MARKETS above - no double chance carrying a draw). Five legs
+    # at 1.70-3.00 still reach 15-60x, which is what the profile is for; the
+    # difference is that the probability printed beside it is now the truth.
+    Profile("longshot", min_legs=5, max_legs=5, odds_min=1.70, odds_max=3.00,
+            min_leg_prob=0.45, markets=CALIBRATED_MARKETS),
 )
 
 # A fixture may carry at most this many of the five tickets. Reusing the single
@@ -328,6 +372,8 @@ def _best_leg_in_band(
     expected outcome for the reader, but a number they can actually find.
     """
     pool = [l for l in legs if committed is None or l.market == committed]
+    if p.markets is not None:
+        pool = [l for l in pool if l.market in p.markets]
     in_band = [
         l for l in pool
         if p.odds_min <= l.odds <= p.odds_max and l.prob >= p.min_leg_prob
@@ -376,6 +422,8 @@ def build_tickets(
     """
     # Keyed by TIE, not match_id: a match stored under two rows must still count
     # as one fixture, both within a slip and across the page.
+    card_has_real_prices = any(
+        not leg.estimated for legs in legs_by_match.values() for leg in legs)
     used_count: dict[tuple, int] = {}
     # tie → the market that fixture is already tipped at, page-wide.
     committed: dict[tuple, str] = {}
@@ -397,10 +445,17 @@ def build_tickets(
         pool.sort(key=lambda l: (-l.prob, l.match_id))
 
         chosen = _fill(pool, p, MAX_ESTIMATED_FRACTION)
-        if len(chosen) < p.min_legs:
+        if len(chosen) < p.min_legs and not card_has_real_prices:
             # Second pass with the estimated-price cap lifted. See
             # MAX_ESTIMATED_FRACTION for what this costs and why it is a
             # fallback and not the rule.
+            #
+            # Only when the WHOLE CARD is unpriced. The fallback exists for the
+            # days no bookmaker price reaches us at all; a profile that cannot
+            # fill for its own reasons — `longshot` restricts itself to four
+            # markets — must be skipped instead, because printing a payout we
+            # invented while real prices sit on the same card is not the same
+            # trade-off at all.
             chosen = _fill(pool, p, 1.0)
 
         if len(chosen) < p.min_legs:

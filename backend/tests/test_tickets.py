@@ -512,3 +512,55 @@ def test_a_fallback_slip_is_identifiable_as_mostly_estimated():
     assert tickets
     for t in tickets:
         assert t.estimated_legs == len(t.legs)
+
+
+# ── The longshot rebuild ──────────────────────────────────────────────────────
+# It went 0 for 13. Not bad luck: its legs were priced at a stated 53.7% and
+# landed 25.8%, because the old shape (four legs, 2.20–6.00, prob floor 0.28)
+# selected precisely the region where the model is least reliable. Measured over
+# every settled leg, the miscalibration is not about long prices at all — it is
+# the DRAW:
+#
+#     1X   -9.9pp    X2  -14.2pp    U2.5 -47.6pp      (draw or under inside)
+#     12   +6.7pp    O1.5 +1.5pp    O2.5  +0.2pp   GG +1.4pp
+
+def test_the_longshot_only_uses_markets_that_have_held_up():
+    from backend.app.ml.tickets import CALIBRATED_MARKETS
+
+    longshot = next(p for p in PROFILES if p.key == "longshot")
+
+    assert longshot.markets == CALIBRATED_MARKETS
+    for bad in ("1X", "X2", "U2.5", "NG"):
+        assert bad not in longshot.markets, f"{bad} is overstated by the model"
+
+
+def test_no_double_chance_carrying_a_draw_reaches_a_longshot():
+    card = {i: [_leg(i, "1X", 0.80, 2.00), _leg(i, "O2.5", 0.55, 2.10)]
+            for i in range(1, 12)}
+
+    for t in build_tickets(card):
+        if t.profile == "longshot":
+            assert all(l.market != "1X" for l in t.legs)
+
+
+def test_the_longshot_gets_its_length_from_leg_count_not_leg_odds():
+    """Five fairly-priced legs, not four improbable ones. Same target payout,
+    honest probability beside it."""
+    longshot = next(p for p in PROFILES if p.key == "longshot")
+
+    assert longshot.min_legs >= 5
+    assert longshot.odds_max <= 3.0, "back in the miscalibrated tail"
+    assert longshot.min_leg_prob >= 0.42
+
+
+def test_the_estimated_fallback_only_fires_on_a_wholly_unpriced_card():
+    """It exists for the days no bookmaker price reaches us at all. A profile
+    that cannot fill for its OWN reasons must be skipped instead — inventing a
+    payout while real prices sit on the same card is a different trade."""
+    card = {i: [_leg(i, "O1.5", 0.65, 1.70, estimated=True)] for i in range(1, 16)}
+    card.update({i: [_leg(i, "1", 0.60, 1.70)] for i in range(16, 26)})
+
+    for t in build_tickets(card):
+        assert t.estimated_legs <= 0.5 * len(t.legs), (
+            f"{t.profile}: {t.estimated_legs}/{len(t.legs)} invented while real "
+            f"prices were available")
