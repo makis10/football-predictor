@@ -2,7 +2,7 @@
 
 A full-stack machine-learning application that predicts football match outcomes (Win / Draw / Loss), goal totals (Over / Under 2.5), BTTS, correct scores and player props for **13 club competitions + international football** (World Cup 2026 with a live Monte-Carlo tournament simulation) — with bookmaker comparison, AI analysis, transparent accuracy/ROI tracking, and an AI chatbot assistant.
 
-Built with **XGBoost + Pi-Ratings + Poisson expected-goals** (clubs) and a **talent-adjusted Elo** engine (national teams), **FastAPI**, **Next.js 16 / React 19**, **PostgreSQL**, **Redis**, and **Groq (GPT-OSS-120B)** — fully containerised with Docker Compose. Club feature set: **134 features, fully market-independent** (no bookmaker inputs — the market is only used as a benchmark).
+Built with **XGBoost + Pi-Ratings + Poisson expected-goals** (clubs) and a **talent-adjusted Elo** engine (national teams), **FastAPI**, **Next.js 16 / React 19**, **PostgreSQL**, **Redis**, and **Groq (GPT-OSS-120B)** — fully containerised with Docker Compose. Club feature set: **134 features, fully market-independent** — no bookmaker value is ever a model input. The 1×2 probabilities we *publish* are then blended 43/57 with the bookmakers' de-vigged line, because that measured more accurate (51.7% → ~54%); the EV / value gate keeps reading the unblended model, since an anchored probability compared with the market is the market compared with itself. See [Market anchoring](#market-anchoring).
 
 **Live URL:** [https://aitipster.net](https://aitipster.net)
 
@@ -20,21 +20,24 @@ Built with **XGBoost + Pi-Ratings + Poisson expected-goals** (clubs) and a **tal
 ## Table of Contents
 
 1. [Architecture](#architecture)
-2. [Prerequisites](#prerequisites)
-3. [Quick Start — Docker](#quick-start--docker)
-4. [Environment Variables](#environment-variables)
-5. [Downloading Data](#downloading-data)
-6. [Training the Model](#training-the-model)
-7. [National Teams (International)](#national-teams-international)
-8. [Seeding the Database](#seeding-the-database)
-9. [Live Fixtures & Daily Automation](#live-fixtures--daily-automation)
-10. [Club identity & the odds seam](#club-identity--the-odds-seam)
-11. [Public Tunnel (Cloudflare)](#public-tunnel-cloudflare)
-12. [API Reference](#api-reference)
-13. [Model Deep-Dive](#model-deep-dive)
-14. [Adjusting & Improving the Model](#adjusting--improving-the-model)
-15. [Project Structure](#project-structure)
-16. [Troubleshooting](#troubleshooting)
+2. [Market anchoring](#market-anchoring)
+3. [Odds sources and the credit budget](#odds-sources-and-the-credit-budget)
+4. [Cross-league strength](#cross-league-strength)
+5. [Prerequisites](#prerequisites)
+6. [Quick Start — Docker](#quick-start--docker)
+7. [Environment Variables](#environment-variables)
+8. [Downloading Data](#downloading-data)
+9. [Training the Model](#training-the-model)
+10. [National Teams (International)](#national-teams-international)
+11. [Seeding the Database](#seeding-the-database)
+12. [Live Fixtures & Daily Automation](#live-fixtures--daily-automation)
+13. [Club identity & the odds seam](#club-identity--the-odds-seam)
+14. [Public Tunnel (Cloudflare)](#public-tunnel-cloudflare)
+15. [API Reference](#api-reference)
+16. [Model Deep-Dive](#model-deep-dive)
+17. [Adjusting & Improving the Model](#adjusting--improving-the-model)
+18. [Project Structure](#project-structure)
+19. [Troubleshooting](#troubleshooting)
 
 ---
 
@@ -85,6 +88,90 @@ Cloudflare tunnel (aitipster.net)
 - **Tunnel** — Cloudflare Tunnel serving the custom domain aitipster.net, managed by macOS launchd (auto-restarts on crash/reboot).
 
 ---
+
+## Market anchoring
+
+Predictions were made market-independent in June 2026 and stayed that way until
+`scripts/compare_anchoring.py` measured what it cost. Replaying every settled
+match that carried both our raw probabilities and a de-vigged bookmaker 1×2:
+
+| weight | hit rate | log loss | |
+|--------|----------|----------|---|
+| 0.00 | 51.7% | 1.0274 | pure model |
+| 0.35 | 53.8% | 1.0031 | |
+| 0.57 | ~54% | ~0.992 | **what we serve** |
+| 1.00 | 54.6% | 0.9826 | the bookmaker alone |
+
+Monotonic in both metrics — there is no interior weight where the model adds
+something. Not a flattering result, and it is disclosed on `/stats` above the
+accuracy figures rather than below them.
+
+Two rules keep this from quietly breaking the rest of the system:
+
+- **The served probabilities are anchored; the stored `raw_*` columns are not.**
+  The EV / value gate reads `raw_*`. Feed it an anchored probability and it
+  compares the market with itself, finds an edge of roughly zero on everything,
+  and silently stops suggesting anything — with no error to notice.
+- **Anchoring happens before the suggested market is chosen**, so the pick can
+  never contradict the probability bars beside it. Getting that order wrong put
+  "Away Win" on a card whose bars showed Home ahead.
+
+Goals, BTTS and the long-term projections are untouched model output.
+
+## Odds sources and the credit budget
+
+Two sources, because one was not enough. The Odds API plan is 20,000 credits a
+month; it ran out on 13 August and for eighteen days no fixture carried a price,
+which meant no EV, no value gate, and an accumulator ladder that built nothing.
+
+| | The Odds API | API-Football |
+|---|---|---|
+| role | primary | fills what the primary missed |
+| cost | markets × regions per request | 1 request per league-day |
+| reset | **1st of the month, 00:00 UTC** — *not* the invoice date | daily, 7,500/day |
+
+Things worth knowing before touching either:
+
+- **Cost is markets × regions, not one per call.** `markets=h2h,totals&regions=eu`
+  bills 2, so a 23-league sweep is 46. `/sports` and `/sports/{key}/events` are
+  free, which is why fixtures and the odds-seam check keep working at zero
+  credits.
+- **A refused call's rate-limit headers are meaningless.** API-Football answers
+  HTTP 200 with "You have reached the request limit for the day" in the body
+  while `x-ratelimit-requests-remaining` reads limit-minus-one. The body is the
+  truth; the header sent one investigation to the billing dashboard for nothing.
+- **A cache shorter than the job that reads it costs real money.** The analysis
+  warm-up runs every 50 minutes; league odds and BTTS were both cached for 30,
+  so every pass re-bought prices we already held — over 2,000 credits a day
+  against a 645 budget. Both are 6 hours now, still under the odds poll's
+  8-hour schedule so its snapshots stay live. `test_odds_credits.py` pins each
+  cache against both schedules.
+- **One full daily run costs 4,400–5,600 API-Football requests of 7,500.** The
+  budget fits exactly one, so `run_daily.sh` refuses a second on the same day
+  (`FORCE_DAILY=1` overrides).
+
+`scripts/odds_budget_report.py` prints the burn per caller, and the daily run
+includes it. Refused calls are reported separately from billed ones — counting
+an outage as spend turns a dead account into a fake overspend.
+
+## Cross-league strength
+
+`club_elo()` builds Elo from our own results with every league pooled and
+everyone starting at 1500. Within a league that is correct — it is the feature
+the model trains on. Across leagues it is meaningless, because they barely play
+each other: each is a closed pool where a dominant club climbs against opponents
+whose ratings never had a reason to fall.
+
+    Lincoln Red Imps (Gibraltar)  1847      Juventus  1837
+    Riga (Latvia)                 1876      Milan     1798
+
+Fed to the European simulation, that produced a Europa League where Levski Sofia
+beat Milan to the title. `backend/app/ml/clubelo_ratings.py` uses ClubElo
+instead, which is maintained across all UEFA federations on one scale, and
+matches names **inside a federation** — a bare "Atletico" filed ESP must not
+reach Atlético Mineiro. Clubs it does not carry share one low value rather than
+being ranked against each other by the very metric that was wrong.
+
 
 ## Prerequisites
 

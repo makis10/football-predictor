@@ -4,6 +4,102 @@ Notable changes to Football Predictor. Format loosely follows
 [Keep a Changelog](https://keepachangelog.com/); dates are `YYYY-MM-DD`.
 History before this file was introduced lives in `git log`.
 
+## 2026-09-02
+
+### Added
+- **A second source of bookmaker odds.** The Odds API plan is 20,000 credits a
+  month and it ran out on 13 August. For the eighteen days that followed, no
+  upcoming fixture carried a price — so no EV, no value gate, and an
+  accumulator ladder that built nothing, because every leg would have been our
+  own fair odds. API-Football is already paid for and carries the same three
+  markets, so `scripts/fetch_odds_apifootball.py` fills whatever the primary
+  source missed. Migration `0033` stores its fixture id, because its `/odds`
+  endpoint keys on that and returns no team names. Pinnacle first, not the
+  longest price: taking the maximum across books overstates every payout we
+  quote against a price no single book offers on the whole slip. Coverage went
+  0% → 84% on the day, and is 94% now.
+
+- **Market anchoring at w=0.57.** Removed in June to make the model
+  market-independent, restored after `scripts/compare_anchoring.py` replayed
+  every settled match holding both our raw probabilities and a de-vigged 1×2:
+  accuracy climbed monotonically toward the market, 51.7% → 54.6%, with no
+  interior optimum where the model added anything. The site is a betting site,
+  so the number beside a pick is the most accurate one we can produce.
+  The EV / value gate keeps reading the raw columns — an anchored probability
+  compared with the market is the market compared with itself. Disclosed on
+  `/stats`, above the accuracy figures rather than below them.
+
+- **A credit meter.** `backend/app/odds_budget.py` records every Odds API
+  request with its real cost, which is markets × regions and not one per call.
+  The daily run prints the burn per caller. Built because the answer to
+  "should I buy a bigger plan" had been guessed at three times.
+
+### Fixed
+- **One match, two fixture rows — four separate causes.** A postponement moved
+  five ties 10–12 days, past the old 5-day reschedule window. Two GreekSL feeds
+  disagreed about a date and both rows survived, so an accumulator carried
+  PAOK–Levadiakos twice and multiplied one probability by itself. The Odds API
+  listed a fixture at its old and new dates in one response, and the
+  double-header guard read that as two real matches. And a fixture that moved
+  four months left a row no window could reach. The reschedule window is 14
+  days, a corroborating feed defers instead of inserting, matching prefers the
+  feed id over any name or date, and `dedupe_fixtures` groups by ordered
+  pairing regardless of date distance.
+
+- **The European projections ranked Gibraltar above Milan.** `club_elo()` pools
+  every league from a shared 1500 start, and the leagues barely play each
+  other, so each is a closed pool where a dominant club climbs against
+  opponents whose ratings never had a reason to fall — Lincoln Red Imps 1847
+  against Juventus 1837. European simulations now use ClubElo, which is
+  maintained across all UEFA federations on one scale. Matching is done inside
+  a federation, so a bare "Atletico" filed ESP can no longer reach Atlético
+  Mineiro. Coverage of the European field: 95%.
+
+- **A spent quota was indistinguishable from a broken pipeline.** API-Football's
+  daily cap made three healthy steps exit 1, which paged and suppressed the
+  heartbeat about a condition that clears itself at the reset. Quota now has
+  its own exit code. Worse, `fetch_european_fixtures` and
+  `fetch_club_friendlies` exited **0 reporting "0 fixtures"** on a quota error,
+  and friendlies then handed that empty list to `prune_vanished` — the
+  2026-08-09 mass-deletion incident through a different door.
+
+- **Two caches shorter than the job that reads them.** The analysis warm-up runs
+  every 50 minutes; BTTS and league odds were both cached for 30, so every pass
+  re-bought prices we already held. Together they were 2,000+ credits a day
+  against a 645 budget.
+
+- **The chat assistant's 504, and its "no data for today".** It answered "no
+  data available" while holding 13 KB of that day's fixtures, because nothing
+  in the prompt said what the date was. Separately, Groq's tier caps tokens per
+  minute, so the second question inside a minute got a 429 with a 53-second
+  Retry-After that the SDK slept on while the gateway gave up at 30.
+
+- **Slips still "running" a fortnight later**, because a leg's fixture had been
+  postponed out of the window the slip was offered under. Voided now, not left
+  open.
+
+- **A live API key in a public test file.** The redaction test used the real
+  key as its fixture — copied out of the log it was written to keep keys out
+  of. Rotated; a test now refuses any 32-character hex literal in the suite.
+
+### Changed
+- **The `longshot` profile, rebuilt after going 0 for 13.** Its legs were priced
+  at a stated 53.7% and landed 25.8%. Measured across all 469 settled legs, the
+  miscalibration is not about long prices — it is the DRAW: every market
+  containing one is overstated (1X −9.9pp, X2 −14.2pp) while `12`, which
+  excludes it, is understated, and the goals markets are near-perfect. The
+  profile now takes only markets whose stated probability has held up, and gets
+  its length from five legs rather than four longer ones.
+
+- **Tickets and long-term projections are members-only**, with the title race
+  three teams deep left public so the route keeps its indexable content. The
+  settled record stays public everywhere — it is the only evidence a stranger
+  has that any of this works.
+
+- **One daily run per day.** The lock prevented overlap, not repetition, and
+  launchd coalescing after sleep fired a second full run — enough to exhaust
+  the API-Football day on its own, since one run costs 4,400–5,600 of 7,500.
+
 ## 2026-08-08
 
 ### Fixed

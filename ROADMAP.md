@@ -50,7 +50,7 @@
 - **Public showcase**: όλο το content δημόσιο (gated μόνο personal/admin), SEO live (`robots.ts`, `sitemap.ts`, OpenGraph images), rebrand σε **aitipster.net** (Cloudflare tunnel), prod build μέσω `deploy_frontend.sh`
 - **User platform**: NextAuth (Google) login/register/profile, tracked matches (`my-matches`), προσωπικό bet log + ROI (`user_bets`, `my-roi`, `LogBetButton`), in-app `NotificationBell`, feedback
 - **Admin suite**: `/admin` (users, market record με promotion/demotion status, feedback)
-- **Ops**: ημερήσια `pg_dump` backups με rotation, dead-man's-switch heartbeats σε κάθε cron pipeline, per-IP rate limiting στα LLM endpoints, self-hosted umami analytics, GitHub Actions CI (pytest + tsc + vitest + build), 5 launchd services (tunnel, daily, odds-poll, prematch, results-poll)
+- **Ops**: ημερήσια `pg_dump` backups με rotation, dead-man's-switch heartbeats σε κάθε cron pipeline, per-IP rate limiting στα LLM endpoints, self-hosted umami analytics, GitHub Actions CI (pytest + tsc + vitest + build), 7 launchd services (tunnel, daily, odds-poll, prematch, results-poll)
 - **Email/newsletter**: one-off ενημέρωση χρηστών (rebrand + WC record) μέσω Gmail BCC — αν γίνει τακτικό, θέλει ESP (Resend/SendGrid) με domain auth
 
 ### AI & Chatbot
@@ -372,6 +372,73 @@ components, `useT()` για client, flag toggle στο header. Αντικατέ�
 | 3 | **`caffeinate`** — ο Mac κοιμάται στις 06:00 και το launchd μεταθέτει το daily· 30 λεπτά δουλειάς γίνονται 3,5 ώρες σε σπασμένα κομμάτια | ⛔ Απορρίφθηκε από τον χρήστη |
 | 4 | **Rotation στα logs του tunnel** — 11 MB stderr, 7 MB stdout, χωρίς rotation | 🟡 Ανοιχτό (ακίνδυνο) |
 | 5 | **Off-machine backups** — ο μόνος εναπομείνας κίνδυνος ολικής απώλειας | 🟡 Ανοιχτό |
+
+---
+
+---
+
+## 🔵 Phase 7 — Δύο πηγές, αγκύρωση & πραγματικό κόστος (2026-08→09)
+
+Η φάση ξεκίνησε από μία διακοπή: στις **13 Αυγούστου** τελείωσαν τα credits του
+Odds API και για **δεκαοκτώ μέρες** κανένας αγώνας δεν είχε τιμή γραφείου —
+άρα ούτε EV, ούτε value gate, ούτε δελτία. Ό,τι ακολούθησε είναι συνέπειες
+αυτού, και των μετρήσεων που έγιναν επειδή δεν είχαμε άλλη επιλογή.
+
+### ✅ 7.1 · Δεύτερη πηγή αποδόσεων — υλοποιήθηκε 2026-08-19
+
+`scripts/fetch_odds_apifootball.py`, migration `0033` (`matches.api_fixture_id`).
+Το `/odds` του API-Football κλειδώνει σε fixture id και δεν επιστρέφει ονόματα,
+οπότε χωρίς το id δεν υπήρχε τίποτα να ταιριάξει. **Pinnacle πρώτο, όχι η
+μεγαλύτερη απόδοση** — το max ανά εταιρία φουσκώνει κάθε πληρωμή απέναντι σε
+τιμή που καμία μόνη εταιρία δεν δίνει για ολόκληρο το δελτίο.
+Κάλυψη **0% → 84%** την ίδια μέρα, **94%** σήμερα.
+
+### ✅ 7.2 · Μετρητής credits — υλοποιήθηκε 2026-08-19
+
+`backend/app/odds_budget.py` + `scripts/odds_budget_report.py`, στο daily.
+Χτίστηκε επειδή το ερώτημα «να αγοράσουμε μεγαλύτερο πλάνο;» είχε απαντηθεί
+**τρεις φορές με εκτίμηση**. Οι αρνημένες κλήσεις αναφέρονται χωριστά από τις
+χρεωμένες — αλλιώς μια διακοπή διαβάζεται ως υπέρβαση.
+
+### ✅ 7.3 · Αγκύρωση στην αγορά, w=0.57 — υλοποιήθηκε 2026-09-01
+
+`scripts/compare_anchoring.py` σε κάθε κριμένο αγώνα με raw πιθανότητες **και**
+de-vigged 1×2: **51,7% → 54,6%**, μονότονα προς την αγορά, χωρίς εσωτερικό
+βέλτιστο. Το EV/value gate διαβάζει τις `raw_*` στήλες — αγκυρωμένη πιθανότητα
+συγκρινόμενη με την αγορά είναι η αγορά με τον εαυτό της. Δηλωμένο στο `/stats`
+**πάνω** από τα νούμερα ακρίβειας.
+
+### ✅ 7.4 · Cross-league Elo για τις ευρωπαϊκές — υλοποιήθηκε 2026-09-01
+
+`backend/app/ml/clubelo_ratings.py`. Το δικό μας Elo έβαζε το Λίνκολν
+Γιβραλτάρ (1847) πάνω από τη Γιουβέντους (1837), γιατί κάθε πρωτάθλημα είναι
+κλειστή δεξαμενή. Ταίριασμα **μέσα στην ομοσπονδία** — κάλυψη **66% → 95%**.
+Ομάδες εκτός ClubElo μοιράζονται μία χαμηλή τιμή αντί να καταταχθούν με τη
+μετρική που ήταν λάθος εξαρχής.
+
+### ✅ 7.5 · Δελτία: βαθμονόμηση & gating — υλοποιήθηκε 2026-08-19→09-01
+
+Σε **469** κριμένα σκέλη, η αστοχία δεν είναι οι μεγάλες αποδόσεις — είναι η
+**ισοπαλία**: `1X −9,9μ`, `X2 −14,2μ`, ενώ το `12` που την αποκλείει είναι
+**+6,7μ** και τα γκολ σχεδόν τέλεια. Το `longshot` (0/13) ξαναχτίστηκε πάνω
+στις βαθμονομημένες αγορές. Δελτία και μακροχρόνιες πίσω από login, με την
+κούρσα τίτλου δημόσια για το SEO· το κριμένο ρεκόρ μένει πάντα ανοιχτό.
+
+### ✅ 7.6 · Το quota δεν είναι κρασάρισμα — υλοποιήθηκε 2026-08-25
+
+Exit code **4** (`QuotaExhausted`). Πριν, τρία υγιή βήματα έβγαιναν με 1 και
+σήμαιναν συναγερμό για κατάσταση που περνάει μόνη της. Και δύο fetchers έβγαιναν
+με **0 λέγοντας «0 fixtures»**, με τα φιλικά να δίνουν μετά αυτή την άδεια λίστα
+στο `prune_vanished` — το incident της 9/8 από άλλη πόρτα.
+
+### 🔜 7.7 · Τι μένει από τη φάση
+
+| # | Θέμα | Κατάσταση |
+|---|---|---|
+| 1 | **Καθαρό 24ωρο μέτρησης credits** — δύο διορθώσεις cache (BTTS, league odds) χρειάζονται μια πλήρη μέρα για να επιβεβαιωθούν· η προβολή λέει 13.620/μήνα σε όριο 20.000 | 🟡 Εκκρεμεί μέτρηση |
+| 2 | **5 σύλλογοι εκτός ClubElo** (`Ararat-Armenia`, `Inter Club d'Escaldes`, `OFI Crete`, `PAEEK`, `Torreense`) — δεν υπάρχουν upstream, κανένα alias δεν τους φτιάχνει | 🟡 Ανοιχτό (ανυπέρβλητο) |
+| 3 | **Το παλιό κλειδί στο git history** — έφυγε από τα αρχεία, μένει στο `1d88897`· το κλειδί περιστράφηκε, οπότε είναι ακίνδυνο, αλλά ο καθαρισμός θέλει force-push σε δημόσιο repo | 🟡 Ανοιχτό (μετριασμένο) |
+| 4 | **Ακρίβεια & ρεκόρ δελτίων μετά τις αλλαγές** — 6 σκέλη και 10 αγώνες έχουν κριθεί από τότε· θέλει 2-3 βδομάδες | 🟡 Εκκρεμεί μέτρηση |
 
 ---
 

@@ -25,6 +25,71 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: "2026-09-01-market-anchored-probabilities",
+    date: "2026-09-01",
+    tag: "improvement",
+    title: {
+      en: "More accurate probabilities — and we tested it",
+      el: "Πιο ακριβείς πιθανότητες — και το μετρήσαμε",
+    },
+    body: {
+      en: "The 1×2 percentages you see are now a blend: 43% our model, 57% the bookmakers' line with its margin stripped out. We did not assume this was better — we replayed every match we had already been graded on and checked. Accuracy went from 51.7% to about 54%, and improved at every step toward the market, with no point where our model alone did better. Being partly the market, these numbers are not an edge over it and we do not present them as one. Goals, both-teams-to-score and the long-term projections are untouched model output, and the value gate still runs on our unblended model.",
+      el: "Τα ποσοστά 1×2 που βλέπεις είναι πλέον μίγμα: 43% το μοντέλο μας, 57% η γραμμή των γραφείων χωρίς το περιθώριό τους. Δεν το υποθέσαμε — ξανατρέξαμε κάθε αγώνα που είχε ήδη κριθεί και το ελέγξαμε. Η ακρίβεια πήγε από 51,7% σε περίπου 54%, και βελτιωνόταν σε κάθε βήμα προς την αγορά, χωρίς σημείο όπου το μοντέλο μόνο του τα πήγαινε καλύτερα. Επειδή είναι εν μέρει η ίδια η αγορά, δεν αποτελούν πλεονέκτημα απέναντί της και δεν τα παρουσιάζουμε έτσι. Γκολ, BTTS και μακροχρόνιες προβλέψεις παραμένουν καθαρή έξοδος του μοντέλου.",
+    },
+  },
+  {
+    id: "2026-09-01-european-projections-fixed",
+    date: "2026-09-01",
+    tag: "fix",
+    title: {
+      en: "European projections had the wrong teams on top",
+      el: "Οι ευρωπαϊκές προβλέψεις είχαν λάθος ομάδες στην κορυφή",
+    },
+    body: {
+      en: "The Europa League table put Levski Sofia and Omonia above Milan and Juventus, and the Conference League was led by Riga with Ajax, Monaco and Atalanta below. The cause: our team ratings are built from results within each league, and the leagues barely play each other — so a club that dominates a small league climbs against opponents whose ratings never had a reason to fall. European simulations now use a rating maintained across all 55 federations on one scale. Bournemouth, Leverkusen and Benfica now lead the Europa League; Brighton and Atalanta the Conference.",
+      el: "Το Europa League έβαζε Λέφσκι Σόφιας και Ομόνοια πάνω από Μίλαν και Γιουβέντους, και το Conference League το οδηγούσε η Ρίγα με Άγιαξ, Μονακό και Αταλάντα από κάτω. Η αιτία: οι βαθμολογίες μας χτίζονται από αποτελέσματα μέσα σε κάθε πρωτάθλημα, και τα πρωταθλήματα σχεδόν δεν παίζουν μεταξύ τους — οπότε μια ομάδα που κυριαρχεί σε μικρό πρωτάθλημα ανεβαίνει κόντρα σε αντιπάλους που δεν είχαν ποτέ λόγο να πέσουν. Οι ευρωπαϊκές προσομοιώσεις χρησιμοποιούν πλέον βαθμολογία κοινή για όλες τις 55 ομοσπονδίες.",
+    },
+  },
+  {
+    id: "2026-09-01-longshot-rebuilt",
+    date: "2026-09-01",
+    tag: "improvement",
+    title: {
+      en: "The Long shot slip, rebuilt",
+      el: "Το δελτίο Long shot, ξαναχτισμένο",
+    },
+    body: {
+      en: "It had gone 0 for 13, and looking at every leg we have ever graded told us why: its selections were priced at a stated 53.7% and landed 25.8%. The problem was not long odds — it was the draw. Every market containing one is overstated by our model, while markets that exclude it, and the goals markets, hold up almost exactly. The slip now takes only markets whose stated probability has survived contact with results, and reaches its payout with five fairly-priced legs instead of four improbable ones. The number printed beside it is now the truth.",
+      el: "Είχε πάει 0 στα 13, και κοιτώντας κάθε σκέλος που έχει κριθεί ποτέ φάνηκε γιατί: οι επιλογές του δίνονταν με δηλωμένο 53,7% και έβγαιναν 25,8%. Το πρόβλημα δεν ήταν οι μεγάλες αποδόσεις — ήταν η ισοπαλία. Κάθε αγορά που την περιέχει υπερεκτιμάται από το μοντέλο, ενώ όσες την αποκλείουν, και οι αγορές γκολ, στέκουν σχεδόν ακριβώς. Το δελτίο παίρνει πλέον μόνο αγορές που άντεξαν στα αποτελέσματα, και φτάνει στην απόδοσή του με πέντε δίκαια τιμολογημένα σκέλη αντί για τέσσερα απίθανα.",
+    },
+  },
+  {
+    id: "2026-08-19-odds-second-source",
+    date: "2026-08-19",
+    tag: "fix",
+    title: {
+      en: "Bookmaker odds are back on every card",
+      el: "Οι αποδόσεις γραφείων επέστρεψαν σε κάθε κάρτα",
+    },
+    body: {
+      en: "Our odds provider ran out of monthly credits on 13 August, and for eighteen days no upcoming match carried a bookmaker price — which also meant no ready-made slips. There is now a second, independent source that fills whatever the first one misses, so a single provider running dry can no longer take the feature down. Coverage is back above 90%.",
+      el: "Ο πάροχος αποδόσεων εξάντλησε τα μηνιαία credits στις 13 Αυγούστου, και για δεκαοκτώ μέρες κανένας επερχόμενος αγώνας δεν είχε τιμή γραφείου — που σήμαινε και κανένα έτοιμο δελτίο. Υπάρχει πλέον δεύτερη, ανεξάρτητη πηγή που καλύπτει ό,τι λείπει από την πρώτη, οπότε ένας πάροχος που στερεύει δεν μπορεί πια να ρίξει τη λειτουργία. Η κάλυψη είναι ξανά πάνω από 90%.",
+    },
+  },
+  {
+    id: "2026-08-19-members-only",
+    date: "2026-08-19",
+    tag: "new",
+    title: {
+      en: "Slips and long-term projections need an account",
+      el: "Δελτία και μακροχρόνιες προβλέψεις θέλουν λογαριασμό",
+    },
+    body: {
+      en: "Today's accumulators and the full projection tables are now for signed-in members — free, as everything here is. What stays open to everyone: the title race three teams deep in every competition, live league tables, and the complete settled record of every slip we have ever cut, graded once all its matches finished. That record is the only evidence a visitor has that any of this works, so it will not go behind a login.",
+      el: "Τα σημερινά δελτία και οι πλήρεις πίνακες προβλέψεων είναι πλέον για συνδεδεμένα μέλη — δωρεάν, όπως όλα εδώ. Ανοιχτά για όλους μένουν: η κούρσα τίτλου τρεις ομάδες βαθιά σε κάθε διοργάνωση, οι ζωντανές βαθμολογίες, και ολόκληρο το κριμένο ιστορικό κάθε δελτίου που κόψαμε ποτέ. Αυτό το ιστορικό είναι η μόνη απόδειξη που έχει ένας επισκέπτης ότι κάτι από αυτά δουλεύει, οπότε δεν πάει πίσω από login.",
+    },
+  },
+  {
     id: "2026-08-11-light-theme",
     date: "2026-08-11",
     tag: "new",
