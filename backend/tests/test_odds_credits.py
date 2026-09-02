@@ -166,14 +166,62 @@ def test_the_btts_cache_outlives_the_warm_up_that_reads_it():
         f"{_warmup_interval_minutes()} min warm-up — it will miss every pass")
 
 
-def test_btts_no_longer_shares_the_league_batch_ttl():
-    """The league batch is one request for a whole competition; BTTS is one per
-    fixture. Sharing a lifetime tied them to the wrong cost model."""
+def test_the_league_odds_cache_also_outlives_the_warm_up():
+    """Same failure as BTTS, one level up and found the day after. A cache
+    shorter than the warm-up interval re-buys a whole league's prices on every
+    pass — 2,208 credits a day at the 30-minute setting, against a 645 budget."""
+    from backend.app.ml.odds_analysis_service import LEAGUE_ODDS_TTL
+
+    assert LEAGUE_ODDS_TTL / 60 > _warmup_interval_minutes() * 2, (
+        f"league odds cached {LEAGUE_ODDS_TTL/60:.0f} min against a "
+        f"{_warmup_interval_minutes()} min warm-up")
+
+
+def test_the_league_cache_still_lets_the_poll_fetch_live_prices():
+    """The odds poll exists to snapshot movement into odds_history, so it must
+    MISS the cache. Its schedule has to stay longer than the TTL."""
+    import plistlib
+
+    from backend.app.ml.odds_analysis_service import LEAGUE_ODDS_TTL
+
+    data = plistlib.loads(
+        (ROOT / "launchd" / "com.football-predictor.odds-poll.plist").read_bytes())
+    hours = sorted(e.get("Hour", 0) for e in data["StartCalendarInterval"])
+    gap_h = min((b - a) for a, b in zip(hours, hours[1:])) if len(hours) > 1 else 24
+
+    assert LEAGUE_ODDS_TTL / 3600 <= gap_h, (
+        f"cache lives {LEAGUE_ODDS_TTL/3600:.0f}h but the poll runs every "
+        f"{gap_h}h — its snapshots would be cache hits, not live prices")
+
+
+def test_each_cache_is_sized_against_the_warm_up_not_copied_from_the_other():
+    """These were one constant, and BTTS inherited a lifetime chosen for a
+    whole-league batch — one request per competition — while itself costing one
+    request per FIXTURE. They are separate names now, and each is checked
+    against the warm-up interval above rather than against each other; that
+    they currently hold the same number is a coincidence of the same input.
+    """
+    import backend.app.ml.odds_analysis_service as oas
+
+    assert hasattr(oas, "BTTS_ODDS_TTL") and hasattr(oas, "LEAGUE_ODDS_TTL")
+
+    src = (ROOT / "backend" / "app" / "ml" / "odds_analysis_service.py").read_text()
+    assert "BTTS_ODDS_TTL   = LEAGUE_ODDS_TTL" not in src, \
+        "BTTS is deriving its lifetime from the league batch again"
+
+
+def test_the_whole_scheduled_burn_fits_inside_the_plan():
+    """Both caches priced in: one league sweep per TTL window across 23
+    competitions at 2 credits each, plus one BTTS fetch per fixture per window
+    across a ~60-fixture card."""
     from backend.app.ml.odds_analysis_service import (
         BTTS_ODDS_TTL, LEAGUE_ODDS_TTL,
     )
 
-    assert BTTS_ODDS_TTL != LEAGUE_ODDS_TTL
+    per_day = (23 * 2 * (24 / (LEAGUE_ODDS_TTL / 3600))
+               + 60 * (24 / (BTTS_ODDS_TTL / 3600)))
+
+    assert per_day < DAILY_BUDGET, f"{per_day:.0f}/day against {DAILY_BUDGET:.0f}"
 
 
 def test_the_scheduled_burn_still_fits_with_btts_priced_in():

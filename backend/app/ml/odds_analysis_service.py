@@ -751,7 +751,21 @@ def _format_injuries(injury_data: Optional[dict], home_team: str, away_team: str
 # freshness inside the analysis panel (≤ 1 h stale), and the bookmaker odds it
 # quotes were never fresher than LEAGUE_ODDS_TTL anyway.
 CACHE_TTL      = int(os.getenv("ANALYSIS_CACHE_TTL", "3600"))  # 1 h — Groq analysis
-LEAGUE_ODDS_TTL = 1800  # 30 min — league odds batch
+# Six hours, for the same reason BTTS below has six: the analysis warm-up runs
+# every 50 minutes and a 30-minute cache guaranteed it a miss every pass, so we
+# re-bought a whole league's prices roughly nineteen times an hour.
+#
+# Measured on 2026-09-02, the first clean day after the BTTS fix — that fix
+# worked (event_btts fell to ~420/day) and simply promoted this to the biggest
+# spender: club_league_odds was 274 of the day's first 388 billed credits, 71%,
+# putting the month on course for 45,000 against a 20,000 cap.
+#
+# Six hours is also safely under the odds poll's own 8-hour schedule, so the
+# poll — the job whose entire purpose is a fresh snapshot into odds_history —
+# still misses the cache and fetches live prices every time. What gets the
+# older number is the analysis page, where a price a few hours old sits beside
+# a fixture that has not kicked off.
+LEAGUE_ODDS_TTL = 6 * 3600
 # A league that came back empty is re-tried far sooner: an empty blob is
 # usually a transient failure, and caching it for the full TTL silently
 # removes the bookmaker panel from every fixture in that league.
