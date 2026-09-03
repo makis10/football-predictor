@@ -11,15 +11,15 @@
 ## ✅ Ήδη υλοποιημένο
 
 ### ML & Predictions
-- XGBoost + LightGBM + MLP soft-vote ensemble (result + O/U) με isotonic calibration
-- Draw specialist classifier **ενεργός** με auto-tuned blend α (Brier sweep στο calibration set) — τα Draw suggestions ήταν το πιο κερδοφόρο tracked market στο ΠΑΛΙΟ μοντέλο (+36.6% ROI)· post-cutoff (2026-06-17) record 0/16, −100% → **demoted 2026-07-06** (βλ. dynamic gate)
+- XGBoost + LightGBM + MLP soft-vote ensemble (result + O/U)· **matrix/Dirichlet scaling** για το 1×2 (αντικατέστησε το one-vs-rest isotonic, 2026-09-03), isotonic για τα γκολ
+- Draw specialist classifier **απενεργοποιημένος (α=0, 2026-09-03)** — κατατάσσει τις ισοπαλίες χειρότερα από το ίδιο το result model (AUC 0,5280 vs 0,5402)· η επιλογή του α γίνεται πλέον με one-standard-error rule — τα Draw suggestions ήταν το πιο κερδοφόρο tracked market στο ΠΑΛΙΟ μοντέλο (+36.6% ROI)· post-cutoff (2026-06-17) record 0/16, −100% → **demoted 2026-07-06** (βλ. dynamic gate)
 - Pi-Ratings, Poisson, rolling stats, H2H, European fatigue, EWMA, league position, referee/card & suspension features — **134 market-independent features** (τα 11 market/odds/steam columns εξακολουθούν να υπολογίζονται αλλά **εξαιρούνται από κάθε trained model** μετά το market-independence cutoff της 2026-06-17· βλ. `RESULT_FEATURE_COLS = FEATURE_COLS − MARKET_DERIVED_COLS`)
 - **Market-anchored EV gate (2026-06)**: τα suggestions απαιτούν θετικό EV στη market-shrunk πιθανότητα `p′ = (model+market)/2` + kill-switch μόνο σε Home Win/Draw (tracked: Away −29%, GG −33%, Over −24% → disabled)
 - **Dynamic value gate + demotion (2026-06/07, national)**: κάθε qualifying market shadow-tracked στο `value_bets` ledger· promotion σε headline με n ≥ 30 settled & ROI ≥ 0. Base markets (Home/Draw) **υποβιβάζονται** αυτόματα: early στα n ≥ 15 με ROI ≤ −20% (μόνο ξεκάθαροι bleeders), και με το ίδιο ROI floor στα n ≥ 30. Ένας κοινός κανόνας (`_market_is_proven`) για live gate + `/admin/market-record` — status badges στο `/admin/markets`
 - **~~Market-anchored predictions (2026-06)~~ → αποσύρθηκε 2026-06-17**: για μια περίοδο τα served probs ήταν 0.7·market + 0.3·model, αλλά αυτό απλώς αντέγραφε την αγορά (κρύβοντας την πραγματική model performance) — καταργήθηκε. **Τα stored/served probabilities είναι πλέον καθαρά model outputs (market-independent).** Η αγορά χρησιμοποιείται μόνο για (α) το EV value-gate και (β) side-by-side σύγκριση στο UI — ποτέ blended μέσα στις σερβιρισμένες πιθανότητες.
 - **Strategy vs Baseline ROI**: ο tracker δείχνει χωριστά το ROI των suggested bets (στρατηγική) από το bet-σε-όλα baseline (≈ −γκανιότα by construction)
 - **CLV tracking**: μέση απόδοση suggestion vs closing line από `odds_history` — το πιο γρήγορο αξιόπιστο σήμα πραγματικού edge
-- **Rolling recalibration** (`scripts/recalibrate.py`): δεύτερο isotonic stage από τα αποθηκευμένα out-of-sample predictions των τελευταίων 365 ημερών — μηνιαίο + μετά από κάθε retrain
+- ~~**Rolling recalibration** (`scripts/recalibrate.py`)~~ → **αφαιρέθηκε 2026-09-03**: έκανε fit στις *served* (anchored) στήλες και διόρθωνε *unanchored* πιθανότητες. Έχανε και μόνο του (O/U log-loss 0,6853 με, 0,6831 χωρίς). Βλ. Phase 8.8
 - **Reschedule-aware fixture upsert** (`scripts/fixture_upsert.py`): αναβολές ενημερώνουν τη γραμμή in-place (ίδιο id — διατηρούνται predictions/tracking) αντί να μένουν stale "pending"
 - Live bookmaker odds injection στο `compute_predictions.py` — de-vig fair probs για EV/value-gate + UI comparison (**όχι** πλέον model features· ήταν features #1/#2 πριν το 2026-06-17 cutoff)
 - Injury adjustment (serve-time, rule-based, ±14pp max) με shared in-process TTL cache
@@ -439,6 +439,95 @@ Exit code **4** (`QuotaExhausted`). Πριν, τρία υγιή βήματα έ�
 | 2 | **5 σύλλογοι εκτός ClubElo** (`Ararat-Armenia`, `Inter Club d'Escaldes`, `OFI Crete`, `PAEEK`, `Torreense`) — δεν υπάρχουν upstream, κανένα alias δεν τους φτιάχνει | 🟡 Ανοιχτό (ανυπέρβλητο) |
 | 3 | **Το παλιό κλειδί στο git history** — έφυγε από τα αρχεία, μένει στο `1d88897`· το κλειδί περιστράφηκε, οπότε είναι ακίνδυνο, αλλά ο καθαρισμός θέλει force-push σε δημόσιο repo | 🟡 Ανοιχτό (μετριασμένο) |
 | 4 | **Ακρίβεια & ρεκόρ δελτίων μετά τις αλλαγές** — 6 σκέλη και 10 αγώνες έχουν κριθεί από τότε· θέλει 2-3 βδομάδες | 🟡 Εκκρεμεί μέτρηση |
+
+---
+
+## 🟠 Phase 8 — Ο έλεγχος του μοντέλου (2026-09-03)
+
+Ξεκίνησε από μία ερώτηση — «μπορούμε να ανεβάσουμε τα ποσοστά στις ισοπαλίες;»
+— και η απάντηση ήταν μέτρηση, όχι γνώμη: **όχι ουσιαστικά**. Στις 2.984 test
+γραμμές με πραγματική γραμμή Pinnacle, το draw AUC της αγοράς είναι 0,5690 και
+το δικό μας 0,5645 — **στο 97% της ικανότητας ολόκληρης της sharp αγοράς**. Το
+ίδιο το Pinnacle βάζει ισοπαλία με argmax 1 φορά στις 2.984. Πλήρες σκεπτικό στο
+`docs/MODEL_AUDIT_2026-09-03.md`.
+
+Αυτό που βρήκε ο έλεγχος ήταν κάτι άλλο: **μία παραδοχή, εφτά φορές.** Κάθε μία
+ήταν σωστή τον Ιούνιο του 2026 με έξι πρωταθλήματα Αυγούστου–Μαΐου, και καμία
+δεν ξανακοιτάχτηκε στα 27. Καμία δεν έβγαλε ποτέ exception.
+
+### ✅ 8.1 · Ο benchmark μετρούσε το μοντέλο με τον εαυτό του
+
+Το `features.py` γεμίζει τα `market_*_prob` με τις **δικές μας Poisson** όταν
+λείπει το Pinnacle — σωστό όσο οι αποδόσεις ήταν features #1 και #2, νεκρό μετά
+το cutoff της 17/6, **και γι' αυτό αόρατο**. Το `market_was_imputed` έτρεχε ένα
+στάδιο αργότερα και μετρούσε 50 imputed γραμμές αντί για 4.443. Το «beat the
+bookmaker» τύπωνε νίκη 1,0246 vs 1,0549· η αλήθεια είναι **ήττα** 1,0047 vs
+0,9835.
+
+### ✅ 8.2 · Το 25% των δεδομένων χωρίς ταυτότητα πρωταθλήματος
+
+Championship, LeagueOne, Eredivisie, PrimeiraLiga — 24.955 γραμμές με όλα τα
+league dummies μηδέν, δηλαδή ίδια κωδικοποίηση με ένα ματς CL. Και οι τρεις
+guards διάβαζαν το `ONE_HOT_LEAGUES` προς τη **λάθος κατεύθυνση**.
+
+### ✅ 8.3 · Το εβδομαδιαίο retrain δεν μάθαινε τίποτα
+
+Δώδεκα retrains, **+54 γραμμές training** συνολικά, ενώ το test set μεγάλωσε
+κατά 246. Τα cutoffs ήταν σταθερές· τώρα κυλούν με τη σεζόν, με πύλη ωριμότητας
+5 μηνών. Δηλωμένο ρητά: το three-way split αφήνει τα δέντρα **2 σεζόν πίσω εκ
+κατασκευής**, και η παλαιότητα μετρήθηκε ότι δεν ήταν το πρόβλημα.
+
+### ✅ 8.4 · Calendar-year σεζόν
+
+Δέκα πρωταθλήματα (Βραζιλία ×2, Σουηδία ×2, Νορβηγία, Φινλανδία, Ιρλανδία,
+Ισλανδία, Λετονία, Καζακστάν) έπαιρναν Αύγουστο. **27–34%** των Poisson
+δεδομένων του Αυγούστου έρχονταν από άλλη σεζόν. Ο μήνας έναρξης **συνάγεται
+από το ημερολόγιο κάθε πρωταθλήματος** — όχι λίστα εξαιρέσεων, γιατί λίστα είναι
+ακριβώς ό,τι σάπισε τις τέσσερις προηγούμενες φορές.
+
+### ✅ 8.5 · Ευρωπαϊκές: τιμολόγηση με ClubElo — **+4,8 μονάδες**
+
+Το δικό μας Elo σε διασυλλογικούς αγώνες είναι **χειρότερο από το «πάντα
+γηπεδούχος»** (44,3% vs 50,7%, n=296). Το `european_blend.py` παίρνει το
+home:away split από logistic πάνω στο ClubElo και **κρατά τη δική μας p_draw**
+(του ClubElo το draw AUC είναι 0,399 — χειρότερο από τυχαίο). Held-out σε 373
+αγώνες: 48,26%/1,0590 → 53,08%/0,9849. Europa League **39,2% → 55,4%**.
+
+### ✅ 8.6 · Δύο serving paths, δύο διαφορετικά μεγέθη
+
+Το `predict_match()` δεν έκανε ούτε coherence ούτε anchoring — 5,3% των
+αποθηκευμένων γραμμών με mean p_draw 0,296 έναντι 0,254, ενώ το **83%** από
+αυτές είχαν διαθέσιμη γραμμή γραφείου. Πλέον καλούν κοινή
+`finalise_probabilities()`.
+
+### ✅ 8.7 · Δελτία: τα σκέλη 1×2 θέλουν πραγματική γραμμή
+
+Σε 532 κριμένα σκέλη, όσα περιείχαν ισοπαλία **χωρίς** τιμή δήλωναν 0,784 και
+έβγαλαν 0,661 (ROI −12,8%)· τα ίδια **με** τιμή ήταν στο μηδέν. Δεν είναι
+βαθμονόμηση — είναι **επιλογή**: η σκάλα κατατάσσει με πιθανότητα και οι αγώνες
+χωρίς αποδόσεις είναι οι εξωτικοί.
+
+### ✅ 8.8 · Αφαιρέθηκαν / αντικαταστάθηκαν
+
+- **Draw specialist → α=0.** Κατατάσσει τις ισοπαλίες **χειρότερα** από το
+  μοντέλο που υποτίθεται βοηθά (AUC 0,5280 vs 0,5402). Επέζησε σε 0,20 → 0,35 →
+  0,45 επειδή κάθε νέο κριτήριο έβρισκε επίπεδο βέλτιστο μέσα στον θόρυβο. Πλέον
+  **one-standard-error rule**.
+- **Second-stage recalibration → διαγράφηκε.** Έκανε fit σε anchored στήλες και
+  διόρθωνε unanchored. Έχανε και μόνο του (O/U 0,6853 vs 0,6831).
+- **Matrix/Dirichlet scaling** αντί για one-vs-rest isotonic: −0,005 log-loss.
+- **Aliases ClubElo με τόνους**: η Ατλέτικο Μαδρίτης ήταν στο 1309 (floor) ενώ
+  υπήρχε στον πίνακα με 1881.
+
+### 🔜 8.9 · Τι μένει
+
+| # | Θέμα | Κατάσταση |
+|---|---|---|
+| 1 | **Ιστορικό EL/ECL** από API-Football — ο έντιμος τρόπος αντί για το ClubElo υποκατάστατο. Θέλει νέα league codes, one-hot και retrain· τα ματς έχουν τη μία πλευρά με default features | 🟡 Ανοιχτό (σχεδιαστική απόφαση) |
+| 2 | **Cross-fitted calibration** — κερδίζει μια σεζόν και 0,0075 log-loss, με 5× κόστος retrain | 🟡 Ανοιχτό (μετρημένο, δεν πάρθηκε) |
+| 3 | **BTTS κατώφλι** — 0,52 με macro-F1 δίνει ισορροπία GG/NG· 0,50 δίνει +2,1 μονάδες ακρίβεια αλλά καταρρέει το NG recall στο 6%. Προϊοντική απόφαση | 🟡 Ανοιχτό |
+| 4 | **Ensemble** — ένα σκέτο XGBoost αποδίδει όσο το τετραμελές vote· 3× ταχύτερο retrain, μηδέν διαφορά. Να ξαναμετρηθεί μετά το 8.2 | 🟡 Ανοιχτό |
+| 5 | **Odds API budget** — η προβολή λέει 29.688/μήνα σε όριο 20.000, αλλά περιλαμβάνει τα σημερινά force-recomputes. Θέλει καθαρό 24ωρο | 🟡 Εκκρεμεί μέτρηση |
 
 ---
 

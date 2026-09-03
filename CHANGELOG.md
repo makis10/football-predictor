@@ -4,6 +4,134 @@ Notable changes to Football Predictor. Format loosely follows
 [Keep a Changelog](https://keepachangelog.com/); dates are `YYYY-MM-DD`.
 History before this file was introduced lives in `git log`.
 
+## 2026-09-03
+
+A model audit (`docs/MODEL_AUDIT_2026-09-03.md`) asked one question — can the
+draw hit rate go up — and answered it with a measurement rather than an opinion:
+no, not meaningfully. On the 2,984 test rows carrying a Pinnacle line the sharp
+market's own draw AUC is 0.5690 and ours is 0.5645. We are at 97% of what the
+whole market manages, Pinnacle's argmax picks a draw once in 2,984 matches, and
+every threshold or value rule we tried lowers accuracy or loses money.
+
+What the audit found instead was a set of assumptions that were correct in June
+2026, when this had six August-season leagues with full Pinnacle coverage, and
+were never revisited at 27. None of them ever raised an error.
+
+### Fixed
+
+- **The benchmark was scoring the model against itself.** `build_features`
+  substitutes our own Poisson probabilities when a Pinnacle line is missing —
+  right while market columns were features #1 and #2, dead weight after the
+  2026-06-17 market-independence cutoff removed them from every model, and
+  therefore invisible. It kept feeding the one consumer left. The
+  `market_was_imputed` guard was computed one stage too late, downstream of the
+  fill, and reported 50 imputed rows out of 7,427 against a real 4,443. So
+  "beat the bookmaker or no edge" printed a win of 1.0246 against 1.0549 while
+  the truth on rows with a genuine price is a loss: 1.0047 against 0.9835. The
+  flag is now recorded before the fallback, and with no flag present the report
+  prints no baseline rather than a flattering one.
+
+- **A quarter of the training set had no league identity.** Championship,
+  LeagueOne, Eredivisie and PrimeiraLiga were fitted on from the first commit
+  and never one-hot encoded — 24,955 rows reaching the model as the same
+  nameless league a Champions League tie gets, so a 27.0%-draw division was
+  indistinguishable from a 23.6% one. Every existing guard read
+  `ONE_HOT_LEAGUES` and checked it against another table; a league absent from
+  the list is never iterated. The new test checks the direction that broke.
+
+- **The split boundaries were literals, and the weekly retrain had stopped
+  learning.** Twelve consecutive retrains added 54 training rows between them
+  (`training_runs` 35→46) while the test set grew by 246 — two seasons invisible
+  to the trees, ten minutes of compute every Monday refitting the same data and
+  reporting seed noise as a change in accuracy. They now derive from the season
+  with a five-month maturity gate, so the report is never handed a 390-row test
+  set. Stated plainly in the comments: a three-way split leaves the trees two
+  seasons behind whatever we do, and recency was measured not to be the problem.
+
+- **Spring-autumn leagues were told it was August.** Sweden, Norway, Finland,
+  Ireland, Iceland, Latvia, Kazakhstan and both Brazilian divisions play March
+  to November, so the shared August boundary landed mid-campaign: the Poisson
+  state reset, Pi-Ratings took the season decay and the league table emptied
+  with a third of the season left. 27-34% of the evidence behind an August-bucket
+  Poisson estimate for those leagues came from a different campaign, against 0%
+  for an autumn-spring league, and September was labelled week 4 of a new season
+  when it is week 37 of the run-in. The start month is now inferred from each
+  league's own fixture calendar — not a list of exceptions, because a list is
+  what rotted the last four times a league was added. Pi-Rating decay is tracked
+  per league accordingly.
+
+- **Serving never merged xG.** All eight xG features were NaN on 100% of served
+  fixtures and filled with the training median, while 43% of the rows the model
+  was fitted on carried a real value. Over 969 replayed matches that was about
+  70% of the whole train/serve divergence: argmax disagreement 4.33% down to
+  1.34%. Parity, not performance — the accuracy difference was inside its own
+  standard error.
+
+- **Two serving paths, two different quantities.** `predict_match()`, which
+  answers a cache miss on `GET /predictions/{id}`, applied neither the coherence
+  projection nor market anchoring and carried a comment asserting the opposite
+  directive from the batch path — while writing to the same table. 5.3% of
+  stored predictions had mean p_draw 0.296 against 0.254 and picked a draw
+  outright 14.9% of the time against 0.4%, on rows where 83% had a usable
+  bookmaker line that was simply never applied. Both paths now call one
+  `finalise_probabilities()`, and the router reads the latest `odds_history` row
+  so it anchors identically at no API cost.
+
+- **Atlético Madrid was rated 1309.** The ClubElo alias table said "Atletico"
+  and ClubElo writes "Atlético"; matched literally, the entry had never fired,
+  so a club sitting in the table at 1881 was dropping to the uncovered floor.
+  Same for AZ Alkmaar, Slovan Bratislava and OFI Crete. Alias matching now folds
+  accents and case.
+
+### Changed
+
+- **UEFA ties are priced off ClubElo.** On cross-league ties our own Elo is
+  worse than backing the home side — as a picker, ClubElo+80 home advantage
+  60.5%, always-home 50.7%, our served argmax 49.3%, our Elo+60 44.3% (n=296).
+  `european_blend.py` takes the home:away split from a logistic on the ClubElo
+  difference and keeps OUR P(draw), because ClubElo's own draw AUC is 0.399 —
+  worse than random, since one strength gap cannot express "these two cancel
+  out". Held out on 373 ties: 48.26%/1.0590 → 53.08%/0.9849, paired bootstrap
+  +4.81pp accuracy, 95% CI [+0.54, +9.12]. Europa League 39.2% → 55.4%.
+
+- **The draw specialist is switched off (α=0).** It ranks draws worse than the
+  result model it was built to help and correlates 0.787 with it. It survived at
+  0.20, then 0.35, then 0.45 because each successive tuning objective found a
+  flat optimum inside the noise — the last sweep spanned 0.08 of one standard
+  error. Selection is now a one-standard-error rule, which prefers the simpler
+  model unless the specialist clears the noise floor.
+
+- **Matrix (Dirichlet) scaling replaces one-vs-rest isotonic** on the result
+  model. OVR is not a 3-class method: each outcome is fitted blind to the others
+  and the renormalisation afterwards is unconstrained. Log-loss 1.0174 → 1.0126
+  (all rows) and 1.0047 → 1.0022 (rows with a price). Temperature scaling is the
+  control and changes nothing, so the gain is from letting the outcomes correct
+  each other. The legacy artefact is still readable, so a process that starts
+  before the next retrain keeps working.
+
+- **Ticket legs derived from the 1x2 require a real bookmaker line.** Over 532
+  settled legs, draw-carrying legs on unpriced fixtures stated 0.784 and returned
+  0.661 (ROI −12.8%) while the same legs on priced fixtures sat at zero. Not a
+  calibration failure: the ladder ranks by probability and the unpriced fixtures
+  are systematically the exotic ones. Goals and BTTS are unaffected.
+
+### Removed
+
+- **The second-stage rolling recalibration.** It fitted one quantity and
+  corrected another — `recalibrate.py` read the served columns, market-anchored
+  since 496c842, while inference applied the result before anchoring. Two files
+  that never mention each other, coupled through a database column whose meaning
+  changed under one of them. It was also losing on its own terms: Over/Under
+  log-loss 0.6853 with it against 0.6831 without. Restoring it needs the
+  post-blend pre-anchor probability to be stored, not reconstructed.
+
+### Measured dead ends
+
+Recorded so nobody spends a week on them: extending the training window, every
+time-decay half-life from one year to none, and dropping pre-2015 rows all land
+inside the noise; league draw rates do not persist across seasons (corr 0.189,
+against 0.698 for goals); no draw decision rule beats argmax.
+
 ## 2026-09-02
 
 ### Added

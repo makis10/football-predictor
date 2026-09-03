@@ -27,7 +27,7 @@ Built with **XGBoost + Pi-Ratings + Poisson expected-goals** (clubs) and a **tal
 6. [Quick Start — Docker](#quick-start--docker)
 7. [Environment Variables](#environment-variables)
 8. [Downloading Data](#downloading-data)
-9. [Training the Model](#training-the-model)
+9. [Training the Model](#training-the-model) · [Draws](#draws) · [Cross-league ties](#cross-league-ties-cl--el--ecl)
 10. [National Teams (International)](#national-teams-international)
 11. [Seeding the Database](#seeding-the-database)
 12. [Live Fixtures & Daily Automation](#live-fixtures--daily-automation)
@@ -82,7 +82,7 @@ Cloudflare tunnel (aitipster.net)
 
 - **Frontend** — Next.js 16 App Router, dark-themed Tailwind UI. Server components fetch data via internal `BACKEND_URL`; a `/api/proxy/*` catch-all route proxies browser-side calls so visitors only need one public URL. All times are rendered in **Europe/Athens** timezone (stored UTC in DB, converted at display time) so SSR and browser output match identically regardless of visitor location.
 - **Backend** — FastAPI REST API. Predictions are computed on-demand by the ML layer and cached in PostgreSQL. The `/predictions/{id}/analysis` endpoint fetches live bookmaker odds, injury data, and generates a Groq AI analysis in Greek. The `/predictions/{id}/postmortem` endpoint generates an AI post-mortem using real match events (goals/cards/penalties with minute+player) fetched from API-Football. The `/chat` endpoint powers a context-aware AI chatbot with full conversation history.
-- **ML** — Four XGBoost models (result, goals, draw specialist, BTTS classifier) trained on **134 features**, with Pi-Ratings and a Poisson expected-goals model as key feature sources. Draw probabilities are blended with a dedicated draw-specialist classifier (auto-tuned α=0.45 via Brier score sweep). BTTS predictions come from a dedicated XGBClassifier with isotonic calibration and an auto-tuned decision threshold (macro F1 sweep on calibration set; currently 0.52), replacing the previous Poisson-only estimate. Position-aware injury/suspension adjustments applied at inference time using API-Football data. Model files (`.pkl`) are mounted into the backend container.
+- **ML** — Four XGBoost models (result, goals, draw specialist, BTTS classifier) trained on **134 features**, with Pi-Ratings and a Poisson expected-goals model as key feature sources. Draw probabilities may be blended with a dedicated draw-specialist classifier, but the weight is currently **α=0**: on held-out data it ranks draws worse than the result model it was meant to help (AUC 0.5280 vs 0.5402). The weight is re-tuned every retrain by a one-standard-error rule on three-way log-loss. BTTS predictions come from a dedicated XGBClassifier with isotonic calibration and an auto-tuned decision threshold (macro F1 sweep on calibration set; currently 0.52), replacing the previous Poisson-only estimate. Position-aware injury/suspension adjustments applied at inference time using API-Football data. Model files (`.pkl`) are mounted into the backend container.
 - **Database** — PostgreSQL 16. Schema managed by Alembic migrations (0001–0014). Kick-off times stored as UTC `TIME` columns; bookmaker odds stored at prediction time for ROI/EV tracking; `odds_history` table stores snapshots every 3h for odds movement arrows (↑/↓).
 - **Redis** — Caching layer (128MB, LRU eviction). Replaces all in-process Python dicts. Keys: `injuries:{match_id}` 30min, `squad_positions:{team_id}` 24h, `analysis:{fingerprint}` 30min, `postmortem:{match_id}` 24h, `stats:global` 6h, `league_odds:{league}` 30min, `match_events:{fixture_id}` 24h, `chat:context` 30min. Graceful fallback to no-op if Redis unavailable.
 - **Tunnel** — Cloudflare Tunnel serving the custom domain aitipster.net, managed by macOS launchd (auto-restarts on crash/reboot).
@@ -205,7 +205,7 @@ backend/data/models/calibrator_result.pkl   # Isotonic calibrator for result mod
 backend/data/models/calibrator_goals.pkl    # Isotonic calibrator for goals model
 backend/data/models/calibrator_draw_clf.pkl # Isotonic calibrator for draw specialist
 backend/data/models/calibrator_btts_clf.pkl # Isotonic calibrator for BTTS classifier
-backend/data/models/draw_alpha.json         # Auto-tuned draw-blend weight (α=0.45)
+backend/data/models/draw_alpha.json         # Auto-tuned draw-blend weight (currently α=0.00)
 backend/data/models/btts_threshold.json     # Auto-tuned BTTS decision threshold (macro F1 sweep; currently 0.52)
 ```
 
@@ -385,19 +385,66 @@ python -m backend.app.ml.train
 6. Combined with **balanced class weights** (draws get ~1.8× more weight than home wins)
 7. Three-way time split: **XGBoost train** ≤ 2024-07-01, **isotonic calibration** 2024-07-01 → 2025-07-01, **test** 2025-07-01 → 2026-05-01 (2025/26 YTD)
 8. Trains four XGBoost classifiers using `tree_method='hist'` and `nthread=-1` (all CPU cores)
-9. Auto-tunes draw-blend α via Brier score sweep (0.05–0.45) on the calibration set; saves best value to `draw_alpha.json` (currently α=0.45)
+9. Auto-tunes draw-blend α on the calibration set by a **one-standard-error rule** on three-way log-loss (0.00–0.45), saving to `draw_alpha.json` (currently **α=0.00**). The rule prefers the simpler model unless the specialist clears the noise floor; the argmin kept picking a weight whose whole sweep spanned 0.08 of one standard error
 10. Auto-tunes BTTS decision threshold via macro F1 sweep (0.30–0.75) on the calibration set; saves best value to `btts_threshold.json` (currently 0.52) — balances GG and NG recall equally
 11. Saves all models and calibrators to `backend/data/models/`
 
-### Current accuracy (test set — 2025/26 season YTD)
+### Current accuracy (held-out test season, retrain of 2026-09-03)
 
-| Model                  | Accuracy  | Baseline (random) | Notes                                                    |
-| ---------------------- | --------- | ----------------- | -------------------------------------------------------- |
-| Result (W/D/L)         | **53.1%** | ~46%              | Calibrated; draw recall ~29%                             |
-| Goals (O/U 2.5)        | **54.7%** | ~50%              | xG + time decay (market-independent)                     |
-| BTTS (GG/NG)           | **52.9%** | ~50%              | Dedicated XGBClassifier + isotonic calibration + macro F1 threshold (0.52) |
+| Model                  | Accuracy  | Baseline    | Notes                                                    |
+| ---------------------- | --------- | ----------- | -------------------------------------------------------- |
+| Result (W/D/L)         | **50.1%** | 43.8% always-home | log-loss 1.0128; **de-vigged Pinnacle scores 0.9835 on the same rows** |
+| Goals (O/U 2.5)        | **55.5%** | ~50%        | xG + time decay (market-independent)                     |
+| BTTS (GG/NG)           | **54.4%** | ~50%        | Dedicated XGBClassifier + isotonic calibration + macro-F1 threshold (0.52) |
 
-> Test set is 2025/26 YTD (from 2025-07-01); calibration set is 2024/25 season (used for isotonic calibrators + draw α tuning + BTTS threshold sweep).
+> n = 7,037 matches; 2,984 of them carry a real Pinnacle line and the model's
+> accuracy there is 51.1% (log-loss 1.0031). Draw recall is 15% — see
+> [Draws](#draws) for why that is close to the ceiling rather than a defect.
+>
+> **These numbers are lower than the ones this table used to show (53.1% /
+> 54.7% / 52.9%), and the model has not got worse.** The old figures were
+> hand-written at the first commit and never regenerated, and the "we beat the
+> bookmaker" line beside them was scoring the model against its own Poisson
+> fallback on 59% of the rows it counted. The bookmaker comparison above is now
+> restricted to rows with a genuine price, and it says we are 0.029 log-loss
+> BEHIND. Full account in [docs/MODEL_AUDIT_2026-09-03.md](docs/MODEL_AUDIT_2026-09-03.md).
+
+### Draws
+
+Draws are not a solved problem waiting for a better model — they are close to
+irreducible, and it is worth stating that plainly before anyone spends a month
+on them. On the 2,984 test rows with a Pinnacle line, draw AUC is:
+
+| | AUC |
+|---|---|
+| de-vigged Pinnacle (the sharp market) | 0.5690 |
+| ours, anchored | 0.5645 |
+| ours, unanchored | 0.5402 |
+| the dedicated draw specialist | 0.5280 |
+
+We are at 97% of what the entire sharp market manages. Pinnacle's own argmax
+picks a draw once in 2,984 matches; every "predict a draw when p ≥ t" rule
+lowers overall accuracy, and every draw value rule loses money at Pinnacle's own
+prices (best case −2.7% ROI over 2,592 bets). The draw specialist blend is
+therefore weighted **α = 0** — it ranks draws worse than the result model it was
+built to help, and the tuning that kept resurrecting it now uses a
+one-standard-error rule (`train.py`).
+
+What is worth improving is the *calibration* of the draw-containing markets
+(1X / X2), because the accumulator ladder is priced off them. That is why
+result-market ticket legs now require a real bookmaker line: on unpriced
+fixtures those legs stated 0.784 and returned 0.661.
+
+### Cross-league ties (CL / EL / ECL)
+
+The model has never been fitted on a cross-league match, and pooled Elo cannot
+compare clubs from leagues that barely play each other. On 296 settled UEFA
+ties, picking the higher of our own Elo ratings scores **44.3%** — worse than
+always backing the home side (50.7%). `backend/app/ml/european_blend.py` takes
+the home:away split from ClubElo instead and keeps our own P(draw), which lifts
+held-out accuracy from 48.3% to 53.1% (+4.8pp, 95% CI [+0.5, +9.1]) and
+log-loss from 1.0590 to 0.9849. The honest fix is a real EL/ECL match history;
+this is the cheap stand-in until that exists.
 > The table above is a snapshot — live metrics for every weekly retrain are on `/admin/training`, and realised accuracy/ROI/CLV on `/stats`. A second-stage rolling recalibration (`scripts/recalibrate.py`, monthly + after each retrain) corrects drift against the last 365 days of stored out-of-sample predictions.
 
 > **Training improvements (cumulative):**
@@ -417,7 +464,7 @@ python -m backend.app.ml.train
 > - **Dixon-Coles ρ correction** on Poisson probabilities: low-score outcomes (0-0, 1-0, 0-1, 1-1) corrected with τ(i,j) factor (ρ=−0.13). Already baked into `poisson_btts`, `poisson_home_win`, `poisson_draw`, etc.
 > - **BTTS EV in batch predictions**: `_compute_ev()` now includes GG/NG markets in `suggested_market` / `ev_score` — was previously missing from `compute_predictions.py`.
 > - **Dedicated BTTS classifier**: dedicated `XGBClassifier` (40 goal-oriented features) with isotonic calibration replaces the previous Poisson-only BTTS estimate. Accuracy: 52.4% vs 50.1% Poisson baseline.
-> - **Draw specialist enabled + auto-tuned α**: draw-specialist binary classifier is now blended into result probabilities. Blend weight α is auto-tuned each training run via Brier score sweep on the calibration set (currently α=0.45). Previous value: hardcoded 0.20.
+> - **Draw specialist — measured useless, α=0 (2026-09-03)**: on held-out data it ranks draws WORSE than the result model it was meant to help (AUC 0.5280 vs 0.5402) and correlates 0.787 with it. It survived at 0.20, then 0.35, then 0.45 because three successive tuning objectives (draw Brier, then three-way log-loss argmin) each found a flat optimum inside the noise. Selection is now a one-standard-error rule, which picks 0.
 > - **BTTS macro F1 threshold sweep**: BTTS decision threshold auto-tuned each training run by sweeping 0.30–0.75 and maximising macro F1 (mean of GG F1 and NG F1) on the calibration set. Saves result to `btts_threshold.json` (currently 0.52). Previous: fixed 0.50, then briefly fixed 0.67 (NG-only F1, collapsed GG recall to 2%).
 > - **Separate GOALS_FEATURE_COLS**: draw-balance features (6) are excluded from the goals model feature set — they add noise to O/U prediction and caused a regression when shared.
 >

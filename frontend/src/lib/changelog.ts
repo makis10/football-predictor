@@ -25,6 +25,58 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: "2026-09-03-european-ties-clubelo",
+    date: "2026-09-03",
+    tag: "fix",
+    title: {
+      en: "European ties were priced by the wrong yardstick",
+      el: "Οι ευρωπαϊκές τιμολογούνταν με λάθος μέτρο",
+    },
+    body: {
+      en: "Our internal strength rating is built from results inside each league, and leagues barely play one another — so on a Champions League or Europa League tie it was close to meaningless. Checked against 296 finished European matches, picking the side our own rating preferred was right 44.3% of the time, which is worse than simply backing the home team (50.7%). European ties now take the home/away balance from ClubElo, a rating maintained across every UEFA country on one scale, while keeping our own draw probability. On 373 matches held back from the fitting, accuracy went from 48.3% to 53.1% — in the Europa League, from 39.2% to 55.4%.",
+      el: "Η εσωτερική μας βαθμολογία ισχύος χτίζεται από αποτελέσματα μέσα σε κάθε πρωτάθλημα, και τα πρωταθλήματα σχεδόν δεν παίζουν μεταξύ τους — οπότε σε έναν αγώνα Champions ή Europa League ήταν σχεδόν χωρίς νόημα. Σε 296 κριμένους ευρωπαϊκούς αγώνες, η ομάδα που προτιμούσε η δική μας βαθμολογία κέρδιζε στο 44,3%, δηλαδή χειρότερα από το να ποντάρεις απλώς στον γηπεδούχο (50,7%). Οι ευρωπαϊκές παίρνουν πλέον την ισορροπία γηπεδούχου/φιλοξενούμενου από το ClubElo, που συντηρείται σε μία κλίμακα για όλες τις χώρες της UEFA, κρατώντας τη δική μας πιθανότητα ισοπαλίας. Σε 373 αγώνες που κρατήθηκαν εκτός, η ακρίβεια πήγε από 48,3% σε 53,1% — στο Europa League από 39,2% σε 55,4%.",
+    },
+  },
+  {
+    id: "2026-09-03-draws-ceiling",
+    date: "2026-09-03",
+    tag: "improvement",
+    title: {
+      en: "What we found when we went looking for better draw predictions",
+      el: "Τι βρήκαμε ψάχνοντας καλύτερες προβλέψεις ισοπαλίας",
+    },
+    body: {
+      en: "Draws are the outcome everyone wants predicted and the one nobody predicts well — including the professional market. Across the matches we can check against a sharp bookmaker's own prices, their ability to rank draws scores 0.569 where a coin flip is 0.500; ours scores 0.565. We are at 97% of what the entire market manages, so there is very little room left, and we would rather say so than sell you a number we cannot back. We also switched off a dedicated draw model that had been running for months: measured properly, it ranked draws worse than the main model it was supposed to help.",
+      el: "Οι ισοπαλίες είναι το αποτέλεσμα που όλοι θέλουν να προβλέπεται και κανείς δεν προβλέπει καλά — ούτε η επαγγελματική αγορά. Στους αγώνες που μπορούμε να ελέγξουμε απέναντι στις τιμές ενός sharp γραφείου, η ικανότητά τους να ξεχωρίζουν ισοπαλίες βαθμολογείται 0,569 εκεί που το κορώνα-γράμματα δίνει 0,500· η δική μας 0,565. Είμαστε στο 97% όσων καταφέρνει ολόκληρη η αγορά, άρα το περιθώριο είναι ελάχιστο — και προτιμάμε να το πούμε παρά να σου πουλήσουμε νούμερο που δεν στηρίζεται. Απενεργοποιήσαμε επίσης ένα ειδικό μοντέλο ισοπαλιών που έτρεχε μήνες: μετρημένο σωστά, ξεχώριζε τις ισοπαλίες χειρότερα από το κύριο μοντέλο που υποτίθεται βοηθούσε.",
+    },
+  },
+  {
+    id: "2026-09-03-ticket-legs-need-a-real-price",
+    date: "2026-09-03",
+    tag: "fix",
+    title: {
+      en: "Accumulator legs now need a real bookmaker price",
+      el: "Τα σκέλη των δελτίων θέλουν πλέον πραγματική τιμή γραφείου",
+    },
+    body: {
+      en: "When a fixture carries no bookmaker line, our percentages are entirely our own — fine for the leagues we know well, but the ready-made slips rank legs by probability, and the unpriced fixtures are systematically the obscure ones. Across 532 graded legs, the ones containing a draw on unpriced matches claimed 78% and landed 66%; the same bets on priced matches were accurate. Those legs are no longer offered. Goals and both-teams-to-score are unaffected — they hold up with or without a market.",
+      el: "Όταν ένας αγώνας δεν έχει τιμή γραφείου, τα ποσοστά είναι αποκλειστικά δικά μας — εντάξει για τα πρωταθλήματα που ξέρουμε καλά, αλλά τα έτοιμα δελτία κατατάσσουν τα σκέλη με βάση την πιθανότητα, και οι αγώνες χωρίς τιμή είναι συστηματικά οι δυσεύρετοι. Σε 532 κριμένα σκέλη, όσα περιείχαν ισοπαλία σε αγώνες χωρίς τιμή δήλωναν 78% και έβγαιναν 66%· τα ίδια σε αγώνες με τιμή ήταν σωστά. Αυτά τα σκέλη δεν προσφέρονται πλέον. Γκολ και BTTS δεν επηρεάζονται — στέκουν με ή χωρίς αγορά.",
+    },
+  },
+  {
+    id: "2026-09-03-honest-accuracy-numbers",
+    date: "2026-09-03",
+    tag: "fix",
+    title: {
+      en: "Our published accuracy was measured against the wrong thing",
+      el: "Η δημοσιευμένη μας ακρίβεια μετριόταν με λάθος μέτρο",
+    },
+    body: {
+      en: "Our internal benchmark compared the model against bookmaker prices — except that on the 59% of matches with no price stored, it silently substituted our own estimate and compared us to ourselves. It reported that we beat the market. Restricted to matches carrying a genuine price, we do not: we are behind by a small but real margin. The published result accuracy is now 50.1% rather than the 53.1% shown before, which was hand-written a year ago and never updated. The model did not get worse; the measurement got honest.",
+      el: "Ο εσωτερικός μας δείκτης σύγκρινε το μοντέλο με τις τιμές των γραφείων — μόνο που στο 59% των αγώνων χωρίς αποθηκευμένη τιμή έβαζε σιωπηλά τη δική μας εκτίμηση και μας σύγκρινε με τον εαυτό μας. Ανέφερε ότι κερδίζουμε την αγορά. Περιορισμένο στους αγώνες με πραγματική τιμή, δεν την κερδίζουμε: υστερούμε με μικρή αλλά υπαρκτή διαφορά. Η δημοσιευμένη ακρίβεια αποτελέσματος είναι πλέον 50,1% αντί για το 53,1% που έδειχνε πριν, γραμμένο στο χέρι πριν από έναν χρόνο και ποτέ ενημερωμένο. Το μοντέλο δεν χειροτέρεψε — η μέτρηση έγινε έντιμη.",
+    },
+  },
+  {
     id: "2026-09-01-market-anchored-probabilities",
     date: "2026-09-01",
     tag: "improvement",
