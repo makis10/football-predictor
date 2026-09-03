@@ -11,6 +11,8 @@ production because nothing fails loudly enough to notice.
 """
 from __future__ import annotations
 
+import glob
+import os
 import re
 
 import pytest
@@ -45,6 +47,40 @@ def test_every_predicted_league_has_an_api_football_id():
     assert not missing, f"leagues with no API-Football id: {missing}"
 
 
+def test_every_fitted_league_is_one_hot_encoded():
+    """The reverse direction — the one that was actually broken.
+
+    Every other guard here reads ONE_HOT_LEAGUES and checks it against some
+    other table: has an API id, has a country, has training rows. All of them
+    pass while a league is missing from ONE_HOT_LEAGUES entirely, because a
+    league that is not in the list is not iterated.
+
+    2026-09-03: Championship, LeagueOne, Eredivisie and PrimeiraLiga were fitted
+    on from the first commit and never encoded — 24,955 rows, 25.2% of the
+    training set, reaching the model with every dummy zero, i.e. as the same
+    "unnamed league" a Champions League tie gets. Nothing failed; the model just
+    could not tell a 27.0%-draw division from a 23.6% one.
+
+    Reads the CSV filenames rather than the parsed frame: cheap enough for the
+    offline suite, and a league whose files exist is a league that will be
+    fitted on the next retrain — which is exactly when this must fail.
+    """
+    raw_dir = os.path.join(os.path.dirname(__file__), "..", "data", "raw")
+    on_disk = {os.path.basename(p).split("_")[0]
+               for p in glob.glob(os.path.join(raw_dir, "*.csv"))}
+    fitted = on_disk - set(HISTORY_ONLY_LEAGUES) - {"international"}
+    if not fitted:
+        pytest.skip("no training CSVs on disk")
+
+    missing = sorted(fitted - set(ONE_HOT_LEAGUES))
+    assert not missing, (
+        f"{len(missing)} league(s) are trained on but have no one-hot column, so "
+        f"the model cannot tell them apart: {missing}. Add them to "
+        f"ONE_HOT_LEAGUES (and retrain), or to HISTORY_ONLY_LEAGUES if they are "
+        f"context only."
+    )
+
+
 def test_stats_fetcher_uses_the_shared_league_id_map():
     """The fetcher must not keep a private copy of the league→id mapping."""
     from scripts.fetch_club_team_stats import LEAGUE_IDS
@@ -53,6 +89,85 @@ def test_stats_fetcher_uses_the_shared_league_id_map():
         "fetch_club_team_stats.LEAGUE_IDS has drifted from "
         "odds_analysis_service._LEAGUE_API_SPORTS_ID"
     )
+
+
+def test_the_training_split_cannot_go_stale():
+    """The trees must not be fitted on a window that stopped moving.
+
+    2026-09-03: CAL_CUTOFF had been the literal 2024-07-01 since the first
+    commit. Twelve consecutive weekly retrains added 54 training rows between
+    them (training_runs id 35→46: n_train 84,411 → 84,465) while the test set
+    grew by 246 — every match played in two full seasons was invisible to the
+    model, and the 10-minute Monday retrain was refitting the same data and
+    reporting the seed noise as a change in accuracy.
+
+    Nothing could have failed here: a stale date is valid code. So this asserts
+    against the clock instead.
+    """
+    import pandas as pd
+
+    from backend.app.ml.train import CAL_CUTOFF, TEST_CUTOFF, TRAIN_CUTOFF
+
+    assert CAL_CUTOFF < TRAIN_CUTOFF < TEST_CUTOFF, (
+        f"split boundaries out of order: {CAL_CUTOFF} / {TRAIN_CUTOFF} / {TEST_CUTOFF}")
+
+    if any(os.getenv(v) for v in ("ML_CAL_CUTOFF", "ML_TRAIN_CUTOFF", "ML_TEST_CUTOFF")):
+        pytest.skip("split pinned by ML_*_CUTOFF for a backtest")
+
+    from backend.app.ml.train import TEST_SEASON_MATURITY_MONTHS, _season_start
+
+    # Re-derive the rule from today's date. An age-only assertion is not enough:
+    # on the day this bug was found the frozen 2024-07-01 was 26 months old and
+    # would have passed any reasonable age bound. What gives it away is that it
+    # is not the value the rule produces.
+    today   = pd.Timestamp.today().normalize()
+    current = _season_start(today)
+    mature  = today >= current + pd.DateOffset(months=TEST_SEASON_MATURITY_MONTHS)
+    expected_train = current if mature else current - pd.DateOffset(years=1)
+
+    assert TRAIN_CUTOFF == expected_train, (
+        f"TRAIN_CUTOFF is {TRAIN_CUTOFF.date()}, but the season rule says "
+        f"{expected_train.date()} for today ({today.date()}). A hard-coded split "
+        f"stops moving while the calendar does not — that is how two whole "
+        f"seasons became invisible to the model."
+    )
+    assert CAL_CUTOFF == expected_train - pd.DateOffset(years=1)
+    assert TEST_CUTOFF == expected_train + pd.DateOffset(years=1)
+    assert TEST_CUTOFF > today - pd.DateOffset(months=6), (
+        f"TEST_CUTOFF {TEST_CUTOFF.date()} is in the past — the reported test set "
+        f"can no longer grow, so the metrics are frozen on old matches."
+    )
+
+
+def test_the_season_rule_actually_advances():
+    """The rule itself, at fixed dates — the part `today` cannot exercise.
+
+    On 2026-09-03 the rolling rule returns exactly the literals it replaced, so
+    the equality assertion above is satisfied by both the fix and the bug. What
+    separates them is that one moves next December and the other does not.
+    """
+    import pandas as pd
+
+    from backend.app.ml.train import TEST_SEASON_MATURITY_MONTHS, _season_start
+
+    def train_cutoff_on(day: str) -> pd.Timestamp:
+        ts = pd.Timestamp(day)
+        cur = _season_start(ts)
+        return cur if ts >= cur + pd.DateOffset(months=TEST_SEASON_MATURITY_MONTHS) \
+            else cur - pd.DateOffset(years=1)
+
+    assert _season_start(pd.Timestamp("2026-06-30")) == pd.Timestamp("2025-07-01")
+    assert _season_start(pd.Timestamp("2026-07-01")) == pd.Timestamp("2026-07-01")
+
+    # Immature season → still pointing at the previous one.
+    assert train_cutoff_on("2026-09-03") == pd.Timestamp("2025-07-01")
+    assert train_cutoff_on("2026-11-30") == pd.Timestamp("2025-07-01")
+    # …and it steps forward on its own, without anyone editing train.py.
+    assert train_cutoff_on("2026-12-01") == pd.Timestamp("2026-07-01")
+    assert train_cutoff_on("2027-06-30") == pd.Timestamp("2026-07-01")
+    assert train_cutoff_on("2027-12-01") == pd.Timestamp("2027-07-01")
+    # A year of literals would have frozen here; the rule has moved twice.
+    assert train_cutoff_on("2028-12-01") == pd.Timestamp("2028-07-01")
 
 
 def test_history_only_leagues_are_never_one_hot_encoded():

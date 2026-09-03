@@ -76,10 +76,77 @@ MODELS_DIR = os.path.join(os.path.dirname(__file__), "..", "..", "data", "models
 # Using a separate calibration season avoids calibrating on the same data that
 # tunes XGBoost's trees (which would overfit the calibration curve) while still
 # keeping the test set clean for unbiased accuracy reporting.
-CAL_CUTOFF    = pd.Timestamp("2024-07-01")   # end of 2023/24 → XGBoost training cutoff
-TRAIN_CUTOFF  = pd.Timestamp("2025-07-01")   # end of 2024/25 → calibration cutoff
-TEST_CUTOFF   = pd.Timestamp("2026-09-01")   # 2025/26 season end → test
+# The three boundaries ROLL with the calendar. They used to be literals, and the
+# consequence was invisible because nothing about a stale date looks wrong:
+# between 2026-08 and 2026-09 twelve consecutive weekly retrains added 54
+# training rows BETWEEN THEM (training_runs id 35→46, n_train 84,411 → 84,465)
+# while the test set grew by 246. Every match played after July 2024 — two whole
+# seasons — was invisible to the trees, and the "weekly retrain" was refitting
+# the same model on the same data and calling the seed noise an accuracy change.
+#
+# Anchored to season boundaries (1 July), not to today, so a retrain on the 3rd
+# and one on the 25th of the same month produce the same split — otherwise the
+# test set would shrink by a few rows every run and metrics would not be
+# comparable week to week.
+#
+#   test  = the current season       (TRAIN_CUTOFF → TEST_CUTOFF)
+#   cal   = the previous season      (CAL_CUTOFF   → TRAIN_CUTOFF)
+#   train = everything before that
+#
+# Two things this does NOT do, stated so nobody expects them:
+#
+# 1. It does not make the model current. A three-way split spends two seasons:
+#    the trees can never see the calibration season or the test season, so they
+#    are ~2 seasons behind BY CONSTRUCTION. Today (2026-09) the rule happens to
+#    produce exactly the old literals — the difference only shows from December,
+#    when the split steps forward on its own instead of waiting for someone to
+#    edit this file.
+#
+#    The alternative that recovers a season is cross-fitted calibration: fit the
+#    trees on everything up to the test season and get the calibrators from
+#    out-of-fold predictions inside that window, spending no season at all. It
+#    was measured (2026-09-03, backend/data/cache/cutoff/res_C_oof_2025.json):
+#    log-loss 1.0197 vs 1.0272, accuracy 49.13% vs 49.33% on the same 3,888
+#    rows. Better log-loss, slightly worse accuracy, and it costs K extra fits of
+#    every ensemble member — roughly 5x the retrain. Not taken; revisit if the
+#    retrain stops being on the critical path.
+#
+# 2. It does not improve accuracy. Extending the training window, sweeping the
+#    time-decay half-life over {1,2,3,5,none} years and dropping pre-2015 rows
+#    all landed inside the noise (acc 48.8–49.7%, log-loss 1.020–1.044, same
+#    rows). Staleness was never what was holding the numbers down. This is here
+#    so the window cannot silently stop moving, which it had.
+# The test season only rolls forward once the current one has enough played
+# matches to report on. Rolling on 1 July would hand the report a 390-row test
+# set for the first months of a season, which is too thin to tell a real
+# regression from seed noise — and this file's whole job is to produce a number
+# somebody trusts. TEST_SEASON_MATURITY_MONTHS is the delay: at 5 months a
+# European season is roughly half played (~3,000 rows).
+TEST_SEASON_MATURITY_MONTHS = 5
+
+
+def _season_start(ts: pd.Timestamp) -> pd.Timestamp:
+    """1 July of the season containing `ts` (European season boundary)."""
+    return pd.Timestamp(ts.year if ts.month >= 7 else ts.year - 1, 7, 1)
+
+
+_TODAY   = pd.Timestamp.today().normalize()
+_CURRENT = _season_start(_TODAY)
+_MATURE  = _TODAY >= _CURRENT + pd.DateOffset(months=TEST_SEASON_MATURITY_MONTHS)
+
+TRAIN_CUTOFF  = _CURRENT if _MATURE else _CURRENT - pd.DateOffset(years=1)
+TEST_CUTOFF   = TRAIN_CUTOFF + pd.DateOffset(years=1)
+CAL_CUTOFF    = TRAIN_CUTOFF - pd.DateOffset(years=1)
 RECENT_CUTOFF = pd.Timestamp("2019-07-01")   # walk-forward recency member: 2019/20+ only
+
+# Overridable for backtests and for reproducing a historical run.
+for _name, _env in (("CAL_CUTOFF", "ML_CAL_CUTOFF"),
+                    ("TRAIN_CUTOFF", "ML_TRAIN_CUTOFF"),
+                    ("TEST_CUTOFF", "ML_TEST_CUTOFF")):
+    _override = os.getenv(_env)
+    if _override:
+        globals()[_name] = pd.Timestamp(_override)
+        print(f"  [split] {_name} overridden by {_env}={_override}")
 
 # Optional features that may contain NaN — impute before passing to XGBoost.
 SHOTS_COLS  = ["h_shots_ot_5", "h_shots_otc_5", "a_shots_ot_5", "a_shots_otc_5"]
@@ -136,11 +203,23 @@ def _impute_optional(df: pd.DataFrame, save_medians: bool = True) -> pd.DataFram
     """
     df = df.copy()
     train_mask = df["Date"] < CAL_CUTOFF
-    # Pre-imputation flag: rows that had NO real 1×2 market probs. The scoring
-    # report needs it — after imputation every row "has" market values, which
-    # silently pollutes the de-vig bookmaker baseline with fake (median) odds.
-    df["market_was_imputed"] = df[[c for c in MARKET_COLS if c in df.columns][:3]].isna().any(axis=1) \
-        if any(c in df.columns for c in MARKET_COLS) else True
+    # Rows that had NO real 1×2 market line. The scoring report needs it —
+    # otherwise the de-vig bookmaker baseline is computed against numbers that
+    # are not the bookmaker's.
+    #
+    # This USED to be derived here, by testing MARKET_COLS for NaN. That was
+    # wrong by one pipeline stage: build_features already replaces a missing
+    # Pinnacle line with our own Poisson probabilities (features.py, "Poisson
+    # fallback for missing market probs"), so by the time this ran there was
+    # nothing left to detect — it reported 50 imputed rows out of 7,427 when the
+    # real number was 4,443. The flag now comes from `market_is_real`, which
+    # build_features records BEFORE the fallback.
+    if "market_is_real" in df.columns:
+        df["market_was_imputed"] = df["market_is_real"] < 0.5
+    else:
+        # Frames built before market_is_real existed: refuse to guess. Treating
+        # every row as real is what produced the flattering baseline.
+        df["market_was_imputed"] = True
     medians: dict[str, float] = {}
 
     def _fill(col: str, fallback: float) -> None:
@@ -327,11 +406,15 @@ def _result_scoring_report(probs: np.ndarray, y_true: pd.Series, test: pd.DataFr
     if all(c in test.columns for c in mk_cols):
         mk = test[mk_cols].to_numpy(dtype=float)
         ok = ~np.isnan(mk).any(axis=1)
-        # Exclude rows whose market probs are imputed medians, not real odds —
-        # counting them would both misstate coverage and unfairly degrade the
-        # bookmaker baseline (flag written by _impute_optional pre-fill).
+        # Keep ONLY rows carrying a real Pinnacle line. A row without one holds
+        # our own Poisson probabilities (see the fallback in build_features), so
+        # counting it scores the model against itself and calls the result "the
+        # bookmaker". `market_was_imputed` is derived from `market_is_real`,
+        # which is recorded before that fallback runs.
         if "market_was_imputed" in test.columns:
             ok &= ~test["market_was_imputed"].to_numpy(dtype=bool)
+        else:
+            ok &= False   # no flag → no honest baseline; report none
         if ok.sum() >= 100:
             mk_ok = mk[ok] / mk[ok].sum(axis=1, keepdims=True)
             ll_bm  = float(log_loss(y[ok], mk_ok, labels=[0, 1, 2]))
@@ -342,9 +425,11 @@ def _result_scoring_report(probs: np.ndarray, y_true: pd.Series, test: pd.DataFr
     print(f"  [Scoring] log-loss={ll:.4f}  Brier={brier:.4f}  RPS={rps:.4f}")
     print(f"  [Baseline] always-home: acc={acc_home:.3f} log-loss={ll_home:.4f}")
     if "bookmaker_log_loss" in out:
-        print(f"  [Baseline] de-vig bookmaker log-loss={out['bookmaker_log_loss']:.4f} "
+        _gap = out["model_log_loss_same_rows"] - out["bookmaker_log_loss"]
+        print(f"  [Baseline] de-vig Pinnacle log-loss={out['bookmaker_log_loss']:.4f} "
               f"vs model {out['model_log_loss_same_rows']:.4f} "
-              f"(coverage {out['bookmaker_coverage']:.0%}) — beat the bookmaker or no edge")
+              f"({'model ahead by' if _gap < 0 else 'MODEL BEHIND by'} {abs(_gap):.4f}) "
+              f"on the {out['bookmaker_coverage']:.0%} of test rows that carry a real line")
     return out
 
 

@@ -111,10 +111,23 @@ HISTORY_ONLY_LEAGUES = frozenset({
     "Montenegro", "Gibraltar",
 })
 
+# EVERY league we fit on must appear here. A league that is trained on but not
+# listed reaches the model with all dummies zero — encoded as "the reference
+# league", indistinguishable from a Champions League tie or a friendly.
+#
+# 2026-09-03: Championship, Eredivisie, PrimeiraLiga and LeagueOne were in that
+# state since the first commit — 24,955 rows, 25.2% of the training set, with no
+# league identity at all. They predate the ONE_HOT_LEAGUES refactor (2026-07-30),
+# which enumerated the leagues being added that day and left the older ones
+# where they were. All three guards written afterwards check this list against
+# other tables (has an API id, has a country, has training rows); none checked
+# the direction that was broken, which is why it survived four league intakes.
+# `test_config_consistency.test_every_fitted_league_is_one_hot_encoded` now does.
 ONE_HOT_LEAGUES = [
     "EPL", "LaLiga", "SerieA", "Bundesliga", "Ligue1", "GreekSL", "BrazilSerieA",
     "Belgium", "Turkey", "Scotland", "Denmark", "Sweden", "Norway",
     "Poland", "Austria", "Switzerland", "Romania", "Ireland", "Finland",
+    "Championship", "Eredivisie", "PrimeiraLiga", "LeagueOne",
 ]
 LEAGUE_DUMMY_COLS = [f"league_{lg}" for lg in ONE_HOT_LEAGUES]
 
@@ -1134,6 +1147,18 @@ def build_features(
 
         # ── Poisson features (snapshot BEFORE state update — no leakage) ──────
         feat.update(poisson.features(h, a, league, season))
+
+        # Whether a REAL bookmaker line existed, recorded BEFORE the Poisson
+        # fallback below overwrites the NaN. Not a model feature — it exists so
+        # the de-vig bookmaker baseline in train._result_scoring_report can tell
+        # a real Pinnacle price from our own Poisson standing in for one.
+        #
+        # Without it the baseline compared the model against ITSELF on 59% of
+        # the test rows and reported "coverage 99%", which is how "beat the
+        # bookmaker or no edge" printed a win (1.0246 vs 1.0549) while the truth
+        # on the 40% of rows that carry a real line is a loss (1.0047 vs 0.9835).
+        feat["market_is_real"]      = float(not np.isnan(feat.get("market_home_prob", np.nan)))
+        feat["market_over_is_real"] = float(not np.isnan(feat.get("market_over_prob", np.nan)))
 
         # ── Poisson fallback for missing market probs ─────────────────────────
         if np.isnan(feat.get("market_home_prob", np.nan)):
