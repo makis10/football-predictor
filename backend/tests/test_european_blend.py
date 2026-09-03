@@ -213,10 +213,34 @@ def test_the_clubs_that_were_silently_unrated_now_resolve():
 
     assert _alias_for("Atlético") == _alias_for("Atletico") == "Ath Madrid"
 
-    table = clubelo_by_our_name()
-    if not table:
+    # The table itself is a daily snapshot whose membership changes, so assert
+    # the MECHANISM, not today's contents: every alias whose ClubElo-side name is
+    # present in the snapshot must resolve to our club. Naming four specific
+    # clubs here failed in CI the first time, against an older snapshot that
+    # simply did not carry OFI — a test coupled to refreshed data, not to the
+    # bug it was meant to pin.
+    import json
+    import pathlib
+
+    from backend.app.ml.clubelo_ratings import _CLUBELO_ALIASES, _fold
+
+    snapshot = pathlib.Path(__file__).resolve().parents[1] / "data" / "clubelo.json"
+    if not snapshot.exists():
         pytest.skip("no ClubElo snapshot on disk")
-    for club in ("Ath Madrid", "AZ Alkmaar", "Slovan Bratislava", "OFI Crete"):
-        assert table.get(club), f"{club} has no direct ClubElo rating"
+    clubs = json.loads(snapshot.read_text()).get("clubs") or {}
+    if not clubs:
+        pytest.skip("ClubElo snapshot carries no clubs")
+
+    present = {_fold(name) for name in clubs}
+    table = clubelo_by_our_name()
+    unresolved = [
+        (clubelo_name, our_name)
+        for clubelo_name, our_name in _CLUBELO_ALIASES.items()
+        if _fold(clubelo_name) in present and table.get(our_name) is None
+    ]
+    assert not unresolved, (
+        f"aliases whose ClubElo entry exists but did not reach our club: "
+        f"{unresolved}")
+
     # …and the Spanish alias must still never reach the Brazilian club.
     assert table.get("Atletico-MG") is None
