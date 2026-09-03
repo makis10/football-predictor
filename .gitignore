@@ -49,3 +49,6 @@ pytest-report.xml
 
 # Metered Odds API usage — regenerated continuously, not source
 backend/data/odds_usage.jsonl
+
+# Experiment feature caches (rebuilt by scripts/build_feature_cache.py)
+backend/data/cache/
