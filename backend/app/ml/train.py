@@ -38,7 +38,7 @@ import pandas as pd
 import lightgbm as lgb
 from lightgbm import LGBMClassifier
 from sklearn.impute import SimpleImputer
-from sklearn.metrics import accuracy_score, classification_report, f1_score
+from sklearn.metrics import accuracy_score, classification_report, f1_score, log_loss
 from sklearn.neural_network import MLPClassifier
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
@@ -799,20 +799,43 @@ def main():
     raw_cal_result_probs = result_model.predict_proba(X_cal_result)
     cal_result_probs     = _apply_result_cal(raw_cal_result_probs, result_cals, batch=True)
 
-    best_alpha, best_brier = 0.20, float("inf")
-    for alpha_candidate in np.arange(0.05, 0.50, 0.05):
-        blended = []
+    # The sweep starts at 0.00 and is scored on the THREE-WAY log-loss, not on
+    # the Brier score of the draw alone. Both changes matter:
+    #
+    #   • Starting at 0.05 made "do not blend at all" unreachable. The specialist
+    #     is not orthogonal to the result model (correlation 0.787) and it is
+    #     WORSE at the one job it exists for — measured 2026-09-03 on the 2,984
+    #     test rows with a Pinnacle line, draw AUC 0.5280 for the specialist
+    #     against 0.5402 for the result model's own draw probability. Blending a
+    #     weaker, correlated signal can only dilute; AUC falls monotonically as
+    #     alpha rises, and the optimum for discrimination is exactly 0.
+    #
+    #   • Brier on the draw column alone rewards shrinking p_draw toward the base
+    #     rate (variance reduction) regardless of whether the ordering improves,
+    #     which is why it kept landing near 0.30 while AUC said 0. The blend
+    #     rescales home and away too, so the honest score is the one over all
+    #     three outcomes.
+    #
+    # If a future specialist genuinely adds signal this will find it and alpha
+    # will come back up on its own. Nothing here is pinned to zero.
+    best_alpha, best_ll = 0.0, float("inf")
+    for alpha_candidate in np.arange(0.0, 0.50, 0.05):
+        blended = np.empty((len(cal), 3), dtype=float)
         for i in range(len(cal)):
             ph, pd_, pa = cal_result_probs[i]
             dc = float(draw_cal_probs[i])
-            _, bd, _ = blend_draw_probability(float(ph), float(pd_), float(pa), dc, alpha=float(alpha_candidate))
-            blended.append(bd)
-        brier = brier_score_loss(y_cal_draw, blended)
-        print(f"  alpha={alpha_candidate:.2f}  brier={brier:.5f}")
-        if brier < best_brier:
-            best_brier  = brier
-            best_alpha  = float(alpha_candidate)
-    print(f"  → Optimal alpha: {best_alpha:.2f}  (Brier={best_brier:.5f})")
+            blended[i] = blend_draw_probability(
+                float(ph), float(pd_), float(pa), dc, alpha=float(alpha_candidate))
+        ll = float(log_loss(cal["target_result"].values, blended, labels=[0, 1, 2]))
+        brier = brier_score_loss(y_cal_draw, blended[:, 1])
+        print(f"  alpha={alpha_candidate:.2f}  3-way log-loss={ll:.5f}  draw brier={brier:.5f}")
+        if ll < best_ll:
+            best_ll    = ll
+            best_alpha = float(alpha_candidate)
+    print(f"  → Optimal alpha: {best_alpha:.2f}  (3-way log-loss={best_ll:.5f})")
+    if best_alpha == 0.0:
+        print("     alpha=0 — the draw specialist is not blended in. Expected: it "
+              "ranks draws worse than the result model it was meant to help.")
 
     alpha_path = os.path.join(MODELS_DIR, "draw_alpha.json")
     os.makedirs(MODELS_DIR, exist_ok=True)

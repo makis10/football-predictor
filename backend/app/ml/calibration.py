@@ -292,66 +292,39 @@ def reload_calibrators(models_dir: str = MODELS_DIR) -> None:
     Resets the module-level singletons so the next load_calibrators() call
     reads fresh files from disk instead of returning stale in-memory objects.
     """
-    global _result_cals, _goals_cal, _league_goals_cals, _loaded, _recent_cals, _recent_loaded
+    global _result_cals, _goals_cal, _league_goals_cals, _loaded
     _result_cals = None
     _goals_cal = None
     _league_goals_cals = None
     _loaded = False
-    _recent_cals = None
-    _recent_loaded = False
     print("[calibration] Cache cleared — will reload on next predict call.")
 
 
-# ── Second-stage rolling recalibration ────────────────────────────────────────
-# The base calibrators are fitted once per training run on a fixed historical
-# season; the live distribution drifts. scripts/recalibrate.py refits a small
-# second-stage isotonic monthly from the STORED final probabilities vs actual
-# outcomes of the last 365 days (genuinely out-of-sample — every stored
-# prediction was made before its match). Applied AFTER the draw blend, i.e. on
-# the same quantity that gets stored/served.
-
-RECENT_CAL_PATH = os.path.join(MODELS_DIR, "calibrator_recent.pkl")
-
-_recent_cals: Optional[dict] = None
-_recent_loaded: bool = False
-
-
-def load_recent_calibrators(models_dir: str = MODELS_DIR) -> Optional[dict]:
-    """Load the second-stage calibrator dict, or None when not fitted yet."""
-    global _recent_cals, _recent_loaded
-    if _recent_loaded:
-        return _recent_cals
-    path = os.path.join(models_dir, "calibrator_recent.pkl")
-    try:
-        with open(path, "rb") as f:
-            _recent_cals = pickle.load(f)
-        print(f"[calibration] Second-stage (rolling) calibrators loaded "
-              f"(fitted {_recent_cals.get('fitted_at', '?')}, n={_recent_cals.get('n', '?')}).")
-    except FileNotFoundError:
-        _recent_cals = None
-    except Exception as e:
-        print(f"[calibration] Error loading recent calibrators: {e}")
-        _recent_cals = None
-    _recent_loaded = True
-    return _recent_cals
-
-
-def apply_recent_calibration(
-    home_win: float, draw: float, away_win: float, over: float,
-) -> "tuple[float, float, float, float]":
-    """
-    Apply the second-stage rolling calibrators (no-op when not fitted).
-    1×2 values are recalibrated per class and renormalized; over is independent.
-    """
-    rc = load_recent_calibrators()
-    if not rc:
-        return home_win, draw, away_win, over
-
-    hw = float(rc["home"].predict([home_win])[0]) if rc.get("home") else home_win
-    d  = float(rc["draw"].predict([draw])[0])     if rc.get("draw") else draw
-    aw = float(rc["away"].predict([away_win])[0]) if rc.get("away") else away_win
-    total = hw + d + aw
-    if total > 0:
-        hw, d, aw = hw / total, d / total, aw / total
-    ov = float(rc["over"].predict([over])[0]) if rc.get("over") else over
-    return hw, d, aw, ov
+# ── Second-stage rolling recalibration — REMOVED 2026-09-03 ───────────────────
+#
+# There used to be a second isotonic stage here, refitted monthly by
+# scripts/recalibrate.py from the last 365 days of stored predictions and applied
+# right after the draw blend. It is gone, for two reasons, in this order:
+#
+# 1. It fitted one quantity and corrected a different one. recalibrate.py read
+#    predictions.home_win_prob / draw_prob / away_win_prob — the SERVED columns —
+#    and those have been market-anchored since 2026-09-01 (commit 496c842).
+#    Inference applied the result BEFORE anchoring. So it learned "given an
+#    anchored probability, what actually happens" and was then asked "given an
+#    unanchored one, correct it". The two distributions are not the same: mean
+#    p_draw 0.31 raw against 0.25 anchored. Nothing connected the two files
+#    except the database, so changing what a column meant broke a consumer three
+#    directories away, silently, with no test able to see it.
+#
+# 2. Measured on the 2025/26 test rows (2026-09-03), it was making things worse
+#    even before that. Over/Under 2.5: log-loss 0.6853 with it against 0.6831
+#    without, AUC 0.5688 against 0.5771, accuracy 55.47% against 55.90%. On the
+#    1x2 through the full chain: 0.9890 with, 0.9883 without. Its fitted curves
+#    had saturated plateaus (P(over) pinned to 0.000 for any input <= 0.2), the
+#    same failure that retired the per-league goals calibrators above.
+#
+# Bringing it back needs the quantity it corrects to be STORED, not reconstructed:
+# a column holding the post-blend, pre-anchor probability at the time each
+# prediction was written. Without that column any second stage is fitted on the
+# wrong distribution again. Do not re-add it by pointing recalibrate.py at
+# raw_*_prob — those are the uncalibrated ensemble outputs, a third distribution.

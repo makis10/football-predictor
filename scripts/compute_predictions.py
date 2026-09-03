@@ -39,7 +39,7 @@ from backend.app.ml.features import (
 )
 from backend.app.ml.european import load_european_data, EUROPEAN_DIR
 from backend.app.ml.predict import SoftVoteEnsemble, _get_models, confidence_for, _get_draw_alpha, _get_btts_threshold
-from backend.app.ml.calibration import load_calibrators, apply_calibration, apply_recent_calibration
+from backend.app.ml.calibration import load_calibrators, apply_calibration
 from backend.app.ml.draw_classifier import (
     load_draw_classifier, load_draw_calibrator,
     predict_draw_prob, apply_draw_calibration, blend_draw_probability,
@@ -509,11 +509,6 @@ for i, (mid, home, away, match_date, league) in enumerate(match_snapshots, 1):
                     draw_clf_cal,
                     alpha=_get_draw_alpha(),
                 )
-
-        # Second-stage rolling recalibration (no-op until scripts/recalibrate.py runs)
-        home_win_p, draw_p, away_win_p, over_p = apply_recent_calibration(
-            home_win_p, draw_p, away_win_p, over_p
-        )
 
         # BTTS classifier (replaces raw Poisson BTTS)
         btts_raw = predict_btts_prob(btts_clf, feat)

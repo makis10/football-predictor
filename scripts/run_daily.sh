@@ -609,17 +609,6 @@ else
 fi
 
 # ── Monthly rolling recalibration (1st of the month) ─────────────────────────
-# Refits the second-stage isotonic correction from the last 365 days of stored
-# predictions vs actual results (out-of-sample by construction). Skips itself
-# below 300 completed predictions.
-if [ "$(date +%d)" = "01" ]; then
-    echo "" >> "$LOG"
-    echo "[monthly] Rolling recalibration …" | tee -a "$LOG"
-    docker compose exec -T backend \
-        python scripts/recalibrate.py \
-        2>&1 | tee -a "$LOG" || _fail $LINENO
-fi
-
 # Settle fixtures the pollers' 7-day window left behind. Costs no API credits —
 # it reads the CSVs the model already trains on. Without it a missed result is
 # missed for ever: two matches had sat unresolved for 80+ days, silently absent
@@ -758,21 +747,14 @@ if [ "$DAY_OF_WEEK" -eq 1 ]; then
 
     # 9. Retrain both models (takes ~2-3 min)
     echo "" >> "$LOG"
-    echo "[9/10] Retraining ML models …" | tee -a "$LOG"
+    echo "[9/12] Retraining ML models …" | tee -a "$LOG"
     docker compose exec -T backend \
         python -m backend.app.ml.train \
         2>&1 | tee -a "$LOG" || _fail $LINENO
 
-    # 9b. Refit the second-stage rolling calibration against the new models
-    echo "" >> "$LOG"
-    echo "[9b/10] Refitting rolling recalibration after retrain …" | tee -a "$LOG"
-    docker compose exec -T backend \
-        python scripts/recalibrate.py \
-        2>&1 | tee -a "$LOG" || _fail $LINENO
-
     # 10. Force-recompute all upcoming predictions with the new models
     echo "" >> "$LOG"
-    echo "[10/10] Recomputing all predictions with new models …" | tee -a "$LOG"
+    echo "[10/12] Recomputing all predictions with new models …" | tee -a "$LOG"
     docker compose exec -T backend \
         python scripts/compute_predictions.py --force \
         2>&1 | tee -a "$LOG" || _fail $LINENO
