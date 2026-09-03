@@ -52,3 +52,6 @@ backend/data/odds_usage.jsonl
 
 # Experiment feature caches (rebuilt by scripts/build_feature_cache.py)
 backend/data/cache/
+
+# Pre-retrain model snapshots
+backend/data/models_backup_*/
