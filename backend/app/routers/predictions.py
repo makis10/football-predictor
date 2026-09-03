@@ -314,6 +314,27 @@ def get_prediction(match_id: int, db: Session = Depends(get_db)):
     match_date = match.match_date
     league     = match.league
     mid        = match.id
+
+    # Latest stored bookmaker line for this fixture, so the on-the-fly path
+    # anchors exactly as the nightly batch does. A DB read, not an API call:
+    # odds_history is filled by the 3-hourly poll, so this costs no credits and
+    # cannot fail on a rate limit.
+    #
+    # Without it these rows were a different quantity from every other row in
+    # the same table — 5.3% of stored predictions, mean p_draw 0.296 against
+    # 0.254, a draw picked outright 14.9% of the time against 0.4% — even though
+    # 83% of them had a usable line sitting right here.
+    _odds_row = db.scalars(
+        select(OddsHistory)
+        .where(OddsHistory.match_id == mid)
+        .order_by(OddsHistory.fetched_at.desc())
+        .limit(1)
+    ).first()
+    market_odds = None
+    if _odds_row and _odds_row.home_odds and _odds_row.draw_odds and _odds_row.away_odds:
+        market_odds = (float(_odds_row.home_odds),
+                       float(_odds_row.draw_odds),
+                       float(_odds_row.away_odds))
     db.close()
 
     # Compute prediction — history is cached after first request, so subsequent
@@ -328,6 +349,7 @@ def get_prediction(match_id: int, db: Session = Depends(get_db)):
             match_date=match_date,
             league=league,
             match_id=mid,
+            market_odds=market_odds,
         )
     except Exception as e:
         import logging

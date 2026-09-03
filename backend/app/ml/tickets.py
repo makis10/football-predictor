@@ -74,6 +74,12 @@ ALL_MARKETS = (
     MARKET_GG, MARKET_NG,
 )
 
+# Markets derived from the 1x2 probabilities. These are the ones that go wrong
+# when the fixture carried no bookmaker line — see candidate_legs.
+RESULT_MARKETS = frozenset({
+    MARKET_1, MARKET_X, MARKET_2, MARKET_1X, MARKET_X2, MARKET_12,
+})
+
 
 def settle_market(market: str, home_goals: int, away_goals: int) -> bool:
     """Did `market` win, given the final score?
@@ -166,6 +172,27 @@ def candidate_legs(
     fixtures and would make every goal line identical across the card.
     Pass None when the fit failed; the goal-line legs are then simply absent.
     """
+    # A fixture with no 1x2 line was never market-anchored, so its home/draw/away
+    # probabilities are the model's alone (predict.anchor_to_market). That is
+    # fine on the leagues the model was fitted on — measured over the 4,443 such
+    # rows in the 2025/26 test window, the pre-anchor 1X and X2 probabilities are
+    # calibrated to within 0.3pp.
+    #
+    # It is not fine for a TICKET, because the ladder ranks by probability and
+    # the unpriced fixtures are systematically the exotic ones: European
+    # qualifiers, cold-start clubs, friendlies. On 532 settled legs (2026-09-03):
+    #
+    #     draw-carrying legs WITH a line     n= 63  stated 0.756  real 0.730  ROI  -0.0%
+    #     draw-carrying legs WITHOUT a line  n=286  stated 0.784  real 0.661  ROI -12.8%
+    #     non-draw legs WITHOUT a line       n=135  stated 0.731  real 0.704  ROI  -1.6%
+    #
+    # A 12.3-point gap, specific to the markets containing the draw: the outcome
+    # the model is weakest at, in the fixtures where no market exists to correct
+    # it. So the 1x2-derived markets need a real line. Goals and BTTS do not —
+    # they are calibrated with or without one, and cutting them would starve the
+    # ladder for nothing.
+    _has_1x2_line = bm_home is not None and bm_draw is not None and bm_away is not None
+
     raw: list[tuple[str, Optional[float], Optional[float]]] = [
         (MARKET_1,  home_win_prob, bm_home),
         (MARKET_X,  draw_prob,     bm_draw),
@@ -190,6 +217,8 @@ def candidate_legs(
     legs: list[Leg] = []
     for market, prob, odds in raw:
         if prob is None or prob < MIN_LEG_PROB:
+            continue
+        if market in RESULT_MARKETS and not _has_1x2_line:
             continue
         estimated = odds is None
         price = odds if odds is not None else round(1.0 / prob, 2)

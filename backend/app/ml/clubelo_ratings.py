@@ -74,6 +74,25 @@ _FED_TO_COUNTRY = {
 # and OFI Crete, Torreense and PAEEK are simply absent from the snapshot.
 # A wrong rating is worse than a missing one: missing shows as the floor and
 # reads as uncertainty, wrong reads as fact.
+def _fold(name: str) -> str:
+    """Lower-case and strip accents, keeping word boundaries.
+
+    The alias keys are matched against ClubElo's own spelling, and ClubElo
+    writes "Atlético" while this table said "Atletico" — so the entry never
+    fired and Atlético Madrid sat on the uncovered floor (1309) with its real
+    rating (1881) present in the table the whole time. Invisible while these
+    numbers only fed the projections page; not invisible once the European blend
+    started taking the home/away split from them.
+
+    Deliberately NOT `_slug`, which also strips "city" and "united" and would
+    make Man City and Man United the same key.
+    """
+    import unicodedata
+    decomposed = unicodedata.normalize("NFKD", name)
+    stripped = "".join(c for c in decomposed if not unicodedata.combining(c))
+    return stripped.casefold().strip()
+
+
 _CLUBELO_ALIASES = {
     "Braga":             "Sp Braga",             # POR
     "FC Kobenhavn":      "FC Copenhagen",        # DEN
@@ -81,6 +100,9 @@ _CLUBELO_ALIASES = {
     "Paphos":            "Pafos",                # CYP
     "Kuopio":            "KuPS",                 # FIN
     "Atletico":          "Ath Madrid",           # ESP — never Atlético Mineiro
+    "AZ":                "AZ Alkmaar",           # NED — aka "Alkmaar"
+    "Slovan":            "Slovan Bratislava",    # SVK — not Slovan Liberec (CZE)
+    "OFI":               "OFI Crete",            # GRE
     "Craiova":           "Univ. Craiova",        # ROM
     "Sabah":             "Sabah FA",             # AZE
     "Lincoln":           "Lincoln Red Imps FC",  # GIB — not Lincoln City
@@ -94,6 +116,16 @@ _CLUBELO_ALIASES = {
     "Omonia":            "Omonia Nicosia",       # CYP
     "Sporting":          "Sp Lisbon",            # POR — not Sporting Gijón
 }
+
+# Folded once at import, so the accent question cannot come back: one entry
+# above now matches whichever spelling ClubElo happens to publish.
+_CLUBELO_ALIASES_FOLDED = {_fold(k): v for k, v in _CLUBELO_ALIASES.items()}
+
+
+def _alias_for(clubelo_name: str) -> "str | None":
+    """Our club name for a ClubElo entry, ignoring accents and case."""
+    return _CLUBELO_ALIASES_FOLDED.get(_fold(clubelo_name))
+
 _EXPLICIT = {
     "Bayern":        "Bayern Munich",
     "Brugge":        "Club Brugge",
@@ -205,7 +237,7 @@ def clubelo_by_our_name() -> dict[str, float]:
         if elo is None:
             continue
 
-        hit = _CLUBELO_ALIASES.get(name) or by_slug.get(_slug(name))
+        hit = _alias_for(name) or by_slug.get(_slug(name))
         if hit is None:
             country = _FED_TO_COUNTRY.get(info.get("country") or "")
             candidates = ours_by_country.get(country or "", set())

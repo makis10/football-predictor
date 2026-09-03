@@ -32,7 +32,10 @@ from backend.app.database import SessionLocal, engine
 from backend.app.models.match import Match
 from backend.app.models.prediction import Prediction
 from backend.app.models.odds_history import OddsHistory
-from backend.app.ml.predict import anchor_to_market  # noqa: E402
+from backend.app.ml.predict import anchor_to_market, finalise_probabilities  # noqa: E402
+from backend.app.ml.european_blend import (  # noqa: E402
+    apply_elo_split, fit_elo_split_model, is_uefa,
+)
 from backend.app.ml.features import (
     load_raw_csvs, build_team_snapshot, compute_match_features,
     load_xg_data, merge_xg, XG_DIR,
@@ -342,6 +345,40 @@ print("Models loaded. Computing predictions …", flush=True)
 # record has earned promotion, MINUS base markets its record has demoted. Every
 # qualifying market is still shadow-tracked below, so a currently-unproven market
 # can accumulate the evidence to promote. Computed once per run.
+# ── Cross-league strength for UEFA ties ───────────────────────────────────────
+# Our Elo pools every league from a shared 1500 and the leagues barely play each
+# other, so on a CL/EL/ECL tie it is worse than "always the home side" (44.3%
+# against 50.7% on 296 settled ties). ClubElo is maintained on one scale across
+# every UEFA federation. Fitted once per run from the finished ties we hold; see
+# backend/app/ml/european_blend.py for the measurement.
+_eb_db = SessionLocal()
+try:
+    _euro_split = fit_elo_split_model(_eb_db)
+finally:
+    _eb_db.close()
+_euro_strength: dict = {}
+if _euro_split is not None:
+    # The DIRECT table, not european_strength(): that helper substitutes a flat
+    # 15th-percentile floor for clubs it does not carry, which is right for the
+    # projections page (it says "we cannot rank these") and wrong here. A floor
+    # read as a rating is a confident claim that the club is poor — Atlético
+    # Madrid came out at 1309 instead of 1881 and Liverpool's win probability
+    # against them was inflated to 0.606. Absent means absent: apply_elo_split
+    # leaves those fixtures on the model's own split.
+    from backend.app.ml.clubelo_ratings import clubelo_by_our_name  # noqa: E402
+    _euro_teams = {t for _mid, h, a, _d, lg in match_snapshots
+                   if is_uefa(lg) for t in (h, a)}
+    _table = clubelo_by_our_name()
+    _euro_strength = {t: _table[t] for t in _euro_teams if t in _table}
+    _unrated = sorted(_euro_teams - set(_euro_strength))
+    print(f"European blend: fitted on {_euro_split.n_fit} finished ties, "
+          f"{len(_euro_strength)}/{len(_euro_teams)} upcoming UEFA clubs rated"
+          + (f" — no ClubElo for {', '.join(_unrated)}" if _unrated else ""),
+          flush=True)
+else:
+    print("European blend: not fitted (too few finished ties) — UEFA fixtures "
+          "keep the model's own home/away split", flush=True)
+
 _pm_db = SessionLocal()
 try:
     club_proven = proven_markets(_pm_db, "club")
@@ -534,23 +571,33 @@ for i, (mid, home, away, match_date, league) in enumerate(match_snapshots, 1):
         else:
             gg_prob = float(feat.get("poisson_btts", 0.5))
 
-        # Coherence projection: result/goals/BTTS are independent models and can
-        # contradict (e.g. Over 57% with NG 53%). Project onto the nearest
-        # mutually consistent set via the fitted score matrix — feasible inputs
-        # round-trip unchanged, contradictions get the best compromise.
-        from backend.app.ml.poisson import project_probs_coherent
-        _proj = project_probs_coherent(home_win_p, draw_p, away_win_p, over_p, gg_prob)
-        if _proj:
-            home_win_p, draw_p, away_win_p = _proj["home"], _proj["draw"], _proj["away"]
-            over_p, gg_prob = _proj["over"], _proj["btts"]
+        # Coherence, the UEFA cross-league split, then market anchoring — the
+        # shared tail, so this path and predict_match() cannot drift apart again.
+        # The split keeps OUR p_draw: ClubElo's own draw AUC is 0.399, worse than
+        # random, because one strength gap cannot say when two sides cancel out.
+        _split = None
+        if is_uefa(league):
+            _h_str, _a_str = _euro_strength.get(home), _euro_strength.get(away)
+            _split = lambda p: apply_elo_split(p, _h_str, _a_str, _euro_split)  # noqa: E731
 
-        # Served probabilities = PURE model output — no market anchoring.
-        # The bookmaker is used only below, for the EV/value comparison.
-        pre_anchor = (home_win_p, draw_p, away_win_p, over_p)
+        _mkt = ((live_odds.get("raw_home"), live_odds.get("raw_draw"),
+                 live_odds.get("raw_away")) if live_odds else None)
+        _coh_h, _coh_d, _coh_a, over_p, gg_prob = finalise_probabilities(
+            home=home_win_p, draw=draw_p, away=away_win_p,
+            over=over_p, btts=gg_prob,
+            elo_split=_split,           # no odds yet — see pre_anchor below
+        )
+        # The EV / value gate must never see an anchored probability: it exists
+        # to measure model-vs-market disagreement, and fed the market's own
+        # opinion it finds an edge of zero everywhere. So the ledger keeps the
+        # coherent-but-unanchored numbers, and anchoring is applied separately
+        # for what the reader sees.
+        pre_anchor = (_coh_h, _coh_d, _coh_a, over_p)
+        served_h, served_d, served_a = anchor_to_market((_coh_h, _coh_d, _coh_a), _mkt)
 
         btts_prediction = "GG" if gg_prob >= _get_btts_threshold() else "NG"
         goals_prediction = "OVER" if over_p >= 0.5 else "UNDER"
-        max_result_prob = max(home_win_p, draw_p, away_win_p)
+        max_result_prob = max(served_h, served_d, served_a)
 
         # Extract Poisson λ values from the feature dict for later serve-time use
         lambda_home: float | None = feat.get("poisson_lambda_home")
@@ -574,12 +621,6 @@ for i, (mid, home, away, match_date, league) in enumerate(match_snapshots, 1):
         # doing it the other way round put "Away Win" on a card whose bars
         # showed Home ahead (Birmingham v Southampton, caught by
         # test_the_suggested_market_matches_the_probability_bars).
-        served_h, served_d, served_a = anchor_to_market(
-            (home_win_p, draw_p, away_win_p),
-            (live_odds.get("raw_home"), live_odds.get("raw_draw"),
-             live_odds.get("raw_away")) if live_odds else None,
-        )
-
         # ── What we put in front of the reader ────────────────────────────────
         # The model's most likely 1x2 outcome — deliberately NOT the highest-EV
         # market. Measured over 470 settled fixtures (scripts/eval_gate_power.py

@@ -818,7 +818,27 @@ def main():
     #
     # If a future specialist genuinely adds signal this will find it and alpha
     # will come back up on its own. Nothing here is pinned to zero.
-    best_alpha, best_ll = 0.0, float("inf")
+    # Selection is by the ONE-STANDARD-ERROR RULE: take the smallest alpha whose
+    # calibration log-loss is within one standard error of the best, not the
+    # argmin. Picking the argmin is what kept resurrecting this blend.
+    #
+    # On the 2026-09-03 retrain the entire sweep spanned 0.00076 log-loss
+    # (1.00255 at alpha=0 down to 1.00179 at alpha=0.45) and fell monotonically
+    # toward the edge of the grid — the signature of a flat objective with no
+    # interior optimum. One standard error on ~7,000 rows is around 0.0096, more
+    # than ten times the whole spread. The argmin duly chose 0.45, and the
+    # held-out test window then said the opposite: alpha=0 was better on log-loss
+    # (1.0020 against 1.0031 on the rows with a real line) AND on draw AUC
+    # (0.5482 against 0.5411). The cal-set minimum was noise.
+    #
+    # This is the third scoring rule tried here. Brier on the draw column chose
+    # ~0.30, three-way log-loss chose 0.45, and the two things that actually
+    # matter — held-out log-loss and the specialist's own ranking power — both
+    # say 0. The rule below prefers the simpler model unless the evidence clears
+    # the noise floor, so a specialist that genuinely helps will still be picked
+    # up while one that does not stops coming back.
+    _cal_y = cal["target_result"].values
+    sweep: list[tuple[float, float, float]] = []
     for alpha_candidate in np.arange(0.0, 0.50, 0.05):
         blended = np.empty((len(cal), 3), dtype=float)
         for i in range(len(cal)):
@@ -826,16 +846,27 @@ def main():
             dc = float(draw_cal_probs[i])
             blended[i] = blend_draw_probability(
                 float(ph), float(pd_), float(pa), dc, alpha=float(alpha_candidate))
-        ll = float(log_loss(cal["target_result"].values, blended, labels=[0, 1, 2]))
-        brier = brier_score_loss(y_cal_draw, blended[:, 1])
-        print(f"  alpha={alpha_candidate:.2f}  3-way log-loss={ll:.5f}  draw brier={brier:.5f}")
-        if ll < best_ll:
-            best_ll    = ll
-            best_alpha = float(alpha_candidate)
-    print(f"  → Optimal alpha: {best_alpha:.2f}  (3-way log-loss={best_ll:.5f})")
+        # blend_draw_probability renormalises, but float error still leaves rows
+        # a few ulps off 1.0 and sklearn warns on every one of them.
+        blended /= blended.sum(axis=1, keepdims=True)
+        row_ll = -np.log(np.clip(blended[np.arange(len(cal)), _cal_y], 1e-12, None))
+        ll     = float(row_ll.mean())
+        se     = float(row_ll.std(ddof=1) / np.sqrt(len(row_ll)))
+        brier  = brier_score_loss(y_cal_draw, blended[:, 1])
+        sweep.append((float(alpha_candidate), ll, se))
+        print(f"  alpha={alpha_candidate:.2f}  3-way log-loss={ll:.5f} "
+              f"(±{se:.5f})  draw brier={brier:.5f}")
+
+    best_ll_alpha, best_ll, best_se = min(sweep, key=lambda r: r[1])
+    threshold  = best_ll + best_se
+    best_alpha = min(a for a, ll, _ in sweep if ll <= threshold)
+    print(f"  → alpha={best_alpha:.2f}  (best log-loss {best_ll:.5f} at "
+          f"alpha={best_ll_alpha:.2f}; anything under {threshold:.5f} is within "
+          f"one standard error, so the smallest such alpha wins)")
     if best_alpha == 0.0:
-        print("     alpha=0 — the draw specialist is not blended in. Expected: it "
-              "ranks draws worse than the result model it was meant to help.")
+        print("     alpha=0 — the draw specialist is not blended in. Expected: on "
+              "held-out data it ranks draws WORSE than the result model it was "
+              "meant to help (AUC 0.5280 against 0.5402).")
 
     alpha_path = os.path.join(MODELS_DIR, "draw_alpha.json")
     os.makedirs(MODELS_DIR, exist_ok=True)

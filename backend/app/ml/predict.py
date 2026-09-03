@@ -212,6 +212,54 @@ def anchor_to_market(
     return (blended[0] / s, blended[1] / s, blended[2] / s)
 
 
+def finalise_probabilities(
+    *,
+    home: float,
+    draw: float,
+    away: float,
+    over: float,
+    btts: "float | None",
+    market_odds: "tuple[float, float, float] | None" = None,
+    elo_split=None,
+):
+    """The tail of the serving chain, in the one order both paths must use.
+
+        1. coherence projection  — reconcile three independently-trained models
+        2. cross-league split    — UEFA only, when a fitted ClubElo model exists
+        3. market anchoring      — blend toward the de-vigged line at w=0.57
+
+    This function exists because the order matters and it was not shared. The
+    batch path (scripts/compute_predictions.py) did all three; predict_match(),
+    which answers a cache miss on GET /predictions/{id}, did none of them and
+    carried a comment asserting the opposite directive. Both write to the same
+    table, so 5.3% of stored predictions were a different quantity from the rest:
+    mean p_draw 0.296 against 0.254, a draw picked as the outright 14.9% of the
+    time against 0.4%, and p_draw overstated by 6.4pp in the band above 0.31 —
+    on rows where 83% DID have a usable bookmaker line that was simply never
+    applied.
+
+    Anchoring last is deliberate: it is the step that makes a number accurate
+    rather than ours, so everything we want measured (the EV gate reads the
+    unanchored raw_* columns) has to happen before it.
+
+    Returns (home, draw, away, over, btts).
+    """
+    from backend.app.ml.poisson import project_probs_coherent
+
+    proj = project_probs_coherent(home, draw, away, over, btts)
+    if proj:
+        home, draw, away = proj["home"], proj["draw"], proj["away"]
+        over = proj["over"]
+        if proj.get("btts") is not None:
+            btts = proj["btts"]
+
+    if elo_split is not None:
+        home, draw, away = elo_split((home, draw, away))
+
+    home, draw, away = anchor_to_market((home, draw, away), market_odds)
+    return home, draw, away, over, btts
+
+
 def _confidence(max_result_prob: float, over_prob: float = 0.5) -> str:
     """
     Composite confidence based on BOTH result and goals certainty.
@@ -268,6 +316,7 @@ def predict_match(
     match_date: date,
     league: str = "Unknown",
     match_id: Optional[int] = None,
+    market_odds: "tuple[float, float, float] | None" = None,
 ) -> dict:
     """
     Compute a prediction for a single (upcoming) match.
@@ -394,10 +443,6 @@ def predict_match(
                 alpha=_get_draw_alpha(),
             )
 
-    # NOTE: served probabilities are the PURE model output — no market anchoring.
-    # By directive the bookmaker never influences our predictions; it is used only
-    # downstream for comparison (EV/value gate, ROI vs sharps).
-
     # BTTS classifier (replaces raw Poisson BTTS)
     btts_clf = load_btts_classifier()
     btts_cal = load_btts_calibrator()
@@ -406,6 +451,13 @@ def predict_match(
         gg_prob = apply_btts_calibration(btts_cal, btts_raw)
     else:
         gg_prob = float(feat_dict.get("poisson_btts", 0.5))
+
+    # Same tail as the batch path — see finalise_probabilities for why this is
+    # shared rather than duplicated.
+    home_win_p, draw_p, away_win_p, over_p, gg_prob = finalise_probabilities(
+        home=home_win_p, draw=draw_p, away=away_win_p, over=over_p, btts=gg_prob,
+        market_odds=market_odds,
+    )
 
     goals_prediction = "OVER" if over_p >= 0.5 else "UNDER"
     btts_prediction  = "GG" if gg_prob >= _get_btts_threshold() else "NG"

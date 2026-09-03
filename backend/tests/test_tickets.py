@@ -18,6 +18,7 @@ from pathlib import Path
 import pytest
 
 from backend.app.ml.tickets import (
+    RESULT_MARKETS,
     ALL_MARKETS,
     MAX_ESTIMATED_FRACTION,
     MAX_TICKETS_PER_MATCH,
@@ -94,19 +95,26 @@ def test_double_chance_price_comes_from_the_real_1x2_prices():
     assert dc.estimated is False
 
 
-def test_double_chance_falls_back_to_our_price_and_says_so():
-    """Half a market price is not a market price.
+def test_half_a_market_price_produces_no_result_leg_at_all():
+    """Superseded 2026-09-03, and deliberately stricter than what it replaced.
 
-    With the draw quote missing, 1X can still be offered — but only at OUR fair
-    odds, flagged. Quoting a derived-looking number as if a book stood behind it
-    is the failure this guards. 12 keeps its real price: both its components
-    are quoted.
+    This used to assert that a 1X with the draw quote missing could still be
+    offered at OUR fair price, flagged estimated. The settled record says that
+    is not good enough: a fixture without a complete 1x2 line is never
+    market-anchored (anchor_to_market requires all three), and across 286
+    settled draw-carrying legs on unanchored fixtures the stated probability was
+    0.784 against a realised 0.661 — a 12.3-point gap, ROI -12.8%, while the
+    same legs on priced fixtures sat at zero.
+
+    So a partial line now yields no 1x2-derived leg at all. Goals and BTTS are
+    unaffected; they are calibrated with or without a market.
     """
     legs = _legs(bm_home=2.00, bm_draw=None, bm_away=4.00)
-    dc = next(l for l in legs if l.market == "1X")
-    assert dc.estimated is True
-    assert dc.odds == pytest.approx(1 / (0.55 + 0.25), abs=0.01)
-    assert next(l for l in legs if l.market == "12").estimated is False
+    result_legs = [l.market for l in legs if l.market in RESULT_MARKETS]
+    assert not result_legs, (
+        f"a fixture with no draw quote still offered {result_legs}")
+    # …and the rest of the card is untouched.
+    assert {l.market for l in legs} >= {"O2.5", "U2.5", "GG", "NG"}
 
 
 def test_markets_without_a_bookmaker_price_are_flagged_estimated():
@@ -119,9 +127,17 @@ def test_markets_without_a_bookmaker_price_are_flagged_estimated():
 
 
 def test_real_bookmaker_prices_are_not_flagged_estimated():
-    legs = _legs(bm_home=1.90, bm_over=1.75, bm_btts_yes=1.80)
+    # A complete 1x2 line, because the result markets now require one.
+    legs = _legs(bm_home=1.90, bm_draw=3.50, bm_away=4.20,
+                 bm_over=1.75, bm_btts_yes=1.80)
     for market in ("1", "O2.5", "GG"):
         assert next(l for l in legs if l.market == market).estimated is False
+
+
+def test_a_complete_line_restores_every_result_market():
+    """The gate must be about the line, not about the markets themselves."""
+    legs = {l.market for l in _legs(bm_home=1.90, bm_draw=3.50, bm_away=4.20)}
+    assert {"1", "1X", "12", "X2"} <= legs
 
 
 def test_under_2_5_uses_the_stored_price_when_present():
