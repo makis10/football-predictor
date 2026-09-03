@@ -53,11 +53,24 @@ _INJURY_TTL = 30 * 60   # seconds
 
 
 def _get_history() -> pd.DataFrame:
-    """Load CSVs once and cache for the lifetime of the process."""
+    """Load CSVs once and cache for the lifetime of the process.
+
+    The xG merge is not optional dressing: train.py runs it before
+    build_features, so a model fitted with real rolling xG on 43% of its rows
+    was being served NaN on 100% of them, silently filled with the training
+    median. Same loader as the batch path in scripts/compute_predictions.py —
+    the two must see the same frame or they will not agree on a prediction.
+    """
     global _history_df
     if _history_df is None:
-        from backend.app.ml.features import load_raw_csvs
-        _history_df = load_raw_csvs(_RAW_DIR)
+        from backend.app.ml.features import (
+            XG_DIR, load_raw_csvs, load_xg_data, merge_xg,
+        )
+        df = load_raw_csvs(_RAW_DIR)
+        xg = load_xg_data(XG_DIR)
+        if xg is not None:
+            df = merge_xg(df, xg)
+        _history_df = df
     return _history_df
 
 

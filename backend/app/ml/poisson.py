@@ -55,11 +55,29 @@ DC_RHO = -0.13
 # ── Helpers ───────────────────────────────────────────────────────────────────
 
 
-def season_from_date(dt) -> str:
+DEFAULT_SEASON_START_MONTH = 8   # August — the European autumn-spring calendar
+
+
+def season_from_date(dt, start_month: int = DEFAULT_SEASON_START_MONTH) -> str:
     """
-    Return season string from a date. Season boundary = August.
-    Any date Aug 2024 – Jul 2025  →  '2024/25'.
-    Works with pandas Timestamp, datetime.date, or ISO string.
+    Return the season label containing `dt`, for a league whose season begins in
+    `start_month`. Works with pandas Timestamp, datetime.date, or ISO string.
+
+    August (the default) gives '2024/25' for any date from Aug 2024 to Jul 2025.
+    January gives '2025' — spring-autumn leagues play inside one calendar year,
+    and labelling them '2025/26' would imply a rollover that never happens.
+
+    The parameter exists because the August assumption is wrong for a sixth of
+    the book. Sweden, Norway, Finland, Ireland, Iceland, the Baltics, Belarus,
+    Kazakhstan and both Brazilian divisions play spring-to-autumn, so an August
+    boundary lands in the MIDDLE of their season: the Poisson attack/defence
+    state resets, Pi-Ratings take the 0.85 season-boundary decay, and the league
+    table empties — all with a third of the campaign still to play. Measured on
+    2026-09-03, 27-34% of the evidence behind an August-bucket Poisson estimate
+    for those leagues came from a different campaign, against 0% for an
+    autumn-spring league. See ml.features.infer_season_start_months, which
+    derives the month per league from the fixture calendar rather than from a
+    list somebody has to remember to update.
     """
     import datetime as _dt
 
@@ -69,7 +87,9 @@ def season_from_date(dt) -> str:
         d = _dt.date.fromisoformat(str(dt)[:10])
         month, year = d.month, d.year
 
-    if month >= 8:
+    if start_month <= 1:
+        return str(year)
+    if month >= start_month:
         return f"{year}/{str(year + 1)[-2:]}"
     return f"{year - 1}/{str(year)[-2:]}"
 

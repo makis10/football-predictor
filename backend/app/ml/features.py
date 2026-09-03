@@ -26,6 +26,7 @@ import numpy as np
 import pandas as pd
 
 from backend.app.ml.poisson import (
+    DEFAULT_SEASON_START_MONTH,
     PoissonState,
     POISSON_FEATURE_COLS,
     _nan_poisson,
@@ -163,19 +164,77 @@ def _pi_exp_goals(att: float, opp_def: float) -> float:
 
 # ── Season-phase features ─────────────────────────────────────────────────────
 
-def _season_phase_features(date: "pd.Timestamp") -> dict:
+def infer_season_start_months(df: "pd.DataFrame") -> dict[str, int]:
+    """Which month does each league's season begin in, according to its fixtures?
+
+    Derived from the data, not from a hand-kept list. That is the point: the
+    August-for-everyone assumption was correct when this project had six
+    autumn-spring leagues and silently wrong at 27, and a literal list of the
+    exceptions would rot exactly the same way the next time a league is added.
+    A league whose CSVs arrive tomorrow gets classified tomorrow.
+
+    The test is which gap the league actually takes off. An autumn-spring league
+    is empty in June-July; a spring-autumn one is empty in December-February.
+    A clear margin is required (the winter gap must be under 60% of the summer
+    gap) — anything ambiguous keeps the August default, because a wrong season
+    boundary is worse than the status quo and some files mix in cup rounds that
+    blur the break.
+
+    On the 2015+ history this finds Brazil (both divisions), Sweden (both),
+    Norway, Finland, Ireland, Iceland, Latvia and Kazakhstan — which is every
+    spring-autumn league we actually price.
+
+    The margin deliberately leaves a handful of history-only leagues (Belarus,
+    Estonia, Lithuania, the Faroes, Moldova) on the August default, because the
+    two shapes are genuinely hard to tell apart from a histogram: a cold-climate
+    autumn-spring league takes a long WINTER break, so it also looks empty in
+    December-February. Those leagues only ever contribute Elo and form to clubs
+    that appear elsewhere — train.py drops their rows before fitting — so the
+    cost of leaving them on the default is a slightly wrong Poisson reset in a
+    league we never predict. Getting a league we DO price wrong would be worse,
+    which is why the rule errs this way.
+    """
+    if "League" not in df.columns or "Date" not in df.columns:
+        return {}
+
+    out: dict[str, int] = {}
+    recent = df[df["Date"] >= pd.Timestamp("2015-01-01")]
+    for league, g in recent.groupby("League"):
+        if len(g) < 200:                     # too thin to read a calendar off
+            continue
+        months = g["Date"].dt.month.value_counts()
+        share  = months / months.sum()
+        summer_gap = float(share.reindex([6, 7]).fillna(0).sum())
+        winter_gap = float(share.reindex([12, 1, 2]).fillna(0).sum())
+        if winter_gap < 0.6 * summer_gap:
+            out[league] = 1                  # calendar-year season
+    return out
+
+
+def season_start_month(league: "str | None", starts: "dict[str, int] | None") -> int:
+    """Season-start month for `league`, defaulting to August."""
+    if not starts or league is None:
+        return DEFAULT_SEASON_START_MONTH
+    return starts.get(league, DEFAULT_SEASON_START_MONTH)
+
+
+def _season_phase_features(date: "pd.Timestamp", start_month: int = DEFAULT_SEASON_START_MONTH) -> dict:
     """
     Compute season-progress features from a match date.
 
-    European football seasons run roughly August → May.
+    Most leagues here run August → May, but a sixth of them run spring →
+    autumn, so the start month is a parameter: with the August default, a
+    Swedish match in September was labelled week 4 of a new season when it is
+    really week 26 of the run-in — inverting the one thing these features exist
+    to say.
+
     week 0-11  → phase 1 (early season)
     week 12-23 → phase 2 (mid season)
     week 24+   → phase 3 (late season / run-in)
     """
     month, year = date.month, date.year
-    # Season start = previous August
-    season_start_year = year if month >= 8 else year - 1
-    season_start = pd.Timestamp(season_start_year, 8, 1)
+    season_start_year = year if month >= start_month else year - 1
+    season_start = pd.Timestamp(season_start_year, start_month, 1)
     days = max(0, (date - season_start).days)
     week = days // 7
     if week < 12:
@@ -887,8 +946,19 @@ def build_features(
     # Poisson expected-goals state (season-specific, resets each new season)
     poisson = PoissonState()
 
-    # Season tracking for Pi-Rating decay at season boundaries (D)
-    _prev_season: Optional[str] = None
+    # Season tracking for Pi-Rating decay at season boundaries (D).
+    # Kept PER LEAGUE. A single global "previous season" only worked while every
+    # league rolled over in the same week; once spring-autumn leagues carry their
+    # own labels, rows from two leagues alternate and a global comparison would
+    # fire the decay on almost every match. Decaying per league is also the more
+    # correct reading: a Swedish club's ratings should age at the Swedish
+    # break, not at the English one.
+    _season_starts = infer_season_start_months(df)
+    if _season_starts:
+        print(f"  [season] spring-autumn leagues detected: "
+              f"{', '.join(sorted(_season_starts))}")
+    _prev_season_by_league: dict[str, str] = {}
+    _teams_by_league: dict[str, set] = defaultdict(set)
 
     # EWMA momentum (exponentially weighted moving average of goals and points)
     team_ewma_scored:   dict[str, float] = {}
@@ -1011,17 +1081,20 @@ def build_features(
         # ── Pi-Rating decay at season boundaries (D) ──────────────────────────
         # Applied BEFORE any Pi-Rating read so the first match of a new season
         # sees decayed ratings (reflecting pre-season squad uncertainty).
-        season = season_from_date(row["Date"])
-        if _prev_season is not None and season != _prev_season:
-            # Decay ALL known teams — union of home_att and away_att keys so
-            # teams that only appeared as away side are not skipped.
-            _all_teams = set(pi_home_att.keys()) | set(pi_away_att.keys())
-            for _team in _all_teams:
+        _start_month = season_start_month(league, _season_starts)
+        season = season_from_date(row["Date"], _start_month)
+        _teams_by_league[league].update((h, a))
+        _prev_league_season = _prev_season_by_league.get(league)
+        if _prev_league_season is not None and season != _prev_league_season:
+            # Decay the teams of THIS league — including any that have only
+            # appeared as the away side, which is why the set is filled from
+            # both columns above.
+            for _team in _teams_by_league[league]:
                 pi_home_att[_team] *= PI_DECAY
                 pi_home_def[_team] *= PI_DECAY
                 pi_away_att[_team] *= PI_DECAY
                 pi_away_def[_team] *= PI_DECAY
-        _prev_season = season
+        _prev_season_by_league[league] = season
 
         # ── Elo ───────────────────────────────────────────────────────────────
         feat["h_elo"]           = elo[h]
@@ -1095,7 +1168,7 @@ def build_features(
             feat["h2h_over25_rate"]     = np.nan
 
         # ── Season phase (F) ──────────────────────────────────────────────────
-        feat.update(_season_phase_features(row["Date"]))
+        feat.update(_season_phase_features(row["Date"], _start_month))
 
         # ── League one-hot ────────────────────────────────────────────────────
         for lg in known_leagues:
@@ -1473,6 +1546,11 @@ def build_team_snapshot(history_df: pd.DataFrame) -> dict:
     ref_draws:     dict = defaultdict(int)
     ref_cards:     dict = defaultdict(float)
 
+    # Same per-league season tracking as build_features — the two must agree or
+    # the serving path decays Pi-Ratings at different moments from training.
+    _snap_season_starts = infer_season_start_months(history_df)
+    _prev_season_snap_by_league: dict[str, str] = {}
+    _snap_teams_by_league: dict[str, set] = defaultdict(set)
     _prev_season_snap: Optional[str] = None
 
     # EWMA momentum
@@ -1490,16 +1568,19 @@ def build_team_snapshot(history_df: pd.DataFrame) -> dict:
         hg, ag = int(row["home_goals"]), int(row["away_goals"])
 
         # Pi-Rating decay at season boundaries (D) — same logic as build_features
-        _snap_season = season_from_date(row["Date"])
-        if _prev_season_snap is not None and _snap_season != _prev_season_snap:
-            # Decay ALL known teams — union of home_att and away_att keys so
-            # teams that only appeared as away side are not skipped.
-            _all_snap_teams = set(pi_home_att.keys()) | set(pi_away_att.keys())
+        _snap_league = row.get("League", "Unknown")
+        _snap_start_month = season_start_month(_snap_league, _snap_season_starts)
+        _snap_season = season_from_date(row["Date"], _snap_start_month)
+        _snap_teams_by_league[_snap_league].update((h, a))
+        _prev_snap_league_season = _prev_season_snap_by_league.get(_snap_league)
+        if _prev_snap_league_season is not None and _snap_season != _prev_snap_league_season:
+            _all_snap_teams = _snap_teams_by_league[_snap_league]
             for _team in _all_snap_teams:
                 pi_home_att[_team] *= PI_DECAY
                 pi_home_def[_team] *= PI_DECAY
                 pi_away_att[_team] *= PI_DECAY
                 pi_away_def[_team] *= PI_DECAY
+        _prev_season_snap_by_league[_snap_league] = _snap_season
         _prev_season_snap = _snap_season
 
         # Snapshot pi-expected before update (needed for update step)
@@ -1582,7 +1663,7 @@ def build_team_snapshot(history_df: pd.DataFrame) -> dict:
         _s_ayy = float(row.get("a_yellow", 0) or 0) if pd.notna(row.get("a_yellow", 0)) else 0.0
         snap_reds_5[h].append(_s_hry);    snap_reds_5[a].append(_s_ary)
         snap_yellows_5[h].append(_s_hyy); snap_yellows_5[a].append(_s_ayy)
-        _snap_season_key = season_from_date(row["Date"])
+        _snap_season_key = _snap_season
         snap_season_yellows[(_snap_season_key, h)] += int(_s_hyy)
         snap_season_yellows[(_snap_season_key, a)] += int(_s_ayy)
 
@@ -1594,8 +1675,8 @@ def build_team_snapshot(history_df: pd.DataFrame) -> dict:
         pi_away_att[a] += PI_C * err_a; pi_home_def[h] -= PI_C * err_a
 
         # Poisson state update
-        league = row.get("League", "Unknown")
-        _season = season_from_date(row["Date"])
+        league = _snap_league
+        _season = _snap_season
         poisson.update(h, a, hg, ag, league, _season)
 
         # EWMA update
@@ -1645,6 +1726,13 @@ def build_team_snapshot(history_df: pd.DataFrame) -> dict:
         ref_draws=ref_draws, ref_cards=ref_cards,
         poisson_state=poisson,
         last_season=_prev_season_snap,  # season of last history row — used for inference-time Pi-Rating decay
+        # Per-league versions of the above. `last_season` alone cannot answer
+        # "has THIS league rolled over since its last match?" once leagues keep
+        # different calendars, and getting that wrong applies (or skips) the
+        # 0.85 Pi-Rating decay at serve time only — a train/serve mismatch.
+        last_season_by_league=dict(_prev_season_snap_by_league),
+        season_start_months=dict(_snap_season_starts),
+        teams_by_league={k: set(v) for k, v in _snap_teams_by_league.items()},
         # EWMA momentum
         team_ewma_scored=snap_ewma_scored,
         team_ewma_conceded=snap_ewma_conceded,
@@ -1883,8 +1971,15 @@ def compute_match_features(
     # Apply PI_DECAY when predicting into a new season (train/inference consistency).
     # During training build_features() decays ratings at season boundaries; here we
     # replicate that for the first season the snapshot has not yet seen.
-    _snap_last_season = s.get("last_season")
-    _match_season = season_from_date(match_date) if match_date is not None else _snap_last_season
+    # Both sides of the comparison must use THIS league's calendar. Reading the
+    # global `last_season` while the fixture's own label came from a different
+    # season convention would compare "2026" with "2025/26" and decay every
+    # spring-autumn fixture on every prediction.
+    _start_month = season_start_month(league, s.get("season_start_months"))
+    _by_league   = s.get("last_season_by_league") or {}
+    _snap_last_season = _by_league.get(league, s.get("last_season"))
+    _match_season = (season_from_date(match_date, _start_month)
+                     if match_date is not None else _snap_last_season)
     _pi_decay_factor = PI_DECAY if (_snap_last_season and _match_season != _snap_last_season) else 1.0
 
     h_att = s["pi_home_att"][h] * _pi_decay_factor; h_def = s["pi_home_def"][h] * _pi_decay_factor
@@ -1937,7 +2032,7 @@ def compute_match_features(
 
     # Season phase features (F)
     if match_date is not None:
-        feat.update(_season_phase_features(pd.Timestamp(match_date)))
+        feat.update(_season_phase_features(pd.Timestamp(match_date), _start_month))
     else:
         feat["season_week"]             = np.nan
         feat["season_phase"]            = np.nan
@@ -1983,7 +2078,7 @@ def compute_match_features(
     # to predict a future match.
     poisson_state: Optional[PoissonState] = s.get("poisson_state")
     if poisson_state is not None and match_date is not None:
-        _season = season_from_date(match_date)
+        _season = season_from_date(match_date, _start_month)
         feat.update(poisson_state.features(h, a, league, _season))
     else:
         feat.update(_nan_poisson())

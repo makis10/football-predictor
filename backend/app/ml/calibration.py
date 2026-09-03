@@ -1,15 +1,20 @@
 """
-Isotonic calibration for XGBoost probability outputs.
+Probability calibration for the XGBoost outputs.
 
-After XGBoost training, a dedicated calibration set (the 2023/24 season) is
-used to fit isotonic regressors on each model's raw outputs. This corrects
-systematic over/underconfidence without changing the model's ranking power.
+After training, a held-out calibration season is used to correct systematic
+over/underconfidence without changing the model's ranking power.
 
-For the result model (3-class) we use one-vs-rest: three separate isotonic
-regressors, one per outcome (Home Win, Draw, Away Win). After calibration the
-three values are renormalized to sum to 1.
+The two models are calibrated differently, on purpose:
 
-For the goals model (binary) we fit:
+  - Result (3-class) — MATRIX (Dirichlet) SCALING: a multinomial logistic on the
+    log-probabilities, so the three outcomes correct each other. It replaced
+    one-vs-rest isotonic in September 2026; see the measurement table above
+    MatrixResultCalibrator for why, and note that the OVR arrangement is still
+    readable so a serving process can load a pickle written before the change.
+
+  - Goals (binary) — isotonic, which is the right tool for one dimension.
+
+For the goals model we fit:
   - One GLOBAL isotonic regressor on P(Over 2.5).
   - Per-LEAGUE isotonic regressors on P(Over 2.5) — fitted only when the
     league has >= min_league_samples calibration rows.  At inference time the
@@ -51,6 +56,60 @@ from sklearn.isotonic import IsotonicRegression
 MODELS_DIR = os.path.join(os.path.dirname(__file__), "..", "..", "data", "models")
 
 
+# ── Result calibration: matrix (Dirichlet) scaling ────────────────────────────
+# Replaces three one-vs-rest isotonic regressors plus a renormalisation, which
+# is not a 3-class calibration method at all: each class is fitted blind to the
+# other two and the division back to a simplex afterwards is unconstrained, so
+# nothing keeps the corrected vector coherent.
+#
+# Measured 2026-09-03, same model, same cal season, scored on the 2025/26 test
+# rows (all rows / the 2,984 with a real Pinnacle line):
+#
+#     none (raw)             1.0243 / 1.0145   acc 47.72% / 48.22%
+#     temperature scaling    1.0244 / 1.0143   acc 47.72% / 48.22%
+#     OVR isotonic (before)  1.0174 / 1.0047   acc 50.01% / 50.84%
+#     vector scaling         1.0129 / 1.0025   acc 50.25% / 51.11%
+#     matrix / Dirichlet     1.0126 / 1.0022   acc 50.21% / 51.17%
+#
+# Temperature scaling is worth noting as the control: one shared parameter moves
+# nothing at all, so the gain here is genuinely from letting the three outcomes
+# correct each other, not from smoothing.
+#
+# C=1.0 rather than an unpenalised fit. The two scored the same (1.00228 against
+# 1.00221) and the cal set is a single season, roughly 7,000 rows for 12
+# parameters; the regularised fit is the one that will still behave when a
+# season is thin.
+_MATRIX_C = 1.0
+
+
+class MatrixResultCalibrator:
+    """Multinomial logistic on log-probabilities: q = softmax(W · log p + b).
+
+    Defined at module level, not inside fit_calibrators, so pickle can find it
+    when predict.py loads calibrator_result.pkl in a process that never imports
+    the trainer.
+    """
+
+    def __init__(self, lr):
+        self._lr = lr
+
+    def predict_proba(self, raw_probs: "np.ndarray") -> "np.ndarray":
+        z = np.log(np.clip(np.atleast_2d(raw_probs), 1e-9, None))
+        return self._lr.predict_proba(z)
+
+    def __repr__(self) -> str:                       # shown in training logs
+        return f"MatrixResultCalibrator(C={_MATRIX_C})"
+
+
+def fit_matrix_result_calibrator(raw_probs, y) -> MatrixResultCalibrator:
+    from sklearn.linear_model import LogisticRegression
+
+    z = np.log(np.clip(np.asarray(raw_probs, dtype=float), 1e-9, None))
+    lr = LogisticRegression(C=_MATRIX_C, max_iter=2000)
+    lr.fit(z, np.asarray(y))
+    return MatrixResultCalibrator(lr)
+
+
 # ── Fitting ───────────────────────────────────────────────────────────────────
 
 def fit_calibrators(
@@ -62,7 +121,7 @@ def fit_calibrators(
     cal_df: "pd.DataFrame | None" = None,
     min_league_samples: int = 80,
     X_cal_goals: "pd.DataFrame | None" = None,
-) -> "tuple[list[IsotonicRegression], IsotonicRegression, dict[str, IsotonicRegression]]":
+) -> "tuple[MatrixResultCalibrator, IsotonicRegression, dict[str, IsotonicRegression]]":
     """
     Fit isotonic calibrators on a held-out calibration set.
 
@@ -83,14 +142,9 @@ def fit_calibrators(
     """
     _X_goals = X_cal_goals if X_cal_goals is not None else X_cal
 
-    # ── Result model (3-class OVR) ────────────────────────────────────────────
+    # ── Result model (3-class, matrix/Dirichlet scaling) ──────────────────────
     raw_result = result_model.predict_proba(X_cal)   # shape (n, 3)
-    result_cals: list[IsotonicRegression] = []
-    for i in range(3):
-        y_binary = (y_cal_result == i).astype(float)
-        iso = IsotonicRegression(out_of_bounds="clip")
-        iso.fit(raw_result[:, i], y_binary)
-        result_cals.append(iso)
+    result_cals = fit_matrix_result_calibrator(raw_result, y_cal_result)
 
     # Measure calibration improvement on this split
     raw_acc = (raw_result.argmax(axis=1) == y_cal_result).mean()
@@ -153,17 +207,28 @@ def fit_calibrators(
 
 def _apply_result(
     raw_probs,
-    calibrators: list[IsotonicRegression],
+    calibrators,
     batch: bool = False,
 ) -> np.ndarray:
     """
-    Apply 3 OVR isotonic calibrators and renormalize to sum to 1.
-    batch=True handles shape (n, 3); batch=False handles shape (3,).
+    Apply the result calibrator. batch=True handles shape (n, 3); batch=False
+    handles shape (3,).
+
+    Accepts BOTH shapes the artefact has taken: a MatrixResultCalibrator (what
+    training writes now) and the legacy list of three one-vs-rest isotonic
+    regressors. The legacy branch matters — between deploying this code and the
+    next retrain, the pickle on disk is still the old one, and a serving process
+    that cannot read it would fall back to raw probabilities silently.
     """
     raw = np.atleast_2d(raw_probs)          # always (n, 3)
-    cal = np.column_stack([
-        calibrators[i].predict(raw[:, i]) for i in range(3)
-    ])                                       # shape (n, 3)
+
+    if hasattr(calibrators, "predict_proba"):
+        cal = calibrators.predict_proba(raw)
+    else:
+        cal = np.column_stack([
+            calibrators[i].predict(raw[:, i]) for i in range(3)
+        ])                                   # shape (n, 3)
+
     totals = cal.sum(axis=1, keepdims=True)
     totals = np.where(totals > 0, totals, 1.0)
     cal = cal / totals
@@ -215,7 +280,7 @@ def apply_calibration(
 # ── Persist ───────────────────────────────────────────────────────────────────
 
 def save_calibrators(
-    result_calibrators: "list[IsotonicRegression]",
+    result_calibrators: "MatrixResultCalibrator",
     goals_calibrator: "IsotonicRegression",
     league_goals_calibrators: "dict[str, IsotonicRegression] | None" = None,
     models_dir: str = MODELS_DIR,

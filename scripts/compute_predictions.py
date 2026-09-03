@@ -35,6 +35,7 @@ from backend.app.models.odds_history import OddsHistory
 from backend.app.ml.predict import anchor_to_market  # noqa: E402
 from backend.app.ml.features import (
     load_raw_csvs, build_team_snapshot, compute_match_features,
+    load_xg_data, merge_xg, XG_DIR,
     FEATURE_COLS, RESULT_FEATURE_COLS, GOALS_FEATURE_COLS,
 )
 from backend.app.ml.european import load_european_data, EUROPEAN_DIR
@@ -237,6 +238,22 @@ if match_ids:
 RAW_DIR = os.path.join(_PROJECT_ROOT, "backend", "data", "raw")
 print("Loading history …", flush=True)
 history_df = load_raw_csvs(RAW_DIR)
+
+# Merge Understat xG, exactly as train.py does before build_features. Without
+# this the eight xG features are NaN on 100% of served fixtures and get filled
+# with the global training median, while 43% of the rows the model was FITTED on
+# carried a real value — the model learned to read a signal that never arrives.
+# Measured 2026-09-03 over 969 replayed matches: restoring it cuts the
+# train/serve divergence in the argmax pick from 4.33% to 1.34%, i.e. the missing
+# merge was about 70% of the whole gap.
+_xg_df = load_xg_data(XG_DIR)
+if _xg_df is not None:
+    history_df = merge_xg(history_df, _xg_df)
+    print(f"xG merged: {history_df['home_xg'].notna().sum():,} of "
+          f"{len(history_df):,} history rows carry a value", flush=True)
+else:
+    print(f"[warn] no xG data in {XG_DIR} — xG features will serve as the "
+          f"training median, which is NOT what the model was fitted on", flush=True)
 print(f"History: {len(history_df):,} rows", flush=True)
 
 print("Building team snapshot …", flush=True)
