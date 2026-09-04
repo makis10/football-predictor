@@ -1,12 +1,28 @@
-"""
-2025-26 out-of-sample backtest using production models.
+"""Out-of-sample backtest of the production models on the held-out test season.
 
-Walk-forward feature engineering on the FULL dataset ensures every 2025-26 row
-gets causally correct rolling stats (Elo, Pi-ratings, form windows updated
-match-by-match through the season — same as production).
+Walk-forward feature engineering on the FULL dataset so every evaluated row gets
+causally correct rolling stats — Elo, Pi-ratings, form windows updated
+match-by-match, exactly as production does. The models are LOADED from disk, not
+retrained here, so this measures the live system.
 
-Production models are loaded from disk rather than retrained here, so this
-directly measures the live system's performance on unseen data.
+Two things were wrong with this script until 2026-09-04 and both inflated the
+population rather than the score:
+
+  • It evaluated every league on disk, including HISTORY_ONLY_LEAGUES — Spain2,
+    Turkey2, Serbia, Bulgaria, Czechia and the rest. train.py drops those before
+    fitting and we never serve a prediction for them, so its headline "50.6% over
+    19,713 matches" described a population that does not exist. It now uses the
+    same exclusion train.py does.
+
+  • Its window was the literal 2025-07-01 onward, which no longer means anything
+    now that the split rolls. It takes TRAIN_CUTOFF/TEST_CUTOFF from train.py, so
+    it always scores the season that was actually held out.
+
+It also reports what we SERVE, not only what the model says. Anchoring to the
+de-vigged bookmaker line is 57% of the published 1x2, so a model-only number is
+not the site's number. Three rows are printed where a real Pinnacle price
+exists: the model alone, the model anchored, and Pinnacle by itself — that last
+one being the ceiling worth measuring against.
 
 Usage:
   docker compose exec backend python scripts/backtest_2526.py
@@ -30,7 +46,10 @@ from sklearn.metrics import log_loss, brier_score_loss
 from backend.app.ml.features import (
     load_raw_csvs, load_xg_data, merge_xg, build_features,
     RESULT_FEATURE_COLS, GOALS_FEATURE_COLS, BTTS_FEATURE_COLS,
+    HISTORY_ONLY_LEAGUES,
 )
+from backend.app.ml.train import TRAIN_CUTOFF, TEST_CUTOFF
+from backend.app.ml.predict import anchor_to_market
 from backend.app.ml.european import load_european_data, EUROPEAN_DIR
 from backend.app.ml.calibration import apply_calibration, load_calibrators
 from backend.app.ml.draw_classifier import blend_draw_probability
@@ -39,7 +58,7 @@ from backend.app.ml.predict import _get_draw_alpha, _get_btts_threshold, SoftVot
 RAW_DIR    = "/app/backend/data/raw"
 XG_DIR     = "/app/backend/data/xg"
 MODELS_DIR = "/app/backend/data/models"
-CUTOFF     = pd.Timestamp("2025-07-01")   # 2025-26 season starts here
+CUTOFF     = TRAIN_CUTOFF                 # the held-out test season, from train.py
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--output", default=None, help="Save per-match rows to CSV")
@@ -58,9 +77,15 @@ if xg_df is not None:
 
 eur_df = load_european_data(EUROPEAN_DIR)
 
-n_eval_raw = (df_all["Date"] >= CUTOFF).sum()
-print(f"  Train (< 2025-07-01): {(df_all['Date'] < CUTOFF).sum():,} rows")
-print(f"  Eval  (2025-26 YTD) : {n_eval_raw:,} rows")
+# Same exclusion train.py applies: these leagues build Elo and form for clubs
+# that appear elsewhere, then leave before fitting. Scoring them would report on
+# matches we never predict.
+_hist = df_all["League"].isin(HISTORY_ONLY_LEAGUES)
+print(f"  {_hist.sum():,} history-only rows kept for features, excluded from scoring")
+
+n_eval_raw = ((df_all["Date"] >= CUTOFF) & (df_all["Date"] < TEST_CUTOFF) & ~_hist).sum()
+print(f"  Train (< {CUTOFF.date()}): {(df_all['Date'] < CUTOFF).sum():,} rows")
+print(f"  Eval  ({CUTOFF.date()} → {TEST_CUTOFF.date()}) : {n_eval_raw:,} rows")
 
 
 # ── 2. Walk-forward feature engineering on ALL data ───────────────────────────
@@ -80,7 +105,10 @@ df_feat["target_result"] = df_feat.apply(
 df_feat["target_goals"] = (df_feat["home_goals"] + df_feat["away_goals"] > 2.5).astype(int)
 df_feat["target_btts"]  = ((df_feat["home_goals"] > 0) & (df_feat["away_goals"] > 0)).astype(int)
 
-df_eval = df_feat[df_feat["Date"] >= CUTOFF].dropna(subset=["home_goals", "away_goals"]).copy()
+df_eval = df_feat[(df_feat["Date"] >= CUTOFF)
+                  & (df_feat["Date"] < TEST_CUTOFF)
+                  & ~df_feat["League"].isin(HISTORY_ONLY_LEAGUES)]
+df_eval = df_eval.dropna(subset=["home_goals", "away_goals"]).copy()
 print(f"  Eval rows with known result: {len(df_eval):,}")
 
 if len(df_eval) == 0:
@@ -172,6 +200,11 @@ for _, row in df_eval.sort_values("Date").iterrows():
         records.append({
             "date":       row["Date"].date(),
             "league":     row.get("League", ""),
+            # Raw Pinnacle prices, so the served (anchored) number and the
+            # market's own can be scored on the same rows further down.
+            "psh": row.get("psh", np.nan),
+            "psd": row.get("psd", np.nan),
+            "psa": row.get("psa", np.nan),
             "home":       row.get("home_team", ""),
             "away":       row.get("away_team", ""),
             "home_goals": int(row["home_goals"]),
@@ -250,6 +283,41 @@ if ll:
 print(f"  Brier (result)      : {brier_r:.4f}")
 print(f"  Brier (O/U 2.5)     : {brier_g:.4f}")
 print(f"  Brier (BTTS)        : {brier_b:.4f}")
+
+# ── What we actually serve, and the ceiling ───────────────────────────────────
+# The published 1x2 is 57% the de-vigged bookmaker line (predict.anchor_to_market),
+# so a model-only figure is not the site's figure. Scored only where a real
+# Pinnacle price exists, because that is where anchoring can happen at all.
+_mk = results_df[["psh", "psd", "psa"]].astype(float)
+_has_odds = _mk.notna().all(axis=1) & (_mk > 1).all(axis=1)
+print(f"\n{'SERVED vs MODEL vs MARKET  (rows with a real Pinnacle line)':─<{W}}")
+if _has_odds.sum() < 100:
+    print(f"  only {_has_odds.sum()} rows carry a price — not enough to report")
+else:
+    sub = results_df[_has_odds]
+    mk  = _mk[_has_odds].to_numpy()
+    inv = 1.0 / mk
+    market = inv / inv.sum(axis=1, keepdims=True)
+    model  = sub[["p_home", "p_draw", "p_away"]].to_numpy()
+    served = np.array([anchor_to_market(tuple(m), tuple(o))
+                       for m, o in zip(model, mk)])
+    truth  = sub["actual"].map({"H": 0, "D": 1, "A": 2}).to_numpy()
+
+    print(f"  {'':<26}{'n':>6}{'accuracy':>10}{'log-loss':>10}{'draw AUC':>10}")
+    from sklearn.metrics import roc_auc_score as _auc
+    for label, P in (("model alone", model),
+                     ("served (anchored w=0.57)", served),
+                     ("de-vigged Pinnacle", market)):
+        P = np.clip(P, 1e-9, 1); P = P / P.sum(axis=1, keepdims=True)
+        acc = (P.argmax(1) == truth).mean()
+        ll  = log_loss(truth, P, labels=[0, 1, 2])
+        auc = _auc(truth == 1, P[:, 1])
+        print(f"  {label:<26}{len(truth):>6}{acc:>9.1%}{ll:>10.4f}{auc:>10.4f}")
+    _gap = log_loss(truth, np.clip(served,1e-9,1)/np.clip(served,1e-9,1).sum(1,keepdims=True),
+                    labels=[0,1,2]) - log_loss(truth, market, labels=[0,1,2])
+    print(f"  → served is {abs(_gap):.4f} log-loss "
+          f"{'BEHIND' if _gap > 0 else 'ahead of'} the market")
+    print(f"  coverage: {_has_odds.mean():.1%} of evaluated matches carry a price")
 
 # By league
 print(f"\n{'BY LEAGUE':─<{W}}")
