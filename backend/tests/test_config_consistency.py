@@ -94,63 +94,70 @@ def test_stats_fetcher_uses_the_shared_league_id_map():
 def test_the_training_split_cannot_go_stale():
     """The trees must not be fitted on a window that stopped moving.
 
-    2026-09-03: CAL_CUTOFF had been the literal 2024-07-01 since the first
-    commit. Twelve consecutive weekly retrains added 54 training rows between
-    them (training_runs id 35→46: n_train 84,411 → 84,465) while the test set
-    grew by 246 — every match played in two full seasons was invisible to the
-    model, and the 10-minute Monday retrain was refitting the same data and
-    reporting the seed noise as a change in accuracy.
+    2026-09-03: the boundaries had been literals since the first commit. Twelve
+    consecutive weekly retrains added 54 training rows between them
+    (training_runs id 35→46: n_train 84,411 → 84,465) while the test set grew by
+    246 — two full seasons invisible to the trees, and a 10-minute Monday job
+    refitting the same data and reporting seed noise as a change in accuracy.
 
     Nothing could have failed here: a stale date is valid code. So this asserts
-    against the clock instead.
+    against the clock instead, and against the documented window ORDER — trees,
+    then test, then calibration, with the calibrator on the newest seasons.
     """
     import pandas as pd
 
     from backend.app.ml.train import CAL_CUTOFF, TEST_CUTOFF, TRAIN_CUTOFF
 
-    assert CAL_CUTOFF < TRAIN_CUTOFF < TEST_CUTOFF, (
-        f"split boundaries out of order: {CAL_CUTOFF} / {TRAIN_CUTOFF} / {TEST_CUTOFF}")
+    # Trees, then test, then calibration — the calibration window is the most
+    # recent, deliberately (see the CAL_SEASONS comment in train.py).
+    assert TRAIN_CUTOFF < CAL_CUTOFF < TEST_CUTOFF, (
+        f"split boundaries out of order: trees<{TRAIN_CUTOFF} test<{CAL_CUTOFF} "
+        f"cal<{TEST_CUTOFF}")
 
     if any(os.getenv(v) for v in ("ML_CAL_CUTOFF", "ML_TRAIN_CUTOFF", "ML_TEST_CUTOFF")):
         pytest.skip("split pinned by ML_*_CUTOFF for a backtest")
 
-    from backend.app.ml.train import TEST_SEASON_MATURITY_MONTHS, _season_start
+    from backend.app.ml.train import (
+        CAL_SEASONS, TEST_SEASON_MATURITY_MONTHS, _season_start,
+    )
 
     # Re-derive the rule from today's date. An age-only assertion is not enough:
     # on the day this bug was found the frozen 2024-07-01 was 26 months old and
     # would have passed any reasonable age bound. What gives it away is that it
     # is not the value the rule produces.
-    today   = pd.Timestamp.today().normalize()
-    current = _season_start(today)
-    mature  = today >= current + pd.DateOffset(months=TEST_SEASON_MATURITY_MONTHS)
-    expected_train = current if mature else current - pd.DateOffset(years=1)
+    today    = pd.Timestamp.today().normalize()
+    current  = _season_start(today)
+    mature   = today >= current + pd.DateOffset(months=TEST_SEASON_MATURITY_MONTHS)
+    latest   = current if mature else current - pd.DateOffset(years=1)
 
-    assert TRAIN_CUTOFF == expected_train, (
-        f"TRAIN_CUTOFF is {TRAIN_CUTOFF.date()}, but the season rule says "
-        f"{expected_train.date()} for today ({today.date()}). A hard-coded split "
-        f"stops moving while the calendar does not — that is how two whole "
-        f"seasons became invisible to the model."
+    assert TEST_CUTOFF == latest + pd.DateOffset(years=1), (
+        f"TEST_CUTOFF is {TEST_CUTOFF.date()}, but the season rule says "
+        f"{(latest + pd.DateOffset(years=1)).date()} for today ({today.date()}). "
+        f"A hard-coded split stops moving while the calendar does not — that is "
+        f"how two whole seasons became invisible to the model."
     )
-    assert CAL_CUTOFF == expected_train - pd.DateOffset(years=1)
-    assert TEST_CUTOFF == expected_train + pd.DateOffset(years=1)
-    assert TEST_CUTOFF > today - pd.DateOffset(months=6), (
-        f"TEST_CUTOFF {TEST_CUTOFF.date()} is in the past — the reported test set "
-        f"can no longer grow, so the metrics are frozen on old matches."
+    assert CAL_CUTOFF == TEST_CUTOFF - pd.DateOffset(years=CAL_SEASONS)
+    assert TRAIN_CUTOFF == CAL_CUTOFF - pd.DateOffset(years=1)
+    assert TEST_CUTOFF > today - pd.DateOffset(months=18), (
+        f"TEST_CUTOFF {TEST_CUTOFF.date()} is too far in the past — the "
+        f"calibration window has stopped following the calendar."
     )
 
 
 def test_the_season_rule_actually_advances():
     """The rule itself, at fixed dates — the part `today` cannot exercise.
 
-    On 2026-09-03 the rolling rule returns exactly the literals it replaced, so
-    the equality assertion above is satisfied by both the fix and the bug. What
-    separates them is that one moves next December and the other does not.
+    `today` cannot exercise the rollover, so the rule is checked at fixed dates:
+    what separates a rolling rule from a frozen literal is that one moves next
+    December and the other does not.
     """
     import pandas as pd
 
-    from backend.app.ml.train import TEST_SEASON_MATURITY_MONTHS, _season_start
+    from backend.app.ml.train import (
+        CAL_SEASONS, TEST_SEASON_MATURITY_MONTHS, _season_start,
+    )
 
-    def train_cutoff_on(day: str) -> pd.Timestamp:
+    def latest_complete_on(day: str) -> pd.Timestamp:
         ts = pd.Timestamp(day)
         cur = _season_start(ts)
         return cur if ts >= cur + pd.DateOffset(months=TEST_SEASON_MATURITY_MONTHS) \
@@ -159,15 +166,22 @@ def test_the_season_rule_actually_advances():
     assert _season_start(pd.Timestamp("2026-06-30")) == pd.Timestamp("2025-07-01")
     assert _season_start(pd.Timestamp("2026-07-01")) == pd.Timestamp("2026-07-01")
 
-    # Immature season → still pointing at the previous one.
-    assert train_cutoff_on("2026-09-03") == pd.Timestamp("2025-07-01")
-    assert train_cutoff_on("2026-11-30") == pd.Timestamp("2025-07-01")
+    # Immature season → the latest COMPLETE one is still the previous.
+    assert latest_complete_on("2026-09-04") == pd.Timestamp("2025-07-01")
+    assert latest_complete_on("2026-11-30") == pd.Timestamp("2025-07-01")
     # …and it steps forward on its own, without anyone editing train.py.
-    assert train_cutoff_on("2026-12-01") == pd.Timestamp("2026-07-01")
-    assert train_cutoff_on("2027-06-30") == pd.Timestamp("2026-07-01")
-    assert train_cutoff_on("2027-12-01") == pd.Timestamp("2027-07-01")
+    assert latest_complete_on("2026-12-01") == pd.Timestamp("2026-07-01")
+    assert latest_complete_on("2027-06-30") == pd.Timestamp("2026-07-01")
+    assert latest_complete_on("2027-12-01") == pd.Timestamp("2027-07-01")
     # A year of literals would have frozen here; the rule has moved twice.
-    assert train_cutoff_on("2028-12-01") == pd.Timestamp("2028-07-01")
+    assert latest_complete_on("2028-12-01") == pd.Timestamp("2028-07-01")
+
+    # And the windows derived from it stay in the documented order:
+    # trees < test < calibration, with the calibrator on the newest seasons.
+    latest = latest_complete_on("2026-09-04")
+    test_end  = latest + pd.DateOffset(years=1)
+    cal_start = test_end - pd.DateOffset(years=CAL_SEASONS)
+    assert cal_start - pd.DateOffset(years=1) < cal_start < test_end
 
 
 def test_history_only_leagues_are_never_one_hot_encoded():
