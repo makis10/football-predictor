@@ -23,11 +23,11 @@ Three time windows, rolling with the season (see the comment on CAL_SEASONS):
                    matrix calibrators, the draw-alpha sweep and the BTTS
                    threshold are all fitted here.
 
-The calibration window is LATER in time than the test window. That is the point
-— the calibrator is what decides the number printed on the card, so it is fitted
-on the seasons closest to what we serve — and the cost is that the test metric
-printed at the end of a run is optimistic. For a clean forward number, score a
-window after CAL_CUTOFF.
+The test window is the newest complete season and comes after both of the
+others, so the metrics a run prints are a genuine forward estimate. See the
+comment on CAL_SEASONS for why the calibration window is one season and not two:
+measured, the calibrator saturates near 7,000 rows and a second season buys
+nothing (-0.06pp accuracy, 95% CI [-0.16, +0.04]).
 
 Usage:
   python -m backend.app.ml.train
@@ -78,50 +78,53 @@ MODELS_DIR = os.path.join(os.path.dirname(__file__), "..", "..", "data", "models
 
 # ── The three windows ─────────────────────────────────────────────────────────
 #
-# Layout, newest first:
+#     Date < CAL_CUTOFF             trees
+#     CAL_CUTOFF .. TRAIN_CUTOFF    calibration  — CAL_SEASONS complete seasons
+#     TRAIN_CUTOFF .. TEST_CUTOFF   test         — the newest complete season
 #
-#     CAL_CUTOFF .. TEST_CUTOFF     calibration  — the CAL_SEASONS most recent
-#                                                 complete seasons
-#     TRAIN_CUTOFF .. CAL_CUTOFF    test         — the season before those
-#     Date < TRAIN_CUTOFF           trees
+# In time order: trees, calibration, test. The test season is always the most
+# recent complete one and always comes AFTER everything that was fitted, so the
+# number a run prints is a genuine forward estimate.
 #
-# Note the order in TIME is train, then test, then calibration. That is
-# deliberate and it is a trade, requested 2026-09-04:
+# WHY THE CALIBRATION WINDOW IS ONE SEASON, NOT TWO
 #
-#   + The calibrator is fitted on the two most recent seasons — twice the rows
-#     (≈14,000 against 7,000) and, more to the point, the ones closest to the
-#     distribution we actually serve. Calibration is the layer that decides what
-#     number goes on the card, so fitting it on stale seasons is the part of the
-#     old layout that most deserved changing.
+# The obvious objection is that 2025/26 is better data than 2015 and it seems
+# wasteful to spend it on a test set instead of on calibration. Measured
+# 2026-09-04 with the trees held fixed, so only the calibration window varied,
+# scored on 7,037 held-out matches (backend/data/cache/verify/cal_size.py):
 #
-#   − The reported test metric is no longer a clean forward estimate. The
-#     calibrator has seen seasons that come AFTER the test season, so the number
-#     printed below is optimistic and must not be quoted as "how we will do next
-#     week". For that, score a window later than CAL_CUTOFF, which nothing here
-#     has touched — scripts/backtest_2526.py or the settled rows in the
-#     predictions table.
+#     cal = 23/24          n= 7,087   acc 50.21%   log-loss 1.0136
+#     cal = 24/25          n= 7,008   acc 50.16%   log-loss 1.0134
+#     cal = 23/24 + 24/25  n=14,095   acc 50.11%   log-loss 1.0134
 #
-#   − The trees give up a season: they now stop at TRAIN_CUTOFF, one year
-#     earlier than before. Measured 2026-09-03, that costs nothing detectable —
-#     extending or shrinking the tree window, and every time-decay half-life
-#     from one year to none, all landed inside the noise (accuracy 48.8–49.7%,
-#     log-loss 1.020–1.044 on the same 3,888 rows). The tree window was never
-#     what was holding the numbers down.
+#     two seasons vs one, paired bootstrap 5,000x:
+#       accuracy  -0.06pp, 95% CI [-0.16, +0.04], P(two better) = 0.112
+#       log-loss  +0.0000, 95% CI [-0.0004, +0.0004], P(two better) = 0.484
 #
-# The boundaries roll with the calendar rather than being literals. They used to
-# be literals and it did not show: twelve consecutive weekly retrains added 54
-# training rows BETWEEN THEM (training_runs id 35→46, n_train 84,411 → 84,465)
-# while the test set grew by 246. A "weekly retrain" that refits the same data
-# and reports the seed noise as a change in accuracy.
+# That is not "too close to call" — the interval is ±0.1pp on 7,000 matches. The
+# second season buys nothing, and which season it is does not matter either
+# (older 23/24 scores the same as newer 24/25). The size sweep shows why:
 #
-# Anchored to season boundaries (1 July), not to today, so a retrain on the 3rd
-# and one on the 25th of the same month produce the same split; otherwise the
-# windows would shift by a few rows every run and metrics would not be
-# comparable week to week.
-CAL_SEASONS = 2               # complete seasons in the calibration window
+#     n_cal    500 → acc 47.90%    3,500 → 49.31%
+#            1,000 → 48.57%        7,000 → 50.16%
+#            2,000 → 49.30%       14,000 → 50.16%   ← flat
+#
+# The calibrator is a 12-parameter map. It saturates somewhere between 3,500 and
+# 7,000 rows and is completely flat above that. A season handed to it beyond the
+# first is not "better data being used" — it is data going nowhere.
+#
+# So nothing is sacrificed by testing on the newest season. The alternative uses
+# of it were both measured and both are worth nothing: extra calibration rows
+# (above) and extra tree rows (2026-09-03 — extending the tree window and every
+# time-decay half-life landed inside the noise, accuracy 48.8–49.7%). Against
+# that, the test season buys the only number anyone is entitled to quote.
+#
+# Raising CAL_SEASONS to 2 still works and still leaves the test clean; it just
+# costs the trees a season for no measured return.
+CAL_SEASONS = 1
 
-# A season only counts as complete once it has actually finished. Rolling on
-# 1 July would briefly hand the calibrator a season with almost nothing in it.
+# A season only counts as complete once it has actually finished, so the test
+# window is never a handful of August fixtures.
 TEST_SEASON_MATURITY_MONTHS = 5
 
 
@@ -136,10 +139,28 @@ _CURRENT = _season_start(_TODAY)
 _LATEST_COMPLETE = _CURRENT if _TODAY >= _CURRENT + pd.DateOffset(
     months=TEST_SEASON_MATURITY_MONTHS) else _CURRENT - pd.DateOffset(years=1)
 
-TEST_CUTOFF   = _LATEST_COMPLETE + pd.DateOffset(years=1)   # end of calibration
-CAL_CUTOFF    = TEST_CUTOFF - pd.DateOffset(years=CAL_SEASONS)
-TRAIN_CUTOFF  = CAL_CUTOFF - pd.DateOffset(years=1)         # trees stop here
+TEST_CUTOFF   = _LATEST_COMPLETE + pd.DateOffset(years=1)   # end of the test season
+TRAIN_CUTOFF  = _LATEST_COMPLETE                            # test starts here
+CAL_CUTOFF    = TRAIN_CUTOFF - pd.DateOffset(years=CAL_SEASONS)
 RECENT_CUTOFF = pd.Timestamp("2019-07-01")   # walk-forward recency member: 2019/20+ only
+
+# The boundaries roll with the calendar rather than being literals. They used to
+# be literals and it did not show: twelve consecutive weekly retrains added 54
+# training rows BETWEEN THEM (training_runs id 35→46, n_train 84,411 → 84,465)
+# while the test set grew by 246. A "weekly retrain" that refits the same data
+# and reports the seed noise as a change in accuracy.
+#
+# Anchored to season boundaries (1 July), not to today, so a retrain on the 3rd
+# and one on the 25th of the same month produce the same split; otherwise the
+# windows would shift by a few rows every run and metrics would not be
+# comparable week to week.
+#
+# What this does NOT do: make the trees current. A three-way split spends two
+# seasons by construction. Cross-fitted calibration would recover one — fit the
+# trees up to the test season and take the calibrators from out-of-fold
+# predictions inside that window — measured 2026-09-03 at log-loss 1.0197 vs
+# 1.0272, for roughly 5x the retrain. Not taken; revisit if the retrain stops
+# being on the critical path.
 
 # Overridable for backtests and for reproducing a historical run.
 for _name, _env in (("CAL_CUTOFF", "ML_CAL_CUTOFF"),
@@ -344,23 +365,22 @@ def prepare_data(raw_dir: str) -> pd.DataFrame:
 
 
 def split(df: pd.DataFrame):
-    """Return (xgb_train, cal, test) — three non-overlapping windows.
+    """Return (xgb_train, cal, test) — trees, then calibration, then test.
 
-    In time order: trees, then test, then calibration. See the comment above the
-    cutoffs for why the calibration window is the most recent one and what that
-    costs the reported test metric.
+    The test window is the newest complete season and sits after everything that
+    was fitted, so the metrics printed at the end of a run are a real forward
+    estimate rather than a replay.
     """
-    xgb_train = df[df["Date"] < TRAIN_CUTOFF]
-    test      = df[(df["Date"] >= TRAIN_CUTOFF) & (df["Date"] < CAL_CUTOFF)]
-    cal       = df[(df["Date"] >= CAL_CUTOFF) & (df["Date"] < TEST_CUTOFF)]
-    print(f"  XGBoost train : {len(xgb_train):,}  (< {TRAIN_CUTOFF.date()})")
-    print(f"  Test          : {len(test):,}  "
-          f"({TRAIN_CUTOFF.date()} → {CAL_CUTOFF.date()})")
+    xgb_train = df[df["Date"] < CAL_CUTOFF]
+    cal       = df[(df["Date"] >= CAL_CUTOFF) & (df["Date"] < TRAIN_CUTOFF)]
+    test      = df[(df["Date"] >= TRAIN_CUTOFF) & (df["Date"] < TEST_CUTOFF)]
+    print(f"  XGBoost train : {len(xgb_train):,}  (< {CAL_CUTOFF.date()})")
     print(f"  Calibration   : {len(cal):,}  "
-          f"({CAL_CUTOFF.date()} → {TEST_CUTOFF.date()}, "
-          f"{CAL_SEASONS} most recent complete season(s))")
-    print("  NOTE: the calibration window is LATER than the test window, so the "
-          "test metrics below are optimistic — see the comment on CAL_SEASONS.")
+          f"({CAL_CUTOFF.date()} → {TRAIN_CUTOFF.date()}, "
+          f"{CAL_SEASONS} season(s) — measured to saturate near 7,000 rows)")
+    print(f"  Test          : {len(test):,}  "
+          f"({TRAIN_CUTOFF.date()} → {TEST_CUTOFF.date()}, newest complete season, "
+          f"held out from everything above)")
     return xgb_train, cal, test
 
 

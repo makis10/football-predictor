@@ -102,17 +102,18 @@ def test_the_training_split_cannot_go_stale():
 
     Nothing could have failed here: a stale date is valid code. So this asserts
     against the clock instead, and against the documented window ORDER — trees,
-    then test, then calibration, with the calibrator on the newest seasons.
+    then calibration, then TEST, so the printed metric stays a forward estimate.
     """
     import pandas as pd
 
     from backend.app.ml.train import CAL_CUTOFF, TEST_CUTOFF, TRAIN_CUTOFF
 
-    # Trees, then test, then calibration — the calibration window is the most
-    # recent, deliberately (see the CAL_SEASONS comment in train.py).
-    assert TRAIN_CUTOFF < CAL_CUTOFF < TEST_CUTOFF, (
-        f"split boundaries out of order: trees<{TRAIN_CUTOFF} test<{CAL_CUTOFF} "
-        f"cal<{TEST_CUTOFF}")
+    # Trees, then calibration, then test. The test window must come LAST or the
+    # number a run prints is not a forward estimate — a calibrator fitted on
+    # seasons after the test season inflates it.
+    assert CAL_CUTOFF < TRAIN_CUTOFF < TEST_CUTOFF, (
+        f"split boundaries out of order: trees<{CAL_CUTOFF} cal<{TRAIN_CUTOFF} "
+        f"test<{TEST_CUTOFF} — the test window has to be the last one")
 
     if any(os.getenv(v) for v in ("ML_CAL_CUTOFF", "ML_TRAIN_CUTOFF", "ML_TEST_CUTOFF")):
         pytest.skip("split pinned by ML_*_CUTOFF for a backtest")
@@ -130,14 +131,14 @@ def test_the_training_split_cannot_go_stale():
     mature   = today >= current + pd.DateOffset(months=TEST_SEASON_MATURITY_MONTHS)
     latest   = current if mature else current - pd.DateOffset(years=1)
 
-    assert TEST_CUTOFF == latest + pd.DateOffset(years=1), (
-        f"TEST_CUTOFF is {TEST_CUTOFF.date()}, but the season rule says "
-        f"{(latest + pd.DateOffset(years=1)).date()} for today ({today.date()}). "
-        f"A hard-coded split stops moving while the calendar does not — that is "
-        f"how two whole seasons became invisible to the model."
+    assert TRAIN_CUTOFF == latest, (
+        f"the test season starts at {TRAIN_CUTOFF.date()}, but the season rule "
+        f"says {latest.date()} for today ({today.date()}). A hard-coded split "
+        f"stops moving while the calendar does not — that is how two whole "
+        f"seasons became invisible to the model."
     )
-    assert CAL_CUTOFF == TEST_CUTOFF - pd.DateOffset(years=CAL_SEASONS)
-    assert TRAIN_CUTOFF == CAL_CUTOFF - pd.DateOffset(years=1)
+    assert TEST_CUTOFF == TRAIN_CUTOFF + pd.DateOffset(years=1)
+    assert CAL_CUTOFF == TRAIN_CUTOFF - pd.DateOffset(years=CAL_SEASONS)
     assert TEST_CUTOFF > today - pd.DateOffset(months=18), (
         f"TEST_CUTOFF {TEST_CUTOFF.date()} is too far in the past — the "
         f"calibration window has stopped following the calendar."
@@ -176,12 +177,14 @@ def test_the_season_rule_actually_advances():
     # A year of literals would have frozen here; the rule has moved twice.
     assert latest_complete_on("2028-12-01") == pd.Timestamp("2028-07-01")
 
-    # And the windows derived from it stay in the documented order:
-    # trees < test < calibration, with the calibrator on the newest seasons.
-    latest = latest_complete_on("2026-09-04")
-    test_end  = latest + pd.DateOffset(years=1)
-    cal_start = test_end - pd.DateOffset(years=CAL_SEASONS)
-    assert cal_start - pd.DateOffset(years=1) < cal_start < test_end
+    # And the windows derived from it stay in the documented order — trees,
+    # calibration, test — with the TEST window last so it stays a forward
+    # estimate however CAL_SEASONS is set.
+    for seasons in (1, 2, 3):
+        latest    = latest_complete_on("2026-09-04")
+        test_end  = latest + pd.DateOffset(years=1)
+        cal_start = latest - pd.DateOffset(years=seasons)
+        assert cal_start < latest < test_end, seasons
 
 
 def test_history_only_leagues_are_never_one_hot_encoded():
