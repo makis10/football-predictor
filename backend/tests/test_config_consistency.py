@@ -726,9 +726,16 @@ def test_the_guard_sits_after_the_lock_not_instead_of_it():
 # the most accurate one we can produce.
 
 def test_the_anchor_weight_is_the_measured_one():
+    """0.85 since 2026-09-04, measured on 24,100 priced matches over four
+    held-out seasons — 0.55 vs 0.85 is +0.21pp accuracy (P = 0.974) and
+    -0.0036 log-loss (P = 1.000). The previous 0.57 came from 238 matches.
+
+    Pinned because this weight decides most of every published probability, so
+    it must not drift by accident. Changing it deliberately means changing this
+    number and the table in predict.py together."""
     from backend.app.ml.predict import MARKET_ANCHOR_WEIGHT
 
-    assert MARKET_ANCHOR_WEIGHT == 0.57
+    assert MARKET_ANCHOR_WEIGHT == 0.85
 
 
 def test_anchoring_leaves_a_fixture_without_a_price_alone():

@@ -156,11 +156,22 @@ RECENT_CUTOFF = pd.Timestamp("2019-07-01")   # walk-forward recency member: 2019
 # comparable week to week.
 #
 # What this does NOT do: make the trees current. A three-way split spends two
-# seasons by construction. Cross-fitted calibration would recover one — fit the
-# trees up to the test season and take the calibrators from out-of-fold
-# predictions inside that window — measured 2026-09-03 at log-loss 1.0197 vs
-# 1.0272, for roughly 5x the retrain. Not taken; revisit if the retrain stops
-# being on the critical path.
+# seasons by construction, and the way to recover one — cross-fitted calibration,
+# fitting the trees up to the test season and taking the calibrators from
+# out-of-fold predictions inside that window — was built and measured on
+# 2026-09-04 (backend/data/cache/four/oof.py). It LOSES:
+#
+#     A  cal season      (84,465 train)   log-loss 1.0132  acc 49.79%  drawAUC 0.5464
+#     B  cross-fitted K=3 (91,473 train)           1.0144      49.65%          0.5397
+#     B  cross-fitted K=5 (91,473 train)           1.0146      49.67%          0.5397
+#
+# An earlier measurement (2026-09-03) had it winning, 1.0197 against 1.0272. The
+# difference is the calibrator: that comparison used one-vs-rest isotonic, which
+# is data-hungry enough to benefit from the extra rows. Matrix scaling is twelve
+# parameters and saturates long before, so all that is left is the mismatch —
+# the out-of-fold predictions come from models trained on K-1/K of the data and
+# are systematically less confident than the full model they end up correcting.
+# Do not re-derive this; the numbers above are the answer.
 
 # Overridable for backtests and for reproducing a historical run.
 for _name, _env in (("CAL_CUTOFF", "ML_CAL_CUTOFF"),
@@ -512,56 +523,26 @@ def train_result_model(train: pd.DataFrame, test: pd.DataFrame) -> SoftVoteEnsem
     lgbm_acc = accuracy_score(y_val, lgbm_model.predict(X_val))
     print(f"  [LightGBM] val acc={lgbm_acc:.3f}")
 
-    # ── MLP ───────────────────────────────────────────────────────────────────
-    # Learns nonlinear feature interactions that tree models may miss.
-    # Pipeline: median imputation (handles NaN) → StandardScaler → MLP.
-    # Note: MLPClassifier does not support sample_weight; relies on XGB + LGBM
-    # for class balance. Uses equal class treatment.
-    print("  [MLP] training …")
-    mlp_model = Pipeline([
-        ("imputer", SimpleImputer(strategy="median")),
-        ("scaler",  StandardScaler()),
-        ("mlp",     MLPClassifier(
-            hidden_layer_sizes=(256, 128, 64), activation="relu", solver="adam",
-            max_iter=300, early_stopping=True, validation_fraction=0.1,
-            n_iter_no_change=20, random_state=42,
-        )),
-    ])
-    mlp_model.fit(X_train, y_train)
-    mlp_acc = accuracy_score(y_val, mlp_model.predict(X_val))
-    print(f"  [MLP]     val acc={mlp_acc:.3f}")
-
-    # ── XGBoost-recent (walk-forward recency member: RECENT_CUTOFF+ only) ────
-    # Trained on recent seasons only with flat class weights (no time-decay —
-    # data window already enforces recency). Specialises in current-era patterns
-    # and complements the full-history members.
-    print(f"  [XGBoost-recent] training on {RECENT_CUTOFF.year}/{str(RECENT_CUTOFF.year+1)[-2:]}+ data …")
-    _recent_r = train[train["Date"] >= RECENT_CUTOFF]
-    if len(_recent_r) >= 3_000:
-        _n_rv = max(200, int(len(_recent_r) * 0.15))
-        _r_inner = _recent_r.iloc[:-_n_rv]
-        _r_val   = _recent_r.iloc[-_n_rv:]
-        _X_ri = _r_inner[RESULT_FEATURE_COLS]
-        _X_rv = _r_val[RESULT_FEATURE_COLS]
-        _y_ri, _y_rv = _r_inner["target_result"], _r_val["target_result"]
-
-        _sw_ri = compute_sample_weight("balanced", _y_ri)   # flat weights — no time-decay
-
-        xgb_recent = XGBClassifier(
-            n_estimators=800, max_depth=4, learning_rate=0.03,
-            subsample=0.75, colsample_bytree=0.7, min_child_weight=5,
-            gamma=0.1, reg_alpha=0.1, reg_lambda=1.5,
-            eval_metric="mlogloss", early_stopping_rounds=50,
-            tree_method="hist", nthread=-1, random_state=77,
-        )
-        xgb_recent.fit(_X_ri, _y_ri, sample_weight=_sw_ri,
-                       eval_set=[(_X_rv, _y_rv)], verbose=False)
-        _acc_recent = accuracy_score(_y_rv, xgb_recent.predict(_X_rv))
-        print(f"  [XGBoost-recent] val acc={_acc_recent:.3f}  (n={len(_recent_r):,} rows)")
-        ensemble = SoftVoteEnsemble([xgb_model, lgbm_model, mlp_model, xgb_recent], [1, 1, 1, 1])
-    else:
-        print(f"  [XGBoost-recent] skipped — insufficient data ({len(_recent_r):,} rows)")
-        ensemble = SoftVoteEnsemble([xgb_model, lgbm_model, mlp_model], [1, 1, 1])
+            # ── Ensemble membership ───────────────────────────────────────────────────
+    # Two members, not four. Measured 2026-09-04 on the held-out season with the
+    # current feature set (backend/data/cache/four/members.py):
+    #
+    #     combination        log-loss  accuracy  drawAUC   train
+    #     all 4               1.0127    0.4986   0.5465     25s
+    #     xgb + lgbm          1.0130    0.5005   0.5450     10s
+    #     xgb only            1.0133    0.4975   0.5451      5s
+    #     no mlp (3)          1.0130    0.4981   0.5444     14s
+    #
+    # Every paired-bootstrap interval against the four-member vote straddles zero,
+    # so none of these is distinguishable from any other. This is therefore a COST
+    # change, not an accuracy change: xgb + lgbm is 2.5x cheaper and keeps two
+    # genuinely different inductive biases (depth-wise against leaf-wise growth).
+    #
+    # The MLP earned its removal twice over — it never separated from the trees,
+    # and when the ensemble weights were fitted on the calibration set it took
+    # 0.75 of the vote and made the result WORSE (1.0260 against 1.0023). xgb_recent
+    # is a second XGBoost on a shorter window, correlated 0.849 with the first.
+    ensemble = SoftVoteEnsemble([xgb_model, lgbm_model], [1, 1])
 
     # ── Soft-vote ensemble ────────────────────────────────────────────────────
     # NOTE: the fixed 2025/26 test window is FINAL-REPORT-ONLY. Member selection,
@@ -634,51 +615,10 @@ def train_goals_model(train: pd.DataFrame, test: pd.DataFrame) -> SoftVoteEnsemb
     lgbm_acc = accuracy_score(y_val, lgbm_model.predict(X_val))
     print(f"  [LightGBM] val acc={lgbm_acc:.3f}")
 
-    # ── MLP ───────────────────────────────────────────────────────────────────
-    print("  [MLP] training …")
-    mlp_model = Pipeline([
-        ("imputer", SimpleImputer(strategy="median")),
-        ("scaler",  StandardScaler()),
-        ("mlp",     MLPClassifier(
-            hidden_layer_sizes=(256, 128, 64), activation="relu", solver="adam",
-            max_iter=300, early_stopping=True, validation_fraction=0.1,
-            n_iter_no_change=20, random_state=42,
-        )),
-    ])
-    mlp_model.fit(X_train, y_train)
-    mlp_acc = accuracy_score(y_val, mlp_model.predict(X_val))
-    print(f"  [MLP]     val acc={mlp_acc:.3f}")
-
-    # ── XGBoost-recent (walk-forward recency member: RECENT_CUTOFF+ only) ────
-    print(f"  [XGBoost-recent] training on {RECENT_CUTOFF.year}/{str(RECENT_CUTOFF.year+1)[-2:]}+ data …")
-    _recent_g = train[train["Date"] >= RECENT_CUTOFF]
-    if len(_recent_g) >= 3_000:
-        _n_gv = max(200, int(len(_recent_g) * 0.15))
-        _g_inner = _recent_g.iloc[:-_n_gv]
-        _g_val   = _recent_g.iloc[-_n_gv:]
-        _X_gi = _g_inner[GOALS_FEATURE_COLS]
-        _X_gv = _g_val[GOALS_FEATURE_COLS]
-        _y_gi, _y_gv = _g_inner["target_goals"], _g_val["target_goals"]
-
-        _sw_gi = compute_sample_weight("balanced", _y_gi)   # flat weights — no time-decay
-
-        xgb_recent_g = XGBClassifier(
-            n_estimators=1000, max_depth=5, learning_rate=0.02,
-            subsample=0.8, colsample_bytree=0.75, colsample_bylevel=0.75,
-            min_child_weight=3, gamma=0.05, reg_alpha=0.05, reg_lambda=1.0,
-            eval_metric="logloss", early_stopping_rounds=60,
-            tree_method="hist", nthread=-1, random_state=78,
-        )
-        xgb_recent_g.fit(_X_gi, _y_gi, sample_weight=_sw_gi,
-                          eval_set=[(_X_gv, _y_gv)], verbose=False)
-        _acc_recent_g = accuracy_score(_y_gv, xgb_recent_g.predict(_X_gv))
-        print(f"  [XGBoost-recent] val acc={_acc_recent_g:.3f}  (n={len(_recent_g):,} rows)")
-        ensemble = SoftVoteEnsemble([xgb_model, lgbm_model, mlp_model, xgb_recent_g], [1, 1, 1, 1])
-    else:
-        print(f"  [XGBoost-recent] skipped — insufficient data ({len(_recent_g):,} rows)")
-        ensemble = SoftVoteEnsemble([xgb_model, lgbm_model, mlp_model], [1, 1, 1])
-
     # ── Soft-vote ensemble ────────────────────────────────────────────────────
+    # Two members; see the note in train_result_model for the measurement.
+    ensemble = SoftVoteEnsemble([xgb_model, lgbm_model], [1, 1])
+
     preds = ensemble.predict(X_test)
     acc   = accuracy_score(y_test, preds)
     print(f"  [Ensemble] test accuracy: {acc:.3f}")

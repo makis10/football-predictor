@@ -2,7 +2,7 @@
 
 A full-stack machine-learning application that predicts football match outcomes (Win / Draw / Loss), goal totals (Over / Under 2.5), BTTS, correct scores and player props for **13 club competitions + international football** (World Cup 2026 with a live Monte-Carlo tournament simulation) — with bookmaker comparison, AI analysis, transparent accuracy/ROI tracking, and an AI chatbot assistant.
 
-Built with **XGBoost + Pi-Ratings + Poisson expected-goals** (clubs) and a **talent-adjusted Elo** engine (national teams), **FastAPI**, **Next.js 16 / React 19**, **PostgreSQL**, **Redis**, and **Groq (GPT-OSS-120B)** — fully containerised with Docker Compose. Club feature set: **134 features, fully market-independent** — no bookmaker value is ever a model input. The 1×2 probabilities we *publish* are then blended 43/57 with the bookmakers' de-vigged line, because that measured more accurate (51.7% → ~54%); the EV / value gate keeps reading the unblended model, since an anchored probability compared with the market is the market compared with itself. See [Market anchoring](#market-anchoring).
+Built with **XGBoost + Pi-Ratings + Poisson expected-goals** (clubs) and a **talent-adjusted Elo** engine (national teams), **FastAPI**, **Next.js 16 / React 19**, **PostgreSQL**, **Redis**, and **Groq (GPT-OSS-120B)** — fully containerised with Docker Compose. Club feature set: **134 features, fully market-independent** — no bookmaker value is ever a model input. The 1×2 probabilities we *publish* are then blended **15/85** with the bookmakers' de-vigged line, because that measured more accurate on 24,100 priced matches across four held-out seasons; the EV / value gate keeps reading the unblended model, since an anchored probability compared with the market is the market compared with itself. See [Market anchoring](#market-anchoring).
 
 **Live URL:** [https://aitipster.net](https://aitipster.net)
 
@@ -95,16 +95,28 @@ Predictions were made market-independent in June 2026 and stayed that way until
 `scripts/compare_anchoring.py` measured what it cost. Replaying every settled
 match that carried both our raw probabilities and a de-vigged bookmaker 1×2:
 
-| weight | hit rate | log loss | |
-|--------|----------|----------|---|
-| 0.00 | 51.7% | 1.0274 | pure model |
-| 0.35 | 53.8% | 1.0031 | |
-| 0.57 | ~54% | ~0.992 | **what we serve** |
-| 1.00 | 54.6% | 0.9826 | the bookmaker alone |
+| weight | log-loss | accuracy | draw AUC | |
+|--------|----------|----------|----------|---|
+| 0.00 | 0.9990 | 50.97% | 0.5526 | our model alone |
+| 0.55 | 0.9853 | 52.16% | 0.5678 | what we served until 2026-09-04 |
+| 0.70 | 0.9832 | 52.31% | 0.5692 | |
+| **0.85** | **0.9818** | **52.39%** | **0.5698** | **what we serve** |
+| 1.00 | 0.9810 | 52.32% | 0.5699 | the bookmaker alone |
 
-Monotonic in both metrics — there is no interior weight where the model adds
-something. Not a flattering result, and it is disclosed on `/stats` above the
-accuracy figures rather than below them.
+Measured on 24,100 matches carrying a real Pinnacle price, pooled across four
+held-out seasons (2022/23 → 2025/26). Moving 0.55 → 0.85 is +0.21pp accuracy
+(95% CI [−0.00, +0.42], P = 0.974) and −0.0036 log-loss (P = 1.000).
+
+Log-loss falls monotonically to the market. Accuracy rises to a plateau around
+0.80–0.90 and then stops — an earlier single-season measurement showed a peak at
+0.70, which four seasons showed was noise.
+
+The uncomfortable part, kept next to the number: between w=0.70 and w=1.00 there
+is **no measurable accuracy difference** (−0.02pp, P = 0.433). At these weights
+our model is not adding accuracy over the de-vigged market. It adds the last of
+the log-loss, and 0.85 rather than 1.00 is where the served number stops being
+a republished bookmaker price. Disclosed on `/stats` above the accuracy figures
+rather than below them.
 
 Two rules keep this from quietly breaking the rest of the system:
 

@@ -158,30 +158,46 @@ def reload_predict_models() -> None:
     logging.getLogger("predict").info("[predict] Model singletons cleared — will reload on next predict call.")
 
 
-# ── Market anchoring — RESTORED at w=0.57 (2026-09-01) ────────────────────────
-# Removed on 2026-06-17 to make the predictions market-independent. Measured
-# again on 2026-09-01 with scripts/compare_anchoring.py, replaying every settled
-# match that carries both our raw probabilities and a de-vigged 1x2 line:
+# ── Market anchoring ──────────────────────────────────────────────────────────
+# Removed 2026-06-17 to make the predictions market-independent, restored
+# 2026-09-01 at w=0.57 after scripts/compare_anchoring.py replayed the settled
+# matches that carried both our raw probabilities and a de-vigged 1x2.
 #
-#     weight   hit rate   log loss        (238 matches, pure-model regime)
-#       0.00      51.7%     1.0274        what we served
-#       0.35      53.8%     1.0031
-#       0.57         ~54%    ~0.992       what we serve now
-#       1.00      54.6%     0.9826        the bookmaker alone
+# Re-measured 2026-09-04 on 24,100 priced matches across FOUR held-out seasons,
+# not the 238 the original weight was chosen from
+# (backend/data/cache/four/w_folds.py):
 #
-# Monotonic in both metrics: every step toward the market improves accuracy,
-# with no interior optimum where the model adds something. That is the finding,
-# and it is not a flattering one — but the site is a betting site, so the number
-# beside a pick has to be the most accurate one we can produce.
+#     w      log-loss   accuracy   draw AUC
+#     0.00     0.9990     0.5097     0.5526     our model alone
+#     0.55     0.9853     0.5216     0.5678     what we served
+#     0.70     0.9832     0.5231     0.5692
+#     0.85     0.9818     0.5239     0.5698     <- now
+#     1.00     0.9810     0.5232     0.5699     the bookmaker alone
 #
-# What this costs, stated plainly: an anchored probability cannot beat the
-# market, because most of it IS the market. So the EV / value gate must NOT read
-# these numbers — it exists to measure model-vs-market disagreement, and fed an
-# anchored probability it would be comparing the market with itself and finding
-# an edge of approximately zero everywhere. It reads the raw_* columns instead,
-# which stay pure. Anchoring changes what we SHOW; it must not change what we
-# MEASURE.
-MARKET_ANCHOR_WEIGHT = 0.57
+#     0.85 vs 0.55, paired bootstrap 3,000x:
+#       accuracy  +0.21pp, 95% CI [-0.00, +0.42], P(better) = 0.974
+#       log-loss  -0.0036, 95% CI [-0.0042, -0.0029], P(better) = 1.000
+#
+# Log-loss falls monotonically all the way to the market; accuracy rises to a
+# PLATEAU around 0.80-0.90 and then stops. A single season had shown a peak at
+# 0.70, which four seasons show was noise — the same lesson three other results
+# taught today.
+#
+# The uncomfortable part, stated because it belongs next to the number: between
+# w=0.70 and w=1.00 there is no measurable accuracy difference at all (d_acc
+# -0.0002, P=0.433). Our model is not adding accuracy over the de-vigged market
+# at these weights; it is adding the last of the log-loss and keeping the served
+# number from being literally a republished bookmaker price. 0.85 rather than
+# 1.00 is where that trade sits — nearly all of the gain, with the model still
+# visible in the output.
+#
+# What this costs, unchanged since September: an anchored probability cannot beat
+# the market, because most of it IS the market. So the EV / value gate must NOT
+# read these numbers — fed an anchored probability it compares the market with
+# itself and finds an edge of approximately zero everywhere. It reads the raw_*
+# columns, which stay pure. Anchoring changes what we SHOW; it must not change
+# what we MEASURE.
+MARKET_ANCHOR_WEIGHT = 0.85
 
 
 def anchor_to_market(
