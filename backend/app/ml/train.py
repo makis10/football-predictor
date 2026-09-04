@@ -943,30 +943,48 @@ def main():
           f"actual GG rate={y_cal_btts.mean():.3f}")
     save_btts_calibrator(btts_iso, MODELS_DIR)
 
-    # ── BTTS threshold sweep on cal set (maximise macro F1) ──────────────────
+    # ── BTTS threshold sweep on cal set (maximise ACCURACY) ──────────────────
     # Encoding: y_true 1=GG 0=NG; y_pred 1=GG (P>=t) 0=NG (P<t).
-    # Objective: macro F1 = mean(GG_F1, NG_F1).
-    # Using macro F1 prevents the threshold from collapsing either class:
-    #   - NG-only F1 → threshold rises until model always predicts NG
-    #   - GG-only F1 → threshold drops until model always predicts GG
-    #   - macro F1   → balanced; both classes must be predicted reasonably well
+    #
+    # This used to maximise macro F1, to stop the threshold collapsing one class.
+    # Changed 2026-09-04 by the owner's call: the site reports hit rate, so hit
+    # rate is what the threshold should buy — "even if we say GG every time, if
+    # we are right, that is what we want".
+    #
+    # The trade, measured on the 2026-09-04 artefacts:
+    #
+    #                       cal thr   TEST 23/24 (n=7,087)   CLEAN 26/27 (n=390)
+    #   macro F1               0.54   acc 51.50%  GG 35%     acc 51.54%  GG 41%
+    #   accuracy               0.51   acc 54.32%  GG 85%     acc 52.31%  GG 89%
+    #   always GG              0.00   acc 53.79%  GG 100%    acc 53.08%  GG 100%
+    #
+    # +2.8pp on the test window. Two things to be clear about, since neither is
+    # visible from the accuracy number alone:
+    #
+    #   • The classifier barely discriminates — AUC 0.54 on the calibration
+    #     window. Most of that accuracy is the GG base rate (54.3%), not skill.
+    #     The threshold beats "always GG" by half a point on 7,087 matches and
+    #     loses to it on 390, which is about the size of edge that exists here.
+    #   • NG becomes a rare label. Tickets are unaffected — candidate_legs prices
+    #     both sides off the PROBABILITY, never this label — so this changes the
+    #     badge on the card and the /stats BTTS row, nothing that gets bet.
     btts_cal_probs = btts_iso.predict(btts_raw_cal)   # calibrated P(GG) on cal set
-    best_btts_threshold, best_macro_f1 = 0.5, 0.0
+    best_btts_threshold, best_btts_acc = 0.5, -1.0
     for t_candidate in np.arange(0.30, 0.75, 0.01):
-        macro_f1 = f1_score(
-            y_cal_btts,
-            (btts_cal_probs >= t_candidate).astype(int),   # 1=GG, 0=NG
-            average="macro", zero_division=0,
-        )
-        if macro_f1 > best_macro_f1:
-            best_macro_f1       = macro_f1
+        acc = float(((btts_cal_probs >= t_candidate).astype(int) == y_cal_btts).mean())
+        if acc > best_btts_acc:
+            best_btts_acc       = acc
             best_btts_threshold = float(t_candidate)
-    # Log per-class F1 at chosen threshold for visibility
     _preds_at_best = (btts_cal_probs >= best_btts_threshold).astype(int)
     _gg_f1 = f1_score(y_cal_btts, _preds_at_best, pos_label=1, zero_division=0)
     _ng_f1 = f1_score(y_cal_btts, _preds_at_best, pos_label=0, zero_division=0)
+    _base  = float(max(y_cal_btts.mean(), 1 - y_cal_btts.mean()))
     print(f"  → Optimal BTTS threshold: {best_btts_threshold:.2f}  "
-          f"(macro F1={best_macro_f1:.4f}  GG_F1={_gg_f1:.4f}  NG_F1={_ng_f1:.4f})")
+          f"(cal accuracy={best_btts_acc:.4f}  GG_F1={_gg_f1:.4f}  NG_F1={_ng_f1:.4f}  "
+          f"GG share={_preds_at_best.mean():.3f})")
+    if best_btts_acc <= _base + 0.005:
+        print(f"     NOTE: majority-class baseline is {_base:.4f} — the threshold "
+              f"is buying at most half a point over always saying the same thing.")
     btts_threshold_path = os.path.join(MODELS_DIR, "btts_threshold.json")
     with open(btts_threshold_path, "w") as f:
         json.dump({"btts_gg_threshold": best_btts_threshold}, f)
