@@ -20,6 +20,15 @@
  * The full league list stays reachable behind "+N", so nothing is hidden, only
  * deferred. A league with no fixtures still appears there and simply returns an
  * empty day, which is the honest answer.
+ *
+ * 2026-09-05: "+N" used to sit at the END of the chip strip — inside the
+ * `overflow-x-auto` element. Eight chips already overflow a desktop viewport, so
+ * the one control that reveals the other twenty-one leagues was itself scrolled
+ * off the right edge and never rendered visibly. The list was not deferred, it
+ * was unreachable: a reader looking for the Greek league (8 fixtures that day,
+ * ranked 9th, one place past the cut) had no way to learn the drawer existed.
+ * It is now pinned outside the strip next to Filters, where it cannot scroll
+ * away, and the drawer carries counts so the reader can see what is on there.
  */
 import { useEffect, useRef, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
@@ -125,8 +134,41 @@ export default function FilterBar({
   };
 
   const total = counts.reduce((s, c) => s + c.count, 0);
-  const shown = counts.slice(0, 8);
-  const restCount = LEAGUES.length + 1 - shown.length;
+  // /stats and /recent have no cheap way to count and pass []. Printing "0" next
+  // to every chip there states something we did not measure — and states it
+  // wrongly, since those pages plainly have data. A count is shown only where one
+  // was taken; on the fixture list a real 0 still means "nothing on".
+  const counted = counts.length > 0;
+  const countByCode = new Map(counts.map((c) => [c.code, c.count]));
+  const allCodes = [...LEAGUES.map((l) => l.code as string), INTERNATIONAL_LEAGUE];
+
+  // The URL carries whatever the reader typed (?league=greeksl); the chip needs
+  // the canonical code so label() can find its flag and name.
+  const activeCode = activeLeague
+    ? allCodes.find((c) => c.toLowerCase() === activeLeague.toLowerCase()) ?? activeLeague
+    : undefined;
+
+  // A league picked from the drawer has to stay visible in the bar — and visible
+  // means FIRST. Appended after the eight busiest it lands past the right edge of
+  // a strip that already overflows, so the active filter cannot be seen and a
+  // short filtered list reads as a bug. It takes the eighth chip's place rather
+  // than making the strip wider.
+  const top = counts.slice(0, 8);
+  const shown =
+    activeCode && !top.some((c) => isLeague(c.code))
+      ? [{ code: activeCode, count: countByCode.get(activeCode) ?? 0 }, ...top.slice(0, 7)]
+      : top;
+
+  const restCount = allCodes.length - shown.length;
+
+  // The drawer used to list leagues in declaration order, so a reader opening it
+  // to find tonight's Greek fixtures scanned past twenty codes, most of them
+  // empty, with nothing saying which had matches. Order it the way the chips are
+  // ordered — by how much is on — and print the count, so the drawer answers the
+  // same question the bar does instead of being a flat directory.
+  const drawerCodes = [...allCodes].sort(
+    (a, b) => (countByCode.get(b) ?? 0) - (countByCode.get(a) ?? 0) || a.localeCompare(b),
+  );
 
   const refineActive = activeOdds != null || activeConfidence != null;
 
@@ -142,38 +184,44 @@ export default function FilterBar({
         <div className="flex min-w-0 flex-1 items-center gap-2 overflow-x-auto pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
         <button onClick={() => setLeague(undefined)} className={chip(!activeLeague)}>
           {t("filter.all")}
-          <span className="ml-1.5 font-data text-[11px] opacity-60">{total}</span>
+          {counted && (
+            <span className="ml-1.5 font-data text-[11px] opacity-60">{total}</span>
+          )}
         </button>
 
         {shown.map((c) => (
           <button key={c.code} onClick={() => setLeague(c.code)} className={chip(isLeague(c.code))}>
             {label(c.code)}
-            <span className="ml-1.5 font-data text-[11px] opacity-60">{c.count}</span>
+            {counted && (
+              <span className="ml-1.5 font-data text-[11px] opacity-60">{c.count}</span>
+            )}
           </button>
         ))}
 
-        {/* A league selected from the drawer keeps its chip visible even when it
-            has no fixtures — otherwise the active filter vanishes from the bar
-            and the empty result looks like a bug. */}
-        {activeLeague && !shown.some((c) => isLeague(c.code)) && (
-          <button className={chip(true)} onClick={() => setLeague(undefined)}>
-            {label(activeLeague)}
-            <span className="ml-1.5 font-data text-[11px] opacity-60">0</span>
-          </button>
-        )}
+        </div>
 
         {restCount > 0 && (
           <button
             onClick={() => setShowAll((v) => !v)}
             aria-expanded={showAll}
-            className="shrink-0 whitespace-nowrap rounded-lg border border-dashed border-line px-3 py-1.5
-                       text-sm text-chalk-3 transition-colors hover:text-chalk-2"
+            className={[
+              "shrink-0 whitespace-nowrap rounded-lg border border-dashed px-3 py-1.5",
+              "text-sm transition-colors",
+              showAll
+                ? "border-chalk-3 text-chalk"
+                : "border-line text-chalk-3 hover:text-chalk-2",
+            ].join(" ")}
           >
-            {showAll ? t("filter.less") : t("filter.more", { n: restCount })}
+            {/* Two pinned controls on a 375px phone leave barely one chip visible,
+                and the chips carry the counts. The word is dropped below `sm` —
+                "+20" is as clear as "+20 leagues" next to a dashed border, and
+                gives ~60px back to the strip. */}
+            <span className="sm:hidden">{showAll ? "\u2715" : `+${restCount}`}</span>
+            <span className="hidden sm:inline">
+              {showAll ? t("filter.less") : t("filter.more", { n: restCount })}
+            </span>
           </button>
         )}
-
-        </div>
 
         {refineEnabled && (
         <div className="relative shrink-0" ref={refineRef}>
@@ -237,22 +285,30 @@ export default function FilterBar({
 
       {showAll && (
         <div className="card card-flat flex flex-wrap gap-1.5 p-3">
-          {[...LEAGUES.map((l) => l.code), INTERNATIONAL_LEAGUE].map((code) => (
-            <button
-              key={code}
-              onClick={() => {
-                setLeague(code);
-                setShowAll(false);
-              }}
-              className={`rounded-md px-2 py-1 text-xs transition-colors ${
-                isLeague(code)
-                  ? "bg-chalk font-semibold text-ink-900"
-                  : "bg-ink-700 text-chalk-2 hover:text-chalk"
-              }`}
-            >
-              {label(code)}
-            </button>
-          ))}
+          {drawerCodes.map((code) => {
+            const n = countByCode.get(code) ?? 0;
+            return (
+              <button
+                key={code}
+                onClick={() => {
+                  setLeague(code);
+                  setShowAll(false);
+                }}
+                className={`rounded-md px-2 py-1 text-xs transition-colors ${
+                  isLeague(code)
+                    ? "bg-chalk font-semibold text-ink-900"
+                    : n > 0
+                      ? "bg-ink-700 text-chalk-2 hover:text-chalk"
+                      : "bg-ink-800 text-chalk-3 hover:text-chalk-2"
+                }`}
+              >
+                {label(code)}
+                {n > 0 && (
+                  <span className="ml-1.5 font-data text-[10px] opacity-60">{n}</span>
+                )}
+              </button>
+            );
+          })}
         </div>
       )}
     </div>
