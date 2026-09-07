@@ -219,6 +219,14 @@ def _matrix_summary(m: "list[list[float]]") -> dict:
     return s
 
 
+# No served probability may be 0 or 1. Nothing in football is certain, the
+# scoring rules punish a wrong certainty without bound, and a probability of
+# exactly 1.0 is never a belief — it is an artefact of a calibrator's terminal
+# step. 1e-4 is far outside the range any real forecast occupies (the widest
+# served spread on record is 0.20-0.88) so it clips artefacts and nothing else.
+_EPS = 1e-4
+
+
 def fit_lambdas_to_probs(
     p_home: float,
     p_away: float,
@@ -321,15 +329,45 @@ def project_probs_coherent(
 
     Returns {home, draw, away, over, btts} or None when the fit is degenerate.
     """
-    fit = fit_lambdas_to_probs(p_home, p_away, p_over, p_btts)
+    # Squeeze the endpoints off before fitting, and again on the way out.
+    #
+    # 2026-09-07: four fixtures were live on the site asserting a 0% chance of
+    # Under 2.5 — Bayern v Union Berlin, PSV v Heerenveen, Bayern v RB Leipzig,
+    # PSV v Willem II — and two settled rows had already been graded against an
+    # impossible claim (Club Brugge 1-0 Cercle at p_over = 1.0, Heerenveen 0-0
+    # Ajax at p_btts = 1.0). Nothing in the model believed it: their raw_over
+    # was 0.78-0.81. The 1.0 was fitted INTO the calibrator — an isotonic on
+    # binary labels puts its terminal PAVA block at exactly 1.0, so every raw
+    # p_over above the top knot (0.7698 in the live artefact) came out certain.
+    #
+    # This function is where it had to be caught and was not: fit_lambdas_to_probs
+    # rejects p_over ∈ {0, 1} and returns None, `finalise_probabilities` does
+    # `if proj:`, and the fallback keeps the very value that broke the fit. The
+    # guard ran in the safe direction for a feasible input and in the breakable
+    # direction for an impossible one — it disabled itself on exactly the rows
+    # that needed it. A value 1e-4 away was repaired; 1.0 sailed through.
+    #
+    # Clamping here rather than in finalise_probabilities is deliberate: all
+    # three writers converge on this function and only this function —
+    # compute_predictions.py and predict.py through finalise_probabilities, and
+    # scripts/predict_national.py, which calls it directly and would have missed
+    # a guard placed upstream.
+    #
+    # The isotonic fits now also carry y_min/y_max (see calibration.py), so the
+    # artefact stops producing endpoints at the source. That needs a retrain to
+    # take effect; this clamp does not, and stays as the belt to that pair of
+    # braces.
+    _c = lambda p: None if p is None else min(max(float(p), _EPS), 1.0 - _EPS)
+
+    fit = fit_lambdas_to_probs(_c(p_home), _c(p_away), _c(p_over), _c(p_btts))
     if not fit:
         return None
     lam_h, lam_a, rho, diag, diag0 = fit
     s = _matrix_summary(_score_matrix(lam_h, lam_a, rho, diag, diag0))
     return {
-        "home": s["home_win"], "draw": s["draw"], "away": s["away_win"],
-        "over": s["over_2_5"],
-        "btts": s["btts"] if p_btts is not None else None,
+        "home": _c(s["home_win"]), "draw": _c(s["draw"]), "away": _c(s["away_win"]),
+        "over": _c(s["over_2_5"]),
+        "btts": _c(s["btts"]) if p_btts is not None else None,
     }
 
 

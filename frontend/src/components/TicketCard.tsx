@@ -190,9 +190,20 @@ export default function TicketCard({ ticket }: { ticket: Ticket }) {
           <p className="text-[10px] uppercase tracking-wide text-chalk-3">
             {t("ticket.winProb")}
           </p>
+          {/* The MARKET's chance, with its margin removed — see
+              tickets.Ticket.combined_prob. Printed from our own probabilities
+              this number, times the payout beside it, was quoting an average
+              +64% expected value on a product that has returned -23% over 114
+              settled slips. Our own number now sits underneath, where nobody
+              multiplies it by anything. */}
           <p className="font-data text-lg font-bold text-chalk tabular-nums">
             {(ticket.combined_prob * 100).toFixed(1)}%
           </p>
+          {ticket.model_prob != null && (
+            <p className="text-[10px] text-chalk-3 tabular-nums">
+              {t("ticket.ourProb", { pct: (ticket.model_prob * 100).toFixed(1) })}
+            </p>
+          )}
         </div>
         <div>
           <p className="text-[10px] uppercase tracking-wide text-chalk-3">

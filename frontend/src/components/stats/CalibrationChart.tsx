@@ -6,6 +6,10 @@ import { CalibrationBucket } from "@/lib/api";
 
 interface CalibrationChartProps {
   buckets: CalibrationBucket[];
+  /** Discrimination — the thing this chart cannot show. A perfectly calibrated
+   *  constant draws a perfect diagonal and carries no information at all. */
+  auc?: number | null;
+  resolution?: number | null;
 }
 
 const W = 560;  // viewBox width
@@ -24,7 +28,7 @@ function scaleY(v: number) {
   return PLOT_H * (1 - v);
 }
 
-export function CalibrationChart({ buckets }: CalibrationChartProps) {
+export function CalibrationChart({ buckets, auc, resolution }: CalibrationChartProps) {
   if (buckets.length < 2) {
     return (
       <p className="text-sm text-chalk-3 text-center py-6">
@@ -54,9 +58,18 @@ export function CalibrationChart({ buckets }: CalibrationChartProps) {
       <p className="text-sm font-medium text-chalk-2 mb-1">
         O/U Calibration — predicted vs actual over-rate
       </p>
-      <p className="text-xs text-chalk-3 mb-3">
-        Points near the diagonal = well calibrated. Above = model over-predicts, below = under-predicts.
+      <p className="text-xs text-chalk-3 mb-1">
+        Points near the diagonal mean the numbers are honest — not that they tell
+        matches apart. Above = over-predicts, below = under-predicts.
       </p>
+      {typeof auc === "number" && (
+        <p className={`text-xs mb-3 ${auc < 0.53 ? "text-lose" : "text-chalk-3"}`}>
+          AUC {auc.toFixed(3)} · 0.500 is a coin
+          {typeof resolution === "number" &&
+            ` · resolution ${(resolution * 100).toFixed(2)}%`}
+          {auc < 0.53 && " — this forecast is not separating matches"}
+        </p>
+      )}
 
       <svg
         viewBox={`0 0 ${W} ${H}`}
@@ -172,7 +185,10 @@ export function CalibrationChart({ buckets }: CalibrationChartProps) {
           </svg>
           Model
         </span>
-        <span className="text-chalk-3">· bubble size = sample count</span>
+        {/* The radius saturates well before the largest bin, so it separates
+            "a handful" from "a lot" and nothing finer. Exact counts are in each
+            point's tooltip. */}
+        <span className="text-chalk-3">· larger bubble = more matches (hover for the count)</span>
       </div>
     </div>
   );

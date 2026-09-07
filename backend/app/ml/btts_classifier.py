@@ -27,7 +27,8 @@ import pickle
 from typing import Optional
 
 import numpy as np
-from sklearn.isotonic import IsotonicRegression
+from sklearn.isotonic import IsotonicRegression  # noqa: F401  (type hints / isinstance)
+from backend.app.ml.prob_bounds import probability_isotonic
 from xgboost import XGBClassifier
 
 from backend.app.ml.features import BTTS_FEATURE_COLS
@@ -79,7 +80,7 @@ def fit_btts_classifier(
     )
 
     raw_probs  = model.predict_proba(Xb_val)[:, 1]
-    calibrator = IsotonicRegression(out_of_bounds="clip")
+    calibrator = probability_isotonic()
     calibrator.fit(raw_probs, yb_val.astype(float))
     cal_probs  = calibrator.predict(raw_probs)
 

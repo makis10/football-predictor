@@ -52,6 +52,7 @@ class Prediction(Base):
     raw_draw_prob: Mapped[_Optional[float]] = mapped_column(Float, nullable=True)
     raw_away_prob: Mapped[_Optional[float]] = mapped_column(Float, nullable=True)
     raw_over_prob: Mapped[_Optional[float]] = mapped_column(Float, nullable=True)
+    raw_btts_prob: Mapped[_Optional[float]] = mapped_column(Float, nullable=True)
 
     # Bookmaker average BTTS (Both Teams To Score) odds — for ROI tracking.
     # NULL when odds unavailable or pre-migration rows.

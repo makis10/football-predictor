@@ -441,9 +441,25 @@ def national_stats(db: Session = Depends(get_db)) -> dict[str, Any]:
     """
     Compute accuracy stats from past predictions where actual_result is not null.
     """
+    # Only predictions that were actually published before kick-off.
+    #
+    # 2026-09-07: this query had no date filter, so /stats?league=International
+    # advertised "2,632 Matches Tracked · with stored predictions" of which
+    # 2,424 (92.1%) were backfilled replays — the model scored against fixtures
+    # that were already history when it saw them. The club endpoint excludes
+    # exactly those rows and says so in a comment (routers/stats.py, the
+    # NATIONAL_STATS_SINCE block); this one inherited the comment's reasoning
+    # but not its filter, so the same rows were a prediction record on one page
+    # and correctly disqualified on the other. The replays remain visible on
+    # /national Results, which is what they are: results.
+    #
+    # Same constant, same meaning, deliberately duplicated rather than imported
+    # so a change to one is a visible change to both.
+    NATIONAL_STATS_SINCE = "2026-06-01"
     rows = (
         db.query(NationalPrediction)
         .filter(NationalPrediction.actual_result.isnot(None))
+        .filter(NationalPrediction.match_date >= NATIONAL_STATS_SINCE)
         .all()
     )
 

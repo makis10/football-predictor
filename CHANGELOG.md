@@ -4,6 +4,183 @@ Notable changes to Football Predictor. Format loosely follows
 [Keep a Changelog](https://keepachangelog.com/); dates are `YYYY-MM-DD`.
 History before this file was introduced lives in `git log`.
 
+## 2026-09-07
+
+A follow-up audit of the 2026-09-03 work (13 agents: six adversarial verifiers
+re-deriving every headline number, six tracing mechanisms, one synthesising).
+Half the alarming findings did not survive verification and are recorded below in
+corrected form. What did survive was not a modelling failure at all — the model
+is roughly where an honest football model sits — but a set of numbers the site
+was showing that it could not support, and one live claim that was impossible.
+
+### Fixed
+
+- **Four fixtures were live asserting a 0% chance of Under 2.5.** Bayern v Union
+  Berlin, PSV v Heerenveen, Bayern v RB Leipzig, PSV v Willem II, all published
+  with `over_2_5_prob = 1.0` and confidence `high`. The model believed none of
+  it: their raw outputs were 0.78–0.81. It had already fired twice on settled
+  rows — Club Brugge 1-0 Cercle Brugge at p_over = 1.0, and Heerenveen 0-0 Ajax
+  at p_btts = 1.0, which alone supplied 0.0366 of a 0.0406 log-loss gap that an
+  earlier reading of this audit had blamed on the BTTS model.
+
+  Three links, each of which alone would have prevented it:
+
+  1. `IsotonicRegression` fitted on binary labels puts every member of a PAVA
+     block at the block's own mean, so a terminal block whose handful of points
+     all went over is worth exactly 1.0. The live goals artefact read
+     `0.7468–0.7684 → 0.8333` (five of six) and `0.7698–0.8259 → 1.0000`.
+  2. `fit_lambdas_to_probs` rejects `p_over ∈ {0, 1}` and returns `None`, and
+     `finalise_probabilities` does `if proj:` — so the coherence projection
+     **disabled itself on exactly the impossible values**. A number 1e-4 away was
+     repaired; 1.0 sailed through. The guard ran in the breakable direction.
+  3. No write path clamped.
+
+  `backend/app/ml/prob_bounds.py` now holds all three guards. `SmoothedIsotonic`
+  shrinks each PAVA block toward the base rate with a pseudo-count, so a block
+  cannot claim more certainty than its sample supports; `FIT_EPS` stops the
+  endpoints regardless; `PROB_EPS` clamps at serving time inside
+  `project_probs_coherent`, which is where all three writers converge —
+  including `scripts/predict_national.py`, which bypasses
+  `finalise_probabilities` entirely and would have missed a guard placed
+  upstream.
+
+  Measured walk-forward on 1,460 held-out settled matches (expanding window,
+  five folds): uncalibrated raw 0.6776, base-rate constant 0.6826, plain isotonic
+  0.6806 — *worse than not calibrating at all* — bounded 0.6759, smoothed 0.6722.
+  Smoothed beats plain by 0.0085 at P(better) = 0.903, which does **not** clear
+  this project's 0.95 bar and is therefore not claimed as a performance win. The
+  argument is that plain isotonic served 1.0000 for a model belief of 0.78 and
+  this serves 0.8279. After the retrain the goals calibrator's range is
+  0.3495–0.8610 and the BTTS calibrator's 0.2680–0.7257; nothing saturates.
+
+- **`raw_*` meant "unanchored" everywhere except in the column, where it meant
+  "uncalibrated".** Those columns held the bare XGBoost outputs. The batch ledger
+  fed the value gate `pre_anchor` (calibrated, coherent, unanchored) while the
+  API's gate at `routers/predictions.py` read the columns, so the same gate
+  computed expected value from two different quantities depending on which path
+  answered. Both now store and read the coherent pre-anchor probability.
+
+- **The ticket card printed a chance and a payout whose product implied +64.4%
+  expected value** (+192% on longshot) for a product that has returned −23.43%
+  over 114 settled slips. Nothing in `tickets.py` compares a probability to a
+  price, so no slip could be positive-EV; the +64% was two numbers with opposite
+  biases multiplied together — our probabilities, which run high on the legs an
+  argmax selects, against real prices carrying a 6.16% margin each.
+  `combined_prob` is now the de-vigged market product, so for L real-priced legs
+  it equals `overround^-L` by construction. Our own product is stored as
+  `model_prob` and shown beside it, where nothing multiplies it. Measured on the
+  same 114 slips: model product 24.14% average against 15.79% actual (mean
+  absolute error 8.35pp); de-vigged product 14.42% against 15.79% (1.37pp).
+
+- **The public copy misstated the market blend by 28 percentage points.** The
+  first paragraph of `/stats` said "43% our model, 57% the bookmakers' line";
+  commit 212738e had raised `MARKET_ANCHOR_WEIGHT` to 0.85 three days earlier and
+  updated neither the docstring nor the string. The consistency test that should
+  have caught it pinned the literal `"57%"` — precisely why it did not. It now
+  derives both percentages from the constant, in both languages, and names the
+  numbers to write when it fails.
+
+- **The colour coding inverted the truth.** `accentForAccuracy` painted green at
+  ≥ 0.57; the always-OVER base rate on the same rows is 0.5706. So "O/U 58%"
+  rendered GREEN for +1.3pp that is indistinguishable from a constant (McNemar
+  z = 1.10) while "1×2 50%" rendered YELLOW for +5.7pp over always-HOME that is
+  real (z = 5.18). Every accuracy figure now travels with the baseline measured
+  on its own rows, and the accent follows accuracy-minus-baseline. BTTS turns
+  red, correctly: 54.3% against always-GG's 54.7%.
+
+- **National rows inflated the club headline** from 48.40% to 49.68%, and one
+  model-history row read "pure-model, 68.8%, n=80" of which 79 were
+  internationals. Every slice now reports `national_total`. `/national/stats` had
+  no date filter, so the International view advertised 2,632 tracked predictions
+  of which 2,424 (92.1%) were backfilled replays — the club endpoint excludes
+  exactly those rows and says so in a comment this one had inherited without the
+  filter.
+
+- **"Top AI Picks +18% vs overall"** compared a one-outcome hit rate against a
+  three-way 1×2 accuracy. The picks' own average stated probability is 66.31% and
+  they landed 67.29% (z = 0.40). The card now compares a forecast with what it
+  forecast: +1.1pp.
+
+- **The BTTS calibration chart was the only quality evidence offered for a market
+  with AUC 0.5143**, 78.7% of every probability inside [0.50, 0.60), and Brier
+  skill −0.0064 against a constant. A perfectly calibrated constant plots as a
+  perfect diagonal, so "calibrated" and "useful" rendered identically. Both
+  charts now print AUC and Brier resolution, and say plainly when a forecast is
+  not separating matches. The "bubble size = sample count" legend was false for
+  five of six points — the radius saturates at n ≥ 127 — and now describes what
+  it does.
+
+- **`btts_prediction` was written by three paths and read by none.** Both display
+  surfaces decided for themselves with a hardcoded `>= 0.5` while `train.py`
+  re-swept the threshold every retrain and wrote 0.47 to a file nothing read. The
+  column is now served through `PredictionResponse` and both surfaces use it;
+  `/stats` reads the same threshold, which moves the displayed BTTS accuracy from
+  53.88% to 54.27%.
+
+### Changed
+
+- **Over/Under 2.5 and BTTS are now anchored to the de-vigged line at w=0.85**,
+  the same weight and the same function as 1×2. They were the only headline
+  probabilities in the stack with no market content, and the only two that
+  measure at chance: Over 2.5 AUC 0.5222 [0.4505, 0.5955] and BTTS 0.5020
+  [0.4547, 0.5502], against the market's 0.5851 and 0.5607. A sweep from w=0.00
+  to 1.00 in 0.05 steps found no interior optimum in either market — log-loss
+  falls monotonically to the boundary, because a blend of one informative signal
+  with an uninformative one is monotone in the informative one's weight. w=0.85
+  is the same presentation trade the 1×2 weight records, deliberately the same
+  constant so the codebase has one anchor weight rather than three that drift.
+  Over 2.5 on the measured window: log-loss 0.6841 → 0.6673, accuracy 0.5581 →
+  0.5969, AUC 0.5222 → 0.5811. Coverage is not the obstacle: of upcoming fixtures
+  already carrying a 1×2 line, 98.4% carry a two-sided O/U line and 94.4% a BTTS
+  pair.
+
+- **`raw_btts_prob` (migration 0034) exists for one line.** Anchoring BTTS
+  without it would have been a silent regression rather than an improvement:
+  `odds_analysis_service` computes GG/NG expected value as
+  `prob × that same book's odds − 1`, so an anchored probability sends every
+  GG/NG edge to roughly minus the margin (≈ −0.06) and the value gate quietly
+  stops surfacing goals bets. BTTS was the one market with no unanchored column
+  to protect it.
+
+- **`under_odds` (migration 0035) on `odds_history`**, so the API's cache-miss
+  path can de-vig a totals market. Free: the Odds API returns totals as a pair in
+  the response the poll already pays for, and the under was being parsed and
+  dropped. BTTS is deliberately still not polled — it is billed one request per
+  game, which is the ~1,100 credits/day that docstring records cutting.
+
+### Corrected from the 2026-09-07 first reading
+
+Recorded because the wrong versions were believed for several hours and the
+reasoning is worth keeping:
+
+- "Over/Under is worse than a constant" — **refuted as stated**. The constant was
+  fitted on the very 258 rows it was scored on (that figure *is* the sample
+  entropy, unbeatable by construction), and those 258 are not "the settled rows
+  with an O/U line" but the window since `bm_under_odds` was added. On all 1,959
+  usable settled rows the model beats an honestly-chosen constant by 0.0093 ±
+  0.0037 (t = −2.52). What survives: it trails the de-vigged market by 0.0183 ±
+  0.0088 with near-zero discrimination.
+- "BTTS is anti-informative — the NG signal points the wrong way" — **refuted**.
+  The −1.09pp bucket gap has SE 2.47pp (z = −0.44, p = 0.66) and the AUC point
+  estimate is *above* 0.50. The correct word is uninformative.
+- "BTTS accuracy is 50.77%" — an artefact of pooling six threshold vintages
+  frozen into rows by `ON CONFLICT DO NOTHING`. Recomputed at one threshold:
+  53.88%, and 54.27% at the threshold the training run actually chose.
+- "The market is overconfident on our selected legs too" — **refuted outright**.
+  The comparison used raw `1/odds`, which still carries the margin. De-vigged, 1X
+  is fair 72.79% against an actual 71.43%; the market is calibrated on exactly
+  the legs the ladder picked. The 294 "1X legs" are also 122 distinct fixtures.
+- "−23% ROI proves the model is overconfident" — it is the bookmaker's margin, to
+  within 0.08pp of a zero-skill benchmark computed slip-by-slip.
+- "Served 1×2 reached market parity" — statistically indistinguishable, and
+  mostly because it now *is* the market: measured implied weight median 0.948.
+  The unanchored model is +0.0125 behind on the same rows.
+- The longshot profile was **not** suspended. Its 66 legs under the old shape
+  stated 53.4% and landed 24.2%; the 2026-09-01 rebuild to five legs of
+  `CALIBRATED_MARKETS` fixed exactly that — its 21 legs since state 58.4% and
+  land 52.4%, against a market price of 54.8%. Suspending it would have been a
+  decision taken on retired evidence.
+
 ## 2026-09-03
 
 A model audit (`docs/MODEL_AUDIT_2026-09-03.md`) asked one question — can the

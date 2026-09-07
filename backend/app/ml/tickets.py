@@ -112,14 +112,42 @@ def settle_market(market: str, home_goals: int, away_goals: int) -> bool:
 class Leg:
     match_id:   int
     market:     str
-    prob:       float          # our model's probability, 0–1
+    prob:       float          # our model's probability, 0–1 — RANKS the ladder
     odds:       float          # decimal odds actually offered to the punter
     estimated:  bool           # True → `odds` is our fair price, not a market one
+    # The bookmaker's own probability with their margin removed — what the slip
+    # is PRINTED as. See Ticket.combined_prob for why the two are different
+    # numbers and must stay that way. Equal to `prob` on an estimated leg, where
+    # there is no market opinion to borrow.
+    fair_prob:  float = 0.0
     league:     str = ""
     home_team:  str = ""
     away_team:  str = ""
     kickoff:    Optional[str] = None   # ISO string, display only
     confidence: str = ""
+
+
+def _devig(part: float, book: Sequence[Optional[float]]) -> Optional[float]:
+    """The bookmaker's probability for `part` of a market, margin removed.
+
+    `book` is every mutually exclusive price in that market — all three of a
+    1x2, both sides of a totals or BTTS pair. `part` is the summed implied
+    probability of the outcomes this leg covers, so 1X passes 1/o_home +
+    1/o_draw and O2.5 passes 1/o_over.
+
+    Dividing by the book's total is the whole de-vig: it removes the margin and
+    keeps the shape. Skipping it is what made the audit of 2026-09-07 read the
+    market as overconfident on the very legs the ladder picked — 1X priced at a
+    raw 77.6% against a 71.4% strike rate, which looked like a 6-point failure
+    and was 72.8% against 71.4% once the 6.7% margin came out.
+    """
+    prices = [o for o in book if o and o > 1.0]
+    if len(prices) != len(book) or not prices:
+        return None
+    total = sum(1.0 / o for o in prices)
+    if total <= 0:
+        return None
+    return part / total
 
 
 def _dc_odds(o_a: Optional[float], o_b: Optional[float]) -> Optional[float]:
@@ -193,29 +221,42 @@ def candidate_legs(
     # ladder for nothing.
     _has_1x2_line = bm_home is not None and bm_draw is not None and bm_away is not None
 
-    raw: list[tuple[str, Optional[float], Optional[float]]] = [
-        (MARKET_1,  home_win_prob, bm_home),
-        (MARKET_X,  draw_prob,     bm_draw),
-        (MARKET_2,  away_win_prob, bm_away),
-        (MARKET_1X, home_win_prob + draw_prob,     _dc_odds(bm_home, bm_draw)),
-        (MARKET_X2, draw_prob + away_win_prob,     _dc_odds(bm_draw, bm_away)),
-        (MARKET_12, home_win_prob + away_win_prob, _dc_odds(bm_home, bm_away)),
-        (MARKET_O25, over_2_5_prob,     bm_over),
-        (MARKET_U25, 1.0 - over_2_5_prob, bm_under),
+    # Each entry is (market, our probability, the price, the de-vigged market
+    # probability). The fourth is None wherever the book behind it is incomplete
+    # — a fixture priced 1x2 but not on totals gets a fair 1X and no fair O2.5.
+    _1x2 = (bm_home, bm_draw, bm_away)
+    _tot = (bm_over, bm_under)
+    _gg  = (bm_btts_yes, bm_btts_no)
+
+    def _p(o: Optional[float]) -> float:
+        return 1.0 / o if o and o > 1.0 else 0.0
+
+    raw: list[tuple[str, Optional[float], Optional[float], Optional[float]]] = [
+        (MARKET_1,  home_win_prob, bm_home, _devig(_p(bm_home), _1x2)),
+        (MARKET_X,  draw_prob,     bm_draw, _devig(_p(bm_draw), _1x2)),
+        (MARKET_2,  away_win_prob, bm_away, _devig(_p(bm_away), _1x2)),
+        (MARKET_1X, home_win_prob + draw_prob,     _dc_odds(bm_home, bm_draw),
+         _devig(_p(bm_home) + _p(bm_draw), _1x2)),
+        (MARKET_X2, draw_prob + away_win_prob,     _dc_odds(bm_draw, bm_away),
+         _devig(_p(bm_draw) + _p(bm_away), _1x2)),
+        (MARKET_12, home_win_prob + away_win_prob, _dc_odds(bm_home, bm_away),
+         _devig(_p(bm_home) + _p(bm_away), _1x2)),
+        (MARKET_O25, over_2_5_prob,     bm_over,  _devig(_p(bm_over),  _tot)),
+        (MARKET_U25, 1.0 - over_2_5_prob, bm_under, _devig(_p(bm_under), _tot)),
     ]
     if btts_prob is not None:
-        raw.append((MARKET_GG, btts_prob,       bm_btts_yes))
-        raw.append((MARKET_NG, 1.0 - btts_prob, bm_btts_no))
+        raw.append((MARKET_GG, btts_prob,       bm_btts_yes, _devig(_p(bm_btts_yes), _gg)))
+        raw.append((MARKET_NG, 1.0 - btts_prob, bm_btts_no,  _devig(_p(bm_btts_no),  _gg)))
     if poisson:
         raw += [
-            (MARKET_O15, poisson.get("over_1_5"),  None),
-            (MARKET_U15, poisson.get("under_1_5"), None),
-            (MARKET_O35, poisson.get("over_3_5"),  None),
-            (MARKET_U35, poisson.get("under_3_5"), None),
+            (MARKET_O15, poisson.get("over_1_5"),  None, None),
+            (MARKET_U15, poisson.get("under_1_5"), None, None),
+            (MARKET_O35, poisson.get("over_3_5"),  None, None),
+            (MARKET_U35, poisson.get("under_3_5"), None, None),
         ]
 
     legs: list[Leg] = []
-    for market, prob, odds in raw:
+    for market, prob, odds, fair in raw:
         if prob is None or prob < MIN_LEG_PROB:
             continue
         if market in RESULT_MARKETS and not _has_1x2_line:
@@ -227,6 +268,7 @@ def candidate_legs(
         legs.append(Leg(
             match_id=match_id, market=market, prob=round(float(prob), 4),
             odds=round(float(price), 2), estimated=estimated,
+            fair_prob=round(float(fair if fair is not None else prob), 4),
             league=league, home_team=home_team, away_team=away_team,
             kickoff=kickoff, confidence=confidence,
         ))
@@ -284,10 +326,21 @@ class Profile:
 # as seven legs paying 4.2× at a 15% chance.
 #
 # The price range is a filter on what the reader wants to bet, fixed in advance
-# and identical for every fixture. Selection INSIDE it is by model probability
-# alone. That distinction is the whole ballgame: ranking by model-vs-market gap
-# is what produced 32.1% hit rate against 52.6% for plain argmax on the same
-# 470 fixtures, and nothing here ranks on that gap.
+# and identical for every fixture. Selection INSIDE it is by the probability we
+# SERVE, never by the gap between our number and the price. That distinction is
+# the whole ballgame: ranking by model-vs-market gap produced a 32.1% hit rate
+# against 52.6% for plain argmax on the same 470 fixtures, and nothing here
+# ranks on that gap.
+#
+# 2026-09-07, said plainly because it changes what "our probability" means here:
+# the served numbers are anchored to the de-vigged line at w=0.85 — 1x2 since
+# 2026-09-01, Over/Under and BTTS since today — so on a priced fixture the
+# ladder is ranking a number that is mostly the market's. That is not a
+# regression, it is the measured improvement: on the legs this builder actually
+# picks, corr(model, de-vig) was already +0.863, and the 8pp overstatement the
+# audit found on 1X legs was a winner's curse on OUR number, which shrinking
+# toward the price removes about 72% of. An unpriced fixture still ranks on the
+# model alone, and those are exactly the ones RESULT_MARKETS already refuses.
 #
 # odds_max keeps a "treble" from quietly becoming three 6.00 shots.
 PROFILES: tuple[Profile, ...] = (
@@ -366,8 +419,46 @@ class Ticket:
 
     @property
     def combined_prob(self) -> float:
-        """Product of leg probabilities — valid because legs come from
-        different fixtures (enforced in build_tickets)."""
+        """The chance this slip lands, as the MARKET prices it — not as we do.
+
+        2026-09-07. This number is printed beside `total_odds`, and a reader
+        multiplies them. Built from model probabilities it was quoting an
+        expected value of +64.4% on average and +192% on longshot, on a product
+        that has returned -23.43% over 114 settled slips. Nothing in tickets.py
+        ever compares a probability to a price, so there was no mechanism by
+        which a slip could be positive-EV; the +64% came entirely from
+        multiplying two numbers with opposite biases — our probabilities, which
+        run high on the legs an argmax selects, against real prices carrying a
+        6.16% margin each.
+
+        Measured over the same 114 slips: model product 24.14% average against
+        15.79% actual (mean absolute error 8.35pp); de-vigged product 14.42%
+        against 15.79% (1.37pp).
+
+        The arithmetic is now honest by construction. For a slip of L real-priced
+        legs, combined_prob * total_odds = overround^-L, which is about -22% at
+        the measured margin. A negative number, which is what a parlay is.
+
+        `prob` still ranks the ladder — selection is by what WE think most
+        likely, and the comment on PROFILES explains why ranking on the
+        model-vs-market gap is worse. What changed is only what gets printed.
+        An estimated leg carries fair_prob == prob, because there is no market
+        opinion to borrow; a slip made mostly of those is flagged `estimated`
+        and the page says so.
+
+        Valid as a product because legs come from different fixtures (enforced
+        in build_tickets). The independence is not the weak link: the measured
+        within-ticket dispersion ratio is 1.039, 95% CI [0.840, 1.251].
+        """
+        p = 1.0
+        for l in self.legs:
+            p *= (l.fair_prob or l.prob)
+        return round(p, 6)
+
+    @property
+    def model_prob(self) -> float:
+        """What OUR probabilities say, kept for the ledger and for the page to
+        show beside the market's number. Never multiplied by the payout."""
         p = 1.0
         for l in self.legs:
             p *= l.prob

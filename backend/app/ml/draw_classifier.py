@@ -58,7 +58,8 @@ import pickle
 from typing import Optional
 
 import numpy as np
-from sklearn.isotonic import IsotonicRegression
+from sklearn.isotonic import IsotonicRegression  # noqa: F401  (type hints / isinstance)
+from backend.app.ml.prob_bounds import probability_isotonic
 from xgboost import XGBClassifier
 
 from backend.app.ml.features import LEAGUE_DUMMY_COLS
@@ -170,7 +171,7 @@ def fit_draw_classifier(
 
     # Fit isotonic calibrator on validation output
     raw_probs  = model.predict_proba(Xd_val)[:, 1]
-    calibrator = IsotonicRegression(out_of_bounds="clip")
+    calibrator = probability_isotonic()
     calibrator.fit(raw_probs, yd_val.astype(float))
     cal_probs  = calibrator.predict(raw_probs)
 

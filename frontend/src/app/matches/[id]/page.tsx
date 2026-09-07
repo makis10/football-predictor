@@ -225,14 +225,19 @@ export default async function MatchDetailPage({ params }: Props) {
                     <h2 className="text-sm font-semibold text-chalk-2 uppercase tracking-wider">
                       GG / NG · Both Teams to Score
                     </h2>
+                    {/* The model's own call, at the threshold the training run
+                        selected (currently 0.47). This used to be decided here
+                        with a hardcoded 0.5, so the badge and the stored label
+                        could disagree — and the threshold train.py sweeps every
+                        retrain changed nothing anyone saw. */}
                     <span
                       className={`badge font-semibold ${
-                        prediction.btts_prob >= 0.5
+                        (prediction.btts_prediction ?? "NG") === "GG"
                           ? "bg-win/20 text-win"
                           : "bg-lose/20 text-lose"
                       }`}
                     >
-                      {prediction.btts_prob >= 0.5 ? "GG" : "NG"}
+                      {prediction.btts_prediction ?? "NG"}
                     </span>
                   </div>
                   <BttsProbabilityBar bttsProb={prediction.btts_prob} t={t} />

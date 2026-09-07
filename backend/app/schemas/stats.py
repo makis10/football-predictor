@@ -16,6 +16,34 @@ class AccuracySlice(BaseModel):
     goals_accuracy: float    # 0-1
     both_accuracy: float     # 0-1
 
+    # What the same rows would have scored with no model at all.
+    #
+    # 2026-09-07: the page shipped accuracies with nothing to compare them to,
+    # so the frontend invented a threshold and painted anything above 57% green.
+    # The always-OVER base rate on the same rows is 57.06%, so "O/U 58%" was
+    # rendering GREEN for an edge of +1.3pp that is not distinguishable from a
+    # constant (McNemar z = 1.10), while "1x2 50%" rendered YELLOW for +5.7pp
+    # over always-HOME that is real (z = 5.18). The colours inverted the truth.
+    #
+    # These are measured on the slice itself, not assumed: the most common
+    # actual result for 1x2, and the actual over-2.5 rate for goals. A reader
+    # can subtract them, and so can the accent function.
+    result_baseline: float = 0.0   # share of the most common actual result
+    goals_baseline: float = 0.0    # actual over-2.5 rate on these rows
+
+    # How many of these rows are national-team predictions rather than club
+    # ones. The two models are different pipelines with very different records
+    # (national result accuracy 61.1% against the club model's 48.4%), and they
+    # are pooled here so a rolling window is not empty every time the clubs are
+    # off-season.
+    #
+    # 2026-09-07: pooling them silently moved the site-wide headline from 48%
+    # to 50%, and produced one row — "pure-model, 2026-06-17 to 2026-07-10,
+    # 68.8%, n=80" — in which 79 of the 80 matches were internationals, read by
+    # a visitor as the market-independent club model's score. The mix is now
+    # part of the payload, so any slice can say what it is made of.
+    national_total: int = 0
+
 
 class RollingAccuracy(BaseModel):
     last_7d: AccuracySlice
@@ -67,6 +95,24 @@ class BTTSStats(BaseModel):
     ng_recall: float         # of actual NG, how many did we predict as NG?
     gg_precision: float      # of GG predictions, how many were correct?
     overall_accuracy: float  # total correct / total
+
+    # Always-GG on the same rows. BTTS overall_accuracy has been BELOW this for
+    # its whole recorded history (53.9% against 54.8%), which the card could not
+    # show because it had no baseline to show it against.
+    gg_baseline: float = 0.0
+
+    # Discrimination, which a reliability diagram cannot express.
+    #
+    # A perfectly calibrated constant plots as a perfect diagonal. Our BTTS
+    # probability is very nearly that: AUC 0.5143 on 1,908 rows, 78.7% of all
+    # values inside [0.50, 0.60), Brier resolution 0.00097 — 0.39% of the
+    # uncertainty in the outcome. The chart said "well calibrated" and a reader
+    # reasonably heard "good", so the number that separates those two claims now
+    # travels with it. 0.5 is a coin.
+    auc: Optional[float] = None
+    # Brier resolution: how much of the outcome variance the forecast explains.
+    # 0 means every match got the same answer.
+    resolution: Optional[float] = None
 
 
 class TopPicksStats(BaseModel):
@@ -250,6 +296,11 @@ class StatsResponse(BaseModel):
     btts_stats: Optional[BTTSStats] = None           # None when no lambda data yet
     calibration: list[CalibrationBucket]              # O/U probability buckets
     btts_calibration: list[CalibrationBucket] = []   # BTTS probability buckets
+    # Discrimination for the O/U forecast, so its reliability diagram carries
+    # the same health warning as the BTTS one. A calibrated constant draws a
+    # perfect diagonal on both; only these numbers separate it from a forecast.
+    goals_auc: Optional[float] = None
+    goals_resolution: Optional[float] = None
     result_calibration: Optional[ResultCalibration] = None  # 1×2 calibration
     by_model_version: list[ModelVersionStats]
     roi: Optional[ROIStats] = None          # None when no bm odds stored yet

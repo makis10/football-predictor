@@ -42,7 +42,10 @@ from backend.app.ml.features import (
     FEATURE_COLS, RESULT_FEATURE_COLS, GOALS_FEATURE_COLS,
 )
 from backend.app.ml.european import load_european_data, EUROPEAN_DIR
-from backend.app.ml.predict import SoftVoteEnsemble, _get_models, confidence_for, _get_draw_alpha, _get_btts_threshold
+from backend.app.ml.predict import (
+    SoftVoteEnsemble, _get_models, confidence_for, _get_draw_alpha,
+    _get_btts_threshold, anchor_binary_to_market,
+)
 from backend.app.ml.calibration import load_calibrators, apply_calibration
 from backend.app.ml.draw_classifier import (
     load_draw_classifier, load_draw_calibrator,
@@ -582,17 +585,32 @@ for i, (mid, home, away, match_date, league) in enumerate(match_snapshots, 1):
 
         _mkt = ((live_odds.get("raw_home"), live_odds.get("raw_draw"),
                  live_odds.get("raw_away")) if live_odds else None)
+        _ou_odds = ((live_odds.get("raw_over"), live_odds.get("raw_under"))
+                    if live_odds and live_odds.get("raw_over") and live_odds.get("raw_under")
+                    else None)
+        _gg_odds = ((live_odds.get("raw_btts_yes"), live_odds.get("raw_btts_no"))
+                    if live_odds and live_odds.get("raw_btts_yes") and live_odds.get("raw_btts_no")
+                    else None)
         _coh_h, _coh_d, _coh_a, over_p, gg_prob = finalise_probabilities(
             home=home_win_p, draw=draw_p, away=away_win_p,
             over=over_p, btts=gg_prob,
-            elo_split=_split,           # no odds yet — see pre_anchor below
+            elo_split=_split,           # 1x2 odds withheld — see pre_anchor below
         )
+        # The unanchored twin the EV gate reads. Captured here, AFTER coherence
+        # and BEFORE any market blend, exactly like pre_anchor below — the two
+        # goals markets are anchored a few lines down and would otherwise leave
+        # the gate comparing the market with itself.
+        raw_over_out, raw_btts_out = over_p, gg_prob
+        if _ou_odds:
+            over_p = anchor_binary_to_market(over_p, _ou_odds[0], _ou_odds[1])
+        if _gg_odds and gg_prob is not None:
+            gg_prob = anchor_binary_to_market(gg_prob, _gg_odds[0], _gg_odds[1])
         # The EV / value gate must never see an anchored probability: it exists
         # to measure model-vs-market disagreement, and fed the market's own
         # opinion it finds an edge of zero everywhere. So the ledger keeps the
         # coherent-but-unanchored numbers, and anchoring is applied separately
         # for what the reader sees.
-        pre_anchor = (_coh_h, _coh_d, _coh_a, over_p)
+        pre_anchor = (_coh_h, _coh_d, _coh_a, raw_over_out)
         served_h, served_d, served_a = anchor_to_market((_coh_h, _coh_d, _coh_a), _mkt)
 
         btts_prediction = "GG" if gg_prob >= _get_btts_threshold() else "NG"
@@ -670,7 +688,7 @@ for i, (mid, home, away, match_date, league) in enumerate(match_snapshots, 1):
                 "draw":     pre_anchor[1],
                 "away_win": pre_anchor[2],
                 "over_2_5": pre_anchor[3],
-                "btts":     gg_prob,
+                "btts":     raw_btts_out,
             }
             fair_probs = {
                 "home_win": live_odds.get("home_win"),
@@ -703,6 +721,7 @@ for i, (mid, home, away, match_date, league) in enumerate(match_snapshots, 1):
                      suggested_market, ev_score,
                      poisson_lambda_home, poisson_lambda_away,
                      raw_home_prob, raw_draw_prob, raw_away_prob, raw_over_prob,
+                     raw_btts_prob,
                      btts_prob, btts_prediction, insufficient_data)
                 VALUES
                     (:match_id, :home_win_prob, :draw_prob, :away_win_prob,
@@ -713,6 +732,7 @@ for i, (mid, home, away, match_date, league) in enumerate(match_snapshots, 1):
                      :suggested_market, :ev_score,
                      :poisson_lambda_home, :poisson_lambda_away,
                      :raw_home_prob, :raw_draw_prob, :raw_away_prob, :raw_over_prob,
+                     :raw_btts_prob,
                      :btts_prob, :btts_prediction, :insufficient_data)
                 ON CONFLICT (match_id) DO NOTHING
             """),
@@ -747,10 +767,28 @@ for i, (mid, home, away, match_date, league) in enumerate(match_snapshots, 1):
                 "ev_score":            ev_score,
                 "poisson_lambda_home": lambda_home,
                 "poisson_lambda_away": lambda_away,
-                "raw_home_prob": round(xgb_raw_h, 4),
-                "raw_draw_prob": round(xgb_raw_d, 4),
-                "raw_away_prob": round(xgb_raw_a, 4),
-                "raw_over_prob": round(raw_over,   4),
+                # The UNANCHORED twins, and the word means unanchored — not
+                # uncalibrated.
+                #
+                # 2026-09-07: these columns held the bare XGBoost outputs
+                # (xgb_raw_h, raw_over), which are not probabilities in any
+                # usable sense — the isotonic maps a raw 0.7832 to 1.0. The
+                # batch ledger a few lines up fed the value gate `pre_anchor`
+                # (calibrated, coherent, unanchored) while the API's own gate at
+                # routers/predictions.py:490 read these columns, so the same
+                # gate was computing expected value from two different
+                # quantities depending on which path answered. Both now store
+                # and read the same thing: our honest probability with no market
+                # content in it.
+                #
+                # The bare model outputs are diagnostics, not probabilities. They
+                # are still printed by the training run; nothing serves them.
+                "raw_home_prob": round(pre_anchor[0], 4),
+                "raw_draw_prob": round(pre_anchor[1], 4),
+                "raw_away_prob": round(pre_anchor[2], 4),
+                "raw_over_prob": round(pre_anchor[3], 4),
+                "raw_btts_prob": (round(raw_btts_out, 4)
+                                  if raw_btts_out is not None else None),
                 "btts_prob":       round(gg_prob, 4),
                 "btts_prediction": btts_prediction,
             },

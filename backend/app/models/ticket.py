@@ -36,7 +36,11 @@ class Ticket(Base):
     # Denormalised so a settled ticket keeps its original numbers even if the
     # legs are later touched — these are what the reader was actually shown.
     total_odds:    Mapped[float] = mapped_column(Float)
+    # The de-vigged MARKET product — what the slip is printed as, and the only
+    # probability the payout may be multiplied by. See tickets.Ticket.combined_prob.
     combined_prob: Mapped[float] = mapped_column(Float)
+    # Our own product, kept beside it. NULL on slips generated before 2026-09-07.
+    model_prob:    Mapped[Optional[float]] = mapped_column(Float, nullable=True)
     num_legs:      Mapped[int]   = mapped_column(Integer)
     # How far ahead we had to look to fill the card, in days. Displayed, so the
     # reader is never surprised by a leg five days out.
@@ -67,6 +71,9 @@ class TicketLeg(Base):
 
     market: Mapped[str]   = mapped_column(String(10))   # "1X", "O2.5", "GG", …
     prob:   Mapped[float] = mapped_column(Float)        # our model's number
+    # The bookmaker's own probability for this selection, margin removed.
+    # NULL on legs cut before 2026-09-07, and on estimated legs equal to `prob`.
+    fair_prob: Mapped[Optional[float]] = mapped_column(Float, nullable=True)
     odds:   Mapped[float] = mapped_column(Float)        # as offered when cut
     # True when `odds` is our own fair price (1/prob) because no bookmaker
     # market exists for it. Surfaced in the UI — a payout the reader cannot

@@ -10,7 +10,7 @@ from sqlalchemy.orm import Session
 from backend.app.cache import CACHE_MISS, cache_get, cache_set
 from backend.app.database import get_db
 from backend.app.display_names import display_name
-from backend.app.ml.predict import confidence_for
+from backend.app.ml.predict import _get_btts_threshold, confidence_for
 from backend.app.models.match import Match
 from backend.app.models.odds_history import OddsHistory
 from backend.app.models.prediction import Prediction
@@ -219,6 +219,14 @@ def _build_response(
             prediction=goals_pred,
         ),
         btts_prob=btts,
+        btts_prediction=(
+            getattr(pred, "btts_prediction", None)
+            # A row written before the column existed, or one just computed on
+            # the fly: decide it the way the batch does rather than inventing a
+            # second threshold here.
+            or (None if btts is None
+                else ("GG" if btts >= _get_btts_threshold() else "NG"))
+        ),
         model_version=pred.model_version,
         # Recompute confidence from the DISPLAYED probs (which may be
         # injury-adjusted) so the label always matches what the user sees.
@@ -335,6 +343,24 @@ def get_prediction(match_id: int, db: Session = Depends(get_db)):
         market_odds = (float(_odds_row.home_odds),
                        float(_odds_row.draw_odds),
                        float(_odds_row.away_odds))
+
+    # Over/Under 2.5 is anchored on the same weight as 1x2 since 2026-09-07, and
+    # de-vigging a two-way market needs both sides. The poll stores the under
+    # from 0035 onward; before that it parsed and dropped it, so an older
+    # snapshot yields None here and the O/U simply stays the model's own number
+    # — the same honest fallback market_odds already has.
+    over_odds = None
+    if _odds_row and _odds_row.over_odds and getattr(_odds_row, "under_odds", None):
+        over_odds = (float(_odds_row.over_odds), float(_odds_row.under_odds))
+
+    # BTTS gets no anchor here, and that is a data fact rather than a second
+    # code path. This branch only runs when NO prediction row exists, so there
+    # are no bm_btts_* odds to read, and the poll deliberately does not buy BTTS
+    # — it is billed one request per game, which is the ~1,100 credits/day
+    # poll_odds.py records cutting. Both paths call the identical function at the
+    # identical weight; they differ only in which prices are on hand, and an
+    # absent price has always meant "serve the model's own number".
+    btts_odds = None
     db.close()
 
     # Compute prediction — history is cached after first request, so subsequent
@@ -350,6 +376,8 @@ def get_prediction(match_id: int, db: Session = Depends(get_db)):
             league=league,
             match_id=mid,
             market_odds=market_odds,
+            over_odds=over_odds,
+            btts_odds=btts_odds,
         )
     except Exception as e:
         import logging
@@ -469,12 +497,19 @@ def get_match_analysis(match_id: int, request: Request, db: Session = Depends(ge
 
     # EV / value gate reads the RAW model output, never the served numbers.
     #
-    # Since 2026-09-01 the served 1x2 is anchored to the bookmaker at w=0.57
-    # (predict.anchor_to_market) because that is measurably more accurate. But
+    # The served numbers are anchored to the bookmaker at w=0.85
+    # (predict.MARKET_ANCHOR_WEIGHT) because that is measurably more accurate —
+    # since 2026-09-01 for 1x2 and since 2026-09-07 for Over 2.5 and BTTS. But
     # the value gate exists to find model-vs-market DISAGREEMENT — hand it an
     # anchored probability and it compares the market with itself, finds an edge
     # of roughly zero on everything, and quietly stops suggesting anything.
     # raw_home_prob and friends are stored for exactly this reason.
+    #
+    # 2026-09-07: raw_btts_prob was added in migration 0034 for this line and
+    # this line only. Before it, anchoring BTTS would have sent every GG/NG edge
+    # to roughly minus the margin (-0.06 at the measured 1.0613 overround) and
+    # the gate would have stopped surfacing goals bets — a silent regression
+    # dressed as an accuracy improvement.
     #
     # Falls back to the served numbers for rows written before the raw columns
     # existed; those are all long settled, so the fallback is for safety, not
@@ -484,7 +519,7 @@ def get_match_analysis(match_id: int, request: Request, db: Session = Depends(ge
         "draw":     _first(getattr(pred, "raw_draw_prob", None), d),
         "away_win": _first(getattr(pred, "raw_away_prob", None), aw),
         "over_2_5": _first(getattr(pred, "raw_over_prob", None), ov),
-        "btts":     btts,
+        "btts":     _first(getattr(pred, "raw_btts_prob", None), btts),
     }
 
     from backend.app.ml.odds_analysis_service import run_comparison

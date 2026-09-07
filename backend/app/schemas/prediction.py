@@ -25,7 +25,16 @@ class PredictionResponse(BaseModel):
     match_date: date
     win_probabilities: WinProbabilities
     goals: GoalsPrediction
-    btts_prob: Optional[float] = None   # Both Teams To Score — Poisson-derived
+    btts_prob: Optional[float] = None   # Both Teams To Score, from the classifier
+    # The model's own GG/NG call, at the threshold the training run selected.
+    #
+    # 2026-09-07: this field did not exist, so both display surfaces decided for
+    # themselves with a hardcoded `btts_prob >= 0.5` — stats.py and the match
+    # page. Meanwhile train.py re-sweeps the threshold on every retrain and
+    # writes btts_threshold.json (currently 0.47), and compute_predictions stores
+    # the resulting label in a column nothing read. Three writers, no readers,
+    # and a cut nobody chose on the page.
+    btts_prediction: Optional[str] = None   # "GG" / "NG"
     model_version: str
     confidence: str
     insufficient_data: bool = False     # both teams unknown → not a real prediction

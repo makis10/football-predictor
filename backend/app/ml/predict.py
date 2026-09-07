@@ -228,6 +228,66 @@ def anchor_to_market(
     return (blended[0] / s, blended[1] / s, blended[2] / s)
 
 
+def anchor_binary_to_market(
+    model: float,
+    yes_odds: "float | None",
+    no_odds: "float | None",
+    weight: float = MARKET_ANCHOR_WEIGHT,
+) -> float:
+    """The same blend for a two-way market: Over/Under 2.5, and GG/NG.
+
+    Measured 2026-09-07 by sweeping w from 0.00 to 1.00 in 0.05 steps on every
+    settled row carrying both our probability and a two-sided price. Neither
+    goals market has an interior optimum — log-loss falls monotonically to
+    w=1.00 (bootstrap argmin lands there in 84% of O/U resamples and 97% of
+    BTTS ones), because there is nothing in our number to preserve:
+
+        Over 2.5   our AUC 0.5222 [0.4505, 0.5955]   market 0.5851
+        BTTS       our AUC 0.5020 [0.4547, 0.5502]   market 0.5607
+
+    A blend of one informative signal with an uninformative one is monotone in
+    the informative one's weight, so the argmin sits on the boundary. Over 2.5,
+    n=258:
+
+        w      log-loss   accuracy   AUC
+        0.00     0.6841     0.5581   0.5222     our model alone
+        0.50     0.6724     0.5543   0.5637
+        0.85     0.6673     0.5969   0.5811     <- here
+        1.00     0.6658     0.5930   0.5851     the bookmaker alone
+
+    w=0.85 is 0.0015 +/- 0.0013 worse than w=1.00 and that is not a statistical
+    choice — it is the same presentation trade the 1x2 weight above records, and
+    it is deliberately the SAME number so there is one anchor weight in the
+    codebase rather than three that drift apart.
+
+    On a wider check (n=762, one-sided rows de-vigged at the observed mean
+    overround) anchoring also clears the honest constant that our own O/U only
+    just beats: accuracy 0.5512 -> 0.5932, log-loss 0.6850 -> 0.6729, AUC 0.5495
+    -> 0.6000.
+
+    As with the 1x2 blend, this changes what we SHOW and must not change what we
+    MEASURE — the EV / value gate reads raw_over_prob and raw_btts_prob.
+    """
+    try:
+        m = float(model)
+    except (TypeError, ValueError):
+        return model
+    if yes_odds is None or no_odds is None:
+        return m
+    try:
+        y, n = float(yes_odds), float(no_odds)
+    except (TypeError, ValueError):
+        return m
+    if y <= 1.0 or n <= 1.0:
+        return m
+    iy, ino = 1.0 / y, 1.0 / n
+    total = iy + ino
+    if total <= 0:
+        return m
+    fair = iy / total
+    return (1.0 - weight) * m + weight * fair
+
+
 def finalise_probabilities(
     *,
     home: float,
@@ -236,13 +296,16 @@ def finalise_probabilities(
     over: float,
     btts: "float | None",
     market_odds: "tuple[float, float, float] | None" = None,
+    over_odds: "tuple[float, float] | None" = None,
+    btts_odds: "tuple[float, float] | None" = None,
     elo_split=None,
 ):
     """The tail of the serving chain, in the one order both paths must use.
 
         1. coherence projection  — reconcile three independently-trained models
         2. cross-league split    — UEFA only, when a fitted ClubElo model exists
-        3. market anchoring      — blend toward the de-vigged line at w=0.57
+        3. market anchoring      — blend toward the de-vigged line at w=0.85,
+                                   on all three markets that carry a price
 
     This function exists because the order matters and it was not shared. The
     batch path (scripts/compute_predictions.py) did all three; predict_match(),
@@ -273,6 +336,21 @@ def finalise_probabilities(
         home, draw, away = elo_split((home, draw, away))
 
     home, draw, away = anchor_to_market((home, draw, away), market_odds)
+
+    # 2026-09-07: the goals markets were the only headline probabilities in the
+    # stack with no market content at all, and they were also the only two that
+    # measured at chance (Over 2.5 AUC 0.5222, BTTS 0.5020, against the market's
+    # 0.5851 and 0.5607). Anchoring them is not a tuning choice — it is the only
+    # place the missing information can come from, and it arrives free from
+    # prices already in the database. Coverage is not the obstacle: of the
+    # upcoming fixtures that already carry a 1x2 line, 98.4% carry a two-sided
+    # O/U line and 94.4% a BTTS pair, so this reaches the same board 1x2
+    # anchoring already reaches.
+    if over_odds:
+        over = anchor_binary_to_market(over, over_odds[0], over_odds[1])
+    if btts is not None and btts_odds:
+        btts = anchor_binary_to_market(btts, btts_odds[0], btts_odds[1])
+
     return home, draw, away, over, btts
 
 
@@ -333,6 +411,8 @@ def predict_match(
     league: str = "Unknown",
     match_id: Optional[int] = None,
     market_odds: "tuple[float, float, float] | None" = None,
+    over_odds: "tuple[float, float] | None" = None,
+    btts_odds: "tuple[float, float] | None" = None,
 ) -> dict:
     """
     Compute a prediction for a single (upcoming) match.
@@ -472,7 +552,7 @@ def predict_match(
     # shared rather than duplicated.
     home_win_p, draw_p, away_win_p, over_p, gg_prob = finalise_probabilities(
         home=home_win_p, draw=draw_p, away=away_win_p, over=over_p, btts=gg_prob,
-        market_odds=market_odds,
+        market_odds=market_odds, over_odds=over_odds, btts_odds=btts_odds,
     )
 
     goals_prediction = "OVER" if over_p >= 0.5 else "UNDER"

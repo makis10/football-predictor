@@ -51,7 +51,8 @@ import pickle
 from typing import Optional
 
 import numpy as np
-from sklearn.isotonic import IsotonicRegression
+from sklearn.isotonic import IsotonicRegression  # noqa: F401  (type hints / isinstance)
+from backend.app.ml.prob_bounds import probability_isotonic
 
 MODELS_DIR = os.path.join(os.path.dirname(__file__), "..", "..", "data", "models")
 
@@ -157,7 +158,7 @@ def fit_calibrators(
     # ── Goals model (binary) — global calibrator ──────────────────────────────
     raw_goals = goals_model.predict_proba(_X_goals)  # shape (n, 2)
     raw_over  = raw_goals[:, 1]
-    goals_cal = IsotonicRegression(out_of_bounds="clip")
+    goals_cal = probability_isotonic()
     goals_cal.fit(raw_over, y_cal_goals.astype(float))
 
     cal_over_pred = (goals_cal.predict(raw_over) >= 0.5).astype(int)

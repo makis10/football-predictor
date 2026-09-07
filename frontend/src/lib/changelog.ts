@@ -25,6 +25,71 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: "2026-09-07-impossible-certainty",
+    date: "2026-09-07",
+    tag: "fix",
+    title: {
+      en: "Four matches were shown as a 100% certainty. Nothing is.",
+      el: "Τέσσερις αγώνες εμφανίζονταν ως 100% βεβαιότητα. Τίποτα δεν είναι.",
+    },
+    body: {
+      en: "Bayern v Union Berlin, PSV v Heerenveen, Bayern v Leipzig and PSV v Willem II were all published with a 100% chance of over 2.5 goals — which also means a 0% chance of under, and that is not a claim anyone should make about football. The model never believed it: its own numbers for those four were 78–81%. The certainty was introduced by the step meant to make our probabilities honest, which had learned from a handful of high-scoring matches that everything above a certain point goes over. It had already been wrong once, on Club Brugge 1–0 Cercle Brugge. That step can no longer turn a small sample into a certainty, and nothing we publish can be a 0 or a 100 again.",
+      el: "Μπάγερν–Ούνιον Βερολίνου, PSV–Χέρενφεν, Μπάγερν–Λειψία και PSV–Βίλεμ ΙΙ δημοσιεύτηκαν όλοι με 100% πιθανότητα για over 2,5 γκολ — που σημαίνει και 0% για under, κάτι που κανείς δεν πρέπει να ισχυρίζεται για ποδόσφαιρο. Το μοντέλο δεν το πίστεψε ποτέ: τα δικά του νούμερα για τους τέσσερις ήταν 78–81%. Τη βεβαιότητα την εισήγαγε το βήμα που υποτίθεται κάνει τις πιθανότητές μας τίμιες, το οποίο είχε μάθει από μια χούφτα αγώνες με πολλά γκολ ότι ό,τι περνά ένα σημείο πάει over. Είχε ήδη πέσει έξω μία φορά, στο Κλαμπ Μπριζ 1–0 Σερκλ Μπριζ. Αυτό το βήμα δεν μπορεί πια να κάνει μικρό δείγμα βεβαιότητα, και τίποτα από όσα δημοσιεύουμε δεν μπορεί να είναι 0 ή 100.",
+    },
+  },
+  {
+    id: "2026-09-07-goals-anchoring",
+    date: "2026-09-07",
+    tag: "improvement",
+    title: {
+      en: "Our goals and BTTS numbers were a coin flip, so we stopped pretending otherwise",
+      el: "Τα νούμερά μας για γκολ και BTTS ήταν κορώνα-γράμματα, οπότε σταματήσαμε να προσποιούμαστε",
+    },
+    body: {
+      en: "The 1×2 probabilities have been blended toward the bookmakers' line since 1 September, because measuring showed that is more accurate. Over/Under and BTTS were left as pure model output — and when we finally measured their ability to tell one match from another it came to 0.52 and 0.51, against a coin's 0.50. In plain terms they were well-calibrated numbers carrying almost no information about which match would go over. Both are now blended the same way and at the same weight, which lifts Over/Under's ranking ability from 0.52 to 0.58 on the matches we can check. The value gate still reads our own unblended numbers, so it measures a real disagreement rather than the market against itself.",
+      el: "Οι πιθανότητες 1×2 αναμειγνύονται με τη γραμμή των γραφείων από την 1η Σεπτεμβρίου, επειδή η μέτρηση έδειξε ότι είναι πιο ακριβές. Το Over/Under και το BTTS έμεναν καθαρό μοντέλο — και όταν επιτέλους μετρήσαμε την ικανότητά τους να ξεχωρίζουν έναν αγώνα από τον άλλον, βγήκε 0,52 και 0,51 έναντι 0,50 του κέρματος. Απλά: ήταν καλά βαθμονομημένα νούμερα που δεν έλεγαν σχεδόν τίποτα για το ποιος αγώνας θα πάει over. Τώρα αναμειγνύονται και τα δύο με τον ίδιο τρόπο και το ίδιο βάρος, που ανεβάζει την ικανότητα κατάταξης του Over/Under από 0,52 σε 0,58 στους αγώνες που μπορούμε να ελέγξουμε. Το value gate εξακολουθεί να διαβάζει τα δικά μας ανάμεικτα νούμερα, ώστε να μετρά πραγματική διαφωνία και όχι την αγορά με τον εαυτό της.",
+    },
+  },
+  {
+    id: "2026-09-07-ticket-chance-is-the-markets",
+    date: "2026-09-07",
+    tag: "fix",
+    title: {
+      en: "The chance printed on a ticket implied a profit. There never was one.",
+      el: "Η πιθανότητα πάνω στο δελτίο υπονοούσε κέρδος. Ποτέ δεν υπήρχε.",
+    },
+    body: {
+      en: "Each slip showed a chance of landing next to a payout, and multiplying the two came to +64% on average — a claim that these are profitable bets. They are not, and this page has always said so in words: over 114 settled slips the record is −23%, which is almost exactly the bookmakers' compounded margin. The +64% came from multiplying our own probabilities, which run high on the legs a ranking picks, by real prices that carry a margin. The chance shown is now the bookmakers' own with their margin removed, so the two numbers multiply out to a negative — which is what a parlay is. Our model's figure sits underneath it, where nothing multiplies it.",
+      el: "Κάθε δελτίο έδειχνε μια πιθανότητα επιτυχίας δίπλα στην απόδοση, και ο πολλαπλασιασμός τους έβγαζε +64% κατά μέσο όρο — δηλαδή ισχυρισμό ότι είναι κερδοφόρα. Δεν είναι, και η σελίδα πάντα το έλεγε με λόγια: σε 114 κριθέντα δελτία το ρεκόρ είναι −23%, σχεδόν ακριβώς η σύνθετη γκανιότα. Το +64% προέκυπτε πολλαπλασιάζοντας τις δικές μας πιθανότητες, που τρέχουν ψηλά στα σκέλη που διαλέγει μια κατάταξη, επί πραγματικές τιμές με περιθώριο μέσα. Η πιθανότητα που δείχνουμε τώρα είναι της ίδιας της αγοράς χωρίς το περιθώριό της, ώστε τα δύο νούμερα να βγάζουν αρνητικό — που είναι ό,τι είναι ένα παρολί. Το νούμερο του μοντέλου μας κάθεται από κάτω, όπου κανείς δεν το πολλαπλασιάζει.",
+    },
+  },
+  {
+    id: "2026-09-07-baselines-everywhere",
+    date: "2026-09-07",
+    tag: "improvement",
+    title: {
+      en: "Every accuracy figure now says what it beat",
+      el: "Κάθε ποσοστό ακρίβειας λέει πλέον τι νίκησε",
+    },
+    body: {
+      en: "A percentage on its own cannot be judged. 58% on over/under sounds better than 50% on the result, but 57% of these matches went over anyway — so the first is worth about one point and the second nearly six. The page was even colouring them the wrong way round, green for the weaker number and yellow for the stronger, because the threshold had been picked by hand and happened to land on the baseline. Each figure now carries the score the same matches would have produced with no model at all, and the colour follows the gap. Where that gap is negative it says so: our BTTS accuracy is half a point below simply saying both teams score, every time. The calibration charts now print how well each forecast separates matches, because a flat forecast can sit perfectly on the diagonal and still tell you nothing.",
+      el: "Ένα ποσοστό μόνο του δεν κρίνεται. Το 58% στο over/under ακούγεται καλύτερο από το 50% στο αποτέλεσμα, αλλά το 57% αυτών των αγώνων πήγε over ούτως ή άλλως — άρα το πρώτο αξίζει περίπου μία μονάδα και το δεύτερο σχεδόν έξι. Η σελίδα μάλιστα τα χρωμάτιζε ανάποδα, πράσινο το ασθενέστερο και κίτρινο το ισχυρότερο, επειδή το κατώφλι είχε επιλεγεί στο χέρι και έτυχε να πέσει πάνω στη βάση. Κάθε νούμερο κουβαλάει τώρα τι θα έβγαζαν οι ίδιοι αγώνες χωρίς κανένα μοντέλο, και το χρώμα ακολουθεί τη διαφορά. Όπου η διαφορά είναι αρνητική, το λέει: η ακρίβειά μας στο BTTS είναι μισή μονάδα κάτω από το να λες απλώς ότι σκοράρουν και οι δύο, κάθε φορά. Τα διαγράμματα βαθμονόμησης δείχνουν πλέον και πόσο καλά ξεχωρίζει αγώνες η κάθε πρόβλεψη, γιατί μια επίπεδη πρόβλεψη μπορεί να κάθεται τέλεια πάνω στη διαγώνιο και να μη λέει τίποτα.",
+    },
+  },
+  {
+    id: "2026-09-07-national-rows-separated",
+    date: "2026-09-07",
+    tag: "fix",
+    title: {
+      en: "National-team matches were quietly inflating the club record",
+      el: "Οι αγώνες εθνικών ομάδων φούσκωναν αθόρυβα το ρεκόρ των συλλόγων",
+    },
+    body: {
+      en: "International fixtures are predicted by a separate model with a much better record, and their results were being pooled into the site-wide accuracy without saying so. That moved the headline from 48% to 50%. One row of the model-history table read \"68.8% over 80 matches\" — 79 of those 80 were internationals, and a reader would fairly have taken it for the club model. Every slice now states how many of its matches came from the national model. Separately, the international page was counting 2,632 matches as tracked predictions when 2,424 of them were scored after the fact, replaying the model over fixtures that were already history. Those are results, not predictions, and they no longer appear as a record.",
+      el: "Οι διεθνείς αγώνες προβλέπονται από ξεχωριστό μοντέλο με πολύ καλύτερο ρεκόρ, και τα αποτελέσματά τους ανακατεύονταν στη γενική ακρίβεια της σελίδας χωρίς να το λέμε. Αυτό μετακινούσε το βασικό νούμερο από 48% σε 50%. Μια γραμμή στον πίνακα ιστορικού μοντέλου έγραφε «68,8% σε 80 αγώνες» — οι 79 από τους 80 ήταν διεθνείς, και δίκαια θα το εκλάμβανε κανείς ως το μοντέλο συλλόγων. Κάθε τμήμα δηλώνει πλέον πόσοι από τους αγώνες του προέρχονται από το εθνικό μοντέλο. Χωριστά, η διεθνής σελίδα μετρούσε 2.632 αγώνες ως παρακολουθούμενες προβλέψεις ενώ οι 2.424 βαθμολογήθηκαν εκ των υστέρων, ξαναπαίζοντας το μοντέλο πάνω σε αγώνες που ήταν ήδη ιστορία. Αυτά είναι αποτελέσματα, όχι προβλέψεις, και δεν εμφανίζονται πια ως ρεκόρ.",
+    },
+  },
+  {
     id: "2026-09-03-european-ties-clubelo",
     date: "2026-09-03",
     tag: "fix",

@@ -16,6 +16,9 @@ in this file or the launchd schedule:
   1. `with_btts=False` on the league fetch.  BTTS is an "additional market" and
      costs one request PER GAME.  `odds_history` has no BTTS column, so every
      one of those credits was fetched, parsed and dropped — ~1,100/day.
+     Still true, and still deliberate: the goals anchoring added on 2026-09-07
+     reads BTTS prices off the fixture's own `bm_btts_*` columns, which the
+     daily batch already pays for once, rather than re-buying them here.
   2. Tiered polling (below): a match five days out does not need re-pricing
      every eight hours.
   3. The launchd schedule went 3-hourly → 8-hourly (00:00 / 08:00 / 16:00).
@@ -266,6 +269,10 @@ def main() -> None:
                 draw_odds=ro.get("draw"),
                 away_odds=ro.get("away_win"),
                 over_odds=ro.get("over_2_5"),
+                # Free: the totals market comes back as a pair in the response
+                # this sweep already paid for, and the under was being parsed
+                # and dropped. Anchoring Over/Under needs both sides to de-vig.
+                under_odds=ro.get("under_2_5"),
                 fetched_at=now,
             )
             db.add(snapshot)

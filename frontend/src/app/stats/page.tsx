@@ -26,6 +26,36 @@ function pct(v: number) {
   return `${Math.round(v * 100)}%`;
 }
 
+/**
+ * Colour is EDGE OVER THE BASELINE, not the raw percentage.
+ *
+ * 2026-09-07: this painted green at >= 0.57 and yellow at >= 0.48. The
+ * always-OVER base rate on the same rows is 0.5706, so "O/U 58%" rendered GREEN
+ * for an edge of +1.3pp that is not distinguishable from a constant (McNemar
+ * z = 1.10), while "1x2 50%" rendered YELLOW for +5.7pp over always-HOME that is
+ * real (z = 5.18). The colours were inverting the truth, and the threshold that
+ * did it had landed within 0.06pp of the base rate by coincidence.
+ *
+ * The baselines now come from the API, measured on the same rows the accuracy
+ * is measured on, so a single league or a single week gets its own honest floor.
+ * Bands: 3pp clear of the baseline is a real edge on these sample sizes, at or
+ * below it is not an edge at all.
+ */
+function accentForEdge(value: number, baseline: number): "green" | "yellow" | "red" {
+  const edge = value - baseline;
+  if (edge >= 0.03) return "green";
+  if (edge > 0.0) return "yellow";
+  return "red";
+}
+
+/** Sub-line that says what the same rows would have scored with no model. */
+function vsBaseline(value: number, baseline: number, label: string): string {
+  const edge = (value - baseline) * 100;
+  const sign = edge >= 0 ? "+" : "\u2212";
+  return `${sign}${Math.abs(edge).toFixed(1)}pp vs ${label} ${Math.round(baseline * 100)}%`;
+}
+
+/** Kept for the national view, whose endpoint has no baselines of its own. */
 function accentForAccuracy(v: number): "green" | "yellow" | "red" {
   if (v >= 0.57) return "green";
   if (v >= 0.48) return "yellow";
@@ -298,6 +328,16 @@ export default async function StatsPage({ searchParams }: PageProps) {
                     <span className="text-chalk-3 text-xs">
                       {" "}({r.from_date ?? "…"} → {r.to_date ?? t("stats.methodology.now")})
                     </span>
+                    {/* One of these rows — "pure-model, 68.8%, n=80" — was 79
+                        internationals and one club friendly, and read as the
+                        market-independent club model's score. The two are
+                        different pipelines with very different records, so any
+                        row carrying them says so. */}
+                    {r.stats.national_total > 0 && (
+                      <span className="block text-est text-[11px]">
+                        {t("stats.nationalShare", { n: r.stats.national_total })}
+                      </span>
+                    )}
                   </span>
                   <span className="text-right tabular-nums text-chalk">
                     {(r.stats.result_accuracy * 100).toFixed(1)}%
@@ -373,15 +413,24 @@ export default async function StatsPage({ searchParams }: PageProps) {
               <p className="text-xs text-chalk-3 mt-1">{t("stats.topPicks.correctN", { c: topPicks.correct, t: topPicks.total })}</p>
             </div>
 
+            {/* 2026-09-07: this card read "Vs Overall +18%", comparing a
+                ONE-outcome hit rate against a THREE-way 1x2 accuracy. A pick at
+                a stated 66% landing 67% of the time is not 18 points better
+                than anything — it is a forecast that came in. The honest
+                comparison is against what we said would happen, which is also
+                the only one that can go negative. */}
             <div className="rounded-lg bg-ink-700/80 border border-est/40 p-4 text-center">
-              <p className="text-xs text-chalk-3 uppercase tracking-wide mb-1">{t("stats.topPicks.vsOverall")}</p>
+              <p className="text-xs text-chalk-3 uppercase tracking-wide mb-1">{t("stats.topPicks.vsStated")}</p>
               <p className={`text-3xl font-bold ${
-                topPicks.vs_overall_accuracy > 0.02 ? "text-win" :
-                topPicks.vs_overall_accuracy > -0.02 ? "text-est" : "text-lose"
+                topPicks.accuracy - topPicks.avg_pick_prob > 0.02 ? "text-win" :
+                topPicks.accuracy - topPicks.avg_pick_prob > -0.02 ? "text-est" : "text-lose"
               }`}>
-                {topPicks.vs_overall_accuracy >= 0 ? "+" : ""}{pct(topPicks.vs_overall_accuracy)}
+                {topPicks.accuracy - topPicks.avg_pick_prob >= 0 ? "+" : "\u2212"}
+                {Math.abs((topPicks.accuracy - topPicks.avg_pick_prob) * 100).toFixed(1)}pp
               </p>
-              <p className="text-xs text-chalk-3 mt-1">{t("stats.topPicks.diffFrom", { pct: pct(all.result_accuracy) })}</p>
+              <p className="text-xs text-chalk-3 mt-1">
+                {t("stats.topPicks.vsStatedSub", { pct: pct(topPicks.avg_pick_prob) })}
+              </p>
             </div>
 
             <div className="rounded-lg bg-ink-700/80 border border-est/40 p-4 text-center">
@@ -448,20 +497,22 @@ export default async function StatsPage({ searchParams }: PageProps) {
           <StatCard
             label={t("stats.resultAccuracy")}
             value={pct(all.result_accuracy)}
-            sub={t("stats.correctFrac", { c: all.result_correct, t: all.total })}
-            accent={accentForAccuracy(all.result_accuracy)}
+            sub={vsBaseline(all.result_accuracy, all.result_baseline,
+                            t("stats.baseline.result"))}
+            accent={accentForEdge(all.result_accuracy, all.result_baseline)}
           />
           <StatCard
             label={t("stats.ouAccuracy")}
             value={pct(all.goals_accuracy)}
-            sub={t("stats.correctFrac", { c: all.goals_correct, t: all.total })}
-            accent={accentForAccuracy(all.goals_accuracy)}
+            sub={vsBaseline(all.goals_accuracy, all.goals_baseline,
+                            t("stats.baseline.goals"))}
+            accent={accentForEdge(all.goals_accuracy, all.goals_baseline)}
           />
           <StatCard
             label={t("stats.bothCorrect")}
             value={pct(all.both_accuracy)}
             sub={t("stats.frac", { c: all.both_correct, t: all.total })}
-            accent={accentForAccuracy(all.both_accuracy)}
+            accent="gray"
           />
           <StatCard
             label={t("stats.matchesTracked")}
@@ -728,8 +779,18 @@ export default async function StatsPage({ searchParams }: PageProps) {
             </div>
             <div className="rounded-xl border border-line bg-ink-700/60 p-4 text-center">
               <p className="text-xs text-chalk-3 uppercase tracking-wide mb-1">{t("stats.bttsOverallAcc")}</p>
-              <p className={`text-2xl font-bold ${accentForAccuracy(btts.overall_accuracy) === "green" ? "text-win" : accentForAccuracy(btts.overall_accuracy) === "yellow" ? "text-est" : "text-lose"}`}>
+              {/* Against always-GG, not against a hardcoded threshold. This
+                  figure has been BELOW its own baseline for its whole recorded
+                  history (54.3% against 54.7%), which the card could not show
+                  because it had nothing to compare with. */}
+              <p className={`text-2xl font-bold ${
+                accentForEdge(btts.overall_accuracy, btts.gg_baseline) === "green" ? "text-win"
+                : accentForEdge(btts.overall_accuracy, btts.gg_baseline) === "yellow" ? "text-est"
+                : "text-lose"}`}>
                 {pct(btts.overall_accuracy)}
+              </p>
+              <p className="text-xs text-chalk-3 mt-1">
+                {vsBaseline(btts.overall_accuracy, btts.gg_baseline, t("stats.baseline.gg"))}
               </p>
               <p className="text-xs text-chalk-3 mt-1">
                 {t("stats.bttsCorrectGGNG", { c: btts.correctly_predicted_gg + btts.correctly_predicted_ng, t: btts.total_gg + btts.total_ng })}
@@ -812,10 +873,13 @@ export default async function StatsPage({ searchParams }: PageProps) {
           {t("stats.calibration")}
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-          <CalibrationChart buckets={s.calibration} />
+          <CalibrationChart buckets={s.calibration} auc={s.goals_auc}
+                            resolution={s.goals_resolution} />
           <ResultCalibrationChart data={s.result_calibration ?? null} />
           {s.btts_calibration.length >= 2 && (
-            <BTTSCalibrationChart buckets={s.btts_calibration} />
+            <BTTSCalibrationChart buckets={s.btts_calibration}
+                                  auc={btts?.auc ?? null}
+                                  resolution={btts?.resolution ?? null} />
           )}
         </div>
       </section>

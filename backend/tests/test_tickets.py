@@ -611,3 +611,94 @@ def test_the_grace_period_allows_ordinary_rescheduling():
     gt = importlib.import_module("scripts.generate_tickets")
 
     assert 3 <= gt.STALE_LEG_GRACE_DAYS <= 14
+
+
+# ── the printed number and the payout must not imply a profit ─────────────────
+
+def _priced_leg(market, prob, odds, fair):
+    from backend.app.ml.tickets import Leg
+    return Leg(match_id=hash(market) % 10_000, market=market, prob=prob, odds=odds,
+               estimated=False, fair_prob=fair)
+
+
+def test_the_printed_chance_times_the_payout_is_never_a_profit():
+    """2026-09-07. `combined_prob` is printed beside `total_odds` and a reader
+    multiplies them. Built from model probabilities that product quoted an
+    average +64.4% expected value — +192% on longshot — for a product that has
+    returned -23.43% over 114 settled slips. Nothing in this module compares a
+    probability to a price, so no slip can be positive-EV; the +64% was two
+    numbers with opposite biases multiplied together.
+
+    With the de-vigged market product the arithmetic is honest by construction:
+    for L real-priced legs it is exactly overround^-L.
+    """
+    from backend.app.ml.tickets import Ticket
+
+    # Four legs, each priced with a 6% book — the measured margin is 1.0616.
+    legs = [_priced_leg(m, 0.80, 1.55, 0.605) for m in ("1X", "X2", "O2.5", "GG")]
+    t = Ticket(profile="fourfold", legs=legs)
+
+    assert t.combined_prob * t.total_odds - 1.0 < 0.0, (
+        "the card is quoting a positive expected value")
+    # …and the old definition is what would have quoted one.
+    assert t.model_prob * t.total_odds - 1.0 > 0.0, (
+        "fixture is wrong: the model product no longer overstates, so this test "
+        "cannot show that it used to")
+
+
+def test_an_estimated_leg_falls_back_to_our_own_number():
+    """No market, no market opinion to borrow. The page flags these slips."""
+    from backend.app.ml.tickets import Leg, Ticket
+
+    l = Leg(match_id=1, market="O1.5", prob=0.84, odds=1.19, estimated=True,
+            fair_prob=0.84)
+    t = Ticket(profile="safe", legs=[l])
+    assert t.combined_prob == pytest.approx(0.84)
+
+
+def test_devig_removes_the_margin_and_keeps_the_shape():
+    from backend.app.ml.tickets import _devig
+
+    book = (2.00, 3.40, 4.00)          # overround ~1.0662
+    parts = [1.0 / o for o in book]
+    fair = [_devig(p, book) for p in parts]
+    assert sum(fair) == pytest.approx(1.0, abs=1e-9)
+    for p, f in zip(parts, fair):
+        assert f < p, "de-vigging must lower every implied probability"
+    # order preserved
+    assert fair[0] > fair[1] > fair[2]
+
+
+def test_devig_declines_on_an_incomplete_book():
+    """A fixture priced 1x2 but not on totals must get a fair 1X and no fair
+    O2.5 — never one market's margin standing in for another's."""
+    from backend.app.ml.tickets import _devig
+
+    assert _devig(0.5, (2.0, None)) is None
+    assert _devig(0.5, (2.0, 1.0)) is None      # 1.0 is not a price
+    assert _devig(0.5, ()) is None
+
+
+def test_a_devigged_leg_reads_below_its_raw_price():
+    """The audit of 2026-09-07 read the market as overconfident on the selected
+    legs — 1X at a raw 77.6% against a 71.4% strike rate — because it compared
+    1/odds, which still carries the margin. De-vigged the same legs were 72.8%
+    against 71.4%, i.e. calibrated. Anything that prints a market probability
+    must print the de-vigged one."""
+    from backend.app.ml.tickets import candidate_legs
+
+    legs = candidate_legs(
+        match_id=1, league="EPL", home_team="A", away_team="B", kickoff=None,
+        confidence="high", home_win_prob=0.60, draw_prob=0.25, away_win_prob=0.15,
+        over_2_5_prob=0.55, btts_prob=0.55, poisson=None,
+        bm_home=1.70, bm_draw=3.80, bm_away=5.50,
+        bm_over=1.90, bm_under=1.95, bm_btts_yes=1.85, bm_btts_no=1.95,
+    )
+    by = {l.market: l for l in legs}
+    for market in ("1X", "O2.5", "GG"):
+        leg = by.get(market)
+        if leg is None:
+            continue
+        assert leg.fair_prob < 1.0 / leg.odds, (
+            f"{market}: fair_prob {leg.fair_prob} is not below the raw implied "
+            f"{1.0 / leg.odds:.4f} — the margin was not removed")

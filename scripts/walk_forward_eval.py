@@ -25,7 +25,8 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
-from sklearn.isotonic import IsotonicRegression
+from sklearn.isotonic import IsotonicRegression  # noqa: F401  (type hints / isinstance)
+from backend.app.ml.prob_bounds import probability_isotonic
 from sklearn.metrics import accuracy_score
 from sklearn.utils.class_weight import compute_sample_weight
 from xgboost import XGBClassifier
@@ -116,7 +117,7 @@ def _iso_calibrate(
         raw_p_test = model.predict_proba(X_test)   # (n_test, n_classes)
         cal_p_test = np.zeros_like(raw_p_test)
         for c in range(n_classes):
-            iso = IsotonicRegression(out_of_bounds="clip")
+            iso = probability_isotonic()
             iso.fit(raw_p_cal[:, c], (y_cal == c).astype(int))
             cal_p_test[:, c] = iso.predict(raw_p_test[:, c])
         # renormalise rows
@@ -127,7 +128,7 @@ def _iso_calibrate(
     else:
         raw_p_cal  = model.predict_proba(X_cal)[:, 1]
         raw_p_test = model.predict_proba(X_test)[:, 1]
-        iso = IsotonicRegression(out_of_bounds="clip")
+        iso = probability_isotonic()
         iso.fit(raw_p_cal, y_cal)
         cal_p_test = iso.predict(raw_p_test)
         y_pred_raw = (raw_p_test  >= 0.5).astype(int)

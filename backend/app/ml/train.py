@@ -72,6 +72,7 @@ from backend.app.ml.draw_classifier import (
 from backend.app.ml.btts_classifier import (
     fit_btts_classifier, save_btts_classifier, save_btts_calibrator,
 )
+from backend.app.ml.prob_bounds import probability_isotonic
 
 RAW_DIR    = os.path.join(os.path.dirname(__file__), "..", "..", "data", "raw")
 MODELS_DIR = os.path.join(os.path.dirname(__file__), "..", "..", "data", "models")
@@ -748,7 +749,6 @@ def main():
 
     # ── Calibrate draw specialist on held-out calibration set ─────────────────
     print("\n--- Calibrating draw classifier on calibration set ---")
-    from sklearn.isotonic import IsotonicRegression
     from sklearn.metrics import brier_score_loss
     from backend.app.ml.draw_classifier import blend_draw_probability
     from backend.app.ml.calibration import _apply_result as _apply_result_cal
@@ -757,7 +757,7 @@ def main():
     draw_cols_avail = [c for c in DRAW_FEATURE_COLS if c in cal.columns]
     draw_raw_cal = draw_clf.predict_proba(cal[draw_cols_avail])[:, 1]
     y_cal_draw   = (cal["target_result"].values == 1).astype(float)
-    draw_iso = IsotonicRegression(out_of_bounds="clip")
+    draw_iso = probability_isotonic()
     draw_iso.fit(draw_raw_cal, y_cal_draw)
     draw_cal_probs = draw_iso.predict(draw_raw_cal)
     draw_cal_mean  = draw_cal_probs.mean()
@@ -895,7 +895,7 @@ def main():
     btts_cols_avail = [c for c in BTTS_FEATURE_COLS if c in cal.columns]
     btts_raw_cal = btts_clf.predict_proba(cal[btts_cols_avail])[:, 1]
     y_cal_btts   = cal["target_btts"].values.astype(float)
-    btts_iso = IsotonicRegression(out_of_bounds="clip")
+    btts_iso = probability_isotonic()
     btts_iso.fit(btts_raw_cal, y_cal_btts)
     btts_cal_mean = btts_iso.predict(btts_raw_cal).mean()
     print(f"  [btts_clf] cal mean raw={btts_raw_cal.mean():.3f}  "

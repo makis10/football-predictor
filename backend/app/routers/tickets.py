@@ -41,7 +41,8 @@ STAKE = 1.0   # unit stake; the UI multiplies for display
 
 def _leg_out(leg: TicketLeg, match: Match) -> TicketLegOut:
     return TicketLegOut(
-        match_id=leg.match_id, market=leg.market, prob=leg.prob, odds=leg.odds,
+        match_id=leg.match_id, market=leg.market, prob=leg.prob,
+        fair_prob=leg.fair_prob, odds=leg.odds,
         estimated=leg.estimated, won=leg.won,
         league=match.league,
         home_team=display_name(match.home_team),
@@ -55,7 +56,8 @@ def _ticket_out(t: Ticket, matches: dict[int, Match]) -> TicketOut:
     return TicketOut(
         id=t.id, profile=t.profile, generated_for=t.generated_for,
         horizon_days=t.horizon_days, total_odds=t.total_odds,
-        combined_prob=t.combined_prob, num_legs=t.num_legs, outcome=t.outcome,
+        combined_prob=t.combined_prob, model_prob=t.model_prob,
+        num_legs=t.num_legs, outcome=t.outcome,
         legs=[_leg_out(l, matches[l.match_id]) for l in t.legs
               if l.match_id in matches],
     )

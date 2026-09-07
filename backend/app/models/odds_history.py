@@ -27,6 +27,7 @@ class OddsHistory(Base):
     draw_odds: Mapped[_Optional[float]] = mapped_column(Float, nullable=True)
     away_odds: Mapped[_Optional[float]] = mapped_column(Float, nullable=True)
     over_odds: Mapped[_Optional[float]] = mapped_column(Float, nullable=True)
+    under_odds: Mapped[_Optional[float]] = mapped_column(Float, nullable=True)
 
     fetched_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), server_default=func.now(), index=True

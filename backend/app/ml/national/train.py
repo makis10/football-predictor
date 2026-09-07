@@ -25,7 +25,8 @@ import json
 import numpy as np
 import pandas as pd
 from lightgbm import LGBMClassifier
-from sklearn.isotonic import IsotonicRegression
+from sklearn.isotonic import IsotonicRegression  # noqa: F401  (type hints / isinstance)
+from backend.app.ml.prob_bounds import probability_isotonic
 from sklearn.metrics import accuracy_score, brier_score_loss, classification_report, log_loss
 from sklearn.utils.class_weight import compute_sample_weight
 from xgboost import XGBClassifier
@@ -185,12 +186,12 @@ def _calibrate(
         cals = []
         probs = ensemble.predict_proba(X_cal)
         for c in range(n_classes):
-            iso = IsotonicRegression(out_of_bounds="clip")
+            iso = probability_isotonic()
             iso.fit(probs[:, c], (y_cal == c).astype(int))
             cals.append(iso)
         return cals
     else:
-        iso = IsotonicRegression(out_of_bounds="clip")
+        iso = probability_isotonic()
         probs = ensemble.predict_proba(X_cal)[:, 1]
         iso.fit(probs, y_cal)
         return iso
@@ -338,7 +339,7 @@ def train(data_dir: str | Path = DATA_DIR, models_dir: str | Path = MODELS_DIR) 
           f"  actual_draw_rate={actual_draw_rate:.3f}")
 
     # Calibrate draw classifier on cal set
-    cal_d_iso = IsotonicRegression(out_of_bounds="clip")
+    cal_d_iso = probability_isotonic()
     cal_d_iso.fit(draw_raw_cal, cal_draw)
     draw_cal_cal = cal_d_iso.predict(draw_raw_cal)
     print(f"  mean raw={draw_raw_cal.mean():.3f}  mean calibrated={draw_cal_cal.mean():.3f}"

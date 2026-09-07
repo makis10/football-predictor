@@ -10,6 +10,9 @@ class TicketLegOut(BaseModel):
     match_id:     int
     market:       str            # "1X" / "O2.5" / "GG" …
     prob:         float          # our model's probability for this selection
+    # The bookmaker's own probability, margin removed. None on legs cut before
+    # 2026-09-07; equal to `prob` on an estimated leg, where there is no market.
+    fair_prob:    Optional[float] = None
     odds:         float
     estimated:    bool           # True → our fair price, no bookmaker market
     won:          Optional[bool] = None
@@ -29,7 +32,13 @@ class TicketOut(BaseModel):
     generated_for: date
     horizon_days:  int
     total_odds:    float
-    combined_prob: float         # product of leg probabilities
+    # The de-vigged MARKET product — the chance this slip lands, and the only
+    # probability that may be multiplied by total_odds. Built from our own
+    # numbers instead, that product implied +64% expected value on a product
+    # returning -23%.
+    combined_prob: float
+    # Our own product, for the page to show beside it. None on older slips.
+    model_prob:    Optional[float] = None
     num_legs:      int
     outcome:       Optional[str] = None   # "won" | "lost" | None (open)
     legs:          List[TicketLegOut] = []

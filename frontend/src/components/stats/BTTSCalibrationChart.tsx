@@ -1,12 +1,37 @@
 /**
- * Server component — renders the BTTS (GG/NG) calibration chart as inline SVG.
- * Mirrors the structure of CalibrationChart but for both-teams-to-score probability.
+ * Server component — the BTTS (GG/NG) reliability diagram, as inline SVG.
+ *
+ * 2026-09-07. This chart was the only quality evidence the page offered for a
+ * market with AUC 0.5143 on 1,908 settled rows, 78.7% of every probability it
+ * has ever produced inside [0.50, 0.60), and a Brier skill score of -0.0064
+ * against a constant — worse than replacing every number with the base rate.
+ *
+ * A reliability diagram cannot show that, and this one actively hid it. A
+ * perfectly calibrated CONSTANT plots as a perfect diagonal, so "well
+ * calibrated" and "useful" render identically. The curve spanned 25%→74% on two
+ * endpoints of n=5 and n=7 while the bin holding 1,501 matches drew at the same
+ * radius, because the bubble scale saturates at n>=127 — and the legend claimed
+ * "bubble size = sample count" underneath. The subtitle credited Poisson λ for
+ * values that come from the XGBoost classifier 96.3% of the time.
+ *
+ * So the chart now carries the number that separates the two claims (AUC), says
+ * plainly when a forecast has no discrimination, and its legend describes what
+ * the radius actually does.
  */
 import { CalibrationBucket } from "@/lib/api";
 
 interface Props {
   buckets: CalibrationBucket[];
+  /** Discrimination. null when the sample is too small to compute one. */
+  auc?: number | null;
+  /** Share of outcome variance explained. 0 = every match got the same answer. */
+  resolution?: number | null;
 }
+
+/** Below this a forecast is not telling matches apart, whatever its
+ *  calibration looks like. 0.50 is a coin; 0.53 is inside the noise on any
+ *  sample this page has. */
+const NO_SIGNAL_AUC = 0.53;
 
 const W = 560;
 const H = 260;
@@ -22,7 +47,7 @@ function scaleY(v: number) {
   return PLOT_H * (1 - v);
 }
 
-export function BTTSCalibrationChart({ buckets }: Props) {
+export function BTTSCalibrationChart({ buckets, auc, resolution }: Props) {
   if (buckets.length < 2) {
     return (
       <p className="text-sm text-chalk-3 text-center py-6">
@@ -45,9 +70,19 @@ export function BTTSCalibrationChart({ buckets }: Props) {
       <p className="text-sm font-medium text-chalk-2 mb-1">
         BTTS Calibration — predicted GG probability vs actual GG rate
       </p>
-      <p className="text-xs text-chalk-3 mb-3">
-        Points near the diagonal = well calibrated. Derived from Poisson λ stored at prediction time.
+      <p className="text-xs text-chalk-3 mb-1">
+        Points near the diagonal mean the numbers are honest — not that they tell
+        matches apart. Values come from the BTTS classifier, falling back to the
+        stored Poisson λ where none was recorded.
       </p>
+      {typeof auc === "number" && (
+        <p className={`text-xs mb-3 ${auc < NO_SIGNAL_AUC ? "text-lose" : "text-chalk-3"}`}>
+          AUC {auc.toFixed(3)} · 0.500 is a coin
+          {typeof resolution === "number" &&
+            ` · resolution ${(resolution * 100).toFixed(2)}%`}
+          {auc < NO_SIGNAL_AUC && " — this forecast is not separating matches"}
+        </p>
+      )}
 
       <svg
         viewBox={`0 0 ${W} ${H}`}
@@ -118,7 +153,11 @@ export function BTTSCalibrationChart({ buckets }: Props) {
           </svg>
           Model
         </span>
-        <span className="text-chalk-3">· bubble size = sample count</span>
+        {/* The radius saturates at n>=127 and floors at n<=14, so it separates
+            "a handful" from "a lot" and nothing finer. The old legend read
+            "bubble size = sample count", which was false for five of six
+            points. Exact counts are in each point's tooltip. */}
+        <span className="text-chalk-3">· larger bubble = more matches (hover for the count)</span>
       </div>
     </div>
   );

@@ -84,6 +84,11 @@ export interface Prediction {
   win_probabilities: WinProbabilities;
   goals: GoalsPrediction;
   btts_prob: number | null;
+  /** The model's own GG/NG call, at the threshold the training run selected.
+   *  Before 2026-09-07 the UI decided this itself with a hardcoded 0.5, so the
+   *  badge and the stored label could disagree and the swept threshold changed
+   *  nothing anyone saw. */
+  btts_prediction: "GG" | "NG" | null;
   model_version: string;
   confidence: "high" | "medium" | "low";
   suggested_market: string | null;
@@ -218,6 +223,16 @@ export interface AccuracySlice {
   result_accuracy: number;
   goals_accuracy: number;
   both_accuracy: number;
+  /** What the same rows score with no model: the share of the most common
+   *  actual result, and the actual over-2.5 rate. The page colours by accuracy
+   *  MINUS these — before 2026-09-07 it used a hardcoded 0.57 threshold that
+   *  happened to sit within 0.06pp of the O/U base rate, so the noise number
+   *  rendered green and the signal number rendered yellow. */
+  result_baseline: number;
+  goals_baseline: number;
+  /** How many of these rows are national-team predictions — a different model
+   *  with a very different record. One regime row was 79 of 80. */
+  national_total: number;
 }
 
 export interface RollingAccuracy {
@@ -305,6 +320,14 @@ export interface BTTSStats {
   ng_recall: number;
   gg_precision: number;
   overall_accuracy: number;
+  /** Always-GG on the same rows. BTTS accuracy has been below it throughout. */
+  gg_baseline: number;
+  /** Discrimination — what a reliability diagram cannot show. A perfectly
+   *  calibrated constant draws a perfect diagonal and carries no information at
+   *  all; 0.50 is a coin. */
+  auc: number | null;
+  /** Brier resolution: share of the outcome variance the forecast explains. */
+  resolution: number | null;
 }
 
 export interface ROIStats {
@@ -400,6 +423,8 @@ export interface StatsResponse {
   btts_stats: BTTSStats | null;
   calibration: CalibrationBucket[];
   btts_calibration: CalibrationBucket[];
+  goals_auc: number | null;
+  goals_resolution: number | null;
   result_calibration: ResultCalibration | null;
   by_model_version: ModelVersionStats[];
   roi: ROIStats | null;
@@ -1373,7 +1398,12 @@ export interface Ticket {
   generated_for: string;
   horizon_days: number;
   total_odds: number;
+  /** The de-vigged MARKET chance this slip lands — the only probability that
+   *  may be multiplied by total_odds. Built from our own numbers instead, that
+   *  product implied +64% expected value on a product returning -23%. */
   combined_prob: number;
+  /** Our own product, shown beside it. null on slips cut before 2026-09-07. */
+  model_prob: number | null;
   num_legs: number;
   /** null while any leg is unplayed. "void" when a fixture on the slip was
    *  deleted after it was cut, so it can never be graded honestly — the

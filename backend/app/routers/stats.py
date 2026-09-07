@@ -31,6 +31,7 @@ from backend.app.database import SessionLocal
 from backend.app.models.match import Match
 from backend.app.models.national_prediction import NationalPrediction
 from backend.app.models.prediction import Prediction
+from backend.app.ml.predict import _get_btts_threshold
 from backend.app.schemas.stats import (
     AccuracySlice,
     BTTSStats,
@@ -338,6 +339,50 @@ def _top_pick_market_type(r: dict) -> Optional[str]:
     return None
 
 
+def _auc(probs: "list[float]", actual: "list[bool]") -> "Optional[float]":
+    """Rank-based AUC with ties averaged. 0.5 is a coin.
+
+    A reliability diagram cannot show this. A perfectly calibrated constant
+    plots as a perfect diagonal and carries no information at all, which is very
+    nearly what our BTTS probability is: AUC 0.5143 on 1,908 settled rows, with
+    78.7% of every value it has ever produced inside [0.50, 0.60). The chart said
+    "well calibrated" and a reader reasonably heard "good".
+    """
+    pos = [p for p, a in zip(probs, actual) if a]
+    neg = [p for p, a in zip(probs, actual) if not a]
+    if not pos or not neg:
+        return None
+    order = sorted(range(len(probs)), key=lambda i: probs[i])
+    ranks = [0.0] * len(probs)
+    i = 0
+    while i < len(order):
+        j = i
+        while j + 1 < len(order) and probs[order[j + 1]] == probs[order[i]]:
+            j += 1
+        avg = (i + j) / 2.0 + 1.0
+        for k in range(i, j + 1):
+            ranks[order[k]] = avg
+        i = j + 1
+    rank_sum = sum(r for r, a in zip(ranks, actual) if a)
+    n_pos, n_neg = len(pos), len(neg)
+    return (rank_sum - n_pos * (n_pos + 1) / 2.0) / (n_pos * n_neg)
+
+
+def _resolution(probs: "list[float]", actual: "list[bool]") -> "Optional[float]":
+    """Brier resolution: how much of the outcome's variance the forecast
+    explains. Zero means every match got the same answer, however well
+    calibrated that answer was."""
+    n = len(probs)
+    if n < 20:
+        return None
+    base = sum(1 for a in actual if a) / n
+    buckets: dict[int, list[bool]] = {}
+    for p, a in zip(probs, actual):
+        buckets.setdefault(int(round(p * 50)), []).append(a)
+    return sum(len(v) * ((sum(1 for a in v if a) / len(v)) - base) ** 2
+               for v in buckets.values()) / n
+
+
 def _accuracy_slice(rows: list[dict]) -> AccuracySlice:
     n = len(rows)
     if n == 0:
@@ -348,6 +393,17 @@ def _accuracy_slice(rows: list[dict]) -> AccuracySlice:
     rc = sum(_result_correct(r) for r in rows)
     gc = sum(_goals_correct(r) for r in rows)
     bc = sum(_result_correct(r) and _goals_correct(r) for r in rows)
+
+    # The same rows with no model at all. Measured here rather than assumed, so
+    # a slice of one league or one week gets its own honest floor.
+    results = [r.get("result") for r in rows if r.get("result")]
+    result_baseline = (max(results.count(k) for k in ("H", "D", "A")) / n
+                       if results else 0.0)
+    goals_baseline = sum(
+        1 for r in rows
+        if ((r["home_goals"] or 0) + (r["away_goals"] or 0)) > 2.5
+    ) / n
+
     return AccuracySlice(
         total=n,
         result_correct=rc,
@@ -356,6 +412,9 @@ def _accuracy_slice(rows: list[dict]) -> AccuracySlice:
         result_accuracy=round(rc / n, 4),
         goals_accuracy=round(gc / n, 4),
         both_accuracy=round(bc / n, 4),
+        result_baseline=round(result_baseline, 4),
+        goals_baseline=round(goals_baseline, 4),
+        national_total=sum(1 for r in rows if r.get("is_national")),
     )
 
 
@@ -576,7 +635,16 @@ def _compute_stats(rows: list[dict]) -> StatsResponse:
     btts_stats: Optional[BTTSStats] = None
     if btts_rows:
         actual_gg    = [_actual_btts(r) for r, _ in btts_rows]
-        pred_gg      = [p >= 0.5 for _, p in btts_rows]
+        # The threshold the training run actually chose, not a hardcoded 0.5.
+        #
+        # train.py re-sweeps it every retrain and writes btts_threshold.json;
+        # this endpoint ignored the file, so the accuracy on the page was for a
+        # cut nobody selected. Reading it here also stops the figure drifting
+        # with label vintage: a settled row's stored GG/NG label is frozen at
+        # whatever threshold was in force the day it was written, and pooling
+        # six of those vintages is what produced a phantom 50.77%.
+        _bt_threshold = _get_btts_threshold()
+        pred_gg      = [p >= _bt_threshold for _, p in btts_rows]
         n_bt         = len(btts_rows)
         n_actual_gg  = sum(actual_gg)
         n_actual_ng  = n_bt - n_actual_gg
@@ -596,6 +664,11 @@ def _compute_stats(rows: list[dict]) -> StatsResponse:
             ng_recall=round(n_correct_ng / n_actual_ng, 4) if n_actual_ng else 0.0,
             gg_precision=round(n_correct_gg / n_pred_gg, 4) if n_pred_gg else 0.0,
             overall_accuracy=round(n_correct / n_bt, 4) if n_bt else 0.0,
+            gg_baseline=round(n_actual_gg / n_bt, 4) if n_bt else 0.0,
+            auc=(lambda v: round(v, 4) if v is not None else None)(
+                _auc([p for _, p in btts_rows], actual_gg)),
+            resolution=(lambda v: round(v, 5) if v is not None else None)(
+                _resolution([p for _, p in btts_rows], actual_gg)),
         )
 
     # ── BTTS calibration ──────────────────────────────────────────────────────
@@ -947,6 +1020,12 @@ def _compute_stats(rows: list[dict]) -> StatsResponse:
         btts_stats=btts_stats,
         calibration=buckets,
         btts_calibration=btts_calibration,
+        goals_auc=(lambda v: round(v, 4) if v is not None else None)(
+            _auc([r["over_2_5_prob"] for r in rows],
+                 [((r["home_goals"] or 0) + (r["away_goals"] or 0)) > 2.5 for r in rows])),
+        goals_resolution=(lambda v: round(v, 5) if v is not None else None)(
+            _resolution([r["over_2_5_prob"] for r in rows],
+                        [((r["home_goals"] or 0) + (r["away_goals"] or 0)) > 2.5 for r in rows])),
         result_calibration=result_calibration,
         by_model_version=by_model_version,
         roi=roi,

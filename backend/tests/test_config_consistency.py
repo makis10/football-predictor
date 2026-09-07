@@ -771,15 +771,49 @@ def test_the_value_gate_reads_the_unblended_model():
 
     assert "raw_home_prob" in block, "EV is being fed the anchored numbers"
     assert "raw_over_prob" in block
+    # 2026-09-07: BTTS joined the anchoring, and it was the one market with no
+    # unanchored column to protect it. Without raw_btts_prob every GG/NG edge
+    # collapses to roughly minus the margin and the gate silently stops
+    # surfacing goals bets — an accuracy fix that removes a feature.
+    assert "raw_btts_prob" in block, (
+        "BTTS is anchored but the EV gate still reads the served number")
 
 
 def test_the_methodology_says_the_numbers_are_partly_the_market():
     """Publishing 54% without saying most of it is the bookmaker's own line
-    would be the misleading version of this change."""
+    would be the misleading version of this change.
+
+    2026-09-07: this test pinned the literal string "57%", which is precisely
+    what let the copy go stale. Commit 212738e raised MARKET_ANCHOR_WEIGHT from
+    0.57 to 0.85 and the test kept passing, so the first paragraph of /stats told
+    every visitor "43% our model, 57% the bookmakers' line" for three days while
+    the real split was 15/85 — wrong by 28 percentage points.
+
+    It now derives both percentages from the constant, in both languages, so the
+    copy cannot survive a weight change. The failure message names the numbers to
+    write.
+    """
     from pathlib import Path
+
+    from backend.app.ml.predict import MARKET_ANCHOR_WEIGHT
 
     i18n = (Path(__file__).resolve().parents[2] / "frontend" / "src" / "lib" /
             "i18n.ts").read_text(encoding="utf-8")
 
     assert i18n.count('"stats.anchor.body"') == 2, "missing in one language"
-    assert "57%" in i18n
+
+    market = round(MARKET_ANCHOR_WEIGHT * 100)
+    model  = 100 - market
+    bodies = [ln for ln in i18n.splitlines() if '"stats.anchor.body"' in ln]
+    for body in bodies:
+        assert f"{model}%" in body and f"{market}%" in body, (
+            f"the anchoring copy does not state the weight actually served. "
+            f"MARKET_ANCHOR_WEIGHT is {MARKET_ANCHOR_WEIGHT}, so it must say "
+            f"{model}% our model and {market}% the market. Offending line:\n{body[:160]}")
+
+    # …and no stale split may survive anywhere else in the file.
+    for stale in ("43%", "57%", "30%", "70%"):
+        if stale in (f"{model}%", f"{market}%"):
+            continue
+        assert stale not in i18n, (
+            f"{stale} still appears in the copy; it is a retired anchor weight")

@@ -118,9 +118,41 @@ the log-loss, and 0.85 rather than 1.00 is where the served number stops being
 a republished bookmaker price. Disclosed on `/stats` above the accuracy figures
 rather than below them.
 
+### The goals markets joined it on 2026-09-07
+
+Over/Under 2.5 and BTTS were served as pure model output until then — the only
+headline probabilities in the stack with no market content, and the only two
+that measure at chance:
+
+| market | our AUC | de-vigged market |
+|--------|---------|------------------|
+| 1×2 home | 0.690 | 0.703 |
+| 1×2 away | 0.680 | 0.710 |
+| Over 2.5 | 0.5222 `[0.4505, 0.5955]` | 0.5851 |
+| BTTS | 0.5020 `[0.4547, 0.5502]` | 0.5607 |
+
+The 1×2 model has real, near-market discrimination. The two goals models do not
+have any. Sweeping the blend weight from 0.00 to 1.00 in 0.05 steps found **no
+interior optimum** in either: log-loss falls monotonically to the boundary, which
+is what a blend of one informative signal and one uninformative one must do. So
+w = 0.85 there is not a fitted number, it is the same presentation trade the
+table above records, and deliberately the *same constant* — one anchor weight in
+the codebase, not three that drift apart.
+
+Over 2.5 on the 258 rows carrying a two-sided price: log-loss 0.6841 → 0.6673,
+accuracy 55.81% → 59.69%, AUC 0.5222 → 0.5811. Coverage is not the obstacle: of
+upcoming fixtures already carrying a 1×2 line, 98.4% carry a two-sided O/U line
+and 94.4% a BTTS pair.
+
 Two rules keep this from quietly breaking the rest of the system:
 
 - **The served probabilities are anchored; the stored `raw_*` columns are not.**
+  `raw_` means unanchored, *not* uncalibrated — until 2026-09-07 those columns
+  held bare XGBoost outputs, so the value gate computed expected value from a
+  different quantity depending on which serving path answered. `raw_btts_prob`
+  (migration 0034) exists for this rule alone: anchoring BTTS without it sends
+  every GG/NG edge to roughly minus the margin and the gate silently stops
+  surfacing goals bets.
   The EV / value gate reads `raw_*`. Feed it an anchored probability and it
   compares the market with itself, finds an edge of roughly zero on everything,
   and silently stops suggesting anything — with no error to notice.

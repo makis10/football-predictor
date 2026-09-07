@@ -253,16 +253,18 @@ def generate(db, *, replace: bool) -> tuple[int, int]:
         row = Ticket(
             generated_for=today, profile=t.profile,
             total_odds=t.total_odds, combined_prob=t.combined_prob,
+            model_prob=t.model_prob,
             num_legs=len(t.legs), horizon_days=horizon,
         )
         row.legs = [
             TicketLeg(match_id=l.match_id, market=l.market, prob=l.prob,
-                      odds=l.odds, estimated=l.estimated)
+                      fair_prob=l.fair_prob, odds=l.odds, estimated=l.estimated)
             for l in t.legs
         ]
         db.add(row)
         print(f"    {t.profile:<9} {len(t.legs)} legs  odds {t.total_odds:7.2f}  "
-              f"P {t.combined_prob*100:5.2f}%  "
+              f"P {t.combined_prob*100:5.2f}% (market)  "
+              f"{t.model_prob*100:5.2f}% (ours)  "
               f"({t.estimated_legs} estimated price(s))")
     db.commit()
     return len(built), horizon

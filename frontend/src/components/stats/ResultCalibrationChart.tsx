@@ -189,7 +189,11 @@ export function ResultCalibrationChart({ data }: Props) {
             </span>
           )
         ))}
-        <span className="text-chalk-3">· bubble size = sample count</span>
+        {/* The radius is clamped at both ends, so it separates "a handful"
+            from "a lot" and nothing finer. The old wording claimed the area
+            encoded the count, which it does not once the clamp bites. Exact
+            counts are in each point's tooltip. */}
+        <span className="text-chalk-3">· larger bubble = more matches (hover for the count)</span>
       </div>
     </div>
   );
