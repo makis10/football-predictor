@@ -230,15 +230,21 @@ export default async function MatchDetailPage({ params }: Props) {
                         with a hardcoded 0.5, so the badge and the stored label
                         could disagree — and the threshold train.py sweeps every
                         retrain changed nothing anyone saw. */}
-                    <span
-                      className={`badge font-semibold ${
-                        (prediction.btts_prediction ?? "NG") === "GG"
-                          ? "bg-win/20 text-win"
-                          : "bg-lose/20 text-lose"
-                      }`}
-                    >
-                      {prediction.btts_prediction ?? "NG"}
-                    </span>
+                    {/* Absent on a row written before the field existed. Showing
+                        "NG" there would be a claim we did not make — the whole
+                        point of serving the stored call rather than deciding it
+                        here. The probability bar below still renders. */}
+                    {prediction.btts_prediction && (
+                      <span
+                        className={`badge font-semibold ${
+                          prediction.btts_prediction === "GG"
+                            ? "bg-win/20 text-win"
+                            : "bg-lose/20 text-lose"
+                        }`}
+                      >
+                        {prediction.btts_prediction}
+                      </span>
+                    )}
                   </div>
                   <BttsProbabilityBar bttsProb={prediction.btts_prob} t={t} />
                 </div>

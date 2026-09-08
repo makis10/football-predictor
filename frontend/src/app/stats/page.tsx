@@ -41,15 +41,24 @@ function pct(v: number) {
  * Bands: 3pp clear of the baseline is a real edge on these sample sizes, at or
  * below it is not an edge at all.
  */
-function accentForEdge(value: number, baseline: number): "green" | "yellow" | "red" {
+function accentForEdge(value: number, baseline: number): "green" | "yellow" | "red" | "gray" {
+  // No baseline, no verdict. An older cached payload has none, and colouring on
+  // a missing number is how the page got its inverted colours in the first place.
+  if (!baseline || baseline <= 0 || baseline >= 1) return "gray";
   const edge = value - baseline;
   if (edge >= 0.03) return "green";
   if (edge > 0.0) return "yellow";
   return "red";
 }
 
-/** Sub-line that says what the same rows would have scored with no model. */
-function vsBaseline(value: number, baseline: number, label: string): string {
+/** Sub-line that says what the same rows would have scored with no model.
+ *
+ *  Returns null when there is no baseline to compare against — a league with no
+ *  settled matches, or an older cached payload from before the API sent one.
+ *  Printing "+50.0pp vs always OVER 0%" there would be a fabricated comparison,
+ *  which is the exact failure mode this whole sub-line exists to remove. */
+function vsBaseline(value: number, baseline: number, label: string): string | null {
+  if (!baseline || baseline <= 0 || baseline >= 1) return null;
   const edge = (value - baseline) * 100;
   const sign = edge >= 0 ? "+" : "\u2212";
   return `${sign}${Math.abs(edge).toFixed(1)}pp vs ${label} ${Math.round(baseline * 100)}%`;
@@ -498,14 +507,14 @@ export default async function StatsPage({ searchParams }: PageProps) {
             label={t("stats.resultAccuracy")}
             value={pct(all.result_accuracy)}
             sub={vsBaseline(all.result_accuracy, all.result_baseline,
-                            t("stats.baseline.result"))}
+                            t("stats.baseline.result")) ?? undefined}
             accent={accentForEdge(all.result_accuracy, all.result_baseline)}
           />
           <StatCard
             label={t("stats.ouAccuracy")}
             value={pct(all.goals_accuracy)}
             sub={vsBaseline(all.goals_accuracy, all.goals_baseline,
-                            t("stats.baseline.goals"))}
+                            t("stats.baseline.goals")) ?? undefined}
             accent={accentForEdge(all.goals_accuracy, all.goals_baseline)}
           />
           <StatCard

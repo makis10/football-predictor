@@ -100,6 +100,79 @@ def test_it_survives_a_pickle_round_trip():
     assert float(joblib.load(buf).predict([0.80])[0]) < 0.95
 
 
+def test_a_small_top_block_is_pulled_toward_a_well_supported_neighbour():
+    """The shrinkage can be partly undone, and that is correct.
+
+    PAVA's blocks must stay ordered, so after each is shrunk by its own sample
+    size the corrected values go back through a weighted pass. A tiny terminal
+    block shrunk hard can then land BELOW a large high neighbour, and the pass
+    pools the two — lifting the terminal value back up.
+
+    Probed 2026-09-07 on 900 body rows plus three unanimous ones at the top: the
+    top block shrank from 1.0000 to 0.8526, the 30-row block below it to 0.9365,
+    and pooling put both at 0.9245. That is a legitimate isotonic estimate — the
+    height comes from thirty samples, not from three — and it is worth pinning so
+    the next reader is not surprised into "fixing" it.
+    """
+    rng = np.random.RandomState(2)
+    X = np.concatenate([np.linspace(0.2, 0.7, 900), np.linspace(0.75, 0.83, 3)])
+    y = np.concatenate([(rng.rand(900) < X[:900]).astype(float), np.ones(3)])
+    top = float(probability_isotonic().fit(X, y).predict([0.80])[0])
+    assert 0.85 < top < 1.0 - FIT_EPS, top
+
+
+def test_no_amount_of_unanimity_reaches_a_certainty():
+    """The adversarial version of the test above: make the neighbour that does
+    the pulling enormous and unanimous, at both ends. FIT_EPS is the floor under
+    the whole design, and a served probability must clear it on both sides."""
+    rng = np.random.RandomState(3)
+    grid = np.linspace(0, 1, 2001)
+
+    X = np.concatenate([np.linspace(.1, .5, 400), np.linspace(.55, .9, 400),
+                        np.linspace(.92, .99, 3)])
+    y = np.concatenate([(rng.rand(400) < 0.3).astype(float), np.ones(400), np.ones(3)])
+    hi = probability_isotonic().fit(X, y).predict(grid)
+    assert hi.max() <= 1.0 - FIT_EPS
+
+    X2 = np.concatenate([np.linspace(.01, .08, 3), np.linspace(.1, .5, 400),
+                         np.linspace(.55, .9, 400)])
+    y2 = np.concatenate([np.zeros(3), np.zeros(400), (rng.rand(400) < 0.7).astype(float)])
+    lo = probability_isotonic().fit(X2, y2).predict(grid)
+    assert lo.min() >= FIT_EPS
+
+
+@pytest.mark.parametrize("name,X,y", [
+    ("one point",          [0.5], [1.0]),
+    ("two points",         [0.4, 0.6], [0.0, 1.0]),
+    ("every x identical",  [0.5] * 40, [0.0, 1.0] * 20),
+    ("perfectly separable", list(np.linspace(.1, .9, 40)),
+     list((np.linspace(.1, .9, 40) > 0.5).astype(float))),
+    ("relationship reversed", list(np.linspace(.1, .9, 60)),
+     list((np.linspace(.1, .9, 60) < 0.5).astype(float))),
+    ("x outside [0,1]",    list(np.linspace(-3, 5, 60)),
+     list((np.linspace(-3, 5, 60) > 1).astype(float))),
+])
+def test_degenerate_calibration_samples_do_not_explode(name, X, y):
+    """A retrain on a thin league, an empty fold, or a feature that turned out to
+    run backwards must produce a usable calibrator rather than a traceback in the
+    middle of the nightly job."""
+    p = probability_isotonic().fit(np.asarray(X, float), np.asarray(y, float)) \
+        .predict(np.linspace(0, 1, 401))
+    assert np.all(np.diff(p) >= -1e-12), f"{name}: not monotone"
+    assert np.all(p >= FIT_EPS) and np.all(p <= 1.0 - FIT_EPS), f"{name}: out of bounds"
+
+
+def test_sample_weight_is_forwarded():
+    """calibration.py may start weighting rows by recency. If the argument were
+    silently dropped the weights would do nothing and nobody would notice."""
+    X = np.linspace(0.1, 0.9, 40)
+    y = (X > 0.5).astype(float)
+    flat = probability_isotonic().fit(X, y).predict(X)
+    lopsided = probability_isotonic().fit(
+        X, y, sample_weight=np.linspace(1.0, 50.0, 40)).predict(X)
+    assert not np.allclose(flat, lopsided), "sample_weight had no effect"
+
+
 # ── the serving clamp ─────────────────────────────────────────────────────────
 
 def test_the_projection_repairs_a_certainty_instead_of_passing_it_through():

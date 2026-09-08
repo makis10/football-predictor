@@ -91,7 +91,15 @@ class SmoothedIsotonic:
 
         X = np.asarray(X, dtype=float).ravel()
         y = np.asarray(y, dtype=float).ravel()
-        base = float(y.mean()) if y.size else 0.5
+        # Weights are the sample size the shrinkage reasons about, so they have to
+        # reach it. Passing them only to the PAVA fit below would accept the
+        # argument and silently ignore it everywhere it matters — a caller
+        # weighting recent seasons more heavily would see the blocks move and the
+        # shrinkage not, with nothing to indicate why.
+        w = (np.ones_like(y) if sample_weight is None
+             else np.asarray(sample_weight, dtype=float).ravel())
+        total_w = float(w.sum())
+        base = float((y * w).sum() / total_w) if total_w > 0 else 0.5
 
         raw = IsotonicRegression(out_of_bounds=self.out_of_bounds).fit(
             X, y, sample_weight=sample_weight)
@@ -106,10 +114,10 @@ class SmoothedIsotonic:
         shrunk = np.empty(len(vals)); weights = np.empty(len(vals)); reps = np.empty(len(vals))
         for k in range(len(vals)):
             idx = order[edges[k]:edges[k + 1]]
-            n = float(len(idx))
-            shrunk[k]  = (y[idx].sum() + m * base) / (n + m)
+            n = float(w[idx].sum())
+            shrunk[k]  = ((y[idx] * w[idx]).sum() + m * base) / (n + m) if n + m > 0 else base
             weights[k] = n
-            reps[k]    = X[idx].mean()
+            reps[k]    = float(np.average(X[idx], weights=w[idx])) if n > 0 else X[idx].mean()
 
         keep = np.argsort(reps, kind="mergesort")
         self._iso = IsotonicRegression(out_of_bounds=self.out_of_bounds).fit(
