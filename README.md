@@ -141,8 +141,9 @@ the codebase, not three that drift apart.
 
 Over 2.5 on the 258 rows carrying a two-sided price: log-loss 0.6841 → 0.6673,
 accuracy 55.81% → 59.69%, AUC 0.5222 → 0.5811. Coverage is not the obstacle: of
-upcoming fixtures already carrying a 1×2 line, 98.4% carry a two-sided O/U line
-and 94.4% a BTTS pair.
+upcoming fixtures already carrying a 1×2 line, 98.4% carried a two-sided O/U line
+and 94.4% a BTTS pair when this was measured on 2026-09-07. It drifts upward as
+the card fills — re-derive it rather than quoting this.
 
 Two rules keep this from quietly breaking the rest of the system:
 
