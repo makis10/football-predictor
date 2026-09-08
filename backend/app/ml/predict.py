@@ -336,6 +336,7 @@ def finalise_probabilities(
     Returns (home, draw, away, over, btts).
     """
     from backend.app.ml.poisson import project_probs_coherent
+    from backend.app.ml.prob_bounds import clamp_prob
 
     proj = project_probs_coherent(home, draw, away, over, btts)
     if proj:
@@ -343,6 +344,14 @@ def finalise_probabilities(
         over = proj["over"]
         if proj.get("btts") is not None:
             btts = proj["btts"]
+    else:
+        # The projection declines on an input it cannot fit at all — p_draw
+        # outside (0.005, 0.95), or a NaN supremacy — and this fallback used to
+        # keep the numbers untouched, endpoints and all. That is the same shape
+        # as the bug of 2026-09-07 one level further out, so the fallback clamps
+        # what it keeps.
+        home, draw, away = clamp_prob(home), clamp_prob(draw), clamp_prob(away)
+        over, btts = clamp_prob(over), clamp_prob(btts)
 
     if elo_split is not None:
         home, draw, away = elo_split((home, draw, away))

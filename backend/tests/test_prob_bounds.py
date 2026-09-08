@@ -211,6 +211,40 @@ def test_no_endpoint_reaches_the_caller(field, args):
         assert PROB_EPS / 10 < v < 1.0 - PROB_EPS / 10, f"{k} came back as {v}"
 
 
+def test_the_projection_fallback_clamps_what_it_keeps():
+    """`project_probs_coherent` still returns None on an input it cannot fit at
+    all — p_draw outside (0.005, 0.95), or a NaN supremacy. Both callers then
+    keep their OWN numbers, and until 2026-09-08 they kept them untouched,
+    endpoints and all. That is the identical shape as the bug this module exists
+    for, one level further out: the guard running in the breakable direction on
+    exactly the inputs that broke it."""
+    from backend.app.ml.predict import finalise_probabilities
+
+    assert project_probs_coherent(0.999, 0.001, 0.0, 1.0, 1.0) is None, (
+        "the fixture no longer exercises the fallback")
+
+    for args in (dict(home=0.999, draw=0.001, away=0.0, over=1.0, btts=1.0),
+                 dict(home=0.001, draw=0.998, away=0.001, over=0.0, btts=0.0)):
+        for v in finalise_probabilities(**args):
+            if v is None:
+                continue
+            assert 0.0 < v < 1.0, f"{v} survived the fallback"
+
+
+def test_the_national_path_has_its_own_clamp():
+    """scripts/predict_national.py calls project_probs_coherent directly and
+    never touches finalise_probabilities, so a guard placed there misses it
+    entirely. 250 settled national rows already hold a 0 or a 1."""
+    import pathlib as _p
+
+    src = (_p.Path(__file__).resolve().parents[2]
+           / "scripts" / "predict_national.py").read_text()
+    block = src[src.index("project_probs_coherent(p_home"):]
+    block = block[:block.index("prediction = max(")]
+    assert "clamp_prob" in block, (
+        "the national fallback keeps its own probabilities unclamped")
+
+
 def test_a_feasible_input_still_round_trips_unchanged():
     """The clamp must be a no-op on every real forecast. The whole design of the
     projection rests on feasible inputs surviving it."""

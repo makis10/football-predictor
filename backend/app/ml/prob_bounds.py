@@ -63,6 +63,28 @@ FIT_EPS = 1e-3
 PSEUDO_COUNT = 2.0
 
 
+def clamp_prob(p):
+    """Squeeze one probability into [PROB_EPS, 1 - PROB_EPS]. None passes through.
+
+    `project_probs_coherent` clamps everything it touches, but it still returns
+    None on an input it cannot fit at all — p_draw outside (0.005, 0.95), or a
+    NaN supremacy — and BOTH callers then keep their own unprojected numbers:
+    predict.finalise_probabilities and scripts/predict_national.py, each with the
+    same `if proj:`. That is the identical shape as the bug of 2026-09-07, one
+    level further out: the guard runs in the breakable direction on exactly the
+    inputs that broke it. This is what those two fallbacks use.
+    """
+    if p is None:
+        return None
+    try:
+        v = float(p)
+    except (TypeError, ValueError):
+        return p
+    if v != v:                      # NaN has no honest clamp
+        return p
+    return min(max(v, PROB_EPS), 1.0 - PROB_EPS)
+
+
 class SmoothedIsotonic:
     """Isotonic calibration whose blocks cannot claim more certainty than the
     sample behind them supports.

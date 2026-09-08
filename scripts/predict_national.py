@@ -166,6 +166,15 @@ def predict_fixture(
     if _proj:
         p_home, p_draw, p_away = _proj["home"], _proj["draw"], _proj["away"]
         p_over, p_btts = _proj["over"], _proj["btts"]
+    else:
+        # Same fallback, same reason as predict.finalise_probabilities: the
+        # projection declines on inputs it cannot fit, and keeping them
+        # untouched is how 250 settled national rows came to hold a 0 or a 1.
+        # This path does not go through finalise_probabilities, so it needs its
+        # own clamp — a guard placed there would miss it entirely.
+        from backend.app.ml.prob_bounds import clamp_prob
+        p_home, p_draw, p_away = clamp_prob(p_home), clamp_prob(p_draw), clamp_prob(p_away)
+        p_over, p_btts = clamp_prob(p_over), clamp_prob(p_btts)
 
     prediction = max(["H", "D", "A"], key=lambda x: {"H": p_home, "D": p_draw, "A": p_away}[x])
     p_max = max(p_home, p_draw, p_away)
