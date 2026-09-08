@@ -18,6 +18,7 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import math
 import os
 import sys
 _PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
@@ -612,6 +613,19 @@ for i, (mid, home, away, match_date, league) in enumerate(match_snapshots, 1):
         # for what the reader sees.
         pre_anchor = (_coh_h, _coh_d, _coh_a, raw_over_out)
         served_h, served_d, served_a = anchor_to_market((_coh_h, _coh_d, _coh_a), _mkt)
+
+        # Refuse to store a probability that is not a number.
+        #
+        # Probed 2026-09-08: a NaN price reached anchor_to_market and came back
+        # NaN, because NaN fails every ordering test and `o <= 1.0` waved it
+        # through. Both anchors now decline on a non-finite input, but a NaN can
+        # still originate upstream — one NaN feature through the calibrators is
+        # enough. There is no honest fallback for it, so the fixture is skipped
+        # and counted with the other ML failures rather than written as "NaN%".
+        for _name, _v in (("home", served_h), ("draw", served_d), ("away", served_a),
+                          ("over", over_p), ("btts", gg_prob)):
+            if _v is not None and not math.isfinite(float(_v)):
+                raise ValueError(f"{_name} probability is not finite ({_v})")
 
         btts_prediction = "GG" if gg_prob >= _get_btts_threshold() else "NG"
         goals_prediction = "OVER" if over_p >= 0.5 else "UNDER"

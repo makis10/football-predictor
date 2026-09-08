@@ -135,3 +135,38 @@ def test_the_stored_unanchored_columns_are_calibrated_probabilities():
         f"calibrated, pre-anchor probability the EV gate is documented to read")
     assert re.search(r'"raw_over_prob":\s*round\(pre_anchor\[3\]', src)
     assert re.search(r'"raw_btts_prob":', src), "raw_btts_prob is never stored"
+
+
+# ── a price that is not a number ──────────────────────────────────────────────
+
+@pytest.mark.parametrize("bad", [float("nan"), float("inf"), float("-inf")])
+def test_a_non_finite_price_is_declined_not_propagated(bad):
+    """NaN fails every ordering test, so `o <= 1.0` waves it straight through.
+
+    Probed 2026-09-08: anchor_binary_to_market(0.61, nan, 2.0) returned nan,
+    which would have been stored and rendered as "NaN%". The guard has to ask
+    whether the number IS a number, not whether it is small.
+    """
+    from backend.app.ml.predict import anchor_to_market
+
+    assert anchor_binary_to_market(0.61, bad, 2.0) == 0.61
+    assert anchor_binary_to_market(0.61, 1.9, bad) == 0.61
+    assert anchor_to_market((0.4, 0.3, 0.3), (bad, 3.5, 4.0)) == (0.4, 0.3, 0.3)
+    assert anchor_to_market((0.4, 0.3, 0.3), (1.9, bad, 4.0)) == (0.4, 0.3, 0.3)
+
+
+def test_the_batch_refuses_to_store_a_probability_that_is_not_a_number():
+    """Both anchors now decline on a non-finite input, but a NaN can still
+    originate upstream — one NaN feature through the calibrators is enough. There
+    is no honest fallback for it, so the fixture must be skipped and counted with
+    the other ML failures rather than written to the table."""
+    import pathlib
+
+    src = (pathlib.Path(__file__).resolve().parents[2]
+           / "scripts" / "compute_predictions.py").read_text()
+    guard = src[src.index("btts_prediction = \"GG\"") - 1200:src.index("btts_prediction = \"GG\"")]
+    assert "isfinite" in guard, (
+        "nothing between the anchoring and the INSERT checks that the served "
+        "probabilities are numbers")
+    assert "raise" in guard, (
+        "a non-finite probability must abort the fixture, not be stored")

@@ -11,6 +11,7 @@ Returns a dict compatible with the Phase 2 API response schema.
 
 from __future__ import annotations
 
+import math
 import os
 import pickle
 from datetime import date
@@ -216,11 +217,17 @@ def anchor_to_market(
     bookmaker's margin and keeps the shape, so we anchor to their opinion rather
     than to their pricing.
     """
-    if not market_odds or any(not o or o <= 1.0 for o in market_odds):
+    # `math.isfinite` rather than a bare comparison: NaN fails every ordering
+    # test, so `not o or o <= 1.0` waves it through and it then propagates
+    # silently into a served probability. Probed 2026-09-08 — a NaN price
+    # produced a NaN blend rather than declining.
+    if not market_odds or any(
+            o is None or not isinstance(o, (int, float)) or not math.isfinite(float(o))
+            or float(o) <= 1.0 for o in market_odds):
         return model
     raw = [1.0 / float(o) for o in market_odds]
     total = sum(raw)
-    if total <= 0:
+    if not math.isfinite(total) or total <= 0:
         return model
     fair = [x / total for x in raw]
     blended = [(1.0 - weight) * m + weight * k for m, k in zip(model, fair)]
@@ -272,20 +279,25 @@ def anchor_binary_to_market(
         m = float(model)
     except (TypeError, ValueError):
         return model
+    if not math.isfinite(m):
+        return model
     if yes_odds is None or no_odds is None:
         return m
     try:
         y, n = float(yes_odds), float(no_odds)
     except (TypeError, ValueError):
         return m
-    if y <= 1.0 or n <= 1.0:
+    # isfinite, not a bare comparison: NaN fails every ordering test, so
+    # `y <= 1.0` waves it through and the NaN reaches the served probability.
+    if not (math.isfinite(y) and math.isfinite(n)) or y <= 1.0 or n <= 1.0:
         return m
     iy, ino = 1.0 / y, 1.0 / n
     total = iy + ino
-    if total <= 0:
+    if not math.isfinite(total) or total <= 0:
         return m
     fair = iy / total
-    return (1.0 - weight) * m + weight * fair
+    out = (1.0 - weight) * m + weight * fair
+    return out if math.isfinite(out) else m
 
 
 def finalise_probabilities(
