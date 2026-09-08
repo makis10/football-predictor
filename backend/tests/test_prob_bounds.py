@@ -49,23 +49,59 @@ def test_a_unanimous_handful_does_not_become_certainty():
     assert float(ours.predict([0.80])[0]) < 0.95
 
 
-def test_a_large_block_keeps_its_own_mean():
-    """The shrinkage must not reshape a well-supported curve. A block of 600 is
-    entitled to its mean; only the thin tails are in scope."""
-    rng = np.random.RandomState(1)
-    x = np.linspace(0.3, 0.7, 2000)
-    y = (rng.rand(2000) < 0.62).astype(float)          # one flat, well-fed block
-    m = probability_isotonic().fit(x, y)
-    assert float(m.predict([0.5])[0]) == pytest.approx(y.mean(), abs=0.01)
-
-
-def test_the_output_is_monotone():
+def test_the_repass_actually_pools_a_crossing_pair():
     """Shrinking with per-block weights can cross two adjacent blocks — a block
     of two at 0.62 lands below a block of a hundred at 0.60 — so the corrected
-    values go back through a weighted PAVA pass. Assert it rather than trust it."""
-    X, y = _thin_top()
-    p = probability_isotonic().fit(X, y).predict(np.linspace(0, 1, 501))
-    assert np.all(np.diff(p) >= -1e-12)
+    values go back through a weighted PAVA pass.
+
+    2026-09-08: this test used to assert that predict() is monotone, which it is
+    by construction — the final step IS an IsotonicRegression, so no mutation
+    upstream could break it. Inverting every block value before the repass left
+    it green. It now asserts the repass DID something: build a fixture where the
+    shrunk values are known to cross, and require the two blocks to come out
+    equal, which only pooling produces.
+    """
+    rng = np.random.RandomState(7)
+    # A large block at 0.60 and a tiny one just above it at 0.75. Shrinkage pulls
+    # the small one toward the base rate far harder, so it lands BELOW its
+    # neighbour and the pass has to pool them.
+    big_x = np.linspace(0.20, 0.60, 400)
+    big_y = (rng.rand(400) < 0.60).astype(float)
+    small_x = np.linspace(0.62, 0.66, 3)
+    small_y = np.array([1.0, 1.0, 0.0])          # mean 0.667, n=3
+    X = np.concatenate([big_x, small_x])
+    y = np.concatenate([big_y, small_y])
+
+    m = probability_isotonic().fit(X, y)
+    lo = float(m.predict([0.50])[0])
+    hi = float(m.predict([0.64])[0])
+    assert hi >= lo - 1e-12, "the corrected values crossed and were not pooled"
+    assert np.all(np.diff(m.predict(np.linspace(0, 1, 501))) >= -1e-12)
+
+
+def test_shrinkage_moves_a_thin_block_and_leaves_a_fed_one():
+    """The property the pseudo-count exists for, stated so it can fail.
+
+    2026-09-08: the previous version fitted a SINGLE flat block, where the shrink
+    target is the block's own mean and (n*base + m*base)/(n+m) = base for any m.
+    Both PSEUDO_COUNT = 0 and PSEUDO_COUNT = 1e6 passed it. Two blocks at
+    different rates are needed before the pseudo-count can do anything at all.
+    """
+    rng = np.random.RandomState(11)
+    low_x, high_x = np.linspace(0.10, 0.45, 800), np.linspace(0.80, 0.86, 4)
+    low_y = (rng.rand(800) < 0.25).astype(float)
+    high_y = np.ones(4)
+    X, y = np.concatenate([low_x, high_x]), np.concatenate([low_y, high_y])
+
+    fed = float(probability_isotonic().fit(X, y).predict([0.30])[0])
+    thin = float(probability_isotonic().fit(X, y).predict([0.83])[0])
+    assert fed == pytest.approx(low_y.mean(), abs=0.02), (
+        "the well-supported block was reshaped; the shrinkage is too aggressive")
+    assert thin < 0.95, "a block of four unanimous rows still reads as near-certain"
+
+    # …and turning the shrinkage off must break the second half.
+    off = float(SmoothedIsotonic(pseudo_count=0.0).fit(X, y).predict([0.83])[0])
+    assert off > thin, "PSEUDO_COUNT has no effect on the thin block"
 
 
 @pytest.mark.parametrize("y_const", [0.0, 1.0])
@@ -255,9 +291,48 @@ def test_a_feasible_input_still_round_trips_unchanged():
     assert out["btts"] == pytest.approx(before[4], abs=5e-3)
 
 
-def test_the_bound_sits_far_outside_any_real_forecast():
-    """1e-4 is chosen to clip artefacts and nothing else. The widest served
-    spread on record is 0.20-0.88; if PROB_EPS ever grows into that range it
-    would start moving genuine numbers."""
+def test_the_serving_clamp_reads_the_shared_bound():
+    """One bound, in one place.
+
+    2026-09-08: poisson.py carried its own `_EPS = 1e-4` beside PROB_EPS, so this
+    test guarded a constant the guarded code did not read. Raising the duplicate
+    to 0.05 — five hundred times the intended clip, deep inside the 0.20-0.88
+    range real forecasts occupy — left the whole suite green.
+    """
+    from backend.app.ml import poisson
+
+    assert poisson._EPS is PROB_EPS, (
+        "poisson has its own copy of the bound again; the constant this test "
+        "checks is not the one the clamp uses")
     assert PROB_EPS <= 1e-3
     assert FIT_EPS >= PROB_EPS, "a clamped value must never land on the fit bound"
+
+
+def test_the_output_clamp_is_insurance_and_is_documented_as_such():
+    """Only the INPUT half of the serving clamp is reachable, and this says so.
+
+    2026-09-08: a first version of this test tried to exercise the output half
+    and skipped, which is worse than no test — it looked like coverage.
+    Searching the extremes the fitter admits (supremacy to 0.9985, totals to
+    0.02 and 0.98, btts to 0.02 and 0.95) found ZERO inputs where
+    _matrix_summary returns a 0 or a 1, because fit_lambdas_to_probs bounds
+    lambda at 0.05 and both diagonal factors at 0.15. So the output clamp is
+    defence-in-depth against a future change to those bounds, not a live guard,
+    and no assertion can distinguish it being present from absent.
+
+    What this keeps alive is the fact itself: remove the clamp and the paragraph
+    in poisson.py explaining why it is there has to go with it.
+    """
+    import inspect
+
+    from backend.app.ml import poisson
+
+    src = inspect.getsource(poisson.project_probs_coherent)
+    assert '_c(s["over_2_5"])' in src, (
+        "the output clamp was removed; if that was deliberate, delete this test "
+        "and the paragraph in poisson.py that explains why it is there")
+    assert "insurance" in src.lower(), (
+        "the output clamp is present but no longer explains that it is insurance "
+        "rather than a guard with a reachable failure")
+
+

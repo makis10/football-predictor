@@ -844,14 +844,22 @@ def test_the_gg_badge_is_derived_from_the_probability_it_sits_above():
              for kw in node.keywords if kw.arg == "btts_prediction"]
     assert exprs, "the response no longer sets btts_prediction"
 
-    for e in exprs:
-        src = ast.dump(e)
-        # It must be computed from the served probability at the current
-        # threshold, and must not fall back to the stored column.
-        if "_get_btts_threshold" in src:
-            assert "btts_prediction" not in src, (
-                "the served GG/NG call still prefers the stored column, which is "
-                "frozen at a retired threshold and will contradict the bar under it")
+    # 2026-09-08: this loop was gated on `if "_get_btts_threshold" in src`, and
+    # that string is present ONLY when the fix is. Revert the source to
+    # `btts_prediction=pred.btts_prediction` and the body never runs, leaving
+    # `assert exprs` as the only live assertion — which the reverted line
+    # satisfies just as well. It verified "the fix is not half-applied" and said
+    # nothing about whether the fix was applied at all. A guard written backwards
+    # is the same defect as the "57%" literal that started this audit.
+    dumped = [ast.dump(e) for e in exprs]
+    derived = [d for d in dumped if "_get_btts_threshold" in d]
+    assert derived, (
+        "the served GG/NG call is no longer derived from the served probability "
+        "at the current threshold — it is reading the stored, frozen-threshold "
+        "column again, and will contradict the probability bar beneath it")
+    for d in derived:
+        assert "btts_prediction" not in d, (
+            "the derived call still falls back to the stored column")
 
 
 def test_both_surfaces_cut_gg_at_the_same_place():
@@ -863,8 +871,17 @@ def test_both_surfaces_cut_gg_at_the_same_place():
     bar = (Path(__file__).resolve().parents[2] / "frontend" / "src" / "components"
            / "PredictionBar.tsx").read_text(encoding="utf-8")
     btts_block = bar[bar.index("export function BttsProbabilityBar"):]
-    assert "prediction" in btts_block, (
-        "BttsProbabilityBar does not take the call the badge is making, so it is "
-        "deciding GG/NG a second time")
-    assert "0.5" not in btts_block.split("return")[0].replace("bttsProb >= 0.5", ""), (
-        "a hardcoded majority rule is still the primary cut in BttsProbabilityBar")
+    # The old form of this assertion stripped the very literal it banned
+    # (`.replace("bttsProb >= 0.5", "")`), so a revert to
+    # `const ggCalled = bttsProb >= 0.5;` passed it. Assert the shape that must
+    # be there instead: the call is taken from the prop, and 0.5 appears only as
+    # the fallback for when there is none.
+    body = btts_block[:btts_block.index("return")]
+    assert "prediction ?" in body or "prediction ?" in btts_block, (
+        "BttsProbabilityBar does not branch on the call the badge is making, so "
+        "it is deciding GG/NG a second time")
+    assert body.count("0.5") <= 1, (
+        f"0.5 appears {body.count('0.5')} times before the render; it may only "
+        f"remain as the fallback for a leg with no call")
+    assert "prediction === \"GG\"" in body, (
+        "the bar does not read the badge's own call")

@@ -219,12 +219,13 @@ def _matrix_summary(m: "list[list[float]]") -> dict:
     return s
 
 
-# No served probability may be 0 or 1. Nothing in football is certain, the
-# scoring rules punish a wrong certainty without bound, and a probability of
-# exactly 1.0 is never a belief — it is an artefact of a calibrator's terminal
-# step. 1e-4 is far outside the range any real forecast occupies (the widest
-# served spread on record is 0.20-0.88) so it clips artefacts and nothing else.
-_EPS = 1e-4
+# No served probability may be 0 or 1 — see prob_bounds, which owns the bound.
+#
+# 2026-09-08: this file had its own `_EPS = 1e-4` beside PROB_EPS, so the test
+# that pins the bound guarded a constant this code did not read. Raising the
+# duplicate to 0.05 — five hundred times the intended clip, deep inside the
+# 0.20-0.88 range real forecasts occupy — left the whole suite green.
+from backend.app.ml.prob_bounds import PROB_EPS as _EPS
 
 
 def fit_lambdas_to_probs(
@@ -364,6 +365,14 @@ def project_probs_coherent(
         return None
     lam_h, lam_a, rho, diag, diag0 = fit
     s = _matrix_summary(_score_matrix(lam_h, lam_a, rho, diag, diag0))
+    # Clamping on the way OUT as well as in is insurance, not a live guard.
+    # Searched 2026-09-08 across the extremes the fitter admits — supremacy to
+    # 0.9985, totals to 0.02 and 0.98, btts to 0.02 and 0.95 — and found zero
+    # inputs where _matrix_summary returns a 0 or a 1, because
+    # fit_lambdas_to_probs bounds lambda at 0.05 and both diagonal factors at
+    # 0.15. No test can tell this clamp present from absent, and the test that
+    # names it says so rather than pretending otherwise. It stays because those
+    # bounds are three numbers away from changing.
     return {
         "home": _c(s["home_win"]), "draw": _c(s["draw"]), "away": _c(s["away_win"]),
         "over": _c(s["over_2_5"]),

@@ -348,6 +348,8 @@ def _auc(probs: "list[float]", actual: "list[bool]") -> "Optional[float]":
     78.7% of every value it has ever produced inside [0.50, 0.60). The chart said
     "well calibrated" and a reader reasonably heard "good".
     """
+    if len(probs) < _MIN_STAT_ROWS:
+        return None
     pos = [p for p, a in zip(probs, actual) if a]
     neg = [p for p, a in zip(probs, actual) if not a]
     if not pos or not neg:
@@ -368,19 +370,48 @@ def _auc(probs: "list[float]", actual: "list[bool]") -> "Optional[float]":
     return (rank_sum - n_pos * (n_pos + 1) / 2.0) / (n_pos * n_neg)
 
 
+#: Below this a slice is too small for either statistic to mean anything, and
+#: publishing one is worse than publishing none. Ireland's 20 settled rows were
+#: rendering an AUC of 0.271 and a resolution of 0.054 with the same weight as
+#: the 2,064-row figure beside them.
+_MIN_STAT_ROWS = 100
+
+
 def _resolution(probs: "list[float]", actual: "list[bool]") -> "Optional[float]":
     """Brier resolution: how much of the outcome's variance the forecast
     explains. Zero means every match got the same answer, however well
-    calibrated that answer was."""
+    calibrated that answer was.
+
+    DEBIASED, because the naive plug-in version is not zero on zero-skill data.
+    Estimating each bucket's rate from the same rows it is then scored on gives
+
+        E[(rate_k - base)^2] = (p_k - base)^2 + p_k(1 - p_k) / n_k
+
+    so the estimator carries a positive term of roughly Var(y) * K / n, where K
+    is the number of occupied buckets. Measured 2026-09-08: on zero-skill data
+    the size and spread of the live BTTS sample it returned a mean of 0.00335,
+    against a published 0.00346 — essentially 100% bias — while the AUC on the
+    same card already said 0.514, i.e. no ranking signal at all. The two numbers
+    contradicted each other and only one was trustworthy.
+
+    Subtracting the sampling term makes it ~0 on noise. Singleton buckets carry
+    no information about their own variance and are dropped.
+    """
     n = len(probs)
-    if n < 20:
+    if n < _MIN_STAT_ROWS:
         return None
     base = sum(1 for a in actual if a) / n
     buckets: dict[int, list[bool]] = {}
     for p, a in zip(probs, actual):
         buckets.setdefault(int(round(p * 50)), []).append(a)
-    return sum(len(v) * ((sum(1 for a in v if a) / len(v)) - base) ** 2
-               for v in buckets.values()) / n
+    total = 0.0
+    for v in buckets.values():
+        k = len(v)
+        if k < 2:
+            continue
+        rate = sum(1 for a in v if a) / k
+        total += k * ((rate - base) ** 2 - rate * (1.0 - rate) / (k - 1))
+    return max(0.0, total / n)
 
 
 def _accuracy_slice(rows: list[dict]) -> AccuracySlice:

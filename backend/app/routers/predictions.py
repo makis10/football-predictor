@@ -243,7 +243,14 @@ def _build_response(
         # Recompute confidence from the DISPLAYED probs (which may be
         # injury-adjusted) so the label always matches what the user sees.
         # The raw DB value is intentionally ignored here.
-        confidence=confidence_for(match.league, max(hw, d, aw), ov),
+        # insufficient_data is exactly "neither side has history", which is what
+        # confidence_for's has_history means. Omitting it here served a forced-low
+        # row as medium on every read, including rows the batch had correctly
+        # stored as low.
+        confidence=confidence_for(
+            match.league, max(hw, d, aw), ov,
+            has_history=not bool(getattr(pred, "insufficient_data", False)),
+        ),
         insufficient_data=bool(getattr(pred, "insufficient_data", False)),
     )
 
@@ -310,6 +317,42 @@ def _persist_adjustment(
         db.commit()
     except Exception:
         db.rollback()   # grading is best-effort — never break the read path
+
+
+def _elo_split_for(league: str, home_team: str, away_team: str):
+    """The UEFA cross-league split, for the cache-miss path.
+
+    Step 2 of the three-step tail finalise_probabilities documents, and until
+    2026-09-08 it ran only in the batch: compute_predictions built the split and
+    passed it, predict_match had no parameter for it, so the same Champions
+    League tie got different home/draw/away probabilities depending on which
+    path answered. That is the two-serving-paths defect this project has already
+    been bitten by twice, in the one place the audit of 2026-09-03 added to fix
+    it.
+
+    Returns None off the UEFA competitions, when the fit has too few ties, or
+    when ClubElo does not carry one of the clubs — the same declines
+    apply_elo_split makes internally.
+    """
+    from backend.app.ml.european_blend import apply_elo_split, fit_elo_split_model, is_uefa
+
+    if not is_uefa(league):
+        return None
+    try:
+        from backend.app.ml.clubelo_ratings import clubelo_by_our_name
+
+        model = fit_elo_split_model(db=None)
+        if model is None:
+            return None
+        table = clubelo_by_our_name()
+        h, a = table.get(home_team), table.get(away_team)
+        if h is None or a is None:
+            return None
+        return lambda p: apply_elo_split(p, h, a, model)
+    except Exception:
+        # A missing snapshot or an unfittable sample must not fail the request;
+        # the honest fallback is the model's own numbers, as it is in the batch.
+        return None
 
 
 @router.get("/{match_id}", response_model=PredictionResponse)
@@ -390,6 +433,7 @@ def get_prediction(match_id: int, db: Session = Depends(get_db)):
             market_odds=market_odds,
             over_odds=over_odds,
             btts_odds=btts_odds,
+            elo_split=_elo_split_for(league, home_team, away_team),
         )
     except Exception as e:
         import logging
@@ -433,6 +477,16 @@ def get_prediction(match_id: int, db: Session = Depends(get_db)):
             # stats and broke extended Poisson stats on the analysis page.
             btts_prob=result["btts"]["gg_probability"],
             btts_prediction=result["btts"]["prediction"],
+            # The unanchored twins. Without these the row goes in with NULLs and
+            # the EV gate below falls through to the served numbers, which are
+            # 85% the bookmaker — it then compares the market with itself and
+            # finds an edge of zero everywhere. The batch has stored these since
+            # the raw_ columns existed; this path never did.
+            raw_home_prob=result["raw"]["home_win"],
+            raw_draw_prob=result["raw"]["draw"],
+            raw_away_prob=result["raw"]["away_win"],
+            raw_over_prob=result["raw"]["over_2_5"],
+            raw_btts_prob=result["raw"]["btts"],
             poisson_lambda_home=result.get("poisson_lambda_home"),
             poisson_lambda_away=result.get("poisson_lambda_away"),
             model_version=result["model_version"],

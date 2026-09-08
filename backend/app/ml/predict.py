@@ -455,6 +455,7 @@ def predict_match(
     market_odds: "tuple[float, float, float] | None" = None,
     over_odds: "tuple[float, float] | None" = None,
     btts_odds: "tuple[float, float] | None" = None,
+    elo_split=None,
 ) -> dict:
     """
     Compute a prediction for a single (upcoming) match.
@@ -592,14 +593,34 @@ def predict_match(
 
     # Same tail as the batch path — see finalise_probabilities for why this is
     # shared rather than duplicated.
+    #
+    # Run once with no prices to capture the UNANCHORED twin, then again with
+    # them. The batch gets its twin by capturing `pre_anchor` mid-function; this
+    # path could not, because finalise_probabilities does the whole tail in one
+    # call — so the router stored NULL in every raw_* column and the EV gate fell
+    # through to the SERVED number, handing run_comparison the bookmaker's own
+    # de-vigged opinion as "the model". Every edge then collapses to roughly
+    # minus the vig and the gate silently suggests nothing, which is exactly what
+    # the comment beside MARKET_ANCHOR_WEIGHT says must never happen.
+    #
+    # The extra call is a handful of arithmetic on numbers already computed; the
+    # expensive part of this function is build_features, far above.
+    raw_h, raw_d, raw_a, raw_over_out, raw_btts_out = finalise_probabilities(
+        home=home_win_p, draw=draw_p, away=away_win_p, over=over_p, btts=gg_prob,
+        elo_split=elo_split,
+    )
     home_win_p, draw_p, away_win_p, over_p, gg_prob = finalise_probabilities(
         home=home_win_p, draw=draw_p, away=away_win_p, over=over_p, btts=gg_prob,
         market_odds=market_odds, over_odds=over_odds, btts_odds=btts_odds,
+        elo_split=elo_split,
     )
 
     goals_prediction = "OVER" if over_p >= 0.5 else "UNDER"
     btts_prediction  = "GG" if gg_prob >= _get_btts_threshold() else "NG"
     max_result_prob  = max(home_win_p, draw_p, away_win_p)
+
+    known = set(hist["home_team"]) | set(hist["away_team"])
+    has_history = home_team in known and away_team in known
 
     return {
         "match_id":    match_id,
@@ -607,6 +628,15 @@ def predict_match(
         "away_team":   away_team,
         "league":      league,
         "match_date":  str(match_date),
+        # Coherent, split-applied, UNANCHORED — the quantity the EV / value gate
+        # is documented to read, and the one the batch stores in raw_*.
+        "raw": {
+            "home_win": round(raw_h, 4),
+            "draw":     round(raw_d, 4),
+            "away_win": round(raw_a, 4),
+            "over_2_5": round(raw_over_out, 4),
+            "btts":     None if raw_btts_out is None else round(raw_btts_out, 4),
+        },
         "win_probabilities": {
             "home_win": round(home_win_p, 4),
             "draw":     round(draw_p, 4),
@@ -625,5 +655,13 @@ def predict_match(
         "poisson_lambda_home": round(float(feat_dict.get("poisson_lambda_home", 1.5)), 4),
         "poisson_lambda_away": round(float(feat_dict.get("poisson_lambda_away", 1.2)), 4),
         "model_version": MODEL_VERSION,
-        "confidence":    confidence_for(league, max_result_prob, over_p),
+        # has_history mirrors the batch: a fixture whose sides have no CSV
+        # history is predicted entirely from neutral defaults, so every such tie
+        # collapses onto the same handful of probabilities and "medium" would be
+        # dishonest. Until 2026-09-08 this call omitted the argument and took the
+        # default True, so the batch stored those rows "low" and the cache-miss
+        # path stored them "medium" or "high".
+        "confidence":    confidence_for(league, max_result_prob, over_p,
+                                        has_history=has_history),
+        "has_history":   has_history,
     }

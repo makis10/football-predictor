@@ -121,7 +121,7 @@ class Leg:
     # is PRINTED as. See Ticket.combined_prob for why the two are different
     # numbers and must stay that way. Equal to `prob` on an estimated leg, where
     # there is no market opinion to borrow.
-    fair_prob:  float = 0.0
+    fair_prob:  "float | None" = None
     league:     str = ""
     home_team:  str = ""
     away_team:  str = ""
@@ -274,7 +274,22 @@ def candidate_legs(
         legs.append(Leg(
             match_id=match_id, market=market, prob=round(float(prob), 4),
             odds=round(float(price), 2), estimated=estimated,
-            fair_prob=round(float(fair if fair is not None else prob), 4),
+            # None, not the model's number.
+            #
+            # _devig declines on a book it cannot trust — a missing counterpart
+            # price, or an overround outside [1.0, 1.5]. Substituting `prob`
+            # there produced a leg the page presents as market-priced whose
+            # "de-vigged bookmaker probability" was our own figure, with nothing
+            # marking it, and combined_prob then multiplied that into the number
+            # whose entire purpose is to be the market's view rather than ours.
+            # It bites hardest on the draw-carrying legs this file records as
+            # overstated by 9.9pp (1X) and 14.2pp (X2) — the exact overstatement
+            # the de-vig exists to remove.
+            #
+            # Left None the leg still works: combined_prob's `l.fair_prob or
+            # l.prob` degrades to the model number, and unpriced_legs below can
+            # now see it and flag the slip.
+            fair_prob=(round(float(fair), 4) if fair is not None else None),
             league=league, home_team=home_team, away_team=away_team,
             kickoff=kickoff, confidence=confidence,
         ))
@@ -472,7 +487,28 @@ class Ticket:
 
     @property
     def estimated_legs(self) -> int:
+        """Legs whose PRICE is ours rather than a bookmaker's.
+
+        Drives est_cap during construction, so its meaning must not drift — see
+        model_priced_chance_legs for the display-side count.
+        """
         return sum(1 for l in self.legs if l.estimated)
+
+    @property
+    def model_priced_chance_legs(self) -> int:
+        """Legs whose printed CHANCE is ours rather than the market's.
+
+        A superset of estimated_legs. _devig declines on a book it cannot trust —
+        a missing counterpart price, or an overround outside [1.0, 1.5] — and
+        such a leg has a real market price but no market opinion behind the
+        number combined_prob multiplies. Before 2026-09-08 it silently carried
+        the model's own probability with nothing marking it, so the slip's
+        headline chance was partly ours while the page called it the market's.
+
+        Separate from estimated_legs on purpose: that one changes which slips get
+        built, and this one only changes what the reader is told.
+        """
+        return sum(1 for l in self.legs if l.estimated or l.fair_prob is None)
 
 
 def _best_leg_in_band(
