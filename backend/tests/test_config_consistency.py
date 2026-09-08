@@ -817,3 +817,54 @@ def test_the_methodology_says_the_numbers_are_partly_the_market():
             continue
         assert stale not in i18n, (
             f"{stale} still appears in the copy; it is a retired anchor weight")
+
+
+def test_the_gg_badge_is_derived_from_the_probability_it_sits_above():
+    """A stored label and a served probability are not the same thing.
+
+    `predictions.btts_prediction` is frozen at whatever threshold was in force
+    the day the row was written — a record of what we published, and a useful
+    one. Serving it beside a probability computed elsewhere put 613 of 3,797
+    rows into open self-contradiction on 2026-09-08: match 14315 (Alverca v
+    Estoril) rendered a red "NG" badge directly above a bar reading "GG 61%".
+    557 rows carried an NG label at btts_prob >= 0.50 and 56 a GG label below it.
+
+    routers/stats.py already refuses to trust that column for the same reason
+    and says so. This pins the other half of the decision, so the two surfaces
+    cannot drift apart again.
+    """
+    import ast
+    from pathlib import Path
+
+    router = Path(__file__).resolve().parents[1] / "app" / "routers" / "predictions.py"
+    tree = ast.parse(router.read_text())
+
+    # Find the keyword argument btts_prediction=... in the response construction.
+    exprs = [kw.value for node in ast.walk(tree) if isinstance(node, ast.Call)
+             for kw in node.keywords if kw.arg == "btts_prediction"]
+    assert exprs, "the response no longer sets btts_prediction"
+
+    for e in exprs:
+        src = ast.dump(e)
+        # It must be computed from the served probability at the current
+        # threshold, and must not fall back to the stored column.
+        if "_get_btts_threshold" in src:
+            assert "btts_prediction" not in src, (
+                "the served GG/NG call still prefers the stored column, which is "
+                "frozen at a retired threshold and will contradict the bar under it")
+
+
+def test_both_surfaces_cut_gg_at_the_same_place():
+    """The match card decided GG/NG twice: the badge at the swept threshold and
+    the bar's bold weight at a hardcoded 0.5. Between the two, 56 upcoming
+    fixtures sat in a band where the badge said GG and the bar bolded NG."""
+    from pathlib import Path
+
+    bar = (Path(__file__).resolve().parents[2] / "frontend" / "src" / "components"
+           / "PredictionBar.tsx").read_text(encoding="utf-8")
+    btts_block = bar[bar.index("export function BttsProbabilityBar"):]
+    assert "prediction" in btts_block, (
+        "BttsProbabilityBar does not take the call the badge is making, so it is "
+        "deciding GG/NG a second time")
+    assert "0.5" not in btts_block.split("return")[0].replace("bttsProb >= 0.5", ""), (
+        "a hardcoded majority rule is still the primary cut in BttsProbabilityBar")

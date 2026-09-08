@@ -19,10 +19,16 @@
  * the radius actually does.
  */
 import { CalibrationBucket } from "@/lib/api";
+import type { TFunc } from "@/lib/i18n";
 
 interface Props {
   buckets: CalibrationBucket[];
   /** Discrimination. null when the sample is too small to compute one. */
+  /** Passed in because these are server components — see SiteNav for why
+   *  a function cannot cross to a client component. Without it the AUC
+   *  health warning renders in English on the Greek page, which is what
+   *  it did until 2026-09-08. */
+  t?: TFunc;
   auc?: number | null;
   /** Share of outcome variance explained. 0 = every match got the same answer. */
   resolution?: number | null;
@@ -47,7 +53,7 @@ function scaleY(v: number) {
   return PLOT_H * (1 - v);
 }
 
-export function BTTSCalibrationChart({ buckets, auc, resolution }: Props) {
+export function BTTSCalibrationChart({ buckets, auc, resolution, t }: Props) {
   if (buckets.length < 2) {
     return (
       <p className="text-sm text-chalk-3 text-center py-6">
@@ -77,10 +83,13 @@ export function BTTSCalibrationChart({ buckets, auc, resolution }: Props) {
       </p>
       {typeof auc === "number" && (
         <p className={`text-xs mb-3 ${auc < NO_SIGNAL_AUC ? "text-lose" : "text-chalk-3"}`}>
-          AUC {auc.toFixed(3)} · 0.500 is a coin
+          {t ? t("stats.discrimination", { auc: auc.toFixed(3) })
+             : `AUC ${auc.toFixed(3)} · 0.500 is a coin`}
           {typeof resolution === "number" &&
             ` · resolution ${(resolution * 100).toFixed(2)}%`}
-          {auc < NO_SIGNAL_AUC && " — this forecast is not separating matches"}
+          {auc < NO_SIGNAL_AUC && (
+            <span className="block">{t ? t("stats.discrimination.short") : "not separating matches"}</span>
+          )}
         </p>
       )}
 
@@ -111,7 +120,8 @@ export function BTTSCalibrationChart({ buckets, auc, resolution }: Props) {
                 stroke="#63b3ed"
                 strokeWidth={1.5}
               />
-              <title>{`Predicted: ${Math.round(b.predicted_prob * 100)}% | Actual: ${Math.round(b.actual_rate * 100)}% | n=${b.count}`}</title>
+              <title>{t ? t("chart.point", { p: Math.round(b.predicted_prob * 100), a: Math.round(b.actual_rate * 100), n: b.count })
+                       : `Predicted: ${Math.round(b.predicted_prob * 100)}% | Actual: ${Math.round(b.actual_rate * 100)}% | n=${b.count}`}</title>
             </g>
           ))}
 
@@ -131,11 +141,11 @@ export function BTTSCalibrationChart({ buckets, auc, resolution }: Props) {
           <line x1={0} y1={PLOT_H} x2={PLOT_W} y2={PLOT_H} stroke="#4a5568" strokeWidth={1} />
 
           <text x={PLOT_W / 2} y={PLOT_H + 36} textAnchor="middle" fontSize={11} fill="#718096">
-            Predicted BTTS (GG) Probability
+            {t ? t("chart.predictedGG") : "Predicted BTTS (GG) Probability"}
           </text>
           <text x={-PLOT_H / 2} y={-34} textAnchor="middle" fontSize={11} fill="#718096"
             transform="rotate(-90)">
-            Actual GG Rate
+            {t ? t("chart.actualGG") : "Actual GG Rate"}
           </text>
         </g>
       </svg>
@@ -145,19 +155,19 @@ export function BTTSCalibrationChart({ buckets, auc, resolution }: Props) {
           <svg width="20" height="8">
             <line x1={0} y1={4} x2={20} y2={4} stroke="#4a5568" strokeWidth={1.5} strokeDasharray="4 3" />
           </svg>
-          Perfect calibration
+          {t ? t("chart.perfectCalibration") : "Perfect calibration"}
         </span>
         <span className="flex items-center gap-1">
           <svg width="20" height="8">
             <line x1={0} y1={4} x2={20} y2={4} stroke="#63b3ed" strokeWidth={2} />
           </svg>
-          Model
+          {t ? t("chart.model") : "Model"}
         </span>
         {/* The radius saturates at n>=127 and floors at n<=14, so it separates
             "a handful" from "a lot" and nothing finer. The old legend read
             "bubble size = sample count", which was false for five of six
             points. Exact counts are in each point's tooltip. */}
-        <span className="text-chalk-3">· larger bubble = more matches (hover for the count)</span>
+        <span className="text-chalk-3">{t ? t("chart.bubble") : "\u00b7 larger bubble = more matches (hover for the count)"}</span>
       </div>
     </div>
   );

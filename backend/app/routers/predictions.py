@@ -219,13 +219,25 @@ def _build_response(
             prediction=goals_pred,
         ),
         btts_prob=btts,
+        # DERIVED from the probability being served, never read from the stored
+        # column, and the two are not the same thing.
+        #
+        # `predictions.btts_prediction` is frozen at whatever threshold was in
+        # force the day the row was written — a record of what we published, and
+        # a useful one. Serving it beside a probability computed elsewhere put
+        # 613 of 3,797 rows into open self-contradiction: match 14315 (Alverca v
+        # Estoril) rendered a red "NG" badge directly above a bar reading
+        # "GG 61%". 557 rows carry an NG label at btts_prob >= 0.50 and 56 a GG
+        # label below it.
+        #
+        # backend/app/routers/stats.py already refuses to trust the same column
+        # for the same reason, and says so in a comment. This is the other half
+        # of that decision. Deriving here also picks up the display-time
+        # coherence bump applied a few lines above, which the stored label
+        # predates by construction.
         btts_prediction=(
-            getattr(pred, "btts_prediction", None)
-            # A row written before the column existed, or one just computed on
-            # the fly: decide it the way the batch does rather than inventing a
-            # second threshold here.
-            or (None if btts is None
-                else ("GG" if btts >= _get_btts_threshold() else "NG"))
+            None if btts is None
+            else ("GG" if btts >= _get_btts_threshold() else "NG")
         ),
         model_version=pred.model_version,
         # Recompute confidence from the DISPLAYED probs (which may be

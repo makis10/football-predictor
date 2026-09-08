@@ -246,7 +246,8 @@ export default async function MatchDetailPage({ params }: Props) {
                       </span>
                     )}
                   </div>
-                  <BttsProbabilityBar bttsProb={prediction.btts_prob} t={t} />
+                  <BttsProbabilityBar bttsProb={prediction.btts_prob}
+                                    prediction={prediction.btts_prediction} t={t} />
                 </div>
               )}
             </>

@@ -14,8 +14,11 @@
  * Below diagonal = model over-estimates that outcome.
  */
 import { ResultCalibration } from "@/lib/api";
+import type { TFunc } from "@/lib/i18n";
 
 interface Props {
+  /** Server component: `t` is passed in, it cannot cross to a client one. */
+  t?: TFunc;
   data: ResultCalibration | null;
 }
 
@@ -38,7 +41,7 @@ const SERIES = [
 const Y_TICKS = [0, 0.25, 0.5, 0.75, 1.0];
 const X_TICKS = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8];
 
-export function ResultCalibrationChart({ data }: Props) {
+export function ResultCalibrationChart({ data, t }: Props) {
   const hasData = data && (
     data.home.length >= 2 || data.draw.length >= 2 || data.away.length >= 2
   );
@@ -159,14 +162,14 @@ export function ResultCalibrationChart({ data }: Props) {
             x={PLOT_W / 2} y={PLOT_H + 36}
             textAnchor="middle" fontSize={11} fill="#718096"
           >
-            Predicted Outcome Probability
+            {t ? t("chart.predictedOutcome") : "Predicted Outcome Probability"}
           </text>
           <text
             x={-PLOT_H / 2} y={-34}
             textAnchor="middle" fontSize={11} fill="#718096"
             transform="rotate(-90)"
           >
-            Actual Frequency
+            {t ? t("chart.actualFrequency") : "Actual Frequency"}
           </text>
         </g>
       </svg>
@@ -177,7 +180,7 @@ export function ResultCalibrationChart({ data }: Props) {
           <svg width="20" height="8">
             <line x1={0} y1={4} x2={20} y2={4} stroke="#4a5568" strokeWidth={1.5} strokeDasharray="4 3" />
           </svg>
-          Perfect calibration
+          {t ? t("chart.perfectCalibration") : "Perfect calibration"}
         </span>
         {SERIES.map(({ key, label, color }) => (
           data[key].length >= 2 && (
@@ -193,7 +196,7 @@ export function ResultCalibrationChart({ data }: Props) {
             from "a lot" and nothing finer. The old wording claimed the area
             encoded the count, which it does not once the clamp bites. Exact
             counts are in each point's tooltip. */}
-        <span className="text-chalk-3">· larger bubble = more matches (hover for the count)</span>
+        <span className="text-chalk-3">{t ? t("chart.bubble") : "\u00b7 larger bubble = more matches (hover for the count)"}</span>
       </div>
     </div>
   );

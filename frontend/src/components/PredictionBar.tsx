@@ -70,15 +70,22 @@ export function GoalsProbabilityBar({ overProb }: GoalsBarProps) {
 
 interface BttsBarProps {
   bttsProb: number;
+  /** The call the badge above this bar is making. The bar emphasises the SAME
+   *  side, because the model's GG/NG cut is the swept threshold (0.47), not
+   *  0.5 — so between 0.47 and 0.50 a hardcoded majority rule bolds NG under a
+   *  green GG badge. 56 upcoming fixtures sat in that band on 2026-09-08.
+   *  Falls back to the majority when no call is available. */
+  prediction?: "GG" | "NG" | null;
   t: TFunc;
 }
 
-export function BttsProbabilityBar({ bttsProb, t }: BttsBarProps) {
+export function BttsProbabilityBar({ bttsProb, prediction, t }: BttsBarProps) {
   const ngProb = 1 - bttsProb;
+  const ggCalled = prediction ? prediction === "GG" : bttsProb >= 0.5;
   return (
     <div className="space-y-3">
-      <Bar label={t("pred.ggLabel")} probability={bttsProb} color="bg-win" bold={bttsProb >= 0.5} />
-      <Bar label={t("pred.ngLabel")} probability={ngProb} color="bg-lose" bold={ngProb > 0.5} />
+      <Bar label={t("pred.ggLabel")} probability={bttsProb} color="bg-win" bold={ggCalled} />
+      <Bar label={t("pred.ngLabel")} probability={ngProb} color="bg-lose" bold={!ggCalled} />
     </div>
   );
 }

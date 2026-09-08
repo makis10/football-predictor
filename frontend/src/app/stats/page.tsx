@@ -883,12 +883,12 @@ export default async function StatsPage({ searchParams }: PageProps) {
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           <CalibrationChart buckets={s.calibration} auc={s.goals_auc}
-                            resolution={s.goals_resolution} />
-          <ResultCalibrationChart data={s.result_calibration ?? null} />
+                            resolution={s.goals_resolution} t={t} />
+          <ResultCalibrationChart data={s.result_calibration ?? null} t={t} />
           {s.btts_calibration.length >= 2 && (
             <BTTSCalibrationChart buckets={s.btts_calibration}
                                   auc={btts?.auc ?? null}
-                                  resolution={btts?.resolution ?? null} />
+                                  resolution={btts?.resolution ?? null} t={t} />
           )}
         </div>
       </section>
