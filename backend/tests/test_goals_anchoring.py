@@ -170,3 +170,40 @@ def test_the_batch_refuses_to_store_a_probability_that_is_not_a_number():
         "probabilities are numbers")
     assert "raise" in guard, (
         "a non-finite probability must abort the fixture, not be stored")
+
+
+# ── a book that is not a book ─────────────────────────────────────────────────
+
+def test_a_book_summing_below_one_is_refused():
+    """De-vigging normalises by the sum of the implied probabilities. A sum BELOW
+    1 does not remove a margin — it inflates every price into a more confident
+    number than the bookmaker offered.
+
+    No bookmaker prices a negative margin, so a sum under 1 means the prices are
+    not from one snapshot: a stale side, a mismatched pair, a feed that filled
+    one leg from a different market. One of the 605 stored Over/Under pairs sums
+    to 0.8402, and anchoring to it would have pulled the served probability
+    toward a number nobody quoted.
+    """
+    from backend.app.ml.predict import anchor_to_market
+    from backend.app.ml.tickets import _devig
+
+    assert (1 / 2.50 + 1 / 2.60) < 1.0, "fixture is wrong: this pair is not implausible"
+    assert anchor_binary_to_market(0.61, 2.50, 2.60) == 0.61
+    assert _devig(1 / 2.50, (2.50, 2.60)) is None
+    assert anchor_to_market((0.4, 0.3, 0.3), (5.0, 5.0, 5.0)) == (0.4, 0.3, 0.3)
+
+
+def test_a_real_book_is_still_accepted():
+    """The guard must not start rejecting ordinary prices. The widest real book
+    on record here is 1.1685 on a 1x2; the mean is 1.067."""
+    from backend.app.ml.predict import anchor_to_market
+    from backend.app.ml.tickets import _devig
+
+    assert anchor_binary_to_market(0.61, 1.90, 1.95) != 0.61
+    assert _devig(1 / 1.70, (1.70, 3.80, 5.50)) is not None
+    assert anchor_to_market((0.4, 0.3, 0.3), (1.70, 3.80, 5.50)) != (0.4, 0.3, 0.3)
+    # …including one at the widest margin actually observed.
+    wide = (1.55, 4.60, 6.50)
+    assert 1.0 <= sum(1 / o for o in wide) <= 1.20
+    assert anchor_to_market((0.4, 0.3, 0.3), wide) != (0.4, 0.3, 0.3)

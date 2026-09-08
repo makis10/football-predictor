@@ -201,6 +201,27 @@ def reload_predict_models() -> None:
 MARKET_ANCHOR_WEIGHT = 0.85
 
 
+# A book must be a book.
+#
+# De-vigging normalises by the sum of the implied probabilities, so a sum BELOW 1
+# does not remove a margin — it inflates every price into a more confident
+# number than the bookmaker offered. No bookmaker prices a negative margin, so a
+# sum under 1 means the prices are not from one snapshot: a stale side, a
+# mismatched pair, a feed that filled one leg from a different market. One of the
+# 605 stored Over/Under pairs sums to 0.8402, and anchoring to it would have
+# pulled the served probability toward a number nobody quoted.
+#
+# The upper bound is deliberately loose. The widest real book on record here is
+# 1.1685 on a 1x2; 1.5 catches "these prices are not from one market" without
+# policing a bookmaker's margin, which is not our business.
+_MIN_OVERROUND = 1.0
+_MAX_OVERROUND = 1.5
+
+
+def _plausible_book(total: float) -> bool:
+    return math.isfinite(total) and _MIN_OVERROUND <= total <= _MAX_OVERROUND
+
+
 def anchor_to_market(
     model: tuple[float, float, float],
     market_odds: tuple[float, float, float] | None,
@@ -227,7 +248,7 @@ def anchor_to_market(
         return model
     raw = [1.0 / float(o) for o in market_odds]
     total = sum(raw)
-    if not math.isfinite(total) or total <= 0:
+    if not _plausible_book(total):
         return model
     fair = [x / total for x in raw]
     blended = [(1.0 - weight) * m + weight * k for m, k in zip(model, fair)]
@@ -293,7 +314,7 @@ def anchor_binary_to_market(
         return m
     iy, ino = 1.0 / y, 1.0 / n
     total = iy + ino
-    if not math.isfinite(total) or total <= 0:
+    if not _plausible_book(total):
         return m
     fair = iy / total
     out = (1.0 - weight) * m + weight * fair

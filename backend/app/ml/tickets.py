@@ -49,6 +49,8 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 from typing import Iterable, Optional, Sequence
 
+from backend.app.ml.predict import _plausible_book
+
 # ── Markets ───────────────────────────────────────────────────────────────────
 # Codes are stable identifiers stored in the DB and graded by settle_market().
 # Renaming one silently invalidates every stored ticket, so they never change.
@@ -145,7 +147,11 @@ def _devig(part: float, book: Sequence[Optional[float]]) -> Optional[float]:
     if len(prices) != len(book) or not prices:
         return None
     total = sum(1.0 / o for o in prices)
-    if total <= 0:
+    # Same sanity check the anchors apply, and for the same reason: a book
+    # summing below 1 is not a book with a margin, it is prices that did not
+    # come from one snapshot, and normalising by it inflates rather than
+    # de-vigs. See predict._plausible_book.
+    if not _plausible_book(total):
         return None
     return part / total
 
