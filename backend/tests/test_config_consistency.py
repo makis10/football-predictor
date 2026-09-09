@@ -972,3 +972,83 @@ def test_the_proxy_forwards_the_unforgeable_client_ip():
     assert '"CF-Connecting-IP"' in route, (
         "the proxy does not forward CF-Connecting-IP, so every request reaches "
         "the backend with no usable client address and shares one bucket")
+
+
+def test_serving_never_fills_a_feature_that_training_left_missing():
+    """A feature that is NaN in training and a constant at serve time means the
+    branch the model learned is never taken in production.
+
+    Found 2026-09-09: sixteen of them. train.py lists them in `optional_feats`,
+    so dropna keeps the rows and _impute_optional does not fill them — the model
+    is fitted with those columns genuinely missing. compute_predictions then
+    filled them from DEFAULTS.
+
+    Worse than a mismatched value: the constants arrived beside their still-NaN
+    siblings, producing combinations that occur exactly zero times in training. A
+    first-ever meeting was served h2h_draw_rate = 0.26 with the other five h2h
+    stats NaN, when features.py sets all six NaN together. A fixture in a league
+    with no table was told both teams were exactly mid-table and equally ranked
+    while the five motivation features guarded by the same condition stayed NaN.
+    On the 216 fixtures of the following week, that trio was NaN on 133 of them.
+    """
+    import json
+    import re
+    from pathlib import Path
+
+    import backend.app.ml.train as T
+    from backend.app.ml.features import FEATURE_COLS
+
+    root = Path(__file__).resolve().parents[2]
+    tr = (root / "backend" / "app" / "ml" / "train.py").read_text()
+    cp = (root / "scripts" / "compute_predictions.py").read_text()
+
+    block = tr[tr.index("optional_feats = ("):tr.index("core_feats = [")]
+    optional = set(re.findall(r'"([a-z0-9_]+)"', block))
+    for name in ("SHOTS_COLS", "EUROPEAN_FEATURE_COLS", "MARKET_COLS",
+                 "XG_COLS", "REF_COLS", "POISSON_COLS"):
+        optional |= set(getattr(T, name, []))
+
+    imp = tr[tr.index("def _impute_optional"):]
+    imp = imp[:imp.index("\ndef ")]
+    imputed = set(re.findall(r'"([a-z0-9_]+)"', imp))
+    for name in ("SHOTS_COLS", "EUROPEAN_FEATURE_COLS", "MARKET_COLS",
+                 "XG_COLS", "POISSON_COLS"):
+        if name in imp:
+            imputed |= set(getattr(T, name, []))
+
+    defaults_block = re.search(r"^DEFAULTS\s*=\s*\{(.*?)^\}", cp, re.S | re.M)
+    assert defaults_block, "compute_predictions no longer defines DEFAULTS"
+    defaults = set(re.findall(r'"([a-z0-9_]+)"\s*:', defaults_block.group(1)))
+
+    medians_path = root / "backend" / "data" / "models" / "impute_medians.json"
+    medians = set(json.loads(medians_path.read_text())) if medians_path.exists() else set()
+
+    skew = sorted((optional & defaults & set(FEATURE_COLS)) - imputed - medians)
+    assert not skew, (
+        "these features are NaN in training but filled with a constant at serve "
+        "time, so the model's missing-value branch is never taken:\n  "
+        + "\n  ".join(skew)
+        + "\n\nEither drop them from DEFAULTS in compute_predictions.py, or add "
+          "them to _impute_optional in train.py so both sides use one value.")
+
+
+def test_every_model_accepts_a_missing_optional_feature():
+    """The reason the fix above is safe, asserted rather than assumed. If a
+    future ensemble member cannot take NaN — sklearn's MLPClassifier cannot —
+    dropping the defaults would start raising on the live card instead."""
+    import numpy as np
+    import pandas as pd
+
+    from backend.app.ml.features import FEATURE_COLS, RESULT_FEATURE_COLS
+    from backend.app.ml.predict import _get_models
+
+    result_model, goals_model = _get_models()
+    row = {c: 0.5 for c in FEATURE_COLS}
+    for c in ("h2h_draw_rate", "h_league_pos_norm", "a_league_pos_norm",
+              "league_pos_diff", "h_ewma_form", "elo_closeness"):
+        if c in row:
+            row[c] = np.nan
+    X = pd.DataFrame([row])
+
+    probs = result_model.predict_proba(X[[c for c in RESULT_FEATURE_COLS if c in X]])[0]
+    assert len(probs) == 3 and np.all(np.isfinite(probs))

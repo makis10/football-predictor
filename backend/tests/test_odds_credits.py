@@ -233,3 +233,38 @@ def test_the_scheduled_burn_still_fits_with_btts_priced_in():
     btts_per_day = 60 * fetches_per_fixture_per_day
 
     assert btts_per_day < 300, f"BTTS alone would cost {btts_per_day:.0f}/day"
+
+
+def test_no_failure_path_caches_an_empty_answer_for_the_success_ttl():
+    """A timeout is not evidence that a market does not exist.
+
+    This module has corrected the same mistake four times — squad positions,
+    the events list, league odds, and finally BTTS. Caching a failed fetch for
+    the success TTL turns one blip into hours of "this fixture has no GG/NG
+    market", which blanks the analysis panel, stops the value gate surfacing any
+    goals bet, and — if it lands during the daily run — leaves that fixture's
+    BTTS unanchored while the rest of the card is anchored at w=0.85.
+
+    Every `cache_set` inside an `except` must therefore use a short TTL.
+    """
+    import ast
+    import inspect
+
+    from backend.app.ml import odds_analysis_service as svc
+
+    short = {"EMPTY_ODDS_TTL", "3600", "300", "120", "60"}
+    tree = ast.parse(inspect.getsource(svc))
+    offenders = []
+    for node in ast.walk(tree):
+        if not isinstance(node, ast.ExceptHandler):
+            continue
+        for call in ast.walk(node):
+            if not (isinstance(call, ast.Call) and getattr(call.func, "id", "") == "cache_set"):
+                continue
+            if len(call.args) < 3:
+                continue
+            ttl = ast.unparse(call.args[2])
+            if not any(s in ttl for s in short):
+                offenders.append(f"line {call.lineno}: cache_set(..., {ttl})")
+    assert not offenders, (
+        "a failed fetch is cached for the success TTL:\n  " + "\n  ".join(offenders))

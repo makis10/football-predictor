@@ -472,8 +472,7 @@ DEFAULTS = {
     # are now injected from live The Odds API data via market_probs= parameter.
     # No default here — XGBoost handles NaN natively when odds are unavailable.
 
-    # H2H draw rate and season phase defaults
-    "h2h_draw_rate": 0.26,
+    # season phase defaults
     "season_week": 15, "season_phase": 2, "days_since_season_start": 105,
     # Poisson features — neutral league-average defaults for cold-start matches
     "poisson_lambda_home":  1.5,  "poisson_lambda_away":  1.2,
@@ -481,23 +480,33 @@ DEFAULTS = {
     "poisson_home_win":     0.44, "poisson_draw":         0.26,
     "poisson_away_win":     0.30, "poisson_over_2_5":     0.50,
     "poisson_btts":         0.50,
-    # Draw-balance features
-    "goals_asymmetry_5":      0.0,
-    "combined_draw_tendency": 0.26,
-    "pi_closeness":           0.5,
-    "market_draw_edge":       0.0,
-    "low_total_xg":           0.0,
-    "elo_closeness":          0.5,
     # Odds movement / steam (0.0 = no movement / not available)
     "odds_drift_home": 0.0, "odds_drift_draw": 0.0,
     "odds_drift_away": 0.0, "odds_drift_over": 0.0,
     "is_steam_home":   0.0, "is_steam_away":   0.0,
-    # EWMA momentum defaults (league-average goals, league-average form=1pt/game)
-    "h_ewma_scored": 1.5, "h_ewma_conceded": 1.5,
-    "a_ewma_scored": 1.5, "a_ewma_conceded": 1.5,
-    "h_ewma_form": 1.0,   "a_ewma_form": 1.0,
-    # League position defaults (neutral = middle of table)
-    "h_league_pos_norm": 0.5, "a_league_pos_norm": 0.5, "league_pos_diff": 0.0,
+    # NOT here, deliberately: h2h_draw_rate, the five other h2h stats, the six
+    # EWMA columns, the three league-position columns, goals_asymmetry_5,
+    # combined_draw_tendency, pi_closeness, elo_closeness, low_total_xg and
+    # market_draw_edge.
+    #
+    # train.py:340-358 lists all of them in `optional_feats`, so dropna KEEPS
+    # the rows and _impute_optional does NOT fill them — the model is fitted
+    # with those columns genuinely missing and learns a branch for it. Filling
+    # them here meant that branch was never taken in production: sixteen
+    # features were NaN in training and a constant at serve time.
+    #
+    # It was worse than a mismatched value. The constants arrived beside their
+    # still-NaN siblings, producing combinations that occur exactly zero times
+    # in training — a first-ever meeting was served h2h_draw_rate = 0.26 with
+    # the other five h2h stats NaN, when features.py sets all six NaN together;
+    # a fixture in a league with no table was told "both teams are exactly
+    # mid-table and equally ranked" while the five motivation features guarded
+    # by the same condition stayed NaN. Measured 2026-09-09 on the 216 fixtures
+    # of the next seven days: the league-position trio was NaN on 133 of them,
+    # every UEFA tie among them.
+    #
+    # All four models take NaN (verified: result, goals, BTTS and draw all
+    # predict cleanly with these columns missing), so the honest fill is none.
 }
 # Training imputation medians (impute_medians.json, written by train.py from
 # pre-CAL rows) override the legacy literals above — one source of truth for

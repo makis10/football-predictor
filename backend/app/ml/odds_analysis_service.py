@@ -1410,8 +1410,19 @@ def _fetch_event_btts(event_id: str, sport_key: str) -> dict:
         remaining = resp.headers.get("x-requests-remaining", "?")
         log.info(f"[odds] BTTS fetch for event {event_id}  (quota remaining: {remaining})")
     except Exception as e:
+        # Short TTL on FAILURE — the fourth time this module has needed the same
+        # correction (see the squad-position, events and league-odds paths
+        # above). A timeout or a 5xx is not evidence that a fixture has no GG/NG
+        # market, and caching it as one for six hours costs three things at
+        # once: the analysis page shows no BTTS price, the value gate can no
+        # longer surface a GG or NG bet on that match, and — worst — if the blip
+        # lands during the daily run, compute_predictions sees no BTTS odds and
+        # skips the anchoring for that fixture ALONE. Its served p_btts is then
+        # the unanchored model number sitting beside a card where every other
+        # fixture is anchored at w=0.85: two different quantities under one
+        # heading, which is the failure the anchoring comments exist to prevent.
         log.warning(f"[odds] BTTS fetch failed for event {event_id}: {e}")
-        cache_set(f"btts:{event_id}", {}, BTTS_ODDS_TTL)
+        cache_set(f"btts:{event_id}", {}, EMPTY_ODDS_TTL)
         return {}
 
     btts_yes_odds: list[float] = []
