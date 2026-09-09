@@ -501,6 +501,44 @@ def merge_xg(df: pd.DataFrame, xg_df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
+def parse_match_dates(raw) -> "pd.Series":
+    """Parse a CSV Date column that may be ISO or dd/mm/yyyy.
+
+    ISO FIRST, then dayfirst — and the order is the whole point.
+
+    `pd.to_datetime(..., dayfirst=True, format="mixed")` reads an ISO string as
+    %Y-%d-%m whenever both components are <= 12, silently and without an error:
+
+        2021-12-05  (5 December)  ->  2021-05-12  (12 May)
+        2021-11-07  (7 November)  ->  2021-07-11  (11 July)
+        2026-01-13                ->  2026-01-13   (13 cannot be a month)
+
+    Measured 2026-09-09: 491 of 848 raw CSVs use ISO dates, and 37,385 of their
+    rows — 17.7% of the entire 211,496-row corpus — had day and month swapped.
+    The top-five leagues' football-data.co.uk files are dd/mm/yyyy and parsed
+    correctly, which is why nothing looked wrong.
+
+    What it cost: build_features sorts by Date and walks the rows in that order,
+    so every order-dependent feature was accumulated out of sequence — Elo,
+    Pi-Ratings, the rolling form deques, EWMA, H2H, league position, the
+    season-boundary decay. A December match processed as May is a training row
+    built from matches that had not been played yet, and every later row in that
+    league inherits the corrupted state. build_team_snapshot sorts the same way,
+    so the same disorder reached the served snapshot.
+
+    The tell was there to be seen: 568 rows carried a final score and a date in
+    the future, the latest three months out. A played match cannot be.
+    """
+    import pandas as pd
+
+    s = raw.astype(str).str.strip()
+    iso = pd.to_datetime(s, format="%Y-%m-%d", errors="coerce")
+    if iso.notna().all():
+        return iso
+    rest = pd.to_datetime(s, dayfirst=True, format="mixed", errors="coerce")
+    return iso.fillna(rest)
+
+
 def load_raw_csvs(raw_dir: str) -> pd.DataFrame:
     """
     Read all CSVs in raw_dir, normalise column names, and return a single
@@ -838,7 +876,7 @@ def _normalise(df: pd.DataFrame) -> pd.DataFrame:
     }
     df = df.rename(columns=rename)
 
-    df["Date"] = pd.to_datetime(df["Date"], dayfirst=True, format="mixed", errors="coerce")
+    df["Date"] = parse_match_dates(df["Date"])
     # Strip whitespace from team names (some older CSVs have trailing spaces)
     for col in ("home_team", "away_team"):
         if col in df.columns:

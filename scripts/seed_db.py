@@ -58,7 +58,11 @@ def load_csv(path: str, league: str, season_code: str) -> pd.DataFrame:
         "FTR": "result",
     }
     df = df.rename(columns=rename)
-    df["Date"] = pd.to_datetime(df["Date"], dayfirst=True, format="mixed", errors="coerce")
+    # Same parser as the feature engine — see features.parse_match_dates for
+    # why ISO must be tried first. Seeding with dayfirst put 17.7% of the corpus
+    # in the wrong month.
+    from backend.app.ml.features import parse_match_dates
+    df["Date"] = parse_match_dates(df["Date"])
     df = df.dropna(subset=["Date", "home_team", "away_team"])
     df["home_goals"] = pd.to_numeric(df.get("home_goals"), errors="coerce").astype("Int64")
     df["away_goals"] = pd.to_numeric(df.get("away_goals"), errors="coerce").astype("Int64")

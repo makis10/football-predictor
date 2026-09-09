@@ -51,7 +51,10 @@ def _load_csv_odds() -> pd.DataFrame:
                 continue
             league = LEAGUE_MAP[prefix]
             try:
-                df = pd.read_csv(path, dayfirst=True)
+                # No parse_dates here, so dayfirst did nothing but suggest
+                # this file knows how to read a date. It does not — the Date
+                # column is parsed below, by the one function that does.
+                df = pd.read_csv(path)
             except Exception as e:
                 print(f"  [warn] Could not read {path}: {e}")
                 continue
@@ -61,7 +64,8 @@ def _load_csv_odds() -> pd.DataFrame:
                 print(f"  [warn] {path}: missing columns {required - set(df.columns)}")
                 continue
 
-            df["Date"] = pd.to_datetime(df["Date"], dayfirst=True, errors="coerce")
+            from backend.app.ml.features import parse_match_dates
+            df["Date"] = parse_match_dates(df["Date"])
             df = df.dropna(subset=["Date", "HomeTeam", "AwayTeam", "B365H", "B365D", "B365A"])
 
             over_col = next(
