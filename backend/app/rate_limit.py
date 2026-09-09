@@ -20,19 +20,35 @@ from collections import deque
 
 def client_ip(request) -> str:
     """
-    Best-effort real client IP.
+    Real client IP, from a header the CLIENT cannot write.
 
-    All browser traffic reaches the backend through the Next.js proxy, so
-    request.client.host is the proxy/container IP — identical for every user.
-    The proxy forwards the original client in X-Forwarded-For; take the FIRST
-    entry (the original client; subsequent hops are appended by each proxy).
-    Falls back to the socket peer when the header is absent.
+    2026-09-09: this took the FIRST entry of X-Forwarded-For, and that entry is
+    attacker-controlled. Cloudflare APPENDS the connecting IP to any
+    X-Forwarded-For the caller sends, so `X-Forwarded-For: 203.0.113.99` arrives
+    as "203.0.113.99, <real ip>" and the first entry is whatever the caller
+    typed. Verified against the live site with one request: the bucket landed in
+    Redis as `rl:chat:203.0.113.99`.
+
+    Every IP-keyed limit on the site was therefore bypassable by rotating that
+    header — the public LLM endpoint (real money per call), login and register
+    (brute force), and the CSV export (scraping).
+
+    CF-Connecting-IP is the fix: Cloudflare sets it to the connecting address and
+    OVERWRITES any value the caller supplies, so it cannot be forged from
+    outside. The Next proxy forwards it (see app/api/proxy/[...path]/route.ts).
+
+    X-Forwarded-For is deliberately no longer consulted. The rightmost entry
+    would be the nearest proxy rather than the client, and counting hops from the
+    right is a guess about deployment topology that silently rots. Without
+    CF-Connecting-IP we fall back to the socket peer, which behind the proxy is
+    one shared address — that limits everyone together, which is the safe
+    direction to be wrong in.
     """
-    xff = request.headers.get("x-forwarded-for")
-    if xff:
-        first = xff.split(",")[0].strip()
-        if first:
-            return first
+    cf = request.headers.get("cf-connecting-ip")
+    if cf:
+        cf = cf.strip()
+        if cf:
+            return cf
     return request.client.host if request.client else "unknown"
 
 

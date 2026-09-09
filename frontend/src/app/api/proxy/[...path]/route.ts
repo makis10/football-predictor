@@ -77,8 +77,19 @@ async function forward(
   if (internalSecret) forwardHeaders["X-Internal-Secret"] = internalSecret;
 
   // Forward the real client IP so backend rate limits are per-user, not per
-  // proxy-container. Prefer the inbound X-Forwarded-For (set by the tunnel);
-  // fall back to the direct request IP.
+  // proxy-container.
+  //
+  // CF-Connecting-IP, not X-Forwarded-For. Cloudflare APPENDS to any
+  // X-Forwarded-For the caller sends, so its first entry is attacker-controlled
+  // — verified on 2026-09-09 by sending `X-Forwarded-For: 203.0.113.99` to the
+  // live site and finding the rate-limit bucket in Redis as
+  // `rl:chat:203.0.113.99`. Cloudflare OVERWRITES CF-Connecting-IP, so that one
+  // cannot be forged from outside.
+  //
+  // X-Forwarded-For is still forwarded for logging, but backend/app/rate_limit.py
+  // no longer reads it.
+  const cfIp = request.headers.get("cf-connecting-ip");
+  if (cfIp) forwardHeaders["CF-Connecting-IP"] = cfIp;
   const fwd = request.headers.get("x-forwarded-for") ?? request.headers.get("x-real-ip") ?? "";
   if (fwd) forwardHeaders["X-Forwarded-For"] = fwd;
 

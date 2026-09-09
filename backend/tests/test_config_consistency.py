@@ -933,3 +933,42 @@ def test_no_secret_is_compared_with_a_plain_equality():
     assert not offenders, (
         "a secret is compared with == or != instead of hmac.compare_digest:\n  "
         + "\n  ".join(offenders))
+
+
+def test_the_rate_limiter_cannot_be_keyed_on_a_header_the_client_writes():
+    """Cloudflare APPENDS to any X-Forwarded-For the caller sends, so its first
+    entry is whatever the caller typed.
+
+    Verified against the live site on 2026-09-09 with a single request carrying
+    `X-Forwarded-For: 203.0.113.99`: the bucket landed in Redis as
+    `rl:chat:203.0.113.99`. Every IP-keyed limit was bypassable by rotating that
+    header — the public LLM endpoint, login, register, and the CSV export.
+
+    CF-Connecting-IP is overwritten by Cloudflare and cannot be forged from
+    outside. This asserts the limiter reads that and not the forwarded chain.
+    """
+    import inspect
+
+    from backend.app.rate_limit import client_ip
+
+    src = inspect.getsource(client_ip)
+    assert "cf-connecting-ip" in src.lower(), (
+        "client_ip no longer reads CF-Connecting-IP")
+
+    code = src.split('"""')[-1]          # the body, past the docstring
+    assert "x-forwarded-for" not in code.lower(), (
+        "client_ip reads X-Forwarded-For again — its first entry is written by "
+        "the caller, and counting hops from the right is a guess about topology")
+
+
+def test_the_proxy_forwards_the_unforgeable_client_ip():
+    """The backend can only key on CF-Connecting-IP if the proxy passes it on.
+    The proxy builds a fresh header object, so anything not explicitly forwarded
+    is dropped."""
+    from pathlib import Path
+
+    route = (Path(__file__).resolve().parents[2] / "frontend" / "src" / "app"
+             / "api" / "proxy" / "[...path]" / "route.ts").read_text(encoding="utf-8")
+    assert '"CF-Connecting-IP"' in route, (
+        "the proxy does not forward CF-Connecting-IP, so every request reaches "
+        "the backend with no usable client address and shares one bucket")
