@@ -206,6 +206,9 @@ def update_db(finished: list[dict]) -> tuple[int, int]:
         unmatched: list[str] = []
         created = 0
         from scripts.fetch_club_friendlies import infer_season
+        # Friendlies are the exception to "one ordered pairing per season": the
+        # same clubs really can meet twice at the same ground in one pre-season.
+        _REPEATABLE_PAIRINGS = {"ClubFriendly"}
         from scripts.team_resolver import known_team_names
         known_teams = set(known_team_names())
         for f in finished:
@@ -219,6 +222,55 @@ def update_db(finished: list[dict]) -> tuple[int, int]:
                     Match.result.is_(None),         # only update unresolved
                 )
             ).first()
+
+            if not match:
+                # The fixture MOVED.
+                #
+                # Both lookups pinned Match.match_date to the feed's date, so a
+                # postponement — or the feed's UTC date drifting off the one we
+                # stored — missed them both, and the create path below then wrote
+                # a SECOND row carrying the score while the row holding our
+                # prediction stayed unresolved for ever.
+                #
+                # Found live on 2026-09-10: Eredivisie Utrecht v Go Ahead Eagles.
+                # Row 23240 (2026-09-05, feed id 1552155) held the prediction
+                # "Home Win @ 2.14" and a ticket leg; the 3-3 landed on row 24731
+                # (2026-09-08, no feed id). So a 1x2 call that LOST dropped out
+                # of the public accuracy record, and an accumulator leg that WON
+                # could never settle.
+                #
+                # Keyed on the ordered pairing within the season rather than a
+                # date window: in a round-robin a club hosts another once a
+                # season, and a two-legged tie swaps the venue, so the ordered
+                # pair stays unique either way — the same reasoning
+                # dedupe_fixtures.py records. A date window cannot work here;
+                # the reschedule that prompted that comment moved four months.
+                season = infer_season(f["match_date"])
+                moved = db.scalars(
+                    select(Match).where(
+                        Match.home_team == home,
+                        Match.away_team == away,
+                        Match.league    == f["league"],
+                        Match.season    == season,
+                        Match.result.is_(None),
+                    ).order_by(Match.id)
+                ).all()
+                if len(moved) == 1 and f["league"] not in _REPEATABLE_PAIRINGS:
+                    match = moved[0]
+                    print(f"  ↻ {f['league']} {home} v {away}: "
+                          f"{match.match_date} → {f['match_date']} "
+                          f"(rescheduled; scoring the row we predicted)")
+                    match.match_date = f["match_date"]
+                elif len(moved) > 1:
+                    # Two unsettled rows for one pairing is the duplicate that
+                    # dedupe_fixtures.py exists to collapse. Scoring one of them
+                    # at random would pick the wrong half half the time.
+                    unmatched.append(
+                        f"{f['league']} {f['match_date']} {home} v {away} — "
+                        f"{len(moved)} unsettled rows for this pairing "
+                        f"({', '.join(str(m.id) for m in moved)}); "
+                        f"run dedupe_fixtures.py")
+                    continue
 
             if not match:
                 # Distinguish "already had a result" from "we cannot find it at

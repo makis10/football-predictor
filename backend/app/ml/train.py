@@ -396,18 +396,72 @@ def split(df: pd.DataFrame):
     return xgb_train, cal, test
 
 
+# How many rows the early-stopping fold may take. A FRACTION of a 12-season
+# corpus is not a thin tail: 15% of 85,269 rows is 12,790 rows spanning 1.80
+# YEARS, and because nothing refitted afterwards the shipped models were fitted
+# on data ending 2022-09-11 — four seasons before the day they served. The time
+# decay compounded it: _time_decay_weights measures age from TRAIN_CUTOFF, so
+# the newest row the model had ever seen was 1,024 days old and carried weight
+# 0.523 against a 3-year half-life. The recency weighting this module is built
+# around could never reach above half its maximum.
+#
+# 5,000 rows is roughly two months of the corpus — enough to stop boosting at
+# the right tree count, small enough that refitting over it costs nothing.
+_MAX_VAL_ROWS = 5_000
+
+
 def _val_split(train: pd.DataFrame, val_frac: float = 0.15) -> tuple[pd.DataFrame, pd.DataFrame]:
     """
-    Carve the last val_frac of rows (by date) out of train for XGBoost early-stopping.
-    This avoids using the held-out TEST set for early stopping (which would be data leakage).
-    The calibration set is used separately for isotonic calibration — it is NOT used here.
+    Carve the last rows (by date) out of train for early stopping. This avoids
+    using the held-out TEST set for early stopping (which would be leakage). The
+    calibration set is used separately for isotonic calibration — not here.
+
+    Capped at _MAX_VAL_ROWS: the fold is there to find a tree count, not to be a
+    second test set, and every row it takes is a row the model never learns from
+    unless _refit_on_everything puts it back.
     """
-    n_val = max(200, int(len(train) * val_frac))
+    n_val = min(max(200, int(len(train) * val_frac)), _MAX_VAL_ROWS)
     inner = train.iloc[:-n_val]
     val   = train.iloc[-n_val:]
     print(f"  Early-stopping val split: {len(inner):,} train / {n_val:,} val "
-          f"(last {val_frac:.0%} of XGBoost train set)")
+          f"({inner['Date'].max().date()} | {val['Date'].min().date()}"
+          f" → {val['Date'].max().date()})")
     return inner, val
+
+
+def _refit_on_everything(model, X_full, y_full, sample_weight, label: str):
+    """Refit at the tree count early stopping discovered, on ALL the rows.
+
+    Early stopping answers "how many trees" and costs a held-out fold to do it.
+    Shipping the model fitted on `inner` alone throws that fold away — and the
+    fold is the most recent data there is, which is the part that matters most
+    for a football model.
+
+    Returns a NEW estimator with early stopping disabled and n_estimators pinned
+    to the discovered best. Falls back to the original model if the booster did
+    not report one.
+    """
+    from sklearn.base import clone
+
+    best = getattr(model, "best_iteration", None)
+    if best is None:
+        best = getattr(model, "best_iteration_", None)
+    if best is None or best <= 0:
+        print(f"  [{label}] no best_iteration reported — shipping the early-stopped fit")
+        return model
+
+    params = model.get_params()
+    params["n_estimators"] = int(best) + 1
+    # Set it to None, do NOT pop it: clone() carries the original's value, so
+    # removing the key from this dict leaves early stopping switched on and the
+    # refit dies with "Must have at least 1 validation dataset for early
+    # stopping" — there is no eval_set here, by design.
+    if "early_stopping_rounds" in params:
+        params["early_stopping_rounds"] = None
+    refit = clone(model).set_params(**params)
+    refit.fit(X_full, y_full, sample_weight=sample_weight)
+    print(f"  [{label}] refit on all {len(X_full):,} rows at {int(best) + 1} trees")
+    return refit
 
 
 def _result_scoring_report(probs: np.ndarray, y_true: pd.Series, test: pd.DataFrame,
@@ -482,6 +536,8 @@ def train_result_model(train: pd.DataFrame, test: pd.DataFrame) -> SoftVoteEnsem
     inner, val = _val_split(train)
     X_train, y_train = inner[RESULT_FEATURE_COLS], inner["target_result"]
     X_val,   y_val   = val[RESULT_FEATURE_COLS],   val["target_result"]
+    # The full window, for the refit that puts the early-stopping fold back.
+    X_full,  y_full  = train[RESULT_FEATURE_COLS], train["target_result"]
     X_test,  y_test  = test[RESULT_FEATURE_COLS],  test["target_result"]
     # (Market-feature NaN dropout removed 2026-07: MARKET_COLS ∩ RESULT_FEATURE_COLS
     #  is empty since the 2026-06-17 market-independent refactor — it was a no-op.)
@@ -491,6 +547,10 @@ def train_result_model(train: pd.DataFrame, test: pd.DataFrame) -> SoftVoteEnsem
     decay_w  = _time_decay_weights(inner["Date"])
     sample_weights = class_w * decay_w
     sample_weights = sample_weights / sample_weights.mean()
+
+    # …and the same weighting over the full window, for the refit.
+    w_full = (compute_sample_weight("balanced", y_full) * _time_decay_weights(train["Date"]))
+    w_full = w_full / w_full.mean()
 
     # ── XGBoost ───────────────────────────────────────────────────────────────
     print("  [XGBoost] training …")
@@ -505,6 +565,7 @@ def train_result_model(train: pd.DataFrame, test: pd.DataFrame) -> SoftVoteEnsem
                   eval_set=[(X_val, y_val)], verbose=False)
     xgb_acc = accuracy_score(y_val, xgb_model.predict(X_val))
     print(f"  [XGBoost] val acc={xgb_acc:.3f}")
+    xgb_model = _refit_on_everything(xgb_model, X_full, y_full, w_full, "XGBoost")
 
     # ── LightGBM ──────────────────────────────────────────────────────────────
     # Leaf-wise tree growth (different inductive bias from XGB's depth-wise).
@@ -523,6 +584,7 @@ def train_result_model(train: pd.DataFrame, test: pd.DataFrame) -> SoftVoteEnsem
     )
     lgbm_acc = accuracy_score(y_val, lgbm_model.predict(X_val))
     print(f"  [LightGBM] val acc={lgbm_acc:.3f}")
+    lgbm_model = _refit_on_everything(lgbm_model, X_full, y_full, w_full, "LightGBM")
 
             # ── Ensemble membership ───────────────────────────────────────────────────
     # Two members, not four. Measured 2026-09-04 on the held-out season with the
@@ -578,6 +640,8 @@ def train_goals_model(train: pd.DataFrame, test: pd.DataFrame) -> SoftVoteEnsemb
     inner, val = _val_split(train)
     X_train, y_train = inner[GOALS_FEATURE_COLS], inner["target_goals"]
     X_val,   y_val   = val[GOALS_FEATURE_COLS],   val["target_goals"]
+    # The full window, for the refit that puts the early-stopping fold back.
+    X_full,  y_full  = train[GOALS_FEATURE_COLS], train["target_goals"]
     X_test,  y_test  = test[GOALS_FEATURE_COLS],  test["target_goals"]
     # (Market-feature NaN dropout removed 2026-07 — dead code, see result model.)
 
@@ -585,6 +649,10 @@ def train_goals_model(train: pd.DataFrame, test: pd.DataFrame) -> SoftVoteEnsemb
     decay_w  = _time_decay_weights(inner["Date"])
     sample_weights = class_w * decay_w
     sample_weights = sample_weights / sample_weights.mean()
+
+    # …and the same weighting over the full window, for the refit.
+    w_full = (compute_sample_weight("balanced", y_full) * _time_decay_weights(train["Date"]))
+    w_full = w_full / w_full.mean()
 
     # ── XGBoost ───────────────────────────────────────────────────────────────
     print("  [XGBoost] training …")
@@ -599,6 +667,7 @@ def train_goals_model(train: pd.DataFrame, test: pd.DataFrame) -> SoftVoteEnsemb
                   eval_set=[(X_val, y_val)], verbose=False)
     xgb_acc = accuracy_score(y_val, xgb_model.predict(X_val))
     print(f"  [XGBoost] val acc={xgb_acc:.3f}")
+    xgb_model = _refit_on_everything(xgb_model, X_full, y_full, w_full, "XGBoost")
 
     # ── LightGBM ──────────────────────────────────────────────────────────────
     print("  [LightGBM] training …")
@@ -615,6 +684,7 @@ def train_goals_model(train: pd.DataFrame, test: pd.DataFrame) -> SoftVoteEnsemb
     )
     lgbm_acc = accuracy_score(y_val, lgbm_model.predict(X_val))
     print(f"  [LightGBM] val acc={lgbm_acc:.3f}")
+    lgbm_model = _refit_on_everything(lgbm_model, X_full, y_full, w_full, "LightGBM")
 
     # ── Soft-vote ensemble ────────────────────────────────────────────────────
     # Two members; see the note in train_result_model for the measurement.
