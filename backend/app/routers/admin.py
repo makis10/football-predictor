@@ -8,6 +8,7 @@ Set ADMIN_API_KEY in .env.  Pass as X-Admin-Key request header.
 
 import fcntl
 import logging
+import hmac
 import os
 import subprocess
 import sys
@@ -57,7 +58,12 @@ def _require_admin_key(x_admin_key: str = Header(default="")) -> None:
             status_code=503,
             detail="ADMIN_API_KEY not configured on the server. Set it in .env.",
         )
-    if x_admin_key != _ADMIN_KEY:
+    # Constant-time, like internal_auth.py already does with the proxy secret.
+    # `!=` on str short-circuits at the first differing byte, so the time it
+    # takes to fail leaks how much of the key the caller got right. The endpoints
+    # behind this guard start a retrain and clear the stats cache, so the prize
+    # for guessing is real; and the fix is one import.
+    if not hmac.compare_digest(x_admin_key, _ADMIN_KEY):
         raise HTTPException(status_code=403, detail="Invalid admin key.")
 
 

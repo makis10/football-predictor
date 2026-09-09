@@ -885,3 +885,51 @@ def test_both_surfaces_cut_gg_at_the_same_place():
         f"remain as the fallback for a leg with no call")
     assert "prediction === \"GG\"" in body, (
         "the bar does not read the badge's own call")
+
+
+def test_no_secret_is_compared_with_a_plain_equality():
+    """`!=` on str short-circuits at the first differing byte, so the time a
+    failure takes leaks how much of the secret the caller got right.
+
+    internal_auth.py used hmac.compare_digest from the start; admin.py compared
+    the retrain/cache-clear key with `!=` until 2026-09-09. Same codebase, same
+    author, one place forgotten — which is exactly the kind of thing a test
+    should hold rather than a habit.
+    """
+    import ast
+    from pathlib import Path
+
+    root = Path(__file__).resolve().parents[1] / "app"
+    # Only bare IDENTIFIERS whose name says secret. A dict lookup like
+    # `market["key"] == "h2h"` is a market key, not a credential, and matching on
+    # the rendered text flagged six of those on the first attempt.
+    secretish = ("KEY", "SECRET", "TOKEN", "PASSWORD")
+
+    def is_secret_name(node) -> bool:
+        """A module CONSTANT (_ADMIN_KEY) or a FastAPI header parameter
+        (x_admin_key). `p.key` on a ticket profile is neither, and matching any
+        attribute called "key" flagged it on the second attempt."""
+        if isinstance(node, ast.Name):
+            raw = node.id
+        else:
+            return False
+        looks_constant = raw.lstrip("_").isupper()
+        looks_header = raw.startswith("x_")
+        if not (looks_constant or looks_header):
+            return False
+        return any(w in raw.upper() for w in secretish)
+
+    offenders = []
+    for py in sorted(root.rglob("*.py")):
+        tree = ast.parse(py.read_text())
+        for node in ast.walk(tree):
+            if not isinstance(node, ast.Compare):
+                continue
+            if not any(isinstance(op, (ast.Eq, ast.NotEq)) for op in node.ops):
+                continue
+            if is_secret_name(node.left) or any(is_secret_name(c) for c in node.comparators):
+                offenders.append(
+                    f"{py.relative_to(root.parent)}:{node.lineno}  {ast.unparse(node)[:70]}")
+    assert not offenders, (
+        "a secret is compared with == or != instead of hmac.compare_digest:\n  "
+        + "\n  ".join(offenders))
