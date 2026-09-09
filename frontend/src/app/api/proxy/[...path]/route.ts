@@ -33,20 +33,59 @@ const PASSTHROUGH_RESPONSE_HEADERS = ["content-type", "content-disposition"];
 // logged-in users — plus the few genuinely public flows below. Everything else
 // without a session gets a 401, so prediction data can't be scraped by calling
 // the API directly (matches the LockedMatchCard/LockedDetailPanel UI gate).
-const PUBLIC_PREFIXES: { method: string; prefix: string }[] = [
-  { method: "POST", prefix: "auth/" },          // register (sign-in is /api/auth)
-  { method: "POST", prefix: "chat" },           // public chatbot (rate-limited)
-  { method: "POST", prefix: "users/contact" },  // contact form
+// EXACT paths, not prefixes.
+//
+// This was `auth/`, and the only browser-facing route under it is the register
+// form (src/app/register/page.tsx). `auth/login` and `auth/oauth` are called
+// server-side by NextAuth against INTERNAL_API and never travel through here.
+//
+// The prefix made POST /auth/oauth reachable from any browser, unauthenticated
+// and unrate-limited — and it upserts by email, so it creates users at will and
+// overwrites an existing account's name, image, provider and provider_id.
+// Verified on 2026-09-10: one unauthenticated POST created user id 153. The
+// router's require_internal_secret does not stop it, because this proxy attaches
+// that secret to everything it forwards.
+//
+// A prefix is also what the traversal above rode in on: "auth/../admin/retrain"
+// starts with "auth/". Exact matching closes both, and any future public route
+// has to be named rather than inherited.
+const PUBLIC_PATHS: { method: string; path: string }[] = [
+  { method: "POST", path: "auth/register" },   // the register form
+  { method: "POST", path: "chat" },            // public chatbot (rate-limited)
+  { method: "POST", path: "users/contact" },   // contact form
 ];
 
 function isPublicPath(method: string, path: string): boolean {
-  return PUBLIC_PREFIXES.some((p) => p.method === method && path.startsWith(p.prefix));
+  return PUBLIC_PATHS.some((p) => p.method === method && path === p.path);
 }
 
 async function forward(
   request: NextRequest,
   params: { path: string[] },
 ): Promise<NextResponse> {
+  // Reject traversal BEFORE anything reads the path.
+  //
+  // Next decodes %2f inside a catch-all segment, so `auth/..%2fadmin%2fretrain`
+  // arrives as ["auth", "../admin/retrain"], joins back to
+  // "auth/../admin/retrain", and startsWith("auth/") — an allowlisted public
+  // prefix — is TRUE. The deny-by-default gate below is then skipped and the
+  // backend resolves the traversal itself.
+  //
+  // Verified on 2026-09-10: POST /api/proxy/admin/retrain returned 401 (gate
+  // held) while POST /api/proxy/auth/..%2fadmin%2fretrain returned 403 — the
+  // backend's own admin-key check, meaning the request had reached it. Every
+  // backend POST route was one missing guard away from being reachable without
+  // a session. GET was never exposed, because no GET prefix is public.
+  //
+  // A legitimate segment is one path component: no separators, and not a dot
+  // entry. Checked per segment rather than on the joined string, which is the
+  // form the encoding was hiding in.
+  for (const seg of params.path) {
+    if (seg === "." || seg === ".." || seg.includes("/") || seg.includes("\\")) {
+      return NextResponse.json({ error: "Bad request" }, { status: 400 });
+    }
+  }
+
   const path      = params.path.join("/");
   const search    = new URL(request.url).search;
   const targetUrl = `${BACKEND}/${path}${search}`;

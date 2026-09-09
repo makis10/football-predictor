@@ -133,8 +133,16 @@ def _record_login(user: User, db: Session) -> None:
 # ── Endpoints ─────────────────────────────────────────────────────────────────
 
 @router.post("/oauth", response_model=UserOut, status_code=status.HTTP_200_OK)
-def oauth_upsert(body: OAuthUpsertRequest, db: Session = Depends(get_db)):
-    """Create or update OAuth user. Called by NextAuth credentials callback."""
+def oauth_upsert(request: Request, body: OAuthUpsertRequest, db: Session = Depends(get_db)):
+    """Create or update OAuth user. Called by NextAuth's signIn callback.
+
+    Rate-limited like register and login, which it had never been. It upserts by
+    email, so an unlimited caller can both flood the users table and overwrite an
+    existing account's name, image, provider and provider_id. The proxy no longer
+    exposes it to browsers at all (PUBLIC_PATHS is exact now), and this is the
+    second lock.
+    """
+    _rate_limit(request, "oauth")
     user = db.query(User).filter(User.email == body.email).first()
     if user:
         # Update name/image from OAuth provider in case they changed

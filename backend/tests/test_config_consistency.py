@@ -1052,3 +1052,62 @@ def test_every_model_accepts_a_missing_optional_feature():
 
     probs = result_model.predict_proba(X[[c for c in RESULT_FEATURE_COLS if c in X]])[0]
     assert len(probs) == 3 and np.all(np.isfinite(probs))
+
+
+def test_the_proxy_allowlist_is_exact_paths_not_prefixes():
+    """A prefix allowlist was two separate holes.
+
+    `{ method: "POST", prefix: "auth/" }` matched `auth/oauth`, which upserts a
+    user BY EMAIL — so any browser could create accounts without a session or a
+    rate limit and overwrite an existing account's name, image, provider and
+    provider_id. Verified on 2026-09-10: one unauthenticated POST created user
+    id 153. The router's require_internal_secret does not stop it, because the
+    proxy attaches that secret to everything it forwards.
+
+    The same prefix is what the path traversal rode in on: "auth/../admin/retrain"
+    starts with "auth/", so the deny-by-default gate was skipped and the request
+    reached the backend — POST /api/proxy/admin/retrain answered 401 while
+    POST /api/proxy/auth/..%2fadmin%2fretrain answered 403, the backend's own
+    admin-key check.
+
+    Only `auth/register` is browser-facing; login and oauth are called
+    server-side by NextAuth against INTERNAL_API.
+    """
+    from pathlib import Path
+
+    route = (Path(__file__).resolve().parents[2] / "frontend" / "src" / "app"
+             / "api" / "proxy" / "[...path]" / "route.ts").read_text(encoding="utf-8")
+
+    assert "PUBLIC_PATHS" in route and "PUBLIC_PREFIXES" not in route, (
+        "the proxy allowlist is a prefix list again")
+    assert "path === p.path" in route, (
+        "isPublicPath no longer compares the whole path; a prefix match reopens "
+        "both auth/oauth and the traversal")
+    assert '"auth/oauth"' not in route, (
+        "auth/oauth is on the browser-facing allowlist; it upserts by email and "
+        "NextAuth calls it server-side, so it never needs to be")
+
+
+def test_the_proxy_refuses_a_traversal_segment():
+    """Next decodes %2f inside a catch-all segment, so `auth/..%2fadmin` arrives
+    as ["auth", "../admin"] and joins back into a path that escapes. The check
+    has to look at the SEGMENTS, which is the form the encoding hid in."""
+    from pathlib import Path
+
+    route = (Path(__file__).resolve().parents[2] / "frontend" / "src" / "app"
+             / "api" / "proxy" / "[...path]" / "route.ts").read_text(encoding="utf-8")
+    guard = route[:route.index("const path      = params.path.join")]
+    assert "for (const seg of params.path)" in guard, (
+        "nothing validates the path segments before they are joined")
+    assert '"' + ".." + '"' in guard, "the traversal guard no longer rejects '..'"
+
+
+def test_oauth_upsert_is_rate_limited_like_its_siblings():
+    """register and login both call _rate_limit; oauth never did, and it is the
+    one that upserts by email."""
+    import inspect
+
+    from backend.app.routers import auth
+
+    src = inspect.getsource(auth.oauth_upsert)
+    assert "_rate_limit(" in src, "oauth_upsert is not rate limited"
