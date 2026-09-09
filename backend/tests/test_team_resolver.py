@@ -116,3 +116,100 @@ def test_same_club_only_for_a_club_against_its_own_youth_side():
     assert not same_club("Lincoln United", "Lincoln")
     assert not same_club("Cambridge City", "Cambridge United")
     assert not same_club("Plymouth Parkway", "Plymouth")
+
+
+# ── A whole word of the feed's own name ───────────────────────────────────────
+
+def test_a_legal_form_prefix_does_not_hand_the_club_to_a_near_spelling():
+    """football-data.org calls AEK Athens "PAE AEK" — ΠΑΕ ΑΕΚ, the Greek legal
+    form, the way "PLC" trails an English company.
+
+    The resolver gave it to PAEEK, a Cypriot club: slug "paeek" against
+    "paeaek", one character apart, spelling-drift ratio 0.909. The correct
+    answer, "AEK", scored ZERO — rule (2)'s >=5-char guard exists to stop "aek"
+    hijacking a longer name, and here it excluded the only right candidate.
+
+    Four Champions League fixtures entered the database as PAEEK v LASK,
+    Shakhtar v PAEEK, Man City v PAEEK and PAEEK v Real Madrid, each a duplicate
+    of the real AEK fixture, each priced off a Cypriot second-tier Elo of 1339.
+    One was published on the site beside the genuine AEK card for the same match,
+    with LASK apparently playing twice on the same afternoon.
+    """
+    from scripts.team_resolver import build_resolver, known_team_names
+
+    resolve = build_resolver(known_team_names())
+    assert resolve("PAE AEK") == "AEK"
+
+
+def test_a_whole_word_loses_to_a_longer_club_with_only_noise_left_over():
+    """The rule has to sit BETWEEN the other two.
+
+    Scored above affix-containment it tied "Olympiakos" against "Olympiakos
+    Volos" on the feed's own "Olympiakos Volos FC", and the resolver refused
+    both — turning one bug into another. A longer club matching with only
+    corporate noise left over is the better answer and must keep winning.
+    """
+    from scripts.team_resolver import build_resolver, known_team_names
+
+    resolve = build_resolver(known_team_names())
+    assert resolve("Olympiakos Volos FC") == "Olympiakos Volos"
+
+
+def test_the_word_rule_does_not_reach_a_reserve_side():
+    """"Real Sociedad" used to resolve to "Real Sociedad II" — the B team, 88
+    rows of history against the senior side's 608. Youth and reserve sides are
+    refused before any scoring happens, and the word rule must not reopen that."""
+    from scripts.team_resolver import build_resolver, known_team_names
+
+    resolve = build_resolver(known_team_names())
+    got = resolve("Real Sociedad")
+    assert got is not None and not got.endswith(" II"), got
+
+
+def test_a_two_letter_word_is_not_a_club_identity():
+    """Three characters is the floor. "AEK", "PSV", "OFI" are whole club
+    identities; two letters is a country code, a shirt sponsor, or noise."""
+    import re
+
+    from backend.app.ml.odds_analysis_service import _slug
+    from scripts.team_resolver import build_resolver, known_team_names
+
+    known = known_team_names()
+    short = sorted(t for t in known if len(_slug(t)) == 2)
+    if not short:
+        pytest.skip("no two-letter club names in the training data")
+    resolve = build_resolver(known)
+    for club in short[:5]:
+        # A feed name that merely CONTAINS the two letters as a word must not
+        # be handed this club.
+        assert resolve(f"{club} Rovers Athletic") != club, club
+
+
+def test_a_shared_feed_id_groups_a_settled_row_with_an_unsettled_one():
+    """dedupe_fixtures could not see the pair it was built for.
+
+    The api-id branch sat below the pairing branch and behind `result is None`,
+    so it never ran: an unsettled row took the pairing key and a settled one
+    fell through to the date key, and a pair made of one of each never met.
+    Iraklis–Asteras of 2026-09-07 sat in the database twice under API-Football
+    id 1593305 — once unsettled as "Iraklis 1908 v Asteras Tripolis" and once
+    finished 0-2 with the venue reversed, which no unordered key reached either.
+    """
+    import ast
+    import pathlib
+
+    src = (pathlib.Path(__file__).resolve().parents[2]
+           / "scripts" / "dedupe_fixtures.py").read_text()
+    body = src[src.index("for m in rows:"):src.index("dupes = {")]
+    api_at = body.index("apiid")
+    pairing_at = body.index('"pairing"')
+    assert api_at < pairing_at, (
+        "the api-id grouping is below the pairing grouping again, so a row that "
+        "carries a feed id never reaches it")
+    # …and it must not be gated on the row being unsettled. Look only at the
+    # `if` that guards the api-id append, not at the whole preamble.
+    guard = body[:api_at].rsplit("if ", 1)[-1]
+    assert "result" not in guard, (
+        f"the api-id grouping is gated on the result again ({guard.strip()[:60]!r}); "
+        f"a settled row and its unsettled twin will never land in the same group")
+    ast.parse(src)

@@ -15,6 +15,7 @@ Seams covered (each has silently failed at least once):
   6. squad_strength.json         — upcoming national team missing
   7. player_club_form            — share of players stuck without a club rate
   8. predictions bookmaker odds  — odds-name seam (aliases) match rate
+  9. one club, two fixtures at once — a feed name resolved to the wrong club
 
 Usage:
   docker compose exec backend python scripts/check_data_completeness.py [--days 7]
@@ -359,6 +360,46 @@ def main() -> None:
                 _warn(f"The Odds API down to {left_n:,} credits")
     except Exception:
         pass
+
+    # 9. A club cannot be in two places at once.
+    #
+    # The check that needs no judgement, added after one that did. On
+    # 2026-09-09 the Recent Results page showed LASK playing twice on the same
+    # afternoon — once against AEK Athens and once against "PAEEK", a Cypriot
+    # club that had taken four Champions League fixtures off AEK because
+    # football-data.org calls AEK "PAE AEK" and the resolver preferred a
+    # one-character spelling drift to the right answer.
+    #
+    # An alert for this DID fire the week before — "[alert] PAEEK: 3419", a club
+    # with no roster in any tracked league — and was read as a false positive,
+    # because PAEEK is a real club and a real club appearing only through UEFA
+    # qualifying is normal. That alert asks a question a human has to judge.
+    # This one does not: two fixtures, same club, same kick-off, is impossible,
+    # and it catches the whole class regardless of WHICH name is wrong.
+    try:
+        rows = db.execute(text("""
+            SELECT a.id, b.id, a.match_date, a.kickoff_time, a.league, b.league,
+                   a.home_team, a.away_team, b.home_team, b.away_team
+            FROM matches a JOIN matches b
+              ON a.id < b.id
+             AND a.match_date = b.match_date
+             AND a.kickoff_time IS NOT DISTINCT FROM b.kickoff_time
+             AND (a.home_team IN (b.home_team, b.away_team)
+               OR a.away_team IN (b.home_team, b.away_team))
+            WHERE a.match_date >= CURRENT_DATE - 30
+            ORDER BY a.match_date
+        """)).fetchall()
+        for (ida, idb, d, ko, la, lb, ah, aa, bh, ba) in rows:
+            _alert(f"same club twice at {d} {ko or '??'}: "
+                   f"[{ida}] {la} {ah} v {aa}   and   [{idb}] {lb} {bh} v {ba} — "
+                   f"one of these rows is wrong; the causes seen so far are a "
+                   f"feed name resolved to the wrong club, and a fixture whose "
+                   f"true date is outside the refresh window so its placeholder "
+                   f"date is never corrected")
+        if not rows:
+            print("[ok] no club appears in two fixtures at the same kick-off")
+    except Exception as exc:
+        _warn(f"double-booking check failed: {exc}")
 
     # Wording matters here: this verdict is about DATA COMPLETENESS, not about
     # whether the pipeline ran. It stopped gating the heartbeat on 2026-07-31,

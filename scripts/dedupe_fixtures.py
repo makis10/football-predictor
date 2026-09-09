@@ -88,6 +88,21 @@ def main() -> None:
             # "Kifisia vs AEK" sat on both the 29th and the 30th, and both rows
             # carried API-Football id 1593299 — the day-keyed grouping below
             # could never see it, and the daily alert had to catch it instead.
+            # A shared feed id is the same match, settled or not.
+            #
+            # This branch used to sit BELOW the pairing one and behind
+            # `m.result is None`, so it could never run: an unsettled row took
+            # the pairing key and a settled row fell through to the date key,
+            # and a pair made of one of each never met. Iraklis–Asteras of
+            # 2026-09-07 sat in the database twice under API-Football id
+            # 1593305, once as "Iraklis 1908 v Asteras Tripolis" with no result
+            # and once as "Asteras Tripolis v Iraklis 1908" finished 0-2 — the
+            # venue reversed between the two ingests, so no unordered key
+            # reached it either, and the daily double-booking alert had to catch
+            # it instead.
+            if m.api_fixture_id:
+                groups[(m.league, "apiid", m.api_fixture_id)].append(m)
+                continue
             if m.result is None and m.league not in _REPEATABLE_PAIRINGS:
                 # EVERY unsettled row gets a pairing key, including ones that
                 # carry a feed id. The stale row and the real fixture must land
@@ -96,9 +111,6 @@ def main() -> None:
                 # first attempt at this, and it found nothing at all.
                 groups[(m.league, "pairing",
                         _slug(canon(m.home_team)) + "|" + _slug(canon(m.away_team)))].append(m)
-                continue
-            if m.api_fixture_id and m.result is None:
-                groups[(m.league, "apiid", m.api_fixture_id)].append(m)
                 continue
             sides = frozenset((_slug(canon(m.home_team)), _slug(canon(m.away_team))))
             groups[(m.league, m.match_date, sides)].append(m)

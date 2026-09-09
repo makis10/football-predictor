@@ -458,6 +458,18 @@ _AFFIXES = {
     # "ff" = Fotbollsförening (Hammarby FF), "ifk" = Idrottsföreningen
     # Kamraterna (IFK Göteborg). Both are legal-form noise, never the club.
     "ff", "ifk",
+    # Greek: ΠΑΕ = Ποδοσφαιρική Ανώνυμη Εταιρεία, the football plc. It leads
+    # rather than trails — football-data.org calls AEK Athens "PAE AEK" — but it
+    # is the same kind of noise as "FC", and leaving it out is what let a
+    # Cypriot club take four Champions League fixtures off AEK on 2026-08-31.
+    "pae",
+    # Spanish royal patronage. "Real Sociedad" and "Sociedad" are one club, as
+    # are Real Betis/Betis and Real Valladolid/Valladolid — the CSVs keep the
+    # bare name for those and the full one for Real Madrid, which matches
+    # exactly and never reaches the scoring. Safe only because this table is
+    # consulted for the LEFTOVER: a club actually named "Real" (38 rows) still
+    # loses "Real Sociedad", because its own leftover would be "sociedad".
+    "real",
 }
 
 # LONGEST FIRST, and a tuple rather than the set above — the strip below takes
@@ -528,9 +540,25 @@ def build_resolver(known_teams: set[str], team_map: dict[str, str] | None = None
         api_slug = _slug(api_name)
         if api_slug in slug_to_name:
             return slug_to_name[api_slug]
+        # The feed's name split into words, slugged individually — see rule (2b).
+        api_words = {w for w in (_slug(part) for part in re.split(r"[^0-9A-Za-z]+", api_name)) if w}
+
+        api_is_youth = is_youth_side(api_name)
 
         scored: list[tuple[float, str]] = []
         for team in known_teams:
+            # A senior name never resolves to a B or U-side.
+            #
+            # Rule (1) refuses a youth name on the way IN; nothing refused one on
+            # the way OUT, and spelling drift is exactly where that bites:
+            # "realsociedad" against "realsociedadii" is 0.923, over the 0.87
+            # bar, while the senior club's own "sociedad" scores 0.80 and loses.
+            # Eight 2026/27 Europa League fixtures went into the database as
+            # "Real Sociedad II" — the B team, 88 rows of history against the
+            # first team's 608 — including ties against Juventus, Lyon and
+            # Crystal Palace.
+            if is_youth_side(team) and not api_is_youth:
+                continue
             team_slug = _slug(team)
             best = 0.0
             # (2) Containment, but ONLY when the remainder is corporate noise.
@@ -540,6 +568,44 @@ def build_resolver(known_teams: set[str], team_map: dict[str, str] | None = None
             if len(team_slug) >= 5 and team_slug in api_slug:
                 if _leftover_is_affixes_only(api_slug.replace(team_slug, "", 1)):
                     best = max(best, 50.0 + len(team_slug))
+            # (2b) A whole WORD of the feed's own name.
+            #
+            #     football-data.org calls AEK Athens "PAE AEK" — ΠΑΕ ΑΕΚ, the
+            #     Greek legal form, the way "PLC" trails an English company. Its
+            #     second word IS the club.
+            #
+            #     Rule (2) cannot see that: its >=5-char guard exists to stop
+            #     "aek" hijacking a longer name, and here "aek" is the RIGHT
+            #     answer, so the guard excludes the only correct candidate.
+            #     Rule (4) then handed the fixture to PAEEK — a Cypriot club,
+            #     slug "paeek" against "paeaek", one character apart, ratio
+            #     0.909. Four Champions League fixtures entered the DB as
+            #     "PAEEK v LASK", "Man City v PAEEK", "PAEEK v Real Madrid",
+            #     each a duplicate of the real AEK fixture, each predicted off a
+            #     Cypriot second-tier Elo of 1339, and one of them was shown on
+            #     the site beside the genuine AEK card for the same match.
+            #
+            #     This is rule (2) with the length guard traded for a much
+            #     stronger requirement, and it keeps rule (2)'s leftover check
+            #     unchanged — that check is the whole safety of both. Without it
+            #     the first version of this rule broke the two cases this file
+            #     exists to protect: "Lincoln United" became Lincoln (a different
+            #     club in the same town) and "Inter Club d'Escaldes" became Inter.
+            #     With it, the leftover is "united" and "clubdescaldes", neither
+            #     of which is corporate noise, and both are refused again.
+            #
+            #     Scored in a band of its own: above rule (4)'s ceiling of
+            #     exactly 50, below rule (2)'s floor of 55. Put above rule (2) it
+            #     tied "Olympiakos" against "Olympiakos Volos" on the feed's
+            #     "Olympiakos Volos FC" and the resolver refused both — a longer
+            #     club with only noise left over is still the better answer.
+            #
+            #     Three characters is the floor: "PSV", "AEK", "OFI" are whole
+            #     club identities, and shorter is a country code.
+            if len(team_slug) >= 3 and team_slug in api_words:
+                if _leftover_is_affixes_only(
+                        "".join(w for w in api_words if w != team_slug)):
+                    best = max(best, 50.5 + len(team_slug) / 100.0)
             # (3) Curated aliases ("olympiquelyonnais" → Lyon).
             #
             #     Bare containment, deliberately — NOT rule (2)'s leftover

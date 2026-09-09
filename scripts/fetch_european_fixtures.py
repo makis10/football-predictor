@@ -109,17 +109,29 @@ def build_strict_resolver(known_teams: set[str]):
 def fetch_api_football_fixtures(
     league_code: str, league_id: int, window_from: date, window_to: date
 ) -> list[dict]:
-    """Every fixture for one competition in the window (qualifiers included).
+    """Every fixture for one competition in the SEASON (qualifiers included).
 
-    /fixtures is not paginated — one request per (league, season). A window that
-    straddles a season boundary (e.g. June→July) needs both seasons.
+    /fixtures is not paginated — one request per (league, season), whether or not
+    a date range is attached. A window that straddles a season boundary (e.g.
+    June→July) needs both seasons.
+
+    The window bounds which season(s) to ask for and nothing else. Sending it as
+    `from`/`to` cost the same one request and hid the fixtures that most needed
+    seeing: a row we ALREADY HOLD whose stored date is inside the window while
+    its true date is outside can never be reached by a window query, so its date
+    is never corrected.
+
+    Measured 2026-09-09: 36 Europa League fixtures — the whole of matchdays 7
+    and 8 — sat in the database dated 2026-09-16 and labelled "Group Stage",
+    because that is what the feed served on 2026-08-28 before those rounds were
+    scheduled. Their real dates are 2027-01-21 and 2027-01-28, four months past
+    the 120-day window, so every daily refresh since had looked straight past
+    them. The site showed Bournemouth, Milan, Olympiakos and thirty-three others
+    each playing twice on the same September evening.
     """
     raw: list[dict] = []
     for season in sorted({_api_season(window_from), _api_season(window_to)}):
-        params = {
-            "league": league_id, "season": season,
-            "from": window_from.isoformat(), "to": window_to.isoformat(),
-        }
+        params = {"league": league_id, "season": season}
         try:
             resp = get_with_retry(f"{API_BASE}/fixtures", headers=HEADERS,
                                   params=params, timeout=20)
