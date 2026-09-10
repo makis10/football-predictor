@@ -47,6 +47,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import requests  # noqa: E402
 
 from backend.app.redaction import redact  # noqa: E402
+from scripts._http_retry import raise_for_api_football_errors  # noqa: E402
 
 BASE = "https://v3.football.api-sports.io"
 
@@ -67,7 +68,13 @@ def _get(path: str, params: dict) -> dict:
     r = requests.get(f"{BASE}{path}", headers={"x-apisports-key": key},
                      params=params, timeout=25)
     r.raise_for_status()
-    return r.json()
+    body = r.json()
+    # An IP block or the daily cap comes back as HTTP 200 with an empty
+    # `response`, which the loop below would count as "no market" for every
+    # fixture and report as a clean run. Both end the process with their own
+    # exit code instead (2 / 4), which run_daily.sh reads.
+    raise_for_api_football_errors(body)
+    return body
 
 
 def _pick(values: list[dict], want: str) -> float | None:

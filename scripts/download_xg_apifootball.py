@@ -37,6 +37,7 @@ import requests
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))  # project root
 
 from backend.app.ml.odds_analysis_service import _teams_match as fuzzy_match
+from scripts._http_retry import raise_for_api_football_errors
 
 # ── Config ────────────────────────────────────────────────────────────────────
 
@@ -68,24 +69,22 @@ MAX_RETRIES = 4      # on 429, retry with exponential back-off (0.5 → 1 → 2 
 
 # ── Argument parsing ──────────────────────────────────────────────────────────
 
-parser = argparse.ArgumentParser(description="Download xG from API-Football")
-parser.add_argument(
-    "--leagues", nargs="+", choices=list(LEAGUES.keys()), default=None,
-    help="Leagues to download (default: all four)",
-)
-parser.add_argument(
-    "--seasons", nargs="+", type=int, default=None,
-    help="Season start years to download, e.g. --seasons 2023 2024 (default: 2021-2024)",
-)
-parser.add_argument(
-    "--force", action="store_true",
-    help="Overwrite existing CSV files (default: skip already-downloaded files)",
-)
-args = parser.parse_args()
+def _parse_args(argv: list[str] | None = None) -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Download xG from API-Football")
+    parser.add_argument(
+        "--leagues", nargs="+", choices=list(LEAGUES.keys()), default=None,
+        help="Leagues to download (default: all four)",
+    )
+    parser.add_argument(
+        "--seasons", nargs="+", type=int, default=None,
+        help="Season start years to download, e.g. --seasons 2023 2024 (default: 2021-2024)",
+    )
+    parser.add_argument(
+        "--force", action="store_true",
+        help="Overwrite existing CSV files (default: skip already-downloaded files)",
+    )
+    return parser.parse_args(argv)
 
-leagues_to_fetch = {k: v for k, v in LEAGUES.items()
-                    if args.leagues is None or k in args.leagues}
-seasons_to_fetch = args.seasons or DEFAULT_SEASONS
 
 # ── API helpers ───────────────────────────────────────────────────────────────
 
@@ -109,6 +108,7 @@ def _get(endpoint: str, params: dict) -> tuple[dict, str]:
             continue
         resp.raise_for_status()
         data      = resp.json()
+        raise_for_api_football_errors(data)   # IP block → exit 2, daily cap → exit 4
         remaining = resp.headers.get("x-ratelimit-requests-remaining", "?")
         return data, remaining
     raise RuntimeError(f"Max retries exceeded for {endpoint} params={params}")
@@ -168,126 +168,140 @@ def fetch_xg(fixture_id: int) -> tuple[Optional[float], Optional[float]]:
 
 # ── Main loop ─────────────────────────────────────────────────────────────────
 
-if not API_KEY:
-    print("ERROR: API_SPORTS_KEY not set in environment.", flush=True)
-    sys.exit(1)
+def main() -> None:
+    # Everything below used to sit at module level, so `import
+    # scripts.download_xg_apifootball` parsed an empty argv and started the
+    # full 2021–2025 download for all seven leagues (2026-09-10: 751 requests
+    # before it was killed). Importing it is now free.
+    args = _parse_args()
+    leagues_to_fetch = {k: v for k, v in LEAGUES.items()
+                        if args.leagues is None or k in args.leagues}
+    seasons_to_fetch = args.seasons or DEFAULT_SEASONS
 
-XG_DIR.mkdir(parents=True, exist_ok=True)
+    if not API_KEY:
+        print("ERROR: API_SPORTS_KEY not set in environment.", flush=True)
+        sys.exit(1)
 
-total_written = 0
-total_skipped_files = 0
-total_no_xg = 0
+    XG_DIR.mkdir(parents=True, exist_ok=True)
 
-for league_code, league_id in leagues_to_fetch.items():
-    for season in seasons_to_fetch:
-        out_path = XG_DIR / f"{league_code}_{season}.csv"
+    total_written = 0
+    total_skipped_files = 0
+    total_no_xg = 0
 
-        if out_path.exists() and not args.force:
-            print(f"[{league_code} {season}] Already exists → skipping "
-                  f"(use --force to overwrite)")
-            total_skipped_files += 1
-            continue
+    for league_code, league_id in leagues_to_fetch.items():
+        for season in seasons_to_fetch:
+            out_path = XG_DIR / f"{league_code}_{season}.csv"
 
-        print(f"\n[{league_code} {season}] Fetching fixture list …")
-        try:
-            fixtures = fetch_fixtures(league_id, season)
-        except Exception as e:
-            print(f"  ERROR fetching fixtures: {e}")
-            continue
-
-        if not fixtures:
-            print(f"  No finished fixtures found — skipping.")
-            continue
-
-        # Load already-fetched fixture IDs from partial progress file
-        progress_path = XG_DIR / f".progress_{league_code}_{season}.csv"
-        done_ids: set[int] = set()
-        rows: list[dict] = []
-
-        if progress_path.exists() and not args.force:
-            with open(progress_path, newline="", encoding="utf-8") as pf:
-                for pr in csv.DictReader(pf):
-                    rows.append(pr)
-                    done_ids.add(int(pr.get("fixture_id", 0)))
-            print(f"  Resuming — {len(rows)} fixtures already fetched from progress file.")
-
-        no_xg_count = 0
-        remaining_fixtures = [fx for fx in fixtures if fx["id"] not in done_ids]
-
-        for i, fx in enumerate(remaining_fixtures, 1):
-            try:
-                home_xg, away_xg = fetch_xg(fx["id"])
-            except RuntimeError as e:
-                # Rate-limit retries exhausted — save progress and abort
-                print(f"  [error] {e}")
-                print(f"  Saving progress ({len(rows)} rows) — re-run to continue.")
-                break
-            except Exception as e:
-                print(f"  [warn] fixture {fx['id']} stats failed: {e}")
-                home_xg = away_xg = None
-
-            if home_xg is None or away_xg is None:
-                no_xg_count += 1
-                # Still mark as visited so we don't retry indefinitely
-                done_ids.add(fx["id"])
+            if out_path.exists() and not args.force:
+                print(f"[{league_code} {season}] Already exists → skipping "
+                      f"(use --force to overwrite)")
+                total_skipped_files += 1
                 continue
 
-            row = {
-                "fixture_id": fx["id"],
-                "date":       fx["date"],
-                "home_team":  fx["home"],
-                "away_team":  fx["away"],
-                "home_xg":    round(home_xg, 5),
-                "away_xg":    round(away_xg, 5),
-                "league":     league_code,
-                "season":     season,
-            }
-            rows.append(row)
-            done_ids.add(fx["id"])
+            print(f"\n[{league_code} {season}] Fetching fixture list …")
+            try:
+                fixtures = fetch_fixtures(league_id, season)
+            except Exception as e:
+                print(f"  ERROR fetching fixtures: {e}")
+                continue
 
-            # Flush progress after every row so we can resume if interrupted
-            write_header = not progress_path.exists()
-            with open(progress_path, "a", newline="", encoding="utf-8") as pf:
-                writer = csv.DictWriter(pf, fieldnames=list(row.keys()))
-                if write_header:
+            if not fixtures:
+                print(f"  No finished fixtures found — skipping.")
+                continue
+
+            # Load already-fetched fixture IDs from partial progress file
+            progress_path = XG_DIR / f".progress_{league_code}_{season}.csv"
+            done_ids: set[int] = set()
+            rows: list[dict] = []
+
+            if progress_path.exists() and not args.force:
+                with open(progress_path, newline="", encoding="utf-8") as pf:
+                    for pr in csv.DictReader(pf):
+                        rows.append(pr)
+                        done_ids.add(int(pr.get("fixture_id", 0)))
+                print(f"  Resuming — {len(rows)} fixtures already fetched from progress file.")
+
+            no_xg_count = 0
+            remaining_fixtures = [fx for fx in fixtures if fx["id"] not in done_ids]
+
+            for i, fx in enumerate(remaining_fixtures, 1):
+                try:
+                    home_xg, away_xg = fetch_xg(fx["id"])
+                except RuntimeError as e:
+                    # Rate-limit retries exhausted — save progress and abort
+                    print(f"  [error] {e}")
+                    print(f"  Saving progress ({len(rows)} rows) — re-run to continue.")
+                    break
+                except Exception as e:
+                    print(f"  [warn] fixture {fx['id']} stats failed: {e}")
+                    home_xg = away_xg = None
+
+                if home_xg is None or away_xg is None:
+                    no_xg_count += 1
+                    # Still mark as visited so we don't retry indefinitely
+                    done_ids.add(fx["id"])
+                    continue
+
+                row = {
+                    "fixture_id": fx["id"],
+                    "date":       fx["date"],
+                    "home_team":  fx["home"],
+                    "away_team":  fx["away"],
+                    "home_xg":    round(home_xg, 5),
+                    "away_xg":    round(away_xg, 5),
+                    "league":     league_code,
+                    "season":     season,
+                }
+                rows.append(row)
+                done_ids.add(fx["id"])
+
+                # Flush progress after every row so we can resume if interrupted
+                write_header = not progress_path.exists()
+                with open(progress_path, "a", newline="", encoding="utf-8") as pf:
+                    writer = csv.DictWriter(pf, fieldnames=list(row.keys()))
+                    if write_header:
+                        writer.writeheader()
+                    writer.writerow(row)
+
+                if i % 20 == 0:
+                    print(f"  {i}/{len(remaining_fixtures)} done  "
+                          f"({len(rows)} with xG, {no_xg_count} without) …",
+                          flush=True)
+
+            print(f"  Done: {len(rows)} matches with xG, "
+                  f"{no_xg_count} without xG data ({no_xg_count/max(len(fixtures),1):.0%})")
+
+            if rows:
+                with open(out_path, "w", newline="", encoding="utf-8") as f:
+                    writer = csv.DictWriter(
+                        f, fieldnames=["date","home_team","away_team",
+                                       "home_xg","away_xg","league","season"],
+                        extrasaction="ignore",   # ignore fixture_id and other internal fields
+                    )
                     writer.writeheader()
-                writer.writerow(row)
+                    writer.writerows(rows)
+                print(f"  Saved → {out_path}  ({len(rows)} rows)")
+                total_written += len(rows)
+            else:
+                print(f"  No rows with xG to save — file not created.")
 
-            if i % 20 == 0:
-                print(f"  {i}/{len(remaining_fixtures)} done  "
-                      f"({len(rows)} with xG, {no_xg_count} without) …",
-                      flush=True)
+            total_no_xg += no_xg_count
 
-        print(f"  Done: {len(rows)} matches with xG, "
-              f"{no_xg_count} without xG data ({no_xg_count/max(len(fixtures),1):.0%})")
+    print(f"\n{'='*50}")
+    print(f"Total rows written : {total_written}")
+    print(f"Matches without xG : {total_no_xg}  (not saved)")
+    print(f"Files skipped      : {total_skipped_files}  (already existed)")
 
-        if rows:
-            with open(out_path, "w", newline="", encoding="utf-8") as f:
-                writer = csv.DictWriter(
-                    f, fieldnames=["date","home_team","away_team",
-                                   "home_xg","away_xg","league","season"],
-                    extrasaction="ignore",   # ignore fixture_id and other internal fields
-                )
-                writer.writeheader()
-                writer.writerows(rows)
-            print(f"  Saved → {out_path}  ({len(rows)} rows)")
-            total_written += len(rows)
-        else:
-            print(f"  No rows with xG to save — file not created.")
+    if total_written > 0:
+        print(
+            "\nNext steps:\n"
+            "  1. Retrain models:  docker compose exec backend python -m backend.app.ml.train\n"
+            "  2. Recompute preds: docker compose exec backend python scripts/compute_predictions.py --force\n"
+            "\nNote: API-Football team names may differ from training CSV names.\n"
+            "If merge_xg() matches are lower than expected, check the unmatched\n"
+            "teams and add mappings to _XG_TEAM_MAP in backend/app/ml/features.py."
+        )
 
-        total_no_xg += no_xg_count
 
-print(f"\n{'='*50}")
-print(f"Total rows written : {total_written}")
-print(f"Matches without xG : {total_no_xg}  (not saved)")
-print(f"Files skipped      : {total_skipped_files}  (already existed)")
-
-if total_written > 0:
-    print(
-        "\nNext steps:\n"
-        "  1. Retrain models:  docker compose exec backend python -m backend.app.ml.train\n"
-        "  2. Recompute preds: docker compose exec backend python scripts/compute_predictions.py --force\n"
-        "\nNote: API-Football team names may differ from training CSV names.\n"
-        "If merge_xg() matches are lower than expected, check the unmatched\n"
-        "teams and add mappings to _XG_TEAM_MAP in backend/app/ml/features.py."
-    )
+if __name__ == "__main__":
+    main()

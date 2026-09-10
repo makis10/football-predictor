@@ -50,9 +50,22 @@ wait_for_docker "$LOG" || exit 1
 #
 # Narrow window on purpose: this is a freshness top-up, not the backfill path —
 # widen --days-back only when recovering from an outage (see run_daily).
+#
+# Behind the pre-flight since 2026-09-10. Before that it ran blind: from
+# 2026-08-01 on it logged "This IP is not allowed" 167 times across the CL/EL/ECL
+# lines, finished every one of those runs with exit 0 and told nobody. /status
+# costs nothing against the daily quota; a refusal pushes the urgent alert that
+# names the address to whitelist, and the refresh is skipped instead of run.
 docker compose exec -T backend \
-    python scripts/fetch_european_fixtures.py --days-ahead 21 --days-back 1 \
-    >> "$LOG" 2>&1 || echo "   [warn] European fixture refresh failed — daily run will retry" >> "$LOG"
+    python scripts/preflight_api_football.py >> "$LOG" 2>&1
+af_rc=$?
+if [ "$af_rc" -eq 0 ]; then
+    docker compose exec -T backend \
+        python scripts/fetch_european_fixtures.py --days-ahead 21 --days-back 1 \
+        >> "$LOG" 2>&1 || echo "   [warn] European fixture refresh failed — daily run will retry" >> "$LOG"
+else
+    echo "   [skip] UEFA pairing refresh — API-Football unavailable (pre-flight rc=$af_rc)" >> "$LOG"
+fi
 
 # ── 2. Odds snapshot ──────────────────────────────────────────────────────────
 docker compose exec -T backend \

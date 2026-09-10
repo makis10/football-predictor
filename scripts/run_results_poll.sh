@@ -67,9 +67,16 @@ docker compose exec -T backend \
 # progress this only spends API-Football quota re-fetching settled scores.
 # Set WC_ACTIVE=1 in .env when the next national-team tournament starts.
 if [ "${WC_ACTIVE:-0}" = "1" ]; then
-    docker compose exec -T backend \
-        python scripts/fetch_wc_results.py \
-        >> "$LOG" 2>&1 || true
+    # Behind the pre-flight like every scheduled API-Football call: an IP block
+    # is answered HTTP 200 with no data, so without it the overlay "succeeds"
+    # every two hours having written nothing.
+    if docker compose exec -T backend python scripts/preflight_api_football.py >> "$LOG" 2>&1; then
+        docker compose exec -T backend \
+            python scripts/fetch_wc_results.py \
+            >> "$LOG" 2>&1 || true
+    else
+        echo "   [skip] WC result overlay — API-Football unavailable" >> "$LOG"
+    fi
 fi
 
 # Grade the accumulator legs against the scores we just filled in. Settlement

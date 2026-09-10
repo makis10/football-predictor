@@ -59,6 +59,62 @@ class QuotaExhausted(SystemExit):
     def __str__(self) -> str:
         return self.msg
 
+
+# Exit code for "API-Football refused this machine's IP". Deliberately the value
+# preflight_api_football.py exits with, so run_daily.sh reads a block the same
+# way whether the pre-flight caught it at 06:00 or a step ran into it mid-run
+# (the line dropped and came back on a new address).
+API_FOOTBALL_BLOCKED_RC = 2
+
+
+class IpNotWhitelisted(SystemExit):
+    """API-Football's IP whitelist refused this machine, carried as exit 2.
+
+    The block is answered as HTTP 200 with `{"errors": {"Ip": ...}}`, so it
+    never raised: every caller logged it as one more per-league "API error" and
+    carried on. Between 2026-08-01 and 2026-09-10 the odds poll wrote that line
+    167 times and finished every one of those runs with exit 0. Nothing a caller
+    does next can succeed — every request from this address gets the same answer
+    — so the process ends here, before any caller can read the empty payload as
+    "this competition has no fixtures".
+    """
+
+    def __init__(self, msg: str) -> None:
+        self.msg = msg
+        print(msg, flush=True)
+        super().__init__(API_FOOTBALL_BLOCKED_RC)
+
+    def __str__(self) -> str:
+        return self.msg
+
+
+def _ip_block_message(detail: object) -> str:
+    return ("[fatal] API-Football refused this machine's IP: "
+            f"{detail} — whitelist the current public IP "
+            "(curl -s https://api.ipify.org) at https://dashboard.api-football.com. "
+            "scripts/run_af_recovery.sh then replays what the block skipped.")
+
+
+def raise_for_api_football_errors(body: object) -> None:
+    """Raise API-Football's two account-level refusals as their exit codes.
+
+    For callers that read the body themselves instead of going through
+    get_with_retry. Both refusals hold for the rest of the process: an IP block
+    exits 2 (IpNotWhitelisted), the daily cap exits 4 (QuotaExhausted). Any other
+    error — a bad parameter for one league — is left to the caller.
+    """
+    if not isinstance(body, dict):
+        return
+    errors = body.get("errors")
+    if not isinstance(errors, dict):
+        return
+    if "Ip" in errors:
+        raise IpNotWhitelisted(_ip_block_message(errors["Ip"]))
+    if "requests" in errors:
+        raise QuotaExhausted(
+            f"[fatal] API-Football daily quota exhausted: {errors['requests']}")
+
+
 # host → requests allowed per rolling minute.
 # API-Football Pro is documented at 300/min; 270 leaves headroom for the clock
 # skew between our timestamps and theirs, and for the fact that each script
@@ -99,23 +155,40 @@ def _throttle(url: str) -> None:
     q.append(time.monotonic())
 
 
+def _af_errors(resp: requests.Response) -> dict | None:
+    """API-Football's `errors` mapping on an HTTP-200 reply, else None.
+
+    A healthy response carries `errors` as an empty LIST; failures use a dict.
+    Other hosts' bodies are never read — only API-Football speaks this dialect.
+    """
+    if resp.status_code != 200:
+        return None
+    if urlparse(resp.url).netloc not in _RATE_LIMITED_HOSTS:
+        return None
+    try:
+        errors = resp.json().get("errors")
+    except Exception:
+        return None
+    return errors if isinstance(errors, dict) else None
+
+
 def _is_rate_limited(resp: requests.Response) -> bool:
     """True for API-Football's HTTP-200 rate-limit reply.
 
     Deliberately narrow: only an `errors` MAPPING carrying a `rateLimit` key
-    counts. A healthy response returns `errors` as an empty LIST, and the other
-    error kinds (`Ip`, `requests`, `token`) are not transient — retrying those
-    would spend the daily quota re-asking a question already answered.
+    counts. The other error kinds (`Ip`, `requests`, `token`) are not
+    transient — retrying those would spend the daily quota re-asking a question
+    already answered.
     """
-    if resp.status_code != 200:
-        return False
-    if urlparse(resp.url).netloc not in _RATE_LIMITED_HOSTS:
-        return False
-    try:
-        errors = resp.json().get("errors")
-    except Exception:
-        return False
-    return isinstance(errors, dict) and "rateLimit" in errors
+    errors = _af_errors(resp)
+    return errors is not None and "rateLimit" in errors
+
+
+def _raise_if_ip_blocked(resp: requests.Response) -> None:
+    """End the process on API-Football's HTTP-200 IP-whitelist refusal."""
+    errors = _af_errors(resp)
+    if errors is not None and "Ip" in errors:
+        raise IpNotWhitelisted(_ip_block_message(errors["Ip"]))
 
 
 def get_with_retry(
@@ -131,6 +204,11 @@ def get_with_retry(
     Raises (via the last exception) if every attempt fails. A rate-limited
     response is raised as an HTTPError like a 429 would be, so callers that
     already handle transport failures need no change.
+
+    An API-Football IP-whitelist refusal is not retried: it raises
+    IpNotWhitelisted (SystemExit, code 2), which the callers' `except Exception`
+    does not catch — the process ends instead of reading the empty payload as
+    data.
     """
     last_exc: Exception | None = None
     for attempt in range(1, attempts + 1):
@@ -151,6 +229,9 @@ def get_with_retry(
                     f"rate limited (HTTP 200 body) for {url}", response=resp
                 )
             else:
+                # Never retried: a refused address stays refused for every
+                # remaining attempt, and each attempt spends a request.
+                _raise_if_ip_blocked(resp)
                 return resp
 
         if attempt < attempts:

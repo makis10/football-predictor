@@ -539,6 +539,176 @@ def test_every_api_football_step_in_run_daily_is_behind_the_preflight_guard():
         "fail during an IP block:\n  " + "\n  ".join(unguarded))
 
 
+def _api_football_scripts() -> set[str]:
+    """Scripts that reach API-Football — the definition the test above uses."""
+    import pathlib
+
+    found = set()
+    for p in (pathlib.Path(__file__).resolve().parents[2] / "scripts").glob("*.py"):
+        src = p.read_text(encoding="utf-8", errors="ignore")
+        if "API_SPORTS_KEY" in src or "from scripts.fetch_player_stats import" in src:
+            found.add(p.name)
+    found.discard("preflight_api_football.py")
+    return found
+
+
+def _shell_logical_lines(path) -> list[tuple[int, str]]:
+    """(first line number, text): whole-line comments dropped, `\\` joined."""
+    out, buf, start = [], "", 0
+    for lineno, raw in enumerate(path.read_text().splitlines(), 1):
+        line = "" if raw.lstrip().startswith("#") else raw
+        if not buf:
+            start = lineno
+        if line.rstrip().endswith("\\"):
+            buf += line.rstrip()[:-1] + " "
+            continue
+        out.append((start, buf + line))
+        buf = ""
+    return out
+
+
+# `python scripts/x.py <args>` up to the first redirect, pipe or separator.
+_PY_STEP = r"python\s+scripts/([a-z_0-9]+\.py)((?:\s+(?![0-9]?>|\||;|&)\S+)*)"
+
+
+def _py_steps(line: str) -> list[tuple[str, tuple[str, ...]]]:
+    import re
+
+    return [(m.group(1), tuple(m.group(2).split())) for m in re.finditer(_PY_STEP, line)]
+
+
+def test_af_recovery_replays_every_step_a_blocked_daily_run_skips():
+    """run_af_recovery.sh must replay what the guard skips, with the same arguments.
+
+    It exists because a blocked 06:00 run used to leave the data a day old even
+    after the new address was whitelisted (2026-09-10: fixed around 10:00,
+    nothing re-ran). It only helps while it mirrors run_daily.sh — a step added
+    behind the guard there and not here is silently never recovered, and a
+    changed argument (a wider --days-back, a bigger request budget) recovers
+    something other than what the daily run would have fetched. The Monday-only
+    block is excluded: a replay never retrains.
+    """
+    import pathlib
+    import re
+
+    scripts_dir = pathlib.Path(__file__).resolve().parents[2] / "scripts"
+
+    depth, guards, weekly, guarded = 0, [], [], set()
+    for _, line in _shell_logical_lines(scripts_dir / "run_daily.sh"):
+        opens = len(re.findall(r"(?:^|[\s;])if\s", line))
+        closes = len(re.findall(r"(?:^|[\s;])fi(?:\s|;|$)", line))
+        depth += opens
+        if opens and ('API_FOOTBALL_OK" -eq 1' in line or 'AF_BLOCKED" -eq 0' in line):
+            guards.append(depth)
+        if opens and 'DAY_OF_WEEK" -eq 1' in line:
+            weekly.append(depth)
+        if guards and not weekly:
+            guarded.update(_py_steps(line))
+        for _ in range(closes):
+            if guards and guards[-1] == depth:
+                guards.pop()
+            if weekly and weekly[-1] == depth:
+                weekly.pop()
+            depth -= 1
+
+    replayed = {step for _, line in _shell_logical_lines(scripts_dir / "run_af_recovery.sh")
+                for step in _py_steps(line)}
+
+    assert len(guarded) >= 15, (
+        f"found only {len(guarded)} guarded steps in run_daily.sh — the parser "
+        "is broken, and a broken parser passes this test vacuously")
+    missing = sorted(f"{s} {' '.join(a)}".strip() for s, a in guarded - replayed)
+    assert not missing, (
+        "run_daily.sh skips these during an API-Football block but "
+        "run_af_recovery.sh never replays them (or replays them with other "
+        "arguments):\n  " + "\n  ".join(missing))
+
+
+def test_blocked_and_quota_exit_codes_mean_the_same_thing_everywhere(monkeypatch):
+    """Exit 2 = IP refused and 4 = daily cap, in the pre-flight, in every fetcher
+    (scripts/_http_retry.py) and in both shell scripts that read them; the
+    watchdog, the daily run and the recovery run share one marker file. Each
+    pair is written in two languages in different files, which is how things
+    drift."""
+    import pathlib
+
+    import scripts._http_retry as hr
+    import scripts.preflight_api_football as pf
+
+    class _Refused:
+        def json(self):
+            return {"errors": {"Ip": "This IP is not allowed to call the API"}}
+
+    monkeypatch.setenv("API_SPORTS_KEY", "test-key")
+    monkeypatch.setattr(pf.requests, "get", lambda *a, **k: _Refused())
+    monkeypatch.setattr(pf, "current_public_ip", lambda: "203.0.113.7")
+    monkeypatch.setattr(pf, "send_alert", lambda *a, **k: None)
+    assert pf.main() == hr.API_FOOTBALL_BLOCKED_RC
+
+    scripts_dir = pathlib.Path(__file__).resolve().parents[2] / "scripts"
+    for name in ("run_daily.sh", "run_af_recovery.sh"):
+        src = (scripts_dir / name).read_text()
+        assert f"AF_BLOCKED_RC={hr.API_FOOTBALL_BLOCKED_RC}\n" in src, name
+        assert f"AF_QUOTA_RC={hr.API_FOOTBALL_QUOTA_RC}\n" in src, name
+    for name in ("run_daily.sh", "run_af_recovery.sh", "run_watchdog.sh"):
+        assert ".af-recovery-pending" in (scripts_dir / name).read_text(), name
+
+
+def test_every_scheduled_api_football_call_comes_after_a_preflight():
+    """Outside run_daily.sh (guarded above), a scheduled job that reaches
+    API-Football must ask /status first. The odds poll did not: from 2026-08-01
+    to 2026-09-10 its UEFA refresh logged "This IP is not allowed" 167 times,
+    exited 0 every time, and alerted nobody."""
+    import pathlib
+
+    needs = _api_football_scripts()
+    scripts_dir = pathlib.Path(__file__).resolve().parents[2] / "scripts"
+    blind = []
+    for sh in sorted(scripts_dir.glob("*.sh")):
+        if sh.name == "run_daily.sh":
+            continue
+        preflight_seen = False
+        for lineno, line in _shell_logical_lines(sh):
+            if "scripts/preflight_api_football.py" in line:
+                preflight_seen = True
+            for script, _ in _py_steps(line):
+                if script in needs and not preflight_seen:
+                    blind.append(f"{sh.name}:{lineno} {script}")
+    assert not blind, (
+        "scheduled API-Football calls with no pre-flight before them — an IP "
+        "block makes them log and exit 0:\n  " + "\n  ".join(blind))
+
+
+def test_importing_an_api_football_script_does_no_work():
+    """Importing a fetcher must not fetch.
+
+    download_xg_apifootball.py kept its whole body at module level, so
+    `import scripts.download_xg_apifootball` — a harmless-looking import check
+    on 2026-09-10 — parsed an empty argv and started the full 2021–2025 xG
+    download: 751 API-Football requests before it was killed. A loop or an
+    argv parse at module level is the signature of a script that runs on import.
+    """
+    import ast
+    import pathlib
+
+    scripts_dir = pathlib.Path(__file__).resolve().parents[2] / "scripts"
+    offenders = []
+    for name in sorted(_api_football_scripts()):
+        tree = ast.parse((scripts_dir / name).read_text(encoding="utf-8", errors="ignore"))
+        for node in tree.body:
+            if isinstance(node, (ast.For, ast.AsyncFor, ast.While)):
+                offenders.append(f"{name}:{node.lineno} loop at module level")
+                continue
+            if isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef, ast.ClassDef, ast.If)):
+                continue
+            for sub in ast.walk(node):
+                if isinstance(sub, ast.Call) and getattr(sub.func, "attr", "") == "parse_args":
+                    offenders.append(f"{name}:{node.lineno} argv parsed at module level")
+    assert not offenders, (
+        "these scripts do work when imported — move it into main() behind "
+        "`if __name__ == \"__main__\"`:\n  " + "\n  ".join(offenders))
+
+
 def test_no_override_points_at_a_name_that_is_also_one_of_ours():
     """An override must translate OUR spelling into the FEED's, never the reverse.
 

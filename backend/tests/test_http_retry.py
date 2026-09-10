@@ -182,3 +182,72 @@ def test_every_attempt_is_throttled(monkeypatch):
     src = inspect.getsource(hr.get_with_retry)
     body = src[src.index("for attempt in"):]
     assert "_throttle(url)" in body, "the throttle must sit inside the retry loop"
+
+
+# ── IP-whitelist refusal ─────────────────────────────────────────────────────
+
+IP_BLOCKED = {"errors": {"Ip": "This IP is not allowed to call the API, check "
+                               "the list of allowed IPs in the dashboard."}}
+
+
+def test_ip_refusal_ends_the_process_with_the_preflight_exit_code(monkeypatch):
+    """2026-08-01 → 2026-09-10: the odds poll logged this reply 167 times as a
+    per-league "API error" and exited 0 every time. It is not a per-league
+    problem — every request from this address gets it — so it stops the run,
+    with the code run_daily.sh reads as "blocked"."""
+    calls = []
+    monkeypatch.setattr(hr.requests, "get",
+                        lambda *a, **k: calls.append(1) or FakeResp(payload=IP_BLOCKED))
+    with pytest.raises(hr.IpNotWhitelisted) as exc:
+        hr.get_with_retry(AF)
+    assert exc.value.code == hr.API_FOOTBALL_BLOCKED_RC == 2
+    assert len(calls) == 1, "a refused address must not be retried — each retry is a request"
+
+
+def test_ip_refusal_is_not_swallowed_by_a_callers_except_exception():
+    """Every fetcher wraps its call in `except Exception` and logs-and-continues.
+    That is exactly how the refusal disappeared, so it must not be one."""
+    assert issubclass(hr.IpNotWhitelisted, SystemExit)
+    assert not issubclass(hr.IpNotWhitelisted, Exception)
+
+
+def test_ip_field_from_another_host_is_ignored(monkeypatch):
+    monkeypatch.setattr(hr.requests, "get",
+                        lambda *a, **k: FakeResp(url=OTHER, payload=IP_BLOCKED))
+    assert hr.get_with_retry(OTHER).json() == IP_BLOCKED
+
+
+@pytest.mark.parametrize("body, exc, code", [
+    (IP_BLOCKED, "IpNotWhitelisted", 2),
+    ({"errors": {"requests": "You have reached the request limit for the day"}},
+     "QuotaExhausted", 4),
+])
+def test_raw_callers_get_the_same_exit_codes(body, exc, code):
+    """For the scripts that call requests.get themselves."""
+    with pytest.raises(getattr(hr, exc)) as e:
+        hr.raise_for_api_football_errors(body)
+    assert e.value.code == code
+
+
+@pytest.mark.parametrize("body", [
+    HEALTHY,
+    {"errors": {"league": "The League field is required."}},   # the caller's own business
+    [],
+    None,
+])
+def test_raw_callers_are_left_alone_otherwise(body):
+    assert hr.raise_for_api_football_errors(body) is None
+
+
+def test_odds_top_up_stops_on_a_refusal_instead_of_pricing_nothing(monkeypatch):
+    """fetch_odds_apifootball read the refusal's empty `response` as "no market"
+    for every fixture and reported a clean run."""
+    import scripts.fetch_odds_apifootball as fo
+
+    class _Resp(FakeResp):
+        def raise_for_status(self):
+            pass
+
+    monkeypatch.setattr(fo.requests, "get", lambda *a, **k: _Resp(payload=IP_BLOCKED))
+    with pytest.raises(hr.IpNotWhitelisted):
+        fo._get("/odds", {"league": 39, "season": 2026, "date": "2026-09-12"})

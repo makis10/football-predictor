@@ -38,6 +38,8 @@ import requests
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
+from scripts._http_retry import raise_for_api_football_errors  # noqa: E402
+
 DATA_DIR    = ROOT / "backend" / "data" / "raw" / "international"
 SQUADS_PATH = DATA_DIR / "wc_squads.json"
 IDS_PATH    = DATA_DIR / "wc_team_ids.json"
@@ -71,6 +73,7 @@ def _get(path: str, params: dict) -> list:
     )
     resp.raise_for_status()
     body = resp.json()
+    raise_for_api_football_errors(body)   # IP block → exit 2, daily cap → exit 4
     errs = body.get("errors")
     if errs and (errs if isinstance(errs, list) else list(errs.values())):
         raise RuntimeError(f"API error for {path} {params}: {errs}")

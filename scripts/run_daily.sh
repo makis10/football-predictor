@@ -114,6 +114,17 @@ _fail() {
 #     cmd 2>&1 | tee -a "$LOG"; _af_rc "${PIPESTATUS[0]}" $LINENO
 AF_QUOTA_RC=4
 af_quota_hit=0
+
+# Exit 2 is the other account-level answer: API-Football refused this machine's
+# IP (scripts/_http_retry.py IpNotWhitelisted — the same code the pre-flight
+# exits with). The pre-flight catches it at 06:00; this catches the line
+# dropping and coming back on a new address while the run is going. Unlike the
+# cap it IS a failure — nothing clears it but a whitelist edit — and it leaves
+# the recovery marker, so run_af_recovery.sh replays the rest once the new
+# address is whitelisted.
+AF_BLOCKED_RC=2
+AF_RECOVERY_MARKER="$LOG_DIR/.af-recovery-pending"
+
 _af_rc() {
     local rc=$1 line=$2
     [ "$rc" -eq 0 ] && return 0
@@ -121,17 +132,24 @@ _af_rc() {
         _af_quota_off
         return 0
     fi
+    [ "$rc" -eq "$AF_BLOCKED_RC" ] && _af_blocked_off
     _fail "$line"
 }
 
 # Same decision for the steps whose failure was only ever a warning: a quota
 # exit still switches the rest off, it just prints its own line instead of the
-# step's warning, which would read as a bug in that step.
+# step's warning, which would read as a bug in that step. A block is not a
+# warning even here — it fails the run like anywhere else.
 _af_soft() {
     local rc=$1 msg=$2
     [ "$rc" -eq 0 ] && return 0
     if [ "$rc" -eq "$AF_QUOTA_RC" ]; then
         _af_quota_off
+        return 0
+    fi
+    if [ "$rc" -eq "$AF_BLOCKED_RC" ]; then
+        _af_blocked_off
+        _fail "${BASH_LINENO[0]}"   # the line that called _af_soft = the step
         return 0
     fi
     echo "  $msg" | tee -a "$LOG"
@@ -141,6 +159,13 @@ _af_quota_off() {
     API_FOOTBALL_OK=0
     af_quota_hit=1
     echo "  [skip] API-Football out of daily requests — remaining API-Football steps disabled for this run." | tee -a "$LOG"
+}
+
+_af_blocked_off() {
+    API_FOOTBALL_OK=0
+    AF_BLOCKED=1
+    date '+%Y-%m-%d' > "$AF_RECOVERY_MARKER"
+    echo "  [skip] API-Football refused this machine's IP mid-run — remaining API-Football steps disabled; run_af_recovery.sh replays them once the address is whitelisted." | tee -a "$LOG"
 }
 
 # Load env vars from .env so API keys are available on the host too
@@ -188,7 +213,13 @@ elif [ "$_preflight_rc" -ne 0 ]; then
     API_FOOTBALL_OK=0
     AF_BLOCKED=1
     _fail $LINENO
+    # The marker run_watchdog.sh looks for: once /status answers again it starts
+    # run_af_recovery.sh, which replays every step this run is about to skip.
+    date '+%Y-%m-%d' > "$AF_RECOVERY_MARKER"
     echo "  [skip] API-Football steps disabled for this run (pre-flight rc=$_preflight_rc)." | tee -a "$LOG"
+    echo "  [info] run_af_recovery.sh replays them automatically once API-Football answers again." | tee -a "$LOG"
+else
+    rm -f "$AF_RECOVERY_MARKER"
 fi
 
 # ── Live-tournament gate ─────────────────────────────────────────────────────

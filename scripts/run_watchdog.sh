@@ -69,6 +69,82 @@ if [ -f "$DAILY_LOG" ]; then
     fi
 fi
 
+# ── API-Football: address watch + automatic recovery ─────────────────────────
+# The account is IP-whitelisted and this line's address is dynamic. When it
+# changes, every API-Football request is refused — answered HTTP 200 with no
+# data — and until 2026-09-10 the first anyone heard of it was the next 06:00
+# pre-flight, up to a day later; the odds poll had logged the refusal 167 times
+# without a word. Two jobs here, both cheap: /status does not count against the
+# daily quota, and it is only asked while something is unconfirmed.
+#
+#  1. Address watch. Whenever the public address is not the one API-Football
+#     last accepted, ask /status. Refused → one urgent push per address,
+#     carrying the address to paste into the dashboard.
+#  2. Recovery. A daily run that found API-Football unusable skipped all of its
+#     steps and left .af-recovery-pending holding the date. Once /status
+#     answers cleanly, start run_af_recovery.sh, which replays exactly what was
+#     skipped — whitelisting the address is then the only manual step.
+AF_IP_OK="$LOG_DIR/.af-ip-ok"                 # last address API-Football accepted
+AF_IP_ALERTED="$LOG_DIR/.af-ip-alerted"       # last address we pushed an alert for
+AF_PENDING="$LOG_DIR/.af-recovery-pending"    # written by run_daily.sh
+AF_LAUNCHED="$LOG_DIR/.af-recovery-launched"  # at most one launch per 30 min
+# shellcheck disable=SC1091
+source "$PROJ_DIR/scripts/_lock.sh"
+
+# Prints ok | ip | error | unknown: what API-Football says about this address.
+af_status() {
+    local body
+    [ -n "${API_SPORTS_KEY:-}" ] || { echo unknown; return; }
+    body=$(curl -s -m 15 -H "x-apisports-key: $API_SPORTS_KEY" \
+               https://v3.football.api-sports.io/status 2>/dev/null) || { echo unknown; return; }
+    printf '%s' "$body" | python3 -c '
+import json, sys
+try:
+    e = json.load(sys.stdin).get("errors")
+except Exception:
+    print("unknown"); sys.exit()
+print("ok" if not e else "ip" if isinstance(e, dict) and "Ip" in e else "error")
+' 2>/dev/null || echo unknown
+}
+
+af_verdict=""
+cur_ip=$(curl -s -m 5 https://api.ipify.org 2>/dev/null || true)
+# Only an IPv4-shaped answer counts — an error page must not read as a change.
+if printf '%s' "$cur_ip" | grep -qE '^[0-9]{1,3}(\.[0-9]{1,3}){3}$' \
+   && [ "$cur_ip" != "$(cat "$AF_IP_OK" 2>/dev/null)" ]; then
+    af_verdict=$(af_status)
+    case "$af_verdict" in
+        ok)
+            echo "$cur_ip" > "$AF_IP_OK"
+            echo "── $(date '+%Y-%m-%d %H:%M:%S') API-Football accepts $cur_ip" >> "$LOG"
+            ;;
+        ip)
+            if [ "$(cat "$AF_IP_ALERTED" 2>/dev/null)" != "$cur_ip" ]; then
+                echo "$cur_ip" > "$AF_IP_ALERTED"
+                echo "── $(date '+%Y-%m-%d %H:%M:%S') API-Football REFUSES $cur_ip — alerting" >> "$LOG"
+                send_alert "API-Football blocked - IP changed" \
+                    "$(printf 'Η δημόσια IP άλλαξε και το API-Football την απορρίπτει. Πρόσθεσέ τη στο whitelist (dashboard.api-football.com):\n\n%s\n\nΜέχρι τότε: κανένα CL/EL/ECL fixture ή αποτέλεσμα, φιλικά, στατιστικά, τραυματίες. Ό,τι παραλείψει το daily ξανατρέχει αυτόματα μόλις γίνει δεκτή.' "$cur_ip")" \
+                    urgent "rotating_light" "watchdog.log"
+            fi
+            ;;
+    esac
+fi
+
+if [ "$(cat "$AF_PENDING" 2>/dev/null)" = "$(date '+%Y-%m-%d')" ] \
+   && ! lock_held run_daily \
+   && [ -z "$(find "$AF_LAUNCHED" -mmin -30 2>/dev/null)" ]; then
+    [ -n "$af_verdict" ] || af_verdict=$(af_status)
+    if [ "$af_verdict" = "ok" ]; then
+        touch "$AF_LAUNCHED"
+        echo "── $(date '+%Y-%m-%d %H:%M:%S') API-Football answers again — starting run_af_recovery.sh" >> "$LOG"
+        # Its own session: launchd kills whatever is left in a job's process
+        # group when the job exits, and this tick ends in seconds while the
+        # recovery takes half an hour. (macOS has no setsid command.)
+        python3 -c 'import subprocess, sys; subprocess.Popen(["/bin/bash", sys.argv[1]], start_new_session=True, stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)' \
+            "$PROJ_DIR/scripts/run_af_recovery.sh" 2>> "$LOG" || true
+    fi
+fi
+
 # Healthy? Then stay quiet — this runs 288 times a day.
 # curl already prints "000" when it can't connect, and exits non-zero doing so —
 # a `|| echo 000` fallback would concatenate into "000000".
