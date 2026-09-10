@@ -4,6 +4,55 @@ Notable changes to Football Predictor. Format loosely follows
 [Keep a Changelog](https://keepachangelog.com/); dates are `YYYY-MM-DD`.
 History before this file was introduced lives in `git log`.
 
+## 2026-09-10
+
+The home line dropped on 2026-09-09 (the tunnel logged "network is unreachable"
+at 07:42) and came back on a new address. API-Football's whitelist refused it.
+The 06:00 run on 2026-09-10 caught that at its pre-flight, pushed the alert
+naming the address, and skipped every API-Football step; the whitelist was
+updated around 10:00. What follows is why the refusal had been quiet everywhere
+else, and why whitelisting is now the only manual step.
+
+### Fixed
+
+- **An IP refusal was logged and forgotten everywhere but the daily
+  pre-flight.** It is answered HTTP 200 with `{"errors": {"Ip": ...}}`, and
+  every fetcher treated it as one more per-league "API error". The odds poll's
+  UEFA pairing refresh logged it 167 times between 2026-08-01 and 2026-09-10
+  and exited 0 each time; nobody was told. `get_with_retry` now raises
+  `IpNotWhitelisted` — `SystemExit(2)`, the pre-flight's own code, which the
+  fetchers' `except Exception` cannot swallow — on the first such reply,
+  without retrying. Scripts that call `requests.get` themselves go through
+  `raise_for_api_football_errors`, which also gives `fetch_odds_apifootball.py`
+  the daily-cap exit it never had: it read both refusals as "no market" for
+  every fixture and reported a clean run.
+- **`run_daily.sh` reads exit 2 from any step as a block**, so a line that
+  drops mid-run switches the remaining API-Football steps off and fails the run
+  instead of logging its way through them.
+- **The odds poll and the World Cup result overlay run the pre-flight first.**
+  A test now fails when any scheduled job other than the daily run reaches an
+  API-Football script before a pre-flight.
+- **`download_xg_apifootball.py` did its whole job at import time.** Its
+  argument parsing and download loop sat at module level, so an `import` — a
+  routine import check on this very day — started the full 2021–2025 download
+  and spent 751 requests before it was killed (it wrote nothing). The body is
+  now `main()`, and a test flags module-level loops or argv parsing in every
+  API-Football script.
+
+### Added
+
+- **`scripts/run_af_recovery.sh`** replays exactly what a blocked daily run
+  skipped: every step `run_daily.sh` keeps behind the API-Football guard, with
+  the same arguments, then dedupe, predictions, the ticket check (it builds only
+  a day that has none) and the completeness report. It spends no Odds API
+  credits. A test fails when a guarded daily step is missing from it or runs
+  with different arguments.
+- **`run_watchdog.sh` watches the public address.** Whenever the address is not
+  the one API-Football last accepted it asks `/status`, which is free against
+  the quota; a refusal pushes one urgent alert per address, carrying the
+  address to paste. When the daily run left `.af-recovery-pending` and `/status`
+  answers again, it starts the recovery in its own session.
+
 ## 2026-09-07
 
 A follow-up audit of the 2026-09-03 work (13 agents: six adversarial verifiers
