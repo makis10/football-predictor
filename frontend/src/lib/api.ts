@@ -1196,12 +1196,49 @@ export async function getUpcomingNationalMatches(
 export async function getPastNationalMatches(
   from: string,
   to: string,
-  limit = 200,
+  // The endpoint's maximum. A nine-day window has peaked at 174 internationals
+  // (October 2025); at the old 200 a busier one would have lost rows silently
+  // — and, in the default ascending order, the newest ones.
+  limit = 500,
 ): Promise<Match[]> {
-  const { predictions } = await getNationalPredictions({ from, to, limit });
+  const { predictions } = await getNationalPredictions({ from, to, limit, order: "desc" });
   return predictions
     .filter((np) => np.actual_result !== null)  // results only
     .map(nationalToMatch);
+}
+
+/**
+ * Every played club match with a prediction whose match_date lies in
+ * [from, to] (inclusive, YYYY-MM-DD) — all of them, newest first.
+ *
+ * The list endpoint caps a request at 200 rows and the busiest week of the
+ * season holds ~330, so the single request /recent used to make silently lost
+ * the oldest days of its first page (and computed the page's accuracy summary
+ * on what was left). This pages through until a short page comes back.
+ */
+export async function getPastMatchesBetween(
+  league: string | undefined,
+  from: string,
+  to: string,
+): Promise<Match[]> {
+  const PAGE = 200;        // the endpoint's `limit` maximum
+  const MAX_ROWS = 5_000;  // runaway guard, ~15× the busiest week
+  const out: Match[] = [];
+  for (let offset = 0; offset < MAX_ROWS; offset += PAGE) {
+    const params = new URLSearchParams({
+      status: "past",
+      include_predictions: "true",
+      date_from: from,
+      date_to: to,
+      limit: String(PAGE),
+      offset: String(offset),
+    });
+    if (league) params.set("league", league);
+    const batch = await apiFetch<Match[]>(`/matches?${params}`);
+    out.push(...batch);
+    if (batch.length < PAGE) break;
+  }
+  return out;
 }
 
 export async function getNationalTournaments(): Promise<string[]> {

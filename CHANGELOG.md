@@ -54,6 +54,18 @@ else, and why whitelisting is now the only manual step.
   day's predictions. KeepAlive is removed and the agent reloaded; the script
   also has its own once-a-day stamp, written after Docker is ready. A test pins
   the KeepAlive policy of every plist.
+- **/recent listed each page's boundary day twice, and dropped the oldest days
+  of a busy week.** Every past-matches window reached one day too far at both
+  ends (`>= today-(K+N)`, `<= today-K`), so pages were eight days long and
+  overlapped by one — the same formula written out three times in
+  `routers/matches.py`. And the page asked for club matches in one request
+  capped at 200 rows: 2–8 August holds 222, so 22 matches from 2 August never
+  appeared and the page's accuracy summary was computed without them.
+  `_past_window` now returns exactly N days with no overlap; the page computes
+  one Athens-day window (`lib/recentWindow.ts`) and pages through
+  `date_from`/`date_to` until a short page comes back. National results use the
+  endpoint's 500-row maximum (the busiest window so far held 174). `?page=abc`
+  falls back to page 1 instead of rendering "Could not reach the API".
 
 ### Added
 

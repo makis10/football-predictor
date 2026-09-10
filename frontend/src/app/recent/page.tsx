@@ -3,55 +3,32 @@ export const dynamic = "force-dynamic";
 
 import { Suspense } from "react";
 import Link from "next/link";
-import { getMatches, getPastNationalMatches, formatLongDate, athensDate, canonicalLeagueCode, INTERNATIONAL_LEAGUE, type Match } from "@/lib/api";
+import { getPastMatchesBetween, getPastNationalMatches, formatLongDate, athensDate, canonicalLeagueCode, INTERNATIONAL_LEAGUE, type Match } from "@/lib/api";
 import { accuracySummary, gradeMatch, hasResult } from "@/lib/matchGrade";
+import { parsePage, recentPageLabel, recentWindow, shiftDays } from "@/lib/recentWindow";
 import FilterBar from "@/components/FilterBar";
 import RecentResultCard from "@/components/RecentResultCard";
 import { getServerT } from "@/lib/i18n-server";
-
-const _shiftDays = (iso: string, n: number) =>
-  new Date(new Date(`${iso}T00:00:00Z`).getTime() + n * 86_400_000).toISOString().slice(0, 10);
-
-const DAYS_PER_PAGE = 7;
 
 interface PageProps {
   searchParams: Promise<{ league?: string; page?: string }>;
 }
 
-function pageLabel(page: number): string {
-  const daysOffset = (page - 1) * DAYS_PER_PAGE;
-  if (daysOffset === 0) return `last ${DAYS_PER_PAGE} days`;
-  const from = daysOffset + DAYS_PER_PAGE;
-  const to = daysOffset + 1;
-  return `${from}–${to} days ago`;
-}
-
 async function RecentGrid({ league, page }: { league?: string; page: number }) {
-  const daysOffset = (page - 1) * DAYS_PER_PAGE;
-
-  // Date range for national predictions (same window as club matches).
-  // Anchored to Athens time — matches how national match_date is bucketed
-  // below — so the UTC 22:00-24:00 window (01:00-03:00 Athens) doesn't
-  // shift a match onto the wrong page.
-  const toStr   = athensDate(-daysOffset);
-  const fromStr = athensDate(-(daysOffset + DAYS_PER_PAGE));
+  // One window, in Athens calendar days, for club and national matches alike —
+  // the days the cards below are grouped under. Pages tile the calendar with no
+  // day on two of them (lib/recentWindow.ts).
+  const { from: fromStr, to: toStr } = recentWindow(page, athensDate());
 
   // Case-insensitive — hand-typed URLs may use ?league=international.
   const isInternational = league?.toLowerCase() === INTERNATIONAL_LEAGUE.toLowerCase();
 
   let matches: Match[] = [];
   try {
-    // Club matches — skip when "International" filter active
+    // Club matches — skip when "International" filter active. All of them:
+    // a single capped request used to drop the oldest days of a busy week.
     if (!isInternational) {
-      matches = await getMatches(
-        league,
-        200,
-        0,
-        "past",
-        true,
-        DAYS_PER_PAGE,
-        daysOffset,
-      );
+      matches = await getPastMatchesBetween(league, fromStr, toStr);
     }
 
     // National matches — include when All Leagues or International filter.
@@ -62,7 +39,7 @@ async function RecentGrid({ league, page }: { league?: string; page: number }) {
     // shows on the right page (and isn't dropped/duplicated).
     if (!league || isInternational) {
       const nationals = (
-        await getPastNationalMatches(_shiftDays(fromStr, -1), _shiftDays(toStr, 1), 200)
+        await getPastNationalMatches(shiftDays(fromStr, -1), shiftDays(toStr, 1))
       ).filter((m) => m.match_date >= fromStr && m.match_date <= toStr);
       matches = isInternational
         ? nationals
@@ -219,7 +196,7 @@ export default async function RecentResultsPage({ searchParams }: PageProps) {
   // swallowed and misreported as a connectivity error.
   const league = canonicalLeagueCode(sp.league);
   const unknownLeague = sp.league && !league ? sp.league : undefined;
-  const page = Math.max(1, Number(sp.page ?? "1"));
+  const page = parsePage(sp.page);
 
   const buildHref = (p: number) => {
     const params = new URLSearchParams();
@@ -284,7 +261,7 @@ export default async function RecentResultsPage({ searchParams }: PageProps) {
             ← Newer
           </Link>
         )}
-        <span className="text-xs text-chalk-3 px-2">{pageLabel(page)}</span>
+        <span className="text-xs text-chalk-3 px-2">{recentPageLabel(page)}</span>
         <Link
           href={buildHref(page + 1)}
           className="px-4 py-2 text-sm rounded-lg bg-ink-700 text-chalk-2 hover:bg-ink-600 transition-colors"

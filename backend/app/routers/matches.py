@@ -30,6 +30,25 @@ def _utc_today() -> date:
     return datetime.now(timezone.utc).date()
 
 
+def _past_window(days_back: Optional[int],
+                 days_offset: Optional[int]) -> tuple[Optional[date], Optional[date]]:
+    """Inclusive (lower, upper) match_date bounds for a past-matches window.
+
+    `days_back=N` is the last N calendar days INCLUDING today; `days_offset=K`
+    moves that window K days into the past. Consecutive pages (K = 0, N, 2N …)
+    therefore tile the calendar: no day on two pages, none on neither.
+
+    Both ends used to reach one day too far — `>= today-(K+N)` and
+    `<= today-K` — so every window was N+1 days long and the boundary day of
+    each /recent page was listed on the next page as well.
+    """
+    today = _utc_today()
+    k = days_offset or 0
+    lower = today - timedelta(days=k + days_back - 1) if days_back is not None else None
+    upper = today - timedelta(days=k) if k else None
+    return lower, upper
+
+
 def _adjust_prediction_embed(match_id: int, pred, league: "str | None" = None) -> "PredictionEmbed":
     """
     Build an adjusted PredictionEmbed that matches what the detail page serves:
@@ -136,12 +155,19 @@ def list_matches(
     ),
     days_back: Optional[int] = Query(
         None, ge=1, le=90,
-        description="When combined with status=past, limit to matches played in the last N days.",
+        description="When combined with status=past, limit to matches played in the "
+                    "last N days, today included.",
     ),
     days_offset: Optional[int] = Query(
         None, ge=0, le=720,
         description="Shift the days_back window back by N days. "
-                    "E.g. days_back=7&days_offset=7 returns matches from 8–14 days ago.",
+                    "E.g. days_back=7&days_offset=7 returns matches from 7–13 days ago.",
+    ),
+    date_from: Optional[date] = Query(
+        None, description="With status=past: earliest match_date, inclusive (YYYY-MM-DD).",
+    ),
+    date_to: Optional[date] = Query(
+        None, description="With status=past: latest match_date, inclusive (YYYY-MM-DD).",
     ),
     days_ahead: Optional[int] = Query(
         None, ge=1, le=30,
@@ -234,12 +260,15 @@ def list_matches(
                 .where(_PredFilter.match_id == Match.id)
                 .exists()
             )
-        if days_back is not None:
-            lower = _utc_today() - timedelta(days=(days_offset or 0) + days_back)
+        lower, upper = _past_window(days_back, days_offset)
+        if lower is not None:
             stmt = stmt.where(Match.match_date >= lower)
-        if days_offset:
-            upper = _utc_today() - timedelta(days=days_offset)
+        if upper is not None:
             stmt = stmt.where(Match.match_date <= upper)
+        if date_from is not None:
+            stmt = stmt.where(Match.match_date >= date_from)
+        if date_to is not None:
+            stmt = stmt.where(Match.match_date <= date_to)
         stmt = stmt.order_by(Match.match_date.desc(), Match.id.desc())
     else:
         stmt = select(Match).order_by(Match.match_date.desc(), Match.id.desc())
@@ -364,11 +393,10 @@ def export_picks(
             ),
         )
         stmt = select(Match).where(or_(Match.result.isnot(None), ended_e))
-        if days_back is not None:
-            lower = _utc_today() - timedelta(days=(days_offset or 0) + days_back)
+        lower, upper = _past_window(days_back, days_offset)
+        if lower is not None:
             stmt = stmt.where(Match.match_date >= lower)
-        if days_offset:
-            upper = _utc_today() - timedelta(days=days_offset)
+        if upper is not None:
             stmt = stmt.where(Match.match_date <= upper)
         stmt = stmt.order_by(Match.match_date.desc(), Match.id.desc())
 
@@ -437,12 +465,11 @@ def export_picks(
             nat_stmt = nat_stmt.order_by(_Nat.match_date.asc())
         else:
             nat_stmt = nat_stmt.where(_Nat.actual_result.isnot(None))
-            if days_back is not None:
-                lower = (_utc_today() - timedelta(days=(days_offset or 0) + days_back)).isoformat()
-                nat_stmt = nat_stmt.where(_Nat.match_date >= lower)
-            if days_offset:
-                upper = (_utc_today() - timedelta(days=days_offset)).isoformat()
-                nat_stmt = nat_stmt.where(_Nat.match_date <= upper)
+            nat_lower, nat_upper = _past_window(days_back, days_offset)
+            if nat_lower is not None:
+                nat_stmt = nat_stmt.where(_Nat.match_date >= nat_lower.isoformat())
+            if nat_upper is not None:
+                nat_stmt = nat_stmt.where(_Nat.match_date <= nat_upper.isoformat())
             nat_stmt = nat_stmt.order_by(_Nat.match_date.desc())
 
         if min_confidence in ("high", "medium"):
