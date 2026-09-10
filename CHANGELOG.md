@@ -38,6 +38,22 @@ else, and why whitelisting is now the only manual step.
   and spent 751 requests before it was killed (it wrote nothing). The body is
   now `main()`, and a test flags module-level loops or argv parsing in every
   API-Football script.
+- **The "backup NOT restorable" alert could never fire.** `run_daily.sh` called
+  `send_alert` at step 0 but sourced `_alert.sh` only in its alerting section,
+  ~700 lines later, so that failure path would have printed "command not found"
+  and pushed nothing. It is sourced at the top now, and a test checks that
+  every script sources it before its first call.
+- **A slow Docker start at 06:00 could cost the whole day.** The once-a-day
+  stamp was written before `wait_for_docker`; a run that aborted there marked
+  the day as done, and the plist's KeepAlive retry — there for exactly that
+  case — then skipped itself. The stamp is written once Docker is ready.
+- **The pre-match refresh ran twice on 2026-08-31, 09-01 and 09-07.** Its plist
+  carried `KeepAlive {SuccessfulExit: false}`, which launchd treats as
+  RunAtLoad: it fired at login (08-31 09:19, 09-07 08:54) and restarted a
+  failed run (09-01 15:00 → 15:07), each time deleting and recomputing the
+  day's predictions. KeepAlive is removed and the agent reloaded; the script
+  also has its own once-a-day stamp, written after Docker is ready. A test pins
+  the KeepAlive policy of every plist.
 
 ### Added
 

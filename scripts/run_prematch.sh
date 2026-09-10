@@ -26,6 +26,21 @@ mkdir -p "$LOG_DIR"
 source "$PROJ_DIR/scripts/_lock.sh"
 acquire_lock "run_prematch" || exit 0
 
+# ── Once a day ───────────────────────────────────────────────────────────────
+# The plist used to carry KeepAlive {SuccessfulExit: false}, which launchd
+# treats as RunAtLoad: every login, reboot or reinstall fired this outside
+# 15:00, and a failed run was restarted in a loop. It ran twice on 2026-08-31,
+# 09-01 and 09-07, each time deleting and recomputing today's predictions and
+# re-fetching national odds. The KeepAlive is gone; this stamp covers any other
+# second fire. It is written only once Docker is ready (below), so a run that
+# could not start does not use up the day. FORCE_PREMATCH=1 overrides.
+PREMATCH_STAMP="$LOG_DIR/.prematch-last-run-date"
+if [ "${FORCE_PREMATCH:-0}" != "1" ] \
+   && [ "$(cat "$PREMATCH_STAMP" 2>/dev/null)" = "$(date '+%Y-%m-%d')" ]; then
+    echo " $(date '+%Y-%m-%d %H:%M:%S')  Pre-match refresh SKIPPED — already ran today (FORCE_PREMATCH=1 overrides)." >> "$LOG"
+    exit 0
+fi
+
 echo "" >> "$LOG"
 echo "══════════════════════════════════════════" >> "$LOG"
 echo " $(date '+%Y-%m-%d %H:%M:%S')  Pre-match odds refresh" >> "$LOG"
@@ -42,6 +57,7 @@ set +a
 # shellcheck disable=SC1091
 source "$PROJ_DIR/scripts/wait_docker.sh"
 wait_for_docker "$LOG" || exit 1
+date '+%Y-%m-%d' > "$PREMATCH_STAMP"   # only now does the day count as run
 
 echo "[1/2] Refreshing today's predictions with closing-line odds …" | tee -a "$LOG"
 docker compose exec -T backend \

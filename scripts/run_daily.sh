@@ -42,6 +42,13 @@ LOG="$LOG_DIR/daily.log"
 [ -f "$PROJ_DIR/.env" ] && set -a && . "$PROJ_DIR/.env" && set +a
 _ADMIN_HDR=(-H "X-Admin-Key: ${ADMIN_API_KEY:-}")
 
+# send_alert, for every step below that pushes. It used to be sourced only in
+# the alerting section at the very end, so the "backup NOT restorable" push at
+# step 0 called a function that did not exist yet: the one alert saying the
+# accounts and the bet ledger are unprotected could never have been delivered.
+# shellcheck disable=SC1091
+source "$PROJ_DIR/scripts/_alert.sh"
+
 mkdir -p "$LOG_DIR"
 
 # Guard against launchd's missed-run coalescing firing this alongside another
@@ -72,7 +79,10 @@ if [ "${FORCE_DAILY:-0}" != "1" ] && [ -f "$DAILY_STAMP" ] \
     echo "    a 7,500/day cap; set FORCE_DAILY=1 to override)" >> "$LOG"
     exit 0
 fi
-date '+%Y-%m-%d' > "$DAILY_STAMP"
+# The stamp itself is written once Docker is confirmed ready (below), not here.
+# Written first, a 06:00 run that aborted on a Docker Desktop still starting
+# marked the day as done, and the plist's KeepAlive retry — which exists for
+# exactly that case — then skipped itself: the whole day lost to a slow daemon.
 
 echo "" >> "$LOG"
 echo "══════════════════════════════════════════" >> "$LOG"
@@ -184,6 +194,8 @@ set +a
 source "$PROJ_DIR/scripts/wait_docker.sh"
 echo "" >> "$LOG"
 wait_for_docker "$LOG" || exit 1
+# Only now does the day count as run (see the once-a-day guard at the top).
+date '+%Y-%m-%d' > "$DAILY_STAMP"
 
 # ── API-Football pre-flight ──────────────────────────────────────────────────
 # The account is IP-whitelisted and this connection has a dynamic IP. When it
@@ -961,8 +973,7 @@ fi
 #  3. Data incomplete → its own push, and deliberately NOT tied to (2). A
 #     missing club id is worth knowing about; it is not a reason to tell the
 #     monitor the pipeline is dead.
-# shellcheck disable=SC1091
-source "$PROJ_DIR/scripts/_alert.sh"
+# (send_alert comes from _alert.sh, sourced at the top of this script.)
 
 _health_verdict=$(tail -n "+$((RUN_START_LINE + 1))" "$LOG" \
     | grep -E '^DATA (OK|GAPS) — ' | tail -1)

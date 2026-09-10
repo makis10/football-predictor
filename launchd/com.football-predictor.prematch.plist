@@ -27,10 +27,8 @@
     <key>StandardErrorPath</key>
     <string>__LOG_DIR__/prematch-stderr.log</string>
 
-    <key>KeepAlive</key>
-    <dict>
-        <key>SuccessfulExit</key>
-        <false/>
-    </dict>
+    <!-- No KeepAlive. {SuccessfulExit: false} implies RunAtLoad, so it fired
+         this at every login/reboot/reinstall (2026-08-31 09:19, 2026-09-07
+         08:54) and restarted a failed run (2026-09-01 15:00 → 15:07). -->
 </dict>
 </plist>

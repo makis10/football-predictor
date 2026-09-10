@@ -709,6 +709,75 @@ def test_importing_an_api_football_script_does_no_work():
         "`if __name__ == \"__main__\"`:\n  " + "\n  ".join(offenders))
 
 
+def test_alert_helper_is_sourced_before_its_first_use():
+    """A shell script that calls send_alert before sourcing _alert.sh gets
+    "command not found" instead of a push. run_daily.sh did exactly that for
+    the "backup NOT restorable" alert at step 0, ~700 lines before its only
+    `source` — so the one alert saying the accounts and the bet ledger were
+    unprotected could never have been delivered."""
+    import pathlib
+    import re
+
+    scripts_dir = pathlib.Path(__file__).resolve().parents[2] / "scripts"
+    early = []
+    for sh in sorted(scripts_dir.glob("*.sh")):
+        if sh.name == "_alert.sh":
+            continue
+        sourced_at = first_use = None
+        for lineno, line in _shell_logical_lines(sh):
+            if sourced_at is None and re.search(r"(?:source|\.)\s+\S*_alert\.sh", line):
+                sourced_at = lineno
+            if first_use is None and re.search(r"(?:^|[\s;|&(])send_alert\s", line):
+                first_use = lineno
+        if first_use is not None and (sourced_at is None or sourced_at > first_use):
+            early.append(f"{sh.name}:{first_use} (sourced at {sourced_at})")
+    assert not early, "send_alert called before _alert.sh is sourced:\n  " + "\n  ".join(early)
+
+
+def test_a_day_is_only_marked_as_run_once_docker_is_ready():
+    """The once-a-day stamps must be written after wait_for_docker succeeds.
+
+    run_daily.sh wrote its stamp ~110 lines before waiting for Docker. A 06:00
+    run that aborted on a daemon still starting marked the day as done, and the
+    plist's KeepAlive retry then skipped itself — the day's pipeline lost to a
+    slow Docker Desktop."""
+    import pathlib
+
+    scripts_dir = pathlib.Path(__file__).resolve().parents[2] / "scripts"
+    for name, stamp in (("run_daily.sh", "DAILY_STAMP"),
+                        ("run_prematch.sh", "PREMATCH_STAMP")):
+        lines = _shell_logical_lines(scripts_dir / name)
+        writes = [n for n, text in lines if f'> "${stamp}"' in text]
+        ready = [n for n, text in lines if "wait_for_docker" in text and "||" in text]
+        assert writes and ready, f"{name}: stamp write or Docker wait not found"
+        assert min(writes) > min(ready), (
+            f"{name}:{min(writes)} writes {stamp} before Docker is ready "
+            f"(line {min(ready)})")
+
+
+def test_launchd_restart_policies_are_the_intended_ones():
+    """KeepAlive is not a harmless default. {SuccessfulExit: false} implies
+    RunAtLoad (launchd.plist(5)), so the job also fires at every login, reboot
+    and reinstall, and a failing run is restarted in a loop. The prematch job
+    carried it and ran twice on 2026-08-31, 09-01 and 09-07. Two jobs keep it on
+    purpose: the tunnel (always on) and the daily run, whose restart is its retry
+    when Docker was not ready — safe only because its once-a-day stamp is
+    written after Docker is (the test above)."""
+    import pathlib
+    import plistlib
+
+    launchd_dir = pathlib.Path(__file__).resolve().parents[2] / "launchd"
+    allowed = {"com.football-predictor.cloudflared": True,
+               "com.football-predictor.daily": {"SuccessfulExit": False}}
+    found = {}
+    for p in sorted(launchd_dir.glob("*.plist")):
+        with p.open("rb") as f:
+            found[p.stem] = plistlib.load(f).get("KeepAlive")
+    assert len(found) >= 5, f"only {len(found)} plists found — wrong directory?"
+    wrong = {k: v for k, v in found.items() if v != allowed.get(k)}
+    assert not wrong, f"unexpected KeepAlive policy: {wrong}"
+
+
 def test_no_override_points_at_a_name_that_is_also_one_of_ours():
     """An override must translate OUR spelling into the FEED's, never the reverse.
 
