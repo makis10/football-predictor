@@ -520,8 +520,8 @@ def predict_match(
         "pi_att_diff": 0.0, "pi_def_diff": 0.0,
         "pi_exp_home": 1.5, "pi_exp_away": 1.5,
         "pi_exp_diff": 0.0, "pi_exp_total": 3.0,
-        # H2H
-        "h2h_home_wins": 0, "h2h_away_wins": 0, "h2h_draws": 0, "h2h_draw_rate": 0.26,
+        # H2H counts (0 = never met)
+        "h2h_home_wins": 0, "h2h_away_wins": 0, "h2h_draws": 0,
         # Season phase — mid-season as default
         "season_week": 15, "season_phase": 2, "days_since_season_start": 105,
         # European — 0 = not in Europe
@@ -534,13 +534,14 @@ def predict_match(
         "poisson_home_win":     0.44, "poisson_draw":         0.26,
         "poisson_away_win":     0.30, "poisson_over_2_5":     0.50,
         "poisson_btts":         0.50,
-        # Draw-balance features
-        "goals_asymmetry_5":      0.0,
-        "combined_draw_tendency": 0.26,
-        "pi_closeness":           0.5,
-        "market_draw_edge":       0.0,
-        "low_total_xg":           0.0,
-        "elo_closeness":          0.5,
+        # NOT here, deliberately: h2h_draw_rate and the six draw-balance
+        # features (goals_asymmetry_5, combined_draw_tendency, pi_closeness,
+        # market_draw_edge, low_total_xg, elo_closeness). train.py keeps them
+        # NaN (`optional_feats`, never imputed), so each model learned a branch
+        # for "missing"; a constant here meant this path never took it, and
+        # served combinations training never saw. The batch path dropped them
+        # on 2026-09-09 (scripts/compute_predictions.py, DEFAULTS) — this copy
+        # of the list was missed. All four models predict cleanly with NaN.
     }
     # Training medians override the legacy literals above — serving must fill
     # NaN with the SAME values the model was trained with (impute_medians.json,

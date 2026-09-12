@@ -778,6 +778,65 @@ def test_launchd_restart_policies_are_the_intended_ones():
     assert not wrong, f"unexpected KeepAlive policy: {wrong}"
 
 
+def test_no_serving_path_fills_a_feature_training_leaves_missing():
+    """Serving must not invent a value where training had none.
+
+    train.py lists some features in `optional_feats` and never imputes them, so
+    each model is fitted with them genuinely NaN and learns a branch for it. A
+    serve-time constant means that branch is never taken — and the constant
+    arrives beside still-NaN siblings, in combinations training never saw. The
+    batch path stopped doing it on 2026-09-09; predict_match() — the API's
+    cache-miss path — kept its own copy of the list and went on filling seven
+    of them until 2026-09-10. Both copies are read from source here, so neither
+    can drift back.
+    """
+    import ast
+    import pathlib
+
+    root = pathlib.Path(__file__).resolve().parents[2]
+
+    def _dict_keys(path, target, inside=None):
+        tree = ast.parse(path.read_text())
+        scope = tree if inside is None else next(
+            n for n in ast.walk(tree)
+            if isinstance(n, ast.FunctionDef) and n.name == inside)
+        for node in ast.walk(scope):
+            if (isinstance(node, ast.Assign) and isinstance(node.value, ast.Dict)
+                    and any(isinstance(t, ast.Name) and t.id == target
+                            for t in node.targets)):
+                return {k.value for k in node.value.keys if isinstance(k, ast.Constant)}
+        raise AssertionError(f"no `{target} = {{...}}` in {path.name}")
+
+    def _assigned(tree, name):
+        return next(n for n in ast.walk(tree) if isinstance(n, ast.Assign)
+                    and any(isinstance(t, ast.Name) and t.id == name for t in n.targets))
+
+    # Read from source, not imported: train.py is the training entry point.
+    train = ast.parse((root / "backend/app/ml/train.py").read_text())
+    never_imputed = {c.value for s in ast.walk(_assigned(train, "optional_feats").value)
+                     if isinstance(s, ast.Set)
+                     for c in s.elts if isinstance(c, ast.Constant)}
+    # Referee features are optional too, and _impute_optional deliberately
+    # leaves them NaN ("a fake average referee hurts more than it helps").
+    never_imputed |= {c.value for c in _assigned(train, "REF_COLS").value.elts
+                      if isinstance(c, ast.Constant)}
+    assert "h2h_draw_rate" in never_imputed and len(never_imputed) >= 20, (
+        f"read only {len(never_imputed)} names from optional_feats — the parser "
+        "is broken, and a broken parser passes this test vacuously")
+
+    offenders = {}
+    for label, path, target, inside in (
+            ("predict.py predict_match()", root / "backend/app/ml/predict.py",
+             "_fill", "predict_match"),
+            ("compute_predictions.py DEFAULTS", root / "scripts/compute_predictions.py",
+             "DEFAULTS", None)):
+        bad = _dict_keys(path, target, inside) & never_imputed
+        if bad:
+            offenders[label] = sorted(bad)
+    assert not offenders, (
+        f"serve-time constants for features training leaves NaN: {offenders}")
+
+
 def test_no_override_points_at_a_name_that_is_also_one_of_ours():
     """An override must translate OUR spelling into the FEED's, never the reverse.
 

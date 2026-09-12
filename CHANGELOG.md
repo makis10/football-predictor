@@ -4,6 +4,21 @@ Notable changes to Football Predictor. Format loosely follows
 [Keep a Changelog](https://keepachangelog.com/); dates are `YYYY-MM-DD`.
 History before this file was introduced lives in `git log`.
 
+## 2026-09-12
+
+### Fixed
+
+- **The API's cache-miss path still invented seven feature values.** On
+  2026-09-09 the batch path stopped filling features that training deliberately
+  leaves NaN (`optional_feats`, never imputed): a constant there means the
+  model's "missing" branch is never taken, and it is served combinations it
+  never saw in training. `predict_match()` — which answers `/predictions/{id}`
+  when the batch has not priced a fixture yet — kept its own copy of the fill
+  list and went on filling seven of them (`h2h_draw_rate` and the six
+  draw-balance features). Removed. A test now reads both fill lists and
+  `train.py`'s never-imputed set (including the referee features) from source
+  and fails if they intersect.
+
 ## 2026-09-10
 
 The home line dropped on 2026-09-09 (the tunnel logged "network is unreachable"
