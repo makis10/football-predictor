@@ -109,7 +109,7 @@ export default async function MatchDetailPage({ params }: Props) {
                 <h2 className="text-sm font-semibold text-chalk-2 uppercase tracking-wider">
                   {t("match.section.wdl")}
                 </h2>
-                <WinProbabilityBars
+                <WinProbabilityBars t={t}
                   homeTeam={match.home_team}
                   awayTeam={match.away_team}
                   homeWin={prediction.win_probabilities.home_win}

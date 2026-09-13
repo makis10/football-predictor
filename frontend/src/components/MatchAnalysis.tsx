@@ -701,7 +701,7 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
     {(data.exp_home_cards != null || data.exp_away_cards != null) && (
       <div className="card p-5">
         <h2 className="mb-3 font-display text-sm font-extrabold uppercase tracking-[0.14em] text-chalk-3">
-          🟨 Expected Cards
+          {t("card.expectedCards")}
         </h2>
         <div className="flex items-center justify-between gap-4">
           <div className="text-left">
@@ -709,7 +709,7 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
             <p className="text-xs text-chalk-3">{homeTeam}</p>
           </div>
           <span className="text-xs text-chalk-3 tabular-nums">
-            total ≈ {((data.exp_home_cards ?? 0) + (data.exp_away_cards ?? 0)).toFixed(1)}
+            {t("card.totalApprox", { n: ((data.exp_home_cards ?? 0) + (data.exp_away_cards ?? 0)).toFixed(1) })}
           </span>
           <div className="text-right">
             <p className="text-2xl font-bold text-chalk tabular-nums">{data.exp_away_cards?.toFixed(1) ?? "—"}</p>
@@ -723,7 +723,7 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
     {(data.exp_home_corners != null || data.exp_away_corners != null) && (
       <div className="card p-5">
         <h2 className="mb-3 font-display text-sm font-extrabold uppercase tracking-[0.14em] text-chalk-3">
-          🚩 Expected Corners
+          {t("card.expectedCorners")}
         </h2>
         <div className="flex items-center justify-between gap-4">
           <div className="text-left">
@@ -731,7 +731,7 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
             <p className="text-xs text-chalk-3">{homeTeam}</p>
           </div>
           <span className="text-xs text-chalk-3 tabular-nums">
-            total ≈ {((data.exp_home_corners ?? 0) + (data.exp_away_corners ?? 0)).toFixed(1)}
+            {t("card.totalApprox", { n: ((data.exp_home_corners ?? 0) + (data.exp_away_corners ?? 0)).toFixed(1) })}
           </span>
           <div className="text-right">
             <p className="text-2xl font-bold text-chalk tabular-nums">{data.exp_away_corners?.toFixed(1) ?? "—"}</p>
@@ -740,7 +740,7 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
         </div>
         {data.corners_over_9_5_prob != null && (
           <p className="text-center text-xs text-chalk-3 mt-2">
-            Over 9.5 corners: {Math.round(data.corners_over_9_5_prob * 100)}%
+            {t("card.over95Corners", { pct: Math.round(data.corners_over_9_5_prob * 100) })}
           </p>
         )}
       </div>

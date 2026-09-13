@@ -201,7 +201,7 @@ export default async function StatsPage({ searchParams }: PageProps) {
             <h2 className="text-sm font-semibold text-chalk-2 uppercase tracking-wide mb-3">
               {t("stats.byTournament")}
             </h2>
-            <LeagueTable
+            <LeagueTable t={t}
               rows={ns.by_tournament.map((row) => ({
                 league:          row.tournament,
                 total:           row.total,
@@ -589,7 +589,7 @@ export default async function StatsPage({ searchParams }: PageProps) {
         <h2 className="text-sm font-semibold text-chalk-2 uppercase tracking-wide mb-3">
           {t("stats.byLeague")}
         </h2>
-        <LeagueTable rows={s.by_league} />
+        <LeagueTable rows={s.by_league} t={t} />
       </section>
 
       {/* ── International — By Tournament ───────────────────────────────────
@@ -603,7 +603,7 @@ export default async function StatsPage({ searchParams }: PageProps) {
           <h2 className="text-sm font-semibold text-chalk-2 uppercase tracking-wide mb-3">
             {t("stats.intlByTournament")}
           </h2>
-          <LeagueTable
+          <LeagueTable t={t}
             rows={nationalStats.by_tournament.map((row) => ({
               league:          row.tournament,
               total:           row.total,

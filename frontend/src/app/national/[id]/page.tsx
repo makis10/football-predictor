@@ -187,7 +187,7 @@ export default async function NationalMatchDetailPage({ params }: Props) {
             <h2 className="text-sm font-semibold text-chalk-2 uppercase tracking-wider">
               Win · Draw · Loss
             </h2>
-            <WinProbabilityBars
+            <WinProbabilityBars t={t}
               homeTeam={prediction.home_team}
               awayTeam={prediction.away_team}
               homeWin={prediction.home_win_prob}
@@ -243,7 +243,7 @@ export default async function NationalMatchDetailPage({ params }: Props) {
       {hasEnded && (prediction.h_elo != null || prediction.a_elo != null) && (
         <div className="card p-5 space-y-3">
           <h2 className="text-sm font-semibold text-chalk-2 uppercase tracking-wider">
-            Elo Ratings
+            {t("card.eloRatings")}
           </h2>
           <div className="flex items-center justify-between text-sm">
             <div className="text-center">
@@ -269,7 +269,7 @@ export default async function NationalMatchDetailPage({ params }: Props) {
         <div className="card p-5 space-y-3">
           <div className="flex items-center justify-between">
             <h2 className="text-sm font-semibold text-chalk-2 uppercase tracking-wider">
-              🟨 Expected Cards
+              {t("card.expectedCards")}
             </h2>
             {/* Not a market call — an estimate-accuracy check (|pred − actual| ≤ 1.5).
                 Label it as such so it doesn't read like a betting hit. */}
@@ -288,7 +288,7 @@ export default async function NationalMatchDetailPage({ params }: Props) {
               <p className="text-chalk-3 text-xs">{prediction.home_team}</p>
             </div>
             <span className="text-chalk-3 text-xs">
-              total ≈ {(((prediction.exp_home_cards ?? 0) + (prediction.exp_away_cards ?? 0)) || 0).toFixed(1)}
+              {t("card.totalApprox", { n: (((prediction.exp_home_cards ?? 0) + (prediction.exp_away_cards ?? 0)) || 0).toFixed(1) })}
             </span>
             <div className="text-center">
               <p className="text-chalk font-bold text-lg tabular-nums">
@@ -319,7 +319,7 @@ export default async function NationalMatchDetailPage({ params }: Props) {
         <div className="card p-5 space-y-3">
           <div className="flex items-center justify-between">
             <h2 className="text-sm font-semibold text-chalk-2 uppercase tracking-wider">
-              🚩 Expected Corners
+              {t("card.expectedCorners")}
             </h2>
             {hasResult && prediction.corners_hit != null && (
               <HitPill hit={prediction.corners_hit} label={prediction.corners_hit ? t("nat.caught") : t("nat.missed")} />
@@ -333,7 +333,7 @@ export default async function NationalMatchDetailPage({ params }: Props) {
               <p className="text-chalk-3 text-xs">{prediction.home_team}</p>
             </div>
             <span className="text-chalk-3 text-xs">
-              total ≈ {(((prediction.exp_home_corners ?? 0) + (prediction.exp_away_corners ?? 0)) || 0).toFixed(1)}
+              {t("card.totalApprox", { n: (((prediction.exp_home_corners ?? 0) + (prediction.exp_away_corners ?? 0)) || 0).toFixed(1) })}
             </span>
             <div className="text-center">
               <p className="text-chalk font-bold text-lg tabular-nums">
@@ -344,7 +344,7 @@ export default async function NationalMatchDetailPage({ params }: Props) {
           </div>
           {prediction.corners_over_9_5_prob != null && (
             <p className="text-center text-chalk-3 text-xs">
-              Over 9.5 corners: {(prediction.corners_over_9_5_prob * 100).toFixed(0)}%
+              {t("card.over95Corners", { pct: (prediction.corners_over_9_5_prob * 100).toFixed(0) })}
             </p>
           )}
           {hasResult && (prediction.actual_home_corners != null || prediction.actual_away_corners != null) && (
@@ -432,7 +432,7 @@ export default async function NationalMatchDetailPage({ params }: Props) {
       <PlayerPropsPanel teams={propTeams} t={t} />
 
       <p className="text-xs text-chalk-3 text-center px-4">
-        Predictions are for entertainment only.
+        {t("match.disclaimerShort")}
       </p>
     </div>
   );

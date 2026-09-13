@@ -25,6 +25,45 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: "2026-09-13-every-fixture",
+    date: "2026-09-13",
+    tag: "fix",
+    title: {
+      en: "The home page showed at most 100 of a weekend's fixtures",
+      el: "Η αρχική σελίδα έδειχνε το πολύ 100 από τους αγώνες ενός Σαββατοκύριακου",
+    },
+    body: {
+      en: "On a Friday the next three days can hold 180 club fixtures. The page asked for 100 and silently dropped the rest — usually the whole of Sunday — so Top Picks never saw them, while the league filters counted fixtures the page did not show. It now loads every fixture in the window.",
+      el: "Μια Παρασκευή οι επόμενες τρεις ημέρες μπορεί να έχουν 180 αγώνες συλλόγων. Η σελίδα ζητούσε 100 και έχανε σιωπηλά τους υπόλοιπους — συνήθως ολόκληρη την Κυριακή — οπότε τα Top Picks δεν τους έβλεπαν ποτέ, ενώ τα φίλτρα λιγκών μετρούσαν αγώνες που η σελίδα δεν έδειχνε. Τώρα φορτώνει κάθε αγώνα του διαστήματος.",
+    },
+  },
+  {
+    id: "2026-09-13-stats-right-floor",
+    date: "2026-09-13",
+    tag: "fix",
+    title: {
+      en: "/stats measured the model against the wrong floor in some leagues",
+      el: "Το /stats σύγκρινε το μοντέλο με λάθος μέτρο σε κάποιες λίγκες",
+    },
+    body: {
+      en: "Over/Under and BTTS accuracy were compared with always betting Over and always betting GG. Where Under or NG is more common that is the wrong floor: Serie A's Over/Under read '+6.7pp vs always OVER' in green, when always betting Under would have done 2.2 points better. Every figure is now set against the better of the two constants, and the league and version tables colour each row against its own. The value-strategy ROI counts only the picks its gate chose, the EV and fair-value figures use the model's own probabilities, and national accuracy is graded the same way on every page.",
+      el: "Η ακρίβεια Over/Under και BTTS συγκρινόταν με το να παίζεις πάντα Over και πάντα GG. Όπου το Under ή το NG είναι συχνότερο, αυτό είναι λάθος μέτρο: το Over/Under της Serie A έγραφε «+6.7pp έναντι πάντα OVER» με πράσινο, ενώ το να παίζεις πάντα Under θα έβγαζε 2,2 μονάδες περισσότερο. Κάθε νούμερο συγκρίνεται πλέον με την καλύτερη από τις δύο σταθερές, και οι πίνακες λιγκών και εκδόσεων χρωματίζουν κάθε γραμμή απέναντι στη δική της. Το ROI της value στρατηγικής μετράει μόνο τις επιλογές που διάλεξε το φίλτρο της, τα EV και fair-value χρησιμοποιούν τις δικές του πιθανότητες του μοντέλου, και η ακρίβεια των εθνικών βαθμολογείται με τον ίδιο τρόπο σε κάθε σελίδα.",
+    },
+  },
+  {
+    id: "2026-09-13-match-page-honest",
+    date: "2026-09-13",
+    tag: "fix",
+    title: {
+      en: "Match pages say what the site actually published",
+      el: "Οι σελίδες αγώνων λένε ό,τι δημοσίευσε πραγματικά ο ιστότοπος",
+    },
+    body: {
+      en: "The analysis panel showed the model before its blend with the market as 'our model', and its 'model pick' was a different selection from the one on the card beside it; both now match the card. The accuracy under each prediction was a hardcoded '~52%' while the record said 49% — it now reads the record. A backend restart no longer turns real match pages into 'page not found', and an old match page no longer produces a prediction after the result.",
+      el: "Το πάνελ ανάλυσης έδειχνε το μοντέλο πριν από τη μίξη του με την αγορά ως «το μοντέλο μας», και το «model pick» ήταν διαφορετική επιλογή από αυτή της κάρτας δίπλα του· τώρα ταιριάζουν και τα δύο με την κάρτα. Η ακρίβεια κάτω από κάθε πρόβλεψη ήταν ένα σταθερό «~52%» ενώ το ιστορικό έλεγε 49% — τώρα διαβάζει το ιστορικό. Μια επανεκκίνηση του backend δεν κάνει πια πραγματικές σελίδες αγώνων «δεν βρέθηκε», και μια παλιά σελίδα αγώνα δεν παράγει πια πρόβλεψη μετά το αποτέλεσμα.",
+    },
+  },
+  {
     id: "2026-09-13-ninety-minutes",
     date: "2026-09-13",
     tag: "fix",

@@ -1,8 +1,10 @@
 import { LeagueBreakdown } from "@/lib/api";
+import type { TFunc } from "@/lib/i18n";
 import { leagueFlag, leagueLabel } from "@/lib/api";
 
 interface LeagueTableProps {
   rows: LeagueBreakdown[];
+  t: TFunc;
 }
 
 function pct(v: number) {
@@ -22,10 +24,10 @@ function edgeColor(value: number, baseline?: number): string {
   return "text-lose";
 }
 
-export function LeagueTable({ rows }: LeagueTableProps) {
+export function LeagueTable({ rows, t }: LeagueTableProps) {
   if (rows.length === 0) {
     return (
-      <p className="text-sm text-chalk-3 text-center py-6">No data yet.</p>
+      <p className="text-sm text-chalk-3 text-center py-6">{t("stats.table.empty")}</p>
     );
   }
 
@@ -34,11 +36,11 @@ export function LeagueTable({ rows }: LeagueTableProps) {
       <table className="w-full text-sm">
         <thead>
           <tr className="bg-ink-700 text-chalk-2 text-xs uppercase tracking-wide">
-            <th className="px-4 py-3 text-left">League</th>
-            <th className="px-4 py-3 text-right">Games</th>
-            <th className="px-4 py-3 text-right">Result %</th>
-            <th className="px-4 py-3 text-right">O/U %</th>
-            <th className="px-4 py-3 text-right">Both %</th>
+            <th className="px-4 py-3 text-left">{t("stats.league")}</th>
+            <th className="px-4 py-3 text-right">{t("stats.games")}</th>
+            <th className="px-4 py-3 text-right">{t("stats.resultPct")}</th>
+            <th className="px-4 py-3 text-right">{t("stats.ouPct")}</th>
+            <th className="px-4 py-3 text-right">{t("stats.bothPct")}</th>
           </tr>
         </thead>
         <tbody className="divide-y divide-line">

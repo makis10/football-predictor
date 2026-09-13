@@ -30,6 +30,8 @@ function Bar({ label, probability, color, bold }: BarProps) {
 }
 
 interface WinBarProps {
+  /** Optional: server pages pass their t; the label falls back to English. */
+  t?: TFunc;
   homeTeam: string;
   awayTeam: string;
   homeWin: number;
@@ -38,6 +40,7 @@ interface WinBarProps {
 }
 
 export function WinProbabilityBars({
+  t,
   homeTeam,
   awayTeam,
   homeWin,
@@ -48,7 +51,7 @@ export function WinProbabilityBars({
   return (
     <div className="space-y-3">
       <Bar label={homeTeam}  probability={homeWin} color="bg-win"  bold={homeWin === max} />
-      <Bar label="Draw"      probability={draw}    color="bg-chalk-2"   bold={draw === max} />
+      <Bar label={t ? t("recent.draw") : "Draw"} probability={draw}    color="bg-chalk-2"   bold={draw === max} />
       <Bar label={awayTeam}  probability={awayWin} color="bg-chalk-2"   bold={awayWin === max} />
     </div>
   );
