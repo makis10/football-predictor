@@ -81,10 +81,10 @@ TEAM_MAP: dict[str, str] = {
 }
 
 
-def infer_season(d: date) -> str:
-    if d.month >= 7:
-        return f"{d.year}/{str(d.year + 1)[2:]}"
-    return f"{d.year - 1}/{str(d.year)[2:]}"
+def infer_season(d: date, league: "str | None" = None) -> str:
+    """Season label — the shared league-aware rule (backend/app/ml/seasons.py)."""
+    from backend.app.ml.seasons import season_label
+    return season_label(league, d)
 
 
 # ── API-Football fetch ────────────────────────────────────────────────────────

@@ -205,7 +205,7 @@ def update_db(finished: list[dict]) -> tuple[int, int]:
         # covers for this has no 2026/27 Championship file yet.
         unmatched: list[str] = []
         created = 0
-        from scripts.fetch_club_friendlies import infer_season
+        from backend.app.ml.seasons import season_label
         # Friendlies are the exception to "one ordered pairing per season": the
         # same clubs really can meet twice at the same ground in one pre-season.
         _REPEATABLE_PAIRINGS = {"ClubFriendly"}
@@ -245,7 +245,7 @@ def update_db(finished: list[dict]) -> tuple[int, int]:
                 # pair stays unique either way — the same reasoning
                 # dedupe_fixtures.py records. A date window cannot work here;
                 # the reschedule that prompted that comment moved four months.
-                season = infer_season(f["match_date"])
+                season = season_label(f["league"], f["match_date"])
                 moved = db.scalars(
                     select(Match).where(
                         Match.home_team == home,
@@ -301,7 +301,7 @@ def update_db(finished: list[dict]) -> tuple[int, int]:
                         db.add(Match(
                             match_date=f["match_date"],
                             league=f["league"],
-                            season=infer_season(f["match_date"]),
+                            season=season_label(f["league"], f["match_date"]),
                             home_team=home,
                             away_team=away,
                             home_goals=f["home_goals"],

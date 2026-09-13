@@ -44,7 +44,9 @@ FINISHED_STATUSES = {"FT", "AET", "PEN", "WO", "AWD"}
 
 
 def _api_season(d: date) -> int:
-    return d.year if d.month >= 7 else d.year - 1
+    """API-Football season — the shared rule (backend/app/ml/seasons.py)."""
+    from backend.app.ml.seasons import api_season
+    return api_season(None, d)
 
 
 def _get(path: str, params: dict) -> dict:
@@ -59,8 +61,10 @@ def _get(path: str, params: dict) -> dict:
     return body
 
 
-def infer_season(d: date) -> str:
-    return f"{d.year}/{str(d.year + 1)[2:]}" if d.month >= 7 else f"{d.year - 1}/{str(d.year)[2:]}"
+def infer_season(d: date, league: "str | None" = None) -> str:
+    """Season label — the shared league-aware rule (backend/app/ml/seasons.py)."""
+    from backend.app.ml.seasons import season_label
+    return season_label(league, d)
 
 
 def main() -> None:

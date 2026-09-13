@@ -36,12 +36,10 @@ DEFAULT_FILE = os.path.join(
 VALID_LEAGUES = {"EPL", "LaLiga", "SerieA", "Bundesliga", "Ligue1", "GreekSL"}
 
 
-def infer_season(d: date) -> str:
-    """2026-04-18 → '2025/26'"""
-    if d.month >= 7:
-        return f"{d.year}/{str(d.year + 1)[2:]}"
-    else:
-        return f"{d.year - 1}/{str(d.year)[2:]}"
+def infer_season(d: date, league: "str | None" = None) -> str:
+    """Season label — the shared league-aware rule (backend/app/ml/seasons.py)."""
+    from backend.app.ml.seasons import season_label
+    return season_label(league, d)
 
 
 def _compute_predictions(match_ids: list[int]) -> None:
@@ -136,7 +134,7 @@ def import_fixtures(path: str, clear_future: bool = False, with_predictions: boo
             league     = row["league"]
             home_team  = str(row["home_team"]).strip()
             away_team  = str(row["away_team"]).strip()
-            season     = infer_season(match_date)
+            season     = infer_season(match_date, league)
 
             # Skip past dates
             if match_date < today:

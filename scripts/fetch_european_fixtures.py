@@ -86,15 +86,16 @@ def map_team(name: str) -> str:
     return TEAM_MAP.get(name, name)
 
 
-def infer_season(d: date) -> str:
-    if d.month >= 7:
-        return f"{d.year}/{str(d.year + 1)[2:]}"
-    return f"{d.year - 1}/{str(d.year)[2:]}"
+def infer_season(d: date, league: "str | None" = None) -> str:
+    """Season label — the shared league-aware rule (backend/app/ml/seasons.py)."""
+    from backend.app.ml.seasons import season_label
+    return season_label(league, d)
 
 
 def _api_season(d: date) -> int:
-    """API-Football keys a UEFA season by its starting year (July → June)."""
-    return d.year if d.month >= 7 else d.year - 1
+    """API-Football season — the shared rule (backend/app/ml/seasons.py)."""
+    from backend.app.ml.seasons import api_season
+    return api_season(None, d)
 
 
 def build_strict_resolver(known_teams: set[str]):
