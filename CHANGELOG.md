@@ -8,6 +8,30 @@ History before this file was introduced lives in `git log`.
 
 ### Fixed
 
+- **A bet logged or a match tracked on an upcoming fixture lasted only until
+  the next re-price.** `user_bets` and `tracked_matches` were keyed on
+  `predictions(match_id)` with `ON DELETE CASCADE`, and `compute_predictions.py`
+  deletes and rewrites predictions on schedule — every upcoming fixture on
+  Monday's `--force`, today's at 15:00, anything newly priced every eight
+  hours. Each rewrite took the users' rows with it, so /my-roi and /my-matches
+  silently lost bets and bookmarks, and the ROI they printed was computed over
+  whatever had survived. Migration 0037 keys both on `matches(id)`: a bookmark
+  goes only with its fixture, and a bet outlives even that (`ON DELETE SET
+  NULL`). Pruning a cancelled fixture now voids the open bets on it first, and
+  merging a duplicate fixture moves bets, bookmarks and ticket legs onto the
+  surviving row instead of deleting them — a leg deleted with a duplicate had
+  voided a published ticket that was still live. /my-roi names the fixture
+  instead of printing "Match #id".
+- **A knockout won in extra time was graded on its extra-time score.** Every
+  club market we predict and grade — 1×2, Over 2.5, BTTS, every ticket leg —
+  settles at 90 minutes, but API-Football's `goals` and football-data.org's
+  `fullTime` include extra time. A tie level 1-1 after 90 and won 2-1 after 120
+  was stored as a home win and an over where the bookmaker settled a draw and
+  an under, on the public record and on every accumulator carrying it. All
+  seven club result writers now read the 90-minute score (`score.fulltime` for
+  AET/PEN, `regularTime` when the duration is not REGULAR) through one helper,
+  `scripts/_feed_scores.py`. National results keep the score after extra time:
+  that is what the national model is trained on and graded against.
 - **The correct-score grid made 0-0 the most likely score on one fixture in
   five.** `fit_lambdas_to_probs` met four headline targets exactly — Over 2.5,
   supremacy, BTTS and draw — with four free knobs and no preference for a

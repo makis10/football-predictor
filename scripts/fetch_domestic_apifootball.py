@@ -37,6 +37,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
 from scripts._http_retry import QuotaExhausted, get_with_retry  # noqa: E402
+from scripts._feed_scores import api_football_goals  # noqa: E402
 
 API_BASE = "https://v3.football.api-sports.io"
 API_KEY = os.getenv("API_SPORTS_KEY", "")
@@ -122,8 +123,8 @@ def _backfill_season(db, league: str, league_id: int, resolve, today: date,
         fx = entry.get("fixture", {})
         if fx.get("status", {}).get("short", "") not in FINISHED_STATUSES:
             continue
-        g = entry.get("goals", {})
-        if g.get("home") is None or g.get("away") is None:
+        hg, ag = api_football_goals(entry)     # 90 minutes, not after extra time
+        if hg is None:
             continue
         try:
             dt_utc = datetime.fromisoformat(
@@ -137,8 +138,8 @@ def _backfill_season(db, league: str, league_id: int, resolve, today: date,
             "home_team": resolve(entry["teams"]["home"]["name"]) or entry["teams"]["home"]["name"],
             "away_team": resolve(entry["teams"]["away"]["name"]) or entry["teams"]["away"]["name"],
             "season":         _infer_season(league, dt_utc.date()),
-            "home_goals":     int(g["home"]),
-            "away_goals":     int(g["away"]),
+            "home_goals":     hg,
+            "away_goals":     ag,
         })
 
     missing = [f for f in _missing_finished(finished, existing) if f["season"] == label]
@@ -251,10 +252,10 @@ def main() -> None:
                 if status in UPCOMING_STATUSES and dt_utc.date() >= today:
                     upcoming.append(base)
                 elif status in FINISHED_STATUSES:
-                    g = entry.get("goals", {})
-                    if g.get("home") is None or g.get("away") is None:
+                    hg, ag = api_football_goals(entry)     # 90 minutes, not after extra time
+                    if hg is None:
                         continue
-                    base["home_goals"], base["away_goals"] = int(g["home"]), int(g["away"])
+                    base["home_goals"], base["away_goals"] = hg, ag
                     finished.append(base)
 
             print(f"{league}: {len(raw)} fixture(s) — "

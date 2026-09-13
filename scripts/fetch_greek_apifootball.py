@@ -31,6 +31,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
 from scripts._http_retry import QuotaExhausted, get_with_retry  # noqa: E402
+from scripts._feed_scores import api_football_goals  # noqa: E402
 
 API_BASE = "https://v3.football.api-sports.io"
 API_KEY  = os.getenv("API_SPORTS_KEY", "")
@@ -119,10 +120,10 @@ def main() -> None:
         if status in UPCOMING_STATUSES and dt_utc.date() >= today:
             upcoming.append(base)
         elif status in FINISHED_STATUSES:
-            g = entry.get("goals", {})
-            if g.get("home") is None or g.get("away") is None:
+            hg, ag = api_football_goals(entry)     # 90 minutes, not after extra time
+            if hg is None:
                 continue
-            base["home_goals"], base["away_goals"] = int(g["home"]), int(g["away"])
+            base["home_goals"], base["away_goals"] = hg, ag
             finished.append(base)
 
     print(f"  {len(upcoming)} upcoming / {len(finished)} finished")

@@ -29,6 +29,9 @@ import time
 import pandas as pd
 import requests
 
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
+from scripts._feed_scores import football_data_goals  # noqa: E402
+
 OUT_DIR = os.path.join(os.path.dirname(__file__), "..", "backend", "data", "european")
 
 # ── Mapping: football-data.org shortName → our CSV team names ────────────────
@@ -150,10 +153,7 @@ def matches_to_df(matches: list[dict], competition: str) -> pd.DataFrame:
     for m in matches:
         home = _map_team(m["homeTeam"].get("shortName"))
         away = _map_team(m["awayTeam"].get("shortName"))
-        score = m.get("score", {})
-        ft    = score.get("fullTime", {})
-        hg    = ft.get("home")
-        ag    = ft.get("away")
+        hg, ag = football_data_goals(m)                # 90 minutes, as the DB stores
         rows.append({
             "date":        m["utcDate"][:10],          # YYYY-MM-DD
             "competition": competition,

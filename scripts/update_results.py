@@ -20,6 +20,7 @@ from datetime import date, timedelta
 
 import requests
 from backend.app.redaction import redact  # noqa: E402
+from scripts._feed_scores import football_data_goals  # noqa: E402
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))  # project root
 
@@ -151,10 +152,8 @@ def fetch_finished(api_key: str, days_back: int) -> list[dict]:
             matches = resp.json().get("matches", [])
             print(f"{len(matches)} finished")
             for m in matches:
-                score = m.get("score", {}).get("fullTime", {})
-                hg = score.get("home")
-                ag = score.get("away")
-                if hg is None or ag is None:
+                hg, ag = football_data_goals(m)    # 90 minutes, not after extra time
+                if hg is None:
                     continue
                 match_date = m["utcDate"][:10]
                 home = map_team(m["homeTeam"]["shortName"])

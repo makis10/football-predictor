@@ -50,6 +50,7 @@ _PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 sys.path.insert(0, _PROJECT_ROOT)
 
 from scripts._http_retry import API_FOOTBALL_QUOTA_RC, get_with_retry  # noqa: E402
+from scripts._feed_scores import api_football_goals  # noqa: E402
 from scripts.team_resolver import same_club  # noqa: E402
 
 API_BASE = "https://v3.football.api-sports.io"
@@ -285,11 +286,10 @@ def main():
         if status in UPCOMING_STATUSES and dt_utc.date() >= today:
             upcoming.append(base)
         elif status in FINISHED_STATUSES:
-            goals = entry.get("goals", {})
-            if goals.get("home") is None or goals.get("away") is None:
+            hg, ag = api_football_goals(entry)     # 90 minutes, not after extra time
+            if hg is None:
                 continue
-            base["home_goals"] = int(goals["home"])
-            base["away_goals"] = int(goals["away"])
+            base["home_goals"], base["away_goals"] = hg, ag
             played.append(base)
 
     print(f"  {len(upcoming)} upcoming / {len(played)} finished with both teams known"

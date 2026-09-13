@@ -11,8 +11,10 @@ reconciles them.
 Which row wins: the OLDEST one. It is the row odds_history snapshots, tracked
 matches and user bets point at, and losing those is worse than losing a
 prediction that compute_predictions.py regenerates for free. The keeper is
-renamed to the canonical training-data spelling; the newer twins are deleted
-(their predictions go with them via ON DELETE CASCADE).
+renamed to the canonical training-data spelling; users' bets, bookmarks and
+ticket legs on the newer twins are moved onto it (backend/app/fixture_dependents
+.py), and the twins are deleted (their predictions go with them via ON DELETE
+CASCADE).
 
 Refuses to touch any group where more than one row already has a result — that
 is not a spelling duplicate, it is two genuinely different matches, and merging
@@ -67,6 +69,7 @@ def main() -> None:
     args = ap.parse_args()
 
     from backend.app.database import SessionLocal
+    from backend.app.fixture_dependents import move_dependents
     from backend.app.models.match import Match
     from scripts.team_resolver import canonical as canon
 
@@ -163,6 +166,9 @@ def main() -> None:
                     keeper.home_team, keeper.away_team = want_h, want_a
                     renamed += 1
                 for m in losers:
+                    # The bet, the bookmark and the accumulator leg belong to
+                    # the fixture, not to this spelling of it.
+                    move_dependents(db, m.id, keeper.id)
                     db.delete(m)
                     deleted += 1
 

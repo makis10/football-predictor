@@ -285,6 +285,7 @@ def prune_vanished(
 
     from sqlalchemy import delete, func, select
 
+    from backend.app.fixture_dependents import void_open_bets
     from backend.app.models.match import Match
 
     # Guard 1 — the landmine. `notin_(empty)` is a no-op, so the WHERE collapsed
@@ -343,6 +344,13 @@ def prune_vanished(
     if not prunable:
         return 0
 
+    # A user's open bet on a fixture that no longer exists is void, as a
+    # bookmaker settles it. The bet row survives the delete (user_bets →
+    # matches is ON DELETE SET NULL); its outcome has to be written first.
+    voided = void_open_bets(db, select(Match.id)
+                            .where(*_in_window())
+                            .where(Match.league.in_(prunable))
+                            .where(Match.id.notin_(touched_ids)))
     result = db.execute(
         delete(Match)
         .where(*_in_window())
@@ -351,5 +359,6 @@ def prune_vanished(
     )
     db.commit()
     if result.rowcount:
-        print(f"  Pruned {result.rowcount} vanished fixture(s) in {prunable}.")
+        print(f"  Pruned {result.rowcount} vanished fixture(s) in {prunable}"
+              + (f"; voided {voided} open user bet(s) on them." if voided else "."))
     return result.rowcount

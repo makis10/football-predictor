@@ -33,6 +33,7 @@ from sqlalchemy.orm import Session
 
 from backend.app.database import Base
 from backend.app.models.match import Match
+from backend.app.models.user import User, UserBet
 from scripts.fixture_upsert import MIN_FEED_COVERAGE, prune_vanished
 
 TODAY = date.today()
@@ -41,7 +42,9 @@ TODAY = date.today()
 @pytest.fixture()
 def db():
     engine = create_engine("sqlite://")
-    Base.metadata.create_all(engine, tables=[Match.__table__])
+    # user_bets too: prune voids open bets on what it deletes.
+    Base.metadata.create_all(engine, tables=[Match.__table__, User.__table__,
+                                             UserBet.__table__])
     with Session(engine) as session:
         yield session
 

@@ -15,8 +15,12 @@ interface ROIData {
 }
 
 interface BetOut {
-  id:        number;
-  match_id:  number;
+  id:         number;
+  // null once the fixture itself was removed (cancelled); the bet was voided first
+  match_id:   number | null;
+  home_team:  string | null;
+  away_team:  string | null;
+  match_date: string | null;
   market:    string;
   odds:      number;
   stake:     number;
@@ -133,12 +137,18 @@ export default async function MyROIPage() {
                   return (
                     <div key={b.id} className="flex items-center gap-3 px-4 py-3">
                       <div className="flex-1 min-w-0">
-                        <Link
-                          href={`/matches/${b.match_id}`}
-                          className="text-sm text-chalk font-medium hover:text-win transition-colors"
-                        >
-                          Match #{b.match_id}
-                        </Link>
+                        {b.match_id != null ? (
+                          <Link
+                            href={`/matches/${b.match_id}`}
+                            className="text-sm text-chalk font-medium hover:text-win transition-colors"
+                          >
+                            {b.home_team && b.away_team
+                              ? `${b.home_team} v ${b.away_team}`
+                              : `Match #${b.match_id}`}
+                          </Link>
+                        ) : (
+                          <p className="text-sm text-chalk-3 font-medium">Fixture cancelled</p>
+                        )}
                         <p className="text-xs text-chalk-2">
                           <span className="text-win">{mkt}</span>
                           {" · "}@{b.odds.toFixed(2)} · {b.stake.toFixed(2)}u

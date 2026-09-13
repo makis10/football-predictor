@@ -49,7 +49,10 @@ class TrackedMatch(Base):
 
     id:         Mapped[int]      = mapped_column(Integer, primary_key=True)
     user_id:    Mapped[int]      = mapped_column(Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=False, index=True)
-    match_id:   Mapped[int]      = mapped_column(Integer, ForeignKey("predictions.match_id", ondelete="CASCADE"), nullable=False)
+    # The fixture, not its prediction: compute_predictions deletes and rewrites
+    # predictions on schedule, and a key on them cascaded every bookmark away
+    # (migration 0037).
+    match_id:   Mapped[int]      = mapped_column(Integer, ForeignKey("matches.id", ondelete="CASCADE"), nullable=False)
     tracked_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
 
     user: Mapped[User] = relationship("User", back_populates="tracked_matches")
@@ -60,7 +63,9 @@ class UserBet(Base):
 
     id:        Mapped[int]            = mapped_column(Integer, primary_key=True)
     user_id:   Mapped[int]            = mapped_column(Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=False, index=True)
-    match_id:  Mapped[int]            = mapped_column(Integer, ForeignKey("predictions.match_id", ondelete="CASCADE"), nullable=False)
+    # The fixture, not its prediction (migration 0037). NULL once the fixture row
+    # itself is gone — the bet was voided before that; see fixture_dependents.
+    match_id:  Mapped[Optional[int]]  = mapped_column(Integer, ForeignKey("matches.id", ondelete="SET NULL"), nullable=True)
     market:    Mapped[str]            = mapped_column(String(50), nullable=False)
     odds:      Mapped[float]          = mapped_column(Float, nullable=False)
     stake:     Mapped[float]          = mapped_column(Float, nullable=False, default=1.0)

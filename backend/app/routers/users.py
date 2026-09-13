@@ -19,7 +19,7 @@ from sqlalchemy.orm import Session
 from backend.app.database import get_db
 from backend.app.internal_auth import require_internal_secret
 from backend.app.models.feedback import Feedback
-from backend.app.models.prediction import Prediction
+from backend.app.models.match import Match
 from backend.app.models.user import TrackedMatch, User, UserBet
 from backend.app.rate_limit import rate_limit_check
 
@@ -138,7 +138,18 @@ class BetRequest(BaseModel):
 
 class BetOut(BaseModel):
     id:        int
-    match_id:  int
+    # NULL once the fixture itself is gone (cancelled and pruned); the bet was
+    # voided first — see backend/app/fixture_dependents.py.
+    match_id:   Optional[int]
+    home_team:  Optional[str] = None
+    away_team:  Optional[str] = None
+    match_date: Optional[str] = None
+
+    @field_validator("home_team", "away_team")
+    @classmethod
+    def _spell_for_the_reader(cls, v: Optional[str]) -> Optional[str]:
+        return (display_name(v) or v) if v else v
+
     market:    str
     odds:      float
     stake:     float
@@ -213,8 +224,10 @@ def get_tracked(
                 p.suggested_market,
                 p.confidence
             FROM tracked_matches tm
-            JOIN predictions p ON p.match_id = tm.match_id
-            JOIN matches m     ON m.id        = tm.match_id
+            JOIN matches m          ON m.id       = tm.match_id
+            -- LEFT: a prediction is rewritten on schedule, and a bookmark must
+            -- not blink out of the list while its fixture is being re-priced.
+            LEFT JOIN predictions p ON p.match_id = tm.match_id
             WHERE tm.user_id = :uid
             ORDER BY m.match_date DESC
         """),
@@ -240,7 +253,7 @@ def track_match(
         db.commit()
         return {"tracked": False}
 
-    if not db.query(Prediction).filter(Prediction.match_id == body.match_id).first():
+    if db.get(Match, body.match_id) is None:
         raise HTTPException(status_code=404, detail="Match not found")
 
     tm = TrackedMatch(user_id=user.id, match_id=body.match_id)
@@ -270,20 +283,30 @@ def get_bets(
     user: User = Depends(get_current_user),
     db:   Session = Depends(get_db),
 ):
-    bets = db.query(UserBet).filter(UserBet.user_id == user.id).order_by(UserBet.placed_at.desc()).all()
-    return [
-        BetOut(
-            id=b.id,
-            match_id=b.match_id,
-            market=b.market,
-            odds=b.odds,
-            stake=b.stake,
-            outcome=b.outcome,
-            profit=b.profit,
-            placed_at=str(b.placed_at),
-        )
-        for b in bets
-    ]
+    rows = (
+        db.query(UserBet, Match)
+        .outerjoin(Match, Match.id == UserBet.match_id)
+        .filter(UserBet.user_id == user.id)
+        .order_by(UserBet.placed_at.desc())
+        .all()
+    )
+    return [_bet_out(b, m) for b, m in rows]
+
+
+def _bet_out(b: UserBet, m: Optional[Match]) -> BetOut:
+    return BetOut(
+        id=b.id,
+        match_id=b.match_id,
+        home_team=m.home_team if m else None,
+        away_team=m.away_team if m else None,
+        match_date=m.match_date.isoformat() if m else None,
+        market=b.market,
+        odds=b.odds,
+        stake=b.stake,
+        outcome=b.outcome,
+        profit=b.profit,
+        placed_at=str(b.placed_at),
+    )
 
 
 @router.post("/bets", response_model=BetOut, status_code=status.HTTP_201_CREATED)
@@ -292,7 +315,8 @@ def place_bet(
     user: User = Depends(get_current_user),
     db:   Session = Depends(get_db),
 ):
-    if not db.query(Prediction).filter(Prediction.match_id == body.match_id).first():
+    match = db.get(Match, body.match_id)
+    if match is None:
         raise HTTPException(status_code=404, detail="Match not found")
 
     bet = UserBet(
@@ -305,16 +329,7 @@ def place_bet(
     db.add(bet)
     db.commit()
     db.refresh(bet)
-    return BetOut(
-        id=bet.id,
-        match_id=bet.match_id,
-        market=bet.market,
-        odds=bet.odds,
-        stake=bet.stake,
-        outcome=bet.outcome,
-        profit=bet.profit,
-        placed_at=str(bet.placed_at),
-    )
+    return _bet_out(bet, match)
 
 
 class SettleRequest(BaseModel):
@@ -342,11 +357,7 @@ def settle_bet(
         bet.profit = 0.0
     db.commit()
     db.refresh(bet)
-    return BetOut(
-        id=bet.id, match_id=bet.match_id, market=bet.market,
-        odds=bet.odds, stake=bet.stake, outcome=bet.outcome,
-        profit=bet.profit, placed_at=str(bet.placed_at),
-    )
+    return _bet_out(bet, db.get(Match, bet.match_id) if bet.match_id else None)
 
 
 # ── ROI ───────────────────────────────────────────────────────────────────────

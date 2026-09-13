@@ -51,6 +51,7 @@ sys.path.insert(0, str(ROOT))
 
 from backend.app.ml.league_registry import disambiguate  # noqa: E402
 from scripts._http_retry import QuotaExhausted, get_with_retry  # noqa: E402
+from scripts._feed_scores import api_football_goals  # noqa: E402
 
 API_BASE = "https://v3.football.api-sports.io"
 API_KEY = os.getenv("API_SPORTS_KEY", "")
@@ -221,9 +222,8 @@ def main() -> None:
                 fx = entry.get("fixture", {})
                 if fx.get("status", {}).get("short") not in FINISHED:
                     continue
-                g = entry.get("goals", {})
-                hg, ag = g.get("home"), g.get("away")
-                if hg is None or ag is None:
+                hg, ag = api_football_goals(entry)     # 90 minutes, as the DB stores
+                if hg is None:
                     continue
                 # disambiguate() before storing: API-Football calls the
                 # Belarusian club "Arsenal" and the Cypriot one "Olympiakos",
