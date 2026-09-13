@@ -77,6 +77,31 @@ def _ambiguous_pairs(fixtures: list[dict]) -> set[tuple]:
     return {k for k, n in counts.items() if n > 1}
 
 
+def _refresh_from_feed(row, f: dict) -> None:
+    """Copy the fields the feed owns onto a row it matched — on every path.
+
+    Each match branch used to copy its own subset. The exact-date branch took
+    the stage, the kick-off and the feed id; the feed-id and pairing branches
+    moved the date, never took the stage, and wrote the kick-off even when the
+    feed had none. So a fixture re-dated together with its stage kept the old
+    stage — 36 Europa League matchday 7/8 fixtures stayed "Group Stage" and
+    fell out of the league-phase table and its projections — and a feed with
+    no kick-off (fetch_upcoming sends None when it cannot parse one) erased the
+    time we held, which generate_tickets and poll_odds both branch on.
+
+    A feed never clears a value: an empty field means "not known here". The
+    stage and the feed id are also backfilled onto rows written before we
+    stored them — without the id a fixture cannot be priced from
+    API-Football's /odds.
+    """
+    if f.get("kickoff_time") is not None and row.kickoff_time != f["kickoff_time"]:
+        row.kickoff_time = f["kickoff_time"]
+    if f.get("round") and row.round != f["round"]:
+        row.round = f["round"]
+    if f.get("api_fixture_id") and not row.api_fixture_id:
+        row.api_fixture_id = f["api_fixture_id"]
+
+
 def upsert_fixtures(
     db,
     fixtures: list[dict],
@@ -108,18 +133,8 @@ def upsert_fixtures(
         ).first()
         if exists:
             if f.get("kickoff_time") is not None and exists.kickoff_time != f["kickoff_time"]:
-                exists.kickoff_time = f["kickoff_time"]
                 backfilled += 1
-            # Backfill the stage onto rows inserted before we stored it — without
-            # this, existing cup fixtures stay NULL forever and the league-phase
-            # table can't tell them apart from a qualifier.
-            if f.get("round") and exists.round != f["round"]:
-                exists.round = f["round"]
-            # Same backfill for the API-Football fixture id: every row written
-            # before 0033 has NULL, and without it that fixture can never be
-            # priced from API-Football's /odds.
-            if f.get("api_fixture_id") and not exists.api_fixture_id:
-                exists.api_fixture_id = f["api_fixture_id"]
+            _refresh_from_feed(exists, f)
             skipped += 1
             touched_ids.add(exists.id)
             continue
@@ -141,8 +156,8 @@ def upsert_fixtures(
                           f"({f['league']}): {same_id.match_date} → "
                           f"{f['match_date']}  [same fixture id]")
                     rescheduled += 1
-                same_id.match_date   = f["match_date"]
-                same_id.kickoff_time = f.get("kickoff_time")
+                same_id.match_date = f["match_date"]
+                _refresh_from_feed(same_id, f)
                 touched_ids.add(same_id.id)
                 continue
 
@@ -179,10 +194,10 @@ def upsert_fixtures(
             continue
         if candidate is not None:
             old_date = candidate.match_date
-            candidate.match_date   = f["match_date"]
-            candidate.kickoff_time = f.get("kickoff_time")
+            candidate.match_date = f["match_date"]
             if f.get("api_fixture_id"):
                 candidate.api_fixture_id = f["api_fixture_id"]
+            _refresh_from_feed(candidate, f)
             rescheduled += 1
             touched_ids.add(candidate.id)
             print(f"  ↻ rescheduled {f['home_team']} vs {f['away_team']} "

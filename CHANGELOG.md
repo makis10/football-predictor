@@ -25,6 +25,20 @@ History before this file was introduced lives in `git log`.
   last digit — so no published probability moves. The grid feeds the analysis
   panel's correct scores, O/U 1.5/3.5 and combo markets, the estimated ticket
   goal-line legs and the stored national correct scores.
+- **A fixture moved by its feed id kept its old stage, and could lose its
+  kick-off time.** `upsert_fixtures` copied a different subset of the feed's
+  fields in each branch that matches an existing row; only the exact-date
+  branch took the stage. When API-Football moved Europa League matchdays 7
+  and 8 from 16 September to January and relabelled them in the same response,
+  the feed-id branch moved the dates and left "Group Stage" behind, so 36
+  fixtures fell out of the league-phase table and its projections until a
+  later exact-date pass healed them. The same branches wrote the kick-off
+  unconditionally, erasing a known time whenever the feed had none. One helper
+  now refreshes stage, kick-off and feed id on every path and never clears a
+  value. `sync_stages` corrects the stage on rows the ingest paths cannot
+  reach — 9 of the 18 CL League Stage 1 rows had been settled first by
+  football-data.org, which sends no stage — keyed on the feed id, falling back
+  to a unique pairing within a day.
 
 ## 2026-09-12
 

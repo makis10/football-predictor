@@ -245,14 +245,61 @@ def update_results(db, played: list[dict]) -> int:
         hg, ag = f["home_goals"], f["away_goals"]
         row.home_goals, row.away_goals = hg, ag
         row.result = "H" if hg > ag else ("A" if ag > hg else "D")
-        # Finished fixtures never go through upsert_fixtures, so this is the only
-        # place their stage gets recorded — and the league-phase table needs it.
-        if f.get("round") and not row.round:
+        # Finished fixtures never go through upsert_fixtures. A row this lookup
+        # cannot reach (already settled by another job) is corrected by
+        # sync_stages below.
+        if f.get("round") and row.round != f["round"]:
             row.round = f["round"]
         updated += 1
         print(f"  ✓ {f['league']}: {f['home_team']} {hg}-{ag} {f['away_team']}")
     db.commit()
     return updated
+
+
+def sync_stages(db, fixtures: list[dict]) -> int:
+    """Make every row we hold carry the stage API-Football gives it now.
+
+    upsert_fixtures sees only upcoming fixtures and update_results only rows
+    still waiting for a score, so a stage that changed on a fixture already
+    settled — or settled first by football-data.org, which sends no stage — was
+    never corrected: 9 of the 18 CL League Stage 1 rows (2026-09-08..10) were
+    settled that way. Keyed on the feed id, which survives renamed clubs and
+    any date change. A row the id has not reached (another source wrote it) is
+    matched on the pairing within a day and adopts the id, but only when
+    exactly one row fits. A fixture the feed sends without a stage changes
+    nothing.
+    """
+    from sqlalchemy import select
+
+    from backend.app.models.match import Match
+
+    changed = 0
+    for f in fixtures:
+        rnd, fid = f.get("round"), f.get("api_fixture_id")
+        if not rnd or not fid:
+            continue
+        rows = db.scalars(select(Match).where(
+            Match.league == f["league"], Match.api_fixture_id == fid)).all()
+        if not rows:
+            rows = db.scalars(select(Match).where(
+                Match.league    == f["league"],
+                Match.home_team == f["home_team"],
+                Match.away_team == f["away_team"],
+                Match.api_fixture_id.is_(None),
+                Match.match_date >= f["match_date"] - timedelta(days=1),
+                Match.match_date <= f["match_date"] + timedelta(days=1),
+            )).all()
+            if len(rows) != 1:
+                continue
+            rows[0].api_fixture_id = fid
+        for row in rows:
+            if row.round != rnd:
+                print(f"  ↻ stage {f['league']} {row.home_team} vs {row.away_team} "
+                      f"({row.match_date}): {row.round} → {rnd}")
+                row.round = rnd
+                changed += 1
+    db.commit()
+    return changed
 
 
 # ── DB helpers ────────────────────────────────────────────────────────────────
@@ -315,6 +362,7 @@ def main():
     all_new: list = []
     total_scored = 0
 
+    total_restaged = 0
     try:
         for code, league_id in LEAGUE_IDS.items():
             print(f"\n{code} (API-Football league {league_id}) …")
@@ -334,8 +382,11 @@ def main():
                 all_new.extend(insert_fixtures(db, upcoming))
             if finished:
                 total_scored += update_results(db, finished)
+            # Last, so it also reaches the rows the two steps above just wrote.
+            total_restaged += sync_stages(db, upcoming + finished)
 
         print(f"\n{total_scored} result(s) written onto fixtures we already had.")
+        print(f"{total_restaged} stage label(s) corrected.")
         print(f"{len(all_new)} new fixture(s) inserted. Run scripts/compute_predictions.py "
               f"to price them (run_daily does this in step 6).")
 

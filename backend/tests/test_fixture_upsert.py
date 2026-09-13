@@ -197,3 +197,49 @@ def test_a_played_fixture_is_not_rewritten_by_its_feed_id(db):
     rows = _rows(db)
     assert len(rows) == 2, "a played match was moved by a feed id"
     assert rows[0].result == "H"
+
+
+# ── The fields the feed owns follow the row on every match path ─────────────
+
+def _uefa(match_date, rnd, fid=1400001, kickoff=time(20, 0)):
+    return {**_fixture(match_date, home="Bournemouth", away="Midtjylland",
+                       league="EL", kickoff=kickoff),
+            "round": rnd, "api_fixture_id": fid}
+
+
+def test_a_fixture_moved_by_its_feed_id_takes_the_feeds_stage(db):
+    """2026-08-28: API-Football served EL matchdays 7 and 8 as "Group Stage" on
+    2026-09-16, then moved them to January. The feed-id branch moved the dates
+    and kept the old stage, so 36 fixtures fell out of the league-phase table."""
+    upsert_fixtures(db, [_uefa(date(2026, 9, 16), "Group Stage")])
+    upsert_fixtures(db, [_uefa(date(2027, 1, 21), "League Stage - 7")])
+    (row,) = _rows(db)
+    assert (row.match_date, row.round) == (date(2027, 1, 21), "League Stage - 7")
+
+
+def test_a_fixture_moved_by_its_pairing_takes_the_feeds_stage(db):
+    upsert_fixtures(db, [_uefa(date(2026, 9, 16), "Group Stage", fid=None)])
+    upsert_fixtures(db, [_uefa(date(2026, 9, 18), "League Stage - 1", fid=None)])
+    (row,) = _rows(db)
+    assert (row.match_date, row.round) == (date(2026, 9, 18), "League Stage - 1")
+
+
+@pytest.mark.parametrize("new_date", [date(2026, 9, 16), date(2026, 9, 17)],
+                         ids=["exact-date", "moved-by-feed-id"])
+def test_a_feed_without_a_stage_or_kickoff_never_clears_ours(db, new_date):
+    """Only API-Football sends a stage, and fetch_upcoming sends no kick-off
+    when it cannot parse one: an empty field means "not known here"."""
+    upsert_fixtures(db, [_uefa(date(2026, 9, 16), "League Stage - 1")])
+    upsert_fixtures(db, [_uefa(new_date, None, kickoff=None)])
+    (row,) = _rows(db)
+    assert (row.round, row.kickoff_time) == ("League Stage - 1", time(20, 0))
+
+
+def test_a_pairing_reschedule_without_a_kickoff_keeps_the_one_we_had(db):
+    """The pairing branch assigned the feed's kick-off unconditionally, so a
+    re-dated fixture lost a known time — and generate_tickets and poll_odds
+    both branch on it being NULL."""
+    upsert_fixtures(db, [_fixture(date(2026, 8, 22))])
+    upsert_fixtures(db, [_fixture(date(2026, 8, 24), kickoff=None)])
+    (row,) = _rows(db)
+    assert (row.match_date, row.kickoff_time) == (date(2026, 8, 24), time(18, 30))
