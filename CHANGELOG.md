@@ -8,6 +8,26 @@ History before this file was introduced lives in `git log`.
 
 ### Fixed
 
+- **The nine discipline features read a match with no card data as a match
+  with no cards.** Eight leagues send card counts in full, five in part and
+  the other thirty-odd none — since July 2024 only a quarter of training rows
+  carry them — so on most recent rows both club models were told that both
+  sides had spotless records. A missing count now stays missing: the rolling
+  windows hold NaN for it, the features aggregate the matches that have data,
+  and a side with none is NaN, which both boosters route as missing. Measured
+  before landing on the held-out 2025–26 season (7,037 matches, the same rows
+  and seeds under both encodings): result log-loss +0.00007 (95% CI −0.00067 to
+  +0.00078), goals −0.00012 (−0.00063 to +0.00040). That is indistinguishable
+  from zero, so this is a correctness change, not an accuracy one. Training
+  stamps the convention on the models it saves and serving reads it off the
+  loaded model, so today's models are served exactly as they were fitted until
+  the next retrain replaces them. Two more defects in the same code: one
+  refereed match without card data turned that referee's card rate into NaN for
+  good (`float(NaN or 0)` is NaN) — no referee is affected in today's data,
+  but the next card-less row would have been; and a retrain never reached the
+  running API, which loaded its models once and served them until a restart
+  that nothing performs. It now reloads the models, calibrators and
+  specialists together whenever any model artifact changes.
 - **A bet logged or a match tracked on an upcoming fixture lasted only until
   the next re-price.** `user_bets` and `tracked_matches` were keyed on
   `predictions(match_id)` with `ON DELETE CASCADE`, and `compute_predictions.py`

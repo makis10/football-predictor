@@ -112,15 +112,40 @@ def _load_model(name: str):
 
 _result_model = None
 _goals_model  = None
+_models_stamp: Optional[float] = None
+
+
+def _artifacts_stamp() -> Optional[float]:
+    """Newest modification time among the model artifacts."""
+    try:
+        return max(e.stat().st_mtime for e in os.scandir(MODELS_DIR) if e.is_file())
+    except (OSError, ValueError):
+        return None
 
 
 def _get_models():
-    global _result_model, _goals_model
+    global _result_model, _goals_model, _models_stamp
+    # The weekly retrain rewrites these files under a running API process, which
+    # kept serving the old models — and their old calibrators, medians and
+    # thresholds — until something restarted it; nothing does. Reload everything
+    # when any artifact changes.
+    stamp = _artifacts_stamp()
+    if _models_stamp is not None and stamp is not None and stamp != _models_stamp:
+        reload_predict_models()
     if _result_model is None:
         _result_model = _load_model("model_result.pkl")
+        _models_stamp = stamp
     if _goals_model is None:
         _goals_model = _load_model("model_goals.pkl")
     return _result_model, _goals_model
+
+
+def feature_conventions() -> dict:
+    """How the loaded models' feature frame is built (train.FEATURE_CONVENTIONS,
+    stamped on the model when it was saved). A model without the stamp predates
+    it and was fitted under the legacy conventions: every key reads False."""
+    result_model, _ = _get_models()
+    return dict(getattr(result_model, "feature_conventions", None) or {})
 
 
 # ── Training imputation medians ───────────────────────────────────────────────
@@ -155,6 +180,14 @@ def reload_predict_models() -> None:
     _BTTS_THRESHOLD  = None
     _european_df     = None
     _impute_medians  = None
+    # The calibrators and the two specialists keep their own singletons. New
+    # models over old calibrators would be worse than serving all of it stale.
+    from backend.app.ml.btts_classifier import reload_btts_models
+    from backend.app.ml.calibration import reload_calibrators
+    from backend.app.ml.draw_classifier import reload_draw_models
+    reload_calibrators()
+    reload_draw_models()
+    reload_btts_models()
     import logging
     logging.getLogger("predict").info("[predict] Model singletons cleared — will reload on next predict call.")
 
@@ -479,7 +512,9 @@ def predict_match(
     # Only keep history strictly before the match date to avoid leakage
     hist = history_df[history_df["Date"] < pd.Timestamp(match_date)].copy()
     combined = pd.concat([hist, target_row], ignore_index=True)
-    combined = build_features(combined, european_df=_get_european_df())
+    combined = build_features(
+        combined, european_df=_get_european_df(),
+        cards_missing_nan=feature_conventions().get("cards_missing_nan", False))
 
     # Last row is our target — keep all FEATURE_COLS for downstream slicing
     feat_row = combined.iloc[[-1]][FEATURE_COLS]

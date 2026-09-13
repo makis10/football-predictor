@@ -90,7 +90,9 @@ print(f"  Eval  ({CUTOFF.date()} → {TEST_CUTOFF.date()}) : {n_eval_raw:,} rows
 
 # ── 2. Walk-forward feature engineering on ALL data ───────────────────────────
 print("\nBuilding walk-forward features (full dataset) …")
-df_feat = build_features(df_all, european_df=eur_df)
+from backend.app.ml.predict import feature_conventions  # noqa: E402
+df_feat = build_features(df_all, european_df=eur_df,
+                         cards_missing_nan=feature_conventions().get("cards_missing_nan", False))
 
 # Exclude COVID season
 covid_mask = (df_feat["Date"] >= "2020-07-01") & (df_feat["Date"] < "2021-07-01")

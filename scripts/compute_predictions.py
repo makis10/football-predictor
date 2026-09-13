@@ -44,7 +44,7 @@ from backend.app.ml.features import (
 )
 from backend.app.ml.european import load_european_data, EUROPEAN_DIR
 from backend.app.ml.predict import (
-    SoftVoteEnsemble, _get_models, confidence_for, _get_draw_alpha,
+    SoftVoteEnsemble, _get_models, confidence_for, _get_draw_alpha, feature_conventions,
     _get_btts_threshold, anchor_binary_to_market,
 )
 from backend.app.ml.calibration import load_calibrators, apply_calibration
@@ -264,7 +264,9 @@ else:
 print(f"History: {len(history_df):,} rows", flush=True)
 
 print("Building team snapshot …", flush=True)
-snapshot = build_team_snapshot(history_df)
+# Built the way the loaded models were fitted (train.FEATURE_CONVENTIONS).
+snapshot = build_team_snapshot(
+    history_df, cards_missing_nan=feature_conventions().get("cards_missing_nan", False))
 print("Snapshot ready. Loading European data …", flush=True)
 
 # Teams absent from the Elo snapshot have no CSV history, so their features are

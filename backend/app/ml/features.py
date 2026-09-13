@@ -921,9 +921,69 @@ def _normalise(df: pd.DataFrame) -> pd.DataFrame:
     return df.sort_values("Date").reset_index(drop=True)
 
 
+# ── Cards ─────────────────────────────────────────────────────────────────────
+# The nine discipline features. Eight leagues send card counts in full, five in
+# part, and the other thirty-odd none at all — since July 2024 only a quarter of
+# the rows carry them. Read the way these features were first written, a match
+# with no card data counted as a match with no cards, so most of the model's
+# recent rows told it that both sides had spotless records.
+#
+# Under `cards_missing_nan` — the convention train.py fits under and stamps on
+# the models it saves (`feature_conventions`) — a missing count stays missing:
+# the rolling windows hold NaN for it, the features aggregate the matches that
+# have data, and a side with none is NaN, which both boosters route as missing.
+# Serving builds the frame the way the loaded model was fitted; a model without
+# the stamp was fitted the legacy way and keeps being served that way.
+CARD_FEATURE_COLS = [
+    "h_red_last1",      "a_red_last1",
+    "h_reds_5",         "a_reds_5",
+    "h_discipline_5",   "a_discipline_5",
+    "h_season_yellows", "a_season_yellows",
+    "suspension_diff",
+]
+_CARD_SOURCE_COLS = ("h_yellow", "a_yellow", "h_red", "a_red")
+
+
+def _card_count(v, missing_as_nan: bool) -> float:
+    """One side's cards of one colour in one match."""
+    if v is None or pd.isna(v):
+        return np.nan if missing_as_nan else 0.0
+    return float(v)
+
+
+def _team_card_feats(reds: list, yellows: list, season_yellows: float,
+                     season_known: int, missing_as_nan: bool) -> tuple:
+    """(red_last1, reds_5, discipline_5, season_yellows) for one side."""
+    if not missing_as_nan:
+        return (float(reds[-1]) if reds else 0.0,
+                float(sum(reds)),
+                (float(sum(yellows)) + 2.0 * float(sum(reds))) / max(1, len(reds)),
+                float(season_yellows))
+    known = [(r, y) for r, y in zip(reds, yellows) if not (np.isnan(r) or np.isnan(y))]
+    red_last1 = float(reds[-1]) if reds and not np.isnan(reds[-1]) else np.nan
+    season = float(season_yellows) if season_known else np.nan
+    if not known:
+        return red_last1, np.nan, np.nan, season
+    k_reds = sum(r for r, _ in known)
+    k_yels = sum(y for _, y in known)
+    return red_last1, float(k_reds), (k_yels + 2.0 * k_reds) / len(known), season
+
+
+def _referee_cards(row) -> "float | None":
+    """Cards shown in one refereed match, reds counting double; None when the
+    match has no card data. `float(NaN or 0)` is NaN, and one such match used
+    to turn the referee's card rate into NaN for every match after it."""
+    vals = [row.get(c) for c in _CARD_SOURCE_COLS]
+    if any(v is None or pd.isna(v) for v in vals):
+        return None
+    hy, ay, hr, ar = (float(v) for v in vals)
+    return hy + ay + 2 * hr + 2 * ar
+
+
 def build_features(
     df: pd.DataFrame,
     european_df: "pd.DataFrame | None" = None,
+    cards_missing_nan: bool = False,
 ) -> pd.DataFrame:
     """
     Walk through df in chronological order and compute features for every row
@@ -934,6 +994,7 @@ def build_features(
     by the difference between actual and model-expected goals.
 
     european_df : optional European competition fixtures for congestion features.
+    cards_missing_nan : the card convention — see CARD_FEATURE_COLS.
     """
     df = df.sort_values("Date").reset_index(drop=True)
 
@@ -1020,12 +1081,14 @@ def build_features(
     team_yellows_5: dict[str, deque] = defaultdict(_dq(_W5))
     # Season-cumulative yellows keyed by (season, team) — resets each new season
     team_season_yellows: dict = defaultdict(int)  # (season, team) → int
+    team_season_card_n:  dict = defaultdict(int)  # (season, team) → matches with card data
 
     # Per-referee running totals (EPL only; other leagues have no Referee column)
     ref_matches:   dict[str, int]   = defaultdict(int)
     ref_home_wins: dict[str, int]   = defaultdict(int)
     ref_draws:     dict[str, int]   = defaultdict(int)
     ref_cards:     dict[str, float] = defaultdict(float)
+    ref_card_matches: dict[str, int] = defaultdict(int)   # matches with card data
 
     known_leagues = ONE_HOT_LEAGUES
 
@@ -1219,7 +1282,8 @@ def build_features(
             n = ref_matches[ref_name]
             feat["ref_home_win_rate"]  = ref_home_wins[ref_name] / n
             feat["ref_draw_rate"]      = ref_draws[ref_name] / n
-            feat["ref_cards_per_game"] = ref_cards[ref_name] / n
+            _nc = ref_card_matches[ref_name]
+            feat["ref_cards_per_game"] = ref_cards[ref_name] / _nc if _nc else np.nan
         else:
             feat["ref_home_win_rate"]  = np.nan
             feat["ref_draw_rate"]      = np.nan
@@ -1336,18 +1400,12 @@ def build_features(
         # suspension_diff: home advantage/disadvantage from recent red cards.
         # NOTE: these are card-level proxies only; player-level injury data
         #       requires an external API (e.g. API-Football).
-        _h_reds5 = list(team_reds_5[h])
-        _a_reds5 = list(team_reds_5[a])
-        _h_yels5 = list(team_yellows_5[h])
-        _a_yels5 = list(team_yellows_5[a])
-        feat["h_red_last1"]      = float(_h_reds5[-1]) if _h_reds5 else 0.0
-        feat["a_red_last1"]      = float(_a_reds5[-1]) if _a_reds5 else 0.0
-        feat["h_reds_5"]         = float(sum(_h_reds5))
-        feat["a_reds_5"]         = float(sum(_a_reds5))
-        feat["h_discipline_5"]   = (float(sum(_h_yels5)) + 2.0 * float(sum(_h_reds5))) / max(1, len(_h_reds5))
-        feat["a_discipline_5"]   = (float(sum(_a_yels5)) + 2.0 * float(sum(_a_reds5))) / max(1, len(_a_reds5))
-        feat["h_season_yellows"] = float(team_season_yellows.get((season, h), 0))
-        feat["a_season_yellows"] = float(team_season_yellows.get((season, a), 0))
+        for side, t in (("h", h), ("a", a)):
+            (feat[f"{side}_red_last1"], feat[f"{side}_reds_5"],
+             feat[f"{side}_discipline_5"], feat[f"{side}_season_yellows"]) = _team_card_feats(
+                list(team_reds_5[t]), list(team_yellows_5[t]),
+                team_season_yellows.get((season, t), 0),
+                team_season_card_n.get((season, t), 0), cards_missing_nan)
         feat["suspension_diff"]  = feat["h_red_last1"] - feat["a_red_last1"]
 
         # ── League position (current season table) ────────────────────────────
@@ -1447,22 +1505,22 @@ def build_features(
                 ref_home_wins[ref_name] += 1
             elif hg == ag:
                 ref_draws[ref_name] += 1
-            hy = float(row.get("h_yellow", 0) or 0)
-            ay = float(row.get("a_yellow", 0) or 0)
-            hr = float(row.get("h_red",    0) or 0)
-            ar = float(row.get("a_red",    0) or 0)
-            # Weight reds more heavily (2× yellow equivalent)
-            ref_cards[ref_name] += hy + ay + 2 * hr + 2 * ar
+            _rc = _referee_cards(row)
+            if _rc is not None:
+                ref_cards[ref_name] += _rc
+                ref_card_matches[ref_name] += 1
 
         # Card / discipline state update (after snapshot — no leakage)
-        _h_ry = float(row.get("h_red",    0) or 0) if pd.notna(row.get("h_red",    0)) else 0.0
-        _a_ry = float(row.get("a_red",    0) or 0) if pd.notna(row.get("a_red",    0)) else 0.0
-        _h_yy = float(row.get("h_yellow", 0) or 0) if pd.notna(row.get("h_yellow", 0)) else 0.0
-        _a_yy = float(row.get("a_yellow", 0) or 0) if pd.notna(row.get("a_yellow", 0)) else 0.0
+        _h_ry = _card_count(row.get("h_red"),    cards_missing_nan)
+        _a_ry = _card_count(row.get("a_red"),    cards_missing_nan)
+        _h_yy = _card_count(row.get("h_yellow"), cards_missing_nan)
+        _a_yy = _card_count(row.get("a_yellow"), cards_missing_nan)
         team_reds_5[h].append(_h_ry);    team_reds_5[a].append(_a_ry)
         team_yellows_5[h].append(_h_yy); team_yellows_5[a].append(_a_yy)
-        team_season_yellows[(season, h)] += int(_h_yy)
-        team_season_yellows[(season, a)] += int(_a_yy)
+        for _t, _yy in ((h, _h_yy), (a, _a_yy)):
+            if not np.isnan(_yy):
+                team_season_yellows[(season, _t)] += int(_yy)
+                team_season_card_n[(season, _t)] += 1
 
         # Elo update
         new_h_elo, new_a_elo = _elo_update(elo[h], elo[a], hg, ag)
@@ -1518,7 +1576,7 @@ def build_features(
 
 # ── Batch-prediction helpers ──────────────────────────────────────────────────
 
-def build_team_snapshot(history_df: pd.DataFrame) -> dict:
+def build_team_snapshot(history_df: pd.DataFrame, cards_missing_nan: bool = False) -> dict:
     """
     Walk through history_df in chronological order and return a snapshot of all
     team state (Elo, Pi-Ratings, rolling deques, H2H) as of the last row.
@@ -1577,12 +1635,14 @@ def build_team_snapshot(history_df: pd.DataFrame) -> dict:
     snap_reds_5:    dict = defaultdict(_dq(_W5))
     snap_yellows_5: dict = defaultdict(_dq(_W5))
     snap_season_yellows: dict = defaultdict(int)  # (season, team) → int
+    snap_season_card_n:  dict = defaultdict(int)  # (season, team) → matches with card data
 
     # Per-referee running totals (EPL only)
     ref_matches:   dict = defaultdict(int)
     ref_home_wins: dict = defaultdict(int)
     ref_draws:     dict = defaultdict(int)
     ref_cards:     dict = defaultdict(float)
+    ref_card_matches: dict = defaultdict(int)   # matches with card data
 
     # Same per-league season tracking as build_features — the two must agree or
     # the serving path decays Pi-Ratings at different moments from training.
@@ -1688,22 +1748,23 @@ def build_team_snapshot(history_df: pd.DataFrame) -> dict:
             ref_matches[ref_name] += 1
             if hg > ag:   ref_home_wins[ref_name] += 1
             elif hg == ag: ref_draws[ref_name] += 1
-            hy = float(row.get("h_yellow", 0) or 0)
-            ay = float(row.get("a_yellow", 0) or 0)
-            hr = float(row.get("h_red",    0) or 0)
-            ar = float(row.get("a_red",    0) or 0)
-            ref_cards[ref_name] += hy + ay + 2 * hr + 2 * ar
+            _rc = _referee_cards(row)
+            if _rc is not None:
+                ref_cards[ref_name] += _rc
+                ref_card_matches[ref_name] += 1
 
         # Card / discipline state update
-        _s_hry = float(row.get("h_red",    0) or 0) if pd.notna(row.get("h_red",    0)) else 0.0
-        _s_ary = float(row.get("a_red",    0) or 0) if pd.notna(row.get("a_red",    0)) else 0.0
-        _s_hyy = float(row.get("h_yellow", 0) or 0) if pd.notna(row.get("h_yellow", 0)) else 0.0
-        _s_ayy = float(row.get("a_yellow", 0) or 0) if pd.notna(row.get("a_yellow", 0)) else 0.0
+        _s_hry = _card_count(row.get("h_red"),    cards_missing_nan)
+        _s_ary = _card_count(row.get("a_red"),    cards_missing_nan)
+        _s_hyy = _card_count(row.get("h_yellow"), cards_missing_nan)
+        _s_ayy = _card_count(row.get("a_yellow"), cards_missing_nan)
         snap_reds_5[h].append(_s_hry);    snap_reds_5[a].append(_s_ary)
         snap_yellows_5[h].append(_s_hyy); snap_yellows_5[a].append(_s_ayy)
         _snap_season_key = _snap_season
-        snap_season_yellows[(_snap_season_key, h)] += int(_s_hyy)
-        snap_season_yellows[(_snap_season_key, a)] += int(_s_ayy)
+        for _t, _yy in ((h, _s_hyy), (a, _s_ayy)):
+            if not np.isnan(_yy):
+                snap_season_yellows[(_snap_season_key, _t)] += int(_yy)
+                snap_season_card_n[(_snap_season_key, _t)] += 1
 
         new_h_elo, new_a_elo = _elo_update(elo[h], elo[a], hg, ag)
         elo[h] = new_h_elo; elo[a] = new_a_elo
@@ -1762,6 +1823,7 @@ def build_team_snapshot(history_df: pd.DataFrame) -> dict:
         team_xg_scored_10=team_xg_scored_10, team_xg_conceded_10=team_xg_conceded_10,
         ref_matches=ref_matches, ref_home_wins=ref_home_wins,
         ref_draws=ref_draws, ref_cards=ref_cards,
+        ref_card_matches=ref_card_matches,
         poisson_state=poisson,
         last_season=_prev_season_snap,  # season of last history row — used for inference-time Pi-Rating decay
         # Per-league versions of the above. `last_season` alone cannot answer
@@ -1783,6 +1845,8 @@ def build_team_snapshot(history_df: pd.DataFrame) -> dict:
         team_reds_5=snap_reds_5,
         team_yellows_5=snap_yellows_5,
         team_season_yellows=snap_season_yellows,
+        team_season_card_n=snap_season_card_n,
+        cards_missing_nan=cards_missing_nan,
         last_snap_season=_last_snap_season,
     )
 
@@ -2090,7 +2154,8 @@ def compute_match_features(
         n = ref_m[ref_name]
         feat["ref_home_win_rate"]  = ref_hw.get(ref_name, 0) / n
         feat["ref_draw_rate"]      = ref_dr.get(ref_name, 0) / n
-        feat["ref_cards_per_game"] = ref_ca.get(ref_name, 0.0) / n
+        _nc = s.get("ref_card_matches", ref_m).get(ref_name, 0)
+        feat["ref_cards_per_game"] = ref_ca.get(ref_name, 0.0) / _nc if _nc else np.nan
     else:
         feat["ref_home_win_rate"]  = np.nan
         feat["ref_draw_rate"]      = np.nan
@@ -2262,19 +2327,14 @@ def compute_match_features(
     _snap_last_season = s.get("last_snap_season")
     _card_season = _match_season if match_date is not None else _snap_last_season
 
-    _h_reds5_snap = list(_snap_r5.get(h, deque()))
-    _a_reds5_snap = list(_snap_r5.get(a, deque()))
-    _h_yels5_snap = list(_snap_y5.get(h, deque()))
-    _a_yels5_snap = list(_snap_y5.get(a, deque()))
-
-    feat["h_red_last1"]      = float(_h_reds5_snap[-1]) if _h_reds5_snap else 0.0
-    feat["a_red_last1"]      = float(_a_reds5_snap[-1]) if _a_reds5_snap else 0.0
-    feat["h_reds_5"]         = float(sum(_h_reds5_snap))
-    feat["a_reds_5"]         = float(sum(_a_reds5_snap))
-    feat["h_discipline_5"]   = (float(sum(_h_yels5_snap)) + 2.0 * float(sum(_h_reds5_snap))) / max(1, len(_h_reds5_snap))
-    feat["a_discipline_5"]   = (float(sum(_a_yels5_snap)) + 2.0 * float(sum(_a_reds5_snap))) / max(1, len(_a_reds5_snap))
-    feat["h_season_yellows"] = float(_snap_sy.get((_card_season, h), 0))
-    feat["a_season_yellows"] = float(_snap_sy.get((_card_season, a), 0))
+    _snap_sn = s.get("team_season_card_n", {})
+    _cards_nan = bool(s.get("cards_missing_nan", False))
+    for side, t in (("h", h), ("a", a)):
+        (feat[f"{side}_red_last1"], feat[f"{side}_reds_5"],
+         feat[f"{side}_discipline_5"], feat[f"{side}_season_yellows"]) = _team_card_feats(
+            list(_snap_r5.get(t, deque())), list(_snap_y5.get(t, deque())),
+            _snap_sy.get((_card_season, t), 0), _snap_sn.get((_card_season, t), 0),
+            _cards_nan)
     feat["suspension_diff"]  = feat["h_red_last1"] - feat["a_red_last1"]
 
     # ── League position (current season table) ────────────────────────────────

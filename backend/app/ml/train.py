@@ -57,7 +57,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "..", "..", "..
 
 from backend.app.ml.features import (
     FEATURE_COLS, RESULT_FEATURE_COLS, GOALS_FEATURE_COLS, BTTS_FEATURE_COLS,
-    build_features, load_raw_csvs,
+    CARD_FEATURE_COLS, build_features, load_raw_csvs,
     load_xg_data, merge_xg, XG_DIR,
     HISTORY_ONLY_LEAGUES,
 )
@@ -198,6 +198,12 @@ XG_COLS     = [
 # Imputed to the training-set median so non-EPL rows get a neutral prior.
 REF_COLS    = ["ref_home_win_rate", "ref_draw_rate", "ref_cards_per_game"]
 
+# How this module builds the frame it fits on, stamped on every model it saves
+# (`feature_conventions`) so serving builds the same frame — serving reads the
+# stamp off the loaded model, so it can never describe a different model from
+# the one it travels with. cards_missing_nan: features.CARD_FEATURE_COLS.
+FEATURE_CONVENTIONS = {"cards_missing_nan": True}
+
 # Poisson features — NaN for first MIN_SEASON_MATCHES of each season/league.
 # Imputed with training-set median (neutral prior for cold-start matches).
 POISSON_COLS = POISSON_FEATURE_COLS
@@ -320,7 +326,8 @@ def prepare_data(raw_dir: str) -> pd.DataFrame:
         print("  No European data found — congestion features will be 0")
 
     print("Engineering features …")
-    df = build_features(df, european_df=eur_df)
+    df = build_features(df, european_df=eur_df,
+                        cards_missing_nan=FEATURE_CONVENTIONS["cards_missing_nan"])
 
     # Drop the history-only leagues — AFTER build_features, which is the whole
     # point: their matches have already contributed Elo, form and H2H for clubs
@@ -343,6 +350,8 @@ def prepare_data(raw_dir: str) -> pd.DataFrame:
     # Pi-Ratings start at 0.0 (not NaN) so they never cause row drops here.
     optional_feats = (set(SHOTS_COLS) | set(EUROPEAN_FEATURE_COLS) | set(MARKET_COLS) |
                   set(XG_COLS) | set(REF_COLS) | set(POISSON_COLS) |
+                  # NaN where a league sends no card counts — kept, never imputed
+                  set(CARD_FEATURE_COLS) |
                   {"h2h_draw_rate",    # NaN when teams have no H2H history
                    # H2H goals — NaN until first meeting between this pair
                    "h2h_home_goals_avg", "h2h_away_goals_avg", "h2h_total_goals_avg",
@@ -753,9 +762,11 @@ def main():
 
     # ── Train XGBoost models on xgb_train, evaluate on test ───────────────────
     result_model, result_metrics = train_result_model(xgb_train, test)
+    result_model.feature_conventions = dict(FEATURE_CONVENTIONS)
     save_model(result_model, "model_result.pkl", MODELS_DIR)
 
     goals_model, goals_metrics = train_goals_model(xgb_train, test)
+    goals_model.feature_conventions = dict(FEATURE_CONVENTIONS)
     save_model(goals_model, "model_goals.pkl", MODELS_DIR)
 
     # ── Fit isotonic calibrators on the held-out calibration season ───────────
