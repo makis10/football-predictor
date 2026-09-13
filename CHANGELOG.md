@@ -125,6 +125,26 @@ History before this file was introduced lives in `git log`.
 - **The national value gate read the served probabilities**, where the club
   gate reads the unanchored raw twins. National predictions are unanchored
   today, so nothing moved; the gate stays correct if they ever are anchored.
+- **League tables for leagues added mid-season were built from half a
+  season.** The twelve expansion leagues (added 2026-07-30) and Brazil (added
+  2026-07-11) only ever held rows from the day they were added, and the
+  domestic fetcher by design never inserts a finished match, so their tables
+  and projections counted only the games since: Norway showed 4–6 games per
+  club with some twenty rounds played, Ireland 5 of about 30, Brazil 7–9.
+  `fetch_domestic_apifootball --backfill-season` inserts a league's
+  current-season finished matches as settled rows with no prediction — the
+  accuracy record only grades predictions made before kick-off, so it is
+  untouched — and refuses a league outright if a club the season does not
+  already hold appears. Run once: 673 matches across nine leagues, no
+  duplicate pairings; the tables now read 19–30 games per club where the
+  season is that far in. Brazil's Série A is labelled by calendar year: the
+  July rule seven writers each carried had split one championship across
+  "2025/26" and "2026/27". Every writer now takes its season from
+  `backend/app/ml/seasons.py`.
+- **Data repairs.** The two duplicate World Cup rows were removed and the
+  genuine pre-match rows moved to 7 July (/national/wc-review: 104 settled,
+  69 correct). 19 national rows took the venue and tournament the source now
+  lists.
 
 ## 2026-09-12
 
