@@ -1,11 +1,11 @@
 {
-"as_of": "2026-09-11",
-"fetched_on": "2026-09-12",
+"as_of": "2026-09-12",
+"fetched_on": "2026-09-13",
 "source": "https://clubelo.com/",
-"count": 1066,
+"count": 1068,
 "clubs": {
 "Bayern München": {
-"elo": 2045.0,
+"elo": 2044.0,
 "country": "GER",
 "level": 1,
 "aka": [
@@ -13,17 +13,17 @@
 ]
 },
 "Dortmund": {
-"elo": 1894.0,
+"elo": 1897.0,
 "country": "GER",
 "level": 1
 },
 "Leverkusen": {
-"elo": 1867.0,
+"elo": 1865.0,
 "country": "GER",
 "level": 1
 },
 "Stuttgart": {
-"elo": 1830.0,
+"elo": 1824.0,
 "country": "GER",
 "level": 1
 },
@@ -37,37 +37,37 @@
 ]
 },
 "Freiburg": {
-"elo": 1785.0,
+"elo": 1791.0,
 "country": "GER",
 "level": 1
 },
 "Hoffenheim": {
-"elo": 1747.0,
-"country": "GER",
-"level": 1
-},
-"Mainz": {
-"elo": 1746.0,
+"elo": 1753.0,
 "country": "GER",
 "level": 1
 },
 "Frankfurt": {
-"elo": 1732.0,
+"elo": 1741.0,
+"country": "GER",
+"level": 1
+},
+"Mainz": {
+"elo": 1736.0,
 "country": "GER",
 "level": 1
 },
 "Augsburg": {
-"elo": 1724.0,
-"country": "GER",
-"level": 1
-},
-"Gladbach": {
-"elo": 1690.0,
+"elo": 1725.0,
 "country": "GER",
 "level": 1
 },
 "Werder": {
-"elo": 1689.0,
+"elo": 1690.0,
+"country": "GER",
+"level": 1
+},
+"Gladbach": {
+"elo": 1682.0,
 "country": "GER",
 "level": 1
 },
@@ -80,12 +80,12 @@
 ]
 },
 "Elversberg": {
-"elo": 1678.0,
+"elo": 1677.0,
 "country": "GER",
 "level": 1
 },
 "Hamburg": {
-"elo": 1673.0,
+"elo": 1672.0,
 "country": "GER",
 "level": 1
 },
@@ -98,7 +98,7 @@
 ]
 },
 "Paderborn": {
-"elo": 1661.0,
+"elo": 1656.0,
 "country": "GER",
 "level": 1
 },
@@ -108,12 +108,12 @@
 "level": 1
 },
 "Wolfsburg": {
-"elo": 1679.0,
+"elo": 1672.0,
 "country": "GER",
 "level": 2
 },
 "Hertha": {
-"elo": 1645.0,
+"elo": 1644.0,
 "country": "GER",
 "level": 2
 },
@@ -127,10 +127,14 @@
 "country": "GER",
 "level": 2
 },
-"Lautern": {
-"elo": 1616.0,
+"St Pauli": {
+"elo": 1613.0,
 "country": "GER",
-"level": 2
+"level": 2,
+"aka": [
+"StPauli",
+"Pauli"
+]
 },
 "Nürnberg": {
 "elo": 1613.0,
@@ -141,41 +145,37 @@
 ]
 },
 "Bochum": {
-"elo": 1611.0,
+"elo": 1608.0,
 "country": "GER",
 "level": 2
 },
-"St Pauli": {
-"elo": 1607.0,
+"Lautern": {
+"elo": 1606.0,
 "country": "GER",
-"level": 2,
-"aka": [
-"StPauli",
-"Pauli"
-]
+"level": 2
 },
 "Holstein": {
-"elo": 1593.0,
+"elo": 1592.0,
 "country": "GER",
 "level": 2
 },
 "Darmstadt": {
-"elo": 1591.0,
+"elo": 1590.0,
 "country": "GER",
 "level": 2
 },
 "Karlsruhe": {
-"elo": 1587.0,
+"elo": 1586.0,
 "country": "GER",
 "level": 2
 },
 "Magdeburg": {
-"elo": 1572.0,
+"elo": 1582.0,
 "country": "GER",
 "level": 2
 },
 "Bielefeld": {
-"elo": 1572.0,
+"elo": 1571.0,
 "country": "GER",
 "level": 2
 },
@@ -198,7 +198,7 @@
 "level": 2
 },
 "Fürth": {
-"elo": 1525.0,
+"elo": 1528.0,
 "country": "GER",
 "level": 2
 },
@@ -251,7 +251,7 @@
 "level": 2
 },
 "Saarbrücken": {
-"elo": 1485.0,
+"elo": 1484.0,
 "country": "GER",
 "level": 2
 },
@@ -289,7 +289,7 @@
 "level": 2
 },
 "Sandhausen": {
-"elo": 1407.0,
+"elo": 1406.0,
 "country": "GER",
 "level": 2
 },
@@ -304,7 +304,7 @@
 "level": 2
 },
 "Havelse": {
-"elo": 1356.0,
+"elo": 1355.0,
 "country": "GER",
 "level": 2
 },
@@ -314,7 +314,7 @@
 "level": 2
 },
 "Arsenal": {
-"elo": 2039.0,
+"elo": 2041.0,
 "country": "ENG",
 "level": 1
 },
@@ -328,22 +328,9 @@
 ]
 },
 "Liverpool": {
-"elo": 1931.0,
+"elo": 1927.0,
 "country": "ENG",
 "level": 1
-},
-"Chelsea": {
-"elo": 1892.0,
-"country": "ENG",
-"level": 1
-},
-"Aston Villa": {
-"elo": 1891.0,
-"country": "ENG",
-"level": 1,
-"aka": [
-"AstonVilla"
-]
 },
 "Man United": {
 "elo": 1888.0,
@@ -354,31 +341,49 @@
 "United"
 ]
 },
+"Chelsea": {
+"elo": 1887.0,
+"country": "ENG",
+"level": 1
+},
 "Newcastle": {
 "elo": 1886.0,
 "country": "ENG",
 "level": 1
 },
+"Aston Villa": {
+"elo": 1883.0,
+"country": "ENG",
+"level": 1,
+"aka": [
+"AstonVilla"
+]
+},
 "Brighton": {
-"elo": 1863.0,
+"elo": 1862.0,
 "country": "ENG",
 "level": 1
 },
 "Bournemouth": {
-"elo": 1860.0,
+"elo": 1858.0,
+"country": "ENG",
+"level": 1
+},
+"Everton": {
+"elo": 1819.0,
 "country": "ENG",
 "level": 1
 },
 "Crystal Palace": {
-"elo": 1827.0,
+"elo": 1818.0,
 "country": "ENG",
 "level": 1,
 "aka": [
 "CrystalPalace"
 ]
 },
-"Everton": {
-"elo": 1819.0,
+"Forest": {
+"elo": 1811.0,
 "country": "ENG",
 "level": 1
 },
@@ -388,37 +393,32 @@
 "level": 1
 },
 "Leeds": {
-"elo": 1806.0,
-"country": "ENG",
-"level": 1
-},
-"Forest": {
-"elo": 1804.0,
+"elo": 1805.0,
 "country": "ENG",
 "level": 1
 },
 "Fulham": {
-"elo": 1795.0,
+"elo": 1798.0,
 "country": "ENG",
 "level": 1
 },
 "Sunderland": {
-"elo": 1737.0,
+"elo": 1735.0,
 "country": "ENG",
 "level": 1
 },
 "Ipswich": {
-"elo": 1690.0,
+"elo": 1700.0,
 "country": "ENG",
 "level": 1
 },
 "Brentford": {
-"elo": 1847.0,
+"elo": 1848.0,
 "country": "ENG",
 "level": 2
 },
 "West Ham": {
-"elo": 1783.0,
+"elo": 1782.0,
 "country": "ENG",
 "level": 2,
 "aka": [
@@ -432,60 +432,60 @@
 "level": 2
 },
 "Southampton": {
-"elo": 1699.0,
+"elo": 1705.0,
 "country": "ENG",
 "level": 2
 },
 "Coventry": {
-"elo": 1692.0,
-"country": "ENG",
-"level": 2
-},
-"Burnley": {
-"elo": 1655.0,
+"elo": 1693.0,
 "country": "ENG",
 "level": 2
 },
 "Middlesbrough": {
-"elo": 1646.0,
+"elo": 1651.0,
+"country": "ENG",
+"level": 2
+},
+"Burnley": {
+"elo": 1647.0,
 "country": "ENG",
 "level": 2
 },
 "Millwall": {
-"elo": 1644.0,
+"elo": 1637.0,
 "country": "ENG",
 "level": 2
 },
 "Hull": {
-"elo": 1630.0,
+"elo": 1636.0,
 "country": "ENG",
 "level": 2
 },
 "Sheffield United": {
-"elo": 1626.0,
+"elo": 1628.0,
 "country": "ENG",
 "level": 2,
 "aka": [
 "SheffieldUnited"
 ]
 },
-"Norwich": {
-"elo": 1624.0,
+"Birmingham": {
+"elo": 1623.0,
 "country": "ENG",
 "level": 2
 },
-"Birmingham": {
-"elo": 1617.0,
+"Norwich": {
+"elo": 1621.0,
 "country": "ENG",
 "level": 2
 },
 "Wrexham": {
-"elo": 1611.0,
+"elo": 1612.0,
 "country": "ENG",
 "level": 2
 },
 "Lincoln City": {
-"elo": 1605.0,
+"elo": 1610.0,
 "country": "ENG",
 "level": 2,
 "aka": [
@@ -493,7 +493,7 @@
 ]
 },
 "Swansea": {
-"elo": 1600.0,
+"elo": 1609.0,
 "country": "ENG",
 "level": 2
 },
@@ -506,35 +506,40 @@
 ]
 },
 "Bristol City": {
-"elo": 1588.0,
+"elo": 1584.0,
 "country": "ENG",
 "level": 2,
 "aka": [
 "BristolCity"
 ]
 },
+"Blackburn": {
+"elo": 1577.0,
+"country": "ENG",
+"level": 2
+},
 "QPR": {
-"elo": 1572.0,
+"elo": 1574.0,
 "country": "ENG",
 "level": 2
 },
 "Derby": {
-"elo": 1572.0,
-"country": "ENG",
-"level": 2
-},
-"Cardiff": {
 "elo": 1568.0,
 "country": "ENG",
 "level": 2
 },
-"Blackburn": {
-"elo": 1567.0,
+"Cardiff": {
+"elo": 1563.0,
 "country": "ENG",
 "level": 2
 },
 "Portsmouth": {
-"elo": 1554.0,
+"elo": 1556.0,
+"country": "ENG",
+"level": 2
+},
+"Stoke": {
+"elo": 1555.0,
 "country": "ENG",
 "level": 2
 },
@@ -543,28 +548,23 @@
 "country": "ENG",
 "level": 2
 },
-"Stoke": {
-"elo": 1548.0,
-"country": "ENG",
-"level": 2
-},
 "Watford": {
-"elo": 1536.0,
+"elo": 1532.0,
 "country": "ENG",
 "level": 2
 },
 "Preston": {
-"elo": 1528.0,
+"elo": 1524.0,
 "country": "ENG",
 "level": 2
 },
 "Leicester": {
-"elo": 1575.0,
+"elo": 1582.0,
 "country": "ENG",
 "level": 3
 },
 "Stockport": {
-"elo": 1557.0,
+"elo": 1552.0,
 "country": "ENG",
 "level": 3
 },
@@ -574,22 +574,22 @@
 "level": 3
 },
 "Plymouth": {
-"elo": 1540.0,
+"elo": 1546.0,
 "country": "ENG",
 "level": 3
 },
 "Oxford": {
+"elo": 1536.0,
+"country": "ENG",
+"level": 3
+},
+"Bolton": {
 "elo": 1529.0,
 "country": "ENG",
 "level": 3
 },
 "Reading": {
-"elo": 1524.0,
-"country": "ENG",
-"level": 3
-},
-"Bolton": {
-"elo": 1524.0,
+"elo": 1519.0,
 "country": "ENG",
 "level": 3
 },
@@ -599,27 +599,27 @@
 "level": 3
 },
 "Bradford": {
-"elo": 1504.0,
+"elo": 1509.0,
 "country": "ENG",
 "level": 3
 },
 "Wycombe": {
-"elo": 1498.0,
+"elo": 1503.0,
 "country": "ENG",
 "level": 3
 },
 "Mansfield": {
-"elo": 1493.0,
+"elo": 1492.0,
 "country": "ENG",
 "level": 3
 },
 "Blackpool": {
-"elo": 1491.0,
+"elo": 1490.0,
 "country": "ENG",
 "level": 3
 },
 "Stevenage FC": {
-"elo": 1482.0,
+"elo": 1481.0,
 "country": "ENG",
 "level": 3,
 "aka": [
@@ -632,32 +632,32 @@
 "level": 3
 },
 "Cambridge": {
-"elo": 1470.0,
+"elo": 1476.0,
 "country": "ENG",
 "level": 3
 },
 "Barnsley": {
-"elo": 1469.0,
+"elo": 1463.0,
 "country": "ENG",
 "level": 3
 },
 "Leyton Orient": {
-"elo": 1466.0,
+"elo": 1461.0,
 "country": "ENG",
 "level": 3
 },
 "Notts County": {
-"elo": 1466.0,
+"elo": 1461.0,
 "country": "ENG",
 "level": 3
 },
 "Doncaster": {
-"elo": 1460.0,
+"elo": 1454.0,
 "country": "ENG",
 "level": 3
 },
 "Peterboro": {
-"elo": 1453.0,
+"elo": 1454.0,
 "country": "ENG",
 "level": 3
 },
@@ -670,22 +670,22 @@
 ]
 },
 "Wigan": {
-"elo": 1444.0,
+"elo": 1445.0,
 "country": "ENG",
 "level": 3
 },
 "Bromley": {
-"elo": 1437.0,
+"elo": 1439.0,
 "country": "ENG",
 "level": 3
 },
 "Burton": {
-"elo": 1436.0,
+"elo": 1430.0,
 "country": "ENG",
 "level": 3
 },
 "AFC Wimbledon": {
-"elo": 1413.0,
+"elo": 1419.0,
 "country": "ENG",
 "level": 3,
 "aka": [
@@ -693,45 +693,50 @@
 ]
 },
 "York City": {
-"elo": 1473.0,
+"elo": 1496.0,
 "country": "ENG",
 "level": 4
 },
 "Barnet FC": {
-"elo": 1468.0,
+"elo": 1472.0,
 "country": "ENG",
 "level": 4,
 "aka": [
 "Barnet"
 ]
 },
-"Exeter City": {
-"elo": 1430.0,
-"country": "ENG",
-"level": 4
-},
 "Grimsby": {
-"elo": 1428.0,
+"elo": 1434.0,
 "country": "ENG",
 "level": 4
 },
 "Chesterfield": {
-"elo": 1425.0,
+"elo": 1432.0,
 "country": "ENG",
 "level": 4
 },
-"Swindon": {
-"elo": 1419.0,
+"Exeter City": {
+"elo": 1426.0,
 "country": "ENG",
 "level": 4
 },
 "Salford": {
-"elo": 1418.0,
+"elo": 1419.0,
+"country": "ENG",
+"level": 4
+},
+"Swindon": {
+"elo": 1413.0,
+"country": "ENG",
+"level": 4
+},
+"Port Vale": {
+"elo": 1411.0,
 "country": "ENG",
 "level": 4
 },
 "Walsall": {
-"elo": 1413.0,
+"elo": 1411.0,
 "country": "ENG",
 "level": 4
 },
@@ -741,72 +746,62 @@
 "level": 4
 },
 "Oldham": {
-"elo": 1406.0,
-"country": "ENG",
-"level": 4
-},
-"Port Vale": {
-"elo": 1406.0,
-"country": "ENG",
-"level": 4
-},
-"Bristol Rovers": {
-"elo": 1397.0,
+"elo": 1401.0,
 "country": "ENG",
 "level": 4
 },
 "Crewe": {
-"elo": 1395.0,
+"elo": 1396.0,
+"country": "ENG",
+"level": 4
+},
+"Bristol Rovers": {
+"elo": 1392.0,
 "country": "ENG",
 "level": 4
 },
 "Colchester": {
-"elo": 1390.0,
+"elo": 1389.0,
 "country": "ENG",
 "level": 4
 },
 "Rotherham": {
-"elo": 1386.0,
+"elo": 1387.0,
 "country": "ENG",
 "level": 4
 },
 "Cheltenham": {
-"elo": 1360.0,
+"elo": 1369.0,
 "country": "ENG",
 "level": 4
 },
 "Northampton": {
-"elo": 1356.0,
-"country": "ENG",
-"level": 4
-},
-"Crawley": {
-"elo": 1339.0,
-"country": "ENG",
-"level": 4
-},
-"Accrington Stanl": {
-"elo": 1334.0,
+"elo": 1347.0,
 "country": "ENG",
 "level": 4
 },
 "Gillingham": {
-"elo": 1333.0,
+"elo": 1340.0,
+"country": "ENG",
+"level": 4
+},
+"Crawley": {
+"elo": 1332.0,
+"country": "ENG",
+"level": 4
+},
+"Accrington Stanl": {
+"elo": 1331.0,
 "country": "ENG",
 "level": 4
 },
 "Tranmere": {
-"elo": 1323.0,
-"country": "ENG",
-"level": 4
-},
-"Newport County": {
-"elo": 1302.0,
+"elo": 1318.0,
 "country": "ENG",
 "level": 4
 },
 "Rochdale AFC": {
-"elo": 1301.0,
+"elo": 1308.0,
 "country": "ENG",
 "level": 4,
 "aka": [
@@ -814,12 +809,17 @@
 ]
 },
 "Shrewsbury": {
-"elo": 1298.0,
+"elo": 1307.0,
+"country": "ENG",
+"level": 4
+},
+"Newport County": {
+"elo": 1303.0,
 "country": "ENG",
 "level": 4
 },
 "Carlisle": {
-"elo": 1312.0,
+"elo": 1314.0,
 "country": "ENG",
 "level": 5
 },
@@ -829,22 +829,22 @@
 "level": 5
 },
 "Barrow": {
-"elo": 1298.0,
+"elo": 1299.0,
 "country": "ENG",
 "level": 5
 },
 "Morecambe": {
-"elo": 1285.0,
+"elo": 1286.0,
 "country": "ENG",
 "level": 5
 },
 "Barcelona": {
-"elo": 2017.0,
+"elo": 2016.0,
 "country": "ESP",
 "level": 1
 },
 "Real Madrid": {
-"elo": 1973.0,
+"elo": 1975.0,
 "country": "ESP",
 "level": 1,
 "aka": [
@@ -852,7 +852,7 @@
 ]
 },
 "Atlético": {
-"elo": 1888.0,
+"elo": 1887.0,
 "country": "ESP",
 "level": 1,
 "aka": [
@@ -860,12 +860,12 @@
 ]
 },
 "Betis": {
-"elo": 1811.0,
+"elo": 1810.0,
 "country": "ESP",
 "level": 1
 },
 "Villarreal": {
-"elo": 1795.0,
+"elo": 1794.0,
 "country": "ESP",
 "level": 1
 },
@@ -878,7 +878,7 @@
 ]
 },
 "Athletic Club": {
-"elo": 1769.0,
+"elo": 1766.0,
 "country": "ESP",
 "level": 1,
 "aka": [
@@ -894,26 +894,26 @@
 "celta"
 ]
 },
+"Valencia": {
+"elo": 1740.0,
+"country": "ESP",
+"level": 1
+},
 "Rayo Vallecano": {
-"elo": 1744.0,
+"elo": 1740.0,
 "country": "ESP",
 "level": 1,
 "aka": [
 "RayoVallecano"
 ]
 },
-"Valencia": {
-"elo": 1741.0,
+"Alaves": {
+"elo": 1728.0,
 "country": "ESP",
 "level": 1
 },
 "Osasuna": {
-"elo": 1736.0,
-"country": "ESP",
-"level": 1
-},
-"Alaves": {
-"elo": 1735.0,
+"elo": 1723.0,
 "country": "ESP",
 "level": 1
 },
@@ -927,38 +927,38 @@
 "country": "ESP",
 "level": 1
 },
-"Getafe": {
-"elo": 1702.0,
+"Espanyol": {
+"elo": 1712.0,
 "country": "ESP",
 "level": 1
 },
-"Espanyol": {
-"elo": 1702.0,
+"Getafe": {
+"elo": 1701.0,
 "country": "ESP",
 "level": 1
 },
 "Depor": {
-"elo": 1695.0,
-"country": "ESP",
-"level": 1
-},
-"Elche": {
-"elo": 1691.0,
+"elo": 1696.0,
 "country": "ESP",
 "level": 1
 },
 "Santander": {
-"elo": 1690.0,
+"elo": 1696.0,
+"country": "ESP",
+"level": 1
+},
+"Elche": {
+"elo": 1694.0,
 "country": "ESP",
 "level": 1
 },
 "Malaga": {
-"elo": 1673.0,
+"elo": 1675.0,
 "country": "ESP",
 "level": 1
 },
 "Girona": {
-"elo": 1723.0,
+"elo": 1714.0,
 "country": "ESP",
 "level": 2
 },
@@ -968,12 +968,17 @@
 "level": 2
 },
 "Almeria": {
-"elo": 1674.0,
+"elo": 1682.0,
+"country": "ESP",
+"level": 2
+},
+"Castellon": {
+"elo": 1681.0,
 "country": "ESP",
 "level": 2
 },
 "Las Palmas": {
-"elo": 1673.0,
+"elo": 1678.0,
 "country": "ESP",
 "level": 2,
 "aka": [
@@ -981,18 +986,13 @@
 "Palmas"
 ]
 },
-"Castellon": {
-"elo": 1672.0,
-"country": "ESP",
-"level": 2
-},
 "Eibar": {
-"elo": 1670.0,
+"elo": 1671.0,
 "country": "ESP",
 "level": 2
 },
 "Burgos": {
-"elo": 1654.0,
+"elo": 1655.0,
 "country": "ESP",
 "level": 2
 },
@@ -1002,7 +1002,7 @@
 "level": 2
 },
 "Gijon": {
-"elo": 1629.0,
+"elo": 1630.0,
 "country": "ESP",
 "level": 2
 },
@@ -1011,23 +1011,28 @@
 "country": "ESP",
 "level": 2
 },
-"Granada": {
-"elo": 1623.0,
-"country": "ESP",
-"level": 2
-},
 "Leganes": {
 "elo": 1622.0,
 "country": "ESP",
 "level": 2
 },
+"Granada": {
+"elo": 1622.0,
+"country": "ESP",
+"level": 2
+},
 "Albacete": {
-"elo": 1611.0,
+"elo": 1614.0,
+"country": "ESP",
+"level": 2
+},
+"Cordoba": {
+"elo": 1594.0,
 "country": "ESP",
 "level": 2
 },
 "FC Andorra": {
-"elo": 1604.0,
+"elo": 1594.0,
 "country": "ESP",
 "level": 2,
 "aka": [
@@ -1036,18 +1041,13 @@
 "andorra"
 ]
 },
-"Cordoba": {
-"elo": 1601.0,
-"country": "ESP",
-"level": 2
-},
 "Eldense": {
-"elo": 1582.0,
+"elo": 1583.0,
 "country": "ESP",
 "level": 2
 },
 "Sabadell": {
-"elo": 1582.0,
+"elo": 1581.0,
 "country": "ESP",
 "level": 2
 },
@@ -1063,17 +1063,17 @@
 ]
 },
 "Cadiz": {
-"elo": 1559.0,
+"elo": 1555.0,
 "country": "ESP",
 "level": 2
 },
 "Valladolid": {
-"elo": 1553.0,
+"elo": 1554.0,
 "country": "ESP",
 "level": 2
 },
 "Extremadura": {
-"elo": 1596.0,
+"elo": 1604.0,
 "country": "ESP",
 "level": 3
 },
@@ -1082,18 +1082,23 @@
 "country": "ESP",
 "level": 3
 },
-"Pontevedra": {
-"elo": 1572.0,
+"Mirandes": {
+"elo": 1575.0,
 "country": "ESP",
 "level": 3
 },
-"Mirandes": {
-"elo": 1569.0,
+"Real Jaen": {
+"elo": 1574.0,
 "country": "ESP",
 "level": 3
 },
 "Huesca": {
-"elo": 1568.0,
+"elo": 1570.0,
+"country": "ESP",
+"level": 3
+},
+"Pontevedra": {
+"elo": 1559.0,
 "country": "ESP",
 "level": 3
 },
@@ -1102,10 +1107,13 @@
 "country": "ESP",
 "level": 3
 },
-"Sant Andreu": {
-"elo": 1545.0,
+"UD Ibiza": {
+"elo": 1544.0,
 "country": "ESP",
-"level": 3
+"level": 3,
+"aka": [
+"Ibiza"
+]
 },
 "Zamora": {
 "elo": 1543.0,
@@ -1116,21 +1124,13 @@
 "zamora"
 ]
 },
-"UD Ibiza": {
-"elo": 1537.0,
-"country": "ESP",
-"level": 3,
-"aka": [
-"Ibiza"
-]
-},
 "Cultural Leonesa": {
 "elo": 1536.0,
 "country": "ESP",
 "level": 3
 },
 "Zaragoza": {
-"elo": 1534.0,
+"elo": 1535.0,
 "country": "ESP",
 "level": 3
 },
@@ -1144,38 +1144,33 @@
 "country": "ESP",
 "level": 3
 },
-"Real Jaen": {
-"elo": 1529.0,
+"Sant Andreu": {
+"elo": 1531.0,
 "country": "ESP",
 "level": 3
 },
 "Alcorcon": {
-"elo": 1523.0,
+"elo": 1525.0,
 "country": "ESP",
 "level": 3
 },
 "Antequera": {
-"elo": 1521.0,
-"country": "ESP",
-"level": 3
-},
-"Unionistas": {
-"elo": 1518.0,
+"elo": 1520.0,
 "country": "ESP",
 "level": 3
 },
 "Cartagena": {
-"elo": 1515.0,
-"country": "ESP",
-"level": 3
-},
-"Europa": {
 "elo": 1514.0,
 "country": "ESP",
 "level": 3
 },
 "Lugo": {
-"elo": 1514.0,
+"elo": 1513.0,
+"country": "ESP",
+"level": 3
+},
+"Unionistas": {
+"elo": 1509.0,
 "country": "ESP",
 "level": 3
 },
@@ -1187,12 +1182,12 @@
 "Coria"
 ]
 },
-"Merida": {
+"Real Union": {
 "elo": 1506.0,
 "country": "ESP",
 "level": 3
 },
-"Real Union": {
+"Europa": {
 "elo": 1506.0,
 "country": "ESP",
 "level": 3
@@ -1206,14 +1201,32 @@
 ]
 },
 "Logrones": {
+"elo": 1503.0,
+"country": "ESP",
+"level": 3
+},
+"Merida": {
 "elo": 1500.0,
 "country": "ESP",
 "level": 3
 },
-"Algeciras": {
-"elo": 1494.0,
+"Hercules": {
+"elo": 1496.0,
 "country": "ESP",
 "level": 3
+},
+"Algeciras": {
+"elo": 1495.0,
+"country": "ESP",
+"level": 3
+},
+"Águilas FC": {
+"elo": 1493.0,
+"country": "ESP",
+"level": 3,
+"aka": [
+"Águilas"
+]
 },
 "Ferrol": {
 "elo": 1490.0,
@@ -1225,23 +1238,10 @@
 "country": "ESP",
 "level": 3
 },
-"Hercules": {
-"elo": 1488.0,
-"country": "ESP",
-"level": 3
-},
 "Teruel": {
-"elo": 1484.0,
+"elo": 1478.0,
 "country": "ESP",
 "level": 3
-},
-"Águilas FC": {
-"elo": 1477.0,
-"country": "ESP",
-"level": 3,
-"aka": [
-"Águilas"
-]
 },
 "Torremolinos": {
 "elo": 1461.0,
@@ -1249,17 +1249,17 @@
 "level": 3
 },
 "Real Avilés": {
-"elo": 1434.0,
+"elo": 1446.0,
 "country": "ESP",
 "level": 3
 },
 "Deportivo Fabril": {
-"elo": 1407.0,
+"elo": 1406.0,
 "country": "ESP",
 "level": 3
 },
 "Majadahonda": {
-"elo": 1389.0,
+"elo": 1392.0,
 "country": "ESP",
 "level": 3
 },
@@ -1269,7 +1269,7 @@
 "level": 3
 },
 "Juventud Torremo": {
-"elo": 1574.0,
+"elo": 1576.0,
 "country": "ESP",
 "level": 3,
 "aka": [
@@ -1277,7 +1277,7 @@
 ]
 },
 "CE Europa": {
-"elo": 1548.0,
+"elo": 1546.0,
 "country": "ESP",
 "level": 3,
 "aka": [
@@ -1285,7 +1285,7 @@
 ]
 },
 "Numancia": {
-"elo": 1526.0,
+"elo": 1525.0,
 "country": "ESP",
 "level": 3
 },
@@ -1295,7 +1295,7 @@
 "level": 3
 },
 "FC La Unión Atlé": {
-"elo": 1521.0,
+"elo": 1523.0,
 "country": "ESP",
 "level": 3,
 "aka": [
@@ -1311,22 +1311,22 @@
 ]
 },
 "Amorebieta": {
-"elo": 1507.0,
-"country": "ESP",
-"level": 3
-},
-"Sestao": {
-"elo": 1493.0,
+"elo": 1508.0,
 "country": "ESP",
 "level": 3
 },
 "CA Antoniano": {
-"elo": 1492.0,
+"elo": 1494.0,
 "country": "ESP",
 "level": 3,
 "aka": [
 "Antoniano"
 ]
+},
+"Sestao": {
+"elo": 1493.0,
+"country": "ESP",
+"level": 3
 },
 "Atlético Baleare": {
 "elo": 1487.0,
@@ -1342,7 +1342,7 @@
 ]
 },
 "CD Estepona": {
-"elo": 1481.0,
+"elo": 1483.0,
 "country": "ESP",
 "level": 3,
 "aka": [
@@ -1350,7 +1350,7 @@
 ]
 },
 "Linares": {
-"elo": 1478.0,
+"elo": 1479.0,
 "country": "ESP",
 "level": 3
 },
@@ -1360,7 +1360,12 @@
 "level": 3
 },
 "UCAM Murcia": {
-"elo": 1470.0,
+"elo": 1472.0,
+"country": "ESP",
+"level": 3
+},
+"Xerez": {
+"elo": 1467.0,
 "country": "ESP",
 "level": 3
 },
@@ -1372,41 +1377,36 @@
 "SS Reyes"
 ]
 },
+"Segoviana": {
+"elo": 1462.0,
+"country": "ESP",
+"level": 3
+},
 "CE Andratx": {
-"elo": 1464.0,
+"elo": 1462.0,
 "country": "ESP",
 "level": 3,
 "aka": [
 "Andratx"
 ]
 },
-"Xerez": {
-"elo": 1463.0,
-"country": "ESP",
-"level": 3
-},
 "Aviles": {
 "elo": 1462.0,
 "country": "ESP",
 "level": 3
 },
-"Segoviana": {
-"elo": 1462.0,
-"country": "ESP",
-"level": 3
-},
 "Recreativo": {
-"elo": 1460.0,
+"elo": 1461.0,
 "country": "ESP",
 "level": 3
 },
 "Yeclano": {
-"elo": 1457.0,
+"elo": 1458.0,
 "country": "ESP",
 "level": 3
 },
 "CF Intercity": {
-"elo": 1455.0,
+"elo": 1456.0,
 "country": "ESP",
 "level": 3,
 "aka": [
@@ -1435,7 +1435,7 @@
 ]
 },
 "Torrent CF": {
-"elo": 1450.0,
+"elo": 1449.0,
 "country": "ESP",
 "level": 3,
 "aka": [
@@ -1443,12 +1443,12 @@
 ]
 },
 "Marino de Luanco": {
-"elo": 1444.0,
+"elo": 1443.0,
 "country": "ESP",
 "level": 3
 },
 "UD Melilla": {
-"elo": 1441.0,
+"elo": 1442.0,
 "country": "ESP",
 "level": 3,
 "aka": [
@@ -1456,7 +1456,7 @@
 ]
 },
 "Marbella FC": {
-"elo": 1438.0,
+"elo": 1439.0,
 "country": "ESP",
 "level": 3,
 "aka": [
@@ -1464,12 +1464,12 @@
 ]
 },
 "Orihuela": {
-"elo": 1424.0,
+"elo": 1426.0,
 "country": "ESP",
 "level": 3
 },
 "Sanluqueño": {
-"elo": 1420.0,
+"elo": 1421.0,
 "country": "ESP",
 "level": 3
 },
@@ -1490,7 +1490,7 @@
 ]
 },
 "Salamanca CF UDS": {
-"elo": 1419.0,
+"elo": 1418.0,
 "country": "ESP",
 "level": 3,
 "aka": [
@@ -1514,12 +1514,12 @@
 ]
 },
 "Terrassa": {
-"elo": 1400.0,
+"elo": 1398.0,
 "country": "ESP",
 "level": 3
 },
 "CD Quintanar Del": {
-"elo": 1383.0,
+"elo": 1384.0,
 "country": "ESP",
 "level": 3,
 "aka": [
@@ -1528,7 +1528,7 @@
 ]
 },
 "Espanyol Barcelo": {
-"elo": 1370.0,
+"elo": 1368.0,
 "country": "ESP",
 "level": 3
 },
@@ -1554,12 +1554,12 @@
 ]
 },
 "Langreo": {
-"elo": 1311.0,
+"elo": 1310.0,
 "country": "ESP",
 "level": 3
 },
 "Coruxo FC": {
-"elo": 1287.0,
+"elo": 1286.0,
 "country": "ESP",
 "level": 3,
 "aka": [
@@ -1572,7 +1572,7 @@
 "level": 3
 },
 "UD Mutilvera": {
-"elo": 1182.0,
+"elo": 1183.0,
 "country": "ESP",
 "level": 3,
 "aka": [
@@ -1585,7 +1585,7 @@
 "level": 3
 },
 "Paris SG": {
-"elo": 1953.0,
+"elo": 1952.0,
 "country": "FRA",
 "level": 1,
 "aka": [
@@ -1604,12 +1604,12 @@
 "level": 1
 },
 "Lyon": {
-"elo": 1789.0,
+"elo": 1788.0,
 "country": "FRA",
 "level": 1
 },
 "Lille": {
-"elo": 1784.0,
+"elo": 1783.0,
 "country": "FRA",
 "level": 1
 },
@@ -1624,12 +1624,12 @@
 "level": 1
 },
 "Strasbourg": {
-"elo": 1749.0,
+"elo": 1748.0,
 "country": "FRA",
 "level": 1
 },
 "Paris FC": {
-"elo": 1698.0,
+"elo": 1699.0,
 "country": "FRA",
 "level": 1,
 "aka": [
@@ -1638,12 +1638,12 @@
 ]
 },
 "Lorient": {
-"elo": 1697.0,
+"elo": 1696.0,
 "country": "FRA",
 "level": 1
 },
 "Toulouse": {
-"elo": 1684.0,
+"elo": 1685.0,
 "country": "FRA",
 "level": 1
 },
@@ -1653,12 +1653,12 @@
 "level": 1
 },
 "Nice": {
-"elo": 1666.0,
+"elo": 1660.0,
 "country": "FRA",
 "level": 1
 },
 "Auxerre": {
-"elo": 1639.0,
+"elo": 1645.0,
 "country": "FRA",
 "level": 1
 },
@@ -1673,7 +1673,7 @@
 "level": 1
 },
 "Le Havre": {
-"elo": 1611.0,
+"elo": 1610.0,
 "country": "FRA",
 "level": 1,
 "aka": [
@@ -1682,7 +1682,7 @@
 ]
 },
 "Le Mans": {
-"elo": 1583.0,
+"elo": 1584.0,
 "country": "FRA",
 "level": 1,
 "aka": [
@@ -1696,17 +1696,12 @@
 "level": 2
 },
 "Saint-Etienne": {
-"elo": 1620.0,
+"elo": 1613.0,
 "country": "FRA",
 "level": 2,
 "aka": [
 "SaintEtienne"
 ]
-},
-"Nantes": {
-"elo": 1579.0,
-"country": "FRA",
-"level": 2
 },
 "Montpellier": {
 "elo": 1578.0,
@@ -1723,13 +1718,13 @@
 "country": "FRA",
 "level": 2
 },
-"Annecy": {
-"elo": 1568.0,
+"Nantes": {
+"elo": 1572.0,
 "country": "FRA",
 "level": 2
 },
 "Red Star": {
-"elo": 1565.0,
+"elo": 1566.0,
 "country": "FRA",
 "level": 2,
 "aka": [
@@ -1737,18 +1732,28 @@
 "Star"
 ]
 },
+"Annecy": {
+"elo": 1563.0,
+"country": "FRA",
+"level": 2
+},
+"Dunkerque": {
+"elo": 1538.0,
+"country": "FRA",
+"level": 2
+},
 "Dijon": {
 "elo": 1538.0,
 "country": "FRA",
 "level": 2
 },
-"Dunkerque": {
-"elo": 1531.0,
+"Guingamp": {
+"elo": 1530.0,
 "country": "FRA",
 "level": 2
 },
-"Guingamp": {
-"elo": 1523.0,
+"Sochaux": {
+"elo": 1516.0,
 "country": "FRA",
 "level": 2
 },
@@ -1757,13 +1762,8 @@
 "country": "FRA",
 "level": 2
 },
-"Sochaux": {
-"elo": 1509.0,
-"country": "FRA",
-"level": 2
-},
 "Clermont": {
-"elo": 1497.0,
+"elo": 1498.0,
 "country": "FRA",
 "level": 2
 },
@@ -1773,27 +1773,46 @@
 "level": 2
 },
 "Pau": {
-"elo": 1487.0,
+"elo": 1488.0,
 "country": "FRA",
 "level": 2
 },
 "Laval": {
-"elo": 1483.0,
+"elo": 1484.0,
 "country": "FRA",
 "level": 2
 },
 "Boulogne": {
-"elo": 1482.0,
+"elo": 1483.0,
 "country": "FRA",
 "level": 2
 },
+"La Roche VF": {
+"elo": 1651.0,
+"country": "FRA",
+"level": 3,
+"aka": [
+"Roche VF",
+"La Roche"
+]
+},
 "Cannes": {
-"elo": 1590.0,
+"elo": 1587.0,
+"country": "FRA",
+"level": 3
+},
+"Thionville Lusit": {
+"elo": 1545.0,
+"country": "FRA",
+"level": 3
+},
+"Rouen": {
+"elo": 1526.0,
 "country": "FRA",
 "level": 3
 },
 "FC Fleury 91": {
-"elo": 1513.0,
+"elo": 1520.0,
 "country": "FRA",
 "level": 3,
 "aka": [
@@ -1801,13 +1820,8 @@
 "FC Fleury"
 ]
 },
-"Rouen": {
-"elo": 1508.0,
-"country": "FRA",
-"level": 3
-},
 "Le Puy Foot 43": {
-"elo": 1498.0,
+"elo": 1491.0,
 "country": "FRA",
 "level": 3,
 "aka": [
@@ -1815,23 +1829,23 @@
 "Le Puy Foot"
 ]
 },
-"Orleans": {
-"elo": 1483.0,
+"Versailles": {
+"elo": 1482.0,
 "country": "FRA",
 "level": 3
 },
 "Bastia": {
-"elo": 1477.0,
-"country": "FRA",
-"level": 3
-},
-"Versailles": {
-"elo": 1469.0,
+"elo": 1482.0,
 "country": "FRA",
 "level": 3
 },
 "Caen": {
-"elo": 1467.0,
+"elo": 1470.0,
+"country": "FRA",
+"level": 3
+},
+"Orleans": {
+"elo": 1469.0,
 "country": "FRA",
 "level": 3
 },
@@ -1841,37 +1855,37 @@
 "level": 3
 },
 "Concarneau": {
-"elo": 1444.0,
+"elo": 1446.0,
 "country": "FRA",
 "level": 3
 },
 "Quevilly": {
-"elo": 1424.0,
+"elo": 1431.0,
 "country": "FRA",
 "level": 3
 },
 "Valenciennes": {
-"elo": 1417.0,
+"elo": 1412.0,
 "country": "FRA",
 "level": 3
 },
 "Aubagne": {
-"elo": 1411.0,
-"country": "FRA",
-"level": 3
-},
-"Paris 13 Atletic": {
-"elo": 1391.0,
+"elo": 1399.0,
 "country": "FRA",
 "level": 3
 },
 "Villefranche": {
-"elo": 1388.0,
+"elo": 1394.0,
+"country": "FRA",
+"level": 3
+},
+"Paris 13 Atletic": {
+"elo": 1381.0,
 "country": "FRA",
 "level": 3
 },
 "Bourg-Peronnas": {
-"elo": 1368.0,
+"elo": 1360.0,
 "country": "FRA",
 "level": 3
 },
@@ -1896,7 +1910,7 @@
 "level": 3
 },
 "Chateauroux": {
-"elo": 1384.0,
+"elo": 1385.0,
 "country": "FRA",
 "level": 3
 },
@@ -1919,7 +1933,7 @@
 "level": 1
 },
 "Napoli": {
-"elo": 1831.0,
+"elo": 1832.0,
 "country": "ITA",
 "level": 1
 },
@@ -1928,18 +1942,18 @@
 "country": "ITA",
 "level": 1
 },
+"Como": {
+"elo": 1814.0,
+"country": "ITA",
+"level": 1
+},
 "Atalanta": {
-"elo": 1822.0,
+"elo": 1812.0,
 "country": "ITA",
 "level": 1,
 "aka": [
 "atalanta"
 ]
-},
-"Como": {
-"elo": 1814.0,
-"country": "ITA",
-"level": 1
 },
 "Lazio": {
 "elo": 1772.0,
@@ -1947,12 +1961,12 @@
 "level": 1
 },
 "Bologna": {
-"elo": 1759.0,
+"elo": 1758.0,
 "country": "ITA",
 "level": 1
 },
 "Fiorentina": {
-"elo": 1717.0,
+"elo": 1716.0,
 "country": "ITA",
 "level": 1
 },
@@ -1976,13 +1990,13 @@
 "country": "ITA",
 "level": 1
 },
-"Genoa": {
-"elo": 1664.0,
+"Cagliari": {
+"elo": 1670.0,
 "country": "ITA",
 "level": 1
 },
-"Cagliari": {
-"elo": 1659.0,
+"Genoa": {
+"elo": 1663.0,
 "country": "ITA",
 "level": 1
 },
@@ -2019,12 +2033,12 @@
 "level": 2
 },
 "Cremonese": {
-"elo": 1610.0,
+"elo": 1609.0,
 "country": "ITA",
 "level": 2
 },
 "Catanzaro": {
-"elo": 1576.0,
+"elo": 1580.0,
 "country": "ITA",
 "level": 2
 },
@@ -2034,7 +2048,7 @@
 "level": 2
 },
 "Modena": {
-"elo": 1551.0,
+"elo": 1552.0,
 "country": "ITA",
 "level": 2
 },
@@ -2054,7 +2068,7 @@
 "level": 2
 },
 "Juve Stabia": {
-"elo": 1531.0,
+"elo": 1532.0,
 "country": "ITA",
 "level": 2
 },
@@ -2064,21 +2078,21 @@
 "level": 2
 },
 "Avellino": {
-"elo": 1527.0,
+"elo": 1528.0,
 "country": "ITA",
 "level": 2
 },
 "Cesena": {
-"elo": 1521.0,
-"country": "ITA",
-"level": 2
-},
-"Entella": {
-"elo": 1510.0,
+"elo": 1522.0,
 "country": "ITA",
 "level": 2
 },
 "Padova": {
+"elo": 1516.0,
+"country": "ITA",
+"level": 2
+},
+"Entella": {
 "elo": 1510.0,
 "country": "ITA",
 "level": 2
@@ -2089,12 +2103,12 @@
 "level": 2
 },
 "Carrarese": {
-"elo": 1492.0,
+"elo": 1488.0,
 "country": "ITA",
 "level": 2
 },
 "Vicenza": {
-"elo": 1556.0,
+"elo": 1553.0,
 "country": "ITA",
 "level": 3,
 "aka": [
@@ -2103,22 +2117,22 @@
 ]
 },
 "Benevento": {
-"elo": 1545.0,
-"country": "ITA",
-"level": 3
-},
-"Ascoli": {
-"elo": 1535.0,
+"elo": 1547.0,
 "country": "ITA",
 "level": 3
 },
 "Spezia": {
-"elo": 1533.0,
+"elo": 1535.0,
+"country": "ITA",
+"level": 3
+},
+"Ascoli": {
+"elo": 1529.0,
 "country": "ITA",
 "level": 3
 },
 "Union Brescia": {
-"elo": 1529.0,
+"elo": 1526.0,
 "country": "ITA",
 "level": 3
 },
@@ -2133,47 +2147,47 @@
 "level": 3
 },
 "Ravenna": {
-"elo": 1491.0,
+"elo": 1490.0,
 "country": "ITA",
 "level": 3
 },
 "Salernitana": {
-"elo": 1488.0,
-"country": "ITA",
-"level": 3
-},
-"Catania": {
-"elo": 1486.0,
-"country": "ITA",
-"level": 3
-},
-"Reggiana": {
-"elo": 1485.0,
-"country": "ITA",
-"level": 3
-},
-"Pescara": {
-"elo": 1467.0,
+"elo": 1490.0,
 "country": "ITA",
 "level": 3
 },
 "Casertana": {
-"elo": 1466.0,
+"elo": 1483.0,
 "country": "ITA",
 "level": 3
 },
-"Trento": {
-"elo": 1448.0,
+"Reggiana": {
+"elo": 1482.0,
+"country": "ITA",
+"level": 3
+},
+"Catania": {
+"elo": 1474.0,
+"country": "ITA",
+"level": 3
+},
+"Pescara": {
+"elo": 1461.0,
 "country": "ITA",
 "level": 3
 },
 "Audace Cerignola": {
-"elo": 1446.0,
+"elo": 1448.0,
+"country": "ITA",
+"level": 3
+},
+"Trento": {
+"elo": 1445.0,
 "country": "ITA",
 "level": 3
 },
 "Cittadella": {
-"elo": 1443.0,
+"elo": 1441.0,
 "country": "ITA",
 "level": 3
 },
@@ -2183,34 +2197,39 @@
 "level": 3
 },
 "Potenza": {
-"elo": 1432.0,
+"elo": 1434.0,
 "country": "ITA",
 "level": 3
 },
 "Casarano": {
-"elo": 1431.0,
+"elo": 1433.0,
 "country": "ITA",
 "level": 3
 },
 "Cosenza": {
-"elo": 1430.0,
+"elo": 1429.0,
 "country": "ITA",
 "level": 3
 },
-"Calcio Lecco 191": {
-"elo": 1409.0,
-"country": "ITA",
-"level": 3,
-"aka": [
-"Calcio Lecco"
-]
-},
 "US Pianese": {
-"elo": 1408.0,
+"elo": 1411.0,
 "country": "ITA",
 "level": 3,
 "aka": [
 "Pianese"
+]
+},
+"Monopoli": {
+"elo": 1414.0,
+"country": "ITA",
+"level": 3
+},
+"Calcio Lecco 191": {
+"elo": 1405.0,
+"country": "ITA",
+"level": 3,
+"aka": [
+"Calcio Lecco"
 ]
 },
 "Perugia": {
@@ -2218,41 +2237,31 @@
 "country": "ITA",
 "level": 3
 },
+"Torres": {
+"elo": 1401.0,
+"country": "ITA",
+"level": 3
+},
 "Renate AC": {
-"elo": 1404.0,
+"elo": 1400.0,
 "country": "ITA",
 "level": 3,
 "aka": [
 "Renate"
 ]
 },
-"Torres": {
-"elo": 1403.0,
-"country": "ITA",
-"level": 3
-},
-"Monopoli": {
-"elo": 1414.0,
-"country": "ITA",
-"level": 3
-},
 "Campobasso": {
-"elo": 1396.0,
+"elo": 1400.0,
 "country": "ITA",
 "level": 3
 },
-"Alcione Milano": {
-"elo": 1395.0,
-"country": "ITA",
-"level": 3
-},
-"Lumezzane": {
-"elo": 1392.0,
+"Gubbio": {
+"elo": 1397.0,
 "country": "ITA",
 "level": 3
 },
 "Az Picerno Asd": {
-"elo": 1391.0,
+"elo": 1394.0,
 "country": "ITA",
 "level": 3,
 "aka": [
@@ -2260,46 +2269,56 @@
 "Az Picerno"
 ]
 },
-"Gubbio": {
-"elo": 1390.0,
+"Pineto": {
+"elo": 1391.0,
 "country": "ITA",
 "level": 3
 },
-"Pineto": {
-"elo": 1387.0,
+"Alcione Milano": {
+"elo": 1391.0,
+"country": "ITA",
+"level": 3
+},
+"Lumezzane": {
+"elo": 1388.0,
 "country": "ITA",
 "level": 3
 },
 "Cavese": {
-"elo": 1382.0,
+"elo": 1387.0,
+"country": "ITA",
+"level": 3
+},
+"Sorrento": {
+"elo": 1372.0,
+"country": "ITA",
+"level": 3
+},
+"Guidonia Montece": {
+"elo": 1370.0,
+"country": "ITA",
+"level": 3
+},
+"Ospitaletto": {
+"elo": 1368.0,
 "country": "ITA",
 "level": 3
 },
 "Vis Pesaro": {
-"elo": 1373.0,
+"elo": 1366.0,
 "country": "ITA",
 "level": 3,
 "aka": [
 "Pesaro"
 ]
 },
-"Ospitaletto": {
-"elo": 1372.0,
-"country": "ITA",
-"level": 3
-},
 "Livorno": {
-"elo": 1371.0,
-"country": "ITA",
-"level": 3
-},
-"Guidonia Montece": {
-"elo": 1367.0,
+"elo": 1365.0,
 "country": "ITA",
 "level": 3
 },
 "FC Arzignano Val": {
-"elo": 1366.0,
+"elo": 1362.0,
 "country": "ITA",
 "level": 3,
 "aka": [
@@ -2307,8 +2326,8 @@
 "FC Arzignano"
 ]
 },
-"Sorrento": {
-"elo": 1361.0,
+"Forli": {
+"elo": 1359.0,
 "country": "ITA",
 "level": 3
 },
@@ -2318,12 +2337,7 @@
 "level": 3
 },
 "AlbinoLeffe": {
-"elo": 1355.0,
-"country": "ITA",
-"level": 3
-},
-"Forli": {
-"elo": 1352.0,
+"elo": 1351.0,
 "country": "ITA",
 "level": 3
 },
@@ -2333,12 +2347,7 @@
 "level": 3
 },
 "Latina": {
-"elo": 1345.0,
-"country": "ITA",
-"level": 3
-},
-"Sambenedettese": {
-"elo": 1330.0,
+"elo": 1339.0,
 "country": "ITA",
 "level": 3
 },
@@ -2347,8 +2356,13 @@
 "country": "ITA",
 "level": 3
 },
+"Sambenedettese": {
+"elo": 1323.0,
+"country": "ITA",
+"level": 3
+},
 "Team Altamura": {
-"elo": 1320.0,
+"elo": 1322.0,
 "country": "ITA",
 "level": 3
 },
@@ -2358,12 +2372,12 @@
 "level": 3
 },
 "Dolomiti": {
-"elo": 1289.0,
+"elo": 1285.0,
 "country": "ITA",
 "level": 3
 },
 "US Pergolettese": {
-"elo": 1283.0,
+"elo": 1279.0,
 "country": "ITA",
 "level": 3,
 "aka": [
@@ -2399,12 +2413,12 @@
 "level": 3
 },
 "Taranto": {
-"elo": 1437.0,
+"elo": 1438.0,
 "country": "ITA",
 "level": 3
 },
 "AZ Picerno": {
-"elo": 1434.0,
+"elo": 1435.0,
 "country": "ITA",
 "level": 3,
 "aka": [
@@ -2422,7 +2436,7 @@
 "level": 3
 },
 "Albinoleffe": {
-"elo": 1392.0,
+"elo": 1393.0,
 "country": "ITA",
 "level": 3
 },
@@ -2475,7 +2489,7 @@
 "level": 3
 },
 "Siracusa Calcio": {
-"elo": 1342.0,
+"elo": 1345.0,
 "country": "ITA",
 "level": 3
 },
@@ -2541,7 +2555,7 @@
 ]
 },
 "Porto": {
-"elo": 1827.0,
+"elo": 1830.0,
 "country": "POR",
 "level": 1,
 "aka": [
@@ -2558,13 +2572,13 @@
 "country": "POR",
 "level": 1
 },
-"Guimaraes": {
-"elo": 1577.0,
+"Arouca": {
+"elo": 1570.0,
 "country": "POR",
 "level": 1
 },
-"Arouca": {
-"elo": 1570.0,
+"Guimaraes": {
+"elo": 1569.0,
 "country": "POR",
 "level": 1
 },
@@ -2587,18 +2601,18 @@
 "country": "POR",
 "level": 1
 },
-"Estoril": {
-"elo": 1524.0,
+"Alverca": {
+"elo": 1531.0,
 "country": "POR",
 "level": 1
 },
-"Alverca": {
-"elo": 1521.0,
+"Estoril": {
+"elo": 1523.0,
 "country": "POR",
 "level": 1
 },
 "Estrela Amadora": {
-"elo": 1503.0,
+"elo": 1502.0,
 "country": "POR",
 "level": 1
 },
@@ -2611,26 +2625,26 @@
 "Rio"
 ]
 },
-"Nacional": {
-"elo": 1498.0,
-"country": "POR",
-"level": 1
-},
 "Maritimo": {
 "elo": 1495.0,
 "country": "POR",
 "level": 1
 },
 "Ac Viseu": {
-"elo": 1486.0,
+"elo": 1494.0,
 "country": "POR",
 "level": 1,
 "aka": [
 "Viseu"
 ]
 },
+"Nacional": {
+"elo": 1488.0,
+"country": "POR",
+"level": 1
+},
 "Casa Pia": {
-"elo": 1486.0,
+"elo": 1483.0,
 "country": "POR",
 "level": 1,
 "aka": [
@@ -2638,7 +2652,7 @@
 ]
 },
 "Tondela": {
-"elo": 1462.0,
+"elo": 1469.0,
 "country": "POR",
 "level": 2
 },
@@ -2658,7 +2672,7 @@
 "level": 2
 },
 "SC Farense": {
-"elo": 1437.0,
+"elo": 1436.0,
 "country": "POR",
 "level": 2,
 "aka": [
@@ -2673,6 +2687,11 @@
 "Futebol"
 ]
 },
+"Penafiel": {
+"elo": 1431.0,
+"country": "POR",
+"level": 2
+},
 "Lusitania FC Lou": {
 "elo": 1428.0,
 "country": "POR",
@@ -2681,13 +2700,8 @@
 "Lusitania FC"
 ]
 },
-"Penafiel": {
-"elo": 1424.0,
-"country": "POR",
-"level": 2
-},
 "Felgueiras": {
-"elo": 1419.0,
+"elo": 1412.0,
 "country": "POR",
 "level": 2
 },
@@ -2702,7 +2716,7 @@
 "level": 2
 },
 "Portimonense": {
-"elo": 1384.0,
+"elo": 1377.0,
 "country": "POR",
 "level": 2
 },
@@ -2712,7 +2726,7 @@
 "level": 2
 },
 "Academica": {
-"elo": 1355.0,
+"elo": 1357.0,
 "country": "POR",
 "level": 2
 },
@@ -2722,7 +2736,7 @@
 "level": 2
 },
 "Pacos Ferreira": {
-"elo": 1376.0,
+"elo": 1377.0,
 "country": "POR",
 "level": 2
 },
@@ -2735,7 +2749,7 @@
 ]
 },
 "UD Oliveirense": {
-"elo": 1328.0,
+"elo": 1329.0,
 "country": "POR",
 "level": 2,
 "aka": [
@@ -2756,12 +2770,12 @@
 ]
 },
 "Besiktas": {
-"elo": 1692.0,
+"elo": 1693.0,
 "country": "TUR",
 "level": 1
 },
 "Amed SK": {
-"elo": 1670.0,
+"elo": 1673.0,
 "country": "TUR",
 "level": 1,
 "aka": [
@@ -2771,7 +2785,7 @@
 ]
 },
 "Trabzonspor": {
-"elo": 1654.0,
+"elo": 1647.0,
 "country": "TUR",
 "level": 1
 },
@@ -2783,11 +2797,6 @@
 "istanbul basaksehir"
 ]
 },
-"Samsunspor": {
-"elo": 1615.0,
-"country": "TUR",
-"level": 1
-},
 "Göztepe": {
 "elo": 1600.0,
 "country": "TUR",
@@ -2795,6 +2804,11 @@
 "aka": [
 "Goeztepe"
 ]
+},
+"Samsunspor": {
+"elo": 1599.0,
+"country": "TUR",
+"level": 1
 },
 "Kocaelispor": {
 "elo": 1578.0,
@@ -2806,26 +2820,26 @@
 "country": "TUR",
 "level": 1
 },
-"Alanyaspor": {
-"elo": 1570.0,
-"country": "TUR",
-"level": 1
-},
 "Erzurum": {
-"elo": 1568.0,
+"elo": 1572.0,
 "country": "TUR",
 "level": 1,
 "aka": [
 "ErzurumBB"
 ]
 },
-"Kasimpasa": {
-"elo": 1557.0,
+"Alanyaspor": {
+"elo": 1569.0,
 "country": "TUR",
 "level": 1
 },
 "Rizespor": {
-"elo": 1555.0,
+"elo": 1565.0,
+"country": "TUR",
+"level": 1
+},
+"Kasimpasa": {
+"elo": 1558.0,
 "country": "TUR",
 "level": 1
 },
@@ -2834,26 +2848,34 @@
 "country": "TUR",
 "level": 1
 },
-"Eyupspor": {
-"elo": 1540.0,
+"Konyaspor": {
+"elo": 1533.0,
 "country": "TUR",
 "level": 1
 },
-"Konyaspor": {
-"elo": 1525.0,
+"Eyupspor": {
+"elo": 1531.0,
 "country": "TUR",
 "level": 1
 },
 "Bandırmaspor": {
-"elo": 1628.0,
+"elo": 1631.0,
 "country": "TUR",
 "level": 2,
 "aka": [
 "bandirmaspor"
 ]
 },
+"Çorum FK": {
+"elo": 1581.0,
+"country": "TUR",
+"level": 2,
+"aka": [
+"Çorum"
+]
+},
 "Bodrum": {
-"elo": 1566.0,
+"elo": 1570.0,
 "country": "TUR",
 "level": 2,
 "aka": [
@@ -2861,16 +2883,13 @@
 "bodrum"
 ]
 },
-"Çorum FK": {
-"elo": 1539.0,
-"country": "TUR",
-"level": 2,
-"aka": [
-"Çorum"
-]
-},
 "Antalyaspor": {
 "elo": 1503.0,
+"country": "TUR",
+"level": 2
+},
+"Sivasspor": {
+"elo": 1502.0,
 "country": "TUR",
 "level": 2
 },
@@ -2884,18 +2903,13 @@
 "country": "TUR",
 "level": 2
 },
-"Sivasspor": {
-"elo": 1500.0,
-"country": "TUR",
-"level": 2
-},
 "Boluspor": {
-"elo": 1478.0,
+"elo": 1481.0,
 "country": "TUR",
 "level": 2
 },
 "İstanbulspor AŞ": {
-"elo": 1470.0,
+"elo": 1472.0,
 "country": "TUR",
 "level": 2,
 "aka": [
@@ -2903,17 +2917,17 @@
 ]
 },
 "Hatayspor": {
-"elo": 1401.0,
+"elo": 1403.0,
 "country": "TUR",
 "level": 2
 },
 "Adana Demirspor": {
-"elo": 1324.0,
+"elo": 1326.0,
 "country": "TUR",
 "level": 2
 },
 "Zenit": {
-"elo": 1802.0,
+"elo": 1804.0,
 "country": "RUS",
 "level": 1
 },
@@ -2935,7 +2949,7 @@
 ]
 },
 "Dynamo Moskva": {
-"elo": 1686.0,
+"elo": 1688.0,
 "country": "RUS",
 "level": 1,
 "aka": [
@@ -2943,7 +2957,7 @@
 ]
 },
 "CSKA Moskva": {
-"elo": 1681.0,
+"elo": 1678.0,
 "country": "RUS",
 "level": 1,
 "aka": [
@@ -2951,7 +2965,7 @@
 ]
 },
 "Lok Moskva": {
-"elo": 1643.0,
+"elo": 1640.0,
 "country": "RUS",
 "level": 1,
 "aka": [
@@ -2960,7 +2974,7 @@
 ]
 },
 "Baltika": {
-"elo": 1609.0,
+"elo": 1608.0,
 "country": "RUS",
 "level": 1
 },
@@ -2970,7 +2984,7 @@
 "level": 1
 },
 "Rubin Kazan": {
-"elo": 1579.0,
+"elo": 1582.0,
 "country": "RUS",
 "level": 1,
 "aka": [
@@ -2993,17 +3007,17 @@
 "level": 1
 },
 "Orenburg": {
-"elo": 1513.0,
+"elo": 1511.0,
 "country": "RUS",
 "level": 1
 },
 "Fakel Voronezh": {
-"elo": 1484.0,
+"elo": 1486.0,
 "country": "RUS",
 "level": 1
 },
 "Akron Tolyatti": {
-"elo": 1476.0,
+"elo": 1475.0,
 "country": "RUS",
 "level": 1
 },
@@ -3125,7 +3139,7 @@
 ]
 },
 "Ivanovo": {
-"elo": 1265.0,
+"elo": 1266.0,
 "country": "RUS",
 "level": 2
 },
@@ -3160,13 +3174,8 @@
 "Chayka"
 ]
 },
-"Brugge": {
-"elo": 1802.0,
-"country": "BEL",
-"level": 1
-},
 "St Gillis": {
-"elo": 1801.0,
+"elo": 1803.0,
 "country": "BEL",
 "level": 1,
 "aka": [
@@ -3174,8 +3183,13 @@
 "Gillis"
 ]
 },
+"Brugge": {
+"elo": 1801.0,
+"country": "BEL",
+"level": 1
+},
 "Genk": {
-"elo": 1682.0,
+"elo": 1683.0,
 "country": "BEL",
 "level": 1
 },
@@ -3185,7 +3199,7 @@
 "level": 1
 },
 "Waasland-Beveren": {
-"elo": 1629.0,
+"elo": 1646.0,
 "country": "BEL",
 "level": 1,
 "aka": [
@@ -3193,8 +3207,13 @@
 "beveren"
 ]
 },
+"Gent": {
+"elo": 1626.0,
+"country": "BEL",
+"level": 1
+},
 "St Truiden": {
-"elo": 1629.0,
+"elo": 1622.0,
 "country": "BEL",
 "level": 1,
 "aka": [
@@ -3202,33 +3221,28 @@
 "Truiden"
 ]
 },
-"Gent": {
-"elo": 1626.0,
-"country": "BEL",
-"level": 1
-},
 "Charleroi": {
-"elo": 1618.0,
-"country": "BEL",
-"level": 1
-},
-"Standard": {
-"elo": 1595.0,
+"elo": 1617.0,
 "country": "BEL",
 "level": 1
 },
 "Antwerp": {
-"elo": 1589.0,
+"elo": 1588.0,
+"country": "BEL",
+"level": 1
+},
+"Standard": {
+"elo": 1587.0,
 "country": "BEL",
 "level": 1
 },
 "Zulte Waregem": {
-"elo": 1580.0,
+"elo": 1581.0,
 "country": "BEL",
 "level": 1
 },
 "Westerlo": {
-"elo": 1558.0,
+"elo": 1565.0,
 "country": "BEL",
 "level": 1
 },
@@ -3245,13 +3259,13 @@
 "country": "BEL",
 "level": 1
 },
-"Lommel": {
-"elo": 1507.0,
+"Leuven": {
+"elo": 1504.0,
 "country": "BEL",
 "level": 1
 },
-"Leuven": {
-"elo": 1504.0,
+"Lommel": {
+"elo": 1502.0,
 "country": "BEL",
 "level": 1
 },
@@ -3283,7 +3297,7 @@
 ]
 },
 "Patro Eisden MM": {
-"elo": 1365.0,
+"elo": 1366.0,
 "country": "BEL",
 "level": 2,
 "aka": [
@@ -3304,7 +3318,7 @@
 "level": 1
 },
 "Feyenoord": {
-"elo": 1707.0,
+"elo": 1706.0,
 "country": "NED",
 "level": 1
 },
@@ -3317,17 +3331,17 @@
 ]
 },
 "Ajax": {
-"elo": 1683.0,
+"elo": 1689.0,
 "country": "NED",
 "level": 1
 },
 "Twente": {
-"elo": 1658.0,
+"elo": 1660.0,
 "country": "NED",
 "level": 1
 },
 "Nijmegen": {
-"elo": 1607.0,
+"elo": 1591.0,
 "country": "NED",
 "level": 1
 },
@@ -3337,7 +3351,7 @@
 "level": 1
 },
 "Go Ahead Eagles": {
-"elo": 1553.0,
+"elo": 1550.0,
 "country": "NED",
 "level": 1,
 "aka": [
@@ -3350,7 +3364,7 @@
 "level": 1
 },
 "Groningen": {
-"elo": 1519.0,
+"elo": 1520.0,
 "country": "NED",
 "level": 1
 },
@@ -3365,7 +3379,7 @@
 "level": 1
 },
 "Sittard": {
-"elo": 1490.0,
+"elo": 1483.0,
 "country": "NED",
 "level": 1
 },
@@ -3380,7 +3394,7 @@
 "level": 1
 },
 "Den Haag": {
-"elo": 1440.0,
+"elo": 1438.0,
 "country": "NED",
 "level": 1,
 "aka": [
@@ -3393,7 +3407,7 @@
 "level": 1
 },
 "Cambuur": {
-"elo": 1390.0,
+"elo": 1407.0,
 "country": "NED",
 "level": 1
 },
@@ -3403,7 +3417,7 @@
 "level": 2
 },
 "Volendam": {
-"elo": 1419.0,
+"elo": 1418.0,
 "country": "NED",
 "level": 2
 },
@@ -3423,7 +3437,7 @@
 "level": 2
 },
 "Vitesse": {
-"elo": 1355.0,
+"elo": 1351.0,
 "country": "NED",
 "level": 2
 },
@@ -3436,27 +3450,27 @@
 ]
 },
 "Roda": {
-"elo": 1334.0,
+"elo": 1340.0,
 "country": "NED",
 "level": 2
 },
 "Emmen": {
-"elo": 1307.0,
+"elo": 1308.0,
 "country": "NED",
 "level": 2
 },
 "Venlo": {
-"elo": 1300.0,
+"elo": 1301.0,
 "country": "NED",
 "level": 2
 },
 "Dordrecht": {
-"elo": 1288.0,
+"elo": 1289.0,
 "country": "NED",
 "level": 2
 },
 "Den Bosch": {
-"elo": 1275.0,
+"elo": 1276.0,
 "country": "NED",
 "level": 2,
 "aka": [
@@ -3472,17 +3486,17 @@
 ]
 },
 "Maastricht": {
-"elo": 1260.0,
+"elo": 1261.0,
 "country": "NED",
 "level": 2
 },
 "Helmond Sport": {
-"elo": 1250.0,
+"elo": 1251.0,
 "country": "NED",
 "level": 2
 },
 "TOP Oss": {
-"elo": 1232.0,
+"elo": 1233.0,
 "country": "NED",
 "level": 2,
 "aka": [
@@ -3491,7 +3505,7 @@
 ]
 },
 "Bodø/Glimt": {
-"elo": 1786.0,
+"elo": 1785.0,
 "country": "NOR",
 "level": 1,
 "aka": [
@@ -3499,7 +3513,7 @@
 ]
 },
 "Viking": {
-"elo": 1687.0,
+"elo": 1686.0,
 "country": "NOR",
 "level": 1
 },
@@ -3509,25 +3523,25 @@
 "level": 1
 },
 "Tromsø": {
-"elo": 1575.0,
+"elo": 1568.0,
 "country": "NOR",
 "level": 1,
 "aka": [
 "Tromso"
 ]
 },
-"Molde": {
-"elo": 1560.0,
+"Rosenborg": {
+"elo": 1563.0,
 "country": "NOR",
 "level": 1
 },
-"Rosenborg": {
-"elo": 1557.0,
+"Molde": {
+"elo": 1559.0,
 "country": "NOR",
 "level": 1
 },
 "Lillestrøm": {
-"elo": 1524.0,
+"elo": 1530.0,
 "country": "NOR",
 "level": 1
 },
@@ -3537,7 +3551,7 @@
 "level": 1
 },
 "Sarpsborg": {
-"elo": 1502.0,
+"elo": 1501.0,
 "country": "NOR",
 "level": 1
 },
@@ -3547,7 +3561,7 @@
 "level": 1
 },
 "Valerenga": {
-"elo": 1479.0,
+"elo": 1472.0,
 "country": "NOR",
 "level": 1
 },
@@ -3557,7 +3571,7 @@
 "level": 1
 },
 "Kfum": {
-"elo": 1442.0,
+"elo": 1441.0,
 "country": "NOR",
 "level": 1
 },
@@ -3567,7 +3581,7 @@
 "level": 1
 },
 "Aalesund": {
-"elo": 1390.0,
+"elo": 1389.0,
 "country": "NOR",
 "level": 1
 },
@@ -3582,7 +3596,7 @@
 "level": 2
 },
 "Stromsgodset": {
-"elo": 1406.0,
+"elo": 1405.0,
 "country": "NOR",
 "level": 2
 },
@@ -3605,7 +3619,7 @@
 ]
 },
 "Viktoria Plzeň": {
-"elo": 1647.0,
+"elo": 1646.0,
 "country": "CZE",
 "level": 1,
 "aka": [
@@ -3613,7 +3627,7 @@
 ]
 },
 "Sparta Praha": {
-"elo": 1635.0,
+"elo": 1639.0,
 "country": "CZE",
 "level": 1,
 "aka": [
@@ -3629,12 +3643,12 @@
 ]
 },
 "Slovan Liberec": {
-"elo": 1545.0,
+"elo": 1551.0,
 "country": "CZE",
 "level": 1
 },
 "Jablonec": {
-"elo": 1544.0,
+"elo": 1540.0,
 "country": "CZE",
 "level": 1
 },
@@ -3643,13 +3657,13 @@
 "country": "CZE",
 "level": 1
 },
-"Mlada Boleslav": {
-"elo": 1496.0,
+"Teplice": {
+"elo": 1492.0,
 "country": "CZE",
 "level": 1
 },
-"Teplice": {
-"elo": 1492.0,
+"Mlada Boleslav": {
+"elo": 1489.0,
 "country": "CZE",
 "level": 1
 },
@@ -3664,17 +3678,17 @@
 "level": 1
 },
 "Bohemians": {
-"elo": 1462.0,
+"elo": 1467.0,
 "country": "CZE",
 "level": 1
 },
 "Pardubice": {
-"elo": 1424.0,
+"elo": 1423.0,
 "country": "CZE",
 "level": 1
 },
 "Slovacko": {
-"elo": 1403.0,
+"elo": 1397.0,
 "country": "CZE",
 "level": 1
 },
@@ -3689,12 +3703,12 @@
 "level": 2
 },
 "Dukla": {
-"elo": 1367.0,
+"elo": 1366.0,
 "country": "CZE",
 "level": 2
 },
 "FK MAS Táborsko": {
-"elo": 1307.0,
+"elo": 1306.0,
 "country": "CZE",
 "level": 2,
 "aka": [
@@ -3702,7 +3716,7 @@
 ]
 },
 "Dynamo České Bud": {
-"elo": 1232.0,
+"elo": 1231.0,
 "country": "CZE",
 "level": 2,
 "aka": [
@@ -3710,113 +3724,8 @@
 ]
 },
 "Artis Brno": {
-"elo": 1215.0,
+"elo": 1214.0,
 "country": "CZE",
-"level": 2
-},
-"Olympiakos": {
-"elo": 1728.0,
-"country": "GRE",
-"level": 1
-},
-"AEK": {
-"elo": 1706.0,
-"country": "GRE",
-"level": 1
-},
-"PAOK": {
-"elo": 1661.0,
-"country": "GRE",
-"level": 1
-},
-"Panathinaikos": {
-"elo": 1644.0,
-"country": "GRE",
-"level": 1
-},
-"Iraklis": {
-"elo": 1563.0,
-"country": "GRE",
-"level": 1
-},
-"Aris": {
-"elo": 1526.0,
-"country": "GRE",
-"level": 1
-},
-"PS Kalamata": {
-"elo": 1471.0,
-"country": "GRE",
-"level": 1,
-"aka": [
-"Kalamata"
-]
-},
-"Levadeiakos": {
-"elo": 1458.0,
-"country": "GRE",
-"level": 1
-},
-"OFI": {
-"elo": 1457.0,
-"country": "GRE",
-"level": 1
-},
-"Atromitos": {
-"elo": 1442.0,
-"country": "GRE",
-"level": 1
-},
-"Panetolikos": {
-"elo": 1419.0,
-"country": "GRE",
-"level": 1
-},
-"Asteras Tripolis": {
-"elo": 1392.0,
-"country": "GRE",
-"level": 1
-},
-"NFC Volos": {
-"elo": 1376.0,
-"country": "GRE",
-"level": 1,
-"aka": [
-"Volos"
-]
-},
-"AE Kifisias": {
-"elo": 1372.0,
-"country": "GRE",
-"level": 1,
-"aka": [
-"Kifisias"
-]
-},
-"GS Kallithea": {
-"elo": 1365.0,
-"country": "GRE",
-"level": 2,
-"aka": [
-"Kallithea"
-]
-},
-"AE Lárissa": {
-"elo": 1358.0,
-"country": "GRE",
-"level": 2,
-"aka": [
-"Lárissa"
-]
-},
-"Panserraikos": {
-"elo": 1332.0,
-"country": "GRE",
-"level": 2
-},
-"Lamia": {
-"elo": 1296.0,
-"country": "GRE",
 "level": 2
 },
 "Midtjylland": {
@@ -3839,12 +3748,12 @@
 "level": 1
 },
 "Aarhus": {
-"elo": 1607.0,
+"elo": 1606.0,
 "country": "DEN",
 "level": 1
 },
 "Brondby": {
-"elo": 1587.0,
+"elo": 1586.0,
 "country": "DEN",
 "level": 1
 },
@@ -3899,6 +3808,111 @@
 "Aalborg": {
 "elo": 1413.0,
 "country": "DEN",
+"level": 2
+},
+"Olympiakos": {
+"elo": 1713.0,
+"country": "GRE",
+"level": 1
+},
+"AEK": {
+"elo": 1705.0,
+"country": "GRE",
+"level": 1
+},
+"PAOK": {
+"elo": 1661.0,
+"country": "GRE",
+"level": 1
+},
+"Panathinaikos": {
+"elo": 1644.0,
+"country": "GRE",
+"level": 1
+},
+"Iraklis": {
+"elo": 1539.0,
+"country": "GRE",
+"level": 1
+},
+"Aris": {
+"elo": 1527.0,
+"country": "GRE",
+"level": 1
+},
+"OFI": {
+"elo": 1473.0,
+"country": "GRE",
+"level": 1
+},
+"PS Kalamata": {
+"elo": 1469.0,
+"country": "GRE",
+"level": 1,
+"aka": [
+"Kalamata"
+]
+},
+"Levadeiakos": {
+"elo": 1459.0,
+"country": "GRE",
+"level": 1
+},
+"Atromitos": {
+"elo": 1446.0,
+"country": "GRE",
+"level": 1
+},
+"Panetolikos": {
+"elo": 1420.0,
+"country": "GRE",
+"level": 1
+},
+"Asteras Tripolis": {
+"elo": 1392.0,
+"country": "GRE",
+"level": 1
+},
+"NFC Volos": {
+"elo": 1376.0,
+"country": "GRE",
+"level": 1,
+"aka": [
+"Volos"
+]
+},
+"AE Kifisias": {
+"elo": 1374.0,
+"country": "GRE",
+"level": 1,
+"aka": [
+"Kifisias"
+]
+},
+"GS Kallithea": {
+"elo": 1366.0,
+"country": "GRE",
+"level": 2,
+"aka": [
+"Kallithea"
+]
+},
+"AE Lárissa": {
+"elo": 1358.0,
+"country": "GRE",
+"level": 2,
+"aka": [
+"Lárissa"
+]
+},
+"Panserraikos": {
+"elo": 1332.0,
+"country": "GRE",
+"level": 2
+},
+"Lamia": {
+"elo": 1297.0,
+"country": "GRE",
 "level": 2
 },
 "Celtic": {
@@ -4024,7 +4038,7 @@
 "level": 1
 },
 "Cherkasy": {
-"elo": 1497.0,
+"elo": 1500.0,
 "country": "UKR",
 "level": 1
 },
@@ -4044,12 +4058,12 @@
 "level": 1
 },
 "Kolos": {
-"elo": 1440.0,
+"elo": 1439.0,
 "country": "UKR",
 "level": 1
 },
 "Epitsentr": {
-"elo": 1396.0,
+"elo": 1395.0,
 "country": "UKR",
 "level": 1
 },
@@ -4064,17 +4078,17 @@
 "level": 1
 },
 "Obolon": {
-"elo": 1318.0,
+"elo": 1314.0,
 "country": "UKR",
 "level": 1
 },
 "Livyi Bereh": {
-"elo": 1308.0,
+"elo": 1307.0,
 "country": "UKR",
 "level": 1
 },
 "FC Kudrivka": {
-"elo": 1287.0,
+"elo": 1286.0,
 "country": "UKR",
 "level": 1,
 "aka": [
@@ -4092,7 +4106,7 @@
 "level": 1
 },
 "Rukh Lviv": {
-"elo": 1347.0,
+"elo": 1346.0,
 "country": "UKR",
 "level": 1
 },
@@ -4102,7 +4116,7 @@
 "level": 1
 },
 "SK Poltava": {
-"elo": 1189.0,
+"elo": 1188.0,
 "country": "UKR",
 "level": 1,
 "aka": [
@@ -4110,7 +4124,7 @@
 ]
 },
 "Lech": {
-"elo": 1681.0,
+"elo": 1675.0,
 "country": "POL",
 "level": 1
 },
@@ -4130,17 +4144,17 @@
 "level": 1
 },
 "Gornik": {
-"elo": 1578.0,
+"elo": 1584.0,
 "country": "POL",
 "level": 1
 },
 "Pogon": {
-"elo": 1570.0,
+"elo": 1571.0,
 "country": "POL",
 "level": 1
 },
 "Katowice": {
-"elo": 1552.0,
+"elo": 1547.0,
 "country": "POL",
 "level": 1
 },
@@ -4149,18 +4163,18 @@
 "country": "POL",
 "level": 1
 },
-"Piast Gliwice": {
-"elo": 1527.0,
-"country": "POL",
-"level": 1
-},
 "Korona": {
-"elo": 1526.0,
+"elo": 1533.0,
 "country": "POL",
 "level": 1
 },
 "Lubin": {
-"elo": 1524.0,
+"elo": 1529.0,
+"country": "POL",
+"level": 1
+},
+"Piast Gliwice": {
+"elo": 1527.0,
 "country": "POL",
 "level": 1
 },
@@ -4187,13 +4201,13 @@
 "country": "POL",
 "level": 1
 },
-"Slask": {
-"elo": 1492.0,
+"Motor Lublin": {
+"elo": 1491.0,
 "country": "POL",
 "level": 1
 },
-"Motor Lublin": {
-"elo": 1491.0,
+"Slask": {
+"elo": 1484.0,
 "country": "POL",
 "level": 1
 },
@@ -4208,7 +4222,7 @@
 "level": 2
 },
 "Arka": {
-"elo": 1499.0,
+"elo": 1500.0,
 "country": "POL",
 "level": 2
 },
@@ -4228,7 +4242,7 @@
 "level": 2
 },
 "Dinamo Zagreb": {
-"elo": 1678.0,
+"elo": 1670.0,
 "country": "CRO",
 "level": 1,
 "aka": [
@@ -4253,18 +4267,18 @@
 "Varteks"
 ]
 },
-"Istra 1961": {
-"elo": 1449.0,
+"Osijek": {
+"elo": 1457.0,
 "country": "CRO",
 "level": 1
 },
-"Osijek": {
-"elo": 1447.0,
+"Istra 1961": {
+"elo": 1450.0,
 "country": "CRO",
 "level": 1
 },
 "Lok Zagreb": {
-"elo": 1433.0,
+"elo": 1435.0,
 "country": "CRO",
 "level": 1,
 "aka": [
@@ -4277,7 +4291,7 @@
 "level": 1
 },
 "HNK Gorica": {
-"elo": 1386.0,
+"elo": 1387.0,
 "country": "CRO",
 "level": 1,
 "aka": [
@@ -4285,7 +4299,7 @@
 ]
 },
 "Rudes Zagreb": {
-"elo": 1183.0,
+"elo": 1184.0,
 "country": "CRO",
 "level": 1
 },
@@ -4295,7 +4309,7 @@
 "level": 1
 },
 "Vukovar 91": {
-"elo": 1329.0,
+"elo": 1330.0,
 "country": "CRO",
 "level": 1,
 "aka": [
@@ -4324,7 +4338,7 @@
 ]
 },
 "Železničar Panče": {
-"elo": 1373.0,
+"elo": 1372.0,
 "country": "SRB",
 "level": 1
 },
@@ -4333,8 +4347,13 @@
 "country": "SRB",
 "level": 1
 },
+"Kragujevac": {
+"elo": 1349.0,
+"country": "SRB",
+"level": 1
+},
 "FK Novi Pazar": {
-"elo": 1344.0,
+"elo": 1345.0,
 "country": "SRB",
 "level": 1,
 "aka": [
@@ -4342,17 +4361,12 @@
 ]
 },
 "FK Čukarički": {
-"elo": 1343.0,
+"elo": 1342.0,
 "country": "SRB",
 "level": 1,
 "aka": [
 "Čukarički"
 ]
-},
-"Kragujevac": {
-"elo": 1340.0,
-"country": "SRB",
-"level": 1
 },
 "IMT Beograd": {
 "elo": 1321.0,
@@ -4362,13 +4376,13 @@
 "Beograd"
 ]
 },
-"Mladost Lucani": {
-"elo": 1318.0,
+"Radnik Surdulica": {
+"elo": 1313.0,
 "country": "SRB",
 "level": 1
 },
-"Radnik Surdulica": {
-"elo": 1313.0,
+"Mladost Lucani": {
+"elo": 1309.0,
 "country": "SRB",
 "level": 1
 },
@@ -4381,7 +4395,7 @@
 ]
 },
 "Macva Sabac": {
-"elo": 1256.0,
+"elo": 1257.0,
 "country": "SRB",
 "level": 1
 },
@@ -4427,7 +4441,7 @@
 ]
 },
 "Ferencvaros": {
-"elo": 1657.0,
+"elo": 1656.0,
 "country": "HUN",
 "level": 1
 },
@@ -4475,7 +4489,7 @@
 "level": 1
 },
 "Nyiregyhaza": {
-"elo": 1392.0,
+"elo": 1391.0,
 "country": "HUN",
 "level": 1
 },
@@ -4513,7 +4527,7 @@
 ]
 },
 "RB Salzburg": {
-"elo": 1646.0,
+"elo": 1645.0,
 "country": "AUT",
 "level": 1,
 "aka": [
@@ -4530,7 +4544,7 @@
 ]
 },
 "Sturm Graz": {
-"elo": 1633.0,
+"elo": 1632.0,
 "country": "AUT",
 "level": 1,
 "aka": [
@@ -4538,7 +4552,7 @@
 ]
 },
 "Rapid Wien": {
-"elo": 1559.0,
+"elo": 1566.0,
 "country": "AUT",
 "level": 1
 },
@@ -4556,37 +4570,37 @@
 "level": 1
 },
 "Wolfsberg": {
-"elo": 1514.0,
+"elo": 1504.0,
 "country": "AUT",
 "level": 1
 },
 "Ried": {
-"elo": 1473.0,
-"country": "AUT",
-"level": 1
-},
-"Altach": {
-"elo": 1462.0,
-"country": "AUT",
-"level": 1
-},
-"Wattens": {
-"elo": 1453.0,
+"elo": 1472.0,
 "country": "AUT",
 "level": 1
 },
 "GAK": {
+"elo": 1459.0,
+"country": "AUT",
+"level": 1
+},
+"Altach": {
+"elo": 1454.0,
+"country": "AUT",
+"level": 1
+},
+"Wattens": {
 "elo": 1452.0,
 "country": "AUT",
 "level": 1
 },
 "Lustenau": {
-"elo": 1405.0,
+"elo": 1404.0,
 "country": "AUT",
 "level": 1
 },
 "BW Linz": {
-"elo": 1443.0,
+"elo": 1442.0,
 "country": "AUT",
 "level": 1,
 "aka": [
@@ -4599,7 +4613,7 @@
 "level": 1
 },
 "Omonia": {
-"elo": 1639.0,
+"elo": 1636.0,
 "country": "CYP",
 "level": 1
 },
@@ -4614,22 +4628,22 @@
 "level": 1
 },
 "Apollon Lemesos": {
-"elo": 1529.0,
+"elo": 1532.0,
 "country": "CYP",
 "level": 1
 },
 "Aris Limassol": {
-"elo": 1528.0,
+"elo": 1527.0,
 "country": "CYP",
 "level": 1
 },
 "APOEL": {
-"elo": 1502.0,
+"elo": 1495.0,
 "country": "CYP",
 "level": 1
 },
 "Anorthosis": {
-"elo": 1410.0,
+"elo": 1418.0,
 "country": "CYP",
 "level": 1
 },
@@ -4639,7 +4653,7 @@
 "level": 1
 },
 "AEL Limassol": {
-"elo": 1368.0,
+"elo": 1369.0,
 "country": "CYP",
 "level": 1,
 "aka": [
@@ -4647,12 +4661,12 @@
 ]
 },
 "Omonia Aradippou": {
-"elo": 1347.0,
+"elo": 1346.0,
 "country": "CYP",
 "level": 1
 },
 "Eny Digenis Ipso": {
-"elo": 1335.0,
+"elo": 1336.0,
 "country": "CYP",
 "level": 1,
 "aka": [
@@ -4678,7 +4692,7 @@
 ]
 },
 "Karmiotissa Pole": {
-"elo": 1272.0,
+"elo": 1273.0,
 "country": "CYP",
 "level": 1
 },
@@ -4693,12 +4707,12 @@
 "level": 1
 },
 "Lugano": {
-"elo": 1636.0,
+"elo": 1634.0,
 "country": "SUI",
 "level": 1
 },
 "Young Boys": {
-"elo": 1611.0,
+"elo": 1612.0,
 "country": "SUI",
 "level": 1,
 "aka": [
@@ -4706,7 +4720,7 @@
 ]
 },
 "St. Gallen": {
-"elo": 1597.0,
+"elo": 1587.0,
 "country": "SUI",
 "level": 1,
 "aka": [
@@ -4714,18 +4728,18 @@
 "Gallen"
 ]
 },
-"Thun": {
-"elo": 1579.0,
+"Sion": {
+"elo": 1581.0,
 "country": "SUI",
 "level": 1
 },
-"Sion": {
-"elo": 1570.0,
+"Thun": {
+"elo": 1569.0,
 "country": "SUI",
 "level": 1
 },
 "Basel": {
-"elo": 1562.0,
+"elo": 1561.0,
 "country": "SUI",
 "level": 1,
 "aka": [
@@ -4759,7 +4773,7 @@
 "level": 1
 },
 "Grasshoppers": {
-"elo": 1446.0,
+"elo": 1455.0,
 "country": "SUI",
 "level": 1
 },
@@ -4769,7 +4783,7 @@
 "level": 1
 },
 "Aarau": {
-"elo": 1525.0,
+"elo": 1526.0,
 "country": "SUI",
 "level": 2
 },
@@ -4779,7 +4793,7 @@
 "level": 2
 },
 "Winterthur": {
-"elo": 1384.0,
+"elo": 1383.0,
 "country": "SUI",
 "level": 2
 },
@@ -4810,17 +4824,17 @@
 "level": 1
 },
 "Hapoel Tel Aviv": {
-"elo": 1525.0,
+"elo": 1524.0,
 "country": "ISR",
 "level": 1
 },
 "Netanya": {
-"elo": 1429.0,
+"elo": 1428.0,
 "country": "ISR",
 "level": 1
 },
 "Hapoel Haifa": {
-"elo": 1405.0,
+"elo": 1404.0,
 "country": "ISR",
 "level": 1
 },
@@ -4833,12 +4847,12 @@
 ]
 },
 "Ironi Tiberias": {
-"elo": 1384.0,
+"elo": 1383.0,
 "country": "ISR",
 "level": 1
 },
 "Hapoel Jerusalem": {
-"elo": 1372.0,
+"elo": 1371.0,
 "country": "ISR",
 "level": 1
 },
@@ -4866,7 +4880,7 @@
 "level": 1
 },
 "Hapoel Eran Hade": {
-"elo": 1315.0,
+"elo": 1314.0,
 "country": "ISR",
 "level": 1
 },
@@ -4904,11 +4918,6 @@
 "Malmoe"
 ]
 },
-"AIK": {
-"elo": 1551.0,
-"country": "SWE",
-"level": 1
-},
 "Elfsborg": {
 "elo": 1544.0,
 "country": "SWE",
@@ -4916,6 +4925,11 @@
 },
 "GAIS": {
 "elo": 1543.0,
+"country": "SWE",
+"level": 1
+},
+"AIK": {
+"elo": 1536.0,
 "country": "SWE",
 "level": 1
 },
@@ -4933,22 +4947,22 @@
 "level": 1
 },
 "Göteborg": {
-"elo": 1491.0,
+"elo": 1494.0,
 "country": "SWE",
 "level": 1
 },
 "Västerås": {
-"elo": 1473.0,
+"elo": 1491.0,
 "country": "SWE",
 "level": 1
 },
 "Brommapojkarna": {
-"elo": 1461.0,
+"elo": 1460.0,
 "country": "SWE",
 "level": 1
 },
 "Kalmar": {
-"elo": 1437.0,
+"elo": 1438.0,
 "country": "SWE",
 "level": 1
 },
@@ -4963,7 +4977,7 @@
 "level": 1
 },
 "Halmstad": {
-"elo": 1374.0,
+"elo": 1371.0,
 "country": "SWE",
 "level": 1
 },
@@ -4973,7 +4987,7 @@
 "level": 2
 },
 "Öster": {
-"elo": 1416.0,
+"elo": 1415.0,
 "country": "SWE",
 "level": 2
 },
@@ -4991,7 +5005,7 @@
 ]
 },
 "Sabah FK": {
-"elo": 1561.0,
+"elo": 1560.0,
 "country": "AZE",
 "level": 1,
 "aka": [
@@ -5019,7 +5033,7 @@
 "level": 1
 },
 "Araz-Naxçıvan PF": {
-"elo": 1334.0,
+"elo": 1333.0,
 "country": "AZE",
 "level": 1,
 "aka": [
@@ -5027,12 +5041,12 @@
 ]
 },
 "Keshla": {
-"elo": 1312.0,
+"elo": 1311.0,
 "country": "AZE",
 "level": 1
 },
 "Imisli FK": {
-"elo": 1300.0,
+"elo": 1299.0,
 "country": "AZE",
 "level": 1,
 "aka": [
@@ -5044,20 +5058,20 @@
 "country": "AZE",
 "level": 1
 },
-"FK Gabala": {
-"elo": 1241.0,
-"country": "AZE",
-"level": 1,
-"aka": [
-"Gabala"
-]
-},
 "Kapaz PFK": {
-"elo": 1240.0,
+"elo": 1245.0,
 "country": "AZE",
 "level": 1,
 "aka": [
 "Kapaz"
+]
+},
+"FK Gabala": {
+"elo": 1232.0,
+"country": "AZE",
+"level": 1,
+"aka": [
+"Gabala"
 ]
 },
 "Inter Baku": {
@@ -5086,17 +5100,17 @@
 "level": 1
 },
 "CSKA Sofia": {
-"elo": 1497.0,
+"elo": 1503.0,
 "country": "BUL",
 "level": 1
 },
 "CSKA 1948 Sofia": {
-"elo": 1445.0,
+"elo": 1447.0,
 "country": "BUL",
 "level": 1
 },
 "Arda": {
-"elo": 1411.0,
+"elo": 1405.0,
 "country": "BUL",
 "level": 1
 },
@@ -5119,7 +5133,7 @@
 ]
 },
 "Slavia Sofia": {
-"elo": 1328.0,
+"elo": 1327.0,
 "country": "BUL",
 "level": 1
 },
@@ -5147,7 +5161,7 @@
 "level": 1
 },
 "Dunav Ruse": {
-"elo": 1162.0,
+"elo": 1152.0,
 "country": "BUL",
 "level": 1
 },
@@ -5183,12 +5197,12 @@
 "level": 1
 },
 "Craiova": {
-"elo": 1576.0,
+"elo": 1575.0,
 "country": "ROU",
 "level": 1
 },
 "CFR Cluj": {
-"elo": 1545.0,
+"elo": 1536.0,
 "country": "ROU",
 "level": 1,
 "aka": [
@@ -5209,7 +5223,7 @@
 "level": 1
 },
 "Rapid Bucuresti": {
-"elo": 1503.0,
+"elo": 1505.0,
 "country": "ROU",
 "level": 1
 },
@@ -5228,6 +5242,11 @@
 "country": "ROU",
 "level": 1
 },
+"Sepsi": {
+"elo": 1438.0,
+"country": "ROU",
+"level": 1
+},
 "UTA Arad": {
 "elo": 1432.0,
 "country": "ROU",
@@ -5237,17 +5256,12 @@
 ]
 },
 "Farul": {
-"elo": 1428.0,
-"country": "ROU",
-"level": 1
-},
-"Sepsi": {
-"elo": 1424.0,
+"elo": 1429.0,
 "country": "ROU",
 "level": 1
 },
 "Botosani": {
-"elo": 1408.0,
+"elo": 1409.0,
 "country": "ROU",
 "level": 1
 },
@@ -5261,18 +5275,18 @@
 "country": "ROU",
 "level": 1
 },
-"Voluntari": {
-"elo": 1374.0,
+"Corvinul Hunedoa": {
+"elo": 1369.0,
 "country": "ROU",
 "level": 1
 },
-"Corvinul Hunedoa": {
-"elo": 1368.0,
+"Voluntari": {
+"elo": 1369.0,
 "country": "ROU",
 "level": 1
 },
 "FK Csikszereda": {
-"elo": 1321.0,
+"elo": 1322.0,
 "country": "ROU",
 "level": 1,
 "aka": [
@@ -5289,12 +5303,12 @@
 ]
 },
 "Unirea Slobozia": {
-"elo": 1326.0,
+"elo": 1327.0,
 "country": "ROU",
 "level": 1
 },
 "Gloria Buzau": {
-"elo": 1269.0,
+"elo": 1270.0,
 "country": "ROU",
 "level": 1
 },
@@ -5315,7 +5329,7 @@
 ]
 },
 "FC DAC 1904": {
-"elo": 1521.0,
+"elo": 1525.0,
 "country": "SVK",
 "level": 1,
 "aka": [
@@ -5323,12 +5337,12 @@
 ]
 },
 "Trnava": {
-"elo": 1470.0,
+"elo": 1474.0,
 "country": "SVK",
 "level": 1
 },
 "Žilina": {
-"elo": 1457.0,
+"elo": 1456.0,
 "country": "SVK",
 "level": 1
 },
@@ -5342,7 +5356,7 @@
 ]
 },
 "FC Košice": {
-"elo": 1362.0,
+"elo": 1355.0,
 "country": "SVK",
 "level": 1,
 "aka": [
@@ -5350,15 +5364,20 @@
 ]
 },
 "MFK Zemplín Mich": {
-"elo": 1345.0,
+"elo": 1335.0,
 "country": "SVK",
 "level": 1,
 "aka": [
 "Zemplín Mich"
 ]
 },
-"MFK Skalica": {
+"Ruzomberok": {
 "elo": 1309.0,
+"country": "SVK",
+"level": 1
+},
+"MFK Skalica": {
+"elo": 1302.0,
 "country": "SVK",
 "level": 1,
 "aka": [
@@ -5366,20 +5385,15 @@
 ]
 },
 "AS Trenčín": {
-"elo": 1308.0,
+"elo": 1301.0,
 "country": "SVK",
 "level": 1,
 "aka": [
 "Trenčín"
 ]
 },
-"Ruzomberok": {
-"elo": 1300.0,
-"country": "SVK",
-"level": 1
-},
 "KFC Komárno": {
-"elo": 1279.0,
+"elo": 1277.0,
 "country": "SVK",
 "level": 1,
 "aka": [
@@ -5387,12 +5401,12 @@
 ]
 },
 "Banska Bystrica": {
-"elo": 1251.0,
+"elo": 1259.0,
 "country": "SVK",
 "level": 1
 },
 "1. FC Tatran Pre": {
-"elo": 1260.0,
+"elo": 1259.0,
 "country": "SVK",
 "level": 1,
 "aka": [
@@ -5400,68 +5414,8 @@
 "1. FC Tatran"
 ]
 },
-"Celje": {
-"elo": 1525.0,
-"country": "SVN",
-"level": 1
-},
-"Maribor": {
-"elo": 1480.0,
-"country": "SVN",
-"level": 1
-},
-"Koper": {
-"elo": 1474.0,
-"country": "SVN",
-"level": 1
-},
-"Olimpija Ljublja": {
-"elo": 1467.0,
-"country": "SVN",
-"level": 1
-},
-"Bravo": {
-"elo": 1423.0,
-"country": "SVN",
-"level": 1
-},
-"Radomlje": {
-"elo": 1320.0,
-"country": "SVN",
-"level": 1
-},
-"Nafta": {
-"elo": 1309.0,
-"country": "SVN",
-"level": 1
-},
-"Mura": {
-"elo": 1300.0,
-"country": "SVN",
-"level": 1
-},
-"Aluminij": {
-"elo": 1294.0,
-"country": "SVN",
-"level": 1
-},
-"Brinje Grosuplje": {
-"elo": 1274.0,
-"country": "SVN",
-"level": 1
-},
-"Domzale": {
-"elo": 1286.0,
-"country": "SVN",
-"level": 1
-},
-"Primorje": {
-"elo": 1253.0,
-"country": "SVN",
-"level": 1
-},
 "Inter Turku": {
-"elo": 1521.0,
+"elo": 1520.0,
 "country": "FIN",
 "level": 1
 },
@@ -5486,6 +5440,66 @@
 "Seinajoki": {
 "elo": 1357.0,
 "country": "FIN",
+"level": 1
+},
+"Celje": {
+"elo": 1519.0,
+"country": "SVN",
+"level": 1
+},
+"Maribor": {
+"elo": 1481.0,
+"country": "SVN",
+"level": 1
+},
+"Olimpija Ljublja": {
+"elo": 1477.0,
+"country": "SVN",
+"level": 1
+},
+"Koper": {
+"elo": 1466.0,
+"country": "SVN",
+"level": 1
+},
+"Bravo": {
+"elo": 1430.0,
+"country": "SVN",
+"level": 1
+},
+"Radomlje": {
+"elo": 1321.0,
+"country": "SVN",
+"level": 1
+},
+"Nafta": {
+"elo": 1309.0,
+"country": "SVN",
+"level": 1
+},
+"Mura": {
+"elo": 1300.0,
+"country": "SVN",
+"level": 1
+},
+"Aluminij": {
+"elo": 1295.0,
+"country": "SVN",
+"level": 1
+},
+"Brinje Grosuplje": {
+"elo": 1275.0,
+"country": "SVN",
+"level": 1
+},
+"Domzale": {
+"elo": 1286.0,
+"country": "SVN",
+"level": 1
+},
+"Primorje": {
+"elo": 1253.0,
+"country": "SVN",
 "level": 1
 },
 "Vikingur": {
@@ -5560,12 +5574,12 @@
 ]
 },
 "Zrinjski Mostar": {
-"elo": 1491.0,
+"elo": 1485.0,
 "country": "BIH",
 "level": 1
 },
 "Borac Banja Luka": {
-"elo": 1480.0,
+"elo": 1485.0,
 "country": "BIH",
 "level": 1
 },
@@ -5587,6 +5601,31 @@
 "country": "BIH",
 "level": 1
 },
+"Noah": {
+"elo": 1479.0,
+"country": "ARM",
+"level": 1
+},
+"Ararat-Armenia": {
+"elo": 1459.0,
+"country": "ARM",
+"level": 1
+},
+"Pyunik": {
+"elo": 1416.0,
+"country": "ARM",
+"level": 1
+},
+"Banants": {
+"elo": 1331.0,
+"country": "ARM",
+"level": 1
+},
+"Alashkert": {
+"elo": 1326.0,
+"country": "ARM",
+"level": 1
+},
 "FK Kairat": {
 "elo": 1475.0,
 "country": "KAZ",
@@ -5596,7 +5635,7 @@
 ]
 },
 "FK Astana": {
-"elo": 1439.0,
+"elo": 1433.0,
 "country": "KAZ",
 "level": 1,
 "aka": [
@@ -5604,7 +5643,7 @@
 ]
 },
 "Ordabasy": {
-"elo": 1413.0,
+"elo": 1421.0,
 "country": "KAZ",
 "level": 1
 },
@@ -5614,7 +5653,7 @@
 "level": 1
 },
 "Tobol": {
-"elo": 1357.0,
+"elo": 1358.0,
 "country": "KAZ",
 "level": 1
 },
@@ -5626,33 +5665,8 @@
 "Semey"
 ]
 },
-"Noah": {
-"elo": 1471.0,
-"country": "ARM",
-"level": 1
-},
-"Ararat-Armenia": {
-"elo": 1460.0,
-"country": "ARM",
-"level": 1
-},
-"Pyunik": {
-"elo": 1416.0,
-"country": "ARM",
-"level": 1
-},
-"Banants": {
-"elo": 1342.0,
-"country": "ARM",
-"level": 1
-},
-"Alashkert": {
-"elo": 1327.0,
-"country": "ARM",
-"level": 1
-},
 "FK Maxline Viteb": {
-"elo": 1454.0,
+"elo": 1455.0,
 "country": "BLR",
 "level": 1,
 "aka": [
@@ -5665,12 +5679,12 @@
 "level": 1
 },
 "Neman Grodno": {
-"elo": 1386.0,
+"elo": 1393.0,
 "country": "BLR",
 "level": 1
 },
 "Torpedo Zhodino": {
-"elo": 1355.0,
+"elo": 1348.0,
 "country": "BLR",
 "level": 1
 },
@@ -5685,7 +5699,7 @@
 "level": 1
 },
 "Shkendija": {
-"elo": 1449.0,
+"elo": 1448.0,
 "country": "MKD",
 "level": 1
 },
@@ -5704,13 +5718,13 @@
 "country": "MKD",
 "level": 1
 },
-"Egnatia Rrogozhi": {
-"elo": 1420.0,
+"Dinamo Tiranë": {
+"elo": 1422.0,
 "country": "ALB",
 "level": 1
 },
-"Dinamo Tiranë": {
-"elo": 1414.0,
+"Egnatia Rrogozhi": {
+"elo": 1420.0,
 "country": "ALB",
 "level": 1
 },
@@ -5728,12 +5742,12 @@
 "level": 1
 },
 "Partizani Tirana": {
-"elo": 1347.0,
+"elo": 1336.0,
 "country": "ALB",
 "level": 1
 },
 "Shamrock": {
-"elo": 1416.0,
+"elo": 1415.0,
 "country": "IRL",
 "level": 1
 },
@@ -5761,7 +5775,7 @@
 "level": 1
 },
 "Drita": {
-"elo": 1414.0,
+"elo": 1413.0,
 "country": "KOS",
 "level": 1
 },
@@ -5774,7 +5788,7 @@
 ]
 },
 "KF Prishtina": {
-"elo": 1369.0,
+"elo": 1368.0,
 "country": "KOS",
 "level": 1,
 "aka": [
@@ -5782,7 +5796,7 @@
 ]
 },
 "KF Malisheva": {
-"elo": 1326.0,
+"elo": 1325.0,
 "country": "KOS",
 "level": 1,
 "aka": [
@@ -5790,7 +5804,7 @@
 ]
 },
 "KF Dukagjini": {
-"elo": 1251.0,
+"elo": 1250.0,
 "country": "KOS",
 "level": 1,
 "aka": [
@@ -5803,7 +5817,7 @@
 "level": 1
 },
 "Runavik": {
-"elo": 1344.0,
+"elo": 1343.0,
 "country": "FRO",
 "level": 1
 },
@@ -5816,7 +5830,7 @@
 ]
 },
 "Víkingur": {
-"elo": 1271.0,
+"elo": 1270.0,
 "country": "FRO",
 "level": 1
 },
@@ -5928,12 +5942,12 @@
 ]
 },
 "Connahs Quay": {
-"elo": 1138.0,
+"elo": 1137.0,
 "country": "WAL",
 "level": 1
 },
 "Penybont FC": {
-"elo": 1137.0,
+"elo": 1136.0,
 "country": "WAL",
 "level": 1,
 "aka": [
@@ -5956,27 +5970,27 @@
 "level": 1
 },
 "Floriana": {
-"elo": 1318.0,
+"elo": 1305.0,
 "country": "MLT",
 "level": 1
 },
 "Marsaxlokk": {
-"elo": 1253.0,
+"elo": 1269.0,
 "country": "MLT",
 "level": 1
 },
 "Birkirkara": {
-"elo": 1244.0,
+"elo": 1245.0,
 "country": "MLT",
 "level": 1
 },
 "Hibernians Paola": {
-"elo": 1203.0,
+"elo": 1204.0,
 "country": "MLT",
 "level": 1
 },
 "Valletta": {
-"elo": 1178.0,
+"elo": 1179.0,
 "country": "MLT",
 "level": 1
 },
@@ -6005,7 +6019,7 @@
 ]
 },
 "Atert Bissen": {
-"elo": 1348.0,
+"elo": 1347.0,
 "country": "LUX",
 "level": 1
 },
@@ -6023,7 +6037,7 @@
 "level": 1
 },
 "UNA Strassen": {
-"elo": 1292.0,
+"elo": 1291.0,
 "country": "LUX",
 "level": 1,
 "aka": [
@@ -6044,7 +6058,7 @@
 ]
 },
 "Coleraine": {
-"elo": 1339.0,
+"elo": 1338.0,
 "country": "NIR",
 "level": 1
 },
@@ -6054,32 +6068,32 @@
 "level": 1
 },
 "Linfield": {
-"elo": 1281.0,
+"elo": 1285.0,
 "country": "NIR",
 "level": 1
 },
 "Glentoran": {
-"elo": 1242.0,
+"elo": 1241.0,
 "country": "NIR",
 "level": 1
 },
 "Cliftonville": {
-"elo": 1158.0,
+"elo": 1157.0,
 "country": "NIR",
 "level": 1
 },
 "Dungannon": {
-"elo": 1139.0,
+"elo": 1133.0,
 "country": "NIR",
 "level": 1
 },
 "Escaldes": {
-"elo": 1336.0,
+"elo": 1337.0,
 "country": "AND",
 "level": 0
 },
 "Santa Coloma": {
-"elo": 1282.0,
+"elo": 1283.0,
 "country": "AND",
 "level": 0
 },
@@ -6133,7 +6147,7 @@
 ]
 },
 "Tre Fiori": {
-"elo": 967.0,
+"elo": 966.0,
 "country": "SMR",
 "level": 0,
 "aka": [
