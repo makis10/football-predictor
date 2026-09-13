@@ -25,6 +25,123 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: "2026-09-13-ninety-minutes",
+    date: "2026-09-13",
+    tag: "fix",
+    title: {
+      en: "Knockout ties are graded at 90 minutes, as the bookmakers settle them",
+      el: "Οι νοκ-άουτ αγώνες κρίνονται στο 90', όπως τους κλείνουν τα γραφεία",
+    },
+    body: {
+      en: "A tie level after 90 minutes and won in extra time was stored with its extra-time score, so our 1×2, Over 2.5 and BTTS calls — and every slip carrying it — were graded against a result no bookmaker settles on. 27 club ties are re-scored, the 2026 Champions League final among them: it was stored as 5-4 with the penalty shootout folded in, and was 1-1 after 90 minutes. Two slip legs changed verdict; no slip did. National matches keep the score after extra time, which is what that model is built on.",
+      el: "Ένας αγώνας ισόπαλος στο 90' που κρίθηκε στην παράταση αποθηκευόταν με το σκορ της παράτασης, οπότε οι προβλέψεις μας για 1×2, Over 2,5 και BTTS — και κάθε δελτίο που τον περιείχε — κρίνονταν με αποτέλεσμα που κανένα γραφείο δεν χρησιμοποιεί. Διορθώθηκαν 27 αγώνες συλλόγων, ανάμεσά τους ο τελικός του Champions League 2026: είχε αποθηκευτεί 5-4 με τα πέναλτι μέσα, ενώ στο 90' ήταν 1-1. Δύο σκέλη δελτίων άλλαξαν ετυμηγορία· κανένα δελτίο. Οι αγώνες εθνικών κρατούν το σκορ μετά την παράταση, πάνω στο οποίο είναι χτισμένο εκείνο το μοντέλο.",
+    },
+  },
+  {
+    id: "2026-09-13-your-bets-stay",
+    date: "2026-09-13",
+    tag: "fix",
+    title: {
+      en: "Bets you log and matches you track no longer disappear",
+      el: "Τα στοιχήματα που καταγράφετε και οι αγώνες που παρακολουθείτε δεν χάνονται πια",
+    },
+    body: {
+      en: "They were tied to our prediction for the fixture, and predictions are rewritten on schedule — every upcoming match on Mondays, today's every afternoon, newly priced ones every eight hours — so each rewrite quietly deleted them, and /my-roi computed your ROI over whatever had survived. They now belong to the fixture itself. If a fixture is cancelled, an open bet on it is voided rather than deleted, and /my-roi shows the teams instead of a match number.",
+      el: "Ήταν δεμένα με την πρόβλεψή μας για τον αγώνα, και οι προβλέψεις ξαναγράφονται προγραμματισμένα — όλοι οι επερχόμενοι αγώνες κάθε Δευτέρα, οι σημερινοί κάθε απόγευμα, όσοι πήραν τιμές κάθε οκτώ ώρες — οπότε κάθε ξαναγράψιμο τα έσβηνε σιωπηλά και το /my-roi υπολόγιζε το ROI σας πάνω σε ό,τι είχε απομείνει. Τώρα ανήκουν στον ίδιο τον αγώνα. Αν ένας αγώνας ακυρωθεί, ένα ανοιχτό στοίχημα γίνεται άκυρο αντί να σβηστεί, και το /my-roi δείχνει τις ομάδες αντί για αριθμό αγώνα.",
+    },
+  },
+  {
+    id: "2026-09-13-unplayed-matches",
+    date: "2026-09-13",
+    tag: "fix",
+    title: {
+      en: "Awarded, cancelled and abandoned matches are no longer graded",
+      el: "Αγώνες που κατακυρώθηκαν, ακυρώθηκαν ή διακόπηκαν δεν κρίνονται πια",
+    },
+    body: {
+      en: "An awarded 3-0 was graded as if it had been played, against our calls and on slips; no bookmaker settles a match that was not played. A match abandoned on the day stayed open for ever instead — out of the accuracy record, and 'still running' on any slip carrying it. Both are now recorded as void: an awarded score still counts in the league table, but nothing grades it. A daily check asks the feed about fixtures left without a result; its first run settled one and voided four.",
+      el: "Ένα 3-0 στα χαρτιά κρινόταν σαν να είχε παιχτεί, απέναντι στις προβλέψεις μας και στα δελτία· κανένα γραφείο δεν κλείνει αγώνα που δεν παίχτηκε. Ένας αγώνας που διακόπηκε την ημέρα του έμενε αντίθετα ανοιχτός για πάντα — εκτός στατιστικών, και «σε εξέλιξη» σε κάθε δελτίο που τον είχε. Και οι δύο καταγράφονται πλέον ως άκυροι: το σκορ στα χαρτιά μετράει στη βαθμολογία, αλλά τίποτα δεν το κρίνει. Ένας καθημερινός έλεγχος ρωτά την πηγή για αγώνες που έμειναν χωρίς αποτέλεσμα· στην πρώτη του εκτέλεση έκλεισε έναν και ακύρωσε τέσσερις.",
+    },
+  },
+  {
+    id: "2026-09-13-national-model-recent",
+    date: "2026-09-13",
+    tag: "improvement",
+    title: {
+      en: "The national-team model no longer stops learning in 2018",
+      el: "Το μοντέλο των εθνικών δεν σταματά πια να μαθαίνει στο 2018",
+    },
+    body: {
+      en: "Its training windows were fixed dates, so a model retrained every morning had not learned from a single international played after 2022 — and a shortcut in its training meant its trees actually stopped in mid-2018. The windows now move with the data: every morning it is built on every match up to two years back, calibrated on the year after that and checked on the latest twelve months. On a year of internationals neither version had seen, the new model's probabilities were better for the result, for goals and for both teams to score; how often its single most likely outcome came true did not change beyond noise. The first national predictions made with it appear after tomorrow morning's update.",
+      el: "Τα παράθυρα εκπαίδευσής του ήταν σταθερές ημερομηνίες, οπότε ένα μοντέλο που ξαναεκπαιδευόταν κάθε πρωί δεν είχε μάθει από κανέναν διεθνή αγώνα μετά το 2022 — και μια συντόμευση στην εκπαίδευση έκανε τα δέντρα του να σταματούν στα μέσα του 2018. Τώρα τα παράθυρα κινούνται με τα δεδομένα: κάθε πρωί χτίζεται σε όλους τους αγώνες έως δύο χρόνια πίσω, βαθμονομείται στον επόμενο χρόνο και ελέγχεται στους πιο πρόσφατους δώδεκα μήνες. Σε έναν χρόνο διεθνών αγώνων που δεν είχε δει καμία από τις δύο εκδοχές, οι πιθανότητες του νέου ήταν καλύτερες για αποτέλεσμα, γκολ και BTTS· το πόσο συχνά βγήκε η πιο πιθανή του έκβαση δεν άλλαξε πέρα από τον θόρυβο. Οι πρώτες προβλέψεις εθνικών με αυτό εμφανίζονται μετά την αυριανή πρωινή ενημέρωση.",
+    },
+  },
+  {
+    id: "2026-09-13-correct-score-grid",
+    date: "2026-09-13",
+    tag: "fix",
+    title: {
+      en: "0-0 is no longer the 'most likely score' on one match in five",
+      el: "Το 0-0 δεν είναι πια το «πιθανότερο σκορ» σε έναν στους πέντε αγώνες",
+    },
+    body: {
+      en: "The score grid behind the analysis panel's correct scores, Over/Under 1.5 and 3.5 and combo markets had to hit four headline numbers exactly, and to hit them it piled the whole draw probability onto 0-0: on settled matches it called 0-0 the most likely score more than half the time, and where it gave 0-0 12% or more, it happened 7.7% of the time. It now keeps the goals line and the favourite's edge exact and treats the other two as targets it may miss slightly: 0-0 leads on 8 of about 2,000 upcoming fixtures, and its exact-score forecasts are measurably better. The headline 1×2, Over 2.5 and BTTS probabilities do not change.",
+      el: "Ο πίνακας σκορ πίσω από τα πιθανά σκορ, τα Over/Under 1,5 και 3,5 και τις συνδυαστικές αγορές του πάνελ ανάλυσης έπρεπε να πετυχαίνει ακριβώς τέσσερα βασικά νούμερα, και για να τα πετύχει φόρτωνε όλη την πιθανότητα ισοπαλίας στο 0-0: σε αγώνες που κρίθηκαν έβγαζε το 0-0 πιθανότερο σκορ πάνω από τις μισές φορές, και όπου του έδινε 12% ή περισσότερο, βγήκε το 7,7% των φορών. Τώρα κρατά ακριβή τη γραμμή των γκολ και το προβάδισμα του φαβορί και αντιμετωπίζει τα άλλα δύο ως στόχους που μπορεί να χάσει ελάχιστα: το 0-0 προηγείται σε 8 από περίπου 2.000 επερχόμενους αγώνες, και οι προβλέψεις ακριβούς σκορ είναι μετρήσιμα καλύτερες. Οι βασικές πιθανότητες 1×2, Over 2,5 και BTTS δεν αλλάζουν.",
+    },
+  },
+  {
+    id: "2026-09-13-tables-and-projections",
+    date: "2026-09-13",
+    tag: "fix",
+    title: {
+      en: "League tables and season projections: three fixes",
+      el: "Βαθμολογίες και προβολές σεζόν: τρεις διορθώσεις",
+    },
+    body: {
+      en: "Leagues we added mid-season — the Nordic, Irish, Brazilian and other expansion leagues — had tables built only from the games since they were added: Norway showed 4–6 games per club with some twenty rounds played. Their full seasons are now loaded. Projections for leagues where the same clubs meet more than once at the same ground (Finland, Scotland, Ireland, Greece's play-offs) dropped those repeat meetings, and could call a season finished with a third still to play. And the European projection paired the top seed with the strongest play-off winner instead of the weakest; it now follows UEFA's bracket.",
+      el: "Τα πρωταθλήματα που προσθέσαμε στη μέση της σεζόν — τα σκανδιναβικά, το ιρλανδικό, η Βραζιλία και τα υπόλοιπα της επέκτασης — είχαν βαθμολογίες μόνο από τους αγώνες μετά την προσθήκη τους: η Νορβηγία έδειχνε 4–6 αγώνες ανά ομάδα ενώ είχαν παιχτεί καμιά εικοσαριά αγωνιστικές. Φορτώθηκαν πλέον ολόκληρες οι σεζόν τους. Οι προβολές για πρωταθλήματα όπου οι ίδιες ομάδες συναντιούνται ξανά στην ίδια έδρα (Φινλανδία, Σκωτία, Ιρλανδία, πλέι-οφ της Ελλάδας) έχαναν αυτά τα επαναλαμβανόμενα ματς και μπορούσαν να δηλώσουν τη σεζόν τελειωμένη με το ένα τρίτο να απομένει. Και η προβολή των ευρωπαϊκών διοργανώσεων έβαζε τον πρώτο να παίζει με τον πιο δυνατό νικητή των πλέι-οφ αντί για τον πιο αδύναμο· τώρα ακολουθεί το ταμπλό της UEFA.",
+    },
+  },
+  {
+    id: "2026-09-13-one-sided-market",
+    date: "2026-09-13",
+    tag: "fix",
+    title: {
+      en: "A price quoted on one side only is no longer shown as a 100% market",
+      el: "Μια τιμή που δίνεται μόνο στη μία πλευρά δεν εμφανίζεται πια ως αγορά 100%",
+    },
+    body: {
+      en: "When a bookmaker quoted Over 2.5 but not Under — or a 1×2 without the draw — the comparison card divided the price by itself and read 'market: 100%'. The market's probability is now shown only when every side is quoted; otherwise you see the price alone.",
+      el: "Όταν ένα γραφείο έδινε Over 2,5 αλλά όχι Under — ή 1×2 χωρίς ισοπαλία — η κάρτα σύγκρισης διαιρούσε την τιμή με τον εαυτό της και έγραφε «αγορά: 100%». Η πιθανότητα της αγοράς εμφανίζεται πλέον μόνο όταν δίνονται όλες οι πλευρές· αλλιώς βλέπετε μόνο την τιμή.",
+    },
+  },
+  {
+    id: "2026-09-13-list-page-recent",
+    date: "2026-09-13",
+    tag: "fix",
+    title: {
+      en: "The match list, the match page and /recent now agree",
+      el: "Η λίστα αγώνων, η σελίδα του αγώνα και το /recent συμφωνούν πλέον",
+    },
+    body: {
+      en: "A card could read high confidence beside 'unknown teams' while its match page said low; at exactly 50% the card said Over and the page Under; and the Medium+/High filter hid cards the site itself labelled medium. All of it now comes from one computation. /recent showed the first day of each page twice and, in a busy week, left out every match past the 200th — its accuracy summary was computed without them. Each page is now exactly one week, and complete.",
+      el: "Μια κάρτα μπορούσε να γράφει υψηλή σιγουριά δίπλα στο «άγνωστες ομάδες» ενώ η σελίδα του αγώνα έλεγε χαμηλή· στο ακριβώς 50% η κάρτα έλεγε Over και η σελίδα Under· και το φίλτρο Medium+/High έκρυβε κάρτες που ο ίδιος ο ιστότοπος χαρακτήριζε μέτριες. Όλα βγαίνουν πλέον από έναν υπολογισμό. Το /recent έδειχνε την πρώτη μέρα κάθε σελίδας δύο φορές και, σε μια φορτωμένη εβδομάδα, άφηνε έξω κάθε αγώνα μετά τον 200ό — και η σύνοψη ακρίβειας υπολογιζόταν χωρίς αυτούς. Κάθε σελίδα είναι πλέον ακριβώς μία εβδομάδα, και πλήρης.",
+    },
+  },
+  {
+    id: "2026-09-13-stats-draw-cards",
+    date: "2026-09-13",
+    tag: "improvement",
+    title: {
+      en: "Draw figures on /stats are shown against their baselines",
+      el: "Τα νούμερα ισοπαλίας στο /stats εμφανίζονται απέναντι στο σημείο αναφοράς τους",
+    },
+    body: {
+      en: "Draw recall and precision were coloured on the scale used for overall accuracy, where they are red whatever happens. They are now neutral, each beside the number that gives it meaning: how many draws a random guess at our draw-call rate would catch, and how often any match ends level.",
+      el: "Το recall και το precision ισοπαλίας χρωματίζονταν με την κλίμακα της συνολικής ακρίβειας, όπου είναι κόκκινα ό,τι κι αν συμβεί. Τώρα είναι ουδέτερα, το καθένα δίπλα στο νούμερο που του δίνει νόημα: πόσες ισοπαλίες θα έπιανε μια τυχαία πρόβλεψη με τη δική μας συχνότητα προβλέψεων ισοπαλίας, και πόσο συχνά λήγει ισόπαλος ένας αγώνας.",
+    },
+  },
+  {
     id: "2026-09-07-impossible-certainty",
     date: "2026-09-07",
     tag: "fix",
