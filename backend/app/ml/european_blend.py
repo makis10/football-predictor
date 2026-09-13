@@ -110,7 +110,7 @@ def _finished_uefa_rows(db) -> list[tuple[str, str, int]]:
     rows = db.execute(text("""
         SELECT home_team, away_team, result
         FROM matches
-        WHERE league IN ('CL', 'EL', 'ECL') AND result IS NOT NULL
+        WHERE league IN ('CL', 'EL', 'ECL') AND result IS NOT NULL AND void_reason IS NULL
     """)).fetchall()
     code = {"H": 0, "D": 1, "A": 2}
     return [(r.home_team, r.away_team, code[r.result])

@@ -91,6 +91,20 @@ def settle_open_tickets(db) -> tuple[int, int]:
                   f"{len(t.legs)} remain — a fixture was deleted.")
             continue
 
+        # A leg on a match that was not played — awarded, walked over,
+        # cancelled or abandoned (matches.void_reason) — is void at every
+        # bookmaker; the slip goes void, as it does for a deleted leg above.
+        void_leg = next((matches[l.match_id] for l in t.legs
+                         if l.match_id in matches and matches[l.match_id].void_reason),
+                        None)
+        if void_leg is not None:
+            t.outcome = "void"
+            t.settled_at = datetime.now(timezone.utc)
+            voided += 1
+            print(f"  [void] ticket {t.id} ({t.profile}) cut {t.generated_for}: "
+                  f"{void_leg.home_team} v {void_leg.away_team} was {void_leg.void_reason}.")
+            continue
+
         # A leg whose fixture has been POSTPONED out of the slip's own window
         # is not the bet the reader was shown. Jagiellonia–Pogoń moved from 16
         # Aug to 16 December, and the two slips carrying it sat "still running"
@@ -135,7 +149,7 @@ def settle_open_tickets(db) -> tuple[int, int]:
 
     db.commit()
     if voided:
-        print(f"  {voided} ticket(s) voided (deleted or postponed fixture).")
+        print(f"  {voided} ticket(s) voided (deleted, postponed or unplayed fixture).")
     return settled, graded
 
 

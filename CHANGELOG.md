@@ -8,6 +8,21 @@ History before this file was introduced lives in `git log`.
 
 ### Fixed
 
+- **An awarded match was graded as if it had been played, and an abandoned
+  one stayed open for ever.** API-Football closes a fixture four ways that are
+  not a played match — awarded, walkover, cancelled, abandoned. The club
+  writers read the first two as ordinary results, so an awarded 3-0 was graded
+  against our 1×2, Over 2.5 and BTTS calls and settled accumulator legs, which
+  no bookmaker does. The other two were ignored, so a fixture abandoned on its
+  day stayed unsettled for ever: out of the accuracy record, and "still
+  running" on any slip carrying it. `matches.void_reason` (migration 0038) now
+  records it. An awarded match keeps its score for the league table, no grading
+  path reads it, and a slip with such a leg is void.
+  `scripts/resolve_stranded_fixtures.py` (daily, behind the API-Football guard)
+  asks the feed about fixtures the result feeds and CSVs left behind, settling
+  the played ones at 90 minutes and voiding the rest. Its first run cleared
+  five of nine: four cancelled, one friendly played 2-1. One postponed league
+  match and three friendlies the feed never listed stay on the daily list.
 - **The nine discipline features read a match with no card data as a match
   with no cards.** Eight leagues send card counts in full, five in part and
   the other thirty-odd none — since July 2024 only a quarter of training rows

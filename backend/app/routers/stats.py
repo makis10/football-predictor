@@ -99,7 +99,7 @@ def _load_rows(league: Optional[str] = None) -> list[dict]:
                 Prediction.adj_over_2_5_prob,
             )
             .join(Prediction, Prediction.match_id == Match.id)
-            .where(Match.result.isnot(None))
+            .where(Match.result.isnot(None), Match.void_reason.is_(None))
             # Exclude no-history fixtures (pure-default features → identical
             # coin-flip predictions) so they don't dilute accuracy/ROI.
             .where(Prediction.insufficient_data.is_(False))

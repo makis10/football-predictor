@@ -264,7 +264,9 @@ def list_matches(
             ),
         )
         stmt = select(Match).where(
-            or_(Match.result.isnot(None), ended_without_result)
+            or_(Match.result.isnot(None), ended_without_result),
+            # Not played — awarded, walked over, cancelled, abandoned (0038).
+            Match.void_reason.is_(None),
         )
         if include_predictions:
             # Only return matches that have a prediction — hides historical gaps
@@ -421,7 +423,8 @@ def export_picks(
                 ),
             ),
         )
-        stmt = select(Match).where(or_(Match.result.isnot(None), ended_e))
+        stmt = select(Match).where(or_(Match.result.isnot(None), ended_e),
+                                   Match.void_reason.is_(None))
         lower, upper = _past_window(days_back, days_offset)
         if lower is not None:
             stmt = stmt.where(Match.match_date >= lower)

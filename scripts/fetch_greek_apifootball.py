@@ -31,7 +31,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
 from scripts._http_retry import QuotaExhausted, get_with_retry  # noqa: E402
-from scripts._feed_scores import api_football_goals  # noqa: E402
+from scripts._feed_scores import api_football_goals, api_football_void_reason  # noqa: E402
 
 API_BASE = "https://v3.football.api-sports.io"
 API_KEY  = os.getenv("API_SPORTS_KEY", "")
@@ -124,6 +124,7 @@ def main() -> None:
             if hg is None:
                 continue
             base["home_goals"], base["away_goals"] = hg, ag
+            base["void_reason"] = api_football_void_reason(entry)   # awarded / walkover
             finished.append(base)
 
     print(f"  {len(upcoming)} upcoming / {len(finished)} finished")
@@ -154,6 +155,7 @@ def main() -> None:
             hg, ag = f["home_goals"], f["away_goals"]
             row.home_goals, row.away_goals = hg, ag
             row.result = "H" if hg > ag else ("A" if ag > hg else "D")
+            row.void_reason = f.get("void_reason")
             scored += 1
         db.commit()
         print(f"  {len(new_matches)} new fixture(s) inserted, {scored} result(s) filled. "

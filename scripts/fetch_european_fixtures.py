@@ -47,7 +47,7 @@ _PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 sys.path.insert(0, _PROJECT_ROOT)
 
 from scripts._http_retry import QuotaExhausted, get_with_retry  # noqa: E402
-from scripts._feed_scores import api_football_goals  # noqa: E402
+from scripts._feed_scores import api_football_goals, api_football_void_reason  # noqa: E402
 from scripts.team_resolver import same_club  # noqa: E402
 
 API_BASE = "https://v3.football.api-sports.io"
@@ -215,6 +215,7 @@ def parse_fixtures(league_code: str, raw: list[dict], resolve) -> tuple[list[dic
             if hg is None:
                 continue
             base["home_goals"], base["away_goals"] = hg, ag
+            base["void_reason"] = api_football_void_reason(entry)   # awarded / walkover
             finished.append(base)
     return upcoming, finished
 
@@ -246,6 +247,7 @@ def update_results(db, played: list[dict]) -> int:
         hg, ag = f["home_goals"], f["away_goals"]
         row.home_goals, row.away_goals = hg, ag
         row.result = "H" if hg > ag else ("A" if ag > hg else "D")
+        row.void_reason = f.get("void_reason")
         # Finished fixtures never go through upsert_fixtures. A row this lookup
         # cannot reach (already settled by another job) is corrected by
         # sync_stages below.

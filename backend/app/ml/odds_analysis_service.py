@@ -962,6 +962,7 @@ _PROVEN_SQL = {
         WHERE vb.source = 'club'
           AND vb.created_at >= :cutoff
           AND m.result IS NOT NULL
+          AND m.void_reason IS NULL
         ORDER BY m.match_date DESC, vb.id DESC
     """,
 }

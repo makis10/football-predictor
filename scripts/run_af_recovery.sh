@@ -167,6 +167,7 @@ if [ "$WC_ACTIVE" = "1" ]; then
 fi
 
 # ── API-Football odds for what The Odds API did not price (run_daily 8d) ─────
+af_step "8c2/9" python scripts/resolve_stranded_fixtures.py --apply
 af_step "8d/9" python scripts/fetch_odds_apifootball.py --days 7
 
 # ── Tickets (only builds a day that has none) and the stats cache ────────────

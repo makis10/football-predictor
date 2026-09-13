@@ -40,6 +40,10 @@ class Match(Base):
     home_goals: Mapped[Optional[int]] = mapped_column(Integer, nullable=True)
     away_goals: Mapped[Optional[int]] = mapped_column(Integer, nullable=True)
     result: Mapped[Optional[str]] = mapped_column(String(1), nullable=True)  # H/D/A
+    # Why the fixture has no gradable result (migration 0038): NULL for a match
+    # that was played, else "awarded" | "walkover" | "cancelled" | "abandoned".
+    # An awarded match keeps its awarded score for the table; nothing grades it.
+    void_reason: Mapped[Optional[str]] = mapped_column(String(20), nullable=True)
 
     created_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), server_default=func.now()

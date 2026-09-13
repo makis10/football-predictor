@@ -662,6 +662,16 @@ docker compose exec -T backend \
     python scripts/settle_stale_fixtures.py \
     2>&1 | tee -a "$LOG" || echo "  [warn] stale-fixture settle failed — continuing" | tee -a "$LOG"
 
+# What the CSVs cannot settle — friendlies, play-offs, a match abandoned or
+# cancelled on the day — is asked about once more at API-Football: settled with
+# the 90-minute score, or voided with matches.void_reason. A few requests a day.
+if [ "$API_FOOTBALL_OK" -eq 1 ]; then
+    echo "[8c2/9] Resolving fixtures the feeds left behind …" | tee -a "$LOG"
+    docker compose exec -T backend \
+        python scripts/resolve_stranded_fixtures.py --apply \
+        2>&1 | tee -a "$LOG" || echo "  [warn] stranded-fixture resolve failed — continuing" | tee -a "$LOG"
+fi
+
 # Cut today's accumulator slips and settle finished ones. Needs no external
 # API — it reads predictions already in the DB — so it runs whether or not
 # API-Football is reachable. Placed after predictions/odds so the slips are cut

@@ -62,6 +62,7 @@ def main() -> int:
         stale = list(db.scalars(
             select(Match)
             .where(Match.result.is_(None))
+            .where(Match.void_reason.is_(None))     # not played: nothing to find
             .where(Match.match_date < cutoff)
             .order_by(Match.match_date)
         ).all())

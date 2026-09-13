@@ -34,6 +34,19 @@ def api_football_goals(entry: dict) -> "tuple[int | None, int | None]":
     return int(g["home"]), int(g["away"])
 
 
+# API-Football closes a fixture without a played result four ways. An awarded
+# score (AWD, WO) stands in the league table, but no bookmaker settles a match
+# that was not played, and nothing of ours may grade it (migration 0038).
+API_FOOTBALL_VOID = {"AWD": "awarded", "WO": "walkover",
+                     "CANC": "cancelled", "ABD": "abandoned"}
+
+
+def api_football_void_reason(entry: dict) -> "str | None":
+    """matches.void_reason for an API-Football fixture entry, None if played."""
+    status = ((entry.get("fixture") or {}).get("status") or {}).get("short", "")
+    return API_FOOTBALL_VOID.get(status)
+
+
 def football_data_goals(match: dict) -> "tuple[int | None, int | None]":
     """(home, away) after 90 minutes for a football-data.org v4 match."""
     score = match.get("score") or {}
