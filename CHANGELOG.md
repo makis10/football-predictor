@@ -50,6 +50,21 @@ History before this file was introduced lives in `git log`.
   when both teams are covered and otherwise leaves both on the results-Elo the
   models were trained on. No national fixture is scheduled today; the next
   international window picks it up.
+- **A national fixture the source re-dated got a second prediction row.**
+  results.csv carries no fixture id, so every national writer rebuilt identity
+  from the exact (date, home, away), while every reader and settler treats ±1
+  day in either orientation as the same match. When the source moved
+  Argentina–Egypt and Switzerland–Colombia from 6 to 7 July, the backfill
+  inserted both again: /national/wc-review counted 106 World Cup matches
+  instead of 104. `find_national_row` is now the one identity every writer
+  uses — the exact key, the reversed orientation where the writer allows it,
+  then the row of a *moved* fixture: same tournament and pairing within three
+  days, on a date the source no longer lists. That last condition keeps a
+  genuine double-header (both dates listed) apart, and a truncated source
+  moves nothing. The daily writer no longer rewrites a settled prediction, the
+  backfill no longer writes probabilities onto a row stored the other way
+  round, and the manual-fixture injector skips a meeting already listed a few
+  days out. The two duplicate rows already stored need a one-off repair.
 
 ## 2026-09-12
 

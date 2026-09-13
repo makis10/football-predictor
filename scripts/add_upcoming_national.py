@@ -79,6 +79,18 @@ def _load_fixtures(path: Path) -> pd.DataFrame:
     return fx
 
 
+def _listed_nearby(existing: pd.DataFrame, r, days: int = 3) -> bool:
+    """Is this pairing already listed, either way round, for the same
+    tournament within ±days? Mirrors fixture_identity.MOVE_WINDOW_DAYS."""
+    pair = {r["home_team"], r["away_team"]}
+    same = existing[(existing["tournament"] == r["tournament"])
+                    & existing["home_team"].isin(pair) & existing["away_team"].isin(pair)]
+    if same.empty:
+        return False
+    gap = (pd.to_datetime(same["date"], errors="coerce") - pd.Timestamp(r["date"])).abs()
+    return bool((gap <= pd.Timedelta(days=days)).any())
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description="Add upcoming national-team fixtures")
     ap.add_argument("--fixtures", type=Path, default=DEFAULT_FIXTURES,
@@ -108,6 +120,10 @@ def main() -> None:
     have     = key(existing)
     fx["_k"] = list(zip(fx["date"], fx["home_team"], fx["away_team"]))
     new      = fx[~fx["_k"].isin(have)].drop(columns="_k")
+    # The same meeting already listed a few days out (the source re-dated it,
+    # or lists it the other way round) is not a new fixture: injecting it gives
+    # one match two dates in the dataset, and the writers two rows.
+    new      = new[[not _listed_nearby(existing, r) for _, r in new.iterrows()]]
     dup      = len(fx) - len(new)
 
     print(f"Fixtures in file:   {len(fx)}")

@@ -35,6 +35,7 @@ from backend.app.ml.national.features import (
     NATIONAL_FEATURE_COLS, DRAW_FEATURE_COLS,
 )
 from backend.app.ml.national.train import blend_draw_probability
+from backend.app.ml.national.fixture_identity import find_national_row, source_keys
 
 # Reuse the exact inference path used for live predictions
 from scripts.predict_national import (
@@ -73,7 +74,8 @@ def main() -> None:
     models = _load_models()
 
     print("Building pre-match features for full history (no leakage) …")
-    historical, _ = load_results(DATA_DIR)
+    historical, upcoming = load_results(DATA_DIR)
+    keys = source_keys(historical, upcoming)   # every row the source lists
     feats = build_features(historical)
     feats["date"] = pd.to_datetime(feats["date"])
 
@@ -103,7 +105,6 @@ def main() -> None:
     # ── Persist ──────────────────────────────────────────────────────────────
     from backend.app.database import SessionLocal
     from backend.app.models.national_prediction import NationalPrediction
-    from sqlalchemy import and_
 
     db = SessionLocal()
     inserted = updated = correct = 0
@@ -122,21 +123,23 @@ def main() -> None:
                 correct += 1
 
             match_date = row["date"].strftime("%Y-%m-%d")
-            existing = db.query(NationalPrediction).filter(and_(
-                NationalPrediction.match_date == match_date,
-                NationalPrediction.home_team  == row["home_team"],
-                NationalPrediction.away_team  == row["away_team"],
-            )).first()
-            if existing is None:
-                # Reversed orientation (sources disagree on home/away
-                # designation) — don't create a mirrored duplicate.
-                existing = db.query(NationalPrediction).filter(and_(
-                    NationalPrediction.match_date == match_date,
-                    NationalPrediction.home_team  == row["away_team"],
-                    NationalPrediction.away_team  == row["home_team"],
-                )).first()
-                if existing is not None and args.skip_existing:
-                    continue
+            # The identity every national writer uses: the exact key, the
+            # reversed orientation (sources disagree on home/away), or the row
+            # of a fixture the source has re-dated — moved, never duplicated.
+            # This path used to match on the exact date only and inserted the
+            # World Cup's Argentina–Egypt and Switzerland–Colombia a second time.
+            existing, how = find_national_row(
+                db, match_date, row["home_team"], row["away_team"],
+                row["tournament"], keys, allow_reversed=True)
+            if how == "moved":
+                print(f"  ↻ re-dated {row['home_team']} vs {row['away_team']}: "
+                      f"{existing.match_date} → {match_date}")
+                existing.match_date = match_date
+            elif how == "reversed":
+                # Stored the other way round (usually the live pre-match row).
+                # These probabilities are for the opposite orientation, so they
+                # must never be written onto it.
+                continue
 
             fields = dict(
                 tournament    = row["tournament"],

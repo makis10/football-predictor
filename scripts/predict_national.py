@@ -230,27 +230,39 @@ def print_predictions(rows: list[dict], sort_by: str = "confidence") -> None:
     print(f"\n{len(df)} fixtures predicted.\n")
 
 
-def save_to_db(predictions: list[dict]) -> None:
-    """Upsert predictions into national_predictions table."""
+def save_to_db(predictions: list[dict], keys: "set | None" = None, db=None) -> None:
+    """Upsert predictions into national_predictions table.
+
+    `keys` is every (date, home, away) the source lists (fixture_identity.
+    source_keys). With it, a fixture the source re-dated is found on its old
+    row and moved there instead of inserted a second time. `db` is for tests.
+    """
     import sys as _sys
     _sys.path.insert(0, str(ROOT))
     from backend.app.database import SessionLocal
+    from backend.app.ml.national.fixture_identity import find_national_row
     from backend.app.models.national_prediction import NationalPrediction
-    from sqlalchemy import and_
 
-    db = SessionLocal()
-    inserted = updated = 0
+    own = db is None
+    if own:
+        db = SessionLocal()
+    inserted = updated = moved = 0
     try:
         for pred in predictions:
             match_date = str(pred["date"])
-            existing = db.query(NationalPrediction).filter(
-                and_(
-                    NationalPrediction.match_date == match_date,
-                    NationalPrediction.home_team  == pred["home_team"],
-                    NationalPrediction.away_team  == pred["away_team"],
-                )
-            ).first()
+            existing, how = find_national_row(
+                db, match_date, pred["home_team"], pred["away_team"],
+                pred["tournament"], keys or set(), allow_reversed=False)
+            if how == "moved":
+                print(f"  ↻ re-dated {pred['home_team']} vs {pred['away_team']}: "
+                      f"{existing.match_date} → {match_date}")
+                existing.match_date = match_date
+                moved += 1
 
+            if existing is not None and existing.actual_result is not None:
+                # A settled row is the published pre-match record; the 2-day
+                # grace in load_results can still offer it for re-prediction.
+                continue
             if existing:
                 # Served columns ALWAYS = pure model output (no market anchoring,
                 # per 2026-06-17 directive). raw_* mirror the served probs; the
@@ -294,12 +306,13 @@ def save_to_db(predictions: list[dict]) -> None:
                 db.add(row)
                 inserted += 1
         db.commit()
-        print(f"  DB: {inserted} inserted, {updated} updated")
+        print(f"  DB: {inserted} inserted, {updated} updated, {moved} re-dated")
     except Exception as e:
         db.rollback()
         print(f"  [warn] DB save failed: {e}")
     finally:
-        db.close()
+        if own:
+            db.close()
 
 
 def main() -> None:
@@ -323,8 +336,12 @@ def main() -> None:
     print("  Models loaded.")
 
     print("Loading upcoming fixtures …")
-    _, upcoming = load_results(DATA_DIR)
+    historical, upcoming = load_results(DATA_DIR)
     print(f"  {len(upcoming)} upcoming fixtures found")
+    # Every row the source lists, taken before any filter: it is how save_to_db
+    # tells a re-dated fixture from a new one.
+    from backend.app.ml.national.fixture_identity import source_keys
+    keys = source_keys(historical, upcoming)
 
     # Filters
     if args.tournament:
@@ -371,7 +388,7 @@ def main() -> None:
 
     if args.save_db:
         print("Saving to DB …")
-        save_to_db(results)
+        save_to_db(results, keys)
 
 
 if __name__ == "__main__":
