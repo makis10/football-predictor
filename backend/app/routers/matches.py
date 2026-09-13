@@ -19,6 +19,7 @@ from backend.app.schemas.match import MatchResponse, PredictionEmbed
 # 20 export requests / min per IP — generous for real users, stops scrapers.
 _EXPORT_RATE_LIMIT  = 20
 _EXPORT_RATE_WINDOW = 60
+_EXPORT_MAX_ROWS    = 500   # the documented cap on /matches/export
 
 router = APIRouter(prefix="/matches", tags=["matches"])
 
@@ -49,7 +50,8 @@ def _past_window(days_back: Optional[int],
     return lower, upper
 
 
-def _adjust_prediction_embed(match_id: int, pred, league: "str | None" = None) -> "PredictionEmbed":
+def _adjust_prediction_embed(match_id: int, pred, league: "str | None" = None,
+                             result: "str | None" = None) -> "PredictionEmbed":
     """
     Build an adjusted PredictionEmbed that matches what the detail page serves:
 
@@ -69,20 +71,30 @@ def _adjust_prediction_embed(match_id: int, pred, league: "str | None" = None) -
 
     # Apply cached injury adjustment if already available (no new API call).
     # Reads from Redis cache populated by a prior /predictions/{id} detail visit.
-    try:
-        from backend.app.cache import cache_get, CACHE_MISS
-        from backend.app.ml.injury_adjustment import adjust_probabilities, has_significant_injuries
-        injuries = cache_get(f"injuries:{match_id}")
-        if injuries is not CACHE_MISS and injuries:
-            home_inj = injuries.get("home", [])
-            away_inj = injuries.get("away", [])
-            if has_significant_injuries(home_inj, away_inj):
-                hw, d, aw, ov = adjust_probabilities(hw, d, aw, ov, home_inj, away_inj)
-    except Exception:
-        pass  # graceful fallback — listing is never broken by an adjustment error
+    # Never once the match has a result: the detail page stops adjusting then,
+    # and a listing row turns "past" two hours after kick-off while its
+    # injuries key (30-minute TTL) can still be warm.
+    adjusted = False
+    if result is None:
+        try:
+            from backend.app.cache import cache_get, CACHE_MISS
+            from backend.app.ml.injury_adjustment import adjust_probabilities, has_significant_injuries
+            injuries = cache_get(f"injuries:{match_id}")
+            if injuries is not CACHE_MISS and injuries:
+                home_inj = injuries.get("home", [])
+                away_inj = injuries.get("away", [])
+                if has_significant_injuries(home_inj, away_inj):
+                    hw, d, aw, ov = adjust_probabilities(hw, d, aw, ov, home_inj, away_inj)
+                    adjusted = True
+        except Exception:
+            pass  # graceful fallback — listing is never broken by an adjustment error
 
+    insufficient = bool(getattr(pred, "insufficient_data", False))
     goals_pred = "OVER" if ov >= 0.5 else "UNDER"
-    confidence = _ml_confidence_for(league, max(hw, d, aw), ov)
+    # has_history exactly as the detail page passes it: a fixture priced from
+    # default features for both sides is "low" whatever its probabilities say.
+    # Without it the card could badge "high" beside "unknown teams".
+    confidence = _ml_confidence_for(league, max(hw, d, aw), ov, has_history=not insufficient)
 
     return PredictionEmbed(
         home_win_prob=round(hw, 4),
@@ -92,9 +104,12 @@ def _adjust_prediction_embed(match_id: int, pred, league: "str | None" = None) -
         goals_prediction=goals_pred,
         model_version=pred.model_version,
         confidence=confidence,
-        suggested_market=pred.suggested_market,
-        ev_score=pred.ev_score,
-        insufficient_data=bool(getattr(pred, "insufficient_data", False)),
+        # The stored pick and its EV were computed from the unadjusted
+        # probabilities; beside adjusted bars they could name the side the bars
+        # no longer favour. Dropped whenever an adjustment applied.
+        suggested_market=None if adjusted else pred.suggested_market,
+        ev_score=None if adjusted else pred.ev_score,
+        insufficient_data=insufficient,
     )
 
 _known_teams_cache: frozenset[str] | None = None
@@ -303,10 +318,6 @@ def list_matches(
             )
             stmt = stmt.where(predicted_odds >= min_odds)
 
-        if min_confidence in ("high", "medium"):
-            allowed = ["high"] if min_confidence == "high" else ["high", "medium"]
-            stmt = stmt.where(_Pred.confidence.in_(allowed))
-
         stmt = stmt.options(joinedload(Match.prediction))
         include_predictions = True
 
@@ -314,7 +325,15 @@ def list_matches(
     if include_predictions and not need_pred_join:
         stmt = stmt.options(selectinload(Match.prediction))
 
-    stmt = stmt.offset(offset).limit(limit)
+    # min_confidence filters on the confidence the card SHOWS, recomputed below
+    # from the served probabilities — not on the stored predictions.confidence
+    # column, which drifts from it (match 23469 was stored "low" and served
+    # "medium", so Medium+ hid a card the site itself labels medium). That
+    # filter needs the rows first, so offset/limit apply after it.
+    conf_allowed = (({"high"} if min_confidence == "high" else {"high", "medium"})
+                    if min_confidence in ("high", "medium") else None)
+    if conf_allowed is None:
+        stmt = stmt.offset(offset).limit(limit)
     matches = db.scalars(stmt).all()
 
     if not include_predictions:
@@ -328,10 +347,16 @@ def list_matches(
     for match in matches:
         resp = MatchResponse.model_validate(match)
         if resp.prediction is not None and match.prediction is not None:
-            resp.prediction = _adjust_prediction_embed(match.id, match.prediction, match.league)
+            resp.prediction = _adjust_prediction_embed(
+                match.id, match.prediction, match.league, match.result)
             if resp.prediction.insufficient_data:
                 resp.unknown_teams = _unknown_sides(match.home_team, match.away_team)
+        if conf_allowed is not None and (
+                resp.prediction is None or resp.prediction.confidence not in conf_allowed):
+            continue
         responses.append(resp)
+    if conf_allowed is not None:
+        responses = responses[offset:offset + limit]
     return responses
 
 
@@ -354,6 +379,10 @@ def export_picks(
 
     if league and league not in VALID_LEAGUES:
         raise HTTPException(status_code=400, detail=f"Unknown league '{league}'.")
+    # As list_matches does: anything else used to fall through to the past
+    # branch and return historical results under the filename picks.csv.
+    if status and status not in ("upcoming", "past"):
+        raise HTTPException(status_code=400, detail="status must be 'upcoming' or 'past'")
 
     if status == "upcoming" or status is None:
         now = datetime.now(timezone.utc)
@@ -414,16 +443,21 @@ def export_picks(
         )
         stmt = stmt.where(predicted_odds >= min_odds)
 
-    if min_confidence in ("high", "medium"):
-        allowed = ["high"] if min_confidence == "high" else ["high", "medium"]
-        stmt = stmt.where(_Pred.confidence.in_(allowed))
-
-    stmt = stmt.options(joinedload(Match.prediction)).limit(500)
+    # Filtered on the confidence served, as the listing does (see list_matches).
+    conf_allowed = (({"high"} if min_confidence == "high" else {"high", "medium"})
+                    if min_confidence in ("high", "medium") else None)
+    fetch_cap = _EXPORT_MAX_ROWS * (10 if conf_allowed else 1)
+    stmt = stmt.options(joinedload(Match.prediction)).limit(fetch_cap)
     matches = db.scalars(stmt).all()
 
     rows = []
     for m in matches:
         p = m.prediction
+        conf = _ml_confidence_for(
+            m.league, max(p.home_win_prob, p.draw_prob, p.away_win_prob), p.over_2_5_prob,
+            has_history=not bool(getattr(p, "insufficient_data", False))) if p else None
+        if conf_allowed is not None and conf not in conf_allowed:
+            continue
         rows.append({
             "date": str(m.match_date),
             "time": str(m.kickoff_time) if m.kickoff_time else "",
@@ -431,7 +465,7 @@ def export_picks(
             "home": m.home_team,
             "away": m.away_team,
             "predicted": p.suggested_market or "",
-            "confidence": p.confidence,
+            "confidence": conf,
             "home_pct": round(p.home_win_prob * 100, 1) if p else "",
             "draw_pct": round(p.draw_prob * 100, 1) if p else "",
             "away_pct": round(p.away_win_prob * 100, 1) if p else "",
@@ -499,6 +533,10 @@ def export_picks(
         # Re-sort the combined set so internationals interleave by date.
         rows.sort(key=lambda r: (r["date"], r["time"]),
                   reverse=not upcoming_export)
+
+    # One cap for the whole export, as documented. The club query and the
+    # national merge were capped separately and together returned up to 1,000.
+    rows = rows[:_EXPORT_MAX_ROWS]
 
     if fmt == "json":
         content = json.dumps(rows, indent=2)

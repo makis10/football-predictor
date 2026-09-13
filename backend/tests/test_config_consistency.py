@@ -837,6 +837,33 @@ def test_no_serving_path_fills_a_feature_training_leaves_missing():
         f"serve-time constants for features training leaves NaN: {offenders}")
 
 
+def test_the_value_bet_ledger_constraint_matches_its_migration():
+    """Exactly one of match_id / national_prediction_id is set per ticket, so
+    the unique constraint only works with NULLS NOT DISTINCT. Migration 0017
+    builds it that way; the model did not, so any schema created from the
+    models let every re-run of the flagger insert a duplicate ticket."""
+    from sqlalchemy import UniqueConstraint
+
+    from backend.app.models.value_bet import ValueBet
+
+    (uq,) = [c for c in ValueBet.__table__.constraints
+             if isinstance(c, UniqueConstraint) and c.name == "uq_value_bets_ticket"]
+    assert uq.dialect_options["postgresql"]["nulls_not_distinct"] is True
+
+
+def test_a_skipped_completeness_check_is_not_reported_as_clean():
+    """On an API-Football block the daily run skips the completeness check; its
+    summary used to print "[ok] data completeness: no alerts" anyway."""
+    import pathlib
+
+    src = (pathlib.Path(__file__).resolve().parents[2] / "scripts" / "run_daily.sh").read_text()
+    blocked_branch = next(line for line in src.splitlines()
+                          if "gap report would be noise" in line)
+    assert "health_skipped=1" in blocked_branch
+    summary = src[src.index('if [ "${health_alerts:-0}" -ne 0 ]; then'):]
+    assert summary.index("health_skipped") < summary.index("[ok] data completeness: no alerts")
+
+
 def test_no_override_points_at_a_name_that_is_also_one_of_ours():
     """An override must translate OUR spelling into the FEED's, never the reverse.
 

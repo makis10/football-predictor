@@ -182,7 +182,10 @@ def _build_response(
         d  = round(pred.draw_prob,     4)
         aw = round(pred.away_win_prob,  4)
         ov = round(pred.over_2_5_prob,  4)
-        goals_pred = pred.goals_prediction
+        # Derived from the probability served, as the listing card derives it.
+        # The stored label read UNDER at exactly 0.5000 while the card read
+        # OVER, so the same fixture said both on two pages.
+        goals_pred = "OVER" if ov >= 0.5 else "UNDER"
 
     # Prefer the STORED BTTS (classifier output, coherence-projected at compute
     # time alongside 1×2/Over) — recomputing an independent Poisson blend here

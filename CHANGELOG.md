@@ -65,6 +65,34 @@ History before this file was introduced lives in `git log`.
   backfill no longer writes probabilities onto a row stored the other way
   round, and the manual-fixture injector skips a meeting already listed a few
   days out. The two duplicate rows already stored need a one-off repair.
+- **The match list and the match page disagreed in four ways.** The card's
+  confidence ignored "no history for either side", so a fixture priced from
+  default features could read high on the card — beside "unknown teams" — and
+  low on its page. The card applied a still-cached injury adjustment to
+  finished matches, and kept the stored pick and EV beside the adjusted bars.
+  At exactly 50% the card said OVER and the page UNDER. And the Medium+/High
+  filter read the stored `predictions.confidence` column rather than the
+  confidence the card shows, so it hid cards the site itself labelled medium
+  (match 23469: stored low, served medium). All four now come from the one
+  served computation; the filter runs after it, and offset and limit apply to
+  what it keeps.
+- **`/matches/export`** rejects an unknown `status` (it returned historical
+  results under the filename picks.csv), filters confidence the same way, and
+  holds its documented 500-row cap across club and national rows together (it
+  could return 1,000).
+- **National predictions pick up the tournament and venue the source
+  revises.** Both were set once, at insert. Future rows are covered; the 19
+  settled 2026 rows that say "home" for a match the source lists as neutral,
+  and the Tri-Nations Cup tie filed as a Friendly, need a one-off repair.
+- **The daily summary no longer reports a skipped audit as clean.** On an
+  API-Football block the completeness check is skipped, and the summary said
+  "[ok] data completeness: no alerts" anyway; it now says the check did not
+  run.
+- **The value-bet ledger's unique constraint matches its migration.**
+  Migration 0017 builds it NULLS NOT DISTINCT because exactly one of the two
+  foreign keys is set per ticket; the model omitted the flag, so a schema
+  created from the models would let every re-run insert a duplicate ticket.
+  The live database was built by the migration and is unaffected.
 
 ## 2026-09-12
 

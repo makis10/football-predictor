@@ -281,6 +281,12 @@ def save_to_db(predictions: list[dict], keys: "set | None" = None, db=None) -> N
                 existing.btts_prob     = pred["p_btts"]
                 existing.h_elo         = pred.get("h_elo")
                 existing.a_elo         = pred.get("a_elo")
+                # The source revises these too. Set only at insert, 19 of the
+                # 2026 rows said "home" for a match the source lists as
+                # neutral, and one competitive fixture sat in the Friendly
+                # bucket of /national/stats.
+                existing.tournament    = pred["tournament"]
+                existing.neutral       = bool(pred.get("neutral", True))
                 updated += 1
             else:
                 row = NationalPrediction(

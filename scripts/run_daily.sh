@@ -854,6 +854,7 @@ fi
 echo "" >> "$LOG"
 echo "[health] Data-completeness check …" | tee -a "$LOG"
 health_alerts=0
+health_skipped=0
 # Skipped when API-Football is blocked: the check reads the same API, so every
 # gap it reports would be an artefact of the block, not a real data problem.
 # Alerting on those buries the one alert that matters (the pre-flight's) under
@@ -870,7 +871,7 @@ if [ "$AF_BLOCKED" -eq 0 ]; then
 docker compose exec -T backend \
     python scripts/check_data_completeness.py --days 7 \
     2>&1 | tee -a "$LOG" || health_alerts=1
-else echo "  [skip] API-Football blocked — gap report would be noise." | tee -a "$LOG"; fi
+else health_skipped=1; echo "  [skip] API-Football blocked — gap report would be noise." | tee -a "$LOG"; fi
 
 # Club identity. Ingestion is what introduces new spellings, so this belongs
 # next to the completeness check rather than in CI alone: a promoted club
@@ -954,8 +955,12 @@ if [ "$af_quota_hit" -ne 0 ]; then
 fi
 # Reported on its own line so a reader (and `grep`) can tell "the run broke"
 # apart from "the run was fine, the data has gaps".
+# A check that never ran is not a clean one: on a blocked day the summary used
+# to print "[ok] data completeness: no alerts" for an audit that was skipped.
 if [ "${health_alerts:-0}" -ne 0 ]; then
     echo "[warn] data completeness: alerts raised (does NOT block the heartbeat)" >> "$LOG"
+elif [ "${health_skipped:-0}" -ne 0 ]; then
+    echo "[skip] data completeness: not checked (API-Football blocked)" >> "$LOG"
 else
     echo "[ok] data completeness: no alerts" >> "$LOG"
 fi

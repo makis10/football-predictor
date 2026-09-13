@@ -118,3 +118,17 @@ def test_save_never_rewrites_a_settled_prediction(db):
     save_to_db([_pred("2026-07-07", "Argentina", "Egypt", 0.9)], FILLER, db=db)
     (row,) = db.query(NP).all()
     assert row.home_win_prob == 0.5
+
+
+def test_save_refreshes_the_venue_and_tournament_the_source_revised(db):
+    """Set only at insert, 19 of the 2026 rows said "home" for a match the
+    source lists as neutral, and a Tri-Nations Cup tie sat in the Friendly
+    bucket of /national/stats."""
+    from scripts.predict_national import save_to_db
+
+    _row(db, "2026-06-06", "Myanmar", "Guam", tournament="Friendly", neutral=False)
+    pred = {**_pred("2026-06-06", "Myanmar", "Guam", 0.6),
+            "tournament": "Tri-Nations Cup", "neutral": True}
+    save_to_db([pred], FILLER, db=db)
+    (row,) = db.query(NP).all()
+    assert (row.tournament, row.neutral) == ("Tri-Nations Cup", True)

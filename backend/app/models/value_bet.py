@@ -19,8 +19,14 @@ class ValueBet(Base):
     """
     __tablename__ = "value_bets"
     __table_args__ = (
+        # NULLS NOT DISTINCT, as migration 0017 builds it: exactly one of
+        # match_id / national_prediction_id is set per row, so with the
+        # PostgreSQL default (NULLs distinct) no two tickets ever collide and a
+        # schema built from these models would let every re-run insert a
+        # duplicate ticket.
         UniqueConstraint("source", "match_id", "national_prediction_id", "market",
-                         name="uq_value_bets_ticket"),
+                         name="uq_value_bets_ticket",
+                         postgresql_nulls_not_distinct=True),
     )
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True)
