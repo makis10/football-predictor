@@ -188,9 +188,7 @@ def simulate_european(db, league: str, sims: int = DEFAULT_SIMS, seed: int = 424
             hi, lo = po[i], po[len(po) - 1 - i]
             po_winners.append(_two_legged(rng, lo, hi, elo))
 
-        # R16: 1 v the lowest-seeded survivor, 2 v the next … the standard
-        # "reward for finishing high" shape.
-        bracket = seeded + po_winners[::-1]
+        bracket = _r16_bracket(seeded, po_winners)
         if len(bracket) < 2:
             continue
         for t in bracket:
@@ -231,3 +229,15 @@ def simulate_european(db, league: str, sims: int = DEFAULT_SIMS, seed: int = 424
         "matches_remaining": len(remaining),
         "teams":             projection,
     }
+
+
+def _r16_bracket(seeded: list, po_winners: list) -> list:
+    """Seeds 1–8, then the play-off winners in play-off order (9v24 first).
+
+    The knockout fold pairs bracket[i] with bracket[-1-i], so seed 1 meets the
+    last entry — the 16v17 winner — and seed 8 the 9v24 winner: UEFA's "reward
+    for finishing high" shape. The winners used to be reversed, which sent the
+    top seed against the strongest play-off survivor and priced finishing first
+    as the hardest road.
+    """
+    return list(seeded) + list(po_winners)

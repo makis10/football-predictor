@@ -79,7 +79,9 @@ def test_playoff_league_simulates_the_playoff_phase(monkeypatch):
                 return _Res([("2026/27",)])
             if "COUNT(*)" in str(stmt):
                 return _Res([(182,)])
-            return _Res([("2026/27", h, a, None, None) for h in teams for a in teams if h != a])
+            # season, home, away, home_goals, away_goals, match_date
+            return _Res([("2026/27", h, a, None, None, None)
+                         for h in teams for a in teams if h != a])
 
     out = simulate_league(_DB(), "GreekSL", sims=800)
     assert out is not None

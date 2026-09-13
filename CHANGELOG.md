@@ -93,6 +93,24 @@ History before this file was introduced lives in `git log`.
   foreign keys is set per ticket; the model omitted the flag, so a schema
   created from the models would let every re-run insert a duplicate ticket.
   The live database was built by the migration and is unaffected.
+- **Season projections dropped real fixtures in split and triple round-robin
+  leagues.** `simulate_league` built the remaining fixtures from the team list
+  alone — every ordered pair minus the *set* of pairs already played — so a
+  league that meets the same pairing twice at the same ground lost those
+  repeat meetings, and its projection returned 404 ("season complete") once
+  every pairing had been played once, with a third of the season still to go.
+  Finland held 75 rows over 67 pairings, Scotland 138 over 132, Ireland 56
+  over 55. Remaining is now the real unplayed rows, repeats included, plus the
+  round-robin meetings not yet on the fixture list. GreekSL's play-off phase
+  repeats pairings, so there a second meeting belongs to the phase its spec
+  models; once the regular season ends the groups come from the real table
+  and play-off games already played are banked rather than re-simulated. The
+  last play-off group is open-ended, so a 15th team can no longer fall outside
+  every group and show 0% relegation.
+- **UEFA projections drew the top seed against the strongest play-off
+  survivor.** The R16 bracket reversed the play-off winners, so seed 1 met the
+  9-v-24 winner — the opposite of UEFA's format — and finishing first was
+  priced as the hardest road. Seed 1 now meets the 16-v-17 winner.
 
 ## 2026-09-12
 
