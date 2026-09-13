@@ -18,7 +18,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // /national is intentionally absent: it 307s to / since the 2026 World Cup
     // ended, and a sitemap that advertises redirects gets the whole file
     // discounted. Re-add it when the next tournament goes live.
-    { path: "/contact",                    priority: 0.3, freq: "weekly" },
   ];
   return routes.map((r) => ({
     url: `${SITE_URL}${r.path}`,

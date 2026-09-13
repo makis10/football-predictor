@@ -1,6 +1,7 @@
 export const dynamic = "force-dynamic";
 
 import { notFound } from "next/navigation";
+import { isNotFound } from "@/lib/api";
 import BackLink from "@/components/BackLink";
 import LockedDetailPanel from "@/components/LockedDetailPanel";
 import { getSession } from "@/lib/auth";
@@ -56,8 +57,11 @@ export default async function NationalMatchDetailPage({ params }: Props) {
   let prediction;
   try {
     prediction = await getNationalPrediction(id);
-  } catch {
-    notFound();
+  } catch (e) {
+    // Only a real 404 is a missing page; a backend restart goes to the error
+    // boundary (with retry) instead of telling a crawler the match is gone.
+    if (isNotFound(e)) notFound();
+    throw e;
   }
 
   // Player props (best-effort — only present for fixtures we've priced).
@@ -70,8 +74,13 @@ export default async function NationalMatchDetailPage({ params }: Props) {
 
   const hasResult =
     prediction.actual_home_goals !== null && prediction.actual_away_goals !== null;
-  const isCorrect =
-    hasResult && prediction.prediction === prediction.actual_result;
+  // Graded by the probabilities, as /stats and lib/matchGrade.ts do: the stored
+  // label can disagree with them (Sweden v Tunisia, 2026-06-14, label H with
+  // Tunisia favoured), which printed "✓ Correct" beside bars favouring the other side.
+  const probs = { H: prediction.home_win_prob, D: prediction.draw_prob, A: prediction.away_win_prob };
+  const pick = (["D", "A"] as const).reduce<"H" | "D" | "A">(
+    (best, k) => (probs[k] > probs[best] ? k : best), "H");
+  const isCorrect = hasResult && pick === prediction.actual_result;
   const hasEnded =
     hasResult || hasMatchEndedUtc(prediction.kickoff_utc);
 
@@ -119,7 +128,7 @@ export default async function NationalMatchDetailPage({ params }: Props) {
             <p className="text-xl font-bold text-chalk leading-tight">
               {prediction.home_team}
             </p>
-            <p className="text-xs text-chalk-3">{prediction.neutral ? "Neutral" : "Home"}</p>
+            <p className="text-xs text-chalk-3">{prediction.neutral ? t("match.neutral") : t("match.home")}</p>
           </div>
 
           <div className="text-center shrink-0">
@@ -129,7 +138,9 @@ export default async function NationalMatchDetailPage({ params }: Props) {
                   {prediction.actual_home_goals} – {prediction.actual_away_goals}
                 </p>
                 <p className={`text-xs font-medium mt-1 ${isCorrect ? "text-win" : "text-lose"}`}>
-                  {isCorrect ? "✓ Correct" : "✗ Wrong"} · Pred: {prediction.prediction}
+                  {isCorrect ? t("recent.badgeCorrect") : t("recent.badgeWrong")} · {t("recent.predicted")}{" "}
+                  {pick === "D" ? t("recent.draw")
+                    : t("recent.teamWin", { team: pick === "H" ? prediction.home_team : prediction.away_team })}
                 </p>
               </>
             ) : (
@@ -141,7 +152,7 @@ export default async function NationalMatchDetailPage({ params }: Props) {
             <p className="text-xl font-bold text-chalk leading-tight">
               {prediction.away_team}
             </p>
-            <p className="text-xs text-chalk-3">Away</p>
+            <p className="text-xs text-chalk-3">{t("match.away")}</p>
           </div>
         </div>
       </div>
@@ -150,7 +161,7 @@ export default async function NationalMatchDetailPage({ params }: Props) {
       <div className="flex items-center gap-2 px-1 text-sm">
         <span className={`w-2 h-2 rounded-full ${confidenceDot(prediction.confidence)}`} />
         <span className={`font-medium capitalize ${confidenceColor(prediction.confidence)}`}>
-          {prediction.confidence.toLowerCase()} confidence
+          {t("match.confidence", { level: t(`match.conf.${prediction.confidence.toLowerCase()}`) })}
         </span>
       </div>
 

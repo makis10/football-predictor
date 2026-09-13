@@ -1,7 +1,7 @@
 import { redirect } from "next/navigation";
 import Link from "next/link";
 import { getCurrentUserId, fetchWithAuth } from "@/lib/auth";
-import { leagueFlag, leagueLabel } from "@/lib/api";
+import { athensDate, formatDate, leagueFlag, leagueLabel } from "@/lib/api";
 
 interface TrackedMatch {
   match_id:        number;
@@ -39,14 +39,15 @@ export default async function MyMatchesPage() {
   const res = await fetchWithAuth("/users/tracked");
   const matches: TrackedMatch[] = res.ok ? await res.json() : [];
 
-  const now  = new Date();
-  const upcoming = matches.filter((m) => new Date(m.match_date) >= now);
-  const past     = matches.filter((m) => new Date(m.match_date) <  now);
+  // Athens calendar days compared as YYYY-MM-DD strings. `new Date("2026-09-13")`
+  // is midnight UTC, so from 03:00 Athens every fixture dated today — kick-off
+  // still hours away — was listed under "Past".
+  const today = athensDate();
+  const upcoming = matches.filter((m) => m.match_date >= today);
+  const past     = matches.filter((m) => m.match_date <  today);
 
   const MatchRow = ({ m }: { m: TrackedMatch }) => {
-    const date = new Date(m.match_date).toLocaleDateString("el-GR", {
-      weekday: "short", day: "numeric", month: "short",
-    });
+    const date = formatDate(m.match_date);
     const mkt = m.suggested_market ? (marketLabel[m.suggested_market] ?? m.suggested_market) : null;
 
     return (

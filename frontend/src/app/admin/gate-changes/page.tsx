@@ -1,6 +1,6 @@
 import { redirect } from "next/navigation";
 import { getSession, fetchWithAuth } from "@/lib/auth";
-import { type GateChange } from "@/lib/api";
+import { DISPLAY_TZ, type GateChange } from "@/lib/api";
 import { getServerT } from "@/lib/i18n-server";
 
 export const dynamic = "force-dynamic";
@@ -11,6 +11,8 @@ function fmtWhen(iso: string): string {
   return d.toLocaleString("en-GB", {
     day: "numeric", month: "short", year: "numeric",
     hour: "2-digit", minute: "2-digit",
+    // The container runs in UTC; without this every time read 3h early.
+    timeZone: DISPLAY_TZ,
   });
 }
 

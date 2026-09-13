@@ -14,6 +14,9 @@ interface Props {
   isPast?: boolean;
   /** Use national analysis endpoint instead of club */
   isNational?: boolean;
+  /** Rendered in place of the panel when the analysis request fails — the
+   *  page's own probabilities, so a slow odds feed never leaves it blank. */
+  fallback?: React.ReactNode;
 }
 
 // ── Odds movement arrow ───────────────────────────────────────────────────────
@@ -125,7 +128,7 @@ function Skeleton() {
   );
 }
 
-export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast, isNational }: Props) {
+export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast, isNational, fallback }: Props) {
   const t = useT();
   const { status } = useSession();
   const [data, setData]       = useState<MatchAnalysis | null>(null);
@@ -163,7 +166,7 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
   }
 
   if (status === "loading" || loading) return <Skeleton />;
-  if (error)   return null; // silently hide if no prediction yet
+  if (error)   return <>{fallback ?? null}</>;
 
   if (!data) return null;
 
@@ -663,15 +666,16 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
               {data.watch_markets.map((w) => (
                 <span key={w.market} className="inline-flex items-center gap-1.5 text-sm text-est/90">
                   <span className="font-medium">{w.market}</span>
-                  {/* EV is return-per-stake; model/market are probabilities. Never mix them. */}
-                  <span className="text-est text-xs">
-                    (EV {w.ev_pct >= 0 ? "+" : ""}{w.ev_pct.toFixed(0)}%
-                    {w.model_pct != null && w.market_pct != null
-                      ? t("ma.modelVs", { m: Math.round(w.model_pct), k: Math.round(w.market_pct) })
-                      : w.market_pct != null
-                        ? t("ma.marketOnly", { k: Math.round(w.market_pct) })
-                        : ""})
-                  </span>
+                  {/* Probabilities only. An "EV +23%" figure here was the
+                      value claim the narrative is barred from making — raw
+                      model probability × price, with no track record behind it. */}
+                  {w.market_pct != null && (
+                    <span className="text-est text-xs">
+                      ({w.model_pct != null
+                        ? t("ma.modelVs", { m: Math.round(w.model_pct), k: Math.round(w.market_pct) })
+                        : t("ma.marketOnly", { k: Math.round(w.market_pct) })})
+                    </span>
+                  )}
                 </span>
               ))}
             </div>
@@ -685,7 +689,7 @@ export default function MatchAnalysisPanel({ matchId, homeTeam, awayTeam, isPast
       {/* Disclaimer */}
       {!isPast && (
         <p className="text-xs text-chalk-3 pt-1">
-          ⚠ This is not financial advice. Predictions are for entertainment only.
+          {t("ma.disclaimer")}
         </p>
       )}
     </div>

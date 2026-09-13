@@ -3,18 +3,20 @@ export const dynamic = "force-dynamic";
 
 import { Suspense } from "react";
 import Link from "next/link";
-import { getPastMatchesBetween, getPastNationalMatches, formatLongDate, athensDate, canonicalLeagueCode, INTERNATIONAL_LEAGUE, type Match } from "@/lib/api";
+import { getPastMatchesBetween, getPastNationalMatches, formatLongDate, athensDate, canonicalLeagueCode, dateLocale, INTERNATIONAL_LEAGUE, type Match } from "@/lib/api";
 import { accuracySummary, gradeMatch, hasResult } from "@/lib/matchGrade";
-import { parsePage, recentPageLabel, recentWindow, shiftDays } from "@/lib/recentWindow";
+import { DAYS_PER_PAGE, parsePage, recentWindow, shiftDays } from "@/lib/recentWindow";
 import FilterBar from "@/components/FilterBar";
 import RecentResultCard from "@/components/RecentResultCard";
-import { getServerT } from "@/lib/i18n-server";
+import { getServerLang, getServerT } from "@/lib/i18n-server";
 
 interface PageProps {
   searchParams: Promise<{ league?: string; page?: string }>;
 }
 
 async function RecentGrid({ league, page }: { league?: string; page: number }) {
+  const t = await getServerT();
+  const locale = dateLocale(await getServerLang());
   // One window, in Athens calendar days, for club and national matches alike —
   // the days the cards below are grouped under. Pages tile the calendar with no
   // day on two of them (lib/recentWindow.ts).
@@ -51,7 +53,7 @@ async function RecentGrid({ league, page }: { league?: string; page: number }) {
     return (
       <div className="text-center py-16 text-chalk-3">
         <p className="text-4xl mb-3">⚠️</p>
-        <p className="font-medium">Could not reach the API.</p>
+        <p className="font-medium">{t("recent.apiError")}</p>
       </div>
     );
   }
@@ -60,7 +62,7 @@ async function RecentGrid({ league, page }: { league?: string; page: number }) {
     return (
       <div className="text-center py-16 text-chalk-3">
         <p className="text-4xl mb-3">📅</p>
-        <p className="font-medium">No matches found for this period.</p>
+        <p className="font-medium">{t("recent.empty")}</p>
       </div>
     );
   }
@@ -89,28 +91,28 @@ async function RecentGrid({ league, page }: { league?: string; page: number }) {
           <div className="flex items-center gap-6 flex-wrap">
             <div className="text-center min-w-[56px]">
               <p className="text-3xl font-black text-chalk">{accuracy}%</p>
-              <p className="text-xs text-chalk-2 mt-0.5">Both correct</p>
+              <p className="text-xs text-chalk-2 mt-0.5">{t("recent.bothCorrect")}</p>
             </div>
             <div className="h-10 w-px bg-ink-600 hidden sm:block" />
             <div className="flex gap-4 text-sm flex-wrap">
               <span className="flex items-center gap-1.5">
                 <span className="w-2.5 h-2.5 rounded-full bg-win inline-block" />
                 <span className="text-win font-bold">{acc.correct}</span>
-                <span className="text-chalk-3">correct</span>
+                <span className="text-chalk-3">{t("recent.nCorrect")}</span>
               </span>
               <span className="flex items-center gap-1.5">
                 <span className="w-2.5 h-2.5 rounded-full bg-est inline-block" />
                 <span className="text-est font-bold">{acc.partial}</span>
-                <span className="text-chalk-3">partial</span>
+                <span className="text-chalk-3">{t("recent.nPartial")}</span>
               </span>
               <span className="flex items-center gap-1.5">
                 <span className="w-2.5 h-2.5 rounded-full bg-lose inline-block" />
                 <span className="text-lose font-bold">{acc.wrong}</span>
-                <span className="text-chalk-3">wrong</span>
+                <span className="text-chalk-3">{t("recent.nWrong")}</span>
               </span>
               {noPred > 0 && (
                 <span className="text-chalk-3 text-xs self-center">
-                  {noPred} without prediction
+                  {t("recent.withoutPrediction", { n: noPred })}
                 </span>
               )}
             </div>
@@ -119,14 +121,11 @@ async function RecentGrid({ league, page }: { league?: string; page: number }) {
           {/* Bottom row: split by prediction type */}
           {(resultAccuracy !== null || goalsAccuracy !== null) && (
             <div className="flex items-center gap-3 pt-1 border-t border-line flex-wrap">
-              <span className="text-xs text-chalk-3 mr-1">Breakdown:</span>
+              <span className="text-xs text-chalk-3 mr-1">{t("recent.breakdown")}</span>
               {resultAccuracy !== null && (
                 <span className="flex items-center gap-2 bg-ink-600 rounded-lg px-3 py-1.5">
-                  <span className="text-xs text-chalk-2">Result (1×2)</span>
-                  <span className={`text-sm font-bold ${
-                    resultAccuracy >= 50 ? "text-win" :
-                    resultAccuracy >= 40 ? "text-est" : "text-lose"
-                  }`}>
+                  <span className="text-xs text-chalk-2">{t("recent.result1x2")}</span>
+                  <span className="text-sm font-bold text-chalk">
                     {resultAccuracy}%
                   </span>
                   <span className="text-xs text-chalk-3">
@@ -136,11 +135,8 @@ async function RecentGrid({ league, page }: { league?: string; page: number }) {
               )}
               {goalsAccuracy !== null && (
                 <span className="flex items-center gap-2 bg-ink-600 rounded-lg px-3 py-1.5">
-                  <span className="text-xs text-chalk-2">Goals (O/U)</span>
-                  <span className={`text-sm font-bold ${
-                    goalsAccuracy >= 55 ? "text-win" :
-                    goalsAccuracy >= 45 ? "text-est" : "text-lose"
-                  }`}>
+                  <span className="text-xs text-chalk-2">{t("recent.goalsOU")}</span>
+                  <span className="text-sm font-bold text-chalk">
                     {goalsAccuracy}%
                   </span>
                   <span className="text-xs text-chalk-3">
@@ -164,13 +160,13 @@ async function RecentGrid({ league, page }: { league?: string; page: number }) {
             {/* Date header */}
             <div className="flex items-center justify-between border-b border-line pb-2">
               <h2 className="text-sm font-semibold text-chalk-2 uppercase tracking-wider">
-                {formatLongDate(dateStr)}
+                {formatLongDate(dateStr, locale)}
               </h2>
               {dayWithPred.length > 0 && (
                 <span className="text-xs text-chalk-3">
-                  {dayCorrect.length}/{dayWithPred.length} correct
+                  {t("recent.dayCorrect", { c: dayCorrect.length, n: dayWithPred.length })}
                   {dayPartial.length > 0 && (
-                    <span className="text-est ml-1">· {dayPartial.length} partial</span>
+                    <span className="text-est ml-1">{t("recent.dayPartial", { n: dayPartial.length })}</span>
                   )}
                 </span>
               )}
@@ -197,6 +193,10 @@ export default async function RecentResultsPage({ searchParams }: PageProps) {
   const league = canonicalLeagueCode(sp.league);
   const unknownLeague = sp.league && !league ? sp.league : undefined;
   const page = parsePage(sp.page);
+  const newest = (page - 1) * DAYS_PER_PAGE;
+  const pageLabel = newest === 0
+    ? t("recent.windowRecent", { days: DAYS_PER_PAGE })
+    : t("recent.windowOlder", { from: newest + DAYS_PER_PAGE - 1, to: newest });
 
   const buildHref = (p: number) => {
     const params = new URLSearchParams();
@@ -232,10 +232,8 @@ export default async function RecentResultsPage({ searchParams }: PageProps) {
       {unknownLeague ? (
         <div className="text-center py-16 text-chalk-3">
           <p className="text-4xl mb-3">🔍</p>
-          <p className="font-medium">
-            League &ldquo;{unknownLeague}&rdquo; isn&apos;t covered (yet).
-          </p>
-          <p className="text-sm mt-1">Pick one of the leagues above.</p>
+          <p className="font-medium">{t("home.unknownLeague", { league: unknownLeague })}</p>
+          <p className="text-sm mt-1">{t("home.unknownLeagueHint")}</p>
         </div>
       ) : (
         <Suspense
@@ -258,15 +256,15 @@ export default async function RecentResultsPage({ searchParams }: PageProps) {
             href={buildHref(page - 1)}
             className="px-4 py-2 text-sm rounded-lg bg-ink-700 text-chalk-2 hover:bg-ink-600 transition-colors"
           >
-            ← Newer
+            {t("recent.newer")}
           </Link>
         )}
-        <span className="text-xs text-chalk-3 px-2">{recentPageLabel(page)}</span>
+        <span className="text-xs text-chalk-3 px-2">{pageLabel}</span>
         <Link
           href={buildHref(page + 1)}
           className="px-4 py-2 text-sm rounded-lg bg-ink-700 text-chalk-2 hover:bg-ink-600 transition-colors"
         >
-          Older →
+          {t("recent.older")}
         </Link>
       </div>
     </div>

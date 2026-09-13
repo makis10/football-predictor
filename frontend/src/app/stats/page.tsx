@@ -3,7 +3,7 @@
  * Server component: always SSR (force-dynamic); backend caches the data for 6h.
  */
 import { Suspense } from "react";
-import { getStats, getNationalStats, INTERNATIONAL_LEAGUE, type NationalStatsResponse } from "@/lib/api";
+import { getStats, getNationalStats, canonicalLeagueCode, INTERNATIONAL_LEAGUE, type NationalStatsResponse } from "@/lib/api";
 import { StatCard } from "@/components/stats/StatCard";
 import { AccuracyBar } from "@/components/stats/AccuracyBar";
 import { LeagueTable } from "@/components/stats/LeagueTable";
@@ -64,22 +64,33 @@ function vsBaseline(value: number, baseline: number, label: string): string | nu
   return `${sign}${Math.abs(edge).toFixed(1)}pp vs ${label} ${Math.round(baseline * 100)}%`;
 }
 
-/** Kept for the national view, whose endpoint has no baselines of its own. */
-function accentForAccuracy(v: number): "green" | "yellow" | "red" {
-  if (v >= 0.57) return "green";
-  if (v >= 0.48) return "yellow";
-  return "red";
+/** Table-cell colour for an accuracy against its own floor; neutral without one.
+ *  (The absolute 57%/48% helper this replaces was the last place on the page
+ *  colouring without a baseline — the national cards, the BTTS tiles and the
+ *  model-version table.) */
+function edgeText(value: number, baseline?: number): string {
+  const a = accentForEdge(value, baseline ?? 0);
+  return a === "green" ? "text-win" : a === "yellow" ? "text-est" : a === "red" ? "text-lose" : "text-chalk-2";
 }
 
 export default async function StatsPage({ searchParams }: PageProps) {
   const t = await getServerT();
-  const league = (await searchParams).league;
-  // Case-insensitive: hand-typed/shared URLs use ?league=international (lowercase)
-  // while the filter emits "International" — both must hit the national view,
-  // otherwise the value leaks to the club /stats query as an unknown league
-  // and the page renders all-zeros.
+  const rawLeague = (await searchParams).league;
+  // Resolved case-insensitively, as the home page and /recent do. The raw value
+  // used to reach the API, which matches leagues case-sensitively and answers
+  // 200 with zeros: /stats?league=epl read "0 matches · 0%" under the EPL chip.
+  const league = canonicalLeagueCode(rawLeague);
   const isInternational =
     league?.toLowerCase() === INTERNATIONAL_LEAGUE.toLowerCase();
+  if (rawLeague && !league) {
+    return (
+      <div className="text-center py-16 text-chalk-3">
+        <p className="text-4xl mb-3">🔍</p>
+        <p className="font-medium text-chalk-2">{t("home.unknownLeague", { league: rawLeague })}</p>
+        <p className="text-sm mt-1">{t("home.unknownLeagueHint")}</p>
+      </div>
+    );
+  }
 
   let stats;
   let nationalStats: NationalStatsResponse | null = null;
@@ -91,9 +102,9 @@ export default async function StatsPage({ searchParams }: PageProps) {
       return (
         <div className="text-center py-16 text-chalk-3">
           <p className="text-4xl mb-4">📊</p>
-          <p className="text-lg font-medium text-chalk-2">{t("stats.unavailable.title")}</p>
+          <p className="text-lg font-medium text-chalk-2">{t("stats.error.title")}</p>
           <p className="text-sm mt-1">
-            {t("stats.unavailable.body")}
+            {t("stats.error.body")}
           </p>
         </div>
       );
@@ -161,19 +172,19 @@ export default async function StatsPage({ searchParams }: PageProps) {
               label={t("stats.resultAccuracy")}
               value={pct(ns.result_accuracy)}
               sub={t("stats.correctFrac", { c: ns.result_correct, t: ns.total })}
-              accent={accentForAccuracy(ns.result_accuracy)}
+              accent="gray"
             />
             <StatCard
               label={t("stats.ouAccuracy")}
               value={pct(ns.over_accuracy)}
               sub={t("stats.correctFrac", { c: ns.over_correct, t: ns.total })}
-              accent={accentForAccuracy(ns.over_accuracy)}
+              accent="gray"
             />
             <StatCard
               label={t("stats.bothCorrect")}
               value={pct(ns.both_accuracy)}
               sub={t("stats.frac", { c: ns.both_correct, t: ns.total })}
-              accent={accentForAccuracy(ns.both_accuracy)}
+              accent="gray"
             />
             <StatCard
               label={t("stats.matchesTracked")}
@@ -521,7 +532,7 @@ export default async function StatsPage({ searchParams }: PageProps) {
             label={t("stats.ouAccuracy")}
             value={pct(all.goals_accuracy)}
             sub={vsBaseline(all.goals_accuracy, all.goals_baseline,
-                            t("stats.baseline.goals")) ?? undefined}
+                            t(all.goals_baseline_side === "UNDER" ? "stats.baseline.goalsUnder" : "stats.baseline.goals")) ?? undefined}
             accent={accentForEdge(all.goals_accuracy, all.goals_baseline)}
           />
           <StatCard
@@ -813,7 +824,7 @@ export default async function StatsPage({ searchParams }: PageProps) {
                 {pct(btts.overall_accuracy)}
               </p>
               <p className="text-xs text-chalk-3 mt-1">
-                {vsBaseline(btts.overall_accuracy, btts.gg_baseline, t("stats.baseline.gg"))}
+                {vsBaseline(btts.overall_accuracy, btts.gg_baseline, t(btts.gg_baseline_side === "NG" ? "stats.baseline.ng" : "stats.baseline.gg"))}
               </p>
               <p className="text-xs text-chalk-3 mt-1">
                 {t("stats.bttsCorrectGGNG", { c: btts.correctly_predicted_gg + btts.correctly_predicted_ng, t: btts.total_gg + btts.total_ng })}
@@ -821,11 +832,16 @@ export default async function StatsPage({ searchParams }: PageProps) {
             </div>
             <div className="rounded-xl border border-line bg-ink-700/60 p-4 text-center">
               <p className="text-xs text-chalk-3 uppercase tracking-wide mb-1">{t("stats.bttsGGAcc")}</p>
-              <p className={`text-2xl font-bold ${accentForAccuracy(btts.gg_precision) === "green" ? "text-win" : accentForAccuracy(btts.gg_precision) === "yellow" ? "text-est" : "text-lose"}`}>
+              <p className="text-2xl font-bold text-chalk">
                 {pct(btts.gg_precision)}
               </p>
               <p className="text-xs text-chalk-3 mt-1">
                 {t("stats.bttsGGPredsCorrect", { c: btts.correctly_predicted_gg, t: btts.predicted_gg })}
+              </p>
+              {/* Neutral, beside its floor: a GG call beats a guess only if it
+                  lands more often than GG happens at all. */}
+              <p className="text-xs text-chalk-3 mt-1">
+                {vsBaseline(btts.gg_precision, btts.total_gg / ((btts.total_gg + btts.total_ng) || 1), t("stats.baseline.ggRate"))}
               </p>
             </div>
           </div>
@@ -833,20 +849,28 @@ export default async function StatsPage({ searchParams }: PageProps) {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
             <div className="rounded-xl border border-line bg-ink-700/60 p-4">
               <p className="text-xs text-chalk-3 mb-1">{t("stats.bttsGGRecall")}</p>
-              <p className={`text-xl font-bold ${accentForAccuracy(btts.gg_recall) === "green" ? "text-win" : accentForAccuracy(btts.gg_recall) === "yellow" ? "text-est" : "text-lose"}`}>
+              <p className="text-xl font-bold text-chalk">
                 {pct(btts.gg_recall)}
               </p>
               <p className="text-xs text-chalk-3 mt-1 leading-tight">
                 {t("stats.bttsGGRecallSub", { t: btts.total_gg, c: btts.correctly_predicted_gg })}
               </p>
+              {/* A random caller at our GG-call rate catches that share; "91%
+                  GG recall" was green only because nine calls in ten are GG. */}
+              <p className="text-xs text-chalk-3 mt-1 leading-tight">
+                {vsBaseline(btts.gg_recall, btts.predicted_gg / ((btts.predicted_gg + btts.predicted_ng) || 1), t("stats.baseline.ggCallRate"))}
+              </p>
             </div>
             <div className="rounded-xl border border-line bg-ink-700/60 p-4">
               <p className="text-xs text-chalk-3 mb-1">{t("stats.bttsNGRecall")}</p>
-              <p className={`text-xl font-bold ${accentForAccuracy(btts.ng_recall) === "green" ? "text-win" : accentForAccuracy(btts.ng_recall) === "yellow" ? "text-est" : "text-lose"}`}>
+              <p className="text-xl font-bold text-chalk">
                 {pct(btts.ng_recall)}
               </p>
               <p className="text-xs text-chalk-3 mt-1 leading-tight">
                 {t("stats.bttsNGRecallSub", { t: btts.total_ng, c: btts.correctly_predicted_ng })}
+              </p>
+              <p className="text-xs text-chalk-3 mt-1 leading-tight">
+                {vsBaseline(btts.ng_recall, btts.predicted_ng / ((btts.predicted_gg + btts.predicted_ng) || 1), t("stats.baseline.ngCallRate"))}
               </p>
             </div>
             <div className="rounded-xl border border-line bg-ink-700/60 p-4">
@@ -928,10 +952,10 @@ export default async function StatsPage({ searchParams }: PageProps) {
                   <tr key={mv.model_version} className="hover:bg-ink-700/50 transition-colors">
                     <td className="px-4 py-3 font-mono text-chalk-2">{mv.model_version}</td>
                     <td className="px-4 py-3 text-right text-chalk-2">{mv.total}</td>
-                    <td className={`px-4 py-3 text-right font-semibold ${accentForAccuracy(mv.result_accuracy) === "green" ? "text-win" : accentForAccuracy(mv.result_accuracy) === "yellow" ? "text-est" : "text-lose"}`}>
+                    <td className={`px-4 py-3 text-right font-semibold ${edgeText(mv.result_accuracy, mv.result_baseline)}`}>
                       {pct(mv.result_accuracy)}
                     </td>
-                    <td className={`px-4 py-3 text-right font-semibold ${accentForAccuracy(mv.goals_accuracy) === "green" ? "text-win" : accentForAccuracy(mv.goals_accuracy) === "yellow" ? "text-est" : "text-lose"}`}>
+                    <td className={`px-4 py-3 text-right font-semibold ${edgeText(mv.goals_accuracy, mv.goals_baseline)}`}>
                       {pct(mv.goals_accuracy)}
                     </td>
                   </tr>

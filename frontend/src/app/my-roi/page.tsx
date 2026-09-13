@@ -2,6 +2,7 @@ import { redirect } from "next/navigation";
 import Link from "next/link";
 import { getCurrentUserId, fetchWithAuth } from "@/lib/auth";
 import SettleBetButton from "@/components/SettleBetButton";
+import { DISPLAY_TZ } from "@/lib/api";
 
 interface ROIData {
   total_bets:   number;
@@ -152,7 +153,7 @@ export default async function MyROIPage() {
                         <p className="text-xs text-chalk-2">
                           <span className="text-win">{mkt}</span>
                           {" · "}@{b.odds.toFixed(2)} · {b.stake.toFixed(2)}u
-                          {" · "}{new Date(b.placed_at).toLocaleDateString("el-GR")}
+                          {" · "}{new Date(b.placed_at).toLocaleDateString("el-GR", { timeZone: DISPLAY_TZ })}
                         </p>
                       </div>
                       <div className="flex items-center gap-2 shrink-0">

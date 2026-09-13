@@ -20,7 +20,11 @@ function overBadgeClass(prob: number): string {
 
 export default function NationalMatchCard({ prediction: p }: Props) {
   const hasResult = p.actual_result !== null;
-  const isCorrect = hasResult && p.prediction === p.actual_result;
+  // Graded by the probabilities, like /stats (the stored label can disagree).
+  const pick = (["D", "A"] as const).reduce<"H" | "D" | "A">(
+    (best, k) => ({ H: p.home_win_prob, D: p.draw_prob, A: p.away_win_prob }[k]
+                  > { H: p.home_win_prob, D: p.draw_prob, A: p.away_win_prob }[best] ? k : best), "H");
+  const isCorrect = hasResult && pick === p.actual_result;
   const hasScore  = p.actual_home_goals !== null && p.actual_away_goals !== null;
 
   // Cards sit under a per-day header, so the date is already obvious — show

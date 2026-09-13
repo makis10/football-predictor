@@ -16,6 +16,9 @@ import { Suspense } from "react";
 import { formatLongDate, getTicketHistory, type Ticket } from "@/lib/api";
 import TicketCard from "@/components/TicketCard";
 import { getServerT } from "@/lib/i18n-server";
+import { parsePage } from "@/lib/recentWindow";
+import { dateLocale } from "@/lib/api";
+import { getServerLang } from "@/lib/i18n-server";
 
 export const dynamic = "force-dynamic";
 
@@ -45,6 +48,7 @@ const OUTCOME_EDGE: Record<string, string> = {
 
 async function HistoryGrid({ page }: { page: number }) {
   const t = await getServerT();
+  const locale = dateLocale(await getServerLang());
   const offsetDays = (page - 1) * DAYS_PER_PAGE;
 
   let tickets: Ticket[] = [];
@@ -83,7 +87,7 @@ async function HistoryGrid({ page }: { page: number }) {
           <section key={day} className="space-y-4">
             <div className="flex flex-wrap items-baseline justify-between gap-2 border-b border-line pb-2">
               <h2 className="font-display text-sm font-extrabold uppercase tracking-[0.14em] text-chalk-3">
-                {formatLongDate(day)}
+                {formatLongDate(day, locale)}
               </h2>
               <p className="font-data text-[11px] text-chalk-3">
                 {won > 0 && <span className="text-win">{won}✓</span>}
@@ -113,7 +117,8 @@ async function HistoryGrid({ page }: { page: number }) {
 
 export default async function TicketHistoryPage({ searchParams }: PageProps) {
   const t = await getServerT();
-  const page = Math.max(1, Number((await searchParams).page ?? "1"));
+  // parsePage: ?page=abc used to send offset_days=NaN (422, "NaN–NaN days ago").
+  const page = parsePage((await searchParams).page);
   const href = (p: number) => (p > 1 ? `/tickets/history?page=${p}` : "/tickets/history");
 
   const from = (page - 1) * DAYS_PER_PAGE;

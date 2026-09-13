@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { useSession } from "next-auth/react";
 import {
   type Match,
   type PredictionEmbed,
@@ -28,15 +29,13 @@ function predictedOutcome(p: PredictionEmbed): "H" | "D" | "A" {
   return "A";
 }
 
-function outcomeLabel(o: "H" | "D" | "A", home: string, away: string) {
-  if (o === "H") return `${home} win`;
-  if (o === "D") return "Draw";
-  return `${away} win`;
-}
-
 export default function RecentResultCard({ match }: Props) {
   const t = useT();
+  const { status } = useSession();
   const p = match.prediction ?? null;
+  const outcomeLabel = (o: "H" | "D" | "A") =>
+    o === "D" ? t("recent.draw")
+      : t("recent.teamWin", { team: o === "H" ? match.home_team : match.away_team });
   const predicted = p ? predictedOutcome(p) : null;
   const goalsOk = hasResult(match) ? goalsHit(match) : null;
   const state = hasResult(match) ? gradeMatch(match) : null;
@@ -63,9 +62,9 @@ export default function RecentResultCard({ match }: Props) {
       : "bg-ink-600/30 text-chalk-3";
 
   const badgeLabel =
-    state === "correct" ? "✓ Correct"
-    : state === "partial" ? "◑ Partial"
-    : state === "wrong"  ? "✗ Wrong"
+    state === "correct" ? t("recent.badgeCorrect")
+    : state === "partial" ? t("recent.badgePartial")
+    : state === "wrong"  ? t("recent.badgeWrong")
     : null;
 
   async function handlePostmortem(e: React.MouseEvent) {
@@ -86,7 +85,10 @@ export default function RecentResultCard({ match }: Props) {
   }
 
   const isInternational = match.league?.toLowerCase() === INTERNATIONAL_LEAGUE.toLowerCase();
-  const showPostmortem = (state === "wrong" || state === "partial") && p && !isInternational;
+  const canExplain = (state === "wrong" || state === "partial") && p && !isInternational;
+  // The post-mortem endpoint is members-only (the proxy answers a guest 401),
+  // and /recent is public: every guest click used to end in "Failed to load".
+  const showPostmortem = canExplain && status === "authenticated";
 
   return (
     <div className={`rounded-xl border transition-colors ${bg} flex flex-col gap-3`}>
@@ -106,7 +108,7 @@ export default function RecentResultCard({ match }: Props) {
               {badgeLabel}
             </span>
           ) : (
-            <span className="text-xs text-chalk-3 italic">No prediction</span>
+            <span className="text-xs text-chalk-3 italic">{t("recent.noPrediction")}</span>
           )}
         </div>
 
@@ -121,7 +123,7 @@ export default function RecentResultCard({ match }: Props) {
             </span>
           ) : (
             <span className="text-xs font-medium text-est/80 shrink-0 px-2 py-1 rounded-lg bg-est/10 border border-est/20">
-              ⏳ Pending
+              {t("recent.pending")}
             </span>
           )}
           <span className="flex-1 font-semibold text-chalk text-sm truncate text-right">
@@ -151,10 +153,10 @@ export default function RecentResultCard({ match }: Props) {
             {/* Predicted vs actual */}
             <div className="flex items-center justify-between text-xs">
               <span className="text-chalk-2">
-                Predicted:{" "}
+                {t("recent.predicted")}{" "}
                 <span className="text-chalk font-medium">
                   {predicted
-                    ? outcomeLabel(predicted, match.home_team, match.away_team)
+                    ? outcomeLabel(predicted)
                     : "—"}
                 </span>
                 <span className="text-chalk-3 ml-1 tabular-nums">
@@ -199,6 +201,16 @@ export default function RecentResultCard({ match }: Props) {
               {postmortem}
             </p>
           )}
+        </div>
+      )}
+      {canExplain && status === "unauthenticated" && (
+        <div className="px-4 pb-4">
+          <Link
+            href="/login"
+            className="block w-full rounded-lg border border-line py-1.5 text-center text-xs text-chalk-3 transition-colors hover:text-chalk-2"
+          >
+            {t("recent.whyFailSignIn")}
+          </Link>
         </div>
       )}
     </div>

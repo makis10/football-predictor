@@ -2,7 +2,7 @@
  * Top 3 AI Picks of the Day
  *
  * Receives the upcoming matches already fetched by the home page,
- * picks the top 3 by confidence + probability, and renders them
+ * picks the top 3 by the model's highest probability, and renders them
  * in a highlighted row above the fixture grid.
  */
 import Link from "next/link";

@@ -155,7 +155,7 @@ export function ROICard({ roi, bttsStats, clv, t }: Props) {
                 {roi.total_roi_fair_pct >= 0 ? "+" : ""}{fmt(roi.total_roi_fair_pct)}% {t("roi.fairSuffix")}
               </p>
               <p className="text-[11px] text-chalk-3 mt-0.5">
-                {t("roi.vsWithVig", { amt: fmt(Math.abs(roi.total_pnl)), pct: fmt(roi.total_roi_pct) })}
+                {t("roi.vsWithVig", { amt: euro(roi.total_pnl), pct: `${roi.total_roi_pct >= 0 ? "+" : ""}${fmt(roi.total_roi_pct)}` })}
               </p>
             </div>
           </div>

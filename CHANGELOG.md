@@ -8,6 +8,43 @@ History before this file was introduced lives in `git log`.
 
 ### Fixed
 
+- **/stats compared the model with the wrong floor, and several of its figures
+  measured something other than their label.** Found by a frontend audit and
+  confirmed on live data:
+  - O/U and BTTS were set against always-OVER and always-GG. Where UNDER or NG
+    is the majority, a model below the no-model floor printed a green "+Xpp":
+    Serie A O/U read "+6.7pp vs always OVER 46%" while always-UNDER scores
+    54.4%. Each slice now uses the more common side and names it.
+  - The by-league and by-version tables coloured an absolute 57% green, so
+    Bundesliga O/U 71.6% against always-OVER 74.6% was green and Ligue 1's
+    +9.9pp 1×2 edge red. Each row now carries its own floor; national tables,
+    which have none, are neutral.
+  - "Last 7 days" held eight match days, and "Last 30" thirty-one.
+  - The methodology table's last era pooled unanchored predictions with the
+    market-anchored ones since 1 September; the anchored eras are rows of
+    their own.
+  - The "value strategy" ROI counted every stored pick, but since 30 July club
+    rows store the served favourite, not an EV-gated pick. It counts EV-gated
+    picks only now, and its disclaimer no longer names a "market-shrunk" gate
+    that has not existed since June.
+  - EV and the fair-value "model quality" figure read the served
+    probabilities — 85% the bookmaker's own since September — so they measured
+    the market against itself. They read the model's own numbers now.
+  - The closing-line-value card showed one global ledger figure on every
+    league page, unplayed fixtures included; it covers the settled matches of
+    the page's slice.
+  - National accuracy was graded by the stored label on one page and by the
+    probabilities on another (127 against 126 of 206); both use the
+    probabilities.
+  - The admin market record counted awarded fixtures the live gate skips, and
+    the admin user table multiplied each user's P&L by their number of tracked
+    matches.
+- **The analysis panel contradicted the card that links to it.** It showed the
+  raw model — before the market blend and any injury adjustment — as "our
+  model", and its "model pick" was the EV selection, which lands 32% of the
+  time against the published pick's 53%. It shows the served probabilities
+  and the published pick now; the raw numbers still drive the value gate.
+  Tracked matches show the served confidence, as every other page does.
 - **Opening an old match page wrote a prediction made after the result into
   the record, and could take the API down.** `GET /predictions/{id}` priced
   any match with no stored prediction. The CSV history and the half-season

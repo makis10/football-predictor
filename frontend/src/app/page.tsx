@@ -4,7 +4,8 @@ export const dynamic = "force-dynamic";
 import { Suspense } from "react";
 import Link from "next/link";
 import {
-  getMatches,
+  getUpcomingMatches,
+  dateLocale,
   getLeagueProjection,
   isEuropeanProjection,
   getStandings,
@@ -22,7 +23,7 @@ import EuropeanProjectionPanel from "@/components/EuropeanProjectionPanel";
 import { getSession } from "@/lib/auth";
 import FilterBar, { type LeagueCount } from "@/components/FilterBar";
 import TopPicks from "@/components/TopPicks";
-import { getServerT } from "@/lib/i18n-server";
+import { getServerLang, getServerT } from "@/lib/i18n-server";
 
 interface PageProps {
   // Next 15+: searchParams is now a Promise.
@@ -72,14 +73,14 @@ async function UpcomingGrid({
         minConfidence,
       );
     } else {
-      matches = await getMatches(league, 100, 0, "upcoming", true, undefined, undefined, DAYS_AHEAD, minOdds, minConfidence);
+      matches = await getUpcomingMatches(league, DAYS_AHEAD, true, minOdds, minConfidence);
     }
   } catch {
     return (
       <div className="col-span-full text-center py-16 text-chalk-3">
         <p className="text-4xl mb-3">⚠️</p>
-        <p className="font-medium">Could not reach the API.</p>
-        <p className="text-sm mt-1">Make sure the backend is running on port 8000.</p>
+        <p className="font-medium">{t("home.apiError")}</p>
+        <p className="text-sm mt-1">{t("home.apiErrorHint")}</p>
       </div>
     );
   }
@@ -96,13 +97,19 @@ async function UpcomingGrid({
         await getUpcomingNationalMatches(athensDate(0), athensDate(DAYS_AHEAD - 1), 200, minOdds),
         minConfidence,
       );
-      matches = [...matches, ...filtered].sort((a, b) =>
-        a.match_date !== b.match_date
-          ? a.match_date.localeCompare(b.match_date)
-          // kickoff_utc (full ISO) sorts chronologically; kickoff_time is null
-          // for games whose UTC date crosses midnight, so it can't order them.
-          : (a.kickoff_utc ?? a.kickoff_time ?? "99").localeCompare(b.kickoff_utc ?? b.kickoff_time ?? "99"),
-      );
+      // One comparable instant for both kinds of row. Club rows carry only
+      // kickoff_time (HH:MM:SS, UTC) and national rows a full ISO kickoff_utc;
+      // compared as strings, every international sorted to about 20:59
+      // whatever its real kick-off. Unknown kick-offs go last in their day.
+      const instant = (m: { match_date: string; kickoff_time?: string | null; kickoff_utc?: string | null }) =>
+        m.kickoff_utc ? Date.parse(m.kickoff_utc)
+        : m.kickoff_time ? Date.parse(`${m.match_date}T${m.kickoff_time}Z`)
+        : Number.POSITIVE_INFINITY;
+      matches = [...matches, ...filtered].sort((a, b) => {
+        if (a.match_date !== b.match_date) return a.match_date.localeCompare(b.match_date);
+        const d = instant(a) - instant(b);
+        return Number.isNaN(d) ? 0 : d;
+      });
     } catch {
       // national merge is best-effort — ignore and show club fixtures only
     }
@@ -113,12 +120,11 @@ async function UpcomingGrid({
       <div className="col-span-full text-center py-16 text-chalk-3">
         <p className="text-4xl mb-3">📅</p>
         <p className="font-medium text-chalk-2">{t("home.empty")}</p>
-        <p className="text-sm mt-1 font-mono text-xs">
-          docker compose exec backend python scripts/import_fixtures.py
-        </p>
       </div>
     );
   }
+
+  const locale = dateLocale(await getServerLang());
 
   // Group by date so we can render date separators
   const byDate = matches.reduce<Record<string, typeof matches>>((acc, m) => {
@@ -136,7 +142,7 @@ async function UpcomingGrid({
       {Object.entries(byDate).map(([dateStr, dayMatches]) => (
         <div key={dateStr} className="col-span-full space-y-4">
           <h2 className="border-b border-line pb-2 font-display text-sm font-extrabold uppercase tracking-[0.14em] text-chalk-3">
-            {formatLongDate(dateStr, "en-GB")}
+            {formatLongDate(dateStr, locale)}
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
             {dayMatches.map((match) =>
@@ -196,7 +202,9 @@ async function LeagueStandings({ league }: { league: string }) {
 async function getLeagueCounts(): Promise<LeagueCount[]> {
   try {
     const [club, national] = await Promise.all([
-      getMatches(undefined, 200, 0, "upcoming", false, undefined, undefined, DAYS_AHEAD),
+      // The same full window the grid shows, so a chip never counts a fixture
+      // the grid leaves out.
+      getUpcomingMatches(undefined, DAYS_AHEAD, false),
       getUpcomingNationalMatches(athensDate(0), athensDate(DAYS_AHEAD - 1), 200).catch(
         () => [] as { league: string }[],
       ),
@@ -223,7 +231,9 @@ export default async function HomePage({ searchParams }: PageProps) {
   // instead of a 400 from the API dressed up as a connectivity error.
   const league        = canonicalLeagueCode(sp.league);
   const unknownLeague = sp.league && !league ? sp.league : undefined;
-  const minOdds       = sp.min_odds ? Number(sp.min_odds) : undefined;
+  // ?min_odds=abc used to reach the API as "NaN". Odds are decimal, above 1.
+  const oddsParam     = Number(sp.min_odds);
+  const minOdds       = sp.min_odds && Number.isFinite(oddsParam) && oddsParam > 1 ? oddsParam : undefined;
   const minConfidence = sp.min_confidence || undefined;
 
   // Freemium: logged-out visitors get the Top-3 picks as a free teaser; the

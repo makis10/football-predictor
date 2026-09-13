@@ -31,11 +31,13 @@ export default async function TicketsPage() {
   try {
     data = await getTickets();
   } catch {
+    // A failed request is not an empty card: tickets.empty says the day was too
+    // thin to fill a slip, which is a claim about the data.
     return (
       <div className="text-center py-16 text-chalk-3">
         <p className="text-4xl mb-4">🎟️</p>
-        <p className="text-lg font-medium text-chalk-2">{t("tickets.empty.title")}</p>
-        <p className="text-sm mt-1">{t("tickets.empty.body")}</p>
+        <p className="text-lg font-medium text-chalk-2">{t("tickets.unavailable.title")}</p>
+        <p className="text-sm mt-1">{t("tickets.unavailable.body")}</p>
       </div>
     );
   }

@@ -230,6 +230,8 @@ export interface AccuracySlice {
    *  rendered green and the signal number rendered yellow. */
   result_baseline: number;
   goals_baseline: number;
+  /** Which constant the goals floor is: the more common side. */
+  goals_baseline_side?: "OVER" | "UNDER";
   /** How many of these rows are national-team predictions — a different model
    *  with a very different record. One regime row was 79 of 80. */
   national_total: number;
@@ -242,6 +244,10 @@ export interface RollingAccuracy {
 }
 
 export interface LeagueBreakdown {
+  /** The row's own no-model floor; absent on national tournaments. */
+  result_baseline?: number;
+  goals_baseline?: number;
+  goals_baseline_side?: "OVER" | "UNDER";
   league: string;
   total: number;
   result_correct: number;
@@ -289,6 +295,9 @@ export interface ResultCalibration {
 }
 
 export interface ModelVersionStats {
+  result_baseline?: number;
+  goals_baseline?: number;
+  goals_baseline_side?: "OVER" | "UNDER";
   model_version: string;
   total: number;
   result_accuracy: number;
@@ -322,6 +331,7 @@ export interface BTTSStats {
   overall_accuracy: number;
   /** Always-GG on the same rows. BTTS accuracy has been below it throughout. */
   gg_baseline: number;
+  gg_baseline_side?: "GG" | "NG";
   /** Discrimination — what a reliability diagram cannot show. A perfectly
    *  calibrated constant draws a perfect diagonal and carries no information at
    *  all; 0.50 is a coin. */
@@ -397,7 +407,7 @@ export interface InjuryAdjustmentStats {
 }
 
 export interface RegimeSlice {
-  regime: string;                 // "anchored" | "pure-model" | "pure-unified" | …
+  regime: string;                 // "anchored" | "pure-model" | "pure-unified" | "anchored-1x2" | "anchored-all"
   from_date: string | null;
   to_date: string | null;
   stats: AccuracySlice;           // per-era accuracy — no methodology mixing
@@ -435,12 +445,32 @@ export interface StatsResponse {
 
 // ── Fetch helpers ─────────────────────────────────────────────────────────────
 
+/** A failed API call, carrying the HTTP status so a page can tell "not found"
+ *  from "the backend is restarting". */
+export class ApiError extends Error {
+  readonly path: string;
+  readonly status: number;
+  constructor(path: string, status: number, statusText: string) {
+    super(`API ${path} → ${status} ${statusText}`);
+    this.name = "ApiError";
+    this.path = path;
+    this.status = status;
+  }
+}
+
+/** True only when the API answered 404. A detail page used to call notFound()
+ *  on ANY failure, so a backend restart served real matches as HTTP 404 with
+ *  "that page isn't here" — to readers and to crawlers alike. */
+export function isNotFound(e: unknown): boolean {
+  return e instanceof ApiError && e.status === 404;
+}
+
 async function apiFetch<T>(path: string): Promise<T> {
   const res = await fetch(`${API_URL}${path}`, {
     cache: "no-store", // always fetch fresh — backend handles its own caching
   });
   if (!res.ok) {
-    throw new Error(`API ${path} → ${res.status} ${res.statusText}`);
+    throw new ApiError(path, res.status, res.statusText);
   }
   return res.json() as Promise<T>;
 }
@@ -652,15 +682,20 @@ export function athensDate(offsetDays = 0): string {
   return d.toLocaleDateString("en-CA", { timeZone: DISPLAY_TZ });
 }
 
+// Case-insensitive: the national API sends "HIGH"/"MEDIUM"/"LOW", and every
+// high and medium national page used to get the grey low-confidence colour
+// beside text that read "high confidence".
 export function confidenceColor(confidence: string): string {
-  if (confidence === "high")   return "text-win";
-  if (confidence === "medium") return "text-est";
+  const c = confidence?.toLowerCase();
+  if (c === "high")   return "text-win";
+  if (c === "medium") return "text-est";
   return "text-chalk-2";
 }
 
 export function confidenceDot(confidence: string): string {
-  if (confidence === "high")   return "bg-win";
-  if (confidence === "medium") return "bg-est";
+  const c = confidence?.toLowerCase();
+  if (c === "high")   return "bg-win";
+  if (c === "medium") return "bg-est";
   return "bg-chalk-2";
 }
 
@@ -1255,6 +1290,41 @@ export async function getPastMatchesBetween(
     if (batch.length < PAGE) break;
   }
   return out;
+}
+
+/**
+ * Every upcoming club fixture in the next `daysAhead` days — all of them, in
+ * kick-off order.
+ *
+ * The home grid asked for 100 rows and the chips for 200, while a Friday's
+ * three-day window has held up to 181 club fixtures: the grid silently lost the
+ * whole of Sunday, Top Picks never saw it, and the chips counted fixtures the
+ * grid did not show. Same fix as getPastMatchesBetween: page until a short page
+ * comes back. The backend slices after its confidence filter, so offsets stay
+ * correct with min_confidence set.
+ */
+export async function getUpcomingMatches(
+  league: string | undefined,
+  daysAhead: number,
+  includePredictions: boolean,
+  minOdds?: number,
+  minConfidence?: string,
+): Promise<Match[]> {
+  const PAGE = 200;        // the endpoint's `limit` maximum
+  const MAX_ROWS = 5_000;  // runaway guard
+  const out: Match[] = [];
+  for (let offset = 0; offset < MAX_ROWS; offset += PAGE) {
+    const batch = await getMatches(league, PAGE, offset, "upcoming", includePredictions,
+                                   undefined, undefined, daysAhead, minOdds, minConfidence);
+    out.push(...batch);
+    if (batch.length < PAGE) break;
+  }
+  return out;
+}
+
+/** The Intl locale for the reader's language, for dates rendered on the server. */
+export function dateLocale(lang: string): string {
+  return lang === "el" ? "el-GR" : "en-GB";
 }
 
 export async function getNationalTournaments(): Promise<string[]> {
