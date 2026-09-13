@@ -1,5 +1,7 @@
 import os
+import threading
 import time
+from datetime import date
 from typing import Optional
 
 import pandas as pd
@@ -43,6 +45,8 @@ def _first(*values):
 
 
 _RAW_DIR = os.path.join(os.path.dirname(__file__), "..", "..", "data", "raw")
+# One on-the-fly prediction at a time — see get_prediction.
+_ON_THE_FLY = threading.Lock()
 _history_df: pd.DataFrame | None = None
 _team_snapshot: dict | None = None
 
@@ -373,6 +377,18 @@ def get_prediction(match_id: int, db: Session = Depends(get_db)):
         _persist_adjustment(db, pred, adjusted)
         return _build_response(match, pred, adjusted)
 
+    # Only a fixture that has not kicked off may be priced on request. A match
+    # with a result, or dated before today, and no stored prediction was never
+    # predicted: the CSV history and the half-season backfill hold 6,000+ of
+    # them, and each has a public page. Pricing one here wrote a "prediction"
+    # made after the result into the graded record (15 such rows, created
+    # 2026-04-16 to 2026-09-13), and ran the full-history feature build for it
+    # — gigabytes a request, the likeliest cause of the worker's out-of-memory
+    # kills.
+    if match.result is not None or match.match_date < date.today():
+        raise HTTPException(status_code=404,
+                            detail="No prediction was made for this match before kick-off.")
+
     # Snapshot what we need from the match, then release the DB connection
     # before the expensive ML computation so we don't exhaust the pool.
     home_team  = match.home_team
@@ -421,8 +437,12 @@ def get_prediction(match_id: int, db: Session = Depends(get_db)):
     btts_odds = None
     db.close()
 
-    # Compute prediction — history is cached after first request, so subsequent
-    # calls skip the CSV loading and only run build_features for this one match.
+    # Compute prediction. predict_match rebuilds features over the whole history
+    # (not just this match), so two of these at once can exhaust the worker's
+    # memory: one at a time, and a busy worker says so instead of queueing.
+    if not _ON_THE_FLY.acquire(blocking=False):
+        raise HTTPException(status_code=503,
+                            detail="Another prediction is being computed — try again shortly.")
     try:
         from backend.app.ml.predict import predict_match
 
@@ -445,6 +465,8 @@ def get_prediction(match_id: int, db: Session = Depends(get_db)):
             status_code=503,
             detail="Prediction service temporarily unavailable.",
         )
+    finally:
+        _ON_THE_FLY.release()
 
     # Open a fresh session to persist the result
     from backend.app.database import SessionLocal

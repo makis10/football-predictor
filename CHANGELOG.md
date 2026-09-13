@@ -8,6 +8,19 @@ History before this file was introduced lives in `git log`.
 
 ### Fixed
 
+- **Opening an old match page wrote a prediction made after the result into
+  the record, and could take the API down.** `GET /predictions/{id}` priced
+  any match with no stored prediction. The CSV history and the half-season
+  backfill hold 6,354 settled matches with none, each with a public page, so a
+  visit — a reader, a crawler — produced a "prediction" dated after the match
+  and stored it, where /stats graded it: 15 such rows, created between
+  2026-04-16 and today, the latest for a February 2025 Bundesliga match. Each
+  of those requests also ran the full-history feature build (212,000 rows) for
+  one fixture — gigabytes of memory, the likeliest cause of the worker's
+  out-of-memory kills. A match that has a result or is dated before today is
+  no longer priced on request (404: no prediction was made before kick-off);
+  an upcoming one is priced one at a time. The 15 rows are deleted (backup in
+  `backend/data/cache/posthoc_predictions_*.csv`).
 - **A dead API went unnoticed, and nothing could restart it.** The kernel log
   holds four out-of-memory kills of the backend's uvicorn worker today, each at
   about 7.5 GB in a 7.75 GB Docker VM. Uvicorn's `--reload` supervisor survives
