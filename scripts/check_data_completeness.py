@@ -230,7 +230,7 @@ def main() -> None:
             if wc_ids and not wc_ids.get(t):
                 _warn(f"wc_team_ids: no id for upcoming national team '{t}'")
             if squads and t not in squads:
-                _warn(f"squad_strength: missing '{t}' — talent-Elo falls back to results-Elo")
+                _warn(f"squad_strength: missing '{t}' — talent-Elo is off for every pairing involving it")
 
         # 7. player_club_form health (July rollover regression guard)
         r = db.execute(text(

@@ -89,14 +89,31 @@ THIRD_SLOTS = {  # R32 match → allowed third-place groups
 
 # ── Load data ─────────────────────────────────────────────────────────────────
 
-def load_elo() -> dict[str, float]:
+class _PairElo(dict):
+    """Results-Elo per team, with the talent adjustment applied per pairing
+    (elo.pair) — the rule the match predictions use."""
+
+    def __init__(self, snap: dict):
+        super().__init__(snap["elo"])
+        self._snap = snap
+
+    def pair(self, ta: str, tb: str) -> tuple[float, float]:
+        from backend.app.ml.national.features import talent_adjusted_pair
+        return talent_adjusted_pair(self._snap, ta, tb)
+
+
+def load_elo() -> _PairElo:
     """Talent-adjusted Elo (results-Elo blended with squad league/quality
     strength) so the tournament sim is consistent with the match predictions —
-    not the raw results-Elo, which is confederation-biased + squad-blind."""
+    not the raw results-Elo, which is confederation-biased + squad-blind.
+
+    The adjustment is per pairing, as in the match features: it is relative to
+    the covered cohort, so a team without usable squad data (a low-confidence
+    squad) keeps both sides of each of its pairings on results-Elo. Look pairs
+    up with elo.pair(a, b)."""
     with open(SNAP_PATH, "rb") as f:
         snap = pickle.load(f)
-    from backend.app.ml.national.features import talent_adjusted_elo
-    return {team: talent_adjusted_elo(snap, team) for team in snap["elo"]}
+    return _PairElo(snap)
 
 
 # ── Player goal shares (Golden Boot) ──────────────────────────────────────────
@@ -463,7 +480,7 @@ def calibrate_scale(elo: dict, fixtures: list, target_home_wp: float) -> float:
     for c in range(120, 601, 20):
         hw = []
         for h, a in fixtures:
-            la, lb = _lambdas(elo.get(h, ELO_START), elo.get(a, ELO_START), c)
+            la, lb = _lambdas(*elo.pair(h, a), c)
             # analytic-ish via quick MC of Poisson (vectorised)
             hs = RNG.poisson(la, 4000); as_ = RNG.poisson(lb, 4000)
             hw.append(float(np.mean(hs > as_)))
@@ -522,7 +539,7 @@ def simulate_once(
         if (tb, ta) in played_map:
             gb, ga = played_map[(tb, ta)]   # stored home,away → swap to (ta,tb)
             return ga, gb
-        la, lb = _lambdas(elo.get(ta, ELO_START), elo.get(tb, ELO_START), scale)
+        la, lb = _lambdas(*elo.pair(ta, tb), scale)
         return int(RNG.poisson(la)), int(RNG.poisson(lb))
 
     for g, teams in groups.items():
@@ -572,7 +589,7 @@ def simulate_once(
             return tb
         if tb in eliminated and ta not in eliminated:
             return ta
-        w, ga, gb = play(elo.get(ta, ELO_START), elo.get(tb, ELO_START), scale, knockout=True)
+        w, ga, gb = play(*elo.pair(ta, tb), scale, knockout=True)
         goals_acc[ta] += ga; goals_acc[tb] += gb
         return ta if w == 0 else tb
 

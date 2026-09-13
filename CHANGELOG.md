@@ -39,6 +39,17 @@ History before this file was introduced lives in `git log`.
   reach — 9 of the 18 CL League Stage 1 rows had been settled first by
   football-data.org, which sends no stage — keyed on the feed id, falling back
   to a unique pairing within a day.
+- **The national talent adjustment was applied to one side of a match.** The
+  squad-talent correction is normalised on the teams that have squad data (the
+  2026 World Cup squads, mean results-Elo ~1806), so it is only meaningful as a
+  difference between two covered teams. `compute_match_features` applied it per
+  team: a covered side was dragged toward the cohort mean while an uncovered
+  opponent stayed on raw results-Elo — swings of up to 16 points of win
+  probability on replayed pairings, and 314 of the last year's 968 national
+  predictions were one-sided. `talent_adjusted_pair` now adjusts a pairing only
+  when both teams are covered and otherwise leaves both on the results-Elo the
+  models were trained on. No national fixture is scheduled today; the next
+  international window picks it up.
 
 ## 2026-09-12
 

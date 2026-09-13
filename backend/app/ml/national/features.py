@@ -89,7 +89,10 @@ def _talent_stats(snapshot: dict) -> Optional[dict]:
 def talent_adjusted_elo(snapshot: dict, team: str, w: float = TALENT_BLEND_W) -> float:
     """Blend results-Elo with a squad-talent Elo (squad strength expressed in
     Elo units via z-score). Falls back to pure results-Elo when w<=0 or the team
-    has no squad-strength data."""
+    has no squad-strength data.
+
+    Relative to the covered cohort, so only meaningful when the opponent is
+    adjusted too — anything building a match wants talent_adjusted_pair."""
     results_elo = snapshot.get("elo", {}).get(team, ELO_START)
     if w <= 0:
         return results_elo
@@ -101,6 +104,27 @@ def talent_adjusted_elo(snapshot: dict, team: str, w: float = TALENT_BLEND_W) ->
         return results_elo
     elo_talent = stats["mu_e"] + stats["sd_e"] * (s - stats["mu_s"]) / stats["sd_s"]
     return (1.0 - w) * results_elo + w * elo_talent
+
+
+def talent_adjusted_pair(snapshot: dict, home: str, away: str,
+                         w: float = TALENT_BLEND_W) -> tuple[float, float]:
+    """The (home, away) Elo pair a match's features are built from.
+
+    The talent correction is normalised on the cohort of teams with squad data
+    (the 2026 World Cup squads, mean results-Elo ~1806). For two covered teams
+    the cohort mean cancels in their difference and what remains is a genuine
+    relative correction. Applied to ONE side only, it drags that team toward
+    the cohort mean against an opponent left on raw results-Elo — swings of up
+    to 16 points of win probability on pairings replayed on 2026-09-12, and 314
+    of the last year's 968 national predictions were such one-sided pairs. So
+    the pair is adjusted only when both teams are covered; otherwise both stay
+    on the results-Elo the models were trained on.
+    """
+    covered = _load_squad_strength()
+    if w > 0 and _talent_stats(snapshot) and home in covered and away in covered:
+        return talent_adjusted_elo(snapshot, home, w), talent_adjusted_elo(snapshot, away, w)
+    elo = snapshot.get("elo", {})
+    return elo.get(home, ELO_START), elo.get(away, ELO_START)
 
 # ── Match classification ───────────────────────────────────────────────────────
 _TIER3 = {
@@ -519,9 +543,9 @@ def compute_match_features(
     feat["match_weight"]    = WEIGHT_BY_TIER[tier]
 
     # Talent-adjusted Elo (blends results-Elo with squad league strength).
-    # Inference-only; falls back to pure results-Elo when no squad data.
-    h_elo = talent_adjusted_elo(snapshot, h)
-    a_elo = talent_adjusted_elo(snapshot, a)
+    # Inference-only, and applied to the pairing: both sides need squad data,
+    # otherwise both stay on pure results-Elo (see talent_adjusted_pair).
+    h_elo, a_elo = talent_adjusted_pair(snapshot, h, a)
     feat["h_elo"] = h_elo
     feat["a_elo"] = a_elo
     feat["elo_diff"]          = h_elo - a_elo

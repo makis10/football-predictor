@@ -19,8 +19,10 @@ Why this exists (audit finding, 2026-07-10):
        predict_national.py at serve time).
 
 Caveat: the replay uses pure results-Elo (as trained). Production also shifts
-inputs via talent_adjusted_elo(), which cannot be replayed historically (no
-point-in-time squad data) — that residual train/serve gap remains documented.
+inputs via talent_adjusted_pair() for pairings where both teams have squad
+data, which cannot be replayed historically (no point-in-time squad data) —
+that residual train/serve gap remains documented. A pairing with an uncovered
+side is served on results-Elo, exactly as replayed.
 
 Usage:
   docker compose exec backend python scripts/fit_national_blend.py
@@ -228,7 +230,8 @@ def main() -> None:
     actual_draw = round(float((y_test == 1).mean()), 4)
     print(f"\nActual draw rate on test: {actual_draw:.1%}")
     print("Caveat: replay uses results-Elo inputs (as trained); production also applies "
-          "talent_adjusted_elo(), which is not historically replayable.")
+          "talent_adjusted_pair() to pairings where both teams have squad data, which is "
+          "not historically replayable.")
 
     if not args.no_save:
         payload = {
