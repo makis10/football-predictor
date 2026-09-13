@@ -655,10 +655,11 @@ def get_match_analysis(match_id: int, request: Request, db: Session = Depends(ge
         )
 
     # ── Extended Poisson stats — λ FITTED to the served probabilities ────────
-    # The score grid / combo markets must cohere with the headline 1×2 / Over /
-    # BTTS numbers (calibrated classifiers), so we solve for λ + ρ that
-    # reproduce them instead of reusing the feature-state λ — a different
-    # engine that regularly disagreed (e.g. "GG+Over 41%" beside "NG 65%").
+    # The score grid / combo markets are fitted to the headline 1×2 / Over /
+    # BTTS numbers instead of reusing the feature-state λ — a different engine
+    # that regularly disagreed (e.g. "GG+Over 41%" beside "NG 65%"). Over 2.5
+    # and supremacy are reproduced exactly; draw and BTTS as closely as a
+    # plausible score shape allows (see poisson.fit_lambdas_to_probs).
     poisson_stats_typed: PoissonStats | None = None
     from backend.app.ml.poisson import (
         compute_extended_poisson_stats, fit_lambdas_to_probs, DC_RHO,

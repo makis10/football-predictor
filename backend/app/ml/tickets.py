@@ -201,7 +201,8 @@ def candidate_legs(
     """Every market this fixture could contribute, as priced Legs.
 
     `poisson` is the dict from compute_extended_poisson_stats() with λ FITTED
-    to the served probabilities (fit_lambdas_to_probs) — not the feature-state
+    to the served probabilities (fit_lambdas_to_probs: Over 2.5 and supremacy
+    exact, draw and BTTS approximate) — not the feature-state
     λ stored on the prediction row, which are a global constant for upcoming
     fixtures and would make every goal line identical across the card.
     Pass None when the fit failed; the goal-line legs are then simply absent.

@@ -121,9 +121,10 @@ def main() -> None:
             if ch is not None and ca is not None:
                 np_row.corners_over_9_5_prob = round(corners_over_prob(ch + ca, 9.5), 4)
 
-            # Correct-score market — λ + ρ fitted to the prediction's own served
-            # probabilities so the stored most-likely score / top-scores cohere
-            # with the headline 1×2 / Over / BTTS (Elo λ only as fallback).
+            # Correct-score market — λ fitted to the prediction's own served
+            # probabilities, so the stored most-likely score / top-scores match
+            # the headline Over 2.5 and supremacy exactly and draw / BTTS as
+            # closely as a plausible score shape allows (Elo λ only as fallback).
             from backend.app.ml.poisson import compute_extended_poisson_stats, fit_lambdas_to_probs, DC_RHO
             import json as _json
             _rho, _diag, _diag0 = DC_RHO, 1.0, 1.0

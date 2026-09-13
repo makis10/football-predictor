@@ -391,10 +391,12 @@ def get_national_analysis(
 def _national_poisson_stats(pred):
     """Full Poisson stat block (goals lines / team goals / correct score / combos).
 
-    λ + ρ are FITTED to the prediction's own served probabilities (1×2 / Over /
-    BTTS) so the panel coheres with the headline numbers — the old snapshot-Elo λ
+    λ are FITTED to the prediction's own served probabilities (1×2 / Over /
+    BTTS) so the panel agrees with the headline numbers — the old snapshot-Elo λ
     were an independent engine that regularly contradicted them (e.g. "GG+Over
-    41%" beside "NG 65%"). Falls back to the Elo λ when the fit is degenerate."""
+    41%" beside "NG 65%"). Over 2.5 and supremacy round-trip exactly, draw and
+    BTTS as closely as a plausible score shape allows. Falls back to the Elo λ
+    when the fit is degenerate."""
     from backend.app.schemas.prediction import PoissonStats, CorrectScoreProb
     from backend.app.ml.national.expected_goals import national_lambdas
     from backend.app.ml.poisson import compute_extended_poisson_stats, fit_lambdas_to_probs, DC_RHO

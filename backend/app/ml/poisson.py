@@ -52,6 +52,18 @@ MAX_GOALS = 8
 # subsequent studies find -0.10 to -0.15 across European leagues.
 DC_RHO = -0.13
 
+# Score-grid shape — fit_lambdas_to_probs(exact=False), the grid behind the
+# correct-score panel, the O/U 1.5/3.5 lines, the combo markets and the
+# estimated ticket legs. Over 2.5 and supremacy are met exactly; draw and BTTS
+# are soft targets, and bending the draw cells away from Poisson costs
+# GRID_DIAG_PEN per log-unit, within GRID_DIAG_BOUNDS. The unbounded exact
+# four-target solve inflated 0-0 up to 6x: it was the most likely score on 20%
+# of upcoming fixtures and on 52.5% of settled ones, of which 6.9% ended 0-0.
+# Measured 2026-09-13 with these values (1,991 upcoming, 2,086 settled): modal
+# 0-0 on 8 upcoming fixtures, exact-score log-loss 3.035 against 3.094.
+GRID_DIAG_BOUNDS = (0.5, 2.0)
+GRID_DIAG_PEN = 0.10
+
 # ── Helpers ───────────────────────────────────────────────────────────────────
 
 
@@ -186,9 +198,10 @@ def _score_matrix(
 ) -> "list[list[float]]":
     """Normalised score matrix: independent Poisson × Dixon-Coles τ × two draw
     adjustment factors — `diag0` scales the 0-0 cell (NG draw), `diag` scales
-    the scoring draws (1-1, 2-2, …). The split gives fit_lambdas_to_probs()
-    independent control over P(draw) and P(btts), which a single uniform
-    diagonal factor (or ρ alone) cannot reconcile."""
+    the scoring draws (1-1, 2-2, …). The split lets fit_lambdas_to_probs()
+    trade P(draw) against P(btts); how far either may move is bounded there
+    (GRID_DIAG_BOUNDS), because an unbounded diag0 turns 0-0 into the most
+    likely score."""
     hp = [_poisson_pmf(i, lam_h) for i in range(max_goals + 1)]
     ap = [_poisson_pmf(j, lam_a) for j in range(max_goals + 1)]
 
@@ -228,28 +241,63 @@ def _matrix_summary(m: "list[list[float]]") -> dict:
 from backend.app.ml.prob_bounds import PROB_EPS as _EPS
 
 
+def _golden_log(f, lo: float, hi: float, iters: int = 36) -> float:
+    """Minimise a unimodal f over [lo, hi] by golden-section search in log space."""
+    gr = (math.sqrt(5) - 1) / 2
+    a, b = math.log(lo), math.log(hi)
+    c, d = b - gr * (b - a), a + gr * (b - a)
+    fc, fd = f(math.exp(c)), f(math.exp(d))
+    for _ in range(iters):
+        if fc < fd:
+            b, d, fd = d, c, fc
+            c = b - gr * (b - a)
+            fc = f(math.exp(c))
+        else:
+            a, c, fc = c, d, fd
+            d = a + gr * (b - a)
+            fd = f(math.exp(d))
+    return math.exp((a + b) / 2)
+
+
 def fit_lambdas_to_probs(
     p_home: float,
     p_away: float,
     p_over: float,
     p_btts: "float | None" = None,
     max_goals: int = MAX_GOALS,
+    *,
+    exact: bool = False,
 ) -> "tuple[float, float, float, float, float] | None":
     """
-    Solve (λ_home, λ_away, ρ, diag, diag0) so the score matrix REPRODUCES the
-    served match probabilities. Used by the analysis panels so the correct-score
-    grid / combo markets / goal lines cohere with the headline 1×2 / Over / BTTS
-    numbers instead of coming from an independent engine (raw Elo or
-    feature-state λ), which made e.g. "GG+Over 41%" sit next to "NG 65%".
+    Solve (λ_home, λ_away, ρ, diag, diag0) for a score matrix that matches the
+    served match probabilities. Used by the analysis panels, the estimated
+    ticket legs and the stored national correct scores, so the grid, combo
+    markets and goal lines agree with the headline 1×2 / Over / BTTS numbers
+    instead of coming from an independent engine (raw Elo or feature-state λ),
+    which made e.g. "GG+Over 41%" sit next to "NG 65%".
 
-    Four knobs ↔ four targets, each 1-D monotone, solved by coordinate
-    bisection sweeps (weakly coupled — 3 sweeps converge):
-      total T = λh+λa      ←  P(over 2.5)
-      diff  D = λh−λa      ←  P(home) − P(away)
-      diag  (1-1, 2-2, …)  ←  P(btts)   (scoring draws; optional target)
-      diag0 (0-0)          ←  P(draw)   (the btts-neutral draw mass)
+    Four knobs:
+      total T = λh+λa      ←  P(over 2.5)        exact
+      diff  D = λh−λa      ←  P(home) − P(away)  exact
+      diag  (1-1, 2-2, …)  ←  P(btts)
+      diag0 (0-0)          ←  P(draw)
 
-    ρ is fixed at 0 — the two diagonal factors supersede it here. Returns None
+    exact=False (the grid): draw and BTTS are soft targets. The two diagonal
+    factors minimise (draw error)² + (btts error)² + GRID_DIAG_PEN²·(ln² diag +
+    ln² diag0) within GRID_DIAG_BOUNDS, by golden-section search, and T and D
+    are re-solved last so Over 2.5 and supremacy stay exact for the returned
+    knobs. Meeting all four exactly is not the same as meeting them well: the
+    targets come from separately trained, separately market-anchored models
+    and are often not jointly producible by a football-shaped grid. The exact
+    solve then cut every scoring draw to meet BTTS and pushed the whole draw
+    onto 0-0 — the most likely score on 20% of upcoming fixtures on
+    2026-09-13. With no BTTS target, one knob moves every draw cell together.
+
+    exact=True: the original four-target bisection, for project_probs_coherent
+    — the headline projection must read back what it was given wherever that
+    is feasible, so the published probabilities do not move.
+
+    ρ is fixed at 0 — the diagonal factors supersede it here. Returns None
     when inputs are unusable (NaN / degenerate).
     """
     try:
@@ -276,34 +324,61 @@ def fit_lambdas_to_probs(
         la = max(0.05, (T - D) / 2.0)
         return _matrix_summary(_score_matrix(lh, la, 0.0, diag, diag0, max_goals))
 
-    T, D, diag, diag0 = 2.6, 0.0, 1.0, 1.0
-    for _ in range(3):  # coordinate sweeps
-        lo, hi = 0.3, 8.0                      # T ← over 2.5
+    def _solve_T(D, diag, diag0):              # T ← over 2.5
+        lo, hi = 0.3, 8.0
         for _i in range(28):
             mid = (lo + hi) / 2.0
             if _summary(mid, D, diag, diag0)["over_2_5"] < p_over: lo = mid
             else: hi = mid
-        T = (lo + hi) / 2.0
-        lo, hi = -(T - 0.1), (T - 0.1)         # D ← supremacy
+        return (lo + hi) / 2.0
+
+    def _solve_D(T, diag, diag0):              # D ← supremacy
+        lo, hi = -(T - 0.1), (T - 0.1)
         for _i in range(28):
             mid = (lo + hi) / 2.0
             s = _summary(T, mid, diag, diag0)
             if s["home_win"] - s["away_win"] < supremacy: lo = mid
             else: hi = mid
-        D = (lo + hi) / 2.0
-        if want_btts is not None:              # diag ← btts (btts ↑ as diag ↑)
-            lo, hi = 0.15, 4.0
+        return (lo + hi) / 2.0
+
+    T, D, diag, diag0 = 2.6, 0.0, 1.0, 1.0
+    if exact:
+        for _ in range(3):  # coordinate sweeps
+            T = _solve_T(D, diag, diag0)
+            D = _solve_D(T, diag, diag0)
+            if want_btts is not None:          # diag ← btts (btts ↑ as diag ↑)
+                lo, hi = 0.15, 4.0
+                for _i in range(26):
+                    mid = (lo + hi) / 2.0
+                    if _summary(T, D, mid, diag0)["btts"] < want_btts: lo = mid
+                    else: hi = mid
+                diag = (lo + hi) / 2.0
+            lo, hi = 0.15, 6.0                 # diag0 ← draw (0-0 is btts-neutral)
             for _i in range(26):
                 mid = (lo + hi) / 2.0
-                if _summary(T, D, mid, diag0)["btts"] < want_btts: lo = mid
+                if _summary(T, D, diag, mid)["draw"] < p_draw: lo = mid
                 else: hi = mid
-            diag = (lo + hi) / 2.0
-        lo, hi = 0.15, 6.0                     # diag0 ← draw (0-0 is btts-neutral)
-        for _i in range(26):
-            mid = (lo + hi) / 2.0
-            if _summary(T, D, diag, mid)["draw"] < p_draw: lo = mid
-            else: hi = mid
-        diag0 = (lo + hi) / 2.0
+            diag0 = (lo + hi) / 2.0
+    else:
+        def _cost(dg, d0):
+            s = _summary(T, D, dg, d0)
+            j = (s["draw"] - p_draw) ** 2
+            j += GRID_DIAG_PEN ** 2 * (math.log(dg) ** 2 + math.log(d0) ** 2)
+            if want_btts is not None:
+                j += (s["btts"] - want_btts) ** 2
+            return j
+
+        lo_b, hi_b = GRID_DIAG_BOUNDS
+        for _ in range(4):  # coordinate sweeps
+            T = _solve_T(D, diag, diag0)
+            D = _solve_D(T, diag, diag0)
+            if want_btts is not None:
+                diag = _golden_log(lambda k: _cost(k, diag0), lo_b, hi_b)
+                diag0 = _golden_log(lambda k: _cost(diag, k), lo_b, hi_b)
+            else:
+                diag = diag0 = _golden_log(lambda k: _cost(k, k), lo_b, hi_b)
+        T = _solve_T(D, diag, diag0)           # exact for the knobs returned
+        D = _solve_D(T, diag, diag0)
 
     lam_h = max(0.05, (T + D) / 2.0)
     lam_a = max(0.05, (T - D) / 2.0)
@@ -360,7 +435,9 @@ def project_probs_coherent(
     # braces.
     _c = lambda p: None if p is None else min(max(float(p), _EPS), 1.0 - _EPS)
 
-    fit = fit_lambdas_to_probs(_c(p_home), _c(p_away), _c(p_over), _c(p_btts))
+    # exact=True: the headline must read back what it was given. The grid's
+    # softer default fit would move the published draw and BTTS.
+    fit = fit_lambdas_to_probs(_c(p_home), _c(p_away), _c(p_over), _c(p_btts), exact=True)
     if not fit:
         return None
     lam_h, lam_a, rho, diag, diag0 = fit

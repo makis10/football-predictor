@@ -4,6 +4,28 @@ Notable changes to Football Predictor. Format loosely follows
 [Keep a Changelog](https://keepachangelog.com/); dates are `YYYY-MM-DD`.
 History before this file was introduced lives in `git log`.
 
+## 2026-09-13
+
+### Fixed
+
+- **The correct-score grid made 0-0 the most likely score on one fixture in
+  five.** `fit_lambdas_to_probs` met four headline targets exactly — Over 2.5,
+  supremacy, BTTS and draw — with four free knobs and no preference for a
+  plausible shape. The targets come from separately trained, separately
+  market-anchored models and are often not jointly producible by a
+  football-shaped grid, so the solve cut every scoring draw to meet BTTS and
+  pushed the whole draw onto 0-0, inflated up to six times its Poisson weight.
+  0-0 was modal on 398 of 1,990 upcoming fixtures (20%); on 2,086 settled
+  matches the grid made it modal on 52.5%, and where it stated P(0-0) ≥ 0.12 it
+  averaged 0.163 against 0.077 realised. The grid now keeps Over 2.5 and
+  supremacy exact and treats draw and BTTS as soft targets, with a penalty on
+  bending the draw cells, bounded to 0.5–2× their Poisson weight: modal 0-0 on
+  8 upcoming fixtures, exact-score log-loss 3.035 against 3.094. The headline
+  projection keeps the exact fit — 2,500 stored rows compared, identical to the
+  last digit — so no published probability moves. The grid feeds the analysis
+  panel's correct scores, O/U 1.5/3.5 and combo markets, the estimated ticket
+  goal-line legs and the stored national correct scores.
+
 ## 2026-09-12
 
 ### Fixed
