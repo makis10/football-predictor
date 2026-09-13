@@ -259,6 +259,51 @@ def _golden_log(f, lo: float, hi: float, iters: int = 36) -> float:
     return math.exp((a + b) / 2)
 
 
+def _polish_exact(summary, T, D, diag, diag0, p_over, supremacy, p_draw, want_btts):
+    """Joint least-squares finish for the exact fit.
+
+    Coordinate bisection alone does not converge: each knob's solve moves the
+    other targets (diag0 ← draw shifts BTTS), so after three sweeps a target
+    that provably has an exact solution could still be 0.03 out, and one grid
+    point stalls at a wrong fixed point however many sweeps run. Applied to
+    2,500 stored rows that were ALREADY coherent — which a projection must
+    return unchanged — the sweeps moved 469 by more than a point, one by 24.
+    Solving the equations together makes a feasible input round-trip and puts
+    an infeasible one on the nearest coherent point. The sweeps' answer is
+    kept whenever the polish does not improve on it.
+    """
+    from scipy.optimize import least_squares
+
+    solve_diag = want_btts is not None
+
+    def unpack(x):
+        return (x[0], x[1], x[2], x[3]) if solve_diag else (x[0], x[1], diag, x[2])
+
+    def resid(x):
+        t, d, dg, d0 = unpack(x)
+        s = summary(t, d, dg, d0)
+        r = [s["over_2_5"] - p_over, s["home_win"] - s["away_win"] - supremacy,
+             s["draw"] - p_draw]
+        if solve_diag:
+            r.append(s["btts"] - want_btts)
+        return r
+
+    if solve_diag:
+        x0, lo, hi = [T, D, diag, diag0], [0.3, -7.9, 0.15, 0.15], [8.0, 7.9, 4.0, 6.0]
+    else:
+        x0, lo, hi = [T, D, diag0], [0.3, -7.9, 0.15], [8.0, 7.9, 6.0]
+    x0 = [min(max(v, l + 1e-9), h - 1e-9) for v, l, h in zip(x0, lo, hi)]
+    start = sum(r * r for r in resid(x0))
+    try:
+        sol = least_squares(resid, x0, bounds=(lo, hi), xtol=1e-12, ftol=1e-12,
+                            gtol=1e-12, max_nfev=400)
+    except Exception:
+        return T, D, diag, diag0
+    if not sol.success or 2 * sol.cost >= start:
+        return T, D, diag, diag0
+    return tuple(float(v) for v in unpack(sol.x))
+
+
 def fit_lambdas_to_probs(
     p_home: float,
     p_away: float,
@@ -343,7 +388,7 @@ def fit_lambdas_to_probs(
 
     T, D, diag, diag0 = 2.6, 0.0, 1.0, 1.0
     if exact:
-        for _ in range(3):  # coordinate sweeps
+        for _ in range(3):  # coordinate sweeps — the warm start for the polish below
             T = _solve_T(D, diag, diag0)
             D = _solve_D(T, diag, diag0)
             if want_btts is not None:          # diag ← btts (btts ↑ as diag ↑)
@@ -359,6 +404,8 @@ def fit_lambdas_to_probs(
                 if _summary(T, D, diag, mid)["draw"] < p_draw: lo = mid
                 else: hi = mid
             diag0 = (lo + hi) / 2.0
+        T, D, diag, diag0 = _polish_exact(_summary, T, D, diag, diag0,
+                                          p_over, supremacy, p_draw, want_btts)
     else:
         def _cost(dg, d0):
             s = _summary(T, D, dg, d0)

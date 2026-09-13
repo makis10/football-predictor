@@ -145,6 +145,28 @@ History before this file was introduced lives in `git log`.
   genuine pre-match rows moved to 7 July (/national/wc-review: 104 settled,
   69 correct). 19 national rows took the venue and tournament the source now
   lists.
+- **The headline projection moved probabilities it should have left alone.**
+  `project_probs_coherent` fits a score grid to the model's 1×2, Over 2.5 and
+  BTTS and reads coherent numbers back, promising that already-coherent input
+  comes back unchanged. Its fit ran three coordinate sweeps, and each knob's
+  solve moves the others' targets, so the promise failed: fed 2,500 stored
+  rows that were already coherent, it moved 469 of them by more than a
+  percentage point (mean 0.9, worst 24). The sweeps are now a warm start for a
+  joint least-squares solve of the four equations: mean shift 0.18 points,
+  p90 0.01, 134 rows over a point, worst 7 — and targets generated from the
+  grid itself round-trip. Published probabilities move at the next full
+  recompute.
+- **The test window can no longer be a half-played season.** A season counted
+  as "complete" five months after it started, so from 1 December every
+  retrain would have reported its metrics on the first half of 2026/27 under
+  the label "the newest complete season". It is complete when the next one
+  starts. Nothing changes for the current window.
+- **The two legs of a home-and-away tie were one fixture to the ticket
+  builder.** Keyed on the pair of clubs alone, UEFA qualifying legs a week
+  apart collapsed into one tie — the second dropped from every slip or pinned
+  to the market chosen for the first, which tips both sides. The key is now
+  the pair plus the match day, and no longer the league, so one match two
+  feeds file under different competition names stays one.
 
 ## 2026-09-12
 
