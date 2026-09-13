@@ -222,7 +222,8 @@ def get_tracked(
                 m.match_date::text       AS match_date,
                 tm.tracked_at::text      AS tracked_at,
                 p.suggested_market,
-                p.confidence
+                p.home_win_prob, p.draw_prob, p.away_win_prob, p.over_2_5_prob,
+                p.insufficient_data
             FROM tracked_matches tm
             JOIN matches m          ON m.id       = tm.match_id
             -- LEFT: a prediction is rewritten on schedule, and a bookmark must
@@ -233,7 +234,19 @@ def get_tracked(
         """),
         {"uid": user.id},
     ).fetchall()
-    return [dict(r._mapping) for r in rows]
+    # Confidence as every other page computes it, from the served
+    # probabilities — the stored column drifts (match 23469: stored low,
+    # served medium), so this list disagreed with the card and the page.
+    from backend.app.ml.predict import confidence_for
+    out = []
+    for r in rows:
+        d = dict(r._mapping)
+        probs = (d.pop("home_win_prob"), d.pop("draw_prob"), d.pop("away_win_prob"))
+        over, insufficient = d.pop("over_2_5_prob"), d.pop("insufficient_data")
+        d["confidence"] = (None if probs[0] is None else confidence_for(
+            d["league"], max(probs), over, has_history=not bool(insufficient)))
+        out.append(d)
+    return out
 
 
 @router.post("/tracked", status_code=status.HTTP_201_CREATED)

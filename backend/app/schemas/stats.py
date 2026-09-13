@@ -29,7 +29,8 @@ class AccuracySlice(BaseModel):
     # actual result for 1x2, and the actual over-2.5 rate for goals. A reader
     # can subtract them, and so can the accent function.
     result_baseline: float = 0.0   # share of the most common actual result
-    goals_baseline: float = 0.0    # actual over-2.5 rate on these rows
+    goals_baseline: float = 0.0    # the more common side's rate on these rows
+    goals_baseline_side: str = "OVER"   # which constant: OVER or UNDER
 
     # How many of these rows are national-team predictions rather than club
     # ones. The two models are different pipelines with very different records
@@ -60,7 +61,10 @@ class LeagueBreakdown(BaseModel):
     result_accuracy: float
     goals_accuracy: float
     both_accuracy: float
-
+    # The same rows with no model at all (see AccuracySlice).
+    result_baseline: float = 0.0
+    goals_baseline: float = 0.0
+    goals_baseline_side: str = "OVER"
 
 class ConfidenceBreakdown(BaseModel):
     confidence: str          # high / medium / low
@@ -99,7 +103,8 @@ class BTTSStats(BaseModel):
     # Always-GG on the same rows. BTTS overall_accuracy has been BELOW this for
     # its whole recorded history (53.9% against 54.8%), which the card could not
     # show because it had no baseline to show it against.
-    gg_baseline: float = 0.0
+    gg_baseline: float = 0.0          # the more common side's rate
+    gg_baseline_side: str = "GG"      # which constant: GG or NG
 
     # Discrimination, which a reliability diagram cannot express.
     #
@@ -152,7 +157,10 @@ class ModelVersionStats(BaseModel):
     total: int
     result_accuracy: float
     goals_accuracy: float
-
+    # The same rows with no model at all (see AccuracySlice).
+    result_baseline: float = 0.0
+    goals_baseline: float = 0.0
+    goals_baseline_side: str = "OVER"
 
 class ROIStats(BaseModel):
     """Return-on-investment for flat €10 stake on every model prediction."""

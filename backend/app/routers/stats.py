@@ -97,6 +97,14 @@ def _load_rows(league: Optional[str] = None) -> list[dict]:
                 Prediction.adj_draw_prob,
                 Prediction.adj_away_win_prob,
                 Prediction.adj_over_2_5_prob,
+                # The model's own numbers. The served columns above are 85% the
+                # bookmaker since 2026-09-01 (1x2) and 2026-09-07 (O/U, BTTS);
+                # EV and "model quality vs market" read these instead.
+                Prediction.raw_home_prob,
+                Prediction.raw_draw_prob,
+                Prediction.raw_away_prob,
+                Prediction.raw_over_prob,
+                Prediction.raw_btts_prob,
             )
             .join(Prediction, Prediction.match_id == Match.id)
             .where(Match.result.isnot(None), Match.void_reason.is_(None))
@@ -151,6 +159,9 @@ def _load_rows(league: Optional[str] = None) -> list[dict]:
                     "poisson_lambda_away": None,
                     "suggested_market": p.suggested_market,
                     "ev_score":      p.ev_score,
+                    # National predictions are served unanchored.
+                    "raw_home_prob": None, "raw_draw_prob": None, "raw_away_prob": None,
+                    "raw_over_prob": None, "raw_btts_prob": None,
                 })
             out.sort(key=lambda r: r["match_date"])
         return out
@@ -193,14 +204,24 @@ def _compute_clv(rows: list[dict]) -> "Optional[CLVStats]":
     # Preferred source: the value_bets ticket ledger — immutable odds captured
     # the FIRST time each suggestion appeared (opening-line attack), so CLV
     # measures the soft early price, not whatever a later recompute stored.
+    #
+    # Only tickets on the rows this slice is about: settled, not void, in the
+    # requested league, with history. The ledger query took every club ticket
+    # there was, so /stats?league=EPL, SerieA and Ligue1 all showed one global
+    # figure, and fixtures not yet played were scored against a mid-week price
+    # as if it were the close.
     from backend.app.models.value_bet import ValueBet
-    db_t = SessionLocal()
-    try:
-        tickets = db_t.execute(
-            select(ValueBet).where(ValueBet.source == "club")
-        ).scalars().all()
-    finally:
-        db_t.close()
+    settled_ids = {r["id"] for r in rows if not r.get("is_national")}
+    tickets = []
+    if settled_ids:
+        db_t = SessionLocal()
+        try:
+            tickets = db_t.execute(
+                select(ValueBet).where(ValueBet.source == "club",
+                                       ValueBet.match_id.in_(settled_ids))
+            ).scalars().all()
+        finally:
+            db_t.close()
     for t in tickets:
         col = _CLV_COLUMN.get(t.market)
         if col and t.match_id and t.odds and t.odds > 1.0:
@@ -430,10 +451,14 @@ def _accuracy_slice(rows: list[dict]) -> AccuracySlice:
     results = [r.get("result") for r in rows if r.get("result")]
     result_baseline = (max(results.count(k) for k in ("H", "D", "A")) / n
                        if results else 0.0)
-    goals_baseline = sum(
+    # The better constant, whichever side it is. Always-OVER was the floor only
+    # where OVER is the majority: in Serie A the card read "+6.7pp vs always
+    # OVER 46%" in green while always-UNDER scores 54.4%.
+    over_rate = sum(
         1 for r in rows
         if ((r["home_goals"] or 0) + (r["away_goals"] or 0)) > 2.5
     ) / n
+    goals_baseline = max(over_rate, 1.0 - over_rate)
 
     return AccuracySlice(
         total=n,
@@ -445,6 +470,7 @@ def _accuracy_slice(rows: list[dict]) -> AccuracySlice:
         both_accuracy=round(bc / n, 4),
         result_baseline=round(result_baseline, 4),
         goals_baseline=round(goals_baseline, 4),
+        goals_baseline_side="OVER" if over_rate >= 0.5 else "UNDER",
         national_total=sum(1 for r in rows if r.get("is_national")),
     )
 
@@ -453,8 +479,10 @@ def _accuracy_slice(rows: list[dict]) -> AccuracySlice:
 
 def _compute_stats(rows: list[dict]) -> StatsResponse:
     today = date.today()
-    cutoff_7d  = today - timedelta(days=7)
-    cutoff_30d = today - timedelta(days=30)
+    # Last N calendar days INCLUDING today, as /matches counts them. These
+    # reached one day further, so "Last 7 days" held eight match days.
+    cutoff_7d  = today - timedelta(days=6)
+    cutoff_30d = today - timedelta(days=29)
 
     rows_7d  = [r for r in rows if r["match_date"] >= cutoff_7d]
     rows_30d = [r for r in rows if r["match_date"] >= cutoff_30d]
@@ -469,7 +497,12 @@ def _compute_stats(rows: list[dict]) -> StatsResponse:
     _REGIMES: list[tuple[str, Optional[date], Optional[date]]] = [
         ("anchored",       None,               date(2026, 6, 17)),
         ("pure-model",     date(2026, 6, 17),  date(2026, 7, 10)),
-        ("pure-unified",   date(2026, 7, 10),  None),
+        ("pure-unified",   date(2026, 7, 10),  date(2026, 9, 1)),
+        # Market anchoring restored (w=0.57 from 09-01, 0.85 from ~09-04) for
+        # 1x2, then for O/U and BTTS from 09-07. Without these rows the last era
+        # pooled unanchored and anchored predictions as one model.
+        ("anchored-1x2",   date(2026, 9, 1),   date(2026, 9, 7)),
+        ("anchored-all",   date(2026, 9, 7),   None),
     ]
     regime_slices = []
     for name, lo, hi in _REGIMES:
@@ -507,12 +540,19 @@ def _compute_stats(rows: list[dict]) -> StatsResponse:
         rc = sum(_result_correct(r) for r in lg_rows)
         gc = sum(_goals_correct(r)  for r in lg_rows)
         bc = sum(_result_correct(r) and _goals_correct(r) for r in lg_rows)
+        # Each league against its own no-model floor: the table coloured an
+        # absolute 57% green, so Bundesliga O/U 71.6% (always-OVER 74.6%)
+        # read as a success and Ligue 1's +9.9pp 1x2 edge read red.
+        base = _accuracy_slice(lg_rows)
         by_league.append(LeagueBreakdown(
             league=lg, total=n,
             result_correct=rc, goals_correct=gc, both_correct=bc,
             result_accuracy=round(rc / n, 4) if n else 0.0,
             goals_accuracy=round(gc / n, 4)  if n else 0.0,
             both_accuracy=round(bc / n, 4)   if n else 0.0,
+            result_baseline=base.result_baseline,
+            goals_baseline=base.goals_baseline,
+            goals_baseline_side=base.goals_baseline_side,
         ))
     # sort by total desc
     by_league.sort(key=lambda x: x.total, reverse=True)
@@ -599,7 +639,7 @@ def _compute_stats(rows: list[dict]) -> StatsResponse:
         precision=precision,
     )
 
-    # ── Top AI Picks stats (mirrors TopPicks.tsx: top 3/day by confidence→max_prob) ──
+    # ── Top AI Picks stats: top 3 per calendar day by the highest 1x2 probability ──
 
     def _top_pick_outcome_for_row(r: dict) -> tuple[str, float, bool]:
         """
@@ -695,7 +735,8 @@ def _compute_stats(rows: list[dict]) -> StatsResponse:
             ng_recall=round(n_correct_ng / n_actual_ng, 4) if n_actual_ng else 0.0,
             gg_precision=round(n_correct_gg / n_pred_gg, 4) if n_pred_gg else 0.0,
             overall_accuracy=round(n_correct / n_bt, 4) if n_bt else 0.0,
-            gg_baseline=round(n_actual_gg / n_bt, 4) if n_bt else 0.0,
+            gg_baseline=round(max(n_actual_gg, n_actual_ng) / n_bt, 4) if n_bt else 0.0,
+            gg_baseline_side="GG" if n_actual_gg >= n_actual_ng else "NG",
             auc=(lambda v: round(v, 4) if v is not None else None)(
                 _auc([p for _, p in btts_rows], actual_gg)),
             resolution=(lambda v: round(v, 5) if v is not None else None)(
@@ -784,10 +825,14 @@ def _compute_stats(rows: list[dict]) -> StatsResponse:
         n  = len(mv_rows)
         rc = sum(_result_correct(r) for r in mv_rows)
         gc = sum(_goals_correct(r)  for r in mv_rows)
+        base = _accuracy_slice(mv_rows)
         by_model_version.append(ModelVersionStats(
             model_version=mv, total=n,
             result_accuracy=round(rc / n, 4) if n else 0.0,
             goals_accuracy=round(gc / n, 4)  if n else 0.0,
+            result_baseline=base.result_baseline,
+            goals_baseline=base.goals_baseline,
+            goals_baseline_side=base.goals_baseline_side,
         ))
 
     # ── ROI & Cumulative EV (only for rows with bookmaker odds stored) ─────────
@@ -814,16 +859,27 @@ def _compute_stats(rows: list[dict]) -> StatsResponse:
     daily: dict[str, dict[str, float]] = {}
 
     def _shrunk_prob(model_p: float, implied_p: Optional[float]) -> float:
-        """Identity pass-through (2026-06-17): predictions are now fully
-        market-independent — no anchoring, no EV shrinkage. ROI/EV is measured
-        on the PURE model probability vs the market price, matching
-        odds_analysis_service.MARKET_SHRINKAGE = 0. Kept as a hook so shrinkage
-        can be reintroduced in one place if a future backtest justifies it."""
+        """Identity pass-through, matching odds_analysis_service.MARKET_SHRINKAGE
+        = 0. Kept as a hook so shrinkage can be reintroduced in one place."""
         return model_p
+
+    def _own(r: dict, raw_key: str, served: Optional[float]) -> Optional[float]:
+        """The model's own probability: the raw twin where one was stored.
+
+        The served columns are 85% the bookmaker since 2026-09-01 (1x2) and
+        2026-09-07 (O/U, BTTS). Betting them against the same bookmaker's price
+        measures the market against itself: EV and the fair-value "model
+        quality" figure drift to about minus the margin whatever the model
+        does. Rows written before the twins existed were unanchored, so the
+        served value is the model's own there."""
+        v = r.get(raw_key)
+        return v if v is not None else served
 
     for r in rows:
         d_str = str(r["match_date"])
-        probs = {"H": r["home_win_prob"], "D": r["draw_prob"], "A": r["away_win_prob"]}
+        probs = {"H": _own(r, "raw_home_prob", r["home_win_prob"]),
+                 "D": _own(r, "raw_draw_prob", r["draw_prob"]),
+                 "A": _own(r, "raw_away_prob", r["away_win_prob"])}
         pred_result = max(probs, key=probs.__getitem__)
         actual_result = r["result"]
         actual_goals = (r["home_goals"] or 0) + (r["away_goals"] or 0)
@@ -838,8 +894,7 @@ def _compute_stats(rows: list[dict]) -> StatsResponse:
             res_staked += STAKE
             pnl_r = STAKE * (bet_odds - 1) if won else -STAKE
             res_return += STAKE * bet_odds if won else 0.0
-            # EV on the PURE-model probability vs the market price (anchoring +
-            # EV-shrinkage were removed 2026-06-17; _shrunk_prob is now identity).
+            # EV of the model's own pick on its own probability vs the price.
             ev_r = STAKE * (model_prob * bet_odds - 1)
 
             # Fair (de-vigged) odds for the picked outcome: multiplicative de-vig
@@ -862,8 +917,13 @@ def _compute_stats(rows: list[dict]) -> StatsResponse:
             daily[d_str]["pnl_fair"] += pnl_r_fair
 
         # ── Strategy bet: the suggested market at its quoted odds ───────────
+        # Only picks the EV gate chose. Since 2026-07-30 club rows carry the
+        # served argmax with its price here and leave ev_score NULL on purpose,
+        # so counting every " @ " pooled three selection rules — EV-era value
+        # picks, post-July favourites and national EV picks — under one
+        # "value strategy" label.
         sm = r.get("suggested_market")
-        if sm and " @ " in sm:
+        if sm and " @ " in sm and r.get("ev_score") is not None:
             try:
                 market_name, odds_str = sm.rsplit(" @ ", 1)
                 s_odds = float(odds_str)
@@ -886,7 +946,7 @@ def _compute_stats(rows: list[dict]) -> StatsResponse:
                     strat_return += STAKE * s_odds if outcome else 0.0
 
         # ── BTTS market bet (GG only, when btts_prob >= 0.5) ────────────────
-        btts_p = _btts_prob(r)
+        btts_p = _own(r, "raw_btts_prob", _btts_prob(r))
         if btts_p is not None and btts_p >= 0.5 and r.get("bm_btts_yes_odds") and r["bm_btts_yes_odds"] > 1.0:
             gg_odds = r["bm_btts_yes_odds"]
             won_btts = _actual_btts(r)
@@ -914,15 +974,15 @@ def _compute_stats(rows: list[dict]) -> StatsResponse:
             daily[d_str]["pnl_fair"] += pnl_bt_fair
 
         # ── Goals market bet (OVER only, when model predicts OVER) ──────────
-        if r["goals_prediction"] == "OVER" and r["bm_over_odds"] and r["bm_over_odds"] > 1.0:
+        over_prob = _own(r, "raw_over_prob", r["over_2_5_prob"])
+        if over_prob >= 0.5 and r["bm_over_odds"] and r["bm_over_odds"] > 1.0:
             over_odds = r["bm_over_odds"]
-            over_prob = r["over_2_5_prob"]
             won_goals = actual_goals > 2.5
 
             goals_staked += STAKE
             pnl_g = STAKE * (over_odds - 1) if won_goals else -STAKE
             goals_return += STAKE * over_odds if won_goals else 0.0
-            # Pure-model Over prob vs market price (no anchoring since 2026-06-17).
+            # The model's own Over probability vs the price.
             ev_g = STAKE * (over_prob * over_odds - 1)
 
             # Fair Over odds: under-2.5 odds are not stored, so de-vig with an

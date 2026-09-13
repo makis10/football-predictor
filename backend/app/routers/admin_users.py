@@ -78,19 +78,26 @@ def list_users(
             u.last_login_at::text                                       AS last_login_at,
             u.last_seen_at::text                                        AS last_seen_at,
             COALESCE(u.login_count, 0)                                  AS login_count,
-            COUNT(DISTINCT tm.id)                                       AS tracked_count,
-            COUNT(DISTINCT ub.id)                                       AS bets_count,
-            COUNT(DISTINCT ub.id) FILTER (WHERE ub.outcome = 'win')    AS bets_won,
-            COALESCE(SUM(ub.profit), 0)                                 AS total_profit,
+            COALESCE(tm.n, 0)                                           AS tracked_count,
+            COALESCE(ub.n, 0)                                           AS bets_count,
+            COALESCE(ub.won, 0)                                         AS bets_won,
+            COALESCE(ub.profit, 0)                                      AS total_profit,
             CASE
-                WHEN COALESCE(SUM(ub.stake), 0) > 0
-                THEN ROUND((COALESCE(SUM(ub.profit), 0) / SUM(ub.stake) * 100)::numeric, 2)
+                WHEN COALESCE(ub.stake, 0) > 0
+                THEN ROUND((ub.profit / ub.stake * 100)::numeric, 2)
                 ELSE 0
             END                                                         AS roi_pct
         FROM users u
-        LEFT JOIN tracked_matches tm ON tm.user_id = u.id
-        LEFT JOIN user_bets ub       ON ub.user_id = u.id AND ub.outcome IN ('win','loss')
-        GROUP BY u.id
+        -- Aggregated apart and then joined: one query joining both tables gave
+        -- tracked × bets rows per user, so SUM(profit) was multiplied by the
+        -- number of tracked matches (ROI survived only because stake was too).
+        LEFT JOIN (SELECT user_id, COUNT(*) AS n
+                   FROM tracked_matches GROUP BY user_id) tm ON tm.user_id = u.id
+        LEFT JOIN (SELECT user_id, COUNT(*) AS n,
+                          COUNT(*) FILTER (WHERE outcome = 'win') AS won,
+                          SUM(profit) AS profit, SUM(stake) AS stake
+                   FROM user_bets WHERE outcome IN ('win','loss')
+                   GROUP BY user_id) ub ON ub.user_id = u.id
         ORDER BY u.last_seen_at DESC NULLS LAST, u.created_at DESC
     """)).fetchall()
 
@@ -239,7 +246,9 @@ _MARKET_RECORD_SQL = {
                m.result, m.home_goals, m.away_goals
         FROM value_bets vb
         JOIN matches m ON m.id = vb.match_id
-        WHERE vb.source = 'club'
+        -- The live gate skips unplayed fixtures (void_reason, migration 0038);
+        -- this record claims the same rule, so it must too.
+        WHERE vb.source = 'club' AND m.void_reason IS NULL
         ORDER BY vb.market, m.match_date DESC, vb.id DESC
     """,
 }

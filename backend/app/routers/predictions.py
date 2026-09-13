@@ -731,12 +731,20 @@ def get_match_analysis(match_id: int, request: Request, db: Session = Depends(ge
         match_id=match_id,
         home_team=match.home_team,
         away_team=match.away_team,
-        model=ModelProbs(**model_probs),
+        # The served (anchored, injury-adjusted) numbers — the ones on the card
+        # that links here. model_probs above stays raw, for the EV gate only;
+        # returned as `model` it showed readers the unblended model, whose
+        # "most likely" could name a different outcome from the card's pick.
+        model=ModelProbs(home_win=hw, draw=d, away_win=aw, over_2_5=ov, btts=btts),
         bookmakers=bm_typed,
         injuries=inj_typed,
         analysis=data["analysis"],
-        suggested_market=data.get("suggested_market"),
-        suggested_markets=data.get("suggested_markets", []),
+        # The stored pick (the served argmax, with its price) — what the card
+        # and the bet button say. run_comparison's pick is the EV selection
+        # (raw probability × odds), which landed 32.1% against argmax 52.6%;
+        # rendered as "Model pick" it contradicted the card beside it.
+        suggested_market=pred.suggested_market,
+        suggested_markets=[pred.suggested_market] if pred.suggested_market else [],
         h_elo=_elo[0] if _elo else None,
         a_elo=_elo[1] if _elo else None,
         exp_home_cards=_tp.get("exp_home_cards"),

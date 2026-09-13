@@ -493,6 +493,15 @@ def national_stats(db: Session = Depends(get_db)) -> dict[str, Any]:
             "by_confidence": [],
         }
 
+    def _pick(row: NationalPrediction) -> str:
+        """The outcome the probabilities favour — the rule /stats grades by.
+
+        The stored label can disagree with its own probabilities (Sweden v
+        Tunisia, 2026-06-14: label H, probabilities favour Tunisia), so this
+        page counted 127 correct of 206 where /stats counted 126."""
+        probs = {"H": row.home_win_prob, "D": row.draw_prob, "A": row.away_win_prob}
+        return max(probs, key=probs.__getitem__)
+
     def _over_correct(row: NationalPrediction) -> bool:
         """True if the over/under 2.5 prediction matches the actual result."""
         if row.actual_home_goals is None or row.actual_away_goals is None:
@@ -504,14 +513,14 @@ def national_stats(db: Session = Depends(get_db)) -> dict[str, Any]:
             return total <= 2
 
     total = len(rows)
-    result_correct = sum(1 for r in rows if r.prediction == r.actual_result)
+    result_correct = sum(1 for r in rows if _pick(r) == r.actual_result)
     over_correct = sum(1 for r in rows if _over_correct(r))
-    both_correct = sum(1 for r in rows if r.prediction == r.actual_result and _over_correct(r))
+    both_correct = sum(1 for r in rows if _pick(r) == r.actual_result and _over_correct(r))
 
     # Draw stats
     total_draws = sum(1 for r in rows if r.actual_result == "D")
-    predicted_draws = sum(1 for r in rows if r.prediction == "D")
-    correctly_predicted_draws = sum(1 for r in rows if r.prediction == "D" and r.actual_result == "D")
+    predicted_draws = sum(1 for r in rows if _pick(r) == "D")
+    correctly_predicted_draws = sum(1 for r in rows if _pick(r) == "D" and r.actual_result == "D")
     draw_recall = correctly_predicted_draws / total_draws if total_draws > 0 else 0.0
     draw_precision = correctly_predicted_draws / predicted_draws if predicted_draws > 0 else 0.0
 
@@ -522,7 +531,7 @@ def national_stats(db: Session = Depends(get_db)) -> dict[str, Any]:
         if t not in tournament_map:
             tournament_map[t] = {"total": 0, "result_correct": 0, "over_correct": 0, "both_correct": 0}
         tournament_map[t]["total"] += 1
-        res_ok  = r.prediction == r.actual_result
+        res_ok  = _pick(r) == r.actual_result
         over_ok = _over_correct(r)
         if res_ok:
             tournament_map[t]["result_correct"] += 1
@@ -552,7 +561,7 @@ def national_stats(db: Session = Depends(get_db)) -> dict[str, Any]:
         if c not in confidence_map:
             confidence_map[c] = {"total": 0, "result_correct": 0}
         confidence_map[c]["total"] += 1
-        if r.prediction == r.actual_result:
+        if _pick(r) == r.actual_result:
             confidence_map[c]["result_correct"] += 1
 
     by_confidence = []

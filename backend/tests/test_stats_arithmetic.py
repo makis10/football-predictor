@@ -149,18 +149,21 @@ def test_the_baselines_are_what_the_colour_coding_needs():
     edge indistinguishable from a constant while 1x2 rendered yellow for a real
     one. Whatever the accent function does, it needs a per-slice floor."""
     # These rows predict OVER every time, so the forecast carries no information
-    # at all — and its accuracy is EXACTLY the base rate, in both slices. That is
-    # the whole argument for shipping the baseline: 70% correct and 40% correct
-    # are the same forecast, and only the second number tells you so.
+    # at all. The floor is the better constant, whichever side it is: where
+    # OVER is the majority always-OVER is the floor and the edge is zero; where
+    # UNDER is, always-UNDER is — and an always-OVER forecast sits BELOW it.
+    # (This test used to assert the floor was the over rate in both slices, so
+    # the quiet slice showed an edge of zero where it was twenty points short;
+    # Serie A O/U read "+6.7pp vs always OVER" in green, 2.2pp below always-UNDER.)
     busy = _accuracy_slice(_rows(200, over=140))     # 70% of these went over
     quiet = _accuracy_slice(_rows(200, over=80))     # 40% did
 
-    assert busy.goals_accuracy == pytest.approx(busy.goals_baseline)
-    assert quiet.goals_accuracy == pytest.approx(quiet.goals_baseline)
     assert busy.goals_accuracy == pytest.approx(0.70)
-    assert quiet.goals_accuracy == pytest.approx(0.40)
-    # …so the edge is zero in both, which is what a colour should be reading.
+    assert busy.goals_baseline == pytest.approx(0.70) and busy.goals_baseline_side == "OVER"
     assert busy.goals_accuracy - busy.goals_baseline == pytest.approx(0.0)
+    assert quiet.goals_accuracy == pytest.approx(0.40)
+    assert quiet.goals_baseline == pytest.approx(0.60) and quiet.goals_baseline_side == "UNDER"
+    assert quiet.goals_accuracy - quiet.goals_baseline == pytest.approx(-0.20)
 
 
 def test_the_national_share_of_every_slice_is_reported():
