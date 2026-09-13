@@ -7,8 +7,8 @@ Three binary/multiclass models:
   btts_model    — binary (both teams score)
 
 Ensemble: XGBoost + LightGBM (no MLP — dataset ~20k rows after min_year filter)
-Calibration: isotonic regression on 2023 season calibration set.
-Test set: 2024-2025.
+Windows roll with the data (national_windows): the last twelve months test,
+the twelve before them calibrate (isotonic), the trees fit everything older.
 
 Usage:
   python scripts/train_national.py
@@ -24,9 +24,11 @@ import json
 
 import numpy as np
 import pandas as pd
+import lightgbm as lgb
 from lightgbm import LGBMClassifier
 from sklearn.isotonic import IsotonicRegression  # noqa: F401  (type hints / isinstance)
 from backend.app.ml.prob_bounds import probability_isotonic
+from backend.app.ml.refit import refit_on_everything
 from sklearn.metrics import accuracy_score, brier_score_loss, classification_report, log_loss
 from sklearn.utils.class_weight import compute_sample_weight
 from xgboost import XGBClassifier
@@ -47,10 +49,23 @@ MODELS_DIR = ROOT / "backend" / "data" / "models" / "national"
 # Training data: only use from MIN_YEAR onward
 MIN_YEAR = 1990
 
-# Cal = 2023, Test = 2024+, Train = everything before 2023
-CAL_START  = pd.Timestamp("2023-01-01")
-TEST_START = pd.Timestamp("2024-01-01")
-TEST_END   = pd.Timestamp("2026-06-01")   # exclude upcoming WC fixtures
+# Rolling windows, anchored on the newest played match: the last twelve months
+# are the test window, the twelve before them calibrate, and the trees fit
+# everything older. These were literals — calibration 2023, test 2024-01 to
+# 2026-06 — so a model retrained every morning never fit a match played after
+# 2022, and its test window stopped admitting results in June 2026.
+TEST_MONTHS = 12
+CAL_MONTHS  = 12
+
+
+def national_windows(data_max) -> tuple[pd.Timestamp, pd.Timestamp, pd.Timestamp]:
+    """(cal_start, test_start, test_end) for data whose newest played match is
+    `data_max`. test_end is the first of the following month, so the newest
+    match always sits inside the test window."""
+    test_end = (pd.Timestamp(data_max) + pd.offsets.MonthBegin(1)).normalize()
+    test_start = test_end - pd.DateOffset(months=TEST_MONTHS)
+    cal_start = test_start - pd.DateOffset(months=CAL_MONTHS)
+    return cal_start, test_start, test_end
 
 # XGBoost / LightGBM shared hyperparameters
 _XGB_PARAMS = dict(
@@ -144,11 +159,11 @@ def blend_draw_probability(
     return p_home_new, blended_draw, p_away_new
 
 
-def _split(df: pd.DataFrame):
+def _split(df: pd.DataFrame, cal_start, test_start, test_end):
     """Return (train, cal, test) DataFrames by date."""
-    train = df[df["date"] < CAL_START]
-    cal   = df[(df["date"] >= CAL_START) & (df["date"] < TEST_START)]
-    test  = df[(df["date"] >= TEST_START) & (df["date"] < TEST_END)]
+    train = df[df["date"] < cal_start]
+    cal   = df[(df["date"] >= cal_start) & (df["date"] < test_start)]
+    test  = df[(df["date"] >= test_start) & (df["date"] < test_end)]
     return train, cal, test
 
 
@@ -172,9 +187,11 @@ def _train_lgb(
 ) -> LGBMClassifier:
     obj = "multiclass" if n_classes > 2 else "binary"
     m = LGBMClassifier(objective=obj, **_LGB_PARAMS)
+    # The fold used to be handed over with no early-stopping callback, so every
+    # member trained its full n_estimators and the fold decided nothing.
     m.fit(X_tr, y_tr, sample_weight=sw_tr,
           eval_set=[(X_val, y_val)],
-          callbacks=[])
+          callbacks=[lgb.early_stopping(30, verbose=False), lgb.log_evaluation(period=-1)])
     return m
 
 
@@ -232,20 +249,28 @@ def _eval_calibrated(
             "cal_proba": cal_proba}
 
 
-def train(data_dir: str | Path = DATA_DIR, models_dir: str | Path = MODELS_DIR) -> None:
+def train(data_dir: str | Path = DATA_DIR, models_dir: str | Path = MODELS_DIR,
+          *, asof: "pd.Timestamp | None" = None) -> None:
+    """Fit, calibrate, evaluate and save. `asof` first drops every match from
+    that date on — a reproducible past run, to be scored on what followed."""
     data_dir   = Path(data_dir)
     models_dir = Path(models_dir)
     models_dir.mkdir(parents=True, exist_ok=True)
 
     df = prepare_data(data_dir)
+    if asof is not None:
+        df = df[df["date"] < pd.Timestamp(asof)]
 
-    train_df, cal_df, test_df = _split(df)
+    cal_start, test_start, test_end = national_windows(df["date"].max())
+    train_df, cal_df, test_df = _split(df, cal_start, test_start, test_end)
     print(f"\nSplitting:")
     print(f"  Train : {len(train_df):,}  ({train_df['date'].min().date()} – {train_df['date'].max().date()})")
     print(f"  Cal   : {len(cal_df):,}  ({cal_df['date'].min().date()} – {cal_df['date'].max().date()})")
     print(f"  Test  : {len(test_df):,}  ({test_df['date'].min().date()} – {test_df['date'].max().date()})")
 
-    # Val split for early stopping: last 15% of train
+    # Val split for early stopping: last 15% of train. It finds a tree count and
+    # nothing else — every booster is then refit on the whole of train_df. They
+    # used to ship fitted on `inner` alone, so the trees ended in mid-2018.
     n_val = max(100, int(len(train_df) * 0.15))
     inner = train_df.iloc[:-n_val]
     val   = train_df.iloc[-n_val:]
@@ -262,6 +287,7 @@ def train(data_dir: str | Path = DATA_DIR, models_dir: str | Path = MODELS_DIR) 
         return sw / sw.mean()
 
     sw_inner = _sw(inner)
+    sw_full  = _sw(train_df)
 
     # ── Result model ───────────────────────────────────────────────────────────
     print("\n--- Result model (Home Win / Draw / Away Win) ---")
@@ -271,10 +297,12 @@ def train(data_dir: str | Path = DATA_DIR, models_dir: str | Path = MODELS_DIR) 
     xgb_r = _train_xgb(Xr_i, inner["target_result"], sw_inner,
                         Xr_v, val["target_result"], n_classes=3)
     print(f"  [XGBoost] val acc={accuracy_score(val['target_result'], xgb_r.predict(Xr_v)):.4f}")
+    xgb_r = refit_on_everything(xgb_r, _feats(train_df), train_df["target_result"], sw_full, "XGBoost")
 
     lgb_r = _train_lgb(Xr_i, inner["target_result"], sw_inner,
                        Xr_v, val["target_result"], n_classes=3)
     print(f"  [LightGBM] val acc={accuracy_score(val['target_result'], lgb_r.predict(Xr_v)):.4f}")
+    lgb_r = refit_on_everything(lgb_r, _feats(train_df), train_df["target_result"], sw_full, "LightGBM")
 
     ens_r = SoftVoteEnsemble([xgb_r, lgb_r], [1, 1])
     cal_r = _calibrate(ens_r, Xr_c, cal_df["target_result"], n_classes=3)
@@ -287,14 +315,19 @@ def train(data_dir: str | Path = DATA_DIR, models_dir: str | Path = MODELS_DIR) 
 
     sw_g = _time_decay_weights(inner["date"]) * inner["match_weight"].fillna(1.0).to_numpy()
     sw_g = sw_g / sw_g.mean()
+    sw_g_full = (_time_decay_weights(train_df["date"])
+                 * train_df["match_weight"].fillna(1.0).to_numpy())
+    sw_g_full = sw_g_full / sw_g_full.mean()
 
     xgb_g = _train_xgb(Xg_i, inner["target_goals"], sw_g,
                         Xg_v, val["target_goals"], n_classes=2)
     print(f"  [XGBoost] val acc={accuracy_score(val['target_goals'], xgb_g.predict(Xg_v)):.4f}")
+    xgb_g = refit_on_everything(xgb_g, _feats(train_df), train_df["target_goals"], sw_g_full, "XGBoost")
 
     lgb_g = _train_lgb(Xg_i, inner["target_goals"], sw_g,
                        Xg_v, val["target_goals"], n_classes=2)
     print(f"  [LightGBM] val acc={accuracy_score(val['target_goals'], lgb_g.predict(Xg_v)):.4f}")
+    lgb_g = refit_on_everything(lgb_g, _feats(train_df), train_df["target_goals"], sw_g_full, "LightGBM")
 
     ens_g = SoftVoteEnsemble([xgb_g, lgb_g], [1, 1])
     cal_g = _calibrate(ens_g, Xg_c, cal_df["target_goals"], n_classes=2)
@@ -305,10 +338,12 @@ def train(data_dir: str | Path = DATA_DIR, models_dir: str | Path = MODELS_DIR) 
     xgb_b = _train_xgb(Xg_i, inner["target_btts"], sw_g,
                         Xg_v, val["target_btts"], n_classes=2)
     print(f"  [XGBoost] val acc={accuracy_score(val['target_btts'], xgb_b.predict(Xg_v)):.4f}")
+    xgb_b = refit_on_everything(xgb_b, _feats(train_df), train_df["target_btts"], sw_g_full, "XGBoost")
 
     lgb_b = _train_lgb(Xg_i, inner["target_btts"], sw_g,
                        Xg_v, val["target_btts"], n_classes=2)
     print(f"  [LightGBM] val acc={accuracy_score(val['target_btts'], lgb_b.predict(Xg_v)):.4f}")
+    lgb_b = refit_on_everything(lgb_b, _feats(train_df), train_df["target_btts"], sw_g_full, "LightGBM")
 
     ens_b = SoftVoteEnsemble([xgb_b, lgb_b], [1, 1])
     cal_b = _calibrate(ens_b, Xg_c, cal_df["target_btts"], n_classes=2)
@@ -330,12 +365,20 @@ def train(data_dir: str | Path = DATA_DIR, models_dir: str | Path = MODELS_DIR) 
 
     xgb_d = _train_xgb(Xd_i, target_draw, sw_d_bal, Xd_v, val_draw, n_classes=2, n_estimators=300)
     lgb_d = _train_lgb(Xd_i, target_draw, sw_d_bal, Xd_v, val_draw, n_classes=2)
+    val_pred_d = SoftVoteEnsemble([xgb_d, lgb_d], [1, 1]).predict(Xd_v)   # before the refit sees val
+    full_draw = (train_df["target_result"] == 1).astype(int)
+    sw_d_full = (_time_decay_weights(train_df["date"])
+                 * train_df["match_weight"].fillna(1.0).to_numpy()
+                 * compute_sample_weight("balanced", full_draw))
+    sw_d_full = sw_d_full / sw_d_full.mean()
+    xgb_d = refit_on_everything(xgb_d, _draw_feats(train_df), full_draw, sw_d_full, "XGBoost draw")
+    lgb_d = refit_on_everything(lgb_d, _draw_feats(train_df), full_draw, sw_d_full, "LightGBM draw")
     ens_d = SoftVoteEnsemble([xgb_d, lgb_d], [1, 1])
 
     draw_raw_cal  = ens_d.predict_proba(Xd_c)[:, 1]
     actual_draw_rate = float(cal_draw.mean())
-    print(f"  [draw_clf] val acc={accuracy_score(val_draw, ens_d.predict(Xd_v)):.4f}"
-          f"  draw_recall={accuracy_score(val_draw[val_draw==1], ens_d.predict(Xd_v)[val_draw==1]):.3f}"
+    print(f"  [draw_clf] val acc={accuracy_score(val_draw, val_pred_d):.4f}"
+          f"  draw_recall={accuracy_score(val_draw[val_draw==1], val_pred_d[val_draw==1]):.3f}"
           f"  actual_draw_rate={actual_draw_rate:.3f}")
 
     # Calibrate draw classifier on cal set
@@ -462,7 +505,10 @@ def train(data_dir: str | Path = DATA_DIR, models_dir: str | Path = MODELS_DIR) 
         "n_train":               int(len(train_df)),
         "n_cal":                 int(len(cal_df)),
         "n_test":                int(len(test_df)),
-        "test_start":            str(TEST_START.date()),
+        "cal_start":             str(cal_start.date()),
+        "test_start":            str(test_start.date()),
+        "test_end":              str(test_end.date()),
+        "trees_fitted_through":  str(train_df["date"].max().date()),
         # Result model (blended)
         "result_accuracy":       float(blended_acc),
         "result_home_recall":    float(_result_report["H"]["recall"]),

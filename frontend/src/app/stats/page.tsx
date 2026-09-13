@@ -253,8 +253,15 @@ export default async function StatsPage({ searchParams }: PageProps) {
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
               <StatCard label={t("stats.totalDraws")}      value={ns.draw_stats.total_draws}     sub={t("stats.actualDraws")} accent="gray" />
               <StatCard label={t("stats.drawPredictions")} value={ns.draw_stats.predicted_draws}  sub={t("stats.predictedAsDraw")} accent="gray" />
-              <StatCard label={t("stats.drawRecall")}      value={pct(ns.draw_stats.recall)}     sub={t("stats.ofActualDrawsCaught")} accent={accentForAccuracy(ns.draw_stats.recall)} />
-              <StatCard label={t("stats.drawPrecision")}   value={pct(ns.draw_stats.precision)}  sub={t("stats.ofDrawPredsCorrect")} accent={accentForAccuracy(ns.draw_stats.precision)} />
+              {/* Neutral, each beside its baseline — see the club cards below. */}
+              <StatCard label={t("stats.drawRecall")}      value={pct(ns.draw_stats.recall)}
+                sub={vsBaseline(ns.draw_stats.recall, ns.draw_stats.predicted_draws / (ns.total || 1),
+                                t("stats.baseline.drawCallRate")) ?? t("stats.ofActualDrawsCaught")}
+                accent="gray" />
+              <StatCard label={t("stats.drawPrecision")}   value={pct(ns.draw_stats.precision)}
+                sub={vsBaseline(ns.draw_stats.precision, ns.draw_stats.total_draws / (ns.total || 1),
+                                t("stats.baseline.drawRate")) ?? t("stats.ofDrawPredsCorrect")}
+                accent="gray" />
             </div>
           </section>
         )}
@@ -745,17 +752,24 @@ export default async function StatsPage({ searchParams }: PageProps) {
             sub={t("stats.drawPredictionsSub")}
             accent="gray"
           />
+          {/* Neutral, each beside its baseline. Recall against the share of
+              matches called a draw — a random caller at that rate catches
+              exactly that share — and precision against the base draw rate.
+              On the 1×2 accuracy scale (green from 57%) both were red for
+              ever, whatever the model did. */}
           <StatCard
             label={t("stats.drawRecall")}
             value={pct(draw.recall)}
-            sub={t("stats.drawRecallSub")}
-            accent={accentForAccuracy(draw.recall)}
+            sub={vsBaseline(draw.recall, draw.predicted_draws / (all.total || 1),
+                            t("stats.baseline.drawCallRate")) ?? t("stats.drawRecallSub")}
+            accent="gray"
           />
           <StatCard
             label={t("stats.drawPrecision")}
             value={pct(draw.precision)}
-            sub={t("stats.drawPrecisionSub")}
-            accent={accentForAccuracy(draw.precision)}
+            sub={vsBaseline(draw.precision, draw.total_draws / (all.total || 1),
+                            t("stats.baseline.drawRate")) ?? t("stats.drawPrecisionSub")}
+            accent="gray"
           />
         </div>
         <p className="text-xs text-chalk-3 mt-2">

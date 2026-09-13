@@ -599,6 +599,29 @@ _METRICS_PATH = (
 )
 
 
+_BLEND_PATH = _METRICS_PATH.parent / "blend.json"
+
+
+def _served_path_report() -> "dict[str, Any] | None":
+    """What the site actually serves, measured: calibrated model + draw blend +
+    Elo blend (scripts/fit_national_blend.py), on the holdout the blend was not
+    selected on. metrics.json describes the model BEFORE the Elo blend, which no
+    visitor is ever shown; this is the system they are."""
+    try:
+        with open(_BLEND_PATH) as f:
+            b = json.load(f)
+    except Exception:
+        return None
+    fitted = (b.get("test_report") or {}).get("fitted")
+    if not fitted:
+        return None
+    return {**fitted,
+            "window":           b.get("test_window"),
+            "actual_draw_rate": b.get("actual_test_draw_rate"),
+            "elo_blend_w":      b.get("elo_blend_w"),
+            "fitted_at":        b.get("fitted_at")}
+
+
 @router.get("/training-metrics")
 def training_metrics() -> dict[str, Any]:
     """Return national model training metrics from metrics.json, or {available: false}."""
@@ -608,6 +631,7 @@ def training_metrics() -> dict[str, Any]:
         with open(_METRICS_PATH) as f:
             data = json.load(f)
         data["available"] = True
+        data["served"] = _served_path_report()
         return data
     except Exception:
         return {"available": False}

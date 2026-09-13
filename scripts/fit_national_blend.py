@@ -45,8 +45,7 @@ sys.path.insert(0, str(ROOT))
 
 from backend.app.ml.national.features import HOME_ADV, elo_three_way
 from backend.app.ml.national.train import (
-    CAL_START, TEST_START, TEST_END,
-    prepare_data, blend_draw_probability,
+    blend_draw_probability, national_windows, prepare_data,
 )
 from backend.app.ml.national.features import NATIONAL_FEATURE_COLS, DRAW_FEATURE_COLS
 
@@ -129,17 +128,18 @@ def main() -> None:
     df = prepare_data(DATA_DIR)
     # target_result encoding: 0=H, 1=D, 2=A (same as training)
     #
-    # Window protocol: the 2023 cal season (used to fit the isotonic
-    # calibrators) proved unrepresentative for blend selection — it prefers
-    # w=0 while every later window strongly prefers the blend. So the blend is
-    # selected on 2024-01→2025-07 (out-of-sample for BOTH the model and the
-    # calibrators, and disjoint from their fit windows) and the final report
-    # comes from the untouched 2025-07→TEST_END holdout.
-    SELECT_END = pd.Timestamp("2025-07-01")
-    cal_df  = df[(df["date"] >= TEST_START) & (df["date"] < SELECT_END)].reset_index(drop=True)
-    test_df = df[(df["date"] >= SELECT_END) & (df["date"] < TEST_END)].reset_index(drop=True)
-    print(f"  blend-selection rows (2024-01→2025-07): {len(cal_df):,}   "
-          f"final holdout rows (2025-07→{TEST_END.date()}): {len(test_df):,}")
+    # Window protocol: the blend is selected on data out of sample for BOTH
+    # the trees and the calibrators — the trainer's own test window — and
+    # reported on a disjoint later part of it. The window is the trainer's,
+    # computed by the same function from the same data, so the two cannot
+    # drift apart; they were literals (select 2024-01→2025-07, report to
+    # 2026-06) that stopped admitting new results in June.
+    _, test_start, test_end = national_windows(df["date"].max())
+    select_end = (test_start + (test_end - test_start) / 2).normalize()
+    cal_df  = df[(df["date"] >= test_start) & (df["date"] < select_end)].reset_index(drop=True)
+    test_df = df[(df["date"] >= select_end) & (df["date"] < test_end)].reset_index(drop=True)
+    print(f"  blend-selection rows ({test_start.date()}→{select_end.date()}): {len(cal_df):,}   "
+          f"final holdout rows ({select_end.date()}→{test_end.date()}): {len(test_df):,}")
 
     models = _load_models()
     print("Computing calibrated model probabilities (pre-Elo serve path) …")
@@ -238,8 +238,8 @@ def main() -> None:
             **{k: best[k] for k in ("elo_blend_w", "scale", "draw_base", "draw_decay")},
             "fitted_at":    datetime.now(timezone.utc).isoformat(),
             "cal_log_loss": best["cal_log_loss"],
-            "cal_window":   [str(TEST_START.date()), "2025-07-01"],
-            "test_window":  ["2025-07-01", str(TEST_END.date())],
+            "cal_window":   [str(test_start.date()), str(select_end.date())],
+            "test_window":  [str(select_end.date()), str(test_end.date())],
             "test_report":  report,
             "per_w_curve":  {str(k): v for k, v in per_w.items()},
             "actual_test_draw_rate": actual_draw,

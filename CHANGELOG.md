@@ -8,6 +8,34 @@ History before this file was introduced lives in `git log`.
 
 ### Fixed
 
+- **The national models never learned from a match played after 2022.** Their
+  windows were literals — calibration 2023, test from January 2024 to June
+  2026 — so a model retrained every morning fit its trees on matches before
+  2023 only. Early stopping then took the newest 15% of those and never gave
+  them back, so the trees shipped fitted on data ending in mid-2018. LightGBM
+  was handed the early-stopping fold with no callback and always trained its
+  full 500 trees. The windows now roll with the data: the last twelve months
+  test, the twelve before them calibrate, the trees fit everything older.
+  Every booster is refit on its whole window at the tree count early stopping
+  found (one helper, shared with the club trainer), LightGBM stops early (28 to
+  321 trees instead of 500), and the Elo-blend fit selects and reports on the
+  trainer's own test window instead of dates that stopped admitting results in
+  June. Measured before landing on 1,019 internationals from September 2025 to
+  August 2026, which neither version saw: result log-loss 0.851 → 0.842 (95%
+  CI of the change −0.020 to +0.003), goals 0.682 → 0.671 (−0.024 to −0.0003),
+  BTTS 0.680 → 0.668 (−0.020 to −0.003). Argmax accuracy moved 61.7% → 61.1%,
+  within noise.
+- **The /stats draw cards were red whatever the model did.** Draw recall and
+  precision were coloured on the 1×2 accuracy scale (green from 57%), which no
+  draw statistic reaches. Both cards are neutral now, each beside its baseline:
+  recall against the share of matches called a draw — what a random caller at
+  that rate would catch — and precision against the base draw rate.
+- **The admin training page described a national model no visitor is shown.**
+  It printed the trainer's test metrics: the model before the Elo blend that
+  every served national probability passes through.
+  `/national/training-metrics` now also returns the served path's holdout
+  numbers from `blend.json` (accuracy, log-loss, draws called against the
+  actual draw rate), and the page leads with them, above the pre-blend tables.
 - **An awarded match was graded as if it had been played, and an abandoned
   one stayed open for ever.** API-Football closes a fixture four ways that are
   not a played match — awarded, walkover, cancelled, abandoned. The club

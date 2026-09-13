@@ -265,7 +265,11 @@ function NationalMetricsCard({ m }: { m: NationalTrainingMetrics }) {
           <span className="ml-2 text-xs bg-win/15 text-chalk px-2 py-0.5 rounded-full">national</span>
         </div>
         {m.test_start && (
-          <div className="text-xs text-chalk-3">test from {m.test_start}</div>
+          <div className="text-xs text-chalk-3">
+            {m.trees_fitted_through && <>trees through {m.trees_fitted_through} · </>}
+            {m.cal_start && <>cal from {m.cal_start} · </>}
+            test {m.test_start}{m.test_end ? ` → ${m.test_end}` : ""}
+          </div>
         )}
       </div>
 
@@ -283,9 +287,42 @@ function NationalMetricsCard({ m }: { m: NationalTrainingMetrics }) {
         ))}
       </div>
 
+      {/* What visitors are served: model + draw blend + Elo blend, measured on
+          the holdout the blend was not selected on (blend.json). The tables
+          below describe the model before the Elo blend — no visitor sees it. */}
+      {m.served && (
+        <div>
+          <p className="text-xs font-semibold text-chalk-2 uppercase tracking-wider mb-2">
+            Served 1×2 (model + Elo blend) — holdout
+            {m.served.window ? ` ${m.served.window[0]} → ${m.served.window[1]}` : ""}
+          </p>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-center text-sm">
+            <div className="rounded-lg bg-ink-700 p-2">
+              <p className="text-xs text-chalk-3 mb-1">Accuracy</p>
+              <span className="text-chalk">{pct(m.served.accuracy)}</span>
+            </div>
+            <div className="rounded-lg bg-ink-700 p-2">
+              <p className="text-xs text-chalk-3 mb-1">Log-loss</p>
+              <span className="text-chalk">{num(m.served.log_loss, 4)}</span>
+            </div>
+            <div className="rounded-lg bg-ink-700 p-2">
+              <p className="text-xs text-chalk-3 mb-1">Draws called</p>
+              <span className="text-chalk-2">
+                {pct(m.served.draw_share_predicted)}
+                {m.served.actual_draw_rate != null ? ` of ${pct(m.served.actual_draw_rate)} actual` : ""}
+              </span>
+            </div>
+            <div className="rounded-lg bg-ink-700 p-2">
+              <p className="text-xs text-chalk-3 mb-1">Matches</p>
+              <span className="text-chalk-2">{m.served.n.toLocaleString()}</span>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Result model */}
       <div>
-        <p className="text-xs font-semibold text-chalk-2 uppercase tracking-wider mb-2">Result model (H/D/A)</p>
+        <p className="text-xs font-semibold text-chalk-2 uppercase tracking-wider mb-2">Result model before the Elo blend (H/D/A)</p>
         <div className="overflow-x-auto">
           <table className="w-full text-sm text-center">
             <thead>

@@ -887,6 +887,22 @@ export interface NationalTrainingMetrics {
   n_cal?: number;
   n_test?: number;
   test_start?: string;
+  cal_start?: string;
+  test_end?: string;
+  trees_fitted_through?: string;
+  /** Measured on what visitors are served (model + draw blend + Elo blend), on
+   *  the blend's untouched holdout — blend.json. Everything else in this object
+   *  describes the model before the Elo blend. */
+  served?: {
+    accuracy: number;
+    log_loss: number;
+    draw_share_predicted: number;
+    n: number;
+    window?: [string, string] | null;
+    actual_draw_rate?: number | null;
+    elo_blend_w?: number | null;
+    fitted_at?: string | null;
+  } | null;
   result_accuracy?: number;
   result_home_recall?: number;
   result_draw_recall?: number;
