@@ -8,6 +8,18 @@ History before this file was introduced lives in `git log`.
 
 ### Fixed
 
+- **A dead API went unnoticed, and nothing could restart it.** The kernel log
+  holds four out-of-memory kills of the backend's uvicorn worker today, each at
+  about 7.5 GB in a 7.75 GB Docker VM. Uvicorn's `--reload` supervisor survives
+  its worker and spawns a new one only when a `.py` file changes, so the
+  container stayed "Up" and every page rendered its empty state with HTTP 200.
+  Three of the kills were masked by code edits that happened to follow them;
+  the fourth left the site without data from 14:12 to 14:22 until a manual
+  restart. The watchdog probed only the frontend, and its `docker compose up
+  -d` does nothing to a running container. It now probes `/health` itself,
+  and after two failed ticks in a row restarts the backend container — unless
+  a scheduled job holds its lock, because a restart kills every
+  `docker compose exec` step in flight; then it alerts and retries next tick.
 - **The national models never learned from a match played after 2022.** Their
   windows were literals — calibration 2023, test from January 2024 to June
   2026 — so a model retrained every morning fit its trees on matches before

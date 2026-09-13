@@ -145,6 +145,60 @@ if [ "$(cat "$AF_PENDING" 2>/dev/null)" = "$(date '+%Y-%m-%d')" ] \
     fi
 fi
 
+# ── API liveness ──────────────────────────────────────────────────────────────
+# The frontend probe below cannot see a dead API. On 2026-09-13 the backend's
+# uvicorn worker died while its --reload supervisor lived on: the container
+# stayed "Up", every page rendered its empty state with HTTP 200, and
+# `docker compose up -d` had nothing to restart. The site served no data for
+# five minutes, until someone restarted it by hand.
+#
+# So probe the API itself. Two failed ticks in a row (five minutes and more)
+# restart the backend container — unless a scheduled job is running inside it:
+# a restart kills every `docker compose exec` step in flight, a retrain among
+# them. Then say so, and try again on the next tick.
+BACKEND_URL="${WATCHDOG_BACKEND_URL:-http://localhost:8000/health}"
+BACKEND_STRIKES="$LOG_DIR/.backend-strikes"
+bcode=$(curl -s -o /dev/null -w "%{http_code}" --max-time 10 "$BACKEND_URL" 2>/dev/null)
+bcode=${bcode:-000}
+if [ "$bcode" = "200" ]; then
+    rm -f "$BACKEND_STRIKES"
+elif docker info >/dev/null 2>&1 && [ -n "$(docker compose ps -q backend 2>/dev/null)" ]; then
+    strikes=$(( $(cat "$BACKEND_STRIKES" 2>/dev/null || echo 0) + 1 ))
+    echo "$strikes" > "$BACKEND_STRIKES"
+    echo "── $(date '+%Y-%m-%d %H:%M:%S') API not answering (HTTP $bcode), strike $strikes" >> "$LOG"
+    if [ "$strikes" -ge 2 ]; then
+        busy=""
+        for job in run_daily run_prematch run_results_poll run_odds_poll run_warmup; do
+            lock_held "$job" && busy="$job"
+        done
+        if [ -n "$busy" ]; then
+            echo "   $busy is running inside the container — not restarting under it" >> "$LOG"
+            [ "$strikes" -eq 2 ] && send_alert "Football Predictor: API down" \
+                "Το API δεν απαντά εδώ και 5+ λεπτά, αλλά τρέχει το $busy μέσα στο container — το restart περιμένει να τελειώσει." \
+                high "rotating_light" "watchdog.log"
+        else
+            echo "   restarting backend" >> "$LOG"
+            docker compose restart backend >> "$LOG" 2>&1
+            # The worker needs ~40 s to load its history before it answers.
+            bcode=$(curl -s -o /dev/null -w "%{http_code}" --retry 60 --retry-delay 3 \
+                        --retry-connrefused --retry-all-errors --max-time 5 "$BACKEND_URL" 2>/dev/null)
+            bcode=${bcode:-000}
+            if [ "$bcode" = "200" ]; then
+                rm -f "$BACKEND_STRIKES"
+                echo "   API recovered at $(date '+%H:%M:%S')" >> "$LOG"
+                send_alert "Football Predictor: API recovered" \
+                    "Το API είχε σταματήσει να απαντά και επανήλθε αυτόματα με restart του backend." \
+                    default "warning" "watchdog.log"
+            else
+                echo "   API STILL DOWN (HTTP $bcode) after restart" >> "$LOG"
+                send_alert "Football Predictor: API down" \
+                    "Το API δεν απαντά (HTTP $bcode) ούτε μετά από restart του backend — χρειάζεται έλεγχος." \
+                    urgent "rotating_light" "watchdog.log"
+            fi
+        fi
+    fi
+fi
+
 # Healthy? Then stay quiet — this runs 288 times a day.
 # curl already prints "000" when it can't connect, and exits non-zero doing so —
 # a `|| echo 000` fallback would concatenate into "000000".
