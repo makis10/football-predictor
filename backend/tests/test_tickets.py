@@ -182,9 +182,11 @@ def test_never_two_legs_from_the_same_match():
         assert len(ids) == len(set(ids)), f"{ticket.profile} reuses a fixture"
 
 
-def _named(match_id, home, away, league="GreekSL", market="1", prob=0.60, odds=1.70):
+def _named(match_id, home, away, league="GreekSL", market="1", prob=0.60, odds=1.70,
+           kickoff=None):
     return Leg(match_id=match_id, market=market, prob=prob, odds=odds,
-               estimated=False, league=league, home_team=home, away_team=away)
+               estimated=False, league=league, home_team=home, away_team=away,
+               kickoff=kickoff)
 
 
 def test_one_match_stored_under_two_rows_still_yields_one_leg():
@@ -220,9 +222,13 @@ def test_the_same_tie_is_one_fixture_however_it_is_written():
            tie_key(_named(2, "Levadeiakos", "PAOK"))
     assert tie_key(_named(1, "PAOK", "Levadeiakos")) != \
            tie_key(_named(2, "PAOK", "Panathinaikos"))
-    # Same clubs, different competition, is a different match.
-    assert tie_key(_named(1, "PAOK", "Levadeiakos")) != \
-           tie_key(_named(2, "PAOK", "Levadeiakos", league="GreekCup"))
+    # The two legs of a home-and-away tie are two matches, a week apart.
+    assert tie_key(_named(1, "PAOK", "Levadeiakos", kickoff="2026-07-22T19:00:00")) != \
+           tie_key(_named(2, "Levadeiakos", "PAOK", kickoff="2026-07-29T19:00:00"))
+    # One match two feeds file under different competition names is still one.
+    assert tie_key(_named(1, "PAOK", "Levadeiakos", kickoff="2026-08-23T18:00:00")) == \
+           tie_key(_named(2, "PAOK", "Levadeiakos", league="GreekCup",
+                          kickoff="2026-08-23T18:00:00"))
 
 
 def test_legs_without_team_names_are_never_merged():

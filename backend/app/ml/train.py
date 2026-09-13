@@ -124,9 +124,13 @@ MODELS_DIR = os.path.join(os.path.dirname(__file__), "..", "..", "data", "models
 # costs the trees a season for no measured return.
 CAL_SEASONS = 1
 
-# A season only counts as complete once it has actually finished, so the test
-# window is never a handful of August fixtures.
-TEST_SEASON_MATURITY_MONTHS = 5
+# A season only counts as complete once it has actually finished — when the
+# next one starts — so the test window is never a half-played season. At 5
+# months the season in progress was promoted on 1 December: from 2026-12-01 to
+# 2027-07-01 every retrain would have reported metrics on the first half of
+# 2026/27 (~2,900 rows, cold-start form and league-position features) under the
+# label "the newest complete season".
+TEST_SEASON_MATURITY_MONTHS = 12
 
 
 def _season_start(ts: pd.Timestamp) -> pd.Timestamp:

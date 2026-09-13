@@ -167,15 +167,17 @@ def test_the_season_rule_actually_advances():
     assert _season_start(pd.Timestamp("2026-06-30")) == pd.Timestamp("2025-07-01")
     assert _season_start(pd.Timestamp("2026-07-01")) == pd.Timestamp("2026-07-01")
 
-    # Immature season → the latest COMPLETE one is still the previous.
+    # A season in progress is never "complete" — not in September, and not in
+    # December either: at 5 months the rule promoted 2026/27 on 2026-12-01 and
+    # would have reported half a season as the newest complete one.
     assert latest_complete_on("2026-09-04") == pd.Timestamp("2025-07-01")
-    assert latest_complete_on("2026-11-30") == pd.Timestamp("2025-07-01")
-    # …and it steps forward on its own, without anyone editing train.py.
-    assert latest_complete_on("2026-12-01") == pd.Timestamp("2026-07-01")
-    assert latest_complete_on("2027-06-30") == pd.Timestamp("2026-07-01")
-    assert latest_complete_on("2027-12-01") == pd.Timestamp("2027-07-01")
+    assert latest_complete_on("2026-12-01") == pd.Timestamp("2025-07-01")
+    assert latest_complete_on("2027-06-30") == pd.Timestamp("2025-07-01")
+    # …and it steps forward on its own, the day the next season starts.
+    assert latest_complete_on("2027-07-01") == pd.Timestamp("2026-07-01")
+    assert latest_complete_on("2027-12-01") == pd.Timestamp("2026-07-01")
     # A year of literals would have frozen here; the rule has moved twice.
-    assert latest_complete_on("2028-12-01") == pd.Timestamp("2028-07-01")
+    assert latest_complete_on("2028-07-01") == pd.Timestamp("2027-07-01")
 
     # And the windows derived from it stay in the documented order — trees,
     # calibration, test — with the TEST window last so it stays a forward

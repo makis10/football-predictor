@@ -391,13 +391,20 @@ PROFILES: tuple[Profile, ...] = (
 MAX_TICKETS_PER_MATCH = 2
 
 
-def tie_key(leg: Leg) -> tuple[str, frozenset]:
+def tie_key(leg: Leg) -> tuple[frozenset, str]:
     """What makes two legs the same real match.
 
-    The league plus the unordered pair of clubs, lightly normalised. Unordered
+    The unordered pair of clubs, lightly normalised, on the same day. Unordered
     because a fixture written before the venue was settled and again afterwards
     differs only in which side is listed at home — the same reason
     scripts/dedupe_fixtures.py keys on a frozenset.
+
+    The day, because the two legs of a home-and-away tie are two matches: keyed
+    on the pair alone, UEFA qualifying legs a week apart inside the 7-day
+    horizon collapsed into one tie — the second dropped from every slip, or
+    pinned to the market chosen for the first, which tips both sides. Not the
+    league: two feeds that disagree about a competition's name must not split
+    one match in two.
 
     Falls back to the match id when the leg carries no team names (the pure-unit
     tests construct Legs that way), so two anonymous legs are never merged.
@@ -405,10 +412,11 @@ def tie_key(leg: Leg) -> tuple[str, frozenset]:
     def norm(s: str) -> str:
         return "".join(ch for ch in (s or "").lower() if ch.isalnum())
 
+    day = (leg.kickoff or "")[:10]
     home, away = norm(leg.home_team), norm(leg.away_team)
     if not home and not away:
-        return (leg.league, frozenset((f"#{leg.match_id}",)))
-    return (leg.league, frozenset((home, away)))
+        return (frozenset((f"#{leg.match_id}",)), day)
+    return (frozenset((home, away)), day)
 # Estimated-price legs are allowed but must stay a minority: a slip whose
 # headline payout is mostly our own arithmetic is not a slip anyone can place.
 #
