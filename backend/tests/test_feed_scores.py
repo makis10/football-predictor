@@ -62,6 +62,19 @@ def test_football_data_regular_reads_full_time():
     assert football_data_goals(_fd("REGULAR", (None, None))) == (None, None)
 
 
+def test_the_repair_only_rewrites_scores_from_after_the_90th_minute():
+    """Goals are only added after 90 minutes. repair_extra_time_scores rewrites a
+    stored score at or above the 90-minute one on both sides, and nothing else —
+    a score below it on either side is a different disagreement."""
+    from scripts.repair_extra_time_scores import _after_90
+
+    assert _after_90((2, 1), (1, 1))          # extra-time winner
+    assert _after_90((5, 4), (1, 1))          # football-data fullTime + shootout
+    assert _after_90((2, 2), (1, 1))          # one per side, none in extra time
+    assert not _after_90((1, 1), (1, 1))      # already right
+    assert not _after_90((0, 2), (1, 1))      # below on one side: not ours to fix
+
+
 # Every writer of club results. National writers are deliberately absent: the
 # national model's target includes extra time (martj42), see _feed_scores.
 CLUB_RESULT_WRITERS = [

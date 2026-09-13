@@ -32,6 +32,11 @@ History before this file was introduced lives in `git log`.
   AET/PEN, `regularTime` when the duration is not REGULAR) through one helper,
   `scripts/_feed_scores.py`. National results keep the score after extra time:
   that is what the national model is trained on and graded against.
+  `scripts/repair_extra_time_scores.py` re-scored the 27 stored ties it found
+  (CL/EL/ECL 2025–26 and 2026–27 against API-Football's AET/PEN list), the
+  2026 Champions League final among them — stored 5-4, the shootout folded into
+  football-data.org's fullTime; 1-1 at 90 minutes. Two ticket legs changed
+  verdict; no ticket did.
 - **The correct-score grid made 0-0 the most likely score on one fixture in
   five.** `fit_lambdas_to_probs` met four headline targets exactly — Over 2.5,
   supremacy, BTTS and draw — with four free knobs and no preference for a
