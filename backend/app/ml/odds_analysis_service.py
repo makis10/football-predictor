@@ -250,7 +250,10 @@ def _fetch_national_games_cached(sport_key: str) -> list:
         log.warning(f"[odds] National fetch failed for {sport_key}: {e}")
         games = []
 
-    cache_set(cache_key, games, LEAGUE_ODDS_TTL)
+    # A failed or empty fetch is cached for minutes, as the club path does, not
+    # for six hours: one timeout during an international break used to blank
+    # the bookmaker panel, every EV and every suggestion for the tournament.
+    cache_set(cache_key, games, LEAGUE_ODDS_TTL if games else EMPTY_ODDS_TTL)
     return games
 
 
@@ -1446,11 +1449,14 @@ def _fetch_event_btts(event_id: str, sport_key: str) -> dict:
 
     result: dict = {}
     if avg_yes and avg_no:
+        from backend.app.ml.predict import _plausible_book
+
         p_yes = 1.0 / avg_yes
         p_no  = 1.0 / avg_no
         total = p_yes + p_no
-        result["fair_btts_yes"] = round(p_yes / total, 4)
-        result["fair_btts_no"]  = round(p_no  / total, 4)
+        if _plausible_book(total):         # the whole-book rule _parse_game_odds uses
+            result["fair_btts_yes"] = round(p_yes / total, 4)
+            result["fair_btts_no"]  = round(p_no  / total, 4)
         result["raw_btts_yes"]  = round(avg_yes, 2)
         result["raw_btts_no"]   = round(avg_no,  2)
     elif avg_yes:
@@ -1615,18 +1621,26 @@ def _parse_game_odds(game: dict) -> dict:
     h_p, d_p, a_p = _prob(avg_h), _prob(avg_d), _prob(avg_a)
     o_p, u_p       = _prob(avg_o), _prob(avg_u)
 
-    # Remove vig — normalise to sum = 1
-    fair: dict = {}
-    res_total = (h_p or 0) + (d_p or 0) + (a_p or 0)
-    if res_total > 0:
-        fair["home_win"] = round(h_p / res_total, 4) if h_p else None
-        fair["draw"]     = round(d_p / res_total, 4) if d_p else None
-        fair["away_win"] = round(a_p / res_total, 4) if a_p else None
+    # Remove vig — normalise to sum = 1. Only a WHOLE book can be de-vigged:
+    # with a side missing (Over quoted, no Under; a 1×2 with no draw) the sum is
+    # the quoted side's own probability and the division returns exactly 1.0 —
+    # "the market gives this a 100% chance", on the Bookmaker Comparison card
+    # and through the value gate's minimum-probability filter. A book whose
+    # implied probabilities fall outside [1.0, 1.5] is a data error, not a
+    # margin. Either way the fair entries stay absent; the raw prices remain.
+    from backend.app.ml.predict import _plausible_book
 
-    g_total = (o_p or 0) + (u_p or 0)
-    if g_total > 0:
-        fair["over_2_5"]  = round(o_p / g_total, 4) if o_p else None
-        fair["under_2_5"] = round(u_p / g_total, 4) if u_p else None
+    fair: dict = {}
+    if h_p and d_p and a_p and _plausible_book(h_p + d_p + a_p):
+        res_total = h_p + d_p + a_p
+        fair["home_win"] = round(h_p / res_total, 4)
+        fair["draw"]     = round(d_p / res_total, 4)
+        fair["away_win"] = round(a_p / res_total, 4)
+
+    if o_p and u_p and _plausible_book(o_p + u_p):
+        g_total = o_p + u_p
+        fair["over_2_5"]  = round(o_p / g_total, 4)
+        fair["under_2_5"] = round(u_p / g_total, 4)
 
     raw: dict = {}
     if avg_h: raw["home_win"]  = round(avg_h, 2)
@@ -1639,10 +1653,10 @@ def _parse_game_odds(game: dict) -> dict:
     avg_bn = _avg(btts_no)
     by_p, bn_p = _prob(avg_by), _prob(avg_bn)
 
-    btts_total = (by_p or 0) + (bn_p or 0)
-    if btts_total > 0:
-        fair["btts_yes"] = round(by_p / btts_total, 4) if by_p else None
-        fair["btts_no"]  = round(bn_p / btts_total, 4) if bn_p else None
+    if by_p and bn_p and _plausible_book(by_p + bn_p):
+        btts_total = by_p + bn_p
+        fair["btts_yes"] = round(by_p / btts_total, 4)
+        fair["btts_no"]  = round(bn_p / btts_total, 4)
 
     if avg_by: raw["btts_yes"] = round(avg_by, 2)
     if avg_bn: raw["btts_no"]  = round(avg_bn, 2)

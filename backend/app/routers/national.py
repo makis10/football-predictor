@@ -329,11 +329,22 @@ def get_national_analysis(
     if not pred:
         raise HTTPException(status_code=404, detail="Prediction not found")
 
+    # The EV gate compares OUR probability with the market's price, so it reads
+    # the unanchored raw_* twins, as the club endpoint does. Fed the served
+    # columns, an anchored prediction (0.85 market + 0.15 model) would be
+    # judged against that same market: every EV collapses to about minus the
+    # overround and the page silently stops suggesting anything. National
+    # predictions are served unanchored today, so raw == served; this keeps
+    # the gate right the day that changes. BTTS has no raw twin: it is never
+    # anchored.
+    def _raw(raw, served):
+        return round(raw if raw is not None else served, 4)
+
     model_probs = {
-        "home_win": round(pred.home_win_prob, 4),
-        "draw":     round(pred.draw_prob,     4),
-        "away_win": round(pred.away_win_prob,  4),
-        "over_2_5": round(pred.over_2_5_prob,  4),
+        "home_win": _raw(pred.raw_home_prob, pred.home_win_prob),
+        "draw":     _raw(pred.raw_draw_prob, pred.draw_prob),
+        "away_win": _raw(pred.raw_away_prob, pred.away_win_prob),
+        "over_2_5": _raw(pred.raw_over_prob, pred.over_2_5_prob),
         "btts":     round(pred.btts_prob, 4) if pred.btts_prob is not None else None,
     }
 

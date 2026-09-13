@@ -111,6 +111,20 @@ History before this file was introduced lives in `git log`.
   survivor.** The R16 bracket reversed the play-off winners, so seed 1 met the
   9-v-24 winner — the opposite of UEFA's format — and finishing first was
   priced as the hardest road. Seed 1 now meets the 16-v-17 winner.
+- **A one-sided bookmaker market was published as a 100% probability.**
+  `_parse_game_odds` de-vigged by summing whichever sides were quoted, so an
+  Over 2.5 price with no Under — or a 1×2 without a draw — divided one side by
+  itself: the Bookmaker Comparison card read "market: 100%", and the value
+  gate's minimum-probability filter passed it trivially. A de-vig now needs the
+  whole book, with an overround in [1.0, 1.5]; otherwise the fair probabilities
+  stay absent and only the raw price is shown. The BTTS event fetch takes the
+  same plausibility check.
+- **A failed national odds fetch was cached for six hours** as "no market",
+  blanking the bookmaker panel and every EV for a whole tournament after one
+  timeout. It is now cached for two minutes, like the club path.
+- **The national value gate read the served probabilities**, where the club
+  gate reads the unanchored raw twins. National predictions are unanchored
+  today, so nothing moved; the gate stays correct if they ever are anchored.
 
 ## 2026-09-12
 
