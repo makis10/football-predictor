@@ -35,6 +35,22 @@ def test_null_side_is_named_from_the_fixture_listing():
         ("Chapecoense-SC", "Internacional"), ("Internacional", "Chapecoense-SC")]
 
 
+def test_null_side_with_a_wrong_id_takes_the_listing_team_left_over():
+    # What API-Football actually sent for 1492373: id 22722, not Chapecoense's 132.
+    rows = _parse_players([_block(22722, None, 10), _block(119, "Internacional", 20)],
+                          1492373, "2026-09-12", 71,
+                          names_by_id={132: "Chapecoense-sc", 119: "Internacional"})
+    assert [(r["team"], r["opponent"]) for r in rows] == [
+        ("Chapecoense-sc", "Internacional"), ("Internacional", "Chapecoense-sc")]
+
+
+def test_no_guess_when_the_named_side_is_not_in_the_listing():
+    rows = _parse_players([_block(22722, None, 10), _block(119, "Internacional", 20)],
+                          1492373, "2026-09-12", 71,
+                          names_by_id={1: "Team A", 2: "Team B"})
+    assert [r["team"] for r in rows] == ["Internacional"]
+
+
 def test_unresolvable_side_is_dropped_never_stored_as_null():
     rows = _parse_players([_block(1, None, 10), _block(2, "Internacional", 20)],
                           1492373, "2026-09-12", 71)

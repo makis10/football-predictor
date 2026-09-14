@@ -153,6 +153,14 @@ def _parse_players(resp: list, fixture_id: int, match_date: str, league_id: int,
 
     rows = []
     teams = [_side(b) for b in resp]
+    # The id can be wrong as well (1492373: block id 22722, name null; the
+    # listing says 132 Chapecoense-sc). With two sides and the other one
+    # named, the unnamed side is whichever listing team is left.
+    if names_by_id and len(resp) == 2 and teams.count(None) == 1:
+        gap = teams.index(None)
+        left = {_canon(n) for n in names_by_id.values() if n} - {teams[1 - gap]}
+        if len(left) == 1:
+            teams[gap] = left.pop()
     for ti, block in enumerate(resp):
         team = teams[ti]
         if team is None:

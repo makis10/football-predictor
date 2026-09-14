@@ -13,9 +13,11 @@ History before this file was introduced lives in `git log`.
   (12 September) with no team name; the parser stored it as NULL, the insert
   failed and `fetch_club_player_stats.py` exited there, so no club after it
   alphabetically got new player stats (the source of club player props). The
-  parser now takes a missing name from the fixture listing and drops a side it
-  still cannot name, and a fixture whose insert fails is rolled back and
-  skipped instead of ending the run. The national ingester also stored
+  parser now takes a missing name from the fixture listing — by team id, or,
+  since that block's id was wrong too (22722, not Chapecoense's 132), as the
+  listing team the other side is not — and drops a side it still cannot name;
+  a fixture whose insert fails is rolled back and skipped instead of ending
+  the run. The backfill that followed stored 681 fixtures (3,921 player rows). The national ingester also stored
   `is_home` false for every side whose API name differs from ours (Czechia,
   Cape Verde Islands, …); it compares canonical names now.
 - **/recent labelled ungraded cards "No prediction" while showing the
