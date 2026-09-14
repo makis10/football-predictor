@@ -136,11 +136,28 @@ def resolve_team_id(name: str, cache: dict, budget: Budget) -> int | None:
     return best
 
 
-def _parse_players(resp: list, fixture_id: int, match_date: str, league_id: int) -> list[dict]:
+def _parse_players(resp: list, fixture_id: int, match_date: str, league_id: int,
+                   names_by_id: dict | None = None) -> list[dict]:
+    """One row per player of a /fixtures/players response.
+
+    API-Football sometimes names a side null (club fixture 1492373,
+    2026-09-12). ``names_by_id`` (team id -> name, from the fixture listing)
+    fills that in; a side still unnamed is dropped, because
+    player_match_stats.team is NOT NULL and the failed insert used to end the
+    whole run.
+    """
+    def _side(block: dict) -> str | None:
+        t = block.get("team") or {}
+        name = t.get("name") or (names_by_id or {}).get(t.get("id"))
+        return _canon(name) if name else None
+
     rows = []
-    teams = [_canon(t["team"]["name"]) for t in resp]
+    teams = [_side(b) for b in resp]
     for ti, block in enumerate(resp):
-        team = _canon(block["team"]["name"])
+        team = teams[ti]
+        if team is None:
+            print(f"  [warn] fixture {fixture_id}: a side has no team name — its players skipped")
+            continue
         opp  = teams[1 - ti] if len(teams) == 2 else None
         for p in block.get("players", []):
             pl = p["player"]
@@ -240,10 +257,12 @@ def main() -> None:
                     pdata = _get("/fixtures/players", {"fixture": fid}, budget)
                 except Exception as e:
                     print(f"  [warn] players failed for fixture {fid}: {e}"); continue
-                rows = _parse_players(pdata.get("response", []), fid, mdate, lid)
-                home_id = f["teams"]["home"]["id"]
+                home, away = f["teams"]["home"], f["teams"]["away"]
+                rows = _parse_players(pdata.get("response", []), fid, mdate, lid,
+                                      names_by_id={home["id"]: home["name"], away["id"]: away["name"]})
                 for row in rows:
-                    row["is_home"] = (f["teams"]["home"]["name"] == row["team"])
+                    # row["team"] is canonical ("United States"), the listing is not ("USA").
+                    row["is_home"] = (_canon(home["name"]) == row["team"])
                 for row in rows:
                     stmt = pg_insert(PlayerMatchStats).values(**row).on_conflict_do_nothing(
                         constraint="uq_player_match_stats")

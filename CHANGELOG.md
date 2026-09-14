@@ -8,6 +8,16 @@ History before this file was introduced lives in `git log`.
 
 ### Fixed
 
+- **Club player stats stopped at the same fixture every morning since
+  13 September.** API-Football returned one side of Chapecoense–Internacional
+  (12 September) with no team name; the parser stored it as NULL, the insert
+  failed and `fetch_club_player_stats.py` exited there, so no club after it
+  alphabetically got new player stats (the source of club player props). The
+  parser now takes a missing name from the fixture listing and drops a side it
+  still cannot name, and a fixture whose insert fails is rolled back and
+  skipped instead of ending the run. The national ingester also stored
+  `is_home` false for every side whose API name differs from ours (Czechia,
+  Cape Verde Islands, …); it compares canonical names now.
 - **/recent labelled ungraded cards "No prediction" while showing the
   prediction right below.** The header fell back to that label whenever a card
   had no grade, which is also every card whose result has not arrived yet.

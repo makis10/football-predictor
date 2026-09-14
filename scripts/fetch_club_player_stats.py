@@ -70,6 +70,7 @@ def main() -> None:
 
     from sqlalchemy import text
     from sqlalchemy.dialects.postgresql import insert as pg_insert
+    from sqlalchemy.exc import SQLAlchemyError
     from backend.app.database import SessionLocal
     from backend.app.models.player_match_stats import PlayerMatchStats
 
@@ -108,13 +109,23 @@ def main() -> None:
                     pdata = _get("/fixtures/players", {"fixture": fid}, budget).get("response", [])
                 except Exception:
                     continue
-                prows = _parse_players(pdata, fid, f["fixture"]["date"][:10], f["league"]["id"])
-                home_name = f["teams"]["home"]["name"]
-                for row in prows:
-                    row["is_home"] = (row["team"] == home_name)
-                    db.execute(pg_insert(PlayerMatchStats).values(**row)
-                               .on_conflict_do_nothing(constraint="uq_player_match_stats"))
-                db.commit()
+                home, away = f["teams"]["home"], f["teams"]["away"]
+                # /fixtures/players can name a side null (fixture 1492373,
+                # 2026-09-12); the listing we already hold names both.
+                prows = _parse_players(pdata, fid, f["fixture"]["date"][:10], f["league"]["id"],
+                                       names_by_id={home["id"]: home["name"], away["id"]: away["name"]})
+                try:
+                    for row in prows:
+                        row["is_home"] = (row["team"] == home["name"])
+                        db.execute(pg_insert(PlayerMatchStats).values(**row)
+                                   .on_conflict_do_nothing(constraint="uq_player_match_stats"))
+                    db.commit()
+                except SQLAlchemyError as e:
+                    # One bad fixture used to end the run (rc=1), leaving every
+                    # team after it alphabetically without new stats.
+                    db.rollback()
+                    print(f"  [warn] fixture {fid} not stored: {str(e).splitlines()[0]}")
+                    continue
                 have.add(fid); n_fx += 1; n_rows += len(prows)
             print(f"  {team}: {n_fx} fixtures so far, {n_rows} rows  [req {budget.used}]")
         print(f"\nDone. {n_fx} new fixtures, {n_rows} player rows, {budget.used} API requests.")
