@@ -107,9 +107,12 @@ export default function RecentResultCard({ match }: Props) {
             <span className={`text-xs font-bold px-2 py-0.5 rounded-full ${badge}`}>
               {badgeLabel}
             </span>
-          ) : (
+          ) : !p ? (
+            // Only when there is really no prediction: an ungraded card that
+            // has one (result not in yet) used to say "No prediction" right
+            // above its own "Predicted: …" line.
             <span className="text-xs text-chalk-3 italic">{t("recent.noPrediction")}</span>
-          )}
+          ) : null}
         </div>
 
         {/* Teams + score */}

@@ -4,6 +4,19 @@ Notable changes to Football Predictor. Format loosely follows
 [Keep a Changelog](https://keepachangelog.com/); dates are `YYYY-MM-DD`.
 History before this file was introduced lives in `git log`.
 
+## 2026-09-14
+
+### Fixed
+
+- **/recent labelled ungraded cards "No prediction" while showing the
+  prediction right below.** The header fell back to that label whenever a card
+  had no grade, which is also every card whose result has not arrived yet.
+  It now appears only when there is no prediction; a pending card keeps its
+  "Pending" pill. Surfaced by the 13 September results that API-Football never
+  delivered: the line's address changed at 16:38 and the new one
+  (46.103.246.204) is not on the account's whitelist, so the 06:00 run skipped
+  every API-Football step and 31 domestic matches stayed without a score.
+
 ## 2026-09-13
 
 ### Fixed
