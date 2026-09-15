@@ -20,3 +20,5 @@
 {"at": "2026-09-11T03:04:46+00:00", "source": "club", "promoted": ["Draw"], "demoted": [], "now": ["Draw", "Over 2.5"]}
 {"at": "2026-09-12T21:00:55+00:00", "source": "club", "promoted": ["GG"], "demoted": [], "now": ["Draw", "GG", "Over 2.5"]}
 {"at": "2026-09-13T05:00:54+00:00", "source": "club", "promoted": [], "demoted": ["Over 2.5"], "now": ["Draw", "GG"]}
+{"at": "2026-09-13T21:00:45+00:00", "source": "club", "promoted": ["NG"], "demoted": [], "now": ["Draw", "GG", "NG"]}
+{"at": "2026-09-14T03:13:14+00:00", "source": "club", "promoted": [], "demoted": ["NG"], "now": ["Draw", "GG"]}

@@ -1,9 +1,9 @@
 {
   "Ghana": {
-    "strength": 0.7369,
-    "n_rated": 19,
+    "strength": 0.7235,
+    "n_rated": 20,
     "n_squad": 26,
-    "coverage": 0.73,
+    "coverage": 0.77,
     "top_leagues": [
       "Premier League (England)",
       "Süper Lig (Turkey)",
@@ -13,10 +13,10 @@
     "low_confidence": false
   },
   "Panama": {
-    "strength": 0.5699,
-    "n_rated": 15,
+    "strength": 0.5784,
+    "n_rated": 16,
     "n_squad": 26,
-    "coverage": 0.58,
+    "coverage": 0.62,
     "top_leagues": [
       "Liga MX (Mexico)",
       "Liga Pro (Ecuador)",
@@ -26,10 +26,10 @@
     "low_confidence": false
   },
   "Germany": {
-    "strength": 0.9855,
-    "n_rated": 23,
+    "strength": 1.0076,
+    "n_rated": 24,
     "n_squad": 26,
-    "coverage": 0.88,
+    "coverage": 0.92,
     "top_leagues": [
       "Bundesliga (Germany)",
       "Premier League (England)",
@@ -39,7 +39,7 @@
     "low_confidence": false
   },
   "Brazil": {
-    "strength": 0.9019,
+    "strength": 0.9325,
     "n_rated": 25,
     "n_squad": 26,
     "coverage": 0.96,
@@ -52,10 +52,10 @@
     "low_confidence": false
   },
   "Spain": {
-    "strength": 1.0352,
-    "n_rated": 25,
+    "strength": 1.0242,
+    "n_rated": 26,
     "n_squad": 26,
-    "coverage": 0.96,
+    "coverage": 1.0,
     "top_leagues": [
       "La Liga (Spain)",
       "Premier League (England)",
@@ -64,10 +64,10 @@
     "low_confidence": false
   },
   "United States": {
-    "strength": 0.8518,
-    "n_rated": 22,
+    "strength": 0.8686,
+    "n_rated": 24,
     "n_squad": 26,
-    "coverage": 0.85,
+    "coverage": 0.92,
     "top_leagues": [
       "Major League Soccer (USA)",
       "Premier League (England)",
@@ -77,20 +77,20 @@
     "low_confidence": false
   },
   "Algeria": {
-    "strength": 0.856,
-    "n_rated": 18,
+    "strength": 0.8745,
+    "n_rated": 21,
     "n_squad": 26,
-    "coverage": 0.69,
+    "coverage": 0.81,
     "top_leagues": [
       "Ligue 1 (France)",
       "Pro League (Saudi-Arabia)",
-      "Super League (Switzerland)",
-      "Serie A (Italy)"
+      "Bundesliga (Germany)",
+      "Super League (Switzerland)"
     ],
     "low_confidence": false
   },
   "Argentina": {
-    "strength": 0.9408,
+    "strength": 0.9528,
     "n_rated": 23,
     "n_squad": 26,
     "coverage": 0.88,
@@ -103,7 +103,7 @@
     "low_confidence": false
   },
   "Australia": {
-    "strength": 0.7015,
+    "strength": 0.6958,
     "n_rated": 17,
     "n_squad": 26,
     "coverage": 0.65,
@@ -116,20 +116,20 @@
     "low_confidence": false
   },
   "Austria": {
-    "strength": 0.9041,
-    "n_rated": 20,
+    "strength": 0.9143,
+    "n_rated": 22,
     "n_squad": 26,
-    "coverage": 0.77,
+    "coverage": 0.85,
     "top_leagues": [
       "Bundesliga (Germany)",
       "Premier League (England)",
       "Serie A (Italy)",
-      "Superliga (Denmark)"
+      "Bundesliga (Austria)"
     ],
     "low_confidence": false
   },
   "Belgium": {
-    "strength": 0.9412,
+    "strength": 0.9539,
     "n_rated": 23,
     "n_squad": 26,
     "coverage": 0.88,
@@ -142,7 +142,7 @@
     "low_confidence": false
   },
   "Canada": {
-    "strength": 0.7216,
+    "strength": 0.7309,
     "n_rated": 22,
     "n_squad": 26,
     "coverage": 0.85,
@@ -155,10 +155,10 @@
     "low_confidence": false
   },
   "Cape Verde": {
-    "strength": 0.6174,
-    "n_rated": 20,
+    "strength": 0.6394,
+    "n_rated": 21,
     "n_squad": 26,
-    "coverage": 0.77,
+    "coverage": 0.81,
     "top_leagues": [
       "Liga I (Romania)",
       "Major League Soccer (USA)",
@@ -168,10 +168,10 @@
     "low_confidence": false
   },
   "Colombia": {
-    "strength": 0.8124,
-    "n_rated": 23,
+    "strength": 0.8312,
+    "n_rated": 24,
     "n_squad": 26,
-    "coverage": 0.88,
+    "coverage": 0.92,
     "top_leagues": [
       "Serie A (Brazil)",
       "Liga Profesional Argentina (Argentina)",
@@ -181,10 +181,10 @@
     "low_confidence": false
   },
   "Croatia": {
-    "strength": 0.9253,
-    "n_rated": 22,
+    "strength": 0.9635,
+    "n_rated": 24,
     "n_squad": 26,
-    "coverage": 0.85,
+    "coverage": 0.92,
     "top_leagues": [
       "Serie A (Italy)",
       "Premier League (England)",
@@ -194,7 +194,7 @@
     "low_confidence": false
   },
   "Curaçao": {
-    "strength": 0.6335,
+    "strength": 0.6396,
     "n_rated": 17,
     "n_squad": 26,
     "coverage": 0.65,
@@ -207,7 +207,7 @@
     "low_confidence": false
   },
   "Czech Republic": {
-    "strength": 0.7565,
+    "strength": 0.759,
     "n_rated": 23,
     "n_squad": 26,
     "coverage": 0.88,
@@ -220,36 +220,36 @@
     "low_confidence": false
   },
   "DR Congo": {
-    "strength": 0.7576,
-    "n_rated": 20,
+    "strength": 0.7868,
+    "n_rated": 22,
     "n_squad": 26,
-    "coverage": 0.77,
+    "coverage": 0.85,
     "top_leagues": [
       "Jupiler Pro League (Belgium)",
-      "Premier League (England)",
       "Ligue 1 (France)",
+      "Premier League (England)",
       "Süper Lig (Turkey)"
     ],
     "low_confidence": false
   },
   "Ecuador": {
-    "strength": 0.8,
+    "strength": 0.7889,
     "n_rated": 24,
     "n_squad": 26,
     "coverage": 0.92,
     "top_leagues": [
       "Serie A (Brazil)",
       "Liga Profesional Argentina (Argentina)",
-      "Liga Pro (Ecuador)",
-      "Premier League (England)"
+      "Premier League (England)",
+      "Jupiler Pro League (Belgium)"
     ],
     "low_confidence": false
   },
   "Egypt": {
-    "strength": 0.6258,
-    "n_rated": 20,
+    "strength": 0.6339,
+    "n_rated": 24,
     "n_squad": 26,
-    "coverage": 0.77,
+    "coverage": 0.92,
     "top_leagues": [
       "Premier League (Egypt)",
       "Ligue 1 (France)",
@@ -259,7 +259,7 @@
     "low_confidence": false
   },
   "England": {
-    "strength": 1.0534,
+    "strength": 1.0632,
     "n_rated": 23,
     "n_squad": 26,
     "coverage": 0.88,
@@ -272,7 +272,7 @@
     "low_confidence": false
   },
   "Paraguay": {
-    "strength": 0.7466,
+    "strength": 0.7316,
     "n_rated": 26,
     "n_squad": 26,
     "coverage": 1.0,
@@ -285,7 +285,7 @@
     "low_confidence": false
   },
   "Portugal": {
-    "strength": 0.9408,
+    "strength": 0.9631,
     "n_rated": 26,
     "n_squad": 26,
     "coverage": 1.0,
@@ -298,7 +298,7 @@
     "low_confidence": false
   },
   "Qatar": {
-    "strength": 0.5281,
+    "strength": 0.5063,
     "n_rated": 23,
     "n_squad": 26,
     "coverage": 0.88,
@@ -308,10 +308,10 @@
     "low_confidence": false
   },
   "Saudi Arabia": {
-    "strength": 0.691,
-    "n_rated": 23,
+    "strength": 0.6837,
+    "n_rated": 24,
     "n_squad": 26,
-    "coverage": 0.88,
+    "coverage": 0.92,
     "top_leagues": [
       "Pro League (Saudi-Arabia)",
       "Trophée des Champions (France)"
@@ -319,7 +319,7 @@
     "low_confidence": false
   },
   "Scotland": {
-    "strength": 0.7949,
+    "strength": 0.8192,
     "n_rated": 21,
     "n_squad": 26,
     "coverage": 0.81,
@@ -332,23 +332,23 @@
     "low_confidence": false
   },
   "Senegal": {
-    "strength": 0.8477,
-    "n_rated": 20,
+    "strength": 0.8958,
+    "n_rated": 22,
     "n_squad": 26,
-    "coverage": 0.77,
+    "coverage": 0.85,
     "top_leagues": [
       "Pro League (Saudi-Arabia)",
-      "Ligue 1 (France)",
       "Premier League (England)",
+      "Ligue 1 (France)",
       "La Liga (Spain)"
     ],
     "low_confidence": false
   },
   "South Africa": {
-    "strength": 0.5018,
-    "n_rated": 19,
+    "strength": 0.5096,
+    "n_rated": 20,
     "n_squad": 26,
-    "coverage": 0.73,
+    "coverage": 0.77,
     "top_leagues": [
       "Premier Soccer League (South-Africa)",
       "Major League Soccer (USA)",
@@ -358,46 +358,46 @@
     "low_confidence": false
   },
   "South Korea": {
-    "strength": 0.6791,
-    "n_rated": 24,
+    "strength": 0.7158,
+    "n_rated": 25,
     "n_squad": 26,
-    "coverage": 0.92,
+    "coverage": 0.96,
     "top_leagues": [
       "K League 1 (South-Korea)",
+      "Bundesliga (Germany)",
       "Championship (England)",
-      "J1 League (Japan)",
-      "Bundesliga (Germany)"
+      "J1 League (Japan)"
     ],
     "low_confidence": false
   },
   "Sweden": {
-    "strength": 0.8455,
+    "strength": 0.8681,
+    "n_rated": 24,
+    "n_squad": 26,
+    "coverage": 0.92,
+    "top_leagues": [
+      "Premier League (England)",
+      "2. Bundesliga (Germany)",
+      "Championship (England)",
+      "Allsvenskan (Sweden)"
+    ],
+    "low_confidence": false
+  },
+  "Switzerland": {
+    "strength": 0.9573,
     "n_rated": 23,
     "n_squad": 26,
     "coverage": 0.88,
     "top_leagues": [
       "Premier League (England)",
-      "Championship (England)",
-      "Allsvenskan (Sweden)",
-      "2. Bundesliga (Germany)"
-    ],
-    "low_confidence": false
-  },
-  "Switzerland": {
-    "strength": 0.9618,
-    "n_rated": 22,
-    "n_squad": 26,
-    "coverage": 0.85,
-    "top_leagues": [
       "Bundesliga (Germany)",
-      "Premier League (England)",
       "Serie A (Italy)",
       "Super League (Switzerland)"
     ],
     "low_confidence": false
   },
   "Tunisia": {
-    "strength": 0.6649,
+    "strength": 0.6724,
     "n_rated": 17,
     "n_squad": 26,
     "coverage": 0.65,
@@ -410,7 +410,7 @@
     "low_confidence": false
   },
   "Turkey": {
-    "strength": 0.8496,
+    "strength": 0.8719,
     "n_rated": 23,
     "n_squad": 26,
     "coverage": 0.88,
@@ -423,7 +423,7 @@
     "low_confidence": false
   },
   "Uruguay": {
-    "strength": 0.783,
+    "strength": 0.7999,
     "n_rated": 23,
     "n_squad": 26,
     "coverage": 0.88,
@@ -436,10 +436,10 @@
     "low_confidence": false
   },
   "Uzbekistan": {
-    "strength": 0.6415,
-    "n_rated": 7,
+    "strength": 0.6309,
+    "n_rated": 8,
     "n_squad": 26,
-    "coverage": 0.27,
+    "coverage": 0.31,
     "top_leagues": [
       "Super League (Uzbekistan)",
       "Süper Lig (Turkey)",
@@ -449,7 +449,7 @@
     "low_confidence": false
   },
   "Bosnia and Herzegovina": {
-    "strength": 0.8033,
+    "strength": 0.805,
     "n_rated": 20,
     "n_squad": 26,
     "coverage": 0.77,
@@ -462,10 +462,10 @@
     "low_confidence": false
   },
   "France": {
-    "strength": 0.9868,
-    "n_rated": 24,
+    "strength": 0.9923,
+    "n_rated": 25,
     "n_squad": 26,
-    "coverage": 0.92,
+    "coverage": 0.96,
     "top_leagues": [
       "Ligue 1 (France)",
       "Premier League (England)",
@@ -475,7 +475,7 @@
     "low_confidence": false
   },
   "Haiti": {
-    "strength": 0.6352,
+    "strength": 0.6585,
     "n_rated": 13,
     "n_squad": 26,
     "coverage": 0.5,
@@ -488,7 +488,7 @@
     "low_confidence": false
   },
   "Iran": {
-    "strength": 0.5432,
+    "strength": 0.5529,
     "n_rated": 9,
     "n_squad": 26,
     "coverage": 0.35,
@@ -501,7 +501,7 @@
     "low_confidence": false
   },
   "Iraq": {
-    "strength": 0.5773,
+    "strength": 0.5721,
     "n_rated": 7,
     "n_squad": 26,
     "coverage": 0.27,
@@ -514,10 +514,10 @@
     "low_confidence": false
   },
   "Ivory Coast": {
-    "strength": 0.8726,
-    "n_rated": 21,
+    "strength": 0.913,
+    "n_rated": 22,
     "n_squad": 26,
-    "coverage": 0.81,
+    "coverage": 0.85,
     "top_leagues": [
       "Süper Lig (Turkey)",
       "Serie A (Italy)",
@@ -527,33 +527,33 @@
     "low_confidence": false
   },
   "Japan": {
-    "strength": 0.8911,
-    "n_rated": 22,
+    "strength": 0.8937,
+    "n_rated": 24,
     "n_squad": 26,
-    "coverage": 0.85,
+    "coverage": 0.92,
     "top_leagues": [
       "Bundesliga (Germany)",
       "Premier League (England)",
       "J1 League (Japan)",
-      "Jupiler Pro League (Belgium)"
+      "Ligue 1 (France)"
     ],
     "low_confidence": false
   },
   "Jordan": {
-    "strength": 0.5798,
-    "n_rated": 5,
+    "strength": 0.5611,
+    "n_rated": 6,
     "n_squad": 26,
-    "coverage": 0.19,
+    "coverage": 0.23,
     "top_leagues": [
       "Liga I (Romania)",
       "K League 1 (South-Korea)",
       "Pro League (Saudi-Arabia)",
-      "Stars League (Qatar)"
+      "Premier League (Egypt)"
     ],
-    "low_confidence": true
+    "low_confidence": false
   },
   "Mexico": {
-    "strength": 0.6914,
+    "strength": 0.6977,
     "n_rated": 22,
     "n_squad": 26,
     "coverage": 0.85,
@@ -566,7 +566,7 @@
     "low_confidence": false
   },
   "Morocco": {
-    "strength": 0.8764,
+    "strength": 0.8642,
     "n_rated": 22,
     "n_squad": 26,
     "coverage": 0.85,
@@ -579,7 +579,7 @@
     "low_confidence": false
   },
   "Netherlands": {
-    "strength": 0.9824,
+    "strength": 0.994,
     "n_rated": 25,
     "n_squad": 26,
     "coverage": 0.96,
@@ -592,7 +592,7 @@
     "low_confidence": false
   },
   "New Zealand": {
-    "strength": 0.5972,
+    "strength": 0.5945,
     "n_rated": 15,
     "n_squad": 26,
     "coverage": 0.58,
@@ -605,10 +605,10 @@
     "low_confidence": false
   },
   "Norway": {
-    "strength": 0.9248,
-    "n_rated": 22,
+    "strength": 0.9497,
+    "n_rated": 23,
     "n_squad": 26,
-    "coverage": 0.85,
+    "coverage": 0.88,
     "top_leagues": [
       "Premier League (England)",
       "Eliteserien (Norway)",
